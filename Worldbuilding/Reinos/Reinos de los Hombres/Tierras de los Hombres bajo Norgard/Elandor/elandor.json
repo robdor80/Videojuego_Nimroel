@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "CANON_CONFIRMED",
+  "type": "reino",
+  "nombre": "Elandor",
+  "capital": "Mystara",
+  "ciudades_principales": [
+    "Cahlem"
+  ]
+}

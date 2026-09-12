@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "CANON_CONFIRMED",
+  "type": "reino",
+  "nombre": "Norgard",
+  "capital": "Hallheim",
+  "ciudades_principales": [
+    "Taramin",
+    "Veldora",
+    "Treihord",
+    "Karsath",
+    "Lumina",
+    "Dorth",
+    "Arleon",
+    "Zanthir",
+    "Treskal",
+    "Syvaris"
+  ]
+}

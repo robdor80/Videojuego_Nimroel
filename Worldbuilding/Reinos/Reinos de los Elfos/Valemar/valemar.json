@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "status": "CANON_CONFIRMED",
+  "type": "reino",
+  "nombre": "Valemar",
+  "capital": "Umbraeth",
+  "ciudades_principales": [
+    "Thal",
+    "Sariel",
+    "Naeraleth",
+    "Nimhoria"
+  ]
+}

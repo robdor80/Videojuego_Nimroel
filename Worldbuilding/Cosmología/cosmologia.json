@@ -1,0 +1,16 @@
+{
+  "real_gods_exist": false,
+  "magic_exists": true,
+  "magic_requires_aptitude": true,
+  "magic_has_cost_or_limits": true,
+  "supernatural_entities_and_phenomena_exist": true,
+  "other_planes_access": "exceptional",
+  "ordinary_death_is_final": true,
+  "resurrection_policy": "canonical_exceptions_only",
+  "procedural_unique_cosmological_entities_allowed": false,
+  "ai": {
+    "may_invent_compatible_supernatural_details": true,
+    "may_create_new_cosmological_laws": false,
+    "may_break_existing_cosmological_laws": false
+  }
+}

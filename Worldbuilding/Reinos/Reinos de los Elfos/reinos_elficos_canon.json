@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "CANON_CONFIRMED",
+  "scope": "reinos_elficos",
+  "note": "Nombres de los tres reinos élficos, sus capitales y sus principales ciudades confirmados expresamente por el autor.",
+  "reinos": [
+    {
+      "nombre": "Belendril",
+      "capital": "Calem Doth",
+      "ciudades_principales": [
+        "Ithiriel",
+        "Faelyn",
+        "Celindor",
+        "Vaeril"
+      ]
+    },
+    {
+      "nombre": "Valemar",
+      "capital": "Umbraeth",
+      "ciudades_principales": [
+        "Thal",
+        "Sariel",
+        "Naeraleth",
+        "Nimhoria"
+      ]
+    },
+    {
+      "nombre": "Silvannar",
+      "capital": "Tach´Algull",
+      "ciudades_principales": [
+        "Aelindre",
+        "Myralune",
+        "Elowen"
+      ]
+    }
+  ]
+}

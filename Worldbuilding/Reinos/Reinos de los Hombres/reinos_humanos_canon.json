@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "status": "CANON_CONFIRMED",
+  "scope": "territorios_humanos_bajo_corona_de_norgard",
+  "note": "Nombres, capitales y ciudades principales de los territorios humanos confirmados expresamente por el autor. Norgard es el territorio donde residen la Corona de los Hombres y la capital principal, Hallheim. Suthiros, Raisoth, Lamberthor y Elandor pertenecen a la Corona de Norgard. El Santuario no se incluye aquí porque corresponde a Organizaciones/Órdenes.",
+  "estructura_politica_resumida": {
+    "reino_principal": "Norgard",
+    "capital_principal": "Hallheim",
+    "otros_territorios_bajo_la_corona": [
+      "Suthiros",
+      "Raisoth",
+      "Lamberthor",
+      "Elandor"
+    ]
+  },
+  "territorios": [
+    {
+      "nombre": "Norgard",
+      "capital": "Hallheim",
+      "ciudades_principales": [
+        "Taramin",
+        "Veldora",
+        "Treihord",
+        "Karsath",
+        "Lumina",
+        "Dorth",
+        "Arleon",
+        "Zanthir",
+        "Treskal",
+        "Syvaris"
+      ]
+    },
+    {
+      "nombre": "Suthiros",
+      "capital": "Velanthar",
+      "ciudades_principales": [
+        "Thaloria",
+        "Nymeris"
+      ]
+    },
+    {
+      "nombre": "Raisoth",
+      "capital": "Eldrith",
+      "ciudades_principales": [
+        "Ravem",
+        "Aismer"
+      ],
+      "exclusiones_confirmadas": [
+        {
+          "nombre": "Ishrath",
+          "motivo": "No pertenece a Raisoth; es la capital de la Isla Neutral de Ishrath."
+        }
+      ]
+    },
+    {
+      "nombre": "Lamberthor",
+      "capital": "Sholaria",
+      "ciudades_principales": [
+        "Berthold",
+        "Lambast",
+        "Thorwick",
+        "Larthon",
+        "Thormere",
+        "Thorlam"
+      ]
+    },
+    {
+      "nombre": "Elandor",
+      "capital": "Mystara",
+      "ciudades_principales": [
+        "Cahlem"
+      ]
+    }
+  ]
+}

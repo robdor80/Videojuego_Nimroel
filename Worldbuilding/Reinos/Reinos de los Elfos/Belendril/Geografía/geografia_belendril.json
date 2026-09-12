@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "status": "CANON_CONFIRMED",
+  "reino": "Belendril",
+  "scope": "geografia",
+  "accidentes_geograficos": [
+    {
+      "nombre": "Las Guardianas",
+      "tipo": "montañas",
+      "ubicacion": "zona central de Belendril",
+      "descripcion": "Protegen Belendril del frío del norte."
+    },
+    {
+      "nombre": "Río Mirna",
+      "tipo": "río",
+      "nacimiento": "ladera este de Las Guardianas",
+      "desembocadura": "mar, en Ithiriel"
+    },
+    {
+      "nombre": "Bosque de Faerl",
+      "tipo": "bosque",
+      "ubicacion": "al sur de Las Guardianas, entre las montañas y Faelyn"
+    },
+    {
+      "nombre": "Río Celendral",
+      "tipo": "río",
+      "importancia": "río más importante de Belendril",
+      "caudal": "muy caudaloso",
+      "nacimiento": "ladera oeste de Las Guardianas",
+      "recorrido": [
+        "Se bifurca: una rama hacia el este desemboca en el mar.",
+        "La otra rama hacia el oeste desemboca en el Lago de Celindor.",
+        "Desde el Lago de Celindor continúa y vuelve a bifurcarse en dirección este-oeste, dejando Calem Doth entre ambas ramas."
+      ]
+    },
+    {
+      "nombre": "Lago de Celindor",
+      "tipo": "lago",
+      "ubicacion": "junto a la ciudad de Celindor",
+      "relacion": "La ciudad de Celindor recibe su nombre del lago."
+    },
+    {
+      "nombre": "Bosque de Doth",
+      "tipo": "bosque",
+      "ubicacion": "al este de Calem Doth",
+      "descripcion": "Bosque sagrado para los elfos de Belendril."
+    },
+    {
+      "nombre": "Bosque del Pasado",
+      "tipo": "bosque",
+      "ubicacion": "oeste-noroeste de Belendril",
+      "descripcion": "Enorme extensión boscosa que contiene algunos de los ejemplares de árboles más antiguos de Nimroel."
+    },
+    {
+      "nombre": "Río del Norte",
+      "tipo": "río",
+      "importancia": "río más largo de Belendril",
+      "nacimiento": "Las Guardianas",
+      "recorrido": [
+        "Discurre por las tierras más al norte de Belendril.",
+        "Se bifurca: una rama desemboca en el mar del Norte.",
+        "La otra desemboca en el Golfo de Vaeril, ya en territorio de Valemar."
+      ],
+      "frontera_natural": "Su bifurcación hacia el sur forma parte de la frontera natural entre Belendril y Valemar."
+    }
+  ],
+  "regiones_sin_nombre_propio": [
+    {
+      "tipo": "tierras heladas",
+      "ubicacion": "norte de Belendril",
+      "descripcion": "Tierras permanentemente bajo frío extremo, con grandes bosques helados y deshabitadas."
+    }
+  ]
+}

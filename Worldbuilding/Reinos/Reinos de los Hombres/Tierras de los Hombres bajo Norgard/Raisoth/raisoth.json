@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "CANON_CONFIRMED",
+  "type": "reino",
+  "nombre": "Raisoth",
+  "capital": "Eldrith",
+  "ciudades_principales": [
+    "Ravem",
+    "Aismer"
+  ]
+}

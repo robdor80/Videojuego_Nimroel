@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "status": "CANON_CONFIRMED",
+  "reino": "Valemar",
+  "scope": "geografia",
+  "accidentes_geograficos": [
+    {
+      "nombre": "Río del Norte",
+      "tipo": "río",
+      "relacion_fronteriza": "En su bifurcación, la rama más occidental forma la frontera natural entre Belendril y Valemar.",
+      "relacion_con_vaeril": "La ciudad de Vaeril, perteneciente a Belendril, queda entre las dos ramas de la bifurcación."
+    },
+    {
+      "nombre": "La Barba",
+      "tipo": "bosque",
+      "ubicacion": "Desde la zona de bifurcación del Río del Norte hacia el oeste, hasta la costa occidental de Valemar.",
+      "descripcion": "Es una inmensa masa forestal. Aunque visualmente parezca discontinua, los elfos la consideran un único bosque.",
+      "origen_del_nombre": "Recibe su nombre porque arropa las montañas del noroeste de Valemar y da la impresión de ser vello facial."
+    },
+    {
+      "nombre": "Las Madres",
+      "tipo": "montañas",
+      "ubicacion": "noroeste de Valemar",
+      "descripcion": "Su protección frente al frío del norte permite prosperar al reino de Valemar.",
+      "relacion_con_ciudades": [
+        "Thal se encuentra en una hondonada bajo la protección de Las Madres."
+      ]
+    },
+    {
+      "nombre": "Montañas Negras",
+      "tipo": "cordillera",
+      "descripcion": "Gran cordillera que forma la frontera entre Valemar y Silvannar y recorre el Gran Vacío."
+    },
+    {
+      "nombre": "Gran Vacío",
+      "tipo": "desierto",
+      "ubicacion": "zona occidental de Valemar",
+      "descripcion": "Desierto que se extiende en el oeste y se abre paso entre Valemar y Silvannar."
+    },
+    {
+      "nombre": "Bosque Central",
+      "tipo": "bosque",
+      "ubicacion": "Oeste de Valemar, aislado entre las grandes llanuras del reino, entre las ciudades de Naeraleth y Nimhoria."
+    }
+  ],
+  "cursos_de_agua_sin_nombre_propio": [
+    {
+      "tipo": "río",
+      "nacimiento": "Las Madres",
+      "direccion_general": "norte",
+      "descripcion": "Pequeño río que nace en Las Madres y desemboca hacia el norte."
+    }
+  ],
+  "relaciones_geograficas_con_ciudades": [
+    {
+      "ciudad": "Thal",
+      "relacion": "Situada en una hondonada bajo la protección de Las Madres."
+    },
+    {
+      "ciudad": "Sariel",
+      "relacion": "Situada al sur de La Barba."
+    },
+    {
+      "ciudad": "Umbraeth",
+      "relacion": "Situada al sureste de La Barba y al norte de las Montañas Negras."
+    },
+    {
+      "ciudad": "Naeraleth",
+      "relacion": "El Bosque Central se encuentra entre Naeraleth y Nimhoria."
+    },
+    {
+      "ciudad": "Nimhoria",
+      "relacion": "El Bosque Central se encuentra entre Naeraleth y Nimhoria."
+    }
+  ]
+}
