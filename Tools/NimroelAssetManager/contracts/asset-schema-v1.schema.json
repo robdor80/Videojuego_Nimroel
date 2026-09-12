@@ -1,0 +1,458 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nimroel.dev/contracts/asset-schema-v1.schema.json",
+  "title": "Nimroel Asset Schema v1",
+  "description": "Canonical, provider-independent metadata contract for one Nimroel visual asset. Operational synchronization state is deliberately excluded.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "assetId",
+    "type",
+    "lifecycle",
+    "content",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "description": "Major schema representation understood by this document."
+    },
+    "assetId": {
+      "$ref": "#/$defs/assetId"
+    },
+    "type": {
+      "$ref": "#/$defs/assetType"
+    },
+    "lifecycle": {
+      "$ref": "#/$defs/lifecycle"
+    },
+    "classification": {
+      "$ref": "#/$defs/classification"
+    },
+    "subject": {
+      "$ref": "#/$defs/subject"
+    },
+    "details": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "visual": {
+      "$ref": "#/$defs/visual"
+    },
+    "content": {
+      "$ref": "#/$defs/content"
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "storage": {
+      "$ref": "#/$defs/storage"
+    },
+    "extensions": {
+      "$ref": "#/$defs/extensions"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "type": { "const": "npc_portrait" } },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": { "details": { "$ref": "#/$defs/npcPortraitDetails" } }
+      }
+    },
+    {
+      "if": {
+        "properties": { "type": { "const": "landscape" } },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": { "details": { "$ref": "#/$defs/landscapeDetails" } }
+      }
+    },
+    {
+      "if": {
+        "properties": { "type": { "const": "settlement" } },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": { "details": { "$ref": "#/$defs/settlementDetails" } }
+      }
+    },
+    {
+      "if": {
+        "properties": { "type": { "const": "building" } },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": { "details": { "$ref": "#/$defs/buildingDetails" } }
+      }
+    },
+    {
+      "if": {
+        "properties": { "type": { "const": "interior" } },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": { "details": { "$ref": "#/$defs/interiorDetails" } }
+      }
+    },
+    {
+      "if": {
+        "properties": { "type": { "const": "object" } },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": { "details": { "$ref": "#/$defs/objectDetails" } }
+      }
+    },
+    {
+      "if": {
+        "properties": { "type": { "const": "environment_scene" } },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": { "details": { "$ref": "#/$defs/environmentSceneDetails" } }
+      }
+    }
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "assetId": {
+      "type": "string",
+      "pattern": "^ast_[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
+      "description": "Opaque, immutable ast_ prefixed UUIDv7 in canonical lowercase form."
+    },
+    "referenceId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[a-z0-9]+(?:[._-][a-z0-9]+)*$"
+    },
+    "contractVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:[-+][0-9A-Za-z.-]+)?$",
+      "maxLength": 64
+    },
+    "assetType": {
+      "type": "string",
+      "enum": [
+        "npc_portrait",
+        "landscape",
+        "settlement",
+        "building",
+        "interior",
+        "object",
+        "environment_scene"
+      ]
+    },
+    "lifecycle": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["draft", "approved", "deprecated", "retired"]
+        },
+        "supersededByAssetId": {
+          "$ref": "#/$defs/assetId"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        }
+      },
+      "additionalProperties": false
+    },
+    "classification": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "vocabularyId": { "$ref": "#/$defs/referenceId" },
+        "vocabularyVersion": { "$ref": "#/$defs/contractVersion" },
+        "realmId": { "$ref": "#/$defs/referenceId" },
+        "cultureId": { "$ref": "#/$defs/referenceId" },
+        "regionId": { "$ref": "#/$defs/referenceId" },
+        "settlementId": { "$ref": "#/$defs/referenceId" },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/referenceId" }
+        }
+      },
+      "dependentRequired": {
+        "vocabularyId": ["vocabularyVersion"],
+        "vocabularyVersion": ["vocabularyId"]
+      },
+      "additionalProperties": false
+    },
+    "subject": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "entityId": { "$ref": "#/$defs/referenceId" },
+        "speciesId": { "$ref": "#/$defs/referenceId" },
+        "genderId": { "$ref": "#/$defs/referenceId" },
+        "ageBandId": { "$ref": "#/$defs/referenceId" }
+      },
+      "additionalProperties": false
+    },
+    "visual": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "visualProfileId": { "$ref": "#/$defs/referenceId" },
+        "visualProfileVersion": { "$ref": "#/$defs/contractVersion" },
+        "compositionId": { "$ref": "#/$defs/referenceId" },
+        "timeOfDayId": { "$ref": "#/$defs/referenceId" },
+        "weatherId": { "$ref": "#/$defs/referenceId" },
+        "lightingId": { "$ref": "#/$defs/referenceId" },
+        "expressionId": { "$ref": "#/$defs/referenceId" }
+      },
+      "dependentRequired": {
+        "visualProfileId": ["visualProfileVersion"],
+        "visualProfileVersion": ["visualProfileId"]
+      },
+      "additionalProperties": false
+    },
+    "content": {
+      "type": "object",
+      "required": ["mimeType", "widthPx", "heightPx", "sha256"],
+      "properties": {
+        "mimeType": {
+          "type": "string",
+          "pattern": "^image/[a-z0-9.+-]+$",
+          "maxLength": 128
+        },
+        "widthPx": { "type": "integer", "minimum": 1 },
+        "heightPx": { "type": "integer", "minimum": 1 },
+        "byteSize": { "type": "integer", "minimum": 1 },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "colorSpace": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        }
+      },
+      "additionalProperties": false
+    },
+    "generator": {
+      "type": "object",
+      "required": ["provider", "generatedAt"],
+      "properties": {
+        "provider": { "$ref": "#/$defs/referenceId" },
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["originKind"],
+      "properties": {
+        "originKind": {
+          "type": "string",
+          "enum": ["generated", "imported", "edited", "derived", "unknown"]
+        },
+        "generator": { "$ref": "#/$defs/generator" },
+        "sourceAssetIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/assetId" }
+        },
+        "promptTemplateId": { "$ref": "#/$defs/referenceId" },
+        "promptTemplateVersion": { "$ref": "#/$defs/contractVersion" },
+        "promptRecordId": { "$ref": "#/$defs/referenceId" },
+        "importedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "dependentRequired": {
+        "promptTemplateId": ["promptTemplateVersion"],
+        "promptTemplateVersion": ["promptTemplateId"]
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "originKind": { "const": "generated" } },
+            "required": ["originKind"]
+          },
+          "then": { "required": ["generator"] }
+        },
+        {
+          "if": {
+            "properties": { "originKind": { "enum": ["edited", "derived"] } },
+            "required": ["originKind"]
+          },
+          "then": { "required": ["sourceAssetIds"] }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "replica": {
+      "type": "object",
+      "required": ["replicaId", "locationType", "provider"],
+      "properties": {
+        "replicaId": { "$ref": "#/$defs/referenceId" },
+        "locationType": {
+          "type": "string",
+          "enum": ["local", "remote"]
+        },
+        "purpose": {
+          "type": "string",
+          "enum": ["primary", "backup", "cache"]
+        },
+        "provider": { "$ref": "#/$defs/referenceId" },
+        "objectId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1024
+        },
+        "logicalPath": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "deliveryUrl": {
+          "type": "string",
+          "format": "uri",
+          "maxLength": 4096
+        }
+      },
+      "anyOf": [
+        { "required": ["objectId"] },
+        { "required": ["logicalPath"] },
+        { "required": ["deliveryUrl"] }
+      ],
+      "additionalProperties": false
+    },
+    "storage": {
+      "type": "object",
+      "required": ["replicas"],
+      "properties": {
+        "replicas": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/replica" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "extensions": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)+$"
+      },
+      "additionalProperties": {
+        "type": "object"
+      }
+    },
+    "npcPortraitDetails": {
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "professionId": { "$ref": "#/$defs/referenceId" },
+        "socialClassId": { "$ref": "#/$defs/referenceId" }
+      },
+      "additionalProperties": false
+    },
+    "landscapeDetails": {
+      "type": "object",
+      "required": ["environmentId"],
+      "properties": {
+        "environmentId": { "$ref": "#/$defs/referenceId" },
+        "landformIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/referenceId" }
+        },
+        "waterFeatureIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/referenceId" }
+        },
+        "seasonId": { "$ref": "#/$defs/referenceId" }
+      },
+      "additionalProperties": false
+    },
+    "settlementDetails": {
+      "type": "object",
+      "required": ["settlementScaleId"],
+      "properties": {
+        "settlementScaleId": { "$ref": "#/$defs/referenceId" },
+        "environmentId": { "$ref": "#/$defs/referenceId" }
+      },
+      "additionalProperties": false
+    },
+    "buildingDetails": {
+      "type": "object",
+      "required": ["buildingFunctionId"],
+      "properties": {
+        "buildingFunctionId": { "$ref": "#/$defs/referenceId" },
+        "materialIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/referenceId" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "interiorDetails": {
+      "type": "object",
+      "required": ["interiorFunctionId"],
+      "properties": {
+        "interiorFunctionId": { "$ref": "#/$defs/referenceId" },
+        "containingBuildingEntityId": { "$ref": "#/$defs/referenceId" }
+      },
+      "additionalProperties": false
+    },
+    "objectDetails": {
+      "type": "object",
+      "required": ["objectKindId"],
+      "properties": {
+        "objectKindId": { "$ref": "#/$defs/referenceId" },
+        "materialIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/referenceId" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "environmentSceneDetails": {
+      "type": "object",
+      "required": ["sceneFunctionId"],
+      "properties": {
+        "sceneFunctionId": { "$ref": "#/$defs/referenceId" },
+        "environmentId": { "$ref": "#/$defs/referenceId" },
+        "featuredEntityIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/referenceId" }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

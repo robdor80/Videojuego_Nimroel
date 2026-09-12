@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "assetId": "ast_019c1a23-4568-7abc-8def-0123456789ab",
+  "type": "npc_portrait",
+  "lifecycle": {
+    "status": "draft"
+  },
+  "classification": {
+    "realmId": "norgard",
+    "cultureId": "norgard",
+    "tags": ["military"]
+  },
+  "subject": {
+    "ageBandId": "adult"
+  },
+  "details": {
+    "professionId": "soldier"
+  },
+  "visual": {
+    "visualProfileId": "nimroel-npc-norgard",
+    "visualProfileVersion": "0.1"
+  },
+  "content": {
+    "mimeType": "image/webp",
+    "widthPx": 1536,
+    "heightPx": 2048,
+    "sha256": "2222222222222222222222222222222222222222222222222222222222222222"
+  },
+  "provenance": {
+    "originKind": "generated",
+    "generator": {
+      "provider": "chatgpt",
+      "generatedAt": "2026-09-12T10:05:00Z"
+    },
+    "promptTemplateId": "npc-portrait",
+    "promptTemplateVersion": "0.1"
+  }
+}

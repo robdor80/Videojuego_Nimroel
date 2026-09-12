@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "assetId": "ast_019c1a23-4571-7abc-8def-0123456789ab",
+  "type": "npc_portrait",
+  "lifecycle": {
+    "status": "approved"
+  },
+  "classification": {
+    "tags": ["canonical"]
+  },
+  "subject": {
+    "entityId": "canonical-character-id-pending"
+  },
+  "visual": {
+    "visualProfileId": "nimroel-npc-generic",
+    "visualProfileVersion": "0.1"
+  },
+  "content": {
+    "mimeType": "image/webp",
+    "widthPx": 1536,
+    "heightPx": 2048,
+    "sha256": "5555555555555555555555555555555555555555555555555555555555555555"
+  },
+  "provenance": {
+    "originKind": "generated",
+    "generator": {
+      "provider": "chatgpt",
+      "generatedAt": "2026-09-12T10:20:00Z"
+    },
+    "promptRecordId": "prompt-record-id-pending"
+  }
+}

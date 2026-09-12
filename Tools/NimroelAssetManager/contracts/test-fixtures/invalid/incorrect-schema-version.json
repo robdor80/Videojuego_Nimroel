@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 2,
+  "assetId": "ast_019c1a23-4602-7abc-8def-0123456789ab",
+  "type": "npc_portrait",
+  "lifecycle": { "status": "draft" },
+  "content": {
+    "mimeType": "image/webp",
+    "widthPx": 1,
+    "heightPx": 1,
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "provenance": { "originKind": "imported" }
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "assetId": "npc_valemar_farmer_42",
+  "type": "npc_portrait",
+  "lifecycle": { "status": "draft" },
+  "content": {
+    "mimeType": "image/webp",
+    "widthPx": 1,
+    "heightPx": 1,
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "provenance": { "originKind": "imported" }
+}

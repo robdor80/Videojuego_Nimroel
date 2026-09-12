@@ -4,9 +4,9 @@
 
 - Android nativo con Kotlin, Compose y Material 3; mínimo SDK 26 y compilación/objetivo SDK 36.
 - Separación de contratos compartibles (`contracts/`) y la implementación Android (`android/`).
-- El dominio contiene únicamente invariantes seguros: `AssetId`, `schemaVersion`, hash opcional y estado local.
+- El dominio Android continúa siendo un cimiento mínimo. Asset Schema v1 es el contrato canónico multiplataforma en `contracts/asset-schema-v1.schema.json`; su adaptación completa a Kotlin pertenece al siguiente hito.
 - `RemoteAssetStore` es una frontera de dominio, no una implementación de ImageKit. No contiene ni admite credenciales privadas cliente.
-- Room se pospone: una tabla creada ahora congelaría campos y relaciones de un schema que aún está deliberadamente abierto.
+- Room se pospone: primero debe diseñarse correctamente el modelo de persistencia local y separarse el contrato canónico del estado operacional de cada instalación.
 
 ## Capas Android
 
@@ -17,13 +17,13 @@
 
 ## Decisiones pendientes antes de la siguiente fase
 
-1. Schema v1: campos obligatorios/opcionales, extensiones y estrategia de migración.
-2. Convención de `assetId`, incluyendo asignación de secuencias y unicidad local/remota.
-3. Taxonomía, perfiles visuales, presets y sus fuentes versionadas.
+1. Adaptar Asset Schema v1 al dominio Kotlin mediante modelos, validadores y mapeos, sin convertirlo todavía en entidades Room.
+2. Definir los registros versionados de vocabularios, perfiles visuales y presets.
+3. Definir la fuente canónica de IDs de entidades de lore.
 4. Modelo de almacenamiento local (original, WebP, miniaturas, hashes) y política de retención.
 5. Backend de autenticación segura y rutas de almacenamiento ImageKit.
-6. Reglas de validación, ciclo de vida y resolución de conflictos de sincronización.
+6. Reglas de validación de dominio, ciclo editorial y resolución de conflictos de sincronización.
 
 ## Próximo hito
 
-Diseñar y versionar el schema v1 junto con una taxonomía mínima y ejemplos reales. Después se puede añadir Room mediante migraciones explícitas e implementar importación local sin acoplarse todavía al proveedor remoto.
+Adaptar Asset Schema v1 al dominio Kotlin mediante modelos, validadores y mapeos, todavía sin convertirlo en entidades Room. Después se puede diseñar persistencia e importación local sin acoplarse al proveedor remoto.

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "assetId": "ast_019c1a23-4567-7abc-8def-0123456789ab",
+  "type": "npc_portrait",
+  "lifecycle": {
+    "status": "approved"
+  },
+  "classification": {
+    "realmId": "valemar",
+    "cultureId": "valemar",
+    "tags": ["commoner"]
+  },
+  "subject": {
+    "genderId": "female",
+    "ageBandId": "adult"
+  },
+  "details": {
+    "professionId": "farmer",
+    "socialClassId": "commoner"
+  },
+  "visual": {
+    "visualProfileId": "nimroel-npc-valemar",
+    "visualProfileVersion": "0.1",
+    "expressionId": "neutral"
+  },
+  "content": {
+    "mimeType": "image/webp",
+    "widthPx": 1536,
+    "heightPx": 2048,
+    "byteSize": 524288,
+    "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "colorSpace": "sRGB"
+  },
+  "provenance": {
+    "originKind": "generated",
+    "generator": {
+      "provider": "chatgpt",
+      "generatedAt": "2026-09-12T10:00:00Z"
+    },
+    "promptTemplateId": "npc-portrait",
+    "promptTemplateVersion": "0.1"
+  },
+  "storage": {
+    "replicas": [
+      {
+        "replicaId": "local-primary",
+        "locationType": "local",
+        "purpose": "primary",
+        "provider": "filesystem",
+        "logicalPath": "assets/portraits/019c1a23-4567.webp"
+      }
+    ]
+  }
+}

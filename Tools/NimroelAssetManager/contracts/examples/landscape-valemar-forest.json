@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "assetId": "ast_019c1a23-4569-7abc-8def-0123456789ab",
+  "type": "landscape",
+  "lifecycle": {
+    "status": "approved"
+  },
+  "classification": {
+    "realmId": "valemar",
+    "tags": ["forest"]
+  },
+  "details": {
+    "environmentId": "forest"
+  },
+  "visual": {
+    "visualProfileId": "nimroel-landscape-valemar",
+    "visualProfileVersion": "0.1",
+    "timeOfDayId": "day"
+  },
+  "content": {
+    "mimeType": "image/webp",
+    "widthPx": 2048,
+    "heightPx": 1152,
+    "sha256": "3333333333333333333333333333333333333333333333333333333333333333"
+  },
+  "provenance": {
+    "originKind": "generated",
+    "generator": {
+      "provider": "chatgpt",
+      "generatedAt": "2026-09-12T10:10:00Z"
+    },
+    "promptTemplateId": "landscape",
+    "promptTemplateVersion": "0.1"
+  }
+}

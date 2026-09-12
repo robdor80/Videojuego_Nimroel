@@ -5,7 +5,7 @@ Base local-first para la futura biblioteca visual de Nimroel. La aplicación And
 ## Estructura
 
 - `android/`: aplicación nativa Kotlin, Jetpack Compose y Material 3.
-- `contracts/`: contratos compartibles, independientes de plataforma.
+- `contracts/`: contratos compartibles, independientes de plataforma. El contrato canónico actual es `asset-schema-v1.schema.json`.
 - `docs/`: decisiones y evolución del producto.
 
 La app se abre en una pantalla identificable y contiene límites iniciales de dominio, UI y almacenamiento remoto. No guarda ni sincroniza assets todavía.
