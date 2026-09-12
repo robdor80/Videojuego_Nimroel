@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nimroel.local/contracts/asset-contract-foundations.json",
+  "title": "Nimroel Asset Contract Foundations",
+  "description": "Deliberately minimal cross-platform contract. Taxonomy and full schema v1 are pending design.",
+  "type": "object",
+  "required": ["schemaVersion", "assetId", "localState"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "assetId": { "type": "string", "minLength": 1 },
+    "localState": {
+      "type": "string",
+      "enum": ["DRAFT", "READY_FOR_SYNC", "SYNCED", "SYNC_FAILED"]
+    },
+    "contentHash": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": true
+}
