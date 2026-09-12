@@ -150,7 +150,7 @@ Cada representación conserva su propio `assetId`. En v1, `subject` también pue
 
 `classification` alberga contexto compartido: `realmId`, `cultureId`, `regionId`, `settlementId` y `tags`. Los tags son auxiliares; un dato que necesite consultas fiables debe tener un campo estructurado.
 
-`vocabularyId` y `vocabularyVersion` pueden identificar el conjunto versionado que interpreta los IDs. Si aparece uno, el otro es obligatorio. La fuente y contenido del primer vocabulario son una decisión abierta.
+`vocabularyId` y `vocabularyVersion` identifican el **Vocabulary Set** versionado que interpreta conjuntamente los IDs del asset. El set actúa como manifiesto: enlaza cada ruta canónica (`classification.realmId`, `subject.ageBandId`, `details.professionId`, etc.) con un vocabulario y una versión exactos. Si aparece uno, el otro es obligatorio. Esta interpretación conserva la estructura de Asset Schema v1 y evita añadir una pareja de versión a cada campo.
 
 No se usan `null`, `unspecified`, `region-unspecified` ni pseudo-valores equivalentes para campos opcionales. Un dato ausente se omite.
 

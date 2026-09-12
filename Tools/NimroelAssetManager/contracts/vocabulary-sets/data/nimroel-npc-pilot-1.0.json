@@ -1,0 +1,8 @@
+{
+  "vocabularySetId": "nimroel-npc-pilot",
+  "version": "1.0",
+  "bindings": {
+    "subject.ageBandId": { "vocabularyId": "nimroel-age-bands", "version": "1.0" },
+    "visual.expressionId": { "vocabularyId": "nimroel-expressions", "version": "1.0" }
+  }
+}
