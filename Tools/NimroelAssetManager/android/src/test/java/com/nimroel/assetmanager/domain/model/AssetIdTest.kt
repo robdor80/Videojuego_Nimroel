@@ -6,13 +6,13 @@ import org.junit.Test
 class AssetIdTest {
     @Test
     fun `keeps a stable logical ID value`() {
-        val assetId = AssetId("pending-convention-001")
+        val assetId = AssetId.parse("ast_019c1a23-4567-7abc-8def-0123456789ab")
 
-        assertEquals("pending-convention-001", assetId.value)
+        assertEquals("ast_019c1a23-4567-7abc-8def-0123456789ab", assetId.value)
     }
 
     @Test(expected = IllegalArgumentException::class)
     fun `rejects blank IDs`() {
-        AssetId("   ")
+        AssetId.parse("   ")
     }
 }
