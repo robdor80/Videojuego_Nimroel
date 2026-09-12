@@ -287,7 +287,7 @@ La validación de dominio deberá comprobar además:
 
 ## 22. Decisiones todavía abiertas
 
-1. Definir el primer registro versionado de vocabularios y sus valores reales.
+1. Completar las taxonomías editoriales versionadas necesarias para producción —por ejemplo, realms/cultures, species, genders, professions, social classes y los demás vocabularios aplicables— a partir de fuentes canónicas. Vocabulary v1, Vocabulary Set v1 y los registros piloto confirmados (`adult` y `neutral`) ya existen.
 2. Definir la fuente canónica y formato de `subject.entityId` para entidades de lore.
 3. Diseñar revisión/auditoría del catálogo y concurrencia entre Android y Windows.
 4. Precisar el ciclo editorial permitido y las transiciones entre estados.
