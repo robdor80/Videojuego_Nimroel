@@ -1,12 +1,14 @@
-# Arquitectura inicial y decisiones abiertas
+# Arquitectura del Asset Manager
 
 ## Decisiones adoptadas
 
 - Android nativo con Kotlin, Compose y Material 3; mínimo SDK 26 y compilación/objetivo SDK 36.
 - Separación de contratos compartibles (`contracts/`) y la implementación Android (`android/`).
-- El dominio Android continúa siendo un cimiento mínimo. Asset Schema v1 es el contrato canónico multiplataforma en `contracts/asset-schema-v1.schema.json`; su adaptación completa a Kotlin pertenece al siguiente hito.
+- Asset Schema v1 es el contrato canónico multiplataforma en `contracts/asset-schema-v1.schema.json` y dispone de representación, serialización y validación Kotlin independiente de Android.
+- Vocabulary v1 define valores editoriales versionados; Vocabulary Set v1 enlaza rutas canónicas con vocabularios/versiones; Preset v1 precarga valores mediante un único set.
+- Los JSON compartidos bajo `contracts/` son fuente de verdad para estos contratos. Kotlin, Android y la futura herramienta Windows son consumidores.
 - `RemoteAssetStore` es una frontera de dominio, no una implementación de ImageKit. No contiene ni admite credenciales privadas cliente.
-- Room se pospone: primero debe diseñarse correctamente el modelo de persistencia local y separarse el contrato canónico del estado operacional de cada instalación.
+- La persistencia local v1 adopta `canonicalJson` en Room con proyecciones reconstruibles, tablas operacionales separadas e inventario independiente de representaciones físicas. Room se implementará en el siguiente hito.
 
 ## Capas Android
 
@@ -15,15 +17,22 @@
 - `ui/`: Compose y ViewModels; no debe alojar reglas de schema ni persistencia.
 - `sync/` y `processing/`: se crearán junto con operaciones reales y pruebas; WorkManager será el candidato para colas fiables de sincronización.
 
-## Decisiones pendientes antes de la siguiente fase
+## Estado de hitos
 
-1. Adaptar Asset Schema v1 al dominio Kotlin mediante modelos, validadores y mapeos, sin convertirlo todavía en entidades Room.
-2. Definir los registros versionados de vocabularios, perfiles visuales y presets.
+- Completado: Asset Schema v1 y sus fixtures.
+- Completado: adaptación Kotlin, serialización y validación de dominio.
+- Completado: Vocabulary v1, Vocabulary Set v1 y Preset v1, con registros piloto limitados a valores confirmados.
+- Diseñado, pendiente de implementación: persistencia local v1 descrita en `local-persistence-v1.md`.
+
+## Decisiones aún abiertas
+
+1. Completar las taxonomías editoriales necesarias para producción.
+2. Definir perfiles visuales y prompt templates versionados de producción.
 3. Definir la fuente canónica de IDs de entidades de lore.
-4. Modelo de almacenamiento local (original, WebP, miniaturas, hashes) y política de retención.
-5. Backend de autenticación segura y rutas de almacenamiento ImageKit.
-6. Reglas de validación de dominio, ciclo editorial y resolución de conflictos de sincronización.
+4. Cerrar la política de retención del original y ubicación de archivos administrados.
+5. Definir backend/autenticación y almacenamiento remoto sin credenciales privadas en clientes.
+6. Precisar ciclo editorial y resolución de conflictos cuando se diseñe sincronización.
 
 ## Próximo hito
 
-Adaptar Asset Schema v1 al dominio Kotlin mediante modelos, validadores y mapeos, todavía sin convertirlo en entidades Room. Después se puede diseñar persistencia e importación local sin acoplarse al proveedor remoto.
+Implementar Room DB version 1 a partir de `local-persistence-v1.md`: documento canónico, proyecciones, estado local, representaciones físicas y trabajos de ingestión. La implementación debe permanecer desacoplada de ImageKit, sincronización, importación UI y Asset Resolver.
