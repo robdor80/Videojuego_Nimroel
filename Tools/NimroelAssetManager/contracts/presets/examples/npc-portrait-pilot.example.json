@@ -1,0 +1,13 @@
+{
+  "presetId": "npc-portrait-pilot",
+  "version": "1.0",
+  "label": "NPC portrait pilot",
+  "description": "Non-production example limited to unambiguous age-band and expression values from the approved NPC Visual Bible.",
+  "assetType": "npc_portrait",
+  "vocabularySetId": "nimroel-npc-pilot",
+  "vocabularySetVersion": "1.0",
+  "selections": {
+    "subject": { "ageBandId": { "mode": "suggested", "value": "adult" } },
+    "visual": { "expressionId": { "mode": "suggested", "value": "neutral" } }
+  }
+}

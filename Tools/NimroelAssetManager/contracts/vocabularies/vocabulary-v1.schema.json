@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nimroel.dev/contracts/vocabularies/vocabulary-v1.schema.json",
+  "title": "Nimroel Versioned Vocabulary v1",
+  "type": "object",
+  "required": ["vocabularyId", "version", "values"],
+  "properties": {
+    "vocabularyId": { "$ref": "#/$defs/referenceId" },
+    "version": { "$ref": "#/$defs/version" },
+    "values": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/value" } }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "referenceId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-z0-9]+(?:[._-][a-z0-9]+)*$" },
+    "version": { "type": "string", "maxLength": 64, "pattern": "^[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:[-+][0-9A-Za-z.-]+)?$" },
+    "value": {
+      "type": "object",
+      "required": ["id", "label"],
+      "properties": {
+        "id": { "$ref": "#/$defs/referenceId" },
+        "label": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "description": { "type": "string", "minLength": 1, "maxLength": 1000 },
+        "status": { "enum": ["active", "deprecated"] },
+        "presentationOrder": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

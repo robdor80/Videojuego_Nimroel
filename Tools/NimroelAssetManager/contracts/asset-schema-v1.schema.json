@@ -170,8 +170,8 @@
       "type": "object",
       "minProperties": 1,
       "properties": {
-        "vocabularyId": { "$ref": "#/$defs/referenceId" },
-        "vocabularyVersion": { "$ref": "#/$defs/contractVersion" },
+        "vocabularyId": { "$ref": "#/$defs/referenceId", "description": "Identifier of the Vocabulary Set that binds canonical field paths to their vocabularies." },
+        "vocabularyVersion": { "$ref": "#/$defs/contractVersion", "description": "Exact version of the referenced Vocabulary Set." },
         "realmId": { "$ref": "#/$defs/referenceId" },
         "cultureId": { "$ref": "#/$defs/referenceId" },
         "regionId": { "$ref": "#/$defs/referenceId" },

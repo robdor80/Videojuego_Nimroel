@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nimroel.dev/contracts/vocabulary-sets/vocabulary-set-v1.schema.json",
+  "title": "Nimroel Vocabulary Set v1",
+  "type": "object",
+  "required": ["vocabularySetId", "version", "bindings"],
+  "properties": {
+    "vocabularySetId": { "$ref": "#/$defs/referenceId" },
+    "version": { "$ref": "#/$defs/version" },
+    "bindings": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "pattern": "^[a-z][A-Za-z0-9]*(?:\\.[a-z][A-Za-z0-9]*)+$" },
+      "additionalProperties": { "$ref": "#/$defs/vocabularyReference" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "referenceId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-z0-9]+(?:[._-][a-z0-9]+)*$" },
+    "version": { "type": "string", "maxLength": 64, "pattern": "^[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:[-+][0-9A-Za-z.-]+)?$" },
+    "vocabularyReference": {
+      "type": "object",
+      "required": ["vocabularyId", "version"],
+      "properties": { "vocabularyId": { "$ref": "#/$defs/referenceId" }, "version": { "$ref": "#/$defs/version" } },
+      "additionalProperties": false
+    }
+  }
+}

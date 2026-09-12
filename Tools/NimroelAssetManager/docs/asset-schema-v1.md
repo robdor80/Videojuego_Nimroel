@@ -150,7 +150,7 @@ Cada representación conserva su propio `assetId`. En v1, `subject` también pue
 
 `classification` alberga contexto compartido: `realmId`, `cultureId`, `regionId`, `settlementId` y `tags`. Los tags son auxiliares; un dato que necesite consultas fiables debe tener un campo estructurado.
 
-`vocabularyId` y `vocabularyVersion` pueden identificar el conjunto versionado que interpreta los IDs. Si aparece uno, el otro es obligatorio. La fuente y contenido del primer vocabulario son una decisión abierta.
+`vocabularyId` y `vocabularyVersion` identifican el **Vocabulary Set** versionado que interpreta conjuntamente los IDs del asset. El set actúa como manifiesto: enlaza cada ruta canónica (`classification.realmId`, `subject.ageBandId`, `details.professionId`, etc.) con un vocabulario y una versión exactos. Si aparece uno, el otro es obligatorio. Esta interpretación conserva la estructura de Asset Schema v1 y evita añadir una pareja de versión a cada campo.
 
 No se usan `null`, `unspecified`, `region-unspecified` ni pseudo-valores equivalentes para campos opcionales. Un dato ausente se omite.
 
@@ -287,7 +287,7 @@ La validación de dominio deberá comprobar además:
 
 ## 22. Decisiones todavía abiertas
 
-1. Definir el primer registro versionado de vocabularios y sus valores reales.
+1. Completar las taxonomías editoriales versionadas necesarias para producción —por ejemplo, realms/cultures, species, genders, professions, social classes y los demás vocabularios aplicables— a partir de fuentes canónicas. Vocabulary v1, Vocabulary Set v1 y los registros piloto confirmados (`adult` y `neutral`) ya existen.
 2. Definir la fuente canónica y formato de `subject.entityId` para entidades de lore.
 3. Diseñar revisión/auditoría del catálogo y concurrencia entre Android y Windows.
 4. Precisar el ciclo editorial permitido y las transiciones entre estados.

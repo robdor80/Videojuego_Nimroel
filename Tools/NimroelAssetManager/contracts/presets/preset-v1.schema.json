@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nimroel.dev/contracts/presets/preset-v1.schema.json",
+  "title": "Nimroel Production Preset v1",
+  "type": "object",
+  "required": ["presetId", "version", "label", "assetType", "vocabularySetId", "vocabularySetVersion", "selections"],
+  "properties": {
+    "presetId": { "$ref": "#/$defs/referenceId" },
+    "version": { "$ref": "#/$defs/version" },
+    "label": { "type": "string", "minLength": 1, "maxLength": 160 },
+    "description": { "type": "string", "minLength": 1, "maxLength": 1000 },
+    "assetType": { "const": "npc_portrait" },
+    "vocabularySetId": { "$ref": "#/$defs/referenceId" },
+    "vocabularySetVersion": { "$ref": "#/$defs/version" },
+    "selections": { "$ref": "#/$defs/selections" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "referenceId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-z0-9]+(?:[._-][a-z0-9]+)*$" },
+    "version": { "type": "string", "maxLength": 64, "pattern": "^[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:[-+][0-9A-Za-z.-]+)?$" },
+    "selection": { "type": "object", "required": ["mode", "value"], "properties": { "mode": { "enum": ["fixed", "suggested"] }, "value": { "$ref": "#/$defs/referenceId" } }, "additionalProperties": false },
+    "versionSelection": { "type": "object", "required": ["mode", "value"], "properties": { "mode": { "enum": ["fixed", "suggested"] }, "value": { "$ref": "#/$defs/version" } }, "additionalProperties": false },
+    "selections": {
+      "type": "object", "minProperties": 1,
+      "properties": {
+        "classification": { "$ref": "#/$defs/classification" },
+        "subject": { "$ref": "#/$defs/subject" },
+        "details": { "$ref": "#/$defs/details" },
+        "visual": { "$ref": "#/$defs/visual" },
+        "provenance": { "$ref": "#/$defs/provenance" }
+      }, "additionalProperties": false
+    },
+    "classification": { "type": "object", "minProperties": 1, "properties": { "realmId": { "$ref": "#/$defs/selection" }, "cultureId": { "$ref": "#/$defs/selection" } }, "additionalProperties": false },
+    "subject": { "type": "object", "minProperties": 1, "properties": { "speciesId": { "$ref": "#/$defs/selection" }, "genderId": { "$ref": "#/$defs/selection" }, "ageBandId": { "$ref": "#/$defs/selection" } }, "additionalProperties": false },
+    "details": { "type": "object", "minProperties": 1, "properties": { "professionId": { "$ref": "#/$defs/selection" }, "socialClassId": { "$ref": "#/$defs/selection" } }, "additionalProperties": false },
+    "visual": {
+      "type": "object", "minProperties": 1,
+      "properties": { "visualProfileId": { "$ref": "#/$defs/selection" }, "visualProfileVersion": { "$ref": "#/$defs/versionSelection" }, "expressionId": { "$ref": "#/$defs/selection" } },
+      "dependentRequired": { "visualProfileId": ["visualProfileVersion"], "visualProfileVersion": ["visualProfileId"] },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object", "minProperties": 1,
+      "properties": { "promptTemplateId": { "$ref": "#/$defs/selection" }, "promptTemplateVersion": { "$ref": "#/$defs/versionSelection" } },
+      "dependentRequired": { "promptTemplateId": ["promptTemplateVersion"], "promptTemplateVersion": ["promptTemplateId"] },
+      "additionalProperties": false
+    }
+  }
+}
