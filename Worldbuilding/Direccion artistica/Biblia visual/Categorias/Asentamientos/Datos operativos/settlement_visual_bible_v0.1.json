@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "documentId": "settlement_visual_bible",
+  "version": "0.1",
+  "status": "approved_category_base_for_testing",
+  "categoryId": "settlements",
+  "displayName": "Asentamientos",
+  "sourceDocument": "SETTLEMENT_VISUAL_BIBLE_v0.1.md",
+  "inheritance": {
+    "globalVisualBible": "NIMROEL_GLOBAL_VISUAL_BIBLE_v0.3.md",
+    "cultureProfileRequired": true,
+    "regionalProfileRecommended": true,
+    "localProfileRecommended": true,
+    "climateResolvedExternally": true,
+    "worldClockResolvedExternally": true
+  },
+  "promptResolutionOrder": [
+    "global_visual_bible",
+    "settlement_visual_bible",
+    "culture_profile",
+    "region_profile",
+    "local_or_settlement_profile",
+    "scene_variables",
+    "climate_state",
+    "resolved_prompt"
+  ],
+  "visualDNA": [
+    "funcional",
+    "habitado",
+    "plausible",
+    "organico",
+    "culturalmente_coherente",
+    "geograficamente_fiel"
+  ],
+  "corePrinciples": {
+    "mustFeelLivedIn": true,
+    "mustHaveReasonToExist": true,
+    "functionBeforeAesthetics": true,
+    "geographyBeforeSpectacle": true,
+    "architecturePhysicallyPlausible": true,
+    "ancientDoesNotMeanFilthy": true,
+    "largeDoesNotMeanEpicByDefault": true
+  },
+  "geographyRules": {
+    "authoritativeSources": [
+      "mapa",
+      "perfil_regional",
+      "perfil_local",
+      "canon",
+      "sistema_climatico"
+    ],
+    "forbidAutoAdditionWithoutAuthorization": [
+      "montanas",
+      "acantilados",
+      "cascadas",
+      "grandes_lagos",
+      "fiordos",
+      "volcanes",
+      "bosques_densos",
+      "rios",
+      "islas",
+      "nieve"
+    ],
+    "rule": "Si la geografia no lo autoriza, no se anade."
+  },
+  "functionProfiles": {
+    "agricultural": {
+      "prioritize": [
+        "graneros",
+        "establos",
+        "corrales",
+        "mercados",
+        "caminos_para_carros",
+        "espacio_de_carga",
+        "acceso_a_campos_y_explotaciones"
+      ]
+    },
+    "port": {
+      "prioritize": [
+        "muelles",
+        "almacenes",
+        "astilleros_si_corresponde",
+        "areas_de_intercambio",
+        "calles_de_acceso_al_puerto",
+        "tabernas_y_posadas",
+        "aduanas_si_corresponde"
+      ]
+    },
+    "mining_metallurgy": {
+      "prioritize": [
+        "almacenes_de_mineral",
+        "talleres",
+        "forjas",
+        "patios_de_carga",
+        "depositos",
+        "caminos_de_transporte",
+        "actividad_preindustrial_contextual"
+      ]
+    },
+    "administrative": {
+      "prioritize": [
+        "edificios_de_gobierno",
+        "archivo",
+        "plazas_funcionales",
+        "almacenes_fiscales",
+        "calles_mas_ordenadas",
+        "infraestructura_de_distribucion"
+      ]
+    },
+    "artisan": {
+      "prioritize": [
+        "talleres",
+        "gremios",
+        "patios_de_trabajo",
+        "materiales_almacenados",
+        "comercio_especializado",
+        "vivienda_y_taller_combinados"
+      ]
+    }
+  },
+  "scaleProfiles": {
+    "village": {
+      "constructionCount": "pocas_decenas",
+      "specialization": "baja",
+      "streets": "simples",
+      "monumentality": "escasa",
+      "environmentRelationship": "muy_fuerte"
+    },
+    "town": {
+      "density": "media",
+      "specializedServices": "algunos",
+      "marketOrSquare": true,
+      "workshops": true,
+      "mainRoadsMoreDefined": true
+    },
+    "small_city": {
+      "functionalDistricts": "incipientes",
+      "buildingVariety": "media",
+      "stableTrade": true,
+      "warehouses": true,
+      "administrativeOrGuildBuildings": true
+    },
+    "medium_city": {
+      "functionalDistricts": "claros",
+      "markets": true,
+      "services": true,
+      "infrastructure": true,
+      "logistics": true,
+      "density": "alta",
+      "primarySecondaryRoadHierarchy": true
+    },
+    "large_city_or_capital": {
+      "multipleDistricts": true,
+      "administrativeCenters": true,
+      "markets": true,
+      "guilds": true,
+      "majorInfrastructure": true,
+      "visibleClassDifferences": true,
+      "wealthyAndPoorAreas": true,
+      "periphery": true,
+      "majorAccessRoutes": true,
+      "highTraffic": true,
+      "urbanComplexity": "muy_alta"
+    }
+  },
+  "growthPatterns": {
+    "organic": [
+      "calles_irregulares",
+      "parcelas_diferentes",
+      "adaptacion_al_terreno",
+      "ampliaciones",
+      "cambios_de_altura",
+      "barrios_nacidos_alrededor_de_caminos_mercados_o_puertos"
+    ],
+    "partiallyPlanned": [
+      "avenidas_principales",
+      "plazas",
+      "barrios_administrativos",
+      "calles_mas_rectas",
+      "infraestructura_mejor_organizada"
+    ],
+    "forbid": [
+      "cuadricula_perfecta_sin_justificacion",
+      "caos_absoluto_sin_logica"
+    ]
+  },
+  "urbanRuralTransition": {
+    "mustBeCredible": true,
+    "possibleElements": [
+      "periferia",
+      "caminos",
+      "granjas",
+      "huertos",
+      "talleres",
+      "almacenes",
+      "campos",
+      "bosque",
+      "costa",
+      "instalaciones_productivas"
+    ],
+    "hardBoundaryRequiresJustification": true
+  },
+  "streetRules": {
+    "dependsOn": [
+      "importancia",
+      "funcion",
+      "riqueza",
+      "clima",
+      "volumen_de_transito"
+    ],
+    "mainRoads": [
+      "mas_anchas",
+      "mas_mantenidas",
+      "empedradas_si_corresponde",
+      "drenadas_si_corresponde",
+      "aptas_para_carros"
+    ],
+    "secondaryRoads": [
+      "mas_estrechas",
+      "tierra",
+      "barro_en_humedad",
+      "irregulares",
+      "parcialmente_pavimentadas_si_corresponde"
+    ],
+    "forbidAssumptions": [
+      "toda_ciudad_medieval_completamente_empedrada",
+      "toda_aldea_cubierta_de_barro"
+    ]
+  },
+  "buildingRules": {
+    "must": [
+      "tener_funcion_reconocible",
+      "respetar_materiales_y_tecnicas_culturales",
+      "mostrar_mantenimiento_acorde_a_riqueza",
+      "tener_proporciones_construibles",
+      "responder_al_clima",
+      "mostrar_uso_humano"
+    ],
+    "forbid": [
+      "ventanas_imposibles",
+      "tejados_sin_logica_estructural",
+      "balcones_sin_soporte",
+      "torres_gratuitas",
+      "fachadas_excesivamente_simetricas",
+      "edificios_monumentales_sin_funcion",
+      "arquitectura_fantasiosa_no_autorizada"
+    ]
+  },
+  "variationRules": {
+    "avoidProceduralCloning": true,
+    "avoidIdentical": [
+      "casas",
+      "alturas",
+      "fachadas",
+      "chimeneas",
+      "ventanas",
+      "tejados"
+    ],
+    "variationSources": [
+      "edad",
+      "funcion",
+      "riqueza",
+      "ampliaciones",
+      "materiales",
+      "reformas",
+      "parcela",
+      "oficio_del_propietario",
+      "topografia"
+    ]
+  },
+  "districtTypes": [
+    "comercial",
+    "artesanal",
+    "administrativo",
+    "portuario",
+    "rico",
+    "pobre",
+    "militar",
+    "logistico",
+    "residencial",
+    "mercado",
+    "almacenes",
+    "talleres"
+  ],
+  "marketsAndSquares": {
+    "marketElements": [
+      "puestos",
+      "carros",
+      "cajas",
+      "sacos",
+      "animales",
+      "toldos",
+      "mercancias",
+      "compradores",
+      "comerciantes",
+      "espacio_de_circulacion"
+    ],
+    "squareFunctions": [
+      "comercial",
+      "administrativa",
+      "ceremonial",
+      "logistica",
+      "gremial"
+    ],
+    "forbidEmptyMonumentalSquaresWithoutReason": true
+  },
+  "portsAndRiversides": {
+    "mustIntegrateWithSettlement": true,
+    "mustHaveLandAccess": true,
+    "storageExpectedWhenRelevant": true,
+    "activityExpectedWhenRelevant": true,
+    "vesselsMustMatchGeography": true,
+    "forbid": [
+      "grandes_buques_en_rios_no_navegables_para_ellos",
+      "convertir_todo_puerto_en_base_naval"
+    ]
+  },
+  "defenseRules": {
+    "wallsByDefault": false,
+    "wallsRequire": [
+      "canon",
+      "historia_local",
+      "funcion_defensiva_real"
+    ],
+    "possibleFeatures": [
+      "puertas",
+      "torres",
+      "caminos_de_ronda",
+      "bastiones_adecuados_a_tecnologia",
+      "barrios_exteriores"
+    ],
+    "forbid": [
+      "murallas_gigantes_sin_poblacion_que_proteger",
+      "fortificaciones_imposibles",
+      "torres_decorativas_repetidas",
+      "castillo_en_cada_ciudad"
+    ]
+  },
+  "monumentalityRules": {
+    "mustBeJustifiedBy": [
+      "poder_politico",
+      "riqueza",
+      "funcion",
+      "tradicion",
+      "ingenieria",
+      "historia",
+      "uso"
+    ],
+    "capitalDoesNotRequireEveryBuildingMonumental": true,
+    "smallSettlementCanHaveSingleExceptionalElement": true
+  },
+  "dailyLife": {
+    "possibleSigns": [
+      "ropa_tendida",
+      "lena",
+      "animales",
+      "herramientas",
+      "carros",
+      "barriles",
+      "cajas",
+      "mercancias",
+      "humo_de_chimeneas",
+      "talleres_abiertos",
+      "personas_trabajando",
+      "ninos_si_corresponde",
+      "mantenimiento",
+      "reparaciones",
+      "basura_contextual_y_limitada",
+      "desgaste"
+    ],
+    "forbidAutomaticFilth": true
+  },
+  "wealthAndMaintenance": {
+    "wealthSignals": [
+      "buena_piedra",
+      "madera_de_calidad",
+      "tejados_reparados",
+      "calles_mantenidas",
+      "mejores_ventanas",
+      "mejor_carpinteria",
+      "mobiliario_urbano",
+      "limpieza",
+      "decoracion_contenida",
+      "mejores_materiales"
+    ],
+    "povertySignals": [
+      "reparaciones_precarias",
+      "materiales_baratos",
+      "menor_mantenimiento",
+      "hacinamiento",
+      "desgaste"
+    ],
+    "avoidCaricature": true
+  },
+  "religionRules": {
+    "religiousArchitectureByDefault": false,
+    "forbidUnlessExplicitlyAuthorized": [
+      "iglesias",
+      "templos",
+      "capillas",
+      "campanarios_religiosos",
+      "cruces",
+      "santuarios",
+      "estatuas_divinas"
+    ]
+  },
+  "fantasyAndMagicRules": {
+    "byDefault": false,
+    "forbidUnlessCanonAllows": [
+      "runas",
+      "cristales",
+      "luces_magicas",
+      "portales",
+      "torres_imposibles",
+      "levitacion",
+      "particulas",
+      "estructuras_sobrenaturales"
+    ]
+  },
+  "climateIntegration": {
+    "mustUseClimateSystemOutput": true,
+    "mayAffect": [
+      "tejados",
+      "nieve",
+      "barro",
+      "charcos",
+      "humo",
+      "humedad",
+      "niebla",
+      "vegetacion",
+      "ropa",
+      "actividad_exterior",
+      "luz",
+      "trafico",
+      "estado_del_rio",
+      "acumulacion_de_hielo"
+    ],
+    "seasonMustNotBeInferredOnlyFromAesthetics": true
+  },
+  "timeOfDayRules": {
+    "day": [
+      "actividad_economica",
+      "mercados",
+      "talleres",
+      "trafico",
+      "mayor_legibilidad_urbana"
+    ],
+    "sunset": [
+      "cierre_de_mercados",
+      "iluminacion_interior",
+      "sombras_largas"
+    ],
+    "night": [
+      "menor_actividad",
+      "fuentes_de_luz_coherentes",
+      "calles_mas_oscuras",
+      "vigilancia",
+      "lunas_segun_biblia_global"
+    ],
+    "forbidModernCityLighting": true
+  },
+  "compositionRules": {
+    "establishingViewShouldShowWhenRelevant": [
+      "escala",
+      "funcion",
+      "geografia",
+      "estructura_urbana",
+      "materiales",
+      "relacion_con_entorno"
+    ],
+    "notEverythingMustAppearInOneImage": true,
+    "forbidClicheComposition": [
+      "valle_perfecto",
+      "castillo_en_colina_por_defecto",
+      "rio_serpenteante_por_defecto",
+      "montanas_epicas_por_defecto",
+      "gran_cascada_por_defecto"
+    ],
+    "streetLevelPriorities": [
+      "materiales",
+      "escala_humana",
+      "oficio",
+      "actividad",
+      "relacion_edificios_calle",
+      "puertas",
+      "ventanas",
+      "talleres",
+      "comercios"
+    ]
+  },
+  "signageRules": {
+    "forbidArbitraryLegibleText": true,
+    "allowedOnlyFrom": [
+      "canon",
+      "sistema_especifico"
+    ],
+    "possible": [
+      "carteles",
+      "emblemas",
+      "marcas_de_gremio",
+      "senalizacion"
+    ],
+    "forbidModernTypography": true
+  },
+  "populationRules": {
+    "mustMatchSettlementSize": true,
+    "occupationsMustBeCoherent": true,
+    "ageAndFunctionDiversity": true,
+    "clothingMustMatchCulture": true,
+    "avoidClonedCrowds": true,
+    "doNotOverpopulateEveryScene": true
+  },
+  "animalsAndTransport": {
+    "functionalOnly": true,
+    "animals": [
+      "caballos",
+      "ganado",
+      "animales_de_carga",
+      "animales_domesticos",
+      "fauna_local"
+    ],
+    "vehiclesMustMatch": [
+      "tecnologia",
+      "geografia",
+      "funcion",
+      "infraestructura"
+    ],
+    "forbidDecorativeVehicles": true
+  },
+  "assetTypes": {
+    "genericSettlement": {
+      "mayReuse": [
+        "arquitectura_cultural",
+        "materiales",
+        "escala",
+        "tipologias"
+      ],
+      "avoidOverDistinctiveTraits": true
+    },
+    "uniqueSettlement": {
+      "mayRequire": [
+        "silueta_especifica",
+        "geografia_fija",
+        "edificios_singulares",
+        "continuidad_estricta",
+        "variant_group_propio"
+      ]
+    }
+  },
+  "continuityRules": {
+    "mustPersistAcrossVariants": [
+      "identidad_urbana",
+      "hitos_principales",
+      "materiales",
+      "geografia",
+      "escala",
+      "arquitectura"
+    ],
+    "mayVary": [
+      "clima",
+      "estacion",
+      "hora",
+      "actividad",
+      "iluminacion",
+      "estado_del_terreno",
+      "densidad_de_poblacion"
+    ],
+    "variantMustStillLookLikeSameSettlement": true
+  },
+  "variantGroups": {
+    "enabled": true,
+    "exampleId": "hallheim_city_overview",
+    "supportedAxes": [
+      "timeOfDay",
+      "season",
+      "weather",
+      "groundState",
+      "activityState"
+    ]
+  },
+  "promptRequiredContext": [
+    "cultura",
+    "region",
+    "localizacion_si_aplica",
+    "escala",
+    "funcion",
+    "materiales",
+    "cubiertas",
+    "geografia",
+    "murallas_si_aplica",
+    "riqueza",
+    "mantenimiento",
+    "infraestructuras",
+    "clima",
+    "estacion",
+    "hora",
+    "poblacion",
+    "actividad",
+    "restricciones_negativas"
+  ],
+  "universalNegativeRules": [
+    "ciudad_generica_de_fantasia",
+    "aldea_vikinga_generica",
+    "ciudad_celta_generica",
+    "castillos_imposibles",
+    "torres_sin_funcion",
+    "catedrales_no_autorizadas",
+    "montanas_inventadas",
+    "nieve_inventada",
+    "grandes_cascadas_decorativas",
+    "exceso_de_humo",
+    "exceso_de_niebla",
+    "calles_vacias_en_ciudades_activas",
+    "ciudades_limpias_como_parques_tematicos",
+    "ciudades_inmundas_por_defecto",
+    "repeticion_procedural_evidente",
+    "uniformidad_extrema",
+    "espectacularidad_geografica_no_canonica"
+  ],
+  "approvalChecklist": [
+    "respeta_biblia_visual_general",
+    "respeta_perfil_cultural",
+    "respeta_perfil_regional",
+    "respeta_geografia_local",
+    "escala_correcta",
+    "funcion_visible",
+    "materiales_correctos",
+    "cubiertas_correctas",
+    "densidad_urbana_plausible",
+    "calles_coherentes_con_uso_y_riqueza",
+    "poblacion_coherente",
+    "infraestructuras_con_sentido",
+    "clima_y_estacion_correctos",
+    "sin_elementos_espectaculares_no_autorizados",
+    "sin_arquitectura_religiosa_no_autorizada",
+    "parece_lugar_vivido_no_maqueta",
+    "distinguible_por_funcion_y_geografia"
+  ],
+  "approvalRule": {
+    "rejectIfStructuralOrGeographicRuleFails": true
+  },
+  "finalRule": "Un asentamiento de Nimroel debe parecer un lugar que existe por una razon."
+}
