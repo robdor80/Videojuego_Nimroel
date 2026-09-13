@@ -4,8 +4,6 @@ package com.nimroel.assetmanager.domain.model
 object AssetValidator {
     private val referenceId = Regex("^[a-z0-9]+(?:[._-][a-z0-9]+)*$")
     private val contractVersion = Regex("^[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:[-+][0-9A-Za-z.-]+)?$")
-    private val mimeType = Regex("^image/[a-z0-9.+-]+$")
-    private val sha256 = Regex("^[0-9a-f]{64}$")
     private val namespace = Regex("^[a-z0-9]+(?:[.-][a-z0-9]+)+$")
 
     fun validate(asset: Asset): List<String> = buildList {
@@ -15,7 +13,7 @@ object AssetValidator {
         asset.subject?.let { validateSubject(it, this) }
         asset.visual?.let { validateVisual(it, this) }
         validateDetails(asset.details, asset.type, this)
-        validateContent(asset.content, this)
+        addAll(ContentValidator.validate(asset.content))
         validateProvenance(asset, this)
         asset.storage?.let { validateStorage(it, this) }
         asset.extensions?.let { validateExtensions(it, this) }
@@ -55,12 +53,6 @@ object AssetValidator {
             null -> Unit
         }
     }
-    private fun validateContent(value: Content, errors: MutableList<String>) {
-        if (!mimeType.matches(value.mimeType) || value.mimeType.length > 128) errors += "content.mimeType is invalid"
-        if (value.widthPx < 1 || value.heightPx < 1 || value.byteSize?.let { it < 1 } == true) errors += "content dimensions and byteSize must be positive"
-        if (!sha256.matches(value.sha256)) errors += "content.sha256 must be 64 lowercase hexadecimal characters"
-        if (value.colorSpace?.let { it.isBlank() || it.length > 64 } == true) errors += "content.colorSpace is invalid"
-    }
     private fun validateProvenance(asset: Asset, errors: MutableList<String>) {
         val value = asset.provenance
         if (value.originKind == OriginKind.GENERATED && value.generator == null) errors += "generated provenance requires generator"
@@ -85,4 +77,19 @@ object AssetValidator {
     private fun refs(values: List<String?>, errors: MutableList<String>) = values.forEach { ref(it, errors) }
     private fun ref(value: String?, errors: MutableList<String>) { if (value != null && (!referenceId.matches(value) || value.length > 128)) errors += "reference ID is invalid" }
     private fun ids(values: List<String>?, label: String, errors: MutableList<String>) { if (values != null && (values.isEmpty() || values.distinct().size != values.size)) errors += "$label must be non-empty and unique"; values?.forEach { ref(it, errors) } }
+}
+
+/** Canonical Asset Schema v1 validation for a Content block, reusable before an Asset exists. */
+object ContentValidator {
+    private val mimeType = Regex("^image/[a-z0-9.+-]+$")
+    private val sha256 = Regex("^[0-9a-f]{64}$")
+
+    fun validate(content: Content): List<String> = buildList {
+        if (!mimeType.matches(content.mimeType) || content.mimeType.length > 128) add("content.mimeType is invalid")
+        if (content.widthPx < 1 || content.heightPx < 1 || content.byteSize?.let { it < 1 } == true) {
+            add("content dimensions and byteSize must be positive")
+        }
+        if (!sha256.matches(content.sha256)) add("content.sha256 must be 64 lowercase hexadecimal characters")
+        if (content.colorSpace?.let { it.isBlank() || it.length > 64 } == true) add("content.colorSpace is invalid")
+    }
 }

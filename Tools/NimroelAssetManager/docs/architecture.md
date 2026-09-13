@@ -26,6 +26,7 @@
 - Completado: persistencia local Room v1 descrita en `local-persistence-v1.md`, incluido el schema exportado y las pruebas de integración en memoria.
 - Completado: Production Draft v1 para `npc_portrait`, con resolución versionada, semántica fixed/suggested, edición validada y materialización de Asset Schema v1.
 - Completado: interfaz Android “Nueva producción” v1, conectada al Production Draft y a los contratos compartidos empaquetados en runtime, con edición responsive y resumen reactivo.
+- Completado: selección local de imagen y preparación de `Content` v1 mediante URI temporal, análisis streaming, validación reusable y política latest-selection-wins.
 
 ## Decisiones aún abiertas
 
@@ -38,4 +39,4 @@
 
 ## Próximo hito
 
-Implementar la selección/importación local de imagen y preparar el `Content` necesario para el siguiente paso del flujo, sin adelantar las decisiones abiertas de persistencia, retención, procesamiento remoto, sincronización ni Asset Resolver.
+Definir el staging/ingestión local y la generación controlada de AssetId/Provenance, sin fijar aún la política definitiva de retención ni adelantar sincronización o Asset Resolver.
