@@ -1,0 +1,343 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "0a731740bbaa7acea5ab3399d8fd033c",
+    "entities": [
+      {
+        "tableName": "asset_documents",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`asset_id` TEXT NOT NULL, `schema_version` INTEGER NOT NULL, `canonical_json` TEXT NOT NULL, `asset_type` TEXT NOT NULL, `lifecycle_status` TEXT NOT NULL, `realm_id` TEXT, `culture_id` TEXT, `subject_entity_id` TEXT, `projection_version` INTEGER NOT NULL, PRIMARY KEY(`asset_id`))",
+        "fields": [
+          {
+            "fieldPath": "assetId",
+            "columnName": "asset_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "schemaVersion",
+            "columnName": "schema_version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "canonicalJson",
+            "columnName": "canonical_json",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "assetType",
+            "columnName": "asset_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lifecycleStatus",
+            "columnName": "lifecycle_status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "realmId",
+            "columnName": "realm_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "cultureId",
+            "columnName": "culture_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "subjectEntityId",
+            "columnName": "subject_entity_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "projectionVersion",
+            "columnName": "projection_version",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "asset_id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_asset_documents_asset_type",
+            "unique": false,
+            "columnNames": [
+              "asset_type"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_asset_documents_asset_type` ON `${TABLE_NAME}` (`asset_type`)"
+          },
+          {
+            "name": "index_asset_documents_lifecycle_status",
+            "unique": false,
+            "columnNames": [
+              "lifecycle_status"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_asset_documents_lifecycle_status` ON `${TABLE_NAME}` (`lifecycle_status`)"
+          },
+          {
+            "name": "index_asset_documents_subject_entity_id",
+            "unique": false,
+            "columnNames": [
+              "subject_entity_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_asset_documents_subject_entity_id` ON `${TABLE_NAME}` (`subject_entity_id`)"
+          },
+          {
+            "name": "index_asset_documents_realm_id",
+            "unique": false,
+            "columnNames": [
+              "realm_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_asset_documents_realm_id` ON `${TABLE_NAME}` (`realm_id`)"
+          },
+          {
+            "name": "index_asset_documents_culture_id",
+            "unique": false,
+            "columnNames": [
+              "culture_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_asset_documents_culture_id` ON `${TABLE_NAME}` (`culture_id`)"
+          }
+        ]
+      },
+      {
+        "tableName": "asset_local_state",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`asset_id` TEXT NOT NULL, `availability` TEXT NOT NULL, `last_reconciled_at` INTEGER, `diagnostic_code` TEXT, `diagnostic_detail` TEXT, PRIMARY KEY(`asset_id`), FOREIGN KEY(`asset_id`) REFERENCES `asset_documents`(`asset_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "assetId",
+            "columnName": "asset_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "availability",
+            "columnName": "availability",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastReconciledAt",
+            "columnName": "last_reconciled_at",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "diagnosticCode",
+            "columnName": "diagnostic_code",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "diagnosticDetail",
+            "columnName": "diagnostic_detail",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "asset_id"
+          ]
+        },
+        "foreignKeys": [
+          {
+            "table": "asset_documents",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "asset_id"
+            ],
+            "referencedColumns": [
+              "asset_id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "local_representations",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`representation_id` TEXT NOT NULL, `asset_id` TEXT NOT NULL, `role` TEXT NOT NULL, `relative_path` TEXT NOT NULL, `mime_type` TEXT NOT NULL, `sha256` TEXT NOT NULL, `width_px` INTEGER, `height_px` INTEGER, `byte_size` INTEGER NOT NULL, `availability` TEXT NOT NULL, PRIMARY KEY(`representation_id`), FOREIGN KEY(`asset_id`) REFERENCES `asset_documents`(`asset_id`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "fields": [
+          {
+            "fieldPath": "representationId",
+            "columnName": "representation_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "assetId",
+            "columnName": "asset_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "role",
+            "columnName": "role",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "relativePath",
+            "columnName": "relative_path",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mimeType",
+            "columnName": "mime_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sha256",
+            "columnName": "sha256",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "widthPx",
+            "columnName": "width_px",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "heightPx",
+            "columnName": "height_px",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "byteSize",
+            "columnName": "byte_size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "availability",
+            "columnName": "availability",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "representation_id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_local_representations_asset_id",
+            "unique": false,
+            "columnNames": [
+              "asset_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_local_representations_asset_id` ON `${TABLE_NAME}` (`asset_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "asset_documents",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "asset_id"
+            ],
+            "referencedColumns": [
+              "asset_id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "ingest_work_items",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`work_id` TEXT NOT NULL, `reserved_asset_id` TEXT NOT NULL, `source_uri` TEXT NOT NULL, `state` TEXT NOT NULL, `staging_relative_path` TEXT, `created_at` INTEGER NOT NULL, `updated_at` INTEGER NOT NULL, `error_code` TEXT, `error_detail` TEXT, PRIMARY KEY(`work_id`))",
+        "fields": [
+          {
+            "fieldPath": "workId",
+            "columnName": "work_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "reservedAssetId",
+            "columnName": "reserved_asset_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceUri",
+            "columnName": "source_uri",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stagingRelativePath",
+            "columnName": "staging_relative_path",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updated_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "errorCode",
+            "columnName": "error_code",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "errorDetail",
+            "columnName": "error_detail",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "work_id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_ingest_work_items_reserved_asset_id",
+            "unique": true,
+            "columnNames": [
+              "reserved_asset_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_ingest_work_items_reserved_asset_id` ON `${TABLE_NAME}` (`reserved_asset_id`)"
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0a731740bbaa7acea5ab3399d8fd033c')"
+    ]
+  }
+}

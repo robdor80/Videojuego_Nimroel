@@ -8,12 +8,13 @@
 - Vocabulary v1 define valores editoriales versionados; Vocabulary Set v1 enlaza rutas canónicas con vocabularios/versiones; Preset v1 precarga valores mediante un único set.
 - Los JSON compartidos bajo `contracts/` son fuente de verdad para estos contratos. Kotlin, Android y la futura herramienta Windows son consumidores.
 - `RemoteAssetStore` es una frontera de dominio, no una implementación de ImageKit. No contiene ni admite credenciales privadas cliente.
-- La persistencia local v1 adopta `canonicalJson` en Room con proyecciones reconstruibles, tablas operacionales separadas e inventario independiente de representaciones físicas. Room se implementará en el siguiente hito.
+- La persistencia local Room v1 está implementada con `canonical_json` como fuente de verdad, proyecciones reconstruibles, tablas operacionales separadas e inventario independiente de representaciones físicas.
+- Room DB version 1 exporta su schema de forma reproducible. La API tipada actual sólo admite Asset Schema v1; la columna `canonical_json` permite conservar documentos futuros, pero su lectura/edición queda bloqueada hasta disponer de un codec y validador compatibles.
 
 ## Capas Android
 
 - `domain/`: modelos y contratos de negocio independientes de UI/proveedor.
-- `data/`: repositorios, Room y procesamiento cuando se definan sus necesidades concretas.
+- `data/`: Room DB v1, DAOs, conversores, proyección del documento canónico y `RoomLocalAssetStore`; el procesamiento se añadirá cuando se definan sus necesidades concretas.
 - `ui/`: Compose y ViewModels; no debe alojar reglas de schema ni persistencia.
 - `sync/` y `processing/`: se crearán junto con operaciones reales y pruebas; WorkManager será el candidato para colas fiables de sincronización.
 
@@ -22,7 +23,7 @@
 - Completado: Asset Schema v1 y sus fixtures.
 - Completado: adaptación Kotlin, serialización y validación de dominio.
 - Completado: Vocabulary v1, Vocabulary Set v1 y Preset v1, con registros piloto limitados a valores confirmados.
-- Diseñado, pendiente de implementación: persistencia local v1 descrita en `local-persistence-v1.md`.
+- Completado: persistencia local Room v1 descrita en `local-persistence-v1.md`, incluido el schema exportado y las pruebas de integración en memoria.
 
 ## Decisiones aún abiertas
 
@@ -35,4 +36,4 @@
 
 ## Próximo hito
 
-Implementar Room DB version 1 a partir de `local-persistence-v1.md`: documento canónico, proyecciones, estado local, representaciones físicas y trabajos de ingestión. La implementación debe permanecer desacoplada de ImageKit, sincronización, importación UI y Asset Resolver.
+Definir el siguiente flujo de producto sobre la persistencia local ya implementada sin adelantar las decisiones abiertas de filesystem, retención, procesamiento, sincronización ni Asset Resolver.
