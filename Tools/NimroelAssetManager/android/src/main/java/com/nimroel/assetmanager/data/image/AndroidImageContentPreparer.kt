@@ -1,7 +1,6 @@
 package com.nimroel.assetmanager.data.image
 
 import android.content.ContentResolver
-import android.graphics.BitmapFactory
 import android.net.Uri
 import com.nimroel.assetmanager.domain.model.Content
 import com.nimroel.assetmanager.domain.model.ContentValidator
@@ -79,12 +78,12 @@ class AndroidImageContentPreparer internal constructor(
     }
 
     private fun resolveMimeType(resolverValue: String?, decoderValue: String?): String {
-        val resolverMime = resolverValue?.trim()?.lowercase()?.normalizeMimeAlias()
-        val decoderMime = decoderValue?.trim()?.lowercase()?.normalizeMimeAlias()
-        if (resolverMime != null && !IMAGE_MIME.matches(resolverMime)) {
+        val resolverMime = resolverValue?.trim()?.lowercase()?.normalizeImageMimeAlias()
+        val decoderMime = decoderValue?.trim()?.lowercase()?.normalizeImageMimeAlias()
+        if (resolverMime != null && !ANDROID_IMAGE_MIME.matches(resolverMime)) {
             throw ImagePreparationException("El archivo seleccionado no tiene un tipo MIME de imagen válido.")
         }
-        if (decoderMime != null && !IMAGE_MIME.matches(decoderMime)) {
+        if (decoderMime != null && !ANDROID_IMAGE_MIME.matches(decoderMime)) {
             throw ImagePreparationException("El decoder devolvió un tipo MIME de imagen no válido.")
         }
         return decoderMime ?: resolverMime
@@ -92,26 +91,14 @@ class AndroidImageContentPreparer internal constructor(
     }
 
     private fun validateResolverMimeType(value: String?) {
-        val normalized = value?.trim()?.lowercase()?.normalizeMimeAlias() ?: return
-        if (!IMAGE_MIME.matches(normalized)) {
+        val normalized = value?.trim()?.lowercase()?.normalizeImageMimeAlias() ?: return
+        if (!ANDROID_IMAGE_MIME.matches(normalized)) {
             throw ImagePreparationException("El archivo seleccionado no tiene un tipo MIME de imagen válido.")
         }
     }
 
-    private fun String.normalizeMimeAlias(): String = if (this == "image/jpg") "image/jpeg" else this
-
     private data class MeasuredBytes(val byteSize: Long, val sha256: String)
-
-    private companion object {
-        val IMAGE_MIME = Regex("^image/[a-z0-9.+-]+$")
-    }
 }
-
-internal data class DecodedImageBounds(
-    val widthPx: Int,
-    val heightPx: Int,
-    val decoderMimeType: String?,
-)
 
 internal interface AndroidImageSourceAccess {
     fun mimeType(sourceRef: ImageSourceRef): String?
@@ -128,11 +115,9 @@ private class ContentResolverImageSourceAccess(
         contentResolver.openInputStream(sourceRef.toUri())
 
     override fun decodeBounds(sourceRef: ImageSourceRef): DecodedImageBounds {
-        val options = BitmapFactory.Options().apply { inJustDecodeBounds = true }
         val stream = openStream(sourceRef)
             ?: throw ImagePreparationException("No se pudo volver a abrir la imagen para leer sus dimensiones.")
-        stream.use { BitmapFactory.decodeStream(it, null, options) }
-        return DecodedImageBounds(options.outWidth, options.outHeight, options.outMimeType)
+        return stream.use(::decodeImageBounds)
     }
 
     private fun ImageSourceRef.toUri(): Uri = Uri.parse(value).also { uri ->
