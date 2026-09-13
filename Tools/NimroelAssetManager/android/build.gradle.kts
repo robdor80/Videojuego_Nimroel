@@ -28,6 +28,9 @@ android {
     }
 
     sourceSets {
+        getByName("main") {
+            assets.srcDir("../contracts")
+        }
         getByName("test") {
             resources.srcDir("../contracts")
         }

@@ -100,6 +100,13 @@ class ProductionDraftService(
             ?: throw ProductionDraftException("Missing Vocabulary ${reference.vocabularyId} ${reference.version} for $fieldPath")
     }
 
+    /** Vocabulary-backed v1 fields that the draft's exact Vocabulary Set actually exposes. */
+    fun boundVocabularyFieldPaths(draft: ProductionDraft): Set<String> =
+        vocabularySet(draft.vocabularySetId, draft.vocabularySetVersion)
+            .bindings
+            .keys
+            .filterTo(linkedSetOf()) { it in ProductionFieldPaths.vocabularySelections }
+
     fun buildAsset(draft: ProductionDraft, assetId: AssetId, content: Content, provenance: Provenance): Asset {
         if (draft.assetType != AssetType.NPC_PORTRAIT) {
             throw ProductionDraftException("Production Draft v1 can only materialize npc_portrait")
