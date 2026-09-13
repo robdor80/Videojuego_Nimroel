@@ -104,14 +104,16 @@ internal class RoomLocalAssetStore(
         database.withTransaction {
             val current = ingestWorkItems.find(transition.workId)?.toDomain() ?: return@withTransaction null
             val updated = IngestWorkTransitionPolicy.apply(current, transition)
+            // Keep conditional DAO writes behind the same persistence validation as inserts.
+            val updatedEntity = updated.toEntity()
             val changed = ingestWorkItems.transition(
-                workId = updated.workId,
+                workId = updatedEntity.workId,
                 expectedState = transition.expectedState,
-                targetState = updated.state,
-                stagingRelativePath = updated.stagingRelativePath,
-                updatedAt = updated.updatedAt,
-                errorCode = updated.errorCode,
-                errorDetail = updated.errorDetail,
+                targetState = updatedEntity.state,
+                stagingRelativePath = updatedEntity.stagingRelativePath,
+                updatedAt = updatedEntity.updatedAt,
+                errorCode = updatedEntity.errorCode,
+                errorDetail = updatedEntity.errorDetail,
             )
             if (changed == 1) updated else null
         }

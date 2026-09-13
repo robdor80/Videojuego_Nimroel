@@ -214,6 +214,56 @@ class RoomLocalAssetStoreTest {
     }
 
     @Test
+    fun `ready transition persists a normalized managed staging path`() = runBlocking {
+        val processing = processingWork("work-safe-path")
+
+        val ready = store.transitionIngestWorkItem(
+            IngestWorkTransition(
+                workId = processing.workId,
+                expectedState = IngestWorkState.PROCESSING,
+                targetState = IngestWorkState.READY_TO_COMMIT,
+                updatedAt = processing.updatedAt.plusSeconds(1),
+                stagingRelativePath = "staging/work-1/source",
+            ),
+        )
+
+        assertEquals(IngestWorkState.READY_TO_COMMIT, ready?.state)
+        assertEquals("staging/work-1/source", ready?.stagingRelativePath)
+        assertEquals(ready, store.ingestWorkItem(processing.workId))
+    }
+
+    @Test
+    fun `ready transition rejects unsafe staging paths before Room write`() = runBlocking {
+        val processing = processingWork("work-unsafe-path")
+        listOf(
+            "/data/user/0/source",
+            "../source",
+            "staging/../source",
+            "staging\\work-1\\source",
+            "staging:work-1/source",
+        ).forEach { unsafePath ->
+
+            assertThrows(IllegalArgumentException::class.java) {
+                runBlocking {
+                    store.transitionIngestWorkItem(
+                        IngestWorkTransition(
+                            workId = processing.workId,
+                            expectedState = IngestWorkState.PROCESSING,
+                            targetState = IngestWorkState.READY_TO_COMMIT,
+                            updatedAt = processing.updatedAt.plusSeconds(1),
+                            stagingRelativePath = unsafePath,
+                        ),
+                    )
+                }
+            }
+
+            val persisted = checkNotNull(store.ingestWorkItem(processing.workId))
+            assertEquals(IngestWorkState.PROCESSING, persisted.state)
+            assertNull(persisted.stagingRelativePath)
+        }
+    }
+
+    @Test
     fun `real Room integration persists coordinator result as ready without creating Asset state`() = runBlocking {
         val reservedId = TestAssets.fixture().assetId
         val content = Content("image/png", 32, 64, 256, "c".repeat(64))
@@ -397,6 +447,21 @@ class RoomLocalAssetStoreTest {
             stagingRelativePath = null,
             createdAt = timestamp,
             updatedAt = timestamp,
+        )
+    }
+
+    private suspend fun processingWork(workId: String): IngestWorkItem {
+        val queued = workItem(workId, TestAssets.fixture().assetId.value)
+        store.createIngestWorkItem(queued)
+        return checkNotNull(
+            store.transitionIngestWorkItem(
+                IngestWorkTransition(
+                    workId = queued.workId,
+                    expectedState = IngestWorkState.QUEUED,
+                    targetState = IngestWorkState.PROCESSING,
+                    updatedAt = queued.updatedAt.plusSeconds(1),
+                ),
+            ),
         )
     }
 
