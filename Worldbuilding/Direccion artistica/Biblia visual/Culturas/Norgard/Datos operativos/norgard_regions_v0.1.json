@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_regions",
+  "version": "0.1",
+  "cultureId": "norgard",
+  "sourceDocument": "NORGARD_VISUAL_PROFILE_v0.1.md",
+  "regions": [
+    {
+      "id": "west_norgard",
+      "name": "Oeste de Norgard",
+      "identity": [
+        "comercio",
+        "puertos",
+        "riqueza",
+        "metales_preciosos"
+      ],
+      "roofing": "teja",
+      "materials": [
+        "piedra",
+        "madera"
+      ],
+      "wealthLanguage": "calidad_y_mantenimiento",
+      "settlementIds": [
+        "veldora",
+        "treihord"
+      ]
+    },
+    {
+      "id": "central_norgard",
+      "name": "Centro de Norgard",
+      "identity": [
+        "poder_politico",
+        "administracion",
+        "grandes_vias",
+        "vino"
+      ],
+      "roofing": "teja",
+      "materials": [
+        "piedra",
+        "madera"
+      ],
+      "institutionalWeight": "alto",
+      "settlementIds": [
+        "hallheim",
+        "dorth",
+        "lumina",
+        "karsath"
+      ]
+    },
+    {
+      "id": "east_norgard",
+      "name": "Este de Norgard",
+      "identity": [
+        "agricultura",
+        "ganaderia",
+        "caballos",
+        "rios",
+        "grandes_llanuras"
+      ],
+      "roofing": "pizarra",
+      "materials": [
+        "piedra",
+        "madera"
+      ],
+      "landscape": [
+        "llanuras",
+        "campos_extensos",
+        "rios",
+        "bosques_y_franjas_forestales"
+      ],
+      "production": [
+        "cereales",
+        "verduras",
+        "tuberculos",
+        "ganado",
+        "caballos"
+      ],
+      "settlementIds": [
+        "arleon",
+        "treskal"
+      ]
+    },
+    {
+      "id": "far_north_norgard",
+      "name": "Norte extremo de Norgard",
+      "identity": [
+        "frio",
+        "mineria",
+        "metalurgia",
+        "austeridad",
+        "supervivencia"
+      ],
+      "roofing": "pizarra_muy_inclinada",
+      "materials": [
+        "piedra",
+        "madera",
+        "metal"
+      ],
+      "buildingForm": [
+        "bajo",
+        "ancho",
+        "ventanas_pequenas"
+      ],
+      "dwarvenLegacy": "solo_en_zonas_y_restos_concretos",
+      "settlementIds": [
+        "zanthir"
+      ]
+    },
+    {
+      "id": "southwest_coast_norgard",
+      "name": "Costa suroccidental de Norgard",
+      "identity": [
+        "pesca",
+        "navegacion",
+        "productos_marinos"
+      ],
+      "roofing": "teja",
+      "materials": [
+        "piedra",
+        "madera"
+      ],
+      "settlementIds": [
+        "taramin"
+      ]
+    },
+    {
+      "id": "syvaris_island",
+      "name": "Isla de Syvaris",
+      "identity": [
+        "pesca",
+        "puerto_seguro",
+        "presencia_naval",
+        "humedad_costera"
+      ],
+      "materials": [
+        "piedra",
+        "madera"
+      ],
+      "architecture": [
+        "edificios_mas_bajos",
+        "tonos_algo_mas_claros",
+        "algunos_encalados"
+      ],
+      "landscape": {
+        "south": [
+          "verde",
+          "humedo",
+          "aldeas"
+        ],
+        "center_and_north": [
+          "mas_arido",
+          "menos_poblado"
+        ]
+      },
+      "settlementIds": [
+        "syvaris"
+      ]
+    },
+    {
+      "id": "wine_belt_norgard",
+      "name": "Regiones vinícolas de Norgard",
+      "identity": [
+        "vino",
+        "bodegas",
+        "almacenamiento",
+        "comercio_vinicola"
+      ],
+      "isOverlayRegion": true,
+      "settlementIds": [
+        "dorth",
+        "lumina",
+        "karsath"
+      ]
+    }
+  ]
+}

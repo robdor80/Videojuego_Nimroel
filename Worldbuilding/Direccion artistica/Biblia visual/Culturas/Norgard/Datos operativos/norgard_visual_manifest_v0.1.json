@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_visual_manifest",
+  "version": "0.1",
+  "cultureId": "norgard",
+  "files": {
+    "profile": "norgard_visual_profile_v0.1.json",
+    "regions": "norgard_regions_v0.1.json",
+    "settlements": "norgard_settlements_v0.1.json"
+  },
+  "loadOrder": [
+    "norgard_visual_profile_v0.1.json",
+    "norgard_regions_v0.1.json",
+    "norgard_settlements_v0.1.json"
+  ],
+  "resolverNotes": [
+    "El perfil general aporta reglas culturales y prohibiciones.",
+    "Las regiones añaden restricciones y rasgos geograficos/materiales.",
+    "Los asentamientos añaden funcion, escala, arquitectura y excepciones locales.",
+    "Clima y estacion deben resolverse fuera de estos JSON mediante el sistema climatico y el reloj del mundo."
+  ]
+}
