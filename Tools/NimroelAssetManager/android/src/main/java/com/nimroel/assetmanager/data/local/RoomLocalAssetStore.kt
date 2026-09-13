@@ -25,7 +25,12 @@ internal class RoomLocalAssetStore(
 
     override suspend fun saveAsset(asset: Asset) {
         val document = AssetDocumentProjector.project(asset)
-        database.withTransaction { documents.upsert(document) }
+        database.withTransaction {
+            representationDao.findByAssetId(asset.assetId.value)
+                .map(LocalRepresentationEntity::toDomain)
+                .forEach { validateCanonicalRepresentation(it, asset) }
+            documents.upsert(document)
+        }
     }
 
     override suspend fun asset(assetId: AssetId): Asset? =

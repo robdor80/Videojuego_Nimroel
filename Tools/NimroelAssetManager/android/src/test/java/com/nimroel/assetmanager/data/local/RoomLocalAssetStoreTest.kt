@@ -62,6 +62,7 @@ class RoomLocalAssetStoreTest {
     fun `saving allowed metadata changes updates canonical JSON and every projection coherently`() = runBlocking {
         val original = TestAssets.fixture()
         store.saveAsset(original)
+        store.saveRepresentation(representation(original))
         val updated = original.copy(
             lifecycle = original.lifecycle.copy(status = LifecycleStatus.DEPRECATED, note = "Superseded editorial metadata"),
             classification = Classification(realmId = "norgard", cultureId = "norgard"),
@@ -81,6 +82,7 @@ class RoomLocalAssetStoreTest {
         assertEquals(listOf(updated), store.assetsByRealmId("norgard"))
         assertEquals(listOf(updated), store.assetsByCultureId("norgard"))
         assertEquals(listOf(updated), store.assetsBySubjectEntityId("npc.norgard.farmer"))
+        assertEquals(listOf(representation(original)), store.representations(original.assetId))
     }
 
     @Test
@@ -203,6 +205,24 @@ class RoomLocalAssetStoreTest {
             }
         }
         assertTrue(store.representations(asset.assetId).isEmpty())
+    }
+
+    @Test
+    fun `saving Asset with changed content rejects update and preserves existing document representation and projections`() = runBlocking {
+        val original = TestAssets.fixture()
+        val originalRepresentation = representation(original)
+        store.saveAsset(original)
+        store.saveRepresentation(originalRepresentation)
+        val originalDocument = checkNotNull(database.assetDocuments().find(original.assetId.value))
+        val changedContent = original.copy(content = original.content.copy(sha256 = "f".repeat(64)))
+
+        assertThrows(IllegalArgumentException::class.java) {
+            runBlocking { store.saveAsset(changedContent) }
+        }
+
+        assertEquals(original, store.asset(original.assetId))
+        assertEquals(originalRepresentation, store.representations(original.assetId).single())
+        assertEquals(originalDocument, database.assetDocuments().find(original.assetId.value))
     }
 
     @Test
