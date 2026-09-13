@@ -120,6 +120,25 @@ class ProductionDraftTest {
     }
 
     @Test
+    fun `supported routes reject an unsupported Vocabulary Set binding`() {
+        val weatherPath = "visual.weatherId"
+        val set = completeSet().copy(
+            bindings = completeSet().bindings + (weatherPath to VocabularyReference("weather-catalog", "5.0")),
+        )
+        val service = service(
+            listOf(completePreset()),
+            listOf(set),
+            completeVocabularies() + Vocabulary("weather-catalog", "5.0", listOf(VocabularyValue("sunny", "Sunny"))),
+        )
+        val draft = service.startDraft("test-preset", "1.0")
+
+        assertEquals("Adult", service.availableValues(draft, ProductionFieldPaths.SUBJECT_AGE_BAND_ID).first().label)
+        assertThrows(ProductionDraftException::class.java) { service.setSelection(draft, weatherPath, "sunny") }
+        assertThrows(ProductionDraftException::class.java) { service.clearSelection(draft, weatherPath) }
+        assertThrows(ProductionDraftException::class.java) { service.availableValues(draft, weatherPath) }
+    }
+
+    @Test
     fun `availableValues preserves the linked vocabulary values metadata and order`() {
         val service = completeService()
         val draft = service.startDraft("test-preset", "1.0")

@@ -100,6 +100,8 @@ object ProductionFieldPaths {
         PROVENANCE_PROMPT_TEMPLATE_ID,
         PROVENANCE_PROMPT_TEMPLATE_VERSION,
     )
+
+    val supportedSelections = vocabularySelections + externalReferences
 }
 
 internal data class PresetSelectionEntry(val mode: PresetValueMode, val value: String)

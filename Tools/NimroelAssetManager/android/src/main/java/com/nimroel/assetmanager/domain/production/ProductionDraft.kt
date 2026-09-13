@@ -94,6 +94,7 @@ class ProductionDraftService(
     }
 
     fun availableValues(draft: ProductionDraft, fieldPath: String): List<VocabularyValue> {
+        validateFieldPath(draft, fieldPath)
         val reference = binding(draft, fieldPath)
         return vocabularies.vocabulary(reference.vocabularyId, reference.version)?.values
             ?: throw ProductionDraftException("Missing Vocabulary ${reference.vocabularyId} ${reference.version} for $fieldPath")
@@ -162,6 +163,9 @@ class ProductionDraftService(
     }
 
     private fun validateFieldPath(draft: ProductionDraft, fieldPath: String) {
+        if (fieldPath !in ProductionFieldPaths.supportedSelections) {
+            throw ProductionDraftException("Field $fieldPath is not supported by Production Draft v1")
+        }
         if (fieldPath !in ProductionFieldPaths.externalReferences) binding(draft, fieldPath)
     }
 
