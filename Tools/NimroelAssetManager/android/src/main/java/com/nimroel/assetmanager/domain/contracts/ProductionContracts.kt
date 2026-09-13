@@ -69,6 +69,58 @@ data class ProductionPreset(
 @Serializable data class PresetVersionValue(val mode: PresetValueMode, val value: String)
 @Serializable enum class PresetValueMode { @kotlinx.serialization.SerialName("fixed") FIXED, @kotlinx.serialization.SerialName("suggested") SUGGESTED }
 
+object ProductionFieldPaths {
+    const val CLASSIFICATION_REALM_ID = "classification.realmId"
+    const val CLASSIFICATION_CULTURE_ID = "classification.cultureId"
+    const val SUBJECT_SPECIES_ID = "subject.speciesId"
+    const val SUBJECT_GENDER_ID = "subject.genderId"
+    const val SUBJECT_AGE_BAND_ID = "subject.ageBandId"
+    const val DETAILS_PROFESSION_ID = "details.professionId"
+    const val DETAILS_SOCIAL_CLASS_ID = "details.socialClassId"
+    const val VISUAL_PROFILE_ID = "visual.visualProfileId"
+    const val VISUAL_PROFILE_VERSION = "visual.visualProfileVersion"
+    const val VISUAL_EXPRESSION_ID = "visual.expressionId"
+    const val PROVENANCE_PROMPT_TEMPLATE_ID = "provenance.promptTemplateId"
+    const val PROVENANCE_PROMPT_TEMPLATE_VERSION = "provenance.promptTemplateVersion"
+
+    val vocabularySelections = setOf(
+        CLASSIFICATION_REALM_ID,
+        CLASSIFICATION_CULTURE_ID,
+        SUBJECT_SPECIES_ID,
+        SUBJECT_GENDER_ID,
+        SUBJECT_AGE_BAND_ID,
+        DETAILS_PROFESSION_ID,
+        DETAILS_SOCIAL_CLASS_ID,
+        VISUAL_EXPRESSION_ID,
+    )
+
+    val externalReferences = setOf(
+        VISUAL_PROFILE_ID,
+        VISUAL_PROFILE_VERSION,
+        PROVENANCE_PROMPT_TEMPLATE_ID,
+        PROVENANCE_PROMPT_TEMPLATE_VERSION,
+    )
+
+    val supportedSelections = vocabularySelections + externalReferences
+}
+
+internal data class PresetSelectionEntry(val mode: PresetValueMode, val value: String)
+
+internal fun PresetSelections.flatten(): Map<String, PresetSelectionEntry> = buildMap {
+    classification?.realmId?.let { put(ProductionFieldPaths.CLASSIFICATION_REALM_ID, PresetSelectionEntry(it.mode, it.value)) }
+    classification?.cultureId?.let { put(ProductionFieldPaths.CLASSIFICATION_CULTURE_ID, PresetSelectionEntry(it.mode, it.value)) }
+    subject?.speciesId?.let { put(ProductionFieldPaths.SUBJECT_SPECIES_ID, PresetSelectionEntry(it.mode, it.value)) }
+    subject?.genderId?.let { put(ProductionFieldPaths.SUBJECT_GENDER_ID, PresetSelectionEntry(it.mode, it.value)) }
+    subject?.ageBandId?.let { put(ProductionFieldPaths.SUBJECT_AGE_BAND_ID, PresetSelectionEntry(it.mode, it.value)) }
+    details?.professionId?.let { put(ProductionFieldPaths.DETAILS_PROFESSION_ID, PresetSelectionEntry(it.mode, it.value)) }
+    details?.socialClassId?.let { put(ProductionFieldPaths.DETAILS_SOCIAL_CLASS_ID, PresetSelectionEntry(it.mode, it.value)) }
+    visual?.visualProfileId?.let { put(ProductionFieldPaths.VISUAL_PROFILE_ID, PresetSelectionEntry(it.mode, it.value)) }
+    visual?.visualProfileVersion?.let { put(ProductionFieldPaths.VISUAL_PROFILE_VERSION, PresetSelectionEntry(it.mode, it.value)) }
+    visual?.expressionId?.let { put(ProductionFieldPaths.VISUAL_EXPRESSION_ID, PresetSelectionEntry(it.mode, it.value)) }
+    provenance?.promptTemplateId?.let { put(ProductionFieldPaths.PROVENANCE_PROMPT_TEMPLATE_ID, PresetSelectionEntry(it.mode, it.value)) }
+    provenance?.promptTemplateVersion?.let { put(ProductionFieldPaths.PROVENANCE_PROMPT_TEMPLATE_VERSION, PresetSelectionEntry(it.mode, it.value)) }
+}
+
 class PresetRegistry private constructor(private val entries: Map<ContractKey, ProductionPreset>) {
     fun preset(id: String, version: String): ProductionPreset? = entries[ContractKey(id, version)]
     companion object {
@@ -97,7 +149,7 @@ object ProductionContractValidator {
             return@buildList
         }
         addAll(validateSet(set, vocabularies))
-        selectedVocabularyValues(preset.selections).forEach { (path, selected) ->
+        preset.selections.flatten().filterKeys { it in ProductionFieldPaths.vocabularySelections }.forEach { (path, selected) ->
             val binding = set.bindings[path]
             if (binding == null) add("Selected field $path has no binding in the Vocabulary Set")
             else if (vocabularies.value(binding.vocabularyId, binding.version, selected.value) == null) add("Unknown value ${selected.value} for $path in ${binding.vocabularyId} ${binding.version}")
@@ -115,16 +167,5 @@ object ProductionContractValidator {
     private fun validatePairedFields(value: PresetSelections, errors: MutableList<String>) {
         value.visual?.let { if ((it.visualProfileId == null) != (it.visualProfileVersion == null)) errors += "visual profile ID and version must be supplied together" }
         value.provenance?.let { if ((it.promptTemplateId == null) != (it.promptTemplateVersion == null)) errors += "prompt template ID and version must be supplied together" }
-    }
-
-    private fun selectedVocabularyValues(value: PresetSelections): List<Pair<String, PresetValue>> = buildList {
-        value.classification?.realmId?.let { add("classification.realmId" to it) }
-        value.classification?.cultureId?.let { add("classification.cultureId" to it) }
-        value.subject?.speciesId?.let { add("subject.speciesId" to it) }
-        value.subject?.genderId?.let { add("subject.genderId" to it) }
-        value.subject?.ageBandId?.let { add("subject.ageBandId" to it) }
-        value.details?.professionId?.let { add("details.professionId" to it) }
-        value.details?.socialClassId?.let { add("details.socialClassId" to it) }
-        value.visual?.expressionId?.let { add("visual.expressionId" to it) }
     }
 }

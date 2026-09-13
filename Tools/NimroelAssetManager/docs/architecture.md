@@ -13,7 +13,7 @@
 
 ## Capas Android
 
-- `domain/`: modelos y contratos de negocio independientes de UI/proveedor.
+- `domain/`: modelos y contratos de negocio independientes de UI/proveedor; incluye Production Draft v1 como flujo puro Preset → Vocabulary Set → Vocabulary → borrador → Asset validado.
 - `data/`: Room DB v1, DAOs, conversores, proyección del documento canónico y `RoomLocalAssetStore`; el procesamiento se añadirá cuando se definan sus necesidades concretas.
 - `ui/`: Compose y ViewModels; no debe alojar reglas de schema ni persistencia.
 - `sync/` y `processing/`: se crearán junto con operaciones reales y pruebas; WorkManager será el candidato para colas fiables de sincronización.
@@ -24,6 +24,7 @@
 - Completado: adaptación Kotlin, serialización y validación de dominio.
 - Completado: Vocabulary v1, Vocabulary Set v1 y Preset v1, con registros piloto limitados a valores confirmados.
 - Completado: persistencia local Room v1 descrita en `local-persistence-v1.md`, incluido el schema exportado y las pruebas de integración en memoria.
+- Completado: Production Draft v1 para `npc_portrait`, con resolución versionada, semántica fixed/suggested, edición validada y materialización de Asset Schema v1.
 
 ## Decisiones aún abiertas
 
@@ -36,4 +37,4 @@
 
 ## Próximo hito
 
-Definir el siguiente flujo de producto sobre la persistencia local ya implementada sin adelantar las decisiones abiertas de filesystem, retención, procesamiento, sincronización ni Asset Resolver.
+Diseñar la pantalla “Nueva producción / Nuevo Asset” sobre Production Draft sin adelantar las decisiones abiertas de filesystem, retención, procesamiento, sincronización ni Asset Resolver.
