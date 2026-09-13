@@ -11,15 +11,22 @@ import com.nimroel.assetmanager.data.contracts.AndroidProductionDraftBootstrap
 import com.nimroel.assetmanager.data.contracts.ProductionDraftBootstrap
 import com.nimroel.assetmanager.data.contracts.ProductionDraftEnvironment
 import com.nimroel.assetmanager.data.image.AndroidImageContentPreparer
+import com.nimroel.assetmanager.data.local.LocalAssetStoreFactory
+import com.nimroel.assetmanager.data.staging.AndroidStagingFileStore
 import com.nimroel.assetmanager.domain.contracts.PresetValueMode
 import com.nimroel.assetmanager.domain.contracts.ProductionFieldPaths
 import com.nimroel.assetmanager.domain.contracts.VocabularyValueStatus
 import com.nimroel.assetmanager.domain.model.AssetType
+import com.nimroel.assetmanager.domain.model.Content
+import com.nimroel.assetmanager.domain.identity.RandomUuidWorkIdGenerator
+import com.nimroel.assetmanager.domain.identity.UuidV7AssetIdGenerator
 import com.nimroel.assetmanager.domain.production.DraftSelectionSource
 import com.nimroel.assetmanager.domain.production.ProductionDraftException
 import com.nimroel.assetmanager.domain.processing.ImageContentPreparer
 import com.nimroel.assetmanager.domain.processing.ImagePreparationException
 import com.nimroel.assetmanager.domain.processing.ImageSourceRef
+import com.nimroel.assetmanager.domain.processing.LocalIngestCoordinator
+import com.nimroel.assetmanager.domain.processing.LocalIngestResult
 import com.nimroel.assetmanager.domain.processing.PreparedImage
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineDispatcher
@@ -46,6 +53,7 @@ sealed interface AssetManagerUiState {
         val fields: List<ProductionFieldUiState>,
         val summary: ProductionDraftSummaryUiState,
         val imageState: ImageUiState = ImageUiState.NoImage,
+        val localIngestState: LocalIngestUiState = LocalIngestUiState.NotStarted,
         val actionError: String? = null,
     ) : AssetManagerUiState
 }
@@ -90,13 +98,29 @@ sealed interface ImageUiState {
 }
 
 data class PreparedImageUiState(
-    val content: com.nimroel.assetmanager.domain.model.Content,
+    val content: Content,
 )
+
+sealed interface LocalIngestUiState {
+    data object NotStarted : LocalIngestUiState
+    data object Processing : LocalIngestUiState
+    data class Ready(
+        val reservedAssetId: String,
+        val status: String,
+        val content: Content,
+    ) : LocalIngestUiState
+
+    data class Failed(
+        val errorCode: String,
+        val message: String,
+    ) : LocalIngestUiState
+}
 
 class AssetManagerViewModel(
     private val bootstrap: ProductionDraftBootstrap,
     private val imageContentPreparer: ImageContentPreparer = UnavailableImageContentPreparer,
     private val imageDispatcher: CoroutineDispatcher = Dispatchers.IO,
+    private val localIngestCoordinator: LocalIngestCoordinator? = null,
 ) : ViewModel() {
     var uiState: AssetManagerUiState by mutableStateOf(AssetManagerUiState.Loading)
         private set
@@ -107,6 +131,7 @@ class AssetManagerViewModel(
     private var imageRequestGeneration = 0L
     private var preparedImage: PreparedImage? = null
     private var imageState: ImageUiState = ImageUiState.NoImage
+    private var localIngestState: LocalIngestUiState = LocalIngestUiState.NotStarted
     private var draftActionError: String? = null
 
     init {
@@ -140,7 +165,7 @@ class AssetManagerViewModel(
     }
 
     fun selectImage(sourceRef: ImageSourceRef?) {
-        if (sourceRef == null || environment == null) return
+        if (sourceRef == null || environment == null || localIngestState.locksImage()) return
         val previousPrepared = preparedImage?.toUiState()
         val requestGeneration = ++imageRequestGeneration
         imagePreparationJob?.cancel()
@@ -152,6 +177,7 @@ class AssetManagerViewModel(
                 if (requestGeneration != imageRequestGeneration) return@launch
                 preparedImage = result
                 imageState = ImageUiState.Prepared(result.toUiState())
+                localIngestState = LocalIngestUiState.NotStarted
                 refreshReadyState()
             } catch (error: CancellationException) {
                 throw error
@@ -167,12 +193,51 @@ class AssetManagerViewModel(
     }
 
     fun removeImage() {
+        if (localIngestState.locksImage()) return
         imagePreparationJob?.cancel()
         imagePreparationJob = null
         imageRequestGeneration += 1
         preparedImage = null
         imageState = ImageUiState.NoImage
+        localIngestState = LocalIngestUiState.NotStarted
         refreshReadyState()
+    }
+
+    fun prepareLocalIngest() {
+        val image = preparedImage ?: return
+        val coordinator = localIngestCoordinator ?: return
+        if (localIngestState is LocalIngestUiState.Processing || localIngestState is LocalIngestUiState.Ready) return
+        localIngestState = LocalIngestUiState.Processing
+        refreshReadyState()
+        viewModelScope.launch {
+            try {
+                when (val result = withContext(imageDispatcher) { coordinator.begin(image) }) {
+                    is LocalIngestResult.Ready -> {
+                        localIngestState = LocalIngestUiState.Ready(
+                            reservedAssetId = result.workItem.reservedAssetId.value,
+                            status = result.workItem.state.wireValue,
+                            content = result.stagedImage.content,
+                        )
+                    }
+
+                    is LocalIngestResult.Failed -> {
+                        localIngestState = LocalIngestUiState.Failed(
+                            errorCode = result.workItem.errorCode ?: "unexpected_io",
+                            message = result.workItem.errorDetail ?: "No se pudo preparar la ingestión local.",
+                        )
+                    }
+                }
+                refreshReadyState()
+            } catch (error: CancellationException) {
+                throw error
+            } catch (_: Exception) {
+                localIngestState = LocalIngestUiState.Failed(
+                    errorCode = "unexpected_io",
+                    message = "No se pudo completar la ingestión local.",
+                )
+                refreshReadyState()
+            }
+        }
     }
 
     private fun loadPilot() {
@@ -193,7 +258,7 @@ class AssetManagerViewModel(
 
     private fun refreshReadyState() {
         environment?.let { loaded ->
-            uiState = loaded.toReadyState(initialPresetModes, imageState, draftActionError)
+            uiState = loaded.toReadyState(initialPresetModes, imageState, localIngestState, draftActionError)
         }
     }
 
@@ -203,9 +268,16 @@ class AssetManagerViewModel(
             override fun <T : ViewModel> create(modelClass: Class<T>): T {
                 require(modelClass.isAssignableFrom(AssetManagerViewModel::class.java))
                 val applicationContext = context.applicationContext
+                val localStore = LocalAssetStoreFactory.create(applicationContext)
                 return AssetManagerViewModel(
                     bootstrap = AndroidProductionDraftBootstrap(applicationContext.assets),
                     imageContentPreparer = AndroidImageContentPreparer(applicationContext.contentResolver),
+                    localIngestCoordinator = LocalIngestCoordinator(
+                        assetIdGenerator = UuidV7AssetIdGenerator(),
+                        workIdGenerator = RandomUuidWorkIdGenerator(),
+                        stagingFileStore = AndroidStagingFileStore(applicationContext),
+                        workItemStore = localStore,
+                    ),
                 ) as T
             }
         }
@@ -228,6 +300,7 @@ private val productionFieldPresentations = listOf(
 private fun ProductionDraftEnvironment.toReadyState(
     initialPresetModes: Map<String, PresetValueMode>,
     imageState: ImageUiState = ImageUiState.NoImage,
+    localIngestState: LocalIngestUiState = LocalIngestUiState.NotStarted,
     actionError: String? = null,
 ): AssetManagerUiState.Ready {
     val boundPaths = service.boundVocabularyFieldPaths(draft)
@@ -276,11 +349,15 @@ private fun ProductionDraftEnvironment.toReadyState(
         fields = fields,
         summary = ProductionDraftSummaryUiState(summarySelections.size, summarySelections),
         imageState = imageState,
+        localIngestState = localIngestState,
         actionError = actionError,
     )
 }
 
 private fun PreparedImage.toUiState() = PreparedImageUiState(content)
+
+private fun LocalIngestUiState.locksImage(): Boolean =
+    this is LocalIngestUiState.Processing || this is LocalIngestUiState.Ready
 
 private object UnavailableImageContentPreparer : ImageContentPreparer {
     override suspend fun prepare(sourceRef: ImageSourceRef): PreparedImage {

@@ -8,14 +8,26 @@ import com.nimroel.assetmanager.domain.model.Classification
 import com.nimroel.assetmanager.domain.model.AssetId
 import com.nimroel.assetmanager.domain.model.LifecycleStatus
 import com.nimroel.assetmanager.domain.model.Subject
+import com.nimroel.assetmanager.domain.identity.AssetIdGenerator
+import com.nimroel.assetmanager.domain.identity.WorkIdGenerator
+import com.nimroel.assetmanager.domain.model.Content
+import com.nimroel.assetmanager.domain.processing.ImageSourceRef
+import com.nimroel.assetmanager.domain.processing.LocalIngestCoordinator
+import com.nimroel.assetmanager.domain.processing.LocalIngestResult
+import com.nimroel.assetmanager.domain.processing.PreparedImage
+import com.nimroel.assetmanager.domain.processing.StagedImage
+import com.nimroel.assetmanager.domain.processing.StagingFileStore
 import com.nimroel.assetmanager.domain.storage.AssetLocalState
 import com.nimroel.assetmanager.domain.storage.AssetAvailability
 import com.nimroel.assetmanager.domain.storage.IngestWorkItem
 import com.nimroel.assetmanager.domain.storage.IngestWorkState
+import com.nimroel.assetmanager.domain.storage.IngestWorkTransition
 import com.nimroel.assetmanager.domain.storage.LocalRepresentation
 import com.nimroel.assetmanager.domain.storage.RepresentationAvailability
 import com.nimroel.assetmanager.domain.storage.RepresentationRole
 import java.time.Instant
+import java.time.Clock
+import java.time.ZoneOffset
 import kotlinx.coroutines.runBlocking
 import org.junit.After
 import org.junit.Assert.assertEquals
@@ -163,13 +175,69 @@ class RoomLocalAssetStoreTest {
         assertFalse(store.containsAsset(assetId))
         assertEquals(work, store.ingestWorkItem("work-1"))
         assertEquals(work, store.ingestWorkItemByReservedAssetId(assetId))
-        val processing = work.copy(state = IngestWorkState.PROCESSING, updatedAt = work.updatedAt.plusSeconds(1))
-        assertTrue(store.updateIngestWorkItem(processing))
+        val processing = checkNotNull(
+            store.transitionIngestWorkItem(
+                IngestWorkTransition(
+                    workId = work.workId,
+                    expectedState = IngestWorkState.QUEUED,
+                    targetState = IngestWorkState.PROCESSING,
+                    updatedAt = work.updatedAt.plusSeconds(1),
+                ),
+            ),
+        )
         assertEquals(processing, store.ingestWorkItem("work-1"))
         assertThrows(SQLiteConstraintException::class.java) {
             runBlocking { store.createIngestWorkItem(work.copy(workId = "work-2")) }
         }
         Unit
+    }
+
+    @Test
+    fun `Room conditionally enforces queued processing ready transitions`() = runBlocking {
+        val queued = workItem("work-transitions", TestAssets.fixture().assetId.value)
+        store.createIngestWorkItem(queued)
+
+        assertThrows(IllegalArgumentException::class.java) {
+            runBlocking {
+                store.transitionIngestWorkItem(
+                    IngestWorkTransition(
+                        queued.workId,
+                        IngestWorkState.QUEUED,
+                        IngestWorkState.READY_TO_COMMIT,
+                        queued.updatedAt.plusSeconds(1),
+                        "staging/${queued.workId}/source",
+                    ),
+                )
+            }
+        }
+        assertEquals(IngestWorkState.QUEUED, store.ingestWorkItem(queued.workId)?.state)
+    }
+
+    @Test
+    fun `real Room integration persists coordinator result as ready without creating Asset state`() = runBlocking {
+        val reservedId = TestAssets.fixture().assetId
+        val content = Content("image/png", 32, 64, 256, "c".repeat(64))
+        val prepared = PreparedImage(ImageSourceRef("content://images/room-integration"), content)
+        val coordinator = LocalIngestCoordinator(
+            assetIdGenerator = AssetIdGenerator { reservedId },
+            workIdGenerator = WorkIdGenerator { "room-work" },
+            stagingFileStore = StagingFileStore { workId, _, expected ->
+                StagedImage("staging/$workId/source", expected)
+            },
+            workItemStore = store,
+            clock = Clock.fixed(Instant.parse("2026-09-14T12:00:00Z"), ZoneOffset.UTC),
+        )
+
+        val result = coordinator.begin(prepared) as LocalIngestResult.Ready
+
+        val persisted = checkNotNull(store.ingestWorkItem("room-work"))
+        assertEquals(result.workItem, persisted)
+        assertEquals(IngestWorkState.READY_TO_COMMIT, persisted.state)
+        assertEquals("staging/room-work/source", persisted.stagingRelativePath)
+        assertFalse(store.containsAsset(reservedId))
+        assertNull(store.localState(reservedId))
+        assertTrue(store.representations(reservedId).isEmpty())
+        assertEquals(1, NimroelAssetDatabase.VERSION)
     }
 
     @Test
@@ -228,10 +296,29 @@ class RoomLocalAssetStoreTest {
     @Test
     fun `bundle commit writes document local state representations and committed work atomically`() = runBlocking {
         val asset = TestAssets.fixture()
-        val ready = workItem("work-commit", asset.assetId.value).copy(state = IngestWorkState.READY_TO_COMMIT)
+        val queued = workItem("work-commit", asset.assetId.value)
         val state = AssetLocalState(asset.assetId, AssetAvailability.AVAILABLE)
         val representation = representation(asset)
-        store.createIngestWorkItem(ready)
+        store.createIngestWorkItem(queued)
+        store.transitionIngestWorkItem(
+            IngestWorkTransition(
+                queued.workId,
+                IngestWorkState.QUEUED,
+                IngestWorkState.PROCESSING,
+                queued.updatedAt.plusSeconds(1),
+            ),
+        )
+        val ready = checkNotNull(
+            store.transitionIngestWorkItem(
+                IngestWorkTransition(
+                    queued.workId,
+                    IngestWorkState.PROCESSING,
+                    IngestWorkState.READY_TO_COMMIT,
+                    queued.updatedAt.plusSeconds(2),
+                    stagingRelativePath = "staging/${queued.workId}/source",
+                ),
+            ),
+        )
 
         store.commitIngestedAsset(
             ready.workId,
@@ -307,7 +394,7 @@ class RoomLocalAssetStoreTest {
             reservedAssetId = AssetId.parse(assetId),
             sourceUri = "content://media/external/images/42",
             state = IngestWorkState.QUEUED,
-            stagingRelativePath = "staging/$workId.bin",
+            stagingRelativePath = null,
             createdAt = timestamp,
             updatedAt = timestamp,
         )

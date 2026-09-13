@@ -14,7 +14,8 @@
 ## Capas Android
 
 - `domain/`: modelos y contratos de negocio independientes de UI/proveedor; incluye Production Draft v1 como flujo puro Preset → Vocabulary Set → Vocabulary → borrador → Asset validado.
-- `data/`: Room DB v1, DAOs, conversores, proyección del documento canónico y `RoomLocalAssetStore`; el procesamiento se añadirá cuando se definan sus necesidades concretas.
+- `data/`: Room DB v1, DAOs, conversores, proyección del documento canónico, `RoomLocalAssetStore` y staging Android privado con verificación directa del archivo.
+- `domain/processing`: fronteras y orquestación testeables para preparación de imagen e ingestión local; no depende de `Context` ni de rutas `File`.
 - `ui/`: Compose y ViewModels; no debe alojar reglas de schema ni persistencia.
 - `sync/` y `processing/`: se crearán junto con operaciones reales y pruebas; WorkManager será el candidato para colas fiables de sincronización.
 
@@ -27,16 +28,17 @@
 - Completado: Production Draft v1 para `npc_portrait`, con resolución versionada, semántica fixed/suggested, edición validada y materialización de Asset Schema v1.
 - Completado: interfaz Android “Nueva producción” v1, conectada al Production Draft y a los contratos compartidos empaquetados en runtime, con edición responsive y resumen reactivo.
 - Completado: selección local de imagen y preparación de `Content` v1 mediante URI temporal, análisis streaming, validación reusable y política latest-selection-wins.
+- Completado: staging local y reserva de `AssetId` v1, con UUIDv7, work item Room, copia privada `.part`, fsync, verificación y publicación `ready_to_commit`.
 
 ## Decisiones aún abiertas
 
 1. Completar las taxonomías editoriales necesarias para producción.
 2. Definir perfiles visuales y prompt templates versionados de producción.
 3. Definir la fuente canónica de IDs de entidades de lore.
-4. Cerrar la política de retención del original y ubicación de archivos administrados.
+4. Cerrar la política de retención posterior del original y limpieza de staging; la raíz privada Android v1 ya es `filesDir/nimroel-assets`.
 5. Definir backend/autenticación y almacenamiento remoto sin credenciales privadas en clientes.
 6. Precisar ciclo editorial y resolución de conflictos cuando se diseñe sincronización.
 
 ## Próximo hito
 
-Definir el staging/ingestión local y la generación controlada de AssetId/Provenance, sin fijar aún la política definitiva de retención ni adelantar sincronización o Asset Resolver.
+Definir el procesamiento/canonicalización de imagen y la captura explícita de Provenance antes de finalizar el Asset, sin adelantar ImageKit, sincronización o Asset Resolver.

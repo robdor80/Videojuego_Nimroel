@@ -58,6 +58,7 @@ fun AssetManagerApp(
     onClearSelection: (fieldPath: String) -> Unit = {},
     onSelectImage: () -> Unit = {},
     onRemoveImage: () -> Unit = {},
+    onPrepareLocalIngest: () -> Unit = {},
 ) {
     Scaffold(
         topBar = {
@@ -74,6 +75,7 @@ fun AssetManagerApp(
                 onClearSelection = onClearSelection,
                 onSelectImage = onSelectImage,
                 onRemoveImage = onRemoveImage,
+                onPrepareLocalIngest = onPrepareLocalIngest,
             )
         }
     }
@@ -124,6 +126,7 @@ private fun ReadyContent(
     onClearSelection: (String) -> Unit,
     onSelectImage: () -> Unit,
     onRemoveImage: () -> Unit,
+    onPrepareLocalIngest: () -> Unit,
 ) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize().padding(contentPadding)) {
         if (maxWidth >= 840.dp) {
@@ -141,6 +144,7 @@ private fun ReadyContent(
                     state = state,
                     onSelectImage = onSelectImage,
                     onRemoveImage = onRemoveImage,
+                    onPrepareLocalIngest = onPrepareLocalIngest,
                     modifier = Modifier.weight(1f).fillMaxHeight().verticalScroll(rememberScrollState()),
                 )
             }
@@ -150,7 +154,7 @@ private fun ReadyContent(
                 verticalArrangement = Arrangement.spacedBy(20.dp),
             ) {
                 ProductionEditor(state, onSelectValue, onClearSelection)
-                DraftSummary(state, onSelectImage, onRemoveImage)
+                DraftSummary(state, onSelectImage, onRemoveImage, onPrepareLocalIngest)
             }
         }
     }
@@ -323,6 +327,7 @@ private fun DraftSummary(
     state: AssetManagerUiState.Ready,
     onSelectImage: () -> Unit,
     onRemoveImage: () -> Unit,
+    onPrepareLocalIngest: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Column(modifier = modifier, verticalArrangement = Arrangement.spacedBy(16.dp)) {
@@ -363,12 +368,19 @@ private fun DraftSummary(
                 MetadataRow("Vocabulary Set", "${state.vocabularySetId} · ${state.vocabularySetVersion}")
             }
         }
-        ImagePreparationCard(state.imageState, onSelectImage, onRemoveImage)
+        ImagePreparationCard(
+            state = state.imageState,
+            onSelectImage = onSelectImage,
+            onRemoveImage = onRemoveImage,
+            imageLocked = state.localIngestState is LocalIngestUiState.Processing ||
+                state.localIngestState is LocalIngestUiState.Ready,
+        )
+        LocalIngestCard(state.imageState, state.localIngestState, onPrepareLocalIngest)
         Button(onClick = {}, enabled = false, modifier = Modifier.fillMaxWidth()) {
             Text("Crear borrador de Asset")
         }
         Text(
-            "La generación de AssetId, Provenance y persistencia se añadirá en un hito posterior.",
+            "Aún faltan la procedencia y el binario canónico/finalización antes de crear el Asset.",
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             style = MaterialTheme.typography.bodySmall,
         )
@@ -380,6 +392,7 @@ private fun ImagePreparationCard(
     state: ImageUiState,
     onSelectImage: () -> Unit,
     onRemoveImage: () -> Unit,
+    imageLocked: Boolean,
 ) {
     ElevatedCard(modifier = Modifier.fillMaxWidth()) {
         Column(modifier = Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -412,13 +425,13 @@ private fun ImagePreparationCard(
                         )
                         PreparedImageMetadata(previous)
                     }
-                    ImageActions(onSelectImage, onRemoveImage)
+                    ImageActions(onSelectImage, onRemoveImage, enabled = !imageLocked)
                 }
 
                 is ImageUiState.Prepared -> {
                     Text("Imagen preparada", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
                     PreparedImageMetadata(state.image)
-                    ImageActions(onSelectImage, onRemoveImage)
+                    ImageActions(onSelectImage, onRemoveImage, enabled = !imageLocked)
                 }
 
                 is ImageUiState.ImageError -> {
@@ -438,7 +451,71 @@ private fun ImagePreparationCard(
                         )
                         PreparedImageMetadata(previous)
                     }
-                    ImageActions(onSelectImage, onRemoveImage, canRemove = state.previousPrepared != null)
+                    ImageActions(
+                        onSelectImage,
+                        onRemoveImage,
+                        canRemove = state.previousPrepared != null,
+                        enabled = !imageLocked,
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun LocalIngestCard(
+    imageState: ImageUiState,
+    state: LocalIngestUiState,
+    onPrepareLocalIngest: () -> Unit,
+) {
+    val hasPreparedImage = imageState is ImageUiState.Prepared ||
+        (imageState is ImageUiState.ImageError && imageState.previousPrepared != null)
+    when (state) {
+        LocalIngestUiState.NotStarted -> if (hasPreparedImage) {
+            Button(onClick = onPrepareLocalIngest, modifier = Modifier.fillMaxWidth()) {
+                Text("Preparar ingestión local")
+            }
+        }
+
+        LocalIngestUiState.Processing -> ElevatedCard(modifier = Modifier.fillMaxWidth()) {
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(20.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                CircularProgressIndicator(modifier = Modifier.width(28.dp).height(28.dp))
+                Text(
+                    "Copiando y verificando imagen…",
+                    modifier = Modifier.padding(start = 14.dp),
+                    style = MaterialTheme.typography.titleMedium,
+                )
+            }
+        }
+
+        is LocalIngestUiState.Ready -> ElevatedCard(modifier = Modifier.fillMaxWidth()) {
+            Column(modifier = Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text("Ingestión local preparada", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                MetadataRow("AssetId reservado", state.reservedAssetId)
+                MetadataRow("Estado", state.status)
+                MetadataRow("Tipo MIME", state.content.mimeType)
+                MetadataRow("Dimensiones", "${state.content.widthPx} × ${state.content.heightPx} px")
+                MetadataRow("Tamaño", state.content.byteSize?.let(::formatByteSize) ?: "No disponible")
+                MetadataRow("SHA-256", "${state.content.sha256.take(16)}…${state.content.sha256.takeLast(8)}")
+                Text(
+                    "Copia local privada verificada. Ya no depende del acceso posterior al URI externo.",
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    style = MaterialTheme.typography.bodySmall,
+                )
+            }
+        }
+
+        is LocalIngestUiState.Failed -> OutlinedCard(modifier = Modifier.fillMaxWidth()) {
+            Column(modifier = Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                Text("La ingestión local no se completó", style = MaterialTheme.typography.titleMedium)
+                Text(state.message, color = MaterialTheme.colorScheme.error)
+                Text("Código: ${state.errorCode}", style = MaterialTheme.typography.bodySmall)
+                Button(onClick = onPrepareLocalIngest, enabled = hasPreparedImage, modifier = Modifier.fillMaxWidth()) {
+                    Text("Reintentar ingestión local")
                 }
             }
         }
@@ -473,12 +550,13 @@ private fun ImageActions(
     onSelectImage: () -> Unit,
     onRemoveImage: () -> Unit,
     canRemove: Boolean = true,
+    enabled: Boolean = true,
 ) {
     Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        Button(onClick = onSelectImage, modifier = Modifier.weight(1f)) {
+        Button(onClick = onSelectImage, enabled = enabled, modifier = Modifier.weight(1f)) {
             Text("Cambiar imagen")
         }
-        TextButton(onClick = onRemoveImage, enabled = canRemove) {
+        TextButton(onClick = onRemoveImage, enabled = canRemove && enabled) {
             Text("Eliminar imagen")
         }
     }

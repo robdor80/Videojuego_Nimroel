@@ -30,6 +30,7 @@ class MainActivity : ComponentActivity() {
                     onClearSelection = viewModel::clearSelection,
                     onSelectImage = { imagePicker.launch("image/*") },
                     onRemoveImage = viewModel::removeImage,
+                    onPrepareLocalIngest = viewModel::prepareLocalIngest,
                 )
             }
         }

@@ -8,6 +8,8 @@ import com.nimroel.assetmanager.domain.model.LifecycleStatus
 import com.nimroel.assetmanager.domain.storage.AssetLocalState
 import com.nimroel.assetmanager.domain.storage.IngestWorkItem
 import com.nimroel.assetmanager.domain.storage.IngestWorkState
+import com.nimroel.assetmanager.domain.storage.IngestWorkTransition
+import com.nimroel.assetmanager.domain.storage.IngestWorkTransitionPolicy
 import com.nimroel.assetmanager.domain.storage.LocalAssetStore
 import com.nimroel.assetmanager.domain.storage.LocalRepresentation
 import com.nimroel.assetmanager.domain.storage.ProjectionRebuildReport
@@ -92,11 +94,27 @@ internal class RoomLocalAssetStore(
         representationDao.findByAssetId(assetId.value).map(LocalRepresentationEntity::toDomain)
 
     override suspend fun createIngestWorkItem(workItem: IngestWorkItem) {
+        require(workItem.state == IngestWorkState.QUEUED) { "A new ingest work item must start queued." }
+        require(workItem.stagingRelativePath == null) { "A queued work item cannot publish staging." }
+        require(workItem.errorCode == null && workItem.errorDetail == null) { "A queued work item cannot contain an error." }
         ingestWorkItems.insert(workItem.toEntity())
     }
 
-    override suspend fun updateIngestWorkItem(workItem: IngestWorkItem): Boolean =
-        ingestWorkItems.update(workItem.toEntity()) == 1
+    override suspend fun transitionIngestWorkItem(transition: IngestWorkTransition): IngestWorkItem? =
+        database.withTransaction {
+            val current = ingestWorkItems.find(transition.workId)?.toDomain() ?: return@withTransaction null
+            val updated = IngestWorkTransitionPolicy.apply(current, transition)
+            val changed = ingestWorkItems.transition(
+                workId = updated.workId,
+                expectedState = transition.expectedState,
+                targetState = updated.state,
+                stagingRelativePath = updated.stagingRelativePath,
+                updatedAt = updated.updatedAt,
+                errorCode = updated.errorCode,
+                errorDetail = updated.errorDetail,
+            )
+            if (changed == 1) updated else null
+        }
 
     override suspend fun ingestWorkItem(workId: String): IngestWorkItem? =
         ingestWorkItems.find(workId)?.toDomain()
@@ -126,7 +144,17 @@ internal class RoomLocalAssetStore(
             documents.upsert(document)
             localStates.upsert(stateEntity)
             representationDao.upsertAll(representationEntities)
-            check(ingestWorkItems.update(workItem.copy(state = IngestWorkState.COMMITTED, updatedAt = committedAt, errorCode = null, errorDetail = null)) == 1)
+            check(
+                ingestWorkItems.transition(
+                    workId = workId,
+                    expectedState = IngestWorkState.READY_TO_COMMIT,
+                    targetState = IngestWorkState.COMMITTED,
+                    stagingRelativePath = workItem.stagingRelativePath,
+                    updatedAt = committedAt,
+                    errorCode = null,
+                    errorDetail = null,
+                ) == 1,
+            )
         }
     }
 }

@@ -16,13 +16,29 @@ import com.nimroel.assetmanager.domain.contracts.VocabularySet
 import com.nimroel.assetmanager.domain.contracts.VocabularySetRegistry
 import com.nimroel.assetmanager.domain.contracts.VocabularyValue
 import com.nimroel.assetmanager.domain.model.AssetType
+import com.nimroel.assetmanager.domain.model.AssetId
 import com.nimroel.assetmanager.domain.model.Content
+import com.nimroel.assetmanager.domain.identity.AssetIdGenerator
+import com.nimroel.assetmanager.domain.identity.WorkIdGenerator
 import com.nimroel.assetmanager.domain.processing.ImageContentPreparer
 import com.nimroel.assetmanager.domain.processing.ImagePreparationException
 import com.nimroel.assetmanager.domain.processing.ImageSourceRef
+import com.nimroel.assetmanager.domain.processing.LocalIngestCoordinator
 import com.nimroel.assetmanager.domain.processing.PreparedImage
+import com.nimroel.assetmanager.domain.processing.StagedImage
+import com.nimroel.assetmanager.domain.processing.StagingErrorCode
+import com.nimroel.assetmanager.domain.processing.StagingException
+import com.nimroel.assetmanager.domain.processing.StagingFileStore
 import com.nimroel.assetmanager.domain.production.DraftSelectionSource
 import com.nimroel.assetmanager.domain.production.ProductionDraftService
+import com.nimroel.assetmanager.domain.storage.IngestWorkItem
+import com.nimroel.assetmanager.domain.storage.IngestWorkItemStore
+import com.nimroel.assetmanager.domain.storage.IngestWorkState
+import com.nimroel.assetmanager.domain.storage.IngestWorkTransition
+import com.nimroel.assetmanager.domain.storage.IngestWorkTransitionPolicy
+import java.time.Clock
+import java.time.Instant
+import java.time.ZoneOffset
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -36,6 +52,7 @@ import kotlinx.coroutines.withContext
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertSame
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -181,6 +198,107 @@ class ImageSelectionViewModelTest {
         }
     }
 
+    @Test
+    fun `local ingest moves through processing and ready without exposing its path`() = runTest {
+        val gate = CompletableDeferred<StagedImage>()
+        val store = FakeWorkItemStore()
+        val coordinator = coordinator(store, StagingFileStore { _, _, _ -> gate.await() })
+        withStagingViewModel(coordinator) { viewModel ->
+            viewModel.selectImage(ImageSourceRef("content://images/staging"))
+            runCurrent()
+
+            viewModel.prepareLocalIngest()
+            assertEquals(LocalIngestUiState.Processing, viewModel.ready().localIngestState)
+            runCurrent()
+            assertEquals(IngestWorkState.PROCESSING, store.items.single().state)
+
+            gate.complete(StagedImage("staging/work-1/source", viewModel.preparedContent()))
+            runCurrent()
+
+            val ready = viewModel.ready().localIngestState as LocalIngestUiState.Ready
+            assertEquals(assetId(1).value, ready.reservedAssetId)
+            assertEquals("ready_to_commit", ready.status)
+            assertFalse(ready.toString().contains("staging/"))
+            assertFalse(ready.toString().contains("/data/"))
+        }
+    }
+
+    @Test
+    fun `double staging tap creates only one concurrent work item`() = runTest {
+        val gate = CompletableDeferred<StagedImage>()
+        val store = FakeWorkItemStore()
+        val coordinator = coordinator(store, StagingFileStore { _, _, expected -> gate.await(); StagedImage("unused", expected) })
+        withStagingViewModel(coordinator) { viewModel ->
+            viewModel.selectImage(ImageSourceRef("content://images/staging"))
+            runCurrent()
+
+            viewModel.prepareLocalIngest()
+            viewModel.prepareLocalIngest()
+            runCurrent()
+
+            assertEquals(1, store.items.size)
+            gate.complete(StagedImage("staging/work-1/source", viewModel.preparedContent()))
+            runCurrent()
+        }
+    }
+
+    @Test
+    fun `staging failure preserves draft and PreparedImage and allows retry with new identities`() = runTest {
+        val store = FakeWorkItemStore()
+        var attempt = 0
+        val coordinator = coordinator(
+            store,
+            StagingFileStore { workId, _, expected ->
+                attempt += 1
+                if (attempt == 1) throw StagingException(StagingErrorCode.SOURCE_UNAVAILABLE, "Fuente no disponible.")
+                StagedImage("staging/$workId/source", expected)
+            },
+            assetIds = listOf(assetId(1), assetId(2)),
+            workIds = listOf("work-1", "work-2"),
+        )
+        withStagingViewModel(coordinator) { viewModel ->
+            viewModel.selectValue(ProductionFieldPaths.SUBJECT_AGE_BAND_ID, "elder")
+            viewModel.selectImage(ImageSourceRef("content://images/staging"))
+            runCurrent()
+            val preparedBefore = viewModel.preparedContent()
+
+            viewModel.prepareLocalIngest()
+            runCurrent()
+
+            val failure = viewModel.ready().localIngestState as LocalIngestUiState.Failed
+            assertEquals("source_unavailable", failure.errorCode)
+            assertEquals("elder", viewModel.ready().fields.single().selectedValueId)
+            assertEquals(preparedBefore, viewModel.preparedContent())
+
+            viewModel.prepareLocalIngest()
+            runCurrent()
+
+            assertTrue(viewModel.ready().localIngestState is LocalIngestUiState.Ready)
+            assertEquals(listOf(IngestWorkState.FAILED, IngestWorkState.READY_TO_COMMIT), store.items.map { it.state })
+            assertNotNull(store.items.first().errorCode)
+            assertTrue(store.items[0].reservedAssetId != store.items[1].reservedAssetId)
+        }
+    }
+
+    @Test
+    fun `ready staging locks image replacement and removal`() = runTest {
+        val store = FakeWorkItemStore()
+        withStagingViewModel(coordinator(store)) { viewModel ->
+            viewModel.selectImage(ImageSourceRef("content://images/staging"))
+            runCurrent()
+            viewModel.prepareLocalIngest()
+            runCurrent()
+            val before = viewModel.ready()
+
+            viewModel.removeImage()
+            viewModel.selectImage(ImageSourceRef("content://images/replacement"))
+            runCurrent()
+
+            assertEquals(before.imageState, viewModel.ready().imageState)
+            assertEquals(before.localIngestState, viewModel.ready().localIngestState)
+        }
+    }
+
     private suspend fun kotlinx.coroutines.test.TestScope.withViewModel(
         preparer: ImageContentPreparer,
         block: suspend kotlinx.coroutines.test.TestScope.(AssetManagerViewModel) -> Unit,
@@ -192,6 +310,66 @@ class ImageSelectionViewModelTest {
         } finally {
             Dispatchers.resetMain()
         }
+    }
+
+    private suspend fun kotlinx.coroutines.test.TestScope.withStagingViewModel(
+        coordinator: LocalIngestCoordinator,
+        block: suspend kotlinx.coroutines.test.TestScope.(AssetManagerViewModel) -> Unit,
+    ) {
+        val dispatcher = StandardTestDispatcher(testScheduler)
+        Dispatchers.setMain(dispatcher)
+        try {
+            block(
+                AssetManagerViewModel(
+                    bootstrap = bootstrap(),
+                    imageContentPreparer = ImageContentPreparer { prepared(it, "d") },
+                    imageDispatcher = dispatcher,
+                    localIngestCoordinator = coordinator,
+                ),
+            )
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    private fun coordinator(
+        store: FakeWorkItemStore,
+        staging: StagingFileStore = StagingFileStore { workId, _, expected ->
+            StagedImage("staging/$workId/source", expected)
+        },
+        assetIds: List<AssetId> = listOf(assetId(1)),
+        workIds: List<String> = listOf("work-1"),
+    ): LocalIngestCoordinator {
+        val ids = assetIds.iterator()
+        val works = workIds.iterator()
+        return LocalIngestCoordinator(
+            AssetIdGenerator { ids.next() },
+            WorkIdGenerator { works.next() },
+            staging,
+            store,
+            Clock.fixed(Instant.parse("2026-09-14T10:00:00Z"), ZoneOffset.UTC),
+        )
+    }
+
+    private fun assetId(suffix: Int): AssetId =
+        AssetId.parse("ast_01991d80-1000-7000-8000-${suffix.toString().padStart(12, '0')}")
+
+    private class FakeWorkItemStore : IngestWorkItemStore {
+        private val values = linkedMapOf<String, IngestWorkItem>()
+        val items: List<IngestWorkItem> get() = values.values.toList()
+
+        override suspend fun createIngestWorkItem(workItem: IngestWorkItem) {
+            check(values.put(workItem.workId, workItem) == null)
+        }
+
+        override suspend fun transitionIngestWorkItem(transition: IngestWorkTransition): IngestWorkItem? {
+            val current = values[transition.workId] ?: return null
+            return IngestWorkTransitionPolicy.apply(current, transition).also { values[it.workId] = it }
+        }
+
+        override suspend fun ingestWorkItem(workId: String): IngestWorkItem? = values[workId]
+        override suspend fun ingestWorkItemByReservedAssetId(assetId: AssetId): IngestWorkItem? =
+            values.values.firstOrNull { it.reservedAssetId == assetId }
     }
 
     private class ControlledPreparer : ImageContentPreparer {

@@ -4,8 +4,9 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import androidx.room.Update
 import androidx.room.Upsert
+import com.nimroel.assetmanager.domain.storage.IngestWorkState
+import java.time.Instant
 
 @Dao
 internal interface AssetDocumentDao {
@@ -62,8 +63,26 @@ internal interface IngestWorkItemDao {
     @Insert(onConflict = OnConflictStrategy.ABORT)
     suspend fun insert(workItem: IngestWorkItemEntity)
 
-    @Update
-    suspend fun update(workItem: IngestWorkItemEntity): Int
+    @Query(
+        """
+        UPDATE ingest_work_items
+        SET state = :targetState,
+            staging_relative_path = :stagingRelativePath,
+            updated_at = :updatedAt,
+            error_code = :errorCode,
+            error_detail = :errorDetail
+        WHERE work_id = :workId AND state = :expectedState
+        """,
+    )
+    suspend fun transition(
+        workId: String,
+        expectedState: IngestWorkState,
+        targetState: IngestWorkState,
+        stagingRelativePath: String?,
+        updatedAt: Instant,
+        errorCode: String?,
+        errorDetail: String?,
+    ): Int
 
     @Query("SELECT * FROM ingest_work_items WHERE work_id = :workId")
     suspend fun find(workId: String): IngestWorkItemEntity?
