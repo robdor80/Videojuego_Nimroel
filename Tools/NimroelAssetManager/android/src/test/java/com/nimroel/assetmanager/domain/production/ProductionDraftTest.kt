@@ -153,6 +153,21 @@ class ProductionDraftTest {
     }
 
     @Test
+    fun `bound vocabulary fields reports only supported paths linked by the current set`() {
+        val service = pilotService()
+        val draft = service.startDraft("npc-portrait-pilot", "1.0")
+
+        assertEquals(
+            setOf(
+                ProductionFieldPaths.SUBJECT_AGE_BAND_ID,
+                ProductionFieldPaths.VISUAL_EXPRESSION_ID,
+            ),
+            service.boundVocabularyFieldPaths(draft),
+        )
+        assertFalse(ProductionFieldPaths.SUBJECT_SPECIES_ID in service.boundVocabularyFieldPaths(draft))
+    }
+
+    @Test
     fun `Vocabulary Set can point to alternative vocabulary IDs without code changes`() {
         val alternativeVocabulary = Vocabulary("alternative-age-source", "9.4", listOf(VocabularyValue("adult", "Alternative adult")))
         val alternativeSet = VocabularySet(

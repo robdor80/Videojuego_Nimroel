@@ -15,8 +15,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             NimroelAssetManagerTheme {
-                val viewModel: AssetManagerViewModel = viewModel()
-                AssetManagerApp(uiState = viewModel.uiState)
+                val viewModel: AssetManagerViewModel = viewModel(
+                    factory = AssetManagerViewModel.factory(applicationContext.assets),
+                )
+                AssetManagerApp(
+                    uiState = viewModel.uiState,
+                    onSelectValue = viewModel::selectValue,
+                    onClearSelection = viewModel::clearSelection,
+                )
             }
         }
     }
