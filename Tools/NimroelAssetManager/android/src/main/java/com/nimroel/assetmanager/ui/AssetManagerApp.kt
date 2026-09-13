@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
@@ -45,6 +46,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.nimroel.assetmanager.domain.contracts.PresetValueMode
 import com.nimroel.assetmanager.domain.model.AssetType
+import com.nimroel.assetmanager.domain.model.Content
 import com.nimroel.assetmanager.domain.production.DraftSelectionSource
 import com.nimroel.assetmanager.ui.theme.NimroelAssetManagerTheme
 
@@ -54,6 +56,8 @@ fun AssetManagerApp(
     uiState: AssetManagerUiState,
     onSelectValue: (fieldPath: String, valueId: String) -> Unit = { _, _ -> },
     onClearSelection: (fieldPath: String) -> Unit = {},
+    onSelectImage: () -> Unit = {},
+    onRemoveImage: () -> Unit = {},
 ) {
     Scaffold(
         topBar = {
@@ -68,6 +72,8 @@ fun AssetManagerApp(
                 contentPadding = contentPadding,
                 onSelectValue = onSelectValue,
                 onClearSelection = onClearSelection,
+                onSelectImage = onSelectImage,
+                onRemoveImage = onRemoveImage,
             )
         }
     }
@@ -116,6 +122,8 @@ private fun ReadyContent(
     contentPadding: PaddingValues,
     onSelectValue: (String, String) -> Unit,
     onClearSelection: (String) -> Unit,
+    onSelectImage: () -> Unit,
+    onRemoveImage: () -> Unit,
 ) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize().padding(contentPadding)) {
         if (maxWidth >= 840.dp) {
@@ -131,6 +139,8 @@ private fun ReadyContent(
                 )
                 DraftSummary(
                     state = state,
+                    onSelectImage = onSelectImage,
+                    onRemoveImage = onRemoveImage,
                     modifier = Modifier.weight(1f).fillMaxHeight().verticalScroll(rememberScrollState()),
                 )
             }
@@ -140,7 +150,7 @@ private fun ReadyContent(
                 verticalArrangement = Arrangement.spacedBy(20.dp),
             ) {
                 ProductionEditor(state, onSelectValue, onClearSelection)
-                DraftSummary(state)
+                DraftSummary(state, onSelectImage, onRemoveImage)
             }
         }
     }
@@ -309,7 +319,12 @@ private fun FieldStatus(field: ProductionFieldUiState) {
 }
 
 @Composable
-private fun DraftSummary(state: AssetManagerUiState.Ready, modifier: Modifier = Modifier) {
+private fun DraftSummary(
+    state: AssetManagerUiState.Ready,
+    onSelectImage: () -> Unit,
+    onRemoveImage: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
     Column(modifier = modifier, verticalArrangement = Arrangement.spacedBy(16.dp)) {
         ElevatedCard(modifier = Modifier.fillMaxWidth()) {
             Column(modifier = Modifier.padding(20.dp)) {
@@ -348,15 +363,131 @@ private fun DraftSummary(state: AssetManagerUiState.Ready, modifier: Modifier = 
                 MetadataRow("Vocabulary Set", "${state.vocabularySetId} · ${state.vocabularySetVersion}")
             }
         }
+        ImagePreparationCard(state.imageState, onSelectImage, onRemoveImage)
         Button(onClick = {}, enabled = false, modifier = Modifier.fillMaxWidth()) {
-            Text("Continuar con imagen")
+            Text("Crear borrador de Asset")
         }
         Text(
-            "La importación de imagen se añadirá en el siguiente paso del flujo.",
+            "La generación de AssetId, Provenance y persistencia se añadirá en un hito posterior.",
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             style = MaterialTheme.typography.bodySmall,
         )
     }
+}
+
+@Composable
+private fun ImagePreparationCard(
+    state: ImageUiState,
+    onSelectImage: () -> Unit,
+    onRemoveImage: () -> Unit,
+) {
+    ElevatedCard(modifier = Modifier.fillMaxWidth()) {
+        Column(modifier = Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            when (state) {
+                ImageUiState.NoImage -> {
+                    Text("Imagen", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                    Text(
+                        "Selecciona la imagen fuente para preparar su metadata de contenido.",
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    Button(onClick = onSelectImage, modifier = Modifier.fillMaxWidth()) {
+                        Text("Seleccionar imagen")
+                    }
+                }
+
+                is ImageUiState.Processing -> {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        CircularProgressIndicator(modifier = Modifier.width(28.dp).height(28.dp))
+                        Text(
+                            "Analizando imagen…",
+                            modifier = Modifier.padding(start = 14.dp),
+                            style = MaterialTheme.typography.titleMedium,
+                        )
+                    }
+                    state.previousPrepared?.let { previous ->
+                        Text(
+                            "La imagen preparada anterior se conserva hasta completar el nuevo análisis.",
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            style = MaterialTheme.typography.bodySmall,
+                        )
+                        PreparedImageMetadata(previous)
+                    }
+                    ImageActions(onSelectImage, onRemoveImage)
+                }
+
+                is ImageUiState.Prepared -> {
+                    Text("Imagen preparada", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                    PreparedImageMetadata(state.image)
+                    ImageActions(onSelectImage, onRemoveImage)
+                }
+
+                is ImageUiState.ImageError -> {
+                    Text("No se pudo preparar la imagen", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                    Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer)) {
+                        Text(
+                            state.message,
+                            modifier = Modifier.fillMaxWidth().padding(14.dp),
+                            color = MaterialTheme.colorScheme.onErrorContainer,
+                        )
+                    }
+                    state.previousPrepared?.let { previous ->
+                        Text(
+                            "La última imagen preparada sigue disponible.",
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            style = MaterialTheme.typography.bodySmall,
+                        )
+                        PreparedImageMetadata(previous)
+                    }
+                    ImageActions(onSelectImage, onRemoveImage, canRemove = state.previousPrepared != null)
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun PreparedImageMetadata(image: PreparedImageUiState) {
+    val content = image.content
+    var showFullHash by remember(content.sha256) { mutableStateOf(false) }
+    MetadataRow("Estado", "Preparada")
+    MetadataRow("Tipo MIME", content.mimeType)
+    MetadataRow("Dimensiones", "${content.widthPx} × ${content.heightPx} px")
+    MetadataRow("Tamaño", content.byteSize?.let(::formatByteSize) ?: "No disponible")
+    MetadataRow("SHA-256", if (showFullHash) "Completo" else "${content.sha256.take(16)}…${content.sha256.takeLast(8)}")
+    if (showFullHash) {
+        SelectionContainer {
+            Text(
+                content.sha256,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                style = MaterialTheme.typography.bodySmall,
+            )
+        }
+    }
+    TextButton(onClick = { showFullHash = !showFullHash }, modifier = Modifier.fillMaxWidth()) {
+        Text(if (showFullHash) "Ocultar SHA-256 completo" else "Ver SHA-256 completo")
+    }
+}
+
+@Composable
+private fun ImageActions(
+    onSelectImage: () -> Unit,
+    onRemoveImage: () -> Unit,
+    canRemove: Boolean = true,
+) {
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Button(onClick = onSelectImage, modifier = Modifier.weight(1f)) {
+            Text("Cambiar imagen")
+        }
+        TextButton(onClick = onRemoveImage, enabled = canRemove) {
+            Text("Eliminar imagen")
+        }
+    }
+}
+
+private fun formatByteSize(bytes: Long): String = when {
+    bytes >= 1024L * 1024L -> "%.1f MB".format(bytes / (1024.0 * 1024.0))
+    bytes >= 1024L -> "%.1f KB".format(bytes / 1024.0)
+    else -> "$bytes B"
 }
 
 @Composable
@@ -411,6 +542,17 @@ private val previewState = AssetManagerUiState.Ready(
         selections = listOf(
             ProductionSummarySelectionUiState("Rango de edad", "Adulto", false),
             ProductionSummarySelectionUiState("Expresión", "Neutral", false),
+        ),
+    ),
+    imageState = ImageUiState.Prepared(
+        PreparedImageUiState(
+            Content(
+                mimeType = "image/png",
+                widthPx = 2048,
+                heightPx = 2048,
+                byteSize = 4_194_304,
+                sha256 = "a".repeat(64),
+            ),
         ),
     ),
 )

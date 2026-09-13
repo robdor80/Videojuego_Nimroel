@@ -1,20 +1,32 @@
 package com.nimroel.assetmanager.ui
 
-import android.content.res.AssetManager
+import android.content.Context
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewModelScope
 import com.nimroel.assetmanager.data.contracts.AndroidProductionDraftBootstrap
 import com.nimroel.assetmanager.data.contracts.ProductionDraftBootstrap
 import com.nimroel.assetmanager.data.contracts.ProductionDraftEnvironment
+import com.nimroel.assetmanager.data.image.AndroidImageContentPreparer
 import com.nimroel.assetmanager.domain.contracts.PresetValueMode
 import com.nimroel.assetmanager.domain.contracts.ProductionFieldPaths
 import com.nimroel.assetmanager.domain.contracts.VocabularyValueStatus
 import com.nimroel.assetmanager.domain.model.AssetType
 import com.nimroel.assetmanager.domain.production.DraftSelectionSource
 import com.nimroel.assetmanager.domain.production.ProductionDraftException
+import com.nimroel.assetmanager.domain.processing.ImageContentPreparer
+import com.nimroel.assetmanager.domain.processing.ImagePreparationException
+import com.nimroel.assetmanager.domain.processing.ImageSourceRef
+import com.nimroel.assetmanager.domain.processing.PreparedImage
+import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 sealed interface AssetManagerUiState {
     data object Loading : AssetManagerUiState
@@ -33,6 +45,7 @@ sealed interface AssetManagerUiState {
         val vocabularySetVersion: String,
         val fields: List<ProductionFieldUiState>,
         val summary: ProductionDraftSummaryUiState,
+        val imageState: ImageUiState = ImageUiState.NoImage,
         val actionError: String? = null,
     ) : AssetManagerUiState
 }
@@ -69,14 +82,32 @@ data class ProductionSummarySelectionUiState(
     val isDeprecated: Boolean,
 )
 
+sealed interface ImageUiState {
+    data object NoImage : ImageUiState
+    data class Processing(val previousPrepared: PreparedImageUiState?) : ImageUiState
+    data class Prepared(val image: PreparedImageUiState) : ImageUiState
+    data class ImageError(val message: String, val previousPrepared: PreparedImageUiState?) : ImageUiState
+}
+
+data class PreparedImageUiState(
+    val content: com.nimroel.assetmanager.domain.model.Content,
+)
+
 class AssetManagerViewModel(
     private val bootstrap: ProductionDraftBootstrap,
+    private val imageContentPreparer: ImageContentPreparer = UnavailableImageContentPreparer,
+    private val imageDispatcher: CoroutineDispatcher = Dispatchers.IO,
 ) : ViewModel() {
     var uiState: AssetManagerUiState by mutableStateOf(AssetManagerUiState.Loading)
         private set
 
     private var environment: ProductionDraftEnvironment? = null
     private var initialPresetModes: Map<String, PresetValueMode> = emptyMap()
+    private var imagePreparationJob: Job? = null
+    private var imageRequestGeneration = 0L
+    private var preparedImage: PreparedImage? = null
+    private var imageState: ImageUiState = ImageUiState.NoImage
+    private var draftActionError: String? = null
 
     init {
         loadPilot()
@@ -87,9 +118,11 @@ class AssetManagerViewModel(
         try {
             val updatedDraft = current.service.setSelection(current.draft, fieldPath, valueId)
             environment = current.copy(draft = updatedDraft)
-            uiState = environment!!.toReadyState(initialPresetModes)
+            draftActionError = null
+            refreshReadyState()
         } catch (error: ProductionDraftException) {
-            uiState = current.toReadyState(initialPresetModes, error.message ?: "No se pudo actualizar la selección.")
+            draftActionError = error.message ?: "No se pudo actualizar la selección."
+            refreshReadyState()
         }
     }
 
@@ -98,10 +131,48 @@ class AssetManagerViewModel(
         try {
             val updatedDraft = current.service.clearSelection(current.draft, fieldPath)
             environment = current.copy(draft = updatedDraft)
-            uiState = environment!!.toReadyState(initialPresetModes)
+            draftActionError = null
+            refreshReadyState()
         } catch (error: ProductionDraftException) {
-            uiState = current.toReadyState(initialPresetModes, error.message ?: "No se pudo eliminar la selección.")
+            draftActionError = error.message ?: "No se pudo eliminar la selección."
+            refreshReadyState()
         }
+    }
+
+    fun selectImage(sourceRef: ImageSourceRef?) {
+        if (sourceRef == null || environment == null) return
+        val previousPrepared = preparedImage?.toUiState()
+        val requestGeneration = ++imageRequestGeneration
+        imagePreparationJob?.cancel()
+        imageState = ImageUiState.Processing(previousPrepared)
+        refreshReadyState()
+        imagePreparationJob = viewModelScope.launch {
+            try {
+                val result = withContext(imageDispatcher) { imageContentPreparer.prepare(sourceRef) }
+                if (requestGeneration != imageRequestGeneration) return@launch
+                preparedImage = result
+                imageState = ImageUiState.Prepared(result.toUiState())
+                refreshReadyState()
+            } catch (error: CancellationException) {
+                throw error
+            } catch (error: ImagePreparationException) {
+                if (requestGeneration != imageRequestGeneration) return@launch
+                imageState = ImageUiState.ImageError(
+                    message = error.message ?: "No se pudo preparar la imagen seleccionada.",
+                    previousPrepared = previousPrepared,
+                )
+                refreshReadyState()
+            }
+        }
+    }
+
+    fun removeImage() {
+        imagePreparationJob?.cancel()
+        imagePreparationJob = null
+        imageRequestGeneration += 1
+        preparedImage = null
+        imageState = ImageUiState.NoImage
+        refreshReadyState()
     }
 
     private fun loadPilot() {
@@ -112,7 +183,7 @@ class AssetManagerViewModel(
             initialPresetModes = loaded.draft.selections.mapNotNull { (path, selection) ->
                 selection.presetMode?.let { path to it }
             }.toMap()
-            uiState = loaded.toReadyState(initialPresetModes)
+            refreshReadyState()
         } catch (error: Exception) {
             uiState = AssetManagerUiState.Error(
                 "No se pudieron cargar los contratos de producción. ${error.message ?: "Error inesperado."}",
@@ -120,12 +191,22 @@ class AssetManagerViewModel(
         }
     }
 
+    private fun refreshReadyState() {
+        environment?.let { loaded ->
+            uiState = loaded.toReadyState(initialPresetModes, imageState, draftActionError)
+        }
+    }
+
     companion object {
-        fun factory(assets: AssetManager): ViewModelProvider.Factory = object : ViewModelProvider.Factory {
+        fun factory(context: Context): ViewModelProvider.Factory = object : ViewModelProvider.Factory {
             @Suppress("UNCHECKED_CAST")
             override fun <T : ViewModel> create(modelClass: Class<T>): T {
                 require(modelClass.isAssignableFrom(AssetManagerViewModel::class.java))
-                return AssetManagerViewModel(AndroidProductionDraftBootstrap(assets)) as T
+                val applicationContext = context.applicationContext
+                return AssetManagerViewModel(
+                    bootstrap = AndroidProductionDraftBootstrap(applicationContext.assets),
+                    imageContentPreparer = AndroidImageContentPreparer(applicationContext.contentResolver),
+                ) as T
             }
         }
     }
@@ -146,6 +227,7 @@ private val productionFieldPresentations = listOf(
 
 private fun ProductionDraftEnvironment.toReadyState(
     initialPresetModes: Map<String, PresetValueMode>,
+    imageState: ImageUiState = ImageUiState.NoImage,
     actionError: String? = null,
 ): AssetManagerUiState.Ready {
     val boundPaths = service.boundVocabularyFieldPaths(draft)
@@ -193,8 +275,17 @@ private fun ProductionDraftEnvironment.toReadyState(
         vocabularySetVersion = draft.vocabularySetVersion,
         fields = fields,
         summary = ProductionDraftSummaryUiState(summarySelections.size, summarySelections),
+        imageState = imageState,
         actionError = actionError,
     )
+}
+
+private fun PreparedImage.toUiState() = PreparedImageUiState(content)
+
+private object UnavailableImageContentPreparer : ImageContentPreparer {
+    override suspend fun prepare(sourceRef: ImageSourceRef): PreparedImage {
+        throw ImagePreparationException("No hay un preparador de imagen configurado.")
+    }
 }
 
 private fun AssetType.displayLabel(): String = when (this) {
