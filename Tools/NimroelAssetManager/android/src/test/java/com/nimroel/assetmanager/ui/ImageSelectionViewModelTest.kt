@@ -18,6 +18,7 @@ import com.nimroel.assetmanager.domain.contracts.VocabularyValue
 import com.nimroel.assetmanager.domain.model.AssetType
 import com.nimroel.assetmanager.domain.model.AssetId
 import com.nimroel.assetmanager.domain.model.Content
+import com.nimroel.assetmanager.domain.model.OriginKind
 import com.nimroel.assetmanager.domain.identity.AssetIdGenerator
 import com.nimroel.assetmanager.domain.identity.WorkIdGenerator
 import com.nimroel.assetmanager.domain.processing.ImageContentPreparer
@@ -299,6 +300,123 @@ class ImageSelectionViewModelTest {
         }
     }
 
+    @Test
+    fun `Android image selection never implies imported and provenance waits for ready staging`() = runTest {
+        val store = FakeWorkItemStore()
+        withStagingViewModel(coordinator(store)) { viewModel ->
+            viewModel.selectImage(ImageSourceRef("content://images/generated-elsewhere"))
+            runCurrent()
+
+            assertEquals(ProvenanceUiState.Unavailable, viewModel.ready().provenanceState)
+            viewModel.selectProvenanceKind(OriginKind.IMPORTED)
+            assertEquals(ProvenanceUiState.Unavailable, viewModel.ready().provenanceState)
+
+            viewModel.prepareLocalIngest()
+            runCurrent()
+
+            assertEquals(ProvenanceUiState.NotSpecified, viewModel.ready().provenanceState)
+            assertFalse(viewModel.ready().provenanceState is ProvenanceUiState.Valid)
+        }
+    }
+
+    @Test
+    fun `provenance validation preserves ProductionDraft PreparedImage staging and reserved AssetId`() = runTest {
+        val store = FakeWorkItemStore()
+        withStagingViewModel(coordinator(store)) { viewModel ->
+            viewModel.selectValue(ProductionFieldPaths.SUBJECT_AGE_BAND_ID, "elder")
+            viewModel.selectImage(ImageSourceRef("content://images/source"))
+            runCurrent()
+            viewModel.prepareLocalIngest()
+            runCurrent()
+            val before = viewModel.ready()
+
+            viewModel.selectProvenanceKind(OriginKind.GENERATED)
+            val invalid = viewModel.ready()
+            assertTrue(invalid.provenanceState is ProvenanceUiState.Invalid)
+            assertEquals(before.localIngestState, invalid.localIngestState)
+            assertEquals(before.imageState, invalid.imageState)
+            assertEquals("elder", invalid.fields.single().selectedValueId)
+
+            viewModel.setGeneratedProvider("any-provider")
+            viewModel.setGeneratedAt("2026-09-14T10:00:00Z")
+            val valid = viewModel.ready()
+            assertTrue(valid.provenanceState is ProvenanceUiState.Valid)
+            assertEquals(before.localIngestState, valid.localIngestState)
+            assertEquals(before.imageState, valid.imageState)
+            assertEquals(assetId(1).value, (valid.localIngestState as LocalIngestUiState.Ready).reservedAssetId)
+            assertEquals("elder", valid.fields.single().selectedValueId)
+        }
+    }
+
+    @Test
+    fun `useCurrentGeneratedAt materializes the injected Clock instant`() = runTest {
+        val fixedClock = Clock.fixed(Instant.parse("2026-09-14T12:34:56Z"), ZoneOffset.UTC)
+        withStagingViewModel(coordinator(FakeWorkItemStore()), clock = fixedClock) { viewModel ->
+            viewModel.selectImage(ImageSourceRef("content://images/source"))
+            runCurrent()
+            viewModel.prepareLocalIngest()
+            runCurrent()
+            viewModel.selectProvenanceKind(OriginKind.GENERATED)
+            viewModel.setGeneratedProvider("provider-x")
+
+            viewModel.useCurrentGeneratedAt()
+
+            val provenance = (viewModel.ready().provenanceState as ProvenanceUiState.Valid).provenance
+            assertEquals("2026-09-14T12:34:56Z", provenance.generator?.generatedAt)
+        }
+    }
+
+    @Test
+    fun `changing provenance variants clears incompatible canonical fields`() = runTest {
+        val store = FakeWorkItemStore()
+        withStagingViewModel(coordinator(store)) { viewModel ->
+            viewModel.selectImage(ImageSourceRef("content://images/source"))
+            runCurrent()
+            viewModel.prepareLocalIngest()
+            runCurrent()
+
+            viewModel.selectProvenanceKind(OriginKind.GENERATED)
+            viewModel.setGeneratedProvider("provider-x")
+            viewModel.setGeneratedModel("model-x")
+            viewModel.setGeneratedAt("2026-09-14T10:00:00Z")
+            viewModel.selectProvenanceKind(OriginKind.IMPORTED)
+
+            val imported = (viewModel.ready().provenanceState as ProvenanceUiState.Valid).provenance
+            assertEquals(OriginKind.IMPORTED, imported.originKind)
+            assertEquals(null, imported.generator)
+
+            viewModel.selectProvenanceKind(OriginKind.EDITED)
+            viewModel.setSourceAssetIds("ast_01991d80-1000-7000-8000-000000000009")
+            viewModel.selectProvenanceKind(OriginKind.GENERATED)
+            viewModel.setGeneratedProvider("provider-y")
+            viewModel.setGeneratedAt("2026-09-14T11:00:00Z")
+
+            val generated = (viewModel.ready().provenanceState as ProvenanceUiState.Valid).provenance
+            assertEquals(null, generated.sourceAssetIds)
+        }
+    }
+
+    @Test
+    fun `Asset creation stays disabled and explanation stops claiming valid provenance is missing`() = runTest {
+        val store = FakeWorkItemStore()
+        withStagingViewModel(coordinator(store)) { viewModel ->
+            viewModel.selectImage(ImageSourceRef("content://images/source"))
+            runCurrent()
+            viewModel.prepareLocalIngest()
+            runCurrent()
+            assertFalse(viewModel.ready().isAssetCreationEnabled)
+            assertTrue(viewModel.ready().assetCreationExplanation.contains("procedencia válida"))
+
+            viewModel.selectProvenanceKind(OriginKind.IMPORTED)
+            val state = viewModel.ready()
+            assertFalse(state.isAssetCreationEnabled)
+            assertFalse(state.assetCreationExplanation.contains("procedencia"))
+            assertTrue(state.assetCreationExplanation.contains("binario canónico"))
+            assertFalse(state.toString().contains("content://"))
+            assertFalse(state.toString().contains("staging/"))
+        }
+    }
+
     private suspend fun kotlinx.coroutines.test.TestScope.withViewModel(
         preparer: ImageContentPreparer,
         block: suspend kotlinx.coroutines.test.TestScope.(AssetManagerViewModel) -> Unit,
@@ -314,6 +432,7 @@ class ImageSelectionViewModelTest {
 
     private suspend fun kotlinx.coroutines.test.TestScope.withStagingViewModel(
         coordinator: LocalIngestCoordinator,
+        clock: Clock = Clock.systemUTC(),
         block: suspend kotlinx.coroutines.test.TestScope.(AssetManagerViewModel) -> Unit,
     ) {
         val dispatcher = StandardTestDispatcher(testScheduler)
@@ -325,6 +444,7 @@ class ImageSelectionViewModelTest {
                     imageContentPreparer = ImageContentPreparer { prepared(it, "d") },
                     imageDispatcher = dispatcher,
                     localIngestCoordinator = coordinator,
+                    clock = clock,
                 ),
             )
         } finally {

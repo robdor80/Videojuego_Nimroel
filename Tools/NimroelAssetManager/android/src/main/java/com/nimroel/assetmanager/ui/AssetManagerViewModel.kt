@@ -17,10 +17,16 @@ import com.nimroel.assetmanager.domain.contracts.PresetValueMode
 import com.nimroel.assetmanager.domain.contracts.ProductionFieldPaths
 import com.nimroel.assetmanager.domain.contracts.VocabularyValueStatus
 import com.nimroel.assetmanager.domain.model.AssetType
+import com.nimroel.assetmanager.domain.model.AssetId
 import com.nimroel.assetmanager.domain.model.Content
+import com.nimroel.assetmanager.domain.model.OriginKind
+import com.nimroel.assetmanager.domain.model.Provenance
 import com.nimroel.assetmanager.domain.identity.RandomUuidWorkIdGenerator
 import com.nimroel.assetmanager.domain.identity.UuidV7AssetIdGenerator
 import com.nimroel.assetmanager.domain.production.DraftSelectionSource
+import com.nimroel.assetmanager.domain.production.ProvenanceDraft
+import com.nimroel.assetmanager.domain.production.ProvenanceDraftService
+import com.nimroel.assetmanager.domain.production.ProvenanceMaterialization
 import com.nimroel.assetmanager.domain.production.ProductionDraftException
 import com.nimroel.assetmanager.domain.processing.ImageContentPreparer
 import com.nimroel.assetmanager.domain.processing.ImagePreparationException
@@ -34,6 +40,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.time.Clock
+import java.time.Instant
 
 sealed interface AssetManagerUiState {
     data object Loading : AssetManagerUiState
@@ -54,6 +62,9 @@ sealed interface AssetManagerUiState {
         val summary: ProductionDraftSummaryUiState,
         val imageState: ImageUiState = ImageUiState.NoImage,
         val localIngestState: LocalIngestUiState = LocalIngestUiState.NotStarted,
+        val provenanceState: ProvenanceUiState = ProvenanceUiState.Unavailable,
+        val isAssetCreationEnabled: Boolean = false,
+        val assetCreationExplanation: String = "Aún faltan una procedencia válida, el procesamiento del binario canónico y la finalización antes de crear el Asset.",
         val actionError: String? = null,
     ) : AssetManagerUiState
 }
@@ -116,11 +127,30 @@ sealed interface LocalIngestUiState {
     ) : LocalIngestUiState
 }
 
+data class ProvenanceFormUiState(
+    val originKind: OriginKind,
+    val provider: String = "",
+    val model: String = "",
+    val generatedAt: String = "",
+    val importedAt: String = "",
+    val sourceAssetIds: String = "",
+    val unknownConfirmed: Boolean = false,
+)
+
+sealed interface ProvenanceUiState {
+    data object Unavailable : ProvenanceUiState
+    data object NotSpecified : ProvenanceUiState
+    data class Invalid(val form: ProvenanceFormUiState, val errors: List<String>) : ProvenanceUiState
+    data class Valid(val form: ProvenanceFormUiState, val provenance: Provenance) : ProvenanceUiState
+}
+
 class AssetManagerViewModel(
     private val bootstrap: ProductionDraftBootstrap,
     private val imageContentPreparer: ImageContentPreparer = UnavailableImageContentPreparer,
     private val imageDispatcher: CoroutineDispatcher = Dispatchers.IO,
     private val localIngestCoordinator: LocalIngestCoordinator? = null,
+    private val provenanceDraftService: ProvenanceDraftService = ProvenanceDraftService(),
+    private val clock: Clock = Clock.systemUTC(),
 ) : ViewModel() {
     var uiState: AssetManagerUiState by mutableStateOf(AssetManagerUiState.Loading)
         private set
@@ -132,6 +162,7 @@ class AssetManagerViewModel(
     private var preparedImage: PreparedImage? = null
     private var imageState: ImageUiState = ImageUiState.NoImage
     private var localIngestState: LocalIngestUiState = LocalIngestUiState.NotStarted
+    private var provenanceDraft: ProvenanceDraft = ProvenanceDraft.NotSpecified
     private var draftActionError: String? = null
 
     init {
@@ -240,6 +271,48 @@ class AssetManagerViewModel(
         }
     }
 
+    fun selectProvenanceKind(originKind: OriginKind) = updateProvenance {
+        provenanceDraftService.select(originKind)
+    }
+
+    fun setGeneratedProvider(value: String) = updateProvenance {
+        provenanceDraftService.setGeneratedProvider(it, value)
+    }
+
+    fun setGeneratedModel(value: String) = updateProvenance {
+        provenanceDraftService.setGeneratedModel(it, value)
+    }
+
+    fun setGeneratedAt(value: String) = updateProvenance {
+        provenanceDraftService.setGeneratedAt(it, value)
+    }
+
+    fun useCurrentGeneratedAt() = updateProvenance {
+        provenanceDraftService.useGeneratedAt(it, Instant.now(clock))
+    }
+
+    fun setImportedAt(value: String) = updateProvenance {
+        provenanceDraftService.setImportedAt(it, value)
+    }
+
+    fun useCurrentImportedAt() = updateProvenance {
+        provenanceDraftService.useImportedAt(it, Instant.now(clock))
+    }
+
+    fun setSourceAssetIds(value: String) = updateProvenance {
+        provenanceDraftService.setSourceAssetIds(it, value)
+    }
+
+    fun setUnknownConfirmed(confirmed: Boolean) = updateProvenance {
+        provenanceDraftService.setUnknownConfirmed(it, confirmed)
+    }
+
+    private inline fun updateProvenance(transform: (ProvenanceDraft) -> ProvenanceDraft) {
+        if (localIngestState !is LocalIngestUiState.Ready) return
+        provenanceDraft = transform(provenanceDraft)
+        refreshReadyState()
+    }
+
     private fun loadPilot() {
         uiState = AssetManagerUiState.Loading
         try {
@@ -258,7 +331,13 @@ class AssetManagerViewModel(
 
     private fun refreshReadyState() {
         environment?.let { loaded ->
-            uiState = loaded.toReadyState(initialPresetModes, imageState, localIngestState, draftActionError)
+            uiState = loaded.toReadyState(
+                initialPresetModes,
+                imageState,
+                localIngestState,
+                provenanceDraft.toUiState(localIngestState, provenanceDraftService),
+                draftActionError,
+            )
         }
     }
 
@@ -301,6 +380,7 @@ private fun ProductionDraftEnvironment.toReadyState(
     initialPresetModes: Map<String, PresetValueMode>,
     imageState: ImageUiState = ImageUiState.NoImage,
     localIngestState: LocalIngestUiState = LocalIngestUiState.NotStarted,
+    provenanceState: ProvenanceUiState = ProvenanceUiState.Unavailable,
     actionError: String? = null,
 ): AssetManagerUiState.Ready {
     val boundPaths = service.boundVocabularyFieldPaths(draft)
@@ -350,6 +430,13 @@ private fun ProductionDraftEnvironment.toReadyState(
         summary = ProductionDraftSummaryUiState(summarySelections.size, summarySelections),
         imageState = imageState,
         localIngestState = localIngestState,
+        provenanceState = provenanceState,
+        isAssetCreationEnabled = false,
+        assetCreationExplanation = if (provenanceState is ProvenanceUiState.Valid) {
+            "Aún faltan el procesamiento del binario canónico y la finalización antes de crear el Asset."
+        } else {
+            "Aún faltan una procedencia válida, el procesamiento del binario canónico y la finalización antes de crear el Asset."
+        },
         actionError = actionError,
     )
 }
@@ -358,6 +445,36 @@ private fun PreparedImage.toUiState() = PreparedImageUiState(content)
 
 private fun LocalIngestUiState.locksImage(): Boolean =
     this is LocalIngestUiState.Processing || this is LocalIngestUiState.Ready
+
+private fun ProvenanceDraft.toUiState(
+    localIngestState: LocalIngestUiState,
+    service: ProvenanceDraftService,
+): ProvenanceUiState {
+    val ready = localIngestState as? LocalIngestUiState.Ready ?: return ProvenanceUiState.Unavailable
+    if (this == ProvenanceDraft.NotSpecified) return ProvenanceUiState.NotSpecified
+    val form = toFormUiState()
+    return when (val result = service.materialize(this, AssetId.parse(ready.reservedAssetId))) {
+        is ProvenanceMaterialization.Invalid -> ProvenanceUiState.Invalid(form, result.errors.map { it.message })
+        is ProvenanceMaterialization.Valid -> ProvenanceUiState.Valid(form, result.provenance)
+    }
+}
+
+private fun ProvenanceDraft.toFormUiState(): ProvenanceFormUiState = when (this) {
+    ProvenanceDraft.NotSpecified -> error("NotSpecified has no provenance form.")
+    is ProvenanceDraft.Generated -> ProvenanceFormUiState(
+        originKind = OriginKind.GENERATED,
+        provider = provider,
+        model = model,
+        generatedAt = generatedAt.text,
+    )
+    is ProvenanceDraft.Imported -> ProvenanceFormUiState(
+        originKind = OriginKind.IMPORTED,
+        importedAt = importedAt.text,
+    )
+    is ProvenanceDraft.Edited -> ProvenanceFormUiState(OriginKind.EDITED, sourceAssetIds = sourceAssetIdsText)
+    is ProvenanceDraft.Derived -> ProvenanceFormUiState(OriginKind.DERIVED, sourceAssetIds = sourceAssetIdsText)
+    is ProvenanceDraft.Unknown -> ProvenanceFormUiState(OriginKind.UNKNOWN, unknownConfirmed = confirmed)
+}
 
 private object UnavailableImageContentPreparer : ImageContentPreparer {
     override suspend fun prepare(sourceRef: ImageSourceRef): PreparedImage {

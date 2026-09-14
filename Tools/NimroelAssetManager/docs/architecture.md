@@ -13,7 +13,7 @@
 
 ## Capas Android
 
-- `domain/`: modelos y contratos de negocio independientes de UI/proveedor; incluye Production Draft v1 como flujo puro Preset → Vocabulary Set → Vocabulary → borrador → Asset validado.
+- `domain/`: modelos y contratos de negocio independientes de UI/proveedor; incluye Production Draft v1 y Provenance Draft v1 como flujos puros y separados que convergerán al finalizar el Asset.
 - `data/`: Room DB v1, DAOs, conversores, proyección del documento canónico, `RoomLocalAssetStore` y staging Android privado con verificación directa del archivo.
 - `domain/processing`: fronteras y orquestación testeables para preparación de imagen e ingestión local; no depende de `Context` ni de rutas `File`.
 - `ui/`: Compose y ViewModels; no debe alojar reglas de schema ni persistencia.
@@ -29,6 +29,7 @@
 - Completado: interfaz Android “Nueva producción” v1, conectada al Production Draft y a los contratos compartidos empaquetados en runtime, con edición responsive y resumen reactivo.
 - Completado: selección local de imagen y preparación de `Content` v1 mediante URI temporal, análisis streaming, validación reusable y política latest-selection-wins.
 - Completado: staging local y reserva de `AssetId` v1, con UUIDv7, work item Room, copia privada `.part`, fsync, verificación y publicación `ready_to_commit`.
+- Completado: Provenance Draft v1, con elección explícita posterior a `ready_to_commit`, variantes selladas, fechas `Instant`, Asset IDs validados y materialización de `Provenance` sin inferencias desde Android.
 
 ## Decisiones aún abiertas
 
@@ -41,4 +42,4 @@
 
 ## Próximo hito
 
-Definir el procesamiento/canonicalización de imagen y la captura explícita de Provenance antes de finalizar el Asset, sin adelantar ImageKit, sincronización o Asset Resolver.
+Definir **Canonical Image Profile / Canonical Image Processing** mediante pruebas reales de calidad y tamaño antes de finalizar el Asset, sin adelantar ImageKit, sincronización o Asset Resolver.

@@ -28,6 +28,7 @@ import com.nimroel.assetmanager.domain.model.LifecycleStatus
 import com.nimroel.assetmanager.domain.model.NpcPortraitDetails
 import com.nimroel.assetmanager.domain.model.OriginKind
 import com.nimroel.assetmanager.domain.model.Provenance
+import java.time.Instant
 import kotlinx.serialization.decodeFromString
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -252,6 +253,25 @@ class ProductionDraftTest {
         }
 
         assertTrue(error.message!!.contains("prompt template ID and version"))
+    }
+
+    @Test
+    fun `buildAsset adds its prompt template pair to materialized provenance without replacing generator`() {
+        val productionService = completeService()
+        val draft = productionService.startDraft("test-preset", "1.0")
+        val provenanceService = ProvenanceDraftService()
+        var provenanceDraft = provenanceService.select(OriginKind.GENERATED)
+        provenanceDraft = provenanceService.setGeneratedProvider(provenanceDraft, "provider-x")
+        provenanceDraft = provenanceService.useGeneratedAt(provenanceDraft, Instant.parse("2026-09-14T10:00:00Z"))
+        val provenance = (provenanceService.materialize(provenanceDraft, assetId()) as ProvenanceMaterialization.Valid).provenance
+
+        val asset = productionService.buildAsset(draft, assetId(), content(), provenance)
+
+        assertEquals("npc-portrait-template", asset.provenance.promptTemplateId)
+        assertEquals("4.0", asset.provenance.promptTemplateVersion)
+        assertEquals("provider-x", asset.provenance.generator?.provider)
+        assertEquals("2026-09-14T10:00:00Z", asset.provenance.generator?.generatedAt)
+        assertTrue(AssetValidator.validate(asset).isEmpty())
     }
 
     private fun pilotService() = service(listOf(pilotPreset()), listOf(pilotSet()), pilotVocabularies())
