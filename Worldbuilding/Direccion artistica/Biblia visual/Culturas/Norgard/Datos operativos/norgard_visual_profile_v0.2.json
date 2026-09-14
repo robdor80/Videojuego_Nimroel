@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_visual_profile",
+  "version": "0.2",
+  "status": "approved_visual_base_with_canonical_aethros_heraldry",
+  "cultureId": "norgard",
+  "displayName": "Norgard",
+  "sourceDocument": "NORGARD_VISUAL_PROFILE_v0.1.md",
+  "inheritance": {
+    "globalVisualBible": "NIMROEL_GLOBAL_VISUAL_BIBLE_v0.3.md",
+    "categoryBible": null,
+    "climateProfile": null,
+    "climateResolvedExternally": true,
+    "worldClockResolvedExternally": true,
+    "threeMoonsInheritedFromGlobalBible": true
+  },
+  "promptResolutionOrder": [
+    "global_visual_bible",
+    "category_bible_if_available",
+    "culture_profile",
+    "region_profile",
+    "settlement_or_local_profile",
+    "scene_variables",
+    "climate_state",
+    "resolved_prompt"
+  ],
+  "visualDNA": [
+    "sobrio",
+    "funcional",
+    "humano",
+    "preindustrial",
+    "vivido",
+    "regionalmente_diverso"
+  ],
+  "principles": {
+    "regionalDiversity": true,
+    "genericVikingAesthetic": false,
+    "grimdarkByDefault": false,
+    "wealthThroughQualityNotOstentation": true,
+    "fantasyDecorationByDefault": false,
+    "architectureMustBePhysicallyPlausible": true
+  },
+  "commonMaterials": [
+    "piedra",
+    "madera",
+    "teja",
+    "pizarra",
+    "hierro",
+    "otros_metales_segun_region_oficio_y_riqueza"
+  ],
+  "roofingRules": {
+    "west_and_center": "teja",
+    "east": "pizarra",
+    "far_north": "pizarra_muy_inclinada_en_zonas_de_nieve_intensa"
+  },
+  "ruralSettlementBaseline": {
+    "buildingMaterials": [
+      "piedra",
+      "madera"
+    ],
+    "typicalFloors": 1,
+    "roofing": "teja_o_pizarra_segun_region",
+    "streetSurface": "tierra",
+    "buildingDensity": "casas_relativamente_juntas",
+    "commonFeatures": [
+      "corrales",
+      "huertos",
+      "pequenos_establos_o_dependencias"
+    ]
+  },
+  "roadsAndBridges": {
+    "mainRoads": {
+      "maintenance": "bueno",
+      "role": [
+        "comercio",
+        "administracion",
+        "desplazamiento"
+      ],
+      "possibleFeatures": [
+        "firme_reforzado",
+        "drenaje",
+        "mantenimiento_regular"
+      ]
+    },
+    "secondaryRoads": {
+      "surface": "tierra",
+      "wetWeatherState": "barro",
+      "layout": "rustico_e_irregular"
+    },
+    "bridges": {
+      "majorRoutesAndRivers": "piedra",
+      "minorRoutesAndRuralCrossings": "madera"
+    }
+  },
+  "heraldry": {
+    "crownHeraldrySource": "reigning_house",
+    "currentRegentHouseId": "aethros",
+    "kingdomHasPermanentIndependentNationalEmblem": false,
+    "assetRoot": "../Heraldica/Casa Aethros",
+    "currentRegentHouse": {
+      "houseId": "aethros",
+      "emblemDescription": "cabeza_frontal_de_lobo_en_plata_sobre_azul_aethros",
+      "colors": [
+        "azul_aethros",
+        "plata"
+      ],
+      "masterEmblemAssetId": "aethros_heraldic_emblem_v0.1"
+    },
+    "canonicalAssets": {
+      "masterEmblem": {
+        "id": "aethros_heraldic_emblem_v0.1",
+        "file": "AETHROS_HERALDIC_EMBLEM_v0.1.png",
+        "prompt": "AETHROS_HERALDIC_EMBLEM_v0.1_PROMPT.md",
+        "review": "AETHROS_HERALDIC_EMBLEM_v0.1_REVIEW.md"
+      },
+      "royalBanner": {
+        "id": "aethros_royal_banner_v0.1",
+        "file": "AETHROS_ROYAL_BANNER_v0.1.png",
+        "prompt": "AETHROS_ROYAL_BANNER_v0.1_PROMPT.md",
+        "review": "AETHROS_ROYAL_BANNER_v0.1_REVIEW.md"
+      },
+      "militaryShield": {
+        "id": "aethros_military_shield_v0.1",
+        "file": "AETHROS_MILITARY_SHIELD_v0.1.png",
+        "prompt": "AETHROS_MILITARY_SHIELD_v0.1_PROMPT.md",
+        "review": "AETHROS_MILITARY_SHIELD_v0.1_REVIEW.md"
+      },
+      "royalSeal": {
+        "id": "aethros_royal_seal_v0.1",
+        "file": "AETHROS_ROYAL_SEAL_v0.1.png",
+        "prompt": "AETHROS_ROYAL_SEAL_v0.1_PROMPT.md",
+        "review": "AETHROS_ROYAL_SEAL_v0.1_REVIEW.md"
+      }
+    },
+    "identityRules": {
+      "masterEmblemMustRemainStable": true,
+      "freeWolfRedesignAllowed": false,
+      "alternateWolfPosesAllowed": false,
+      "inventedSecondaryHeraldryAllowed": false,
+      "canonicalWolfOrientation": "frontal",
+      "canonicalMetal": "plata",
+      "canonicalFieldColor": "azul_aethros"
+    },
+    "settlementBannerPolicy": {
+      "defaultAmbientBannersAllowed": false,
+      "allowedSettlementIds": [
+        "hallheim"
+      ],
+      "hallheim": {
+        "ambientBannersAllowed": true,
+        "requiredAssetId": "aethros_royal_banner_v0.1",
+        "density": "sparse",
+        "allowedContexts": [
+          "recinto_real",
+          "dependencias_de_la_corona",
+          "accesos_institucionales",
+          "guardia_real",
+          "instalaciones_militares_de_la_corona",
+          "actos_ceremoniales",
+          "presencia_directa_del_poder_real"
+        ]
+      },
+      "outsideHallheim": {
+        "ambientBannersAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "rule": "uso_funcional_si_decoracion_ambiental_indiscriminada_no"
+      }
+    },
+    "crownContinuityRules": [
+      "Mientras gobiernan los Aethros, su sello es también el sello de la Corona de Norgard.",
+      "El lobo frontal Aethros funciona de facto como símbolo de la Corona mientras gobiernan los Aethros.",
+      "Azul Aethros y plata funcionan de facto como colores de la Corona mientras gobiernan los Aethros.",
+      "Si cambia la Casa Regente, deben revisarse sello, colores, estandarte real y heráldica institucional."
+    ],
+    "generationRules": [
+      "Nunca inventar una nueva variante del lobo Aethros.",
+      "Nunca introducir estandartes locales o gremiales no definidos.",
+      "Fuera de Hallheim, no mostrar estandartes ambientales.",
+      "En Hallheim, si aparecen estandartes, usar exclusivamente AETHROS_ROYAL_BANNER_v0.1 y con moderacion.",
+      "Fuera de Hallheim puede aparecer heráldica Aethros funcional si la escena la justifica."
+    ]
+  },
+  "military": {
+    "royalGuard": {
+      "role": "representacion_directa_de_la_casa_regente_y_la_corona",
+      "colors": [
+        "azul",
+        "plata"
+      ],
+      "visualElements": [
+        "capas",
+        "tabardos",
+        "escudos",
+        "detalles_de_armadura",
+        "elementos_ceremoniales_o_de_escolta"
+      ],
+      "quality": "superior_al_ejercito_regular",
+      "heraldryVisibility": "alta",
+      "authorizedHeraldryAssetIds": [
+        "aethros_heraldic_emblem_v0.1",
+        "aethros_royal_banner_v0.1",
+        "aethros_military_shield_v0.1"
+      ]
+    },
+    "regularArmy": {
+      "style": [
+        "sobrio",
+        "funcional",
+        "disciplinado",
+        "muy_homogeneo"
+      ],
+      "palette": [
+        "azul_oscuro",
+        "gris",
+        "plata_en_detalles"
+      ],
+      "armor": [
+        "cuero",
+        "cota_de_malla",
+        "placas_parciales"
+      ],
+      "shieldEmblem": "lobo_de_los_aethros_mientras_gobiernen",
+      "fantasyArmorExcess": false,
+      "shieldAssetId": "aethros_military_shield_v0.1"
+    },
+    "specialUnitsExcludedFromBaseline": [
+      "berserkers_de_rodas"
+    ]
+  },
+  "civilianClothing": {
+    "dependsOn": [
+      "profesion",
+      "nivel_social",
+      "riqueza",
+      "region",
+      "estacion",
+      "contexto"
+    ],
+    "palette": "sobria_y_contenida",
+    "commonMaterials": [
+      "lana",
+      "lino",
+      "cuero"
+    ],
+    "coldRegionMaterials": [
+      "pieles"
+    ],
+    "commonGarmentLogic": [
+      "capas",
+      "mantos",
+      "prendas_superpuestas",
+      "adaptacion_al_trabajo_y_clima"
+    ],
+    "wealthExpression": {
+      "brightColorsRequired": false,
+      "signals": [
+        "tejidos_de_mayor_calidad",
+        "mejor_confeccion",
+        "mejores_cueros_y_pieles",
+        "bordados_discretos",
+        "cierres_y_hebillas_de_calidad",
+        "joyeria_contenida",
+        "acabados_superiores",
+        "mejor_estado_de_conservacion"
+      ]
+    }
+  },
+  "npcRules": {
+    "singleNorgardFace": false,
+    "forbidAutomaticHomogenization": [
+      "un_solo_tipo_fisico",
+      "una_sola_edad",
+      "una_sola_complexion",
+      "barba_obligatoria",
+      "cabello_rubio_obligatorio"
+    ],
+    "appearanceInputs": [
+      "region",
+      "oficio",
+      "edad",
+      "clase_social",
+      "estilo_de_vida",
+      "contexto"
+    ],
+    "farNorthTendencies": [
+      "mayor_frecuencia_de_complexiones_robustas",
+      "aspecto_mas_curtido",
+      "ropa_mas_pesada"
+    ]
+  },
+  "globalProhibitions": [
+    "cultura_vikinga_generica",
+    "cultura_celta_generica",
+    "grimdark_por_defecto",
+    "ornamentacion_fantasy_gratuita",
+    "sociedad_uniformemente_pobre_o_sucia",
+    "sociedad_uniformemente_rica",
+    "edificios_monumentales_imposibles",
+    "simbolos_religiosos",
+    "templos",
+    "iglesias",
+    "capillas",
+    "iconografia_divina",
+    "magia_decorativa_generica",
+    "banderas_arbitrarias",
+    "runas_gratuitas",
+    "cristales_luminosos_gratuitos",
+    "nieve_automatica_por_ser_norgard",
+    "estandartes_ambientales_fuera_de_hallheim",
+    "variantes_inventadas_del_lobo_aethros",
+    "heraldica_local_inventada"
+  ],
+  "promptRequiredContext": [
+    "region",
+    "localizacion_si_aplica",
+    "funcion_del_lugar",
+    "materiales",
+    "tipo_de_cubierta",
+    "escala",
+    "nivel_economico",
+    "estado_de_mantenimiento",
+    "clase_social_si_aplica",
+    "profesion_si_aplica",
+    "contexto",
+    "hora_del_dia",
+    "clima_resuelto",
+    "estacion_resuelta"
+  ],
+  "runtimeIntegration": {
+    "climateSystemRequiredForWeather": true,
+    "worldClockRequiredForSeason": true,
+    "assetMetadataShouldSupport": [
+      "season",
+      "seasonPeriod",
+      "weather",
+      "timeOfDay",
+      "groundState",
+      "visibility",
+      "lighting"
+    ]
+  },
+  "workflowAddenda": [
+    "VISUAL_REFERENCE_WORKFLOW_v0.1_ADDENDUM_001_HERALDRY.md",
+    "VISUAL_REFERENCE_WORKFLOW_v0.1_ADDENDUM_002_NORGARD_BANNERS.md"
+  ]
+}

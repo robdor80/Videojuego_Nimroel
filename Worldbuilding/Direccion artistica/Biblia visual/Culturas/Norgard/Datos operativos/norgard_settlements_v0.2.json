@@ -1,0 +1,641 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_settlements",
+  "version": "0.2",
+  "cultureId": "norgard",
+  "sourceDocument": "NORGARD_VISUAL_PROFILE_v0.1.md",
+  "settlements": [
+    {
+      "id": "hallheim",
+      "name": "Hallheim",
+      "regionIds": [
+        "central_norgard"
+      ],
+      "type": "capital_city",
+      "relativeScale": "largest_city_in_norgard",
+      "walls": true,
+      "functions": [
+        "monarquia",
+        "administracion",
+        "burocracia",
+        "gremios",
+        "comercio",
+        "mercados"
+      ],
+      "architecture": {
+        "materials": [
+          "piedra_gris_media",
+          "madera"
+        ],
+        "roofing": "teja",
+        "typicalFloors": "1-3",
+        "groundFloorShopsCommon": true,
+        "mainStreets": "mas_anchas_y_mantenidas",
+        "secondaryStreets": "organicas_e_irregulares"
+      },
+      "royalPrecinct": {
+        "present": true,
+        "ownDefenses": true,
+        "character": [
+          "fortificado",
+          "palaciego",
+          "piedra",
+          "severo_por_fuera",
+          "calido_y_comodo_por_dentro"
+        ],
+        "largeWindowsAllowed": true
+      },
+      "water": {
+        "majorNavigableRiverAdjacent": true,
+        "riverInsideWalls": false,
+        "largeSeaShips": false,
+        "bargesAndSmallCraft": true,
+        "majorBridges": true,
+        "riverDocks": true
+      },
+      "externalSeaPort": {
+        "exists": true,
+        "autonomousMajorCity": false,
+        "role": "transferencia_de_mercancias_entre_buques_maritimos_y_hallheim"
+      },
+      "visualMood": [
+        "septentrional",
+        "frio",
+        "humedo",
+        "sobrio",
+        "boscoso"
+      ],
+      "referenceAssets": [
+        {
+          "id": "hallheim_v0.2_reference_001",
+          "status": "approved",
+          "promptTrace": "HALLHEIM_v0.2_REFERENCE_001_PROMPT.md"
+        }
+      ],
+      "promptNotes": [
+        "Debe sentirse como gran capital y no como fortaleza aislada.",
+        "No introducir templos ni iglesias.",
+        "Evitar una atmósfera demasiado cálida o meridional.",
+        "Si aparecen estandartes, usar solo AETHROS_ROYAL_BANNER_v0.1, de forma escasa y en contexto institucional."
+      ],
+      "heraldryPolicy": {
+        "ambientBannersAllowed": true,
+        "requiredBannerAssetId": "aethros_royal_banner_v0.1",
+        "bannerDensity": "sparse",
+        "allowedContexts": [
+          "recinto_real",
+          "dependencias_de_la_corona",
+          "accesos_institucionales",
+          "guardia_real",
+          "instalaciones_militares_de_la_corona",
+          "actos_ceremoniales",
+          "presencia_directa_del_poder_real"
+        ],
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true
+      }
+    },
+    {
+      "id": "veldora",
+      "name": "Veldora",
+      "regionIds": [
+        "west_norgard"
+      ],
+      "type": "major_port_city",
+      "relativeScale": "one_of_largest_human_cities_in_norgard",
+      "walls": null,
+      "functions": [
+        "principal_puerto_comercial",
+        "aduanas",
+        "gremios",
+        "almacenes",
+        "talleres",
+        "servicios_a_mercaderes_y_marineros"
+      ],
+      "architecture": {
+        "materials": [
+          "piedra",
+          "madera"
+        ],
+        "roofing": "teja",
+        "streetSurface": "empedrado",
+        "typicalFloors": "2",
+        "someThreeFloorBuildings": true,
+        "groundFloorWorkshopOrShopCommon": true
+      },
+      "urbanGrowth": "organico_por_comercio",
+      "wealthyDistricts": [
+        "alejados_de_muells",
+        "calles_mas_amplias",
+        "villas",
+        "mejores_materiales"
+      ],
+      "geography": {
+        "coast": true,
+        "largePort": true,
+        "riverBehindCity": true,
+        "mountainsInland": true,
+        "nearbyForest": true,
+        "largeForestedIslandOffshore": true
+      },
+      "referenceAssets": [
+        {
+          "id": "veldora_v0.1_reference_001",
+          "status": "approved",
+          "promptTrace": "VELDORA_v0.1_REFERENCE_001_PROMPT.md"
+        }
+      ],
+      "promptNotes": [
+        "Riqueza por comercio y calidad, no por ostentacion palaciega.",
+        "La isla boscosa frente a la ciudad es un rasgo geografico importante.",
+        "No mostrar estandartes ambientales ni heráldica inventada."
+      ],
+      "heraldryPolicy": {
+        "ambientBannersAllowed": false,
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
+      }
+    },
+    {
+      "id": "treihord",
+      "name": "Treihord",
+      "regionIds": [
+        "west_norgard"
+      ],
+      "type": "rich_inland_city",
+      "functions": [
+        "mineria_de_oro_y_plata",
+        "fundicion",
+        "refinado",
+        "orfebreria",
+        "plateria",
+        "joyeria",
+        "comercio"
+      ],
+      "crownSecurityPresence": "proteccion_del_flujo_de_metales_preciosos",
+      "architecture": {
+        "materials": [
+          "piedra",
+          "madera"
+        ],
+        "roofing": "teja",
+        "typicalFloors": "2",
+        "craftsmanshipQuality": "alta"
+      },
+      "wealthExpression": [
+        "mantenimiento",
+        "piedra_bien_cuidada",
+        "tejados_en_buen_estado",
+        "mobiliario_urbano_solido"
+      ],
+      "urbanOrder": "mas_ordenada_que_veldora",
+      "majorSquareAndFair": true,
+      "heraldryPolicy": {
+        "ambientBannersAllowed": false,
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
+      },
+      "promptNotes": [
+        "No mostrar estandartes ambientales ni heráldica inventada."
+      ]
+    },
+    {
+      "id": "taramin",
+      "name": "Taramin",
+      "regionIds": [
+        "southwest_coast_norgard"
+      ],
+      "type": "medium_coastal_river_city",
+      "relativeScale": "medium",
+      "functions": [
+        "pesca_maritima",
+        "pesca_fluvial",
+        "productos_marinos",
+        "aceite_de_ballena"
+      ],
+      "geography": [
+        "costa",
+        "dos_ramas_de_rio",
+        "acceso_a_peninsula_o_lengua_de_tierra"
+      ],
+      "visualCharacter": [
+        "funcional",
+        "pesquero",
+        "no_monumental"
+      ],
+      "heraldryPolicy": {
+        "ambientBannersAllowed": false,
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
+      },
+      "promptNotes": [
+        "No mostrar estandartes ambientales ni heráldica inventada."
+      ]
+    },
+    {
+      "id": "syvaris",
+      "name": "Syvaris",
+      "regionIds": [
+        "syvaris_island"
+      ],
+      "type": "small_island_city",
+      "relativeScale": "smaller_than_taramin",
+      "functions": [
+        "pesca",
+        "autosuficiencia",
+        "comercio",
+        "productos_marinos",
+        "puerto_seguro",
+        "presencia_naval"
+      ],
+      "architecture": {
+        "materials": [
+          "piedra",
+          "madera"
+        ],
+        "buildingHeight": "bajo",
+        "colors": "algo_mas_claros",
+        "whitewash": "parcial_no_total"
+      },
+      "geography": [
+        "isla",
+        "aguas_resguardadas",
+        "sur_verde_y_humedo",
+        "centro_y_norte_mas_aridos"
+      ],
+      "heraldryPolicy": {
+        "ambientBannersAllowed": false,
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
+      },
+      "promptNotes": [
+        "No mostrar estandartes ambientales ni heráldica inventada."
+      ]
+    },
+    {
+      "id": "arleon",
+      "name": "Arleon",
+      "regionIds": [
+        "east_norgard"
+      ],
+      "type": "regional_administrative_logistics_city",
+      "relativeScale": "larger_than_treskal_and_taramin_smaller_than_veldora_and_treihord",
+      "walls": false,
+      "functions": [
+        "administracion_del_granero_del_este",
+        "logistica",
+        "mercados",
+        "redistribucion",
+        "almacenamiento"
+      ],
+      "architecture": {
+        "materials": [
+          "piedra",
+          "madera"
+        ],
+        "roofing": "pizarra",
+        "urbanOrder": "alto_por_exigencias_logisticas"
+      },
+      "keyStructures": [
+        "graneros",
+        "almacenes",
+        "establos",
+        "corrales",
+        "mercados"
+      ],
+      "water": {
+        "manyRiversAndBridges": true,
+        "generallyNavigable": false
+      },
+      "referenceAssets": [
+        {
+          "id": "arleon_v0.1_reference_001",
+          "status": "approved_with_observations",
+          "promptTrace": "ARLEON_v0.1_REFERENCE_001_PROMPT.md",
+          "knownIssues": [
+            "escala_urbana_insuficiente",
+            "peso_administrativo_insuficiente"
+          ]
+        }
+      ],
+      "promptNotes": [
+        "No tratar como ciudad campesina.",
+        "Debe sentirse como centro administrativo y logistico del este.",
+        "No mostrar estandartes ambientales ni heráldica inventada."
+      ],
+      "heraldryPolicy": {
+        "ambientBannersAllowed": false,
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
+      }
+    },
+    {
+      "id": "treskal",
+      "name": "Treskal",
+      "regionIds": [
+        "east_norgard"
+      ],
+      "type": "artisan_city",
+      "walls": false,
+      "functions": [
+        "carpinteria",
+        "ebanisteria",
+        "mobiliario",
+        "talla",
+        "artesania",
+        "comercio_de_madera_trabajada"
+      ],
+      "architecture": {
+        "materials": [
+          "piedra",
+          "madera"
+        ],
+        "roofing": "pizarra",
+        "woodCraftsmanship": "excepcional",
+        "decorativeWoodDetails": "muy_comunes_pero_funcionales"
+      },
+      "identity": [
+        "mejores_artesanos_humanos_de_la_madera",
+        "lugar_de_nacimiento_de_kazan_rise"
+      ],
+      "geography": [
+        "costa",
+        "rio",
+        "bosques_extensos",
+        "relieve_suave_o_abierto"
+      ],
+      "forbid": [
+        "cordilleras_dramaticas_en_el_entorno_inmediato"
+      ],
+      "referenceAssets": [
+        {
+          "id": "treskal_v0.1_reference_001",
+          "status": "approved_with_observations",
+          "promptTrace": "TRESKAL_v0.1_REFERENCE_001_PROMPT.md",
+          "knownIssues": [
+            "exceso_de_montanas"
+          ]
+        }
+      ],
+      "heraldryPolicy": {
+        "ambientBannersAllowed": false,
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
+      },
+      "promptNotes": [
+        "No mostrar estandartes ambientales ni heráldica inventada."
+      ]
+    },
+    {
+      "id": "zanthir",
+      "name": "Zanthir",
+      "regionIds": [
+        "far_north_norgard"
+      ],
+      "type": "northern_mining_metallurgy_city",
+      "relativeScale": "modest_population_due_to_harsh_climate",
+      "functions": [
+        "mineria",
+        "metalurgia",
+        "pesca",
+        "caza_de_ballenas",
+        "aceite_de_ballena"
+      ],
+      "resources": [
+        "hierro",
+        "cobre",
+        "estano",
+        "carbon",
+        "metal_estelar"
+      ],
+      "architecture": {
+        "materials": [
+          "piedra",
+          "madera"
+        ],
+        "roofing": "pizarra_muy_inclinada",
+        "buildingHeight": "1-2_plantas",
+        "buildingForm": "ancho_y_bajo",
+        "windows": "pequenas"
+      },
+      "dwarvenLegacy": {
+        "surfaceCity": "mayoritariamente_destruida_absorbida_o_enterrada",
+        "visibleRemnantsAllowed": true,
+        "starForgePreserved": true
+      },
+      "starForge": {
+        "includedInGeneralCityReference": false,
+        "requiresSpecificProfileLater": true,
+        "location": "subterranea_bajo_zanthir_no_dentro_de_montana",
+        "coreTraits": [
+          "colosal",
+          "funcional",
+          "peligrosa",
+          "monumental",
+          "no_steampunk"
+        ],
+        "furnaceCount": 5,
+        "normallyActive": false
+      },
+      "referenceAssets": [
+        {
+          "id": "zanthir_v0.1_reference_001",
+          "status": "approved",
+          "promptTrace": "ZANTHIR_v0.1_REFERENCE_001_PROMPT.md"
+        }
+      ],
+      "promptNotes": [
+        "El frio es la norma.",
+        "No convertir la ciudad en steampunk.",
+        "No mostrar automaticamente la Forja Estelar.",
+        "No mostrar estandartes ambientales ni heráldica inventada."
+      ],
+      "heraldryPolicy": {
+        "ambientBannersAllowed": false,
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
+      }
+    },
+    {
+      "id": "dorth",
+      "name": "Dorth",
+      "regionIds": [
+        "central_norgard",
+        "wine_belt_norgard"
+      ],
+      "type": "wine_city",
+      "functions": [
+        "recepcion_de_uva",
+        "prensado",
+        "elaboracion",
+        "almacenamiento",
+        "distribucion",
+        "comercio"
+      ],
+      "wineSpecialization": "tintos",
+      "architecture": {
+        "materials": [
+          "piedra",
+          "madera"
+        ],
+        "roofing": "teja",
+        "buildingHeight": "relativamente_bajo"
+      },
+      "visualFeatures": [
+        "bodegas",
+        "almacenes",
+        "toneles",
+        "carros",
+        "casas_comerciales",
+        "tabernas_especializadas",
+        "tiendas"
+      ],
+      "surroundings": [
+        "vinedos_inmediatos"
+      ],
+      "urbanMaintenance": "bueno_por_exigencias_logisticas",
+      "heraldryPolicy": {
+        "ambientBannersAllowed": false,
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
+      },
+      "promptNotes": [
+        "No mostrar estandartes ambientales ni heráldica inventada."
+      ]
+    },
+    {
+      "id": "lumina",
+      "name": "Lumina",
+      "regionIds": [
+        "central_norgard",
+        "wine_belt_norgard"
+      ],
+      "type": "small_highland_wine_city",
+      "wineSpecialization": "blancos",
+      "character": [
+        "artesanal",
+        "tranquila",
+        "atractiva",
+        "menos_industrial_que_dorth"
+      ],
+      "landscape": [
+        "meseta_o_terreno_elevado",
+        "vinedos_en_altura"
+      ],
+      "productionScale": "contenida",
+      "heraldryPolicy": {
+        "ambientBannersAllowed": false,
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
+      },
+      "promptNotes": [
+        "No mostrar estandartes ambientales ni heráldica inventada."
+      ]
+    },
+    {
+      "id": "karsath",
+      "name": "Karsath",
+      "regionIds": [
+        "central_norgard",
+        "wine_belt_norgard"
+      ],
+      "type": "small_lakeside_wine_city",
+      "wineSpecialization": "produccion_muy_pequena_y_exclusiva",
+      "landscape": [
+        "gran_lago",
+        "llanura_abierta",
+        "vegetacion_relativamente_escasa",
+        "entorno_seco_o_semiarido"
+      ],
+      "architecture": {
+        "materials": [
+          "piedra",
+          "madera"
+        ],
+        "roofing": "teja"
+      },
+      "prestigeSource": [
+        "rareza",
+        "baja_produccion",
+        "vinedos_lacustres"
+      ],
+      "heraldryPolicy": {
+        "ambientBannersAllowed": false,
+        "inventedHeraldryAllowed": false,
+        "functionalHeraldryAllowed": true,
+        "authorizedFunctionalAssetIds": [
+          "aethros_military_shield_v0.1",
+          "aethros_royal_seal_v0.1",
+          "aethros_heraldic_emblem_v0.1"
+        ],
+        "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
+      },
+      "promptNotes": [
+        "No mostrar estandartes ambientales ni heráldica inventada."
+      ]
+    }
+  ],
+  "workflowAddenda": [
+    "VISUAL_REFERENCE_WORKFLOW_v0.1_ADDENDUM_002_NORGARD_BANNERS.md"
+  ],
+  "heraldryDefaults": {
+    "ambientBannersAllowed": false,
+    "functionalHeraldryAllowed": true,
+    "policySource": "norgard_visual_profile_v0.2.json",
+    "hallheimIsOnlyAmbientBannerException": true
+  }
+}
