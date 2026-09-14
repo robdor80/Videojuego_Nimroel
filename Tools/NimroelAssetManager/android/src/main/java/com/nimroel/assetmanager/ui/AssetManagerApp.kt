@@ -19,6 +19,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ElevatedCard
@@ -47,6 +48,7 @@ import androidx.compose.ui.unit.dp
 import com.nimroel.assetmanager.domain.contracts.PresetValueMode
 import com.nimroel.assetmanager.domain.model.AssetType
 import com.nimroel.assetmanager.domain.model.Content
+import com.nimroel.assetmanager.domain.model.OriginKind
 import com.nimroel.assetmanager.domain.production.DraftSelectionSource
 import com.nimroel.assetmanager.ui.theme.NimroelAssetManagerTheme
 
@@ -59,6 +61,15 @@ fun AssetManagerApp(
     onSelectImage: () -> Unit = {},
     onRemoveImage: () -> Unit = {},
     onPrepareLocalIngest: () -> Unit = {},
+    onSelectProvenanceKind: (OriginKind) -> Unit = {},
+    onGeneratedProviderChange: (String) -> Unit = {},
+    onGeneratedModelChange: (String) -> Unit = {},
+    onGeneratedAtChange: (String) -> Unit = {},
+    onUseCurrentGeneratedAt: () -> Unit = {},
+    onImportedAtChange: (String) -> Unit = {},
+    onUseCurrentImportedAt: () -> Unit = {},
+    onSourceAssetIdsChange: (String) -> Unit = {},
+    onUnknownConfirmedChange: (Boolean) -> Unit = {},
 ) {
     Scaffold(
         topBar = {
@@ -76,6 +87,15 @@ fun AssetManagerApp(
                 onSelectImage = onSelectImage,
                 onRemoveImage = onRemoveImage,
                 onPrepareLocalIngest = onPrepareLocalIngest,
+                onSelectProvenanceKind = onSelectProvenanceKind,
+                onGeneratedProviderChange = onGeneratedProviderChange,
+                onGeneratedModelChange = onGeneratedModelChange,
+                onGeneratedAtChange = onGeneratedAtChange,
+                onUseCurrentGeneratedAt = onUseCurrentGeneratedAt,
+                onImportedAtChange = onImportedAtChange,
+                onUseCurrentImportedAt = onUseCurrentImportedAt,
+                onSourceAssetIdsChange = onSourceAssetIdsChange,
+                onUnknownConfirmedChange = onUnknownConfirmedChange,
             )
         }
     }
@@ -127,6 +147,15 @@ private fun ReadyContent(
     onSelectImage: () -> Unit,
     onRemoveImage: () -> Unit,
     onPrepareLocalIngest: () -> Unit,
+    onSelectProvenanceKind: (OriginKind) -> Unit,
+    onGeneratedProviderChange: (String) -> Unit,
+    onGeneratedModelChange: (String) -> Unit,
+    onGeneratedAtChange: (String) -> Unit,
+    onUseCurrentGeneratedAt: () -> Unit,
+    onImportedAtChange: (String) -> Unit,
+    onUseCurrentImportedAt: () -> Unit,
+    onSourceAssetIdsChange: (String) -> Unit,
+    onUnknownConfirmedChange: (Boolean) -> Unit,
 ) {
     BoxWithConstraints(modifier = Modifier.fillMaxSize().padding(contentPadding)) {
         if (maxWidth >= 840.dp) {
@@ -145,6 +174,15 @@ private fun ReadyContent(
                     onSelectImage = onSelectImage,
                     onRemoveImage = onRemoveImage,
                     onPrepareLocalIngest = onPrepareLocalIngest,
+                    onSelectProvenanceKind = onSelectProvenanceKind,
+                    onGeneratedProviderChange = onGeneratedProviderChange,
+                    onGeneratedModelChange = onGeneratedModelChange,
+                    onGeneratedAtChange = onGeneratedAtChange,
+                    onUseCurrentGeneratedAt = onUseCurrentGeneratedAt,
+                    onImportedAtChange = onImportedAtChange,
+                    onUseCurrentImportedAt = onUseCurrentImportedAt,
+                    onSourceAssetIdsChange = onSourceAssetIdsChange,
+                    onUnknownConfirmedChange = onUnknownConfirmedChange,
                     modifier = Modifier.weight(1f).fillMaxHeight().verticalScroll(rememberScrollState()),
                 )
             }
@@ -154,7 +192,21 @@ private fun ReadyContent(
                 verticalArrangement = Arrangement.spacedBy(20.dp),
             ) {
                 ProductionEditor(state, onSelectValue, onClearSelection)
-                DraftSummary(state, onSelectImage, onRemoveImage, onPrepareLocalIngest)
+                DraftSummary(
+                    state,
+                    onSelectImage,
+                    onRemoveImage,
+                    onPrepareLocalIngest,
+                    onSelectProvenanceKind,
+                    onGeneratedProviderChange,
+                    onGeneratedModelChange,
+                    onGeneratedAtChange,
+                    onUseCurrentGeneratedAt,
+                    onImportedAtChange,
+                    onUseCurrentImportedAt,
+                    onSourceAssetIdsChange,
+                    onUnknownConfirmedChange,
+                )
             }
         }
     }
@@ -328,6 +380,15 @@ private fun DraftSummary(
     onSelectImage: () -> Unit,
     onRemoveImage: () -> Unit,
     onPrepareLocalIngest: () -> Unit,
+    onSelectProvenanceKind: (OriginKind) -> Unit,
+    onGeneratedProviderChange: (String) -> Unit,
+    onGeneratedModelChange: (String) -> Unit,
+    onGeneratedAtChange: (String) -> Unit,
+    onUseCurrentGeneratedAt: () -> Unit,
+    onImportedAtChange: (String) -> Unit,
+    onUseCurrentImportedAt: () -> Unit,
+    onSourceAssetIdsChange: (String) -> Unit,
+    onUnknownConfirmedChange: (Boolean) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Column(modifier = modifier, verticalArrangement = Arrangement.spacedBy(16.dp)) {
@@ -376,15 +437,175 @@ private fun DraftSummary(
                 state.localIngestState is LocalIngestUiState.Ready,
         )
         LocalIngestCard(state.imageState, state.localIngestState, onPrepareLocalIngest)
-        Button(onClick = {}, enabled = false, modifier = Modifier.fillMaxWidth()) {
+        if (state.provenanceState !is ProvenanceUiState.Unavailable) {
+            ProvenanceCard(
+                state = state.provenanceState,
+                onSelectKind = onSelectProvenanceKind,
+                onProviderChange = onGeneratedProviderChange,
+                onModelChange = onGeneratedModelChange,
+                onGeneratedAtChange = onGeneratedAtChange,
+                onUseCurrentGeneratedAt = onUseCurrentGeneratedAt,
+                onImportedAtChange = onImportedAtChange,
+                onUseCurrentImportedAt = onUseCurrentImportedAt,
+                onSourceAssetIdsChange = onSourceAssetIdsChange,
+                onUnknownConfirmedChange = onUnknownConfirmedChange,
+            )
+        }
+        Button(onClick = {}, enabled = state.isAssetCreationEnabled, modifier = Modifier.fillMaxWidth()) {
             Text("Crear borrador de Asset")
         }
         Text(
-            "Aún faltan la procedencia y el binario canónico/finalización antes de crear el Asset.",
+            state.assetCreationExplanation,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             style = MaterialTheme.typography.bodySmall,
         )
     }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun ProvenanceCard(
+    state: ProvenanceUiState,
+    onSelectKind: (OriginKind) -> Unit,
+    onProviderChange: (String) -> Unit,
+    onModelChange: (String) -> Unit,
+    onGeneratedAtChange: (String) -> Unit,
+    onUseCurrentGeneratedAt: () -> Unit,
+    onImportedAtChange: (String) -> Unit,
+    onUseCurrentImportedAt: () -> Unit,
+    onSourceAssetIdsChange: (String) -> Unit,
+    onUnknownConfirmedChange: (Boolean) -> Unit,
+) {
+    val form = when (state) {
+        is ProvenanceUiState.Invalid -> state.form
+        is ProvenanceUiState.Valid -> state.form
+        ProvenanceUiState.NotSpecified, ProvenanceUiState.Unavailable -> null
+    }
+    ElevatedCard(modifier = Modifier.fillMaxWidth()) {
+        Column(modifier = Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                Text("Procedencia", modifier = Modifier.weight(1f), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+                Surface(color = MaterialTheme.colorScheme.surfaceVariant, shape = MaterialTheme.shapes.small) {
+                    Text(
+                        when (state) {
+                            ProvenanceUiState.NotSpecified -> "Sin especificar"
+                            is ProvenanceUiState.Invalid -> "Revisar"
+                            is ProvenanceUiState.Valid -> "Válida"
+                            ProvenanceUiState.Unavailable -> "No disponible"
+                        },
+                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp),
+                        style = MaterialTheme.typography.labelMedium,
+                    )
+                }
+            }
+            Text(
+                "Declara el origen real. La forma de seleccionar la imagen no determina su procedencia.",
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                style = MaterialTheme.typography.bodySmall,
+            )
+            var expanded by remember { mutableStateOf(false) }
+            ExposedDropdownMenuBox(expanded = expanded, onExpandedChange = { expanded = !expanded }) {
+                OutlinedTextField(
+                    value = form?.originKind?.displayLabel() ?: "Sin especificar",
+                    onValueChange = {},
+                    modifier = Modifier.menuAnchor().fillMaxWidth(),
+                    readOnly = true,
+                    label = { Text("Tipo de procedencia") },
+                    trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded) },
+                )
+                ExposedDropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
+                    OriginKind.entries.forEach { kind ->
+                        DropdownMenuItem(
+                            text = { Text(kind.displayLabel()) },
+                            onClick = {
+                                expanded = false
+                                onSelectKind(kind)
+                            },
+                        )
+                    }
+                }
+            }
+
+            when (form?.originKind) {
+                OriginKind.GENERATED -> {
+                    OutlinedTextField(
+                        value = form.provider,
+                        onValueChange = onProviderChange,
+                        modifier = Modifier.fillMaxWidth(),
+                        label = { Text("Proveedor *") },
+                        supportingText = { Text("ID contractual, por ejemplo el proveedor realmente utilizado") },
+                        singleLine = true,
+                    )
+                    OutlinedTextField(
+                        value = form.model,
+                        onValueChange = onModelChange,
+                        modifier = Modifier.fillMaxWidth(),
+                        label = { Text("Modelo") },
+                        singleLine = true,
+                    )
+                    InstantField(
+                        value = form.generatedAt,
+                        label = "Fecha/hora de generación *",
+                        onValueChange = onGeneratedAtChange,
+                        onUseCurrent = onUseCurrentGeneratedAt,
+                    )
+                }
+                OriginKind.IMPORTED -> InstantField(
+                    value = form.importedAt,
+                    label = "Fecha/hora de importación",
+                    onValueChange = onImportedAtChange,
+                    onUseCurrent = onUseCurrentImportedAt,
+                )
+                OriginKind.EDITED, OriginKind.DERIVED -> OutlinedTextField(
+                    value = form.sourceAssetIds,
+                    onValueChange = onSourceAssetIdsChange,
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text("Assets de origen *") },
+                    supportingText = { Text("Un AssetId ast_… por línea") },
+                    minLines = 2,
+                )
+                OriginKind.UNKNOWN -> Row(verticalAlignment = Alignment.CenterVertically) {
+                    Checkbox(checked = form.unknownConfirmed, onCheckedChange = onUnknownConfirmedChange)
+                    Text("Confirmo que la procedencia real es desconocida", modifier = Modifier.weight(1f))
+                }
+                null -> Unit
+            }
+
+            if (state is ProvenanceUiState.Invalid) {
+                state.errors.forEach { error ->
+                    Text(error, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall)
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun InstantField(
+    value: String,
+    label: String,
+    onValueChange: (String) -> Unit,
+    onUseCurrent: () -> Unit,
+) {
+    OutlinedTextField(
+        value = value,
+        onValueChange = onValueChange,
+        modifier = Modifier.fillMaxWidth(),
+        label = { Text(label) },
+        supportingText = { Text("ISO-8601, por ejemplo 2026-09-14T10:00:00Z") },
+        singleLine = true,
+    )
+    TextButton(onClick = onUseCurrent, modifier = Modifier.fillMaxWidth()) {
+        Text("Usar fecha y hora actual")
+    }
+}
+
+private fun OriginKind.displayLabel(): String = when (this) {
+    OriginKind.GENERATED -> "Generada"
+    OriginKind.IMPORTED -> "Importada"
+    OriginKind.EDITED -> "Editada"
+    OriginKind.DERIVED -> "Derivada"
+    OriginKind.UNKNOWN -> "Desconocida"
 }
 
 @Composable
@@ -633,6 +854,18 @@ private val previewState = AssetManagerUiState.Ready(
             ),
         ),
     ),
+    localIngestState = LocalIngestUiState.Ready(
+        reservedAssetId = "ast_01991d80-1000-7000-8000-000000000001",
+        status = "ready_to_commit",
+        content = Content(
+            mimeType = "image/png",
+            widthPx = 2048,
+            heightPx = 2048,
+            byteSize = 4_194_304,
+            sha256 = "a".repeat(64),
+        ),
+    ),
+    provenanceState = ProvenanceUiState.NotSpecified,
 )
 
 @Preview(name = "Nueva producción · móvil", widthDp = 412, heightDp = 915, showBackground = true)

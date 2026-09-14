@@ -31,6 +31,15 @@ class MainActivity : ComponentActivity() {
                     onSelectImage = { imagePicker.launch("image/*") },
                     onRemoveImage = viewModel::removeImage,
                     onPrepareLocalIngest = viewModel::prepareLocalIngest,
+                    onSelectProvenanceKind = viewModel::selectProvenanceKind,
+                    onGeneratedProviderChange = viewModel::setGeneratedProvider,
+                    onGeneratedModelChange = viewModel::setGeneratedModel,
+                    onGeneratedAtChange = viewModel::setGeneratedAt,
+                    onUseCurrentGeneratedAt = viewModel::useCurrentGeneratedAt,
+                    onImportedAtChange = viewModel::setImportedAt,
+                    onUseCurrentImportedAt = viewModel::useCurrentImportedAt,
+                    onSourceAssetIdsChange = viewModel::setSourceAssetIds,
+                    onUnknownConfirmedChange = viewModel::setUnknownConfirmed,
                 )
             }
         }
