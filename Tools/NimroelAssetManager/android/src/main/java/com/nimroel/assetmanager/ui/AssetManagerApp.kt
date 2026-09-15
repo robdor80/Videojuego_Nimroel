@@ -1,5 +1,7 @@
 package com.nimroel.assetmanager.ui
 
+import android.graphics.Bitmap
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -11,6 +13,7 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
@@ -26,6 +29,7 @@ import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
@@ -36,31 +40,49 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.window.Dialog
 import com.nimroel.assetmanager.domain.contracts.PresetValueMode
+import com.nimroel.assetmanager.data.image.ImageLabPreviewLoadResult
+import com.nimroel.assetmanager.data.image.ImageLabPreviewLoader
 import com.nimroel.assetmanager.domain.model.AssetType
 import com.nimroel.assetmanager.domain.model.Content
 import com.nimroel.assetmanager.domain.model.OriginKind
 import com.nimroel.assetmanager.domain.production.DraftSelectionSource
+import com.nimroel.assetmanager.domain.processing.ImageLabArtifactRef
+import com.nimroel.assetmanager.domain.processing.ImageLabExifStatus
 import com.nimroel.assetmanager.ui.theme.NimroelAssetManagerTheme
+import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AssetManagerApp(
     uiState: AssetManagerUiState,
+    imageLabPreviewLoader: ImageLabPreviewLoader? = null,
     onSelectValue: (fieldPath: String, valueId: String) -> Unit = { _, _ -> },
     onClearSelection: (fieldPath: String) -> Unit = {},
     onSelectImage: () -> Unit = {},
     onRemoveImage: () -> Unit = {},
     onPrepareLocalIngest: () -> Unit = {},
+    onDiscardLocalIngest: () -> Unit = {},
+    onSelectImageLabTarget: (Int) -> Unit = {},
+    onSelectImageLabQuality: (Int) -> Unit = {},
+    onGenerateImageLabCandidate: () -> Unit = {},
+    onClearImageLabResults: () -> Unit = {},
     onSelectProvenanceKind: (OriginKind) -> Unit = {},
     onGeneratedProviderChange: (String) -> Unit = {},
     onGeneratedModelChange: (String) -> Unit = {},
@@ -81,12 +103,18 @@ fun AssetManagerApp(
             is AssetManagerUiState.Error -> ErrorContent(uiState.message, contentPadding)
             is AssetManagerUiState.Ready -> ReadyContent(
                 state = uiState,
+                imageLabPreviewLoader = imageLabPreviewLoader,
                 contentPadding = contentPadding,
                 onSelectValue = onSelectValue,
                 onClearSelection = onClearSelection,
                 onSelectImage = onSelectImage,
                 onRemoveImage = onRemoveImage,
                 onPrepareLocalIngest = onPrepareLocalIngest,
+                onDiscardLocalIngest = onDiscardLocalIngest,
+                onSelectImageLabTarget = onSelectImageLabTarget,
+                onSelectImageLabQuality = onSelectImageLabQuality,
+                onGenerateImageLabCandidate = onGenerateImageLabCandidate,
+                onClearImageLabResults = onClearImageLabResults,
                 onSelectProvenanceKind = onSelectProvenanceKind,
                 onGeneratedProviderChange = onGeneratedProviderChange,
                 onGeneratedModelChange = onGeneratedModelChange,
@@ -141,12 +169,18 @@ private fun ErrorContent(message: String, contentPadding: PaddingValues) {
 @Composable
 private fun ReadyContent(
     state: AssetManagerUiState.Ready,
+    imageLabPreviewLoader: ImageLabPreviewLoader?,
     contentPadding: PaddingValues,
     onSelectValue: (String, String) -> Unit,
     onClearSelection: (String) -> Unit,
     onSelectImage: () -> Unit,
     onRemoveImage: () -> Unit,
     onPrepareLocalIngest: () -> Unit,
+    onDiscardLocalIngest: () -> Unit,
+    onSelectImageLabTarget: (Int) -> Unit,
+    onSelectImageLabQuality: (Int) -> Unit,
+    onGenerateImageLabCandidate: () -> Unit,
+    onClearImageLabResults: () -> Unit,
     onSelectProvenanceKind: (OriginKind) -> Unit,
     onGeneratedProviderChange: (String) -> Unit,
     onGeneratedModelChange: (String) -> Unit,
@@ -171,9 +205,15 @@ private fun ReadyContent(
                 )
                 DraftSummary(
                     state = state,
+                    imageLabPreviewLoader = imageLabPreviewLoader,
                     onSelectImage = onSelectImage,
                     onRemoveImage = onRemoveImage,
                     onPrepareLocalIngest = onPrepareLocalIngest,
+                    onDiscardLocalIngest = onDiscardLocalIngest,
+                    onSelectImageLabTarget = onSelectImageLabTarget,
+                    onSelectImageLabQuality = onSelectImageLabQuality,
+                    onGenerateImageLabCandidate = onGenerateImageLabCandidate,
+                    onClearImageLabResults = onClearImageLabResults,
                     onSelectProvenanceKind = onSelectProvenanceKind,
                     onGeneratedProviderChange = onGeneratedProviderChange,
                     onGeneratedModelChange = onGeneratedModelChange,
@@ -194,9 +234,15 @@ private fun ReadyContent(
                 ProductionEditor(state, onSelectValue, onClearSelection)
                 DraftSummary(
                     state,
+                    imageLabPreviewLoader,
                     onSelectImage,
                     onRemoveImage,
                     onPrepareLocalIngest,
+                    onDiscardLocalIngest,
+                    onSelectImageLabTarget,
+                    onSelectImageLabQuality,
+                    onGenerateImageLabCandidate,
+                    onClearImageLabResults,
                     onSelectProvenanceKind,
                     onGeneratedProviderChange,
                     onGeneratedModelChange,
@@ -377,9 +423,15 @@ private fun FieldStatus(field: ProductionFieldUiState) {
 @Composable
 private fun DraftSummary(
     state: AssetManagerUiState.Ready,
+    imageLabPreviewLoader: ImageLabPreviewLoader?,
     onSelectImage: () -> Unit,
     onRemoveImage: () -> Unit,
     onPrepareLocalIngest: () -> Unit,
+    onDiscardLocalIngest: () -> Unit,
+    onSelectImageLabTarget: (Int) -> Unit,
+    onSelectImageLabQuality: (Int) -> Unit,
+    onGenerateImageLabCandidate: () -> Unit,
+    onClearImageLabResults: () -> Unit,
     onSelectProvenanceKind: (OriginKind) -> Unit,
     onGeneratedProviderChange: (String) -> Unit,
     onGeneratedModelChange: (String) -> Unit,
@@ -434,9 +486,25 @@ private fun DraftSummary(
             onSelectImage = onSelectImage,
             onRemoveImage = onRemoveImage,
             imageLocked = state.localIngestState is LocalIngestUiState.Processing ||
+                state.localIngestState is LocalIngestUiState.Discarding ||
                 state.localIngestState is LocalIngestUiState.Ready,
         )
-        LocalIngestCard(state.imageState, state.localIngestState, onPrepareLocalIngest)
+        LocalIngestCard(
+            imageState = state.imageState,
+            state = state.localIngestState,
+            onPrepareLocalIngest = onPrepareLocalIngest,
+            onDiscard = onDiscardLocalIngest,
+        )
+        if (state.imageLabState !is ImageLabUiState.Unavailable) {
+            ImageLabCard(
+                state = state.imageLabState,
+                previewLoader = imageLabPreviewLoader,
+                onSelectTarget = onSelectImageLabTarget,
+                onSelectQuality = onSelectImageLabQuality,
+                onGenerate = onGenerateImageLabCandidate,
+                onClear = onClearImageLabResults,
+            )
+        }
         if (state.provenanceState !is ProvenanceUiState.Unavailable) {
             ProvenanceCard(
                 state = state.provenanceState,
@@ -460,6 +528,260 @@ private fun DraftSummary(
             style = MaterialTheme.typography.bodySmall,
         )
     }
+}
+
+@Composable
+private fun ImageLabCard(
+    state: ImageLabUiState,
+    previewLoader: ImageLabPreviewLoader?,
+    onSelectTarget: (Int) -> Unit,
+    onSelectQuality: (Int) -> Unit,
+    onGenerate: () -> Unit,
+    onClear: () -> Unit,
+) {
+    val session = when (state) {
+        ImageLabUiState.Unavailable -> return
+        is ImageLabUiState.Idle -> state.session
+        is ImageLabUiState.Processing -> state.session
+        is ImageLabUiState.Results -> state.session
+        is ImageLabUiState.Error -> state.session
+    }
+    val processing = state is ImageLabUiState.Processing
+    var previewResult by remember { mutableStateOf<ImageLabResultUiState?>(null) }
+    LaunchedEffect(session.results) {
+        if (session.results.none { it.artifactRef == previewResult?.artifactRef }) previewResult = null
+    }
+
+    ElevatedCard(modifier = Modifier.fillMaxWidth()) {
+        Column(modifier = Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            Text("Laboratorio WebP", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
+            Text(
+                "Experimento temporal: estos archivos no son Assets, canonical ni representaciones persistidas.",
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                style = MaterialTheme.typography.bodySmall,
+            )
+            MetadataRow("Original staged", "${session.sourceContent.widthPx} × ${session.sourceContent.heightPx} px")
+            MetadataRow("Tipo MIME", session.sourceContent.mimeType)
+            MetadataRow("Tamaño real", session.sourceContent.byteSize?.let(::formatByteSize) ?: "No disponible")
+            HorizontalDivider()
+            Text("Lado largo experimental", style = MaterialTheme.typography.labelLarge)
+            listOf(2048, 1536, 1280, 1024).chunked(2).forEach { rowTargets ->
+                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    rowTargets.forEach { target ->
+                        FilterChip(
+                            selected = session.selectedTargetLongEdge == target,
+                            onClick = { onSelectTarget(target) },
+                            enabled = !processing,
+                            label = { Text("$target px") },
+                            modifier = Modifier.weight(1f),
+                        )
+                    }
+                }
+            }
+            Text("Calidad WebP lossy", style = MaterialTheme.typography.labelLarge)
+            Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                listOf(90, 85, 80).forEach { quality ->
+                    FilterChip(
+                        selected = session.selectedQuality == quality,
+                        onClick = { onSelectQuality(quality) },
+                        enabled = !processing,
+                        label = { Text("Q$quality") },
+                        modifier = Modifier.weight(1f),
+                    )
+                }
+            }
+            Button(onClick = onGenerate, enabled = !processing, modifier = Modifier.fillMaxWidth()) {
+                Text(if (processing) "Procesando…" else "Generar prueba")
+            }
+            if (state is ImageLabUiState.Processing) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    CircularProgressIndicator(modifier = Modifier.width(24.dp).height(24.dp))
+                    Text(state.operation, modifier = Modifier.padding(start = 12.dp))
+                }
+            }
+            if (state is ImageLabUiState.Error) {
+                Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer)) {
+                    Text(
+                        state.message,
+                        modifier = Modifier.fillMaxWidth().padding(14.dp),
+                        color = MaterialTheme.colorScheme.onErrorContainer,
+                    )
+                }
+            }
+            if (session.results.isNotEmpty()) {
+                HorizontalDivider()
+                Text("Resultados de esta sesión", style = MaterialTheme.typography.titleMedium)
+                session.results.sortedWith(
+                    compareByDescending<ImageLabResultUiState> { it.requestedTargetLongEdge }
+                        .thenByDescending { it.quality },
+                ).forEach { result ->
+                    ImageLabResultCard(result, previewLoader, onView = { previewResult = result })
+                }
+                TextButton(onClick = onClear, enabled = !processing, modifier = Modifier.fillMaxWidth()) {
+                    Text("Limpiar pruebas")
+                }
+            }
+        }
+    }
+
+    previewResult?.let { result ->
+        ImageLabPreviewDialog(result = result, previewLoader = previewLoader, onDismiss = { previewResult = null })
+    }
+}
+
+@Composable
+private fun ImageLabResultCard(
+    result: ImageLabResultUiState,
+    previewLoader: ImageLabPreviewLoader?,
+    onView: () -> Unit,
+) {
+    OutlinedCard(modifier = Modifier.fillMaxWidth()) {
+        Column(modifier = Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text(
+                "${result.requestedTargetLongEdge} px / Q${result.quality}",
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+            )
+            LabPreviewImage(
+                artifactRef = result.artifactRef,
+                previewLoader = previewLoader,
+                maxLongEdge = 320,
+                modifier = Modifier.fillMaxWidth().height(180.dp),
+            )
+            MetadataRow("Dimensiones", "${result.widthPx} × ${result.heightPx} px")
+            MetadataRow("Tamaño real", formatByteSize(result.byteSize))
+            result.reductionBytes?.let { reductionBytes ->
+                MetadataRow("Variación", formatSignedByteSize(-reductionBytes))
+            }
+            result.reductionPercent?.let { reductionPercent ->
+                MetadataRow("Variación %", formatSignedPercent(-reductionPercent))
+            }
+            if (result.sourceHasAlphaCapability) {
+                Text(
+                    if (result.transparentPixelsObserved) {
+                        "Se observó transparencia en el raster muestreado y se verificó en el WebP. No define una política canónica de alpha."
+                    } else {
+                        "El decoder indicó capacidad alpha, sin píxeles transparentes observados en el raster muestreado."
+                    },
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    style = MaterialTheme.typography.bodySmall,
+                )
+            }
+            if (result.orientationApplied) {
+                Text(
+                    "Orientación EXIF aplicada físicamente al raster.",
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    style = MaterialTheme.typography.bodySmall,
+                )
+            }
+            if (result.exifStatus == ImageLabExifStatus.UNREADABLE) {
+                Text(
+                    "Los metadatos EXIF no pudieron interpretarse; se usó orientación normal de forma controlada.",
+                    color = MaterialTheme.colorScheme.error,
+                    style = MaterialTheme.typography.bodySmall,
+                )
+            }
+            Button(onClick = onView, modifier = Modifier.fillMaxWidth()) { Text("Ver") }
+        }
+    }
+}
+
+@Composable
+private fun ImageLabPreviewDialog(
+    result: ImageLabResultUiState,
+    previewLoader: ImageLabPreviewLoader?,
+    onDismiss: () -> Unit,
+) {
+    Dialog(onDismissRequest = onDismiss) {
+        Surface(shape = MaterialTheme.shapes.large, tonalElevation = 6.dp) {
+            Column(
+                modifier = Modifier.fillMaxWidth().padding(18.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
+            ) {
+                Text(
+                    "WebP ${result.requestedTargetLongEdge} px / Q${result.quality}",
+                    style = MaterialTheme.typography.titleLarge,
+                )
+                LabPreviewImage(
+                    artifactRef = result.artifactRef,
+                    previewLoader = previewLoader,
+                    maxLongEdge = 1600,
+                    modifier = Modifier.fillMaxWidth().heightIn(min = 240.dp, max = 620.dp),
+                )
+                Text(
+                    "${result.widthPx} × ${result.heightPx} px · ${formatByteSize(result.byteSize)}",
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                Button(onClick = onDismiss, modifier = Modifier.fillMaxWidth()) { Text("Cerrar") }
+            }
+        }
+    }
+}
+
+@Composable
+private fun LabPreviewImage(
+    artifactRef: ImageLabArtifactRef,
+    previewLoader: ImageLabPreviewLoader?,
+    maxLongEdge: Int,
+    modifier: Modifier = Modifier,
+) {
+    var previewState by remember(artifactRef, maxLongEdge) {
+        mutableStateOf<ImageLabPreviewUiState>(ImageLabPreviewUiState.Idle)
+    }
+    LaunchedEffect(artifactRef, maxLongEdge, previewLoader) {
+        previewState = ImageLabPreviewUiState.Loading
+        previewState = try {
+            when (val loaded = previewLoader?.let {
+                withContext(Dispatchers.IO) { it.load(artifactRef, maxLongEdge) }
+            }) {
+                is ImageLabPreviewLoadResult.Ready -> ImageLabPreviewUiState.Ready(loaded.bitmap)
+                ImageLabPreviewLoadResult.Unavailable -> ImageLabPreviewUiState.Unavailable
+                is ImageLabPreviewLoadResult.Error -> ImageLabPreviewUiState.Error(loaded.message)
+                null -> ImageLabPreviewUiState.Error("La preview interna no está disponible.")
+            }
+        } catch (error: CancellationException) {
+            throw error
+        } catch (_: OutOfMemoryError) {
+            ImageLabPreviewUiState.Error("Memoria insuficiente para mostrar la preview.")
+        } catch (error: Exception) {
+            ImageLabPreviewUiState.Error(error.message ?: "No se pudo cargar la preview temporal.")
+        }
+    }
+    DisposableEffect(previewState) {
+        val ownedBitmap = (previewState as? ImageLabPreviewUiState.Ready)?.bitmap
+        onDispose { ownedBitmap?.takeUnless(Bitmap::isRecycled)?.recycle() }
+    }
+    Box(modifier = modifier, contentAlignment = Alignment.Center) {
+        when (val current = previewState) {
+            ImageLabPreviewUiState.Idle,
+            ImageLabPreviewUiState.Loading,
+            -> CircularProgressIndicator()
+            is ImageLabPreviewUiState.Ready -> Image(
+                bitmap = current.bitmap.asImageBitmap(),
+                contentDescription = "Vista previa del candidato WebP",
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Fit,
+            )
+            ImageLabPreviewUiState.Unavailable -> Text(
+                "Preview no disponible: Android pudo limpiar la caché temporal.",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            is ImageLabPreviewUiState.Error -> Text(
+                current.message,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.error,
+            )
+        }
+    }
+}
+
+private sealed interface ImageLabPreviewUiState {
+    data object Idle : ImageLabPreviewUiState
+    data object Loading : ImageLabPreviewUiState
+    data class Ready(val bitmap: Bitmap) : ImageLabPreviewUiState
+    data object Unavailable : ImageLabPreviewUiState
+    data class Error(val message: String) : ImageLabPreviewUiState
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -689,6 +1011,7 @@ private fun LocalIngestCard(
     imageState: ImageUiState,
     state: LocalIngestUiState,
     onPrepareLocalIngest: () -> Unit,
+    onDiscard: () -> Unit,
 ) {
     val hasPreparedImage = imageState is ImageUiState.Prepared ||
         (imageState is ImageUiState.ImageError && imageState.previousPrepared != null)
@@ -713,7 +1036,22 @@ private fun LocalIngestCard(
             }
         }
 
+        LocalIngestUiState.Discarding -> ElevatedCard(modifier = Modifier.fillMaxWidth()) {
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(20.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                CircularProgressIndicator(modifier = Modifier.width(28.dp).height(28.dp))
+                Text(
+                    "Descartando ingestión local…",
+                    modifier = Modifier.padding(start = 14.dp),
+                    style = MaterialTheme.typography.titleMedium,
+                )
+            }
+        }
+
         is LocalIngestUiState.Ready -> ElevatedCard(modifier = Modifier.fillMaxWidth()) {
+            var showDiscardConfirmation by remember(state.reservedAssetId) { mutableStateOf(false) }
             Column(modifier = Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text("Ingestión local preparada", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
                 MetadataRow("AssetId reservado", state.reservedAssetId)
@@ -726,6 +1064,18 @@ private fun LocalIngestCard(
                     "Copia local privada verificada. Ya no depende del acceso posterior al URI externo.",
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     style = MaterialTheme.typography.bodySmall,
+                )
+                TextButton(onClick = { showDiscardConfirmation = true }, modifier = Modifier.fillMaxWidth()) {
+                    Text("Descartar ingestión")
+                }
+            }
+            if (showDiscardConfirmation) {
+                DiscardIngestConfirmation(
+                    onDismiss = { showDiscardConfirmation = false },
+                    onConfirm = {
+                        showDiscardConfirmation = false
+                        onDiscard()
+                    },
                 )
             }
         }
@@ -784,9 +1134,38 @@ private fun ImageActions(
 }
 
 private fun formatByteSize(bytes: Long): String = when {
-    bytes >= 1024L * 1024L -> "%.1f MB".format(bytes / (1024.0 * 1024.0))
-    bytes >= 1024L -> "%.1f KB".format(bytes / 1024.0)
+    bytes >= 1024L * 1024L -> "%.1f MiB".format(bytes / (1024.0 * 1024.0))
+    bytes >= 1024L -> "%.1f KiB".format(bytes / 1024.0)
     else -> "$bytes B"
+}
+
+@Composable
+private fun DiscardIngestConfirmation(onDismiss: () -> Unit, onConfirm: () -> Unit) {
+    Dialog(onDismissRequest = onDismiss) {
+        Surface(shape = MaterialTheme.shapes.large, tonalElevation = 6.dp) {
+            Column(modifier = Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
+                Text("¿Descartar ingestión local?", style = MaterialTheme.typography.titleLarge)
+                Text(
+                    "Se descartará esta ingestión local y su AssetId reservado. La imagen original de tu dispositivo no se eliminará.",
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    TextButton(onClick = onDismiss, modifier = Modifier.weight(1f)) { Text("Cancelar") }
+                    Button(onClick = onConfirm, modifier = Modifier.weight(1f)) { Text("Descartar") }
+                }
+            }
+        }
+    }
+}
+
+private fun formatSignedByteSize(bytes: Long): String {
+    val sign = if (bytes > 0) "+" else if (bytes < 0) "−" else ""
+    return sign + formatByteSize(kotlin.math.abs(bytes))
+}
+
+private fun formatSignedPercent(percent: Double): String {
+    val sign = if (percent > 0.0) "+" else if (percent < 0.0) "−" else ""
+    return "$sign%.1f %%".format(kotlin.math.abs(percent))
 }
 
 @Composable
@@ -855,6 +1234,7 @@ private val previewState = AssetManagerUiState.Ready(
         ),
     ),
     localIngestState = LocalIngestUiState.Ready(
+        workId = "preview-work",
         reservedAssetId = "ast_01991d80-1000-7000-8000-000000000001",
         status = "ready_to_commit",
         content = Content(

@@ -121,6 +121,36 @@ class LocalIngestCoordinatorTest {
         assertFailsTransition(failed, IngestWorkState.FAILED, IngestWorkState.PROCESSING)
     }
 
+    @Test
+    fun `discard removes only ready operational work and invokes scoped staging cleanup`() = runTest {
+        val store = FakeWorkItemStore()
+        val discardedWorkIds = mutableListOf<String>()
+        val staging = object : StagingFileStore {
+            override suspend fun stageVerified(workId: String, sourceRef: ImageSourceRef, expectedContent: Content) =
+                StagedImage("staging/$workId/source", expectedContent)
+
+            override suspend fun discard(workId: String) {
+                discardedWorkIds += workId
+            }
+        }
+        val coordinator = coordinator(
+            store = store,
+            staging = staging,
+            assetIds = listOf(assetId(1), assetId(2)),
+            workIds = listOf("work-1", "work-2"),
+        )
+        val first = coordinator.begin(prepared) as LocalIngestResult.Ready
+
+        val discarded = coordinator.discardReady(first.workItem.workId)
+        val second = coordinator.begin(prepared) as LocalIngestResult.Ready
+
+        assertEquals(first.workItem, discarded)
+        assertNull(store.ingestWorkItem("work-1"))
+        assertEquals(listOf("work-1"), discardedWorkIds)
+        assertNotEquals(first.workItem.reservedAssetId, second.workItem.reservedAssetId)
+        assertEquals(IngestWorkState.READY_TO_COMMIT, store.ingestWorkItem("work-2")?.state)
+    }
+
     private fun coordinator(
         store: FakeWorkItemStore,
         staging: StagingFileStore = StagingFileStore { workId, _, expected ->
@@ -182,6 +212,13 @@ class LocalIngestCoordinatorTest {
             items[transition.workId] = updated
             publishedStates += updated.state
             return updated
+        }
+
+        override suspend fun discardReadyIngestWorkItem(workId: String): IngestWorkItem? {
+            val current = items[workId] ?: return null
+            if (current.state != IngestWorkState.READY_TO_COMMIT) return null
+            items.remove(workId)
+            return current
         }
 
         override suspend fun ingestWorkItem(workId: String): IngestWorkItem? = items[workId]

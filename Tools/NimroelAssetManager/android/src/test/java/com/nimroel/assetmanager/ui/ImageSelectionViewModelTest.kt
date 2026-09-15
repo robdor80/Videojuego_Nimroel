@@ -301,6 +301,50 @@ class ImageSelectionViewModelTest {
     }
 
     @Test
+    fun `discarding ready work clears image and provenance while preserving draft and allowing a new AssetId`() = runTest {
+        val store = FakeWorkItemStore()
+        val discardedWorkIds = mutableListOf<String>()
+        val staging = object : StagingFileStore {
+            override suspend fun stageVerified(workId: String, sourceRef: ImageSourceRef, expectedContent: Content) =
+                StagedImage("staging/$workId/source", expectedContent)
+
+            override suspend fun discard(workId: String) {
+                discardedWorkIds += workId
+            }
+        }
+        withStagingViewModel(
+            coordinator(store, staging, listOf(assetId(1), assetId(2)), listOf("work-1", "work-2")),
+        ) { viewModel ->
+            viewModel.selectValue(ProductionFieldPaths.SUBJECT_AGE_BAND_ID, "elder")
+            viewModel.selectImage(ImageSourceRef("content://images/first"))
+            runCurrent()
+            viewModel.prepareLocalIngest()
+            runCurrent()
+            val first = viewModel.ready().localIngestState as LocalIngestUiState.Ready
+            viewModel.selectProvenanceKind(OriginKind.IMPORTED)
+
+            viewModel.discardLocalIngest()
+            runCurrent()
+
+            val discarded = viewModel.ready()
+            assertEquals(ImageUiState.NoImage, discarded.imageState)
+            assertEquals(LocalIngestUiState.NotStarted, discarded.localIngestState)
+            assertEquals(ProvenanceUiState.Unavailable, discarded.provenanceState)
+            assertEquals("elder", discarded.fields.single().selectedValueId)
+            assertEquals(listOf("work-1"), discardedWorkIds)
+            assertTrue(store.items.isEmpty())
+            assertFalse(discarded.isAssetCreationEnabled)
+
+            viewModel.selectImage(ImageSourceRef("content://images/second"))
+            runCurrent()
+            viewModel.prepareLocalIngest()
+            runCurrent()
+            val second = viewModel.ready().localIngestState as LocalIngestUiState.Ready
+            assertTrue(first.reservedAssetId != second.reservedAssetId)
+        }
+    }
+
+    @Test
     fun `Android image selection never implies imported and provenance waits for ready staging`() = runTest {
         val store = FakeWorkItemStore()
         withStagingViewModel(coordinator(store)) { viewModel ->
@@ -485,6 +529,13 @@ class ImageSelectionViewModelTest {
         override suspend fun transitionIngestWorkItem(transition: IngestWorkTransition): IngestWorkItem? {
             val current = values[transition.workId] ?: return null
             return IngestWorkTransitionPolicy.apply(current, transition).also { values[it.workId] = it }
+        }
+
+        override suspend fun discardReadyIngestWorkItem(workId: String): IngestWorkItem? {
+            val current = values[workId] ?: return null
+            if (current.state != IngestWorkState.READY_TO_COMMIT) return null
+            values.remove(workId)
+            return current
         }
 
         override suspend fun ingestWorkItem(workId: String): IngestWorkItem? = values[workId]

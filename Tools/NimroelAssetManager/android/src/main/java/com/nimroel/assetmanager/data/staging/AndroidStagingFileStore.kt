@@ -21,7 +21,11 @@ import java.io.InputStream
 import java.security.MessageDigest
 import java.nio.file.Files
 import java.nio.file.AtomicMoveNotSupportedException
+import java.nio.file.FileVisitResult
+import java.nio.file.Path
+import java.nio.file.SimpleFileVisitor
 import java.nio.file.StandardCopyOption
+import java.nio.file.attribute.BasicFileAttributes
 import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.ensureActive
 
@@ -79,6 +83,40 @@ class AndroidStagingFileStore internal constructor(
             part.delete()
             if (promoted) target.delete()
             throw error
+        }
+    }
+
+    override suspend fun discard(workId: String) {
+        require(SAFE_WORK_ID.matches(workId)) { "workId is not safe for managed staging cleanup." }
+        currentCoroutineContext().ensureActive()
+        val stagingRoot = File(managedRoot, STAGING_ROOT_NAME)
+        val workDirectory = File(stagingRoot, workId)
+        if (!workDirectory.exists()) return
+        if (!isInside(stagingRoot, workDirectory) || Files.isSymbolicLink(workDirectory.toPath())) {
+            throw StagingException(StagingErrorCode.STAGING_WRITE_FAILED, "La ruta de staging a descartar no es segura.")
+        }
+        try {
+            Files.walkFileTree(
+                workDirectory.toPath(),
+                object : SimpleFileVisitor<Path>() {
+                    override fun visitFile(file: Path, attrs: BasicFileAttributes): FileVisitResult {
+                        Files.deleteIfExists(file)
+                        return FileVisitResult.CONTINUE
+                    }
+
+                    override fun postVisitDirectory(dir: Path, error: IOException?): FileVisitResult {
+                        if (error != null) throw error
+                        Files.deleteIfExists(dir)
+                        return FileVisitResult.CONTINUE
+                    }
+                },
+            )
+        } catch (error: IOException) {
+            throw StagingException(
+                StagingErrorCode.STAGING_WRITE_FAILED,
+                "No se pudo eliminar el staging privado de esta ingestión.",
+                error,
+            )
         }
     }
 
@@ -186,8 +224,15 @@ class AndroidStagingFileStore internal constructor(
 
     private companion object {
         const val MANAGED_ROOT_NAME = "nimroel-assets"
+        const val STAGING_ROOT_NAME = "staging"
         val SAFE_WORK_ID = Regex("^[A-Za-z0-9_-]{1,128}$")
     }
+}
+
+private fun isInside(root: File, child: File): Boolean {
+    val rootPath = root.canonicalFile.toPath()
+    val childPath = child.canonicalFile.toPath()
+    return childPath.startsWith(rootPath) && childPath != rootPath
 }
 
 internal fun interface AndroidStagingSourceAccess {

@@ -26,11 +26,17 @@ class MainActivity : ComponentActivity() {
                 }
                 AssetManagerApp(
                     uiState = viewModel.uiState,
+                    imageLabPreviewLoader = viewModel.imageLabPreviewLoader,
                     onSelectValue = viewModel::selectValue,
                     onClearSelection = viewModel::clearSelection,
                     onSelectImage = { imagePicker.launch("image/*") },
                     onRemoveImage = viewModel::removeImage,
                     onPrepareLocalIngest = viewModel::prepareLocalIngest,
+                    onDiscardLocalIngest = viewModel::discardLocalIngest,
+                    onSelectImageLabTarget = viewModel::selectImageLabTarget,
+                    onSelectImageLabQuality = viewModel::selectImageLabQuality,
+                    onGenerateImageLabCandidate = viewModel::generateImageLabCandidate,
+                    onClearImageLabResults = viewModel::clearImageLabResults,
                     onSelectProvenanceKind = viewModel::selectProvenanceKind,
                     onGeneratedProviderChange = viewModel::setGeneratedProvider,
                     onGeneratedModelChange = viewModel::setGeneratedModel,
