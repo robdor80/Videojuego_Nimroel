@@ -17,12 +17,21 @@ fun interface StagingFileStore {
         sourceRef: ImageSourceRef,
         expectedContent: Content,
     ): StagedImage
+
+    /** Idempotently removes only the managed staging files belonging to this work. */
+    suspend fun discard(workId: String) = Unit
 }
 
 data class StagedImage(
     val relativePath: String,
     val content: Content,
 )
+
+/** The operational row was removed, but best-effort physical cleanup needs attention. */
+class DiscardedStagingCleanupException(
+    val discardedWorkItem: IngestWorkItem,
+    cause: Throwable,
+) : IllegalStateException("Ingest work was discarded but its staging cleanup failed.", cause)
 
 enum class StagingErrorCode(val wireValue: String) {
     SOURCE_UNAVAILABLE("source_unavailable"),
@@ -117,6 +126,26 @@ class LocalIngestCoordinator(
             )
             throw error
         }
+    }
+
+    /**
+     * Abandons a work that never created an Asset. The Room row is removed first so persistence
+     * can never point at a staged source that has already been deleted.
+     */
+    suspend fun discardReady(workId: String): IngestWorkItem {
+        val discarded = checkNotNull(workItemStore.discardReadyIngestWorkItem(workId)) {
+            "Ingest work item $workId is not ready to discard."
+        }
+        require(discarded.state == IngestWorkState.READY_TO_COMMIT) { "Only ready work can be discarded." }
+        require(discarded.stagingRelativePath == "staging/$workId/source") {
+            "Ready work does not reference its managed staging source."
+        }
+        try {
+            stagingFileStore.discard(workId)
+        } catch (error: Exception) {
+            throw DiscardedStagingCleanupException(discarded, error)
+        }
+        return discarded
     }
 
     private suspend fun transition(value: IngestWorkTransition): IngestWorkItem =

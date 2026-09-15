@@ -84,6 +84,9 @@ internal interface IngestWorkItemDao {
         errorDetail: String?,
     ): Int
 
+    @Query("DELETE FROM ingest_work_items WHERE work_id = :workId AND state = :readyState")
+    suspend fun deleteReady(workId: String, readyState: IngestWorkState): Int
+
     @Query("SELECT * FROM ingest_work_items WHERE work_id = :workId")
     suspend fun find(workId: String): IngestWorkItemEntity?
 

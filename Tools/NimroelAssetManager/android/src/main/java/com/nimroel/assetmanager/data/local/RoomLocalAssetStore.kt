@@ -118,6 +118,13 @@ internal class RoomLocalAssetStore(
             if (changed == 1) updated else null
         }
 
+    override suspend fun discardReadyIngestWorkItem(workId: String): IngestWorkItem? =
+        database.withTransaction {
+            val current = ingestWorkItems.find(workId)?.toDomain() ?: return@withTransaction null
+            if (current.state != IngestWorkState.READY_TO_COMMIT) return@withTransaction null
+            if (ingestWorkItems.deleteReady(workId, IngestWorkState.READY_TO_COMMIT) == 1) current else null
+        }
+
     override suspend fun ingestWorkItem(workId: String): IngestWorkItem? =
         ingestWorkItems.find(workId)?.toDomain()
 

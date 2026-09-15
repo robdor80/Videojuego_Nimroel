@@ -264,6 +264,33 @@ class RoomLocalAssetStoreTest {
     }
 
     @Test
+    fun `discard removes only a ready operational work item and creates no Asset state`() = runBlocking {
+        val ready = processingWork("work-discard")
+        val completed = checkNotNull(
+            store.transitionIngestWorkItem(
+                IngestWorkTransition(
+                    ready.workId,
+                    IngestWorkState.PROCESSING,
+                    IngestWorkState.READY_TO_COMMIT,
+                    ready.updatedAt.plusSeconds(1),
+                    stagingRelativePath = "staging/${ready.workId}/source",
+                ),
+            ),
+        )
+        val queued = workItem("work-kept", "ast_01991d80-1000-7000-8000-000000000099")
+        store.createIngestWorkItem(queued)
+
+        assertEquals(completed, store.discardReadyIngestWorkItem(completed.workId))
+
+        assertNull(store.ingestWorkItem(completed.workId))
+        assertEquals(queued, store.ingestWorkItem(queued.workId))
+        assertFalse(store.containsAsset(completed.reservedAssetId))
+        assertNull(store.localState(completed.reservedAssetId))
+        assertTrue(store.representations(completed.reservedAssetId).isEmpty())
+        assertEquals(1, NimroelAssetDatabase.VERSION)
+    }
+
+    @Test
     fun `real Room integration persists coordinator result as ready without creating Asset state`() = runBlocking {
         val reservedId = TestAssets.fixture().assetId
         val content = Content("image/png", 32, 64, 256, "c".repeat(64))

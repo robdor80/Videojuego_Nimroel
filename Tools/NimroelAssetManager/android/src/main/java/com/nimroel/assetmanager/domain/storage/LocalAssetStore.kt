@@ -39,6 +39,9 @@ interface LocalAssetStore : IngestWorkItemStore {
 interface IngestWorkItemStore {
     suspend fun createIngestWorkItem(workItem: IngestWorkItem)
     suspend fun transitionIngestWorkItem(transition: IngestWorkTransition): IngestWorkItem?
+    /** Removes only an uncommitted ready work item; its reserved AssetId is never reused by this flow. */
+    suspend fun discardReadyIngestWorkItem(workId: String): IngestWorkItem? =
+        error("This ingest work item store does not support discarding ready work.")
     suspend fun ingestWorkItem(workId: String): IngestWorkItem?
     suspend fun ingestWorkItemByReservedAssetId(assetId: AssetId): IngestWorkItem?
 }

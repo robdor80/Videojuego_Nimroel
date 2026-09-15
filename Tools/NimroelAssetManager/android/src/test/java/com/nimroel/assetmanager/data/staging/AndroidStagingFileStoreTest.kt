@@ -160,6 +160,36 @@ class AndroidStagingFileStoreTest {
         managed.parentFile?.deleteRecursively()
     }
 
+    @Test
+    fun `discard removes only its managed work directory and tolerates an absent source`() = runTest {
+        val root = temporaryFolder.newFolder("discard-root")
+        val store = store(root, pngBytes)
+        store.stageVerified("work-a", sourceRef, expected)
+        store.stageVerified("work-b", sourceRef, expected)
+        val stagingRootMarker = root.resolve("staging/keep.txt").apply { writeText("keep") }
+
+        store.discard("work-a")
+        store.discard("work-a")
+
+        assertFalse(root.resolve("staging/work-a").exists())
+        assertTrue(root.resolve("staging/work-b/source").isFile)
+        assertTrue(stagingRootMarker.isFile)
+    }
+
+    @Test
+    fun `discard rejects unsafe work paths before touching storage`() = runTest {
+        val root = temporaryFolder.newFolder("unsafe-discard-root")
+        val sentinel = root.resolve("sentinel.txt").apply { writeText("keep") }
+        val store = store(root, pngBytes)
+
+        try {
+            store.discard("../sentinel")
+            error("Expected unsafe work ID rejection")
+        } catch (_: IllegalArgumentException) {
+            assertTrue(sentinel.isFile)
+        }
+    }
+
     private fun store(root: File, bytes: ByteArray) = AndroidStagingFileStore(
         sourceAccess = AndroidStagingSourceAccess { ByteArrayInputStream(bytes) },
         managedRoot = root,

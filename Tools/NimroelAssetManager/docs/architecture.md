@@ -16,7 +16,10 @@
 - `domain/`: modelos y contratos de negocio independientes de UI/proveedor; incluye Production Draft v1 y Provenance Draft v1 como flujos puros y separados que convergerán al finalizar el Asset.
 - `data/`: Room DB v1, DAOs, conversores, proyección del documento canónico, `RoomLocalAssetStore` y staging Android privado con verificación directa del archivo.
 - `domain/processing`: fronteras y orquestación testeables para preparación de imagen e ingestión local; no depende de `Context` ni de rutas `File`.
-- `ui/`: Compose y ViewModels; no debe alojar reglas de schema ni persistencia.
+- `domain/processing/ImageLab.kt`: parámetros experimentales, resize/métricas puros y frontera `ImageLabProcessor`; no forma parte del Asset Schema ni de persistencia.
+- `data/image/AndroidImageLabProcessor`: procesamiento secuencial desde staging privado, AndroidX EXIF, WebP de plataforma, temporales UUID verificados antes de promoción y cache aislado. `generate`/`clear` se serializan con un mutex por `workId`.
+- `data/image/ImageLabPreviewLoader`: frontera Android interna que resuelve únicamente `ImageLabArtifactRef` opacos y devuelve bitmaps con lado largo realmente acotado; no expone archivos, paths, URI ni proveedores.
+- `ui/`: Compose y ViewModels; no aloja filesystem, reglas de schema ni persistencia. Las previews distinguen `Idle`, `Loading`, `Ready`, `Unavailable` y `Error`; el ViewModel retiene sólo metadata y referencias opacas.
 - `sync/` y `processing/`: se crearán junto con operaciones reales y pruebas; WorkManager será el candidato para colas fiables de sincronización.
 
 ## Estado de hitos
@@ -30,6 +33,7 @@
 - Completado: selección local de imagen y preparación de `Content` v1 mediante URI temporal, análisis streaming, validación reusable y política latest-selection-wins.
 - Completado: staging local y reserva de `AssetId` v1, con UUIDv7, work item Room, copia privada `.part`, fsync, verificación y publicación `ready_to_commit`.
 - Completado: Provenance Draft v1, con elección explícita posterior a `ready_to_commit`, variantes selladas, fechas `Instant`, Asset IDs validados y materialización de `Provenance` sin inferencias desde Android.
+- Implementado y validado por JVM/Robolectric: WebP Quality Lab v1 experimental después de `ready_to_commit`, con presets manuales, métricas de bytes reales, preview interna, alpha/EXIF, sustitución transaccional y resultados desechables en cache. No define ni produce canonical. Su codec, EXIF, memoria y experiencia visual siguen pendientes de validación física en Galaxy Tab S9+.
 
 ## Decisiones aún abiertas
 
@@ -39,7 +43,8 @@
 4. Cerrar la política de retención posterior del original y limpieza de staging; la raíz privada Android v1 ya es `filesDir/nimroel-assets`.
 5. Definir backend/autenticación y almacenamiento remoto sin credenciales privadas en clientes.
 6. Precisar ciclo editorial y resolución de conflictos cuando se diseñe sincronización.
+7. Decidir si el futuro pipeline canonical requiere un codec fijado/versionado para reproducibilidad byte-for-byte entre Android/API/fabricantes.
 
 ## Próximo hito
 
-Definir **Canonical Image Profile / Canonical Image Processing** mediante pruebas reales de calidad y tamaño antes de finalizar el Asset, sin adelantar ImageKit, sincronización o Asset Resolver.
+Ejecutar sesiones reales del laboratorio en Galaxy Tab S9+ y decidir humanamente **Canonical Image Profile v1**. Los tests JVM validan reglas puras; Robolectric valida la integración Android en el entorno host; ninguno equivale al codec, EXIF, filesystem, memoria o pantalla físicos de Samsung. Después corresponderá implementar **Canonical Image Processing v1**, sin adelantar ImageKit, sincronización o Asset Resolver.
