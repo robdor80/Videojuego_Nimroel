@@ -1,0 +1,118 @@
+{
+  "id": "rodas",
+  "name": "Rodas",
+  "cultureId": "norgard",
+  "type": "village",
+  "status": "reference_defined",
+  "appearsOnMap": false,
+  "geography": {
+    "macroLocation": "norte_de_norgard",
+    "relativePosition": "muy_al_norte_de_hallheim_y_dorth,_casi_en_el_umbral_de_las_nieves_permanentes",
+    "terrain": [
+      "suelo_frio_y_duro",
+      "campos_de_cultivo",
+      "grandes_bosques",
+      "montanas_nevadas_al_fondo"
+    ],
+    "climate": [
+      "frio",
+      "duro",
+      "septentrional"
+    ]
+  },
+  "settlement": {
+    "scale": "small_village",
+    "fortifications": {
+      "walls": false,
+      "fences": false,
+      "palisades": false
+    },
+    "centralSpace": "plaza_abierta_central",
+    "layout": "aldea_expandida_y_baja,_sin_densidad_urbana"
+  },
+  "architecture": {
+    "primaryMaterials": [
+      "piedra_gris_oscura",
+      "madera"
+    ],
+    "roofing": "pizarra",
+    "typicalBuildings": {
+      "floors": "1",
+      "proportions": "mas_largas_en_superficie_que_altas",
+      "chimneys": "muy_presentes_y_habitualmente_activas"
+    },
+    "landmarkBuilding": {
+      "name": "casa_de_los_druidas_de_rodas",
+      "floors": 2,
+      "materials": [
+        "piedra_oscura",
+        "madera"
+      ],
+      "roofing": "pizarra_inclinada",
+      "location": "junto_a_la_plaza",
+      "function": [
+        "elaboracion_de_pociones",
+        "custodia_druidica"
+      ],
+      "guarded": true,
+      "religious": false
+    }
+  },
+  "functions": [
+    "aldea_rural",
+    "agricultura",
+    "herrerias_locales",
+    "fabricacion_de_herramientas",
+    "fabricacion_de_armas",
+    "cria_y_origen_de_berserkers",
+    "tradicion_druidica"
+  ],
+  "population": {
+    "ordinaryInhabitants": [
+      "campesinos",
+      "artesanos",
+      "herreros",
+      "familias"
+    ],
+    "berserkers": {
+      "present": true,
+      "description": "hombres_muy_grandes,_corpulentos_e_impresionantes",
+      "transformedStateVisibleInVillageScenes": false,
+      "transformationTrigger": "pocion_druidica_en_circunstancias_extraordinarias"
+    }
+  },
+  "visualMood": [
+    "frio",
+    "austero",
+    "aislado",
+    "rural",
+    "mistico_de_forma_sutil",
+    "antiguo",
+    "contenido"
+  ],
+  "restrictions": [
+    "no_castillo",
+    "no_fortaleza",
+    "no_murallas",
+    "no_templo",
+    "no_iglesia",
+    "no_monumentalidad",
+    "no_magia_explicita",
+    "no_berserkers_transformados_paseando"
+  ],
+  "referenceAssets": [
+    {
+      "id": "rodas_v0.1_reference_001",
+      "status": "approved",
+      "image": "RODAS_v0.1_REFERENCE_001.png",
+      "promptTrace": "RODAS_v0.1_REFERENCE_001_PROMPT.md",
+      "review": "RODAS_v0.1_REVIEW.md"
+    }
+  ],
+  "promptNotes": [
+    "Debe parecer una aldea normal de Norgard a primera vista, aunque con un halo de importancia y misterio.",
+    "Su singularidad debe venir del tono y la tradición, no de artificios visuales exagerados.",
+    "Diferenciar claramente Rodas de Zanthir: Rodas es menor, mas rural y menos industrial.",
+    "Los herreros locales deben entenderse como actividad normal de autosuficiencia, no como gran enclave metalurgico."
+  ]
+}

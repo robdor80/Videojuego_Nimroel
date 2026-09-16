@@ -1,0 +1,86 @@
+{
+  "id": "lumina_local_profile",
+  "version": "v0.1",
+  "culture": "Norgard",
+  "settlement": "Lumina",
+  "type": "wine_settlement_profile",
+  "status": "approved_reference",
+  "map_status": "appears_on_world_map",
+  "role": "small compact wine-producing settlement of central Norgard",
+  "relative_scale": {
+    "smaller_than": ["Dorth", "Arleon"],
+    "character": "compact, attractive, prosperous, non-monumental"
+  },
+  "geography": {
+    "position_summary": "At the entrance to a raised mesa or plateau between Karsath and Dorth.",
+    "terrain": [
+      "plateau edge or entrance",
+      "gentle surrounding slopes",
+      "nearby forests",
+      "cultivated wine country"
+    ],
+    "water_rules": {
+      "major_river": false,
+      "major_stream": false,
+      "canal": false,
+      "lake": false,
+      "harbor": false,
+      "notes": "Small rills or hidden rural water sources may exist, but water must not define the composition."
+    }
+  },
+  "economy": {
+    "primary": ["wine", "vineyards", "family bodegas", "local trade"],
+    "secondary": ["merchant houses", "storage buildings", "small wine warehouses", "inns and taverns"],
+    "logistics_note": "Lumina and Karsath produce wine, but larger export logistics are channeled through Dorth."
+  },
+  "architecture": {
+    "materials": ["light stone", "timber", "red clay tile roofs"],
+    "streets": ["careful cobblestone", "well-kept streets", "compact street network"],
+    "fortifications": false,
+    "skyline": "low and modest",
+    "special_buildings": [
+      "local administration building",
+      "grand inn",
+      "prestigious family winery or bodega",
+      "merchant houses",
+      "small bodegas and storage buildings"
+    ]
+  },
+  "urban_core": {
+    "central_square": {
+      "present": true,
+      "shape": "elongated",
+      "importance": "high",
+      "function": ["daily social center", "commercial square", "annual Lumina wine market"]
+    },
+    "representative_buildings_rule": "Buildings around the square may be slightly larger and more prestigious than the rest, but should remain harmonious and not dwarf the town."
+  },
+  "visual_identity": {
+    "keywords": [
+      "beautiful",
+      "coqueta",
+      "pleasant",
+      "wine settlement",
+      "compact",
+      "inviting",
+      "prosperous",
+      "non-industrial"
+    ],
+    "mood": ["warm", "lived-in", "attractive", "tranquil"],
+    "forbidden": [
+      "walls",
+      "fortifications",
+      "major river composition",
+      "harbor",
+      "monumental skyline",
+      "large industrial complex",
+      "decorative heraldic banners",
+      "exaggerated fantasy elements"
+    ]
+  },
+  "reference_assets": {
+    "primary_image": "LUMINA_v0.1_REFERENCE_001.png",
+    "prompt_file": "LUMINA_v0.1_REFERENCE_001_PROMPT.md",
+    "review_file": "LUMINA_v0.1_REVIEW.md"
+  }
+}
