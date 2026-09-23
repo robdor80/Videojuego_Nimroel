@@ -121,6 +121,8 @@ Su condición insular no la convierte en un territorio externo administrado por 
 
 Geográficamente se integra en el ámbito occidental-meridional de Norgard.
 
+Administrativamente, la isla forma parte del territorio gobernado por la **Casa Darovan**.
+
 Su paisaje combina un clima cálido con amplias **zonas secas de carácter insular**, lomas abiertas, matorral, pequeños bosques dispersos y sectores costeros más verdes en calas y áreas protegidas.
 
 Syvaris no constituye un desierto.
