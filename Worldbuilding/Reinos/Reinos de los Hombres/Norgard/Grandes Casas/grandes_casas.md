@@ -188,7 +188,8 @@ La Casa Darovan administra su territorio desde **Treihord**.
 Dentro de su ámbito destacan también:
 
 - **Veldora**, importante puerto comercial;
-- **Taramin**, importante puerto pesquero.
+- **Taramin**, importante puerto pesquero;
+- **Syvaris**, isla que forma parte territorial de Norgard y queda administrada por la Casa Darovan.
 
 Treihord constituye el principal núcleo minero de sus dominios, especialmente por la explotación de oro y plata.
 
@@ -200,6 +201,7 @@ Treihord constituye el principal núcleo minero de sus dominios, especialmente p
 - comercio marítimo occidental;
 - puerto comercial de Veldora;
 - puerto pesquero de Taramin;
+- administración de la isla de Syvaris;
 - capacidad económica para ejercer influencia política.
 
 ## Carácter político
@@ -462,7 +464,7 @@ El peso político Valrik se apoya especialmente en:
 | Casa | Sede | Núcleos actualmente asociados | Base de poder |
 |---|---|---|---|
 | **Aethros** | Hallheim | Hallheim; control directo de Rodas | Corona, autoridad institucional, aportaciones del Reino, berserkers |
-| **Darovan** | Treihord | Treihord, Veldora, Taramin | Oro, plata, comercio, puertos |
+| **Darovan** | Treihord | Treihord, Veldora, Taramin, Syvaris | Oro, plata, comercio, puertos |
 | **Edranor** | Dorth | Dorth, Lumina, Karsath | Vino, territorio, prestigio |
 | **Galdren** | Arleon | Arleon, Zanthir | Agricultura, ganadería, minería, armas, herramientas |
 | **Valrik** | Treskal | Treskal y territorio oriental | Bosques, artesanía, pesca, astilleros |
