@@ -211,6 +211,14 @@ Entre los elementos geográficos que articulan Norgard se encuentran:
 - Bosque de Taramin
 - Bosques de Syvaris
 
+#### Región central
+
+- Bosque Alto
+- Bosque de los Azurios
+  - Sector meridional: **Bosque Real**
+- Bosque Bajo
+- Bosque del Serhan
+
 ---
 
 ## Estado de definición
@@ -223,7 +231,7 @@ Quedan pendientes de desarrollo posterior:
 - golfos, cabos y bahías;
 - nombres de otros mares;
 - islas menores;
-- grandes bosques;
+- bosques de la región oriental;
 - pantanos;
 - zonas semidesérticas;
 - accidentes geográficos secundarios;

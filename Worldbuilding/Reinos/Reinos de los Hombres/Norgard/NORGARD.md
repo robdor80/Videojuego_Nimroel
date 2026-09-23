@@ -1554,91 +1554,111 @@ Los bosques pueden poseer identidad propia aunque pertenezcan a una misma regió
 
 ### Bosque de las Agujas
 
-El **Bosque de las Agujas** es un bosque antiguo de coníferas situado en el noroeste de Norgard.
+Bosque antiguo de coníferas situado al pie del extremo septentrional de los **Montes Valkram**, próximo a los **Acantilados de la Agonía** y al límite de transición hacia la zona helada del norte.
 
-No es una masa forestal inmensa, pero posee una marcada antigüedad y carácter salvaje.
+El **Río Lhera** discurre junto a uno de sus límites.
 
-Se encuentra al pie del extremo septentrional de los **Montes Valkram**, próximo a los **Acantilados de la Agonía** y al límite de transición hacia la zona helada del norte.
-
-El **Río Lhera** discurre junto a uno de sus límites y desemboca en el **Golfo de Veldora**.
-
-No existen aldeas ni población permanente dentro del bosque.
-
-Posee **abundante caza mayor**.
-
----
+No posee población permanente y cuenta con abundante caza mayor.
 
 ### Bosque del Manto Verde
 
-El **Bosque del Manto Verde** cubre aproximadamente el **90 % de la Isla de Arven**.
+Cubre aproximadamente el **90 % de la Isla de Arven**.
 
-Es una masa forestal continua de **coníferas**.
+Es una masa continua de coníferas, con muy buena caza y explotación maderera reducida.
 
-La isla posee algunas aldeas, concentradas principalmente en la costa interior orientada hacia el **Golfo de Veldora**, mientras que el interior permanece dominado por el bosque.
-
-Posee **muy buena caza**, que se aprovecha de forma importante.
-
-La explotación de madera es reducida y se procura conservar la continuidad de la masa forestal.
-
----
+Las aldeas de Arven se concentran principalmente en la costa interior orientada hacia el Golfo de Veldora.
 
 ### Bosque de la Linde
 
-El **Bosque de la Linde** es una pequeña masa de coníferas situada junto al **camino principal entre Veldora y Treihord**.
+Pequeño bosque de coníferas situado junto al camino principal entre **Veldora y Treihord**.
 
-Posee poca caza y no se explota de forma relevante por su madera.
-
-Su importancia es principalmente paisajística y geográfica.
-
----
+Posee poca caza y apenas se explota por su madera.
 
 ### Bosque de los Pilares
 
-El **Bosque de los Pilares** es una gran masa forestal situada al pie del sector meridional de los **Montes Valkram**.
+Gran masa forestal situada al pie del sector meridional de los **Montes Valkram**, extendida hacia el entorno del tramo final del **Río Belara**.
 
-Se extiende hacia el este y sureste hasta el entorno del tramo final del **Río Belara**.
+Predominan las coníferas y el paisaje queda interrumpido por colinas abiertas, lomas y claros.
 
-Constituye un único sistema forestal, aunque su aspecto es discontinuo por la presencia de **colinas abiertas, lomas y claros extensos**.
-
-Predominan las coníferas y existe fauna salvaje.
-
-En su entorno hay **aldeas y pueblos** que aprovechan sus recursos.
-
-Su madera se utiliza de forma importante para abastecer, entre otros usos, a las **minas de oro y plata explotadas por Treihord en los Montes Valkram**.
-
-El nombre **Bosque de los Pilares** está ligado a este uso de la madera en las explotaciones mineras.
-
----
+Su madera abastece, entre otros usos, a las minas de oro y plata explotadas por Treihord en los Valkram.
 
 ### Bosque de Taramin
 
-El **Bosque de Taramin** es una extensa masa forestal longitudinal que recorre buena parte de la península de Taramin hacia el sur.
+Extensa masa forestal longitudinal de la península de Taramin.
 
-Su vegetación cambia progresivamente con la latitud:
+Su vegetación evoluciona de norte a sur:
 
-- predominio de **coníferas** en el norte;
-- bosque **mixto** en la zona de transición;
-- características de **bosque subtropical húmedo** hacia el extremo meridional.
+- coníferas;
+- bosque mixto;
+- bosque subtropical húmedo.
 
-Todo el conjunto conserva una única identidad geográfica.
-
-Existen multitud de aldeas tanto en la **costa oriental**, orientada hacia Syvaris, como en la **costa occidental**, orientada hacia otras tierras de Nimroel fuera de Norgard.
-
-El interior permanece mucho más dominado por la masa forestal.
-
-Existe caza, pero la fauna difiere según el clima y la latitud.
-
-El bosque se aprovecha de forma considerable por las poblaciones locales, aunque **no mediante una explotación intensiva o industrial**.
-
----
+Existen multitud de aldeas en ambas costas y un aprovechamiento local considerable, aunque no industrial.
 
 ### Bosques de Syvaris
 
-Los **Bosques de Syvaris** son masas forestales ligeras, dispersas y discontinuas.
+Masas forestales ligeras, dispersas y discontinuas.
 
-No constituyen un único bosque continuo.
+Poseen poca importancia económica y estratégica, caza limitada y escasa explotación maderera.
 
-Poseen poca relevancia económica y estratégica, no destacan por la abundancia de caza y su madera no se explota de forma intensa.
+---
+
+## Bosques de la región central
+
+### Bosque Alto
+
+Masa forestal situada sobre una **meseta elevada**, en el entorno de **Lumina**.
+
+Es un **bosque mixto templado de altura**.
+
+En las zonas frías y expuestas predominan las coníferas. En áreas resguardadas aparecen frondosas caducifolias, especialmente **robles y hayas**.
+
+Posee abundante caza y aldeas en sus lindes.
+
+Su madera se utiliza en la industria vinícola de Lumina para toneles, barricas, estructuras de bodegas y otros usos relacionados.
+
+### Bosque de los Azurios
+
+Es la gran masa forestal principal de la región central.
+
+Ocupa buena parte de la **vertiente occidental de los Montes Azurios**, con **Dorth** en sus lindes y **Hallheim** más al sur.
+
+Es un bosque mixto continental y montano:
+
+- zonas bajas: robles, hayas, fresnos y arces;
+- laderas medias: mezcla de frondosas con pinos y abetos;
+- cotas altas: predominio de coníferas resistentes al frío.
+
+Colinas suaves, lomas y claros sin arbolado interrumpen visualmente la masa forestal.
+
+Posee abundante caza y multitud de aldeas y pueblos.
+
+Se explotan madera, bayas y resinas.
+
+La parte meridional próxima a Hallheim funciona como **Bosque Real** para las cacerías de la **Casa Aethros**.
+
+### Bosque Bajo
+
+Gran masa forestal discontinua situada **al sur del Bosque Alto**, entre la costa del **Golfo de Norgard** y el **Río Lurien**.
+
+Es un bosque mixto templado de tierras bajas.
+
+Predominan robles, hayas, fresnos, arces y abedules, con manchas de pinos y abetos.
+
+Posee abundante sotobosque, bayas, matorral y claros.
+
+Tiene mucha caza y es muy aprovechado por aldeas y pueblos locales para madera, bayas, resinas y otros recursos, sin explotación industrial.
+
+### Bosque del Serhan
+
+Es el sector septentrional de una gran masa forestal que continúa hacia el sur dentro de **Elandor**.
+
+Norgard considera que la parte norte del bosque pertenece a su territorio y gestiona especialmente la franja situada junto al **Río Serhan**.
+
+No destaca por su tamaño o majestuosidad, sino por su **importancia estratégica y logística** junto al corredor terrestre despejado que comunica Norgard con Elandor.
+
+Es un bosque mixto templado, con predominio de robles, hayas y fresnos y presencia dispersa de coníferas.
+
+Posee caza salvaje y pocas aldeas próximas al corredor.
 
 ---
 
@@ -1650,7 +1670,7 @@ El desarrollo consolidado de este bloque se mantiene en:
 
 ## Estado de definición
 
-**Canon — bloque forestal occidental cerrado a nivel geográfico básico.**
+**Canon — bloques forestales occidental y central cerrados a nivel geográfico básico.**
 
-Los bosques de las regiones central y oriental permanecen pendientes de desarrollo.
+Los bosques de la región oriental permanecen pendientes de desarrollo.
 

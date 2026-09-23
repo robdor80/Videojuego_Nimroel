@@ -139,6 +139,16 @@ Esta configuración obliga a que las rutas terrestres tengan en cuenta el entorn
 
 Por esta razón, Hallheim controla el Río Serhan con especial atención.
 
+### Relación con el Bosque del Serhan
+
+Junto a parte de su curso se encuentra el **Bosque del Serhan**.
+
+Esta masa forestal continúa hacia el sur dentro de Elandor.
+
+Norgard considera que el sector septentrional del bosque pertenece a su territorio y gestiona especialmente la franja situada junto al río.
+
+La proximidad entre bosque, río y el corredor terrestre despejado hacia Elandor refuerza la importancia estratégica de esta zona.
+
 ### Pendiente
 
 No se han definido todavía:

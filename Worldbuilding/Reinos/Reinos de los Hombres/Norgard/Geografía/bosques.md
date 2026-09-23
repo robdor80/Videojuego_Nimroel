@@ -228,20 +228,230 @@ Se distribuyen por distintas zonas de la Isla de Syvaris.
 
 ---
 
+# 2. Bosques de la región central de Norgard
+
+El bloque forestal central está actualmente definido mediante cuatro masas forestales principales:
+
+1. **Bosque Alto**
+2. **Bosque de los Azurios**
+3. **Bosque Bajo**
+4. **Bosque del Serhan**
+
+---
+
+## 2.1. Bosque Alto
+
+### Definición
+
+El **Bosque Alto** es una masa forestal situada sobre una **meseta elevada**, en el entorno de **Lumina**.
+
+Se trata de un **bosque mixto templado de altura**.
+
+### Composición arbórea
+
+La vegetación cambia según exposición y altura:
+
+- en las zonas más frías y expuestas predominan las **coníferas**;
+- en laderas y áreas más resguardadas predominan **frondosas caducifolias**;
+- entre estas frondosas destacan especialmente **robles y hayas**, junto con otras especies compatibles con un bosque templado de altura.
+
+Esta diversidad aporta variación de color, densidad y estructura al paisaje.
+
+### Fauna
+
+El bosque posee **abundante caza**.
+
+### Población
+
+Existen **aldeas en sus lindes**, sin que el interior quede fuertemente urbanizado.
+
+### Aprovechamiento
+
+La explotación forestal es importante pero controlada.
+
+Parte de su madera abastece la **industria vinícola de Lumina**, especialmente para:
+
+- toneles;
+- barricas;
+- estructuras de bodegas;
+- otros usos vinculados a la producción y almacenamiento del vino.
+
+---
+
+## 2.2. Bosque de los Azurios
+
+### Definición
+
+El **Bosque de los Azurios** es la gran masa forestal principal de la región central de Norgard.
+
+Se extiende a lo largo de buena parte de la **vertiente occidental de los Montes Azurios**.
+
+En sus lindes se encuentran **Dorth** y, más al sur, **Hallheim**.
+
+### Estructura del paisaje
+
+Es un bosque enorme, aunque no forma una cubierta completamente uniforme.
+
+Su continuidad visual se ve interrumpida por:
+
+- colinas suaves;
+- lomas abiertas;
+- grandes claros sin arbolado.
+
+Estas interrupciones no dividen el conjunto en bosques independientes.
+
+### Composición arbórea
+
+El Bosque de los Azurios presenta una composición **mixta continental y montana**, escalonada por altura:
+
+- en las zonas bajas predominan **frondosas caducifolias**, especialmente robles, hayas, fresnos y arces;
+- en las laderas medias se mezclan frondosas con **pinos, abetos y otras coníferas**;
+- en las cotas altas predominan progresivamente las **coníferas resistentes al frío**.
+
+Los claros y colinas abiertas albergan:
+
+- matorral;
+- pastos;
+- bayas;
+- vegetación baja.
+
+### Fauna
+
+Existe **abundante caza** a lo largo de todo el bosque.
+
+### Población
+
+Hay **multitud de aldeas y pueblos** vinculados al bosque y a sus recursos.
+
+### Aprovechamiento
+
+La población explota de forma importante:
+
+- madera;
+- bayas;
+- resinas;
+- otros recursos forestales.
+
+### Bosque Real
+
+La parte meridional del Bosque de los Azurios, próxima a **Hallheim**, funciona como **Bosque Real** para las cacerías de la **Casa Aethros**.
+
+El Bosque Real no constituye un bosque independiente: es un sector específico del Bosque de los Azurios.
+
+---
+
+## 2.3. Bosque Bajo
+
+### Definición
+
+El **Bosque Bajo** es una gran masa forestal discontinua situada **al sur del Bosque Alto**, entre la costa del **Golfo de Norgard** y el **Río Lurien**.
+
+Es un **bosque mixto templado de tierras bajas**.
+
+### Estructura del paisaje
+
+Su aspecto discontinuo se debe a la presencia de:
+
+- claros;
+- praderas;
+- terrenos agrícolas;
+- pequeñas colinas;
+- zonas abiertas por aldeas y pueblos.
+
+### Composición arbórea
+
+Predominan las **frondosas caducifolias**.
+
+Entre los árboles más característicos se encuentran:
+
+- robles;
+- hayas;
+- fresnos;
+- arces;
+- abedules.
+
+Existen además manchas de:
+
+- pinos;
+- abetos;
+- otras coníferas.
+
+El sotobosque es abundante, con:
+
+- arbustos;
+- bayas;
+- matorral;
+- vegetación de claros.
+
+### Fauna
+
+Posee **mucha caza**.
+
+### Población y aprovechamiento
+
+El bosque está muy aprovechado por las **aldeas y pueblos locales**.
+
+Entre sus recursos destacan:
+
+- madera;
+- bayas;
+- resinas;
+- recursos silvestres diversos.
+
+La explotación es intensa a escala local, pero **no industrial**.
+
+---
+
+## 2.4. Bosque del Serhan
+
+### Definición
+
+El **Bosque del Serhan** es la parte septentrional de una gran masa forestal que se prolonga hacia el sur, dentro de **Elandor**.
+
+Norgard considera que el sector norte del bosque forma parte de su territorio y gestiona especialmente la franja situada junto al **Río Serhan**.
+
+### Importancia
+
+No destaca por ser especialmente grande o majestuoso.
+
+Su importancia es **estratégica y logística**, debido a su posición junto al Río Serhan y al corredor terrestre despejado que comunica **Norgard con Elandor**.
+
+### Composición arbórea
+
+Es un **bosque mixto templado**.
+
+Predominan las frondosas, especialmente:
+
+- robles;
+- hayas;
+- fresnos.
+
+También aparecen **coníferas dispersas**.
+
+### Fauna
+
+Posee **caza salvaje**.
+
+### Población
+
+Existen pocas aldeas próximas al bosque.
+
+Estas se concentran principalmente cerca del **corredor libre de foresta** que comunica Norgard con Elandor.
+
+---
+
 ## Estado de definición
 
-**Canon — bloque forestal occidental cerrado a nivel geográfico básico.**
+**Canon — bloques forestales occidental y central cerrados a nivel geográfico básico.**
 
-Quedan pendientes para desarrollo posterior, cuando resulten necesarios:
+Quedan pendientes de desarrollo:
 
-- especies concretas de flora;
+- bosques de la región oriental;
 - especies concretas de fauna;
-- caminos y sendas secundarias;
+- caminos secundarios;
 - lugares singulares;
 - ruinas;
-- leyendas;
 - historia local;
-- detalles de aprovechamiento económico;
-- posibles elementos de gameplay.
-
-Los bosques de la región central y oriental permanecen pendientes de desarrollo.
+- leyendas;
+- regulación detallada de aprovechamientos;
+- elementos de gameplay.
