@@ -440,18 +440,330 @@ Estas se concentran principalmente cerca del **corredor libre de foresta** que c
 
 ---
 
+# 3. Bosques de la región oriental de Norgard
+
+El bloque forestal oriental está actualmente definido mediante cinco masas forestales principales:
+
+1. **Bosque Quebrado**
+2. **Bosque del Camino Real**
+3. **Bosque de las Riberas**
+4. **Bosque de los Gemelos**
+5. **Bosque Negro**
+
+---
+
+## 3.1. Bosque Quebrado
+
+### Definición
+
+El **Bosque Quebrado** es una masa forestal difusa y discontinua situada al este de los **Montes Azurios**.
+
+El **Río Caleran** atraviesa la región y divide visualmente el bosque en dos grandes sectores.
+
+La presencia de colinas desnudas, claros y terrenos abiertos refuerza su apariencia quebrada y da origen a su nombre.
+
+### Composición arbórea
+
+Es un **bosque mixto templado de piedemonte y llanura**.
+
+En las zonas bajas y fértiles predominan:
+
+- robles;
+- fresnos;
+- olmos;
+- arces.
+
+En las áreas húmedas próximas al Caleran y a cursos menores aparecen:
+
+- abedules;
+- alisos.
+
+En colinas, suelos más pobres o zonas algo más elevadas aparecen manchas de:
+
+- pinos;
+- abetos.
+
+### Paisaje productivo
+
+El bosque está estrechamente integrado en un paisaje de:
+
+- silvicultura;
+- agricultura;
+- ganadería;
+- praderas;
+- colinas abiertas;
+- aldeas.
+
+Existen numerosas aldeas entre la linde forestal y el Caleran.
+
+### Principal región caballar de Norgard
+
+El entorno del Bosque Quebrado constituye la **principal región caballar de Norgard**.
+
+Se crían caballos destinados a:
+
+- reproducción y mejora de líneas de cría;
+- trabajo agrícola;
+- monturas de Lords y aristocracia;
+- guerra y servicio militar.
+
+La combinación de agua abundante, pastos, colinas abiertas, tierras de cultivo y bosque crea un paisaje especialmente favorable para la cría caballar.
+
+---
+
+## 3.2. Bosque del Camino Real
+
+### Definición
+
+El **Bosque del Camino Real** es una masa forestal alargada que constituye la prolongación hacia Norgard de un gran sistema forestal procedente de **Elandor**.
+
+Se encuentra entre:
+
+- las **Montañas Velaris —Las Guardianas—**;
+- el **Brazo occidental del Caleran**.
+
+### Composición arbórea
+
+Es un **bosque templado-cálido mixto**, con fuerte presencia de frondosas.
+
+Predominan:
+
+- robles;
+- castaños;
+- fresnos;
+- olmos.
+
+En las zonas más húmedas y próximas al Caleran aparecen:
+
+- alisos;
+- sauces.
+
+En laderas más secas y próximas a Las Guardianas aparecen manchas de:
+
+- pino.
+
+### Fauna y aprovechamiento
+
+El bosque posee caza y se explota mediante **silvicultura**.
+
+### Población y comunicaciones
+
+Existen aldeas y pueblos vinculados al bosque.
+
+Por esta región discurre una de las principales rutas terrestres entre **Norgard y Elandor**.
+
+El nombre **Bosque del Camino Real** deriva precisamente de esta función como corredor habitado, económico y de comunicaciones.
+
+---
+
+## 3.3. Bosque de las Riberas
+
+### Definición
+
+El **Bosque de las Riberas** es una masa forestal relativamente pequeña de la gran llanura oriental.
+
+Está dividida por el **Brazo oriental del Caleran**.
+
+Se encuentra rodeada por:
+
+- tierras de cultivo;
+- pastizales;
+- explotaciones ganaderas;
+- aldeas;
+- pueblos.
+
+### Composición arbórea
+
+Es un **bosque caducifolio templado de llanura aluvial**, muy integrado en el paisaje agrario.
+
+Predominan:
+
+- robles.
+
+En suelos profundos y fértiles son comunes:
+
+- fresnos;
+- olmos.
+
+Junto al río y en zonas húmedas aparecen:
+
+- álamos;
+- sauces;
+- alisos.
+
+En terrenos algo más secos existen pequeñas manchas de:
+
+- pino.
+
+### Fauna y aprovechamiento
+
+Posee **abundante caza** y una silvicultura importante.
+
+El bosque funciona además como refugio forestal dentro de una de las grandes zonas agrícolas y ganaderas del este de Norgard.
+
+---
+
+## 3.4. Bosque de los Gemelos
+
+### Definición
+
+El **Bosque de los Gemelos** es una masa forestal de llanura asociada al sistema de los **Ríos Sareno y Theleno**, conocidos conjuntamente como los **Gemelos de Treskal**.
+
+Los cauces fluviales fragmentan visualmente la masa forestal.
+
+### Composición arbórea
+
+Comparte características ecológicas con el Bosque de las Riberas.
+
+Es un **bosque caducifolio templado de llanura aluvial**.
+
+Predominan:
+
+- robles;
+- fresnos;
+- olmos.
+
+En las proximidades de los cauces son comunes:
+
+- álamos;
+- sauces;
+- alisos.
+
+En zonas más secas aparecen pequeñas manchas de:
+
+- pino.
+
+### Fauna, población y aprovechamiento
+
+Posee:
+
+- abundante caza;
+- silvicultura importante;
+- numerosas aldeas y pueblos;
+- agricultura y ganadería en sus alrededores.
+
+Su identidad propia procede de su relación con los **Gemelos de Treskal**.
+
+---
+
+## 3.5. Bosque Negro
+
+### Definición
+
+El **Bosque Negro** es la gran masa forestal del extremo oriental de Norgard.
+
+Es:
+
+- enorme;
+- muy denso;
+- antiguo;
+- intensamente aprovechado.
+
+Su nombre procede de la extraordinaria densidad de su arbolado.
+
+En numerosos sectores, las copas forman una cubierta tan cerrada que caminar bajo ellas supone avanzar en una **penumbra casi constante**, incluso durante el día.
+
+### Composición arbórea
+
+Es un **gran bosque mixto templado-frío**, con transición hacia condiciones boreales en su sector septentrional.
+
+En gran parte del bosque aparecen mezcladas frondosas y coníferas.
+
+Entre las principales frondosas se encuentran:
+
+- robles;
+- hayas;
+- fresnos.
+
+Entre las principales coníferas se encuentran:
+
+- pinos;
+- abetos;
+- píceas.
+
+Hacia el norte disminuye la presencia de frondosas y ganan peso:
+
+- píceas;
+- abetos;
+- pinos;
+- alerces.
+
+En bordes, claros y zonas especialmente frías aparecen también:
+
+- abedules.
+
+El sector septentrional penetra en una zona climática más fría y puede permanecer helado o cubierto de nieve durante determinados periodos.
+
+### Fauna
+
+El bosque posee **abundante caza**.
+
+### Población
+
+Existen numerosas aldeas cuya actividad económica depende directa o indirectamente de:
+
+- la madera;
+- la silvicultura;
+- la carpintería;
+- la artesanía;
+- el transporte de recursos forestales.
+
+### Silvicultura y conservación
+
+El Bosque Negro se explota intensamente, pero su aprovechamiento no persigue agotar la masa forestal.
+
+La gestión forestal se basa en mantener la continuidad productiva mediante prácticas como:
+
+- selección de zonas de corta;
+- rotación de aprovechamientos;
+- conservación de áreas jóvenes;
+- regeneración y replantación cuando resulte necesaria.
+
+### Importancia económica y naval
+
+El Bosque Negro constituye la principal fuente forestal para la industria de **Treskal**.
+
+Su madera alimenta:
+
+- carpintería;
+- ebanistería y fabricación de muebles;
+- artesanía;
+- construcción;
+- construcción naval;
+- producción de barcos para la **Armada Real**;
+- embarcaciones destinadas a la industria pesquera de Norgard.
+
+Las distintas especies permiten usos diferentes:
+
+- **roble** para elementos estructurales resistentes, cascos y cuadernas;
+- **fresno** para piezas sometidas a esfuerzo, herramientas y carpintería;
+- **pinos, abetos y píceas** para tablazón, vigas, piezas largas y mástiles.
+
+El Bosque Negro es, por tanto, uno de los principales recursos estratégicos de la **Casa Valrik** y del conjunto de Norgard.
+
+---
+
 ## Estado de definición
 
-**Canon — bloques forestales occidental y central cerrados a nivel geográfico básico.**
+**Canon — bloques forestales occidental, central y oriental cerrados a nivel geográfico básico.**
 
-Quedan pendientes de desarrollo:
+El sistema principal de bosques de Norgard queda definido en:
 
-- bosques de la región oriental;
+- nombre;
+- localización general;
+- estructura;
+- composición arbórea básica;
+- relación con población y recursos;
+- función económica o estratégica cuando procede.
+
+Quedan pendientes para desarrollo posterior:
+
 - especies concretas de fauna;
-- caminos secundarios;
+- nombres de aldeas y pueblos secundarios;
+- caminos y sendas menores;
 - lugares singulares;
 - ruinas;
 - historia local;
 - leyendas;
-- regulación detallada de aprovechamientos;
+- regulación jurídica detallada;
 - elementos de gameplay.

@@ -219,6 +219,14 @@ Entre los elementos geográficos que articulan Norgard se encuentran:
 - Bosque Bajo
 - Bosque del Serhan
 
+#### Oriente
+
+- Bosque Quebrado
+- Bosque del Camino Real
+- Bosque de las Riberas
+- Bosque de los Gemelos
+- Bosque Negro
+
 ---
 
 ## Estado de definición
@@ -231,7 +239,6 @@ Quedan pendientes de desarrollo posterior:
 - golfos, cabos y bahías;
 - nombres de otros mares;
 - islas menores;
-- bosques de la región oriental;
 - pantanos;
 - zonas semidesérticas;
 - accidentes geográficos secundarios;

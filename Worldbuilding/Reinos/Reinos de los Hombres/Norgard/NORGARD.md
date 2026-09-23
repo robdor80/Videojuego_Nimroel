@@ -1540,7 +1540,7 @@ El desarrollo consolidado de este bloque se mantiene en:
 
 ## Método de desarrollo
 
-Las principales masas forestales de Norgard se desarrollan por grandes bloques geográficos:
+Las principales masas forestales de Norgard se organizan por grandes bloques geográficos:
 
 1. occidente;
 2. región central;
@@ -1608,7 +1608,7 @@ Poseen poca importancia económica y estratégica, caza limitada y escasa explot
 
 Masa forestal situada sobre una **meseta elevada**, en el entorno de **Lumina**.
 
-Es un **bosque mixto templado de altura**.
+Es un bosque mixto templado de altura.
 
 En las zonas frías y expuestas predominan las coníferas. En áreas resguardadas aparecen frondosas caducifolias, especialmente **robles y hayas**.
 
@@ -1618,47 +1618,111 @@ Su madera se utiliza en la industria vinícola de Lumina para toneles, barricas,
 
 ### Bosque de los Azurios
 
-Es la gran masa forestal principal de la región central.
+Gran masa forestal de la vertiente occidental de los **Montes Azurios**.
 
-Ocupa buena parte de la **vertiente occidental de los Montes Azurios**, con **Dorth** en sus lindes y **Hallheim** más al sur.
-
-Es un bosque mixto continental y montano:
+Su composición cambia con la altitud:
 
 - zonas bajas: robles, hayas, fresnos y arces;
 - laderas medias: mezcla de frondosas con pinos y abetos;
 - cotas altas: predominio de coníferas resistentes al frío.
 
-Colinas suaves, lomas y claros sin arbolado interrumpen visualmente la masa forestal.
+Posee abundante caza, aldeas y pueblos, y se explotan madera, bayas y resinas.
 
-Posee abundante caza y multitud de aldeas y pueblos.
-
-Se explotan madera, bayas y resinas.
-
-La parte meridional próxima a Hallheim funciona como **Bosque Real** para las cacerías de la **Casa Aethros**.
+La parte meridional próxima a Hallheim funciona como **Bosque Real** para las cacerías de la Casa Aethros.
 
 ### Bosque Bajo
 
-Gran masa forestal discontinua situada **al sur del Bosque Alto**, entre la costa del **Golfo de Norgard** y el **Río Lurien**.
-
-Es un bosque mixto templado de tierras bajas.
+Gran masa forestal discontinua situada al sur del Bosque Alto, entre el **Golfo de Norgard** y el **Río Lurien**.
 
 Predominan robles, hayas, fresnos, arces y abedules, con manchas de pinos y abetos.
 
-Posee abundante sotobosque, bayas, matorral y claros.
+Tiene abundante caza, sotobosque, bayas y resinas.
 
-Tiene mucha caza y es muy aprovechado por aldeas y pueblos locales para madera, bayas, resinas y otros recursos, sin explotación industrial.
+Es muy aprovechado por aldeas y pueblos locales, sin explotación industrial.
 
 ### Bosque del Serhan
 
-Es el sector septentrional de una gran masa forestal que continúa hacia el sur dentro de **Elandor**.
+Sector septentrional de una gran masa forestal que continúa hacia el sur dentro de **Elandor**.
 
-Norgard considera que la parte norte del bosque pertenece a su territorio y gestiona especialmente la franja situada junto al **Río Serhan**.
+Norgard gestiona especialmente la franja situada junto al **Río Serhan**.
 
-No destaca por su tamaño o majestuosidad, sino por su **importancia estratégica y logística** junto al corredor terrestre despejado que comunica Norgard con Elandor.
+Su importancia es estratégica y logística por su relación con el corredor terrestre hacia Elandor.
 
-Es un bosque mixto templado, con predominio de robles, hayas y fresnos y presencia dispersa de coníferas.
+Predominan robles, hayas y fresnos, con coníferas dispersas.
 
-Posee caza salvaje y pocas aldeas próximas al corredor.
+---
+
+## Bosques de la región oriental
+
+### Bosque Quebrado
+
+Masa forestal difusa y discontinua al este de los Montes Azurios, dividida por el **Río Caleran** y fragmentada visualmente por colinas desnudas y claros.
+
+Es un bosque mixto templado de piedemonte y llanura.
+
+Predominan robles, fresnos, olmos y arces; en zonas húmedas aparecen abedules y alisos, y en áreas más pobres o elevadas pinos y abetos.
+
+Está integrado en un paisaje de silvicultura, agricultura y ganadería.
+
+Su entorno constituye la **principal región caballar de Norgard**, dedicada a caballos de cría, trabajo agrícola, monturas de Lords y caballos de guerra.
+
+### Bosque del Camino Real
+
+Masa forestal alargada que prolonga hacia Norgard un gran sistema forestal procedente de Elandor.
+
+Se encuentra entre las **Montañas Velaris —Las Guardianas—** y el **Brazo occidental del Caleran**.
+
+Predominan robles, castaños, fresnos y olmos; junto al agua aparecen alisos y sauces, y en laderas más secas manchas de pino.
+
+Posee caza, silvicultura, aldeas y pueblos.
+
+Por él discurre una de las principales rutas terrestres entre Norgard y Elandor.
+
+### Bosque de las Riberas
+
+Pequeño bosque de llanura aluvial dividido por el **Brazo oriental del Caleran** y rodeado por cultivos, pastizales y explotaciones ganaderas.
+
+Predominan robles, fresnos y olmos; junto al río son comunes álamos, sauces y alisos, con algunas manchas de pino en terrenos secos.
+
+Posee abundante caza, silvicultura y numerosas aldeas y pueblos.
+
+### Bosque de los Gemelos
+
+Bosque de llanura asociado a los **Ríos Sareno y Theleno**, los Gemelos de Treskal.
+
+Comparte la composición general del Bosque de las Riberas: robles, fresnos, olmos, álamos, sauces, alisos y pequeñas manchas de pino.
+
+Posee abundante caza, silvicultura, aldeas, pueblos, agricultura y ganadería.
+
+### Bosque Negro
+
+Gran masa forestal del extremo oriental de Norgard.
+
+Es enorme, denso y antiguo.
+
+Su nombre procede de la enorme densidad de las copas, que crea una **penumbra casi constante** bajo los árboles.
+
+Es un bosque mixto templado-frío, con transición boreal hacia el norte.
+
+En el conjunto aparecen robles, hayas, fresnos, pinos, abetos y píceas. Hacia el norte ganan peso píceas, abetos, pinos y alerces, con abedules en bordes y claros.
+
+El sector septentrional alcanza zonas climáticas más frías y puede permanecer helado o cubierto de nieve durante determinados periodos.
+
+Posee abundante caza y numerosas aldeas vinculadas a la madera y la silvicultura.
+
+Su explotación es intensa, pero se gestiona para conservar la continuidad del bosque.
+
+Es la principal fuente forestal de la industria de **Treskal** y abastece:
+
+- carpintería;
+- ebanistería y muebles;
+- artesanía;
+- construcción;
+- construcción naval;
+- barcos de la **Armada Real**;
+- embarcaciones de la industria pesquera.
+
+El Bosque Negro constituye uno de los principales recursos estratégicos de la **Casa Valrik**.
 
 ---
 
@@ -1670,7 +1734,5 @@ El desarrollo consolidado de este bloque se mantiene en:
 
 ## Estado de definición
 
-**Canon — bloques forestales occidental y central cerrados a nivel geográfico básico.**
-
-Los bosques de la región oriental permanecen pendientes de desarrollo.
+**Canon — bloques forestales occidental, central y oriental cerrados a nivel geográfico básico.**
 

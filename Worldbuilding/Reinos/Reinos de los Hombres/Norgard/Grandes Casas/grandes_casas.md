@@ -398,6 +398,8 @@ La Casa Valrik administra su territorio desde **Treskal**.
 
 Su región constituye la principal zona de producción forestal actualmente definida de Norgard.
 
+El recurso forestal más importante actualmente definido es el **Bosque Negro**, enorme masa forestal densa y antigua del extremo oriental del Reino.
+
 También destaca por:
 
 - artesanía;
@@ -407,7 +409,19 @@ También destaca por:
 
 ## Base de poder
 
-Los bosques de la región Valrik producen la mejor madera destinada actualmente a la construcción de barcos de la **Armada Real**.
+El **Bosque Negro** constituye una de las principales bases materiales del poder económico Valrik.
+
+De él procede una parte esencial de la madera utilizada en:
+
+- carpintería;
+- ebanistería y muebles;
+- artesanía;
+- construcción;
+- construcción naval;
+- barcos de la **Armada Real**;
+- embarcaciones destinadas a la industria pesquera.
+
+La explotación forestal es intensa, pero se gestiona para mantener la continuidad productiva del bosque y evitar su deforestación.
 
 Sus astilleros poseen por ello una enorme importancia estratégica.
 
