@@ -344,6 +344,126 @@ Sin embargo, si existe una **disputa sucesoria**, conflicto entre herederos o un
 
 ---
 
+
+# Paso 10A — Perfiles de las Cinco Grandes Casas
+
+## Marco común
+
+Las Cinco Grandes Casas son **Darovan, Edranor, Aethros, Galdren y Valrik**.
+
+La Casa Aethros ostenta la Corona. Las demás administran grandes territorios del Reino bajo su autoridad.
+
+Las Casas no son soberanas, no legislan de forma independiente y no poseen ejércitos propios. Cada una mantiene una guardia para proteger a la Casa, garantizar la seguridad territorial, mantener la Paz del Rey y hacer cumplir la ley.
+
+La estabilidad económica del Reino depende de una distribución de recursos entre los distintos territorios: metales preciosos, comercio, vino, agricultura, ganadería, minería, armas y herramientas, madera, artesanía, pesca y construcción naval.
+
+La Corona puede reservarse o asumir el control directo de enclaves o recursos estratégicos cuando la seguridad general de Norgard lo exige. Actualmente están establecidos dos casos:
+
+- **Rodas:** control permanente de la Corona.
+- **Forja Estelar:** mando directo de Hallheim en época de guerra.
+
+## Casa Aethros
+
+- **Sede:** Hallheim.
+- **Posición:** Casa reinante.
+- **Emblema:** lobo.
+- **Metal:** plata envejecida.
+- **Campo:** azul real profundo.
+- Ostenta la Corona desde hace aproximadamente mil años.
+- Hallheim es la capital del Reino.
+- La autoridad Aethros se apoya en la institución monárquica y no únicamente en sus posesiones territoriales.
+- La Corona mantiene control directo de **Rodas** y de sus berserkers.
+- Hallheim se encuentra sobre la ruta del **Río Lurien**, navegable desde la capital hasta el mar.
+- Una función política esencial de Aethros es mantener el equilibrio entre las Grandes Casas.
+
+## Casa Darovan
+
+- **Sede:** Treihord.
+- **Ámbito:** oeste de Norgard.
+- **Emblema:** grifo rampante.
+- **Metal:** oro envejecido.
+- **Campo:** carmesí oscuro.
+- Concentra la mayor riqueza monetaria entre las Grandes Casas.
+- Su poder se basa especialmente en oro, plata, comercio y puertos.
+- **Veldora** es un importante puerto comercial.
+- **Taramin** es un importante puerto pesquero.
+- Busca aumentar su influencia sobre la Corona dentro de un Reino estable.
+- Mantiene una antigua rivalidad económica con Galdren.
+
+## Casa Edranor
+
+- **Sede:** Dorth.
+- **Ámbito:** centro-occidental.
+- **Emblema:** ciervo.
+- **Metal:** plata envejecida.
+- **Campo:** púrpura vino oscuro.
+- **Elemento distintivo:** gran cornamenta ramificada.
+- Su territorio constituye la principal zona vinícola actualmente definida de Norgard.
+- Entre sus núcleos destacan **Lumina** y **Karsath**.
+- Su principal aspiración territorial actualmente establecida es **Rodas**, que se encuentra geográficamente en su ámbito pero permanece bajo control directo de la Corona.
+- Esta cuestión genera una tensión política persistente con Hallheim.
+
+## Casa Galdren
+
+- **Sede:** Arleon.
+- **Ámbito:** centro-oriental.
+- **Emblema:** toro.
+- **Metal:** hierro ennegrecido / acero oscuro envejecido.
+- **Campo:** dorado trigo envejecido.
+- Su territorio constituye el gran núcleo agrícola y ganadero de Norgard.
+- Administra **Zanthir**, zona minera y productora de armas y herramientas.
+- Dentro de su ámbito se encuentra la **Forja Estelar**.
+- En época de guerra la Forja Estelar pasa a mando directo de Hallheim.
+- Mantiene una antigua rivalidad económica con Darovan.
+
+## Casa Valrik
+
+- **Sede:** Treskal.
+- **Ámbito:** este de Norgard.
+- **Emblema:** águila marina / gran rapaz.
+- **Metal:** bronce envejecido.
+- **Campo:** verde bosque profundo.
+- Su territorio constituye la principal zona forestal actualmente definida del Reino.
+- Destaca por artesanía, comercio, pesca y construcción naval.
+- Sus bosques proporcionan madera de primera calidad para los barcos de la **Armada Real**.
+- Sus astilleros poseen gran importancia estratégica.
+- La Armada Real pertenece a la Corona; Valrik aporta recursos y capacidad productiva, no una armada soberana propia.
+- El honor y la lealtad hacia la Corona forman parte central de su identidad actualmente definida.
+
+## Relaciones políticas principales
+
+- **Aethros ↔ Edranor:** tensión por Rodas.
+- **Darovan ↔ Galdren:** rivalidad económica.
+- **Aethros ↔ Galdren:** cooperación con reserva de control estratégico sobre la Forja Estelar en guerra.
+- **Aethros ↔ Valrik:** relación de lealtad y dependencia estratégica de sus recursos forestales y navales.
+- **Darovan ↔ Aethros:** búsqueda de influencia Darovan dentro de un sistema cuya estabilidad favorece su prosperidad.
+
+## Pendientes
+
+Siguen sin estar definidos de forma general:
+
+- señores actuales y herederos cuando no consten en documentos específicos;
+- genealogías;
+- fechas de fundación;
+- casas menores o linajes dependientes;
+- matrimonios políticos;
+- tamaño y organización exacta de las guardias;
+- lemas heráldicos;
+- historia detallada de rivalidades y pactos;
+- regulación jurídica específica de Rodas y la Forja Estelar.
+
+## Documento temático
+
+El desarrollo completo de este bloque se mantiene en:
+
+`Grandes Casas/grandes_casas.md`
+
+## Estado de definición
+
+**Canon consolidado.**
+
+---
+
 # Paso 11 — Sucesión de la Corona de Norgard
 
 ## Principio dinástico
