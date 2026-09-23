@@ -188,6 +188,7 @@ Existen **cinco Grandes Casas**, cada una responsable de administrar una gran pa
 
 1. **Casa Darovan**
    - Capital: **Treihord**
+   - Administra también la **Isla de Syvaris**, además de sus dominios occidentales continentales.
 
 2. **Casa Edranor**
    - Capital: **Dorth**
