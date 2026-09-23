@@ -1462,6 +1462,21 @@ Se abre hacia el:
 
 **Mar del Crepúsculo / Ishalien**
 
+Desembocan en él:
+
+- el **Río Lhera**, nacido como bifurcación del Río Belara;
+- el **Río Veldora**, completamente independiente del sistema Belara-Lhera.
+
+---
+
+## Acantilados de la Agonía
+
+Los **Acantilados de la Agonía** forman parte de la fachada costera occidental de Norgard.
+
+Se encuentran en el sector costero próximo al **Bosque de las Agujas**.
+
+Su extensión exacta, altura, origen, historia y peligros específicos permanecen pendientes de desarrollo.
+
 ---
 
 ## Isla de Arven
@@ -1512,3 +1527,60 @@ El desarrollo consolidado de este bloque se mantiene en:
 ## Estado de definición
 
 **Canon — bloque marítimo general de Norgard cerrado.**
+
+---
+
+# Paso 16 — Bosques de Norgard
+
+## Método de desarrollo
+
+Las principales masas forestales de Norgard se desarrollarán por grandes bloques geográficos:
+
+1. occidente;
+2. región central;
+3. oriente.
+
+Los bosques pueden poseer identidad propia aunque pertenezcan a una misma región natural.
+
+---
+
+## Bosques occidentales
+
+### Bosque de las Agujas
+
+El **Bosque de las Agujas** es un bosque antiguo de coníferas situado en el noroeste de Norgard.
+
+No es una masa forestal inmensa, pero posee una marcada antigüedad y carácter salvaje.
+
+Se encuentra:
+
+- al pie del extremo septentrional de los **Montes Valkram**;
+- próximo a la costa occidental de Norgard;
+- junto al sector costero de los **Acantilados de la Agonía**;
+- en el límite meridional de la transición hacia la zona helada del norte.
+
+El **Río Lhera** discurre junto a uno de sus límites. El Lhera nace como bifurcación del **Río Belara** y desemboca en el **Golfo de Veldora**.
+
+El bosque está formado principalmente por **coníferas**.
+
+Su nombre deriva de la apariencia de sus copas puntiagudas:
+
+**Bosque de las Agujas**
+
+No existen aldeas, pueblos ni población permanente dentro de la masa forestal.
+
+Posee **abundante caza mayor**.
+
+Las especies concretas de flora y fauna, así como sus caminos, ruinas, historia, leyendas y posibles elementos de gameplay, quedan pendientes de desarrollo.
+
+## Documento temático
+
+El desarrollo consolidado de este bloque se mantiene en:
+
+`Geografía/bosques.md`
+
+## Estado de definición
+
+**Bosque de las Agujas: canon básico cerrado.**
+
+El resto de bosques occidentales continúa en desarrollo.

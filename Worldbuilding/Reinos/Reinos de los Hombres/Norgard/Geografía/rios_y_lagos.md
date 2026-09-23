@@ -79,6 +79,12 @@ Se separa del **Río Belara** y, a partir de ese punto, continúa como río inde
 
 No debe considerarse simplemente un brazo sin identidad propia: desde su separación posee nombre y curso propios.
 
+### Desembocadura
+
+Tras separarse del Belara, el Lhera continúa hacia el **Golfo de Veldora**, donde desemboca.
+
+En uno de los sectores de su recorrido discurre junto al **Bosque de las Agujas**.
+
 ---
 
 ## 5. Río Veldora
@@ -88,6 +94,12 @@ No debe considerarse simplemente un brazo sin identidad propia: desde su separac
 El **Río Veldora** es un río occidental completamente independiente del sistema Belara-Lhera.
 
 No nace del Belara ni del Lhera y no forma parte de su bifurcación.
+
+### Desembocadura
+
+El Río Veldora desemboca en el **Golfo de Veldora**.
+
+Comparte, por tanto, golfo de desembocadura con el Río Lhera, aunque ambos pertenecen a cursos fluviales distintos.
 
 ### Relación con la ciudad
 

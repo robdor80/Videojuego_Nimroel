@@ -137,7 +137,7 @@ Dentro del Reino existen:
 - regiones oceánicas;
 - zonas continentales;
 - áreas fértiles;
-- grandes bosques;
+- otras grandes masas forestales;
 - costas meridionales cálidas;
 - territorios con condiciones semitropicales;
 - zonas cercanas al semidesierto.
@@ -193,6 +193,16 @@ Entre los elementos geográficos que articulan Norgard se encuentran:
 - Mar del Crepúsculo / Ishalien
 - Mar de Suthiros
 - Golfo de Norgard
+- Golfo de Veldora
+- Bahía de Zanthir
+
+### Referencias costeras actualmente definidas
+
+- Acantilados de la Agonía
+
+### Bosques actualmente definidos
+
+- Bosque de las Agujas
 
 ---
 

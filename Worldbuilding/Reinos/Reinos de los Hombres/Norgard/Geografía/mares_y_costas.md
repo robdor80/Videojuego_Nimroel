@@ -175,9 +175,26 @@ Se abre hacia el:
 
 Veldora queda directamente asociada a este accidente marítimo.
 
+### Ríos asociados
+
+Desembocan en el Golfo de Veldora:
+
+- **Río Lhera**, nacido como bifurcación del Río Belara;
+- **Río Veldora**, completamente independiente del sistema Belara-Lhera.
+
 ---
 
-## 9. Isla de Arven
+## 9. Acantilados de la Agonía
+
+Los **Acantilados de la Agonía** constituyen un accidente costero de la fachada occidental de Norgard.
+
+Se encuentran en el sector costero próximo al **Bosque de las Agujas**, cuya masa forestal alcanza las inmediaciones de esta costa.
+
+Su origen, extensión exacta, altura, historia y peligros concretos quedan pendientes de desarrollo posterior.
+
+---
+
+## 10. Isla de Arven
 
 La **Isla de Arven** se encuentra frente al **Golfo de Veldora**.
 
@@ -196,7 +213,7 @@ Quedan pendientes de desarrollo posterior:
 
 ---
 
-## 10. Isla de Syvaris
+## 11. Isla de Syvaris
 
 La **Isla de Syvaris** forma parte territorial de Norgard.
 
@@ -212,7 +229,7 @@ Estas calas no reciben por ahora nombres propios y solo se desarrollarán indivi
 
 ---
 
-## 11. Accidentes marítimos menores
+## 12. Accidentes marítimos menores
 
 No todos los accidentes costeros de Norgard necesitan nombre propio.
 
