@@ -121,9 +121,32 @@ Su condición insular no la convierte en un territorio externo administrado por 
 
 Geográficamente se integra en el ámbito occidental-meridional de Norgard.
 
+Su paisaje combina un clima cálido con amplias **zonas secas de carácter insular**, lomas abiertas, matorral, pequeños bosques dispersos y sectores costeros más verdes en calas y áreas protegidas.
+
+Syvaris no constituye un desierto.
+
 ---
 
-## 8. Escala y diversidad del territorio
+## 8. Península de Taramin
+
+La península de **Taramin** contiene una de las principales zonas semiáridas de Norgard.
+
+Su norte y centro presentan un paisaje seco de:
+
+- colinas ocres;
+- terrenos pedregosos;
+- matorral;
+- pastos duros;
+- breñas;
+- cauces estacionales.
+
+No se trata de un desierto de grandes dunas.
+
+Hacia el sur aumentan progresivamente la humedad y la cobertura forestal, hasta enlazar con los sectores más cálidos y húmedos del **Bosque de Taramin**.
+
+---
+
+## 9. Escala y diversidad del territorio
 
 La enorme extensión de Norgard explica su gran diversidad geográfica.
 
@@ -146,7 +169,7 @@ Esta diversidad no implica que cada área natural constituya una división polí
 
 ---
 
-## 9. Relación entre geografía y política
+## 10. Relación entre geografía y política
 
 La estructura natural de Norgard y su organización política son dos capas distintas.
 
@@ -164,7 +187,7 @@ Por tanto, los límites naturales y los límites políticos no deben asumirse co
 
 ---
 
-## 10. Principales referencias territoriales
+## 11. Principales referencias territoriales
 
 Entre los elementos geográficos que articulan Norgard se encuentran:
 
@@ -227,6 +250,10 @@ Entre los elementos geográficos que articulan Norgard se encuentran:
 - Bosque de los Gemelos
 - Bosque Negro
 
+#### Franja septentrional
+
+- Bosques boreales y subpolares del norte — gran sistema ecológico sin nombres propios individuales por defecto
+
 ---
 
 ## Estado de definición
@@ -240,6 +267,5 @@ Quedan pendientes de desarrollo posterior:
 - nombres de otros mares;
 - islas menores;
 - pantanos;
-- zonas semidesérticas;
 - accidentes geográficos secundarios;
 - cartografía regional más precisa.
