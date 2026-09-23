@@ -41,6 +41,22 @@ Todo el extremo norte de Norgard, de oeste a este, forma una gran franja natural
 
 No existe una barrera física única que marque su límite meridional.
 
+### Bosques boreales del norte
+
+Dentro de esta gran franja septentrional existen enormes masas de **bosque boreal y subpolar** que se extienden de forma discontinua de oeste a este.
+
+Estas masas se consideran partes de un mismo gran sistema ecológico y **no reciben nombres propios por defecto**. Solo se individualizarán si alguna zona adquiere relevancia histórica, económica, estratégica o de gameplay.
+
+Predominan:
+
+- píceas;
+- abetos;
+- pinos;
+- alerces;
+- abedules en claros y zonas de transición.
+
+Hacia el norte el bosque se vuelve progresivamente más bajo, duro y disperso hasta ceder ante la tundra y las zonas plenamente polares.
+
 ---
 
 ## 3. Región central
@@ -125,12 +141,25 @@ La isla de **Syvaris** forma parte territorial de Norgard.
 
 Geográficamente se integra en el ámbito occidental-meridional.
 
-### Características climáticas
+### Características climáticas y paisajísticas
 
-Su clima es especialmente benigno y presenta rasgos:
+Su clima es especialmente benigno y cálido, con rasgos:
 
 - semitropicales;
 - o ligeramente tropicales.
+
+A escala local presenta amplias zonas **secas y luminosas**, especialmente en el interior y en los sectores más expuestos.
+
+Son característicos:
+
+- lomas secas;
+- matorral insular;
+- praderas estacionales;
+- roquedo costero;
+- pequeños bosques dispersos;
+- zonas más verdes y húmedas en calas y sectores protegidos.
+
+Syvaris **no es un territorio desértico**.
 
 Syvaris no debe confundirse con territorios humanos externos sometidos a la Corona, como Elandor.
 
@@ -138,7 +167,31 @@ Syvaris no debe confundirse con territorios humanos externos sometidos a la Coro
 
 ---
 
-## 7. Región oriental
+## 7. Península de Taramin — zona semiárida de transición
+
+La **península de Taramin** presenta una de las zonas más secas de Norgard.
+
+No constituye un desierto pleno, sino una **región semiárida de transición**.
+
+En buena parte del norte y del centro peninsular son comunes:
+
+- colinas ocres;
+- terrenos pedregosos;
+- matorral costero resistente;
+- pastos duros;
+- breñas;
+- barrancos y cauces estacionales;
+- amplias zonas abiertas de vegetación baja.
+
+Hacia el sur, las condiciones se vuelven gradualmente más húmedas y benignas.
+
+Esta transición enlaza con el **Bosque de Taramin**, que evoluciona hacia formaciones mixtas y finalmente hacia condiciones subtropicales húmedas en el extremo meridional.
+
+La península no debe representarse como un desierto de grandes dunas, sino como un territorio **seco, ventoso, pedregoso y parcialmente forestado**.
+
+---
+
+## 8. Región oriental
 
 La región oriental se extiende al este de la gran barrera formada principalmente por los **Montes Azurios**.
 
@@ -168,7 +221,7 @@ Existe una transición general desde:
 
 ---
 
-## 8. Cordilleras como fronteras naturales
+## 9. Cordilleras como fronteras naturales
 
 Las grandes cordilleras de Norgard tienen especial importancia en la definición de las regiones naturales.
 
@@ -193,7 +246,7 @@ Su descripción detallada se desarrolla en el documento:
 
 ---
 
-## 9. Relación entre geografía natural y política
+## 10. Relación entre geografía natural y política
 
 Norgard debe entenderse mediante dos capas distintas:
 
@@ -231,7 +284,6 @@ Quedan pendientes de desarrollo posterior:
 - nombres propios para algunas grandes regiones naturales si se considera necesario;
 - límites locales más precisos;
 - subdivisiones menores;
-- grandes bosques concretos;
 - zonas pantanosas;
 - accidentes costeros;
 - ecosistemas específicos;
