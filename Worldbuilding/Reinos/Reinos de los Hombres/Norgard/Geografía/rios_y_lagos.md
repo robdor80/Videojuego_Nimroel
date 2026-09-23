@@ -20,7 +20,7 @@ Nace en la **vertiente oriental de los Montes Valkram**.
 
 Desde allí recorre la región central de Norgard y forma el **Lago Antela** al sur de Karsath.
 
-Después continúa hacia **Hallheim** y finalmente desemboca en el **Gran Golfo de Norgard**.
+Después continúa hacia **Hallheim** y finalmente desemboca en el **Golfo de Norgard**.
 
 ### Navegabilidad e importancia
 
@@ -45,7 +45,7 @@ El **Lago Antela** es un gran lago interior situado en el curso del Río Lurien.
 
 Se encuentra al sur de **Karsath**.
 
-El Río Lurien entra en el lago y vuelve a salir de él para continuar su curso hacia Hallheim y el Gran Golfo de Norgard.
+El Río Lurien entra en el lago y vuelve a salir de él para continuar su curso hacia Hallheim y el Golfo de Norgard.
 
 ---
 
@@ -61,7 +61,7 @@ Nace en la **vertiente occidental de los Montes Valkram**, en su sector septentr
 
 Desde allí discurre hacia el oeste y pasa junto a **Treihord**.
 
-Finalmente desemboca en el **Gran Golfo de Norgard**.
+Finalmente desemboca en el **Golfo de Norgard**.
 
 ### Relación con el Río Lhera
 
@@ -101,7 +101,7 @@ La ciudad de **Veldora** recibe su nombre del río.
 
 El **Río Thalen** se encuentra en la península meridional.
 
-Desemboca en el **Gran Golfo de Norgard**.
+Desemboca en el **Golfo de Norgard**.
 
 ### Desembocadura
 

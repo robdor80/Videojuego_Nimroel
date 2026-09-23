@@ -192,7 +192,7 @@ Entre los elementos geográficos que articulan Norgard se encuentran:
 - Mar del Norte
 - Mar del Crepúsculo / Ishalien
 - Mar de Suthiros
-- Gran Golfo de Norgard
+- Golfo de Norgard
 
 ---
 

@@ -1040,7 +1040,7 @@ Sin embargo, su **localización general, origen, recorrido, desembocadura y func
 
 Nace en la **vertiente occidental de los Montes Valkram**, en su sector norte.
 
-El sistema cuenta con un **río principal** que continúa hacia el sur y el este, pasa por **Treihord** y desemboca en el **gran Golfo de Norgard**.
+El sistema cuenta con un **río principal** que continúa hacia el sur y el este, pasa por **Treihord** y desemboca en el **Golfo de Norgard**.
 
 En un punto de su recorrido se separa un **curso secundario** que pasa a tener identidad fluvial propia y, por tanto, deberá recibir **un nombre distinto** del río principal.
 
@@ -1071,7 +1071,7 @@ Durante su recorrido:
 - atraviesa la región central;
 - forma el **Lago Antela**, situado al sur de **Karsath**;
 - continúa hasta **Hallheim**, capital del Reino;
-- desemboca finalmente en el **gran Golfo de Norgard**.
+- desemboca finalmente en el **Golfo de Norgard**.
 
 El Lurien es **navegable desde Hallheim hasta el mar**.
 
@@ -1166,7 +1166,7 @@ El gran río principal del sistema fluvial occidental recibe el nombre de **Bela
 
 El Belara nace en la **vertiente occidental de los Montes Valkram**, en su sector norte.
 
-Continúa hacia el sur y el este, pasa por **Treihord** y desemboca finalmente en el **Gran Golfo de Norgard**.
+Continúa hacia el sur y el este, pasa por **Treihord** y desemboca finalmente en el **Golfo de Norgard**.
 
 Durante su recorrido se separa de él un curso secundario que pasa a tener identidad fluvial propia y recibirá un nombre distinto.
 
@@ -1220,7 +1220,7 @@ El río situado más al sur, en la península, recibe el nombre de **Thalen**.
 
 ## Recorrido general
 
-El Thalen desemboca en el **Gran Golfo de Norgard**.
+El Thalen desemboca en el **Golfo de Norgard**.
 
 En su tramo final se **bifurca**, y la ciudad de **Taramin** se encuentra situada entre ambos brazos del río antes de su desembocadura.
 
@@ -1316,129 +1316,199 @@ Su función local concreta, caudal estacional y relación con Zanthir quedan pen
 
 ---
 
-# Paso 15.1 — Mares del norte y del oeste
+# Paso 15.1 — Mares, golfos, bahías e islas de Norgard
 
-Las aguas que bordean el **norte** y el **oeste** de Norgard se consideran **dos masas marítimas distintas**, aunque **no existe una barrera física clara** que las separe.
+## Principio general
 
-La diferenciación responde a sus características naturales y climáticas: el ámbito septentrional está vinculado a las condiciones frías y polares del extremo norte de Norgard, mientras que el occidental corresponde al dominio oceánico de la fachada oeste.
+Las aguas que bordean Norgard se dividen en varias masas marítimas diferenciadas.
 
-El límite entre ambas masas de agua será por tanto **convencional y cartográfico**, no una frontera física marcada por estrechos, islas o accidentes geográficos.
+Los límites entre algunas de ellas pueden ser **convencionales y cartográficos** cuando no existe una barrera física clara.
 
-## Pendiente
+Quedan actualmente definidos:
 
-- Nombre del mar u océano septentrional.
-- Nombre del mar u océano occidental.
-- Determinar si cada masa se clasifica formalmente como **mar** u **océano**.
+- **Mar del Norte**
+- **Mar del Crepúsculo / Ishalien**
+- **Golfo de Norgard**
+- **Mar de Suthiros**
+- **Bahía de Zanthir**
+- **Golfo de Veldora**
+- **Isla de Arven**
+- **Isla de Syvaris**
 
-## Estado de definición
+---
 
-**Canon — son dos masas marítimas distintas sin separación física natural.**
+## Mar del Norte
 
+El **Mar del Norte** bordea todo el extremo septentrional de Norgard.
 
-### Mar occidental de Norgard — función
+Está estrechamente ligado a las condiciones polares de la franja norte del Reino.
 
-El mar que bordea la fachada occidental de Norgard es una de las grandes vías marítimas de Nimroel.
+Sus aguas son extremadamente frías y presentan hielo y condiciones de navegación severas.
 
-Separa geográficamente a **Norgard** de los **tres reinos élficos** situados al oeste.
+La costa norte contiene numerosos accidentes menores, islas y entrantes costeros que permanecen sin nombre mientras no tengan relevancia específica.
 
-A pesar de actuar como gran separación natural entre los territorios humanos y élficos, es también un espacio de contacto intenso: **miles de naves comerciales** lo recorren, convirtiéndolo en una ruta marítima de enorme importancia económica y estratégica.
+---
 
-Su nombre propio queda pendiente de definir.
+## Mar del Crepúsculo
 
-**Canon — función geográfica, comercial y estratégica cerrada.**
+El mar situado frente a la fachada occidental de Norgard recibe entre los Hombres el nombre de:
 
+**Mar del Crepúsculo**
 
-### Doble denominación del mar occidental
+Es una gran vía marítima de Nimroel.
 
-El gran mar situado entre **Norgard** y los **tres reinos élficos** posee **dos nombres propios tradicionales**:
+Separa geográficamente a Norgard de los **tres reinos élficos** situados al oeste y, al mismo tiempo, constituye una importante vía de contacto entre ambos ámbitos.
 
-- un nombre de origen humano;
-- un nombre de origen élfico.
+**Miles de naves comerciales** recorren estas aguas, por lo que constituyen un eje económico y estratégico de enorme importancia.
 
-Cada pueblo emplea habitualmente su propia denominación, pero **Hombres y Elfos conocen y manejan sin dificultad ambos nombres**. Por tanto, ninguna de las dos formas se considera desconocida o extraña para la otra cultura.
+### Delimitación
 
-El nombre humano del mar queda fijado como **Mar del Crepúsculo**.
+El Mar del Crepúsculo no comprende toda la gran masa de agua central de Nimroel.
 
-El nombre élfico permanece pendiente de definir.
+Su extensión queda limitada a la parte septentrional de esas aguas, situada entre:
 
-**Canon — doble denominación humana/élfica cerrada; nombre humano cerrado.**
-
-
-### Antigüedad del nombre élfico del Mar del Crepúsculo
-
-Los **Elfos llegaron a Nimroel siglos antes que los Hombres**.
-
-Por tanto, el nombre élfico del mar situado entre los territorios élficos y Norgard **es anterior a la presencia humana en Nimroel**.
-
-Ese nombre no nace del comercio con los Hombres, de la separación entre ambas razas ni de la posterior existencia de Norgard. Debe responder a la forma en que los Elfos conocieron e interpretaron ese mar antes de la llegada humana.
-
-El nombre élfico concreto permanece pendiente de definir.
-
-**Canon — antigüedad y origen independiente del nombre élfico cerrados.**
-
-
-### Significado del mar para los Elfos
-
-Antes de la llegada de los Hombres, este mar ya tenía una importancia fundamental para los Elfos.
-
-Para ellos era el **mar que abría sus puertas al resto de Nimroel**: hacia el **este** se extendía el mundo conocido y accesible del continente, mientras que hacia el **oeste** se encontraba **lo desconocido**.
-
-Por tanto, en la tradición élfica este mar estaba asociado desde muy antiguo a la idea de **apertura, acceso y entrada hacia Nimroel**, no a la separación respecto de los Hombres.
-
-El nombre élfico concreto permanece pendiente de definir.
-
-**Canon — significado geográfico y cultural previo a la llegada de los Hombres cerrado.**
-
-
-### Delimitación del Mar del Crepúsculo
-
-El **Mar del Crepúsculo** no designa toda la gran masa de agua central de Nimroel.
-
-Su extensión queda limitada a la **parte septentrional** de esa masa de agua, es decir, al sector marítimo situado entre:
-
-- la fachada occidental de **Norgard**;
-- los **tres reinos élficos** situados al oeste;
+- la fachada occidental de Norgard;
+- los tres reinos élficos occidentales;
 - y el ámbito norte de las aguas centrales de Nimroel.
 
-Las zonas situadas más al **sur** y al **suroeste** de esa misma gran masa de agua **no forman parte del Mar del Crepúsculo** y recibirán otros nombres, al constituir otros mares distintos.
+Las aguas situadas más al sur y al suroeste corresponden a otros mares distintos.
 
-## Estado de definición
+---
 
-**Canon — delimitación general del Mar del Crepúsculo cerrada.**
+## Ishalien
 
+El nombre élfico tradicional del Mar del Crepúsculo es:
 
-### Criterio para los nombres élficos
+**Ishalien**
 
-Los topónimos e hidrónimos de origen élfico se conservarán en su **forma original élfica**.
+Hombres y Elfos conocen ambas denominaciones y pueden utilizarlas sin dificultad.
 
-No se utilizarán como nombre canónico traducciones humanas del tipo «Mar del Umbral», «Mar de la Apertura» u otras equivalencias descriptivas.
+El nombre élfico es anterior a la llegada de los Hombres a Nimroel.
 
-Cuando resulte útil, el significado aproximado en lengua humana podrá registrarse aparte como explicación etimológica, pero **el nombre propio usado por los Elfos será siempre la forma élfica original**.
-
-**Canon — criterio lingüístico para nombres élficos cerrado.**
-
-
-### Nombre élfico del Mar del Crepúsculo
-
-El nombre élfico tradicional de este mar queda fijado como **Ishalien**.
+Para los antiguos Elfos este era el mar que **abría sus puertas al resto de Nimroel**: hacia el este se encontraba el continente conocido y accesible, mientras que hacia el oeste se extendía lo desconocido.
 
 Su significado aproximado en lengua humana es:
 
 **«Mar del Umbral»**
 
-Este significado responde a la antigua concepción élfica del mar como la gran apertura hacia el resto de Nimroel.
-
-#### Etimología élfica
-
-Se fijan las siguientes raíces para uso futuro:
+### Etimología
 
 - **Isha** → umbral, apertura, paso hacia algo.
 - **Lien** → mar / grandes aguas.
 
-Por tanto, **Ishalien** puede entenderse aproximadamente como «las grandes aguas del umbral» o «Mar del Umbral».
+**Ishalien** puede entenderse aproximadamente como «las grandes aguas del umbral».
 
-Estas raíces quedan disponibles para reutilizarse de forma coherente en otros topónimos o hidrónimos de origen élfico.
+Los nombres élficos se conservarán en su forma original y sus traducciones se utilizarán únicamente como explicación etimológica.
+
+---
+
+## Golfo de Norgard
+
+El **Golfo de Norgard** es la masa de agua parcialmente encerrada por:
+
+- la península de Taramin;
+- la costa meridional de Norgard;
+- la península de Elandor.
+
+Su límite exterior se establece mediante una línea geográfica convencional entre:
+
+- el extremo de la península de Taramin;
+- el extremo de la península de Elandor.
+
+Todo lo situado al interior de esa línea pertenece al **Golfo de Norgard**.
+
+A partir de esa línea hacia el exterior comienza otro mar distinto que pertenece ya a la geografía general de Nimroel y queda fuera del desarrollo específico de Norgard.
+
+Entre los principales ríos que desembocan en el Golfo de Norgard se encuentran:
+
+- Río Lurien;
+- Río Belara;
+- Río Thalen.
+
+---
+
+## Mar de Suthiros
+
+El **Mar de Suthiros** se encuentra al sur del sector oriental de Norgard y al norte de Suthiros.
+
+Su extensión continúa hacia el este fuera del mapa actualmente desarrollado.
+
+Por esta razón, su límite oriental queda deliberadamente abierto hasta que se trabaje la geografía general de Nimroel.
+
+Desembocan en él:
+
+- el Río Caleran;
+- los Ríos Sareno y Theleno, que convergen en su tramo final junto a Treskal.
+
+---
+
+## Bahía de Zanthir
+
+La **Bahía de Zanthir** se encuentra en el norte de Norgard y se abre al **Mar del Norte**.
+
+Su navegación es **muy difícil debido al hielo**.
+
+Aunque geográficamente pueda ofrecer abrigo, las condiciones heladas limitan enormemente su utilidad marítima habitual.
+
+No se ha definido todavía la duración exacta de sus periodos de congelación o bloqueo por hielo.
+
+---
+
+## Golfo de Veldora
+
+El **Golfo de Veldora** se encuentra en la costa occidental de Norgard, asociado al entorno de la ciudad de Veldora.
+
+Se abre hacia el:
+
+**Mar del Crepúsculo / Ishalien**
+
+---
+
+## Isla de Arven
+
+La **Isla de Arven** se encuentra frente al Golfo de Veldora.
+
+Forma parte del ámbito territorial occidental de Norgard.
+
+Su nombre es de origen humano.
+
+Su población, historia, recursos y posibles funciones para el juego permanecen pendientes de desarrollo.
+
+---
+
+## Isla de Syvaris
+
+La **Isla de Syvaris** forma parte territorial de Norgard.
+
+La ciudad de Syvaris se encuentra junto a una **bahía principal**.
+
+La isla cuenta además con **varias calas menores**, actualmente sin nombre propio.
+
+---
+
+## Criterio para accidentes marítimos menores
+
+No todos los cabos, islotes, calas, bahías o entrantes costeros necesitan nombre propio.
+
+Se individualizarán cuando posean relevancia suficiente por:
+
+- tamaño;
+- navegación;
+- comercio;
+- estrategia;
+- asentamientos;
+- historia;
+- peligro;
+- misiones o gameplay.
+
+Los accidentes puramente cartográficos pueden permanecer sin nombre.
+
+## Documento temático
+
+El desarrollo consolidado de este bloque se mantiene en:
+
+`Geografía/mares_y_costas.md`
 
 ## Estado de definición
 
-**Canon — nombre élfico, significado y raíces etimológicas cerrados.**
+**Canon — bloque marítimo general de Norgard cerrado.**
