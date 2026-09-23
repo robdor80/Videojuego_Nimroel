@@ -1487,7 +1487,13 @@ Forma parte del ámbito territorial occidental de Norgard.
 
 Su nombre es de origen humano.
 
-Su población, historia, recursos y posibles funciones para el juego permanecen pendientes de desarrollo.
+Es una isla de tamaño medio cubierta aproximadamente en un **90 %** por el **Bosque del Manto Verde**, una masa continua de coníferas.
+
+Posee algunas aldeas concentradas principalmente en la **costa interior orientada hacia el Golfo de Veldora**.
+
+La isla ofrece muy buena caza. Esta actividad tiene importancia local, mientras que la explotación maderera es reducida y se procura conservar la continuidad de la masa forestal.
+
+Los nombres de sus aldeas, su historia y sus posibles funciones estratégicas o de gameplay permanecen pendientes de desarrollo.
 
 ---
 
@@ -1534,7 +1540,7 @@ El desarrollo consolidado de este bloque se mantiene en:
 
 ## Método de desarrollo
 
-Las principales masas forestales de Norgard se desarrollarán por grandes bloques geográficos:
+Las principales masas forestales de Norgard se desarrollan por grandes bloques geográficos:
 
 1. occidente;
 2. región central;
@@ -1552,26 +1558,89 @@ El **Bosque de las Agujas** es un bosque antiguo de coníferas situado en el nor
 
 No es una masa forestal inmensa, pero posee una marcada antigüedad y carácter salvaje.
 
-Se encuentra:
+Se encuentra al pie del extremo septentrional de los **Montes Valkram**, próximo a los **Acantilados de la Agonía** y al límite de transición hacia la zona helada del norte.
 
-- al pie del extremo septentrional de los **Montes Valkram**;
-- próximo a la costa occidental de Norgard;
-- junto al sector costero de los **Acantilados de la Agonía**;
-- en el límite meridional de la transición hacia la zona helada del norte.
+El **Río Lhera** discurre junto a uno de sus límites y desemboca en el **Golfo de Veldora**.
 
-El **Río Lhera** discurre junto a uno de sus límites. El Lhera nace como bifurcación del **Río Belara** y desemboca en el **Golfo de Veldora**.
-
-El bosque está formado principalmente por **coníferas**.
-
-Su nombre deriva de la apariencia de sus copas puntiagudas:
-
-**Bosque de las Agujas**
-
-No existen aldeas, pueblos ni población permanente dentro de la masa forestal.
+No existen aldeas ni población permanente dentro del bosque.
 
 Posee **abundante caza mayor**.
 
-Las especies concretas de flora y fauna, así como sus caminos, ruinas, historia, leyendas y posibles elementos de gameplay, quedan pendientes de desarrollo.
+---
+
+### Bosque del Manto Verde
+
+El **Bosque del Manto Verde** cubre aproximadamente el **90 % de la Isla de Arven**.
+
+Es una masa forestal continua de **coníferas**.
+
+La isla posee algunas aldeas, concentradas principalmente en la costa interior orientada hacia el **Golfo de Veldora**, mientras que el interior permanece dominado por el bosque.
+
+Posee **muy buena caza**, que se aprovecha de forma importante.
+
+La explotación de madera es reducida y se procura conservar la continuidad de la masa forestal.
+
+---
+
+### Bosque de la Linde
+
+El **Bosque de la Linde** es una pequeña masa de coníferas situada junto al **camino principal entre Veldora y Treihord**.
+
+Posee poca caza y no se explota de forma relevante por su madera.
+
+Su importancia es principalmente paisajística y geográfica.
+
+---
+
+### Bosque de los Pilares
+
+El **Bosque de los Pilares** es una gran masa forestal situada al pie del sector meridional de los **Montes Valkram**.
+
+Se extiende hacia el este y sureste hasta el entorno del tramo final del **Río Belara**.
+
+Constituye un único sistema forestal, aunque su aspecto es discontinuo por la presencia de **colinas abiertas, lomas y claros extensos**.
+
+Predominan las coníferas y existe fauna salvaje.
+
+En su entorno hay **aldeas y pueblos** que aprovechan sus recursos.
+
+Su madera se utiliza de forma importante para abastecer, entre otros usos, a las **minas de oro y plata explotadas por Treihord en los Montes Valkram**.
+
+El nombre **Bosque de los Pilares** está ligado a este uso de la madera en las explotaciones mineras.
+
+---
+
+### Bosque de Taramin
+
+El **Bosque de Taramin** es una extensa masa forestal longitudinal que recorre buena parte de la península de Taramin hacia el sur.
+
+Su vegetación cambia progresivamente con la latitud:
+
+- predominio de **coníferas** en el norte;
+- bosque **mixto** en la zona de transición;
+- características de **bosque subtropical húmedo** hacia el extremo meridional.
+
+Todo el conjunto conserva una única identidad geográfica.
+
+Existen multitud de aldeas tanto en la **costa oriental**, orientada hacia Syvaris, como en la **costa occidental**, orientada hacia otras tierras de Nimroel fuera de Norgard.
+
+El interior permanece mucho más dominado por la masa forestal.
+
+Existe caza, pero la fauna difiere según el clima y la latitud.
+
+El bosque se aprovecha de forma considerable por las poblaciones locales, aunque **no mediante una explotación intensiva o industrial**.
+
+---
+
+### Bosques de Syvaris
+
+Los **Bosques de Syvaris** son masas forestales ligeras, dispersas y discontinuas.
+
+No constituyen un único bosque continuo.
+
+Poseen poca relevancia económica y estratégica, no destacan por la abundancia de caza y su madera no se explota de forma intensa.
+
+---
 
 ## Documento temático
 
@@ -1581,6 +1650,7 @@ El desarrollo consolidado de este bloque se mantiene en:
 
 ## Estado de definición
 
-**Bosque de las Agujas: canon básico cerrado.**
+**Canon — bloque forestal occidental cerrado a nivel geográfico básico.**
 
-El resto de bosques occidentales continúa en desarrollo.
+Los bosques de las regiones central y oriental permanecen pendientes de desarrollo.
+

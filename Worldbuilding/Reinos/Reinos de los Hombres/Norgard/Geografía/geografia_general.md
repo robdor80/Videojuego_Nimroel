@@ -202,7 +202,14 @@ Entre los elementos geográficos que articulan Norgard se encuentran:
 
 ### Bosques actualmente definidos
 
+#### Occidente
+
 - Bosque de las Agujas
+- Bosque del Manto Verde — Isla de Arven
+- Bosque de la Linde
+- Bosque de los Pilares
+- Bosque de Taramin
+- Bosques de Syvaris
 
 ---
 
