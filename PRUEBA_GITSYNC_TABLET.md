@@ -1,1 +1,0 @@
-Prueba creada desde la Samsung Tab S9+ mediante GitSync.
