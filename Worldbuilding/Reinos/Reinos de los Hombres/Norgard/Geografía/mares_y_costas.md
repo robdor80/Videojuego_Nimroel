@@ -202,11 +202,17 @@ Forma parte del ámbito territorial occidental de Norgard.
 
 Su nombre es de origen humano.
 
+Es una isla de tamaño medio cuya superficie está cubierta aproximadamente en un **90 %** por una masa forestal continua de coníferas conocida como:
+
+**Bosque del Manto Verde**
+
+La isla posee algunas aldeas, concentradas principalmente en la **costa interior orientada hacia el Golfo de Veldora**.
+
+El bosque ofrece muy buena caza. La actividad cinegética tiene importancia local, mientras que la explotación maderera es reducida y se procura conservar la continuidad de la masa forestal.
+
 Quedan pendientes de desarrollo posterior:
 
-- población;
-- asentamientos;
-- recursos;
+- nombres y características de las aldeas;
 - historia;
 - función estratégica;
 - posibles elementos de gameplay.
