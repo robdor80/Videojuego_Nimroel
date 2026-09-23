@@ -1,0 +1,1444 @@
+# NORGARD — LORE DEL RPG
+
+## Estado
+Documento de trabajo canónico para el Content Pack de **Nimroel RPG**.
+
+---
+
+# Paso 1 — Identidad territorial
+
+## Definición
+
+**Norgard es simultáneamente una región geográfica de Nimroel y un reino.**
+
+El nombre **Norgard** nace con la propia fundación del reino. No era el nombre previo de una región geográfica anterior.
+
+Cuando los humanos se asentaron en el territorio donde actualmente se encuentra **Hallheim**, fundaron allí su capital y crearon el **Reino de Norgard**. En ese mismo momento nació también Norgard como entidad territorial.
+
+La extensión territorial del Norgard original era menor que la actual.
+
+Con el paso del tiempo, el Reino de Norgard amplió sus fronteras mediante la conquista de territorios que anteriormente pertenecían a otras culturas y/o razas.
+
+## Canon fijado
+
+- Norgard es una **región geográfica**.
+- Norgard es también una **entidad política: el Reino de Norgard**.
+- Reino y territorio nacen simultáneamente.
+- El nombre **Norgard** fue adoptado por los humanos al fundar el reino.
+- **Hallheim** es el núcleo de fundación del Reino de Norgard y su capital.
+- El territorio original de Norgard era menor que el actual.
+- Parte del territorio actual procede de expansiones y conquistas posteriores.
+- Todavía no se ha definido qué territorios fueron conquistados, cuándo se produjeron esas conquistas ni a qué culturas o razas pertenecían.
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 2 — Ubicación y límites generales
+
+## Ubicación
+
+Norgard se sitúa en la mitad norte de Nimroel, ocupando una posición que se extiende desde la zona centro-norte hacia el noreste.
+
+Su territorio se adentra en el círculo polar norte. Conceptualmente, su posición septentrional es comparable a la de grandes territorios del extremo norte de un continente, prolongándose hacia regiones polares.
+
+## Límites
+
+- **Norte:** mar. El territorio continúa hacia latitudes polares y, más allá de sus costas, se extiende el océano.
+- **Este:** mar.
+- **Oeste:** mar.
+- **Sur:** combinación de mar y frontera terrestre con **Elandor**.
+
+Elandor es un territorio humano distinto de Norgard. No forma parte territorialmente del Reino de Norgard, aunque se encuentra bajo la autoridad de la **Corona de Norgard**.
+
+## Relación política relevante
+
+Los Hombres poseen varios territorios, pero sólo existe un Reino y un único Rey: **Norgard**.
+
+El Rey de Norgard ostenta también la condición de **Señor Supremo de los Hombres**. Por ello, la autoridad de la Corona de Norgard se extiende más allá de las fronteras geográficas del propio Norgard.
+
+Esto establece una distinción canónica importante:
+
+**territorio de Norgard ≠ territorios bajo la Corona de Norgard**
+
+Elandor pertenece al segundo grupo: está bajo la Corona, pero no es Norgard.
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 3 — Forma general del territorio
+
+## Definición
+
+Norgard es un **territorio continental inmenso** situado en la franja centro-norte de Nimroel y extendido ampliamente hacia el este.
+
+Aunque posee costa al norte, al este y al oeste, **Norgard no se considera una península**. Su escala y su integración dentro de una gran masa continental hacen que deba entenderse como una gran región continental septentrional.
+
+En cambio, **Elandor sí puede considerarse una península**, ya que se proyecta hacia el sur desde la gran masa continental de Norgard.
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 4 — Relieve general
+
+## Definición
+
+Norgard posee una **gran diversidad de relieves** debido a su enorme extensión territorial.
+
+En su conjunto existen:
+
+- cordilleras;
+- mesetas;
+- grandes llanuras;
+- zonas heladas;
+- regiones casi semidesérticas.
+
+No existe un único tipo de relieve que defina todo el territorio.
+
+## Distribución general
+
+- En los **extremos occidental y oriental** de Norgard predominan en mayor medida las **zonas montañosas**.
+- En la **zona central** predominan más las **llanuras y mesetas**.
+
+Esta distribución es general y no excluye la presencia de otros tipos de relieve dentro de cada zona.
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 5 — Clima general
+
+## Definición
+
+Norgard posee una **gran diversidad climática** debido a su enorme extensión territorial y a la variedad de sus subzonas.
+
+Entre los grandes tipos de clima presentes se encuentran:
+
+- **polar** en el extremo norte;
+- **continental** en buena parte de las zonas interiores y centrales;
+- **oceánico** en numerosas áreas costeras;
+- **semitropical** en las costas más meridionales y en la isla de **Syvaris**.
+
+La distribución climática exacta por subregiones queda pendiente de definir en etapas posteriores.
+
+## Syvaris
+
+La isla de **Syvaris forma parte territorial de Norgard**.
+
+No es un territorio externo administrado bajo la Corona de Norgard, como ocurre con Elandor, sino una parte integrante del propio territorio norgardiano.
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 6 — Organización interna del territorio
+
+## Definición
+
+Norgard está dividido internamente en **zonas claramente diferenciadas**, tanto desde el punto de vista territorial como político.
+
+Sin embargo, ambas divisiones **no coinciden necesariamente al 100 %**.
+
+Una región política puede abarcar varios biomas o áreas naturales diferentes, y una misma región natural puede extenderse a través de varias divisiones políticas.
+
+Por tanto, Norgard debe entenderse mediante dos capas relacionadas pero independientes:
+
+- **divisiones naturales o geográficas**;
+- **divisiones políticas o administrativas**.
+
+Estas capas pueden coincidir parcialmente cuando tenga sentido, pero no deben tratarse como equivalentes.
+
+## Implicación para el LoreJSON
+
+La geografía natural y la organización política de Norgard deberán poder representarse por separado y relacionarse entre sí mediante referencias.
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 7 — División política de Norgard
+
+## Estructura general
+
+El territorio de Norgard se divide políticamente según el dominio administrativo de sus **Grandes Casas**.
+
+Existen **cinco Grandes Casas**, cada una responsable de administrar una gran parte del territorio. Todas están, sin embargo, bajo la autoridad superior de la **Casa Aethros**, que es la Casa Regente del trono de Norgard.
+
+## Grandes Casas de oeste a este
+
+1. **Casa Darovan**
+   - Capital: **Treihord**
+
+2. **Casa Edranor**
+   - Capital: **Dorth**
+
+3. **Casa Aethros**
+   - Capital: **Hallheim**
+   - Es la **Casa Regente**.
+   - Hallheim es además la **capital del Reino de Norgard**.
+
+4. **Casa Galdren**
+   - Capital: **Arleon**
+
+5. **Casa Valrik**
+   - Capital: **Treskal**
+
+## Identificación territorial
+
+Los territorios administrados por las Grandes Casas **no poseen necesariamente un nombre político independiente**.
+
+Normalmente se identifican:
+
+- por la **Casa que los gobierna**;
+- o, en determinados contextos, por la **capital de ese territorio**.
+
+Por tanto, la identidad territorial política está ligada directamente a la Gran Casa administradora y a su centro principal de poder.
+
+## Jerarquía
+
+Las cinco Grandes Casas administran sus respectivos dominios dentro de Norgard, pero el conjunto del Reino permanece bajo el control de la **Casa Aethros**, como Casa Regente.
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 8 — Poder y autonomía de las Grandes Casas
+
+## Principio general
+
+Las Grandes Casas de Norgard administran sus respectivos territorios, pero **no son entidades soberanas**.
+
+Todo el Reino se encuentra bajo la autoridad de la **Corona de Norgard**, ejercida desde **Hallheim** por la **Casa Aethros**.
+
+## Ley y justicia
+
+La **Ley es la misma en todo Norgard**.
+
+Las Grandes Casas tienen capacidad para impartir en sus territorios la **Justicia del Rey**, aplicando esa misma ley común del Reino.
+
+No legislan de forma independiente sobre su territorio.
+
+## Administración económica
+
+Cada Gran Casa:
+
+- administra y cuida su territorio;
+- genera beneficios y recursos;
+- aporta a la Corona la parte estipulada;
+- conserva la parte que le corresponde para su propia administración y sostenimiento.
+
+Las Grandes Casas deben **rendir cuentas a la Corona** por su gestión.
+
+## Fuerza armada
+
+Las Grandes Casas **no poseen ejército propio**.
+
+La potestad militar del Reino corresponde a **Hallheim y a la Corona de Norgard**.
+
+Cada Gran Casa sí dispone de una **guardia propia**, cuya función es:
+
+- proteger a la propia Casa;
+- garantizar la seguridad de su territorio;
+- mantener la **Paz del Rey**;
+- hacer cumplir la ley y el orden dentro de su jurisdicción.
+
+Estas guardias no equivalen a ejércitos independientes.
+
+## Jerarquía política
+
+Aunque las Grandes Casas disfrutan de una amplia capacidad administrativa dentro de sus dominios, toda su autoridad deriva del orden político de Norgard.
+
+**Todo queda sometido, en última instancia, al poder de Hallheim, de la Corona y de la Casa Aethros.**
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 9 — Títulos y jerarquía nobiliaria y administrativa
+
+## Aristocracia de Norgard
+
+En Norgard, los miembros de la aristocracia utilizan el tratamiento de **Lord**.
+
+Ejemplo canónico de uso:
+
+**Lord Draven Valrik, señor de la Casa de Valrik.**
+
+El jefe de una Gran Casa puede ser referido como **señor de su Casa**, manteniendo el tratamiento de **Lord**.
+
+## Caballería
+
+Los miembros de la caballería utilizan el tratamiento de **Sir**.
+
+## Títulos inexistentes
+
+En Norgard no existen rangos nobiliarios equivalentes a:
+
+- duque;
+- marqués;
+- conde.
+
+La aristocracia no se estructura mediante esos títulos.
+
+## Gobernadores
+
+Los territorios que **no forman parte geográfica de Norgard**, pero que se encuentran bajo la autoridad de la **Corona de Norgard**, son administrados por **Gobernadores**.
+
+**Elandor** es un ejemplo de este tipo de territorio.
+
+El título de Gobernador pertenece, por tanto, a la administración de territorios dependientes de la Corona situados fuera del territorio propio de Norgard.
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 10 — Sucesión de las Grandes Casas
+
+## Principio general
+
+El señorío de una Gran Casa de Norgard es **hereditario**.
+
+Cuando muere el Lord que encabeza una Gran Casa, su heredero legítimo pasa a convertirse **automáticamente** en el nuevo señor de la Casa.
+
+## Papel de la Corona
+
+La **Corona de Norgard** confirma formalmente la sucesión como parte del protocolo político del Reino.
+
+Esta confirmación no constituye, en condiciones normales, un nombramiento discrecional: la sucesión se produce por derecho hereditario.
+
+Sin embargo, si existe una **disputa sucesoria**, conflicto entre herederos o una situación excepcional que ponga en cuestión la continuidad de la Casa, la Corona posee potestad para **intervenir y resolver la sucesión**.
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+
+# Paso 10A — Perfiles de las Cinco Grandes Casas
+
+## Marco común
+
+Las Cinco Grandes Casas son **Darovan, Edranor, Aethros, Galdren y Valrik**.
+
+La Casa Aethros ostenta la Corona. Las demás administran grandes territorios del Reino bajo su autoridad.
+
+Las Casas no son soberanas, no legislan de forma independiente y no poseen ejércitos propios. Cada una mantiene una guardia para proteger a la Casa, garantizar la seguridad territorial, mantener la Paz del Rey y hacer cumplir la ley.
+
+La estabilidad económica del Reino depende de una distribución de recursos entre los distintos territorios: metales preciosos, comercio, vino, agricultura, ganadería, minería, armas y herramientas, madera, artesanía, pesca y construcción naval.
+
+La Corona puede reservarse o asumir el control directo de enclaves o recursos estratégicos cuando la seguridad general de Norgard lo exige. Actualmente están establecidos dos casos:
+
+- **Rodas:** control permanente de la Corona.
+- **Forja Estelar:** mando directo de Hallheim en época de guerra.
+
+## Casa Aethros
+
+- **Sede:** Hallheim.
+- **Posición:** Casa reinante.
+- **Emblema:** lobo.
+- **Metal:** plata envejecida.
+- **Campo:** azul real profundo.
+- Ostenta la Corona desde hace aproximadamente mil años.
+- Hallheim es la capital del Reino.
+- La autoridad Aethros se apoya en la institución monárquica y no únicamente en sus posesiones territoriales.
+- La Corona mantiene control directo de **Rodas** y de sus berserkers.
+- Hallheim se encuentra sobre la ruta del **Río Lurien**, navegable desde la capital hasta el mar.
+- Una función política esencial de Aethros es mantener el equilibrio entre las Grandes Casas.
+
+## Casa Darovan
+
+- **Sede:** Treihord.
+- **Ámbito:** oeste de Norgard.
+- **Emblema:** grifo rampante.
+- **Metal:** oro envejecido.
+- **Campo:** carmesí oscuro.
+- Concentra la mayor riqueza monetaria entre las Grandes Casas.
+- Su poder se basa especialmente en oro, plata, comercio y puertos.
+- **Veldora** es un importante puerto comercial.
+- **Taramin** es un importante puerto pesquero.
+- Busca aumentar su influencia sobre la Corona dentro de un Reino estable.
+- Mantiene una antigua rivalidad económica con Galdren.
+
+## Casa Edranor
+
+- **Sede:** Dorth.
+- **Ámbito:** centro-occidental.
+- **Emblema:** ciervo.
+- **Metal:** plata envejecida.
+- **Campo:** púrpura vino oscuro.
+- **Elemento distintivo:** gran cornamenta ramificada.
+- Su territorio constituye la principal zona vinícola actualmente definida de Norgard.
+- Entre sus núcleos destacan **Lumina** y **Karsath**.
+- Su principal aspiración territorial actualmente establecida es **Rodas**, que se encuentra geográficamente en su ámbito pero permanece bajo control directo de la Corona.
+- Esta cuestión genera una tensión política persistente con Hallheim.
+
+## Casa Galdren
+
+- **Sede:** Arleon.
+- **Ámbito:** centro-oriental.
+- **Emblema:** toro.
+- **Metal:** hierro ennegrecido / acero oscuro envejecido.
+- **Campo:** dorado trigo envejecido.
+- Su territorio constituye el gran núcleo agrícola y ganadero de Norgard.
+- Administra **Zanthir**, zona minera y productora de armas y herramientas.
+- Dentro de su ámbito se encuentra la **Forja Estelar**.
+- En época de guerra la Forja Estelar pasa a mando directo de Hallheim.
+- Mantiene una antigua rivalidad económica con Darovan.
+
+## Casa Valrik
+
+- **Sede:** Treskal.
+- **Ámbito:** este de Norgard.
+- **Emblema:** águila marina / gran rapaz.
+- **Metal:** bronce envejecido.
+- **Campo:** verde bosque profundo.
+- Su territorio constituye la principal zona forestal actualmente definida del Reino.
+- Destaca por artesanía, comercio, pesca y construcción naval.
+- Sus bosques proporcionan madera de primera calidad para los barcos de la **Armada Real**.
+- Sus astilleros poseen gran importancia estratégica.
+- La Armada Real pertenece a la Corona; Valrik aporta recursos y capacidad productiva, no una armada soberana propia.
+- El honor y la lealtad hacia la Corona forman parte central de su identidad actualmente definida.
+
+## Relaciones políticas principales
+
+- **Aethros ↔ Edranor:** tensión por Rodas.
+- **Darovan ↔ Galdren:** rivalidad económica.
+- **Aethros ↔ Galdren:** cooperación con reserva de control estratégico sobre la Forja Estelar en guerra.
+- **Aethros ↔ Valrik:** relación de lealtad y dependencia estratégica de sus recursos forestales y navales.
+- **Darovan ↔ Aethros:** búsqueda de influencia Darovan dentro de un sistema cuya estabilidad favorece su prosperidad.
+
+## Pendientes
+
+Siguen sin estar definidos de forma general:
+
+- señores actuales y herederos cuando no consten en documentos específicos;
+- genealogías;
+- fechas de fundación;
+- casas menores o linajes dependientes;
+- matrimonios políticos;
+- tamaño y organización exacta de las guardias;
+- lemas heráldicos;
+- historia detallada de rivalidades y pactos;
+- regulación jurídica específica de Rodas y la Forja Estelar.
+
+## Documento temático
+
+El desarrollo completo de este bloque se mantiene en:
+
+`Grandes Casas/grandes_casas.md`
+
+## Estado de definición
+
+**Canon consolidado.**
+
+---
+
+# Paso 11 — Sucesión de la Corona de Norgard
+
+## Principio dinástico
+
+La **Corona de Norgard pertenece a la Casa Aethros** mientras exista una línea sucesoria legítima de dicha Casa.
+
+Las Grandes Casas no eligen al monarca durante una sucesión ordinaria si existe un heredero Aethros legítimo e indiscutible.
+
+## Sistema de sucesión
+
+La sucesión se rige por **primogenitura sin preferencia de sexo**.
+
+El hijo o hija legítimo de mayor edad ocupa el primer lugar en la sucesión, y cada rama transmite sus derechos sucesorios a su propia descendencia legítima.
+
+La muerte prematura de un heredero no elimina los derechos de sus descendientes.
+
+## Acceso al trono
+
+La transmisión de la Corona es **automática e inmediata**.
+
+En el momento de la muerte del monarca, el heredero legítimo se convierte en Rey o Reina de Norgard.
+
+La legitimidad del nuevo soberano no depende de:
+
+- votación;
+- aprobación de las Grandes Casas;
+- coronación posterior.
+
+## Monarca menor de edad
+
+Un heredero menor puede convertirse en Rey o Reina de pleno derecho.
+
+Si accede al trono antes de los **16 años**, conserva la titularidad y legitimidad de la Corona, pero el gobierno efectivo queda en manos de una **Regencia**.
+
+La Regencia termina cuando el soberano alcanza los **16 años**, momento en el que comienza a ejercer personalmente las prerrogativas reales.
+
+La mayoría de edad general en Norgard se alcanza a los **18 años**.
+
+## Coronación
+
+Si el soberano hereda el trono siendo menor de 16 años, la coronación solemne se aplaza hasta que alcance esa edad.
+
+La coronación no crea la legitimidad del monarca: la confirma ceremonialmente.
+
+## Matrimonio y consorte
+
+El matrimonio no es requisito para heredar ni ejercer la Corona.
+
+El cónyuge del soberano tiene condición de **consorte**, no de soberano por derecho propio.
+
+El matrimonio con un miembro Aethros no concede derechos propios sobre la Corona.
+
+## Continuidad de la Casa Aethros
+
+Los hijos legítimos del monarca reinante llevan el apellido **Aethros**.
+
+Las ramas secundarias pueden conservar otros apellidos mientras no constituyan la rama reinante, sin perder por ello la sangre Aethros ni los derechos sucesorios que legalmente les correspondan.
+
+Si una rama secundaria accede legítimamente al trono, pasa a convertirse en la nueva rama reinante de la Casa Aethros.
+
+## Renovación de lealtad
+
+Tras cada sucesión, las Grandes Casas deben renovar formalmente sus votos de:
+
+- obediencia;
+- lealtad;
+- reconocimiento de la nueva Corona.
+
+Estos votos no crean la legitimidad del soberano: la reconocen públicamente.
+
+## Extinción de la sucesión ordinaria
+
+Si desaparecen todas las líneas legítimas documentadas de la Casa Aethros, se declara una **Crisis de Sucesión de la Corona**.
+
+En ese momento se activa el procedimiento extraordinario del **Gran Consejo de Sucesión**.
+
+## Gran Consejo de Sucesión
+
+Es una institución extraordinaria que solo se convoca cuando no existe un heredero Aethros legítimo e indiscutible.
+
+Antes de considerar una nueva dinastía deben investigarse, por orden:
+
+1. descendientes legítimos directos;
+2. ramas secundarias legítimas Aethros;
+3. descendientes ilegítimos de sangre Aethros cuya filiación pueda demostrarse;
+4. únicamente si todo lo anterior fracasa, una nueva Casa Real.
+
+El Gran Consejo de Sucesión está compuesto por **siete miembros con voto**:
+
+- Señor o Señora de la Casa Darovan;
+- Señor o Señora de la Casa Edranor;
+- Señor o Señora de la Casa Galdren;
+- Señor o Señora de la Casa Valrik;
+- Decano del Gran Consejo;
+- Consejero de Justicia;
+- Canciller de la Corona.
+
+Las decisiones definitivas requieren una mayoría reforzada de **cinco votos de siete**.
+
+## Interregno
+
+Mientras se resuelve una crisis sucesoria extraordinaria, Norgard entra en **Interregno**.
+
+Durante ese periodo no existe Rey, Reina ni Regente reconocido.
+
+El Gran Consejo ordinario mantiene la continuidad institucional con poderes limitados hasta que se restablezca una Corona legítima.
+
+## Documentos canónicos de detalle
+
+La regulación completa se desarrolla en:
+
+- `NORGARD_MONARQUIA_Y_SUCESION_DE_LA_CORONA_v0.1.md`
+- `NORGARD_GRAN_CONSEJO_DE_SUCESION_v0.1.md`
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 12.1 — Gran franja polar del norte
+
+## Definición
+
+Todo el extremo norte de Norgard, de oeste a este, forma una **gran franja natural de clima polar**.
+
+Esta región geográfica es continua a escala general, aunque atraviesa varios dominios políticos de las Grandes Casas y no constituye una unidad administrativa propia.
+
+## Población
+
+La franja polar está habitada en determinados puntos, pero en su mayor parte permanece **muy poco poblada o despoblada**.
+
+## Transición climática
+
+El límite meridional de esta región no está marcado por una frontera geográfica brusca.
+
+La transición hacia el sur es relativamente suave:
+
+**polar → fría → continental**
+
+Por tanto, la región polar se integra gradualmente con las zonas interiores más templadas de Norgard.
+
+## Estado de definición
+
+**Canon — bloque cerrado.**
+
+
+---
+
+# Paso 12.2 — Gran región natural central
+
+## Definición
+
+La zona central de Norgard constituye una **inmensa región natural diferenciada** dentro del territorio.
+
+Esta gran región central está delimitada lateralmente por **grandes cordilleras montañosas**, que actúan como separación natural respecto a los extremos occidental y oriental de Norgard.
+
+## Estructura climática interna
+
+Dentro de esta gran región central se distinguen, a escala general, dos grandes franjas:
+
+- una **zona fría central**, situada más al norte;
+- una **zona continental central**, situada más al sur.
+
+La transición entre ambas no implica necesariamente una frontera brusca, sino una gradación climática dentro del gran espacio central.
+
+## Relieve predominante
+
+Dentro de esta región central predominan especialmente:
+
+- las grandes llanuras;
+- las mesetas;
+- zonas ligeramente elevadas.
+
+**No existen cordilleras dentro de la zona central.**
+
+Las grandes áreas montañosas visibles en sus extremos quedan asociadas a los bordes occidental y oriental del espacio central, no a su relieve interior.
+
+## Estado de definición
+
+**Canon — bloque cerrado en su estructura general.**
+
+
+---
+
+# Paso 12.3 — Cordilleras limítrofes de la región central
+
+## Definición
+
+Las grandes cordilleras situadas a ambos lados de la región central de Norgard actúan como **límites geográficos importantes**.
+
+También pueden coincidir con **límites políticos**, ya que separan territorios administrados por distintas Grandes Casas.
+
+Estas cordilleras tendrán identidad y nombre propios.
+
+## Relación con las regiones adyacentes
+
+Las cordilleras no constituyen necesariamente una región natural independiente.
+
+Cada una funciona como una frontera compartida:
+
+- una de sus vertientes pertenece geográficamente a la **zona central**;
+- la vertiente opuesta pertenece a la **región adyacente** correspondiente.
+
+Por tanto, una misma cordillera puede formar parte del paisaje de dos grandes regiones naturales distintas y, al mismo tiempo, servir de referencia para una frontera política.
+
+## Estado de definición
+
+**Canon — bloque cerrado en su función general.**
+
+Los nombres concretos de las cordilleras quedan pendientes.
+
+
+---
+
+# Paso 12.4 — Gran región natural occidental
+
+## Definición
+
+La región occidental de Norgard presenta un relieve muy variado, aunque con una fuerte presencia montañosa.
+
+A escala general puede describirse como una región aproximadamente **mitad montañosa**, combinada con otras zonas de relieve más abierto.
+
+## Relieve
+
+En esta región existen:
+
+- grandes áreas montañosas;
+- llanuras y terrenos más suaves situados al pie de las montañas;
+- zonas de transición entre montaña y llanura;
+- una gran área boscosa hacia el sur.
+
+Las cordilleras y accidentes geográficos concretos todavía no tienen nombres canónicos.
+
+## Clima
+
+El clima general de la región occidental es **oceánico suave**.
+
+Hacia el extremo sur, el clima se vuelve todavía más benigno y cálido, llegando a adquirir características **ligeramente subtropicales**.
+
+## Syvaris
+
+La isla de **Syvaris**, que forma parte territorial de Norgard, se integra geográficamente en este ámbito occidental-meridional.
+
+Su clima es especialmente suave y presenta rasgos **semitropicales o ligeramente tropicales** en comparación con el resto de Norgard.
+
+## Estado de definición
+
+**Canon — bloque cerrado en su estructura general.**
+
+
+---
+
+# Paso 12.5 — Gran región natural oriental
+
+## Definición
+
+La región oriental de Norgard constituye una gran área natural diferenciada situada al este de la región central.
+
+Su límite occidental está marcado en buena medida por las grandes cordilleras que separan ambas regiones.
+
+## Relieve
+
+La mayor parte de la región oriental está formada por **grandes llanuras fértiles**.
+
+Las zonas montañosas más importantes se concentran principalmente en:
+
+- el límite occidental con la región central;
+- determinadas áreas septentrionales.
+
+## Clima
+
+La región presenta una transición climática marcada por la distancia al mar y la latitud:
+
+- **oceánico** en las zonas costeras;
+- **continental** hacia el interior;
+- **continental frío** hacia el norte;
+- condiciones **frías y polares** en el extremo septentrional.
+
+## Fertilidad
+
+Las grandes llanuras orientales constituyen una de las zonas naturalmente más fértiles de Norgard.
+
+## Estado de definición
+
+**Canon — bloque cerrado en su estructura general.**
+
+
+---
+
+# Paso 13.1 — Montes Valkram
+
+## Definición
+
+La gran cordillera principal del occidente de Norgard recibe el nombre de **Montes Valkram**.
+
+Se extiende principalmente de **norte a sur** y actúa como una de las grandes barreras geográficas del Reino.
+
+## Función territorial
+
+Los Montes Valkram separan la **región occidental** de Norgard de la **región central**.
+
+Su trazado constituye además, en distintos tramos, una referencia importante para los **límites políticos** entre territorios administrados por Grandes Casas diferentes.
+
+## Importancia física
+
+Es la más importante de las grandes cordilleras occidentales de Norgard por:
+
+- tamaño;
+- altura;
+- función como barrera territorial;
+- importancia política;
+- riqueza mineral.
+
+## Recursos
+
+Los Montes Valkram son especialmente ricos en **minerales preciosos**, destacando:
+
+- oro;
+- plata.
+
+## Estado de definición
+
+**Canon — nombre y función general cerrados.**
+
+
+---
+
+# Paso 13.2 — Montañas Elyra
+
+## Definición
+
+La cordillera meridional occidental de Norgard recibe el nombre de **Montañas Elyra**.
+
+Se encuentra al sur de los Montes Valkram y se prolonga hacia el sur por la península.
+
+## Importancia
+
+Es una cordillera importante, aunque de menor peso territorial que los Montes Valkram.
+
+También posee una notable riqueza mineral, incluidos minerales preciosos.
+
+## Etimología
+
+El origen del nombre **Elyra** queda pendiente de definir.
+
+No se establece por ahora si procede de:
+
+- una figura histórica;
+- una lengua antigua;
+- un topónimo previo;
+- una tradición local;
+- o cualquier otro origen.
+
+## Estado de definición
+
+**Canon — nombre y función general cerrados.**
+
+
+---
+
+# Paso 13.3 — Sistema montañoso oriental
+
+## Estructura general
+
+La gran región oriental de Norgard queda articulada por **tres grandes cordilleras**:
+
+1. una cordillera principal de orientación **norte-sur**;
+2. una cordillera de orientación **oeste-este** situada más al sur;
+3. una gran cordillera de orientación **oeste-este** situada más al norte y extendida ampliamente hacia el este.
+
+## Cordillera principal norte-sur
+
+Es una cordillera de dimensiones extraordinarias.
+
+Características principales:
+
+- longitud comparable a la de los Montes Valkram;
+- mucho más ancha;
+- más alta;
+- más abrupta;
+- trazado casi rectilíneo de norte a sur.
+
+Actúa como una de las grandes barreras geográficas entre la región central y la región oriental de Norgard.
+
+### Recursos
+
+Es muy rica en recursos minerales, especialmente:
+
+- pizarra;
+- hierro;
+- carbón;
+- cobre;
+- **Metal Estelar**.
+
+El **Metal Estelar** es un recurso excepcional utilizado para fabricar grandes armas y, según el canon actual, **solo aparece en esta cordillera**.
+
+## Cordillera meridional oeste-este
+
+Al sur de la cordillera principal existe otra gran cadena montañosa con orientación general **oeste-este**.
+
+Es menos importante que la cordillera norte-sur en términos de altura, anchura y función territorial.
+
+## Paso entre ambas cordilleras
+
+La cordillera norte-sur y la cordillera meridional oeste-este no llegan a unirse completamente.
+
+Entre ambas existe un **paso natural de gran importancia**, que permite la comunicación terrestre entre:
+
+- la región central de Norgard;
+- la región oriental de Norgard.
+
+Este paso constituye uno de los corredores geográficos clave entre ambas grandes regiones.
+
+## Gran cordillera septentrional oeste-este
+
+Más al este y al norte se extiende otra gran cordillera de orientación **oeste-este**.
+
+Características generales:
+
+- es más larga que la cordillera principal norte-sur;
+- es menos alta;
+- es menos ancha;
+- actúa como gran divisoria climática.
+
+Su función geográfica principal es separar:
+
+- las tierras frías y heladas del norte;
+- las grandes llanuras fértiles del sur.
+
+## Nombres
+
+Ninguna de estas tres cordilleras ni el paso natural tienen todavía nombre canónico.
+
+## Estado de definición
+
+**Canon — estructura física y función general cerradas.**
+
+
+---
+
+# Paso 13.3.1 — Montes Azurios
+
+## Nombre canónico
+
+La gran cordillera principal del sistema montañoso oriental recibe el nombre de **Montes Azurios**.
+
+## Origen del nombre
+
+**Azurios** es una palabra de la antigua lengua enana.
+
+Su significado es:
+
+**Piedra Azul**
+
+El nombre fue otorgado por los enanos que habitaban estas montañas antes de la llegada de los Hombres.
+
+No es una traducción humana ni una adaptación posterior: **Azurios es el nombre original enano conservado por los Hombres**.
+
+## Relación con el Metal Estelar
+
+El nombre se relaciona con la presencia del **Metal Estelar**, de característico tono **gris azulado**, cuya aparición es exclusiva de esta cordillera según el canon actual.
+
+## Contexto histórico
+
+Antes de la llegada de los Hombres, los **enanos habitaban los Montes Azurios**.
+
+La historia concreta de los asentamientos enanos, su desaparición o abandono de la cordillera y su relación con la explotación del Metal Estelar queda pendiente de desarrollo posterior.
+
+## Estado de definición
+
+**Canon — nombre y etimología cerrados.**
+
+
+---
+
+# Paso 13.3.2 — Montañas Velaris
+
+## Nombre canónico
+
+La cordillera oeste-este situada al sur de los Montes Azurios recibe el nombre de **Montañas Velaris**.
+
+## Sobrenombre
+
+Las Montañas Velaris son conocidas popularmente como:
+
+**Las Guardianas**
+
+Este sobrenombre hace referencia a su función geográfica y estratégica, ya que dominan el paso que comunica la región central con la región oriental y protege la vía hacia el sur, en dirección a la península de Elandor.
+
+## Relación con los Montes Azurios
+
+Las Montañas Velaris no llegan a unirse con los Montes Azurios.
+
+Entre ambas cordilleras existe un paso natural estrecho de gran importancia para las comunicaciones entre la zona central y la zona oriental de Norgard.
+
+## Estado de definición
+
+**Canon — nombre y sobrenombre cerrados.**
+
+
+---
+
+# Paso 13.3.2.a — Paso de Vareth
+
+## Nombre canónico
+
+El paso natural situado entre los **Montes Azurios** y las **Montañas Velaris** recibe el nombre de **Paso de Vareth**.
+
+## Origen del nombre
+
+El paso toma su nombre de **Vareth Aethros**, un antiquísimo Rey de Norgard.
+
+La razón histórica concreta por la que su nombre quedó asociado al paso queda pendiente de desarrollo posterior.
+
+## Función geográfica
+
+El Paso de Vareth constituye uno de los principales corredores terrestres entre:
+
+- la región central de Norgard;
+- la región oriental de Norgard.
+
+También forma parte de la vía estratégica que permite continuar hacia el sur, en dirección a la península de Elandor.
+
+## Estado de definición
+
+**Canon — nombre y referencia histórica cerrados.**
+
+
+---
+
+# Paso 13.3.3 — Montes Invernos
+
+## Nombre canónico
+
+La gran cordillera septentrional de orientación **oeste-este** recibe el nombre de **Montes Invernos**.
+
+## Función geográfica
+
+Los Montes Invernos actúan como una gran barrera natural entre:
+
+- las tierras frías y heladas del norte;
+- las grandes llanuras fértiles del sur.
+
+## Características generales
+
+En comparación con los Montes Azurios:
+
+- son más largos;
+- son menos altos;
+- son menos anchos.
+
+Su importancia principal no reside tanto en su altura como en su enorme extensión y en su función como divisoria climática dentro de la región oriental de Norgard.
+
+## Origen del nombre
+
+El nombre es de origen humano y hace referencia directa al carácter frío e invernal de las tierras situadas al norte de la cordillera.
+
+## Estado de definición
+
+**Canon — nombre y función general cerrados.**
+
+
+---
+
+# Paso 14 — Grandes sistemas fluviales de Norgard
+
+Los trazados gráficos actuales de los ríos son provisionales y serán rediseñados posteriormente en Inkarnate.
+
+Sin embargo, su **localización general, origen, recorrido, desembocadura y función territorial** quedan establecidos como base canónica.
+
+## 14.1 — Sistema fluvial occidental
+
+Nace en la **vertiente occidental de los Montes Valkram**, en su sector norte.
+
+El sistema cuenta con un **río principal** que continúa hacia el sur y el este, pasa por **Treihord** y desemboca en el **gran Golfo de Norgard**.
+
+En un punto de su recorrido se separa un **curso secundario** que pasa a tener identidad fluvial propia y, por tanto, deberá recibir **un nombre distinto** del río principal.
+
+El río principal y el curso secundario forman parte del mismo gran sistema hidrográfico occidental, pero **no se consideran el mismo río**.
+
+### Río de Veldora
+
+**Veldora posee un río propio e independiente** de este sistema.
+
+El río de Veldora y el sistema fluvial occidental discurren relativamente cerca, pero son accidentes hidrográficos distintos.
+
+El nombre propuesto para este río es **río Veldora**, y la ciudad de **Veldora** toma su nombre del río.
+
+### Nombres canónicos / pendientes
+
+- **Río principal occidental:** **Belara**.
+- **Río secundario derivado del principal:** **Lhera**.
+- **Río Veldora:** **canon**; la ciudad de Veldora toma su nombre del río.
+
+## 14.2 — Río Lurien y Lago Antela
+
+El **río Lurien** nace en la **vertiente oriental de los Montes Valkram**.
+
+Es uno de los ríos más largos e importantes de Norgard.
+
+Durante su recorrido:
+
+- atraviesa la región central;
+- forma el **Lago Antela**, situado al sur de **Karsath**;
+- continúa hasta **Hallheim**, capital del Reino;
+- desemboca finalmente en el **gran Golfo de Norgard**.
+
+El Lurien es **navegable desde Hallheim hasta el mar**.
+
+Esta navegabilidad convierte al río en una vía fundamental para:
+
+- las comunicaciones;
+- el comercio;
+- el abastecimiento;
+- el acceso fluvial a la capital.
+
+Por su relación directa con Hallheim y su navegabilidad hasta el mar, se considera el río de mayor importancia estratégica de Norgard.
+
+### Nombres canónicos
+
+- **Río:** Lurien
+- **Lago:** Antela
+
+## 14.3 — Río Caleran
+
+El **río Caleran** nace en la **vertiente occidental de los Montes Azurios**.
+
+Recorre las grandes llanuras fértiles de la región oriental y pasa por **Arleon**.
+
+En su curso bajo se divide en dos grandes brazos:
+
+- **brazo occidental del Caleran**;
+- **brazo oriental del Caleran**.
+
+Ambos brazos vuelven a ramificarse antes de desembocar en el **Mar de Suthiros**, pero esas bifurcaciones continúan considerándose parte de su respectivo brazo y del mismo río Caleran; no reciben identidad de río independiente.
+
+El conjunto forma un gran sistema fluvial de desembocadura ramificada, esencial para el abastecimiento de agua de las llanuras fértiles orientales.
+
+Su importancia está especialmente ligada a:
+
+- la agricultura;
+- la ganadería;
+- la fertilidad de las tierras orientales.
+
+**Nombre canónico: Caleran.**
+
+## 14.4 — Sistema fluvial de Treskal
+
+Nace en la **vertiente sur de los Montes Invernos**.
+
+Está formado por **dos grandes ríos**, que recorren la región oriental de forma independiente durante buena parte de su trayecto.
+
+En la parte final:
+
+- ambos cursos se aproximan;
+- terminan uniéndose;
+- desembocan prácticamente juntos en el **Mar de Suthiros**, junto a la ciudad de **Treskal**.
+
+Constituyen uno de los principales sistemas fluviales del extremo oriental de Norgard.
+
+**Nombres canónicos de ambos ríos: pendientes.**
+
+## Estado de definición
+
+**Canon — estructura general, recorridos y funciones principales cerrados.**
+
+Quedan pendientes los nombres de los cursos todavía no bautizados y de posibles afluentes menores.
+
+
+---
+
+# Paso 14.2.1 — Río Lurien y Lago Antela
+
+## Río Lurien
+
+El gran río que atraviesa Hallheim recibe el nombre de **Lurien**.
+
+Es el principal eje fluvial de la región central y uno de los accidentes geográficos de mayor importancia estratégica del Reino.
+
+## Lago Antela
+
+El gran lago situado al sur de Karsath y formado por el curso del Lurien recibe el nombre de **Lago Antela**.
+
+## Estado de definición
+
+**Canon — nombres cerrados.**
+
+
+---
+
+# Paso 14.1.1 — Río Belara
+
+## Nombre canónico
+
+El gran río principal del sistema fluvial occidental recibe el nombre de **Belara**.
+
+## Recorrido general
+
+El Belara nace en la **vertiente occidental de los Montes Valkram**, en su sector norte.
+
+Continúa hacia el sur y el este, pasa por **Treihord** y desemboca finalmente en el **Gran Golfo de Norgard**.
+
+Durante su recorrido se separa de él un curso secundario que pasa a tener identidad fluvial propia y recibirá un nombre distinto.
+
+## Estado de definición
+
+**Canon — nombre cerrado.**
+
+---
+
+# Paso 14.1.2 — Río Lhera
+
+## Nombre canónico
+
+El río secundario que se separa del gran río occidental **Belara** recibe el nombre de **Lhera**.
+
+A partir de la bifurcación se considera un río con identidad propia y nombre independiente.
+
+## Relación con el Belara
+
+El **Lhera** nace como una derivación del sistema del Belara, pero no se considera simplemente un brazo del mismo río.
+
+## Estado de definición
+
+**Canon — nombre cerrado.**
+
+
+---
+
+# Paso 14.1.3 — Río Veldora
+
+## Nombre canónico
+
+El río independiente que pasa por la ciudad de **Veldora** recibe el nombre de **río Veldora**.
+
+La ciudad toma su nombre del río.
+
+Este río no forma parte del sistema Belara–Lhera, aunque discurre relativamente cerca de él.
+
+## Estado de definición
+
+**Canon — nombre y relación con la ciudad cerrados.**
+
+
+---
+
+# Paso 14.1.4 — Río Thalen
+
+## Nombre canónico
+
+El río situado más al sur, en la península, recibe el nombre de **Thalen**.
+
+## Recorrido general
+
+El Thalen desemboca en el **Gran Golfo de Norgard**.
+
+En su tramo final se **bifurca**, y la ciudad de **Taramin** se encuentra situada entre ambos brazos del río antes de su desembocadura.
+
+## Estado de definición
+
+**Canon — nombre y configuración general cerrados.**
+
+
+---
+
+# Paso 14.3 — Río Serhan
+
+## Nombre canónico
+
+El pequeño río situado al sur de **Hallheim** recibe el nombre de **Serhan**.
+
+## Importancia estratégica
+
+Aunque no es uno de los grandes ríos de Norgard por tamaño, el Serhan posee una importancia estratégica excepcional por su posición.
+
+Su trazado dificulta el paso directo desde la península de **Elandor** hacia **Hallheim** y obliga a las rutas terrestres a bordear las **Montañas Velaris, “Las Guardianas”**.
+
+Por esta razón, **Hallheim controla el río Serhan con especial celo**.
+
+No se definen todavía puentes, fortalezas, puestos de control u otras infraestructuras asociadas.
+
+## Estado de definición
+
+**Canon — nombre, función geográfica e importancia estratégica cerrados.**
+
+
+---
+
+# Paso 14.4.1 — Ríos Sareno y Theleno
+
+## Nombres canónicos
+
+Los dos grandes ríos orientales que nacen separados en la vertiente sur de los **Montes Invernos** reciben los nombres de:
+
+- **Río Sareno**
+- **Río Theleno**
+
+## Relación entre ambos
+
+Sareno y Theleno son ríos distintos durante la mayor parte de su recorrido.
+
+Nacen separados y mantienen cauces independientes, pero en su tramo final convergen y terminan uniéndose en un único ramal antes de desembocar en el **Mar de Suthiros**, junto a **Treskal**.
+
+## Sobrenombre
+
+Conjuntamente son conocidos como:
+
+**los Gemelos de Treskal**
+
+El sobrenombre hace referencia a su recorrido paralelo, su origen común en los Montes Invernos y su unión final junto a la ciudad de Treskal.
+
+## Estado de definición
+
+**Canon — nombres y sobrenombre cerrados.**
+
+
+---
+
+# Paso 14.5 — Ríos Vornarsk y Keldarsk
+
+## Nombres canónicos
+
+Los dos ríos menores de la zona septentrional próxima a **Zanthir** reciben los nombres de:
+
+- **Río Vornarsk**
+- **Río Keldarsk**
+
+## Origen de los nombres
+
+**Vornarsk** y **Keldarsk** son antiguos nombres de origen enano.
+
+Los Hombres conservaron estos hidrónimos en la región en lugar de sustituirlos por nombres humanos.
+
+El significado original de ambos nombres en lengua enana queda pendiente de definir.
+
+## Características
+
+Son cursos fluviales menores en comparación con los grandes ríos de Norgard.
+
+Debido al clima del norte, ambos **se congelan durante el invierno**.
+
+Su función local concreta, caudal estacional y relación con Zanthir quedan pendientes de desarrollo posterior si resultan relevantes para el juego.
+
+## Estado de definición
+
+**Canon — nombres, origen enano y característica estacional cerrados.**
+
+
+---
+
+# Paso 15.1 — Mares del norte y del oeste
+
+Las aguas que bordean el **norte** y el **oeste** de Norgard se consideran **dos masas marítimas distintas**, aunque **no existe una barrera física clara** que las separe.
+
+La diferenciación responde a sus características naturales y climáticas: el ámbito septentrional está vinculado a las condiciones frías y polares del extremo norte de Norgard, mientras que el occidental corresponde al dominio oceánico de la fachada oeste.
+
+El límite entre ambas masas de agua será por tanto **convencional y cartográfico**, no una frontera física marcada por estrechos, islas o accidentes geográficos.
+
+## Pendiente
+
+- Nombre del mar u océano septentrional.
+- Nombre del mar u océano occidental.
+- Determinar si cada masa se clasifica formalmente como **mar** u **océano**.
+
+## Estado de definición
+
+**Canon — son dos masas marítimas distintas sin separación física natural.**
+
+
+### Mar occidental de Norgard — función
+
+El mar que bordea la fachada occidental de Norgard es una de las grandes vías marítimas de Nimroel.
+
+Separa geográficamente a **Norgard** de los **tres reinos élficos** situados al oeste.
+
+A pesar de actuar como gran separación natural entre los territorios humanos y élficos, es también un espacio de contacto intenso: **miles de naves comerciales** lo recorren, convirtiéndolo en una ruta marítima de enorme importancia económica y estratégica.
+
+Su nombre propio queda pendiente de definir.
+
+**Canon — función geográfica, comercial y estratégica cerrada.**
+
+
+### Doble denominación del mar occidental
+
+El gran mar situado entre **Norgard** y los **tres reinos élficos** posee **dos nombres propios tradicionales**:
+
+- un nombre de origen humano;
+- un nombre de origen élfico.
+
+Cada pueblo emplea habitualmente su propia denominación, pero **Hombres y Elfos conocen y manejan sin dificultad ambos nombres**. Por tanto, ninguna de las dos formas se considera desconocida o extraña para la otra cultura.
+
+El nombre humano del mar queda fijado como **Mar del Crepúsculo**.
+
+El nombre élfico permanece pendiente de definir.
+
+**Canon — doble denominación humana/élfica cerrada; nombre humano cerrado.**
+
+
+### Antigüedad del nombre élfico del Mar del Crepúsculo
+
+Los **Elfos llegaron a Nimroel siglos antes que los Hombres**.
+
+Por tanto, el nombre élfico del mar situado entre los territorios élficos y Norgard **es anterior a la presencia humana en Nimroel**.
+
+Ese nombre no nace del comercio con los Hombres, de la separación entre ambas razas ni de la posterior existencia de Norgard. Debe responder a la forma en que los Elfos conocieron e interpretaron ese mar antes de la llegada humana.
+
+El nombre élfico concreto permanece pendiente de definir.
+
+**Canon — antigüedad y origen independiente del nombre élfico cerrados.**
+
+
+### Significado del mar para los Elfos
+
+Antes de la llegada de los Hombres, este mar ya tenía una importancia fundamental para los Elfos.
+
+Para ellos era el **mar que abría sus puertas al resto de Nimroel**: hacia el **este** se extendía el mundo conocido y accesible del continente, mientras que hacia el **oeste** se encontraba **lo desconocido**.
+
+Por tanto, en la tradición élfica este mar estaba asociado desde muy antiguo a la idea de **apertura, acceso y entrada hacia Nimroel**, no a la separación respecto de los Hombres.
+
+El nombre élfico concreto permanece pendiente de definir.
+
+**Canon — significado geográfico y cultural previo a la llegada de los Hombres cerrado.**
+
+
+### Delimitación del Mar del Crepúsculo
+
+El **Mar del Crepúsculo** no designa toda la gran masa de agua central de Nimroel.
+
+Su extensión queda limitada a la **parte septentrional** de esa masa de agua, es decir, al sector marítimo situado entre:
+
+- la fachada occidental de **Norgard**;
+- los **tres reinos élficos** situados al oeste;
+- y el ámbito norte de las aguas centrales de Nimroel.
+
+Las zonas situadas más al **sur** y al **suroeste** de esa misma gran masa de agua **no forman parte del Mar del Crepúsculo** y recibirán otros nombres, al constituir otros mares distintos.
+
+## Estado de definición
+
+**Canon — delimitación general del Mar del Crepúsculo cerrada.**
+
+
+### Criterio para los nombres élficos
+
+Los topónimos e hidrónimos de origen élfico se conservarán en su **forma original élfica**.
+
+No se utilizarán como nombre canónico traducciones humanas del tipo «Mar del Umbral», «Mar de la Apertura» u otras equivalencias descriptivas.
+
+Cuando resulte útil, el significado aproximado en lengua humana podrá registrarse aparte como explicación etimológica, pero **el nombre propio usado por los Elfos será siempre la forma élfica original**.
+
+**Canon — criterio lingüístico para nombres élficos cerrado.**
+
+
+### Nombre élfico del Mar del Crepúsculo
+
+El nombre élfico tradicional de este mar queda fijado como **Ishalien**.
+
+Su significado aproximado en lengua humana es:
+
+**«Mar del Umbral»**
+
+Este significado responde a la antigua concepción élfica del mar como la gran apertura hacia el resto de Nimroel.
+
+#### Etimología élfica
+
+Se fijan las siguientes raíces para uso futuro:
+
+- **Isha** → umbral, apertura, paso hacia algo.
+- **Lien** → mar / grandes aguas.
+
+Por tanto, **Ishalien** puede entenderse aproximadamente como «las grandes aguas del umbral» o «Mar del Umbral».
+
+Estas raíces quedan disponibles para reutilizarse de forma coherente en otros topónimos o hidrónimos de origen élfico.
+
+## Estado de definición
+
+**Canon — nombre élfico, significado y raíces etimológicas cerrados.**
