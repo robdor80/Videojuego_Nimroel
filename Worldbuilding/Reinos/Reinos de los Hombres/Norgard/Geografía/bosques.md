@@ -743,9 +743,67 @@ El Bosque Negro es, por tanto, uno de los principales recursos estratégicos de 
 
 ---
 
+# 4. Bosques boreales del norte de Norgard
+
+## Definición
+
+La franja septentrional de Norgard contiene enormes masas de **bosque boreal y subpolar**.
+
+A escala ecológica forman un gran sistema forestal discontinuo que se extiende de oeste a este, interrumpido por:
+
+- zonas de tundra;
+- nieve y hielo;
+- montañas;
+- costas;
+- bahías;
+- cursos de agua;
+- claros y terrenos abiertos.
+
+Estas masas **no reciben nombres propios por defecto**.
+
+Solo se individualizarán en el futuro si alguna adquiere relevancia suficiente por:
+
+- historia;
+- economía;
+- estrategia;
+- asentamientos;
+- peligro;
+- misiones;
+- gameplay.
+
+## Composición arbórea
+
+Predominan especies resistentes al frío:
+
+- píceas;
+- abetos;
+- pinos;
+- alerces.
+
+En claros, bordes y zonas de transición aparecen:
+
+- abedules.
+
+Hacia el norte, el arbolado se vuelve progresivamente:
+
+- más bajo;
+- más disperso;
+- más resistente;
+- menos continuo.
+
+Finalmente cede ante la **tundra** y las zonas de clima plenamente polar.
+
+## Criterio cartográfico y de lore
+
+Las distintas manchas forestales representadas en el mapa septentrional no deben interpretarse automáticamente como bosques independientes con identidad propia.
+
+Se consideran partes del mismo **cinturón boreal septentrional** mientras no exista una razón de lore o gameplay para separarlas.
+
+---
+
 ## Estado de definición
 
-**Canon — bloques forestales occidental, central y oriental cerrados a nivel geográfico básico.**
+**Canon — bloques forestales occidental, central y oriental cerrados a nivel geográfico básico; cinturón boreal septentrional definido como sistema ecológico general.**
 
 El sistema principal de bosques de Norgard queda definido en:
 
