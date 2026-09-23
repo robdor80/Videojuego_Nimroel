@@ -1736,3 +1736,73 @@ El desarrollo consolidado de este bloque se mantiene en:
 
 **Canon — bloques forestales occidental, central y oriental cerrados a nivel geográfico básico.**
 
+
+
+---
+
+# Paso 17 — Zonas secas y franja boreal del norte
+
+## Península de Taramin
+
+La península de **Taramin** contiene una de las principales zonas secas de Norgard.
+
+No constituye un desierto pleno, sino una **región semiárida de transición**.
+
+En buena parte de su norte y centro predominan:
+
+- colinas ocres;
+- terrenos pedregosos;
+- breñas;
+- matorral costero;
+- pastos duros;
+- barrancos y cauces estacionales;
+- amplias zonas abiertas de vegetación baja.
+
+El paisaje es seco, ventoso y expuesto.
+
+Hacia el sur aumentan gradualmente la humedad y la cobertura vegetal.
+
+Esta transición enlaza con el **Bosque de Taramin**, cuya composición evoluciona hacia bosque mixto y finalmente hacia condiciones subtropicales húmedas en el extremo meridional.
+
+Taramin no debe representarse como un gran desierto de dunas.
+
+## Syvaris
+
+La isla de **Syvaris** es uno de los ámbitos más cálidos de Norgard.
+
+Su clima mantiene rasgos semitropicales o ligeramente tropicales, pero una parte importante de la isla presenta un carácter **seco y luminoso**.
+
+Son característicos:
+
+- lomas secas;
+- matorral insular;
+- praderas estacionales;
+- roquedo costero;
+- pequeños bosques dispersos;
+- calas y sectores protegidos más verdes y húmedos.
+
+Syvaris no es un desierto.
+
+Su identidad paisajística combina **calidez, sequedad parcial e influencia marítima**.
+
+## Bosques boreales del norte
+
+Todo el extremo septentrional de Norgard contiene enormes masas de **bosque boreal y subpolar**.
+
+Estas masas forman un gran sistema ecológico discontinuo de oeste a este y no reciben nombres propios por defecto.
+
+Predominan:
+
+- píceas;
+- abetos;
+- pinos;
+- alerces;
+- abedules en claros y zonas de transición.
+
+Hacia el norte, el arbolado se vuelve más bajo y disperso hasta ceder ante la tundra y las zonas plenamente polares.
+
+Las manchas forestales del mapa solo recibirán nombre individual si adquieren relevancia histórica, económica, estratégica o de gameplay.
+
+## Estado de definición
+
+**Canon — carácter semiárido de Taramin, carácter cálido-seco de Syvaris y sistema boreal septentrional cerrados a nivel geográfico y climático básico.**
