@@ -1906,7 +1906,9 @@ Su existencia no es secreta, pero se mantiene deliberadamente discreta.
 
 No posee nombre oficial establecido.
 
-Su denominación coloquial queda pendiente.
+De forma coloquial es conocida como **La Vena**, sobrenombre que alude tanto a una veta mineral como al conducto por el que circula la riqueza Darovan entre El Crisol y La Bóveda del Grifo.
+
+Su existencia no es secreta, pero se mantiene deliberadamente discreta.
 
 ## Representación de la Corona
 
