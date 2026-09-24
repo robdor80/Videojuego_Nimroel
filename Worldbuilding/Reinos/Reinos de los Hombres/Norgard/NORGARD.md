@@ -1807,3 +1807,133 @@ Las manchas forestales del mapa solo recibirán nombre individual si adquieren r
 ## Estado de definición
 
 **Canon — carácter semiárido de Taramin, carácter cálido-seco de Syvaris y sistema boreal septentrional cerrados a nivel geográfico y climático básico.**
+
+
+---
+
+# Paso 18 — Treihord
+
+## Identidad y población
+
+**Treihord** es la capital del territorio administrado por la **Casa Darovan**.
+
+Cuenta con aproximadamente **32.000 habitantes**.
+
+Es una gran ciudad regional, rica y poderosa, pero claramente menor que la futura escala excepcional de Hallheim.
+
+## Forma urbana
+
+Treihord combina:
+
+- un núcleo histórico amurallado;
+- barrios y crecimientos exteriores posteriores;
+- calles principales amplias;
+- calles secundarias más estrechas;
+- edificios de piedra y tejados de teja;
+- varias plazas y mercados;
+- barrios de artesanos y comerciantes.
+
+Dentro del recinto amurallado se encuentra la gran plaza principal histórica, vinculada al antiguo mercado.
+
+El crecimiento exterior generó nuevas plazas y mercados secundarios.
+
+## Economía
+
+La ciudad está profundamente ligada al oro y la plata de los **Montes Valkram**.
+
+Son especialmente importantes:
+
+- orfebrería;
+- joyería;
+- comercio de metales preciosos;
+- fundiciones;
+- artesanía;
+- actividad comercial;
+- oficios urbanos diversos.
+
+Treihord mantiene también todos los oficios y sistemas de abastecimiento necesarios para sostener una población urbana de su tamaño.
+
+## Belara y distrito industrial
+
+El **Río Belara** pasa junto a Treihord sin atravesarla.
+
+En este tramo admite principalmente **barcazas de poco calado**.
+
+Treihord posee un **puerto fluvial industrial** conectado con una gran zona exterior organizada en:
+
+**puerto → patios y almacenes → depósitos de mineral y carbón → fundiciones y talleres pesados.**
+
+Parte del mineral de los Montes Valkram puede llegar mediante carros hasta puntos de carga fluvial y continuar en barcazas por el Belara.
+
+Treihord importa grandes cantidades de **carbón de los Montes Azurios**.
+
+Debido a la longitud de esta cadena logística mantiene reservas importantes de carbón.
+
+## Casa de Ensaye de Treihord — El Crisol
+
+La **Casa de Ensaye de Treihord**, conocida popularmente como **El Crisol**, es una instalación Darovan de alta seguridad.
+
+Realiza:
+
+- ensaye de oro y plata;
+- comprobación de pureza;
+- pesaje;
+- registro;
+- refinado final;
+- fundición en lingotes.
+
+El Crisol no acuña moneda.
+
+## La Bóveda del Grifo
+
+**La Bóveda del Grifo** es la gran residencia fortificada de la Casa Darovan.
+
+Se encuentra fuera de la antigua muralla, aunque el crecimiento posterior de Treihord la ha integrado en la ciudad.
+
+Posee recinto defensivo propio.
+
+Está próxima a los barrios más ricos, pero separada de ellos mediante una **gran explanada ornamentada** que cumple funciones monumentales, ceremoniales y defensivas.
+
+Bajo el complejo existe un gran sistema subterráneo utilizado para custodiar parte de las riquezas de la Casa.
+
+La guardia Darovan destinada a la protección de la Casa y sus instalaciones está muy bien pagada, equipada y adiestrada.
+
+## Galería subterránea
+
+El Crisol y La Bóveda del Grifo están conectados mediante una **galería subterránea fortificada** destinada al traslado seguro de lingotes y otros bienes de máximo valor.
+
+Su existencia no es secreta, pero se mantiene deliberadamente discreta.
+
+No posee nombre oficial establecido.
+
+Su denominación coloquial queda pendiente.
+
+## Representación de la Corona
+
+La Corona mantiene un edificio gubernamental permanente dentro del núcleo histórico amurallado, próximo a la plaza principal.
+
+Un **enviado permanente de la Corona** y sus funcionarios fiscalizan registros, producción, pesos y el cumplimiento de las entregas correspondientes al Rey.
+
+La Corona no administra las instalaciones Darovan.
+
+## Acuñación
+
+La **acuñación de moneda es monopolio exclusivo de la Corona de Norgard**.
+
+Los Darovan pueden producir y almacenar lingotes de oro y plata, pero no acuñar moneda por iniciativa propia.
+
+La acuñación ilícita y la falsificación están castigadas con **penas extremadamente severas**.
+
+## Documento temático
+
+El desarrollo completo de la ciudad se mantiene en:
+
+`Ciudades/Casa Darovan/Treihord.md`
+
+La normativa básica sobre acuñación se mantiene en:
+
+`Gobierno y leyes/moneda_y_acunacion.md`
+
+## Estado de definición
+
+**Canon — bloque urbano básico de Treihord cerrado en sus elementos actualmente aprobados.**

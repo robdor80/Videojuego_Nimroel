@@ -193,6 +193,14 @@ Dentro de su ámbito destacan también:
 
 Treihord constituye el principal núcleo minero de sus dominios, especialmente por la explotación de oro y plata.
 
+Treihord cuenta con aproximadamente **32.000 habitantes** y constituye una de las grandes ciudades regionales de Norgard.
+
+La residencia fortificada de la Casa Darovan es conocida como **La Bóveda del Grifo**.
+
+La industria de metales preciosos de Treihord incluye la **Casa de Ensaye de Treihord**, conocida popularmente como **El Crisol**.
+
+Treihord importa grandes cantidades de carbón desde los **Montes Azurios** para sostener sus fundiciones y actividades metalúrgicas.
+
 ## Base de poder
 
 - oro;

@@ -63,6 +63,16 @@ Desde allí discurre hacia el oeste y pasa junto a **Treihord**.
 
 Finalmente desemboca en el **Golfo de Norgard**.
 
+### Navegación industrial en Treihord
+
+En el entorno de Treihord, el Belara permite la navegación de **barcazas de poco calado** destinadas principalmente a cargas pesadas.
+
+La ciudad dispone de un **puerto fluvial industrial**, empleado para mineral, carbón y otros materiales vinculados a la producción.
+
+Parte del mineral de los Montes Valkram puede llegar a Treihord mediante transporte combinado por carro y barcaza.
+
+El Belara en Treihord no posee la anchura ni profundidad del Lurien a su paso por Hallheim y no funciona como gran puerto fluvial comercial.
+
 ### Relación con el Río Lhera
 
 Del Río Belara se separa un curso secundario que pasa a adquirir identidad propia como **Río Lhera**.
