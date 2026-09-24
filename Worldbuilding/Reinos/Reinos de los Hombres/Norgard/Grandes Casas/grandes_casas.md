@@ -201,6 +201,8 @@ La industria de metales preciosos de Treihord incluye la **Casa de Ensaye de Tre
 
 Treihord importa grandes cantidades de carbón desde los **Montes Azurios** para sostener sus fundiciones y actividades metalúrgicas.
 
+La ciudad queda **cerrada a nivel de diseño base**. Su fuente canónica detallada es `../Ciudades/Casa Darovan/Treihord.md`.
+
 ## Base de poder
 
 - oro;
@@ -575,6 +577,8 @@ Durante una visita oficial:
 - el salón puede reconfigurarse para reflejar visualmente la supremacía de la Corona.
 
 La posición y altura de los asientos pueden utilizarse como lenguaje político y diplomático.
+
+Las mismas cuatro Casas mantienen además **Aposentos Regios** reservados exclusivamente al monarca durante visitas oficiales. Permanecen preparados y custodiados cuando están vacíos; ningún miembro de la Casa los utiliza como dormitorio habitual. Su calidad, ubicación y tratamiento también forman parte del lenguaje político del Reino.
 
 Desarrollo temático:
 

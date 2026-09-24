@@ -1815,27 +1815,47 @@ Las manchas forestales del mapa solo recibirán nombre individual si adquieren r
 
 ## Identidad y población
 
-**Treihord** es la capital del territorio administrado por la **Casa Darovan**.
+**Treihord** es la capital del territorio administrado por la **Casa Darovan** y cuenta con aproximadamente **32.000 habitantes**.
 
-Cuenta con aproximadamente **32.000 habitantes**.
+Es una gran ciudad regional, rica y poderosa, claramente menor que Hallheim pero uno de los principales centros económicos de Norgard.
 
-Es una gran ciudad regional, rica y poderosa, pero claramente menor que la futura escala excepcional de Hallheim.
-
-## Forma urbana
+## Estructura urbana cerrada
 
 Treihord combina:
 
-- un núcleo histórico amurallado;
-- barrios y crecimientos exteriores posteriores;
-- calles principales amplias;
-- calles secundarias más estrechas;
-- edificios de piedra y tejados de teja;
-- varias plazas y mercados;
-- barrios de artesanos y comerciantes.
+- **El Recinto**, casco histórico amurallado;
+- siete grandes barrios exteriores;
+- plazas y mercados especializados;
+- sectores artesanales y comerciales;
+- un gran sistema industrial vinculado al Belara;
+- enclaves propios como **El Crisol** y **La Bóveda del Grifo**.
 
-Dentro del recinto amurallado se encuentra la gran plaza principal histórica, vinculada al antiguo mercado.
+Los ocho barrios canónicos son:
 
-El crecimiento exterior generó nuevas plazas y mercados secundarios.
+1. **El Recinto**
+2. **Los Altos**
+3. **El Peso**
+4. **Las Lonjas**
+5. **Los Oficios**
+6. **La Calzada**
+7. **La Ribera**
+8. **La Costra**
+
+Las cuatro plazas principales son:
+
+- **Plaza Vieja**
+- **Plaza de las Balanzas**
+- **Plaza de las Lonjas**
+- **Plaza del Camino**
+
+Las cuatro puertas principales de la antigua muralla son:
+
+- **Puerta Alta**
+- **Puerta del Río**
+- **Puerta del Camino**
+- **Puerta Sur**
+
+La antigua muralla protege El Recinto; no existe una nueva muralla continua que englobe todas las expansiones exteriores.
 
 ## Economía
 
@@ -1848,87 +1868,82 @@ Son especialmente importantes:
 - comercio de metales preciosos;
 - fundiciones;
 - artesanía;
-- actividad comercial;
-- oficios urbanos diversos.
+- comercio;
+- servicios urbanos;
+- hostelería y actividad asociada a viajeros.
 
-Treihord mantiene también todos los oficios y sistemas de abastecimiento necesarios para sostener una población urbana de su tamaño.
+La prosperidad convive con desigualdad social visible, cuyo ejemplo más extremo es **La Costra**, situada en un sector exterior sur/sureste.
 
 ## Belara y distrito industrial
 
-El **Río Belara** pasa junto a Treihord sin atravesarla.
+El **Río Belara** pasa junto a Treihord sin atravesarla y admite principalmente **barcazas de poco calado**.
 
-En este tramo admite principalmente **barcazas de poco calado**.
+La cadena funcional principal es:
 
-Treihord posee un **puerto fluvial industrial** conectado con una gran zona exterior organizada en:
+**Belara / puerto industrial → patios y almacenes → depósitos de mineral y carbón → fundiciones y talleres pesados → El Crisol → La Bóveda del Grifo.**
 
-**puerto → patios y almacenes → depósitos de mineral y carbón → fundiciones y talleres pesados.**
+Treihord importa grandes cantidades de **carbón de los Montes Azurios** y mantiene reservas para reducir el impacto de interrupciones logísticas.
 
-Parte del mineral de los Montes Valkram puede llegar mediante carros hasta puntos de carga fluvial y continuar en barcazas por el Belara.
-
-Treihord importa grandes cantidades de **carbón de los Montes Azurios**.
-
-Debido a la longitud de esta cadena logística mantiene reservas importantes de carbón.
-
-## Casa de Ensaye de Treihord — El Crisol
+## Casa de Ensaye — El Crisol
 
 La **Casa de Ensaye de Treihord**, conocida popularmente como **El Crisol**, es una instalación Darovan de alta seguridad.
 
 Realiza:
 
-- ensaye de oro y plata;
+- ensaye;
 - comprobación de pureza;
 - pesaje;
 - registro;
 - refinado final;
 - fundición en lingotes.
 
-El Crisol no acuña moneda.
+No es una ceca.
 
 ## La Bóveda del Grifo
 
-**La Bóveda del Grifo** es la gran residencia fortificada de la Casa Darovan.
+**La Bóveda del Grifo** es la residencia fortificada y centro de poder de la Casa Darovan.
 
-Se encuentra fuera de la antigua muralla, aunque el crecimiento posterior de Treihord la ha integrado en la ciudad.
+Se sitúa en el flanco **norte/noreste del casco histórico**, fuera de la antigua muralla y en posición ligeramente elevada, suficientemente próxima a El Crisol para justificar **La Vena** pero separada del humo y ruido industrial.
 
-Posee recinto defensivo propio.
+Su principio arquitectónico es:
 
-Está próxima a los barrios más ricos, pero separada de ellos mediante una **gran explanada ornamentada** que cumple funciones monumentales, ceremoniales y defensivas.
+> **Hacia fuera: fortaleza. Hacia dentro: palacio.**
 
-Bajo el complejo existe un gran sistema subterráneo utilizado para custodiar parte de las riquezas de la Casa.
+Posee doble recinto, Patio de Armas, Gran Patio del Grifo, palacio de representación, dependencias políticas y sociales, aposentos familiares, **Aposentos Regios**, grandes bóvedas subterráneas y circulación de seguridad diferenciada.
 
-La guardia Darovan destinada a la protección de la Casa y sus instalaciones está muy bien pagada, equipada y adiestrada.
+## La Vena
 
-## Galería subterránea
+El Crisol y La Bóveda están conectados mediante una **galería subterránea fortificada**, conocida coloquialmente como **La Vena**.
 
-El Crisol y La Bóveda del Grifo están conectados mediante una **galería subterránea fortificada** destinada al traslado seguro de lingotes y otros bienes de máximo valor.
+Su existencia es conocida de forma discreta, pero accesos, recorridos y funcionamiento son restringidos.
 
-Su existencia no es secreta, pero se mantiene deliberadamente discreta.
+Permite trasladar lingotes, otros bienes de máximo valor y documentación sensible sin exponerlos al tránsito urbano ordinario.
 
-No posee nombre oficial establecido.
+## Representación de la Corona y acuñación
 
-De forma coloquial es conocida como **La Vena**, sobrenombre que alude tanto a una veta mineral como al conducto por el que circula la riqueza Darovan entre El Crisol y La Bóveda del Grifo.
+La Corona mantiene un edificio gubernamental permanente dentro de El Recinto, próximo a la Plaza Vieja.
 
-Su existencia no es secreta, pero se mantiene deliberadamente discreta.
+Un enviado permanente fiscaliza registros, pesos, producción y obligaciones económicas, sin administrar las instalaciones Darovan.
 
-## Representación de la Corona
+La **acuñación de moneda sigue siendo monopolio exclusivo de la Corona**.
 
-La Corona mantiene un edificio gubernamental permanente dentro del núcleo histórico amurallado, próximo a la plaza principal.
+## Infraestructura y seguridad
 
-Un **enviado permanente de la Corona** y sus funcionarios fiscalizan registros, producción, pesos y el cumplimiento de las entregas correspondientes al Rey.
+Treihord dispone de una red funcional de:
 
-La Corona no administra las instalaciones Darovan.
+- pozos, cisternas y fuentes;
+- drenajes y saneamiento preindustrial;
+- recogida de residuos con calidad desigual según barrio;
+- iluminación parcial de plazas y ejes principales;
+- medidas contra incendios;
+- abastecimiento alimentario continuo;
+- vigilancia urbana y control de puertas.
 
-## Acuñación
-
-La **acuñación de moneda es monopolio exclusivo de la Corona de Norgard**.
-
-Los Darovan pueden producir y almacenar lingotes de oro y plata, pero no acuñar moneda por iniciativa propia.
-
-La acuñación ilícita y la falsificación están castigadas con **penas extremadamente severas**.
+La organización militar territorial exacta permanece aplazada hasta cerrar la revisión sistémica de fuerzas de Grandes Casas y Casas menores.
 
 ## Documento temático
 
-El desarrollo completo de la ciudad se mantiene en:
+La fuente canónica detallada de la ciudad es:
 
 `Ciudades/Casa Darovan/Treihord.md`
 
@@ -1938,15 +1953,15 @@ La normativa básica sobre acuñación se mantiene en:
 
 ## Estado de definición
 
-**Canon — bloque urbano básico de Treihord cerrado en sus elementos actualmente aprobados.**
+**TREIHORD — CERRADA A NIVEL DE DISEÑO BASE.**
 
-
+La cartografía exacta, NPC, estructuras municipales detalladas, religión, rutas de escala reino y gameplay se desarrollarán posteriormente sin reabrir la identidad fundamental de la ciudad.
 
 ---
 
 # Paso 19 — Desarrollo visual detallado de Treihord y La Bóveda del Grifo
 
-> Este bloque recoge las decisiones aprobadas durante el desarrollo actual de Treihord. La ciudad sigue **EN DESARROLLO**; se ha sincronizado ahora para mantener iguales móvil, GitHub y MSI.
+> Este bloque conserva la especificación visual aprobada de Treihord y La Bóveda del Grifo. **Treihord está cerrada a nivel de diseño base**; los desarrollos posteriores serán ampliaciones de detalle, sistemas, NPC, cartografía o gameplay.
 
 ## Arquitectura urbana común
 
@@ -2041,7 +2056,7 @@ Existe un barrio pobre claramente reconocible, conocido de forma despectiva como
 - economía informal;
 - tabernas baratas, pensiones de mala muerte, prostitución y locales de reputación dudosa.
 
-La Costra no es una ruina separada de la ciudad, sino **la cara pobre y degradada de una Treihord próspera**. Su ubicación exacta sigue pendiente del plano de barrios.
+La Costra no es una ruina separada de la ciudad, sino **la cara pobre y degradada de una Treihord próspera**. Se sitúa en un sector exterior **sur/sureste**, alejado de Los Altos y de los ejes de mayor prestigio.
 
 # La Bóveda del Grifo — biblia visual base
 
@@ -2333,13 +2348,42 @@ Esta regla evita diseñar habitaciones irrelevantes y concentra el esfuerzo art�
 
 ---
 
+## Cierre final de Treihord
+
+La auditoría final del diseño urbano no detecta contradicciones estructurales.
+
+Quedan cerrados como base canónica:
+
+- los ocho barrios;
+- las cuatro plazas principales;
+- las cuatro puertas de la muralla histórica;
+- relación entre Belara, industria, El Crisol, La Vena y La Bóveda;
+- infraestructura urbana;
+- seguridad funcional;
+- evolución histórica por fases;
+- arquitectura y distribución base de La Bóveda del Grifo;
+- Estrado y Salón del Grifo;
+- ala política;
+- ala social y familiar;
+- Aposentos Regios Darovan;
+- subsuelo y Bóveda Mayor;
+- anillos de acceso, circulación y funcionamiento general del complejo.
+
+El desarrollo exhaustivo permanece en `Ciudades/Casa Darovan/Treihord.md`.
+
+**Estado: TREIHORD CERRADA A NIVEL DE DISEÑO BASE.**
+
+---
+
 # Paso 20 — Protocolo regio en las Grandes Casas
 
-Las cuatro Grandes Casas no reinantes mantienen en sus residencias principales un **trono o asiento regio de recepción** reservado al monarca.
+Las cuatro Grandes Casas no reinantes mantienen en sus residencias principales un **trono o asiento regio de recepción** reservado al monarca y unos **Aposentos Regios** destinados exclusivamente a alojarlo durante visitas oficiales.
 
 Cuando el Rey o Reina de Norgard preside una recepción oficial, el asiento real ocupa la posición de máximo prestigio y el Lord o Lady anfitrión se sitúa normalmente a su derecha.
 
 La altura, posición y tratamiento de los asientos forman parte del lenguaje político del Reino. Alteraciones deliberadas pueden expresar frialdad, rivalidad o desafío velado.
+
+Los Aposentos Regios permanecen preparados y custodiados incluso cuando están vacíos; ningún miembro de la Casa anfitriona los utiliza como dormitorio habitual. Su calidad, ubicación y tratamiento forman parte también del lenguaje político del Reino.
 
 El desarrollo completo se mantiene en:
 
