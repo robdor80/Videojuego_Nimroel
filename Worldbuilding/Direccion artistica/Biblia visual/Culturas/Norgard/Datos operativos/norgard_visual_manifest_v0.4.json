@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_visual_manifest",
+  "version": "0.4",
+  "cultureId": "norgard",
+  "files": {
+    "profile": "norgard_visual_profile_v0.4.json",
+    "regions": "norgard_regions_v0.1.json",
+    "settlements": "norgard_settlements_v0.2.json"
+  },
+  "loadOrder": [
+    "norgard_visual_profile_v0.4.json",
+    "norgard_regions_v0.1.json",
+    "norgard_settlements_v0.2.json"
+  ],
+  "resolverNotes": [
+    "El perfil general aporta reglas culturales y prohibiciones.",
+    "Las regiones añaden restricciones y rasgos geograficos/materiales.",
+    "Los asentamientos añaden funcion, escala, arquitectura y excepciones locales.",
+    "Clima y estacion deben resolverse fuera de estos JSON mediante el sistema climatico y el reloj del mundo.",
+    "La heráldica se resuelve desde el perfil cultural antes de aplicar la excepción local de Hallheim.",
+    "Hallheim es el único asentamiento de Norgard donde pueden aparecer estandartes ambientales.",
+    "Todo estandarte autorizado de Hallheim debe usar AETHROS_ROYAL_BANNER_v0.1.",
+    "Fuera de Hallheim se permite heráldica funcional Aethros cuando exista justificacion militar, administrativa o narrativa.",
+    "Los retratos NPC deben resolver el estado contextual de presentacion, uso, aseo y suciedad mediante NPC_PORTRAIT_VISUAL_BIBLE_v0.3; la profesion orienta, pero la escena determina el nivel.",
+    "La ropa de NPC se resuelve en dos capas: estado contextual 1-5 y patina base de indumentaria A-D. Trabajadores fisicos y viajeros prolongados no deben recibir prendas claras impolutas salvo justificacion explicita."
+  ],
+  "canonicalHeraldry": {
+    "regentHouseId": "aethros",
+    "assetRoot": "../Heraldica/Casa Aethros",
+    "masterEmblemAssetId": "aethros_heraldic_emblem_v0.1",
+    "royalBannerAssetId": "aethros_royal_banner_v0.1",
+    "militaryShieldAssetId": "aethros_military_shield_v0.1",
+    "royalSealAssetId": "aethros_royal_seal_v0.1",
+    "workflowAddenda": [
+      "VISUAL_REFERENCE_WORKFLOW_v0.1_ADDENDUM_001_HERALDRY.md",
+      "VISUAL_REFERENCE_WORKFLOW_v0.1_ADDENDUM_002_NORGARD_BANNERS.md"
+    ]
+  },
+  "validationRules": {
+    "rejectUnknownHeraldryInNorgard": true,
+    "rejectInventedWolfVariants": true,
+    "ambientBannerSettlementAllowlist": [
+      "hallheim"
+    ],
+    "hallheimRequiredBannerAssetId": "aethros_royal_banner_v0.1",
+    "allOtherSettlementAmbientBanners": "forbidden",
+    "functionalHeraldryOutsideHallheim": "allowed_when_contextually_justified",
+    "rejectSpotlessEverydayWorkClothingWithoutExplicitContext": true,
+    "requireClothingPatinaForPhysicalWorkersAndMultiDayTravelers": true
+  }
+}
