@@ -174,3 +174,30 @@ Si existe una **disputa sucesoria**, conflicto entre herederos o una situación 
 **Canon cerrado en sus principios generales.**
 
 Los detalles específicos de cada Gran Casa, de la sucesión de la Corona y del Gran Consejo de Sucesión se desarrollan en documentos independientes.
+
+
+---
+
+## Revisión sistémica pendiente — fuerzas de las Grandes Casas y Casas menores
+
+El bloque actual que establece que las Grandes Casas no poseen ejército propio queda **pendiente de revisión formal**.
+
+Se ha aprobado como dirección de desarrollo estudiar un sistema en el que:
+
+- la Corona mantenga la autoridad militar suprema;
+- Aethros disponga de la fuerza directa real;
+- las otras Grandes Casas mantengan fuerzas territoriales propias;
+- todas deban responder a la convocatoria militar del Rey;
+- exista una distinción entre guardias, guarniciones, núcleo profesional y tropas movilizables.
+
+También se desarrollará la existencia de **Casas menores** subordinadas a las Grandes Casas y, en última instancia, a la Corona.
+
+Hasta que se cierre ese bloque, no deben fijarse cifras ni estructuras militares definitivas.
+
+Documento de trabajo:
+
+`revision_militar_y_casas_menores.md`
+
+El protocolo de recepción del monarca en las Grandes Casas se desarrolla en:
+
+`protocolo_regio.md`

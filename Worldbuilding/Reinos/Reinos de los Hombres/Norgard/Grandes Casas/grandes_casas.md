@@ -560,3 +560,36 @@ No deben añadirse ejércitos independientes a las Grandes Casas salvo que el ca
 ## Estado de definición
 
 **Canon consolidado para la estructura, identidad, recursos, relaciones y posición política actualmente definidas de las Cinco Grandes Casas.**
+
+
+---
+
+# 15. Protocolo regio común
+
+Las cuatro Grandes Casas no reinantes conservan en su residencia principal un **trono o asiento regio de recepción** reservado al Rey o Reina de Norgard.
+
+Durante una visita oficial:
+
+- el monarca ocupa la posición ceremonial de máximo prestigio;
+- el Lord o Lady anfitrión se sitúa normalmente a su derecha;
+- el salón puede reconfigurarse para reflejar visualmente la supremacía de la Corona.
+
+La posición y altura de los asientos pueden utilizarse como lenguaje político y diplomático.
+
+Desarrollo temático:
+
+`../Gobierno y leyes/protocolo_regio.md`
+
+---
+
+# 16. Revisión pendiente del sistema militar y Casas menores
+
+La regla previa según la cual las Grandes Casas no poseen ejército propio está **pendiente de revisión formal**.
+
+La dirección aprobada contempla fuerzas territoriales de las Grandes Casas sometidas a la autoridad militar suprema de la Corona, además de la futura introducción de **Casas menores** subordinadas.
+
+No se fijarán cifras, jerarquías ni obligaciones detalladas hasta desarrollar este bloque.
+
+Documento de trabajo:
+
+`../Gobierno y leyes/revision_militar_y_casas_menores.md`
