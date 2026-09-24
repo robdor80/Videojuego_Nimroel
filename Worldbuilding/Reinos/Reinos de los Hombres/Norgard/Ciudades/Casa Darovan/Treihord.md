@@ -249,6 +249,14 @@ Su existencia no constituye un secreto absoluto, pero se mantiene de forma delib
 
 No posee actualmente un nombre oficial establecido.
 
+De forma coloquial, trabajadores, guardias y personal Darovan se refieren a esta galería simplemente como:
+
+**La Vena**
+
+El sobrenombre alude tanto a una veta o vena mineral como a la idea de un conducto por el que circula la riqueza de la Casa desde El Crisol hasta La Bóveda del Grifo.
+
+Su existencia no es secreta, pero su uso, accesos y funcionamiento se mantienen discretos.
+
 Su función principal es permitir el traslado seguro de:
 
 - lingotes de oro;
@@ -265,7 +273,7 @@ Está concebida para el tránsito controlado de:
 - guardias;
 - cargamentos de alto valor.
 
-Su denominación coloquial queda **pendiente de canonizar**.
+Su denominación coloquial canónica es **La Vena**.
 
 ---
 
