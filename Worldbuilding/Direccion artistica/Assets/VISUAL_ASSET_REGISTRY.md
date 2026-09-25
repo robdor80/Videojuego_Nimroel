@@ -14,13 +14,14 @@ Registro general de assets visuales creados mediante el workflow oficial de `Nim
 
 > **Registro reiniciado el 2026-09-25.**
 >
-> Tres retratos aprobados bajo el nuevo workflow de diversidad. Los assets se almacenan en GitHub como carpetas descomprimidas; los tres están sincronizados.
+> Cuatro retratos aprobados bajo el nuevo workflow de diversidad. Los assets se almacenan en GitHub como carpetas descomprimidas; tres están sincronizados y el cuarto está pendiente de GitSync.
 
 | Asset ID | Nombre | Reino / Cultura | Región | Tipo | Presentación | Pátina | Estado | Repositorio | Notas |
 |---|---|---|---|---|---:|---|---|---|---|
 | `portrait_treskal_farmer_female_001` | Campesina de Treskal | Norgard | Treskal | `farmer_female` | 2 | C | APPROVED | carpeta del asset — synced | Primera entrada del nuevo registro de diversidad; edad aparente 44, complexión robusta, cabello castaño ceniza oscuro con canas tempranas. |
 | `portrait_treskal_farmer_female_002` | Campesina joven de Treskal | Norgard | Treskal | `farmer_female` | 2 | C | APPROVED | carpeta del asset — synced | Edad aparente ~19 (franja 17–22), complexión esbelta, trenza castaña clara, sin canas, pecas abundantes; fondo agrícola contextual de Treskal. |
 | `portrait_treskal_farmer_female_003` | Campesina mayor de Treskal | Norgard | Treskal | `farmer_female` | 2 | C | APPROVED | carpeta del asset — synced | Edad aparente ~62 (franja 58–68), complexión delgada, cabello gris bajo pañuelo, rostro largo y envejecido; fondo agrícola contextual de Treskal. |
+| `portrait_treskal_farmer_female_004` | Campesina adulta de Treskal | Norgard | Treskal | `farmer_female` | 2 | C | APPROVED | carpeta pendiente GitSync | Edad aparente ~34 (franja 30–38), complexión robusta, rostro ancho y redondeado, cabello rizado cobrizo-castaño bajo pañuelo; huerto agrícola contextual de Treskal. |
 
 ### Registros obligatorios de retratos
 
