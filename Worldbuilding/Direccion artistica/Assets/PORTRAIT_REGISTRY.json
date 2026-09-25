@@ -193,7 +193,7 @@
       "selection_age_band": "40-49",
       "background_context": "rural_treskal_farming_landscape",
       "transport_zip_file": "portrait_treskal_farmer_female_001.zip",
-      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/portrait_treskal_farmer_female_001/"
+      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/portrait_treskal_farmer_female_001/"
     },
     {
       "asset_id": "portrait_treskal_farmer_female_002",
@@ -262,7 +262,7 @@
       "png_sha256": "a7d87c3d706de958c73424e0f0c057dce142f9d8536fe409569bd38c80437e36",
       "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md.",
       "transport_zip_file": "portrait_treskal_farmer_female_002.zip",
-      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/portrait_treskal_farmer_female_002/"
+      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/portrait_treskal_farmer_female_002/"
     },
     {
       "asset_id": "portrait_treskal_farmer_female_003",
@@ -270,7 +270,7 @@
       "png_file": "portrait_treskal_farmer_female_003.png",
       "zip_file": "portrait_treskal_farmer_female_003.zip",
       "transport_zip_file": "portrait_treskal_farmer_female_003.zip",
-      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/portrait_treskal_farmer_female_003/",
+      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/portrait_treskal_farmer_female_003/",
       "kingdom_culture": "Norgard",
       "region": "Treskal",
       "location": "Treskal",
@@ -340,7 +340,7 @@
       "png_file": "portrait_treskal_farmer_female_004.png",
       "zip_file": "portrait_treskal_farmer_female_004.zip",
       "transport_zip_file": "portrait_treskal_farmer_female_004.zip",
-      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/portrait_treskal_farmer_female_004/",
+      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/portrait_treskal_farmer_female_004/",
       "kingdom_culture": "Norgard",
       "region": "Treskal",
       "location": "Treskal",
@@ -409,7 +409,7 @@
       "png_file": "portrait_treskal_farmer_female_005.png",
       "zip_file": "portrait_treskal_farmer_female_005.zip",
       "transport_zip_file": "portrait_treskal_farmer_female_005.zip",
-      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/portrait_treskal_farmer_female_005/",
+      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/portrait_treskal_farmer_female_005/",
       "kingdom_culture": "Norgard",
       "region": "Treskal",
       "location": "Treskal",

@@ -96,7 +96,7 @@ Estados utilizados:
 
 Ruta base vigente:
 
-`Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/`
+`Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/`
 
 - `portrait_treskal_farmer_female_001` — **synced**
 - `portrait_treskal_farmer_female_002` — **synced**
