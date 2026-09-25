@@ -19,6 +19,7 @@
     "consult_current_global_visual_bible",
     "consult_current_npc_portrait_bible",
     "consult_applicable_culture_region_profession_social_profiles",
+    "consult_applicable_local_portrait_bible",
     "consult_this_registry",
     "build_comparable_pool",
     "detect_overrepresented_combinations_and_gaps",
@@ -258,5 +259,14 @@
       "png_sha256": "a7d87c3d706de958c73424e0f0c057dce142f9d8536fe409569bd38c80437e36",
       "notes": "Segundo retrato femenino de campesina de Treskal aprobado. Fondo agrícola contextual por oficio/localización. ZIP verificado en el repositorio; contenido remoto coincide byte por byte con el paquete entregado."
     }
-  ]
+  ],
+  "local_portrait_bibles": {
+    "treskal": {
+      "status": "APPROVED",
+      "required": true,
+      "scope": "zona_de_Treskal_completa",
+      "path": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Perfiles locales/Treskal/TRESKAL_PORTRAIT_VISUAL_BIBLE_v0.1.md",
+      "version": "0.1"
+    }
+  }
 }
