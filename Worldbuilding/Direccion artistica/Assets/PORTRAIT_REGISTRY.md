@@ -46,7 +46,7 @@ El ZIP no se conserva en GitHub una vez descomprimido y sincronizado.
 
 ## Retratos aprobados
 
-Actualmente hay **10 retratos aprobados registrados**.
+Actualmente hay **15 retratos aprobados registrados**.
 
 | Asset ID | Localización | Profesión | Sexo | Edad aparente | Rango | Complexión | Cabello | Pérdida de cabello | Vello facial | Rasgo facial / distintivo | Presentación | Pátina |
 |---|---|---|---|---:|---|---|---|---|---|---|---:|---|
@@ -60,6 +60,11 @@ Actualmente hay **10 retratos aprobados registrados**.
 | `portrait_treskal_farmer_male_003` | Treskal | farmer | male | 50 | adult | sturdy/broad | dark brown with greying, short-medium | receding/thinning | full salt-and-pepper beard | rostro ancho y curtido, barba entrecana, mirada seria | 2 | C |
 | `portrait_treskal_farmer_male_004` | Treskal | farmer | male | 60 | elderly | lean/wiry | grey-brown, short-medium sides/back | crown baldness/receding | short salt-and-pepper beard | rostro largo y estrecho, calvicie parcial, envejecimiento marcado | 2 | C |
 | `portrait_treskal_farmer_male_005` | Treskal | farmer | male | 35 | adult | sturdy/athletic working | medium brown, short, tousled | none | short natural stubble | rostro medio-ancho, mandíbula definida, mirada seria-neutral | 2 | C |
+| `portrait_treskal_carpenter_male_001` | Treskal | carpenter | male | 43 | adult | sturdy/craftsman | dark brown with early grey, wavy, short-medium | none_visible | short full beard + moustache | rostro medio-ancho curtido, presencia de artesano competente | 2 | C |
+| `portrait_treskal_carpenter_male_002` | Treskal | carpenter | male | 30 | adult | lean/capable craftsman | medium brown, short, slightly tousled | none_visible | light stubble | rostro medio-angular joven, mirada enfocada | 2 | C |
+| `portrait_treskal_carpenter_male_003` | Treskal | carpenter | male | 62 | elderly | seasoned/sturdy craftsman | grey, short-medium, slightly wavy | none_strongly_visible | short full grey beard + moustache | maestro senior, rostro curtido, mirada calmada | 2 | C |
+| `portrait_treskal_carpenter_male_004` | Treskal | carpenter | male | 50 | adult | heavyset/sturdy craftsman | medium brown, short, thinning | receding/thinning | thick moustache + beard shadow | rostro ancho, bigote marcado, presencia robusta | 2 | C |
+| `portrait_treskal_carpenter_male_005` | Treskal | carpenter | male | 58 | adult | lean/seasoned craftsman | salt-and-pepper, medium, brushed back | moderate_recession | prominent moustache + beard shadow | rostro largo curtido, presencia de maestro experimentado | 2 | C |
 
 ---
 
@@ -103,6 +108,7 @@ Rutas base vigentes:
 
 - `Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/`
 - `Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/male/`
+- `Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/carpenter/male/`
 
 Campesinas:
 
@@ -119,6 +125,14 @@ Campesinos:
 - `portrait_treskal_farmer_male_003` — **synced** — edad aparente ~50 / franja 46–55
 - `portrait_treskal_farmer_male_004` — **synced** — edad aparente ~60 / franja 56–66
 - `portrait_treskal_farmer_male_005` — **synced** — edad aparente ~35 / franja 31–39
+
+Carpinteros:
+
+- `portrait_treskal_carpenter_male_001` — **synced** — edad aparente ~43 / franja 38–48
+- `portrait_treskal_carpenter_male_002` — **synced** — edad aparente ~30 / franja 27–34
+- `portrait_treskal_carpenter_male_003` — **synced** — edad aparente ~62 / franja 58–68
+- `portrait_treskal_carpenter_male_004` — **synced** — edad aparente ~50 / franja 46–55
+- `portrait_treskal_carpenter_male_005` — **synced** — edad aparente ~58 / franja 54–62
 
 Todas las carpetas contienen el conjunto estándar del asset: PNG + `_prompt.md` + `_info.md`.
 

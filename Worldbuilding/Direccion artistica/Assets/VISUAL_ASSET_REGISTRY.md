@@ -14,7 +14,7 @@ Registro general de assets visuales creados mediante el workflow oficial de `Nim
 
 > **Registro reiniciado el 2026-09-25.**
 >
-> Diez retratos aprobados bajo el nuevo workflow de diversidad. Los assets se almacenan en GitHub como carpetas descomprimidas; los diez están sincronizados.
+> Quince retratos aprobados bajo el nuevo workflow de diversidad. Los assets se almacenan en GitHub como carpetas descomprimidas; los quince están sincronizados.
 
 | Asset ID | Nombre | Reino / Cultura | Región | Tipo | Presentación | Pátina | Estado | Repositorio | Notas |
 |---|---|---|---|---|---:|---|---|---|---|
@@ -28,6 +28,11 @@ Registro general de assets visuales creados mediante el workflow oficial de `Nim
 | `portrait_treskal_farmer_male_003` | Campesino maduro de Treskal | Norgard | Treskal | `farmer_male` | 2 | C | APPROVED | carpeta del asset — synced | Edad aparente ~50 (franja 46–55), complexión robusta/ancha, retroceso capilar y barba completa entrecana; formato vertical 4:5. |
 | `portrait_treskal_farmer_male_004` | Campesino mayor de Treskal | Norgard | Treskal | `farmer_male` | 2 | C | APPROVED | carpeta del asset — synced | Edad aparente ~60 (franja 56–66), complexión delgada/fibrosa, cabello gris-castaño con calvicie parcial y barba corta entrecana; formato vertical 4:5. |
 | `portrait_treskal_farmer_male_005` | Campesino adulto de Treskal | Norgard | Treskal | `farmer_male` | 2 | C | APPROVED | carpeta del asset — synced | Edad aparente ~35 (franja 31–39), complexión robusta/atlética de trabajo, cabello castaño corto y barba corta; formato vertical 4:5. |
+| `portrait_treskal_carpenter_male_001` | Carpintero adulto de Treskal | Norgard | Treskal | `carpenter_male` | 2 | C | APPROVED | carpeta del asset — synced | Edad aparente ~43 (franja 38–48), complexión robusta de artesano, cabello oscuro ondulado con canas tempranas y barba corta; taller de carpintería contextual; formato 4:5. |
+| `portrait_treskal_carpenter_male_002` | Carpintero joven de Treskal | Norgard | Treskal | `carpenter_male` | 2 | C | APPROVED | carpeta del asset — synced | Edad aparente ~30 (franja 27–34), complexión esbelta/capaz, cabello castaño corto y barba muy ligera; taller de carpintería contextual; formato 4:5. |
+| `portrait_treskal_carpenter_male_003` | Carpintero senior de Treskal | Norgard | Treskal | `carpenter_male` | 2 | C | APPROVED | carpeta del asset — synced | Edad aparente ~62 (franja 58–68), cabello y barba grises, presencia de maestro artesano veterano; taller de carpintería contextual; formato 4:5. |
+| `portrait_treskal_carpenter_male_004` | Carpintero maduro de Treskal | Norgard | Treskal | `carpenter_male` | 2 | C | APPROVED | carpeta del asset — synced | Edad aparente ~50 (franja 46–55), complexión pesada/robusta, cabello ralo y bigote marcado; delantal de cuero con serrín; formato 4:5. |
+| `portrait_treskal_carpenter_male_005` | Carpintero veterano de Treskal | Norgard | Treskal | `carpenter_male` | 2 | C | APPROVED | carpeta del asset — synced | Edad aparente ~58 (franja 54–62), complexión más delgada, cabello entrecano hacia atrás y bigote prominente; taller contextual; formato 4:5. |
 
 ### Registros obligatorios de retratos
 
