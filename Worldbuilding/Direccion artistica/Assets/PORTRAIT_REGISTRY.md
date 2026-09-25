@@ -56,6 +56,7 @@ Actualmente hay **2 retratos aprobados registrados**.
 Antes de generar un retrato nuevo:
 
 1. consultar las biblias visuales vigentes aplicables;
+   - para cualquier habitante de la zona de Treskal es obligatoria `Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Perfiles locales/Treskal/TRESKAL_PORTRAIT_VISUAL_BIBLE_v0.1.md`;
 2. consultar `PORTRAIT_REGISTRY.json`;
 3. comparar el nuevo retrato con los individuos ya registrados del pool pertinente;
 4. identificar rasgos o combinaciones sobrerrepresentadas y huecos de variedad;

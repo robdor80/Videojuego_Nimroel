@@ -34,6 +34,12 @@ Para Norgard, a fecha de creación de este workflow, las referencias vigentes co
 - `Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/NORGARD_VISUAL_PROFILE_v0.1.md`
 - `Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Datos operativos/norgard_visual_profile_v0.4.json`
 
+Para cualquier retrato de un habitante de la **zona de Treskal** es además obligatoria la consulta de:
+
+- `Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Perfiles locales/Treskal/TRESKAL_PORTRAIT_VISUAL_BIBLE_v0.1.md`
+
+Esta Biblia local tiene prioridad para resolver la identidad visual específica de la zona de Treskal dentro del marco superior de la Biblia Global, la Biblia NPC y el perfil cultural de Norgard.
+
 Si existen versiones posteriores aprobadas, deben prevalecer las vigentes más recientes.
 
 ---
@@ -323,6 +329,8 @@ Ejemplos:
 - panadero / panadera → horno, mesa de amasado, harina, pan o interior de panadería.
 
 Cuando exista una localización concreta, el fondo debe resolver **oficio + localización** simultáneamente. Por ejemplo, una campesina de Treskal debe mostrar un entorno agrícola compatible con Treskal.
+
+Para la zona de Treskal, el fondo deberá respetar específicamente `TRESKAL_PORTRAIT_VISUAL_BIBLE_v0.1.md`: fondo contextual suave y secundario, adecuado al oficio y al entorno concreto (campo, bosque, taller, cocina, mercado, muelle, calle, establo, vivienda u otro entorno productivo cuando corresponda). No se deben introducir automáticamente elementos regionales no establecidos por la Biblia local.
 
 El fondo debe permanecer secundario y normalmente desenfocado. Un fondo neutro o de estudio solo se utilizará como excepción justificada, no como valor por defecto.
 
