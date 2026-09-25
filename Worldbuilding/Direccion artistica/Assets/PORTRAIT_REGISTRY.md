@@ -33,8 +33,8 @@ El PNG final y el ZIP del asset deben compartir exactamente el mismo nombre base
 
 Ejemplo:
 
-- `PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001.png`
-- `PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001.zip`
+- `portrait_treskal_farmer_male_001.png`
+- `portrait_treskal_farmer_male_001.zip`
 
 El ZIP debe contener el PNG final y la documentación del asset definida por el workflow vigente.
 
@@ -42,10 +42,11 @@ El ZIP debe contener el PNG final y la documentación del asset definida por el 
 
 ## Retratos aprobados
 
-Actualmente no hay retratos aprobados registrados.
+Actualmente hay **1 retrato aprobado registrado**.
 
 | Asset ID | Localización | Profesión | Sexo | Edad aparente | Rango | Complexión | Cabello | Pérdida de cabello | Vello facial | Rasgo facial / distintivo | Presentación | Pátina |
 |---|---|---|---|---:|---|---|---|---|---|---|---:|---|
+| `portrait_treskal_farmer_female_001` | Treskal | farmer | female | 44 | adult | robust | dark_ash_brown, tied back, early grey | none | not_applicable | rostro broad-oval, nariz marcada, asimetría sutil, piel curtida | 2 | C |
 
 ---
 
@@ -63,3 +64,21 @@ Antes de generar un retrato nuevo:
 8. solo después de aprobar el asset, registrar la nueva entrada.
 
 Este registro se actualiza únicamente con retratos aprobados.
+
+
+---
+
+## Estado de sincronización de binarios
+
+El registro de diversidad se actualiza **inmediatamente después de aprobar el asset y crear/entregar su ZIP local**, aunque el binario todavía no se haya sincronizado al repositorio.
+
+Estados utilizados:
+
+- `local_pending_gitsync` — ZIP creado y entregado para almacenamiento local; aún no confirmado en el repo.
+- `synced` — ZIP confirmado en su ruta de Assets dentro del repositorio.
+
+Para `portrait_treskal_farmer_female_001`:
+
+- estado: `local_pending_gitsync`
+- ruta prevista: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_001.zip`
+- SHA-256 ZIP local: `ae5416051f36a1179b8ac85cb52ad281bccaa255b72502de75d4e81af5cfec73`

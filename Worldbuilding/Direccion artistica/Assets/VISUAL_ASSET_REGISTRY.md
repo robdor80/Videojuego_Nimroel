@@ -12,12 +12,13 @@ Registro general de assets visuales creados mediante el workflow oficial de `Nim
 
 ## Retratos
 
-> **Estado inicial reiniciado el 2026-09-25.**
+> **Registro reiniciado el 2026-09-25.**
 >
-> No hay retratos aprobados registrados. El próximo retrato aprobado será la primera entrada del nuevo workflow de diversidad.
+> Primer retrato aprobado bajo el nuevo workflow de diversidad. El ZIP está creado localmente y pendiente del GitSync de final de sesión.
 
 | Asset ID | Nombre | Reino / Cultura | Región | Tipo | Presentación | Pátina | Estado | ZIP | Notas |
 |---|---|---|---|---|---:|---|---|---|---|
+| `portrait_treskal_farmer_female_001` | Campesina de Treskal | Norgard | Treskal | `farmer_female` | 2 | C | APPROVED | `portrait_treskal_farmer_female_001.zip` — local, pendiente GitSync | Primera entrada del nuevo registro de diversidad; edad aparente 44, complexión robusta, cabello castaño ceniza oscuro con canas tempranas. |
 
 ### Registros obligatorios de retratos
 

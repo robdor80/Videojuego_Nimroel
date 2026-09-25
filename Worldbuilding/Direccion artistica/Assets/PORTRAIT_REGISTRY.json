@@ -9,7 +9,11 @@
   "required_before_generation": true,
   "naming_policy": {
     "asset_id_is_base_name": true,
-    "png_and_zip_same_base_name": true
+    "canonical_convention_file": "nimroel_asset_naming_convention.md",
+    "lowercase_ascii_underscore": true,
+    "final_number_three_digits": true,
+    "png_and_zip_same_base_name": true,
+    "prompt_and_info_share_base_name": true
   },
   "pre_generation_checks": [
     "consult_current_global_visual_bible",
@@ -112,7 +116,75 @@
       "string"
     ],
     "approved_date": "YYYY-MM-DD",
-    "notes": "string_or_null"
+    "notes": "string_or_null",
+    "binary_sync_status": "local_pending_gitsync|synced",
+    "expected_repository_zip_path": "string",
+    "zip_sha256": "string_or_null",
+    "png_sha256": "string_or_null"
   },
-  "entries": []
+  "entries": [
+    {
+      "asset_id": "portrait_treskal_farmer_female_001",
+      "base_name": "portrait_treskal_farmer_female_001",
+      "png_file": "portrait_treskal_farmer_female_001.png",
+      "zip_file": "portrait_treskal_farmer_female_001.zip",
+      "kingdom_culture": "Norgard",
+      "region": "Treskal",
+      "location": "Treskal",
+      "profession": "farmer",
+      "professional_group": "rural_worker",
+      "sex": "female",
+      "age_range": "adult",
+      "apparent_age": 44,
+      "build": "robust",
+      "face_shape": "broad_oval",
+      "facial_width": "medium_broad",
+      "jaw": "slightly_strong",
+      "cheekbones": "moderate",
+      "nose": "prominent_practical_slightly_broad",
+      "eyes": "brown_medium",
+      "eyebrows": "thick_dark_practical",
+      "lips": "medium_closed",
+      "forehead": "medium_with_fine_lines",
+      "facial_asymmetry": "subtle_natural",
+      "hair_color": "dark_ash_brown",
+      "hair_texture": "slightly_wavy_natural",
+      "hair_length": "medium_long_tied_back",
+      "hair_loss": "none",
+      "gray_hair": "early_grey_strands",
+      "facial_hair": "not_applicable",
+      "skin_state": "sun_touched_weathered_visible_texture_fine_lines_light_freckling",
+      "distinctive_traits": [
+        "weathered outdoor-work complexion",
+        "subtle facial asymmetry",
+        "early grey strands"
+      ],
+      "expression": "calm_serious_slightly_tired_resilient",
+      "presentation_state_level": 2,
+      "clothing_patina_grade": "C",
+      "current_or_recent_activity": "farm_work",
+      "clothing_state": "aged off-white linen and dark work apron/overdress; visibly used, dusty and earth-marked",
+      "profession_environment_marks": [
+        "earth stains on visible work clothing",
+        "dust and accumulated wear on apron and fabric edges"
+      ],
+      "recent_hygiene_state": "face_reasonably_clean_clothing_retains_work_memory",
+      "visible_hands_boots_hair_beard_equipment_state": "hands_and_boots_not_visible; hair loosely tied back with escaped strands; no facial hair; no equipment visible",
+      "diversity_rationale": "Primer retrato del registro. Se fija como referencia individual femenina adulta de unos 44 años, robusta, cabello oscuro con canas tempranas y sin rasgos de glamour; futuras campesinas de Treskal deben consultar esta combinación antes de repetirla.",
+      "canonical_sources_consulted": [
+        "NIMROEL_GLOBAL_VISUAL_BIBLE_v0.5.md",
+        "NPC_PORTRAIT_VISUAL_BIBLE_v0.3.md",
+        "NORGARD_VISUAL_PROFILE_v0.1.md",
+        "norgard_visual_profile_v0.4.json",
+        "PORTRAIT_WORKFLOW_RULES.md",
+        "nimroel_asset_naming_convention.md"
+      ],
+      "approved_date": "2026-09-25",
+      "binary_sync_status": "local_pending_gitsync",
+      "expected_repository_zip_path": "Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_001.zip",
+      "zip_sha256": "ae5416051f36a1179b8ac85cb52ad281bccaa255b72502de75d4e81af5cfec73",
+      "png_sha256": "b9d20e27eed3603222d1b69f391c7ae0eb8077e7666039539dd58492afcb11ec",
+      "notes": "Primer retrato aprobado tras reiniciar el registro de diversidad. ZIP entregado para almacenamiento local; subida diferida a GitSync de final de sesión."
+    }
+  ]
 }

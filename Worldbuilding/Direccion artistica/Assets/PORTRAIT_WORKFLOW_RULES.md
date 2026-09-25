@@ -228,17 +228,19 @@ Ambas capas son independientes.
 
 ## 12. Convención de nombre
 
+La convención oficial y prevalente de nombres y empaquetado está definida en `nimroel_asset_naming_convention.md`.
+
 Cada asset tendrá un `asset_id` único que será también su nombre base.
 
 Ejemplo:
 
-`PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001`
+`portrait_treskal_farmer_male_001`
 
 Los dos archivos principales deben llamarse exactamente:
 
-`PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001.png`
+`portrait_treskal_farmer_male_001.png`
 
-`PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001.zip`
+`portrait_treskal_farmer_male_001.zip`
 
 **PNG y ZIP deben compartir exactamente el mismo nombre base.**
 
@@ -285,3 +287,23 @@ Debe fallar la aprobación colectiva si los retratos:
 - repiten sistemáticamente barba, peinado o complexión;
 - parecen personajes de universos distintos;
 - pierden la identidad cultural para ganar variedad.
+
+
+---
+
+## 16. Registro inmediato y binario diferido
+
+Durante una sesión de creación de assets puede utilizarse el siguiente flujo operativo:
+
+1. generar el retrato;
+2. aprobarlo;
+3. asignar el nombre base canónico;
+4. crear el PNG y el ZIP local con su documentación;
+5. entregar el ZIP para almacenamiento local;
+6. **actualizar inmediatamente** `PORTRAIT_REGISTRY.json`, `PORTRAIT_REGISTRY.md` y `VISUAL_ASSET_REGISTRY.md`;
+7. marcar el binario como `local_pending_gitsync`;
+8. continuar generando nuevos assets consultando ya esa entrada;
+9. al final de la sesión, el usuario sincroniza los ZIP/binarios con GitSync;
+10. cuando se confirme su presencia en el repo, el estado pasa a `synced`.
+
+La memoria de diversidad **no debe esperar al GitSync final**. Un retrato aprobado cuenta para la diversidad desde el momento en que su ZIP local ha sido creado y entregado.
