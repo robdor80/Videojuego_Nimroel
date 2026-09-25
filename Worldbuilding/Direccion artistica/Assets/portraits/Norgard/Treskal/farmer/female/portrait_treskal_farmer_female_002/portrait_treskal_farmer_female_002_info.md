@@ -10,7 +10,8 @@
 - **Variante:** 002
 - **Estado:** APPROVED
 - **Fecha de creación:** 2026-09-25
-- **Resolución:** 1145x1374
+- **Resolución:** 1122x1402
+- **Relación de aspecto:** 4:5 vertical
 - **Formato:** PNG
 
 ## Perfil físico
@@ -65,4 +66,4 @@ Se diferencia de `portrait_treskal_farmer_female_001` principalmente por edad ap
 Compatible con la diversidad humana de Norgard y con la identidad rural, fértil y vitivinícola de Treskal.
 
 ## Observaciones
-Segundo retrato femenino de campesina de Treskal aprobado bajo el workflow de diversidad. El fondo contextual por oficio/localización queda considerado parte de la coherencia visual buscada para retratos futuros.
+Segundo retrato femenino de campesina de Treskal aprobado bajo el workflow de diversidad. El fondo contextual por oficio/localización queda considerado parte de la coherencia visual buscada para retratos futuros. PNG canónico actualizado a 4:5 vertical el 2026-09-25.

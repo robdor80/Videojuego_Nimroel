@@ -27,6 +27,12 @@ APPROVED
 ## Creation date
 2026-09-25
 
+## Resolution
+1152x1440
+
+## Aspect ratio
+4:5 vertical
+
 ## Format
 PNG
 
@@ -67,3 +73,7 @@ Adult campesina of Treskal, clearly distinct from the previous approved campesin
 
 ## Candidate use note
 Strong candidate when an NPC ID needs a Treskal female farmer in the adult 30s band, especially a robust working woman with a calm, grounded presence.
+
+
+## Revision note
+PNG canónico ajustado mediante recorte matemático a 4:5 vertical el 2026-09-25; no se regeneró el contenido visual.

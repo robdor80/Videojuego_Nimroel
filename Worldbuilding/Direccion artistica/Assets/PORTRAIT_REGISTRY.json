@@ -259,8 +259,8 @@
       "approved_date": "2026-09-25",
       "binary_sync_status": "synced",
       "zip_sha256": "bd76fdc1bd3969949ea2f1394c02f5c5d1d54614242e0cf6ad29dba48497dd40",
-      "png_sha256": "a7d87c3d706de958c73424e0f0c057dce142f9d8536fe409569bd38c80437e36",
-      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md.",
+      "png_sha256": "b9604a7a7dae258632cafe65ea814a543c9cb94e9280c88c8bcab377ed18c855",
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md. PNG canónico actualizado a formato vertical 4:5 (1122x1402); el zip_sha256 conserva la huella del ZIP de transferencia original.",
       "transport_zip_file": "portrait_treskal_farmer_female_002.zip",
       "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/portrait_treskal_farmer_female_002/"
     },
@@ -400,8 +400,8 @@
       "approved_date": "2026-09-25",
       "binary_sync_status": "synced",
       "zip_sha256": "4fcb73589c47ca2e0ffb3e0ff9ef045bd7a18dd1d865734280baf43c556a3856",
-      "png_sha256": "89452244bfdea7993bf3cf2c01b80224eef4a67d25b704e6a447b6bf61c262c3",
-      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md."
+      "png_sha256": "9736b1814dd69b6bbff2da21a59ff2f33b8819a482821cb4e9a083ed3bc3b98",
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md. PNG canónico ajustado mediante recorte a formato vertical 4:5 exacto (1152x1440); el zip_sha256 conserva la huella del ZIP de transferencia original."
     },
     {
       "asset_id": "portrait_treskal_farmer_female_005",
