@@ -325,3 +325,45 @@ Ejemplos:
 Cuando exista una localización concreta, el fondo debe resolver **oficio + localización** simultáneamente. Por ejemplo, una campesina de Treskal debe mostrar un entorno agrícola compatible con Treskal.
 
 El fondo debe permanecer secundario y normalmente desenfocado. Un fondo neutro o de estudio solo se utilizará como excepción justificada, no como valor por defecto.
+
+
+---
+
+## 18. Reconciliación del estado de sincronización
+
+El estado de un ZIP en el registro debe reflejar la realidad actual del repositorio.
+
+Cuando se vaya a actualizar cualquiera de los registros de assets o diversidad durante una sesión posterior, se debe comprobar si los ZIP marcados como `local_pending_gitsync` ya existen realmente en su ruta prevista dentro de `Assets/`.
+
+Si el ZIP ya está presente en el repositorio:
+
+1. verificar que el nombre y la ruta coinciden con el asset registrado;
+2. si es posible, verificar también que el binario corresponde al asset esperado;
+3. cambiar `binary_sync_status` de `local_pending_gitsync` a `synced`;
+4. actualizar las vistas Markdown relacionadas para eliminar cualquier texto que siga diciendo que el ZIP está pendiente;
+5. mantener coherentes todos los registros entre sí.
+
+No se debe dejar un asset marcado como pendiente si el ZIP ya está presente en el repositorio.
+
+---
+
+## 19. Revisión obligatoria del ZIP antes de entrega
+
+Antes de entregar al usuario cualquier ZIP de asset visual aprobado, se debe realizar una revisión final obligatoria del paquete.
+
+La revisión debe comprobar, como mínimo:
+
+1. que el nombre base corresponde exactamente al asset actual;
+2. que el PNG incluido es la imagen aprobada correcta;
+3. que el `_prompt.md` corresponde a esa imagen y no a otro asset;
+4. que el `_info.md` corresponde a esa imagen y no contiene datos heredados por error de otro retrato;
+5. que sexo, profesión, localización, edad aparente, rango de edad y rasgos físicos coinciden con la imagen aprobada;
+6. que presentación, pátina, ropa, fondo y contexto profesional coinciden con lo realmente visible;
+7. que no hay referencias cruzadas incorrectas a otro asset;
+8. que PNG, ZIP, `_prompt.md` y `_info.md` comparten exactamente el mismo nombre base según la convención vigente;
+9. que la numeración de variante es correcta;
+10. que el contenido interno del ZIP está completo y sin archivos sobrantes.
+
+Esta revisión es especialmente obligatoria en sesiones largas con múltiples assets consecutivos, donde aumenta el riesgo de arrastrar datos de una imagen anterior.
+
+El ZIP solo debe entregarse después de superar esta comprobación.
