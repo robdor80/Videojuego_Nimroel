@@ -12,9 +12,24 @@ Registro general de assets visuales creados mediante el workflow oficial de `Nim
 
 ## Retratos
 
-| Asset ID | Nombre | Reino / Cultura | Región | Tipo | Presentación | Pátina | Estado | Prompt | Binario | Notas |
-|---|---|---|---|---|---:|---|---|---|---|---|
-| `PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001` | Campesino de Treskal | Norgard | Treskal | `farmer_male` | 2 | C | APPROVED | `assets/portraits/norgard/treskal/farmer_male/PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001/PROMPT.md` | `assets/portraits/norgard/treskal/farmer_male/PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001/PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001.zip` | Primer campesino varón de Treskal aprobado. |
+> **Registro reiniciado el 2026-09-25.**
+>
+> Dos retratos aprobados bajo el nuevo workflow de diversidad. Los ZIP están creados localmente y pendientes del GitSync de final de sesión.
+
+| Asset ID | Nombre | Reino / Cultura | Región | Tipo | Presentación | Pátina | Estado | ZIP | Notas |
+|---|---|---|---|---|---:|---|---|---|---|
+| `portrait_treskal_farmer_female_001` | Campesina de Treskal | Norgard | Treskal | `farmer_female` | 2 | C | APPROVED | `portrait_treskal_farmer_female_001.zip` — local, pendiente GitSync | Primera entrada del nuevo registro de diversidad; edad aparente 44, complexión robusta, cabello castaño ceniza oscuro con canas tempranas. |
+| `portrait_treskal_farmer_female_002` | Campesina joven de Treskal | Norgard | Treskal | `farmer_female` | 2 | C | APPROVED | `portrait_treskal_farmer_female_002.zip` — local, pendiente GitSync | Edad aparente ~19 (franja 17–22), complexión esbelta, trenza castaña clara, sin canas, pecas abundantes; fondo agrícola contextual de Treskal. |
+
+### Registros obligatorios de retratos
+
+Antes de generar cualquier nuevo retrato se deben consultar obligatoriamente:
+
+- `PORTRAIT_WORKFLOW_RULES.md`
+- `PORTRAIT_REGISTRY.json`
+- las biblias visuales vigentes que correspondan al asset.
+
+`PORTRAIT_REGISTRY.md` es la vista humana resumida del registro operativo JSON.
 
 La columna **Presentación** utiliza la escala contextual 1–5.
 
@@ -49,17 +64,27 @@ Para cada asset `APPROVED` deben quedar registrados:
 - estado de los binarios;
 - notas de continuidad visual si son necesarias.
 
-Para retratos, cuando sea relevante, también deben registrarse:
+Para retratos se aplican además las reglas completas de `PORTRAIT_WORKFLOW_RULES.md`.
 
+Como mínimo deben registrarse:
+
+- nombre base común de PNG y ZIP;
+- profesión / función visual;
+- sexo;
+- rango de edad y edad aparente;
+- complexión;
+- morfología facial;
+- cabello y grado de pérdida de cabello;
+- vello facial;
+- rasgos distintivos;
 - `presentation_state_level` 1–5;
 - `clothing_patina_grade` A–D;
 - actividad actual o inmediatamente anterior;
 - estado base de la ropa;
 - rastros concretos de oficio, entorno o viaje;
-- origen, localización e intensidad de esas marcas;
 - grado de aseo reciente;
 - estado visible de manos, botas, cabello, barba y equipo.
 
-Para trabajadores físicos, población rural, ropa de faena y viajes de varios días, las dos capas son obligatorias.
+Para trabajadores físicos, población rural, ropa de faena y viajes de varios días, presentación y pátina son obligatorias.
 
 En escenas, `DAY_BASE` es la imagen madre y toda variante debe derivarse de ella.
