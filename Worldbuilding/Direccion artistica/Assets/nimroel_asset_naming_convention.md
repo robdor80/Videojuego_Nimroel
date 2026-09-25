@@ -168,6 +168,32 @@ portrait_treskal_farmer_male_001.zip
 
 ---
 
+## 6.1. Almacenamiento definitivo en GitHub
+
+El ZIP es el **paquete de transferencia** utilizado para entregar el asset al usuario.
+
+El almacenamiento definitivo en el repositorio se realiza descomprimiendo ese ZIP en una carpeta cuyo nombre coincide con el nombre base:
+
+```text
+portrait_treskal_farmer_female_003/
+├── portrait_treskal_farmer_female_003.png
+├── portrait_treskal_farmer_female_003_prompt.md
+└── portrait_treskal_farmer_female_003_info.md
+```
+
+Flujo operativo:
+
+1. ChatGPT entrega `<base_name>.zip`.
+2. El usuario lo guarda localmente.
+3. El usuario lo descomprime.
+4. Se conserva la carpeta `<base_name>/`.
+5. El ZIP se elimina.
+6. GitSync sincroniza la carpeta al repositorio.
+
+Por tanto, **GitHub no conserva el ZIP como formato definitivo**.
+
+---
+
 ## 7. Organización en carpetas
 
 Las carpetas sirven para ayudar a navegar, pero **el nombre del archivo debe ser autosuficiente**.
@@ -331,10 +357,11 @@ scene_norgar_mountain_pass_winter_001
 A partir de ahora, **todo asset nuevo debe seguir esta convención**:
 
 1. se asigna un **nombre base canónico**;
-2. el `.zip` usa ese nombre;
-3. el `.png` usa ese nombre;
-4. el `_prompt.md` usa ese nombre;
-5. el `_info.md` usa ese nombre.
+2. el `.zip` de transferencia usa ese nombre;
+3. la carpeta definitiva del repositorio usa ese nombre;
+4. el `.png` usa ese nombre;
+5. el `_prompt.md` usa ese nombre;
+6. el `_info.md` usa ese nombre.
 
 No deben crearse assets nuevos fuera de esta norma salvo decisión expresa posterior.
 

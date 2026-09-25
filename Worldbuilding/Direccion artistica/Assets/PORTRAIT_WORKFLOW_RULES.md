@@ -242,13 +242,18 @@ Ejemplo:
 
 `portrait_treskal_farmer_male_001`
 
-Los dos archivos principales deben llamarse exactamente:
+El ZIP de transferencia y los archivos internos deben compartir exactamente el mismo nombre base.
 
-`portrait_treskal_farmer_male_001.png`
+En GitHub, el asset se almacena descomprimido en una carpeta con ese mismo nombre base:
 
-`portrait_treskal_farmer_male_001.zip`
+```text
+portrait_treskal_farmer_male_001/
+├── portrait_treskal_farmer_male_001.png
+├── portrait_treskal_farmer_male_001_prompt.md
+└── portrait_treskal_farmer_male_001_info.md
+```
 
-**PNG y ZIP deben compartir exactamente el mismo nombre base.**
+El ZIP es un contenedor de entrega local y no forma parte del almacenamiento definitivo del repositorio.
 
 ---
 
@@ -305,12 +310,12 @@ Durante una sesión de creación de assets puede utilizarse el siguiente flujo o
 2. aprobarlo;
 3. asignar el nombre base canónico;
 4. crear el PNG y el ZIP local con su documentación;
-5. entregar el ZIP para almacenamiento local;
+5. entregar el ZIP al usuario;
 6. **actualizar inmediatamente** `PORTRAIT_REGISTRY.json`, `PORTRAIT_REGISTRY.md` y `VISUAL_ASSET_REGISTRY.md`;
-7. marcar el binario como `local_pending_gitsync`;
+7. marcar el asset como `local_pending_gitsync`;
 8. continuar generando nuevos assets consultando ya esa entrada;
-9. al final de la sesión, el usuario sincroniza los ZIP/binarios con GitSync;
-10. cuando se confirme su presencia en el repo, el estado pasa a `synced`.
+9. el usuario descomprime el ZIP en local, conserva la carpeta del asset, elimina el ZIP y sincroniza la carpeta mediante GitSync;
+10. cuando se confirme en GitHub la carpeta con PNG + `_prompt.md` + `_info.md`, el estado pasa a `synced`.
 
 La memoria de diversidad **no debe esperar al GitSync final**. Un retrato aprobado cuenta para la diversidad desde el momento en que su ZIP local ha sido creado y entregado.
 
@@ -339,19 +344,19 @@ El fondo debe permanecer secundario y normalmente desenfocado. Un fondo neutro o
 
 ## 18. Reconciliación del estado de sincronización
 
-El estado de un ZIP en el registro debe reflejar la realidad actual del repositorio.
+El estado de un asset en el registro debe reflejar la realidad actual del repositorio.
 
-Cuando se vaya a actualizar cualquiera de los registros de assets o diversidad durante una sesión posterior, se debe comprobar si los ZIP marcados como `local_pending_gitsync` ya existen realmente en su ruta prevista dentro de `Assets/`.
+Cuando se vaya a actualizar cualquiera de los registros de assets o diversidad durante una sesión posterior, se debe comprobar si las carpetas de los assets marcados como `local_pending_gitsync` ya existen realmente en su ruta prevista dentro de `Assets/`.
 
-Si el ZIP ya está presente en el repositorio:
+Si la carpeta ya está presente en el repositorio:
 
 1. verificar que el nombre y la ruta coinciden con el asset registrado;
-2. si es posible, verificar también que el binario corresponde al asset esperado;
+2. verificar que contiene el PNG, `_prompt.md` y `_info.md` correctos;
 3. cambiar `binary_sync_status` de `local_pending_gitsync` a `synced`;
 4. actualizar las vistas Markdown relacionadas para eliminar cualquier texto que siga diciendo que el ZIP está pendiente;
 5. mantener coherentes todos los registros entre sí.
 
-No se debe dejar un asset marcado como pendiente si el ZIP ya está presente en el repositorio.
+No se debe dejar un asset marcado como pendiente si su carpeta definitiva ya está presente y validada en el repositorio.
 
 ---
 

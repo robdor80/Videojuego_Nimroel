@@ -27,27 +27,33 @@ Se pueden repetir características. Lo que se evita es repetir por inercia combi
 
 ---
 
-## Convención de archivos
+## Convención de archivos y almacenamiento
 
-El PNG final y el ZIP del asset deben compartir exactamente el mismo nombre base.
+El ZIP sigue siendo el paquete de **transferencia ChatGPT → usuario** y comparte el mismo nombre base del asset.
 
-Ejemplo:
+En el repositorio, el formato definitivo es una **carpeta descomprimida por asset**:
 
-- `portrait_treskal_farmer_male_001.png`
-- `portrait_treskal_farmer_male_001.zip`
+```text
+portrait_treskal_farmer_male_001/
+├── portrait_treskal_farmer_male_001.png
+├── portrait_treskal_farmer_male_001_prompt.md
+└── portrait_treskal_farmer_male_001_info.md
+```
 
-El ZIP debe contener el PNG final y la documentación del asset definida por el workflow vigente.
+El ZIP no se conserva en GitHub una vez descomprimido y sincronizado.
 
 ---
 
 ## Retratos aprobados
 
-Actualmente hay **2 retratos aprobados registrados**.
+Actualmente hay **4 retratos aprobados registrados**.
 
 | Asset ID | Localización | Profesión | Sexo | Edad aparente | Rango | Complexión | Cabello | Pérdida de cabello | Vello facial | Rasgo facial / distintivo | Presentación | Pátina |
 |---|---|---|---|---:|---|---|---|---|---|---|---:|---|
 | `portrait_treskal_farmer_female_001` | Treskal | farmer | female | 44 | adult | robust | dark_ash_brown, tied back, early grey | none | not_applicable | rostro broad-oval, nariz marcada, asimetría sutil, piel curtida | 2 | C |
 | `portrait_treskal_farmer_female_002` | Treskal | farmer | female | 19 | young | thin/average | light-medium brown, long loose braid, no grey | none | not_applicable | rostro ovalado estrecho, pecas abundantes, ojos avellana verdosos | 2 | C |
+| `portrait_treskal_farmer_female_003` | Treskal | farmer | female | 62 | elderly | thin | grey, gathered under worn headscarf | not_visible | not_applicable | rostro largo y estrecho, envejecimiento marcado, ojos verde-avellana apagados | 2 | C |
+| `portrait_treskal_farmer_female_004` | Treskal | farmer | female | 34 | adult | robust | auburn-chestnut, curly, gathered under light headscarf | none | not_applicable | rostro ancho y redondeado, piel ligeramente curtida, ojos gris-verde / avellana | 2 | C |
 
 ---
 
@@ -70,36 +76,40 @@ Este registro se actualiza únicamente con retratos aprobados.
 
 ---
 
-## Estado de sincronización de binarios
+## Estado de sincronización de assets
 
-El registro de diversidad se actualiza **inmediatamente después de aprobar el asset y crear/entregar su ZIP local**, aunque el binario todavía no se haya sincronizado al repositorio.
+El registro de diversidad se actualiza inmediatamente al aprobar el retrato y entregar su ZIP local.
+
+El ZIP se utiliza únicamente como paquete de transferencia. El estado `synced` se alcanza cuando la **carpeta descomprimida del asset** está confirmada en el repositorio y contiene, como mínimo:
+
+- `<base_name>.png`
+- `<base_name>_prompt.md`
+- `<base_name>_info.md`
 
 Estados utilizados:
 
-- `local_pending_gitsync` — ZIP creado y entregado para almacenamiento local; aún no confirmado en el repo.
-- `synced` — ZIP confirmado en su ruta de Assets dentro del repositorio.
+- `local_pending_gitsync` — ZIP entregado al usuario; carpeta definitiva todavía no confirmada en GitHub.
+- `synced` — carpeta definitiva confirmada en GitHub.
 
-Para `portrait_treskal_farmer_female_001`:
+### Assets de Treskal confirmados
 
-- estado: `synced`
-- ruta confirmada: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_001.zip`
-- SHA-256 ZIP local: `697933334b6570c3fdb32eaadd4d506bc4ba2d1b8577aead47227a6ec97163e9`
+- `portrait_treskal_farmer_female_001` — **synced**  
+  `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_001/`
+- `portrait_treskal_farmer_female_002` — **synced**  
+  `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_002/`
+- `portrait_treskal_farmer_female_003` — **synced**  
+  `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_003/`  
+  edad aparente ~62 años / franja útil 58–68.
+- `portrait_treskal_farmer_female_004` — **local_pending_gitsync**  
+  carpeta prevista: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_004/`  
+  edad aparente ~34 años / franja útil 30–38. ZIP entregado; carpeta todavía no confirmada en GitHub.
 
-
-Para `portrait_treskal_farmer_female_002`:
-
-- estado: `synced`
-- ruta confirmada: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_002.zip`
-- edad aparente / búsqueda: ~19 años / franja 17–22
-- fondo: agrícola de Treskal, coherente con oficio y localización
-- SHA-256 ZIP local: `bd76fdc1bd3969949ea2f1394c02f5c5d1d54614242e0cf6ad29dba48497dd40`
-
-
-### Verificación remota
+### Verificación de la 003
 
 Comprobación realizada el 2026-09-25:
 
-- `portrait_treskal_farmer_female_001.zip` — presente en el repo; Git blob SHA `d9222ecc3081f5dae240911bd612f562a0c470b0`; coincide byte por byte con el ZIP entregado.
-- `portrait_treskal_farmer_female_002.zip` — presente en el repo; Git blob SHA `681853fa81bf778566100356d282bb12387faa64`; coincide byte por byte con el ZIP entregado.
+- PNG remoto: Git blob SHA `f31d29790af103024ff930d8c662dc7560e62026`
+- `_info.md` remoto: Git blob SHA `539835400cbffa33b6381aceb85912dceeda69f3`
+- `_prompt.md` remoto: Git blob SHA `0b6fafbd8d9870d252a0095beb7b2e790d833842`
 
-Ambos paquetes contienen exactamente tres archivos: PNG, `_prompt.md` y `_info.md` con el nombre base correcto.
+Los tres coinciden exactamente con los archivos incluidos en el ZIP entregado.
