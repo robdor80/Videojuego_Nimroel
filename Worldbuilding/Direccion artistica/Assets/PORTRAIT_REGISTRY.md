@@ -46,7 +46,7 @@ El ZIP no se conserva en GitHub una vez descomprimido y sincronizado.
 
 ## Retratos aprobados
 
-Actualmente hay **5 retratos aprobados registrados**.
+Actualmente hay **10 retratos aprobados registrados**.
 
 | Asset ID | Localización | Profesión | Sexo | Edad aparente | Rango | Complexión | Cabello | Pérdida de cabello | Vello facial | Rasgo facial / distintivo | Presentación | Pátina |
 |---|---|---|---|---:|---|---|---|---|---|---|---:|---|
@@ -55,6 +55,11 @@ Actualmente hay **5 retratos aprobados registrados**.
 | `portrait_treskal_farmer_female_003` | Treskal | farmer | female | 62 | elderly | thin | grey, gathered under worn headscarf | not_visible | not_applicable | rostro largo y estrecho, envejecimiento marcado, ojos verde-avellana apagados | 2 | C |
 | `portrait_treskal_farmer_female_004` | Treskal | farmer | female | 34 | adult | robust | auburn-chestnut, curly, gathered under light headscarf | none | not_applicable | rostro ancho y redondeado, piel ligeramente curtida, ojos gris-verde / avellana | 2 | C |
 | `portrait_treskal_farmer_female_005` | Treskal | farmer | female | 50 | adult | lean/average | dark brown with strong grey streaks, braided back | none_visible | not_applicable | rostro ovalado alargado y angular, pómulos marcados, mirada firme | 2 | C |
+| `portrait_treskal_farmer_male_001` | Treskal | farmer | male | 39 | adult | lean/average | medium brown, medium-short, tousled | none | short beard/stubble | rostro ovalado alargado algo angular, piel curtida, mirada directa | 2 | C |
+| `portrait_treskal_farmer_male_002` | Treskal | farmer | male | 21 | young | lean/healthy | light brown–dark blond, medium, tousled | none | very light stubble | rostro juvenil ovalado-estrecho, pecas sutiles, ojos avellana-verdes | 2 | C |
+| `portrait_treskal_farmer_male_003` | Treskal | farmer | male | 50 | adult | sturdy/broad | dark brown with greying, short-medium | receding/thinning | full salt-and-pepper beard | rostro ancho y curtido, barba entrecana, mirada seria | 2 | C |
+| `portrait_treskal_farmer_male_004` | Treskal | farmer | male | 60 | elderly | lean/wiry | grey-brown, short-medium sides/back | crown baldness/receding | short salt-and-pepper beard | rostro largo y estrecho, calvicie parcial, envejecimiento marcado | 2 | C |
+| `portrait_treskal_farmer_male_005` | Treskal | farmer | male | 35 | adult | sturdy/athletic working | medium brown, short, tousled | none | short natural stubble | rostro medio-ancho, mandíbula definida, mirada seria-neutral | 2 | C |
 
 ---
 
@@ -94,15 +99,26 @@ Estados utilizados:
 
 ### Assets de Treskal confirmados
 
-Ruta base vigente:
+Rutas base vigentes:
 
-`Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/`
+- `Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/`
+- `Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/male/`
+
+Campesinas:
 
 - `portrait_treskal_farmer_female_001` — **synced**
 - `portrait_treskal_farmer_female_002` — **synced**
 - `portrait_treskal_farmer_female_003` — **synced** — edad aparente ~62 / franja 58–68
 - `portrait_treskal_farmer_female_004` — **synced** — edad aparente ~34 / franja 30–38
 - `portrait_treskal_farmer_female_005` — **synced** — edad aparente ~50 / franja 46–55
+
+Campesinos:
+
+- `portrait_treskal_farmer_male_001` — **synced** — edad aparente ~39 / franja 35–44
+- `portrait_treskal_farmer_male_002` — **synced** — edad aparente ~21 / franja 18–24
+- `portrait_treskal_farmer_male_003` — **synced** — edad aparente ~50 / franja 46–55
+- `portrait_treskal_farmer_male_004` — **synced** — edad aparente ~60 / franja 56–66
+- `portrait_treskal_farmer_male_005` — **synced** — edad aparente ~35 / franja 31–39
 
 Todas las carpetas contienen el conjunto estándar del asset: PNG + `_prompt.md` + `_info.md`.
 
