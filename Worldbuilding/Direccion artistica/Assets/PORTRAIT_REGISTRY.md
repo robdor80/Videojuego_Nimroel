@@ -46,7 +46,7 @@ El ZIP no se conserva en GitHub una vez descomprimido y sincronizado.
 
 ## Retratos aprobados
 
-Actualmente hay **4 retratos aprobados registrados**.
+Actualmente hay **5 retratos aprobados registrados**.
 
 | Asset ID | Localización | Profesión | Sexo | Edad aparente | Rango | Complexión | Cabello | Pérdida de cabello | Vello facial | Rasgo facial / distintivo | Presentación | Pátina |
 |---|---|---|---|---:|---|---|---|---|---|---|---:|---|
@@ -54,6 +54,7 @@ Actualmente hay **4 retratos aprobados registrados**.
 | `portrait_treskal_farmer_female_002` | Treskal | farmer | female | 19 | young | thin/average | light-medium brown, long loose braid, no grey | none | not_applicable | rostro ovalado estrecho, pecas abundantes, ojos avellana verdosos | 2 | C |
 | `portrait_treskal_farmer_female_003` | Treskal | farmer | female | 62 | elderly | thin | grey, gathered under worn headscarf | not_visible | not_applicable | rostro largo y estrecho, envejecimiento marcado, ojos verde-avellana apagados | 2 | C |
 | `portrait_treskal_farmer_female_004` | Treskal | farmer | female | 34 | adult | robust | auburn-chestnut, curly, gathered under light headscarf | none | not_applicable | rostro ancho y redondeado, piel ligeramente curtida, ojos gris-verde / avellana | 2 | C |
+| `portrait_treskal_farmer_female_005` | Treskal | farmer | female | 50 | adult | lean/average | dark brown with strong grey streaks, braided back | none_visible | not_applicable | rostro ovalado alargado y angular, pómulos marcados, mirada firme | 2 | C |
 
 ---
 
@@ -93,16 +94,17 @@ Estados utilizados:
 
 ### Assets de Treskal confirmados
 
-- `portrait_treskal_farmer_female_001` — **synced**  
-  `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_001/`
-- `portrait_treskal_farmer_female_002` — **synced**  
-  `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_002/`
-- `portrait_treskal_farmer_female_003` — **synced**  
-  `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_003/`  
-  edad aparente ~62 años / franja útil 58–68.
-- `portrait_treskal_farmer_female_004` — **local_pending_gitsync**  
-  carpeta prevista: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_004/`  
-  edad aparente ~34 años / franja útil 30–38. ZIP entregado; carpeta todavía no confirmada en GitHub.
+Ruta base vigente:
+
+`Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/`
+
+- `portrait_treskal_farmer_female_001` — **synced**
+- `portrait_treskal_farmer_female_002` — **synced**
+- `portrait_treskal_farmer_female_003` — **synced** — edad aparente ~62 / franja 58–68
+- `portrait_treskal_farmer_female_004` — **synced** — edad aparente ~34 / franja 30–38
+- `portrait_treskal_farmer_female_005` — **synced** — edad aparente ~50 / franja 46–55
+
+Todas las carpetas contienen el conjunto estándar del asset: PNG + `_prompt.md` + `_info.md`.
 
 ### Verificación de la 003
 
