@@ -189,11 +189,11 @@
       "binary_sync_status": "synced",
       "zip_sha256": "697933334b6570c3fdb32eaadd4d506bc4ba2d1b8577aead47227a6ec97163e9",
       "png_sha256": "b9d20e27eed3603222d1b69f391c7ae0eb8077e7666039539dd58492afcb11ec",
-      "notes": "Asset almacenado en el repositorio como carpeta descomprimida (PNG + _prompt.md + _info.md). Carpeta confirmada en GitHub.",
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md.",
       "selection_age_band": "40-49",
       "background_context": "rural_treskal_farming_landscape",
       "transport_zip_file": "portrait_treskal_farmer_female_001.zip",
-      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_001/"
+      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/portrait_treskal_farmer_female_001/"
     },
     {
       "asset_id": "portrait_treskal_farmer_female_002",
@@ -260,9 +260,9 @@
       "binary_sync_status": "synced",
       "zip_sha256": "bd76fdc1bd3969949ea2f1394c02f5c5d1d54614242e0cf6ad29dba48497dd40",
       "png_sha256": "a7d87c3d706de958c73424e0f0c057dce142f9d8536fe409569bd38c80437e36",
-      "notes": "Asset almacenado en el repositorio como carpeta descomprimida (PNG + _prompt.md + _info.md). Carpeta confirmada en GitHub.",
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md.",
       "transport_zip_file": "portrait_treskal_farmer_female_002.zip",
-      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_002/"
+      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/portrait_treskal_farmer_female_002/"
     },
     {
       "asset_id": "portrait_treskal_farmer_female_003",
@@ -270,7 +270,7 @@
       "png_file": "portrait_treskal_farmer_female_003.png",
       "zip_file": "portrait_treskal_farmer_female_003.zip",
       "transport_zip_file": "portrait_treskal_farmer_female_003.zip",
-      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_003/",
+      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/portrait_treskal_farmer_female_003/",
       "kingdom_culture": "Norgard",
       "region": "Treskal",
       "location": "Treskal",
@@ -332,7 +332,7 @@
       "binary_sync_status": "synced",
       "zip_sha256": "9718581317c7138dc7e0d6be4a39ddde64705aee03bfba462d175e87265bbdf9",
       "png_sha256": "3c86a7d8b9b658b7e266408411189667e25c686f68c46c7a59e3e0969e98fdd3",
-      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida. Los tres archivos remotos coinciden exactamente con el paquete entregado (Git blob SHA verificados)."
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md."
     },
     {
       "asset_id": "portrait_treskal_farmer_female_004",
@@ -340,7 +340,7 @@
       "png_file": "portrait_treskal_farmer_female_004.png",
       "zip_file": "portrait_treskal_farmer_female_004.zip",
       "transport_zip_file": "portrait_treskal_farmer_female_004.zip",
-      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_004/",
+      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/portrait_treskal_farmer_female_004/",
       "kingdom_culture": "Norgard",
       "region": "Treskal",
       "location": "Treskal",
@@ -398,10 +398,80 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-25",
-      "binary_sync_status": "local_pending_gitsync",
+      "binary_sync_status": "synced",
       "zip_sha256": "4fcb73589c47ca2e0ffb3e0ff9ef045bd7a18dd1d865734280baf43c556a3856",
       "png_sha256": "89452244bfdea7993bf3cf2c01b80224eef4a67d25b704e6a447b6bf61c262c3",
-      "notes": "Asset aprobado. ZIP entregado al usuario. Carpeta definitiva todavía no confirmada en GitHub."
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md."
+    },
+    {
+      "asset_id": "portrait_treskal_farmer_female_005",
+      "base_name": "portrait_treskal_farmer_female_005",
+      "png_file": "portrait_treskal_farmer_female_005.png",
+      "zip_file": "portrait_treskal_farmer_female_005.zip",
+      "transport_zip_file": "portrait_treskal_farmer_female_005.zip",
+      "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Treskal/farmer/female/portrait_treskal_farmer_female_005/",
+      "kingdom_culture": "Norgard",
+      "region": "Treskal",
+      "location": "Treskal",
+      "profession": "farmer",
+      "professional_group": "rural_worker",
+      "sex": "female",
+      "age_range": "adult",
+      "apparent_age": 50,
+      "selection_age_band": "46-55",
+      "build": "lean_average",
+      "face_shape": "elongated_angular_oval",
+      "facial_width": "medium_narrow",
+      "jaw": "defined_mature",
+      "cheekbones": "pronounced",
+      "nose": "medium_long_straight_to_slightly_prominent",
+      "eyes": "hazel_brown",
+      "eyebrows": "dark_natural",
+      "lips": "medium_thin",
+      "forehead": "medium_high_with_visible_age_lines",
+      "facial_asymmetry": "subtle_natural",
+      "hair_color": "dark_brown_with_strong_grey_streaking",
+      "hair_texture": "slightly_wavy",
+      "hair_length": "medium_long_gathered_and_braided_back",
+      "hair_loss": "none_visible",
+      "gray_hair": "substantial_temples_and_hairline",
+      "facial_hair": "not_applicable",
+      "skin_state": "sun_weathered_mature_natural_texture_expression_lines",
+      "distinctive_traits": [
+        "prominent_grey_streaks_through_dark_hair",
+        "practical_braided_gathered_hairstyle",
+        "angular_mature_facial_structure",
+        "calm_firm_gaze",
+        "weathered_outdoor_working_complexion"
+      ],
+      "expression": "calm_firm_self_possessed",
+      "presentation_state_level": 2,
+      "clothing_patina_grade": "C",
+      "current_or_recent_activity": "farm_work",
+      "clothing_state": "worn off-white linen blouse and dark charcoal-brown work overdress/apron with localized earth and work marks",
+      "profession_environment_marks": [
+        "localized earth marks on work clothing",
+        "visible fabric wear consistent with agricultural labor"
+      ],
+      "recent_hygiene_state": "reasonably_clean_face_clothing_retains_work_memory",
+      "visible_hands_boots_hair_beard_equipment_state": "hands and boots not clearly visible; dark brown hair strongly streaked with grey, gathered and braided back; no facial hair; agricultural environment visible",
+      "background_context": "soft_contextual_treskal_agricultural_garden_field_plots_rustic_fencing_stone_wood_slate_roof_building_trees_and_nearby_river_or_water",
+      "diversity_rationale": "Quinta campesina de Treskal. Cubre una franja adulta madura alrededor de los 50 años con silueta más delgada, rostro más angular y alargado, fuerte presencia de canas sobre cabello oscuro y peinado trenzado práctico. Se diferencia de la joven (~19), la adulta robusta de ~34, la adulta robusta de ~44 y la anciana delgada (~62).",
+      "canonical_sources_consulted": [
+        "NIMROEL_GLOBAL_VISUAL_BIBLE_v0.5.md",
+        "NPC_PORTRAIT_VISUAL_BIBLE_v0.3.md",
+        "NORGARD_VISUAL_PROFILE_v0.1.md",
+        "norgard_visual_profile_v0.4.json",
+        "TRESKAL_PORTRAIT_VISUAL_BIBLE_v0.1.md",
+        "PORTRAIT_WORKFLOW_RULES.md",
+        "PORTRAIT_REGISTRY.json",
+        "nimroel_asset_naming_convention.md"
+      ],
+      "approved_date": "2026-09-25",
+      "binary_sync_status": "synced",
+      "zip_sha256": "4b401e4f5d10b87197cbcb2683d9c256ea50b87edcfe15f8e6632816d4d98af6",
+      "png_sha256": "8d8db6346451625aa5c48726dc406f90d2aafda7b91d7ed210a549feb684f9b8",
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md."
     }
   ],
   "local_portrait_bibles": {
