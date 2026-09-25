@@ -42,11 +42,12 @@ El ZIP debe contener el PNG final y la documentación del asset definida por el 
 
 ## Retratos aprobados
 
-Actualmente hay **1 retrato aprobado registrado**.
+Actualmente hay **2 retratos aprobados registrados**.
 
 | Asset ID | Localización | Profesión | Sexo | Edad aparente | Rango | Complexión | Cabello | Pérdida de cabello | Vello facial | Rasgo facial / distintivo | Presentación | Pátina |
 |---|---|---|---|---:|---|---|---|---|---|---|---:|---|
 | `portrait_treskal_farmer_female_001` | Treskal | farmer | female | 44 | adult | robust | dark_ash_brown, tied back, early grey | none | not_applicable | rostro broad-oval, nariz marcada, asimetría sutil, piel curtida | 2 | C |
+| `portrait_treskal_farmer_female_002` | Treskal | farmer | female | 19 | young | thin/average | light-medium brown, long loose braid, no grey | none | not_applicable | rostro ovalado estrecho, pecas abundantes, ojos avellana verdosos | 2 | C |
 
 ---
 
@@ -81,4 +82,13 @@ Para `portrait_treskal_farmer_female_001`:
 
 - estado: `local_pending_gitsync`
 - ruta prevista: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_001.zip`
-- SHA-256 ZIP local: `ae5416051f36a1179b8ac85cb52ad281bccaa255b72502de75d4e81af5cfec73`
+- SHA-256 ZIP local: `697933334b6570c3fdb32eaadd4d506bc4ba2d1b8577aead47227a6ec97163e9`
+
+
+Para `portrait_treskal_farmer_female_002`:
+
+- estado: `local_pending_gitsync`
+- ruta prevista: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_002.zip`
+- edad aparente / búsqueda: ~19 años / franja 17–22
+- fondo: agrícola de Treskal, coherente con oficio y localización
+- SHA-256 ZIP local: `bd76fdc1bd3969949ea2f1394c02f5c5d1d54614242e0cf6ad29dba48497dd40`

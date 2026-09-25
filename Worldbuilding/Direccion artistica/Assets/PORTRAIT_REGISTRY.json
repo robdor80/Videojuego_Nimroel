@@ -120,7 +120,9 @@
     "binary_sync_status": "local_pending_gitsync|synced",
     "expected_repository_zip_path": "string",
     "zip_sha256": "string_or_null",
-    "png_sha256": "string_or_null"
+    "png_sha256": "string_or_null",
+    "background_context": "string_or_null",
+    "selection_age_band": "string_or_null"
   },
   "entries": [
     {
@@ -182,9 +184,79 @@
       "approved_date": "2026-09-25",
       "binary_sync_status": "local_pending_gitsync",
       "expected_repository_zip_path": "Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_001.zip",
-      "zip_sha256": "ae5416051f36a1179b8ac85cb52ad281bccaa255b72502de75d4e81af5cfec73",
+      "zip_sha256": "697933334b6570c3fdb32eaadd4d506bc4ba2d1b8577aead47227a6ec97163e9",
       "png_sha256": "b9d20e27eed3603222d1b69f391c7ae0eb8077e7666039539dd58492afcb11ec",
-      "notes": "Primer retrato aprobado tras reiniciar el registro de diversidad. ZIP entregado para almacenamiento local; subida diferida a GitSync de final de sesión."
+      "notes": "Primer retrato aprobado tras reiniciar el registro de diversidad. ZIP local sustituido por versión con perfil físico explícito; pendiente GitSync final.",
+      "selection_age_band": "40-49",
+      "background_context": "rural_treskal_farming_landscape"
+    },
+    {
+      "asset_id": "portrait_treskal_farmer_female_002",
+      "base_name": "portrait_treskal_farmer_female_002",
+      "png_file": "portrait_treskal_farmer_female_002.png",
+      "zip_file": "portrait_treskal_farmer_female_002.zip",
+      "kingdom_culture": "Norgard",
+      "region": "Treskal",
+      "location": "Treskal",
+      "profession": "farmer",
+      "professional_group": "rural_worker",
+      "sex": "female",
+      "age_range": "young",
+      "apparent_age": 19,
+      "selection_age_band": "17-22",
+      "build": "thin_average",
+      "face_shape": "narrow_oval_youthful",
+      "facial_width": "narrow_medium",
+      "jaw": "soft",
+      "cheekbones": "moderate",
+      "nose": "straight_fine_medium",
+      "eyes": "hazel_green_brown",
+      "eyebrows": "natural_brown",
+      "lips": "medium",
+      "forehead": "medium",
+      "facial_asymmetry": "subtle_natural",
+      "hair_color": "light_to_medium_brown",
+      "hair_texture": "slightly_wavy",
+      "hair_length": "long_loose_braid",
+      "hair_loss": "none",
+      "gray_hair": "none_visible",
+      "facial_hair": "not_applicable",
+      "skin_state": "fair_to_medium_sun_touched_with_abundant_freckles",
+      "distinctive_traits": [
+        "abundant_freckles_across_face_and_nose",
+        "long_loose_braid",
+        "worn_linen_headscarf",
+        "clearly_youthful_appearance",
+        "hazel_green_brown_eyes"
+      ],
+      "expression": "calm_thoughtful_slightly_tired",
+      "presentation_state_level": 2,
+      "clothing_patina_grade": "C",
+      "current_or_recent_activity": "farm_work",
+      "clothing_state": "aged off-white linen blouse with worn dark lace-up work bodice/apron; wrinkles and accumulated use visible",
+      "profession_environment_marks": [
+        "dust_and_light_earth_marks_on_work_clothing",
+        "wear_on_edges_stitching_and_fabric"
+      ],
+      "recent_hygiene_state": "face_reasonably_clean_clothing_retains_work_memory",
+      "visible_hands_boots_hair_beard_equipment_state": "forearms visible; boots not visible; long loose braid and escaped strands; no facial hair; agricultural baskets/fences/tools visible in background",
+      "background_context": "treskal_agricultural_fields_or_vineyards_fences_baskets_farm_building_water_and_distant_settlement",
+      "diversity_rationale": "Segunda campesina de Treskal: cubre deliberadamente una franja joven (~19) frente a la primera adulta (~44), con complexión más esbelta, rostro más estrecho, cabello más claro sin canas y pecas muy marcadas.",
+      "canonical_sources_consulted": [
+        "NIMROEL_GLOBAL_VISUAL_BIBLE_v0.5.md",
+        "NPC_PORTRAIT_VISUAL_BIBLE_v0.3.md",
+        "NORGARD_VISUAL_PROFILE_v0.1.md",
+        "norgard_visual_profile_v0.4.json",
+        "norgard_settlements_v0.2.json",
+        "PORTRAIT_WORKFLOW_RULES.md",
+        "nimroel_asset_naming_convention.md"
+      ],
+      "approved_date": "2026-09-25",
+      "binary_sync_status": "local_pending_gitsync",
+      "expected_repository_zip_path": "Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_002.zip",
+      "zip_sha256": "bd76fdc1bd3969949ea2f1394c02f5c5d1d54614242e0cf6ad29dba48497dd40",
+      "png_sha256": "a7d87c3d706de958c73424e0f0c057dce142f9d8536fe409569bd38c80437e36",
+      "notes": "Segundo retrato femenino de campesina de Treskal aprobado. Fondo agrícola contextual por oficio/localización. ZIP entregado para almacenamiento local; pendiente GitSync final."
     }
   ]
 }

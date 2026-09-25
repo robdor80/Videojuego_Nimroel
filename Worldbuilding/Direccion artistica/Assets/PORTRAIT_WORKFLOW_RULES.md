@@ -307,3 +307,21 @@ Durante una sesión de creación de assets puede utilizarse el siguiente flujo o
 10. cuando se confirme su presencia en el repo, el estado pasa a `synced`.
 
 La memoria de diversidad **no debe esperar al GitSync final**. Un retrato aprobado cuenta para la diversidad desde el momento en que su ZIP local ha sido creado y entregado.
+
+
+---
+
+## 17. Fondo contextual por oficio y localización
+
+Por defecto, todo retrato NPC asociado a un oficio debe utilizar un fondo discreto y desenfocado que refuerce ese oficio sin convertir el retrato en una escena narrativa.
+
+Ejemplos:
+
+- campesino / campesina → campo, cultivos, viñedos, cercados, útiles agrícolas o paisaje rural;
+- carpintero / carpintera → taller de carpintería, madera, banco o herramientas;
+- herrero / herrera → herrería, fragua, yunque, metal y entorno de taller;
+- panadero / panadera → horno, mesa de amasado, harina, pan o interior de panadería.
+
+Cuando exista una localización concreta, el fondo debe resolver **oficio + localización** simultáneamente. Por ejemplo, una campesina de Treskal debe mostrar un entorno agrícola compatible con Treskal.
+
+El fondo debe permanecer secundario y normalmente desenfocado. Un fondo neutro o de estudio solo se utilizará como excepción justificada, no como valor por defecto.
