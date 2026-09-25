@@ -80,15 +80,25 @@ Estados utilizados:
 
 Para `portrait_treskal_farmer_female_001`:
 
-- estado: `local_pending_gitsync`
-- ruta prevista: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_001.zip`
+- estado: `synced`
+- ruta confirmada: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_001.zip`
 - SHA-256 ZIP local: `697933334b6570c3fdb32eaadd4d506bc4ba2d1b8577aead47227a6ec97163e9`
 
 
 Para `portrait_treskal_farmer_female_002`:
 
-- estado: `local_pending_gitsync`
-- ruta prevista: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_002.zip`
+- estado: `synced`
+- ruta confirmada: `Worldbuilding/Direccion artistica/Assets/Retratos/Treskal/portrait_treskal_farmer_female_002.zip`
 - edad aparente / búsqueda: ~19 años / franja 17–22
 - fondo: agrícola de Treskal, coherente con oficio y localización
 - SHA-256 ZIP local: `bd76fdc1bd3969949ea2f1394c02f5c5d1d54614242e0cf6ad29dba48497dd40`
+
+
+### Verificación remota
+
+Comprobación realizada el 2026-09-25:
+
+- `portrait_treskal_farmer_female_001.zip` — presente en el repo; Git blob SHA `d9222ecc3081f5dae240911bd612f562a0c470b0`; coincide byte por byte con el ZIP entregado.
+- `portrait_treskal_farmer_female_002.zip` — presente en el repo; Git blob SHA `681853fa81bf778566100356d282bb12387faa64`; coincide byte por byte con el ZIP entregado.
+
+Ambos paquetes contienen exactamente tres archivos: PNG, `_prompt.md` y `_info.md` con el nombre base correcto.
