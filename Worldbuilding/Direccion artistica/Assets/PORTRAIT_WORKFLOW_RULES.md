@@ -1,0 +1,287 @@
+# NIMROEL — PORTRAIT WORKFLOW RULES
+
+**Estado:** ACTIVE / OBLIGATORIO  
+**Versión:** 1.0  
+**Fecha:** 2026-09-25  
+**Ámbito:** generación, aprobación y almacenamiento de retratos visuales de Nimroel.
+
+---
+
+## 1. Regla maestra
+
+**No se debe generar ningún retrato nuevo sin consultar antes las biblias visuales aplicables y el registro de diversidad de retratos.**
+
+La consulta del registro no sustituye al canon. El registro sirve para decidir la **variación individual** dentro de las posibilidades permitidas por las biblias.
+
+---
+
+## 2. Fuentes obligatorias antes de generar
+
+Como mínimo deben revisarse, según proceda:
+
+1. Biblia Visual General vigente.
+2. Biblia Visual de Retratos NPC vigente.
+3. Perfil cultural vigente.
+4. Perfil regional / local vigente cuando exista.
+5. Perfil de raza, profesión, clase o facción cuando exista y sea relevante.
+6. Datos operativos asociados vigentes.
+7. `PORTRAIT_REGISTRY.json`.
+
+Para Norgard, a fecha de creación de este workflow, las referencias vigentes consultadas son:
+
+- `Worldbuilding/Direccion artistica/Biblia visual/General/NIMROEL_GLOBAL_VISUAL_BIBLE_v0.5.md`
+- `Worldbuilding/Direccion artistica/Biblia visual/Categorias/NPC/NPC_PORTRAIT_VISUAL_BIBLE_v0.3.md`
+- `Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/NORGARD_VISUAL_PROFILE_v0.1.md`
+- `Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Datos operativos/norgard_visual_profile_v0.4.json`
+
+Si existen versiones posteriores aprobadas, deben prevalecer las vigentes más recientes.
+
+---
+
+## 3. Construcción del pool comparable
+
+Antes de resolver la apariencia se debe consultar el registro y formar un pool comparable.
+
+Prioridad de comparación:
+
+1. misma localización + misma profesión + mismo sexo;
+2. si el pool es pequeño, misma localización + grupo profesional + mismo sexo;
+3. si sigue siendo insuficiente, misma cultura / región + profesión + mismo sexo;
+4. como control general adicional, población completa de la localización.
+
+El propósito no es obtener una cuota matemática rígida, sino detectar repeticiones y huecos evidentes.
+
+---
+
+## 4. Ejes mínimos de diversidad
+
+Antes del prompt final se deben resolver deliberadamente, cuando sean aplicables:
+
+- rango de edad;
+- edad aparente;
+- complexión;
+- forma general del rostro;
+- anchura facial;
+- mandíbula;
+- pómulos;
+- nariz;
+- ojos;
+- cejas;
+- labios;
+- frente;
+- asimetrías naturales;
+- color de cabello;
+- textura del cabello;
+- longitud;
+- grado de pérdida de cabello / entradas / calvicie;
+- presencia y tipo de canas;
+- vello facial;
+- estado de piel;
+- exposición al clima / trabajo;
+- rasgos distintivos moderados;
+- expresión base;
+- presentación contextual;
+- pátina de la indumentaria.
+
+No todos los campos necesitan ser extraordinarios. La diversidad debe sentirse humana y natural.
+
+---
+
+## 5. Regla de cobertura antes de repetición
+
+Las características pueden repetirse.
+
+Sin embargo, si un pool ya contiene varias personas con una combinación muy similar, se debe preferir una variante menos representada siempre que:
+
+- sea compatible con el canon;
+- sea compatible con la profesión;
+- sea compatible con la edad;
+- no contradiga cultura, región, clase o contexto.
+
+Ejemplo de repetición a evitar por inercia:
+
+`male + adult 30–40 + robust + dark_brown_hair + full_short_beard + broad_face`
+
+Si esa combinación ya domina el pool, el siguiente asset debería explorar otra combinación plausible: joven, maduro mayor, anciano, delgado, heavy, afeitado, bigote, calvicie parcial, canas, rostro estrecho, etc.
+
+---
+
+## 6. Regla anti-clonación
+
+Debe rechazarse un retrato candidato si parece:
+
+- la misma persona con distinta ropa;
+- la misma cara con distinto cabello;
+- un duplicado facial;
+- una variante casi idéntica de un retrato ya aprobado.
+
+La comprobación se realiza contra el pool comparable y, si es necesario, contra retratos próximos de la misma localización.
+
+La diversidad facial es un requisito de calidad.
+
+---
+
+## 7. Edad
+
+Rangos base heredados de la Biblia NPC:
+
+- `child`
+- `young`
+- `adult`
+- `elderly`
+
+Además del rango se registrará una **edad aparente aproximada** para poder detectar concentración excesiva en una franja.
+
+La profesión debe ser compatible con la edad. Un aprendiz adolescente puede existir donde sea plausible; un niño no debe recibir una profesión adulta incompatible.
+
+El envejecimiento debe afectar realmente a proporciones, piel, volumen facial, cabello, postura y textura. Un anciano no es un adulto joven con pelo gris.
+
+---
+
+## 8. Cabello y vello facial
+
+No usar barba como marcador automático de ambiente medieval.
+
+El registro debe distinguir al menos:
+
+- color;
+- longitud;
+- textura;
+- pérdida de cabello;
+- canas;
+- tipo de vello facial.
+
+Estados posibles de pérdida de cabello, cuando sean útiles:
+
+- `none`
+- `receding`
+- `thinning`
+- `tonsure_like_crown_loss`
+- `advanced_balding`
+- `bald`
+
+No son cuotas ni una lista cerrada.
+
+---
+
+## 9. Complexión
+
+Etiquetas recomendadas heredadas de la Biblia NPC:
+
+- `very_thin`
+- `thin`
+- `average`
+- `robust`
+- `heavy`
+- `muscular`
+- `frail`
+
+No asociar automáticamente profesión con una sola complexión.
+
+---
+
+## 10. Ficha de variación resuelta
+
+Antes de redactar el prompt final debe existir internamente una ficha de variación resuelta con, como mínimo:
+
+- localización;
+- profesión;
+- sexo;
+- rango de edad;
+- edad aparente;
+- complexión;
+- morfología facial principal;
+- cabello;
+- pérdida de cabello / canas;
+- vello facial;
+- rasgos distintivos;
+- presentación contextual;
+- pátina;
+- diferencias buscadas respecto al pool existente.
+
+La apariencia individual se decide **antes** del prompt, no se deja completamente a la solución por defecto del generador.
+
+---
+
+## 11. Presentación y pátina
+
+Se mantienen las dos capas obligatorias definidas por las biblias:
+
+### Presentación contextual 1–5
+
+- 1 — exposición intensa / trabajo especialmente sucio / campaña;
+- 2 — jornada de trabajo o viaje;
+- 3 — uso cotidiano aseado;
+- 4 — muy cuidado / alto nivel de presentación;
+- 5 — presentación ceremonial / excepcionalmente cuidada.
+
+### Pátina de ropa A–D
+
+- A — excepcional / casi nueva;
+- B — bien mantenida;
+- C — uso cotidiano normal;
+- D — muy trabajada.
+
+Ambas capas son independientes.
+
+---
+
+## 12. Convención de nombre
+
+Cada asset tendrá un `asset_id` único que será también su nombre base.
+
+Ejemplo:
+
+`PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001`
+
+Los dos archivos principales deben llamarse exactamente:
+
+`PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001.png`
+
+`PORTRAIT_NORGARD_TRESKAL_FARMER_MALE_001.zip`
+
+**PNG y ZIP deben compartir exactamente el mismo nombre base.**
+
+---
+
+## 13. Momento de registro
+
+Un retrato solo entra en `PORTRAIT_REGISTRY.json` y `PORTRAIT_REGISTRY.md` cuando haya sido aprobado.
+
+Los borradores o imágenes descartadas no cuentan para el equilibrio poblacional permanente.
+
+Al aprobar:
+
+1. asignar nombre final;
+2. guardar PNG;
+3. crear ZIP;
+4. registrar características físicas reales del resultado aprobado;
+5. registrar presentación y pátina;
+6. actualizar la vista MD;
+7. actualizar `VISUAL_ASSET_REGISTRY.md`.
+
+No registrar únicamente lo solicitado en el prompt: registrar lo que realmente aparece en el asset final aprobado.
+
+---
+
+## 14. Regla de fidelidad del registro
+
+El registro debe describir el asset final, no inventar características que no sean visibles o razonablemente inferibles.
+
+Si un atributo no puede determinarse con suficiente seguridad se usará `unknown`, `not_visible` o `not_applicable` según corresponda.
+
+---
+
+## 15. Resultado buscado
+
+Una campaña correcta debe producir:
+
+**personas distintas, del mismo mundo, de la misma cultura y bajo una dirección artística coherente.**
+
+Debe fallar la aprobación colectiva si los retratos:
+
+- parecen clones;
+- repiten continuamente la misma franja de edad;
+- repiten sistemáticamente barba, peinado o complexión;
+- parecen personajes de universos distintos;
+- pierden la identidad cultural para ganar variedad.

@@ -1,0 +1,118 @@
+{
+  "schema": "nimroel_portrait_registry",
+  "version": "1.0",
+  "status": "ACTIVE",
+  "created": "2026-09-25",
+  "purpose": "Memoria poblacional y control de diversidad para retratos aprobados de Nimroel.",
+  "authoritative_rules": "PORTRAIT_WORKFLOW_RULES.md",
+  "human_view": "PORTRAIT_REGISTRY.md",
+  "required_before_generation": true,
+  "naming_policy": {
+    "asset_id_is_base_name": true,
+    "png_and_zip_same_base_name": true
+  },
+  "pre_generation_checks": [
+    "consult_current_global_visual_bible",
+    "consult_current_npc_portrait_bible",
+    "consult_applicable_culture_region_profession_social_profiles",
+    "consult_this_registry",
+    "build_comparable_pool",
+    "detect_overrepresented_combinations_and_gaps",
+    "resolve_individual_variation_before_final_prompt",
+    "run_anti_clone_check"
+  ],
+  "comparison_priority": [
+    "same_location_same_profession_same_sex",
+    "same_location_same_professional_group_same_sex",
+    "same_culture_or_region_same_profession_same_sex",
+    "whole_location_population"
+  ],
+  "age_ranges": [
+    "child",
+    "young",
+    "adult",
+    "elderly"
+  ],
+  "recommended_builds": [
+    "very_thin",
+    "thin",
+    "average",
+    "robust",
+    "heavy",
+    "muscular",
+    "frail"
+  ],
+  "recommended_hair_loss_states": [
+    "none",
+    "receding",
+    "thinning",
+    "tonsure_like_crown_loss",
+    "advanced_balding",
+    "bald"
+  ],
+  "presentation_levels": {
+    "1": "exposicion_intensa_trabajo_especialmente_sucio_o_campana",
+    "2": "jornada_de_trabajo_o_viaje",
+    "3": "uso_cotidiano_aseado",
+    "4": "muy_cuidado_alto_nivel_de_presentacion",
+    "5": "presentacion_ceremonial_excepcionalmente_cuidada"
+  },
+  "clothing_patina_grades": {
+    "A": "excepcional_casi_nueva",
+    "B": "bien_mantenida",
+    "C": "uso_cotidiano_normal",
+    "D": "muy_trabajada"
+  },
+  "entry_schema": {
+    "asset_id": "string",
+    "base_name": "string",
+    "png_file": "string",
+    "zip_file": "string",
+    "kingdom_culture": "string",
+    "region": "string_or_null",
+    "location": "string",
+    "profession": "string",
+    "professional_group": "string_or_null",
+    "sex": "male|female",
+    "age_range": "child|young|adult|elderly",
+    "apparent_age": "integer_or_range",
+    "build": "string",
+    "face_shape": "string",
+    "facial_width": "string_or_null",
+    "jaw": "string_or_null",
+    "cheekbones": "string_or_null",
+    "nose": "string_or_null",
+    "eyes": "string_or_null",
+    "eyebrows": "string_or_null",
+    "lips": "string_or_null",
+    "forehead": "string_or_null",
+    "facial_asymmetry": "string_or_null",
+    "hair_color": "string",
+    "hair_texture": "string_or_null",
+    "hair_length": "string",
+    "hair_loss": "string",
+    "gray_hair": "string_or_null",
+    "facial_hair": "string",
+    "skin_state": "string_or_null",
+    "distinctive_traits": [
+      "string"
+    ],
+    "expression": "string_or_null",
+    "presentation_state_level": "1-5",
+    "clothing_patina_grade": "A-D",
+    "current_or_recent_activity": "string_or_null",
+    "clothing_state": "string_or_null",
+    "profession_environment_marks": [
+      "string"
+    ],
+    "recent_hygiene_state": "string_or_null",
+    "visible_hands_boots_hair_beard_equipment_state": "string_or_null",
+    "diversity_rationale": "string",
+    "canonical_sources_consulted": [
+      "string"
+    ],
+    "approved_date": "YYYY-MM-DD",
+    "notes": "string_or_null"
+  },
+  "entries": []
+}
