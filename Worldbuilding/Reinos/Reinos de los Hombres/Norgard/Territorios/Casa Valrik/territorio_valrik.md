@@ -238,6 +238,74 @@ El peso de la madera en Treskal no implica que toda la población del territorio
 
 ---
 
+## 9. Alimentación, pesca y abastecimiento
+
+La alimentación del territorio Valrik combina recursos marítimos, fluviales y rurales.
+
+### Pesca marítima
+
+La **pesca en el Mar de Suthiros** constituye una actividad muy importante para Treskal y su territorio.
+
+La calidad de la construcción naval Valrik permite disponer de embarcaciones pesqueras capaces y resistentes, lo que sostiene una actividad marítima regular y relevante para el abastecimiento de la región.
+
+El pescado de mar constituye, por tanto, una parte importante de la dieta y de los mercados de Treskal.
+
+### Pesca fluvial
+
+En las zonas interiores, los **Ríos Sareno y Theleno —Los Gemelos de Treskal—** abastecen de pescado de río a aldeas y pueblos próximos a sus cauces.
+
+La pesca fluvial complementa el abastecimiento local y forma parte de la economía cotidiana de los asentamientos interiores.
+
+### Agricultura y ganadería
+
+El territorio Valrik no constituye una potencia agrícola o ganadera comparable al territorio de **Arleon**.
+
+Aun así, en las aldeas y explotaciones rurales próximas a Treskal se producen:
+
+- cereales;
+- tubérculos;
+- productos de huerta;
+- ganado vacuno;
+- ganado ovino;
+- ganado porcino;
+- otros productos rurales necesarios para el consumo cotidiano.
+
+Estas explotaciones abastecen una parte importante de la demanda diaria de la capital.
+
+### Mercados de Treskal
+
+Treskal mantiene **mercados activos todos los días del año** para garantizar el abastecimiento continuo de la ciudad.
+
+A ellos llegan de forma regular:
+
+- pescado de mar;
+- pescado de río;
+- cereales;
+- tubérculos;
+- hortalizas;
+- carne;
+- ganado;
+- productos de las aldeas y pueblos cercanos;
+- otras mercancías básicas de consumo.
+
+La continuidad de estos mercados convierte la red de caminos y el transporte regional en un elemento esencial para la vida urbana.
+
+### Importaciones
+
+Treskal no produce todo lo que consume.
+
+Por proximidad y capacidad productiva, compra a **Arleon y al territorio Galdren** parte del cereal y del ganado que necesita.
+
+El **vino se importa**; no constituye una producción destacada del territorio Valrik.
+
+### Cerveza
+
+En el territorio Valrik **se produce cerveza**, tanto para consumo local como para el abastecimiento cotidiano de tabernas, hogares y mercados.
+
+Sin embargo, la cerveza Valrik **no posee una reputación especial por su calidad** y no constituye un producto de prestigio ni una exportación característica del territorio.
+
+---
+
 ## 9. Estado del bloque territorial
 
 Queda aprobado como canon:
@@ -269,7 +337,13 @@ Queda aprobado como canon:
 - los asentamientos civiles ligados al bosque se sitúan en sus inmediaciones y bordes, fuera de la masa forestal densa;
 - la red de caminos Valrik está especialmente bien mantenida por su importancia para el abastecimiento y el transporte de madera y mercancías;
 - Treskal concentra numerosos aserraderos, carpinterías y talleres de madera;
-- de Treskal salen los muebles y objetos decorativos de madera de mayor calidad de las tierras de los Hombres.
+- de Treskal salen los muebles y objetos decorativos de madera de mayor calidad de las tierras de los Hombres;
+- la pesca marítima en el Mar de Suthiros es una actividad fundamental para el abastecimiento;
+- los Gemelos de Treskal proporcionan pescado de río a numerosos asentamientos interiores;
+- el territorio produce cereales, tubérculos, productos de huerta y ganadería vacuna, ovina y porcina, aunque sin competir con Arleon como potencia agroganadera;
+- Treskal mantiene mercados activos todos los días del año para garantizar su abastecimiento;
+- se importa vino y se compra a Arleon parte del cereal y del ganado consumidos;
+- se produce cerveza local, pero no destaca especialmente por su calidad.
 
 ---
 
@@ -283,7 +357,7 @@ Queda aprobado como canon:
 - trazado y jerarquía concreta de las principales rutas y caminos;
 - organización detallada de la explotación forestal y sus concesiones;
 - zonas agrícolas y ganaderas concretas y su especialización;
-- pesca;
+- organización concreta de la pesca marítima y fluvial;
 - especialización concreta de los astilleros;
 - distribución de población;
 - Casas menores;
