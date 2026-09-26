@@ -847,8 +847,14 @@ Como servicios y actividades ya fijados contará con:
 - una **herrería**;
 - **dos pequeños aserraderos**;
 - una **carpintería** de calidad notable para una aldea de su tamaño;
+- un **pozo o fuente comunal**;
+- un **pequeño almacén o pajar** para mercancías, herramientas y madera;
+- **establos y corrales** asociados a algunas viviendas y a la actividad de paso;
+- un **carretero o artesano especializado en reparar carros, ruedas y elementos de transporte**;
 - viviendas familiares;
 - campos de cultivo y pequeñas explotaciones agroganaderas en su entorno inmediato.
+
+La aldea **no dispone de molino propio**. El grano debe llevarse a otro núcleo cercano, lo que crea una relación funcional con una segunda aldea del entorno y una razón natural para desplazamientos, encargos y futuras interacciones jugables.
 
 La escala debe permitir que buena parte de los habitantes sean reconocibles como NPC individuales o familias concretas durante la prueba jugable.
 
