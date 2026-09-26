@@ -10,3 +10,20 @@ Familia gobernante actual. Para empezar bastaría con señor/señora de la Casa,
 Capacidad militar básica. Tipo de tropas predominantes, calidad, especialidades y qué aportan al ejército de Norgard. No hace falta calcular todavía “7.423 soldados”; basta con identidad funcional. Aethros podría concentrar poder real y Rodas; Valrik capacidad naval; Galdren equipamiento/recursos; etc.
 Heráldica y colores. Esto ya lo tenemos prácticamente resuelto: emblema, escudo militar, banner y sello de las cinco Casas. Perfecto para uniformes, edificios, mapas, UI, documentos y reconocimiento visual.
 Ganchos de gameplay. Cada Casa debería tener entre 3 y 5 fuentes naturales de conflictos y misiones. Ejemplo: Darovan → minas, comercio, préstamos, puertos; Edranor → vino, prestigio, Rodas; Galdren → cosechas, Zanthir, Forja Estelar; Valrik → bosques, astilleros, pesca; Aethros → Corona, impuestos, seguridad del reino.
+
+---
+
+## Capa rural orientada a gameplay
+
+La lógica de aldeas, servicios rurales, especialistas, producción doméstica y dependencia entre asentamientos se documenta en:
+
+`Sociedad/aldeas_servicios_y_economia_local.md`
+
+Ese documento utiliza IDs estables y reglas de disponibilidad pensadas para convertirse posteriormente en datos estructurados del juego.
+
+Principio técnico:
+
+- el Markdown conserva el canon humano;
+- los futuros JSON no deben reinterpretar el canon, sino serializarlo;
+- las definiciones estáticas deben separarse de las instancias concretas de asentamientos, NPC, inventarios y estado dinámico de partida;
+- la ausencia de un servicio en una aldea debe poder ser información jugable y generar desplazamiento, diálogo, comercio y relaciones entre localidades.
