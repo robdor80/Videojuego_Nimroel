@@ -96,17 +96,42 @@ Es una ciudad de menor tamaño, riqueza visible y esplendor que **Treihord**.
 
 No existe otro núcleo urbano comparable dentro de los dominios Valrik.
 
-El resto de la población se distribuye principalmente en:
+Sin embargo, la identidad del territorio no nace únicamente de su capital. La verdadera vida de Valrik se encuentra en la red de **pueblos y aldeas** repartidos por sus tierras: son ellos los que sostienen el abastecimiento, los oficios cotidianos, la producción y buena parte del carácter humano de la región.
 
-- unas pocas villas;
-- pueblos;
-- numerosas aldeas;
-- explotaciones rurales;
-- enclaves productivos;
-- asentamientos costeros;
-- núcleos menores vinculados a actividades concretas.
+### Villas
 
-Las villas son relativamente escasas. El tejido humano del territorio se apoya sobre todo en pueblos y aldeas.
+El territorio cuenta con **muy pocas villas**.
+
+Como estructura base quedan definidas tres de especial relevancia funcional:
+
+1. **Villa costera de los astilleros civiles**  
+   Es la mayor de las villas del territorio. Alberga los principales astilleros civiles especializados en grandes embarcaciones pesqueras, mercantes, de carga y transporte.
+
+2. **Villa de gestión forestal y maderera**  
+   Situada fuera del interior denso del Bosque Negro, funciona como gran punto de recepción, organización y expedición de la madera extraída del bosque. Desde ella se canaliza buena parte del recurso hacia los grandes aserraderos y carpinterías de Treskal y hacia los Astilleros Reales.
+
+3. **Villa agroganadera y comercial del interior**  
+   Actúa como centro de concentración y distribución de cereal, ganado y otros productos agrícolas. Mantiene mercados diarios y organiza el transporte de mercancías hacia Treskal y hacia otros pueblos y aldeas del territorio.
+
+Los nombres y localizaciones exactas de estas tres villas quedan pendientes.
+
+### Pueblos y aldeas
+
+El tejido principal del territorio está formado por pueblos y aldeas.
+
+Muchas de las aldeas próximas al Bosque Negro están vinculadas de una u otra forma a la actividad maderera, aunque no todos sus habitantes trabajan directamente en ella.
+
+Los asentamientos rurales también cubren las necesidades básicas de su entorno mediante una **red compartida de oficios y servicios**.
+
+No es necesario que cada aldea disponga de todos los artesanos o instalaciones. Es habitual que un oficio especializado dé servicio a varios núcleos próximos.
+
+Por ejemplo:
+
+- un herrero puede atender a varias aldeas;
+- un molino puede recibir grano de distintos asentamientos;
+- determinados carpinteros, curtidores, carreteros u otros artesanos pueden trabajar para una pequeña comarca rural y no solo para su propia localidad.
+
+Esto crea una relación constante entre aldeas y pueblos cercanos y refuerza la importancia de la red de caminos.
 
 ### Relación con Treskal
 
@@ -114,7 +139,7 @@ Los pueblos, aldeas y explotaciones rurales del territorio suministran una parte
 
 Buena parte de estos recursos llegan diariamente o de forma regular a los mercados de la ciudad.
 
-Treskal funciona así como gran centro urbano, artesanal y político de una red territorial mucho más dispersa.
+Treskal funciona así como gran centro urbano, artesanal y político de una red territorial mucho más dispersa, mientras que los asentamientos menores constituyen la base humana y productiva que mantiene vivo el territorio.
 
 ---
 
@@ -136,7 +161,7 @@ La **Armada Real pertenece a la Corona**; los astilleros de Treskal construyen s
 
 La capacidad naval Valrik no se limita a la Armada Real.
 
-Una de las villas costeras del territorio alberga los **principales astilleros navales civiles especializados en grandes embarcaciones**.
+La **mayor de las villas del territorio**, situada en la costa, alberga los **principales astilleros navales civiles especializados en grandes embarcaciones**.
 
 En ellos se diseñan y construyen por encargo, entre otros:
 
@@ -392,7 +417,11 @@ Queda aprobado como canon:
 - los Montes Invernos son atravesados por la frontera y no forman por sí mismos el límite entre ambas Casas;
 - todo el territorio situado al este de esa frontera, hasta las costas norte, este y sur de Norgard, pertenece a la Casa Valrik;
 - Treskal es la única ciudad del territorio Valrik y es menor en tamaño y esplendor que Treihord;
-- existen pocas villas y una red mucho más abundante de pueblos y aldeas;
+- existen muy pocas villas y una red mucho más abundante de pueblos y aldeas;
+- quedan definidas tres villas funcionalmente relevantes: una villa costera dedicada a los grandes astilleros civiles, una villa dedicada a gestionar y distribuir la madera procedente del Bosque Negro y una villa interior dedicada a concentrar y distribuir producción agroganadera;
+- la villa costera de los astilleros civiles es la mayor de las tres;
+- los pueblos y aldeas constituyen la verdadera base humana, productiva y cotidiana del territorio Valrik;
+- los oficios rurales funcionan en red: una misma herrería, molino u otro servicio especializado puede atender a varias aldeas próximas;
 - esos asentamientos suministran buena parte de los alimentos y recursos cotidianos que llegan a los mercados de Treskal;
 - el territorio Valrik es notablemente menos rico que el Darovan y posee menos recursos de gran valor monetario;
 - el honor y la calidad de la madera y de su trabajo constituyen dos de sus grandes medidas culturales de prestigio;
@@ -434,8 +463,8 @@ Queda aprobado como canon:
 - trazado exacto de la frontera;
 - pasos, puentes y puntos de control;
 - división interna del territorio Valrik;
-- asentamientos menores concretos;
-- nombre y localización de la villa costera especializada en construcción naval;
+- nombres y localización exacta de las tres villas funcionales ya definidas;
+- pueblos y aldeas concretos cuando sean necesarios para mapa, narrativa o gameplay;
 - trazado y jerarquía concreta de las principales rutas y caminos;
 - organización detallada de la explotación forestal y sus concesiones;
 - zonas agrícolas y ganaderas concretas y su especialización;
