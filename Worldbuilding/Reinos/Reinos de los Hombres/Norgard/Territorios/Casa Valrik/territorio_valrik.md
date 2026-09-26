@@ -463,7 +463,33 @@ Esto hace que la protección rural sea móvil y territorial, en lugar de reprodu
 
 ---
 
-## 12. Estado del bloque territorial
+## 12. Capacidad militar y tradición naval
+
+### Movilización al servicio del Rey
+
+La **Corona mantiene la autoridad militar suprema** sobre Norgard.
+
+Ante la llamada del Rey, **Lord Valrik puede movilizar sus propias tropas** y ponerlas al servicio de la Corona.
+
+Si la situación lo exige, también puede ordenar **levas militares entre los hombres en edad de combatir** de su territorio, aumentando temporalmente las fuerzas disponibles para una campaña o una emergencia.
+
+Estas levas no constituyen un ejército permanente independiente, sino una capacidad de movilización territorial subordinada a la autoridad del Rey.
+
+### La verdadera fuerza militar de Treskal
+
+Aunque Valrik puede aportar hombres para combatir en tierra, la principal fortaleza militar de Treskal se encuentra en el mar.
+
+Sus **marinos poseen una experiencia excepcional en la navegación y manejo de naves de guerra**.
+
+La tradición pesquera, mercante, naval y constructora del territorio crea generaciones de hombres acostumbrados al mar, pero entre ellos destaca especialmente el personal capaz de servir en buques militares.
+
+Los marinos de Treskal constituyen así uno de los recursos militares más valiosos que la Casa Valrik puede aportar a Norgard: hombres experimentados en navegar, maniobrar y operar naves de guerra a un nivel difícil de igualar en otras regiones del Reino.
+
+Esta capacidad **no convierte a la Casa Valrik en propietaria de una armada soberana**. La Armada Real sigue perteneciendo a la Corona; Treskal aporta los astilleros que construyen sus buques y una parte esencial del saber naval y de los marinos capaces de tripularlos.
+
+---
+
+## 13. Estado del bloque territorial
 
 Queda aprobado como canon:
 
@@ -519,7 +545,11 @@ Queda aprobado como canon:
 - los caminos principales son patrullados por guardias rurales armados y a caballo, normalmente en parejas o pequeños grupos;
 - estas patrullas protegen especialmente las rutas del Bosque Negro y los corredores esenciales para el suministro de madera y mercancías;
 - las aldeas no cuentan normalmente con guardias permanentes y dependen de patrullas rurales de paso;
-- los principales puentes que cruzan el gemelo occidental en la frontera con Galdren cuentan con edificaciones de vigilancia y cuerpos de guardia permanentes en el lado Valrik.
+- los principales puentes que cruzan el gemelo occidental en la frontera con Galdren cuentan con edificaciones de vigilancia y cuerpos de guardia permanentes en el lado Valrik;
+- ante la llamada del Rey, Lord Valrik puede movilizar sus tropas personales y ordenar levas entre los hombres en edad de combatir;
+- estas fuerzas territoriales permanecen subordinadas a la autoridad militar de la Corona;
+- la principal potencia militar propia de Treskal reside en sus marinos, especialmente experimentados en la navegación y operación de naves de guerra;
+- la Armada Real sigue perteneciendo a la Corona: Valrik aporta capacidad constructora, tradición naval y marinos expertos, no una armada soberana independiente.
 
 ---
 
@@ -538,6 +568,9 @@ Queda aprobado como canon:
 - distribución de población;
 - Casas menores;
 - organización detallada de la guardia urbana y de los guardias rurales;
+- composición, tamaño y mando de las tropas personales de Lord Valrik;
+- reglas concretas de las levas militares y su integración en las fuerzas del Rey;
+- organización, reclutamiento y funciones de los marinos de Treskal dentro de la Armada Real;
 - estructura concreta de justicia y tribunales cuando se desarrolle Treskal;
 - desarrollo específico de la ciudad de Treskal;
 - nombre, familia y biografía del actual Lord Valrik;
