@@ -405,7 +405,50 @@ Su nombre, familia inmediata y biografía detallada quedan pendientes de desarro
 
 ---
 
-## 11. Estado del bloque territorial
+## 11. Justicia, guardias y seguridad cotidiana
+
+### Autoridad de Lord Valrik
+
+**Lord Valrik hace cumplir la Ley del Rey con severidad, pero con justicia.**
+
+Su autoridad no crea una ley distinta para el territorio: aplica la legislación del Reino y se presenta como garante de la paz del Rey en las tierras Valrik.
+
+### Seguridad en Treskal
+
+En la capital existe un **cuerpo de guardias urbanos** encargado de la vigilancia y seguridad cotidiana de la ciudad.
+
+Sus funciones incluyen mantener el orden, responder ante delitos y alteraciones de la paz y asegurar el funcionamiento normal de calles, mercados y espacios públicos.
+
+Los delitos cometidos en Treskal se **juzgan con rapidez y conforme a la Ley del Rey**.
+
+La organización interna concreta de los tribunales, rangos de guardia y procedimientos queda pendiente hasta desarrollar la ciudad en detalle.
+
+### Guardias rurales
+
+Fuera de Treskal, la seguridad de los caminos principales recae en **guardias rurales armados y montados a caballo**.
+
+Patrullan principalmente:
+
+- las rutas importantes hacia el Bosque Negro;
+- los caminos interiores de mayor tránsito;
+- los corredores utilizados para transportar madera y otras mercancías;
+- las vías cuya seguridad resulta esencial para el abastecimiento del territorio.
+
+Las patrullas suelen desplazarse **en parejas o en grupos pequeños**.
+
+Su misión es mantener la **paz del Rey** en el territorio, prevenir robos, altercados y otros problemas y evitar que conflictos locales interrumpan el movimiento de mercancías, especialmente el suministro de madera procedente del Bosque Negro.
+
+### Aldeas
+
+Las aldeas **no disponen normalmente de guardias fijos**.
+
+Su presencia de seguridad depende sobre todo de las patrullas rurales que pasan regularmente por los caminos y asentamientos de su zona.
+
+Esto hace que la protección rural sea móvil y territorial, en lugar de reproducir en cada aldea una pequeña guardia permanente.
+
+---
+
+## 12. Estado del bloque territorial
 
 Queda aprobado como canon:
 
@@ -454,7 +497,13 @@ Queda aprobado como canon:
 - Treskal ofrece más oportunidades educativas que el campo, aunque sin convertirse en un gran centro de enseñanza;
 - la palabra dada posee un enorme peso moral y constituye una de las principales expresiones del honor Valrik;
 - el honor familiar se protege cuidadosamente y faltar deliberadamente a la palabra puede dañar gravemente la reputación;
-- el actual Lord Valrik es considerado honorable y justo, y es poco amigo de la ostentación y las poses aristocráticas asociadas a ciertos ambientes Darovan.
+- el actual Lord Valrik es considerado honorable y justo, y es poco amigo de la ostentación y las poses aristocráticas asociadas a ciertos ambientes Darovan;
+- Lord Valrik hace cumplir la Ley del Rey con severidad y justicia;
+- Treskal dispone de una guardia urbana propia para la seguridad cotidiana;
+- los delitos en la capital se juzgan con rapidez conforme a la Ley del Rey;
+- los caminos principales son patrullados por guardias rurales armados y a caballo, normalmente en parejas o pequeños grupos;
+- estas patrullas protegen especialmente las rutas del Bosque Negro y los corredores esenciales para el suministro de madera y mercancías;
+- las aldeas no cuentan normalmente con guardias permanentes y dependen de patrullas rurales de paso.
 
 ---
 
@@ -472,6 +521,8 @@ Queda aprobado como canon:
 - especialización concreta de los astilleros;
 - distribución de población;
 - Casas menores;
+- organización detallada de la guardia urbana y de los guardias rurales;
+- estructura concreta de justicia y tribunales cuando se desarrolle Treskal;
 - desarrollo específico de la ciudad de Treskal;
 - nombre, familia y biografía del actual Lord Valrik;
 - fiestas, costumbres y formas concretas de educación cuando sean relevantes para escenas o gameplay.
