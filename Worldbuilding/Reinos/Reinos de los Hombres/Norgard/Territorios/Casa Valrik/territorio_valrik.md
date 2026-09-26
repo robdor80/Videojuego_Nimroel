@@ -567,6 +567,10 @@ Las tres villas principales del territorio Valrik quedan bajo la autoridad de **
 
 Cada una de estas Casas menores administra una de las villas y su área de influencia inmediata en nombre de los Valrik y, en última instancia, de la Corona.
 
+En la gestión cotidiana disfrutan de **bastante autonomía**. Lord Valrik no interviene de forma constante en la administración ordinaria de cada villa mientras la Casa menor cumpla con sus obligaciones, respete la Ley del Rey, entregue los tributos correspondientes y mantenga el orden en su ámbito.
+
+La intervención directa de Lord Valrik queda reservada para asuntos de especial gravedad, conflictos importantes, incumplimientos de obligaciones o cuestiones que afecten al conjunto del territorio.
+
 Quedan así vinculadas a:
 
 - la villa costera de los grandes astilleros civiles;
@@ -699,7 +703,10 @@ Queda aprobado como canon:
 - las Casas menores pueden juzgar disputas y delitos menores dentro de sus villas, siempre conforme a la Ley del Rey;
 - los delitos mayores son remitidos a Treskal, donde se celebran el juicio y la sentencia;
 - Lord Valrik no necesita intervenir personalmente en todos los delitos graves;
-- la pena de muerte queda reservada a la autoridad personal de Lord Valrik.
+- la pena de muerte queda reservada a la autoridad personal de Lord Valrik;
+- las Casas menores gozan de bastante autonomía en la gestión cotidiana de sus villas;
+- Lord Valrik no interviene habitualmente mientras cumplan la Ley del Rey, sus tributos y obligaciones y mantengan el orden;
+- la intervención directa de Lord Valrik se reserva para asuntos graves o de alcance territorial.
 
 ---
 
