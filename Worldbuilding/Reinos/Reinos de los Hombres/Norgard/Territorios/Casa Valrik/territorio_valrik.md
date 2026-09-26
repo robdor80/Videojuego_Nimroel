@@ -489,7 +489,47 @@ Esta capacidad **no convierte a la Casa Valrik en propietaria de una armada sobe
 
 ---
 
-## 13. Estado del bloque territorial
+## 13. Paisaje, fertilidad y clima
+
+### Proporción del territorio
+
+El **Bosque Negro ocupa aproximadamente la mitad del territorio Valrik**.
+
+Esto limita de forma natural la extensión de las tierras abiertas disponibles para agricultura, ganadería, asentamientos y grandes vías de comunicación.
+
+Las tierras no forestales son **fértiles**, pero su superficie productiva es mucho menor que la disponible en los dominios Galdren, especialmente en torno a Arleon.
+
+Valrik puede sostener una agricultura y una ganadería suficientes para una parte importante de sus necesidades, pero carece de las enormes extensiones agroganaderas que caracterizan al territorio vecino.
+
+### Sur de Valrik
+
+En la zona meridional, incluida el área de influencia de Treskal y la costa del Mar de Suthiros, predomina un **clima oceánico suave**.
+
+Los veranos son moderados y los inviernos relativamente templados en comparación con el interior septentrional.
+
+Esta suavidad climática favorece la vida rural, los cultivos próximos a la capital y una actividad marítima regular durante buena parte del año.
+
+### Transición hacia el norte
+
+A medida que se avanza hacia el norte y se deja atrás la influencia más directa de la costa meridional, el clima se vuelve progresivamente **más continental**.
+
+La amplitud térmica aumenta y las estaciones se vuelven más marcadas.
+
+### Franja meridional de los Montes Invernos
+
+En las tierras situadas **al sur de los Montes Invernos**, dentro de la parte norte del territorio Valrik, las condiciones son más severas.
+
+Esta zona recibe más precipitaciones que el sur y presenta un clima de interior más acusado:
+
+- los veranos son más calurosos y secos;
+- los inviernos son más fríos y lluviosos;
+- el contraste entre estaciones es claramente mayor que en la región de Treskal.
+
+Los Montes Invernos marcan así el extremo de esta progresión climática dentro del territorio Valrik.
+
+---
+
+## 14. Estado del bloque territorial
 
 Queda aprobado como canon:
 
@@ -549,7 +589,12 @@ Queda aprobado como canon:
 - ante la llamada del Rey, Lord Valrik puede movilizar sus tropas personales y ordenar levas entre los hombres en edad de combatir;
 - estas fuerzas territoriales permanecen subordinadas a la autoridad militar de la Corona;
 - la principal potencia militar propia de Treskal reside en sus marinos, especialmente experimentados en la navegación y operación de naves de guerra;
-- la Armada Real sigue perteneciendo a la Corona: Valrik aporta capacidad constructora, tradición naval y marinos expertos, no una armada soberana independiente.
+- la Armada Real sigue perteneciendo a la Corona: Valrik aporta capacidad constructora, tradición naval y marinos expertos, no una armada soberana independiente;
+- el Bosque Negro ocupa aproximadamente la mitad del territorio Valrik;
+- las tierras abiertas son fértiles, pero mucho menos extensas que las grandes superficies agroganaderas del territorio Galdren;
+- el sur de Valrik posee un clima oceánico suave, con veranos e inviernos moderados;
+- el clima se vuelve progresivamente más continental hacia el norte;
+- al sur de los Montes Invernos las precipitaciones aumentan y el clima es más severo, con veranos calurosos y secos e inviernos más fríos y lluviosos.
 
 ---
 
@@ -562,7 +607,8 @@ Queda aprobado como canon:
 - pueblos y aldeas concretos cuando sean necesarios para mapa, narrativa o gameplay;
 - trazado y jerarquía concreta de las principales rutas y caminos;
 - organización detallada de la explotación forestal y sus concesiones;
-- zonas agrícolas y ganaderas concretas y su especialización;
+- distribución concreta de las principales zonas agrícolas y ganaderas;
+- detalle futuro de paisajes locales y transición entre tierras abiertas, Bosque Negro y Montes Invernos;
 - organización concreta de la pesca marítima y fluvial;
 - especialización concreta de los astilleros;
 - distribución de población;
