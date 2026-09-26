@@ -109,15 +109,34 @@ Puede ser:
 - un espacio asociado a intercambio periódico;
 - otra configuración orgánica equivalente.
 
-### 6. Actividad especializada permanente
+### 6. Herrería básica local
 
-A diferencia de una aldea, un pueblo debe sostener **varios oficios o servicios permanentes no puramente domésticos**.
+Todo pueblo debe disponer de **al menos una capacidad permanente de herrería básica**.
+
+La función mínima cubre necesidades cotidianas como:
+
+- herramientas de trabajo y su reparación;
+- herraduras;
+- clavos, bisagras y herrajes;
+- piezas sencillas de carros y aperos;
+- reparaciones metálicas habituales.
+
+El esqueleto no obliga a que el herrero posea una habilidad excepcional ni a que fabrique armas de calidad.
+
+La **calidad técnica del herrero no se deriva del tamaño del asentamiento**.
+
+Un pueblo puede tener únicamente herreros comunes, mientras que una aldea pequeña puede albergar a un artesano mucho más hábil por talento, tradición familiar o técnica.
+
+Los herreros capaces de producir herramientas superiores, encargos complejos o armas decentes forman parte de la capa de **posibilidades**.
+
+### 7. Actividad especializada permanente
+
+Además de la herrería básica obligatoria, un pueblo debe sostener **varios oficios o servicios permanentes no puramente domésticos**.
 
 El esqueleto no fija cuáles.
 
 La selección concreta podrá incluir posteriormente, según contexto y generación:
 
-- herrería;
 - carpintería;
 - molino;
 - posada;
@@ -126,9 +145,9 @@ La selección concreta podrá incluir posteriormente, según contexto y generaci
 - comercio;
 - otros oficios y servicios coherentes.
 
-Lo obligatorio ahora es la existencia de **cierto nivel de especialización**, no un listado concreto.
+Lo obligatorio ahora es la existencia de **cierto nivel de especialización adicional**, no un listado concreto.
 
-### 7. Capacidad de almacenamiento superior a la doméstica
+### 8. Capacidad de almacenamiento superior a la doméstica
 
 Además del almacenamiento familiar, el pueblo debe disponer de alguna capacidad de almacenamiento destinada a producción, intercambio o abastecimiento de mayor escala.
 
@@ -142,7 +161,7 @@ Puede tomar la forma de:
 
 No se fija todavía cantidad ni tipo concreto.
 
-### 8. Relación funcional con aldeas próximas
+### 9. Relación funcional con aldeas próximas
 
 Un pueblo debe poder actuar parcialmente como **centro de servicios o intercambio** para aldeas de su entorno.
 
@@ -156,7 +175,7 @@ Puede:
 
 La forma concreta se determinará al generar la red territorial.
 
-### 9. Seguridad
+### 10. Seguridad
 
 Un pueblo ordinario no necesita por definición:
 
@@ -173,7 +192,6 @@ Estos elementos podrán existir después como posibilidades condicionadas por lo
 
 El esqueleto de pueblo no exige todavía de forma individual:
 
-- herrero;
 - molino;
 - posada;
 - mercado permanente;
