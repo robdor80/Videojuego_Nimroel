@@ -856,5 +856,22 @@ Como servicios y actividades ya fijados contará con:
 
 La aldea **no dispone de molino propio**. El grano debe llevarse a otro núcleo cercano, lo que crea una relación funcional con una segunda aldea del entorno y una razón natural para desplazamientos, encargos y futuras interacciones jugables.
 
+### Segunda aldea de la v0.0.1
+
+La segunda aldea tendrá una escala y una disposición general similares a la aldea principal, con una población también reducida y un carácter claramente rural.
+
+Su referencia visual y funcional será la de una **pequeña aldea de interior**, compacta, con casas bajas familiares relativamente próximas entre sí y rodeada por pequeñas parcelas, campos y zonas de ganado.
+
+Sus rasgos diferenciales serán:
+
+- dispone de **molino**, que da servicio también a la aldea principal y a otros núcleos cercanos;
+- **no dispone de posada/taberna**;
+- **no dispone de herrería**;
+- mantiene agricultura y ganadería local básica;
+- conserva una población y una organización doméstica similares a las de la aldea principal;
+- depende de otros asentamientos próximos para determinados oficios y servicios que no posee.
+
+Esta segunda aldea debe reforzar la idea de que las aldeas Valrik forman una **red interdependiente**, donde cada núcleo no necesita duplicar todos los servicios.
+
 La escala debe permitir que buena parte de los habitantes sean reconocibles como NPC individuales o familias concretas durante la prueba jugable.
 
