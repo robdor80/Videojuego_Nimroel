@@ -438,6 +438,21 @@ Las patrullas suelen desplazarse **en parejas o en grupos pequeños**.
 
 Su misión es mantener la **paz del Rey** en el territorio, prevenir robos, altercados y otros problemas y evitar que conflictos locales interrumpan el movimiento de mercancías, especialmente el suministro de madera procedente del Bosque Negro.
 
+### Puentes de la frontera con Galdren
+
+En el tramo fronterizo donde el **gemelo occidental de los Ríos Sareno y Theleno** separa los territorios Valrik y Galdren, los principales puentes cuentan con **edificaciones de vigilancia y cuerpos de guardia permanentes** en el lado Valrik.
+
+Estos puestos controlan el paso por el río y mantienen vigilado el acceso al territorio.
+
+Su función es:
+
+- asegurar los cruces fronterizos;
+- vigilar el tránsito de personas y mercancías;
+- mantener bajo control el lado Valrik del río;
+- responder con rapidez ante incidentes en los puentes o sus inmediaciones.
+
+Estos cuerpos permanentes constituyen una excepción respecto a la seguridad rural ordinaria, que normalmente funciona mediante patrullas móviles.
+
 ### Aldeas
 
 Las aldeas **no disponen normalmente de guardias fijos**.
@@ -503,14 +518,15 @@ Queda aprobado como canon:
 - los delitos en la capital se juzgan con rapidez conforme a la Ley del Rey;
 - los caminos principales son patrullados por guardias rurales armados y a caballo, normalmente en parejas o pequeños grupos;
 - estas patrullas protegen especialmente las rutas del Bosque Negro y los corredores esenciales para el suministro de madera y mercancías;
-- las aldeas no cuentan normalmente con guardias permanentes y dependen de patrullas rurales de paso.
+- las aldeas no cuentan normalmente con guardias permanentes y dependen de patrullas rurales de paso;
+- los principales puentes que cruzan el gemelo occidental en la frontera con Galdren cuentan con edificaciones de vigilancia y cuerpos de guardia permanentes en el lado Valrik.
 
 ---
 
 ## Pendiente
 
 - trazado exacto de la frontera;
-- pasos, puentes y puntos de control;
+- localización exacta de los pasos, puentes y puestos fronterizos;
 - división interna del territorio Valrik;
 - nombres y localización exacta de las tres villas funcionales ya definidas;
 - pueblos y aldeas concretos cuando sean necesarios para mapa, narrativa o gameplay;
