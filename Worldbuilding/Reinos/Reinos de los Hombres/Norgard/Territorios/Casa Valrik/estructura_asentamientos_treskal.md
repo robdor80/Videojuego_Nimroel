@@ -61,3 +61,11 @@ La metodología completa queda definida en:
 `metodologia_generacion_asentamientos_treskal.md`
 
 Esta regla debe mantenerse para aldea, pueblo, villa, Treskal y, con las adaptaciones necesarias, los puestos de guardia fronterizos.
+
+
+## Estado de esqueletos
+
+- **Aldea:** aprobado.
+- **Pueblo:** aprobado.
+- **Villa:** pendiente.
+- **Treskal:** pendiente.
