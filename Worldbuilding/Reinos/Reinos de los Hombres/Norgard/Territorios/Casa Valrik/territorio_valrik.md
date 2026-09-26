@@ -612,6 +612,21 @@ Entre estos asuntos pueden encontrarse conflictos con otra Casa, disputas territ
 
 Este derecho refuerza su condición de vasallos directos de la Casa Valrik y permite que los problemas de mayor entidad lleguen personalmente al señor del territorio.
 
+### Reuniones con las Casas menores
+
+Lord Valrik puede **convocar en Treskal a los señores de las Casas menores siempre que lo considere necesario**.
+
+Además, acostumbra a reunir a los tres **al menos una vez al año**, incluso aunque no exista una crisis o asunto urgente que resolver.
+
+Estas reuniones sirven para mantener una comunicación directa con sus vasallos, revisar el estado de las villas y del territorio y reforzar la cohesión de la administración Valrik.
+
+La relación no funciona únicamente desde Treskal hacia fuera.
+
+Lord Valrik también **visita personalmente las villas y dominios de las Casas menores** con cierta regularidad. Estas visitas cumplen una doble función:
+
+- mantener cercanía con sus vasallos y con la población del territorio;
+- conservar un conocimiento directo y un control efectivo sobre cómo se gobiernan las villas y comarcas bajo su autoridad.
+
 La Casa Valrik no nombra libremente a una nueva familia para sustituir a otra mientras exista una sucesión legítima del linaje titular.
 
 Cada Casa menor mantiene **una pequeña fuerza armada propia**, suficiente para la protección inmediata de su señor, su residencia, dependencias y determinadas necesidades locales.
@@ -737,7 +752,10 @@ Queda aprobado como canon:
 - al heredar el título, el nuevo señor de una Casa menor viaja a Treskal y realiza un acto sobrio de sumisión;
 - en ese acto jura lealtad a Lord Valrik como señor y al Rey como soberano;
 - Lord Valrik recibe siempre personalmente el juramento de cada nuevo señor de una Casa menor;
-- las Casas menores tienen derecho a solicitar audiencia directa con Lord Valrik para conflictos graves, disputas territoriales o problemas importantes de administración.
+- las Casas menores tienen derecho a solicitar audiencia directa con Lord Valrik para conflictos graves, disputas territoriales o problemas importantes de administración;
+- Lord Valrik puede convocar a los señores de las Casas menores a Treskal cuando lo considere necesario;
+- suele reunirlos conjuntamente al menos una vez al año aunque no exista una crisis concreta;
+- Lord Valrik visita también sus villas y dominios para mantener cercanía, conocer su situación de primera mano y conservar un control efectivo sobre la administración local.
 
 ---
 
