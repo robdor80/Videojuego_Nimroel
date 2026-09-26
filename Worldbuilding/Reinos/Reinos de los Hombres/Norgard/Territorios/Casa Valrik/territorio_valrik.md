@@ -604,6 +604,8 @@ Ante Lord Valrik, el nuevo señor jura:
 
 Este juramento confirma públicamente la continuidad del vínculo vasallático de la Casa menor con los Valrik y su subordinación última a la Corona.
 
+**Lord Valrik recibe siempre este juramento en persona.** No delega este acto en su heredero ni en representantes, incluso cuando el ceremonial sea sobrio.
+
 La Casa Valrik no nombra libremente a una nueva familia para sustituir a otra mientras exista una sucesión legítima del linaje titular.
 
 Cada Casa menor mantiene **una pequeña fuerza armada propia**, suficiente para la protección inmediata de su señor, su residencia, dependencias y determinadas necesidades locales.
@@ -727,7 +729,8 @@ Queda aprobado como canon:
 - todos los habitantes del territorio, incluidos los miembros de las Casas menores, se consideran súbditos de Lord Valrik y del Rey;
 - las Casas menores administran sus villas, pero no sustituyen la lealtad superior a la Casa Valrik y a la Corona;
 - al heredar el título, el nuevo señor de una Casa menor viaja a Treskal y realiza un acto sobrio de sumisión;
-- en ese acto jura lealtad a Lord Valrik como señor y al Rey como soberano.
+- en ese acto jura lealtad a Lord Valrik como señor y al Rey como soberano;
+- Lord Valrik recibe siempre personalmente el juramento de cada nuevo señor de una Casa menor.
 
 ---
 
