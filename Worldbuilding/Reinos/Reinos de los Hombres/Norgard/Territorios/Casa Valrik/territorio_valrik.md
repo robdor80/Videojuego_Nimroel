@@ -791,3 +791,25 @@ Queda aprobado como canon:
 - desarrollo específico de la ciudad de Treskal;
 - nombre, familia y biografía del actual Lord Valrik;
 - fiestas, costumbres y formas concretas de educación cuando sean relevantes para escenas o gameplay.
+
+
+---
+
+## 16. Aplicación jugable — v0.0.1
+
+La **v0.0.1 no transcurre en la ciudad de Treskal**.
+
+La primera prueba jugable se desarrollará principalmente en **una aldea del territorio Valrik**, con posibilidad de visitar **una segunda aldea** próxima.
+
+El objetivo de esta fase es probar el territorio a escala humana y cotidiana mediante:
+
+- interacción con habitantes y NPC;
+- vida y oficios de aldea;
+- desplazamientos por caminos rurales;
+- relaciones entre pequeños asentamientos;
+- actividades y problemas locales;
+- ambientación propia del territorio Valrik fuera de su capital.
+
+**Treskal queda fuera del espacio jugable de la v0.0.1.** La ciudad se incorporará en pruebas posteriores cuando corresponda validar juego urbano a una escala mayor.
+
+Por ello, el desarrollo inmediato de lore útil para gameplay debe priorizar las **aldeas cercanas a Treskal y su entorno rural**, sin necesidad de definir todavía en detalle la capital.
