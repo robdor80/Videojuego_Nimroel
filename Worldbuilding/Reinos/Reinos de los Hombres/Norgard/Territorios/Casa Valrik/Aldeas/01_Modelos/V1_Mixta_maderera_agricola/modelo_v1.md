@@ -2,71 +2,134 @@
 
 ## Estado
 
-**CANON EN DESARROLLO**
+**CANON DE GENERACIÓN EN DESARROLLO**
 
-## Papel jugable inicial
+## Función
 
-Este modelo servirá como base para la **aldea principal de la v0.0.1**.
+Este modelo describe una familia de aldeas interiores de Valrik vinculadas a una **ruta de transporte de madera**, sin convertirlas en asentamientos exclusivamente madereros.
 
-Debe seguir siendo reutilizable posteriormente para otras aldeas semejantes del territorio Valrik.
+No representa una aldea concreta.
 
-## Escala
-
-- población aproximada: **40–60 habitantes**;
-- asentamiento de interior;
-- escala inequívocamente aldeana.
+---
 
 ## Contexto territorial
 
-El modelo representa una aldea:
+El modelo es apropiado para aldeas:
 
-- relativamente cercana a Treskal;
-- próxima a la villa que gestiona los recursos del Bosque Negro;
-- situada en una ruta importante de transporte de madera hacia la capital;
-- no costera.
+- de interior;
+- relativamente próximas a Treskal;
+- situadas entre la zona del Bosque Negro, su villa logística y la capital;
+- conectadas a rutas por las que circulan madera, carros y trabajadores;
+- rodeadas también por actividad agrícola y ganadera local.
 
-La actividad maderera es visible, pero la aldea sigue manteniendo agricultura y ganadería local.
+---
 
-## Servicios y edificios funcionales
+## Escala orientativa
+
+- referencia inicial: **40–60 habitantes**;
+- viviendas familiares bajas;
+- núcleo claramente aldeano.
+
+La cifra exacta de población, número de familias y viviendas se determina al generar la instancia.
+
+---
+
+## Actividades dominantes
+
+Toda aldea V1 debe combinar:
+
+- vida doméstica rural;
+- agricultura local;
+- alguna ganadería;
+- influencia visible de la ruta maderera.
+
+La generación debe decidir cuánto pesa cada actividad en la aldea concreta.
+
+---
+
+## Servicios y talleres
+
+No todos los elementos siguientes son obligatorios.
+
+El modelo debe permitir, con probabilidades y límites que se fijarán en los datos operativos, la aparición de:
 
 - posada/taberna;
 - herrería;
-- dos pequeños aserraderos;
-- carpintería de calidad notable para una aldea;
-- pozo o fuente comunal;
+- uno o varios pequeños aserraderos;
+- carpintería;
+- carretero o reparador de carros;
 - pequeño almacén o pajar;
-- establos y corrales;
-- carretero especializado en carros y ruedas;
-- viviendas familiares;
-- campos, huertos y pequeñas explotaciones agroganaderas.
+- establos;
+- corrales;
+- pozo o fuente comunal.
 
-La aldea **no dispone de molino propio**.
+La cercanía a una ruta maderera debe **aumentar la probabilidad** de:
 
-El grano debe trasladarse a otro núcleo cercano, generando una relación funcional con el Modelo V2 u otra aldea que posea molino.
+- aserradero;
+- carpintería;
+- carretero;
+- almacenes vinculados al transporte;
+- posada si el tránsito lo justifica.
 
-## Lógica espacial base
+Pero una aldea V1 concreta puede carecer de alguno de ellos.
 
-Sin fijar todavía un plano métrico definitivo:
+---
 
-- las casas bajas familiares se agrupan alrededor de uno o dos caminos principales;
-- la posada se sitúa junto a la vía de paso;
-- herrería y carretero deben resultar accesibles para carros;
-- los aserraderos se colocan algo apartados del núcleo residencial por ruido, movimiento de troncos y seguridad;
-- la carpintería puede estar más integrada en el caserío;
-- huertos y corrales aparecen asociados a viviendas;
-- los campos rodean el núcleo habitado;
-- el tránsito de carros cargados de madera debe sentirse natural en el escenario.
+## Molino
 
-## Objetivo de diseño
+El molino no es un requisito del modelo.
 
-Debe funcionar como **aldea tipo reconocible del entorno de Treskal**, de manera que otros asentamientos puedan derivarse de ella alterando servicios, orientación, caminos, economía y disposición.
+Una aldea V1 puede carecer de molino y depender de otro núcleo próximo.
+
+La red regional debe procurar que servicios importantes puedan encontrarse a una distancia razonable sin necesidad de repetirlos en cada aldea.
+
+---
+
+## Lógica espacial
+
+El generador debe respetar estas reglas generales:
+
+- casas bajas agrupadas orgánicamente alrededor de uno o varios caminos;
+- talleres con tránsito de carros situados donde el acceso resulte lógico;
+- actividades ruidosas o peligrosas algo separadas de las viviendas cuando proceda;
+- huertos y corrales asociados a familias;
+- campos y pequeñas explotaciones alrededor del caserío;
+- paso de carros y madera compatible con la estructura del asentamiento.
+
+No existe un plano V1 único.
+
+---
+
+## Variación visual permitida
+
+Un edificio de la misma función puede variar dentro de la biblioteca aprobada.
+
+Por ejemplo, una posada generada en V1 puede ser:
+
+- más pequeña o más grande dentro del rango permitido;
+- de una o dos plantas si la arquitectura regional lo admite;
+- con o sin establo propio;
+- con distintas distribuciones interiores.
+
+El modelo no debe revelar qué variante aparecerá en una aldea concreta.
+
+---
+
+## Aplicación a la v0.0.1
+
+La aldea principal de la prueba podrá generarse a partir de V1.
+
+Solo se fijarán de antemano aquellas condiciones imprescindibles para validar sistemas concretos de gameplay.
+
+El resto debe quedar en manos del generador para preservar el descubrimiento del jugador.
+
+---
 
 ## Pendiente
 
-- nombre de la aldea canónica que use este modelo;
-- plano tipo V1;
-- posición exacta de cada edificio;
-- arquitectura y materiales concretos;
-- reparto de familias y NPC;
-- puntos de interacción y gameplay;
+- probabilidades y rangos de servicios;
+- límites de viviendas y anexos;
+- reglas de densidad;
+- catálogo modular de edificios;
+- reglas de layout procedural;
 - datos operativos para el motor.
