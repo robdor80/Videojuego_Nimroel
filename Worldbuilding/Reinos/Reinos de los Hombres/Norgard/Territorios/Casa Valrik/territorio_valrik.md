@@ -156,16 +156,23 @@ La Casa supervisa directamente las zonas forestales de mayor valor estratégico,
 
 Esto no excluye una explotación local limitada.
 
-El Bosque Negro contiene **asentamientos permanentes en su interior**. Entre ellos pueden existir:
+El interior del Bosque Negro **no contiene aldeas ni villas permanentes**.
 
-- aldeas forestales;
-- comunidades de leñadores y trabajadores de la madera;
-- puestos Valrik;
-- enclaves de control y administración forestal;
-- campamentos madereros permanentes o semipermanentes;
-- otros núcleos vinculados a la explotación, vigilancia y transporte de recursos.
+Su densidad forestal es una de sus características esenciales y explica en parte su propio nombre: es un bosque cerrado, espeso y difícil de habitar como núcleo civil estable.
 
-Pueblos, aldeas, comunidades forestales y concesiones locales pueden aprovechar determinadas zonas y recursos para sus propias necesidades o actividades económicas, pero siempre dentro del marco de autoridad Valrik y sin comprometer el abastecimiento estratégico.
+Dentro del bosque pueden existir instalaciones funcionales vinculadas a su explotación y vigilancia, entre ellas:
+
+- campamentos madereros;
+- puestos de guardabosques;
+- enclaves Valrik de control forestal;
+- refugios de trabajo;
+- instalaciones temporales o semipermanentes de explotación y transporte.
+
+Las **aldeas, pueblos y villas** relacionados con la actividad forestal se sitúan en las **inmediaciones y bordes del Bosque Negro**, pero fuera de su interior denso.
+
+Desde esos asentamientos parten trabajadores, guardabosques, convoyes y rutas de extracción hacia el bosque.
+
+Las comunidades locales y concesiones autorizadas pueden aprovechar determinadas zonas y recursos, pero siempre dentro del marco de autoridad Valrik y sin comprometer el abastecimiento estratégico.
 
 La explotación del Bosque Negro debe mantenerse productiva a largo plazo. La Casa Valrik no permite una tala descontrolada que ponga en peligro la continuidad del recurso.
 
@@ -191,7 +198,9 @@ Queda aprobado como canon:
 - la Casa Valrik mantiene un control fuerte sobre las zonas forestales de mayor valor, las rutas de extracción y el abastecimiento de madera naval;
 - existe explotación local y concesionada en determinadas áreas, siempre subordinada a la autoridad Valrik y sin comprometer el suministro estratégico;
 - la explotación forestal debe preservar la continuidad productiva del Bosque Negro;
-- existen asentamientos permanentes dentro del Bosque Negro, ligados a la vida forestal, la explotación de recursos y el control Valrik.
+- no existen aldeas ni villas permanentes dentro del Bosque Negro;
+- en su interior solo existen instalaciones funcionales como campamentos madereros, puestos de guardabosques y enclaves de control;
+- los asentamientos civiles ligados al bosque se sitúan en sus inmediaciones y bordes, fuera de la masa forestal densa.
 
 ---
 
