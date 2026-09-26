@@ -134,7 +134,35 @@ Treskal conserva una capacidad civil importante, pero su singularidad estratégi
 
 ---
 
-## 6. Estado del bloque territorial
+## 6. Bosque Negro y control forestal
+
+El **Bosque Negro** ocupa una parte enorme del territorio Valrik y constituye uno de sus grandes rasgos geográficos, económicos y estratégicos.
+
+No es una masa forestal secundaria: domina una parte sustancial del extremo oriental de Norgard y sostiene buena parte de la riqueza material de la Casa Valrik.
+
+Su madera abastece, entre otros usos:
+
+- carpintería y ebanistería;
+- construcción;
+- artesanía;
+- construcción naval civil y comercial;
+- construcción de los buques de la **Armada Real de Norgard**.
+
+### Control de la Casa Valrik
+
+Debido a la importancia estratégica de la madera para la construcción naval —especialmente para la Armada Real—, la Casa Valrik mantiene un **control señorial fuerte** sobre el Bosque Negro.
+
+La Casa supervisa directamente las zonas forestales de mayor valor estratégico, las principales rutas de extracción y transporte y los recursos necesarios para garantizar la continuidad de la industria naval.
+
+Esto no excluye una explotación local limitada.
+
+Pueblos, aldeas, comunidades forestales y concesiones locales pueden aprovechar determinadas zonas y recursos para sus propias necesidades o actividades económicas, pero siempre dentro del marco de autoridad Valrik y sin comprometer el abastecimiento estratégico.
+
+La explotación del Bosque Negro debe mantenerse productiva a largo plazo. La Casa Valrik no permite una tala descontrolada que ponga en peligro la continuidad del recurso.
+
+---
+
+## 7. Estado del bloque territorial
 
 Queda aprobado como canon:
 
@@ -149,7 +177,11 @@ Queda aprobado como canon:
 - el resto del territorio se articula mediante villas, pueblos, aldeas y otros núcleos menores;
 - los buques de la Armada Real de Norgard se construyen en los grandes astilleros de Treskal;
 - los astilleros Valrik construyen también barcos mercantes, pesqueros, de transporte y otras embarcaciones civiles o comerciales por encargo para las distintas tierras de los Hombres;
-- la construcción naval civil y comercial se reparte entre Treskal, al menos una villa costera especializada y otros centros menores que puedan definirse.
+- la construcción naval civil y comercial se reparte entre Treskal, al menos una villa costera especializada y otros centros menores que puedan definirse;
+- el Bosque Negro ocupa una parte enorme del territorio Valrik y constituye uno de sus principales recursos estratégicos;
+- la Casa Valrik mantiene un control fuerte sobre las zonas forestales de mayor valor, las rutas de extracción y el abastecimiento de madera naval;
+- existe explotación local y concesionada en determinadas áreas, siempre subordinada a la autoridad Valrik y sin comprometer el suministro estratégico;
+- la explotación forestal debe preservar la continuidad productiva del Bosque Negro.
 
 ---
 
@@ -161,7 +193,7 @@ Queda aprobado como canon:
 - asentamientos menores concretos;
 - nombre y localización de la villa costera especializada en construcción naval;
 - rutas;
-- explotación forestal;
+- organización detallada de la explotación forestal y sus concesiones;
 - zonas agrícolas y ganaderas;
 - pesca;
 - especialización concreta de los astilleros;
