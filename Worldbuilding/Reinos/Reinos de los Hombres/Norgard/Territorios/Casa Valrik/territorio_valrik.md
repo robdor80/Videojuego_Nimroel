@@ -155,13 +155,19 @@ Los navíos de guerra encargados para la Armada Real se construyen en Treskal.
 
 La concentración de esta construcción en la ciudad refuerza su importancia estratégica para la Corona y el peso de la Casa Valrik como gran centro de capacidad naval del Reino.
 
-La **Armada Real pertenece a la Corona**; los astilleros de Treskal construyen sus buques, pero esto no implica que la Casa Valrik posea una armada soberana propia.
+La **Armada Real pertenece a la Corona** y los **Astilleros Reales de Treskal son propiedad de la Corona**. En ellos se construyen los buques de guerra del Reino.
+
+La Corona asume y paga el coste de fabricación de cada navío de guerra encargado, incluyendo la construcción necesaria para ponerlo al servicio de la Armada Real.
+
+Esto no implica que la Casa Valrik posea una armada soberana propia.
 
 ### Construcción naval civil y comercial
 
 La capacidad naval Valrik no se limita a la Armada Real.
 
 La **mayor de las villas del territorio**, situada en la costa, alberga los **principales astilleros navales civiles especializados en grandes embarcaciones**.
+
+Estos grandes astilleros civiles son **propiedad de la Casa Valrik** y constituyen una de sus principales fuentes directas de ingresos.
 
 En ellos se diseñan y construyen por encargo, entre otros:
 
@@ -563,6 +569,15 @@ Conservan la parte que les corresponde para sostener su administración, obligac
 
 La **seguridad rural general**, incluida la vigilancia de caminos, aldeas y rutas de mercancías, continúa bajo responsabilidad directa de **Lord Valrik** y de sus guardias rurales.
 
+### Ingresos de la Casa Valrik
+
+La Casa Valrik obtiene una parte importante de sus recursos de dos vías principales:
+
+- los **tributos** recaudados en su territorio, incluida la parte entregada por las Casas menores;
+- el **negocio naval civil**, especialmente a través de los grandes astilleros civiles que pertenecen directamente a la Casa Valrik.
+
+Los **Astilleros Reales** de Treskal no pertenecen a Lord Valrik, sino a la Corona. La Corona financia y paga la construcción de los buques de guerra que allí se fabrican.
+
 Sus nombres, linajes concretos, emblemas, historia particular y competencias detalladas quedan pendientes de desarrollo.
 
 ---
@@ -632,7 +647,11 @@ Queda aprobado como canon:
 - las tierras abiertas son fértiles, pero mucho menos extensas que las grandes superficies agroganaderas del territorio Galdren;
 - el sur de Valrik posee un clima oceánico suave, con veranos e inviernos moderados;
 - el clima se vuelve progresivamente más continental hacia el norte;
-- al sur de los Montes Invernos las precipitaciones aumentan y el clima es más severo, con veranos calurosos y secos e inviernos más fríos y lluviosos.
+- al sur de los Montes Invernos las precipitaciones aumentan y el clima es más severo, con veranos calurosos y secos e inviernos más fríos y lluviosos;
+- los grandes astilleros civiles son propiedad de la Casa Valrik y constituyen una de sus principales fuentes de ingresos;
+- Lord Valrik se nutre económicamente de los tributos territoriales y del negocio naval civil;
+- los Astilleros Reales de Treskal pertenecen a la Corona;
+- la Corona paga el coste de fabricación de los buques de guerra construidos en los Astilleros Reales.
 
 ---
 
@@ -647,16 +666,6 @@ Queda aprobado como canon:
 - organización detallada de la explotación forestal y sus concesiones;
 - distribución concreta de las principales zonas agrícolas y ganaderas;
 - detalle futuro de paisajes locales y transición entre tierras abiertas, Bosque Negro y Montes Invernos;
-- las tres villas principales están gobernadas por Casas menores vasallas de la Casa Valrik;
-- cada Casa menor administra su villa y área de influencia en nombre de los Valrik y bajo la autoridad de la Corona;
-- las tres Casas menores son linajes antiguos y arraigados localmente, pero de escaso peso político fuera de sus propias villas y comarcas;
-- su antigüedad no las convierte en Casas poderosas: su relevancia es principalmente administrativa y local;
-- los títulos nobiliarios de estas Casas menores son hereditarios;
-- el señorío de cada villa permanece ligado al linaje titular mientras exista sucesión legítima;
-- cada Casa menor mantiene una fuerza armada propia reducida para protección inmediata y funciones locales;
-- la seguridad rural general depende de Lord Valrik y de sus cuerpos territoriales, no de las Casas menores;
-- las Casas menores recaudan tributos y gestionan recursos en sus villas y áreas de influencia;
-- conservan la parte correspondiente para sus obligaciones locales y entregan a Lord Valrik la parte establecida.
 - organización concreta de la pesca marítima y fluvial;
 - especialización concreta de los astilleros;
 - distribución de población;
