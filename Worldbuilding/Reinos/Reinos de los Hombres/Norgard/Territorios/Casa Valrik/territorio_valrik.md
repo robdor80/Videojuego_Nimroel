@@ -593,6 +593,17 @@ Su autoridad deriva de su condición de vasallas de los Valrik y de la función 
 
 Los títulos de estas Casas menores, como los demás títulos nobiliarios de Norgard, son **hereditarios**. El señorío de cada villa se transmite dentro del linaje conforme a las normas sucesorias nobiliarias aplicables.
 
+Cuando un nuevo señor hereda el título de una Casa menor, se desplaza personalmente a **Treskal** como señal de sumisión y reconocimiento de autoridad.
+
+El acto es **sobrio y poco ostentoso**.
+
+Ante Lord Valrik, el nuevo señor jura:
+
+- lealtad a **Lord Valrik** como su señor;
+- lealtad al **Rey** como soberano.
+
+Este juramento confirma públicamente la continuidad del vínculo vasallático de la Casa menor con los Valrik y su subordinación última a la Corona.
+
 La Casa Valrik no nombra libremente a una nueva familia para sustituir a otra mientras exista una sucesión legítima del linaje titular.
 
 Cada Casa menor mantiene **una pequeña fuerza armada propia**, suficiente para la protección inmediata de su señor, su residencia, dependencias y determinadas necesidades locales.
@@ -714,7 +725,9 @@ Queda aprobado como canon:
 - Lord Valrik no interviene habitualmente mientras cumplan la Ley del Rey, sus tributos y obligaciones y mantengan el orden;
 - la intervención directa de Lord Valrik se reserva para asuntos graves o de alcance territorial;
 - todos los habitantes del territorio, incluidos los miembros de las Casas menores, se consideran súbditos de Lord Valrik y del Rey;
-- las Casas menores administran sus villas, pero no sustituyen la lealtad superior a la Casa Valrik y a la Corona.
+- las Casas menores administran sus villas, pero no sustituyen la lealtad superior a la Casa Valrik y a la Corona;
+- al heredar el título, el nuevo señor de una Casa menor viaja a Treskal y realiza un acto sobrio de sumisión;
+- en ese acto jura lealtad a Lord Valrik como señor y al Rey como soberano.
 
 ---
 
@@ -737,6 +750,7 @@ Queda aprobado como canon:
 - detalle futuro del reparto fiscal y de recursos entre Casas menores y Casa Valrik;
 - tamaño, composición y funciones precisas de las pequeñas fuerzas armadas de las Casas menores;
 - reglas específicas de sucesión de Casas menores solo si alguna situación narrativa futura requiere detallarlas;
+- fórmula exacta, lugar concreto y ceremonial detallado del juramento solo si llegan a ser necesarios para una escena;
 - organización detallada de la guardia urbana y de los guardias rurales;
 - composición, tamaño y mando de las tropas personales de Lord Valrik;
 - reglas concretas de las levas militares, cuotas de aportación de las Casas menores y su integración en las fuerzas del Rey;
