@@ -606,6 +606,12 @@ Este juramento confirma públicamente la continuidad del vínculo vasallático d
 
 **Lord Valrik recibe siempre este juramento en persona.** No delega este acto en su heredero ni en representantes, incluso cuando el ceremonial sea sobrio.
 
+Las Casas menores tienen además **derecho a solicitar audiencia directa con Lord Valrik** cuando afrontan asuntos graves que exceden su capacidad local de resolución.
+
+Entre estos asuntos pueden encontrarse conflictos con otra Casa, disputas territoriales, problemas importantes de administración o cualquier cuestión que afecte de forma seria a sus derechos, obligaciones o dominios.
+
+Este derecho refuerza su condición de vasallos directos de la Casa Valrik y permite que los problemas de mayor entidad lleguen personalmente al señor del territorio.
+
 La Casa Valrik no nombra libremente a una nueva familia para sustituir a otra mientras exista una sucesión legítima del linaje titular.
 
 Cada Casa menor mantiene **una pequeña fuerza armada propia**, suficiente para la protección inmediata de su señor, su residencia, dependencias y determinadas necesidades locales.
@@ -730,7 +736,8 @@ Queda aprobado como canon:
 - las Casas menores administran sus villas, pero no sustituyen la lealtad superior a la Casa Valrik y a la Corona;
 - al heredar el título, el nuevo señor de una Casa menor viaja a Treskal y realiza un acto sobrio de sumisión;
 - en ese acto jura lealtad a Lord Valrik como señor y al Rey como soberano;
-- Lord Valrik recibe siempre personalmente el juramento de cada nuevo señor de una Casa menor.
+- Lord Valrik recibe siempre personalmente el juramento de cada nuevo señor de una Casa menor;
+- las Casas menores tienen derecho a solicitar audiencia directa con Lord Valrik para conflictos graves, disputas territoriales o problemas importantes de administración.
 
 ---
 
