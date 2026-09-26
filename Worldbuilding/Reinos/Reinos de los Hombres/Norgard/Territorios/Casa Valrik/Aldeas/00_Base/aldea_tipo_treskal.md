@@ -140,7 +140,32 @@ Puede surgir de:
 - el espacio frente a varias viviendas;
 - otra configuración orgánica.
 
-### 7. Seguridad
+### 7. Herrería básica local
+
+Toda aldea debe disponer de **al menos una capacidad local de herrería básica**.
+
+Esto no implica necesariamente una gran herrería comercial ni un artesano dedicado en exclusiva al oficio.
+
+Puede tratarse de:
+
+- un herrero de dedicación completa;
+- un habitante que combine la herrería con otra actividad;
+- una pequeña fragua familiar integrada en una explotación o vivienda.
+
+La función mínima es cubrir necesidades cotidianas del asentamiento, como:
+
+- reparación y mantenimiento de herramientas de trabajo;
+- herraduras y trabajos básicos relacionados con animales de tiro;
+- clavos, bisagras, abrazaderas y piezas sencillas;
+- reparaciones metálicas de carros, aperos y elementos domésticos.
+
+El esqueleto exige **capacidad básica de herrería**, no un nivel alto de maestría.
+
+La calidad excepcional del herrero **no depende del tamaño del asentamiento**. Una aldea puede albergar a un herrero extraordinariamente hábil, mientras que un pueblo mayor puede disponer únicamente de herreros de nivel común.
+
+Los herreros capaces de realizar encargos de mayor calidad, herramientas superiores o armas decentes pertenecen a la capa posterior de **posibilidades**, no al mínimo obligatorio.
+
+### 8. Seguridad
 
 Una aldea ordinaria **no necesita defensa permanente propia**.
 
@@ -160,7 +185,6 @@ Las excepciones se definirán posteriormente como posibilidades específicas si 
 
 Ninguna aldea necesita por definición:
 
-- herrero;
 - molino;
 - posada o taberna;
 - carpintero;
@@ -181,7 +205,7 @@ Una aldea perfectamente válida puede existir sin ninguno de estos servicios y d
 
 El esqueleto debe permitir aldeas **incompletas por sí solas pero coherentes dentro de la red territorial**.
 
-La ausencia de un servicio no constituye un fallo si existe acceso razonable al mismo en otro núcleo.
+La ausencia de un servicio no constituye un fallo si existe acceso razonable al mismo en otro núcleo, **salvo aquellos servicios fijados expresamente como parte del esqueleto mínimo**, como la herrería básica local.
 
 Las reglas concretas de cobertura regional se definirán después de cerrar los esqueletos mínimos de aldea, pueblo, villa y Treskal.
 
