@@ -67,5 +67,5 @@ Esta regla debe mantenerse para aldea, pueblo, villa, Treskal y, con las adaptac
 
 - **Aldea:** aprobado.
 - **Pueblo:** aprobado.
-- **Villa:** pendiente.
+- **Villa:** aprobado.
 - **Treskal:** pendiente.
