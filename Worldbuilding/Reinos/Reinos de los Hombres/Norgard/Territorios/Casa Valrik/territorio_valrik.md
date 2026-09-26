@@ -549,6 +549,10 @@ Su antigüedad no implica un gran peso político dentro de Norgard. Son Casas de
 
 Su autoridad deriva de su condición de vasallas de los Valrik y de la función administrativa que ejercen en sus dominios.
 
+Los títulos de estas Casas menores, como los demás títulos nobiliarios de Norgard, son **hereditarios**. El señorío de cada villa se transmite dentro del linaje conforme a las normas sucesorias nobiliarias aplicables.
+
+La Casa Valrik no nombra libremente a una nueva familia para sustituir a otra mientras exista una sucesión legítima del linaje titular.
+
 Sus nombres, linajes concretos, emblemas, historia particular y competencias detalladas quedan pendientes de desarrollo.
 
 ---
@@ -636,12 +640,15 @@ Queda aprobado como canon:
 - las tres villas principales están gobernadas por Casas menores vasallas de la Casa Valrik;
 - cada Casa menor administra su villa y área de influencia en nombre de los Valrik y bajo la autoridad de la Corona;
 - las tres Casas menores son linajes antiguos y arraigados localmente, pero de escaso peso político fuera de sus propias villas y comarcas;
-- su antigüedad no las convierte en Casas poderosas: su relevancia es principalmente administrativa y local.
+- su antigüedad no las convierte en Casas poderosas: su relevancia es principalmente administrativa y local;
+- los títulos nobiliarios de estas Casas menores son hereditarios;
+- el señorío de cada villa permanece ligado al linaje titular mientras exista sucesión legítima.
 - organización concreta de la pesca marítima y fluvial;
 - especialización concreta de los astilleros;
 - distribución de población;
 - nombres, emblemas e historia particular de las tres Casas menores que gobiernan las villas;
 - competencias administrativas concretas de cada Casa menor;
+- reglas específicas de sucesión de Casas menores solo si alguna situación narrativa futura requiere detallarlas;
 - organización detallada de la guardia urbana y de los guardias rurales;
 - composición, tamaño y mando de las tropas personales de Lord Valrik;
 - reglas concretas de las levas militares y su integración en las fuerzas del Rey;
