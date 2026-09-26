@@ -543,7 +543,13 @@ Quedan así vinculadas a:
 
 Estas Casas menores **no son soberanas**: deben obediencia a Lord Valrik y forman parte de la cadena territorial de autoridad de Norgard.
 
-Sus nombres, linajes, emblemas, historia y competencias concretas quedan pendientes de desarrollo.
+Estas tres Casas menores son **linajes antiguos y arraigados en sus respectivas villas**, con una presencia histórica prolongada en el territorio Valrik.
+
+Su antigüedad no implica un gran peso político dentro de Norgard. Son Casas de relevancia principalmente **local**, vinculadas a la administración de villas y áreas rurales, sin el poder, riqueza o prestigio de las grandes Casas ni de linajes asociados a ciudades importantes.
+
+Su autoridad deriva de su condición de vasallas de los Valrik y de la función administrativa que ejercen en sus dominios.
+
+Sus nombres, linajes concretos, emblemas, historia particular y competencias detalladas quedan pendientes de desarrollo.
 
 ---
 
@@ -628,11 +634,13 @@ Queda aprobado como canon:
 - distribución concreta de las principales zonas agrícolas y ganaderas;
 - detalle futuro de paisajes locales y transición entre tierras abiertas, Bosque Negro y Montes Invernos;
 - las tres villas principales están gobernadas por Casas menores vasallas de la Casa Valrik;
-- cada Casa menor administra su villa y área de influencia en nombre de los Valrik y bajo la autoridad de la Corona.
+- cada Casa menor administra su villa y área de influencia en nombre de los Valrik y bajo la autoridad de la Corona;
+- las tres Casas menores son linajes antiguos y arraigados localmente, pero de escaso peso político fuera de sus propias villas y comarcas;
+- su antigüedad no las convierte en Casas poderosas: su relevancia es principalmente administrativa y local.
 - organización concreta de la pesca marítima y fluvial;
 - especialización concreta de los astilleros;
 - distribución de población;
-- nombres, linajes, emblemas e historia de las tres Casas menores que gobiernan las villas;
+- nombres, emblemas e historia particular de las tres Casas menores que gobiernan las villas;
 - competencias administrativas concretas de cada Casa menor;
 - organización detallada de la guardia urbana y de los guardias rurales;
 - composición, tamaño y mando de las tropas personales de Lord Valrik;
