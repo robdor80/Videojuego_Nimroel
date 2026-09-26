@@ -419,7 +419,7 @@ Su nombre, familia inmediata y biografía detallada quedan pendientes de desarro
 
 Su autoridad no crea una ley distinta para el territorio: aplica la legislación del Reino y se presenta como garante de la paz del Rey en las tierras Valrik.
 
-### Seguridad en Treskal
+### Seguridad y justicia en Treskal
 
 En la capital existe un **cuerpo de guardias urbanos** encargado de la vigilancia y seguridad cotidiana de la ciudad.
 
@@ -427,7 +427,21 @@ Sus funciones incluyen mantener el orden, responder ante delitos y alteraciones 
 
 Los delitos cometidos en Treskal se **juzgan con rapidez y conforme a la Ley del Rey**.
 
+Treskal actúa además como **sede judicial superior del territorio Valrik** para los delitos de mayor gravedad.
+
+Los tribunales y autoridades judiciales de la capital pueden juzgar y sentenciar estos casos sin que Lord Valrik tenga que intervenir personalmente en todos ellos.
+
+La **pena de muerte**, sin embargo, queda reservada a la autoridad personal de **Lord Valrik**.
+
 La organización interna concreta de los tribunales, rangos de guardia y procedimientos queda pendiente hasta desarrollar la ciudad en detalle.
+
+### Justicia local en las villas
+
+Las **Casas menores** que administran las tres villas pueden juzgar disputas y delitos menores dentro de sus dominios, siempre aplicando la **Ley del Rey**.
+
+Los delitos considerados de mayor gravedad no quedan definitivamente en manos de la justicia local: son remitidos a **Treskal**, donde se celebran el juicio y la sentencia correspondientes.
+
+Esto crea una estructura judicial escalonada: justicia local para asuntos menores y justicia territorial en Treskal para los delitos graves.
 
 ### Guardias rurales
 
@@ -590,6 +604,14 @@ La Casa Valrik obtiene una parte importante de sus recursos de dos vías princip
 
 Los **Astilleros Reales** de Treskal no pertenecen a Lord Valrik, sino a la Corona. La Corona financia y paga la construcción de los buques de guerra que allí se fabrican.
 
+### Competencias judiciales de las Casas menores
+
+Las Casas menores pueden ejercer justicia sobre **disputas y delitos menores** dentro de sus villas y áreas de influencia, siempre conforme a la Ley del Rey.
+
+Los delitos de mayor gravedad deben ser remitidos a **Treskal** para ser juzgados y sentenciados por la autoridad judicial territorial.
+
+La pena de muerte no puede imponerse de forma autónoma por una Casa menor: queda reservada a **Lord Valrik**.
+
 ### Obligaciones militares de las Casas menores
 
 Cuando Lord Valrik moviliza el territorio por orden del Rey, las Casas menores deben contribuir al esfuerzo militar.
@@ -673,7 +695,11 @@ Queda aprobado como canon:
 - los Astilleros Reales de Treskal pertenecen a la Corona;
 - la Corona paga el coste de fabricación de los buques de guerra construidos en los Astilleros Reales;
 - en caso de movilización, las Casas menores vasallas deben aportar hombres para las levas cuando sean requeridos;
-- además de hombres, las Casas menores contribuyen con suministros, recursos, armas y otros bienes necesarios para la campaña.
+- además de hombres, las Casas menores contribuyen con suministros, recursos, armas y otros bienes necesarios para la campaña;
+- las Casas menores pueden juzgar disputas y delitos menores dentro de sus villas, siempre conforme a la Ley del Rey;
+- los delitos mayores son remitidos a Treskal, donde se celebran el juicio y la sentencia;
+- Lord Valrik no necesita intervenir personalmente en todos los delitos graves;
+- la pena de muerte queda reservada a la autoridad personal de Lord Valrik.
 
 ---
 
@@ -701,6 +727,7 @@ Queda aprobado como canon:
 - reglas concretas de las levas militares, cuotas de aportación de las Casas menores y su integración en las fuerzas del Rey;
 - organización, reclutamiento y funciones de los marinos de Treskal dentro de la Armada Real;
 - estructura concreta de justicia y tribunales cuando se desarrolle Treskal;
+- delimitación futura entre delitos menores y delitos mayores cuando sea necesaria para narrativa o gameplay;
 - desarrollo específico de la ciudad de Treskal;
 - nombre, familia y biografía del actual Lord Valrik;
 - fiestas, costumbres y formas concretas de educación cuando sean relevantes para escenas o gameplay.
