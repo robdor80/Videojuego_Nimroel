@@ -165,7 +165,40 @@ La calidad excepcional del herrero **no depende del tamaño del asentamiento**. 
 
 Los herreros capaces de realizar encargos de mayor calidad, herramientas superiores o armas decentes pertenecen a la capa posterior de **posibilidades**, no al mínimo obligatorio.
 
-### 8. Seguridad
+### 8. Taberna local
+
+Toda aldea debe disponer de **al menos una taberna o espacio equivalente de uso vecinal**.
+
+Su función principal es servir como punto cotidiano de encuentro para los habitantes del asentamiento.
+
+Debe poder ofrecer, como mínimo:
+
+- bebida;
+- comida sencilla de calidad modesta;
+- un espacio donde reunirse, conversar e intercambiar información.
+
+También puede funcionar de forma natural como lugar donde preguntar por:
+
+- pequeños productos locales;
+- alimentos que algún vecino tenga disponibles;
+- trabajos;
+- rumores;
+- necesidades del asentamiento;
+- personas concretas.
+
+La taberna puede variar mucho en escala y aspecto.
+
+En una aldea muy pequeña puede ser una estancia sencilla integrada en una vivienda o edificio modesto.
+
+En una aldea mayor puede ocupar un local independiente y estar más desarrollada.
+
+La obligación es que exista **un punto social básico de bebida, comida sencilla y convivencia**, no que todas las tabernas tengan el mismo tamaño o calidad.
+
+La taberna **no ofrece alojamiento por definición**.
+
+Cuando exista además una posada, ambas pueden coexistir y cumplir funciones distintas.
+
+### 9. Seguridad
 
 Una aldea ordinaria **no necesita defensa permanente propia**.
 
@@ -186,7 +219,7 @@ Las excepciones se definirán posteriormente como posibilidades específicas si 
 Ninguna aldea necesita por definición:
 
 - molino;
-- posada o taberna;
+- posada;
 - carpintero;
 - carretero;
 - tienda;
@@ -205,7 +238,7 @@ Una aldea perfectamente válida puede existir sin ninguno de estos servicios y d
 
 El esqueleto debe permitir aldeas **incompletas por sí solas pero coherentes dentro de la red territorial**.
 
-La ausencia de un servicio no constituye un fallo si existe acceso razonable al mismo en otro núcleo, **salvo aquellos servicios fijados expresamente como parte del esqueleto mínimo**, como la herrería básica local.
+La ausencia de un servicio no constituye un fallo si existe acceso razonable al mismo en otro núcleo, **salvo aquellos servicios fijados expresamente como parte del esqueleto mínimo**, como la herrería básica local o la taberna vecinal.
 
 Las reglas concretas de cobertura regional se definirán después de cerrar los esqueletos mínimos de aldea, pueblo, villa y Treskal.
 
