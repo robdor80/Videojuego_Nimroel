@@ -529,7 +529,25 @@ Los Montes Invernos marcan así el extremo de esta progresión climática dentro
 
 ---
 
-## 14. Estado del bloque territorial
+## 14. Casas menores y administración interior
+
+Las tres villas principales del territorio Valrik quedan bajo la autoridad de **Casas menores vasallas de la Casa Valrik**.
+
+Cada una de estas Casas menores administra una de las villas y su área de influencia inmediata en nombre de los Valrik y, en última instancia, de la Corona.
+
+Quedan así vinculadas a:
+
+- la villa costera de los grandes astilleros civiles;
+- la villa de gestión forestal y maderera;
+- la villa agroganadera y comercial del interior.
+
+Estas Casas menores **no son soberanas**: deben obediencia a Lord Valrik y forman parte de la cadena territorial de autoridad de Norgard.
+
+Sus nombres, linajes, emblemas, historia y competencias concretas quedan pendientes de desarrollo.
+
+---
+
+## 15. Estado del bloque territorial
 
 Queda aprobado como canon:
 
@@ -609,10 +627,13 @@ Queda aprobado como canon:
 - organización detallada de la explotación forestal y sus concesiones;
 - distribución concreta de las principales zonas agrícolas y ganaderas;
 - detalle futuro de paisajes locales y transición entre tierras abiertas, Bosque Negro y Montes Invernos;
+- las tres villas principales están gobernadas por Casas menores vasallas de la Casa Valrik;
+- cada Casa menor administra su villa y área de influencia en nombre de los Valrik y bajo la autoridad de la Corona.
 - organización concreta de la pesca marítima y fluvial;
 - especialización concreta de los astilleros;
 - distribución de población;
-- Casas menores;
+- nombres, linajes, emblemas e historia de las tres Casas menores que gobiernan las villas;
+- competencias administrativas concretas de cada Casa menor;
 - organización detallada de la guardia urbana y de los guardias rurales;
 - composición, tamaño y mando de las tropas personales de Lord Valrik;
 - reglas concretas de las levas militares y su integración en las fuerzas del Rey;
