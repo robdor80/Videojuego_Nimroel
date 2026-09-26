@@ -7,10 +7,33 @@ Esta carpeta organiza el lore jugable de las aldeas Valrik desde lo más general
 La regla es separar claramente:
 
 1. **qué comparten las aldeas Valrik**;
-2. **qué modelos reutilizables existen**;
-3. **qué aldeas concretas existen realmente en el mapa**.
+2. **qué modelos de generación reutilizables existen**;
+3. **qué aldeas concretas deben quedar fijadas por necesidades narrativas o de mapa**.
 
-Esto evita mezclar lore regional, layouts reutilizables, prompts visuales y assets finales.
+El objetivo no es diseñar previamente cada aldea, sino proporcionar al juego límites suficientes para que pueda **generar asentamientos variados, coherentes y persistentes** sin que el jugador conozca de antemano su composición exacta.
+
+---
+
+## Principio de sorpresa del jugador
+
+Las aldeas ordinarias del territorio Valrik **no deben preconstruirse una a una en el lore**.
+
+El lore define las reglas.
+
+El modelo define probabilidades, límites y relaciones plausibles.
+
+El juego decide la instancia concreta.
+
+Por tanto, antes de descubrir una aldea el jugador no tiene por qué saber:
+
+- si posee herrero;
+- si posee posada;
+- cuántos talleres tiene;
+- qué edificios son de una o dos plantas;
+- la disposición exacta de casas y caminos;
+- qué familias y oficios concretos encontrará.
+
+Una vez generada una aldea, su configuración debe **persistir**: volver a visitarla no debe regenerar arbitrariamente edificios, habitantes ni servicios.
 
 ---
 
@@ -18,9 +41,7 @@ Esto evita mezclar lore regional, layouts reutilizables, prompts visuales y asse
 
 ### 00_Base
 
-Contiene la definición genérica de una aldea Valrik.
-
-Aquí se guardan únicamente rasgos comunes y reutilizables: escala rural, relación entre viviendas y oficios, interdependencia entre aldeas, lógica productiva y criterios generales de diseño jugable.
+Contiene la definición genérica y las reglas comunes de generación de una aldea Valrik.
 
 Archivo principal:
 
@@ -28,49 +49,46 @@ Archivo principal:
 
 ### 01_Modelos
 
-Contiene **modelos reutilizables de distribución y función**.
+Contiene **modelos de generación reutilizables**.
 
-Los identificadores `V1`, `V2`, `V3`... significan **variantes de modelo**, no revisiones del mismo archivo.
+Los identificadores `V1`, `V2`, `V3`... significan variantes de modelo, no revisiones del mismo archivo.
 
-Ejemplos actuales:
+Un modelo no es un plano prefabricado ni una aldea concreta. Define:
 
-- `V1_Mixta_maderera_agricola`
-- `V2_Molino_agroganadera`
-
-Cada modelo podrá tener más adelante:
-
-- descripción funcional;
-- lógica espacial;
-- plano tipo;
-- reglas de variación;
-- datos operativos para generación procedural o semiprocedural.
+- contexto territorial;
+- función económica dominante;
+- rango de población;
+- elementos obligatorios mínimos;
+- elementos opcionales;
+- elementos incompatibles o poco plausibles;
+- pesos o tendencias de aparición;
+- reglas espaciales;
+- relaciones con otros asentamientos.
 
 ### 02_Instancias
 
-Contendrá las **aldeas canónicas concretas y con nombre** que existan en el mundo.
+Se reserva para asentamientos concretos que necesiten quedar fijados por razones de:
 
-Una instancia podrá basarse en un modelo y modificar detalles locales sin duplicar toda la definición.
+- historia;
+- narrativa;
+- misión;
+- cartografía;
+- personaje canónico;
+- localización única.
 
-Ejemplo futuro:
+Las aldeas procedurales ordinarias **no necesitan convertirse en documentos individuales del repo**.
 
-```text
-02_Instancias/
-└── Nombre_de_aldea/
-    ├── aldea.md
-    ├── npc.md
-    └── gameplay.md
-```
+Su composición concreta pertenece al estado de la partida, no al lore estable.
 
 ---
 
 ## Relación con la v0.0.1
 
-La v0.0.1 utilizará inicialmente:
+La v0.0.1 utilizará inicialmente modelos rurales de Valrik y permitirá validar la generación de aldeas a pequeña escala.
 
-- **Modelo V1** como aldea principal;
-- **Modelo V2** como posible segunda aldea.
+La prueba debe priorizar que el jugador descubra la aldea en lugar de conocerla previamente durante su diseño.
 
-La versión del juego no debe formar parte de la identidad permanente del modelo. Así, V1 y V2 podrán reutilizarse posteriormente en otras zonas del territorio Valrik.
+Si una mecánica necesita garantizar un servicio concreto, debe bloquearse solo esa **necesidad mínima de gameplay**, evitando fijar el resto de la aldea.
 
 ---
 
@@ -106,8 +124,9 @@ Los assets generados se almacenan bajo `Worldbuilding/Direccion artistica/Assets
 
 ## Regla principal
 
-**Lore define qué existe y cómo funciona.  
-La Biblia visual define cómo debe verse.  
-El prompt traduce esas reglas a generación visual.  
-La referencia aprobada fija una apariencia.  
-El asset es el producto final utilizable.**
+**Lore define los límites.  
+El modelo define el espacio de posibilidades.  
+El generador crea la aldea concreta.  
+El estado de partida conserva lo generado.  
+La Biblia visual define cómo puede verse.  
+Los assets proporcionan las piezas con las que construirla.**
