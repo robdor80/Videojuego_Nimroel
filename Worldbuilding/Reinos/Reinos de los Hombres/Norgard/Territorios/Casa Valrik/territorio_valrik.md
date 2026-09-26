@@ -18,6 +18,13 @@ Se irá ampliando y corrigiendo únicamente mediante nuevas decisiones de canon 
 
 La Casa Valrik administra el territorio oriental de Norgard desde Treskal.
 
+### Terminología territorial
+
+**Valrik es el nombre de la Gran Casa gobernante.**  
+Cuando se hable de población, asentamientos, modelos de generación o identidad regional, se utilizará preferentemente **territorio de Treskal** o **zona de Treskal**.
+
+La ruta del repositorio se mantiene bajo `Casa Valrik` porque representa la administración política del territorio.
+
 Este territorio incluye la ciudad de Treskal y sus regiones interiores, rurales, forestales, costeras y fluviales asociadas.
 
 La identidad específica de la ciudad de Treskal no debe extrapolarse automáticamente a todo el territorio Valrik.
@@ -90,7 +97,21 @@ La delimitación exacta de la frontera sobre cartografía detallada podrá afina
 
 ## 4. Jerarquía de asentamientos y abastecimiento
 
-**Treskal es la única ciudad del territorio Valrik.**
+### Rangos canónicos de población — territorio de Treskal
+
+Estos rangos son **propios del territorio de Treskal** y no establecen necesariamente los límites de clasificación para todo Norgard:
+
+- **Aldea:** 35–100 habitantes.
+- **Pueblo:** 350–900 habitantes.
+- **Villa:** 2.000–4.500 habitantes.
+- **Treskal:** 12.000–18.000 habitantes.
+- **Puesto de guardia fronterizo:** 8–20 guardias permanentes.
+
+Los intervalos intermedios no obligan a que exista una categoría adicional: los asentamientos del territorio se generarán dentro de los rangos definidos para cada tipo.
+
+Las probabilidades internas de población, distribución de tamaños y frecuencia territorial se definirán posteriormente. En esta fase se fija únicamente el **esqueleto canónico**.
+
+**Treskal es la única ciudad del territorio administrado por la Casa Valrik.**
 
 Es una ciudad de menor tamaño, riqueza visible y esplendor que **Treihord**.
 
