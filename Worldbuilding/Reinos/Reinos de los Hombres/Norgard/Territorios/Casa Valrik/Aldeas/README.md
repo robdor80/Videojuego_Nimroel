@@ -36,7 +36,7 @@ Por tanto, antes de descubrir una aldea el jugador no tiene por qué saber:
 
 - qué nivel de habilidad posee su herrero básico;
 - si existe además un herrero de nivel superior;
-- si posee posada;
+- si posee posada además de la taberna obligatoria;
 - cuántos talleres tiene;
 - qué edificios son de una o dos plantas;
 - la disposición exacta de casas y caminos;
@@ -150,7 +150,9 @@ Las aldeas no deben generarse como unidades independientes.
 
 Antes de decidir servicios locales, el sistema debe consultar la **red de asentamientos próximos** y comprobar qué necesidades ya están cubiertas.
 
-La presencia de herrería, molino, posada, carpintería u otros servicios se decidirá mediante **azar condicionado por contexto**, teniendo en cuenta:
+La presencia de **servicios opcionales** como molino, posada, carpintería u otros se decidirá mediante **azar condicionado por contexto**, teniendo en cuenta:
+
+La herrería básica y la taberna local quedan fuera de esta tirada porque forman parte del esqueleto mínimo obligatorio.
 
 - distancia o tiempo de viaje a otros asentamientos;
 - servicios ya existentes en pueblos, villas y aldeas cercanas;
