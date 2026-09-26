@@ -479,6 +479,18 @@ Ante la llamada del Rey, **Lord Valrik puede movilizar sus propias tropas** y po
 
 Si la situación lo exige, también puede ordenar **levas militares entre los hombres en edad de combatir** de su territorio, aumentando temporalmente las fuerzas disponibles para una campaña o una emergencia.
 
+Cuando se produce una movilización, las **Casas menores vasallas de Valrik** están obligadas a contribuir al esfuerzo militar.
+
+Su aportación puede incluir:
+
+- hombres para las levas;
+- suministros;
+- recursos;
+- armas;
+- otros bienes necesarios para sostener la campaña.
+
+Estas contribuciones se canalizan a través de la autoridad de Lord Valrik y forman parte de las obligaciones feudales y territoriales de las Casas menores.
+
 Estas levas no constituyen un ejército permanente independiente, sino una capacidad de movilización territorial subordinada a la autoridad del Rey.
 
 ### La verdadera fuerza militar de Treskal
@@ -578,6 +590,14 @@ La Casa Valrik obtiene una parte importante de sus recursos de dos vías princip
 
 Los **Astilleros Reales** de Treskal no pertenecen a Lord Valrik, sino a la Corona. La Corona financia y paga la construcción de los buques de guerra que allí se fabrican.
 
+### Obligaciones militares de las Casas menores
+
+Cuando Lord Valrik moviliza el territorio por orden del Rey, las Casas menores deben contribuir al esfuerzo militar.
+
+Su obligación no se limita a hombres: también pueden aportar suministros, recursos, armas y otros bienes necesarios.
+
+Si se decreta una leva, deben proporcionar hombres en edad de combatir conforme a las necesidades de la movilización.
+
 Sus nombres, linajes concretos, emblemas, historia particular y competencias detalladas quedan pendientes de desarrollo.
 
 ---
@@ -651,7 +671,9 @@ Queda aprobado como canon:
 - los grandes astilleros civiles son propiedad de la Casa Valrik y constituyen una de sus principales fuentes de ingresos;
 - Lord Valrik se nutre económicamente de los tributos territoriales y del negocio naval civil;
 - los Astilleros Reales de Treskal pertenecen a la Corona;
-- la Corona paga el coste de fabricación de los buques de guerra construidos en los Astilleros Reales.
+- la Corona paga el coste de fabricación de los buques de guerra construidos en los Astilleros Reales;
+- en caso de movilización, las Casas menores vasallas deben aportar hombres para las levas cuando sean requeridos;
+- además de hombres, las Casas menores contribuyen con suministros, recursos, armas y otros bienes necesarios para la campaña.
 
 ---
 
@@ -676,7 +698,7 @@ Queda aprobado como canon:
 - reglas específicas de sucesión de Casas menores solo si alguna situación narrativa futura requiere detallarlas;
 - organización detallada de la guardia urbana y de los guardias rurales;
 - composición, tamaño y mando de las tropas personales de Lord Valrik;
-- reglas concretas de las levas militares y su integración en las fuerzas del Rey;
+- reglas concretas de las levas militares, cuotas de aportación de las Casas menores y su integración en las fuerzas del Rey;
 - organización, reclutamiento y funciones de los marinos de Treskal dentro de la Armada Real;
 - estructura concreta de justicia y tribunales cuando se desarrolle Treskal;
 - desarrollo específico de la ciudad de Treskal;
