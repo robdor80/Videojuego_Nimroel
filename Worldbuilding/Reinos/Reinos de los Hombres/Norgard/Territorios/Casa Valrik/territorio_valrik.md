@@ -579,6 +579,12 @@ Quedan así vinculadas a:
 
 Estas Casas menores **no son soberanas**: deben obediencia a Lord Valrik y forman parte de la cadena territorial de autoridad de Norgard.
 
+La población de sus villas y comarcas no se percibe como súbdita de una Casa menor en sentido principal.
+
+**Todos los habitantes del territorio Valrik, incluidos los propios miembros de las Casas menores, se consideran súbditos de Lord Valrik y del Rey.**
+
+Las Casas menores ejercen una autoridad administrativa, judicial y señorial delegada dentro de sus dominios, pero esa autoridad no sustituye la lealtad superior a la Casa Valrik y a la Corona.
+
 Estas tres Casas menores son **linajes antiguos y arraigados en sus respectivas villas**, con una presencia histórica prolongada en el territorio Valrik.
 
 Su antigüedad no implica un gran peso político dentro de Norgard. Son Casas de relevancia principalmente **local**, vinculadas a la administración de villas y áreas rurales, sin el poder, riqueza o prestigio de las grandes Casas ni de linajes asociados a ciudades importantes.
@@ -706,7 +712,9 @@ Queda aprobado como canon:
 - la pena de muerte queda reservada a la autoridad personal de Lord Valrik;
 - las Casas menores gozan de bastante autonomía en la gestión cotidiana de sus villas;
 - Lord Valrik no interviene habitualmente mientras cumplan la Ley del Rey, sus tributos y obligaciones y mantengan el orden;
-- la intervención directa de Lord Valrik se reserva para asuntos graves o de alcance territorial.
+- la intervención directa de Lord Valrik se reserva para asuntos graves o de alcance territorial;
+- todos los habitantes del territorio, incluidos los miembros de las Casas menores, se consideran súbditos de Lord Valrik y del Rey;
+- las Casas menores administran sus villas, pero no sustituyen la lealtad superior a la Casa Valrik y a la Corona.
 
 ---
 
