@@ -34,7 +34,8 @@ El juego decide la instancia concreta.
 
 Por tanto, antes de descubrir una aldea el jugador no tiene por qué saber:
 
-- si posee herrero;
+- qué nivel de habilidad posee su herrero básico;
+- si existe además un herrero de nivel superior;
 - si posee posada;
 - cuántos talleres tiene;
 - qué edificios son de una o dos plantas;
@@ -51,9 +52,10 @@ Una vez generada una aldea, su configuración debe **persistir**: volver a visit
 
 Contiene la definición genérica y las reglas comunes de generación de una aldea del territorio de Treskal.
 
-Archivo principal:
+Archivos:
 
-- `00_Base/aldea_tipo_treskal.md`
+- `00_Base/aldea_tipo_treskal.md` — esqueleto mínimo obligatorio;
+- `00_Base/posibilidades_aldea_treskal.md` — elementos opcionales aprobados antes de asignar probabilidades.
 
 ### 01_Modelos
 
@@ -182,8 +184,10 @@ El desarrollo se realizará en este orden:
 2. añadir después las **posibilidades opcionales**;
 3. definir por último **probabilidades, pesos y reglas de cobertura regional**.
 
-Orden de trabajo previsto:
+Los esqueletos procedurales de **Aldea, Pueblo y Villa** ya están aprobados.
 
-**Aldea → Pueblo → Villa → Treskal.**
+La fase actual es cerrar las **posibilidades opcionales de Aldea**, una a una, antes de pasar a Pueblo y Villa.
+
+Treskal queda fuera de la generación procedural y se desarrollará manualmente como ciudad canónica única.
 
 Los puestos de guardia fronterizos se tratarán como instalaciones funcionales separadas, no como asentamientos civiles.
