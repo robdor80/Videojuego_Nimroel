@@ -400,7 +400,7 @@
       "approved_date": "2026-09-25",
       "binary_sync_status": "synced",
       "zip_sha256": "4fcb73589c47ca2e0ffb3e0ff9ef045bd7a18dd1d865734280baf43c556a3856",
-      "png_sha256": "9736b1814dd69b6bbff2da21a59ff2f33b8819a482821cb4e9a083ed3bc3b98",
+      "png_sha256": "9736b1814dd69b6bbff2da21a59ff2f33b8819a482821cb4e9a083ed3bc3b98f",
       "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con PNG + _prompt.md + _info.md. PNG canónico ajustado mediante recorte a formato vertical 4:5 exacto (1152x1440); el zip_sha256 conserva la huella del ZIP de transferencia original."
     },
     {
@@ -1565,7 +1565,7 @@
       "approved_date": "2026-09-26",
       "notes": "Asset aprobado y confirmado en GitHub con PNG + _prompt.md + _info.md; formato vertical 4:5.",
       "binary_sync_status": "synced",
-      "zip_sha256": "775e7e956865ec1c7edcc817ae95c342f77f1eeb7d7eebc4c070703d7d6f8eb",
+      "zip_sha256": "775e7e956865ec1c7edcc817ae95c342f77f1eeb7d7eebc4c0703dfbef425e5f",
       "png_sha256": null,
       "background_context": "treskal_herbal_workspace_estuary"
     },
@@ -2777,8 +2777,8 @@
       "status": "APPROVED",
       "required": true,
       "scope": "zona_de_Treskal_completa",
-      "path": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Perfiles locales/Treskal/TRESKAL_PORTRAIT_VISUAL_BIBLE_v0.1.md",
-      "version": "0.1"
+      "path": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Perfiles locales/Treskal/TRESKAL_PORTRAIT_VISUAL_BIBLE_v0.2.md",
+      "version": "0.2"
     }
   },
   "updated": "2026-09-26"

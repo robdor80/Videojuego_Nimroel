@@ -657,7 +657,9 @@ Arleon no está amurallada.
 ## 22. Treskal
 
 ### Función
-Centro humano de referencia para el trabajo artístico de la madera.
+Centro humano de referencia para el trabajo artístico de la madera y gran centro de construcción naval de Norgard.
+
+Treskal es además la **sede principal de la Casa Valrik** y la única ciudad importante del territorio administrado por esa Casa.
 
 ### Economía
 - carpintería;
@@ -665,7 +667,18 @@ Centro humano de referencia para el trabajo artístico de la madera.
 - mobiliario;
 - talla;
 - artesanía;
-- comercio de manufacturas de madera.
+- comercio de manufacturas de madera;
+- carpintería naval;
+- grandes astilleros;
+- construcción de los buques de la **Armada Real de Norgard**;
+- construcción naval civil y comercial;
+- actividad portuaria, almacenes de madera, cordelería y oficios auxiliares cuando corresponda.
+
+La tradición de excelencia en madera de Treskal conecta de forma natural con su capacidad naval: el conocimiento de carpintería, selección y tratamiento de madera sostiene tanto la artesanía fina como la construcción de grandes embarcaciones.
+
+Los grandes astilleros de Treskal construyen los buques de la **Armada Real**, pero la Armada pertenece a la **Corona de Norgard**, no a la Casa Valrik.
+
+Los astilleros de Treskal mantienen también capacidad civil y comercial. Esa construcción naval no es exclusiva de la ciudad: puede existir igualmente en centros costeros menores del territorio Valrik.
 
 ### Arquitectura
 - piedra;
@@ -682,11 +695,29 @@ La ornamentación de madera debe ser:
 - coherente;
 - no excesivamente fantástica.
 
+En áreas portuarias o vinculadas a los astilleros pueden aparecer, cuando la escena lo justifique:
+
+- grandes estructuras de madera naval;
+- gradas y talleres de ribera;
+- almacenes de madera;
+- cordelerías;
+- muelles;
+- embarcaciones en construcción;
+- actividad de carga y transporte de materiales.
+
+Estos elementos no deben invadir automáticamente toda representación de Treskal.
+
 ### Identidad
 Treskal es conocida por:
 
 - sus artesanos de la madera;
+- su enorme capacidad de construcción naval;
+- los grandes astilleros que construyen los buques de la Armada Real;
 - ser lugar de nacimiento de Kazan Rise.
+
+La identidad naval de la **ciudad** no debe extrapolarse automáticamente a cada aldea, oficio o habitante de toda la zona de Treskal.
+
+En retratos NPC, fondos de astillero, puerto, carpintería naval, almacenes de madera, cordelería, muelles o actividad marítima solo deben aparecer cuando el oficio o el contexto del personaje lo justifiquen.
 
 ### Defensas
 Treskal no está amurallada.

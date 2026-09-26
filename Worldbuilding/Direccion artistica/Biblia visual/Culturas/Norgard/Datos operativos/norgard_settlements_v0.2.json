@@ -365,7 +365,7 @@
       "regionIds": [
         "east_norgard"
       ],
-      "type": "artisan_city",
+      "type": "artisan_shipbuilding_city",
       "walls": false,
       "functions": [
         "carpinteria",
@@ -373,7 +373,12 @@
         "mobiliario",
         "talla",
         "artesania",
-        "comercio_de_madera_trabajada"
+        "comercio_de_madera_trabajada",
+        "carpinteria_naval",
+        "grandes_astilleros",
+        "construccion_buques_armada_real_norgard",
+        "construccion_naval_civil_y_comercial",
+        "actividad_portuaria_y_oficios_auxiliares"
       ],
       "architecture": {
         "materials": [
@@ -385,7 +390,11 @@
         "decorativeWoodDetails": "muy_comunes_pero_funcionales"
       },
       "identity": [
+        "sede_principal_casa_valrik",
+        "unica_ciudad_importante_territorio_valrik",
         "mejores_artesanos_humanos_de_la_madera",
+        "gran_capacidad_de_construccion_naval",
+        "grandes_astilleros_de_la_armada_real_de_norgard",
         "lugar_de_nacimiento_de_kazan_rise"
       ],
       "geography": [
@@ -419,8 +428,20 @@
         "promptRestriction": "No visible banners, flags or invented heraldry. Do not add decorative emblems."
       },
       "promptNotes": [
-        "No mostrar estandartes ambientales ni heráldica inventada."
-      ]
+        "No mostrar estandartes ambientales ni heráldica inventada.",
+        "No convertir Treskal en una ciudad exclusivamente naval: conservar su identidad artesanal y de excelencia en madera.",
+        "La Armada Real pertenece a la Corona de Norgard, no a la Casa Valrik.",
+        "Astilleros, carpinteria naval, almacenes de madera, cordeleria, muelles y actividad maritima solo cuando la escena, el oficio o el contexto lo justifiquen.",
+        "No extrapolar automaticamente la identidad naval de la ciudad a cada aldea o habitante de toda la region."
+      ],
+      "navalIdentity": {
+        "royalNavyOwnership": "Corona_de_Norgard",
+        "royalWarshipConstruction": "concentrada_en_los_grandes_astilleros_de_Treskal",
+        "civilCommercialShipbuilding": true,
+        "civilCommercialShipbuildingAlsoInMinorValrikCenters": true,
+        "blackForestTimberStrategic": true,
+        "regionalExtrapolation": "no_automatica"
+      }
     },
     {
       "id": "zanthir",

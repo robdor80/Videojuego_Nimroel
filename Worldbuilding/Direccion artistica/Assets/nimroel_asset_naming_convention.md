@@ -56,7 +56,7 @@ La estructura general del nombre será:
 
 ### 3.1. Retratos
 
-Para retratos:
+Para retratos adultos, la forma normal es:
 
 ```text
 portrait_<culture-or-origin>_<role>_<sex>_<NNN>
@@ -70,6 +70,34 @@ portrait_treskal_farmer_female_001
 portrait_treskal_blacksmith_male_001
 portrait_morgar_noble_female_001
 ```
+
+#### 3.1.1. Excepción válida para menores
+
+En menores se permiten los identificadores semánticos `boy` / `girl` cuando formen parte del rol o de la etapa vital.
+
+Son válidas estas formas:
+
+```text
+portrait_<culture-or-origin>_<boy|girl>_<NNN>
+portrait_<culture-or-origin>_<role>_<boy|girl>_<NNN>
+```
+
+Ejemplos canónicos ya aprobados:
+
+```text
+portrait_treskal_boy_001
+portrait_treskal_girl_001
+portrait_treskal_girl_002
+portrait_treskal_girl_003
+portrait_treskal_farmer_boy_001
+portrait_treskal_farmer_boy_002
+```
+
+Estos IDs son estables y **no deben migrarse** a `male` / `female`.
+
+En todos los casos, el `asset_id`, la carpeta definitiva, el PNG, `_prompt.md` y `_info.md` deben compartir exactamente el mismo nombre base.
+
+Se mantienen las reglas de minúsculas, ASCII, underscores y numeración final de tres dígitos.
 
 ### 3.2. Escenas
 
@@ -198,20 +226,37 @@ Por tanto, **GitHub no conserva el ZIP como formato definitivo**.
 
 Las carpetas sirven para ayudar a navegar, pero **el nombre del archivo debe ser autosuficiente**.
 
-Ejemplo:
+Ejemplo de almacenamiento definitivo:
 
 ```text
 Assets/
-└── Portraits/
-    └── Farmer/
-        ├── Male/
-        │   ├── portrait_treskal_farmer_male_001.zip
-        │   ├── portrait_treskal_farmer_male_002.zip
-        │   └── portrait_morgar_farmer_male_001.zip
-        │
-        └── Female/
-            └── portrait_treskal_farmer_female_001.zip
+└── portraits/
+    └── Norgard/
+        └── Treskal/
+            └── <role>/
+                └── <sex-or-life-stage>/
+                    └── <asset_id>/
+                        ├── <asset_id>.png
+                        ├── <asset_id>_prompt.md
+                        └── <asset_id>_info.md
 ```
+
+Ejemplo real:
+
+```text
+Assets/
+└── portraits/
+    └── Norgard/
+        └── Treskal/
+            └── farmer/
+                └── male/
+                    └── portrait_treskal_farmer_male_001/
+                        ├── portrait_treskal_farmer_male_001.png
+                        ├── portrait_treskal_farmer_male_001_prompt.md
+                        └── portrait_treskal_farmer_male_001_info.md
+```
+
+El ZIP aparece **únicamente como paquete temporal de transferencia** y nunca como contenido definitivo del repositorio.
 
 La carpeta ayuda, pero la identidad principal sigue estando en el nombre base.
 
@@ -326,8 +371,17 @@ Por tanto:
 
 ### Retratos
 
+Adultos, forma normal:
+
 ```text
 portrait_<culture-or-origin>_<role>_<sex>_<NNN>
+```
+
+Menores, cuando corresponda:
+
+```text
+portrait_<culture-or-origin>_<boy|girl>_<NNN>
+portrait_<culture-or-origin>_<role>_<boy|girl>_<NNN>
 ```
 
 ### Escenas

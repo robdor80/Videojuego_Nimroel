@@ -28,7 +28,10 @@ APPROVED
 2026-09-25
 
 ## Resolución
-1024x1536
+1122x1402
+
+## Relación de aspecto
+4:5 vertical
 
 ## Formato
 PNG

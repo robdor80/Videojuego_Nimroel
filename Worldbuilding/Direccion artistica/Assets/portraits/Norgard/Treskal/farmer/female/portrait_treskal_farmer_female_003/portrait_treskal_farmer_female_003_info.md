@@ -27,6 +27,12 @@ APPROVED
 ## Creation date
 2026-09-25
 
+## Resolution
+1122x1402
+
+## Aspect ratio
+4:5 vertical
+
 ## Format
 PNG
 

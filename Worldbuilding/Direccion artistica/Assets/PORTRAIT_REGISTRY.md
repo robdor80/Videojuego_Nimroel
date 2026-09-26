@@ -114,7 +114,7 @@ Todos los assets enumerados abajo han sido comprobados en `main` y su carpeta co
 Antes de generar un retrato nuevo:
 
 1. consultar las biblias visuales vigentes aplicables;
-2. para cualquier habitante de Treskal, consultar obligatoriamente `TRESKAL_PORTRAIT_VISUAL_BIBLE_v0.1.md` o la versión posterior vigente;
+2. para cualquier habitante de Treskal, consultar obligatoriamente `TRESKAL_PORTRAIT_VISUAL_BIBLE_v0.2.md` o la versión posterior vigente;
 3. consultar `PORTRAIT_REGISTRY.json`;
 4. construir el pool comparable;
 5. detectar rasgos y combinaciones sobrerrepresentadas;
