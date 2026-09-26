@@ -142,3 +142,26 @@ Los modelos concretos derivados de esta base se guardan en:
 Las aldeas canónicas que necesiten fijarse expresamente se guardarán en:
 
 `../02_Instancias/`
+
+
+---
+
+## Cobertura regional de servicios
+
+La generación local debe estar subordinada a una comprobación regional.
+
+Un servicio especializado puede faltar en una aldea si existe acceso razonable a ese servicio en otro asentamiento próximo.
+
+A medida que aumenta la distancia o escasez de un servicio, debe aumentar también la probabilidad de que una aldea apta lo genere.
+
+Cuando una necesidad mínima de la zona no pueda quedar cubierta por azar, el sistema debe **forzar una solución entre los candidatos plausibles**, no añadir el servicio de forma arbitraria a cualquier núcleo.
+
+Ejemplo conceptual:
+
+- una aldea cercana a un pueblo con herrero tendrá baja probabilidad de generar otra herrería;
+- una aldea alejada de cualquier herrero tendrá una probabilidad mayor;
+- si al terminar de generar una pequeña red rural ninguna localización cubre ese servicio dentro del límite permitido, el sistema elegirá el candidato más coherente y lo añadirá antes de cerrar la región.
+
+Las distancias, tiempos máximos, probabilidades y capacidades exactas se definirán más adelante como datos operativos.
+
+Este principio deberá extenderse también a futuros modelos de **pueblos y villas**, de modo que la red territorial completa se genere de forma coordinada.
