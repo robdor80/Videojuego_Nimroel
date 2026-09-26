@@ -75,7 +75,27 @@ La delimitación exacta de la frontera sobre cartografía detallada podrá afina
 
 ---
 
-## 4. Estado del bloque territorial
+## 4. Jerarquía de asentamientos
+
+**Treskal es la única ciudad importante del territorio Valrik.**
+
+No existe actualmente otra ciudad de rango comparable dentro de sus dominios.
+
+El resto de la población se distribuye en:
+
+- villas;
+- pueblos;
+- aldeas;
+- explotaciones rurales;
+- enclaves productivos;
+- asentamientos forestales o costeros;
+- otros núcleos menores que se definirán cuando tengan función territorial, económica, narrativa o de gameplay.
+
+Esta estructura refuerza el papel de **Treskal** como centro político, económico y urbano principal de la Casa Valrik.
+
+---
+
+## 5. Estado del bloque territorial
 
 Queda aprobado como canon:
 
@@ -85,7 +105,9 @@ Queda aprobado como canon:
 - uso del gemelo occidental de los Ríos Sareno y Theleno como frontera natural en buena parte del tramo meridional;
 - continuidad septentrional mediante frontera terrestre convencional;
 - los Montes Invernos son atravesados por la frontera y no forman por sí mismos el límite entre ambas Casas;
-- todo el territorio situado al este de esa frontera, hasta las costas norte, este y sur de Norgard, pertenece a la Casa Valrik.
+- todo el territorio situado al este de esa frontera, hasta las costas norte, este y sur de Norgard, pertenece a la Casa Valrik;
+- Treskal es la única ciudad importante del territorio Valrik;
+- el resto del territorio se articula mediante villas, pueblos, aldeas y otros núcleos menores.
 
 ---
 
@@ -94,7 +116,7 @@ Queda aprobado como canon:
 - trazado exacto de la frontera;
 - pasos, puentes y puntos de control;
 - división interna del territorio Valrik;
-- asentamientos menores;
+- asentamientos menores concretos;
 - rutas;
 - explotación forestal;
 - zonas agrícolas y ganaderas;
