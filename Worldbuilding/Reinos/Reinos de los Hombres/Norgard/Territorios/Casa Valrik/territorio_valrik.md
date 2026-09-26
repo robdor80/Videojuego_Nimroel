@@ -618,7 +618,9 @@ Lord Valrik puede **convocar en Treskal a los señores de las Casas menores siem
 
 Además, acostumbra a reunir a los tres **al menos una vez al año**, incluso aunque no exista una crisis o asunto urgente que resolver.
 
-Estas reuniones sirven para mantener una comunicación directa con sus vasallos, revisar el estado de las villas y del territorio y reforzar la cohesión de la administración Valrik.
+Estas reuniones no tienen un nombre ceremonial propio: son simplemente **reuniones de Lord Valrik con sus Casas vasallas**.
+
+Sirven para mantener una comunicación directa con sus vasallos, revisar el estado de las villas y del territorio y reforzar la cohesión de la administración Valrik.
 
 La relación no funciona únicamente desde Treskal hacia fuera.
 
@@ -755,6 +757,7 @@ Queda aprobado como canon:
 - las Casas menores tienen derecho a solicitar audiencia directa con Lord Valrik para conflictos graves, disputas territoriales o problemas importantes de administración;
 - Lord Valrik puede convocar a los señores de las Casas menores a Treskal cuando lo considere necesario;
 - suele reunirlos conjuntamente al menos una vez al año aunque no exista una crisis concreta;
+- estas reuniones no tienen un nombre formal ni ceremonial propio: son reuniones de Lord Valrik con sus Casas vasallas;
 - Lord Valrik visita también sus villas y dominios para mantener cercanía, conocer su situación de primera mano y conservar un control efectivo sobre la administración local.
 
 ---
