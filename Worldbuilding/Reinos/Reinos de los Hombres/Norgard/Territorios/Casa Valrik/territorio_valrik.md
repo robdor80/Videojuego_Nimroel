@@ -22,6 +22,19 @@ Este territorio incluye la ciudad de Treskal y sus regiones interiores, rurales,
 
 La identidad específica de la ciudad de Treskal no debe extrapolarse automáticamente a todo el territorio Valrik.
 
+### Carácter general del territorio
+
+El territorio Valrik es claramente menos rico que los dominios Darovan y dispone de menos recursos de gran valor monetario.
+
+Su prestigio no se basa en la acumulación de riqueza, sino especialmente en dos ideas:
+
+- **el honor** como medida de la calidad humana;
+- **la calidad de la madera y del trabajo realizado con ella** como medida de excelencia material.
+
+Entre sus habitantes predominan, como rasgos culturales generales, la amabilidad, la hospitalidad y una fuerte valoración del trabajo bien hecho.
+
+La vida en el territorio es en términos generales tranquila. Su población trabaja principalmente en las actividades necesarias para sostener la región, aunque la industria maderera y todos los oficios derivados de ella poseen un peso económico y cultural excepcional.
+
 ---
 
 ## 2. Frontera occidental con la Casa Galdren
@@ -75,23 +88,33 @@ La delimitación exacta de la frontera sobre cartografía detallada podrá afina
 
 ---
 
-## 4. Jerarquía de asentamientos
+## 4. Jerarquía de asentamientos y abastecimiento
 
-**Treskal es la única ciudad importante del territorio Valrik.**
+**Treskal es la única ciudad del territorio Valrik.**
 
-No existe actualmente otra ciudad de rango comparable dentro de sus dominios.
+Es una ciudad de menor tamaño, riqueza visible y esplendor que **Treihord**.
 
-El resto de la población se distribuye en:
+No existe otro núcleo urbano comparable dentro de los dominios Valrik.
 
-- villas;
+El resto de la población se distribuye principalmente en:
+
+- unas pocas villas;
 - pueblos;
-- aldeas;
+- numerosas aldeas;
 - explotaciones rurales;
 - enclaves productivos;
-- asentamientos forestales o costeros;
-- otros núcleos menores que se definirán cuando tengan función territorial, económica, narrativa o de gameplay.
+- asentamientos costeros;
+- núcleos menores vinculados a actividades concretas.
 
-Esta estructura refuerza el papel de **Treskal** como centro político, económico y urbano principal de la Casa Valrik.
+Las villas son relativamente escasas. El tejido humano del territorio se apoya sobre todo en pueblos y aldeas.
+
+### Relación con Treskal
+
+Los pueblos, aldeas y explotaciones rurales del territorio suministran una parte fundamental de los alimentos, materias primas y productos cotidianos que necesita Treskal.
+
+Buena parte de estos recursos llegan diariamente o de forma regular a los mercados de la ciudad.
+
+Treskal funciona así como gran centro urbano, artesanal y político de una red territorial mucho más dispersa.
 
 ---
 
@@ -113,24 +136,21 @@ La **Armada Real pertenece a la Corona**; los astilleros de Treskal construyen s
 
 La capacidad naval Valrik no se limita a la Armada Real.
 
-Sus astilleros construyen por encargo todo tipo de embarcaciones, entre ellas:
+Una de las villas costeras del territorio alberga los **principales astilleros navales civiles especializados en grandes embarcaciones**.
 
-- barcos mercantes;
+En ellos se diseñan y construyen por encargo, entre otros:
+
+- grandes barcos mercantes;
 - pesqueros;
 - embarcaciones civiles de transporte;
 - naves de carga;
-- embarcaciones costeras;
-- otros barcos civiles o comerciales que requieran sus clientes.
+- otras grandes embarcaciones civiles o comerciales.
 
 Estos encargos pueden proceder de **cualquiera de las tierras de los Hombres** que contrate la construcción de una embarcación.
 
-La construcción naval civil y comercial no queda concentrada exclusivamente en Treskal. Se distribuye entre:
+Treskal y otros centros pueden mantener actividad naval civil de menor escala o complementaria, pero la gran construcción naval civil especializada se identifica especialmente con esta villa costera, todavía pendiente de nombre y desarrollo.
 
-- astilleros de Treskal;
-- al menos una **villa costera especializada en construcción naval**, pendiente de nombre y desarrollo;
-- otros talleres o pequeños astilleros que puedan definirse cuando sean necesarios.
-
-Treskal conserva una capacidad civil importante, pero su singularidad estratégica reside especialmente en que **la construcción de los buques de la Armada Real de Norgard se concentra allí**.
+Treskal conserva su singularidad estratégica porque **los buques de la Armada Real de Norgard se construyen en sus Astilleros Reales**.
 
 ---
 
@@ -178,7 +198,47 @@ La explotación del Bosque Negro debe mantenerse productiva a largo plazo. La Ca
 
 ---
 
-## 7. Estado del bloque territorial
+## 7. Red de caminos y transporte
+
+El territorio Valrik mantiene una **red de caminos especialmente bien cuidada**.
+
+Su mantenimiento no responde al lujo, sino a una necesidad económica y logística.
+
+Los caminos son esenciales para:
+
+- transportar alimentos y productos desde pueblos y aldeas hacia Treskal;
+- abastecer los mercados de la ciudad;
+- desplazar madera desde las inmediaciones del Bosque Negro;
+- conectar campamentos, puestos forestales y núcleos de borde con centros de transformación;
+- mover mercancías hacia los astilleros y zonas costeras;
+- sostener el comercio interno del territorio.
+
+La madera procedente del Bosque Negro convierte el buen estado de las rutas terrestres en una prioridad permanente para la Casa Valrik.
+
+---
+
+## 8. Treskal como centro de la madera trabajada
+
+Treskal concentra una enorme parte de la transformación especializada de la madera del territorio.
+
+En la ciudad existen numerosos:
+
+- aserraderos;
+- carpinterías;
+- talleres de ebanistería;
+- artesanos especializados en decoración y trabajo fino de la madera.
+
+La calidad alcanzada por estos oficios es excepcional.
+
+De Treskal salen **los muebles y objetos decorativos de madera mejor elaborados de las tierras de los Hombres**.
+
+Esta excelencia artesanal constituye una de las principales fuentes de prestigio de la ciudad y complementa su importancia naval.
+
+El peso de la madera en Treskal no implica que toda la población del territorio trabaje directamente en ella, pero la industria forestal y sus múltiples derivados poseen un gran tirón económico y social.
+
+---
+
+## 9. Estado del bloque territorial
 
 Queda aprobado como canon:
 
@@ -189,18 +249,27 @@ Queda aprobado como canon:
 - continuidad septentrional mediante frontera terrestre convencional;
 - los Montes Invernos son atravesados por la frontera y no forman por sí mismos el límite entre ambas Casas;
 - todo el territorio situado al este de esa frontera, hasta las costas norte, este y sur de Norgard, pertenece a la Casa Valrik;
-- Treskal es la única ciudad importante del territorio Valrik;
-- el resto del territorio se articula mediante villas, pueblos, aldeas y otros núcleos menores;
+- Treskal es la única ciudad del territorio Valrik y es menor en tamaño y esplendor que Treihord;
+- existen pocas villas y una red mucho más abundante de pueblos y aldeas;
+- esos asentamientos suministran buena parte de los alimentos y recursos cotidianos que llegan a los mercados de Treskal;
+- el territorio Valrik es notablemente menos rico que el Darovan y posee menos recursos de gran valor monetario;
+- el honor y la calidad de la madera y de su trabajo constituyen dos de sus grandes medidas culturales de prestigio;
+- sus gentes son, en términos generales, amables, hospitalarias y trabajadoras;
+- la vida regional es generalmente tranquila;
 - los buques de la Armada Real de Norgard se construyen en los grandes astilleros de Treskal;
 - los astilleros Valrik construyen también barcos mercantes, pesqueros, de transporte y otras embarcaciones civiles o comerciales por encargo para las distintas tierras de los Hombres;
-- la construcción naval civil y comercial se reparte entre Treskal, al menos una villa costera especializada y otros centros menores que puedan definirse;
+- una villa costera alberga los principales astilleros civiles especializados en grandes embarcaciones mercantes, pesqueras, de carga y transporte;
+- estos astilleros aceptan encargos procedentes de cualquiera de las tierras de los Hombres;
 - el Bosque Negro ocupa una parte enorme del territorio Valrik y constituye uno de sus principales recursos estratégicos;
 - la Casa Valrik mantiene un control fuerte sobre las zonas forestales de mayor valor, las rutas de extracción y el abastecimiento de madera naval;
 - existe explotación local y concesionada en determinadas áreas, siempre subordinada a la autoridad Valrik y sin comprometer el suministro estratégico;
 - la explotación forestal debe preservar la continuidad productiva del Bosque Negro;
 - no existen aldeas ni villas permanentes dentro del Bosque Negro;
 - en su interior solo existen instalaciones funcionales como campamentos madereros, puestos de guardabosques y enclaves de control;
-- los asentamientos civiles ligados al bosque se sitúan en sus inmediaciones y bordes, fuera de la masa forestal densa.
+- los asentamientos civiles ligados al bosque se sitúan en sus inmediaciones y bordes, fuera de la masa forestal densa;
+- la red de caminos Valrik está especialmente bien mantenida por su importancia para el abastecimiento y el transporte de madera y mercancías;
+- Treskal concentra numerosos aserraderos, carpinterías y talleres de madera;
+- de Treskal salen los muebles y objetos decorativos de madera de mayor calidad de las tierras de los Hombres.
 
 ---
 
@@ -211,9 +280,9 @@ Queda aprobado como canon:
 - división interna del territorio Valrik;
 - asentamientos menores concretos;
 - nombre y localización de la villa costera especializada en construcción naval;
-- rutas;
+- trazado y jerarquía concreta de las principales rutas y caminos;
 - organización detallada de la explotación forestal y sus concesiones;
-- zonas agrícolas y ganaderas;
+- zonas agrícolas y ganaderas concretas y su especialización;
 - pesca;
 - especialización concreta de los astilleros;
 - distribución de población;
