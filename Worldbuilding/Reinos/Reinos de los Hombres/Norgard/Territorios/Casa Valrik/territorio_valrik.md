@@ -59,7 +59,23 @@ La frontera los atraviesa aproximadamente en sentido norte-sur.
 
 ---
 
-## 3. Estado del bloque territorial
+## 3. Extensión del territorio Valrik
+
+Todo el territorio situado **al este de la frontera Galdren-Valrik** pertenece administrativamente a la **Casa Valrik**.
+
+Esto incluye:
+
+- las tierras situadas al este del gemelo occidental de los Ríos Sareno y Theleno en el tramo donde este sirve de frontera;
+- las tierras situadas al este de la continuación terrestre de la frontera al norte de los Montes Invernos;
+- el extremo oriental de Norgard hasta sus costas septentrional, oriental y meridional.
+
+Dentro de este ámbito se encuentra **Treskal**, sede de la Casa Valrik.
+
+La delimitación exacta de la frontera sobre cartografía detallada podrá afinarse posteriormente sin alterar este principio territorial.
+
+---
+
+## 4. Estado del bloque territorial
 
 Queda aprobado como canon:
 
@@ -68,7 +84,8 @@ Queda aprobado como canon:
 - frontera occidental aproximada con Galdren en sentido norte-sur;
 - uso del gemelo occidental de los Ríos Sareno y Theleno como frontera natural en buena parte del tramo meridional;
 - continuidad septentrional mediante frontera terrestre convencional;
-- los Montes Invernos son atravesados por la frontera y no forman por sí mismos el límite entre ambas Casas.
+- los Montes Invernos son atravesados por la frontera y no forman por sí mismos el límite entre ambas Casas;
+- todo el territorio situado al este de esa frontera, hasta las costas norte, este y sur de Norgard, pertenece a la Casa Valrik.
 
 ---
 
@@ -76,7 +93,6 @@ Queda aprobado como canon:
 
 - trazado exacto de la frontera;
 - pasos, puentes y puntos de control;
-- relación territorial con la costa norte, este y sur;
 - división interna del territorio Valrik;
 - asentamientos menores;
 - rutas;
