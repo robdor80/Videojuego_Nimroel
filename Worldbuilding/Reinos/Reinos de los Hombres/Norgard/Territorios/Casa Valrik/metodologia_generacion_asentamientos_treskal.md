@@ -8,13 +8,14 @@
 
 Todos los tipos de asentamiento del territorio de Treskal deben desarrollarse siguiendo la misma lógica documental y de generación.
 
-El objetivo es mantener coherencia entre:
+El objetivo es mantener coherencia entre los asentamientos y estructuras susceptibles de generación procedural:
 
 - aldeas;
 - pueblos;
 - villas;
-- Treskal como ciudad única;
 - instalaciones funcionales como los puestos de guardia fronterizos.
+
+**Treskal no forma parte de esta metodología procedural.** Es una ciudad única y canónica que será diseñada manualmente con el nivel de detalle que corresponda, de forma comparable al desarrollo de Treihord.
 
 La regla fundamental es separar claramente **lo obligatorio**, **lo posible** y **lo probable**.
 
@@ -130,16 +131,36 @@ Esto permite que el creador pueda recorrer Nimroel como jugador y descubrir:
 
 ## Aplicación por categoría
 
-La metodología se aplicará en este orden:
+La metodología se aplica a:
 
 1. **Aldea**
 2. **Pueblo**
 3. **Villa**
-4. **Treskal**, como ciudad única del territorio
 
 Los **puestos de guardia fronterizos** seguirán la misma separación entre esqueleto, posibilidades y probabilidades, aunque no sean asentamientos civiles.
 
-El grado de generación procedural de Treskal se decidirá cuando se desarrolle su estructura; su condición de ciudad única no obliga a utilizar exactamente el mismo grado de aleatoriedad que en los asentamientos ordinarios.
+### Excepción: Treskal
+
+**Treskal no será generada por el motor.**
+
+La ciudad se diseñará manualmente y con canon explícito:
+
+- estructura urbana;
+- barrios;
+- calles principales;
+- edificios;
+- servicios;
+- instituciones;
+- actividad económica;
+- población y distribución;
+- defensas y seguridad;
+- puertos y astilleros;
+- espacios singulares;
+- demás elementos necesarios.
+
+No se aplicarán a Treskal probabilidades destinadas a decidir si un elemento existe o no cuando ese elemento forme parte de su diseño canónico.
+
+Su desarrollo se realizará aparte, con el mismo principio de detalle deliberado utilizado para Treihord.
 
 ---
 
