@@ -553,6 +553,12 @@ Los títulos de estas Casas menores, como los demás títulos nobiliarios de Nor
 
 La Casa Valrik no nombra libremente a una nueva familia para sustituir a otra mientras exista una sucesión legítima del linaje titular.
 
+Cada Casa menor mantiene **una pequeña fuerza armada propia**, suficiente para la protección inmediata de su señor, su residencia, dependencias y determinadas necesidades locales.
+
+Estas fuerzas son reducidas y no sustituyen a los cuerpos territoriales dependientes de Lord Valrik.
+
+La **seguridad rural general**, incluida la vigilancia de caminos, aldeas y rutas de mercancías, continúa bajo responsabilidad directa de **Lord Valrik** y de sus guardias rurales.
+
 Sus nombres, linajes concretos, emblemas, historia particular y competencias detalladas quedan pendientes de desarrollo.
 
 ---
@@ -642,12 +648,15 @@ Queda aprobado como canon:
 - las tres Casas menores son linajes antiguos y arraigados localmente, pero de escaso peso político fuera de sus propias villas y comarcas;
 - su antigüedad no las convierte en Casas poderosas: su relevancia es principalmente administrativa y local;
 - los títulos nobiliarios de estas Casas menores son hereditarios;
-- el señorío de cada villa permanece ligado al linaje titular mientras exista sucesión legítima.
+- el señorío de cada villa permanece ligado al linaje titular mientras exista sucesión legítima;
+- cada Casa menor mantiene una fuerza armada propia reducida para protección inmediata y funciones locales;
+- la seguridad rural general depende de Lord Valrik y de sus cuerpos territoriales, no de las Casas menores.
 - organización concreta de la pesca marítima y fluvial;
 - especialización concreta de los astilleros;
 - distribución de población;
 - nombres, emblemas e historia particular de las tres Casas menores que gobiernan las villas;
 - competencias administrativas concretas de cada Casa menor;
+- tamaño, composición y funciones precisas de las pequeñas fuerzas armadas de las Casas menores;
 - reglas específicas de sucesión de Casas menores solo si alguna situación narrativa futura requiere detallarlas;
 - organización detallada de la guardia urbana y de los guardias rurales;
 - composición, tamaño y mando de las tropas personales de Lord Valrik;
