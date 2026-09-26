@@ -99,24 +99,38 @@ Esta estructura refuerza el papel de **Treskal** como centro político, económi
 
 La construcción naval constituye una de las actividades estratégicas del territorio Valrik.
 
-### Armada Real
+### Armada Real de Norgard
 
-Los **grandes astilleros responsables de la construcción de los buques de la Armada Real** se encuentran en **Treskal**.
+Los **grandes astilleros responsables de la construcción de los buques de la Armada Real de Norgard** se encuentran en **Treskal**.
 
-La concentración de esta construcción en Treskal refuerza el carácter estratégico de la ciudad para la Corona y la importancia de la Casa Valrik como suministradora de capacidad naval.
+Los navíos de guerra encargados para la Armada Real se construyen en Treskal.
+
+La concentración de esta construcción en la ciudad refuerza su importancia estratégica para la Corona y el peso de la Casa Valrik como gran centro de capacidad naval del Reino.
 
 La **Armada Real pertenece a la Corona**; los astilleros de Treskal construyen sus buques, pero esto no implica que la Casa Valrik posea una armada soberana propia.
 
-### Resto de la construcción naval
+### Construcción naval civil y comercial
 
-La construcción de otros barcos no queda concentrada exclusivamente en Treskal.
+La capacidad naval Valrik no se limita a la Armada Real.
 
-Existe una distribución entre:
+Sus astilleros construyen por encargo todo tipo de embarcaciones, entre ellas:
+
+- barcos mercantes;
+- pesqueros;
+- embarcaciones civiles de transporte;
+- naves de carga;
+- embarcaciones costeras;
+- otros barcos civiles o comerciales que requieran sus clientes.
+
+Estos encargos pueden proceder de **cualquiera de las tierras de los Hombres** que contrate la construcción de una embarcación.
+
+La construcción naval civil y comercial no queda concentrada exclusivamente en Treskal. Se distribuye entre:
 
 - astilleros de Treskal;
-- al menos una **villa costera especializada en construcción naval**, pendiente de nombre y desarrollo.
+- al menos una **villa costera especializada en construcción naval**, pendiente de nombre y desarrollo;
+- otros talleres o pequeños astilleros que puedan definirse cuando sean necesarios.
 
-La especialización concreta de cada astillero y los tipos de barcos construidos fuera de la Armada Real se definirán posteriormente.
+Treskal conserva una capacidad civil importante, pero su singularidad estratégica reside especialmente en que **la construcción de los buques de la Armada Real de Norgard se concentra allí**.
 
 ---
 
@@ -133,8 +147,9 @@ Queda aprobado como canon:
 - todo el territorio situado al este de esa frontera, hasta las costas norte, este y sur de Norgard, pertenece a la Casa Valrik;
 - Treskal es la única ciudad importante del territorio Valrik;
 - el resto del territorio se articula mediante villas, pueblos, aldeas y otros núcleos menores;
-- los buques de la Armada Real se construyen en los grandes astilleros de Treskal;
-- el resto de la construcción naval se reparte entre Treskal y al menos una villa costera especializada.
+- los buques de la Armada Real de Norgard se construyen en los grandes astilleros de Treskal;
+- los astilleros Valrik construyen también barcos mercantes, pesqueros, de transporte y otras embarcaciones civiles o comerciales por encargo para las distintas tierras de los Hombres;
+- la construcción naval civil y comercial se reparte entre Treskal, al menos una villa costera especializada y otros centros menores que puedan definirse.
 
 ---
 
