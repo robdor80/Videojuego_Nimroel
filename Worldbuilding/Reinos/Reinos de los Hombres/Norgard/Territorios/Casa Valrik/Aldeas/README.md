@@ -1,12 +1,12 @@
-# Aldeas del territorio Valrik
+# Aldeas del territorio de Treskal
 
 ## Propósito
 
-Esta carpeta organiza el lore jugable de las aldeas Valrik desde lo más general hasta los asentamientos concretos del mundo.
+Esta carpeta organiza el lore jugable de las aldeas del territorio de Treskal desde lo más general hasta los asentamientos concretos del mundo.
 
 La regla es separar claramente:
 
-1. **qué comparten las aldeas Valrik**;
+1. **qué comparten las aldeas del territorio de Treskal**;
 2. **qué modelos de generación reutilizables existen**;
 3. **qué aldeas concretas deben quedar fijadas por necesidades narrativas o de mapa**.
 
@@ -41,7 +41,7 @@ Una vez generada una aldea, su configuración debe **persistir**: volver a visit
 
 ### 00_Base
 
-Contiene la definición genérica y las reglas comunes de generación de una aldea Valrik.
+Contiene la definición genérica y las reglas comunes de generación de una aldea del territorio de Treskal.
 
 Archivo principal:
 
@@ -84,7 +84,7 @@ Su composición concreta pertenece al estado de la partida, no al lore estable.
 
 ## Relación con la v0.0.1
 
-La v0.0.1 utilizará inicialmente modelos rurales de Valrik y permitirá validar la generación de aldeas a pequeña escala.
+La v0.0.1 utilizará inicialmente modelos rurales del territorio de Treskal y permitirá validar la generación de aldeas a pequeña escala.
 
 La prueba debe priorizar que el jugador descubra la aldea en lugar de conocerla previamente durante su diseño.
 
@@ -162,3 +162,20 @@ La solución preferida es una generación en varias fases:
 6. guardar el resultado en el estado persistente de la partida.
 
 Por tanto, **random no significa independiente**: cada asentamiento se genera teniendo en cuenta lo que ya existe a su alrededor.
+
+
+---
+
+## Fase actual de diseño
+
+El desarrollo se realizará en este orden:
+
+1. fijar el **esqueleto mínimo** de cada tipo de asentamiento;
+2. añadir después las **posibilidades opcionales**;
+3. definir por último **probabilidades, pesos y reglas de cobertura regional**.
+
+Orden de trabajo previsto:
+
+**Aldea → Pueblo → Villa → Treskal.**
+
+Los puestos de guardia fronterizos se tratarán como instalaciones funcionales separadas, no como asentamientos civiles.
