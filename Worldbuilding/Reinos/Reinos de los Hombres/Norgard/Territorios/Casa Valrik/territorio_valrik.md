@@ -813,3 +813,24 @@ El objetivo de esta fase es probar el territorio a escala humana y cotidiana med
 **Treskal queda fuera del espacio jugable de la v0.0.1.** La ciudad se incorporará en pruebas posteriores cuando corresponda validar juego urbano a una escala mayor.
 
 Por ello, el desarrollo inmediato de lore útil para gameplay debe priorizar las **aldeas cercanas a Treskal y su entorno rural**, sin necesidad de definir todavía en detalle la capital.
+
+### Aldea principal de la v0.0.1
+
+La aldea principal será una **aldea mixta de interior**, pensada además como **modelo representativo de una aldea típica del entorno de Treskal**.
+
+Su diseño debe poder reutilizarse como base para otras aldeas Valrik cambiando determinados elementos secundarios sin perder la identidad regional común.
+
+Características ya fijadas:
+
+- no es costera;
+- está relativamente cerca de Treskal, pero continúa siendo claramente una aldea y no una extensión urbana de la capital;
+- se encuentra también próxima a la villa que administra y distribuye los recursos procedentes del Bosque Negro;
+- está situada en una ruta importante de transporte de madera desde el Bosque Negro hacia Treskal;
+- mantiene campos de cultivo y producción rural local;
+- dispone de una posada/taberna;
+- participa de forma visible en el tránsito de carros, trabajadores y mercancías vinculados a la madera;
+- combina actividad agrícola, ganadera y maderera a pequeña escala.
+
+Por su ubicación y por la especialización regional, resulta plausible que disponga de **algún taller de carpintería de calidad notable para el tamaño de la aldea**, aunque el número y naturaleza exacta de estos talleres queda por fijar.
+
+La cercanía a Treskal y a la ruta maderera aporta tránsito y actividad económica, pero la escala, población, arquitectura y ritmo cotidiano deben seguir siendo los de una **aldea rural Valrik**.
