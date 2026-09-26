@@ -26,14 +26,11 @@ Estos rangos no deben extrapolarse automáticamente al conjunto de Norgard.
 
 ## Principio de diseño
 
-En esta fase se construye únicamente el **esqueleto mínimo** de cada categoría.
-
-El orden de trabajo será:
+La metodología procedural de asentamientos se aplica a las categorías ordinarias del territorio:
 
 1. **Aldea** — estructura mínima.
 2. **Pueblo** — estructura mínima.
 3. **Villa** — estructura mínima.
-4. **Treskal** — estructura mínima de la ciudad única del territorio.
 
 Después se añadirán:
 
@@ -42,6 +39,10 @@ Después se añadirán:
 3. probabilidades y pesos;
 4. reglas de cobertura regional;
 5. datos operativos para el motor.
+
+**Treskal queda expresamente fuera de esta metodología procedural.**
+
+Treskal es una ciudad única y canónica. Su estructura, barrios, edificios, servicios, instituciones, calles, distribución y demás elementos se diseñarán **manualmente y con detalle**, siguiendo un desarrollo específico comparable al realizado para Treihord. El motor no decidirá aleatoriamente qué contiene Treskal ni cómo está organizada.
 
 ## Puestos de guardia
 
@@ -60,12 +61,17 @@ La metodología completa queda definida en:
 
 `metodologia_generacion_asentamientos_treskal.md`
 
-Esta regla debe mantenerse para aldea, pueblo, villa, Treskal y, con las adaptaciones necesarias, los puestos de guardia fronterizos.
+Esta regla debe mantenerse para aldea, pueblo y villa y, con las adaptaciones necesarias, los puestos de guardia fronterizos.
+
+**Treskal no se incluye:** se desarrollará como ciudad canónica diseñada manualmente.
 
 
-## Estado de esqueletos
+## Estado de esqueletos procedurales
 
 - **Aldea:** aprobado.
 - **Pueblo:** aprobado.
 - **Villa:** aprobado.
-- **Treskal:** pendiente.
+
+Con esto queda cerrado el esqueleto básico de las categorías de asentamiento que utilizarán generación procedural.
+
+**Treskal:** fuera de este sistema; pendiente de desarrollo manual detallado como ciudad canónica única.
