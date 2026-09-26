@@ -1,4 +1,4 @@
-# Aldea tipo Valrik
+# Aldea tipo — territorio de Treskal
 
 ## Estado
 
@@ -6,17 +6,17 @@
 
 ## Función
 
-Este documento define los límites mínimos de una **aldea interior típica del territorio Valrik**.
+Este documento define los límites mínimos de una **aldea interior típica del territorio de Treskal**.
 
 No describe una aldea concreta y no fija un plano único.
 
-Su función es proporcionar al sistema de generación un marco suficientemente claro para producir aldeas distintas entre sí sin abandonar la identidad Valrik.
+Su función es proporcionar al sistema de generación un marco suficientemente claro para producir aldeas distintas entre sí sin abandonar la identidad regional de Treskal.
 
 ---
 
 ## Principio de generación
 
-Una aldea Valrik debe ser **generada dentro de límites**, no diseñada previamente edificio por edificio.
+Una aldea del territorio de Treskal debe ser **generada dentro de límites**, no diseñada previamente edificio por edificio.
 
 La generación puede decidir, según el modelo utilizado y el contexto territorial:
 
@@ -39,7 +39,7 @@ Una vez generada una aldea para una partida, su resultado debe persistir.
 
 ## Rasgos obligatorios comunes
 
-Una aldea Valrik debe sentirse:
+Una aldea del territorio de Treskal debe sentirse:
 
 - pequeña y claramente rural;
 - funcional antes que ornamental;
@@ -64,7 +64,7 @@ El entorno inmediato puede incluir, según el modelo:
 
 ## Servicios compartidos
 
-Las aldeas Valrik no son autosuficientes por defecto.
+Las aldeas del territorio de Treskal no son autosuficientes por defecto.
 
 Un herrero, molino, carretero, carpintero, posada u otro servicio puede:
 
@@ -84,11 +84,13 @@ Esto permite generar de forma natural:
 
 ---
 
-## Escala inicial
+## Escala canónica
 
-Para aldeas pequeñas de la zona próxima a Treskal, el rango de referencia inicial es de aproximadamente **40–60 habitantes**.
+En el territorio de Treskal, una **aldea** tiene entre **35 y 100 habitantes**.
 
-Los modelos concretos podrán modificarlo cuando el territorio o la función lo justifiquen.
+Este es el límite canónico del tipo de asentamiento. La distribución de probabilidades dentro de ese rango se definirá más adelante.
+
+Los modelos concretos podrán sesgar la población hacia determinadas zonas del rango, pero no salir de él salvo que el asentamiento deje de clasificarse como aldea.
 
 El número de viviendas debe derivarse de la población y de las unidades familiares generadas, no de una cifra fija independiente.
 
