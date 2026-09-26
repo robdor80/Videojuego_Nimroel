@@ -834,3 +834,21 @@ Características ya fijadas:
 Por su ubicación y por la especialización regional, resulta plausible que disponga de **algún taller de carpintería de calidad notable para el tamaño de la aldea**, aunque el número y naturaleza exacta de estos talleres queda por fijar.
 
 La cercanía a Treskal y a la ruta maderera aporta tránsito y actividad económica, pero la escala, población, arquitectura y ritmo cotidiano deben seguir siendo los de una **aldea rural Valrik**.
+
+### Escala y servicios básicos de la aldea jugable
+
+La aldea principal de la v0.0.1 tendrá una población aproximada de **40–60 habitantes**.
+
+Su aspecto será compacto y rural, con **casas familiares bajas y relativamente juntas**, sin trama urbana ni edificios de gran escala.
+
+Como servicios y actividades ya fijados contará con:
+
+- una **posada/taberna**;
+- una **herrería**;
+- **dos pequeños aserraderos**;
+- una **carpintería** de calidad notable para una aldea de su tamaño;
+- viviendas familiares;
+- campos de cultivo y pequeñas explotaciones agroganaderas en su entorno inmediato.
+
+La escala debe permitir que buena parte de los habitantes sean reconocibles como NPC individuales o familias concretas durante la prueba jugable.
+
