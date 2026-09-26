@@ -799,79 +799,17 @@ Queda aprobado como canon:
 
 La **v0.0.1 no transcurre en la ciudad de Treskal**.
 
-La primera prueba jugable se desarrollará principalmente en **una aldea del territorio Valrik**, con posibilidad de visitar **una segunda aldea** próxima.
+La primera prueba jugable se desarrollará a escala rural mediante una aldea principal y, si procede, una segunda aldea próxima.
 
-El objetivo de esta fase es probar el territorio a escala humana y cotidiana mediante:
+La definición detallada se mantiene en:
 
-- interacción con habitantes y NPC;
-- vida y oficios de aldea;
-- desplazamientos por caminos rurales;
-- relaciones entre pequeños asentamientos;
-- actividades y problemas locales;
-- ambientación propia del territorio Valrik fuera de su capital.
+`Aldeas/`
 
-**Treskal queda fuera del espacio jugable de la v0.0.1.** La ciudad se incorporará en pruebas posteriores cuando corresponda validar juego urbano a una escala mayor.
+Modelos iniciales:
 
-Por ello, el desarrollo inmediato de lore útil para gameplay debe priorizar las **aldeas cercanas a Treskal y su entorno rural**, sin necesidad de definir todavía en detalle la capital.
+- **V1_Mixta_maderera_agricola** — aldea principal de prueba;
+- **V2_Molino_agroganadera** — segunda aldea conectada funcionalmente con V1.
 
-### Aldea principal de la v0.0.1
+Treskal ciudad queda fuera del espacio jugable inicial y se incorporará en pruebas posteriores.
 
-La aldea principal será una **aldea mixta de interior**, pensada además como **modelo representativo de una aldea típica del entorno de Treskal**.
-
-Su diseño debe poder reutilizarse como base para otras aldeas Valrik cambiando determinados elementos secundarios sin perder la identidad regional común.
-
-Características ya fijadas:
-
-- no es costera;
-- está relativamente cerca de Treskal, pero continúa siendo claramente una aldea y no una extensión urbana de la capital;
-- se encuentra también próxima a la villa que administra y distribuye los recursos procedentes del Bosque Negro;
-- está situada en una ruta importante de transporte de madera desde el Bosque Negro hacia Treskal;
-- mantiene campos de cultivo y producción rural local;
-- dispone de una posada/taberna;
-- participa de forma visible en el tránsito de carros, trabajadores y mercancías vinculados a la madera;
-- combina actividad agrícola, ganadera y maderera a pequeña escala.
-
-Por su ubicación y por la especialización regional, resulta plausible que disponga de **algún taller de carpintería de calidad notable para el tamaño de la aldea**, aunque el número y naturaleza exacta de estos talleres queda por fijar.
-
-La cercanía a Treskal y a la ruta maderera aporta tránsito y actividad económica, pero la escala, población, arquitectura y ritmo cotidiano deben seguir siendo los de una **aldea rural Valrik**.
-
-### Escala y servicios básicos de la aldea jugable
-
-La aldea principal de la v0.0.1 tendrá una población aproximada de **40–60 habitantes**.
-
-Su aspecto será compacto y rural, con **casas familiares bajas y relativamente juntas**, sin trama urbana ni edificios de gran escala.
-
-Como servicios y actividades ya fijados contará con:
-
-- una **posada/taberna**;
-- una **herrería**;
-- **dos pequeños aserraderos**;
-- una **carpintería** de calidad notable para una aldea de su tamaño;
-- un **pozo o fuente comunal**;
-- un **pequeño almacén o pajar** para mercancías, herramientas y madera;
-- **establos y corrales** asociados a algunas viviendas y a la actividad de paso;
-- un **carretero o artesano especializado en reparar carros, ruedas y elementos de transporte**;
-- viviendas familiares;
-- campos de cultivo y pequeñas explotaciones agroganaderas en su entorno inmediato.
-
-La aldea **no dispone de molino propio**. El grano debe llevarse a otro núcleo cercano, lo que crea una relación funcional con una segunda aldea del entorno y una razón natural para desplazamientos, encargos y futuras interacciones jugables.
-
-### Segunda aldea de la v0.0.1
-
-La segunda aldea tendrá una escala y una disposición general similares a la aldea principal, con una población también reducida y un carácter claramente rural.
-
-Su referencia visual y funcional será la de una **pequeña aldea de interior**, compacta, con casas bajas familiares relativamente próximas entre sí y rodeada por pequeñas parcelas, campos y zonas de ganado.
-
-Sus rasgos diferenciales serán:
-
-- dispone de **molino**, que da servicio también a la aldea principal y a otros núcleos cercanos;
-- **no dispone de posada/taberna**;
-- **no dispone de herrería**;
-- mantiene agricultura y ganadería local básica;
-- conserva una población y una organización doméstica similares a las de la aldea principal;
-- depende de otros asentamientos próximos para determinados oficios y servicios que no posee.
-
-Esta segunda aldea debe reforzar la idea de que las aldeas Valrik forman una **red interdependiente**, donde cada núcleo no necesita duplicar todos los servicios.
-
-La escala debe permitir que buena parte de los habitantes sean reconocibles como NPC individuales o familias concretas durante la prueba jugable.
-
+La prioridad inmediata es cerrar la lógica espacial, visual y jugable de estos modelos rurales y después convertirlos en instancias canónicas con nombre.
