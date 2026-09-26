@@ -130,3 +130,35 @@ El generador crea la aldea concreta.
 El estado de partida conserva lo generado.  
 La Biblia visual define cómo puede verse.  
 Los assets proporcionan las piezas con las que construirla.**
+
+
+---
+
+## Generación regional coordinada
+
+Las aldeas no deben generarse como unidades independientes.
+
+Antes de decidir servicios locales, el sistema debe consultar la **red de asentamientos próximos** y comprobar qué necesidades ya están cubiertas.
+
+La presencia de herrería, molino, posada, carpintería u otros servicios se decidirá mediante **azar condicionado por contexto**, teniendo en cuenta:
+
+- distancia o tiempo de viaje a otros asentamientos;
+- servicios ya existentes en pueblos, villas y aldeas cercanas;
+- población y capacidad económica del núcleo;
+- tipo de ruta y volumen de tránsito;
+- recursos disponibles en el entorno;
+- función económica del modelo;
+- necesidades mínimas de cobertura de la zona.
+
+El sistema debe impedir resultados incoherentes como una amplia zona habitada sin acceso razonable a un herrero o a un molino.
+
+La solución preferida es una generación en varias fases:
+
+1. crear la red de asentamientos y sus relaciones;
+2. asignar funciones y servicios mediante pesos variables;
+3. validar la cobertura regional;
+4. corregir únicamente los huecos necesarios;
+5. generar la distribución concreta de cada asentamiento;
+6. guardar el resultado en el estado persistente de la partida.
+
+Por tanto, **random no significa independiente**: cada asentamiento se genera teniendo en cuenta lo que ya existe a su alrededor.
