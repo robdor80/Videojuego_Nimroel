@@ -306,7 +306,81 @@ Sin embargo, la cerveza Valrik **no posee una reputación especial por su calida
 
 ---
 
-## 9. Estado del bloque territorial
+## 10. Vida cotidiana, familia, educación y honor
+
+### Hospitalidad y vida local
+
+La población Valrik es, en términos generales, **amable y hospitalaria**.
+
+Incluso en asentamientos pequeños es habitual encontrar una **posada** o establecimiento equivalente para viajeros, comerciantes y gente de paso.
+
+La hospitalidad forma parte de la imagen cotidiana del territorio y no se limita a los núcleos urbanos.
+
+### Familia
+
+La **familia constituye un núcleo social fuerte**.
+
+En las zonas rurales es habitual que varias generaciones convivan bajo el mismo techo o dentro de una misma explotación familiar:
+
+- abuelos;
+- hijos;
+- nietos.
+
+Muchas de estas familias trabajan juntas en actividades agrícolas, ganaderas o artesanales vinculadas a la economía local.
+
+La continuidad familiar del oficio, la tierra y la reputación tiene un peso importante en la vida rural.
+
+### Fiestas aldeanas
+
+Las aldeas celebran sus principales fiestas locales sobre todo durante el **verano**.
+
+Estas celebraciones funcionan como momentos de reunión comunitaria, descanso, intercambio y convivencia entre familias y núcleos cercanos.
+
+Los nombres, ritos y calendarios concretos de estas fiestas quedan pendientes de desarrollo.
+
+### Educación
+
+En el campo, la educación suele ser **básica y práctica**.
+
+Está orientada principalmente a:
+
+- aprender un oficio;
+- trabajar la tierra;
+- continuar la actividad familiar;
+- adquirir los conocimientos necesarios para desenvolverse en la comunidad.
+
+En **Treskal** existen más oportunidades de aprendizaje y formación que en las aldeas y pueblos, aunque la ciudad no posee una oferta educativa excepcional ni comparable a la de una gran capital como Hallheim.
+
+### El honor Valrik
+
+El honor es uno de los pilares culturales del territorio.
+
+Valrik no posee el oro de Treihord ni la riqueza agrícola de Arleon. Para muchas de sus gentes, la verdadera riqueza de una persona o una familia se mide por **la palabra dada**.
+
+Dar la palabra implica un compromiso de enorme peso moral.
+
+En la cultura Valrik:
+
+- cumplir lo prometido es una cuestión de honor;
+- faltar a la palabra dada puede dañar gravemente la reputación personal;
+- el honor de la familia se protege y se transmite;
+- mancillar deliberadamente ese honor no se considera una cuestión menor.
+
+La palabra dada **no sustituye formalmente a la Ley del Rey**, pero socialmente puede poseer una fuerza extraordinaria y condicionar relaciones personales, comerciales y familiares.
+
+### Lord Valrik
+
+El actual **Lord Valrik** es considerado dentro de la nobleza de Norgard un ejemplo de comportamiento **honorable y justo**.
+
+Su forma de ejercer el señorío encaja con los valores tradicionales de su territorio.
+
+Es poco amigo de la ostentación, la afectación y las poses aristocráticas que asocia a ciertos ambientes Darovan, lo que acentúa el contraste cultural entre ambas Casas.
+
+Su nombre, familia inmediata y biografía detallada quedan pendientes de desarrollo.
+
+---
+
+## 11. Estado del bloque territorial
 
 Queda aprobado como canon:
 
@@ -343,7 +417,15 @@ Queda aprobado como canon:
 - el territorio produce cereales, tubérculos, productos de huerta y ganadería vacuna, ovina y porcina, aunque sin competir con Arleon como potencia agroganadera;
 - Treskal mantiene mercados activos todos los días del año para garantizar su abastecimiento;
 - se importa vino y se compra a Arleon parte del cereal y del ganado consumidos;
-- se produce cerveza local, pero no destaca especialmente por su calidad.
+- se produce cerveza local, pero no destaca especialmente por su calidad;
+- la hospitalidad es un rasgo social fuerte y las aldeas suelen disponer de una posada o establecimiento para viajeros;
+- la familia extensa tiene gran importancia y en el campo pueden convivir varias generaciones dedicadas a una misma explotación;
+- las principales fiestas aldeanas se celebran sobre todo en verano;
+- la educación rural es básica y práctica, orientada al oficio y al trabajo de la tierra;
+- Treskal ofrece más oportunidades educativas que el campo, aunque sin convertirse en un gran centro de enseñanza;
+- la palabra dada posee un enorme peso moral y constituye una de las principales expresiones del honor Valrik;
+- el honor familiar se protege cuidadosamente y faltar deliberadamente a la palabra puede dañar gravemente la reputación;
+- el actual Lord Valrik es considerado honorable y justo, y es poco amigo de la ostentación y las poses aristocráticas asociadas a ciertos ambientes Darovan.
 
 ---
 
@@ -361,4 +443,6 @@ Queda aprobado como canon:
 - especialización concreta de los astilleros;
 - distribución de población;
 - Casas menores;
-- desarrollo específico de la ciudad de Treskal.
+- desarrollo específico de la ciudad de Treskal;
+- nombre, familia y biografía del actual Lord Valrik;
+- fiestas, costumbres y formas concretas de educación cuando sean relevantes para escenas o gameplay.
