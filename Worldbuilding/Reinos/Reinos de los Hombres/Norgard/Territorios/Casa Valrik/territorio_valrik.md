@@ -95,7 +95,32 @@ Esta estructura refuerza el papel de **Treskal** como centro político, económi
 
 ---
 
-## 5. Estado del bloque territorial
+## 5. Astilleros y construcción naval
+
+La construcción naval constituye una de las actividades estratégicas del territorio Valrik.
+
+### Armada Real
+
+Los **grandes astilleros responsables de la construcción de los buques de la Armada Real** se encuentran en **Treskal**.
+
+La concentración de esta construcción en Treskal refuerza el carácter estratégico de la ciudad para la Corona y la importancia de la Casa Valrik como suministradora de capacidad naval.
+
+La **Armada Real pertenece a la Corona**; los astilleros de Treskal construyen sus buques, pero esto no implica que la Casa Valrik posea una armada soberana propia.
+
+### Resto de la construcción naval
+
+La construcción de otros barcos no queda concentrada exclusivamente en Treskal.
+
+Existe una distribución entre:
+
+- astilleros de Treskal;
+- al menos una **villa costera especializada en construcción naval**, pendiente de nombre y desarrollo.
+
+La especialización concreta de cada astillero y los tipos de barcos construidos fuera de la Armada Real se definirán posteriormente.
+
+---
+
+## 6. Estado del bloque territorial
 
 Queda aprobado como canon:
 
@@ -107,7 +132,9 @@ Queda aprobado como canon:
 - los Montes Invernos son atravesados por la frontera y no forman por sí mismos el límite entre ambas Casas;
 - todo el territorio situado al este de esa frontera, hasta las costas norte, este y sur de Norgard, pertenece a la Casa Valrik;
 - Treskal es la única ciudad importante del territorio Valrik;
-- el resto del territorio se articula mediante villas, pueblos, aldeas y otros núcleos menores.
+- el resto del territorio se articula mediante villas, pueblos, aldeas y otros núcleos menores;
+- los buques de la Armada Real se construyen en los grandes astilleros de Treskal;
+- el resto de la construcción naval se reparte entre Treskal y al menos una villa costera especializada.
 
 ---
 
@@ -117,10 +144,12 @@ Queda aprobado como canon:
 - pasos, puentes y puntos de control;
 - división interna del territorio Valrik;
 - asentamientos menores concretos;
+- nombre y localización de la villa costera especializada en construcción naval;
 - rutas;
 - explotación forestal;
 - zonas agrícolas y ganaderas;
-- pesca y astilleros;
+- pesca;
+- especialización concreta de los astilleros;
 - distribución de población;
 - Casas menores;
 - desarrollo específico de la ciudad de Treskal.
