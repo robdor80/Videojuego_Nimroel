@@ -4,6 +4,14 @@
 
 Esta carpeta organiza el lore jugable de las aldeas del territorio de Treskal desde lo más general hasta los asentamientos concretos del mundo.
 
+Todas las aldeas deben seguir la metodología territorial común definida en:
+
+`../metodologia_generacion_asentamientos_treskal.md`
+
+La secuencia obligatoria es:
+
+**esqueleto mínimo → posibilidades → coherencia regional → probabilidades → generación → persistencia**.
+
 La regla es separar claramente:
 
 1. **qué comparten las aldeas del territorio de Treskal**;
@@ -16,7 +24,7 @@ El objetivo no es diseñar previamente cada aldea, sino proporcionar al juego l�
 
 ## Principio de sorpresa del jugador
 
-Las aldeas ordinarias del territorio Valrik **no deben preconstruirse una a una en el lore**.
+Las aldeas ordinarias del territorio de Treskal **no deben preconstruirse una a una en el lore**.
 
 El lore define las reglas.
 
@@ -45,7 +53,7 @@ Contiene la definición genérica y las reglas comunes de generación de una ald
 
 Archivo principal:
 
-- `00_Base/aldea_tipo_valrik.md`
+- `00_Base/aldea_tipo_treskal.md`
 
 ### 01_Modelos
 
