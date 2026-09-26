@@ -48,3 +48,16 @@ Después se añadirán:
 Los puestos de guardia fronterizos no son asentamientos civiles.
 
 Se consideran instalaciones funcionales con una dotación permanente de **8–20 guardias**, cuya composición concreta, edificios y refuerzos se definirán en una fase posterior.
+
+
+## Metodología común
+
+Todos los tipos de asentamiento se desarrollarán con la misma secuencia:
+
+**esqueleto mínimo → posibilidades → coherencia regional → probabilidades → generación → persistencia**.
+
+La metodología completa queda definida en:
+
+`metodologia_generacion_asentamientos_treskal.md`
+
+Esta regla debe mantenerse para aldea, pueblo, villa, Treskal y, con las adaptaciones necesarias, los puestos de guardia fronterizos.
