@@ -43,7 +43,7 @@ Una vez cerrado el esqueleto se define qué elementos **pueden aparecer o no**.
 
 Ejemplos:
 
-- herrería;
+- herrería avanzada o de especial calidad cuando la herrería básica ya forme parte del esqueleto;
 - molino;
 - posada;
 - carpintería;
@@ -56,6 +56,16 @@ Ejemplos:
 - servicios administrativos.
 
 Aquí se definen también incompatibilidades y condiciones de aparición.
+
+## Regla de calidad artesanal
+
+Cuando un oficio básico sea obligatorio por esqueleto, su **existencia mínima** y la **calidad excepcional del artesano** deben tratarse como variables distintas.
+
+La categoría o población de un asentamiento puede determinar que exista una capacidad básica necesaria, pero **no debe otorgar automáticamente mayor habilidad al artesano**.
+
+Un maestro especialmente hábil puede aparecer en una aldea pequeña, mientras que un pueblo mayor puede contar solo con profesionales comunes.
+
+La habilidad, tradición, técnica y especialización se definirán en la capa de posibilidades y posteriormente mediante sus propias reglas de generación.
 
 ### 3. Coherencia regional
 
