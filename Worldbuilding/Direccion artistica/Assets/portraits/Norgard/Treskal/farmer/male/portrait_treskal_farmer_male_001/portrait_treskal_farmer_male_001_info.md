@@ -83,6 +83,13 @@ The background is contextual rather than scenic-showcase: it supports the farmer
 
 First approved **male** farmer portrait in the current Treskal registry. It establishes an adult male working-farmer baseline without making it a universal Treskal male template. Future male farmers should deliberately vary age, build, facial morphology, hair amount/colour, beard pattern, attractiveness, presentation, expression, wear, wealth and background context to avoid clone drift.
 
+## Production asset
+
+- **Resolution:** 768x960
+- **Aspect ratio:** 4:5 vertical
+- **Format:** WebP
+- **Conversion quality:** Q90
+
 ## Packaging / repository intent
 
 Canonical base name:
@@ -93,4 +100,4 @@ Expected repository destination after user GitSync:
 
 `Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/male/portrait_treskal_farmer_male_001/`
 
-The ZIP is transport-only. The repository should store the extracted asset folder containing exactly the PNG, `_prompt.md` and `_info.md` files.
+The ZIP is transport-only. The repository stores the production WebP, `_prompt.md` and `_info.md` files in the asset folder. The master PNG is archived externally in TeraBox.

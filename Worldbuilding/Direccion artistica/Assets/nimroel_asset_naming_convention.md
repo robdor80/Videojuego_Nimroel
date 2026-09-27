@@ -20,8 +20,8 @@ Cada asset debe tener un **nombre base único y estable**.
 
 Ese mismo nombre base debe usarse en:
 
-- el archivo `.zip`
-- el archivo `.png`
+- el archivo `.zip` (si se utiliza)
+- el archivo de imagen (en retratos: PNG maestro externo y WebP de producción)
 - el archivo `.md` del prompt
 - el archivo `.md` de información
 
@@ -35,7 +35,7 @@ Se utilizará así:
 
 ```text
 portrait_treskal_farmer_male_001.zip
-portrait_treskal_farmer_male_001.png
+portrait_treskal_farmer_male_001.webp
 portrait_treskal_farmer_male_001_prompt.md
 portrait_treskal_farmer_male_001_info.md
 ```
@@ -95,7 +95,7 @@ portrait_treskal_farmer_boy_002
 
 Estos IDs son estables y **no deben migrarse** a `male` / `female`.
 
-En todos los casos, el `asset_id`, la carpeta definitiva, el PNG, `_prompt.md` y `_info.md` deben compartir exactamente el mismo nombre base.
+En todos los retratos, el `asset_id`, la carpeta definitiva, el WebP de producción, `_prompt.md` y `_info.md` deben compartir exactamente el mismo nombre base. El PNG maestro externo conserva ese mismo nombre base.
 
 Se mantienen las reglas de minúsculas, ASCII, underscores y numeración final de tres dígitos.
 
@@ -132,7 +132,7 @@ Todos los nombres deben cumplir estas normas:
 Correcto:
 
 ```text
-portrait_treskal_farmer_male_001.png
+portrait_treskal_farmer_male_001.webp
 ```
 
 Incorrecto:
@@ -172,9 +172,9 @@ Si existe una nueva variante real, se crea un nuevo número.
 
 ## 6. ZIP y contenido interno
 
-Cada asset debe guardarse en un ZIP con el mismo nombre base.
+El ZIP de transferencia, cuando se utilice, debe compartir el nombre base. En retratos puede contener el PNG maestro original y su documentación; ese PNG se archiva externamente en TeraBox.
 
-Estructura estándar:
+Estructura de transferencia con PNG maestro:
 
 ```text
 <base_name>.zip
@@ -198,27 +198,27 @@ portrait_treskal_farmer_male_001.zip
 
 ## 6.1. Almacenamiento definitivo en GitHub
 
-El ZIP es el **paquete de transferencia** utilizado para entregar el asset al usuario.
+Si se utiliza, el ZIP es el **paquete de transferencia** utilizado para entregar el asset al usuario.
 
-El almacenamiento definitivo en el repositorio se realiza descomprimiendo ese ZIP en una carpeta cuyo nombre coincide con el nombre base:
+Para retratos, el PNG maestro se convierte antes de subirlo a WebP 768x960, relación 4:5, Q90. El almacenamiento definitivo en GitHub es una carpeta con el mismo nombre base:
 
 ```text
 portrait_treskal_farmer_female_003/
-├── portrait_treskal_farmer_female_003.png
+├── portrait_treskal_farmer_female_003.webp
 ├── portrait_treskal_farmer_female_003_prompt.md
 └── portrait_treskal_farmer_female_003_info.md
 ```
 
 Flujo operativo:
 
-1. ChatGPT entrega `<base_name>.zip`.
-2. El usuario lo guarda localmente.
-3. El usuario lo descomprime.
-4. Se conserva la carpeta `<base_name>/`.
-5. El ZIP se elimina.
-6. GitSync sincroniza la carpeta al repositorio.
+1. Se aprueba el PNG maestro y se le asigna el nombre base canónico.
+2. El PNG maestro se conserva externamente en TeraBox; si se entrega en un ZIP, se extrae para preparar la producción.
+3. Se convierte el maestro a WebP 768x960, relación 4:5, Q90.
+4. En la carpeta `<base_name>/` se colocan el WebP, `_prompt.md` y `_info.md`.
+5. El ZIP de transferencia se elimina del almacenamiento definitivo.
+6. GitSync sincroniza la carpeta de producción con GitHub.
 
-Por tanto, **GitHub no conserva el ZIP como formato definitivo**.
+Por tanto, **GitHub no conserva el ZIP ni el PNG maestro como almacenamiento definitivo del retrato**. El nombre base no cambia: solo cambia el formato del binario de producción.
 
 ---
 
@@ -236,7 +236,7 @@ Assets/
             └── <role>/
                 └── <sex-or-life-stage>/
                     └── <asset_id>/
-                        ├── <asset_id>.png
+                        ├── <asset_id>.webp
                         ├── <asset_id>_prompt.md
                         └── <asset_id>_info.md
 ```
@@ -251,7 +251,7 @@ Assets/
             └── farmer/
                 └── male/
                     └── portrait_treskal_farmer_male_001/
-                        ├── portrait_treskal_farmer_male_001.png
+                        ├── portrait_treskal_farmer_male_001.webp
                         ├── portrait_treskal_farmer_male_001_prompt.md
                         └── portrait_treskal_farmer_male_001_info.md
 ```
@@ -334,7 +334,7 @@ portrait_treskal_farmer_male_001
 
 ## 11. Compatibilidad futura con el videojuego
 
-El **nombre físico del PNG no será necesariamente la identidad lógica definitiva dentro del juego**.
+El **nombre físico del WebP de producción no será necesariamente la identidad lógica definitiva dentro del juego**.
 
 Más adelante podrá existir un sistema de IDs lógicos estables, por ejemplo:
 
@@ -345,7 +345,7 @@ nimroel.assets:portraits/treskal/farmer/male/001
 que apunte al archivo físico:
 
 ```text
-portrait_treskal_farmer_male_001.png
+portrait_treskal_farmer_male_001.webp
 ```
 
 Principio importante:
@@ -357,7 +357,7 @@ DefinitionId != filesystem path
 y, de forma equivalente:
 
 ```text
-AssetId != PNG filename
+AssetId != WebP filename
 ```
 
 Por tanto:
@@ -411,11 +411,12 @@ scene_norgar_mountain_pass_winter_001
 A partir de ahora, **todo asset nuevo debe seguir esta convención**:
 
 1. se asigna un **nombre base canónico**;
-2. el `.zip` de transferencia usa ese nombre;
+2. si se utiliza un `.zip` de transferencia, usa ese nombre;
 3. la carpeta definitiva del repositorio usa ese nombre;
-4. el `.png` usa ese nombre;
-5. el `_prompt.md` usa ese nombre;
-6. el `_info.md` usa ese nombre.
+4. el PNG maestro externo de un retrato conserva ese nombre;
+5. el WebP de producción de un retrato usa ese nombre;
+6. el `_prompt.md` usa ese nombre;
+7. el `_info.md` usa ese nombre.
 
 No deben crearse assets nuevos fuera de esta norma salvo decisión expresa posterior.
 

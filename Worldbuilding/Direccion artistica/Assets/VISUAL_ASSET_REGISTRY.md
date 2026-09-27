@@ -2,7 +2,7 @@
 
 Registro general de assets visuales creados mediante el workflow oficial de `Nimroel-Visual-Assets`.
 
-**Última actualización:** 2026-09-26
+**Última actualización:** 2026-09-27
 
 ## Estados
 
@@ -16,7 +16,7 @@ Registro general de assets visuales creados mediante el workflow oficial de `Nim
 
 > **Registro reiniciado el 2026-09-25.**
 >
-> A fecha de 2026-09-26 hay **39 retratos APPROVED** de Treskal bajo el nuevo workflow de diversidad. Los **39 están sincronizados** en GitHub como carpetas descomprimidas con PNG + `_prompt.md` + `_info.md`.
+> A fecha de 2026-09-27 hay **39 retratos APPROVED** de Treskal bajo el nuevo workflow de diversidad. Los **39 están sincronizados** en GitHub como carpetas de producción con WebP 768x960 (4:5, conversión Q90) + `_prompt.md` + `_info.md`. Los PNG maestros originales se conservan externamente en TeraBox.
 
 | Asset ID | Nombre | Reino / Cultura | Región | Tipo | Presentación | Pátina | Estado | Repositorio | Notas |
 |---|---|---|---|---|---:|---|---|---|---|

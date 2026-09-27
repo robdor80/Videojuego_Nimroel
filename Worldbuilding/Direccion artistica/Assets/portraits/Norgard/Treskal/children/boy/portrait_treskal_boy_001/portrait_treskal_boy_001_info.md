@@ -31,13 +31,16 @@ APPROVED
 2026-09-26
 
 ## Resolution
-1122x1402
+768x960
 
 ## Aspect ratio
 4:5 vertical
 
 ## Format
-PNG
+WebP
+
+## Conversion quality
+Q90
 
 ## Intended use
 Reusable generic NPC portrait for the Nimroel videogame.

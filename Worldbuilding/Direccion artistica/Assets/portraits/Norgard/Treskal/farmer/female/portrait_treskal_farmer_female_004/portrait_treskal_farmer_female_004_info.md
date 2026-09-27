@@ -28,13 +28,16 @@ APPROVED
 2026-09-25
 
 ## Resolution
-1152x1440
+768x960
 
 ## Aspect ratio
 4:5 vertical
 
 ## Format
-PNG
+WebP
+
+## Conversion quality
+Q90
 
 ## Intended use
 Reusable generic NPC portrait for the Nimroel videogame.
@@ -76,4 +79,4 @@ Strong candidate when an NPC ID needs a Treskal female farmer in the adult 30s b
 
 
 ## Revision note
-PNG canónico ajustado mediante recorte matemático a 4:5 vertical el 2026-09-25; no se regeneró el contenido visual.
+PNG maestro original ajustado mediante recorte matemático a 4:5 vertical el 2026-09-25; no se regeneró el contenido visual.

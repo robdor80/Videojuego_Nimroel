@@ -1,9 +1,9 @@
 # NIMROEL — PORTRAIT REGISTRY
 
 **Estado:** ACTIVE  
-**Versión:** 1.1  
+**Versión:** 1.2<br>
 **Inicio del registro:** 2026-09-25  
-**Última actualización:** 2026-09-26  
+**Última actualización:** 2026-09-27<br>
 **Ámbito:** todos los retratos aprobados almacenados bajo `Worldbuilding/Direccion artistica/Assets/`
 
 Este documento es la vista humana resumida del registro de diversidad de retratos.
@@ -28,18 +28,18 @@ El registro sirve para evitar clones o semiclones, detectar combinaciones sobrer
 
 ## Convención de archivos y almacenamiento
 
-El ZIP es únicamente el paquete de **transferencia ChatGPT → usuario**.
+El PNG maestro original se conserva externamente en TeraBox. El ZIP, si se utiliza, es únicamente un paquete de **transferencia ChatGPT → usuario** y puede contener ese PNG maestro y su documentación. Antes de subir un retrato, el maestro se convierte a WebP 768x960, relación 4:5, Q90.
 
 En GitHub, cada asset aprobado se conserva como una carpeta descomprimida:
 
 ```text
 <asset_id>/
-├── <asset_id>.png
+├── <asset_id>.webp
 ├── <asset_id>_prompt.md
 └── <asset_id>_info.md
 ```
 
-El ZIP no se conserva en el repositorio.
+El ZIP y el PNG maestro no se conservan en el repositorio. El WebP es el binario de producción utilizado por el videojuego.
 
 ---
 
@@ -59,7 +59,7 @@ Actualmente hay **39 retratos aprobados registrados y sincronizados** de Treskal
 | tavernkeeper | 2 |
 | **TOTAL** | **39** |
 
-Todos los assets enumerados abajo han sido comprobados en `main` y su carpeta contiene el trío estándar **PNG + _prompt.md + _info.md**.
+Los 39 assets enumerados abajo tienen en su carpeta el trío de producción **WebP + _prompt.md + _info.md**.
 
 ---
 
@@ -128,10 +128,10 @@ Antes de generar un retrato nuevo:
 
 Estados utilizados:
 
-- `local_pending_gitsync` — ZIP entregado; carpeta definitiva todavía no confirmada en GitHub.
-- `synced` — carpeta definitiva confirmada en GitHub con PNG + `_prompt.md` + `_info.md`.
+- `local_pending_gitsync` — retrato aprobado y registrado; WebP de producción todavía no confirmado en GitHub.
+- `synced` — carpeta definitiva confirmada en GitHub con WebP + `_prompt.md` + `_info.md`.
 
-**Estado de este corte (2026-09-26): 39/39 assets registrados están `synced`.**
+**Estado de este corte (2026-09-27): 39/39 assets registrados están `synced`.**
 
 Rutas de grupo confirmadas:
 

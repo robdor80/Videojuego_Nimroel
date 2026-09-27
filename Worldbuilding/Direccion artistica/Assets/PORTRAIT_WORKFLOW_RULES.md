@@ -1,7 +1,7 @@
 # NIMROEL — PORTRAIT WORKFLOW RULES
 
 **Estado:** ACTIVE / OBLIGATORIO  
-**Versión:** 1.0  
+**Versión:** 1.1<br>
 **Fecha:** 2026-09-25  
 **Ámbito:** generación, aprobación y almacenamiento de retratos visuales de Nimroel.
 
@@ -242,18 +242,18 @@ Ejemplo:
 
 `portrait_treskal_farmer_male_001`
 
-El ZIP de transferencia y los archivos internos deben compartir exactamente el mismo nombre base.
+El nombre base es idéntico para el PNG maestro, el ZIP de transferencia, el WebP de producción y los dos documentos. El PNG maestro se archiva externamente en TeraBox; antes de subir el retrato se convierte a WebP 768x960, relación 4:5, Q90.
 
 En GitHub, el asset se almacena descomprimido en una carpeta con ese mismo nombre base:
 
 ```text
 portrait_treskal_farmer_male_001/
-├── portrait_treskal_farmer_male_001.png
+├── portrait_treskal_farmer_male_001.webp
 ├── portrait_treskal_farmer_male_001_prompt.md
 └── portrait_treskal_farmer_male_001_info.md
 ```
 
-El ZIP es un contenedor de entrega local y no forma parte del almacenamiento definitivo del repositorio.
+El ZIP puede transportar el PNG maestro y su documentación, pero no forma parte del almacenamiento definitivo del repositorio. GitHub conserva el WebP de producción junto a los archivos de prompt e información.
 
 ---
 
@@ -266,12 +266,13 @@ Los borradores o imágenes descartadas no cuentan para el equilibrio poblacional
 Al aprobar:
 
 1. asignar nombre final;
-2. guardar PNG;
-3. crear ZIP;
-4. registrar características físicas reales del resultado aprobado;
-5. registrar presentación y pátina;
-6. actualizar la vista MD;
-7. actualizar `VISUAL_ASSET_REGISTRY.md`.
+2. conservar el PNG maestro original externamente en TeraBox;
+3. conservar el prompt y la información; si se usa ZIP de transferencia, incluir el PNG maestro y su documentación;
+4. convertir el PNG maestro a WebP 768x960, relación 4:5, Q90;
+5. registrar características físicas reales del resultado aprobado;
+6. registrar presentación y pátina;
+7. actualizar la vista MD;
+8. actualizar `VISUAL_ASSET_REGISTRY.md`.
 
 No registrar únicamente lo solicitado en el prompt: registrar lo que realmente aparece en el asset final aprobado.
 
@@ -304,20 +305,20 @@ Debe fallar la aprobación colectiva si los retratos:
 
 ## 16. Registro inmediato y binario diferido
 
-Durante una sesión de creación de assets puede utilizarse el siguiente flujo operativo:
+Durante una sesión de creación de retratos puede utilizarse el siguiente flujo operativo:
 
-1. generar el retrato;
-2. aprobarlo;
+1. generar el retrato maestro en PNG;
+2. aprobar la imagen;
 3. asignar el nombre base canónico;
-4. crear el PNG y el ZIP local con su documentación;
-5. entregar el ZIP al usuario;
-6. **actualizar inmediatamente** `PORTRAIT_REGISTRY.json`, `PORTRAIT_REGISTRY.md` y `VISUAL_ASSET_REGISTRY.md`;
-7. marcar el asset como `local_pending_gitsync`;
-8. continuar generando nuevos assets consultando ya esa entrada;
-9. el usuario descomprime el ZIP en local, conserva la carpeta del asset, elimina el ZIP y sincroniza la carpeta mediante GitSync;
-10. cuando se confirme en GitHub la carpeta con PNG + `_prompt.md` + `_info.md`, el estado pasa a `synced`.
+4. conservar el PNG maestro original externamente en TeraBox y conservar el prompt y la información del asset;
+5. si se utiliza un ZIP de transferencia, incluir en él el PNG maestro y su documentación; el ZIP no es almacenamiento definitivo;
+6. convertir el PNG maestro a WebP 768x960, relación 4:5, Q90;
+7. **actualizar inmediatamente** los tres registros: PORTRAIT_REGISTRY.json, PORTRAIT_REGISTRY.md y VISUAL_ASSET_REGISTRY.md;
+8. marcar el asset como local_pending_gitsync mientras el WebP de producción no esté confirmado en GitHub;
+9. colocar en la carpeta definitiva del repositorio el WebP de producción, el archivo _prompt.md y el archivo _info.md con el mismo nombre base, y sincronizarla mediante GitSync;
+10. cuando se confirme en GitHub la carpeta con WebP + _prompt.md + _info.md, cambiar el estado a synced.
 
-La memoria de diversidad **no debe esperar al GitSync final**. Un retrato aprobado cuenta para la diversidad desde el momento en que su ZIP local ha sido creado y entregado.
+La memoria de diversidad **no debe esperar al GitSync final**. Un retrato aprobado cuenta para la diversidad desde su aprobación y registro, aunque la sincronización del WebP esté pendiente.
 
 
 ---
@@ -351,9 +352,9 @@ Cuando se vaya a actualizar cualquiera de los registros de assets o diversidad d
 Si la carpeta ya está presente en el repositorio:
 
 1. verificar que el nombre y la ruta coinciden con el asset registrado;
-2. verificar que contiene el PNG, `_prompt.md` y `_info.md` correctos;
+2. verificar que contiene el WebP de producción, `_prompt.md` y `_info.md` correctos;
 3. cambiar `binary_sync_status` de `local_pending_gitsync` a `synced`;
-4. actualizar las vistas Markdown relacionadas para eliminar cualquier texto que siga diciendo que el ZIP está pendiente;
+4. actualizar las vistas Markdown relacionadas para eliminar cualquier indicación de sincronización pendiente;
 5. mantener coherentes todos los registros entre sí.
 
 No se debe dejar un asset marcado como pendiente si su carpeta definitiva ya está presente y validada en el repositorio.
@@ -367,16 +368,18 @@ Antes de entregar al usuario cualquier ZIP de asset visual aprobado, se debe rea
 La revisión debe comprobar, como mínimo:
 
 1. que el nombre base corresponde exactamente al asset actual;
-2. que el PNG incluido es la imagen aprobada correcta;
+2. que el PNG maestro incluido, cuando el ZIP de un retrato lo contenga, es la imagen aprobada correcta;
 3. que el `_prompt.md` corresponde a esa imagen y no a otro asset;
 4. que el `_info.md` corresponde a esa imagen y no contiene datos heredados por error de otro retrato;
 5. que sexo, profesión, localización, edad aparente, rango de edad y rasgos físicos coinciden con la imagen aprobada;
 6. que presentación, pátina, ropa, fondo y contexto profesional coinciden con lo realmente visible;
 7. que no hay referencias cruzadas incorrectas a otro asset;
-8. que PNG, ZIP, `_prompt.md` y `_info.md` comparten exactamente el mismo nombre base según la convención vigente;
+8. que PNG maestro, ZIP, `_prompt.md` y `_info.md` comparten exactamente el mismo nombre base según la convención vigente;
 9. que la numeración de variante es correcta;
 10. que el contenido interno del ZIP está completo y sin archivos sobrantes.
 
 Esta revisión es especialmente obligatoria en sesiones largas con múltiples assets consecutivos, donde aumenta el riesgo de arrastrar datos de una imagen anterior.
 
 El ZIP solo debe entregarse después de superar esta comprobación.
+
+Para retratos, la validación definitiva de GitHub se hace sobre el WebP 768x960 4:5 Q90 y sus archivos _prompt.md y _info.md; el PNG maestro permanece fuera del repositorio.
