@@ -1000,7 +1000,81 @@ La posición de estas fuentes debe poder influir en la respuesta práctica a un 
 
 ---
 
-# 12. Preparación para JSON
+# 12. Organización comunitaria de la aldea
+
+## 12.1. Ausencia de autoridad local permanente
+
+**scope:** `Norgard/Treskal/village`  
+**feature_type:** organización social  
+**availability_mode:** base
+
+### Canon
+
+Las aldeas del territorio de Treskal **no disponen de una autoridad local permanente propia** equivalente a un alcalde, presidente, jefe de aldea o representante oficial estable.
+
+La comunidad no necesita un portavoz fijo para su funcionamiento cotidiano.
+
+Las familias y vecinos gestionan directamente los asuntos ordinarios de su vida rural.
+
+---
+
+## 12.2. Asuntos comunales
+
+Cuando surge un problema que afecta al conjunto de la aldea o a varios vecinos, los afectados pueden reunirse y resolverlo de forma comunitaria.
+
+Ejemplos normales:
+
+- problemas de abastecimiento o uso del agua;
+- mantenimiento de fuentes o lavaderos;
+- uso de pastos comunales;
+- aprovechamiento de montes o terrenos comunes;
+- reparación de caminos compartidos;
+- daños en infraestructuras comunitarias;
+- organización de trabajos colectivos;
+- respuesta a incendios u otras emergencias;
+- desacuerdos sobre usos comunes.
+
+Estas reuniones no crean un cargo permanente.
+
+Determinadas personas pueden tener más peso en una conversación por:
+
+- experiencia;
+- edad;
+- conocimiento del asunto;
+- propiedad afectada;
+- prestigio personal;
+- capacidad para mediar;
+
+pero ese peso es **social y circunstancial**, no una autoridad administrativa estable.
+
+---
+
+## 12.3. Relación con la autoridad territorial
+
+Los asuntos que superan la capacidad de resolución comunitaria pertenecen a la estructura administrativa y legal del territorio.
+
+Entre ellos pueden encontrarse:
+
+- delitos graves;
+- violencia;
+- homicidio;
+- conflictos legales importantes;
+- disputas de propiedad que no puedan resolverse localmente;
+- obligaciones impuestas por la autoridad territorial;
+- asuntos que requieran justicia formal;
+- problemas de seguridad de mayor escala.
+
+En esos casos interviene la autoridad territorial correspondiente conforme a la organización política y legal de Norgard.
+
+La aldea no necesita mantener un representante permanente únicamente para relacionarse con dicha autoridad.
+
+### Principio rector
+
+**La aldea funciona como comunidad de vecinos, no como una pequeña administración local.**
+
+---
+
+# 13. Preparación para JSON
 
 Este documento debe considerarse **fuente canónica humana**.
 
