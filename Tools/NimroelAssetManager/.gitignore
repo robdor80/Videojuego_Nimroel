@@ -1,0 +1,13 @@
+# Android / Gradle local output
+.gradle/
+**/build/
+local.properties
+*.keystore
+*.jks
+
+# IDE state
+.idea/
+*.iml
+
+# Never version imported/generated binary asset libraries here.
+assets-local/
