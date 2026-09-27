@@ -14,7 +14,11 @@ La secuencia obligatoria es:
 
 ## Estado actual
 
-El **esqueleto mínimo de Pueblo está aprobado**.
+**FASE ACTIVA DE DISEÑO**
+
+El diseño base de **Aldeas del territorio de Treskal está cerrado**.
+
+El **esqueleto mínimo de Pueblo está aprobado** y este es el siguiente nivel de asentamiento a desarrollar, centrándose únicamente en aquello que añade o modifica gameplay respecto a una aldea.
 
 Los esqueletos procedurales de **Aldea, Pueblo y Villa** están actualmente aprobados, por lo que las posibilidades opcionales, modelos, probabilidades y datos operativos pueden desarrollarse siguiendo la metodología común.
 

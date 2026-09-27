@@ -1190,7 +1190,271 @@ El objetivo es que el jugador perciba claramente que:
 
 ---
 
-# 14. Preparación para JSON
+# 14. Comercio externo de la aldea
+
+## 14.1. Mercados
+
+**scope:** `Norgard/Treskal/village`
+
+Los mercados periódicos **no forman parte de la infraestructura normal de una aldea**.
+
+Los mercados se concentran principalmente en **pueblos y villas**, que atraen a habitantes de núcleos menores.
+
+Los aldeanos pueden desplazarse allí para:
+
+- vender excedentes;
+- montar puestos temporales;
+- comprar bienes que no se producen localmente;
+- llevar animales;
+- realizar o recoger encargos.
+
+Las ferias de mayor escala corresponden igualmente a núcleos mayores y se definirán cuando se desarrollen esos asentamientos.
+
+## 14.2. Mercader ambulante
+
+**feature_type:** NPC móvil / comercio regional  
+**availability_mode:** visitante temporal
+
+El **mercader ambulante** no es un residente ni una tienda móvil universal.
+
+Recorre rutas regionales persistentes entre aldeas, pueblos y villas y puede:
+
+- vender una carga limitada de mercancías;
+- comprar determinados excedentes rurales;
+- permanecer temporalmente en un asentamiento;
+- continuar después hacia otro punto de su ruta.
+
+Puede viajar a pie, con animal de carga o con carro según su escala.
+
+Su inventario debe depender del comerciante, de la ruta y de su capacidad de transporte.
+
+El mercader ambulante **complementa**, pero no sustituye, a mercados, especialistas ni establecimientos permanentes.
+
+---
+
+# 15. Agua y lavadero comunal
+
+**scope:** `Norgard/Treskal/village`
+
+El uso doméstico del agua debe derivarse de la solución hídrica real de la aldea.
+
+Cuando exista un río o arroyo adecuado, puede acondicionarse un punto habitual para:
+
+- lavar ropa;
+- llenar recipientes;
+- limpiar utensilios;
+- abrevar animales cuando corresponda.
+
+Cuando no exista un cauce próximo adecuado pero sí una fuente o manantial con caudal suficiente, puede existir un **lavadero comunal de piedra**, alimentado por esa corriente.
+
+Puede incluir bordes o piedras inclinadas que permitan lavar de pie o con una postura cómoda.
+
+El punto de recogida de agua limpia debe situarse antes del área de lavado dentro del flujo para evitar contaminar el abastecimiento.
+
+Si la aldea depende de un pozo y no existe caudal continuo suficiente, **no se fuerza la existencia de lavadero comunal**.
+
+---
+
+# 16. Almacenamiento y conservación familiar
+
+**scope:** `Norgard/Treskal/village`
+
+La unidad normal de almacenamiento es la **explotación familiar**, no un gran almacén comunal.
+
+Cada familia conserva sus reservas mediante los espacios que necesite:
+
+- graneros familiares;
+- pajares;
+- cobertizos;
+- arcones;
+- sacos;
+- despensas;
+- leñeras;
+- otros anexos domésticos.
+
+Pueden almacenarse:
+
+- forraje;
+- cereal;
+- tubérculos y hortalizas conservables;
+- semillas;
+- leña;
+- productos animales;
+- excedentes para intercambio o venta.
+
+La carne puede conservarse mediante **salado, secado y ahumado**, y mantenerse después en despensas adecuadas sin refrigeración artificial.
+
+No se genera un granero comunal como elemento normal de aldea. Un almacén colectivo o de gran escala solo aparece cuando exista una razón económica o logística concreta.
+
+---
+
+# 17. Saneamiento y aprovechamiento de residuos
+
+**scope:** `Norgard/Treskal/village`
+
+Los animales estabulados reciben una cama de paja u otra materia vegetal seca adecuada.
+
+La cama se mezcla progresivamente con orina y heces y produce estiércol.
+
+Cuando se acumula suficiente:
+
+1. se retira del corral o establo;
+2. se carga en carros u otros medios disponibles;
+3. se transporta a los campos;
+4. se esparce como abono;
+5. se coloca cama limpia a los animales.
+
+El estiércol de vacas, cerdos, ovejas, gallinas y otros animales aprovechables entra en este ciclo.
+
+Los desperdicios orgánicos domésticos adecuados se destinan preferentemente a alimentar a los cerdos u otros usos útiles.
+
+Las viviendas pueden disponer de **letrinas exteriores domésticas sencillas**, separadas de los puntos de agua potable y colocadas de forma que no contaminen pozos, fuentes o cauces de abastecimiento.
+
+Un animal muerto se aprovecha cuando resulta seguro. Si ha muerto por enfermedad o existe sospecha de contaminación, el cadáver se **quema o entierra** lejos de viviendas, ganado y agua potable.
+
+---
+
+# 18. Tierras familiares y usos comunales
+
+**scope:** `Norgard/Treskal/village`
+
+La explotación familiar puede incluir:
+
+- vivienda;
+- anexos;
+- huerto;
+- parcelas agrícolas;
+- prados;
+- otras tierras útiles.
+
+Las parcelas **no tienen que formar un bloque continuo** alrededor de la casa. Pueden estar fragmentadas y dispersas en distintos puntos próximos a la aldea.
+
+Las lindes pueden reconocerse mediante soluciones coherentes con el terreno, como:
+
+- cercas;
+- setos;
+- piedras;
+- zanjas;
+- taludes;
+- árboles;
+- accidentes naturales.
+
+Además de propiedades familiares pueden existir terrenos y recursos de **uso comunal**, entre ellos:
+
+- pastos;
+- monte o bosque para determinados aprovechamientos;
+- caminos;
+- puntos de agua;
+- otros espacios compartidos.
+
+La riqueza rural puede expresarse mediante la cantidad y calidad de tierras, ganado y anexos, no solo mediante el tamaño de la vivienda.
+
+---
+
+# 19. Ritmo diario simplificado
+
+**scope:** `Norgard/Treskal/village`  
+**feature_type:** rutina NPC
+
+Para gameplay se utilizan seis franjas generales:
+
+### Amanecer / primera mañana
+- encender hogares;
+- atender y alimentar animales;
+- ordeñar cuando corresponda;
+- recoger huevos;
+- desayunar;
+- preparar herramientas;
+- comenzar a sacar ganado.
+
+### Mañana
+- trabajo principal en campos, huertas, pastos, bosque, talleres o mantenimiento.
+
+### Mediodía
+- pausa para comer y descansar;
+- regreso a casa cuando la distancia lo permite o comida transportada cuando se trabaja lejos.
+
+### Tarde
+- continuación del trabajo;
+- transporte de productos;
+- tareas domésticas;
+- regreso progresivo del ganado.
+
+### Antes del anochecer
+- recoger animales;
+- dar agua y alimento;
+- cerrar gallinas;
+- guardar herramientas;
+- preparar la cena.
+
+### Noche
+- actividad principalmente doméstica;
+- fuerte reducción del tránsito por campos y caminos;
+- la taberna se convierte en el principal punto social fuera de las viviendas.
+
+La duración e intensidad de estas franjas varía con la estación: en verano se aprovecha más luz exterior y en invierno la jornada exterior se acorta.
+
+---
+
+# 20. Alimentación cotidiana rural
+
+**scope:** `Norgard/Treskal/village`
+
+La dieta cotidiana de una familia rural se basa principalmente en:
+
+- pan y otros preparados de cereal;
+- productos de huerta;
+- legumbres;
+- leche y productos lácteos;
+- huevos;
+- cantidades moderadas de carne y grasa animal.
+
+El pan es un alimento básico y puede elaborarse con trigo, centeno u otras mezclas que se definan en el catálogo de alimentos.
+
+Los lácteos pueden incluir leche fresca y productos más conservables como queso o mantequilla.
+
+La carne no se trata como alimento abundante diario. Buena parte del cerdo y otras carnes se conserva mediante salado, secado o ahumado y se consume gradualmente.
+
+Las ollas, sopas y potajes permiten combinar cereal o legumbre, verduras, grasa y pequeñas cantidades de carne.
+
+La alimentación cambia con la estación:
+
+- mayor presencia de producto fresco cuando está disponible;
+- mayor dependencia de reservas y conservas durante el invierno.
+
+Se consideran tres momentos principales de comida, flexibles según el trabajo:
+
+- mañana;
+- mediodía;
+- noche.
+
+En jornadas especialmente duras puede existir una comida o tentempié adicional sin convertirse en una cuarta comida rígida.
+
+Las celebraciones, bodas, matanzas y otros acontecimientos pueden ofrecer comida más abundante y especial.
+
+No se implementa un sistema nutricional exhaustivo ni un recetario completo salvo que una mecánica concreta lo necesite.
+
+---
+
+# 21. Cierre de diseño base de aldeas
+
+La base jugable de las aldeas del territorio de Treskal queda **CERRADA**.
+
+A partir de este punto no se desarrollarán nuevos detalles de vida cotidiana por completitud enciclopédica.
+
+Solo se añadirá o revisará canon aldeano cuando exista una necesidad concreta de:
+
+- gameplay;
+- generación procedural;
+- narrativa;
+- arte o animación;
+- implementación de datos.
+
+El siguiente nivel de asentamiento a desarrollar es **Pueblo**.
+
+---
+
+# 22. Preparación para JSON
 
 Este documento debe considerarse **fuente canónica humana**.
 

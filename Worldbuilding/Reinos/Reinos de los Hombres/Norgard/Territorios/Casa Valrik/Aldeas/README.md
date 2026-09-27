@@ -1,5 +1,22 @@
 # Aldeas del territorio de Treskal
 
+## Estado
+
+**DISEÑO BASE DE GAMEPLAY CERRADO**
+
+La base jugable de las aldeas del territorio de Treskal se considera suficientemente definida para continuar con **Pueblos**.
+
+A partir de este cierre no se ampliará la vida aldeana por detalle enciclopédico. Solo se reabrirá un aspecto cuando exista una necesidad concreta de:
+
+- gameplay;
+- generación procedural;
+- narrativa;
+- arte o animación;
+- datos del RPG Core.
+
+Las probabilidades numéricas, pesos definitivos y serialización operativa pertenecen a una fase posterior de implementación y **no impiden considerar cerrado el diseño base**.
+
+
 ## Propósito
 
 Esta carpeta organiza el lore jugable de las aldeas del territorio de Treskal desde lo más general hasta los asentamientos concretos del mundo.
@@ -178,18 +195,31 @@ Por tanto, **random no significa independiente**: cada asentamiento se genera te
 
 ---
 
-## Fase actual de diseño
+## Cierre de diseño base
 
-El desarrollo se realizará en este orden:
+Quedan definidos con suficiente detalle jugable:
 
-1. fijar el **esqueleto mínimo** de cada tipo de asentamiento;
-2. añadir después las **posibilidades opcionales**;
-3. definir por último **probabilidades, pesos y reglas de cobertura regional**.
+- escala y esqueleto mínimo;
+- servicios obligatorios y opcionales relevantes;
+- interdependencia con otros asentamientos;
+- economía doméstica y ganadería;
+- agua y lavadero cuando proceda;
+- almacenamiento y conservación;
+- saneamiento rural;
+- tierras familiares y usos comunales;
+- caminos y tránsito;
+- fuego, leña e incendios;
+- organización comunitaria;
+- ciclo estacional;
+- ritmo diario;
+- alimentación cotidiana;
+- comercio externo mediante pueblos, villas y mercaderes ambulantes;
+- costumbres funerarias mediante el documento general de Norgard.
 
-Los esqueletos procedurales de **Aldea, Pueblo y Villa** ya están aprobados.
+Los esqueletos procedurales de **Aldea, Pueblo y Villa** están aprobados.
 
-La fase actual es cerrar las **posibilidades opcionales de Aldea**, una a una, antes de pasar a Pueblo y Villa.
+**Siguiente fase de diseño: Pueblos del territorio de Treskal.**
 
-Treskal queda fuera de la generación procedural y se desarrollará manualmente como ciudad canónica única.
+Treskal ciudad queda fuera de la generación procedural y se desarrollará manualmente como ciudad canónica única.
 
 Los puestos de guardia fronterizos se tratarán como instalaciones funcionales separadas, no como asentamientos civiles.

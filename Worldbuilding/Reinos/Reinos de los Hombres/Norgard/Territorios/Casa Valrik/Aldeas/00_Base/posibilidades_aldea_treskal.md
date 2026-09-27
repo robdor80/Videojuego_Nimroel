@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CANON EN DESARROLLO — CAPA DE POSIBILIDADES**
+**CANON BASE CERRADO — CAPA DE POSIBILIDADES**
 
 ## Función
 
@@ -311,11 +311,17 @@ Los grandes aserraderos pertenecen a **villas o núcleos mayores** según el can
 
 ---
 
-## Pendiente dentro de oficios y servicios
+## Elementos no desarrollados en el cierre base
 
-Los siguientes elementos continúan pendientes de estudio individual antes de incorporarlos al canon de posibilidades de aldea:
+No es necesario desarrollar ahora más oficios únicamente para completar una lista.
+
+Quedan fuera del cierre base, sin considerarse por ello prohibidos:
 
 - carretero;
 - curtidor;
-- comerciante o tienda;
-- otros oficios o servicios que se consideren necesarios.
+- comerciante o tienda fija;
+- otros oficios o servicios no necesarios actualmente para gameplay.
+
+Solo se estudiarán si una necesidad concreta de juego, generación, narrativa o arte exige definirlos.
+
+La ausencia de desarrollo específico de estos elementos **no mantiene abierta la fase de Aldeas**.
