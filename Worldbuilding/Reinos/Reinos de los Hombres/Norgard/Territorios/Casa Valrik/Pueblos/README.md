@@ -26,4 +26,5 @@ Los esqueletos procedurales de **Aldea, Pueblo y Villa** están actualmente apro
 
 ## Archivo base
 
-- `00_Base/pueblo_tipo_treskal.md`
+- `00_Base/pueblo_tipo_treskal.md` — esqueleto mínimo obligatorio;
+- `00_Base/posibilidades_pueblo_treskal.md` — posibilidades y reglas aprobadas durante la fase de diseño.

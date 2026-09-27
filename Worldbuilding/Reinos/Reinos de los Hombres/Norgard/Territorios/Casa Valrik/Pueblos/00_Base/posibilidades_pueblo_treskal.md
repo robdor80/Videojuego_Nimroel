@@ -315,6 +315,27 @@ La figura concreta del productor/refinador de hierro y acero **no se desarrolla 
 
 ---
 
+---
+
+# 16. Seguridad y guarniciones
+
+**Estado:** REGLA APROBADA  
+**Carácter:** FUERA DE LAS POSIBILIDADES PROPIAS DE PUEBLO
+
+La presencia de guardia permanente, destacamento, puesto de vigilancia o guarnición **no se decide por el rango Pueblo**.
+
+Estas instalaciones pertenecen a la **capa territorial y estratégica** y aparecen cuando existe un enclave que justifique protección permanente, como:
+
+- puentes fronterizos;
+- pasos o vados estratégicos;
+- cruces territoriales críticos;
+- instalaciones industriales o económicas de gran valor;
+- minas, canteras o grandes almacenes;
+- puertos o embarcaderos estratégicos;
+- fronteras o zonas sometidas a amenaza especial.
+
+Un puesto de guardia puede estar dentro, junto o lejos de un pueblo. Su existencia depende del enclave protegido y no debe usarse como servicio o posibilidad generada por el simple hecho de que exista un Pueblo.
+
 ## Principio de diseño
 
 Las posibilidades de Pueblo deben ampliar el gameplay respecto a una aldea sin convertir cada pueblo en un catálogo completo de todos los oficios.

@@ -236,22 +236,25 @@ Las aldeas normalmente no necesitan recibir estas visitas de forma regular: sus 
 
 ### 13. Seguridad
 
-Un pueblo ordinario no necesita por definición:
+La **guardia permanente no está asociada al rango Pueblo**.
 
-- muralla;
-- fortificación;
-- torre;
-- guarnición permanente.
+La seguridad ordinaria de un pueblo depende de las patrullas y de la estructura territorial de Norgard, igual que sucede con otros núcleos no estratégicos.
 
-La seguridad territorial puede seguir dependiendo de patrullas y de la estructura general de Norgard.
+Los destacamentos, puestos de vigilancia o guarniciones fijas se generan por la **importancia del enclave que deben proteger**, no por la existencia de un pueblo.
 
-Una guardia fija, puesto de vigilancia o fortificación podrá existir como posibilidad condicionada por:
+Pueden justificarse, por ejemplo, en:
 
-- ubicación;
-- importancia de la ruta;
-- frontera;
-- riesgo;
-- función estratégica.
+- un puente fronterizo;
+- un vado o paso estratégico;
+- un cruce territorial crítico;
+- una mina, cantera o complejo productivo de gran valor;
+- almacenes o infraestructura económica especialmente importante;
+- un puerto o embarcadero estratégico;
+- una frontera o zona con amenaza especial.
+
+Uno de estos enclaves puede coincidir geográficamente con un pueblo o encontrarse junto a él, pero la guardia existe para proteger **el enclave**, no porque el asentamiento sea un Pueblo.
+
+Murallas, fortificaciones y torres tampoco forman parte del esqueleto normal de Pueblo.
 
 ---
 
