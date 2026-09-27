@@ -853,7 +853,154 @@ La red resultante puede añadir ramales, senderos y caminos ganaderos según las
 
 ---
 
-# 11. Preparación para JSON
+# 11. Fuego, calefacción y combustible doméstico
+
+## 11.1. Hogar doméstico
+
+**scope:** `Norgard/Treskal/village`  
+**feature_type:** infraestructura doméstica / rutina estacional  
+**availability_mode:** base
+
+### Canon
+
+El fuego forma parte de la vida cotidiana de las explotaciones familiares del territorio de Treskal.
+
+Las viviendas deben disponer de una solución doméstica para:
+
+- cocinar;
+- calentar agua;
+- aportar calor;
+- secar determinados objetos o prendas cuando proceda.
+
+Como referencia funcional, es habitual un **hogar abierto de piedra integrado en la cocina**, equivalente en funcionamiento a la lareira tradicional gallega.
+
+Este concepto se fija por su función, no por su nombre cultural definitivo dentro de Nimroel.
+
+Puede permitir:
+
+- cocinar directamente sobre el fuego;
+- colocar recipientes próximos a las brasas;
+- suspender ollas o calderos sobre la llama;
+- aprovechar el mismo fuego para calefacción doméstica.
+
+La denominación propia que pueda recibir este tipo de hogar en Nimroel queda pendiente.
+
+---
+
+## 11.2. Obtención y almacenamiento de leña
+
+La leña debe tratarse como un recurso doméstico esencial y estacional.
+
+Las familias mantienen reservas suficientes para cubrir buena parte de sus necesidades anuales.
+
+Existe una época especialmente adecuada para la obtención intensiva de leña:
+
+**después de la caída de la hoja de los árboles caducifolios y antes del invierno más duro.**
+
+Este momento facilita:
+
+- tala;
+- desrame;
+- manipulación;
+- transporte;
+- trabajo sin follaje abundante.
+
+La obtención de leña puede convertirse en una campaña familiar o comunitaria concentrada durante una parte del año.
+
+Las tareas normales pueden incluir:
+
+1. desplazamiento al bosque o zona autorizada;
+2. tala de árboles o recogida de madera aprovechable;
+3. desrame;
+4. transporte de troncos hasta la explotación;
+5. corte posterior en piezas manejables;
+6. apilado;
+7. secado y almacenamiento protegido.
+
+La madera puede transportarse mediante:
+
+- carros;
+- bueyes cuando existan;
+- caballos o burros cuando proceda;
+- trabajo manual en distancias cortas.
+
+Cada familia puede almacenar una reserva importante en:
+
+- leñeras;
+- cobertizos;
+- montones protegidos;
+- anexos secos y ventilados.
+
+La leña debe mantenerse razonablemente protegida de lluvia y humedad y no colocarse de forma innecesariamente peligrosa junto al fuego doméstico.
+
+---
+
+## 11.3. Riesgo de incendio
+
+El riesgo de incendio existe y debe formar parte de la lógica física de la aldea.
+
+Puede verse aumentado por:
+
+- hogares abiertos;
+- chimeneas;
+- hornos;
+- herrerías;
+- madera estructural;
+- pajares;
+- heno;
+- paja;
+- leña seca;
+- otros materiales combustibles.
+
+Esto no significa que las aldeas vivan constantemente expuestas al desastre.
+
+Sus habitantes conocen el riesgo y toman precauciones básicas, entre ellas:
+
+- mantener fuegos controlados;
+- evitar almacenar heno o paja inmediatamente junto a focos de calor;
+- vigilar brasas;
+- mantener chimeneas y salidas de humo funcionales;
+- conservar agua y recipientes accesibles;
+- disponer los anexos de forma razonablemente segura cuando el espacio lo permita.
+
+Los incendios graves deben ser **raros pero posibles**.
+
+---
+
+## 11.4. Respuesta comunitaria a incendios
+
+Una aldea no dispone de un cuerpo profesional de bomberos.
+
+Cuando se produce un incendio grave, la respuesta es **comunitaria**.
+
+Los habitantes disponibles pueden colaborar en:
+
+- transportar agua;
+- formar cadenas de cubos;
+- retirar animales;
+- sacar bienes y reservas de edificios amenazados;
+- apartar materiales combustibles;
+- evitar que el fuego alcance construcciones próximas;
+- ayudar a familias afectadas.
+
+Las fuentes de agua de la aldea pueden adquirir una función adicional durante estas emergencias:
+
+- pozo;
+- fuente;
+- lavadero;
+- arroyo;
+- río;
+- otros puntos de agua accesibles.
+
+La posición de estas fuentes debe poder influir en la respuesta práctica a un incendio.
+
+### Principio rector
+
+**Toda explotación rural necesita fuego y combustible, pero su disposición debe minimizar razonablemente el riesgo de incendio; si el fuego se descontrola, la aldea responde como comunidad.**
+
+---
+
+# 12. Preparación para JSON
 
 Este documento debe considerarse **fuente canónica humana**.
 
