@@ -721,7 +721,139 @@ Esto no es una plantilla fija, sino una demostración de dependencia entre asent
 
 ---
 
-# 10. Preparación para JSON
+# 10. Estructura física de las aldeas — caminos y tránsito
+
+## 10.1. Red viaria orgánica
+
+**scope:** `Norgard/Treskal/village`  
+**feature_type:** estructura espacial / circulación  
+**availability_mode:** base
+
+### Canon
+
+Las aldeas del territorio de Treskal no deben diseñarse como pequeños núcleos urbanos con calles planificadas.
+
+Su red de circulación debe surgir de forma **orgánica**, como consecuencia de:
+
+- las conexiones con otros asentamientos;
+- la posición de las viviendas y explotaciones;
+- el acceso a agua;
+- los campos y pastos;
+- el bosque y otros recursos;
+- el paso de carros;
+- el movimiento habitual del ganado;
+- la topografía;
+- la evolución histórica del propio asentamiento.
+
+Toda aldea debe estar conectada al exterior por al menos una vía funcional, conforme al esqueleto mínimo ya aprobado.
+
+Desde esa conexión principal pueden surgir:
+
+- ramales hacia viviendas y explotaciones;
+- caminos de carro hacia campos, pastos, bosque, molino u otras instalaciones;
+- senderos peatonales más estrechos;
+- pasos habituales del ganado;
+- conexiones secundarias con otras rutas rurales.
+
+### Firme y materiales
+
+La solución normal es la **tierra compactada**.
+
+No debe generarse empedrado general como si se tratase de una villa o ciudad.
+
+Puede utilizarse piedra, grava u otros refuerzos locales cuando exista una razón funcional, por ejemplo:
+
+- zonas con barro recurrente;
+- pendientes sometidas a erosión;
+- accesos muy transitados;
+- proximidad a una fuente o lavadero;
+- entorno inmediato de una taberna u otro punto de uso intenso;
+- aproximación a un puente;
+- otros puntos donde el desgaste justifique la mejora.
+
+Los caminos muy utilizados por carros pueden mostrar:
+
+- roderas;
+- tierra endurecida;
+- barro estacional;
+- reparación puntual;
+- pequeñas zanjas o soluciones simples de drenaje.
+
+### Relación con el terreno
+
+Los caminos deben adaptarse al relieve y a los obstáculos existentes.
+
+No deben buscarse trazados perfectamente rectos ni cuadrículas salvo que exista una razón excepcional.
+
+Una ruta puede:
+
+- rodear una roca;
+- bordear una parcela;
+- seguir una curva de nivel;
+- aprovechar un paso natural;
+- acompañar un arroyo;
+- desviarse para evitar una zona anegable.
+
+La forma final del asentamiento puede ser:
+
+- alargada siguiendo un camino;
+- agrupada en torno a un cruce;
+- dispersa entre explotaciones;
+- irregular por la topografía y el crecimiento histórico.
+
+### Ganado y tránsito cotidiano
+
+El movimiento de animales forma parte de la red viaria.
+
+Los recorridos utilizados diariamente para llevar y recoger ganado pueden convertirse en caminos ganaderos claramente reconocibles:
+
+- más pisados;
+- algo más anchos;
+- con huellas y barro;
+- con estiércol ocasional;
+- asociados a cercas, portillos o accesos a pastos.
+
+El tránsito cotidiano debe poder incluir:
+
+- personas a pie;
+- niños realizando tareas rurales;
+- ganado;
+- carros;
+- caballos, burros o bueyes cuando existan;
+- mercaderes y viajeros de paso.
+
+### Cruces de agua
+
+Cuando una ruta de aldea deba cruzar un pequeño curso de agua, la solución dependerá de la necesidad y del terreno.
+
+Posibilidades normales:
+
+- vado;
+- pasarela sencilla de madera para peatones;
+- pequeño puente de madera;
+- pequeño puente de piedra cuando el tránsito o la permanencia lo justifique.
+
+No generar automáticamente puentes monumentales.
+
+### Regla para generación procedural
+
+Los caminos no deben colocarse como decoración independiente.
+
+El generador debe partir primero de los **puntos funcionales que necesitan conectarse** y después resolver el trazado según terreno, uso e historia.
+
+Ejemplo conceptual:
+
+`entrada/salida -> viviendas -> taberna -> agua -> explotaciones -> campos/pastos -> conexiones exteriores`
+
+La red resultante puede añadir ramales, senderos y caminos ganaderos según las necesidades concretas de la instancia.
+
+### Principio rector
+
+**La red viaria de una aldea es consecuencia del uso, el terreno y la historia del asentamiento, no de una planificación urbana previa.**
+
+---
+
+# 11. Preparación para JSON
 
 Este documento debe considerarse **fuente canónica humana**.
 
