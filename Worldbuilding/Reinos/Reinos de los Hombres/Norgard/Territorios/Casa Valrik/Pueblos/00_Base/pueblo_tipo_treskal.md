@@ -216,11 +216,8 @@ Lo obligatorio es que exista **actividad especializada suficiente para distingui
 
 ## Próxima fase
 
-Una vez cerrados los esqueletos de:
+Los esqueletos procedurales de **aldea, pueblo y villa** ya están aprobados.
 
-- aldea;
-- pueblo;
-- villa;
-- Treskal;
+Treskal no forma parte de este ciclo: será desarrollada manualmente como ciudad canónica única.
 
-se definirán las posibilidades opcionales de cada categoría antes de entrar en probabilidades y pesos.
+Por tanto, las categorías procedurales pueden avanzar a sus posibilidades opcionales, modelos, probabilidades y pesos sin esperar a un esqueleto procedural de Treskal.

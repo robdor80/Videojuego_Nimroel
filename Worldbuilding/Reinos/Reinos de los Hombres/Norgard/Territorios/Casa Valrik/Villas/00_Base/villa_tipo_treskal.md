@@ -235,4 +235,6 @@ El resultado debe ser persistente en la partida.
 
 ## Próxima fase
 
-Una vez cerrado el esqueleto de Treskal se pasará a definir las **posibilidades opcionales** de cada categoría antes de asignar probabilidades y pesos.
+Los esqueletos procedurales de **Aldea, Pueblo y Villa** ya están aprobados. Se puede avanzar a las **posibilidades opcionales**, modelos, probabilidades y pesos de estas categorías sin esperar a Treskal.
+
+**Treskal queda fuera del sistema procedural** y tendrá desarrollo manual como ciudad canónica única.

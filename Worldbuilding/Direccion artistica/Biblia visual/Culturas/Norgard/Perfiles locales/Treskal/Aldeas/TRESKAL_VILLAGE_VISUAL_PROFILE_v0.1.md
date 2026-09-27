@@ -4,15 +4,27 @@
 
 **BASE EN DESARROLLO**
 
-## Propósito
+## Propósito y alcance
 
-Definir la identidad visual compartida por las aldeas interiores del territorio Valrik cercanas a Treskal.
+Definir la identidad visual base de las **aldeas interiores del territorio de Treskal cercanas a la ciudad**, actualmente representadas por los modelos **V1 y V2**.
+
+Este documento **no es el perfil general de todas las aldeas del territorio de Treskal**.
+
+No debe extrapolarse automáticamente a:
+
+- aldeas costeras;
+- aldeas fluviales;
+- aldeas de borde del Bosque Negro con necesidades visuales específicas;
+- aldeas pesqueras;
+- otros contextos regionales que requieran un tratamiento propio.
+
+Si esos contextos necesitan reglas visuales diferentes, se documentarán posteriormente mediante el perfil u override que corresponda. Este documento no crea esas reglas por adelantado.
 
 Este documento no sustituye a la Biblia visual de Asentamientos ni define un plano único.
 
 ## Canon visual ya fijado
 
-Las aldeas deben sentirse:
+Las aldeas dentro de este alcance deben sentirse:
 
 - pequeñas;
 - rurales;
@@ -32,7 +44,7 @@ En los modelos actuales predominan:
 - talleres ligados a necesidades reales;
 - tránsito de personas, animales y carros acorde con la economía local.
 
-La presencia de madera y carpintería debe ser coherente con el territorio Valrik, pero no convertir todas las aldeas en complejos industriales.
+La presencia de madera y carpintería debe ser coherente con el territorio de Treskal, pero no convertir estas aldeas en complejos industriales.
 
 ## Población
 

@@ -162,7 +162,7 @@ La herrería básica y la taberna local quedan fuera de esta tirada porque forma
 - función económica del modelo;
 - necesidades mínimas de cobertura de la zona.
 
-El sistema debe impedir resultados incoherentes como una amplia zona habitada sin acceso razonable a un herrero o a un molino.
+El sistema debe impedir resultados incoherentes en la cobertura de **servicios opcionales compartidos**, como una amplia zona habitada sin acceso razonable a un molino. La **herrería básica no se resuelve mediante cobertura regional**: debe existir localmente en cada aldea conforme al esqueleto mínimo.
 
 La solución preferida es una generación en varias fases:
 

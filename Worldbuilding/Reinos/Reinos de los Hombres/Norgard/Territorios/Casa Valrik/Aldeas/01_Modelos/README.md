@@ -1,10 +1,12 @@
-# Modelos de aldeas Valrik
+# Modelos de aldeas del territorio de Treskal
 
 ## Propósito
 
-Esta carpeta contiene **perfiles de generación reutilizables** derivados de la aldea tipo Valrik.
+Esta carpeta contiene **perfiles de generación reutilizables** derivados de la aldea tipo del territorio de Treskal.
 
 Cada modelo define un espacio de posibilidades, no una aldea terminada.
+
+Todos los modelos heredan el **esqueleto mínimo obligatorio** de la aldea del territorio de Treskal. Un modelo no puede convertir en opcionales la **herrería básica local** ni la **taberna vecinal**; solo puede añadir obligaciones adicionales cuando exista una razón funcional.
 
 ---
 
@@ -26,7 +28,7 @@ Cada modelo podrá fijar:
 - relación con carreteras, bosque, río o costa;
 - rango de población;
 - actividades económicas dominantes;
-- servicios obligatorios solo cuando exista una razón funcional;
+- servicios obligatorios adicionales solo cuando exista una razón funcional;
 - servicios opcionales;
 - servicios incompatibles;
 - probabilidades o pesos relativos;
@@ -58,7 +60,7 @@ La actividad maderera aumenta la probabilidad de determinados talleres y servici
 
 Perfil de aldea interior pequeña con mayor peso agroganadero y alta probabilidad de cubrir necesidades de molienda de la red rural próxima.
 
-El modelo permite que determinadas aldeas del entorno compensen servicios ausentes en otras.
+El modelo permite que determinadas aldeas del entorno compensen **servicios opcionales** ausentes en otras. La herrería básica local y la taberna vecinal no forman parte de esa compensación.
 
 ---
 

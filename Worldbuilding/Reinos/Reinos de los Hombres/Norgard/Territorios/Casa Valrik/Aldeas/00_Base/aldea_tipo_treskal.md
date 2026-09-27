@@ -240,7 +240,7 @@ El esqueleto debe permitir aldeas **incompletas por sí solas pero coherentes de
 
 La ausencia de un servicio no constituye un fallo si existe acceso razonable al mismo en otro núcleo, **salvo aquellos servicios fijados expresamente como parte del esqueleto mínimo**, como la herrería básica local o la taberna vecinal.
 
-Las reglas concretas de cobertura regional se definirán después de cerrar los esqueletos mínimos de aldea, pueblo, villa y Treskal.
+Los esqueletos procedurales de **aldea, pueblo y villa** ya están aprobados. Treskal queda fuera del sistema procedural y se desarrollará manualmente como ciudad canónica única, por lo que la definición de cobertura regional de los asentamientos menores no necesita esperar a un esqueleto procedural de la ciudad.
 
 ---
 

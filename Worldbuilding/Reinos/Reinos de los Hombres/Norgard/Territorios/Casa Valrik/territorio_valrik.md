@@ -142,17 +142,19 @@ El tejido principal del territorio está formado por pueblos y aldeas.
 
 Muchas de las aldeas próximas al Bosque Negro están vinculadas de una u otra forma a la actividad maderera, aunque no todos sus habitantes trabajan directamente en ella.
 
-Los asentamientos rurales también cubren las necesidades básicas de su entorno mediante una **red compartida de oficios y servicios**.
+Los asentamientos rurales también cubren las necesidades de su entorno mediante una combinación de **capacidades locales obligatorias** y una **red compartida de oficios y servicios especializados**.
 
-No es necesario que cada aldea disponga de todos los artesanos o instalaciones. Es habitual que un oficio especializado dé servicio a varios núcleos próximos.
+En las aldeas y pueblos del territorio de Treskal existe una excepción expresa a la cobertura multi-aldea: **cada núcleo debe disponer de capacidad local de herrería básica** para reparaciones y trabajos cotidianos. Esa capacidad puede ser modesta y no implica un herrero de dedicación exclusiva ni un nivel alto de maestría.
 
-Por ejemplo:
+Lo que sí puede atender a varias aldeas son los **servicios de herrería avanzada**, los especialistas, los herreros de calidad excepcional y los encargos complejos que superen la capacidad básica local.
 
-- un herrero puede atender a varias aldeas;
+Otros servicios pueden seguir funcionando mediante cobertura compartida cuando corresponda. Por ejemplo:
+
 - un molino puede recibir grano de distintos asentamientos;
-- determinados carpinteros, curtidores, carreteros u otros artesanos pueden trabajar para una pequeña comarca rural y no solo para su propia localidad.
+- determinados carpinteros, curtidores, carreteros u otros artesanos pueden trabajar para una pequeña comarca rural y no solo para su propia localidad;
+- un herrero avanzado o especialista puede aceptar encargos procedentes de varios núcleos.
 
-Esto crea una relación constante entre aldeas y pueblos cercanos y refuerza la importancia de la red de caminos.
+Esto crea una relación constante entre aldeas y pueblos cercanos y refuerza la importancia de la red de caminos sin eliminar la herrería básica local obligatoria.
 
 ### Relación con Treskal
 
@@ -707,7 +709,7 @@ Queda aprobado como canon:
 - quedan definidas tres villas funcionalmente relevantes: una villa costera dedicada a los grandes astilleros civiles, una villa dedicada a gestionar y distribuir la madera procedente del Bosque Negro y una villa interior dedicada a concentrar y distribuir producción agroganadera;
 - la villa costera de los astilleros civiles es la mayor de las tres;
 - los pueblos y aldeas constituyen la verdadera base humana, productiva y cotidiana del territorio Valrik;
-- los oficios rurales funcionan en red: una misma herrería, molino u otro servicio especializado puede atender a varias aldeas próximas;
+- los oficios rurales funcionan en red, pero toda aldea y pueblo de Treskal dispone de capacidad local de herrería básica; la herrería avanzada, los especialistas, los molinos, carpinteros, curtidores, carreteros y otros servicios pueden atender a varias aldeas próximas cuando corresponda;
 - esos asentamientos suministran buena parte de los alimentos y recursos cotidianos que llegan a los mercados de Treskal;
 - el territorio Valrik es notablemente menos rico que el Darovan y posee menos recursos de gran valor monetario;
 - el honor y la calidad de la madera y de su trabajo constituyen dos de sus grandes medidas culturales de prestigio;

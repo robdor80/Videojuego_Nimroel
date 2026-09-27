@@ -50,9 +50,25 @@ Cuando el sistema regional necesite garantizar un molino accesible, podrá forza
 
 ---
 
-## Otros servicios
+## Servicios
 
-Posada, herrería, carpintería, carretero u otros servicios especializados **no son obligatorios**.
+Toda instancia V2 hereda el esqueleto mínimo de aldea del territorio de Treskal.
+
+Son **obligatorios**:
+
+- una **taberna local o espacio social equivalente**;
+- una **capacidad local de herrería básica**.
+
+La calidad, tamaño y forma concreta de la taberna pueden variar. La capacidad de herrería básica no implica herrero avanzado ni un artesano de calidad excepcional.
+
+Siguen siendo **opcionales** y dependientes del contexto:
+
+- posada;
+- carpintería;
+- carretero;
+- curandera;
+- herrero avanzado o especialista;
+- otros servicios aprobados que no pertenezcan al esqueleto mínimo.
 
 Su presencia o ausencia debe depender de:
 
@@ -62,7 +78,7 @@ Su presencia o ausencia debe depender de:
 - servicios ya disponibles en la red;
 - necesidades económicas locales.
 
-La generación debe evitar duplicar servicios sin motivo.
+La generación debe evitar duplicar servicios opcionales sin motivo.
 
 ---
 
@@ -70,9 +86,11 @@ La generación debe evitar duplicar servicios sin motivo.
 
 V2 sirve especialmente para reforzar la **interdependencia rural**.
 
-Una aldea concreta puede tener molino pero carecer de herrería y posada.
+Una aldea concreta puede tener molino pero carecer de **posada, carpintero, carretero u otros servicios opcionales**.
 
-Otra V2 podría resolver esas necesidades de forma distinta dentro de los límites permitidos.
+No puede carecer de **herrería básica local** ni de **taberna vecinal**.
+
+Otra V2 puede resolver los servicios opcionales de forma distinta dentro de los límites permitidos.
 
 El jugador debe descubrir esas diferencias viajando e interactuando.
 
@@ -88,7 +106,7 @@ Si la prueba necesita garantizar la mecánica de transporte de grano y molienda,
 - tamaño;
 - posición;
 - familia propietaria;
-- resto de servicios de la aldea;
+- resto de servicios opcionales de la aldea;
 - distribución general.
 
 ---
@@ -97,7 +115,7 @@ Si la prueba necesita garantizar la mecánica de transporte de grano y molienda,
 
 - pesos de generación;
 - reglas de molino según agua, viento u otra solución canónica;
-- límites de servicios;
+- límites de servicios opcionales;
 - reglas de layout procedural;
 - catálogo modular de edificios;
 - datos operativos para el motor.

@@ -14,9 +14,11 @@ La secuencia obligatoria es:
 
 ## Estado actual
 
-Está aprobado únicamente el **esqueleto mínimo** del tipo de asentamiento.
+El **esqueleto mínimo de Villa está aprobado**.
 
-Las posibilidades opcionales, reglas concretas de generación, probabilidades y datos operativos se definirán después de cerrar también el esqueleto de Treskal.
+Los esqueletos procedurales de **Aldea, Pueblo y Villa** están actualmente aprobados. Las posibilidades opcionales, reglas concretas de generación, probabilidades y datos operativos pueden desarrollarse sin esperar a un esqueleto de Treskal.
+
+**Treskal ciudad no se genera proceduralmente**: se diseñará manualmente como ciudad canónica única.
 
 ## Particularidad del territorio
 
