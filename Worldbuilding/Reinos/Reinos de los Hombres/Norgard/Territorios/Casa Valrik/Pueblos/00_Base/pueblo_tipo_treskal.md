@@ -168,7 +168,7 @@ Un pueblo puede generar más de una taberna según población, tránsito y activ
 
 ### 9. Actividad especializada permanente
 
-Además de la herrería básica obligatoria, un pueblo debe sostener **varios oficios o servicios permanentes no puramente domésticos**.
+Además de la **herrería local obligatoria de nivel 2**, un pueblo debe sostener **varios oficios o servicios permanentes no puramente domésticos**.
 
 El esqueleto no fija cuáles.
 
