@@ -125,25 +125,31 @@ En determinados días, el pueblo concentra temporalmente actividad procedente de
 
 El mercado periódico es una de las funciones que distingue estructuralmente al pueblo de la aldea.
 
-### 7. Herrería básica local
+### 7. Herrería local — nivel 2 de referencia
 
-Todo pueblo debe disponer de **al menos una capacidad permanente de herrería básica**.
+Todo pueblo debe disponer de **capacidad permanente de herrería de nivel 2 como referencia funcional**.
 
-La función mínima cubre necesidades cotidianas como:
+Esto incluye las funciones del herrero básico:
 
 - herramientas de trabajo y su reparación;
 - herraduras;
 - clavos, bisagras y herrajes;
 - piezas sencillas de carros y aperos;
-- reparaciones metálicas habituales.
+- reparaciones metálicas habituales;
 
-El esqueleto no obliga a que el herrero posea una habilidad excepcional ni a que fabrique armas de calidad.
+y añade capacidad para:
 
-La **calidad técnica del herrero no se deriva del tamaño del asentamiento**.
+- herramientas de mejor calidad;
+- reparaciones más complejas;
+- trabajos metálicos más finos;
+- armas funcionales y decentes;
+- mejor conocimiento del tratamiento del hierro y del acero disponible.
 
-Un pueblo puede tener únicamente herreros comunes, mientras que una aldea pequeña puede albergar a un artesano mucho más hábil por talento, tradición familiar o técnica.
+Este nivel **no implica** fabricar acero extraordinario, armas excepcionales ni objetos legendarios.
 
-Los herreros capaces de producir herramientas superiores, encargos complejos o armas decentes forman parte de la capa de **posibilidades**.
+La calidad individual del artesano no se deriva automáticamente del tamaño del asentamiento. Un pueblo puede tener herreros simplemente competentes, y una aldea puede albergar excepcionalmente a un maestro por talento, tradición familiar o técnica.
+
+La producción de acero no forma parte automáticamente de una herrería local: el herrero puede trabajar hierro y acero ya producidos y distribuidos desde centros metalúrgicos especializados.
 
 ### 8. Taberna local
 
