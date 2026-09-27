@@ -12,8 +12,6 @@ No describe un pueblo concreto.
 
 No fija todavía:
 
-- profesiones concretas;
-- servicios concretos;
 - probabilidades;
 - modelos de pueblo;
 - número exacto de viviendas;
@@ -21,7 +19,8 @@ No fija todavía:
 - barrios formales;
 - interiores;
 - familias;
-- NPC concretos.
+- NPC concretos;
+- combinación exacta de oficios especializados.
 
 ---
 
@@ -85,7 +84,7 @@ La especialización exacta se definirá después.
 
 ### 4. Integración territorial
 
-Un pueblo debe estar mejor conectado que una aldea.
+Un pueblo debe estar mejor conectado que una aldea y funcionar como **nodo local de la red territorial**.
 
 Debe cumplir al menos una de estas condiciones:
 
@@ -95,9 +94,9 @@ Debe cumplir al menos una de estas condiciones:
 
 No se fija todavía el trazado exacto de sus vías.
 
-### 5. Espacio comunitario reconocible
+### 5. Espacio central reconocible
 
-Todo pueblo debe disponer de al menos un espacio claramente reconocible de reunión o intercambio.
+Todo pueblo debe disponer de al menos un espacio claramente reconocible de reunión, intercambio y actividad social.
 
 No tiene que ser una plaza formal ni pavimentada.
 
@@ -106,30 +105,68 @@ Puede ser:
 - un ensanchamiento central;
 - un cruce amplio;
 - el entorno de una fuente;
-- un espacio asociado a intercambio periódico;
+- un espacio asociado al mercado;
 - otra configuración orgánica equivalente.
 
-### 6. Herrería básica local
+### 6. Mercado periódico
 
-Todo pueblo debe disponer de **al menos una capacidad permanente de herrería básica**.
+Todo pueblo debe disponer de **mercado periódico**.
 
-La función mínima cubre necesidades cotidianas como:
+No implica un mercado permanente abierto todos los días.
+
+En determinados días, el pueblo concentra temporalmente actividad procedente de su entorno:
+
+- aldeanos que venden excedentes;
+- compradores;
+- comerciantes;
+- animales y mercancías;
+- artesanos que reciben o entregan encargos;
+- habitantes de aldeas próximas que acuden por bienes y servicios.
+
+El mercado periódico es una de las funciones que distingue estructuralmente al pueblo de la aldea.
+
+### 7. Herrería local — nivel 2 de referencia
+
+Todo pueblo debe disponer de **capacidad permanente de herrería de nivel 2 como referencia funcional**.
+
+Esto incluye las funciones del herrero básico:
 
 - herramientas de trabajo y su reparación;
 - herraduras;
 - clavos, bisagras y herrajes;
 - piezas sencillas de carros y aperos;
-- reparaciones metálicas habituales.
+- reparaciones metálicas habituales;
 
-El esqueleto no obliga a que el herrero posea una habilidad excepcional ni a que fabrique armas de calidad.
+y añade capacidad para:
 
-La **calidad técnica del herrero no se deriva del tamaño del asentamiento**.
+- herramientas de mejor calidad;
+- reparaciones más complejas;
+- trabajos metálicos más finos;
+- armas funcionales y decentes;
+- mejor conocimiento del tratamiento del hierro y del acero disponible.
 
-Un pueblo puede tener únicamente herreros comunes, mientras que una aldea pequeña puede albergar a un artesano mucho más hábil por talento, tradición familiar o técnica.
+Este nivel **no implica** fabricar acero extraordinario, armas excepcionales ni objetos legendarios.
 
-Los herreros capaces de producir herramientas superiores, encargos complejos o armas decentes forman parte de la capa de **posibilidades**.
+La calidad individual del artesano no se deriva automáticamente del tamaño del asentamiento. Un pueblo puede tener herreros simplemente competentes, y una aldea puede albergar excepcionalmente a un maestro por talento, tradición familiar o técnica.
 
-### 7. Actividad especializada permanente
+La producción de acero no forma parte automáticamente de una herrería local: el herrero puede trabajar hierro y acero ya producidos y distribuidos desde centros metalúrgicos especializados.
+
+### 8. Taberna local
+
+Todo pueblo debe disponer de **al menos una taberna**.
+
+La taberna mantiene la función social básica ya existente en las aldeas:
+
+- bebida;
+- comida sencilla;
+- convivencia;
+- intercambio de información;
+- rumores;
+- localización de personas y servicios.
+
+Un pueblo puede generar más de una taberna según población, tránsito y actividad, pero el esqueleto solo exige una.
+
+### 9. Actividad especializada permanente
 
 Además de la herrería básica obligatoria, un pueblo debe sostener **varios oficios o servicios permanentes no puramente domésticos**.
 
@@ -139,15 +176,15 @@ La selección concreta podrá incluir posteriormente, según contexto y generaci
 
 - carpintería;
 - molino;
-- posada;
 - carretero;
 - curtidor;
+- alfarería;
 - comercio;
 - otros oficios y servicios coherentes.
 
-Lo obligatorio ahora es la existencia de **cierto nivel de especialización adicional**, no un listado concreto.
+Lo obligatorio es la existencia de **cierto nivel de especialización adicional**, no un listado idéntico para todos los pueblos.
 
-### 8. Capacidad de almacenamiento superior a la doméstica
+### 10. Capacidad de almacenamiento superior a la doméstica
 
 Además del almacenamiento familiar, el pueblo debe disponer de alguna capacidad de almacenamiento destinada a producción, intercambio o abastecimiento de mayor escala.
 
@@ -161,9 +198,9 @@ Puede tomar la forma de:
 
 No se fija todavía cantidad ni tipo concreto.
 
-### 9. Relación funcional con aldeas próximas
+### 11. Relación funcional con aldeas próximas
 
-Un pueblo debe poder actuar parcialmente como **centro de servicios o intercambio** para aldeas de su entorno.
+Todo pueblo debe actuar parcialmente como **centro de servicios, mercado o intercambio para aldeas de su entorno**.
 
 Puede:
 
@@ -175,27 +212,92 @@ Puede:
 
 La forma concreta se determinará al generar la red territorial.
 
-### 10. Seguridad
+### 12. Autoridad territorial itinerante
 
-Un pueblo ordinario no necesita por definición:
+Un pueblo **no necesita una autoridad territorial permanente propia** ni un funcionario residente obligatorio.
 
-- muralla;
-- fortificación;
-- torre;
-- guarnición permanente.
+La autoridad territorial puede utilizar los pueblos como puntos periódicos de contacto con la población rural.
 
-Estos elementos podrán existir después como posibilidades condicionadas por localización, importancia o función.
+Funcionarios itinerantes pueden recorrer rutas entre pueblos y procurar coincidir con **días de mercado**, cuando también llegan habitantes de aldeas próximas.
+
+Según sus funciones, pueden encargarse de:
+
+- recaudar impuestos, tributos o tasas;
+- recibir pagos o productos debidos;
+- comunicar órdenes o bandos;
+- recoger denuncias o reclamaciones;
+- registrar determinados asuntos legales;
+- citar a personas ante una autoridad superior;
+- transportar documentación o mensajes oficiales.
+
+Tras completar su labor, continúan hacia otro pueblo.
+
+Las aldeas normalmente no necesitan recibir estas visitas de forma regular: sus habitantes pueden acudir al pueblo de referencia, salvo que un asunto concreto exija desplazamiento del funcionario.
+
+### 13. Seguridad
+
+La **guardia permanente no está asociada al rango Pueblo**.
+
+La seguridad ordinaria de un pueblo depende de las patrullas y de la estructura territorial de Norgard, igual que sucede con otros núcleos no estratégicos.
+
+Los destacamentos, puestos de vigilancia o guarniciones fijas se generan por la **importancia del enclave que deben proteger**, no por la existencia de un pueblo.
+
+Pueden justificarse, por ejemplo, en:
+
+- un puente fronterizo;
+- un vado o paso estratégico;
+- un cruce territorial crítico;
+- una mina, cantera o complejo productivo de gran valor;
+- almacenes o infraestructura económica especialmente importante;
+- un puerto o embarcadero estratégico;
+- una frontera o zona con amenaza especial.
+
+Uno de estos enclaves puede coincidir geográficamente con un pueblo o encontrarse junto a él, pero la guardia existe para proteger **el enclave**, no porque el asentamiento sea un Pueblo.
+
+Murallas, fortificaciones y torres tampoco forman parte del esqueleto normal de Pueblo.
+
+---
+
+## Posada
+
+La **posada NO forma parte del esqueleto mínimo obligatorio**.
+
+Es un servicio **opcional pero potencialmente frecuente**.
+
+Su probabilidad debe aumentar cuando exista:
+
+- una ruta importante;
+- tránsito habitual de viajeros;
+- comerciantes;
+- transportistas;
+- distancia considerable hasta otros alojamientos;
+- un mercado especialmente activo;
+- función de etapa dentro de una ruta territorial.
+
+Un pueblo apartado puede disponer únicamente de taberna.
+
+Otro situado en un cruce importante puede disponer de una o varias posadas.
+
+La taberna y la posada cumplen funciones distintas:
+
+- **taberna:** punto social local y consumo sencillo;
+- **posada:** alojamiento y servicios orientados principalmente a viajeros.
 
 ---
 
 ## Lo que NO es obligatorio
 
-El esqueleto de pueblo no exige todavía de forma individual:
+El esqueleto de pueblo no exige de forma individual:
 
 - molino;
 - posada;
-- mercado permanente;
-- edificio administrativo;
+- carpintero;
+- carretero;
+- curtidor;
+- alfarero;
+- tienda concreta;
+- edificio administrativo permanente;
+- autoridad territorial residente;
 - guardia fija;
 - escuela;
 - plaza formal;
@@ -210,14 +312,22 @@ Lo obligatorio es que exista **actividad especializada suficiente para distingui
 
 **Aldea:** comunidad rural básica que puede depender ampliamente de otros núcleos.
 
-**Pueblo:** comunidad mayor que ya presta determinados servicios, concentra actividad especializada y actúa parcialmente como centro para su entorno inmediato.
+**Pueblo:** comunidad mayor que concentra mercado periódico, servicios y oficios especializados y actúa como centro local para varias aldeas de su entorno.
+
+---
+
+## Principio de diseño
+
+El pueblo no debe convertirse en una “aldea con más edificios”.
+
+Su función jugable es constituir el **primer nivel real de centralidad territorial**:
+
+**aldeas -> pueblo -> villa -> Treskal**
 
 ---
 
 ## Próxima fase
 
-Los esqueletos procedurales de **aldea, pueblo y villa** ya están aprobados.
+El esqueleto mínimo de Pueblo queda aprobado.
 
-Treskal no forma parte de este ciclo: será desarrollada manualmente como ciudad canónica única.
-
-Por tanto, las categorías procedurales pueden avanzar a sus posibilidades opcionales, modelos, probabilidades y pesos sin esperar a un esqueleto procedural de Treskal.
+La siguiente fase consiste en estudiar únicamente las **posibilidades que afecten al gameplay**, evitando desarrollar detalles enciclopédicos que no tengan uso en el juego.
