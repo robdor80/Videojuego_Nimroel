@@ -1074,7 +1074,123 @@ La aldea no necesita mantener un representante permanente únicamente para relac
 
 ---
 
-# 13. Preparación para JSON
+# 13. Ciclo estacional simplificado de trabajo rural
+
+**scope:** `Norgard/Treskal/village`  
+**feature_type:** rutina estacional / actividad ambiental  
+**availability_mode:** base para gameplay
+
+## Principio
+
+Para gameplay no se simularán de forma independiente todas las labores agrícolas ni cada cultivo.
+
+Las tareas rurales se agrupan en **cuatro grandes bloques estacionales**, suficientes para que la aldea cambie de actividad y apariencia a lo largo del año sin convertir la agricultura en una mecánica de simulación exhaustiva.
+
+Las estaciones de Nimroel coinciden con las terrestres:
+
+- primavera;
+- verano;
+- otoño;
+- invierno.
+
+Conservan los mismos meses y fechas estacionales.
+
+---
+
+## Primavera — Trabajo de campo
+
+Actividad dominante:
+
+**Trabajo de campo**
+
+Incluye de forma general:
+
+- preparar tierras;
+- sembrar y plantar huertos;
+- sembrar lino;
+- sembrar o plantar remolachas;
+- atender prados;
+- intensa actividad ganadera;
+- atención a crías y nacimientos.
+
+No es necesario que el juego distinga mecánicamente entre arar, abonar, sembrar, escardar u otras labores menores cuando todas puedan representarse bajo la misma actividad rural general.
+
+---
+
+## Verano — Siega y cosecha
+
+Actividad dominante:
+
+**Siega y cosecha**
+
+Incluye de forma general:
+
+- siega y recogida de heno;
+- cosecha de trigo y centeno;
+- recogida de lino;
+- trabajo y recolección en huertas;
+- recogida de cerezas;
+- otras cosechas propias de la época.
+
+Es una de las épocas de mayor presencia de habitantes trabajando fuera de las viviendas y explotaciones.
+
+---
+
+## Otoño — Cosecha y preparación
+
+Actividad dominante:
+
+**Cosecha y preparación**
+
+Incluye de forma general:
+
+- recogida de manzanas;
+- recogida de peras;
+- recogida de remolachas;
+- últimas cosechas;
+- almacenamiento de alimentos y reservas;
+- preparación y siembra de cereales de invierno;
+- comienzo de los trabajos de obtención y preparación de leña.
+
+---
+
+## Invierno — Reservas y mantenimiento
+
+Actividad dominante:
+
+**Reservas y mantenimiento**
+
+Incluye de forma general:
+
+- matanza del cerdo;
+- procesamiento y conservación de alimentos;
+- trabajo con leña;
+- mayor atención al ganado cerca de las viviendas y corrales;
+- reparaciones;
+- mantenimiento de explotaciones;
+- trabajos domésticos e interiores.
+
+---
+
+## Regla para el sistema de juego
+
+El motor puede tratar estos bloques como **categorías estacionales de actividad**.
+
+Las animaciones, escenas y rutinas concretas pueden variar dentro de cada categoría sin exigir una simulación agrícola individualizada por cultivo.
+
+El objetivo es que el jugador perciba claramente que:
+
+- la aldea cambia con las estaciones;
+- los habitantes realizan trabajos coherentes con la época del año;
+- determinados espacios y NPC están más o menos activos según la estación.
+
+### Principio rector
+
+**La estacionalidad debe sentirse en la vida de la aldea sin convertirse en una simulación agrícola compleja.**
+
+---
+
+# 14. Preparación para JSON
 
 Este documento debe considerarse **fuente canónica humana**.
 
