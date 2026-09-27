@@ -147,7 +147,7 @@ y añade capacidad para:
 
 Este nivel **no implica** fabricar acero extraordinario, armas excepcionales ni objetos legendarios.
 
-La calidad individual del artesano no se deriva automáticamente del tamaño del asentamiento. Un pueblo puede tener herreros simplemente competentes, y una aldea puede albergar excepcionalmente a un maestro por talento, tradición familiar o técnica.
+El rango Pueblo fija una **capacidad mínima de servicio**, no una cualificación excepcional del individuo. La calidad individual del artesano no se deriva automáticamente del tamaño del asentamiento. Un pueblo puede tener herreros simplemente competentes, y una aldea puede albergar excepcionalmente a un maestro por talento, tradición familiar o técnica.
 
 La producción de acero no forma parte automáticamente de una herrería local: el herrero puede trabajar hierro y acero ya producidos y distribuidos desde centros metalúrgicos especializados.
 

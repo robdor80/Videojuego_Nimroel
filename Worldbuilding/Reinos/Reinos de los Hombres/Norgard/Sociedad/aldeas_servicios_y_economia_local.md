@@ -197,7 +197,7 @@ Puede provocar desplazamientos para:
 
 ---
 
-## 4.4. Herrería básica
+## 4.4. Herrería local — capacidad mínima por asentamiento
 
 **feature_id:** `norgard.rural.basic_smithy`  
 **feature_type:** oficio + taller  
@@ -207,13 +207,15 @@ Puede provocar desplazamientos para:
 
 La presencia exacta de herrerías fuera de las regiones ya definidas debe resolverse por localidad.
 
+El tamaño o rango de un asentamiento puede fijar una **capacidad mínima de servicio**, pero nunca determina por sí solo el talento excepcional, la maestría o una especialización extraordinaria del artesano.
+
 ### Override canónico — Treskal
 
 **scope:** `Norgard/Treskal`
 
-En toda aldea y pueblo de Treskal debe existir una herrería básica.
+En toda **aldea** de Treskal debe existir como mínimo una capacidad de **herrería de nivel 1 — herrero básico**.
 
-Su función es cubrir necesidades cotidianas como:
+Su función cubre necesidades cotidianas como:
 
 - reparación de herramientas;
 - herrajes;
@@ -222,11 +224,28 @@ Su función es cubrir necesidades cotidianas como:
 - mantenimiento agrícola;
 - pequeñas reparaciones metálicas.
 
-Un herrero avanzado o especialista es independiente del tamaño del asentamiento.
+En todo **pueblo** de Treskal debe existir como mínimo una capacidad funcional de **nivel 2 — herrero competente / herrería local reforzada**.
 
-Puede existir en una aldea y no existir en un pueblo.
+Este nivel añade capacidad para:
 
-No asumir que toda herrería básica fabrica armamento o piezas complejas.
+- herramientas de buena calidad;
+- reparaciones más complejas;
+- trabajos metálicos más finos;
+- armas funcionales normales;
+- mejor aprovechamiento del hierro y del acero disponible.
+
+El nivel 2 **no implica automáticamente**:
+
+- maestro herrero;
+- armero especializado;
+- conocimientos raros;
+- producción metalúrgica;
+- producción de acero;
+- armas de alta calidad o excepcionales.
+
+Los maestros herreros, armeros especializados y artesanos excepcionales siguen siendo independientes del tamaño del asentamiento: pueden existir excepcionalmente en un núcleo menor y no existir en otro mayor.
+
+La producción de hierro o acero no forma parte automáticamente de una herrería local.
 
 ---
 

@@ -254,7 +254,7 @@ Puede realizar:
 - piezas simples;
 - mantenimiento corriente.
 
-## Nivel 2 — Herrero competente / especializado
+## Nivel 2 — Herrero competente / herrería local reforzada
 
 **Nivel de referencia de un Pueblo.**
 
@@ -267,6 +267,8 @@ Además del nivel 1 puede realizar:
 - mejor tratamiento del hierro y del acero disponible.
 
 No implica producir acero extraordinario ni fabricar armas excepcionales.
+
+El nivel 2 representa una **capacidad mínima de servicio del Pueblo**, no una especialización extraordinaria del individuo. No convierte automáticamente al herrero en maestro herrero, armero especializado ni conocedor de técnicas raras.
 
 ## Nivel 3 — Maestro herrero / armero
 
@@ -296,6 +298,10 @@ Se asocia a:
 - conocimiento extraordinario.
 
 No aparece simplemente porque un asentamiento sea grande.
+
+### Regla de progresión
+
+**El rango del asentamiento puede determinar una capacidad mínima de servicio; nunca determina por sí solo talento excepcional, maestría o especialización extraordinaria.**
 
 ---
 
