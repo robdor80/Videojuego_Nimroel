@@ -1172,6 +1172,26 @@ Incluye de forma general:
 
 ---
 
+## Actividad transversal — Pesca
+
+En las aldeas situadas junto a **ríos, costa u otras aguas aptas para pesca**, la pesca puede formar parte de la actividad económica y alimentaria local durante el año.
+
+No constituye una obligación para todas las aldeas.
+
+Puede incluir:
+
+- pesca fluvial;
+- pesca costera;
+- preparación y reparación de útiles de pesca;
+- transporte de capturas;
+- limpieza y conservación del pescado.
+
+La intensidad concreta puede variar por estación, clima, estado del agua y recursos disponibles, pero para gameplay no es necesario simular un calendario pesquero detallado.
+
+El sistema debe tratar la pesca como una actividad disponible **solo cuando la geografía de la aldea la justifique**.
+
+---
+
 ## Regla para el sistema de juego
 
 El motor puede tratar estos bloques como **categorías estacionales de actividad**.
@@ -1407,7 +1427,8 @@ La dieta cotidiana de una familia rural se basa principalmente en:
 - legumbres;
 - leche y productos lácteos;
 - huevos;
-- cantidades moderadas de carne y grasa animal.
+- cantidades moderadas de carne y grasa animal;
+- pescado cuando existe acceso local o regional a pesca fluvial o marítima.
 
 El pan es un alimento básico y puede elaborarse con trigo, centeno u otras mezclas que se definan en el catálogo de alimentos.
 
@@ -1415,7 +1436,9 @@ Los lácteos pueden incluir leche fresca y productos más conservables como ques
 
 La carne no se trata como alimento abundante diario. Buena parte del cerdo y otras carnes se conserva mediante salado, secado o ahumado y se consume gradualmente.
 
-Las ollas, sopas y potajes permiten combinar cereal o legumbre, verduras, grasa y pequeñas cantidades de carne.
+En aldeas costeras o próximas a ríos con pesca, el pescado puede consumirse **fresco** y también conservarse mediante técnicas como salado, secado o ahumado cuando corresponda.
+
+Las ollas, sopas y potajes permiten combinar cereal o legumbre, verduras, grasa, pequeñas cantidades de carne o pescado según disponibilidad.
 
 La alimentación cambia con la estación:
 
