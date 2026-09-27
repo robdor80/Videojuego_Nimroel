@@ -458,20 +458,121 @@ El jugador puede:
 **feature_type:** producción doméstica  
 **availability_mode:** común
 
-### Canon
+### Canon general
 
 La carne rural no depende de una carnicería estable en cada aldea.
 
-Las familias pueden criar según región, riqueza y recursos:
-
-- vacas;
-- cerdos;
-- ovejas;
-- gallinas;
-- conejos;
-- otros animales domésticos permitidos por el canon regional.
+Las familias pueden criar animales según región, riqueza, terreno, necesidades y recursos.
 
 El sacrificio y aprovechamiento pueden realizarse en el ámbito doméstico o con ayuda de vecinos experimentados.
+
+### Override canónico — aldeas del territorio de Treskal
+
+**scope:** `Norgard/Treskal/village`
+
+La ganadería doméstica forma parte habitual de la economía familiar rural, pero **no todas las familias poseen todas las especies**.
+
+La composición de animales de cada explotación debe variar según:
+
+- riqueza familiar;
+- superficie disponible;
+- tipo de tierras;
+- actividad principal;
+- necesidades de alimentación y transporte;
+- acceso a pastos propios o comunales.
+
+#### Animales de producción
+
+Especies aprobadas para las aldeas del territorio de Treskal:
+
+- vacas;
+- toros reproductores;
+- bueyes;
+- caballos;
+- burros;
+- ovejas;
+- cabras;
+- cerdos;
+- conejos;
+- gallinas.
+
+#### Frecuencia relativa
+
+Como tendencia regional, sin convertirla en una plantilla obligatoria por hogar:
+
+- **muy habituales:** vacas, cerdos, gallinas y ovejas y/o cabras;
+- **frecuentes:** conejos;
+- **menos habituales:** caballos y burros;
+- **escasos:** bueyes;
+- **muy escasos:** toros reproductores.
+
+En muchas explotaciones es habitual disponer de **al menos una vaca** y **uno o varios cerdos**, además de gallinas y ovejas y/o cabras, por su utilidad para leche y derivados, carne, huevos, lana cuando corresponda y producción de estiércol.
+
+Esto no constituye una obligación individual. Una familia puede carecer de cualquiera de estas especies y compensarlo mediante intercambio, parentesco, vecinos o recursos de otras explotaciones.
+
+Los **toros reproductores** son especialmente escasos y pueden dar servicio a numerosas explotaciones e incluso a varias aldeas próximas.
+
+Los **bueyes** son machos castrados destinados principalmente a trabajo y tiro, no a reproducción.
+
+#### Manejo diario
+
+Vacas, ovejas, cabras, caballos y burros pueden permanecer en corrales o establos y ser trasladados a pastos propios o comunales durante el día.
+
+Como rutina normal:
+
+- por la mañana se atienden, alimentan, abrevan y, cuando corresponde, se ordeñan;
+- durante el día pueden ser conducidos a los pastos;
+- antes del anochecer se recogen de nuevo;
+- por la noche permanecen protegidos en corrales, cuadras o establos cuando proceda.
+
+Las horas concretas dependen de estación, clima, distancia a los pastos y necesidades de la explotación.
+
+Los niños pueden colaborar en tareas adecuadas a su edad, como:
+
+- acompañar o conducir animales;
+- recogerlos al final del día;
+- alimentar gallinas;
+- recoger huevos;
+- ayudar en otras tareas domésticas sencillas.
+
+Los **cerdos** permanecen normalmente en sus corrales y se alimentan allí, incluyendo el aprovechamiento de restos orgánicos domésticos adecuados.
+
+Las **gallinas** pueden permanecer sueltas alrededor de la explotación durante el día, recibir cereal u otro alimento complementario, y deben recogerse por la noche. La recogida de huevos forma parte de la rutina doméstica.
+
+Los **conejos** se mantienen normalmente en jaulas o conejeras próximas a la vivienda o a sus anexos.
+
+Las crías —terneros, corderos, cabritos, potros, lechones, polluelos, etc.— forman parte del ciclo reproductivo y estacional de las explotaciones, no de categorías de especie separadas.
+
+#### Animales domésticos de compañía y utilidad
+
+En las aldeas del territorio de Treskal son abundantes:
+
+- perros;
+- gatos.
+
+Ambos pertenecen normalmente a familias concretas aunque puedan moverse libremente por la explotación y sus alrededores.
+
+Los perros pueden cumplir funciones de:
+
+- vigilancia;
+- acompañamiento;
+- ayuda con el ganado;
+- alerta frente a extraños o animales.
+
+Los gatos son habituales alrededor de:
+
+- viviendas;
+- graneros;
+- pajares;
+- almacenes;
+
+y contribuyen al control de roedores.
+
+### Regla de generación
+
+La generación no debe asignar a todas las familias el mismo conjunto de animales.
+
+La distribución debe producir explotaciones diferentes y plausibles entre sí, de forma que la **suma de la aldea** resulte coherente sin convertir cada hogar en una granja idéntica.
 
 ### Regla negativa
 
