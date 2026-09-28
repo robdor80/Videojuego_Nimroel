@@ -14,7 +14,7 @@ No fija todavía caudales exactos, secciones de cauce, velocidades de corriente 
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 El estado de un curso de agua no debe depender de una única etiqueta como “río”, “arroyo” o “afluente”.
 
