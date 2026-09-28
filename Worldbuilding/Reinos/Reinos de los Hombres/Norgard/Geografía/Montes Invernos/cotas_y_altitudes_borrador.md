@@ -2,7 +2,7 @@
 
 ## Estado
 
-**BORRADOR DE DISEÑO**
+**BORRADOR DE DISEÑO — APROBADO EN ESTA FASE**
 
 Este documento define provisionalmente la estructura altitudinal general de los Montes Invernos como sistema montañoso compartido por los territorios administrados por las Casas Galdren y Valrik.
 
@@ -182,7 +182,7 @@ La existencia de nieve permanente dependerá de:
 - exposición;
 - temperatura estival.
 
-Se resolverá después de cerrar nieve/deshielo y vientos.
+La decisión queda deliberadamente aplazada hasta la revisión regional de los Montes Invernos, cuando exista cartografía suficiente y se haya desarrollado también el sector Galdren.
 
 ---
 

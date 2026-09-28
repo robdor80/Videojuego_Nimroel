@@ -213,14 +213,14 @@ Sin embargo, la existencia de:
 - nieve permanente extensa;
 - campos de hielo;
 
-queda **pendiente** hasta cerrar completamente:
+queda **deliberadamente aplazada** para una revisión regional posterior.
 
-- latitud efectiva;
-- régimen térmico;
-- precipitación;
-- orientación;
-- vientos;
-- exposición solar.
+Los bloques de temperatura, precipitación, viento, nieve y exposición ya permiten sostener neveros persistentes, pero no se considera necesario fijar todavía glaciares o nieve permanente. La decisión final deberá tener en cuenta conjuntamente:
+
+- latitud efectiva y cartografía regional;
+- orientación concreta de las cumbres;
+- exposición solar;
+- distribución precisa de las mayores altitudes entre Galdren y Valrik.
 
 Si existen, deberían ser fenómenos pequeños y localizados, no una característica general de toda la cordillera.
 
