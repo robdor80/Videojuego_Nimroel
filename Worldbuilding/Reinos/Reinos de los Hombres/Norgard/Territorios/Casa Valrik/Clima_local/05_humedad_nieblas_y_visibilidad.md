@@ -14,7 +14,7 @@ No fija todavía porcentajes exactos de humedad, visibilidades medidas en metros
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 La humedad local debe depender principalmente de:
 
