@@ -213,3 +213,39 @@ subzona base
 ```
 
 Esta regla todavía no define valores numéricos ni fórmulas de juego.
+
+
+---
+
+## 9. Propuesta pendiente de validación — influencia de los Montes Invernos
+
+### Estado
+
+**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+
+A partir del canon existente y de la función de los Montes Invernos como divisoria climática, se propone que su influencia local sobre el territorio de Treskal se exprese mediante los siguientes efectos cualitativos:
+
+1. **Enfriamiento progresivo por altitud** al aproximarse a la cordillera y ascender por sus laderas.
+2. **Mayor frecuencia y permanencia de nieve** en altura que en las tierras bajas.
+3. **Acumulación nival estacional** suficiente para alimentar deshielo primaveral.
+4. **Aumento de precipitación en el entorno montañoso y piedemonte**, coherente con el canon ya fijado para la franja meridional de los Montes Invernos.
+5. **Nacimiento y alimentación de cursos de agua** en sus vertientes, incluidos Sareno y Theleno y numerosos afluentes menores.
+6. **Respuesta hidrológica estacional marcada**: lluvias + nieve + deshielo pueden aumentar mucho el caudal de ríos y arroyos.
+7. **Drenaje de aire frío hacia valles y depresiones**, favoreciendo heladas locales incluso fuera de las cotas más altas.
+8. **Contrastes locales por orientación, exposición y abrigo**: laderas soleadas, umbrías, valles protegidos y pasos pueden comportarse de forma distinta dentro de la misma subzona.
+9. **Ruptura climática más marcada al cruzar la cordillera** que la transición gradual costa-interior, reforzando el paso hacia las tierras frías septentrionales.
+
+### Cautela metodológica
+
+No se fija todavía qué laderas concretas son más húmedas o secas por efecto de barlovento/sotavento.
+
+Esa asimetría depende de los **vientos dominantes**, que se definirá en el bloque específico de viento.
+
+Hasta entonces solo se considera seguro que la cordillera:
+
+- modifica temperatura por altitud;
+- favorece nieve;
+- condiciona precipitación;
+- genera deshielo;
+- organiza cabeceras fluviales;
+- crea microclimas de valle, ladera y paso.
