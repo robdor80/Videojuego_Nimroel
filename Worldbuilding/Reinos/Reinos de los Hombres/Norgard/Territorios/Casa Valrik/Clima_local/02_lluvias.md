@@ -14,7 +14,7 @@ No fija todavía milímetros anuales, intensidades horarias, probabilidades num�
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 El territorio de Treskal no se considera seco en conjunto.
 
