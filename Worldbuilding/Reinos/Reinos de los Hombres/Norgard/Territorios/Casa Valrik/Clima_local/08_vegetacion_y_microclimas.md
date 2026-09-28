@@ -2,7 +2,7 @@
 
 ## Estado
 
-**BORRADOR DE DISEÑO — PENDIENTE DE DESARROLLO**
+**BORRADOR DE DISEÑO — AMPLIACIÓN TERRITORIAL PENDIENTE DE VALIDACIÓN**
 
 Este documento recogerá el efecto ambiental de:
 
@@ -97,3 +97,467 @@ subzona regional
 ```
 
 Esto permitirá inferir de forma coherente barro, humedad, niebla, nieve residual, viento, visibilidad y comportamiento de pequeños cursos de agua.
+
+
+---
+
+## 2. Bosque de los Gemelos y vegetación de ribera
+
+### Estado
+
+**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+
+El Bosque de los Gemelos y las franjas vegetadas asociadas a Sareno y Theleno deben funcionar como un modificador ambiental distinto del Bosque Negro.
+
+Se parte del canon ya fijado:
+
+- bosque caducifolio templado de llanura aluvial;
+- predominio de robles, fresnos y olmos;
+- álamos, sauces y alisos junto a los cauces;
+- pequeñas manchas de pino en zonas más secas.
+
+### Efectos microclimáticos
+
+La proximidad de los grandes ríos y la vegetación ribereña favorecen:
+
+- mayor humedad ambiental;
+- rocío frecuente;
+- sombra local;
+- nieblas matinales;
+- suelo húmedo durante más tiempo;
+- menor amplitud térmica inmediata junto al cauce;
+- protección parcial frente al viento en sectores arbolados.
+
+### Diferencia frente al Bosque Negro
+
+No debe sentirse como una masa cerrada y oscura equivalente al Bosque Negro.
+
+Su paisaje puede combinar:
+
+- bosque;
+- claros;
+- campos;
+- praderas;
+- caminos;
+- aldeas y pueblos;
+- brazos fluviales;
+- sotos y vegetación de ribera.
+
+Es, por tanto, un ambiente mucho más abierto y humanizado.
+
+---
+
+## 3. Riberas, sotos y márgenes de cursos menores
+
+Las riberas deben actuar como **microcorredores húmedos** incluso cuando atraviesan zonas relativamente secas.
+
+Factores locales:
+
+- sombra;
+- agua superficial;
+- nivel freático próximo;
+- vegetación densa;
+- depósito de sedimentos.
+
+Esto permite que un pequeño arroyo pueda mantener:
+
+- hierba verde;
+- arbustos;
+- árboles de ribera;
+- barro;
+- insectos;
+- niebla o rocío;
+
+cuando el terreno abierto inmediato ya esté seco.
+
+La intensidad del efecto debe disminuir progresivamente al alejarse del cauce.
+
+---
+
+## 4. Praderas y pastizales
+
+Las praderas y pastos deben responder con rapidez a:
+
+- lluvia;
+- sequedad;
+- temperatura;
+- viento;
+- pastoreo;
+- inundación;
+- nieve.
+
+### Periodos húmedos
+
+Pueden presentar:
+
+- crecimiento abundante;
+- suelo blando;
+- hierba intensa;
+- charcos en depresiones;
+- rocío.
+
+### Periodos secos
+
+Pueden mostrar:
+
+- hierba más corta y seca;
+- suelo endurecido;
+- menor humedad superficial;
+- mayor riesgo de incendio si la sequedad se prolonga.
+
+### Tras deshielo
+
+En piedemonte y norte pueden aparecer:
+
+- praderas saturadas;
+- barro;
+- crecimiento rápido cuando aumenta la temperatura.
+
+---
+
+## 5. Tierras cultivadas
+
+La vegetación agrícola no debe actuar como un simple decorado fijo.
+
+Su aspecto debe depender de:
+
+- cultivo;
+- estación;
+- momento del ciclo agrícola;
+- lluvia;
+- sequedad;
+- inundación;
+- heladas.
+
+El estado ambiental puede reflejarse visual y narrativamente mediante:
+
+- suelo húmedo o seco;
+- cultivos vigorosos o castigados;
+- campos encharcados;
+- rastrojos;
+- terrenos recién trabajados;
+- vegetación doblada por tormenta o viento.
+
+No se fijan todavía calendarios agrícolas exactos por cultivo.
+
+---
+
+## 6. Claros, bordes forestales y zonas taladas
+
+Son zonas de transición microclimática importante.
+
+### Frente al interior del bosque
+
+Suelen presentar:
+
+- más radiación solar;
+- más viento;
+- mayor oscilación térmica;
+- secado más rápido;
+- deshielo más rápido en zonas soleadas;
+- mayor exposición a tormentas.
+
+### Zonas taladas
+
+Una corta reciente puede modificar localmente:
+
+- viento;
+- insolación;
+- humedad;
+- escorrentía;
+- crecimiento de vegetación baja.
+
+El terreno no pasa instantáneamente de “bosque” a “campo”.
+
+Puede conservar:
+
+- tocones;
+- restos de ramas;
+- suelo removido;
+- regeneración joven;
+- matorral.
+
+---
+
+## 7. Piedemonte de los Montes Invernos
+
+La vegetación debe responder al aumento progresivo de:
+
+- altitud;
+- precipitación;
+- frío;
+- nieve.
+
+No se propone una línea vegetal rígida.
+
+El paisaje puede alternar:
+
+- bosques;
+- pastos;
+- matorral;
+- claros;
+- valles húmedos;
+- laderas pedregosas.
+
+Las laderas resguardadas y los fondos de valle pueden conservar vegetación más abundante que crestas expuestas a similar altitud.
+
+---
+
+## 8. Montes Invernos — gradiente altitudinal
+
+Se propone una transición progresiva:
+
+### Cotas bajas
+
+- bosque y vegetación relativamente continua;
+- mezcla condicionada por orientación y humedad.
+
+### Cotas medias
+
+- aumento de especies resistentes al frío;
+- mayor presencia relativa de coníferas;
+- pastos y claros montanos.
+
+### Cotas altas
+
+- arbolado cada vez más bajo, disperso y discontinuo;
+- matorral resistente;
+- pastos de montaña;
+- roca expuesta.
+
+### Crestas y cumbres
+
+- vegetación escasa;
+- líquenes, musgos y plantas bajas resistentes;
+- roca, nieve e hielo estacional.
+
+No se fija todavía una cota exacta universal para el límite superior del bosque.
+
+Dependerá de:
+
+- orientación;
+- exposición;
+- latitud;
+- viento;
+- acumulación de nieve.
+
+---
+
+## 9. Tierras al norte de los Montes Invernos
+
+El norte debe reflejar la transición ya canónica hacia el cinturón boreal y, más al norte, hacia ambientes subpolares.
+
+### Tendencia general
+
+- más coníferas;
+- menos frondosas;
+- árboles más bajos y dispersos hacia el extremo norte;
+- aumento de abedules en bordes y transición;
+- mayor presencia de matorral bajo;
+- progresión hacia tundra donde el clima ya no permite bosque continuo.
+
+La transición debe ser gradual, no una frontera vegetal perfectamente recta.
+
+---
+
+## 10. Costa septentrional
+
+La costa fría puede combinar:
+
+- vegetación baja resistente;
+- matorral;
+- praderas frías;
+- coníferas en sectores protegidos;
+- zonas abiertas muy expuestas al viento.
+
+La influencia marítima puede suavizar ciertos extremos térmicos sin convertir la costa en una región templada.
+
+Los lugares expuestos a:
+
+- viento;
+- sal;
+- frío;
+
+tenderán a presentar vegetación más baja y resistente.
+
+---
+
+## 11. Orientación y exposición
+
+La orientación debe modificar la vegetación local.
+
+### Laderas más soleadas
+
+Tienden a:
+
+- calentarse más;
+- secarse antes;
+- perder nieve antes;
+- favorecer vegetación más tolerante a sequedad.
+
+### Umbrías
+
+Tienden a:
+
+- conservar humedad;
+- mantener nieve más tiempo;
+- presentar suelos más fríos;
+- favorecer musgos y vegetación de ambientes húmedos.
+
+### Zonas expuestas al viento
+
+Pueden presentar:
+
+- árboles deformados;
+- menor altura vegetal;
+- menor continuidad forestal;
+- mayor pérdida de humedad superficial si el aire es seco.
+
+---
+
+## 12. Vegetación como modificador y como consecuencia
+
+La vegetación debe funcionar en ambos sentidos.
+
+### Modifica el ambiente
+
+Puede alterar:
+
+- sombra;
+- viento;
+- evaporación;
+- humedad;
+- escorrentía;
+- acumulación de nieve.
+
+### Responde al ambiente
+
+Su estado depende de:
+
+- temperatura;
+- agua disponible;
+- estación;
+- inundación;
+- nieve;
+- viento;
+- uso humano.
+
+Por tanto, el sistema no debe tratar clima y vegetación como capas independientes.
+
+---
+
+## 13. Estado estacional de la vegetación
+
+La vegetación debe conservar una evolución estacional reconocible.
+
+### Primavera
+
+- brotación;
+- suelo húmedo;
+- crecimiento rápido;
+- praderas verdes;
+- floración local;
+- cauces y márgenes muy activos.
+
+### Verano
+
+- vegetación plenamente desarrollada;
+- posible secado de pastos interiores;
+- contraste entre zonas húmedas y secas;
+- sombra forestal muy marcada.
+
+### Otoño
+
+En frondosas caducifolias:
+
+- cambio de color;
+- caída de hoja;
+- acumulación de hojarasca;
+- aumento de humedad del suelo con las lluvias.
+
+### Invierno
+
+- caducifolias sin hoja;
+- coníferas manteniendo cobertura;
+- vegetación baja reducida;
+- nieve y escarcha condicionando el paisaje.
+
+Este ciclo podrá variar con latitud y altitud.
+
+---
+
+## 14. Memoria ambiental de la vegetación
+
+La vegetación no debe cambiar instantáneamente con una sola lluvia o un solo día de calor.
+
+Debe conservar memoria de:
+
+- semanas húmedas o secas;
+- inundaciones;
+- heladas;
+- nieve;
+- tala;
+- incendio;
+- tránsito y pastoreo.
+
+Ejemplo conceptual:
+
+```
+estado previo
++ estación
++ agua disponible
++ temperatura acumulada
++ perturbaciones
+= estado vegetal actual
+```
+
+---
+
+## 15. Aplicación a narración y escena
+
+La IA narrativa puede utilizar el estado vegetal como parte de la descripción del mismo lugar en momentos distintos.
+
+Ejemplo:
+
+- una pradera puede estar empapada y verde en primavera;
+- seca y amarillenta tras semanas sin lluvia;
+- cubierta de escarcha en una mañana otoñal;
+- bajo nieve en invierno.
+
+El lugar sigue siendo el mismo.
+
+Cambia su estado ambiental.
+
+---
+
+## 16. Regla para el futuro motor
+
+Modelo conceptual:
+
+```
+subzona regional
++ latitud
++ altitud
++ suelo
++ drenaje
++ agua cercana
++ orientación
++ exposición
++ estación
++ meteorología reciente
++ uso humano
+= cobertura y estado vegetal local
+```
+
+Este resultado podrá influir después en:
+
+- visibilidad;
+- humedad;
+- barro;
+- fuego;
+- rastreo;
+- tránsito;
+- recursos;
+- fauna;
+- narración;
+- aspecto visual.
