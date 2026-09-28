@@ -2,7 +2,7 @@
 
 ## Estado
 
-**BORRADOR DE DISEÑO**
+**BORRADOR DE DISEÑO — APROBADO**
 
 Los Montes Invernos son una cordillera compartida por los territorios administrados por **Casa Galdren** y **Casa Valrik**.
 
