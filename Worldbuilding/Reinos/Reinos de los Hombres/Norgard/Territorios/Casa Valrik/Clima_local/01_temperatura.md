@@ -14,7 +14,7 @@ No fija todavía temperaturas exactas por día, fórmulas de motor ni umbrales n
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 La temperatura del territorio se entiende como el resultado combinado de:
 
