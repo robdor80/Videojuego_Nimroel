@@ -2,7 +2,7 @@
 
 ## Estado
 
-**BORRADOR DE DISEÑO — AMPLIACIÓN TERRITORIAL PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 Este documento recogerá el efecto ambiental de:
 
@@ -105,7 +105,7 @@ Esto permitirá inferir de forma coherente barro, humedad, niebla, nieve residua
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 El Bosque de los Gemelos y las franjas vegetadas asociadas a Sareno y Theleno deben funcionar como un modificador ambiental distinto del Bosque Negro.
 
