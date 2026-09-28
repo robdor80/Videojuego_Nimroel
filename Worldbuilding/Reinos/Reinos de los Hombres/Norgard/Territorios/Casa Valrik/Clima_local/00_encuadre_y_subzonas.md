@@ -253,11 +253,11 @@ Hasta entonces solo se considera seguro que la cordillera:
 
 ---
 
-## 10. Propuesta pendiente de validación — valles, depresiones, corredores y exposición
+## 10. Valles, depresiones, corredores y exposición
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 No se crearán por ahora nuevas subzonas climáticas rígidas para cada valle, depresión, paso o loma.
 
