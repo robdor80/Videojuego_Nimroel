@@ -24,7 +24,7 @@ No se fijarán alturas arbitrarias sin relacionarlas con:
 
 ### Estado
 
-**BORRADOR DE DISEÑO — ESCALA ALTITUDINAL APROBADA; LOCALIZACIÓN INTERNA PENDIENTE**
+**BORRADOR DE DISEÑO — APROBADO**
 
 Los Montes Invernos deben ser una cordillera **alta, extensa y climáticamente muy relevante**, pero no la cordillera más gigantesca de Norgard.
 
@@ -293,3 +293,25 @@ La posición exacta de:
 quedará pendiente hasta disponer de cartografía regional suficientemente precisa y hasta desarrollar el lore territorial de Galdren.
 
 Esto evita que el desarrollo local de Treskal imponga accidentalmente decisiones geográficas sobre el futuro desarrollo de Galdren.
+
+
+---
+
+## 10. Decisiones aprobadas
+
+Queda aprobado dentro del presente borrador:
+
+- la escala altitudinal general propuesta para los Montes Invernos;
+- piedemonte meridional aproximado de 400–900 m;
+- valles montanos y laderas bajas de 800–1.500 m;
+- laderas medias y altas de 1.500–2.300 m;
+- crestas principales de 2.200–2.800 m;
+- cumbres habituales de 2.600–3.200 m;
+- cumbres más elevadas de 3.200–3.500 m;
+- uno o pocos picos excepcionales de hasta aproximadamente 3.600 m;
+- pasos principales practicables aproximadamente entre 1.500 y 2.100 m;
+- cabeceras de Sareno y Theleno alimentadas por cuencas, manantiales, arroyos, lluvia y deshielo de montaña;
+- ausencia, por ahora, de una decisión definitiva sobre glaciares o nieve permanente;
+- carácter transfronterizo de la cordillera entre Galdren y Valrik;
+- no asignar todavía la cumbre máxima a ninguno de los dos territorios;
+- resolver la localización precisa de grandes cumbres, pasos y valles cuando exista cartografía regional suficiente y se desarrolle el lore de Galdren.
