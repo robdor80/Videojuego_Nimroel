@@ -249,3 +249,65 @@ Hasta entonces solo se considera seguro que la cordillera:
 - genera deshielo;
 - organiza cabeceras fluviales;
 - crea microclimas de valle, ladera y paso.
+
+
+---
+
+## 10. Propuesta pendiente de validación — valles, depresiones, corredores y exposición
+
+### Estado
+
+**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+
+No se crearán por ahora nuevas subzonas climáticas rígidas para cada valle, depresión, paso o loma.
+
+Estos elementos se tratarán como **modificadores geomorfológicos locales** superpuestos a la subzona ambiental de base.
+
+### Efectos propuestos
+
+1. **Valles de los Sareno y Theleno**
+   - actúan como corredores naturales de humedad y circulación de aire;
+   - favorecen nieblas locales y humedad ribereña;
+   - pueden acumular aire frío durante noches estables;
+   - concentran escorrentía y respuesta a crecidas;
+   - prolongan parcialmente la influencia marítima hacia el interior.
+
+2. **Vaguadas y depresiones interiores**
+   - favorecen acumulación de aire frío;
+   - pueden registrar heladas más frecuentes que lomas próximas;
+   - retienen niebla y humedad con mayor facilidad;
+   - pueden presentar drenaje superficial más lento cuando el terreno lo permita.
+
+3. **Piedemonte de los Montes Invernos**
+   - contiene valles de cabecera y corredores de escorrentía;
+   - recibe de forma directa agua de lluvia, nieve y deshielo;
+   - presenta fuertes contrastes locales según orientación y exposición.
+
+4. **Pasos, gargantas y corredores de montaña**
+   - pueden canalizar y acelerar el viento;
+   - pueden presentar condiciones mucho más severas que valles protegidos cercanos.
+
+5. **Zonas costeras abiertas**
+   - quedan más expuestas al viento y a temporales;
+   - cabos, promontorios y costas sin abrigo pueden comportarse de forma distinta a bahías, ensenadas y tramos protegidos.
+
+6. **Lomas y tierras abiertas interiores**
+   - presentan mayor exposición al viento;
+   - responden más rápidamente al calentamiento y enfriamiento que los fondos de valle y bosques densos;
+   - pueden secarse antes tras periodos húmedos si el drenaje y el suelo lo favorecen.
+
+### Regla de inferencia
+
+El relieve local se tratará como un modificador ambiental:
+
+```
+subzona base
++ valle/depresión/loma/paso/costa expuesta
++ orientación
++ altitud
++ vegetación
++ estado reciente del tiempo
+= condiciones locales
+```
+
+No se asignarán nombres propios ni límites cartográficos exactos a estos microambientes hasta que sean necesarios para lore, cartografía o gameplay.
