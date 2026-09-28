@@ -22,11 +22,11 @@ Se distinguirá entre clima regional y modificadores microclimáticos.
 
 ---
 
-## 1. Bosque Negro — propuesta de microclima
+## 1. Bosque Negro — microclima
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 El Bosque Negro no se tratará como un clima independiente del territorio, sino como un **modificador microclimático fuerte** superpuesto a la subzona regional y a la latitud correspondiente.
 
