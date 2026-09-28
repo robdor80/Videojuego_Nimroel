@@ -491,3 +491,68 @@ La nomenclatura se decidirá durante la revisión cultural y territorial posteri
 - distribución fina de rutas, puertos, pasos y asentamientos.
 
 El nombre deberá nacer de la cultura local y no ser una copia directa de nombres reales como Cierzo, Tramontana o Galerna.
+
+
+---
+
+## 21. Barlovento y sotavento en los Montes Invernos
+
+### Estado
+
+**BORRADOR DE DISEÑO — APROBADO**
+
+La relación barlovento/sotavento de los Montes Invernos no se considera fija para todo el año, porque el territorio presenta circulación atmosférica estacional y episodios desde distintas direcciones.
+
+### Situación dominante en episodios húmedos de otoño e invierno
+
+Cuando predominan los flujos húmedos desde:
+
+- sur;
+- sureste;
+- este-sureste;
+
+la **vertiente meridional y sudoriental** de los Montes Invernos funciona normalmente como **barlovento**.
+
+Consecuencias:
+
+- ascenso orográfico;
+- enfriamiento del aire;
+- condensación;
+- aumento de precipitación;
+- mayor aportación de lluvia o nieve según cota y temperatura.
+
+Durante esos mismos episodios, sectores situados inmediatamente al **norte** de la cordillera pueden quedar en **sotavento parcial**, con menor precipitación relativa.
+
+Esto no convierte todo el norte en una región seca.
+
+### Variabilidad
+
+Con circulaciones procedentes de otras direcciones:
+
+- una ladera concreta puede dejar de ser barlovento;
+- otra orientación puede quedar expuesta;
+- pasos y valles pueden canalizar el flujo;
+- la costa septentrional puede recibir humedad desde el norte o desde el mar.
+
+Por tanto:
+
+> **barlovento y sotavento son relaciones dinámicas respecto a la dirección del viento, aunque existe una tendencia estacional dominante ya definida.**
+
+### Aplicación futura
+
+La orientación de una ladera deberá combinarse con:
+
+- dirección regional del viento;
+- altitud;
+- relieve;
+- cercanía al mar;
+- estación;
+
+para inferir:
+
+- precipitación;
+- humedad;
+- nieve;
+- secado;
+- vegetación;
+- exposición local.
