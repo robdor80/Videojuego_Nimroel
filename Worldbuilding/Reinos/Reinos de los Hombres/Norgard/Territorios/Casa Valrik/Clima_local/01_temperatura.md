@@ -176,7 +176,7 @@ Existe un contraste importante entre:
 
 La altitud debe ser uno de los modificadores térmicos más fuertes de toda la región.
 
-No se fijan todavía cotas concretas ni temperaturas exactas.
+Ya existen **rangos altitudinales regionales aprobados en borrador** para los Montes Invernos. Lo que no se fija todavía son umbrales térmicos exactos por cota ni alturas concretas de accidentes individuales.
 
 ---
 

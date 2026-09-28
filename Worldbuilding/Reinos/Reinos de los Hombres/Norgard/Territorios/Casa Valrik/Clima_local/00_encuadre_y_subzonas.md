@@ -235,13 +235,18 @@ A partir del canon existente y de la función de los Montes Invernos como diviso
 8. **Contrastes locales por orientación, exposición y abrigo**: laderas soleadas, umbrías, valles protegidos y pasos pueden comportarse de forma distinta dentro de la misma subzona.
 9. **Ruptura climática más marcada al cruzar la cordillera** que la transición gradual costa-interior, reforzando el paso hacia las tierras frías septentrionales.
 
-### Cautela metodológica
+### Barlovento y sotavento
 
-No se fija todavía qué laderas concretas son más húmedas o secas por efecto de barlovento/sotavento.
+El bloque de viento ya fija una **tendencia estacional dominante**, sin convertirla en una orientación universal permanente.
 
-Esa asimetría depende de los **vientos dominantes**, que se definirá en el bloque específico de viento.
+Durante los episodios húmedos frecuentes de otoño e invierno, con flujos desde sur, sureste y este-sureste:
 
-Hasta entonces solo se considera seguro que la cordillera:
+- la vertiente meridional y sudoriental de los Montes Invernos funciona normalmente como **barlovento**;
+- determinados sectores inmediatamente al norte pueden quedar en **sotavento parcial**.
+
+La relación sigue siendo dinámica: con vientos procedentes de otras direcciones pueden cambiar las laderas expuestas y protegidas.
+
+Por tanto, se considera seguro que la cordillera:
 
 - modifica temperatura por altitud;
 - favorece nieve;

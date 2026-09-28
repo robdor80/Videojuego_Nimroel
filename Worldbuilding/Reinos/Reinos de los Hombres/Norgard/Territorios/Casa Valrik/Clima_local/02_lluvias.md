@@ -163,11 +163,11 @@ Esta propuesta desarrolla el canon ya existente que establece mayor precipitaci�
 
 En invierno y parte de las estaciones de transición, una fracción importante de la precipitación puede caer como nieve en cotas elevadas.
 
-### Cautela
+### Barlovento y precipitación orográfica
 
-No se fija todavía qué vertiente concreta es más lluviosa por efecto de barlovento.
+El bloque de viento ya establece una tendencia estacional: durante los episodios húmedos frecuentes de otoño e invierno, los flujos desde sur, sureste y este-sureste hacen que la vertiente meridional y sudoriental actúe normalmente como **barlovento**, favoreciendo el ascenso orográfico y la precipitación.
 
-Ese patrón dependerá de los vientos dominantes y se resolverá en el bloque de viento.
+Esta relación no es permanente para cualquier situación atmosférica; cambia con la dirección efectiva del viento.
 
 ---
 
@@ -180,9 +180,9 @@ Ese patrón dependerá de los vientos dominantes y se resolverá en el bloque de
 - el verano concentra una parte importante de la precipitación líquida;
 - pueden existir largos periodos de nieve acumulada aunque el total de precipitación no sea extremo.
 
-No se fija todavía si determinados sectores interiores quedan relativamente secos por sombra pluviométrica.
+Durante episodios de flujo húmedo meridional, determinados sectores inmediatamente al norte de la cordillera pueden quedar en **sotavento parcial** y recibir menos precipitación relativa.
 
-Eso dependerá de la circulación dominante y de la orientación efectiva de los Montes Invernos.
+Esto no convierte el norte en una región seca: otras circulaciones y la influencia marítima septentrional u oriental pueden aportar humedad desde otras direcciones.
 
 ---
 

@@ -142,3 +142,33 @@ La estructura altitudinal general de los Montes Invernos, al ser una cordillera 
 La aplicación específica al sector Valrik/Treskal se referencia desde:
 
 `Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Geografia_local/montes_invernos_cotas_y_altitudes.md`
+
+
+---
+
+## Auditoría técnica de esta fase
+
+La auditoría técnica realizada al cierre de esta fase se conserva como documento **no canónico** de control y referencia en:
+
+`Auditorias/2026-09-28_auditoria_tecnica_clima_local_treskal_para_motor.md`
+
+Sus observaciones no sustituyen al borrador climático. Sirven para:
+
+- detectar incoherencias documentales;
+- conservar recomendaciones para fases futuras;
+- orientar la futura traducción del worldbuilding ambiental a sistemas de juego.
+
+
+### Desarrollo geográfico futuro relacionado
+
+**Microrelieve, cuencas e hidrografía menor** no forman parte del cierre climático actual.
+
+Se desarrollarán después de cerrar:
+
+1. Pueblos;
+2. Villas;
+3. ciudad de Treskal;
+
+y antes de la revisión territorial conjunta que decidirá qué partes del borrador ambiental pueden elevarse a canon.
+
+Su planificación se mantiene en `../Geografia_local/README.md`.
