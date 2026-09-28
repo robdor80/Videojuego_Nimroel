@@ -217,13 +217,13 @@ Esta regla todavía no define valores numéricos ni fórmulas de juego.
 
 ---
 
-## 9. Propuesta pendiente de validación — influencia de los Montes Invernos
+## 9. Influencia de los Montes Invernos
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
-A partir del canon existente y de la función de los Montes Invernos como divisoria climática, se propone que su influencia local sobre el territorio de Treskal se exprese mediante los siguientes efectos cualitativos:
+A partir del canon existente y de la función de los Montes Invernos como divisoria climática, se aprueba para este borrador que su influencia local sobre el territorio de Treskal se exprese mediante los siguientes efectos cualitativos:
 
 1. **Enfriamiento progresivo por altitud** al aproximarse a la cordillera y ascender por sus laderas.
 2. **Mayor frecuencia y permanencia de nieve** en altura que en las tierras bajas.
