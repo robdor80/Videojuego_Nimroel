@@ -14,7 +14,7 @@ No fija todavía espesores exactos, días concretos de nieve, cotas rígidas uni
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 La nieve en el territorio de Treskal debe depender principalmente de:
 
