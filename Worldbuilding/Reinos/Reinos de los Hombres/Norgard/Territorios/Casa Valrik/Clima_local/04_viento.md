@@ -14,7 +14,7 @@ No fija todavía velocidades exactas, probabilidades numéricas ni fórmulas def
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 No se propone un único viento dominante idéntico durante todo el año.
 
@@ -438,3 +438,56 @@ Las direcciones propuestas describen **tendencias estacionales**, no reglas abso
 Puede soplar viento desde cualquier dirección durante situaciones meteorológicas concretas.
 
 El sistema debe permitir variabilidad y episodios excepcionales sin romper el patrón climático general.
+
+
+---
+
+## 20. Vientos locales con identidad propia
+
+### Estado
+
+**BORRADOR DE DISEÑO — APROBADO COMO POSIBILIDAD; NOMENCLATURA PENDIENTE**
+
+Se considera plausible y deseable que determinadas zonas del territorio desarrollen **vientos locales recurrentes, reconocibles por sus habitantes y susceptibles de recibir un nombre tradicional propio**.
+
+Estos vientos no serían simples direcciones cardinales, sino fenómenos ligados a combinaciones repetitivas de:
+
+- relieve;
+- orientación de valles;
+- pasos de montaña;
+- costa;
+- diferencias térmicas;
+- canalización entre masas de aire;
+- estación.
+
+Podrían existir, por ejemplo, fenómenos equivalentes funcionalmente a:
+
+- vientos fríos canalizados desde pasos de los Montes Invernos;
+- vientos descendentes secos o fríos desde laderas;
+- vientos fuertes de corredor en los valles de Sareno o Theleno;
+- vientos costeros recurrentes asociados a sectores concretos del Mar de Suthiros;
+- temporales o entradas marítimas con comportamiento local reconocible.
+
+### Regla cultural
+
+Cuando un viento:
+
+- aparece con suficiente frecuencia;
+- tiene efectos claros sobre navegación, agricultura, viaje o vida cotidiana;
+- es reconocible por dirección, temperatura, humedad o violencia;
+- y afecta de forma recurrente a una comunidad o comarca;
+
+es plausible que la población local le otorgue un **nombre propio tradicional**.
+
+### Pendiente
+
+No se asignarán nombres propios todavía.
+
+La nomenclatura se decidirá durante la revisión cultural y territorial posterior, cuando:
+
+- se hayan cerrado Pueblos;
+- Villas;
+- ciudad de Treskal;
+- distribución fina de rutas, puertos, pasos y asentamientos.
+
+El nombre deberá nacer de la cultura local y no ser una copia directa de nombres reales como Cierzo, Tramontana o Galerna.
