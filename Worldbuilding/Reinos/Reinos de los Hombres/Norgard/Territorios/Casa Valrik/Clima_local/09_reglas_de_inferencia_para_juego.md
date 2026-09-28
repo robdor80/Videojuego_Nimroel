@@ -2,7 +2,7 @@
 
 ## Estado
 
-**BORRADOR DE DISEÑO — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 Este documento actúa como **puente entre el worldbuilding ambiental y el futuro sistema técnico del videojuego**.
 
