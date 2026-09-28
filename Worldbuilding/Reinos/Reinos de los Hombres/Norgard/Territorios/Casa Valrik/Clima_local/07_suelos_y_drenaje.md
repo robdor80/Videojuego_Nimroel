@@ -14,7 +14,7 @@ No define todavía una taxonomía edafológica exhaustiva ni composiciones quím
 
 ### Estado
 
-**PROPUESTA DE BORRADOR — PENDIENTE DE VALIDACIÓN**
+**BORRADOR DE DISEÑO — APROBADO**
 
 El comportamiento del suelo debe inferirse principalmente a partir de:
 
