@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_farmer_male_002",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "farmer",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "young_adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 21,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "18-24",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "thin",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "elongated_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium_narrow",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "defined_natural",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "prominent",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_straight",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "blue_grey",
+      "confidence": "high"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "dark_blond",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "greying": {
+      "value": "none_visible",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": true,
+      "confidence": "medium"
+    },
+    "type": {
+      "value": "light_stubble",
+      "confidence": "medium"
+    },
+    "color": {
+      "value": "dark_blond",
+      "confidence": "medium"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "light",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "tousled_dark_blond_hair",
+    "clear_blue_grey_eyes",
+    "freckled_nose",
+    "lean_young_build",
+    "very_light_stubble"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

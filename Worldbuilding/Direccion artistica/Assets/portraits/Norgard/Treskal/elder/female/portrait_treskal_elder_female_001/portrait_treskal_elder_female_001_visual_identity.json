@@ -1,0 +1,120 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_elder_female_001",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "village_elder",
+    "sex": "female"
+  },
+  "age": {
+    "life_stage": {
+      "value": "elderly",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 80,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "76-86",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "thin",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "elongated_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium_narrow",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "soft",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "prominent",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_straight",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "hazel",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "white",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "slightly_wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium_long",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "not_visible",
+      "confidence": "not_visible"
+    },
+    "greying": {
+      "value": "fully_grey",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": false,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "not_applicable",
+      "confidence": "not_applicable"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "very_strong",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "white_hair_under_dark_headscarf",
+    "deep_age_lines",
+    "thin_face",
+    "worn_dark_shawl"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

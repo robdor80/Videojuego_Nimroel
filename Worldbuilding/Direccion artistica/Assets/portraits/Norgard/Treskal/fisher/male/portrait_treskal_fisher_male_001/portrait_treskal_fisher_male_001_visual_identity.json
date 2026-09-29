@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_fisher_male_001",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "fisher",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 42,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "38-46",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "average",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "elongated_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "defined_natural",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "moderate",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_long_straight",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "hazel",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "dark_brown",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "none",
+      "confidence": "medium"
+    },
+    "greying": {
+      "value": "light",
+      "confidence": "medium"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "short_beard_moustache",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "mixed_grey",
+      "confidence": "medium"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "strong",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "wavy_dark_hair",
+    "short_grey_streaked_beard",
+    "rope_and_net_over_shoulder",
+    "salt_weathered_skin",
+    "worn_fishing_workwear"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

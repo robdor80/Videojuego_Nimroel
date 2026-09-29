@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_healer_female_001",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "healer",
+    "sex": "female"
+  },
+  "age": {
+    "life_stage": {
+      "value": "older_adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 63,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "58-70",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "average",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "soft",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "moderate",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_straight",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "brown",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "grey",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "slightly_wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium_long",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "not_visible",
+      "confidence": "not_visible"
+    },
+    "greying": {
+      "value": "dominant",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": false,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "not_applicable",
+      "confidence": "not_applicable"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "moderate",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "silver_grey_hair_under_patterned_headscarf",
+    "soft_smile",
+    "visible_age_lines",
+    "herb_work_context",
+    "small_leather_pouch"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

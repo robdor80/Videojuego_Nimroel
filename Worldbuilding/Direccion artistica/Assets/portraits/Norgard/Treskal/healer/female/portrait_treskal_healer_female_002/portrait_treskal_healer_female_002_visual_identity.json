@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_healer_female_002",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "healer",
+    "sex": "female"
+  },
+  "age": {
+    "life_stage": {
+      "value": "older_adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 66,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "62-72",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "average",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "elongated_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium_narrow",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "defined_natural",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "prominent",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_long_straight",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "hazel",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "white",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "slightly_wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "not_visible",
+      "confidence": "not_visible"
+    },
+    "greying": {
+      "value": "fully_grey",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": false,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "not_applicable",
+      "confidence": "not_applicable"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "moderate",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "white_hair_under_dark_headscarf",
+    "prominent_cheekbones",
+    "visible_age_lines",
+    "herb_bundles_and_jars",
+    "dark_work_apron"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

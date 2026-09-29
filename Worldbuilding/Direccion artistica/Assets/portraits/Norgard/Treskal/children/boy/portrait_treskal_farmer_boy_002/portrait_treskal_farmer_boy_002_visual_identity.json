@@ -1,0 +1,120 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_farmer_boy_002",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "farmer",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "child",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 10,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "8-11",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "thin",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "round_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "soft",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "subtle",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "small_straight",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "green_grey",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "medium_brown",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "slightly_wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "short_medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "greying": {
+      "value": "none_visible",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": false,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "not_applicable",
+      "confidence": "not_applicable"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "light",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "light_freckling",
+    "tousled_medium_brown_hair",
+    "slim_youthful_build",
+    "visible_field_dirt_on_shirt"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

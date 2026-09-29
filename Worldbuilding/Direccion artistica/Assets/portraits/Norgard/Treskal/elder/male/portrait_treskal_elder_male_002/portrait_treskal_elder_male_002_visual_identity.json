@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_elder_male_002",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "village_elder",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "elderly",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 80,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "76-86",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "frail",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "long_narrow",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "narrow",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "narrow_defined",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "prominent",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "long_narrow",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "brown",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "white",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "wispy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "advanced_balding",
+      "confidence": "high"
+    },
+    "greying": {
+      "value": "fully_grey",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "full_beard_moustache",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "white",
+      "confidence": "high"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "very_strong",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "advanced_balding",
+    "wispy_white_hair",
+    "full_white_beard",
+    "deep_wrinkles_and_age_spots",
+    "frail_build"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

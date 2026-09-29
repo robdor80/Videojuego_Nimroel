@@ -1,0 +1,122 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_tavernkeeper_female_001",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "tavernkeeper",
+    "sex": "female"
+  },
+  "age": {
+    "life_stage": {
+      "value": "young_adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 25,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "22-28",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "average",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "soft",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "moderate",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "small_straight",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "hazel",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "dark_brown",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium_long",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "greying": {
+      "value": "none_visible",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": false,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "not_applicable",
+      "confidence": "not_applicable"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "light",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "dark_brown_updo",
+    "loose_face_framing_strands",
+    "warm_smile",
+    "full_bust",
+    "fitted_dark_bodice",
+    "light_work_apron"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_carpenter_male_005",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "carpenter",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "older_adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 58,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "54-62",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "thin",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "long_narrow",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "narrow",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "narrow_defined",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "prominent",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "long_narrow",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "green_grey",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "mixed_grey",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "receding",
+      "confidence": "medium"
+    },
+    "greying": {
+      "value": "substantial",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "prominent_moustache_beard_shadow",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "mixed_grey",
+      "confidence": "high"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "strong",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "long_weathered_face",
+    "swept_back_greying_hair",
+    "prominent_moustache",
+    "lean_build",
+    "sawdust_on_apron"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

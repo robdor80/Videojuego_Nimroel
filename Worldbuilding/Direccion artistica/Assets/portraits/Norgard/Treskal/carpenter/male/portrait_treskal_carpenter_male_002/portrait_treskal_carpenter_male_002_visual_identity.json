@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_carpenter_male_002",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "carpenter",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 28,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "25-32",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "average",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "elongated_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium_narrow",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "defined_natural",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "moderate",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_straight",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "blue_grey",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "light_brown",
+      "confidence": "medium"
+    },
+    "texture": {
+      "value": "slightly_wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "short_medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "greying": {
+      "value": "none_visible",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": true,
+      "confidence": "medium"
+    },
+    "type": {
+      "value": "light_stubble",
+      "confidence": "medium"
+    },
+    "color": {
+      "value": "light_brown",
+      "confidence": "medium"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "light",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "lean_young_adult_face",
+    "light_brown_tousled_hair",
+    "very_light_stubble",
+    "sawdust_on_apron",
+    "worn_brown_leather_apron"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

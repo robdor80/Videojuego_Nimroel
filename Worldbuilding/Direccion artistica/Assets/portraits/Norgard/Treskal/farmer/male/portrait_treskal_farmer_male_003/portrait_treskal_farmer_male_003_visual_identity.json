@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_farmer_male_003",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "farmer",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 50,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "46-55",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "robust",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "broad_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "broad",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "strong",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "moderate",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_broad",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "dark_brown",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "mixed_grey",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "slightly_wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "short_medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "thinning",
+      "confidence": "high"
+    },
+    "greying": {
+      "value": "substantial",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "full_beard_moustache",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "mixed_grey",
+      "confidence": "high"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "strong",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "broad_heavy_face",
+    "thinning_greying_hair",
+    "full_salt_and_pepper_beard",
+    "strong_weathering",
+    "robust_build"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

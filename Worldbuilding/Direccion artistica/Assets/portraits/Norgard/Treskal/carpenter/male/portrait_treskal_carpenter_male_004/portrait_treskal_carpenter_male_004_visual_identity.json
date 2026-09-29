@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_carpenter_male_004",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "carpenter",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 50,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "46-55",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "heavy",
+      "confidence": "high"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "round_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "broad",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "broad",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "subtle",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_broad",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "blue",
+      "confidence": "high"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "medium_brown",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "slightly_wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "short",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "receding",
+      "confidence": "high"
+    },
+    "greying": {
+      "value": "light",
+      "confidence": "medium"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "prominent_moustache_beard_shadow",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "medium_brown",
+      "confidence": "high"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "moderate",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "heavyset_build",
+    "prominent_thick_moustache",
+    "receding_hairline",
+    "clear_blue_eyes",
+    "sawdust_on_apron"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

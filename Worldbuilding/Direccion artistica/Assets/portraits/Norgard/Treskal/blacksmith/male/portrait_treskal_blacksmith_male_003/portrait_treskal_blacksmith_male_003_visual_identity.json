@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_blacksmith_male_003",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "blacksmith",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "older_adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 62,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "58-68",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "robust",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "broad_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "broad",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "strong",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "moderate",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_broad",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "brown",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "grey",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "receding",
+      "confidence": "medium"
+    },
+    "greying": {
+      "value": "dominant",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "full_beard_moustache",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "grey",
+      "confidence": "high"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "strong",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "thick_grey_hair",
+    "full_grey_beard",
+    "deep_forehead_lines",
+    "soot_marks",
+    "worn_dark_leather_apron"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

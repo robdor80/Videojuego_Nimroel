@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_healer_female_003",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "healer",
+    "sex": "female"
+  },
+  "age": {
+    "life_stage": {
+      "value": "adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 30,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "27-34",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "average",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "defined_natural",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "moderate",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_straight",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "hazel",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "dark_brown",
+      "confidence": "medium"
+    },
+    "texture": {
+      "value": "wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "long",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "greying": {
+      "value": "none_visible",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": false,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "not_applicable",
+      "confidence": "not_applicable"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "light",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "long_dark_brown_braid",
+    "loose_face_framing_strands",
+    "light_hazel_eyes",
+    "herbalist_workspace",
+    "round_pendant_necklace"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

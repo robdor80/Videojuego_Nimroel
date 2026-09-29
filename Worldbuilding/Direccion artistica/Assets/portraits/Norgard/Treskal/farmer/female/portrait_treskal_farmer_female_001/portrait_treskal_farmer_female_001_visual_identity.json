@@ -1,0 +1,120 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_farmer_female_001",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "farmer",
+    "sex": "female"
+  },
+  "age": {
+    "life_stage": {
+      "value": "adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 44,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "40-49",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "robust",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "broad_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium_broad",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "strong",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "moderate",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_broad",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "brown",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "dark_brown",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium_long",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "none",
+      "confidence": "medium"
+    },
+    "greying": {
+      "value": "moderate",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": false,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "none",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "not_applicable",
+      "confidence": "not_applicable"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "moderate",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "dark_brown_hair_with_visible_grey_strands",
+    "broad_oval_face",
+    "robust_build",
+    "earth_stains_on_work_clothing"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}

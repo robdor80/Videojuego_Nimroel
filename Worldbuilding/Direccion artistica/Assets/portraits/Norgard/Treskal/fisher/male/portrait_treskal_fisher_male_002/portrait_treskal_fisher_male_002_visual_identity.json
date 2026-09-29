@@ -1,0 +1,123 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_fisher_male_002",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "fisher",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "older_adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 58,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "54-62",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "robust",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "elongated_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "defined_natural",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "prominent",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_long_straight",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "indeterminate",
+      "confidence": "doubtful"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "mixed_grey",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "receding",
+      "confidence": "medium"
+    },
+    "greying": {
+      "value": "substantial",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "full_beard_moustache",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "mixed_grey",
+      "confidence": "high"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "strong",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "grey_streaked_wavy_hair",
+    "full_grey_streaked_beard",
+    "deep_weathering",
+    "worn_fishing_apron",
+    "harbor_work_presence"
+  ],
+  "review": {
+    "requires_human_review": true,
+    "doubtful_fields": [
+      "eyes.color"
+    ],
+    "notes": "Eye colour is ambiguous in the production WebP because of lighting and iris size; check the PNG master."
+  }
+}

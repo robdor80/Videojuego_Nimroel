@@ -1,0 +1,121 @@
+{
+  "schema": "nimroel_portrait_visual_identity",
+  "schema_version": "1.0",
+  "asset_id": "portrait_treskal_tavernkeeper_male_001",
+  "identity": {
+    "culture": "Norgard",
+    "location": "Treskal",
+    "profession": "tavernkeeper",
+    "sex": "male"
+  },
+  "age": {
+    "life_stage": {
+      "value": "adult",
+      "confidence": "high"
+    },
+    "apparent_age": {
+      "value": 48,
+      "confidence": "medium"
+    },
+    "selection_age_band": {
+      "value": "44-53",
+      "confidence": "medium"
+    }
+  },
+  "body": {
+    "build": {
+      "value": "robust",
+      "confidence": "medium"
+    }
+  },
+  "face": {
+    "shape": {
+      "value": "broad_oval",
+      "confidence": "medium"
+    },
+    "width": {
+      "value": "medium_broad",
+      "confidence": "medium"
+    },
+    "jaw": {
+      "value": "strong",
+      "confidence": "medium"
+    },
+    "cheekbones": {
+      "value": "moderate",
+      "confidence": "medium"
+    },
+    "nose": {
+      "value": "medium_broad",
+      "confidence": "medium"
+    }
+  },
+  "eyes": {
+    "color": {
+      "value": "brown",
+      "confidence": "medium"
+    }
+  },
+  "hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "color": {
+      "value": "dark_brown",
+      "confidence": "high"
+    },
+    "texture": {
+      "value": "wavy",
+      "confidence": "medium"
+    },
+    "length": {
+      "value": "medium",
+      "confidence": "medium"
+    },
+    "hair_loss": {
+      "value": "receding",
+      "confidence": "medium"
+    },
+    "greying": {
+      "value": "light",
+      "confidence": "high"
+    }
+  },
+  "facial_hair": {
+    "present": {
+      "value": true,
+      "confidence": "high"
+    },
+    "type": {
+      "value": "full_beard_moustache",
+      "confidence": "high"
+    },
+    "color": {
+      "value": "mixed_grey",
+      "confidence": "high"
+    }
+  },
+  "skin": {
+    "tone": {
+      "value": "fair_medium",
+      "confidence": "medium"
+    },
+    "weathering": {
+      "value": "light",
+      "confidence": "medium"
+    }
+  },
+  "distinctive_visible_traits": [
+    "broad_sturdy_build",
+    "wavy_dark_hair_with_grey",
+    "full_grey_streaked_beard",
+    "warm_smile",
+    "worn_tavern_apron"
+  ],
+  "review": {
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": ""
+  }
+}
