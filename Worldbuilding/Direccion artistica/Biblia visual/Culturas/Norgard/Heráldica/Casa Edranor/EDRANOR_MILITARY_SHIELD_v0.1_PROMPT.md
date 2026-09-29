@@ -1,6 +1,6 @@
 # EDRANOR — MILITARY SHIELD v0.1 — PROMPT
 
-**Asset target:** `EDRANOR_MILITARY_SHIELD_v0.1.png`  
+**Asset target:** `EDRANOR_MILITARY_SHIELD_v0.1.webp`  
 **Prompt file:** `EDRANOR_MILITARY_SHIELD_v0.1_PROMPT.md`  
 **Type:** Escudo militar de la Casa Edranor  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -72,4 +72,4 @@ No deben reinterpretarlo libremente entre imágenes.
 
 ## Asset esperado
 
-`EDRANOR_MILITARY_SHIELD_v0.1.png`
+`EDRANOR_MILITARY_SHIELD_v0.1.webp`

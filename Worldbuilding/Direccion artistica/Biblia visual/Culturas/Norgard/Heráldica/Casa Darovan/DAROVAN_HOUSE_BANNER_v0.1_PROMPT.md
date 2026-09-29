@@ -1,7 +1,7 @@
-# DAROVAN — ROYAL BANNER v0.1 — PROMPT
+# DAROVAN — HOUSE BANNER v0.1 — PROMPT
 
-**Asset target:** `DAROVAN_ROYAL_BANNER_v0.1.png`  
-**Prompt file:** `DAROVAN_ROYAL_BANNER_v0.1_PROMPT.md`  
+**Asset target:** `DAROVAN_HOUSE_BANNER_v0.1.webp`  
+**Prompt file:** `DAROVAN_HOUSE_BANNER_v0.1_PROMPT.md`  
 **Type:** Estandarte de tela de la Casa Darovan  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
 
@@ -63,4 +63,4 @@ No deben reinterpretarlo libremente entre imágenes.
 
 ## Asset esperado
 
-`DAROVAN_ROYAL_BANNER_v0.1.png`
+`DAROVAN_HOUSE_BANNER_v0.1.webp`

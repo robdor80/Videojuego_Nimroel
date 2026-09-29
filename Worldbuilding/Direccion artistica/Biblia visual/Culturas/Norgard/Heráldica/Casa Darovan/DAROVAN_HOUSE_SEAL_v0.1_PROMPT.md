@@ -1,6 +1,6 @@
 # DAROVAN — HOUSE SEAL v0.1 — PROMPT
 
-**Asset target:** `DAROVAN_HOUSE_SEAL_v0.1.png`  
+**Asset target:** `DAROVAN_HOUSE_SEAL_v0.1.webp`  
 **Prompt file:** `DAROVAN_HOUSE_SEAL_v0.1_PROMPT.md`  
 **Type:** Sello nobiliario / lacre de la Casa Darovan  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -72,4 +72,4 @@ El sello Darovan no debe incorporar texto, lemas, inscripciones ni símbolos sec
 
 ## Asset esperado
 
-`DAROVAN_HOUSE_SEAL_v0.1.png`
+`DAROVAN_HOUSE_SEAL_v0.1.webp`

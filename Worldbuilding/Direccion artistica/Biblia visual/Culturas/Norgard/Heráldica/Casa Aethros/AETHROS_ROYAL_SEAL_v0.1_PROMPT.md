@@ -1,6 +1,6 @@
 # AETHROS — ROYAL SEAL v0.1 — PROMPT
 
-**Asset target:** `AETHROS_ROYAL_SEAL_v0.1.png`  
+**Asset target:** `AETHROS_ROYAL_SEAL_v0.1.webp`  
 **Prompt file:** `AETHROS_ROYAL_SEAL_v0.1_PROMPT.md`  
 **Type:** Sello real / lacre de la Corona bajo los Aethros  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -57,4 +57,4 @@ No deben reinterpretarlo libremente entre imágenes.
 
 ## Asset esperado
 
-`AETHROS_ROYAL_SEAL_v0.1.png`
+`AETHROS_ROYAL_SEAL_v0.1.webp`

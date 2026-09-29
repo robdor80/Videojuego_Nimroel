@@ -1,6 +1,6 @@
 # EDRANOR — HOUSE SEAL v0.1 — PROMPT
 
-**Asset target:** `EDRANOR_HOUSE_SEAL_v0.1.png`  
+**Asset target:** `EDRANOR_HOUSE_SEAL_v0.1.webp`  
 **Prompt file:** `EDRANOR_HOUSE_SEAL_v0.1_PROMPT.md`  
 **Type:** Sello nobiliario / lacre de la Casa Edranor  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -86,4 +86,4 @@ El sello Edranor no debe incorporar texto, lemas, inscripciones ni símbolos sec
 
 ## Asset esperado
 
-`EDRANOR_HOUSE_SEAL_v0.1.png`
+`EDRANOR_HOUSE_SEAL_v0.1.webp`

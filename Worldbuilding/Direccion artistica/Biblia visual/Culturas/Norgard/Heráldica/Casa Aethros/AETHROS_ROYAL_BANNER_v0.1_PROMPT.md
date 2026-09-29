@@ -1,6 +1,6 @@
 # AETHROS — ROYAL BANNER v0.1 — PROMPT
 
-**Asset target:** `AETHROS_ROYAL_BANNER_v0.1.png`  
+**Asset target:** `AETHROS_ROYAL_BANNER_v0.1.webp`  
 **Prompt file:** `AETHROS_ROYAL_BANNER_v0.1_PROMPT.md`  
 **Type:** Estandarte de tela de la Casa Aethros  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -64,4 +64,4 @@ No deben reinterpretarlo libremente entre imágenes.
 
 ## Asset esperado
 
-`AETHROS_ROYAL_BANNER_v0.1.png`
+`AETHROS_ROYAL_BANNER_v0.1.webp`

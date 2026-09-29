@@ -1,6 +1,6 @@
 # VALRIK — HERALDIC EMBLEM v0.1 — PROMPT
 
-**Asset target:** `VALRIK_HERALDIC_EMBLEM_v0.1.png`  
+**Asset target:** `VALRIK_HERALDIC_EMBLEM_v0.1.webp`  
 **Prompt file:** `VALRIK_HERALDIC_EMBLEM_v0.1_PROMPT.md`  
 **Type:** Emblema heráldico maestro  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -64,4 +64,4 @@ No deben reinterpretarla libremente entre imágenes.
 
 ## Asset esperado
 
-`VALRIK_HERALDIC_EMBLEM_v0.1.png`
+`VALRIK_HERALDIC_EMBLEM_v0.1.webp`

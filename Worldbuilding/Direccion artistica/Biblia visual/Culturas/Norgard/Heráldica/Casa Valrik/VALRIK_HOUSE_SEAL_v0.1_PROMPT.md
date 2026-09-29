@@ -1,6 +1,6 @@
 # VALRIK — HOUSE SEAL v0.1 — PROMPT
 
-**Asset target:** `VALRIK_HOUSE_SEAL_v0.1.png`  
+**Asset target:** `VALRIK_HOUSE_SEAL_v0.1.webp`  
 **Prompt file:** `VALRIK_HOUSE_SEAL_v0.1_PROMPT.md`  
 **Type:** Sello nobiliario / lacre de la Casa Valrik  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -89,4 +89,4 @@ El sello Valrik no debe incorporar texto, lemas, inscripciones ni símbolos secu
 
 ## Asset esperado
 
-`VALRIK_HOUSE_SEAL_v0.1.png`
+`VALRIK_HOUSE_SEAL_v0.1.webp`

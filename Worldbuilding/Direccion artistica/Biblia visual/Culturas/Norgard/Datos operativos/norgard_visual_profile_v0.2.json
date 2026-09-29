@@ -109,25 +109,25 @@
     "canonicalAssets": {
       "masterEmblem": {
         "id": "aethros_heraldic_emblem_v0.1",
-        "file": "AETHROS_HERALDIC_EMBLEM_v0.1.png",
+        "file": "AETHROS_HERALDIC_EMBLEM_v0.1.webp",
         "prompt": "AETHROS_HERALDIC_EMBLEM_v0.1_PROMPT.md",
         "review": "AETHROS_HERALDIC_EMBLEM_v0.1_REVIEW.md"
       },
       "royalBanner": {
         "id": "aethros_royal_banner_v0.1",
-        "file": "AETHROS_ROYAL_BANNER_v0.1.png",
+        "file": "AETHROS_ROYAL_BANNER_v0.1.webp",
         "prompt": "AETHROS_ROYAL_BANNER_v0.1_PROMPT.md",
         "review": "AETHROS_ROYAL_BANNER_v0.1_REVIEW.md"
       },
       "militaryShield": {
         "id": "aethros_military_shield_v0.1",
-        "file": "AETHROS_MILITARY_SHIELD_v0.1.png",
+        "file": "AETHROS_MILITARY_SHIELD_v0.1.webp",
         "prompt": "AETHROS_MILITARY_SHIELD_v0.1_PROMPT.md",
         "review": "AETHROS_MILITARY_SHIELD_v0.1_REVIEW.md"
       },
       "royalSeal": {
         "id": "aethros_royal_seal_v0.1",
-        "file": "AETHROS_ROYAL_SEAL_v0.1.png",
+        "file": "AETHROS_ROYAL_SEAL_v0.1.webp",
         "prompt": "AETHROS_ROYAL_SEAL_v0.1_PROMPT.md",
         "review": "AETHROS_ROYAL_SEAL_v0.1_REVIEW.md"
       }

@@ -1,6 +1,6 @@
 # AETHROS — MILITARY SHIELD v0.1 — PROMPT
 
-**Asset target:** `AETHROS_MILITARY_SHIELD_v0.1.png`  
+**Asset target:** `AETHROS_MILITARY_SHIELD_v0.1.webp`  
 **Prompt file:** `AETHROS_MILITARY_SHIELD_v0.1_PROMPT.md`  
 **Type:** Escudo militar de Norgard bajo la Casa Aethros  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -59,4 +59,4 @@ No deben reinterpretarlo libremente entre imágenes.
 
 ## Asset esperado
 
-`AETHROS_MILITARY_SHIELD_v0.1.png`
+`AETHROS_MILITARY_SHIELD_v0.1.webp`

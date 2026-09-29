@@ -55,3 +55,14 @@ Si una imagen contiene heráldica no definida:
 ## Conclusión operativa
 
 La IA puede sugerir formas visuales útiles, pero **no crea canon heráldico por sí sola**.
+---
+
+## Formato de almacenamiento de la heráldica
+
+Para los assets heráldicos vigentes de Norgard:
+
+- el archivo de **producción almacenado en GitHub** es el correspondiente `.webp`;
+- el `.png` original se conserva únicamente como **MASTER EXTERNO** en TeraBox;
+- los PNG maestros **no están presentes en GitHub** y no deben restaurarse como assets de producción;
+- prompts, reviews, perfiles, registros y metadatos activos deben apuntar al WebP cuando identifiquen el asset de producción del repositorio.
+

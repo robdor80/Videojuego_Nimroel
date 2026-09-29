@@ -1,6 +1,6 @@
 # VALRIK — MILITARY SHIELD v0.1 — PROMPT
 
-**Asset target:** `VALRIK_MILITARY_SHIELD_v0.1.png`  
+**Asset target:** `VALRIK_MILITARY_SHIELD_v0.1.webp`  
 **Prompt file:** `VALRIK_MILITARY_SHIELD_v0.1_PROMPT.md`  
 **Type:** Escudo militar de la Casa Valrik  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -75,4 +75,4 @@ No deben reinterpretarla libremente entre imágenes.
 
 ## Asset esperado
 
-`VALRIK_MILITARY_SHIELD_v0.1.png`
+`VALRIK_MILITARY_SHIELD_v0.1.webp`

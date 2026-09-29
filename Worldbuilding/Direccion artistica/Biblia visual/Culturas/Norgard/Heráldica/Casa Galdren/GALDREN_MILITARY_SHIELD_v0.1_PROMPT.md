@@ -1,6 +1,6 @@
 # GALDREN — MILITARY SHIELD v0.1 — PROMPT
 
-**Asset target:** `GALDREN_MILITARY_SHIELD_v0.1.png`  
+**Asset target:** `GALDREN_MILITARY_SHIELD_v0.1.webp`  
 **Prompt file:** `GALDREN_MILITARY_SHIELD_v0.1_PROMPT.md`  
 **Type:** Escudo militar de la Casa Galdren  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -67,4 +67,4 @@ No deben reinterpretarlo libremente entre imágenes.
 
 ## Asset esperado
 
-`GALDREN_MILITARY_SHIELD_v0.1.png`
+`GALDREN_MILITARY_SHIELD_v0.1.webp`

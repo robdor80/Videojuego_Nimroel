@@ -26,10 +26,10 @@ Su objetivo es impedir que la IA:
 
 Mientras la Casa Aethros gobierne Norgard, el sistema heráldico canónico vigente es:
 
-- `AETHROS_HERALDIC_EMBLEM_v0.1.png`
-- `AETHROS_ROYAL_BANNER_v0.1.png`
-- `AETHROS_MILITARY_SHIELD_v0.1.png`
-- `AETHROS_ROYAL_SEAL_v0.1.png`
+- `AETHROS_HERALDIC_EMBLEM_v0.1.webp`
+- `AETHROS_ROYAL_BANNER_v0.1.webp`
+- `AETHROS_MILITARY_SHIELD_v0.1.webp`
+- `AETHROS_ROYAL_SEAL_v0.1.webp`
 
 Todos derivan del mismo emblema maestro:
 

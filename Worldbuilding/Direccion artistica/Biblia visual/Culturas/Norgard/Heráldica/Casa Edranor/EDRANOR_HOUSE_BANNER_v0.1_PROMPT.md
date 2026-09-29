@@ -1,7 +1,7 @@
-# EDRANOR — ROYAL BANNER v0.1 — PROMPT
+# EDRANOR — HOUSE BANNER v0.1 — PROMPT
 
-**Asset target:** `EDRANOR_ROYAL_BANNER_v0.1.png`  
-**Prompt file:** `EDRANOR_ROYAL_BANNER_v0.1_PROMPT.md`  
+**Asset target:** `EDRANOR_HOUSE_BANNER_v0.1.webp`  
+**Prompt file:** `EDRANOR_HOUSE_BANNER_v0.1_PROMPT.md`  
 **Type:** Estandarte de tela de la Casa Edranor  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
 
@@ -50,7 +50,7 @@ A worn but prestigious medieval noble banner carrying the exact canonical aged-s
 - `NIMROEL_GLOBAL_VISUAL_BIBLE_v0.3`
 - `NORGARD_VISUAL_PROFILE_v0.1`
 - `EDRANOR_HERALDIC_EMBLEM_v0.1`
-- `DAROVAN_ROYAL_BANNER_v0.1` como referencia de lenguaje material y tipología
+- `DAROVAN_HOUSE_BANNER_v0.1` como referencia de lenguaje material y tipología
 
 ---
 
@@ -63,4 +63,4 @@ No deben reinterpretarlo libremente entre imágenes.
 
 ## Asset esperado
 
-`EDRANOR_ROYAL_BANNER_v0.1.png`
+`EDRANOR_HOUSE_BANNER_v0.1.webp`

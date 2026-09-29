@@ -44,10 +44,10 @@ Este perfil hereda y debe respetar:
 
 Y gobierna los siguientes assets canónicos:
 
-- `AETHROS_HERALDIC_EMBLEM_v0.1.png`
-- `AETHROS_ROYAL_BANNER_v0.1.png`
-- `AETHROS_MILITARY_SHIELD_v0.1.png`
-- `AETHROS_ROYAL_SEAL_v0.1.png`
+- `AETHROS_HERALDIC_EMBLEM_v0.1.webp`
+- `AETHROS_ROYAL_BANNER_v0.1.webp`
+- `AETHROS_MILITARY_SHIELD_v0.1.webp`
+- `AETHROS_ROYAL_SEAL_v0.1.webp`
 
 con sus correspondientes archivos:
 
@@ -81,7 +81,7 @@ Existe **un único lobo Aethros**, reproducido mediante materiales y técnicas d
 
 **Asset maestro:**
 
-`AETHROS_HERALDIC_EMBLEM_v0.1.png`
+`AETHROS_HERALDIC_EMBLEM_v0.1.webp`
 
 Este asset constituye la referencia visual primaria.
 
@@ -497,7 +497,7 @@ No se permite:
 ## 12.1. Emblema heráldico maestro
 
 **Asset:**  
-`AETHROS_HERALDIC_EMBLEM_v0.1.png`
+`AETHROS_HERALDIC_EMBLEM_v0.1.webp`
 
 Función:
 
@@ -512,7 +512,7 @@ Debe ser usado por el Prompt Resolver y por cualquier artista como referencia pr
 ## 12.2. Estandarte de tela
 
 **Asset:**  
-`AETHROS_ROYAL_BANNER_v0.1.png`
+`AETHROS_ROYAL_BANNER_v0.1.webp`
 
 Características:
 
@@ -540,7 +540,7 @@ No deben convertirse en decoración repetitiva de calles.
 ## 12.3. Escudo militar
 
 **Asset:**  
-`AETHROS_MILITARY_SHIELD_v0.1.png`
+`AETHROS_MILITARY_SHIELD_v0.1.webp`
 
 Representa el escudo institucional utilizado por fuerzas de Norgard mientras los Aethros gobiernan.
 
@@ -560,7 +560,7 @@ Puede aparecer fuera de Hallheim siempre que exista contexto militar válido.
 ## 12.4. Sello real
 
 **Asset:**  
-`AETHROS_ROYAL_SEAL_v0.1.png`
+`AETHROS_ROYAL_SEAL_v0.1.webp`
 
 Representa:
 
@@ -682,7 +682,7 @@ Cuando la escena sea Hallheim:
 
 Siempre que sea técnicamente posible, una generación que deba reproducir el emblema debe recibir:
 
-1. la imagen maestra `AETHROS_HERALDIC_EMBLEM_v0.1.png`;
+1. la imagen maestra `AETHROS_HERALDIC_EMBLEM_v0.1.webp`;
 2. este perfil;
 3. el prompt específico de la aplicación.
 
@@ -746,7 +746,7 @@ Ejemplos actuales:
 
 Archivos asociados:
 
-- `.png`
+- `.webp`
 - `_PROMPT.md`
 - `_REVIEW.md`
 
@@ -786,10 +786,10 @@ Un cambio de este tipo requiere aprobación expresa de canon.
 
 | Elemento | Asset | Estado |
 |---|---|---|
-| Emblema maestro | `AETHROS_HERALDIC_EMBLEM_v0.1.png` | CANÓNICO |
-| Estandarte real | `AETHROS_ROYAL_BANNER_v0.1.png` | CANÓNICO |
-| Escudo militar | `AETHROS_MILITARY_SHIELD_v0.1.png` | CANÓNICO |
-| Sello real | `AETHROS_ROYAL_SEAL_v0.1.png` | CANÓNICO |
+| Emblema maestro | `AETHROS_HERALDIC_EMBLEM_v0.1.webp` | CANÓNICO |
+| Estandarte real | `AETHROS_ROYAL_BANNER_v0.1.webp` | CANÓNICO |
+| Escudo militar | `AETHROS_MILITARY_SHIELD_v0.1.webp` | CANÓNICO |
+| Sello real | `AETHROS_ROYAL_SEAL_v0.1.webp` | CANÓNICO |
 
 ---
 

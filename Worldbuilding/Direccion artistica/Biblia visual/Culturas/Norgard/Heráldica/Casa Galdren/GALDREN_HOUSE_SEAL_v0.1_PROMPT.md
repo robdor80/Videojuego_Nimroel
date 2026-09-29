@@ -1,6 +1,6 @@
 # GALDREN — HOUSE SEAL v0.1 — PROMPT
 
-**Asset target:** `GALDREN_HOUSE_SEAL_v0.1.png`  
+**Asset target:** `GALDREN_HOUSE_SEAL_v0.1.webp`  
 **Prompt file:** `GALDREN_HOUSE_SEAL_v0.1_PROMPT.md`  
 **Type:** Sello nobiliario / lacre de la Casa Galdren  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -87,4 +87,4 @@ El sello Galdren no debe incorporar texto, lemas, inscripciones ni símbolos sec
 
 ## Asset esperado
 
-`GALDREN_HOUSE_SEAL_v0.1.png`
+`GALDREN_HOUSE_SEAL_v0.1.webp`

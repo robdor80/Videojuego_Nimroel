@@ -1,6 +1,6 @@
 # GALDREN — HERALDIC EMBLEM v0.1 — PROMPT
 
-**Asset target:** `GALDREN_HERALDIC_EMBLEM_v0.1.png`  
+**Asset target:** `GALDREN_HERALDIC_EMBLEM_v0.1.webp`  
 **Prompt file:** `GALDREN_HERALDIC_EMBLEM_v0.1_PROMPT.md`  
 **Type:** Emblema heráldico maestro  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -65,4 +65,4 @@ No deben reinterpretarlo libremente entre imágenes.
 
 ## Asset esperado
 
-`GALDREN_HERALDIC_EMBLEM_v0.1.png`
+`GALDREN_HERALDIC_EMBLEM_v0.1.webp`

@@ -1,6 +1,6 @@
 # AETHROS — ROYAL SEAL v0.1 — REVIEW
 
-**Asset reviewed:** `AETHROS_ROYAL_SEAL_v0.1.png`  
+**Asset reviewed:** `AETHROS_ROYAL_SEAL_v0.1.webp`  
 **Related prompt:** `AETHROS_ROYAL_SEAL_v0.1_PROMPT.md`  
 **Status:** `APROBADO`
 
@@ -56,4 +56,4 @@ La IA no puede inventar una variante distinta del lobo y tratarla como equivalen
 
 ## Conclusión
 
-`AETHROS_ROYAL_SEAL_v0.1.png` queda **APROBADO** como parte del sistema heráldico canónico v0.1 de la Casa Aethros.
+`AETHROS_ROYAL_SEAL_v0.1.webp` queda **APROBADO** como parte del sistema heráldico canónico v0.1 de la Casa Aethros.

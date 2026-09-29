@@ -1,7 +1,7 @@
-# GALDREN — ROYAL BANNER v0.1 — PROMPT
+# GALDREN — HOUSE BANNER v0.1 — PROMPT
 
-**Asset target:** `GALDREN_ROYAL_BANNER_v0.1.png`  
-**Prompt file:** `GALDREN_ROYAL_BANNER_v0.1_PROMPT.md`  
+**Asset target:** `GALDREN_HOUSE_BANNER_v0.1.webp`  
+**Prompt file:** `GALDREN_HOUSE_BANNER_v0.1_PROMPT.md`  
 **Type:** Estandarte de tela de la Casa Galdren  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
 
@@ -64,7 +64,7 @@ A worn but prestigious medieval noble banner carrying the exact canonical dark-i
 - `NIMROEL_GLOBAL_VISUAL_BIBLE_v0.3`
 - `NORGARD_VISUAL_PROFILE_v0.1`
 - `GALDREN_HERALDIC_EMBLEM_v0.1`
-- `EDRANOR_ROYAL_BANNER_v0.1` como referencia de lenguaje material y tipología
+- `EDRANOR_HOUSE_BANNER_v0.1` como referencia de lenguaje material y tipología
 
 ---
 
@@ -77,4 +77,4 @@ No deben reinterpretarlo libremente entre imágenes.
 
 ## Asset esperado
 
-`GALDREN_ROYAL_BANNER_v0.1.png`
+`GALDREN_HOUSE_BANNER_v0.1.webp`

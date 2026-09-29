@@ -1,7 +1,7 @@
-# VALRIK — ROYAL BANNER v0.1 — PROMPT
+# VALRIK — HOUSE BANNER v0.1 — PROMPT
 
-**Asset target:** `VALRIK_ROYAL_BANNER_v0.1.png`  
-**Prompt file:** `VALRIK_ROYAL_BANNER_v0.1_PROMPT.md`  
+**Asset target:** `VALRIK_HOUSE_BANNER_v0.1.webp`  
+**Prompt file:** `VALRIK_HOUSE_BANNER_v0.1_PROMPT.md`  
 **Type:** Estandarte de tela de la Casa Valrik  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
 
@@ -67,7 +67,7 @@ A worn but prestigious medieval noble banner carrying the exact canonical aged-b
 - `NIMROEL_GLOBAL_VISUAL_BIBLE_v0.3`
 - `NORGARD_VISUAL_PROFILE_v0.1`
 - `VALRIK_HERALDIC_EMBLEM_v0.1`
-- `GALDREN_ROYAL_BANNER_v0.1` como referencia de lenguaje material y tipología
+- `GALDREN_HOUSE_BANNER_v0.1` como referencia de lenguaje material y tipología
 
 ---
 
@@ -80,4 +80,4 @@ No deben reinterpretarla libremente entre imágenes.
 
 ## Asset esperado
 
-`VALRIK_ROYAL_BANNER_v0.1.png`
+`VALRIK_HOUSE_BANNER_v0.1.webp`

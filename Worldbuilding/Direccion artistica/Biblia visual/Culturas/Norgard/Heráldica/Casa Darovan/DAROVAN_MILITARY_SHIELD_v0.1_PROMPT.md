@@ -1,6 +1,6 @@
 # DAROVAN — MILITARY SHIELD v0.1 — PROMPT
 
-**Asset target:** `DAROVAN_MILITARY_SHIELD_v0.1.png`  
+**Asset target:** `DAROVAN_MILITARY_SHIELD_v0.1.webp`  
 **Prompt file:** `DAROVAN_MILITARY_SHIELD_v0.1_PROMPT.md`  
 **Type:** Escudo militar de la Casa Darovan  
 **Status:** `APROBADO COMO BASE CANÓNICA v0.1`
@@ -60,4 +60,4 @@ No deben reinterpretarlo libremente entre imágenes.
 
 ## Asset esperado
 
-`DAROVAN_MILITARY_SHIELD_v0.1.png`
+`DAROVAN_MILITARY_SHIELD_v0.1.webp`
