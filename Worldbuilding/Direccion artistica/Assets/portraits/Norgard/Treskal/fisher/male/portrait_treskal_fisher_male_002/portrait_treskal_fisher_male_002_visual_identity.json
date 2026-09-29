@@ -52,8 +52,8 @@
   },
   "eyes": {
     "color": {
-      "value": "indeterminate",
-      "confidence": "doubtful"
+      "value": "hazel",
+      "confidence": "high"
     }
   },
   "hair": {
@@ -114,10 +114,8 @@
     "harbor_work_presence"
   ],
   "review": {
-    "requires_human_review": true,
-    "doubtful_fields": [
-      "eyes.color"
-    ],
-    "notes": "Eye colour is ambiguous in the production WebP because of lighting and iris size; check the PNG master."
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": "Eye colour confirmed manually against the PNG master and normalized as hazel."
   }
 }

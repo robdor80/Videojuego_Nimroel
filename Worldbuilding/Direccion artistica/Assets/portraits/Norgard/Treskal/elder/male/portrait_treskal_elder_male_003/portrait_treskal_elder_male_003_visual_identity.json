@@ -52,8 +52,8 @@
   },
   "eyes": {
     "color": {
-      "value": "indeterminate",
-      "confidence": "doubtful"
+      "value": "hazel",
+      "confidence": "high"
     }
   },
   "hair": {
@@ -114,10 +114,8 @@
     "very_thin_face"
   ],
   "review": {
-    "requires_human_review": true,
-    "doubtful_fields": [
-      "eyes.color"
-    ],
-    "notes": "Iris colour is not reliable enough at production resolution; the PNG master should be checked."
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": "Eye colour confirmed manually against the PNG master and normalized as hazel."
   }
 }

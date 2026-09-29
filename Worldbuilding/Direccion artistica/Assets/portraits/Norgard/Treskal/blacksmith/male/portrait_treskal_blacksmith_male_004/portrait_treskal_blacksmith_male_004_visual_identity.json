@@ -52,8 +52,8 @@
   },
   "eyes": {
     "color": {
-      "value": "indeterminate",
-      "confidence": "doubtful"
+      "value": "hazel",
+      "confidence": "high"
     }
   },
   "hair": {
@@ -114,10 +114,8 @@
     "worn_dark_leather_apron"
   ],
   "review": {
-    "requires_human_review": true,
-    "doubtful_fields": [
-      "eyes.color"
-    ],
-    "notes": "Eye colour cannot be distinguished reliably in the 768x960 WebP."
+    "requires_human_review": false,
+    "doubtful_fields": [],
+    "notes": "Eye colour confirmed manually against the PNG master and normalized as hazel."
   }
 }
