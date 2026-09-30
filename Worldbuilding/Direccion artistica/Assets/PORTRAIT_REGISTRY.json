@@ -214,7 +214,7 @@
       "master_png_sha256": "f8710a8ae9ffde7776f19d465b7a5400d26d4aea7f61262f04512f09b2a4d63b",
       "historical_png_sha256": "b9d20e27eed3603222d1b69f391c7ae0eb8077e7666039539dd58492afcb11ec",
       "historical_png_git_commit": "8fa93c6084ccdbdc07b3bcc2345bf372ab4b55cd",
-      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con WebP + _prompt.md + _info.md.",
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con WebP + _prompt.md + _info.md + _visual_identity.json.",
       "selection_age_band": "40-49",
       "background_context": "rural_treskal_farming_landscape",
       "transport_zip_file": "portrait_treskal_farmer_female_001.zip",
@@ -288,7 +288,7 @@
       "zip_sha256": "bd76fdc1bd3969949ea2f1394c02f5c5d1d54614242e0cf6ad29dba48497dd40",
       "webp_sha256": "2091052440300b1aaac88bb94245e1e6214e5b4b549d619a5e2c5f01855b8976",
       "master_png_sha256": "b9604a7a7dae258632cafe65ea814a543c9cb94e9280c88c8bcab377ed18c855",
-      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con WebP + _prompt.md + _info.md. PNG maestro original actualizado a formato vertical 4:5 (1122x1402); el zip_sha256 conserva la huella del ZIP de transferencia original.",
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con WebP + _prompt.md + _info.md + _visual_identity.json. PNG maestro original actualizado a formato vertical 4:5 (1122x1402); el zip_sha256 conserva la huella del ZIP de transferencia original.",
       "transport_zip_file": "portrait_treskal_farmer_female_002.zip",
       "repository_asset_folder": "Worldbuilding/Direccion artistica/Assets/portraits/Norgard/Treskal/farmer/female/portrait_treskal_farmer_female_002/",
       "visual_identity_file": "portrait_treskal_farmer_female_002_visual_identity.json"
@@ -363,7 +363,7 @@
       "zip_sha256": "9718581317c7138dc7e0d6be4a39ddde64705aee03bfba462d175e87265bbdf9",
       "webp_sha256": "fb601d71405d4845406fac59ae63fbc03542d10b92c86b0c8633c10cb3dd3c2b",
       "master_png_sha256": "3c86a7d8b9b658b7e266408411189667e25c686f68c46c7a59e3e0969e98fdd3",
-      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con WebP + _prompt.md + _info.md.",
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con WebP + _prompt.md + _info.md + _visual_identity.json.",
       "visual_identity_file": "portrait_treskal_farmer_female_003_visual_identity.json"
     },
     {
@@ -435,7 +435,7 @@
       "zip_sha256": "4fcb73589c47ca2e0ffb3e0ff9ef045bd7a18dd1d865734280baf43c556a3856",
       "webp_sha256": "67f2c8a53f69f86f0f4beb46174f28d66d3a23ad0f108a1d5a89a119767c1c2a",
       "master_png_sha256": "9736b1814dd69b6bbff2da21a59ff2f33b8819a482821cb4e9a083ed3bc3b98f",
-      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con WebP + _prompt.md + _info.md. PNG maestro original ajustado mediante recorte a formato vertical 4:5 exacto (1152x1440); el zip_sha256 conserva la huella del ZIP de transferencia original.",
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con WebP + _prompt.md + _info.md + _visual_identity.json. PNG maestro original ajustado mediante recorte a formato vertical 4:5 exacto (1152x1440); el zip_sha256 conserva la huella del ZIP de transferencia original.",
       "visual_identity_file": "portrait_treskal_farmer_female_004_visual_identity.json"
     },
     {
@@ -508,7 +508,7 @@
       "zip_sha256": "4b401e4f5d10b87197cbcb2683d9c256ea50b87edcfe15f8e6632816d4d98af6",
       "webp_sha256": "b7a8d245648b94c3810285ddbdc61129a25a3f9cb1b8f188bf1454f4620a0d17",
       "master_png_sha256": "8d8db6346451625aa5c48726dc406f90d2aafda7b91d7ed210a549feb684f9b8",
-      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con WebP + _prompt.md + _info.md.",
+      "notes": "Asset aprobado y almacenado en GitHub como carpeta descomprimida en la estructura portraits/Norgard/Treskal/farmer/female. Carpeta confirmada con WebP + _prompt.md + _info.md + _visual_identity.json.",
       "visual_identity_file": "portrait_treskal_farmer_female_005_visual_identity.json"
     },
     {
@@ -573,7 +573,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-25",
-      "notes": "Asset aprobado y confirmado en GitHub como carpeta descomprimida bajo portraits/Norgard/Treskal/farmer/male. WebP + _prompt.md + _info.md presentes y verificados.",
+      "notes": "Asset aprobado y confirmado en GitHub como carpeta descomprimida bajo portraits/Norgard/Treskal/farmer/male. WebP + _prompt.md + _info.md + _visual_identity.json presentes y verificados.",
       "binary_sync_status": "synced",
       "zip_sha256": "cda35a65ffb0c9d171b24fe7ba15a3ea1f39d969503bc193a91cdd8a80f95705",
       "webp_sha256": "e7e0933a81a9cfb5410b2526adb80f18d5717ccfbefae60997c39dd65a634a9b",
@@ -644,7 +644,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-25",
-      "notes": "Asset aprobado y confirmado en GitHub como carpeta descomprimida bajo portraits/Norgard/Treskal/farmer/male. WebP + _prompt.md + _info.md presentes y verificados.",
+      "notes": "Asset aprobado y confirmado en GitHub como carpeta descomprimida bajo portraits/Norgard/Treskal/farmer/male. WebP + _prompt.md + _info.md + _visual_identity.json presentes y verificados.",
       "binary_sync_status": "synced",
       "zip_sha256": "6c9841417f5f9cf33074177b04479b73c6187bbd3d95b46cd46e96dc4b999d58",
       "webp_sha256": "0504079cfa69dd0306404e097cfdce0850b3f6b0b487f2cf0c50923eb668525f",
@@ -939,7 +939,7 @@
       "webp_sha256": "793c9a0221f5edd72139a68093056c580d8fc2d9f8e9a487ec4a0d169b3d75cb",
       "master_png_sha256": "6c5aff216ec92841990c52a3e9cb8af4e09e1a0771df2aca9cea452e8a10818f",
       "background_context": "treskal_carpentry_workshop_timber_planks_workbench_hand_tools_stone_wood_architecture",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md. Formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json. Formato vertical 4:5.",
       "visual_identity_file": "portrait_treskal_carpenter_male_001_visual_identity.json"
     },
     {
@@ -1011,7 +1011,7 @@
       "webp_sha256": "95e7265b9ff6132a17d2614ab981df8e0a2e5112601abe318d6cd6777c2c39eb",
       "master_png_sha256": "82f3626d777ac0776cffc59b7d3147ff1e22af7b2c2c12ff63bf5626744516fe",
       "background_context": "treskal_carpentry_workshop_timber_planks_workbench_hand_tools_stone_wood_architecture",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md. Formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json. Formato vertical 4:5.",
       "visual_identity_file": "portrait_treskal_carpenter_male_002_visual_identity.json"
     },
     {
@@ -1083,7 +1083,7 @@
       "webp_sha256": "7fc70a13b89a6bbbe53a4004531cea934f6f17c99a70a684b14f16654d6bce4e",
       "master_png_sha256": "dcfc1d6893a770a73b5520aa47938b4498c6c3b87d35a977814437ac944b001e",
       "background_context": "treskal_carpentry_workshop_timber_planks_workbench_hand_tools_stone_wood_architecture",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md. Formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json. Formato vertical 4:5.",
       "visual_identity_file": "portrait_treskal_carpenter_male_003_visual_identity.json"
     },
     {
@@ -1155,7 +1155,7 @@
       "webp_sha256": "22f06f1b3141e854a88143e7967e099a419e3594bbc95ae0178546d14e39404c",
       "master_png_sha256": "b754b949e0a35be7ac0cc2db745d3b39f0bf31f75742526c8650126f1919906c",
       "background_context": "treskal_carpentry_workshop_timber_planks_workbench_hand_tools_stone_wood_architecture",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md. Formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json. Formato vertical 4:5.",
       "visual_identity_file": "portrait_treskal_carpenter_male_004_visual_identity.json"
     },
     {
@@ -1227,7 +1227,7 @@
       "webp_sha256": "219bd34db1fccb3476935a8191c50158eb75c0b78c279dced40730c1ceef7222",
       "master_png_sha256": "7bf82a355b98ed966ec107279a500c25472899813dd02c53292cf53112385551",
       "background_context": "treskal_carpentry_workshop_timber_planks_workbench_hand_tools_stone_wood_architecture",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md. Formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json. Formato vertical 4:5.",
       "visual_identity_file": "portrait_treskal_carpenter_male_005_visual_identity.json"
     },
     {
@@ -1293,7 +1293,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-25",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "f9c72eb5a70b90306712b873eafe76bad6b60ddee928ebe132e830a5a927e3f8",
       "webp_sha256": "121ed2c472439ab97161ac037a97a39a589e2e1f7130dab9cbca4d071bd654f5",
@@ -1364,7 +1364,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-25",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "b43faea560e850e553d7aefb7efdc352586a4cacec7df1c4439c3c4b296f4e64",
       "webp_sha256": "bb3ce488d7218e5ba5d23c6f80ae372bede327912fc7c30ba9dfab7409fac347",
@@ -1435,7 +1435,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-25",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "2e87b27591489214412df43a2dca02278f4dc194102564cf9bdb3f0c7132baae",
       "webp_sha256": "8dd68c328033a76c4d34ebfbf764be64f7287d31c490282ada2fd21f7b015092",
@@ -1506,7 +1506,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-25",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "ef1b5adc57dd30ac5900145b2212df3a986886ff84e9351df254ce0880e77b49",
       "webp_sha256": "0776e158c8120d1c4baa9812045967020f8f511c8e0df6a6402fb0f1fd3d8d76",
@@ -1577,7 +1577,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-25",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "3f690cef838ebb519c3a9b665cad85f62e57313a9a0cec75e3fa4710389dbf85",
       "webp_sha256": "54e010b853d79bddd1fee588fd6641650370fe1cb8ed6a6c2d4a357b0a6b05ec",
@@ -1647,7 +1647,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "775e7e956865ec1c7edcc817ae95c342f77f1eeb7d7eebc4c0703dfbef425e5f",
       "webp_sha256": "c31683a3f73f905f5529324709d22791f96a467f2aa396296ec94fd504dd3e8d",
@@ -1718,7 +1718,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "493a502f2f84b4aeba68f9e484f2c83ea11afd56ca426c8e5c310703d7d6f8eb",
       "webp_sha256": "011553fa9985ed207d8817edaad5a7ad35d0d18b1f5f9a1a184b54806af67b0f",
@@ -1789,7 +1789,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "d6e78a98a7b66ccda7a37759e829f85861a0965d1ed60967d9da9b7516282f51",
       "webp_sha256": "139722f82c9b436a4d9823f9c45f6e213d7a2e5917b6ee5c9cb9daf04a01a6f3",
@@ -1859,7 +1859,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "95f1ae07e755a69b7b3ccebef5719105dffa534f72e72917c0002176c85f60ff",
       "webp_sha256": "a8165f805e37c3f7dbbf025e39439936f63a4442b36a39bd537662547cf06953",
@@ -1929,7 +1929,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "4de85474d0631f5571378292557f75853a264ffcd3b9c36b0fd1915378e0912a",
       "webp_sha256": "a821409fc4125c3c0de2c7d2f0e76d231c876ac189b2a15320cdeb0335b42f08",
@@ -1998,7 +1998,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "5dd1c1995e786f2e55996f091c8e6ce894c74ff54b6794fdb40fd52ebedb874c",
       "webp_sha256": "9e4fa029f978735a182e23a740ce8f147361c399a9826c3c4161bce4f6789cb9",
@@ -2067,7 +2067,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "cc2b4e6096a8f8676427ed0489468b0169f17d042aec77919425a697f004c356",
       "webp_sha256": "6f948caf30efcd094f9b60ecd389ac0eee1fe54cd70c1b218b87ed26689fc6be",
@@ -2136,7 +2136,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "40037afe86aefa0c50039bfbca81f2dcf41a9b7885573120f59429d8a3e1a9fb",
       "webp_sha256": "67fb606aea5b0dade2c1c9743fcbefde6649b0a390f7b38d36a8b063ce03b634",
@@ -2205,7 +2205,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "57e7a2e826fa7a59efe5556be3f82f6992ce19f3541f93387dfed0d1a4461cd4",
       "webp_sha256": "0b07057efcb68b4c5143ecacd444b8238409316ddc1140824c05204fbd92ba54",
@@ -2274,7 +2274,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "ac6ac954f59a8bf611181f43041ff19c8492ef61ecf600512cbf1c41fb53fbc7",
       "webp_sha256": "5045373e5712b3c37fee4bea6746ab0e32c40810aed8fb00fc918a8bb3fcd0a6",
@@ -2343,7 +2343,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "d228629590a7477f1cd602aabadf27c567d95f1402f8ab138b6aeaf7d1c2033b",
       "webp_sha256": "0de1feaf3afae83eeb71edf55551b9d1b671d6c76f1643ce754eec06f75e78d7",
@@ -2412,7 +2412,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "ed19581f22f47d55598a2e07a807bf8343b7b04caa9da736bee7c939f38345a1",
       "webp_sha256": "6982788bf54fd0edb41fdd640c65423b13b64a0579ac639623929211763809be",
@@ -2481,7 +2481,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "12c54e9db8aed066fad99fa952d1cb468b3ea1ef8d185a1b2911ce55663c314c",
       "webp_sha256": "67085f0f76d8b2dc5ef46de2f456d1bab7b257c5ce67b36ea6e6856436f87a67",
@@ -2550,7 +2550,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "6bfe87f3adddaed3205a83babeaf289b00ffeba3f2ae2f9accd2bb48aa2c6eea",
       "webp_sha256": "1548ac62e396c22f8bbb3b8a0f588d88528cd5edcdd3007ae2b8978a73606063",
@@ -2620,7 +2620,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "f18be0dd14d0cbf1cd2b8da60faec18622e6ed3a89d14aeddb7fe21a1b001879",
       "webp_sha256": "19204ae6d65431e875406f2f3e4aa6ccf69ff7da80a6af779ee5203350ba16be",
@@ -2691,7 +2691,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "4cbb7e9a2b06530a2db5accb46d14d2288d9d8161826e06ea6d2fe72199e39d4",
       "webp_sha256": "e1cb3e942f1b4f59c20a81679230faf9ea974802224a2c49e3b2ebb279a1377c",
@@ -2762,7 +2762,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "8a09120831b9c19de72bdfe519b53afc08b4f3b507b991f53a2576fa58c6f779",
       "webp_sha256": "c1fd7c7bc2c7a457cf95896fceb39e6b25ba61d408dae5822f26fe99e0435b9b",
@@ -2832,7 +2832,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "1906659f84c448f80834bb49111be287e6cc341278a7bca22db234c8ce840776",
       "webp_sha256": "cec042d2c80dd6bd5ffa3dd2186156479f3600c4f3123a6691f8973bca56d205",
@@ -2903,7 +2903,7 @@
         "nimroel_asset_naming_convention.md"
       ],
       "approved_date": "2026-09-26",
-      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md; formato vertical 4:5.",
+      "notes": "Asset aprobado y confirmado en GitHub con WebP + _prompt.md + _info.md + _visual_identity.json; formato vertical 4:5.",
       "binary_sync_status": "synced",
       "zip_sha256": "2b186b355c343503edb21b6e5571842739e77a2582befa487aa1110e73e59ad7",
       "webp_sha256": "7b310fd20b442ac0cef4a81e42080d857f89f74a10a748081047dce5f49c11d7",
