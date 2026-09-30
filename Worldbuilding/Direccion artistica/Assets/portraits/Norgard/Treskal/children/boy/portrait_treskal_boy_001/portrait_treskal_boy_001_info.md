@@ -60,7 +60,7 @@ Reusable generic NPC portrait for the Nimroel videogame.
 - Hair loss: none
 - Grey hair: none
 - Facial hair: none
-- Eyes: hazel-brown
+- Eyes: light hazel
 - Skin: healthy outdoor complexion with natural freckles and light sun exposure
 - Distinctive traits:
   - tousled brown hair

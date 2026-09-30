@@ -25,7 +25,7 @@
 - **Mandíbula:** suave, poco marcada
 - **Pómulos:** moderados
 - **Nariz:** recta, fina-media
-- **Ojos:** avellana verdosos / marrón verdoso
+- **Ojos:** avellana claro
 - **Cejas:** naturales, castañas
 - **Labios:** medios, expresión contenida
 - **Frente:** media
@@ -44,7 +44,7 @@
 - Apariencia claramente juvenil.
 - Trenza larga y suelta con mechones escapados.
 - Pañuelo de lino envejecido en la cabeza.
-- Ojos avellana verdosos.
+- Ojos avellana claro.
 
 ## Estado visual y trabajo
 - **Presentation state level:** 2 — jornada de trabajo.

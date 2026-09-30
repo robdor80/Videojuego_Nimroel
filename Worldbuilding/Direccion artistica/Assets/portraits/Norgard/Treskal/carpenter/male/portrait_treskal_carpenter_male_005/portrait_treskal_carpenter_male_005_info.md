@@ -57,7 +57,7 @@ Reusable generic NPC portrait for the Nimroel videogame.
 - Hair loss: moderate recession
 - Grey hair: substantial at temples and throughout
 - Facial hair: prominent moustache with light beard shadow
-- Eyes: hazel-brown
+- Eyes: light hazel
 - Skin: weathered, natural texture, mature outdoor-worker complexion
 - Distinctive traits:
   - swept-back salt-and-pepper hair

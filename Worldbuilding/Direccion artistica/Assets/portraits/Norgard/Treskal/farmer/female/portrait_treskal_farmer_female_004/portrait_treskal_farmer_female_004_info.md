@@ -54,7 +54,7 @@ Reusable generic NPC portrait for the Nimroel videogame.
 - Hair length: medium, gathered back with loose curls visible
 - Hair loss: none visible
 - Grey hair: none visible
-- Eyes: muted grey-green / hazel
+- Eyes: light green
 - Skin: fair to medium, lightly sun-touched, natural redness, healthy working complexion
 - Distinctive traits:
   - loose curls framing the face
