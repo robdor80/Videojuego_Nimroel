@@ -25,9 +25,34 @@ Un pueblo puede disponer de comerciantes permanentes y tiendas especializadas cu
 
 Los artesanos pueden vender directamente desde sus propios talleres.
 
-El día de mercado amplía notablemente la oferta mediante comerciantes y productores llegados de otros asentamientos.
+La **disponibilidad cotidiana básica de bienes y provisiones comunes debe existir prácticamente siempre**, aunque la forma concreta varíe entre Pueblos.
 
-Fuera del mercado, la oferta puede ser mucho más limitada.
+Fuera del día de mercado, esa disponibilidad puede resolverse mediante:
+
+- venta directa de artesanos y productores;
+- comerciantes residentes;
+- pequeños puestos;
+- casas-taller;
+- taberna;
+- otras soluciones coherentes con la economía local.
+
+El mercado periódico **amplía notablemente la cantidad, variedad y actividad comercial**, pero no debe ser el único momento en que el Pueblo puede cubrir necesidades básicas.
+
+En día de mercado pueden llegar:
+
+- comerciantes de otros asentamientos;
+- productores de aldeas próximas;
+- mayor volumen de mercancías;
+- compradores adicionales;
+- animales y cargas;
+- encargos;
+- rumores;
+- funcionarios itinerantes;
+- NPC y oportunidades narrativas.
+
+La oferta especializada sí puede variar mucho entre Pueblos.
+
+**Regla de gameplay:** el calendario de mercado debe crear oportunidades, no bloquear necesidades básicas del jugador.
 
 ---
 

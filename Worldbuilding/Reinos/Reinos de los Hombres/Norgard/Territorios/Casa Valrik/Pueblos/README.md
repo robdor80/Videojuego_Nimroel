@@ -28,3 +28,9 @@ Los esqueletos procedurales de **Aldea, Pueblo y Villa** están actualmente apro
 
 - `00_Base/pueblo_tipo_treskal.md` — esqueleto mínimo obligatorio;
 - `00_Base/posibilidades_pueblo_treskal.md` — posibilidades y reglas aprobadas durante la fase de diseño.
+
+## Coherencia regional aprobada
+
+- `01_Coherencia_regional/relacion_pueblos_aldeas.md` — áreas de servicio por accesibilidad real.
+- `01_Coherencia_regional/distribucion_servicios_y_autosuficiencia.md` — autosuficiencia cotidiana y distribución de servicios.
+- `01_Coherencia_regional/comercio_cotidiano_y_mercado.md` — comercio ordinario, función del mercado periódico y oferta especializada.
