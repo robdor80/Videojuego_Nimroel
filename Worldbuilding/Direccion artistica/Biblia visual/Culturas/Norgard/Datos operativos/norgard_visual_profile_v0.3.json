@@ -96,7 +96,7 @@
     "crownHeraldrySource": "reigning_house",
     "currentRegentHouseId": "aethros",
     "kingdomHasPermanentIndependentNationalEmblem": false,
-    "assetRoot": "../Heraldica/Casa Aethros",
+    "assetRoot": "../Heráldica/Casa Aethros",
     "currentRegentHouse": {
       "houseId": "aethros",
       "emblemDescription": "cabeza_frontal_de_lobo_en_plata_sobre_azul_aethros",
