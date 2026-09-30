@@ -1,9 +1,9 @@
 # NIMROEL — PORTRAIT REGISTRY
 
 **Estado:** ACTIVE  
-**Versión:** 1.2<br>
+**Versión:** 1.3<br>
 **Inicio del registro:** 2026-09-25  
-**Última actualización:** 2026-09-27<br>
+**Última actualización:** 2026-09-30<br>
 **Ámbito:** todos los retratos aprobados almacenados bajo `Worldbuilding/Direccion artistica/Assets/`
 
 Este documento es la vista humana resumida del registro de diversidad de retratos.
@@ -36,10 +36,31 @@ En GitHub, cada asset aprobado se conserva como una carpeta descomprimida:
 <asset_id>/
 ├── <asset_id>.webp
 ├── <asset_id>_prompt.md
-└── <asset_id>_info.md
+├── <asset_id>_info.md
+└── <asset_id>_visual_identity.json
 ```
 
 El ZIP y el PNG maestro no se conservan en el repositorio. El WebP es el binario de producción utilizado por el videojuego.
+
+`_visual_identity.json` es metadata estructurada obligatoria de todo retrato aprobado. Debe describir el resultado visual real y permanecer sincronizada con `_info.md` y `PORTRAIT_REGISTRY.json`.
+
+---
+
+## Metadata visual y taxonomía de edad
+
+Taxonomía oficial de `life_stage` para metadata visual:
+
+| life_stage | Edad aparente |
+|---|---:|
+| `child` | 0–15 |
+| `young_adult` | 16–25 |
+| `adult` | 26–54 |
+| `older_adult` | 55–69 |
+| `elderly` | 70+ |
+
+Es una taxonomía visual, no una definición legal o social de mayoría de edad.
+
+Cuando exista conflicto entre una etiqueta heredada y la edad aparente numérica, la edad aparente numérica tiene prioridad para normalizar `life_stage`.
 
 ---
 
@@ -59,7 +80,7 @@ Actualmente hay **39 retratos aprobados registrados y sincronizados** de Treskal
 | tavernkeeper | 2 |
 | **TOTAL** | **39** |
 
-Los 39 assets enumerados abajo tienen en su carpeta el trío de producción **WebP + _prompt.md + _info.md**.
+Los 39 assets enumerados abajo tienen en su carpeta el conjunto obligatorio de producción y metadata **WebP + _prompt.md + _info.md + _visual_identity.json**.
 
 ---
 

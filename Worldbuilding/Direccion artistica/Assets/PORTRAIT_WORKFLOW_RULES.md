@@ -1,8 +1,8 @@
 # NIMROEL — PORTRAIT WORKFLOW RULES
 
 **Estado:** ACTIVE / OBLIGATORIO  
-**Versión:** 1.1<br>
-**Fecha:** 2026-09-25  
+**Versión:** 1.2<br>
+**Fecha:** 2026-09-30  
 **Ámbito:** generación, aprobación y almacenamiento de retratos visuales de Nimroel.
 
 ---
@@ -129,14 +129,17 @@ La diversidad facial es un requisito de calidad.
 
 ## 7. Edad
 
-Rangos base heredados de la Biblia NPC:
+La metadata visual estructurada utiliza una taxonomía única de cinco etapas:
 
-- `child`
-- `young`
-- `adult`
-- `elderly`
+- `child` — 0–15;
+- `young_adult` — 16–25;
+- `adult` — 26–54;
+- `older_adult` — 55–69;
+- `elderly` — 70+.
 
-Además del rango se registrará una **edad aparente aproximada** para poder detectar concentración excesiva en una franja.
+Estos intervalos son una **taxonomía visual de retrato**. No fijan mayoría de edad, estatus social ni reglas legales de Norgard.
+
+Además de la etapa se registrará una **edad aparente aproximada**. Cuando una etiqueta histórica entre en conflicto con la edad aparente numérica, la edad aparente tiene prioridad para normalizar la etiqueta.
 
 La profesión debe ser compatible con la edad. Un aprendiz adolescente puede existir donde sea plausible; un niño no debe recibir una profesión adulta incompatible.
 
@@ -250,10 +253,26 @@ En GitHub, el asset se almacena descomprimido en una carpeta con ese mismo nombr
 portrait_treskal_farmer_male_001/
 ├── portrait_treskal_farmer_male_001.webp
 ├── portrait_treskal_farmer_male_001_prompt.md
-└── portrait_treskal_farmer_male_001_info.md
+├── portrait_treskal_farmer_male_001_info.md
+└── portrait_treskal_farmer_male_001_visual_identity.json
 ```
 
-El ZIP puede transportar el PNG maestro y su documentación, pero no forma parte del almacenamiento definitivo del repositorio. GitHub conserva el WebP de producción junto a los archivos de prompt e información.
+El ZIP puede transportar el PNG maestro y su documentación, pero no forma parte del almacenamiento definitivo del repositorio. GitHub conserva el WebP de producción junto a los archivos de prompt, información y metadata visual estructurada.
+
+### 12.1. Metadata visual estructurada obligatoria
+
+Todo retrato **APPROVED** debe incluir `<asset_id>_visual_identity.json` en su carpeta definitiva de GitHub.
+
+Este JSON es parte estable de la metadata del retrato y sirve para selección, comparación, control de diversidad y futura generación. No sustituye al WebP aprobado ni al `_info.md` humano.
+
+Regla de autoridad:
+
+1. el **master visual aprobado** (PNG externo y su WebP de producción equivalente) es la referencia física;
+2. `_visual_identity.json`, `_info.md` y `PORTRAIT_REGISTRY.json` deben describir de forma coherente lo que realmente se ve;
+3. una metadata más reciente no tiene prioridad automática sobre la imagen;
+4. si un rasgo visible no puede determinarse con fiabilidad, debe marcarse para revisión humana en lugar de inventarse.
+
+La carpeta mínima aprobada queda formada por **cuatro archivos**: WebP + `_prompt.md` + `_info.md` + `_visual_identity.json`.
 
 ---
 
@@ -313,10 +332,10 @@ Durante una sesión de creación de retratos puede utilizarse el siguiente flujo
 4. conservar el PNG maestro original externamente en TeraBox y conservar el prompt y la información del asset;
 5. si se utiliza un ZIP de transferencia, incluir en él el PNG maestro y su documentación; el ZIP no es almacenamiento definitivo;
 6. convertir el PNG maestro a WebP 768x960, relación 4:5, Q90;
-7. **actualizar inmediatamente** los tres registros: PORTRAIT_REGISTRY.json, PORTRAIT_REGISTRY.md y VISUAL_ASSET_REGISTRY.md;
+7. crear o actualizar `<asset_id>_visual_identity.json` a partir del resultado visual aprobado y **actualizar inmediatamente** los tres registros: PORTRAIT_REGISTRY.json, PORTRAIT_REGISTRY.md y VISUAL_ASSET_REGISTRY.md;
 8. marcar el asset como local_pending_gitsync mientras el WebP de producción no esté confirmado en GitHub;
-9. colocar en la carpeta definitiva del repositorio el WebP de producción, el archivo _prompt.md y el archivo _info.md con el mismo nombre base, y sincronizarla mediante GitSync;
-10. cuando se confirme en GitHub la carpeta con WebP + _prompt.md + _info.md, cambiar el estado a synced.
+9. colocar en la carpeta definitiva del repositorio el WebP de producción, `_prompt.md`, `_info.md` y `_visual_identity.json` con el mismo nombre base, y sincronizarla mediante GitSync;
+10. cuando se confirme en GitHub la carpeta con WebP + _prompt.md + _info.md + _visual_identity.json, cambiar el estado a synced.
 
 La memoria de diversidad **no debe esperar al GitSync final**. Un retrato aprobado cuenta para la diversidad desde su aprobación y registro, aunque la sincronización del WebP esté pendiente.
 
@@ -352,7 +371,7 @@ Cuando se vaya a actualizar cualquiera de los registros de assets o diversidad d
 Si la carpeta ya está presente en el repositorio:
 
 1. verificar que el nombre y la ruta coinciden con el asset registrado;
-2. verificar que contiene el WebP de producción, `_prompt.md` y `_info.md` correctos;
+2. verificar que contiene el WebP de producción, `_prompt.md`, `_info.md` y `_visual_identity.json` correctos;
 3. cambiar `binary_sync_status` de `local_pending_gitsync` a `synced`;
 4. actualizar las vistas Markdown relacionadas para eliminar cualquier indicación de sincronización pendiente;
 5. mantener coherentes todos los registros entre sí.
@@ -382,4 +401,4 @@ Esta revisión es especialmente obligatoria en sesiones largas con múltiples as
 
 El ZIP solo debe entregarse después de superar esta comprobación.
 
-Para retratos, la validación definitiva de GitHub se hace sobre el WebP 768x960 4:5 Q90 y sus archivos _prompt.md y _info.md; el PNG maestro permanece fuera del repositorio.
+Para retratos, la validación definitiva de GitHub se hace sobre el WebP 768x960 4:5 Q90 y sus archivos `_prompt.md`, `_info.md` y `_visual_identity.json`; el PNG maestro permanece fuera del repositorio.

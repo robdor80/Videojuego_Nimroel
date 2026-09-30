@@ -114,8 +114,10 @@
     "worn_brown_leather_apron"
   ],
   "review": {
-    "requires_human_review": false,
-    "doubtful_fields": [],
-    "notes": ""
+    "requires_human_review": true,
+    "doubtful_fields": [
+      "eyes.color"
+    ],
+    "notes": "Eye-color value conflicts with the historical _info.md / PORTRAIT_REGISTRY.json. Do not normalize automatically: inspect the approved PNG master if available, otherwise the approved WebP, then synchronize all metadata sources."
   }
 }

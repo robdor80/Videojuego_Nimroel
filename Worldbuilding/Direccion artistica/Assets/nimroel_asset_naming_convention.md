@@ -22,6 +22,7 @@ Ese mismo nombre base debe usarse en:
 
 - el archivo `.zip` (si se utiliza)
 - el archivo de imagen (en retratos: PNG maestro externo y WebP de producción)
+- la metadata visual estructurada obligatoria de retratos (`_visual_identity.json`)
 - el archivo `.md` del prompt
 - el archivo `.md` de información
 
@@ -38,6 +39,7 @@ portrait_treskal_farmer_male_001.zip
 portrait_treskal_farmer_male_001.webp
 portrait_treskal_farmer_male_001_prompt.md
 portrait_treskal_farmer_male_001_info.md
+portrait_treskal_farmer_male_001_visual_identity.json
 ```
 
 ---
@@ -95,7 +97,7 @@ portrait_treskal_farmer_boy_002
 
 Estos IDs son estables y **no deben migrarse** a `male` / `female`.
 
-En todos los retratos, el `asset_id`, la carpeta definitiva, el WebP de producción, `_prompt.md` y `_info.md` deben compartir exactamente el mismo nombre base. El PNG maestro externo conserva ese mismo nombre base.
+En todos los retratos, el `asset_id`, la carpeta definitiva, el WebP de producción, `_prompt.md`, `_info.md` y `_visual_identity.json` deben compartir exactamente el mismo nombre base. El PNG maestro externo conserva ese mismo nombre base.
 
 Se mantienen las reglas de minúsculas, ASCII, underscores y numeración final de tres dígitos.
 
@@ -181,7 +183,8 @@ Estructura de transferencia con PNG maestro:
 │
 ├── <base_name>.png
 ├── <base_name>_prompt.md
-└── <base_name>_info.md
+├── <base_name>_info.md
+└── <base_name>_visual_identity.json
 ```
 
 Ejemplo:
@@ -206,7 +209,8 @@ Para retratos, el PNG maestro se convierte antes de subirlo a WebP 768x960, rela
 portrait_treskal_farmer_female_003/
 ├── portrait_treskal_farmer_female_003.webp
 ├── portrait_treskal_farmer_female_003_prompt.md
-└── portrait_treskal_farmer_female_003_info.md
+├── portrait_treskal_farmer_female_003_info.md
+└── portrait_treskal_farmer_female_003_visual_identity.json
 ```
 
 Flujo operativo:
@@ -214,7 +218,7 @@ Flujo operativo:
 1. Se aprueba el PNG maestro y se le asigna el nombre base canónico.
 2. El PNG maestro se conserva externamente en TeraBox; si se entrega en un ZIP, se extrae para preparar la producción.
 3. Se convierte el maestro a WebP 768x960, relación 4:5, Q90.
-4. En la carpeta `<base_name>/` se colocan el WebP, `_prompt.md` y `_info.md`.
+4. En la carpeta `<base_name>/` se colocan el WebP, `_prompt.md`, `_info.md` y `_visual_identity.json`.
 5. El ZIP de transferencia se elimina del almacenamiento definitivo.
 6. GitSync sincroniza la carpeta de producción con GitHub.
 
@@ -238,7 +242,8 @@ Assets/
                     └── <asset_id>/
                         ├── <asset_id>.webp
                         ├── <asset_id>_prompt.md
-                        └── <asset_id>_info.md
+                        ├── <asset_id>_info.md
+                        └── <asset_id>_visual_identity.json
 ```
 
 Ejemplo real:
@@ -253,7 +258,8 @@ Assets/
                     └── portrait_treskal_farmer_male_001/
                         ├── portrait_treskal_farmer_male_001.webp
                         ├── portrait_treskal_farmer_male_001_prompt.md
-                        └── portrait_treskal_farmer_male_001_info.md
+                        ├── portrait_treskal_farmer_male_001_info.md
+                        └── portrait_treskal_farmer_male_001_visual_identity.json
 ```
 
 El ZIP aparece **únicamente como paquete temporal de transferencia** y nunca como contenido definitivo del repositorio.
@@ -282,6 +288,12 @@ portrait_treskal_farmer_male_dirty_white_shirt_middle_aged_brown_hair_001
 ```
 
 Esas características pertenecen a los metadatos.
+
+---
+
+## Metadata visual estructurada de retratos
+
+Todo retrato aprobado debe incluir `<base_name>_visual_identity.json` en su carpeta definitiva. Es metadata estructurada estable del resultado visual aprobado y comparte el mismo nombre base que el WebP, `_prompt.md` y `_info.md`.
 
 ---
 
@@ -416,7 +428,8 @@ A partir de ahora, **todo asset nuevo debe seguir esta convención**:
 4. el PNG maestro externo de un retrato conserva ese nombre;
 5. el WebP de producción de un retrato usa ese nombre;
 6. el `_prompt.md` usa ese nombre;
-7. el `_info.md` usa ese nombre.
+7. el `_info.md` usa ese nombre;
+8. el `_visual_identity.json` usa ese nombre.
 
 No deben crearse assets nuevos fuera de esta norma salvo decisión expresa posterior.
 
