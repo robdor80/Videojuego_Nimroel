@@ -102,7 +102,7 @@ Los 39 assets enumerados abajo tienen en su carpeta el conjunto obligatorio de p
 | `portrait_treskal_farmer_boy_001` | farmer | male | 11 | 9-12 | slim_youthful | medium_brown | none_visible | none | freckles; tousled brown hair | 2 | C | **synced** |
 | `portrait_treskal_farmer_boy_002` | farmer | male | 10 | 8-11 | slim_youthful | medium_brown | none_visible | none | freckles; open expression | 2 | C | **synced** |
 | `portrait_treskal_girl_001` | village_child | female | 11 | 9-12 | slim_youthful | medium_brown | none_visible | not_applicable | practical braid; freckles | 2 | C | **synced** |
-| `portrait_treskal_girl_002` | village_child | female | 12 | 10-13 | slim_youthful | dark_brown | none_visible | not_applicable | long dark-brown braid; hazel-brown eyes | 2 | C | **synced** |
+| `portrait_treskal_girl_002` | village_child | female | 12 | 10-13 | slim_youthful | dark_brown | none_visible | not_applicable | long dark-brown braid; light hazel eyes | 2 | C | **synced** |
 | `portrait_treskal_girl_003` | village_child | female | 10 | 8-11 | slim_youthful | light_medium_brown | none_visible | not_applicable | twin braids; freckles | 2 | C | **synced** |
 | `portrait_treskal_elder_female_001` | village_elder | female | 80 | 76-85 | slim_resilient | white_grey; dominant | none_visible | not_applicable | dark headscarf; deep age lines | 2 | C | **synced** |
 | `portrait_treskal_elder_female_002` | village_elder | female | 80 | 76-85 | slim_resilient | white_grey; dominant | none_visible | not_applicable | dark headscarf; white-grey hair | 2 | C | **synced** |
