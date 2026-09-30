@@ -113,6 +113,26 @@ Entre ellos pueden encontrarse:
 
 Estos elementos sí pueden justificar desplazamientos voluntarios o específicos desde otros asentamientos.
 
+### 3.4. Clasificación funcional aprobada
+
+La clasificación concreta para los servicios con mayor impacto en la autosuficiencia de un Pueblo queda así:
+
+| Elemento | Disponibilidad funcional | Profesional o edificio dedicado |
+|---|---|---|
+| Carpintería | **Casi universal** | **Muy frecuente** |
+| Panificación | **Casi universal** | **Bastante frecuente** |
+| Curandera formada | **Frecuente** | **Frecuente, no universal** |
+| Molino | **Acceso casi universal** | **Frecuente en el Pueblo o su entorno** |
+| Posada | **Variable** | **Frecuente solo donde el tránsito lo justifique** |
+| Carnicería | **Carne disponible normalmente** | **Moderadamente frecuente** |
+| Carretero | **Capacidad de reparación casi universal** | **Especialista independiente frecuente, no universal** |
+
+Regla interpretativa:
+
+**“Casi universal” no significa necesariamente “edificio especializado garantizado”.**
+
+La función cotidiana puede estar cubierta mediante producción doméstica, servicios combinados, mercado, comerciantes o profesionales no exclusivos.
+
 ---
 
 ## 4. Regla contra el “pueblo catálogo”

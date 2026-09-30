@@ -42,6 +42,8 @@ Puede atender tanto al pueblo como a varias aldeas próximas.
 
 Si ya existe un molino bien situado que cubre razonablemente la zona, no es necesario generar otro únicamente porque exista un pueblo.
 
+**La molienda debe tener acceso razonable casi universal**, aunque el molino dedicado no tenga que estar dentro de cada Pueblo.
+
 ---
 
 # 3. Carpintería
@@ -65,6 +67,8 @@ Pueden realizar:
 
 La calidad del artesano no depende automáticamente del tamaño del pueblo.
 
+La **capacidad cotidiana de trabajo en madera debe considerarse casi universal** en los Pueblos de Treskal. La presencia de una carpintería profesional claramente diferenciada sigue siendo muy frecuente, pero no estrictamente obligatoria.
+
 ---
 
 # 4. Carretero
@@ -85,6 +89,8 @@ Puede existir un especialista dedicado a:
 En otros pueblos estas necesidades pueden resolverse mediante la combinación de carpintero y herrero.
 
 La aparición de un carretero independiente aumenta con el tránsito, el mercado y la importancia de las rutas.
+
+La **capacidad de resolver reparaciones ordinarias de carros debe ser casi universal**, aunque el oficio independiente de carretero no lo sea. En muchos casos puede cubrirse mediante herrero y carpintero.
 
 ---
 
@@ -132,6 +138,8 @@ La curandera puede desplazarse a otros núcleos cuando el enfermo no pueda viaja
 
 Se mantiene la tradición de Norgard predominantemente femenina ya fijada para este oficio.
 
+La curandera formada es **frecuente pero no universal**. Su ausencia no convierte al Pueblo en incompleto si existe acceso razonable mediante otro núcleo, desplazamiento de la propia curandera o soluciones ordinarias para dolencias menores.
+
 ---
 
 # 8. Carnicería profesional
@@ -149,6 +157,8 @@ Puede comprar animales o canales a productores del pueblo y aldeas cercanas y ve
 
 No aparece en todos los pueblos.
 
+La **carne debe poder obtenerse normalmente** aunque no exista carnicería profesional permanente, mediante producción local, sacrificio, mercado y comercio.
+
 ---
 
 # 9. Panadería
@@ -165,6 +175,8 @@ La panadería puede coexistir con:
 - producción familiar.
 
 No sustituye automáticamente esas formas de producción.
+
+La **capacidad estable de producir pan localmente es casi universal**. La panadería profesional sigue siendo bastante frecuente pero no obligatoria, porque la función puede cubrirse mediante elaboración doméstica, hornos comunales o producción semiprofesional.
 
 ---
 
@@ -233,6 +245,8 @@ Su probabilidad aumenta con:
 Un pueblo apartado puede no tener ninguna.
 
 Un pueblo muy transitado puede tener una o varias.
+
+La posada debe considerarse **frecuente solo cuando el tránsito lo justifique**. Su ausencia en un Pueblo apartado es completamente normal.
 
 ---
 
