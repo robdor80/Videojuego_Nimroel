@@ -290,8 +290,10 @@ Al aprobar:
 4. convertir el PNG maestro a WebP 768x960, relación 4:5, Q90;
 5. registrar características físicas reales del resultado aprobado;
 6. registrar presentación y pátina;
-7. actualizar la vista MD;
-8. actualizar `VISUAL_ASSET_REGISTRY.md`.
+7. crear o actualizar `<asset_id>_visual_identity.json` a partir del resultado visual aprobado;
+8. actualizar `PORTRAIT_REGISTRY.json`;
+9. actualizar `PORTRAIT_REGISTRY.md`;
+10. actualizar `VISUAL_ASSET_REGISTRY.md`.
 
 No registrar únicamente lo solicitado en el prompt: registrar lo que realmente aparece en el asset final aprobado.
 
