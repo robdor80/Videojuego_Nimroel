@@ -205,8 +205,115 @@
     ]
   },
   "naming": {
-    "officialSubzoneNamesDefined": false,
-    "officialStreetNamesDefined": false,
-    "technicalIdsMustRemainStableWhenNamesAreAdded": true
+    "convention": "mixed_proper_descriptive_popular",
+    "conventionRef": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Toponimia/convencion_toponimica_norgard_v0.1.md",
+    "cityToponymyRef": "../13_Toponimia/toponimia_treskal_v0.1.md",
+    "technicalIdsRemainStable": true,
+    "names": {
+      "landmarks": {
+        "L01": {
+          "canonicalName": "Puente de los Gemelos",
+          "shortForms": [
+            "el puente"
+          ]
+        },
+        "L03": {
+          "canonicalName": "Plaza del Abasto",
+          "shortForms": [
+            "el Abasto"
+          ]
+        },
+        "L04": {
+          "canonicalName": "Lonja del Pescado",
+          "shortForms": [
+            "la Lonja"
+          ]
+        },
+        "L05": {
+          "canonicalName": "La Casa",
+          "formalReference": "sede de la Casa Valrik en Treskal"
+        },
+        "L06": {
+          "canonicalName": "Casa de Justicia de Treskal",
+          "shortForms": [
+            "la Justicia"
+          ]
+        },
+        "L08": {
+          "canonicalName": "Astilleros Reales de Treskal",
+          "shortForms": [
+            "los Astilleros Reales",
+            "los astilleros"
+          ]
+        },
+        "L11": {
+          "canonicalName": "Los Corrales"
+        }
+      },
+      "areas": {
+        "Z01": {
+          "canonicalName": "El Puente",
+          "type": "popular_area_name"
+        },
+        "Z02": {
+          "canonicalName": "La Ribera de los Gemelos",
+          "shortForms": [
+            "la Ribera"
+          ]
+        },
+        "Z03": {
+          "canonicalName": "La Ribera de los Gemelos",
+          "shortForms": [
+            "la Ribera"
+          ]
+        },
+        "Z05": {
+          "canonicalName": "Los Talleres"
+        },
+        "Z06": {
+          "canonicalName": "Los Patios",
+          "formalLongForm": "Patios de la Madera"
+        },
+        "Z07": {
+          "canonicalName": "La Casa"
+        },
+        "Z08": {
+          "canonicalName": "Casa de Justicia de Treskal",
+          "shortForms": [
+            "la Justicia"
+          ]
+        },
+        "Z09": {
+          "canonicalName": "Los Muelles"
+        },
+        "Z10": {
+          "canonicalName": "Los Muelles"
+        },
+        "Z12": {
+          "canonicalName": "Astilleros Reales de Treskal"
+        },
+        "Z14": {
+          "canonicalName": "Los Corrales"
+        }
+      },
+      "institutions": {
+        "T07": {
+          "canonicalName": "Puerto de Treskal"
+        },
+        "T08": {
+          "canonicalName": "Astilleros Reales de Treskal"
+        }
+      }
+    },
+    "intentionallyUnnamed": [
+      "Z11",
+      "Z13",
+      "L12",
+      "specific_streets",
+      "secondary_routes",
+      "royal_shipyard_internal_areas",
+      "house_valrik_rooms",
+      "judicial_internal_rooms"
+    ]
   }
 }

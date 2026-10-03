@@ -933,9 +933,12 @@
   ],
   "visualProfileRef": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Perfiles locales/Treskal/TRESKAL_CITY_VISUAL_PROFILE_v0.1.md",
   "toponymy": {
-    "conventionDefined": false,
+    "conventionDefined": true,
+    "convention": "mixed_proper_descriptive_popular",
+    "conventionRef": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Toponimia/convencion_toponimica_norgard_v0.1.md",
+    "cityToponymyRef": "../13_Toponimia/toponimia_treskal_v0.1.md",
     "stableTechnicalIdsRequired": true,
-    "visibleNamesMayBeAddedLater": true,
-    "namingFrameworkRef": "../13_Toponimia/marco_toponimia_urbana_v0.1.md"
+    "visibleNamesCanChangeWithoutBreakingIds": true,
+    "officialStreetNamingStillOpen": true
   }
 }

@@ -104,7 +104,8 @@ La arquitectura funcional base de Treskal está cerrada. Permanecen abiertos los
 
 ### 13_Toponimia
 
-- `marco_toponimia_urbana_v0.1.md` — mantiene IDs técnicos estables y aplaza nombres hasta definir la convención cultural de Norgard.
+- `marco_toponimia_urbana_v0.1.md` — marco técnico de IDs y nombres visibles.
+- `toponimia_treskal_v0.1.md` — primera capa canónica de nombres urbanos de Treskal.
 
 ## Dirección visual
 
@@ -114,3 +115,7 @@ El perfil visual vigente de la ciudad es `TRESKAL_CITY_VISUAL_PROFILE_v0.1.md`. 
 
 - `grafo_navegacion_v0.1.md` — conectividad T01–T11, puente, restricciones por actor y costes de ruta.
 - `estados_dinamicos_urbanos_v0.1.md` — temporales, crecidas, incendios, convoyes, llegadas de barcos y otros estados de World State.
+
+## Convención toponímica vigente
+
+Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe historia real y, para la vida urbana cotidiana, nombres descriptivos y populares. Quedan fijados, entre otros, **Puente de los Gemelos**, **Plaza del Abasto**, **Lonja del Pescado**, **Los Talleres**, **Los Patios**, **La Casa**, **Casa de Justicia de Treskal**, **Los Muelles** y **Los Corrales**.
