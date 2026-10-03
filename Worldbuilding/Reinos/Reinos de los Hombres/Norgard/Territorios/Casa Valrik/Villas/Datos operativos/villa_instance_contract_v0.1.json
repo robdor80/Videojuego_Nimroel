@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_villa_instance_contract",
+  "version": "0.1",
+  "status": "active_world_state_contract",
+  "purpose": "Contrato mínimo para persistir la materialización procedural de una de las tres Villas funcionales.",
+  "ruleSource": "villa_generation_rules_v0.1.json",
+  "requiredFields": [
+    "instanceId",
+    "profileId",
+    "seed",
+    "populationResidents",
+    "populationBand",
+    "locationContext",
+    "minorHouseRef",
+    "regionalLinks",
+    "households",
+    "residentialUnits",
+    "buildings",
+    "services",
+    "administration",
+    "logistics",
+    "market",
+    "water",
+    "layout",
+    "validation",
+    "rulesVersion",
+    "generatorVersion"
+  ],
+  "fieldContract": {
+    "instanceId": "stable_technical_id_not_visible_name",
+    "profileId": "V1_Costera_astilleros_civiles|V2_Gestion_forestal_maderera|V3_Agroganadera_comercial",
+    "seed": "stable_derived_seed",
+    "populationResidents": "integer_2000_4500",
+    "populationBand": "VB1|VB2|VB3",
+    "transientPopulationStateRef": "dynamic_external_reference",
+    "locationContext": {
+      "worldPositionRef": "external_world_position_reference",
+      "terrainTags": [
+        "string"
+      ],
+      "resourceTags": [
+        "string"
+      ],
+      "routeTags": [
+        "string"
+      ],
+      "hydrologyTags": [
+        "string"
+      ]
+    },
+    "minorHouseRef": "stable_lore_reference_when_defined",
+    "regionalLinks": {
+      "linkedTowns": [
+        "stable_instance_id"
+      ],
+      "linkedVillages": [
+        "stable_instance_id"
+      ],
+      "TreskalRef": "stable_instance_or_canonical_ref",
+      "otherVillaLinks": [
+        "stable_instance_id"
+      ],
+      "accessibilityGraphRef": "external_graph_reference"
+    },
+    "households": {
+      "count": "integer",
+      "recordsRef": "external_or_embedded_records"
+    },
+    "residentialUnits": {
+      "count": "integer",
+      "buildingOccupancyRef": "external_or_embedded_mapping"
+    },
+    "buildings": {
+      "totalCount": "integer",
+      "mixedUseCount": "integer",
+      "dedicatedFunctionalCount": "integer",
+      "recordsRef": "external_or_embedded_records"
+    },
+    "services": {
+      "mandatory": [
+        "resolved_service_record"
+      ],
+      "optional": [
+        "resolved_service_record"
+      ],
+      "capacityRecords": [
+        "resolved_capacity_record"
+      ]
+    },
+    "administration": {
+      "minorHouseSeatRef": "building_or_complex_ref",
+      "justiceSpaceRef": "building_or_room_ref",
+      "houseForceRef": "external_force_record"
+    },
+    "logistics": {
+      "profileSpecificFacilities": [
+        "feature_ref"
+      ],
+      "storageCapacityRecords": [
+        "capacity_record"
+      ],
+      "majorFlows": [
+        "flow_record"
+      ]
+    },
+    "market": {
+      "mode": "daily|stable_trade_with_periodic_market|other_canon_valid_mode",
+      "scheduleRef": "calendar_reference_if_needed",
+      "mainSpaceRefs": [
+        "layout_feature_ref"
+      ]
+    },
+    "water": {
+      "potableSources": [
+        "layout_feature_ref"
+      ],
+      "redundancyValidated": "boolean",
+      "capacityValidated": "boolean"
+    },
+    "layout": {
+      "layoutSeed": "stable_seed",
+      "roadGraphRef": "external_or_embedded_graph",
+      "functionalAreas": [
+        "layout_feature_ref"
+      ]
+    },
+    "validation": {
+      "populationRangeValid": "boolean",
+      "coastalVillaLargestRuleValid": "boolean_or_not_applicable_until_all_three_generated",
+      "mandatoryCapabilitiesValid": "boolean",
+      "profileFunctionValid": "boolean",
+      "administrationValid": "boolean",
+      "waterValid": "boolean",
+      "regionalRoleValid": "boolean",
+      "spatialRulesValid": "boolean"
+    },
+    "rulesVersion": "string",
+    "generatorVersion": "string"
+  },
+  "forbiddenPersistencePatterns": [
+    "merge_transient_population_into_resident_census_without_state_change",
+    "reroll_profile_function",
+    "reroll_buildings_on_revisit",
+    "store_dynamic_shop_inventory_as_static_villa_canon",
+    "store_quest_state_as_static_villa_canon"
+  ]
+}

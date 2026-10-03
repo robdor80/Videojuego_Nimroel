@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_villa_generation_invariants",
+  "version": "0.1",
+  "status": "design_level_tests_before_engine_implementation",
+  "purpose": "Pruebas de diseño para asegurar que la materialización procedural respeta las tres funciones canónicas de Villa.",
+  "cases": [
+    {
+      "id": "profiles_are_fixed_not_random",
+      "expected": [
+        "exactly one V1 coastal civil shipyard profile exists when the canonical three Villas are materialized",
+        "exactly one V2 forest logistics profile exists",
+        "exactly one V3 agropastoral commercial profile exists",
+        "profile identity does not reroll"
+      ]
+    },
+    {
+      "id": "coastal_villa_is_largest",
+      "setup": "materialize all three Villas in the same world state",
+      "expected": [
+        "V1 resident population is greater than V2 and V3 resident populations"
+      ]
+    },
+    {
+      "id": "civil_shipyards_not_royal_warship_yards",
+      "setup": "generate V1_Costera_astilleros_civiles",
+      "expected": [
+        "large civil shipbuilding present",
+        "royal warship construction absent",
+        "royal warship construction remains assigned to Treskal"
+      ]
+    },
+    {
+      "id": "civil_shipyard_ownership",
+      "setup": "generate V1 administration and economic assets",
+      "expected": [
+        "major civil shipyards remain House Valrik property",
+        "minor House administration does not automatically imply shipyard ownership"
+      ]
+    },
+    {
+      "id": "forest_villa_outside_dense_forest",
+      "setup": "generate V2_Gestion_forestal_maderera",
+      "expected": [
+        "civil urban core lies outside dense Black Forest interior",
+        "timber extraction routes connect to forest installations"
+      ]
+    },
+    {
+      "id": "forest_villa_not_treskal_replacement",
+      "setup": "generate V2 economic facilities",
+      "expected": [
+        "timber reception sorting storage and dispatch are prominent",
+        "specialized woodworking identity does not replace Treskal",
+        "large furniture craftsmanship prestige is not transferred automatically"
+      ]
+    },
+    {
+      "id": "agropastoral_daily_market",
+      "setup": "generate V3_Agroganadera_comercial",
+      "expected": [
+        "daily market exists",
+        "market activity intensity may vary by day and season",
+        "regional storage and livestock handling are present"
+      ]
+    },
+    {
+      "id": "valrik_not_arleon",
+      "setup": "generate V3 visual and economic output",
+      "expected": [
+        "Villa is important within Valrik",
+        "Villa is not represented as Norgard primary granary",
+        "Arleon scale and identity are not copied"
+      ]
+    },
+    {
+      "id": "resident_vs_transient_population",
+      "setup": "market day, ship arrival or large convoy",
+      "expected": [
+        "transient population may increase visible activity",
+        "resident census remains unchanged unless world state records actual settlement"
+      ]
+    },
+    {
+      "id": "minor_house_not_sovereign",
+      "expected": [
+        "minor House administers locally",
+        "superior authority remains House Valrik and Crown",
+        "serious crimes are referred to Treskal",
+        "death penalty is not imposed autonomously by minor House"
+      ]
+    },
+    {
+      "id": "name_does_not_regenerate_villa",
+      "setup": "assign or change visible Villa name while preserving stable instance ID",
+      "expected": [
+        "profile unchanged",
+        "population unchanged",
+        "services unchanged",
+        "layout unchanged"
+      ]
+    },
+    {
+      "id": "optional_service_capacity_not_building_count",
+      "setup": "optional secondary service roll succeeds",
+      "expected": [
+        "engine may expand existing capacity instead of forcing a new building when coherent"
+      ]
+    },
+    {
+      "id": "no_default_walls",
+      "expected": [
+        "walls are absent unless separately justified by canon, history or strategic need"
+      ]
+    }
+  ]
+}

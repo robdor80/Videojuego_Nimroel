@@ -8,15 +8,24 @@ Todas deben seguir la metodología territorial común definida en:
 
 `../metodologia_generacion_asentamientos_treskal.md`
 
-La secuencia obligatoria es:
+Secuencia obligatoria:
 
 **esqueleto mínimo → posibilidades → perfil funcional → coherencia regional → probabilidades → generación → persistencia**.
 
 ## Estado actual
 
-**FASE ACTIVA DE DISEÑO**
+**DISEÑO BASE AVANZADO / CAPA OPERATIVA ACTIVA**
 
-El esqueleto mínimo está aprobado y ya se ha iniciado la capa funcional común y la definición de los tres perfiles canónicos.
+Ya están definidos:
+
+- esqueleto mínimo;
+- capacidades comunes;
+- tres perfiles funcionales canónicos;
+- relación regional con Pueblos, Aldeas y Treskal;
+- probabilidades de servicios secundarios;
+- reglas espaciales;
+- población residente y flotante;
+- contratos operativos de generación y persistencia.
 
 Treskal ciudad no se genera proceduralmente: se diseñará manualmente.
 
@@ -38,14 +47,33 @@ Los nombres, localizaciones exactas y Casas menores permanecen pendientes.
 
 ### 00_Base
 
-- `villa_tipo_treskal.md` — esqueleto mínimo obligatorio.
-- `posibilidades_villa_treskal.md` — capacidades comunes, servicios y posibilidades por escala.
+- `villa_tipo_treskal.md`
+- `posibilidades_villa_treskal.md`
 
 ### 01_Perfiles_funcionales
 
 - `V1_Costera_astilleros_civiles/perfil_v1.md`
 - `V2_Gestion_forestal_maderera/perfil_v2.md`
 - `V3_Agroganadera_comercial/perfil_v3.md`
+
+### 02_Coherencia_regional
+
+- `red_villas_pueblos_treskal.md`
+
+### 03_Probabilidades
+
+- `probabilidades_servicios_secundarios_villa_treskal.md`
+
+### 04_Generacion
+
+- `reglas_espaciales_villa_treskal.md`
+- `poblacion_hogares_y_edificios_villa_treskal.md`
+
+### Datos operativos
+
+- `villa_generation_rules_v0.1.json`
+- `villa_instance_contract_v0.1.json`
+- `README.md`
 
 ## Límites ya fijados
 
@@ -59,7 +87,9 @@ Los nombres, localizaciones exactas y Casas menores permanecen pendientes.
 
 ## Siguiente fase
 
-- coherencia regional entre las tres Villas, Pueblos y Treskal;
-- probabilidades de servicios secundarios;
-- reglas espaciales y de densidad;
-- datos operativos y persistencia.
+Antes del cierre formal faltan únicamente:
+
+1. validar coherencia entre documentos humanos y JSON;
+2. limpiar estados documentales obsoletos;
+3. fijar invariantes de generación de las tres Villas;
+4. cerrar el diseño base sin asignar todavía nombres, Casas menores o localizaciones exactas.

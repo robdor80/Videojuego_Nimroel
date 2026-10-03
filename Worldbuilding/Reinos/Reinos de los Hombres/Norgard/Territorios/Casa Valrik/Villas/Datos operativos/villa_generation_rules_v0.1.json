@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_villa_generation_rules",
+  "version": "0.1",
+  "status": "active_generation_contract",
+  "scope": "Norgard/Treskal/Villa",
+  "purpose": "Reglas estáticas para materializar las tres Villas funcionales canónicas sin fijar nombres, Casas menores ni layouts concretos.",
+  "sourceDocuments": [
+    "../00_Base/villa_tipo_treskal.md",
+    "../00_Base/posibilidades_villa_treskal.md",
+    "../01_Perfiles_funcionales/V1_Costera_astilleros_civiles/perfil_v1.md",
+    "../01_Perfiles_funcionales/V2_Gestion_forestal_maderera/perfil_v2.md",
+    "../01_Perfiles_funcionales/V3_Agroganadera_comercial/perfil_v3.md",
+    "../02_Coherencia_regional/red_villas_pueblos_treskal.md",
+    "../03_Probabilidades/probabilidades_servicios_secundarios_villa_treskal.md",
+    "../04_Generacion/reglas_espaciales_villa_treskal.md",
+    "../04_Generacion/poblacion_hogares_y_edificios_villa_treskal.md"
+  ],
+  "population": {
+    "min": 2000,
+    "max": 4500,
+    "bands": {
+      "VB1": {
+        "min": 2000,
+        "max": 2799
+      },
+      "VB2": {
+        "min": 2800,
+        "max": 3599
+      },
+      "VB3": {
+        "min": 3600,
+        "max": 4500
+      }
+    },
+    "coastalShipyardVillaMustBeLargestOfThree": true
+  },
+  "profiles": {
+    "V1_Costera_astilleros_civiles": {
+      "fixedFunction": "large_scale_civil_shipbuilding",
+      "requiredGeography": [
+        "coast",
+        "waterfront_suitable_for_large_civil_vessels"
+      ],
+      "fixedOwnership": {
+        "majorCivilShipyards": "House_Valrik",
+        "royalWarshipShipyards": "Crown_at_Treskal"
+      },
+      "requiredFunctionalFeatures": [
+        "civil_shipyards",
+        "shipbuilding_slipways_or_equivalent",
+        "naval_timber_storage",
+        "material_yards",
+        "ship_carpentry",
+        "rope_and_rigging_capacity",
+        "naval_repair_workshops",
+        "loading_unloading_capacity",
+        "land_access_for_timber_and_supplies"
+      ],
+      "forbid": [
+        "royal_warship_construction",
+        "automatic_transfer_of_major_shipyard_ownership_to_minor_house"
+      ]
+    },
+    "V2_Gestion_forestal_maderera": {
+      "fixedFunction": "regional_timber_reception_sorting_storage_dispatch",
+      "requiredGeography": [
+        "outside_dense_Black_Forest",
+        "connected_to_timber_routes"
+      ],
+      "requiredFunctionalFeatures": [
+        "large_timber_yards",
+        "storage_sheds",
+        "sorting_yards",
+        "heavy_cart_access",
+        "draft_animal_capacity",
+        "wainwright_capacity",
+        "transport_blacksmith_capacity",
+        "repair_workshops",
+        "loading_dispatch_areas"
+      ],
+      "forbid": [
+        "civil_settlement_inside_dense_Black_Forest",
+        "automatic_replacement_of_Treskal_as_specialized_woodworking_center"
+      ]
+    },
+    "V3_Agroganadera_comercial": {
+      "fixedFunction": "regional_agropastoral_collection_storage_distribution",
+      "requiredGeography": [
+        "interior",
+        "strong_rural_route_connections"
+      ],
+      "requiredFunctionalFeatures": [
+        "daily_market",
+        "large_granaries",
+        "warehouses",
+        "cart_yards",
+        "livestock_reception_areas",
+        "corrals",
+        "loading_areas",
+        "high_capacity_milling_in_villa_or_immediate_area"
+      ],
+      "marketDaily": true,
+      "forbid": [
+        "representation_as_Norgard_primary_granary"
+      ]
+    }
+  },
+  "mandatoryCommonCapabilities": [
+    "permanent_everyday_trade",
+    "at_least_one_inn",
+    "sufficient_blacksmith_capacity_min_level_2",
+    "professional_carpentry",
+    "professional_bread_production",
+    "professional_butchery",
+    "at_least_one_trained_healer",
+    "professional_cart_repair",
+    "permanent_textile_availability",
+    "permanent_footwear_production_and_repair",
+    "minor_house_administrative_seat",
+    "local_minor_justice",
+    "regional_storage",
+    "stable_exchange_system"
+  ],
+  "milling": {
+    "regionalCapacityRequired": true,
+    "allMillsInsideUrbanCoreRequired": false,
+    "hydraulicWoodSawmillExcludedByTechnologyCanon": true
+  },
+  "optionalSecondaryProbabilitiesPercent": {
+    "residentPotter": {
+      "VB1": 60,
+      "VB2": 75,
+      "VB3": 85
+    },
+    "tanner": {
+      "VB1": 50,
+      "VB2": 65,
+      "VB3": 80
+    },
+    "dedicatedBrewer": {
+      "VB1": 45,
+      "VB2": 60,
+      "VB3": 75
+    },
+    "secondInn": {
+      "VB1": 45,
+      "VB2": 65,
+      "VB3": 80
+    },
+    "thirdInnOrEquivalentCapacity": {
+      "VB1": 20,
+      "VB2": 40,
+      "VB3": 65
+    },
+    "secondTrainedHealer": {
+      "VB1": 45,
+      "VB2": 65,
+      "VB3": 80
+    },
+    "additionalSpecializedMerchant": {
+      "VB1": 65,
+      "VB2": 80,
+      "VB3": 90
+    },
+    "independentWainwright": {
+      "VB1": 80,
+      "VB2": 90,
+      "VB3": 95
+    },
+    "clearlySpecializedTextileWorkshop": {
+      "VB1": 70,
+      "VB2": 85,
+      "VB3": 95
+    },
+    "dedicatedShoemaker": {
+      "VB1": 75,
+      "VB2": 90,
+      "VB3": 95
+    },
+    "secondOrAdditionalTavern": {
+      "VB1": 75,
+      "VB2": 90,
+      "VB3": 95
+    },
+    "additionalMasterArtisanSomeTrade": {
+      "VB1": 20,
+      "VB2": 30,
+      "VB3": 40
+    }
+  },
+  "profileModifiersPercentPoints": {
+    "V1_Costera_astilleros_civiles": {
+      "secondOrThirdInn": 15,
+      "additionalSpecializedMerchant": 15,
+      "independentWainwright": 10,
+      "dedicatedBrewerIfWorkerAndPortDemand": 10
+    },
+    "V2_Gestion_forestal_maderera": {
+      "independentWainwright": 10,
+      "secondInn": 10,
+      "additionalSpecializedMerchant": 10
+    },
+    "V3_Agroganadera_comercial": {
+      "tanner": 15,
+      "dedicatedBrewer": 15,
+      "secondTrainedHealer": 10,
+      "secondInn": 10,
+      "additionalSpecializedMerchant": 15,
+      "cartRelatedWorkshops": 10
+    }
+  },
+  "probabilityRules": {
+    "normalClampPercent": {
+      "min": 5,
+      "max": 95
+    },
+    "profileCanForcePresence": true,
+    "coverageCanForcePresence": true,
+    "narrativeCanonCanForcePresence": true,
+    "positiveRollMayResolveAsCapacityExpansionInsteadOfNewBuilding": true
+  },
+  "craftsmanship": {
+    "individualTalentIndependentOfSettlementRank": true,
+    "largerPopulationRaisesMasterPresenceByMoreCandidatesNotHigherIndividualTalent": true,
+    "legendaryTalentNotGrantedBySettlementSize": true
+  },
+  "administration": {
+    "minorHouseSeatRequired": true,
+    "sovereignAuthority": false,
+    "superiorAuthority": [
+      "House_Valrik",
+      "Crown_of_Norgard"
+    ],
+    "localJusticeMinorMatters": true,
+    "seriousCrimesSentToTreskal": true,
+    "deathPenaltyReservedToLordValrik": true,
+    "smallPermanentHouseForce": true,
+    "ruralRoadSecurityBelongsToLordValrik": true
+  },
+  "households": {
+    "commonResidentsPerResidentialUnit": {
+      "min": 2,
+      "max": 8
+    },
+    "frequentCore": {
+      "min": 4,
+      "max": 6
+    },
+    "buildingMayContainMultipleResidentialUnits": true,
+    "modernApartmentBlocks": false,
+    "mixedUseBuildingsCommonInCenters": true
+  },
+  "populationPresence": {
+    "censusCountsResidents": true,
+    "transientPopulationSeparate": true,
+    "transientDrivers": [
+      "market",
+      "port",
+      "ships",
+      "convoys",
+      "seasonal_work",
+      "events",
+      "administration",
+      "harvest"
+    ]
+  },
+  "spatial": {
+    "requiredLayers": [
+      "civic_commercial_core",
+      "urban_residential_fabric",
+      "main_access_axes",
+      "artisan_areas",
+      "profile_logistics_or_production_areas",
+      "minor_house_seat_and_administration",
+      "regional_storage",
+      "peripheral_transition"
+    ],
+    "organicGrowth": true,
+    "formalDistrictsRequired": false,
+    "wallsByDefault": false,
+    "mainRoutesSupportCarts": true,
+    "allStreetsPavedByDefault": false,
+    "threeFloorBuildingsExceptional": true,
+    "waterRedundancyRequired": true,
+    "dirtyOrHazardousActivitiesSeparatedFromDenseHousing": true
+  },
+  "regionalRole": {
+    "hierarchyTrend": [
+      "village",
+      "town",
+      "villa",
+      "Treskal"
+    ],
+    "strictTravelChain": false,
+    "areasOfInfluenceUseAccessibilityNotFixedRadius": true,
+    "townsRemainUsefulServiceNodes": true,
+    "villasConcentrateHigherVolumeAndVariety": true
+  },
+  "persistence": {
+    "profileFunctionCannotReroll": true,
+    "concreteMaterializationPersistsInWorldState": true,
+    "visibleNameNotRequiredForGenerationIdentity": true
+  }
+}
