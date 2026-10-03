@@ -2,13 +2,13 @@
 
 ## Estado
 
-**CANON EN DESARROLLO — CAPA DE POSIBILIDADES**
+**CANON BASE CERRADO — CAPA DE POSIBILIDADES**
 
 ## Función
 
 Este documento recoge servicios, oficios y variantes aprobadas que **pueden existir o no** en un pueblo del territorio de Treskal.
 
-No fija todavía porcentajes numéricos ni pesos definitivos de generación.
+Las probabilidades numéricas y pesos de generación se definen en `../02_Probabilidades/probabilidades_servicios_pueblo_treskal.md`; este documento conserva la definición semántica de qué puede existir y bajo qué condiciones.
 
 ---
 

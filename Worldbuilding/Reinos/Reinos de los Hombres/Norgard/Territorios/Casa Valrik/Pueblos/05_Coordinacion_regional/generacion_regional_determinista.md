@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CANON DE GENERACIÓN REGIONAL — BASE**
+**CANON DE GENERACIÓN REGIONAL APROBADO — v0.1**
 
 ## Objetivo
 

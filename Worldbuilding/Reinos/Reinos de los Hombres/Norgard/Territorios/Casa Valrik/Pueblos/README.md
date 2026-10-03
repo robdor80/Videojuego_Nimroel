@@ -14,7 +14,7 @@ Secuencia obligatoria:
 
 ## Estado actual
 
-**DISEÑO BASE AVANZADO / CAPA OPERATIVA ACTIVA**
+**DISEÑO BASE DE PUEBLOS CERRADO — CAPA OPERATIVA v0.1**
 
 Para Pueblos ya están definidos:
 
@@ -80,11 +80,33 @@ World State → persistencia.**
 
 NPC individuales, inventarios dinámicos y estado de misiones se mantienen fuera del contrato estático del Pueblo.
 
-## Próximos pasos
+## Cierre de diseño base
 
-El siguiente trabajo útil ya no consiste en añadir oficios por completitud, sino en:
+La base jugable y procedural de los **Pueblos del territorio de Treskal se considera CERRADA**.
 
-1. validar automáticamente la coherencia entre documentos humanos y JSON;
-2. preparar un prototipo de generador con semillas deterministas cuando exista el módulo de código correspondiente;
-3. utilizar las pruebas de invariantes antes de generar instancias canónicas;
-4. trasladar después la metodología a Villas cuando el desarrollo del juego lo necesite.
+Quedan cubiertos:
+
+- escala y esqueleto mínimo;
+- servicios obligatorios y opcionales;
+- autosuficiencia cotidiana;
+- relación funcional con Aldeas;
+- comercio y mercado periódico;
+- probabilidades y modificadores contextuales;
+- modelos económicos iniciales;
+- hogares, viviendas y edificios;
+- crecimiento espacial orgánico;
+- cobertura regional;
+- aleatoriedad determinista;
+- persistencia;
+- contratos operativos;
+- invariantes de prueba.
+
+Los asuntos deliberadamente pospuestos —como metalurgia especializada de mayor escala, porcentajes demográficos generales de todo Valrik o instancias concretas con nombre— **no mantienen abierta esta fase**.
+
+Solo se reabrirá el diseño de Pueblos cuando exista una necesidad concreta de gameplay, implementación, narrativa, arte o datos.
+
+## Siguiente nivel de diseño
+
+El siguiente nivel procedural del territorio es **Villa**.
+
+La implementación futura del generador de Pueblos deberá consumir los contratos de `Datos operativos/` y superar los invariantes definidos antes de generar instancias persistentes.

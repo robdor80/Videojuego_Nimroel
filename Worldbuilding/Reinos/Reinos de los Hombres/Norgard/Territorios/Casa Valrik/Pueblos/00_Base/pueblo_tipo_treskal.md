@@ -10,7 +10,7 @@ Este documento define exclusivamente el **esqueleto mínimo común** de un puebl
 
 No describe un pueblo concreto.
 
-No fija todavía:
+Por alcance de esta capa, no fija:
 
 - probabilidades;
 - modelos de pueblo;
@@ -326,8 +326,8 @@ Su función jugable es constituir el **primer nivel real de centralidad territor
 
 ---
 
-## Próxima fase
+## Desarrollo posterior
 
-El esqueleto mínimo de Pueblo queda aprobado.
+El esqueleto mínimo de Pueblo queda aprobado y las capas posteriores ya se desarrollan en `01_Coherencia_regional/`, `02_Probabilidades/`, `03_Modelos/`, `04_Generacion/`, `05_Coordinacion_regional/` y `Datos operativos/`.
 
-La siguiente fase consiste en estudiar únicamente las **posibilidades que afecten al gameplay**, evitando desarrollar detalles enciclopédicos que no tengan uso en el juego.
+Este documento permanece como definición del **mínimo común obligatorio** y no debe absorber detalles pertenecientes a esas capas.

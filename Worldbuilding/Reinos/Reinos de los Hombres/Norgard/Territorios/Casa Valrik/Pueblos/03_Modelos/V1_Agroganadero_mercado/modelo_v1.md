@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CANON DE GENERACIÓN EN DESARROLLO**
+**MODELO BASE APROBADO — GENERACIÓN v0.1**
 
 ## Función
 

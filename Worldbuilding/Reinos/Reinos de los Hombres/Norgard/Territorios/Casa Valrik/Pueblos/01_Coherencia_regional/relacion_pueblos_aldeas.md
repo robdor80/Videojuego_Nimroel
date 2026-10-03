@@ -8,7 +8,7 @@
 
 Este documento fija cómo debe interpretarse la relación territorial entre un Pueblo y las Aldeas de su entorno.
 
-No asigna todavía pueblos concretos, aldeas concretas, radios fijos, distancias numéricas ni probabilidades.
+No asigna Pueblos o Aldeas concretos ni radios o distancias geométricas fijas. Las probabilidades se resuelven en la capa `02_Probabilidades/` y las relaciones concretas se generan mediante la coordinación regional y el estado persistente de la partida.
 
 ---
 
