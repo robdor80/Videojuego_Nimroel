@@ -18,7 +18,8 @@
     "streetsInteriorsActivities": "Datos operativos/treskal_street_interior_activity_contract_v0.1.json",
     "accessAndWorldState": "Datos operativos/treskal_access_and_world_state_contract_v0.1.json",
     "populationAndSecurity": "Datos operativos/treskal_population_and_security_matrix_v0.1.json",
-    "informationAndReputation": "Datos operativos/treskal_information_and_reputation_contract_v0.1.json"
+    "informationAndReputation": "Datos operativos/treskal_information_and_reputation_contract_v0.1.json",
+    "gameplayDiscovery": "Datos operativos/treskal_urban_gameplay_discovery_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",

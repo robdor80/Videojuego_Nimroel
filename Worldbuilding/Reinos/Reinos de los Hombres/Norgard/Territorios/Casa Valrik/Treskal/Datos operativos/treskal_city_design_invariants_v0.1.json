@@ -217,6 +217,36 @@
         "weather war fire and route failures can affect availability",
         "base economic network remains persistent unless world state changes structurally"
       ]
+    },
+    {
+      "id": "services_require_discovery",
+      "expected": [
+        "undiscovered services are not automatically revealed",
+        "map knowledge represents acquired knowledge"
+      ]
+    },
+    {
+      "id": "npc_recommendations_respect_knowledge",
+      "expected": [
+        "NPC can recommend only what their knowledge network plausibly supports",
+        "NPC may answer that they do not know"
+      ]
+    },
+    {
+      "id": "investigation_separates_fact_from_testimony",
+      "expected": [
+        "world fact remains independent from witness accounts",
+        "rumor is not promoted to proof automatically",
+        "contradictory honest witnesses are allowed"
+      ]
+    },
+    {
+      "id": "emergent_commissions_come_from_world_state",
+      "expected": [
+        "opportunities correspond to actual needs or events",
+        "opportunities may resolve without player",
+        "identical need is not regenerated immediately just to create content"
+      ]
     }
   ]
 }

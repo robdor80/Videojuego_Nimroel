@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_urban_gameplay_discovery_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "discoveryStates": [
+    "unknown",
+    "heard_of",
+    "located",
+    "familiar"
+  ],
+  "discoveryChannels": [
+    "exploration",
+    "conversation",
+    "recommendation",
+    "market",
+    "inn_tavern",
+    "institution"
+  ],
+  "mapKnowledgeMustBeAcquired": true,
+  "npcRecommendationLimitedByNpcKnowledge": true,
+  "commissionSources": [
+    "person",
+    "business",
+    "institution",
+    "event",
+    "economic_chain"
+  ],
+  "commissionDiscoveryRequiresInformationPath": true,
+  "commissionsMayExpireOrResolveWithoutPlayer": true,
+  "investigation": {
+    "worldFactSeparateFromNpcKnowledge": true,
+    "witnessTypes": [
+      "direct",
+      "partial",
+      "post_event",
+      "rumor_receiver",
+      "uninformed"
+    ],
+    "contradictionWithoutLyingAllowed": true,
+    "physicalEvidenceMustExistInWorldState": true,
+    "documentAccessRespectsPermissions": true,
+    "rumorIsNotProof": true,
+    "playerJournalMayStore": [
+      "confirmed_fact",
+      "hypothesis",
+      "testimony",
+      "rumor",
+      "contradiction"
+    ]
+  },
+  "emergentOpportunities": {
+    "generatedFromStateGap": true,
+    "categories": [
+      "transport",
+      "supply",
+      "work",
+      "information",
+      "mediation",
+      "security"
+    ],
+    "infiniteImmediateRegenerationForbidden": true,
+    "mayResolveWithoutPlayer": true,
+    "rewards": [
+      "money",
+      "goods",
+      "favor",
+      "information",
+      "reputation",
+      "access",
+      "relationship"
+    ],
+    "persistentFields": [
+      "source_id",
+      "need",
+      "created_time",
+      "state",
+      "actors",
+      "deadline_if_any",
+      "resolution"
+    ]
+  }
+}
