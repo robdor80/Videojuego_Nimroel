@@ -73,3 +73,11 @@ La topología y la distribución funcional relativa están ya fijadas. Siguen ab
 - `poblacion_presente_y_ritmos_v0.1.md` — residentes, población flotante y ritmo diario/estacional.
 - `familia_aprendizaje_y_reputacion_v0.1.md` — familia, oficio, aprendizaje, honor y vida social.
 - `practica_funeraria_urbana_v0.1.md` — piras periféricas, retorno de cenizas y variante marítima local.
+
+### 08_Cartografia
+
+- `orientacion_espacial_cardinal_v0.1.md` — orientación relativa de sectores respecto a río, costa, bosque y rutas interiores.
+
+### 09_Economia
+
+- `cadenas_abastecimiento_economia_urbana_v0.1.md` — origen, entrada, transformación y destino de las mercancías principales.

@@ -678,5 +678,198 @@
     },
     "houseValrikSameCremationPrinciple": true,
     "exactValrikAncestralAshReturnLocation": "unresolved"
+  },
+  "cardinalOrientation": {
+    "primaryUrbanMass": "east_of_main_near_mouth_channel",
+    "mainBridge": "west_northwest_access_upstream_of_T01",
+    "T01": "west_southwest_river_edge",
+    "T07": "south_southwest_integrated_mouth_civil_port",
+    "T08": "south_southeast_adjacent_coast_separate_from_T07",
+    "T03": "central_south_or_central_west_inland_of_port",
+    "T02": "west_northwest_between_bridge_T03_T04",
+    "T04": "north_northwest_and_intermediate_corridors",
+    "T05": "central_east_or_northeast_of_T03",
+    "T06": "adjacent_to_T05",
+    "T10": "western_northwestern_supply_edge_primary",
+    "mainLandApproaches": [
+      "interior_west_northwest",
+      "forest_north_northeast",
+      "coastal_regional"
+    ]
+  },
+  "economicFlows": {
+    "timber": {
+      "origin": [
+        "Black_Forest",
+        "forest_routes",
+        "timber_villa",
+        "logistics_towns"
+      ],
+      "entry": [
+        "T11_forest",
+        "T02"
+      ],
+      "destinations": [
+        "T04",
+        "T08",
+        "urban_construction",
+        "trade"
+      ],
+      "exports": [
+        "furniture",
+        "carving",
+        "finished_wood_goods",
+        "naval_components"
+      ]
+    },
+    "grain": {
+      "origin": [
+        "Valrik_rural",
+        "agropastoral_villa",
+        "towns_villages",
+        "Arleon_import",
+        "Galdren_import"
+      ],
+      "entry": [
+        "T11",
+        "T10_or_T02"
+      ],
+      "process": [
+        "milling",
+        "storage",
+        "baking"
+      ],
+      "distribution": [
+        "S06",
+        "bakeries",
+        "inns",
+        "households",
+        "T08_consumption"
+      ]
+    },
+    "livestock": {
+      "origin": [
+        "Valrik_rural",
+        "agropastoral_villa",
+        "Arleon",
+        "Galdren_if_relevant"
+      ],
+      "entry": [
+        "T11",
+        "S10"
+      ],
+      "distribution": [
+        "butchers",
+        "inns",
+        "markets",
+        "households",
+        "institutions"
+      ]
+    },
+    "seaFish": {
+      "origin": [
+        "Sea_of_Suthiros"
+      ],
+      "entry": [
+        "T07",
+        "S07"
+      ],
+      "distribution": [
+        "fresh_sale",
+        "T03",
+        "taverns",
+        "households",
+        "preservation"
+      ]
+    },
+    "riverFish": {
+      "origin": [
+        "river_network",
+        "inland_settlements"
+      ],
+      "entry": [
+        "T01",
+        "land_routes"
+      ],
+      "distribution": [
+        "S07",
+        "T03",
+        "local_consumption"
+      ]
+    },
+    "wine": {
+      "origin": [
+        "imported"
+      ],
+      "entry": [
+        "T07_or_T11"
+      ],
+      "distribution": [
+        "merchants",
+        "inns",
+        "taverns",
+        "wealthier_households",
+        "House_Valrik"
+      ]
+    },
+    "beer": {
+      "origin": [
+        "urban_producers",
+        "Valrik_territory"
+      ],
+      "distribution": [
+        "taverns",
+        "inns",
+        "markets",
+        "households"
+      ],
+      "prestigeProduct": false
+    },
+    "metal": {
+      "primaryProductionLocality": "unresolved_elsewhere",
+      "entry": "regional_or_trade_network",
+      "destinations": [
+        "smithies",
+        "tools",
+        "carts",
+        "construction",
+        "T08"
+      ]
+    },
+    "royalShipyardSupplies": {
+      "destinations": [
+        "T08"
+      ],
+      "inputs": [
+        "timber",
+        "metal",
+        "rope",
+        "sailcloth_if_applicable",
+        "tools",
+        "food",
+        "labor"
+      ],
+      "funding": "Crown_commission"
+    }
+  },
+  "economyWorldState": {
+    "baseNetworkPersistent": true,
+    "temporaryScarcityCanAffect": [
+      "price",
+      "availability",
+      "quantity",
+      "route",
+      "delivery_time"
+    ],
+    "scarcityDrivers": [
+      "storm",
+      "flood",
+      "road_block",
+      "bad_harvest",
+      "ship_delay",
+      "fire",
+      "war",
+      "extraordinary_demand"
+    ]
   }
 }

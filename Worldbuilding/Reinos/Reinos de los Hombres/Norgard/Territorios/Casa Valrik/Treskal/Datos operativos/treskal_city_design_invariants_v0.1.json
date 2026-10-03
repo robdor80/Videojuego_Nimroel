@@ -195,6 +195,28 @@
         "main bridge links interior routes toward T02 and T03",
         "additional major bridges are not added by default"
       ]
+    },
+    {
+      "id": "cardinal_layout_matches_regional_map",
+      "expected": [
+        "main urban mass lies east of principal near-mouth channel",
+        "civil port and royal shipyards occupy southern coastal frontage with T08 farther southeast",
+        "forest logistics approach from north/northeast"
+      ]
+    },
+    {
+      "id": "economy_has_traceable_flows",
+      "expected": [
+        "major goods have origin entry transformation and destination",
+        "city does not produce every consumed good locally"
+      ]
+    },
+    {
+      "id": "dynamic_scarcity_does_not_rewrite_base_economy",
+      "expected": [
+        "weather war fire and route failures can affect availability",
+        "base economic network remains persistent unless world state changes structurally"
+      ]
     }
   ]
 }
