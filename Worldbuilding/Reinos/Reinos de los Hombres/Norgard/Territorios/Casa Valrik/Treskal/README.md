@@ -62,3 +62,9 @@ La topología y la distribución funcional relativa están ya fijadas. Siguen ab
 ### 06_Edificios_singulares
 
 - `catalogo_funcional_edificios_singulares_v0.1.md` — catálogo mínimo S01–S10 sin nombres propios.
+
+### 07_Vida_urbana
+
+- `poblacion_presente_y_ritmos_v0.1.md` — residentes, población flotante y ritmo diario/estacional.
+- `familia_aprendizaje_y_reputacion_v0.1.md` — familia, oficio, aprendizaje, honor y vida social.
+- `practica_funeraria_urbana_v0.1.md` — piras periféricas, retorno de cenizas y variante marítima local.

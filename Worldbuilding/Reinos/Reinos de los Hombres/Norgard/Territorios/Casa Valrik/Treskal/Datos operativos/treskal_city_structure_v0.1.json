@@ -581,5 +581,83 @@
     "criticalArchivesAndAdministrationAvoidLowFloodProneGround": true,
     "portAndRiverDocksAcceptRepairableExposure": true,
     "mainRoadDrainagePriority": true
+  },
+  "urbanLife": {
+    "populationPresence": {
+      "residentPopulationRange": {
+        "min": 12000,
+        "max": 18000
+      },
+      "transientSeparateFromResidents": true,
+      "transientSources": [
+        "merchants",
+        "villagers",
+        "town_residents",
+        "sailors",
+        "fishermen",
+        "convoys",
+        "temporary_workers",
+        "minor_house_members",
+        "litigants",
+        "rural_guards_in_transit",
+        "buyers",
+        "visiting_artisans"
+      ]
+    },
+    "dayparts": [
+      "dawn_first_morning",
+      "morning",
+      "midday",
+      "afternoon",
+      "before_dusk",
+      "night"
+    ],
+    "densityDependsOn": [
+      "sector",
+      "daypart",
+      "season",
+      "weather",
+      "event",
+      "market",
+      "port_state",
+      "world_state"
+    ],
+    "nightMuchQuieterThanDay": true,
+    "modernNightEconomy": false,
+    "royalShipyardsOrdinaryWorkNotAssumedTwentyFourSeven": true
+  },
+  "social": {
+    "familyStrong": true,
+    "multigenerationalHouseholdsPossible": true,
+    "craftContinuityAcrossGenerationsCommon": true,
+    "apprenticeshipPrimaryProfessionalTraining": true,
+    "reputationFactors": [
+      "quality",
+      "fulfillment",
+      "experience",
+      "treatment",
+      "reliability",
+      "past_commissions",
+      "given_word"
+    ],
+    "givenWordHighSocialWeight": true,
+    "givenWordDoesNotReplaceLaw": true,
+    "writingAndContractsMoreCommonThanInRuralSettlements": true,
+    "hospitalityStrong": true,
+    "fixedUrbanClassPercentages": false
+  },
+  "funeralPractice": {
+    "culture": "Norgard_cremation",
+    "religious": false,
+    "peripheralCommunalPyreAreasRequired": true,
+    "cemeteriesOfGravesNormal": false,
+    "communalAshReturnLandForLandlessResidents": true,
+    "maritimeAshScattering": {
+      "allowedLocalVariant": true,
+      "mandatoryForSailors": false,
+      "condition": "clear_life_connection_to_sea_and_family_choice"
+    },
+    "houseValrikSameCremationPrinciple": true,
+    "exactValrikAncestralAshReturnLocation": "unresolved"
   }
 }

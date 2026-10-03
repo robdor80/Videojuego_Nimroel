@@ -152,6 +152,41 @@
         "critical archives administration and grain storage avoid obvious flood-prone low ground",
         "main routes and markets receive drainage priority"
       ]
+    },
+    {
+      "id": "resident_and_transient_population_are_separate",
+      "expected": [
+        "market port and convoy visitors do not inflate permanent census automatically"
+      ]
+    },
+    {
+      "id": "urban_day_night_rhythm",
+      "expected": [
+        "daytime commercial and workshop density exceeds night density",
+        "night retains guard inns taverns and essential security without modern nightlife"
+      ]
+    },
+    {
+      "id": "valrik_social_continuity",
+      "expected": [
+        "family apprenticeship reputation and given word remain important in city life",
+        "law and written contracts still operate where appropriate"
+      ]
+    },
+    {
+      "id": "norgard_funeral_custom_in_city",
+      "expected": [
+        "cremation remains standard",
+        "no grave cemetery is generated as normal infrastructure",
+        "peripheral pyre spaces and communal ash-return land exist"
+      ]
+    },
+    {
+      "id": "maritime_funeral_variant_is_optional",
+      "expected": [
+        "sea scattering can occur for people strongly linked to the sea",
+        "it is not mandatory for every sailor"
+      ]
     }
   ]
 }
