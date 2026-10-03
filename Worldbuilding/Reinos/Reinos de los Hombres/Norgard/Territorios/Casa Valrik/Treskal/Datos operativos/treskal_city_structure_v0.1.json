@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_city_structure",
+  "version": "0.1",
+  "status": "active_manual_city_design_contract",
+  "procedural": false,
+  "cityId": "treskal",
+  "population": {
+    "min": 12000,
+    "max": 18000
+  },
+  "topology": {
+    "model": "integrated_river_mouth",
+    "primaryUrbanMassOnOneBank": true,
+    "riverDocks": true,
+    "smallMerchantRiverCraft": true,
+    "civilPortAtIntegratedMouth": true,
+    "royalShipyardsAdjacentButSeparated": true,
+    "cityWalls": false,
+    "bridgeCount": "unresolved_until_detailed_cartography"
+  },
+  "sectors": {
+    "T01": {
+      "id": "river_interface",
+      "role": [
+        "river_docks",
+        "small_merchant_craft",
+        "river_fish",
+        "cargo_transfer"
+      ],
+      "adjacentPreferred": [
+        "T02",
+        "T03",
+        "T04"
+      ],
+      "near": [
+        "T07"
+      ]
+    },
+    "T02": {
+      "id": "interior_logistics",
+      "role": [
+        "warehouses",
+        "loading_yards",
+        "carts",
+        "goods_transfer"
+      ],
+      "adjacentPreferred": [
+        "T01",
+        "T03",
+        "T04",
+        "T11"
+      ],
+      "corridorTo": [
+        "T08"
+      ]
+    },
+    "T03": {
+      "id": "commercial_core",
+      "role": [
+        "daily_food_market",
+        "shops",
+        "taverns",
+        "inns",
+        "urban_trade"
+      ],
+      "adjacentPreferred": [
+        "T01",
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T09"
+      ]
+    },
+    "T04": {
+      "id": "woodcraft",
+      "role": [
+        "carpentry",
+        "cabinetmaking",
+        "furniture",
+        "carving",
+        "wood_preparation",
+        "workshop_homes"
+      ],
+      "adjacentPreferred": [
+        "T01",
+        "T02",
+        "T03",
+        "T09"
+      ],
+      "corridorTo": [
+        "T08"
+      ]
+    },
+    "T05": {
+      "id": "valrik_administration",
+      "role": [
+        "house_valrik_residence",
+        "territorial_administration",
+        "audiences",
+        "archives",
+        "tribute_management"
+      ],
+      "near": [
+        "T03",
+        "T06",
+        "T11"
+      ],
+      "avoidImmediate": [
+        "T07",
+        "T08"
+      ]
+    },
+    "T06": {
+      "id": "justice_and_urban_guard",
+      "role": [
+        "courts",
+        "custody",
+        "judicial_administration",
+        "urban_guard_coordination"
+      ],
+      "near": [
+        "T03",
+        "T05"
+      ]
+    },
+    "T07": {
+      "id": "civil_fishing_port",
+      "role": [
+        "sea_fishing",
+        "civil_cargo",
+        "civil_transport",
+        "repair",
+        "limited_complementary_civil_shipbuilding"
+      ],
+      "adjacentPreferred": [
+        "T01",
+        "T02",
+        "T03",
+        "T09"
+      ],
+      "separateFrom": [
+        "T08"
+      ]
+    },
+    "T08": {
+      "id": "royal_shipyards",
+      "role": [
+        "royal_warship_construction",
+        "naval_workshops",
+        "naval_storage",
+        "slipways",
+        "controlled_access"
+      ],
+      "owner": "Crown_of_Norgard",
+      "connectedTo": [
+        "T02",
+        "T04",
+        "T11"
+      ],
+      "separateFrom": [
+        "T03",
+        "T07"
+      ]
+    },
+    "T09": {
+      "id": "central_residential_fabric",
+      "role": [
+        "housing",
+        "mixed_use_buildings",
+        "workshop_homes",
+        "local_services"
+      ],
+      "wraps": [
+        "T03",
+        "T04",
+        "T05",
+        "T06"
+      ]
+    },
+    "T10": {
+      "id": "rural_supply_periphery",
+      "role": [
+        "livestock",
+        "stables",
+        "corrals",
+        "market_gardens",
+        "peripheral_storage",
+        "space_hungry_workshops"
+      ],
+      "connectedTo": [
+        "T11",
+        "T02",
+        "T03"
+      ]
+    },
+    "T11": {
+      "id": "land_access_corridors",
+      "role": [
+        "food_entry",
+        "timber_entry",
+        "livestock_entry",
+        "travellers",
+        "official_access",
+        "naval_supplies"
+      ],
+      "connectsTerritoryTo": [
+        "T10",
+        "T02",
+        "T05",
+        "T06",
+        "T08"
+      ]
+    }
+  },
+  "criticalFlows": {
+    "timber": [
+      "T11",
+      "T02",
+      "T04_or_T08"
+    ],
+    "food": [
+      "T11",
+      "T10_or_T02",
+      "T03",
+      "urban_distribution"
+    ],
+    "riverCargo": [
+      "river",
+      "T01",
+      "T02_or_T03_or_T04"
+    ],
+    "seaCargo": [
+      "sea",
+      "T07",
+      "T02_or_T03"
+    ],
+    "administration": [
+      "territory",
+      "T11",
+      "T05_or_T06"
+    ],
+    "royalShipbuilding": [
+      "T11_or_T02_or_T04",
+      "T08",
+      "sea"
+    ]
+  },
+  "markets": {
+    "dailyActivityRequired": true,
+    "systems": [
+      {
+        "id": "main_provision_market",
+        "sector": "T03",
+        "activity": "daily"
+      },
+      {
+        "id": "fish_market",
+        "sectorTransition": [
+          "T01",
+          "T07"
+        ],
+        "activity": "very_frequent_or_daily_by_landings"
+      },
+      {
+        "id": "livestock_market",
+        "sector": "T10",
+        "activity": "periodic_or_variable"
+      },
+      {
+        "id": "wood_and_craft_trade",
+        "sectorOptions": [
+          "T02",
+          "T04"
+        ],
+        "activity": "continuous_and_contract_based"
+      },
+      {
+        "id": "port_merchant_trade",
+        "sector": "T07",
+        "activity": "continuous_contract_and_warehouse_based"
+      }
+    ]
+  },
+  "roadHierarchy": {
+    "mainAxes": [
+      {
+        "id": "rural_supply_axis",
+        "connects": [
+          "territory",
+          "T10",
+          "T02_or_T03"
+        ]
+      },
+      {
+        "id": "timber_axis",
+        "connects": [
+          "forest_routes",
+          "T02",
+          "T04_or_T08"
+        ]
+      },
+      {
+        "id": "port_axis",
+        "connects": [
+          "T07",
+          "T02_or_T03"
+        ]
+      },
+      {
+        "id": "institutional_axis",
+        "connects": [
+          "main_land_access",
+          "T05_or_T06"
+        ]
+      }
+    ],
+    "secondaryNetwork": true,
+    "localStreets": true,
+    "perfectGrid": false,
+    "allStreetsPaved": false,
+    "heavyTrafficDiversionRequired": true
+  },
+  "unresolvedByDesign": [
+    "exact_river_course",
+    "exact_bridge_count_and_positions",
+    "metric_city_plan",
+    "official_district_names",
+    "street_names",
+    "exact_valrik_residence_form",
+    "exact_court_structure",
+    "urban_guard_ranks",
+    "exact_market_calendar_for_non_daily_specialized_markets"
+  ]
+}

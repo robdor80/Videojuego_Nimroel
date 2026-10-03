@@ -33,3 +33,18 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 ## Decisión topológica vigente
 
 **Opción A — Desembocadura integrada.** El río interior alcanza el mar junto a Treskal; los muelles fluviales conectan con la zona de intercambio y el puerto civil, mientras los Astilleros Reales ocupan un sector litoral próximo pero separado.
+
+### 03_Distribucion_urbana
+
+- `esquema_espacial_relativo_v0.1.md` — relaciones de proximidad/separación entre sectores T01–T11.
+- `red_viaria_y_flujos_v0.1.md` — jerarquía de calles y corredores de madera, alimentos, puerto e instituciones.
+- `sistema_mercados_v0.1.md` — mercado principal, pescado, ganado, madera y comercio portuario.
+
+### Datos operativos
+
+- `treskal_city_structure_v0.1.json` — estructura urbana funcional legible por herramientas y futuro RPG Core.
+- `treskal_city_design_invariants_v0.1.json` — restricciones que el plano detallado no puede violar.
+
+## Estado del diseño
+
+La topología y la distribución funcional relativa están ya fijadas. Siguen abiertos únicamente los detalles métricos: trazado exacto del río, puentes, plano de calles, nombres urbanos y edificios singulares concretos.

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_city_design_invariants",
+  "version": "0.1",
+  "status": "active_manual_design_checks",
+  "cases": [
+    {
+      "id": "integrated_mouth_is_canon",
+      "expected": [
+        "river reaches sea beside city",
+        "river docks connect functionally to civil port system"
+      ]
+    },
+    {
+      "id": "one_bank_primary_mass",
+      "expected": [
+        "most urban fabric remains on one primary bank",
+        "city does not require multiple major bridges by default"
+      ]
+    },
+    {
+      "id": "royal_shipyards_are_crown",
+      "expected": [
+        "T08 owner is Crown of Norgard",
+        "warships built in T08",
+        "House Valrik has no sovereign navy"
+      ]
+    },
+    {
+      "id": "civil_port_is_not_royal_shipyard",
+      "expected": [
+        "T07 remains public/civil commercial and fishing function",
+        "T08 has controlled access and distinct institutional role"
+      ]
+    },
+    {
+      "id": "woodcraft_is_citywide_identity",
+      "expected": [
+        "T04 is prominent",
+        "wood craftsmanship also appears outside T04 in ordinary architecture and mixed-use buildings"
+      ]
+    },
+    {
+      "id": "largest_civil_shipyards_remain_outside_treskal",
+      "expected": [
+        "Treskal civil shipbuilding is complementary",
+        "largest specialized civil shipyards remain in canonical coastal Villa"
+      ]
+    },
+    {
+      "id": "daily_markets_do_not_mean_one_giant_market",
+      "expected": [
+        "at least one daily provision market exists",
+        "specialized trade can be distributed across sectors"
+      ]
+    },
+    {
+      "id": "no_city_wall",
+      "expected": [
+        "no perimeter wall added by default"
+      ]
+    },
+    {
+      "id": "no_religious_architecture",
+      "expected": [
+        "no temples",
+        "no churches",
+        "no chapels",
+        "no invented shrines"
+      ]
+    },
+    {
+      "id": "no_dramatic_local_mountains",
+      "expected": [
+        "immediate urban backdrop remains gentle/open rather than alpine"
+      ]
+    },
+    {
+      "id": "heavy_traffic_not_forced_through_core",
+      "expected": [
+        "timber",
+        "livestock",
+        "naval_supplies have routes that can avoid unnecessary passage through T03 and dense T09"
+      ]
+    },
+    {
+      "id": "valrik_seat_not_monumental_castle_by_default",
+      "expected": [
+        "T05 expresses authority and quality without gratuitous fortress scale"
+      ]
+    }
+  ]
+}
