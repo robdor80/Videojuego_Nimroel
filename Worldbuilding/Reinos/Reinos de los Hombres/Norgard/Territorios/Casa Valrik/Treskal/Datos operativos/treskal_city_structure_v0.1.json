@@ -453,5 +453,133 @@
       "urbanGuardOrdinaryControlInside": false,
       "detailedChainOfCommand": "unresolved_with_royal_military_naval_system"
     }
+  },
+  "buildingFabric": {
+    "ordinaryHeightPolicy": {
+      "oneStorey": "common_periphery_workshops_warehouses_auxiliary",
+      "twoStorey": "very_common_central_and_intermediate",
+      "threeStorey": "minority_only_where_justified",
+      "aboveThreeStoreys": "not_ordinary_urban_fabric"
+    },
+    "types": {
+      "U01": "urban_family_house",
+      "U02": "house_workshop",
+      "U03": "shop_with_dwelling",
+      "U04": "multi_household_preindustrial_building",
+      "U05": "inn",
+      "U06": "tavern",
+      "U07": "dedicated_specialized_workshop",
+      "U08": "warehouse",
+      "U09": "urban_or_logistics_granary",
+      "U10": "stable_or_corral",
+      "U11": "administrative_building",
+      "U12": "judicial_building",
+      "U13": "port_building",
+      "U14": "royal_shipyard_building"
+    },
+    "materials": [
+      "stone",
+      "timber",
+      "slate_roofing"
+    ],
+    "mixedUseCommon": true,
+    "perfectResidentialCommercialSeparation": false
+  },
+  "serviceCapacity": {
+    "principle": "resolve_capacity_before_establishment_count",
+    "mandatoryNetworks": [
+      "professional_bread_production",
+      "butchery",
+      "fish_distribution",
+      "grain_and_food_trade",
+      "blacksmithing",
+      "woodworking",
+      "textile_and_clothing",
+      "footwear",
+      "trained_healing",
+      "lodging",
+      "taverns_and_food_service",
+      "cart_and_transport_repair",
+      "specialized_trade",
+      "scribal_and_administrative_services",
+      "port_services"
+    ],
+    "multipleProfessionalBakeriesRequired": true,
+    "multipleTrainedHealersRequired": true,
+    "multipleInnsRequired": true,
+    "manyTavernsExpected": true,
+    "manyWoodworkersExpected": true,
+    "millsCapacityRequiredButExactUrbanLocationUnresolved": true,
+    "apprenticeshipIsPrimaryProfessionalTrainingMode": true
+  },
+  "singularFacilities": {
+    "S01": {
+      "id": "house_valrik_main_seat",
+      "sector": "T05",
+      "required": true
+    },
+    "S02": {
+      "id": "territorial_administration_center",
+      "sector": "T05",
+      "required": true,
+      "mayShareComplexWith": "S01"
+    },
+    "S03": {
+      "id": "territorial_judicial_seat",
+      "sector": "T06",
+      "required": true
+    },
+    "S04": {
+      "id": "main_urban_custody",
+      "sector": "T06",
+      "required": true
+    },
+    "S05": {
+      "id": "urban_guard_main_post",
+      "sector": "T06",
+      "required": true
+    },
+    "S06": {
+      "id": "main_provision_market",
+      "sector": "T03",
+      "required": true
+    },
+    "S07": {
+      "id": "fish_exchange_facility",
+      "sectorTransition": [
+        "T01",
+        "T07"
+      ],
+      "required": true
+    },
+    "S08": {
+      "id": "royal_shipyard_complex",
+      "sector": "T08",
+      "required": true,
+      "owner": "Crown_of_Norgard"
+    },
+    "S09": {
+      "id": "main_timber_storage_capacity",
+      "sectorOptions": [
+        "T02",
+        "T04"
+      ],
+      "required": true,
+      "mayBeDistributed": true
+    },
+    "S10": {
+      "id": "main_livestock_reception_capacity",
+      "sector": "T10",
+      "required": true
+    }
+  },
+  "climateUrbanImplications": {
+    "maritimeHumidity": true,
+    "riverMouthFogPossible": true,
+    "autumnWinterStormExposure": true,
+    "floodRiskMustInfluenceDetailedPlan": true,
+    "criticalArchivesAndAdministrationAvoidLowFloodProneGround": true,
+    "portAndRiverDocksAcceptRepairableExposure": true,
+    "mainRoadDrainagePriority": true
   }
 }

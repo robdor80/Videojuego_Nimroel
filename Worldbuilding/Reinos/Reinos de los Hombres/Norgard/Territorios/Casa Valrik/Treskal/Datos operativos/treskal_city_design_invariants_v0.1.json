@@ -116,6 +116,42 @@
         "serious cases from Villas can be tried in Treskal",
         "death penalty still requires Lord Valrik"
       ]
+    },
+    {
+      "id": "urban_height_restrained",
+      "expected": [
+        "two-storey buildings are common",
+        "three-storey buildings remain minority",
+        "ordinary fabric does not exceed three storeys"
+      ]
+    },
+    {
+      "id": "mixed_use_is_normal",
+      "expected": [
+        "house-workshops and shop-dwellings are common in T03 T04 and T09",
+        "modern zoning separation is absent"
+      ]
+    },
+    {
+      "id": "service_capacity_before_count",
+      "expected": [
+        "urban needs resolve required capacity first",
+        "establishment count is derived rather than globally fixed"
+      ]
+    },
+    {
+      "id": "singular_facilities_are_functional_not_decorative",
+      "expected": [
+        "S01-S10 exist because required functions need them",
+        "unnecessary fantasy-city institutions are not added automatically"
+      ]
+    },
+    {
+      "id": "climate_affects_plan",
+      "expected": [
+        "critical archives administration and grain storage avoid obvious flood-prone low ground",
+        "main routes and markets receive drainage priority"
+      ]
     }
   ]
 }
