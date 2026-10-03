@@ -48,3 +48,8 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 ## Estado del diseño
 
 La topología y la distribución funcional relativa están ya fijadas. Siguen abiertos únicamente los detalles métricos: trazado exacto del río, puentes, plano de calles, nombres urbanos y edificios singulares concretos.
+
+### 04_Infraestructura_urbana
+
+- `agua_residuos_incendios_v0.1.md` — agua, drenaje, residuos, prevención y respuesta ante incendios e iluminación nocturna.
+- `guardia_y_justicia_v0.1.md` — funciones de guardia urbana, justicia territorial y límites respecto a Astilleros Reales.

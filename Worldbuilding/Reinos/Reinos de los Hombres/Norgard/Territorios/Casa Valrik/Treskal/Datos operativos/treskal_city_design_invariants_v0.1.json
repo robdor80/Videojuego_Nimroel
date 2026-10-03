@@ -88,6 +88,34 @@
       "expected": [
         "T05 expresses authority and quality without gratuitous fortress scale"
       ]
+    },
+    {
+      "id": "water_redundancy",
+      "expected": [
+        "city does not depend on one fragile water source",
+        "dirty activities do not contaminate potable intakes"
+      ]
+    },
+    {
+      "id": "no_modern_sewer_or_fire_brigade",
+      "expected": [
+        "drainage remains preindustrial",
+        "fire response is community and institution based rather than modern municipal service"
+      ]
+    },
+    {
+      "id": "royal_shipyard_security_separate",
+      "expected": [
+        "urban guard controls ordinary city space",
+        "internal T08 security remains Crown-linked"
+      ]
+    },
+    {
+      "id": "serious_justice_in_treskal",
+      "expected": [
+        "serious cases from Villas can be tried in Treskal",
+        "death penalty still requires Lord Valrik"
+      ]
     }
   ]
 }

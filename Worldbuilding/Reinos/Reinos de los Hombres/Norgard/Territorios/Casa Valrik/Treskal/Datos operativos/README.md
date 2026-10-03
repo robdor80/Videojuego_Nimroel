@@ -6,7 +6,7 @@ Los JSON de esta carpeta **no son reglas para generar una ciudad aleatoria**. Re
 
 ## Archivos
 
-- `treskal_city_structure_v0.1.json` — topología, sectores funcionales, flujos y mercados.
+- `treskal_city_structure_v0.1.json` — topología, sectores funcionales, flujos, mercados, infraestructura urbana, guardia y justicia.
 - `treskal_city_design_invariants_v0.1.json` — pruebas de coherencia para futuras revisiones del plano.
 
 ## Regla

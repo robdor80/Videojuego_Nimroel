@@ -332,5 +332,126 @@
     "exact_court_structure",
     "urban_guard_ranks",
     "exact_market_calendar_for_non_daily_specialized_markets"
-  ]
+  ],
+  "infrastructure": {
+    "water": {
+      "multipleSourcesOrEquivalentRedundancyRequired": true,
+      "allowedSourceTypes": [
+        "wells",
+        "fountains",
+        "springs_if_geography_allows",
+        "controlled_intakes",
+        "safe_river_intake",
+        "preindustrial_storage_or_cisterns"
+      ],
+      "rawRiverWaterAutomaticallyPotable": false,
+      "dirtyActivitiesMustNotCompromiseIntakes": true
+    },
+    "drainage": {
+      "modernSewerNetwork": false,
+      "allowedSolutions": [
+        "street_slope",
+        "ditches",
+        "open_channels",
+        "partially_covered_channels",
+        "simple_drains"
+      ],
+      "priorityAreas": [
+        "markets",
+        "heavy_cart_routes",
+        "administrative_core",
+        "port_access"
+      ]
+    },
+    "waste": {
+      "automaticFilthyStreets": false,
+      "possibleSystems": [
+        "cesspits",
+        "latrines",
+        "periodic_collection",
+        "removal_to_external_disposal",
+        "agricultural_reuse_if_plausible"
+      ],
+      "fishMarketNeedsFrequentRemoval": true,
+      "largeScaleSlaughterAwayFromDenseCore": true,
+      "tanneriesAwayFromPotableWater": true
+    },
+    "fire": {
+      "highRiskBecauseOfTimberAndCrafts": true,
+      "modernFireBrigade": false,
+      "responseActors": [
+        "residents",
+        "workers",
+        "urban_guard",
+        "workshop_crews",
+        "large_installation_crews"
+      ],
+      "royalShipyardsOwnInternalFireResponse": true,
+      "prevention": [
+        "maintained_chimneys",
+        "timber_storage_separation",
+        "work_yards",
+        "water_access",
+        "prepared_containers",
+        "controlled_furnaces_and_forges"
+      ]
+    },
+    "nightLighting": {
+      "modernStreetLighting": false,
+      "functionalLightingPossibleAt": [
+        "inns",
+        "taverns",
+        "administration",
+        "guard_posts",
+        "port",
+        "royal_shipyards",
+        "continuous_use_accesses"
+      ]
+    }
+  },
+  "institutions": {
+    "urbanGuard": {
+      "permanent": true,
+      "functions": [
+        "patrol",
+        "public_order",
+        "theft_response",
+        "market_security",
+        "civil_port_order",
+        "initial_emergency_response",
+        "temporary_custody",
+        "judicial_support"
+      ],
+      "notEquivalentTo": [
+        "rural_guards",
+        "minor_house_forces",
+        "royal_shipyard_security",
+        "royal_navy",
+        "mobilized_troops"
+      ],
+      "reinforcedPresence": [
+        "T03",
+        "T07",
+        "fish_market",
+        "major_livestock_activity",
+        "T05",
+        "T06",
+        "main_land_accesses"
+      ]
+    },
+    "justice": {
+      "territorialSuperiorSeat": true,
+      "lawSource": "Law_of_the_King",
+      "seriousCasesFromVillasReceivedHere": true,
+      "lordValrikNeedNotPresideEveryTrial": true,
+      "deathPenaltyRequiresLordValrik": true,
+      "longTermPenalSystem": "unresolved"
+    },
+    "royalShipyardSecurity": {
+      "sector": "T08",
+      "authority": "Crown_linked_internal_authority",
+      "urbanGuardOrdinaryControlInside": false,
+      "detailedChainOfCommand": "unresolved_with_royal_military_naval_system"
+    }
+  }
 }
