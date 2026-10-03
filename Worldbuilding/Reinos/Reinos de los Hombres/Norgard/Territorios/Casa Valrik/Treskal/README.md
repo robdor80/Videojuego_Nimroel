@@ -45,6 +45,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 
 - `treskal_city_structure_v0.1.json` — estructura urbana funcional legible por herramientas y futuro RPG Core.
 - `treskal_city_design_invariants_v0.1.json` — restricciones que el plano detallado no puede violar.
+- `treskal_npc_population_and_commerce_contract_v0.1.json` — contrato de población NPC, conocimiento, rutinas e inventarios.
 
 ## Estado del diseño
 
@@ -81,3 +82,9 @@ La arquitectura funcional base de Treskal está cerrada. Permanecen abiertos los
 ### 09_Economia
 
 - `cadenas_abastecimiento_economia_urbana_v0.1.md` — origen, entrada, transformación y destino de las mercancías principales.
+
+### 10_Poblacion_NPC
+
+- `modelo_poblacion_npc_v0.1.md` — NPC autorales, residentes persistentes y población latente.
+- `conocimiento_rutinas_memoria_npc_v0.1.md` — conocimiento limitado, rumores, rutinas y memoria social.
+- `comercio_proveedores_inventarios_v0.1.md` — proveedores reales, stock persistente y encargos.

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_npc_population_and_commerce_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "scope": "Norgard/Treskal",
+  "populationModel": {
+    "tiers": {
+      "A": {
+        "id": "authored_npc",
+        "persistentFromStart": true,
+        "proceduralReplacementForbidden": true
+      },
+      "B": {
+        "id": "generated_persistent_resident",
+        "generatedDeterministically": true,
+        "persistentAfterMaterialization": true
+      },
+      "C": {
+        "id": "latent_population",
+        "fullIdentityRequired": false,
+        "promotesTo": "B"
+      }
+    },
+    "promotion": {
+      "irreversible": true,
+      "requiresStableNpcId": true,
+      "preserves": [
+        "name",
+        "household",
+        "home",
+        "profession",
+        "relationships",
+        "known_interactions"
+      ]
+    },
+    "householdFirst": true,
+    "visiblePopulationDependsOn": [
+      "sector",
+      "daypart",
+      "season",
+      "weather",
+      "market",
+      "port_state",
+      "event",
+      "performance_budget"
+    ]
+  },
+  "persistentNpcMinimumFields": [
+    "npc_id",
+    "origin_seed",
+    "household_id",
+    "home_location_id",
+    "status"
+  ],
+  "optionalNpcFields": [
+    "occupation_id",
+    "workplace_id",
+    "relationship_refs",
+    "knowledge_refs",
+    "memory_refs"
+  ],
+  "visitorModel": {
+    "countsAsResident": false,
+    "fields": [
+      "origin",
+      "reason",
+      "expected_duration",
+      "activity_or_lodging_ref",
+      "departure_state"
+    ],
+    "mayBecomeResidentByWorldStateChange": true
+  },
+  "knowledgeModel": {
+    "omniscienceForbidden": true,
+    "sources": [
+      "personal_experience",
+      "household",
+      "profession",
+      "sector",
+      "family",
+      "friends",
+      "reputation",
+      "news",
+      "witnessed_events"
+    ],
+    "spatialKnowledgeBiasedTo": [
+      "home",
+      "work",
+      "usual_routes",
+      "used_markets",
+      "frequent_services"
+    ],
+    "rumorFields": [
+      "source",
+      "content",
+      "age",
+      "spread_scope",
+      "reliability_or_distortion"
+    ],
+    "hiddenWorldStateMustNotLeak": true
+  },
+  "routineModel": {
+    "baseInputs": [
+      "home",
+      "work",
+      "daypart"
+    ],
+    "modifiers": [
+      "weather",
+      "quest_or_event",
+      "illness",
+      "visit",
+      "exceptional_work",
+      "relationships"
+    ],
+    "priority": [
+      "critical_event",
+      "physical_or_safety_need",
+      "work_or_institutional_duty",
+      "important_social_relation",
+      "ordinary_routine"
+    ]
+  },
+  "memoryModel": {
+    "significantInteractionTypes": [
+      "meeting",
+      "promise",
+      "favor",
+      "conflict",
+      "payment",
+      "commission",
+      "shared_information",
+      "player_reputation"
+    ],
+    "givenWordHighWeightInValrik": true,
+    "infiniteMemoryRequired": false
+  },
+  "commerceModel": {
+    "universalStoreForbidden": true,
+    "providerTypes": [
+      "producer",
+      "artisan",
+      "merchant",
+      "market_stall",
+      "warehouse",
+      "tavern",
+      "inn",
+      "household",
+      "institutional_provider_if_authorized"
+    ],
+    "inventoryInputs": [
+      "provider_type",
+      "profession",
+      "season",
+      "previous_stock",
+      "recent_deliveries",
+      "demand",
+      "scarcity",
+      "commissions",
+      "storage_capacity",
+      "world_state"
+    ],
+    "stockPersists": true,
+    "purchaseReducesStock": true,
+    "replenishmentNeedsCause": true,
+    "commissionsSupported": true,
+    "qualityInputs": [
+      "artisan",
+      "material",
+      "time",
+      "tools",
+      "specialty",
+      "difficulty"
+    ],
+    "providerSchedulesMatter": true,
+    "businessLinkedToNpcAndBuilding": true,
+    "eventsCanAlterBusiness": [
+      "theft",
+      "fire",
+      "closure",
+      "illness",
+      "death",
+      "relocation",
+      "material_shortage"
+    ],
+    "institutionalStockPublicByDefault": false
+  }
+}
