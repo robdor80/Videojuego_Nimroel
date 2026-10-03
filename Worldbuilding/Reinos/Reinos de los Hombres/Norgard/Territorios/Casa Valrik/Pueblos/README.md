@@ -8,7 +8,7 @@ Todos los pueblos deben seguir la metodología territorial común definida en:
 
 `../metodologia_generacion_asentamientos_treskal.md`
 
-La secuencia obligatoria es:
+Secuencia obligatoria:
 
 **esqueleto mínimo → posibilidades → coherencia regional → probabilidades → generación → persistencia**.
 
@@ -16,21 +16,42 @@ La secuencia obligatoria es:
 
 **FASE ACTIVA DE DISEÑO**
 
-El diseño base de **Aldeas del territorio de Treskal está cerrado**.
+El diseño base de Aldeas está cerrado. Para Pueblos ya están definidos el esqueleto, posibilidades, coherencia regional, primera matriz de probabilidades, modelos iniciales y reglas espaciales base.
 
-El **esqueleto mínimo de Pueblo está aprobado** y este es el siguiente nivel de asentamiento a desarrollar, centrándose únicamente en aquello que añade o modifica gameplay respecto a una aldea.
+Treskal ciudad queda fuera del sistema procedural y se desarrollará manualmente.
 
-Los esqueletos procedurales de **Aldea, Pueblo y Villa** están actualmente aprobados, por lo que las posibilidades opcionales, modelos, probabilidades y datos operativos pueden desarrollarse siguiendo la metodología común.
+## Estructura
 
-**Treskal ciudad queda fuera del sistema procedural** y se desarrollará manualmente como ciudad canónica única. No es necesario cerrar un esqueleto procedural de Treskal para continuar con los asentamientos menores.
+### 00_Base
 
-## Archivo base
+- `pueblo_tipo_treskal.md` — esqueleto mínimo obligatorio.
+- `posibilidades_pueblo_treskal.md` — servicios, oficios y variantes posibles.
 
-- `00_Base/pueblo_tipo_treskal.md` — esqueleto mínimo obligatorio;
-- `00_Base/posibilidades_pueblo_treskal.md` — posibilidades y reglas aprobadas durante la fase de diseño.
+### 01_Coherencia_regional
 
-## Coherencia regional aprobada
+- `relacion_pueblos_aldeas.md` — áreas de servicio por accesibilidad real.
+- `distribucion_servicios_y_autosuficiencia.md` — cobertura cotidiana y distribución de servicios.
+- `comercio_cotidiano_y_mercado.md` — comercio ordinario y mercado periódico.
 
-- `01_Coherencia_regional/relacion_pueblos_aldeas.md` — áreas de servicio por accesibilidad real.
-- `01_Coherencia_regional/distribucion_servicios_y_autosuficiencia.md` — autosuficiencia cotidiana y distribución de servicios.
-- `01_Coherencia_regional/comercio_cotidiano_y_mercado.md` — comercio ordinario, función del mercado periódico y oferta especializada.
+### 02_Probabilidades
+
+- `probabilidades_servicios_pueblo_treskal.md` — bandas de población, probabilidades base, modificadores, cobertura y reequilibrio.
+
+### 03_Modelos
+
+- `V1_Agroganadero_mercado/modelo_v1.md`
+- `V2_Maderero_logistico/modelo_v2.md`
+- `V3_Fluvial_pesquero/modelo_v3.md`
+
+Los modelos modifican pesos y condiciones, pero no fijan una instancia ni un plano único.
+
+### 04_Generacion
+
+- `reglas_espaciales_pueblo_treskal.md` — densidad, crecimiento orgánico, red viaria, ubicación funcional y persistencia espacial.
+
+## Siguiente fase
+
+- reglas de composición de población y hogares;
+- cantidades orientativas de edificios y anexos derivadas de esa población;
+- capa operativa estructurada para el motor;
+- generación y persistencia de instancias.
