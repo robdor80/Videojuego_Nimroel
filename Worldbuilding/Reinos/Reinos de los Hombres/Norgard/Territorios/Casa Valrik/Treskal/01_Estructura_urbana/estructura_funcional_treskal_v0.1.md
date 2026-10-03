@@ -213,18 +213,20 @@ La red interior debe distribuir ese tráfico sin obligar a atravesar todos los s
 
 # 11. Relación con el río
 
-La existencia de un río en la geografía de Treskal es canónica.
+La existencia de un río junto a Treskal es canónica y la referencia visual aprobada incorpora **muelles fluviales y pequeñas embarcaciones mercantes**.
 
-Sin embargo, el mapa continental no permite fijar todavía si:
+Por tanto, la ciudad debe integrar una interfaz fluvial funcional.
+
+Sigue pendiente decidir si el río:
 
 - atraviesa el casco;
 - bordea la ciudad;
-- desemboca junto al puerto;
-- forma parte directa del sistema portuario.
+- desemboca directamente junto al puerto marítimo;
+- conecta con este mediante una zona de estuario o ribera diferenciada.
 
-Por tanto, la estructura v0.1 reserva una **interfaz fluvial pendiente de resolución cartográfica detallada**.
+Los muelles fluviales quedan aceptados como parte de la ciudad.
 
-No se inventan puentes o muelles fluviales hasta fijar el trazado.
+Los puentes, su cantidad y su posición no se fijan hasta resolver la topología detallada.
 
 ---
 

@@ -55,7 +55,7 @@ No debe representarse con:
 
 El mapa mundial sitúa Treskal en el extremo oriental de Norgard, junto al litoral.
 
-La relación urbana exacta entre el río, su desembocadura y el puerto **no se fija todavía** porque el mapa continental no posee resolución suficiente para decidirla.
+La referencia visual aprobada sitúa la ciudad junto al río y la costa e incluye **muelles fluviales con pequeñas embarcaciones mercantes**. Queda sin fijar el trazado exacto del río respecto al casco, su desembocadura, el número de puentes y su conexión precisa con el puerto marítimo.
 
 ---
 
@@ -154,6 +154,7 @@ Treskal recibe y consume pescado de mar de forma habitual.
 
 La ciudad debe disponer de infraestructura coherente para:
 
+- muelles fluviales para pequeñas embarcaciones y tráfico mercante compatible con el río;
 - desembarco de pescado;
 - carga y descarga;
 - tránsito portuario;

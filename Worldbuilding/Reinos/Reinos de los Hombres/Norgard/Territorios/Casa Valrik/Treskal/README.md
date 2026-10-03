@@ -22,4 +22,4 @@ No utiliza el sistema procedural de Aldeas, Pueblos y Villas.
 
 No fijar nombres de barrios, calles o edificios singulares antes de resolver la topología general de la ciudad.
 
-La geografía mundial confirma costa, río y relieve suave, pero no tiene resolución suficiente para decidir el recorrido urbano exacto del río.
+La geografía mundial confirma costa, río y relieve suave. La referencia visual aprobada añade muelles fluviales y pequeñas embarcaciones; sigue pendiente decidir el trazado exacto del río y su relación topológica con el puerto marítimo.
