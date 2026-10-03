@@ -29,6 +29,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 
 - `opciones_topologia_costa_rio_puerto_v0.1.md` — historial de la decisión A/B/C; Opción A aprobada.
 - `topologia_treskal_v0.1.md` — topología canónica de desembocadura integrada.
+- `cruce_principal_rio_v0.1.md` — un puente principal aguas arriba de los muelles; cruces secundarios aún no fijados.
 
 ## Decisión topológica vigente
 
@@ -62,6 +63,10 @@ La topología y la distribución funcional relativa están ya fijadas. Siguen ab
 ### 06_Edificios_singulares
 
 - `catalogo_funcional_edificios_singulares_v0.1.md` — catálogo mínimo S01–S10 sin nombres propios.
+- `S01_S02_casa_valrik_y_administracion_v0.1.md` — sede señorial y administración territorial.
+- `S03_S05_justicia_custodia_guardia_v0.1.md` — complejo judicial, custodia y guardia urbana.
+- `S06_S10_mercados_y_logistica_v0.1.md` — mercados, pescado, madera y ganado.
+- `S08_astilleros_reales_v0.1.md` — programa funcional del recinto naval de la Corona.
 
 ### 07_Vida_urbana
 

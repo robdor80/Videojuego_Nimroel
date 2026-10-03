@@ -187,6 +187,14 @@
         "sea scattering can occur for people strongly linked to the sea",
         "it is not mandatory for every sailor"
       ]
+    },
+    {
+      "id": "single_main_river_crossing",
+      "expected": [
+        "one primary permanent bridge exists upstream of T01",
+        "main bridge links interior routes toward T02 and T03",
+        "additional major bridges are not added by default"
+      ]
     }
   ]
 }

@@ -17,7 +17,25 @@
     "civilPortAtIntegratedMouth": true,
     "royalShipyardsAdjacentButSeparated": true,
     "cityWalls": false,
-    "bridgeCount": "unresolved_until_detailed_cartography"
+    "bridgeCount": "unresolved_until_detailed_cartography",
+    "mainPermanentRiverCrossing": {
+      "count": 1,
+      "position": "upstream_of_main_river_docks",
+      "connectsInteriorRoutesTo": [
+        "T02",
+        "T03"
+      ],
+      "supports": [
+        "pedestrians",
+        "horses",
+        "carts",
+        "goods",
+        "official_traffic"
+      ],
+      "construction": "robust_mixed_or_stone_wood_solution_to_be_resolved_by_span",
+      "floodAware": true,
+      "fortifiedByDefault": false
+    }
   },
   "sectors": {
     "T01": {
@@ -324,14 +342,15 @@
   },
   "unresolvedByDesign": [
     "exact_river_course",
-    "exact_bridge_count_and_positions",
     "metric_city_plan",
     "official_district_names",
     "street_names",
     "exact_valrik_residence_form",
     "exact_court_structure",
     "urban_guard_ranks",
-    "exact_market_calendar_for_non_daily_specialized_markets"
+    "exact_market_calendar_for_non_daily_specialized_markets",
+    "exact_main_bridge_geometry_and_material_resolution",
+    "possible_minor_secondary_crossings"
   ],
   "infrastructure": {
     "water": {
