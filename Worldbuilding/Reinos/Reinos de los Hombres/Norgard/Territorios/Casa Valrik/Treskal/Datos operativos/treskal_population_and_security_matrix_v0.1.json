@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_population_and_security_matrix",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "scale": {
+    "min": 0,
+    "max": 5,
+    "meaning": "relative_weight_not_percentage"
+  },
+  "fields": {
+    "R": "resident_weight",
+    "D": "day_visible_density",
+    "W": "work_intensity",
+    "T": "transient_weight",
+    "N": "night_activity"
+  },
+  "subzones": {
+    "Z01": {
+      "R": 1,
+      "D": 4,
+      "W": 2,
+      "T": 5,
+      "N": 1,
+      "securityPriority": "high"
+    },
+    "Z02": {
+      "R": 1,
+      "D": 4,
+      "W": 4,
+      "T": 3,
+      "N": 1,
+      "securityPriority": "functional"
+    },
+    "Z03": {
+      "R": 1,
+      "D": 4,
+      "W": 5,
+      "T": 2,
+      "N": 1,
+      "securityPriority": "functional"
+    },
+    "Z04": {
+      "R": 3,
+      "D": 5,
+      "W": 4,
+      "T": 5,
+      "N": 3,
+      "securityPriority": "very_high"
+    },
+    "Z05": {
+      "R": 4,
+      "D": 5,
+      "W": 5,
+      "T": 3,
+      "N": 3,
+      "securityPriority": "medium"
+    },
+    "Z06": {
+      "R": 1,
+      "D": 4,
+      "W": 5,
+      "T": 2,
+      "N": 1,
+      "securityPriority": "functional"
+    },
+    "Z07": {
+      "R": 2,
+      "D": 3,
+      "W": 4,
+      "T": 3,
+      "N": 1,
+      "securityPriority": "high_institutional"
+    },
+    "Z08": {
+      "R": 1,
+      "D": 4,
+      "W": 4,
+      "T": 3,
+      "N": 2,
+      "securityPriority": "very_high"
+    },
+    "Z09": {
+      "R": 1,
+      "D": 5,
+      "W": 5,
+      "T": 4,
+      "N": 1,
+      "securityPriority": "high"
+    },
+    "Z10": {
+      "R": 2,
+      "D": 5,
+      "W": 5,
+      "T": 5,
+      "N": 3,
+      "securityPriority": "very_high"
+    },
+    "Z11": {
+      "R": 0,
+      "D": 3,
+      "W": 4,
+      "T": 2,
+      "N": 1,
+      "securityPriority": "civic_external_to_crown"
+    },
+    "Z12": {
+      "R": 0,
+      "D": 5,
+      "W": 5,
+      "T": 1,
+      "N": 1,
+      "securityPriority": "crown_internal"
+    },
+    "Z13": {
+      "R": 5,
+      "D": 3,
+      "W": 2,
+      "T": 1,
+      "N": 5,
+      "securityPriority": "medium"
+    },
+    "Z14": {
+      "R": 2,
+      "D": 4,
+      "W": 4,
+      "T": 4,
+      "N": 2,
+      "securityPriority": "medium_event_sensitive"
+    }
+  },
+  "censusRule": "derive_from_households_and_residential_units_not_weights",
+  "visibilityInputs": [
+    "daypart",
+    "weather",
+    "season",
+    "dynamic_state",
+    "performance_budget"
+  ],
+  "securityRules": {
+    "rankSystemDefined": false,
+    "rankSystemBlockedBy": "Norgard_military_review",
+    "totalGuardSizeDefined": false,
+    "crownShipyardSecuritySeparate": true,
+    "responseTimeDependsOn": [
+      "distance",
+      "presence",
+      "severity",
+      "availability",
+      "route_state"
+    ]
+  }
+}

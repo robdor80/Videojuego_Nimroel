@@ -16,7 +16,8 @@
     "urbanGraph": "Datos operativos/treskal_urban_graph_v0.1.json",
     "dynamicStates": "Datos operativos/treskal_dynamic_city_states_v0.1.json",
     "streetsInteriorsActivities": "Datos operativos/treskal_street_interior_activity_contract_v0.1.json",
-    "accessAndWorldState": "Datos operativos/treskal_access_and_world_state_contract_v0.1.json"
+    "accessAndWorldState": "Datos operativos/treskal_access_and_world_state_contract_v0.1.json",
+    "populationAndSecurity": "Datos operativos/treskal_population_and_security_matrix_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -45,11 +46,18 @@
     "exact_main_bridge_geometry",
     "possible_minor_crossings",
     "street_level_geometry",
-    "urban_guard_rank_system",
     "specialized_market_fine_calendar",
     "house_valrik_exact_architectural_plan",
     "judicial_complex_exact_architectural_plan",
     "long_term_penal_system",
-    "royal_shipyard_internal_chain_of_command"
-  ]
+    "royal_shipyard_internal_chain_of_command",
+    "urban_guard_rank_system_external_dependency"
+  ],
+  "externalDependencies": {
+    "urbanGuardRanks": "Norgard_military_review",
+    "longTermPenalSystem": "Norgard_law_and_penal_system",
+    "royalShipyardInternalChainOfCommand": "Norgard_royal_naval_military_system",
+    "specializedMarketFineCalendar": "Norgard_calendar_and_local_market_schedule_detail",
+    "exactMetricGeometry": "future_Treskal_detailed_cartography"
+  }
 }

@@ -52,6 +52,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_street_interior_activity_contract_v0.1.json` — corredores urbanos, interiores persistentes y activity anchors.
 - `treskal_access_and_world_state_contract_v0.1.json` — acceso, autoridad y persistencia mutable.
 - `treskal_city_manifest_v0.1.json` — manifest maestro de contratos operativos de Treskal.
+- `treskal_population_and_security_matrix_v0.1.json` — matriz de residencia, actividad, tránsito y seguridad por subzona.
 
 ## Estado del diseño
 
@@ -137,3 +138,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `acceso_autoridad_y_reaccion_social_v0.1.md` — clases P0–P5, permisos y escalada de reacción.
 - `contrato_world_state_treskal_v0.1.md` — separación entre canon estático, estado persistente y estado derivado.
+
+### 18_Demografia_espacial
+
+- `distribucion_relativa_poblacion_v0.1.md` — pesos R/D/W/T/N por subzona para densidad, LOD y población visible.
+- `seguridad_urbana_por_subzona_v0.1.md` — prioridades de vigilancia sin fijar rangos ni cifras militares.
