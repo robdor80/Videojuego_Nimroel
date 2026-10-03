@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_urban_navigation_and_identity",
+  "version": "0.1",
+  "status": "active_manual_city_design_contract",
+  "subzones": {
+    "Z01": {
+      "id": "western_approach_and_main_bridge",
+      "sectors": [
+        "T11",
+        "T10"
+      ],
+      "connects": [
+        "T02",
+        "T03"
+      ]
+    },
+    "Z02": {
+      "id": "inner_river_docks",
+      "sectors": [
+        "T01"
+      ]
+    },
+    "Z03": {
+      "id": "river_transfer_yards",
+      "sectors": [
+        "T01",
+        "T02"
+      ]
+    },
+    "Z04": {
+      "id": "main_market_and_commercial_streets",
+      "sectors": [
+        "T03"
+      ]
+    },
+    "Z05": {
+      "id": "wood_artisan_corridor",
+      "sectors": [
+        "T04",
+        "T09"
+      ]
+    },
+    "Z06": {
+      "id": "timber_yards_and_large_workshops",
+      "sectors": [
+        "T02",
+        "T04"
+      ]
+    },
+    "Z07": {
+      "id": "valrik_administrative_core",
+      "sectors": [
+        "T05"
+      ]
+    },
+    "Z08": {
+      "id": "justice_and_urban_guard",
+      "sectors": [
+        "T06"
+      ]
+    },
+    "Z09": {
+      "id": "fish_front_and_fish_market",
+      "sectors": [
+        "T01",
+        "T07"
+      ]
+    },
+    "Z10": {
+      "id": "civil_port_and_port_streets",
+      "sectors": [
+        "T07"
+      ]
+    },
+    "Z11": {
+      "id": "civil_royal_port_transition",
+      "sectors": [
+        "T07",
+        "T08"
+      ]
+    },
+    "Z12": {
+      "id": "royal_shipyard_enclosure",
+      "sectors": [
+        "T08"
+      ]
+    },
+    "Z13": {
+      "id": "central_residential_fabric",
+      "sectors": [
+        "T09"
+      ]
+    },
+    "Z14": {
+      "id": "supply_and_livestock_edge",
+      "sectors": [
+        "T10"
+      ]
+    }
+  },
+  "landmarks": {
+    "L01": {
+      "id": "main_bridge",
+      "type": "regional"
+    },
+    "L02": {
+      "id": "river_mouth",
+      "type": "natural"
+    },
+    "L03": {
+      "id": "main_market",
+      "type": "commercial",
+      "facilityRef": "S06"
+    },
+    "L04": {
+      "id": "fish_market_front",
+      "type": "functional",
+      "facilityRef": "S07"
+    },
+    "L05": {
+      "id": "house_valrik_seat",
+      "type": "institutional",
+      "facilityRefs": [
+        "S01",
+        "S02"
+      ]
+    },
+    "L06": {
+      "id": "justice_guard_complex",
+      "type": "institutional",
+      "facilityRefs": [
+        "S03",
+        "S04",
+        "S05"
+      ]
+    },
+    "L07": {
+      "id": "large_timber_yards",
+      "type": "productive",
+      "facilityRef": "S09"
+    },
+    "L08": {
+      "id": "royal_shipyard_access",
+      "type": "institutional_naval"
+    },
+    "L09": {
+      "id": "visible_royal_slipways",
+      "type": "large_scale_visual"
+    },
+    "L10": {
+      "id": "woodcraft_activity_axis",
+      "type": "productive"
+    },
+    "L11": {
+      "id": "livestock_reception",
+      "type": "peripheral",
+      "facilityRef": "S10"
+    },
+    "L12": {
+      "id": "main_central_public_water_point",
+      "type": "daily_life",
+      "exactForm": "unresolved"
+    }
+  },
+  "navigationRules": {
+    "worldReadableWithoutMinimap": true,
+    "npcDirectionsUseLandmarks": true,
+    "npcDirectionAccuracyDependsOn": [
+      "knowledge",
+      "familiarity",
+      "distance"
+    ],
+    "modernStreetSignSystemRequired": false,
+    "functionalSignsAllowed": true,
+    "institutionalHeraldryContextualOnly": true
+  },
+  "directionVocabulary": [
+    "before_the_bridge",
+    "downriver",
+    "toward_the_port",
+    "behind_the_market",
+    "past_the_timber_yards",
+    "near_the_guard",
+    "along_the_corrals_road"
+  ],
+  "sensoryIdentity": {
+    "mustDeriveFromRealActivity": true,
+    "noPermanentTheatricalFog": true,
+    "noGenericExtremeFilth": true,
+    "noContinuousCrowdNoise": true,
+    "keySignatures": [
+      "water",
+      "woodworking",
+      "markets",
+      "port_activity",
+      "residential_life"
+    ],
+    "dynamicInputs": [
+      "time",
+      "weather",
+      "season",
+      "world_state",
+      "sector_activity"
+    ]
+  },
+  "naming": {
+    "officialSubzoneNamesDefined": false,
+    "officialStreetNamesDefined": false,
+    "technicalIdsMustRemainStableWhenNamesAreAdded": true
+  }
+}
