@@ -2,36 +2,64 @@
 
 ## Propósito
 
-Esta carpeta organiza el lore jugable de las villas del territorio de Treskal.
+Esta carpeta organiza el lore jugable de las Villas del territorio de Treskal.
 
-Todas las villas deben seguir la metodología territorial común definida en:
+Todas deben seguir la metodología territorial común definida en:
 
 `../metodologia_generacion_asentamientos_treskal.md`
 
 La secuencia obligatoria es:
 
-**esqueleto mínimo → posibilidades → coherencia regional → probabilidades → generación → persistencia**.
+**esqueleto mínimo → posibilidades → perfil funcional → coherencia regional → probabilidades → generación → persistencia**.
 
 ## Estado actual
 
-El **esqueleto mínimo de Villa está aprobado**.
+**FASE ACTIVA DE DISEÑO**
 
-Los esqueletos procedurales de **Aldea, Pueblo y Villa** están actualmente aprobados. Las posibilidades opcionales, reglas concretas de generación, probabilidades y datos operativos pueden desarrollarse sin esperar a un esqueleto de Treskal.
+El esqueleto mínimo está aprobado y ya se ha iniciado la capa funcional común y la definición de los tres perfiles canónicos.
 
-**Treskal ciudad no se genera proceduralmente**: se diseñará manualmente como ciudad canónica única.
+Treskal ciudad no se genera proceduralmente: se diseñará manualmente.
 
 ## Particularidad del territorio
 
-En el canon actual existen tres villas de especial relevancia funcional:
+En el canon existen tres Villas de especial relevancia cuya función principal ya está fijada:
 
-- villa costera de los astilleros civiles;
-- villa de gestión forestal y maderera;
-- villa agroganadera y comercial del interior.
+1. Villa costera de los grandes astilleros civiles.
+2. Villa de gestión forestal y maderera.
+3. Villa agroganadera y comercial del interior.
 
-Su función principal está fijada por el canon territorial.
+No son modelos intercambiables elegidos al azar.
 
-La generación procedural podrá decidir posteriormente gran parte de su estructura concreta, servicios secundarios, edificios, familias, calles y otros detalles, pero no podrá contradecir esa función principal.
+La generación decide cómo se materializa cada una, pero no puede cambiar su función principal.
 
-## Archivo base
+Los nombres, localizaciones exactas y Casas menores permanecen pendientes.
 
-- `00_Base/villa_tipo_treskal.md`
+## Estructura
+
+### 00_Base
+
+- `villa_tipo_treskal.md` — esqueleto mínimo obligatorio.
+- `posibilidades_villa_treskal.md` — capacidades comunes, servicios y posibilidades por escala.
+
+### 01_Perfiles_funcionales
+
+- `V1_Costera_astilleros_civiles/perfil_v1.md`
+- `V2_Gestion_forestal_maderera/perfil_v2.md`
+- `V3_Agroganadera_comercial/perfil_v3.md`
+
+## Límites ya fijados
+
+- la Villa costera construye grandes embarcaciones civiles, no buques de guerra;
+- los Astilleros Reales continúan en Treskal y pertenecen a la Corona;
+- los grandes astilleros civiles pertenecen a la Casa Valrik;
+- la Casa menor administra la Villa, pero no adquiere automáticamente esos astilleros;
+- la Villa forestal organiza y expide madera, sin sustituir a Treskal como gran centro de transformación especializada;
+- la Villa agroganadera mantiene mercado diario;
+- ninguna Villa se convierte en una ciudad equivalente a Treskal.
+
+## Siguiente fase
+
+- coherencia regional entre las tres Villas, Pueblos y Treskal;
+- probabilidades de servicios secundarios;
+- reglas espaciales y de densidad;
+- datos operativos y persistencia.
