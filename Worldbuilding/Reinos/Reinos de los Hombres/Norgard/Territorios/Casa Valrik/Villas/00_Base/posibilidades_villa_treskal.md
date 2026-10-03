@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CANON EN DESARROLLO — CAPA FUNCIONAL**
+**CANON BASE CERRADO — CAPA FUNCIONAL**
 
 ## Función
 

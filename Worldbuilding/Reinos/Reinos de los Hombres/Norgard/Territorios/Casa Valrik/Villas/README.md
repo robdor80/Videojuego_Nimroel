@@ -14,7 +14,7 @@ Secuencia obligatoria:
 
 ## Estado actual
 
-**DISEÑO BASE AVANZADO / CAPA OPERATIVA ACTIVA**
+**DISEÑO BASE DE VILLAS CERRADO — CAPA OPERATIVA v0.1**
 
 Ya están definidos:
 
@@ -85,11 +85,28 @@ Los nombres, localizaciones exactas y Casas menores permanecen pendientes.
 - la Villa agroganadera mantiene mercado diario;
 - ninguna Villa se convierte en una ciudad equivalente a Treskal.
 
-## Siguiente fase
+## Cierre de diseño base
 
-Antes del cierre formal faltan únicamente:
+La base jugable y procedural de las **Villas del territorio de Treskal se considera CERRADA**.
 
-1. validar coherencia entre documentos humanos y JSON;
-2. limpiar estados documentales obsoletos;
-3. fijar invariantes de generación de las tres Villas;
-4. cerrar el diseño base sin asignar todavía nombres, Casas menores o localizaciones exactas.
+Quedan cubiertos:
+
+- escala y esqueleto mínimo;
+- capacidades comunes;
+- los tres perfiles funcionales canónicos;
+- administración de Casas menores;
+- relación con Pueblos, Aldeas y Treskal;
+- probabilidades de servicios secundarios;
+- población residente y flotante;
+- hogares, edificios y capacidad funcional;
+- crecimiento espacial;
+- contratos operativos;
+- invariantes de prueba.
+
+Los nombres, las Casas menores concretas y las localizaciones exactas de las tres Villas permanecen deliberadamente sin fijar y **no mantienen abierta esta fase**.
+
+Solo se reabrirá el diseño base de Villas cuando exista una necesidad concreta de gameplay, implementación, narrativa, cartografía, arte o datos.
+
+## Siguiente nivel
+
+Con Aldeas, Pueblos y Villas cerrados como sistemas procedurales, el siguiente gran asentamiento del territorio es **Treskal**, que se desarrolla manualmente como ciudad canónica única y no mediante este generador.

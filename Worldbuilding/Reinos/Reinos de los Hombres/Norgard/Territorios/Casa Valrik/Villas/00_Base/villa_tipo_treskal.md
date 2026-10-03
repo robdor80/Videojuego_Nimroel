@@ -10,7 +10,7 @@ Este documento define exclusivamente el **esqueleto mínimo común** de una vill
 
 No describe una villa concreta.
 
-No fija todavía:
+Por alcance de esta capa, no fija:
 
 - número exacto de viviendas;
 - plano;
@@ -48,7 +48,7 @@ Debe contener:
 - áreas productivas o comerciales;
 - diferencias de densidad y uso dentro del núcleo.
 
-No se obliga todavía a dividirla en barrios formales.
+No se obliga a dividirla en barrios formales.
 
 ### 2. Abastecimiento permanente de agua
 
@@ -114,7 +114,7 @@ Una villa debe sostener suficientes oficios y servicios especializados para aten
 - a pueblos y aldeas de su entorno;
 - a su función económica regional.
 
-El esqueleto no fija todavía cuáles ni cuántos.
+El esqueleto no fija cuáles ni cuántos; esa resolución pertenece a las capas funcionales y de generación.
 
 ### 7. Almacenamiento y logística de escala regional
 
@@ -185,7 +185,7 @@ Puede:
 
 ## Lo que NO es obligatorio
 
-El esqueleto de villa no exige todavía:
+El esqueleto de Villa no exige por sí solo:
 
 - muralla;
 - fortificación;
@@ -233,8 +233,8 @@ El resultado debe ser persistente en la partida.
 
 ---
 
-## Próxima fase
+## Desarrollo posterior
 
-Los esqueletos procedurales de **Aldea, Pueblo y Villa** ya están aprobados. Se puede avanzar a las **posibilidades opcionales**, modelos, probabilidades y pesos de estas categorías sin esperar a Treskal.
+El esqueleto mínimo de Villa queda aprobado y las capas posteriores ya se desarrollan en `01_Perfiles_funcionales/`, `02_Coherencia_regional/`, `03_Probabilidades/`, `04_Generacion/` y `Datos operativos/`.
 
 **Treskal queda fuera del sistema procedural** y tendrá desarrollo manual como ciudad canónica única.

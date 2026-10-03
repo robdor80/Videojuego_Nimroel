@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CANON DE GENERACIÓN ESPACIAL — BASE**
+**CANON DE GENERACIÓN ESPACIAL APROBADO — v0.1**
 
 ## Objetivo
 

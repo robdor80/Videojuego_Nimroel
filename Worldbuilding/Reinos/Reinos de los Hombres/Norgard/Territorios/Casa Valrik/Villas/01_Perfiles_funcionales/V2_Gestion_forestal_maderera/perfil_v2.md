@@ -2,7 +2,7 @@
 
 ## Estado
 
-**PERFIL FUNCIONAL CANÓNICO EN DESARROLLO**
+**PERFIL FUNCIONAL CANÓNICO APROBADO — v0.1**
 
 ## Identidad fija
 
