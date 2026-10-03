@@ -14,9 +14,20 @@ Secuencia obligatoria:
 
 ## Estado actual
 
-**FASE ACTIVA DE DISEÑO**
+**FASE ACTIVA DE DISEÑO / CAPA OPERATIVA INICIADA**
 
-El diseño base de Aldeas está cerrado. Para Pueblos ya están definidos el esqueleto, posibilidades, coherencia regional, primera matriz de probabilidades, modelos iniciales y reglas espaciales base.
+El diseño base de Aldeas está cerrado.
+
+Para Pueblos ya están definidos:
+
+- esqueleto mínimo;
+- posibilidades;
+- coherencia regional;
+- probabilidades contextuales;
+- tres modelos iniciales;
+- reglas espaciales;
+- hogares y derivación de edificios;
+- contrato operativo de generación y persistencia.
 
 Treskal ciudad queda fuera del sistema procedural y se desarrollará manualmente.
 
@@ -48,10 +59,27 @@ Los modelos modifican pesos y condiciones, pero no fijan una instancia ni un pla
 ### 04_Generacion
 
 - `reglas_espaciales_pueblo_treskal.md` — densidad, crecimiento orgánico, red viaria, ubicación funcional y persistencia espacial.
+- `poblacion_hogares_y_edificios_pueblo_treskal.md` — unidades domésticas, ocupación residencial y derivación de viviendas, edificios y anexos.
+
+### Datos operativos
+
+- `pueblo_generation_rules_v0.1.json` — representación estructurada de las reglas estáticas de generación.
+- `pueblo_instance_contract_v0.1.json` — contrato mínimo de una instancia persistida en World State.
+- `README.md` — separación de responsabilidades y uso de la capa operativa.
+
+## Regla de implementación
+
+El canon no debe almacenar el resultado concreto de cada Pueblo procedural.
+
+**Lore → reglas.  
+Generador → instancia.  
+World State → persistencia.**
+
+NPC individuales, inventarios dinámicos y estado de misiones se mantienen fuera del contrato estático del Pueblo.
 
 ## Siguiente fase
 
-- reglas de composición de población y hogares;
-- cantidades orientativas de edificios y anexos derivadas de esa población;
-- capa operativa estructurada para el motor;
-- generación y persistencia de instancias.
+- validar la capa operativa contra todos los documentos humanos;
+- definir generación regional coordinada de varios Pueblos y sus aldeas dependientes;
+- preparar pruebas deterministas con semillas;
+- después trasladar la misma metodología a Villas cuando sea necesario.

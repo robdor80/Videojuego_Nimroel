@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_pueblo_instance_contract",
+  "version": "0.1",
+  "status": "active_world_state_contract",
+  "purpose": "Contrato mínimo para persistir una instancia procedural de Pueblo sin convertirla en canon estático.",
+  "ruleSource": "pueblo_generation_rules_v0.1.json",
+  "requiredFields": [
+    "instanceId",
+    "seed",
+    "modelId",
+    "population",
+    "populationBand",
+    "locationContext",
+    "regionalLinks",
+    "households",
+    "buildings",
+    "services",
+    "market",
+    "water",
+    "layout",
+    "validation",
+    "generatedAtWorldState"
+  ],
+  "fieldContract": {
+    "instanceId": "stable_string",
+    "seed": "stable_generation_seed",
+    "modelId": "V1_Agroganadero_mercado|V2_Maderero_logistico|V3_Fluvial_pesquero|future_valid_model",
+    "population": "integer_350_900",
+    "populationBand": "P1|P2|P3",
+    "locationContext": {
+      "worldPositionRef": "external_world_position_reference",
+      "terrainTags": [
+        "string"
+      ],
+      "resourceTags": [
+        "string"
+      ],
+      "routeTags": [
+        "string"
+      ],
+      "hydrologyTags": [
+        "string"
+      ]
+    },
+    "regionalLinks": {
+      "linkedVillages": [
+        "stable_instance_id"
+      ],
+      "nearbyTowns": [
+        "stable_instance_id"
+      ],
+      "nearbyVillas": [
+        "stable_instance_id"
+      ],
+      "mainReferenceLinks": [
+        "stable_instance_id"
+      ],
+      "accessibilityStateRef": "external_dynamic_reference"
+    },
+    "households": {
+      "count": "integer",
+      "recordsRef": "external_household_records_or_embedded_compact_records"
+    },
+    "buildings": {
+      "dwellingCount": "integer",
+      "dedicatedFunctionalBuildingCount": "integer",
+      "annexCount": "integer",
+      "recordsRef": "external_building_records_or_embedded_compact_records"
+    },
+    "services": {
+      "mandatory": [
+        "resolved_service_record"
+      ],
+      "optional": [
+        "resolved_service_record"
+      ],
+      "combinedFunctions": [
+        "resolved_combination_record"
+      ]
+    },
+    "market": {
+      "intensity": "local|regional|route",
+      "scheduleRef": "regional_market_schedule_reference",
+      "spaceRef": "layout_feature_reference"
+    },
+    "water": {
+      "potableSources": [
+        "layout_feature_reference"
+      ],
+      "capacityValidated": "boolean"
+    },
+    "layout": {
+      "layoutSeed": "stable_seed",
+      "centralCoreRef": "layout_feature_reference",
+      "roadGraphRef": "external_or_embedded_graph",
+      "functionalAreas": [
+        "layout_feature_reference"
+      ]
+    },
+    "validation": {
+      "mandatoryCoreValid": "boolean",
+      "specializationValid": "boolean",
+      "regionalCoverageValid": "boolean",
+      "householdHousingValid": "boolean",
+      "waterCapacityValid": "boolean",
+      "spatialRulesValid": "boolean"
+    },
+    "generatedAtWorldState": "world_state_revision_or_timestamp"
+  },
+  "forbiddenPersistencePatterns": [
+    "reroll_services_on_revisit",
+    "reroll_households_on_revisit",
+    "reroll_buildings_on_revisit",
+    "store_dynamic_shop_inventory_as_static_canon",
+    "store_quest_state_as_settlement_canon"
+  ]
+}

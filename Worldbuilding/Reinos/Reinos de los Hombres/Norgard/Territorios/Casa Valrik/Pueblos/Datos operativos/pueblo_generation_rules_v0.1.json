@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_pueblo_generation_rules",
+  "version": "0.1",
+  "status": "active_generation_contract",
+  "scope": "Norgard/Treskal/Pueblo",
+  "purpose": "Reglas estáticas de canon para generar Pueblos procedurales coherentes y persistentes.",
+  "sourceDocuments": [
+    "../00_Base/pueblo_tipo_treskal.md",
+    "../00_Base/posibilidades_pueblo_treskal.md",
+    "../01_Coherencia_regional/relacion_pueblos_aldeas.md",
+    "../01_Coherencia_regional/distribucion_servicios_y_autosuficiencia.md",
+    "../01_Coherencia_regional/comercio_cotidiano_y_mercado.md",
+    "../02_Probabilidades/probabilidades_servicios_pueblo_treskal.md",
+    "../03_Modelos/V1_Agroganadero_mercado/modelo_v1.md",
+    "../03_Modelos/V2_Maderero_logistico/modelo_v2.md",
+    "../03_Modelos/V3_Fluvial_pesquero/modelo_v3.md",
+    "../04_Generacion/reglas_espaciales_pueblo_treskal.md",
+    "../04_Generacion/poblacion_hogares_y_edificios_pueblo_treskal.md"
+  ],
+  "population": {
+    "min": 350,
+    "max": 900,
+    "bands": {
+      "P1": {
+        "min": 350,
+        "max": 499,
+        "specializationTarget": {
+          "min": 3,
+          "max": 5
+        }
+      },
+      "P2": {
+        "min": 500,
+        "max": 699,
+        "specializationTarget": {
+          "min": 4,
+          "max": 7
+        }
+      },
+      "P3": {
+        "min": 700,
+        "max": 900,
+        "specializationTarget": {
+          "min": 5,
+          "max": 9
+        }
+      }
+    }
+  },
+  "mandatoryCore": {
+    "permanentWaterSupply": true,
+    "recognizableCentralActivitySpace": true,
+    "periodicMarket": true,
+    "blacksmithReferenceLevel": 2,
+    "tavernMin": 1,
+    "aboveDomesticStorage": true,
+    "localNetworkNode": true,
+    "serviceRelationshipWithNearbyVillages": true,
+    "permanentGuardBySettlementRank": false,
+    "wallsByDefault": false,
+    "residentTerritorialAuthorityRequired": false
+  },
+  "householdGeneration": {
+    "commonResidentsPerDwelling": {
+      "min": 2,
+      "max": 8
+    },
+    "centralFrequentRange": {
+      "min": 4,
+      "max": 6
+    },
+    "targetAverageResidentsPerOccupiedDwelling": {
+      "min": 4.3,
+      "max": 5.2
+    },
+    "onePersonHouseholdsAllowed": true,
+    "overEightResidentsAllowedWithReason": true,
+    "dwellingCountDerivedFromHouseholds": true,
+    "servicesMayShareResidentialBuilding": true
+  },
+  "serviceProbabilitiesPercent": {
+    "residentMerchantOrSpecializedShop": {
+      "P1": 35,
+      "P2": 55,
+      "P3": 75
+    },
+    "localOrImmediateMill": {
+      "P1": 35,
+      "P2": 50,
+      "P3": 65
+    },
+    "dedicatedCarpentry": {
+      "P1": 80,
+      "P2": 90,
+      "P3": 95
+    },
+    "independentWainwright": {
+      "P1": 35,
+      "P2": 50,
+      "P3": 65
+    },
+    "tanner": {
+      "P1": 10,
+      "P2": 15,
+      "P3": 25
+    },
+    "potter": {
+      "P1": 20,
+      "P2": 30,
+      "P3": 40
+    },
+    "trainedHealer": {
+      "P1": 55,
+      "P2": 70,
+      "P3": 85
+    },
+    "professionalButcher": {
+      "P1": 30,
+      "P2": 45,
+      "P3": 60
+    },
+    "professionalBakery": {
+      "P1": 55,
+      "P2": 70,
+      "P3": 85
+    },
+    "weaverOrTailor": {
+      "P1": 15,
+      "P2": 25,
+      "P3": 35
+    },
+    "shoemaker": {
+      "P1": 15,
+      "P2": 25,
+      "P3": 35
+    },
+    "secondTavern": {
+      "P1": 15,
+      "P2": 35,
+      "P3": 55
+    },
+    "inn": {
+      "P1": 30,
+      "P2": 50,
+      "P3": 70
+    }
+  },
+  "probabilityRules": {
+    "normalClampPercent": {
+      "min": 5,
+      "max": 95
+    },
+    "coverageCanForcePresence": true,
+    "incompatibilityCanForceZero": true,
+    "equivalentNearbyServiceReductionPercent": {
+      "min": 10,
+      "max": 25
+    }
+  },
+  "modifiersPercentPoints": {
+    "importantRouteOrHighTraffic": {
+      "residentMerchantOrSpecializedShop": 20,
+      "independentWainwright": 20,
+      "inn": 25,
+      "secondTavern": 15,
+      "professionalBakery": 10,
+      "professionalButcher": 10
+    },
+    "timberRouteOrBlackForestFunctionalEdge": {
+      "dedicatedCarpentry": 15,
+      "independentWainwright": 20,
+      "residentMerchantOrSpecializedShop": 10,
+      "innIfRegularTraffic": 10
+    },
+    "strongAgropastoralContext": {
+      "localOrImmediateMillIfGeographyAllows": 15,
+      "professionalButcher": 20,
+      "tanner": 15,
+      "professionalBakery": 10,
+      "residentMerchantOrSpecializedShop": 10
+    },
+    "relevantWoolOrLinenProduction": {
+      "weaverOrTailor": 25,
+      "textileMerchant": 10
+    },
+    "suitableClayAndLocalTradition": {
+      "potter": 35
+    },
+    "suitableWaterForMilling": {
+      "localOrImmediateMill": 20
+    },
+    "especiallyActiveMarket": {
+      "residentMerchantOrSpecializedShop": 15,
+      "professionalBakery": 10,
+      "professionalButcher": 10,
+      "secondTavern": 10,
+      "innIfLongDistanceVisitors": 10
+    }
+  },
+  "regionalCoverage": {
+    "millingAccessRequired": true,
+    "trainedHealerNoLargeCoverageVoid": true,
+    "ordinaryCartRepairAlmostUniversal": true,
+    "everydayGoodsAccessRequired": true,
+    "coverageUsesAccessibilityNotFixedRadius": true,
+    "sameDayMarketReturnPreferredForManyLinkedVillages": true
+  },
+  "craftsmanship": {
+    "settlementRankSetsMinimumCapabilityNotTalent": true,
+    "blacksmithLevel2Guaranteed": true,
+    "blacksmithLevel3BaseChancePercentPerMainSmithy": 5,
+    "extraordinaryLegendaryForgeProceduralChancePercent": 0
+  },
+  "market": {
+    "existence": "mandatory",
+    "intensityValues": [
+      "local",
+      "regional",
+      "route"
+    ],
+    "intensityDependsOn": [
+      "population",
+      "accessibility",
+      "linkedVillages",
+      "routeImportance",
+      "economicSpecialization",
+      "nearbyMarkets"
+    ],
+    "scheduleMustBeRegionallyCoordinated": true
+  },
+  "models": {
+    "V1_Agroganadero_mercado": {
+      "requiredContextTags": [
+        "agropastoral",
+        "village_service_node"
+      ],
+      "modifiersPercentPoints": {
+        "localOrImmediateMill": 15,
+        "professionalButcher": 20,
+        "professionalBakery": 10,
+        "residentMerchantOrSpecializedShop": 10,
+        "trainedHealer": 10,
+        "tannerIfLivestockSufficient": 10
+      },
+      "marketBias": [
+        "local",
+        "regional"
+      ]
+    },
+    "V2_Maderero_logistico": {
+      "requiredContextTags": [
+        "timber_route",
+        "outside_dense_black_forest"
+      ],
+      "modifiersPercentPoints": {
+        "dedicatedCarpentry": 15,
+        "independentWainwright": 25,
+        "residentMerchantOrSpecializedShop": 10,
+        "innIfRegularTraffic": 15,
+        "secondTavern": 10
+      },
+      "forbiddenNormalFeatures": [
+        "large_formal_sawmill",
+        "large_industrial_processing_complex",
+        "civil_settlement_inside_dense_black_forest"
+      ]
+    },
+    "V3_Fluvial_pesquero": {
+      "requiredContextTags": [
+        "river",
+        "fishing"
+      ],
+      "modifiersPercentPoints": {
+        "localOrImmediateMillIfHydrologyAllows": 20,
+        "residentMerchantOrSpecializedShop": 10,
+        "innIfCrossingOrTrafficSignificant": 15,
+        "secondTavernIfMarketOrTrafficJustifies": 10
+      },
+      "fishingIsEconomicBaseNotServiceRoll": true,
+      "doesNotImplyUrbanPort": true
+    }
+  },
+  "spatialGeneration": {
+    "requiredFunctionalLayers": [
+      "central_activity_core",
+      "main_residential_fabric",
+      "integrated_workshops_and_services",
+      "productive_or_logistics_areas",
+      "above_domestic_storage",
+      "transition_to_fields_routes_and_outer_exploitation",
+      "connecting_street_and_path_network"
+    ],
+    "densityGradient": true,
+    "organicGrowth": true,
+    "perfectGridByDefault": false,
+    "formalDistrictsRequired": false,
+    "marketMustNotBlockAllCirculation": true,
+    "pollutionMustNotCompromisePotableWater": true,
+    "repeatedLayoutBetweenInstancesForbidden": true
+  },
+  "generationPipeline": [
+    "resolve_regional_network",
+    "choose_population_and_band",
+    "choose_generation_model",
+    "resolve_geography_resources_routes_and_accessibility",
+    "apply_mandatory_core",
+    "roll_optional_services_from_base_probabilities",
+    "apply_context_and_model_modifiers",
+    "validate_minimum_specialization",
+    "validate_regional_coverage",
+    "repair_only_missing_or_incoherent_results",
+    "generate_households",
+    "derive_dwellings_from_households",
+    "derive_dedicated_buildings_and_annexes_from_functions",
+    "generate_spatial_layout",
+    "validate_instance",
+    "persist_world_state"
+  ],
+  "persistence": {
+    "rerollOnRevisit": false,
+    "instanceBelongsToWorldState": true,
+    "laterChangesRequireWorldEvent": true
+  },
+  "separationOfResponsibilities": {
+    "staticCanonInThisFile": true,
+    "concreteSettlementInstanceInWorldState": true,
+    "individualNpcStateElsewhere": true,
+    "dynamicInventoryElsewhere": true,
+    "questStateElsewhere": true
+  }
+}
