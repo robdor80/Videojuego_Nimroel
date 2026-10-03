@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_pueblo_generation_invariants",
+  "version": "0.1",
+  "status": "design_level_tests_before_engine_implementation",
+  "purpose": "Casos de prueba que el futuro generador debe superar sin fijar Pueblos concretos como canon.",
+  "cases": [
+    {
+      "id": "determinism_same_seed",
+      "setup": "same worldSeed, rulesVersion, generatorVersion and stable settlement graph",
+      "expected": [
+        "same town populations",
+        "same model assignments",
+        "same optional services",
+        "same households",
+        "same layout references"
+      ]
+    },
+    {
+      "id": "subsystem_isolation_new_service",
+      "setup": "add a new optional service key without changing existing service keys",
+      "expected": [
+        "existing service rolls remain stable",
+        "household seed remains stable",
+        "layout seed remains stable unless layout inputs materially change"
+      ]
+    },
+    {
+      "id": "visible_name_is_not_seed",
+      "setup": "rename a generated town while preserving stableSettlementId",
+      "expected": [
+        "services unchanged",
+        "households unchanged",
+        "buildings unchanged",
+        "layout unchanged"
+      ]
+    },
+    {
+      "id": "milling_coverage_repair",
+      "setup": "network roll leaves a populated rural cluster without reasonable milling access",
+      "expected": [
+        "one coherent candidate gains milling capability",
+        "region is not rerolled",
+        "coverage correction reason is recorded"
+      ]
+    },
+    {
+      "id": "healer_shared_coverage",
+      "setup": "two nearby towns fail trained healer roll but a third accessible town has one with reasonable coverage",
+      "expected": [
+        "no forced duplicate healer if coverage is sufficient"
+      ]
+    },
+    {
+      "id": "blacksmith_not_shared_away",
+      "setup": "nearby settlement has superior blacksmith capability",
+      "expected": [
+        "village still retains mandatory local basic blacksmith capability",
+        "town still retains mandatory level 2 reference capability"
+      ]
+    },
+    {
+      "id": "market_schedule_coordination",
+      "setup": "two nearby towns serve overlapping village populations",
+      "expected": [
+        "market scheduling attempts to avoid systematic conflict",
+        "market existence remains mandatory in both towns"
+      ]
+    },
+    {
+      "id": "route_blockage_is_dynamic",
+      "setup": "flood temporarily blocks primary route after generation",
+      "expected": [
+        "permanent services do not reroll",
+        "travel cost or route availability changes",
+        "temporary practical reference town may change"
+      ]
+    },
+    {
+      "id": "model_v2_no_industrial_sawmill",
+      "setup": "generate V2_Maderero_logistico town",
+      "expected": [
+        "large formal sawmill is absent unless separately authorized by higher-level canon",
+        "timber logistics can still be visible"
+      ]
+    },
+    {
+      "id": "model_v3_not_automatic_port",
+      "setup": "generate V3_Fluvial_pesquero town",
+      "expected": [
+        "fishing activity present",
+        "urban port or naval identity not implied",
+        "mill only possible when hydrology allows"
+      ]
+    },
+    {
+      "id": "households_drive_dwellings",
+      "setup": "generate population and households",
+      "expected": [
+        "dwelling count derives from resolved households",
+        "services sharing residences do not create unnecessary extra buildings"
+      ]
+    },
+    {
+      "id": "save_upgrade_no_silent_reroll",
+      "setup": "load older save after rulesVersion increases",
+      "expected": [
+        "persisted town remains unchanged unless an explicit migration is applied"
+      ]
+    }
+  ]
+}

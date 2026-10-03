@@ -14,9 +14,7 @@ Secuencia obligatoria:
 
 ## Estado actual
 
-**FASE ACTIVA DE DISEÑO / CAPA OPERATIVA INICIADA**
-
-El diseño base de Aldeas está cerrado.
+**DISEÑO BASE AVANZADO / CAPA OPERATIVA ACTIVA**
 
 Para Pueblos ya están definidos:
 
@@ -27,7 +25,10 @@ Para Pueblos ya están definidos:
 - tres modelos iniciales;
 - reglas espaciales;
 - hogares y derivación de edificios;
-- contrato operativo de generación y persistencia.
+- coordinación regional;
+- aleatoriedad determinista;
+- contrato operativo de generación y persistencia;
+- invariantes de prueba para la implementación futura.
 
 Treskal ciudad queda fuera del sistema procedural y se desarrollará manualmente.
 
@@ -35,18 +36,18 @@ Treskal ciudad queda fuera del sistema procedural y se desarrollará manualmente
 
 ### 00_Base
 
-- `pueblo_tipo_treskal.md` — esqueleto mínimo obligatorio.
-- `posibilidades_pueblo_treskal.md` — servicios, oficios y variantes posibles.
+- `pueblo_tipo_treskal.md`
+- `posibilidades_pueblo_treskal.md`
 
 ### 01_Coherencia_regional
 
-- `relacion_pueblos_aldeas.md` — áreas de servicio por accesibilidad real.
-- `distribucion_servicios_y_autosuficiencia.md` — cobertura cotidiana y distribución de servicios.
-- `comercio_cotidiano_y_mercado.md` — comercio ordinario y mercado periódico.
+- `relacion_pueblos_aldeas.md`
+- `distribucion_servicios_y_autosuficiencia.md`
+- `comercio_cotidiano_y_mercado.md`
 
 ### 02_Probabilidades
 
-- `probabilidades_servicios_pueblo_treskal.md` — bandas de población, probabilidades base, modificadores, cobertura y reequilibrio.
+- `probabilidades_servicios_pueblo_treskal.md`
 
 ### 03_Modelos
 
@@ -54,22 +55,24 @@ Treskal ciudad queda fuera del sistema procedural y se desarrollará manualmente
 - `V2_Maderero_logistico/modelo_v2.md`
 - `V3_Fluvial_pesquero/modelo_v3.md`
 
-Los modelos modifican pesos y condiciones, pero no fijan una instancia ni un plano único.
-
 ### 04_Generacion
 
-- `reglas_espaciales_pueblo_treskal.md` — densidad, crecimiento orgánico, red viaria, ubicación funcional y persistencia espacial.
-- `poblacion_hogares_y_edificios_pueblo_treskal.md` — unidades domésticas, ocupación residencial y derivación de viviendas, edificios y anexos.
+- `reglas_espaciales_pueblo_treskal.md`
+- `poblacion_hogares_y_edificios_pueblo_treskal.md`
+
+### 05_Coordinacion_regional
+
+- `generacion_regional_determinista.md` — grafo de accesibilidad, cobertura, coordinación de mercados, semillas estables y persistencia.
 
 ### Datos operativos
 
-- `pueblo_generation_rules_v0.1.json` — representación estructurada de las reglas estáticas de generación.
-- `pueblo_instance_contract_v0.1.json` — contrato mínimo de una instancia persistida en World State.
-- `README.md` — separación de responsabilidades y uso de la capa operativa.
+- `pueblo_generation_rules_v0.1.json`
+- `pueblo_instance_contract_v0.1.json`
+- `regional_generation_rules_v0.1.json`
+- `generation_invariants_v0.1.json`
+- `README.md`
 
 ## Regla de implementación
-
-El canon no debe almacenar el resultado concreto de cada Pueblo procedural.
 
 **Lore → reglas.  
 Generador → instancia.  
@@ -77,9 +80,11 @@ World State → persistencia.**
 
 NPC individuales, inventarios dinámicos y estado de misiones se mantienen fuera del contrato estático del Pueblo.
 
-## Siguiente fase
+## Próximos pasos
 
-- validar la capa operativa contra todos los documentos humanos;
-- definir generación regional coordinada de varios Pueblos y sus aldeas dependientes;
-- preparar pruebas deterministas con semillas;
-- después trasladar la misma metodología a Villas cuando sea necesario.
+El siguiente trabajo útil ya no consiste en añadir oficios por completitud, sino en:
+
+1. validar automáticamente la coherencia entre documentos humanos y JSON;
+2. preparar un prototipo de generador con semillas deterministas cuando exista el módulo de código correspondiente;
+3. utilizar las pruebas de invariantes antes de generar instancias canónicas;
+4. trasladar después la metodología a Villas cuando el desarrollo del juego lo necesite.

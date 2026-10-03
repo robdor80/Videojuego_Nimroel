@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_pueblo_regional_generation_rules",
+  "version": "0.1",
+  "status": "active_generation_contract",
+  "scope": "Norgard/Treskal/settlement_network",
+  "sourceDocument": "../05_Coordinacion_regional/generacion_regional_determinista.md",
+  "graph": {
+    "nodeTypes": [
+      "village",
+      "town",
+      "villa",
+      "treskal",
+      "strategic_installation_if_relevant"
+    ],
+    "edgeFields": [
+      "normalTravelCost",
+      "routeType",
+      "cartSuitability",
+      "waterCrossing",
+      "seasonalSensitivity",
+      "dynamicBlockageRef"
+    ],
+    "functionalAccessibilityUsesTravelCost": true,
+    "geometricDistanceOnlySupportingFactor": true
+  },
+  "villageReferenceAssignment": {
+    "primaryReferencePreferred": true,
+    "secondaryReferencesAllowed": true,
+    "villaMayReplaceTownWhenMoreAccessible": true,
+    "factors": [
+      "normalTravelCost",
+      "serviceAvailability",
+      "routeQuality",
+      "terrain",
+      "waterCrossings"
+    ]
+  },
+  "regionalGenerationOrder": [
+    "resolve_geography_and_road_network",
+    "place_or_identify_settlements_and_ranks",
+    "resolve_population_ranges",
+    "assign_plausible_economic_models",
+    "build_accessibility_graph",
+    "apply_mandatory_capabilities",
+    "roll_town_optional_services",
+    "roll_village_optional_services",
+    "validate_regional_coverage",
+    "apply_minimal_coverage_corrections",
+    "coordinate_periodic_markets",
+    "generate_households_and_buildings",
+    "generate_layouts",
+    "persist_complete_network"
+  ],
+  "coverageChecks": [
+    "milling",
+    "trained_healer",
+    "ordinary_goods",
+    "cart_repair",
+    "periodic_market",
+    "route_lodging_where_traffic_justifies"
+  ],
+  "localCapabilitiesExcludedFromCoverageSubstitution": [
+    "village_basic_blacksmith",
+    "town_level_2_blacksmith"
+  ],
+  "coverageCorrection": {
+    "rerollRegion": false,
+    "addOnlyMissingFunction": true,
+    "candidateRanking": [
+      "resource_and_model_coherence",
+      "access_cost_to_uncovered_population",
+      "settlement_capacity",
+      "stable_seed_tiebreak"
+    ],
+    "mustRecordCorrectionReason": true
+  },
+  "marketCoordination": {
+    "allTownsHavePeriodicMarket": true,
+    "avoidSystematicNearbyScheduleConflict": true,
+    "supportItinerantMerchantCircuits": true,
+    "concreteDayNamesDefinedElsewhere": true
+  },
+  "deterministicRandomness": {
+    "worldSeedRequired": true,
+    "oneGlobalSequentialRngForbidden": true,
+    "derivedSeedInputs": [
+      "worldSeed",
+      "stableSettlementId",
+      "subsystemKey",
+      "rulesVersion"
+    ],
+    "subsystemKeys": [
+      "population",
+      "model",
+      "services",
+      "households",
+      "buildings",
+      "layout",
+      "npc_population",
+      "market",
+      "craftsmanship"
+    ],
+    "individualServiceKeyingRecommended": true,
+    "visibleNameMustNotAffectTechnicalIdentity": true
+  },
+  "stableSettlementIdentity": {
+    "requiredBeforeDetailGeneration": true,
+    "visibleNameIsNotTechnicalId": true,
+    "possibleIdSources": [
+      "generation_cell_or_region",
+      "quantized_position",
+      "persistent_node_index",
+      "map_identifier"
+    ]
+  },
+  "versioning": {
+    "persistRulesVersion": true,
+    "persistGeneratorVersion": true,
+    "persistWorldSeed": true,
+    "existingSaveMustNotSilentlyRerollAfterRuleChange": true,
+    "validUpgradeStrategies": [
+      "keep_persisted_result",
+      "explicit_migration",
+      "new_saves_only_regeneration"
+    ]
+  },
+  "dynamicAccessibility": {
+    "mayChangeTravelCostOrAvailability": true,
+    "examples": [
+      "mud",
+      "snow",
+      "ice",
+      "flood",
+      "road_damage",
+      "world_event"
+    ],
+    "mustNotRerollPermanentServices": true
+  },
+  "finalValidation": [
+    "stable_ids_present",
+    "villages_have_functional_network_exit",
+    "towns_act_as_real_service_nodes",
+    "no_unjustified_functional_deserts",
+    "no_absurd_specialist_duplication",
+    "markets_are_territorially_usable",
+    "required_routes_exist",
+    "coverage_corrections_are_minimal",
+    "configuration_is_reproducible"
+  ]
+}
