@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_information_and_reputation_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "knowledgeStates": {
+    "K0": "unknown",
+    "K1": "witnessed",
+    "K2": "confirmed_direct_source",
+    "K3": "rumor",
+    "K4": "official_notice",
+    "K5": "doubtful_or_conflicting"
+  },
+  "channels": [
+    "household",
+    "workplace",
+    "family_friends",
+    "market",
+    "tavern_inn",
+    "port",
+    "urban_guard",
+    "administration_justice"
+  ],
+  "propagationInputs": [
+    "source_network",
+    "social_distance",
+    "event_salience",
+    "intermediaries",
+    "emotion",
+    "evidence",
+    "interest",
+    "time"
+  ],
+  "secretKnowledgeRequiresActualTransmissionOrDiscovery": true,
+  "falseRumorsAllowed": true,
+  "npcDialogueKnowledgePayload": [
+    "known_fact",
+    "knowledge_state",
+    "source",
+    "age",
+    "confidence",
+    "contradictions"
+  ],
+  "worldStateOmniscienceForbidden": true,
+  "reputationScopes": [
+    "personal",
+    "family",
+    "professional",
+    "neighborhood",
+    "institutional",
+    "commercial"
+  ],
+  "globalCityKarmaForbidden": true,
+  "reputationPropagationRequiresKnowledgePath": true,
+  "givenWordSpecialWeightInValrik": true,
+  "lawNotOverriddenByPositiveReputation": true,
+  "royalShipyardAccessNotGrantedByGenericCityReputation": true,
+  "latentPopulationMayStoreAggregateNetworkReputation": true
+}

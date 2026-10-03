@@ -17,7 +17,8 @@
     "dynamicStates": "Datos operativos/treskal_dynamic_city_states_v0.1.json",
     "streetsInteriorsActivities": "Datos operativos/treskal_street_interior_activity_contract_v0.1.json",
     "accessAndWorldState": "Datos operativos/treskal_access_and_world_state_contract_v0.1.json",
-    "populationAndSecurity": "Datos operativos/treskal_population_and_security_matrix_v0.1.json"
+    "populationAndSecurity": "Datos operativos/treskal_population_and_security_matrix_v0.1.json",
+    "informationAndReputation": "Datos operativos/treskal_information_and_reputation_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -29,7 +30,8 @@
     "C": "major_corridor",
     "A": "npc_activity_anchor",
     "D": "dynamic_city_state",
-    "P": "access_class"
+    "P": "access_class",
+    "K": "npc_knowledge_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

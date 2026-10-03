@@ -53,6 +53,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_access_and_world_state_contract_v0.1.json` — acceso, autoridad y persistencia mutable.
 - `treskal_city_manifest_v0.1.json` — manifest maestro de contratos operativos de Treskal.
 - `treskal_population_and_security_matrix_v0.1.json` — matriz de residencia, actividad, tránsito y seguridad por subzona.
+- `treskal_information_and_reputation_contract_v0.1.json` — conocimiento K0–K5, rumores y reputaciones por red.
 
 ## Estado del diseño
 
@@ -143,3 +144,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `distribucion_relativa_poblacion_v0.1.md` — pesos R/D/W/T/N por subzona para densidad, LOD y población visible.
 - `seguridad_urbana_por_subzona_v0.1.md` — prioridades de vigilancia sin fijar rangos ni cifras militares.
+
+### 19_Informacion_y_reputacion
+
+- `propagacion_informacion_y_rumores_v0.1.md` — estados K0–K5, canales sociales y distorsión de rumores.
+- `reputacion_local_y_profesional_v0.1.md` — reputación personal, familiar, profesional, vecinal, institucional y comercial sin karma global.
