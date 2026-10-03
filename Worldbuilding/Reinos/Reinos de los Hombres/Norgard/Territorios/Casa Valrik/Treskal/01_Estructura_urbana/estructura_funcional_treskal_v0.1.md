@@ -215,18 +215,11 @@ La red interior debe distribuir ese tráfico sin obligar a atravesar todos los s
 
 La existencia de un río junto a Treskal es canónica y la referencia visual aprobada incorpora **muelles fluviales y pequeñas embarcaciones mercantes**.
 
-Por tanto, la ciudad debe integrar una interfaz fluvial funcional.
+La decisión topológica fija una **desembocadura integrada** junto a la ciudad. Los muelles fluviales forman la transición entre navegación interior, almacenes, mercados y puerto marítimo.
 
-Sigue pendiente decidir si el río:
+La mayor parte del casco se desarrolla sobre una margen principal para evitar que el río convierta a Treskal en una ciudad definida por múltiples puentes.
 
-- atraviesa el casco;
-- bordea la ciudad;
-- desemboca directamente junto al puerto marítimo;
-- conecta con este mediante una zona de estuario o ribera diferenciada.
-
-Los muelles fluviales quedan aceptados como parte de la ciudad.
-
-Los puentes, su cantidad y su posición no se fijan hasta resolver la topología detallada.
+Los puentes, su cantidad exacta y su posición se fijarán al realizar la cartografía urbana detallada.
 
 ---
 
@@ -311,17 +304,8 @@ Ejemplos:
 
 ---
 
-## Próxima decisión de diseño
+## Siguiente fase de diseño
 
-La siguiente capa debe fijar un **esquema topológico manual de Treskal**:
+La topología general ya está fijada en `../02_Topologia/topologia_treskal_v0.1.md`.
 
-- posición relativa de costa;
-- río;
-- puerto civil;
-- Astilleros Reales;
-- núcleo administrativo;
-- mercados;
-- área artesanal;
-- principales accesos terrestres.
-
-Ese esquema debe decidirse antes de poner nombres a barrios o calles.
+La siguiente capa debe transformar los sectores funcionales en un **esquema espacial relativo de ciudad**, todavía sin nombres de barrios o calles, y después definir jerarquía viaria, mercados, residencia Valrik y edificios singulares.

@@ -2,7 +2,7 @@
 
 ## Estado
 
-**DECISIÓN DE CANON PENDIENTE DEL AUTOR**
+**DECISIÓN CERRADA — OPCIÓN A APROBADA POR EL AUTOR**
 
 ## Objetivo
 
@@ -44,7 +44,7 @@ Los **Astilleros Reales** ocuparían un sector litoral próximo pero separado de
 
 La ciudad crecería alrededor de un gran nodo logístico formado por río, desembocadura, puerto y caminos.
 
-**Es la opción recomendada para el diseño actual.**
+**OPCIÓN SELECCIONADA Y CANÓNICA.**
 
 ---
 
@@ -115,6 +115,8 @@ Además permite que el río sea importante sin convertir a Treskal en una “ciu
 
 ---
 
-## Regla
+## Resolución
 
-No fijar barrios, calles principales ni posición definitiva de la residencia Valrik hasta cerrar esta decisión.
+La decisión queda cerrada a favor de **Opción A — Desembocadura integrada**. Las opciones B y C se conservan únicamente como historial de diseño y no son canon vigente.
+
+El desarrollo continúa en `topologia_treskal_v0.1.md`.
