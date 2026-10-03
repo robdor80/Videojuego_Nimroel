@@ -2,7 +2,7 @@
 
 ## Estado
 
-**DISEÑO MANUAL ACTIVO**
+**DISEÑO FUNCIONAL BASE CERRADO — DESARROLLO DETALLADO ACTIVO**
 
 Treskal es una ciudad canónica única.
 
@@ -48,7 +48,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 
 ## Estado del diseño
 
-La topología y la distribución funcional relativa están ya fijadas. Siguen abiertos únicamente los detalles métricos: trazado exacto del río, puentes, plano de calles, nombres urbanos y edificios singulares concretos.
+La arquitectura funcional base de Treskal está cerrada. Permanecen abiertos los detalles finos: trazado métrico del río y calles, geometría exacta del puente, cruces menores, nombres urbanos, planos arquitectónicos concretos de algunos complejos, rangos de guardia y calendario fino de mercados especializados.
 
 ### 04_Infraestructura_urbana
 

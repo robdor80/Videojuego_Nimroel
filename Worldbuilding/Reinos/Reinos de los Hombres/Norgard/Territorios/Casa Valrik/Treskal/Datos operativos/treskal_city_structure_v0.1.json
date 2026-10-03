@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
   "version": "0.1",
-  "status": "active_manual_city_design_contract",
+  "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
   "population": {
@@ -17,7 +17,7 @@
     "civilPortAtIntegratedMouth": true,
     "royalShipyardsAdjacentButSeparated": true,
     "cityWalls": false,
-    "bridgeCount": "unresolved_until_detailed_cartography",
+    "bridgeCount": 1,
     "mainPermanentRiverCrossing": {
       "count": 1,
       "position": "upstream_of_main_river_docks",
@@ -345,12 +345,12 @@
     "metric_city_plan",
     "official_district_names",
     "street_names",
-    "exact_valrik_residence_form",
-    "exact_court_structure",
     "urban_guard_ranks",
     "exact_market_calendar_for_non_daily_specialized_markets",
     "exact_main_bridge_geometry_and_material_resolution",
-    "possible_minor_secondary_crossings"
+    "possible_minor_secondary_crossings",
+    "exact_valrik_residence_architectural_plan",
+    "exact_judicial_complex_architectural_plan"
   ],
   "infrastructure": {
     "water": {

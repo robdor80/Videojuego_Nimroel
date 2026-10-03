@@ -2,7 +2,7 @@
 
 ## Estado
 
-**DISEÑO MANUAL EN DESARROLLO — ESTRUCTURA FUNCIONAL**
+**DISEÑO FUNCIONAL BASE CERRADO — v0.1**
 
 ## Objetivo
 
@@ -219,7 +219,7 @@ La decisión topológica fija una **desembocadura integrada** junto a la ciudad.
 
 La mayor parte del casco se desarrolla sobre una margen principal para evitar que el río convierta a Treskal en una ciudad definida por múltiples puentes.
 
-Los puentes, su cantidad exacta y su posición se fijarán al realizar la cartografía urbana detallada.
+Se fija **un puente principal permanente** aguas arriba de T01. Su geometría exacta y posibles cruces menores quedan para la cartografía urbana detallada.
 
 ---
 
@@ -304,8 +304,8 @@ Ejemplos:
 
 ---
 
-## Siguiente fase de diseño
+## Estado de desarrollo posterior
 
-La topología general ya está fijada en `../02_Topologia/topologia_treskal_v0.1.md`.
+La topología, sectores, jerarquía viaria, mercados, edificios singulares, infraestructura, tejido urbano, vida cotidiana, orientación cardinal y cadenas económicas ya están desarrollados en las carpetas posteriores.
 
-La siguiente capa debe transformar los sectores funcionales en un **esquema espacial relativo de ciudad**, todavía sin nombres de barrios o calles, y después definir jerarquía viaria, mercados, residencia Valrik y edificios singulares.
+Este documento queda como **base funcional de referencia** y no debe absorber detalle que pertenezca a esas capas.
