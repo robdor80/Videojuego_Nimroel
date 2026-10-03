@@ -49,6 +49,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_urban_navigation_and_identity_v0.1.json` — subzonas, landmarks, navegación e identidad sensorial.
 - `treskal_urban_graph_v0.1.json` — grafo abstracto de sectores y conexiones.
 - `treskal_dynamic_city_states_v0.1.json` — estados dinámicos y consecuencias urbanas persistentes.
+- `treskal_street_interior_activity_contract_v0.1.json` — corredores urbanos, interiores persistentes y activity anchors.
 
 ## Estado del diseño
 
@@ -119,3 +120,13 @@ El perfil visual vigente de la ciudad es `TRESKAL_CITY_VISUAL_PROFILE_v0.1.md`. 
 ## Convención toponímica vigente
 
 Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe historia real y, para la vida urbana cotidiana, nombres descriptivos y populares. Quedan fijados, entre otros, **Puente de los Gemelos**, **Plaza del Abasto**, **Lonja del Pescado**, **Los Talleres**, **Los Patios**, **La Casa**, **Casa de Justicia de Treskal**, **Los Muelles** y **Los Corrales**.
+
+### 15_Vias_y_espacios
+
+- `corredores_urbanos_principales_v0.1.md` — corredores C01–C08 antes del plano métrico y de los nombres de calle.
+- `espacios_publicos_menores_v0.1.md` — patios, ensanchamientos, agua, carga y espacios cotidianos.
+
+### 16_Interiores_y_actividad
+
+- `interiores_funcionales_v0.1.md` — reglas de acceso, persistencia y materialización de interiores U01–U14.
+- `puntos_actividad_npc_v0.1.md` — anclas A01–A12 para rutinas contextuales de NPC.

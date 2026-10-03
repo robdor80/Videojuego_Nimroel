@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_street_interior_activity_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "corridors": {
+    "C01": {
+      "id": "bridge_to_provision_market",
+      "connects": [
+        "L01",
+        "T02",
+        "L03"
+      ],
+      "traffic": [
+        "pedestrian",
+        "traveller",
+        "light_cart",
+        "compatible_supply_cart"
+      ],
+      "heavyTrafficDiversion": true
+    },
+    "C02": {
+      "id": "timber_corridor",
+      "connects": [
+        "forest_access",
+        "T02",
+        "Z06",
+        "Z05"
+      ],
+      "branchTo": [
+        "T08"
+      ],
+      "traffic": [
+        "heavy_cart",
+        "timber",
+        "artisan",
+        "supplier"
+      ],
+      "avoid": [
+        "L03_core"
+      ]
+    },
+    "C03": {
+      "id": "market_to_civil_port",
+      "connects": [
+        "L03",
+        "Z10",
+        "T07"
+      ],
+      "traffic": [
+        "pedestrian",
+        "merchant",
+        "sailor",
+        "light_goods"
+      ],
+      "mixedUseFrontage": true
+    },
+    "C04": {
+      "id": "market_to_valrik_and_justice",
+      "connects": [
+        "L03",
+        "L05",
+        "L06"
+      ],
+      "traffic": [
+        "pedestrian",
+        "official",
+        "messenger",
+        "visitor"
+      ],
+      "ceremonialByDefault": false
+    },
+    "C05": {
+      "id": "riverfront_working_corridor",
+      "connects": [
+        "Z01",
+        "Z02",
+        "Z03",
+        "L04",
+        "L02"
+      ],
+      "traffic": [
+        "worker",
+        "fish",
+        "river_cargo",
+        "light_medium_cart"
+      ],
+      "waterAccessPriority": true
+    },
+    "C06": {
+      "id": "peripheral_supply_corridor",
+      "connects": [
+        "rural_routes",
+        "Z14",
+        "T10"
+      ],
+      "traffic": [
+        "livestock",
+        "rural_goods",
+        "cart"
+      ],
+      "avoid": [
+        "T03"
+      ]
+    },
+    "C07": {
+      "id": "royal_shipyard_supply_corridor",
+      "connects": [
+        "T11",
+        "T02",
+        "T04",
+        "L08"
+      ],
+      "traffic": [
+        "authorized_worker",
+        "heavy_cart",
+        "timber",
+        "metal",
+        "shipyard_supply"
+      ],
+      "restrictedFinalSegment": true
+    },
+    "C08": {
+      "id": "informal_inner_redistribution_network",
+      "connects": [
+        "T02",
+        "T04",
+        "T09",
+        "T10",
+        "access_routes"
+      ],
+      "ringGeometryRequired": false,
+      "secondaryDiversion": true
+    }
+  },
+  "publicSpaceRules": {
+    "smallStreetWideningsAllowed": true,
+    "sharedCourtyardsAllowed": true,
+    "distributedWaterPointsRequired": true,
+    "modernStreetFurnitureRequired": false,
+    "loadingSpaceNearHighCargoUsesRequired": true,
+    "childPlayUsesOrdinarySafeSpaces": true,
+    "climateShelterCanUse": [
+      "eaves",
+      "partial_arcades_if_architecturally_valid",
+      "sheds",
+      "deep_entries",
+      "market_coverings"
+    ],
+    "monumentalOpenSquaresByDefault": false
+  },
+  "interiors": {
+    "persistentBuildingInteriorFields": [
+      "building_id",
+      "entrance_id",
+      "sector_or_subzone",
+      "occupants",
+      "function",
+      "ownership",
+      "state"
+    ],
+    "accessClasses": [
+      "public",
+      "semi_public",
+      "private",
+      "restricted",
+      "institutional_controlled"
+    ],
+    "templateBaseAllowed": true,
+    "deterministicMaterializationRequired": true,
+    "rerollAfterMaterializationForbidden": true,
+    "persistentChanges": [
+      "forced_door",
+      "stolen_object",
+      "purchased_stock",
+      "fire_damage",
+      "corpse",
+      "repair",
+      "owner_change"
+    ],
+    "privacyMatters": true,
+    "openingHoursMatter": true
+  },
+  "activityAnchors": {
+    "A01": "home",
+    "A02": "artisan_work",
+    "A03": "commerce",
+    "A04": "market",
+    "A05": "port",
+    "A06": "logistics",
+    "A07": "administration",
+    "A08": "guard",
+    "A09": "social",
+    "A10": "water",
+    "A11": "food",
+    "A12": "work_rest"
+  },
+  "activitySelectionInputs": [
+    "routine",
+    "profession",
+    "need",
+    "relationships",
+    "daypart",
+    "weather",
+    "event",
+    "anchor_availability"
+  ],
+  "anchorCapacityRequired": true,
+  "alternativeBehaviorWhenUnavailable": [
+    "wait",
+    "choose_alternative",
+    "change_task",
+    "leave"
+  ],
+  "dialogueContextUsesCurrentActivity": true,
+  "latentPopulationCanUseAggregateAnchorDemand": true,
+  "simulationLodMayReduce": [
+    "animation",
+    "update_frequency",
+    "path_precision"
+  ],
+  "simulationLodMustNotChange": [
+    "identity",
+    "home",
+    "job",
+    "persistent_state",
+    "important_relationships"
+  ]
+}
