@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_dynamic_city_states",
+  "version": "0.1",
+  "status": "active_world_state_design_contract",
+  "states": [
+    {
+      "id": "D01",
+      "name": "maritime_storm",
+      "affects": [
+        "T07",
+        "T08",
+        "fish_supply",
+        "ship_arrivals",
+        "port_activity"
+      ],
+      "persistentConsequencesPossible": true
+    },
+    {
+      "id": "D02",
+      "name": "river_flood",
+      "affects": [
+        "T01",
+        "main_bridge",
+        "river_navigation",
+        "low_routes"
+      ],
+      "persistentConsequencesPossible": true
+    },
+    {
+      "id": "D03",
+      "name": "urban_fire",
+      "affects": [
+        "local_buildings",
+        "roads",
+        "water_demand",
+        "inventory",
+        "housing"
+      ],
+      "persistentConsequencesPossible": true
+    },
+    {
+      "id": "D04",
+      "name": "royal_shipyard_emergency",
+      "affects": [
+        "T08",
+        "restricted_access",
+        "materials",
+        "work_schedule"
+      ],
+      "persistentConsequencesPossible": true
+    },
+    {
+      "id": "D05",
+      "name": "large_timber_convoy",
+      "affects": [
+        "T11",
+        "T02",
+        "T04",
+        "T08",
+        "traffic",
+        "stock"
+      ],
+      "persistentConsequencesPossible": false
+    },
+    {
+      "id": "D06",
+      "name": "large_livestock_day",
+      "affects": [
+        "T10",
+        "S10",
+        "inn_demand",
+        "traffic"
+      ],
+      "persistentConsequencesPossible": false
+    },
+    {
+      "id": "D07",
+      "name": "important_merchant_ship_arrival",
+      "affects": [
+        "T07",
+        "inventory",
+        "rumors",
+        "visitors",
+        "inn_demand"
+      ],
+      "persistentConsequencesPossible": true
+    },
+    {
+      "id": "D08",
+      "name": "royal_ship_launch_or_naval_milestone",
+      "affects": [
+        "T08",
+        "institutional_presence",
+        "traffic"
+      ],
+      "persistentConsequencesPossible": false
+    },
+    {
+      "id": "D09",
+      "name": "poor_harvest_or_grain_delay",
+      "affects": [
+        "grain_stock",
+        "prices",
+        "S06",
+        "imports",
+        "dialogue"
+      ],
+      "persistentConsequencesPossible": true
+    },
+    {
+      "id": "D10",
+      "name": "land_route_disruption",
+      "affects": [
+        "routes",
+        "timber",
+        "grain",
+        "livestock",
+        "travel_time"
+      ],
+      "persistentConsequencesPossible": true
+    },
+    {
+      "id": "D11",
+      "name": "high_judicial_activity_day",
+      "affects": [
+        "T05",
+        "T06",
+        "guard_presence",
+        "visitors",
+        "inn_demand"
+      ],
+      "persistentConsequencesPossible": false
+    },
+    {
+      "id": "D12",
+      "name": "ordinary_city_day",
+      "affects": [
+        "baseline"
+      ],
+      "persistentConsequencesPossible": false
+    }
+  ],
+  "rules": {
+    "extraordinaryStateNotRequiredEveryDay": true,
+    "baseCityStructureNeverRerolledByTemporaryState": true,
+    "consequencesMayOutliveTrigger": true,
+    "communicationChannels": [
+      "npc_dialogue",
+      "activity",
+      "inventory",
+      "routes",
+      "sound",
+      "weather",
+      "prices",
+      "building_state"
+    ],
+    "omniscientUiMessageRequired": false
+  }
+}

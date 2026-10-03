@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_urban_navigation_graph",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "nodes": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "main_bridge"
+  ],
+  "edgeTypes": [
+    "main_land",
+    "secondary_urban",
+    "local_pedestrian",
+    "river",
+    "port",
+    "restricted"
+  ],
+  "edges": [
+    {
+      "a": "T11",
+      "b": "T10",
+      "type": "main_land",
+      "supports": [
+        "pedestrian",
+        "horse",
+        "cart",
+        "livestock"
+      ]
+    },
+    {
+      "a": "T11",
+      "b": "T02",
+      "type": "main_land",
+      "supports": [
+        "pedestrian",
+        "horse",
+        "heavy_cart",
+        "goods"
+      ]
+    },
+    {
+      "a": "T11",
+      "b": "T05",
+      "type": "main_land",
+      "supports": [
+        "pedestrian",
+        "horse",
+        "official_traffic"
+      ]
+    },
+    {
+      "a": "T11",
+      "b": "T06",
+      "type": "main_land",
+      "supports": [
+        "pedestrian",
+        "horse",
+        "official_traffic"
+      ]
+    },
+    {
+      "a": "T11",
+      "b": "T08",
+      "type": "restricted",
+      "supports": [
+        "authorized_workers",
+        "authorized_suppliers",
+        "heavy_cart"
+      ]
+    },
+    {
+      "a": "main_bridge",
+      "b": "T02",
+      "type": "main_land",
+      "supports": [
+        "pedestrian",
+        "horse",
+        "cart",
+        "goods"
+      ]
+    },
+    {
+      "a": "main_bridge",
+      "b": "T03",
+      "type": "main_land",
+      "supports": [
+        "pedestrian",
+        "horse",
+        "light_cart"
+      ]
+    },
+    {
+      "a": "T01",
+      "b": "T02",
+      "type": "main_land",
+      "supports": [
+        "cargo",
+        "cart",
+        "worker"
+      ]
+    },
+    {
+      "a": "T01",
+      "b": "T03",
+      "type": "secondary_urban",
+      "supports": [
+        "pedestrian",
+        "light_goods"
+      ]
+    },
+    {
+      "a": "T01",
+      "b": "T04",
+      "type": "secondary_urban",
+      "supports": [
+        "artisan",
+        "materials",
+        "light_cart"
+      ]
+    },
+    {
+      "a": "T01",
+      "b": "T07",
+      "type": "port",
+      "supports": [
+        "workers",
+        "cargo_transfer",
+        "passengers"
+      ]
+    },
+    {
+      "a": "T02",
+      "b": "T03",
+      "type": "main_land",
+      "supports": [
+        "goods",
+        "cart",
+        "pedestrian"
+      ]
+    },
+    {
+      "a": "T02",
+      "b": "T04",
+      "type": "main_land",
+      "supports": [
+        "timber",
+        "heavy_cart",
+        "workers"
+      ]
+    },
+    {
+      "a": "T02",
+      "b": "T08",
+      "type": "restricted",
+      "supports": [
+        "timber",
+        "metal",
+        "royal_shipyard_supplies",
+        "authorized_workers"
+      ]
+    },
+    {
+      "a": "T03",
+      "b": "T04",
+      "type": "secondary_urban",
+      "supports": [
+        "pedestrian",
+        "customers",
+        "light_cart"
+      ]
+    },
+    {
+      "a": "T03",
+      "b": "T05",
+      "type": "secondary_urban",
+      "supports": [
+        "pedestrian",
+        "official_traffic"
+      ]
+    },
+    {
+      "a": "T03",
+      "b": "T06",
+      "type": "secondary_urban",
+      "supports": [
+        "pedestrian",
+        "guard",
+        "official_traffic"
+      ]
+    },
+    {
+      "a": "T03",
+      "b": "T07",
+      "type": "secondary_urban",
+      "supports": [
+        "pedestrian",
+        "port_trade",
+        "light_cart"
+      ]
+    },
+    {
+      "a": "T03",
+      "b": "T09",
+      "type": "local_pedestrian",
+      "supports": [
+        "pedestrian",
+        "local_delivery"
+      ]
+    },
+    {
+      "a": "T04",
+      "b": "T09",
+      "type": "secondary_urban",
+      "supports": [
+        "pedestrian",
+        "workers",
+        "light_cart"
+      ]
+    },
+    {
+      "a": "T04",
+      "b": "T08",
+      "type": "restricted",
+      "supports": [
+        "specialized_workers",
+        "naval_components",
+        "materials"
+      ]
+    },
+    {
+      "a": "T05",
+      "b": "T06",
+      "type": "secondary_urban",
+      "supports": [
+        "pedestrian",
+        "official_traffic",
+        "guard"
+      ]
+    },
+    {
+      "a": "T07",
+      "b": "T08",
+      "type": "restricted",
+      "supports": [
+        "authorized_personnel",
+        "authorized_suppliers"
+      ]
+    },
+    {
+      "a": "T09",
+      "b": "T10",
+      "type": "secondary_urban",
+      "supports": [
+        "pedestrian",
+        "local_cart",
+        "household_traffic"
+      ]
+    }
+  ],
+  "routingCostInputs": [
+    "distance",
+    "width",
+    "slope",
+    "mud",
+    "traffic",
+    "market_activity",
+    "livestock",
+    "works",
+    "flood",
+    "world_state_event"
+  ],
+  "actorRestrictions": {
+    "heavyCart": {
+      "avoid": [
+        "local_pedestrian",
+        "narrow_routes"
+      ]
+    },
+    "livestock": {
+      "avoid": [
+        "T03"
+      ],
+      "prefer": [
+        "T10",
+        "peripheral_routes"
+      ]
+    },
+    "ordinaryCivilian": {
+      "forbid": [
+        "T08_internal"
+      ]
+    },
+    "urbanGuard": {
+      "allow": [
+        "guard_internal_routes"
+      ]
+    },
+    "royalShipyardAuthorized": {
+      "allow": [
+        "T08_restricted_access"
+      ]
+    }
+  },
+  "exactStreetGeometryDefined": false
+}

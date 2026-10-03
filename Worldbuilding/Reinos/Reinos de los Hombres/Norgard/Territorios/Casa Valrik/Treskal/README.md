@@ -47,6 +47,8 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_city_design_invariants_v0.1.json` — restricciones que el plano detallado no puede violar.
 - `treskal_npc_population_and_commerce_contract_v0.1.json` — contrato de población NPC, conocimiento, rutinas e inventarios.
 - `treskal_urban_navigation_and_identity_v0.1.json` — subzonas, landmarks, navegación e identidad sensorial.
+- `treskal_urban_graph_v0.1.json` — grafo abstracto de sectores y conexiones.
+- `treskal_dynamic_city_states_v0.1.json` — estados dinámicos y consecuencias urbanas persistentes.
 
 ## Estado del diseño
 
@@ -107,3 +109,8 @@ La arquitectura funcional base de Treskal está cerrada. Permanecen abiertos los
 ## Dirección visual
 
 El perfil visual vigente de la ciudad es `TRESKAL_CITY_VISUAL_PROFILE_v0.1.md`. Las referencias visuales antiguas quedan subordinadas a ese perfil; las montañas dramáticas inmediatas no son canon.
+
+### 14_Simulacion_urbana
+
+- `grafo_navegacion_v0.1.md` — conectividad T01–T11, puente, restricciones por actor y costes de ruta.
+- `estados_dinamicos_urbanos_v0.1.md` — temporales, crecidas, incendios, convoyes, llegadas de barcos y otros estados de World State.
