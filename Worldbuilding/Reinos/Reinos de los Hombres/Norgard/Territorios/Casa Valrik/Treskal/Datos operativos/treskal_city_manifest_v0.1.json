@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_city_manifest",
+  "version": "0.1",
+  "status": "active_city_manifest",
+  "cityId": "treskal",
+  "procedural": false,
+  "canonRoot": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",
+  "visualProfile": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Perfiles locales/Treskal/TRESKAL_CITY_VISUAL_PROFILE_v0.1.md",
+  "namingConvention": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Toponimia/convencion_toponimica_norgard_v0.1.md",
+  "operationalFiles": {
+    "structure": "Datos operativos/treskal_city_structure_v0.1.json",
+    "invariants": "Datos operativos/treskal_city_design_invariants_v0.1.json",
+    "npcAndCommerce": "Datos operativos/treskal_npc_population_and_commerce_contract_v0.1.json",
+    "navigationAndIdentity": "Datos operativos/treskal_urban_navigation_and_identity_v0.1.json",
+    "urbanGraph": "Datos operativos/treskal_urban_graph_v0.1.json",
+    "dynamicStates": "Datos operativos/treskal_dynamic_city_states_v0.1.json",
+    "streetsInteriorsActivities": "Datos operativos/treskal_street_interior_activity_contract_v0.1.json",
+    "accessAndWorldState": "Datos operativos/treskal_access_and_world_state_contract_v0.1.json"
+  },
+  "stableIdNamespaces": {
+    "T": "functional_sector",
+    "Z": "urban_subzone",
+    "L": "landmark",
+    "S": "singular_facility",
+    "U": "building_type",
+    "G": "relative_growth_layer",
+    "C": "major_corridor",
+    "A": "npc_activity_anchor",
+    "D": "dynamic_city_state",
+    "P": "access_class"
+  },
+  "rules": {
+    "stableIdsAreCanonicalTechnicalIdentity": true,
+    "visibleNamesDoNotReplaceIds": true,
+    "worldStateMustReferenceStableIds": true,
+    "temporaryStatesMustNotRewriteBaseCanon": true,
+    "authoredNpcOverrideProceduralPopulation": true,
+    "materializedNpcAndInteriorsDoNotReroll": true,
+    "royalShipyardsRemainCrownOwned": true
+  },
+  "unresolvedStructuralItems": [
+    "metric_city_plan",
+    "exact_river_geometry",
+    "exact_main_bridge_geometry",
+    "possible_minor_crossings",
+    "street_level_geometry",
+    "urban_guard_rank_system",
+    "specialized_market_fine_calendar",
+    "house_valrik_exact_architectural_plan",
+    "judicial_complex_exact_architectural_plan",
+    "long_term_penal_system",
+    "royal_shipyard_internal_chain_of_command"
+  ]
+}

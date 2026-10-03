@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_access_and_world_state_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "accessClasses": {
+    "P0": "public",
+    "P1": "public_conditioned",
+    "P2": "semi_private",
+    "P3": "private",
+    "P4": "institutional_restricted",
+    "P5": "crown_high_restriction"
+  },
+  "accessDecisionInputs": [
+    "location",
+    "time",
+    "role",
+    "employment",
+    "invitation",
+    "relationship",
+    "permission",
+    "emergency",
+    "reputation",
+    "world_state"
+  ],
+  "reactionEscalation": [
+    "notice_or_warning",
+    "question",
+    "request_to_leave",
+    "call_responsible_person",
+    "call_guard",
+    "detention_if_legally_warranted"
+  ],
+  "accessExamples": {
+    "ordinaryStreet": "P0",
+    "openShopFront": "P0_or_P1",
+    "workshopBackArea": "P2",
+    "privateHome": "P3",
+    "administrativeArchive": "P4",
+    "royalShipyardInterior": "P5"
+  },
+  "worldState": {
+    "staticCanon": [
+      "topology",
+      "T_sectors",
+      "Z_subzones",
+      "S_facilities",
+      "L_landmarks",
+      "C_corridors",
+      "base_economy",
+      "royal_shipyard_ownership",
+      "no_city_wall",
+      "house_valrik_role",
+      "toponymy_rules"
+    ],
+    "persistentMutable": [
+      "npc_life_state",
+      "households",
+      "relationships",
+      "ownership",
+      "businesses",
+      "inventory",
+      "prices",
+      "damage",
+      "repairs",
+      "construction",
+      "reputation",
+      "permissions",
+      "detentions",
+      "judicial_cases",
+      "ships_present",
+      "visitors",
+      "commissions",
+      "temporary_route_blocks"
+    ],
+    "derivedTemporary": [
+      "visible_density",
+      "market_activity",
+      "mud",
+      "tavern_occupancy",
+      "traffic",
+      "anchor_availability"
+    ],
+    "saveIdentityByStableIds": true,
+    "rerollCityOnLoadForbidden": true,
+    "migrationRequiredForStructuralCanonChanges": true
+  },
+  "entityMinimums": {
+    "building": [
+      "building_id",
+      "type_U",
+      "location_ref",
+      "owner_ref",
+      "occupant_refs",
+      "state",
+      "access_state",
+      "interior_ref_or_seed"
+    ],
+    "business": [
+      "business_id",
+      "building_id",
+      "owner_ref",
+      "worker_refs",
+      "activity",
+      "stock_state",
+      "reputation",
+      "schedule",
+      "supplier_refs"
+    ],
+    "persistentNpc": [
+      "npc_id",
+      "household_id",
+      "home_location_id",
+      "life_state"
+    ],
+    "relevantShip": [
+      "ship_id",
+      "crew_ref",
+      "cargo_ref",
+      "origin",
+      "destination",
+      "state"
+    ]
+  },
+  "simulationLod": {
+    "low": [
+      "counts",
+      "aggregate_state",
+      "approximate_position"
+    ],
+    "medium": [
+      "routine",
+      "route",
+      "stock",
+      "occupancy"
+    ],
+    "high": [
+      "individual_npc",
+      "interior",
+      "dialogue",
+      "relevant_objects"
+    ],
+    "factsMustRemainInvariantAcrossLod": true
+  }
+}

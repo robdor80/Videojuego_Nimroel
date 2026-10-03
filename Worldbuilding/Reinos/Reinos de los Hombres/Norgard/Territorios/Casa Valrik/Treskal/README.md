@@ -50,6 +50,8 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_urban_graph_v0.1.json` — grafo abstracto de sectores y conexiones.
 - `treskal_dynamic_city_states_v0.1.json` — estados dinámicos y consecuencias urbanas persistentes.
 - `treskal_street_interior_activity_contract_v0.1.json` — corredores urbanos, interiores persistentes y activity anchors.
+- `treskal_access_and_world_state_contract_v0.1.json` — acceso, autoridad y persistencia mutable.
+- `treskal_city_manifest_v0.1.json` — manifest maestro de contratos operativos de Treskal.
 
 ## Estado del diseño
 
@@ -130,3 +132,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `interiores_funcionales_v0.1.md` — reglas de acceso, persistencia y materialización de interiores U01–U14.
 - `puntos_actividad_npc_v0.1.md` — anclas A01–A12 para rutinas contextuales de NPC.
+
+### 17_Integracion_juego
+
+- `acceso_autoridad_y_reaccion_social_v0.1.md` — clases P0–P5, permisos y escalada de reacción.
+- `contrato_world_state_treskal_v0.1.md` — separación entre canon estático, estado persistente y estado derivado.

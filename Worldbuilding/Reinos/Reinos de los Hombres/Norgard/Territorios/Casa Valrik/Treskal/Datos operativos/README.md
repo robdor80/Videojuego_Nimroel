@@ -14,3 +14,7 @@ Los JSON de esta carpeta **no son reglas para generar una ciudad aleatoria**. Re
 Los detalles aún no fijados aparecen explícitamente en `unresolvedByDesign`.
 
 No deben rellenarse automáticamente por una herramienta sin pasar por la fase de diseño correspondiente.
+
+- `treskal_street_interior_activity_contract_v0.1.json` — corredores, interiores y activity anchors.
+- `treskal_access_and_world_state_contract_v0.1.json` — clases de acceso P0–P5 y contrato de World State.
+- `treskal_city_manifest_v0.1.json` — índice maestro de todos los contratos operativos.
