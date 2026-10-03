@@ -871,5 +871,71 @@
       "war",
       "extraordinary_demand"
     ]
+  },
+  "relativeGrowthLayers": [
+    {
+      "id": "G1",
+      "name": "river_sea_initial_core",
+      "anchors": [
+        "T01",
+        "T03",
+        "early_residential"
+      ]
+    },
+    {
+      "id": "G2",
+      "name": "crossing_and_market_consolidation",
+      "anchors": [
+        "main_bridge",
+        "T02",
+        "T03"
+      ]
+    },
+    {
+      "id": "G3",
+      "name": "woodcraft_expansion",
+      "anchors": [
+        "T04",
+        "T02"
+      ]
+    },
+    {
+      "id": "G4",
+      "name": "valrik_administrative_consolidation",
+      "anchors": [
+        "T05",
+        "T06"
+      ]
+    },
+    {
+      "id": "G5",
+      "name": "civil_port_expansion",
+      "anchors": [
+        "T07"
+      ]
+    },
+    {
+      "id": "G6",
+      "name": "royal_shipyard_development",
+      "anchors": [
+        "T08"
+      ]
+    },
+    {
+      "id": "G7",
+      "name": "mature_urban_expansion",
+      "anchors": [
+        "T09",
+        "T10",
+        "T11"
+      ]
+    }
+  ],
+  "visualProfileRef": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Perfiles locales/Treskal/TRESKAL_CITY_VISUAL_PROFILE_v0.1.md",
+  "toponymy": {
+    "conventionDefined": false,
+    "stableTechnicalIdsRequired": true,
+    "visibleNamesMayBeAddedLater": true,
+    "namingFrameworkRef": "../13_Toponimia/marco_toponimia_urbana_v0.1.md"
   }
 }

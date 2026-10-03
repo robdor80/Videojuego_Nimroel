@@ -95,3 +95,15 @@ La arquitectura funcional base de Treskal está cerrada. Permanecen abiertos los
 - `subzonas_urbanas_v0.1.md` — subzonas técnicas Z01–Z14 para convertir sectores en lugares reconocibles.
 - `puntos_referencia_y_navegacion_v0.1.md` — landmarks L01–L12 y navegación mediante referencias físicas.
 - `lectura_sensorial_y_actividad_v0.1.md` — señales visuales, sonoras y ambientales derivadas de actividad real.
+
+### 12_Historia_urbana
+
+- `capas_crecimiento_relativo_v0.1.md` — siete capas G1–G7 que explican el crecimiento orgánico sin inventar fechas.
+
+### 13_Toponimia
+
+- `marco_toponimia_urbana_v0.1.md` — mantiene IDs técnicos estables y aplaza nombres hasta definir la convención cultural de Norgard.
+
+## Dirección visual
+
+El perfil visual vigente de la ciudad es `TRESKAL_CITY_VISUAL_PROFILE_v0.1.md`. Las referencias visuales antiguas quedan subordinadas a ese perfil; las montañas dramáticas inmediatas no son canon.
