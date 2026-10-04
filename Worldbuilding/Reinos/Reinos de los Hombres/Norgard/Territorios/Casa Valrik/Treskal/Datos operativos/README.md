@@ -21,3 +21,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_population_and_security_matrix_v0.1.json` — pesos relativos de población/actividad y prioridad de seguridad por Z01–Z14.
 - `treskal_information_and_reputation_contract_v0.1.json` — propagación de información, rumores y reputaciones por red social.
 - `treskal_urban_gameplay_discovery_contract_v0.1.json` — descubrimiento orgánico, investigación y oportunidades emergentes.
+- `treskal_labor_household_visitor_contract_v0.1.json` — familias de ocupación O, hogares H y visitantes V.

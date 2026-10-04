@@ -19,7 +19,8 @@
     "accessAndWorldState": "Datos operativos/treskal_access_and_world_state_contract_v0.1.json",
     "populationAndSecurity": "Datos operativos/treskal_population_and_security_matrix_v0.1.json",
     "informationAndReputation": "Datos operativos/treskal_information_and_reputation_contract_v0.1.json",
-    "gameplayDiscovery": "Datos operativos/treskal_urban_gameplay_discovery_contract_v0.1.json"
+    "gameplayDiscovery": "Datos operativos/treskal_urban_gameplay_discovery_contract_v0.1.json",
+    "laborHouseholdsVisitors": "Datos operativos/treskal_labor_household_visitor_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -32,7 +33,10 @@
     "A": "npc_activity_anchor",
     "D": "dynamic_city_state",
     "P": "access_class",
-    "K": "npc_knowledge_state"
+    "K": "npc_knowledge_state",
+    "O": "occupation_family",
+    "H": "household_template",
+    "V": "visitor_type"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

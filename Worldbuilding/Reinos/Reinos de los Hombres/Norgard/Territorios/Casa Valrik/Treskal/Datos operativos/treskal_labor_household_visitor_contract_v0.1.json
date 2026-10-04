@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_labor_household_visitor_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "generationOrder": [
+    "urban_function",
+    "required_capacity",
+    "roles",
+    "households",
+    "persons"
+  ],
+  "occupationFamilies": {
+    "O01": "wood_and_furniture",
+    "O02": "civil_fishing_and_maritime",
+    "O03": "transport_and_logistics",
+    "O04": "food_and_market",
+    "O05": "inn_tavern_traveller_service",
+    "O06": "trade_and_merchant_mediation",
+    "O07": "administration_writing_accounts",
+    "O08": "justice_and_urban_guard_function",
+    "O09": "crown_naval_work",
+    "O10": "textile_clothing_leather_footwear",
+    "O11": "metal_tools_repair",
+    "O12": "health_and_care",
+    "O13": "construction_and_urban_maintenance",
+    "O14": "rural_edge_activity"
+  },
+  "occupationPercentagesFixed": false,
+  "householdTemplates": {
+    "H01": "couple_with_descendants",
+    "H02": "multigenerational",
+    "H03": "single_person",
+    "H04": "widowed_with_or_without_descendants",
+    "H05": "adult_relatives_shared_home",
+    "H06": "artisan_household_with_resident_apprentice",
+    "H07": "household_with_resident_worker_or_service_if_justified",
+    "H08": "non_family_shared_household",
+    "H09": "business_or_institution_linked_dwelling"
+  },
+  "visitorTypes": {
+    "V01": "land_merchant",
+    "V02": "rural_visitor",
+    "V03": "civil_sailor_or_crew",
+    "V04": "maritime_merchant",
+    "V05": "minor_house_representative",
+    "V06": "litigant_witness_or_summoned_person",
+    "V07": "temporary_worker",
+    "V08": "institutional_supplier",
+    "V09": "traveller_in_transit"
+  },
+  "visitorResidentSeparationRequired": true,
+  "lodgingOptions": [
+    "inn",
+    "ship",
+    "family_or_friend_household",
+    "employer_or_work_installation",
+    "institution_if_functionally_justified"
+  ],
+  "infiniteInnCapacityForbidden": true,
+  "becomingResidentRequiresWorldStateChange": true,
+  "laborContinuity": {
+    "businessSeparateFromOwner": true,
+    "substituteRolesMayOperateWithinCapability": true,
+    "absenceDoesNotTeleportOwnerToWorkplace": true,
+    "illnessCanReduceOrCloseActivity": true,
+    "deathDoesNotAutomaticallyDeleteBusiness": true,
+    "commissionsPersistAcrossResponsiblePersonChangeUnlessResolved": true
+  },
+  "externalDependencies": {
+    "O08Ranks": "Norgard_military_review",
+    "propertyInheritanceDetails": "Norgard_law_future_detail"
+  }
+}

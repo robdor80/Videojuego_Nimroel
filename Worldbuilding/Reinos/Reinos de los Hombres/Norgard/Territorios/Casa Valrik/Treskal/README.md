@@ -55,6 +55,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_population_and_security_matrix_v0.1.json` — matriz de residencia, actividad, tránsito y seguridad por subzona.
 - `treskal_information_and_reputation_contract_v0.1.json` — conocimiento K0–K5, rumores y reputaciones por red.
 - `treskal_urban_gameplay_discovery_contract_v0.1.json` — descubrimiento, investigación y encargos emergentes.
+- `treskal_labor_household_visitor_contract_v0.1.json` — demanda laboral, hogares y visitantes.
 
 ## Estado del diseño
 
@@ -156,3 +157,9 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 - `descubrimiento_servicios_y_encargos_v0.1.md` — descubrimiento orgánico de lugares, servicios y encargos.
 - `investigacion_urbana_testigos_evidencia_v0.1.md` — testigos, evidencia, contradicciones y conocimiento parcial.
 - `oportunidades_encargos_emergentes_v0.1.md` — oportunidades generadas por necesidades reales del World State.
+
+### 21_Demografia_laboral
+
+- `demanda_laboral_oficios_y_hogares_v0.1.md` — familias O01–O14, capacidad laboral y hogares H01–H09.
+- `visitantes_alojamiento_estancia_v0.1.md` — visitantes V01–V09, alojamiento y transición a residencia.
+- `ciclos_laborales_ausencias_continuidad_v0.1.md` — relevo, ausencias, enfermedad, aprendices y continuidad de negocios.
