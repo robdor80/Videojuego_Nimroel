@@ -663,6 +663,41 @@
         "multigenerational households and family collaboration are common possibilities",
         "all households are not forced into identical family structures or occupations"
       ]
+    },
+    {
+      "id": "not_every_future_statement_is_a_pledge",
+      "expected": [
+        "intent possibility courtesy and negotiation remain distinct from giving one's word",
+        "pledge requires explicit or clearly committed meaning"
+      ]
+    },
+    {
+      "id": "pledge_state_follows_world_facts",
+      "expected": [
+        "claiming fulfillment does not mark pledge fulfilled",
+        "engine validates delivery payment attendance repair or other promised outcome"
+      ]
+    },
+    {
+      "id": "pledge_conditions_and_external_causes_matter",
+      "expected": [
+        "conditional promises are judged using their conditions",
+        "accident illness death route blockage fire or other real causes may produce impossible rather than deliberate breach"
+      ]
+    },
+    {
+      "id": "honor_reputation_requires_information_path",
+      "expected": [
+        "fulfillment or breach affects those who know through participation witnesses reports or rumors",
+        "entire Treskal does not update reputation globally"
+      ]
+    },
+    {
+      "id": "word_of_honor_never_replaces_kings_law",
+      "expected": [
+        "social mediation can resolve noncriminal disputes",
+        "criminal or legally relevant conduct remains subject to King's Law"
+      ]
     }
   ]
 }

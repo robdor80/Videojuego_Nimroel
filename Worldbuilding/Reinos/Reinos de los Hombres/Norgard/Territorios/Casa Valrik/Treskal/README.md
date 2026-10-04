@@ -72,6 +72,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_learning_knowledge_transmission_contract_v0.1.json` — aprendizaje, procedencia del conocimiento y continuidad profesional.
 - `treskal_hospitality_inn_network_contract_v0.1.json` — hospitalidad, red de posadas y estancias persistentes.
 - `treskal_daily_life_family_food_contract_v0.1.json` — ritmos cotidianos, alimentación y redes familiares/vecinales.
+- `treskal_word_of_honor_pledge_contract_v0.1.json` — palabra dada, compromisos y reparación social.
 
 ## Estado del diseño
 
@@ -260,3 +261,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 - `vida_cotidiana_familia_ritmos_v0.1.md` — franjas del día, hogar, niños, ocio y descanso.
 - `alimentacion_abastecimiento_domestico_v0.1.md` — grupos F01–F08 y conexión entre mesa y abastecimiento.
 - `redes_familiares_vecinales_cuidado_v0.1.md` — familia, vecinos, ayuda y relaciones persistentes.
+
+### 38_Honor_y_palabra
+
+- `palabra_dada_compromisos_honor_v0.1.md` — compromisos persistentes, estados y causas de cumplimiento/incumplimiento.
+- `disputas_honor_reparacion_social_v0.1.md` — reparación informal, mediación y convivencia con la Ley del Rey.

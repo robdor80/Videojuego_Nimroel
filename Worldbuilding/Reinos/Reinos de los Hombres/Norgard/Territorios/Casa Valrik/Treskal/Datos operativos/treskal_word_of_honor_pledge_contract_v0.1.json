@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_word_of_honor_pledge_contract",
+  "version": "0.1",
+  "status": "active_canon_contract",
+  "pledgePrefix": "PLEDGE",
+  "pledgeStates": [
+    "offered",
+    "active",
+    "fulfilled",
+    "fulfilled_late",
+    "impossible",
+    "released",
+    "breached",
+    "disputed"
+  ],
+  "minimumFields": [
+    "pledge_id",
+    "promisor_ref",
+    "recipient_ref",
+    "content",
+    "created_time",
+    "deadline_if_any",
+    "conditions_if_any",
+    "witnesses_if_any",
+    "state",
+    "known_by",
+    "outcome",
+    "explanation_if_breached"
+  ],
+  "everyFutureStatementIsPledge": false,
+  "explicitOrClearCommitmentRequired": true,
+  "deadlinesMayBeAbsentOrApproximate": true,
+  "conditionsMustBeRespected": true,
+  "witnessesAffectKnowledgeAndCredibilityNotAutomaticLegality": true,
+  "deliberateBreachCulturallySevere": true,
+  "breachCauseTypes": [
+    "deliberate",
+    "negligent",
+    "inevitable",
+    "ambiguous"
+  ],
+  "externalEventsMayMakePledgeImpossible": true,
+  "claimOfFulfillmentDoesNotChangeActualState": true,
+  "commercialFamilyProfessionalInstitutionalContextsSupported": true,
+  "pledgeDoesNotReplaceKingsLaw": true,
+  "deathDoesNotAutoTransferPledge": true,
+  "informalRepairOptions": [
+    "explanation",
+    "apology",
+    "late_fulfillment",
+    "repair",
+    "return",
+    "favor",
+    "respected_mediator"
+  ],
+  "reputationImpactRequiresKnowledgePath": true,
+  "aiCannotMarkPledgeFulfilledWithoutWorldValidation": true,
+  "externalDependencies": {
+    "legalContractEnforcement": "Norgard_law_and_economic_institutions"
+  }
+}

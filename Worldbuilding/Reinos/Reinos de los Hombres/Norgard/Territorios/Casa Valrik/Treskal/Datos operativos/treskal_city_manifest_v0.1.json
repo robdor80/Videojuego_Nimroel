@@ -34,7 +34,8 @@
     "healthCareNetwork": "Datos operativos/treskal_health_care_network_contract_v0.1.json",
     "learningKnowledgeTransmission": "Datos operativos/treskal_learning_knowledge_transmission_contract_v0.1.json",
     "hospitalityInnNetwork": "Datos operativos/treskal_hospitality_inn_network_contract_v0.1.json",
-    "dailyLifeFamilyFood": "Datos operativos/treskal_daily_life_family_food_contract_v0.1.json"
+    "dailyLifeFamilyFood": "Datos operativos/treskal_daily_life_family_food_contract_v0.1.json",
+    "wordOfHonorPledges": "Datos operativos/treskal_word_of_honor_pledge_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
