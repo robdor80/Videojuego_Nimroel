@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_wayfinding_signage_addressing_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "technicalLocationFields": [
+    "building_id",
+    "entrance_id",
+    "future_parcel_id",
+    "T",
+    "Z",
+    "C",
+    "future_coordinates"
+  ],
+  "humanLocationMethods": [
+    "landmark",
+    "popular_area",
+    "business",
+    "profession",
+    "relative_position",
+    "verbal_route"
+  ],
+  "modernUniversalStreetNumberingAssumed": false,
+  "modernPostalAddressSystemAssumed": false,
+  "directionStructure": [
+    "major_reference",
+    "route_sequence",
+    "minor_reference",
+    "destination"
+  ],
+  "npcDirectionsDependOn": [
+    "knowledge",
+    "familiarity",
+    "explanation_skill",
+    "route_complexity",
+    "recent_world_changes"
+  ],
+  "arbitraryNpcMisdirectionForbidden": true,
+  "playerMapKnowledgeStates": [
+    "approximate_area",
+    "building_located",
+    "entrance_known"
+  ],
+  "signageTypes": {
+    "SG01": "text_sign",
+    "SG02": "trade_symbol",
+    "SG03": "object_sign",
+    "SG04": "institutional_heraldry",
+    "SG05": "operational_signal"
+  },
+  "allBuildingsRequireSigns": false,
+  "allBusinessesRequireProperNames": false,
+  "literacyIndependentWayfindingSupported": true,
+  "institutionalHeraldryContextualOnly": true,
+  "staleSignsRequireWorldCause": true,
+  "visualWayfindingDerivesFromDistrictActivity": true,
+  "weatherAndNightMayReduceVisualWayfinding": true,
+  "engineIdsNeverAutomaticallyExposedAsNpcKnowledge": true
+}

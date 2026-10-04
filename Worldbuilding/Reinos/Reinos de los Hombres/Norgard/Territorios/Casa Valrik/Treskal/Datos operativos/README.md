@@ -40,3 +40,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_hospitality_inn_network_contract_v0.1.json` — hospitalidad urbana, posadas y alojamientos persistentes.
 - `treskal_daily_life_family_food_contract_v0.1.json` — vida cotidiana, alimentos F01–F08 y redes familiares.
 - `treskal_word_of_honor_pledge_contract_v0.1.json` — pledges persistentes, honor Valrik y reparación social.
+- `treskal_wayfinding_signage_addressing_contract_v0.1.json` — landmarks, indicaciones, rótulos SG01–SG05 y localización.

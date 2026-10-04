@@ -698,6 +698,41 @@
         "social mediation can resolve noncriminal disputes",
         "criminal or legally relevant conduct remains subject to King's Law"
       ]
+    },
+    {
+      "id": "engine_location_ids_are_not_human_addresses",
+      "expected": [
+        "NPCs use landmarks areas businesses and relative directions",
+        "technical IDs coordinates and future parcel references are not automatically spoken knowledge"
+      ]
+    },
+    {
+      "id": "treskal_does_not_require_modern_street_numbering",
+      "expected": [
+        "homes and businesses can be located by names landmarks profession and relative position",
+        "future street names may refine rather than replace technical identity"
+      ]
+    },
+    {
+      "id": "npc_directions_respect_knowledge_and_world_changes",
+      "expected": [
+        "directions may be exact approximate incomplete or outdated for causal reasons",
+        "NPCs do not intentionally misdirect at random"
+      ]
+    },
+    {
+      "id": "signage_supports_nonliterate_wayfinding",
+      "expected": [
+        "trade symbols object signs activity and landmarks can identify services without requiring universal literacy",
+        "not every building needs a textual sign"
+      ]
+    },
+    {
+      "id": "map_markers_represent_acquired_location_knowledge",
+      "expected": [
+        "player map may distinguish approximate area building located and entrance known",
+        "unknown locations are not revealed merely because engine knows coordinates"
+      ]
     }
   ]
 }

@@ -73,6 +73,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_hospitality_inn_network_contract_v0.1.json` — hospitalidad, red de posadas y estancias persistentes.
 - `treskal_daily_life_family_food_contract_v0.1.json` — ritmos cotidianos, alimentación y redes familiares/vecinales.
 - `treskal_word_of_honor_pledge_contract_v0.1.json` — palabra dada, compromisos y reparación social.
+- `treskal_wayfinding_signage_addressing_contract_v0.1.json` — orientación humana, rótulos y localización no moderna.
 
 ## Estado del diseño
 
@@ -266,3 +267,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `palabra_dada_compromisos_honor_v0.1.md` — compromisos persistentes, estados y causas de cumplimiento/incumplimiento.
 - `disputas_honor_reparacion_social_v0.1.md` — reparación informal, mediación y convivencia con la Ley del Rey.
+
+### 39_Orientacion_y_senalizacion
+
+- `orientacion_direcciones_no_modernas_v0.1.md` — landmarks, áreas populares, instrucciones verbales y conocimiento de rutas.
+- `rotulos_senales_negocios_v0.1.md` — tipos SG01–SG05 y señalización funcional no moderna.
