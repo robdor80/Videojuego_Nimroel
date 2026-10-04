@@ -60,6 +60,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_housing_social_geography_contract_v0.1.json` — vivienda, presión residencial y geografía social.
 - `treskal_ai_context_and_output_contract_v0.1.json` — percepción, diálogo IA, validación y disciplina de secretos.
 - `treskal_ai_comparative_test_pack_v0.1.json` — 16 fixtures no canónicos para pruebas comparativas de modelos.
+- `treskal_urban_integration_test_pack_v0.1.json` — 12 escenarios no canónicos de regresión urbana integrada.
 - `treskal_materialization_streaming_persistence_contract_v0.1.json` — materialización determinista, LOD lógico y migraciones.
 - `treskal_event_causality_contract_v0.1.json` — ciclo de vida EVT, causalidad y propagación de efectos.
 - `treskal_arrival_departure_travel_contract_v0.1.json` — aproximaciones APP, viaje territorial y transición de LOD.
@@ -224,3 +225,7 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `luz_oscuridad_visibilidad_v0.1.md` — noche por islas de luz funcional, reconocimiento progresivo y clima.
 - `paisaje_sonoro_audicion_v0.1.md` — sonido diegético por actividad, audición y conocimiento derivado.
+
+### 32_Validacion_integrada
+
+- `metodologia_vertical_slice_urbana_v0.1.md` — pruebas de integración entre viaje, economía, NPC, LOD, eventos, acceso y percepción.

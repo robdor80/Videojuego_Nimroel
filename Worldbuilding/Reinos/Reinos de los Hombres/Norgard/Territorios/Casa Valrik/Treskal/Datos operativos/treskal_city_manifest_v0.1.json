@@ -83,6 +83,7 @@
     "currencyAndExactPrices": "Norgard_monetary_and_economic_system"
   },
   "validationFiles": {
-    "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json"
+    "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",
+    "urbanIntegrationTestPack": "Datos operativos/treskal_urban_integration_test_pack_v0.1.json"
   }
 }

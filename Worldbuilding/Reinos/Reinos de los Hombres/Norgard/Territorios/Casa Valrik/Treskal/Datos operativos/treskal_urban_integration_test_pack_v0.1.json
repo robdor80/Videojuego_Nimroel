@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_urban_integration_test_pack",
+  "version": "0.1",
+  "status": "design_integration_test_pack",
+  "canonicalFixtures": false,
+  "tests": [
+    {
+      "testId": "URBAN_TRESKAL_001",
+      "name": "arrival_bridge_to_market_ordinary_morning",
+      "initial": {
+        "approach": "APP01",
+        "dynamicState": "D12",
+        "daypart": "morning",
+        "weather": "stable",
+        "playerRouteKnowledge": "heard_of"
+      },
+      "actions": [
+        "enter_city",
+        "cross_main_bridge",
+        "follow_C01",
+        "reach_L03"
+      ],
+      "required": [
+        "gradual LOD promotion",
+        "no universal gate checkpoint",
+        "traffic shifts from territorial to urban",
+        "market density higher than residential edge",
+        "player route becomes travelled"
+      ],
+      "forbidden": [
+        "city appears fully populated at invisible load line",
+        "Royal Shipyards dominate arrival from APP01"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_002",
+      "name": "workshop_owner_absent_but_business_operates",
+      "initial": {
+        "zone": "Z05",
+        "buildingType": "U02",
+        "occupationFamily": "O01",
+        "ownerPresent": false,
+        "capableWorkerPresent": true,
+        "stockState": "normal"
+      },
+      "actions": [
+        "enter_shop",
+        "ask_for_owner",
+        "buy_common_item",
+        "ask_for_complex_commission"
+      ],
+      "required": [
+        "business may sell compatible common stock",
+        "worker can explain owner absence if known",
+        "complex commission may wait for qualified person"
+      ],
+      "forbidden": [
+        "owner teleports to counter",
+        "worker accepts expertise they do not possess"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_003",
+      "name": "timber_exists_but_is_not_ready_or_free",
+      "initial": {
+        "zone": "Z06",
+        "woodLots": [
+          {
+            "state": "W03",
+            "reservation": null
+          },
+          {
+            "state": "W05",
+            "reservation": "existing_commission"
+          }
+        ]
+      },
+      "actions": [
+        "request_fine_work_material"
+      ],
+      "required": [
+        "W03 cannot be treated as immediately ready fine stock",
+        "reserved W05 is not free commercial stock",
+        "NPC may explain availability problem through real stock state"
+      ],
+      "forbidden": [
+        "spawn new W05 because player can pay",
+        "instant seasoning"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_004",
+      "name": "merchant_ship_arrival_propagates_real_effects",
+      "initial": {
+        "zone": "Z10",
+        "eventArchetype": "D07",
+        "eventState": "triggered",
+        "cargo": "trade_goods",
+        "relevantVisitors": [
+          "V03",
+          "V04"
+        ]
+      },
+      "actions": [
+        "berth",
+        "unload",
+        "transfer_cargo",
+        "crew_enters_port"
+      ],
+      "required": [
+        "cargo becomes destination stock only after transfer",
+        "visible port activity rises",
+        "visitor population rises",
+        "rumor can begin from actual witnesses",
+        "inn demand may rise"
+      ],
+      "forbidden": [
+        "cargo appears in shop before transfer",
+        "whole city instantly knows ship contents"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_005",
+      "name": "night_recognition_and_sound",
+      "initial": {
+        "zone": "Z13",
+        "daypart": "night",
+        "lightState": "dark_night",
+        "ambientSound": "low_residential",
+        "targetNpcFamiliarity": "known"
+      },
+      "actions": [
+        "observe_distant_person",
+        "move_closer_to_local_light",
+        "listen"
+      ],
+      "required": [
+        "presence may be detected before identity",
+        "identity requires sufficient visibility",
+        "sound information is staged by intelligibility"
+      ],
+      "forbidden": [
+        "npc_id becomes visible knowledge at first silhouette",
+        "inaudible conversation is transcribed"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_006",
+      "name": "leave_city_offscreen_progress_return",
+      "initial": {
+        "playerLocation": "Treskal",
+        "activeCommission": true,
+        "businessProductionActive": true,
+        "pendingDeliveryInTransit": true
+      },
+      "actions": [
+        "leave_via_APP01",
+        "advance_world_time",
+        "resolve_offscreen_delivery",
+        "return_via_APP01"
+      ],
+      "required": [
+        "city continues in LOD-L/M",
+        "delivery arrival changes stock only when it actually arrives",
+        "commission may progress",
+        "return reflects elapsed state"
+      ],
+      "forbidden": [
+        "city freezes while player absent",
+        "return resets previous scene"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_007",
+      "name": "timber_yard_fire_causal_chain",
+      "initial": {
+        "zone": "Z06",
+        "combustibleStockPresent": true,
+        "ignitionCause": "validated_local_accident"
+      },
+      "actions": [
+        "trigger_EVT_fire",
+        "apply_response",
+        "resolve_fire",
+        "advance_recovery"
+      ],
+      "required": [
+        "event has cause and spatial scope",
+        "local route/access may change",
+        "stock damage persists",
+        "guard/workers may be reassigned",
+        "knowledge spreads only through witnesses/networks",
+        "repair continues after fire resolved"
+      ],
+      "forbidden": [
+        "all Treskal shuts down automatically",
+        "damaged stock reappears on reload",
+        "entire city instantly knows details"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_008",
+      "name": "rumor_is_not_evidence",
+      "initial": {
+        "zone": "Z04",
+        "rumorState": "K3",
+        "investigationWorldTruth": "different_or_unconfirmed"
+      },
+      "actions": [
+        "ask_innkeeper",
+        "record_rumor",
+        "ask_direct_witness",
+        "compare_accounts"
+      ],
+      "required": [
+        "journal distinguishes rumor from testimony",
+        "npc states source/confidence naturally",
+        "contradiction remains possible"
+      ],
+      "forbidden": [
+        "K3 promoted to confirmed truth automatically",
+        "AI resolves hidden truth without evidence"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_009",
+      "name": "restricted_royal_shipyard_access",
+      "initial": {
+        "approach": "APP06",
+        "accessClass": "P5",
+        "playerAuthorization": false
+      },
+      "actions": [
+        "attempt_entry",
+        "ask_guard_or_authorized_staff"
+      ],
+      "required": [
+        "entry denied or challenged appropriately",
+        "city reputation alone does not grant access",
+        "civil port authority does not override Crown restriction"
+      ],
+      "forbidden": [
+        "free walk from Z10 into T08",
+        "generic positive reputation unlocks P5"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_010",
+      "name": "materialized_npc_survives_lod_cycle",
+      "initial": {
+        "npcTier": "B",
+        "knownIdentity": true,
+        "home": "persistent_home",
+        "job": "persistent_job"
+      },
+      "actions": [
+        "meet_npc",
+        "leave_zone",
+        "degrade_to_low_lod",
+        "advance_time",
+        "return"
+      ],
+      "required": [
+        "same npc_id",
+        "same persistent relationships",
+        "location compatible with elapsed routine",
+        "new memories retained"
+      ],
+      "forbidden": [
+        "reroll appearance identity home or profession",
+        "npc respawns at original encounter point without cause"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_011",
+      "name": "off_story_hidden_object",
+      "initial": {
+        "roomVisible": true,
+        "hiddenObjectExists": true,
+        "perceptionAuthorization": "none"
+      },
+      "actions": [
+        "normal_scene_description",
+        "focused_search_after_engine_resolution"
+      ],
+      "required": [
+        "normal description excludes hidden object",
+        "focused search reveals only engine-authorized facts"
+      ],
+      "forbidden": [
+        "omniscient hint before authorization",
+        "AI decides perception success itself"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_012",
+      "name": "market_pressure_after_supply_delay",
+      "initial": {
+        "commodity": "grain",
+        "marketPressure": "normal",
+        "incomingConvoy": "delayed",
+        "reserveStock": "finite"
+      },
+      "actions": [
+        "advance_time",
+        "consume_stock",
+        "apply_delayed_arrival",
+        "observe_market"
+      ],
+      "required": [
+        "pressure changes only as real stock/demand changes",
+        "price pressure may rise with causal trace",
+        "arrival can later ease pressure"
+      ],
+      "forbidden": [
+        "instant critical scarcity at first delay without stock basis",
+        "prices change due to player level"
+      ]
+    }
+  ],
+  "regressionCriticalFields": [
+    "stable_ids",
+    "world_state_integrity",
+    "stock_causality",
+    "knowledge_limits",
+    "event_causality",
+    "lod_fact_invariance",
+    "access_control",
+    "perception_filter"
+  ]
+}
