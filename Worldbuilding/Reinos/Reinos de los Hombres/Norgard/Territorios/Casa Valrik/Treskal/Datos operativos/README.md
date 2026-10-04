@@ -28,3 +28,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_ai_context_and_output_contract_v0.1.json` — contexto autorizado para narrador/NPC y validación de salida IA.
 - `treskal_ai_comparative_test_pack_v0.1.json` — 16 casos comparativos no canónicos para evaluar modelos IA.
 - `treskal_materialization_streaming_persistence_contract_v0.1.json` — seeds, materialización, streaming, LOD y persistencia.
+- `treskal_event_causality_contract_v0.1.json` — instancias EVT, causalidad y propagación de consecuencias.

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_event_causality_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "eventInstancePrefix": "EVT",
+  "dynamicStateArchetypesReferencedByDIds": true,
+  "lifecycle": [
+    "proposed",
+    "scheduled",
+    "triggered",
+    "active",
+    "resolving",
+    "resolved",
+    "cancelled"
+  ],
+  "eventSources": [
+    "environment",
+    "economic_world_state",
+    "npc_action",
+    "player_action",
+    "authored_story",
+    "consequence_of_event"
+  ],
+  "eventRequiresCause": true,
+  "baselineOrdinaryDayValid": true,
+  "extraordinaryEventQuotaForbidden": true,
+  "minimumPersistentFields": [
+    "event_id",
+    "archetype",
+    "source",
+    "state",
+    "start_time",
+    "location_refs",
+    "actor_refs",
+    "cause_refs",
+    "effect_refs",
+    "visibility_state",
+    "resolution",
+    "persistent_consequences"
+  ],
+  "effectTypes": [
+    "route_modifier",
+    "stock_modifier",
+    "activity_modifier",
+    "access_modifier",
+    "damage",
+    "injury",
+    "schedule_modifier",
+    "reputation_change",
+    "knowledge_seed",
+    "displacement",
+    "business_state_change"
+  ],
+  "applicationOrder": [
+    "resolve_cause",
+    "activate_event",
+    "calculate_direct_effects",
+    "apply_changes",
+    "recalculate_derived_state",
+    "propagate_knowledge",
+    "evaluate_secondary_events"
+  ],
+  "sameEffectMustNotBeDoubleAppliedFromSameEvent": true,
+  "effectsHaveSpatialScope": true,
+  "occurrenceSeparateFromPlayerKnowledge": true,
+  "offscreenProgressionAllowed": true,
+  "authoredEventsUseSameWorldStateConsequences": true,
+  "resolutionDoesNotAutoRestorePersistentConsequences": true,
+  "causalityTraceRequiredForImportantChanges": true
+}

@@ -61,6 +61,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_ai_context_and_output_contract_v0.1.json` — percepción, diálogo IA, validación y disciplina de secretos.
 - `treskal_ai_comparative_test_pack_v0.1.json` — 16 fixtures no canónicos para pruebas comparativas de modelos.
 - `treskal_materialization_streaming_persistence_contract_v0.1.json` — materialización determinista, LOD lógico y migraciones.
+- `treskal_event_causality_contract_v0.1.json` — ciclo de vida EVT, causalidad y propagación de efectos.
 
 ## Estado del diseño
 
@@ -194,3 +195,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 - `materializacion_determinista_seeds_v0.1.md` — ciudad autoral con microdetalle determinista y jerarquía de seeds.
 - `streaming_lod_persistencia_v0.1.md` — LOD lógico, simulación fuera de escena y continuidad.
 - `versionado_migraciones_partidas_v0.1.md` — IDs estables, migraciones y compatibilidad de partidas.
+
+### 27_Eventos_y_causalidad
+
+- `ciclo_vida_eventos_v0.1.md` — instancias EVT, estados de vida y fuentes causales.
+- `propagacion_consecuencias_v0.1.md` — efectos compartidos entre rutas, stock, actividad, conocimiento y NPC.

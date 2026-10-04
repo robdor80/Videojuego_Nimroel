@@ -318,6 +318,39 @@
         "rule updates do not reroll existing materializations",
         "per-save history is preserved across canon migrations"
       ]
+    },
+    {
+      "id": "events_require_real_causes",
+      "expected": [
+        "persistent events have source cause location and affected scope",
+        "system does not spawn incidents merely to maintain entertainment frequency"
+      ]
+    },
+    {
+      "id": "event_occurrence_is_separate_from_knowledge",
+      "expected": [
+        "an event may occur without player or NPC knowledge",
+        "knowledge propagates through witnesses networks or official notice"
+      ]
+    },
+    {
+      "id": "event_effects_are_not_double_applied",
+      "expected": [
+        "shared event_id prevents multiple systems from independently applying the same causal effect twice"
+      ]
+    },
+    {
+      "id": "resolved_event_may_leave_persistent_consequences",
+      "expected": [
+        "ending trigger does not automatically repair damage restore stock heal injury or erase known information"
+      ]
+    },
+    {
+      "id": "important_world_changes_have_causal_trace",
+      "expected": [
+        "system can explain important changes through event or decision ancestry",
+        "player intervention updates same causal chain rather than a separate quest-only state"
+      ]
     }
   ]
 }
