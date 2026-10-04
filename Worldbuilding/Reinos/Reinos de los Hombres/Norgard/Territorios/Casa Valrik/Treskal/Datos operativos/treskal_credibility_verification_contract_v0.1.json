@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_credibility_verification_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "credibilityStates": {
+    "CRED01": "unassessed_claim",
+    "CRED02": "provisionally_credible",
+    "CRED03": "trusted_but_unverified",
+    "CRED04": "uncertain_or_unverified",
+    "CRED05": "doubted_or_suspicious",
+    "CRED06": "corroborated",
+    "CRED07": "contradicted_by_evidence",
+    "CRED08": "resolved_by_direct_confirmation"
+  },
+  "credibilityIsNotTruth": true,
+  "credibilityIsObserverSpecific": true,
+  "sourceReliabilityIsContextual": true,
+  "friendshipDoesNotGuaranteeTruth": true,
+  "lowTrustDoesNotMakeClaimFalse": true,
+  "bodyLanguageIsNotProof": true,
+  "confidenceIsNotProofOfTruth": true,
+  "repetitionDoesNotEqualIndependentCorroboration": true,
+  "corroborationRequiresIndependentOrAdditionalBasis": true,
+  "verificationMethodsMayInclude": [
+    "direct_observation",
+    "independent_witness",
+    "physical_evidence",
+    "document",
+    "professional_or_domain_source",
+    "institutional_notice",
+    "later_event_outcome"
+  ],
+  "verificationRequiresRealAccessAndOpportunity": true,
+  "claimAssessmentCanChangeOverTime": true,
+  "evidenceCanIncreaseOrReduceCredibility": true,
+  "playerClaimsUseSameAssessmentModel": true,
+  "npcCannotReadSTATStateDirectly": true,
+  "npcCannotReadWorldTruthWithoutKnowledgePath": true,
+  "aiMayExpressUncertainty": true,
+  "aiMayRequestVerification": true,
+  "aiCannotDeclareClaimTrueOrFalseWithoutPlausibleBasis": true,
+  "credibilityRecordFields": [
+    "observer_ref",
+    "claim_ref_or_statement_ref",
+    "source_ref",
+    "credibility_state",
+    "basis_refs",
+    "known_provenance_refs",
+    "domain_context_if_any",
+    "last_update_time"
+  ],
+  "verificationEventFields": [
+    "verification_event_id",
+    "observer_ref",
+    "claim_ref",
+    "method",
+    "source_or_evidence_refs",
+    "time_ref",
+    "resulting_credibility_state",
+    "resulting_knowledge_refs_if_any"
+  ]
+}

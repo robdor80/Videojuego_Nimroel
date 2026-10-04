@@ -2308,6 +2308,48 @@
         "later statements can reference earlier relevant claims",
         "AI cannot silently rewrite prior statement history to avoid contradiction"
       ]
+    },
+    {
+      "id": "no_supernatural_lie_detection",
+      "expected": [
+        "NPCs do not read STAT state or speaker intent directly",
+        "behavioral cues may create suspicion but never prove objective truth"
+      ]
+    },
+    {
+      "id": "source_credibility_is_contextual",
+      "expected": [
+        "source reliability may differ by topic role history and expertise",
+        "being trusted socially does not make a person authoritative on every subject"
+      ]
+    },
+    {
+      "id": "repetition_is_not_independent_corroboration",
+      "expected": [
+        "multiple people repeating the same original rumor do not count as independent confirmation",
+        "provenance matters when assessing corroboration"
+      ]
+    },
+    {
+      "id": "trusted_source_can_be_wrong_and_untrusted_source_can_be_right",
+      "expected": [
+        "high trust can raise willingness to believe without guaranteeing truth",
+        "low trust can reduce belief while the underlying claim can still be true"
+      ]
+    },
+    {
+      "id": "evidence_can_override_social_trust",
+      "expected": [
+        "direct evidence or reliable corroboration may change assessment despite prior trust",
+        "relationship strength never replaces evidence or knowledge provenance"
+      ]
+    },
+    {
+      "id": "verification_requires_real_source_or_action",
+      "expected": [
+        "checking a claim requires observation witness evidence document professional source or later outcome",
+        "the engine never upgrades a claim to verified merely because time passed"
+      ]
     }
   ]
 }
