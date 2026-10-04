@@ -1888,6 +1888,48 @@
         "AFF05 or co-residence never generates pregnancy by itself",
         "pregnancy origin must come from a future lifecycle or reproduction event supported by world state"
       ]
+    },
+    {
+      "id": "child_growth_preserves_npc_identity",
+      "expected": [
+        "the same npc_id persists across child development stages",
+        "stage changes never reroll personality memory kinship or materialized identity"
+      ]
+    },
+    {
+      "id": "child_autonomy_is_gradual_not_binary",
+      "expected": [
+        "care supervision mobility and permitted errands change gradually by development and context",
+        "exact numeric ages are not invented before lifecycle canon"
+      ]
+    },
+    {
+      "id": "children_do_not_use_adult_work_model",
+      "expected": [
+        "household contribution and guided practice may occur",
+        "children are not assigned normal adult workload dangerous unsupervised tasks or adult employment by default"
+      ]
+    },
+    {
+      "id": "learning_precedes_and_can_overlap_apprenticeship",
+      "expected": [
+        "ED01 everyday learning begins before formal trade apprenticeship",
+        "APR states activate only when a real mentor context capacity and suitable development support it"
+      ]
+    },
+    {
+      "id": "child_knowledge_and_dialogue_respect_development",
+      "expected": [
+        "child NPC knowledge comes from home peers observation teaching and experience",
+        "AI dialogue does not grant adult vocabulary expertise or knowledge merely for exposition"
+      ]
+    },
+    {
+      "id": "offscreen_growth_requires_time_and_world_state",
+      "expected": [
+        "development advances only through valid lifecycle time progression",
+        "absence of player does not freeze or arbitrarily accelerate a child"
+      ]
     }
   ]
 }

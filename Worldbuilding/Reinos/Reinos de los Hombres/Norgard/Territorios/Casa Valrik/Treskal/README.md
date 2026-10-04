@@ -462,3 +462,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `embarazo_parto_recuperacion_domestica_v0.1.md` — estados PREG01–PREG06, privacidad, trabajo, asistencia y resolución del parto.
 - `nacimiento_recien_nacido_primera_infancia_v0.1.md` — creación de NPC persistente, hogar, DEP01/CARE y efectos sobre la vida cotidiana.
+
+### 72_Desarrollo_infantil_y_transicion_juvenil
+
+- `desarrollo_infantil_autonomia_supervision_v0.1.md` — estados CHD01–CHD06, movilidad, cuidado, pares y crecimiento persistente.
+- `juego_tareas_aprendizaje_transicion_v0.1.md` — ED/CHORE/LEIS, exposición a oficios y entrada gradual en APR.
