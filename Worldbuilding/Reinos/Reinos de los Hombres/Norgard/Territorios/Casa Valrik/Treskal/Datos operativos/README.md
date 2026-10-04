@@ -48,3 +48,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_daily_market_stall_contract_v0.1.json` — ciclo de puestos, tipos MK01–MK05 y LOD de mercado.
 - `treskal_business_lifecycle_contract_v0.1.json` — negocio ≠ edificio ≠ propietario y estados BIZ01–BIZ08.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, materiales reservados, calidad y procedencia.
+- `treskal_hygiene_laundry_domestic_water_contract_v0.1.json` — aseo, lavado, agua doméstica y pátina/suciedad contextual.

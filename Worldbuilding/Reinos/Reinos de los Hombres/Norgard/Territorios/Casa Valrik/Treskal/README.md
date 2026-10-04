@@ -80,6 +80,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_wear_maintenance_repair_contract_v0.1.json` — desgaste, obras y reparación persistente.
 - `treskal_daily_market_stall_contract_v0.1.json` — mercados diarios, puestos y vendedores MK01–MK05.
 - `treskal_business_lifecycle_contract_v0.1.json` — ciclo de vida BIZ01–BIZ08 y continuidad empresarial.
+- `treskal_hygiene_laundry_domestic_water_contract_v0.1.json` — aseo, colada, agua doméstica y estado visual.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -314,3 +315,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `encargos_produccion_por_encargo_v0.1.md` — estados COM01–COM12, materiales, plazos y entrega.
 - `calidad_errores_procedencia_piezas_v0.1.md` — calidad por proceso, errores causales y procedencia persistente.
+
+### 46_Aseo_y_lavado
+
+- `aseo_lavado_uso_domestico_agua_v0.1.md` — higiene preindustrial, transporte de agua, lavado y secado.
+- `limpieza_colada_estado_visual_v0.1.md` — pátina, suciedad contextual, humedad y persistencia visual.

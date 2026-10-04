@@ -978,6 +978,41 @@
         "death closure relocation or shortage causes transfer delay cancellation or failure resolution",
         "commission is not silently deleted"
       ]
+    },
+    {
+      "id": "norgard_dirt_requires_context",
+      "expected": [
+        "visible dirt follows activity climate terrain travel and recent hygiene opportunity",
+        "generic medieval dirt is not added simply because setting is preindustrial"
+      ]
+    },
+    {
+      "id": "body_cleanliness_and_clothing_condition_are_separate",
+      "expected": [
+        "NPC may be personally clean while work clothing remains stained worn or patched",
+        "washing body does not reset clothing patina"
+      ]
+    },
+    {
+      "id": "household_water_requires_physical_access",
+      "expected": [
+        "homes without private source obtain water from real wells fountains captures or other valid points",
+        "water does not appear automatically inside dwelling"
+      ]
+    },
+    {
+      "id": "laundry_respects_water_and_weather",
+      "expected": [
+        "washing uses compatible water and drying requires time ventilation and weather",
+        "clothes do not become instantly clean and dry when NPC changes LOD"
+      ]
+    },
+    {
+      "id": "visual_state_tracks_recent_life",
+      "expected": [
+        "persistent NPC presentation can reflect recent activity hygiene opportunity clothing change wetness and repair",
+        "worker appearance can improve after rest and washing when conditions allow"
+      ]
     }
   ]
 }
