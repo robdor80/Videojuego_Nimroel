@@ -1153,6 +1153,41 @@
         "fire flood damage or household crisis may create RES05 displacement",
         "temporary lodging or available housing must be found through actual capacity"
       ]
+    },
+    {
+      "id": "new_buildings_require_physical_construction",
+      "expected": [
+        "compatible site materials labor time access and functional cause are required",
+        "residential or commercial pressure cannot spawn instant finished buildings"
+      ]
+    },
+    {
+      "id": "building_identity_survives_compatible_change",
+      "expected": [
+        "subdivision extension repair or change of use may preserve building_id when same structure remains",
+        "seed never rerolls materialized building"
+      ]
+    },
+    {
+      "id": "empty_or_closed_building_is_not_public_property",
+      "expected": [
+        "vacancy does not imply abandonment ownerlessness or free access",
+        "property and access remain separate from occupancy"
+      ]
+    },
+    {
+      "id": "construction_affects_city_while_active",
+      "expected": [
+        "materials workers noise access occupation and route cost reflect active project state",
+        "building does not visually appear complete before BUILD07"
+      ]
+    },
+    {
+      "id": "per_save_urban_change_does_not_rewrite_macrocanon",
+      "expected": [
+        "ordinary construction can accumulate history inside T/Z/C structure",
+        "major landmarks and authored macro elements require explicit design migration"
+      ]
     }
   ]
 }

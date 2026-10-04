@@ -48,7 +48,8 @@
     "fuelCookingHeat": "Datos operativos/treskal_fuel_cooking_heat_contract_v0.1.json",
     "doorsLocksKeysAccess": "Datos operativos/treskal_doors_locks_keys_access_contract_v0.1.json",
     "employmentJobsVacancies": "Datos operativos/treskal_employment_jobs_vacancies_contract_v0.1.json",
-    "residencyHouseholdMobility": "Datos operativos/treskal_residency_household_mobility_contract_v0.1.json"
+    "residencyHouseholdMobility": "Datos operativos/treskal_residency_household_mobility_contract_v0.1.json",
+    "constructionBuildingChange": "Datos operativos/treskal_construction_building_change_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -81,7 +82,8 @@
     "DOOR": "physical_access_state",
     "EMP": "employment_state",
     "RES": "resident_state",
-    "MOVE": "move_state"
+    "MOVE": "move_state",
+    "BUILD": "construction_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

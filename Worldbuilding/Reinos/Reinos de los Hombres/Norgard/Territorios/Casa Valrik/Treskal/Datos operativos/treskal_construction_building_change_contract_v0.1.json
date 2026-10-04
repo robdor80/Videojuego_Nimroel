@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_construction_building_change_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "buildStates": {
+    "BUILD01": "proposed",
+    "BUILD02": "preparing_site",
+    "BUILD03": "foundations_or_initial_structure",
+    "BUILD04": "structural_work",
+    "BUILD05": "enclosure_and_services",
+    "BUILD06": "fit_out",
+    "BUILD07": "usable",
+    "BUILD08": "paused",
+    "BUILD09": "cancelled",
+    "BUILD10": "demolition_or_clearance"
+  },
+  "projectFields": [
+    "project_id",
+    "site_ref",
+    "target_building_id_if_existing",
+    "target_type_U",
+    "purpose",
+    "state",
+    "material_requirements",
+    "reserved_materials",
+    "worker_refs",
+    "transport_requirements",
+    "access_effects",
+    "progress",
+    "start_time",
+    "completion_time_if_known"
+  ],
+  "newBuildingRequires": [
+    "compatible_site",
+    "materials",
+    "labor",
+    "time",
+    "access",
+    "functional_reason"
+  ],
+  "completedNewBuildingGetsPersistentBuildingId": true,
+  "seedNeverOverridesMaterializedBuilding": true,
+  "extensionRequiresStructuralAndSpatialCompatibility": true,
+  "subdivisionMayChangeUnitsWithoutChangingBuildingId": true,
+  "changeOfUseMayRequireAdaptation": true,
+  "emptyBuildingDoesNotMeanOwnerlessOrPublic": true,
+  "demolitionMayRecoverMaterials": true,
+  "reconstructionNotAutomatic": true,
+  "residentialPressureMayDriveChangeButCannotBypassPhysicalLimits": true,
+  "macroUrbanIdsProtected": [
+    "T",
+    "Z",
+    "L",
+    "S",
+    "C"
+  ],
+  "singularFacilitiesProceduralAlterationForbidden": true,
+  "offscreenProgressRequiresValidResourcesAndAccess": true,
+  "saveLoadPreservesConstructionProgress": true,
+  "perSaveUrbanChangeDistinctFromGlobalCanon": true,
+  "externalDependencies": {
+    "constructionAuthorizationAndPropertyLaw": "Norgard_law_and_economic_institutions",
+    "exactBuildingGeometry": "metric_city_plan",
+    "exactConstructionDurations": "future_Nimroel_time_and_building_system"
+  }
+}
