@@ -63,6 +63,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_materialization_streaming_persistence_contract_v0.1.json` — materialización determinista, LOD lógico y migraciones.
 - `treskal_event_causality_contract_v0.1.json` — ciclo de vida EVT, causalidad y propagación de efectos.
 - `treskal_arrival_departure_travel_contract_v0.1.json` — aproximaciones APP, viaje territorial y transición de LOD.
+- `treskal_consumption_restock_price_pressure_contract_v0.1.json` — consumo agregado, reposición y presión de mercado.
 
 ## Estado del diseño
 
@@ -206,3 +207,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `entradas_salidas_transicion_territorio_ciudad_v0.1.md` — aproximaciones APP01–APP06 y transición gradual sin muralla.
 - `continuidad_viaje_aprendizaje_rutas_v0.1.md` — conocimiento de rutas, viajes NPC y mercancía en tránsito.
+
+### 29_Economia_simulada
+
+- `consumo_reposicion_circulacion_v0.1.md` — ciclo entrada/producción → stock → uso/venta → consumo/pérdida → reposición.
+- `formacion_precios_presion_mercado_v0.1.md` — presión cualitativa de mercado sin fijar moneda ni cifras.

@@ -26,7 +26,8 @@
     "aiContextAndOutput": "Datos operativos/treskal_ai_context_and_output_contract_v0.1.json",
     "materializationStreamingPersistence": "Datos operativos/treskal_materialization_streaming_persistence_contract_v0.1.json",
     "eventCausality": "Datos operativos/treskal_event_causality_contract_v0.1.json",
-    "arrivalDepartureTravel": "Datos operativos/treskal_arrival_departure_travel_contract_v0.1.json"
+    "arrivalDepartureTravel": "Datos operativos/treskal_arrival_departure_travel_contract_v0.1.json",
+    "consumptionRestockPricePressure": "Datos operativos/treskal_consumption_restock_price_pressure_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -75,7 +76,8 @@
     "specializedMarketFineCalendar": "Norgard_calendar_and_local_market_schedule_detail",
     "exactMetricGeometry": "future_Treskal_detailed_cartography",
     "portTaxesCustoms": "Norgard_fiscal_and_legal_system",
-    "ownershipInheritanceRentalLaw": "Norgard_law_and_economic_institutions"
+    "ownershipInheritanceRentalLaw": "Norgard_law_and_economic_institutions",
+    "currencyAndExactPrices": "Norgard_monetary_and_economic_system"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json"

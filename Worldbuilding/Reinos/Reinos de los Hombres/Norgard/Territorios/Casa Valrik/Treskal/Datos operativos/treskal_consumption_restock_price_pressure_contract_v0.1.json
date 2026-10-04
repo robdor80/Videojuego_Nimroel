@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_consumption_restock_price_pressure_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "demandSources": [
+    "households",
+    "businesses",
+    "inns_taverns",
+    "port",
+    "institutions",
+    "visitors"
+  ],
+  "stockLayers": [
+    "city_stock",
+    "logistic_stock",
+    "commercial_stock",
+    "reserved_stock",
+    "in_transit_stock"
+  ],
+  "replenishmentSources": [
+    "local_production",
+    "rural_delivery",
+    "convoy",
+    "ship",
+    "warehouse_transfer",
+    "manufacture",
+    "return"
+  ],
+  "significantRestockRequiresCause": true,
+  "productionInputs": [
+    "workers",
+    "raw_materials",
+    "tools",
+    "time",
+    "capacity",
+    "business_state"
+  ],
+  "offscreenAggregateResolutionAllowed": true,
+  "individualTrackingReservedFor": [
+    "unique_object",
+    "commission",
+    "evidence",
+    "valuable_cargo",
+    "quest_relevant",
+    "specific_property"
+  ],
+  "marketPressureStates": [
+    "abundant",
+    "normal",
+    "strained",
+    "scarce",
+    "critical"
+  ],
+  "priceDrivers": [
+    "material",
+    "labor",
+    "difficulty",
+    "quality",
+    "volume",
+    "transport",
+    "normal_availability",
+    "current_pressure",
+    "relationship_context"
+  ],
+  "levelScalingPriceForbidden": true,
+  "stockZeroCannotBeOverriddenByPlayerWealth": true,
+  "contractsMayLockAgreedPrice": true,
+  "extremeMinuteToMinuteVolatilityWithoutCauseForbidden": true,
+  "currencyAmounts": "external_dependency",
+  "externalDependencies": {
+    "currencyAndExactPrices": "Norgard_monetary_and_economic_system"
+  }
+}

@@ -384,6 +384,41 @@
       "expected": [
         "convoy or vessel cargo becomes destination stock only upon actual arrival and transfer"
       ]
+    },
+    {
+      "id": "stock_replenishment_requires_real_source",
+      "expected": [
+        "significant stock appears only through production delivery convoy ship transfer manufacture or return",
+        "shops do not refill because player reopened interface"
+      ]
+    },
+    {
+      "id": "stock_layers_are_separate",
+      "expected": [
+        "city logistic commercial reserved and in-transit stock remain distinct",
+        "cargo in transit or reserved is not automatically purchasable"
+      ]
+    },
+    {
+      "id": "price_pressure_has_causal_drivers",
+      "expected": [
+        "price pressure responds to material labor transport stock demand quality and relationship context",
+        "player level never directly scales prices"
+      ]
+    },
+    {
+      "id": "zero_stock_remains_zero",
+      "expected": [
+        "player wealth cannot purchase nonexistent physical stock",
+        "scarcity may mean unavailable rather than merely expensive"
+      ]
+    },
+    {
+      "id": "economy_has_inertia",
+      "expected": [
+        "prices and availability do not oscillate sharply without causal changes",
+        "contracts and agreed prices remain meaningful over time"
+      ]
     }
   ]
 }
