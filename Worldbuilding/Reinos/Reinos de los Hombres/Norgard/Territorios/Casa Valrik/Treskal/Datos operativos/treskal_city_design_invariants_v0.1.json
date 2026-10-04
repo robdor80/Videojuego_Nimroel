@@ -1573,6 +1573,41 @@
         "offscreen conversation can seed knowledge only for actual participants/listeners with valid exposure",
         "LOD never broadcasts dialogue globally"
       ]
+    },
+    {
+      "id": "player_has_no_metaphysical_service_priority",
+      "expected": [
+        "opening dialogue or UI does not pause customers or free provider",
+        "player waits under same capacity logic unless context grants legitimate priority"
+      ]
+    },
+    {
+      "id": "service_order_is_contextual_not_universal_fifo",
+      "expected": [
+        "arrival order may be common but urgency prior commitments service type and legitimate authority can alter it",
+        "no modern ticket queue is assumed"
+      ]
+    },
+    {
+      "id": "open_provider_can_still_lack_capacity",
+      "expected": [
+        "present workers stations materials space REST EMP BIZ and events determine effective service capacity",
+        "open sign alone does not guarantee immediate attention"
+      ]
+    },
+    {
+      "id": "waiting_request_persists_until_real_resolution",
+      "expected": [
+        "deferred or acknowledged request survives LOD/save when relevant",
+        "returning to provider does not reset queue state"
+      ]
+    },
+    {
+      "id": "waiting_time_does_not_auto_create_reputation_penalty",
+      "expected": [
+        "reputation effect needs broken commitment unfair treatment poor management or propagated interpretation",
+        "mere finite capacity is not misconduct"
+      ]
     }
   ]
 }

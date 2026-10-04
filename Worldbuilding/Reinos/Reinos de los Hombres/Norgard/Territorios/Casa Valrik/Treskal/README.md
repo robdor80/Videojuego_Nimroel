@@ -97,6 +97,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_sanitation_waste_cycle_contract_v0.1.json` — saneamiento, letrinas, residuos y retirada urbana.
 - `treskal_death_mourning_funeral_contract_v0.1.json` — muerte, cremación, cenizas y continuidad social.
 - `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — privacidad, audición parcial y conversaciones.
+- `treskal_waiting_service_capacity_contract_v0.1.json` — espera, colas y capacidad efectiva de atención.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -416,3 +417,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `privacidad_conversaciones_escucha_v0.1.md` — contextos CONV, modos VOICE y privacidad basada en espacio/acústica.
 - `audicion_parcial_testigos_filtracion_v0.1.md` — resultados HEAR00–HEAR05, testigos y filtración de información.
+
+### 64_Esperas_y_capacidad
+
+- `espera_colas_capacidad_atencion_v0.1.md` — estados WAIT01–WAIT08 y prioridades no universales.
+- `solicitudes_capacidad_efectiva_v0.1.md` — solicitudes persistentes y capacidad derivada de personas/recursos.

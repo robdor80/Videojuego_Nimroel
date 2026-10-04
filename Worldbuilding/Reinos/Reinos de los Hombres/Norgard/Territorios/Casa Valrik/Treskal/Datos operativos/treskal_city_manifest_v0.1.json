@@ -60,7 +60,8 @@
     "fireResponsePropagation": "Datos operativos/treskal_fire_response_propagation_contract_v0.1.json",
     "sanitationWasteCycle": "Datos operativos/treskal_sanitation_waste_cycle_contract_v0.1.json",
     "deathMourningFuneral": "Datos operativos/treskal_death_mourning_funeral_contract_v0.1.json",
-    "conversationPrivacyEavesdropping": "Datos operativos/treskal_conversation_privacy_eavesdropping_contract_v0.1.json"
+    "conversationPrivacyEavesdropping": "Datos operativos/treskal_conversation_privacy_eavesdropping_contract_v0.1.json",
+    "waitingServiceCapacity": "Datos operativos/treskal_waiting_service_capacity_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -111,7 +112,8 @@
     "ASH": "ashes_destination",
     "CONV": "conversation_privacy_context",
     "VOICE": "speech_projection_mode",
-    "HEAR": "hearing_exposure_result"
+    "HEAR": "hearing_exposure_result",
+    "WAIT": "service_wait_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
