@@ -1503,6 +1503,41 @@
         "problematic accumulation may raise odor insects obstruction and future health pressure",
         "actual disease outcomes remain under health system"
       ]
+    },
+    {
+      "id": "norgard_funeral_is_nonreligious_cremation",
+      "expected": [
+        "deceased are cremated in pyre and ashes returned to territory",
+        "no priest temple chapel or normal grave cemetery is generated"
+      ]
+    },
+    {
+      "id": "death_is_persistent_before_social_knowledge",
+      "expected": [
+        "NPC may be dead while distant family employer or contacts still do not know",
+        "knowledge propagates by witnesses discovery messages authority or rumor"
+      ]
+    },
+    {
+      "id": "funeral_completion_does_not_erase_open_world_consequences",
+      "expected": [
+        "employment household business commissions pledges property and memories resolve through their own systems",
+        "MORT07 does not reset them"
+      ]
+    },
+    {
+      "id": "sea_ashes_are_optional_treskal_variant",
+      "expected": [
+        "ASH04 requires clear life connection with sea and compatible family decision",
+        "mariner or fisher status alone does not force sea return"
+      ]
+    },
+    {
+      "id": "death_never_auto_transfers_property_or_clones_npc",
+      "expected": [
+        "objects keep ownership until inheritance/transfer system resolves them",
+        "dead NPC is not replaced by equivalent generated character"
+      ]
     }
   ]
 }

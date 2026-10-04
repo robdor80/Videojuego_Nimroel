@@ -58,7 +58,8 @@
     "workHazardsAccidents": "Datos operativos/treskal_work_hazards_accidents_contract_v0.1.json",
     "restSleepAvailability": "Datos operativos/treskal_rest_sleep_availability_contract_v0.1.json",
     "fireResponsePropagation": "Datos operativos/treskal_fire_response_propagation_contract_v0.1.json",
-    "sanitationWasteCycle": "Datos operativos/treskal_sanitation_waste_cycle_contract_v0.1.json"
+    "sanitationWasteCycle": "Datos operativos/treskal_sanitation_waste_cycle_contract_v0.1.json",
+    "deathMourningFuneral": "Datos operativos/treskal_death_mourning_funeral_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -104,7 +105,9 @@
     "REST": "rest_state",
     "FIRE": "fire_state",
     "WASTE": "waste_type",
-    "WST": "waste_state"
+    "WST": "waste_state",
+    "MORT": "funeral_state",
+    "ASH": "ashes_destination"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

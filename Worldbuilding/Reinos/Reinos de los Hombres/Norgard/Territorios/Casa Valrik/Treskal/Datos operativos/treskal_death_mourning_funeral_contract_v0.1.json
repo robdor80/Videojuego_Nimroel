@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_death_mourning_funeral_contract",
+  "version": "0.1",
+  "status": "active_canon_contract",
+  "religiousFuneralElementsForbidden": true,
+  "burialCemeteryAsNormalNorgardPracticeForbidden": true,
+  "cremationMandatoryNorgardTradition": true,
+  "mortStates": {
+    "MORT01": "deceased_in_place",
+    "MORT02": "under_custody",
+    "MORT03": "awaiting_cremation",
+    "MORT04": "cremation_prepared",
+    "MORT05": "cremated",
+    "MORT06": "ashes_in_custody",
+    "MORT07": "returned_to_territory",
+    "MORT08": "unresolved_or_interrupted"
+  },
+  "ashesDestinations": {
+    "ASH01": "family_land",
+    "ASH02": "personally_linked_territory",
+    "ASH03": "communal_return_ground",
+    "ASH04": "sea_return",
+    "ASH05": "pending"
+  },
+  "deathFactPersistent": true,
+  "deathKnowledgeNotGlobal": true,
+  "remainsPersistUntilResolved": true,
+  "universalFuneralProfessionAssumed": false,
+  "cremationRequires": [
+    "peripheral_site",
+    "pyre_material",
+    "transport",
+    "time",
+    "people"
+  ],
+  "seaReturnOptionalAndRequiresClearLifeConnection": true,
+  "nobilitySharesSameCremationPrinciple": true,
+  "universalMourningDurationDefined": false,
+  "mandatoryMourningClothingDefined": false,
+  "deathMayAffect": [
+    "household",
+    "employment",
+    "business",
+    "commissions",
+    "pledges",
+    "residency",
+    "relationships",
+    "memory"
+  ],
+  "deathDoesNotTransferPropertyAutomatically": true,
+  "deadNpcNeverReplacedByEquivalentClone": true,
+  "funeralRecordFields": [
+    "death_ref",
+    "deceased_npc_ref",
+    "remains_location_ref",
+    "custody_ref",
+    "mort_state",
+    "cremation_site_ref_if_known",
+    "ashes_destination_type",
+    "ashes_destination_ref_if_known",
+    "family_or_responsible_refs",
+    "known_by",
+    "related_event_refs"
+  ],
+  "completedFuneralDoesNotEraseSocialMemory": true,
+  "externalDependencies": {
+    "inheritanceAndGuardianship": "Norgard_law_and_economic_institutions",
+    "exactMourningCustomsIfAny": "future_Norgard_mourning_detail",
+    "exactPeripheralFuneralSiteGeometry": "metric_city_plan"
+  }
+}

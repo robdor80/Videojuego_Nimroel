@@ -95,6 +95,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_rest_sleep_availability_contract_v0.1.json` — sueño, descanso y disponibilidad de NPC.
 - `treskal_fire_response_propagation_contract_v0.1.json` — incendios, propagación, evacuación y secuelas.
 - `treskal_sanitation_waste_cycle_contract_v0.1.json` — saneamiento, letrinas, residuos y retirada urbana.
+- `treskal_death_mourning_funeral_contract_v0.1.json` — muerte, cremación, cenizas y continuidad social.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -404,3 +405,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `residuos_letrinas_limpieza_urbana_v0.1.md` — tipos WASTE01–WASTE08, letrinas, pozos negros y limpieza.
 - `ciclo_residuos_recogida_destino_v0.1.md` — estados WST01–WST07, recogida, transporte y reutilización.
+
+### 62_Muerte_duelo_y_funeral
+
+- `muerte_duelo_continuidad_social_v0.1.md` — estados MORT01–MORT08 y consecuencias sociales de una muerte.
+- `cremacion_cenizas_memoria_urbana_v0.1.md` — destinos ASH01–ASH05 y aplicación urbana del canon funerario norgardiano.
