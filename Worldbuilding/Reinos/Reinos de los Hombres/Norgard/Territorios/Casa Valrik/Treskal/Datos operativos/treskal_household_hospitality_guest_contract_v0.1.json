@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_household_hospitality_guest_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "hospitalityStates": {
+    "HOSP01": "invited_visit",
+    "HOSP02": "welcomed_present",
+    "HOSP03": "shared_meal",
+    "HOSP04": "overnight_guest",
+    "HOSP05": "extended_guest",
+    "HOSP06": "invitation_ended",
+    "HOSP07": "unwelcome_or_revoked"
+  },
+  "hospitalityIsTemporarySocialPermission": true,
+  "hospitalityDoesNotTransfer": [
+    "ownership",
+    "household_membership",
+    "residency",
+    "permanent_access"
+  ],
+  "invitationMayLimitAreasAndActivities": true,
+  "socialPermissionDistinctFromPhysicalDoorState": true,
+  "sharedMealConsumesRealHouseholdStock": true,
+  "overnightGuestRequiresRealSleepingCapacity": true,
+  "extendedGuestDoesNotAutoBecomeResident": true,
+  "guestObjectsPreserveOwnership": true,
+  "householdMayHoldGuestObjectsInTemporaryCustody": true,
+  "guestDoesNotGainPrivateConversationKnowledgeAutomatically": true,
+  "mourningVisitsSupportedWithoutMakingHomePublic": true,
+  "visitRefusalDoesNotAutomaticallyMeanHostility": true,
+  "openInvitationStillRevocable": true,
+  "homeWorkshopMayGrantDifferentDomesticAndWorkAreaAccess": true,
+  "aiInvitationRequiresHostAuthorityAndEngineValidation": true,
+  "hospitalityRecordFields": [
+    "hospitality_id",
+    "guest_ref",
+    "host_refs",
+    "household_ref",
+    "location_ref",
+    "hosp_state",
+    "allowed_areas",
+    "start_time",
+    "expected_end_if_any",
+    "overnight_allowed",
+    "object_custody_refs",
+    "revocation_reason_if_any"
+  ],
+  "permissionMustExpireWhenHospitalityEnds": true,
+  "residencyTransitionRequiresExplicitResidencyWorldStateChange": true,
+  "guestMayIncreaseHouseholdConsumption": [
+    "food",
+    "water",
+    "fuel",
+    "space",
+    "domestic_load"
+  ],
+  "relevantHospitalityPersistsAcrossSaveLoad": true,
+  "externalDependencies": {
+    "trespassConsequences": "Norgard_law_and_economic_institutions",
+    "exactHouseholdSleepingLayouts": "future_Treskal_interior_layout_system"
+  }
+}

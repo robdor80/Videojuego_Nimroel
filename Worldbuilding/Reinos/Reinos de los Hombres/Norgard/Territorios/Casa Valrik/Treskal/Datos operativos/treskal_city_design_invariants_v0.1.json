@@ -1671,6 +1671,41 @@
         "primary and secondary carers support network and coverage survive save/load and materialization",
         "AI cannot ignore high dependency simply to make NPC available"
       ]
+    },
+    {
+      "id": "hospitality_grants_temporary_not_permanent_access",
+      "expected": [
+        "guest may enter allowed household spaces for visit or stay",
+        "invitation does not transfer ownership residency household membership or permanent access"
+      ]
+    },
+    {
+      "id": "guest_access_can_be_area_scoped",
+      "expected": [
+        "host may allow common room meal or assigned sleeping area while workshop storage or private rooms remain restricted",
+        "building-wide access is not inferred"
+      ]
+    },
+    {
+      "id": "overnight_guest_requires_real_capacity",
+      "expected": [
+        "HOSP04 consumes actual sleeping space food water fuel and domestic load",
+        "guest accommodation does not create a new room or bed"
+      ]
+    },
+    {
+      "id": "extended_guest_does_not_auto_become_resident",
+      "expected": [
+        "several days or nights of HOSP05 remain temporary",
+        "RES transition requires explicit household home and residency state change"
+      ]
+    },
+    {
+      "id": "mourning_hospitality_does_not_make_home_public",
+      "expected": [
+        "luto may increase family neighbor and friend visits",
+        "P3 residence still retains access boundaries and privacy"
+      ]
     }
   ]
 }

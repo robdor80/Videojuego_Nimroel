@@ -99,6 +99,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — privacidad, audición parcial y conversaciones.
 - `treskal_waiting_service_capacity_contract_v0.1.json` — espera, colas y capacidad efectiva de atención.
 - `treskal_dependents_care_network_contract_v0.1.json` — cuidados, dependientes y red doméstica de apoyo.
+- `treskal_household_hospitality_guest_contract_v0.1.json` — hospitalidad, visitas y permisos temporales de huésped.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -428,3 +429,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `cuidado_ninos_ancianos_dependientes_v0.1.md` — tipos DEP01–DEP05 y estados CARE01–CARE07.
 - `red_cuidados_disponibilidad_domestica_v0.1.md` — red de cuidadores, relevos y efecto sobre rutina/empleo.
+
+### 66_Hospitalidad_y_visitas
+
+- `hospitalidad_domestica_visitas_invitados_v0.1.md` — estados HOSP01–HOSP07 y hospitalidad temporal.
+- `permisos_temporales_huesped_v0.1.md` — alcance, caducidad, consumo y relación con residencia/acceso.
