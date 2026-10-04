@@ -282,6 +282,42 @@
         "provider comparisons preserve scene NPC memory knowledge secrets and player prompt",
         "evaluation can compare personality subtext memory limited knowledge and secret discipline"
       ]
+    },
+    {
+      "id": "treskal_macro_city_is_authored_not_procedural",
+      "expected": [
+        "T Z L S C and canonical major facilities are never procedurally replaced",
+        "deterministic generation is limited to compatible microdetail"
+      ]
+    },
+    {
+      "id": "materialized_entities_never_reroll",
+      "expected": [
+        "once a building household NPC business or interior is materialized it keeps persistent identity",
+        "seed no longer overrides stored state"
+      ]
+    },
+    {
+      "id": "lod_changes_resolution_not_facts",
+      "expected": [
+        "identity ownership death damage inventory commitments and travel remain invariant across logical LOD",
+        "offscreen simplification preserves causal history"
+      ]
+    },
+    {
+      "id": "save_load_never_regenerates_treskal",
+      "expected": [
+        "loading restores World State before scene materialization",
+        "city is not rebuilt from seed as if new"
+      ]
+    },
+    {
+      "id": "structural_updates_require_migration",
+      "expected": [
+        "stable IDs are not reused for different meanings",
+        "rule updates do not reroll existing materializations",
+        "per-save history is preserved across canon migrations"
+      ]
     }
   ]
 }

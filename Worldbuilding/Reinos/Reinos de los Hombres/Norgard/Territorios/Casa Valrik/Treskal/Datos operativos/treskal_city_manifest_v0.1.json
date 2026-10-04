@@ -23,7 +23,8 @@
     "laborHouseholdsVisitors": "Datos operativos/treskal_labor_household_visitor_contract_v0.1.json",
     "civilPortAndStorage": "Datos operativos/treskal_civil_port_and_storage_contract_v0.1.json",
     "housingSocialGeography": "Datos operativos/treskal_housing_social_geography_contract_v0.1.json",
-    "aiContextAndOutput": "Datos operativos/treskal_ai_context_and_output_contract_v0.1.json"
+    "aiContextAndOutput": "Datos operativos/treskal_ai_context_and_output_contract_v0.1.json",
+    "materializationStreamingPersistence": "Datos operativos/treskal_materialization_streaming_persistence_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",

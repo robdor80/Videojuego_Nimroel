@@ -60,6 +60,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_housing_social_geography_contract_v0.1.json` — vivienda, presión residencial y geografía social.
 - `treskal_ai_context_and_output_contract_v0.1.json` — percepción, diálogo IA, validación y disciplina de secretos.
 - `treskal_ai_comparative_test_pack_v0.1.json` — 16 fixtures no canónicos para pruebas comparativas de modelos.
+- `treskal_materialization_streaming_persistence_contract_v0.1.json` — materialización determinista, LOD lógico y migraciones.
 
 ## Estado del diseño
 
@@ -187,3 +188,9 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 ### 25_Pruebas_IA
 
 - `metodologia_bateria_comparativa_v0.1.md` — metodología común para comparar OpenAI, Gemini y Mistral sin alterar el contexto semántico.
+
+### 26_Materializacion_y_runtime
+
+- `materializacion_determinista_seeds_v0.1.md` — ciudad autoral con microdetalle determinista y jerarquía de seeds.
+- `streaming_lod_persistencia_v0.1.md` — LOD lógico, simulación fuera de escena y continuidad.
+- `versionado_migraciones_partidas_v0.1.md` — IDs estables, migraciones y compatibilidad de partidas.

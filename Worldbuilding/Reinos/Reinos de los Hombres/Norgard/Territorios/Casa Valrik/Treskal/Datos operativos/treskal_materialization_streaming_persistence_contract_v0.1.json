@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_materialization_streaming_persistence_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "cityProcedural": false,
+  "deterministicMicroMaterialization": true,
+  "seedHierarchy": [
+    "city",
+    "zone",
+    "parcel_or_building",
+    "household",
+    "npc_or_interior_or_business"
+  ],
+  "precedence": [
+    "authored_explicit",
+    "persisted_materialized",
+    "canonical_rule",
+    "compatible_deterministic_generation",
+    "safe_fallback"
+  ],
+  "seedIsNotPersistentIdentity": true,
+  "rerollMaterializedEntitiesForbidden": true,
+  "materializable": [
+    "ordinary_parcels",
+    "ordinary_buildings",
+    "households",
+    "level_B_npcs",
+    "ordinary_interiors",
+    "small_businesses",
+    "compatible_ambient_activity"
+  ],
+  "authoredMacroElementsNeverProcedurallyReplaced": [
+    "T",
+    "Z",
+    "L",
+    "S",
+    "C",
+    "canonical_names",
+    "royal_shipyards",
+    "house_valrik_seat",
+    "major_markets"
+  ],
+  "logicalLod": {
+    "low": [
+      "counts",
+      "households",
+      "labor_capacity",
+      "aggregate_stock",
+      "activity",
+      "travel_state",
+      "events",
+      "important_damage"
+    ],
+    "medium": [
+      "relevant_npcs_or_groups",
+      "routines",
+      "approximate_routes",
+      "business_open_state",
+      "occupancy",
+      "stock",
+      "local_events"
+    ],
+    "high": [
+      "individuals",
+      "precise_positions",
+      "interiors",
+      "perception",
+      "dialogue",
+      "relevant_objects",
+      "interaction"
+    ]
+  },
+  "lodSelectionInputs": [
+    "player_proximity",
+    "narrative_relevance",
+    "event",
+    "quest",
+    "danger",
+    "conversation",
+    "tracking",
+    "persistence_need"
+  ],
+  "factsInvariantAcrossLod": true,
+  "offscreenSimulationAllowed": true,
+  "offscreenTravelMustPreserve": [
+    "origin",
+    "destination",
+    "route",
+    "departure_time",
+    "progress",
+    "incidents"
+  ],
+  "hysteresisRequired": true,
+  "saveStrategy": "persistent_state_and_deltas_over_ephemeral_detail",
+  "loadingNeverRegeneratesCity": true,
+  "migrationRules": {
+    "stableIdsNeverReusedWithDifferentMeaning": true,
+    "materializedEntitiesNotRerolledByRuleUpdate": true,
+    "structuralChangesRequireExplicitMigration": true,
+    "canonicalDesignChangesMustNotOverwritePerSaveHistory": true
+  }
+}
