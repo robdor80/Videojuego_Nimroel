@@ -2098,6 +2098,48 @@
         "relevant preferences and habits persist across save load and LOD",
         "changes require plausible experience life stage relationship health or circumstance rather than random reroll"
       ]
+    },
+    {
+      "id": "favor_is_not_currency_or_legal_debt",
+      "expected": [
+        "informal help may create gratitude expectation or remembered imbalance",
+        "no numeric universal favor points exchange rate contract or automatic legal obligation exists"
+      ]
+    },
+    {
+      "id": "help_requires_real_capacity_and_choice",
+      "expected": [
+        "a willing helper still needs time presence resources access and ability",
+        "friendship kinship reputation or prior help never teleports capacity into existence"
+      ]
+    },
+    {
+      "id": "reciprocity_is_contextual_not_exact_exchange",
+      "expected": [
+        "return help may differ in type timing and magnitude from the original favor",
+        "the system does not demand exact one-for-one repayment unless a separate explicit agreement exists"
+      ]
+    },
+    {
+      "id": "repeated_requests_can_create_social_fatigue",
+      "expected": [
+        "frequent one-sided requests may reduce willingness or strain a relation",
+        "past help does not grant unlimited future claims"
+      ]
+    },
+    {
+      "id": "favor_memory_is_person_specific",
+      "expected": [
+        "participants and informed witnesses may remember a meaningful favor",
+        "the whole city does not receive gratitude or debt knowledge automatically"
+      ]
+    },
+    {
+      "id": "favor_becomes_pledge_only_when_explicit_commitment_exists",
+      "expected": [
+        "a vague expectation to return help remains informal",
+        "if someone gives their word to perform a specific return action the pledge system becomes authoritative"
+      ]
     }
   ]
 }

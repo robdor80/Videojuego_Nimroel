@@ -78,3 +78,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_friendship_social_circles_contract_v0.1.json` — FRI01–FRI07, amistad profunda, confianza y círculos sociales persistentes.
 - `treskal_interpersonal_conflict_repair_contract_v0.1.json` — RIFT01–RIFT07, conflicto interpersonal, reparación y reconciliación persistente.
 - `treskal_personal_preferences_habits_contract_v0.1.json` — PREF01–PREF08 y HAB01–HAB08, gustos individuales y hábitos flexibles.
+- `treskal_favors_reciprocity_informal_debt_contract_v0.1.json` — FAV01–FAV07, ayuda voluntaria, reciprocidad y deuda social informal.

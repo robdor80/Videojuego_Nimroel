@@ -487,3 +487,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `preferencias_gustos_aversiones_personales_v0.1.md` — PREF01–PREF08, gustos, aversiones, cambios y límites de canon.
 - `habitos_costumbres_rutina_flexible_v0.1.md` — HAB01–HAB08, regularidades personales, interrupciones y conocimiento de rutinas.
+
+### 77_Favores_y_reciprocidad
+
+- `favores_ayuda_voluntaria_memoria_v0.1.md` — estados FAV01–FAV07, ayuda real, gratitud y memoria social.
+- `reciprocidad_limites_deuda_social_v0.1.md` — reciprocidad no cuantificada, límites, abuso, pledge y continuidad.
