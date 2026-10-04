@@ -838,6 +838,41 @@
         "ordinary props may become persistent when taken used marked or evidentially relevant",
         "promoted objects retain identity property and history across reloads"
       ]
+    },
+    {
+      "id": "treskal_is_maintained_not_pristine_or_ruined",
+      "expected": [
+        "normal city condition includes wear repairs and contextual dirt",
+        "city is neither perfectly new nor generically abandoned"
+      ]
+    },
+    {
+      "id": "repairs_require_real_inputs",
+      "expected": [
+        "materials labor time and access are required",
+        "damage does not disappear on reload or by leaving scene"
+      ]
+    },
+    {
+      "id": "repair_can_leave_visual_history",
+      "expected": [
+        "functional completion may retain patches scars replacement material or prior wear",
+        "repair does not force pristine reset"
+      ]
+    },
+    {
+      "id": "public_works_affect_navigation",
+      "expected": [
+        "street bridge drain or quay work can reduce access width or change route cost",
+        "NPC pathfinding reacts to actual works"
+      ]
+    },
+    {
+      "id": "offscreen_repairs_preserve_causality",
+      "expected": [
+        "repair may progress out of scene only while workers materials access and time remain valid",
+        "blocked or interrupted jobs do not advance magically"
+      ]
     }
   ]
 }

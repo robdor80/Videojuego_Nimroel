@@ -44,3 +44,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_animals_carts_traffic_contract_v0.1.json` — transporte TR01–TR06, establos, carros y animales.
 - `treskal_messaging_letters_delivery_contract_v0.1.json` — tipos MSG01–MSG05, estados de entrega y conocimiento.
 - `treskal_property_possession_object_contract_v0.1.json` — propiedad OWN01–OWN07, custodia, contenedores y objetos persistentes.
+- `treskal_wear_maintenance_repair_contract_v0.1.json` — estados COND01–COND07 y trabajos de reparación.

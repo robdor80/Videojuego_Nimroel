@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_wear_maintenance_repair_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "conditionStates": {
+    "COND01": "maintained",
+    "COND02": "worn",
+    "COND03": "damaged",
+    "COND04": "impaired",
+    "COND05": "unsafe",
+    "COND06": "under_repair",
+    "COND07": "destroyed_or_unusable"
+  },
+  "wearDrivers": [
+    "use",
+    "traffic",
+    "rain",
+    "humidity",
+    "sea_salt",
+    "wind",
+    "fire",
+    "water",
+    "accident",
+    "neglect",
+    "time"
+  ],
+  "arbitraryDecayWithoutContextForbidden": true,
+  "repairStates": [
+    "requested",
+    "waiting_resources",
+    "scheduled",
+    "active",
+    "paused",
+    "completed",
+    "abandoned"
+  ],
+  "repairFields": [
+    "repair_id",
+    "target_ref",
+    "damage_ref",
+    "requested_time",
+    "state",
+    "required_materials",
+    "reserved_materials",
+    "worker_refs",
+    "access_effects",
+    "progress",
+    "completion_time"
+  ],
+  "repairsRequire": [
+    "materials",
+    "labor",
+    "time",
+    "access"
+  ],
+  "functionalRepairNeedNotRestorePristineAppearance": true,
+  "publicWorksMayAlterNavigation": true,
+  "visualConditionMustFollowWorldState": true,
+  "repairSoundsRequireActiveWork": true,
+  "offscreenRepairProgressAllowedWhenInputsRemainValid": true,
+  "criticalInfrastructurePriorityCanIncrease": true,
+  "externalDependencies": {
+    "legalMaintenanceResponsibility": "Norgard_law_and_economic_institutions",
+    "exactPublicAdministration": "future_Valrik_administrative_detail"
+  }
+}

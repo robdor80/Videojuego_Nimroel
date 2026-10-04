@@ -39,7 +39,8 @@
     "wayfindingSignageAddressing": "Datos operativos/treskal_wayfinding_signage_addressing_contract_v0.1.json",
     "animalsCartsTraffic": "Datos operativos/treskal_animals_carts_traffic_contract_v0.1.json",
     "messagingLettersDelivery": "Datos operativos/treskal_messaging_letters_delivery_contract_v0.1.json",
-    "propertyPossessionObjects": "Datos operativos/treskal_property_possession_object_contract_v0.1.json"
+    "propertyPossessionObjects": "Datos operativos/treskal_property_possession_object_contract_v0.1.json",
+    "wearMaintenanceRepair": "Datos operativos/treskal_wear_maintenance_repair_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -64,7 +65,8 @@
     "SG": "signage_type",
     "TR": "transport_class",
     "MSG": "message_type",
-    "OWN": "ownership_relation_state"
+    "OWN": "ownership_relation_state",
+    "COND": "condition_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

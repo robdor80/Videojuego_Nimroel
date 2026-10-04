@@ -77,6 +77,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_animals_carts_traffic_contract_v0.1.json` — animales, carros, congestión y servicios de transporte.
 - `treskal_messaging_letters_delivery_contract_v0.1.json` — mensajería, cartas y entrega física de información.
 - `treskal_property_possession_object_contract_v0.1.json` — propiedad, posesión, custodia y objetos persistentes.
+- `treskal_wear_maintenance_repair_contract_v0.1.json` — desgaste, obras y reparación persistente.
 
 ## Estado del diseño
 
@@ -290,3 +291,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `propiedad_posesion_objetos_persistentes_v0.1.md` — owner/possessor/location/custody y estados OWN01–OWN07.
 - `inventarios_contenedores_abstraccion_v0.1.md` — objetos persistentes, lotes y utilería contextual.
+
+### 43_Mantenimiento_y_reparacion
+
+- `desgaste_mantenimiento_reparacion_v0.1.md` — estados COND01–COND07, daños y repair jobs persistentes.
+- `obras_espacio_publico_v0.1.md` — calles, drenajes, puntos de agua, desvíos y cuadrillas.
