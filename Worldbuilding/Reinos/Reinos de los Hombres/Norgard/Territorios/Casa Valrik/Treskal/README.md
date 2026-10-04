@@ -507,3 +507,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `secretos_confidencias_divulgacion_voluntaria_v0.1.md` — estados CONF01–CONF07, saber frente a contar, confidencia y alcance.
 - `conservacion_filtracion_ruptura_confidencias_v0.1.md` — filtraciones, escucha, promesas, rumor y consecuencias relacionales.
+
+### 81_Verdad_error_y_versiones_falsas
+
+- `verdad_error_omision_declaracion_v0.1.md` — estados STAT01–STAT08 y separación entre verdad, creencia y declaración.
+- `versiones_falsas_contradiccion_descubrimiento_v0.1.md` — continuidad, evidencia, exposición y consecuencias.

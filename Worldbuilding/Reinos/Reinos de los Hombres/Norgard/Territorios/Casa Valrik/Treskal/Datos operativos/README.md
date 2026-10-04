@@ -82,3 +82,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_gifts_social_meaning_contract_v0.1.json` — GIFT01–GIFT07, transferencia de regalos, aceptación y significado social.
 - `treskal_requests_consent_boundaries_contract_v0.1.json` — REQ01–REQ08, peticiones, rechazo, condiciones y límites personales.
 - `treskal_confidential_information_contract_v0.1.json` — CONF01–CONF07, confidencialidad, divulgación y filtraciones.
+- `treskal_statement_integrity_contract_v0.1.json` — STAT01–STAT08, verdad, error, omisión y versiones falsas persistentes.

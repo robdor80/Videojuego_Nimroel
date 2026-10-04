@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_statement_integrity_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "statementStates": {
+    "STAT01": "truthful_statement",
+    "STAT02": "mistaken_statement",
+    "STAT03": "evasive_response",
+    "STAT04": "deliberate_omission",
+    "STAT05": "misleading_half_truth",
+    "STAT06": "deliberate_falsehood",
+    "STAT07": "maintained_false_version",
+    "STAT08": "falsehood_exposed_or_admitted"
+  },
+  "statementDoesNotRewriteWorldTruth": true,
+  "speakerBeliefAndObjectiveTruthAreSeparate": true,
+  "mistakeIsNotDeliberateFalsehood": true,
+  "refusalToAnswerIsNotFalsehoodByDefault": true,
+  "silenceIsNotFalsehoodByDefault": true,
+  "omissionMayBeMisleadingWhenIntendedToMislead": true,
+  "halfTruthMayContainOnlyTrueLiteralClaims": true,
+  "listenerDoesNotReceiveSpeakerIntentAutomatically": true,
+  "listenerBeliefResolvedSeparately": true,
+  "falseStatementCanProtectConfidentialInformation": true,
+  "discoveryRequiresEvidenceAdmissionContradictionOrReliableInformation": true,
+  "maintainedVersionMustReferencePriorStatements": true,
+  "playerStatementsUseSameClaimModel": true,
+  "aiCannotKnowAnotherSpeakerIntentWithoutPlausibleBasis": true,
+  "aiCannotRewritePastStatementHistory": true,
+  "statementRecordFields": [
+    "statement_id",
+    "speaker_ref",
+    "listener_refs",
+    "content_ref_or_normalized_claim",
+    "speaker_belief_ref_if_relevant",
+    "objective_fact_ref_if_known_to_engine",
+    "statement_state",
+    "time_ref",
+    "location_ref",
+    "context_refs",
+    "witness_refs_if_any"
+  ],
+  "exposureEventFields": [
+    "exposure_event_id",
+    "statement_refs",
+    "discoverer_refs",
+    "evidence_refs",
+    "time_ref",
+    "resulting_knowledge_refs"
+  ]
+}

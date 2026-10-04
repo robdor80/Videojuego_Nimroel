@@ -2266,6 +2266,48 @@
         "authorized recipients exposure and breach history persist",
         "LOD cannot silently publicize or erase a confidence"
       ]
+    },
+    {
+      "id": "statement_and_world_truth_are_separate",
+      "expected": [
+        "spoken or written claims are recorded separately from world facts",
+        "a statement never rewrites underlying truth by being asserted"
+      ]
+    },
+    {
+      "id": "mistake_is_not_deliberate_falsehood",
+      "expected": [
+        "a false claim believed true by the speaker is an error rather than deliberate falsehood",
+        "speaker belief and intent matter"
+      ]
+    },
+    {
+      "id": "silence_or_refusal_is_not_automatically_falsehood",
+      "expected": [
+        "an NPC may decline to answer without making a false statement",
+        "silence remains distinct from an assertion"
+      ]
+    },
+    {
+      "id": "half_truth_can_mislead_without_false_sentence",
+      "expected": [
+        "true fragments may still be selected to create a misleading impression",
+        "literal content and intended implication remain separable when relevant"
+      ]
+    },
+    {
+      "id": "listener_does_not_receive_speaker_intent",
+      "expected": [
+        "listener receives the statement source and context",
+        "belief or suspicion must be resolved without hidden access to speaker intent"
+      ]
+    },
+    {
+      "id": "maintained_false_version_requires_memory",
+      "expected": [
+        "later statements can reference earlier relevant claims",
+        "AI cannot silently rewrite prior statement history to avoid contradiction"
+      ]
     }
   ]
 }
