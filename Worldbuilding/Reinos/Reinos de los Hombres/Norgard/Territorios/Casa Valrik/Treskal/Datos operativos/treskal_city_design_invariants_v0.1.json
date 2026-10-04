@@ -1293,6 +1293,41 @@
         "property move sale removal and retained furniture are resolved before new household materialization",
         "building history survives occupant change"
       ]
+    },
+    {
+      "id": "presentation_never_creates_world_facts",
+      "expected": [
+        "visual audio dialogue and AI narration consume authorized state",
+        "presentation cannot invent ownership stock damage knowledge or events"
+      ]
+    },
+    {
+      "id": "cross_system_effects_follow_causal_chain",
+      "expected": [
+        "weather affects market through relevant physical logistics and stock steps rather than direct arbitrary price mutation",
+        "important changes retain traceable causes"
+      ]
+    },
+    {
+      "id": "domain_authority_prevents_double_writes",
+      "expected": [
+        "each base fact has responsible system/domain",
+        "derived systems do not independently mutate same fact and create divergence"
+      ]
+    },
+    {
+      "id": "event_effects_are_idempotent_across_updates",
+      "expected": [
+        "same event instance does not apply damage stock loss displacement or knowledge seed twice",
+        "repeated evaluation detects already-applied effect"
+      ]
+    },
+    {
+      "id": "lod_and_save_preserve_cross_system_facts",
+      "expected": [
+        "granularity and presentation may change",
+        "identity ownership stock damage relationships knowledge and event consequences remain invariant"
+      ]
     }
   ]
 }

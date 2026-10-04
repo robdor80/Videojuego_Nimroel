@@ -52,7 +52,8 @@
     "constructionBuildingChange": "Datos operativos/treskal_construction_building_change_contract_v0.1.json",
     "clothingFootwearLifecycle": "Datos operativos/treskal_clothing_footwear_lifecycle_contract_v0.1.json",
     "seasonalityAccumulatedWeather": "Datos operativos/treskal_seasonality_accumulated_weather_contract_v0.1.json",
-    "furnitureMaterialLife": "Datos operativos/treskal_furniture_material_life_contract_v0.1.json"
+    "furnitureMaterialLife": "Datos operativos/treskal_furniture_material_life_contract_v0.1.json",
+    "crossSystemCausality": "Datos operativos/treskal_cross_system_causality_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_cross_system_causality_contract",
+  "version": "0.1",
+  "status": "active_integration_contract",
+  "layers": {
+    "A_physical": [
+      "buildings",
+      "access",
+      "objects",
+      "environment",
+      "damage",
+      "repairs",
+      "routes",
+      "vehicles",
+      "ships"
+    ],
+    "B_activity": [
+      "work",
+      "business",
+      "markets",
+      "production",
+      "consumption",
+      "deliveries",
+      "commissions",
+      "construction"
+    ],
+    "C_population": [
+      "npcs",
+      "households",
+      "employment",
+      "residency",
+      "health",
+      "routines",
+      "visitors"
+    ],
+    "D_social_information": [
+      "knowledge",
+      "rumors",
+      "messages",
+      "reputation",
+      "pledges"
+    ],
+    "E_presentation": [
+      "lod",
+      "audio",
+      "visual",
+      "dialogue",
+      "ai_narration"
+    ]
+  },
+  "presentationMayCreateWorldFacts": false,
+  "conceptualUpdateOrder": [
+    "time_and_weather",
+    "external_events",
+    "physical_state",
+    "access_and_navigation",
+    "mobility_and_transport",
+    "work_and_production",
+    "delivery_and_storage",
+    "consumption_and_market",
+    "business_and_employment",
+    "household_residency_health",
+    "knowledge_and_reputation",
+    "lod_selection",
+    "ai_context_and_presentation"
+  ],
+  "domainAuthority": {
+    "physical": [
+      "constructionBuildingChange",
+      "wearMaintenanceRepair",
+      "propertyPossessionObjects",
+      "doorsLocksKeysAccess",
+      "seasonalityAccumulatedWeather"
+    ],
+    "economy": [
+      "consumptionRestockPricePressure",
+      "dailyMarketStalls",
+      "businessLifecycle",
+      "artisanCommissions",
+      "civilPortAndStorage"
+    ],
+    "population": [
+      "npcAndCommerce",
+      "employmentJobsVacancies",
+      "residencyHouseholdMobility",
+      "healthCareNetwork"
+    ],
+    "information": [
+      "informationAndReputation",
+      "messagingLettersDelivery",
+      "wordOfHonorPledges"
+    ],
+    "presentation": [
+      "materializationStreamingPersistence",
+      "lightVisibilitySound",
+      "aiContextAndOutput"
+    ]
+  },
+  "derivedStateShouldNotBeRedundantlyPersistedWhenSafelyReconstructable": true,
+  "eventEffectsMustBeIdempotent": true,
+  "hiddenFactRequiresPerceptionMessageOrWitnessBeforeKnowledge": true,
+  "lodMayChangeGranularityButNeverFacts": true,
+  "aiContextIsReadOnlyWithRespectToWorldFacts": true,
+  "conflictResolution": [
+    "identify_base_fact",
+    "use_domain_authority",
+    "preserve_cause",
+    "recalculate_derived_state"
+  ],
+  "regressionChains": [
+    "storm_to_fish_market",
+    "broken_cart_to_delivery_delay",
+    "forced_door_to_evidence",
+    "damaged_garment_to_repair",
+    "domestic_fire_to_displacement",
+    "new_business_to_operation",
+    "urgent_message_to_npc_decision",
+    "rain_to_laundry_drying"
+  ]
+}
