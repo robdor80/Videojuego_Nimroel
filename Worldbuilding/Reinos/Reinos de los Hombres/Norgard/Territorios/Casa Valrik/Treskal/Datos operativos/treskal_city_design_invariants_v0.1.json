@@ -943,6 +943,41 @@
         "business owner and master/artisan reputations may influence each other but remain separately tracked",
         "new ownership does not automatically inherit every personal relationship"
       ]
+    },
+    {
+      "id": "commission_is_not_immediate_purchase",
+      "expected": [
+        "request quote acceptance production readiness delivery and completion remain distinct states",
+        "asking an artisan does not instantly create finished object"
+      ]
+    },
+    {
+      "id": "commission_materials_are_real_and_reserved",
+      "expected": [
+        "reserved material leaves free stock and remains physically owned/located",
+        "same material cannot satisfy multiple incompatible commissions"
+      ]
+    },
+    {
+      "id": "commission_progress_requires_real_inputs",
+      "expected": [
+        "capable worker time material functional tools and compatible business state are required",
+        "timer alone does not advance blocked work"
+      ]
+    },
+    {
+      "id": "custom_piece_quality_has_process_provenance",
+      "expected": [
+        "quality derives from material worker specialty tools time difficulty errors and finish",
+        "persistent output remembers maker workshop materials and commission"
+      ]
+    },
+    {
+      "id": "commission_survives_provider_disruption_as_stateful_problem",
+      "expected": [
+        "death closure relocation or shortage causes transfer delay cancellation or failure resolution",
+        "commission is not silently deleted"
+      ]
     }
   ]
 }

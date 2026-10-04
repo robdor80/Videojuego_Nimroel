@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_artisan_commission_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "commissionStates": {
+    "COM01": "requested",
+    "COM02": "quoted_or_discussed",
+    "COM03": "accepted",
+    "COM04": "waiting_materials",
+    "COM05": "materials_reserved",
+    "COM06": "in_progress",
+    "COM07": "paused",
+    "COM08": "ready",
+    "COM09": "delivered",
+    "COM10": "completed",
+    "COM11": "cancelled",
+    "COM12": "failed"
+  },
+  "fields": [
+    "commission_id",
+    "customer_ref",
+    "provider_ref",
+    "business_ref",
+    "requested_work",
+    "specification",
+    "material_requirements",
+    "reserved_material_refs",
+    "agreed_quality_or_expectation",
+    "agreed_price_or_payment_terms_if_any",
+    "deadline_if_any",
+    "pledge_ref_if_any",
+    "state",
+    "progress",
+    "created_time",
+    "delivery_ref",
+    "final_object_ref",
+    "failure_or_delay_cause"
+  ],
+  "artisanMayReject": true,
+  "materialReservationRemovesFreeAvailability": true,
+  "materialSubstitutionMayRequireCustomerConsent": true,
+  "progressRequires": [
+    "capable_worker",
+    "time",
+    "required_material",
+    "functional_tools",
+    "compatible_business_state"
+  ],
+  "deadlineCanLinkToPledge": true,
+  "agreedPriceNotRetroactivelyChangedWithoutCauseOrRenegotiation": true,
+  "qualityDrivers": [
+    "material",
+    "worker",
+    "specialty",
+    "tools",
+    "time",
+    "difficulty",
+    "errors",
+    "finish"
+  ],
+  "playerLevelDoesNotSetQuality": true,
+  "customizedRelevantOutputBecomesPersistentObject": true,
+  "cancellationMustResolveMaterialsWorkPropertyPaymentAndPledge": true,
+  "providerDeathOrClosureDoesNotDeleteCommission": true,
+  "clientProgressKnowledgeRequiresInformationPath": true,
+  "provenanceFields": [
+    "maker_ref",
+    "workshop_ref",
+    "place_ref",
+    "material_refs",
+    "commission_ref",
+    "completion_time",
+    "repair_refs"
+  ],
+  "externalDependencies": {
+    "exactCraftSkillFormula": "future_Nimroel_character_progression_system",
+    "exactPaymentMechanics": "Norgard_monetary_and_economic_system",
+    "legalContractEnforcement": "Norgard_law_and_economic_institutions"
+  }
+}

@@ -42,7 +42,8 @@
     "propertyPossessionObjects": "Datos operativos/treskal_property_possession_object_contract_v0.1.json",
     "wearMaintenanceRepair": "Datos operativos/treskal_wear_maintenance_repair_contract_v0.1.json",
     "dailyMarketStalls": "Datos operativos/treskal_daily_market_stall_contract_v0.1.json",
-    "businessLifecycle": "Datos operativos/treskal_business_lifecycle_contract_v0.1.json"
+    "businessLifecycle": "Datos operativos/treskal_business_lifecycle_contract_v0.1.json",
+    "artisanCommissions": "Datos operativos/treskal_artisan_commission_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -70,7 +71,8 @@
     "OWN": "ownership_relation_state",
     "COND": "condition_state",
     "MK": "market_seller_type",
-    "BIZ": "business_state"
+    "BIZ": "business_state",
+    "COM": "commission_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
