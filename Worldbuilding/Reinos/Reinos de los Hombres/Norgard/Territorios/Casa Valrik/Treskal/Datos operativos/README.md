@@ -25,3 +25,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_civil_port_and_storage_contract_v0.1.json` — ciclo de embarcaciones civiles, carga y clases de almacenamiento ST1–ST6.
 
 - `treskal_housing_social_geography_contract_v0.1.json` — asignación residencial, mezcla social y mudanzas.
+- `treskal_ai_context_and_output_contract_v0.1.json` — contexto autorizado para narrador/NPC y validación de salida IA.

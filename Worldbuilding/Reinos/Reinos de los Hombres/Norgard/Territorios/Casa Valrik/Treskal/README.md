@@ -58,6 +58,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_labor_household_visitor_contract_v0.1.json` — demanda laboral, hogares y visitantes.
 - `treskal_civil_port_and_storage_contract_v0.1.json` — operación portuaria civil y almacenamiento.
 - `treskal_housing_social_geography_contract_v0.1.json` — vivienda, presión residencial y geografía social.
+- `treskal_ai_context_and_output_contract_v0.1.json` — percepción, diálogo IA, validación y disciplina de secretos.
 
 ## Estado del diseño
 
@@ -175,3 +176,9 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `asignacion_vivienda_geografia_social_v0.1.md` — asignación de hogares por espacio, oficio, recursos y proximidad sin segregación rígida.
 - `presion_residencial_mudanzas_v0.1.md` — viviendas libres, saturación, desplazamiento y mudanzas persistentes.
+
+### 24_Contexto_IA
+
+- `contrato_narrador_percepcion_v0.1.md` — Modo Máster/Off Story: verdad → filtro perceptivo → contexto autorizado → narración.
+- `contrato_dialogo_npc_v0.1.md` — contexto limitado del NPC, memoria, secretos y actividad actual.
+- `validacion_salida_ia_v0.1.md` — validación de texto, intenciones y propuestas antes de mutar World State.

@@ -247,6 +247,41 @@
         "opportunities may resolve without player",
         "identical need is not regenerated immediately just to create content"
       ]
+    },
+    {
+      "id": "narrator_never_receives_hidden_facts_by_default",
+      "expected": [
+        "default narrative context contains only perceptible authorized facts",
+        "undetected secrets are not leaked even through negative phrasing"
+      ]
+    },
+    {
+      "id": "perception_is_resolved_before_narration",
+      "expected": [
+        "focused inspection is resolved by game mechanics first",
+        "model receives only discoveries authorized by that result"
+      ]
+    },
+    {
+      "id": "npc_dialogue_has_no_world_state_omniscience",
+      "expected": [
+        "NPC dialogue uses only relevant K1-K5 knowledge memory perception and social context",
+        "unknown facts may produce an explicit no-knowledge answer"
+      ]
+    },
+    {
+      "id": "ai_output_cannot_mutate_world_directly",
+      "expected": [
+        "actions and new persistent facts require engine validation",
+        "AI contradiction never rewrites World State to fit generated text"
+      ]
+    },
+    {
+      "id": "dialogue_model_comparisons_use_identical_semantic_context",
+      "expected": [
+        "provider comparisons preserve scene NPC memory knowledge secrets and player prompt",
+        "evaluation can compare personality subtext memory limited knowledge and secret discipline"
+      ]
     }
   ]
 }
