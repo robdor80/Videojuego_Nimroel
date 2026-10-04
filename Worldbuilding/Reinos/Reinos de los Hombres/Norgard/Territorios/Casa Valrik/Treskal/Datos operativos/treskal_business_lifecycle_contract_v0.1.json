@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_business_lifecycle_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "businessStates": {
+    "BIZ01": "preparing",
+    "BIZ02": "open",
+    "BIZ03": "reduced",
+    "BIZ04": "temporarily_closed",
+    "BIZ05": "relocating",
+    "BIZ06": "dormant",
+    "BIZ07": "permanently_closed",
+    "BIZ08": "transferred_or_reorganized"
+  },
+  "businessFields": [
+    "business_id",
+    "activity_type",
+    "building_id",
+    "owner_ref",
+    "worker_refs",
+    "stock_refs",
+    "supplier_refs",
+    "customer_refs_if_relevant",
+    "reputation_refs",
+    "schedule",
+    "state",
+    "name_if_any"
+  ],
+  "businessDistinctFromBuilding": true,
+  "businessDistinctFromOwner": true,
+  "openingRequires": [
+    "plausible_activity",
+    "capable_people",
+    "space",
+    "tools_or_installation",
+    "stock_or_material_if_needed",
+    "demand_or_reason"
+  ],
+  "temporaryClosurePreservesIdentity": true,
+  "ownerDeathDoesNotAutoDeleteBusiness": true,
+  "ownershipTransferLaw": "external_dependency",
+  "relocationPreservesBusinessWhenContinuityExists": true,
+  "closingDoesNotDeleteStockToolsOrBuilding": true,
+  "openCommissionsResolvedIndividuallyOnTransition": true,
+  "reputationScopes": [
+    "business",
+    "owner",
+    "master_or_artisan"
+  ],
+  "sameTradeBusinessesMayDifferBy": [
+    "location",
+    "quality",
+    "price",
+    "specialty",
+    "reputation",
+    "capacity",
+    "lead_time"
+  ],
+  "insufficientDemandPreventsInfiniteProviders": true,
+  "playerDemandDoesNotOverrideCityEconomics": true,
+  "externalDependencies": {
+    "inheritanceAndOwnershipTransfer": "Norgard_law_and_economic_institutions",
+    "bankruptcyOrFormalInsolvencyIfAny": "future_Norgard_commercial_law"
+  }
+}

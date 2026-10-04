@@ -79,6 +79,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_property_possession_object_contract_v0.1.json` — propiedad, posesión, custodia y objetos persistentes.
 - `treskal_wear_maintenance_repair_contract_v0.1.json` — desgaste, obras y reparación persistente.
 - `treskal_daily_market_stall_contract_v0.1.json` — mercados diarios, puestos y vendedores MK01–MK05.
+- `treskal_business_lifecycle_contract_v0.1.json` — ciclo de vida BIZ01–BIZ08 y continuidad empresarial.
 
 ## Estado del diseño
 
@@ -302,3 +303,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `funcionamiento_mercados_puestos_v0.1.md` — vendedores MK01–MK05, ciclo diario y stock físico.
 - `densidad_puesto_comercio_gameplay_v0.1.md` — LOD de mercado, compras y reposición real.
+
+### 45_Ciclo_de_negocios
+
+- `ciclo_vida_negocios_talleres_v0.1.md` — estados BIZ01–BIZ08, cierres, mudanzas y continuidad.
+- `capacidad_competencia_especializacion_v0.1.md` — capacidad urbana, competencia y especialización real.

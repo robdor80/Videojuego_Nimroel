@@ -908,6 +908,41 @@
         "aggregate simulation may replace crowd detail",
         "persistent sellers stock purchases deliveries and incidents remain invariant across LOD"
       ]
+    },
+    {
+      "id": "business_building_owner_are_distinct_entities",
+      "expected": [
+        "closing or moving a business does not delete its building",
+        "owner death/change does not automatically delete business identity"
+      ]
+    },
+    {
+      "id": "business_transitions_preserve_physical_world",
+      "expected": [
+        "stock tools signs workers and open commissions are individually resolved on closure transfer or relocation",
+        "state change does not erase them"
+      ]
+    },
+    {
+      "id": "temporary_closure_preserves_business_identity",
+      "expected": [
+        "illness absence shortage repair or event may close temporarily without rerolling business",
+        "reopening restores same business unless actual transformation occurred"
+      ]
+    },
+    {
+      "id": "commercial_variety_requires_real_capacity_and_demand",
+      "expected": [
+        "multiple providers can differ in quality specialty location capacity and reputation",
+        "system does not create infinite shops solely to satisfy player catalog demand"
+      ]
+    },
+    {
+      "id": "business_reputation_is_not_owner_reputation",
+      "expected": [
+        "business owner and master/artisan reputations may influence each other but remain separately tracked",
+        "new ownership does not automatically inherit every personal relationship"
+      ]
     }
   ]
 }

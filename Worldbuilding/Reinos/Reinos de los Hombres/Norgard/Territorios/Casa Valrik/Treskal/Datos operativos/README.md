@@ -46,3 +46,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_property_possession_object_contract_v0.1.json` — propiedad OWN01–OWN07, custodia, contenedores y objetos persistentes.
 - `treskal_wear_maintenance_repair_contract_v0.1.json` — estados COND01–COND07 y trabajos de reparación.
 - `treskal_daily_market_stall_contract_v0.1.json` — ciclo de puestos, tipos MK01–MK05 y LOD de mercado.
+- `treskal_business_lifecycle_contract_v0.1.json` — negocio ≠ edificio ≠ propietario y estados BIZ01–BIZ08.
