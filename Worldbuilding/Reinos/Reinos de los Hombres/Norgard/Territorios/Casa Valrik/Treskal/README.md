@@ -319,22 +319,22 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 - `encargos_produccion_por_encargo_v0.1.md` — estados COM01–COM12, materiales, plazos y entrega.
 - `calidad_errores_procedencia_piezas_v0.1.md` — calidad por proceso, errores causales y procedencia persistente.
 
-### 46_Aseo_y_lavado
+### 47_Aseo_y_lavado
 
 - `aseo_lavado_uso_domestico_agua_v0.1.md` — higiene preindustrial, transporte de agua, lavado y secado.
 - `limpieza_colada_estado_visual_v0.1.md` — pátina, suciedad contextual, humedad y persistencia visual.
 
-### 47_Combustible_y_calor
+### 48_Combustible_y_calor
 
 - `combustible_cocina_calor_domestico_v0.1.md` — leña, cocina, hornos, almacenamiento y riesgo de incendio.
 - `stock_combustible_consumo_termico_v0.1.md` — stock térmico, consumo agregado y reposición real.
 
-### 48_Accesos_fisicos
+### 49_Accesos_fisicos
 
 - `puertas_llaves_cerraduras_acceso_v0.1.md` — estados DOOR01–DOOR07 y separación entre acceso físico y permiso.
 - `llaves_permisos_cambios_acceso_v0.1.md` — llaves persistentes, préstamo, revocación y roles.
 
-### 49_Empleo_y_vacantes
+### 50_Empleo_y_vacantes
 
 - `relaciones_laborales_vacantes_continuidad_v0.1.md` — estados EMP01–EMP08, profesión ≠ puesto y continuidad laboral.
 - `cobertura_puestos_disponibilidad_v0.1.md` — vacantes, candidatos, sustitución e incorporación.
