@@ -1433,6 +1433,41 @@
         "low-detail rest may be aggregated",
         "on materialization NPC location and activity remain compatible with stored rest/routine state"
       ]
+    },
+    {
+      "id": "fire_requires_causal_ignition_and_spread",
+      "expected": [
+        "fire originates from actual source and propagates according to material proximity ventilation stored fuel wind response and access",
+        "no dramatic fire quota or arbitrary spread"
+      ]
+    },
+    {
+      "id": "fire_detection_is_local_not_omniscient",
+      "expected": [
+        "smoke flame odor sound warnings and direct perception seed knowledge",
+        "entire city is not instantly alerted"
+      ]
+    },
+    {
+      "id": "firefighting_requires_people_water_and_access",
+      "expected": [
+        "bucket chains and local response need physical water containers people and a usable route",
+        "no modern pressure network or abstract extinguish button"
+      ]
+    },
+    {
+      "id": "extinguished_fire_does_not_restore_damage",
+      "expected": [
+        "FIRE07 ends active flame but damage stock loss displacement and business interruption persist",
+        "repair reconstruction and return occur through their own systems"
+      ]
+    },
+    {
+      "id": "fire_aftermath_preserves_objects_and_residency_consequences",
+      "expected": [
+        "evacuated objects keep owner/location and destroyed objects stay destroyed",
+        "displaced households need actual temporary or replacement housing"
+      ]
     }
   ]
 }
