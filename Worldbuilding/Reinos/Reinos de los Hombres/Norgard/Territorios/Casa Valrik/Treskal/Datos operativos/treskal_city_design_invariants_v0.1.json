@@ -2056,6 +2056,48 @@
         "private disputes do not alter citywide reputation by themselves",
         "witnesses disclosure rumor and interpretation determine social spread"
       ]
+    },
+    {
+      "id": "npc_preferences_do_not_override_world_constraints",
+      "expected": [
+        "preferences influence choices only among available plausible options",
+        "safety work care scarcity access and urgent events may override ordinary preference"
+      ]
+    },
+    {
+      "id": "preferences_reference_canonical_options_only",
+      "expected": [
+        "food drink clothing place game and other preference values must reference existing canonical or materialized content",
+        "the system never invents a favorite item solely to fill a profile field"
+      ]
+    },
+    {
+      "id": "habits_are_regularities_not_rails",
+      "expected": [
+        "habit increases likelihood of a behavior under compatible conditions",
+        "weather work health relationships events and availability may interrupt it without contradiction"
+      ]
+    },
+    {
+      "id": "preferences_and_habits_are_individual_not_profession_templates",
+      "expected": [
+        "two NPCs with the same occupation household type or age may have different preferences and habits",
+        "profession may constrain opportunities but does not determine personality"
+      ]
+    },
+    {
+      "id": "ai_does_not_invent_favorites_or_habits",
+      "expected": [
+        "dialogue may use only authorized preference and habit data or directly observed behavior",
+        "unknown taste remains unknown rather than being fabricated for flavor"
+      ]
+    },
+    {
+      "id": "meaningful_preferences_persist_but_can_change",
+      "expected": [
+        "relevant preferences and habits persist across save load and LOD",
+        "changes require plausible experience life stage relationship health or circumstance rather than random reroll"
+      ]
     }
   ]
 }

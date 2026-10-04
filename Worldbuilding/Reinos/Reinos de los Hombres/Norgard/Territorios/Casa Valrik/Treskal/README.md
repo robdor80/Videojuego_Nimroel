@@ -482,3 +482,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `conflicto_tension_distanciamiento_v0.1.md` — estados RIFT01–RIFT07, interpretación, evitación, círculos y escalada hacia honor/ley.
 - `disculpa_reparacion_reconciliacion_v0.1.md` — disculpa, aceptación, mediación, reparación parcial y reconciliación con memoria.
+
+### 76_Preferencias_y_habitos_personales
+
+- `preferencias_gustos_aversiones_personales_v0.1.md` — PREF01–PREF08, gustos, aversiones, cambios y límites de canon.
+- `habitos_costumbres_rutina_flexible_v0.1.md` — HAB01–HAB08, regularidades personales, interrupciones y conocimiento de rutinas.

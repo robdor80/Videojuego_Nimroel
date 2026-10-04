@@ -72,7 +72,8 @@
     "childDevelopmentAutonomyLearning": "Datos operativos/treskal_child_development_autonomy_learning_contract_v0.1.json",
     "agingLateLifeActivity": "Datos operativos/treskal_aging_late_life_activity_contract_v0.1.json",
     "friendshipSocialCircles": "Datos operativos/treskal_friendship_social_circles_contract_v0.1.json",
-    "interpersonalConflictRepair": "Datos operativos/treskal_interpersonal_conflict_repair_contract_v0.1.json"
+    "interpersonalConflictRepair": "Datos operativos/treskal_interpersonal_conflict_repair_contract_v0.1.json",
+    "personalPreferencesHabits": "Datos operativos/treskal_personal_preferences_habits_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -137,7 +138,9 @@
     "CHD": "child_development_state",
     "AGE": "late_life_activity_state",
     "FRI": "friendship_state",
-    "RIFT": "interpersonal_conflict_state"
+    "RIFT": "interpersonal_conflict_state",
+    "PREF": "personal_preference_type",
+    "HAB": "personal_habit_type"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_personal_preferences_habits_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "preferenceTypes": {
+    "PREF01": "food_and_drink",
+    "PREF02": "leisure_activity",
+    "PREF03": "place_or_environment",
+    "PREF04": "social_company",
+    "PREF05": "work_method_or_task",
+    "PREF06": "clothing_or_appearance",
+    "PREF07": "weather_or_physical_environment",
+    "PREF08": "sensory_or_comfort"
+  },
+  "habitTypes": {
+    "HAB01": "start_of_day_routine",
+    "HAB02": "work_preparation_routine",
+    "HAB03": "meal_routine",
+    "HAB04": "leisure_routine",
+    "HAB05": "social_routine",
+    "HAB06": "maintenance_or_household_routine",
+    "HAB07": "rest_preparation_routine",
+    "HAB08": "avoidance_or_route_habit"
+  },
+  "notEveryNpcNeedsEveryPreferenceType": true,
+  "notEveryNpcNeedsEveryHabitType": true,
+  "preferencesMayBePositiveNegativeOrContextual": true,
+  "preferenceValuesMustReferenceCanonicalOrMaterializedContent": true,
+  "preferencesDoNotCreateNewCanonItems": true,
+  "preferencesInfluenceChoiceButDoNotOverrideConstraints": true,
+  "constraintsThatMayOverridePreference": [
+    "safety",
+    "urgent_event",
+    "work_obligation",
+    "care_obligation",
+    "health",
+    "availability",
+    "access",
+    "money_or_stock",
+    "weather",
+    "relationship_context"
+  ],
+  "habitIsProbabilityAndExpectationNotFixedSchedule": true,
+  "habitsMayBeInterruptedWithoutBeingDeleted": true,
+  "preferencesAndHabitsAreIndividual": true,
+  "occupationDoesNotDeterminePreferenceProfile": true,
+  "householdDoesNotDeterminePreferenceProfile": true,
+  "ageStateMayAffectButDoesNotRewriteProfileAutomatically": true,
+  "preferencesMayChangeThroughMeaningfulExperience": true,
+  "habitsMayChangeThroughRepeatedLifeChange": true,
+  "preferenceChangeDoesNotRequireRandomReroll": true,
+  "relevantPreferencesPersistAcrossSaveLoadAndLod": true,
+  "relevantHabitsPersistAcrossSaveLoadAndLod": true,
+  "aiMayUseKnownPreferencesForDialogueAndChoice": true,
+  "aiCannotInventFavoriteFoodDrinkPlaceGameClothingOrRoutine": true,
+  "unknownPreferenceRemainsUnknown": true,
+  "preferenceRecordFields": [
+    "npc_ref",
+    "preference_type",
+    "target_ref_or_canonical_value",
+    "polarity",
+    "strength_if_relevant",
+    "source_or_reason_if_known",
+    "last_meaningful_update"
+  ],
+  "habitRecordFields": [
+    "npc_ref",
+    "habit_type",
+    "activity_ref",
+    "usual_context",
+    "usual_location_ref_if_any",
+    "usual_companion_refs_if_any",
+    "flexibility",
+    "last_meaningful_update"
+  ],
+  "offscreenHabitResolutionRequiresAvailabilityAndCompatibleContext": true,
+  "externalDependencies": {
+    "canonicalCuisineAndRecipes": "future_Norgard_cuisine",
+    "exactGamesAndPastimes": "future_Norgard_leisure_culture",
+    "exactTimeSchedule": "future_Nimroel_time_system"
+  }
+}
