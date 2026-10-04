@@ -57,6 +57,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_urban_gameplay_discovery_contract_v0.1.json` — descubrimiento, investigación y encargos emergentes.
 - `treskal_labor_household_visitor_contract_v0.1.json` — demanda laboral, hogares y visitantes.
 - `treskal_civil_port_and_storage_contract_v0.1.json` — operación portuaria civil y almacenamiento.
+- `treskal_housing_social_geography_contract_v0.1.json` — vivienda, presión residencial y geografía social.
 
 ## Estado del diseño
 
@@ -169,3 +170,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `operacion_puerto_civil_y_muelles_fluviales_v0.1.md` — ciclo de embarcación, atraque, carga/descarga y relación río-mar.
 - `almacenamiento_perecibilidad_reservas_v0.1.md` — clases ST1–ST6, stock urbano y resiliencia ante cortes.
+
+### 23_Vivienda_y_geografia_social
+
+- `asignacion_vivienda_geografia_social_v0.1.md` — asignación de hogares por espacio, oficio, recursos y proximidad sin segregación rígida.
+- `presion_residencial_mudanzas_v0.1.md` — viviendas libres, saturación, desplazamiento y mudanzas persistentes.

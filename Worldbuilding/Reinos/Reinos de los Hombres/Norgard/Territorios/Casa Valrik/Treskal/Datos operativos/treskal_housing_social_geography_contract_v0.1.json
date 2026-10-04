@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_housing_social_geography_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "allocationInputs": [
+    "household_size",
+    "occupation",
+    "work_location",
+    "economic_capacity",
+    "availability",
+    "space_need",
+    "family_links",
+    "domestic_activity",
+    "world_state"
+  ],
+  "socialMixRequired": true,
+  "rigidWealthDistrictsForbidden": true,
+  "workProximityPreferredNotRequired": true,
+  "commuteCostInputs": [
+    "distance",
+    "bridge",
+    "slope",
+    "traffic",
+    "daypart",
+    "weather"
+  ],
+  "householdNeeds": {
+    "ordinary": [
+      "residential_capacity",
+      "cooking",
+      "sleep",
+      "domestic_storage"
+    ],
+    "artisan": [
+      "workshop_or_access",
+      "yard_if_needed",
+      "material_storage"
+    ],
+    "transport": [
+      "cart_access",
+      "stable_if_needed"
+    ],
+    "innLinked": [
+      "U05_integration"
+    ]
+  },
+  "wealthRepresentation": [
+    "space",
+    "maintenance",
+    "materials",
+    "furnishings",
+    "tools",
+    "staff",
+    "storage"
+  ],
+  "wealthEqualsNobility": false,
+  "buildingMayContainMultipleHouseholds": true,
+  "ownerAndOccupantMayDiffer": true,
+  "legalTenureMechanisms": "external_dependency",
+  "initialGenerationOrder": [
+    "residential_buildings",
+    "residential_units",
+    "households",
+    "household_needs",
+    "housing_assignment",
+    "persons"
+  ],
+  "residentialPressureStates": [
+    "low",
+    "normal",
+    "high"
+  ],
+  "displacementDrivers": [
+    "fire",
+    "flood",
+    "economic_change",
+    "family_change",
+    "employment_change"
+  ],
+  "movesPersistInWorldState": true,
+  "externalDependencies": {
+    "ownershipInheritanceRentalLaw": "Norgard_law_and_economic_institutions"
+  }
+}

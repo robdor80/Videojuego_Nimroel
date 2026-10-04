@@ -23,3 +23,5 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_urban_gameplay_discovery_contract_v0.1.json` — descubrimiento orgánico, investigación y oportunidades emergentes.
 - `treskal_labor_household_visitor_contract_v0.1.json` — familias de ocupación O, hogares H y visitantes V.
 - `treskal_civil_port_and_storage_contract_v0.1.json` — ciclo de embarcaciones civiles, carga y clases de almacenamiento ST1–ST6.
+
+- `treskal_housing_social_geography_contract_v0.1.json` — asignación residencial, mezcla social y mudanzas.

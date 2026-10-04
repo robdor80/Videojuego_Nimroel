@@ -21,7 +21,8 @@
     "informationAndReputation": "Datos operativos/treskal_information_and_reputation_contract_v0.1.json",
     "gameplayDiscovery": "Datos operativos/treskal_urban_gameplay_discovery_contract_v0.1.json",
     "laborHouseholdsVisitors": "Datos operativos/treskal_labor_household_visitor_contract_v0.1.json",
-    "civilPortAndStorage": "Datos operativos/treskal_civil_port_and_storage_contract_v0.1.json"
+    "civilPortAndStorage": "Datos operativos/treskal_civil_port_and_storage_contract_v0.1.json",
+    "housingSocialGeography": "Datos operativos/treskal_housing_social_geography_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -68,6 +69,7 @@
     "royalShipyardInternalChainOfCommand": "Norgard_royal_naval_military_system",
     "specializedMarketFineCalendar": "Norgard_calendar_and_local_market_schedule_detail",
     "exactMetricGeometry": "future_Treskal_detailed_cartography",
-    "portTaxesCustoms": "Norgard_fiscal_and_legal_system"
+    "portTaxesCustoms": "Norgard_fiscal_and_legal_system",
+    "ownershipInheritanceRentalLaw": "Norgard_law_and_economic_institutions"
   }
 }
