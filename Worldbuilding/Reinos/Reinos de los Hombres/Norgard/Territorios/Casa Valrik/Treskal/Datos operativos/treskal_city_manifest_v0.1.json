@@ -57,7 +57,8 @@
     "toolsWorkstationsEquipment": "Datos operativos/treskal_tools_workstations_equipment_contract_v0.1.json",
     "workHazardsAccidents": "Datos operativos/treskal_work_hazards_accidents_contract_v0.1.json",
     "restSleepAvailability": "Datos operativos/treskal_rest_sleep_availability_contract_v0.1.json",
-    "fireResponsePropagation": "Datos operativos/treskal_fire_response_propagation_contract_v0.1.json"
+    "fireResponsePropagation": "Datos operativos/treskal_fire_response_propagation_contract_v0.1.json",
+    "sanitationWasteCycle": "Datos operativos/treskal_sanitation_waste_cycle_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -101,7 +102,9 @@
     "HAZ": "work_hazard_type",
     "ACC": "accident_state",
     "REST": "rest_state",
-    "FIRE": "fire_state"
+    "FIRE": "fire_state",
+    "WASTE": "waste_type",
+    "WST": "waste_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

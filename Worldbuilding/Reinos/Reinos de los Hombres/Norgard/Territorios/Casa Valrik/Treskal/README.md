@@ -94,6 +94,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_work_hazards_accidents_contract_v0.1.json` — riesgos laborales, accidentes y continuidad operativa.
 - `treskal_rest_sleep_availability_contract_v0.1.json` — sueño, descanso y disponibilidad de NPC.
 - `treskal_fire_response_propagation_contract_v0.1.json` — incendios, propagación, evacuación y secuelas.
+- `treskal_sanitation_waste_cycle_contract_v0.1.json` — saneamiento, letrinas, residuos y retirada urbana.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -398,3 +399,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `deteccion_respuesta_propagacion_v0.1.md` — estados FIRE01–FIRE08, detección, propagación y respuesta preindustrial.
 - `secuelas_evacuacion_recuperacion_v0.1.md` — evacuación, reentrada, desplazamiento y recuperación posterior.
+
+### 61_Saneamiento_y_residuos
+
+- `residuos_letrinas_limpieza_urbana_v0.1.md` — tipos WASTE01–WASTE08, letrinas, pozos negros y limpieza.
+- `ciclo_residuos_recogida_destino_v0.1.md` — estados WST01–WST07, recogida, transporte y reutilización.

@@ -1468,6 +1468,41 @@
         "evacuated objects keep owner/location and destroyed objects stay destroyed",
         "displaced households need actual temporary or replacement housing"
       ]
+    },
+    {
+      "id": "waste_does_not_disappear_on_lod_change",
+      "expected": [
+        "generated refuse persists as batch pressure until collected recovered or disposed",
+        "scene unloading never cleans area by itself"
+      ]
+    },
+    {
+      "id": "preindustrial_sanitation_is_organized_without_modern_sewers",
+      "expected": [
+        "latrines cesspits collection transport disposal and reuse can coexist",
+        "modern underground sewer network or municipal sanitation department is not assumed"
+      ]
+    },
+    {
+      "id": "waste_streams_have_different_priorities_and_destinations",
+      "expected": [
+        "fish human animal workshop and construction waste are not treated identically",
+        "recoverable material can be reused while contaminating waste needs separation"
+      ]
+    },
+    {
+      "id": "clean_streets_require_real_removal",
+      "expected": [
+        "market stable port and household cleanliness comes from collection sweeping drainage and transport",
+        "uniform medieval garbage layer is forbidden"
+      ]
+    },
+    {
+      "id": "sanitation_pressure_does_not_auto_create_disease",
+      "expected": [
+        "problematic accumulation may raise odor insects obstruction and future health pressure",
+        "actual disease outcomes remain under health system"
+      ]
     }
   ]
 }
