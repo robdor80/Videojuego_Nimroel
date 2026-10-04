@@ -523,6 +523,41 @@
       "expected": [
         "Treskal maritime lore does not invent Royal Navy ranks recruitment or chain of command before Norgard military system defines them"
       ]
+    },
+    {
+      "id": "treskal_healthcare_is_distributed_not_centralized",
+      "expected": [
+        "multiple trained healers exist",
+        "no hospital or medical college is generated merely because Treskal is a city"
+      ]
+    },
+    {
+      "id": "trained_healers_are_people_not_service_nodes",
+      "expected": [
+        "healers have homes routines materials patients and availability",
+        "they may be away on visits and do not teleport for player convenience"
+      ]
+    },
+    {
+      "id": "healing_tradition_matches_norgard",
+      "expected": [
+        "specialized healing remains predominantly female with mainly woman-to-woman transmission",
+        "male practitioners are unusual rather than absolutely forbidden"
+      ]
+    },
+    {
+      "id": "health_outcomes_are_not_decided_by_ai_prose",
+      "expected": [
+        "game health system resolves physiological outcome",
+        "AI describes authorized result without granting miraculous recovery"
+      ]
+    },
+    {
+      "id": "medicinal_materials_require_canonical_source",
+      "expected": [
+        "medicinal flora comes from canonical flora when defined",
+        "scene generation does not invent plants to solve treatment needs"
+      ]
     }
   ]
 }

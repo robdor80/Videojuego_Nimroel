@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_health_care_network_contract",
+  "version": "0.1",
+  "status": "active_canon_contract",
+  "trainedHealersMultipleRequired": true,
+  "centralizedHospitalAssumed": false,
+  "medicalCollegeAssumed": false,
+  "specializedHealingTradition": "predominantly_female",
+  "maleHealerLegallyOrBiologicallyForbidden": false,
+  "knowledgeTransmission": "mainly_woman_to_woman_apprenticeship_and_experience",
+  "careLocations": [
+    "healer_home_or_workspace",
+    "patient_home",
+    "inn",
+    "safe_workplace",
+    "safe_docked_vessel",
+    "other_compatible_location"
+  ],
+  "homeRemediesCommonButNotProfessional": true,
+  "trainedKnowledgeMayInclude": [
+    "medicinal_plants",
+    "ointments",
+    "poultices",
+    "infusions",
+    "wounds",
+    "fevers",
+    "common_ailments",
+    "childbirth_assistance"
+  ],
+  "modernDiagnosisForbidden": true,
+  "healerAvailabilityDependsOn": [
+    "current_patient",
+    "home_visit",
+    "material_trip",
+    "rest",
+    "absence",
+    "illness"
+  ],
+  "infiniteSimultaneousCapacityForbidden": true,
+  "treatmentMayRequire": [
+    "time",
+    "materials",
+    "rest"
+  ],
+  "healthOutcomeResolvedByGameHealthSystemNotAI": true,
+  "medicinalFloraMustComeFromCanonicalFloraWhenDefined": true,
+  "privacyDoesNotBroadcastPatientInformation": true,
+  "supernaturalHealingNotAssumedByThisContract": true,
+  "externalDependencies": {
+    "exactHealingMechanics": "future_Nimroel_health_system",
+    "paymentAndFees": "Norgard_economic_system",
+    "medicinalFlora": "future_canonical_medicinal_flora"
+  }
+}

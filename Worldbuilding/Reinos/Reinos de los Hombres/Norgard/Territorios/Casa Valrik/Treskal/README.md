@@ -68,6 +68,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_woodcraft_culture_contract_v0.1.json` — cadena artesanal de madera y estados W01–W08.
 - `treskal_light_visibility_sound_contract_v0.1.json` — luz, visibilidad, sonido y audición diegética.
 - `treskal_maritime_culture_contract_v0.1.json` — cultura marítima, saber del mar y redes sociales portuarias.
+- `treskal_health_care_network_contract_v0.1.json` — red de curanderas, cuidados y disponibilidad.
 
 ## Estado del diseño
 
@@ -235,3 +236,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `cultura_maritima_saber_del_mar_v0.1.md` — experiencia marítima, familias, oficios y relación civil/naval.
 - `vida_social_puerto_informacion_v0.1.md` — redes del puerto, visitantes, rumores y circulación de información.
+
+### 34_Salud_y_cuidados
+
+- `red_urbana_curacion_cuidados_v0.1.md` — red distribuida de curanderas, remedios domésticos y atención a domicilio.
+- `disponibilidad_curanderas_gameplay_v0.1.md` — capacidad, desplazamiento, materiales y resolución de cuidados.
