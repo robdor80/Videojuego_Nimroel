@@ -92,6 +92,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_cross_system_causality_contract_v0.1.json` — integración causal y autoridad de escritura entre sistemas.
 - `treskal_tools_workstations_equipment_contract_v0.1.json` — herramientas, estaciones y capacidad productiva.
 - `treskal_work_hazards_accidents_contract_v0.1.json` — riesgos laborales, accidentes y continuidad operativa.
+- `treskal_rest_sleep_availability_contract_v0.1.json` — sueño, descanso y disponibilidad de NPC.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -386,3 +387,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `riesgos_precauciones_accidentes_v0.1.md` — riesgos HAZ01–HAZ07 y precauciones prácticas preindustriales.
 - `respuesta_continuidad_operativa_v0.1.md` — estados ACC01–ACC08 y recuperación tras incidente.
+
+### 59_Sueno_y_descanso
+
+- `sueno_descanso_disponibilidad_v0.1.md` — estados REST01–REST07 y disponibilidad cotidiana.
+- `interrupciones_continuidad_rutina_v0.1.md` — interrupciones, retorno a rutina y emergencias nocturnas.

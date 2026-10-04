@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_rest_sleep_availability_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "restStates": {
+    "REST01": "active",
+    "REST02": "short_rest",
+    "REST03": "off_duty",
+    "REST04": "preparing_sleep",
+    "REST05": "sleeping",
+    "REST06": "interrupted",
+    "REST07": "recovering"
+  },
+  "exactUniversalSleepHours": false,
+  "fatigueBarDefined": false,
+  "npcAvailability24x7Forbidden": true,
+  "sleepingLocations": [
+    "home",
+    "inn_room",
+    "temporary_lodging",
+    "other_legitimate_safe_space"
+  ],
+  "individualBedroomUniversal": false,
+  "professionMayShiftSleepDaypart": true,
+  "continuousFunctionsRequireReliefRatherThanSleeplessNpc": true,
+  "sleepInterruptionsRequireCause": true,
+  "businessOpenStateDistinctFromOwnerWakefulness": true,
+  "longTravelMayRequireRestStops": true,
+  "exceptionalNightMayCreateRecoveryState": true,
+  "sicknessMayIncreaseRestWithoutAutomaticHealing": true,
+  "aiCannotWakeNpcForConvenience": true,
+  "derivedAvailabilityFields": [
+    "available_for_work",
+    "available_for_social_interaction",
+    "available_for_emergency",
+    "current_rest_state"
+  ],
+  "commissionProgressStopsWhenNoActualWorkerIsWorking": true,
+  "nighttimeEmergencyAwakeningRequiresPerceptionMessageOrProximity": true,
+  "lodMayAggregateRestButMustMaterializeCompatibleLocation": true,
+  "externalDependencies": {
+    "exactFatigueAndNeeds": "future_Nimroel_character_needs_system",
+    "exactShiftSchedules": "future_Nimroel_time_and_institution_schedule_system"
+  }
+}

@@ -1398,6 +1398,41 @@
         "stabilized scene may still have injury damage blocked access lost production and repair work",
         "incident closes only when principal consequences are resolved"
       ]
+    },
+    {
+      "id": "npc_availability_follows_rest_state",
+      "expected": [
+        "sleep off-duty pause and recovery affect whether actor can work or interact",
+        "NPCs are not 24/7 service endpoints"
+      ]
+    },
+    {
+      "id": "sleep_schedule_is_role_specific_not_universal",
+      "expected": [
+        "fisher baker tavern worker guard and ordinary artisan may rest at different dayparts",
+        "no universal sleep clock is imposed"
+      ]
+    },
+    {
+      "id": "sleep_interruption_requires_real_cause",
+      "expected": [
+        "fire accident urgent message or nearby danger may wake actor",
+        "trivial player convenience does not"
+      ]
+    },
+    {
+      "id": "employment_does_not_mean_continuous_presence",
+      "expected": [
+        "EMP02 worker may be off-duty resting eating or away",
+        "workplace_ref does not pin NPC permanently to workplace"
+      ]
+    },
+    {
+      "id": "lod_rest_materializes_consistently",
+      "expected": [
+        "low-detail rest may be aggregated",
+        "on materialization NPC location and activity remain compatible with stored rest/routine state"
+      ]
     }
   ]
 }
