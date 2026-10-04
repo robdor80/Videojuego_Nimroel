@@ -75,3 +75,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_pregnancy_birth_early_infancy_contract_v0.1.json` — PREG01–PREG06, parto, nacimiento persistente y primera infancia.
 - `treskal_child_development_autonomy_learning_contract_v0.1.json` — CHD01–CHD06, autonomía, supervisión y transición hacia aprendizaje.
 - `treskal_aging_late_life_activity_contract_v0.1.json` — AGE01–AGE06, vejez activa, carga adaptada, mentoría y dependencia real.
+- `treskal_friendship_social_circles_contract_v0.1.json` — FRI01–FRI07, amistad profunda, confianza y círculos sociales persistentes.

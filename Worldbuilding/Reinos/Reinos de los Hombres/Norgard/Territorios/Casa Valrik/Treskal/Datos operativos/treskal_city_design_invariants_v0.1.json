@@ -1972,6 +1972,48 @@
         "npc_id relationships memory reputation and ownership persist through aging",
         "visual aging must preserve recognizable identity rather than rerolling the NPC"
       ]
+    },
+    {
+      "id": "familiarity_does_not_auto_create_friendship_depth",
+      "expected": [
+        "repeated meetings may support friendship opportunities",
+        "close friendship requires compatible shared history trust and interaction"
+      ]
+    },
+    {
+      "id": "friendship_is_not_romance_or_obligation",
+      "expected": [
+        "friendship remains distinct from AFF romantic state",
+        "friends may help each other but friendship does not create unlimited care labor money or access rights"
+      ]
+    },
+    {
+      "id": "confidant_access_is_specific_not_omniscient",
+      "expected": [
+        "a trusted friend may know selected private information learned through real disclosure or observation",
+        "confidant status never grants automatic access to all secrets or hidden world facts"
+      ]
+    },
+    {
+      "id": "social_circle_membership_does_not_equal_uniform_friendship",
+      "expected": [
+        "people may share a habitual group while having different pairwise relationships",
+        "group membership does not create equal trust intimacy or loyalty among all members"
+      ]
+    },
+    {
+      "id": "friendship_survives_distance_only_through_history_and_contact",
+      "expected": [
+        "old friendships can persist across reduced contact",
+        "distance does not create new shared memories or knowledge without communication"
+      ]
+    },
+    {
+      "id": "former_friendship_preserves_memory",
+      "expected": [
+        "strained distant or broken friendships retain relevant memories and shared social links",
+        "relationship history is not reset when friendship weakens"
+      ]
     }
   ]
 }

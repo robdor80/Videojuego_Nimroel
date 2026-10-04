@@ -472,3 +472,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `envejecimiento_autonomia_vejez_activa_v0.1.md` — estados AGE01–AGE06, capacidad, cuidado, sociabilidad y continuidad personal.
 - `experiencia_mentoria_reduccion_actividad_v0.1.md` — trabajo adaptado, mentoría, continuidad de negocios y transmisión de saber.
+
+### 74_Amistad_y_circulos_sociales
+
+- `amistad_confianza_continuidad_personal_v0.1.md` — estados FRI01–FRI07, confianza, confidencia, ayuda y amistades a distancia.
+- `circulos_sociales_grupos_habituales_v0.1.md` — grupos persistentes, relaciones internas desiguales, rutinas y circulación de información.
