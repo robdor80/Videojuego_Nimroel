@@ -82,6 +82,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_business_lifecycle_contract_v0.1.json` — ciclo de vida BIZ01–BIZ08 y continuidad empresarial.
 - `treskal_hygiene_laundry_domestic_water_contract_v0.1.json` — aseo, colada, agua doméstica y estado visual.
 - `treskal_fuel_cooking_heat_contract_v0.1.json` — combustible, cocina, calor doméstico y stock térmico.
+- `treskal_doors_locks_keys_access_contract_v0.1.json` — puertas, llaves, cerraduras y acceso físico.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -326,3 +327,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `combustible_cocina_calor_domestico_v0.1.md` — leña, cocina, hornos, almacenamiento y riesgo de incendio.
 - `stock_combustible_consumo_termico_v0.1.md` — stock térmico, consumo agregado y reposición real.
+
+### 48_Accesos_fisicos
+
+- `puertas_llaves_cerraduras_acceso_v0.1.md` — estados DOOR01–DOOR07 y separación entre acceso físico y permiso.
+- `llaves_permisos_cambios_acceso_v0.1.md` — llaves persistentes, préstamo, revocación y roles.

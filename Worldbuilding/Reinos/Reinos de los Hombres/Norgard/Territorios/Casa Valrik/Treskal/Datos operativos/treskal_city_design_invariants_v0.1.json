@@ -1048,6 +1048,41 @@
         "LOD may resolve consumption and delivery in aggregate",
         "stock is replenished only by real delivery purchase transfer or production source"
       ]
+    },
+    {
+      "id": "physical_opening_and_social_permission_are_distinct",
+      "expected": [
+        "open or unlocked access can still be private/restricted",
+        "permission can exist even while access remains physically secured"
+      ]
+    },
+    {
+      "id": "key_possession_is_not_authorization",
+      "expected": [
+        "holding a key does not grant ownership role or permission",
+        "P4/P5 may require institutional role beyond mechanism access"
+      ]
+    },
+    {
+      "id": "doors_and_locks_persist_world_state",
+      "expected": [
+        "open lock damage access class and relevant key compatibility survive reload and LOD changes",
+        "scene loading does not reset doors"
+      ]
+    },
+    {
+      "id": "ai_cannot_mutate_access_by_prose",
+      "expected": [
+        "generated narration or dialogue proposing open/close/transfer key requires engine validation",
+        "nonexistent keys are never created by speech"
+      ]
+    },
+    {
+      "id": "revoked_permission_can_leave_physical_key",
+      "expected": [
+        "former guest worker or provider may physically retain key after authorization ends",
+        "social access rules still deny legitimate entry"
+      ]
     }
   ]
 }

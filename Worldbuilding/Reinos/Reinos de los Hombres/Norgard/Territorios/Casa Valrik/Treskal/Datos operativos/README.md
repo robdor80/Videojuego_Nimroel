@@ -50,3 +50,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, materiales reservados, calidad y procedencia.
 - `treskal_hygiene_laundry_domestic_water_contract_v0.1.json` — aseo, lavado, agua doméstica y pátina/suciedad contextual.
 - `treskal_fuel_cooking_heat_contract_v0.1.json` — leña, consumo térmico, hornos y riesgo de fuego.
+- `treskal_doors_locks_keys_access_contract_v0.1.json` — estados DOOR01–DOOR07, llaves y permisos.
