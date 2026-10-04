@@ -62,6 +62,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_ai_comparative_test_pack_v0.1.json` — 16 fixtures no canónicos para pruebas comparativas de modelos.
 - `treskal_materialization_streaming_persistence_contract_v0.1.json` — materialización determinista, LOD lógico y migraciones.
 - `treskal_event_causality_contract_v0.1.json` — ciclo de vida EVT, causalidad y propagación de efectos.
+- `treskal_arrival_departure_travel_contract_v0.1.json` — aproximaciones APP, viaje territorial y transición de LOD.
 
 ## Estado del diseño
 
@@ -200,3 +201,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `ciclo_vida_eventos_v0.1.md` — instancias EVT, estados de vida y fuentes causales.
 - `propagacion_consecuencias_v0.1.md` — efectos compartidos entre rutas, stock, actividad, conocimiento y NPC.
+
+### 28_Entradas_y_viaje
+
+- `entradas_salidas_transicion_territorio_ciudad_v0.1.md` — aproximaciones APP01–APP06 y transición gradual sin muralla.
+- `continuidad_viaje_aprendizaje_rutas_v0.1.md` — conocimiento de rutas, viajes NPC y mercancía en tránsito.

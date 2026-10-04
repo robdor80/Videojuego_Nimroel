@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_arrival_departure_travel_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "cityWall": false,
+  "universalCityGate": false,
+  "approaches": {
+    "APP01": {
+      "id": "interior_main_approach",
+      "path": [
+        "territorial_road",
+        "Z01",
+        "main_bridge",
+        "C01",
+        "T02_or_T03"
+      ],
+      "uses": [
+        "general_travel",
+        "trade",
+        "rural_goods",
+        "official_traffic"
+      ]
+    },
+    "APP02": {
+      "id": "forest_timber_approach",
+      "path": [
+        "forest_routes",
+        "T11",
+        "C02",
+        "T02_or_Z06_or_Z05"
+      ],
+      "uses": [
+        "timber",
+        "workers",
+        "heavy_carts",
+        "suppliers"
+      ]
+    },
+    "APP03": {
+      "id": "rural_supply_livestock_approach",
+      "path": [
+        "rural_routes",
+        "T11",
+        "C06",
+        "Z14"
+      ],
+      "uses": [
+        "livestock",
+        "produce",
+        "grain",
+        "carts"
+      ]
+    },
+    "APP04": {
+      "id": "civil_maritime_approach",
+      "path": [
+        "Sea_of_Suthiros",
+        "T07",
+        "Z10"
+      ],
+      "uses": [
+        "merchants",
+        "fishing",
+        "maritime_travel",
+        "crew"
+      ]
+    },
+    "APP05": {
+      "id": "river_approach",
+      "path": [
+        "compatible_river_network",
+        "T01",
+        "Z02"
+      ],
+      "uses": [
+        "small_craft",
+        "river_fish",
+        "inland_cargo"
+      ]
+    },
+    "APP06": {
+      "id": "royal_shipyard_authorized_supply_approach",
+      "path": [
+        "T11_or_T02_or_T04",
+        "C07",
+        "T08"
+      ],
+      "uses": [
+        "authorized_materials",
+        "authorized_workers",
+        "authorized_suppliers"
+      ],
+      "public": false
+    }
+  },
+  "ruralToUrbanSecurityTransitionWithoutPhysicalBorder": true,
+  "universalEntryRegistrationAssumed": false,
+  "arrivalPresentationDependsOn": [
+    "approach",
+    "daypart",
+    "weather",
+    "season",
+    "dynamic_state"
+  ],
+  "progressiveMaterialization": [
+    "aggregate_state",
+    "LOD_M_subzones",
+    "coherent_traffic",
+    "relevant_npcs",
+    "LOD_H_interaction"
+  ],
+  "leavingCityDoesNotPauseWorld": true,
+  "fastTravelIfImplementedMustAdvanceWorldTime": true,
+  "routeKnowledgeStates": [
+    "unknown",
+    "heard_of",
+    "travelled",
+    "familiar"
+  ],
+  "routeKnowledgeDoesNotRevealCurrentRouteState": true,
+  "offscreenTravelerFields": [
+    "origin",
+    "destination",
+    "route",
+    "reason",
+    "travel_state"
+  ],
+  "convoyCargoNotInDestinationStockUntilArrival": true
+}

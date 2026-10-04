@@ -25,7 +25,8 @@
     "housingSocialGeography": "Datos operativos/treskal_housing_social_geography_contract_v0.1.json",
     "aiContextAndOutput": "Datos operativos/treskal_ai_context_and_output_contract_v0.1.json",
     "materializationStreamingPersistence": "Datos operativos/treskal_materialization_streaming_persistence_contract_v0.1.json",
-    "eventCausality": "Datos operativos/treskal_event_causality_contract_v0.1.json"
+    "eventCausality": "Datos operativos/treskal_event_causality_contract_v0.1.json",
+    "arrivalDepartureTravel": "Datos operativos/treskal_arrival_departure_travel_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -42,7 +43,8 @@
     "O": "occupation_family",
     "H": "household_template",
     "V": "visitor_type",
-    "ST": "storage_class"
+    "ST": "storage_class",
+    "APP": "city_approach"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

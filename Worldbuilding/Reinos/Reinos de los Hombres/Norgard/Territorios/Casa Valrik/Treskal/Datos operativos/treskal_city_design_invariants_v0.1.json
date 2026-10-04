@@ -351,6 +351,39 @@
         "system can explain important changes through event or decision ancestry",
         "player intervention updates same causal chain rather than a separate quest-only state"
       ]
+    },
+    {
+      "id": "treskal_has_no_universal_city_gate",
+      "expected": [
+        "arrival is gradual from territory to urban edge",
+        "ordinary entry does not require passing a monumental gate or universal checkpoint"
+      ]
+    },
+    {
+      "id": "arrival_identity_depends_on_approach",
+      "expected": [
+        "land timber rural sea and river approaches expose different functional faces of the same city",
+        "Royal Shipyards are not the only dominant first impression"
+      ]
+    },
+    {
+      "id": "leaving_treskal_does_not_pause_city",
+      "expected": [
+        "NPC travel businesses events and stock continue offscreen",
+        "reentry reflects elapsed world state"
+      ]
+    },
+    {
+      "id": "route_knowledge_is_not_live_route_omniscience",
+      "expected": [
+        "knowing a route does not reveal current mud flood blockage or patrol state without recent information"
+      ]
+    },
+    {
+      "id": "cargo_in_transit_is_not_destination_stock",
+      "expected": [
+        "convoy or vessel cargo becomes destination stock only upon actual arrival and transfer"
+      ]
     }
   ]
 }
