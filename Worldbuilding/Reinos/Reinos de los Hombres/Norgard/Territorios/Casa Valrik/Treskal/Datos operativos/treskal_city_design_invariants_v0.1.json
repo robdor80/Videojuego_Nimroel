@@ -873,6 +873,41 @@
         "repair may progress out of scene only while workers materials access and time remain valid",
         "blocked or interrupted jobs do not advance magically"
       ]
+    },
+    {
+      "id": "market_is_not_global_city_inventory",
+      "expected": [
+        "player buys from actual vendor/stall/business stock",
+        "market interface never exposes goods merely because they exist somewhere in Treskal"
+      ]
+    },
+    {
+      "id": "market_stalls_have_physical_daily_cycle",
+      "expected": [
+        "relevant stalls arrive unload set up sell close and remove/store remaining goods",
+        "closing market does not delete unsold stock"
+      ]
+    },
+    {
+      "id": "market_restock_requires_real_delivery",
+      "expected": [
+        "during-day replenishment occurs only through actual nearby storage producer cart or delivery",
+        "time passage alone does not refill a stall"
+      ]
+    },
+    {
+      "id": "specialized_markets_wait_for_canonical_calendar",
+      "expected": [
+        "no Earth weekday or invented periodicity is assigned before Nimroel calendar exists",
+        "specialized seller activity remains event/availability based for now"
+      ]
+    },
+    {
+      "id": "market_lod_preserves_trade_facts",
+      "expected": [
+        "aggregate simulation may replace crowd detail",
+        "persistent sellers stock purchases deliveries and incidents remain invariant across LOD"
+      ]
     }
   ]
 }

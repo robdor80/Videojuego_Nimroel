@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_daily_market_stall_contract",
+  "version": "0.1",
+  "status": "active_canon_contract",
+  "marketsActiveDaily": true,
+  "specializedMarketFineCalendarDefined": false,
+  "sellerTypes": {
+    "MK01": "direct_producer",
+    "MK02": "regular_vendor",
+    "MK03": "merchant_intermediary",
+    "MK04": "temporary_vendor",
+    "MK05": "specialized_vendor"
+  },
+  "stallLifecycle": [
+    "arrival",
+    "unload",
+    "setup",
+    "open",
+    "sell",
+    "local_restock_if_real",
+    "close",
+    "pack",
+    "depart_or_store"
+  ],
+  "relevantStallFields": [
+    "stall_id",
+    "seller_ref",
+    "business_ref_if_any",
+    "market_ref",
+    "position_ref",
+    "stock_ref",
+    "open_state",
+    "setup_state"
+  ],
+  "marketIsNotGlobalInventory": true,
+  "stockMustHaveSource": true,
+  "purchaseReducesStock": true,
+  "leftoversPersistOrSpoilRatherThanVanish": true,
+  "perishableGoodsTimeSensitive": true,
+  "universalFixedOpeningHours": false,
+  "marketLod": {
+    "low": [
+      "stall_counts",
+      "aggregate_stock",
+      "demand",
+      "activity",
+      "incidents"
+    ],
+    "medium": [
+      "relevant_stalls",
+      "persistent_sellers",
+      "flows",
+      "deliveries"
+    ],
+    "high": [
+      "individual_npcs",
+      "relevant_goods",
+      "dialogue",
+      "purchase",
+      "perception"
+    ]
+  },
+  "temporaryAbsenceDoesNotSpawnCloneVendor": true,
+  "specializedMarketsDoNotReceiveEarthWeekdays": true,
+  "externalDependencies": {
+    "specializedMarketCalendar": "Norgard_calendar_and_local_market_schedule_detail",
+    "marketFeesRules": "Norgard_fiscal_and_legal_system",
+    "exactWeightsMeasures": "future_Norgard_trade_measurement_system"
+  }
+}
