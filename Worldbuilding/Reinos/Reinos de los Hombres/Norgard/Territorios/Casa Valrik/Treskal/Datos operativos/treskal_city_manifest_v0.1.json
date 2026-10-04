@@ -65,7 +65,8 @@
     "dependentsCareNetwork": "Datos operativos/treskal_dependents_care_network_contract_v0.1.json",
     "householdHospitalityGuests": "Datos operativos/treskal_household_hospitality_guest_contract_v0.1.json",
     "householdChoresDomesticLoad": "Datos operativos/treskal_household_chores_domestic_load_contract_v0.1.json",
-    "apprenticeshipSkillTransmission": "Datos operativos/treskal_apprenticeship_skill_transmission_contract_v0.1.json"
+    "apprenticeshipSkillTransmission": "Datos operativos/treskal_apprenticeship_skill_transmission_contract_v0.1.json",
+    "leisureSocialGathering": "Datos operativos/treskal_leisure_social_gathering_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -123,7 +124,8 @@
     "HOSP": "hospitality_state",
     "CHORE": "household_chore_type",
     "DOM": "domestic_load_state",
-    "APR": "apprenticeship_state"
+    "APR": "apprenticeship_state",
+    "LEIS": "leisure_context"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

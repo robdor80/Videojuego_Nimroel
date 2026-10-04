@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_leisure_social_gathering_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "leisureContexts": {
+    "LEIS01": "household_social",
+    "LEIS02": "tavern_or_inn_social",
+    "LEIS03": "market_and_public_space",
+    "LEIS04": "waterfront_and_work_edge",
+    "LEIS05": "games_and_play",
+    "LEIS06": "music_story_and_performance",
+    "LEIS07": "solitary_leisure"
+  },
+  "exactGamesDefined": false,
+  "exactSongsDefined": false,
+  "exactFestivalCalendarDefined": false,
+  "leisureNotEquivalentToSleep": true,
+  "leisureAvailabilityInputs": [
+    "rest_state",
+    "work_state",
+    "household",
+    "money_if_needed",
+    "weather",
+    "care",
+    "health",
+    "relationships",
+    "event"
+  ],
+  "tavernNotOnlySocialSpace": true,
+  "tavernViolenceNotDefault": true,
+  "tavernClienteleNotMaleOnlyByDefault": true,
+  "householdSocialUsesHospitalityAndConversationPrivacy": true,
+  "publicSpaceSocialActivityDependsOnTimeWeatherDensityAndEvents": true,
+  "restrictedPortAreasRemainRestrictedDuringLeisure": true,
+  "gamblingNotEstablishedByThisContract": true,
+  "musicNeedNotBeReligious": true,
+  "childPlayRespectsCareTrafficAndHazards": true,
+  "elderlyParticipationNotRestrictedByAgeAlone": true,
+  "repeatedContactMayIncreaseFamiliarityButNotAutoFriendship": true,
+  "rumorOpportunitiesStillRequireHearingAndTransmission": true,
+  "publicBehaviorAffectsReputationOnlyThroughWitnessAndInterpretation": true,
+  "mourningMayReduceOrdinaryLeisureWithoutBlockingSupportVisits": true,
+  "aiCannotInventCanonicalGamesSongsRelationshipsOrEvents": true,
+  "relevantSocialEventFields": [
+    "social_event_id",
+    "participant_refs",
+    "location_ref",
+    "leisure_context",
+    "start_time",
+    "end_time",
+    "conversation_refs_if_any",
+    "relation_deltas_if_any",
+    "knowledge_deltas_if_any"
+  ],
+  "offscreenSocialEventsRequireCompatiblePresenceAvailabilityAndTime": true,
+  "lodAggregateFields": [
+    "social_activity_pressure",
+    "gathering_nodes",
+    "relation_opportunities",
+    "rumor_exposure_opportunities"
+  ],
+  "externalDependencies": {
+    "exactGamesAndPastimes": "future_Norgard_leisure_culture",
+    "exactSongsAndPerformanceTraditions": "future_Norgard_music_and_oral_culture",
+    "festivalCalendar": "future_Nimroel_calendar"
+  }
+}

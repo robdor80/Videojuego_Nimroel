@@ -102,6 +102,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_household_hospitality_guest_contract_v0.1.json` — hospitalidad, visitas y permisos temporales de huésped.
 - `treskal_household_chores_domestic_load_contract_v0.1.json` — tareas domésticas, carga del hogar y backlog.
 - `treskal_apprenticeship_skill_transmission_contract_v0.1.json` — aprendizaje de oficio, mentoría y competencia progresiva.
+- `treskal_leisure_social_gathering_contract_v0.1.json` — ocio, sociabilidad, encuentros y familiaridad.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -446,3 +447,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `aprendizaje_relacion_maestro_aprendiz_v0.1.md` — estados APR01–APR06 y relación formativa.
 - `practica_competencia_especialidad_v0.1.md` — progreso por evidencia, especialización y coste de supervisión.
+
+### 69_Ocio_y_sociabilidad
+
+- `ocio_sociabilidad_tiempo_no_laboral_v0.1.md` — contextos LEIS01–LEIS07 y tiempo social/no laboral.
+- `encuentros_sociales_familiaridad_v0.1.md` — encuentros, familiaridad, relaciones y resolución offscreen.

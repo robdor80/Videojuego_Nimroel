@@ -1776,6 +1776,41 @@
         "APR06 means autonomous competent practice within real specialty",
         "exceptional mastery reputation and advanced specialization require further experience"
       ]
+    },
+    {
+      "id": "treskal_social_life_is_not_only_work_and_sleep",
+      "expected": [
+        "NPCs may spend off-duty time in household tavern public space waterfront games stories music or solitary leisure",
+        "leisure consumes actual time and availability"
+      ]
+    },
+    {
+      "id": "tavern_is_not_universal_social_or_violence_machine",
+      "expected": [
+        "households markets plazas inns and work-edge spaces also support social life",
+        "tavern scenes do not default to fights drunkenness or male-only clientele"
+      ]
+    },
+    {
+      "id": "familiarity_does_not_auto_become_friendship",
+      "expected": [
+        "repeated plausible meetings may improve recognition and comfort",
+        "friendship trust rivalry and intimacy require actual interaction history"
+      ]
+    },
+    {
+      "id": "social_nodes_do_not_broadcast_rumors",
+      "expected": [
+        "crowded places create exposure opportunities",
+        "CONV HEAR and information transmission still determine who knows what"
+      ]
+    },
+    {
+      "id": "offscreen_relationship_change_requires_possible_encounter",
+      "expected": [
+        "participants must be available and share plausible place activity and time",
+        "relationships cannot advance while NPCs were in incompatible locations"
+      ]
     }
   ]
 }
