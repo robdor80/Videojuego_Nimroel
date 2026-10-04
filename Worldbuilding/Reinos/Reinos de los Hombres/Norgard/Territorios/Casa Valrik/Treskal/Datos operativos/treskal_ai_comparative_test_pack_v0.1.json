@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_ai_comparative_test_pack",
+  "version": "0.1",
+  "status": "design_test_pack",
+  "canonicalFixtures": false,
+  "targetProviders": [
+    "OpenAI",
+    "Gemini",
+    "Mistral"
+  ],
+  "commonRules": {
+    "sameSemanticContextAcrossProviders": true,
+    "exactWordingMatchNotRequired": true,
+    "persistentFactsMayNotBeInvented": true,
+    "aiMayNotMutateWorldStateDirectly": true
+  },
+  "tests": [
+    {
+      "testId": "AI_TRESKAL_001",
+      "category": "off_story_default_perception",
+      "fixture": "closed_store_room_with_hidden_object",
+      "worldTruth": {
+        "hiddenObject": "small_pouch_beneath_floorboard"
+      },
+      "authorizedNarratorFacts": [
+        "closed wooden room",
+        "ordinary floorboards",
+        "faint workshop smell"
+      ],
+      "playerPrompt": "Miro la habitación. ¿Qué veo?",
+      "required": [
+        "describe only authorized perceptible facts"
+      ],
+      "forbidden": [
+        "mention pouch",
+        "hint that something is hidden under floor",
+        "omniscient phrasing"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_002",
+      "category": "focused_perception_success",
+      "fixture": "same_room_after_engine_perception_resolution",
+      "authorizedDiscoveries": [
+        "one floorboard has fresh scratches around its edge"
+      ],
+      "playerPrompt": "Me fijo bien en el suelo.",
+      "required": [
+        "mention fresh scratches"
+      ],
+      "forbidden": [
+        "reveal hidden pouch unless explicitly authorized",
+        "identify who made scratches"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_003",
+      "category": "focused_perception_limited",
+      "fixture": "door_lock_examination",
+      "worldTruth": {
+        "lockWasForced": true,
+        "culprit": "unknown_to_player"
+      },
+      "authorizedDiscoveries": [
+        "minor scratches, age uncertain"
+      ],
+      "playerPrompt": "Examino la cerradura.",
+      "required": [
+        "express uncertainty"
+      ],
+      "forbidden": [
+        "state recent break-in as fact",
+        "name culprit"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_004",
+      "category": "everyday_personality",
+      "npcRole": "experienced_ebanista",
+      "npcPersonality": [
+        "practical",
+        "proud_of_craft",
+        "not_chatty_but_not_rude"
+      ],
+      "npcKnowledge": [
+        "local timber suppliers",
+        "woodcraft reputation"
+      ],
+      "playerPrompt": "¿Qué tal va el trabajo hoy?",
+      "required": [
+        "natural everyday answer",
+        "personality consistency"
+      ],
+      "forbidden": [
+        "encyclopedic exposition about Treskal",
+        "unprompted secret"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_005",
+      "category": "professional_knowledge_limit",
+      "npcRole": "ebanista",
+      "npcKnowledge": [
+        "woodcraft",
+        "own_neighborhood"
+      ],
+      "unknownToNpc": [
+        "current internal incident at Royal Shipyards"
+      ],
+      "playerPrompt": "¿Qué ha pasado dentro de los Astilleros Reales?",
+      "required": [
+        "admit lack of direct knowledge or label rumor if one exists"
+      ],
+      "forbidden": [
+        "describe internal incident from World State"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_006",
+      "category": "rumor_discipline",
+      "npcRole": "innkeeper",
+      "knowledgeState": "K3",
+      "rumor": "a merchant vessel may be delayed by storm",
+      "playerPrompt": "¿Es verdad que no llegará el mercante?",
+      "required": [
+        "frame information as rumor/uncertain"
+      ],
+      "forbidden": [
+        "state delay as confirmed fact"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_007",
+      "category": "known_secret_non_disclosure",
+      "npcRole": "administrative_clerk",
+      "knownSecret": "restricted document exists",
+      "disclosureMotivation": "none",
+      "playerRelationship": "stranger",
+      "playerPrompt": "Seguro que guardáis algo sobre ese asunto. Cuéntamelo.",
+      "required": [
+        "protect secret naturally"
+      ],
+      "forbidden": [
+        "reveal secret content merely because model knows it"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_008",
+      "category": "deliberate_lie",
+      "npcRole": "merchant",
+      "worldTruth": {
+        "merchantSawMissingCrate": true
+      },
+      "npcKnowledgeState": "K1",
+      "npcMotivation": "hide_own_involvement",
+      "intendedSpeechBehavior": "lie_or_evasion_allowed",
+      "playerPrompt": "¿Viste la caja cuando desapareció?",
+      "required": [
+        "utterance may lie/equivocate while world truth remains unchanged"
+      ],
+      "forbidden": [
+        "rewrite world truth to match utterance"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_009",
+      "category": "memory_promise",
+      "npcRole": "artisan",
+      "priorMemory": {
+        "playerPromisedDelivery": true,
+        "deadlinePassed": true,
+        "deliveryCompleted": false
+      },
+      "playerPrompt": "Vengo a hablarte de otra cosa.",
+      "required": [
+        "may reference overdue promise if socially relevant",
+        "retain memory"
+      ],
+      "forbidden": [
+        "act as if first meeting unless justified"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_010",
+      "category": "humor_contextual",
+      "npcRole": "porter",
+      "npcPersonality": [
+        "dry_humor",
+        "tired"
+      ],
+      "scene": "large timber convoy causing congestion",
+      "playerPrompt": "¿Día tranquilo?",
+      "required": [
+        "contextual humor acceptable",
+        "stay grounded in current scene"
+      ],
+      "forbidden": [
+        "modern meme slang",
+        "out-of-world joke"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_011",
+      "category": "contradictory_witness",
+      "npcRole": "fish_seller",
+      "npcKnowledge": {
+        "sawPersonLeaving": "near_dusk",
+        "confidence": "medium"
+      },
+      "otherWitnessClaim": "after_dark",
+      "playerPrompt": "Otro dice que salió ya de noche.",
+      "required": [
+        "allow disagreement",
+        "express own confidence/source"
+      ],
+      "forbidden": [
+        "merge both accounts into a certain fact"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_012",
+      "category": "unknown_person_location",
+      "npcRole": "tavernkeeper",
+      "knowledge": {
+        "personUsuallyVisits": "evening",
+        "currentLocation": "unknown"
+      },
+      "playerPrompt": "¿Dónde está ahora mismo?",
+      "required": [
+        "distinguish usual pattern from current knowledge"
+      ],
+      "forbidden": [
+        "read global NPC position"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_013",
+      "category": "stock_shortage",
+      "npcRole": "shopkeeper",
+      "worldState": {
+        "requestedItemStock": 0,
+        "expectedDelivery": "delayed"
+      },
+      "playerPrompt": "Quiero comprar ese material.",
+      "required": [
+        "item unavailable",
+        "may explain known delay"
+      ],
+      "forbidden": [
+        "sell item despite zero stock",
+        "spawn replacement stock"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_014",
+      "category": "action_requires_validation",
+      "npcRole": "clerk",
+      "proposedAction": "hand_player_restricted_key",
+      "actualInventory": {
+        "restrictedKey": false
+      },
+      "playerPrompt": "Dame la llave.",
+      "required": [
+        "must not successfully transfer nonexistent key"
+      ],
+      "forbidden": [
+        "state completed transfer"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_015",
+      "category": "persistent_environment",
+      "sceneState": {
+        "previousFireDamage": true,
+        "repairCompleted": false
+      },
+      "playerPrompt": "Vuelvo a la calle donde hubo el incendio. ¿Cómo está?",
+      "required": [
+        "retain visible unresolved damage"
+      ],
+      "forbidden": [
+        "restore pristine initial street"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_016",
+      "category": "subtext_and_tension",
+      "npcRole": "warehouse_worker",
+      "npcPersonality": [
+        "guarded",
+        "loyal_to_employer"
+      ],
+      "npcKnowledge": {
+        "knowsIrregularDelivery": true
+      },
+      "playerRelationship": "unknown_outsider",
+      "playerPrompt": "Parece que anoche entró mercancía fuera de hora.",
+      "required": [
+        "allow guarded/subtextual response",
+        "not dump all knowledge"
+      ],
+      "forbidden": [
+        "automatic confession",
+        "invent new conspiracy"
+      ]
+    }
+  ],
+  "scoringDimensions": [
+    "context_discipline",
+    "secret_discipline",
+    "personality",
+    "naturalness",
+    "subtext",
+    "memory",
+    "lie_handling",
+    "uncertainty",
+    "world_state_integrity",
+    "action_discipline"
+  ]
+}

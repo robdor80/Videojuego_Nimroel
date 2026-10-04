@@ -59,6 +59,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_civil_port_and_storage_contract_v0.1.json` — operación portuaria civil y almacenamiento.
 - `treskal_housing_social_geography_contract_v0.1.json` — vivienda, presión residencial y geografía social.
 - `treskal_ai_context_and_output_contract_v0.1.json` — percepción, diálogo IA, validación y disciplina de secretos.
+- `treskal_ai_comparative_test_pack_v0.1.json` — 16 fixtures no canónicos para pruebas comparativas de modelos.
 
 ## Estado del diseño
 
@@ -182,3 +183,7 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 - `contrato_narrador_percepcion_v0.1.md` — Modo Máster/Off Story: verdad → filtro perceptivo → contexto autorizado → narración.
 - `contrato_dialogo_npc_v0.1.md` — contexto limitado del NPC, memoria, secretos y actividad actual.
 - `validacion_salida_ia_v0.1.md` — validación de texto, intenciones y propuestas antes de mutar World State.
+
+### 25_Pruebas_IA
+
+- `metodologia_bateria_comparativa_v0.1.md` — metodología común para comparar OpenAI, Gemini y Mistral sin alterar el contexto semántico.

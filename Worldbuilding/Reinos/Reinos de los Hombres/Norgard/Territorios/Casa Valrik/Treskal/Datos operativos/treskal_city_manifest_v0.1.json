@@ -72,5 +72,8 @@
     "exactMetricGeometry": "future_Treskal_detailed_cartography",
     "portTaxesCustoms": "Norgard_fiscal_and_legal_system",
     "ownershipInheritanceRentalLaw": "Norgard_law_and_economic_institutions"
+  },
+  "validationFiles": {
+    "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json"
   }
 }
