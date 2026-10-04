@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_daily_life_family_food_contract",
+  "version": "0.1",
+  "status": "active_canon_contract",
+  "dayparts": [
+    "dawn",
+    "morning",
+    "midday",
+    "afternoon",
+    "evening",
+    "night"
+  ],
+  "exactClockSchedules": "future_time_system",
+  "universalWorkSchedule": false,
+  "familyStrongSocialCore": true,
+  "multigenerationalHouseholdsAllowed": true,
+  "childrenAreVisibleUrbanPopulation": true,
+  "modernPlaygrounds": false,
+  "npcLifeIncludesNonWorkMovement": true,
+  "restAndPrivateLifeRequired": true,
+  "foodGroups": {
+    "F01": "grain_and_bread",
+    "F02": "sea_fish",
+    "F03": "river_fish",
+    "F04": "tubers_and_garden_produce",
+    "F05": "meat",
+    "F06": "preserved_foods",
+    "F07": "valrik_beer",
+    "F08": "imported_wine"
+  },
+  "canonicalRecipesDefined": false,
+  "valrikBeerPrestige": "ordinary_not_special",
+  "wineProductionLocal": false,
+  "leisureMayInclude": [
+    "conversation",
+    "drink",
+    "food",
+    "family_visit",
+    "neighborhood_socializing",
+    "tavern",
+    "small_games_if_canon",
+    "watching_activity"
+  ],
+  "earthlyReligiousWeekAssumed": false,
+  "summerLocalFestivalsExistButDetailsPending": true,
+  "familyNeighborCareNetworkSupported": true,
+  "institutionalChildcareAssumed": false,
+  "importantSocialRelationsPersist": true,
+  "externalDependencies": {
+    "exactCalendarAndFestivals": "future_Nimroel_calendar",
+    "canonicalCuisineAndRecipes": "future_Norgard_cuisine",
+    "exactTimeSchedule": "future_Nimroel_time_system",
+    "funeraryDetails": "existing_or_future_Norgard_funerary_canon"
+  }
+}

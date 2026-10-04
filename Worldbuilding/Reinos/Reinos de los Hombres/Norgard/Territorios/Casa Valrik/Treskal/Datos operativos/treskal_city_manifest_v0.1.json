@@ -33,7 +33,8 @@
     "maritimeCulture": "Datos operativos/treskal_maritime_culture_contract_v0.1.json",
     "healthCareNetwork": "Datos operativos/treskal_health_care_network_contract_v0.1.json",
     "learningKnowledgeTransmission": "Datos operativos/treskal_learning_knowledge_transmission_contract_v0.1.json",
-    "hospitalityInnNetwork": "Datos operativos/treskal_hospitality_inn_network_contract_v0.1.json"
+    "hospitalityInnNetwork": "Datos operativos/treskal_hospitality_inn_network_contract_v0.1.json",
+    "dailyLifeFamilyFood": "Datos operativos/treskal_daily_life_family_food_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -53,7 +54,8 @@
     "ST": "storage_class",
     "APP": "city_approach",
     "W": "wood_processing_state",
-    "ED": "learning_mode"
+    "ED": "learning_mode",
+    "F": "food_group"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -90,7 +92,9 @@
     "navalTerminology": "future_Norgard_maritime_terminology",
     "exactHealingMechanics": "future_Nimroel_health_system",
     "medicinalFlora": "future_canonical_medicinal_flora",
-    "exactSkillProgression": "future_Nimroel_character_progression_system"
+    "exactSkillProgression": "future_Nimroel_character_progression_system",
+    "canonicalCuisineAndRecipes": "future_Norgard_cuisine",
+    "exactTimeSchedule": "future_Nimroel_time_system"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",

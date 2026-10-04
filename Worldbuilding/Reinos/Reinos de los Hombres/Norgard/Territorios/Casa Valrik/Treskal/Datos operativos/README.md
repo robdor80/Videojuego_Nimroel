@@ -38,3 +38,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_health_care_network_contract_v0.1.json` — curandería urbana distribuida, materiales y atención.
 - `treskal_learning_knowledge_transmission_contract_v0.1.json` — modos ED01–ED07 y progreso profesional conceptual.
 - `treskal_hospitality_inn_network_contract_v0.1.json` — hospitalidad urbana, posadas y alojamientos persistentes.
+- `treskal_daily_life_family_food_contract_v0.1.json` — vida cotidiana, alimentos F01–F08 y redes familiares.

@@ -628,6 +628,41 @@
         "lodging grants legitimate access to assigned space during stay",
         "does not grant kitchens stores owner quarters or other guest rooms"
       ]
+    },
+    {
+      "id": "treskal_npcs_have_nonwork_lives",
+      "expected": [
+        "NPC routines include meals rest family visits private life and social movement",
+        "city inhabitants are not simulated only as home-to-work machines"
+      ]
+    },
+    {
+      "id": "daily_rhythms_are_role_specific",
+      "expected": [
+        "fishing baking markets workshops taverns guard and port may follow different daypart patterns",
+        "one universal opening schedule is forbidden"
+      ]
+    },
+    {
+      "id": "children_are_age_appropriate_urban_residents",
+      "expected": [
+        "children may play learn do errands and appropriate household tasks",
+        "dangerous adult labor and unrestricted high-risk zones are not default behavior"
+      ]
+    },
+    {
+      "id": "food_reflects_real_supply",
+      "expected": [
+        "household and establishment food consumption draws from actual available categories and stock",
+        "specific signature recipes are not invented before cuisine canon exists"
+      ]
+    },
+    {
+      "id": "family_strength_does_not_force_uniform_households",
+      "expected": [
+        "multigenerational households and family collaboration are common possibilities",
+        "all households are not forced into identical family structures or occupations"
+      ]
     }
   ]
 }

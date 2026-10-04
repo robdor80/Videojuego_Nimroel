@@ -71,6 +71,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_health_care_network_contract_v0.1.json` — red de curanderas, cuidados y disponibilidad.
 - `treskal_learning_knowledge_transmission_contract_v0.1.json` — aprendizaje, procedencia del conocimiento y continuidad profesional.
 - `treskal_hospitality_inn_network_contract_v0.1.json` — hospitalidad, red de posadas y estancias persistentes.
+- `treskal_daily_life_family_food_contract_v0.1.json` — ritmos cotidianos, alimentación y redes familiares/vecinales.
 
 ## Estado del diseño
 
@@ -253,3 +254,9 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `hospitalidad_urbana_red_posadas_v0.1.md` — red plural de posadas y hospitalidad Valrik a escala urbana.
 - `alojamiento_estancia_memoria_posada_v0.1.md` — estancias persistentes, acceso temporal y memoria del alojamiento.
+
+### 37_Vida_cotidiana
+
+- `vida_cotidiana_familia_ritmos_v0.1.md` — franjas del día, hogar, niños, ocio y descanso.
+- `alimentacion_abastecimiento_domestico_v0.1.md` — grupos F01–F08 y conexión entre mesa y abastecimiento.
+- `redes_familiares_vecinales_cuidado_v0.1.md` — familia, vecinos, ayuda y relaciones persistentes.
