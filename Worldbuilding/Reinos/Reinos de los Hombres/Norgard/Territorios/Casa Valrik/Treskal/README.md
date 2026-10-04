@@ -76,6 +76,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_wayfinding_signage_addressing_contract_v0.1.json` — orientación humana, rótulos y localización no moderna.
 - `treskal_animals_carts_traffic_contract_v0.1.json` — animales, carros, congestión y servicios de transporte.
 - `treskal_messaging_letters_delivery_contract_v0.1.json` — mensajería, cartas y entrega física de información.
+- `treskal_property_possession_object_contract_v0.1.json` — propiedad, posesión, custodia y objetos persistentes.
 
 ## Estado del diseño
 
@@ -284,3 +285,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `mensajeria_cartas_comunicacion_urbana_v0.1.md` — recados MSG01–MSG05, cartas, documentos y avisos.
 - `entrega_conocimiento_fiabilidad_v0.1.md` — entrega, lectura, cadena de custodia y conocimiento.
+
+### 42_Propiedad_y_objetos
+
+- `propiedad_posesion_objetos_persistentes_v0.1.md` — owner/possessor/location/custody y estados OWN01–OWN07.
+- `inventarios_contenedores_abstraccion_v0.1.md` — objetos persistentes, lotes y utilería contextual.

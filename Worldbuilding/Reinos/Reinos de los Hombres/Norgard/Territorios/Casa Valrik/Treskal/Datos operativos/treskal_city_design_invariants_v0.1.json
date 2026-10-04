@@ -803,6 +803,41 @@
         "priority can improve carrier route or interruption of other work",
         "distance weather access and travel time still apply"
       ]
+    },
+    {
+      "id": "pickup_does_not_transfer_ownership",
+      "expected": [
+        "taking or moving an object changes possession/location but not owner_ref",
+        "ownership changes only through valid transfer mechanisms"
+      ]
+    },
+    {
+      "id": "property_and_custody_are_distinct",
+      "expected": [
+        "inn warehouse institution or evidence custody can differ from owner and possessor",
+        "custodian does not become owner automatically"
+      ]
+    },
+    {
+      "id": "commercial_and_reserved_goods_remain_owned",
+      "expected": [
+        "displayed shop stock remains seller property until transaction",
+        "reserved goods are not free stock even if physically accessible"
+      ]
+    },
+    {
+      "id": "unseen_theft_still_happens_in_world_state",
+      "expected": [
+        "physical appropriation can persist without witnesses",
+        "knowledge reputation and legal response require later information path"
+      ]
+    },
+    {
+      "id": "important_contextual_objects_promote_to_persistent_identity",
+      "expected": [
+        "ordinary props may become persistent when taken used marked or evidentially relevant",
+        "promoted objects retain identity property and history across reloads"
+      ]
     }
   ]
 }

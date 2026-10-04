@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_property_possession_object_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "ownershipStates": {
+    "OWN01": "owned_by_actor",
+    "OWN02": "borrowed",
+    "OWN03": "in_custody",
+    "OWN04": "reserved",
+    "OWN05": "institutional_property",
+    "OWN06": "abandoned",
+    "OWN07": "disputed"
+  },
+  "coreObjectRelations": [
+    "owner_ref",
+    "possessor_ref",
+    "location_ref",
+    "custody_ref"
+  ],
+  "permissionScopes": [
+    "none",
+    "personal",
+    "household",
+    "workplace",
+    "role_based",
+    "public"
+  ],
+  "pickupDoesNotTransferOwnership": true,
+  "saleGiftAuthorizedTransferMayChangeOwner": true,
+  "exposedCommercialStockNotPublicProperty": true,
+  "abandonedStateRequiresEvidenceNotMereAbsence": true,
+  "theftPhysicalFactPersistsEvenIfUnseen": true,
+  "evidenceCustodyDoesNotChangeOwnership": true,
+  "aiTransferSpeechRequiresEngineValidation": true,
+  "objectTiers": {
+    "A": "persistent_individual",
+    "B": "persistent_lot",
+    "C": "contextual_prop"
+  },
+  "contextualObjectMayPromoteToPersistent": true,
+  "promotedObjectsNeverReroll": true,
+  "npcOwnershipDistinctFromCarriedInventory": true,
+  "bulkyObjectsRequirePhysicalHandling": true,
+  "externalDependencies": {
+    "exactPropertyLaw": "Norgard_law_and_economic_institutions",
+    "exactCarryCapacitySystem": "future_Nimroel_inventory_system"
+  }
+}

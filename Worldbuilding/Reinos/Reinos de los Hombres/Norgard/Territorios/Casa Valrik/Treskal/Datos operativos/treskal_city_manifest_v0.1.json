@@ -38,7 +38,8 @@
     "wordOfHonorPledges": "Datos operativos/treskal_word_of_honor_pledge_contract_v0.1.json",
     "wayfindingSignageAddressing": "Datos operativos/treskal_wayfinding_signage_addressing_contract_v0.1.json",
     "animalsCartsTraffic": "Datos operativos/treskal_animals_carts_traffic_contract_v0.1.json",
-    "messagingLettersDelivery": "Datos operativos/treskal_messaging_letters_delivery_contract_v0.1.json"
+    "messagingLettersDelivery": "Datos operativos/treskal_messaging_letters_delivery_contract_v0.1.json",
+    "propertyPossessionObjects": "Datos operativos/treskal_property_possession_object_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -62,7 +63,8 @@
     "F": "food_group",
     "SG": "signage_type",
     "TR": "transport_class",
-    "MSG": "message_type"
+    "MSG": "message_type",
+    "OWN": "ownership_relation_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
