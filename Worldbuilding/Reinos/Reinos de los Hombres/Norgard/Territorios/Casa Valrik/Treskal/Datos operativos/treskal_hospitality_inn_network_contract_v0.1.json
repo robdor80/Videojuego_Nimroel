@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_hospitality_inn_network_contract",
+  "version": "0.1",
+  "status": "active_canon_contract",
+  "hospitalityCulture": "friendly_and_hospitable_general_tendency",
+  "freeUniversalLodging": false,
+  "universalTrustOfStrangers": false,
+  "multipleInnsRequired": true,
+  "innProfiles": [
+    "land_approach",
+    "commercial_center",
+    "port",
+    "higher_comfort",
+    "modest"
+  ],
+  "innAndTavernFunctionsDistinctButMayCoexist": true,
+  "capacityFinite": true,
+  "commonInnSpaces": [
+    "public_room",
+    "kitchen_or_service",
+    "guest_lodging",
+    "private_owner_area",
+    "storage",
+    "stable_or_yard_if_relevant"
+  ],
+  "innkeeperKnowledgeLimitedByActualObservationMemoryAndReports": true,
+  "universalTravellerRegistryAssumed": false,
+  "familyFriendLodgingAllowed": true,
+  "visitorDoesNotBecomeResidentByLongStayAlone": true,
+  "lodgingStayFields": [
+    "lodging_id",
+    "guest_ref",
+    "inn_or_business_ref",
+    "room_or_space_ref",
+    "arrival_time",
+    "expected_departure",
+    "actual_departure",
+    "payment_state_if_applicable",
+    "incidents",
+    "access_rights"
+  ],
+  "guestRoomCreatesTemporaryAccessRight": true,
+  "guestAccessDoesNotExtendToOtherPrivateAreas": true,
+  "persistentLuggageSupported": true,
+  "offscreenOccupancyResolutionAllowed": true,
+  "externalDependencies": {
+    "exactFeesAndPayment": "Norgard_monetary_and_economic_system",
+    "reservationCustomsIfAny": "future_Norgard_hospitality_detail"
+  }
+}

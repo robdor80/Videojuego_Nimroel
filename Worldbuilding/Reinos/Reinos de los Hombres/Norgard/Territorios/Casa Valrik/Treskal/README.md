@@ -70,6 +70,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_maritime_culture_contract_v0.1.json` — cultura marítima, saber del mar y redes sociales portuarias.
 - `treskal_health_care_network_contract_v0.1.json` — red de curanderas, cuidados y disponibilidad.
 - `treskal_learning_knowledge_transmission_contract_v0.1.json` — aprendizaje, procedencia del conocimiento y continuidad profesional.
+- `treskal_hospitality_inn_network_contract_v0.1.json` — hospitalidad, red de posadas y estancias persistentes.
 
 ## Estado del diseño
 
@@ -247,3 +248,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `aprendizaje_transmision_saber_v0.1.md` — modos ED01–ED07, maestros, escritura, comercio, mar y curandería.
 - `estados_aprendizaje_continuidad_profesional_v0.1.md` — aprendiz, trabajador competente, experiencia y maestría sin títulos universales.
+
+### 36_Hospitalidad
+
+- `hospitalidad_urbana_red_posadas_v0.1.md` — red plural de posadas y hospitalidad Valrik a escala urbana.
+- `alojamiento_estancia_memoria_posada_v0.1.md` — estancias persistentes, acceso temporal y memoria del alojamiento.

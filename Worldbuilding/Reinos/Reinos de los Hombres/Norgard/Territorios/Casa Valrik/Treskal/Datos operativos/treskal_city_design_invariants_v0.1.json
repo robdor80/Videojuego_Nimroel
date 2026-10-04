@@ -593,6 +593,41 @@
         "death move or conflict with master does not erase learned capacity",
         "continued offscreen progress requires compatible training conditions"
       ]
+    },
+    {
+      "id": "valrik_hospitality_does_not_mean_universal_free_access",
+      "expected": [
+        "Treskal is culturally welcoming",
+        "lodging payment privacy capacity and refusal remain possible"
+      ]
+    },
+    {
+      "id": "treskal_has_multiple_inns_with_different_contexts",
+      "expected": [
+        "land commercial and port flows can use different lodging profiles",
+        "city does not collapse all travellers into one universal inn"
+      ]
+    },
+    {
+      "id": "inn_capacity_is_finite",
+      "expected": [
+        "rooms beds service and stable capacity can saturate during events",
+        "interface does not create infinite lodging"
+      ]
+    },
+    {
+      "id": "innkeeper_is_not_traveller_database",
+      "expected": [
+        "innkeeper knows guests and incidents through actual business observation memory or reports",
+        "no universal registry or omniscient tracking is assumed"
+      ]
+    },
+    {
+      "id": "guest_room_access_is_temporary_and_scoped",
+      "expected": [
+        "lodging grants legitimate access to assigned space during stay",
+        "does not grant kitchens stores owner quarters or other guest rooms"
+      ]
     }
   ]
 }

@@ -37,3 +37,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_maritime_culture_contract_v0.1.json` — identidad marítima, saber práctico y redes portuarias.
 - `treskal_health_care_network_contract_v0.1.json` — curandería urbana distribuida, materiales y atención.
 - `treskal_learning_knowledge_transmission_contract_v0.1.json` — modos ED01–ED07 y progreso profesional conceptual.
+- `treskal_hospitality_inn_network_contract_v0.1.json` — hospitalidad urbana, posadas y alojamientos persistentes.
