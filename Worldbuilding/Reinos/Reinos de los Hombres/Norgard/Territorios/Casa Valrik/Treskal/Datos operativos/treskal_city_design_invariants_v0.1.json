@@ -1223,6 +1223,41 @@
         "tailor cobbler and related O10 work depends on materials time and worker capability",
         "bespoke clothing may use COM and is not instantly generated"
       ]
+    },
+    {
+      "id": "weather_now_is_not_environmental_memory",
+      "expected": [
+        "rain can stop while ground clothing wood or fuel remain wet",
+        "current weather never instantly resets accumulated material state"
+      ]
+    },
+    {
+      "id": "mud_requires_local_causes",
+      "expected": [
+        "surface drainage exposure traffic and recent precipitation determine mud",
+        "brief rain or season label alone does not make all Treskal muddy"
+      ]
+    },
+    {
+      "id": "ordinary_rain_modifies_instead_of_cancels_city_life",
+      "expected": [
+        "market port construction and transport can reduce adapt or relocate activity",
+        "ordinary rainfall does not universally close them"
+      ]
+    },
+    {
+      "id": "drying_is_gradual_and_material_specific",
+      "expected": [
+        "wind temperature light ventilation surface and drainage affect recovery",
+        "wet clothes roads and interiors may dry at different rates"
+      ]
+    },
+    {
+      "id": "storm_resolution_does_not_clear_consequences",
+      "expected": [
+        "ending D01 removes trigger conditions but not persistent wetness damage delays or stock effects",
+        "each affected system recovers causally"
+      ]
     }
   ]
 }

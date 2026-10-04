@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_seasonality_accumulated_weather_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "exactCalendarDatesDefined": false,
+  "immediateWeatherDistinctFromEnvironmentalMemory": true,
+  "environmentalStates": {
+    "ENV01": "dry_or_stable",
+    "ENV02": "damp",
+    "ENV03": "wet",
+    "ENV04": "muddy",
+    "ENV05": "saturated_or_waterlogged",
+    "ENV06": "drying"
+  },
+  "environmentalStateIsLocal": true,
+  "localInputs": [
+    "surface",
+    "drainage",
+    "shade",
+    "exposure",
+    "traffic",
+    "slope",
+    "river_or_sea_proximity",
+    "maintenance"
+  ],
+  "shortRainDoesNotAutoCreateCitywideMud": true,
+  "ordinaryRainDoesNotAutoCloseMarketOrPort": true,
+  "weatherAffects": [
+    "visibility",
+    "traffic_cost",
+    "outdoor_work",
+    "market_exposure",
+    "construction",
+    "wood_handling",
+    "fuel_condition",
+    "clothing_wetness",
+    "port_operations",
+    "fishing"
+  ],
+  "seasonCanModify": [
+    "weather_probability",
+    "temperature",
+    "daylight",
+    "fuel_demand",
+    "clothing",
+    "outdoor_activity",
+    "agricultural_supply",
+    "fishing",
+    "drying"
+  ],
+  "warmSeasonNotExtremeByDefault": true,
+  "coldSeasonRelativelyMildComparedWithNorthValrik": true,
+  "seasonalTransitionsGradual": true,
+  "environmentFields": [
+    "env_state",
+    "recent_precipitation",
+    "exposure",
+    "drainage_quality",
+    "traffic_pressure",
+    "drying_conditions",
+    "last_update_time"
+  ],
+  "dryingInputs": [
+    "rain_end",
+    "wind",
+    "temperature",
+    "available_light",
+    "ventilation",
+    "surface",
+    "drainage"
+  ],
+  "exteriorStateDoesNotAutoApplyToInteriors": true,
+  "visualMudAndPuddlesRequireCausalSurfaceState": true,
+  "saveLoadMustNotResetEnvironmentalState": true,
+  "resolvedStormDoesNotAutoClearConsequences": true,
+  "aiCannotInferMudFromSeasonAlone": true,
+  "externalDependencies": {
+    "exactCalendar": "future_Nimroel_calendar",
+    "exactWeatherSimulation": "future_Nimroel_weather_system",
+    "exactDaylightModel": "future_Nimroel_time_system"
+  }
+}
