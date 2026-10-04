@@ -457,3 +457,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `vinculos_afectivos_cortejo_pareja_v0.1.md` — estados AFF01–AFF07, reciprocidad, privacidad y relación con la sociabilidad.
 - `pareja_hogar_separacion_continuidad_v0.1.md` — convivencia, hogar, tareas, acceso, separación y memoria persistente.
+
+### 71_Embarazo_nacimiento_y_primera_infancia
+
+- `embarazo_parto_recuperacion_domestica_v0.1.md` — estados PREG01–PREG06, privacidad, trabajo, asistencia y resolución del parto.
+- `nacimiento_recien_nacido_primera_infancia_v0.1.md` — creación de NPC persistente, hogar, DEP01/CARE y efectos sobre la vida cotidiana.
