@@ -489,6 +489,40 @@
         "narrator and NPC context receive only visible audible or otherwise authorized information",
         "World State hidden cause is not leaked through sensory description"
       ]
+    },
+    {
+      "id": "maritime_skill_is_role_and_experience_specific",
+      "expected": [
+        "fisher sailor port worker and naval carpenter do not share omniscient maritime knowledge",
+        "knowledge depends on profession experience routes vessels weather and relationships"
+      ]
+    },
+    {
+      "id": "civil_port_and_royal_shipyards_share_ecosystem_not_authority",
+      "expected": [
+        "workers providers and information may cross civilian social spaces",
+        "T08 retains Crown-controlled access and administration"
+      ]
+    },
+    {
+      "id": "port_is_information_gateway_not_truth_broadcast",
+      "expected": [
+        "external news enters through actual travelers crews and merchants",
+        "rumors retain source confidence and propagation path"
+      ]
+    },
+    {
+      "id": "maritime_households_are_not_closed_caste",
+      "expected": [
+        "multigenerational sea-linked households may exist",
+        "individuals may enter or leave maritime occupations"
+      ]
+    },
+    {
+      "id": "naval_military_details_remain_external_dependency",
+      "expected": [
+        "Treskal maritime lore does not invent Royal Navy ranks recruitment or chain of command before Norgard military system defines them"
+      ]
     }
   ]
 }

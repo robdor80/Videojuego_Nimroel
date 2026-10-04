@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_maritime_culture_contract",
+  "version": "0.1",
+  "status": "active_canon_contract",
+  "maritimeIdentityDrivers": [
+    "river",
+    "river_mouth",
+    "civil_port",
+    "fishing",
+    "maritime_trade",
+    "shipbuilding",
+    "royal_shipyards"
+  ],
+  "knowledgeTransmission": [
+    "experience",
+    "apprenticeship",
+    "family",
+    "work",
+    "crew",
+    "craft_master"
+  ],
+  "maritimeRoles": [
+    "fisher",
+    "civil_sailor",
+    "port_worker",
+    "naval_carpenter",
+    "merchant",
+    "ship_repair_worker",
+    "cargo_worker"
+  ],
+  "skillNotUniformAcrossMaritimeRoles": true,
+  "portExternalInformationGateway": true,
+  "portRumorsRequireSourceAndConfidence": true,
+  "maritimeHouseholdsMayBeMultigenerationalButNotCaste": true,
+  "weatherChangesMaritimeWork": true,
+  "civilPortDistinctFromRoyalShipyards": true,
+  "royalShipyardsIncreaseTechnicalPrestigeAndDemand": true,
+  "royalNavyRecruitmentRanksService": "external_dependency",
+  "seaAshScatteringOptionalForStrongSeaConnection": true,
+  "npcMaritimeKnowledgeDependsOn": [
+    "profession",
+    "experience",
+    "routes",
+    "vessels",
+    "weather",
+    "relationships"
+  ],
+  "externalDependencies": {
+    "royalNavyOrganization": "Norgard_royal_naval_military_system",
+    "navalTerminology": "future_Norgard_maritime_terminology"
+  }
+}

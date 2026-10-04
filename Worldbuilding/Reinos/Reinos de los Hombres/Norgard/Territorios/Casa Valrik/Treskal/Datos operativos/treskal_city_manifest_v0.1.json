@@ -29,7 +29,8 @@
     "arrivalDepartureTravel": "Datos operativos/treskal_arrival_departure_travel_contract_v0.1.json",
     "consumptionRestockPricePressure": "Datos operativos/treskal_consumption_restock_price_pressure_contract_v0.1.json",
     "woodcraftCulture": "Datos operativos/treskal_woodcraft_culture_contract_v0.1.json",
-    "lightVisibilitySound": "Datos operativos/treskal_light_visibility_sound_contract_v0.1.json"
+    "lightVisibilitySound": "Datos operativos/treskal_light_visibility_sound_contract_v0.1.json",
+    "maritimeCulture": "Datos operativos/treskal_maritime_culture_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -80,7 +81,9 @@
     "exactMetricGeometry": "future_Treskal_detailed_cartography",
     "portTaxesCustoms": "Norgard_fiscal_and_legal_system",
     "ownershipInheritanceRentalLaw": "Norgard_law_and_economic_institutions",
-    "currencyAndExactPrices": "Norgard_monetary_and_economic_system"
+    "currencyAndExactPrices": "Norgard_monetary_and_economic_system",
+    "royalNavyOrganization": "Norgard_royal_naval_military_system",
+    "navalTerminology": "future_Norgard_maritime_terminology"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",

@@ -34,3 +34,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_woodcraft_culture_contract_v0.1.json` — cultura maderera, aserrado manual y estados W01–W08.
 - `treskal_light_visibility_sound_contract_v0.1.json` — estados de luz, visibilidad, sonido y audición.
 - `treskal_urban_integration_test_pack_v0.1.json` — 12 escenarios de integración/regresión de sistemas urbanos.
+- `treskal_maritime_culture_contract_v0.1.json` — identidad marítima, saber práctico y redes portuarias.

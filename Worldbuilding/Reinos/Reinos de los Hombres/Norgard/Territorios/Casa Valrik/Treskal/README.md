@@ -67,6 +67,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_consumption_restock_price_pressure_contract_v0.1.json` — consumo agregado, reposición y presión de mercado.
 - `treskal_woodcraft_culture_contract_v0.1.json` — cadena artesanal de madera y estados W01–W08.
 - `treskal_light_visibility_sound_contract_v0.1.json` — luz, visibilidad, sonido y audición diegética.
+- `treskal_maritime_culture_contract_v0.1.json` — cultura marítima, saber del mar y redes sociales portuarias.
 
 ## Estado del diseño
 
@@ -229,3 +230,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 ### 32_Validacion_integrada
 
 - `metodologia_vertical_slice_urbana_v0.1.md` — pruebas de integración entre viaje, economía, NPC, LOD, eventos, acceso y percepción.
+
+### 33_Cultura_maritima
+
+- `cultura_maritima_saber_del_mar_v0.1.md` — experiencia marítima, familias, oficios y relación civil/naval.
+- `vida_social_puerto_informacion_v0.1.md` — redes del puerto, visitantes, rumores y circulación de información.
