@@ -80,3 +80,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_personal_preferences_habits_contract_v0.1.json` — PREF01–PREF08 y HAB01–HAB08, gustos individuales y hábitos flexibles.
 - `treskal_favors_reciprocity_informal_debt_contract_v0.1.json` — FAV01–FAV07, ayuda voluntaria, reciprocidad y deuda social informal.
 - `treskal_gifts_social_meaning_contract_v0.1.json` — GIFT01–GIFT07, transferencia de regalos, aceptación y significado social.
+- `treskal_requests_consent_boundaries_contract_v0.1.json` — REQ01–REQ08, peticiones, rechazo, condiciones y límites personales.

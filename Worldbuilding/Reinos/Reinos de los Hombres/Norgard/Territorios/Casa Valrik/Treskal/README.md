@@ -497,3 +497,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `regalos_obsequios_transferencia_social_v0.1.md` — estados GIFT01–GIFT07, OWN, aceptación, preferencias y límites relacionales.
 - `significado_aceptacion_memoria_regalos_v0.1.md` — intención, interpretación, objetos sentimentales, devolución y memoria.
+
+### 79_Peticiones_y_limites_personales
+
+- `peticiones_aceptacion_rechazo_personal_v0.1.md` — estados REQ01–REQ08, voluntad, aclaración, rechazo y ejecución validada.
+- `limites_presion_alcance_permiso_v0.1.md` — permisos acotados, condiciones, revocación, presión social y límites persistentes.

@@ -2182,6 +2182,48 @@
         "meaningful gifts may become memories for participants and witnesses",
         "private gifts do not create citywide reputation or knowledge automatically"
       ]
+    },
+    {
+      "id": "request_is_not_order_without_authority",
+      "expected": [
+        "ordinary social requests remain voluntary unless a separate lawful or institutional authority applies",
+        "dialogue phrasing does not turn a request into command power"
+      ]
+    },
+    {
+      "id": "relationship_does_not_remove_right_to_refuse",
+      "expected": [
+        "friendship romance kinship reputation gifts or favors may influence willingness but never guarantee acceptance",
+        "past help does not create unlimited entitlement to future compliance"
+      ]
+    },
+    {
+      "id": "acceptance_may_be_conditional_and_scoped",
+      "expected": [
+        "NPC may accept only part of a request or attach plausible conditions",
+        "permission applies only to agreed action time place and scope"
+      ]
+    },
+    {
+      "id": "refusal_does_not_auto_create_hostility",
+      "expected": [
+        "a no may be neutral practical cautious or relational depending on context",
+        "rejection alone does not automatically create RIFT or negative reputation"
+      ]
+    },
+    {
+      "id": "pressure_after_refusal_can_affect_relationships",
+      "expected": [
+        "repeated pressure or manipulation after clear refusal may reduce willingness trust or relationship quality",
+        "insistence never converts refusal into valid automatic acceptance"
+      ]
+    },
+    {
+      "id": "accepted_request_does_not_auto_complete_action",
+      "expected": [
+        "acceptance creates intention or permission but execution still needs time access resources path and system validation",
+        "AI dialogue cannot mark action complete before world state confirms it"
+      ]
     }
   ]
 }
