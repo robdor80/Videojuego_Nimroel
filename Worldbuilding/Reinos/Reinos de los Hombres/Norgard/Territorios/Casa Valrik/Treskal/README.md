@@ -74,6 +74,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_daily_life_family_food_contract_v0.1.json` — ritmos cotidianos, alimentación y redes familiares/vecinales.
 - `treskal_word_of_honor_pledge_contract_v0.1.json` — palabra dada, compromisos y reparación social.
 - `treskal_wayfinding_signage_addressing_contract_v0.1.json` — orientación humana, rótulos y localización no moderna.
+- `treskal_animals_carts_traffic_contract_v0.1.json` — animales, carros, congestión y servicios de transporte.
 
 ## Estado del diseño
 
@@ -272,3 +273,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `orientacion_direcciones_no_modernas_v0.1.md` — landmarks, áreas populares, instrucciones verbales y conocimiento de rutas.
 - `rotulos_senales_negocios_v0.1.md` — tipos SG01–SG05 y señalización funcional no moderna.
+
+### 40_Transporte_y_animales
+
+- `animales_tiro_carros_trafico_v0.1.md` — clases TR01–TR06, tráfico, congestión y animales de trabajo.
+- `establos_corrales_servicios_transporte_v0.1.md` — estabulación, carreteros, reparación y capacidad finita.

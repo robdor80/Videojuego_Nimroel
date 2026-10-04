@@ -733,6 +733,41 @@
         "player map may distinguish approximate area building located and entrance known",
         "unknown locations are not revealed merely because engine knows coordinates"
       ]
+    },
+    {
+      "id": "transport_requires_real_vehicle_animal_and_operator",
+      "expected": [
+        "hired carts and convoys correspond to actual available assets and people",
+        "transport does not spawn instantly from UI"
+      ]
+    },
+    {
+      "id": "animals_have_real_logistic_needs",
+      "expected": [
+        "draft and riding animals require water food rest space and cleaning",
+        "their upkeep affects urban stock and facilities"
+      ]
+    },
+    {
+      "id": "heavy_and_livestock_traffic_respects_city_structure",
+      "expected": [
+        "heavy loads favor C02 C06 C07",
+        "livestock avoids T03 market core when a compatible peripheral route exists"
+      ]
+    },
+    {
+      "id": "congestion_is_world_state_not_visual_only",
+      "expected": [
+        "convoys livestock loading weather accidents and blockages may increase navigation cost",
+        "traffic does not vanish solely to clear player path"
+      ]
+    },
+    {
+      "id": "convoys_persist_across_lod",
+      "expected": [
+        "cargo route progress animals and state remain coherent when unloaded from high-detail simulation",
+        "convoys do not disappear and teleport to destination"
+      ]
     }
   ]
 }

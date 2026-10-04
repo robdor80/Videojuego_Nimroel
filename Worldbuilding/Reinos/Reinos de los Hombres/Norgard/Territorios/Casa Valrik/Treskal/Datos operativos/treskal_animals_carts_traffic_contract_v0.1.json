@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_animals_carts_traffic_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "transportClasses": {
+    "TR01": "pedestrian",
+    "TR02": "individual_mount",
+    "TR03": "light_cart",
+    "TR04": "heavy_cart",
+    "TR05": "livestock_in_transit",
+    "TR06": "convoy"
+  },
+  "exactVehicleTaxonomyDefined": false,
+  "horseUseCanonical": true,
+  "otherDraftAnimalSpecies": "future_animal_canon",
+  "animalNeeds": [
+    "water",
+    "food",
+    "rest",
+    "space",
+    "cleaning"
+  ],
+  "infiniteStreetParkingOfAnimalsForbidden": true,
+  "animalFeedConsumesRealStock": true,
+  "animalWasteRequiresContextualCleaning": true,
+  "congestionDrivers": [
+    "convoy",
+    "livestock",
+    "market",
+    "rain",
+    "accident",
+    "blocked_street",
+    "loading_unloading"
+  ],
+  "preferredHeavyRoutes": [
+    "C02",
+    "C06",
+    "C07"
+  ],
+  "livestockAvoidsMarketCoreWhenAlternativeExists": true,
+  "cartAvailabilityFinite": true,
+  "hiredTransportRequiresRealVehicleAnimalAndOperator": true,
+  "vehicleRepairMayRequire": [
+    "woodwork",
+    "wheel_repair",
+    "metal_fittings"
+  ],
+  "lodPreservesConvoy": [
+    "cargo",
+    "route",
+    "progress",
+    "animals",
+    "state"
+  ],
+  "incidentsRequireCause": true,
+  "externalDependencies": {
+    "animalSpeciesBreedsStats": "future_Nimroel_animal_canon",
+    "exactTransportFees": "Norgard_monetary_and_economic_system",
+    "exactVehicleModels": "future_Nimroel_transport_canon"
+  }
+}

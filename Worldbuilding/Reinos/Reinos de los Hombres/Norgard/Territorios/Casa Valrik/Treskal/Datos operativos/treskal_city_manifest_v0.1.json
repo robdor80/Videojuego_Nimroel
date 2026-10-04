@@ -36,7 +36,8 @@
     "hospitalityInnNetwork": "Datos operativos/treskal_hospitality_inn_network_contract_v0.1.json",
     "dailyLifeFamilyFood": "Datos operativos/treskal_daily_life_family_food_contract_v0.1.json",
     "wordOfHonorPledges": "Datos operativos/treskal_word_of_honor_pledge_contract_v0.1.json",
-    "wayfindingSignageAddressing": "Datos operativos/treskal_wayfinding_signage_addressing_contract_v0.1.json"
+    "wayfindingSignageAddressing": "Datos operativos/treskal_wayfinding_signage_addressing_contract_v0.1.json",
+    "animalsCartsTraffic": "Datos operativos/treskal_animals_carts_traffic_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -58,7 +59,8 @@
     "W": "wood_processing_state",
     "ED": "learning_mode",
     "F": "food_group",
-    "SG": "signage_type"
+    "SG": "signage_type",
+    "TR": "transport_class"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -97,7 +99,9 @@
     "medicinalFlora": "future_canonical_medicinal_flora",
     "exactSkillProgression": "future_Nimroel_character_progression_system",
     "canonicalCuisineAndRecipes": "future_Norgard_cuisine",
-    "exactTimeSchedule": "future_Nimroel_time_system"
+    "exactTimeSchedule": "future_Nimroel_time_system",
+    "animalSpeciesBreedsStats": "future_Nimroel_animal_canon",
+    "exactVehicleModels": "future_Nimroel_transport_canon"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",
