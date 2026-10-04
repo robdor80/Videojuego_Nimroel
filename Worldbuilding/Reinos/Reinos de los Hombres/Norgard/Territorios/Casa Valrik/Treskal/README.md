@@ -502,3 +502,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `peticiones_aceptacion_rechazo_personal_v0.1.md` — estados REQ01–REQ08, voluntad, aclaración, rechazo y ejecución validada.
 - `limites_presion_alcance_permiso_v0.1.md` — permisos acotados, condiciones, revocación, presión social y límites persistentes.
+
+### 80_Secretos_y_confidencias
+
+- `secretos_confidencias_divulgacion_voluntaria_v0.1.md` — estados CONF01–CONF07, saber frente a contar, confidencia y alcance.
+- `conservacion_filtracion_ruptura_confidencias_v0.1.md` — filtraciones, escucha, promesas, rumor y consecuencias relacionales.

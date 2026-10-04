@@ -76,7 +76,8 @@
     "personalPreferencesHabits": "Datos operativos/treskal_personal_preferences_habits_contract_v0.1.json",
     "favorsReciprocityInformalDebt": "Datos operativos/treskal_favors_reciprocity_informal_debt_contract_v0.1.json",
     "giftsSocialMeaning": "Datos operativos/treskal_gifts_social_meaning_contract_v0.1.json",
-    "requestsConsentBoundaries": "Datos operativos/treskal_requests_consent_boundaries_contract_v0.1.json"
+    "requestsConsentBoundaries": "Datos operativos/treskal_requests_consent_boundaries_contract_v0.1.json",
+    "confidentialInformationDisclosure": "Datos operativos/treskal_confidential_information_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -146,7 +147,8 @@
     "HAB": "personal_habit_type",
     "FAV": "informal_favor_state",
     "GIFT": "gift_social_state",
-    "REQ": "personal_request_state"
+    "REQ": "personal_request_state",
+    "CONF": "confidential_information_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

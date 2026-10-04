@@ -2224,6 +2224,48 @@
         "acceptance creates intention or permission but execution still needs time access resources path and system validation",
         "AI dialogue cannot mark action complete before world state confirms it"
       ]
+    },
+    {
+      "id": "knowing_information_does_not_equal_permission_to_disclose",
+      "expected": [
+        "K determines that an NPC knows a fact while CONF determines confidentiality and disclosure expectations",
+        "an NPC may know something and still choose or be expected not to reveal it"
+      ]
+    },
+    {
+      "id": "confidant_status_does_not_grant_all_confidences",
+      "expected": [
+        "FRI04 may support voluntary disclosure of a particular confidence",
+        "trusted friendship never grants automatic access to unrelated private information"
+      ]
+    },
+    {
+      "id": "confidential_scope_is_not_global",
+      "expected": [
+        "a disclosure can be limited to one person or defined circle",
+        "telling one trusted person does not authorize onward disclosure"
+      ]
+    },
+    {
+      "id": "unauthorized_disclosure_requires_real_transmission",
+      "expected": [
+        "a leak occurs only when someone actually communicates or exposes information",
+        "private knowledge does not become rumor merely because a holder exists"
+      ]
+    },
+    {
+      "id": "confidentiality_does_not_rewrite_truth",
+      "expected": [
+        "CONF tracks confidentiality and exposure rather than objective truth",
+        "truth belief rumor and contradiction remain governed by event truth and K provenance"
+      ]
+    },
+    {
+      "id": "confidentiality_survives_save_load_and_lod",
+      "expected": [
+        "authorized recipients exposure and breach history persist",
+        "LOD cannot silently publicize or erase a confidence"
+      ]
     }
   ]
 }
