@@ -49,7 +49,8 @@
     "doorsLocksKeysAccess": "Datos operativos/treskal_doors_locks_keys_access_contract_v0.1.json",
     "employmentJobsVacancies": "Datos operativos/treskal_employment_jobs_vacancies_contract_v0.1.json",
     "residencyHouseholdMobility": "Datos operativos/treskal_residency_household_mobility_contract_v0.1.json",
-    "constructionBuildingChange": "Datos operativos/treskal_construction_building_change_contract_v0.1.json"
+    "constructionBuildingChange": "Datos operativos/treskal_construction_building_change_contract_v0.1.json",
+    "clothingFootwearLifecycle": "Datos operativos/treskal_clothing_footwear_lifecycle_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -83,7 +84,9 @@
     "EMP": "employment_state",
     "RES": "resident_state",
     "MOVE": "move_state",
-    "BUILD": "construction_state"
+    "BUILD": "construction_state",
+    "CL": "clothing_function",
+    "GAR": "garment_condition"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

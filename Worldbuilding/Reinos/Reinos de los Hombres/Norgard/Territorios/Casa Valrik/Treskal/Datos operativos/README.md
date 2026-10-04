@@ -54,3 +54,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_employment_jobs_vacancies_contract_v0.1.json` — estados EMP01–EMP08, puestos y vacantes.
 - `treskal_residency_household_mobility_contract_v0.1.json` — estados RES/MOVE, hogares y mudanzas persistentes.
 - `treskal_construction_building_change_contract_v0.1.json` — estados BUILD01–BUILD10, ampliaciones, cambio de uso y demolición.
+- `treskal_clothing_footwear_lifecycle_contract_v0.1.json` — funciones CL01–CL04 y condición GAR01–GAR06.

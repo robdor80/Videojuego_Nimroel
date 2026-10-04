@@ -86,6 +86,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_employment_jobs_vacancies_contract_v0.1.json` — empleo, vacantes, ausencia y cobertura de puestos.
 - `treskal_residency_household_mobility_contract_v0.1.json` — residencia, hogares, mudanzas y continuidad de identidad.
 - `treskal_construction_building_change_contract_v0.1.json` — construcción, ampliación y evolución persistente del tejido.
+- `treskal_clothing_footwear_lifecycle_contract_v0.1.json` — indumentaria, calzado, reparación y uso persistente.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -350,3 +351,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `construccion_ampliacion_cambio_uso_v0.1.md` — estados BUILD01–BUILD10, obra física, ampliación, cambio de uso y demolición.
 - `evolucion_tejido_reutilizacion_v0.1.md` — transformación de edificios sin alterar el macrocanon T/Z/L/S/C.
+
+### 53_Indumentaria_y_calzado
+
+- `indumentaria_calzado_ciclo_uso_v0.1.md` — categorías CL01–CL04 y estados GAR01–GAR06.
+- `sastres_zapateros_mantenimiento_v0.1.md` — confección, ajuste, reparación y encargos O10.

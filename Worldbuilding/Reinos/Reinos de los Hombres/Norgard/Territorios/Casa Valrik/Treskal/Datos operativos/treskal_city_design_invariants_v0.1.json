@@ -1188,6 +1188,41 @@
         "ordinary construction can accumulate history inside T/Z/C structure",
         "major landmarks and authored macro elements require explicit design migration"
       ]
+    },
+    {
+      "id": "clothing_is_material_not_cosmetic_only",
+      "expected": [
+        "relevant garments can have owner condition patina wetness damage and repair",
+        "visual change follows actual clothing state"
+      ]
+    },
+    {
+      "id": "wealth_does_not_map_directly_to_cleanliness",
+      "expected": [
+        "economic status may affect quantity quality fit and access to repair",
+        "poor NPCs are not automatically dirty and wealthy NPCs are not automatically pristine"
+      ]
+    },
+    {
+      "id": "changing_clothes_requires_available_garment",
+      "expected": [
+        "NPC can switch presentation only when an alternative garment exists and is usable",
+        "scene or dialogue cannot invent clean clothes"
+      ]
+    },
+    {
+      "id": "garment_repair_preserves_material_history",
+      "expected": [
+        "mending can restore function while leaving patches wear or altered appearance",
+        "repair does not reset garment to new condition"
+      ]
+    },
+    {
+      "id": "clothing_services_use_real_materials_and_commissions",
+      "expected": [
+        "tailor cobbler and related O10 work depends on materials time and worker capability",
+        "bespoke clothing may use COM and is not instantly generated"
+      ]
     }
   ]
 }
