@@ -84,6 +84,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_fuel_cooking_heat_contract_v0.1.json` — combustible, cocina, calor doméstico y stock térmico.
 - `treskal_doors_locks_keys_access_contract_v0.1.json` — puertas, llaves, cerraduras y acceso físico.
 - `treskal_employment_jobs_vacancies_contract_v0.1.json` — empleo, vacantes, ausencia y cobertura de puestos.
+- `treskal_residency_household_mobility_contract_v0.1.json` — residencia, hogares, mudanzas y continuidad de identidad.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -338,3 +339,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `relaciones_laborales_vacantes_continuidad_v0.1.md` — estados EMP01–EMP08, profesión ≠ puesto y continuidad laboral.
 - `cobertura_puestos_disponibilidad_v0.1.md` — vacantes, candidatos, sustitución e incorporación.
+
+### 51_Residencia_y_mudanzas
+
+- `formacion_hogares_mudanzas_residencia_v0.1.md` — hogares, desplazamientos y estados RES01–RES05 / MOVE01–MOVE06.
+- `visitante_residente_continuidad_identidad_v0.1.md` — transición visitante→residente sin pérdida de identidad.

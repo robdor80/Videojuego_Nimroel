@@ -1118,6 +1118,41 @@
         "vacancies can resolve outside scene only when plausible candidates exist and time passes",
         "exceptional specialists are not generated solely to fill template"
       ]
+    },
+    {
+      "id": "visitor_to_resident_preserves_identity",
+      "expected": [
+        "materialized visitor becoming resident keeps same npc_id memory relationships reputation and knowledge",
+        "system does not generate replacement resident"
+      ]
+    },
+    {
+      "id": "long_stay_alone_does_not_equal_residency",
+      "expected": [
+        "visitor may remain for extended period without permanent residence",
+        "residency requires actual world-state transition such as stable home household or decision to settle"
+      ]
+    },
+    {
+      "id": "household_changes_do_not_rewrite_person_history",
+      "expected": [
+        "joining splitting merging or leaving households updates home and cohabitation",
+        "learned profession family relations memory and identity persist"
+      ]
+    },
+    {
+      "id": "moves_are_physical_world_events",
+      "expected": [
+        "relevant moves may require packing goods transport time and destination capacity",
+        "home location does not change instantly without causal move"
+      ]
+    },
+    {
+      "id": "displacement_does_not_spawn_free_replacement_home",
+      "expected": [
+        "fire flood damage or household crisis may create RES05 displacement",
+        "temporary lodging or available housing must be found through actual capacity"
+      ]
     }
   ]
 }
