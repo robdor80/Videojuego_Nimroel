@@ -2014,6 +2014,48 @@
         "strained distant or broken friendships retain relevant memories and shared social links",
         "relationship history is not reset when friendship weakens"
       ]
+    },
+    {
+      "id": "interpersonal_conflict_does_not_auto_become_honor_or_legal_case",
+      "expected": [
+        "ordinary tensions may remain private relational disputes",
+        "honor or legal systems activate only when their own conditions are met"
+      ]
+    },
+    {
+      "id": "grievance_and_world_fact_are_separate",
+      "expected": [
+        "each participant may hold a different interpretation of the same event",
+        "a sincere grievance is not automatically proof that the accused version is objectively true"
+      ]
+    },
+    {
+      "id": "apology_does_not_force_forgiveness",
+      "expected": [
+        "an apology may be offered accepted rejected or considered insufficient",
+        "dialogue success cannot compel forgiveness or restore a prior relationship state instantly"
+      ]
+    },
+    {
+      "id": "reconciliation_does_not_erase_history",
+      "expected": [
+        "repaired relationships retain memory of the conflict when relevant",
+        "trust routines access and other systems recover only when their own state supports it"
+      ]
+    },
+    {
+      "id": "third_parties_do_not_auto_pick_sides",
+      "expected": [
+        "friends family coworkers and social circles react according to knowledge relationship and interpretation",
+        "group membership never creates automatic faction alignment"
+      ]
+    },
+    {
+      "id": "conflict_reputation_requires_real_information_flow",
+      "expected": [
+        "private disputes do not alter citywide reputation by themselves",
+        "witnesses disclosure rumor and interpretation determine social spread"
+      ]
     }
   ]
 }

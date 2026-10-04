@@ -71,7 +71,8 @@
     "pregnancyBirthEarlyInfancy": "Datos operativos/treskal_pregnancy_birth_early_infancy_contract_v0.1.json",
     "childDevelopmentAutonomyLearning": "Datos operativos/treskal_child_development_autonomy_learning_contract_v0.1.json",
     "agingLateLifeActivity": "Datos operativos/treskal_aging_late_life_activity_contract_v0.1.json",
-    "friendshipSocialCircles": "Datos operativos/treskal_friendship_social_circles_contract_v0.1.json"
+    "friendshipSocialCircles": "Datos operativos/treskal_friendship_social_circles_contract_v0.1.json",
+    "interpersonalConflictRepair": "Datos operativos/treskal_interpersonal_conflict_repair_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -135,7 +136,8 @@
     "PREG": "pregnancy_state",
     "CHD": "child_development_state",
     "AGE": "late_life_activity_state",
-    "FRI": "friendship_state"
+    "FRI": "friendship_state",
+    "RIFT": "interpersonal_conflict_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

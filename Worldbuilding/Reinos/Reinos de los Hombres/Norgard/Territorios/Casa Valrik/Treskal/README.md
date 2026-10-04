@@ -477,3 +477,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `amistad_confianza_continuidad_personal_v0.1.md` — estados FRI01–FRI07, confianza, confidencia, ayuda y amistades a distancia.
 - `circulos_sociales_grupos_habituales_v0.1.md` — grupos persistentes, relaciones internas desiguales, rutinas y circulación de información.
+
+### 75_Conflicto_interpersonal_y_reconciliacion
+
+- `conflicto_tension_distanciamiento_v0.1.md` — estados RIFT01–RIFT07, interpretación, evitación, círculos y escalada hacia honor/ley.
+- `disculpa_reparacion_reconciliacion_v0.1.md` — disculpa, aceptación, mediación, reparación parcial y reconciliación con memoria.
