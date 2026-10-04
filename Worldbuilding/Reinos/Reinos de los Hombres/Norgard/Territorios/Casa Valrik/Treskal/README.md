@@ -56,6 +56,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_information_and_reputation_contract_v0.1.json` — conocimiento K0–K5, rumores y reputaciones por red.
 - `treskal_urban_gameplay_discovery_contract_v0.1.json` — descubrimiento, investigación y encargos emergentes.
 - `treskal_labor_household_visitor_contract_v0.1.json` — demanda laboral, hogares y visitantes.
+- `treskal_civil_port_and_storage_contract_v0.1.json` — operación portuaria civil y almacenamiento.
 
 ## Estado del diseño
 
@@ -163,3 +164,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 - `demanda_laboral_oficios_y_hogares_v0.1.md` — familias O01–O14, capacidad laboral y hogares H01–H09.
 - `visitantes_alojamiento_estancia_v0.1.md` — visitantes V01–V09, alojamiento y transición a residencia.
 - `ciclos_laborales_ausencias_continuidad_v0.1.md` — relevo, ausencias, enfermedad, aprendices y continuidad de negocios.
+
+### 22_Puerto_y_almacenamiento
+
+- `operacion_puerto_civil_y_muelles_fluviales_v0.1.md` — ciclo de embarcación, atraque, carga/descarga y relación río-mar.
+- `almacenamiento_perecibilidad_reservas_v0.1.md` — clases ST1–ST6, stock urbano y resiliencia ante cortes.
