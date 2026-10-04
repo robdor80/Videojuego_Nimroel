@@ -21,9 +21,9 @@ No utiliza el sistema procedural de Aldeas, Pueblos y Villas.
 
 ## Regla
 
-No fijar nombres de barrios, calles o edificios singulares antes de resolver la topología general de la ciudad.
+La topología general ya está resuelta mediante la **Opción A — Desembocadura integrada**. La toponimia urbana se desarrolla con la convención mixta de Norgard y mantiene IDs técnicos estables.
 
-La geografía mundial confirma costa, río y relieve suave. La referencia visual aprobada añade muelles fluviales y pequeñas embarcaciones; sigue pendiente decidir el trazado exacto del río y su relación topológica con el puerto marítimo.
+La geografía mundial confirma costa, río y relieve suave. Permanecen pendientes únicamente el **trazado métrico exacto** del río, la geometría detallada del puente y el plano callejero.
 
 ### 02_Topologia
 
