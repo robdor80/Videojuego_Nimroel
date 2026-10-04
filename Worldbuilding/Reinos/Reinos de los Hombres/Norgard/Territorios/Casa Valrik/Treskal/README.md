@@ -98,6 +98,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_death_mourning_funeral_contract_v0.1.json` — muerte, cremación, cenizas y continuidad social.
 - `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — privacidad, audición parcial y conversaciones.
 - `treskal_waiting_service_capacity_contract_v0.1.json` — espera, colas y capacidad efectiva de atención.
+- `treskal_dependents_care_network_contract_v0.1.json` — cuidados, dependientes y red doméstica de apoyo.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -422,3 +423,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `espera_colas_capacidad_atencion_v0.1.md` — estados WAIT01–WAIT08 y prioridades no universales.
 - `solicitudes_capacidad_efectiva_v0.1.md` — solicitudes persistentes y capacidad derivada de personas/recursos.
+
+### 65_Cuidados_y_dependientes
+
+- `cuidado_ninos_ancianos_dependientes_v0.1.md` — tipos DEP01–DEP05 y estados CARE01–CARE07.
+- `red_cuidados_disponibilidad_domestica_v0.1.md` — red de cuidadores, relevos y efecto sobre rutina/empleo.

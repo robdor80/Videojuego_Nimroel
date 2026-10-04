@@ -1636,6 +1636,41 @@
         "families may dress soberly or according to household custom",
         "black clothing religious symbols and prescribed ritual garments are not universal requirements"
       ]
+    },
+    {
+      "id": "care_requires_real_people_time_and_presence",
+      "expected": [
+        "dependent care consumes actual household availability",
+        "care does not exist as invisible background service"
+      ]
+    },
+    {
+      "id": "elderly_does_not_equal_dependent",
+      "expected": [
+        "older NPC may remain fully autonomous",
+        "DEP04 is assigned only when assistance is actually needed"
+      ]
+    },
+    {
+      "id": "care_pressure_can_affect_work_and_rest",
+      "expected": [
+        "carer may reduce availability change routine or share care",
+        "employment and rest react to actual care load without inventing modern legal leave"
+      ]
+    },
+    {
+      "id": "care_gap_is_problem_not_instant_harm",
+      "expected": [
+        "CARE04 records insufficient coverage",
+        "health or need consequences are resolved by appropriate future systems rather than assumed automatically"
+      ]
+    },
+    {
+      "id": "care_network_persists_across_lod",
+      "expected": [
+        "primary and secondary carers support network and coverage survive save/load and materialization",
+        "AI cannot ignore high dependency simply to make NPC available"
+      ]
     }
   ]
 }

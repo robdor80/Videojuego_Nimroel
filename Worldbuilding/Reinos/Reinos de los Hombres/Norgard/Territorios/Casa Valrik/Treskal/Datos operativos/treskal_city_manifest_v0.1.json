@@ -61,7 +61,8 @@
     "sanitationWasteCycle": "Datos operativos/treskal_sanitation_waste_cycle_contract_v0.1.json",
     "deathMourningFuneral": "Datos operativos/treskal_death_mourning_funeral_contract_v0.1.json",
     "conversationPrivacyEavesdropping": "Datos operativos/treskal_conversation_privacy_eavesdropping_contract_v0.1.json",
-    "waitingServiceCapacity": "Datos operativos/treskal_waiting_service_capacity_contract_v0.1.json"
+    "waitingServiceCapacity": "Datos operativos/treskal_waiting_service_capacity_contract_v0.1.json",
+    "dependentsCareNetwork": "Datos operativos/treskal_dependents_care_network_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -113,7 +114,9 @@
     "CONV": "conversation_privacy_context",
     "VOICE": "speech_projection_mode",
     "HEAR": "hearing_exposure_result",
-    "WAIT": "service_wait_state"
+    "WAIT": "service_wait_state",
+    "DEP": "dependency_type",
+    "CARE": "care_coverage_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

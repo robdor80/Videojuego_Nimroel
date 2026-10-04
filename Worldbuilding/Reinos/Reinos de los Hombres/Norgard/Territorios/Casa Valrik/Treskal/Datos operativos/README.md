@@ -66,3 +66,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_death_mourning_funeral_contract_v0.1.json` — estados MORT/ASH, cremación y retorno de cenizas.
 - `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — CONV/VOICE/HEAR, privacidad y conocimiento por oyente.
 - `treskal_waiting_service_capacity_contract_v0.1.json` — WAIT01–WAIT08, solicitudes y capacidad de servicio.
+- `treskal_dependents_care_network_contract_v0.1.json` — tipos DEP, estados CARE y capacidad de cuidado.
