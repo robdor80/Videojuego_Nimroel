@@ -1258,6 +1258,41 @@
         "ending D01 removes trigger conditions but not persistent wetness damage delays or stock effects",
         "each affected system recovers causally"
       ]
+    },
+    {
+      "id": "interior_objects_require_reason",
+      "expected": [
+        "furnishing supports rest seating work food storage profession lighting care or personal/social identity",
+        "generic medieval clutter is not used as filler"
+      ]
+    },
+    {
+      "id": "valrik_woodcraft_does_not_make_every_home_luxurious",
+      "expected": [
+        "good joinery and durable simple furniture can be common",
+        "fine carved or prestigious furniture remains selective"
+      ]
+    },
+    {
+      "id": "furnishing_quality_tracks_household_not_social_stereotype",
+      "expected": [
+        "economic capacity affects quantity quality specialization and space",
+        "humble homes can be clean functional and well-made"
+      ]
+    },
+    {
+      "id": "meaningful_furniture_promotes_to_persistent_object",
+      "expected": [
+        "moved stolen damaged repaired gifted or story-relevant furnishing receives persistent identity",
+        "promoted furniture never rerolls on reload"
+      ]
+    },
+    {
+      "id": "new_occupant_does_not_reroll_existing_interior",
+      "expected": [
+        "property move sale removal and retained furniture are resolved before new household materialization",
+        "building history survives occupant change"
+      ]
     }
   ]
 }

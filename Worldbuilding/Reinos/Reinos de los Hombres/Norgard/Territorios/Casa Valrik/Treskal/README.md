@@ -88,6 +88,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_construction_building_change_contract_v0.1.json` — construcción, ampliación y evolución persistente del tejido.
 - `treskal_clothing_footwear_lifecycle_contract_v0.1.json` — indumentaria, calzado, reparación y uso persistente.
 - `treskal_seasonality_accumulated_weather_contract_v0.1.json` — estacionalidad, humedad, barro y secado persistente.
+- `treskal_furniture_material_life_contract_v0.1.json` — mobiliario, vida material y persistencia interior.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -362,3 +363,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `estacionalidad_clima_actividad_v0.1.md` — efectos estacionales sin fijar calendario y memoria ambiental.
 - `persistencia_ambiental_secado_v0.1.md` — estados ENV01–ENV06, secado y recuperación material.
+
+### 55_Mobiliario_y_vida_material
+
+- `mobiliario_domestico_vida_material_v0.1.md` — funciones FURN01–FURN07 y vida material doméstica.
+- `generacion_persistencia_mobiliario_v0.1.md` — materialización funcional, promoción a persistente y cambio de ocupante.
