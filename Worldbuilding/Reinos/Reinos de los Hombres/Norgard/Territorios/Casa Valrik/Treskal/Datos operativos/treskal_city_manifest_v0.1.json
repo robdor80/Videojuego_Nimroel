@@ -31,7 +31,8 @@
     "woodcraftCulture": "Datos operativos/treskal_woodcraft_culture_contract_v0.1.json",
     "lightVisibilitySound": "Datos operativos/treskal_light_visibility_sound_contract_v0.1.json",
     "maritimeCulture": "Datos operativos/treskal_maritime_culture_contract_v0.1.json",
-    "healthCareNetwork": "Datos operativos/treskal_health_care_network_contract_v0.1.json"
+    "healthCareNetwork": "Datos operativos/treskal_health_care_network_contract_v0.1.json",
+    "learningKnowledgeTransmission": "Datos operativos/treskal_learning_knowledge_transmission_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -50,7 +51,8 @@
     "V": "visitor_type",
     "ST": "storage_class",
     "APP": "city_approach",
-    "W": "wood_processing_state"
+    "W": "wood_processing_state",
+    "ED": "learning_mode"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -86,7 +88,8 @@
     "royalNavyOrganization": "Norgard_royal_naval_military_system",
     "navalTerminology": "future_Norgard_maritime_terminology",
     "exactHealingMechanics": "future_Nimroel_health_system",
-    "medicinalFlora": "future_canonical_medicinal_flora"
+    "medicinalFlora": "future_canonical_medicinal_flora",
+    "exactSkillProgression": "future_Nimroel_character_progression_system"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",

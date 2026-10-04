@@ -558,6 +558,41 @@
         "medicinal flora comes from canonical flora when defined",
         "scene generation does not invent plants to solve treatment needs"
       ]
+    },
+    {
+      "id": "treskal_learning_is_distributed_and_practical",
+      "expected": [
+        "learning occurs through family masters workshops work institutions crews and experience",
+        "city is not generated with a modern universal school network"
+      ]
+    },
+    {
+      "id": "treskal_has_more_learning_opportunity_not_universal_education",
+      "expected": [
+        "city concentration raises access to masters and specialized knowledge",
+        "not every resident receives the same education or literacy"
+      ]
+    },
+    {
+      "id": "skill_cannot_be_granted_by_ai_dialogue",
+      "expected": [
+        "teaching requires valid master time practice and progression rules",
+        "AI conversation alone cannot mutate character skill state"
+      ]
+    },
+    {
+      "id": "npc_knowledge_has_provenance",
+      "expected": [
+        "important knowledge may record family master experience document institution or rumor source",
+        "authored world lore is not automatically available to each NPC"
+      ]
+    },
+    {
+      "id": "apprenticeship_progress_persists_through_change",
+      "expected": [
+        "death move or conflict with master does not erase learned capacity",
+        "continued offscreen progress requires compatible training conditions"
+      ]
     }
   ]
 }

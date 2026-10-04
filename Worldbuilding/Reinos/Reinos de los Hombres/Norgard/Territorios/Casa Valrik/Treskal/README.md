@@ -69,6 +69,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_light_visibility_sound_contract_v0.1.json` — luz, visibilidad, sonido y audición diegética.
 - `treskal_maritime_culture_contract_v0.1.json` — cultura marítima, saber del mar y redes sociales portuarias.
 - `treskal_health_care_network_contract_v0.1.json` — red de curanderas, cuidados y disponibilidad.
+- `treskal_learning_knowledge_transmission_contract_v0.1.json` — aprendizaje, procedencia del conocimiento y continuidad profesional.
 
 ## Estado del diseño
 
@@ -241,3 +242,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `red_urbana_curacion_cuidados_v0.1.md` — red distribuida de curanderas, remedios domésticos y atención a domicilio.
 - `disponibilidad_curanderas_gameplay_v0.1.md` — capacidad, desplazamiento, materiales y resolución de cuidados.
+
+### 35_Aprendizaje_y_saber
+
+- `aprendizaje_transmision_saber_v0.1.md` — modos ED01–ED07, maestros, escritura, comercio, mar y curandería.
+- `estados_aprendizaje_continuidad_profesional_v0.1.md` — aprendiz, trabajador competente, experiencia y maestría sin títulos universales.
