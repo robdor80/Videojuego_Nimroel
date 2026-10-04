@@ -96,6 +96,19 @@ Una persona de alto rango puede reunir:
 
 El principio corporal no cambia.
 
+## 5.1. Relación con el luto formal
+
+La despedida y cremación ocurren normalmente durante la **tercera jornada de luto** cuando las circunstancias lo permiten.
+
+Si la cremación debe retrasarse por causa real:
+
+- el luto formal no se vuelve automáticamente indefinido;
+- el duelo personal puede continuar;
+- MORT08 puede reflejar la interrupción logística;
+- la cremación se realiza cuando vuelve a ser posible.
+
+El retorno final de las cenizas puede ocurrir después del tercer día sin contradecir el cierre del luto formal.
+
 ---
 
 # 6. Interrupción

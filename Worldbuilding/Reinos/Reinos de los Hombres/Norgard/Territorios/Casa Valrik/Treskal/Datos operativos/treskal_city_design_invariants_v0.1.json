@@ -1608,6 +1608,34 @@
         "reputation effect needs broken commitment unfair treatment poor management or propagated interpretation",
         "mere finite capacity is not misconduct"
       ]
+    },
+    {
+      "id": "norgard_formal_mourning_is_three_days",
+      "expected": [
+        "formal mourning lasts three days across Norgard",
+        "day one centers on withdrawal and arrangements day two on accompaniment and memory day three on farewell and normally cremation"
+      ]
+    },
+    {
+      "id": "formal_mourning_and_personal_grief_are_distinct",
+      "expected": [
+        "three-day social mourning ends without erasing grief memory or ongoing emotional consequences",
+        "no fixed deadline exists for personal grief"
+      ]
+    },
+    {
+      "id": "delayed_funeral_does_not_break_three_day_mourning_rule",
+      "expected": [
+        "real logistical delay may postpone cremation or ashes return",
+        "formal mourning does not automatically become indefinite because funeral logistics are interrupted"
+      ]
+    },
+    {
+      "id": "mourning_has_no_mandatory_color_or_religious_garment",
+      "expected": [
+        "families may dress soberly or according to household custom",
+        "black clothing religious symbols and prescribed ritual garments are not universal requirements"
+      ]
     }
   ]
 }

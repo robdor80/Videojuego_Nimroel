@@ -147,3 +147,31 @@ Como consecuencia de esta tradición:
 - nobleza y realeza pueden tener ceremonias más complejas sin abandonar la tradición común.
 
 La ubicación física y características de los espacios utilizados para las piras funerarias se definirán posteriormente cuando resulte necesario para el diseño de aldeas, pueblos, villas o ciudades.
+
+---
+
+## 10. Luto formal
+
+En Norgard el luto formal dura **tres jornadas**.
+
+Debe distinguirse entre:
+
+- **luto**: convención social de tres jornadas;
+- **duelo**: proceso personal sin duración fija.
+
+La estructura cultural general es:
+
+1. primera jornada: recogimiento y organización inmediata;
+2. segunda jornada: acompañamiento, memoria y preparación;
+3. tercera jornada: despedida y, cuando las circunstancias lo permiten, cremación.
+
+No existe:
+
+- color obligatorio de luto;
+- vestimenta religiosa;
+- rito sacerdotal;
+- duración obligatoria del duelo personal.
+
+La definición completa se encuentra en:
+
+`Sociedad/luto_y_duelo.md`.

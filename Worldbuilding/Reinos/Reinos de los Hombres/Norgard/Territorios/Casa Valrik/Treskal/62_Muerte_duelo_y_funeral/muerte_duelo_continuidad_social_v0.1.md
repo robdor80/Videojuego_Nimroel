@@ -221,25 +221,39 @@ No se crean:
 
 ---
 
-# 12. Duelo
+# 12. Luto y duelo
 
-Una muerte puede alterar:
+En Norgard el **luto formal dura tres jornadas**.
 
-- rutina;
-- trabajo;
-- descanso;
-- visitas;
-- relaciones;
-- disponibilidad social.
+Debe distinguirse entre:
 
-No se fija en este documento:
+- **luto formal**: periodo social de tres jornadas;
+- **duelo personal**: proceso individual sin duración fija.
 
-- duración universal;
-- vestimenta obligatoria;
-- calendario de duelo;
-- fórmula ceremonial.
+La secuencia cultural general es:
 
-Esos detalles requieren canon específico.
+1. primera jornada — recogimiento y organización inmediata;
+2. segunda jornada — acompañamiento, memoria y preparación;
+3. tercera jornada — despedida y cremación cuando las circunstancias lo permiten.
+
+Durante el luto, las personas más próximas pueden:
+
+- reducir o suspender trabajo no esencial;
+- recibir visitas;
+- delegar responsabilidades;
+- cerrar temporalmente un negocio;
+- alterar descanso y rutina.
+
+No existe:
+
+- color obligatorio;
+- prenda universal de luto;
+- rito religioso;
+- obligación de haber superado la pérdida al cuarto día.
+
+La cercanía real con el fallecido determina cuánto afecta la rutina.
+
+El duelo puede continuar tras el tercer día.
 
 ---
 

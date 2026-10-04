@@ -36,7 +36,7 @@
   ],
   "seaReturnOptionalAndRequiresClearLifeConnection": true,
   "nobilitySharesSameCremationPrinciple": true,
-  "universalMourningDurationDefined": false,
+  "universalMourningDurationDefined": true,
   "mandatoryMourningClothingDefined": false,
   "deathMayAffect": [
     "household",
@@ -66,7 +66,21 @@
   "completedFuneralDoesNotEraseSocialMemory": true,
   "externalDependencies": {
     "inheritanceAndGuardianship": "Norgard_law_and_economic_institutions",
-    "exactMourningCustomsIfAny": "future_Norgard_mourning_detail",
     "exactPeripheralFuneralSiteGeometry": "metric_city_plan"
-  }
+  },
+  "formalMourningDurationDays": 3,
+  "formalMourningStructure": {
+    "day1": "withdrawal_and_immediate_arrangements",
+    "day2": "companionship_memory_and_preparation",
+    "day3": "farewell_and_normally_cremation"
+  },
+  "personalGriefDurationFixed": false,
+  "formalMourningStartsWhenDeathIsKnownAndAcceptedByCloseCircle": true,
+  "delayedNewsDoesNotRetroactivelyConsumeMourningDays": true,
+  "cremationNormallyOccursOnThirdMourningDay": true,
+  "cremationDelayDoesNotAutomaticallyExtendFormalMourning": true,
+  "ashesReturnMayOccurAfterFormalMourningEnds": true,
+  "universalMourningColorDefined": false,
+  "closeRelationshipControlsRoutineImpact": true,
+  "nobilityAndCrownUseSameThreeDayDuration": true
 }
