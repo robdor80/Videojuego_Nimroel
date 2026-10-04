@@ -63,7 +63,8 @@
     "conversationPrivacyEavesdropping": "Datos operativos/treskal_conversation_privacy_eavesdropping_contract_v0.1.json",
     "waitingServiceCapacity": "Datos operativos/treskal_waiting_service_capacity_contract_v0.1.json",
     "dependentsCareNetwork": "Datos operativos/treskal_dependents_care_network_contract_v0.1.json",
-    "householdHospitalityGuests": "Datos operativos/treskal_household_hospitality_guest_contract_v0.1.json"
+    "householdHospitalityGuests": "Datos operativos/treskal_household_hospitality_guest_contract_v0.1.json",
+    "householdChoresDomesticLoad": "Datos operativos/treskal_household_chores_domestic_load_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -118,7 +119,9 @@
     "WAIT": "service_wait_state",
     "DEP": "dependency_type",
     "CARE": "care_coverage_state",
-    "HOSP": "hospitality_state"
+    "HOSP": "hospitality_state",
+    "CHORE": "household_chore_type",
+    "DOM": "domestic_load_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

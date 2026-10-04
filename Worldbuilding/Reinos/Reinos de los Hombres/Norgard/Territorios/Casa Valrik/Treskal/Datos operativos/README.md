@@ -68,3 +68,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_waiting_service_capacity_contract_v0.1.json` — WAIT01–WAIT08, solicitudes y capacidad de servicio.
 - `treskal_dependents_care_network_contract_v0.1.json` — tipos DEP, estados CARE y capacidad de cuidado.
 - `treskal_household_hospitality_guest_contract_v0.1.json` — estados HOSP y permisos temporales de visita/estancia.
+- `treskal_household_chores_domestic_load_contract_v0.1.json` — CHORE01–CHORE09, DOM01–DOM07 y presión doméstica.

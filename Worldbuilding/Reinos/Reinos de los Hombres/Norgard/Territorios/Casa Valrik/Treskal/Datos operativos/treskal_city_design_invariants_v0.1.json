@@ -1706,6 +1706,41 @@
         "luto may increase family neighbor and friend visits",
         "P3 residence still retains access boundaries and privacy"
       ]
+    },
+    {
+      "id": "household_function_requires_domestic_work",
+      "expected": [
+        "water fuel food cleaning laundry waste care errands and maintenance consume real household time",
+        "functional home is not maintained by invisible free labor"
+      ]
+    },
+    {
+      "id": "domestic_tasks_are_not_assigned_by_sex_by_default",
+      "expected": [
+        "task allocation uses capability availability health age skill preference and household custom",
+        "gendered assignment requires separate explicit cultural canon"
+      ]
+    },
+    {
+      "id": "low_lod_domestic_resolution_requires_plausible_capacity",
+      "expected": [
+        "aggregate chores resolve only when real household member/helper time resources and access exist",
+        "LOD cannot fabricate completed work"
+      ]
+    },
+    {
+      "id": "domestic_backlog_has_specific_not_generic_consequences",
+      "expected": [
+        "low water wet laundry fuel shortage waste or cleaning pressure arise from relevant unmet chores",
+        "DOM backlog does not generate every household problem simultaneously"
+      ]
+    },
+    {
+      "id": "hospitality_mourning_and_care_modify_domestic_load",
+      "expected": [
+        "guests luto support and dependents can redistribute or increase chores",
+        "household routine responds to actual social state"
+      ]
     }
   ]
 }
