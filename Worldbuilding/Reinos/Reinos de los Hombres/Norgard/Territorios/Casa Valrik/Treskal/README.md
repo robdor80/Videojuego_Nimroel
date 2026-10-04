@@ -467,3 +467,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `desarrollo_infantil_autonomia_supervision_v0.1.md` — estados CHD01–CHD06, movilidad, cuidado, pares y crecimiento persistente.
 - `juego_tareas_aprendizaje_transicion_v0.1.md` — ED/CHORE/LEIS, exposición a oficios y entrada gradual en APR.
+
+### 73_Envejecimiento_y_vejez_activa
+
+- `envejecimiento_autonomia_vejez_activa_v0.1.md` — estados AGE01–AGE06, capacidad, cuidado, sociabilidad y continuidad personal.
+- `experiencia_mentoria_reduccion_actividad_v0.1.md` — trabajo adaptado, mentoría, continuidad de negocios y transmisión de saber.

@@ -1930,6 +1930,48 @@
         "development advances only through valid lifecycle time progression",
         "absence of player does not freeze or arbitrarily accelerate a child"
       ]
+    },
+    {
+      "id": "old_age_does_not_equal_dependency",
+      "expected": [
+        "older NPCs may remain independent socially active mobile and productive",
+        "DEP04 is created only when actual assistance needs exist"
+      ]
+    },
+    {
+      "id": "aging_changes_capacity_without_erasing_skill",
+      "expected": [
+        "physical workload may need adaptation while knowledge judgement and craft experience can remain high",
+        "age alone does not downgrade professional competence"
+      ]
+    },
+    {
+      "id": "no_universal_retirement_system_assumed",
+      "expected": [
+        "there is no automatic pension retirement age or state support created by this contract",
+        "withdrawal from regular work depends on capacity household resources work role and personal circumstances"
+      ]
+    },
+    {
+      "id": "late_life_can_shift_toward_mentoring",
+      "expected": [
+        "experienced workers may reduce production while increasing supervision teaching quality control or advice",
+        "APR and ED can preserve intergenerational skill transmission"
+      ]
+    },
+    {
+      "id": "business_capacity_reacts_to_reduced_workload",
+      "expected": [
+        "when an owner or key worker reduces activity BIZ and EMP capacity may change",
+        "succession inheritance or ownership transfer is not invented automatically"
+      ]
+    },
+    {
+      "id": "aging_preserves_identity_and_history",
+      "expected": [
+        "npc_id relationships memory reputation and ownership persist through aging",
+        "visual aging must preserve recognizable identity rather than rerolling the NPC"
+      ]
     }
   ]
 }
