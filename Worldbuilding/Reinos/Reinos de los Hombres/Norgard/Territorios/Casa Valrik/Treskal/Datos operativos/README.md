@@ -42,3 +42,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_word_of_honor_pledge_contract_v0.1.json` — pledges persistentes, honor Valrik y reparación social.
 - `treskal_wayfinding_signage_addressing_contract_v0.1.json` — landmarks, indicaciones, rótulos SG01–SG05 y localización.
 - `treskal_animals_carts_traffic_contract_v0.1.json` — transporte TR01–TR06, establos, carros y animales.
+- `treskal_messaging_letters_delivery_contract_v0.1.json` — tipos MSG01–MSG05, estados de entrega y conocimiento.

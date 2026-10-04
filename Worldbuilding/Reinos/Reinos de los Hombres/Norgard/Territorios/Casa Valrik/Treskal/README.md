@@ -75,6 +75,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_word_of_honor_pledge_contract_v0.1.json` — palabra dada, compromisos y reparación social.
 - `treskal_wayfinding_signage_addressing_contract_v0.1.json` — orientación humana, rótulos y localización no moderna.
 - `treskal_animals_carts_traffic_contract_v0.1.json` — animales, carros, congestión y servicios de transporte.
+- `treskal_messaging_letters_delivery_contract_v0.1.json` — mensajería, cartas y entrega física de información.
 
 ## Estado del diseño
 
@@ -278,3 +279,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `animales_tiro_carros_trafico_v0.1.md` — clases TR01–TR06, tráfico, congestión y animales de trabajo.
 - `establos_corrales_servicios_transporte_v0.1.md` — estabulación, carreteros, reparación y capacidad finita.
+
+### 41_Mensajeria_y_comunicacion
+
+- `mensajeria_cartas_comunicacion_urbana_v0.1.md` — recados MSG01–MSG05, cartas, documentos y avisos.
+- `entrega_conocimiento_fiabilidad_v0.1.md` — entrega, lectura, cadena de custodia y conocimiento.
