@@ -32,3 +32,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_arrival_departure_travel_contract_v0.1.json` — entradas APP01–APP06, salidas y continuidad de viaje.
 - `treskal_consumption_restock_price_pressure_contract_v0.1.json` — consumo, stock, reposición y presión cualitativa de precios.
 - `treskal_woodcraft_culture_contract_v0.1.json` — cultura maderera, aserrado manual y estados W01–W08.
+- `treskal_light_visibility_sound_contract_v0.1.json` — estados de luz, visibilidad, sonido y audición.

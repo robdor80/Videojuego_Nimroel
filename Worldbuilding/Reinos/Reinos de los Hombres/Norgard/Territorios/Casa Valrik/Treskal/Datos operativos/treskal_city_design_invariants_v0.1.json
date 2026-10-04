@@ -454,6 +454,41 @@
         "quality derives from material treatment design precision joinery finish and experience",
         "game level does not determine craftsmanship quality"
       ]
+    },
+    {
+      "id": "treskal_night_is_functionally_dark",
+      "expected": [
+        "night lighting appears as local maintained sources rather than continuous modern street lighting",
+        "dark stretches remain genuinely darker"
+      ]
+    },
+    {
+      "id": "visibility_does_not_equal_identity",
+      "expected": [
+        "detecting a person silhouette does not automatically reveal npc identity",
+        "recognition depends on light distance weather obstacles and familiarity"
+      ]
+    },
+    {
+      "id": "sound_requires_real_source",
+      "expected": [
+        "ambient sound corresponds to active people objects water or weather",
+        "audio does not imply activity that is absent in World State"
+      ]
+    },
+    {
+      "id": "hearing_has_information_stages",
+      "expected": [
+        "hearing a sound does not automatically reveal words voice or hidden cause",
+        "walls distance weather and ambient noise matter"
+      ]
+    },
+    {
+      "id": "perceptual_ai_context_matches_actor_access",
+      "expected": [
+        "narrator and NPC context receive only visible audible or otherwise authorized information",
+        "World State hidden cause is not leaked through sensory description"
+      ]
     }
   ]
 }

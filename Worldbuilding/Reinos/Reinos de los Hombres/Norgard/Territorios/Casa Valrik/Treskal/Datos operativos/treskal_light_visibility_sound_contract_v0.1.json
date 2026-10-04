@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_light_visibility_sound_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "lightStates": [
+    "daylight",
+    "overcast_daylight",
+    "twilight",
+    "dark_night",
+    "local_source_lit",
+    "mixed_night"
+  ],
+  "modernContinuousStreetLighting": false,
+  "nightModel": "islands_of_functional_light",
+  "lightRequiresSource": true,
+  "portableLightEffects": [
+    "improve_local_visibility",
+    "increase_carrier_visibility",
+    "cast_shadows",
+    "fire_risk"
+  ],
+  "visibilityInputs": [
+    "light_state",
+    "distance",
+    "fog",
+    "rain",
+    "obstacles",
+    "contrast",
+    "orientation",
+    "movement"
+  ],
+  "recognitionStages": [
+    "presence_detected",
+    "form_recognized",
+    "identity_recognized"
+  ],
+  "npcSubjectToSameVisibilityConcepts": true,
+  "soundSourceFamilies": [
+    "water",
+    "woodcraft",
+    "market",
+    "port",
+    "residential",
+    "institutional",
+    "transport",
+    "weather"
+  ],
+  "soundRequiresRealSource": true,
+  "hearingStages": [
+    "sound_detected",
+    "type_recognized",
+    "words_partially_or_fully_understood",
+    "voice_identified"
+  ],
+  "hearingInputs": [
+    "source_noise",
+    "ambient_noise",
+    "distance",
+    "obstacles",
+    "attention",
+    "weather"
+  ],
+  "exceptionalSoundKnowledgeOnlyForActualHearers": true,
+  "soundDoesNotRevealHiddenCauseAutomatically": true,
+  "lodAudioMovesFromAggregateToIndividualSources": true,
+  "aiContextReceivesOnlyAuthorizedVisibleAndAudibleInformation": true
+}

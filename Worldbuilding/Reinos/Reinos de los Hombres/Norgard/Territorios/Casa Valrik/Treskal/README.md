@@ -65,6 +65,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_arrival_departure_travel_contract_v0.1.json` — aproximaciones APP, viaje territorial y transición de LOD.
 - `treskal_consumption_restock_price_pressure_contract_v0.1.json` — consumo agregado, reposición y presión de mercado.
 - `treskal_woodcraft_culture_contract_v0.1.json` — cadena artesanal de madera y estados W01–W08.
+- `treskal_light_visibility_sound_contract_v0.1.json` — luz, visibilidad, sonido y audición diegética.
 
 ## Estado del diseño
 
@@ -218,3 +219,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `cultura_madera_cadena_artesanal_v0.1.md` — aserrado manual, secado, especialidades y prestigio maderero.
 - `estados_madera_gameplay_artesanal_v0.1.md` — estados W01–W08 para lotes y producción.
+
+### 31_Percepcion_urbana
+
+- `luz_oscuridad_visibilidad_v0.1.md` — noche por islas de luz funcional, reconocimiento progresivo y clima.
+- `paisaje_sonoro_audicion_v0.1.md` — sonido diegético por actividad, audición y conocimiento derivado.
