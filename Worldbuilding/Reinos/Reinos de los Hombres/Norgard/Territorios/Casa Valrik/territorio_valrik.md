@@ -277,7 +277,7 @@ Treskal concentra una enorme parte de la transformación especializada de la mad
 
 En la ciudad existen numerosos:
 
-- aserraderos;
+- aserraderos manuales y patios de aserrado —sin accionamiento hidráulico—;
 - carpinterías;
 - talleres de ebanistería;
 - artesanos especializados en decoración y trabajo fino de la madera.
@@ -285,6 +285,8 @@ En la ciudad existen numerosos:
 La calidad alcanzada por estos oficios es excepcional.
 
 De Treskal salen **los muebles y objetos decorativos de madera mejor elaborados de las tierras de los Hombres**.
+
+En este contexto, **aserradero** no implica mecanización hidráulica: la transformación primaria de la madera se realiza mediante trabajo manual especializado.
 
 Esta excelencia artesanal constituye una de las principales fuentes de prestigio de la ciudad y complementa su importancia naval.
 

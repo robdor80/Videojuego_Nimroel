@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_woodcraft_culture_contract",
+  "version": "0.1",
+  "status": "active_canon_contract",
+  "waterPoweredSawmills": false,
+  "sawmillMeaning": "manual_sawing_yard_or_workshop",
+  "chain": [
+    "reception",
+    "grading",
+    "primary_processing",
+    "seasoning",
+    "destination_selection",
+    "specialized_craft",
+    "finishing",
+    "storage",
+    "delivery_or_export"
+  ],
+  "craftBranches": [
+    "construction_carpentry",
+    "general_carpentry",
+    "fine_cabinetmaking",
+    "carving",
+    "cart_transport_woodwork",
+    "naval_woodwork"
+  ],
+  "relatedRoles": [
+    "sawyers",
+    "warehouse_workers",
+    "transporters",
+    "tool_and_fitting_smiths",
+    "merchants",
+    "apprentices",
+    "loaders",
+    "repairers"
+  ],
+  "qualityDrivers": [
+    "material_selection",
+    "seasoning",
+    "design",
+    "precision",
+    "joinery",
+    "finish",
+    "experience"
+  ],
+  "cityPrestigeClaim": "best_human_lands_furniture_and_decorative_woodwork",
+  "exceptionalSkillNotGuaranteedForEveryArtisan": true,
+  "woodStates": {
+    "W01": "raw_log_or_piece",
+    "W02": "primary_processed",
+    "W03": "seasoning",
+    "W04": "ready_general_carpentry",
+    "W05": "selected_fine_work",
+    "W06": "reserved_naval_use",
+    "W07": "worked_component",
+    "W08": "finished_product"
+  },
+  "woodStateTransitionRequires": [
+    "work",
+    "time",
+    "space",
+    "tools",
+    "conditions"
+  ],
+  "lotFields": [
+    "origin",
+    "owner",
+    "aggregate_quantity",
+    "wood_state",
+    "quality_profile",
+    "destination",
+    "reservation",
+    "location"
+  ],
+  "reservedMaterialNotFreeStock": true,
+  "fireRiskRequiresContextualControls": true,
+  "t04AndT08ConnectedButAdministrativelyDistinct": true
+}

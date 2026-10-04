@@ -64,6 +64,7 @@ La geografía mundial confirma costa, río y relieve suave. La referencia visual
 - `treskal_event_causality_contract_v0.1.json` — ciclo de vida EVT, causalidad y propagación de efectos.
 - `treskal_arrival_departure_travel_contract_v0.1.json` — aproximaciones APP, viaje territorial y transición de LOD.
 - `treskal_consumption_restock_price_pressure_contract_v0.1.json` — consumo agregado, reposición y presión de mercado.
+- `treskal_woodcraft_culture_contract_v0.1.json` — cadena artesanal de madera y estados W01–W08.
 
 ## Estado del diseño
 
@@ -212,3 +213,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `consumo_reposicion_circulacion_v0.1.md` — ciclo entrada/producción → stock → uso/venta → consumo/pérdida → reposición.
 - `formacion_precios_presion_mercado_v0.1.md` — presión cualitativa de mercado sin fijar moneda ni cifras.
+
+### 30_Cultura_de_la_madera
+
+- `cultura_madera_cadena_artesanal_v0.1.md` — aserrado manual, secado, especialidades y prestigio maderero.
+- `estados_madera_gameplay_artesanal_v0.1.md` — estados W01–W08 para lotes y producción.

@@ -419,6 +419,41 @@
         "prices and availability do not oscillate sharply without causal changes",
         "contracts and agreed prices remain meaningful over time"
       ]
+    },
+    {
+      "id": "treskal_sawmills_are_manual",
+      "expected": [
+        "sawmill references mean manual sawing yards or workshops",
+        "water-powered sawmills are not generated or depicted"
+      ]
+    },
+    {
+      "id": "wood_has_processing_history",
+      "expected": [
+        "wood moves through plausible physical states before fine finished goods",
+        "seasoning and reservation states can affect availability"
+      ]
+    },
+    {
+      "id": "woodcraft_prestige_is_concentration_not_universal_mastery",
+      "expected": [
+        "Treskal has exceptional aggregate craft reputation",
+        "individual artisans still vary in skill and rural masters may be exceptional"
+      ]
+    },
+    {
+      "id": "woodcraft_and_royal_shipyards_are_connected_not_identical",
+      "expected": [
+        "T04 and T08 exchange materials specialists and knowledge",
+        "Royal Shipyards remain Crown-controlled and administratively separate"
+      ]
+    },
+    {
+      "id": "wood_quality_not_item_level",
+      "expected": [
+        "quality derives from material treatment design precision joinery finish and experience",
+        "game level does not determine craftsmanship quality"
+      ]
     }
   ]
 }
