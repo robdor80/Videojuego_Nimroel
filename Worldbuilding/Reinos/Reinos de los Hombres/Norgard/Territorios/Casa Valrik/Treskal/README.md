@@ -96,6 +96,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_fire_response_propagation_contract_v0.1.json` — incendios, propagación, evacuación y secuelas.
 - `treskal_sanitation_waste_cycle_contract_v0.1.json` — saneamiento, letrinas, residuos y retirada urbana.
 - `treskal_death_mourning_funeral_contract_v0.1.json` — muerte, cremación, cenizas y continuidad social.
+- `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — privacidad, audición parcial y conversaciones.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -410,3 +411,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `muerte_duelo_continuidad_social_v0.1.md` — estados MORT01–MORT08 y consecuencias sociales de una muerte.
 - `cremacion_cenizas_memoria_urbana_v0.1.md` — destinos ASH01–ASH05 y aplicación urbana del canon funerario norgardiano.
+
+### 63_Privacidad_y_conversacion
+
+- `privacidad_conversaciones_escucha_v0.1.md` — contextos CONV, modos VOICE y privacidad basada en espacio/acústica.
+- `audicion_parcial_testigos_filtracion_v0.1.md` — resultados HEAR00–HEAR05, testigos y filtración de información.

@@ -1538,6 +1538,41 @@
         "objects keep ownership until inheritance/transfer system resolves them",
         "dead NPC is not replaced by equivalent generated character"
       ]
+    },
+    {
+      "id": "conversation_privacy_intent_is_not_acoustic_magic",
+      "expected": [
+        "calling conversation secret or private does not prevent plausible listeners hearing it",
+        "actual exposure depends on voice distance barriers ambient noise and attention"
+      ]
+    },
+    {
+      "id": "same_zone_never_grants_conversation_knowledge",
+      "expected": [
+        "listener must have plausible auditory opportunity",
+        "NPCs in same Z or building do not automatically receive transcript"
+      ]
+    },
+    {
+      "id": "partial_hearing_creates_partial_not_reconstructed_knowledge",
+      "expected": [
+        "fragments remain fragments with uncertainty and source",
+        "AI does not fill missing sentences from world truth"
+      ]
+    },
+    {
+      "id": "heard_statement_is_not_confirmed_truth",
+      "expected": [
+        "listener may know that X said Y without learning that Y is factually true",
+        "claims rumors and facts remain distinct"
+      ]
+    },
+    {
+      "id": "offscreen_dialogue_knowledge_requires_resolved_presence",
+      "expected": [
+        "offscreen conversation can seed knowledge only for actual participants/listeners with valid exposure",
+        "LOD never broadcasts dialogue globally"
+      ]
     }
   ]
 }

@@ -64,3 +64,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_fire_response_propagation_contract_v0.1.json` — FIRE01–FIRE08, respuesta y recuperación tras incendio.
 - `treskal_sanitation_waste_cycle_contract_v0.1.json` — WASTE01–WASTE08, WST01–WST07 y ciclo de retirada.
 - `treskal_death_mourning_funeral_contract_v0.1.json` — estados MORT/ASH, cremación y retorno de cenizas.
+- `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — CONV/VOICE/HEAR, privacidad y conocimiento por oyente.
