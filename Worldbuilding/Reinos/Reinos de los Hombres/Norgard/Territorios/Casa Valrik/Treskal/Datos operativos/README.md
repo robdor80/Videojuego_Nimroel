@@ -59,3 +59,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_furniture_material_life_contract_v0.1.json` — mobiliario FURN01–FURN07 y materialización interior.
 - `treskal_cross_system_causality_contract_v0.1.json` — orden causal, dominios y cadenas de integración.
 - `treskal_tools_workstations_equipment_contract_v0.1.json` — estados TOOL/WS, mantenimiento y cuellos de botella.
+- `treskal_work_hazards_accidents_contract_v0.1.json` — HAZ01–HAZ07, ACC01–ACC08 y respuesta a accidentes.

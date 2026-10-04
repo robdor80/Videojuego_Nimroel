@@ -1363,6 +1363,41 @@
         "worker count alone does not set throughput",
         "shared stations tools material and business state can limit simultaneous work"
       ]
+    },
+    {
+      "id": "work_hazard_does_not_guarantee_accident",
+      "expected": [
+        "risky tasks can proceed safely when conditions and practice are adequate",
+        "accidents need actual causal resolution rather than random drama quota"
+      ]
+    },
+    {
+      "id": "practical_safety_is_not_modern_regulation",
+      "expected": [
+        "workers may maintain tools secure loads clear work areas and adapt to weather",
+        "modern standardized PPE bureaucracy or inspection systems are not assumed"
+      ]
+    },
+    {
+      "id": "accident_consequences_use_existing_systems",
+      "expected": [
+        "injury goes to health damage to COND/TOOL/BUILD employment to EMP and business to BIZ",
+        "ACC layer does not duplicate those changes independently"
+      ]
+    },
+    {
+      "id": "accident_does_not_prove_fault",
+      "expected": [
+        "negligence incompetence or crime require evidence beyond occurrence",
+        "inevitable and ambiguous incidents remain possible"
+      ]
+    },
+    {
+      "id": "accident_recovery_persists_beyond_visual_event",
+      "expected": [
+        "stabilized scene may still have injury damage blocked access lost production and repair work",
+        "incident closes only when principal consequences are resolved"
+      ]
     }
   ]
 }

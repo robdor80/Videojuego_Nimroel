@@ -54,7 +54,8 @@
     "seasonalityAccumulatedWeather": "Datos operativos/treskal_seasonality_accumulated_weather_contract_v0.1.json",
     "furnitureMaterialLife": "Datos operativos/treskal_furniture_material_life_contract_v0.1.json",
     "crossSystemCausality": "Datos operativos/treskal_cross_system_causality_contract_v0.1.json",
-    "toolsWorkstationsEquipment": "Datos operativos/treskal_tools_workstations_equipment_contract_v0.1.json"
+    "toolsWorkstationsEquipment": "Datos operativos/treskal_tools_workstations_equipment_contract_v0.1.json",
+    "workHazardsAccidents": "Datos operativos/treskal_work_hazards_accidents_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -94,7 +95,9 @@
     "ENV": "environmental_surface_state",
     "FURN": "furnishing_function",
     "TOOL": "tool_condition",
-    "WS": "workstation_state"
+    "WS": "workstation_state",
+    "HAZ": "work_hazard_type",
+    "ACC": "accident_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
