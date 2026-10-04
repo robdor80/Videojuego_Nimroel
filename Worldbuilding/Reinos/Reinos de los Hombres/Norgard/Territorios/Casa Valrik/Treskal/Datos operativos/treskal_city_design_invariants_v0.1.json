@@ -1741,6 +1741,41 @@
         "guests luto support and dependents can redistribute or increase chores",
         "household routine responds to actual social state"
       ]
+    },
+    {
+      "id": "apprenticeship_progress_requires_practice_not_elapsed_time",
+      "expected": [
+        "APR advances through supervised tasks results corrected errors tools materials and real opportunity",
+        "calendar time alone never creates professional competence"
+      ]
+    },
+    {
+      "id": "apprentice_task_scope_matches_learning_state",
+      "expected": [
+        "learner contributes only tasks compatible with current APR and supervision",
+        "APR01 cannot perform advanced dangerous or master-quality work by convenience"
+      ]
+    },
+    {
+      "id": "mentor_supervision_has_productive_cost",
+      "expected": [
+        "teaching consumes attention and can reduce immediate master throughput",
+        "training is an investment rather than free parallel production"
+      ]
+    },
+    {
+      "id": "changing_or_losing_mentor_preserves_learning",
+      "expected": [
+        "learner keeps acquired competence evidence and profession history",
+        "new mentor does not reset APR to beginning"
+      ]
+    },
+    {
+      "id": "independent_practitioner_is_not_automatic_master",
+      "expected": [
+        "APR06 means autonomous competent practice within real specialty",
+        "exceptional mastery reputation and advanced specialization require further experience"
+      ]
     }
   ]
 }

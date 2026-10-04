@@ -69,3 +69,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_dependents_care_network_contract_v0.1.json` — tipos DEP, estados CARE y capacidad de cuidado.
 - `treskal_household_hospitality_guest_contract_v0.1.json` — estados HOSP y permisos temporales de visita/estancia.
 - `treskal_household_chores_domestic_load_contract_v0.1.json` — CHORE01–CHORE09, DOM01–DOM07 y presión doméstica.
+- `treskal_apprenticeship_skill_transmission_contract_v0.1.json` — APR01–APR06, mentoría y transmisión de habilidades.

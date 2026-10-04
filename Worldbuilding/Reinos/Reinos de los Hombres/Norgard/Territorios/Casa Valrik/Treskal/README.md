@@ -101,6 +101,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_dependents_care_network_contract_v0.1.json` — cuidados, dependientes y red doméstica de apoyo.
 - `treskal_household_hospitality_guest_contract_v0.1.json` — hospitalidad, visitas y permisos temporales de huésped.
 - `treskal_household_chores_domestic_load_contract_v0.1.json` — tareas domésticas, carga del hogar y backlog.
+- `treskal_apprenticeship_skill_transmission_contract_v0.1.json` — aprendizaje de oficio, mentoría y competencia progresiva.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -440,3 +441,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `tareas_domesticas_carga_hogar_v0.1.md` — tipos CHORE01–CHORE09 y estados DOM01–DOM07.
 - `asignacion_tareas_presion_domestica_v0.1.md` — capacidad, backlog y resolución agregada del trabajo doméstico.
+
+### 68_Aprendizaje_de_oficio
+
+- `aprendizaje_relacion_maestro_aprendiz_v0.1.md` — estados APR01–APR06 y relación formativa.
+- `practica_competencia_especialidad_v0.1.md` — progreso por evidencia, especialización y coste de supervisión.
