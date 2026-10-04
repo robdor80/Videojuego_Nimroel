@@ -512,3 +512,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `verdad_error_omision_declaracion_v0.1.md` — estados STAT01–STAT08 y separación entre verdad, creencia y declaración.
 - `versiones_falsas_contradiccion_descubrimiento_v0.1.md` — continuidad, evidencia, exposición y consecuencias.
+
+### 82_Credibilidad_sospecha_y_verificacion
+
+- `credibilidad_fuentes_sospecha_v0.1.md` — estados CRED01–CRED08, confianza contextual y ausencia de detección sobrenatural.
+- `verificacion_evidencia_corroboracion_v0.1.md` — evidencia, testigos, documentos, expertos y actualización de creencias.
