@@ -90,6 +90,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 - `treskal_seasonality_accumulated_weather_contract_v0.1.json` — estacionalidad, humedad, barro y secado persistente.
 - `treskal_furniture_material_life_contract_v0.1.json` — mobiliario, vida material y persistencia interior.
 - `treskal_cross_system_causality_contract_v0.1.json` — integración causal y autoridad de escritura entre sistemas.
+- `treskal_tools_workstations_equipment_contract_v0.1.json` — herramientas, estaciones y capacidad productiva.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, calidad y procedencia artesanal.
 
 ## Estado del diseño
@@ -374,3 +375,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `integracion_causal_sistemas_urbanos_v0.1.md` — autoridad por dominio, orden causal y separación hecho/presentación.
 - `cadenas_causales_referencia_v0.1.md` — ocho cadenas de regresión entre clima, economía, objetos, NPC e información.
+
+### 57_Herramientas_y_equipamiento
+
+- `herramientas_equipo_estaciones_trabajo_v0.1.md` — estados TOOL01–TOOL07 y WS01–WS05.
+- `mantenimiento_capacidad_productiva_v0.1.md` — cuellos de botella, mantenimiento y efecto sobre producción.

@@ -1328,6 +1328,41 @@
         "granularity and presentation may change",
         "identity ownership stock damage relationships knowledge and event consequences remain invariant"
       ]
+    },
+    {
+      "id": "skill_does_not_replace_required_tooling",
+      "expected": [
+        "capable worker still needs appropriate tools workstation material and time",
+        "dialogue or skill level cannot bypass physical production requirements"
+      ]
+    },
+    {
+      "id": "tool_condition_affects_capacity_without_binary_only_logic",
+      "expected": [
+        "worn or degraded tools may slow work worsen finish or block fine tasks",
+        "not every imperfection instantly makes tool unusable"
+      ]
+    },
+    {
+      "id": "broken_critical_tool_has_real_consequences",
+      "expected": [
+        "task may pause or substitute method may alter speed/quality",
+        "replacement does not spawn automatically"
+      ]
+    },
+    {
+      "id": "workplace_tools_remain_property_of_owner_or_business",
+      "expected": [
+        "authorized use by worker does not transfer ownership",
+        "changing jobs does not move workplace tools without valid transfer"
+      ]
+    },
+    {
+      "id": "production_capacity_respects_workstation_bottlenecks",
+      "expected": [
+        "worker count alone does not set throughput",
+        "shared stations tools material and business state can limit simultaneous work"
+      ]
     }
   ]
 }
