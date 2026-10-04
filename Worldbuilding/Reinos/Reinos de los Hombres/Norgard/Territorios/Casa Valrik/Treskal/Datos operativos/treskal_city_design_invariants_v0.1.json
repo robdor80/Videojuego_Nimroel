@@ -1013,6 +1013,41 @@
         "persistent NPC presentation can reflect recent activity hygiene opportunity clothing change wetness and repair",
         "worker appearance can improve after rest and washing when conditions allow"
       ]
+    },
+    {
+      "id": "treskal_fire_requires_real_fuel",
+      "expected": [
+        "cooking heating ovens and compatible thermal activity consume physical fuel stock",
+        "wood-rich economy does not imply infinite free heat"
+      ]
+    },
+    {
+      "id": "valuable_timber_is_not_default_firewood",
+      "expected": [
+        "high-grade naval or fine-work wood remains reserved for higher-value material uses when appropriate",
+        "fuel preferentially uses authorized firewood lower-grade material and suitable offcuts"
+      ]
+    },
+    {
+      "id": "fuel_storage_affects_both_supply_and_fire_risk",
+      "expected": [
+        "stored wood needs space weather protection and separation from ignition",
+        "larger reserves can increase local fire load"
+      ]
+    },
+    {
+      "id": "thermal_businesses_can_be_supply_constrained",
+      "expected": [
+        "bakery inn or other heat-dependent service may reduce operation when fuel delivery fails",
+        "business does not ignore missing fuel"
+      ]
+    },
+    {
+      "id": "fuel_consumption_can_aggregate_offscreen_without_respawn",
+      "expected": [
+        "LOD may resolve consumption and delivery in aggregate",
+        "stock is replenished only by real delivery purchase transfer or production source"
+      ]
     }
   ]
 }

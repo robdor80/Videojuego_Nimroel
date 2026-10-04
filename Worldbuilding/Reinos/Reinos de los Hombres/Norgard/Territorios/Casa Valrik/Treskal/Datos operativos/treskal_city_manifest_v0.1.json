@@ -44,7 +44,8 @@
     "dailyMarketStalls": "Datos operativos/treskal_daily_market_stall_contract_v0.1.json",
     "businessLifecycle": "Datos operativos/treskal_business_lifecycle_contract_v0.1.json",
     "artisanCommissions": "Datos operativos/treskal_artisan_commission_contract_v0.1.json",
-    "hygieneLaundryDomesticWater": "Datos operativos/treskal_hygiene_laundry_domestic_water_contract_v0.1.json"
+    "hygieneLaundryDomesticWater": "Datos operativos/treskal_hygiene_laundry_domestic_water_contract_v0.1.json",
+    "fuelCookingHeat": "Datos operativos/treskal_fuel_cooking_heat_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -116,7 +117,8 @@
     "animalSpeciesBreedsStats": "future_Nimroel_animal_canon",
     "exactVehicleModels": "future_Nimroel_transport_canon",
     "organizedPostalSystemIfAny": "future_Norgard_communication_system",
-    "textileAndLaundryMaterials": "future_Norgard_material_culture_detail"
+    "textileAndLaundryMaterials": "future_Norgard_material_culture_detail",
+    "exactForgeAndMetallurgyFuels": "future_Norgard_metallurgy_system"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",
