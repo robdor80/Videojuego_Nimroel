@@ -2140,6 +2140,48 @@
         "a vague expectation to return help remains informal",
         "if someone gives their word to perform a specific return action the pledge system becomes authoritative"
       ]
+    },
+    {
+      "id": "gift_requires_real_object_and_valid_transfer",
+      "expected": [
+        "gifted object or lot must exist and be transferable through OWN",
+        "dialogue alone cannot create duplicate or nonexistent gift items"
+      ]
+    },
+    {
+      "id": "gift_does_not_buy_affection_or_friendship",
+      "expected": [
+        "gift may influence a relationship only through interpretation and context",
+        "no item value threshold automatically advances AFF FRI or removes RIFT"
+      ]
+    },
+    {
+      "id": "gift_meaning_depends_on_context_and_relationship",
+      "expected": [
+        "the same object may be welcome neutral awkward inappropriate or suspicious in different contexts",
+        "meaning is derived from giver recipient relationship occasion knowledge and circumstances"
+      ]
+    },
+    {
+      "id": "gift_preference_requires_known_or_observed_basis",
+      "expected": [
+        "a giver may choose a fitting gift only from preferences they plausibly know or infer",
+        "player UI and AI cannot expose hidden PREF values as a magic gift guide"
+      ]
+    },
+    {
+      "id": "gift_refusal_is_valid_social_outcome",
+      "expected": [
+        "recipient may refuse a gift without automatic hostility",
+        "ownership does not transfer until acceptance or another valid transfer mechanism completes"
+      ]
+    },
+    {
+      "id": "gift_memory_and_visibility_are_not_global",
+      "expected": [
+        "meaningful gifts may become memories for participants and witnesses",
+        "private gifts do not create citywide reputation or knowledge automatically"
+      ]
     }
   ]
 }

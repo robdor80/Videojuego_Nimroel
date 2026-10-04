@@ -492,3 +492,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `favores_ayuda_voluntaria_memoria_v0.1.md` — estados FAV01–FAV07, ayuda real, gratitud y memoria social.
 - `reciprocidad_limites_deuda_social_v0.1.md` — reciprocidad no cuantificada, límites, abuso, pledge y continuidad.
+
+### 78_Regalos_y_significado_social
+
+- `regalos_obsequios_transferencia_social_v0.1.md` — estados GIFT01–GIFT07, OWN, aceptación, preferencias y límites relacionales.
+- `significado_aceptacion_memoria_regalos_v0.1.md` — intención, interpretación, objetos sentimentales, devolución y memoria.

@@ -74,7 +74,8 @@
     "friendshipSocialCircles": "Datos operativos/treskal_friendship_social_circles_contract_v0.1.json",
     "interpersonalConflictRepair": "Datos operativos/treskal_interpersonal_conflict_repair_contract_v0.1.json",
     "personalPreferencesHabits": "Datos operativos/treskal_personal_preferences_habits_contract_v0.1.json",
-    "favorsReciprocityInformalDebt": "Datos operativos/treskal_favors_reciprocity_informal_debt_contract_v0.1.json"
+    "favorsReciprocityInformalDebt": "Datos operativos/treskal_favors_reciprocity_informal_debt_contract_v0.1.json",
+    "giftsSocialMeaning": "Datos operativos/treskal_gifts_social_meaning_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -142,7 +143,8 @@
     "RIFT": "interpersonal_conflict_state",
     "PREF": "personal_preference_type",
     "HAB": "personal_habit_type",
-    "FAV": "informal_favor_state"
+    "FAV": "informal_favor_state",
+    "GIFT": "gift_social_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
