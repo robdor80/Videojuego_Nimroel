@@ -1083,6 +1083,41 @@
         "former guest worker or provider may physically retain key after authorization ends",
         "social access rules still deny legitimate entry"
       ]
+    },
+    {
+      "id": "profession_is_not_current_job",
+      "expected": [
+        "NPC may retain learned trade while unemployed changing workplace or doing temporary work",
+        "job loss does not erase professional knowledge"
+      ]
+    },
+    {
+      "id": "vacancy_does_not_spawn_replacement",
+      "expected": [
+        "death departure growth or absence may create an actual vacancy",
+        "replacement requires plausible candidate capability and time"
+      ]
+    },
+    {
+      "id": "substitution_respects_capability",
+      "expected": [
+        "assistant apprentice or temporary worker performs only compatible tasks",
+        "absence of master does not grant master-level skill to substitute"
+      ]
+    },
+    {
+      "id": "worker_absence_affects_real_capacity",
+      "expected": [
+        "illness travel care work or events can reduce production service or opening",
+        "worker never teleports to workplace for player convenience"
+      ]
+    },
+    {
+      "id": "offscreen_hiring_requires_real_candidates",
+      "expected": [
+        "vacancies can resolve outside scene only when plausible candidates exist and time passes",
+        "exceptional specialists are not generated solely to fill template"
+      ]
     }
   ]
 }

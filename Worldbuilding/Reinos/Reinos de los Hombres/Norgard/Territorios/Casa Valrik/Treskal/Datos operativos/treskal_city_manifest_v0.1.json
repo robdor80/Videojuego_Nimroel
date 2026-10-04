@@ -46,7 +46,8 @@
     "artisanCommissions": "Datos operativos/treskal_artisan_commission_contract_v0.1.json",
     "hygieneLaundryDomesticWater": "Datos operativos/treskal_hygiene_laundry_domestic_water_contract_v0.1.json",
     "fuelCookingHeat": "Datos operativos/treskal_fuel_cooking_heat_contract_v0.1.json",
-    "doorsLocksKeysAccess": "Datos operativos/treskal_doors_locks_keys_access_contract_v0.1.json"
+    "doorsLocksKeysAccess": "Datos operativos/treskal_doors_locks_keys_access_contract_v0.1.json",
+    "employmentJobsVacancies": "Datos operativos/treskal_employment_jobs_vacancies_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -76,7 +77,8 @@
     "MK": "market_seller_type",
     "BIZ": "business_state",
     "COM": "commission_state",
-    "DOOR": "physical_access_state"
+    "DOOR": "physical_access_state",
+    "EMP": "employment_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
