@@ -1811,6 +1811,41 @@
         "participants must be available and share plausible place activity and time",
         "relationships cannot advance while NPCs were in incompatible locations"
       ]
+    },
+    {
+      "id": "affection_is_not_generated_by_proximity",
+      "expected": [
+        "familiarity friendship attraction trust and affective commitment remain distinct dimensions",
+        "repeated meetings may create opportunity but do not automatically create romance"
+      ]
+    },
+    {
+      "id": "romance_cannot_be_bought_or_forced",
+      "expected": [
+        "gifts fame persistence or player status do not compel reciprocal affection",
+        "courtship and pair formation require compatible reciprocal interaction history"
+      ]
+    },
+    {
+      "id": "pair_bond_and_household_are_separate",
+      "expected": [
+        "an established pair does not automatically share residence",
+        "co-residence and household formation must use RES MOVE housing capacity and real world state"
+      ]
+    },
+    {
+      "id": "relationship_privacy_respects_information_flow",
+      "expected": [
+        "private attraction courtship or conflict is not public knowledge without perception or transmission",
+        "CONV HEAR K states and witnesses govern what other NPCs can know"
+      ]
+    },
+    {
+      "id": "separation_does_not_erase_shared_history",
+      "expected": [
+        "former partners retain memories commitments consequences and social links that actually occurred",
+        "access residence chores care and routines change through their owning systems rather than instant reset"
+      ]
     }
   ]
 }

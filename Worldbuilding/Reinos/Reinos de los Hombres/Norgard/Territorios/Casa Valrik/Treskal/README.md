@@ -452,3 +452,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `ocio_sociabilidad_tiempo_no_laboral_v0.1.md` — contextos LEIS01–LEIS07 y tiempo social/no laboral.
 - `encuentros_sociales_familiaridad_v0.1.md` — encuentros, familiaridad, relaciones y resolución offscreen.
+
+### 70_Relaciones_afectivas_y_pareja
+
+- `vinculos_afectivos_cortejo_pareja_v0.1.md` — estados AFF01–AFF07, reciprocidad, privacidad y relación con la sociabilidad.
+- `pareja_hogar_separacion_continuidad_v0.1.md` — convivencia, hogar, tareas, acceso, separación y memoria persistente.

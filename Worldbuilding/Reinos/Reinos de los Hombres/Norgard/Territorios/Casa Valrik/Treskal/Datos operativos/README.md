@@ -71,3 +71,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_household_chores_domestic_load_contract_v0.1.json` — CHORE01–CHORE09, DOM01–DOM07 y presión doméstica.
 - `treskal_apprenticeship_skill_transmission_contract_v0.1.json` — APR01–APR06, mentoría y transmisión de habilidades.
 - `treskal_leisure_social_gathering_contract_v0.1.json` — LEIS01–LEIS07 y encuentros sociales persistentes.
+- `treskal_affective_relationship_pairing_contract_v0.1.json` — AFF01–AFF07, cortejo, pareja y continuidad relacional.

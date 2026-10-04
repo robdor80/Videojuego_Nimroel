@@ -66,7 +66,8 @@
     "householdHospitalityGuests": "Datos operativos/treskal_household_hospitality_guest_contract_v0.1.json",
     "householdChoresDomesticLoad": "Datos operativos/treskal_household_chores_domestic_load_contract_v0.1.json",
     "apprenticeshipSkillTransmission": "Datos operativos/treskal_apprenticeship_skill_transmission_contract_v0.1.json",
-    "leisureSocialGathering": "Datos operativos/treskal_leisure_social_gathering_contract_v0.1.json"
+    "leisureSocialGathering": "Datos operativos/treskal_leisure_social_gathering_contract_v0.1.json",
+    "affectiveRelationshipsPairing": "Datos operativos/treskal_affective_relationship_pairing_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -125,7 +126,8 @@
     "CHORE": "household_chore_type",
     "DOM": "domestic_load_state",
     "APR": "apprenticeship_state",
-    "LEIS": "leisure_context"
+    "LEIS": "leisure_context",
+    "AFF": "affective_relationship_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -169,7 +171,8 @@
     "exactVehicleModels": "future_Nimroel_transport_canon",
     "organizedPostalSystemIfAny": "future_Norgard_communication_system",
     "textileAndLaundryMaterials": "future_Norgard_material_culture_detail",
-    "exactForgeAndMetallurgyFuels": "future_Norgard_metallurgy_system"
+    "exactForgeAndMetallurgyFuels": "future_Norgard_metallurgy_system",
+    "formalMarriageRitesAndRecognition": "future_Norgard_family_and_marriage_canon"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",
