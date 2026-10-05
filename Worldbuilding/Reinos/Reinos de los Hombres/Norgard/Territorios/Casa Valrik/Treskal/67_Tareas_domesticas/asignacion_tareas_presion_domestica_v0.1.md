@@ -1,5 +1,8 @@
 # Treskal — asignación de tareas y presión doméstica v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de CHORE / DOM reside en `Worldbuilding/Sistemas/Nimroel Core/02_Ciclo_vital_y_hogar/tareas_domesticas_carga_hogar_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO**

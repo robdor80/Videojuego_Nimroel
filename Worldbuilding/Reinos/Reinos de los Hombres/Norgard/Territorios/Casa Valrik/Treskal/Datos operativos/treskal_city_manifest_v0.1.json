@@ -398,6 +398,36 @@
         ],
         "localContract": "Datos operativos/treskal_kinship_family_network_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "dependentsCareNetwork": {
+        "namespaces": [
+          "DEP",
+          "CARE"
+        ],
+        "localContract": "Datos operativos/treskal_dependents_care_network_contract_v0.1.json",
+        "localOverridesEmpty": false
+      },
+      "householdChoresDomesticLoad": {
+        "namespaces": [
+          "CHORE",
+          "DOM"
+        ],
+        "localContract": "Datos operativos/treskal_household_chores_domestic_load_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "restSleepAvailability": {
+        "namespaces": [
+          "REST"
+        ],
+        "localContract": "Datos operativos/treskal_rest_sleep_availability_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "basicPhysicalNeeds": {
+        "namespaces": [
+          "NEED"
+        ],
+        "localContract": "Datos operativos/treskal_basic_physical_needs_contract_v0.1.json",
+        "localOverridesEmpty": true
       }
     }
   }

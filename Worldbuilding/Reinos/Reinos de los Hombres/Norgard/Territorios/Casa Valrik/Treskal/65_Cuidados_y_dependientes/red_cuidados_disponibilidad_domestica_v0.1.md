@@ -1,5 +1,8 @@
 # Treskal — red de cuidados y disponibilidad doméstica v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada con override local explícito.** La autoridad normativa de DEP / CARE reside en `Worldbuilding/Sistemas/Nimroel Core/02_Ciclo_vital_y_hogar/cuidados_dependientes_red_cuidados_v0.1.md`. La ausencia por defecto de guardería moderna o cuidado residencial institucional en Treskal se conserva exclusivamente en `localOverrides`; fuera de esa excepción prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO**

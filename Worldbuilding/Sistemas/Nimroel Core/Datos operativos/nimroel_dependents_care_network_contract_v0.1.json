@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_dependents_care_network_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "appliesTo": "persistent_dependency_and_care_coverage",
+  "sourcePrototype": "Treskal layer 65",
+  "stableIdNamespace": {
+    "DEP": "dependency_type",
+    "CARE": "care_coverage_state"
+  },
+  "dependencyTypes": {
+    "DEP01": "child_care",
+    "DEP02": "temporary_recovery_care",
+    "DEP03": "long_term_daily_assistance",
+    "DEP04": "elderly_assistance",
+    "DEP05": "high_dependency"
+  },
+  "careStates": {
+    "CARE01": "covered",
+    "CARE02": "shared",
+    "CARE03": "strained",
+    "CARE04": "gap",
+    "CARE05": "emergency_support",
+    "CARE06": "external_help",
+    "CARE07": "relocated_for_care"
+  },
+  "institutionalCareModelDefinedByCore": false,
+  "careConsumes": [
+    "time",
+    "presence",
+    "space",
+    "food",
+    "rest",
+    "organization"
+  ],
+  "elderlyDoesNotAutomaticallyMeanDependent": true,
+  "childDoesNotUseAdultRoutineModel": true,
+  "exactChildAgesUndefined": true,
+  "familyAndNeighborsMaySupportWhenRelationshipAndAvailabilityExist": true,
+  "neighborsNotAutomaticCarers": true,
+  "employmentMayBeAffectedByCare": true,
+  "universalLegalCareLeaveAssumed": false,
+  "medicalCareDistinctFromDailyCare": true,
+  "careStrainMayAffectRestAndAvailability": true,
+  "careGapDoesNotAutoCreateHealthDamage": true,
+  "paidHelpMayExistWithoutUniversalProfession": true,
+  "carerDeathCanCreateCareGapAndHouseholdChange": true,
+  "lodAggregateFields": [
+    "dependents_by_household",
+    "care_capacity",
+    "care_pressure",
+    "critical_gaps"
+  ],
+  "careCaseFields": [
+    "care_case_id",
+    "dependent_ref",
+    "dependency_type",
+    "household_ref",
+    "primary_carer_refs",
+    "secondary_carer_refs",
+    "coverage_state",
+    "location_ref",
+    "health_ref_if_any",
+    "support_network_refs",
+    "last_update_time"
+  ],
+  "careCapacityInputs": [
+    "available_carers",
+    "relationship",
+    "presence",
+    "carer_health",
+    "rest_state",
+    "employment_state",
+    "distance",
+    "dependency_intensity"
+  ],
+  "externalHelpRequiresRealActor": true,
+  "relocationForCareUsesMoveAndResidencySystems": true,
+  "carePersistsAcrossSaveLoad": true,
+  "aiCannotIgnoreHighDependencyForConvenience": true,
+  "externalDependencies": {
+    "exactChildDevelopmentAges": "future_Nimroel_character_lifecycle_system",
+    "guardianshipAndFormalResponsibility": "Norgard_law_and_economic_institutions",
+    "exactHealthConsequencesOfCareGaps": "future_Nimroel_health_system",
+    "institutionalCareTradition": "realm_or_local_defaults"
+  }
+}

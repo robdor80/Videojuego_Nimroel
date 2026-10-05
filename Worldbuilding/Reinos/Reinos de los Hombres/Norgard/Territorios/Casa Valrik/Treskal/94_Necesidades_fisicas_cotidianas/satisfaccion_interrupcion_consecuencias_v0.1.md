@@ -1,5 +1,8 @@
 # Treskal — satisfacción, interrupción y consecuencias de necesidades v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de NEED reside en `Worldbuilding/Sistemas/Nimroel Core/02_Ciclo_vital_y_hogar/necesidades_fisicas_cotidianas_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — SATISFACER UNA NECESIDAD REQUIERE UN RECURSO O ACCIÓN REAL**

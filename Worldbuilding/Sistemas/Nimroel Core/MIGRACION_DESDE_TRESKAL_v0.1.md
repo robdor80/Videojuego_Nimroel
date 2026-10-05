@@ -28,6 +28,10 @@ Treskal continúa siendo el prototipo histórico, pero los sistemas marcados aqu
 | Desarrollo infantil | CHD | activo | override de compatibilidad |
 | Envejecimiento / vejez activa | AGE | activo | override de compatibilidad |
 | Parentesco / red familiar | KIN | activo | override de compatibilidad |
+| Dependencia / cuidado | DEP / CARE | activo | override local explícito |
+| Tareas domésticas / carga | CHORE / DOM | activo | override de compatibilidad |
+| Sueño / descanso / disponibilidad | REST | activo | override de compatibilidad |
+| Necesidades físicas básicas | NEED | activo | override de compatibilidad |
 
 ## Compatibilidad
 
@@ -45,9 +49,14 @@ Fase cognitiva general cerrada salvo K.
 
 K queda para un lote específico porque su autoridad actual está mezclada con información y reputación y debe separarse sin duplicar semántica.
 
-Fase B iniciada:
+Fase B — ciclo vital y hogar cerrada:
 
-- B1 ejecutado: PREG, CHD, AGE, KIN.
-- siguiente lote: DEP / CARE, CHORE / DOM, REST, NEED.
+- B1: PREG, CHD, AGE, KIN.
+- B2: DEP / CARE, CHORE / DOM, REST, NEED.
 
-PREG mantiene únicamente las particularidades locales reales de Treskal sobre entorno y asistencia del parto; no existe doble autoridad sobre el namespace PREG.
+PREG mantiene únicamente las particularidades locales reales de Treskal sobre entorno y asistencia del parto.
+DEP / CARE mantiene únicamente la ausencia local de guardería o cuidado residencial institucional por defecto.
+
+Siguiente fase: C — actividad y tiempo (EMP, AGEN, WAIT, RES / MOVE, APR, FAV, REQ).
+
+K continúa reservado para un lote específico de conocimiento, separado de reputación e información.

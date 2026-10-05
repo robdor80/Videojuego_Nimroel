@@ -69,6 +69,19 @@ Estado:
 
 Nota de separación: PREG conserva en Treskal un override local explícito para el entorno habitual del parto y el modelo de asistencia de su red sanitaria. Esas particularidades no se universalizan en Core.
 
+### Lote B2 migrado
+
+- DEP / CARE — dependencia y cobertura de cuidados;
+- CHORE / DOM — tareas y carga doméstica;
+- REST — sueño, descanso y disponibilidad;
+- NEED — necesidades físicas cotidianas.
+
+Estado:
+
+**MIGRATION_BATCH_B2_READY_FOR_REGRESSION**
+
+Nota de separación: DEP / CARE conserva en Treskal un override local explícito para la ausencia por defecto de guardería moderna o cuidado residencial institucional. El Core no impone un modelo institucional universal.
+
 ---
 
 ## Objetivo

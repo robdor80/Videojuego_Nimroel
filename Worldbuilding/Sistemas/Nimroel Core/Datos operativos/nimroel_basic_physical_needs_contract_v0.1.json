@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_basic_physical_needs_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "appliesTo": "persistent_basic_physical_needs",
+  "sourcePrototype": "Treskal layer 94",
+  "stableIdNamespace": {
+    "NEED": "basic_physical_need_type"
+  },
+  "needTypes": {
+    "NEED01": "food_intake",
+    "NEED02": "hydration",
+    "NEED03": "thermal_comfort",
+    "NEED04": "elimination",
+    "NEED05": "rest_pressure"
+  },
+  "qualitativeStates": [
+    "satisfied",
+    "emerging",
+    "pressing",
+    "urgent"
+  ],
+  "exactPhysiologicalThresholdsDefined": false,
+  "notASurvivalHudRequirement": true,
+  "ordinaryNeedsMayResolveThroughRoutineAggregation": true,
+  "detailedResolutionRequiredWhenRoutineFails": true,
+  "needDoesNotCreateResource": true,
+  "foodRequiresExistingStock": true,
+  "hydrationRequiresAvailableDrink": true,
+  "thermalComfortUsesClimateClothingShelterAndHeatSystems": true,
+  "eliminationUsesSanitationInfrastructure": true,
+  "restPressureDoesNotReplaceREST": true,
+  "needMayInfluence": [
+    "route",
+    "conversation",
+    "employment_activity",
+    "leisure",
+    "goal",
+    "decision",
+    "attention",
+    "strain"
+  ],
+  "needDoesNotAutomaticallyOverride": [
+    "immediate_danger",
+    "emergency",
+    "critical_care",
+    "institutional_authority"
+  ],
+  "childAndDependentAutocareMayBeLimited": true,
+  "travelMustAllowPlausibleBasicNeedsResolution": true,
+  "consumptionMayAffectStockAndOwnershipSystems": true,
+  "hospitalityCareAndFavorsMayHelpOnlyWithRealResources": true,
+  "healthConsequencesDeferredToFutureHealthSystem": true,
+  "lodMayAggregateSatisfiedRoutineNeeds": true,
+  "lodMustPreserveUnsatisfiedRelevantNeed": true,
+  "aiMayMentionNeedOnlyWhenRelevant": true,
+  "aiCannotSatisfyNeedWithoutValidatedActionAndResource": true,
+  "needRecordFields": [
+    "npc_ref",
+    "need_type",
+    "qualitative_state",
+    "cause_refs_if_any",
+    "resource_refs_if_any",
+    "last_satisfied_time_if_relevant",
+    "last_update_time"
+  ],
+  "externalDependencies": {
+    "exactPhysiologyAndHealthConsequences": "future_Nimroel_health_system"
+  }
+}

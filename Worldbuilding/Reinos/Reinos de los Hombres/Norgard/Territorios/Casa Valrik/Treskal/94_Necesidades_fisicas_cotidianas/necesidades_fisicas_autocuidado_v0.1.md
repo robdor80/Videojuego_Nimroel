@@ -1,5 +1,8 @@
 # Treskal — necesidades físicas cotidianas y autocuidado v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de NEED reside en `Worldbuilding/Sistemas/Nimroel Core/02_Ciclo_vital_y_hogar/necesidades_fisicas_cotidianas_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE NPC APROBADO — NECESIDADES REALES SIN CONVERTIR EL JUEGO EN UN SURVIVAL**

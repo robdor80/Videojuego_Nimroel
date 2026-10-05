@@ -41,5 +41,6 @@ Extracción ejecutada:
 - lote A3: STAT, CRED, CONF, DIAL, ATTN, EXP.
 - lote A4: STRS, VAL, SELF.
 - lote B1: PREG, CHD, AGE, KIN.
+- lote B2: DEP / CARE, CHORE / DOM, REST, NEED.
 
 Los siguientes sistemas se migrarán por lotes controlados.
