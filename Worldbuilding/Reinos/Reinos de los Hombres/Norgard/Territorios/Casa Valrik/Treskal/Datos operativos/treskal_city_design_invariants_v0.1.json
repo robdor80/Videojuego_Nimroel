@@ -2770,6 +2770,48 @@
         "an incorrect expectation or prediction may come from uncertainty or error",
         "STAT intent must be evaluated separately before treating it as deliberate falsehood"
       ]
+    },
+    {
+      "id": "perceptible_does_not_always_mean_noticed",
+      "expected": [
+        "a physically available signal may still be missed or only partially processed",
+        "ATTN is evaluated when noticing has meaningful consequences"
+      ]
+    },
+    {
+      "id": "attention_does_not_override_physical_perception",
+      "expected": [
+        "high vigilance cannot see through opaque barriers or hear beyond valid acoustic conditions",
+        "visibility sound distance and obstacles remain authoritative"
+      ]
+    },
+    {
+      "id": "distraction_and_overload_require_causes",
+      "expected": [
+        "ATTN06 and ATTN07 reference real competing stimuli tasks emotions pressure or events",
+        "the engine does not add distraction solely to force failure"
+      ]
+    },
+    {
+      "id": "attention_does_not_replace_perception_roll",
+      "expected": [
+        "declared focused investigation still uses the established Perception flow",
+        "ATTN provides situational context rather than silently authorizing hidden discoveries"
+      ]
+    },
+    {
+      "id": "testimony_requires_perception_attention_and_memory",
+      "expected": [
+        "a witness statement is limited by what could be sensed processed and later recalled",
+        "presence at an event does not grant full event knowledge"
+      ]
+    },
+    {
+      "id": "ai_cannot_retroactively_notice_for_plot",
+      "expected": [
+        "AI receives noticed or authorized cues rather than deciding detection after the fact",
+        "unnoticed peripheral information cannot become knowledge without a valid later path"
+      ]
     }
   ]
 }

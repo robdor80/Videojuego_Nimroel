@@ -89,7 +89,8 @@
     "personalValuesPrinciples": "Datos operativos/treskal_personal_values_principles_contract_v0.1.json",
     "selfConceptRoles": "Datos operativos/treskal_self_concept_roles_contract_v0.1.json",
     "interpersonalTrust": "Datos operativos/treskal_interpersonal_trust_contract_v0.1.json",
-    "expectationRevision": "Datos operativos/treskal_expectation_revision_contract_v0.1.json"
+    "expectationRevision": "Datos operativos/treskal_expectation_revision_contract_v0.1.json",
+    "attentionFocus": "Datos operativos/treskal_attention_focus_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -173,7 +174,8 @@
     "VAL": "personal_value_commitment_state",
     "SELF": "self_concept_role_state",
     "TRUST": "interpersonal_trust_state",
-    "EXP": "expectation_state"
+    "EXP": "expectation_state",
+    "ATTN": "attention_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
