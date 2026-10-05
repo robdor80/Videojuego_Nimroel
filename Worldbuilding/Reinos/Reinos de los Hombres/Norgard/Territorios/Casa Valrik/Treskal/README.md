@@ -597,3 +597,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `respuesta_individual_peligro_emergencia_v0.1.md` — ERSP01–ERSP08, detección de amenaza, autoprotección, ayuda, aviso y evacuación.
 - `coordinacion_evacuacion_consecuencias_v0.1.md` — coordinación informal, rutas reales, aftermath y continuidad causal.
+
+### 99_Parentesco_y_red_familiar
+
+- `parentesco_persistente_red_familiar_v0.1.md` — KIN01–KIN07, parentesco separado de hogar, cuidado, amistad, pareja y confianza.
+- `filiacion_reconocimiento_limites_legales_v0.1.md` — filiación conocida, parentesco desconocido o discutido y fronteras con tutela, matrimonio, herencia y nombres.
