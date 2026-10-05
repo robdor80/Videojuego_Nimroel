@@ -478,6 +478,28 @@
         ],
         "localContract": "Datos operativos/treskal_requests_consent_boundaries_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "propertyPossessionObjects": {
+        "namespaces": [
+          "OWN"
+        ],
+        "localContract": "Datos operativos/treskal_property_possession_object_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "wearMaintenanceRepair": {
+        "namespaces": [
+          "COND"
+        ],
+        "localContract": "Datos operativos/treskal_wear_maintenance_repair_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "toolsWorkstationsEquipment": {
+        "namespaces": [
+          "TOOL",
+          "WS"
+        ],
+        "localContract": "Datos operativos/treskal_tools_workstations_equipment_contract_v0.1.json",
+        "localOverridesEmpty": true
       }
     }
   }

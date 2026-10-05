@@ -1,5 +1,7 @@
 # Treskal — mantenimiento de herramientas y capacidad productiva v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de TOOL / WS reside en `Worldbuilding/Sistemas/Nimroel Core/04_Material_y_riesgo/herramientas_estaciones_capacidad_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE SIMULACIÓN APROBADO**

@@ -105,6 +105,16 @@ Estado:
 
 Fase C queda completamente extraída al Core.
 
+### Lote D1 migrado
+
+- OWN — propiedad, posesión y objetos;
+- COND — condición, desgaste y reparación;
+- TOOL / WS — herramientas, estaciones y capacidad productiva.
+
+Estado:
+
+**MIGRATION_BATCH_D1_READY_FOR_REGRESSION**
+
 ---
 
 ## Objetivo

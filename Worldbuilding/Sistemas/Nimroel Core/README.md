@@ -46,5 +46,6 @@ Extracción ejecutada:
 - lote C2: RES / MOVE, APR, FAV, REQ.
 
 **Fase C — actividad y tiempo: COMPLETA.**
+- lote D1: OWN, COND, TOOL / WS.
 
 Los siguientes sistemas se migrarán por lotes controlados.

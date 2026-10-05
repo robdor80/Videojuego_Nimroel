@@ -1,5 +1,7 @@
 # Treskal — desgaste, mantenimiento y reparación v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de COND reside en `Worldbuilding/Sistemas/Nimroel Core/04_Material_y_riesgo/condicion_desgaste_reparacion_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — CIUDAD MANTENIDA, NO ESTÁTICA**

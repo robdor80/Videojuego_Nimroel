@@ -43,7 +43,10 @@
     "residencyHouseholdMobility": "Datos operativos/nimroel_residency_household_mobility_contract_v0.1.json",
     "apprenticeshipSkillTransmission": "Datos operativos/nimroel_apprenticeship_skill_transmission_contract_v0.1.json",
     "favorsReciprocityInformalDebt": "Datos operativos/nimroel_favors_reciprocity_informal_debt_contract_v0.1.json",
-    "requestsConsentBoundaries": "Datos operativos/nimroel_requests_consent_boundaries_contract_v0.1.json"
+    "requestsConsentBoundaries": "Datos operativos/nimroel_requests_consent_boundaries_contract_v0.1.json",
+    "propertyPossessionObjects": "Datos operativos/nimroel_property_possession_object_contract_v0.1.json",
+    "wearMaintenanceRepair": "Datos operativos/nimroel_wear_maintenance_repair_contract_v0.1.json",
+    "toolsWorkstationsEquipment": "Datos operativos/nimroel_tools_workstations_equipment_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -80,7 +83,11 @@
     "MOVE": "move_state",
     "APR": "apprenticeship_state",
     "FAV": "favor_state",
-    "REQ": "request_state"
+    "REQ": "request_state",
+    "OWN": "ownership_state",
+    "COND": "condition_state",
+    "TOOL": "tool_condition",
+    "WS": "workstation_state"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",

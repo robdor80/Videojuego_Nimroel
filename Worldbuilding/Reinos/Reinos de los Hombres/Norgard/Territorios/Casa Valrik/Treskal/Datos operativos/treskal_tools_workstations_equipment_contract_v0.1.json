@@ -1,92 +1,18 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_tools_workstations_equipment_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "toolConditions": {
-    "TOOL01": "functional",
-    "TOOL02": "worn",
-    "TOOL03": "degraded",
-    "TOOL04": "damaged",
-    "TOOL05": "under_repair",
-    "TOOL06": "unusable",
-    "TOOL07": "retired_or_repurposed"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_tools_workstations_equipment_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "TOOL",
+    "WS"
+  ],
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "workstationStates": {
-    "WS01": "available",
-    "WS02": "occupied",
-    "WS03": "maintenance",
-    "WS04": "damaged",
-    "WS05": "unavailable"
-  },
-  "toolFields": [
-    "tool_id",
-    "function",
-    "owner_ref",
-    "possessor_ref",
-    "workplace_ref",
-    "condition",
-    "maintenance_state",
-    "specialization_if_any"
-  ],
-  "workerSkillDoesNotReplacePhysicalTools": true,
-  "industrialMechanizationAssumed": false,
-  "wearInputs": [
-    "frequency",
-    "worked_material",
-    "force",
-    "humidity",
-    "corrosion",
-    "misuse",
-    "maintenance"
-  ],
-  "maintenanceActions": [
-    "cleaning",
-    "drying",
-    "sharpening",
-    "adjustment",
-    "part_replacement",
-    "repair"
-  ],
-  "degradedToolsMayAffect": [
-    "speed",
-    "finish",
-    "effort",
-    "error_risk",
-    "fine_task_viability"
-  ],
-  "brokenToolDoesNotAutoSpawnReplacement": true,
-  "toolsMayBelongTo": [
-    "worker",
-    "master",
-    "business",
-    "household",
-    "institution"
-  ],
-  "useDoesNotTransferOwnership": true,
-  "workplaceToolsMayBeRoleAuthorized": true,
-  "loansMayLinkToOwnershipAndPledgeSystems": true,
-  "productionCapacityInputs": [
-    "capable_workers",
-    "functional_tools",
-    "available_workstations",
-    "materials",
-    "time",
-    "business_state"
-  ],
-  "criticalToolMissingMayPauseTask": true,
-  "compatibleSubstituteMayChangeSpeedOrQuality": true,
-  "qualityInputsIncludeTools": true,
-  "exceptionalToolDoesNotGrantSkill": true,
-  "lostOrStolenToolsAffectRealProduction": true,
-  "lodAggregateFields": [
-    "functional_tool_capacity",
-    "missing_critical_tools",
-    "maintenance_pressure"
-  ],
-  "relevantToolsRemainPersistentObjects": true,
-  "externalDependencies": {
-    "exactToolMaterialsAndMetallurgy": "future_Norgard_metallurgy_and_material_culture",
-    "specializedRoyalShipyardEquipment": "future_Norgard_royal_naval_industry_system"
-  }
+  "note": "Treskal inherits Nimroel Core tool, workstation and productive capacity semantics without local exceptions."
 }

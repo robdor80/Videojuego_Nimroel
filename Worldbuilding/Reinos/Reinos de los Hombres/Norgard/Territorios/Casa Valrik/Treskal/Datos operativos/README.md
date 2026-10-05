@@ -43,8 +43,8 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_wayfinding_signage_addressing_contract_v0.1.json` — landmarks, indicaciones, rótulos SG01–SG05 y localización.
 - `treskal_animals_carts_traffic_contract_v0.1.json` — transporte TR01–TR06, establos, carros y animales.
 - `treskal_messaging_letters_delivery_contract_v0.1.json` — tipos MSG01–MSG05, estados de entrega y conocimiento.
-- `treskal_property_possession_object_contract_v0.1.json` — propiedad OWN01–OWN07, custodia, contenedores y objetos persistentes.
-- `treskal_wear_maintenance_repair_contract_v0.1.json` — estados COND01–COND07 y trabajos de reparación.
+- `treskal_property_possession_object_contract_v0.1.json` — override de compatibilidad; OWN heredado de Nimroel Core.
+- `treskal_wear_maintenance_repair_contract_v0.1.json` — override de compatibilidad; COND heredado de Nimroel Core.
 - `treskal_daily_market_stall_contract_v0.1.json` — ciclo de puestos, tipos MK01–MK05 y LOD de mercado.
 - `treskal_business_lifecycle_contract_v0.1.json` — negocio ≠ edificio ≠ propietario y estados BIZ01–BIZ08.
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, materiales reservados, calidad y procedencia.
@@ -58,7 +58,7 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_seasonality_accumulated_weather_contract_v0.1.json` — estados ENV01–ENV06 y memoria ambiental.
 - `treskal_furniture_material_life_contract_v0.1.json` — mobiliario FURN01–FURN07 y materialización interior.
 - `treskal_cross_system_causality_contract_v0.1.json` — orden causal, dominios y cadenas de integración.
-- `treskal_tools_workstations_equipment_contract_v0.1.json` — estados TOOL/WS, mantenimiento y cuellos de botella.
+- `treskal_tools_workstations_equipment_contract_v0.1.json` — override de compatibilidad; TOOL/WS heredados de Nimroel Core.
 - `treskal_work_hazards_accidents_contract_v0.1.json` — HAZ01–HAZ07, ACC01–ACC08 y respuesta a accidentes.
 - `treskal_rest_sleep_availability_contract_v0.1.json` — estados REST01–REST07 y disponibilidad derivada.
 - `treskal_fire_response_propagation_contract_v0.1.json` — FIRE01–FIRE08, respuesta y recuperación tras incendio.
