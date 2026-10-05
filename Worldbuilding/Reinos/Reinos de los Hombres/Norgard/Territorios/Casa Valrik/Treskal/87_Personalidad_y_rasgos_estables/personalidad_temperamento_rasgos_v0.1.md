@@ -1,5 +1,7 @@
 # Treskal — personalidad, temperamento y rasgos estables v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de PERS reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/personalidad_rasgos_estables_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE NPC APROBADO — LA PERSONALIDAD ORIENTA, NO DICTA**

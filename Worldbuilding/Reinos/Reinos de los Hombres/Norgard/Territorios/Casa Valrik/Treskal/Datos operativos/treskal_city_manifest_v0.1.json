@@ -253,5 +253,33 @@
     "urbanIntegrationTestPack": "Datos operativos/treskal_urban_integration_test_pack_v0.1.json",
     "functionalClosureAudit": "Datos operativos/treskal_functional_closure_audit_v0.1.json",
     "coreExtractionMap": "Datos operativos/treskal_core_extraction_map_v0.1.json"
+  },
+  "coreInheritance": {
+    "status": "partial_migration_active",
+    "coreManifest": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
+    "migratedSystems": {
+      "memorySalienceForgetting": {
+        "namespaces": [
+          "MEM"
+        ],
+        "localContract": "Datos operativos/treskal_memory_salience_forgetting_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "personalityTraits": {
+        "namespaces": [
+          "PERS"
+        ],
+        "localContract": "Datos operativos/treskal_personality_traits_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "emotionMood": {
+        "namespaces": [
+          "EMO",
+          "MOOD"
+        ],
+        "localContract": "Datos operativos/treskal_emotion_mood_contract_v0.1.json",
+        "localOverridesEmpty": true
+      }
+    }
   }
 }

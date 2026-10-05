@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_core_extraction_map",
-  "version": "0.1",
-  "status": "planned_not_executed",
-  "sourceAuthorityUntilMigration": "Treskal current contracts",
+  "version": "0.2",
+  "status": "partially_executed",
+  "sourceAuthorityUntilMigration": "Per-system authority: migrated namespaces use Nimroel Core; remaining namespaces use Treskal current contracts",
   "targetInheritance": [
     "Nimroel_Core",
     "Norgard_Defaults",
@@ -12,15 +12,72 @@
     "Per_Save_World_State"
   ],
   "highConfidenceCoreNamespaces": [
-    "K","OWN","COND","DOOR","BUILD","TOOL","WS","WASTE","WST","FIRE","HAZ","ACC",
-    "EMP","RES","MOVE","REST","WAIT","AGEN","NEED","ERSP",
-    "DEP","CARE","CHORE","DOM","APR","PREG","CHD","AGE","KIN",
-    "FRI","AFF","RIFT","FAV","GIFT","REQ","TRUST","VIEW",
-    "CONF","STAT","CRED","EMO","MOOD","GOAL","DEC","STRS","PERS","MEM","VAL","SELF","EXP","ATTN","DIAL",
-    "CONV","VOICE","HEAR","MSG","ED"
+    "K",
+    "OWN",
+    "COND",
+    "DOOR",
+    "BUILD",
+    "TOOL",
+    "WS",
+    "WASTE",
+    "WST",
+    "FIRE",
+    "HAZ",
+    "ACC",
+    "EMP",
+    "RES",
+    "MOVE",
+    "REST",
+    "WAIT",
+    "AGEN",
+    "NEED",
+    "ERSP",
+    "DEP",
+    "CARE",
+    "CHORE",
+    "DOM",
+    "APR",
+    "PREG",
+    "CHD",
+    "AGE",
+    "KIN",
+    "FRI",
+    "AFF",
+    "RIFT",
+    "FAV",
+    "GIFT",
+    "REQ",
+    "TRUST",
+    "VIEW",
+    "CONF",
+    "STAT",
+    "CRED",
+    "EMO",
+    "MOOD",
+    "GOAL",
+    "DEC",
+    "STRS",
+    "PERS",
+    "MEM",
+    "VAL",
+    "SELF",
+    "EXP",
+    "ATTN",
+    "DIAL",
+    "CONV",
+    "VOICE",
+    "HEAR",
+    "MSG",
+    "ED"
   ],
   "highConfidenceTreskalLocalNamespaces": [
-    "T","Z","L","S","C","A","APP"
+    "T",
+    "Z",
+    "L",
+    "S",
+    "C",
+    "A",
+    "APP"
   ],
   "highConfidenceTreskalLocalConcepts": [
     "urban_graph",
@@ -75,5 +132,18 @@
     "runAiRegressionAfterEachBatch": true,
     "runIntegrationRegressionAfterEachBatch": true,
     "doNotMoveMixedFilesWithoutManualSplit": true
+  },
+  "executionProgress": {
+    "batchA1": {
+      "status": "ready_for_regression",
+      "migratedNamespaces": [
+        "MEM",
+        "PERS",
+        "EMO",
+        "MOOD"
+      ],
+      "coreManifest": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
+      "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_mem_pers_emo_v0.1.md"
+    }
   }
 }

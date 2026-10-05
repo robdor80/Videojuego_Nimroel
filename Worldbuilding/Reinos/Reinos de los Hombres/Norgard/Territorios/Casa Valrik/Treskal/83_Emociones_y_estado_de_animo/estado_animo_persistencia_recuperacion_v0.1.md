@@ -1,5 +1,7 @@
 # Treskal — estado de ánimo, persistencia y recuperación v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de EMO/MOOD reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/emociones_y_estado_animo_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — EL ÁNIMO CAMBIA SIN REESCRIBIR AL NPC**

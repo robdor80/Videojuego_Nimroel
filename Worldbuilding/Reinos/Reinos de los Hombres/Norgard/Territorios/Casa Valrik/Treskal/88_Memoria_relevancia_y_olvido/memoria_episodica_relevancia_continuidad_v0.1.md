@@ -1,5 +1,7 @@
 # Treskal — memoria episódica, relevancia y continuidad personal v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de MEM reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/memoria_relevancia_olvido_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE NPC APROBADO — RECORDAR NO ES REPRODUCIR EL WORLD STATE**

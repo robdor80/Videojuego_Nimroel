@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_core_manifest",
+  "version": "0.1",
+  "status": "active_core_manifest",
+  "authorityScope": "nimroel_universal",
+  "root": "Worldbuilding/Sistemas/Nimroel Core/",
+  "hierarchy": [
+    "nimroel_core",
+    "realm_defaults",
+    "territory_or_house",
+    "local_override",
+    "world_state"
+  ],
+  "operationalFiles": {
+    "memorySalienceForgetting": "Datos operativos/nimroel_memory_salience_forgetting_contract_v0.1.json",
+    "personalityTraits": "Datos operativos/nimroel_personality_traits_contract_v0.1.json",
+    "emotionMood": "Datos operativos/nimroel_emotion_mood_contract_v0.1.json"
+  },
+  "stableIdNamespaces": {
+    "MEM": "npc_memory_state",
+    "PERS": "personality_trait_type",
+    "EMO": "emotional_state_type",
+    "MOOD": "mood_state"
+  },
+  "migration": {
+    "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",
+    "compatibilityPolicy": "preserve_stable_ids_and_world_state_meaning",
+    "localOverridePolicy": "explicit_only",
+    "duplicateAuthorityForbidden": true
+  }
+}

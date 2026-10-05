@@ -1,78 +1,18 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_emotion_mood_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "emotionTypes": {
-    "EMO01": "fear",
-    "EMO02": "worry",
-    "EMO03": "anger",
-    "EMO04": "sadness",
-    "EMO05": "joy",
-    "EMO06": "relief",
-    "EMO07": "shame_or_embarrassment",
-    "EMO08": "gratitude",
-    "EMO09": "affection_or_warmth",
-    "EMO10": "frustration"
-  },
-  "moodStates": {
-    "MOOD01": "settled",
-    "MOOD02": "positive",
-    "MOOD03": "tense",
-    "MOOD04": "irritable",
-    "MOOD05": "somber",
-    "MOOD06": "energized",
-    "MOOD07": "unsettled"
-  },
-  "multipleConcurrentEmotionsAllowed": true,
-  "emotionRequiresNpcPerceivedBelievedOrRememberedCause": true,
-  "hiddenWorldFactCannotDirectlyTriggerEmotionWithoutKnowledgePath": true,
-  "falseBeliefCanProduceRealEmotion": true,
-  "emotionDoesNotRewritePersonality": true,
-  "moodDoesNotRewritePersonality": true,
-  "personalityMayAffectExpressionAndRegulation": true,
-  "emotionIntensityMayBeQualitative": true,
-  "exactNumericEmotionMetersRequired": false,
-  "moodIsDerivedBackgroundTone": true,
-  "moodMayPersistAfterSpecificEmotionSubsides": true,
-  "moodDurationHasNoUniversalFixedTimer": true,
-  "restMayInfluenceMoodButDoesNotDetermineItAlone": true,
-  "mourningMaySourcePersistentEmotionButRemainsOwnedByMORT": true,
-  "leisureMaySupportRecoveryButIsNotUniversalMoodRefill": true,
-  "emotionMayInfluenceButDoesNotOverride": [
-    "safety",
-    "physical_capacity",
-    "authority",
-    "access",
-    "work_obligation",
-    "care_obligation",
-    "relationship_state",
-    "world_state_constraints"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_emotion_mood_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "EMO",
+    "MOOD"
   ],
-  "observerCannotReadInternalEmotionDirectly": true,
-  "observableCuesMaySupportInference": true,
-  "inferenceIsNotCertainKnowledge": true,
-  "narratorMustRespectPovPerceptionLimits": true,
-  "aiMayReceiveInternalEmotionForNpcDialogue": true,
-  "aiMustNotExposeInternalEmotionAsFactToUnauthorizedObserver": true,
-  "offscreenEmotionChangeRequiresCauseResolutionNewEventOrPlausibleRecovery": true,
-  "aiCannotInventEmotionWithoutWorldStateOrMemoryBasis": true,
-  "emotionEpisodeFields": [
-    "emotion_episode_id",
-    "npc_ref",
-    "emotion_type",
-    "cause_ref",
-    "belief_or_knowledge_ref_if_relevant",
-    "intensity",
-    "start_time",
-    "last_update_time",
-    "active_state"
-  ],
-  "moodRecordFields": [
-    "npc_ref",
-    "mood_state",
-    "cause_refs",
-    "start_time",
-    "last_update_time"
-  ]
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
+  },
+  "note": "Treskal inherits Nimroel Core emotion and mood semantics without local exceptions."
 }

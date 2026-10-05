@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_personality_traits_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "appliesTo": "persistent_sentient_npc_personality",
+  "sourcePrototype": "Treskal layer 87",
+  "stableIdNamespace": {
+    "PERS": "personality_trait_type"
+  },
+  "personalityTraits": {
+    "PERS01": "sociability",
+    "PERS02": "caution",
+    "PERS03": "patience",
+    "PERS04": "assertiveness",
+    "PERS05": "flexibility",
+    "PERS06": "conscientiousness",
+    "PERS07": "curiosity",
+    "PERS08": "emotional_expressiveness",
+    "PERS09": "generosity",
+    "PERS10": "reserve"
+  },
+  "traitsAreGradualNotBinary": true,
+  "closedPersonalityClassesRequired": false,
+  "multipleTraitsCoexist": true,
+  "traitExpressionIsContextual": true,
+  "singleContraryActionDoesNotRewriteTrait": true,
+  "personalityDoesNotEqualEmotion": true,
+  "personalityDoesNotEqualMood": true,
+  "personalityDoesNotEqualSkill": true,
+  "personalityDoesNotEqualReputation": true,
+  "personalityDoesNotEqualMorality": true,
+  "professionDoesNotDeterminePersonality": true,
+  "cultureDoesNotDetermineIndividualPersonality": true,
+  "ageDoesNotAutomaticallyRewriteTraits": true,
+  "traitsMayInfluence": [
+    "emotion_expression",
+    "decision_style",
+    "risk_tolerance",
+    "social_behavior",
+    "disclosure_style",
+    "goal_persistence",
+    "response_to_pressure"
+  ],
+  "traitsDoNotOverride": [
+    "knowledge_limits",
+    "physical_constraints",
+    "authority",
+    "access",
+    "obligations",
+    "world_state"
+  ],
+  "stableChangeRequiresMeaningfulLongTermCause": true,
+  "exactNumericTraitScaleRequired": false,
+  "proceduralNpcTraitsPersistAfterMaterialization": true,
+  "authoredNpcTraitsOverrideProceduralGeneration": true,
+  "observerDoesNotReceiveHiddenTraitSheetByDefault": true,
+  "aiMayUseTraitsAsBehavioralBias": true,
+  "aiMustNotTreatTraitsAsRigidScript": true,
+  "aiCannotInventTraitChangeFromSingleScene": true,
+  "personalityRecordFields": [
+    "npc_ref",
+    "trait_values",
+    "authored_or_generated",
+    "formation_refs_if_any",
+    "change_history_refs_if_any",
+    "last_meaningful_update"
+  ]
+}

@@ -2,7 +2,27 @@
 
 ## Estado
 
-**PLAN DE REFACTORIZACIÓN APROBADO — NO EJECUTADO**
+**PLAN DE REFACTORIZACIÓN APROBADO — EJECUCIÓN INICIADA**
+
+## 0. Progreso de ejecución
+
+Primer lote migrado y activo en Nimroel Core:
+
+- MEM — memoria;
+- PERS — personalidad;
+- EMO / MOOD — emoción y estado de ánimo.
+
+Treskal conserva contratos con los mismos nombres como **overrides de compatibilidad**, sin semántica local duplicada.
+
+Regresión asociada:
+
+`Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_mem_pers_emo_v0.1.md`
+
+Estado del lote:
+
+**MIGRATION_BATCH_A1_READY_FOR_REGRESSION**
+
+---
 
 ## Objetivo
 

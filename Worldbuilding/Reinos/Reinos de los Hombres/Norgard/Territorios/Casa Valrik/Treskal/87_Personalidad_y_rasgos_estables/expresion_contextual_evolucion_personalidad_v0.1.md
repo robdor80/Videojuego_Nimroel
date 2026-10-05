@@ -1,5 +1,7 @@
 # Treskal — expresión contextual y evolución de personalidad v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de PERS reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/personalidad_rasgos_estables_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — CONTINUIDAD SIN INMOVILIDAD**

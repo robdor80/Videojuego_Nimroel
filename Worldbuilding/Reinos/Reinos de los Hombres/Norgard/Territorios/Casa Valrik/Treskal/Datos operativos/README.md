@@ -84,12 +84,12 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_confidential_information_contract_v0.1.json` — CONF01–CONF07, confidencialidad, divulgación y filtraciones.
 - `treskal_statement_integrity_contract_v0.1.json` — STAT01–STAT08, verdad, error, omisión y versiones falsas persistentes.
 - `treskal_credibility_verification_contract_v0.1.json` — CRED01–CRED08, credibilidad, sospecha, corroboración y verificación.
-- `treskal_emotion_mood_contract_v0.1.json` — EMO01–EMO10 y MOOD01–MOOD07, emociones transitorias y tono anímico persistente.
+- `treskal_emotion_mood_contract_v0.1.json` — override de compatibilidad; EMO/MOOD heredados de Nimroel Core.
 - `treskal_personal_goals_intentions_contract_v0.1.json` — GOAL01–GOAL08, objetivos personales, planificación, bloqueo y progreso causal.
 - `treskal_decision_deliberation_contract_v0.1.json` — DEC01–DEC08, deliberación, riesgo percibido, elección y reconsideración.
 - `treskal_stress_strain_recovery_contract_v0.1.json` — STRS01–STRS07, presión acumulada, sobrecarga y recuperación causal.
-- `treskal_personality_traits_contract_v0.1.json` — PERS01–PERS10, rasgos estables, expresión contextual y evolución lenta.
-- `treskal_memory_salience_forgetting_contract_v0.1.json` — MEM01–MEM08, memoria episódica, relevancia, revisión y olvido.
+- `treskal_personality_traits_contract_v0.1.json` — override de compatibilidad; PERS heredado de Nimroel Core.
+- `treskal_memory_salience_forgetting_contract_v0.1.json` — override de compatibilidad; MEM heredado de Nimroel Core.
 - `treskal_personal_values_principles_contract_v0.1.json` — VAL01–VAL08, principios personales, conflictos y revisión de compromisos internos.
 - `treskal_self_concept_roles_contract_v0.1.json` — SELF01–SELF08, identidad personal, roles vitales y transición del autoconcepto.
 - `treskal_interpersonal_trust_contract_v0.1.json` — TRUST01–TRUST08, confianza por dominios, daño y reparación.
