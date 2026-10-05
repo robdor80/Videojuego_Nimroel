@@ -2896,6 +2896,48 @@
         "not every line is stored",
         "pledges requests statements confidences conflicts knowledge and memories persist only through their authoritative systems"
       ]
+    },
+    {
+      "id": "view_is_subjective_not_world_truth",
+      "expected": [
+        "VIEW records how one actor evaluates a target",
+        "the target world state is not rewritten by that evaluation"
+      ]
+    },
+    {
+      "id": "view_is_distinct_from_preference_trust_friendship_and_reputation",
+      "expected": [
+        "PREF TRUST FRI and reputation remain independent authorities",
+        "an NPC may dislike someone while trusting professional competence or like a place while criticizing its management"
+      ]
+    },
+    {
+      "id": "strong_view_requires_basis",
+      "expected": [
+        "persistent strong positive or negative views reference experience information memory or values",
+        "AI does not fabricate intense opinions for conversational flavor"
+      ]
+    },
+    {
+      "id": "private_view_does_not_propagate",
+      "expected": [
+        "other NPCs do not know a private opinion unless it is expressed or inferred through a valid path",
+        "STAT K and rumor govern transmission"
+      ]
+    },
+    {
+      "id": "ambivalence_is_valid",
+      "expected": [
+        "VIEW08 allows meaningful positive and negative evaluations to coexist",
+        "the engine does not force every subject onto one approval axis"
+      ]
+    },
+    {
+      "id": "view_change_requires_new_basis",
+      "expected": [
+        "VIEW may change through evidence experience relationship or revised interpretation",
+        "time or player absence alone does not randomly recalculate it"
+      ]
     }
   ]
 }
