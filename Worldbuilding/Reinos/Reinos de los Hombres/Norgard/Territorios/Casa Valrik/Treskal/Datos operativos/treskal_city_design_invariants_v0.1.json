@@ -2434,6 +2434,48 @@
         "NPC goals can advance while player is absent if action was possible",
         "LOD never resolves a blocked goal without time access resources and causal steps"
       ]
+    },
+    {
+      "id": "decision_uses_known_options_only",
+      "expected": [
+        "NPC deliberation includes only options plausibly known or proposed",
+        "hidden world state never appears as private decision omniscience"
+      ]
+    },
+    {
+      "id": "decision_is_not_perfect_optimization",
+      "expected": [
+        "goals obligations personality relationships emotion and uncertainty may compete",
+        "NPCs are not required to choose the globally optimal designer or player solution"
+      ]
+    },
+    {
+      "id": "choice_does_not_complete_action",
+      "expected": [
+        "DEC04 records a choice rather than a completed world change",
+        "execution still requires path access resources time and owning system validation"
+      ]
+    },
+    {
+      "id": "perceived_risk_is_not_real_risk",
+      "expected": [
+        "risk assessment depends on knowledge credibility experience and perception",
+        "NPC may reasonably underestimate or overestimate actual danger"
+      ]
+    },
+    {
+      "id": "reconsideration_can_follow_new_information",
+      "expected": [
+        "new evidence events obligations or changed resources may trigger DEC06",
+        "changing a decision after context changes is not treated as personality inconsistency"
+      ]
+    },
+    {
+      "id": "offscreen_decision_is_not_player_optimal_autopilot",
+      "expected": [
+        "NPC decisions can resolve while player is absent when context and time permit",
+        "LOD never grants perfect routes knowledge or optimal solutions"
+      ]
     }
   ]
 }
