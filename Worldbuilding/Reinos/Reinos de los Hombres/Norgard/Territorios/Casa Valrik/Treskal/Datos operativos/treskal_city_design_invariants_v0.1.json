@@ -3022,6 +3022,48 @@
         "ending immediate danger does not reset damage absence agenda strain memory or closures",
         "aftermath remains in owning systems until genuinely resolved"
       ]
+    },
+    {
+      "id": "kinship_is_not_household_relationship_or_care",
+      "expected": [
+        "KIN persists independently from RES H AFF FRI TRUST and CARE",
+        "co-residence relationship or caregiving never creates kinship automatically"
+      ]
+    },
+    {
+      "id": "birth_parentage_requires_authorized_data",
+      "expected": [
+        "live birth creates KIN01 with the mother recorded by the pregnancy event",
+        "additional parentage is never inferred from pair status co-residence or AI narrative convenience"
+      ]
+    },
+    {
+      "id": "kinship_fact_and_knowledge_are_separate",
+      "expected": [
+        "a family relation may exist while some actors do not know or believe it",
+        "K CRED CONF and STAT govern discovery privacy dispute and claims"
+      ]
+    },
+    {
+      "id": "family_conflict_or_distance_does_not_erase_kinship",
+      "expected": [
+        "MOVE RIFT separation or lack of contact may change social behavior",
+        "the underlying KIN relation remains part of persistent biography"
+      ]
+    },
+    {
+      "id": "kinship_does_not_create_legal_or_property_rights",
+      "expected": [
+        "KIN alone does not grant inheritance ownership guardianship authority access or obedience",
+        "future Norgard family and legal canon remains authoritative for formal consequences"
+      ]
+    },
+    {
+      "id": "ai_cannot_invent_family_relations",
+      "expected": [
+        "dialogue and narrative may use only authorized KIN records",
+        "parents siblings cousins hidden lineage and family revelations cannot be fabricated for flavor or drama"
+      ]
     }
   ]
 }
