@@ -572,3 +572,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `atencion_foco_conciencia_situacional_v0.1.md` — ATTN01–ATTN08, foco, vigilancia, atención dividida y límites perceptivos.
 - `distraccion_interrupcion_deteccion_periferica_v0.1.md` — señales periféricas, interrupciones, sobrecarga y testimonio condicionado por atención.
+
+### 94_Necesidades_fisicas_cotidianas
+
+- `necesidades_fisicas_autocuidado_v0.1.md` — NEED01–NEED05, comida, hidratación, confort térmico, eliminación y presión de descanso.
+- `satisfaccion_interrupcion_consecuencias_v0.1.md` — resolución mediante recursos reales, abstracción cotidiana y detalle cuando la rutina falla.
