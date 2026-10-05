@@ -527,3 +527,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `objetivos_intenciones_prioridades_v0.1.md` — GOAL01–GOAL08, deseos futuros, prioridades y autonomía del NPC.
 - `planes_progreso_bloqueos_abandono_v0.1.md` — planificación limitada por conocimiento, progreso causal, bloqueo y abandono.
+
+### 85_Toma_de_decisiones_y_riesgo
+
+- `decisiones_deliberacion_conflictos_prioridad_v0.1.md` — DEC01–DEC08, alternativas conocidas, prioridades, obligaciones e indecisión.
+- `riesgo_incertidumbre_reconsideracion_v0.1.md` — riesgo percibido frente a riesgo real, cambio de decisión y resultados inciertos.
