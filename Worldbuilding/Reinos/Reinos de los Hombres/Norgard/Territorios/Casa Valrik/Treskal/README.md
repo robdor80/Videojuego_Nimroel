@@ -577,3 +577,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `necesidades_fisicas_autocuidado_v0.1.md` — NEED01–NEED05, comida, hidratación, confort térmico, eliminación y presión de descanso.
 - `satisfaccion_interrupcion_consecuencias_v0.1.md` — resolución mediante recursos reales, abstracción cotidiana y detalle cuando la rutina falla.
+
+### 95_Dinamica_de_conversacion
+
+- `dinamica_conversacion_disponibilidad_continuidad_v0.1.md` — DIAL01–DIAL08, disponibilidad, atención, iniciativa NPC y continuidad.
+- `temas_interrupcion_cierre_conversacion_v0.1.md` — temas persistentes, interrupción, reanudación y cierre autónomo de diálogo.
