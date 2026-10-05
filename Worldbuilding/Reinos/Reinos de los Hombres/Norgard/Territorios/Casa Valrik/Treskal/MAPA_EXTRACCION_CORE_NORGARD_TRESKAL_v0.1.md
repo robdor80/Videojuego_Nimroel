@@ -161,6 +161,18 @@ Estado:
 
 **MIGRATION_BATCH_U1_READY_FOR_REGRESSION**
 
+### Lote U2 migrado — comunicación y aprendizaje
+
+- CONV / VOICE / HEAR — privacidad, voz y audición;
+- MSG — mensajería y entrega;
+- ED — aprendizaje y transmisión de saber.
+
+Estado:
+
+**MIGRATION_BATCH_U2_READY_FOR_REGRESSION**
+
+Nota de separación: Core no universaliza servicio postal ni estructura educativa. Treskal conserva sus supuestos institucionales concretos.
+
 ---
 
 ## Objetivo

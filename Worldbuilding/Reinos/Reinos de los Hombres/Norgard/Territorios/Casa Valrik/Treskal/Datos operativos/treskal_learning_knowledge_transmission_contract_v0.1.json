@@ -1,57 +1,26 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_learning_knowledge_transmission_contract",
-  "version": "0.1",
-  "status": "active_canon_contract",
-  "learningModes": {
-    "ED01": "household_and_community",
-    "ED02": "craft_apprenticeship",
-    "ED03": "writing_records_administration",
-    "ED04": "trade_and_accounts",
-    "ED05": "maritime_practical_knowledge",
-    "ED06": "healing_tradition",
-    "ED07": "institutional_practical_training"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_learning_knowledge_transmission_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "ED"
+  ],
+  "localOverrides": {
+    "modernSchoolNetworkAssumed": false,
+    "cityEducationalAdvantage": "greater_concentration_of_masters_specialists_institutions_materials_and_clients",
+    "apprenticeHousingOptions": [
+      "family",
+      "master_household",
+      "relatives",
+      "other_compatible_lodging"
+    ]
   },
-  "modernSchoolNetworkAssumed": false,
-  "cityEducationalAdvantage": "greater_concentration_of_masters_specialists_institutions_materials_and_clients",
-  "universalLiteracyRateDefined": false,
-  "literacyCanVaryByRole": true,
-  "apprenticeshipDurationUniversal": false,
-  "apprenticesMayComeFromOtherSettlements": true,
-  "apprenticeHousingOptions": [
-    "family",
-    "master_household",
-    "relatives",
-    "other_compatible_lodging"
-  ],
-  "knowledgeProvenanceSupported": [
-    "family",
-    "master",
-    "experience",
-    "document",
-    "institution",
-    "rumor"
-  ],
-  "skillTransferInstantByDialogueForbidden": true,
-  "authoredLoreNotAutomaticallyNpcKnowledge": true,
-  "professionalProgressStates": [
-    "learner",
-    "apprentice",
-    "competent_worker",
-    "experienced_worker",
-    "master_or_recognized_specialist"
-  ],
-  "progressMayDependOn": [
-    "time",
-    "practice",
-    "tasks",
-    "teaching",
-    "experience"
-  ],
-  "masterDeathDoesNotEraseLearning": true,
-  "offscreenProgressRequiresCompatibleOngoingTraining": true,
-  "externalDependencies": {
-    "exactSkillProgression": "future_Nimroel_character_progression_system",
-    "militaryInstitutionalCurricula": "Norgard_military_review"
-  }
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
+  },
+  "note": "Treskal inherits Core learning/transmission semantics; its premodern education structure and local urban advantage remain explicit overrides."
 }

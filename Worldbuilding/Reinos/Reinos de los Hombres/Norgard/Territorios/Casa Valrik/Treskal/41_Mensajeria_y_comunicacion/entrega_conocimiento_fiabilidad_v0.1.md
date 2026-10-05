@@ -1,5 +1,7 @@
 # Treskal — entrega, conocimiento y fiabilidad de mensajes v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada con override local explícito.** La autoridad normativa de MSG reside en `Worldbuilding/Sistemas/Nimroel Core/06_Comunicacion_y_saber/mensajeria_entrega_v0.1.md`. Treskal conserva únicamente su infraestructura de mensajería premoderna; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO**

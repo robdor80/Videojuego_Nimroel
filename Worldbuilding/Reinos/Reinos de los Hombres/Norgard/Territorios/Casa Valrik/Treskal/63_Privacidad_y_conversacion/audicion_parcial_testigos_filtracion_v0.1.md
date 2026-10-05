@@ -1,5 +1,7 @@
 # Treskal — audición parcial, testigos y filtración de información v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de CONV / VOICE / HEAR reside en `Worldbuilding/Sistemas/Nimroel Core/06_Comunicacion_y_saber/privacidad_voz_audicion_v0.1.md`. Este archivo conserva ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO**

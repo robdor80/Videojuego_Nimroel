@@ -1,56 +1,19 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_messaging_letters_delivery_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "messageTypes": {
-    "MSG01": "oral_errand",
-    "MSG02": "private_note_or_letter",
-    "MSG03": "commercial_document",
-    "MSG04": "institutional_communication",
-    "MSG05": "public_notice"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_messaging_letters_delivery_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "MSG"
+  ],
+  "localOverrides": {
+    "publicModernPostalServiceAssumed": false
   },
-  "publicModernPostalServiceAssumed": false,
-  "instantCommunicationForbidden": true,
-  "messageStates": [
-    "drafted",
-    "entrusted",
-    "in_transit",
-    "attempted",
-    "delivered",
-    "returned",
-    "lost",
-    "intercepted"
-  ],
-  "deliveryDoesNotEqualReading": true,
-  "existenceDoesNotEqualNpcKnowledge": true,
-  "minimumRelevantFields": [
-    "message_id",
-    "sender_ref",
-    "carrier_ref",
-    "recipient_ref",
-    "created_time",
-    "departure_time",
-    "delivery_time",
-    "current_holder",
-    "state",
-    "confidentiality",
-    "related_event_or_pledge"
-  ],
-  "literacyAlternatives": [
-    "oral_message",
-    "trusted_reader",
-    "scribe"
-  ],
-  "carrierKnowledgeDependsOnAccessToContent": true,
-  "routeAndAddressKnowledgeAffectDelivery": true,
-  "urgentStillRequiresTravelTime": true,
-  "publicNoticeRequiresActualExposureToBecomeKnowledge": true,
-  "inTransitMessageNeverAutomaticallyUpdatesRecipientKnowledge": true,
-  "significantMessagesMayPersistAsObjectsOrRecords": true,
-  "externalDependencies": {
-    "organizedPostalSystemIfAny": "future_Norgard_communication_system",
-    "documentSealConventions": "future_Norgard_documentary_canon",
-    "exactCourierFees": "Norgard_monetary_and_economic_system"
-  }
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
+  },
+  "note": "Treskal inherits Core messaging semantics; its lack of a modern public postal service remains local."
 }

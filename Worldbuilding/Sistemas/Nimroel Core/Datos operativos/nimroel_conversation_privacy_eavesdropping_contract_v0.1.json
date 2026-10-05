@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_conversation_privacy_eavesdropping_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "sourcePrototype": "Treskal layer 63",
+  "stableIdNamespace": {
+    "CONV": "conversation_privacy_context",
+    "VOICE": "voice_mode",
+    "HEAR": "hearing_result"
+  },
+  "conversationContexts": {
+    "CONV01": "public",
+    "CONV02": "social_shared",
+    "CONV03": "discreet",
+    "CONV04": "private_space",
+    "CONV05": "restricted_confidential"
+  },
+  "voiceModes": {
+    "VOICE01": "whisper",
+    "VOICE02": "low",
+    "VOICE03": "normal",
+    "VOICE04": "raised",
+    "VOICE05": "shout"
+  },
+  "hearingResults": {
+    "HEAR00": "none",
+    "HEAR01": "presence_only",
+    "HEAR02": "fragments",
+    "HEAR03": "substantial",
+    "HEAR04": "full_content",
+    "HEAR05": "full_content_and_voice"
+  },
+  "privacyIntentDistinctFromActualExposure": true,
+  "secretLabelDoesNotMakeSpeechInaudible": true,
+  "hearingInputs": [
+    "distance",
+    "doors",
+    "walls",
+    "windows",
+    "ambient_noise",
+    "crowd",
+    "rain",
+    "wind",
+    "attention",
+    "orientation",
+    "voice_mode"
+  ],
+  "closedDoorReducesButDoesNotGuaranteeSilence": true,
+  "sameZoneDoesNotGrantKnowledge": true,
+  "eavesdroppingRequiresPhysicalAndPerceptualOpportunity": true,
+  "partialHearingCreatesPartialKnowledge": true,
+  "hearingWordsDoesNotGuaranteeSpeakerIdentity": true,
+  "hearingClaimDoesNotMakeClaimTrue": true,
+  "rumorTransmissionCanDeriveFromHeardInformation": true,
+  "writtenMessageRequiresPhysicalAccessAndReadingAbility": true,
+  "institutionalRestrictionReducesExposureButDoesNotGuaranteeZeroLeak": true,
+  "aiReceivesOnlyActuallyHeardContent": true,
+  "relevantConversationFields": [
+    "conversation_id",
+    "participant_refs",
+    "location_ref",
+    "privacy_context",
+    "voice_mode",
+    "start_time",
+    "end_time",
+    "listener_candidates",
+    "exposure_results"
+  ],
+  "onlyPlausibleListenersEvaluated": true,
+  "contradictoryWitnessPerceptionAllowed": true,
+  "detectedEavesdroppingMayAffectSocialState": true,
+  "offscreenConversationsRequireResolvedPresenceAndExposureToSeedKnowledge": true,
+  "externalDependencies": {
+    "exactPerceptionChecks": "future_Nimroel_perception_skill_system",
+    "exactAcousticMaterialValues": "future_Nimroel_audio_simulation"
+  }
+}

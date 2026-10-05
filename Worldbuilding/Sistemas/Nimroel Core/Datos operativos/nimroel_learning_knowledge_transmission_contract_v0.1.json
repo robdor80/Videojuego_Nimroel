@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_learning_knowledge_transmission_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "sourcePrototype": "Treskal layer 35",
+  "stableIdNamespace": {
+    "ED": "learning_mode"
+  },
+  "learningModes": {
+    "ED01": "household_and_community",
+    "ED02": "craft_apprenticeship",
+    "ED03": "writing_records_administration",
+    "ED04": "trade_and_accounts",
+    "ED05": "maritime_practical_knowledge",
+    "ED06": "healing_tradition",
+    "ED07": "institutional_practical_training"
+  },
+  "formalEducationNetworkDefinedByCore": false,
+  "universalLiteracyRateDefined": false,
+  "literacyCanVaryByRole": true,
+  "apprenticeshipDurationUniversal": false,
+  "apprenticesMayComeFromOtherSettlements": true,
+  "knowledgeProvenanceSupported": [
+    "family",
+    "master",
+    "experience",
+    "document",
+    "institution",
+    "rumor"
+  ],
+  "skillTransferInstantByDialogueForbidden": true,
+  "authoredLoreNotAutomaticallyNpcKnowledge": true,
+  "professionalProgressStates": [
+    "learner",
+    "apprentice",
+    "competent_worker",
+    "experienced_worker",
+    "master_or_recognized_specialist"
+  ],
+  "progressMayDependOn": [
+    "time",
+    "practice",
+    "tasks",
+    "teaching",
+    "experience"
+  ],
+  "masterDeathDoesNotEraseLearning": true,
+  "offscreenProgressRequiresCompatibleOngoingTraining": true,
+  "externalDependencies": {
+    "exactSkillProgression": "future_Nimroel_character_progression_system",
+    "militaryInstitutionalCurricula": "realm_military_or_institutional_canon"
+  }
+}

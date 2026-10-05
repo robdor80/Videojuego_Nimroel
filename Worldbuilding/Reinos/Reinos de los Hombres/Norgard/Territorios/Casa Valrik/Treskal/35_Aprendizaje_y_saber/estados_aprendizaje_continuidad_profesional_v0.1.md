@@ -1,5 +1,7 @@
 # Treskal — estados de aprendizaje y continuidad profesional v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada con override local explícito.** La autoridad normativa de ED reside en `Worldbuilding/Sistemas/Nimroel Core/06_Comunicacion_y_saber/aprendizaje_transmision_saber_v0.1.md`. Treskal conserva únicamente su estructura educativa concreta; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE GAMEPLAY APROBADO**

@@ -56,7 +56,10 @@
     "friendshipSocialCircles": "Datos operativos/nimroel_friendship_social_circles_contract_v0.1.json",
     "affectiveRelationshipsPairing": "Datos operativos/nimroel_affective_relationship_pairing_contract_v0.1.json",
     "interpersonalConflictRepair": "Datos operativos/nimroel_interpersonal_conflict_repair_contract_v0.1.json",
-    "giftsSocialMeaning": "Datos operativos/nimroel_gifts_social_meaning_contract_v0.1.json"
+    "giftsSocialMeaning": "Datos operativos/nimroel_gifts_social_meaning_contract_v0.1.json",
+    "conversationPrivacyEavesdropping": "Datos operativos/nimroel_conversation_privacy_eavesdropping_contract_v0.1.json",
+    "messagingLettersDelivery": "Datos operativos/nimroel_messaging_letters_delivery_contract_v0.1.json",
+    "learningKnowledgeTransmission": "Datos operativos/nimroel_learning_knowledge_transmission_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -109,7 +112,12 @@
     "FRI": "friendship_state",
     "AFF": "affective_relationship_state",
     "RIFT": "interpersonal_conflict_state",
-    "GIFT": "gift_state"
+    "GIFT": "gift_state",
+    "CONV": "conversation_privacy_context",
+    "VOICE": "voice_mode",
+    "HEAR": "hearing_result",
+    "MSG": "message_type",
+    "ED": "learning_mode"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",

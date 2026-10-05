@@ -572,6 +572,29 @@
         ],
         "localContract": "Datos operativos/treskal_gifts_social_meaning_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "conversationPrivacyEavesdropping": {
+        "namespaces": [
+          "CONV",
+          "VOICE",
+          "HEAR"
+        ],
+        "localContract": "Datos operativos/treskal_conversation_privacy_eavesdropping_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "messagingLettersDelivery": {
+        "namespaces": [
+          "MSG"
+        ],
+        "localContract": "Datos operativos/treskal_messaging_letters_delivery_contract_v0.1.json",
+        "localOverridesEmpty": false
+      },
+      "learningKnowledgeTransmission": {
+        "namespaces": [
+          "ED"
+        ],
+        "localContract": "Datos operativos/treskal_learning_knowledge_transmission_contract_v0.1.json",
+        "localOverridesEmpty": false
       }
     }
   }

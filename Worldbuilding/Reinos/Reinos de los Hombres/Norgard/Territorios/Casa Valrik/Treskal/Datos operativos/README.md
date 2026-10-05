@@ -36,13 +36,13 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_urban_integration_test_pack_v0.1.json` — 12 escenarios de integración/regresión de sistemas urbanos.
 - `treskal_maritime_culture_contract_v0.1.json` — identidad marítima, saber práctico y redes portuarias.
 - `treskal_health_care_network_contract_v0.1.json` — curandería urbana distribuida, materiales y atención.
-- `treskal_learning_knowledge_transmission_contract_v0.1.json` — modos ED01–ED07 y progreso profesional conceptual.
+- `treskal_learning_knowledge_transmission_contract_v0.1.json` — override local; ED heredado de Nimroel Core y estructura educativa concreta conservada en Treskal.
 - `treskal_hospitality_inn_network_contract_v0.1.json` — hospitalidad urbana, posadas y alojamientos persistentes.
 - `treskal_daily_life_family_food_contract_v0.1.json` — vida cotidiana, alimentos F01–F08 y redes familiares.
 - `treskal_word_of_honor_pledge_contract_v0.1.json` — pledges persistentes, honor Valrik y reparación social.
 - `treskal_wayfinding_signage_addressing_contract_v0.1.json` — landmarks, indicaciones, rótulos SG01–SG05 y localización.
 - `treskal_animals_carts_traffic_contract_v0.1.json` — transporte TR01–TR06, establos, carros y animales.
-- `treskal_messaging_letters_delivery_contract_v0.1.json` — tipos MSG01–MSG05, estados de entrega y conocimiento.
+- `treskal_messaging_letters_delivery_contract_v0.1.json` — override local; MSG heredado de Nimroel Core y ausencia de servicio postal moderno conservada en Treskal.
 - `treskal_property_possession_object_contract_v0.1.json` — override de compatibilidad; OWN heredado de Nimroel Core.
 - `treskal_wear_maintenance_repair_contract_v0.1.json` — override de compatibilidad; COND heredado de Nimroel Core.
 - `treskal_daily_market_stall_contract_v0.1.json` — ciclo de puestos, tipos MK01–MK05 y LOD de mercado.
@@ -64,7 +64,7 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_fire_response_propagation_contract_v0.1.json` — override local; FIRE heredado de Nimroel Core y organización concreta de respuesta conservada en Treskal.
 - `treskal_sanitation_waste_cycle_contract_v0.1.json` — override local; WASTE/WST heredados de Nimroel Core y tecnología sanitaria concreta conservada en Treskal.
 - `treskal_death_mourning_funeral_contract_v0.1.json` — estados MORT/ASH, cremación y retorno de cenizas.
-- `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — CONV/VOICE/HEAR, privacidad y conocimiento por oyente.
+- `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — override de compatibilidad; CONV/VOICE/HEAR heredados de Nimroel Core.
 - `treskal_waiting_service_capacity_contract_v0.1.json` — override de compatibilidad; WAIT heredado de Nimroel Core.
 - `treskal_dependents_care_network_contract_v0.1.json` — tipos DEP, estados CARE y capacidad de cuidado.
 - `treskal_household_hospitality_guest_contract_v0.1.json` — estados HOSP y permisos temporales de visita/estancia.
