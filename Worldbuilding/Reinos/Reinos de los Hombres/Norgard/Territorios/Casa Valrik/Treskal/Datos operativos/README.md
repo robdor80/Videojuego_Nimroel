@@ -85,3 +85,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_statement_integrity_contract_v0.1.json` — STAT01–STAT08, verdad, error, omisión y versiones falsas persistentes.
 - `treskal_credibility_verification_contract_v0.1.json` — CRED01–CRED08, credibilidad, sospecha, corroboración y verificación.
 - `treskal_emotion_mood_contract_v0.1.json` — EMO01–EMO10 y MOOD01–MOOD07, emociones transitorias y tono anímico persistente.
+- `treskal_personal_goals_intentions_contract_v0.1.json` — GOAL01–GOAL08, objetivos personales, planificación, bloqueo y progreso causal.
