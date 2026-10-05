@@ -2518,6 +2518,48 @@
         "STRS may rise or recover while player is absent if causes change",
         "LOD does not randomly reroll pressure state"
       ]
+    },
+    {
+      "id": "personality_is_stable_bias_not_rigid_script",
+      "expected": [
+        "traits influence expression decisions and preferences without forcing one response",
+        "context relationships goals emotion and obligations may produce different behavior from the same NPC"
+      ]
+    },
+    {
+      "id": "single_action_does_not_rewrite_personality",
+      "expected": [
+        "one impulsive cautious generous or harsh act does not automatically change PERS",
+        "stable change requires repeated or major long-term experience"
+      ]
+    },
+    {
+      "id": "personality_is_distinct_from_skill_emotion_and_reputation",
+      "expected": [
+        "PERS does not grant competence knowledge friendship or public standing",
+        "EMO MOOD ED APR FRI and reputation keep separate authority"
+      ]
+    },
+    {
+      "id": "culture_and_profession_do_not_clone_personality",
+      "expected": [
+        "shared occupation or culture may shape conduct expectations",
+        "individual NPCs retain distinct trait profiles"
+      ]
+    },
+    {
+      "id": "trait_change_requires_long_term_cause",
+      "expected": [
+        "lasting trait evolution references sustained life change experience or development",
+        "AI cannot mutate personality merely to fit one dramatic scene"
+      ]
+    },
+    {
+      "id": "personality_persists_across_lod",
+      "expected": [
+        "materialization save load travel and LOD preserve the same trait profile",
+        "authored NPC personality is never overwritten by procedural reroll"
+      ]
     }
   ]
 }

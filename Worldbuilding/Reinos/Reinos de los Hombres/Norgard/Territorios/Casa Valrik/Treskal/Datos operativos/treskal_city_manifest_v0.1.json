@@ -83,7 +83,8 @@
     "emotionMood": "Datos operativos/treskal_emotion_mood_contract_v0.1.json",
     "personalGoalsIntentions": "Datos operativos/treskal_personal_goals_intentions_contract_v0.1.json",
     "decisionDeliberation": "Datos operativos/treskal_decision_deliberation_contract_v0.1.json",
-    "stressStrainRecovery": "Datos operativos/treskal_stress_strain_recovery_contract_v0.1.json"
+    "stressStrainRecovery": "Datos operativos/treskal_stress_strain_recovery_contract_v0.1.json",
+    "personalityTraits": "Datos operativos/treskal_personality_traits_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -161,7 +162,8 @@
     "MOOD": "mood_state",
     "GOAL": "personal_goal_state",
     "DEC": "decision_process_state",
-    "STRS": "stress_strain_state"
+    "STRS": "stress_strain_state",
+    "PERS": "personality_trait_type"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
