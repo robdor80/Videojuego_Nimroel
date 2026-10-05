@@ -2686,6 +2686,48 @@
         "former roles may remain meaningful after active participation ends",
         "MEM and SELF retain continuity without restoring obsolete permissions or employment"
       ]
+    },
+    {
+      "id": "trust_is_domain_specific_not_global",
+      "expected": [
+        "an NPC may trust another in honesty while distrusting professional competence or discretion",
+        "the engine does not collapse all trust into one scalar"
+      ]
+    },
+    {
+      "id": "friendship_romance_and_reputation_do_not_equal_trust",
+      "expected": [
+        "FRI AFF and reputation may influence expectations but remain distinct systems",
+        "professional trust may exist without personal friendship"
+      ]
+    },
+    {
+      "id": "undiscovered_breach_does_not_magically_reduce_trust",
+      "expected": [
+        "TRUST changes only when the observer experiences or learns enough about the breach",
+        "hidden misconduct does not directly mutate another NPC internal state"
+      ]
+    },
+    {
+      "id": "forgiveness_does_not_restore_trust_automatically",
+      "expected": [
+        "RIFT may be repaired while TRUST remains guarded or damaged",
+        "emotional reconciliation and renewed reliance are separate outcomes"
+      ]
+    },
+    {
+      "id": "trust_repair_requires_relevant_history",
+      "expected": [
+        "TRUST07 advances through repeated reliable conduct transparency restitution or other relevant evidence",
+        "one apology or elapsed time alone does not restore strong trust"
+      ]
+    },
+    {
+      "id": "trust_does_not_create_permission_or_access",
+      "expected": [
+        "high TRUST may influence willingness",
+        "DOOR HOSP OWN REQ EMP and other owning systems still validate actual permission access and control"
+      ]
     }
   ]
 }
