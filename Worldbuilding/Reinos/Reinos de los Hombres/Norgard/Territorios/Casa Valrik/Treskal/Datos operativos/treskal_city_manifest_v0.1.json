@@ -93,7 +93,8 @@
     "attentionFocus": "Datos operativos/treskal_attention_focus_contract_v0.1.json",
     "basicPhysicalNeeds": "Datos operativos/treskal_basic_physical_needs_contract_v0.1.json",
     "dialogueDynamics": "Datos operativos/treskal_dialogue_dynamics_contract_v0.1.json",
-    "personalViewsAttitudes": "Datos operativos/treskal_personal_views_attitudes_contract_v0.1.json"
+    "personalViewsAttitudes": "Datos operativos/treskal_personal_views_attitudes_contract_v0.1.json",
+    "personalAgendaTimeCommitments": "Datos operativos/treskal_personal_agenda_time_commitments_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -181,7 +182,8 @@
     "ATTN": "attention_state",
     "NEED": "basic_physical_need_type",
     "DIAL": "dialogue_state",
-    "VIEW": "personal_view_state"
+    "VIEW": "personal_view_state",
+    "AGEN": "personal_agenda_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -235,7 +237,8 @@
     "exactAgingAndLongevityModel": "future_Nimroel_character_lifecycle_system",
     "pensionRetirementInheritanceRules": "future_Norgard_law_and_economic_institutions",
     "canonicalPersonalValueVocabulary": "future_Nimroel_character_psychology_core",
-    "exactPhysiologyAndHealthConsequences": "future_Nimroel_health_system"
+    "exactPhysiologyAndHealthConsequences": "future_Nimroel_health_system",
+    "exactClockAndCalendarScheduling": "future_Nimroel_time_system"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",

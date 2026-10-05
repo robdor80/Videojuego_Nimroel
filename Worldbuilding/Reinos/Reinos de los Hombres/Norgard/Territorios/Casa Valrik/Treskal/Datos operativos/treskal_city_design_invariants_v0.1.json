@@ -2938,6 +2938,48 @@
         "VIEW may change through evidence experience relationship or revised interpretation",
         "time or player absence alone does not randomly recalculate it"
       ]
+    },
+    {
+      "id": "npc_time_cannot_be_duplicated",
+      "expected": [
+        "one NPC cannot perform incompatible activities in different places during the same period",
+        "conflicts resolve through delay reschedule cancellation absence or DEC"
+      ]
+    },
+    {
+      "id": "agenda_coordinates_but_does_not_replace_owning_systems",
+      "expected": [
+        "AGEN records temporal placement while EMP CARE REST PLEDGE COM and others retain domain authority",
+        "agenda status never rewrites job care or pledge state by itself"
+      ]
+    },
+    {
+      "id": "travel_wait_rest_and_dialogue_consume_time",
+      "expected": [
+        "movement waiting sleeping and meaningful conversation occupy the same finite day as work and care",
+        "the simulation cannot treat them as zero-duration side channels"
+      ]
+    },
+    {
+      "id": "goal_plan_does_not_auto_reserve_time",
+      "expected": [
+        "GOAL03 may express a next step without calendar commitment",
+        "AGEN is required when timing becomes consequential"
+      ]
+    },
+    {
+      "id": "rescheduling_requires_real_availability",
+      "expected": [
+        "AGEN06 requires a plausible new window and compatible participants",
+        "one actor cannot silently rewrite another actor schedule"
+      ]
+    },
+    {
+      "id": "lod_cannot_execute_conflicting_activities_in_parallel",
+      "expected": [
+        "offscreen simulation checks time travel and availability before progressing activities",
+        "low detail never allows every pending intention to complete simultaneously"
+      ]
     }
   ]
 }
