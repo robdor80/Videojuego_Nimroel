@@ -91,7 +91,8 @@
     "interpersonalTrust": "Datos operativos/treskal_interpersonal_trust_contract_v0.1.json",
     "expectationRevision": "Datos operativos/treskal_expectation_revision_contract_v0.1.json",
     "attentionFocus": "Datos operativos/treskal_attention_focus_contract_v0.1.json",
-    "basicPhysicalNeeds": "Datos operativos/treskal_basic_physical_needs_contract_v0.1.json"
+    "basicPhysicalNeeds": "Datos operativos/treskal_basic_physical_needs_contract_v0.1.json",
+    "dialogueDynamics": "Datos operativos/treskal_dialogue_dynamics_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -177,7 +178,8 @@
     "TRUST": "interpersonal_trust_state",
     "EXP": "expectation_state",
     "ATTN": "attention_state",
-    "NEED": "basic_physical_need_type"
+    "NEED": "basic_physical_need_type",
+    "DIAL": "dialogue_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

@@ -2854,6 +2854,48 @@
         "satisfied routine needs may resolve in aggregate offscreen",
         "an unmet consequential need persists across streaming and materialization"
       ]
+    },
+    {
+      "id": "player_does_not_freeze_npc_life_during_dialogue",
+      "expected": [
+        "conversation may coexist with compatible work walking eating or waiting",
+        "events needs duties and emergencies may limit or interrupt dialogue"
+      ]
+    },
+    {
+      "id": "topic_refusal_is_not_total_dialogue_refusal",
+      "expected": [
+        "DIAL04 may block one subject while the NPC continues discussing another",
+        "CONF REQ TRUST and personal boundaries remain topic-specific"
+      ]
+    },
+    {
+      "id": "npc_can_end_conversation",
+      "expected": [
+        "DIAL07 and DIAL08 may be initiated by the NPC when context supports closure",
+        "the player does not own conversation duration"
+      ]
+    },
+    {
+      "id": "dialogue_does_not_grant_knowledge_or_permission",
+      "expected": [
+        "participation does not expose hidden K CONF access or authority",
+        "owning systems still validate information actions objects and permissions"
+      ]
+    },
+    {
+      "id": "repeated_question_does_not_unlock_information",
+      "expected": [
+        "asking the same question again does not force disclosure",
+        "a changed answer requires changed trust evidence knowledge context or willingness"
+      ]
+    },
+    {
+      "id": "important_dialogue_persists_through_owned_systems",
+      "expected": [
+        "not every line is stored",
+        "pledges requests statements confidences conflicts knowledge and memories persist only through their authoritative systems"
+      ]
     }
   ]
 }
