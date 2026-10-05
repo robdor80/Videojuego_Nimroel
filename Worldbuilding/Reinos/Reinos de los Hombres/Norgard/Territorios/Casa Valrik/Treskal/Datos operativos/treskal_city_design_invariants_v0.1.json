@@ -2980,6 +2980,48 @@
         "offscreen simulation checks time travel and availability before progressing activities",
         "low detail never allows every pending intention to complete simultaneously"
       ]
+    },
+    {
+      "id": "emergency_response_requires_awareness",
+      "expected": [
+        "ERSP begins only after perception warning or credible information reaches the NPC",
+        "hidden danger does not trigger omniscient reaction"
+      ]
+    },
+    {
+      "id": "fear_does_not_force_one_response",
+      "expected": [
+        "EMO01 may influence behavior without mapping automatically to flight freeze or attack",
+        "PERS DEC VAL CARE experience and context remain relevant"
+      ]
+    },
+    {
+      "id": "evacuation_requires_real_route_and_time",
+      "expected": [
+        "actors move through known visible or indicated accessible routes",
+        "evacuation is not an instantaneous zone-state change"
+      ]
+    },
+    {
+      "id": "helping_requires_real_capacity",
+      "expected": [
+        "CARE relationship or values may motivate assistance",
+        "actual rescue still needs presence access capability resources and time"
+      ]
+    },
+    {
+      "id": "emergency_response_does_not_replace_event_system",
+      "expected": [
+        "ERSP records actor behavior while FIRE ACC security health and other systems own event outcomes",
+        "AI response text cannot extinguish cure or resolve the event"
+      ]
+    },
+    {
+      "id": "post_emergency_consequences_persist",
+      "expected": [
+        "ending immediate danger does not reset damage absence agenda strain memory or closures",
+        "aftermath remains in owning systems until genuinely resolved"
+      ]
     }
   ]
 }
