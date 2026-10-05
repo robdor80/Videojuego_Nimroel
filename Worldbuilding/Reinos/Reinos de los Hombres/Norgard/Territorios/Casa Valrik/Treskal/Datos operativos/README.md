@@ -97,3 +97,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_attention_focus_contract_v0.1.json` — ATTN01–ATTN08, foco, distracción, sobrecarga y procesamiento de señales perceptibles.
 - `treskal_basic_physical_needs_contract_v0.1.json` — NEED01–NEED05, necesidades físicas cotidianas y resolución cualitativa.
 - `treskal_dialogue_dynamics_contract_v0.1.json` — DIAL01–DIAL08, disponibilidad, temas, interrupción y cierre de conversación.
+- `treskal_personal_views_attitudes_contract_v0.1.json` — VIEW01–VIEW08, actitudes y opiniones personales con base e historia propias.
