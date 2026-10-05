@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "documentId": "casa_valrik_given_word_honor_default",
+  "version": "0.1",
+  "status": "active_house_default",
+  "authorityScope": "casa_valrik_defaults",
+  "inheritsFrom": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_defaults_manifest_v0.1.json",
+  "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/38_Honor_y_palabra/palabra_dada_compromisos_honor_v0.1.md",
+  "rules": {
+    "clearlyGivenWordHasHighMoralWeight": true,
+    "fulfillingClearPledgeMayStrengthenTrustAndReputation": true,
+    "deliberateBreachIsCulturallySevere": true,
+    "everyFutureStatementIsPledge": false,
+    "clearOrExplicitCommitmentRequired": true,
+    "breachCauseMustBeConsidered": true,
+    "reputationImpactRequiresKnowledgePath": true,
+    "pledgeDoesNotReplaceKingsLaw": true
+  },
+  "breachCauseCategories": [
+    "deliberate",
+    "negligent",
+    "inevitable",
+    "ambiguous"
+  ],
+  "explicitlyNotDefined": [
+    "legal_contract_enforcement",
+    "criminal_penalties",
+    "formal_arbitration_institution",
+    "automatic_family_transfer",
+    "realm_wide_norgard_honor_rule"
+  ]
+}

@@ -623,5 +623,16 @@
         "technicalIdsRemainLocalAndStable": true
       }
     }
+  },
+  "houseDefaultsInheritance": {
+    "manifest": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_defaults_manifest_v0.1.json",
+    "inheritedSystems": {
+      "givenWordHonor": {
+        "houseDefault": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_given_word_honor_default_v0.1.json",
+        "localContract": "Datos operativos/treskal_word_of_honor_pledge_contract_v0.1.json",
+        "localPledgeStateMachinePreserved": true,
+        "saveMigrationRequired": false
+      }
+    }
   }
 }

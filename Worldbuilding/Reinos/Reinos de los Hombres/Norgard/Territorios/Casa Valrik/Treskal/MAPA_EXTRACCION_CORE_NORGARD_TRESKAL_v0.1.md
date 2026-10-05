@@ -241,6 +241,23 @@ Estado:
 
 **Todos los candidatos de Norgard marcados READY por la auditoría inicial han sido extraídos.**
 
+### Capa Casa Valrik — V1 palabra dada
+
+Creada la capa de defaults de Casa Valrik sin elevar esta costumbre a todo Norgard.
+
+Activo:
+
+- alto peso moral de una palabra claramente dada;
+- especial severidad social del incumplimiento deliberado;
+- reputación dependiente de conocimiento real;
+- la palabra no sustituye la Ley del Rey.
+
+Treskal conserva su máquina local PLEDGE y su integración jugable.
+
+Estado:
+
+**CASA_VALRIK_DEFAULT_V1_READY_FOR_REGRESSION**
+
 ### Fase E0 — auditoría de Norgard Defaults
 
 Creada la capa `Worldbuilding/Sistemas/Norgard Defaults/` y auditados los candidatos culturales.

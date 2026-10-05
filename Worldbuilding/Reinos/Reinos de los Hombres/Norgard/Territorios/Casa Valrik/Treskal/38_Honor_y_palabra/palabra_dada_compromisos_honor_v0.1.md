@@ -1,3 +1,6 @@
+> **HERENCIA DE CASA ACTIVA — V1**  
+> El peso cultural Valrik de la palabra dada se hereda de `Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_given_word_honor_default_v0.1.json`. Este documento conserva la máquina PLEDGE y la aplicación jugable/local de Treskal.
+
 # Treskal — palabra dada, compromisos y honor social v0.1
 
 ## Estado

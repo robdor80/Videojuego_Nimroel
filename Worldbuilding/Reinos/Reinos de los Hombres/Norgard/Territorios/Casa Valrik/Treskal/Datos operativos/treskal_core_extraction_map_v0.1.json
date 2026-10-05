@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_core_extraction_map",
-  "version": "0.20",
-  "status": "partially_executed",
+  "version": "0.21",
+  "status": "refactor_scope_complete_pending_external_canon",
   "sourceAuthorityUntilMigration": "Per-system authority: migrated namespaces use Nimroel Core; remaining namespaces use Treskal current contracts",
   "targetInheritance": [
     "Nimroel_Core",
@@ -309,7 +309,7 @@
       "toponymic_convention"
     ],
     "houseOrTerritory": [
-      "given_word_special_weight_valrik"
+      "given_word_special_weight_valrik_extracted"
     ],
     "blockedPendingCanon": [
       "military_and_guard_framework",
@@ -352,6 +352,12 @@
         "defaultContract": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_toponymic_convention_default_v0.1.json",
         "regression": "Worldbuilding/Sistemas/Norgard Defaults/Validacion/regresion_e3_toponimia_norgard_v0.1.md"
       }
+    },
+    "houseDefaultsExecution": {
+      "status": "active_and_ready_for_regression",
+      "layer": "Worldbuilding/Sistemas/Casa Valrik Defaults/",
+      "defaultContract": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_given_word_honor_default_v0.1.json",
+      "regression": "Worldbuilding/Sistemas/Casa Valrik Defaults/Validacion/regresion_v1_palabra_dada_valrik_v0.1.md"
     }
   }
 }

@@ -23,7 +23,7 @@
     "toponymicConvention": "extracted_active"
   },
   "houseOrTerritoryCandidates": {
-    "givenWordSpecialWeight": "Casa_Valrik"
+    "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
   },
   "blockedPendingCanon": [
     "military_and_guard_final_framework",
@@ -56,5 +56,8 @@
       "default": "Datos operativos/norgard_toponymic_convention_default_v0.1.json",
       "regression": "Validacion/regresion_e3_toponimia_norgard_v0.1.md"
     }
+  },
+  "downstreamDefaults": {
+    "casaValrik": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_defaults_manifest_v0.1.json"
   }
 }

@@ -230,3 +230,26 @@ Estado:
 **NORGARD_DEFAULT_E3_READY_FOR_REGRESSION**
 
 Con E3 quedan extraídos todos los candidatos de Reino que la auditoría consideró listos. Los demás continúan bloqueados por canon pendiente, y el peso especial de la palabra dada pasa a la futura capa Casa Valrik.
+
+
+---
+
+## 9. Capa Casa Valrik ejecutada
+
+El candidato `given_word_special_weight_valrik` no se ha promovido a Norgard.
+
+Se ha creado la capa:
+
+`Worldbuilding/Sistemas/Casa Valrik Defaults/`
+
+Default activo:
+
+- peso moral especial de la palabra dada;
+- severidad social del incumplimiento deliberado;
+- necesidad de compromiso claro;
+- dependencia del conocimiento para impacto reputacional;
+- subordinación a la Ley del Rey.
+
+Estado:
+
+**CASA_VALRIK_DEFAULT_V1_READY_FOR_REGRESSION**

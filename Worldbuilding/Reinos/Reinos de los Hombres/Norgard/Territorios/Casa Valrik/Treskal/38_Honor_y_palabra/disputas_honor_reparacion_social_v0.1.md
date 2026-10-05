@@ -1,3 +1,6 @@
+> **HERENCIA DE CASA ACTIVA — V1**  
+> La severidad social Valrik ante la ruptura deliberada de la palabra se hereda de `Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_given_word_honor_default_v0.1.json`. Este documento mantiene las formas locales de disputa y reparación de Treskal.
+
 # Treskal — disputas de honor y reparación social v0.1
 
 ## Estado
