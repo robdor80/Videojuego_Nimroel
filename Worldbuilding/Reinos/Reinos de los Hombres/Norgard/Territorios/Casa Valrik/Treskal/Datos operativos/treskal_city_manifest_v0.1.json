@@ -79,7 +79,8 @@
     "requestsConsentBoundaries": "Datos operativos/treskal_requests_consent_boundaries_contract_v0.1.json",
     "confidentialInformationDisclosure": "Datos operativos/treskal_confidential_information_contract_v0.1.json",
     "statementIntegrity": "Datos operativos/treskal_statement_integrity_contract_v0.1.json",
-    "credibilitySuspicionVerification": "Datos operativos/treskal_credibility_verification_contract_v0.1.json"
+    "credibilitySuspicionVerification": "Datos operativos/treskal_credibility_verification_contract_v0.1.json",
+    "emotionMood": "Datos operativos/treskal_emotion_mood_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -152,7 +153,9 @@
     "REQ": "personal_request_state",
     "CONF": "confidential_information_state",
     "STAT": "statement_integrity_state",
-    "CRED": "claim_credibility_state"
+    "CRED": "claim_credibility_state",
+    "EMO": "emotional_state_type",
+    "MOOD": "mood_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

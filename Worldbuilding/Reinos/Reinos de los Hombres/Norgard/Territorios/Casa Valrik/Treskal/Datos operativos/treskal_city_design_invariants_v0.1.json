@@ -2350,6 +2350,48 @@
         "checking a claim requires observation witness evidence document professional source or later outcome",
         "the engine never upgrades a claim to verified merely because time passed"
       ]
+    },
+    {
+      "id": "emotion_requires_subjective_cause",
+      "expected": [
+        "NPC emotional response traces to something perceived believed remembered or expected",
+        "hidden world facts cannot directly trigger emotion without a knowledge path"
+      ]
+    },
+    {
+      "id": "emotion_does_not_rewrite_personality",
+      "expected": [
+        "temporary fear anger sadness joy or irritation never replace persistent personality",
+        "personality may change expression without dictating identical emotional response"
+      ]
+    },
+    {
+      "id": "false_belief_can_generate_real_emotion",
+      "expected": [
+        "emotion may respond to a claim the NPC believes even when world truth differs",
+        "correcting the belief may alter the emotion only after the NPC receives and accepts new information"
+      ]
+    },
+    {
+      "id": "observer_cannot_read_internal_emotion",
+      "expected": [
+        "player and other NPCs receive observable cues rather than internal labels",
+        "narrator respects POV perception and does not expose hidden emotional state as fact"
+      ]
+    },
+    {
+      "id": "mood_is_not_happiness_bar",
+      "expected": [
+        "leisure gifts food drink or conversation do not universally refill mood",
+        "mood follows causes personality context rest relationships and events rather than one scalar meter"
+      ]
+    },
+    {
+      "id": "offscreen_emotion_change_requires_cause",
+      "expected": [
+        "emotion and mood may evolve offscreen through time recovery or new events",
+        "LOD never rerolls emotional state without continuity"
+      ]
     }
   ]
 }
