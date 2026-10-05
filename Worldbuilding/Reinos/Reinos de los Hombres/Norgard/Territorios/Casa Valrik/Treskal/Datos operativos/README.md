@@ -93,3 +93,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_personal_values_principles_contract_v0.1.json` — VAL01–VAL08, principios personales, conflictos y revisión de compromisos internos.
 - `treskal_self_concept_roles_contract_v0.1.json` — SELF01–SELF08, identidad personal, roles vitales y transición del autoconcepto.
 - `treskal_interpersonal_trust_contract_v0.1.json` — TRUST01–TRUST08, confianza por dominios, daño y reparación.
+- `treskal_expectation_revision_contract_v0.1.json` — EXP01–EXP08, anticipación, incertidumbre, sorpresa y revisión de expectativas.
