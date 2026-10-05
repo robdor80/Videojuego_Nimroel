@@ -582,3 +582,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `dinamica_conversacion_disponibilidad_continuidad_v0.1.md` — DIAL01–DIAL08, disponibilidad, atención, iniciativa NPC y continuidad.
 - `temas_interrupcion_cierre_conversacion_v0.1.md` — temas persistentes, interrupción, reanudación y cierre autónomo de diálogo.
+
+### 96_Actitudes_y_opiniones_personales
+
+- `actitudes_opiniones_valoracion_personal_v0.1.md` — VIEW01–VIEW08, valoración subjetiva separada de preferencia, confianza, amistad y reputación.
+- `formacion_revision_expresion_opiniones_v0.1.md` — formación, ambivalencia, revisión y expresión pública de opiniones.
