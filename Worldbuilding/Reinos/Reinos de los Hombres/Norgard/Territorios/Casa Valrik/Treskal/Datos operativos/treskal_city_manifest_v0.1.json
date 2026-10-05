@@ -84,7 +84,8 @@
     "personalGoalsIntentions": "Datos operativos/treskal_personal_goals_intentions_contract_v0.1.json",
     "decisionDeliberation": "Datos operativos/treskal_decision_deliberation_contract_v0.1.json",
     "stressStrainRecovery": "Datos operativos/treskal_stress_strain_recovery_contract_v0.1.json",
-    "personalityTraits": "Datos operativos/treskal_personality_traits_contract_v0.1.json"
+    "personalityTraits": "Datos operativos/treskal_personality_traits_contract_v0.1.json",
+    "memorySalienceForgetting": "Datos operativos/treskal_memory_salience_forgetting_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -163,7 +164,8 @@
     "GOAL": "personal_goal_state",
     "DEC": "decision_process_state",
     "STRS": "stress_strain_state",
-    "PERS": "personality_trait_type"
+    "PERS": "personality_trait_type",
+    "MEM": "npc_memory_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,

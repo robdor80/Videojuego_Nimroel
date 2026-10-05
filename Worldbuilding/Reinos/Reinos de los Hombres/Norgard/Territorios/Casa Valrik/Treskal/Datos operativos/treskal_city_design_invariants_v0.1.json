@@ -2560,6 +2560,48 @@
         "materialization save load travel and LOD preserve the same trait profile",
         "authored NPC personality is never overwritten by procedural reroll"
       ]
+    },
+    {
+      "id": "memory_is_not_world_truth",
+      "expected": [
+        "MEM stores an NPC-specific recollection and interpretation",
+        "underlying events remain authoritative even when memory is incomplete or mistaken"
+      ]
+    },
+    {
+      "id": "shared_event_does_not_create_identical_memory",
+      "expected": [
+        "two participants may retain different details interpretations and salience",
+        "the engine never merges their memories into one canonical subjective version"
+      ]
+    },
+    {
+      "id": "fading_detail_does_not_fill_with_invention",
+      "expected": [
+        "MEM04 MEM05 and MEM06 may reduce precision or increase uncertainty",
+        "AI and simulation do not fabricate missing details to make recollection fluent"
+      ]
+    },
+    {
+      "id": "forgetting_does_not_delete_world_consequences",
+      "expected": [
+        "MEM08 affects recall only",
+        "relationships ownership pledges reputation damage and other world states persist under their own systems"
+      ]
+    },
+    {
+      "id": "structurally_relevant_memories_survive_optimization",
+      "expected": [
+        "low-salience routine memories may be summarized or archived",
+        "memories still referenced by relationships pledges investigations goals or story consequences keep sufficient linkage"
+      ]
+    },
+    {
+      "id": "lod_does_not_reroll_memory",
+      "expected": [
+        "save load streaming and materialization preserve memory continuity",
+        "memory changes require time salience recall evidence or other causal input rather than LOD transitions"
+      ]
     }
   ]
 }
