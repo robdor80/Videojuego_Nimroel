@@ -2602,6 +2602,48 @@
         "save load streaming and materialization preserve memory continuity",
         "memory changes require time salience recall evidence or other causal input rather than LOD transitions"
       ]
+    },
+    {
+      "id": "values_are_not_alignment_personality_or_reputation",
+      "expected": [
+        "VAL remains separate from PERS GOAL and public reputation",
+        "no good evil or universal moral axis is generated"
+      ]
+    },
+    {
+      "id": "culture_does_not_clone_personal_values",
+      "expected": [
+        "cultural norms may shape available value content and expectations",
+        "individual commitment strength and interpretation remain person-specific"
+      ]
+    },
+    {
+      "id": "acting_against_value_does_not_erase_it",
+      "expected": [
+        "VAL05 can coexist with continued internal commitment",
+        "a single compromised action does not automatically rewrite VAL03"
+      ]
+    },
+    {
+      "id": "value_conflict_requires_real_tradeoff",
+      "expected": [
+        "VAL04 references incompatible priorities in a concrete situation",
+        "DEC or deferral resolves behavior rather than a fixed global ordering"
+      ]
+    },
+    {
+      "id": "strong_value_change_requires_history",
+      "expected": [
+        "VAL07 or VAL08 needs meaningful experience reflection or sustained life change",
+        "one persuasive dialogue does not automatically rewrite a strong commitment"
+      ]
+    },
+    {
+      "id": "stated_value_is_not_proof_of_internal_commitment",
+      "expected": [
+        "STAT may record what an NPC claims to value",
+        "internal VAL state and actual behavior remain separate evidence domains"
+      ]
     }
   ]
 }

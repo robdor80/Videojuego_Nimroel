@@ -85,7 +85,8 @@
     "decisionDeliberation": "Datos operativos/treskal_decision_deliberation_contract_v0.1.json",
     "stressStrainRecovery": "Datos operativos/treskal_stress_strain_recovery_contract_v0.1.json",
     "personalityTraits": "Datos operativos/treskal_personality_traits_contract_v0.1.json",
-    "memorySalienceForgetting": "Datos operativos/treskal_memory_salience_forgetting_contract_v0.1.json"
+    "memorySalienceForgetting": "Datos operativos/treskal_memory_salience_forgetting_contract_v0.1.json",
+    "personalValuesPrinciples": "Datos operativos/treskal_personal_values_principles_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -165,7 +166,8 @@
     "DEC": "decision_process_state",
     "STRS": "stress_strain_state",
     "PERS": "personality_trait_type",
-    "MEM": "npc_memory_state"
+    "MEM": "npc_memory_state",
+    "VAL": "personal_value_commitment_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -217,7 +219,8 @@
     "exactChildStageAgeThresholds": "future_Nimroel_character_lifecycle_system",
     "formalAgeOfMajorityAndWorkRules": "future_Norgard_law_and_family_canon",
     "exactAgingAndLongevityModel": "future_Nimroel_character_lifecycle_system",
-    "pensionRetirementInheritanceRules": "future_Norgard_law_and_economic_institutions"
+    "pensionRetirementInheritanceRules": "future_Norgard_law_and_economic_institutions",
+    "canonicalPersonalValueVocabulary": "future_Nimroel_character_psychology_core"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",
