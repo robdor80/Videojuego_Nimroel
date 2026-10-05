@@ -552,3 +552,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `valores_personales_principios_compromiso_v0.1.md` — VAL01–VAL08, importancia personal de principios sin alineamiento moral universal.
 - `conflicto_valores_compromiso_revision_v0.1.md` — tensión entre valores, compromiso en acción, reafirmación y revisión sostenida.
+
+### 90_Identidad_personal_y_roles_vitales
+
+- `identidad_personal_roles_autoconcepto_v0.1.md` — SELF01–SELF08, roles reconocidos, identidad central y multiplicidad de roles.
+- `transicion_rol_perdida_identidad_persistente_v0.1.md` — pérdida, adaptación, legado e identidad persistente tras cambios de vida.
