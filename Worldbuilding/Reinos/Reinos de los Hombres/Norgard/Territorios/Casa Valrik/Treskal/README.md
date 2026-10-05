@@ -557,3 +557,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `identidad_personal_roles_autoconcepto_v0.1.md` — SELF01–SELF08, roles reconocidos, identidad central y multiplicidad de roles.
 - `transicion_rol_perdida_identidad_persistente_v0.1.md` — pérdida, adaptación, legado e identidad persistente tras cambios de vida.
+
+### 91_Confianza_interpersonal_y_fiabilidad
+
+- `confianza_dominios_historial_v0.1.md` — TRUST01–TRUST08, confianza por honestidad, fiabilidad, discreción, competencia y otros dominios.
+- `ruptura_reparacion_limites_confianza_v0.1.md` — daño, reparación, perdón, recomendaciones y límites de la confianza.
