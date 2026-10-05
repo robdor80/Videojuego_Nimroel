@@ -587,3 +587,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `actitudes_opiniones_valoracion_personal_v0.1.md` — VIEW01–VIEW08, valoración subjetiva separada de preferencia, confianza, amistad y reputación.
 - `formacion_revision_expresion_opiniones_v0.1.md` — formación, ambivalencia, revisión y expresión pública de opiniones.
+
+### 97_Agenda_y_uso_del_tiempo
+
+- `agenda_personal_compromisos_uso_tiempo_v0.1.md` — AGEN01–AGEN09, agenda cualitativa, tiempo finito y compatibilidad entre actividades.
+- `conflictos_agenda_retrasos_reprogramacion_v0.1.md` — retrasos, reprogramación, cancelación, citas perdidas y consecuencias.
