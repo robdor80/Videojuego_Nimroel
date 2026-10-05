@@ -99,3 +99,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_dialogue_dynamics_contract_v0.1.json` — DIAL01–DIAL08, disponibilidad, temas, interrupción y cierre de conversación.
 - `treskal_personal_views_attitudes_contract_v0.1.json` — VIEW01–VIEW08, actitudes y opiniones personales con base e historia propias.
 - `treskal_personal_agenda_time_commitments_contract_v0.1.json` — AGEN01–AGEN09, agenda personal, conflictos temporales y reprogramación.
+- `treskal_emergency_personal_response_contract_v0.1.json` — ERSP01–ERSP08, respuesta individual, evacuación, ayuda y continuidad tras emergencias.
