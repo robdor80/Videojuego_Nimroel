@@ -51,7 +51,7 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_hygiene_laundry_domestic_water_contract_v0.1.json` — aseo, lavado, agua doméstica y pátina/suciedad contextual.
 - `treskal_fuel_cooking_heat_contract_v0.1.json` — leña, consumo térmico, hornos y riesgo de fuego.
 - `treskal_doors_locks_keys_access_contract_v0.1.json` — estados DOOR01–DOOR07, llaves y permisos.
-- `treskal_employment_jobs_vacancies_contract_v0.1.json` — estados EMP01–EMP08, puestos y vacantes.
+- `treskal_employment_jobs_vacancies_contract_v0.1.json` — override de compatibilidad; EMP heredado de Nimroel Core.
 - `treskal_residency_household_mobility_contract_v0.1.json` — estados RES/MOVE, hogares y mudanzas persistentes.
 - `treskal_construction_building_change_contract_v0.1.json` — estados BUILD01–BUILD10, ampliaciones, cambio de uso y demolición.
 - `treskal_clothing_footwear_lifecycle_contract_v0.1.json` — funciones CL01–CL04 y condición GAR01–GAR06.
@@ -65,7 +65,7 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_sanitation_waste_cycle_contract_v0.1.json` — WASTE01–WASTE08, WST01–WST07 y ciclo de retirada.
 - `treskal_death_mourning_funeral_contract_v0.1.json` — estados MORT/ASH, cremación y retorno de cenizas.
 - `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — CONV/VOICE/HEAR, privacidad y conocimiento por oyente.
-- `treskal_waiting_service_capacity_contract_v0.1.json` — WAIT01–WAIT08, solicitudes y capacidad de servicio.
+- `treskal_waiting_service_capacity_contract_v0.1.json` — override de compatibilidad; WAIT heredado de Nimroel Core.
 - `treskal_dependents_care_network_contract_v0.1.json` — tipos DEP, estados CARE y capacidad de cuidado.
 - `treskal_household_hospitality_guest_contract_v0.1.json` — estados HOSP y permisos temporales de visita/estancia.
 - `treskal_household_chores_domestic_load_contract_v0.1.json` — CHORE01–CHORE09, DOM01–DOM07 y presión doméstica.
@@ -98,7 +98,7 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_basic_physical_needs_contract_v0.1.json` — NEED01–NEED05, necesidades físicas cotidianas y resolución cualitativa.
 - `treskal_dialogue_dynamics_contract_v0.1.json` — DIAL01–DIAL08, disponibilidad, temas, interrupción y cierre de conversación.
 - `treskal_personal_views_attitudes_contract_v0.1.json` — VIEW01–VIEW08, actitudes y opiniones personales con base e historia propias.
-- `treskal_personal_agenda_time_commitments_contract_v0.1.json` — AGEN01–AGEN09, agenda personal, conflictos temporales y reprogramación.
+- `treskal_personal_agenda_time_commitments_contract_v0.1.json` — override de compatibilidad; AGEN heredado de Nimroel Core.
 - `treskal_emergency_personal_response_contract_v0.1.json` — ERSP01–ERSP08, respuesta individual, evacuación, ayuda y continuidad tras emergencias.
 - `treskal_kinship_family_network_contract_v0.1.json` — KIN01–KIN07, parentesco persistente, filiación conocida y límites legales.
 - `treskal_functional_closure_audit_v0.1.json` — auditoría de cierre funcional de las capas 01–99 y trabajo pendiente por dependencias externas.

@@ -42,5 +42,6 @@ Extracción ejecutada:
 - lote A4: STRS, VAL, SELF.
 - lote B1: PREG, CHD, AGE, KIN.
 - lote B2: DEP / CARE, CHORE / DOM, REST, NEED.
+- lote C1: EMP, AGEN, WAIT.
 
 Los siguientes sistemas se migrarán por lotes controlados.

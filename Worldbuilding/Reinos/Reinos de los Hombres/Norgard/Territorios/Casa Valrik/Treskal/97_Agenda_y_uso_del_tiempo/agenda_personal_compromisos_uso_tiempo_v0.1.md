@@ -1,5 +1,7 @@
 # Treskal — agenda personal, compromisos y uso del tiempo v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de AGEN reside en `Worldbuilding/Sistemas/Nimroel Core/03_Actividad_y_tiempo/agenda_personal_uso_tiempo_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE NPC APROBADO — EL TIEMPO ES UN RECURSO Y NO PUEDE DUPLICARSE**

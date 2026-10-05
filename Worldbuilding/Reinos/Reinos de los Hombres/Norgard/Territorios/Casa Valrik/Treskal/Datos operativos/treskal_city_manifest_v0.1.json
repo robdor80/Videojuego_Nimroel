@@ -428,6 +428,27 @@
         ],
         "localContract": "Datos operativos/treskal_basic_physical_needs_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "employmentJobsVacancies": {
+        "namespaces": [
+          "EMP"
+        ],
+        "localContract": "Datos operativos/treskal_employment_jobs_vacancies_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "personalAgendaTimeCommitments": {
+        "namespaces": [
+          "AGEN"
+        ],
+        "localContract": "Datos operativos/treskal_personal_agenda_time_commitments_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "waitingServiceCapacity": {
+        "namespaces": [
+          "WAIT"
+        ],
+        "localContract": "Datos operativos/treskal_waiting_service_capacity_contract_v0.1.json",
+        "localOverridesEmpty": true
       }
     }
   }

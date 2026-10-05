@@ -1,55 +1,17 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_employment_jobs_vacancies_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "employmentStates": {
-    "EMP01": "available_or_seeking",
-    "EMP02": "active",
-    "EMP03": "temporarily_absent",
-    "EMP04": "reduced_capacity",
-    "EMP05": "suspended_or_waiting",
-    "EMP06": "ending",
-    "EMP07": "ended",
-    "EMP08": "temporary_assignment"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_employment_jobs_vacancies_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "EMP"
+  ],
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "professionDistinctFromCurrentJob": true,
-  "jobFields": [
-    "job_id",
-    "occupation_family",
-    "workplace_ref",
-    "employer_or_responsible_ref",
-    "worker_ref",
-    "required_capability",
-    "state",
-    "schedule_or_daypart_pattern",
-    "start_time",
-    "end_time_if_known",
-    "reason_if_inactive"
-  ],
-  "vacancyDoesNotAutoCreateWorker": true,
-  "substitutionLimitedByCapability": true,
-  "absenceDoesNotTeleportWorker": true,
-  "apprenticeMayWorkButNotCountAsFullMaster": true,
-  "ownerWorkerMasterSellerRolesCanCoexistButRemainDistinct": true,
-  "temporaryVisitorWorkSupported": true,
-  "deathCreatesVacancyWithoutInstantReplacement": true,
-  "jobChangeDoesNotEraseLearnedProfession": true,
-  "reputationMayInfluenceButNotGuaranteeHiring": true,
-  "pledgeMayReferenceEmploymentCommitment": true,
-  "exactClockHours": "external_dependency",
-  "wagesAndCompensation": "external_dependency",
-  "laborLaw": "external_dependency",
-  "lodLowMayAggregate": [
-    "filled_jobs",
-    "vacancies",
-    "absences",
-    "capacity"
-  ],
-  "offscreenHiringAllowedOnlyWithPlausibleCandidatesAndElapsedTime": true,
-  "externalDependencies": {
-    "exactClockHours": "future_Nimroel_time_system",
-    "wagesAndCompensation": "Norgard_monetary_and_economic_system",
-    "laborLaw": "future_Norgard_labor_and_social_law"
-  }
+  "note": "Treskal inherits Nimroel Core employment, jobs and vacancy semantics without local exceptions."
 }

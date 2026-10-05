@@ -1,5 +1,7 @@
 # Treskal — conflictos de agenda, retrasos y reprogramación v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de AGEN reside en `Worldbuilding/Sistemas/Nimroel Core/03_Actividad_y_tiempo/agenda_personal_uso_tiempo_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — CAMBIAR UN PLAN DEJA CONSECUENCIAS**

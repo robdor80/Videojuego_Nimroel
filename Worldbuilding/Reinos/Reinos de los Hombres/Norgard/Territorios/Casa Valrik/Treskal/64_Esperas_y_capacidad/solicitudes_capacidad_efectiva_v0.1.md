@@ -1,5 +1,7 @@
 # Treskal — solicitudes de servicio y capacidad efectiva v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de WAIT reside en `Worldbuilding/Sistemas/Nimroel Core/03_Actividad_y_tiempo/espera_capacidad_servicio_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE SIMULACIÓN APROBADO**

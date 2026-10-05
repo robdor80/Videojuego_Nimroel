@@ -82,6 +82,16 @@ Estado:
 
 Nota de separación: DEP / CARE conserva en Treskal un override local explícito para la ausencia por defecto de guardería moderna o cuidado residencial institucional. El Core no impone un modelo institucional universal.
 
+### Lote C1 migrado
+
+- EMP — empleo, puestos y vacantes;
+- AGEN — agenda personal y uso del tiempo;
+- WAIT — espera y capacidad efectiva de servicio.
+
+Estado:
+
+**MIGRATION_BATCH_C1_READY_FOR_REGRESSION**
+
 ---
 
 ## Objetivo

@@ -1,5 +1,7 @@
 # Treskal — relaciones laborales, vacantes y continuidad del trabajo v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de EMP reside en `Worldbuilding/Sistemas/Nimroel Core/03_Actividad_y_tiempo/empleo_puestos_vacantes_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO ECONÓMICO/SOCIAL APROBADO — RELACIÓN LABORAL PERSISTENTE**
