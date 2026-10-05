@@ -547,3 +547,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `memoria_episodica_relevancia_continuidad_v0.1.md` — MEM01–MEM08, recuerdos significativos, detalle y continuidad personal.
 - `recuerdo_olvido_revision_experiencias_v0.1.md` — olvido, revisión, recuerdos contradictorios y optimización sin borrar consecuencias.
+
+### 89_Valores_principios_y_conflictos_internos
+
+- `valores_personales_principios_compromiso_v0.1.md` — VAL01–VAL08, importancia personal de principios sin alineamiento moral universal.
+- `conflicto_valores_compromiso_revision_v0.1.md` — tensión entre valores, compromiso en acción, reafirmación y revisión sostenida.
