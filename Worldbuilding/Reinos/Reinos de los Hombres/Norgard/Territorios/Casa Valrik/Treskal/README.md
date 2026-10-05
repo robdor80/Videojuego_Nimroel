@@ -522,3 +522,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `emociones_transitorias_causa_expresion_v0.1.md` — EMO01–EMO10, causa subjetiva, expresión y límites perceptivos.
 - `estado_animo_persistencia_recuperacion_v0.1.md` — MOOD01–MOOD07, persistencia, recuperación y separación respecto a personalidad.
+
+### 84_Motivaciones_objetivos_e_intenciones
+
+- `objetivos_intenciones_prioridades_v0.1.md` — GOAL01–GOAL08, deseos futuros, prioridades y autonomía del NPC.
+- `planes_progreso_bloqueos_abandono_v0.1.md` — planificación limitada por conocimiento, progreso causal, bloqueo y abandono.
