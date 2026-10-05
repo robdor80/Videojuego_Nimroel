@@ -2392,6 +2392,48 @@
         "emotion and mood may evolve offscreen through time recovery or new events",
         "LOD never rerolls emotional state without continuity"
       ]
+    },
+    {
+      "id": "npc_goal_is_not_player_quest",
+      "expected": [
+        "NPC goals may exist and resolve without being exposed as quests",
+        "player involvement requires discovery opportunity and voluntary interaction"
+      ]
+    },
+    {
+      "id": "goal_planning_respects_knowledge_limits",
+      "expected": [
+        "NPC plans only with places people options and facts plausibly known",
+        "hidden world state is never used as private planning omniscience"
+      ]
+    },
+    {
+      "id": "goal_does_not_create_resources_or_other_actor_compliance",
+      "expected": [
+        "adopting a goal creates no money tools access time or skill",
+        "other actors remain governed by REQ EMP FRI AFF FAV authority and their own goals"
+      ]
+    },
+    {
+      "id": "goal_progress_requires_world_state_change",
+      "expected": [
+        "GOAL04 and GOAL06 require real actions or resulting states",
+        "dialogue or AI intention alone cannot complete a goal"
+      ]
+    },
+    {
+      "id": "goal_conflicts_are_contextual",
+      "expected": [
+        "multiple goals may compete for time resources relationships and obligations",
+        "priority may change without requiring one universal utility score"
+      ]
+    },
+    {
+      "id": "offscreen_goal_progress_requires_causal_action",
+      "expected": [
+        "NPC goals can advance while player is absent if action was possible",
+        "LOD never resolves a blocked goal without time access resources and causal steps"
+      ]
     }
   ]
 }
