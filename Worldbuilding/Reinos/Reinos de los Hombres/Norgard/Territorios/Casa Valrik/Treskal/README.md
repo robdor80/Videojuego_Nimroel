@@ -567,3 +567,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `expectativas_anticipacion_resultados_esperados_v0.1.md` — EXP01–EXP08, anticipación basada en conocimiento, hábitos, confianza y experiencia.
 - `sorpresa_desviacion_revision_expectativas_v0.1.md` — resultados inesperados, revisión de expectativas y reacción sin conocimiento del futuro.
+
+### 93_Atencion_foco_y_distraccion
+
+- `atencion_foco_conciencia_situacional_v0.1.md` — ATTN01–ATTN08, foco, vigilancia, atención dividida y límites perceptivos.
+- `distraccion_interrupcion_deteccion_periferica_v0.1.md` — señales periféricas, interrupciones, sobrecarga y testimonio condicionado por atención.
