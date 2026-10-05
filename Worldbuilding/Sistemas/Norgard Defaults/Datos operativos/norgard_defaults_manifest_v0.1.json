@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_defaults_manifest",
+  "version": "0.1",
+  "status": "active_realm_defaults_manifest",
+  "authorityScope": "norgard_realm_defaults",
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
+  "root": "Worldbuilding/Sistemas/Norgard Defaults/",
+  "policy": {
+    "canonBackedOnly": true,
+    "localPromotionByAnalogyForbidden": true,
+    "pendingCanonCannotBecomeActiveDefault": true,
+    "houseSpecificRulesRemainBelowRealm": true
+  },
+  "operationalFiles": {},
+  "readyCandidates": {
+    "funeralMourning": "ready",
+    "crownMintingAuthority": "ready_partial",
+    "toponymicConvention": "ready"
+  },
+  "houseOrTerritoryCandidates": {
+    "givenWordSpecialWeight": "Casa_Valrik"
+  },
+  "blockedPendingCanon": [
+    "military_and_guard_final_framework",
+    "family_marriage_guardianship_law",
+    "age_of_majority_and_labor_rules",
+    "property_inheritance_rental_law",
+    "complete_currency_prices_taxation_framework",
+    "realm_healing_tradition",
+    "royal_naval_framework",
+    "maritime_terminology",
+    "realm_cuisine",
+    "personal_naming_and_surname_rules",
+    "official_calendar_detail",
+    "shared_material_culture"
+  ],
+  "sourceAudit": "AUDITORIA_PREPARACION_DEFAULTS_NORGARD_v0.1.md"
+}

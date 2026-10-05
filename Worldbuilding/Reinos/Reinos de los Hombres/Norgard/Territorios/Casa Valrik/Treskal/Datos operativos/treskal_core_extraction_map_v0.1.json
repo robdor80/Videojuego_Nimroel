@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_core_extraction_map",
-  "version": "0.16",
+  "version": "0.17",
   "status": "partially_executed",
   "sourceAuthorityUntilMigration": "Per-system authority: migrated namespaces use Nimroel Core; remaining namespaces use Treskal current contracts",
   "targetInheritance": [
@@ -297,5 +297,33 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_k_separacion_reputacion_v0.1.md"
     }
   },
-  "highConfidenceCoreExtractionComplete": true
+  "highConfidenceCoreExtractionComplete": true,
+  "norgardDefaultsAudit": {
+    "status": "completed",
+    "manifest": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_defaults_manifest_v0.1.json",
+    "audit": "Worldbuilding/Sistemas/Norgard Defaults/AUDITORIA_PREPARACION_DEFAULTS_NORGARD_v0.1.md",
+    "ready": [
+      "funeral_cremation_custom",
+      "three_day_formal_mourning",
+      "crown_minting_authority_partial",
+      "toponymic_convention"
+    ],
+    "houseOrTerritory": [
+      "given_word_special_weight_valrik"
+    ],
+    "blockedPendingCanon": [
+      "military_and_guard_framework",
+      "family_marriage_guardianship_law",
+      "age_of_majority_and_labor_rules",
+      "property_and_inheritance_law",
+      "complete_currency_and_economic_framework",
+      "healing_tradition",
+      "royal_naval_framework",
+      "maritime_terminology",
+      "cuisine",
+      "personal_naming_and_surname_rules",
+      "calendar",
+      "shared_material_culture"
+    ]
+  }
 }

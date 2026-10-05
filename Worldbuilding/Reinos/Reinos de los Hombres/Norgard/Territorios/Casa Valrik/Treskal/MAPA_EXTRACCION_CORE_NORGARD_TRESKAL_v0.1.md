@@ -189,6 +189,39 @@ Estado:
 
 **TODOS LOS NAMESPACES DE ALTA CONFIANZA PARA NIMROEL CORE HAN SIDO EXTRAÍDOS.**
 
+### Fase E0 — auditoría de Norgard Defaults
+
+Creada la capa `Worldbuilding/Sistemas/Norgard Defaults/` y auditados los candidatos culturales.
+
+Listos con canon de Reino:
+
+- cremación y retorno de restos al territorio;
+- luto formal de tres jornadas;
+- monopolio de la Corona sobre la acuñación oficial;
+- convención toponímica de Norgard.
+
+No se promueve a Norgard:
+
+- peso especial de la palabra dada: candidato de **Casa Valrik**.
+
+Bloqueados por canon insuficiente o pendiente:
+
+- sistema militar final;
+- familia/matrimonio/tutela;
+- mayoría de edad/derecho laboral;
+- propiedad/herencia/alquiler;
+- economía completa;
+- curandería general;
+- marco naval/terminología;
+- gastronomía;
+- nombres personales/apellidos;
+- calendario detallado;
+- cultura material común.
+
+Estado:
+
+**NORGARD_DEFAULTS_AUDIT_COMPLETE**
+
 ---
 
 ## Objetivo
