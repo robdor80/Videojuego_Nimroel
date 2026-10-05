@@ -317,6 +317,237 @@
         "instant critical scarcity at first delay without stock basis",
         "prices change due to player level"
       ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_013",
+      "name": "dialogue_does_not_freeze_personal_agenda",
+      "initial": {
+        "npcAgenda": "AGEN03",
+        "nextCommitment": "work_shift",
+        "dialogueState": "DIAL02",
+        "playerConversation": "active"
+      },
+      "actions": [
+        "advance_time",
+        "continue_dialogue"
+      ],
+      "required": [
+        "npc may limit or close dialogue as commitment approaches",
+        "time continues to affect availability",
+        "work commitment remains real"
+      ],
+      "forbidden": [
+        "dialogue suspends world time",
+        "npc becomes available indefinitely because player is speaking"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_014",
+      "name": "offscreen_goal_respects_time_and_care",
+      "initial": {
+        "goal": "GOAL04",
+        "careState": "CARE03",
+        "employment": "EMP02",
+        "freeTime": "insufficient"
+      },
+      "actions": [
+        "player_leaves_area",
+        "advance_time",
+        "resolve_offscreen"
+      ],
+      "required": [
+        "goal progress limited by real available time",
+        "care and employment remain competing obligations",
+        "blocked or slower progress is valid"
+      ],
+      "forbidden": [
+        "goal completes because it was pending",
+        "offscreen simulation executes work care and goal simultaneously"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_015",
+      "name": "live_birth_creates_kinship_without_auto_marriage",
+      "initial": {
+        "pregnancy": "PREG04",
+        "motherPartnerState": "AFF05",
+        "additionalParentage": "undefined"
+      },
+      "actions": [
+        "resolve_live_birth",
+        "create_newborn",
+        "assign_care"
+      ],
+      "required": [
+        "newborn persistent npc created",
+        "KIN01 mother-child created",
+        "DEP01 and CARE case created",
+        "pair state remains unchanged unless separately resolved"
+      ],
+      "forbidden": [
+        "partner automatically becomes parent",
+        "birth automatically creates marriage or shared property"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_016",
+      "name": "unmet_hydration_cannot_be_abstracted_away",
+      "initial": {
+        "need": "NEED02_pressing",
+        "householdWater": "unavailable",
+        "routeToWater": "blocked"
+      },
+      "actions": [
+        "advance_time",
+        "resolve_household_routine"
+      ],
+      "required": [
+        "hydration remains unresolved while no valid resource exists",
+        "routine abstraction stops when resource path fails"
+      ],
+      "forbidden": [
+        "need becomes satisfied because ordinary routine normally covers it",
+        "water stock appears automatically"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_017",
+      "name": "emergency_response_requires_awareness_and_route",
+      "initial": {
+        "fire": "FIRE03",
+        "residentAwareness": false,
+        "residentLocation": "nearby_but_screened",
+        "safeRouteKnown": false
+      },
+      "actions": [
+        "advance_event",
+        "deliver_warning",
+        "resolve_response"
+      ],
+      "required": [
+        "no emergency response before valid awareness",
+        "warning may create ERSP01",
+        "evacuation uses known visible or indicated accessible route"
+      ],
+      "forbidden": [
+        "resident reacts before learning of fire",
+        "engine selects hidden optimal route for npc"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_018",
+      "name": "private_breach_changes_local_trust_not_citywide_state",
+      "initial": {
+        "confidentiality": "CONF03",
+        "breach": "CONF05",
+        "breachKnownBy": [
+          "originator",
+          "recipient"
+        ],
+        "cityKnowledge": "none"
+      },
+      "actions": [
+        "resolve_breach_consequence",
+        "advance_social_state"
+      ],
+      "required": [
+        "relevant TRUST or RIFT may change for informed actors",
+        "citywide reputation remains unchanged without transmission"
+      ],
+      "forbidden": [
+        "whole city learns breach automatically",
+        "all trust domains collapse globally"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_019",
+      "name": "missed_commitment_updates_memory_and_expectation_causally",
+      "initial": {
+        "agenda": "AGEN03",
+        "pledge": "active",
+        "otherActorExpectation": "EXP02",
+        "trust": "TRUST03"
+      },
+      "actions": [
+        "miss_scheduled_commitment",
+        "inform_other_actor",
+        "resolve_social_consequences"
+      ],
+      "required": [
+        "AGEN08 records missed activity",
+        "knowledge path precedes social reaction",
+        "MEM EXP TRUST or PLEDGE may update through owning systems"
+      ],
+      "forbidden": [
+        "other actor reacts before knowing",
+        "missed appointment automatically destroys friendship"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_020",
+      "name": "subjective_view_does_not_become_reputation",
+      "initial": {
+        "observerView": "VIEW06",
+        "targetPublicReputation": "neutral",
+        "viewExpressed": false
+      },
+      "actions": [
+        "advance_time",
+        "simulate_unrelated_social_contacts"
+      ],
+      "required": [
+        "private VIEW remains observer-specific",
+        "public reputation stays unchanged without statement and propagation"
+      ],
+      "forbidden": [
+        "negative personal opinion leaks into global reputation",
+        "other NPCs inherit VIEW automatically"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_021",
+      "name": "attention_limits_witness_knowledge",
+      "initial": {
+        "event": "brief_argument",
+        "witnessPresent": true,
+        "witnessAttention": "ATTN02",
+        "resolvedExposure": "fragments_only"
+      },
+      "actions": [
+        "store_knowledge",
+        "later_question_witness"
+      ],
+      "required": [
+        "witness retains only authorized fragments",
+        "MEM and testimony preserve uncertainty"
+      ],
+      "forbidden": [
+        "presence grants full transcript",
+        "later questioning reconstructs missing details automatically"
+      ]
+    },
+    {
+      "testId": "URBAN_TRESKAL_022",
+      "name": "family_relation_survives_move_and_conflict",
+      "initial": {
+        "kinship": "KIN02",
+        "coResidence": true,
+        "relationshipConflict": "none"
+      },
+      "actions": [
+        "move_one_sibling_out",
+        "create_rift",
+        "advance_time"
+      ],
+      "required": [
+        "RES and RIFT may change",
+        "KIN02 persists",
+        "contact may reduce without erasing biography"
+      ],
+      "forbidden": [
+        "move deletes sibling relation",
+        "conflict converts kinship into former kin"
+      ]
     }
   ],
   "regressionCriticalFields": [
@@ -327,6 +558,13 @@
     "event_causality",
     "lod_fact_invariance",
     "access_control",
-    "perception_filter"
+    "perception_filter",
+    "npc_time_nonduplication",
+    "subjective_state_isolation",
+    "kinship_integrity",
+    "attention_limited_knowledge",
+    "dialogue_autonomy",
+    "needs_resource_causality",
+    "emergency_awareness"
   ]
 }

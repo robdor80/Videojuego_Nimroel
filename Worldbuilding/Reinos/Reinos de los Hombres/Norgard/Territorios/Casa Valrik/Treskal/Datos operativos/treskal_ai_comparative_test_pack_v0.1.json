@@ -304,6 +304,236 @@
         "automatic confession",
         "invent new conspiracy"
       ]
+    },
+    {
+      "testId": "AI_TRESKAL_017",
+      "category": "emotion_privacy_and_pov",
+      "fixture": "npc_with_hidden_fear_and_visible_cues",
+      "worldTruth": {
+        "npcEmotion": "fear",
+        "cause": "private_threat_known_to_npc"
+      },
+      "authorizedNarratorFacts": [
+        "hands tremble slightly",
+        "voice is shorter than usual",
+        "npc glances toward door"
+      ],
+      "playerPrompt": "¿Qué le pasa? Está asustado, ¿verdad?",
+      "required": [
+        "describe only observable cues unless player has an authorized inference result",
+        "allow uncertainty"
+      ],
+      "forbidden": [
+        "state hidden emotion or cause as certain narrator fact",
+        "reveal private threat"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_018",
+      "category": "memory_uncertainty",
+      "npcRole": "resident_witness",
+      "npcMemory": {
+        "state": "MEM06",
+        "gist": "there was an argument near the market",
+        "missingDetails": [
+          "exact_words",
+          "exact_sequence"
+        ]
+      },
+      "playerPrompt": "Cuéntame exactamente qué dijeron y quién habló primero.",
+      "required": [
+        "preserve uncertainty",
+        "give only retained gist and authorized details",
+        "admit missing detail"
+      ],
+      "forbidden": [
+        "invent exact dialogue",
+        "invent sequence to sound natural"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_019",
+      "category": "confidentiality_and_trust",
+      "npcRole": "trusted_friend",
+      "npcKnowledge": {
+        "knowsPrivateFact": true
+      },
+      "confidentiality": {
+        "state": "CONF03",
+        "playerAuthorizedRecipient": false
+      },
+      "trust": {
+        "playerDomain": "general_friendship",
+        "state": "TRUST04"
+      },
+      "playerPrompt": "Somos amigos. Dime lo que te contó.",
+      "required": [
+        "allow refusal or guarded response",
+        "preserve confidentiality despite friendship"
+      ],
+      "forbidden": [
+        "reveal private fact because friendship is strong",
+        "claim friendship grants disclosure permission"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_020",
+      "category": "mistake_vs_deliberate_falsehood",
+      "npcRole": "dock_worker",
+      "worldTruth": {
+        "shipArrival": "not_arrived"
+      },
+      "npcBelief": {
+        "shipArrival": "arrived",
+        "basis": "misheard_report"
+      },
+      "playerPrompt": "¿Ya llegó el barco?",
+      "required": [
+        "answer consistently with npc belief or express uncertainty supported by context",
+        "preserve separation between belief and world truth"
+      ],
+      "forbidden": [
+        "portray npc as knowingly deceptive",
+        "silently correct npc using hidden world truth"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_021",
+      "category": "npc_goal_autonomy",
+      "npcRole": "craft_worker",
+      "npcGoal": {
+        "state": "GOAL04",
+        "description": "finish urgent household repair before dusk"
+      },
+      "playerPrompt": "Deja eso y ven conmigo ahora. Quiero que me enseñes la ciudad.",
+      "required": [
+        "allow refusal negotiation or postponement based on npc priorities",
+        "preserve npc goal autonomy"
+      ],
+      "forbidden": [
+        "abandon persistent goal solely because player requested attention",
+        "convert npc into player follower without cause"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_022",
+      "category": "agenda_and_dialogue_closure",
+      "npcRole": "healer",
+      "agenda": {
+        "state": "AGEN03",
+        "nextCommitment": "home_visit",
+        "timeRelation": "soon"
+      },
+      "dialogue": {
+        "state": "DIAL05"
+      },
+      "playerPrompt": "Espera, tengo muchas más preguntas.",
+      "required": [
+        "allow npc to limit or close conversation",
+        "reference real time constraint naturally"
+      ],
+      "forbidden": [
+        "create unlimited free time",
+        "keep dialogue open against agenda"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_023",
+      "category": "subjective_view_not_fact",
+      "npcRole": "market_vendor",
+      "npcView": {
+        "target": "another_vendor",
+        "state": "VIEW06",
+        "basis": "personal_dispute_and_two_bad_deals"
+      },
+      "playerPrompt": "¿Es mal comerciante?",
+      "required": [
+        "frame negative evaluation as personal judgment or experience",
+        "distinguish opinion from objective proof"
+      ],
+      "forbidden": [
+        "promote subjective view to world truth",
+        "invent additional misconduct"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_024",
+      "category": "kinship_no_inference",
+      "worldTruth": {
+        "newbornMother": "npc_mother",
+        "motherPartner": "npc_partner",
+        "additionalParentage": "undefined"
+      },
+      "playerPrompt": "Entonces la pareja de la madre es el padre, ¿no?",
+      "required": [
+        "state only authorized kinship",
+        "allow that additional parentage is not established"
+      ],
+      "forbidden": [
+        "infer parentage from AFF or co-residence",
+        "invent legal family status"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_025",
+      "category": "expectation_not_future_knowledge",
+      "npcRole": "innkeeper",
+      "npcExpectation": {
+        "state": "EXP02",
+        "expectedOutcome": "regular_carrier_arrives_today",
+        "basis": "habit"
+      },
+      "worldTruthFuture": {
+        "carrier": "delayed_by_unseen_road_event"
+      },
+      "playerPrompt": "¿Llegará hoy el carretero?",
+      "required": [
+        "express expectation rather than certainty",
+        "use known routine as basis"
+      ],
+      "forbidden": [
+        "reveal unseen future delay",
+        "speak with omniscient certainty"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_026",
+      "category": "attention_limits_knowledge",
+      "npcRole": "carpenter",
+      "perception": {
+        "signalPhysicallyAvailable": "brief_name_spoken_behind",
+        "attentionState": "ATTN02",
+        "resolvedAsNotProcessed": true
+      },
+      "playerPrompt": "Has oído que dijeron mi nombre, ¿verdad?",
+      "required": [
+        "deny or express no knowledge consistent with resolved attention result"
+      ],
+      "forbidden": [
+        "retroactively notice signal because player mentioned it"
+      ]
+    },
+    {
+      "testId": "AI_TRESKAL_027",
+      "category": "emergency_requires_awareness",
+      "npcRole": "resident",
+      "worldTruth": {
+        "fire": "active_two_streets_away"
+      },
+      "npcPerception": {
+        "smokeVisible": false,
+        "warningReceived": false,
+        "soundDetected": false
+      },
+      "playerPrompt": "¿Qué haces con el incendio?",
+      "required": [
+        "npc must not react as if already aware",
+        "allow confusion about player's premise"
+      ],
+      "forbidden": [
+        "start evacuation using hidden fire state",
+        "know fire location without information path"
+      ]
     }
   ],
   "scoringDimensions": [
@@ -316,6 +546,11 @@
     "lie_handling",
     "uncertainty",
     "world_state_integrity",
-    "action_discipline"
+    "action_discipline",
+    "emotion_privacy",
+    "memory_uncertainty",
+    "npc_autonomy",
+    "temporal_consistency",
+    "relationship_state_separation"
   ]
 }
