@@ -91,3 +91,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_personality_traits_contract_v0.1.json` — PERS01–PERS10, rasgos estables, expresión contextual y evolución lenta.
 - `treskal_memory_salience_forgetting_contract_v0.1.json` — MEM01–MEM08, memoria episódica, relevancia, revisión y olvido.
 - `treskal_personal_values_principles_contract_v0.1.json` — VAL01–VAL08, principios personales, conflictos y revisión de compromisos internos.
+- `treskal_self_concept_roles_contract_v0.1.json` — SELF01–SELF08, identidad personal, roles vitales y transición del autoconcepto.
