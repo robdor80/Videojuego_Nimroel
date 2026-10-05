@@ -100,3 +100,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_personal_views_attitudes_contract_v0.1.json` — VIEW01–VIEW08, actitudes y opiniones personales con base e historia propias.
 - `treskal_personal_agenda_time_commitments_contract_v0.1.json` — AGEN01–AGEN09, agenda personal, conflictos temporales y reprogramación.
 - `treskal_emergency_personal_response_contract_v0.1.json` — ERSP01–ERSP08, respuesta individual, evacuación, ayuda y continuidad tras emergencias.
+- `treskal_kinship_family_network_contract_v0.1.json` — KIN01–KIN07, parentesco persistente, filiación conocida y límites legales.
