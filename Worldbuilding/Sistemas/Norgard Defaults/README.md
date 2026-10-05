@@ -87,6 +87,23 @@ Contrato operativo:
 
 `Datos operativos/norgard_crown_minting_authority_default_v0.1.json`
 
-Siguiente orden auditado:
+### E3 — convención toponímica
 
-- E3 — convención toponímica.
+Activo a nivel Reino:
+
+- sistema mixto de nombres propios, históricos, descriptivos y populares;
+- nombres antiguos solo con base real;
+- prohibición de pseudo-nórdico decorativo;
+- separación nombre visible / ID técnico.
+
+Contrato operativo:
+
+`Datos operativos/norgard_toponymic_convention_default_v0.1.json`
+
+**Todos los candidatos de Norgard que la auditoría consideró listos están ya extraídos.**
+
+Pendiente siguiente capa:
+
+- Casa Valrik — peso especial de la palabra dada/honor.
+
+El resto continúa bloqueado hasta que exista canon suficiente.

@@ -223,6 +223,24 @@ Estado:
 
 **NORGARD_DEFAULT_E2_READY_FOR_REGRESSION**
 
+### Fase E3 — convención toponímica
+
+Extraída como default activo de Reino:
+
+- sistema mixto de nombres;
+- base histórica/cultural obligatoria para nombres antiguos;
+- no pseudo-nórdico decorativo;
+- microtoponimia descriptiva válida;
+- nombre visible separado del ID técnico.
+
+Treskal conserva sus nombres concretos y sus IDs T/Z/L/S/C/A/APP.
+
+Estado:
+
+**NORGARD_DEFAULT_E3_READY_FOR_REGRESSION**
+
+**Todos los candidatos de Norgard marcados READY por la auditoría inicial han sido extraídos.**
+
 ### Fase E0 — auditoría de Norgard Defaults
 
 Creada la capa `Worldbuilding/Sistemas/Norgard Defaults/` y auditados los candidatos culturales.

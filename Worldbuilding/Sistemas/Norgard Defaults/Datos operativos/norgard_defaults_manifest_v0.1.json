@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_defaults_manifest",
-  "version": "0.3",
+  "version": "0.4",
   "status": "active_realm_defaults_manifest",
   "authorityScope": "norgard_realm_defaults",
   "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
@@ -14,12 +14,13 @@
   },
   "operationalFiles": {
     "funeralMourning": "Datos operativos/norgard_funeral_mourning_default_v0.1.json",
-    "crownMintingAuthority": "Datos operativos/norgard_crown_minting_authority_default_v0.1.json"
+    "crownMintingAuthority": "Datos operativos/norgard_crown_minting_authority_default_v0.1.json",
+    "toponymicConvention": "Datos operativos/norgard_toponymic_convention_default_v0.1.json"
   },
   "readyCandidates": {
     "funeralMourning": "extracted_active",
     "crownMintingAuthority": "extracted_active_partial",
-    "toponymicConvention": "ready"
+    "toponymicConvention": "extracted_active"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "Casa_Valrik"
@@ -49,6 +50,11 @@
       "status": "active_and_ready_for_regression",
       "default": "Datos operativos/norgard_crown_minting_authority_default_v0.1.json",
       "regression": "Validacion/regresion_e2_acunacion_norgard_v0.1.md"
+    },
+    "E3": {
+      "status": "active_and_ready_for_regression",
+      "default": "Datos operativos/norgard_toponymic_convention_default_v0.1.json",
+      "regression": "Validacion/regresion_e3_toponimia_norgard_v0.1.md"
     }
   }
 }

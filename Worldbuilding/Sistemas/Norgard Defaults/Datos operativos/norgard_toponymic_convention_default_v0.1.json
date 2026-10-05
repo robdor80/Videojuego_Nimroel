@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_toponymic_convention_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "norgard_realm_defaults",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Toponimia/convencion_toponimica_norgard_v0.1.md",
+  "rules": {
+    "namingSystem": "mixed",
+    "allowedNameOrigins": [
+      "inherited_or_historical_proper_name",
+      "descriptive_human_usage",
+      "popular_nickname",
+      "official_and_colloquial_parallel_names",
+      "documented_older_culture_name"
+    ],
+    "inventedPseudoNordicByDefault": false,
+    "inventedAncientLanguageForDecoration": false,
+    "historicalPersonalNameRequiresRealLoreBasis": true,
+    "descriptiveMicrotoponymyAllowed": true,
+    "everyPlaceRequiresOfficialName": false,
+    "popularNameRequiresUnderstandableAssociation": true,
+    "visibleNameNeverReplacesTechnicalId": true,
+    "technicalIdStableAcrossVisibleRename": true
+  },
+  "linguisticRepresentation": {
+    "descriptiveSpanishRepresentsPlayerComprehensibleHumanNaming": true,
+    "impliesInWorldSpanishLanguage": false
+  },
+  "guardrails": {
+    "doNotInventHistoricalFigureToFillMap": true,
+    "doNotInventEpicNameForRoutineService": true,
+    "doNotExposeTechnicalIdsAsVisibleNamesByDefault": true
+  },
+  "localAuthority": [
+    "exact_place_names",
+    "which_places_are_named",
+    "local_popular_aliases",
+    "historical_names_backed_by_local_lore"
+  ]
+}

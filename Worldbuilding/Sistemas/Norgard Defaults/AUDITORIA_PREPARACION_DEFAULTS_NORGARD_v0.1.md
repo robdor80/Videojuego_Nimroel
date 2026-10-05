@@ -2,7 +2,7 @@
 
 ## Estado
 
-**AUDITORÍA EJECUTADA — E1/E2 EXTRAÍDOS; E3 PENDIENTE**
+**AUDITORÍA EJECUTADA — E1/E2/E3 EXTRAÍDOS**
 
 ## Objetivo
 
@@ -208,3 +208,25 @@ Se mantienen explícitamente indefinidos moneda completa, denominaciones, precio
 Estado:
 
 **NORGARD_DEFAULT_E2_READY_FOR_REGRESSION**
+
+
+---
+
+## 8. Ejecución E3
+
+Extraída como default activo la convención toponímica de Norgard:
+
+- sistema mixto de nombres;
+- nombres antiguos sólo con base histórica/cultural;
+- prohibición de pseudo-nórdico decorativo;
+- microtoponimia descriptiva válida;
+- coexistencia de nombre oficial y popular;
+- separación entre nombre visible e ID técnico.
+
+Treskal conserva sus nombres concretos y sus IDs locales.
+
+Estado:
+
+**NORGARD_DEFAULT_E3_READY_FOR_REGRESSION**
+
+Con E3 quedan extraídos todos los candidatos de Reino que la auditoría consideró listos. Los demás continúan bloqueados por canon pendiente, y el peso especial de la palabra dada pasa a la futura capa Casa Valrik.

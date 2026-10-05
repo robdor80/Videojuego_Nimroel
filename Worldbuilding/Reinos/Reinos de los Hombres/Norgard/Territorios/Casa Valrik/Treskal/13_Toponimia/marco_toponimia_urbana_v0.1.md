@@ -1,3 +1,6 @@
+> **DOCUMENTO HISTÓRICO / PREPARATORIO SUPERADO POR CANON POSTERIOR**  
+> La condición descrita aquí (“convención general pendiente”) ya no es vigente. La autoridad actual es `Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_toponymic_convention_default_v0.1.json`, basada en la convención canónica de Norgard. Se conserva este archivo como trazabilidad del proceso de diseño.
+
 # Treskal — marco de toponimia urbana v0.1
 
 ## Estado

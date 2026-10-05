@@ -7,7 +7,7 @@
   "procedural": false,
   "canonRoot": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",
   "visualProfile": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Perfiles locales/Treskal/TRESKAL_CITY_VISUAL_PROFILE_v0.1.md",
-  "namingConvention": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Toponimia/convencion_toponimica_norgard_v0.1.md",
+  "namingConvention": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_toponymic_convention_default_v0.1.json",
   "operationalFiles": {
     "structure": "Datos operativos/treskal_city_structure_v0.1.json",
     "invariants": "Datos operativos/treskal_city_design_invariants_v0.1.json",
@@ -615,6 +615,12 @@
         "localOverridesPresent": true,
         "stableIdsUnchanged": true,
         "saveMigrationRequired": false
+      },
+      "toponymicConvention": {
+        "realmDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_toponymic_convention_default_v0.1.json",
+        "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Toponimia/convencion_toponimica_norgard_v0.1.md",
+        "localContent": "13_Toponimia/toponimia_treskal_v0.1.md",
+        "technicalIdsRemainLocalAndStable": true
       }
     }
   }

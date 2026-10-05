@@ -1,3 +1,6 @@
+> **HERENCIA DE REINO ACTIVA — E3**  
+> La lógica cultural de nomenclatura se hereda de `Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_toponymic_convention_default_v0.1.json`. Los nombres concretos de Treskal definidos aquí siguen siendo canon local.
+
 # Treskal — toponimia urbana v0.1
 
 ## Estado
