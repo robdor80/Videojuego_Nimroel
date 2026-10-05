@@ -2728,6 +2728,48 @@
         "high TRUST may influence willingness",
         "DOOR HOSP OWN REQ EMP and other owning systems still validate actual permission access and control"
       ]
+    },
+    {
+      "id": "expectation_is_not_future_knowledge",
+      "expected": [
+        "EXP derives from current knowledge habits trust memories or patterns",
+        "hidden future world state never enters NPC expectation directly"
+      ]
+    },
+    {
+      "id": "expectation_is_actor_specific",
+      "expected": [
+        "two NPCs may hold different expectations about the same future event",
+        "the engine does not normalize them to one canonical prediction"
+      ]
+    },
+    {
+      "id": "uncertainty_is_valid_expectation_state",
+      "expected": [
+        "EXP03 may preserve several plausible outcomes",
+        "the simulation does not force exact prediction when information is insufficient"
+      ]
+    },
+    {
+      "id": "surprise_requires_prior_mismatch",
+      "expected": [
+        "unexpected reaction depends on a meaningful difference between prior expectation and discovered outcome",
+        "AI does not express surprise about facts already known"
+      ]
+    },
+    {
+      "id": "outcome_revision_requires_observed_result",
+      "expected": [
+        "EXP remains unresolved if the event occurred but the NPC has not learned its result",
+        "revision follows a valid knowledge path"
+      ]
+    },
+    {
+      "id": "failed_prediction_does_not_prove_deception",
+      "expected": [
+        "an incorrect expectation or prediction may come from uncertainty or error",
+        "STAT intent must be evaluated separately before treating it as deliberate falsehood"
+      ]
     }
   ]
 }
