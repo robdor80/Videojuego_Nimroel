@@ -1,59 +1,33 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_information_and_reputation_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "knowledgeStates": {
-    "K0": "unknown",
-    "K1": "witnessed",
-    "K2": "confirmed_direct_source",
-    "K3": "rumor",
-    "K4": "official_notice",
-    "K5": "doubtful_or_conflicting"
+  "version": "0.2",
+  "status": "split_migration_bridge",
+  "coreKnowledgeContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_knowledge_provenance_contract_v0.1.json",
+  "localReputationContract": "Datos operativos/treskal_reputation_network_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "K"
+  ],
+  "localOverrides": {
+    "knowledgeChannels": [
+      "household",
+      "workplace",
+      "family_friends",
+      "market",
+      "tavern_inn",
+      "port",
+      "urban_guard",
+      "administration_justice"
+    ]
   },
-  "channels": [
-    "household",
-    "workplace",
-    "family_friends",
-    "market",
-    "tavern_inn",
-    "port",
-    "urban_guard",
-    "administration_justice"
-  ],
-  "propagationInputs": [
-    "source_network",
-    "social_distance",
-    "event_salience",
-    "intermediaries",
-    "emotion",
-    "evidence",
-    "interest",
-    "time"
-  ],
-  "secretKnowledgeRequiresActualTransmissionOrDiscovery": true,
-  "falseRumorsAllowed": true,
-  "npcDialogueKnowledgePayload": [
-    "known_fact",
-    "knowledge_state",
-    "source",
-    "age",
-    "confidence",
-    "contradictions"
-  ],
-  "worldStateOmniscienceForbidden": true,
-  "reputationScopes": [
-    "personal",
-    "family",
-    "professional",
-    "neighborhood",
-    "institutional",
-    "commercial"
-  ],
-  "globalCityKarmaForbidden": true,
-  "reputationPropagationRequiresKnowledgePath": true,
-  "givenWordSpecialWeightInValrik": true,
-  "lawNotOverriddenByPositiveReputation": true,
-  "royalShipyardAccessNotGrantedByGenericCityReputation": true,
-  "latentPopulationMayStoreAggregateNetworkReputation": true
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
+  },
+  "authoritySplit": {
+    "knowledge": "nimroel_core",
+    "reputation": "treskal_local_until_future_extraction"
+  },
+  "note": "The former mixed contract is now a bridge only. It must not act as a second authority for K or reputation."
 }

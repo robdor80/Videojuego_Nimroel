@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_reputation_network_contract",
+  "version": "0.1",
+  "status": "active_local_contract",
+  "authorityScope": "treskal_local_until_future_extraction",
+  "sourcePrototype": "split from treskal_information_and_reputation_contract_v0.1",
+  "reputationScopes": [
+    "personal",
+    "family",
+    "professional",
+    "neighborhood",
+    "institutional",
+    "commercial"
+  ],
+  "globalCityKarmaForbidden": true,
+  "reputationPropagationRequiresKnowledgePath": true,
+  "givenWordSpecialWeightInValrik": true,
+  "lawNotOverriddenByPositiveReputation": true,
+  "royalShipyardAccessNotGrantedByGenericCityReputation": true,
+  "latentPopulationMayStoreAggregateNetworkReputation": true,
+  "note": "Reputation remains separate from Core K. This contract owns Treskal/Valrik-specific reputation behavior until a later explicit extraction decides its final authority level."
+}

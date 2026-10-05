@@ -173,6 +173,22 @@ Estado:
 
 Nota de separación: Core no universaliza servicio postal ni estructura educativa. Treskal conserva sus supuestos institucionales concretos.
 
+### Lote U3 migrado — K y separación de reputación
+
+- K — conocimiento y procedencia.
+
+El antiguo contrato mixto información/reputación queda dividido:
+
+- **K** → Nimroel Core;
+- **reputación** → contrato local separado de Treskal hasta una extracción futura explícita;
+- canales concretos de información de Treskal → override local.
+
+Estado:
+
+**MIGRATION_BATCH_U3_READY_FOR_REGRESSION**
+
+**TODOS LOS NAMESPACES DE ALTA CONFIANZA PARA NIMROEL CORE HAN SIDO EXTRAÍDOS.**
+
 ---
 
 ## Objetivo

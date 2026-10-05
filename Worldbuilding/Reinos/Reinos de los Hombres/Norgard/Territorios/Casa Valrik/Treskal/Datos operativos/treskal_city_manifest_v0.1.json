@@ -96,7 +96,8 @@
     "personalViewsAttitudes": "Datos operativos/treskal_personal_views_attitudes_contract_v0.1.json",
     "personalAgendaTimeCommitments": "Datos operativos/treskal_personal_agenda_time_commitments_contract_v0.1.json",
     "emergencyPersonalResponse": "Datos operativos/treskal_emergency_personal_response_contract_v0.1.json",
-    "kinshipFamilyNetwork": "Datos operativos/treskal_kinship_family_network_contract_v0.1.json"
+    "kinshipFamilyNetwork": "Datos operativos/treskal_kinship_family_network_contract_v0.1.json",
+    "reputationNetwork": "Datos operativos/treskal_reputation_network_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -594,6 +595,13 @@
           "ED"
         ],
         "localContract": "Datos operativos/treskal_learning_knowledge_transmission_contract_v0.1.json",
+        "localOverridesEmpty": false
+      },
+      "knowledgeProvenance": {
+        "namespaces": [
+          "K"
+        ],
+        "localContract": "Datos operativos/treskal_information_and_reputation_contract_v0.1.json",
         "localOverridesEmpty": false
       }
     }

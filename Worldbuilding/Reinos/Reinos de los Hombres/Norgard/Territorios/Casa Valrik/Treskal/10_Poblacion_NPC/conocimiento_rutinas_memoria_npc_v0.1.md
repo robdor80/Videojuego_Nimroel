@@ -1,5 +1,7 @@
 # Treskal — conocimiento local, rutinas y memoria de NPC v0.1
 
+> **AUTORIDAD K MIGRADA A NIMROEL CORE.** Los estados y reglas de conocimiento K pertenecen ahora a `Worldbuilding/Sistemas/Nimroel Core/06_Comunicacion_y_saber/conocimiento_procedencia_v0.1.md`. Las rutinas y ejemplos locales de este documento siguen siendo material de Treskal.
+
 ## Estado
 
 **DISEÑO DE GAMEPLAY APROBADO — INFORMACIÓN LIMITADA**

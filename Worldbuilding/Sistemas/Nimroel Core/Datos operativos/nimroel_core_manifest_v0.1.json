@@ -59,7 +59,8 @@
     "giftsSocialMeaning": "Datos operativos/nimroel_gifts_social_meaning_contract_v0.1.json",
     "conversationPrivacyEavesdropping": "Datos operativos/nimroel_conversation_privacy_eavesdropping_contract_v0.1.json",
     "messagingLettersDelivery": "Datos operativos/nimroel_messaging_letters_delivery_contract_v0.1.json",
-    "learningKnowledgeTransmission": "Datos operativos/nimroel_learning_knowledge_transmission_contract_v0.1.json"
+    "learningKnowledgeTransmission": "Datos operativos/nimroel_learning_knowledge_transmission_contract_v0.1.json",
+    "knowledgeProvenance": "Datos operativos/nimroel_knowledge_provenance_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -117,7 +118,8 @@
     "VOICE": "voice_mode",
     "HEAR": "hearing_result",
     "MSG": "message_type",
-    "ED": "learning_mode"
+    "ED": "learning_mode",
+    "K": "knowledge_state"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",

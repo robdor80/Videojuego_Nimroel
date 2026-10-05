@@ -19,7 +19,8 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_access_and_world_state_contract_v0.1.json` — clases de acceso P0–P5 y contrato de World State.
 - `treskal_city_manifest_v0.1.json` — índice maestro de todos los contratos operativos.
 - `treskal_population_and_security_matrix_v0.1.json` — pesos relativos de población/actividad y prioridad de seguridad por Z01–Z14.
-- `treskal_information_and_reputation_contract_v0.1.json` — propagación de información, rumores y reputaciones por red social.
+- `treskal_information_and_reputation_contract_v0.1.json` — bridge de migración: K heredado de Nimroel Core; reputación separada en contrato local.
+- `treskal_reputation_network_contract_v0.1.json` — autoridad local de reputación de Treskal/Valrik tras separar K del antiguo contrato mixto.
 - `treskal_urban_gameplay_discovery_contract_v0.1.json` — descubrimiento orgánico, investigación y oportunidades emergentes.
 - `treskal_labor_household_visitor_contract_v0.1.json` — familias de ocupación O, hogares H y visitantes V.
 - `treskal_civil_port_and_storage_contract_v0.1.json` — ciclo de embarcaciones civiles, carga y clases de almacenamiento ST1–ST6.

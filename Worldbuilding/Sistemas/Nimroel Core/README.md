@@ -54,5 +54,8 @@ Extracción ejecutada:
 **Fase D — material y riesgo: COMPLETA.**
 - lote U1: FRI, AFF, RIFT, GIFT.
 - lote U2: CONV / VOICE / HEAR, MSG, ED.
+- lote U3: K, separado explícitamente de reputación.
+
+**Extracción de namespaces Core de alta confianza: COMPLETA.**
 
 Los siguientes sistemas se migrarán por lotes controlados.

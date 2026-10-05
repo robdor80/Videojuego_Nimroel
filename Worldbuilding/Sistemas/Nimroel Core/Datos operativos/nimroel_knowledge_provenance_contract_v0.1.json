@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_knowledge_provenance_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "sourcePrototype": "Treskal layer 19 split from information/reputation contract",
+  "stableIdNamespace": {
+    "K": "knowledge_state"
+  },
+  "knowledgeStates": {
+    "K0": "unknown",
+    "K1": "witnessed",
+    "K2": "confirmed_direct_source",
+    "K3": "rumor",
+    "K4": "official_notice",
+    "K5": "doubtful_or_conflicting"
+  },
+  "actorKnowledgeDistinctFromWorldFact": true,
+  "knowledgeStateDoesNotAssertTruth": true,
+  "transmissionChannelTaxonomyDefinedByCore": false,
+  "propagationInputs": [
+    "source_network",
+    "social_distance",
+    "event_salience",
+    "intermediaries",
+    "emotion",
+    "evidence",
+    "interest",
+    "time"
+  ],
+  "secretKnowledgeRequiresActualTransmissionOrDiscovery": true,
+  "falseRumorsAllowed": true,
+  "npcDialogueKnowledgePayload": [
+    "known_fact",
+    "knowledge_state",
+    "source",
+    "age",
+    "confidence",
+    "contradictions"
+  ],
+  "worldStateOmniscienceForbidden": true,
+  "knowledgeTransmissionRequiresPlausiblePath": true,
+  "witnessedRequiresPerception": true,
+  "confirmedDirectSourceRequiresTraceableDirectOrReliableInstitutionalSource": true,
+  "rumorDoesNotBecomeFactByRepetition": true,
+  "officialNoticeDoesNotOverrideContradictoryWorldFact": true,
+  "doubtfulOrConflictingPreservesContradictions": true,
+  "partialHearingMayCreatePartialKnowledge": true,
+  "messageDeliveryDoesNotEqualKnowledgeUntilExposure": true,
+  "learningAndDocumentsRequireActualAccess": true,
+  "memoryControlsRetentionNotInitialAcquisition": true,
+  "credibilityAndStatementIntegrityDoNotRewriteWorldFact": true,
+  "aiReceivesOnlyKnowledgeAuthorizedForActor": true
+}

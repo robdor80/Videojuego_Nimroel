@@ -1,5 +1,7 @@
 # Treskal — reputación local, profesional e institucional v0.1
 
+> **AUTORIDAD LOCAL DE REPUTACIÓN CONSERVADA.** K (conocimiento) ya reside en Nimroel Core. Este documento sigue describiendo reputación de Treskal/Valrik y debe consultar K para saber quién conoce cada hecho; reputación y conocimiento no son la misma autoridad.
+
 ## Estado
 
 **DISEÑO DE GAMEPLAY APROBADO — SIN KARMA GLOBAL**

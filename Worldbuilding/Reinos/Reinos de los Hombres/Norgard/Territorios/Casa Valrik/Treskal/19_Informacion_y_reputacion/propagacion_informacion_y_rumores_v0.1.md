@@ -1,5 +1,7 @@
 # Treskal — propagación de información y rumores v0.1
 
+> **AUTORIDAD K MIGRADA A NIMROEL CORE.** La autoridad normativa de K reside en `Worldbuilding/Sistemas/Nimroel Core/06_Comunicacion_y_saber/conocimiento_procedencia_v0.1.md`. Este archivo conserva canales y ejemplos propios de Treskal; reputación queda separada y no forma parte de K.
+
 ## Estado
 
 **DISEÑO DE GAMEPLAY APROBADO — INFORMACIÓN NO OMNISCIENTE**
