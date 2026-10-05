@@ -562,3 +562,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `confianza_dominios_historial_v0.1.md` — TRUST01–TRUST08, confianza por honestidad, fiabilidad, discreción, competencia y otros dominios.
 - `ruptura_reparacion_limites_confianza_v0.1.md` — daño, reparación, perdón, recomendaciones y límites de la confianza.
+
+### 92_Expectativas_anticipacion_y_sorpresa
+
+- `expectativas_anticipacion_resultados_esperados_v0.1.md` — EXP01–EXP08, anticipación basada en conocimiento, hábitos, confianza y experiencia.
+- `sorpresa_desviacion_revision_expectativas_v0.1.md` — resultados inesperados, revisión de expectativas y reacción sin conocimiento del futuro.
