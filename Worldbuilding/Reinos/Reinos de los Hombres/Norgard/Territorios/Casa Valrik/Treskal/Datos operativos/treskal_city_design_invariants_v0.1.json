@@ -2644,6 +2644,48 @@
         "STAT may record what an NPC claims to value",
         "internal VAL state and actual behavior remain separate evidence domains"
       ]
+    },
+    {
+      "id": "self_concept_is_not_job_reputation_or_legal_status",
+      "expected": [
+        "SELF remains distinct from EMP reputation relationship and future legal status",
+        "an active role may be central marginal or irrelevant to personal identity"
+      ]
+    },
+    {
+      "id": "role_loss_does_not_reset_identity",
+      "expected": [
+        "losing employment residence or an active responsibility does not instantly erase self-concept",
+        "SELF03 SELF06 SELF07 or SELF08 may preserve continuity through change"
+      ]
+    },
+    {
+      "id": "multiple_roles_can_be_central",
+      "expected": [
+        "an NPC may identify strongly with more than one role",
+        "the engine does not force a single exclusive identity label"
+      ]
+    },
+    {
+      "id": "identity_transition_requires_life_change",
+      "expected": [
+        "SELF transitions reference actual events responsibilities relationships or sustained change",
+        "AI cannot rewrite identity solely for scene convenience"
+      ]
+    },
+    {
+      "id": "self_concept_does_not_create_underlying_role",
+      "expected": [
+        "feeling like a mentor worker parent or resident does not create the corresponding relationship employment or legal state",
+        "owning systems remain authoritative"
+      ]
+    },
+    {
+      "id": "legacy_identity_preserves_personal_history",
+      "expected": [
+        "former roles may remain meaningful after active participation ends",
+        "MEM and SELF retain continuity without restoring obsolete permissions or employment"
+      ]
     }
   ]
 }
