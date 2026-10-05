@@ -1,5 +1,7 @@
 # Treskal — evolución del tejido y reutilización de edificios v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada con override local explícito.** La autoridad normativa de BUILD reside en `Worldbuilding/Sistemas/Nimroel Core/04_Material_y_riesgo/construccion_cambio_edificado_v0.1.md`. Treskal conserva únicamente la protección de su macroestructura e instalaciones singulares; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO**

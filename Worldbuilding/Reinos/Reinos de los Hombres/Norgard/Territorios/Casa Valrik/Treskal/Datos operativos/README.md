@@ -50,10 +50,10 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_artisan_commission_contract_v0.1.json` — encargos COM01–COM12, materiales reservados, calidad y procedencia.
 - `treskal_hygiene_laundry_domestic_water_contract_v0.1.json` — aseo, lavado, agua doméstica y pátina/suciedad contextual.
 - `treskal_fuel_cooking_heat_contract_v0.1.json` — leña, consumo térmico, hornos y riesgo de fuego.
-- `treskal_doors_locks_keys_access_contract_v0.1.json` — estados DOOR01–DOOR07, llaves y permisos.
+- `treskal_doors_locks_keys_access_contract_v0.1.json` — override local; DOOR heredado de Nimroel Core y clases P aportadas por Treskal.
 - `treskal_employment_jobs_vacancies_contract_v0.1.json` — override de compatibilidad; EMP heredado de Nimroel Core.
 - `treskal_residency_household_mobility_contract_v0.1.json` — override de compatibilidad; RES/MOVE heredados de Nimroel Core.
-- `treskal_construction_building_change_contract_v0.1.json` — estados BUILD01–BUILD10, ampliaciones, cambio de uso y demolición.
+- `treskal_construction_building_change_contract_v0.1.json` — override local; BUILD heredado de Nimroel Core y protección urbana concreta conservada en Treskal.
 - `treskal_clothing_footwear_lifecycle_contract_v0.1.json` — funciones CL01–CL04 y condición GAR01–GAR06.
 - `treskal_seasonality_accumulated_weather_contract_v0.1.json` — estados ENV01–ENV06 y memoria ambiental.
 - `treskal_furniture_material_life_contract_v0.1.json` — mobiliario FURN01–FURN07 y materialización interior.

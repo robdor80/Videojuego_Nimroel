@@ -1,5 +1,7 @@
 # Treskal — puertas, llaves, cerraduras y acceso físico v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada con override local explícito.** La autoridad normativa de DOOR reside en `Worldbuilding/Sistemas/Nimroel Core/04_Material_y_riesgo/puertas_llaves_acceso_fisico_v0.1.md`. Treskal conserva como particularidad su sistema de clases de acceso P; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE GAMEPLAY APROBADO — ACCESO SOCIAL ≠ ACCESO FÍSICO**

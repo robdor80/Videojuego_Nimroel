@@ -500,6 +500,20 @@
         ],
         "localContract": "Datos operativos/treskal_tools_workstations_equipment_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "constructionBuildingChange": {
+        "namespaces": [
+          "BUILD"
+        ],
+        "localContract": "Datos operativos/treskal_construction_building_change_contract_v0.1.json",
+        "localOverridesEmpty": false
+      },
+      "doorsLocksKeysAccess": {
+        "namespaces": [
+          "DOOR"
+        ],
+        "localContract": "Datos operativos/treskal_doors_locks_keys_access_contract_v0.1.json",
+        "localOverridesEmpty": false
       }
     }
   }

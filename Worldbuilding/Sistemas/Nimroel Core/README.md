@@ -47,5 +47,6 @@ Extracción ejecutada:
 
 **Fase C — actividad y tiempo: COMPLETA.**
 - lote D1: OWN, COND, TOOL / WS.
+- lote D2: BUILD, DOOR.
 
 Los siguientes sistemas se migrarán por lotes controlados.

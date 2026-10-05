@@ -115,6 +115,17 @@ Estado:
 
 **MIGRATION_BATCH_D1_READY_FOR_REGRESSION**
 
+### Lote D2 migrado
+
+- BUILD — construcción y cambio edificado;
+- DOOR — puertas, llaves y acceso físico.
+
+Estado:
+
+**MIGRATION_BATCH_D2_READY_FOR_REGRESSION**
+
+Nota de separación: Treskal conserva únicamente la protección de sus namespaces/instalaciones urbanas concretas y la referencia a su sistema local de clases de acceso P.
+
 ---
 
 ## Objetivo
