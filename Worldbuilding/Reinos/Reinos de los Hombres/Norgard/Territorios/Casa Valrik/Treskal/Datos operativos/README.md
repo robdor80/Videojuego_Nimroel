@@ -87,3 +87,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_emotion_mood_contract_v0.1.json` — EMO01–EMO10 y MOOD01–MOOD07, emociones transitorias y tono anímico persistente.
 - `treskal_personal_goals_intentions_contract_v0.1.json` — GOAL01–GOAL08, objetivos personales, planificación, bloqueo y progreso causal.
 - `treskal_decision_deliberation_contract_v0.1.json` — DEC01–DEC08, deliberación, riesgo percibido, elección y reconsideración.
+- `treskal_stress_strain_recovery_contract_v0.1.json` — STRS01–STRS07, presión acumulada, sobrecarga y recuperación causal.
