@@ -2812,6 +2812,48 @@
         "AI receives noticed or authorized cues rather than deciding detection after the fact",
         "unnoticed peripheral information cannot become knowledge without a valid later path"
       ]
+    },
+    {
+      "id": "basic_need_does_not_create_resource",
+      "expected": [
+        "food drink heat shelter sanitation and rest opportunity must exist through owning systems",
+        "NPC hunger thirst or discomfort never spawns missing resources"
+      ]
+    },
+    {
+      "id": "routine_can_abstract_satisfied_needs",
+      "expected": [
+        "ordinary households with sufficient stock access and time may resolve everyday needs without simulating every act",
+        "abstraction must still consume or respect aggregate resources where required"
+      ]
+    },
+    {
+      "id": "routine_failure_requires_real_resolution",
+      "expected": [
+        "scarcity travel displacement blocked water exceptional shifts or similar disruption force explicit compatibility checks",
+        "the system cannot mark a need satisfied when the required resource or action was unavailable"
+      ]
+    },
+    {
+      "id": "need_system_does_not_duplicate_rest_health_or_sanitation",
+      "expected": [
+        "NEED05 feeds REST rather than replacing it and NEED04 relies on WASTE infrastructure",
+        "medical consequences remain deferred to the health system"
+      ]
+    },
+    {
+      "id": "need_does_not_force_survival_hud",
+      "expected": [
+        "qualitative needs may remain invisible during ordinary life",
+        "gameplay detail increases only when needs materially affect behavior or consequence"
+      ]
+    },
+    {
+      "id": "lod_preserves_unmet_relevant_need",
+      "expected": [
+        "satisfied routine needs may resolve in aggregate offscreen",
+        "an unmet consequential need persists across streaming and materialization"
+      ]
     }
   ]
 }
