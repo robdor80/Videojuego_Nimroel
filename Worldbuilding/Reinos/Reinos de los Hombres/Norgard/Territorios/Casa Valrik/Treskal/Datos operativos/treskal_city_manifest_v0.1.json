@@ -514,6 +514,14 @@
         ],
         "localContract": "Datos operativos/treskal_doors_locks_keys_access_contract_v0.1.json",
         "localOverridesEmpty": false
+      },
+      "sanitationWasteCycle": {
+        "namespaces": [
+          "WASTE",
+          "WST"
+        ],
+        "localContract": "Datos operativos/treskal_sanitation_waste_cycle_contract_v0.1.json",
+        "localOverridesEmpty": false
       }
     }
   }

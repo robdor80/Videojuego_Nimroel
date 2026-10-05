@@ -48,7 +48,8 @@
     "wearMaintenanceRepair": "Datos operativos/nimroel_wear_maintenance_repair_contract_v0.1.json",
     "toolsWorkstationsEquipment": "Datos operativos/nimroel_tools_workstations_equipment_contract_v0.1.json",
     "constructionBuildingChange": "Datos operativos/nimroel_construction_building_change_contract_v0.1.json",
-    "doorsLocksKeysAccess": "Datos operativos/nimroel_doors_locks_keys_access_contract_v0.1.json"
+    "doorsLocksKeysAccess": "Datos operativos/nimroel_doors_locks_keys_access_contract_v0.1.json",
+    "sanitationWasteCycle": "Datos operativos/nimroel_sanitation_waste_cycle_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -91,7 +92,9 @@
     "TOOL": "tool_condition",
     "WS": "workstation_state",
     "BUILD": "construction_state",
-    "DOOR": "physical_access_state"
+    "DOOR": "physical_access_state",
+    "WASTE": "waste_type",
+    "WST": "waste_state"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",

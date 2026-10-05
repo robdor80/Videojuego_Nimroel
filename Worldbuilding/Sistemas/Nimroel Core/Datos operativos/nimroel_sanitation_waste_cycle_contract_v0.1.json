@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_sanitation_waste_cycle_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "sourcePrototype": "Treskal layer 61",
+  "stableIdNamespace": {
+    "WASTE": "waste_type",
+    "WST": "waste_state"
+  },
+  "wasteTypes": {
+    "WASTE01": "ordinary_household",
+    "WASTE02": "market_organic",
+    "WASTE03": "fish_and_food_port",
+    "WASTE04": "slaughter_butchery",
+    "WASTE05": "animal_and_stable",
+    "WASTE06": "workshop_craft",
+    "WASTE07": "human_sanitary",
+    "WASTE08": "construction_demolition"
+  },
+  "wasteStates": {
+    "WST01": "generated",
+    "WST02": "contained",
+    "WST03": "awaiting_collection",
+    "WST04": "in_transport",
+    "WST05": "recovered_or_reused",
+    "WST06": "disposed",
+    "WST07": "problematic_accumulation"
+  },
+  "sanitationInfrastructureModelDefinedByCore": false,
+  "institutionalSanitationModelDefinedByCore": false,
+  "potableWaterSeparationRequired": true,
+  "wasteMayBeRecoverableOrReusable": true,
+  "fishWasteRequiresHighRemovalPriority": true,
+  "animalWasteMayFeedAgriculturalReuse": true,
+  "woodworkingResidueMayHaveMultipleDestinations": true,
+  "constructionWasteMayRecoverMaterials": true,
+  "removalRequires": [
+    "person_or_worker",
+    "container_or_handling",
+    "route",
+    "destination"
+  ],
+  "disposalSitesExactLocation": "local_dependency",
+  "rainDoesNotAutoCleanSettlement": true,
+  "accumulationMayIncrease": [
+    "odor",
+    "obstruction",
+    "insects",
+    "future_health_pressure",
+    "local_reputation_effect"
+  ],
+  "accumulationDoesNotAutoCauseDiseaseWithoutHealthSystem": true,
+  "wasteBatchFields": [
+    "waste_id_or_batch",
+    "waste_type",
+    "source_ref",
+    "location_ref",
+    "quantity_class",
+    "state",
+    "container_ref_if_any",
+    "collection_need",
+    "destination_ref_if_known",
+    "hazard_flags",
+    "created_time",
+    "last_update_time"
+  ],
+  "mostWasteCanBeAggregatedByBatch": true,
+  "containerCapacityFinite": true,
+  "wasteRemovalScheduleExactFrequencyUndefined": true,
+  "lodAggregateFields": [
+    "waste_pressure_by_area",
+    "critical_batches",
+    "collection_capacity"
+  ],
+  "problematicAccumulationPersistsAcrossLod": true,
+  "externalDependencies": {
+    "exactDisposalLocations": "local_cartography_or_world_state",
+    "healthEffects": "future_Nimroel_health_system",
+    "exactMetallurgyByproducts": "realm_metallurgy_system"
+  }
+}

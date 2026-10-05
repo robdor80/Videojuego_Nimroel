@@ -126,6 +126,16 @@ Estado:
 
 Nota de separación: Treskal conserva únicamente la protección de sus namespaces/instalaciones urbanas concretas y la referencia a su sistema local de clases de acceso P.
 
+### Lote D3 migrado
+
+- WASTE / WST — residuos, saneamiento y ciclo de retirada.
+
+Estado:
+
+**MIGRATION_BATCH_D3_READY_FOR_REGRESSION**
+
+Nota de separación: Core no universaliza la tecnología sanitaria. Treskal conserva como override su modelo sin alcantarillado moderno y su organización sanitaria preindustrial.
+
 ---
 
 ## Objetivo

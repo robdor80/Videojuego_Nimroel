@@ -1,80 +1,24 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_sanitation_waste_cycle_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "wasteTypes": {
-    "WASTE01": "ordinary_household",
-    "WASTE02": "market_organic",
-    "WASTE03": "fish_and_food_port",
-    "WASTE04": "slaughter_butchery",
-    "WASTE05": "animal_and_stable",
-    "WASTE06": "workshop_craft",
-    "WASTE07": "human_sanitary",
-    "WASTE08": "construction_demolition"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_sanitation_waste_cycle_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "WASTE",
+    "WST"
+  ],
+  "localOverrides": {
+    "modernSewerAssumed": false,
+    "streetDumpingDefaultForbidden": true,
+    "latrinesAndCesspitsMayExist": true,
+    "cesspitCapacityFinite": true,
+    "modernMunicipalSanitationDepartmentAssumed": false
   },
-  "wasteStates": {
-    "WST01": "generated",
-    "WST02": "contained",
-    "WST03": "awaiting_collection",
-    "WST04": "in_transport",
-    "WST05": "recovered_or_reused",
-    "WST06": "disposed",
-    "WST07": "problematic_accumulation"
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "modernSewerAssumed": false,
-  "streetDumpingDefaultForbidden": true,
-  "latrinesAndCesspitsMayExist": true,
-  "cesspitCapacityFinite": true,
-  "potableWaterSeparationRequired": true,
-  "wasteMayBeRecoverableOrReusable": true,
-  "fishWasteRequiresHighRemovalPriority": true,
-  "animalWasteMayFeedAgriculturalReuse": true,
-  "woodworkingResidueMayHaveMultipleDestinations": true,
-  "constructionWasteMayRecoverMaterials": true,
-  "removalRequires": [
-    "person_or_worker",
-    "container_or_handling",
-    "route",
-    "destination"
-  ],
-  "disposalSitesExactLocation": "external_dependency",
-  "rainDoesNotAutoCleanCity": true,
-  "accumulationMayIncrease": [
-    "odor",
-    "obstruction",
-    "insects",
-    "future_health_pressure",
-    "local_reputation_effect"
-  ],
-  "accumulationDoesNotAutoCauseDiseaseWithoutHealthSystem": true,
-  "wasteBatchFields": [
-    "waste_id_or_batch",
-    "waste_type",
-    "source_ref",
-    "location_ref",
-    "quantity_class",
-    "state",
-    "container_ref_if_any",
-    "collection_need",
-    "destination_ref_if_known",
-    "hazard_flags",
-    "created_time",
-    "last_update_time"
-  ],
-  "mostWasteCanBeAggregatedByBatch": true,
-  "containerCapacityFinite": true,
-  "wasteRemovalScheduleExactFrequencyUndefined": true,
-  "modernMunicipalSanitationDepartmentAssumed": false,
-  "lodAggregateFields": [
-    "waste_pressure_by_area",
-    "critical_batches",
-    "collection_capacity"
-  ],
-  "problematicAccumulationPersistsAcrossLod": true,
-  "externalDependencies": {
-    "exactDisposalLocations": "metric_city_plan",
-    "healthEffects": "future_Nimroel_health_system",
-    "exactMetallurgyByproducts": "future_Norgard_metallurgy_system"
-  }
+  "note": "Treskal inherits Core waste-cycle semantics. Its preindustrial sanitation infrastructure and organization remain explicit local overrides."
 }

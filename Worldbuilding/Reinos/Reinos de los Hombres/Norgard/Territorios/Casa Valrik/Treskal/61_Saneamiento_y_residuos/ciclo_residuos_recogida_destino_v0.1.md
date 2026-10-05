@@ -1,5 +1,7 @@
 # Treskal — ciclo de residuos, recogida y destino v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada con override local explícito.** La autoridad normativa de WASTE / WST reside en `Worldbuilding/Sistemas/Nimroel Core/04_Material_y_riesgo/residuos_saneamiento_ciclo_v0.1.md`. Treskal conserva únicamente su infraestructura y organización sanitaria preindustrial; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO**

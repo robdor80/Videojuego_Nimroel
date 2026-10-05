@@ -62,7 +62,7 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_work_hazards_accidents_contract_v0.1.json` — HAZ01–HAZ07, ACC01–ACC08 y respuesta a accidentes.
 - `treskal_rest_sleep_availability_contract_v0.1.json` — estados REST01–REST07 y disponibilidad derivada.
 - `treskal_fire_response_propagation_contract_v0.1.json` — FIRE01–FIRE08, respuesta y recuperación tras incendio.
-- `treskal_sanitation_waste_cycle_contract_v0.1.json` — WASTE01–WASTE08, WST01–WST07 y ciclo de retirada.
+- `treskal_sanitation_waste_cycle_contract_v0.1.json` — override local; WASTE/WST heredados de Nimroel Core y tecnología sanitaria concreta conservada en Treskal.
 - `treskal_death_mourning_funeral_contract_v0.1.json` — estados MORT/ASH, cremación y retorno de cenizas.
 - `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — CONV/VOICE/HEAR, privacidad y conocimiento por oyente.
 - `treskal_waiting_service_capacity_contract_v0.1.json` — override de compatibilidad; WAIT heredado de Nimroel Core.
