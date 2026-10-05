@@ -52,5 +52,6 @@ Extracción ejecutada:
 - lote D4: HAZ / ACC, FIRE, ERSP.
 
 **Fase D — material y riesgo: COMPLETA.**
+- lote U1: FRI, AFF, RIFT, GIFT.
 
 Los siguientes sistemas se migrarán por lotes controlados.

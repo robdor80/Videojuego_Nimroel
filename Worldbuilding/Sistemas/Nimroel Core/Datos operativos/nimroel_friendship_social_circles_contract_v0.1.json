@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_friendship_social_circles_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "sourcePrototype": "Treskal layer 74",
+  "stableIdNamespace": {
+    "FRI": "friendship_state"
+  },
+  "friendshipStates": {
+    "FRI01": "emerging_friendship",
+    "FRI02": "established_friendship",
+    "FRI03": "close_friendship",
+    "FRI04": "trusted_confidant",
+    "FRI05": "strained_friendship",
+    "FRI06": "distant_friendship",
+    "FRI07": "broken_or_former_friendship"
+  },
+  "stateModelIsNotStrictlyLinear": true,
+  "familiarityDoesNotGuaranteeFriendship": true,
+  "friendshipDistinctFromRomance": true,
+  "friendshipDistinctFromKinship": true,
+  "friendshipDoesNotCreateUnlimitedObligation": true,
+  "friendMayProvideCareOrHelpOnlyWhenRelationshipAvailabilityAndContextSupportIt": true,
+  "trustedConfidantDoesNotKnowAllSecrets": true,
+  "privateKnowledgeRequiresActualDisclosureObservationOrTransmission": true,
+  "multipleCloseFriendsAllowed": true,
+  "mandatorySingleBestFriendSlot": false,
+  "socialCircleTaxonomyIsContextual": true,
+  "socialCircleContextsMayInclude": [
+    "childhood_peer_group",
+    "workplace_group",
+    "neighborhood_group",
+    "tavern_or_leisure_group",
+    "maritime_group",
+    "craft_group",
+    "mixed_personal_group"
+  ],
+  "socialCircleMembershipDoesNotImplyEqualPairwiseRelations": true,
+  "socialCircleDoesNotCreateFactionLoyaltyByDefault": true,
+  "groupPresenceRequiresPlausibleAvailabilityLocationAndTime": true,
+  "distanceMayReduceContactWithoutErasingHistory": true,
+  "messagesVisitsAndTravelMayMaintainDistantFriendship": true,
+  "friendshipCanBecomeStrainedOrBroken": true,
+  "formerFriendshipPreservesSharedHistory": true,
+  "friendshipMayAffect": [
+    "leisure_preferences",
+    "hospitality",
+    "care_support",
+    "information_sharing",
+    "recommendations",
+    "travel_or_activity_choices",
+    "emotional_reactions"
+  ],
+  "friendshipDoesNotAutomaticallyGrant": [
+    "house_access",
+    "keys",
+    "property",
+    "money",
+    "employment",
+    "secret_knowledge",
+    "care_availability"
+  ],
+  "offscreenFriendshipChangeRequiresPlausibleInteractionOrMeaningfulEvent": true,
+  "aiCannotInventFriendshipDepthConfidantStatusOrSharedHistory": true,
+  "friendshipEventFields": [
+    "friendship_event_id",
+    "participant_refs",
+    "previous_friendship_state",
+    "new_friendship_state",
+    "cause_refs",
+    "time_ref",
+    "location_ref_if_relevant",
+    "knowledge_delta_refs_if_any"
+  ],
+  "socialCircleFields": [
+    "social_circle_id",
+    "member_refs",
+    "shared_context",
+    "usual_location_refs_if_any",
+    "activity_refs_if_any",
+    "active_state",
+    "last_meaningful_gathering_time"
+  ]
+}

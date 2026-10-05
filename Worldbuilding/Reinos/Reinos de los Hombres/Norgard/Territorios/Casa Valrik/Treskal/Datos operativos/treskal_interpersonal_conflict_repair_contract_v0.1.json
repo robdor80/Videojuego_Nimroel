@@ -1,78 +1,17 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_interpersonal_conflict_repair_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "conflictStates": {
-    "RIFT01": "latent_tension",
-    "RIFT02": "active_dispute",
-    "RIFT03": "avoidance_or_distance",
-    "RIFT04": "repair_attempt",
-    "RIFT05": "partial_repair",
-    "RIFT06": "reconciled_with_history",
-    "RIFT07": "unresolved_estrangement"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_interpersonal_conflict_repair_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "RIFT"
+  ],
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "stateModelIsNotStrictlyLinear": true,
-  "ordinaryConflictDoesNotAutomaticallyBecomeHonorDispute": true,
-  "ordinaryConflictDoesNotAutomaticallyBecomeLegalCase": true,
-  "worldFactSeparateFromParticipantInterpretation": true,
-  "participantGrievanceMayDiffer": true,
-  "misunderstandingMayBeRealCause": true,
-  "apologyCanBeOfferedWithoutBeingAccepted": true,
-  "forgivenessCannotBeForcedByDialogueChoice": true,
-  "repairMayRequire": [
-    "explanation",
-    "apology",
-    "changed_behavior",
-    "time",
-    "restitution_if_relevant",
-    "fulfilled_commitment_if_relevant",
-    "mediation_if_relevant"
-  ],
-  "reconciliationDoesNotEraseMemory": true,
-  "reconciliationDoesNotAutomaticallyRestoreTrust": true,
-  "reconciliationDoesNotAutomaticallyRestoreHouseAccess": true,
-  "reconciliationDoesNotAutomaticallyRestoreFriendshipOrRomanceState": true,
-  "thirdPartiesReactThroughOwnKnowledgeAndRelationships": true,
-  "socialCircleDoesNotAutoChooseSide": true,
-  "privateConflictDoesNotAutoChangePublicReputation": true,
-  "violenceFraudTheftOrOtherCrimeMayEscalateToJustice": true,
-  "promiseHonorOrPublicStandingMayEscalateToHonorSystem": true,
-  "conflictMayAffect": [
-    "FRI",
-    "AFF",
-    "HOSP",
-    "CARE",
-    "CHORE",
-    "LEIS",
-    "EMP",
-    "CONV",
-    "reputation",
-    "social_circle_participation"
-  ],
-  "offscreenConflictRequiresPlausibleCauseInteractionOrMeaningfulEvent": true,
-  "offscreenRepairRequiresPlausibleCommunicationOrAction": true,
-  "aiCannotInventConflictCauseApologyForgivenessOrReconciliation": true,
-  "conflictEventFields": [
-    "conflict_event_id",
-    "participant_refs",
-    "previous_rift_state",
-    "new_rift_state",
-    "cause_refs",
-    "participant_interpretations",
-    "witness_refs_if_any",
-    "time_ref",
-    "location_ref_if_relevant",
-    "knowledge_visibility"
-  ],
-  "repairEventFields": [
-    "repair_event_id",
-    "participant_refs",
-    "repair_type",
-    "offer_by_ref",
-    "response_by_ref",
-    "accepted_state",
-    "consequence_refs",
-    "time_ref"
-  ]
+  "note": "Treskal inherits Core interpersonal conflict and repair semantics without local exceptions."
 }

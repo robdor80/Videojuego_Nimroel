@@ -1,5 +1,7 @@
 # Treskal — regalos, obsequios y transferencia social v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de GIFT reside en `Worldbuilding/Sistemas/Nimroel Core/05_Relaciones_sociales/regalos_significado_social_v0.1.md`. Este archivo conserva ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — UN REGALO ES UN OBJETO REAL CON SIGNIFICADO CONTEXTUAL**

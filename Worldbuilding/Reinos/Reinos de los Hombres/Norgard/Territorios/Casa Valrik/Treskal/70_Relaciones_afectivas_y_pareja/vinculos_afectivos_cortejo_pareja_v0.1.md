@@ -1,5 +1,7 @@
 # Treskal — vínculos afectivos, cortejo y pareja v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de AFF reside en `Worldbuilding/Sistemas/Nimroel Core/05_Relaciones_sociales/relaciones_afectivas_pareja_v0.1.md`. Este archivo conserva ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — AFECTO SIN MEDIDOR ROMÁNTICO AUTOMÁTICO**

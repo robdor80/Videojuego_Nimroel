@@ -52,7 +52,11 @@
     "sanitationWasteCycle": "Datos operativos/nimroel_sanitation_waste_cycle_contract_v0.1.json",
     "workHazardsAccidents": "Datos operativos/nimroel_work_hazards_accidents_contract_v0.1.json",
     "fireResponsePropagation": "Datos operativos/nimroel_fire_response_propagation_contract_v0.1.json",
-    "emergencyPersonalResponse": "Datos operativos/nimroel_emergency_personal_response_contract_v0.1.json"
+    "emergencyPersonalResponse": "Datos operativos/nimroel_emergency_personal_response_contract_v0.1.json",
+    "friendshipSocialCircles": "Datos operativos/nimroel_friendship_social_circles_contract_v0.1.json",
+    "affectiveRelationshipsPairing": "Datos operativos/nimroel_affective_relationship_pairing_contract_v0.1.json",
+    "interpersonalConflictRepair": "Datos operativos/nimroel_interpersonal_conflict_repair_contract_v0.1.json",
+    "giftsSocialMeaning": "Datos operativos/nimroel_gifts_social_meaning_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -101,7 +105,11 @@
     "HAZ": "hazard_type",
     "ACC": "accident_state",
     "FIRE": "fire_state",
-    "ERSP": "personal_emergency_response_state"
+    "ERSP": "personal_emergency_response_state",
+    "FRI": "friendship_state",
+    "AFF": "affective_relationship_state",
+    "RIFT": "interpersonal_conflict_state",
+    "GIFT": "gift_state"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",

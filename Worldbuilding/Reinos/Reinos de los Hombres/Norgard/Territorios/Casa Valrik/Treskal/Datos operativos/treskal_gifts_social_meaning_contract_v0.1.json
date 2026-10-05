@@ -1,87 +1,17 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_gifts_social_meaning_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "giftStates": {
-    "GIFT01": "gift_offered",
-    "GIFT02": "gift_accepted",
-    "GIFT03": "gift_refused",
-    "GIFT04": "transfer_completed",
-    "GIFT05": "gift_retained_with_meaning",
-    "GIFT06": "gift_returned_or_relinquished",
-    "GIFT07": "gift_disputed_or_misinterpreted"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_gifts_social_meaning_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "GIFT"
+  ],
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "giftRequiresExistingObjectOrLot": true,
-  "giftTransferUsesOwnSystem": true,
-  "giftDoesNotDuplicateItems": true,
-  "acceptanceRequiredForNormalVoluntaryGiftTransfer": true,
-  "giftMayBeRefused": true,
-  "refusalDoesNotAutomaticallyCreateHostility": true,
-  "giftDoesNotBuyAffection": true,
-  "giftDoesNotBuyFriendship": true,
-  "giftDoesNotEraseConflict": true,
-  "giftDoesNotCreateRomanceByValueThreshold": true,
-  "giftMeaningDependsOn": [
-    "giver_ref",
-    "recipient_ref",
-    "relationship_state",
-    "context",
-    "occasion_if_any",
-    "item_ref",
-    "known_preferences",
-    "recent_events",
-    "public_or_private_setting"
-  ],
-  "giftMayBe": [
-    "welcome",
-    "neutral",
-    "meaningful",
-    "awkward",
-    "inappropriate",
-    "suspicious",
-    "unwanted"
-  ],
-  "giftMayAffect": [
-    "FRI",
-    "AFF",
-    "RIFT",
-    "FAV",
-    "personal_memory",
-    "reputation_if_known"
-  ],
-  "giftDoesNotAutomaticallyAffectRelationship": true,
-  "preferenceAwareGiftRequiresPlausibleKnowledge": true,
-  "hiddenPreferenceValuesAreNotPlayerLootTable": true,
-  "commercialPurchaseForAnotherPersonCanBecomeGiftAfterValidTransfer": true,
-  "loanIsNotGift": true,
-  "paymentIsNotGift": true,
-  "bribeIsNotClassifiedAsGiftByDefault": true,
-  "institutionalTransferIsNotPersonalGiftByDefault": true,
-  "giftMayCarrySentimentalMeaning": true,
-  "sentimentalMeaningDoesNotChangeBaseItemStatsAutomatically": true,
-  "meaningfulGiftMayPersistAsMemory": true,
-  "privateGiftKnowledgeIsNotGlobal": true,
-  "aiCannotInventPastGiftsOrRecipientPreferences": true,
-  "giftRecordFields": [
-    "gift_event_id",
-    "giver_ref",
-    "recipient_ref",
-    "item_ref",
-    "offer_time",
-    "response_time_if_any",
-    "transfer_time_if_any",
-    "location_ref",
-    "gift_state",
-    "relationship_context_refs",
-    "known_preference_refs_if_any",
-    "witness_refs_if_any",
-    "giver_intent",
-    "recipient_interpretation"
-  ],
-  "externalDependencies": {
-    "canonicalOccasionsAndCelebrations": "future_Norgard_social_customs",
-    "canonicalCuisineAndRecipes": "future_Norgard_cuisine",
-    "exactMonetaryValue": "Norgard_monetary_and_economic_system"
-  }
+  "note": "Treskal inherits Core gift and social meaning semantics without local exceptions."
 }

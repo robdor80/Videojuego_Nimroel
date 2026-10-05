@@ -71,15 +71,15 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_household_chores_domestic_load_contract_v0.1.json` — CHORE01–CHORE09, DOM01–DOM07 y presión doméstica.
 - `treskal_apprenticeship_skill_transmission_contract_v0.1.json` — override de compatibilidad; APR heredado de Nimroel Core.
 - `treskal_leisure_social_gathering_contract_v0.1.json` — LEIS01–LEIS07 y encuentros sociales persistentes.
-- `treskal_affective_relationship_pairing_contract_v0.1.json` — AFF01–AFF07, cortejo, pareja y continuidad relacional.
+- `treskal_affective_relationship_pairing_contract_v0.1.json` — override de compatibilidad; AFF heredado de Nimroel Core.
 - `treskal_pregnancy_birth_early_infancy_contract_v0.1.json` — PREG01–PREG06, parto, nacimiento persistente y primera infancia.
 - `treskal_child_development_autonomy_learning_contract_v0.1.json` — CHD01–CHD06, autonomía, supervisión y transición hacia aprendizaje.
 - `treskal_aging_late_life_activity_contract_v0.1.json` — AGE01–AGE06, vejez activa, carga adaptada, mentoría y dependencia real.
-- `treskal_friendship_social_circles_contract_v0.1.json` — FRI01–FRI07, amistad profunda, confianza y círculos sociales persistentes.
-- `treskal_interpersonal_conflict_repair_contract_v0.1.json` — RIFT01–RIFT07, conflicto interpersonal, reparación y reconciliación persistente.
+- `treskal_friendship_social_circles_contract_v0.1.json` — override de compatibilidad; FRI heredado de Nimroel Core.
+- `treskal_interpersonal_conflict_repair_contract_v0.1.json` — override de compatibilidad; RIFT heredado de Nimroel Core.
 - `treskal_personal_preferences_habits_contract_v0.1.json` — PREF01–PREF08 y HAB01–HAB08, gustos individuales y hábitos flexibles.
 - `treskal_favors_reciprocity_informal_debt_contract_v0.1.json` — override de compatibilidad; FAV heredado de Nimroel Core.
-- `treskal_gifts_social_meaning_contract_v0.1.json` — GIFT01–GIFT07, transferencia de regalos, aceptación y significado social.
+- `treskal_gifts_social_meaning_contract_v0.1.json` — override de compatibilidad; GIFT heredado de Nimroel Core.
 - `treskal_requests_consent_boundaries_contract_v0.1.json` — override de compatibilidad; REQ heredado de Nimroel Core.
 - `treskal_confidential_information_contract_v0.1.json` — CONF01–CONF07, confidencialidad, divulgación y filtraciones.
 - `treskal_statement_integrity_contract_v0.1.json` — STAT01–STAT08, verdad, error, omisión y versiones falsas persistentes.

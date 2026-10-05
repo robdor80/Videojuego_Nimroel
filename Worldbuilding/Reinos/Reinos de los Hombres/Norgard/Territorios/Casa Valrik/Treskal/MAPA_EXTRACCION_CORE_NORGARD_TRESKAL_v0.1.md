@@ -150,6 +150,17 @@ Estado:
 
 Nota de separación: la normativa/equipamiento de seguridad y la organización concreta contra incendios no se universalizan. Treskal conserva sus particularidades explícitas.
 
+### Lote U1 migrado — relaciones universales restantes
+
+- FRI — amistad y círculos sociales;
+- AFF — relación afectiva y pareja;
+- RIFT — conflicto interpersonal y reparación;
+- GIFT — regalos y significado social.
+
+Estado:
+
+**MIGRATION_BATCH_U1_READY_FOR_REGRESSION**
+
 ---
 
 ## Objetivo

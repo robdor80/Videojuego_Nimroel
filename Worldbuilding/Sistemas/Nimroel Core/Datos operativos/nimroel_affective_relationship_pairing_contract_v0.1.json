@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_affective_relationship_pairing_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "sourcePrototype": "Treskal layer 70",
+  "stableIdNamespace": {
+    "AFF": "affective_relationship_state"
+  },
+  "affectiveStates": {
+    "AFF01": "no_affective_interest",
+    "AFF02": "unilateral_interest",
+    "AFF03": "mutual_interest",
+    "AFF04": "active_courtship",
+    "AFF05": "established_pair",
+    "AFF06": "strained_pair",
+    "AFF07": "separated_or_former_pair"
+  },
+  "stateModelIsNotStrictlyLinear": true,
+  "relationshipDimensionsRemainDistinct": [
+    "familiarity",
+    "friendship",
+    "attraction",
+    "trust",
+    "affective_commitment",
+    "public_recognition"
+  ],
+  "friendshipDoesNotImplyRomance": true,
+  "attractionDoesNotImplyReciprocity": true,
+  "repeatedContactDoesNotGuaranteeRomance": true,
+  "giftsDoNotPurchaseAffection": true,
+  "fameOrStatusDoNotCompelAffection": true,
+  "persistentPressureDoesNotCreateValidCourtship": true,
+  "courtshipRequiresCompatibleReciprocalInteraction": true,
+  "childrenExcludedFromRomanceMechanics": true,
+  "genderDoesNotDefineUniversalCourtshipRole": true,
+  "pairBondDoesNotAutomaticallyCreateSharedHousehold": true,
+  "coResidenceUsesResidencyMoveAndHousingSystems": true,
+  "sharedDomesticLifeUsesChoreCareHospitalityAndAccessSystems": true,
+  "employmentAndProfessionalIdentityRemainIndependentFromPairStatus": true,
+  "privateRelationshipStateIsNotAutomaticallyPublicKnowledge": true,
+  "relationshipRumorsRequirePerceptionAndTransmission": true,
+  "publicReputationChangesRequireWitnessInterpretationAndSpread": true,
+  "separationDoesNotEraseSharedHistory": true,
+  "deathOfPartnerUsesMortalityMourningAndHouseholdContinuitySystems": true,
+  "playerCannotForceRelationshipStateByDialogueChoiceAlone": true,
+  "aiCannotInventAffectionCourtshipPairStatusOrBreakup": true,
+  "offscreenRelationshipChangeRequiresPlausibleContactTimeAndInteraction": true,
+  "relevantRelationshipEventFields": [
+    "relationship_event_id",
+    "participant_refs",
+    "previous_affective_state",
+    "new_affective_state",
+    "cause_refs",
+    "location_ref_if_relevant",
+    "time_ref",
+    "knowledge_visibility"
+  ],
+  "externalDependencies": {
+    "formalMarriageRitesAndRecognition": "future_realm_family_and_marriage_canon",
+    "inheritanceAndPropertyTransfers": "realm_law_and_economic_institutions",
+    "exactHouseholdLegalStatus": "future_realm_family_and_marriage_canon"
+  }
+}

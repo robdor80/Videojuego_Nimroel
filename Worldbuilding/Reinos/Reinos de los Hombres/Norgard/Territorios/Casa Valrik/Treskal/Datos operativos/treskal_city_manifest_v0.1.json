@@ -544,6 +544,34 @@
         ],
         "localContract": "Datos operativos/treskal_emergency_personal_response_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "friendshipSocialCircles": {
+        "namespaces": [
+          "FRI"
+        ],
+        "localContract": "Datos operativos/treskal_friendship_social_circles_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "affectiveRelationshipsPairing": {
+        "namespaces": [
+          "AFF"
+        ],
+        "localContract": "Datos operativos/treskal_affective_relationship_pairing_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "interpersonalConflictRepair": {
+        "namespaces": [
+          "RIFT"
+        ],
+        "localContract": "Datos operativos/treskal_interpersonal_conflict_repair_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "giftsSocialMeaning": {
+        "namespaces": [
+          "GIFT"
+        ],
+        "localContract": "Datos operativos/treskal_gifts_social_meaning_contract_v0.1.json",
+        "localOverridesEmpty": true
       }
     }
   }

@@ -1,5 +1,7 @@
 # Treskal — amistad, confianza y continuidad personal v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de FRI reside en `Worldbuilding/Sistemas/Nimroel Core/05_Relaciones_sociales/amistad_circulos_sociales_v0.1.md`. Este archivo conserva ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — LA AMISTAD ES HISTORIA COMPARTIDA, NO PROXIMIDAD**
