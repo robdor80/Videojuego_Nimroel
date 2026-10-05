@@ -349,6 +349,27 @@
         ],
         "localContract": "Datos operativos/treskal_expectation_revision_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "stressStrainRecovery": {
+        "namespaces": [
+          "STRS"
+        ],
+        "localContract": "Datos operativos/treskal_stress_strain_recovery_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "personalValuesPrinciples": {
+        "namespaces": [
+          "VAL"
+        ],
+        "localContract": "Datos operativos/treskal_personal_values_principles_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "selfConceptRoles": {
+        "namespaces": [
+          "SELF"
+        ],
+        "localContract": "Datos operativos/treskal_self_concept_roles_contract_v0.1.json",
+        "localOverridesEmpty": true
       }
     }
   }

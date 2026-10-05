@@ -1,5 +1,8 @@
 # Treskal — recuperación, apoyo y ajuste de rutina v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de STRS reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/presion_y_recuperacion_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — RECUPERARSE NO ES CONSUMIR UN BONIFICADOR**

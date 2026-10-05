@@ -1,66 +1,17 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_self_concept_roles_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "selfConceptStates": {
-    "SELF01": "recognized_role",
-    "SELF02": "central_identity",
-    "SELF03": "role_in_transition",
-    "SELF04": "identity_threatened",
-    "SELF05": "identity_conflict",
-    "SELF06": "adapted_identity",
-    "SELF07": "relinquished_role",
-    "SELF08": "legacy_identity"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_self_concept_roles_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "SELF"
+  ],
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "selfConceptIsNotEmployment": true,
-  "selfConceptIsNotReputation": true,
-  "selfConceptIsNotPersonality": true,
-  "selfConceptIsNotLegalStatus": true,
-  "multipleImportantRolesAllowed": true,
-  "roleMayDeriveFrom": [
-    "occupation",
-    "apprenticeship",
-    "household",
-    "care",
-    "kinship",
-    "relationship",
-    "mentoring",
-    "place_attachment",
-    "service_or_responsibility"
-  ],
-  "roleExistenceDoesNotGuaranteeCentralIdentity": true,
-  "roleLossDoesNotImmediatelyEraseIdentity": true,
-  "legacyIdentityMayPersistAfterRoleEnds": true,
-  "selfConceptMayInfluence": [
-    "goal_selection",
-    "decision_priority",
-    "emotional_response",
-    "value_conflict",
-    "dialogue",
-    "adaptation_to_life_change"
-  ],
-  "selfConceptDoesNotCreateUnderlyingRole": true,
-  "selfConceptDoesNotCreateRelationshipEmploymentOrAuthority": true,
-  "identityTransitionRequiresLifeEventOrSustainedChange": true,
-  "identityConflictMayCoexistWithValueConflict": true,
-  "adaptationDoesNotRequirePositiveEmotion": true,
-  "reputationAndSelfConceptMayDiverge": true,
-  "memoryPreservesFormerRoles": true,
-  "ageMayTransformRoleWithoutDeletingIdentity": true,
-  "lodDoesNotRerollSelfConcept": true,
-  "playerDoesNotReceiveHiddenSelfConceptSheetByDefault": true,
-  "aiMayUseSelfConceptForContinuityAndInternalConflict": true,
-  "aiCannotInventCentralIdentityWithoutWorldStateOrCharacterBasis": true,
-  "selfConceptRecordFields": [
-    "npc_ref",
-    "role_ref_or_authorized_role_description",
-    "self_concept_state",
-    "centrality_if_relevant",
-    "origin_refs",
-    "transition_refs_if_any",
-    "conflict_refs_if_any",
-    "start_time",
-    "last_update_time"
-  ]
+  "note": "Treskal inherits Nimroel Core self-concept semantics without local exceptions."
 }

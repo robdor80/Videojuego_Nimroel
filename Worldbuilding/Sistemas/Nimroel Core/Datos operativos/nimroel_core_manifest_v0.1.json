@@ -25,7 +25,10 @@
     "confidentialInformation": "Datos operativos/nimroel_confidential_information_contract_v0.1.json",
     "dialogueDynamics": "Datos operativos/nimroel_dialogue_dynamics_contract_v0.1.json",
     "attentionFocus": "Datos operativos/nimroel_attention_focus_contract_v0.1.json",
-    "expectationRevision": "Datos operativos/nimroel_expectation_revision_contract_v0.1.json"
+    "expectationRevision": "Datos operativos/nimroel_expectation_revision_contract_v0.1.json",
+    "stressStrainRecovery": "Datos operativos/nimroel_stress_strain_recovery_contract_v0.1.json",
+    "personalValuesPrinciples": "Datos operativos/nimroel_personal_values_principles_contract_v0.1.json",
+    "selfConceptRoles": "Datos operativos/nimroel_self_concept_roles_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -41,7 +44,10 @@
     "CONF": "confidential_information_state",
     "DIAL": "dialogue_state",
     "ATTN": "attention_state",
-    "EXP": "expectation_state"
+    "EXP": "expectation_state",
+    "STRS": "stress_strain_state",
+    "VAL": "personal_value_commitment_state",
+    "SELF": "self_concept_role_state"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",

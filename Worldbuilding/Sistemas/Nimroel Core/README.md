@@ -39,5 +39,6 @@ Extracción ejecutada:
 - lote A1: MEM, PERS, EMO / MOOD;
 - lote A2: GOAL, DEC, TRUST, VIEW.
 - lote A3: STAT, CRED, CONF, DIAL, ATTN, EXP.
+- lote A4: STRS, VAL, SELF.
 
 Los siguientes sistemas se migrarán por lotes controlados.

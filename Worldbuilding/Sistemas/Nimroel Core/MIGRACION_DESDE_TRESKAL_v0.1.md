@@ -21,6 +21,9 @@ Treskal continúa siendo el prototipo histórico, pero los sistemas marcados aqu
 | Dinámica de conversación | DIAL | activo | override de compatibilidad |
 | Atención / foco | ATTN | activo | override de compatibilidad |
 | Expectativas | EXP | activo | override de compatibilidad |
+| Presión / recuperación | STRS | activo | override de compatibilidad |
+| Valores personales | VAL | activo | override de compatibilidad |
+| Identidad / roles | SELF | activo | override de compatibilidad |
 
 ## Compatibilidad
 
@@ -34,8 +37,8 @@ Para cada sistema migrado:
 
 ## Siguiente lote previsto
 
-- STRS;
-- VAL;
-- SELF.
+Fase cognitiva general cerrada salvo K.
 
 K queda para un lote específico porque su autoridad actual está mezclada con información y reputación y debe separarse sin duplicar semántica.
+
+Después se inicia Fase B — ciclo vital y hogar.

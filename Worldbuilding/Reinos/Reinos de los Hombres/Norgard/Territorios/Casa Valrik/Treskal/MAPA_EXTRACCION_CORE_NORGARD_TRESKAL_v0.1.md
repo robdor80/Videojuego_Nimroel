@@ -46,6 +46,16 @@ Estado:
 
 **MIGRATION_BATCH_A3_READY_FOR_REGRESSION**
 
+### Lote A4 migrado
+
+- STRS — presión acumulada y recuperación;
+- VAL — valores y principios personales;
+- SELF — identidad y roles personales.
+
+Estado:
+
+**MIGRATION_BATCH_A4_READY_FOR_REGRESSION**
+
 ---
 
 ## Objetivo

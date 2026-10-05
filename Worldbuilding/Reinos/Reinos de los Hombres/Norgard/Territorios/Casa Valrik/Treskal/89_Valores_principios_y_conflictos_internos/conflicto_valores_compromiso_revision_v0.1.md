@@ -1,5 +1,8 @@
 # Treskal — conflicto de valores, compromiso y revisión v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de VAL reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/valores_y_principios_personales_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — ACTUAR CONTRA UN PRINCIPIO NO LO BORRA AUTOMÁTICAMENTE**

@@ -1,5 +1,8 @@
 # Treskal — transición de rol, pérdida e identidad persistente v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de SELF reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/identidad_y_roles_personales_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — PERDER UN ROL NO BORRA SU HISTORIA**

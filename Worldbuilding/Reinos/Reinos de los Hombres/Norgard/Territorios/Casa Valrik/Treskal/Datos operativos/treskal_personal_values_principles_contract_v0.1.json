@@ -1,64 +1,17 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_personal_values_principles_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "valueStates": {
-    "VAL01": "acknowledged_value",
-    "VAL02": "preferred_priority",
-    "VAL03": "strong_commitment",
-    "VAL04": "active_value_conflict",
-    "VAL05": "compromised_in_action",
-    "VAL06": "reaffirmed_after_choice",
-    "VAL07": "revised_or_weakened",
-    "VAL08": "abandoned_or_replaced"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personal_values_principles_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "VAL"
+  ],
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "valueContentMustComeFromAuthorizedCanonOrCharacterHistory": true,
-  "systemDoesNotDefineNewNorgardValues": true,
-  "valuesAreNotMoralAlignment": true,
-  "valuesAreNotPersonalityTraits": true,
-  "valuesAreNotGoals": true,
-  "valuesAreNotReputation": true,
-  "cultureMayShapeButDoesNotCloneIndividualValues": true,
-  "multipleValuesMayConflict": true,
-  "valueConflictRequiresDecisionOrDeferral": true,
-  "actingAgainstValueDoesNotAutomaticallyEraseValue": true,
-  "strongCommitmentDoesNotRequireUnlimitedSacrifice": true,
-  "valueMayInfluence": [
-    "goal_selection",
-    "decision_priority",
-    "pledge_willingness",
-    "relationship_boundaries",
-    "repair_behavior",
-    "risk_acceptance"
-  ],
-  "valueDoesNotOverride": [
-    "world_state",
-    "knowledge_limits",
-    "physical_capacity",
-    "legal_authority",
-    "access",
-    "other_actor_autonomy"
-  ],
-  "stableRevisionRequiresMeaningfulExperienceOrSustainedReflection": true,
-  "singleDialogueDoesNotAutomaticallyRewriteStrongValue": true,
-  "valueHistoryPersistsAfterRevision": true,
-  "publicBehaviorDoesNotProveInternalValue": true,
-  "statedValueDoesNotProveInternalValue": true,
-  "playerDoesNotReceiveHiddenValueSheetByDefault": true,
-  "aiMayUseValuesForInternalConflictAndConsistency": true,
-  "aiCannotInventNewPersistentValueToJustifyCurrentScene": true,
-  "valueRecordFields": [
-    "npc_ref",
-    "value_ref_or_authorized_definition",
-    "value_state",
-    "commitment_strength_if_relevant",
-    "origin_refs_if_any",
-    "conflict_refs_if_any",
-    "change_history_refs_if_any",
-    "last_meaningful_update"
-  ],
-  "externalDependencies": {
-    "canonicalPersonalValueVocabulary": "future_Nimroel_character_psychology_core"
-  }
+  "note": "Treskal inherits Nimroel Core personal value semantics without local exceptions."
 }

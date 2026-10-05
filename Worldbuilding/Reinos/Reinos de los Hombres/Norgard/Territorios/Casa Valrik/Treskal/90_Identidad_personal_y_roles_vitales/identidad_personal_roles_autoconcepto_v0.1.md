@@ -1,5 +1,8 @@
 # Treskal — identidad personal, roles vitales y autoconcepto v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de SELF reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/identidad_y_roles_personales_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE NPC APROBADO — UNA PERSONA ES MÁS QUE SU OFICIO O SU REPUTACIÓN**
