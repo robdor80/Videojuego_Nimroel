@@ -2476,6 +2476,48 @@
         "NPC decisions can resolve while player is absent when context and time permit",
         "LOD never grants perfect routes knowledge or optimal solutions"
       ]
+    },
+    {
+      "id": "strain_is_not_emotion_rest_or_diagnosis",
+      "expected": [
+        "STRS remains separate from EMO MOOD REST and health diagnosis",
+        "pressure may interact with them without replacing their authority"
+      ]
+    },
+    {
+      "id": "strain_requires_real_or_believed_load",
+      "expected": [
+        "work care uncertainty conflict scarcity or other demand must be experienced or believed",
+        "the engine does not add pressure solely for drama"
+      ]
+    },
+    {
+      "id": "hidden_unknown_facts_do_not_create_strain",
+      "expected": [
+        "an NPC cannot be psychologically pressured by a fact they do not know or anticipate",
+        "knowledge and belief paths remain causal inputs"
+      ]
+    },
+    {
+      "id": "recovery_is_not_instant_consumable",
+      "expected": [
+        "food leisure conversation or rest never universally reset STRS",
+        "recovery follows reduced causes capacity support rest and time"
+      ]
+    },
+    {
+      "id": "high_strain_does_not_auto_destroy_competence",
+      "expected": [
+        "experienced NPCs may remain capable under pressure",
+        "any functional effect must be contextual rather than a universal skill penalty"
+      ]
+    },
+    {
+      "id": "offscreen_strain_change_is_causal",
+      "expected": [
+        "STRS may rise or recover while player is absent if causes change",
+        "LOD does not randomly reroll pressure state"
+      ]
     }
   ]
 }
