@@ -532,3 +532,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `decisiones_deliberacion_conflictos_prioridad_v0.1.md` — DEC01–DEC08, alternativas conocidas, prioridades, obligaciones e indecisión.
 - `riesgo_incertidumbre_reconsideracion_v0.1.md` — riesgo percibido frente a riesgo real, cambio de decisión y resultados inciertos.
+
+### 86_Estres_presion_y_recuperacion
+
+- `presion_acumulada_carga_cotidiana_v0.1.md` — STRS01–STRS07, acumulación de demandas y efectos contextuales.
+- `recuperacion_apoyo_ajuste_rutina_v0.1.md` — apoyo, redistribución, descanso y recuperación sin barra universal.
