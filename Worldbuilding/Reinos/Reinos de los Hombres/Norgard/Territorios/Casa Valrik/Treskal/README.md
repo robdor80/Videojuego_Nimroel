@@ -517,3 +517,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `credibilidad_fuentes_sospecha_v0.1.md` — estados CRED01–CRED08, confianza contextual y ausencia de detección sobrenatural.
 - `verificacion_evidencia_corroboracion_v0.1.md` — evidencia, testigos, documentos, expertos y actualización de creencias.
+
+### 83_Emociones_y_estado_de_animo
+
+- `emociones_transitorias_causa_expresion_v0.1.md` — EMO01–EMO10, causa subjetiva, expresión y límites perceptivos.
+- `estado_animo_persistencia_recuperacion_v0.1.md` — MOOD01–MOOD07, persistencia, recuperación y separación respecto a personalidad.
