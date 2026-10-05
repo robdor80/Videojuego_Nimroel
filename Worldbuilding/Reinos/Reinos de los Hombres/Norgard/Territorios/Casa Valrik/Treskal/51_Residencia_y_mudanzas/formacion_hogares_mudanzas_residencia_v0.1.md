@@ -1,5 +1,7 @@
 # Treskal — formación de hogares, mudanzas y residencia v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de RES / MOVE reside en `Worldbuilding/Sistemas/Nimroel Core/03_Actividad_y_tiempo/residencia_hogar_mudanzas_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — POBLACIÓN PERSISTENTE Y CAMBIANTE**

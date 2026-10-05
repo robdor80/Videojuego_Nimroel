@@ -1,57 +1,18 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_residency_household_mobility_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "residentStates": {
-    "RES01": "resident",
-    "RES02": "temporary_resident_like",
-    "RES03": "departing",
-    "RES04": "former_resident",
-    "RES05": "displaced"
-  },
-  "visitorToResidentRequiresWorldStateChange": true,
-  "longStayAloneDoesNotCreateResidency": true,
-  "householdLifecycle": [
-    "form",
-    "grow",
-    "shrink",
-    "split",
-    "merge",
-    "move",
-    "cease_as_domestic_unit"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_residency_household_mobility_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "RES",
+    "MOVE"
   ],
-  "npcIdentityPersistsAcrossHouseholdChanges": true,
-  "householdExitDoesNotAutoBreakFamilyRelations": true,
-  "moveStates": {
-    "MOVE01": "planned",
-    "MOVE02": "preparing",
-    "MOVE03": "in_progress",
-    "MOVE04": "completed",
-    "MOVE05": "interrupted",
-    "MOVE06": "cancelled"
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "moveFields": [
-    "move_id",
-    "household_or_person_ref",
-    "origin_home_ref",
-    "destination_home_ref",
-    "cause",
-    "planned_time",
-    "actual_time",
-    "transport_need",
-    "state"
-  ],
-  "movingHomeDoesNotAutoMoveBusiness": true,
-  "displacementRequiresRealCause": true,
-  "replacementHousingNotAutomatic": true,
-  "formerResidentMayReturnWithSameNpcId": true,
-  "temporaryTravelDoesNotEndResidencyByItself": true,
-  "residentAndVisitorCountsMutuallyExclusiveForSameNpc": true,
-  "residenceChangesPersistAcrossSaveLoad": true,
-  "externalDependencies": {
-    "marriageAndHouseholdLaw": "future_Norgard_family_law",
-    "ownershipInheritanceRentalLaw": "Norgard_law_and_economic_institutions",
-    "birthAndGuardianship": "future_Nimroel_family_lifecycle_system"
-  }
+  "note": "Treskal inherits Nimroel Core residency, household mobility and move semantics without local exceptions."
 }

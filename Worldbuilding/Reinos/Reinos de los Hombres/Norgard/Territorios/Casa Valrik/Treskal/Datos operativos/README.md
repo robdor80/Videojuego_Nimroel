@@ -52,7 +52,7 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_fuel_cooking_heat_contract_v0.1.json` — leña, consumo térmico, hornos y riesgo de fuego.
 - `treskal_doors_locks_keys_access_contract_v0.1.json` — estados DOOR01–DOOR07, llaves y permisos.
 - `treskal_employment_jobs_vacancies_contract_v0.1.json` — override de compatibilidad; EMP heredado de Nimroel Core.
-- `treskal_residency_household_mobility_contract_v0.1.json` — estados RES/MOVE, hogares y mudanzas persistentes.
+- `treskal_residency_household_mobility_contract_v0.1.json` — override de compatibilidad; RES/MOVE heredados de Nimroel Core.
 - `treskal_construction_building_change_contract_v0.1.json` — estados BUILD01–BUILD10, ampliaciones, cambio de uso y demolición.
 - `treskal_clothing_footwear_lifecycle_contract_v0.1.json` — funciones CL01–CL04 y condición GAR01–GAR06.
 - `treskal_seasonality_accumulated_weather_contract_v0.1.json` — estados ENV01–ENV06 y memoria ambiental.
@@ -69,7 +69,7 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_dependents_care_network_contract_v0.1.json` — tipos DEP, estados CARE y capacidad de cuidado.
 - `treskal_household_hospitality_guest_contract_v0.1.json` — estados HOSP y permisos temporales de visita/estancia.
 - `treskal_household_chores_domestic_load_contract_v0.1.json` — CHORE01–CHORE09, DOM01–DOM07 y presión doméstica.
-- `treskal_apprenticeship_skill_transmission_contract_v0.1.json` — APR01–APR06, mentoría y transmisión de habilidades.
+- `treskal_apprenticeship_skill_transmission_contract_v0.1.json` — override de compatibilidad; APR heredado de Nimroel Core.
 - `treskal_leisure_social_gathering_contract_v0.1.json` — LEIS01–LEIS07 y encuentros sociales persistentes.
 - `treskal_affective_relationship_pairing_contract_v0.1.json` — AFF01–AFF07, cortejo, pareja y continuidad relacional.
 - `treskal_pregnancy_birth_early_infancy_contract_v0.1.json` — PREG01–PREG06, parto, nacimiento persistente y primera infancia.
@@ -78,9 +78,9 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_friendship_social_circles_contract_v0.1.json` — FRI01–FRI07, amistad profunda, confianza y círculos sociales persistentes.
 - `treskal_interpersonal_conflict_repair_contract_v0.1.json` — RIFT01–RIFT07, conflicto interpersonal, reparación y reconciliación persistente.
 - `treskal_personal_preferences_habits_contract_v0.1.json` — PREF01–PREF08 y HAB01–HAB08, gustos individuales y hábitos flexibles.
-- `treskal_favors_reciprocity_informal_debt_contract_v0.1.json` — FAV01–FAV07, ayuda voluntaria, reciprocidad y deuda social informal.
+- `treskal_favors_reciprocity_informal_debt_contract_v0.1.json` — override de compatibilidad; FAV heredado de Nimroel Core.
 - `treskal_gifts_social_meaning_contract_v0.1.json` — GIFT01–GIFT07, transferencia de regalos, aceptación y significado social.
-- `treskal_requests_consent_boundaries_contract_v0.1.json` — REQ01–REQ08, peticiones, rechazo, condiciones y límites personales.
+- `treskal_requests_consent_boundaries_contract_v0.1.json` — override de compatibilidad; REQ heredado de Nimroel Core.
 - `treskal_confidential_information_contract_v0.1.json` — CONF01–CONF07, confidencialidad, divulgación y filtraciones.
 - `treskal_statement_integrity_contract_v0.1.json` — STAT01–STAT08, verdad, error, omisión y versiones falsas persistentes.
 - `treskal_credibility_verification_contract_v0.1.json` — CRED01–CRED08, credibilidad, sospecha, corroboración y verificación.

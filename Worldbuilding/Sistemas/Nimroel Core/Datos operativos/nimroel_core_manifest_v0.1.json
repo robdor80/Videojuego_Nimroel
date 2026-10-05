@@ -39,7 +39,11 @@
     "basicPhysicalNeeds": "Datos operativos/nimroel_basic_physical_needs_contract_v0.1.json",
     "employmentJobsVacancies": "Datos operativos/nimroel_employment_jobs_vacancies_contract_v0.1.json",
     "personalAgendaTimeCommitments": "Datos operativos/nimroel_personal_agenda_time_commitments_contract_v0.1.json",
-    "waitingServiceCapacity": "Datos operativos/nimroel_waiting_service_capacity_contract_v0.1.json"
+    "waitingServiceCapacity": "Datos operativos/nimroel_waiting_service_capacity_contract_v0.1.json",
+    "residencyHouseholdMobility": "Datos operativos/nimroel_residency_household_mobility_contract_v0.1.json",
+    "apprenticeshipSkillTransmission": "Datos operativos/nimroel_apprenticeship_skill_transmission_contract_v0.1.json",
+    "favorsReciprocityInformalDebt": "Datos operativos/nimroel_favors_reciprocity_informal_debt_contract_v0.1.json",
+    "requestsConsentBoundaries": "Datos operativos/nimroel_requests_consent_boundaries_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -71,7 +75,12 @@
     "NEED": "basic_physical_need_type",
     "EMP": "employment_state",
     "AGEN": "agenda_state",
-    "WAIT": "service_wait_state"
+    "WAIT": "service_wait_state",
+    "RES": "residency_state",
+    "MOVE": "move_state",
+    "APR": "apprenticeship_state",
+    "FAV": "favor_state",
+    "REQ": "request_state"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",

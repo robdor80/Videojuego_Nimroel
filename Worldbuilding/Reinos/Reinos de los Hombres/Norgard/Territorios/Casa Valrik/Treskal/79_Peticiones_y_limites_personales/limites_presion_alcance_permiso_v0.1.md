@@ -1,5 +1,7 @@
 # Treskal — límites personales, presión y alcance del permiso v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de REQ reside en `Worldbuilding/Sistemas/Nimroel Core/03_Actividad_y_tiempo/peticiones_consentimiento_limites_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — UN SÍ TIENE ALCANCE Y UN NO SIGUE SIENDO NO**

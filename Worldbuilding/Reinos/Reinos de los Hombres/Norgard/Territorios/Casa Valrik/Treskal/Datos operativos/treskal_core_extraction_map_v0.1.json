@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_core_extraction_map",
-  "version": "0.8",
+  "version": "0.9",
   "status": "partially_executed",
   "sourceAuthorityUntilMigration": "Per-system authority: migrated namespaces use Nimroel Core; remaining namespaces use Treskal current contracts",
   "targetInheritance": [
@@ -212,6 +212,18 @@
       ],
       "coreManifest": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_emp_agen_wait_v0.1.md"
+    },
+    "batchC2": {
+      "status": "ready_for_regression",
+      "migratedNamespaces": [
+        "RES",
+        "MOVE",
+        "APR",
+        "FAV",
+        "REQ"
+      ],
+      "coreManifest": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
+      "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_res_move_apr_fav_req_v0.1.md"
     }
   }
 }

@@ -43,5 +43,8 @@ Extracción ejecutada:
 - lote B1: PREG, CHD, AGE, KIN.
 - lote B2: DEP / CARE, CHORE / DOM, REST, NEED.
 - lote C1: EMP, AGEN, WAIT.
+- lote C2: RES / MOVE, APR, FAV, REQ.
+
+**Fase C — actividad y tiempo: COMPLETA.**
 
 Los siguientes sistemas se migrarán por lotes controlados.

@@ -1,5 +1,7 @@
 # Treskal — favores, ayuda voluntaria y memoria de reciprocidad v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de FAV reside en `Worldbuilding/Sistemas/Nimroel Core/03_Actividad_y_tiempo/favores_reciprocidad_informal_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — AYUDAR NO CREA UNA MONEDA SOCIAL**

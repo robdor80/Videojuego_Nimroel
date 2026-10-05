@@ -1,81 +1,17 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_apprenticeship_skill_transmission_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "apprenticeshipStates": {
-    "APR01": "observing",
-    "APR02": "assisted_practice",
-    "APR03": "supervised_work",
-    "APR04": "competent_routine_work",
-    "APR05": "advanced_practice",
-    "APR06": "independent_practitioner"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_apprenticeship_skill_transmission_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "APR"
+  ],
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "timeAloneDoesNotGrantCompetence": true,
-  "progressionInputs": [
-    "task_variety",
-    "useful_repetition",
-    "supervision_quality",
-    "results",
-    "corrected_errors",
-    "tool_access",
-    "materials",
-    "effective_time",
-    "individual_capacity"
-  ],
-  "apprenticeshipFields": [
-    "apprenticeship_id",
-    "learner_ref",
-    "mentor_refs",
-    "occupation_family",
-    "workplace_ref",
-    "learning_state",
-    "allowed_task_classes",
-    "supervised_task_refs",
-    "progress_evidence",
-    "start_time",
-    "end_time_if_any",
-    "interruption_reason_if_any"
-  ],
-  "mentorSkillDoesNotGuaranteeTeachingSkill": true,
-  "apprenticeCanContributeRealProduction": true,
-  "apprenticeNotAutomaticallyFullWorker": true,
-  "allowedTasksDependOnLearningState": true,
-  "dangerousTasksRespectHazardsToolsAndSupervision": true,
-  "toolPossessionDoesNotProveSkill": true,
-  "familyTradeTransmissionOptionalNotAutomatic": true,
-  "apprenticeshipCanOccurOutsideFamily": true,
-  "visitorApprenticeshipSupported": true,
-  "changeOfMentorPreservesLearning": true,
-  "interruptionDoesNotResetProgress": true,
-  "independentPractitionerDoesNotEqualExceptionalMaster": true,
-  "universalExamOrCertificationAssumed": false,
-  "recognitionMayComeFrom": [
-    "mentor",
-    "clients",
-    "peers",
-    "results"
-  ],
-  "tacitKnowledgeMayRequireObservationAndPractice": true,
-  "aiCannotTeachCompleteComplexCraftInstantlyByDialogue": true,
-  "progressCanBeDomainSpecificRatherThanSingleBar": true,
-  "teachingConsumesMentorAttention": true,
-  "commissionsMayUseApprenticeOnlyWithinAllowedScope": true,
-  "reputationScopesRemainDistinct": [
-    "learner",
-    "mentor",
-    "business"
-  ],
-  "lodPersistentFields": [
-    "learning_state",
-    "mentor_refs",
-    "occupation_family",
-    "recent_training_opportunity",
-    "progress_evidence"
-  ],
-  "externalDependencies": {
-    "exactCharacterSkillModel": "future_Nimroel_skill_system",
-    "formalGuildsIfAny": "future_Norgard_professional_institutions",
-    "legalApprenticeshipAgeOrContract": "future_Norgard_labor_and_family_law"
-  }
+  "note": "Treskal inherits Nimroel Core apprenticeship and skill transmission semantics without local exceptions."
 }

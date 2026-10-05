@@ -92,6 +92,19 @@ Estado:
 
 **MIGRATION_BATCH_C1_READY_FOR_REGRESSION**
 
+### Lote C2 migrado
+
+- RES / MOVE — residencia, hogar y mudanzas;
+- APR — aprendizaje de oficio;
+- FAV — favores y reciprocidad informal;
+- REQ — peticiones, consentimiento y límites personales.
+
+Estado:
+
+**MIGRATION_BATCH_C2_READY_FOR_REGRESSION**
+
+Fase C queda completamente extraída al Core.
+
 ---
 
 ## Objetivo

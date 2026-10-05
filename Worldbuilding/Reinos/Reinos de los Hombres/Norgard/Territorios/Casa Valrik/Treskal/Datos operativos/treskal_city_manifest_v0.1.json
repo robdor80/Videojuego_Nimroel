@@ -449,6 +449,35 @@
         ],
         "localContract": "Datos operativos/treskal_waiting_service_capacity_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "residencyHouseholdMobility": {
+        "namespaces": [
+          "RES",
+          "MOVE"
+        ],
+        "localContract": "Datos operativos/treskal_residency_household_mobility_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "apprenticeshipSkillTransmission": {
+        "namespaces": [
+          "APR"
+        ],
+        "localContract": "Datos operativos/treskal_apprenticeship_skill_transmission_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "favorsReciprocityInformalDebt": {
+        "namespaces": [
+          "FAV"
+        ],
+        "localContract": "Datos operativos/treskal_favors_reciprocity_informal_debt_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "requestsConsentBoundaries": {
+        "namespaces": [
+          "REQ"
+        ],
+        "localContract": "Datos operativos/treskal_requests_consent_boundaries_contract_v0.1.json",
+        "localOverridesEmpty": true
       }
     }
   }

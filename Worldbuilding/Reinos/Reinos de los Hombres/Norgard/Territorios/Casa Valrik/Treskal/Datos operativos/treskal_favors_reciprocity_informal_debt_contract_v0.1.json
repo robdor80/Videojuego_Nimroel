@@ -1,83 +1,17 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_favors_reciprocity_informal_debt_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "favorStates": {
-    "FAV01": "help_offered",
-    "FAV02": "help_accepted",
-    "FAV03": "help_completed",
-    "FAV04": "gratitude_or_reciprocity_expected",
-    "FAV05": "reciprocity_partially_answered",
-    "FAV06": "socially_balanced_or_released",
-    "FAV07": "strained_by_one_sided_exchange"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_favors_reciprocity_informal_debt_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "FAV"
+  ],
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "stateModelIsNotStrictlyLinear": true,
-  "favorIsNotCurrency": true,
-  "favorIsNotAutomaticLegalDebt": true,
-  "favorIsNotAutomaticPledge": true,
-  "exactNumericalFavorScoreRequired": false,
-  "helpRequiresRealActor": true,
-  "helpRequiresAvailabilityCapacityAndAccess": true,
-  "helpMayBeRefused": true,
-  "refusalDoesNotAutomaticallyCreateHostility": true,
-  "reciprocityMayDifferInKind": true,
-  "reciprocityMayDifferInTiming": true,
-  "exactOneForOneRepaymentRequired": false,
-  "pastHelpDoesNotGrantUnlimitedFutureClaims": true,
-  "repeatedOneSidedRequestsMayReduceWillingness": true,
-  "meaningfulFavorMayAffect": [
-    "FRI",
-    "AFF",
-    "RIFT",
-    "CARE_support",
-    "HOSP_willingness",
-    "information_sharing",
-    "recommendations",
-    "future_help_willingness",
-    "personal_reputation_if_known"
-  ],
-  "favorDoesNotAutomaticallyGrant": [
-    "money",
-    "property",
-    "keys",
-    "employment",
-    "secret_information",
-    "legal_right",
-    "permanent_access",
-    "care_capacity"
-  ],
-  "favorKnowledgeIsNotGlobal": true,
-  "witnessesMayKnowOnlyObservedPortion": true,
-  "gratitudeCanExistWithoutExpectationOfReturn": true,
-  "expectationOfReturnCanExistWithoutFormalCommitment": true,
-  "explicitPromiseToRepayUsesPledgeSystem": true,
-  "commercialPaymentUsesEconomicSystems": true,
-  "careCaseHelpUsesCareSystemForActualCoverage": true,
-  "materialObjectTransferUsesOwnSystem": true,
-  "offscreenFavorRequiresRealNeedOpportunityActorAndAction": true,
-  "aiCannotInventPastFavorsDebtsOrRepayment": true,
-  "favorRecordFields": [
-    "favor_event_id",
-    "helper_ref",
-    "recipient_ref",
-    "help_type",
-    "need_or_context_ref",
-    "time_ref",
-    "location_ref_if_relevant",
-    "resource_or_action_refs_if_any",
-    "witness_refs_if_any",
-    "recipient_interpretation",
-    "helper_interpretation",
-    "result_state"
-  ],
-  "reciprocityRecordFields": [
-    "reciprocity_event_id",
-    "related_favor_refs",
-    "actor_ref",
-    "recipient_ref",
-    "action_ref",
-    "time_ref",
-    "interpretation_delta"
-  ]
+  "note": "Treskal inherits Nimroel Core favors and informal reciprocity semantics without local exceptions."
 }

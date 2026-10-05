@@ -1,5 +1,7 @@
 # Treskal — práctica, competencia y transmisión de especialidad v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de APR reside en `Worldbuilding/Sistemas/Nimroel Core/03_Actividad_y_tiempo/aprendizaje_oficio_transmision_habilidad_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE SIMULACIÓN APROBADO**
