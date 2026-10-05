@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_funeral_mourning_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "norgard_realm_defaults",
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
+  "canonicalSources": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/costumbres_funerarias.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/luto_y_duelo.md"
+  ],
+  "rules": {
+    "funeral": {
+      "cremationInFuneralPyre": true,
+      "culturalNotReligious": true,
+      "religiousFuneralOfficeAssumed": false,
+      "burialCemeteryAsNormalPractice": false,
+      "nobilityAndCrownShareSameBodyDispositionPrinciple": true
+    },
+    "remainsReturn": {
+      "returnToLifeLinkedTerritory": true,
+      "exactDestinationRealmWideFixed": false,
+      "localVariationAllowed": true
+    },
+    "formalMourning": {
+      "durationDays": 3,
+      "startsWhenDeathKnownCertainAndAcceptedByResponsibleCircle": true,
+      "delayedNewsDoesNotRetroactivelyConsumeDays": true,
+      "structure": {
+        "day1": "withdrawal_and_immediate_arrangements",
+        "day2": "companionship_memory_and_preparation",
+        "day3": "farewell_and_normally_cremation"
+      },
+      "cremationDelayAutomaticallyExtendsMourning": false,
+      "ashesReturnRequiredBeforeMourningEnds": false
+    },
+    "personalGrief": {
+      "fixedDuration": false,
+      "persistsIndependentlyFromFormalMourning": true
+    }
+  },
+  "explicitlyUndefinedAtRealmLevel": [
+    "mandatory_mourning_color",
+    "mandatory_mourning_clothing",
+    "religious_rite",
+    "mandatory_funeral_speech",
+    "mandatory_funeral_song",
+    "exact_pyres_location",
+    "single_ashes_destination",
+    "royal_funeral_exact_protocol"
+  ],
+  "localVariationExamples": [
+    "family_land",
+    "personally_linked_territory",
+    "communal_return_ground",
+    "approved_local_environmental_variant"
+  ],
+  "compatibility": {
+    "saveMigrationRequired": false,
+    "semanticsPreserved": true,
+    "treskalExistingMortAndAshIdsUntouched": true
+  }
+}

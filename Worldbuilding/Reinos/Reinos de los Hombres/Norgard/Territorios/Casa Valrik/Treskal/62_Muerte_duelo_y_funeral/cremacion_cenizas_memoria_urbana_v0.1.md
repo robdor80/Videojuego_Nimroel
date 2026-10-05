@@ -1,3 +1,6 @@
+> **AUTORIDAD CULTURAL ACTUALIZADA — E1**  
+> Las reglas compartidas de Norgard sobre cremación, retorno territorial y luto formal de tres jornadas se heredan de `Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_funeral_mourning_default_v0.1.json`. Este documento conserva únicamente su diseño local, world state o aplicación específica de Treskal. Los valores repetidos se consideran derivados, no una segunda autoridad.
+
 # Treskal — cremación, cenizas y memoria urbana v0.1
 
 ## Estado

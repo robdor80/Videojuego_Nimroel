@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — EXTRACCIÓN CONTROLADA DESDE CANON YA APROBADO**
+**CAPA DE DEFAULTS DEL REINO — E1 ACTIVO**
 
 ## Objetivo
 
@@ -56,3 +56,25 @@ Casa Valrik, no Norgard:
 ## Principio final
 
 **Norgard Defaults no rellena huecos: hereda canon demostrado y deja lo demás pendiente.**
+
+
+## Defaults activos
+
+### E1 — funeral y luto
+
+Activo a nivel Reino:
+
+- cremación en pira;
+- retorno territorial de los restos;
+- luto formal de tres jornadas;
+- duelo personal sin duración fija;
+- ausencia de color, vestimenta o rito religioso universal.
+
+Contrato operativo:
+
+`Datos operativos/norgard_funeral_mourning_default_v0.1.json`
+
+Siguiente orden auditado:
+
+- E2 — monopolio de acuñación, sólo alcance ya canonizado;
+- E3 — convención toponímica.

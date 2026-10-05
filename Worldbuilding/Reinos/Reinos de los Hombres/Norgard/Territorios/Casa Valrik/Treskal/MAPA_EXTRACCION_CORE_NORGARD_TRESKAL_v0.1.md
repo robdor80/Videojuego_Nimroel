@@ -189,6 +189,27 @@ Estado:
 
 **TODOS LOS NAMESPACES DE ALTA CONFIANZA PARA NIMROEL CORE HAN SIDO EXTRAÍDOS.**
 
+### Fase E1 — funeral y luto de Norgard
+
+Extraído como default activo de Reino:
+
+- cremación en pira;
+- retorno de restos al territorio;
+- luto formal de tres jornadas;
+- duelo personal sin duración fija;
+- prohibición de inventar rito religioso, color o vestimenta universal.
+
+Treskal conserva como local:
+
+- piras comunales periféricas;
+- terreno comunal de retorno;
+- variante marítima opcional ligada al Mar de Suthiros;
+- IDs MORT / ASH y su world state actual.
+
+Estado:
+
+**NORGARD_DEFAULT_E1_READY_FOR_REGRESSION**
+
 ### Fase E0 — auditoría de Norgard Defaults
 
 Creada la capa `Worldbuilding/Sistemas/Norgard Defaults/` y auditados los candidatos culturales.

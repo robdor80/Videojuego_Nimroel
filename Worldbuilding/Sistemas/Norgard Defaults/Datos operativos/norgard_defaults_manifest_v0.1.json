@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_defaults_manifest",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_realm_defaults_manifest",
   "authorityScope": "norgard_realm_defaults",
   "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
@@ -12,9 +12,11 @@
     "pendingCanonCannotBecomeActiveDefault": true,
     "houseSpecificRulesRemainBelowRealm": true
   },
-  "operationalFiles": {},
+  "operationalFiles": {
+    "funeralMourning": "Datos operativos/norgard_funeral_mourning_default_v0.1.json"
+  },
   "readyCandidates": {
-    "funeralMourning": "ready",
+    "funeralMourning": "extracted_active",
     "crownMintingAuthority": "ready_partial",
     "toponymicConvention": "ready"
   },
@@ -35,5 +37,12 @@
     "official_calendar_detail",
     "shared_material_culture"
   ],
-  "sourceAudit": "AUDITORIA_PREPARACION_DEFAULTS_NORGARD_v0.1.md"
+  "sourceAudit": "AUDITORIA_PREPARACION_DEFAULTS_NORGARD_v0.1.md",
+  "executionProgress": {
+    "E1": {
+      "status": "active_and_ready_for_regression",
+      "default": "Datos operativos/norgard_funeral_mourning_default_v0.1.json",
+      "regression": "Validacion/regresion_e1_funeral_luto_norgard_v0.1.md"
+    }
+  }
 }

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_death_mourning_funeral_contract",
-  "version": "0.1",
-  "status": "active_canon_contract",
+  "version": "0.2",
+  "status": "active_local_contract_inheriting_norgard_default",
   "religiousFuneralElementsForbidden": true,
   "burialCemeteryAsNormalNorgardPracticeForbidden": true,
   "cremationMandatoryNorgardTradition": true,
@@ -82,5 +82,58 @@
   "ashesReturnMayOccurAfterFormalMourningEnds": true,
   "universalMourningColorDefined": false,
   "closeRelationshipControlsRoutineImpact": true,
-  "nobilityAndCrownUseSameThreeDayDuration": true
+  "nobilityAndCrownUseSameThreeDayDuration": true,
+  "inheritsRealmDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_funeral_mourning_default_v0.1.json",
+  "realmAuthority": {
+    "cremationTradition": "inherited",
+    "territorialReturnPrinciple": "inherited",
+    "formalMourningThreeDays": "inherited",
+    "griefDurationUnfixed": "inherited",
+    "religiousFuneralElementsForbidden": "inherited"
+  },
+  "compatibilityMirrorOnly": [
+    "religiousFuneralElementsForbidden",
+    "burialCemeteryAsNormalNorgardPracticeForbidden",
+    "cremationMandatoryNorgardTradition",
+    "universalMourningDurationDefined",
+    "formalMourningDurationDays",
+    "formalMourningStructure",
+    "personalGriefDurationFixed",
+    "formalMourningStartsWhenDeathIsKnownAndAcceptedByCloseCircle",
+    "delayedNewsDoesNotRetroactivelyConsumeMourningDays",
+    "cremationNormallyOccursOnThirdMourningDay",
+    "cremationDelayDoesNotAutomaticallyExtendFormalMourning",
+    "ashesReturnMayOccurAfterFormalMourningEnds",
+    "universalMourningColorDefined",
+    "nobilityAndCrownUseSameThreeDayDuration"
+  ],
+  "localOverrides": {
+    "pyreSites": "communal_peripheral_sites_outside_dense_urban_fabric",
+    "communalReturnGround": "ASH03",
+    "seaReturn": {
+      "destinationId": "ASH04",
+      "destination": "Mar_de_Suthiros",
+      "optional": true,
+      "requiresClearLifeConnection": true
+    }
+  },
+  "compatibility": {
+    "stableIdsPreserved": [
+      "MORT01",
+      "MORT02",
+      "MORT03",
+      "MORT04",
+      "MORT05",
+      "MORT06",
+      "MORT07",
+      "MORT08",
+      "ASH01",
+      "ASH02",
+      "ASH03",
+      "ASH04",
+      "ASH05"
+    ],
+    "saveMigrationRequired": false,
+    "realmMirrorsAreNonAuthoritative": true
+  }
 }

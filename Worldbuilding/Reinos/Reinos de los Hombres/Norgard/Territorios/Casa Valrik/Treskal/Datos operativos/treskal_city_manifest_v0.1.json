@@ -605,5 +605,17 @@
         "localOverridesEmpty": false
       }
     }
+  },
+  "realmDefaultsInheritance": {
+    "manifest": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_defaults_manifest_v0.1.json",
+    "inheritedSystems": {
+      "funeralMourning": {
+        "realmDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_funeral_mourning_default_v0.1.json",
+        "localContract": "Datos operativos/treskal_death_mourning_funeral_contract_v0.1.json",
+        "localOverridesPresent": true,
+        "stableIdsUnchanged": true,
+        "saveMigrationRequired": false
+      }
+    }
   }
 }

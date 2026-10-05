@@ -2,7 +2,7 @@
 
 ## Estado
 
-**AUDITORÍA EJECUTADA — EXTRAER SÓLO CANON REALMENTE NORGARDIANO**
+**AUDITORÍA EJECUTADA — E1 EXTRAÍDO; E2/E3 PENDIENTES**
 
 ## Objetivo
 
@@ -164,3 +164,30 @@ Cada futura extracción necesita separar:
 ## Regla final
 
 **Una regla entra en Norgard Defaults porque el canon dice que pertenece a Norgard, no porque Treskal la utilice.**
+
+
+---
+
+## 6. Ejecución E1
+
+E1 queda extraído como default activo del Reino:
+
+- cremación en pira como tradición común;
+- retorno de restos al territorio;
+- luto formal de tres jornadas;
+- separación entre luto formal y duelo personal;
+- ausencia de rito, vestimenta o color religioso/universal.
+
+Contrato:
+
+`Datos operativos/norgard_funeral_mourning_default_v0.1.json`
+
+Regresión:
+
+`Validacion/regresion_e1_funeral_luto_norgard_v0.1.md`
+
+Treskal conserva únicamente sus particularidades locales de emplazamiento, terreno comunal y variante marítima.
+
+Estado:
+
+**NORGARD_DEFAULT_E1_READY_FOR_REGRESSION**
