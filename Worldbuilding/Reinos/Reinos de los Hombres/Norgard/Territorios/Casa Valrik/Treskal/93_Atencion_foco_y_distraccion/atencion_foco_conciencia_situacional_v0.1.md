@@ -1,5 +1,8 @@
 # Treskal — atención, foco y conciencia situacional v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de ATTN reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/atencion_y_foco_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE PERCEPCIÓN/NPC APROBADO — PERCEPTIBLE NO SIGNIFICA NECESARIAMENTE NOTADO**

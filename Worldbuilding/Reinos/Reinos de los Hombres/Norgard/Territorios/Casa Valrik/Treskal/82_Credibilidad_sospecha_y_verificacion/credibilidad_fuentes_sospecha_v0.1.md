@@ -1,5 +1,8 @@
 # Treskal — credibilidad, fuentes y sospecha v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de CRED reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/credibilidad_y_verificacion_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — CREER NO ES SABER**

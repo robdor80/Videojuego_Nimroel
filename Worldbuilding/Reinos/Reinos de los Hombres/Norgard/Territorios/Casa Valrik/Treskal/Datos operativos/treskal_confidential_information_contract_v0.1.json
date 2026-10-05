@@ -1,59 +1,17 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_confidential_information_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "confidentialityStates": {
-    "CONF01": "private_undisclosed",
-    "CONF02": "voluntarily_disclosed_to_individual",
-    "CONF03": "trusted_limited_sharing",
-    "CONF04": "authorized_limited_circle",
-    "CONF05": "unauthorized_disclosure",
-    "CONF06": "confidentiality_compromised",
-    "CONF07": "no_longer_private"
-  },
-  "stateDoesNotDefineTruth": true,
-  "knowledgeAndDisclosurePermissionAreSeparate": true,
-  "confidantStatusDoesNotGrantAutomaticAccess": true,
-  "disclosureCanBeVoluntary": true,
-  "disclosureCanBeRefused": true,
-  "disclosureCanBePartial": true,
-  "disclosureCanBeConditional": true,
-  "tellingOnePersonDoesNotAuthorizeOnwardSharing": true,
-  "authorizedCircleMayBeExplicitOrContextual": true,
-  "unauthorizedDisclosureRequiresActualTransmission": true,
-  "eavesdroppingCanCreateKnowledgeWithoutAuthorization": true,
-  "accidentalExposureCanCreateKnowledgeWithoutAuthorization": true,
-  "breachDoesNotAutomaticallyRevealToEntireCity": true,
-  "breachKnowledgeStillUsesK_CONV_HEAR_MSG": true,
-  "promiseToKeepConfidenceMayCreatePledgeIfThresholdMet": true,
-  "historyPersistsAfterPublicExposure": true,
-  "aiCanUseConfidentialInformationOnlyIfNpcKnowsIt": true,
-  "aiCannotRevealConfidentialInformationSolelyBecauseItExistsInWorldState": true,
-  "aiCannotInferDisclosurePermissionFromFriendshipAlone": true,
-  "recordFields": [
-    "confidential_info_id",
-    "subject_fact_ref_or_content_ref",
-    "originator_ref_if_any",
-    "sensitivity_context",
-    "current_state",
-    "known_holder_refs",
-    "authorized_recipient_refs_if_any",
-    "authorized_role_refs_if_any",
-    "disclosure_conditions_if_any",
-    "breach_event_refs_if_any",
-    "last_exposure_update"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_confidential_information_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "CONF"
   ],
-  "disclosureEventFields": [
-    "disclosure_event_id",
-    "confidential_info_ref",
-    "speaker_ref",
-    "recipient_refs",
-    "time_ref",
-    "location_ref",
-    "authorized_state",
-    "partial_or_full",
-    "witness_refs_if_any",
-    "knowledge_delta_refs"
-  ]
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
+  },
+  "note": "Treskal inherits Nimroel Core confidentiality semantics without local exceptions."
 }

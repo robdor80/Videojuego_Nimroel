@@ -33,6 +33,19 @@ Estado:
 
 **MIGRATION_BATCH_A2_READY_FOR_REGRESSION**
 
+### Lote A3 migrado
+
+- STAT — integridad de declaraciones;
+- CRED — credibilidad y verificación;
+- CONF — confidencialidad;
+- DIAL — dinámica de conversación;
+- ATTN — atención y foco;
+- EXP — expectativas y revisión.
+
+Estado:
+
+**MIGRATION_BATCH_A3_READY_FOR_REGRESSION**
+
 ---
 
 ## Objetivo
@@ -310,9 +323,12 @@ Primero extraer:
 - CONF;
 - DIAL;
 - ATTN;
-- EXP.
+- EXP;
+- STRS;
+- VAL;
+- SELF.
 
-Tienen poca dependencia de geometría local y máxima reutilización.
+K se extraerá en un lote específico tras separar conocimiento de reputación. Estos sistemas tienen poca dependencia de geometría local y máxima reutilización.
 
 ## Fase B — Ciclo vital y hogar
 

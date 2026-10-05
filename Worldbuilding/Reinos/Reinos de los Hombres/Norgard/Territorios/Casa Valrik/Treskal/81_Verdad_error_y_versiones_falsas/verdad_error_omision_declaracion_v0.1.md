@@ -1,5 +1,8 @@
 # Treskal — verdad, error, omisión y declaración v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de STAT reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/integridad_declaraciones_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE DIÁLOGO APROBADO — LO DICHO NO REESCRIBE LA VERDAD**

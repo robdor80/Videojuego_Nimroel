@@ -19,7 +19,13 @@
     "personalGoalsIntentions": "Datos operativos/nimroel_personal_goals_intentions_contract_v0.1.json",
     "decisionDeliberation": "Datos operativos/nimroel_decision_deliberation_contract_v0.1.json",
     "interpersonalTrust": "Datos operativos/nimroel_interpersonal_trust_contract_v0.1.json",
-    "personalViewsAttitudes": "Datos operativos/nimroel_personal_views_attitudes_contract_v0.1.json"
+    "personalViewsAttitudes": "Datos operativos/nimroel_personal_views_attitudes_contract_v0.1.json",
+    "statementIntegrity": "Datos operativos/nimroel_statement_integrity_contract_v0.1.json",
+    "credibilityVerification": "Datos operativos/nimroel_credibility_verification_contract_v0.1.json",
+    "confidentialInformation": "Datos operativos/nimroel_confidential_information_contract_v0.1.json",
+    "dialogueDynamics": "Datos operativos/nimroel_dialogue_dynamics_contract_v0.1.json",
+    "attentionFocus": "Datos operativos/nimroel_attention_focus_contract_v0.1.json",
+    "expectationRevision": "Datos operativos/nimroel_expectation_revision_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -29,7 +35,13 @@
     "GOAL": "personal_goal_state",
     "DEC": "decision_process_state",
     "TRUST": "interpersonal_trust_state",
-    "VIEW": "personal_view_state"
+    "VIEW": "personal_view_state",
+    "STAT": "statement_integrity_state",
+    "CRED": "claim_credibility_state",
+    "CONF": "confidential_information_state",
+    "DIAL": "dialogue_state",
+    "ATTN": "attention_state",
+    "EXP": "expectation_state"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",

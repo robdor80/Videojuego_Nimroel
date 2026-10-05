@@ -15,6 +15,12 @@ Treskal continúa siendo el prototipo histórico, pero los sistemas marcados aqu
 | Decisión | DEC | activo | override de compatibilidad |
 | Confianza | TRUST | activo | override de compatibilidad |
 | Opiniones | VIEW | activo | override de compatibilidad |
+| Integridad de declaraciones | STAT | activo | override de compatibilidad |
+| Credibilidad / verificación | CRED | activo | override de compatibilidad |
+| Confidencialidad | CONF | activo | override de compatibilidad |
+| Dinámica de conversación | DIAL | activo | override de compatibilidad |
+| Atención / foco | ATTN | activo | override de compatibilidad |
+| Expectativas | EXP | activo | override de compatibilidad |
 
 ## Compatibilidad
 
@@ -28,9 +34,8 @@ Para cada sistema migrado:
 
 ## Siguiente lote previsto
 
-- STAT;
-- CRED;
-- CONF;
-- DIAL;
-- ATTN;
-- EXP.
+- STRS;
+- VAL;
+- SELF.
+
+K queda para un lote específico porque su autoridad actual está mezclada con información y reputación y debe separarse sin duplicar semántica.

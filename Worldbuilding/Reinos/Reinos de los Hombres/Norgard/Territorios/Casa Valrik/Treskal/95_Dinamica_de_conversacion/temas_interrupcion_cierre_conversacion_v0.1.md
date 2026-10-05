@@ -1,5 +1,8 @@
 # Treskal — temas, interrupción y cierre de conversación v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de DIAL reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/dinamica_de_conversacion_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — UNA CONVERSACIÓN PUEDE TERMINAR SIN QUE EL JUGADOR LO DECIDA**

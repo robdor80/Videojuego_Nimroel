@@ -1,5 +1,8 @@
 # Treskal — conservación, filtración y ruptura de confidencias v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de CONF reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/confidencialidad_y_divulgacion_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — UN SECRETO SOLO SE FILTRA SI ALGUIEN LO EXPONE**

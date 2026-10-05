@@ -1,5 +1,8 @@
 # Treskal — dinámica de conversación, disponibilidad y continuidad v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de DIAL reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/dinamica_de_conversacion_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — HABLAR CON UN NPC NO DETIENE SU VIDA**

@@ -1,5 +1,8 @@
 # Treskal — expectativas, anticipación y resultados esperados v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de EXP reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/expectativas_y_revision_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
+
 ## Estado
 
 **DISEÑO DE NPC APROBADO — ESPERAR ALGO NO SIGNIFICA SABER QUE OCURRIRÁ**

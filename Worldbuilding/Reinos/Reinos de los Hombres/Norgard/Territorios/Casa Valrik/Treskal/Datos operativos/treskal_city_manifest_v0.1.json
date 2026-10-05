@@ -307,6 +307,48 @@
         ],
         "localContract": "Datos operativos/treskal_personal_views_attitudes_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "statementIntegrity": {
+        "namespaces": [
+          "STAT"
+        ],
+        "localContract": "Datos operativos/treskal_statement_integrity_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "credibilityVerification": {
+        "namespaces": [
+          "CRED"
+        ],
+        "localContract": "Datos operativos/treskal_credibility_verification_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "confidentialInformation": {
+        "namespaces": [
+          "CONF"
+        ],
+        "localContract": "Datos operativos/treskal_confidential_information_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "dialogueDynamics": {
+        "namespaces": [
+          "DIAL"
+        ],
+        "localContract": "Datos operativos/treskal_dialogue_dynamics_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "attentionFocus": {
+        "namespaces": [
+          "ATTN"
+        ],
+        "localContract": "Datos operativos/treskal_attention_focus_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "expectationRevision": {
+        "namespaces": [
+          "EXP"
+        ],
+        "localContract": "Datos operativos/treskal_expectation_revision_contract_v0.1.json",
+        "localOverridesEmpty": true
       }
     }
   }

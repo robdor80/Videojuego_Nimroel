@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_attention_focus_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "appliesTo": "persistent_actor_attention",
+  "sourcePrototype": "Treskal layer 93",
+  "stableIdNamespace": {
+    "ATTN": "attention_state"
+  },
+  "attentionStates": {
+    "ATTN01": "broad_awareness",
+    "ATTN02": "task_focused",
+    "ATTN03": "person_or_conversation_focused",
+    "ATTN04": "vigilant_scan",
+    "ATTN05": "divided_attention",
+    "ATTN06": "distracted",
+    "ATTN07": "overloaded",
+    "ATTN08": "attention_shift"
+  },
+  "perceptibleDoesNotAlwaysMeanNoticed": true,
+  "physicalPerceptionLimitsRemainAuthoritative": true,
+  "attentionCannotRevealPhysicallyUnavailableSignal": true,
+  "notEveryRoutineAttentionChangeRequiresPersistence": true,
+  "attentionRelevantFor": [
+    "testimony",
+    "stealth",
+    "conversation",
+    "delicate_work",
+    "danger",
+    "investigation",
+    "events",
+    "memory"
+  ],
+  "taskFocusMayReducePeripheralProcessing": true,
+  "vigilanceMayImproveDetectionOnlyWithinPhysicalLimits": true,
+  "dividedAttentionMayReduceDetail": true,
+  "distractionRequiresCause": true,
+  "overloadRequiresMultipleOrIntenseDemands": true,
+  "personalRelevanceMayAttractAttention": true,
+  "salienceDoesNotOverrideVisibilityOrAudibility": true,
+  "attentionMayAffectMemoryFormation": true,
+  "attentionDoesNotReplacePerceptionRoll": true,
+  "hearingSystemRemainsAuthorityForAudibilityAndContent": true,
+  "attentionMayAffectWhetherAudibleContentIsProcessed": true,
+  "emotionMoodAndStrainMayInfluenceAttention": true,
+  "experienceMayImproveRecognitionOfRelevantSignals": true,
+  "witnessKnowledgeRequiresPerceptionAttentionAndMemoryPath": true,
+  "lodResolvesAttentionOnlyWhenConsequential": true,
+  "aiCannotRetroactivelyNoticeSignalForPlotConvenience": true,
+  "attentionRecordFields": [
+    "npc_ref",
+    "attention_state",
+    "focus_ref_if_any",
+    "cause_refs_if_any",
+    "salient_signal_refs_if_any",
+    "start_time",
+    "last_update_time"
+  ]
+}
