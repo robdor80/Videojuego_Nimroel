@@ -11,6 +11,10 @@ Treskal continúa siendo el prototipo histórico, pero los sistemas marcados aqu
 | Memoria | MEM | activo | override de compatibilidad |
 | Personalidad | PERS | activo | override de compatibilidad |
 | Emoción / ánimo | EMO / MOOD | activo | override de compatibilidad |
+| Objetivos | GOAL | activo | override de compatibilidad |
+| Decisión | DEC | activo | override de compatibilidad |
+| Confianza | TRUST | activo | override de compatibilidad |
+| Opiniones | VIEW | activo | override de compatibilidad |
 
 ## Compatibilidad
 
@@ -24,10 +28,6 @@ Para cada sistema migrado:
 
 ## Siguiente lote previsto
 
-- GOAL;
-- DEC;
-- TRUST;
-- VIEW;
 - STAT;
 - CRED;
 - CONF;

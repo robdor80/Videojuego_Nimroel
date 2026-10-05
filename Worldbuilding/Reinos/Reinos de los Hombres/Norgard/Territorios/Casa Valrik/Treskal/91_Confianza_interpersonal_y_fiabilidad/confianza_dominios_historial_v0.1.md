@@ -1,5 +1,7 @@
 # Treskal — confianza interpersonal, dominios e historial v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de TRUST reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/confianza_interpersonal_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — CONFIAR EN ALGUIEN NO SIGNIFICA CONFIAR EN TODO**

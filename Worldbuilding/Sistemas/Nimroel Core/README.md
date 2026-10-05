@@ -34,10 +34,9 @@ No se realiza copia activa permanente.
 
 ## Fase actual
 
-Primera extracción ejecutada:
+Extracción ejecutada:
 
-- MEM — memoria;
-- PERS — personalidad;
-- EMO / MOOD — emoción y estado de ánimo.
+- lote A1: MEM, PERS, EMO / MOOD;
+- lote A2: GOAL, DEC, TRUST, VIEW.
 
 Los siguientes sistemas se migrarán por lotes controlados.

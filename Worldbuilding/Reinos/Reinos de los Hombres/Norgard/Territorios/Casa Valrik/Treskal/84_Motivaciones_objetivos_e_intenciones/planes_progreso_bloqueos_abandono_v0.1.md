@@ -1,5 +1,7 @@
 # Treskal — planes, progreso, bloqueo y abandono v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de GOAL reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/objetivos_e_intenciones_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — UN PLAN SOLO AVANZA SI ALGO OCURRE**

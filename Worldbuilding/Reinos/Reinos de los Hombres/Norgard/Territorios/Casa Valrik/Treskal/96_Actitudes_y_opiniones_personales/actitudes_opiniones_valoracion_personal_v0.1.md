@@ -1,5 +1,7 @@
 # Treskal — actitudes, opiniones y valoración personal v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de VIEW reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/opiniones_y_actitudes_personales_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — UNA OPINIÓN ES SUBJETIVA, NO UNA PROPIEDAD DEL OBJETO**

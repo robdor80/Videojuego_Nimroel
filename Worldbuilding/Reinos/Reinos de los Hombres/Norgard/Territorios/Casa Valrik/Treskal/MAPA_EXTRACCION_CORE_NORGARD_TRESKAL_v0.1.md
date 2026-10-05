@@ -22,6 +22,17 @@ Estado del lote:
 
 **MIGRATION_BATCH_A1_READY_FOR_REGRESSION**
 
+### Lote A2 migrado
+
+- GOAL — objetivos;
+- DEC — decisión;
+- TRUST — confianza interpersonal;
+- VIEW — opiniones y actitudes.
+
+Estado:
+
+**MIGRATION_BATCH_A2_READY_FOR_REGRESSION**
+
 ---
 
 ## Objetivo

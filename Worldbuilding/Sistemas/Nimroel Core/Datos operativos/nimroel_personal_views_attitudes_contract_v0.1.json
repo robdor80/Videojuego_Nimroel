@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_personal_views_attitudes_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "appliesTo": "persistent_actor_specific_views",
+  "sourcePrototype": "Treskal layer 96",
+  "stableIdNamespace": {
+    "VIEW": "personal_view_state"
+  },
+  "viewStates": {
+    "VIEW01": "unformed_or_neutral",
+    "VIEW02": "mildly_positive",
+    "VIEW03": "positive",
+    "VIEW04": "strongly_positive",
+    "VIEW05": "mildly_negative",
+    "VIEW06": "negative",
+    "VIEW07": "strongly_negative",
+    "VIEW08": "mixed_or_ambivalent"
+  },
+  "viewIsActorSpecific": true,
+  "viewIsNotWorldTruth": true,
+  "viewIsNotPreference": true,
+  "viewIsNotEmotion": true,
+  "viewIsNotFriendship": true,
+  "viewIsNotTrust": true,
+  "viewIsNotReputation": true,
+  "multipleDomainViewsAllowed": true,
+  "viewMayTarget": [
+    "person",
+    "place",
+    "business",
+    "institution",
+    "decision",
+    "practice",
+    "known_event"
+  ],
+  "viewMayDeriveFrom": [
+    "direct_experience",
+    "memory",
+    "knowledge",
+    "credibility",
+    "trust",
+    "values",
+    "known_reputation",
+    "relationship",
+    "observed_outcome"
+  ],
+  "firstImpressionMayBeWeakAndRevisable": true,
+  "strongViewRequiresMeaningfulBasis": true,
+  "ambivalenceIsValid": true,
+  "privateViewDoesNotPropagateAutomatically": true,
+  "expressedViewRequiresStatementOrCommunication": true,
+  "rumorMayInfluenceViewOnlyIfBelieved": true,
+  "falseRumorCorrectionRequiresKnowledgePath": true,
+  "timeAloneDoesNotRandomlyRecalculateView": true,
+  "offscreenViewChangeRequiresExperienceInformationOrEvent": true,
+  "playerDoesNotReceiveApprovalBarByDefault": true,
+  "aiMayUseViewForToneRecommendationOrDisagreement": true,
+  "aiMustNotPresentSubjectiveViewAsObjectiveFact": true,
+  "aiCannotInventPersistentViewWithoutBasis": true,
+  "viewRecordFields": [
+    "observer_ref",
+    "target_ref_or_topic_ref",
+    "domain_if_any",
+    "view_state",
+    "basis_refs",
+    "strength_context_if_any",
+    "first_formed_time",
+    "last_update_time"
+  ]
+}

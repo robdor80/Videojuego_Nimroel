@@ -1,5 +1,7 @@
 # Treskal — riesgo, incertidumbre y reconsideración v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de DEC reside en `Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/decision_deliberacion_y_riesgo_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — EL RIESGO PERCIBIDO PUEDE SER DISTINTO DEL RIESGO REAL**

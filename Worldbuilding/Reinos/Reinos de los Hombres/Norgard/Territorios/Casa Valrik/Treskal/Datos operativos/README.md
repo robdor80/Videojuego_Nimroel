@@ -85,14 +85,14 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_statement_integrity_contract_v0.1.json` — STAT01–STAT08, verdad, error, omisión y versiones falsas persistentes.
 - `treskal_credibility_verification_contract_v0.1.json` — CRED01–CRED08, credibilidad, sospecha, corroboración y verificación.
 - `treskal_emotion_mood_contract_v0.1.json` — override de compatibilidad; EMO/MOOD heredados de Nimroel Core.
-- `treskal_personal_goals_intentions_contract_v0.1.json` — GOAL01–GOAL08, objetivos personales, planificación, bloqueo y progreso causal.
-- `treskal_decision_deliberation_contract_v0.1.json` — DEC01–DEC08, deliberación, riesgo percibido, elección y reconsideración.
+- `treskal_personal_goals_intentions_contract_v0.1.json` — override de compatibilidad; GOAL heredado de Nimroel Core.
+- `treskal_decision_deliberation_contract_v0.1.json` — override de compatibilidad; DEC heredado de Nimroel Core.
 - `treskal_stress_strain_recovery_contract_v0.1.json` — STRS01–STRS07, presión acumulada, sobrecarga y recuperación causal.
 - `treskal_personality_traits_contract_v0.1.json` — override de compatibilidad; PERS heredado de Nimroel Core.
 - `treskal_memory_salience_forgetting_contract_v0.1.json` — override de compatibilidad; MEM heredado de Nimroel Core.
 - `treskal_personal_values_principles_contract_v0.1.json` — VAL01–VAL08, principios personales, conflictos y revisión de compromisos internos.
 - `treskal_self_concept_roles_contract_v0.1.json` — SELF01–SELF08, identidad personal, roles vitales y transición del autoconcepto.
-- `treskal_interpersonal_trust_contract_v0.1.json` — TRUST01–TRUST08, confianza por dominios, daño y reparación.
+- `treskal_interpersonal_trust_contract_v0.1.json` — override de compatibilidad; TRUST heredado de Nimroel Core.
 - `treskal_expectation_revision_contract_v0.1.json` — EXP01–EXP08, anticipación, incertidumbre, sorpresa y revisión de expectativas.
 - `treskal_attention_focus_contract_v0.1.json` — ATTN01–ATTN08, foco, distracción, sobrecarga y procesamiento de señales perceptibles.
 - `treskal_basic_physical_needs_contract_v0.1.json` — NEED01–NEED05, necesidades físicas cotidianas y resolución cualitativa.

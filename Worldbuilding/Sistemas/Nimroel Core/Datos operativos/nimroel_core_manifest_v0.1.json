@@ -15,13 +15,21 @@
   "operationalFiles": {
     "memorySalienceForgetting": "Datos operativos/nimroel_memory_salience_forgetting_contract_v0.1.json",
     "personalityTraits": "Datos operativos/nimroel_personality_traits_contract_v0.1.json",
-    "emotionMood": "Datos operativos/nimroel_emotion_mood_contract_v0.1.json"
+    "emotionMood": "Datos operativos/nimroel_emotion_mood_contract_v0.1.json",
+    "personalGoalsIntentions": "Datos operativos/nimroel_personal_goals_intentions_contract_v0.1.json",
+    "decisionDeliberation": "Datos operativos/nimroel_decision_deliberation_contract_v0.1.json",
+    "interpersonalTrust": "Datos operativos/nimroel_interpersonal_trust_contract_v0.1.json",
+    "personalViewsAttitudes": "Datos operativos/nimroel_personal_views_attitudes_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
     "PERS": "personality_trait_type",
     "EMO": "emotional_state_type",
-    "MOOD": "mood_state"
+    "MOOD": "mood_state",
+    "GOAL": "personal_goal_state",
+    "DEC": "decision_process_state",
+    "TRUST": "interpersonal_trust_state",
+    "VIEW": "personal_view_state"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",

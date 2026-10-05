@@ -279,6 +279,34 @@
         ],
         "localContract": "Datos operativos/treskal_emotion_mood_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "personalGoalsIntentions": {
+        "namespaces": [
+          "GOAL"
+        ],
+        "localContract": "Datos operativos/treskal_personal_goals_intentions_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "decisionDeliberation": {
+        "namespaces": [
+          "DEC"
+        ],
+        "localContract": "Datos operativos/treskal_decision_deliberation_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "interpersonalTrust": {
+        "namespaces": [
+          "TRUST"
+        ],
+        "localContract": "Datos operativos/treskal_interpersonal_trust_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "personalViewsAttitudes": {
+        "namespaces": [
+          "VIEW"
+        ],
+        "localContract": "Datos operativos/treskal_personal_views_attitudes_contract_v0.1.json",
+        "localOverridesEmpty": true
       }
     }
   }
