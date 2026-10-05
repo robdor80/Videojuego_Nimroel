@@ -1,5 +1,7 @@
 # Treskal — detección, respuesta y propagación de incendios v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada con override local explícito.** La autoridad normativa de FIRE reside en `Worldbuilding/Sistemas/Nimroel Core/04_Material_y_riesgo/incendio_propagacion_respuesta_v0.1.md`. Treskal conserva únicamente su organización concreta de respuesta y la capacidad particular de los Astilleros Reales; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO URBANO/JUGABLE APROBADO — RESPUESTA PREINDUSTRIAL AL FUEGO**

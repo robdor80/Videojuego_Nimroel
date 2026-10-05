@@ -136,6 +136,20 @@ Estado:
 
 Nota de separación: Core no universaliza la tecnología sanitaria. Treskal conserva como override su modelo sin alcantarillado moderno y su organización sanitaria preindustrial.
 
+### Lote D4 migrado
+
+- HAZ / ACC — riesgos y accidentes;
+- FIRE — incendio, propagación y respuesta;
+- ERSP — respuesta personal ante emergencias.
+
+Estado:
+
+**MIGRATION_BATCH_D4_READY_FOR_REGRESSION**
+
+**Fase D — material y riesgo: COMPLETA.**
+
+Nota de separación: la normativa/equipamiento de seguridad y la organización concreta contra incendios no se universalizan. Treskal conserva sus particularidades explícitas.
+
 ---
 
 ## Objetivo

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_fire_response_propagation_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "sourcePrototype": "Treskal layer 60",
+  "stableIdNamespace": {
+    "FIRE": "fire_state"
+  },
+  "fireStates": {
+    "FIRE01": "ignition_or_smoke",
+    "FIRE02": "localized_fire",
+    "FIRE03": "growing_fire",
+    "FIRE04": "major_fire",
+    "FIRE05": "spreading_between_structures",
+    "FIRE06": "contained",
+    "FIRE07": "extinguished",
+    "FIRE08": "aftermath"
+  },
+  "emergencyOrganizationDefinedByCore": false,
+  "ignitionRequiresCause": true,
+  "spreadInputs": [
+    "material",
+    "proximity",
+    "ventilation",
+    "stored_fuel",
+    "maintenance",
+    "wind",
+    "response",
+    "access"
+  ],
+  "detectionChannels": [
+    "smoke",
+    "flame",
+    "odor",
+    "sound",
+    "warning",
+    "direct_perception"
+  ],
+  "alarmRequiresRealDetectionOrCommunicationPath": true,
+  "waterResponseDependsOn": [
+    "source_distance",
+    "quantity",
+    "containers",
+    "access",
+    "people",
+    "continuity"
+  ],
+  "bucketChainRequiresPhysicalWaterRouteAndPeople": true,
+  "emergencyFirebreakMayCausePersistentDamage": true,
+  "evacuationPrioritizesPeople": true,
+  "animalsRequirePhysicalEvacuation": true,
+  "fireDoesNotDirectlyDuplicateBusinessStockEmploymentDamageSystems": true,
+  "rainDoesNotAutoExtinguishInteriorOrProtectedFire": true,
+  "saveLoadDoesNotResetActiveFire": true,
+  "extinguishedDoesNotEqualRecovered": true,
+  "aftermathMayAffect": [
+    "condition",
+    "tools",
+    "stock",
+    "residency",
+    "business",
+    "employment",
+    "routes",
+    "objects"
+  ],
+  "reentryRequiresSafeBuildingState": true,
+  "evacuatedObjectsPreserveOwnershipAndPhysicalLocation": true,
+  "destroyedObjectsDoNotRespawn": true,
+  "fireCauseMayRemainUnknownOrDisputed": true,
+  "majorFireMayBecomePersistentLocalMemory": true,
+  "externalDependencies": {
+    "exactFireSimulation": "future_Nimroel_fire_system",
+    "exactInjuryResolution": "future_Nimroel_health_system",
+    "institutionalEmergencyOrganization": "realm_or_local_emergency_organization"
+  }
+}

@@ -49,5 +49,8 @@ Extracción ejecutada:
 - lote D1: OWN, COND, TOOL / WS.
 - lote D2: BUILD, DOOR.
 - lote D3: WASTE / WST.
+- lote D4: HAZ / ACC, FIRE, ERSP.
+
+**Fase D — material y riesgo: COMPLETA.**
 
 Los siguientes sistemas se migrarán por lotes controlados.

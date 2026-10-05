@@ -59,9 +59,9 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_furniture_material_life_contract_v0.1.json` — mobiliario FURN01–FURN07 y materialización interior.
 - `treskal_cross_system_causality_contract_v0.1.json` — orden causal, dominios y cadenas de integración.
 - `treskal_tools_workstations_equipment_contract_v0.1.json` — override de compatibilidad; TOOL/WS heredados de Nimroel Core.
-- `treskal_work_hazards_accidents_contract_v0.1.json` — HAZ01–HAZ07, ACC01–ACC08 y respuesta a accidentes.
+- `treskal_work_hazards_accidents_contract_v0.1.json` — override local; HAZ/ACC heredados de Nimroel Core y marco tecnológico de seguridad conservado en Treskal.
 - `treskal_rest_sleep_availability_contract_v0.1.json` — estados REST01–REST07 y disponibilidad derivada.
-- `treskal_fire_response_propagation_contract_v0.1.json` — FIRE01–FIRE08, respuesta y recuperación tras incendio.
+- `treskal_fire_response_propagation_contract_v0.1.json` — override local; FIRE heredado de Nimroel Core y organización concreta de respuesta conservada en Treskal.
 - `treskal_sanitation_waste_cycle_contract_v0.1.json` — override local; WASTE/WST heredados de Nimroel Core y tecnología sanitaria concreta conservada en Treskal.
 - `treskal_death_mourning_funeral_contract_v0.1.json` — estados MORT/ASH, cremación y retorno de cenizas.
 - `treskal_conversation_privacy_eavesdropping_contract_v0.1.json` — CONV/VOICE/HEAR, privacidad y conocimiento por oyente.
@@ -99,7 +99,7 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_dialogue_dynamics_contract_v0.1.json` — DIAL01–DIAL08, disponibilidad, temas, interrupción y cierre de conversación.
 - `treskal_personal_views_attitudes_contract_v0.1.json` — VIEW01–VIEW08, actitudes y opiniones personales con base e historia propias.
 - `treskal_personal_agenda_time_commitments_contract_v0.1.json` — override de compatibilidad; AGEN heredado de Nimroel Core.
-- `treskal_emergency_personal_response_contract_v0.1.json` — ERSP01–ERSP08, respuesta individual, evacuación, ayuda y continuidad tras emergencias.
+- `treskal_emergency_personal_response_contract_v0.1.json` — override de compatibilidad; ERSP heredado de Nimroel Core.
 - `treskal_kinship_family_network_contract_v0.1.json` — KIN01–KIN07, parentesco persistente, filiación conocida y límites legales.
 - `treskal_functional_closure_audit_v0.1.json` — auditoría de cierre funcional de las capas 01–99 y trabajo pendiente por dependencias externas.
 - `treskal_core_extraction_map_v0.1.json` — mapa planificado de extracción Nimroel Core / Norgard defaults / Treskal overrides.

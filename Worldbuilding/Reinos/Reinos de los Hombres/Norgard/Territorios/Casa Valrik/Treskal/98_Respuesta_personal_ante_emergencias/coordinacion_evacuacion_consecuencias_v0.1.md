@@ -1,5 +1,7 @@
 # Treskal — coordinación, evacuación y consecuencias de emergencia v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de ERSP reside en `Worldbuilding/Sistemas/Nimroel Core/04_Material_y_riesgo/respuesta_personal_emergencias_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — SALIR DEL PELIGRO NO BORRA LO QUE OCURRIÓ**

@@ -522,6 +522,28 @@
         ],
         "localContract": "Datos operativos/treskal_sanitation_waste_cycle_contract_v0.1.json",
         "localOverridesEmpty": false
+      },
+      "workHazardsAccidents": {
+        "namespaces": [
+          "HAZ",
+          "ACC"
+        ],
+        "localContract": "Datos operativos/treskal_work_hazards_accidents_contract_v0.1.json",
+        "localOverridesEmpty": false
+      },
+      "fireResponsePropagation": {
+        "namespaces": [
+          "FIRE"
+        ],
+        "localContract": "Datos operativos/treskal_fire_response_propagation_contract_v0.1.json",
+        "localOverridesEmpty": false
+      },
+      "emergencyPersonalResponse": {
+        "namespaces": [
+          "ERSP"
+        ],
+        "localContract": "Datos operativos/treskal_emergency_personal_response_contract_v0.1.json",
+        "localOverridesEmpty": true
       }
     }
   }

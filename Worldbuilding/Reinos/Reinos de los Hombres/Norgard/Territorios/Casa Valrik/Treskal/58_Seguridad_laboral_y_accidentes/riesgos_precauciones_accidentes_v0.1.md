@@ -1,5 +1,7 @@
 # Treskal — riesgos laborales, precauciones y accidentes v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada con override local explícito.** La autoridad normativa de HAZ / ACC reside en `Worldbuilding/Sistemas/Nimroel Core/04_Material_y_riesgo/riesgos_accidentes_v0.1.md`. Treskal conserva únicamente su marco tecnológico de seguridad premoderno; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — SEGURIDAD PRÁCTICA PREINDUSTRIAL**

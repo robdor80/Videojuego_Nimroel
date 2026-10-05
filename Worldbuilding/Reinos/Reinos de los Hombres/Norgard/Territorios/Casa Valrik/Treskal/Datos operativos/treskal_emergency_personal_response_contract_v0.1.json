@@ -1,71 +1,17 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_emergency_personal_response_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "responseStates": {
-    "ERSP01": "threat_noticed",
-    "ERSP02": "orienting",
-    "ERSP03": "protective_action",
-    "ERSP04": "assisting_others",
-    "ERSP05": "warning_or_seeking_help",
-    "ERSP06": "withdrawing_or_evacuating",
-    "ERSP07": "active_emergency_response",
-    "ERSP08": "immediate_danger_passed"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_emergency_personal_response_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "ERSP"
+  ],
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "responseRequiresPerceptionOrKnowledgePath": true,
-  "hiddenThreatDoesNotTriggerOmniscientResponse": true,
-  "fearDoesNotDetermineResponseAlone": true,
-  "responseMayUse": [
-    "PERS",
-    "DEC",
-    "VAL",
-    "CARE",
-    "TRUST",
-    "ATTN",
-    "MEM",
-    "GOAL",
-    "AGEN"
-  ],
-  "helpingOthersRequiresCapacityAccessAndOpportunity": true,
-  "dependentPriorityUsesCARE": true,
-  "warningRequiresRealCommunicationChannel": true,
-  "evacuationRequiresKnownVisibleOrIndicatedRoute": true,
-  "npcDoesNotKnowOptimalEngineRouteAutomatically": true,
-  "activeResponseRequiresRelevantCapabilityOrRole": true,
-  "experienceMayImproveButDoesNotGuaranteeOutcome": true,
-  "responseDoesNotReplaceEventOwningSystem": true,
-  "evacuationMovesRealActorsThroughRealRoutes": true,
-  "postEvacuationSafetyIsNotGloballyKnown": true,
-  "institutionalCommandProtocolsNotInventedHere": true,
-  "playerWarningDoesNotGuaranteeCompliance": true,
-  "offscreenEmergencyResponseRequiresPresencePerceptionRouteCapacityAndTime": true,
-  "emergencyMayAffect": [
-    "AGEN",
-    "REST",
-    "EMP",
-    "CARE",
-    "EMO",
-    "STRS",
-    "MEM",
-    "TRUST",
-    "VIEW",
-    "EXP"
-  ],
-  "aiMayProposeResponseFromAuthorizedContext": true,
-  "aiCannotDeclareRescueExtinguishingHealingOrSafetyWithoutValidation": true,
-  "responseRecordFields": [
-    "response_id",
-    "npc_ref",
-    "response_state",
-    "threat_ref",
-    "knowledge_or_perception_refs",
-    "action_ref_if_any",
-    "route_ref_if_any",
-    "assisted_actor_refs_if_any",
-    "resource_refs_if_any",
-    "start_time",
-    "last_update_time",
-    "resolution_ref_if_any"
-  ]
+  "note": "Treskal inherits Nimroel Core personal emergency-response semantics without local exceptions."
 }

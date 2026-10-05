@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_work_hazards_accidents_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "sourcePrototype": "Treskal layer 58",
+  "stableIdNamespace": {
+    "HAZ": "hazard_type",
+    "ACC": "accident_state"
+  },
+  "hazardTypes": {
+    "HAZ01": "cutting_and_hand_tools",
+    "HAZ02": "heat_fire_burn",
+    "HAZ03": "heavy_load_crushing",
+    "HAZ04": "fall_and_height",
+    "HAZ05": "animals_and_traffic",
+    "HAZ06": "water_maritime_river",
+    "HAZ07": "structure_and_construction"
+  },
+  "accidentStates": {
+    "ACC01": "hazard_detected",
+    "ACC02": "near_miss",
+    "ACC03": "minor_incident",
+    "ACC04": "serious_incident",
+    "ACC05": "critical_incident",
+    "ACC06": "stabilized",
+    "ACC07": "follow_up",
+    "ACC08": "closed"
+  },
+  "safetyRegulationModelDefinedByCore": false,
+  "protectiveEquipmentCatalogDefinedByCore": false,
+  "workersUsePracticalRiskKnowledge": true,
+  "accidentNotGuaranteedByHazard": true,
+  "riskInputs": [
+    "task",
+    "experience",
+    "tool_condition",
+    "maintenance",
+    "environment",
+    "weather",
+    "fatigue_if_modeled",
+    "load",
+    "space",
+    "errors",
+    "external_event"
+  ],
+  "precautionsMayInclude": [
+    "tool_maintenance",
+    "load_securing",
+    "clear_workspace",
+    "adequate_help",
+    "fire_control",
+    "fuel_separation",
+    "weather_adaptation",
+    "contextual_protective_clothing"
+  ],
+  "apprenticeRiskShouldReflectSupervisionAndCapability": true,
+  "toolDegradationMayIncreaseRiskButNotForceAccident": true,
+  "incidentFields": [
+    "incident_id",
+    "hazard_type",
+    "cause_refs",
+    "location_refs",
+    "actor_refs",
+    "tool_or_object_refs",
+    "injury_refs",
+    "damage_refs",
+    "witness_refs",
+    "state",
+    "response_refs",
+    "persistent_consequences"
+  ],
+  "physiologicalSeverityResolvedByHealthSystem": true,
+  "accidentDoesNotProveNegligence": true,
+  "accidentKnowledgeRequiresPerceptionOrCommunication": true,
+  "accidentMayAffect": [
+    "employment",
+    "business",
+    "commission",
+    "production",
+    "reputation",
+    "tools",
+    "stock",
+    "access"
+  ],
+  "damagedAssetsUseTheirOwnRepairSystems": true,
+  "replacementWorkerNotAutomatic": true,
+  "visualConsequencesPersistUntilActuallyClearedOrRepaired": true,
+  "externalDependencies": {
+    "exactInjuryResolution": "future_Nimroel_health_system",
+    "fatigueSystemIfAny": "future_Nimroel_character_needs_system",
+    "legalLiability": "realm_law_and_labor_system"
+  }
+}
