@@ -537,3 +537,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `presion_acumulada_carga_cotidiana_v0.1.md` — STRS01–STRS07, acumulación de demandas y efectos contextuales.
 - `recuperacion_apoyo_ajuste_rutina_v0.1.md` — apoyo, redistribución, descanso y recuperación sin barra universal.
+
+### 87_Personalidad_y_rasgos_estables
+
+- `personalidad_temperamento_rasgos_v0.1.md` — PERS01–PERS10, tendencias estables sin clases rígidas.
+- `expresion_contextual_evolucion_personalidad_v0.1.md` — expresión según contexto, continuidad e identidad a largo plazo.
