@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_core_extraction_map",
+  "version": "0.1",
+  "status": "planned_not_executed",
+  "sourceAuthorityUntilMigration": "Treskal current contracts",
+  "targetInheritance": [
+    "Nimroel_Core",
+    "Norgard_Defaults",
+    "Territory_or_House_Defaults_if_needed",
+    "Treskal_Overrides",
+    "Per_Save_World_State"
+  ],
+  "highConfidenceCoreNamespaces": [
+    "K","OWN","COND","DOOR","BUILD","TOOL","WS","WASTE","WST","FIRE","HAZ","ACC",
+    "EMP","RES","MOVE","REST","WAIT","AGEN","NEED","ERSP",
+    "DEP","CARE","CHORE","DOM","APR","PREG","CHD","AGE","KIN",
+    "FRI","AFF","RIFT","FAV","GIFT","REQ","TRUST","VIEW",
+    "CONF","STAT","CRED","EMO","MOOD","GOAL","DEC","STRS","PERS","MEM","VAL","SELF","EXP","ATTN","DIAL",
+    "CONV","VOICE","HEAR","MSG","ED"
+  ],
+  "highConfidenceTreskalLocalNamespaces": [
+    "T","Z","L","S","C","A","APP"
+  ],
+  "highConfidenceTreskalLocalConcepts": [
+    "urban_graph",
+    "sector_distribution",
+    "main_bridge_local_geometry",
+    "integrated_river_mouth",
+    "civil_port_layout",
+    "royal_shipyard_T08_location",
+    "citywide_woodcraft_identity",
+    "local_market_distribution",
+    "local_goods_flows",
+    "local_toponymy",
+    "urban_history",
+    "materialized_population_and_stock"
+  ],
+  "norgardDefaultCandidates": [
+    "funeral_cremation_custom",
+    "three_day_formal_mourning",
+    "cultural_weight_of_given_word",
+    "healing_tradition",
+    "family_marriage_guardianship_law",
+    "age_of_majority_and_labor_rules",
+    "property_and_inheritance_law",
+    "currency_and_economic_framework",
+    "military_and_guard_framework",
+    "royal_naval_framework",
+    "maritime_terminology",
+    "cuisine",
+    "calendar",
+    "naming_and_surname_rules",
+    "shared_material_culture"
+  ],
+  "mixedDomainsRequireManualSplit": [
+    "health",
+    "funeral",
+    "food",
+    "hospitality",
+    "maritime_culture",
+    "woodcraft_culture"
+  ],
+  "migrationOrder": [
+    "cognition_and_relationships",
+    "lifecycle_and_household",
+    "activity_and_time",
+    "material_and_risk",
+    "norgard_cultural_defaults"
+  ],
+  "migrationRules": {
+    "noDuplicateActiveAuthority": true,
+    "preserveStableIdsOrExplicitMappings": true,
+    "preserveSaveMigrationPath": true,
+    "runAiRegressionAfterEachBatch": true,
+    "runIntegrationRegressionAfterEachBatch": true,
+    "doNotMoveMixedFilesWithoutManualSplit": true
+  }
+}

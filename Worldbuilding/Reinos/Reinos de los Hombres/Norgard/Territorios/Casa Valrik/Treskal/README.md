@@ -602,3 +602,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `parentesco_persistente_red_familiar_v0.1.md` — KIN01–KIN07, parentesco separado de hogar, cuidado, amistad, pareja y confianza.
 - `filiacion_reconocimiento_limites_legales_v0.1.md` — filiación conocida, parentesco desconocido o discutido y fronteras con tutela, matrimonio, herencia y nombres.
+
+## Estado de cierre funcional
+
+- `AUDITORIA_CIERRE_FUNCIONAL_TRESKAL_v0.1.md` — la base funcional queda cerrada en la capa 99; no se crea una capa 100 por numeración.
+- `MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md` — plan de refactorización hacia Nimroel Core → Norgard Defaults → Treskal Overrides.

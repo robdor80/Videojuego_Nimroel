@@ -101,3 +101,5 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_personal_agenda_time_commitments_contract_v0.1.json` — AGEN01–AGEN09, agenda personal, conflictos temporales y reprogramación.
 - `treskal_emergency_personal_response_contract_v0.1.json` — ERSP01–ERSP08, respuesta individual, evacuación, ayuda y continuidad tras emergencias.
 - `treskal_kinship_family_network_contract_v0.1.json` — KIN01–KIN07, parentesco persistente, filiación conocida y límites legales.
+- `treskal_functional_closure_audit_v0.1.json` — auditoría de cierre funcional de las capas 01–99 y trabajo pendiente por dependencias externas.
+- `treskal_core_extraction_map_v0.1.json` — mapa planificado de extracción Nimroel Core / Norgard defaults / Treskal overrides.
