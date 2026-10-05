@@ -1,5 +1,7 @@
 # Treskal — embarazo, parto y recuperación doméstica v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada con override local explícito.** La autoridad normativa de PREG reside en `Worldbuilding/Sistemas/Nimroel Core/02_Ciclo_vital_y_hogar/embarazo_nacimiento_primera_infancia_v0.1.md`. Las particularidades de Treskal sobre lugar habitual y asistencia del parto se conservan exclusivamente en `localOverrides` del contrato local; fuera de esas excepciones prevalece el Core.
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — EVENTO VITAL PERSISTENTE, NO DECORATIVO**

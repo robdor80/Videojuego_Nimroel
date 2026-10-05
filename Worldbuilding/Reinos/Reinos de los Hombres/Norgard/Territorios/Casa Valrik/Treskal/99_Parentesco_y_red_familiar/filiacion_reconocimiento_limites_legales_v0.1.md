@@ -1,5 +1,7 @@
 # Treskal — filiación, reconocimiento y límites legales v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de KIN reside en `Worldbuilding/Sistemas/Nimroel Core/02_Ciclo_vital_y_hogar/parentesco_red_familiar_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO DE WORLD STATE APROBADO — HECHO FAMILIAR, CONOCIMIENTO Y DERECHO SON CAPAS DISTINTAS**

@@ -28,7 +28,11 @@
     "expectationRevision": "Datos operativos/nimroel_expectation_revision_contract_v0.1.json",
     "stressStrainRecovery": "Datos operativos/nimroel_stress_strain_recovery_contract_v0.1.json",
     "personalValuesPrinciples": "Datos operativos/nimroel_personal_values_principles_contract_v0.1.json",
-    "selfConceptRoles": "Datos operativos/nimroel_self_concept_roles_contract_v0.1.json"
+    "selfConceptRoles": "Datos operativos/nimroel_self_concept_roles_contract_v0.1.json",
+    "pregnancyBirthEarlyInfancy": "Datos operativos/nimroel_pregnancy_birth_early_infancy_contract_v0.1.json",
+    "childDevelopmentAutonomyLearning": "Datos operativos/nimroel_child_development_autonomy_learning_contract_v0.1.json",
+    "agingLateLifeActivity": "Datos operativos/nimroel_aging_late_life_activity_contract_v0.1.json",
+    "kinshipFamilyNetwork": "Datos operativos/nimroel_kinship_family_network_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -47,7 +51,11 @@
     "EXP": "expectation_state",
     "STRS": "stress_strain_state",
     "VAL": "personal_value_commitment_state",
-    "SELF": "self_concept_role_state"
+    "SELF": "self_concept_role_state",
+    "PREG": "pregnancy_state",
+    "CHD": "child_development_state",
+    "AGE": "late_life_activity_state",
+    "KIN": "kinship_relation_type"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",

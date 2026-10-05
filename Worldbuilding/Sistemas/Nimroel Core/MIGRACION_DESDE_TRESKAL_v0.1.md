@@ -24,6 +24,10 @@ Treskal continúa siendo el prototipo histórico, pero los sistemas marcados aqu
 | Presión / recuperación | STRS | activo | override de compatibilidad |
 | Valores personales | VAL | activo | override de compatibilidad |
 | Identidad / roles | SELF | activo | override de compatibilidad |
+| Embarazo / parto / primera infancia | PREG | activo | override local explícito |
+| Desarrollo infantil | CHD | activo | override de compatibilidad |
+| Envejecimiento / vejez activa | AGE | activo | override de compatibilidad |
+| Parentesco / red familiar | KIN | activo | override de compatibilidad |
 
 ## Compatibilidad
 
@@ -41,4 +45,9 @@ Fase cognitiva general cerrada salvo K.
 
 K queda para un lote específico porque su autoridad actual está mezclada con información y reputación y debe separarse sin duplicar semántica.
 
-Después se inicia Fase B — ciclo vital y hogar.
+Fase B iniciada:
+
+- B1 ejecutado: PREG, CHD, AGE, KIN.
+- siguiente lote: DEP / CARE, CHORE / DOM, REST, NEED.
+
+PREG mantiene únicamente las particularidades locales reales de Treskal sobre entorno y asistencia del parto; no existe doble autoridad sobre el namespace PREG.

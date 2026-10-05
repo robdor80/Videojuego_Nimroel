@@ -1,5 +1,7 @@
 # Treskal — envejecimiento, autonomía y vejez activa v0.1
 
+> **MIGRADO A NIMROEL CORE — documentación derivada.** La autoridad normativa de AGE reside en `Worldbuilding/Sistemas/Nimroel Core/02_Ciclo_vital_y_hogar/envejecimiento_vejez_actividad_v0.1.md`. Este archivo conserva explicación y ejemplos de Treskal; ante conflicto prevalece el Core.
+
 ## Estado
 
 **DISEÑO SOCIAL/JUGABLE APROBADO — SER MAYOR NO EQUIVALE A SER DEPENDIENTE**

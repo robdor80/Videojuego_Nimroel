@@ -40,5 +40,6 @@ Extracción ejecutada:
 - lote A2: GOAL, DEC, TRUST, VIEW.
 - lote A3: STAT, CRED, CONF, DIAL, ATTN, EXP.
 - lote A4: STRS, VAL, SELF.
+- lote B1: PREG, CHD, AGE, KIN.
 
 Los siguientes sistemas se migrarán por lotes controlados.

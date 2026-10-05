@@ -370,6 +370,34 @@
         ],
         "localContract": "Datos operativos/treskal_self_concept_roles_contract_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "pregnancyBirthEarlyInfancy": {
+        "namespaces": [
+          "PREG"
+        ],
+        "localContract": "Datos operativos/treskal_pregnancy_birth_early_infancy_contract_v0.1.json",
+        "localOverridesEmpty": false
+      },
+      "childDevelopmentAutonomyLearning": {
+        "namespaces": [
+          "CHD"
+        ],
+        "localContract": "Datos operativos/treskal_child_development_autonomy_learning_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "agingLateLifeActivity": {
+        "namespaces": [
+          "AGE"
+        ],
+        "localContract": "Datos operativos/treskal_aging_late_life_activity_contract_v0.1.json",
+        "localOverridesEmpty": true
+      },
+      "kinshipFamilyNetwork": {
+        "namespaces": [
+          "KIN"
+        ],
+        "localContract": "Datos operativos/treskal_kinship_family_network_contract_v0.1.json",
+        "localOverridesEmpty": true
       }
     }
   }

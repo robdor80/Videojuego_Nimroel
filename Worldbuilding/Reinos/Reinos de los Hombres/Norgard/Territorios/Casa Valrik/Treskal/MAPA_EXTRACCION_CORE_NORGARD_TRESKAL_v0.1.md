@@ -56,6 +56,19 @@ Estado:
 
 **MIGRATION_BATCH_A4_READY_FOR_REGRESSION**
 
+### Lote B1 migrado
+
+- PREG — embarazo, parto y primera infancia;
+- CHD — desarrollo infantil y autonomía;
+- AGE — envejecimiento y actividad en la vejez;
+- KIN — parentesco y red familiar.
+
+Estado:
+
+**MIGRATION_BATCH_B1_READY_FOR_REGRESSION**
+
+Nota de separación: PREG conserva en Treskal un override local explícito para el entorno habitual del parto y el modelo de asistencia de su red sanitaria. Esas particularidades no se universalizan en Core.
+
 ---
 
 ## Objetivo

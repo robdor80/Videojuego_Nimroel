@@ -1,62 +1,17 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_child_development_autonomy_learning_contract",
-  "version": "0.1",
-  "status": "active_design_contract",
-  "childDevelopmentStates": {
-    "CHD01": "early_dependence",
-    "CHD02": "mobile_dependence",
-    "CHD03": "supervised_childhood",
-    "CHD04": "growing_autonomy",
-    "CHD05": "guided_contribution",
-    "CHD06": "transition_to_youth"
+  "version": "0.2",
+  "status": "migrated_to_core_override",
+  "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_child_development_autonomy_learning_contract_v0.1.json",
+  "inheritedNamespaces": [
+    "CHD"
+  ],
+  "localOverrides": {},
+  "compatibility": {
+    "stableIdsPreserved": true,
+    "worldStateMeaningPreserved": true,
+    "saveMigrationRequired": false
   },
-  "exactNumericAgesDefined": false,
-  "developmentPreservesNpcId": true,
-  "developmentPreservesMemoryPersonalityKinship": true,
-  "careIntensityMayDecreaseButNotMonotonically": true,
-  "illnessInjuryOrDisabilityMayIncreaseCareNeeds": true,
-  "autonomyDependsOn": [
-    "development_state",
-    "health",
-    "care_network",
-    "location_risk",
-    "route_knowledge",
-    "time_of_day",
-    "current_event"
-  ],
-  "childrenDoNotUseAdultRoutineModel": true,
-  "childrenDoNotReceiveAdultWorkloadByDefault": true,
-  "householdContributionMayGrowGradually": true,
-  "dangerousTasksRequireAppropriateDevelopmentSupervisionAndContext": true,
-  "everydayLearningUsesED01": true,
-  "playRemainsValidLearningAndSocialContext": true,
-  "tradeExposureMayPrecedeFormalApprenticeship": true,
-  "apprenticeshipRequiresRealMentorCapacityAndSuitableDevelopment": true,
-  "noUniversalSchoolAttendanceAssumed": true,
-  "noUniversalLiteracyByStageAssumed": true,
-  "childKnowledgeMustHavePlausibleSource": true,
-  "childDialogueMustRespectDevelopmentAndPersonalHistory": true,
-  "peerRelationshipsPersist": true,
-  "romanceMechanicsDoNotApplyDuringChildStages": true,
-  "visualAgeProgressionMustPreserveIdentity": true,
-  "clothingAndEquipmentMayNeedReplacementWithGrowth": true,
-  "offscreenDevelopmentRequiresValidLifecycleTimeProgression": true,
-  "aiCannotAdvanceStageForNarrativeConvenience": true,
-  "developmentEventFields": [
-    "development_event_id",
-    "npc_ref",
-    "previous_child_state",
-    "new_child_state",
-    "time_ref",
-    "care_delta_if_any",
-    "routine_delta_if_any",
-    "learning_delta_if_any"
-  ],
-  "externalDependencies": {
-    "exactStageAgeThresholds": "future_Nimroel_character_lifecycle_system",
-    "physicalGrowthModel": "future_Nimroel_character_lifecycle_system",
-    "formalAgeOfMajorityAndWorkRules": "future_Norgard_law_and_family_canon",
-    "exactSkillProgression": "future_Nimroel_character_progression_system"
-  }
+  "note": "Treskal inherits Nimroel Core child development semantics without local exceptions."
 }

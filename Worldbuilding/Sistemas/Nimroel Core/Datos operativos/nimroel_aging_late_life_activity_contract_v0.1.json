@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_aging_late_life_activity_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "appliesTo": "persistent_aging_late_life_capacity_and_activity",
+  "sourcePrototype": "Treskal layer 73",
+  "stableIdNamespace": {
+    "AGE": "late_life_activity_state"
+  },
+  "lateLifeStates": {
+    "AGE01": "mature_active",
+    "AGE02": "later_life_active",
+    "AGE03": "adapted_workload",
+    "AGE04": "selective_work_and_mentoring",
+    "AGE05": "withdrawn_from_regular_work",
+    "AGE06": "care_dependent_late_life"
+  },
+  "stateModelIsNotStrictlyLinear": true,
+  "exactNumericAgeThresholdsDefined": false,
+  "exactLongevityDefined": false,
+  "ageDoesNotAutomaticallyCreateDependency": true,
+  "ageDoesNotAutomaticallyRemoveEmployment": true,
+  "ageDoesNotAutomaticallyReduceSkill": true,
+  "physicalCapacityMayChangeIndependentlyFromKnowledge": true,
+  "experienceMaySupportMentoringQualityControlAndJudgement": true,
+  "workloadAdaptationMayAffect": [
+    "hours",
+    "task_type",
+    "travel",
+    "heavy_labor",
+    "rest",
+    "supervision",
+    "mentoring"
+  ],
+  "noUniversalRetirementAge": true,
+  "noUniversalPensionSystemEstablished": true,
+  "withdrawalFromRegularWorkMayDependOn": [
+    "health",
+    "physical_capacity",
+    "household_resources",
+    "business_structure",
+    "replacement_workers",
+    "personal_choice",
+    "care_responsibilities"
+  ],
+  "dep04OnlyWhenActualAssistanceNeeded": true,
+  "olderNpcMayProvideCareToOthersWhenCapable": true,
+  "olderNpcMayRemainSociallyActive": true,
+  "businessCapacityMayChangeWhenKeyOlderWorkerReducesActivity": true,
+  "businessOwnershipDoesNotTransferAutomatically": true,
+  "inheritanceNotDefinedByThisContract": true,
+  "mentoringUsesExistingEdAndAprSystems": true,
+  "lateLifePreservesNpcIdMemoryRelationsReputationAndOwnership": true,
+  "visualAgingMustPreserveIdentity": true,
+  "deathNotTriggeredByAgeStateAlone": true,
+  "offscreenAgingRequiresValidLifecycleTimeProgression": true,
+  "aiCannotDeclareSenilityFrailtyOrDependencyFromAgeAlone": true,
+  "lateLifeEventFields": [
+    "aging_event_id",
+    "npc_ref",
+    "previous_age_state",
+    "new_age_state",
+    "time_ref",
+    "employment_delta_if_any",
+    "care_delta_if_any",
+    "mentoring_delta_if_any",
+    "health_ref_if_any"
+  ],
+  "externalDependencies": {
+    "exactAgingAndLongevityModel": "future_Nimroel_character_lifecycle_system",
+    "exactHealthDeclineMechanics": "future_Nimroel_health_system",
+    "pensionRetirementInheritanceRules": "future_Norgard_law_and_economic_institutions"
+  }
+}
