@@ -592,3 +592,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `agenda_personal_compromisos_uso_tiempo_v0.1.md` — AGEN01–AGEN09, agenda cualitativa, tiempo finito y compatibilidad entre actividades.
 - `conflictos_agenda_retrasos_reprogramacion_v0.1.md` — retrasos, reprogramación, cancelación, citas perdidas y consecuencias.
+
+### 98_Respuesta_personal_ante_emergencias
+
+- `respuesta_individual_peligro_emergencia_v0.1.md` — ERSP01–ERSP08, detección de amenaza, autoprotección, ayuda, aviso y evacuación.
+- `coordinacion_evacuacion_consecuencias_v0.1.md` — coordinación informal, rutas reales, aftermath y continuidad causal.
