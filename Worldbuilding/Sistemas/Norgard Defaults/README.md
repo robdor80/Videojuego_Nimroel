@@ -74,7 +74,19 @@ Contrato operativo:
 
 `Datos operativos/norgard_funeral_mourning_default_v0.1.json`
 
+### E2 — autoridad monetaria
+
+Activo parcialmente a nivel Reino:
+
+- monopolio exclusivo de la Corona sobre la acuñación oficial;
+- metal precioso no implica derecho de acuñar;
+- falsificación y acuñación ilícita son delitos graves;
+- sistema monetario completo permanece pendiente.
+
+Contrato operativo:
+
+`Datos operativos/norgard_crown_minting_authority_default_v0.1.json`
+
 Siguiente orden auditado:
 
-- E2 — monopolio de acuñación, sólo alcance ya canonizado;
 - E3 — convención toponímica.

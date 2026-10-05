@@ -2,7 +2,7 @@
 
 ## Estado
 
-**AUDITORÍA EJECUTADA — E1 EXTRAÍDO; E2/E3 PENDIENTES**
+**AUDITORÍA EJECUTADA — E1/E2 EXTRAÍDOS; E3 PENDIENTE**
 
 ## Objetivo
 
@@ -191,3 +191,20 @@ Treskal conserva únicamente sus particularidades locales de emplazamiento, terr
 Estado:
 
 **NORGARD_DEFAULT_E1_READY_FOR_REGRESSION**
+
+
+---
+
+## 7. Ejecución E2
+
+Extraído como default parcial activo:
+
+- monopolio exclusivo de la Corona sobre la acuñación oficial;
+- posesión o producción de metal precioso no concede derecho de acuñar;
+- falsificación y acuñación ilícita son delitos graves.
+
+Se mantienen explícitamente indefinidos moneda completa, denominaciones, precios, salarios, fiscalidad, ceca y penas concretas.
+
+Estado:
+
+**NORGARD_DEFAULT_E2_READY_FOR_REGRESSION**

@@ -210,6 +210,19 @@ Estado:
 
 **NORGARD_DEFAULT_E1_READY_FOR_REGRESSION**
 
+### Fase E2 — autoridad monetaria
+
+Extraído como default parcial activo de Reino:
+
+- solo la Corona puede acuñar moneda oficial;
+- poseer o producir oro/plata no concede derecho de acuñación;
+- falsificación y acuñación ilícita son delitos graves;
+- moneda completa, precios, salarios, impuestos, ceca y penas concretas siguen pendientes.
+
+Estado:
+
+**NORGARD_DEFAULT_E2_READY_FOR_REGRESSION**
+
 ### Fase E0 — auditoría de Norgard Defaults
 
 Creada la capa `Worldbuilding/Sistemas/Norgard Defaults/` y auditados los candidatos culturales.

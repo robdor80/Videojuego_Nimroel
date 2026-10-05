@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_crown_minting_authority_default",
+  "version": "0.1",
+  "status": "active_partial_realm_default",
+  "authorityScope": "norgard_realm_defaults",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/moneda_y_acunacion.md",
+  "rules": {
+    "officialCoinMintingAuthority": "Crown_of_Norgard_only",
+    "greatHousesMayMintOfficialCurrency": false,
+    "citiesMayMintOfficialCurrency": false,
+    "guildsMayMintOfficialCurrency": false,
+    "merchantsMayMintOfficialCurrency": false,
+    "institutionsMayMintOfficialCurrency": false,
+    "privatePersonsMayMintOfficialCurrency": false,
+    "preciousMetalOwnershipGrantsMintingRight": false,
+    "illicitMintingIsSeriousCrime": true,
+    "counterfeitingIsSeriousCrime": true
+  },
+  "explicitlyUndefined": [
+    "currency_name",
+    "denominations",
+    "coin_weight_and_fineness",
+    "prices",
+    "wages",
+    "taxation",
+    "exchange_rates",
+    "mint_location",
+    "number_of_mints",
+    "mint_organization",
+    "exact_penalties"
+  ],
+  "guardrails": {
+    "doNotInferCompleteEconomicSystem": true,
+    "doNotAssumeMintInTreihord": true,
+    "pendingCanonRemainsPending": true
+  }
+}

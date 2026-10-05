@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_core_extraction_map",
-  "version": "0.18",
+  "version": "0.19",
   "status": "partially_executed",
   "sourceAuthorityUntilMigration": "Per-system authority: migrated namespaces use Nimroel Core; remaining namespaces use Treskal current contracts",
   "targetInheritance": [
@@ -335,6 +335,14 @@
         "defaultManifest": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_defaults_manifest_v0.1.json",
         "defaultContract": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_funeral_mourning_default_v0.1.json",
         "regression": "Worldbuilding/Sistemas/Norgard Defaults/Validacion/regresion_e1_funeral_luto_norgard_v0.1.md"
+      },
+      "E2": {
+        "status": "active_and_ready_for_regression",
+        "extracted": [
+          "crown_minting_authority_partial"
+        ],
+        "defaultContract": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_crown_minting_authority_default_v0.1.json",
+        "regression": "Worldbuilding/Sistemas/Norgard Defaults/Validacion/regresion_e2_acunacion_norgard_v0.1.md"
       }
     }
   }
