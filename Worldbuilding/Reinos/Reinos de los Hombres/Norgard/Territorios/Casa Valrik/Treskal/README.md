@@ -542,3 +542,8 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `personalidad_temperamento_rasgos_v0.1.md` — PERS01–PERS10, tendencias estables sin clases rígidas.
 - `expresion_contextual_evolucion_personalidad_v0.1.md` — expresión según contexto, continuidad e identidad a largo plazo.
+
+### 88_Memoria_relevancia_y_olvido
+
+- `memoria_episodica_relevancia_continuidad_v0.1.md` — MEM01–MEM08, recuerdos significativos, detalle y continuidad personal.
+- `recuerdo_olvido_revision_experiencias_v0.1.md` — olvido, revisión, recuerdos contradictorios y optimización sin borrar consecuencias.
