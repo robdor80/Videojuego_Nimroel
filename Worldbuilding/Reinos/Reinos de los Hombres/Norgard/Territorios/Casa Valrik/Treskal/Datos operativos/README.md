@@ -88,3 +88,4 @@ No deben rellenarse automáticamente por una herramienta sin pasar por la fase d
 - `treskal_personal_goals_intentions_contract_v0.1.json` — GOAL01–GOAL08, objetivos personales, planificación, bloqueo y progreso causal.
 - `treskal_decision_deliberation_contract_v0.1.json` — DEC01–DEC08, deliberación, riesgo percibido, elección y reconsideración.
 - `treskal_stress_strain_recovery_contract_v0.1.json` — STRS01–STRS07, presión acumulada, sobrecarga y recuperación causal.
+- `treskal_personality_traits_contract_v0.1.json` — PERS01–PERS10, rasgos estables, expresión contextual y evolución lenta.
