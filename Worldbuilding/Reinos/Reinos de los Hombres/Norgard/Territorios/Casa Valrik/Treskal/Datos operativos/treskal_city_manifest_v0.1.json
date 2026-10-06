@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "0.6",
+  "version": "0.7",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -695,6 +695,21 @@
       "portTaxesCustoms": "use_existing_generic_port_control_and_S02_fiscal_capacity_until_defined",
       "longTermPenalSystem": "S04_temporary_custody_only_no_prison_complex",
       "detailedSharedMaterialCulture": "local_Treskal_visual_and_building_rules_are_sufficient_for_metric_plan"
+    }
+  },
+  "validation": {
+    "royalNavalClosure": {
+      "status": "validated_static_regression",
+      "regression": "Validacion/regresion_armada_real_treskal_v0.1.md",
+      "audit": "AUDITORIA_CIERRE_NAVAL_NORGARD_TRESKAL_v0.1.md",
+      "classCount": 8,
+      "namedLargeWarships": 25,
+      "T08Includes": [
+        "S08",
+        "S13"
+      ],
+      "authority": "Crown_of_Norgard_House_Aethros",
+      "point2Status": "closed"
     }
   }
 }
