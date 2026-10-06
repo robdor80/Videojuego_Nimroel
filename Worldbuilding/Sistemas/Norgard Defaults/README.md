@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1 ACTIVO**
+**CAPA DE DEFAULTS DEL REINO — E1–E4 ACTIVOS**
 
 ## Objetivo
 
@@ -100,7 +100,21 @@ Contrato operativo:
 
 `Datos operativos/norgard_toponymic_convention_default_v0.1.json`
 
-**Todos los candidatos de Norgard que la auditoría consideró listos están ya extraídos.**
+### E4 — protocolo regio en residencias de Grandes Casas no reinantes
+
+Activo a nivel Reino para Darovan, Edranor, Galdren y Valrik:
+
+- asiento regio de recepción reservado al monarca;
+- posición de máximo prestigio durante visita oficial;
+- Aposentos Regios permanentes, preparados y bajo custodia;
+- uso exclusivo del monarca durante visitas oficiales;
+- la solución arquitectónica concreta pertenece a cada Casa.
+
+Contrato operativo:
+
+`Datos operativos/norgard_royal_reception_residence_default_v0.1.json`
+
+**Todos los candidatos de Norgard actualmente respaldados por canon suficiente están extraídos.**
 
 Pendiente siguiente capa:
 
@@ -111,7 +125,7 @@ El resto continúa bloqueado hasta que exista canon suficiente.
 
 ## Validación de cierre
 
-E1, E2 y E3 han superado la regresión estática de contratos del cierre Treskal/Core.
+E1, E2, E3 y E4 han superado la regresión estática de contratos del cierre Treskal/Core.
 
 Estado:
 

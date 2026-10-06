@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_defaults_manifest",
-  "version": "0.5",
+  "version": "0.6",
   "status": "active_realm_defaults_manifest",
   "authorityScope": "norgard_realm_defaults",
   "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
@@ -15,12 +15,14 @@
   "operationalFiles": {
     "funeralMourning": "Datos operativos/norgard_funeral_mourning_default_v0.1.json",
     "crownMintingAuthority": "Datos operativos/norgard_crown_minting_authority_default_v0.1.json",
-    "toponymicConvention": "Datos operativos/norgard_toponymic_convention_default_v0.1.json"
+    "toponymicConvention": "Datos operativos/norgard_toponymic_convention_default_v0.1.json",
+    "royalReceptionResidence": "Datos operativos/norgard_royal_reception_residence_default_v0.1.json"
   },
   "readyCandidates": {
     "funeralMourning": "extracted_active_validated",
     "crownMintingAuthority": "extracted_active_partial_validated",
-    "toponymicConvention": "extracted_active_validated"
+    "toponymicConvention": "extracted_active_validated",
+    "royalReceptionResidence": "extracted_active_validated"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
@@ -55,6 +57,11 @@
       "status": "validated_static_regression",
       "default": "Datos operativos/norgard_toponymic_convention_default_v0.1.json",
       "regression": "Validacion/regresion_e3_toponimia_norgard_v0.1.md"
+    },
+    "E4": {
+      "status": "validated_static_regression",
+      "default": "Datos operativos/norgard_royal_reception_residence_default_v0.1.json",
+      "regression": "Validacion/regresion_e4_protocolo_regio_residencias_v0.1.md"
     }
   },
   "downstreamDefaults": {
@@ -62,7 +69,7 @@
   },
   "validation": {
     "status": "validated_static_regression",
-    "regressionSpecifications": 3,
+    "regressionSpecifications": 4,
     "blockedPendingCanonIsIntentional": true
   }
 }

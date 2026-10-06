@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_royal_reception_residence_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "norgard_non_reigning_great_house_residences",
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/protocolo_regio.md",
+  "appliesTo": [
+    "Casa_Darovan",
+    "Casa_Edranor",
+    "Casa_Galdren",
+    "Casa_Valrik"
+  ],
+  "excludes": [
+    "Casa_Aethros_reigning_residence"
+  ],
+  "requirements": {
+    "royalReceptionSeatRequired": true,
+    "royalReceptionSeatReservedForMonarch": true,
+    "monarchHighestPrestigePositionDuringOfficialReception": true,
+    "hostNormallyAtMonarchRight": true,
+    "royalApartmentsRequired": true,
+    "royalApartmentsExclusiveToMonarch": true,
+    "royalApartmentsMaintainedWhileVacant": true,
+    "privacySecurityAndServiceRequired": true
+  },
+  "nonRequirements": {
+    "separateRoyalBuilding": false,
+    "monumentalPalaceScale": false,
+    "urbanFortification": false
+  },
+  "localResolution": [
+    "exact_room_layout",
+    "decorative_language",
+    "service_routes",
+    "security_arrangement",
+    "architectural_expression"
+  ]
+}
