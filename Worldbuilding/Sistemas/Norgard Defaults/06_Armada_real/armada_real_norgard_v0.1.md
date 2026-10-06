@@ -220,3 +220,25 @@ Casa Valrik:
 ## 12. Regla final
 
 **La Armada Real es la fuerza naval soberana de la Corona de los Hombres: vela, transporta, escolta, intercepta y combate sin pólvora, apoyada por los grandes astilleros y la Base Naval Principal de Treskal.**
+
+
+---
+
+## 13. Operación dinámica de la Armada
+
+El uso runtime de la Armada se rige por:
+
+`Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_royal_navy_operations_default_v0.1.json`
+
+Reglas esenciales:
+
+- I–III se materializan desde un registro finito creado al inicializar el mundo;
+- IV–V son exactamente las 25 unidades nominales canónicas;
+- ningún barco militar aparece de la nada durante una partida;
+- una pérdida, captura, avería o reparación persiste;
+- construir una nueva unidad exige autoridad, astillero, trabajo, materiales y tiempo;
+- el motor no puede inventar una clase naval;
+- la composición de convoyes y fuerzas responde a misión, disponibilidad, posición, amenaza y estado real;
+- la simulación off-screen conserva las mismas reglas y consecuencias.
+
+Esto cierra la diferencia entre **qué Armada existe** y **cómo la Armada actúa en el mundo**.

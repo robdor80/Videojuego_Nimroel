@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_civil_maritime_fishing_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "norgard_civil_waterborne_activity",
+  "inheritsCore": [
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_vessel_navigation_simulation_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_aquatic_resource_harvest_contract_v0.1.json"
+  ],
+  "technology": {
+    "gunpowder": false,
+    "ordinaryCivilPropulsion": [
+      "sail",
+      "oar",
+      "pole",
+      "tow",
+      "mixed"
+    ],
+    "largeScaleIndustrialPower": false,
+    "waterPoweredSawmillAssumed": false
+  },
+  "functionalArchetypes": [
+    {
+      "id": "river_small_craft",
+      "environment": [
+        "river",
+        "estuary",
+        "lake"
+      ],
+      "lengthMeters": {
+        "min": 4,
+        "max": 10
+      },
+      "ordinaryCrew": {
+        "min": 1,
+        "max": 4
+      },
+      "propulsion": [
+        "oar",
+        "pole",
+        "small_sail",
+        "mixed"
+      ],
+      "uses": [
+        "local_transport",
+        "river_fishing",
+        "crossing",
+        "light_cargo"
+      ]
+    },
+    {
+      "id": "inshore_fishing_boat",
+      "environment": [
+        "coast",
+        "estuary"
+      ],
+      "lengthMeters": {
+        "min": 6,
+        "max": 10
+      },
+      "ordinaryCrew": {
+        "min": 2,
+        "max": 5
+      },
+      "propulsion": [
+        "oar",
+        "sail",
+        "mixed"
+      ],
+      "ordinaryMasts": {
+        "min": 0,
+        "max": 1
+      },
+      "uses": [
+        "day_fishing",
+        "nearshore_harvest"
+      ]
+    },
+    {
+      "id": "coastal_fishing_boat",
+      "environment": [
+        "coast"
+      ],
+      "lengthMeters": {
+        "min": 9,
+        "max": 15
+      },
+      "ordinaryCrew": {
+        "min": 4,
+        "max": 8
+      },
+      "propulsion": [
+        "sail"
+      ],
+      "ordinaryMasts": {
+        "min": 1,
+        "max": 1
+      },
+      "uses": [
+        "coastal_fishing",
+        "day_or_short_trip"
+      ]
+    },
+    {
+      "id": "offshore_fishing_vessel",
+      "environment": [
+        "coast",
+        "open_sea"
+      ],
+      "lengthMeters": {
+        "min": 14,
+        "max": 22
+      },
+      "ordinaryCrew": {
+        "min": 8,
+        "max": 16
+      },
+      "propulsion": [
+        "sail"
+      ],
+      "ordinaryMasts": {
+        "min": 2,
+        "max": 2
+      },
+      "uses": [
+        "multi_day_fishing",
+        "offshore_harvest"
+      ]
+    },
+    {
+      "id": "river_barge",
+      "environment": [
+        "navigable_river",
+        "estuary"
+      ],
+      "lengthMeters": {
+        "min": 10,
+        "max": 22
+      },
+      "ordinaryCrew": {
+        "min": 3,
+        "max": 8
+      },
+      "propulsion": [
+        "pole",
+        "tow",
+        "oar",
+        "sail_when_route_allows"
+      ],
+      "uses": [
+        "bulk_cargo",
+        "heavy_material"
+      ]
+    },
+    {
+      "id": "coastal_trader",
+      "environment": [
+        "coast",
+        "short_sea_routes"
+      ],
+      "lengthMeters": {
+        "min": 14,
+        "max": 26
+      },
+      "ordinaryCrew": {
+        "min": 5,
+        "max": 12
+      },
+      "propulsion": [
+        "sail"
+      ],
+      "ordinaryMasts": {
+        "min": 1,
+        "max": 2
+      },
+      "uses": [
+        "cargo",
+        "regional_trade",
+        "passengers_if_configured"
+      ]
+    },
+    {
+      "id": "merchant_ship",
+      "environment": [
+        "sea",
+        "open_sea"
+      ],
+      "lengthMeters": {
+        "min": 24,
+        "max": 38
+      },
+      "ordinaryCrew": {
+        "min": 10,
+        "max": 24
+      },
+      "propulsion": [
+        "sail"
+      ],
+      "ordinaryMasts": {
+        "min": 2,
+        "max": 3
+      },
+      "uses": [
+        "longer_trade",
+        "bulk_or_mixed_cargo",
+        "regional_passage"
+      ]
+    }
+  ],
+  "archetypePolicy": {
+    "theseAreFunctionalEnvelopesNotNamedShipClasses": true,
+    "localConstructionMayVaryWithinEnvelope": true,
+    "properNamesOptionalForCivilVessels": true,
+    "engineCannotPromoteArchetypeToMilitaryClass": true
+  },
+  "fishingMethodsAllowedAsFunctionalDefaults": [
+    "hook_and_line",
+    "nets",
+    "traps_or_pots",
+    "shore_or_river_harvest_where_context_allows"
+  ],
+  "fishingFleetGeneration": {
+    "fixedRealmCount": false,
+    "deriveActiveFleetFrom": [
+      "fishing_employment",
+      "households_and_owners",
+      "market_demand",
+      "port_and_anchorage_capacity",
+      "resource_pressure",
+      "season",
+      "weather",
+      "maintenance_and_losses"
+    ],
+    "generatedVesselRequires": [
+      "owner_or_operator",
+      "home_port_or_landing_place",
+      "crew_capacity",
+      "maintenance_context",
+      "economic_reason"
+    ],
+    "generatedVesselPersistentAfterMaterialization": true,
+    "unlimitedSpawnForbidden": true,
+    "replacementRequiresConstructionOrAcquisition": true
+  },
+  "fishingTripCycle": [
+    "prepare",
+    "crew_and_gear",
+    "depart",
+    "navigate_to_ground",
+    "harvest",
+    "stow_catch",
+    "return",
+    "wait_or_berth",
+    "land_catch",
+    "sell_preserve_or_distribute",
+    "clean_repair_rest"
+  ],
+  "fishingGroundPolicy": {
+    "persistentResourceAreas": true,
+    "exactSpeciesRequireEcologyCanon": true,
+    "genericResourceGroupsAllowedWhenSpeciesUnauthored": true,
+    "pressureAndRecoverySimulated": true,
+    "seasonWeatherAndWaterStateAffectYield": true
+  },
+  "civilNavigation": {
+    "routeChoiceUsesSafetyCapacityAndWeather": true,
+    "riverNavigationRequiresNavigability": true,
+    "congestionAndBerthWaitingAllowed": true,
+    "civilConvoysAllowedWhenEconomicOrSecurityReasonExists": true,
+    "fiscalCustomsRules": "external_dependency_point_3"
+  },
+  "crewAndLabor": {
+    "crewAreNPCs": true,
+    "employmentAndAgendaApply": true,
+    "restFatigueInjuryApply": true,
+    "skillAndExperienceAffectOutcome": true,
+    "familyOrPartnershipOwnershipAllowed": true,
+    "ownershipFormNotUniversalized": true
+  },
+  "explicitNonGoals": [
+    "fixed_number_of_fishing_boats_for_every_port",
+    "invented_fish_species",
+    "uniform_ship_names",
+    "modern_industrial_fishing",
+    "realmwide_fisher_guild_without_authored_canon"
+  ],
+  "runtimeImplementationRequiredLater": true
+}

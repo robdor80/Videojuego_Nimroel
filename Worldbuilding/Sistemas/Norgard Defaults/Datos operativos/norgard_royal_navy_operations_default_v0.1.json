@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_royal_navy_operations_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "crown_of_norgard_royal_navy_operations",
+  "inherits": [
+    "Datos operativos/norgard_royal_navy_default_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_vessel_navigation_simulation_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_waterborne_encounter_combat_contract_v0.1.json"
+  ],
+  "registry": {
+    "worldInitialization": {
+      "categoriesIToIII": "generate_finite_registry_using_only_drennar_suthir_haldren_vardek",
+      "categoriesIVToV": "load_exact_25_authored_named_vessels"
+    },
+    "afterInitialization": {
+      "spawnFromNothingForbidden": true,
+      "newUnitRequiresConstructionOrPreviouslyExistingRegistryUnit": true,
+      "lossPersists": true,
+      "capturePersists": true,
+      "repairPersists": true
+    },
+    "uniqueNamedVesselDuplicationForbidden": true,
+    "newClassGenerationForbidden": true
+  },
+  "missions": [
+    "patrol",
+    "reconnaissance",
+    "courier_or_liaison",
+    "troop_transport",
+    "logistics_transport",
+    "escort",
+    "convoy_protection",
+    "interception",
+    "sea_route_control",
+    "blockade_when_ordered",
+    "amphibious_transport_and_landing_support",
+    "rescue_or_assistance"
+  ],
+  "taskForceSelectionInputs": [
+    "mission",
+    "available_units",
+    "unit_class_and_role",
+    "location",
+    "readiness",
+    "damage",
+    "crew_availability",
+    "supply",
+    "weather",
+    "range",
+    "threat",
+    "strategic_priority",
+    "transport_capacity"
+  ],
+  "doctrineRules": {
+    "transportsAreMissionAssetsNotDisposableBait": true,
+    "escortsPrioritizeThreatsToProtectedTransports": true,
+    "preserveFormationWhenMissionRequires": true,
+    "pursuitMayBeAbandonedToProtectConvoy": true,
+    "riggingSteeringCrewSuppressionAndBoardingPreferredOverNonexistentGunfire": true,
+    "damagedUnitMayWithdrawOrBeScreened": true,
+    "surrenderCaptureRescueAndTowAreValid": true
+  },
+  "commandDecisionInputs": [
+    "orders",
+    "known_information",
+    "mission_priority",
+    "relative_force_estimate",
+    "weather",
+    "sea_room",
+    "civilian_or_transport_protection",
+    "damage",
+    "crew_state",
+    "supply",
+    "escape_or_reinforcement_options"
+  ],
+  "informationRules": {
+    "omniscienceForbidden": true,
+    "enemyIdentityMayBeUncertain": true,
+    "signalsReportsAndVisualDetectionMatter": true,
+    "offscreenCommandUsesOnlyAvailableKnowledge": true
+  },
+  "combatCapabilities": [
+    "archery",
+    "crossbows",
+    "scorpions",
+    "ballistae",
+    "boarding",
+    "maneuver",
+    "ramming_only_if_vessel_design_supports"
+  ],
+  "prohibitedCapabilities": [
+    "gunpowder",
+    "cannons",
+    "bombards",
+    "firearms",
+    "procedurally_invented_magic_artillery"
+  ],
+  "damageAndReadiness": {
+    "componentDamageUsesCore": true,
+    "crewLossReducesCapability": true,
+    "majorDamageCanAbortMission": true,
+    "repairConsumesTimeLaborMaterialsAndFacilityCapacity": true,
+    "T08CanReceiveMajorRepairWork": true
+  },
+  "troopTransport": {
+    "capacityFinite": true,
+    "embarkationConsumesTimeAndBerthCapacity": true,
+    "troopsArePersistentActorsOrAggregatesWithPersistentIdentity": true,
+    "landingRequiresAccessibleShorePortOrLandingPlan": true,
+    "escortNeedDependsOnThreat": true
+  },
+  "offscreenSimulation": {
+    "allowed": true,
+    "sameMissionAndDamageRules": true,
+    "namedShipsAlwaysPersist": true,
+    "importantCasualtiesAndCapturesPersist": true,
+    "noOutcomeScriptedForPlayerConvenience": true
+  },
+  "runtimeImplementationRequiredLater": true
+}

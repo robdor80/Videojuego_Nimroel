@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_royal_navy_default",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_realm_default",
   "authorityScope": "crown_of_norgard_royal_navy",
   "owner": "Crown_of_Norgard_House_Aethros",
@@ -233,10 +233,23 @@
     "houseValrikInternalCommand": false
   },
   "unresolvedWithoutReopeningFramework": [
-    "exact_counts_categories_I_to_III",
+    "canonical_exact_counts_categories_I_to_III_not_fixed_runtime_registry_finite",
     "specialized_naval_rank_titles",
     "secondary_naval_base_locations",
     "exact_crew_complements_by_class",
     "exact_mechanical_weapon_counts_by_class"
-  ]
+  ],
+  "inheritsCore": [
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_vessel_navigation_simulation_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_waterborne_encounter_combat_contract_v0.1.json"
+  ],
+  "operationsContract": "Datos operativos/norgard_royal_navy_operations_default_v0.1.json",
+  "registryPolicy": {
+    "categoriesIToIII": "finite_registry_generated_at_world_initialization_within_existing_classes",
+    "categoriesIVToV": "authored_fixed_named_registry",
+    "proceduralNewClassForbidden": true,
+    "proceduralUnlimitedSpawnForbidden": true,
+    "materializedUnitPersists": true,
+    "replacementAfterLossRequiresConstructionAndAuthority": true
+  }
 }

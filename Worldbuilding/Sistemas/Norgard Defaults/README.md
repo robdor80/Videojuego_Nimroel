@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E6 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E7 ACTIVOS**
 
 ## Objetivo
 
@@ -42,7 +42,6 @@ No listos todavía:
 - mayoría de edad y derecho laboral;
 - propiedad, herencia y alquiler;
 - sistema monetario completo, precios y fiscalidad;
-- terminología marítima general no cubierta por el marco militar naval;
 - tradición sanitaria de reino;
 - gastronomía general del reino;
 - nombres personales y apellidos;
@@ -125,7 +124,7 @@ El resto continúa bloqueado hasta que exista canon suficiente.
 
 ## Validación de cierre
 
-E1, E2, E3, E4, E5 y E6 han superado la regresión estática de contratos del cierre Treskal/Core.
+E1, E2, E3, E4, E5, E6 y E7 han superado la regresión estática de contratos del cierre Treskal/Core.
 
 Estado:
 
@@ -178,3 +177,25 @@ Desarrollo canónico:
 `06_Armada_real/armada_real_norgard_v0.1.md`
 
 El antiguo bloqueo `royal_naval_framework` queda resuelto. La terminología marítima general no necesaria para este marco puede seguir ampliándose sin reabrir E6.
+
+
+### E7 — navegación civil, pesca y operación marítima
+
+Activo a nivel Reino:
+
+- arquetipos funcionales civiles/fluviales/pesqueros/mercantes;
+- generación finita y persistente de flotillas civiles;
+- caladeros persistentes, presión de pesca y recuperación;
+- viajes pesqueros y comerciales;
+- integración con puertos, clima, empleo, carga y mantenimiento;
+- registro finito de Armada I–III al inicializar mundo;
+- operaciones de patrulla, convoy, escolta, transporte, intercepción, bloqueo, desembarco y rescate;
+- resolución off-screen con las mismas consecuencias persistentes.
+
+Contratos:
+
+`Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json`
+
+`Datos operativos/norgard_royal_navy_operations_default_v0.1.json`
+
+El sistema fiscal/aduanero se conecta en Punto 3 y no bloquea el cierre marítimo.
