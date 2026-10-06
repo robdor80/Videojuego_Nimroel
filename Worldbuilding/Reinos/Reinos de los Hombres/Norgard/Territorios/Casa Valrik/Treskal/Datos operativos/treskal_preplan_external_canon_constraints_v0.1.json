@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_preplan_constraint_set",
   "purpose": "Freeze only Norgard-level facts that materially affect Treskal metric planning, while keeping unresolved canon nonblocking and non-invented.",
-  "planReadiness": "ready_for_metric_city_plan",
+  "planReadiness": "ready_for_metric_city_plan_military_resolved",
   "authorInputRequiredNow": false,
   "resolvedSpatialConstraints": {
     "royalProtocol": {
@@ -52,14 +52,25 @@
       "ordinaryStoreys": "one_to_two_common_three_minority",
       "cityWall": false,
       "monumentalCastleForValrik": false
+    },
+    "territorialMilitary": {
+      "sector": "T12",
+      "facilities": [
+        "S11",
+        "S12"
+      ],
+      "centralGarrisonBand": [
+        260,
+        340
+      ],
+      "musterCapacityBand": [
+        800,
+        1200
+      ],
+      "cityWallRequired": false
     }
   },
   "nonBlockingPendingCanon": {
-    "militaryAndGuardFinalFramework": {
-      "currentAction": "no_noncanonical_barracks_or_arsenal",
-      "safeguard": "preserve_unassigned_peripheral_expansion_capacity",
-      "revisitOnlyIf": "future_canon_requires_distinct_large_footprint"
-    },
     "royalNavalFramework": {
       "currentAction": "keep_command_security_admin_inside_T08_capacity",
       "revisitOnlyIf": "future_canon_requires_separate_naval_installation"
@@ -74,8 +85,6 @@
     }
   },
   "forbiddenPrePlanInventions": [
-    "standalone_military_headquarters",
-    "standalone_army_barracks",
     "independent_arsenal",
     "separate_naval_base",
     "standalone_customs_house",
@@ -85,11 +94,11 @@
   ],
   "genericExpansionReserve": {
     "canonicalFacility": false,
-    "requirement": "retain_some_expandable_low_density_peripheral_land",
+    "requirement": "retain_some_expandable_low_density_peripheral_land_beyond_resolved_T12_for_ordinary_future_growth",
     "candidateContexts": [
       "T10_edge",
       "T11_corridor_edges",
-      "service_side_of_T08_approach"
+      "beyond_T12_as_topography_allows"
     ],
     "exactGeometry": "resolve_during_metric_plan"
   }

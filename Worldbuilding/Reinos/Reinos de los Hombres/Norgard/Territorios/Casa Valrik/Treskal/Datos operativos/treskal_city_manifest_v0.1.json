@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "0.4",
+  "version": "0.5",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -210,10 +210,10 @@
     "judicial_complex_exact_architectural_plan",
     "long_term_penal_system",
     "royal_shipyard_internal_chain_of_command",
-    "urban_guard_rank_system_external_dependency"
+    "exact_T12_military_precinct_geometry"
   ],
   "externalDependencies": {
-    "urbanGuardRanks": "Norgard_military_review",
+    "urbanGuardRanks": "resolved_functionally_by_Norgard_and_Valrik_military_framework",
     "longTermPenalSystem": "Norgard_law_and_penal_system",
     "royalShipyardInternalChainOfCommand": "Norgard_royal_naval_military_system",
     "specializedMarketFineCalendar": "Norgard_calendar_and_local_market_schedule_detail",
@@ -255,7 +255,8 @@
     "functionalClosureAudit": "Datos operativos/treskal_functional_closure_audit_v0.1.json",
     "coreExtractionMap": "Datos operativos/treskal_core_extraction_map_v0.1.json",
     "refactorClosure": "Worldbuilding/Sistemas/Validacion/CIERRE_REFACTORIZACION_TRESKAL_CORE_NORGARD_VALRIK_v0.1.md",
-    "prePlanExternalCanonAudit": "AUDITORIA_PREPLANO_CANON_EXTERNO_NORGARD_v0.1.md"
+    "prePlanExternalCanonAudit": "AUDITORIA_PREPLANO_CANON_EXTERNO_NORGARD_v0.1.md",
+    "militaryClosure": "AUDITORIA_CIERRE_MILITAR_VALRIK_TRESKAL_v0.1.md"
   },
   "coreInheritance": {
     "status": "complete_high_confidence_migration_validated",
@@ -638,6 +639,10 @@
         "realmDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_royal_reception_residence_default_v0.1.json",
         "localApplication": "06_Edificios_singulares/S01_S02_casa_valrik_y_administracion_v0.1.md",
         "separateRoyalBuildingRequired": false
+      },
+      "militaryAuthorityHouseForces": {
+        "realmDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_military_authority_house_forces_default_v0.1.json",
+        "localHouseDefault": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_military_structure_default_v0.1.json"
       }
     },
     "status": "active",
@@ -653,6 +658,11 @@
         "localContract": "Datos operativos/treskal_word_of_honor_pledge_contract_v0.1.json",
         "localPledgeStateMachinePreserved": true,
         "saveMigrationRequired": false
+      },
+      "militaryStructure": {
+        "houseDefault": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_military_structure_default_v0.1.json",
+        "localContract": "Datos operativos/treskal_valrik_military_presence_contract_v0.1.json",
+        "saveMigrationRequired": false
       }
     },
     "status": "active",
@@ -664,10 +674,10 @@
     "status": "complete_for_metric_plan",
     "authorInputRequiredNow": false,
     "blockingResolved": [
-      "royal_reception_and_accommodation"
+      "royal_reception_and_accommodation",
+      "military_and_guard_framework"
     ],
     "nonBlockingPending": {
-      "militaryAndGuardFramework": "preserve_unassigned_peripheral_expansion_capacity_no_facility_named",
       "royalNavalFramework": "resolve_chain_inside_T08_unless_future_canon_requires_more",
       "portTaxesCustoms": "use_existing_generic_port_control_and_S02_fiscal_capacity_until_defined",
       "longTermPenalSystem": "S04_temporary_custody_only_no_prison_complex",

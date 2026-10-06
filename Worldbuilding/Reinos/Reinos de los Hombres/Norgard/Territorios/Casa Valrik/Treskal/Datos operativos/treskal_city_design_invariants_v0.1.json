@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "0.2",
+  "version": "0.3",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3074,13 +3074,6 @@
       ]
     },
     {
-      "id": "pending_military_review_does_not_spawn_noncanonical_facilities",
-      "expected": [
-        "no standalone army barracks arsenal or military headquarters is added without later canon",
-        "some unassigned peripheral expansion capacity remains available"
-      ]
-    },
-    {
       "id": "naval_chain_of_command_does_not_spawn_separate_base",
       "expected": [
         "T08 already contains administration security storage and controlled access capacity",
@@ -3100,6 +3093,44 @@
       "expected": [
         "S04 provides temporary custody",
         "long-term prison complex is not added without Norgard penal canon"
+      ]
+    },
+    {
+      "id": "valrik_military_layers_are_distinct",
+      "expected": [
+        "S01 house guard is not S05 urban guard",
+        "T12 territorial army is not urban police",
+        "T08 Crown security remains separate"
+      ]
+    },
+    {
+      "id": "treskal_has_real_military_precinct",
+      "expected": [
+        "T12 exists on inland edge",
+        "S11 barracks supports 260-340 permanent professionals",
+        "S12 supports muster without permanent reserve housing"
+      ]
+    },
+    {
+      "id": "military_mobilization_uses_real_population",
+      "expected": [
+        "reserve members persist as real NPC",
+        "mobilization affects civilian occupations and households",
+        "no anonymous replacement soldiers are spawned to satisfy quotas"
+      ]
+    },
+    {
+      "id": "no_city_wall_after_military_closure",
+      "expected": [
+        "Treskal remains unwalled",
+        "T12 may have controlled compound perimeter only"
+      ]
+    },
+    {
+      "id": "royal_navy_remains_crown",
+      "expected": [
+        "Valrik army cannot command T08 interior",
+        "Royal Navy is not converted into House Valrik force"
       ]
     }
   ]
