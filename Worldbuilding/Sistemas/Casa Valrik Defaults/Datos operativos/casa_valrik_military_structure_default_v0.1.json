@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "documentId": "casa_valrik_military_structure_default",
+  "version": "0.1",
+  "status": "active_house_default",
+  "authorityScope": "casa_valrik_territorial_military",
+  "inheritsFrom": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_military_authority_house_forces_default_v0.1.json",
+  "forceBands": {
+    "houseGuard": {
+      "min": 48,
+      "max": 72,
+      "professional": true
+    },
+    "treskalUrbanGuard": {
+      "min": 140,
+      "max": 190,
+      "professional": true,
+      "separateFromArmy": true
+    },
+    "territorialProfessional": {
+      "min": 540,
+      "max": 720,
+      "professional": true
+    },
+    "trainedReserveShareOfMaterializedResidents": {
+      "min": 0.025,
+      "max": 0.04
+    },
+    "extraordinaryTotalMobilizationCeilingShare": {
+      "max": 0.06
+    }
+  },
+  "territorialProfessionalCompositionPercent": {
+    "lineInfantry": {
+      "min": 50,
+      "max": 60
+    },
+    "ranged": {
+      "min": 15,
+      "max": 20
+    },
+    "lightMountedReconCourier": {
+      "min": 8,
+      "max": 12
+    },
+    "engineeringLogisticsSpecialists": {
+      "min": 12,
+      "max": 18
+    }
+  },
+  "referenceUnitSizes": {
+    "patrol": [
+      4,
+      8
+    ],
+    "squad": [
+      8,
+      12
+    ],
+    "detachment": [
+      20,
+      40
+    ],
+    "company": [
+      60,
+      100
+    ]
+  },
+  "functionalCommandChain": [
+    "Lord_or_Lady_Valrik",
+    "Valrik_Forces_Commander",
+    "captain",
+    "sergeant",
+    "soldier"
+  ],
+  "localDeployments": {
+    "Treskal": "central_command_barracks_muster_house_guard_urban_guard",
+    "eachVilla": {
+      "minorHouseGuard": [
+        12,
+        24
+      ],
+      "valrikTerritorialDetachment": [
+        20,
+        50
+      ],
+      "reserveAssemblyCapacity": true
+    },
+    "strategicTownPost": [
+      6,
+      16
+    ],
+    "ordinaryVillagePermanentGuard": false,
+    "isolatedStrategicPostsAllowed": true
+  },
+  "identity": {
+    "heavyCavalryDominant": false,
+    "infantryDominant": true,
+    "forestRoadEngineeringStrength": true,
+    "sovereignNavy": false,
+    "royalLoyaltyHigh": true
+  },
+  "equipmentFamilies": [
+    "shield",
+    "spear_or_polearm",
+    "sword_or_axe_sidearm",
+    "bow",
+    "crossbow",
+    "leather",
+    "mail",
+    "partial_plate"
+  ],
+  "gunpowder": false,
+  "mobilization": {
+    "npcIdentityMustPersist": true,
+    "civilianJobAndHouseholdConsequencesRequired": true,
+    "royalMusterPreservesHouseHeraldry": true,
+    "royalMusterStrategicCommand": "Crown_of_Norgard"
+  }
+}

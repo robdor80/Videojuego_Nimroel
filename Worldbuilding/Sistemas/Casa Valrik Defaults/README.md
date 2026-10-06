@@ -18,10 +18,31 @@ Una costumbre de Treskal solo asciende a esta capa cuando la propia fuente la id
 
 No se extrapola una solución urbana local a toda la Casa por analogía.
 
-## Default activo
+## Defaults activos
 
-- peso cultural especial de la palabra dada y del cumplimiento de compromisos claros.
+### V1 — palabra dada y honor
+
+- peso cultural especial de la palabra dada;
+- valor elevado del cumplimiento de compromisos claros;
+- la promesa no sustituye la Ley del Rey.
+
+### V2 — estructura militar Valrik
+
+Valrik hereda el marco militar general de Norgard y concreta:
+
+- Guardia de Casa;
+- Guardia urbana de Treskal;
+- Fuerza Territorial profesional;
+- reserva movilizable;
+- despliegue por Treskal, Villas, Pueblos estratégicos y puestos aislados;
+- identidad militar predominantemente de infantería, con proyectiles, exploración montada ligera e ingeniería/logística.
+
+Contrato:
+
+`Datos operativos/casa_valrik_military_structure_default_v0.1.json`
 
 ## Principio
 
 **Valrik puede heredar Norgard y añadir identidad propia sin convertir esa identidad en ley de todo el Reino.**
+
+**Casa Valrik mantiene capacidad militar propia sin soberanía militar independiente.**
