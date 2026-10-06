@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_vessel_navigation_simulation_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "systemPurpose": "Persistent vessel entities, crew/cargo, waterborne movement, port interaction and simulation LOD for sea, river and lake navigation.",
+  "stableIdNamespaces": {
+    "VSL": "vessel_entity",
+    "VOY": "voyage_state",
+    "CREW": "vessel_crew_assignment",
+    "BERTH": "berth_occupancy_state"
+  },
+  "sourcePrecedence": [
+    "AUTHORED",
+    "PERSISTED_MATERIALIZED",
+    "CULTURAL_OR_REALM_PROFILE",
+    "COMPATIBLE_GENERATED",
+    "DYNAMIC",
+    "UNKNOWN"
+  ],
+  "immutableRules": {
+    "materializedVesselGetsPersistentIdentity": true,
+    "rerollMaterializedVesselForbidden": true,
+    "sameVesselCannotOccupyTwoLocations": true,
+    "crewMustReferenceExistingOrMaterializedActors": true,
+    "cargoMustReferenceRealStockOrExplicitManifest": true,
+    "movementRequiresNavigableConnection": true,
+    "movementRespectsDraftAndWaterConstraints": true,
+    "weatherAndWaterStateMayModifyMovement": true,
+    "damagePersistsUntilRepairedOrDestroyed": true,
+    "offscreenSimulationCannotCreateResourcesFromNothing": true,
+    "lodMayChangeGranularityNotFacts": true,
+    "authoredUniqueVesselsCannotBeProcedurallyDuplicated": true
+  },
+  "vesselPersistentFields": [
+    "vessel_id",
+    "provenance",
+    "culture_or_technology_profile",
+    "functional_archetype_or_class",
+    "owner_ref",
+    "custodian_or_operator_ref",
+    "home_port_or_base_ref",
+    "dimensions",
+    "propulsion",
+    "capacity",
+    "condition",
+    "component_state",
+    "cargo_state",
+    "crew_assignments",
+    "location_state",
+    "current_voyage_ref",
+    "access_state",
+    "maintenance_state",
+    "history_flags",
+    "last_update_time"
+  ],
+  "componentState": [
+    "hull",
+    "rigging",
+    "masts",
+    "sails",
+    "steering",
+    "anchors_mooring",
+    "propulsion_auxiliary",
+    "cargo_spaces",
+    "crew_spaces",
+    "special_equipment"
+  ],
+  "conditionEffects": [
+    "speed",
+    "maneuverability",
+    "seaworthiness",
+    "cargo_safety",
+    "crew_safety",
+    "combat_capability",
+    "port_service_need"
+  ],
+  "propulsionModes": [
+    "sail",
+    "oar",
+    "pole",
+    "tow",
+    "current_drift",
+    "mixed"
+  ],
+  "voyageLifecycle": [
+    "planned",
+    "loading_or_preparing",
+    "departing",
+    "underway",
+    "delayed",
+    "diverted",
+    "arriving",
+    "waiting_for_berth",
+    "berthed",
+    "completed",
+    "cancelled",
+    "lost_or_unknown"
+  ],
+  "voyageMinimumFields": [
+    "voyage_id",
+    "vessel_ref",
+    "origin_ref",
+    "destination_ref",
+    "route_or_corridor_ref",
+    "purpose",
+    "departure_time",
+    "progress",
+    "crew_refs",
+    "cargo_or_passenger_summary",
+    "weather_water_inputs",
+    "incidents",
+    "eta_or_unknown",
+    "state"
+  ],
+  "navigationInputs": [
+    "route_geometry",
+    "water_depth_or_draft_limit",
+    "current",
+    "wind",
+    "sea_or_water_state",
+    "visibility",
+    "weather",
+    "daylight",
+    "crew_competence",
+    "vessel_condition",
+    "cargo_load",
+    "traffic",
+    "port_access"
+  ],
+  "portLifecycle": [
+    "approach",
+    "signal_or_identification_if_required",
+    "wait_if_needed",
+    "berth_or_anchorage_assignment",
+    "mooring",
+    "service_or_load_unload",
+    "stay",
+    "departure_preparation",
+    "release_berth",
+    "departure"
+  ],
+  "berthCompatibilityInputs": [
+    "vessel_dimensions",
+    "draft",
+    "function",
+    "cargo",
+    "security_scope",
+    "weather",
+    "water_state",
+    "traffic",
+    "berth_condition"
+  ],
+  "crewRules": {
+    "rolesAreProfileDefined": true,
+    "minimumSafeCrewProfileDefined": true,
+    "fatigueAndInjuryCanReduceEffectiveCrew": true,
+    "missingCrewCanDelayOrPreventDeparture": true,
+    "crewAssignmentsPersistDuringVoyage": true,
+    "crewAreNotAnonymousWhenHighLodOrNarrativelyRelevant": true
+  },
+  "cargoRules": {
+    "finiteCapacity": true,
+    "massOrVolumeCompatibilityRequired": true,
+    "cargoOwnershipPersists": true,
+    "lossDamageSpoilagePossible": true,
+    "loadingUnloadingConsumesTimeAndLabor": true
+  },
+  "logicalLod": {
+    "low": [
+      "vessel_identity",
+      "route_segment",
+      "aggregate_crew_state",
+      "aggregate_cargo",
+      "condition_summary",
+      "mission_or_activity",
+      "incidents"
+    ],
+    "medium": [
+      "approximate_position",
+      "relevant_crew_groups",
+      "component_condition",
+      "cargo_groups",
+      "maneuver_or_work_state",
+      "nearby_vessels"
+    ],
+    "high": [
+      "precise_position",
+      "individual_crew",
+      "deck_or_interior_activity",
+      "perception",
+      "individual_objects",
+      "interaction",
+      "detailed_damage"
+    ]
+  },
+  "lodSelectionInputs": [
+    "player_proximity",
+    "narrative_relevance",
+    "tracking",
+    "combat",
+    "danger",
+    "port_interaction",
+    "quest",
+    "unique_vessel",
+    "persistent_damage"
+  ],
+  "offscreenRules": {
+    "progressAllowed": true,
+    "routeTravelUsesElapsedTime": true,
+    "incidentsRequireCause": true,
+    "importantDamageAndDeathsPersist": true,
+    "cargoChangesPersist": true,
+    "arrivalCannotOccurBeforePlausibleTravel": true,
+    "reentryMaterializesFromPersistentStateNotFreshGeneration": true
+  },
+  "generationPolicy": {
+    "proceduralVesselAllowedWhenProfileAllows": true,
+    "generatedVesselMustFitTechnologyAndArchetype": true,
+    "generatedVesselMustHaveEconomicOrInstitutionalReason": true,
+    "generatedVesselMustHaveOwnershipOrAuthorityContext": true,
+    "generatedVesselBecomesPersistentOnMaterialization": true,
+    "newMilitaryClassForbiddenWithoutAuthoredCanon": true
+  },
+  "integration": [
+    "property_possession",
+    "wear_maintenance_repair",
+    "tools_workstations",
+    "employment",
+    "agenda",
+    "rest",
+    "hazards_accidents",
+    "emergency_response",
+    "physical_geography",
+    "weather",
+    "economy_stock",
+    "events",
+    "knowledge",
+    "streaming_persistence"
+  ],
+  "runtimeImplementationRequiredLater": true
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_aquatic_resource_harvest_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "systemPurpose": "Model fishing and renewable aquatic harvesting as finite place-based resources with effort, seasonality and persistent economic consequences.",
+  "stableIdNamespaces": {
+    "AQR": "aquatic_resource_population",
+    "FGR": "fishing_ground_or_harvest_area",
+    "HARV": "harvest_activity_state"
+  },
+  "immutableRules": {
+    "harvestRequiresAccessibleResourceArea": true,
+    "catchCannotExceedAvailableResource": true,
+    "effortDoesNotGuaranteeCatch": true,
+    "resourceStatePersists": true,
+    "recoveryIsNotInstant": true,
+    "weatherWaterAndSeasonMayModifyAvailability": true,
+    "overharvestCanReduceFutureYield": true,
+    "speciesOrResourceNamesCannotBeInventedWhenEcologyIsUnauthored": true,
+    "offscreenHarvestConsumesSameResourceState": true,
+    "marketSupplyRequiresActualCatchOrStock": true
+  },
+  "resourceAreaFields": [
+    "area_id",
+    "water_body_ref",
+    "habitat_tags",
+    "resource_groups",
+    "relative_biomass",
+    "recovery_pressure",
+    "seasonal_modifiers",
+    "access_constraints",
+    "recent_harvest_pressure",
+    "last_update_time"
+  ],
+  "harvestInputs": [
+    "vessel_or_shore_party",
+    "crew_skill",
+    "gear",
+    "effort_time",
+    "resource_area",
+    "relative_biomass",
+    "season",
+    "weather",
+    "water_state",
+    "visibility",
+    "competition",
+    "risk"
+  ],
+  "harvestOutputs": [
+    "catch_quantity_or_band",
+    "catch_composition_if_authored",
+    "bycatch_or_waste_if_profiled",
+    "gear_damage",
+    "crew_fatigue",
+    "incident_refs",
+    "resource_pressure_delta"
+  ],
+  "resourceDynamics": [
+    "natural_recovery",
+    "seasonal_movement_or_availability",
+    "harvest_pressure",
+    "environmental_event",
+    "habitat_change"
+  ],
+  "lodRules": {
+    "high": "individual_work_actions_and_catches",
+    "medium": "trip_level_effort_and_catch_groups",
+    "low": "aggregate_effort_and_stock_deltas_by_area_and_time_slice"
+  },
+  "economyBridge": [
+    "catch_to_vessel_cargo",
+    "vessel_to_landing_point",
+    "landing_to_market_or_preservation",
+    "stock_to_consumption_or_trade"
+  ],
+  "runtimeImplementationRequiredLater": true
+}

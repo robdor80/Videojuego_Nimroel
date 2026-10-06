@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_waterborne_encounter_combat_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "systemPurpose": "Resolve detection, pursuit, avoidance, collision, combat, boarding, surrender, rescue and aftermath between waterborne vessels without changing cultural weapon technology.",
+  "stableIdNamespaces": {
+    "WENC": "waterborne_encounter_state",
+    "WCOM": "waterborne_combat_state",
+    "BOARD": "boarding_state",
+    "RESC": "water_rescue_state"
+  },
+  "immutableRules": {
+    "encounterRequiresSpatialTemporalContact": true,
+    "detectionRequiresPerceptionConditions": true,
+    "unknownInformationRemainsUnknown": true,
+    "combatCapabilitiesComeFromVesselAndCultureProfiles": true,
+    "weaponsCannotBeInventedByResolver": true,
+    "damageHasPhysicalTarget": true,
+    "crewCasualtiesAffectCapability": true,
+    "surrenderCaptureAndWithdrawalAreValidOutcomes": true,
+    "destroyedOrCapturedStatePersists": true,
+    "offscreenResolutionUsesSameInputsAndConsequences": true,
+    "offscreenDoesNotGuaranteePlayerSideOutcome": true
+  },
+  "encounterLifecycle": [
+    "undetected_proximity",
+    "detected",
+    "identified_or_uncertain",
+    "decision",
+    "maneuver",
+    "engagement_or_avoidance",
+    "disengagement",
+    "aftermath",
+    "resolved"
+  ],
+  "decisionOptions": [
+    "continue_route",
+    "observe",
+    "signal",
+    "avoid",
+    "flee",
+    "pursue",
+    "intercept",
+    "screen_or_escort",
+    "block",
+    "engage",
+    "board",
+    "surrender",
+    "assist_or_rescue"
+  ],
+  "relativePositionInputs": [
+    "range_band",
+    "bearing_or_relative_arc",
+    "wind_advantage",
+    "current_advantage",
+    "speed_advantage",
+    "maneuver_room",
+    "coast_or_hazard_proximity",
+    "visibility"
+  ],
+  "targetableSystems": [
+    "crew_exposure",
+    "rigging",
+    "sails",
+    "masts",
+    "steering",
+    "hull",
+    "oars_or_auxiliary_propulsion",
+    "deck_equipment"
+  ],
+  "damageConsequences": [
+    "speed_loss",
+    "maneuver_loss",
+    "reduced_control",
+    "water_ingress",
+    "fire_if_contextually_possible",
+    "crew_injury",
+    "weapon_or_tool_loss",
+    "cargo_damage",
+    "mission_abort",
+    "sinking_risk"
+  ],
+  "boardingLifecycle": [
+    "approach",
+    "grapple_or_contact",
+    "crossing_attempt",
+    "deck_contest",
+    "control_contest",
+    "repelled_or_capture_or_disengage"
+  ],
+  "moraleFactors": [
+    "leadership",
+    "casualties",
+    "relative_strength_perceived",
+    "escape_route",
+    "mission_priority",
+    "fatigue",
+    "damage",
+    "surprise",
+    "previous_events"
+  ],
+  "moraleIsNotSingleUniversalBar": true,
+  "aftermath": [
+    "rescue",
+    "medical_response",
+    "fire_or_flood_control",
+    "prisoners_or_captives_if_legal_context_allows",
+    "tow_or_salvage",
+    "cargo_recovery",
+    "repair_or_return",
+    "reporting",
+    "knowledge_propagation"
+  ],
+  "lodResolution": {
+    "high": "individual_actions_and_component_impacts",
+    "medium": "crew_groups_maneuver_phases_component_damage",
+    "low": "aggregate_capability_causal_resolution_with_persistent_consequences"
+  },
+  "runtimeImplementationRequiredLater": true
+}

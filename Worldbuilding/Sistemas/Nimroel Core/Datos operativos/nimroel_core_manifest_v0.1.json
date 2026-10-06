@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "nimroel_core_manifest",
-  "version": "0.2",
+  "version": "0.3",
   "status": "active_core_manifest",
   "authorityScope": "nimroel_universal",
   "root": "Worldbuilding/Sistemas/Nimroel Core/",
@@ -61,7 +61,10 @@
     "messagingLettersDelivery": "Datos operativos/nimroel_messaging_letters_delivery_contract_v0.1.json",
     "learningKnowledgeTransmission": "Datos operativos/nimroel_learning_knowledge_transmission_contract_v0.1.json",
     "knowledgeProvenance": "Datos operativos/nimroel_knowledge_provenance_contract_v0.1.json",
-    "physicalGeographyDrainage": "Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json"
+    "physicalGeographyDrainage": "Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+    "vesselNavigationSimulation": "Datos operativos/nimroel_vessel_navigation_simulation_contract_v0.1.json",
+    "waterborneEncounterCombat": "Datos operativos/nimroel_waterborne_encounter_combat_contract_v0.1.json",
+    "aquaticResourceHarvest": "Datos operativos/nimroel_aquatic_resource_harvest_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -120,12 +123,34 @@
     "HEAR": "hearing_result",
     "MSG": "message_type",
     "ED": "learning_mode",
-    "K": "knowledge_state"
+    "K": "knowledge_state",
+    "VSL": "vessel_entity",
+    "VOY": "voyage_state",
+    "CREW": "vessel_crew_assignment",
+    "BERTH": "berth_occupancy_state",
+    "WENC": "waterborne_encounter_state",
+    "WCOM": "waterborne_combat_state",
+    "BOARD": "boarding_state",
+    "RESC": "water_rescue_state",
+    "AQR": "aquatic_resource_population",
+    "FGR": "fishing_ground_or_harvest_area",
+    "HARV": "harvest_activity_state"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",
     "compatibilityPolicy": "preserve_stable_ids_and_world_state_meaning",
     "localOverridePolicy": "explicit_only",
     "duplicateAuthorityForbidden": true
+  },
+  "expansions": {
+    "maritimeSimulation2B": {
+      "status": "active_core_contracts_static_validated",
+      "contracts": [
+        "vesselNavigationSimulation",
+        "waterborneEncounterCombat",
+        "aquaticResourceHarvest"
+      ],
+      "regression": "Validacion/regresion_sistema_maritimo_core_2B_v0.1.md"
+    }
   }
 }

@@ -81,3 +81,18 @@ Se ha añadido:
 - `physicalGeographyDrainage` → reglas universales de microrelieve, drenaje, cuencas, manantiales e hidrografía menor.
 
 Esto **no reabre la refactorización de Treskal**. Es una ampliación nueva del Core reutilizable por cualquier reino o territorio.
+
+
+## Ampliación posterior — sistema marítimo 2B
+
+Se añaden tres contratos universales:
+
+- `vesselNavigationSimulation` — embarcaciones persistentes, navegación, tripulación, carga, puertos y LOD;
+- `waterborneEncounterCombat` — encuentros, persecución, combate, abordaje, captura y rescate;
+- `aquaticResourceHarvest` — pesca y recursos acuáticos renovables con presión y recuperación.
+
+Esta ampliación no reabre la extracción histórica desde Treskal. Añade infraestructura universal nueva para mar, ríos y lagos.
+
+Marcador de validación:
+
+`NIMROEL_CORE_MARITIME_2B_STATIC_REGRESSION_VALIDATED`
