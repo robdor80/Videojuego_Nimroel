@@ -110,18 +110,22 @@ Las Grandes Casas deben **rendir cuentas a la Corona** por su gestión.
 
 ## 7. Fuerza militar y seguridad
 
-Las Grandes Casas **no poseen ejército propio**.
+La autoridad militar suprema del Reino corresponde a **Hallheim y a la Corona de Norgard**.
 
-La potestad militar del Reino corresponde a **Hallheim y a la Corona de Norgard**.
+Las Grandes Casas mantienen fuerzas propias subordinadas al orden del Reino:
 
-Cada Gran Casa dispone de una **guardia propia**, cuyas funciones son:
+- Guardia de la Casa;
+- guardias urbanas y seguridad territorial;
+- núcleo militar profesional;
+- reserva movilizable.
 
-- proteger a la propia Casa;
-- garantizar la seguridad de su territorio;
-- mantener la **Paz del Rey**;
-- hacer cumplir la ley y el orden dentro de su jurisdicción.
+Pueden utilizarlas para defender y asegurar sus territorios, pero no pueden declarar guerras soberanas, mantener alianzas militares exteriores independientes ni poseer una Armada de guerra propia.
 
-Estas guardias no equivalen a ejércitos independientes.
+Cuando el Rey o Reina convoca fuerzas del Reino, las Grandes Casas deben aportar sus contingentes, que pasan a operar bajo la cadena de mando de campaña de la Corona.
+
+Desarrollo completo:
+
+`sistema_militar_norgard_v0.1.md`.
 
 ---
 
@@ -178,25 +182,19 @@ Los detalles específicos de cada Gran Casa, de la sucesión de la Corona y del 
 
 ---
 
-## Revisión sistémica pendiente — fuerzas de las Grandes Casas y Casas menores
+## Sistema militar vigente
 
-El bloque actual que establece que las Grandes Casas no poseen ejército propio queda **pendiente de revisión formal**.
+La revisión del antiguo modelo militar ha quedado cerrada.
 
-Se ha aprobado como dirección de desarrollo estudiar un sistema en el que:
+La Corona conserva la autoridad militar suprema, mientras las Grandes Casas mantienen fuerzas territoriales propias y contingentes movilizables bajo obligación de servicio al Rey.
 
-- la Corona mantenga la autoridad militar suprema;
-- Aethros disponga de la fuerza directa real;
-- las otras Grandes Casas mantengan fuerzas territoriales propias;
-- todas deban responder a la convocatoria militar del Rey;
-- exista una distinción entre guardias, guarniciones, núcleo profesional y tropas movilizables.
+Las Casas menores pueden sostener guardias y pequeñas guarniciones subordinadas a su Gran Casa.
 
-También se desarrollará la existencia de **Casas menores** subordinadas a las Grandes Casas y, en última instancia, a la Corona.
+Documento canónico:
 
-Hasta que se cierre ese bloque, no deben fijarse cifras ni estructuras militares definitivas.
+`sistema_militar_norgard_v0.1.md`
 
-Documento de trabajo:
-
-`revision_militar_y_casas_menores.md`
+El antiguo documento `revision_militar_y_casas_menores.md` se conserva como historial de la revisión.
 
 El protocolo de recepción del monarca en las Grandes Casas se desarrolla en:
 

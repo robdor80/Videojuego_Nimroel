@@ -75,18 +75,21 @@ Cada Gran Casa:
 - entrega a la Corona la parte estipulada;
 - responde ante la Corona por su gestión.
 
-## Guardia de las Grandes Casas
+## Fuerzas de las Grandes Casas
 
-Las Grandes Casas **no poseen ejércitos propios**.
+Las Grandes Casas mantienen fuerzas propias subordinadas a la Corona.
 
-Cada una dispone de una **guardia propia** destinada a:
+Cada una puede disponer de:
 
-- proteger a la Casa;
-- garantizar la seguridad de su territorio;
-- mantener la **Paz del Rey**;
-- hacer cumplir la ley y el orden.
+- Guardia de la Casa;
+- guardias urbanas y seguridad territorial;
+- fuerza militar profesional;
+- reserva movilizable;
+- contingentes subordinados de Casas menores.
 
-Estas guardias no constituyen fuerzas militares soberanas ni ejércitos independientes.
+Estas fuerzas sirven para defensa, guarnición y seguridad territorial.
+
+No conceden soberanía militar: la Corona conserva el poder de guerra del Reino y el mando estratégico cuando convoca los contingentes de las Casas.
 
 ---
 
@@ -555,7 +558,7 @@ Quedan pendientes, en general:
 - lemas heráldicos;
 - legislación administrativa específica que regule casos estratégicos como Rodas o la Forja Estelar.
 
-No deben añadirse ejércitos independientes a las Grandes Casas salvo que el canon político general de Norgard sea modificado expresamente en el futuro.
+Las fuerzas territoriales de las Grandes Casas son canónicas, pero no son ejércitos soberanos: quedan sometidas al marco militar común de Norgard y a la convocatoria de la Corona.
 
 ---
 
@@ -586,14 +589,14 @@ Desarrollo temático:
 
 ---
 
-# 16. Revisión pendiente del sistema militar y Casas menores
+# 16. Sistema militar y Casas menores
 
-La regla previa según la cual las Grandes Casas no poseen ejército propio está **pendiente de revisión formal**.
+La revisión militar queda cerrada.
 
-La dirección aprobada contempla fuerzas territoriales de las Grandes Casas sometidas a la autoridad militar suprema de la Corona, además de la futura introducción de **Casas menores** subordinadas.
+Las Grandes Casas mantienen fuerzas territoriales subordinadas a la Corona y las Casas menores pueden aportar guardias, pequeñas guarniciones y contingentes a través de su Gran Casa.
 
-No se fijarán cifras, jerarquías ni obligaciones detalladas hasta desarrollar este bloque.
+Marco canónico:
 
-Documento de trabajo:
+`../Gobierno y leyes/sistema_militar_norgard_v0.1.md`
 
-`../Gobierno y leyes/revision_militar_y_casas_menores.md`
+Las cifras y perfiles concretos pertenecen a cada Casa y territorio.

@@ -220,6 +220,30 @@ Los **berserkers de Rodas** son un caso aparte y deberán contar con perfil prop
 
 ---
 
+## 11A. Fuerzas territoriales de las Grandes Casas
+
+Las fuerzas militares de Darovan, Edranor, Galdren y Valrik son distintas del ejército permanente de la Corona.
+
+Pueden utilizar de forma funcional:
+
+- heráldica de su Casa;
+- colores propios de la Casa;
+- escudos militares canónicos de la Casa;
+- equipo adaptado a territorio, función y riqueza.
+
+Deben seguir manteniendo el ADN militar de Norgard:
+
+- realismo preindustrial;
+- funcionalidad;
+- disciplina;
+- ausencia de fantasía ornamental gratuita.
+
+Cuando sirven en una campaña real conservan su identidad visual de Casa. La subordinación a la Corona se expresa mediante contexto de mando, no sustituyendo automáticamente toda su heráldica por el lobo Aethros.
+
+La Guardia Real y el ejército permanente de la Corona continúan usando la identidad Aethros mientras Aethros sea la Casa Regente.
+
+---
+
 ## 12. Vestimenta civil
 
 La ropa cotidiana depende de:

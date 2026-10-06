@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_military_authority_house_forces_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "norgard_realm_military_framework",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_militar_norgard_v0.1.md",
+  "crown": {
+    "supremeMilitaryAuthority": true,
+    "directForces": [
+      "royal_guard",
+      "crown_regular_army",
+      "royal_navy",
+      "direct_strategic_forces"
+    ],
+    "royalNavyExclusiveToCrown": true,
+    "mayAssumeStrategicAssetsWhenCanonRequires": true
+  },
+  "greatHouseLayers": [
+    "house_guard",
+    "urban_and_territorial_security",
+    "professional_territorial_force",
+    "trained_mobilizable_reserve"
+  ],
+  "extraordinaryLevy": {
+    "ordinaryTool": false,
+    "allowedFor": [
+      "large_scale_war",
+      "invasion",
+      "existential_threat",
+      "extraordinary_royal_order"
+    ],
+    "civilianConsequencesRequired": true
+  },
+  "localAuthority": {
+    "defensiveMobilizationWithoutPriorRoyalOrder": true,
+    "independentOffensiveWar": false,
+    "independentForeignAlliance": false,
+    "sovereignWarFleet": false
+  },
+  "royalMuster": {
+    "responseMandatory": true,
+    "houseInternalOrganizationPreserved": true,
+    "campaignStrategicCommand": "Crown_of_Norgard",
+    "refusalWithoutCause": "grave_vassal_obligation_breach"
+  },
+  "minorHouses": {
+    "mayMaintain": [
+      "household_guard",
+      "small_garrison",
+      "local_patrols",
+      "mobilizable_contingent"
+    ],
+    "sovereignArmy": false,
+    "normalIntegration": "through_parent_great_house"
+  },
+  "sizePolicy": "defined_per_house_not_identical_across_realm",
+  "functionalCommandTerms": [
+    "commander",
+    "captain",
+    "sergeant",
+    "soldier_or_guard"
+  ],
+  "knightTitleIsAutomaticCommand": false,
+  "urbanGuardDistinctFromArmy": true,
+  "heraldry": {
+    "crownDirectForcesUseRegentHouseHeraldry": true,
+    "greatHouseForcesUseHouseHeraldry": true,
+    "houseHeraldryDoesNotImplySovereignty": true
+  }
+}

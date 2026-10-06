@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E4 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E5 ACTIVOS**
 
 ## Objetivo
 
@@ -125,10 +125,30 @@ El resto continúa bloqueado hasta que exista canon suficiente.
 
 ## Validación de cierre
 
-E1, E2, E3 y E4 han superado la regresión estática de contratos del cierre Treskal/Core.
+E1, E2, E3, E4 y E5 han superado la regresión estática de contratos del cierre Treskal/Core.
 
 Estado:
 
 **NORGARD_DEFAULTS_STATICALLY_VALIDATED**
 
 Los elementos de `blockedPendingCanon` permanecen deliberadamente sin definir hasta que exista canon suficiente.
+
+
+### E5 — sistema militar de Norgard
+
+Activo a nivel Reino:
+
+- autoridad militar suprema de la Corona;
+- fuerzas directas de la Corona;
+- Guardia de Casa, seguridad territorial, fuerza profesional y reserva para las Grandes Casas;
+- capacidad defensiva territorial sin soberanía militar;
+- convocatoria real obligatoria;
+- Casas menores con fuerzas limitadas subordinadas;
+- Armada Real exclusiva de la Corona;
+- separación entre Guardia urbana y ejército territorial.
+
+Contrato operativo:
+
+`Datos operativos/norgard_military_authority_house_forces_default_v0.1.json`
+
+El antiguo bloqueo `military_and_guard_final_framework` queda resuelto.

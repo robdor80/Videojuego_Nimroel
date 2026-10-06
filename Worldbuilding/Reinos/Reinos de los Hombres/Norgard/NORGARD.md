@@ -255,18 +255,20 @@ Las Grandes Casas deben **rendir cuentas a la Corona** por su gestión.
 
 ## Fuerza armada
 
-Las Grandes Casas **no poseen ejército propio**.
+Las Grandes Casas mantienen fuerzas militares territoriales propias, pero **no poseen soberanía militar**.
 
-La potestad militar del Reino corresponde a **Hallheim y a la Corona de Norgard**.
+La potestad militar suprema corresponde a **Hallheim y a la Corona de Norgard**.
 
-Cada Gran Casa sí dispone de una **guardia propia**, cuya función es:
+Cada Gran Casa puede sostener:
 
-- proteger a la propia Casa;
-- garantizar la seguridad de su territorio;
-- mantener la **Paz del Rey**;
-- hacer cumplir la ley y el orden dentro de su jurisdicción.
+- Guardia de la Casa;
+- guardias urbanas y seguridad territorial;
+- núcleo militar profesional;
+- reserva movilizable.
 
-Estas guardias no equivalen a ejércitos independientes.
+Pueden responder de inmediato a amenazas dentro de su territorio, pero una guerra ofensiva del Reino y la dirección estratégica general corresponden a la Corona.
+
+Cuando el Rey o Reina convoca al Reino, las Grandes Casas deben aportar sus contingentes y someterlos a la cadena de mando de campaña de la Corona.
 
 ## Jerarquía política
 
@@ -354,7 +356,7 @@ Las Cinco Grandes Casas son **Darovan, Edranor, Aethros, Galdren y Valrik**.
 
 La Casa Aethros ostenta la Corona. Las demás administran grandes territorios del Reino bajo su autoridad.
 
-Las Casas no son soberanas, no legislan de forma independiente y no poseen ejércitos propios. Cada una mantiene una guardia para proteger a la Casa, garantizar la seguridad territorial, mantener la Paz del Rey y hacer cumplir la ley.
+Las Casas no son soberanas y no legislan de forma independiente. Mantienen Guardia de Casa, seguridad territorial, fuerzas profesionales y reservas movilizables, siempre subordinadas a la autoridad militar suprema de la Corona.
 
 La estabilidad económica del Reino depende de una distribución de recursos entre los distintos territorios: metales preciosos, comercio, vino, agricultura, ganadería, minería, armas y herramientas, madera, artesanía, pesca y construcción naval.
 
@@ -2391,14 +2393,22 @@ El desarrollo completo se mantiene en:
 
 ---
 
-# Paso 21 — Revisión sistémica pendiente: ejército y Casas menores
+# Paso 21 — Sistema militar y fuerzas de las Grandes Casas
 
-Se ha aprobado conceptualmente revisar el sistema militar para que la Corona conserve la autoridad suprema mientras las Grandes Casas mantienen fuerzas territoriales propias y responden a la convocatoria real.
+La revisión militar queda **CANONIZADA**.
 
-También se ha aprobado introducir **Casas menores** subordinadas a las Grandes Casas y a la Corona, capaces de administrar ciudades, villas, fortalezas o comarcas.
+Principios vigentes:
 
-Este bloque **todavía no está canonizado en su detalle** y debe desarrollarse antes de sustituir formalmente el canon militar previo.
+- la Corona conserva la autoridad militar suprema;
+- Hallheim mantiene fuerzas directas de la Corona;
+- las Grandes Casas mantienen fuerzas territoriales profesionales y reservas;
+- la Guardia de la Casa y la Guardia urbana son instituciones distintas del ejército territorial;
+- las Casas menores pueden mantener guardias y pequeñas guarniciones subordinadas;
+- toda Gran Casa debe responder a la convocatoria militar del Rey;
+- ninguna Gran Casa puede declarar guerra soberana ni mantener una Armada de guerra independiente.
 
-Documento de trabajo:
+Documento canónico:
 
-`Gobierno y leyes/revision_militar_y_casas_menores.md`
+`Gobierno y leyes/sistema_militar_norgard_v0.1.md`
+
+El documento `revision_militar_y_casas_menores.md` queda como historial de diseño.
