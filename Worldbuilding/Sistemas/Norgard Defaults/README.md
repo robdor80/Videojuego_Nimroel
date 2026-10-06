@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E5 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E6 ACTIVOS**
 
 ## Objetivo
 
@@ -42,7 +42,7 @@ No listos todavía:
 - mayoría de edad y derecho laboral;
 - propiedad, herencia y alquiler;
 - sistema monetario completo, precios y fiscalidad;
-- marco naval y terminología naval;
+- terminología marítima general no cubierta por el marco militar naval;
 - tradición sanitaria de reino;
 - gastronomía general del reino;
 - nombres personales y apellidos;
@@ -125,7 +125,7 @@ El resto continúa bloqueado hasta que exista canon suficiente.
 
 ## Validación de cierre
 
-E1, E2, E3, E4 y E5 han superado la regresión estática de contratos del cierre Treskal/Core.
+E1, E2, E3, E4, E5 y E6 han superado la regresión estática de contratos del cierre Treskal/Core.
 
 Estado:
 
@@ -152,3 +152,29 @@ Contrato operativo:
 `Datos operativos/norgard_military_authority_house_forces_default_v0.1.json`
 
 El antiguo bloqueo `military_and_guard_final_framework` queda resuelto.
+
+
+### E6 — Armada Real de Norgard
+
+Activo a nivel Reino:
+
+- la Armada Real pertenece exclusivamente a la Corona de Norgard / Casa Regente Aethros;
+- navegación militar a vela, sin pólvora, cañones, bombardas ni armas de fuego;
+- combate mediante arquería, ballestas, escorpiones, balistas, maniobra, daño a aparejo/timón y abordaje;
+- doctrina centrada en transporte de tropas, escolta, protección de convoyes, logística e intercepción;
+- clasificación técnica en Categorías I–V y ocho clases;
+- Categorías I–III sin nombre propio individual obligatorio; identificación por clase y numeral/registro;
+- Categorías IV–V con nombre propio;
+- 25 grandes navíos nominales cerrados entre Categorías IV y V;
+- Clase Corona compuesta por la Nave Real **Lobo de Plata**;
+- Astilleros Reales y Base Naval Principal materializados en T08 de Treskal bajo autoridad directa de la Corona.
+
+Contrato operativo:
+
+`Datos operativos/norgard_royal_navy_default_v0.1.json`
+
+Desarrollo canónico:
+
+`06_Armada_real/armada_real_norgard_v0.1.md`
+
+El antiguo bloqueo `royal_naval_framework` queda resuelto. La terminología marítima general no necesaria para este marco puede seguir ampliándose sin reabrir E6.

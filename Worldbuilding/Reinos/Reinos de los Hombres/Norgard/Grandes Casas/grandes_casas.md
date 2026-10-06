@@ -466,7 +466,7 @@ El peso político Valrik se apoya especialmente en:
 - heredero y familia inmediata;
 - organización detallada de los astilleros;
 - composición y funcionamiento de la flota pesquera;
-- relación administrativa exacta con la Armada Real;
+- detalle administrativo fino de proveedores Valrik con la Armada Real; el control de la Armada y del complejo naval T08 pertenece ya de forma cerrada a la Corona;
 - historia del vínculo de lealtad con Aethros.
 
 ### Fuerzas militares Valrik

@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_royal_navy_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "crown_of_norgard_royal_navy",
+  "owner": "Crown_of_Norgard_House_Aethros",
+  "sovereignWarFleet": true,
+  "greatHousesMayOwnSovereignWarFleets": false,
+  "propulsion": "sail",
+  "gunpowder": false,
+  "cannons": false,
+  "bombards": false,
+  "firearms": false,
+  "concealedMagicalGunpowderEquivalent": false,
+  "combatDoctrine": {
+    "priorities": [
+      "troop_transport",
+      "transport_escort",
+      "convoy_protection",
+      "logistics_transport",
+      "patrol",
+      "reconnaissance",
+      "interception",
+      "sea_route_control"
+    ],
+    "ordinaryMethods": [
+      "maneuver",
+      "archery",
+      "crossbows",
+      "scorpions",
+      "ballistae",
+      "rigging_damage",
+      "steering_damage",
+      "crew_suppression",
+      "boarding"
+    ],
+    "largeShipTrebuchetsOrdinary": false,
+    "rammingDominantDoctrine": false
+  },
+  "identificationPolicy": {
+    "categoryPurpose": "internal_naval_shipyard_logistics_classification",
+    "classPurpose": "concrete_ship_design",
+    "categoriesIToIII": "class_plus_registry_numeral_no_proper_name_required",
+    "categoriesIVToV": "proper_name_required",
+    "mastCountFixedByClass": true,
+    "lengthBandApproximateByClass": true
+  },
+  "classes": [
+    {
+      "category": "I",
+      "classId": "drennar",
+      "displayName": "Drennar",
+      "lengthMeters": {
+        "min": 12,
+        "max": 18
+      },
+      "masts": 1,
+      "roles": [
+        "liaison",
+        "courier",
+        "coastal_reconnaissance"
+      ],
+      "properNames": false,
+      "activeUnitCount": "not_fixed"
+    },
+    {
+      "category": "II",
+      "classId": "suthir",
+      "displayName": "Suthir",
+      "lengthMeters": {
+        "min": 20,
+        "max": 28
+      },
+      "masts": 2,
+      "roles": [
+        "patrol",
+        "exploration",
+        "light_escort"
+      ],
+      "properNames": false,
+      "activeUnitCount": "not_fixed"
+    },
+    {
+      "category": "III-A",
+      "classId": "haldren",
+      "displayName": "Haldren",
+      "lengthMeters": {
+        "min": 28,
+        "max": 34
+      },
+      "masts": 2,
+      "roles": [
+        "fast_escort",
+        "interception"
+      ],
+      "properNames": false,
+      "activeUnitCount": "not_fixed"
+    },
+    {
+      "category": "III-B",
+      "classId": "vardek",
+      "displayName": "Vardek",
+      "lengthMeters": {
+        "min": 32,
+        "max": 38
+      },
+      "masts": 3,
+      "roles": [
+        "heavy_escort",
+        "combat",
+        "boarding"
+      ],
+      "properNames": false,
+      "activeUnitCount": "not_fixed"
+    },
+    {
+      "category": "IV-A",
+      "classId": "norgard",
+      "displayName": "Norgard",
+      "lengthMeters": {
+        "min": 38,
+        "max": 46
+      },
+      "masts": 3,
+      "roles": [
+        "large_troop_transport"
+      ],
+      "properNames": true,
+      "activeUnitCount": 12,
+      "ships": [
+        "Hallheim",
+        "Treskal",
+        "Dorth",
+        "Arleon",
+        "Veldora",
+        "Taramin",
+        "Syvaris",
+        "Rodas",
+        "Elandor",
+        "Lamberthor",
+        "Raisoth",
+        "Suthiros"
+      ]
+    },
+    {
+      "category": "IV-B",
+      "classId": "treihord",
+      "displayName": "Treihord",
+      "lengthMeters": {
+        "min": 40,
+        "max": 48
+      },
+      "masts": 3,
+      "roles": [
+        "large_escort",
+        "combat",
+        "convoy_protection"
+      ],
+      "properNames": true,
+      "activeUnitCount": 8,
+      "ships": [
+        "Indomable",
+        "Lealtad",
+        "Vigía",
+        "Bastión",
+        "Tempestad",
+        "Centinela",
+        "Resolución",
+        "Juramento"
+      ]
+    },
+    {
+      "category": "V-A",
+      "classId": "aethros",
+      "displayName": "Aethros",
+      "lengthMeters": {
+        "min": 46,
+        "max": 54
+      },
+      "masts": 4,
+      "roles": [
+        "heavy_warship",
+        "command",
+        "combat"
+      ],
+      "properNames": true,
+      "activeUnitCount": 4,
+      "ships": [
+        "Guardián del Norte",
+        "Corona del Norte",
+        "Furia del Norte",
+        "Azote del Norte"
+      ]
+    },
+    {
+      "category": "V-B",
+      "classId": "corona",
+      "displayName": "Corona",
+      "lengthMeters": {
+        "min": 55,
+        "max": 60
+      },
+      "masts": 4,
+      "roles": [
+        "royal_ship",
+        "heavy_warship",
+        "command",
+        "royal_representation"
+      ],
+      "properNames": true,
+      "activeUnitCount": 1,
+      "ships": [
+        "Lobo de Plata"
+      ]
+    }
+  ],
+  "namedLargeWarshipsCount": 25,
+  "royalShip": {
+    "classId": "corona",
+    "name": "Lobo de Plata",
+    "uniqueDefinedUnit": true
+  },
+  "principalNavalComplex": {
+    "city": "Treskal",
+    "sectorId": "T08",
+    "includes": [
+      "Royal_Shipyards_of_Treskal",
+      "Principal_Naval_Base_of_the_Royal_Navy"
+    ],
+    "crownControlled": true,
+    "principalNotUniqueBase": true,
+    "houseValrikInternalCommand": false
+  },
+  "unresolvedWithoutReopeningFramework": [
+    "exact_counts_categories_I_to_III",
+    "specialized_naval_rank_titles",
+    "secondary_naval_base_locations",
+    "exact_crew_complements_by_class",
+    "exact_mechanical_weapon_counts_by_class"
+  ]
+}

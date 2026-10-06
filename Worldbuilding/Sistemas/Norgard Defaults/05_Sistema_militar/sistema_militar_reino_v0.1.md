@@ -57,6 +57,20 @@ Las Grandes Casas pueden aportar:
 
 pero no poseen flotas de guerra soberanas.
 
+El marco naval cerrado se desarrolla en:
+
+`Worldbuilding/Sistemas/Norgard Defaults/06_Armada_real/armada_real_norgard_v0.1.md`
+
+Principios ya fijados:
+
+- navegación militar a vela;
+- ausencia absoluta de pólvora, cañones, bombardas y armas de fuego;
+- armas mecánicas, arquería, ballestas y abordaje;
+- prioridad doctrinal de transporte de tropas, escolta, convoy, logística e intercepción;
+- clasificación técnica por Categoría y Clase;
+- Base Naval Principal y Astilleros Reales de la Corona en T08 de Treskal;
+- la autoridad naval dentro de T08 no pertenece a Casa Valrik.
+
 ### Fuerzas y enclaves estratégicos directos
 
 Determinados recursos o fuerzas pueden quedar bajo control directo de la Corona.
