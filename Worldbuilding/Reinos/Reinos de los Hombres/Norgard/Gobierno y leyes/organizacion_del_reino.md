@@ -93,6 +93,8 @@ Las Grandes Casas pueden impartir en sus territorios la **Justicia del Rey**, ap
 
 Las Grandes Casas **no legislan de forma independiente**.
 
+El sistema penal común y el procedimiento de la Justicia del Rey se desarrollan en `Worldbuilding/Sistemas/Norgard Defaults/08_Sistema_penal/SISTEMA_PENAL_Y_JUSTICIA_DEL_REY_NORGARD_v0.1.md`.
+
 ---
 
 ## 6. Administración económica
