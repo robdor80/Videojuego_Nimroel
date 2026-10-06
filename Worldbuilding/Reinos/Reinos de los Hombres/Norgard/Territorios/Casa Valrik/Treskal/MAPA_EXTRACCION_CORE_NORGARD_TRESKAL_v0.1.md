@@ -1,3 +1,15 @@
+# CIERRE FINAL DE REFACTORIZACIÓN
+
+**Estado actual: TRESKAL_REFACTOR_COMPLETE_AND_STATICALLY_VALIDATED**
+
+La extracción de sistemas reutilizables desde Treskal ha concluido. Los estados históricos `READY_FOR_REGRESSION` que aparecen más abajo describen hitos durante la ejecución; la autoridad vigente está registrada en el mapa operativo v0.23 y en el informe:
+
+`Worldbuilding/Sistemas/Validacion/CIERRE_REFACTORIZACION_TRESKAL_CORE_NORGARD_VALRIK_v0.1.md`
+
+No quedan lotes de alta confianza pendientes. Los elementos bloqueados requieren canon futuro y no se consideran deuda de migración.
+
+---
+
 # Treskal — mapa de extracción Nimroel Core / Norgard / Treskal v0.1
 
 ## Estado

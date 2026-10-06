@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_defaults_manifest",
-  "version": "0.4",
+  "version": "0.5",
   "status": "active_realm_defaults_manifest",
   "authorityScope": "norgard_realm_defaults",
   "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
@@ -18,9 +18,9 @@
     "toponymicConvention": "Datos operativos/norgard_toponymic_convention_default_v0.1.json"
   },
   "readyCandidates": {
-    "funeralMourning": "extracted_active",
-    "crownMintingAuthority": "extracted_active_partial",
-    "toponymicConvention": "extracted_active"
+    "funeralMourning": "extracted_active_validated",
+    "crownMintingAuthority": "extracted_active_partial_validated",
+    "toponymicConvention": "extracted_active_validated"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
@@ -42,22 +42,27 @@
   "sourceAudit": "AUDITORIA_PREPARACION_DEFAULTS_NORGARD_v0.1.md",
   "executionProgress": {
     "E1": {
-      "status": "active_and_ready_for_regression",
+      "status": "validated_static_regression",
       "default": "Datos operativos/norgard_funeral_mourning_default_v0.1.json",
       "regression": "Validacion/regresion_e1_funeral_luto_norgard_v0.1.md"
     },
     "E2": {
-      "status": "active_and_ready_for_regression",
+      "status": "validated_static_regression",
       "default": "Datos operativos/norgard_crown_minting_authority_default_v0.1.json",
       "regression": "Validacion/regresion_e2_acunacion_norgard_v0.1.md"
     },
     "E3": {
-      "status": "active_and_ready_for_regression",
+      "status": "validated_static_regression",
       "default": "Datos operativos/norgard_toponymic_convention_default_v0.1.json",
       "regression": "Validacion/regresion_e3_toponimia_norgard_v0.1.md"
     }
   },
   "downstreamDefaults": {
     "casaValrik": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_defaults_manifest_v0.1.json"
+  },
+  "validation": {
+    "status": "validated_static_regression",
+    "regressionSpecifications": 3,
+    "blockedPendingCanonIsIntentional": true
   }
 }

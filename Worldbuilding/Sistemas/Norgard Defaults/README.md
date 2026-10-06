@@ -107,3 +107,14 @@ Pendiente siguiente capa:
 - Casa Valrik — peso especial de la palabra dada/honor.
 
 El resto continúa bloqueado hasta que exista canon suficiente.
+
+
+## Validación de cierre
+
+E1, E2 y E3 han superado la regresión estática de contratos del cierre Treskal/Core.
+
+Estado:
+
+**NORGARD_DEFAULTS_STATICALLY_VALIDATED**
+
+Los elementos de `blockedPendingCanon` permanecen deliberadamente sin definir hasta que exista canon suficiente.

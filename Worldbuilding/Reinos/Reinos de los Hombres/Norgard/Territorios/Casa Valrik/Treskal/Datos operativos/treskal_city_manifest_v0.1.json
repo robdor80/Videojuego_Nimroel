@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "0.2",
+  "version": "0.3",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -253,10 +253,11 @@
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",
     "urbanIntegrationTestPack": "Datos operativos/treskal_urban_integration_test_pack_v0.1.json",
     "functionalClosureAudit": "Datos operativos/treskal_functional_closure_audit_v0.1.json",
-    "coreExtractionMap": "Datos operativos/treskal_core_extraction_map_v0.1.json"
+    "coreExtractionMap": "Datos operativos/treskal_core_extraction_map_v0.1.json",
+    "refactorClosure": "Worldbuilding/Sistemas/Validacion/CIERRE_REFACTORIZACION_TRESKAL_CORE_NORGARD_VALRIK_v0.1.md"
   },
   "coreInheritance": {
-    "status": "complete_high_confidence_migration_active",
+    "status": "complete_high_confidence_migration_validated",
     "coreManifest": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
     "migratedSystems": {
       "memorySalienceForgetting": {
@@ -604,6 +605,12 @@
         "localContract": "Datos operativos/treskal_information_and_reputation_contract_v0.1.json",
         "localOverridesEmpty": false
       }
+    },
+    "validation": {
+      "status": "validated_static_regression",
+      "coreNamespaces": 57,
+      "migratedSystems": 48,
+      "duplicateAuthorityDetected": false
     }
   },
   "realmDefaultsInheritance": {
@@ -627,7 +634,10 @@
         "localOverridePresent": false
       }
     },
-    "status": "active"
+    "status": "active",
+    "validation": {
+      "status": "validated_static_regression"
+    }
   },
   "houseDefaultsInheritance": {
     "manifest": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_defaults_manifest_v0.1.json",
@@ -639,6 +649,9 @@
         "saveMigrationRequired": false
       }
     },
-    "status": "active"
+    "status": "active",
+    "validation": {
+      "status": "validated_static_regression"
+    }
   }
 }

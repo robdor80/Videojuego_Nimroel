@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_core_extraction_map",
-  "version": "0.22",
-  "status": "refactor_scope_complete_pending_external_canon",
+  "version": "0.23",
+  "status": "refactor_complete_and_statically_validated",
   "sourceAuthorityUntilMigration": "All high-confidence migrated namespaces use Nimroel Core; Norgard and House defaults supply scoped canon; Treskal retains explicit local overrides. Remaining pending items are external canon, not migration debt.",
   "targetInheritance": [
     "Nimroel_Core",
@@ -135,7 +135,7 @@
   },
   "executionProgress": {
     "batchA1": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "MEM",
         "PERS",
@@ -146,7 +146,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_mem_pers_emo_v0.1.md"
     },
     "batchA2": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "GOAL",
         "DEC",
@@ -157,7 +157,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_goal_dec_trust_view_v0.1.md"
     },
     "batchA3": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "STAT",
         "CRED",
@@ -170,7 +170,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_stat_cred_conf_dial_attn_exp_v0.1.md"
     },
     "batchA4": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "STRS",
         "VAL",
@@ -180,7 +180,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_strs_val_self_v0.1.md"
     },
     "batchB1": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "PREG",
         "CHD",
@@ -191,7 +191,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_preg_chd_age_kin_v0.1.md"
     },
     "batchB2": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "DEP",
         "CARE",
@@ -204,7 +204,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_dep_care_chore_dom_rest_need_v0.1.md"
     },
     "batchC1": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "EMP",
         "AGEN",
@@ -214,7 +214,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_emp_agen_wait_v0.1.md"
     },
     "batchC2": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "RES",
         "MOVE",
@@ -226,7 +226,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_res_move_apr_fav_req_v0.1.md"
     },
     "batchD1": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "OWN",
         "COND",
@@ -237,7 +237,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_own_cond_tool_ws_v0.1.md"
     },
     "batchD2": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "BUILD",
         "DOOR"
@@ -246,7 +246,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_build_door_v0.1.md"
     },
     "batchD3": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "WASTE",
         "WST"
@@ -255,7 +255,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_waste_wst_v0.1.md"
     },
     "batchD4": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "HAZ",
         "ACC",
@@ -266,7 +266,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_haz_acc_fire_ersp_v0.1.md"
     },
     "batchU1": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "FRI",
         "AFF",
@@ -277,7 +277,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_fri_aff_rift_gift_v0.1.md"
     },
     "batchU2": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "CONV",
         "VOICE",
@@ -289,7 +289,7 @@
       "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_migracion_conv_voice_hear_msg_ed_v0.1.md"
     },
     "batchU3": {
-      "status": "ready_for_regression",
+      "status": "validated_static_regression",
       "migratedNamespaces": [
         "K"
       ],
@@ -299,7 +299,7 @@
   },
   "highConfidenceCoreExtractionComplete": true,
   "norgardDefaultsAudit": {
-    "status": "ready_defaults_extracted_house_layer_active_blocked_external_canon",
+    "status": "validated_ready_defaults_extracted_blocked_external_canon",
     "manifest": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_defaults_manifest_v0.1.json",
     "audit": "Worldbuilding/Sistemas/Norgard Defaults/AUDITORIA_PREPARACION_DEFAULTS_NORGARD_v0.1.md",
     "ready": [
@@ -327,7 +327,7 @@
     ],
     "executionProgress": {
       "E1": {
-        "status": "active_and_ready_for_regression",
+        "status": "validated_static_regression",
         "extracted": [
           "funeral_cremation_custom",
           "three_day_formal_mourning"
@@ -337,7 +337,7 @@
         "regression": "Worldbuilding/Sistemas/Norgard Defaults/Validacion/regresion_e1_funeral_luto_norgard_v0.1.md"
       },
       "E2": {
-        "status": "active_and_ready_for_regression",
+        "status": "validated_static_regression",
         "extracted": [
           "crown_minting_authority_partial"
         ],
@@ -345,7 +345,7 @@
         "regression": "Worldbuilding/Sistemas/Norgard Defaults/Validacion/regresion_e2_acunacion_norgard_v0.1.md"
       },
       "E3": {
-        "status": "active_and_ready_for_regression",
+        "status": "validated_static_regression",
         "extracted": [
           "toponymic_convention"
         ],
@@ -354,10 +354,26 @@
       }
     },
     "houseDefaultsExecution": {
-      "status": "active_and_ready_for_regression",
+      "status": "validated_static_regression",
       "layer": "Worldbuilding/Sistemas/Casa Valrik Defaults/",
       "defaultContract": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_given_word_honor_default_v0.1.json",
       "regression": "Worldbuilding/Sistemas/Casa Valrik Defaults/Validacion/regresion_v1_palabra_dada_valrik_v0.1.md"
     }
+  },
+  "finalValidation": {
+    "status": "TRESKAL_REFACTOR_COMPLETE_AND_STATICALLY_VALIDATED",
+    "validationMode": "static_contract_regression",
+    "coreOperationalContractsChecked": 48,
+    "coreNamespacesChecked": 57,
+    "migratedTreskalSystemsChecked": 48,
+    "regressionSpecificationsChecked": 19,
+    "internalReferencesChecked": 119,
+    "missingReferences": 0,
+    "duplicateCoreAuthorityDetected": false,
+    "namespaceMetadataCorrectionsApplied": 11,
+    "stableNamespaceIdsChanged": false,
+    "saveMigrationIntroducedByClosure": false,
+    "runtimeValidationDeferred": true,
+    "runtimeValidationNote": "Runtime/gameplay regression belongs to future engine implementation; it is not a blocker for the completed design-contract refactor."
   }
 }

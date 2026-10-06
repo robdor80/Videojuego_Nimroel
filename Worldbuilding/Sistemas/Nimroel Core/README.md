@@ -2,7 +2,7 @@
 
 ## Estado
 
-**EXTRACCIÓN EN CURSO DESDE EL PROTOTIPO COMPLETO DE TRESKAL**
+**EXTRACCIÓN DE ALTA CONFIANZA COMPLETA Y VALIDADA ESTÁTICAMENTE**
 
 ## Objetivo
 
@@ -58,4 +58,15 @@ Extracción ejecutada:
 
 **Extracción de namespaces Core de alta confianza: COMPLETA.**
 
-Los siguientes sistemas se migrarán por lotes controlados.
+No quedan lotes Core de alta confianza pendientes de esta refactorización. Las futuras ampliaciones dependerán de nuevo canon o de nuevas necesidades de simulación.
+
+
+## Cierre de refactorización
+
+La extracción desde Treskal queda cerrada mediante regresión estática de contratos.
+
+Resultado:
+
+**TRESKAL_REFACTOR_COMPLETE_AND_STATICALLY_VALIDATED**
+
+Esto valida arquitectura, autoridad, namespaces, bridges, overrides y referencias documentales. Las pruebas runtime/gameplay se ejecutarán cuando estos contratos tengan implementación de motor; no constituyen deuda de la refactorización de worldbuilding.
