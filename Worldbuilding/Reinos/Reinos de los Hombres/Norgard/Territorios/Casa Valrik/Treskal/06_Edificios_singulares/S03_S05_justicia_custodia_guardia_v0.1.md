@@ -55,7 +55,7 @@ Debe permitir:
 - higiene mínima compatible con la época;
 - traslado seguro a sala de juicio.
 
-No define todavía una prisión de larga condena.
+**No es una prisión de larga condena.** La Ley del Rey establece que Norgard no usa encarcelamiento prolongado como pena ordinaria. S04 cubre detención temporal, preventiva cuando proceda y espera de traslado o ejecución.
 
 ---
 
@@ -84,7 +84,7 @@ No es un cuartel militar de campaña.
 
 Flujo conceptual:
 
-**incidente → guardia → custodia si procede → investigación / registro → juicio → sentencia**
+**incidente → guardia → custodia si procede → investigación / registro → juicio → sentencia → cumplimiento / traslado / ejecución según pena**
 
 No toda detención acaba en juicio grave.
 
@@ -169,3 +169,8 @@ Debe tener capacidad para:
 - respuesta rápida.
 
 El alojamiento militar de la Fuerza Territorial pertenece a T12/S11.
+
+
+# 11. Integración con la Ley del Rey
+
+S03/S04/S05 aplican el código penal común de Norgard y el procedimiento directo de Justicia del Rey. No existen fiscal profesional, abogado defensor ni jurado moderno. S03 dispone de juez/magistrado y escribanía; S05 apoya investigación y seguridad; S04 custodia, pero no se convierte en prisión penitenciaria de larga duración.
