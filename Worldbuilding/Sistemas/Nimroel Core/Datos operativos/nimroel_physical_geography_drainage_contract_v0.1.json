@@ -77,5 +77,10 @@
     "real_world_hydraulic_precision",
     "exact_numeric_thresholds_at_worldbuilding_stage",
     "random_stream_placement_without_terrain_context"
-  ]
+  ],
+  "validation": {
+    "status": "statically_validated_for_worldbuilding_context",
+    "regression": "Worldbuilding/Sistemas/Nimroel Core/Validacion/regresion_geografia_fisica_hidrologia_v0.1.md",
+    "runtimeImplementationRequiredLater": true
+  }
 }

@@ -70,3 +70,14 @@ Resultado:
 **TRESKAL_REFACTOR_COMPLETE_AND_STATICALLY_VALIDATED**
 
 Esto valida arquitectura, autoridad, namespaces, bridges, overrides y referencias documentales. Las pruebas runtime/gameplay se ejecutarán cuando estos contratos tengan implementación de motor; no constituyen deuda de la refactorización de worldbuilding.
+
+
+## Ampliación posterior — geografía física
+
+Tras cerrar la extracción desde Treskal, Nimroel Core puede seguir creciendo con sistemas universales nuevos.
+
+Se ha añadido:
+
+- `physicalGeographyDrainage` → reglas universales de microrelieve, drenaje, cuencas, manantiales e hidrografía menor.
+
+Esto **no reabre la refactorización de Treskal**. Es una ampliación nueva del Core reutilizable por cualquier reino o territorio.

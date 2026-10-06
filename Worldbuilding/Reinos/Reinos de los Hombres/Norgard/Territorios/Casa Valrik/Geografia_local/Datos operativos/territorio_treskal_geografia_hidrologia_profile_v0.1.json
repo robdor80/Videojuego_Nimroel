@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "documentId": "territorio_treskal_geografia_hidrologia_profile",
   "version": "0.1",
-  "status": "draft_operational_profile_approved_for_generation_context",
+  "status": "active_draft_generation_profile",
   "authorityScope": "territorio_valrik_treskal_geography",
   "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
   "authoredAnchors": {
@@ -147,5 +147,13 @@
     "exact_spring_positions",
     "exact_urban_microdrainage_before_Treskal_city_plan",
     "exact_major_peak_and_pass_locations_shared_with_Galdren"
-  ]
+  ],
+  "validation": {
+    "status": "statically_validated_for_worldbuilding_context",
+    "requiredSubzones": 8,
+    "inheritsActiveCoreContract": true,
+    "authoredAnchorsPreserved": true,
+    "exactMinorGeometryIntentionallyDeferred": true,
+    "runtimeImplementationRequiredLater": true
+  }
 }

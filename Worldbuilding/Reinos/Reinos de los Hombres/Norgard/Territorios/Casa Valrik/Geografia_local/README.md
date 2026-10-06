@@ -40,9 +40,9 @@ Las decisiones permanecen como borrador hasta la revisión territorial final.
 
 ### Estado
 
-**BORRADOR DE DISEÑO — DESARROLLADO PARA CONTEXTO DE GENERACIÓN**
+**BORRADOR DE DISEÑO — FASE COMPLETADA PARA CONTEXTO DE GENERACIÓN**
 
-La auditoría técnica del clima local ha detectado que el futuro sistema podrá inferir bien **cómo se comporta un curso de agua si existe**, pero todavía será necesario definir una base geográfica que permita responder:
+La auditoría técnica del clima local detectó que el sistema ya podía inferir **cómo se comporta un curso de agua si existe**, pero faltaba una base geográfica que permitiera responder:
 
 - dónde es razonable que aparezcan arroyos y manantiales;
 - de qué microcuenca proceden;
@@ -59,14 +59,14 @@ La fase se desarrolla ahora, una vez cerrado funcionalmente Treskal y antes de f
 
 ### Forma de trabajo
 
-Debe desarrollarse como una **conversación específica de worldbuilding/geografía local de Treskal**, separada de:
+Se ha desarrollado como una **fase específica de worldbuilding/geografía local de Treskal**, separada de:
 
 - la conversación climática actual;
 - la futura conversación de implementación técnica del motor.
 
-En esa fase se definirán relaciones y restricciones geográficas cualitativas.
+En esta fase se han definido relaciones y restricciones geográficas cualitativas.
 
-La conversión posterior a:
+La conversión futura a:
 
 - algoritmos;
 - mapas de altura;
@@ -74,7 +74,7 @@ La conversión posterior a:
 - estructuras de datos;
 - código;
 
-pertenecerá a una fase técnica distinta.
+pertenece a una fase técnica distinta.
 
 ### Objetivo
 
