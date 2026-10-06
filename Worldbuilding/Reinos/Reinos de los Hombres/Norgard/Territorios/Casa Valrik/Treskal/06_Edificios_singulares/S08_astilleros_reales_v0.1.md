@@ -209,3 +209,25 @@ No se cubre el recinto de banderas decorativas.
 ## Regla final
 
 **Los Astilleros Reales impresionan por la escala del trabajo naval y por su actividad, no por parecer una fortaleza ceremonial.**
+
+
+# 13. Límite pre-plano respecto al sistema naval
+
+El sistema naval general de Norgard sigue pendiente de canonización formal.
+
+Por tanto, el plano de Treskal **no debe añadir por defecto**:
+
+- una base naval independiente;
+- un arsenal separado;
+- un cuartel naval exterior a S08;
+- edificios de mando naval no exigidos por canon.
+
+S08 ya debe reservar dentro de su gran huella funcional capacidad para:
+
+- administración;
+- seguridad;
+- control de accesos;
+- almacenamiento estratégico;
+- coordinación de trabajo.
+
+La futura cadena de mando naval podrá utilizar esas capacidades mientras no exista una decisión canónica que exija un recinto independiente.

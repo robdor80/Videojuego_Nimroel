@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3063,6 +3063,43 @@
       "expected": [
         "dialogue and narrative may use only authorized KIN records",
         "parents siblings cousins hidden lineage and family revelations cannot be fabricated for flavor or drama"
+      ]
+    },
+    {
+      "id": "royal_protocol_fits_inside_valrik_seat",
+      "expected": [
+        "S01 contains royal reception seat capacity",
+        "S01 contains permanent Royal Apartments reserved for monarch",
+        "no separate royal palace is generated"
+      ]
+    },
+    {
+      "id": "pending_military_review_does_not_spawn_noncanonical_facilities",
+      "expected": [
+        "no standalone army barracks arsenal or military headquarters is added without later canon",
+        "some unassigned peripheral expansion capacity remains available"
+      ]
+    },
+    {
+      "id": "naval_chain_of_command_does_not_spawn_separate_base",
+      "expected": [
+        "T08 already contains administration security storage and controlled access capacity",
+        "separate naval base or arsenal requires explicit future canon"
+      ]
+    },
+    {
+      "id": "customs_dependency_does_not_force_customs_house",
+      "expected": [
+        "T07 retains generic port control and office capacity",
+        "exact customs or fiscal institution remains pending Norgard canon",
+        "no standalone customs house is added by default"
+      ]
+    },
+    {
+      "id": "penal_dependency_does_not_force_long_term_prison",
+      "expected": [
+        "S04 provides temporary custody",
+        "long-term prison complex is not added without Norgard penal canon"
       ]
     }
   ]

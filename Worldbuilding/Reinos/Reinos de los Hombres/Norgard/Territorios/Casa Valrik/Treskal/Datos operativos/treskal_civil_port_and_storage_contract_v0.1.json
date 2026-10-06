@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_civil_port_and_storage_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_design_contract",
   "civilSystems": {
     "river": {
@@ -100,5 +100,15 @@
   "externalDependencies": {
     "portTaxesCustoms": "Norgard_fiscal_and_legal_system",
     "exactAnchorageAndBerthGeometry": "future_Treskal_detailed_cartography"
+  },
+  "prePlanFiscalAccommodation": {
+    "exactCustomsAndPortTaxSystem": "pending_Norgard_fiscal_and_legal_system",
+    "genericPortControlOfficeCapacityAlreadySupported": true,
+    "standaloneCustomsHouseRequiredByCurrentCanon": false,
+    "futureFiscalFunctionsMayUse": [
+      "T07_port_control_spaces",
+      "S02_territorial_administration"
+    ],
+    "rule": "do_not_generate_named_customs_institution_until_canon_defines_it"
   }
 }

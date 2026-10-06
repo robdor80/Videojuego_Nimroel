@@ -214,3 +214,35 @@ sin que todos recorran los mismos espacios.
 ## Regla final
 
 **La sede Valrik debe sentirse como la casa desde la que se gobierna un territorio, no como una fortaleza desde la que se domina una ciudad.**
+
+
+# 12. Protocolo regio heredado
+
+S01 hereda el default de Norgard:
+
+`Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_royal_reception_residence_default_v0.1.json`
+
+Por tanto, el conjunto debe resolver de forma permanente:
+
+- un **asiento regio de recepción** reservado al Rey o Reina de Norgard;
+- una sala de audiencias capaz de reconfigurar su jerarquía durante una visita oficial;
+- **Aposentos Regios** reservados exclusivamente al monarca;
+- privacidad, servicio, custodia y circulación controlada para dichos aposentos.
+
+Los Aposentos Regios permanecen preparados aunque estén vacíos y no son utilizados como dormitorio ordinario por la familia Valrik.
+
+Esta obligación **no crea un edificio S adicional**, ni convierte la sede Valrik en palacio monumental o fortaleza.
+
+## Consecuencia para el plano
+
+El plano métrico de S01 deberá prever suficiente superficie y circulación para:
+
+- residencia familiar;
+- recepción señorial;
+- recepción regia;
+- alojamiento regio;
+- servicio;
+- seguridad;
+- separación respecto al acceso administrativo cotidiano de S02.
+
+La resolución exacta de habitaciones y alas sigue abierta hasta el diseño arquitectónico detallado.

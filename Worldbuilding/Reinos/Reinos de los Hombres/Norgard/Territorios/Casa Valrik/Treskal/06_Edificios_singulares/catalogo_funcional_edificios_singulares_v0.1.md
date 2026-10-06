@@ -24,7 +24,9 @@ Sí.
 - administración superior;
 - audiencias;
 - recepción de Casas menores;
-- representación territorial.
+- representación territorial;
+- recepción oficial del monarca;
+- Aposentos Regios permanentes y reservados.
 
 ## Sector
 
@@ -35,7 +37,8 @@ T05.
 - no convertir por defecto en castillo;
 - no monumentalidad excesiva;
 - no ubicar en zona inundable;
-- buena conexión con T03, T06 y T11.
+- buena conexión con T03, T06 y T11;
+- integrar protocolo regio sin crear un palacio separado.
 
 ---
 

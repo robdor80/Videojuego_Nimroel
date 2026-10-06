@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "0.1",
+  "version": "0.2",
   "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
@@ -118,7 +118,9 @@
         "territorial_administration",
         "audiences",
         "archives",
-        "tribute_management"
+        "tribute_management",
+        "royal_reception",
+        "royal_guest_accommodation"
       ],
       "near": [
         "T03",
@@ -535,7 +537,13 @@
     "S01": {
       "id": "house_valrik_main_seat",
       "sector": "T05",
-      "required": true
+      "required": true,
+      "royalProtocol": {
+        "inherits": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_royal_reception_residence_default_v0.1.json",
+        "royalReceptionSeatRequired": true,
+        "royalApartmentsRequired": true,
+        "separateRoyalBuildingRequired": false
+      }
     },
     "S02": {
       "id": "territorial_administration_center",
@@ -940,5 +948,21 @@
     "stableTechnicalIdsRequired": true,
     "visibleNamesCanChangeWithoutBreakingIds": true,
     "officialStreetNamingStillOpen": true
-  }
+  },
+  "planningFlexibility": {
+    "status": "design_safeguard_not_canon_facility",
+    "unassignedPeripheralExpansionCapacityRequired": true,
+    "suitableContexts": [
+      "T10_edge",
+      "T11_corridor_edges",
+      "service_side_of_T08_approach"
+    ],
+    "assignedUse": null,
+    "reasons": [
+      "military_and_guard_final_framework_pending",
+      "future_civic_or_logistics_growth"
+    ],
+    "rule": "preserve_some_low_density_expandable_land_without_naming_or_specializing_it_until_canon_requires_a_use"
+  },
+  "prePlanExternalCanonStatus": "complete_with_nonblocking_future_dependencies"
 }

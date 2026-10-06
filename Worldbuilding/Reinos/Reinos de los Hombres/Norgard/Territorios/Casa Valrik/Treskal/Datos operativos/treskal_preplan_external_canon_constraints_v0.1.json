@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_preplan_external_canon_constraints",
+  "version": "0.1",
+  "status": "active_preplan_constraint_set",
+  "purpose": "Freeze only Norgard-level facts that materially affect Treskal metric planning, while keeping unresolved canon nonblocking and non-invented.",
+  "planReadiness": "ready_for_metric_city_plan",
+  "authorInputRequiredNow": false,
+  "resolvedSpatialConstraints": {
+    "royalProtocol": {
+      "source": "Norgard Defaults/norgard_royal_reception_residence_default_v0.1.json",
+      "sector": "T05",
+      "facility": "S01",
+      "requirements": [
+        "royal_reception_seat",
+        "royal_apartments",
+        "privacy",
+        "service",
+        "controlled_access"
+      ],
+      "separateBuilding": false
+    },
+    "justiceAndGuard": {
+      "sector": "T06",
+      "facilities": [
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "standaloneLongTermPrison": false
+    },
+    "civilPort": {
+      "sector": "T07",
+      "separateFrom": "T08",
+      "genericControlOfficeCapacity": true,
+      "standaloneCustomsHouse": false
+    },
+    "royalShipyards": {
+      "sector": "T08",
+      "crownOwned": true,
+      "internalSecurity": true,
+      "internalAdministration": true,
+      "separateNavalBase": false,
+      "independentArsenal": false
+    },
+    "architecture": {
+      "materials": [
+        "stone",
+        "timber",
+        "slate"
+      ],
+      "ordinaryStoreys": "one_to_two_common_three_minority",
+      "cityWall": false,
+      "monumentalCastleForValrik": false
+    }
+  },
+  "nonBlockingPendingCanon": {
+    "militaryAndGuardFinalFramework": {
+      "currentAction": "no_noncanonical_barracks_or_arsenal",
+      "safeguard": "preserve_unassigned_peripheral_expansion_capacity",
+      "revisitOnlyIf": "future_canon_requires_distinct_large_footprint"
+    },
+    "royalNavalFramework": {
+      "currentAction": "keep_command_security_admin_inside_T08_capacity",
+      "revisitOnlyIf": "future_canon_requires_separate_naval_installation"
+    },
+    "portTaxesCustoms": {
+      "currentAction": "use_generic_T07_control_and_S02_fiscal_capacity",
+      "revisitOnlyIf": "future_canon_requires_distinct_customs_facility"
+    },
+    "longTermPenalSystem": {
+      "currentAction": "S04_temporary_custody_only",
+      "revisitOnlyIf": "future_canon_requires_long_term_prison_in_Treskal"
+    }
+  },
+  "forbiddenPrePlanInventions": [
+    "standalone_military_headquarters",
+    "standalone_army_barracks",
+    "independent_arsenal",
+    "separate_naval_base",
+    "standalone_customs_house",
+    "long_term_prison_complex",
+    "mint",
+    "city_wall"
+  ],
+  "genericExpansionReserve": {
+    "canonicalFacility": false,
+    "requirement": "retain_some_expandable_low_density_peripheral_land",
+    "candidateContexts": [
+      "T10_edge",
+      "T11_corridor_edges",
+      "service_side_of_T08_approach"
+    ],
+    "exactGeometry": "resolve_during_metric_plan"
+  }
+}
