@@ -1,7 +1,7 @@
-> **ACTUALIZACIÓN 2026-10-06 — DEPENDENCIA MILITAR RESUELTA**  
+> **ACTUALIZACIÓN 2026-10-06 — DEPENDENCIAS MILITAR Y NAVAL RESUELTAS**  
 > La sección 3 de esta auditoría registraba correctamente el estado previo del canon, pero ha quedado superada por el cierre posterior del sistema militar.  
 > Norgard ya posee marco militar canónico, Casa Valrik posee perfil militar propio y Treskal incorpora T12/S11/S12.  
-> El sistema militar **ya no es una dependencia pendiente ni no bloqueante: está resuelto para el plano**.  
+> El sistema militar **ya no es una dependencia pendiente ni no bloqueante: está resuelto para el plano**.\n> La Armada Real también ha quedado cerrada posteriormente como E6 de Norgard: T08 integra S08 Astilleros Reales + S13 Base Naval Principal bajo autoridad de la Corona.  
 > El documento se conserva como historial de la pasada pre-plano.
 
 ---
@@ -78,23 +78,33 @@ Resultado vigente:
 
 La reserva periférica genérica deja de ser el sustituto del cuartel: el uso militar conocido ya tiene huella propia en T12.
 
-## 4. Armada Real y Astilleros — SUFICIENTE PARA PLANO
+## 4. Armada Real, Astilleros y Base Naval Principal — RESUELTO
 
-T08 ya exige:
+El marco naval E6 de Norgard queda cerrado.
+
+T08 es el **Complejo Naval Real de Treskal** y contiene:
+
+- **S08 Astilleros Reales**;
+- **S13 Base Naval Principal de la Armada Real**.
+
+T08 pertenece a la Corona / Casa Aethros y no queda bajo mando de Casa Valrik.
+
+La Base Naval Principal no implica que sea la única base naval posible del Reino.
+
+El plano debe reservar dentro de T08:
 
 - gran frente de agua;
-- gradas;
-- patios;
-- talleres;
-- almacenes;
-- administración;
-- seguridad propia;
-- control de acceso;
+- gradas y talleres;
+- muelles militares y atraque;
+- patios y almacenes;
+- mando/administración naval;
+- seguridad y control de accesos;
+- apoyo a tripulaciones;
+- embarque de tropas y suministros;
+- preparación de convoyes;
 - respuesta contra incendios.
 
-El sistema naval general sigue pendiente, pero su cadena de mando puede alojarse en la capacidad administrativa ya prevista de T08 mientras el canon no exija otra cosa.
-
-**No se crea base naval separada ni arsenal independiente.**
+No se crea un arsenal de pólvora porque la Armada canónica carece de pólvora, cañones y armas de fuego.
 
 ## 5. Puerto, fiscalidad y aduanas — NO BLOQUEANTE
 
@@ -159,7 +169,7 @@ Treskal puede pasar al plano métrico sin esperar a cerrar todo el canon de Norg
 - T05/S02 administración;
 - T06 justicia/custodia/guardia;
 - T07 puerto civil con capacidad genérica de control;
-- T08 Astilleros Reales con administración y seguridad internas;
+- T08 Complejo Naval Real con S08 Astilleros Reales y S13 Base Naval Principal;
 - trazado sin muralla;
 - materiales y escala edificatoria local;
 - T12/S11/S12 para presencia militar Valrik;
@@ -167,7 +177,6 @@ Treskal puede pasar al plano métrico sin esperar a cerrar todo el canon de Norg
 
 ### Dependencias que NO bloquean el plano
 
-- cadena naval definitiva;
 - fiscalidad/aduanas exactas;
 - sistema penal de larga duración;
 - detalle material común de Norgard.

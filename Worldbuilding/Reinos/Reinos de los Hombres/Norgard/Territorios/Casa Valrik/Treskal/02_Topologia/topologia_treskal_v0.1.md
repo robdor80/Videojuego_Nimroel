@@ -14,7 +14,7 @@ Cadena funcional principal:
 
 **interior → río y caminos → muelles fluviales → intercambio y almacenes → desembocadura → puerto civil / litoral → mar**
 
-Los **Astilleros Reales** ocupan un sector litoral próximo, pero funcionalmente separado del puerto civil.
+El **Complejo Naval Real T08** ocupa un sector litoral próximo, pero funcionalmente separado del puerto civil. Integra los **Astilleros Reales S08** y la **Base Naval Principal S13**.
 
 ---
 
@@ -87,15 +87,15 @@ No sustituye a la gran Villa costera de astilleros civiles.
 
 ---
 
-# 5. Astilleros Reales
+# 5. Complejo Naval Real: Astilleros + Base Naval Principal
 
-Los Astilleros Reales se ubican en el **litoral contiguo al sistema portuario**, pero fuera del flujo ordinario del puerto civil.
+El Complejo Naval Real se ubica en el **litoral contiguo al sistema portuario**, pero fuera del flujo ordinario del puerto civil.
 
 Deben disponer de:
 
 - frente de agua propio;
 - accesos controlados;
-- gradas de construcción;
+- gradas de construcción;\n- muelles y atraques militares;\n- Base Naval Principal de la Armada;\n- espacios de embarque de tropas y preparación de convoyes;
 - almacenes navales;
 - patios de madera;
 - talleres;
@@ -266,7 +266,7 @@ De interior hacia mar, la lectura general de la ciudad debe tender a:
 
 En paralelo, sobre el litoral:
 
-**puerto civil → transición controlada → Astilleros Reales**
+**puerto civil → transición controlada → Complejo Naval Real T08 (S08 Astilleros + S13 Base Naval Principal)**
 
 La administración Valrik queda conectada al núcleo urbano, pero separada de la actividad portuaria más ruidosa.
 

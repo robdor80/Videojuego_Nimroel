@@ -6,7 +6,7 @@
 
 ## Importante
 
-Los identificadores S01–S12 son técnicos.
+Los identificadores S01–S13 son técnicos.
 
 **No son nombres canónicos de edificios.**
 
@@ -271,6 +271,38 @@ T12.
 Capacidad simultánea de actividad: **800–1.200 personas**.
 
 No es alojamiento permanente para toda la reserva.
+
+---
+
+# S13 — Base Naval Principal de la Armada Real
+
+## Obligatorio
+
+Sí.
+
+## Propiedad
+
+Corona de Norgard / Casa Regente Aethros.
+
+## Sector
+
+T08.
+
+## Funciones
+
+- atraque y apoyo a buques de la Armada;
+- mando y administración naval local;
+- seguridad naval y control de accesos;
+- apoyo a tripulaciones;
+- embarque y desembarque de tropas y suministros;
+- preparación y concentración de convoyes;
+- coordinación de mantenimiento con S08;
+- almacenes navales compatibles con una Armada sin pólvora;
+- respuesta contra incendios y emergencias.
+
+Es la **Base Naval Principal** de la Armada, no necesariamente la única base del Reino.
+
+No pertenece ni queda bajo mando de Casa Valrik.
 
 ---
 

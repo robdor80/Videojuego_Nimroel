@@ -22,7 +22,7 @@ La lectura general es:
 
 **interior rural y forestal → periferia logística → tejido urbano → muelles fluviales / mercado → desembocadura → puerto civil → mar**
 
-Los **Astilleros Reales** continúan a lo largo del litoral desde el sistema portuario civil, pero con separación física y control de accesos.
+El **Complejo Naval Real T08** continúa a lo largo del litoral desde el sistema portuario civil, con separación física y control de accesos. Integra S08 Astilleros Reales y S13 Base Naval Principal.
 
 ---
 
@@ -104,9 +104,9 @@ Debe conectar con:
 - T03;
 - servicios de T09.
 
-## T08 — Astilleros Reales
+## T08 — Complejo Naval Real de la Corona
 
-Debe ocupar un frente de agua propio, contiguo pero diferenciado respecto a T07.
+Debe ocupar un frente de agua propio, contiguo pero diferenciado respecto a T07.\n\nIncluye:\n\n- S08 Astilleros Reales;\n- S13 Base Naval Principal;\n- muelles y atraques militares;\n- administración y seguridad naval;\n- embarque de tropas y preparación de convoyes.
 
 Debe conectar con:
 
@@ -273,12 +273,12 @@ lo exigen.
 
 ---
 
-# 7. Escala de los Astilleros Reales
+# 7. Escala del Complejo Naval Real
 
-T08 debe sentirse grande por:
+T08 debe sentirse grande por la suma de astilleros y base naval:
 
 - superficie;
-- gradas;
+- gradas;\n- muelles militares;\n- grandes buques de la Armada;
 - madera;
 - talleres;
 - actividad;

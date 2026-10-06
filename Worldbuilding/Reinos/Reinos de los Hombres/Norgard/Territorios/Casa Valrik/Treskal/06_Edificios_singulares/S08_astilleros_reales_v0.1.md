@@ -2,13 +2,15 @@
 
 ## Estado
 
-**DISEÑO FUNCIONAL APROBADO — RECINTO DE LA CORONA**
+**CANON CERRADO — ASTILLEROS REALES DENTRO DEL COMPLEJO NAVAL T08**
 
 ## Propiedad y autoridad
 
 Los Astilleros Reales pertenecen a la **Corona de Norgard**.
 
-Su función es construir los grandes buques de guerra encargados para la **Armada Real**.
+Su función es construir, reparar y mantener buques de la **Armada Real**, incluidas las grandes clases IV y V.
+
+S08 forma la rama de construcción naval del **Complejo Naval Real T08**, que comparte sector con la Base Naval Principal S13.
 
 No pertenecen a Casa Valrik.
 
@@ -111,7 +113,7 @@ Debe existir capacidad para:
 - pagos;
 - supervisión.
 
-La cadena de mando concreta queda pendiente del desarrollo institucional naval.
+La autoridad administrativa superior pertenece a la **Corona de Norgard** y se coordina con la Base Naval Principal S13. Los títulos navales especializados pueden definirse más adelante sin alterar esta dependencia.
 
 ---
 
@@ -211,23 +213,21 @@ No se cubre el recinto de banderas decorativas.
 **Los Astilleros Reales impresionan por la escala del trabajo naval y por su actividad, no por parecer una fortaleza ceremonial.**
 
 
-# 13. Límite pre-plano respecto al sistema naval
+# 13. Integración con la Base Naval Principal
 
-El sistema naval general de Norgard sigue pendiente de canonización formal.
+El marco naval general de Norgard está cerrado en:
 
-Por tanto, el plano de Treskal **no debe añadir por defecto**:
+`Worldbuilding/Sistemas/Norgard Defaults/06_Armada_real/armada_real_norgard_v0.1.md`
 
-- una base naval independiente;
-- un arsenal separado;
-- un cuartel naval exterior a S08;
-- edificios de mando naval no exigidos por canon.
+T08 contiene dos grandes instalaciones relacionadas pero funcionalmente distinguibles:
 
-S08 ya debe reservar dentro de su gran huella funcional capacidad para:
+- **S08 — Astilleros Reales de Treskal**;
+- **S13 — Base Naval Principal de la Armada Real**.
 
-- administración;
-- seguridad;
-- control de accesos;
-- almacenamiento estratégico;
-- coordinación de trabajo.
+No son dos autoridades soberanas: ambas pertenecen a la Corona.
 
-La futura cadena de mando naval podrá utilizar esas capacidades mientras no exista una decisión canónica que exija un recinto independiente.
+S08 conserva como misión principal la construcción, reparación, mantenimiento y soporte industrial naval. S13 concentra la función de base, atraque, mando operativo local, apoyo a tripulaciones, embarque militar y preparación de convoyes.
+
+No se crea un arsenal de pólvora: la pólvora no existe en la tecnología militar canónica de la Armada.
+
+La separación interna exacta entre S08 y S13 se resolverá en el plano métrico mediante accesos, patios, muelles, edificios y zonas restringidas, manteniendo T08 como un único gran recinto naval de la Corona.

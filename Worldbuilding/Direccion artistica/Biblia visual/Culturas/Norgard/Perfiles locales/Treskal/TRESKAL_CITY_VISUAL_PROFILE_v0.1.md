@@ -39,7 +39,7 @@ Su prestigio nace principalmente de:
 - carpintería;
 - mobiliario;
 - actividad portuaria;
-- Astilleros Reales;
+- Astilleros Reales y Base Naval Principal;
 - mercados;
 - administración Valrik.
 
@@ -63,7 +63,7 @@ Treskal se sitúa:
 - junto a la desembocadura integrada de un río;
 - con muelles fluviales;
 - con puerto civil marítimo;
-- con Astilleros Reales en litoral contiguo pero separado;
+- con el Complejo Naval Real T08 — Astilleros Reales + Base Naval Principal — en litoral contiguo pero separado;
 - con relieve inmediato suave o abierto.
 
 ## Prohibido por defecto
@@ -129,24 +129,24 @@ No convertirlo automáticamente en:
 
 ---
 
-# 6. Astilleros Reales
+# 6. Complejo Naval Real T08
 
-Deben transmitir escala mediante:
+Debe transmitir escala mediante:
 
-- gradas;
+- gradas;\n- muelles militares y atraques;\n- presencia ocasional de grandes navíos de las clases IV y V;
 - cascos en construcción;
 - madera;
 - talleres;
 - patios;
-- trabajadores;
+- trabajadores;\n- marineros y tripulaciones;\n- embarque de tropas o suministros cuando proceda;
 - movimiento de materiales.
 
-Su carácter institucional puede mostrar heráldica real de forma funcional.
+S08 representa los Astilleros Reales y S13 la Base Naval Principal. Ambas instalaciones pertenecen a la Corona / Casa Aethros, no a Casa Valrik.\n\nSu carácter institucional puede mostrar heráldica real de forma funcional.
 
-No deben parecer:
+No debe parecer:
 
 - fortaleza costera;
-- palacio naval;
+- palacio naval;\n- base artillera de pólvora;
 - complejo industrial moderno.
 
 La escala procede del trabajo, no de monumentalidad gratuita.
@@ -501,7 +501,7 @@ Debe leerse:
 - eje de carpinteros;
 - muelles fluviales;
 - puerto civil;
-- acceso exterior a Astilleros Reales;
+- acceso exterior al Complejo Naval Real T08;\n- muelles de la Base Naval Principal cuando la escena lo requiera;
 - calles residenciales;
 - administración Valrik;
 - acceso o patio exterior del recinto militar T12;

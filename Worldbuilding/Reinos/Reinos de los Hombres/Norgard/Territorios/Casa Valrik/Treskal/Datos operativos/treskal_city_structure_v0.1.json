@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "0.3",
+  "version": "0.4",
   "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
@@ -35,7 +35,8 @@
       "construction": "robust_mixed_or_stone_wood_solution_to_be_resolved_by_span",
       "floodAware": true,
       "fortifiedByDefault": false
-    }
+    },
+    "principalRoyalNavalBaseInT08": true
   },
   "sectors": {
     "T01": {
@@ -165,15 +166,22 @@
       ]
     },
     "T08": {
-      "id": "royal_shipyards",
+      "id": "royal_naval_complex",
       "role": [
         "royal_warship_construction",
+        "royal_warship_repair_and_maintenance",
         "naval_workshops",
         "naval_storage",
         "slipways",
+        "principal_royal_naval_base",
+        "fleet_berthing",
+        "naval_command_and_administration",
+        "crew_support",
+        "troop_embarkation",
+        "convoy_preparation",
         "controlled_access"
       ],
-      "owner": "Crown_of_Norgard",
+      "owner": "Crown_of_Norgard_House_Aethros",
       "connectedTo": [
         "T02",
         "T04",
@@ -182,6 +190,10 @@
       "separateFrom": [
         "T03",
         "T07"
+      ],
+      "includes": [
+        "S08",
+        "S13"
       ]
     },
     "T09": {
@@ -288,14 +300,20 @@
     ],
     "royalShipbuilding": [
       "T11_or_T02_or_T04",
-      "T08",
-      "sea"
+      "T08_S08",
+      "T08_S13_or_sea"
     ],
     "militaryMobilization": [
       "territory",
       "T11",
       "T12",
       "territorial_or_royal_destination"
+    ],
+    "royalNavalOperations": [
+      "sea",
+      "T08_S13",
+      "fleet_berthing_or_troop_embarkation_or_convoy_preparation",
+      "sea"
     ]
   },
   "markets": {
@@ -393,9 +411,9 @@
     "exact_market_calendar_for_non_daily_specialized_markets",
     "exact_main_bridge_geometry_and_material_resolution",
     "possible_minor_secondary_crossings",
-    "exact_valrik_residence_architectural_plan",
     "exact_judicial_complex_architectural_plan",
-    "exact_T12_military_precinct_geometry"
+    "exact_T12_military_precinct_geometry",
+    "exact_T08_royal_naval_complex_internal_geometry"
   ],
   "infrastructure": {
     "water": {
@@ -521,9 +539,10 @@
     },
     "royalShipyardSecurity": {
       "sector": "T08",
-      "authority": "Crown_linked_internal_authority",
+      "authority": "Crown_of_Norgard_House_Aethros",
       "urbanGuardOrdinaryControlInside": false,
-      "detailedChainOfCommand": "unresolved_with_royal_military_naval_system"
+      "integratedWith": "T08_royal_naval_complex",
+      "detailedSpecializedRankTitles": "not_required_for_spatial_closure"
     },
     "houseValrikGuard": {
       "rosterBand": [
@@ -557,6 +576,16 @@
       "separateFromUrbanGuard": true,
       "sovereignArmy": false,
       "royalMusterObligation": true
+    },
+    "royalNavy": {
+      "sector": "T08",
+      "principalBaseFacility": "S13",
+      "shipyardFacility": "S08",
+      "owner": "Crown_of_Norgard_House_Aethros",
+      "houseValrikCommand": false,
+      "urbanGuardOrdinaryControlInside": false,
+      "territorialArmyCommandInside": false,
+      "realmDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_royal_navy_default_v0.1.json"
     }
   },
   "buildingFabric": {
@@ -701,6 +730,14 @@
         1200
       ],
       "permanentHousing": false
+    },
+    "S13": {
+      "id": "principal_royal_naval_base",
+      "sector": "T08",
+      "required": true,
+      "owner": "Crown_of_Norgard_House_Aethros",
+      "principalNotUniqueBase": true,
+      "pairedWith": "S08"
     }
   },
   "climateUrbanImplications": {
@@ -795,7 +832,7 @@
     "mainBridge": "west_northwest_access_upstream_of_T01",
     "T01": "west_southwest_river_edge",
     "T07": "south_southwest_integrated_mouth_civil_port",
-    "T08": "south_southeast_adjacent_coast_separate_from_T07",
+    "T08": "south_southeast_adjacent_coast_Crown_royal_naval_complex_separate_from_T07",
     "T03": "central_south_or_central_west_inland_of_port",
     "T02": "west_northwest_between_bridge_T03_T04",
     "T04": "north_northwest_and_intermediate_corridors",
@@ -1028,9 +1065,11 @@
     },
     {
       "id": "G6",
-      "name": "royal_shipyard_development",
+      "name": "royal_naval_complex_development",
       "anchors": [
-        "T08"
+        "T08",
+        "S08",
+        "S13"
       ]
     },
     {
@@ -1054,10 +1093,10 @@
     "officialStreetNamingStillOpen": true
   },
   "planningFlexibility": {
-    "status": "military_requirement_resolved",
+    "status": "military_and_royal_naval_requirements_resolved",
     "assignedMilitaryUse": "T12",
     "remainingGeneralGrowthReserve": true,
     "rule": "T12 resolves known military footprint while ordinary peripheral growth capacity remains available for future needs"
   },
-  "prePlanExternalCanonStatus": "complete_military_framework_resolved"
+  "prePlanExternalCanonStatus": "complete_military_and_royal_naval_framework_resolved"
 }

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_royal_naval_complex_contract",
+  "version": "0.1",
+  "status": "active_local_contract",
+  "cityId": "treskal",
+  "sectorId": "T08",
+  "authority": "Crown_of_Norgard_House_Aethros",
+  "inherits": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_royal_navy_default_v0.1.json",
+  "facilities": {
+    "S08": {
+      "id": "royal_shipyards_of_treskal",
+      "role": [
+        "construction",
+        "repair",
+        "maintenance",
+        "naval_industry"
+      ],
+      "owner": "Crown_of_Norgard_House_Aethros"
+    },
+    "S13": {
+      "id": "principal_royal_naval_base",
+      "role": [
+        "fleet_berthing",
+        "local_naval_command_and_administration",
+        "crew_support",
+        "troop_embarkation",
+        "supply_loading",
+        "convoy_preparation",
+        "security"
+      ],
+      "owner": "Crown_of_Norgard_House_Aethros",
+      "principalNotUniqueBase": true
+    }
+  },
+  "boundaries": {
+    "houseValrikInternalCommand": false,
+    "valrikTerritorialArmyInternalCommand": false,
+    "treskalUrbanGuardOrdinaryControlInside": false,
+    "valrikMayProtectExternalLandRoutes": true,
+    "valrikMayCooperateExternalDefenseAndEmergencies": true
+  },
+  "spatial": {
+    "separateFromCivilPortT07": true,
+    "directSeaAccess": true,
+    "controlledAccess": true,
+    "logisticsConnections": [
+      "T02",
+      "T04",
+      "T11"
+    ],
+    "cityWallRequired": false,
+    "coastalFortressRequired": false,
+    "gunpowderMagazineAllowed": false
+  },
+  "saveMigrationRequired": false
+}

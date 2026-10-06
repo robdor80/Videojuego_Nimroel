@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "0.2",
+  "version": "0.3",
   "status": "active_preplan_constraint_set",
   "purpose": "Freeze only Norgard-level facts that materially affect Treskal metric planning, while keeping unresolved canon nonblocking and non-invented.",
-  "planReadiness": "ready_for_metric_city_plan_military_resolved",
+  "planReadiness": "ready_for_metric_city_plan_military_and_royal_naval_resolved",
   "authorInputRequiredNow": false,
   "resolvedSpatialConstraints": {
     "royalProtocol": {
@@ -37,11 +37,12 @@
     },
     "royalShipyards": {
       "sector": "T08",
+      "facility": "S08",
       "crownOwned": true,
       "internalSecurity": true,
       "internalAdministration": true,
-      "separateNavalBase": false,
-      "independentArsenal": false
+      "pairedWithPrincipalNavalBase": "S13",
+      "independentGunpowderArsenal": false
     },
     "architecture": {
       "materials": [
@@ -68,13 +69,18 @@
         1200
       ],
       "cityWallRequired": false
+    },
+    "principalRoyalNavalBase": {
+      "sector": "T08",
+      "facility": "S13",
+      "crownOwned": true,
+      "principalNotUniqueBase": true,
+      "houseValrikCommand": false,
+      "urbanGuardOrdinaryControlInside": false,
+      "sharesRoyalNavalComplexWith": "S08"
     }
   },
   "nonBlockingPendingCanon": {
-    "royalNavalFramework": {
-      "currentAction": "keep_command_security_admin_inside_T08_capacity",
-      "revisitOnlyIf": "future_canon_requires_separate_naval_installation"
-    },
     "portTaxesCustoms": {
       "currentAction": "use_generic_T07_control_and_S02_fiscal_capacity",
       "revisitOnlyIf": "future_canon_requires_distinct_customs_facility"
@@ -86,11 +92,11 @@
   },
   "forbiddenPrePlanInventions": [
     "independent_arsenal",
-    "separate_naval_base",
     "standalone_customs_house",
     "long_term_prison_complex",
     "mint",
-    "city_wall"
+    "city_wall",
+    "second_independent_naval_complex_in_Treskal_without_new_canon"
   ],
   "genericExpansionReserve": {
     "canonicalFacility": false,
