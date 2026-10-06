@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CANON URBANO CERRADO — FUNCIÓN INSTITUCIONAL Y PLANTILLA**
+**CANON URBANO CERRADO — FUNCIÓN INSTITUCIONAL, PLANTILLA E INTEGRACIÓN PENAL**
 
 ## Objetivo
 
@@ -137,13 +137,9 @@ Treskal debe disponer de espacios de custodia suficientes para:
 - acusados en espera de juicio;
 - personas remitidas desde Villas.
 
-No se define todavía:
+La Ley del Rey ya define el sistema penal de Norgard. S04 no es una prisión de larga condena: cubre detención temporal, preventiva cuando sea necesaria y espera de traslado o ejecución. Norgard no utiliza encarcelamiento prolongado como pena ordinaria. El trabajo penal se cumple en trabajos autorizados y puede usar barracones o campamentos vigilados vinculados a la obra, no S04 como cárcel permanente.
 
-- sistema penitenciario de larga duración;
-- tipos de condena;
-- organización de prisiones del Reino.
-
-No deben inventarse hasta desarrollar la Ley del Rey.
+Referencia: `Worldbuilding/Sistemas/Norgard Defaults/08_Sistema_penal/SISTEMA_PENAL_Y_JUSTICIA_DEL_REY_NORGARD_v0.1.md`.
 
 ---
 
