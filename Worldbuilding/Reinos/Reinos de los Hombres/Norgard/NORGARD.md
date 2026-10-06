@@ -433,6 +433,20 @@ La Corona puede reservarse o asumir el control directo de enclaves o recursos es
 - La Armada Real pertenece a la Corona; Valrik aporta recursos y capacidad productiva, no una armada soberana propia.
 - El honor y la lealtad hacia la Corona forman parte central de su identidad actualmente definida.
 
+### Fuerzas Valrik cerradas
+
+Casa Valrik mantiene:
+
+- Guardia de Casa: **48–72 profesionales**;
+- Guardia urbana de Treskal: **140–190**;
+- Fuerza Territorial profesional: **540–720** en todo el territorio;
+- reserva entrenada derivada de **2,5–4 %** de la población materializada;
+- movilización extraordinaria de hasta aproximadamente **6 %** en circunstancias graves.
+
+El desarrollo operativo se mantiene en:
+
+`Worldbuilding/Sistemas/Casa Valrik Defaults/02_Militar/fuerzas_militares_valrik_v0.1.md`
+
 ## Relaciones políticas principales
 
 - **Aethros ↔ Edranor:** tensión por Rodas.
@@ -450,7 +464,7 @@ Siguen sin estar definidos de forma general:
 - fechas de fundación;
 - casas menores o linajes dependientes;
 - matrimonios políticos;
-- tamaño y organización exacta de las guardias;
+- tamaño y organización exacta de las fuerzas de Darovan, Edranor y Galdren; **Valrik ya está definido**;
 - lemas heráldicos;
 - historia detallada de rivalidades y pactos;
 - regulación jurídica específica de Rodas y la Forja Estelar.

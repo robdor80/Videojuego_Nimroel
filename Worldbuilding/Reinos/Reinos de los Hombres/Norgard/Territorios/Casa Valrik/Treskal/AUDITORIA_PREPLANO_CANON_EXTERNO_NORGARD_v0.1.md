@@ -1,3 +1,11 @@
+> **ACTUALIZACIÓN 2026-10-06 — DEPENDENCIA MILITAR RESUELTA**  
+> La sección 3 de esta auditoría registraba correctamente el estado previo del canon, pero ha quedado superada por el cierre posterior del sistema militar.  
+> Norgard ya posee marco militar canónico, Casa Valrik posee perfil militar propio y Treskal incorpora T12/S11/S12.  
+> El sistema militar **ya no es una dependencia pendiente ni no bloqueante: está resuelto para el plano**.  
+> El documento se conserva como historial de la pasada pre-plano.
+
+---
+
 # Treskal — auditoría pre-plano de canon externo de Norgard v0.1
 
 ## Estado
@@ -53,26 +61,22 @@ El rango exacto de guardias y el sistema penal de larga duración pueden esperar
 
 **No se reserva una prisión de larga duración.**
 
-## 3. Sistema militar de Norgard — NO BLOQUEANTE
+## 3. Sistema militar de Norgard — RESUELTO POSTERIORMENTE
 
-Existe una revisión formal pendiente: la dirección futura contempla fuerzas territoriales de Grandes Casas, pero todavía no define:
+El marco militar ha quedado canonizado posteriormente.
 
-- tamaño;
-- guarniciones;
-- reclutamiento;
-- cadena de mando;
-- cuarteles.
+Resultado vigente:
 
-Por tanto:
+- Guardia de Casa Valrik: 48–72;
+- Guardia urbana de Treskal: 140–190;
+- Fuerza Territorial Valrik: 540–720 profesionales;
+- T12 recinto militar en Treskal;
+- S11 cuartel para 260–340;
+- S12 campo de instrucción/movilización para 800–1.200 en actividad;
+- reserva movilizable ligada a NPC reales;
+- la ciudad sigue sin muralla.
 
-- no se inventa un cuartel;
-- no se inventa un arsenal;
-- no se crea un distrito militar;
-- no se modifica la regla canónica actual de Treskal sin muralla.
-
-Medida de seguridad de diseño:
-
-**el plano conservará cierta capacidad periférica de expansión sin uso asignado**, especialmente en contexto T10/T11 y corredores de servicio. Esto no es un cuartel oculto ni canon nuevo; es margen urbano para evitar bloquear futuras decisiones.
+La reserva periférica genérica deja de ser el sustituto del cuartel: el uso militar conocido ya tiene huella propia en T12.
 
 ## 4. Armada Real y Astilleros — SUFICIENTE PARA PLANO
 
@@ -158,11 +162,11 @@ Treskal puede pasar al plano métrico sin esperar a cerrar todo el canon de Norg
 - T08 Astilleros Reales con administración y seguridad internas;
 - trazado sin muralla;
 - materiales y escala edificatoria local;
-- margen periférico no asignado para crecimiento futuro.
+- T12/S11/S12 para presencia militar Valrik;
+- margen periférico adicional para crecimiento futuro ordinario.
 
 ### Dependencias que NO bloquean el plano
 
-- sistema militar definitivo;
 - cadena naval definitiva;
 - fiscalidad/aduanas exactas;
 - sistema penal de larga duración;
@@ -176,6 +180,7 @@ Solo será necesario reabrir el **plano** si un canon futuro establece explícit
 - S03–S05;
 - T07;
 - T08;
+- T12/S11/S12;
 - o la capacidad periférica de expansión prevista.
 
 Los cambios de rangos, nombres, procedimientos o cadenas de mando que no alteren la huella física se heredarán sin rediseñar la ciudad.

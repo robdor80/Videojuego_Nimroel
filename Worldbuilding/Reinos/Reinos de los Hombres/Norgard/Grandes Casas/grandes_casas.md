@@ -467,8 +467,21 @@ El peso político Valrik se apoya especialmente en:
 - organización detallada de los astilleros;
 - composición y funcionamiento de la flota pesquera;
 - relación administrativa exacta con la Armada Real;
-- estructura y tamaño de su guardia;
 - historia del vínculo de lealtad con Aethros.
+
+### Fuerzas militares Valrik
+
+Este punto queda definido en la capa de Casa:
+
+- Guardia de Casa: **48–72**;
+- Guardia urbana de Treskal: **140–190**;
+- Fuerza Territorial profesional: **540–720**;
+- reserva entrenada: **2,5–4 %** de la población materializada;
+- movilización extraordinaria: hasta aproximadamente **6 %** bajo causas graves.
+
+Fuente operativa:
+
+`../../../Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_military_structure_default_v0.1.json`
 
 ---
 
@@ -552,7 +565,7 @@ Quedan pendientes, en general:
 - fechas de fundación;
 - casas menores o linajes dependientes;
 - matrimonios políticos;
-- tamaño y organización concreta de las guardias;
+- tamaño y organización concreta de las fuerzas de Darovan, Edranor y Galdren; **Valrik ya está cerrado**;
 - acontecimientos históricos detallados;
 - tratados o pactos entre Casas;
 - lemas heráldicos;

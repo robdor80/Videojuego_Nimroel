@@ -245,7 +245,30 @@ No debe confundirse con:
 - Armada Real;
 - tropas personales de Valrik.
 
-La organización interna y rangos se definirán en una capa específica.
+La organización funcional queda definida en la capa militar Valrik:
+
+- roster urbano total: **140–190 guardias**;
+- cadena funcional: mando → capitanes → sargentos → guardias;
+- sede principal: **S05/T06**.
+
+La Guardia urbana no forma parte del ejército territorial y no depende de T12 en su actividad cotidiana.
+
+---
+
+# 12A. Fuerzas militares Valrik en Treskal
+
+Treskal es también el principal nodo militar del territorio Valrik.
+
+Debe existir:
+
+- **T12 — recinto militar Valrik** en el borde norte/nordeste interior;
+- **S11 — Cuartel Territorial Valrik**, con capacidad ordinaria para **260–340 profesionales**;
+- **S12 — campo de instrucción y movilización**, capaz de reunir **800–1.200 personas** en actividad temporal;
+- conexión directa con T11 para que tropas, suministros y contingentes no atraviesen innecesariamente el núcleo comercial.
+
+La Guardia de Casa Valrik, la Guardia urbana, el Ejército Territorial y la seguridad de los Astilleros Reales son instituciones distintas.
+
+La existencia de T12 **no modifica la ausencia de muralla urbana**.
 
 ---
 

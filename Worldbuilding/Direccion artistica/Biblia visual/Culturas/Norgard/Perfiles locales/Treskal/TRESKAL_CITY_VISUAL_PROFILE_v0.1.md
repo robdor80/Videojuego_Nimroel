@@ -246,6 +246,39 @@ La riqueza se expresa mediante calidad de piedra y carpintería.
 
 ---
 
+# 11A. Recinto militar Valrik
+
+Treskal posee un recinto militar territorial **T12** en el borde norte/nordeste interior.
+
+Visualmente debe distinguirse de:
+
+- S01 / sede de Casa Valrik;
+- S05 / Guardia urbana;
+- T08 / Astilleros Reales de la Corona.
+
+Debe transmitir:
+
+- disciplina;
+- mantenimiento;
+- uso cotidiano;
+- patios de instrucción;
+- barracones sobrios;
+- almacenes militares;
+- establos ligeros;
+- movimiento de tropas y suministros cuando proceda.
+
+Materiales:
+
+- piedra;
+- madera;
+- pizarra.
+
+Puede tener un perímetro funcional propio, pero **no debe parecer una ciudadela ni justificar una muralla urbana**.
+
+La heráldica Valrik puede aparecer de forma funcional en escudos, accesos y dependencias militares. No llenar el recinto ni la ciudad de estandartes ambientales.
+
+---
+
 # 12. Mercados
 
 Los mercados deben mostrar:
@@ -471,6 +504,7 @@ Debe leerse:
 - acceso exterior a Astilleros Reales;
 - calles residenciales;
 - administración Valrik;
+- acceso o patio exterior del recinto militar T12;
 - periferia de abastecimiento.
 
 ---
