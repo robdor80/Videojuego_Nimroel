@@ -313,9 +313,11 @@ No puede acuñar moneda por iniciativa propia.
 
 La **acuñación de moneda es monopolio exclusivo de la Corona de Norgard**.
 
-La acuñación no autorizada y la falsificación están sometidas a **penas extremadamente severas**.
+Treihord **no posee ceca**. La única ceca oficial permanente del Reino es la **Ceca Real de Hallheim**, dependiente del Tesoro de la Corona.
 
-Las penas concretas y la localización de la ceca o cecas reales se definirán en el futuro.
+El Crisol puede suministrar, ensayar y documentar metal y lingotes, pero la Ceca Real conserva su propio control de recepción y ensaye antes de acuñar.
+
+La acuñación no autorizada y la falsificación se rigen por el sistema penal cerrado de Norgard; sus penas ya no están pendientes.
 
 ---
 

@@ -106,7 +106,9 @@
     "assessmentCanBeCoinOrInKind": true,
     "basisMustBeRecorded": true,
     "reliefExemptionOrCorrectionRequiresAuthority": true,
-    "collectionCreatesOBLAndTXNRecords": true
+    "collectionCreatesOBLAndTXNRecords": true,
+    "remittanceCanBeCoinResourcesOrAuthorizedMixedSettlement": true,
+    "remittanceAccountingUnit": "clavo"
   },
   "accounting": {
     "houseLedgerRequired": true,
@@ -142,5 +144,21 @@
     "automatic_confiscation_for_debt",
     "omniscient_detection_of_smuggling"
   ],
-  "runtimeImplementationRequiredLater": true
+  "runtimeImplementationRequiredLater": true,
+  "monetaryIntegration": {
+    "status": "resolved_by_monetary_point_5",
+    "accountingUnit": "clavo",
+    "clavosPerLuna": 24,
+    "clavosPerCorona": 480,
+    "officialValuationRequiredFor": [
+      "foreign_currency",
+      "bullion",
+      "in_kind_when_monetized"
+    ],
+    "physicalResourceAndClavoValuationBothPersist": true,
+    "wholeClavoSettlement": true,
+    "rounding": "nearest_clavo_half_up",
+    "universalTaxRateDefinedByCurrencySystem": false,
+    "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/moneda_y_acunacion.md"
+  }
 }

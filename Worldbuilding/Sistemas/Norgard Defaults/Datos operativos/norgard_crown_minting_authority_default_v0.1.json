@@ -1,39 +1,153 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_crown_minting_authority_default",
-  "version": "0.1",
-  "status": "active_partial_realm_default",
-  "authorityScope": "norgard_realm_defaults",
+  "version": "0.2",
+  "status": "active_realm_default",
+  "authorityScope": "norgard_realm_currency_minting",
   "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/moneda_y_acunacion.md",
-  "rules": {
+  "currency": {
+    "accountingBaseUnit": "clavo",
+    "fractionalOfficialCoinBelowClavo": false,
+    "denominations": {
+      "clavo": {
+        "metal": "copper",
+        "valueClavos": 1,
+        "nominalMassGrams": 6,
+        "finenessPerMille": 950,
+        "finenessRule": "minimum"
+      },
+      "luna": {
+        "metal": "silver",
+        "valueClavos": 24,
+        "nominalMassGrams": 3.6,
+        "finenessPerMille": 900,
+        "fineMetalGrams": 3.24
+      },
+      "corona": {
+        "metal": "gold",
+        "valueClavos": 480,
+        "valueLunas": 20,
+        "nominalMassGrams": 4.5,
+        "finenessPerMille": 900,
+        "fineMetalGrams": 4.05
+      }
+    },
+    "conversionRules": {
+      "clavosPerLuna": 24,
+      "lunasPerCorona": 20,
+      "clavosPerCorona": 480
+    }
+  },
+  "authority": {
     "officialCoinMintingAuthority": "Crown_of_Norgard_only",
+    "permanentMint": "Royal_Mint_of_Hallheim",
+    "permanentOfficialMintCount": 1,
+    "administrativeParent": "Crown_Treasury",
     "greatHousesMayMintOfficialCurrency": false,
     "citiesMayMintOfficialCurrency": false,
     "guildsMayMintOfficialCurrency": false,
     "merchantsMayMintOfficialCurrency": false,
     "institutionsMayMintOfficialCurrency": false,
     "privatePersonsMayMintOfficialCurrency": false,
-    "preciousMetalOwnershipGrantsMintingRight": false,
-    "illicitMintingIsSeriousCrime": true,
-    "counterfeitingIsSeriousCrime": true
+    "preciousMetalOwnershipGrantsMintingRight": false
   },
-  "explicitlyUndefined": [
-    "currency_name",
-    "denominations",
-    "coin_weight_and_fineness",
-    "prices",
-    "wages",
-    "taxation",
-    "exchange_rates",
-    "mint_location",
-    "number_of_mints",
-    "mint_organization",
-    "exact_penalties"
+  "mintProcess": [
+    "receipt_and_ledger",
+    "weighing",
+    "assay",
+    "alloy_preparation",
+    "blank_preparation",
+    "blank_weight_control",
+    "striking",
+    "sample_quality_control",
+    "count_and_batch_ledger",
+    "transfer_to_Crown_Treasury",
+    "circulation"
   ],
+  "mintControls": {
+    "diesAreCrownProperty": true,
+    "batchTraceabilityRequired": true,
+    "worldStateMetalMustExist": true,
+    "ledgerCannotCreateCoinOrMetal": true
+  },
+  "preciousMetals": {
+    "darovanMayExtractRefineAssayWeighCastStoreAndTrade": true,
+    "darovanMayMintOfficialCoin": false,
+    "treihordAssayHouse": "El_Crisol",
+    "elCrisolIsMint": false,
+    "royalMintMayReassayIncomingMetal": true,
+    "ingotsAreCurrency": false,
+    "ingotValueBasis": [
+      "metal",
+      "weight",
+      "purity",
+      "condition",
+      "assay_authenticity",
+      "provenance_confidence"
+    ]
+  },
+  "privateBullionMinting": {
+    "allowedWhenRoyalMintAccepts": true,
+    "ordinaryMintingFeeRate": 0.025,
+    "feeBasis": "accepted_monetary_value_after_weight_and_assay",
+    "crownOwnedMetalChargedInternalMintingFee": false,
+    "instantProcessingGuaranteed": false
+  },
+  "foreignCurrency": {
+    "mandatoryLegalTender": false,
+    "privateAcceptanceAllowed": true,
+    "changerExchangeAllowed": true,
+    "officialObligationRequiresClavoValuation": true,
+    "valuationFactors": [
+      "metal",
+      "weight",
+      "purity",
+      "wear_or_clipping",
+      "authenticity",
+      "issuer_reliability",
+      "local_demand"
+    ],
+    "doubtfulCoinMayBeValuedAsBullion": true,
+    "universalChangerMargin": false
+  },
+  "circulation": {
+    "sameOfficialCurrencyAcrossAllGreatHouseTerritories": true,
+    "internalGreatHouseCurrencyExchangeRequired": false,
+    "greatHouseSovereignCoinsExist": false,
+    "largeCopperPaymentMayBeMateriallyRestrictedByReasonableHandlingLimits": true
+  },
+  "fineScheduleClavos": {
+    "F1": 12,
+    "F2": 48,
+    "F3": 240,
+    "F4": 960,
+    "F5": 4800
+  },
+  "fiscalIntegration": {
+    "accountingUnit": "clavo",
+    "inKindRequiresClavoEquivalentWhenValued": true,
+    "bullionRequiresClavoEquivalentWhenValued": true,
+    "foreignCurrencyRequiresClavoEquivalentForOfficialObligation": true,
+    "monetaryObligationsUseWholeClavos": true,
+    "halfClavoRounding": "nearest_clavo_half_up",
+    "universalTaxRateDefinedHere": false
+  },
+  "penalties": {
+    "illicitMintingAndCounterfeitingDefinedByPenalCode": true,
+    "penalCode": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_penal_code_v0.1.json"
+  },
+  "balanceContract": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_currency_economic_balance_default_v0.1.json",
+  "visualAssets": {
+    "clavo": "Worldbuilding/Direccion artistica/Biblia visual/Categorias/Objetos/monedas/clavo_moneda.png",
+    "luna": "Worldbuilding/Direccion artistica/Biblia visual/Categorias/Objetos/monedas/luna_moneda.png",
+    "corona": "Worldbuilding/Direccion artistica/Biblia visual/Categorias/Objetos/monedas/corona_moneda.png"
+  },
   "guardrails": {
-    "doNotInferCompleteEconomicSystem": true,
-    "doNotAssumeMintInTreihord": true,
-    "pendingCanonRemainsPending": true
+    "gramsAreTechnicalNotMandatoryDiegeticTerminology": true,
+    "doNotCreateAdditionalOfficialDenominations": true,
+    "doNotCreateGreatHouseCurrencies": true,
+    "doNotTreatElCrisolAsMint": true,
+    "doNotCreateMetalOrPaymentFromLedger": true
   },
   "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json"
 }

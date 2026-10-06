@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_monetary_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "cases": [
+    {
+      "id": "MON01",
+      "given": {
+        "clavos": 24
+      },
+      "expect": {
+        "lunas": 1
+      }
+    },
+    {
+      "id": "MON02",
+      "given": {
+        "lunas": 20
+      },
+      "expect": {
+        "coronas": 1,
+        "clavos": 480
+      }
+    },
+    {
+      "id": "MON03",
+      "given": {
+        "actor": "Great_House_Darovan",
+        "action": "mint_official_coin"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MON04",
+      "given": {
+        "facility": "El_Crisol",
+        "action": "mint_official_coin"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MON05",
+      "given": {
+        "facility": "Royal_Mint_of_Hallheim",
+        "action": "mint_official_coin"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MON06",
+      "given": {
+        "acceptedPrivateBullionValueClavos": 1000
+      },
+      "expect": {
+        "mintingFeeClavos": 25
+      }
+    },
+    {
+      "id": "MON07",
+      "given": {
+        "foreignCoinUsedForOfficialObligation": true
+      },
+      "expect": {
+        "authorizedClavoValuationRequired": true
+      }
+    },
+    {
+      "id": "MON08",
+      "given": {
+        "fineTier": "F1"
+      },
+      "expect": {
+        "clavos": 12
+      }
+    },
+    {
+      "id": "MON09",
+      "given": {
+        "fineTier": "F2"
+      },
+      "expect": {
+        "clavos": 48
+      }
+    },
+    {
+      "id": "MON10",
+      "given": {
+        "fineTier": "F3"
+      },
+      "expect": {
+        "clavos": 240
+      }
+    },
+    {
+      "id": "MON11",
+      "given": {
+        "fineTier": "F4"
+      },
+      "expect": {
+        "clavos": 960
+      }
+    },
+    {
+      "id": "MON12",
+      "given": {
+        "fineTier": "F5"
+      },
+      "expect": {
+        "clavos": 4800
+      }
+    },
+    {
+      "id": "MON13",
+      "given": {
+        "territoryCrossing": "Valrik_to_Darovan",
+        "officialNorgardCoin": true
+      },
+      "expect": {
+        "currencyExchangeRequired": false
+      }
+    },
+    {
+      "id": "MON14",
+      "given": {
+        "resource": "silver_ingot",
+        "officialPaymentContext": true
+      },
+      "expect": {
+        "isCoin": false,
+        "clavoValuationIfAccepted": true
+      }
+    },
+    {
+      "id": "MON15",
+      "given": {
+        "requestedOfficialDenomination": "new_coin"
+      },
+      "expect": {
+        "allowed": false
+      }
+    }
+  ],
+  "marker": "MONETARY_POINT_5_CLOSED_NORGARD_CROWN_MINT"
+}

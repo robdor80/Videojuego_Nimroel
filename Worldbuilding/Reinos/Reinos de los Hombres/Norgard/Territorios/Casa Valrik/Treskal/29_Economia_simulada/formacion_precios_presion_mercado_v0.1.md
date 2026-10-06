@@ -210,12 +210,15 @@ La economía debe mostrar:
 
 # 13. Moneda
 
-Este documento no define el sistema monetario.
+El sistema monetario ya está cerrado por el Punto 5:
 
-Cuando exista:
+- unidad contable base: **Clavo**;
+- 1 Luna = 24 Clavos;
+- 1 Corona = 480 Clavos;
+- el balance de Reino aporta precios de referencia;
+- las relaciones causales de este documento siguen determinando el precio efectivo.
 
-- precios se expresarán en unidades canónicas;
-- se conservarán las relaciones causales aquí definidas.
+Los precios de referencia no son precios obligatorios: Treskal conserva variación por costes, disponibilidad, demanda, calidad, relación comercial y World State.
 
 ---
 

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_currency_economic_balance_default",
+  "version": "0.1",
+  "status": "active_realm_balance_default",
+  "authorityScope": "Norgard",
+  "accountingBaseUnit": "clavo",
+  "conversions": {
+    "clavosPerLuna": 24,
+    "lunasPerCorona": 20,
+    "clavosPerCorona": 480
+  },
+  "wageReferenceDailyEquivalent": {
+    "unskilledCasual": {
+      "minClavos": 8,
+      "anchorClavos": 10,
+      "maxClavos": 12
+    },
+    "trainedRegular": {
+      "minClavos": 12,
+      "anchorClavos": 15,
+      "maxClavos": 18
+    },
+    "skilledJourneyman": {
+      "minClavos": 16,
+      "anchorClavos": 20,
+      "maxClavos": 24
+    },
+    "masterOrSpecialist": {
+      "minClavos": 24,
+      "anchorClavos": 36,
+      "maxClavos": 48
+    },
+    "rareExtraordinaryOrDangerous": {
+      "minimumTypicalClavos": 48,
+      "pricing": "contractual_contextual"
+    }
+  },
+  "wageRules": {
+    "universalPayPeriod": false,
+    "legalWorkdayDefinedHere": false,
+    "paymentMayInclude": [
+      "coin",
+      "food",
+      "lodging",
+      "share",
+      "in_kind",
+      "mixed"
+    ],
+    "includedGoodsMayReduceCashComponent": true,
+    "householdAndApprenticeWorkForcedIntoModernPayroll": false
+  },
+  "referencePricesClavos": {
+    "simpleBread": 1,
+    "ordinarySmallDrink": 1,
+    "simplePreparedMeal": 2,
+    "substantialTavernMeal": 4,
+    "basicDailyFood": 5,
+    "commonBedNight": 4,
+    "modestPrivateRoomNight": 8,
+    "comfortableUrbanRoomNight": 24,
+    "mountStableAndOrdinaryFeedNight": 4,
+    "simpleLocalFerryMin": 1,
+    "simpleLocalFerryMax": 2,
+    "simpleLocalMessengerMin": 2,
+    "simpleLocalMessengerMax": 6,
+    "simpleWorkShirt": 8,
+    "workBoots": 24,
+    "commonDurableCloak": 36,
+    "commonHandToolMin": 6,
+    "commonHandToolMax": 12,
+    "basicTradeToolSet": 48,
+    "utilityKnife": 8,
+    "commonSpear": 24,
+    "simpleFunctionalBow": 48,
+    "commonShield": 48,
+    "ordinaryFunctionalSword": 144,
+    "paddedOrLeatherProtection": 120,
+    "functionalMailShirt": 960,
+    "functionalDonkey": 960,
+    "ordinaryAdultCow": 1440,
+    "workOx": 2400,
+    "ordinaryRidingHorse": 3840,
+    "trainedWarhorseMinimum": 9600
+  },
+  "fixedUniversalPricesExcluded": [
+    "houses",
+    "land",
+    "workshops",
+    "ships",
+    "large_cargoes",
+    "jewelry",
+    "unique_works",
+    "Crown_major_contracts"
+  ],
+  "excludedPriceMethod": "contextual_cost_state_negotiation",
+  "priceFormation": {
+    "referenceIsAnchorNotMandatorySalePrice": true,
+    "causalModifiers": [
+      "availability",
+      "costs",
+      "quality",
+      "transport",
+      "demand",
+      "commercial_relationship",
+      "urgency",
+      "prior_contract",
+      "world_state"
+    ],
+    "playerLevelPriceScalingForbidden": true,
+    "moneyDoesNotGuaranteeAvailability": true
+  },
+  "fineScheduleClavos": {
+    "F1": 12,
+    "F2": 48,
+    "F3": 240,
+    "F4": 960,
+    "F5": 4800
+  },
+  "transactionRules": {
+    "valueTransferredMustExist": true,
+    "partialPaymentAllowed": true,
+    "debtMayPersist": true,
+    "ledgerDoesNotCreatePayment": true,
+    "clavoValuationDoesNotConvertPhysicalResourcesIntoCoin": true
+  },
+  "sources": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/moneda_y_acunacion.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/29_Economia_simulada/formacion_precios_presion_mercado_v0.1.md",
+    "Worldbuilding/Sistemas/Nimroel Core/08_Economia_formal/transacciones_obligaciones_registros_v0.1.md"
+  ]
+}

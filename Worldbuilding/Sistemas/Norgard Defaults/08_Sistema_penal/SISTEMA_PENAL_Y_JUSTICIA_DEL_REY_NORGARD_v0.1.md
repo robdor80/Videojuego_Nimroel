@@ -10,6 +10,18 @@ Restitución/compensación; multa; trabajo penal; servicio obligatorio especiali
 
 Norgard no usa prisión de larga duración como pena ordinaria. S04 y equivalentes sirven para detención, preventiva y espera de traslado/ejecución. El trabajo penal es productivo, de plazo fijo y vigilado; puede usar barracones o campamentos vinculados a la obra, pero no esclavitud penal indefinida.
 
+### Escala monetaria de multas — integración Punto 5
+
+- **F1:** 12 Clavos.
+- **F2:** 2 Lunas = 48 Clavos.
+- **F3:** 10 Lunas = 240 Clavos.
+- **F4:** 2 Coronas = 960 Clavos.
+- **F5:** 10 Coronas = 4.800 Clavos.
+
+Cuando un tipo permite un rango de tiers, el juez selecciona dentro de ese rango conforme a hechos probados, gravedad, agravantes y atenuantes. La multa no sustituye restitución, compensación o confiscación cuando el tipo las exige.
+
+La falta real de medios no equivale por sí sola a incumplimiento deliberado; el quebrantamiento exige los elementos del tipo correspondiente.
+
 ## Castigo corporal
 Azotes: legales. Tortura: no es pena ni medio legítimo de confesión. Marca y mutilación ordinarias: prohibidas.
 

@@ -251,7 +251,7 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 ### 29_Economia_simulada
 
 - `consumo_reposicion_circulacion_v0.1.md` — ciclo entrada/producción → stock → uso/venta → consumo/pérdida → reposición.
-- `formacion_precios_presion_mercado_v0.1.md` — presión cualitativa de mercado sin fijar moneda ni cifras.
+- `formacion_precios_presion_mercado_v0.1.md` — formación dinámica de precios integrada con Clavo/Luna/Corona y con el balance de referencia de Norgard.
 
 ### 30_Cultura_de_la_madera
 

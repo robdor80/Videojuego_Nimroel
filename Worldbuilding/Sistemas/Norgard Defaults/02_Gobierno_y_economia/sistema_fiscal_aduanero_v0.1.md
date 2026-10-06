@@ -141,18 +141,19 @@ La fiscalidad debe producir:
 
 El libro administrativo no sustituye al World State real.
 
-## 10. Cifras
+## 10. Integración monetaria — Punto 5
 
-Este canon cierra **qué se cobra, quién tiene autoridad, cuándo se aplica y cómo circula**.
+Desde el cierre monetario:
 
-No fija todavía:
+- la unidad contable base es el **Clavo**;
+- 1 Luna = 24 Clavos;
+- 1 Corona = 480 Clavos;
+- especie, lingotes y moneda extranjera reciben equivalente oficial en Clavos cuando proceda;
+- el recurso físico real sigue existiendo además de su valoración;
+- las obligaciones monetarias se expresan en Clavos enteros;
+- las fracciones inferiores al Clavo se redondean al Clavo más próximo; exactamente media unidad, hacia arriba.
 
-- importes en moneda;
-- porcentajes exactos;
-- tablas de valoración;
-- equivalencias monetarias.
-
-Esas cifras pertenecen al balance económico y al cierre monetario. No pueden ser inventadas aleatoriamente por el motor.
+Este default no crea un porcentaje tributario universal. Las tarifas o porcentajes concretos pertenecen al calendario fiscal autorizado y no pueden ser inventados por el motor.
 
 ## Regla final
 

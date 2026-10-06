@@ -1454,5 +1454,29 @@
     "obtain_capital_confirmation_if_death",
     "create_sentence_and_enforcement_records"
   ],
-  "runtimeImplementationRequiredLater": true
+  "runtimeImplementationRequiredLater": true,
+  "fineTierSchedule": {
+    "accountingUnit": "clavo",
+    "F1": {
+      "clavos": 12,
+      "display": "12 Clavos"
+    },
+    "F2": {
+      "clavos": 48,
+      "display": "2 Lunas"
+    },
+    "F3": {
+      "clavos": 240,
+      "display": "10 Lunas"
+    },
+    "F4": {
+      "clavos": 960,
+      "display": "2 Coronas"
+    },
+    "F5": {
+      "clavos": 4800,
+      "display": "10 Coronas"
+    },
+    "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/moneda_y_acunacion.md"
+  }
 }

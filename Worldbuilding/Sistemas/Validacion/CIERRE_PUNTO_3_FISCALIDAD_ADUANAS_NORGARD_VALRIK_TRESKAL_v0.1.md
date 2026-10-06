@@ -57,9 +57,16 @@ El registro no crea recursos y puede contener error o fraude.
 
 ## Cifras
 
-Importes, porcentajes y tablas monetarias no se inventan todavía.
+La unidad monetaria y las tablas de valoración quedan resueltas por el **Punto 5 — Ceca / acuñación / sistema monetario**:
 
-Quedan vinculados al futuro cierre de moneda/balance económico. Esto no reabre Punto 3 porque ya están cerrados:
+- Clavo como unidad contable;
+- Luna y Corona como equivalencias oficiales;
+- valoración en Clavos de especie, lingotes y moneda extranjera cuando proceda;
+- redondeo monetario.
+
+Los porcentajes o tarifas fiscales concretos siguen perteneciendo al calendario fiscal autorizado y no son inventados por la capa monetaria.
+
+Esto no reabre Punto 3 porque ya están cerrados:
 
 - autoridad;
 - bases fiscales;

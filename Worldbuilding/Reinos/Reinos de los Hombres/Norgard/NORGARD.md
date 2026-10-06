@@ -1943,6 +1943,14 @@ Un enviado permanente fiscaliza registros, pesos, producción y obligaciones eco
 
 La **acuñación de moneda sigue siendo monopolio exclusivo de la Corona**.
 
+El sistema monetario oficial está cerrado:
+
+- **Clavo** de cobre;
+- **Luna** de plata = 24 Clavos;
+- **Corona** de oro = 20 Lunas = 480 Clavos;
+- una única **Ceca Real permanente en Hallheim**, dependiente del Tesoro de la Corona;
+- El Crisol de Treihord ensaya y refina metales, pero **no acuña**.
+
 ## Infraestructura y seguridad
 
 Treihord dispone de una red funcional de:

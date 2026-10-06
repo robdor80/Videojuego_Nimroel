@@ -311,16 +311,28 @@ El futuro sistema temporal podrá concretarlas.
 
 # 18. Pago
 
-No se define aquí:
+El Punto 5 monetario resuelve la dependencia económica general.
 
-- salario;
-- frecuencia;
+Treskal hereda como anclas de Reino:
+
+- jornalero/no especializado: 8–12 Clavos por jornada equivalente, ancla 10;
+- trabajador formado/estable: 12–18 Clavos, ancla 15;
+- oficial cualificado: 16–24 Clavos, ancla 20;
+- maestro/especialista: 24–48 Clavos, ancla 36;
+- trabajo raro, extraordinario o peligroso: por contrato.
+
+Esto **no crea una jornada legal ni una frecuencia salarial universal**.
+
+El pago puede producirse por jornada, periodo, obra, viaje, temporada u otro acuerdo y puede incluir:
+
 - moneda;
-- comida incluida;
+- comida;
 - alojamiento;
-- participación.
+- participación;
+- especie;
+- combinación pactada.
 
-Es una dependencia económica futura.
+El precio concreto del trabajo sigue dependiendo de oficio, escasez, riesgo, reputación, disponibilidad y World State.
 
 ---
 

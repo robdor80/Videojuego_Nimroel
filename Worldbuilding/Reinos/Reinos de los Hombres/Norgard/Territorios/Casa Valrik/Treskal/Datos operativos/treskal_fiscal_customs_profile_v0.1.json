@@ -21,8 +21,9 @@
       "id": "territorial_assessment",
       "administration": "S02",
       "payment": [
-        "currency_when_defined",
-        "in_kind_when_authorized"
+        "clavo_luna_corona",
+        "in_kind_when_authorized",
+        "bullion_or_foreign_coin_when_officially_valued_and_accepted"
       ],
       "everyRetailSale": false
     },
@@ -98,6 +99,16 @@
     "collusion"
   ],
   "detectionRequiresEvidence": true,
-  "exactRates": "future_currency_and_balance_schedule",
-  "saveMigrationRequired": false
+  "exactRates": "authorized_fiscal_schedule_not_currency_system",
+  "saveMigrationRequired": false,
+  "monetaryIntegration": {
+    "status": "resolved_by_norgard_monetary_point_5",
+    "accountingUnit": "clavo",
+    "clavosPerLuna": 24,
+    "clavosPerCorona": 480,
+    "foreignCurrencyAndBullionNeedAuthorizedClavoValuation": true,
+    "inKindValuationKeepsPhysicalResourceReference": true,
+    "wholeClavoSettlement": true,
+    "rounding": "nearest_clavo_half_up"
+  }
 }

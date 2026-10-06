@@ -1,6 +1,7 @@
-> **ACTUALIZACIÓN 2026-10-06 — E8 FISCAL/ADUANERO CANONIZADO**  
-> La auditoría histórica inferior reflejaba correctamente que la fiscalidad aún no estaba definida. Ese bloqueo queda superado por E8.  
-> Permanecen pendientes del sistema económico completo la moneda funcional, precios y cifras de balance; la arquitectura fiscal y aduanera ya está cerrada.
+> **ACTUALIZACIÓN 2026-10-06 — PUNTO 5 MONETARIO CANONIZADO**  
+> La auditoría histórica inferior reflejaba correctamente el estado previo de E2. Ese bloqueo queda superado por el cierre del Punto 5.  
+> Clavo/Luna/Corona, equivalencias, Ceca Real de Hallheim, peso/ley, lingotes, moneda extranjera, multas y balance base de precios/salarios quedan ya definidos.  
+> E8 fiscal/aduanero permanece cerrado y consume desde ahora la unidad monetaria sin que la capa monetaria invente porcentajes tributarios universales.
 
 # Auditoría de preparación — Norgard Defaults v0.1
 
@@ -55,18 +56,21 @@ Fuente:
 
 - `Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/moneda_y_acunacion.md`
 
-Canon confirmado:
+Canon actualizado por Punto 5:
 
-- la acuñación de moneda oficial es monopolio exclusivo de la Corona;
-- poseer oro o plata no concede derecho de acuñar;
-- falsificación y acuñación ilícita son delitos graves;
-- ubicación y organización de la ceca siguen sin definirse.
+- la acuñación oficial es monopolio exclusivo de la Corona;
+- **Clavo, Luna y Corona** son las denominaciones oficiales;
+- 1 Luna = 24 Clavos;
+- 1 Corona = 20 Lunas = 480 Clavos;
+- Ceca Real única y permanente en Hallheim;
+- peso y ley cerrados;
+- El Crisol permanece como Casa de Ensaye Darovan y no acuña;
+- metal privado, lingotes y moneda extranjera quedan regulados;
+- multas y balance base quedan monetizados.
 
 Clasificación:
 
-**READY_AS_PARTIAL_ECONOMIC_DEFAULT**
-
-No autoriza todavía a definir moneda completa, denominaciones, precios, salarios o fiscalidad.
+**ACTIVE_COMPLETE_REALM_MONETARY_DEFAULT**
 
 ### Convención toponímica
 
@@ -125,9 +129,11 @@ Pendiente de canon legal/familiar.
 
 Los sistemas Core ya modelan propiedad material, pero las consecuencias jurídicas siguen pendientes del derecho de Norgard.
 
-### Economía completa
+### Economía monetaria y balance base
 
-El monopolio de acuñación está definido, pero no el sistema económico completo.
+**RESUELTO POR PUNTO 5.**
+
+El sistema monetario y las anclas económicas de referencia ya están definidos a nivel Reino. Los precios concretos continúan siendo contextuales y el derecho laboral general sigue siendo un bloque distinto.
 
 ### Curandería de Norgard
 
@@ -201,17 +207,23 @@ Estado:
 
 ## 7. Ejecución E2
 
-Extraído como default parcial activo:
+E2 queda ampliado y cerrado por Punto 5:
 
-- monopolio exclusivo de la Corona sobre la acuñación oficial;
-- posesión o producción de metal precioso no concede derecho de acuñar;
-- falsificación y acuñación ilícita son delitos graves.
-
-Se mantienen explícitamente indefinidos moneda completa, denominaciones, precios, salarios, fiscalidad, ceca y penas concretas.
+- monopolio exclusivo de la Corona;
+- Clavo/Luna/Corona y equivalencias;
+- peso y ley;
+- Ceca Real de Hallheim;
+- Tesoro como autoridad administrativa;
+- El Crisol sin capacidad de acuñación;
+- lingotes y moneda extranjera;
+- tasa ordinaria de acuñación de metal privado del 2,5 %;
+- anclas de precios y salarios;
+- multas F1–F5;
+- integración fiscal.
 
 Estado:
 
-**NORGARD_DEFAULT_E2_READY_FOR_REGRESSION**
+**NORGARD_DEFAULT_E2_MONETARY_POINT_5_CLOSED**
 
 
 ---

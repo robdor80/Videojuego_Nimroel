@@ -41,7 +41,6 @@ No listos todavía:
 - derecho familiar, matrimonio, tutela y adopción;
 - mayoría de edad y derecho laboral;
 - propiedad, herencia y alquiler;
-- sistema monetario completo y precios;
 - tradición sanitaria de reino;
 - gastronomía general del reino;
 - nombres personales y apellidos;
@@ -73,18 +72,32 @@ Contrato operativo:
 
 `Datos operativos/norgard_funeral_mourning_default_v0.1.json`
 
-### E2 — autoridad monetaria
+### E2 — sistema monetario y acuñación
 
-Activo parcialmente a nivel Reino:
+Activo a nivel Reino — **Punto 5 cerrado**:
 
 - monopolio exclusivo de la Corona sobre la acuñación oficial;
-- metal precioso no implica derecho de acuñar;
-- falsificación y acuñación ilícita son delitos graves;
-- sistema monetario completo permanece pendiente.
+- **Clavo, Luna y Corona** como únicas denominaciones oficiales;
+- 1 Luna = 24 Clavos;
+- 1 Corona = 20 Lunas = 480 Clavos;
+- pesos y ley monetaria cerrados;
+- Ceca Real única y permanente en Hallheim;
+- dependencia administrativa del Tesoro de la Corona;
+- El Crisol como Casa de Ensaye Darovan, nunca como ceca;
+- lingotes, metal privado y tasa de acuñación del 2,5 %;
+- moneda extranjera sin curso legal obligatorio;
+- multas F1–F5 monetizadas;
+- balance base de precios y salarios.
 
-Contrato operativo:
+Contratos operativos:
 
 `Datos operativos/norgard_crown_minting_authority_default_v0.1.json`
+
+`Datos operativos/norgard_currency_economic_balance_default_v0.1.json`
+
+Balance humano:
+
+`02_Gobierno_y_economia/balance_monetario_precios_salarios_v0.1.md`
 
 ### E3 — convención toponímica
 
@@ -224,7 +237,7 @@ Canon:
 
 `Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_fiscal_y_aduanero_v0.1.md`
 
-Los importes y porcentajes exactos se resolverán con moneda/balance económico sin reabrir la arquitectura fiscal.
+El Punto 5 ya aporta unidad monetaria, equivalencias y procedimiento de valoración. Los porcentajes o tarifas fiscales concretos siguen perteneciendo al calendario fiscal autorizado y no se inventan desde la capa monetaria.
 
 
 ### E9 — Justicia del Rey y sistema penal

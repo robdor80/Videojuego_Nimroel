@@ -21,18 +21,23 @@
     "royalNavy": "Datos operativos/norgard_royal_navy_default_v0.1.json",
     "civilMaritimeFishing": "Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
     "royalNavyOperations": "Datos operativos/norgard_royal_navy_operations_default_v0.1.json",
-    "fiscalCustoms": "Datos operativos/norgard_fiscal_customs_default_v0.1.json"
+    "fiscalCustoms": "Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "currencyEconomicBalance": "Datos operativos/norgard_currency_economic_balance_default_v0.1.json",
+    "penalCode": "Datos operativos/norgard_penal_code_v0.1.json",
+    "kingsJusticeProcedure": "Datos operativos/norgard_kings_justice_procedure_v0.1.json"
   },
   "readyCandidates": {
     "funeralMourning": "extracted_active_validated",
-    "crownMintingAuthority": "extracted_active_partial_validated",
+    "crownMintingAuthority": "authored_active_complete_validated",
     "toponymicConvention": "extracted_active_validated",
     "royalReceptionResidence": "extracted_active_validated",
     "militaryAuthorityHouseForces": "extracted_active_validated",
     "royalNavy": "extracted_active_validated",
     "civilMaritimeFishing": "authored_active_validated",
     "royalNavyOperations": "active_extension_of_E6_validated",
-    "fiscalCustoms": "authored_active_validated"
+    "fiscalCustoms": "authored_active_validated",
+    "currencyEconomicBalance": "authored_active_validated",
+    "penalJustice": "authored_active_validated"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
@@ -41,7 +46,6 @@
     "family_marriage_guardianship_law",
     "age_of_majority_and_labor_rules",
     "property_inheritance_rental_law",
-    "complete_currency_prices_framework",
     "realm_healing_tradition",
     "realm_cuisine",
     "personal_naming_and_surname_rules",
@@ -56,9 +60,12 @@
       "regression": "Validacion/regresion_e1_funeral_luto_norgard_v0.1.md"
     },
     "E2": {
-      "status": "validated_static_regression",
+      "status": "validated_static_regression_point_5_closed",
       "default": "Datos operativos/norgard_crown_minting_authority_default_v0.1.json",
-      "regression": "Validacion/regresion_e2_acunacion_norgard_v0.1.md"
+      "balance": "Datos operativos/norgard_currency_economic_balance_default_v0.1.json",
+      "regression": "Validacion/regresion_e2_acunacion_norgard_v0.1.md",
+      "validationPack": "Validacion/norgard_monetary_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_5_CECA_ACUNACION_SISTEMA_MONETARIO_NORGARD_v0.1.md"
     },
     "E3": {
       "status": "validated_static_regression",
@@ -91,6 +98,13 @@
       "default": "Datos operativos/norgard_fiscal_customs_default_v0.1.json",
       "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_fiscal_y_aduanero_v0.1.md",
       "regression": "Validacion/regresion_e8_sistema_fiscal_aduanero_v0.1.md"
+    },
+    "E9": {
+      "status": "validated_static_regression",
+      "penalCode": "Datos operativos/norgard_penal_code_v0.1.json",
+      "procedure": "Datos operativos/norgard_kings_justice_procedure_v0.1.json",
+      "validation": "Validacion/norgard_penal_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_4_SISTEMA_PENAL_NORGARD_v0.1.md"
     }
   },
   "downstreamDefaults": {
@@ -98,7 +112,8 @@
   },
   "validation": {
     "status": "validated_static_regression",
-    "regressionSpecifications": 8,
-    "blockedPendingCanonIsIntentional": true
+    "regressionSpecifications": 9,
+    "blockedPendingCanonIsIntentional": true,
+    "monetaryValidationPack": "Validacion/norgard_monetary_validation_pack_v0.1.json"
   }
 }
