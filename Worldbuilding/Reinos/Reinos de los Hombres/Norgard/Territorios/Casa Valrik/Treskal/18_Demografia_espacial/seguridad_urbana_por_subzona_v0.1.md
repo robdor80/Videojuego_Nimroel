@@ -2,20 +2,19 @@
 
 ## Estado
 
-**DISEÑO FUNCIONAL APROBADO — SIN RANGOS NI CIFRAS**
+**DISEÑO FUNCIONAL APROBADO — PLANTILLA Y RELACIONES CERRADAS**
 
-## Dependencia externa
+## Marco vigente
 
-La jerarquía militar general de Norgard continúa pendiente de revisión.
+La jerarquía militar de Norgard y el perfil Valrik ya están cerrados.
 
-Por coherencia, este documento **no fija rangos, equivalencias militares ni tamaño total** de la guardia urbana.
+La Guardia urbana mantiene **140–190 miembros** en roster total y permanece separada de:
 
-Define únicamente:
+- Guardia de Casa Valrik;
+- Fuerza Territorial de T12;
+- seguridad interior de Astilleros Reales.
 
-- funciones;
-- prioridades;
-- distribución;
-- respuesta.
+Este documento define su distribución espacial cotidiana.
 
 ---
 
@@ -188,7 +187,7 @@ La vigilancia urbana puede operar mediante:
 
 Esto sigue el patrón territorial Valrik de seguridad funcional.
 
-No se fija todavía organización jerárquica.
+La organización funcional distingue mando, capitanes, sargentos y guardias.
 
 ---
 
@@ -250,3 +249,14 @@ Vecinos, propietarios y trabajadores forman la primera capa social de detección
 ## Regla final
 
 **La seguridad de Treskal se concentra donde hay personas, valor o riesgo; no funciona como una cuadrícula policial uniforme ni como una ocupación militar.**
+
+
+# 14. T12 — recinto militar Valrik
+
+T12 no entra en la matriz ordinaria de patrulla urbana como un barrio civil.
+
+- seguridad interna: Fuerza Territorial Valrik;
+- calles civiles de aproximación: Guardia urbana cuando proceda;
+- incidentes mixtos: coordinación.
+
+La existencia de soldados en T12 no aumenta automáticamente la presencia policial en el resto de Treskal.

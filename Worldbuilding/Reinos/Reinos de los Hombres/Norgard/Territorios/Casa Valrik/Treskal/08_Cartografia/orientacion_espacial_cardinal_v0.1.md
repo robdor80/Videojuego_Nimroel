@@ -213,7 +213,25 @@ No se fijan todavía nombres ni trazados métricos.
 
 ---
 
-# 14. Frente norte/nordeste
+# 14. T12 — Recinto militar Valrik
+
+Ubicación relativa:
+
+**norte / nordeste interior**, en el borde construido y asociado a T11.
+
+Debe quedar:
+
+- por encima de cotas inundables;
+- próximo a accesos hacia interior, bosque y Montes Invernos;
+- comunicado con T05/T06;
+- próximo a T10 para suministros y animales;
+- suficientemente separado de T08 para que ejército Valrik y autoridad naval real no parezcan una sola institución.
+
+No debe dominar el skyline.
+
+---
+
+# 15. Frente norte/nordeste
 
 La proximidad de áreas forestales no significa que el Bosque Negro llegue físicamente hasta las últimas casas de Treskal.
 
@@ -228,7 +246,7 @@ Debe existir transición mediante:
 
 ---
 
-# 15. Frente marítimo
+# 16. Frente marítimo
 
 De oeste/suroeste hacia este/sureste, la lectura funcional tiende a:
 

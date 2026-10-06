@@ -71,6 +71,22 @@ Transporta:
 - pasajeros;
 - suministros.
 
+## Eje militar territorial
+
+Conecta:
+
+**territorio → T11 → T12**
+
+Transporta:
+
+- tropas;
+- monturas;
+- equipo;
+- suministros;
+- contingentes movilizados.
+
+Debe permitir que una movilización grande no atraviese T03.
+
 ## Eje institucional
 
 Conecta:

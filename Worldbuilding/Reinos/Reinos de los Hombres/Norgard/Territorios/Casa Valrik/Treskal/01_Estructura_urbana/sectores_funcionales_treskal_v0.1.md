@@ -209,6 +209,35 @@ Cada corredor debe conectarse con el sector que consume su carga antes de penetr
 
 ---
 
+# T12 — Recinto militar Valrik
+
+Funciones:
+
+- cuartel territorial;
+- mando militar Valrik;
+- instrucción;
+- movilización;
+- depósitos;
+- establos militares ligeros;
+- preparación de convoyes.
+
+Ubicación funcional:
+
+- borde norte/nordeste interior;
+- conectado a T11;
+- próximo a T10;
+- accesible desde T05/T06;
+- separado de T08 y del núcleo comercial.
+
+No es:
+
+- un barrio residencial;
+- una ciudadela;
+- una base naval;
+- una muralla urbana.
+
+---
+
 # Relaciones críticas
 
 ## Madera
@@ -234,6 +263,10 @@ Cada corredor debe conectarse con el sector que consume su carga antes de penetr
 ## Construcción naval militar
 
 **T11 / T02 / T04 → T08 → mar**
+
+## Movilización territorial
+
+**territorio → T11 → T12 → destino territorial / convocatoria real**
 
 ---
 

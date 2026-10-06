@@ -6,7 +6,7 @@
 
 ## Importante
 
-Los identificadores S01–S10 son técnicos.
+Los identificadores S01–S12 son técnicos.
 
 **No son nombres canónicos de edificios.**
 
@@ -226,6 +226,54 @@ No se ubica en T03.
 
 ---
 
+# S11 — Cuartel Territorial Valrik
+
+## Obligatorio
+
+Sí.
+
+## Sector
+
+T12.
+
+## Funciones
+
+- alojamiento de 260–340 profesionales;
+- mando;
+- armería;
+- intendencia;
+- depósitos;
+- establos;
+- formación;
+- reparación básica;
+- preparación de despliegues.
+
+---
+
+# S12 — Campo de instrucción y movilización
+
+## Obligatorio
+
+Sí.
+
+## Sector
+
+T12.
+
+## Funciones
+
+- entrenamiento;
+- revista;
+- reunión de contingentes;
+- preparación de convoyes;
+- campamento temporal de refuerzo.
+
+Capacidad simultánea de actividad: **800–1.200 personas**.
+
+No es alojamiento permanente para toda la reserva.
+
+---
+
 # Edificios que NO se fijan todavía
 
 No se crean aún de forma canónica:
@@ -240,8 +288,8 @@ No se crean aún de forma canónica:
 - gremio formal de cada oficio;
 - banco;
 - palacio de justicia monumental;
-- arsenal independiente;
-- cuartel general militar del Reino.
+- arsenal real independiente;
+- cuartel general militar **del Reino**.
 
 Cualquiera de ellos requerirá una decisión específica de canon o gameplay.
 

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_valrik_military_presence_contract",
+  "version": "0.1",
+  "status": "active_design_contract",
+  "inheritsFrom": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_military_structure_default_v0.1.json",
+  "cityForces": {
+    "houseGuard": {
+      "totalHouseBand": [
+        48,
+        72
+      ],
+      "primaryFacility": "S01",
+      "separateFromUrbanGuard": true,
+      "separateFromTerritorialArmy": true
+    },
+    "urbanGuard": {
+      "rosterBand": [
+        140,
+        190
+      ],
+      "ordinaryOnDutyVisibleOrImmediate": [
+        35,
+        55
+      ],
+      "primaryFacility": "S05",
+      "sector": "T06",
+      "separateFromArmy": true
+    },
+    "territorialGarrison": {
+      "ordinaryPresentBand": [
+        260,
+        340
+      ],
+      "primaryFacility": "S11",
+      "sector": "T12"
+    }
+  },
+  "militarySector": {
+    "id": "T12",
+    "technicalName": "valrik_military_precinct",
+    "relativePosition": "north_northeast_inland_edge",
+    "adjacentOrConnected": [
+      "T11",
+      "T10"
+    ],
+    "near": [
+      "T05",
+      "T06"
+    ],
+    "separateFrom": [
+      "T03",
+      "T07",
+      "T08"
+    ],
+    "floodProne": false,
+    "cityWall": false
+  },
+  "facilities": {
+    "S11": "territorial_barracks_command_armory_logistics",
+    "S12": "training_and_muster_field"
+  },
+  "muster": {
+    "S12SimultaneousActivityCapacity": [
+      800,
+      1200
+    ],
+    "permanentHousingForFullReserve": false,
+    "overflow": "temporary_camp_on_adjacent_open_land",
+    "heavyTrafficRoute": [
+      "territory",
+      "T11",
+      "T12"
+    ]
+  },
+  "crownBoundary": {
+    "T08Owner": "Crown_of_Norgard",
+    "valrikTerritorialCommandInsideT08": false,
+    "cooperationOutsideAndEmergency": true
+  }
+}

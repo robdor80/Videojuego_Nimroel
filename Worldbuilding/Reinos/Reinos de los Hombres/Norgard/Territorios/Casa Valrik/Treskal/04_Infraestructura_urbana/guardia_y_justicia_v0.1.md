@@ -2,11 +2,11 @@
 
 ## Estado
 
-**CANON URBANO EN DESARROLLO — FUNCIÓN INSTITUCIONAL**
+**CANON URBANO CERRADO — FUNCIÓN INSTITUCIONAL Y PLANTILLA**
 
 ## Objetivo
 
-Definir responsabilidades y relaciones sin fijar todavía nombres formales de rangos que deban coordinarse con el sistema general de Norgard.
+Definir responsabilidades, plantilla, cadena funcional y separación respecto a las fuerzas militares Valrik.
 
 ---
 
@@ -173,3 +173,59 @@ La estructura base representa cómo **debería funcionar** la institución.
 ## Regla final
 
 **Treskal mantiene la paz mediante una guardia urbana civil y una justicia territorial estable; la autoridad última sigue siendo la Ley del Rey, la Casa Valrik y, en materia soberana, la Corona.**
+
+
+# 12. Plantilla operativa
+
+La Guardia urbana de Treskal mantiene un roster ordinario de:
+
+**140–190 guardias.**
+
+No significa que todos estén simultáneamente en la calle.
+
+En una franja ordinaria pueden encontrarse aproximadamente **35–55**:
+
+- de patrulla;
+- en puestos;
+- en S05;
+- disponibles para respuesta inmediata.
+
+El resto puede estar:
+
+- fuera de turno;
+- descansando;
+- de permiso;
+- enfermo;
+- en tareas internas;
+- reasignado temporalmente.
+
+# 13. Cadena funcional
+
+- mando de Guardia urbana;
+- capitanes;
+- sargentos;
+- guardias.
+
+La Guardia urbana no depende del comandante militar de T12 para su actividad cotidiana.
+
+En emergencia grave ambos cuerpos coordinan bajo la autoridad Valrik correspondiente.
+
+# 14. Diferencia con T12
+
+T12 alberga la Fuerza Territorial Valrik.
+
+La Guardia urbana:
+
+- investiga;
+- patrulla;
+- mantiene orden;
+- apoya justicia.
+
+La Fuerza Territorial:
+
+- combate;
+- guarnece;
+- se moviliza;
+- defiende el territorio.
+
+No son intercambiables.

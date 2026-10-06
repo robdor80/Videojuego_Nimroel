@@ -149,3 +149,23 @@ Debe estar:
 ## Regla final
 
 **La justicia de Treskal debe parecer una institución que funciona todos los días, no una escenografía de mazmorra medieval.**
+
+
+# 10. Plantilla de S05
+
+S05 es la sede principal de una Guardia urbana de **140–190 miembros**.
+
+No necesita alojar a todo el roster simultáneamente.
+
+Debe tener capacidad para:
+
+- mando;
+- guardia de servicio;
+- relevo;
+- equipo;
+- denuncias;
+- mensajería;
+- detenidos en tránsito;
+- respuesta rápida.
+
+El alojamiento militar de la Fuerza Territorial pertenece a T12/S11.

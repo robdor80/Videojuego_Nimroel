@@ -8,7 +8,7 @@
 
 Fijar qué sectores deben estar próximos o separados sin dibujar todavía un plano métrico.
 
-Los identificadores T01–T11 son funcionales y no constituyen nombres de barrios.
+Los identificadores T01–T12 son funcionales y no constituyen nombres de barrios.
 
 ---
 
@@ -155,11 +155,29 @@ Conectan el territorio con:
 
 ---
 
+## T12 — Recinto militar Valrik
+
+Debe situarse en el borde interior norte/nordeste y conectar directamente con T11.
+
+Debe quedar:
+
+- fuera del tejido comercial denso;
+- fuera de zonas inundables;
+- próximo a T10 para abastecimiento y animales;
+- con acceso razonable a T05/T06;
+- separado de T08.
+
+S11 y S12 forman su núcleo.
+
+---
+
 # 3. Separaciones obligatorias
 
 Mantener separación funcional entre:
 
 - T08 Astilleros Reales y T03 mercado principal;
+- T12 recinto militar y T03 mercado principal;
+- T12 y T08 como autoridades y recintos distintos;
 - grandes corrales de T10 y T09 residencial denso;
 - almacenamiento masivo de madera y las calles residenciales más cerradas;
 - actividades contaminantes y captaciones de agua;
