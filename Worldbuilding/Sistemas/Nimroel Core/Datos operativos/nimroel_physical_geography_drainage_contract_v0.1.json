@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_physical_geography_drainage_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "humanAuthority": "Geografia fisica/geografia_fisica_drenaje_hidrografia_v0.1.md",
+  "systemPurpose": "Constrain terrain-driven drainage, basin formation, springs and minor hydrography before realm or territory profiles add local context.",
+  "sourcePrecedence": [
+    "AUTHORED",
+    "DERIVED",
+    "GENERATED",
+    "DYNAMIC",
+    "UNKNOWN"
+  ],
+  "immutableRules": {
+    "downhillSurfaceFlow": true,
+    "dividesSeparateBasins": true,
+    "channelRequiresPlausibleSource": true,
+    "tributariesRequireNetworkConnectivity": true,
+    "spontaneousCrossDivideFlowForbidden": true,
+    "unexplainedUphillChannelForbidden": true,
+    "materializedGeometryPersists": true,
+    "dynamicHydrologicStateMayChange": true,
+    "unknownAllowed": true
+  },
+  "microreliefUnits": [
+    "divide_ridge",
+    "convex_upland",
+    "slope",
+    "hollow_swale",
+    "valley_floor",
+    "fluvial_terrace",
+    "floodplain",
+    "depression",
+    "piedmont_fan",
+    "gully_gorge",
+    "pass_saddle",
+    "coastal_lowland"
+  ],
+  "generationDependency": [
+    "authored_large_scale_anchors",
+    "macro_elevation",
+    "microrelief",
+    "slope_and_flow_direction",
+    "drainage_divides_and_catchments",
+    "flow_accumulation",
+    "spring_candidates",
+    "channel_initiation",
+    "tributary_connectivity",
+    "wetlands_and_floodable_areas",
+    "permanence_classification",
+    "human_overlay",
+    "materialization_and_persistence"
+  ],
+  "coursePermanence": [
+    "perennial",
+    "seasonal",
+    "ephemeral"
+  ],
+  "springCauses": [
+    "groundwater_emergence",
+    "permeable_impermeable_contact",
+    "fracture",
+    "perched_aquifer",
+    "slope_foot",
+    "snow_or_rain_recharge"
+  ],
+  "provenancePolicy": {
+    "authoredOverridesGenerated": true,
+    "derivedMustBeExplainable": true,
+    "generatedMustRespectConstraints": true,
+    "dynamicCannotRewriteIdentityWithoutWorldEvent": true
+  },
+  "explicitNonGoals": [
+    "full_geological_simulation",
+    "real_world_hydraulic_precision",
+    "exact_numeric_thresholds_at_worldbuilding_stage",
+    "random_stream_placement_without_terrain_context"
+  ]
+}

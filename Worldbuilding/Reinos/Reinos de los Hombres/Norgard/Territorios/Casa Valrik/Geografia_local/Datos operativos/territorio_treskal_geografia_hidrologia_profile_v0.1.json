@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "documentId": "territorio_treskal_geografia_hidrologia_profile",
+  "version": "0.1",
+  "status": "draft_operational_profile_approved_for_generation_context",
+  "authorityScope": "territorio_valrik_treskal_geography",
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+  "authoredAnchors": {
+    "majorRivers": [
+      "Sareno",
+      "Theleno"
+    ],
+    "majorRiverRules": [
+      "permanent",
+      "southern_montes_invernos_headwaters",
+      "rain_and_snowmelt_fed",
+      "converge_before_mouth_near_Treskal"
+    ],
+    "mountainSystem": "Montes Invernos",
+    "southernSea": "Mar de Suthiros"
+  },
+  "subzones": {
+    "south_coast_treskal": {
+      "streamDensity": "low_to_moderate",
+      "springPotential": "low_to_moderate",
+      "dominantDrainage": [
+        "Gemelos_system",
+        "direct_Suthiros_microbasins"
+      ],
+      "microrelief": [
+        "coastal_lowland",
+        "low_ridges",
+        "shallow_hollows",
+        "fluvial_terraces"
+      ]
+    },
+    "sareno_theleno_alluvial_corridor": {
+      "streamDensity": "moderate_tributary_network",
+      "springPotential": "moderate",
+      "dominantDrainage": [
+        "Sareno",
+        "Theleno",
+        "confluence_reaches"
+      ],
+      "microrelief": [
+        "floodplain",
+        "fluvial_terrace",
+        "hollows",
+        "paleochannel_like_depressions"
+      ],
+      "channelBirthConstraint": "major_perennial_headwaters_unlikely_inside_flat_floodplain_without_groundwater_source"
+    },
+    "southern_central_open_lands": {
+      "streamDensity": "moderate",
+      "springPotential": "moderate",
+      "dominantDrainage": [
+        "nearest_major_basin",
+        "direct_coastal_where_divide_supports"
+      ],
+      "microrelief": [
+        "rolling_uplands",
+        "shallow_valleys",
+        "hollows",
+        "small_depressions"
+      ]
+    },
+    "black_forest": {
+      "streamDensity": "moderate_to_high",
+      "springPotential": "moderate_to_high",
+      "dominantDrainage": [
+        "watershed_dependent"
+      ],
+      "microrelief": [
+        "wooded_ridges",
+        "humid_hollows",
+        "small_valleys",
+        "depressions"
+      ]
+    },
+    "southern_piedmont": {
+      "streamDensity": "high",
+      "springPotential": "high",
+      "dominantDrainage": [
+        "Sareno_headwaters",
+        "Theleno_headwaters",
+        "adjacent_valid_basins"
+      ],
+      "microrelief": [
+        "fans",
+        "gullies",
+        "valley_exits",
+        "slope_feet",
+        "convergent_hollows"
+      ]
+    },
+    "montes_invernos": {
+      "streamDensity": "high_to_very_high_headwaters",
+      "springPotential": "high",
+      "dominantDrainage": [
+        "south_slope_to_Sareno_or_Theleno_systems",
+        "north_slope_to_independent_northern_basins"
+      ],
+      "microrelief": [
+        "ridges",
+        "headwater_valleys",
+        "gullies",
+        "gorges",
+        "passes",
+        "mountain_valley_floors"
+      ]
+    },
+    "northern_lands": {
+      "streamDensity": "moderate",
+      "springPotential": "moderate",
+      "dominantDrainage": [
+        "northern_or_eastern_receivers"
+      ],
+      "microrelief": [
+        "cold_valleys",
+        "depressions",
+        "rolling_ground"
+      ]
+    },
+    "northern_coast": {
+      "streamDensity": "moderate_short_basins",
+      "springPotential": "moderate",
+      "dominantDrainage": [
+        "direct_northern_coast"
+      ],
+      "microrelief": [
+        "coastal_ridges",
+        "short_gullies",
+        "wet_depressions"
+      ]
+    }
+  },
+  "coursePermanence": [
+    "perennial",
+    "seasonal",
+    "ephemeral"
+  ],
+  "generatedFeaturePersistence": true,
+  "exactCartographicLinesDeferredToTerrainAndCityPlan": true,
+  "explicitUnknowns": [
+    "exact_minor_basin_boundaries",
+    "exact_stream_positions",
+    "exact_spring_positions",
+    "exact_urban_microdrainage_before_Treskal_city_plan",
+    "exact_major_peak_and_pass_locations_shared_with_Galdren"
+  ]
+}

@@ -36,11 +36,11 @@ Las decisiones permanecen como borrador hasta la revisión territorial final.
 
 ---
 
-## Fase futura — microrelieve, cuencas e hidrografía menor
+## Fase desarrollada — microrelieve, cuencas e hidrografía menor
 
 ### Estado
 
-**PENDIENTE FUTURO — NO DESARROLLAR EN LA FASE CLIMÁTICA ACTUAL**
+**BORRADOR DE DISEÑO — DESARROLLADO PARA CONTEXTO DE GENERACIÓN**
 
 La auditoría técnica del clima local ha detectado que el futuro sistema podrá inferir bien **cómo se comporta un curso de agua si existe**, pero todavía será necesario definir una base geográfica que permita responder:
 
@@ -55,7 +55,7 @@ La auditoría técnica del clima local ha detectado que el futuro sistema podrá
 
 ### Momento de desarrollo
 
-Este bloque se abordará **después de cerrar Pueblos, Villas y ciudad de Treskal**, y **antes de la revisión territorial final** del clima y medio ambiente.
+La fase se desarrolla ahora, una vez cerrado funcionalmente Treskal y antes de fijar el plano urbano definitivo.
 
 ### Forma de trabajo
 
@@ -79,3 +79,17 @@ pertenecerá a una fase técnica distinta.
 ### Objetivo
 
 No dibujar manualmente cada arroyo, sino establecer suficientes causas espaciales para que el futuro motor pueda generar una red hidrográfica menor plausible y conectada.
+
+
+## Documentos añadidos en esta fase
+
+- `microrelieve_y_unidades_de_drenaje_v0.1.md`
+- `cuencas_manantiales_red_hidrografica_menor_v0.1.md`
+- `reglas_espaciales_generacion_motor_v0.1.md`
+- `Datos operativos/territorio_treskal_geografia_hidrologia_profile_v0.1.json`
+
+La autoridad física universal se hereda desde:
+
+`Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json`
+
+Con esta fase queda resuelto el hueco conceptual de **por qué puede existir un arroyo en un punto y no en otro**. Las posiciones exactas se concretarán mediante el terreno/plano, no mediante lore arbitrario.

@@ -159,16 +159,8 @@ Sus observaciones no sustituyen al borrador climático. Sirven para:
 - orientar la futura traducción del worldbuilding ambiental a sistemas de juego.
 
 
-### Desarrollo geográfico futuro relacionado
+### Desarrollo geográfico relacionado
 
-**Microrelieve, cuencas e hidrografía menor** no forman parte del cierre climático actual.
+**Microrelieve, cuencas e hidrografía menor** ya han sido desarrollados como capa geográfica complementaria al bloque climático.
 
-Se desarrollarán después de cerrar:
-
-1. Pueblos;
-2. Villas;
-3. ciudad de Treskal;
-
-y antes de la revisión territorial conjunta que decidirá qué partes del borrador ambiental pueden elevarse a canon.
-
-Su planificación se mantiene en `../Geografia_local/README.md`.
+Su autoridad de diseño se mantiene en `../Geografia_local/`, y el bloque climático la consume como contexto. Las posiciones cartográficas exactas de cauces menores siguen deliberadamente abiertas hasta generar/fijar el terreno y el plano de Treskal.

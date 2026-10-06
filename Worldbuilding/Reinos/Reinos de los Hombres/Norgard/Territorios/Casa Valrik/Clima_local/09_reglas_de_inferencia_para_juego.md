@@ -678,3 +678,40 @@ El objetivo es conseguir que:
 Principio final:
 
 > **el mundo no cambia de identidad; cambia de estado como consecuencia de lo que le sucede.**
+
+
+# 26. Inferencia de existencia y posición de un curso menor
+
+La existencia de un arroyo no se infiere solo con clima.
+
+Debe resolverse primero:
+
+```text
+microrelieve
++ dirección de drenaje
++ cuenca
++ acumulación
++ manantiales/recarga
++ agua disponible
+= aptitud para cauce
+```
+
+Solo después se evalúa su estado mediante lluvia, deshielo, suelo y estación.
+
+La autoridad espacial complementaria está en:
+
+- `../Geografia_local/microrelieve_y_unidades_de_drenaje_v0.1.md`
+- `../Geografia_local/cuencas_manantiales_red_hidrografica_menor_v0.1.md`
+- `../Geografia_local/reglas_espaciales_generacion_motor_v0.1.md`
+
+# 27. Separación entre existencia y estado
+
+```text
+GEOGRAFÍA
+decide dónde puede existir el cauce
+
+CLIMA + WORLDSTATE
+deciden cómo está hoy
+```
+
+Esto evita que un episodio de lluvia genere un río nuevo en una loma sin cuenca.

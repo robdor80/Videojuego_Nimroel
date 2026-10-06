@@ -1,3 +1,13 @@
+> **ACTUALIZACIÓN 2026-10-06 — HUECO PRINCIPAL RESUELTO**  
+> La recomendación de las secciones 7, 8 y 18.1–18.2 ha sido ejecutada.  
+> Se han creado microrelieve, divisorias, familias de cuenca, manantiales, red hidrográfica menor y reglas de generación espacial en `../Geografia_local/`, con autoridad física universal en Nimroel Core.  
+> Este documento se conserva como auditoría histórica; sus apartados que indicaban “pendiente futuro” describen el estado a 2026-09-28.
+>
+> Estado actual del punto: **RESUELTO A NIVEL DE WORLDBUILDING / CONTEXTO DE GENERACIÓN**.  
+> Quedan para fases posteriores únicamente la geometría cartográfica concreta y la implementación del algoritmo.
+
+---
+
 # NIMROEL RPG — Auditoría técnica del borrador climático del territorio de Treskal
 
 **Documento de trabajo para revisión futura del lore**  
