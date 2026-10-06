@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "0.4",
+  "version": "0.5",
   "status": "active_preplan_constraint_set",
   "purpose": "Freeze only Norgard-level facts that materially affect Treskal metric planning, while keeping unresolved canon nonblocking and non-invented.",
-  "planReadiness": "ready_for_metric_city_plan_military_royal_naval_and_fiscal_resolved",
+  "planReadiness": "ready_for_metric_city_plan_military_royal_naval_fiscal_and_penal_resolved",
   "authorInputRequiredNow": false,
   "resolvedSpatialConstraints": {
     "royalProtocol": {
@@ -27,7 +27,10 @@
         "S04",
         "S05"
       ],
-      "standaloneLongTermPrison": false
+      "standaloneLongTermPrison": false,
+      "realmPenalCode": "Norgard Defaults/norgard_penal_code_v0.1.json",
+      "S04Role": "temporary_custody_pretrial_and_transfer_only",
+      "penalLaborUsesDedicatedWorkSitesOrTemporaryGuardedBarracks": true
     },
     "civilPort": {
       "sector": "T07",
@@ -96,12 +99,6 @@
       "standaloneCustomsHouse": false,
       "externalCustomsOnly": true,
       "internalNorgardCustoms": false
-    }
-  },
-  "nonBlockingPendingCanon": {
-    "longTermPenalSystem": {
-      "currentAction": "S04_temporary_custody_only",
-      "revisitOnlyIf": "future_canon_requires_long_term_prison_in_Treskal"
     }
   },
   "forbiddenPrePlanInventions": [
