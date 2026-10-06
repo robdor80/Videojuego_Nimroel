@@ -89,7 +89,7 @@
     "discrepancyCanTriggerReview": true,
     "releaseRequiresRequiredFiscalControlResolvedOrAuthorizedException": true,
     "smugglingFalseManifestAndDutyEvasionAreLegalOffenses": true,
-    "exactPenalties": "point_4_penal_system",
+    "exactPenalties": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_penal_code_v0.1.json#FISC",
     "exactRates": "economic_balance_schedule_not_worldbuilding_canon"
   },
   "portRules": {
@@ -122,7 +122,8 @@
     "disputePossible": true,
     "forceOrSeizureRequiresLegalAuthority": true,
     "fiscalOffensesRouteToKingJustice": true,
-    "penaltiesDefinedElsewhere": true
+    "penaltiesDefinedElsewhere": true,
+    "penalCodeRef": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_penal_code_v0.1.json"
   },
   "numericalPolicy": {
     "exactCurrencyAmountsNotDefinedHere": true,
