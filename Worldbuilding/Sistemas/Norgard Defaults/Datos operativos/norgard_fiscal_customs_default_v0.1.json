@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_fiscal_customs_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "norgard_realm_fiscal_customs",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_fiscal_y_aduanero_v0.1.md",
+  "inherits": [
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/organizacion_del_reino.md"
+  ],
+  "authority": {
+    "supremeFiscalAuthority": "Crown_of_Norgard",
+    "greatHousesAdministerAndCollectInTerritories": true,
+    "greatHousesLegislateIndependentTaxes": false,
+    "greatHousesRemitStipulatedShareToCrown": true,
+    "greatHousesRetainAuthorizedShareForAdministration": true,
+    "greatHousesAccountToCrown": true
+  },
+  "fiscalUnity": {
+    "NorgardIsSingleFiscalRealm": true,
+    "customsBetweenGreatHouseTerritories": false,
+    "crossingGreatHouseBoundaryAloneCreatesCustomsDuty": false,
+    "ordinaryInternalTradeMayStillIncurServiceMarketOrPortFees": true,
+    "externalCrownTerritoriesFiscalStatusMustBeExplicitlyDefinedSeparately": true,
+    "ElandorNotAutomaticallyAssumedInsideOrOutsideNorgardCustomsArea": true
+  },
+  "ordinaryRevenueFamilies": [
+    {
+      "id": "territorial_assessment",
+      "basis": "productive_capacity_holdings_or_authorized_activity",
+      "payerScope": "households_holdings_producers_businesses_or_settlements_as_assessed",
+      "settlement": [
+        "currency_when_defined",
+        "in_kind_when_assessment_allows"
+      ],
+      "transactionTax": false
+    },
+    {
+      "id": "market_and_public_service_fees",
+      "basis": "use_of_regulated_market_space_facility_measurement_storage_or_specific_service",
+      "payerScope": "actual_users",
+      "transactionTax": false
+    },
+    {
+      "id": "port_service_dues",
+      "basis": "berth_anchorage_handling_storage_inspection_or_other_actual_port_service",
+      "payerScope": "vessels_cargo_owners_or_operators_as_applicable",
+      "transactionTax": false
+    },
+    {
+      "id": "external_customs_duty",
+      "basis": "goods_crossing_Norgard_external_fiscal_frontier_when_not_exempt",
+      "payerScope": "importer_exporter_owner_or_responsible_merchant_as_rule_defines",
+      "transactionTax": false
+    },
+    {
+      "id": "crown_remittance",
+      "basis": "stipulated_share_of_house_administered_revenue_or_resources",
+      "payerScope": "Great_House_to_Crown",
+      "transactionTax": false
+    }
+  ],
+  "extraordinaryRevenue": {
+    "id": "extraordinary_royal_levy",
+    "requiresExplicitCrownOrder": true,
+    "temporary": true,
+    "purposeRequired": true,
+    "doesNotBecomeRoutineByRepeatedSimulation": true
+  },
+  "notTaxes": [
+    "commercial_purchase_price",
+    "wage",
+    "private_rent",
+    "loan_repayment",
+    "fine_or_criminal_penalty",
+    "confiscation",
+    "voluntary_gift",
+    "ordinary_internal_transfer_between_house_territories"
+  ],
+  "customs": {
+    "trigger": "crossing_external_fiscal_frontier_with_goods_subject_to_customs",
+    "internalNorgardCustomsForbidden": true,
+    "declarationRequiredForRelevantCommercialCargo": true,
+    "manifestMayBeAggregated": true,
+    "inspectionCanBeRiskOrCauseBased": true,
+    "everyCrateInspectionRequired": false,
+    "valuationUsesDeclaredAndAssessedValueOrQuantity": true,
+    "discrepancyCanTriggerReview": true,
+    "releaseRequiresRequiredFiscalControlResolvedOrAuthorizedException": true,
+    "smugglingFalseManifestAndDutyEvasionAreLegalOffenses": true,
+    "exactPenalties": "point_4_penal_system",
+    "exactRates": "economic_balance_schedule_not_worldbuilding_canon"
+  },
+  "portRules": {
+    "localFishingCatchIsNotExternalCustomsImport": true,
+    "localFishingMayPayApplicableLandingMarketOrServiceFee": true,
+    "internalNorgardCargoNoCustomsDuty": true,
+    "internalNorgardCargoMayPayActualPortServices": true,
+    "crownOfficialCargoAndRoyalNavyOperationsExemptFromHouseTaxation": true,
+    "contractedCommercialGoodsOrServicesSuppliedToCrownStillRequireRealPaymentUnlessLawfulRequisitionOrOtherAuthorityApplies": true
+  },
+  "territorialAssessment": {
+    "universalPerSaleTax": false,
+    "everyRetailTransactionTaxed": false,
+    "assessmentCanBeCoinOrInKind": true,
+    "basisMustBeRecorded": true,
+    "reliefExemptionOrCorrectionRequiresAuthority": true,
+    "collectionCreatesOBLAndTXNRecords": true
+  },
+  "accounting": {
+    "houseLedgerRequired": true,
+    "localCollectionRecordsRequired": true,
+    "receiptsOrEquivalentRecordsSupported": true,
+    "CrownAuditAllowed": true,
+    "discrepancyDoesNotProveFraudWithoutEvidence": true,
+    "remittanceCanBeCoinResourcesOrAuthorizedMixedSettlement": true
+  },
+  "enforcement": {
+    "ordinaryCollectionUsesAdministrativeProcessFirst": true,
+    "overdueCreatesPersistentObligation": true,
+    "disputePossible": true,
+    "forceOrSeizureRequiresLegalAuthority": true,
+    "fiscalOffensesRouteToKingJustice": true,
+    "penaltiesDefinedElsewhere": true
+  },
+  "numericalPolicy": {
+    "exactCurrencyAmountsNotDefinedHere": true,
+    "exactPercentagesNotDefinedHere": true,
+    "rateScheduleRequiredForRuntimeEconomy": true,
+    "rateScheduleIsBalanceDataConstrainedByThisCanon": true,
+    "absenceOfNumericScheduleDoesNotAuthorizeRandomRates": true
+  },
+  "explicitNonDefaults": [
+    "customs_between_Great_Houses",
+    "routine_road_tolls_everywhere",
+    "routine_bridge_tolls_everywhere",
+    "sales_tax_on_every_purchase",
+    "independent_House_currency",
+    "independent_House_tax_law",
+    "automatic_confiscation_for_debt",
+    "omniscient_detection_of_smuggling"
+  ],
+  "runtimeImplementationRequiredLater": true
+}

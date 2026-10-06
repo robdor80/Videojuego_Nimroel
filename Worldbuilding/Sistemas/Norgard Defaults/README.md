@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E7 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E8 ACTIVOS**
 
 ## Objetivo
 
@@ -41,7 +41,7 @@ No listos todavía:
 - derecho familiar, matrimonio, tutela y adopción;
 - mayoría de edad y derecho laboral;
 - propiedad, herencia y alquiler;
-- sistema monetario completo, precios y fiscalidad;
+- sistema monetario completo y precios;
 - tradición sanitaria de reino;
 - gastronomía general del reino;
 - nombres personales y apellidos;
@@ -124,7 +124,7 @@ El resto continúa bloqueado hasta que exista canon suficiente.
 
 ## Validación de cierre
 
-E1, E2, E3, E4, E5, E6 y E7 han superado la regresión estática de contratos del cierre Treskal/Core.
+E1, E2, E3, E4, E5, E6, E7 y E8 han superado la regresión estática de contratos del cierre Treskal/Core.
 
 Estado:
 
@@ -199,3 +199,29 @@ Contratos:
 `Datos operativos/norgard_royal_navy_operations_default_v0.1.json`
 
 El sistema fiscal/aduanero se conecta en Punto 3 y no bloquea el cierre marítimo.
+
+
+### E8 — sistema fiscal y aduanero
+
+Activo a nivel Reino:
+
+- autoridad fiscal superior de la Corona;
+- administración y recaudación territorial por Grandes Casas;
+- remesa de la parte estipulada a la Corona;
+- ausencia de aduanas internas entre las cinco Grandes Casas;
+- contribución territorial;
+- tasas de mercado/servicio;
+- tasas portuarias;
+- aduana sobre frontera fiscal exterior;
+- leva extraordinaria solo por orden real;
+- registros, recibos, deuda, auditoría y fraude causal.
+
+Contrato:
+
+`Datos operativos/norgard_fiscal_customs_default_v0.1.json`
+
+Canon:
+
+`Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_fiscal_y_aduanero_v0.1.md`
+
+Los importes y porcentajes exactos se resolverán con moneda/balance económico sin reabrir la arquitectura fiscal.

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_defaults_manifest",
-  "version": "0.9",
+  "version": "1.0",
   "status": "active_realm_defaults_manifest",
   "authorityScope": "norgard_realm_defaults",
   "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
@@ -20,7 +20,8 @@
     "militaryAuthorityHouseForces": "Datos operativos/norgard_military_authority_house_forces_default_v0.1.json",
     "royalNavy": "Datos operativos/norgard_royal_navy_default_v0.1.json",
     "civilMaritimeFishing": "Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
-    "royalNavyOperations": "Datos operativos/norgard_royal_navy_operations_default_v0.1.json"
+    "royalNavyOperations": "Datos operativos/norgard_royal_navy_operations_default_v0.1.json",
+    "fiscalCustoms": "Datos operativos/norgard_fiscal_customs_default_v0.1.json"
   },
   "readyCandidates": {
     "funeralMourning": "extracted_active_validated",
@@ -30,7 +31,8 @@
     "militaryAuthorityHouseForces": "extracted_active_validated",
     "royalNavy": "extracted_active_validated",
     "civilMaritimeFishing": "authored_active_validated",
-    "royalNavyOperations": "active_extension_of_E6_validated"
+    "royalNavyOperations": "active_extension_of_E6_validated",
+    "fiscalCustoms": "authored_active_validated"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
@@ -39,7 +41,7 @@
     "family_marriage_guardianship_law",
     "age_of_majority_and_labor_rules",
     "property_inheritance_rental_law",
-    "complete_currency_prices_taxation_framework",
+    "complete_currency_prices_framework",
     "realm_healing_tradition",
     "realm_cuisine",
     "personal_naming_and_surname_rules",
@@ -83,6 +85,12 @@
       "default": "Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
       "navyOperations": "Datos operativos/norgard_royal_navy_operations_default_v0.1.json",
       "regression": "Validacion/regresion_e7_navegacion_pesca_operaciones_navales_v0.1.md"
+    },
+    "E8": {
+      "status": "validated_static_regression",
+      "default": "Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+      "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_fiscal_y_aduanero_v0.1.md",
+      "regression": "Validacion/regresion_e8_sistema_fiscal_aduanero_v0.1.md"
     }
   },
   "downstreamDefaults": {
@@ -90,7 +98,7 @@
   },
   "validation": {
     "status": "validated_static_regression",
-    "regressionSpecifications": 7,
+    "regressionSpecifications": 8,
     "blockedPendingCanonIsIntentional": true
   }
 }

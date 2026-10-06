@@ -106,6 +106,12 @@ Cada Gran Casa:
 
 Las Grandes Casas deben **rendir cuentas a la Corona** por su gestión.
 
+El sistema fiscal común del Reino se desarrolla en:
+
+`sistema_fiscal_y_aduanero_v0.1.md`
+
+Norgard funciona como una única área fiscal interior: el límite entre territorios de Grandes Casas no constituye por sí mismo una frontera aduanera.
+
 ---
 
 ## 7. Fuerza militar y seguridad
