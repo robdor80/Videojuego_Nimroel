@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "documentId": "casa_valrik_kings_justice_default",
+  "version": "0.1",
+  "status": "active_house_default",
+  "inherits": [
+    "norgard_penal_code_v0.1.json",
+    "norgard_kings_justice_procedure_v0.1.json"
+  ],
+  "scope": "Casa_Valrik_territory",
+  "rules": {
+    "sameNorgardLaw": true,
+    "independentValrikCriminalLaw": false,
+    "TreskalTerritorialSuperiorSeat": true,
+    "seriousCasesFromVillasMayBeRemittedToTreskal": true,
+    "ordinaryJudgesNeedNotBeLordValrik": true,
+    "capitalSentenceRequiresLordValrikPersonally": true,
+    "temporaryCustodyOnlyInS04": true,
+    "standaloneLongTermPrisonRequired": false,
+    "penalLaborMayBeAssignedAcrossAuthorizedTerritorialPublicWorks": true
+  }
+}

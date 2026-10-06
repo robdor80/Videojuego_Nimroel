@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_kings_justice_procedure",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "scope": "Norgard",
+  "model": "direct_medieval_kings_justice",
+  "actors": {
+    "judgeOrMagistrate": {
+      "directsProceeding": true,
+      "questionsPartiesAndWitnesses": true,
+      "examinesEvidence": true,
+      "determinesFactsAndSentence": true
+    },
+    "scribe": {
+      "recordsAccusation": true,
+      "recordsMaterialTestimony": true,
+      "recordsEvidenceAndSentence": true,
+      "recordsEnforcement": true
+    },
+    "guard": {
+      "investigatesAndSecures": true,
+      "presentsDetaineeAndMaterial": true,
+      "mayTestify": true
+    },
+    "victimOrAccuser": {
+      "mayReportAndTestify": true
+    },
+    "accused": {
+      "speaksForSelf": true,
+      "mayDenyExplainPresentMaterialAndNameWitnesses": true
+    },
+    "witness": {
+      "questionedDirectlyByJudge": true,
+      "mayBeSeparatedFromOtherWitnesses": true
+    }
+  },
+  "absentModernRoles": [
+    "professional_prosecutor",
+    "defense_lawyer",
+    "modern_jury",
+    "plea_bargaining"
+  ],
+  "initiation": {
+    "complaintMayStartCase": true,
+    "seriousCrimeMayBePursuedByKingsAuthorityWithoutPrivateAccuser": true
+  },
+  "evidence": {
+    "allowed": [
+      "witness_testimony",
+      "confession",
+      "objects",
+      "documents",
+      "visible_injuries",
+      "ordinary_physical_traces",
+      "possession_of_stolen_property",
+      "circumstances",
+      "contradictions",
+      "scene_inspection"
+    ],
+    "suspicionIsProof": false,
+    "reputationAloneProvesCurrentOffense": false,
+    "omniscientForensics": false,
+    "confessionImportantButNotAutomaticallyConclusive": true,
+    "tortureToObtainConfession": false
+  },
+  "testimony": {
+    "solemnDeclarationUnderKingsLaw": true,
+    "religiousOathRequired": false,
+    "falseTestimonyPunishableIfDeliberate": true,
+    "accusedLyingInOwnDefenseIsNotAutomaticallySeparateCrime": true
+  },
+  "hearing": {
+    "normallyPublic": true,
+    "restrictedPossibleForMilitaryOrCrownSecrets": true,
+    "oralAndDirect": true,
+    "writtenRecordMaintained": true
+  },
+  "review": {
+    "automaticFullAppeal": false,
+    "reviewMayBeRequestedFor": [
+      "important_new_evidence",
+      "proven_false_witness",
+      "judicial_corruption",
+      "identity_error",
+      "grave_procedural_irregularity"
+    ],
+    "CrownJusticeUltimateExceptionalReview": true
+  },
+  "capital": {
+    "judgeCannotExecuteOnOwnAuthority": true,
+    "territorialCapitalConfirmationRequired": true,
+    "ValrikRequiresLordValrikPersonally": true
+  },
+  "custody": {
+    "temporaryDetention": true,
+    "pretrialCustodyWhenNecessary": true,
+    "postSentenceHoldingPendingTransferOrExecution": true,
+    "ordinaryLongTermPrisonSentence": false
+  }
+}

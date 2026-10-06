@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_penal_validation_pack",
+  "version": "0.1",
+  "status": "static_validation_pack",
+  "scenarios": [
+    {
+      "id": "PEN01",
+      "case": "planned_killing",
+      "expected": "LIFE01_death_ordinary"
+    },
+    {
+      "id": "PEN02",
+      "case": "spontaneous_intentional_killing",
+      "expected": "LIFE02_not_LIFE01"
+    },
+    {
+      "id": "PEN03",
+      "case": "fatal_push_during_robbery_without_kill_intent",
+      "expected": "LIFE03"
+    },
+    {
+      "id": "PEN04",
+      "case": "gross_negligence_causes_death",
+      "expected": "LIFE04"
+    },
+    {
+      "id": "PEN05",
+      "case": "reasonable_self_defense_causes_death",
+      "expected": "no_homicide_conviction"
+    },
+    {
+      "id": "PEN06",
+      "case": "male_proven_penetrative_rape_adult",
+      "expected": "SEX01_includes_penile_amputation"
+    },
+    {
+      "id": "PEN07",
+      "case": "male_proven_penetrative_rape_minor",
+      "expected": "SEX02_penile_amputation_plus_death_subject_to_capital_confirmation"
+    },
+    {
+      "id": "PEN08",
+      "case": "sexual_assault_without_penetration",
+      "expected": "SEX04_no_automatic_penile_amputation"
+    },
+    {
+      "id": "PEN09",
+      "case": "perpetually_banished_person_voluntarily_returns",
+      "expected": "BREACH05_new_proceeding_death_ordinary"
+    },
+    {
+      "id": "PEN10",
+      "case": "perpetually_banished_person_shipwrecked_in_Norgard",
+      "expected": "BREACH05_voluntary_element_missing"
+    },
+    {
+      "id": "PEN11",
+      "case": "internal_Norgard_cargo_crosses_House_boundary",
+      "expected": "no_customs_offense"
+    },
+    {
+      "id": "PEN12",
+      "case": "external_cargo_hidden_to_evade_customs_and_proven",
+      "expected": "FISC02_or_FISC03_as_facts_support"
+    },
+    {
+      "id": "PEN13",
+      "case": "mere_insult_of_Lord_without_threat",
+      "expected": "AUTH04_not_crime"
+    },
+    {
+      "id": "PEN14",
+      "case": "bad_reputation_only",
+      "expected": "insufficient_for_conviction"
+    },
+    {
+      "id": "PEN15",
+      "case": "accused_lies_in_own_defense",
+      "expected": "not_automatic_false_testimony_offense"
+    },
+    {
+      "id": "PEN16",
+      "case": "witness_deliberately_lies_under_Kings_Law",
+      "expected": "JUST01"
+    },
+    {
+      "id": "PEN17",
+      "case": "judge_orders_death_in_Valrik_without_Lord_Valrik_confirmation",
+      "expected": "invalid_execution_authority"
+    },
+    {
+      "id": "PEN18",
+      "case": "sentence_is_ten_years_locked_in_prison",
+      "expected": "invalid_ordinary_penalty"
+    },
+    {
+      "id": "PEN19",
+      "case": "crime_not_in_catalog",
+      "expected": "NO_TIPIFICADO"
+    },
+    {
+      "id": "PEN20",
+      "case": "counterfeit_official_currency",
+      "expected": "FORG01"
+    },
+    {
+      "id": "PEN21",
+      "case": "CHD03_child_takes_property",
+      "expected": "no_criminal_sentence"
+    },
+    {
+      "id": "PEN22",
+      "case": "CHD06_youth_commits_adult_capital_offense",
+      "expected": "no_death_brand_or_penile_amputation"
+    },
+    {
+      "id": "PEN23",
+      "case": "voluntary_drunk_offender_claims_intoxication",
+      "expected": "not_automatic_excuse"
+    },
+    {
+      "id": "PEN24",
+      "case": "proven_total_inability_to_understand_act",
+      "expected": "culpability_may_be_excluded"
+    }
+  ]
+}

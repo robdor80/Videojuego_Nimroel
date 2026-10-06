@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_legal_case_sentence_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "scope": "generic_legal_simulation_mechanics",
+  "doesNotDefine": {
+    "realmLaw": true,
+    "crimeCatalog": true,
+    "penaltyValues": true,
+    "courtStructure": true
+  },
+  "namespaces": {
+    "LCASE": "legal_case",
+    "EVID": "evidence_item_or_testimony",
+    "SENT": "sentence",
+    "CUST": "custody_event"
+  },
+  "legalCase": {
+    "persistent": true,
+    "states": [
+      "reported",
+      "investigating",
+      "accused",
+      "awaiting_hearing",
+      "heard",
+      "decided",
+      "under_review",
+      "final",
+      "closed"
+    ],
+    "caseMayExistWithoutKnownOffender": true,
+    "caseMayRemainUnsolved": true
+  },
+  "evidence": {
+    "persistent": true,
+    "sourcesMayConflict": true,
+    "recordMayBeWrongOrFraudulent": true,
+    "evidenceDoesNotAutomaticallyProveFact": true,
+    "officialKnowledgeNotOmniscient": true,
+    "worldFactsAndKnownFactsSeparate": true
+  },
+  "sentence": {
+    "requiresApplicableLaw": true,
+    "componentsCanBeCombined": true,
+    "mustUseAuthorizedPenaltyTypesAndRanges": true,
+    "capitalConfirmationCanBeRequiredByRealmLaw": true
+  },
+  "custody": {
+    "persistent": true,
+    "custodyDoesNotEqualGuilt": true,
+    "escapePossible": true,
+    "transferPossible": true,
+    "releasePossible": true,
+    "longTermImprisonmentNotAssumed": true
+  },
+  "invariants": [
+    "no_crime_created_without_applicable_law",
+    "no_sentence_without_legal_basis",
+    "no_omniscient_evidence_resolution",
+    "no_automatic_guilt_from_accusation_reputation_or_custody",
+    "world_state_persists_cases_evidence_sentences_and_custody_events"
+  ]
+}

@@ -1,0 +1,1458 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_penal_code",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "Norgard",
+  "inherits": [
+    "nimroel_legal_case_sentence_contract_v0.1.json",
+    "organizacion_del_reino.md"
+  ],
+  "principles": {
+    "oneLawForAllNorgard": true,
+    "greatHousesAdministerKingsJustice": true,
+    "greatHousesCannotCreateIndependentCriminalLaw": true,
+    "noPunishmentByAnalogy": true,
+    "suspicionIsNotProof": true,
+    "accidentIsNotAutomaticallyCrime": true,
+    "ordinaryLongTermImprisonmentAsSentence": false,
+    "temporaryCustodyAndRemandAllowed": true
+  },
+  "penalties": [
+    "restitution",
+    "fine_F1_to_F5",
+    "penalLabor",
+    "compulsorySkilledService",
+    "confiscation",
+    "localBanishment",
+    "perpetualNorgardBanishment",
+    "lossOfOfficeOrRights",
+    "publicDishonor_stocks",
+    "flogging",
+    "peaceObligation",
+    "death"
+  ],
+  "corporalPolicy": {
+    "floggingAllowed": true,
+    "ordinaryBrandingAllowed": false,
+    "ordinaryJudicialMutilationAllowed": false,
+    "tortureAsPunishmentAllowed": false,
+    "tortureForConfessionAllowed": false,
+    "perpetualBanishmentForeheadBrand": true,
+    "penetrativeSexualCrimePenileAmputationException": true
+  },
+  "sexualLaw": {
+    "consentRequired": true,
+    "marriageOrRelationshipNeverCreatesConsent": true,
+    "victimPriorConductDoesNotCreateConsent": true,
+    "provenPenetrativeOffenseByMaleTriggersPenileAmputation": true,
+    "specificAggravators": [
+      "minor_victim",
+      "pregnant_victim",
+      "incapable_of_consent",
+      "severe_intellectual_disability_or_manifest_mental_vulnerability",
+      "guardian_or_authority_abuse",
+      "multiple_offenders",
+      "kidnapping_or_captivity",
+      "weapon_or_serious_injury",
+      "repeat_sexual_offender",
+      "exceptional_cruelty"
+    ]
+  },
+  "capitalAuthority": {
+    "judgeMayProposeCapitalSentence": true,
+    "judgeAloneMayOrderExecution": false,
+    "territorialCapitalConfirmationRequired": true,
+    "valrikExplicitCanon": "Lord_Valrik_personal_confirmation_required"
+  },
+  "universalAggravators": [
+    "premeditation_when_not_element",
+    "repeat_serious_offending",
+    "multiple_victims",
+    "abuse_of_office_or_trust",
+    "victim_minor_when_known_or_manifest",
+    "victim_pregnant_when_provable",
+    "victim_severe_intellectual_disability_or_manifest_mental_vulnerability_when_known_or_manifest",
+    "victim_manifestly_defenseless",
+    "exceptional_cruelty",
+    "organized_group",
+    "concealment_of_another_serious_offense"
+  ],
+  "universalMitigators": [
+    "serious_immediate_provocation_when_relevant",
+    "intense_fear_short_of_justification",
+    "voluntary_surrender",
+    "effective_attempt_to_save_or_repair_harm",
+    "material_cooperation",
+    "minor_participation",
+    "other_exceptional_circumstance_reasoned_by_judge"
+  ],
+  "justifications": {
+    "selfDefense": "necessary_reasonable_force_against_unlawful_imminent_attack",
+    "defenseOfThirdParty": "necessary_reasonable_force_to_protect_another",
+    "lawfulAuthority": true,
+    "necessitySubjectToProportionality": true,
+    "excessEndsJustification": true
+  },
+  "criminalResponsibility": {
+    "CHD01_to_CHD03": "no_criminal_sentence",
+    "CHD04_to_CHD05": "limited_if_understanding_proven_no_death_brand_mutilation_or_flogging",
+    "CHD06": "youth_responsibility_max_half_adult_range_no_death_perpetual_brand_or_penile_amputation",
+    "exactNumericAgeThresholdInventedByEngine": false,
+    "futureFormalAgeOfMajoritySupersedesStageFallback": true
+  },
+  "capacityAndIntoxication": {
+    "provenTotalInabilityToUnderstandMayExcludeCulpability": true,
+    "partialSevereImpairmentMayMitigate": true,
+    "mentalDisabilityAloneDoesNotRemoveCulpability": true,
+    "voluntaryIntoxicationIsNotExcuse": true,
+    "involuntaryIntoxicationMayAffectIntentIfProven": true
+  },
+  "penalLaborExecution": {
+    "productiveNotIdleConfinement": true,
+    "possibleAssignments": [
+      "roads",
+      "public_works",
+      "quarries",
+      "forestry",
+      "docks",
+      "repairs",
+      "other_authorized_public_work"
+    ],
+    "skilledServicePreferredWhenUsefulSafeAndAuthorized": true,
+    "supervisionRequired": true,
+    "guardedWorkBarracksOrCampsMayBeUsed": true,
+    "guardedWorkBarracksAreNotOrdinaryPrisonSentence": true,
+    "indefinitePenalSlaveryForbidden": true,
+    "termMustBeFixedBySentence": true
+  },
+  "specialRules": {
+    "consentToOrdinaryFightDoesNotAuthorizeKillingOrSeriousMaiming": true,
+    "trialByCombatNotAssumed": true,
+    "privateDuelDoesNotCreateHomicideImmunity": true,
+    "debtAloneIsNotCrime": true,
+    "inabilityToPayAloneIsNotCrime": true
+  },
+  "crimeGroups": [
+    {
+      "id": "LIFE",
+      "name": "delitos_contra_la_vida",
+      "offenses": [
+        {
+          "id": "LIFE01",
+          "name": "asesinato_premeditado",
+          "sentence": [
+            "death"
+          ],
+          "elements": [
+            "causes_death",
+            "intent_to_kill",
+            "premeditation",
+            "no_justification"
+          ],
+          "exceptionalCommutation": [
+            "perpetualNorgardBanishment"
+          ],
+          "specificAggravators": [
+            "killing_for_reward",
+            "prepared_ambush",
+            "deliberate_poisoning",
+            "kill_to_conceal_offense",
+            "kill_witness",
+            "multiple_victims",
+            "minor_victim",
+            "pregnant_victim",
+            "severe_intellectual_disability_or_manifest_mental_vulnerability",
+            "defenseless_or_in_custody",
+            "exceptional_cruelty"
+          ]
+        },
+        {
+          "id": "LIFE02",
+          "name": "homicidio_intencional_sin_premeditacion",
+          "sentence": [
+            "penalLabor_8_to_15_years",
+            "dependent_family_compensation_when_applicable"
+          ],
+          "rules": {
+            "mitigated": "penalLabor_3_to_8_years",
+            "aggravated": "penalLabor_15_to_25_years_or_perpetualNorgardBanishment_or_exceptional_death"
+          },
+          "elements": [
+            "causes_death",
+            "intent_to_kill",
+            "no_premeditation",
+            "no_justification"
+          ]
+        },
+        {
+          "id": "LIFE03",
+          "name": "muerte_durante_otro_delito",
+          "sentence": [
+            "penalLabor_5_to_12_years",
+            "compensation_when_applicable"
+          ],
+          "rules": {
+            "extremeRisk": "penalLabor_10_to_25_years_or_perpetualNorgardBanishment",
+            "multipleDeaths": "death_possible"
+          },
+          "elements": [
+            "intentional_underlying_offense",
+            "dangerous_conduct",
+            "caused_death",
+            "reasonably_foreseeable_risk",
+            "no_intent_to_kill"
+          ]
+        },
+        {
+          "id": "LIFE04",
+          "name": "homicidio_por_imprudencia_grave",
+          "sentence": [
+            "penalLabor_6_months_to_5_years",
+            "compensation"
+          ],
+          "rules": {
+            "aggravated": "penalLabor_3_to_8_years"
+          }
+        },
+        {
+          "id": "LIFE05",
+          "name": "abandono_mortal_de_persona_bajo_deber_de_cuidado",
+          "sentence": [
+            "penalLabor_3_to_10_years",
+            "compensation"
+          ],
+          "rules": {
+            "aggravated": "penalLabor_8_to_15_years_or_local_banishment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BODY",
+      "name": "delitos_contra_la_integridad",
+      "offenses": [
+        {
+          "id": "BODY01",
+          "name": "agresion_leve",
+          "sentence": [
+            "restitution_medical_or_lost_work",
+            "fine_F1_or_penalLabor_1_to_15_days",
+            "peaceObligation_optional"
+          ]
+        },
+        {
+          "id": "BODY02",
+          "name": "agresion_grave",
+          "sentence": [
+            "restitution",
+            "penalLabor_15_days_to_12_months",
+            "flogging_optional",
+            "peaceObligation"
+          ]
+        },
+        {
+          "id": "BODY03",
+          "name": "lesion_permanente",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_to_5_years",
+            "flogging_optional"
+          ]
+        },
+        {
+          "id": "BODY04",
+          "name": "ataque_con_arma_sin_intencion_de_matar",
+          "sentence": [
+            "restitution",
+            "penalLabor_6_months_to_4_years",
+            "flogging_optional"
+          ]
+        },
+        {
+          "id": "BODY05",
+          "name": "envenenamiento_no_mortal_deliberado",
+          "sentence": [
+            "restitution",
+            "penalLabor_2_to_8_years",
+            "localBanishment_optional"
+          ]
+        },
+        {
+          "id": "BODY06",
+          "name": "tortura_privada_o_crueldad_grave",
+          "sentence": [
+            "restitution",
+            "penalLabor_5_to_15_years",
+            "lossOfOfficeOrRights_if_applicable",
+            "local_or_perpetual_banishment_possible"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEX",
+      "name": "delitos_sexuales",
+      "offenses": [
+        {
+          "id": "SEX01",
+          "name": "violacion_o_agresion_sexual_con_penetracion_consumada",
+          "sentence": [
+            "penalLabor_10_to_20_years",
+            "compensation",
+            "lossOfOfficeOrRights_if_applicable",
+            "penile_amputation_if_male_offender"
+          ],
+          "rules": {
+            "aggravated": "perpetualNorgardBanishment_or_death"
+          }
+        },
+        {
+          "id": "SEX02",
+          "name": "violacion_o_agresion_sexual_con_penetracion_a_menor",
+          "sentence": [
+            "penile_amputation_if_male_offender",
+            "death"
+          ],
+          "rules": {
+            "capitalDefault": "true"
+          }
+        },
+        {
+          "id": "SEX03",
+          "name": "violacion_o_agresion_sexual_con_penetracion_a_persona_incapaz_de_consentir_o_con_discapacidad_intelectual_grave",
+          "sentence": [
+            "penile_amputation_if_male_offender",
+            "death_or_perpetualNorgardBanishment"
+          ],
+          "rules": {
+            "deathOrdinaryWhenKnownOrManifest": "true"
+          }
+        },
+        {
+          "id": "SEX04",
+          "name": "agresion_sexual_sin_penetracion",
+          "sentence": [
+            "penalLabor_6_months_to_5_years",
+            "flogging_optional",
+            "compensation",
+            "lossOfOfficeOrRights_if_applicable"
+          ],
+          "rules": {
+            "aggravated": "penalLabor_3_to_10_years_or_local_banishment"
+          }
+        },
+        {
+          "id": "SEX05",
+          "name": "coaccion_explotacion_o_abuso_sexual_sin_penetracion",
+          "sentence": [
+            "penalLabor_3_months_to_5_years",
+            "compensation",
+            "lossOfOfficeOrRights_if_applicable"
+          ],
+          "rules": {
+            "minorOrIncapable": "penalLabor_5_to_15_years_or_perpetualNorgardBanishment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "LIB",
+      "name": "delitos_contra_la_libertad",
+      "offenses": [
+        {
+          "id": "LIB01",
+          "name": "secuestro",
+          "sentence": [
+            "penalLabor_2_to_8_years",
+            "compensation"
+          ],
+          "rules": {
+            "aggravated": "penalLabor_8_to_20_years_or_perpetualNorgardBanishment"
+          }
+        },
+        {
+          "id": "LIB02",
+          "name": "retencion_ilegal",
+          "sentence": [
+            "penalLabor_1_month_to_2_years",
+            "compensation"
+          ]
+        },
+        {
+          "id": "LIB03",
+          "name": "esclavizacion_compraventa_o_trafico_de_personas",
+          "sentence": [
+            "penalLabor_10_to_25_years",
+            "confiscation_of_criminal_proceeds",
+            "perpetualNorgardBanishment_possible"
+          ],
+          "rules": {
+            "extreme": "death_possible"
+          }
+        },
+        {
+          "id": "LIB04",
+          "name": "traslado_forzoso",
+          "sentence": [
+            "penalLabor_1_to_5_years",
+            "compensation"
+          ]
+        },
+        {
+          "id": "LIB05",
+          "name": "amenaza_grave",
+          "sentence": [
+            "fine_F1_to_F3_or_penalLabor_1_day_to_6_months",
+            "peaceObligation"
+          ]
+        },
+        {
+          "id": "LIB06",
+          "name": "coaccion_o_extorsion_personal",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_month_to_3_years",
+            "peaceObligation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MIN",
+      "name": "delitos_contra_menores_y_dependientes",
+      "offenses": [
+        {
+          "id": "MIN01",
+          "name": "abandono_peligroso",
+          "sentence": [
+            "penalLabor_1_month_to_3_years",
+            "lossOfCustodialAuthority_if_applicable"
+          ]
+        },
+        {
+          "id": "MIN02",
+          "name": "maltrato_grave",
+          "sentence": [
+            "penalLabor_1_to_8_years",
+            "flogging_optional",
+            "lossOfCustodialAuthority"
+          ]
+        },
+        {
+          "id": "MIN03",
+          "name": "explotacion_de_menor_o_dependiente",
+          "sentence": [
+            "restitution",
+            "penalLabor_6_months_to_5_years",
+            "lossOfCustodialAuthority_or_trade_rights"
+          ]
+        },
+        {
+          "id": "MIN04",
+          "name": "usar_menor_para_cometer_delito",
+          "sentence": [
+            "penalLabor_6_months_to_5_years",
+            "lossOfCustodialAuthority_optional"
+          ],
+          "rules": {
+            "plusUnderlyingCrime": "true"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PROP",
+      "name": "delitos_patrimoniales",
+      "offenses": [
+        {
+          "id": "PROP01",
+          "name": "hurto",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F2_or_penalLabor_1_to_30_days"
+          ],
+          "rules": {
+            "repeat": "publicDishonor_or_flogging_or_penalLabor_up_to_6_months"
+          }
+        },
+        {
+          "id": "PROP02",
+          "name": "robo_con_fuerza",
+          "sentence": [
+            "restitution",
+            "penalLabor_15_days_to_12_months",
+            "flogging_optional"
+          ]
+        },
+        {
+          "id": "PROP03",
+          "name": "robo_con_violencia",
+          "sentence": [
+            "restitution",
+            "penalLabor_6_months_to_5_years",
+            "flogging_optional"
+          ],
+          "rules": {
+            "injuryAddsBODY": "true"
+          }
+        },
+        {
+          "id": "PROP04",
+          "name": "allanamiento_con_finalidad_delictiva",
+          "sentence": [
+            "restitution",
+            "penalLabor_15_days_to_12_months"
+          ]
+        },
+        {
+          "id": "PROP05",
+          "name": "saqueo",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_to_5_years",
+            "flogging_optional"
+          ]
+        },
+        {
+          "id": "PROP06",
+          "name": "apropiacion_indebida",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F3_or_penalLabor_1_to_90_days"
+          ]
+        },
+        {
+          "id": "PROP07",
+          "name": "receptacion_consciente",
+          "sentence": [
+            "confiscation_of_stolen_goods",
+            "fine_F1_to_F3_or_penalLabor_1_to_180_days"
+          ]
+        },
+        {
+          "id": "PROP08",
+          "name": "estafa_o_fraude_patrimonial",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F4_or_penalLabor_1_to_365_days",
+            "lossOfTradeRights_optional"
+          ]
+        },
+        {
+          "id": "PROP09",
+          "name": "danos_deliberados_a_propiedad",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F3_or_penalLabor_1_to_180_days"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FIRE",
+      "name": "incendio_y_peligro_colectivo",
+      "offenses": [
+        {
+          "id": "FIRE01",
+          "name": "incendio_provocado_sin_muertes",
+          "sentence": [
+            "restitution",
+            "penalLabor_3_to_12_years"
+          ],
+          "rules": {
+            "inhabitedOrExtremeRisk": "penalLabor_8_to_20_years_or_perpetualNorgardBanishment"
+          }
+        },
+        {
+          "id": "FIRE02",
+          "name": "incendio_por_imprudencia_grave",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_month_to_3_years"
+          ]
+        },
+        {
+          "id": "FIRE03",
+          "name": "sabotaje_de_infraestructura_esencial",
+          "sentence": [
+            "restitution",
+            "penalLabor_2_to_10_years"
+          ],
+          "rules": {
+            "strategicMayRouteToCROWN": "true"
+          }
+        },
+        {
+          "id": "FIRE04",
+          "name": "envenenamiento_o_contaminacion_deliberada_de_agua_o_alimentos",
+          "sentence": [
+            "penalLabor_8_to_25_years_or_perpetualNorgardBanishment"
+          ],
+          "rules": {
+            "massOrLethalIntent": "death_possible"
+          }
+        }
+      ]
+    },
+    {
+      "id": "COMM",
+      "name": "delitos_comerciales",
+      "offenses": [
+        {
+          "id": "COMM01",
+          "name": "fraude_en_pesos_o_medidas",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F3",
+            "lossOfTradeRights_optional"
+          ]
+        },
+        {
+          "id": "COMM02",
+          "name": "falsificacion_o_adulteracion_de_mercancia",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F4_or_penalLabor_1_to_180_days",
+            "lossOfTradeRights_optional"
+          ]
+        },
+        {
+          "id": "COMM03",
+          "name": "venta_consciente_de_producto_peligroso",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_month_to_3_years",
+            "lossOfTradeRights"
+          ]
+        },
+        {
+          "id": "COMM04",
+          "name": "fraude_comercial_grave_reiterado",
+          "sentence": [
+            "restitution",
+            "penalLabor_3_months_to_3_years",
+            "lossOfTradeRights",
+            "confiscation_of_criminal_proceeds"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FISC",
+      "name": "delitos_fiscales_y_aduaneros",
+      "offenses": [
+        {
+          "id": "FISC01",
+          "name": "evasion_fiscal_deliberada",
+          "sentence": [
+            "restitution_of_due_obligation",
+            "fine_F1_to_F4_or_penalLabor_1_to_180_days"
+          ]
+        },
+        {
+          "id": "FISC02",
+          "name": "contrabando_externo",
+          "sentence": [
+            "confiscation_of_illicit_cargo",
+            "due_obligation",
+            "fine_F2_to_F4_or_penalLabor_15_days_to_1_year"
+          ]
+        },
+        {
+          "id": "FISC03",
+          "name": "manifiesto_o_declaracion_aduanera_falsa_deliberada",
+          "sentence": [
+            "due_obligation",
+            "fine_F1_to_F4_or_penalLabor_1_to_180_days"
+          ]
+        },
+        {
+          "id": "FISC04",
+          "name": "falsificacion_de_recibo_o_registro_fiscal",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_month_to_2_years",
+            "lossOfOfficeOrTradeRights_optional"
+          ]
+        },
+        {
+          "id": "FISC05",
+          "name": "apropiacion_de_recaudacion",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_to_8_years",
+            "lossOfOffice",
+            "confiscation_of_criminal_proceeds"
+          ]
+        },
+        {
+          "id": "FISC06",
+          "name": "corrupcion_o_colaboracion_con_contrabando_desde_cargo_publico",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_to_8_years",
+            "lossOfOffice",
+            "confiscation_of_criminal_proceeds"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FORG",
+      "name": "falsificacion_y_moneda",
+      "offenses": [
+        {
+          "id": "FORG01",
+          "name": "falsificacion_o_fabricacion_no_autorizada_de_moneda",
+          "sentence": [
+            "confiscation",
+            "penalLabor_8_to_20_years",
+            "perpetualNorgardBanishment_possible"
+          ],
+          "rules": {
+            "organizedDestabilization": "death_possible"
+          }
+        },
+        {
+          "id": "FORG02",
+          "name": "alteracion_de_moneda",
+          "sentence": [
+            "confiscation",
+            "penalLabor_2_to_10_years"
+          ]
+        },
+        {
+          "id": "FORG03",
+          "name": "falsificacion_de_sello_real_o_de_gran_casa",
+          "sentence": [
+            "penalLabor_5_to_15_years",
+            "lossOfOfficeOrRights_if_applicable"
+          ],
+          "rules": {
+            "treasonousUseMayRouteToCROWN": "true"
+          }
+        },
+        {
+          "id": "FORG04",
+          "name": "falsificacion_de_documento_orden_o_permiso_oficial",
+          "sentence": [
+            "penalLabor_1_month_to_5_years",
+            "confiscation_of_proceeds"
+          ]
+        },
+        {
+          "id": "FORG05",
+          "name": "suplantacion_de_funcionario_o_autoridad",
+          "sentence": [
+            "penalLabor_3_months_to_5_years",
+            "publicDishonor_optional"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OFF",
+      "name": "corrupcion_y_abuso_de_autoridad",
+      "offenses": [
+        {
+          "id": "OFF01",
+          "name": "soborno_ofrecido",
+          "sentence": [
+            "fine_F2_to_F4_or_penalLabor_1_to_365_days",
+            "confiscation_of_bribe"
+          ]
+        },
+        {
+          "id": "OFF02",
+          "name": "aceptacion_de_soborno",
+          "sentence": [
+            "penalLabor_6_months_to_5_years",
+            "lossOfOffice",
+            "confiscation_of_bribe"
+          ]
+        },
+        {
+          "id": "OFF03",
+          "name": "malversacion",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_to_8_years",
+            "lossOfOffice",
+            "confiscation_of_proceeds"
+          ]
+        },
+        {
+          "id": "OFF04",
+          "name": "falsificacion_de_registro_publico",
+          "sentence": [
+            "penalLabor_6_months_to_5_years",
+            "lossOfOffice"
+          ]
+        },
+        {
+          "id": "OFF05",
+          "name": "detencion_ilegal_o_abuso_grave_de_cargo",
+          "sentence": [
+            "compensation",
+            "penalLabor_6_months_to_5_years",
+            "lossOfOffice"
+          ]
+        },
+        {
+          "id": "OFF06",
+          "name": "uso_ilegitimo_de_fuerza_por_autoridad",
+          "sentence": [
+            "compensation",
+            "penalLabor_1_month_to_5_years",
+            "lossOfOffice_optional_or_required_if_grave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JUST",
+      "name": "delitos_contra_la_justicia",
+      "offenses": [
+        {
+          "id": "JUST01",
+          "name": "falso_testimonio_deliberado",
+          "sentence": [
+            "penalLabor_15_days_to_2_years",
+            "publicDishonor_optional"
+          ],
+          "rules": {
+            "capitalCase": "penalLabor_5_to_15_years_or_perpetualNorgardBanishment"
+          }
+        },
+        {
+          "id": "JUST02",
+          "name": "acusacion_falsa_deliberada",
+          "sentence": [
+            "compensation",
+            "penalLabor_15_days_to_3_years"
+          ],
+          "rules": {
+            "graveFalseCharge": "may_approach_harm_wrongfully_sought"
+          }
+        },
+        {
+          "id": "JUST03",
+          "name": "destruccion_u_ocultacion_de_pruebas",
+          "sentence": [
+            "penalLabor_15_days_to_3_years"
+          ]
+        },
+        {
+          "id": "JUST04",
+          "name": "fabricacion_de_pruebas",
+          "sentence": [
+            "penalLabor_1_to_5_years"
+          ]
+        },
+        {
+          "id": "JUST05",
+          "name": "intimidacion_o_soborno_de_testigo_o_juez",
+          "sentence": [
+            "penalLabor_3_months_to_5_years",
+            "confiscation_of_bribe"
+          ]
+        },
+        {
+          "id": "JUST06",
+          "name": "obstruccion_deliberada_de_investigacion",
+          "sentence": [
+            "fine_F1_to_F3_or_penalLabor_1_to_180_days"
+          ]
+        },
+        {
+          "id": "JUST07",
+          "name": "ayuda_consciente_a_fugitivo",
+          "sentence": [
+            "penalLabor_1_day_to_2_years"
+          ],
+          "rules": {
+            "closeFamilyMitigation": "true"
+          }
+        },
+        {
+          "id": "JUST08",
+          "name": "fuga_de_custodia_o_facilitacion_de_fuga",
+          "sentence": [
+            "penalLabor_15_days_to_3_years"
+          ],
+          "rules": {
+            "violenceAddsRelevantOffense": "true"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CROWN",
+      "name": "delitos_contra_la_corona",
+      "offenses": [
+        {
+          "id": "CROWN01",
+          "name": "traicion",
+          "sentence": [
+            "death"
+          ],
+          "rules": {
+            "exceptionalCommutation": "perpetualNorgardBanishment"
+          }
+        },
+        {
+          "id": "CROWN02",
+          "name": "rebelion_armada_contra_la_corona",
+          "sentence": [
+            "death_for_leaders_or_gravest_actors",
+            "penalLabor_5_to_25_years_or_perpetualNorgardBanishment_for_others"
+          ]
+        },
+        {
+          "id": "CROWN03",
+          "name": "conspiracion_para_regicidio",
+          "sentence": [
+            "death"
+          ],
+          "rules": {
+            "requiresAgreementAndMaterialPreparation": "true"
+          }
+        },
+        {
+          "id": "CROWN04",
+          "name": "intento_de_regicidio",
+          "sentence": [
+            "death"
+          ]
+        },
+        {
+          "id": "CROWN05",
+          "name": "colaboracion_con_enemigo_de_la_corona",
+          "sentence": [
+            "penalLabor_10_to_25_years_or_perpetualNorgardBanishment_or_death"
+          ]
+        },
+        {
+          "id": "CROWN06",
+          "name": "espionaje_o_entrega_de_secretos_estrategicos",
+          "sentence": [
+            "penalLabor_8_to_25_years_or_perpetualNorgardBanishment"
+          ],
+          "rules": {
+            "warOrCatastrophicHarm": "death_possible"
+          }
+        },
+        {
+          "id": "CROWN07",
+          "name": "sabotaje_estrategico_o_usurpacion_de_autoridad_real",
+          "sentence": [
+            "penalLabor_5_to_20_years_or_perpetualNorgardBanishment"
+          ],
+          "rules": {
+            "lethalOrTreasonousExtreme": "death_possible"
+          }
+        }
+      ]
+    },
+    {
+      "id": "AUTH",
+      "name": "delitos_contra_autoridad_legitima",
+      "offenses": [
+        {
+          "id": "AUTH01",
+          "name": "atentado_contra_lord_o_autoridad_por_razon_del_cargo",
+          "sentence": [
+            "penalLabor_2_to_10_years"
+          ],
+          "rules": {
+            "intentToKillRoutesToLIFE": "true"
+          }
+        },
+        {
+          "id": "AUTH02",
+          "name": "resistencia_violenta_a_orden_legal",
+          "sentence": [
+            "fine_F1_to_F3_or_penalLabor_1_to_180_days"
+          ],
+          "rules": {
+            "injuryAddsBODY": "true"
+          }
+        },
+        {
+          "id": "AUTH03",
+          "name": "ejercicio_fraudulento_de_autoridad",
+          "sentence": [
+            "penalLabor_1_month_to_3_years",
+            "publicDishonor_optional"
+          ]
+        },
+        {
+          "id": "AUTH04",
+          "name": "insulto_o_critica_a_autoridad",
+          "sentence": [
+            "not_crime"
+          ],
+          "rules": {
+            "mereInsultWithoutThreatOrViolence": "true"
+          }
+        }
+      ]
+    },
+    {
+      "id": "MIL",
+      "name": "delitos_militares",
+      "offenses": [
+        {
+          "id": "MIL01",
+          "name": "desercion",
+          "sentence": [
+            "penalLabor_or_compulsory_service_3_months_to_3_years",
+            "lossOfRank_optional"
+          ],
+          "rules": {
+            "wartimeOrCriticalPost": "penalLabor_3_to_10_years_or_death_if_catastrophic_betrayal"
+          }
+        },
+        {
+          "id": "MIL02",
+          "name": "abandono_deliberado_de_puesto",
+          "sentence": [
+            "compulsory_service_or_penalLabor_1_month_to_3_years",
+            "lossOfRank_optional"
+          ]
+        },
+        {
+          "id": "MIL03",
+          "name": "insubordinacion_grave_o_desobediencia_de_orden_legitima",
+          "sentence": [
+            "compulsory_service_or_penalLabor_15_days_to_2_years",
+            "lossOfRank_optional"
+          ]
+        },
+        {
+          "id": "MIL04",
+          "name": "motin_militar",
+          "sentence": [
+            "penalLabor_5_to_20_years_or_perpetualNorgardBanishment"
+          ],
+          "rules": {
+            "leadersInWar": "death_possible"
+          }
+        },
+        {
+          "id": "MIL05",
+          "name": "entrega_deliberada_de_posicion_o_unidad_al_enemigo",
+          "sentence": [
+            "death_or_perpetualNorgardBanishment"
+          ]
+        },
+        {
+          "id": "MIL06",
+          "name": "robo_de_suministros_militares",
+          "sentence": [
+            "restitution",
+            "penalLabor_6_months_to_5_years",
+            "lossOfRank"
+          ]
+        },
+        {
+          "id": "MIL07",
+          "name": "sabotaje_o_espionaje_militar",
+          "sentence": [
+            "penalLabor_5_to_20_years_or_death"
+          ]
+        },
+        {
+          "id": "MIL08",
+          "name": "saqueo_o_violencia_ilegitima_contra_civiles",
+          "sentence": [
+            "restitution_or_compensation",
+            "penalLabor_1_to_10_years",
+            "lossOfRank"
+          ],
+          "rules": {
+            "seriousViolenceAddsLIFE_BODY_OR_SEX": "true"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NAV",
+      "name": "delitos_navales",
+      "offenses": [
+        {
+          "id": "NAV01",
+          "name": "pirateria",
+          "sentence": [
+            "penalLabor_10_to_25_years_or_perpetualNorgardBanishment"
+          ],
+          "rules": {
+            "murderOrExtremeViolence": "death_possible"
+          }
+        },
+        {
+          "id": "NAV02",
+          "name": "apoderamiento_ilegal_de_embarcacion",
+          "sentence": [
+            "restitution",
+            "penalLabor_2_to_10_years"
+          ]
+        },
+        {
+          "id": "NAV03",
+          "name": "motin_naval",
+          "sentence": [
+            "penalLabor_5_to_20_years_or_perpetualNorgardBanishment"
+          ],
+          "rules": {
+            "RoyalNavyWarContext": "death_possible"
+          }
+        },
+        {
+          "id": "NAV04",
+          "name": "sabotaje_de_buque",
+          "sentence": [
+            "restitution",
+            "penalLabor_2_to_15_years"
+          ],
+          "rules": {
+            "lethalIntentOrDeathsRoutesToLIFE": "true"
+          }
+        },
+        {
+          "id": "NAV05",
+          "name": "abandono_criminal_de_nave_o_personas_bajo_responsabilidad",
+          "sentence": [
+            "penalLabor_1_to_10_years",
+            "lossOfCommandRights"
+          ]
+        },
+        {
+          "id": "NAV06",
+          "name": "colaboracion_con_piratas_o_ataque_deliberado_a_navegacion_civil",
+          "sentence": [
+            "penalLabor_5_to_20_years_or_perpetualNorgardBanishment"
+          ],
+          "rules": {
+            "lethalExtreme": "death_possible"
+          }
+        }
+      ]
+    },
+    {
+      "id": "PUB",
+      "name": "seguridad_publica",
+      "offenses": [
+        {
+          "id": "PUB01",
+          "name": "uso_prohibido_o_temerario_de_arma_en_espacio_publico",
+          "sentence": [
+            "fine_F1_to_F2_or_penalLabor_1_to_30_days",
+            "temporary_weapon_confiscation_or_forfeiture_if_used_in_crime"
+          ]
+        },
+        {
+          "id": "PUB02",
+          "name": "disturbio_violento",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F3_or_penalLabor_1_to_180_days",
+            "publicDishonor_optional"
+          ]
+        },
+        {
+          "id": "PUB03",
+          "name": "pelea_multitudinaria_grave",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_to_180_days",
+            "flogging_optional"
+          ]
+        },
+        {
+          "id": "PUB04",
+          "name": "bloqueo_deliberado_de_via_esencial_con_dano_o_peligro",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F3_or_penalLabor_1_to_90_days"
+          ]
+        },
+        {
+          "id": "PUB05",
+          "name": "incumplimiento_grave_de_orden_de_emergencia",
+          "sentence": [
+            "fine_F1_to_F3_or_penalLabor_1_to_180_days"
+          ],
+          "rules": {
+            "harmAddsRelevantOffense": "true"
+          }
+        }
+      ]
+    },
+    {
+      "id": "RUR",
+      "name": "delitos_rurales_y_recursos",
+      "offenses": [
+        {
+          "id": "RUR01",
+          "name": "robo_de_ganado",
+          "sentence": [
+            "restitution",
+            "penalLabor_15_days_to_2_years",
+            "flogging_optional"
+          ]
+        },
+        {
+          "id": "RUR02",
+          "name": "destruccion_deliberada_de_cosechas",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_month_to_3_years"
+          ]
+        },
+        {
+          "id": "RUR03",
+          "name": "tala_no_autorizada_en_recurso_regulado",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F3_or_compulsory_service_1_to_90_days"
+          ]
+        },
+        {
+          "id": "RUR04",
+          "name": "caza_o_pesca_furtiva_donde_exista_derecho_restringido",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F2_or_penalLabor_1_to_30_days",
+            "confiscation_of_illicit_catch_optional"
+          ]
+        },
+        {
+          "id": "RUR05",
+          "name": "sabotaje_de_recurso_o_infraestructura_comunitaria",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_month_to_5_years"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PORT",
+      "name": "delitos_portuarios_civiles",
+      "offenses": [
+        {
+          "id": "PORT01",
+          "name": "entrada_deliberada_en_zona_naval_restringida",
+          "sentence": [
+            "fine_F1_to_F3_or_penalLabor_1_to_90_days"
+          ],
+          "rules": {
+            "espionageOrSabotageRoutesToCROWN_OR_MIL": "true"
+          }
+        },
+        {
+          "id": "PORT02",
+          "name": "evasion_de_control_portuario_legal",
+          "sentence": [
+            "fine_F1_to_F3_or_penalLabor_1_to_90_days"
+          ],
+          "rules": {
+            "customsPurposeAlsoFISC": "true"
+          }
+        },
+        {
+          "id": "PORT03",
+          "name": "manipulacion_maliciosa_de_senales_maritimas",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_to_5_years"
+          ],
+          "rules": {
+            "deathAddsLIFE03OrHigher": "true"
+          }
+        },
+        {
+          "id": "PORT04",
+          "name": "sabotaje_de_amarres_o_atraques",
+          "sentence": [
+            "restitution",
+            "penalLabor_15_days_to_2_years"
+          ]
+        },
+        {
+          "id": "PORT05",
+          "name": "abandono_deliberado_de_carga_peligrosa_o_riesgo_a_embarcaciones",
+          "sentence": [
+            "restitution",
+            "penalLabor_1_month_to_3_years"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PEACE",
+      "name": "delitos_contra_la_paz_social",
+      "offenses": [
+        {
+          "id": "PEACE01",
+          "name": "amenaza_no_grave_reiterada",
+          "sentence": [
+            "fine_F1_or_penalLabor_1_to_15_days",
+            "peaceObligation"
+          ]
+        },
+        {
+          "id": "PEACE02",
+          "name": "acoso_grave_o_reiterado",
+          "sentence": [
+            "fine_F1_to_F2_or_penalLabor_1_to_90_days",
+            "peaceObligation"
+          ]
+        },
+        {
+          "id": "PEACE03",
+          "name": "rina_sin_lesion_grave",
+          "sentence": [
+            "restitution_if_damage",
+            "fine_F1_or_penalLabor_1_to_15_days",
+            "publicDishonor_or_flogging_optional"
+          ]
+        },
+        {
+          "id": "PEACE04",
+          "name": "intimidacion_publica_o_alteracion_violenta_del_orden",
+          "sentence": [
+            "fine_F1_to_F3_or_penalLabor_1_to_90_days",
+            "publicDishonor_optional"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DEAD",
+      "name": "cadaveres_y_ritos_funerarios",
+      "offenses": [
+        {
+          "id": "DEAD01",
+          "name": "mutilacion_o_profanacion_maliciosa_de_cadaver",
+          "sentence": [
+            "penalLabor_1_month_to_2_years",
+            "publicDishonor_optional"
+          ]
+        },
+        {
+          "id": "DEAD02",
+          "name": "ocultacion_de_cadaver_para_encubrir_delito",
+          "sentence": [
+            "penalLabor_3_months_to_3_years"
+          ],
+          "rules": {
+            "plusUnderlyingCrime": "true"
+          }
+        },
+        {
+          "id": "DEAD03",
+          "name": "interferencia_maliciosa_con_restos_o_rito_funerario",
+          "sentence": [
+            "restitution",
+            "fine_F1_to_F3_or_penalLabor_1_to_90_days"
+          ],
+          "rules": {
+            "religiousBasis": "false"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BREACH",
+      "name": "quebrantamiento_de_penas",
+      "offenses": [
+        {
+          "id": "BREACH01",
+          "name": "incumplimiento_deliberado_de_restitucion_multa_o_trabajo_pudiendo_cumplir",
+          "sentence": [
+            "conversion_or_extension_of_penalLabor",
+            "confiscation_if_authorized"
+          ]
+        },
+        {
+          "id": "BREACH02",
+          "name": "fuga_de_trabajo_penal_o_servicio_obligatorio",
+          "sentence": [
+            "penalLabor_extension_1_month_to_2_years",
+            "flogging_optional"
+          ]
+        },
+        {
+          "id": "BREACH03",
+          "name": "quebrantamiento_de_obligacion_de_paz_o_restriccion_profesional",
+          "sentence": [
+            "penalty_escalation",
+            "penalLabor_15_days_to_2_years"
+          ]
+        },
+        {
+          "id": "BREACH04",
+          "name": "regreso_durante_destierro_temporal",
+          "sentence": [
+            "penalLabor_3_months_to_3_years",
+            "banishment_extension_or_perpetual_banishment_if_repeat"
+          ]
+        },
+        {
+          "id": "BREACH05",
+          "name": "regreso_tras_destierro_perpetuo_de_Norgard",
+          "sentence": [
+            "death"
+          ],
+          "rules": {
+            "newProceeding": "true",
+            "requiresVoluntaryReturn": "true"
+          },
+          "elements": [
+            "identity_confirmed",
+            "prior_perpetual_banishment_valid",
+            "return_to_Norgard",
+            "voluntary_return"
+          ],
+          "nonVoluntaryReturnExamples": [
+            "shipwreck",
+            "kidnapping",
+            "forced_transport",
+            "unconscious_transport"
+          ]
+        }
+      ]
+    }
+  ],
+  "participationAndAttempt": {
+    "roles": [
+      "author",
+      "coauthor",
+      "instigator",
+      "accomplice",
+      "accessory_after_fact"
+    ],
+    "roleAffectsSentence": true,
+    "attemptPunishable": true,
+    "attemptNormallyBelowCompletedOffense": true,
+    "conspiracyPunishableOnlyForEnumeratedGraveOffenses": true,
+    "mereThoughtOrSpeechWithoutRequiredActsIsNotAttempt": true
+  },
+  "sentencingResolver": [
+    "establish_proven_facts",
+    "resolve_justification",
+    "resolve_intent_and_causation",
+    "match_exact_offense",
+    "if_no_match_return_NO_TIPIFICADO",
+    "apply_aggravators_mitigators",
+    "resolve_recurrence_and_participation",
+    "select_authorized_sentence",
+    "add_mandatory_components",
+    "obtain_capital_confirmation_if_death",
+    "create_sentence_and_enforcement_records"
+  ],
+  "runtimeImplementationRequiredLater": true
+}
