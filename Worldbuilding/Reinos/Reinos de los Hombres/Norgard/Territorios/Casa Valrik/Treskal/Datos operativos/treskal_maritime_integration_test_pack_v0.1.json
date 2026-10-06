@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_maritime_integration_test_pack",
+  "version": "0.1",
+  "status": "static_fixture_pack",
+  "canonicalWorldEvents": false,
+  "scenarios": [
+    {
+      "id": "MAR01",
+      "name": "ordinary_fishing_day",
+      "assert": [
+        "fleet_departures_require_real_vessels_and_crews",
+        "catch_consumes_FGR_state",
+        "catch_lands_at_S07"
+      ]
+    },
+    {
+      "id": "MAR02",
+      "name": "bad_weather_reduces_departures",
+      "assert": [
+        "weather_may_delay_or_cancel",
+        "no_forced_citywide_port_closure",
+        "lower_landing_can_affect_supply"
+      ]
+    },
+    {
+      "id": "MAR03",
+      "name": "sustained_fishing_pressure",
+      "assert": [
+        "future_yield_can_drop",
+        "demand_does_not_create_resource",
+        "recovery_not_instant"
+      ]
+    },
+    {
+      "id": "MAR04",
+      "name": "damaged_fishing_vessel",
+      "assert": [
+        "damage_persists",
+        "capability_reduced",
+        "repair_requires_time_labor_materials"
+      ]
+    },
+    {
+      "id": "MAR05",
+      "name": "lost_fishing_vessel",
+      "assert": [
+        "vessel_not_respawned",
+        "crew_and_household_consequences_possible",
+        "replacement_requires_build_purchase_or_transfer"
+      ]
+    },
+    {
+      "id": "MAR06",
+      "name": "crew_shortage",
+      "assert": [
+        "departure_can_fail",
+        "anonymous_infinite_crew_forbidden"
+      ]
+    },
+    {
+      "id": "MAR07",
+      "name": "civil_port_congestion",
+      "assert": [
+        "berth_waiting_possible",
+        "cargo_and_fish_remain_on_actual_vessels_until_unloaded"
+      ]
+    },
+    {
+      "id": "MAR08",
+      "name": "civil_vessel_near_T08",
+      "assert": [
+        "ordinary_entry_denied",
+        "T07_and_T08_authority_remain_separate"
+      ]
+    },
+    {
+      "id": "MAR09",
+      "name": "merchant_arrival",
+      "assert": [
+        "cargo_manifest_real",
+        "loading_unloading_consumes_labor_time",
+        "fiscal_hook_reserved"
+      ]
+    },
+    {
+      "id": "MAR10",
+      "name": "offscreen_naval_convoy",
+      "assert": [
+        "same_mission_rules",
+        "damage_and_losses_persist",
+        "transport_protection_priority"
+      ]
+    },
+    {
+      "id": "MAR11",
+      "name": "named_warship_uniqueness",
+      "assert": [
+        "25_named_registry_not_duplicated",
+        "Lobo_de_Plata_unique",
+        "no_new_class_generated"
+      ]
+    },
+    {
+      "id": "MAR12",
+      "name": "rescue_after_wreck",
+      "assert": [
+        "response_requires_awareness_availability",
+        "no_teleport",
+        "survivors_and_wreck_consequences_persist"
+      ]
+    }
+  ]
+}

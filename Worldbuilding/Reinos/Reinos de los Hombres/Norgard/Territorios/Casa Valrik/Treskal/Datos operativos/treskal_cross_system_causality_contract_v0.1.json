@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_cross_system_causality_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_integration_contract",
   "layers": {
     "A_physical": [
@@ -13,7 +13,10 @@
       "repairs",
       "routes",
       "vehicles",
-      "ships"
+      "ships",
+      "vessel_navigation",
+      "fishing_resource_state",
+      "waterborne_encounters"
     ],
     "B_activity": [
       "work",
@@ -23,7 +26,10 @@
       "consumption",
       "deliveries",
       "commissions",
-      "construction"
+      "construction",
+      "fishing",
+      "maritime_trade",
+      "naval_missions"
     ],
     "C_population": [
       "npcs",
@@ -95,6 +101,15 @@
       "materializationStreamingPersistence",
       "lightVisibilitySound",
       "aiContextAndOutput"
+    ],
+    "maritime": [
+      "nimroel_vessel_navigation_simulation_contract",
+      "nimroel_waterborne_encounter_combat_contract",
+      "nimroel_aquatic_resource_harvest_contract",
+      "norgard_civil_maritime_fishing_default",
+      "norgard_royal_navy_operations_default",
+      "treskal_maritime_simulation_profile",
+      "treskal_fishing_fleet_profile"
     ]
   },
   "derivedStateShouldNotBeRedundantlyPersistedWhenSafelyReconstructable": true,
@@ -116,6 +131,10 @@
     "domestic_fire_to_displacement",
     "new_business_to_operation",
     "urgent_message_to_npc_decision",
-    "rain_to_laundry_drying"
+    "rain_to_laundry_drying",
+    "storm_to_fishing_departure_reduction",
+    "fishing_pressure_to_lower_future_catch",
+    "damaged_fishing_vessel_to_repair_delay",
+    "naval_convoy_damage_to_T08_repair"
   ]
 }

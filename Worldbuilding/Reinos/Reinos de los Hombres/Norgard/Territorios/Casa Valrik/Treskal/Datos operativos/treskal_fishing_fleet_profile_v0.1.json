@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_fishing_fleet_profile",
+  "version": "0.1",
+  "status": "active_local_profile",
+  "cityId": "treskal",
+  "inherits": [
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_aquatic_resource_harvest_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json"
+  ],
+  "homePort": {
+    "sector": "T07",
+    "landingFacility": "S07",
+    "riverInterface": "T01",
+    "royalNavalSectorExcluded": "T08"
+  },
+  "fleetIdentity": {
+    "fixedBoatCount": false,
+    "properNamesRequired": false,
+    "namedClassesForbidden": true,
+    "functionalArchetypesFromNorgard": true,
+    "materializedVesselsPersistent": true
+  },
+  "initializationAlgorithm": [
+    "resolve_fishing_employment_and_owner_households",
+    "resolve_port_berth_anchorage_and_beaching_capacity",
+    "resolve_accessible_fishing_ground_sustainable_effort",
+    "resolve_market_and_preservation_demand",
+    "derive_required_crew_and_vessel_slots",
+    "cap_by_resource_port_labor_and_maintenance_capacity",
+    "allocate_functional_archetypes",
+    "materialize_vessels_with_owner_crew_home_port_and_condition",
+    "persist_registry"
+  ],
+  "ordinaryCompositionWeightsByVesselCount": {
+    "river_or_estuary_small_craft": 0.15,
+    "inshore_fishing_boat": 0.4,
+    "coastal_fishing_boat": 0.3,
+    "offshore_fishing_vessel": 0.15
+  },
+  "compositionRule": "weights_are_initial_generation_targets_not_hard_quotas_and_may_shift_with_world_state",
+  "fishingAreas": [
+    {
+      "id": "FGR_TRESKAL_ESTUARY",
+      "scope": "lower_river_and_estuary",
+      "ordinaryUsers": [
+        "river_or_estuary_small_craft",
+        "inshore_fishing_boat"
+      ],
+      "species": "unauthored_resource_groups"
+    },
+    {
+      "id": "FGR_TRESKAL_NEARSHORE",
+      "scope": "nearshore_coast",
+      "ordinaryUsers": [
+        "inshore_fishing_boat",
+        "coastal_fishing_boat"
+      ],
+      "species": "unauthored_resource_groups"
+    },
+    {
+      "id": "FGR_TRESKAL_COASTAL_SUTHIROS",
+      "scope": "coastal_Mar_de_Suthiros_accessible_from_Treskal",
+      "ordinaryUsers": [
+        "coastal_fishing_boat",
+        "offshore_fishing_vessel"
+      ],
+      "species": "unauthored_resource_groups"
+    },
+    {
+      "id": "FGR_TRESKAL_OFFSHORE_SUTHIROS",
+      "scope": "offshore_Mar_de_Suthiros",
+      "ordinaryUsers": [
+        "offshore_fishing_vessel"
+      ],
+      "species": "unauthored_resource_groups"
+    }
+  ],
+  "tripCycle": [
+    "prepare_at_T07_or_river_landing",
+    "crew_and_gear",
+    "depart",
+    "navigate",
+    "harvest",
+    "stow",
+    "return",
+    "berth_or_land",
+    "unload_to_S07",
+    "sale_preservation_distribution",
+    "clean_repair_rest"
+  ],
+  "catchChain": [
+    "FGR_resource",
+    "HARV_activity",
+    "vessel_cargo",
+    "S07_landing",
+    "sale_or_preservation",
+    "Treskal_market_or_outbound_trade"
+  ],
+  "dynamicControls": {
+    "weatherCanCancelOrDelayTrip": true,
+    "resourcePressureCanReduceEffort": true,
+    "lowCatchCanReduceFutureDepartures": true,
+    "highDemandCannotCreateFish": true,
+    "damagedVesselCanLeaveActiveFleet": true,
+    "crewShortageCanPreventDeparture": true,
+    "portCongestionCanDelayLanding": true
+  },
+  "ownershipAndCrew": {
+    "ownersArePersistentActorsOrBusinesses": true,
+    "crewAreNPCs": true,
+    "familyCrewsAllowed": true,
+    "hiredCrewsAllowed": true,
+    "anonymousInfiniteCrewForbidden": true
+  },
+  "constructionReplacement": {
+    "lossDoesNotAutoRespawn": true,
+    "replacementRequiresBuildPurchaseOrTransfer": true,
+    "ordinaryCivilConstructionUsesAvailableLocalOrRegionalCapacity": true,
+    "royalShipyardT08NotAutomaticCivilYard": true
+  },
+  "exactSpeciesNames": "not_defined_do_not_invent"
+}

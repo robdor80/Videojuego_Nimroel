@@ -392,3 +392,25 @@ La economía debe ser explicable por NPC y por el mundo físico.
 ## Regla final
 
 **Cada producto importante de Treskal debe poder responder a tres preguntas: de dónde viene, dónde se transforma y adónde va.**
+
+
+---
+
+# Ampliación 2B — pesca y circulación marítima
+
+La pesca ya no se representa como una entrada abstracta sin origen.
+
+Cadena:
+
+**caladero persistente → esfuerzo pesquero → captura real → carga del pesquero → T07/S07 → venta, conservación o distribución**
+
+Consecuencias:
+
+- mal tiempo puede reducir salidas y desembarcos;
+- presión excesiva puede reducir rendimiento futuro;
+- una avería o falta de tripulación reduce capacidad;
+- un barco perdido no se sustituye automáticamente;
+- la demanda no genera pescado inexistente;
+- comercio marítimo y pesca comparten capacidad portuaria real.
+
+El sistema fiscal del Punto 3 podrá gravar o controlar estos flujos mediante los hooks de puerto ya preparados sin cambiar esta cadena física.

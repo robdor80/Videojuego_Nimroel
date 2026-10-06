@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_maritime_simulation_profile",
+  "version": "0.1",
+  "status": "active_local_profile",
+  "cityId": "treskal",
+  "inherits": [
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_vessel_navigation_simulation_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_waterborne_encounter_combat_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_royal_navy_operations_default_v0.1.json"
+  ],
+  "waterInterfaces": {
+    "river": {
+      "sectors": [
+        "T01"
+      ],
+      "uses": [
+        "small_craft",
+        "river_fishing",
+        "inland_cargo"
+      ]
+    },
+    "civilSeaPort": {
+      "sector": "T07",
+      "uses": [
+        "fishing",
+        "civil_trade",
+        "transport"
+      ],
+      "navalCommand": false
+    },
+    "royalNavalComplex": {
+      "sector": "T08",
+      "uses": [
+        "royal_navy",
+        "royal_shipyards"
+      ],
+      "civilOrdinaryAccess": false,
+      "authority": "Crown_of_Norgard_House_Aethros"
+    }
+  },
+  "functionalRoutes": [
+    {
+      "id": "MR_TRESKAL_RIVER",
+      "type": "river",
+      "connects": [
+        "territorial_inland_water_access",
+        "T01",
+        "estuary"
+      ]
+    },
+    {
+      "id": "MR_TRESKAL_CIVIL_APPROACH",
+      "type": "estuary_coastal",
+      "connects": [
+        "sea",
+        "T07"
+      ]
+    },
+    {
+      "id": "MR_TRESKAL_NAVAL_APPROACH",
+      "type": "restricted_naval",
+      "connects": [
+        "sea",
+        "T08"
+      ]
+    },
+    {
+      "id": "MR_TRESKAL_COASTAL",
+      "type": "coastal",
+      "connects": [
+        "T07",
+        "regional_coastal_routes"
+      ]
+    },
+    {
+      "id": "MR_TRESKAL_OFFSHORE",
+      "type": "open_sea",
+      "connects": [
+        "T07",
+        "Mar_de_Suthiros_offshore"
+      ]
+    }
+  ],
+  "weatherBridge": {
+    "source": "Treskal_local_weather_and_future_Nimroel_weather_system",
+    "affects": [
+      "departure",
+      "route",
+      "speed",
+      "visibility",
+      "fishing",
+      "berthing",
+      "damage_risk",
+      "naval_operations"
+    ],
+    "ordinaryRainDoesNotAutoClosePort": true
+  },
+  "trafficPriority": {
+    "emergencySafetyOverridesRoutine": true,
+    "restrictedNavalAccessEnforced": true,
+    "berthCapacityFinite": true,
+    "waitingAllowed": true
+  },
+  "rescueRules": {
+    "nearbyAwareCapableVesselMayAssist": true,
+    "portOrNavyResponseRequiresKnowledgeAndAvailability": true,
+    "noTeleportRescue": true,
+    "survivorInjuryExposureAndTimePersist": true,
+    "wreckMayPersistIfRelevant": true
+  },
+  "economyEffects": {
+    "fishLandingsFeedS07": true,
+    "merchantCargoFeedsPortStorage": true,
+    "weatherDisruptionCanReduceSupply": true,
+    "navalDemandCanConsumeRealSupplies": true,
+    "noStockCreatedByArrivalPresentation": true
+  },
+  "lod": {
+    "low": "voyage_and_activity_state",
+    "medium": "approximate_position_groups_components",
+    "high": "precise_vessel_crew_deck_interaction"
+  },
+  "authoredUniqueVessels": {
+    "royalNavyNamedShipsNeverProcedurallyDuplicated": true,
+    "LoboDePlataUnique": true
+  },
+  "fiscalInterface": {
+    "status": "reserved_for_point_3",
+    "navigationDoesNotAssumeTaxRate": true,
+    "portControlCanReceiveFuture_customs_rules": true
+  }
+}

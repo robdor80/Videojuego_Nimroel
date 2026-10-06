@@ -607,3 +607,16 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 - `AUDITORIA_CIERRE_FUNCIONAL_TRESKAL_v0.1.md` — la base funcional queda cerrada en la capa 99; no se crea una capa 100 por numeración.
 - `MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md` — plan de refactorización hacia Nimroel Core → Norgard Defaults → Treskal Overrides.
+
+
+## Fase marítima 2B
+
+La simulación marítima local queda cerrada mediante:
+
+- `Datos operativos/treskal_fishing_fleet_profile_v0.1.json`;
+- `Datos operativos/treskal_maritime_simulation_profile_v0.1.json`;
+- `Datos operativos/treskal_maritime_integration_test_pack_v0.1.json`;
+- `33_Cultura_maritima/sistema_maritimo_pesca_y_navegacion_treskal_v0.1.md`;
+- `AUDITORIA_CIERRE_SISTEMA_MARITIMO_2B_TRESKAL_v0.1.md`.
+
+T07 funciona como puerto civil/pesquero y T08 como recinto naval de la Corona. La flotilla pesquera es procedural en su materialización inicial, pero cada embarcación creada pasa a ser persistente.

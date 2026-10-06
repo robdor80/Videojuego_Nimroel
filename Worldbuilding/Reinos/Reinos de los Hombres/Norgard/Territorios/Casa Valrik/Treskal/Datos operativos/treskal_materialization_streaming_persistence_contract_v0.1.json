@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_materialization_streaming_persistence_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_design_contract",
   "cityProcedural": false,
   "deterministicMicroMaterialization": true,
@@ -28,7 +28,10 @@
     "level_B_npcs",
     "ordinary_interiors",
     "small_businesses",
-    "compatible_ambient_activity"
+    "compatible_ambient_activity",
+    "compatible_civil_vessels",
+    "fishing_vessels",
+    "civil_merchant_vessels"
   ],
   "authoredMacroElementsNeverProcedurallyReplaced": [
     "T",
@@ -39,7 +42,9 @@
     "canonical_names",
     "royal_shipyards",
     "house_valrik_seat",
-    "major_markets"
+    "major_markets",
+    "royal_navy_named_vessels",
+    "materialized_vessels"
   ],
   "logicalLod": {
     "low": [
@@ -99,5 +104,13 @@
     "materializedEntitiesNotRerolledByRuleUpdate": true,
     "structuralChangesRequireExplicitMigration": true,
     "canonicalDesignChangesMustNotOverwritePerSaveHistory": true
+  },
+  "maritimePersistence": {
+    "vesselIdentityUsesCoreVSL": true,
+    "materializedCivilVesselRerollForbidden": true,
+    "namedRoyalNavyVesselDuplicationForbidden": true,
+    "offscreenVoyageUsesCoreVOY": true,
+    "fishingGroundStatePersists": true,
+    "reentryUsesPersistedPositionCargoCrewAndDamage": true
   }
 }

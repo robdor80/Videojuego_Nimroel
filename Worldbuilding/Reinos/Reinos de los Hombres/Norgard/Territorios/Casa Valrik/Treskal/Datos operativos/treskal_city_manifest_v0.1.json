@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "0.7",
+  "version": "0.8",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -98,7 +98,9 @@
     "emergencyPersonalResponse": "Datos operativos/treskal_emergency_personal_response_contract_v0.1.json",
     "kinshipFamilyNetwork": "Datos operativos/treskal_kinship_family_network_contract_v0.1.json",
     "reputationNetwork": "Datos operativos/treskal_reputation_network_contract_v0.1.json",
-    "royalNavalComplex": "Datos operativos/treskal_royal_naval_complex_contract_v0.1.json"
+    "royalNavalComplex": "Datos operativos/treskal_royal_naval_complex_contract_v0.1.json",
+    "fishingFleet": "Datos operativos/treskal_fishing_fleet_profile_v0.1.json",
+    "maritimeSimulation": "Datos operativos/treskal_maritime_simulation_profile_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -189,7 +191,18 @@
     "VIEW": "personal_view_state",
     "AGEN": "agenda_state",
     "ERSP": "personal_emergency_response_state",
-    "KIN": "kinship_relation_type"
+    "KIN": "kinship_relation_type",
+    "VSL": "vessel_entity",
+    "VOY": "voyage_state",
+    "CREW": "vessel_crew_assignment",
+    "BERTH": "berth_occupancy_state",
+    "WENC": "waterborne_encounter_state",
+    "WCOM": "waterborne_combat_state",
+    "BOARD": "boarding_state",
+    "RESC": "water_rescue_state",
+    "AQR": "aquatic_resource_population",
+    "FGR": "fishing_ground_or_harvest_area",
+    "HARV": "harvest_activity_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -223,8 +236,8 @@
     "portTaxesCustoms": "Norgard_fiscal_and_legal_system",
     "ownershipInheritanceRentalLaw": "Norgard_law_and_economic_institutions",
     "currencyAndExactPrices": "Norgard_monetary_and_economic_system",
-    "royalNavyOrganization": "resolved_by_Norgard_E6_royal_navy_framework",
-    "navalTerminology": "future_Norgard_maritime_terminology",
+    "royalNavyOrganization": "resolved_by_Norgard_E6_E7_navy_framework_and_operations",
+    "navalTerminology": "resolved_functionally_for_2B_specialized_historical_lexicon_optional",
     "exactHealingMechanics": "future_Nimroel_health_system",
     "medicinalFlora": "future_canonical_medicinal_flora",
     "exactSkillProgression": "future_Nimroel_character_progression_system",
@@ -249,7 +262,8 @@
     "formalParentageGuardianshipAdoptionAndAffinity": "future_Norgard_family_and_marriage_canon",
     "inheritanceAndPropertyConsequences": "Norgard_law_and_economic_institutions",
     "conceptionAndAdditionalParentageRules": "future_Nimroel_character_lifecycle_system",
-    "namingAndSurnameRules": "future_Norgard_family_and_naming_canon"
+    "namingAndSurnameRules": "future_Norgard_family_and_naming_canon",
+    "fishingEcologySpecies": "future_ecology_profile_species_names_not_required_for_2B"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",
@@ -259,7 +273,9 @@
     "refactorClosure": "Worldbuilding/Sistemas/Validacion/CIERRE_REFACTORIZACION_TRESKAL_CORE_NORGARD_VALRIK_v0.1.md",
     "prePlanExternalCanonAudit": "AUDITORIA_PREPLANO_CANON_EXTERNO_NORGARD_v0.1.md",
     "militaryClosure": "AUDITORIA_CIERRE_MILITAR_VALRIK_TRESKAL_v0.1.md",
-    "militaryStaticValidation": "Validacion/regresion_militar_valrik_treskal_v0.1.md"
+    "militaryStaticValidation": "Validacion/regresion_militar_valrik_treskal_v0.1.md",
+    "maritimeIntegrationTestPack": "Datos operativos/treskal_maritime_integration_test_pack_v0.1.json",
+    "maritime2BClosure": "AUDITORIA_CIERRE_SISTEMA_MARITIMO_2B_TRESKAL_v0.1.md"
   },
   "coreInheritance": {
     "status": "complete_high_confidence_migration_validated",
@@ -609,6 +625,35 @@
         ],
         "localContract": "Datos operativos/treskal_information_and_reputation_contract_v0.1.json",
         "localOverridesEmpty": false
+      },
+      "vesselNavigationSimulation": {
+        "namespaces": [
+          "VSL",
+          "VOY",
+          "CREW",
+          "BERTH"
+        ],
+        "localContract": "Datos operativos/treskal_maritime_simulation_profile_v0.1.json",
+        "localOverridesEmpty": false
+      },
+      "waterborneEncounterCombat": {
+        "namespaces": [
+          "WENC",
+          "WCOM",
+          "BOARD",
+          "RESC"
+        ],
+        "localContract": "Datos operativos/treskal_maritime_simulation_profile_v0.1.json",
+        "localOverridesEmpty": false
+      },
+      "aquaticResourceHarvest": {
+        "namespaces": [
+          "AQR",
+          "FGR",
+          "HARV"
+        ],
+        "localContract": "Datos operativos/treskal_fishing_fleet_profile_v0.1.json",
+        "localOverridesEmpty": false
       }
     },
     "validation": {
@@ -710,6 +755,11 @@
       ],
       "authority": "Crown_of_Norgard_House_Aethros",
       "point2Status": "closed"
+    },
+    "maritime2B": {
+      "status": "closed_static_regression",
+      "regression": "Validacion/regresion_sistema_maritimo_2B_treskal_v0.1.md",
+      "testPack": "Datos operativos/treskal_maritime_integration_test_pack_v0.1.json"
     }
   }
 }
