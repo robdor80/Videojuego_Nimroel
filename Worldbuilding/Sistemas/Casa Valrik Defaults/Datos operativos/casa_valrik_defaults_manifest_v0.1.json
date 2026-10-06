@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "casa_valrik_defaults_manifest",
-  "version": "0.3",
+  "version": "0.4",
   "status": "active_house_defaults_manifest",
   "authorityScope": "casa_valrik_defaults",
   "inheritsFrom": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_defaults_manifest_v0.1.json",
@@ -13,7 +13,8 @@
   },
   "operationalFiles": {
     "givenWordHonor": "Datos operativos/casa_valrik_given_word_honor_default_v0.1.json",
-    "militaryStructure": "Datos operativos/casa_valrik_military_structure_default_v0.1.json"
+    "militaryStructure": "Datos operativos/casa_valrik_military_structure_default_v0.1.json",
+    "fiscalAdministration": "Datos operativos/casa_valrik_fiscal_administration_default_v0.1.json"
   },
   "executionProgress": {
     "V1": {
@@ -25,10 +26,15 @@
       "status": "validated_static_regression",
       "default": "Datos operativos/casa_valrik_military_structure_default_v0.1.json",
       "regression": "Validacion/regresion_v2_fuerzas_militares_valrik_v0.1.md"
+    },
+    "V3": {
+      "status": "validated_static_regression",
+      "default": "Datos operativos/casa_valrik_fiscal_administration_default_v0.1.json",
+      "regression": "Validacion/regresion_v3_administracion_fiscal_valrik_v0.1.md"
     }
   },
   "validation": {
     "status": "validated_static_regression",
-    "regressionSpecifications": 2
+    "regressionSpecifications": 3
   }
 }

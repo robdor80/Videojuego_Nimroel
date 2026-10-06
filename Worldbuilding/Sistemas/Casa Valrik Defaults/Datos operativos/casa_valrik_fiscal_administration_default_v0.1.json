@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "documentId": "casa_valrik_fiscal_administration_default",
+  "version": "0.1",
+  "status": "active_house_default",
+  "authorityScope": "casa_valrik_territory",
+  "inherits": [
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json"
+  ],
+  "rules": {
+    "ValrikMayCreateIndependentTaxLaw": false,
+    "ValrikBoundaryCreatesCustomsDuty": false,
+    "ValrikCollectsAuthorizedRealmFiscalObligations": true,
+    "ValrikRetainsAuthorizedAdministrativeShare": true,
+    "ValrikRemitsStipulatedShareToCrown": true,
+    "ValrikMustMaintainAccountsForCrown": true
+  },
+  "administrativeChain": [
+    "local_assessment_or_service_point",
+    "settlement_or_delegated_local_record",
+    "Casa_Valrik_territorial_administration",
+    "S02_Treskal_central_territorial_fiscal_ledger",
+    "Crown_accounting_and_remittance"
+  ],
+  "delegation": {
+    "minorHousesMayCollectWhenDelegated": true,
+    "settlementsMayHostCollectionOrRecordFunctions": true,
+    "delegatedCollectorMaySetOwnRates": false,
+    "delegatedCollectorMustIssueRecordOrReceipt": true,
+    "delegatedCollectorMustRemitAndAccount": true
+  },
+  "settlementForms": {
+    "coinWhenCurrencyDefined": true,
+    "inKindWhenAssessmentAllows": true,
+    "mixedWhenAuthorized": true,
+    "timberAndTerritorialResourcesMayBeAcceptedWhenSpecificAssessmentAllows": true,
+    "forcedSubstitutionWithoutAuthority": false
+  },
+  "royalNavalComplex": {
+    "T08Authority": "Crown_of_Norgard_House_Aethros",
+    "HouseValrikTaxationInsideT08": false,
+    "CrownOfficialCargoExemptFromValrikTaxation": true,
+    "commercialSuppliersStillPaidForRealGoodsAndServices": true,
+    "T07CommercialServicesUsedByCrownCanCreateRealServiceTransactionUnlessExemptOrOfficiallyProvided": true
+  },
+  "enforcementBoundary": {
+    "fiscalClerksAreNotIndependentPolice": true,
+    "administrativeCollectionFirst": true,
+    "suspectedFraudCanReferToKingJustice": true,
+    "guardAssistanceRequiresLegalAdministrativeBasis": true,
+    "exactPenalties": "point_4_penal_system"
+  },
+  "corruptionAndAudit": {
+    "skimmingFalseEntriesAndMissingRemittancesPossible": true,
+    "detectionRequiresAuditEvidenceOrReport": true,
+    "HouseAuditPossible": true,
+    "CrownAuditPossible": true
+  },
+  "exactRates": "inherit_Norgard_balance_schedule_when_defined",
+  "runtimeImplementationRequiredLater": true
+}

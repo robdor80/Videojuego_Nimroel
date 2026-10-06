@@ -46,3 +46,16 @@ Contrato:
 **Valrik puede heredar Norgard y añadir identidad propia sin convertir esa identidad en ley de todo el Reino.**
 
 **Casa Valrik mantiene capacidad militar propia sin soberanía militar independiente.**
+
+
+## V3 — administración fiscal
+
+Casa Valrik hereda E8 de Norgard y materializa la cadena territorial de recaudación y rendición de cuentas.
+
+Contrato:
+
+`Datos operativos/casa_valrik_fiscal_administration_default_v0.1.json`
+
+Centro territorial de consolidación en Treskal: **S02**.
+
+No crea impuestos Valrik independientes ni aduanas en sus límites internos.
