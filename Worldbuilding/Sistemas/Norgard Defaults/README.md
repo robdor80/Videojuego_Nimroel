@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E8 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E9 ACTIVOS**
 
 ## Objetivo
 
@@ -124,7 +124,7 @@ El resto continúa bloqueado hasta que exista canon suficiente.
 
 ## Validación de cierre
 
-E1, E2, E3, E4, E5, E6, E7 y E8 han superado la regresión estática de contratos del cierre Treskal/Core.
+E1, E2, E3, E4, E5, E6, E7, E8 y E9 han superado la regresión estática de contratos del cierre Treskal/Core.
 
 Estado:
 
@@ -225,3 +225,12 @@ Canon:
 `Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_fiscal_y_aduanero_v0.1.md`
 
 Los importes y porcentajes exactos se resolverán con moneda/balance económico sin reabrir la arquitectura fiscal.
+
+
+### E9 — Justicia del Rey y sistema penal
+
+Activo a nivel Reino: Ley penal única; Justicia del Rey administrada por Grandes Casas; procedimiento medieval directo sin abogados, fiscales profesionales ni jurado moderno; 120 tipificaciones en 22 grupos; ausencia de prisión de larga duración como condena ordinaria; destierro perpetuo con marca frontal; excepción corporal específica para delitos sexuales penetrativos consumados; responsabilidad juvenil/capacidad y resolución determinista.
+
+Contratos: `Datos operativos/norgard_penal_code_v0.1.json` y `Datos operativos/norgard_kings_justice_procedure_v0.1.json`.
+
+Canon: `08_Sistema_penal/SISTEMA_PENAL_Y_JUSTICIA_DEL_REY_NORGARD_v0.1.md`
