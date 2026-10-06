@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "0.5",
+  "version": "0.6",
   "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
@@ -538,10 +538,18 @@
     "justice": {
       "territorialSuperiorSeat": true,
       "lawSource": "Law_of_the_King",
+      "realmPenalCode": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_penal_code_v0.1.json",
+      "procedure": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_kings_justice_procedure_v0.1.json",
       "seriousCasesFromVillasReceivedHere": true,
       "lordValrikNeedNotPresideEveryTrial": true,
       "deathPenaltyRequiresLordValrik": true,
-      "longTermPenalSystem": "unresolved"
+      "longTermPenalSystem": "resolved_no_ordinary_long_term_imprisonment",
+      "S04Role": [
+        "temporary_detention",
+        "pretrial_custody_when_needed",
+        "holding_pending_transfer_or_sentence_execution"
+      ],
+      "penalLaborExecution": "authorized_work_sites_or_guarded_work_barracks_not_S04_long_term_prison"
     },
     "royalShipyardSecurity": {
       "sector": "T08",
@@ -706,7 +714,13 @@
     "S04": {
       "id": "main_urban_custody",
       "sector": "T06",
-      "required": true
+      "required": true,
+      "role": [
+        "temporary_detention",
+        "pretrial_custody_when_needed",
+        "holding_pending_transfer_or_execution"
+      ],
+      "longTermPrison": false
     },
     "S05": {
       "id": "urban_guard_main_post",
@@ -1132,5 +1146,5 @@
     "remainingGeneralGrowthReserve": true,
     "rule": "T12 resolves known military footprint while ordinary peripheral growth capacity remains available for future needs"
   },
-  "prePlanExternalCanonStatus": "complete_military_and_royal_naval_framework_resolved"
+  "prePlanExternalCanonStatus": "complete_military_royal_naval_fiscal_and_penal_framework_resolved"
 }
