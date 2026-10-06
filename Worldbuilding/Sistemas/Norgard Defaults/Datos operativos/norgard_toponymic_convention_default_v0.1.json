@@ -37,5 +37,6 @@
     "which_places_are_named",
     "local_popular_aliases",
     "historical_names_backed_by_local_lore"
-  ]
+  ],
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json"
 }

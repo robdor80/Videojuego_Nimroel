@@ -34,5 +34,6 @@
     "doNotInferCompleteEconomicSystem": true,
     "doNotAssumeMintInTreihord": true,
     "pendingCanonRemainsPending": true
-  }
+  },
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json"
 }

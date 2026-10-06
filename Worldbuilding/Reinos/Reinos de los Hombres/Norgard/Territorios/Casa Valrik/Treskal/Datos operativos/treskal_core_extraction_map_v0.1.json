@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_core_extraction_map",
-  "version": "0.21",
+  "version": "0.22",
   "status": "refactor_scope_complete_pending_external_canon",
-  "sourceAuthorityUntilMigration": "Per-system authority: migrated namespaces use Nimroel Core; remaining namespaces use Treskal current contracts",
+  "sourceAuthorityUntilMigration": "All high-confidence migrated namespaces use Nimroel Core; Norgard and House defaults supply scoped canon; Treskal retains explicit local overrides. Remaining pending items are external canon, not migration debt.",
   "targetInheritance": [
     "Nimroel_Core",
     "Norgard_Defaults",
@@ -299,7 +299,7 @@
   },
   "highConfidenceCoreExtractionComplete": true,
   "norgardDefaultsAudit": {
-    "status": "ready_defaults_extracted_pending_house_layer_and_blocked_canon",
+    "status": "ready_defaults_extracted_house_layer_active_blocked_external_canon",
     "manifest": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_defaults_manifest_v0.1.json",
     "audit": "Worldbuilding/Sistemas/Norgard Defaults/AUDITORIA_PREPARACION_DEFAULTS_NORGARD_v0.1.md",
     "ready": [

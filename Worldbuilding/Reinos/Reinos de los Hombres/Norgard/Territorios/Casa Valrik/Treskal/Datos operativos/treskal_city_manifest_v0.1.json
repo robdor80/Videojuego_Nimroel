@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -110,7 +110,7 @@
     "A": "npc_activity_anchor",
     "D": "dynamic_city_state",
     "P": "access_class",
-    "K": "npc_knowledge_state",
+    "K": "knowledge_state",
     "O": "occupation_family",
     "H": "household_template",
     "V": "visitor_type",
@@ -122,14 +122,14 @@
     "SG": "signage_type",
     "TR": "transport_class",
     "MSG": "message_type",
-    "OWN": "ownership_relation_state",
+    "OWN": "ownership_state",
     "COND": "condition_state",
     "MK": "market_seller_type",
     "BIZ": "business_state",
     "COM": "commission_state",
     "DOOR": "physical_access_state",
     "EMP": "employment_state",
-    "RES": "resident_state",
+    "RES": "residency_state",
     "MOVE": "move_state",
     "BUILD": "construction_state",
     "CL": "clothing_function",
@@ -138,7 +138,7 @@
     "FURN": "furnishing_function",
     "TOOL": "tool_condition",
     "WS": "workstation_state",
-    "HAZ": "work_hazard_type",
+    "HAZ": "hazard_type",
     "ACC": "accident_state",
     "REST": "rest_state",
     "FIRE": "fire_state",
@@ -147,8 +147,8 @@
     "MORT": "funeral_state",
     "ASH": "ashes_destination",
     "CONV": "conversation_privacy_context",
-    "VOICE": "speech_projection_mode",
-    "HEAR": "hearing_exposure_result",
+    "VOICE": "voice_mode",
+    "HEAR": "hearing_result",
     "WAIT": "service_wait_state",
     "DEP": "dependency_type",
     "CARE": "care_coverage_state",
@@ -165,9 +165,9 @@
     "RIFT": "interpersonal_conflict_state",
     "PREF": "personal_preference_type",
     "HAB": "personal_habit_type",
-    "FAV": "informal_favor_state",
-    "GIFT": "gift_social_state",
-    "REQ": "personal_request_state",
+    "FAV": "favor_state",
+    "GIFT": "gift_state",
+    "REQ": "request_state",
     "CONF": "confidential_information_state",
     "STAT": "statement_integrity_state",
     "CRED": "claim_credibility_state",
@@ -186,8 +186,8 @@
     "NEED": "basic_physical_need_type",
     "DIAL": "dialogue_state",
     "VIEW": "personal_view_state",
-    "AGEN": "personal_agenda_state",
-    "ERSP": "emergency_response_state",
+    "AGEN": "agenda_state",
+    "ERSP": "personal_emergency_response_state",
     "KIN": "kinship_relation_type"
   },
   "rules": {
@@ -256,7 +256,7 @@
     "coreExtractionMap": "Datos operativos/treskal_core_extraction_map_v0.1.json"
   },
   "coreInheritance": {
-    "status": "partial_migration_active",
+    "status": "complete_high_confidence_migration_active",
     "coreManifest": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
     "migratedSystems": {
       "memorySalienceForgetting": {
@@ -621,8 +621,13 @@
         "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Toponimia/convencion_toponimica_norgard_v0.1.md",
         "localContent": "13_Toponimia/toponimia_treskal_v0.1.md",
         "technicalIdsRemainLocalAndStable": true
+      },
+      "crownMintingAuthority": {
+        "realmDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_crown_minting_authority_default_v0.1.json",
+        "localOverridePresent": false
       }
-    }
+    },
+    "status": "active"
   },
   "houseDefaultsInheritance": {
     "manifest": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_defaults_manifest_v0.1.json",
@@ -633,6 +638,7 @@
         "localPledgeStateMachinePreserved": true,
         "saveMigrationRequired": false
       }
-    }
+    },
+    "status": "active"
   }
 }
