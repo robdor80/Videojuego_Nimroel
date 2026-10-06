@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_transaction_obligation_ledger_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "systemPurpose": "Represent finite transfers, formal obligations and imperfect institutional ledgers without defining any culture's currency, taxes or law.",
+  "stableIdNamespaces": {
+    "TXN": "economic_transaction",
+    "OBL": "formal_obligation",
+    "LED": "ledger_entry"
+  },
+  "immutableRules": {
+    "transactionRequiresSourceAndDestination": true,
+    "transferredValueMustExistOrBeExplicitlyCreatedByAuthorizedProductionSystem": true,
+    "doubleSpendForbidden": true,
+    "paymentCannotExceedAvailableTransferredAssetWithoutDebtOrCreditMechanism": true,
+    "obligationRequiresCreditorOrAuthorityAndDebtorOrResponsibleParty": true,
+    "obligationRequiresBasis": true,
+    "obligationStatePersists": true,
+    "partialPaymentAllowedWhenObligationAllows": true,
+    "paymentUpdatesRealHoldingsAndObligation": true,
+    "ledgerEntryDoesNotCreatePayment": true,
+    "ledgerMayBeIncompleteLateWrongOrFraudulent": true,
+    "officialKnowledgeNotOmniscient": true,
+    "offscreenResolutionUsesSameBalancesAndObligations": true
+  },
+  "transactionKinds": [
+    "purchase",
+    "sale",
+    "fee",
+    "tax_or_levy",
+    "rent",
+    "wage",
+    "transfer",
+    "tribute_or_remittance",
+    "refund",
+    "fine_or_penalty_if_legal_profile_allows",
+    "in_kind_delivery",
+    "other_profiled"
+  ],
+  "settlementMedia": [
+    "canonical_currency_when_defined",
+    "goods_in_kind",
+    "materials",
+    "food_or_produce",
+    "labor_or_service_when_profile_allows",
+    "mixed"
+  ],
+  "obligationFields": [
+    "obligation_id",
+    "basis",
+    "issuer_or_authority_ref",
+    "creditor_ref",
+    "debtor_ref",
+    "assessment_basis",
+    "amount_or_quantity_due",
+    "settlement_media_allowed",
+    "due_window",
+    "status",
+    "paid_or_delivered",
+    "remaining",
+    "exemption_or_relief_ref",
+    "dispute_state",
+    "source_document_refs"
+  ],
+  "obligationStates": [
+    "assessed",
+    "notified",
+    "partially_settled",
+    "settled",
+    "overdue",
+    "disputed",
+    "suspended",
+    "remitted_or_forgiven_by_authority",
+    "cancelled_as_invalid"
+  ],
+  "transactionFields": [
+    "transaction_id",
+    "time",
+    "location_ref",
+    "parties",
+    "kind",
+    "assets_or_value",
+    "source_holding",
+    "destination_holding",
+    "related_obligation_ref",
+    "authorization_or_contract_ref",
+    "receipt_or_record_refs",
+    "status"
+  ],
+  "ledgerFields": [
+    "ledger_entry_id",
+    "ledger_ref",
+    "recorded_time",
+    "effective_time",
+    "recorder_ref",
+    "entry_kind",
+    "party_refs",
+    "obligation_or_transaction_ref",
+    "declared_amount_or_quantity",
+    "record_status",
+    "supporting_refs"
+  ],
+  "ledgerRecordStatus": [
+    "provisional",
+    "confirmed",
+    "corrected",
+    "disputed",
+    "void"
+  ],
+  "fraudAndError": {
+    "possible": true,
+    "examples": [
+      "false_declaration",
+      "under_recording",
+      "duplicate_record",
+      "missing_entry",
+      "forged_receipt",
+      "misappropriation"
+    ],
+    "detectionRequiresEvidenceOrAudit": true,
+    "detectionDoesNotRetroactivelyChangePhysicalTransaction": true
+  },
+  "auditRules": {
+    "auditCompares": [
+      "ledger",
+      "receipts",
+      "physical_stock_or_assets_when_inspectable",
+      "counterparty_records",
+      "authorized_assessments"
+    ],
+    "discrepanciesCreateKnowledgeAndInvestigationHooks": true,
+    "auditDoesNotAssumeGuilt": true
+  },
+  "lod": {
+    "low": "aggregate obligations and net transfers with persistent exceptions",
+    "medium": "party-level obligations, receipts and selected ledger entries",
+    "high": "individual payment, goods, documents, clerks and physical handoff"
+  },
+  "guardrails": {
+    "currencyNotDefinedHere": true,
+    "taxTypesNotDefinedHere": true,
+    "taxRatesNotDefinedHere": true,
+    "legalEnforcementNotDefinedHere": true,
+    "cultureSpecificAccountingPracticeNotDefinedHere": true
+  },
+  "runtimeImplementationRequiredLater": true
+}

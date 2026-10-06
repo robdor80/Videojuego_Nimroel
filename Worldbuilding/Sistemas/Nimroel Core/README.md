@@ -96,3 +96,16 @@ Esta ampliación no reabre la extracción histórica desde Treskal. Añade infra
 Marcador de validación:
 
 `NIMROEL_CORE_MARITIME_2B_STATIC_REGRESSION_VALIDATED`
+
+
+## Ampliación — transacciones, obligaciones y registros
+
+Contrato:
+
+`Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json`
+
+Namespaces:
+
+`TXN`, `OBL`, `LED`.
+
+Sirve de infraestructura universal para pagos, tasas, fiscalidad, remesas, salarios, entregas en especie y auditorías sin definir ninguna política económica cultural.
