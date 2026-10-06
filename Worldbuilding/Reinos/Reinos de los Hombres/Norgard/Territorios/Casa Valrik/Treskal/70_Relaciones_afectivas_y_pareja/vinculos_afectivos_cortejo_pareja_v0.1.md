@@ -10,7 +10,7 @@
 
 Definir cómo pueden surgir, mantenerse o cambiar los vínculos afectivos entre NPC sin convertir la relación en una recompensa automática, una barra de afinidad ni el resultado inevitable de hablar muchas veces.
 
-Este documento no fija todavía matrimonio legal, rito matrimonial, herencia entre parejas, dote, transferencias patrimoniales ni reconocimiento jurídico exacto de una unión.
+El matrimonio legal ya está fijado por el Punto 6 de Norgard. Este documento no lo sustituye y sigue sin fijar herencia, dote, régimen patrimonial ni transferencias de bienes, que pertenecen a puntos posteriores.
 
 ---
 

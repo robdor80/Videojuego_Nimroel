@@ -49,9 +49,9 @@ Otro parentesco familiar relevante que no necesita una categoría más específi
 
 ## KIN07 — family_role_without_legal_definition
 
-Rol familiar socialmente vivido cuya categoría jurídica exacta todavía no está definida por canon superior.
+Rol familiar socialmente vivido sin necesidad de que exista filiación jurídica.
 
-KIN07 no crea adopción, tutela ni filiación legal.
+El Punto 6 de Norgard ya define adopción, tutela y filiación legal. KIN07 sigue sin crearlas por sí solo.
 
 ---
 
@@ -79,7 +79,7 @@ AFF05 no crea por sí solo:
 - parentesco legal;
 - relación con familiares de la pareja.
 
-Las reglas formales de matrimonio y afinidad quedan para el canon familiar de Norgard.
+Las reglas formales de matrimonio y afinidad quedan resueltas por el Punto 6 de Norgard. AFF sigue sin crear por sí solo matrimonio, filiación ni afinidad jurídica.
 
 ---
 

@@ -1,3 +1,8 @@
+> **ACTUALIZACIÓN 2026-10-06 — PUNTO 6 FAMILIA / MATRIMONIO / TUTELA CANONIZADO**  
+> El bloqueo histórico de derecho familiar queda resuelto mediante E10.  
+> Matrimonio, filiación jurídica, responsabilidad parental, tutela y adopción pasan a ser default activo de todo Norgard.  
+> Herencia, régimen patrimonial y reglas laborales permanecen separados para sus puntos posteriores.
+
 > **ACTUALIZACIÓN 2026-10-06 — PUNTO 5 MONETARIO CANONIZADO**  
 > La auditoría histórica inferior reflejaba correctamente el estado previo de E2. Ese bloqueo queda superado por el cierre del Punto 5.  
 > Clavo/Luna/Corona, equivalencias, Ceca Real de Hallheim, peso/ley, lingotes, moneda extranjera, multas y balance base de precios/salarios quedan ya definidos.  
@@ -119,7 +124,9 @@ No puede convertirse todavía en default normativo.
 
 ### Familia, matrimonio, tutela y adopción
 
-No existe en la auditoría una especificación final suficiente de reino.
+**RESUELTO POR PUNTO 6 / E10.**
+
+Existe ya una especificación final de Reino para matrimonio, filiación, responsabilidad parental, tutela y adopción, con contrato operativo y regresión propios.
 
 ### Mayoría de edad y reglas laborales
 

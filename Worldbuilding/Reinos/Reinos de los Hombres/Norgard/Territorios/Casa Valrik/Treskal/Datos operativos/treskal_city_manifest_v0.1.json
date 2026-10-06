@@ -254,18 +254,18 @@
     "organizedPostalSystemIfAny": "future_Norgard_communication_system",
     "textileAndLaundryMaterials": "future_Norgard_material_culture_detail",
     "exactForgeAndMetallurgyFuels": "future_Norgard_metallurgy_system",
-    "formalMarriageRitesAndRecognition": "future_Norgard_family_and_marriage_canon",
+    "formalMarriageRitesAndRecognition": "resolved_by_Norgard_family_point_6",
     "exactPregnancyAndChildDevelopmentTiming": "future_Nimroel_character_lifecycle_system",
     "exactPregnancyBirthHealthMechanics": "future_Nimroel_health_system",
-    "namingParentageGuardianshipLaw": "future_Norgard_family_and_marriage_canon",
+    "namingParentageGuardianshipLaw": "parentage_guardianship_resolved_point_6__naming_future_point_11",
     "exactChildStageAgeThresholds": "future_Nimroel_character_lifecycle_system",
-    "formalAgeOfMajorityAndWorkRules": "future_Norgard_law_and_family_canon",
+    "formalAgeOfMajorityAndWorkRules": "age_of_majority_known_18__labor_rules_future_point_7",
     "exactAgingAndLongevityModel": "future_Nimroel_character_lifecycle_system",
     "pensionRetirementInheritanceRules": "future_Norgard_law_and_economic_institutions",
     "canonicalPersonalValueVocabulary": "future_Nimroel_character_psychology_core",
     "exactPhysiologyAndHealthConsequences": "future_Nimroel_health_system",
     "exactClockAndCalendarScheduling": "future_Nimroel_time_system",
-    "formalParentageGuardianshipAdoptionAndAffinity": "future_Norgard_family_and_marriage_canon",
+    "formalParentageGuardianshipAdoptionAndAffinity": "resolved_by_Norgard_family_point_6",
     "inheritanceAndPropertyConsequences": "Norgard_law_and_economic_institutions",
     "conceptionAndAdditionalParentageRules": "future_Nimroel_character_lifecycle_system",
     "namingAndSurnameRules": "future_Norgard_family_and_naming_canon",
@@ -798,5 +798,11 @@
       "testPack": "Datos operativos/treskal_fiscal_customs_integration_test_pack_v0.1.json",
       "numericRates": "deferred_to_currency_and_economic_balance_without_reopening_structure"
     }
+  },
+  "familyLawIntegration": {
+    "status": "inherited_from_Norgard_point_6",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_family_marriage_guardianship_default_v0.1.json",
+    "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/familia_matrimonio_filiacion_tutela_adopcion_v0.1.md",
+    "localNewLayerRequired": false
   }
 }

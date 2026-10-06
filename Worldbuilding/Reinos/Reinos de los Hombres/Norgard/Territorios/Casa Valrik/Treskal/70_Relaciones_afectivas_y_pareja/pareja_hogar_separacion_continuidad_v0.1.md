@@ -8,7 +8,7 @@
 
 ## Objetivo
 
-Conectar una relación afectiva establecida con residencia, hogar, tareas, cuidados, descanso, empleo, hospitalidad, acceso y memoria social, sin definir todavía el régimen legal o ritual del matrimonio en Norgard.
+Conectar una relación afectiva establecida con residencia, hogar, tareas, cuidados, descanso, empleo, hospitalidad, acceso y memoria social, sin confundir la relación afectiva con el régimen legal del matrimonio, ya definido por el Punto 6 de Norgard.
 
 ---
 
@@ -80,7 +80,7 @@ Una mudanza o nueva carga doméstica puede alterar disponibilidad, pero debe hac
 
 # 8. Economía doméstica
 
-Este documento no establece propiedad conjunta legal.
+El matrimonio está regulado por el Punto 6, pero este documento no establece propiedad conjunta legal; esa materia sigue reservada al Punto 8.
 
 Sí puede existir uso cotidiano compartido de comida, combustible, mobiliario, herramientas domésticas y espacio. OWN continúa siendo autoridad para propiedad y posesión de objetos concretos.
 

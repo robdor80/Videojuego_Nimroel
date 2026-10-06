@@ -86,65 +86,76 @@ Puede reflejarse mediante:
 - MEM;
 - KIN07 cuando sea útil.
 
-La adopción o tutela formal requieren canon específico.
+El derecho familiar de Norgard ya distingue de forma canónica:
+
+- cuidado social;
+- tutela;
+- adopción;
+- filiación jurídica.
+
+Solo una resolución o acto válido crea tutela o adopción.
 
 ---
 
 # 6. Tutela
 
-Este documento no define:
+Treskal hereda el derecho familiar de Norgard.
 
-- tutor legal;
-- guarda formal;
-- potestad;
-- edad de mayoría;
-- procedimiento tras muerte de progenitores.
+La tutela:
 
-CARE puede mantener cuidado práctico mientras el futuro derecho de Norgard resuelve responsabilidades formales.
+- protege a un menor sin progenitor capaz;
+- no crea filiación;
+- puede ser temporal;
+- requiere decisión válida;
+- puede recaer en familia o cuidadores idóneos, pero no de forma automática;
+- termina por mayoría, recuperación de responsable con mejor derecho, adopción u otra resolución válida.
+
+CARE sigue describiendo quién cuida realmente; la tutela describe quién posee autoridad jurídica.
 
 ---
 
 # 7. Matrimonio y afinidad
 
-Este documento no define automáticamente parentesco con:
+El Punto 6 de Norgard ya regula matrimonio y afinidad.
 
-- familia de pareja;
-- cónyuge futuro;
-- padrastros;
-- hijastros
+El matrimonio:
 
-como categorías legales.
+- no crea KIN biológico con la familia del cónyuge;
+- no convierte automáticamente a padrastros o madrastras en progenitores;
+- no concede tutela automática sobre hijastros;
+- puede crear afinidad jurídica y social sin reescribir parentesco biológico.
 
-Eso depende del futuro canon de matrimonio y familia.
+La adopción es la vía necesaria cuando se pretende crear filiación jurídica con el hijo del cónyuge.
 
 ---
 
 # 8. Herencia
 
-KIN puede ser una entrada para futuras reglas sucesorias.
+KIN y la filiación jurídica serán entradas para las futuras reglas sucesorias.
 
-No decide:
+Punto 6 **no** decide todavía:
 
-- orden hereditario;
-- legítimas;
-- propiedad;
+- orden hereditario civil;
+- legítimas o cuotas;
+- propiedad matrimonial;
 - tutela patrimonial;
 - transmisión de negocio.
 
-OWN y el futuro derecho económico conservan autoridad.
+OWN y el futuro Punto 8 conservan autoridad.
 
 ---
 
 # 9. Apellidos y nombres
 
-Este documento no fija:
+Punto 6 no fija:
 
-- transmisión de apellido;
+- transmisión general de apellido;
 - nombres familiares;
 - patronímicos;
-- rito de nombramiento.
+- rito de nombramiento;
+- apellido adoptivo ordinario.
 
-Esas reglas necesitan canon de Norgard.
+Esas reglas permanecen para el futuro canon de nombres y apellidos de Norgard. Las reglas dinásticas Aethros existentes siguen siendo excepción.
 
 ---
 

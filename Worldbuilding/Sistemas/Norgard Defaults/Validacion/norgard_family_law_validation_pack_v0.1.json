@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_family_law_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "cases": [
+    {
+      "id": "FAM01",
+      "given": {
+        "ageA": 18,
+        "ageB": 18,
+        "consent": true,
+        "existingMarriage": false
+      },
+      "expect": {
+        "marriageCapable": true
+      }
+    },
+    {
+      "id": "FAM02",
+      "given": {
+        "ageA": 17,
+        "ageB": 18,
+        "consent": true
+      },
+      "expect": {
+        "marriageCapable": false
+      }
+    },
+    {
+      "id": "FAM03",
+      "given": {
+        "sovereignAge": 16,
+        "personalRule": true
+      },
+      "expect": {
+        "marriageCapable": false
+      }
+    },
+    {
+      "id": "FAM04",
+      "given": {
+        "sexPair": "any",
+        "bothAdults": true,
+        "consent": true
+      },
+      "expect": {
+        "sexBlocksMarriage": false
+      }
+    },
+    {
+      "id": "FAM05",
+      "given": {
+        "relationship": "established_pair",
+        "cohabitingYears": 20
+      },
+      "expect": {
+        "marriedAutomatically": false
+      }
+    },
+    {
+      "id": "FAM06",
+      "given": {
+        "existingMarriage": true,
+        "newCeremonyAttempt": true
+      },
+      "expect": {
+        "secondMarriageValid": false
+      }
+    },
+    {
+      "id": "FAM07",
+      "given": {
+        "kinship": "siblings"
+      },
+      "expect": {
+        "marriageAllowed": false
+      }
+    },
+    {
+      "id": "FAM08",
+      "given": {
+        "kinship": "first_cousins"
+      },
+      "expect": {
+        "marriageAllowed": true
+      }
+    },
+    {
+      "id": "FAM09",
+      "given": {
+        "consent": "coerced"
+      },
+      "expect": {
+        "validMarriage": false,
+        "routeToExistingCrimesWhenApplicable": true
+      }
+    },
+    {
+      "id": "FAM10",
+      "given": {
+        "deFactoSeparated": true,
+        "legalDissolution": false
+      },
+      "expect": {
+        "stillMarried": true,
+        "remarriageAllowed": false
+      }
+    },
+    {
+      "id": "FAM11",
+      "given": {
+        "mutualDissolutionPetition": true
+      },
+      "expect": {
+        "judicialDissolutionPossible": true
+      }
+    },
+    {
+      "id": "FAM12",
+      "given": {
+        "adulteryOnly": true
+      },
+      "expect": {
+        "penalCrime": false,
+        "dissolutionGroundPossible": true
+      }
+    },
+    {
+      "id": "FAM13",
+      "given": {
+        "birthEventMotherKnown": true
+      },
+      "expect": {
+        "motherFiliationMayRegister": true
+      }
+    },
+    {
+      "id": "FAM14",
+      "given": {
+        "marriedToMother": true,
+        "noAcknowledgementOrRuling": true
+      },
+      "expect": {
+        "secondParentInferred": false
+      }
+    },
+    {
+      "id": "FAM15",
+      "given": {
+        "bornOutsideMarriage": true
+      },
+      "expect": {
+        "basicCivilProtectionReduced": false
+      }
+    },
+    {
+      "id": "FAM16",
+      "given": {
+        "aethrosBlood": true,
+        "bornOutsideMarriage": true
+      },
+      "expect": {
+        "ordinaryCrownSuccession": false
+      }
+    },
+    {
+      "id": "FAM17",
+      "given": {
+        "adoptedIntoAethros": true,
+        "noAethrosBlood": true
+      },
+      "expect": {
+        "aethrosBloodCreated": false,
+        "ordinaryCrownSuccession": false
+      }
+    },
+    {
+      "id": "FAM18",
+      "given": {
+        "parentsMarryAfterAethrosChildBirth": true,
+        "childBornOutsideMarriage": true
+      },
+      "expect": {
+        "retroactiveOrdinaryDynasticLegitimacy": false
+      }
+    },
+    {
+      "id": "FAM19",
+      "given": {
+        "legalParent": true,
+        "minorChild": true
+      },
+      "expect": {
+        "careDuty": true
+      }
+    },
+    {
+      "id": "FAM20",
+      "given": {
+        "parentsSeparated": true,
+        "parentSex": "mother"
+      },
+      "expect": {
+        "automaticCustodyPreference": false
+      }
+    },
+    {
+      "id": "FAM21",
+      "given": {
+        "parentsSeparated": true,
+        "parentSex": "father"
+      },
+      "expect": {
+        "automaticCustodyPreference": false
+      }
+    },
+    {
+      "id": "FAM22",
+      "given": {
+        "guardianAppointed": true
+      },
+      "expect": {
+        "legalParentCreated": false,
+        "biologicalKinCreated": false
+      }
+    },
+    {
+      "id": "FAM23",
+      "given": {
+        "closeRelative": true,
+        "noGuardianshipDecision": true
+      },
+      "expect": {
+        "guardianAutomatically": false
+      }
+    },
+    {
+      "id": "FAM24",
+      "given": {
+        "singleAdultAdopter": true,
+        "capable": true
+      },
+      "expect": {
+        "adoptionPossible": true
+      }
+    },
+    {
+      "id": "FAM25",
+      "given": {
+        "jointAdopters": 2,
+        "marriedToEachOther": false
+      },
+      "expect": {
+        "jointAdoptionPossible": false
+      }
+    },
+    {
+      "id": "FAM26",
+      "given": {
+        "validAdoption": true
+      },
+      "expect": {
+        "legalFiliationCreated": true,
+        "biologicalHistoryErased": false
+      }
+    },
+    {
+      "id": "FAM27",
+      "given": {
+        "stepparent": true,
+        "noAdoption": true
+      },
+      "expect": {
+        "parentageCreated": false
+      }
+    },
+    {
+      "id": "FAM28",
+      "given": {
+        "greatHouseSpouse": true
+      },
+      "expect": {
+        "houseLordshipAutomatic": false
+      }
+    },
+    {
+      "id": "FAM29",
+      "given": {
+        "sovereignSpouse": true
+      },
+      "expect": {
+        "sovereigntyAutomatic": false,
+        "consortStatusPossible": true
+      }
+    },
+    {
+      "id": "FAM30",
+      "given": {
+        "affStateChangedToSeparated": true,
+        "legalMarriageActive": true
+      },
+      "expect": {
+        "marriageEndsAutomatically": false
+      }
+    }
+  ],
+  "marker": "FAMILY_POINT_6_CLOSED_NORGARD_FAMILY_LAW"
+}

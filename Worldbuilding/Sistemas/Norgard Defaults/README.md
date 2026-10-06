@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E9 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E10 ACTIVOS**
 
 ## Objetivo
 
@@ -247,3 +247,35 @@ Activo a nivel Reino: Ley penal única; Justicia del Rey administrada por Grande
 Contratos: `Datos operativos/norgard_penal_code_v0.1.json` y `Datos operativos/norgard_kings_justice_procedure_v0.1.json`.
 
 Canon: `08_Sistema_penal/SISTEMA_PENAL_Y_JUSTICIA_DEL_REY_NORGARD_v0.1.md`
+
+
+### E10 — familia, matrimonio, filiación, tutela y adopción
+
+Activo a nivel Reino — **Punto 6 cerrado**:
+
+- mayoría matrimonial a los 18 años;
+- matrimonio civil, monógamo y por consentimiento libre;
+- validez independiente del sexo de los contrayentes;
+- autoridad reconocida y dos testigos adultos;
+- separación de hecho distinta de disolución;
+- disolución y nulidad bajo Justicia del Rey;
+- filiación jurídica separada del hecho biológico;
+- segundo progenitor no inferido por pareja/matrimonio;
+- responsabilidad parental;
+- tutela;
+- adopción;
+- protección civil ordinaria de descendencia nacida fuera de matrimonio;
+- preservación de las reglas especiales de sucesión Aethros;
+- integración con AFF, KIN, CARE, RES y PREG.
+
+Contrato operativo:
+
+`Datos operativos/norgard_family_marriage_guardianship_default_v0.1.json`
+
+Canon:
+
+`Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/familia_matrimonio_filiacion_tutela_adopcion_v0.1.md`
+
+Regresión:
+
+`Validacion/regresion_e10_familia_matrimonio_tutela_adopcion_v0.1.md`

@@ -10,7 +10,7 @@
 
 Definir qué ocurre en Treskal después de un nacimiento vivo y cómo se integra un recién nacido en hogar, demografía, cuidados, descanso, trabajo, alimentación, higiene, viajes y relaciones.
 
-Sin fijar todavía edades exactas de desarrollo, tutela jurídica ni costumbres formales de nombramiento.
+Sin fijar todavía edades exactas de desarrollo ni costumbres formales de nombramiento. La tutela jurídica ya se hereda del Punto 6 de Norgard.
 
 ---
 
@@ -179,9 +179,14 @@ K, CONV y HEAR siguen gobernando la información.
 
 # 16. Nombre y reconocimiento formal
 
-Este documento no establece cuándo se asigna nombre, quién lo elige, ceremonia, registro civil, tutela, apellido o linaje jurídico.
+El Punto 6 de Norgard ya regula:
 
-Todo ello depende del futuro canon familiar de Norgard.
+- filiación jurídica;
+- reconocimiento;
+- tutela;
+- adopción.
+
+Este documento sigue sin establecer cuándo se asigna nombre, quién lo elige, ceremonia o reglas generales de apellido. Esas materias permanecen para el canon de nombres y apellidos de Norgard.
 
 ---
 

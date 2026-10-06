@@ -8,16 +8,17 @@
 
 ## Objetivo
 
-Definir cómo un embarazo y un parto afectan al World State de Treskal sin fijar todavía:
+Definir cómo un embarazo y un parto afectan al World State de Treskal.
+
+Siguen fuera de este documento:
 
 - duración exacta de etapas;
 - probabilidades médicas;
 - mecánica de concepción;
 - medicina obstétrica detallada;
-- matrimonio;
-- filiación jurídica;
-- tutela;
 - rito de nombramiento.
+
+Matrimonio, filiación jurídica y tutela ya se rigen por el Punto 6 de Norgard.
 
 La fisiología y los riesgos concretos pertenecen al futuro sistema de salud y ciclo vital.
 

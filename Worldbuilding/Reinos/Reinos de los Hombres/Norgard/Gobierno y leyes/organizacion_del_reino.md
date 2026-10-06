@@ -95,6 +95,8 @@ Las Grandes Casas **no legislan de forma independiente**.
 
 El sistema penal común y el procedimiento de la Justicia del Rey se desarrollan en `Worldbuilding/Sistemas/Norgard Defaults/08_Sistema_penal/SISTEMA_PENAL_Y_JUSTICIA_DEL_REY_NORGARD_v0.1.md`.
 
+El derecho familiar común —matrimonio, filiación, responsabilidad parental, tutela y adopción— se desarrolla en `familia_matrimonio_filiacion_tutela_adopcion_v0.1.md`.
+
 ---
 
 ## 6. Administración económica

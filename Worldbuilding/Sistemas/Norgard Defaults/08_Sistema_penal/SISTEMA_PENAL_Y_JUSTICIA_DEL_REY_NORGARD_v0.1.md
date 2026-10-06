@@ -80,3 +80,19 @@ Resolución obligatoria:
 **hechos probados → justificación → intención/causalidad → tipo exacto → agravantes/atenuantes → reincidencia/participación → rango autorizado → sentencia → confirmación capital → ejecución.**
 
 Si no encaja: **NO_TIPIFICADO**. El motor no inventa delitos ni castiga por analogía.
+
+## Integración con derecho familiar — Punto 6
+
+El derecho familiar de Norgard define ya el significado jurídico de:
+
+- responsabilidad parental;
+- guarda;
+- tutela;
+- adopción;
+- pérdida o limitación de autoridad de custodia.
+
+Cuando un tipo penal impone `lossOfCustodialAuthority` o equivalente, la consecuencia opera sobre esa autoridad jurídica definida por el Punto 6.
+
+La condena penal no borra automáticamente filiación biológica ni KIN histórico.
+
+Coacción matrimonial, violencia, secuestro, amenaza, maltrato, abandono o explotación se castigan mediante los tipos penales existentes cuando concurren sus elementos. El adulterio no es delito penal por sí solo.

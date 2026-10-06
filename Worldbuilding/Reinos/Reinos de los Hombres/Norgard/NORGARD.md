@@ -533,6 +533,18 @@ El cónyuge del soberano tiene condición de **consorte**, no de soberano por de
 
 El matrimonio con un miembro Aethros no concede derechos propios sobre la Corona.
 
+La validez matrimonial se rige por el derecho familiar común de Norgard:
+
+- mayoría matrimonial a los 18 años;
+- consentimiento libre;
+- matrimonio civil y monógamo;
+- autoridad reconocida y dos testigos adultos;
+- ausencia de restricción jurídica por sexo de los contrayentes.
+
+La excepción que permite al soberano gobernar desde los 16 años no le permite casarse antes de la mayoría civil.
+
+La adopción crea filiación jurídica, pero no sangre Aethros ni derechos sucesorios ordinarios sobre la Corona.
+
 ## Continuidad de la Casa Aethros
 
 Los hijos legítimos del monarca reinante llevan el apellido **Aethros**.

@@ -633,3 +633,14 @@ Cerrado mediante:
 - `AUDITORIA_CIERRE_FISCAL_ADUANERO_TRESKAL_v0.1.md`.
 
 S02 centraliza la fiscalidad Valrik y T07 integra el control aduanero exterior sin crear una Casa de Aduanas singular.
+
+
+### Derecho familiar heredado — Punto 6 de Norgard
+
+Treskal **no crea una nueva capa local** para matrimonio, filiación, tutela o adopción.
+
+Hereda:
+
+`Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/familia_matrimonio_filiacion_tutela_adopcion_v0.1.md`
+
+Las capas locales AFF/KIN/CARE/RES/PREG mantienen sus funciones propias y se conectan con esa ley de Reino.

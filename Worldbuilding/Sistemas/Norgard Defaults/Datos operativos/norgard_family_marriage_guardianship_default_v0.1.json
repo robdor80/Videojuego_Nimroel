@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_family_marriage_guardianship_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "norgard_family_law",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/familia_matrimonio_filiacion_tutela_adopcion_v0.1.md",
+  "legalMajorityAge": 18,
+  "marriage": {
+    "civilInstitution": true,
+    "religiousRiteRequired": false,
+    "minimumAge": 18,
+    "monogamous": true,
+    "sexAffectsValidity": false,
+    "freeConsentRequired": true,
+    "adultWitnessesRequired": 2,
+    "recognizedAuthorityRequired": true,
+    "writtenRecordWhenMateriallyPossible": true,
+    "cohabitationCreatesMarriage": false,
+    "courtshipCreatesMarriage": false,
+    "sharedChildrenCreateMarriage": false,
+    "prohibitedKin": [
+      "direct_ancestor_descendant",
+      "siblings",
+      "half_siblings",
+      "aunt_uncle_with_niece_nephew",
+      "adoptive_parent_child",
+      "adoptive_siblings_while_legal_relation_exists"
+    ],
+    "firstCousinsProhibited": false,
+    "spouseGetsAutomaticSovereignty": false,
+    "spouseGetsAutomaticProperty": false,
+    "spouseGetsAutomaticParentalAuthorityOverPriorChildren": false
+  },
+  "separationAndEnd": {
+    "deFactoSeparationEndsMarriage": false,
+    "validEndStates": [
+      "death",
+      "judicial_dissolution",
+      "annulment"
+    ],
+    "mutualDissolutionAllowed": true,
+    "unilateralSeriousCauseDissolutionAllowed": true,
+    "seriousCauses": [
+      "serious_or_repeated_violence",
+      "persistent_unjustified_abandonment",
+      "serious_coercion",
+      "proven_adultery",
+      "exploitation",
+      "serious_risk_to_spouse_or_dependents",
+      "persistent_material_breakdown_with_grave_breaches"
+    ],
+    "annulmentGrounds": [
+      "underage_at_marriage",
+      "prior_marriage_still_valid",
+      "prohibited_kinship",
+      "absence_of_real_consent",
+      "determinative_coercion",
+      "incapacity_to_understand_act",
+      "essential_identity_fraud"
+    ],
+    "adulteryIsPenalCrimeByItself": false,
+    "remarriageAllowedAfterValidEnd": true
+  },
+  "filiation": {
+    "layersSeparate": [
+      "biological_fact",
+      "legal_filiation",
+      "knowledge",
+      "belief_or_dispute",
+      "actual_care",
+      "residence"
+    ],
+    "birthMotherMayBeRegisteredFromValidBirthEvent": true,
+    "secondParentInferredFromMarriage": false,
+    "secondParentInferredFromCohabitation": false,
+    "secondParentInferredFromRomance": false,
+    "secondParentInferredFromAppearance": false,
+    "establishmentRoutes": [
+      "formal_voluntary_acknowledgement",
+      "coherent_prior_record",
+      "Kings_Justice_resolution"
+    ],
+    "modernGeneticTestingExists": false,
+    "disputedFiliationUsesOrdinaryEvidence": true
+  },
+  "legitimacy": {
+    "ordinaryCivilProtectionReducedForBirthOutsideMarriage": false,
+    "ordinaryFiliationCanBeRecognizedOutsideMarriage": true,
+    "dynasticSpecialRulesMayUseLegitimacy": true,
+    "aethrosOrdinarySuccessionRequiresBirthWithinValidMarriageAndBlood": true,
+    "adoptionCreatesAethrosBlood": false,
+    "laterParentalMarriageRetroactivelyCreatesAethrosOrdinaryLegitimacy": false
+  },
+  "parentalResponsibility": {
+    "appliesToLegalParentsOfMinor": true,
+    "duties": [
+      "reasonable_care",
+      "food_and_shelter_within_capacity",
+      "protection",
+      "representation_when_needed",
+      "protect_child_interests",
+      "arrange_care_when_unable"
+    ],
+    "childIsProperty": false,
+    "automaticMotherPreference": false,
+    "automaticFatherPreference": false,
+    "authorityMayBeLimitedOrLostFor": [
+      "serious_abuse",
+      "dangerous_abandonment",
+      "exploitation",
+      "prolonged_incapacity",
+      "disappearance",
+      "other_proven_unsafe_or_impossible_care"
+    ]
+  },
+  "guardianship": {
+    "createsBiologicalKinship": false,
+    "createsLegalParentage": false,
+    "canBeTemporary": true,
+    "canPersistToMajority": true,
+    "openingCauses": [
+      "death",
+      "disappearance",
+      "incapacity",
+      "loss_of_custodial_authority",
+      "prolonged_absence",
+      "unknown_parentage",
+      "other_proven_impossibility"
+    ],
+    "selectionPreference": [
+      "capable_other_legal_parent",
+      "capable_close_family",
+      "stable_existing_caregiver_or_household_adult",
+      "other_suitable_adult"
+    ],
+    "automaticByKinship": false,
+    "matureMinorShouldBeHeard": true,
+    "preferSiblingContinuityWhenSafeAndFeasible": true
+  },
+  "adoption": {
+    "createsPermanentLegalFiliation": true,
+    "createsBiologicalBlood": false,
+    "singleAdultMayAdopt": true,
+    "jointAdoptionRequiresApplicantsMarriedToEachOther": true,
+    "existingLegalParentConsentRequiredUnlessLawfulException": true,
+    "exceptionsToParentConsent": [
+      "deceased",
+      "unknown",
+      "relevantly_disappeared",
+      "lost_parental_authority",
+      "judicial_exception_for_abandonment_or_grave_impossibility"
+    ],
+    "matureMinorShouldBeHeard": true,
+    "childPurchaseForbidden": true,
+    "stableAfterCompletion": true,
+    "laterCustodialLossDoesNotAutomaticallyEraseFiliation": true,
+    "stepparentBecomesParentAutomatically": false
+  },
+  "affinity": {
+    "createsBiologicalKinship": false,
+    "grantsCustodyAutomatically": false,
+    "grantsPropertyAutomatically": false,
+    "grantsSuccessionAutomatically": false,
+    "stepparentGetsParentageAutomatically": false
+  },
+  "nobleAndDynasticRules": {
+    "sameMarriageValidityRulesApply": true,
+    "politicalMarriageStillRequiresConsent": true,
+    "marryingGreatHouseMemberDoesNotCreateHouseLordship": true,
+    "marryingSovereignCreatesConsortNotSovereignty": true,
+    "bloodBasedSpecialSuccessionRulesOverrideOnlyForOfficeAndDynasty": true
+  },
+  "records": {
+    "events": [
+      "marriage",
+      "annulment",
+      "dissolution",
+      "filiation_acknowledgement",
+      "filiation_ruling",
+      "guardianship",
+      "adoption",
+      "custodial_authority_loss_or_restoration"
+    ],
+    "recordsAreEvidenceNotBiologicalTruth": true,
+    "recordsMayContainErrorsOrFraud": true,
+    "lostRecordMayBeReconstructedFromConsistentEvidence": true
+  },
+  "coreIntegration": {
+    "AFF": "affective_relationship",
+    "KIN": "persistent_kinship",
+    "CARE": "actual_care",
+    "RES": "residence_household",
+    "MOVE": "residential_change",
+    "OWN": "property_possession",
+    "K": "knowledge",
+    "CRED": "credibility",
+    "CONF": "privacy",
+    "PREG": "pregnancy_birth",
+    "MORT": "death_mourning"
+  },
+  "guardrails": {
+    "doNotAutoMarryEstablishedPairs": true,
+    "doNotInferSecondParentFromMarriage": true,
+    "doNotTurnCaregiverIntoGuardianWithoutLegalEvent": true,
+    "doNotTurnGuardianIntoParent": true,
+    "doNotGiveSpouseAutomaticProperty": true,
+    "doNotGiveStepparentAutomaticParentage": true,
+    "doNotEraseBiologicalKinshipOnAdoption": true,
+    "doNotCreateDynasticBloodByAdoption": true,
+    "doNotEndMarriageFromAFFChangeAlone": true,
+    "doNotInventConsent": true
+  },
+  "deferred": [
+    "labor_and_minor_work_rules",
+    "inheritance_and_marital_property",
+    "rental_law",
+    "general_surname_rules"
+  ],
+  "closureMarker": "FAMILY_POINT_6_CLOSED_NORGARD_FAMILY_LAW",
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json"
+}

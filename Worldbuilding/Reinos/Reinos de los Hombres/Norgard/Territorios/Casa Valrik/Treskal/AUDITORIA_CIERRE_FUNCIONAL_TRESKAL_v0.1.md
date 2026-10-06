@@ -82,14 +82,16 @@ Eso es cartografía/detalle, no una nueva capa de simulación.
 
 **Cubierto a nivel causal y operativo.**
 
+Ya resuelto por canon superior:
+
+- moneda y balance base;
+- fiscalidad/aduanas.
+
 Pendiente de canon superior:
 
-- moneda;
-- precios exactos;
-- fiscalidad;
 - herencia;
 - alquiler;
-- derecho económico;
+- derecho económico/patrimonial;
 - reglas laborales.
 
 ## Vida material
@@ -155,14 +157,16 @@ Incluye:
 - opiniones;
 - familia.
 
-Pendiente de Norgard:
+Ya resuelto por Punto 6 de Norgard:
 
 - matrimonio formal;
+- filiación jurídica;
 - tutela;
 - adopción;
-- mayoría de edad;
 - afinidad;
-- derechos familiares.
+- responsabilidad parental.
+
+La mayoría de edad general está fijada en 18 años; las reglas laborales detalladas permanecen para el Punto 7.
 
 ## Cognición y conducta
 
@@ -235,12 +239,8 @@ Pendiente:
 No deben inventarse localmente:
 
 - rangos de guardia;
-- sistema penal de Norgard;
-- cadena interna de Astilleros Reales;
-- moneda y precios exactos;
 - derecho de propiedad/herencia;
-- matrimonio y familia legal;
-- edades legales;
+- reglas laborales y capacidad laboral;
 - horarios exactos globales;
 - fisiología y salud;
 - progresión exacta de habilidades;
@@ -302,3 +302,20 @@ Sí significa:
 ## Regla final
 
 **Treskal ya tiene suficiente estructura para vivir; el siguiente salto de calidad no consiste en añadir una capa 100, sino en separar qué pertenece a todo Nimroel, qué pertenece a Norgard y qué pertenece únicamente a Treskal.**
+
+
+---
+
+### Actualización posterior — Puntos 1–6 de Norgard
+
+Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya han sido resueltas a nivel superior:
+
+- sistema militar;
+- Armada/Astilleros;
+- sistema marítimo;
+- fiscalidad/aduanas;
+- sistema penal;
+- moneda/balance base;
+- matrimonio/filiación/tutela/adopción.
+
+Esto confirma la decisión original de no crear una capa 100 local: Treskal hereda estos sistemas desde Norgard.

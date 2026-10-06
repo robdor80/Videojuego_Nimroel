@@ -63,6 +63,12 @@ Un descendiente ilegítimo de sangre Aethros:
 - puede recibir protección, patrimonio o títulos menores;
 - puede ser considerado excepcionalmente para legitimación solo si todas las líneas legítimas Aethros se han extinguido.
 
+El derecho familiar general de Norgard no altera esta especialidad dinástica:
+
+- la adopción no crea sangre Aethros;
+- una adopción dentro de la Casa Aethros no concede sucesión ordinaria;
+- el matrimonio posterior de los progenitores de un descendiente Aethros nacido fuera de matrimonio no lo convierte retroactivamente en sucesor ordinario.
+
 La aparición de un descendiente ilegítimo no impide automáticamente la extinción de la Casa.
 
 Su legitimación requiere una decisión expresa del Gran Consejo de Sucesión.

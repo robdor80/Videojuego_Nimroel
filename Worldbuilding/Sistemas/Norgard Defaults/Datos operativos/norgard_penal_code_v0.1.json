@@ -1478,5 +1478,13 @@
       "display": "10 Coronas"
     },
     "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/moneda_y_acunacion.md"
+  },
+  "familyLawIntegration": {
+    "status": "resolved_by_point_6",
+    "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/familia_matrimonio_filiacion_tutela_adopcion_v0.1.md",
+    "custodialAuthorityMeaningDefined": true,
+    "lossOfCustodialAuthorityDoesNotEraseBiologicalKinship": true,
+    "coercedMarriageUsesExistingOffensesWhenElementsMatch": true,
+    "adulteryIsNotPenalCrimeByItself": true
   }
 }

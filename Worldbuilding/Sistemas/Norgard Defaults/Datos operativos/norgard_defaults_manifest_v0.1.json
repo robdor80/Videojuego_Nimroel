@@ -24,7 +24,8 @@
     "fiscalCustoms": "Datos operativos/norgard_fiscal_customs_default_v0.1.json",
     "currencyEconomicBalance": "Datos operativos/norgard_currency_economic_balance_default_v0.1.json",
     "penalCode": "Datos operativos/norgard_penal_code_v0.1.json",
-    "kingsJusticeProcedure": "Datos operativos/norgard_kings_justice_procedure_v0.1.json"
+    "kingsJusticeProcedure": "Datos operativos/norgard_kings_justice_procedure_v0.1.json",
+    "familyMarriageGuardianship": "Datos operativos/norgard_family_marriage_guardianship_default_v0.1.json"
   },
   "readyCandidates": {
     "funeralMourning": "extracted_active_validated",
@@ -37,13 +38,13 @@
     "royalNavyOperations": "active_extension_of_E6_validated",
     "fiscalCustoms": "authored_active_validated",
     "currencyEconomicBalance": "authored_active_validated",
-    "penalJustice": "authored_active_validated"
+    "penalJustice": "authored_active_validated",
+    "familyMarriageGuardianship": "authored_active_validated"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
   },
   "blockedPendingCanon": [
-    "family_marriage_guardianship_law",
     "age_of_majority_and_labor_rules",
     "property_inheritance_rental_law",
     "realm_healing_tradition",
@@ -105,6 +106,14 @@
       "procedure": "Datos operativos/norgard_kings_justice_procedure_v0.1.json",
       "validation": "Validacion/norgard_penal_validation_pack_v0.1.json",
       "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_4_SISTEMA_PENAL_NORGARD_v0.1.md"
+    },
+    "E10": {
+      "status": "validated_static_regression_point_6_closed",
+      "default": "Datos operativos/norgard_family_marriage_guardianship_default_v0.1.json",
+      "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/familia_matrimonio_filiacion_tutela_adopcion_v0.1.md",
+      "regression": "Validacion/regresion_e10_familia_matrimonio_tutela_adopcion_v0.1.md",
+      "validationPack": "Validacion/norgard_family_law_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_6_FAMILIA_MATRIMONIO_FILIACION_TUTELA_ADOPCION_NORGARD_v0.1.md"
     }
   },
   "downstreamDefaults": {
@@ -112,8 +121,9 @@
   },
   "validation": {
     "status": "validated_static_regression",
-    "regressionSpecifications": 9,
+    "regressionSpecifications": 10,
     "blockedPendingCanonIsIntentional": true,
-    "monetaryValidationPack": "Validacion/norgard_monetary_validation_pack_v0.1.json"
+    "monetaryValidationPack": "Validacion/norgard_monetary_validation_pack_v0.1.json",
+    "familyLawValidationPack": "Validacion/norgard_family_law_validation_pack_v0.1.json"
   }
 }

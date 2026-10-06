@@ -44,6 +44,15 @@ Por tanto, la Corona no pasa automáticamente al siguiente hijo vivo del monarca
 
 La sucesión ordinaria corresponde a los **descendientes legítimos nacidos dentro de un matrimonio válido**.
 
+La expresión `matrimonio válido` se interpreta conforme al derecho familiar común de Norgard.
+
+Además:
+
+- la sucesión ordinaria exige **sangre Aethros**;
+- una adopción no crea sangre Aethros;
+- un descendiente Aethros nacido fuera de matrimonio no entra en la línea ordinaria;
+- el matrimonio posterior de sus progenitores no altera retroactivamente esa condición para la sucesión de la Corona.
+
 Los descendientes ilegítimos **no forman parte de la línea sucesoria ordinaria**.
 
 Su eventual consideración solo puede producirse en una crisis dinástica extraordinaria y queda regulada por el documento específico del **Gran Consejo de Sucesión**.
@@ -105,6 +114,10 @@ La Corona constituye una excepción institucional: un Rey o Reina puede asumir p
 El monarca **no está obligado a contraer matrimonio**.
 
 El matrimonio no constituye una condición necesaria para ejercer la soberanía.
+
+La validez del matrimonio se rige por el derecho familiar común de Norgard. La capacidad matrimonial comienza a los **18 años**.
+
+La excepción que permite al soberano ejercer personalmente el gobierno desde los 16 años no adelanta su mayoría civil ni su capacidad matrimonial.
 
 ---
 
@@ -207,3 +220,14 @@ Ese procedimiento puede contemplar:
 **Canon cerrado para la sucesión ordinaria de la Corona.**
 
 Las crisis extraordinarias de sucesión se regulan en un documento independiente.
+
+
+---
+
+## Integración con derecho familiar
+
+La definición general de matrimonio, filiación, tutela y adopción se encuentra en:
+
+`../familia_matrimonio_filiacion_tutela_adopcion_v0.1.md`
+
+Las reglas dinásticas de este documento son una especialidad sucesoria y prevalecen únicamente en aquello que exige sangre Aethros y legitimidad de nacimiento.
