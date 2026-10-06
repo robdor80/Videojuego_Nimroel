@@ -1,3 +1,8 @@
+> **ACTUALIZACIÓN 2026-10-06 — PUNTO 7 MAYORÍA / CAPACIDAD / TRABAJO CANONIZADO**  
+> El bloqueo histórico de mayoría de edad y reglas laborales queda resuelto mediante E11.  
+> La mayoría civil permanece en 18 años; aprendizaje formal desde 12; empleo juvenil ordinario desde 15; servicio combatiente desde 18.  
+> Penal, Militar, Armada y Treskal consumen desde ahora estas edades sin reabrir sus sistemas.
+
 > **ACTUALIZACIÓN 2026-10-06 — PUNTO 6 FAMILIA / MATRIMONIO / TUTELA CANONIZADO**  
 > El bloqueo histórico de derecho familiar queda resuelto mediante E10.  
 > Matrimonio, filiación jurídica, responsabilidad parental, tutela y adopción pasan a ser default activo de todo Norgard.  
@@ -130,7 +135,9 @@ Existe ya una especificación final de Reino para matrimonio, filiación, respon
 
 ### Mayoría de edad y reglas laborales
 
-Pendiente de canon legal/familiar.
+**RESUELTO POR PUNTO 7 / E11.**
+
+La mayoría civil, capacidad progresiva, aprendizaje, empleo juvenil, relaciones laborales generales, trabajo peligroso y edad combatiente quedan definidos con contrato operativo y regresión.
 
 ### Propiedad, herencia y alquiler
 
@@ -140,7 +147,7 @@ Los sistemas Core ya modelan propiedad material, pero las consecuencias jurídic
 
 **RESUELTO POR PUNTO 5.**
 
-El sistema monetario y las anclas económicas de referencia ya están definidos a nivel Reino. Los precios concretos continúan siendo contextuales y el derecho laboral general sigue siendo un bloque distinto.
+El sistema monetario y las anclas económicas de referencia ya están definidos a nivel Reino. Los precios concretos continúan siendo contextuales y el derecho laboral general queda resuelto por Punto 7.
 
 ### Curandería de Norgard
 

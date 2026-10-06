@@ -24,6 +24,9 @@ Marcador: `NORGARD_E6_ROYAL_NAVY_STATIC_REGRESSION_VALIDATED`
 - [x] T08 de Treskal es Astilleros Reales + Base Naval Principal bajo la Corona.
 - [x] «Principal» no implica base única.
 - [x] El marco permite añadir rangos, dotaciones exactas y bases secundarias sin alterar el canon cerrado.
+- [x] La edad mínima de servicio combatiente naval es 18 años.
+- [x] Menores de 18 no pueden ser reclutados para abordaje, guardia armada o combate naval.
+- [x] La formación de navegación y tareas civiles auxiliares compatibles pueden existir antes de los 18 sin convertir al menor en combatiente.
 
 ## Resultado
 

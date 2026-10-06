@@ -251,5 +251,15 @@
     "proceduralUnlimitedSpawnForbidden": true,
     "materializedUnitPersists": true,
     "replacementAfterLossRequiresConstructionAndAuthority": true
+  },
+  "ageAndServiceIntegration": {
+    "status": "resolved_by_point_7",
+    "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md",
+    "minimumCombatantAge": 18,
+    "boardingCombatBelow18Allowed": false,
+    "armedNavalGuardBelow18Allowed": false,
+    "wartimeCombatRecruitmentBelow18Allowed": false,
+    "pre18NavigationTrainingAllowed": true,
+    "pre18CivilShipyardOrAuxiliaryWorkAllowedWhenAgeCompatible": true
   }
 }

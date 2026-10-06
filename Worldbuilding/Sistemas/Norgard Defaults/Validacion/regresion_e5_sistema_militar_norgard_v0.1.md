@@ -12,6 +12,9 @@
 - E5-008: la leva extraordinaria exige causa grave y consecuencias civiles.
 - E5-009: la heráldica de Casa se conserva sin implicar soberanía.
 - E5-010: Norgard no fuerza un número idéntico de tropas para todos los territorios.
+- E5-011: la incorporación como combatiente exige 18 años cumplidos.
+- E5-012: la leva extraordinaria no puede incorporar menores como combatientes.
+- E5-013: formación previa o tareas civiles auxiliares no convierten a un menor en combatiente.
 
 ## Resultado esperado
 

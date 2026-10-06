@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_labor_age_capacity_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "cases": [
+    {
+      "id": "LAB01",
+      "given": {
+        "age": 7
+      },
+      "expect": {
+        "employmentAllowed": false,
+        "formalApprenticeshipAllowed": false
+      }
+    },
+    {
+      "id": "LAB02",
+      "given": {
+        "age": 10,
+        "householdTask": "light"
+      },
+      "expect": {
+        "allowed": true,
+        "employment": false
+      }
+    },
+    {
+      "id": "LAB03",
+      "given": {
+        "age": 11,
+        "formalApprenticeship": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "LAB04",
+      "given": {
+        "age": 12,
+        "formalApprenticeship": true,
+        "guardian": true,
+        "minorAssent": true,
+        "mentor": true
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "LAB05",
+      "given": {
+        "age": 13,
+        "adultOrdinaryEmployment": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "LAB06",
+      "given": {
+        "age": 14,
+        "apprenticeProduction": true
+      },
+      "expect": {
+        "allowed": true,
+        "fullAdultReplacement": false
+      }
+    },
+    {
+      "id": "LAB07",
+      "given": {
+        "age": 15,
+        "ordinaryPaidEmployment": true,
+        "ownConsent": true
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "LAB08",
+      "given": {
+        "age": 16,
+        "longTermRelocationJob": true,
+        "guardianAuthorization": false
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "LAB09",
+      "given": {
+        "age": 17,
+        "shortSimpleJob": true,
+        "ownConsent": true
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "LAB10",
+      "given": {
+        "age": 18
+      },
+      "expect": {
+        "generalCivilCapacity": true
+      }
+    },
+    {
+      "id": "LAB11",
+      "given": {
+        "sovereignAge": 16,
+        "personalRule": true
+      },
+      "expect": {
+        "generalCivilCapacity": false
+      }
+    },
+    {
+      "id": "LAB12",
+      "given": {
+        "age": 12,
+        "birthdayOccurred": true
+      },
+      "expect": {
+        "APRStateAutoUpgrade": false
+      }
+    },
+    {
+      "id": "LAB13",
+      "given": {
+        "age": 18,
+        "birthdayOccurred": true
+      },
+      "expect": {
+        "professionalCompetenceAutoGranted": false
+      }
+    },
+    {
+      "id": "LAB14",
+      "given": {
+        "age": 10,
+        "familyBusinessHelp": true
+      },
+      "expect": {
+        "EMPAutomaticallyCreated": false
+      }
+    },
+    {
+      "id": "LAB15",
+      "given": {
+        "age": 13,
+        "dangerousTask": true,
+        "directSupervision": false
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "LAB16",
+      "given": {
+        "age": 16,
+        "riskyTradeTask": true,
+        "competence": true,
+        "supervisionOrBackup": true
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "LAB17",
+      "given": {
+        "age": 16,
+        "riskyTradeTask": true,
+        "competence": false
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "LAB18",
+      "given": {
+        "earnedPayClavos": 20,
+        "employerCashAvailable": 0
+      },
+      "expect": {
+        "payObligationDisappears": false,
+        "debtMayExist": true
+      }
+    },
+    {
+      "id": "LAB19",
+      "given": {
+        "debt": true
+      },
+      "expect": {
+        "debtorBecomesProperty": false
+      }
+    },
+    {
+      "id": "LAB20",
+      "given": {
+        "fixedTermContract": true,
+        "workerAttemptsLeave": true
+      },
+      "expect": {
+        "privatePhysicalDetentionAllowed": false
+      }
+    },
+    {
+      "id": "LAB21",
+      "given": {
+        "apprenticeSaleAttempt": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "LAB22",
+      "given": {
+        "age": 17,
+        "combatantRecruitment": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "LAB23",
+      "given": {
+        "age": 18,
+        "combatantRecruitment": true,
+        "otherRequirementsMet": true
+      },
+      "expect": {
+        "ageAllows": true
+      }
+    },
+    {
+      "id": "LAB24",
+      "given": {
+        "age": 16,
+        "navalSkillTrainingNonCombat": true
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "LAB25",
+      "given": {
+        "age": 11,
+        "criminalOffense": true
+      },
+      "expect": {
+        "criminalSentence": false
+      }
+    },
+    {
+      "id": "LAB26",
+      "given": {
+        "age": 13,
+        "understandingProven": false
+      },
+      "expect": {
+        "criminalResponsibility": false
+      }
+    },
+    {
+      "id": "LAB27",
+      "given": {
+        "age": 13,
+        "understandingProven": true
+      },
+      "expect": {
+        "limitedResponsibilityPossible": true,
+        "adultPenalLabor": false
+      }
+    },
+    {
+      "id": "LAB28",
+      "given": {
+        "age": 16,
+        "adultSentenceRangeYears": [
+          4,
+          10
+        ]
+      },
+      "expect": {
+        "youthMaxOrdinaryYears": 5
+      }
+    },
+    {
+      "id": "LAB29",
+      "given": {
+        "age": 17,
+        "deathPenaltyAdultType": true
+      },
+      "expect": {
+        "deathAllowed": false
+      }
+    },
+    {
+      "id": "LAB30",
+      "given": {
+        "age": 18,
+        "adultOffense": true
+      },
+      "expect": {
+        "adultCriminalRegime": true
+      }
+    },
+    {
+      "id": "LAB31",
+      "given": {
+        "sex": "female",
+        "occupation": "generic"
+      },
+      "expect": {
+        "generalLegalWorkBan": false
+      }
+    },
+    {
+      "id": "LAB32",
+      "given": {
+        "sex": "male",
+        "occupation": "generic"
+      },
+      "expect": {
+        "generalLegalWorkBan": false
+      }
+    },
+    {
+      "id": "LAB33",
+      "given": {
+        "oralLaborAgreement": true,
+        "witnesses": true
+      },
+      "expect": {
+        "automaticallyInvalid": false
+      }
+    },
+    {
+      "id": "LAB34",
+      "given": {
+        "hoursPerDayRequested": 8
+      },
+      "expect": {
+        "eightHourUniversalRuleExists": false
+      }
+    },
+    {
+      "id": "LAB35",
+      "given": {
+        "minor": true,
+        "adultWorkloadByDefault": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    }
+  ],
+  "marker": "LABOR_POINT_7_CLOSED_NORGARD_AGE_CAPACITY_WORK_APPRENTICESHIP"
+}

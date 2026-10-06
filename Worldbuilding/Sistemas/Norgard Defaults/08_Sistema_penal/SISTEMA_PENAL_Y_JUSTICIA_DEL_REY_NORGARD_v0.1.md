@@ -68,8 +68,20 @@ Consentimiento necesario; matrimonio, relación previa o conducta anterior no lo
 
 Agravantes sexuales: menor, embarazo, incapacidad de consentir, vulnerabilidad intelectual/mental, abuso de tutela/autoridad, varios agresores, secuestro/cautividad, arma/lesión grave, reincidencia y crueldad.
 
-## Menores y capacidad
-Hasta fijar mayoría de edad numérica, se usan estados CHD del Core. CHD01–03: sin condena penal. CHD04–05: responsabilidad limitada si comprendían el acto; nunca muerte, marca, mutilación ni azotes. CHD06: responsabilidad juvenil, máximo la mitad del rango adulto y sin muerte, destierro perpetuo marcado ni mutilación sexual. La futura mayoría legal sustituirá este fallback.
+## Menores y capacidad — integración Punto 7
+
+La mayoría de edad numérica ya está cerrada.
+
+Cuando la edad es conocida:
+
+- **0–11 años:** no se impone sentencia penal;
+- **12–14 años:** responsabilidad limitada solo si se demuestra comprensión suficiente; nunca muerte, destierro perpetuo, marca, mutilación, azotes ni trabajo penal adulto;
+- **15–17 años:** responsabilidad juvenil; máximo ordinario de la mitad del rango adulto; nunca muerte, destierro perpetuo, marca, mutilación ni azotes;
+- **18 años o más:** régimen penal adulto.
+
+La capacidad mental concreta puede seguir excluyendo o mitigando culpabilidad según las reglas generales.
+
+Los estados CHD permanecen como descriptor de desarrollo y solo actúan como fallback cuando por razones excepcionales no exista edad exacta disponible. La edad legal no fuerza automáticamente un estado CHD.
 
 Discapacidad mental no elimina responsabilidad por sí sola. Incapacidad real probada para comprender el acto puede excluirla; afectación grave parcial puede atenuar. Embriaguez voluntaria no excusa; intoxicación involuntaria probada puede afectar intención/capacidad.
 

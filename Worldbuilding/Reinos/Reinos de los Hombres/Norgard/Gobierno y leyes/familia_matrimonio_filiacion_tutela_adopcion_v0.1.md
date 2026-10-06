@@ -34,7 +34,7 @@ No regula todavía:
 - transmisión patrimonial;
 - régimen detallado de bienes;
 - apellidos generales;
-- reglas laborales de menores.
+- reglas laborales de menores, reguladas por el Punto 7.
 
 Esas materias pertenecen a puntos posteriores.
 
@@ -750,9 +750,9 @@ El Punto 6 **no** define todavía:
 - alquiler;
 - transmisión de talleres o tierras;
 - apellido de cónyuges e hijos fuera de reglas dinásticas ya existentes;
-- edad y condiciones laborales generales de menores.
+Las reglas de edad, capacidad y trabajo de menores quedan ya cerradas por el Punto 7 y no se consideran una dependencia pendiente de este documento.
 
-Esas materias se cerrarán en los puntos correspondientes sin reabrir la estructura familiar aquí establecida.
+Las materias patrimoniales restantes se cerrarán en los puntos correspondientes sin reabrir la estructura familiar aquí establecida.
 
 ---
 
@@ -761,3 +761,21 @@ Esas materias se cerrarán en los puntos correspondientes sin reabrir la estruct
 **En Norgard la familia jurídica nace de actos y vínculos demostrables: el matrimonio exige adultos y consentimiento, la filiación no se adivina, la tutela protege sin inventar parentesco y la adopción crea familia legal sin reescribir la sangre ni la historia.**
 
 `FAMILY_POINT_6_CLOSED_NORGARD_FAMILY_LAW`
+
+
+---
+
+## 38. Integración con Punto 7
+
+El canon de mayoría de edad, capacidad, trabajo y aprendizaje se encuentra en:
+
+`mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`
+
+Punto 7 confirma:
+
+- mayoría civil a los 18 años;
+- capacidad progresiva antes de la adultez;
+- intervención de progenitor/tutor en acuerdos juveniles cuando corresponde;
+- imposibilidad de utilizar responsabilidad parental o tutela para imponer trabajo forzoso.
+
+Punto 6 conserva autoridad sobre quién es progenitor, tutor o adoptante; Punto 7 determina qué capacidad laboral y contractual posee cada persona.

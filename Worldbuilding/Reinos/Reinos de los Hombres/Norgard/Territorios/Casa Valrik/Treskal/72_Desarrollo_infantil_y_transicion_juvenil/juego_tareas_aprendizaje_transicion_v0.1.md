@@ -97,7 +97,7 @@ Eso no concede competencia profesional.
 
 # 5. Transición a APR
 
-APR comienza solo cuando existe:
+APR formal puede comenzar legalmente desde los **12 años**, pero solo cuando existe:
 
 - desarrollo adecuado;
 - maestro real;
@@ -105,9 +105,11 @@ APR comienza solo cuando existe:
 - plaza o capacidad;
 - tiempo;
 - contexto de aprendizaje;
+- responsable legal cuando corresponda;
+- asentimiento del menor;
 - acuerdo social compatible.
 
-No existe un botón universal de “cumplió edad: ahora es aprendiz”.
+Cumplir 12 años abre posibilidad jurídica; no cambia automáticamente el estado APR.
 
 ---
 
@@ -190,11 +192,16 @@ Las reglas legales exactas quedan pendientes.
 
 # 11. Trabajo y empleo
 
-CHD05/CHD06 pueden incluir contribución productiva o aprendizaje práctico.
+CHD05/CHD06 pueden incluir contribución productiva o aprendizaje práctico, pero CHD no sustituye la edad legal.
 
-EMP adulto no se asigna automáticamente.
+Punto 7 fija:
 
-La frontera jurídica exacta entre ayuda, aprendizaje y empleo pertenece al futuro canon legal y de ciclo vital.
+- antes de 12: sin empleo;
+- 12–14: aprendizaje formal posible, sin empleo adulto ordinario;
+- 15–17: empleo juvenil limitado posible;
+- 18+: capacidad laboral adulta general.
+
+La edad no concede competencia profesional automática.
 
 ---
 

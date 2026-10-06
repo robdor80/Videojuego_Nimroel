@@ -13,5 +13,13 @@
     "worldStateMeaningPreserved": true,
     "saveMigrationRequired": false
   },
-  "note": "Treskal inherits Nimroel Core employment, jobs and vacancy semantics without local exceptions."
+  "note": "Treskal inherits Nimroel Core employment, jobs and vacancy semantics without local exceptions.",
+  "realmLaborLaw": {
+    "status": "inherited_from_Norgard_point_7",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json",
+    "legalMajorityAge": 18,
+    "formalApprenticeshipMinimumAge": 12,
+    "ordinaryYouthEmploymentMinimumAge": 15,
+    "minimumCombatantAge": 18
+  }
 }

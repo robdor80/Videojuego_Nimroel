@@ -170,3 +170,25 @@ La valoración en Clavos permite comparar moneda, especie, lingotes o moneda ext
 ## Regla final
 
 **El balance fija una escala; el World State fija la realidad concreta de cada transacción.**
+
+
+---
+
+## Integración laboral — Punto 7
+
+Las anclas salariales de este documento no conceden por sí mismas capacidad para trabajar.
+
+El Punto 7 determina:
+
+- aprendizaje formal desde 12 años;
+- empleo juvenil ordinario desde 15;
+- plena capacidad laboral desde 18;
+- ausencia de jornada universal fija en horas;
+- obligación de satisfacer la compensación ya ganada;
+- posibilidad de que comida, alojamiento, especie o participación formen parte real del acuerdo.
+
+Un aprendiz no recibe automáticamente el salario de un oficial; su compensación depende del acuerdo, la formación recibida y la contribución real.
+
+Fuente:
+
+`Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`

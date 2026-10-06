@@ -95,11 +95,41 @@
     "excessEndsJustification": true
   },
   "criminalResponsibility": {
-    "CHD01_to_CHD03": "no_criminal_sentence",
-    "CHD04_to_CHD05": "limited_if_understanding_proven_no_death_brand_mutilation_or_flogging",
-    "CHD06": "youth_responsibility_max_half_adult_range_no_death_perpetual_brand_or_penile_amputation",
-    "exactNumericAgeThresholdInventedByEngine": false,
-    "futureFormalAgeOfMajoritySupersedesStageFallback": true
+    "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md",
+    "numericAgeRules": {
+      "ages0to11": {
+        "criminalSentence": false,
+        "protectiveFamilyOrGuardianshipMeasuresAllowed": true
+      },
+      "ages12to14": {
+        "responsibility": "limited_only_if_understanding_proven",
+        "death": false,
+        "perpetualNorgardBanishment": false,
+        "branding": false,
+        "mutilation": false,
+        "flogging": false,
+        "adultPenalLabor": false
+      },
+      "ages15to17": {
+        "responsibility": "youth",
+        "maximumOrdinaryAdultRangeFraction": 0.5,
+        "death": false,
+        "perpetualNorgardBanishment": false,
+        "branding": false,
+        "mutilation": false,
+        "flogging": false
+      },
+      "age18plus": {
+        "responsibility": "adult"
+      }
+    },
+    "exactNumericAgeSupersedesCHDWhenKnown": true,
+    "CHDFallbackWhenExactAgeUnavailable": {
+      "CHD01_to_CHD03": "no_criminal_sentence",
+      "CHD04_to_CHD05": "limited_if_understanding_proven_no_death_brand_mutilation_or_flogging",
+      "CHD06": "youth_responsibility_max_half_adult_range_no_death_perpetual_brand_or_mutilation"
+    },
+    "legalAgeDoesNotAutoSetCHD": true
   },
   "capacityAndIntoxication": {
     "provenTotalInabilityToUnderstandMayExcludeCulpability": true,
@@ -1486,5 +1516,12 @@
     "lossOfCustodialAuthorityDoesNotEraseBiologicalKinship": true,
     "coercedMarriageUsesExistingOffensesWhenElementsMatch": true,
     "adulteryIsNotPenalCrimeByItself": true
+  },
+  "laborAgeIntegration": {
+    "status": "resolved_by_point_7",
+    "minimumFormalApprenticeshipAge": 12,
+    "minimumOrdinaryYouthEmploymentAge": 15,
+    "adultGeneralCapacityAge": 18,
+    "minimumCombatantAge": 18
   }
 }

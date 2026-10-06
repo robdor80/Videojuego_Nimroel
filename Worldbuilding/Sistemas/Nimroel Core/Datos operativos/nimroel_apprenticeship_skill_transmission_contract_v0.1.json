@@ -76,7 +76,7 @@
   "externalDependencies": {
     "exactCharacterSkillModel": "future_Nimroel_skill_system",
     "formalGuildsIfAny": "future_realm_professional_institutions",
-    "legalApprenticeshipAgeOrContract": "future_realm_labor_and_family_law"
+    "legalApprenticeshipAgeOrContract": "realm_labor_and_family_law_required"
   },
   "authorityScope": "nimroel_universal",
   "sourcePrototype": "Treskal layer 68",

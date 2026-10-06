@@ -18,12 +18,12 @@ Definir la relación entre:
 - ausencia;
 - vacante.
 
-Sin fijar todavía:
+Este documento aplica localmente los sistemas EMP y hereda del Reino:
 
-- salarios;
-- contratos laborales formales;
-- derechos legales;
-- duración de jornada exacta.
+- escala salarial del Punto 5;
+- capacidad, contratos laborales básicos y edades del Punto 7.
+
+No fija una duración universal de jornada en horas.
 
 ---
 
@@ -338,15 +338,19 @@ El precio concreto del trabajo sigue dependiendo de oficio, escasez, riesgo, rep
 
 # 19. Derecho laboral
 
-No se inventan:
+Treskal hereda el Punto 7 de Norgard:
 
-- despido legal;
-- indemnización;
-- gremios obligatorios;
-- jornada legal;
-- edad laboral jurídica.
+- aprendizaje formal desde 12 años;
+- empleo juvenil ordinario desde 15;
+- mayoría/capacidad civil general a los 18;
+- contratos orales o escritos según contexto;
+- compensación ganada obligatoria;
+- inexistencia de indemnización universal automática por despido;
+- inexistencia de jornada universal fija en horas;
+- prohibición de trabajo forzoso por deuda, contrato o parentesco;
+- límites de trabajo peligroso para menores.
 
-Depende del futuro canon legal/social.
+La propiedad, herencia y alquiler permanecen para el Punto 8.
 
 ---
 

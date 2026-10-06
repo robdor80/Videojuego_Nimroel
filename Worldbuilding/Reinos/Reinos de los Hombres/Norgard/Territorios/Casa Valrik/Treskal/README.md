@@ -644,3 +644,21 @@ Hereda:
 `Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/familia_matrimonio_filiacion_tutela_adopcion_v0.1.md`
 
 Las capas locales AFF/KIN/CARE/RES/PREG mantienen sus funciones propias y se conectan con esa ley de Reino.
+
+
+### Mayoría, capacidad, trabajo y aprendizaje heredados — Punto 7 de Norgard
+
+Treskal **no crea una capa laboral legal propia**.
+
+Hereda:
+
+`Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`
+
+Reglas principales:
+
+- mayoría civil: 18 años;
+- aprendizaje formal: desde 12;
+- empleo juvenil ordinario: desde 15;
+- carga/riesgo juvenil limitados;
+- servicio combatiente: desde 18;
+- CHD, APR y EMP conservan su significado funcional y no se derivan automáticamente de la edad.

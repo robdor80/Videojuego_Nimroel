@@ -117,6 +117,10 @@ Funciones:
 
 Población militarmente apta, contingentes de Casas menores y personal con entrenamiento suficiente para reforzar el ejército territorial cuando existe movilización.
 
+La incorporación como combatiente exige **18 años cumplidos**.
+
+Los menores de 18 años no forman parte de la leva armada, la guardia armada ni la fuerza combatiente. Pueden recibir formación o desempeñar tareas civiles auxiliares compatibles con su edad y capacidad, sin convertirse por ello en combatientes.
+
 La reserva no permanece acuartelada durante todo el año.
 
 ---
@@ -292,3 +296,19 @@ Una no debe convertirse automáticamente en la otra.
 ## 13. Regla final
 
 **La Corona conserva el monopolio de la guerra soberana; las Grandes Casas conservan la capacidad militar necesaria para defender, guarnecer y servir al Reino.**
+
+
+---
+
+## Integración de edad — Punto 7
+
+El derecho general de Norgard fija:
+
+- mayoría civil: 18 años;
+- edad mínima de incorporación combatiente: 18 años;
+- ninguna leva extraordinaria puede incorporar menores como combatientes;
+- formación previa o tareas civiles auxiliares no equivalen a servicio armado.
+
+Fuente:
+
+`mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`

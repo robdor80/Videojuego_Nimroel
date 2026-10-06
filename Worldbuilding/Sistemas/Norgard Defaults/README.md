@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E10 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E11 ACTIVOS**
 
 ## Objetivo
 
@@ -26,7 +26,7 @@ No se promueve a Norgard por analogía:
 
 Cuando un documento de Norgard esté marcado como pendiente, revisión o dirección no canonizada, se registra como dependencia y no como default activo.
 
-## Estado inicial de auditoría
+## Estado inicial de auditoría — histórico
 
 Listos para extracción inmediata:
 
@@ -39,7 +39,6 @@ No listos todavía:
 
 - sistema militar final;
 - derecho familiar, matrimonio, tutela y adopción;
-- mayoría de edad y derecho laboral;
 - propiedad, herencia y alquiler;
 - tradición sanitaria de reino;
 - gastronomía general del reino;
@@ -126,18 +125,14 @@ Contrato operativo:
 
 `Datos operativos/norgard_royal_reception_residence_default_v0.1.json`
 
-**Todos los candidatos de Norgard actualmente respaldados por canon suficiente están extraídos.**
+**Los candidatos históricos respaldados por canon suficiente han sido extraídos y la capa Casa Valrik ya existe.**
 
-Pendiente siguiente capa:
-
-- Casa Valrik — peso especial de la palabra dada/honor.
-
-El resto continúa bloqueado hasta que exista canon suficiente.
+Tras el cierre de los Puntos 5, 6 y 7, los grandes bloques de Norgard que permanecen pendientes son los que figuran en `blockedPendingCanon`: propiedad/herencia/alquiler, sanidad, gastronomía, nombres/apellidos, calendario y cultura material común.
 
 
 ## Validación de cierre
 
-E1, E2, E3, E4, E5, E6, E7, E8 y E9 han superado la regresión estática de contratos del cierre Treskal/Core.
+E1–E11 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
 
 Estado:
 
@@ -279,3 +274,35 @@ Canon:
 Regresión:
 
 `Validacion/regresion_e10_familia_matrimonio_tutela_adopcion_v0.1.md`
+
+
+### E11 — mayoría de edad, capacidad legal, trabajo y aprendizaje
+
+Activo a nivel Reino — **Punto 7 cerrado**:
+
+- mayoría civil general a los 18 años;
+- bandas legales 0–7, 8–11, 12–14, 15–17 y 18+;
+- aprendizaje formal desde los 12;
+- empleo juvenil ordinario desde los 15;
+- plena capacidad laboral/civil desde los 18;
+- ayuda familiar diferenciada de EMP;
+- contratos laborales orales o escritos según contexto;
+- compensación ganada como obligación real;
+- ausencia de jornada universal fija en horas;
+- límites de carga y riesgo para menores;
+- prohibición de trabajo forzoso por deuda, contrato o parentesco;
+- edad mínima combatiente de 18 años;
+- responsabilidad penal por edad ya numérica;
+- integración con CHD, APR, EMP, CHORE, CARE, REST y HAZ.
+
+Contrato operativo:
+
+`Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json`
+
+Canon:
+
+`Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`
+
+Regresión:
+
+`Validacion/regresion_e11_mayoria_capacidad_trabajo_aprendizaje_v0.1.md`

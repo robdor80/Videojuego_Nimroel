@@ -25,7 +25,8 @@
     "currencyEconomicBalance": "Datos operativos/norgard_currency_economic_balance_default_v0.1.json",
     "penalCode": "Datos operativos/norgard_penal_code_v0.1.json",
     "kingsJusticeProcedure": "Datos operativos/norgard_kings_justice_procedure_v0.1.json",
-    "familyMarriageGuardianship": "Datos operativos/norgard_family_marriage_guardianship_default_v0.1.json"
+    "familyMarriageGuardianship": "Datos operativos/norgard_family_marriage_guardianship_default_v0.1.json",
+    "ageCapacityLaborApprenticeship": "Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json"
   },
   "readyCandidates": {
     "funeralMourning": "extracted_active_validated",
@@ -39,13 +40,13 @@
     "fiscalCustoms": "authored_active_validated",
     "currencyEconomicBalance": "authored_active_validated",
     "penalJustice": "authored_active_validated",
-    "familyMarriageGuardianship": "authored_active_validated"
+    "familyMarriageGuardianship": "authored_active_validated",
+    "ageCapacityLaborApprenticeship": "authored_active_validated"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
   },
   "blockedPendingCanon": [
-    "age_of_majority_and_labor_rules",
     "property_inheritance_rental_law",
     "realm_healing_tradition",
     "realm_cuisine",
@@ -114,6 +115,14 @@
       "regression": "Validacion/regresion_e10_familia_matrimonio_tutela_adopcion_v0.1.md",
       "validationPack": "Validacion/norgard_family_law_validation_pack_v0.1.json",
       "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_6_FAMILIA_MATRIMONIO_FILIACION_TUTELA_ADOPCION_NORGARD_v0.1.md"
+    },
+    "E11": {
+      "status": "validated_static_regression_point_7_closed",
+      "default": "Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json",
+      "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md",
+      "regression": "Validacion/regresion_e11_mayoria_capacidad_trabajo_aprendizaje_v0.1.md",
+      "validationPack": "Validacion/norgard_labor_age_capacity_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_7_MAYORIA_CAPACIDAD_TRABAJO_APRENDIZAJE_NORGARD_v0.1.md"
     }
   },
   "downstreamDefaults": {
@@ -121,9 +130,10 @@
   },
   "validation": {
     "status": "validated_static_regression",
-    "regressionSpecifications": 10,
+    "regressionSpecifications": 11,
     "blockedPendingCanonIsIntentional": true,
     "monetaryValidationPack": "Validacion/norgard_monetary_validation_pack_v0.1.json",
-    "familyLawValidationPack": "Validacion/norgard_family_law_validation_pack_v0.1.json"
+    "familyLawValidationPack": "Validacion/norgard_family_law_validation_pack_v0.1.json",
+    "laborAgeCapacityValidationPack": "Validacion/norgard_labor_age_capacity_validation_pack_v0.1.json"
   }
 }

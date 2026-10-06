@@ -30,7 +30,8 @@
       "existential_threat",
       "extraordinary_royal_order"
     ],
-    "civilianConsequencesRequired": true
+    "civilianConsequencesRequired": true,
+    "minimumCombatantAge": 18
   },
   "localAuthority": {
     "defensiveMobilizationWithoutPriorRoyalOrder": true,
@@ -67,5 +68,15 @@
     "crownDirectForcesUseRegentHouseHeraldry": true,
     "greatHouseForcesUseHouseHeraldry": true,
     "houseHeraldryDoesNotImplySovereignty": true
+  },
+  "ageAndCombatantIntegration": {
+    "status": "resolved_by_point_7",
+    "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md",
+    "minimumCombatantAge": 18,
+    "armedLevyBelow18Allowed": false,
+    "armedGuardBelow18Allowed": false,
+    "battleBelow18Allowed": false,
+    "pre18TrainingAllowed": true,
+    "pre18CivilAuxiliaryRolesAllowedWhenCompatible": true
   }
 }

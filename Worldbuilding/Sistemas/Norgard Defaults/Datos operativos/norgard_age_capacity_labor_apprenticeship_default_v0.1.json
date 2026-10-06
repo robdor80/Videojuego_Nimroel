@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_age_capacity_labor_apprenticeship_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "norgard_age_capacity_labor_apprenticeship",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md",
+  "legalMajorityAge": 18,
+  "royalPersonalRuleException": {
+    "personalGovernmentAge": 16,
+    "createsGeneralCivilMajority": false,
+    "advancesMarriageCapacity": false,
+    "advancesGeneralContractCapacity": false,
+    "advancesAdultLaborCapacity": false
+  },
+  "legalAgeBands": [
+    {
+      "id": "AGE_0_7",
+      "min": 0,
+      "max": 7,
+      "label": "protected_childhood"
+    },
+    {
+      "id": "AGE_8_11",
+      "min": 8,
+      "max": 11,
+      "label": "guided_participation"
+    },
+    {
+      "id": "AGE_12_14",
+      "min": 12,
+      "max": 14,
+      "label": "formal_apprenticeship_minor"
+    },
+    {
+      "id": "AGE_15_17",
+      "min": 15,
+      "max": 17,
+      "label": "limited_youth_labor_capacity"
+    },
+    {
+      "id": "AGE_18_PLUS",
+      "min": 18,
+      "max": null,
+      "label": "adult_general_capacity"
+    }
+  ],
+  "childDevelopmentRelation": {
+    "legalBandsDoNotReplaceCHD": true,
+    "CHDDoesNotAutoMapToExactAge": true,
+    "ageSetsLegalPermission": true,
+    "developmentHealthExperienceSetMaterialCapability": true
+  },
+  "ages0to7": {
+    "employmentAllowed": false,
+    "formalApprenticeshipAllowed": false,
+    "contractCapacity": false,
+    "lightEverydayParticipationAllowed": true,
+    "regularEconomicProductionRequired": false
+  },
+  "ages8to11": {
+    "employmentAllowed": false,
+    "formalApprenticeshipAllowed": false,
+    "householdLightTasksAllowed": true,
+    "simpleErrandsAllowedWhenSafe": true,
+    "tradeObservationAllowed": true,
+    "occasionalFamilyBusinessHelpAllowed": true,
+    "smallPurchasesByAdultDelegationAllowed": true,
+    "adultWorkloadForbidden": true,
+    "dangerousWorkForbidden": true
+  },
+  "ages12to14": {
+    "formalApprenticeshipAllowed": true,
+    "legalResponsibleAdultRequired": true,
+    "minorAssentRequired": true,
+    "mentorRequired": true,
+    "adultOrdinaryEmploymentAllowed": false,
+    "apprenticeMayContributeRealProduction": true,
+    "fullAdultReplacementForbidden": true,
+    "adultWorkloadForbidden": true,
+    "dangerousIndependentResponsibilityForbidden": true,
+    "routineLegalStates": [
+      "APR01",
+      "APR02",
+      "APR03"
+    ],
+    "APR04PossibleWithEvidence": true
+  },
+  "ages15to17": {
+    "formalApprenticeshipAllowed": true,
+    "ordinaryPaidEmploymentAllowed": true,
+    "temporaryAndSeasonalWorkAllowed": true,
+    "EMPAssignmentAllowedWhenSuitable": true,
+    "ownConsentRequired": true,
+    "simpleShortLaborAgreementSelfCapacity": true,
+    "responsibleAdultRequiredFor": [
+      "long_duration",
+      "stable_relocation",
+      "third_party_lodging",
+      "high_risk",
+      "significant_debt",
+      "relevant_property_obligation",
+      "extended_service_commitment"
+    ],
+    "highestSafetyResponsibilityByDefault": false
+  },
+  "adultCapacity": {
+    "beginsAt": 18,
+    "generalContractCapacity": true,
+    "selfEmploymentDecision": true,
+    "selfApprenticeshipDecision": true,
+    "marriageCapacitySubjectToPoint6": true,
+    "adultCriminalRegime": true
+  },
+  "noGeneralEmancipationBefore18": true,
+  "laborRelations": {
+    "universalWrittenContractRequired": false,
+    "allowedForms": [
+      "daily",
+      "temporary",
+      "seasonal",
+      "task_or_commission",
+      "voyage",
+      "continuous",
+      "self_employed",
+      "family",
+      "apprenticeship_linked"
+    ],
+    "oralAgreementCanBeValid": true,
+    "evidenceMayInclude": [
+      "witnesses",
+      "payments",
+      "records",
+      "conduct",
+      "correspondence"
+    ],
+    "universalFixedHourlyWorkday": false,
+    "physicallyImpossibleScheduleValid": false,
+    "universalSeverance": false,
+    "earnedCompensationRemainsDue": true
+  },
+  "compensation": {
+    "canonicalMoneySystemPoint": 5,
+    "allowedForms": [
+      "coin",
+      "food",
+      "lodging",
+      "in_kind",
+      "share",
+      "mixed"
+    ],
+    "earnedCompensationMustBePaid": true,
+    "employerInsolvencyCreatesDebtNotMoney": true,
+    "universalApprenticeWage": false,
+    "fakeTrainingUsedForLongTermProductionCanBeExploitation": true
+  },
+  "apprenticeship": {
+    "minimumAge": 12,
+    "guildRequired": false,
+    "universalExamRequired": false,
+    "universalCertificateRequired": false,
+    "progressionUsesAPR": true,
+    "mentorDuties": [
+      "real_instruction",
+      "appropriate_practice",
+      "correction",
+      "graded_difficulty",
+      "safety",
+      "agreed_food_lodging_or_pay"
+    ],
+    "terminationCauses": [
+      "sufficient_competence",
+      "agreement",
+      "mentor_change",
+      "death",
+      "relocation",
+      "closure",
+      "persistent_incompatibility",
+      "abuse",
+      "lack_of_real_training"
+    ],
+    "learnedProgressPersistsAcrossMentorChange": true
+  },
+  "hazardousWork": {
+    "under12": "forbidden",
+    "ages12to14": "training_only_with_direct_sufficient_supervision",
+    "ages15to17": "allowed_with_demonstrated_competence_and_supervision_or_backup",
+    "youthMaximumSafetyResponsibilityByDefault": false
+  },
+  "forcedLabor": {
+    "debtCreatesOwnership": false,
+    "contractCreatesPrivatePhysicalDetentionRight": false,
+    "workerSaleForbidden": true,
+    "apprenticeSaleForbidden": true,
+    "familyRelationshipCreatesUnlimitedServiceDuty": false,
+    "penalLaborIsSeparateCriminalSentenceSystem": true
+  },
+  "militaryAndNaval": {
+    "minimumCombatantAge": 18,
+    "levyBelow18Allowed": false,
+    "armedGuardBelow18Allowed": false,
+    "battleBelow18Allowed": false,
+    "pre18TrainingAllowed": true,
+    "pre18CivilAuxiliaryRoleAllowedWhenAgeCompatible": true
+  },
+  "criminalResponsibilityByAge": {
+    "ages0to11": {
+      "criminalSentence": false,
+      "protectiveOrFamilyInterventionAllowed": true
+    },
+    "ages12to14": {
+      "responsibility": "limited_only_if_understanding_proven",
+      "death": false,
+      "perpetualBanishment": false,
+      "branding": false,
+      "mutilation": false,
+      "flogging": false,
+      "adultPenalLabor": false
+    },
+    "ages15to17": {
+      "responsibility": "youth",
+      "maximumOrdinaryAdultRangeFraction": 0.5,
+      "death": false,
+      "perpetualBanishment": false,
+      "branding": false,
+      "mutilation": false,
+      "flogging": false
+    },
+    "age18plus": {
+      "adultRegime": true
+    }
+  },
+  "sexBasedGeneralLaborBan": false,
+  "worldStateIntegration": {
+    "CHD": "development",
+    "APR": "apprenticeship_progress",
+    "EMP": "employment",
+    "CHORE": "domestic_tasks",
+    "CARE": "care",
+    "REST": "sleep_recovery",
+    "HAZ": "risk",
+    "TOOL": "tool_capability",
+    "OWN": "property_possession",
+    "PLEDGE": "commitment",
+    "RES_MOVE": "residence"
+  },
+  "guardrails": {
+    "doNotEmployUnder12": true,
+    "doNotStartFormalApprenticeshipUnder12": true,
+    "doNotAutoConvertFamilyHelpToEMP": true,
+    "doNotAutoUpgradeSkillByBirthday": true,
+    "doNotGiveMinorAdultWorkloadByDefault": true,
+    "doNotInventLaborConsent": true,
+    "doNotUseFamilyStatusToForceLabor": true,
+    "doNotUseDebtAsSlavery": true,
+    "doNotEraseEarnedPay": true,
+    "doNotRecruitCombatantsUnder18": true,
+    "doNotApplyFullAdultSentenceUnder18": true,
+    "doNotInventUniversalEightHourDay": true
+  },
+  "deferred": [
+    "minor_property_title_and_guardianship_of_assets",
+    "inheritance",
+    "marital_property",
+    "rental_law",
+    "general_names_and_surnames",
+    "exact_clock_schedule"
+  ],
+  "closureMarker": "LABOR_POINT_7_CLOSED_NORGARD_AGE_CAPACITY_WORK_APPRENTICESHIP",
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json"
+}

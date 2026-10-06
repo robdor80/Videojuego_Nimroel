@@ -519,6 +519,18 @@ La Regencia termina cuando el soberano alcanza los **16 años**, momento en el q
 
 La mayoría de edad general en Norgard se alcanza a los **18 años**.
 
+El derecho de capacidad y trabajo distingue:
+
+- **0–7:** infancia protegida;
+- **8–11:** participación guiada, sin empleo;
+- **12–14:** aprendizaje formal posible;
+- **15–17:** empleo juvenil limitado;
+- **18+:** capacidad civil general.
+
+La edad mínima de incorporación como combatiente, en tierra o en la Armada Real, es **18 años**.
+
+El aprendizaje profesional puede comenzar desde los **12 años** y el empleo juvenil ordinario desde los **15**, siempre sin convertir edad en competencia automática.
+
 ## Coronación
 
 Si el soberano hereda el trono siendo menor de 16 años, la coronación solemne se aplaza hasta que alcance esa edad.

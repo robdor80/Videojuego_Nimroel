@@ -357,3 +357,17 @@ En alto detalle se materializan tareas concretas.
 ## Regla final
 
 **En Treskal un oficio se aprende haciendo trabajo real bajo ojos más expertos; el tiempo ayuda, pero no sustituye a la práctica ni al juicio.**
+
+
+---
+
+## 21. Edad legal e integración con Norgard
+
+Treskal hereda el Punto 7:
+
+- aprendizaje formal: desde **12 años**;
+- 12–14: responsable legal + asentimiento del menor + supervisión reforzada;
+- 15–17: aprendizaje y empleo juvenil pueden coexistir;
+- 18+: la persona decide por sí misma la continuidad del aprendizaje.
+
+Estas edades no modifican los estados APR por sí solas. La progresión sigue dependiendo de práctica, evidencia y competencia real.

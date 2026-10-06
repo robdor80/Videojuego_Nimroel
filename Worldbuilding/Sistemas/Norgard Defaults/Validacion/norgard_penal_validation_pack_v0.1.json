@@ -106,13 +106,19 @@
     },
     {
       "id": "PEN21",
-      "case": "CHD03_child_takes_property",
-      "expected": "no_criminal_sentence"
+      "case": "age_11_child_takes_property",
+      "expected": "no_criminal_sentence",
+      "given": {
+        "age": 11
+      }
     },
     {
       "id": "PEN22",
-      "case": "CHD06_youth_commits_adult_capital_offense",
-      "expected": "no_death_brand_or_penile_amputation"
+      "case": "age_17_youth_commits_adult_capital_offense",
+      "expected": "no_death_perpetual_banishment_brand_mutilation_or_flogging",
+      "given": {
+        "age": 17
+      }
     },
     {
       "id": "PEN23",
@@ -124,5 +130,10 @@
       "case": "proven_total_inability_to_understand_act",
       "expected": "culpability_may_be_excluded"
     }
-  ]
+  ],
+  "point7AgeIntegration": {
+    "status": "resolved",
+    "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md",
+    "exactAgeSupersedesCHDFallback": true
+  }
 }

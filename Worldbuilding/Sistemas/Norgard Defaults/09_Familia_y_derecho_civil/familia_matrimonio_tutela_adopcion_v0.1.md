@@ -127,11 +127,18 @@ El default jurídico se apoya en:
 
 El derecho familiar no sustituye esos sistemas.
 
-## 10. Materias aún fuera de E10
+## 10. Integración con E11 y materias aún fuera de E10
+
+Punto 7 / E11 ya resuelve:
+
+- mayoría civil a los 18 años;
+- capacidad progresiva de menores;
+- aprendizaje;
+- empleo juvenil;
+- relaciones laborales generales.
 
 Siguen pendientes:
 
-- derecho laboral y capacidad laboral;
 - herencia y régimen patrimonial;
 - alquiler;
 - apellidos generales.

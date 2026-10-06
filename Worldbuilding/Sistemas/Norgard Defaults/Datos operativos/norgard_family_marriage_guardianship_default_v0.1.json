@@ -212,11 +212,17 @@
     "doNotInventConsent": true
   },
   "deferred": [
-    "labor_and_minor_work_rules",
     "inheritance_and_marital_property",
     "rental_law",
     "general_surname_rules"
   ],
   "closureMarker": "FAMILY_POINT_6_CLOSED_NORGARD_FAMILY_LAW",
-  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json"
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
+  "laborAgeIntegration": {
+    "status": "resolved_by_point_7",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json",
+    "legalMajorityAge": 18,
+    "formalApprenticeshipMinimumAge": 12,
+    "ordinaryYouthEmploymentMinimumAge": 15
+  }
 }

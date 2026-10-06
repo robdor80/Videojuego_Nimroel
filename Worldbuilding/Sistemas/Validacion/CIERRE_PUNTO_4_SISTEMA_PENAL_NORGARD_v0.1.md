@@ -18,6 +18,17 @@ Las multas F1–F5 dejan de ser tiers abstractos pendientes:
 
 La conversión monetaria no reabre el catálogo penal ni sus rangos.
 
+## Responsabilidad juvenil resuelta por Punto 7
+
+La dependencia numérica de edad queda cerrada:
+
+- 0–11 años: sin sentencia penal;
+- 12–14 años: responsabilidad limitada solo con comprensión demostrada y sin penas corporales/irreversibles ni trabajo penal adulto;
+- 15–17 años: responsabilidad juvenil, máximo ordinario de la mitad del rango adulto y sin muerte, destierro perpetuo, marca, mutilación ni azotes;
+- 18+: régimen adulto.
+
+Los estados CHD quedan como descriptor de desarrollo y fallback excepcional cuando no exista edad exacta. Esto no reabre el catálogo penal del Punto 4.
+
 Validación estática del Punto 4: 24 escenarios. Runtime, UI, animaciones y scripting de juicios no reabren el canon.
 
 `PENAL_POINT_4_CLOSED_NORGARD_KINGS_JUSTICE`

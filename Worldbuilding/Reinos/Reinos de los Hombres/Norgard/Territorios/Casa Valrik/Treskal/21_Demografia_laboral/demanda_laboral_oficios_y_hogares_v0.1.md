@@ -293,10 +293,12 @@ Un negocio puede incluir:
 
 - propietario;
 - pareja;
-- hijos en tareas compatibles;
+- hijos en tareas compatibles con su banda legal;
 - aprendices;
 - trabajadores externos;
 - familiares.
+
+Punto 7 impide usar esta categoría para saltarse los límites: antes de 12 años no existe empleo; desde 12 puede existir aprendizaje formal y desde 15 empleo juvenil limitado.
 
 No todo trabajo utiliza relación salarial moderna.
 

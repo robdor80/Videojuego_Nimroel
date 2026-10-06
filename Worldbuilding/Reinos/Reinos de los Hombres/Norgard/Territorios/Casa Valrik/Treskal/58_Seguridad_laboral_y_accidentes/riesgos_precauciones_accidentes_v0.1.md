@@ -158,6 +158,12 @@ Un aprendiz puede necesitar:
 - tareas de menor riesgo;
 - progresión.
 
+Punto 7 añade límites jurídicos:
+
+- menores de 12: sin trabajo peligroso;
+- 12–14: riesgo solo dentro de aprendizaje y con supervisión directa suficiente;
+- 15–17: riesgo solo con competencia demostrada y supervisión o respaldo adecuados.
+
 No debe recibir automáticamente la tarea más peligrosa para “subir habilidad”.
 
 ---

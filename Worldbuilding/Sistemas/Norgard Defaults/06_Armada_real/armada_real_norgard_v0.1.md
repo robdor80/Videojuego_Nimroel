@@ -242,3 +242,19 @@ Reglas esenciales:
 - la simulación off-screen conserva las mismas reglas y consecuencias.
 
 Esto cierra la diferencia entre **qué Armada existe** y **cómo la Armada actúa en el mundo**.
+
+
+---
+
+## Edad de servicio combatiente — integración Punto 7
+
+La Armada Real hereda el derecho general de edad y trabajo de Norgard.
+
+- **18 años** es la edad mínima para servir como combatiente de la Armada.
+- Los menores no pueden ser reclutados para abordaje, combate naval, guardia armada o leva.
+- Antes de los 18 pueden existir aprendizaje de navegación, formación de oficio y tareas civiles auxiliares compatibles con su edad.
+- Aprender a navegar o trabajar en un astillero no convierte al menor en miembro combatiente de la Armada.
+
+Fuente:
+
+`Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`

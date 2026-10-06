@@ -88,7 +88,7 @@ Puede afectar:
 - rutina;
 - búsqueda.
 
-El impacto monetario exacto queda pendiente.
+El impacto monetario se expresa ya mediante Clavo/Luna/Corona y las anclas salariales del Punto 5; la cuantía concreta depende del puesto, duración, acuerdo y World State.
 
 ---
 

@@ -55,7 +55,13 @@ Un aprendiz puede:
 
 La duración depende del oficio y del progreso.
 
-No se fija una edad universal ni un sistema de gremios obligatorio.
+Treskal hereda del Punto 7 de Norgard:
+
+- aprendizaje profesional formal desde los **12 años**;
+- empleo juvenil ordinario desde los **15 años**;
+- plena capacidad civil general desde los **18 años**.
+
+No existe sistema de gremios obligatorio.
 
 ---
 
@@ -229,6 +235,8 @@ Los niños pueden:
 - jugar en espacios compatibles con su entorno.
 
 No deben representarse como adultos pequeños con jornada laboral completa por defecto.
+
+Antes de los 12 años no existe empleo; entre 12 y 14 el trabajo productivo solo aparece dentro de aprendizaje formal compatible; entre 15 y 17 puede existir empleo juvenil limitado.
 
 ---
 

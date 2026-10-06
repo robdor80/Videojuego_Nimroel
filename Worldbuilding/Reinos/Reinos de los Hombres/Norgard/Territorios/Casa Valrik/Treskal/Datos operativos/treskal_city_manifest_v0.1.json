@@ -259,7 +259,7 @@
     "exactPregnancyBirthHealthMechanics": "future_Nimroel_health_system",
     "namingParentageGuardianshipLaw": "parentage_guardianship_resolved_point_6__naming_future_point_11",
     "exactChildStageAgeThresholds": "future_Nimroel_character_lifecycle_system",
-    "formalAgeOfMajorityAndWorkRules": "age_of_majority_known_18__labor_rules_future_point_7",
+    "formalAgeOfMajorityAndWorkRules": "resolved_by_Norgard_labor_point_7",
     "exactAgingAndLongevityModel": "future_Nimroel_character_lifecycle_system",
     "pensionRetirementInheritanceRules": "future_Norgard_law_and_economic_institutions",
     "canonicalPersonalValueVocabulary": "future_Nimroel_character_psychology_core",
@@ -804,5 +804,14 @@
     "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_family_marriage_guardianship_default_v0.1.json",
     "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/familia_matrimonio_filiacion_tutela_adopcion_v0.1.md",
     "localNewLayerRequired": false
+  },
+  "laborAgeCapacityIntegration": {
+    "status": "inherited_from_Norgard_point_7",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json",
+    "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md",
+    "localNewLayerRequired": false,
+    "legalMajorityAge": 18,
+    "formalApprenticeshipMinimumAge": 12,
+    "ordinaryYouthEmploymentMinimumAge": 15
   }
 }

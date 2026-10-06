@@ -51,16 +51,18 @@ La familia puede generar obligaciones económicas reales, pero este punto no alt
 
 ## Dependencias posteriores
 
-### Punto 7
+### Punto 7 — resuelto
 
-Queda para mayoría/capacidad laboral:
+La dependencia de mayoría/capacidad laboral queda cerrada:
 
-- trabajo de menores;
-- aprendizaje y edades;
-- contratos laborales;
-- capacidad económica progresiva.
+- mayoría civil: 18 años;
+- aprendizaje formal: desde 12;
+- empleo juvenil ordinario: desde 15;
+- plena capacidad laboral/civil: 18;
+- capacidad contractual progresiva;
+- responsabilidad penal numérica de menores.
 
-La mayoría civil general de 18 años ya era canon previo y se respeta.
+Punto 7 no reabre filiación, tutela ni adopción; utiliza la autoridad familiar definida aquí.
 
 ### Punto 8
 

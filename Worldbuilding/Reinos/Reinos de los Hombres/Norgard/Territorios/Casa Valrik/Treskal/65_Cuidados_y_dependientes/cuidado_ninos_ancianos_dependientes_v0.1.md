@@ -136,9 +136,9 @@ La supervisión puede afectar:
 - compras;
 - vida social.
 
-La autonomía aumenta según desarrollo futuro.
+La autonomía aumenta según desarrollo real.
 
-Este documento no fija edades exactas.
+Punto 7 fija bandas **jurídicas** de edad (0–7, 8–11, 12–14, 15–17 y 18+), pero no obliga a que los estados CHD coincidan automáticamente con una edad exacta.
 
 ---
 

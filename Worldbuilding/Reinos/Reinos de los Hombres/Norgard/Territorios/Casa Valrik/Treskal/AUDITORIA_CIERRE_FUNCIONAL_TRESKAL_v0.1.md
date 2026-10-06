@@ -85,14 +85,14 @@ Eso es cartografía/detalle, no una nueva capa de simulación.
 Ya resuelto por canon superior:
 
 - moneda y balance base;
-- fiscalidad/aduanas.
+- fiscalidad/aduanas;
+- mayoría de edad, capacidad y reglas laborales.
 
 Pendiente de canon superior:
 
 - herencia;
 - alquiler;
-- derecho económico/patrimonial;
-- reglas laborales.
+- derecho económico/patrimonial.
 
 ## Vida material
 
@@ -132,12 +132,13 @@ Incluye:
 
 Pendiente:
 
-- edades exactas;
+- umbrales exactos de etapas CHD/ciclo vital más allá de las bandas jurídicas;
 - longevidad;
 - reproducción;
 - fisiología;
-- consecuencias médicas;
-- filiación legal.
+- consecuencias médicas.
+
+La filiación legal está resuelta por Punto 6 y las bandas jurídicas de edad por Punto 7.
 
 ## Relaciones y sociedad
 
@@ -166,7 +167,7 @@ Ya resuelto por Punto 6 de Norgard:
 - afinidad;
 - responsabilidad parental.
 
-La mayoría de edad general está fijada en 18 años; las reglas laborales detalladas permanecen para el Punto 7.
+Punto 7 deja además cerrado: mayoría civil a los 18, aprendizaje formal desde 12, empleo juvenil desde 15 y capacidad laboral adulta desde 18.
 
 ## Cognición y conducta
 
@@ -240,7 +241,6 @@ No deben inventarse localmente:
 
 - rangos de guardia;
 - derecho de propiedad/herencia;
-- reglas laborales y capacidad laboral;
 - horarios exactos globales;
 - fisiología y salud;
 - progresión exacta de habilidades;
@@ -306,7 +306,7 @@ Sí significa:
 
 ---
 
-### Actualización posterior — Puntos 1–6 de Norgard
+### Actualización posterior — Puntos 1–7 de Norgard
 
 Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya han sido resueltas a nivel superior:
 
@@ -316,6 +316,7 @@ Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya 
 - fiscalidad/aduanas;
 - sistema penal;
 - moneda/balance base;
-- matrimonio/filiación/tutela/adopción.
+- matrimonio/filiación/tutela/adopción;
+- mayoría de edad/capacidad/trabajo/aprendizaje.
 
 Esto confirma la decisión original de no crear una capa 100 local: Treskal hereda estos sistemas desde Norgard.

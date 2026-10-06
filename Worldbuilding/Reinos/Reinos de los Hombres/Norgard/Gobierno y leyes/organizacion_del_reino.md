@@ -97,6 +97,8 @@ El sistema penal común y el procedimiento de la Justicia del Rey se desarrollan
 
 El derecho familiar común —matrimonio, filiación, responsabilidad parental, tutela y adopción— se desarrolla en `familia_matrimonio_filiacion_tutela_adopcion_v0.1.md`.
 
+La mayoría de edad, capacidad civil progresiva, trabajo, aprendizaje y edad mínima de servicio combatiente se desarrollan en `mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`.
+
 ---
 
 ## 6. Administración económica
