@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_villa_instance_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_world_state_contract",
   "purpose": "Contrato mínimo para persistir la materialización procedural de una de las tres Villas funcionales.",
   "ruleSource": "villa_generation_rules_v0.1.json",
@@ -25,7 +25,8 @@
     "layout",
     "validation",
     "rulesVersion",
-    "generatorVersion"
+    "generatorVersion",
+    "securityAndMilitary"
   ],
   "fieldContract": {
     "instanceId": "stable_technical_id_not_visible_name",
@@ -136,7 +137,14 @@
       "spatialRulesValid": "boolean"
     },
     "rulesVersion": "string",
-    "generatorVersion": "string"
+    "generatorVersion": "string",
+    "securityAndMilitary": {
+      "minorHouseGuardCount": "integer_12_24",
+      "valrikTerritorialDetachmentCount": "integer_20_50",
+      "reserveAssemblySpaceRef": "layout_feature_ref",
+      "forceRecordsRef": "external_force_records",
+      "royalMusterIntegration": "boolean_or_state_ref"
+    }
   },
   "forbiddenPersistencePatterns": [
     "merge_transient_population_into_resident_census_without_state_change",

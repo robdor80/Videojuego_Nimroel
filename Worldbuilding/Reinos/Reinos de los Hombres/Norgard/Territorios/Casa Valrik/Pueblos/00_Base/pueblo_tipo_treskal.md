@@ -256,6 +256,10 @@ Uno de estos enclaves puede coincidir geográficamente con un pueblo o encontrar
 
 Murallas, fortificaciones y torres tampoco forman parte del esqueleto normal de Pueblo.
 
+Cuando un Pueblo coincide con un enclave estratégico, el destacamento ordinario de referencia es de **6–16 profesionales Valrik**. La cifra pertenece al puesto estratégico, no al rango del asentamiento.
+
+Además, habitantes reales del Pueblo pueden formar parte de la **reserva movilizable Valrik**. Siguen teniendo hogar, profesión y agenda civil mientras no están movilizados.
+
 ---
 
 ## Posada

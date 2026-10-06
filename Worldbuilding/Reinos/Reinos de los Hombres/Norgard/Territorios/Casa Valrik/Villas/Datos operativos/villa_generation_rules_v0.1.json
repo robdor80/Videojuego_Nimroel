@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_villa_generation_rules",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_generation_contract",
   "scope": "Norgard/Treskal/Villa",
   "purpose": "Reglas estáticas para materializar las tres Villas funcionales canónicas sin fijar nombres, Casas menores ni layouts concretos.",
@@ -301,5 +301,25 @@
     "profileFunctionCannotReroll": true,
     "concreteMaterializationPersistsInWorldState": true,
     "visibleNameNotRequiredForGenerationIdentity": true
+  },
+  "militarySecurity": {
+    "inherits": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_military_structure_default_v0.1.json",
+    "minorHouseGuardBand": [
+      12,
+      24
+    ],
+    "valrikTerritorialDetachmentBand": [
+      20,
+      50
+    ],
+    "profileBias": {
+      "V1_Costera_astilleros_civiles": "upper_band_preferred",
+      "V2_Gestion_forestal_maderera": "middle_to_upper_band",
+      "V3_Agroganadera_comercial": "lower_to_middle_band"
+    },
+    "reserveAssemblySpaceRequired": true,
+    "sovereignArmy": false,
+    "countsTowardValrikProfessionalStrength": "territorial_detachment_only",
+    "minorHouseGuardCountsTowardValrikProfessionalStrength": false
   }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_pueblo_generation_rules",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_generation_contract",
   "scope": "Norgard/Treskal/Pueblo",
   "purpose": "Reglas estáticas de canon para generar Pueblos procedurales coherentes y persistentes.",
@@ -328,5 +328,29 @@
     "individualNpcStateElsewhere": true,
     "dynamicInventoryElsewhere": true,
     "questStateElsewhere": true
+  },
+  "securityIntegration": {
+    "inherits": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_military_structure_default_v0.1.json",
+    "permanentGuardBySettlementRank": false,
+    "trainedReserveResidentsPossible": true,
+    "strategicPost": {
+      "allowed": true,
+      "professionalBand": [
+        6,
+        16
+      ],
+      "requiresStrategicCause": true,
+      "causes": [
+        "border",
+        "bridge",
+        "ford",
+        "critical_crossroad",
+        "high_value_resource",
+        "strategic_storage",
+        "strategic_port_or_landing",
+        "threat_zone"
+      ]
+    },
+    "noWallsByDefault": true
   }
 }

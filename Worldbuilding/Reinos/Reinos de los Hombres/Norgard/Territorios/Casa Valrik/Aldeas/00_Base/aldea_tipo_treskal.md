@@ -210,7 +210,9 @@ Por defecto no requiere:
 
 La seguridad territorial depende principalmente de la red de patrullas y de las autoridades del territorio.
 
-Las excepciones se definirán posteriormente como posibilidades específicas si resultan coherentes.
+Las excepciones solo aparecen cuando existe una causa estratégica real.
+
+Habitantes adultos de una Aldea pueden pertenecer a la **reserva movilizable Valrik**. Eso no crea un cuerpo de guardia local permanente: continúan siendo residentes con sus hogares, trabajos y obligaciones civiles hasta que exista entrenamiento, convocatoria o movilización.
 
 ---
 

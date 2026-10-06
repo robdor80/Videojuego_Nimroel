@@ -156,17 +156,34 @@ Los delitos de mayor gravedad se remiten a Treskal.
 
 La pena de muerte queda reservada a Lord Valrik según el canon territorial vigente.
 
-### 10. Presencia armada local limitada
+### 10. Presencia armada local
 
-La Casa menor que administra una villa mantiene una **pequeña fuerza armada permanente** destinada a:
+Cada Villa mantiene dos componentes distintos.
 
-- protección de su señor;
+#### Guardia de la Casa menor — 12–24 personas
+
+Funciones:
+
+- protección del señor o señora local;
 - residencia y dependencias;
-- determinadas necesidades locales.
+- escolta;
+- seguridad institucional inmediata.
 
-No constituye un ejército soberano ni sustituye a las fuerzas territoriales de Lord Valrik.
+#### Destacamento Territorial Valrik — 20–50 profesionales
 
-El tamaño, composición y organización se definirán más adelante.
+Funciones:
+
+- seguridad estratégica;
+- patrulla;
+- defensa;
+- protección de rutas o instalaciones relevantes;
+- conexión con la red militar de Casa Valrik.
+
+La Villa costera de grandes astilleros civiles tiende al extremo superior por su importancia estratégica.
+
+Toda Villa debe disponer además de un espacio apto para reunión temporal de reservistas.
+
+Estas fuerzas no son soberanas y se integran en la movilización de Casa Valrik.
 
 ### 11. Relación jerárquica con su entorno
 
