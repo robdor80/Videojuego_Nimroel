@@ -256,7 +256,8 @@
     "coreExtractionMap": "Datos operativos/treskal_core_extraction_map_v0.1.json",
     "refactorClosure": "Worldbuilding/Sistemas/Validacion/CIERRE_REFACTORIZACION_TRESKAL_CORE_NORGARD_VALRIK_v0.1.md",
     "prePlanExternalCanonAudit": "AUDITORIA_PREPLANO_CANON_EXTERNO_NORGARD_v0.1.md",
-    "militaryClosure": "AUDITORIA_CIERRE_MILITAR_VALRIK_TRESKAL_v0.1.md"
+    "militaryClosure": "AUDITORIA_CIERRE_MILITAR_VALRIK_TRESKAL_v0.1.md",
+    "militaryStaticValidation": "Validacion/regresion_militar_valrik_treskal_v0.1.md"
   },
   "coreInheritance": {
     "status": "complete_high_confidence_migration_validated",
@@ -671,7 +672,7 @@
     }
   },
   "prePlanExternalCanon": {
-    "status": "complete_for_metric_plan",
+    "status": "complete_for_metric_plan_military_validated",
     "authorInputRequiredNow": false,
     "blockingResolved": [
       "royal_reception_and_accommodation",

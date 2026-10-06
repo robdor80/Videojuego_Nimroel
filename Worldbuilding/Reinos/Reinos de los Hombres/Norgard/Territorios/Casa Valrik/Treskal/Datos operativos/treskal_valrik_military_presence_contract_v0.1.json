@@ -77,5 +77,15 @@
     "T08Owner": "Crown_of_Norgard",
     "valrikTerritorialCommandInsideT08": false,
     "cooperationOutsideAndEmergency": true
+  },
+  "validation": {
+    "status": "validated_static_regression",
+    "validatedAtRepoHead": "9c3c88baa2c87373daa3c3119e7f49bea16f0d50",
+    "houseGuardBandMatchesValrikDefault": true,
+    "urbanGuardBandMatchesValrikDefault": true,
+    "centralGarrisonWithinTerritorialProfessionalBand": true,
+    "t12PresentInCityStructure": true,
+    "t08CrownBoundaryPreserved": true,
+    "cityWallIntroduced": false
   }
 }
