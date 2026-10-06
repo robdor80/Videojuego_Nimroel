@@ -109,3 +109,10 @@ Namespaces:
 `TXN`, `OBL`, `LED`.
 
 Sirve de infraestructura universal para pagos, tasas, fiscalidad, remesas, salarios, entregas en especie y auditorías sin definir ninguna política económica cultural.
+
+
+## Ampliación — casos legales, prueba, sentencia y custodia
+
+Contrato: `Datos operativos/nimroel_legal_case_sentence_contract_v0.1.json`
+
+Namespaces: `LCASE`, `EVID`, `SENT`, `CUST`. El Core conserva persistencia, conocimiento no omnisciente, prueba conflictiva, sentencia con base legal y custodia sin presumir culpabilidad. No define delitos ni penas culturales: Norgard los aporta en E9.
