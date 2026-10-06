@@ -662,3 +662,25 @@ Reglas principales:
 - carga/riesgo juvenil limitados;
 - servicio combatiente: desde 18;
 - CHD, APR y EMP conservan su significado funcional y no se derivan automáticamente de la edad.
+
+
+### Propiedad, herencia y alquiler heredados — Punto 8 de Norgard
+
+Treskal **no crea una ley patrimonial local propia**.
+
+Hereda:
+
+`Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md`
+
+Esto resuelve para OWN/RES/BIZ:
+
+- propiedad frente a posesión/ocupación;
+- transferencia de inmuebles;
+- copropiedad;
+- bienes matrimoniales;
+- bienes de menores;
+- herencia;
+- continuidad de negocios;
+- alquiler y recuperación judicial del inmueble.
+
+Las particularidades locales siguen siendo físicas/económicas, no una soberanía jurídica distinta.

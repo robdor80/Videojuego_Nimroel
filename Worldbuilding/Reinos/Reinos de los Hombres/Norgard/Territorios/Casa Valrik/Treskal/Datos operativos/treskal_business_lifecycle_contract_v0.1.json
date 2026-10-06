@@ -39,7 +39,7 @@
   ],
   "temporaryClosurePreservesIdentity": true,
   "ownerDeathDoesNotAutoDeleteBusiness": true,
-  "ownershipTransferLaw": "external_dependency",
+  "ownershipTransferLaw": "resolved_by_Norgard_point_8",
   "relocationPreservesBusinessWhenContinuityExists": true,
   "closingDoesNotDeleteStockToolsOrBuilding": true,
   "openCommissionsResolvedIndividuallyOnTransition": true,
@@ -60,7 +60,12 @@
   "insufficientDemandPreventsInfiniteProviders": true,
   "playerDemandDoesNotOverrideCityEconomics": true,
   "externalDependencies": {
-    "inheritanceAndOwnershipTransfer": "Norgard_law_and_economic_institutions",
+    "inheritanceAndOwnershipTransfer": "resolved_by_Norgard_point_8",
     "bankruptcyOrFormalInsolvencyIfAny": "future_Norgard_commercial_law"
+  },
+  "realmPropertyLaw": {
+    "status": "inherited_from_Norgard_point_8",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+    "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md"
   }
 }

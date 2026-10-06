@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_property_inheritance_rental_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "norgard_property_inheritance_rental_law",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md",
+  "ownership": {
+    "relationsSeparate": [
+      "owner",
+      "possessor",
+      "custodian",
+      "occupant",
+      "authorized_user"
+    ],
+    "jurisdictionDoesNotImplyPrivateOwnership": true,
+    "ownershipEntities": [
+      "individual",
+      "coowners",
+      "household",
+      "business",
+      "institution",
+      "Great_House",
+      "Crown"
+    ],
+    "longOccupationTransfersOwnershipAutomatically": false,
+    "stolenPropertyTransfersValidTitleAutomatically": false
+  },
+  "immovableTransfer": {
+    "capableTransferorRequired": true,
+    "validAgreementRequired": true,
+    "propertyIdentificationRequired": true,
+    "documentOrActRequired": true,
+    "adultWitnessesRequired": 2,
+    "registrationWhenAvailable": true
+  },
+  "coownership": {
+    "sharesRegistrable": true,
+    "jointAcquisitionWithoutDifferentShares": "equal_shares_unless_sufficient_evidence_otherwise",
+    "oneCoownerCannotTransferAnotherShare": true
+  },
+  "marriageProperty": {
+    "universalAutomaticCommunity": false,
+    "premaritalPropertyRemainsIndividual": true,
+    "individualGiftsRemainIndividual": true,
+    "individualInheritanceRemainsIndividual": true,
+    "explicitJointPropertyAllowed": true,
+    "householdPropertyAllowed": true,
+    "temporaryResidenceUseOrderDoesNotTransferTitle": true
+  },
+  "minors": {
+    "mayOwnProperty": true,
+    "parentOrGuardianDoesNotBecomeOwner": true,
+    "administratorActsForMinorBenefit": true,
+    "majorImmovableOrProductiveAssetTransferRequiresKingsJusticeAuthorization": true,
+    "ordinaryAdministrationEndsAt18": true
+  },
+  "institutionalAndNoble": {
+    "GreatHouseJurisdictionNotOwnershipOfAllTerritory": true,
+    "CrownInstitutionalPropertyNotMonarchPrivateEstate": true,
+    "GreatHouseInstitutionalPropertyNotLordPrivateEstate": true,
+    "GreatHouseLordshipUsesSpecialSuccessionCanon": true,
+    "CrownSuccessionUsesAethrosCanon": true,
+    "privateNoblePropertyUsesOrdinaryCivilInheritance": true
+  },
+  "estate": {
+    "opensAt": "legally_certain_death",
+    "includes": [
+      "decedent_owned_assets",
+      "decedent_shares",
+      "receivables",
+      "transferable_rights"
+    ],
+    "excludes": [
+      "other_spouse_property",
+      "other_coowner_shares",
+      "nonowned_household_property",
+      "institutional_property",
+      "custodied_property",
+      "borrowed_property"
+    ],
+    "settlementOrder": [
+      "necessary_preservation_and_administration",
+      "reasonable_funeral_expenses",
+      "public_obligations",
+      "restitution_and_enforceable_obligations",
+      "proven_private_debts",
+      "transferable_contractual_obligations",
+      "valid_legacies",
+      "heir_distribution"
+    ],
+    "heirPersonalUnlimitedDebtLiability": false
+  },
+  "testament": {
+    "minimumAge": 18,
+    "freeWillRequired": true,
+    "ordinaryAdultWitnesses": 2,
+    "writtenOrScribed": true,
+    "emergencyOralAllowed": true,
+    "emergencyAdultWitnesses": 3,
+    "latestValidTestamentPrevails": true,
+    "revocableWhileCapable": true
+  },
+  "protectedShares": {
+    "descendantsMinimumFraction": 0.5,
+    "spouseWithDescendantsMinimumFraction": 0.25,
+    "spouseWithoutDescendantsMinimumFraction": 0.5,
+    "bothSpouseAndDescendantsFreeFraction": 0.25
+  },
+  "intestate": {
+    "spouseAndDescendants": {
+      "spouseFraction": 0.3333333333333333,
+      "descendantsFraction": 0.6666666666666666,
+      "descendantsByBranch": true
+    },
+    "descendantsNoSpouse": {
+      "descendantsFraction": 1,
+      "byBranch": true
+    },
+    "spouseNoDescendantsWithParents": {
+      "spouseFraction": 0.5,
+      "parentsFraction": 0.5
+    },
+    "spouseNoDescendantsNoParents": "sibling_branches_then_spouse_full_if_none",
+    "noSpouseNoDescendants": [
+      "parents",
+      "sibling_branches",
+      "nearest_legal_kin",
+      "Crown_after_sufficient_inquiry"
+    ]
+  },
+  "heirs": {
+    "noSexPreference": true,
+    "legalAdoptedChildEqualsOrdinaryChild": true,
+    "legallyRecognizedChildOutsideMarriageEqualsOrdinaryChild": true,
+    "stepchildWithoutAdoptionAutomaticHeir": false,
+    "guardianAutomaticHeir": false,
+    "representationByBranches": true,
+    "conceivedUnbornMayReserveShareIfLaterBornAlive": true,
+    "simultaneousUncertainDeathCreatesReciprocalInheritance": false
+  },
+  "unworthiness": {
+    "judicialDeclarationRequired": true,
+    "grounds": [
+      "intentional_killing_or_attempt_against_decedent",
+      "serious_coercion_of_testament",
+      "testament_forgery_or_deliberate_destruction_for_gain",
+      "serious_fraud_to_exclude_heirs"
+    ],
+    "erasesKinship": false
+  },
+  "inheritanceRenunciation": {
+    "allowed": true,
+    "erasesKinship": false,
+    "representationByRenouncingHeirDescendantsMayApply": true
+  },
+  "businesses": {
+    "ownerDeathDeletesBusiness": false,
+    "privateOwnershipShareEntersEstate": true,
+    "continuityOptions": [
+      "heir_operation",
+      "estate_administration",
+      "competent_worker_management",
+      "reduced_operation",
+      "temporary_closure",
+      "transfer",
+      "liquidation"
+    ]
+  },
+  "rental": {
+    "transfersOwnership": false,
+    "forms": [
+      "oral",
+      "written",
+      "fixed_term",
+      "open_ended"
+    ],
+    "consideration": [
+      "coin",
+      "in_kind",
+      "defined_limited_work",
+      "mixed"
+    ],
+    "unpaidRentCreatesDebt": true,
+    "unpaidRentTransfersTenantPersonalGoodsAutomatically": false,
+    "privateViolentEvictionAllowed": false,
+    "contestedRecoveryRequiresKingsJustice": true,
+    "saleOfRentedPropertyAutomaticallyEndsValidLease": false,
+    "landlordDeathAutomaticallyEndsLease": false,
+    "tenantDeathInstantlyEvictsHousehold": false,
+    "abandonmentRequiresEvidence": true,
+    "sublettingRequiresPermissionOrAgreement": true
+  },
+  "repairs": {
+    "landlordDefault": [
+      "structure",
+      "roof",
+      "permanent_elements_required_for_agreed_use",
+      "preexisting_damage_not_caused_by_tenant"
+    ],
+    "tenantDefault": [
+      "ordinary_care",
+      "cleaning",
+      "agreed_minor_maintenance",
+      "damage_caused_by_deliberate_or_clearly_improper_use"
+    ]
+  },
+  "disputeEvidence": [
+    "documents",
+    "registries",
+    "receipts",
+    "witnesses",
+    "historic_possession",
+    "tax_records",
+    "contracts",
+    "testaments",
+    "family_records",
+    "correspondence",
+    "marks",
+    "inventories",
+    "conduct"
+  ],
+  "fiscalIntegration": {
+    "propertyOrTenureMayBeAssessmentBasis": true,
+    "transferDoesNotEraseAlreadyAccruedFiscalDebt": true,
+    "propertyLawCreatesNoNewTax": true
+  },
+  "coreIntegration": {
+    "OWN": "ownership_possession_custody",
+    "RES_MOVE": "residence_and_mobility",
+    "KIN": "kinship",
+    "BIZ": "business_persistence",
+    "MORT": "death",
+    "PREG": "pregnancy"
+  },
+  "guardrails": {
+    "doNotTurnPossessionIntoOwnership": true,
+    "doNotTurnResidenceIntoOwnership": true,
+    "doNotCreateUniversalMaritalPropertyCommunity": true,
+    "doNotGiveGuardianMinorProperty": true,
+    "doNotPutInstitutionalAssetsIntoPrivateEstate": true,
+    "doNotEraseDebtAtDeath": true,
+    "doNotCreateUnlimitedHeirDebtLiability": true,
+    "doNotExcludeAdoptedOrRecognizedOutsideMarriageChildrenFromOrdinaryInheritance": true,
+    "doNotApplyCivilInheritanceToAethrosCrownOrSpecialTitles": true,
+    "doNotDuplicateIndivisibleAssetsToSatisfyShares": true,
+    "doNotAllowAutomaticViolentEviction": true,
+    "doNotDeleteBusinessOnOwnerDeath": true,
+    "doNotCreateOwnershipFromLongOccupationAlone": true
+  },
+  "closureMarker": "PROPERTY_POINT_8_CLOSED_NORGARD_PROPERTY_INHERITANCE_RENTAL",
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json"
+}

@@ -64,16 +64,19 @@ La dependencia de mayoría/capacidad laboral queda cerrada:
 
 Punto 7 no reabre filiación, tutela ni adopción; utiliza la autoridad familiar definida aquí.
 
-### Punto 8
+### Punto 8 — resuelto
 
-Queda para propiedad/herencia/alquiler:
+La dependencia patrimonial queda cerrada:
 
 - bienes entre cónyuges;
-- propiedad conjunta;
+- copropiedad;
 - herencia de cónyuge, hijos y adoptados;
-- deudas;
-- tutela patrimonial;
-- transmisión de talleres, tierras y vivienda.
+- deudas del caudal;
+- administración patrimonial de menores;
+- transmisión de talleres, tierras y vivienda;
+- alquiler.
+
+Punto 8 no reabre matrimonio, filiación, tutela ni adopción; consume esas relaciones como datos jurídicos.
 
 ### Punto 11
 

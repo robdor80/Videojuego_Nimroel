@@ -106,7 +106,7 @@ No debe asignarse este estado automáticamente solo porque no haya NPC cerca.
 
 Dos o más partes reclaman derechos.
 
-La resolución legal futura queda fuera de este documento.
+La resolución jurídica viene del Punto 8 de Norgard; OWN07 sigue representando el estado material de disputa hasta que exista resolución.
 
 ---
 
@@ -123,7 +123,7 @@ La propiedad solo cambia mediante:
 - venta;
 - regalo;
 - transferencia autorizada;
-- resolución futura del sistema jurídico;
+- resolución conforme al derecho de propiedad de Norgard;
 - otro mecanismo canónico.
 
 ---
@@ -352,3 +352,20 @@ Los objetos persistentes relevantes mantienen:
 ## Regla final
 
 **En Treskal mover una cosa no significa poseerla; el mundo recuerda de quién era, quién la tenía y por qué.**
+
+
+---
+
+## Integración Punto 8
+
+El Punto 8 aporta la capa jurídica sobre OWN:
+
+- transferencia de inmuebles;
+- copropiedad;
+- propiedad matrimonial;
+- bienes de menores;
+- herencia;
+- alquiler;
+- disputas.
+
+OWN conserva la verdad material de propietario, poseedor, ubicación y custodia.

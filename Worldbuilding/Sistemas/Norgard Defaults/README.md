@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E11 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E12 ACTIVOS**
 
 ## Objetivo
 
@@ -39,7 +39,6 @@ No listos todavía:
 
 - sistema militar final;
 - derecho familiar, matrimonio, tutela y adopción;
-- propiedad, herencia y alquiler;
 - tradición sanitaria de reino;
 - gastronomía general del reino;
 - nombres personales y apellidos;
@@ -127,12 +126,12 @@ Contrato operativo:
 
 **Los candidatos históricos respaldados por canon suficiente han sido extraídos y la capa Casa Valrik ya existe.**
 
-Tras el cierre de los Puntos 5, 6 y 7, los grandes bloques de Norgard que permanecen pendientes son los que figuran en `blockedPendingCanon`: propiedad/herencia/alquiler, sanidad, gastronomía, nombres/apellidos, calendario y cultura material común.
+Tras el cierre de los Puntos 5, 6, 7 y 8, los grandes bloques de Norgard que permanecen pendientes son los que figuran en `blockedPendingCanon`: sanidad, gastronomía, nombres/apellidos, calendario y cultura material común.
 
 
 ## Validación de cierre
 
-E1–E11 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
+E1–E12 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
 
 Estado:
 
@@ -306,3 +305,37 @@ Canon:
 Regresión:
 
 `Validacion/regresion_e11_mayoria_capacidad_trabajo_aprendizaje_v0.1.md`
+
+
+### E12 — propiedad, herencia y alquiler
+
+Activo a nivel Reino — **Punto 8 cerrado**:
+
+- propiedad individual, compartida, doméstica, empresarial e institucional;
+- propietario/poseedor/custodio/ocupante separados;
+- propiedad privada de inmuebles;
+- jurisdicción territorial separada de título privado;
+- copropiedad;
+- régimen matrimonial sin comunidad universal automática;
+- bienes y administración patrimonial de menores;
+- patrimonio institucional de Corona y Grandes Casas separado del privado;
+- testamento ordinario y de emergencia;
+- cuotas protegidas de cónyuge y descendientes;
+- sucesión intestada;
+- adopción/filiación jurídica con igualdad en herencia civil ordinaria;
+- herencia por ramas;
+- alquiler y recuperación judicial del inmueble;
+- continuidad de negocios tras muerte del propietario;
+- conexión con fiscalidad y delitos patrimoniales.
+
+Contrato operativo:
+
+`Datos operativos/norgard_property_inheritance_rental_default_v0.1.json`
+
+Canon:
+
+`Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md`
+
+Regresión:
+
+`Validacion/regresion_e12_propiedad_herencia_alquiler_v0.1.md`

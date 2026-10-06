@@ -779,3 +779,20 @@ Punto 7 confirma:
 - imposibilidad de utilizar responsabilidad parental o tutela para imponer trabajo forzoso.
 
 Punto 6 conserva autoridad sobre quién es progenitor, tutor o adoptante; Punto 7 determina qué capacidad laboral y contractual posee cada persona.
+
+
+---
+
+## 39. Integración con Punto 8
+
+El canon de propiedad, herencia y alquiler se encuentra en:
+
+`propiedad_herencia_alquiler_v0.1.md`
+
+Punto 8 confirma que:
+
+- matrimonio no crea comunidad universal automática;
+- adopción crea plena condición de hijo a efectos de herencia civil ordinaria;
+- filiación jurídica reconocida fuera del matrimonio hereda igual en la esfera civil;
+- tutor administra bienes del menor sin convertirse en propietario;
+- sucesión Aethros y títulos especiales permanecen fuera de la herencia civil ordinaria.

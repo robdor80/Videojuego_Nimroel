@@ -65,7 +65,7 @@ La continuidad depende de:
 - herramientas;
 - stock;
 - clientela;
-- autorización/legalidad futura;
+- autorización y legalidad aplicable;
 - capacidad.
 
 ---
@@ -191,7 +191,7 @@ Puede producir:
 - cierre;
 - transición legal futura.
 
-La herencia exacta depende de la Ley de Norgard.
+La herencia exacta se rige por el Punto 8 de Norgard. La participación privada del fallecido entra en el caudal, pero el negocio, sus trabajadores, herramientas, stock y encargos no desaparecen.
 
 ---
 
@@ -351,3 +351,21 @@ deben reflejar el estado nuevo.
 ## Regla final
 
 **En Treskal los negocios tienen historia: pueden sobrevivir a su dueño, mudarse, decaer o cerrar, pero nada de eso borra mágicamente el mundo que dejan detrás.**
+
+
+---
+
+# 21. Integración con propiedad y herencia
+
+Punto 8 distingue el negocio de:
+
+- edificio;
+- propietario;
+- stock;
+- herramientas;
+- trabajadores;
+- reputación.
+
+La muerte del propietario puede activar BIZ08, administración hereditaria, continuidad, cierre temporal, transferencia o liquidación.
+
+Un heredero recibe únicamente la participación que realmente formaba parte del caudal.

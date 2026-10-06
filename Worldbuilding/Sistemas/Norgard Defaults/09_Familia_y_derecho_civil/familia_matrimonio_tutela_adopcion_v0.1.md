@@ -137,10 +137,10 @@ Punto 7 / E11 ya resuelve:
 - empleo juvenil;
 - relaciones laborales generales.
 
-Siguen pendientes:
+Punto 8 / E12 ya resuelve herencia, régimen patrimonial y alquiler.
 
-- herencia y régimen patrimonial;
-- alquiler;
+Sigue pendiente:
+
 - apellidos generales.
 
 ## Regla final

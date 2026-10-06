@@ -26,7 +26,8 @@
     "penalCode": "Datos operativos/norgard_penal_code_v0.1.json",
     "kingsJusticeProcedure": "Datos operativos/norgard_kings_justice_procedure_v0.1.json",
     "familyMarriageGuardianship": "Datos operativos/norgard_family_marriage_guardianship_default_v0.1.json",
-    "ageCapacityLaborApprenticeship": "Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json"
+    "ageCapacityLaborApprenticeship": "Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json",
+    "propertyInheritanceRental": "Datos operativos/norgard_property_inheritance_rental_default_v0.1.json"
   },
   "readyCandidates": {
     "funeralMourning": "extracted_active_validated",
@@ -41,13 +42,13 @@
     "currencyEconomicBalance": "authored_active_validated",
     "penalJustice": "authored_active_validated",
     "familyMarriageGuardianship": "authored_active_validated",
-    "ageCapacityLaborApprenticeship": "authored_active_validated"
+    "ageCapacityLaborApprenticeship": "authored_active_validated",
+    "propertyInheritanceRental": "authored_active_validated"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
   },
   "blockedPendingCanon": [
-    "property_inheritance_rental_law",
     "realm_healing_tradition",
     "realm_cuisine",
     "personal_naming_and_surname_rules",
@@ -123,6 +124,14 @@
       "regression": "Validacion/regresion_e11_mayoria_capacidad_trabajo_aprendizaje_v0.1.md",
       "validationPack": "Validacion/norgard_labor_age_capacity_validation_pack_v0.1.json",
       "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_7_MAYORIA_CAPACIDAD_TRABAJO_APRENDIZAJE_NORGARD_v0.1.md"
+    },
+    "E12": {
+      "status": "validated_static_regression_point_8_closed",
+      "default": "Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+      "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md",
+      "regression": "Validacion/regresion_e12_propiedad_herencia_alquiler_v0.1.md",
+      "validationPack": "Validacion/norgard_property_inheritance_rental_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_8_PROPIEDAD_HERENCIA_ALQUILER_NORGARD_v0.1.md"
     }
   },
   "downstreamDefaults": {
@@ -130,10 +139,11 @@
   },
   "validation": {
     "status": "validated_static_regression",
-    "regressionSpecifications": 11,
+    "regressionSpecifications": 12,
     "blockedPendingCanonIsIntentional": true,
     "monetaryValidationPack": "Validacion/norgard_monetary_validation_pack_v0.1.json",
     "familyLawValidationPack": "Validacion/norgard_family_law_validation_pack_v0.1.json",
-    "laborAgeCapacityValidationPack": "Validacion/norgard_labor_age_capacity_validation_pack_v0.1.json"
+    "laborAgeCapacityValidationPack": "Validacion/norgard_labor_age_capacity_validation_pack_v0.1.json",
+    "propertyInheritanceRentalValidationPack": "Validacion/norgard_property_inheritance_rental_validation_pack_v0.1.json"
   }
 }

@@ -88,11 +88,13 @@ Ya resuelto por canon superior:
 - fiscalidad/aduanas;
 - mayoría de edad, capacidad y reglas laborales.
 
-Pendiente de canon superior:
+Ya resuelto por Punto 8 de Norgard:
 
 - herencia;
 - alquiler;
-- derecho económico/patrimonial.
+- derecho de propiedad y régimen patrimonial.
+
+Pueden quedar futuros detalles comerciales específicos que no reabren la arquitectura patrimonial.
 
 ## Vida material
 
@@ -306,7 +308,7 @@ Sí significa:
 
 ---
 
-### Actualización posterior — Puntos 1–7 de Norgard
+### Actualización posterior — Puntos 1–8 de Norgard
 
 Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya han sido resueltas a nivel superior:
 
@@ -317,6 +319,7 @@ Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya 
 - sistema penal;
 - moneda/balance base;
 - matrimonio/filiación/tutela/adopción;
-- mayoría de edad/capacidad/trabajo/aprendizaje.
+- mayoría de edad/capacidad/trabajo/aprendizaje;
+- propiedad/herencia/alquiler.
 
 Esto confirma la decisión original de no crear una capa 100 local: Treskal hereda estos sistemas desde Norgard.

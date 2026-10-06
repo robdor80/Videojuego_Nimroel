@@ -13,5 +13,10 @@
     "worldStateMeaningPreserved": true,
     "saveMigrationRequired": false
   },
-  "note": "Treskal inherits Nimroel Core ownership and possession semantics without local exceptions."
+  "note": "Treskal inherits Nimroel Core ownership and possession semantics without local exceptions.",
+  "realmPropertyLaw": {
+    "status": "inherited_from_Norgard_point_8",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+    "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md"
+  }
 }

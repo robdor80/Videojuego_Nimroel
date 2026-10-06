@@ -240,7 +240,7 @@
     "specializedMarketFineCalendar": "Norgard_calendar_and_local_market_schedule_detail",
     "exactMetricGeometry": "future_Treskal_detailed_cartography",
     "portTaxesCustoms": "resolved_by_Norgard_E8_Valrik_V3_and_Treskal_fiscal_profiles",
-    "ownershipInheritanceRentalLaw": "Norgard_law_and_economic_institutions",
+    "ownershipInheritanceRentalLaw": "resolved_by_Norgard_point_8",
     "currencyAndExactPrices": "Norgard_monetary_and_economic_system",
     "royalNavyOrganization": "resolved_by_Norgard_E6_E7_navy_framework_and_operations",
     "navalTerminology": "resolved_functionally_for_2B_specialized_historical_lexicon_optional",
@@ -261,12 +261,12 @@
     "exactChildStageAgeThresholds": "future_Nimroel_character_lifecycle_system",
     "formalAgeOfMajorityAndWorkRules": "resolved_by_Norgard_labor_point_7",
     "exactAgingAndLongevityModel": "future_Nimroel_character_lifecycle_system",
-    "pensionRetirementInheritanceRules": "future_Norgard_law_and_economic_institutions",
+    "pensionRetirementInheritanceRules": "inheritance_resolved_point_8__pension_retirement_if_any_future",
     "canonicalPersonalValueVocabulary": "future_Nimroel_character_psychology_core",
     "exactPhysiologyAndHealthConsequences": "future_Nimroel_health_system",
     "exactClockAndCalendarScheduling": "future_Nimroel_time_system",
     "formalParentageGuardianshipAdoptionAndAffinity": "resolved_by_Norgard_family_point_6",
-    "inheritanceAndPropertyConsequences": "Norgard_law_and_economic_institutions",
+    "inheritanceAndPropertyConsequences": "resolved_by_Norgard_point_8",
     "conceptionAndAdditionalParentageRules": "future_Nimroel_character_lifecycle_system",
     "namingAndSurnameRules": "future_Norgard_family_and_naming_canon",
     "fishingEcologySpecies": "future_ecology_profile_species_names_not_required_for_2B"
@@ -813,5 +813,11 @@
     "legalMajorityAge": 18,
     "formalApprenticeshipMinimumAge": 12,
     "ordinaryYouthEmploymentMinimumAge": 15
+  },
+  "propertyInheritanceRentalIntegration": {
+    "status": "inherited_from_Norgard_point_8",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+    "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md",
+    "localNewLayerRequired": false
   }
 }

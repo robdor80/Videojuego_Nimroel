@@ -2458,3 +2458,25 @@ Documento canónico:
 `Gobierno y leyes/sistema_militar_norgard_v0.1.md`
 
 El documento `revision_militar_y_casas_menores.md` queda como historial de diseño.
+
+
+---
+
+## Propiedad, herencia y alquiler
+
+Norgard reconoce propiedad privada de bienes muebles e inmuebles y distingue propietario, poseedor, custodio y ocupante.
+
+Reglas generales:
+
+- jurisdicción territorial no equivale a propiedad privada;
+- el matrimonio no crea comunidad universal automática de bienes;
+- un menor puede ser propietario sin que tutor/progenitor adquiera sus bienes;
+- herencia civil ordinaria protege a cónyuge y descendientes;
+- adopción y filiación jurídica reconocida tienen igualdad hereditaria civil;
+- Corona y señoríos siguen reglas sucesorias especiales;
+- el alquiler concede uso, no propiedad;
+- el impago genera deuda y una disputa de desalojo se resuelve por Justicia del Rey.
+
+Canon:
+
+`Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md`

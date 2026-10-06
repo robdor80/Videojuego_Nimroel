@@ -43,7 +43,7 @@
   "npcOwnershipDistinctFromCarriedInventory": true,
   "bulkyObjectsRequirePhysicalHandling": true,
   "externalDependencies": {
-    "exactPropertyLaw": "realm_law_and_economic_institutions",
+    "exactPropertyLaw": "realm_property_inheritance_rental_law_required",
     "exactCarryCapacitySystem": "future_Nimroel_inventory_system"
   },
   "authorityScope": "nimroel_universal",

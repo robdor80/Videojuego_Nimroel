@@ -255,9 +255,9 @@ Un edificio puede contener:
 - varios hogares;
 - negocio + hogar;
 - taller + hogar;
-- habitaciones alquiladas o cedidas si el futuro sistema jurídico/económico lo define.
+- habitaciones alquiladas o cedidas.
 
-El contrato legal exacto de ocupación queda pendiente.
+El Punto 8 de Norgard define ya la ocupación jurídica mediante propiedad, alquiler, cesión y copropiedad.
 
 ---
 
@@ -268,15 +268,16 @@ World State puede registrar:
 - owner_ref;
 - occupant_refs.
 
-Pero no se define todavía:
+Punto 8 define ya:
 
 - herencia;
-- alquiler;
-- arrendamiento;
-- desahucio;
-- compraventa legal.
+- alquiler/arrendamiento;
+- recuperación judicial del inmueble;
+- compraventa y transferencia;
+- copropiedad;
+- bienes de menores.
 
-Esos mecanismos pertenecen a la futura Ley/economía institucional de Norgard.
+World State mantiene separados `owner_ref` y `occupant_refs`.
 
 ---
 

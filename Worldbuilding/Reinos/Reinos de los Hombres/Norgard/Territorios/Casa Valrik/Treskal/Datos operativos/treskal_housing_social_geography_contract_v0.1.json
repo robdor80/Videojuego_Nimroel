@@ -57,7 +57,7 @@
   "wealthEqualsNobility": false,
   "buildingMayContainMultipleHouseholds": true,
   "ownerAndOccupantMayDiffer": true,
-  "legalTenureMechanisms": "external_dependency",
+  "legalTenureMechanisms": "resolved_by_Norgard_point_8",
   "initialGenerationOrder": [
     "residential_buildings",
     "residential_units",
@@ -80,6 +80,11 @@
   ],
   "movesPersistInWorldState": true,
   "externalDependencies": {
-    "ownershipInheritanceRentalLaw": "Norgard_law_and_economic_institutions"
+    "ownershipInheritanceRentalLaw": "resolved_by_Norgard_point_8"
+  },
+  "realmPropertyLaw": {
+    "status": "inherited_from_Norgard_point_8",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+    "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md"
   }
 }

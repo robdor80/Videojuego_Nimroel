@@ -104,7 +104,7 @@ heredan estas reglas de Norgard.
 
 ## Dependencias posteriores
 
-Punto 8 resolverá:
+Punto 8 ya resuelve:
 
 - propiedad;
 - herencia;

@@ -17,13 +17,12 @@ Definir cómo puede cambiar la población residencial de Treskal durante una par
 - llegada de nuevos residentes;
 - salida de residentes.
 
-Sin fijar todavía:
+Este documento no sustituye los sistemas jurídicos superiores.
 
-- matrimonio legal;
-- herencia;
-- alquiler;
-- compraventa de vivienda;
-- empadronamiento formal.
+Punto 6 regula matrimonio.
+Punto 8 regula herencia, alquiler y compraventa de vivienda.
+
+Sigue sin fijar empadronamiento formal universal.
 
 ---
 
@@ -165,7 +164,7 @@ Ejemplo:
 
 Los objetos compartidos deben resolverse según propiedad/custodia.
 
-La regla jurídica exacta queda pendiente.
+La regla jurídica viene del Punto 8: los bienes individuales siguen a su propietario y los comunes/copropiedad se reparten por acuerdo, cuotas o resolución.
 
 ---
 
@@ -330,12 +329,9 @@ Puede:
 
 Pueden alterar hogares.
 
-Este documento no define:
+Este documento no define embarazo ni parto fisiológico.
 
-- embarazo;
-- parto fisiológico;
-- herencia;
-- tutela legal.
+Herencia y tutela legal se resuelven ya mediante los Puntos 8 y 6 respectivamente.
 
 Solo permite que el hogar cambie cuando esos sistemas lo determinen.
 
@@ -343,14 +339,9 @@ Solo permite que el hogar cambie cuando esos sistemas lo determinen.
 
 # 19. Separación social y jurídica
 
-La convivencia puede cambiar antes de que futuros sistemas legales definan:
+La convivencia puede cambiar antes o después de actos jurídicos.
 
-- matrimonio;
-- propiedad;
-- herencia;
-- obligaciones.
-
-No se inventan consecuencias legales aquí.
+Matrimonio, propiedad y herencia ya están definidos por Norgard. Este sistema RES/MOVE no los reescribe automáticamente.
 
 ---
 

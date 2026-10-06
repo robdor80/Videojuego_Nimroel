@@ -1,3 +1,8 @@
+> **ACTUALIZACIÓN 2026-10-06 — PUNTO 8 PROPIEDAD / HERENCIA / ALQUILER CANONIZADO**  
+> El bloqueo histórico de propiedad, herencia y alquiler queda resuelto mediante E12.  
+> Propiedad privada, copropiedad, patrimonio matrimonial, herencia, testamento, bienes de menores y arrendamiento pasan a ser default activo de todo Norgard.  
+> Los únicos grandes bloqueos restantes del manifest son sanidad, gastronomía, nombres/apellidos, calendario y cultura material.
+
 > **ACTUALIZACIÓN 2026-10-06 — PUNTO 7 MAYORÍA / CAPACIDAD / TRABAJO CANONIZADO**  
 > El bloqueo histórico de mayoría de edad y reglas laborales queda resuelto mediante E11.  
 > La mayoría civil permanece en 18 años; aprendizaje formal desde 12; empleo juvenil ordinario desde 15; servicio combatiente desde 18.  
@@ -6,7 +11,7 @@
 > **ACTUALIZACIÓN 2026-10-06 — PUNTO 6 FAMILIA / MATRIMONIO / TUTELA CANONIZADO**  
 > El bloqueo histórico de derecho familiar queda resuelto mediante E10.  
 > Matrimonio, filiación jurídica, responsabilidad parental, tutela y adopción pasan a ser default activo de todo Norgard.  
-> Herencia, régimen patrimonial y reglas laborales permanecen separados para sus puntos posteriores.
+> Herencia y régimen patrimonial quedan resueltos por Punto 8; las reglas laborales quedan resueltas por Punto 7.
 
 > **ACTUALIZACIÓN 2026-10-06 — PUNTO 5 MONETARIO CANONIZADO**  
 > La auditoría histórica inferior reflejaba correctamente el estado previo de E2. Ese bloqueo queda superado por el cierre del Punto 5.  
@@ -141,7 +146,9 @@ La mayoría civil, capacidad progresiva, aprendizaje, empleo juvenil, relaciones
 
 ### Propiedad, herencia y alquiler
 
-Los sistemas Core ya modelan propiedad material, pero las consecuencias jurídicas siguen pendientes del derecho de Norgard.
+**RESUELTO POR PUNTO 8 / E12.**
+
+Los sistemas Core mantienen OWN como verdad material; E12 aporta propiedad jurídica, transferencias, herencia, bienes de menores, régimen patrimonial y arrendamiento.
 
 ### Economía monetaria y balance base
 

@@ -212,8 +212,6 @@
     "doNotInventConsent": true
   },
   "deferred": [
-    "inheritance_and_marital_property",
-    "rental_law",
     "general_surname_rules"
   ],
   "closureMarker": "FAMILY_POINT_6_CLOSED_NORGARD_FAMILY_LAW",
@@ -224,5 +222,13 @@
     "legalMajorityAge": 18,
     "formalApprenticeshipMinimumAge": 12,
     "ordinaryYouthEmploymentMinimumAge": 15
+  },
+  "propertyInheritanceIntegration": {
+    "status": "resolved_by_point_8",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+    "adoptionOrdinaryInheritanceEqual": true,
+    "recognizedOutsideMarriageOrdinaryInheritanceEqual": true,
+    "guardianOwnsMinorAssets": false,
+    "universalMaritalPropertyCommunity": false
   }
 }

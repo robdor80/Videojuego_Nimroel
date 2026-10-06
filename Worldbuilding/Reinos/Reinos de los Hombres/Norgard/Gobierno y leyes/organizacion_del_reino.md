@@ -99,6 +99,8 @@ El derecho familiar común —matrimonio, filiación, responsabilidad parental, 
 
 La mayoría de edad, capacidad civil progresiva, trabajo, aprendizaje y edad mínima de servicio combatiente se desarrollan en `mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`.
 
+La propiedad, herencia, bienes de menores y arrendamiento se desarrollan en `propiedad_herencia_alquiler_v0.1.md`.
+
 ---
 
 ## 6. Administración económica

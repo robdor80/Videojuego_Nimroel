@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_property_inheritance_rental_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "cases": [
+    {
+      "id": "PROP08_01",
+      "given": {
+        "possessor": true,
+        "owner": false
+      },
+      "expect": {
+        "ownershipAcquired": false
+      }
+    },
+    {
+      "id": "PROP08_02",
+      "given": {
+        "occupantYears": 20,
+        "noTransfer": true
+      },
+      "expect": {
+        "ownershipAcquired": false
+      }
+    },
+    {
+      "id": "PROP08_03",
+      "given": {
+        "greatHouseJurisdiction": true,
+        "privateParcelTitle": false
+      },
+      "expect": {
+        "greatHouseOwnsParcel": false
+      }
+    },
+    {
+      "id": "PROP08_04",
+      "given": {
+        "married": true,
+        "assetOwnedBeforeMarriage": true
+      },
+      "expect": {
+        "automaticJointOwnership": false
+      }
+    },
+    {
+      "id": "PROP08_05",
+      "given": {
+        "jointPurchase": true,
+        "sharesUnspecified": true
+      },
+      "expect": {
+        "equalSharesPresumed": true
+      }
+    },
+    {
+      "id": "PROP08_06",
+      "given": {
+        "minorAge": 10,
+        "inheritsHouse": true
+      },
+      "expect": {
+        "minorOwns": true,
+        "guardianOwns": false
+      }
+    },
+    {
+      "id": "PROP08_07",
+      "given": {
+        "minorImmovableSale": true,
+        "kingsJusticeAuthorization": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PROP08_08",
+      "given": {
+        "immovableSale": true,
+        "witnesses": 1
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PROP08_09",
+      "given": {
+        "businessOwnerDies": true
+      },
+      "expect": {
+        "businessDeleted": false
+      }
+    },
+    {
+      "id": "PROP08_10",
+      "given": {
+        "CrownInstitutionalAsset": true,
+        "monarchDies": true
+      },
+      "expect": {
+        "privateEstate": false
+      }
+    },
+    {
+      "id": "PROP08_11",
+      "given": {
+        "GreatHouseInstitutionalAsset": true,
+        "lordDies": true
+      },
+      "expect": {
+        "privateEstate": false
+      }
+    },
+    {
+      "id": "PROP08_12",
+      "given": {
+        "estateDebt": 1000,
+        "estateAssets": 400
+      },
+      "expect": {
+        "heirPersonalAutomaticDebt": 0,
+        "estateMayPayUpToAssets": true
+      }
+    },
+    {
+      "id": "PROP08_13",
+      "given": {
+        "testatorAge": 17
+      },
+      "expect": {
+        "ordinaryTestamentCapacity": false
+      }
+    },
+    {
+      "id": "PROP08_14",
+      "given": {
+        "testatorAge": 18,
+        "witnesses": 2,
+        "freeWill": true
+      },
+      "expect": {
+        "ordinaryTestamentCapacity": true
+      }
+    },
+    {
+      "id": "PROP08_15",
+      "given": {
+        "emergencyDeathRisk": true,
+        "witnesses": 3,
+        "clearDeclaration": true
+      },
+      "expect": {
+        "emergencyTestamentPossible": true
+      }
+    },
+    {
+      "id": "PROP08_16",
+      "given": {
+        "spouse": true,
+        "descendants": true,
+        "intestate": true
+      },
+      "expect": {
+        "spouseFraction": 0.3333333333333333,
+        "descendantsFraction": 0.6666666666666666
+      }
+    },
+    {
+      "id": "PROP08_17",
+      "given": {
+        "spouse": false,
+        "descendants": true,
+        "intestate": true
+      },
+      "expect": {
+        "descendantsFraction": 1
+      }
+    },
+    {
+      "id": "PROP08_18",
+      "given": {
+        "testament": true,
+        "spouse": true,
+        "descendants": true
+      },
+      "expect": {
+        "descendantsMinimum": 0.5,
+        "spouseMinimum": 0.25,
+        "freeMaximum": 0.25
+      }
+    },
+    {
+      "id": "PROP08_19",
+      "given": {
+        "adoptedChild": true,
+        "ordinaryCivilEstate": true
+      },
+      "expect": {
+        "ordinaryChildStatus": true
+      }
+    },
+    {
+      "id": "PROP08_20",
+      "given": {
+        "recognizedChildOutsideMarriage": true,
+        "ordinaryCivilEstate": true
+      },
+      "expect": {
+        "ordinaryChildStatus": true
+      }
+    },
+    {
+      "id": "PROP08_21",
+      "given": {
+        "stepchild": true,
+        "adopted": false
+      },
+      "expect": {
+        "automaticDescendantHeir": false
+      }
+    },
+    {
+      "id": "PROP08_22",
+      "given": {
+        "guardian": true,
+        "noKinNoWill": true
+      },
+      "expect": {
+        "automaticHeir": false
+      }
+    },
+    {
+      "id": "PROP08_23",
+      "given": {
+        "aethrosAdoptedChild": true
+      },
+      "expect": {
+        "ordinaryCivilInheritancePossible": true,
+        "aethrosBloodSuccessionCreated": false
+      }
+    },
+    {
+      "id": "PROP08_24",
+      "given": {
+        "conceivedAtDeath": true,
+        "laterBornAlive": true
+      },
+      "expect": {
+        "inheritanceSharePossible": true
+      }
+    },
+    {
+      "id": "PROP08_25",
+      "given": {
+        "simultaneousDeathOrderUnknown": true
+      },
+      "expect": {
+        "reciprocalInheritance": false
+      }
+    },
+    {
+      "id": "PROP08_26",
+      "given": {
+        "indivisibleHouse": true,
+        "heirs": 3
+      },
+      "expect": {
+        "houseDuplicated": false
+      }
+    },
+    {
+      "id": "PROP08_27",
+      "given": {
+        "rental": true
+      },
+      "expect": {
+        "tenantBecomesOwner": false
+      }
+    },
+    {
+      "id": "PROP08_28",
+      "given": {
+        "oralLease": true,
+        "proofSufficient": true
+      },
+      "expect": {
+        "automaticallyInvalid": false
+      }
+    },
+    {
+      "id": "PROP08_29",
+      "given": {
+        "rentUnpaid": true
+      },
+      "expect": {
+        "debt": true,
+        "tenantGoodsAutomaticallyOwnedByLandlord": false
+      }
+    },
+    {
+      "id": "PROP08_30",
+      "given": {
+        "leaseDispute": true,
+        "landlordUsesPrivateViolence": true
+      },
+      "expect": {
+        "lawfulAutomaticEviction": false
+      }
+    },
+    {
+      "id": "PROP08_31",
+      "given": {
+        "rentedPropertySold": true,
+        "leaseKnownAndValid": true
+      },
+      "expect": {
+        "leaseAutomaticallyEnds": false
+      }
+    },
+    {
+      "id": "PROP08_32",
+      "given": {
+        "landlordDies": true,
+        "leaseActive": true
+      },
+      "expect": {
+        "leaseAutomaticallyEnds": false
+      }
+    },
+    {
+      "id": "PROP08_33",
+      "given": {
+        "tenantDies": true,
+        "householdPresent": true
+      },
+      "expect": {
+        "instantEviction": false
+      }
+    },
+    {
+      "id": "PROP08_34",
+      "given": {
+        "tenantTemporarilyAbsent": true
+      },
+      "expect": {
+        "abandonedAutomatically": false
+      }
+    },
+    {
+      "id": "PROP08_35",
+      "given": {
+        "stolenGoodSoldToGoodFaithBuyer": true
+      },
+      "expect": {
+        "originalOwnerClaimPersists": true
+      }
+    },
+    {
+      "id": "PROP08_36",
+      "given": {
+        "foundValuableObject": true,
+        "noSearchForOwner": true
+      },
+      "expect": {
+        "finderOwnershipAutomatic": false
+      }
+    },
+    {
+      "id": "PROP08_37",
+      "given": {
+        "propertyTransferred": true,
+        "priorFiscalDebt": true
+      },
+      "expect": {
+        "priorDebtErased": false
+      }
+    },
+    {
+      "id": "PROP08_38",
+      "given": {
+        "separatedButStillMarried": true,
+        "intestateDeath": true
+      },
+      "expect": {
+        "spouseStatusPersists": true
+      }
+    },
+    {
+      "id": "PROP08_39",
+      "given": {
+        "marriageDissolved": true,
+        "intestateDeath": true
+      },
+      "expect": {
+        "exSpouseAutomaticIntestateRight": false
+      }
+    },
+    {
+      "id": "PROP08_40",
+      "given": {
+        "minorInheritedBusinessShare": true
+      },
+      "expect": {
+        "guardianOwnsShare": false,
+        "businessMayContinue": true
+      }
+    }
+  ],
+  "marker": "PROPERTY_POINT_8_CLOSED_NORGARD_PROPERTY_INHERITANCE_RENTAL"
+}

@@ -259,13 +259,15 @@
     "doNotInventUniversalEightHourDay": true
   },
   "deferred": [
-    "minor_property_title_and_guardianship_of_assets",
-    "inheritance",
-    "marital_property",
-    "rental_law",
     "general_names_and_surnames",
     "exact_clock_schedule"
   ],
   "closureMarker": "LABOR_POINT_7_CLOSED_NORGARD_AGE_CAPACITY_WORK_APPRENTICESHIP",
-  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json"
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
+  "propertyInheritanceIntegration": {
+    "status": "resolved_by_point_8",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+    "minorsMayOwnProperty": true,
+    "majorMinorAssetTransferRequiresKingsJusticeAuthorization": true
+  }
 }

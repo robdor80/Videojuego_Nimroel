@@ -105,6 +105,21 @@ En condiciones normales esta confirmación no es discrecional.
 
 Si existe una disputa sucesoria, conflicto entre herederos o una situación excepcional, la Corona puede intervenir y resolver la sucesión.
 
+
+## 4B. Bienes de Casa y patrimonio privado
+
+El Punto 8 de Norgard distingue entre:
+
+- bienes de la Gran Casa como institución;
+- bienes vinculados expresamente al señorío;
+- patrimonio privado de la persona que ostenta el título.
+
+La muerte de un Lord o Lady no convierte automáticamente los bienes institucionales de la Casa en herencia privada.
+
+El señorío y sus bienes institucionales siguen la sucesión propia de la Gran Casa.
+
+Los bienes privados del fallecido sí se rigen por la herencia civil ordinaria de Norgard.
+
 ---
 
 # 5. Casa Aethros
