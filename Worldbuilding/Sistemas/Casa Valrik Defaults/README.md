@@ -59,3 +59,10 @@ Contrato:
 Centro territorial de consolidación en Treskal: **S02**.
 
 No crea impuestos Valrik independientes ni aduanas en sus límites internos.
+
+
+## V4 — administración de la Justicia del Rey
+
+Valrik hereda íntegramente E9 de Norgard: no crea delitos ni penas propios. Treskal/S03 es sede judicial territorial superior y recibe causas graves remitidas desde Villas. La justicia ordinaria funciona sin que Lord Valrik presida cada causa; toda pena capital en territorio Valrik requiere su confirmación personal.
+
+Contrato: `Datos operativos/casa_valrik_kings_justice_default_v0.1.json`
