@@ -1,3 +1,7 @@
+> **ACTUALIZACIÓN 2026-10-06 — E8 FISCAL/ADUANERO CANONIZADO**  
+> La auditoría histórica inferior reflejaba correctamente que la fiscalidad aún no estaba definida. Ese bloqueo queda superado por E8.  
+> Permanecen pendientes del sistema económico completo la moneda funcional, precios y cifras de balance; la arquitectura fiscal y aduanera ya está cerrada.
+
 # Auditoría de preparación — Norgard Defaults v0.1
 
 ## Estado

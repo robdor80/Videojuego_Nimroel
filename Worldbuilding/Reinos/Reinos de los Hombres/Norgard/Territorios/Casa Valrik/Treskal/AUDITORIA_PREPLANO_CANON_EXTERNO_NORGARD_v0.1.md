@@ -1,3 +1,8 @@
+> **ACTUALIZACIÓN 2026-10-06 — FISCALIDAD Y ADUANAS RESUELTAS**  
+> El Punto 3 ha quedado cerrado mediante Norgard E8, Casa Valrik V3 y los contratos fiscales de Treskal.  
+> S02 consolida la administración fiscal territorial y T07 integra el control aduanero exterior sin Casa de Aduanas singular.  
+> No existen aduanas entre las Grandes Casas de Norgard. Los importes numéricos quedan para moneda/balance y no afectan a la huella urbana.
+
 > **ACTUALIZACIÓN 2026-10-06 — DEPENDENCIAS MILITAR Y NAVAL RESUELTAS**  
 > La sección 3 de esta auditoría registraba correctamente el estado previo del canon, pero ha quedado superada por el cierre posterior del sistema militar.  
 > Norgard ya posee marco militar canónico, Casa Valrik posee perfil militar propio y Treskal incorpora T12/S11/S12.  
@@ -106,23 +111,26 @@ El plano debe reservar dentro de T08:
 
 No se crea un arsenal de pólvora porque la Armada canónica carece de pólvora, cañones y armas de fuego.
 
-## 5. Puerto, fiscalidad y aduanas — NO BLOQUEANTE
+## 5. Puerto, fiscalidad y aduanas — RESUELTO
 
-La fiscalidad portuaria sigue pendiente de Norgard.
+El marco fiscal E8 de Norgard y V3 de Casa Valrik está cerrado.
 
-El plano sí debe contener:
+El plano debe contener:
 
-- oficinas/espacios de control portuario genéricos en T07;
+- control portuario/aduanero integrado en T07;
 - conexión administrativa con S02;
-- circulación de mercancías y registro.
+- circulación y registro real de mercancías;
+- capacidad de inspección selectiva;
+- espacio para espera o retención de carga cuando exista causa.
 
-Pero no existe base para fijar hoy:
+No se requiere:
 
 - Casa de Aduanas independiente;
 - gran recinto fiscal;
-- controles universales de acceso a ciudad.
+- puertas aduaneras entre territorios de Grandes Casas;
+- controles universales de acceso a la ciudad.
 
-Si el futuro canon fiscal necesita una oficina especializada, podrá ocupar la capacidad ya prevista salvo que explícitamente exija un complejo mayor.
+S02 consolida obligaciones, cobros, entregas en especie, remesas y auditorías.
 
 ## 6. Administración Valrik — SUFICIENTE
 
@@ -177,7 +185,6 @@ Treskal puede pasar al plano métrico sin esperar a cerrar todo el canon de Norg
 
 ### Dependencias que NO bloquean el plano
 
-- fiscalidad/aduanas exactas;
 - sistema penal de larga duración;
 - detalle material común de Norgard.
 

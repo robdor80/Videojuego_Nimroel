@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "0.9",
+  "version": "1.0",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -718,6 +718,14 @@
         ],
         "houseValrikCommand": false,
         "saveMigrationRequired": false
+      },
+      "fiscalCustoms": {
+        "realmDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+        "houseDefault": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_fiscal_administration_default_v0.1.json",
+        "localProfile": "Datos operativos/treskal_fiscal_customs_profile_v0.1.json",
+        "portFlow": "Datos operativos/treskal_port_customs_flow_contract_v0.1.json",
+        "standaloneCustomsHouseRequired": false,
+        "saveMigrationRequired": false
       }
     },
     "status": "active",
@@ -738,6 +746,12 @@
         "houseDefault": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_military_structure_default_v0.1.json",
         "localContract": "Datos operativos/treskal_valrik_military_presence_contract_v0.1.json",
         "saveMigrationRequired": false
+      },
+      "fiscalAdministration": {
+        "houseDefault": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_fiscal_administration_default_v0.1.json",
+        "localProfile": "Datos operativos/treskal_fiscal_customs_profile_v0.1.json",
+        "centralFacility": "S02",
+        "saveMigrationRequired": false
       }
     },
     "status": "active",
@@ -746,15 +760,15 @@
     }
   },
   "prePlanExternalCanon": {
-    "status": "complete_for_metric_plan_military_and_royal_naval_validated",
+    "status": "complete_for_metric_plan_military_royal_naval_and_fiscal_validated",
     "authorInputRequiredNow": false,
     "blockingResolved": [
       "royal_reception_and_accommodation",
       "military_and_guard_framework",
-      "royal_naval_framework_and_T08_principal_base"
+      "royal_naval_framework_and_T08_principal_base",
+      "fiscal_customs_framework"
     ],
     "nonBlockingPending": {
-      "portTaxesCustoms": "use_existing_generic_port_control_and_S02_fiscal_capacity_until_defined",
       "longTermPenalSystem": "S04_temporary_custody_only_no_prison_complex",
       "detailedSharedMaterialCulture": "local_Treskal_visual_and_building_rules_are_sufficient_for_metric_plan"
     }
