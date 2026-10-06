@@ -13,9 +13,11 @@ Este documento define el funcionamiento cotidiano.
 No fija todavía:
 
 - calendario de mercados especializados;
-- tasas;
-- licencias;
-- reglamento escrito.
+- importes numéricos de tasas;
+- licencias específicas;
+- reglamento escrito detallado.
+
+El marco fiscal E8 sí establece que una tasa de mercado debe corresponder al uso autorizado de espacio o servicio y que **no existe un impuesto universal sobre cada venta**.
 
 ---
 
@@ -349,3 +351,19 @@ Hasta que se defina calendario:
 ## Regla final
 
 **El mercado de Treskal está vivo porque cada mañana llegan personas y mercancías reales; los puestos son la superficie visible de cadenas económicas persistentes.**
+
+
+# 21. Integración fiscal
+
+Un puesto puede generar una obligación por:
+
+- uso de espacio regulado;
+- almacenamiento;
+- pesaje/medición oficial cuando exista;
+- otro servicio público autorizado.
+
+La tasa no crea mercancía ni sustituye el precio privado del producto.
+
+El cobro produce TXN/OBL/LED según proceda.
+
+Un comerciante procedente de otra Gran Casa de Norgard no paga aduana interior por ese origen.

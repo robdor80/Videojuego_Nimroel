@@ -620,3 +620,16 @@ La simulación marítima local queda cerrada mediante:
 - `AUDITORIA_CIERRE_SISTEMA_MARITIMO_2B_TRESKAL_v0.1.md`.
 
 T07 funciona como puerto civil/pesquero y T08 como recinto naval de la Corona. La flotilla pesquera es procedural en su materialización inicial, pero cada embarcación creada pasa a ser persistente.
+
+
+## Punto 3 — Fiscalidad y Aduanas
+
+Cerrado mediante:
+
+- `Datos operativos/treskal_fiscal_customs_profile_v0.1.json`;
+- `Datos operativos/treskal_port_customs_flow_contract_v0.1.json`;
+- `Datos operativos/treskal_fiscal_customs_integration_test_pack_v0.1.json`;
+- `34_Fiscalidad_aduanas/fiscalidad_aduanas_recaudacion_treskal_v0.1.md`;
+- `AUDITORIA_CIERRE_FISCAL_ADUANERO_TRESKAL_v0.1.md`.
+
+S02 centraliza la fiscalidad Valrik y T07 integra el control aduanero exterior sin crear una Casa de Aduanas singular.

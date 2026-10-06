@@ -234,15 +234,17 @@ Antes de partir pueden resolverse:
 - suministros;
 - reparaciones;
 - tripulación;
-- documentación o trámites cuando el futuro sistema comercial lo defina.
+- documentación;
+- obligaciones portuarias o aduaneras abiertas.
 
-No se fija todavía:
+El sistema fiscal vigente distingue:
 
-- tasa portuaria;
-- aduana;
-- impuesto concreto.
+- **carga interna de Norgard**: sin aduana por origen, aunque puede pagar servicios portuarios;
+- **carga que cruza frontera fiscal exterior**: circuito aduanero cuando corresponda;
+- **pesca local/interna**: no es importación, aunque puede pagar servicios de desembarco/lonja;
+- **operación oficial de la Corona/T08**: fuera de la potestad tributaria Valrik.
 
-Esos elementos dependen del sistema fiscal/legal de Norgard.
+El control se integra en T07 y no exige una Casa de Aduanas singular independiente.
 
 ---
 

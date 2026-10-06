@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "0.4",
+  "version": "0.5",
   "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
@@ -121,7 +121,10 @@
         "archives",
         "tribute_management",
         "royal_reception",
-        "royal_guest_accommodation"
+        "royal_guest_accommodation",
+        "fiscal_administration",
+        "Crown_remittance_accounting",
+        "territorial_ledger"
       ],
       "near": [
         "T03",
@@ -153,7 +156,10 @@
         "civil_cargo",
         "civil_transport",
         "repair",
-        "limited_complementary_civil_shipbuilding"
+        "limited_complementary_civil_shipbuilding",
+        "port_control",
+        "customs_clearance_when_external",
+        "port_service_dues"
       ],
       "adjacentPreferred": [
         "T01",
@@ -586,6 +592,29 @@
       "urbanGuardOrdinaryControlInside": false,
       "territorialArmyCommandInside": false,
       "realmDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_royal_navy_default_v0.1.json"
+    },
+    "fiscalAdministration": {
+      "realmAuthority": "Crown_of_Norgard",
+      "territorialAdministrator": "Casa_Valrik",
+      "centralFacility": "S02",
+      "functions": [
+        "assessment_records",
+        "collection_records",
+        "in_kind_records",
+        "debt_and_corrections",
+        "territorial_ledger",
+        "Crown_remittance",
+        "audit_support"
+      ],
+      "independentTaxLaw": false
+    },
+    "civilPortCustoms": {
+      "sector": "T07",
+      "integratedControlOffice": true,
+      "standaloneCustomsHouse": false,
+      "externalCustomsOnly": true,
+      "internalNorgardCustoms": false,
+      "CrownNavalComplexExcluded": "T08"
     }
   },
   "buildingFabric": {
@@ -662,7 +691,12 @@
       "id": "territorial_administration_center",
       "sector": "T05",
       "required": true,
-      "mayShareComplexWith": "S01"
+      "mayShareComplexWith": "S01",
+      "role": [
+        "territorial_administration",
+        "fiscal_ledger",
+        "collection_and_remittance"
+      ]
     },
     "S03": {
       "id": "territorial_judicial_seat",

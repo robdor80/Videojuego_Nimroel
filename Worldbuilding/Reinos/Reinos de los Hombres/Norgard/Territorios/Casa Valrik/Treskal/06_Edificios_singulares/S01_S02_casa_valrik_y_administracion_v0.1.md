@@ -246,3 +246,23 @@ El plano métrico de S01 deberá prever suficiente superficie y circulación par
 - separación respecto al acceso administrativo cotidiano de S02.
 
 La resolución exacta de habitaciones y alas sigue abierta hasta el diseño arquitectónico detallado.
+
+
+# 13. Función fiscal de S02
+
+S02 es el centro de consolidación fiscal de Casa Valrik.
+
+Debe poder alojar:
+
+- escribanos fiscales;
+- libros de obligaciones y cobros;
+- archivo de recibos;
+- registro de entregas en especie;
+- correcciones y disputas administrativas;
+- consolidación de cuentas de Villas, Pueblos, Aldeas y delegados;
+- preparación de la remesa estipulada a la Corona;
+- documentación para auditoría de Casa o Corona.
+
+S02 no necesita almacenar físicamente grandes cantidades de madera, cereal u otros bienes cobrados en especie. Puede registrar su entrega a almacenes, patios o instituciones autorizadas.
+
+No se crea un edificio singular adicional de Tesoro o Hacienda salvo canon futuro.

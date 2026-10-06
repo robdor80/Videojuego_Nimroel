@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_fiscal_customs_profile",
+  "version": "0.1",
+  "status": "active_local_profile",
+  "cityId": "treskal",
+  "inherits": [
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_fiscal_administration_default_v0.1.json"
+  ],
+  "authority": {
+    "centralTerritorialOffice": "S02",
+    "portControlSector": "T07",
+    "royalNavalSector": "T08",
+    "T08TaxAuthority": "Crown_of_Norgard_House_Aethros",
+    "ValrikTaxAuthorityInsideT08": false
+  },
+  "localRevenueFlows": [
+    {
+      "id": "territorial_assessment",
+      "administration": "S02",
+      "payment": [
+        "currency_when_defined",
+        "in_kind_when_authorized"
+      ],
+      "everyRetailSale": false
+    },
+    {
+      "id": "market_service_fee",
+      "locations": [
+        "S06",
+        "S07",
+        "S10",
+        "other_authorized_market_spaces"
+      ],
+      "basis": "actual_space_or_service_use"
+    },
+    {
+      "id": "port_service_due",
+      "locations": [
+        "T07",
+        "T01_where_service_applies"
+      ],
+      "basis": "actual_port_or_river_service_use"
+    },
+    {
+      "id": "external_customs",
+      "locations": [
+        "T07_or_authorized_control_point"
+      ],
+      "basis": "external_fiscal_frontier_goods"
+    },
+    {
+      "id": "Crown_remittance",
+      "origin": "S02_territorial_accounts",
+      "destination": "Crown_of_Norgard",
+      "basis": "stipulated_share"
+    }
+  ],
+  "exemptionsAndBoundaries": {
+    "GreatHouseInternalBoundaryCustoms": false,
+    "DorthHallheimArleonTreihordCargoCustomsByOriginAlone": false,
+    "localFishingCatchExternalCustoms": false,
+    "CrownOfficialCargoTerritorialTax": false,
+    "privateSupplierToCrownFreeByDefault": false
+  },
+  "S02Functions": [
+    "assessment_register",
+    "obligation_ledger",
+    "collection_record",
+    "in_kind_delivery_record",
+    "receipt_archive",
+    "debt_and_dispute_record",
+    "correction",
+    "local_office_reconciliation",
+    "Crown_remittance",
+    "audit_response"
+  ],
+  "inKindHandling": {
+    "S02NeedNotPhysicallyStoreBulkGoods": true,
+    "bulkGoodsMayGoToAuthorizedWarehouseYardOrInstitution": true,
+    "ledgerMustReferencePhysicalDestination": true,
+    "noPaperOnlyResourceCreation": true
+  },
+  "marketRules": {
+    "feeRequiresAuthorizedSpaceOrService": true,
+    "noUniversalSalesTax": true,
+    "sellerAbsenceDoesNotEraseOutstandingObligation": true,
+    "feePaymentDoesNotCreateStock": true
+  },
+  "corruptionHooks": [
+    "under_recorded_collection",
+    "false_receipt",
+    "missing_remittance",
+    "favored_undervaluation",
+    "concealed_cargo",
+    "collusion"
+  ],
+  "detectionRequiresEvidence": true,
+  "exactRates": "future_currency_and_balance_schedule",
+  "saveMigrationRequired": false
+}

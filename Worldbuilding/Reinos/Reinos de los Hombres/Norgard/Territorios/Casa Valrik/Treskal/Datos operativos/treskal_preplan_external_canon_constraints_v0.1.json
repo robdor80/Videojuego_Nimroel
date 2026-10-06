@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "0.3",
+  "version": "0.4",
   "status": "active_preplan_constraint_set",
   "purpose": "Freeze only Norgard-level facts that materially affect Treskal metric planning, while keeping unresolved canon nonblocking and non-invented.",
-  "planReadiness": "ready_for_metric_city_plan_military_and_royal_naval_resolved",
+  "planReadiness": "ready_for_metric_city_plan_military_royal_naval_and_fiscal_resolved",
   "authorInputRequiredNow": false,
   "resolvedSpatialConstraints": {
     "royalProtocol": {
@@ -78,13 +78,27 @@
       "houseValrikCommand": false,
       "urbanGuardOrdinaryControlInside": false,
       "sharesRoyalNavalComplexWith": "S08"
+    },
+    "fiscalAdministration": {
+      "sector": "T05",
+      "facility": "S02",
+      "functions": [
+        "territorial_fiscal_ledger",
+        "collection",
+        "records",
+        "Crown_remittance"
+      ],
+      "separateTreasuryBuilding": false
+    },
+    "portCustoms": {
+      "sector": "T07",
+      "integratedControlOfficeCapacity": true,
+      "standaloneCustomsHouse": false,
+      "externalCustomsOnly": true,
+      "internalNorgardCustoms": false
     }
   },
   "nonBlockingPendingCanon": {
-    "portTaxesCustoms": {
-      "currentAction": "use_generic_T07_control_and_S02_fiscal_capacity",
-      "revisitOnlyIf": "future_canon_requires_distinct_customs_facility"
-    },
     "longTermPenalSystem": {
       "currentAction": "S04_temporary_custody_only",
       "revisitOnlyIf": "future_canon_requires_long_term_prison_in_Treskal"
@@ -96,7 +110,8 @@
     "long_term_prison_complex",
     "mint",
     "city_wall",
-    "second_independent_naval_complex_in_Treskal_without_new_canon"
+    "second_independent_naval_complex_in_Treskal_without_new_canon",
+    "customs_gate_between_Great_House_territories"
   ],
   "genericExpansionReserve": {
     "canonicalFacility": false,

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_civil_port_and_storage_contract",
-  "version": "0.3",
+  "version": "0.4",
   "status": "active_design_contract",
   "civilSystems": {
     "river": {
@@ -113,11 +113,14 @@
   },
   "inherits": [
     "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_vessel_navigation_simulation_contract_v0.1.json",
-    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json"
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_fiscal_administration_default_v0.1.json"
   ],
   "localProfiles": [
     "Datos operativos/treskal_fishing_fleet_profile_v0.1.json",
-    "Datos operativos/treskal_maritime_simulation_profile_v0.1.json"
+    "Datos operativos/treskal_maritime_simulation_profile_v0.1.json",
+    "Datos operativos/treskal_port_customs_flow_contract_v0.1.json"
   ],
   "fishingOperations": {
     "homeSector": "T07",
@@ -132,5 +135,14 @@
     "T08Restricted": true,
     "civilTrafficOrdinaryEntry": false,
     "navalAuthority": "Crown_of_Norgard_House_Aethros"
+  },
+  "fiscalCustoms": {
+    "integratedControlInT07": true,
+    "standaloneCustomsHouse": false,
+    "internalNorgardCargoCustomsDuty": false,
+    "externalFiscalFrontierCargoUsesCustomsFlow": true,
+    "portServicesMayCreateFees": true,
+    "localFishingNotExternalImport": true,
+    "CrownOfficialT08OperationsOutsideValrikTaxAuthority": true
   }
 }

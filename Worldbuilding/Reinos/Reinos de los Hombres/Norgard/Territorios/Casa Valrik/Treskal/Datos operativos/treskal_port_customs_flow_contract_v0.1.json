@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_port_customs_flow_contract",
+  "version": "0.1",
+  "status": "active_local_contract",
+  "cityId": "treskal",
+  "sector": "T07",
+  "stableIdNamespaces": {
+    "CUS": "customs_clearance_case"
+  },
+  "arrivalFlow": [
+    "arrival_or_approach_record",
+    "cargo_manifest_or_declaration_when_relevant",
+    "classify_fiscal_origin_and_status",
+    "assign_berth_or_wait",
+    "assess_port_services",
+    "if_external_customs_applicable_create_CUS_case",
+    "valuation_and_inspection_if_required",
+    "create_or_update_OBL",
+    "settle_or_authorize_deferred_disputed_or_exempt_status",
+    "release_cargo_for_unloading_or_hold_affected_cargo",
+    "record_TXN_LED_and_receipt",
+    "close_or_keep_case_open"
+  ],
+  "CUSFields": [
+    "cus_id",
+    "vessel_ref",
+    "manifest_ref",
+    "responsible_party_ref",
+    "origin_fiscal_status",
+    "destination",
+    "cargo_groups",
+    "declared_value_or_quantity",
+    "assessed_value_or_quantity",
+    "exemption_ref",
+    "inspection_state",
+    "obligation_refs",
+    "release_state",
+    "discrepancies",
+    "evidence_refs",
+    "officer_refs",
+    "timestamps"
+  ],
+  "fiscalOriginClasses": [
+    "internal_Norgard",
+    "external_fiscal_territory",
+    "Crown_official",
+    "status_requires_specific_rule"
+  ],
+  "releaseStates": [
+    "released",
+    "partially_released",
+    "held_pending_control",
+    "authorized_deferred_settlement",
+    "disputed_pending_decision",
+    "seized_only_with_legal_authority"
+  ],
+  "inspectionTriggers": [
+    "ordinary_selection",
+    "manifest_discrepancy",
+    "risk_information",
+    "visible_inconsistency",
+    "report_or_intelligence",
+    "previous_unresolved_case"
+  ],
+  "inspectionRules": {
+    "everyCargoOpened": false,
+    "physicalInspectionConsumesTimeLaborAndSpace": true,
+    "hiddenCargoNotDetectedAutomatically": true,
+    "inspectionFindingsCreateEvidence": true
+  },
+  "localFishingFastPath": {
+    "appliesTo": "Treskal_or_internal_Norgard_fishing_return_without_external_fiscal_crossing",
+    "customsDuty": false,
+    "stillMayUse": [
+      "landing_service",
+      "S07_market_service",
+      "storage_service"
+    ],
+    "perishabilityPriority": true
+  },
+  "internalNorgardFastPath": {
+    "customsDuty": false,
+    "manifestOrCargoRecordMayStillBeRequiredForPortOperation": true,
+    "portServiceDuesPossible": true
+  },
+  "crownT08Boundary": {
+    "ordinaryT08NavalTrafficDoesNotUseValrikCustoms": true,
+    "T07UsedForCommercialServiceCanCreateServiceTransaction": true,
+    "authorityRemainsCrown": true
+  },
+  "smuggling": {
+    "possibleMethods": [
+      "undeclared_cargo",
+      "false_origin",
+      "false_quantity",
+      "concealment",
+      "forged_receipt_or_exemption",
+      "uncontrolled_landing"
+    ],
+    "detection": [
+      "inspection",
+      "witness",
+      "informant",
+      "ledger_discrepancy",
+      "cargo_mismatch",
+      "patrol_or_guard_observation"
+    ],
+    "routesTo": "King_Justice",
+    "exactPenalty": "point_4"
+  },
+  "offscreenResolution": {
+    "allowed": true,
+    "importantCasesPersist": true,
+    "randomDetectionWithoutCauseForbidden": true,
+    "heldCargoRemainsPhysicallyHeld": true
+  }
+}

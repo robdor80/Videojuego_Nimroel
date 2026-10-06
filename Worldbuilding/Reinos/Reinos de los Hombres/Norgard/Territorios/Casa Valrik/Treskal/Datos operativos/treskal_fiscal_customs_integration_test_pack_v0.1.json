@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_fiscal_customs_integration_test_pack",
+  "version": "0.1",
+  "status": "static_fixture_pack",
+  "canonicalWorldEvents": false,
+  "scenarios": [
+    {
+      "id": "FIS01",
+      "name": "Valrik_farmer_regular_assessment",
+      "assert": [
+        "OBL_created",
+        "coin_or_authorized_in_kind",
+        "S02_record",
+        "no_per_sale_tax"
+      ]
+    },
+    {
+      "id": "FIS02",
+      "name": "Dorth_merchant_arrives_T07",
+      "assert": [
+        "internal_Norgard",
+        "no_customs_duty",
+        "port_service_due_possible",
+        "cargo_record_real"
+      ]
+    },
+    {
+      "id": "FIS03",
+      "name": "external_merchant_arrives_T07",
+      "assert": [
+        "CUS_case",
+        "customs_assessment",
+        "inspection_not_automatic_for_every_crate",
+        "release_state_recorded"
+      ]
+    },
+    {
+      "id": "FIS04",
+      "name": "Treskal_fishing_return",
+      "assert": [
+        "no_external_customs",
+        "landing_or_market_service_possible",
+        "catch_remains_real_stock"
+      ]
+    },
+    {
+      "id": "FIS05",
+      "name": "Crown_naval_supply_enters_T08",
+      "assert": [
+        "no_Valrik_tax",
+        "Crown_authority",
+        "private_supplier_payment_not_erased"
+      ]
+    },
+    {
+      "id": "FIS06",
+      "name": "market_stall_fee",
+      "assert": [
+        "fee_for_space_or_service",
+        "no_sales_tax",
+        "TXN_does_not_create_goods"
+      ]
+    },
+    {
+      "id": "FIS07",
+      "name": "partial_payment",
+      "assert": [
+        "OBL_partially_settled",
+        "remaining_persists",
+        "receipt_records_actual_payment"
+      ]
+    },
+    {
+      "id": "FIS08",
+      "name": "in_kind_delivery",
+      "assert": [
+        "physical_goods_move",
+        "ledger_references_destination",
+        "no_paper_resource_creation"
+      ]
+    },
+    {
+      "id": "FIS09",
+      "name": "false_manifest_not_detected",
+      "assert": [
+        "fraud_can_temporarily_succeed",
+        "official_knowledge_not_omniscient",
+        "later_audit_can_reopen_case"
+      ]
+    },
+    {
+      "id": "FIS10",
+      "name": "inspection_finds_hidden_cargo",
+      "assert": [
+        "evidence_created",
+        "fiscal_case_updates",
+        "penalty_deferred_to_point_4"
+      ]
+    },
+    {
+      "id": "FIS11",
+      "name": "minor_house_delegated_collection",
+      "assert": [
+        "cannot_set_rate",
+        "must_record_and_remit",
+        "audit_possible"
+      ]
+    },
+    {
+      "id": "FIS12",
+      "name": "Crown_remittance",
+      "assert": [
+        "stipulated_share_obligation",
+        "real_transfer",
+        "House_ledger_and_Crown_record_can_be_audited"
+      ]
+    },
+    {
+      "id": "FIS13",
+      "name": "extraordinary_royal_levy",
+      "assert": [
+        "explicit_Crown_order_required",
+        "temporary",
+        "purpose_recorded"
+      ]
+    },
+    {
+      "id": "FIS14",
+      "name": "attempted_internal_customs_gate",
+      "assert": [
+        "forbidden",
+        "Great_House_boundary_not_fiscal_frontier"
+      ]
+    }
+  ]
+}
