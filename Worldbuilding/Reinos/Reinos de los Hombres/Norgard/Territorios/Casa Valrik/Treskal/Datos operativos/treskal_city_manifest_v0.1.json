@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "1.2",
+  "version": "1.3",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -107,7 +107,8 @@
     "timeCalendar": "Datos operativos/treskal_time_calendar_contract_v0.1.json",
     "materialCulture": "Datos operativos/treskal_material_culture_contract_v0.1.json",
     "preplanConstraints": "Datos operativos/treskal_preplan_external_canon_constraints_v0.1.json",
-    "metricScaleFootprint": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json"
+    "metricScaleFootprint": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
+    "metricGeography": "Datos operativos/treskal_metric_geography_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -234,10 +235,6 @@
   },
   "unresolvedStructuralItems": [
     "metric_city_plan",
-    "exact_river_geometry",
-    "exact_coastline_and_elevation",
-    "exact_main_bridge_geometry",
-    "possible_minor_crossings_if_functionally_required",
     "T01_T12_metric_geometry",
     "S01_S13_exact_sites_and_footprints",
     "street_level_geometry",
@@ -249,7 +246,7 @@
     "longTermPenalSystem": "Norgard_law_and_penal_system",
     "royalShipyardInternalChainOfCommand": "resolved_authority_Crown_exact_specialized_titles_not_required",
     "specializedMarketFineCalendar": "Norgard_calendar_and_local_market_schedule_detail",
-    "exactMetricGeometry": "future_Treskal_detailed_cartography",
+    "exactMetricGeometry": "point_3_natural_geography_resolved_remaining_sector_site_road_waterfront_and_parcel_geometry",
     "portTaxesCustoms": "resolved_by_Norgard_E8_Valrik_V3_and_Treskal_fiscal_profiles",
     "ownershipInheritanceRentalLaw": "resolved_by_Norgard_point_8",
     "currencyAndExactPrices": "Norgard_monetary_and_economic_system",
@@ -298,7 +295,8 @@
     "maritimeIntegrationTestPack": "Datos operativos/treskal_maritime_integration_test_pack_v0.1.json",
     "maritime2BClosure": "AUDITORIA_CIERRE_SISTEMA_MARITIMO_2B_TRESKAL_v0.1.md",
     "fiscalCustomsIntegrationTestPack": "Datos operativos/treskal_fiscal_customs_integration_test_pack_v0.1.json",
-    "fiscalCustomsClosure": "AUDITORIA_CIERRE_FISCAL_ADUANERO_TRESKAL_v0.1.md"
+    "fiscalCustomsClosure": "AUDITORIA_CIERRE_FISCAL_ADUANERO_TRESKAL_v0.1.md",
+    "metricPlanPoint3": "Validacion/treskal_metric_plan_point_3_validation_pack_v0.1.json"
   },
   "coreInheritance": {
     "status": "complete_high_confidence_migration_validated",
@@ -935,8 +933,8 @@
   "metricPlan": {
     "status": "active",
     "roadmap": "PLAN_METRICO_TRESKAL_ROADMAP_v0.1.md",
-    "currentPoint": 3,
-    "currentPointName": "metric_geography",
+    "currentPoint": 4,
+    "currentPointName": "sector_fit_T01_T12",
     "point1": {
       "status": "closed_static_validated",
       "audit": "AUDITORIA_FINAL_PREPLANO_METRICO_TRESKAL_v0.1.md",
@@ -955,6 +953,21 @@
       "designReferenceResidents": 15000,
       "functionalUrbanLandTargetHa": 185,
       "planningEnvelopeTargetHa": 250,
+      "authorDecisionRequiredBeforeNextPoint": false
+    },
+    "point3": {
+      "status": "closed_static_validated",
+      "source": "08_Cartografia/geografia_metrica_treskal_v0.1.md",
+      "contract": "Datos operativos/treskal_metric_geography_contract_v0.1.json",
+      "validation": "Validacion/treskal_metric_plan_point_3_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PLANO_METRICO_TRESKAL_PUNTO_3_GEOGRAFIA_METRICA_v0.1.md",
+      "localMetricReference": "TRESKAL_LOCAL_METRIC_V1",
+      "riverLengthWithinControlM": 1424,
+      "bridgeChainageM": 820,
+      "T01RiverFrontageM": 380,
+      "T07CoastFrontageM": 540,
+      "T08CoastFrontageM": 940,
+      "validationCaseCount": 88,
       "authorDecisionRequiredBeforeNextPoint": false
     }
   }
