@@ -53,7 +53,7 @@ Resultado:
 
 ## Punto 3 — Geografía métrica
 
-Estado: **SIGUIENTE / ACTIVO**
+Estado: **CERRADO**
 
 Debe fijar:
 
@@ -70,6 +70,8 @@ Debe fijar:
 ---
 
 ## Punto 4 — Encaje T01–T12
+
+Estado: **SIGUIENTE / ACTIVO**
 
 Debe traducir los sectores funcionales a:
 
