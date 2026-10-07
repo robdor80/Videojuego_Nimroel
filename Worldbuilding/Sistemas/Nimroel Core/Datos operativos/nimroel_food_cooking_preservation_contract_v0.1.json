@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_food_cooking_preservation_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "stableIdNamespace": {
+    "FOOD": "food_lot_state"
+  },
+  "foodStates": {
+    "FOOD01": "raw_or_unprepared",
+    "FOOD02": "prepared_ready",
+    "FOOD03": "preserved",
+    "FOOD04": "aging_or_declining",
+    "FOOD05": "spoiled_or_unsafe",
+    "FOOD06": "discarded_or_waste"
+  },
+  "foodLotFields": [
+    "food_lot_id",
+    "ingredient_or_product_ref",
+    "origin_ref",
+    "producer_or_supplier_ref",
+    "owner_ref",
+    "location_ref",
+    "aggregate_quantity",
+    "FOOD_state",
+    "preparation_method_if_any",
+    "preservation_method_if_any",
+    "prepared_at_if_any",
+    "preserved_at_if_any",
+    "storage_context",
+    "quality_band",
+    "contamination_refs_if_any",
+    "intended_use_if_any",
+    "reservation_or_contract_ref_if_any",
+    "last_update_time"
+  ],
+  "preparationMethods": [
+    "raw_service_when_safe_and_canonical",
+    "boiling",
+    "simmering",
+    "stewing",
+    "roasting",
+    "grilling",
+    "frying",
+    "baking",
+    "toasting",
+    "mashing",
+    "grinding",
+    "mixing",
+    "thickening",
+    "stuffing",
+    "simple_sauce_or_gravy",
+    "broth_or_stock",
+    "brewing_or_fermenting_when_cultural"
+  ],
+  "preservationMethods": [
+    "drying",
+    "salting",
+    "brining",
+    "smoking",
+    "fermentation",
+    "pickling",
+    "cool_storage",
+    "cellar_storage",
+    "fat_or_grease_sealing_when_culturally_supported"
+  ],
+  "preparationRequires": {
+    "existingIngredients": true,
+    "quantity": true,
+    "compatibleToolsOrVessel": true,
+    "fuelWhenMethodRequiresHeat": true,
+    "time": true,
+    "knowledgeOrSkill": true,
+    "compatibleWorkspace": true
+  },
+  "preservationRequires": {
+    "material": true,
+    "time": true,
+    "containerOrInstallationWhenRelevant": true,
+    "knowledge": true,
+    "compatibleConditions": true
+  },
+  "spoilageDrivers": [
+    "food_type",
+    "preparation",
+    "preservation",
+    "temperature",
+    "humidity",
+    "exposure",
+    "container",
+    "storage",
+    "physical_damage",
+    "time"
+  ],
+  "noUniversalExpiryTime": true,
+  "preservationDoesNotMakeFoodPermanent": true,
+  "foodSafety": {
+    "contaminationPossibleWithoutVisibleSpoilage": true,
+    "visibleSpoilagePossible": true,
+    "consumptionMayCreateHealthCondition": true,
+    "illnessNotAutomaticFromAgeAlone": true,
+    "cookingMayReduceSomeRisks": true,
+    "cookingDoesNotResetSpoiledLot": true,
+    "healthContract": "nimroel_health_injury_illness_recovery_contract_v0.1.json"
+  },
+  "recipeContractFields": [
+    "recipe_id",
+    "culture_or_region_scope",
+    "required_categories",
+    "optional_categories",
+    "permitted_substitutions",
+    "preparation_methods",
+    "required_tools_or_installation",
+    "fuel_required",
+    "approximate_effort",
+    "preservation_result_if_any",
+    "serving_contexts",
+    "output_food_tags"
+  ],
+  "recipeCreatesIngredients": false,
+  "substitutionRequiresExistingStock": true,
+  "substitutionMustBeCulturallyPlausible": true,
+  "mealContexts": [
+    "domestic",
+    "workday",
+    "travel",
+    "camp",
+    "tavern_or_inn",
+    "market_or_street",
+    "military",
+    "maritime",
+    "hospitality",
+    "ceremonial_or_feast",
+    "scarcity_or_emergency"
+  ],
+  "universalThreeMealsPerDay": false,
+  "needIntegration": {
+    "NEED01RequiresRealConsumption": true,
+    "routineMayAggregateIfStable": true,
+    "detailedWhenScarceOrGameplayRelevant": true
+  },
+  "wasteIntegration": {
+    "preparationMayCreateWaste": true,
+    "leftoversMayBeReusedWhenValid": true,
+    "unrecoverableWasteUsesWASTE": true
+  },
+  "economicIntegration": {
+    "OWNRemainsAuthoritative": true,
+    "TXNRemainsAuthoritative": true,
+    "reservedStockNotFreelyAvailable": true,
+    "recipeDoesNotSetPrice": true
+  },
+  "seasonalIntegration": {
+    "affects": [
+      "production",
+      "arrival",
+      "freshness",
+      "spoilage_rate",
+      "price",
+      "availability",
+      "preservation_pressure"
+    ]
+  },
+  "travelRules": {
+    "favorsPortableStablePortionableFood": true,
+    "rationsNeverSpawnAutomatically": true
+  },
+  "institutionalRules": {
+    "rationsConsumeStock": true,
+    "rationsNeedTransport": true,
+    "rationsCanSpoil": true,
+    "rationsCanRunOut": true
+  },
+  "lod": {
+    "routineConsumptionMayAggregate": true,
+    "routineCookingMayAggregate": true,
+    "routineSpoilageMayAggregate": true,
+    "relevantLotsAndScarcityMustPersist": true
+  },
+  "aiAuthority": {
+    "mayDescribeExistingFood": true,
+    "mayChooseAuthorizedAvailableOption": true,
+    "mayExpressPreference": true,
+    "maySuggestPlausibleSubstitution": true,
+    "mayInventIngredient": false,
+    "mayMaterializeMeal": false,
+    "mayIgnoreFuel": false,
+    "mayIgnoreSpoilage": false,
+    "mayCreateCulturalCanonRecipe": false
+  },
+  "externalDependencies": {
+    "cultureSpecificCuisine": "realm_or_people_default",
+    "exactIngredientCatalog": "culture_and_ecology_canon",
+    "exactSpeciesOrPlantSources": "flora_fauna_or_material_canon"
+  }
+}

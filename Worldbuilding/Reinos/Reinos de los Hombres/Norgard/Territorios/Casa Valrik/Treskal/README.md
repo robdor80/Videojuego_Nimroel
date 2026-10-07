@@ -721,3 +721,25 @@ Su capa local mantiene:
 - integración con puerto, talleres y Astilleros.
 
 La flora medicinal concreta sigue pendiente de canon y no se inventa.
+
+
+### Gastronomía heredada — Punto 10 de Norgard
+
+Treskal hereda:
+
+- Core FOOD;
+- ingredientes básicos de Norgard;
+- técnicas y conservación;
+- catálogo de 40 preparaciones;
+- reglas de comida doméstica, viaje, taberna, mercado, Ejército y Armada.
+
+Su expresión local prioriza de forma natural:
+
+- pescado marítimo;
+- pescado fluvial;
+- pescado ahumado/salado/en salmuera;
+- guisos y pasteles de pescado;
+- cerveza Valrik;
+- vino llegado por comercio.
+
+No existe recetario local separado obligatorio.

@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E13 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E14 ACTIVOS**
 
 ## Objetivo
 
@@ -39,7 +39,6 @@ No listos todavía:
 
 - sistema militar final;
 - derecho familiar, matrimonio, tutela y adopción;
-- gastronomía general del reino;
 - nombres personales y apellidos;
 - calendario oficial detallado;
 - cultura material común suficientemente cerrada.
@@ -125,12 +124,12 @@ Contrato operativo:
 
 **Los candidatos históricos respaldados por canon suficiente han sido extraídos y la capa Casa Valrik ya existe.**
 
-Tras el cierre de los Puntos 5–9, los grandes bloques de Norgard que permanecen pendientes son los que figuran en `blockedPendingCanon`: gastronomía, nombres/apellidos, calendario y cultura material común.
+Tras el cierre de los Puntos 5–10, los grandes bloques de Norgard que permanecen pendientes son los que figuran en `blockedPendingCanon`: nombres/apellidos, calendario y cultura material común.
 
 
 ## Validación de cierre
 
-E1–E13 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
+E1–E14 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
 
 Estado:
 
@@ -398,3 +397,34 @@ Canon:
 Regresión:
 
 `Validacion/regresion_e13_salud_curanderia_norgard_v0.1.md`
+
+
+### E14 — gastronomía y alimentación
+
+Activo a nivel Reino — **Punto 10 cerrado**:
+
+- Core FOOD para stock, preparación, conservación y deterioro;
+- catálogo básico de ingredientes humanos de Norgard;
+- 40 preparaciones canónicas iniciales;
+- panificación, ollas, sopas, guisos, asados, masas y conservación;
+- cerveza común y cerveza Valrik;
+- Edranor como principal región vinícola;
+- Galdren como granero y gran zona ganadera;
+- Valrik con fuerte sesgo pesquero;
+- Darovan con puertos/comercio y alimentación de trabajo/transporte;
+- Hallheim como cocina de confluencia del Reino;
+- comida doméstica, trabajo, viaje, taberna, mercado, ejército, Armada, hospitalidad y banquete;
+- diferencias sociales por cantidad/calidad/variedad, no por prohibición rígida de ingredientes;
+- integración con NEED, FOOD, WASTE, HLTH, TXN y stock.
+
+Default:
+
+`Datos operativos/norgard_cuisine_foodways_default_v0.1.json`
+
+Catálogo:
+
+`Datos operativos/norgard_cuisine_recipe_catalog_v0.1.json`
+
+Regresión:
+
+`Validacion/regresion_e14_gastronomia_norgard_v0.1.md`

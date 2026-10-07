@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_cuisine_foodways_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "Norgard_human_cuisine",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/gastronomia_alimentacion_norgard_v0.1.md",
+  "coreFoodContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
+  "recipeCatalog": "Datos operativos/norgard_cuisine_recipe_catalog_v0.1.json",
+  "research": "Worldbuilding/Sistemas/Norgard Defaults/Investigacion/Gastronomia/patrones_gastronomicos_referencia_v0.1.md",
+  "stapleIngredients": {
+    "grains": [
+      "wheat",
+      "barley",
+      "oats",
+      "rye"
+    ],
+    "legumes": [
+      "peas",
+      "broad_beans",
+      "lentils"
+    ],
+    "gardenAndRoots": [
+      "onion",
+      "leek",
+      "cabbage",
+      "turnip",
+      "carrot",
+      "beet"
+    ],
+    "fruits": [
+      "apple",
+      "pear",
+      "plum",
+      "grape",
+      "edible_wild_berries_category"
+    ],
+    "animalProducts": [
+      "beef",
+      "mutton_or_lamb",
+      "pork",
+      "domestic_poultry_category",
+      "eggs",
+      "milk",
+      "butter",
+      "fresh_cheese",
+      "aged_cheese"
+    ],
+    "aquatic": [
+      "sea_fish_category",
+      "river_fish_category",
+      "coastal_shellfish_category_when_resource_exists"
+    ],
+    "other": [
+      "honey",
+      "salt",
+      "vinegar",
+      "rendered_animal_fat",
+      "local_culinary_herbs_category"
+    ]
+  },
+  "explicitlyNotCommonDefaults": [
+    "potato",
+    "refined_sugar",
+    "unnamed_exotic_spices",
+    "uncanonized_tropical_fruit",
+    "specific_plant_oils_without_canon",
+    "fantasy_ingredients_without_canon"
+  ],
+  "beverages": {
+    "water": "ordinary_normal_beverage",
+    "beer": "common_across_Norgard_with_Valrik_existing_ordinary_style",
+    "wine": "major_known_production_region_Edranor",
+    "milk": "freshness_and_safety_dependent",
+    "culinaryInfusions": "require_canonical_plants"
+  },
+  "fats": [
+    "butter",
+    "rendered_animal_fat"
+  ],
+  "sweeteners": [
+    "honey",
+    "fresh_fruit",
+    "cooked_fruit",
+    "dried_fruit_when_available"
+  ],
+  "commonTechniques": [
+    "boiling",
+    "simmering",
+    "stewing",
+    "roasting",
+    "grilling",
+    "frying",
+    "baking",
+    "toasting",
+    "grinding",
+    "mashing",
+    "thickening",
+    "broth_or_stock",
+    "stuffing",
+    "savory_pie",
+    "simple_sauce",
+    "brewing",
+    "fermentation"
+  ],
+  "preservation": [
+    "drying",
+    "salting",
+    "brining",
+    "smoking",
+    "pickling",
+    "fermentation",
+    "cool_storage",
+    "cellar_storage"
+  ],
+  "breadModel": {
+    "singleUniversalBread": false,
+    "grains": [
+      "wheat",
+      "rye",
+      "barley",
+      "oats",
+      "mixtures"
+    ],
+    "forms": [
+      "loaf",
+      "dense_loaf",
+      "cake",
+      "flat_bread",
+      "hard_travel_bread"
+    ],
+    "qualityDependsOn": [
+      "grain",
+      "milling",
+      "fermentation",
+      "oven",
+      "flour_quality",
+      "world_state"
+    ]
+  },
+  "mealRhythm": {
+    "universalThreeMeals": false,
+    "exactClockTimesDeferredToCalendarTimeSystem": true,
+    "possiblePatterns": [
+      "one_main_plus_light_meal",
+      "multiple_small_intakes",
+      "work_meal",
+      "late_meal_after_work",
+      "household_specific_pattern"
+    ]
+  },
+  "ordinaryHouseholdCompositionMayInclude": [
+    "bread_or_grain",
+    "pottage_soup_or_stew",
+    "legume",
+    "garden_or_root",
+    "cheese",
+    "egg",
+    "fish_or_meat_when_available",
+    "water",
+    "beer",
+    "wine_when_available"
+  ],
+  "socialInequalityExpression": [
+    "frequency",
+    "quantity",
+    "quality",
+    "variety",
+    "freshness",
+    "cuts",
+    "imports",
+    "spices",
+    "complexity",
+    "number_of_courses",
+    "service"
+  ],
+  "classLockedIngredients": false,
+  "hospitality": {
+    "foodOrDrinkMaySignalWelcome": true,
+    "universalSacredBreadAndSaltPact": false,
+    "ValrikStrongHospitalityRemainsSocialNotSupernatural": true
+  },
+  "tavernInnModel": {
+    "modernLargeFixedMenu": false,
+    "ordinaryOfferMayInclude": [
+      "pot_of_the_day",
+      "bread",
+      "cheese",
+      "egg",
+      "available_meat_or_fish",
+      "one_or_more_baked_preparations",
+      "beer",
+      "wine",
+      "seasonal_product"
+    ],
+    "higherTierDiffersBy": [
+      "variety",
+      "ingredient_quality",
+      "imports",
+      "service",
+      "multiple_courses"
+    ]
+  },
+  "travelModel": [
+    "hard_bread_or_grain_cake",
+    "aged_cheese",
+    "preserved_fish_or_meat",
+    "dry_grain_or_legume_for_pot",
+    "dried_fruit_when_available",
+    "carried_drink"
+  ],
+  "militaryModel": [
+    "grain",
+    "collective_pot",
+    "legume",
+    "preserved_meat_or_fish",
+    "bread",
+    "cheese",
+    "fresh_supplies_when_logistically_available"
+  ],
+  "navalModel": [
+    "travel_bread",
+    "grain",
+    "dry_legumes",
+    "preserved_fish_or_meat",
+    "aged_cheese",
+    "water",
+    "beer_or_wine_when_available",
+    "early_voyage_fresh_food"
+  ],
+  "nobleFeastModel": {
+    "realStockRequired": true,
+    "distinctionBy": [
+      "number_of_courses",
+      "quality",
+      "freshness",
+      "selected_cuts",
+      "variety",
+      "regional_products",
+      "imports",
+      "wine",
+      "sweets",
+      "presentation",
+      "service"
+    ],
+    "commonFamilies": [
+      "roasts",
+      "poultry",
+      "savory_pies",
+      "soups",
+      "stews",
+      "fish",
+      "cheese",
+      "fruit",
+      "sweets"
+    ]
+  },
+  "regionalProfiles": {
+    "Aethros_Hallheim": {
+      "basis": [
+        "river_route",
+        "political_capital",
+        "realm_trade_confluence"
+      ],
+      "cuisineBias": [
+        "mixed_realm_products",
+        "river_food",
+        "courtly_multi_region_feasts"
+      ],
+      "exclusiveIngredients": []
+    },
+    "Darovan": {
+      "basis": [
+        "western_ports",
+        "trade",
+        "mining",
+        "monetary_wealth"
+      ],
+      "cuisineBias": [
+        "portable_worker_food",
+        "preserved_food",
+        "port_fish",
+        "merchant_cold_tables",
+        "import_access_for_wealthy"
+      ],
+      "exclusiveIngredients": []
+    },
+    "Edranor": {
+      "basis": [
+        "principal_known_wine_region"
+      ],
+      "cuisineBias": [
+        "wine_at_table",
+        "wine_cookery",
+        "vinegar",
+        "grapes_fresh_or_dried"
+      ],
+      "exclusiveIngredients": []
+    },
+    "Galdren": {
+      "basis": [
+        "realm_granary",
+        "major_agriculture",
+        "major_livestock"
+      ],
+      "cuisineBias": [
+        "bread",
+        "porridge",
+        "legume_pottage",
+        "dairy",
+        "meat",
+        "savory_pies",
+        "preserved_meat"
+      ],
+      "exclusiveIngredients": []
+    },
+    "Valrik": {
+      "basis": [
+        "sea_and_river_fishing",
+        "beer",
+        "maritime_trade",
+        "wood_fuel"
+      ],
+      "cuisineBias": [
+        "fresh_fish",
+        "smoked_fish",
+        "salted_fish",
+        "brined_fish",
+        "fish_stew",
+        "fish_pie",
+        "beer"
+      ],
+      "exclusiveIngredients": []
+    },
+    "Syvaris_Taramin": {
+      "basis": [
+        "warmer_and_drier_subregions",
+        "maritime_trade"
+      ],
+      "cuisineBias": [
+        "drying_and_preservation",
+        "fish",
+        "future_ecology_validated_products"
+      ],
+      "exactNewFloraDeferred": true
+    }
+  },
+  "scarcityRules": {
+    "noIngredientSpawnToMaintainMenu": true,
+    "effectsMayInclude": [
+      "price_pressure",
+      "reduced_variety",
+      "greater_preserved_food_use",
+      "plausible_substitution",
+      "repeated_meals",
+      "quality_decline",
+      "recipe_unavailability"
+    ],
+    "localCropFailureDoesNotAutomaticallyCauseRealmFamine": true
+  },
+  "economicAnchorsClavos": {
+    "basicBread": 1,
+    "smallOrdinaryDrink": 1,
+    "simplePreparedMeal": 2,
+    "abundantTavernMeal": 4,
+    "basicDailyFoodPerPerson": 5
+  },
+  "personalityMemoryIntegration": {
+    "preferencesUse": "PREF",
+    "memoriesUse": "MEM",
+    "emotionalAssociationsUse": "EMO",
+    "cultureDoesNotForcePreference": true
+  },
+  "healthIntegration": {
+    "unsafeFoodMayCreateHCOND": true,
+    "spoiledFoodDoesNotGuaranteeIllness": true,
+    "waterAndSanitationMatter": true,
+    "healthContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_health_injury_illness_recovery_contract_v0.1.json"
+  },
+  "aiAuthority": {
+    "maySelectFromAvailableCanonicalFood": true,
+    "mayDescribePreparation": true,
+    "mayExpressPreference": true,
+    "mayInventIngredient": false,
+    "mayInventRegionalDishAsCanon": false,
+    "mayMaterializeFood": false,
+    "mayIgnoreSeasonOrStock": false
+  },
+  "researchGuardrail": {
+    "referenceWorksProvidePatternsOnly": true,
+    "copiedNamedDishesForbidden": true,
+    "copiedReligiousHospitalityRitualForbidden": true,
+    "copiedFantasyIngredientsForbidden": true
+  },
+  "closureMarker": "CUISINE_POINT_10_CLOSED_NORGARD_CUISINE"
+}

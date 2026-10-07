@@ -1,3 +1,8 @@
+> **ACTUALIZACIÓN 2026-10-07 — PUNTO 10 GASTRONOMÍA / ALIMENTACIÓN CANONIZADO**  
+> El bloqueo histórico de cocina general queda resuelto mediante E14 y el nuevo contrato Core FOOD.  
+> Norgard dispone ya de ingredientes básicos, técnicas, conservación, cocina regional, 40 preparaciones canónicas y reglas de comida doméstica/comercial/institucional.  
+> Permanecen pendientes nombres/apellidos, calendario y cultura material común.
+
 > **ACTUALIZACIÓN 2026-10-07 — PUNTO 9 SANIDAD / CURANDERÍA CANONIZADO**  
 > El bloqueo histórico de tradición sanitaria queda resuelto mediante E13 y un nuevo contrato Core de salud.  
 > Accidentes, necesidades, saneamiento, embarazo/parto y la red de curanderas ya consumen una misma fisiología causal.  

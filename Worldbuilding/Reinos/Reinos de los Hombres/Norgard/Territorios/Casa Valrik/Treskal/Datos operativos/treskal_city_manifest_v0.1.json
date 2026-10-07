@@ -212,7 +212,8 @@
     "HLTH": "overall_health_state",
     "HCOND": "health_condition_type",
     "HTRT": "health_treatment_state",
-    "OUTB": "outbreak_state"
+    "OUTB": "outbreak_state",
+    "FOOD": "food_lot_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -251,7 +252,7 @@
     "exactHealingMechanics": "resolved_by_nimroel_health_system",
     "medicinalFlora": "future_canonical_medicinal_flora",
     "exactSkillProgression": "future_Nimroel_character_progression_system",
-    "canonicalCuisineAndRecipes": "future_Norgard_cuisine",
+    "canonicalCuisineAndRecipes": "resolved_by_Norgard_point_10",
     "exactTimeSchedule": "future_Nimroel_time_system",
     "animalSpeciesBreedsStats": "future_Nimroel_animal_canon",
     "exactVehicleModels": "future_Nimroel_transport_canon",
@@ -686,6 +687,14 @@
         "localContract": "Datos operativos/treskal_health_care_network_contract_v0.1.json",
         "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_health_healing_tradition_default_v0.1.json",
         "localOverridesEmpty": false
+      },
+      "foodCookingPreservation": {
+        "namespaces": [
+          "FOOD"
+        ],
+        "localContract": "Datos operativos/treskal_daily_life_family_food_contract_v0.1.json",
+        "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_cuisine_foodways_default_v0.1.json",
+        "localOverridesEmpty": false
       }
     },
     "validation": {
@@ -861,5 +870,13 @@
     ],
     "localNewLayerRequired": false,
     "medicinalFloraStillPending": true
+  },
+  "cuisineIntegration": {
+    "status": "inherited_core_plus_Norgard_point_10",
+    "coreFood": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
+    "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_cuisine_foodways_default_v0.1.json",
+    "norgardRecipes": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_cuisine_recipe_catalog_v0.1.json",
+    "localFoodContract": "Datos operativos/treskal_daily_life_family_food_contract_v0.1.json",
+    "localNewCuisineLawRequired": false
   }
 }

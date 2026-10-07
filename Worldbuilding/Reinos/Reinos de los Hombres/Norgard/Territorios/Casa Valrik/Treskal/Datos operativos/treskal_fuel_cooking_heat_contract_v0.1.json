@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_fuel_cooking_heat_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_canon_contract",
   "regionalClimate": "mild_oceanic_south_valrik",
   "primaryDomesticFuel": "firewood",
@@ -51,5 +51,17 @@
     "exactForgeAndMetallurgyFuels": "future_Norgard_metallurgy_system",
     "exactHouseholdHeatingArchitecture": "future_Treskal_building_interior_detail",
     "exactSeasonalTimeModel": "future_Nimroel_calendar_and_time_system"
+  },
+  "foodIntegration": {
+    "status": "resolved_by_Core_FOOD_and_Norgard_point_10",
+    "coreFood": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
+    "heatMethodsRequireRealFuel": true,
+    "professionalOvensSupport": [
+      "bread",
+      "savory_pies",
+      "sweet_bakes",
+      "other_canonical_baked_food"
+    ],
+    "smokingFoodConsumesFuelAndCapacity": true
   }
 }

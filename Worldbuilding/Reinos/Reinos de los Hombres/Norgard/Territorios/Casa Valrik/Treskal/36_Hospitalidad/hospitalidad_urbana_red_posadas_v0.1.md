@@ -151,6 +151,31 @@ Un establecimiento puede ofrecer ambas capacidades.
 
 ---
 
+# 8B. Comida y bebida — Punto 10
+
+La oferta de una posada/taberna depende de:
+
+- stock;
+- estación;
+- combustible;
+- cocina;
+- trabajadores;
+- recetas conocidas.
+
+Oferta ordinaria plausible:
+
+- olla del día;
+- pan;
+- queso;
+- huevos;
+- pescado/carne disponible;
+- alguna elaboración horneada;
+- cerveza Valrik;
+- vino importado;
+- fruta o producto estacional.
+
+No existe un menú moderno fijo ni disponibilidad infinita.
+
 # 9. Propietario y hogar
 
 La posada puede ser también hogar de:

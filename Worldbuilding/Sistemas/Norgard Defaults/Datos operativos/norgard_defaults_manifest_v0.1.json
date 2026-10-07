@@ -30,7 +30,9 @@
     "propertyInheritanceRental": "Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
     "humanPersonalityGeneration": "Datos operativos/norgard_human_personality_generation_default_v0.1.json",
     "humanPersonalityRecipes": "Datos operativos/norgard_procedural_personality_recipe_library_v0.1.json",
-    "healthHealingTradition": "Datos operativos/norgard_health_healing_tradition_default_v0.1.json"
+    "healthHealingTradition": "Datos operativos/norgard_health_healing_tradition_default_v0.1.json",
+    "cuisineFoodways": "Datos operativos/norgard_cuisine_foodways_default_v0.1.json",
+    "cuisineRecipeCatalog": "Datos operativos/norgard_cuisine_recipe_catalog_v0.1.json"
   },
   "readyCandidates": {
     "funeralMourning": "extracted_active_validated",
@@ -48,13 +50,13 @@
     "ageCapacityLaborApprenticeship": "authored_active_validated",
     "propertyInheritanceRental": "authored_active_validated",
     "humanPersistentPersonality": "authored_active_validated_cross_cutting",
-    "healthHealingTradition": "authored_active_validated"
+    "healthHealingTradition": "authored_active_validated",
+    "cuisineFoodways": "authored_active_validated"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
   },
   "blockedPendingCanon": [
-    "realm_cuisine",
     "personal_naming_and_surname_rules",
     "official_calendar_detail",
     "shared_material_culture"
@@ -145,6 +147,17 @@
       "regression": "Validacion/regresion_e13_salud_curanderia_norgard_v0.1.md",
       "validationPack": "Validacion/norgard_health_healing_validation_pack_v0.1.json",
       "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_9_SANIDAD_CURANDERIA_NORGARD_v0.1.md"
+    },
+    "E14": {
+      "status": "validated_static_regression_point_10_closed",
+      "default": "Datos operativos/norgard_cuisine_foodways_default_v0.1.json",
+      "recipeCatalog": "Datos operativos/norgard_cuisine_recipe_catalog_v0.1.json",
+      "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/gastronomia_alimentacion_norgard_v0.1.md",
+      "coreFood": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
+      "research": "Investigacion/Gastronomia/patrones_gastronomicos_referencia_v0.1.md",
+      "regression": "Validacion/regresion_e14_gastronomia_norgard_v0.1.md",
+      "validationPack": "Validacion/norgard_cuisine_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_10_GASTRONOMIA_NORGARD_v0.1.md"
     }
   },
   "downstreamDefaults": {
@@ -152,14 +165,15 @@
   },
   "validation": {
     "status": "validated_static_regression",
-    "regressionSpecifications": 13,
+    "regressionSpecifications": 14,
     "blockedPendingCanonIsIntentional": true,
     "monetaryValidationPack": "Validacion/norgard_monetary_validation_pack_v0.1.json",
     "familyLawValidationPack": "Validacion/norgard_family_law_validation_pack_v0.1.json",
     "laborAgeCapacityValidationPack": "Validacion/norgard_labor_age_capacity_validation_pack_v0.1.json",
     "propertyInheritanceRentalValidationPack": "Validacion/norgard_property_inheritance_rental_validation_pack_v0.1.json",
     "personalitySystemValidationPack": "Validacion/norgard_persistent_personality_validation_pack_v0.1.json",
-    "healthHealingValidationPack": "Validacion/norgard_health_healing_validation_pack_v0.1.json"
+    "healthHealingValidationPack": "Validacion/norgard_health_healing_validation_pack_v0.1.json",
+    "cuisineValidationPack": "Validacion/norgard_cuisine_validation_pack_v0.1.json"
   },
   "crossCuttingSystems": {
     "humanPersistentPersonality": {

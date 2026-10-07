@@ -2,7 +2,7 @@
 
 ## Estado
 
-**DISEÑO SOCIAL/ECONÓMICO APROBADO — SIN RECETARIO CANÓNICO**
+**CANON LOCAL ACTIVO — HEREDA GASTRONOMÍA DE NORGARD**
 
 ## Objetivo
 
@@ -56,7 +56,7 @@ Procedencia:
 
 Forma parte de la resiliencia urbana.
 
-La lista concreta se desarrolla con gastronomía futura.
+Punto 10 define ya secado, salazón, salmuera, ahumado, encurtido, fermentación y otros métodos válidos.
 
 ## F07 — cerveza Valrik
 
@@ -67,6 +67,27 @@ Producción territorial.
 No producido de forma destacada en Valrik.
 
 ---
+
+# 1B. Ingredientes concretos ya canonizados
+
+Treskal hereda de Norgard, entre otros:
+
+- trigo, cebada, avena y centeno;
+- guisantes, habas y lentejas;
+- cebolla, puerro, col, nabo, zanahoria y remolacha;
+- manzana, pera, ciruela, uva y frutos del bosque como categoría;
+- vacuno, ovino, porcino, aves de corral, huevos y lácteos;
+- miel, sal y vinagre.
+
+Mantiene como rasgo local:
+
+- pescado marítimo;
+- pescado fluvial;
+- pescado conservado;
+- cerveza Valrik;
+- vino llegado por comercio.
+
+El catálogo de 40 preparaciones de Norgard está disponible, con mayor peso local para las recetas de pescado y cerveza Valrik.
 
 # 2. Compra doméstica
 
@@ -187,3 +208,19 @@ Debe integrarse con saneamiento y aprovechamiento.
 ## Regla final
 
 **La mesa de Treskal depende del mar, los ríos, el campo y los caminos; comer es el último eslabón de una cadena real de suministro.**
+
+
+---
+
+## Integración Punto 10
+
+La preparación utiliza:
+
+- `FOOD`;
+- stock;
+- combustible;
+- utensilios;
+- tiempo;
+- recetas de Norgard.
+
+La IA no puede inventar un plato o ingrediente para completar una escena.

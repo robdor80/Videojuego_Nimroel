@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_civil_port_and_storage_contract",
-  "version": "0.4",
+  "version": "0.5",
   "status": "active_design_contract",
   "civilSystems": {
     "river": {
@@ -115,7 +115,9 @@
     "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_vessel_navigation_simulation_contract_v0.1.json",
     "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
     "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
-    "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_fiscal_administration_default_v0.1.json"
+    "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_fiscal_administration_default_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_cuisine_foodways_default_v0.1.json"
   ],
   "localProfiles": [
     "Datos operativos/treskal_fishing_fleet_profile_v0.1.json",
@@ -144,5 +146,15 @@
     "portServicesMayCreateFees": true,
     "localFishingNotExternalImport": true,
     "CrownOfficialT08OperationsOutsideValrikTaxAuthority": true
+  },
+  "foodStorageIntegration": {
+    "status": "resolved_by_Core_FOOD_and_Norgard_point_10",
+    "coreFood": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
+    "freshFishUsuallyST1": true,
+    "manyGardenProductsUsuallyST2": true,
+    "dryGrainLegumesAndManyPreservedFoodsUsuallyST3": true,
+    "preservationMayChangeStorageBehavior": true,
+    "FOODStateDoesNotReplaceSTClass": true,
+    "spoilagePersists": true
   }
 }

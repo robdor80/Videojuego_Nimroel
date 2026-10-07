@@ -1,0 +1,579 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_cuisine_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "caseCount": 60,
+  "cases": [
+    {
+      "id": "CUIS10_01",
+      "given": {
+        "recipeExists": true,
+        "ingredientsMissing": true
+      },
+      "expect": {
+        "mealCreated": false
+      }
+    },
+    {
+      "id": "CUIS10_02",
+      "given": {
+        "heatMethod": "baking",
+        "fuelMissing": true
+      },
+      "expect": {
+        "preparationCompletes": false
+      }
+    },
+    {
+      "id": "CUIS10_03",
+      "given": {
+        "preservation": "salting",
+        "saltMissing": true
+      },
+      "expect": {
+        "preserved": false
+      }
+    },
+    {
+      "id": "CUIS10_04",
+      "given": {
+        "preservation": "brining",
+        "salt": true,
+        "water": false
+      },
+      "expect": {
+        "preserved": false
+      }
+    },
+    {
+      "id": "CUIS10_05",
+      "given": {
+        "preservation": "smoking",
+        "smokeFacility": false
+      },
+      "expect": {
+        "preserved": false
+      }
+    },
+    {
+      "id": "CUIS10_06",
+      "given": {
+        "foodState": "FOOD05",
+        "cookedAgain": true
+      },
+      "expect": {
+        "automaticallySafe": false
+      }
+    },
+    {
+      "id": "CUIS10_07",
+      "given": {
+        "oldFood": true,
+        "noContaminationCause": true
+      },
+      "expect": {
+        "illnessGuaranteed": false
+      }
+    },
+    {
+      "id": "CUIS10_08",
+      "given": {
+        "unsafeFood": true,
+        "consumed": true
+      },
+      "expect": {
+        "healthConditionPossible": true
+      }
+    },
+    {
+      "id": "CUIS10_09",
+      "given": {
+        "need": "NEED01",
+        "mealDescriptionOnly": true
+      },
+      "expect": {
+        "needSatisfied": false
+      }
+    },
+    {
+      "id": "CUIS10_10",
+      "given": {
+        "routineHousehold": true,
+        "stockStable": true
+      },
+      "expect": {
+        "aggregateConsumptionAllowed": true
+      }
+    },
+    {
+      "id": "CUIS10_11",
+      "given": {
+        "scarcity": true
+      },
+      "expect": {
+        "detailedResolutionRequired": true
+      }
+    },
+    {
+      "id": "CUIS10_12",
+      "given": {
+        "dayPattern": "three_meals"
+      },
+      "expect": {
+        "universallyRequired": false
+      }
+    },
+    {
+      "id": "CUIS10_13",
+      "given": {
+        "inn": true
+      },
+      "expect": {
+        "infiniteMenu": false
+      }
+    },
+    {
+      "id": "CUIS10_14",
+      "given": {
+        "feast": true,
+        "stockInsufficient": true
+      },
+      "expect": {
+        "fullFeastServed": false
+      }
+    },
+    {
+      "id": "CUIS10_15",
+      "given": {
+        "travel": true,
+        "noRations": true
+      },
+      "expect": {
+        "rationsSpawn": false
+      }
+    },
+    {
+      "id": "CUIS10_16",
+      "given": {
+        "army": true,
+        "noSupply": true
+      },
+      "expect": {
+        "rationsSpawn": false
+      }
+    },
+    {
+      "id": "CUIS10_17",
+      "given": {
+        "ship": true,
+        "noProvisions": true
+      },
+      "expect": {
+        "provisionsSpawn": false
+      }
+    },
+    {
+      "id": "CUIS10_18",
+      "given": {
+        "ingredientReservedToCrown": true
+      },
+      "expect": {
+        "availableToTavernAutomatically": false
+      }
+    },
+    {
+      "id": "CUIS10_19",
+      "given": {
+        "recipePrice": 4
+      },
+      "expect": {
+        "fixedByRecipe": false
+      }
+    },
+    {
+      "id": "CUIS10_20",
+      "given": {
+        "fishLandingsLow": true
+      },
+      "expect": {
+        "freshFishAvailabilityMayFall": true
+      }
+    },
+    {
+      "id": "CUIS10_21",
+      "given": {
+        "freshFishScarce": true,
+        "preservedFishStock": true
+      },
+      "expect": {
+        "preservedSubstitutionPossible": true
+      }
+    },
+    {
+      "id": "CUIS10_22",
+      "given": {
+        "freshFishScarce": true,
+        "preservedFishStock": false
+      },
+      "expect": {
+        "preservedSubstitutionCreated": false
+      }
+    },
+    {
+      "id": "CUIS10_23",
+      "given": {
+        "aiAction": "invent_spice"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "CUIS10_24",
+      "given": {
+        "aiAction": "select_existing_recipe_with_stock"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "CUIS10_25",
+      "given": {
+        "npcPreference": "hates_fish"
+      },
+      "expect": {
+        "cultureMayOverridePreferenceAutomatically": false
+      }
+    },
+    {
+      "id": "CUIS10_26",
+      "given": {
+        "memoryOfMeal": true
+      },
+      "expect": {
+        "MEMIntegration": true
+      }
+    },
+    {
+      "id": "CUIS10_27",
+      "given": {
+        "foodLotOwner": "merchant"
+      },
+      "expect": {
+        "FOODOverridesOwnership": false
+      }
+    },
+    {
+      "id": "CUIS10_28",
+      "given": {
+        "leftoversUnusable": true
+      },
+      "expect": {
+        "mayBecomeWaste": true
+      }
+    },
+    {
+      "id": "CUIS10_29",
+      "given": {
+        "ingredient": "wheat"
+      },
+      "expect": {
+        "NorgardCanonical": true
+      }
+    },
+    {
+      "id": "CUIS10_30",
+      "given": {
+        "ingredient": "barley"
+      },
+      "expect": {
+        "NorgardCanonical": true
+      }
+    },
+    {
+      "id": "CUIS10_31",
+      "given": {
+        "ingredient": "oats"
+      },
+      "expect": {
+        "NorgardCanonical": true
+      }
+    },
+    {
+      "id": "CUIS10_32",
+      "given": {
+        "ingredient": "rye"
+      },
+      "expect": {
+        "NorgardCanonical": true
+      }
+    },
+    {
+      "id": "CUIS10_33",
+      "given": {
+        "ingredient": "potato"
+      },
+      "expect": {
+        "NorgardCommonDefault": false
+      }
+    },
+    {
+      "id": "CUIS10_34",
+      "given": {
+        "ingredient": "refined_sugar"
+      },
+      "expect": {
+        "NorgardCommonDefault": false
+      }
+    },
+    {
+      "id": "CUIS10_35",
+      "given": {
+        "drink": "water"
+      },
+      "expect": {
+        "ordinary": true
+      }
+    },
+    {
+      "id": "CUIS10_36",
+      "given": {
+        "drink": "Valrik_beer"
+      },
+      "expect": {
+        "ordinaryPrestige": true,
+        "luxuryAutomatic": false
+      }
+    },
+    {
+      "id": "CUIS10_37",
+      "given": {
+        "region": "Edranor"
+      },
+      "expect": {
+        "wineProductionBias": true
+      }
+    },
+    {
+      "id": "CUIS10_38",
+      "given": {
+        "region": "Galdren"
+      },
+      "expect": {
+        "grainAndLivestockBias": true
+      }
+    },
+    {
+      "id": "CUIS10_39",
+      "given": {
+        "region": "Valrik"
+      },
+      "expect": {
+        "fishAndBeerBias": true
+      }
+    },
+    {
+      "id": "CUIS10_40",
+      "given": {
+        "region": "Darovan"
+      },
+      "expect": {
+        "tradeAndPortBias": true
+      }
+    },
+    {
+      "id": "CUIS10_41",
+      "given": {
+        "region": "Hallheim"
+      },
+      "expect": {
+        "multiRegionCourtCuisinePossible": true
+      }
+    },
+    {
+      "id": "CUIS10_42",
+      "given": {
+        "region": "Syvaris",
+        "requestedIngredient": "olive"
+      },
+      "expect": {
+        "automaticCanon": false
+      }
+    },
+    {
+      "id": "CUIS10_43",
+      "given": {
+        "socialClass": "poor",
+        "meatAvailableOwned": true
+      },
+      "expect": {
+        "meatLegallyForbidden": false
+      }
+    },
+    {
+      "id": "CUIS10_44",
+      "given": {
+        "socialClass": "noble",
+        "meal": "simple_stew"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "CUIS10_45",
+      "given": {
+        "wealthHigh": true
+      },
+      "expect": {
+        "mayIncreaseVariety": true,
+        "createsStock": false
+      }
+    },
+    {
+      "id": "CUIS10_46",
+      "given": {
+        "recipe": "NCUI19",
+        "Valrik": true
+      },
+      "expect": {
+        "regionalWeightHigher": true,
+        "exclusiveToValrik": false
+      }
+    },
+    {
+      "id": "CUIS10_47",
+      "given": {
+        "recipe": "NCUI31",
+        "wineArrivedInTreskal": true
+      },
+      "expect": {
+        "mayBePreparedInTreskal": true
+      }
+    },
+    {
+      "id": "CUIS10_48",
+      "given": {
+        "recipeCatalog": true
+      },
+      "expect": {
+        "recipeCount": 40
+      }
+    },
+    {
+      "id": "CUIS10_49",
+      "given": {
+        "copiedReferenceDishName": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "CUIS10_50",
+      "given": {
+        "religiousBreadSaltRitualImported": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "CUIS10_51",
+      "given": {
+        "season": "winter",
+        "freshFruitNoStorageOrImport": true
+      },
+      "expect": {
+        "guaranteedAvailable": false
+      }
+    },
+    {
+      "id": "CUIS10_52",
+      "given": {
+        "climateHot": true,
+        "perishableFood": true
+      },
+      "expect": {
+        "spoilagePressureMayIncrease": true
+      }
+    },
+    {
+      "id": "CUIS10_53",
+      "given": {
+        "preservedFood": true
+      },
+      "expect": {
+        "permanent": false
+      }
+    },
+    {
+      "id": "CUIS10_54",
+      "given": {
+        "bread": true
+      },
+      "expect": {
+        "singleUniversalRecipe": false
+      }
+    },
+    {
+      "id": "CUIS10_55",
+      "given": {
+        "household": true
+      },
+      "expect": {
+        "dailyMeatGuaranteed": false
+      }
+    },
+    {
+      "id": "CUIS10_56",
+      "given": {
+        "coastalSettlement": true,
+        "fishStockReal": true
+      },
+      "expect": {
+        "frequentFishPossible": true
+      }
+    },
+    {
+      "id": "CUIS10_57",
+      "given": {
+        "eggDish": true,
+        "poultryAbsent": true
+      },
+      "expect": {
+        "eggSpawn": false
+      }
+    },
+    {
+      "id": "CUIS10_58",
+      "given": {
+        "sweetDish": true
+      },
+      "expect": {
+        "honeyOrFruitPreferredCommonSweetener": true
+      }
+    },
+    {
+      "id": "CUIS10_59",
+      "given": {
+        "hospitality": true
+      },
+      "expect": {
+        "freeFoodToAllStrangersRequired": false
+      }
+    },
+    {
+      "id": "CUIS10_60",
+      "given": {
+        "futureNewDish": true
+      },
+      "expect": {
+        "mustRespectCoreFoodContract": true
+      }
+    }
+  ],
+  "marker": "CUISINE_POINT_10_CLOSED_NORGARD_CUISINE"
+}

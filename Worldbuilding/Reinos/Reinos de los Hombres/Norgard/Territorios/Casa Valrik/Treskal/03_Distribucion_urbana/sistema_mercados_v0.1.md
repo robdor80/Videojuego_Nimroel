@@ -18,10 +18,11 @@ Esto se materializa como un **sistema de mercados complementarios**, no como una
 
 Función:
 
-- cereal;
-- hortalizas;
-- tubérculos;
-- alimentos;
+- cereal (trigo, cebada, avena, centeno);
+- legumbres;
+- hortalizas y raíces;
+- fruta cuando corresponda;
+- alimentos preparados y conservados;
 - productos domésticos;
 - pequeños comerciantes;
 - mercancías rurales.
@@ -60,6 +61,26 @@ Debe priorizar:
 No debe ocupar la plaza principal de alimentos secos.
 
 ---
+
+# 2B. Comida preparada
+
+Punto 10 permite puestos reales de:
+
+- pan caliente;
+- salchicha;
+- pescado asado;
+- empanada/pastel salado;
+- huevo cocido;
+- queso;
+- bebida.
+
+Solo aparecen cuando existe:
+
+- vendedor;
+- stock;
+- equipo;
+- combustible;
+- capacidad.
 
 # 3. Ganado
 

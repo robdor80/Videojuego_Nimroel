@@ -141,9 +141,18 @@ La cocción doméstica puede requerir:
 
 No toda comida se cocina con la misma intensidad térmica.
 
-No se fijan recetas.
+Las recetas canónicas vienen del Punto 10 de Norgard.
 
 ---
+
+# 8B. Cocina y FOOD
+
+La cocina de Treskal usa el contrato Core FOOD.
+
+- hervir, estofar, freír, asar y hornear consumen combustible cuando procede;
+- ahumar alimentos consume combustible y capacidad;
+- un horno profesional puede producir pan, empanadas y otras elaboraciones canónicas;
+- falta de leña puede retirar temporalmente platos del mercado aunque existan ingredientes.
 
 # 9. Hornos
 

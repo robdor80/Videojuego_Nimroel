@@ -307,7 +307,7 @@ Sí significa:
 
 ---
 
-### Actualización posterior — Puntos 1–9 de Norgard
+### Actualización posterior — Puntos 1–10 de Norgard
 
 Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya han sido resueltas a nivel superior:
 
@@ -320,7 +320,8 @@ Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya 
 - matrimonio/filiación/tutela/adopción;
 - mayoría de edad/capacidad/trabajo/aprendizaje;
 - propiedad/herencia/alquiler;
-- salud/curandería y fisiología sanitaria.
+- salud/curandería y fisiología sanitaria;
+- gastronomía, alimentos, cocina y conservación.
 
 Esto confirma la decisión original de no crear una capa 100 local: Treskal hereda estos sistemas desde Core/Norgard.
 
@@ -351,3 +352,17 @@ Punto 9 resuelve además las antiguas dependencias locales de:
 - capacidad y espera de curanderas.
 
 Permanece pendiente la flora medicinal concreta.
+
+
+Punto 10 resuelve además las antiguas dependencias locales de:
+
+- recetario canónico;
+- grupos alimentarios concretos;
+- conservación culinaria;
+- oferta plausible de posadas/tabernas;
+- comida preparada de mercado;
+- comida de viaje;
+- provisiones militares/navales;
+- relación FOOD ↔ almacenamiento/combustible.
+
+Siguen pendientes los nombres folclóricos locales y los menús ligados a festividades aún no definidas.

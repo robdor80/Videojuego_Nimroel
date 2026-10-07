@@ -1,0 +1,1141 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_cuisine_recipe_catalog",
+  "version": "0.1",
+  "status": "active_realm_recipe_catalog",
+  "scope": "Norgard_humans",
+  "recipeCount": 40,
+  "rules": {
+    "descriptiveNames": true,
+    "folkloreNamesDeferred": true,
+    "recipeDoesNotCreateIngredients": true,
+    "exactIngredientSpeciesRequiredOnlyWhenCanonical": true,
+    "regionalScopeIsWeightNotExclusivity": true,
+    "classRestrictions": false,
+    "worldStateAvailabilityRequired": true
+  },
+  "recipes": [
+    {
+      "recipe_id": "NCUI01",
+      "name": "hogaza de cereal",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "grain_flour",
+        "water"
+      ],
+      "optional_categories": [
+        "salt"
+      ],
+      "preparation_methods": [
+        "mixing",
+        "baking"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "tavern_or_inn",
+        "hospitality"
+      ],
+      "output_food_tags": [
+        "bread",
+        "staple"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI02",
+      "name": "pan mixto oscuro",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "rye_or_barley_flour",
+        "water"
+      ],
+      "optional_categories": [
+        "wheat_flour",
+        "salt"
+      ],
+      "preparation_methods": [
+        "mixing",
+        "baking"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "travel",
+        "military"
+      ],
+      "output_food_tags": [
+        "bread",
+        "dense"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI03",
+      "name": "torta de avena o cebada",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "oats_or_barley",
+        "water"
+      ],
+      "optional_categories": [
+        "fat",
+        "salt"
+      ],
+      "preparation_methods": [
+        "grinding",
+        "mixing",
+        "baking"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "workday",
+        "travel"
+      ],
+      "output_food_tags": [
+        "grain_cake",
+        "portable"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI04",
+      "name": "gachas de cereal",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "grain",
+        "water"
+      ],
+      "optional_categories": [
+        "milk",
+        "butter",
+        "honey",
+        "salt"
+      ],
+      "preparation_methods": [
+        "boiling",
+        "simmering"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "workday",
+        "scarcity_or_emergency"
+      ],
+      "output_food_tags": [
+        "porridge",
+        "soft_food"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI05",
+      "name": "potaje de cereal y legumbre",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "grain",
+        "legume",
+        "water"
+      ],
+      "optional_categories": [
+        "onion",
+        "leek",
+        "root_vegetable",
+        "fat"
+      ],
+      "preparation_methods": [
+        "boiling",
+        "stewing",
+        "thickening"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "workday",
+        "military"
+      ],
+      "output_food_tags": [
+        "pottage",
+        "staple"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI06",
+      "name": "olla de raíces y col",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "root_vegetable",
+        "cabbage",
+        "water"
+      ],
+      "optional_categories": [
+        "onion",
+        "leek",
+        "legume",
+        "fat"
+      ],
+      "preparation_methods": [
+        "boiling",
+        "stewing"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "scarcity_or_emergency"
+      ],
+      "output_food_tags": [
+        "vegetable_stew"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI07",
+      "name": "olla de cebada y carne",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "barley",
+        "meat",
+        "water"
+      ],
+      "optional_categories": [
+        "onion",
+        "leek",
+        "carrot",
+        "turnip",
+        "herbs"
+      ],
+      "preparation_methods": [
+        "stewing",
+        "thickening"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "tavern_or_inn",
+        "military"
+      ],
+      "output_food_tags": [
+        "meat_stew",
+        "hearty"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI08",
+      "name": "caldo de carne y huerta",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "meat_or_bones",
+        "water"
+      ],
+      "optional_categories": [
+        "onion",
+        "leek",
+        "root_vegetable",
+        "herbs"
+      ],
+      "preparation_methods": [
+        "broth_or_stock",
+        "simmering"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "recovery",
+        "hospitality"
+      ],
+      "output_food_tags": [
+        "broth",
+        "soft_food"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI09",
+      "name": "carne asada con raíces",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "meat",
+        "root_vegetable"
+      ],
+      "optional_categories": [
+        "onion",
+        "herbs",
+        "butter_or_fat"
+      ],
+      "preparation_methods": [
+        "roasting"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "hospitality",
+        "ceremonial_or_feast"
+      ],
+      "output_food_tags": [
+        "roast"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI10",
+      "name": "carne guisada con cebolla y puerro",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "meat",
+        "onion_or_leek",
+        "water"
+      ],
+      "optional_categories": [
+        "grain",
+        "root_vegetable",
+        "beer_or_wine",
+        "herbs"
+      ],
+      "preparation_methods": [
+        "stewing"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "tavern_or_inn"
+      ],
+      "output_food_tags": [
+        "meat_stew"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI11",
+      "name": "pastel salado de carne y huerta",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "grain_flour",
+        "meat",
+        "vegetable"
+      ],
+      "optional_categories": [
+        "egg",
+        "fat",
+        "herbs"
+      ],
+      "preparation_methods": [
+        "mixing",
+        "baking"
+      ],
+      "serving_contexts": [
+        "tavern_or_inn",
+        "hospitality",
+        "ceremonial_or_feast"
+      ],
+      "output_food_tags": [
+        "savory_pie"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI12",
+      "name": "salchicha con cebolla",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "sausage",
+        "onion"
+      ],
+      "optional_categories": [
+        "beer",
+        "root_vegetable"
+      ],
+      "preparation_methods": [
+        "frying",
+        "grilling"
+      ],
+      "serving_contexts": [
+        "market_or_street",
+        "tavern_or_inn",
+        "workday"
+      ],
+      "output_food_tags": [
+        "prepared_meat",
+        "street_food"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI13",
+      "name": "huevo con pan",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "egg",
+        "bread"
+      ],
+      "optional_categories": [
+        "fat",
+        "cheese",
+        "onion"
+      ],
+      "preparation_methods": [
+        "boiling"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "workday",
+        "travel"
+      ],
+      "output_food_tags": [
+        "simple_meal"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI14",
+      "name": "queso y pan",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "cheese",
+        "bread"
+      ],
+      "optional_categories": [
+        "onion",
+        "fruit"
+      ],
+      "preparation_methods": [],
+      "serving_contexts": [
+        "domestic",
+        "workday",
+        "travel",
+        "hospitality"
+      ],
+      "output_food_tags": [
+        "cold_meal",
+        "portable"
+      ],
+      "fuel_required": false,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI15",
+      "name": "fruta asada con miel",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "orchard_fruit"
+      ],
+      "optional_categories": [
+        "honey",
+        "butter"
+      ],
+      "preparation_methods": [
+        "baking"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "hospitality",
+        "ceremonial_or_feast"
+      ],
+      "output_food_tags": [
+        "sweet",
+        "fruit"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI16",
+      "name": "torta dulce de cereal y miel",
+      "scope": "Norgard_common",
+      "required_categories": [
+        "grain_flour",
+        "honey"
+      ],
+      "optional_categories": [
+        "egg",
+        "butter",
+        "berries_or_fruit"
+      ],
+      "preparation_methods": [
+        "mixing",
+        "baking"
+      ],
+      "serving_contexts": [
+        "hospitality",
+        "market_or_street",
+        "ceremonial_or_feast"
+      ],
+      "output_food_tags": [
+        "sweet",
+        "baked"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI17",
+      "name": "pescado fresco a la brasa",
+      "scope": "Valrik_weighted",
+      "required_categories": [
+        "fresh_fish"
+      ],
+      "optional_categories": [
+        "salt",
+        "herbs"
+      ],
+      "preparation_methods": [
+        "grilling"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "market_or_street",
+        "tavern_or_inn"
+      ],
+      "output_food_tags": [
+        "fish",
+        "fresh"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI18",
+      "name": "pescado al horno con puerro",
+      "scope": "Valrik_weighted",
+      "required_categories": [
+        "fresh_fish",
+        "leek"
+      ],
+      "optional_categories": [
+        "onion",
+        "butter",
+        "herbs"
+      ],
+      "preparation_methods": [
+        "baking"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "tavern_or_inn",
+        "hospitality"
+      ],
+      "output_food_tags": [
+        "fish",
+        "baked"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI19",
+      "name": "guiso costero de pescado y cebada",
+      "scope": "Valrik_weighted",
+      "required_categories": [
+        "fish",
+        "barley",
+        "water"
+      ],
+      "optional_categories": [
+        "onion",
+        "leek",
+        "root_vegetable",
+        "shellfish_if_available"
+      ],
+      "preparation_methods": [
+        "stewing",
+        "thickening"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "tavern_or_inn",
+        "maritime"
+      ],
+      "output_food_tags": [
+        "fish_stew"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI20",
+      "name": "pastel de pescado y raíces",
+      "scope": "Valrik_weighted",
+      "required_categories": [
+        "grain_flour",
+        "fish",
+        "root_vegetable"
+      ],
+      "optional_categories": [
+        "onion",
+        "leek",
+        "egg",
+        "fat"
+      ],
+      "preparation_methods": [
+        "mixing",
+        "baking"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "tavern_or_inn",
+        "travel"
+      ],
+      "output_food_tags": [
+        "fish_pie"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI21",
+      "name": "pescado ahumado con pan",
+      "scope": "Valrik_weighted",
+      "required_categories": [
+        "smoked_fish",
+        "bread"
+      ],
+      "optional_categories": [
+        "onion",
+        "cheese"
+      ],
+      "preparation_methods": [],
+      "serving_contexts": [
+        "workday",
+        "travel",
+        "maritime"
+      ],
+      "output_food_tags": [
+        "preserved_fish",
+        "portable"
+      ],
+      "fuel_required": false,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI22",
+      "name": "pescado salado rehidratado en olla",
+      "scope": "Valrik_weighted",
+      "required_categories": [
+        "salted_fish",
+        "water"
+      ],
+      "optional_categories": [
+        "barley",
+        "onion",
+        "leek",
+        "root_vegetable"
+      ],
+      "preparation_methods": [
+        "boiling",
+        "stewing"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "maritime",
+        "scarcity_or_emergency"
+      ],
+      "output_food_tags": [
+        "preserved_fish",
+        "stew"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI23",
+      "name": "pescado fluvial asado",
+      "scope": "Valrik_weighted",
+      "required_categories": [
+        "river_fish"
+      ],
+      "optional_categories": [
+        "salt",
+        "herbs",
+        "butter"
+      ],
+      "preparation_methods": [
+        "roasting"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "tavern_or_inn"
+      ],
+      "output_food_tags": [
+        "river_fish"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI24",
+      "name": "ración de pescador",
+      "scope": "Valrik_weighted",
+      "required_categories": [
+        "preserved_fish",
+        "grain_cake"
+      ],
+      "optional_categories": [
+        "cheese",
+        "onion"
+      ],
+      "preparation_methods": [],
+      "serving_contexts": [
+        "travel",
+        "maritime",
+        "workday"
+      ],
+      "output_food_tags": [
+        "ration",
+        "portable"
+      ],
+      "fuel_required": false,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI25",
+      "name": "pan de trigo y centeno",
+      "scope": "Galdren_weighted",
+      "required_categories": [
+        "wheat_flour",
+        "rye_flour",
+        "water"
+      ],
+      "optional_categories": [
+        "salt"
+      ],
+      "preparation_methods": [
+        "mixing",
+        "baking"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "market_or_street",
+        "hospitality"
+      ],
+      "output_food_tags": [
+        "bread"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI26",
+      "name": "guiso de legumbres y carne",
+      "scope": "Galdren_weighted",
+      "required_categories": [
+        "legume",
+        "meat",
+        "water"
+      ],
+      "optional_categories": [
+        "barley",
+        "onion",
+        "carrot",
+        "turnip"
+      ],
+      "preparation_methods": [
+        "stewing"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "tavern_or_inn",
+        "military"
+      ],
+      "output_food_tags": [
+        "hearty_stew"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI27",
+      "name": "pastel de queso y cebolla",
+      "scope": "Galdren_weighted",
+      "required_categories": [
+        "grain_flour",
+        "cheese",
+        "onion"
+      ],
+      "optional_categories": [
+        "egg",
+        "butter"
+      ],
+      "preparation_methods": [
+        "mixing",
+        "baking"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "market_or_street",
+        "tavern_or_inn"
+      ],
+      "output_food_tags": [
+        "savory_pie"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI28",
+      "name": "carne ovina asada con hierbas",
+      "scope": "Galdren_weighted",
+      "required_categories": [
+        "mutton_or_lamb",
+        "herbs"
+      ],
+      "optional_categories": [
+        "onion",
+        "root_vegetable",
+        "honey"
+      ],
+      "preparation_methods": [
+        "roasting"
+      ],
+      "serving_contexts": [
+        "hospitality",
+        "ceremonial_or_feast",
+        "tavern_or_inn"
+      ],
+      "output_food_tags": [
+        "roast_meat"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI29",
+      "name": "gachas con leche y mantequilla",
+      "scope": "Galdren_weighted",
+      "required_categories": [
+        "grain",
+        "milk"
+      ],
+      "optional_categories": [
+        "butter",
+        "honey"
+      ],
+      "preparation_methods": [
+        "boiling",
+        "simmering"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "workday"
+      ],
+      "output_food_tags": [
+        "porridge",
+        "dairy"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI30",
+      "name": "carne conservada con potaje",
+      "scope": "Galdren_weighted",
+      "required_categories": [
+        "preserved_meat",
+        "legume",
+        "grain",
+        "water"
+      ],
+      "optional_categories": [
+        "onion",
+        "root_vegetable"
+      ],
+      "preparation_methods": [
+        "stewing"
+      ],
+      "serving_contexts": [
+        "travel",
+        "military",
+        "scarcity_or_emergency"
+      ],
+      "output_food_tags": [
+        "preserved_meat",
+        "pottage"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI31",
+      "name": "carne guisada al vino",
+      "scope": "Edranor_weighted",
+      "required_categories": [
+        "meat",
+        "wine"
+      ],
+      "optional_categories": [
+        "onion",
+        "root_vegetable",
+        "herbs"
+      ],
+      "preparation_methods": [
+        "stewing"
+      ],
+      "serving_contexts": [
+        "tavern_or_inn",
+        "hospitality",
+        "ceremonial_or_feast"
+      ],
+      "output_food_tags": [
+        "wine_cookery",
+        "meat_stew"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI32",
+      "name": "raíces glaseadas con vino y mantequilla",
+      "scope": "Edranor_weighted",
+      "required_categories": [
+        "root_vegetable",
+        "wine"
+      ],
+      "optional_categories": [
+        "butter",
+        "honey",
+        "herbs"
+      ],
+      "preparation_methods": [
+        "simmering"
+      ],
+      "serving_contexts": [
+        "hospitality",
+        "ceremonial_or_feast"
+      ],
+      "output_food_tags": [
+        "wine_cookery",
+        "vegetable"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI33",
+      "name": "pan, queso y uvas",
+      "scope": "Edranor_weighted",
+      "required_categories": [
+        "bread",
+        "cheese",
+        "grapes"
+      ],
+      "optional_categories": [
+        "wine"
+      ],
+      "preparation_methods": [],
+      "serving_contexts": [
+        "domestic",
+        "workday",
+        "hospitality"
+      ],
+      "output_food_tags": [
+        "cold_meal",
+        "wine_region"
+      ],
+      "fuel_required": false,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI34",
+      "name": "fruta cocida al vino",
+      "scope": "Edranor_weighted",
+      "required_categories": [
+        "orchard_fruit",
+        "wine"
+      ],
+      "optional_categories": [
+        "honey"
+      ],
+      "preparation_methods": [
+        "simmering"
+      ],
+      "serving_contexts": [
+        "hospitality",
+        "ceremonial_or_feast"
+      ],
+      "output_food_tags": [
+        "sweet",
+        "wine_cookery"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI35",
+      "name": "olla de minero",
+      "scope": "Darovan_weighted",
+      "required_categories": [
+        "barley_or_rye",
+        "legume",
+        "water"
+      ],
+      "optional_categories": [
+        "preserved_meat",
+        "onion",
+        "root_vegetable",
+        "fat"
+      ],
+      "preparation_methods": [
+        "stewing",
+        "thickening"
+      ],
+      "serving_contexts": [
+        "workday",
+        "domestic"
+      ],
+      "output_food_tags": [
+        "hearty_pottage",
+        "portable_work_culture"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI36",
+      "name": "pan, queso y carne conservada",
+      "scope": "Darovan_weighted",
+      "required_categories": [
+        "bread",
+        "cheese",
+        "preserved_meat"
+      ],
+      "optional_categories": [
+        "onion",
+        "fruit"
+      ],
+      "preparation_methods": [],
+      "serving_contexts": [
+        "workday",
+        "travel",
+        "market_or_street"
+      ],
+      "output_food_tags": [
+        "cold_meal",
+        "portable"
+      ],
+      "fuel_required": false,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI37",
+      "name": "guiso de puerto",
+      "scope": "Darovan_weighted",
+      "required_categories": [
+        "fish",
+        "grain",
+        "water"
+      ],
+      "optional_categories": [
+        "shellfish_if_available",
+        "onion",
+        "leek",
+        "wine_or_vinegar"
+      ],
+      "preparation_methods": [
+        "stewing"
+      ],
+      "serving_contexts": [
+        "tavern_or_inn",
+        "maritime"
+      ],
+      "output_food_tags": [
+        "port_food",
+        "fish_stew"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI38",
+      "name": "mesa mercantil de conservas",
+      "scope": "Darovan_weighted",
+      "required_categories": [
+        "bread",
+        "cheese",
+        "preserved_food"
+      ],
+      "optional_categories": [
+        "wine",
+        "fruit",
+        "imported_luxury_if_available"
+      ],
+      "preparation_methods": [],
+      "serving_contexts": [
+        "hospitality",
+        "tavern_or_inn",
+        "travel"
+      ],
+      "output_food_tags": [
+        "merchant_food",
+        "cold_service"
+      ],
+      "fuel_required": false,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI39",
+      "name": "pescado fluvial con puerro y cereal",
+      "scope": "Aethros_Hallheim_weighted",
+      "required_categories": [
+        "river_fish",
+        "leek",
+        "grain"
+      ],
+      "optional_categories": [
+        "butter",
+        "onion",
+        "herbs"
+      ],
+      "preparation_methods": [
+        "baking",
+        "simmering"
+      ],
+      "serving_contexts": [
+        "domestic",
+        "tavern_or_inn",
+        "hospitality"
+      ],
+      "output_food_tags": [
+        "river_food"
+      ],
+      "fuel_required": true,
+      "notes": null
+    },
+    {
+      "recipe_id": "NCUI40",
+      "name": "mesa de recepción del Reino",
+      "scope": "Aethros_Hallheim_weighted",
+      "required_categories": [
+        "bread",
+        "one_meat_or_fish",
+        "one_grain_or_legume",
+        "one_vegetable"
+      ],
+      "optional_categories": [
+        "Edranor_wine",
+        "Valrik_beer",
+        "Galdren_cheese_or_meat",
+        "Darovan_import_if_available",
+        "fruit",
+        "sweet"
+      ],
+      "preparation_methods": [
+        "roasting",
+        "baking",
+        "stewing"
+      ],
+      "serving_contexts": [
+        "ceremonial_or_feast"
+      ],
+      "output_food_tags": [
+        "courtly",
+        "multi_region"
+      ],
+      "fuel_required": true,
+      "notes": "No es una receta fija: es una plantilla de banquete que exige productos reales de varias procedencias."
+    }
+  ]
+}

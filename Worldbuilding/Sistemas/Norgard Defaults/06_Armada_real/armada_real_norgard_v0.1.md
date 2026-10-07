@@ -275,3 +275,31 @@ Un buque sin especialista:
 - no obtiene curación abstracta fuera de cámara.
 
 Heridas, enfermedad y brotes se resuelven mediante HLTH/HCOND/HTRT/OUTB.
+
+
+---
+
+## Integración alimentaria — Punto 10
+
+La Armada embarca provisiones como carga real.
+
+Para travesías largas son especialmente útiles:
+
+- pan de viaje;
+- cereal;
+- legumbres secas;
+- pescado o carne conservada;
+- queso curado;
+- agua;
+- cerveza o vino cuando exista;
+- productos frescos para los primeros días.
+
+Las provisiones:
+
+- ocupan capacidad;
+- se consumen;
+- pueden deteriorarse;
+- pueden perderse;
+- condicionan autonomía.
+
+Un buque sin comida o agua suficiente no continúa operando como si nada.

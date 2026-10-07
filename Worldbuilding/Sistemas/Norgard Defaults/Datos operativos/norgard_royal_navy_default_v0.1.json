@@ -270,5 +270,24 @@
     "universalHealerPerUnitOrVessel": false,
     "trainedFirstAidDoesNotCreateFullHealerStatus": true,
     "lackOfSpecialistRemainsRealConstraint": true
+  },
+  "foodProvisioningIntegration": {
+    "status": "resolved_by_Core_FOOD_and_Norgard_point_10",
+    "coreFood": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
+    "norgardCuisine": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_cuisine_foodways_default_v0.1.json",
+    "recipeCatalog": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_cuisine_recipe_catalog_v0.1.json",
+    "rationsConsumeRealStock": true,
+    "preservedFoodPreferredForLongMovement": true,
+    "freshFoodPossibleWhenSupplyChainAllows": true,
+    "noAutomaticRationSpawn": true,
+    "navalLongVoyageBias": [
+      "travel_bread",
+      "dry_grain",
+      "dry_legumes",
+      "preserved_fish_or_meat",
+      "aged_cheese",
+      "water",
+      "beer_or_wine_when_available"
+    ]
   }
 }

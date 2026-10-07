@@ -327,3 +327,30 @@ No existe:
 - curación automática tras combate.
 
 Las lesiones se resuelven mediante HLTH/HCOND y la disponibilidad de atención, materiales, transporte y reposo es real.
+
+
+---
+
+## Integración alimentaria — Punto 10
+
+Las fuerzas de Norgard necesitan provisiones reales.
+
+La logística de campaña puede usar:
+
+- cereal;
+- pan;
+- legumbres;
+- carne o pescado conservado;
+- queso;
+- olla colectiva;
+- productos frescos cuando exista cadena de suministro.
+
+Una fuerza grande altera:
+
+- stock;
+- transporte;
+- mercado;
+- precios;
+- disponibilidad civil.
+
+No existe forrajeo gratuito ni ración que aparezca por pertenecer al ejército.

@@ -2517,3 +2517,24 @@ La flora medicinal concreta no se inventa hasta disponer de canon.
 Canon:
 
 `Sociedad/salud_curanderia_norgard_v0.1.md`
+
+
+---
+
+## Gastronomía y alimentación
+
+Norgard comparte una base culinaria humana construida sobre cereales, legumbres, huerta, carne, pescado, lácteos, fruta, miel, sal, fermentación y conservación.
+
+Perfiles regionales:
+
+- Aethros/Hallheim: confluencia de productos del Reino;
+- Darovan: puertos, comercio y comida resistente de trabajo/transporte;
+- Edranor: vino y cocina con vino/vinagre;
+- Galdren: cereal, ganadería, pan, potajes, lácteos y carne;
+- Valrik: pescado, conservas de pescado y cerveza.
+
+La cocina no asigna una dieta rígida por clase. La desigualdad se expresa por calidad, cantidad, variedad, frescura, importados, elaboración y servicio.
+
+Canon:
+
+`Sociedad/gastronomia_alimentacion_norgard_v0.1.md`

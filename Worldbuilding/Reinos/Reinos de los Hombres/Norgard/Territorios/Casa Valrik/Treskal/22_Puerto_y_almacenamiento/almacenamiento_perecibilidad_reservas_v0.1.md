@@ -101,6 +101,23 @@ No se rellena inventario por normalización automática.
 
 ---
 
+# 2B. Estado FOOD
+
+El contrato Core añade estado alimentario:
+
+- FOOD01 raw/unprepared;
+- FOOD02 prepared;
+- FOOD03 preserved;
+- FOOD04 aging/declining;
+- FOOD05 spoiled/unsafe;
+- FOOD06 waste/discarded.
+
+ST describe necesidad de almacenamiento.
+
+FOOD describe el estado del alimento.
+
+Conservar puede alterar su comportamiento de almacenamiento, pero no lo vuelve eterno.
+
 # 3. Cereal
 
 ST3.

@@ -213,3 +213,33 @@ No son tarifas obligatorias.
 Puede existir pago en moneda, especie, materiales, trabajo definido, favor o combinación.
 
 Urgencia, distancia, duración, riesgo, materiales, relación y disponibilidad pueden alterar el precio.
+
+
+---
+
+## 13. Gastronomía — integración Punto 10
+
+El catálogo de preparaciones de Norgard no crea una tabla nueva de precios fijos.
+
+Se mantienen las anclas:
+
+- pan sencillo: 1 Clavo;
+- bebida ordinaria pequeña: 1 Clavo;
+- comida preparada sencilla: 2 Clavos;
+- comida abundante de taberna: 4 Clavos;
+- alimentación básica de una persona durante una jornada: 5 Clavos.
+
+El precio de un plato concreto depende de:
+
+- ingredientes;
+- cantidad;
+- calidad;
+- combustible;
+- trabajo;
+- conservación;
+- estación;
+- transporte;
+- escasez;
+- establecimiento.
+
+Un plato desaparece de la oferta si faltan ingredientes, aunque exista una referencia de precio.
