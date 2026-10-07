@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "nimroel_personality_traits_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_core_contract",
   "authorityScope": "nimroel_universal",
   "appliesTo": "persistent_sentient_npc_personality",
@@ -19,7 +19,25 @@
     "PERS07": "curiosity",
     "PERS08": "emotional_expressiveness",
     "PERS09": "generosity",
-    "PERS10": "reserve"
+    "PERS10": "reserve",
+    "PERS11": "warmth",
+    "PERS12": "humor_frequency",
+    "PERS13": "empathy_expression",
+    "PERS14": "directness",
+    "PERS15": "tact",
+    "PERS16": "rule_orientation",
+    "PERS17": "authority_deference",
+    "PERS18": "ambition",
+    "PERS19": "competitiveness",
+    "PERS20": "initial_trust_speed",
+    "PERS21": "intimacy_openness",
+    "PERS22": "optimism",
+    "PERS23": "self_confidence",
+    "PERS24": "forgiveness_tendency",
+    "PERS25": "teaching_instinct",
+    "PERS26": "autonomy_need",
+    "PERS27": "status_sensitivity",
+    "PERS28": "pride"
   },
   "traitsAreGradualNotBinary": true,
   "closedPersonalityClassesRequired": false,
@@ -66,5 +84,35 @@
     "formation_refs_if_any",
     "change_history_refs_if_any",
     "last_meaningful_update"
-  ]
+  ],
+  "backwardCompatibility": {
+    "PERS01_to_PERS10_semanticsUnchanged": true,
+    "existingProfilesRemainValid": true,
+    "missingNewDimensionsMayResolveOnFirstFullProfileGeneration": true,
+    "authoredProfilesMayLeaveDimensionsUnspecified": true,
+    "saveMigrationRequired": false
+  },
+  "internalGeneration": {
+    "normalizedScale": [
+      0,
+      1
+    ],
+    "playerVisibleExactNumbersRequired": false,
+    "legacyQualitativeValuesAccepted": true,
+    "deterministicVariationAllowed": true
+  },
+  "personalityProfileSystem": {
+    "profileIdPersistent": true,
+    "personalitySeedPersistent": true,
+    "proceduralRecipeIsStartingStructureNotIdentity": true,
+    "cultureProfessionRelationshipAndCurrentStateAreSeparateLayers": true,
+    "noRerollAfterResolution": true
+  },
+  "externalRefs": {
+    "persistentProfile": "nimroel_persistent_personality_profile_contract_v0.1.json",
+    "assignmentPromotion": "nimroel_personality_assignment_promotion_contract_v0.1.json",
+    "recipes": "nimroel_procedural_personality_recipe_library_v0.1.json",
+    "evolution": "nimroel_personality_evolution_continuity_contract_v0.1.json",
+    "aiExpression": "nimroel_ai_personality_expression_context_contract_v0.1.json"
+  }
 }

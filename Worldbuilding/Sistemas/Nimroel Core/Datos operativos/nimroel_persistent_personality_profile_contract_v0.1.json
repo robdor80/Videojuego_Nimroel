@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_persistent_personality_profile_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal_mechanics",
+  "currentProductionActivation": [
+    "Norgard_humans"
+  ],
+  "blockedUntilDedicatedCanon": [
+    "elves",
+    "dwarves_and_other_peoples",
+    "nonhuman_species"
+  ],
+  "principle": "Una personalidad resuelta es estado persistente del personaje. Puede evolucionar por historia representada, pero nunca se rerollea por carga, LOD, nueva conversación, cambio de oficio o cambio de importancia.",
+  "modes": [
+    "authored",
+    "procedural"
+  ],
+  "scalarTraitSource": "nimroel_personality_traits_contract_v0.1.json",
+  "styleLexiconSource": "nimroel_personality_trait_lexicon_v0.1.json",
+  "immutableIdentityFields": [
+    "personality_profile_id",
+    "personality_seed",
+    "initial_core_trait_vector",
+    "initial_qualitative_traits",
+    "resolved_at_event_ref",
+    "generation_rules_version"
+  ],
+  "profileFields": [
+    "personality_profile_id",
+    "personality_seed",
+    "mode",
+    "recipe_id_or_authored_ref",
+    "initial_core_trait_vector",
+    "current_core_trait_vector",
+    "qualitative_traits",
+    "humor_style",
+    "stress_style",
+    "affection_style",
+    "disagreement_style",
+    "leadership_style",
+    "social_signature",
+    "expression_modifier_refs",
+    "observed_constraint_refs",
+    "evolution_history_refs"
+  ],
+  "persistenceRules": [
+    "save_load_preserves_profile",
+    "logical_LOD_change_does_not_reroll",
+    "physical_materialization_does_not_reroll",
+    "occupation_change_does_not_reroll",
+    "residence_change_does_not_reroll",
+    "social_rank_change_does_not_reroll",
+    "relationship_change_does_not_rewrite_global_personality",
+    "current_mood_stress_injury_hunger_fatigue_and_grief_modify_expression_not_baseline",
+    "aging_does_not_automatically_invert_traits"
+  ],
+  "separationOfAuthority": {
+    "PERS": "stable personality baseline",
+    "EMO_MOOD_STRS": "temporary emotional and stress state",
+    "VAL": "personal values and principles",
+    "SELF": "self concept and roles",
+    "TRUST_AFF_FRI_RIFT": "relationship specific state",
+    "MEM": "remembered experience",
+    "GOAL_DEC": "current motives and deliberation",
+    "CHD_AGE": "developmental and life stage expression",
+    "culture": "learned expression and norms only",
+    "profession": "register and practiced habits only"
+  },
+  "proceduralGuardrails": [
+    "Do not randomly generate severe antisocial pathology, sadism, psychopathy, compulsive cruelty or comparable severe dysfunction as flavor.",
+    "Do not infer personality from sex, profession, wealth, title, Great House or settlement.",
+    "Do not treat culture as genetic personality.",
+    "Contradictory-seeming traits are allowed when behavior remains plausible.",
+    "No canonical reference character identity may become a production template."
+  ],
+  "authoredMode": {
+    "intendedFor": "very_important_or_explicitly_authored_NPC",
+    "proceduralFallbackAllowedOnlyByExplicitDesignChoice": true,
+    "revisionsAfterExposureMustPreserveEstablishedBehavior": true
+  },
+  "proceduralMode": {
+    "intendedFor": "persistent_important_NPC_without_authored_profile",
+    "exactProfileReuseForbidden": true,
+    "recipeReuseAllowed": true,
+    "deterministicUniqueVariationRequired": true
+  }
+}

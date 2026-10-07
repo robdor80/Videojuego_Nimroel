@@ -82,6 +82,24 @@ Cuando uno de estos habitantes debe entrar en interacción significativa, se **p
 
 ---
 
+# 2B. Personalidad asociada a los niveles
+
+Para humanos de Norgard:
+
+- **A** → personalidad autoral;
+- **B** → personalidad procedural completa y persistente;
+- **C** → `personality_seed` latente y, cuando sea útil, una firma conductual ligera.
+
+Cuando C promociona a B, el perfil se genera una sola vez usando:
+
+- `campaign_seed`;
+- `npc_id`;
+- `personality_seed`;
+- versión de reglas;
+- conducta ya observada.
+
+Una conversación incidental puede no promover al NPC. Si después promociona, lo observado sigue siendo vinculante.
+
 # 3. Promoción irreversible
 
 Una vez un residente latente recibe identidad concreta:
@@ -90,7 +108,8 @@ Una vez un residente latente recibe identidad concreta:
 - no cambia de nombre;
 - no cambia de familia arbitrariamente;
 - no cambia de profesión sin evento;
-- no vuelve a ser anónimo.
+- no vuelve a ser anónimo;
+- no rerollea su personalidad.
 
 El World State conserva la promoción.
 

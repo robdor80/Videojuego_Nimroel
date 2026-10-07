@@ -2480,3 +2480,18 @@ Reglas generales:
 Canon:
 
 `Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md`
+
+
+---
+
+## Personalidad persistente de NPC humanos
+
+Norgard activa el sistema de personalidad persistente de Nimroel Core exclusivamente para población humana.
+
+- NPC muy importante → personalidad autoral;
+- NPC importante/persistente → personalidad procedural única;
+- NPC random → semilla latente;
+- si un random se vuelve relevante → promoción irreversible a perfil persistente;
+- el perfil no se rerollea al guardar/cargar, cambiar oficio, residencia, rango o LOD.
+
+Elfos y demás pueblos no humanos quedan fuera de esta activación hasta que se desarrollen sus capas propias.

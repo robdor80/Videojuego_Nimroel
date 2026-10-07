@@ -323,3 +323,19 @@ Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya 
 - propiedad/herencia/alquiler.
 
 Esto confirma la decisión original de no crear una capa 100 local: Treskal hereda estos sistemas desde Norgard.
+
+
+---
+
+### Actualización transversal — personalidad persistente
+
+La capa psicológica de NPC humanos queda reforzada sin crear una nueva capa local:
+
+- PERS ampliado en Core a 28 dimensiones;
+- generación procedural activada en Norgard;
+- población A/B/C de Treskal conectada a authored/procedural/latent;
+- promoción C→B irreversible;
+- persistencia a través de LOD;
+- IA solo expresiva, no autoritativa.
+
+Esto no altera el estado de cierre funcional de Treskal.

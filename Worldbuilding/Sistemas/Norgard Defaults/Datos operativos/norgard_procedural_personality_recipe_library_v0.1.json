@@ -1,0 +1,2545 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_procedural_personality_recipe_library",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "scope": "Norgard_humans_only",
+  "recipeCount": 80,
+  "hardRules": [
+    "Recipe selection must not be determined by profession, sex, wealth, Great House, rank or settlement.",
+    "Culture may alter expression, not choose the underlying recipe.",
+    "Observed prior behavior may constrain recipe selection during C→B promotion.",
+    "Recipes are abstract starting structures, never named character copies.",
+    "A generated profile receives deterministic variation and becomes unique and persistent."
+  ],
+  "generation": {
+    "neutralDefault": 0.5,
+    "unspecifiedDimensionRandomBand": [
+      0.36,
+      0.64
+    ],
+    "anchorVariationBand": 0.08,
+    "clamp": [
+      0,
+      1
+    ],
+    "deterministicFrom": [
+      "campaign_seed",
+      "npc_id",
+      "personality_seed"
+    ],
+    "noRerollAfterResolution": true
+  },
+  "recipes": [
+    {
+      "recipe_id": "warm_patient_protector",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS11": 0.84,
+        "PERS13": 0.71,
+        "PERS03": 0.84,
+        "PERS15": 0.68,
+        "PERS04": 0.72,
+        "PERS09": 0.7
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "warm",
+        "patient",
+        "protective"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "reserved_dutiful_observer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.28,
+        "PERS10": 0.71,
+        "PERS21": 0.3,
+        "PERS06": 0.86,
+        "PERS16": 0.68,
+        "PERS07": 0.66,
+        "PERS03": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "disciplined",
+        "observant"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "cheerful_generous_social",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS11": 0.74,
+        "PERS13": 0.72,
+        "PERS01": 0.72,
+        "PERS20": 0.64,
+        "PERS12": 0.84,
+        "PERS09": 0.86,
+        "PERS22": 0.86,
+        "PERS23": 0.62
+      },
+      "style_bias": {
+        "humor": [
+          "playful"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "warm",
+        "social",
+        "humorous",
+        "generous",
+        "optimistic"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "dry_cautious_pragmatist",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.28,
+        "PERS10": 0.82,
+        "PERS21": 0.3,
+        "PERS02": 0.74,
+        "PERS03": 0.68,
+        "PERS05": 0.68,
+        "PERS22": 0.48,
+        "PERS14": 0.86,
+        "PERS15": 0.36
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "overprepares",
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "cautious",
+        "pragmatic",
+        "direct"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "bold_autonomous_explorer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS02": 0.3,
+        "PERS04": 0.74,
+        "PERS23": 0.82,
+        "PERS26": 0.88,
+        "PERS17": 0.3,
+        "PERS07": 0.88,
+        "PERS05": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "takes_control"
+        ]
+      },
+      "qualitative_biases": [
+        "bold",
+        "autonomous",
+        "curious",
+        "confident"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "patient_tactful_mentor",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS03": 0.81,
+        "PERS15": 0.77,
+        "PERS14": 0.48,
+        "PERS25": 0.88,
+        "PERS13": 0.69,
+        "PERS11": 0.84
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "patient",
+        "tactful",
+        "mentor",
+        "warm"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "proud_competitive_achiever",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS28": 0.78,
+        "PERS23": 0.76,
+        "PERS19": 0.86,
+        "PERS18": 0.88,
+        "PERS27": 0.66,
+        "PERS04": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "proud",
+        "competitive",
+        "ambitious",
+        "confident"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "guarded_loyal_realist",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS20": 0.24,
+        "PERS10": 0.79,
+        "PERS02": 0.67,
+        "PERS21": 0.24,
+        "PERS04": 0.72,
+        "PERS09": 0.66,
+        "PERS13": 0.7,
+        "PERS05": 0.68,
+        "PERS22": 0.48,
+        "PERS24": 0.68,
+        "PERS28": 0.6
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "slowtrust",
+        "private",
+        "protective",
+        "pragmatic",
+        "loyal"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "blunt_warm_helper",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS14": 0.86,
+        "PERS15": 0.54,
+        "PERS11": 0.77,
+        "PERS13": 0.8,
+        "PERS09": 0.86
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "direct",
+        "warm",
+        "empathic",
+        "generous"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "quiet_principled_steady",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.28,
+        "PERS10": 0.82,
+        "PERS21": 0.3,
+        "PERS06": 0.86,
+        "PERS16": 0.65,
+        "PERS22": 0.72,
+        "PERS04": 0.6,
+        "PERS28": 0.28,
+        "PERS27": 0.38,
+        "PERS13": 0.64
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "disciplined",
+        "idealistic",
+        "humble"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "social_optimistic_storyteller",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.72,
+        "PERS11": 0.68,
+        "PERS20": 0.64,
+        "PERS22": 0.86,
+        "PERS23": 0.62,
+        "PERS12": 0.84,
+        "PERS08": 0.82,
+        "PERS21": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "playful"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "social",
+        "optimistic",
+        "humorous",
+        "expressive"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "skeptical_autonomous_observer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS17": 0.29,
+        "PERS26": 0.82,
+        "PERS07": 0.68,
+        "PERS20": 0.24,
+        "PERS10": 0.66,
+        "PERS02": 0.7,
+        "PERS03": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "questioning",
+        "slowtrust",
+        "autonomous",
+        "observant"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "formal_duty_guardian",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS16": 0.78,
+        "PERS17": 0.72,
+        "PERS06": 0.82,
+        "PERS04": 0.72,
+        "PERS09": 0.7,
+        "PERS13": 0.7,
+        "PERS01": 0.28,
+        "PERS10": 0.82,
+        "PERS21": 0.3
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "rulebound",
+        "protective",
+        "disciplined",
+        "reserved"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "flexible_good_humored_companion",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS05": 0.84,
+        "PERS16": 0.32,
+        "PERS12": 0.84,
+        "PERS01": 0.72,
+        "PERS11": 0.76,
+        "PERS13": 0.72,
+        "PERS20": 0.64
+      },
+      "style_bias": {
+        "humor": [
+          "playful"
+        ],
+        "stress": [
+          "improvises"
+        ]
+      },
+      "qualitative_biases": [
+        "flexible",
+        "humorous",
+        "warm",
+        "social"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "cautious_kind_planner",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS02": 0.84,
+        "PERS03": 0.76,
+        "PERS15": 0.68,
+        "PERS11": 0.84,
+        "PERS13": 0.72,
+        "PERS06": 0.86,
+        "PERS16": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "overprepares"
+        ]
+      },
+      "qualitative_biases": [
+        "cautious",
+        "patient",
+        "warm",
+        "disciplined"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "impatient_high_confidence_doer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS03": 0.28,
+        "PERS14": 0.8,
+        "PERS02": 0.3,
+        "PERS04": 0.74,
+        "PERS23": 0.82,
+        "PERS15": 0.36
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "takes_control",
+          "becomes_impatient"
+        ]
+      },
+      "qualitative_biases": [
+        "impatient",
+        "bold",
+        "confident",
+        "direct"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "private_deep_attachment",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS21": 0.53,
+        "PERS10": 0.79,
+        "PERS11": 0.72,
+        "PERS20": 0.24,
+        "PERS02": 0.7,
+        "PERS04": 0.72,
+        "PERS09": 0.7,
+        "PERS13": 0.7
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "private",
+        "intimate",
+        "slowtrust",
+        "protective"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "earnest_idealistic_helper",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS16": 0.62,
+        "PERS22": 0.72,
+        "PERS04": 0.72,
+        "PERS09": 0.86,
+        "PERS11": 0.77,
+        "PERS13": 0.72,
+        "PERS14": 0.72
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "idealistic",
+        "generous",
+        "warm",
+        "assertive"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "ambitious_tactful_climber",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS18": 0.88,
+        "PERS27": 0.77,
+        "PERS15": 0.77,
+        "PERS14": 0.48,
+        "PERS06": 0.86,
+        "PERS16": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "ambitious",
+        "tactful",
+        "statusaware",
+        "disciplined"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "humble_curious_learner",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS28": 0.28,
+        "PERS27": 0.5,
+        "PERS13": 0.64,
+        "PERS07": 0.88,
+        "PERS05": 0.68,
+        "PERS03": 0.84,
+        "PERS15": 0.68,
+        "PERS23": 0.3,
+        "PERS02": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "humble",
+        "curious",
+        "patient",
+        "selfdoubt"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "pragmatic_protective_leader",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS05": 0.68,
+        "PERS02": 0.64,
+        "PERS22": 0.48,
+        "PERS04": 0.75,
+        "PERS09": 0.7,
+        "PERS13": 0.7,
+        "PERS14": 0.72,
+        "PERS23": 0.86
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "takes_control"
+        ]
+      },
+      "qualitative_biases": [
+        "pragmatic",
+        "protective",
+        "assertive",
+        "confident"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "calm_reserved_mentor",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.28,
+        "PERS10": 0.82,
+        "PERS21": 0.3,
+        "PERS03": 0.81,
+        "PERS15": 0.68,
+        "PERS25": 0.88,
+        "PERS13": 0.66,
+        "PERS06": 0.86,
+        "PERS16": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "patient",
+        "mentor",
+        "disciplined"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "witty_proud_competitor",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS12": 0.84,
+        "PERS01": 0.72,
+        "PERS28": 0.78,
+        "PERS23": 0.66,
+        "PERS19": 0.86,
+        "PERS11": 0.68,
+        "PERS20": 0.64
+      },
+      "style_bias": {
+        "humor": [
+          "playful"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "humorous",
+        "proud",
+        "competitive",
+        "social"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "slow_trust_forgiving_friend",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS20": 0.24,
+        "PERS10": 0.72,
+        "PERS02": 0.7,
+        "PERS24": 0.84,
+        "PERS13": 0.69,
+        "PERS11": 0.84,
+        "PERS04": 0.72,
+        "PERS09": 0.7
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "slowtrust",
+        "forgiving",
+        "warm",
+        "protective"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "rule_flexible_problem_solver",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS05": 0.73,
+        "PERS16": 0.5,
+        "PERS02": 0.64,
+        "PERS22": 0.48,
+        "PERS07": 0.88,
+        "PERS06": 0.86
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "flexible",
+        "pragmatic",
+        "curious",
+        "disciplined"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "direct_principled_dissenter",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS14": 0.79,
+        "PERS15": 0.36,
+        "PERS16": 0.62,
+        "PERS22": 0.72,
+        "PERS04": 0.72,
+        "PERS17": 0.28,
+        "PERS26": 0.76,
+        "PERS07": 0.7
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "direct",
+        "idealistic",
+        "questioning",
+        "assertive"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "optimistic_resilient_helper",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS22": 0.86,
+        "PERS23": 0.62,
+        "PERS09": 0.86,
+        "PERS11": 0.77,
+        "PERS13": 0.72,
+        "PERS05": 0.84,
+        "PERS16": 0.32
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "improvises"
+        ]
+      },
+      "qualitative_biases": [
+        "optimistic",
+        "generous",
+        "warm",
+        "flexible"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "guarded_ambitious_operator",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS21": 0.24,
+        "PERS10": 0.86,
+        "PERS18": 0.88,
+        "PERS27": 0.77,
+        "PERS05": 0.68,
+        "PERS02": 0.64,
+        "PERS22": 0.48,
+        "PERS15": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "private",
+        "ambitious",
+        "pragmatic",
+        "statusaware"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "patient_low_status_steady",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS03": 0.84,
+        "PERS15": 0.68,
+        "PERS28": 0.28,
+        "PERS27": 0.38,
+        "PERS13": 0.65,
+        "PERS06": 0.86,
+        "PERS16": 0.68,
+        "PERS24": 0.84
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "patient",
+        "humble",
+        "disciplined",
+        "forgiving"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "restless_curiosity_seeker",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS07": 0.88,
+        "PERS05": 0.78,
+        "PERS26": 0.88,
+        "PERS17": 0.3,
+        "PERS16": 0.26,
+        "PERS02": 0.42,
+        "PERS01": 0.82,
+        "PERS11": 0.68,
+        "PERS20": 0.64
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "improvises"
+        ]
+      },
+      "qualitative_biases": [
+        "curious",
+        "autonomous",
+        "improvisational",
+        "social"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "stern_reliable_rule_keeper",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS16": 0.78,
+        "PERS17": 0.72,
+        "PERS06": 0.82,
+        "PERS14": 0.86,
+        "PERS15": 0.36,
+        "PERS28": 0.88,
+        "PERS23": 0.66
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "rulebound",
+        "disciplined",
+        "direct",
+        "proud"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "gentle_private_listener",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS11": 0.84,
+        "PERS13": 0.8,
+        "PERS21": 0.24,
+        "PERS10": 0.73,
+        "PERS15": 0.7,
+        "PERS03": 0.76,
+        "PERS07": 0.66
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "warm",
+        "private",
+        "empathic",
+        "patient",
+        "observant"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "boastful_good_natured_rival",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS19": 0.86,
+        "PERS28": 0.78,
+        "PERS23": 0.66,
+        "PERS12": 0.84,
+        "PERS01": 0.62,
+        "PERS11": 0.84,
+        "PERS13": 0.72
+      },
+      "style_bias": {
+        "humor": [
+          "playful"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "competitive",
+        "proud",
+        "humorous",
+        "warm"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "anxious_conscientious_planner",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS23": 0.3,
+        "PERS02": 0.76,
+        "PERS27": 0.75,
+        "PERS06": 0.86,
+        "PERS16": 0.68,
+        "PERS03": 0.68,
+        "PERS15": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "overprepares"
+        ]
+      },
+      "qualitative_biases": [
+        "selfdoubt",
+        "disciplined",
+        "cautious",
+        "statusaware"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "independent_pragmatic_survivor",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS26": 0.88,
+        "PERS17": 0.3,
+        "PERS05": 0.76,
+        "PERS02": 0.67,
+        "PERS22": 0.48,
+        "PERS20": 0.24,
+        "PERS10": 0.72,
+        "PERS16": 0.32
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "improvises"
+        ]
+      },
+      "qualitative_biases": [
+        "autonomous",
+        "pragmatic",
+        "slowtrust",
+        "flexible"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "openhearted_social_peacemaker",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.82,
+        "PERS11": 0.76,
+        "PERS20": 0.64,
+        "PERS13": 0.75,
+        "PERS15": 0.79,
+        "PERS24": 0.84,
+        "PERS14": 0.48
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "social",
+        "warm",
+        "empathic",
+        "forgiving",
+        "tactful"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "blunt_loyal_skeptic",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS14": 0.86,
+        "PERS15": 0.36,
+        "PERS20": 0.24,
+        "PERS10": 0.72,
+        "PERS02": 0.7,
+        "PERS04": 0.72,
+        "PERS09": 0.66,
+        "PERS13": 0.7,
+        "PERS17": 0.28,
+        "PERS26": 0.76,
+        "PERS07": 0.7,
+        "PERS24": 0.68,
+        "PERS28": 0.6
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "direct",
+        "slowtrust",
+        "protective",
+        "questioning",
+        "loyal"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "formal_status_sensitive_organizer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS27": 0.88,
+        "PERS15": 0.77,
+        "PERS16": 0.78,
+        "PERS17": 0.72,
+        "PERS06": 0.82,
+        "PERS14": 0.48
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "statusaware",
+        "rulebound",
+        "disciplined",
+        "tactful"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "playful_confident_maverick",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS12": 0.84,
+        "PERS01": 0.62,
+        "PERS23": 0.82,
+        "PERS04": 0.74,
+        "PERS26": 0.88,
+        "PERS17": 0.3,
+        "PERS05": 0.84,
+        "PERS16": 0.32,
+        "PERS02": 0.3
+      },
+      "style_bias": {
+        "humor": [
+          "playful"
+        ],
+        "stress": [
+          "takes_control",
+          "improvises"
+        ]
+      },
+      "qualitative_biases": [
+        "humorous",
+        "confident",
+        "autonomous",
+        "flexible",
+        "bold"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "reserved_idealistic_reformer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.28,
+        "PERS10": 0.82,
+        "PERS21": 0.3,
+        "PERS16": 0.62,
+        "PERS22": 0.72,
+        "PERS04": 0.6,
+        "PERS17": 0.28,
+        "PERS26": 0.76,
+        "PERS07": 0.7,
+        "PERS03": 0.84,
+        "PERS15": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "idealistic",
+        "questioning",
+        "patient"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "protective_grudge_holder",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS04": 0.72,
+        "PERS09": 0.7,
+        "PERS13": 0.7,
+        "PERS24": 0.22,
+        "PERS28": 0.81,
+        "PERS23": 0.66,
+        "PERS20": 0.24,
+        "PERS10": 0.72,
+        "PERS02": 0.7
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "protective",
+        "grudge",
+        "proud",
+        "slowtrust"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "warm_humble_mentor",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS11": 0.84,
+        "PERS13": 0.67,
+        "PERS28": 0.28,
+        "PERS27": 0.38,
+        "PERS25": 0.88,
+        "PERS03": 0.78,
+        "PERS24": 0.84
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "warm",
+        "humble",
+        "mentor",
+        "forgiving"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "ambitious_rule_keeper",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS18": 0.88,
+        "PERS27": 0.66,
+        "PERS16": 0.78,
+        "PERS17": 0.72,
+        "PERS06": 0.82,
+        "PERS19": 0.86,
+        "PERS28": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "ambitious",
+        "rulebound",
+        "competitive",
+        "disciplined"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "curious_cautious_reflector",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS07": 0.77,
+        "PERS05": 0.68,
+        "PERS02": 0.84,
+        "PERS03": 0.73,
+        "PERS15": 0.68,
+        "PERS10": 0.6
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "overprepares"
+        ]
+      },
+      "qualitative_biases": [
+        "curious",
+        "cautious",
+        "patient",
+        "observant"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "direct_generous_neighbor",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS14": 0.86,
+        "PERS15": 0.36,
+        "PERS09": 0.86,
+        "PERS11": 0.74,
+        "PERS01": 0.82,
+        "PERS20": 0.64,
+        "PERS13": 0.72
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "direct",
+        "generous",
+        "social",
+        "warm"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "solitary_mastery_proud",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.28,
+        "PERS10": 0.82,
+        "PERS21": 0.3,
+        "PERS28": 0.88,
+        "PERS23": 0.66,
+        "PERS06": 0.86,
+        "PERS16": 0.68,
+        "PERS07": 0.88,
+        "PERS05": 0.68,
+        "PERS26": 0.88,
+        "PERS17": 0.3
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "proud",
+        "disciplined",
+        "curious",
+        "autonomous"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "tactful_private_negotiator",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS15": 0.86,
+        "PERS14": 0.48,
+        "PERS21": 0.24,
+        "PERS10": 0.73,
+        "PERS05": 0.68,
+        "PERS02": 0.64,
+        "PERS22": 0.48,
+        "PERS07": 0.66,
+        "PERS03": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "tactful",
+        "private",
+        "pragmatic",
+        "observant"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "expressive_impulsive_friend",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS08": 0.82,
+        "PERS21": 0.68,
+        "PERS12": 0.84,
+        "PERS01": 0.72,
+        "PERS11": 0.76,
+        "PERS20": 0.64,
+        "PERS03": 0.28,
+        "PERS14": 0.74,
+        "PERS13": 0.72
+      },
+      "style_bias": {
+        "humor": [
+          "teasing_or_dry"
+        ],
+        "stress": [
+          "becomes_impatient"
+        ]
+      },
+      "qualitative_biases": [
+        "expressive",
+        "humorous",
+        "social",
+        "impatient",
+        "warm"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "quiet_confident_guardian",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.28,
+        "PERS10": 0.82,
+        "PERS21": 0.3,
+        "PERS23": 0.86,
+        "PERS04": 0.7,
+        "PERS09": 0.7,
+        "PERS13": 0.7,
+        "PERS03": 0.84,
+        "PERS15": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "confident",
+        "protective",
+        "patient"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "status_aware_social_diplomat",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS27": 0.88,
+        "PERS15": 0.75,
+        "PERS01": 0.82,
+        "PERS11": 0.68,
+        "PERS20": 0.64,
+        "PERS14": 0.48,
+        "PERS13": 0.88
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "statusaware",
+        "social",
+        "tactful",
+        "empathic"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "skeptical_forgiving_realist",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS17": 0.28,
+        "PERS26": 0.76,
+        "PERS07": 0.7,
+        "PERS24": 0.84,
+        "PERS13": 0.66,
+        "PERS05": 0.68,
+        "PERS02": 0.64,
+        "PERS22": 0.48,
+        "PERS03": 0.84,
+        "PERS15": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "questioning",
+        "forgiving",
+        "pragmatic",
+        "patient"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "competitive_self_doubting_striver",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS19": 0.86,
+        "PERS28": 0.68,
+        "PERS23": 0.3,
+        "PERS02": 0.68,
+        "PERS27": 0.64,
+        "PERS18": 0.88,
+        "PERS06": 0.86,
+        "PERS16": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "competitive",
+        "selfdoubt",
+        "ambitious",
+        "disciplined"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "bold_generous_adventurer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS02": 0.3,
+        "PERS04": 0.8,
+        "PERS23": 0.7,
+        "PERS09": 0.86,
+        "PERS11": 0.7,
+        "PERS07": 0.88,
+        "PERS05": 0.68,
+        "PERS22": 0.86
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "takes_control"
+        ]
+      },
+      "qualitative_biases": [
+        "bold",
+        "generous",
+        "curious",
+        "optimistic"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "rigid_proud_traditionalist",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS16": 0.88,
+        "PERS17": 0.72,
+        "PERS06": 0.78,
+        "PERS28": 0.81,
+        "PERS23": 0.66,
+        "PERS24": 0.22,
+        "PERS27": 0.88,
+        "PERS15": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "rulebound",
+        "proud",
+        "grudge",
+        "statusaware"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "flexible_loyal_mediator",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS05": 0.84,
+        "PERS16": 0.32,
+        "PERS04": 0.72,
+        "PERS09": 0.66,
+        "PERS13": 0.68,
+        "PERS15": 0.86,
+        "PERS14": 0.48,
+        "PERS24": 0.76,
+        "PERS28": 0.6
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "improvises"
+        ]
+      },
+      "qualitative_biases": [
+        "flexible",
+        "protective",
+        "tactful",
+        "forgiving",
+        "loyal"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "private_autonomous_wanderer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS21": 0.24,
+        "PERS10": 0.86,
+        "PERS26": 0.88,
+        "PERS17": 0.3,
+        "PERS07": 0.88,
+        "PERS05": 0.68,
+        "PERS02": 0.64,
+        "PERS22": 0.48
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "private",
+        "autonomous",
+        "curious",
+        "pragmatic"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "social_eager_helper",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.82,
+        "PERS11": 0.74,
+        "PERS20": 0.64,
+        "PERS13": 0.72,
+        "PERS15": 0.86,
+        "PERS14": 0.48,
+        "PERS23": 0.3,
+        "PERS02": 0.68,
+        "PERS27": 0.62,
+        "PERS09": 0.86
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "social",
+        "warm",
+        "tactful",
+        "selfdoubt",
+        "generous"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "cold_surface_reliable_core",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.28,
+        "PERS10": 0.82,
+        "PERS21": 0.3,
+        "PERS06": 0.86,
+        "PERS16": 0.68,
+        "PERS04": 0.72,
+        "PERS09": 0.66,
+        "PERS13": 0.7,
+        "PERS14": 0.86,
+        "PERS15": 0.36,
+        "PERS24": 0.68,
+        "PERS28": 0.6
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "disciplined",
+        "protective",
+        "direct",
+        "loyal"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "high_pride_low_deference_rebel",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS28": 0.88,
+        "PERS23": 0.66,
+        "PERS17": 0.29,
+        "PERS26": 0.82,
+        "PERS07": 0.7,
+        "PERS04": 0.84,
+        "PERS14": 0.72
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "takes_control"
+        ]
+      },
+      "qualitative_biases": [
+        "proud",
+        "questioning",
+        "autonomous",
+        "assertive"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "patient_optimistic_builder_mind",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS03": 0.84,
+        "PERS15": 0.68,
+        "PERS22": 0.86,
+        "PERS23": 0.62,
+        "PERS06": 0.86,
+        "PERS16": 0.68,
+        "PERS09": 0.86,
+        "PERS11": 0.7
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "patient",
+        "optimistic",
+        "disciplined",
+        "generous"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "cautious_status_aware_survivor",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS02": 0.73,
+        "PERS03": 0.68,
+        "PERS27": 0.88,
+        "PERS15": 0.68,
+        "PERS05": 0.68,
+        "PERS22": 0.48,
+        "PERS20": 0.24,
+        "PERS10": 0.72
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "overprepares"
+        ]
+      },
+      "qualitative_biases": [
+        "cautious",
+        "statusaware",
+        "pragmatic",
+        "slowtrust"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "warm_assertive_anchor",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS11": 0.84,
+        "PERS13": 0.71,
+        "PERS04": 0.78,
+        "PERS14": 0.72,
+        "PERS09": 0.7,
+        "PERS06": 0.86,
+        "PERS16": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "takes_control"
+        ]
+      },
+      "qualitative_biases": [
+        "warm",
+        "assertive",
+        "protective",
+        "disciplined"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "humorous_skeptical_observer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS12": 0.84,
+        "PERS01": 0.62,
+        "PERS17": 0.28,
+        "PERS26": 0.76,
+        "PERS07": 0.68,
+        "PERS10": 0.73,
+        "PERS03": 0.68,
+        "PERS21": 0.24
+      },
+      "style_bias": {
+        "humor": [
+          "playful"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "humorous",
+        "questioning",
+        "observant",
+        "private"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "confident_tactful_directive",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS23": 0.86,
+        "PERS04": 0.75,
+        "PERS14": 0.6,
+        "PERS15": 0.86,
+        "PERS06": 0.86,
+        "PERS16": 0.68,
+        "PERS09": 0.7,
+        "PERS13": 0.7
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "takes_control"
+        ]
+      },
+      "qualitative_biases": [
+        "confident",
+        "assertive",
+        "tactful",
+        "disciplined",
+        "protective"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "gentle_self_doubting_carer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS11": 0.77,
+        "PERS13": 0.8,
+        "PERS15": 0.7,
+        "PERS23": 0.3,
+        "PERS02": 0.68,
+        "PERS27": 0.62,
+        "PERS09": 0.86,
+        "PERS03": 0.84
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "warm",
+        "empathic",
+        "selfdoubt",
+        "generous",
+        "patient"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "improvisational_social_trickster",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS05": 0.78,
+        "PERS16": 0.26,
+        "PERS02": 0.42,
+        "PERS01": 0.72,
+        "PERS11": 0.68,
+        "PERS20": 0.64,
+        "PERS12": 0.84,
+        "PERS07": 0.88,
+        "PERS23": 0.86,
+        "PERS04": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "playful"
+        ],
+        "stress": [
+          "improvises"
+        ]
+      },
+      "qualitative_biases": [
+        "improvisational",
+        "social",
+        "humorous",
+        "curious",
+        "confident"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "principled_unforgiving_stalwart",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS16": 0.65,
+        "PERS22": 0.72,
+        "PERS04": 0.72,
+        "PERS24": 0.22,
+        "PERS28": 0.74,
+        "PERS06": 0.86,
+        "PERS14": 0.72
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "idealistic",
+        "grudge",
+        "disciplined",
+        "assertive"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "slow_trust_deeply_loyal",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS20": 0.24,
+        "PERS10": 0.79,
+        "PERS02": 0.7,
+        "PERS21": 0.24,
+        "PERS04": 0.72,
+        "PERS09": 0.66,
+        "PERS13": 0.7,
+        "PERS03": 0.84,
+        "PERS15": 0.68,
+        "PERS28": 0.74,
+        "PERS23": 0.66,
+        "PERS24": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "slowtrust",
+        "private",
+        "protective",
+        "patient",
+        "proud",
+        "loyal"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "optimistic_ambitious_initiator",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS22": 0.86,
+        "PERS23": 0.74,
+        "PERS18": 0.88,
+        "PERS27": 0.66,
+        "PERS04": 0.68,
+        "PERS01": 0.82,
+        "PERS11": 0.68,
+        "PERS20": 0.64
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "optimistic",
+        "ambitious",
+        "confident",
+        "social"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "reserved_low_ambition_contented",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.28,
+        "PERS10": 0.82,
+        "PERS21": 0.3,
+        "PERS28": 0.28,
+        "PERS27": 0.38,
+        "PERS13": 0.65,
+        "PERS03": 0.84,
+        "PERS15": 0.68,
+        "PERS24": 0.84
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "humble",
+        "patient",
+        "forgiving"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "direct_competitive_perfectionist",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS14": 0.8,
+        "PERS15": 0.36,
+        "PERS19": 0.86,
+        "PERS28": 0.78,
+        "PERS06": 0.86,
+        "PERS16": 0.68,
+        "PERS23": 0.66,
+        "PERS03": 0.28
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "becomes_impatient"
+        ]
+      },
+      "qualitative_biases": [
+        "direct",
+        "competitive",
+        "disciplined",
+        "proud",
+        "impatient"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "curious_warm_teacher_mind",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS07": 0.88,
+        "PERS05": 0.68,
+        "PERS11": 0.84,
+        "PERS13": 0.75,
+        "PERS25": 0.88,
+        "PERS03": 0.81,
+        "PERS15": 0.7
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "curious",
+        "warm",
+        "mentor",
+        "empathic",
+        "patient"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "pragmatic_rule_bound_steward_mind",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS05": 0.68,
+        "PERS02": 0.64,
+        "PERS22": 0.48,
+        "PERS16": 0.78,
+        "PERS17": 0.72,
+        "PERS06": 0.82,
+        "PERS27": 0.88,
+        "PERS15": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "pragmatic",
+        "rulebound",
+        "disciplined",
+        "statusaware"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "autonomous_compassionate_dissenter",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS26": 0.82,
+        "PERS17": 0.29,
+        "PERS13": 0.88,
+        "PERS15": 0.72,
+        "PERS07": 0.7,
+        "PERS16": 0.62,
+        "PERS22": 0.72,
+        "PERS04": 0.6
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "autonomous",
+        "empathic",
+        "questioning",
+        "idealistic"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "social_proud_performer",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.72,
+        "PERS11": 0.68,
+        "PERS20": 0.64,
+        "PERS28": 0.88,
+        "PERS23": 0.66,
+        "PERS12": 0.84,
+        "PERS08": 0.82,
+        "PERS21": 0.68,
+        "PERS27": 0.88,
+        "PERS15": 0.68
+      },
+      "style_bias": {
+        "humor": [
+          "playful"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "social",
+        "proud",
+        "humorous",
+        "expressive",
+        "statusaware"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "quiet_pessimistic_watchful",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.28,
+        "PERS10": 0.71,
+        "PERS21": 0.3,
+        "PERS22": 0.28,
+        "PERS02": 0.71,
+        "PERS07": 0.66,
+        "PERS03": 0.68,
+        "PERS20": 0.24
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "pessimistic",
+        "observant",
+        "slowtrust"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "forgiving_flexible_reconciler",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS24": 0.84,
+        "PERS13": 0.77,
+        "PERS05": 0.84,
+        "PERS16": 0.32,
+        "PERS15": 0.75,
+        "PERS14": 0.48,
+        "PERS03": 0.84
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "improvises"
+        ]
+      },
+      "qualitative_biases": [
+        "forgiving",
+        "flexible",
+        "empathic",
+        "tactful",
+        "patient"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "bold_status_sensitive_challenger",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS02": 0.3,
+        "PERS04": 0.82,
+        "PERS23": 0.72,
+        "PERS27": 0.88,
+        "PERS15": 0.68,
+        "PERS19": 0.86,
+        "PERS28": 0.78,
+        "PERS14": 0.72
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "takes_control"
+        ]
+      },
+      "qualitative_biases": [
+        "bold",
+        "statusaware",
+        "competitive",
+        "assertive",
+        "proud"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "humble_pragmatic_listener",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS28": 0.28,
+        "PERS27": 0.38,
+        "PERS13": 0.76,
+        "PERS05": 0.68,
+        "PERS02": 0.64,
+        "PERS22": 0.48,
+        "PERS07": 0.66,
+        "PERS10": 0.6,
+        "PERS03": 0.76,
+        "PERS15": 0.7
+      },
+      "style_bias": {
+        "humor": [
+          "contextual"
+        ],
+        "stress": [
+          "context_dependent"
+        ]
+      },
+      "qualitative_biases": [
+        "humble",
+        "pragmatic",
+        "observant",
+        "patient",
+        "empathic"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    },
+    {
+      "recipe_id": "reserved_humorous_slow_burn_friend",
+      "scope": "Norgard_humans_only",
+      "weight": 1,
+      "anchors": {
+        "PERS01": 0.45,
+        "PERS10": 0.77,
+        "PERS21": 0.3,
+        "PERS12": 0.84,
+        "PERS20": 0.24,
+        "PERS02": 0.7,
+        "PERS11": 0.84,
+        "PERS13": 0.69,
+        "PERS24": 0.84
+      },
+      "style_bias": {
+        "humor": [
+          "playful"
+        ],
+        "stress": [
+          "withdraws"
+        ]
+      },
+      "qualitative_biases": [
+        "reserved",
+        "humorous",
+        "slowtrust",
+        "warm",
+        "forgiving"
+      ],
+      "not_a_profession_or_social_class": true,
+      "source_character_identity_forbidden": true
+    }
+  ]
+}

@@ -56,6 +56,18 @@ Tendencia a proteger intimidad, hablar poco de sí mismo o mantener distancia in
 
 ---
 
+# 1B. Ampliación Core a PERS28
+
+El Core mantiene PERS01–PERS10 y añade PERS11–PERS28 para mayor resolución psicológica.
+
+Treskal no redefine esos rasgos y hereda la activación humana de Norgard.
+
+El catálogo completo está en:
+
+`Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personality_trait_lexicon_v0.1.json`
+
+La generación procedural usa la biblioteca de Norgard; los NPC autorales pueden definir el perfil directamente.
+
 # 2. No son etiquetas absolutas
 
 Un NPC no es simplemente:

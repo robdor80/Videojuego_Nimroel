@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_personality_assignment_promotion_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal_mechanics",
+  "currentProductionActivation": [
+    "Norgard_humans"
+  ],
+  "personalityDepthTiers": {
+    "A": {
+      "id": "authored_major_npc",
+      "meaning": "muy_importante_o_autoral",
+      "fullProfileRequired": true,
+      "rule": "personalidad autoral específica; procedural solo por decisión explícita"
+    },
+    "B": {
+      "id": "persistent_procedural_npc",
+      "meaning": "importante_persistente",
+      "fullProfileRequired": true,
+      "rule": "resolver una personalidad procedural única una sola vez y persistirla"
+    },
+    "C": {
+      "id": "latent_background_npc",
+      "meaning": "random_o_fondo",
+      "fullProfileRequired": false,
+      "rule": "puede conservar solo personalidad_seed y firma ligera determinista hasta promoción"
+    }
+  },
+  "tierSemanticsNote": "Estos tiers describen profundidad de identidad/personaje. En Treskal se alinean deliberadamente con sus niveles A/B/C de población ya existentes.",
+  "deterministicSeedFormula": "campaign_seed + npc_id + 'personality' + personality_rules_version",
+  "creationOrder": [
+    "stable_npc_identity_exists",
+    "resolve_current_people_scope",
+    "resolve_personality_seed",
+    "if_A_load_authored_profile",
+    "if_B_select_Norgard_recipe_and_instantiate_unique_profile",
+    "if_C_keep_latent_seed_and_optional_lightweight_expression_signature",
+    "apply_already_observed_behavior_constraints",
+    "attach_expression_layers_separately",
+    "persist_profile_id_if_resolved"
+  ],
+  "C_to_B": {
+    "irreversible": true,
+    "resolveOnce": true,
+    "usesLatentSeed": true,
+    "preservesObservedBehavior": true,
+    "examplePromotionTriggers": [
+      "npc_receives_or_requires_stable_name_for_persistent_interaction",
+      "repeated_direct_interaction_with_player",
+      "persistent_transaction_or_obligation",
+      "favor_request_or_promise",
+      "relationship_state_created",
+      "meaningful_conflict",
+      "quest_or_story_participation",
+      "important_witness_or_information_source",
+      "engine_marks_npc_as_persistence_relevant"
+    ],
+    "singleIncidentalLineMustPromote": false,
+    "observedIncidentalBehaviorMustRemainCompatibleIfLaterPromoted": true
+  },
+  "B_to_A": {
+    "rerollForbidden": true,
+    "authoredExpansionAllowed": true,
+    "rule": "la ampliación autoral profundiza el perfil existente; no lo sustituye",
+    "preserve": [
+      "established_core_traits",
+      "observed_behavior",
+      "relationship_history",
+      "memory",
+      "known_interactions",
+      "evolution_history"
+    ]
+  },
+  "latentExpression": {
+    "purpose": "permitir comportamiento estable antes de resolver perfil completo",
+    "derivedDeterministicallyFromPersonalitySeed": true,
+    "mayExpose": [
+      "broad_social_energy",
+      "broad_warmth",
+      "broad_directness",
+      "broad_reserve",
+      "broad_humor_tendency"
+    ],
+    "mustNotCreatePermanentUnsupportedTrait": true,
+    "laterProfileMustFitObservedSignature": true
+  },
+  "forbidden": [
+    "reroll_on_save_load",
+    "reroll_on_dialogue_restart",
+    "reroll_on_LOD_change",
+    "reroll_on_profession_change",
+    "reroll_on_house_or_rank_change",
+    "select_recipe_from_profession",
+    "select_recipe_from_sex",
+    "select_recipe_from_wealth",
+    "select_recipe_from_Great_House",
+    "select_recipe_from_settlement",
+    "use_reference_character_as_template",
+    "activate_nonhuman_generation_without_dedicated_people_layer"
+  ]
+}

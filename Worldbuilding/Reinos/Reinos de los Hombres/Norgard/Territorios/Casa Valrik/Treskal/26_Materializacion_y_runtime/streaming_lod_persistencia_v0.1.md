@@ -266,3 +266,19 @@ No es necesario guardar cada animación o posición de cada transeúnte latente.
 ## Regla final
 
 **Treskal puede simplificarse cuando nadie la mira, pero no puede cambiar de historia porque nadie la esté mirando.**
+
+
+---
+
+## Personalidad persistente y LOD
+
+Para humanos de Norgard:
+
+- `personality_seed` sobrevive a cualquier cambio de LOD;
+- un perfil B/A resuelto conserva `personality_profile_id`;
+- materializar o desmaterializar no rerollea PERS;
+- la simulación off-screen puede usar una versión compacta del perfil;
+- una promoción C→B conserva cualquier firma conductual previamente observada;
+- B→A no genera una persona nueva.
+
+La personalidad se comporta como identidad persistente, no como decoración de escena.

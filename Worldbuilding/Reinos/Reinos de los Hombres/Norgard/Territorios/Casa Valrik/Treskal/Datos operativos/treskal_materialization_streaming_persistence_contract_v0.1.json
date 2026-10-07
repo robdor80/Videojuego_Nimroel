@@ -112,5 +112,15 @@
     "offscreenVoyageUsesCoreVOY": true,
     "fishingGroundStatePersists": true,
     "reentryUsesPersistedPositionCargoCrewAndDamage": true
+  },
+  "personalityPersistence": {
+    "status": "active_for_Norgard_humans",
+    "personalitySeedPersistsAcrossLOD": true,
+    "resolvedProfilePersistsAcrossLOD": true,
+    "rerollOnMaterializationForbidden": true,
+    "rerollOnDematerializationForbidden": true,
+    "compactOffscreenRepresentationAllowed": true,
+    "CtoBObservedBehaviorMustPersist": true,
+    "BtoARerollForbidden": true
   }
 }

@@ -1,0 +1,1983 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_fantasy_personality_research_corpus",
+  "version": "0.1",
+  "status": "research_complete_initial",
+  "purpose": "Corpus de evidencia para ampliar PERS y diseñar recetas abstractas originales de Nimroel.",
+  "hardRule": "Los personajes de referencia nunca son perfiles, arquetipos nombrados ni recetas de producción.",
+  "methodology": [
+    "Extraer conducta observable y contrastes internos, no tipologías de fandom.",
+    "Separar personalidad de profesión, cultura, moralidad, trauma, poder y relación.",
+    "Usar contradicciones como evidencia de dimensionalidad.",
+    "No diagnosticar patologías a partir de conducta dramática.",
+    "Los rasgos extremos observados pueden informar los límites del modelo, pero la generación procedural ordinaria evita disfunción severa aleatoria.",
+    "Toda receta de producción debe tener ID abstracto original de Nimroel."
+  ],
+  "coverage": {
+    "sample_count": 65,
+    "franchises": [
+      "Game of Thrones",
+      "House of the Dragon",
+      "Vikings",
+      "The Last Kingdom",
+      "The Witcher",
+      "The Lord of the Rings",
+      "A Knight of the Seven Kingdoms"
+    ],
+    "selected_by_user": true,
+    "scope": "human_and_human_origin_reference_behaviour_for_Norgard_only",
+    "excludedForCurrentScope": [
+      "elves",
+      "dwarves",
+      "hobbits",
+      "Maiar_or_equivalent_nonhumans",
+      "vampires_and_other_nonhuman_species"
+    ],
+    "futurePolicy": "Non-human peoples will receive separate personality research and production layers when their canon is developed."
+  },
+  "entries": [
+    {
+      "sample_id": "REF_GOT_JON",
+      "character_label": "Jon Snow",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "principled",
+        "reserved",
+        "loyal",
+        "duty_driven",
+        "compassionate",
+        "stubborn",
+        "courageous"
+      ],
+      "interaction_style": [
+        "direct",
+        "earnest",
+        "low_showmanship"
+      ],
+      "stress_style": [
+        "takes_responsibility",
+        "self_sacrificing",
+        "can_become_rigid"
+      ],
+      "useful_contrasts": [
+        "reserve + strong attachment",
+        "duty + compassion"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_TYRION",
+      "character_label": "Tyrion Lannister",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "witty",
+        "intellectually_curious",
+        "socially_adaptive",
+        "skeptical",
+        "empathetic_selectively",
+        "self_protective"
+      ],
+      "interaction_style": [
+        "verbal",
+        "ironic",
+        "persuasive",
+        "reads_room"
+      ],
+      "stress_style": [
+        "uses_humor",
+        "plans",
+        "can_become_bitter"
+      ],
+      "useful_contrasts": [
+        "humor + vulnerability",
+        "cynicism + compassion"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_CERSEI",
+      "character_label": "Cersei Lannister",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "proud",
+        "protective_of_children",
+        "status_sensitive",
+        "suspicious",
+        "controlling",
+        "vengeful",
+        "bold"
+      ],
+      "interaction_style": [
+        "commanding",
+        "guarded",
+        "threat_sensitive"
+      ],
+      "stress_style": [
+        "tightens_control",
+        "retaliatory",
+        "narrows_trust"
+      ],
+      "useful_contrasts": [
+        "family_attachment + ruthless politics"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_JAIME",
+      "character_label": "Jaime Lannister",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "self_confident",
+        "witty",
+        "proud",
+        "loyal_selectively",
+        "adaptable",
+        "capable_of_reflection"
+      ],
+      "interaction_style": [
+        "bantering",
+        "provocative",
+        "later_more_open"
+      ],
+      "stress_style": [
+        "acts_fast",
+        "uses_humor",
+        "can_reassess_identity"
+      ],
+      "useful_contrasts": [
+        "arrogant surface + moral conflict"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_ARYA",
+      "character_label": "Arya Stark",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "independent",
+        "curious",
+        "assertive",
+        "resilient",
+        "risk_tolerant",
+        "private",
+        "loyal"
+      ],
+      "interaction_style": [
+        "direct",
+        "observant",
+        "low_formality"
+      ],
+      "stress_style": [
+        "hyperfocuses",
+        "acts_decisively",
+        "withdraws_emotionally"
+      ],
+      "useful_contrasts": [
+        "youthful curiosity + hardened focus"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_SANSA",
+      "character_label": "Sansa Stark",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "socially_observant",
+        "patient",
+        "adaptive",
+        "guarded",
+        "status_aware",
+        "resilient",
+        "strategic"
+      ],
+      "interaction_style": [
+        "polite",
+        "controlled",
+        "indirect_when_needed"
+      ],
+      "stress_style": [
+        "contains_emotion",
+        "reads_power",
+        "waits_for_opening"
+      ],
+      "useful_contrasts": [
+        "courtesy + strategic caution"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_NED",
+      "character_label": "Eddard Stark",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "principled",
+        "honest",
+        "duty_driven",
+        "reserved",
+        "protective",
+        "low_rule_flexibility"
+      ],
+      "interaction_style": [
+        "plainspoken",
+        "formal",
+        "low_manipulation"
+      ],
+      "stress_style": [
+        "holds_line",
+        "protects_family",
+        "can_underestimate_intrigue"
+      ],
+      "useful_contrasts": [
+        "integrity + political inflexibility"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_DAVOS",
+      "character_label": "Davos Seaworth",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "pragmatic",
+        "loyal",
+        "humble",
+        "empathetic",
+        "direct",
+        "morally_grounded"
+      ],
+      "interaction_style": [
+        "plainspoken",
+        "respectful",
+        "persuasive_without_grandiosity"
+      ],
+      "stress_style": [
+        "seeks_practical_solution",
+        "challenges_authority_when_needed"
+      ],
+      "useful_contrasts": [
+        "deference + conscience"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_BRIENNE",
+      "character_label": "Brienne of Tarth",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "conscientious",
+        "loyal",
+        "earnest",
+        "protective",
+        "socially_awkward",
+        "high_integrity"
+      ],
+      "interaction_style": [
+        "formal",
+        "literal",
+        "direct"
+      ],
+      "stress_style": [
+        "endures",
+        "protects_others",
+        "focuses_on_oath"
+      ],
+      "useful_contrasts": [
+        "social discomfort + moral courage"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_VARYS",
+      "character_label": "Varys",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "patient",
+        "socially_perceptive",
+        "secretive",
+        "pragmatic",
+        "low_showmanship",
+        "strategic"
+      ],
+      "interaction_style": [
+        "indirect",
+        "calm",
+        "information_weighted"
+      ],
+      "stress_style": [
+        "stays_controlled",
+        "recalculates"
+      ],
+      "useful_contrasts": [
+        "soft presentation + hard strategic thinking"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_LITTLEFINGER",
+      "character_label": "Petyr Baelish",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "ambitious",
+        "socially_adaptive",
+        "risk_tolerant",
+        "status_sensitive",
+        "manipulative",
+        "patient"
+      ],
+      "interaction_style": [
+        "charming",
+        "indirect",
+        "suggestive"
+      ],
+      "stress_style": [
+        "improvises",
+        "leverages_uncertainty"
+      ],
+      "useful_contrasts": [
+        "courtesy + opportunism"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_GOT_SANDOR",
+      "character_label": "Sandor Clegane",
+      "franchise": "Game of Thrones",
+      "observed_traits": [
+        "blunt",
+        "cynical",
+        "courageous",
+        "low_formality",
+        "emotionally_guarded",
+        "protective_selectively"
+      ],
+      "interaction_style": [
+        "abrasive",
+        "direct",
+        "anti_pretension"
+      ],
+      "stress_style": [
+        "acts_fast",
+        "uses_anger",
+        "protects_when_committed"
+      ],
+      "useful_contrasts": [
+        "harsh surface + selective care"
+      ],
+      "source_refs": [
+        "GOT_WIKI_ES"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_HOTD_RHAENYRA",
+      "character_label": "Rhaenyra Targaryen",
+      "franchise": "House of the Dragon",
+      "observed_traits": [
+        "self_confident",
+        "autonomy_seeking",
+        "proud",
+        "affectionate_selectively",
+        "politically_adaptive",
+        "stubborn"
+      ],
+      "interaction_style": [
+        "direct_with_intimates",
+        "formal_in_role"
+      ],
+      "stress_style": [
+        "asserts_claim",
+        "seeks_allies",
+        "can_harden"
+      ],
+      "useful_contrasts": [
+        "intimacy + dynastic duty"
+      ],
+      "source_refs": [
+        "HOTD_HBO_GUIDE",
+        "HOTD_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_HOTD_ALICENT",
+      "character_label": "Alicent Hightower",
+      "franchise": "House of the Dragon",
+      "observed_traits": [
+        "conscientious",
+        "duty_driven",
+        "status_aware",
+        "anxious_under_pressure",
+        "controlled",
+        "protective_of_children"
+      ],
+      "interaction_style": [
+        "formal",
+        "careful",
+        "morally_framed"
+      ],
+      "stress_style": [
+        "seeks_order",
+        "tightens_rules",
+        "can_become_rigid"
+      ],
+      "useful_contrasts": [
+        "duty + resentment",
+        "care + control"
+      ],
+      "source_refs": [
+        "HOTD_HBO_GUIDE",
+        "HOTD_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_HOTD_DAEMON",
+      "character_label": "Daemon Targaryen",
+      "franchise": "House of the Dragon",
+      "observed_traits": [
+        "bold",
+        "risk_tolerant",
+        "proud",
+        "charismatic",
+        "impulsive",
+        "loyal_selectively",
+        "authority_questioning"
+      ],
+      "interaction_style": [
+        "provocative",
+        "direct",
+        "dominant"
+      ],
+      "stress_style": [
+        "acts_decisively",
+        "escalates",
+        "seeks_control"
+      ],
+      "useful_contrasts": [
+        "affection + volatility",
+        "confidence + insecurity"
+      ],
+      "source_refs": [
+        "HOTD_HBO_GUIDE",
+        "HOTD_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_HOTD_VISERYS",
+      "character_label": "Viserys I Targaryen",
+      "franchise": "House of the Dragon",
+      "observed_traits": [
+        "warm",
+        "conflict_averse",
+        "patient",
+        "family_oriented",
+        "optimistic_about_reconciliation",
+        "dutiful"
+      ],
+      "interaction_style": [
+        "gentle",
+        "ceremonial",
+        "conciliatory"
+      ],
+      "stress_style": [
+        "delays_confrontation",
+        "appeals_to_family"
+      ],
+      "useful_contrasts": [
+        "kindness + avoidance"
+      ],
+      "source_refs": [
+        "HOTD_HBO_GUIDE",
+        "HOTD_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_HOTD_AEMOND",
+      "character_label": "Aemond Targaryen",
+      "franchise": "House of the Dragon",
+      "observed_traits": [
+        "disciplined",
+        "proud",
+        "competitive",
+        "resentment_prone",
+        "self_controlled",
+        "ambitious"
+      ],
+      "interaction_style": [
+        "formal",
+        "intimidating",
+        "precise"
+      ],
+      "stress_style": [
+        "hyperfocuses",
+        "asserts_dominance"
+      ],
+      "useful_contrasts": [
+        "discipline + grievance"
+      ],
+      "source_refs": [
+        "HOTD_HBO_GUIDE",
+        "HOTD_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_HOTD_CORLYS",
+      "character_label": "Corlys Velaryon",
+      "franchise": "House of the Dragon",
+      "observed_traits": [
+        "ambitious",
+        "pragmatic",
+        "proud",
+        "strategic",
+        "family_legacy_oriented",
+        "risk_tolerant"
+      ],
+      "interaction_style": [
+        "authoritative",
+        "negotiating",
+        "status_aware"
+      ],
+      "stress_style": [
+        "seeks_leverage",
+        "acts_for_legacy"
+      ],
+      "useful_contrasts": [
+        "family loyalty + ambition"
+      ],
+      "source_refs": [
+        "HOTD_HBO_GUIDE",
+        "HOTD_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_RAGNAR",
+      "character_label": "Ragnar Lothbrok",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "curious",
+        "ambitious",
+        "risk_tolerant",
+        "charismatic",
+        "strategic",
+        "restless",
+        "family_attached"
+      ],
+      "interaction_style": [
+        "playful",
+        "probing",
+        "unpredictable"
+      ],
+      "stress_style": [
+        "improvises",
+        "experiments",
+        "conceals_intent"
+      ],
+      "useful_contrasts": [
+        "family man + relentless explorer"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST",
+        "VIKINGS_RAGNAR"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_LAGERTHA",
+      "character_label": "Lagertha",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "assertive",
+        "resilient",
+        "self_confident",
+        "protective",
+        "independent",
+        "pragmatic"
+      ],
+      "interaction_style": [
+        "direct",
+        "commanding",
+        "low_nonsense"
+      ],
+      "stress_style": [
+        "takes_control",
+        "endures",
+        "retaliates_when_required"
+      ],
+      "useful_contrasts": [
+        "warm bonds + hard boundaries"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST",
+        "VIKINGS_LAGERTHA"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_ROLLO",
+      "character_label": "Rollo",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "impulsive",
+        "competitive",
+        "proud",
+        "adaptable",
+        "recognition_seeking",
+        "risk_tolerant"
+      ],
+      "interaction_style": [
+        "physical",
+        "direct",
+        "volatile"
+      ],
+      "stress_style": [
+        "acts_fast",
+        "seeks_status",
+        "can_switch_allegiance"
+      ],
+      "useful_contrasts": [
+        "attachment + rivalry"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST",
+        "VIKINGS_ROLLO"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_FLOKI",
+      "character_label": "Floki",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "creative",
+        "eccentric",
+        "intense",
+        "loyal_selectively",
+        "suspicious",
+        "emotionally_expressive"
+      ],
+      "interaction_style": [
+        "playful_then_cutting",
+        "unconventional"
+      ],
+      "stress_style": [
+        "hyperfocuses",
+        "withdraws_or_explodes"
+      ],
+      "useful_contrasts": [
+        "inventiveness + rigidity of conviction"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST",
+        "VIKINGS_FLOKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_BJORN",
+      "character_label": "Bjorn Ironside",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "determined",
+        "adventurous",
+        "self_confident",
+        "independent",
+        "competitive",
+        "loyal"
+      ],
+      "interaction_style": [
+        "direct",
+        "action_oriented"
+      ],
+      "stress_style": [
+        "pushes_forward",
+        "tests_self"
+      ],
+      "useful_contrasts": [
+        "legacy seeking + autonomy"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_IVAR",
+      "character_label": "Ivar the Boneless",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "highly_ambitious",
+        "strategic",
+        "proud",
+        "volatile",
+        "competitive",
+        "recognition_seeking"
+      ],
+      "interaction_style": [
+        "intense",
+        "dominant",
+        "provocative"
+      ],
+      "stress_style": [
+        "seeks_control",
+        "retaliates",
+        "plans_aggressively"
+      ],
+      "useful_contrasts": [
+        "vulnerability + grandiosity"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_UBBE",
+      "character_label": "Ubbe",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "pragmatic",
+        "curious",
+        "measured",
+        "family_oriented",
+        "adaptable",
+        "less_status_driven"
+      ],
+      "interaction_style": [
+        "calm",
+        "negotiating",
+        "observant"
+      ],
+      "stress_style": [
+        "seeks_compromise",
+        "reassesses"
+      ],
+      "useful_contrasts": [
+        "warrior competence + settlement orientation"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_ECBERT",
+      "character_label": "King Ecbert",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "intellectual",
+        "strategic",
+        "charming",
+        "curious",
+        "politically_flexible",
+        "secretive"
+      ],
+      "interaction_style": [
+        "cultivated",
+        "probing",
+        "indirect"
+      ],
+      "stress_style": [
+        "reframes_problem",
+        "manipulates_options"
+      ],
+      "useful_contrasts": [
+        "genuine curiosity + political calculation"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_ATHELSTAN",
+      "character_label": "Athelstan",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "curious",
+        "empathetic",
+        "reflective",
+        "adaptable",
+        "conflicted",
+        "gentle"
+      ],
+      "interaction_style": [
+        "listening",
+        "earnest",
+        "bridge_building"
+      ],
+      "stress_style": [
+        "questions_self",
+        "seeks_meaning"
+      ],
+      "useful_contrasts": [
+        "identity conflict + openness"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_ASLAUG",
+      "character_label": "Aslaug",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "self_possessed",
+        "status_aware",
+        "emotionally_controlled",
+        "protective_of_children",
+        "proud"
+      ],
+      "interaction_style": [
+        "formal",
+        "measured",
+        "distance_preserving"
+      ],
+      "stress_style": [
+        "withdraws",
+        "asserts_status"
+      ],
+      "useful_contrasts": [
+        "care + detachment"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_HARALD",
+      "character_label": "Harald Finehair",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "ambitious",
+        "charismatic",
+        "competitive",
+        "persistent",
+        "risk_tolerant",
+        "status_seeking"
+      ],
+      "interaction_style": [
+        "boastful",
+        "social",
+        "persuasive"
+      ],
+      "stress_style": [
+        "presses_advantage",
+        "recovers_from_setback"
+      ],
+      "useful_contrasts": [
+        "good humor + relentless ambition"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_VIK_JUDITH",
+      "character_label": "Judith",
+      "franchise": "Vikings",
+      "observed_traits": [
+        "intelligent",
+        "adaptive",
+        "autonomy_seeking",
+        "emotionally_complex",
+        "protective",
+        "socially_perceptive"
+      ],
+      "interaction_style": [
+        "careful",
+        "educated",
+        "increasingly_assertive"
+      ],
+      "stress_style": [
+        "adapts",
+        "protects_long_term_interests"
+      ],
+      "useful_contrasts": [
+        "constraint + growing agency"
+      ],
+      "source_refs": [
+        "VIKINGS_HISTORY_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_TLK_UHTRED",
+      "character_label": "Uhtred of Bebbanburg",
+      "franchise": "The Last Kingdom",
+      "observed_traits": [
+        "bold",
+        "loyal",
+        "impulsive",
+        "charismatic",
+        "autonomy_seeking",
+        "stubborn",
+        "protective"
+      ],
+      "interaction_style": [
+        "direct",
+        "teasing",
+        "defiant"
+      ],
+      "stress_style": [
+        "acts_first",
+        "rallies_allies",
+        "later_reconsiders"
+      ],
+      "useful_contrasts": [
+        "impulse + deep loyalty"
+      ],
+      "source_refs": [
+        "TLK_NETFLIX",
+        "TLK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_TLK_ALFRED",
+      "character_label": "Alfred",
+      "franchise": "The Last Kingdom",
+      "observed_traits": [
+        "disciplined",
+        "strategic",
+        "rule_oriented",
+        "patient",
+        "intellectual",
+        "duty_driven",
+        "emotionally_contained"
+      ],
+      "interaction_style": [
+        "formal",
+        "precise",
+        "testing"
+      ],
+      "stress_style": [
+        "plans_long_term",
+        "tightens_control"
+      ],
+      "useful_contrasts": [
+        "admiration + distrust of useful outsider"
+      ],
+      "source_refs": [
+        "TLK_NETFLIX",
+        "TLK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_TLK_BRIDA",
+      "character_label": "Brida",
+      "franchise": "The Last Kingdom",
+      "observed_traits": [
+        "independent",
+        "fierce",
+        "resentment_prone",
+        "loyal_selectively",
+        "direct",
+        "emotionally_intense"
+      ],
+      "interaction_style": [
+        "confrontational",
+        "plainspoken"
+      ],
+      "stress_style": [
+        "escalates",
+        "holds_grievance",
+        "acts_from_identity"
+      ],
+      "useful_contrasts": [
+        "attachment + bitterness"
+      ],
+      "source_refs": [
+        "TLK_NETFLIX",
+        "TLK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_TLK_AETHELFLAED",
+      "character_label": "Aethelflaed",
+      "franchise": "The Last Kingdom",
+      "observed_traits": [
+        "duty_driven",
+        "resilient",
+        "empathetic",
+        "politically_adaptive",
+        "self_controlled",
+        "courageous"
+      ],
+      "interaction_style": [
+        "measured",
+        "diplomatic",
+        "firm"
+      ],
+      "stress_style": [
+        "prioritizes_people_and_role",
+        "endures"
+      ],
+      "useful_contrasts": [
+        "personal feeling + public duty"
+      ],
+      "source_refs": [
+        "TLK_MEDIA",
+        "TLK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_TLK_FINAN",
+      "character_label": "Finan",
+      "franchise": "The Last Kingdom",
+      "observed_traits": [
+        "loyal",
+        "witty",
+        "pragmatic",
+        "courageous",
+        "socially_warm",
+        "adaptable"
+      ],
+      "interaction_style": [
+        "bantering",
+        "direct",
+        "supportive"
+      ],
+      "stress_style": [
+        "uses_humor",
+        "acts_reliably"
+      ],
+      "useful_contrasts": [
+        "levity + battlefield seriousness"
+      ],
+      "source_refs": [
+        "TLK_MEDIA",
+        "TLK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_TLK_SIHTRIC",
+      "character_label": "Sihtric",
+      "franchise": "The Last Kingdom",
+      "observed_traits": [
+        "loyal",
+        "quiet",
+        "adaptable",
+        "observant",
+        "courageous",
+        "low_showmanship"
+      ],
+      "interaction_style": [
+        "brief",
+        "practical",
+        "team_oriented"
+      ],
+      "stress_style": [
+        "follows_through",
+        "stays_functional"
+      ],
+      "useful_contrasts": [
+        "reserve + steadfastness"
+      ],
+      "source_refs": [
+        "TLK_MEDIA",
+        "TLK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_TLK_BEOCCA",
+      "character_label": "Father Beocca",
+      "franchise": "The Last Kingdom",
+      "observed_traits": [
+        "warm",
+        "loyal",
+        "principled",
+        "direct",
+        "forgiving",
+        "protective"
+      ],
+      "interaction_style": [
+        "frank",
+        "affectionate",
+        "admonishing"
+      ],
+      "stress_style": [
+        "speaks_truth",
+        "protects_family_like_bonds"
+      ],
+      "useful_contrasts": [
+        "faith role + personal warmth"
+      ],
+      "source_refs": [
+        "TLK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_TLK_HILD",
+      "character_label": "Hild",
+      "franchise": "The Last Kingdom",
+      "observed_traits": [
+        "calm",
+        "resourceful",
+        "compassionate",
+        "assertive",
+        "self_controlled",
+        "courageous"
+      ],
+      "interaction_style": [
+        "plainspoken",
+        "supportive",
+        "firm"
+      ],
+      "stress_style": [
+        "grounds_others",
+        "acts_practically"
+      ],
+      "useful_contrasts": [
+        "gentleness + toughness"
+      ],
+      "source_refs": [
+        "TLK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_TLK_AELSWITH",
+      "character_label": "Aelswith",
+      "franchise": "The Last Kingdom",
+      "observed_traits": [
+        "rule_oriented",
+        "status_aware",
+        "protective",
+        "suspicious",
+        "persistent",
+        "capable_of_growth"
+      ],
+      "interaction_style": [
+        "formal",
+        "judgmental_then_more_open"
+      ],
+      "stress_style": [
+        "defends_structure",
+        "later_reassesses"
+      ],
+      "useful_contrasts": [
+        "rigidity + late adaptability"
+      ],
+      "source_refs": [
+        "TLK_MEDIA",
+        "TLK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_TLK_AETHELWOLD",
+      "character_label": "Aethelwold",
+      "franchise": "The Last Kingdom",
+      "observed_traits": [
+        "ambitious",
+        "insecure",
+        "opportunistic",
+        "socially_adaptive",
+        "resentment_prone",
+        "risk_tolerant"
+      ],
+      "interaction_style": [
+        "joking",
+        "scheming",
+        "self_justifying"
+      ],
+      "stress_style": [
+        "seeks_openings",
+        "deflects_responsibility"
+      ],
+      "useful_contrasts": [
+        "comic presentation + dangerous ambition"
+      ],
+      "source_refs": [
+        "TLK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_WIT_GERALT",
+      "character_label": "Geralt of Rivia",
+      "franchise": "The Witcher",
+      "observed_traits": [
+        "reserved",
+        "pragmatic",
+        "protective",
+        "skeptical",
+        "compassionate_under_surface",
+        "independent",
+        "risk_capable"
+      ],
+      "interaction_style": [
+        "blunt",
+        "dry",
+        "low_verbiage"
+      ],
+      "stress_style": [
+        "focuses",
+        "protects_loved_ones",
+        "questions_politics"
+      ],
+      "useful_contrasts": [
+        "stoic presentation + deep attachment"
+      ],
+      "source_refs": [
+        "WITCHER_TUDUM_CAST",
+        "WITCHER_TUDUM_BIBLE"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_WIT_YEN",
+      "character_label": "Yennefer of Vengerberg",
+      "franchise": "The Witcher",
+      "observed_traits": [
+        "ambitious",
+        "self_confident",
+        "independent",
+        "emotionally_intense",
+        "protective",
+        "strategic",
+        "stubborn"
+      ],
+      "interaction_style": [
+        "sharp",
+        "direct",
+        "commanding"
+      ],
+      "stress_style": [
+        "takes_control",
+        "pursues_goal",
+        "can_reassess_for_family"
+      ],
+      "useful_contrasts": [
+        "autonomy + attachment"
+      ],
+      "source_refs": [
+        "WITCHER_TUDUM_CAST",
+        "WITCHER_TUDUM_S2"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_WIT_CIRI",
+      "character_label": "Cirilla",
+      "franchise": "The Witcher",
+      "observed_traits": [
+        "curious",
+        "resilient",
+        "independent",
+        "emotionally_open",
+        "identity_seeking",
+        "courageous"
+      ],
+      "interaction_style": [
+        "earnest",
+        "sometimes_impulsive"
+      ],
+      "stress_style": [
+        "adapts",
+        "seeks_belonging",
+        "can_act_recklessly"
+      ],
+      "useful_contrasts": [
+        "vulnerability + growing agency"
+      ],
+      "source_refs": [
+        "WITCHER_TUDUM_CAST",
+        "WITCHER_TUDUM_BIBLE"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_WIT_JASKIER",
+      "character_label": "Jaskier",
+      "franchise": "The Witcher",
+      "observed_traits": [
+        "socially_energetic",
+        "humorous",
+        "recognition_seeking",
+        "loyal",
+        "emotionally_expressive",
+        "creative"
+      ],
+      "interaction_style": [
+        "talkative",
+        "teasing",
+        "dramatic"
+      ],
+      "stress_style": [
+        "uses_humor",
+        "complains_but_stays"
+      ],
+      "useful_contrasts": [
+        "vanity + loyalty"
+      ],
+      "source_refs": [
+        "WITCHER_TUDUM_S2"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_WIT_TISSAIA",
+      "character_label": "Tissaia de Vries",
+      "franchise": "The Witcher",
+      "observed_traits": [
+        "disciplined",
+        "formal",
+        "controlling",
+        "teaching_driven",
+        "protective",
+        "conscientious",
+        "emotionally_contained"
+      ],
+      "interaction_style": [
+        "authoritative",
+        "precise",
+        "demanding"
+      ],
+      "stress_style": [
+        "tightens_control",
+        "sacrifices_for_institution"
+      ],
+      "useful_contrasts": [
+        "strictness + deep care"
+      ],
+      "source_refs": [
+        "WITCHER_TUDUM_BIBLE"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_WIT_VESEMIR",
+      "character_label": "Vesemir",
+      "franchise": "The Witcher",
+      "observed_traits": [
+        "mentor_oriented",
+        "pragmatic",
+        "protective",
+        "experienced",
+        "patient_selectively",
+        "tradition_aware"
+      ],
+      "interaction_style": [
+        "plainspoken",
+        "instructive"
+      ],
+      "stress_style": [
+        "protects_group",
+        "relies_on_experience"
+      ],
+      "useful_contrasts": [
+        "tradition + affection"
+      ],
+      "source_refs": [
+        "WITCHER_TUDUM_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_WIT_TRISS",
+      "character_label": "Triss Merigold",
+      "franchise": "The Witcher",
+      "observed_traits": [
+        "warm",
+        "empathetic",
+        "diplomatic",
+        "conscientious",
+        "loyal",
+        "cautious"
+      ],
+      "interaction_style": [
+        "gentle",
+        "supportive",
+        "careful"
+      ],
+      "stress_style": [
+        "seeks_harm_reduction",
+        "supports_others"
+      ],
+      "useful_contrasts": [
+        "soft style + professional competence"
+      ],
+      "source_refs": [
+        "WITCHER_TUDUM_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_WIT_CAHIR",
+      "character_label": "Cahir",
+      "franchise": "The Witcher",
+      "observed_traits": [
+        "duty_driven",
+        "intense",
+        "persistent",
+        "identity_conflicted",
+        "capable_of_remorse",
+        "courageous"
+      ],
+      "interaction_style": [
+        "formal",
+        "direct",
+        "guarded"
+      ],
+      "stress_style": [
+        "pursues_mission",
+        "later_reassesses"
+      ],
+      "useful_contrasts": [
+        "obedience + moral reconsideration"
+      ],
+      "source_refs": [
+        "WITCHER_TUDUM_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_WIT_FRINGILLA",
+      "character_label": "Fringilla Vigo",
+      "franchise": "The Witcher",
+      "observed_traits": [
+        "ambitious",
+        "politically_adaptive",
+        "disciplined",
+        "status_sensitive",
+        "pragmatic",
+        "guarded"
+      ],
+      "interaction_style": [
+        "formal",
+        "strategic",
+        "controlled"
+      ],
+      "stress_style": [
+        "recalculates",
+        "protects_position"
+      ],
+      "useful_contrasts": [
+        "conviction + opportunism"
+      ],
+      "source_refs": [
+        "WITCHER_TUDUM_CAST"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_LOTR_ARAGORN",
+      "character_label": "Aragorn",
+      "franchise": "The Lord of the Rings",
+      "observed_traits": [
+        "humble",
+        "duty_driven",
+        "courageous",
+        "patient",
+        "protective",
+        "self_controlled",
+        "leadership_capable"
+      ],
+      "interaction_style": [
+        "quietly_authoritative",
+        "respectful",
+        "direct_when_needed"
+      ],
+      "stress_style": [
+        "takes_responsibility",
+        "inspires",
+        "endures"
+      ],
+      "useful_contrasts": [
+        "humility + kingship"
+      ],
+      "source_refs": [
+        "LOTR_TG_FELLOWSHIP",
+        "LOTR_TG_CHARACTERS"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_LOTR_BOROMIR",
+      "character_label": "Boromir",
+      "franchise": "The Lord of the Rings",
+      "observed_traits": [
+        "proud",
+        "courageous",
+        "protective",
+        "duty_driven",
+        "competitive",
+        "status_aware",
+        "capable_of_remorse"
+      ],
+      "interaction_style": [
+        "direct",
+        "martial",
+        "persuasive"
+      ],
+      "stress_style": [
+        "presses_solution",
+        "can_fail_under_pressure",
+        "repairs_through_action"
+      ],
+      "useful_contrasts": [
+        "noble intent + temptation"
+      ],
+      "source_refs": [
+        "LOTR_TG_FELLOWSHIP"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_LOTR_FARAMIR",
+      "character_label": "Faramir",
+      "franchise": "The Lord of the Rings",
+      "observed_traits": [
+        "wise",
+        "resolute",
+        "less_reckless",
+        "empathetic",
+        "self_controlled",
+        "intellectual",
+        "dutiful"
+      ],
+      "interaction_style": [
+        "measured",
+        "evidence_seeking",
+        "courteous"
+      ],
+      "stress_style": [
+        "judges_then_acts",
+        "resists_pressure"
+      ],
+      "useful_contrasts": [
+        "warrior resolve + reflective restraint"
+      ],
+      "source_refs": [
+        "LOTR_TG_FARAMIR"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_LOTR_EOWYN",
+      "character_label": "Éowyn",
+      "franchise": "The Lord of the Rings",
+      "observed_traits": [
+        "courageous",
+        "autonomy_seeking",
+        "proud",
+        "emotionally_intense",
+        "duty_driven",
+        "restless"
+      ],
+      "interaction_style": [
+        "formal",
+        "direct",
+        "contained_until_committed"
+      ],
+      "stress_style": [
+        "acts_boldly",
+        "rejects_confinement"
+      ],
+      "useful_contrasts": [
+        "duty + desire for agency"
+      ],
+      "source_refs": [
+        "LOTR_TG_CHARACTERS"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_LOTR_THEODEN",
+      "character_label": "Théoden",
+      "franchise": "The Lord of the Rings",
+      "observed_traits": [
+        "duty_driven",
+        "proud",
+        "affectionate",
+        "courageous",
+        "tradition_aware",
+        "capable_of_renewal"
+      ],
+      "interaction_style": [
+        "kingly",
+        "direct",
+        "warm_with_kin"
+      ],
+      "stress_style": [
+        "rallies",
+        "accepts_mortality",
+        "acts_for_people"
+      ],
+      "useful_contrasts": [
+        "age/burden + recovered agency"
+      ],
+      "source_refs": [
+        "LOTR_TG_CHARACTERS"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_LOTR_DENETHOR",
+      "character_label": "Denethor",
+      "franchise": "The Lord of the Rings",
+      "observed_traits": [
+        "proud",
+        "duty_driven",
+        "suspicious",
+        "controlling",
+        "grief_burdened",
+        "status_sensitive"
+      ],
+      "interaction_style": [
+        "formal",
+        "commanding",
+        "critical"
+      ],
+      "stress_style": [
+        "narrows_trust",
+        "tightens_control"
+      ],
+      "useful_contrasts": [
+        "competence + despair"
+      ],
+      "source_refs": [
+        "LOTR_TG_CHARACTERS"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_KOTSK_DUNK",
+      "character_label": "Ser Duncan the Tall",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "observed_traits": [
+        "earnest",
+        "humble",
+        "protective",
+        "courageous",
+        "not_socially_polished",
+        "principled",
+        "patient"
+      ],
+      "interaction_style": [
+        "plainspoken",
+        "awkwardly_honest",
+        "respectful"
+      ],
+      "stress_style": [
+        "protects_weaker",
+        "stands_ground",
+        "questions_self"
+      ],
+      "useful_contrasts": [
+        "naivety + moral courage"
+      ],
+      "source_refs": [
+        "KOTSK_WIKI",
+        "KOTSK_HBO_SHOP"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_KOTSK_EGG",
+      "character_label": "Egg",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "observed_traits": [
+        "clever",
+        "curious",
+        "spirited",
+        "independent",
+        "socially_adaptive",
+        "loyal",
+        "bold"
+      ],
+      "interaction_style": [
+        "quick",
+        "teasing",
+        "observant"
+      ],
+      "stress_style": [
+        "improvises",
+        "speaks_up",
+        "learns_fast"
+      ],
+      "useful_contrasts": [
+        "child status + unusual confidence"
+      ],
+      "source_refs": [
+        "KOTSK_WIKI",
+        "KOTSK_HBO_SHOP"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_KOTSK_LYONEL",
+      "character_label": "Ser Lyonel Baratheon",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "observed_traits": [
+        "charismatic",
+        "humorous",
+        "bold",
+        "honor_sensitive",
+        "risk_tolerant",
+        "generous_in_spirit"
+      ],
+      "interaction_style": [
+        "boisterous",
+        "bantering",
+        "direct"
+      ],
+      "stress_style": [
+        "acts_decisively",
+        "embraces_challenge"
+      ],
+      "useful_contrasts": [
+        "levity + serious honor"
+      ],
+      "source_refs": [
+        "KOTSK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_KOTSK_ARLAN",
+      "character_label": "Ser Arlan of Pennytree",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "observed_traits": [
+        "mentor_oriented",
+        "practical",
+        "humble",
+        "dutiful",
+        "experienced",
+        "patient"
+      ],
+      "interaction_style": [
+        "instructive",
+        "plainspoken"
+      ],
+      "stress_style": [
+        "relies_on_habit_and_experience"
+      ],
+      "useful_contrasts": [
+        "low status + strong formative influence"
+      ],
+      "source_refs": [
+        "KOTSK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_KOTSK_BAELOR",
+      "character_label": "Prince Baelor Breakspear",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "observed_traits": [
+        "fair_minded",
+        "authoritative",
+        "empathetic",
+        "self_confident",
+        "duty_driven",
+        "courageous"
+      ],
+      "interaction_style": [
+        "formal",
+        "measured",
+        "protective"
+      ],
+      "stress_style": [
+        "takes_responsibility",
+        "balances_law_and_mercy"
+      ],
+      "useful_contrasts": [
+        "high status + grounded fairness"
+      ],
+      "source_refs": [
+        "KOTSK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_KOTSK_MAEKAR",
+      "character_label": "Prince Maekar Targaryen",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "observed_traits": [
+        "stern",
+        "duty_driven",
+        "proud",
+        "protective_of_family",
+        "direct",
+        "low_patience"
+      ],
+      "interaction_style": [
+        "formal",
+        "blunt",
+        "commanding"
+      ],
+      "stress_style": [
+        "hardens_position",
+        "acts_decisively"
+      ],
+      "useful_contrasts": [
+        "family loyalty + severity"
+      ],
+      "source_refs": [
+        "KOTSK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_KOTSK_AERION",
+      "character_label": "Prince Aerion Brightflame",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "observed_traits": [
+        "entitled",
+        "proud",
+        "cruel_in_behavior",
+        "status_sensitive",
+        "volatile",
+        "low_empathy_expression"
+      ],
+      "interaction_style": [
+        "dominating",
+        "taunting",
+        "contemptuous"
+      ],
+      "stress_style": [
+        "escalates",
+        "uses_power"
+      ],
+      "useful_contrasts": [
+        "status confidence + poor restraint"
+      ],
+      "source_refs": [
+        "KOTSK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_KOTSK_DAERON",
+      "character_label": "Prince Daeron the Drunken",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "observed_traits": [
+        "avoidant",
+        "self_indulgent",
+        "socially_adaptive",
+        "low_conscientiousness",
+        "anxious_about_duty"
+      ],
+      "interaction_style": [
+        "casual",
+        "evasive",
+        "humorous"
+      ],
+      "stress_style": [
+        "avoids_responsibility",
+        "seeks_escape"
+      ],
+      "useful_contrasts": [
+        "privilege + avoidance"
+      ],
+      "source_refs": [
+        "KOTSK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_KOTSK_TANSELLE",
+      "character_label": "Tanselle",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "observed_traits": [
+        "creative",
+        "self_possessed",
+        "observant",
+        "warm_selectively",
+        "independent"
+      ],
+      "interaction_style": [
+        "measured",
+        "artistic",
+        "direct_when_needed"
+      ],
+      "stress_style": [
+        "protects_dignity",
+        "withdraws_from_danger"
+      ],
+      "useful_contrasts": [
+        "public performer + private boundaries"
+      ],
+      "source_refs": [
+        "KOTSK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    },
+    {
+      "sample_id": "REF_KOTSK_RAYMUN",
+      "character_label": "Raymun Fossoway",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "observed_traits": [
+        "friendly",
+        "loyal",
+        "pragmatic",
+        "courageous",
+        "good_humored",
+        "socially_open"
+      ],
+      "interaction_style": [
+        "bantering",
+        "supportive",
+        "direct"
+      ],
+      "stress_style": [
+        "shows_up_for_allies",
+        "acts_despite_risk"
+      ],
+      "useful_contrasts": [
+        "ordinary sociability + sudden courage"
+      ],
+      "source_refs": [
+        "KOTSK_WIKI"
+      ],
+      "abstraction_note": "Muestra de investigación: extraer dimensiones independientes; prohibido usar el personaje como plantilla de NPC."
+    }
+  ]
+}

@@ -21,7 +21,7 @@ La IA puede recibir:
 - profesión;
 - cultura;
 - relaciones relevantes;
-- personalidad;
+- bloque compacto de personalidad persistente;
 - estado emocional actual cuando el sistema lo modele.
 
 No necesita conocer todas las fichas de todos los habitantes.
@@ -111,6 +111,28 @@ Esto permite respuestas como:
 - interrumpir por importancia.
 
 ---
+
+# 6B. Personalidad persistente
+
+Para un NPC B/A humano de Norgard, el contexto puede incluir:
+
+- `personality_profile_id`;
+- rasgos PERS dominantes;
+- rasgos secundarios;
+- estilo de humor;
+- firma social;
+- desacuerdo;
+- reacción al estrés;
+- modificadores relacionales;
+- modificadores de estado actual.
+
+La IA puede expresar esos datos, pero no:
+
+- cambiarlos;
+- inventar rasgos permanentes;
+- inventar historia psicológica;
+- promover C→B;
+- convertir emoción temporal en personalidad.
 
 # 7. Lo que sabe no es lo que dice
 

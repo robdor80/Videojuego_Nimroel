@@ -684,3 +684,19 @@ Esto resuelve para OWN/RES/BIZ:
 - alquiler y recuperación judicial del inmueble.
 
 Las particularidades locales siguen siendo físicas/económicas, no una soberanía jurídica distinta.
+
+
+### Personalidad persistente — humanos de Norgard
+
+Treskal consume el sistema transversal de personalidad:
+
+- A → autoral;
+- B → procedural persistente;
+- C → seed latente;
+- C→B irreversible;
+- B→A sin reroll;
+- 28 dimensiones PERS;
+- 80 recetas de Norgard;
+- IA sin autoridad para modificar el perfil.
+
+No existe activación para elfos u otros pueblos no humanos.

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_personality_traits_contract",
-  "version": "0.2",
+  "version": "0.3",
   "status": "migrated_to_core_override",
   "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personality_traits_contract_v0.1.json",
   "inheritedNamespaces": [
@@ -13,5 +13,12 @@
     "worldStateMeaningPreserved": true,
     "saveMigrationRequired": false
   },
-  "note": "Treskal inherits Nimroel Core personality semantics without local exceptions."
+  "note": "Treskal inherits Nimroel Core personality semantics without local exceptions.",
+  "norgardHumanPersonality": {
+    "status": "active_inherited",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_human_personality_generation_default_v0.1.json",
+    "recipeLibrary": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_procedural_personality_recipe_library_v0.1.json",
+    "PERS01toPERS28Inherited": true,
+    "localPersonalityOverrides": false
+  }
 }

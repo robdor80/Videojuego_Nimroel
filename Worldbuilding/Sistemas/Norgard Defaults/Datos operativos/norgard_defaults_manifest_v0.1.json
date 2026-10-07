@@ -27,7 +27,9 @@
     "kingsJusticeProcedure": "Datos operativos/norgard_kings_justice_procedure_v0.1.json",
     "familyMarriageGuardianship": "Datos operativos/norgard_family_marriage_guardianship_default_v0.1.json",
     "ageCapacityLaborApprenticeship": "Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json",
-    "propertyInheritanceRental": "Datos operativos/norgard_property_inheritance_rental_default_v0.1.json"
+    "propertyInheritanceRental": "Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+    "humanPersonalityGeneration": "Datos operativos/norgard_human_personality_generation_default_v0.1.json",
+    "humanPersonalityRecipes": "Datos operativos/norgard_procedural_personality_recipe_library_v0.1.json"
   },
   "readyCandidates": {
     "funeralMourning": "extracted_active_validated",
@@ -43,7 +45,8 @@
     "penalJustice": "authored_active_validated",
     "familyMarriageGuardianship": "authored_active_validated",
     "ageCapacityLaborApprenticeship": "authored_active_validated",
-    "propertyInheritanceRental": "authored_active_validated"
+    "propertyInheritanceRental": "authored_active_validated",
+    "humanPersistentPersonality": "authored_active_validated_cross_cutting"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
@@ -144,6 +147,20 @@
     "monetaryValidationPack": "Validacion/norgard_monetary_validation_pack_v0.1.json",
     "familyLawValidationPack": "Validacion/norgard_family_law_validation_pack_v0.1.json",
     "laborAgeCapacityValidationPack": "Validacion/norgard_labor_age_capacity_validation_pack_v0.1.json",
-    "propertyInheritanceRentalValidationPack": "Validacion/norgard_property_inheritance_rental_validation_pack_v0.1.json"
+    "propertyInheritanceRentalValidationPack": "Validacion/norgard_property_inheritance_rental_validation_pack_v0.1.json",
+    "personalitySystemValidationPack": "Validacion/norgard_persistent_personality_validation_pack_v0.1.json"
+  },
+  "crossCuttingSystems": {
+    "humanPersistentPersonality": {
+      "status": "active_Norgard_humans_only",
+      "coreExpansion": "Worldbuilding/Sistemas/Nimroel Core/01_Cognicion_y_conducta/personalidad_persistente_generacion_promocion_v0.1.md",
+      "default": "Datos operativos/norgard_human_personality_generation_default_v0.1.json",
+      "recipeLibrary": "Datos operativos/norgard_procedural_personality_recipe_library_v0.1.json",
+      "researchCorpus": "Worldbuilding/Sistemas/Nimroel Core/Investigacion/Personalidad/corpus_personajes_referencia_personalidad_v0.1.json",
+      "nonhumanGeneration": "blocked_until_dedicated_people_layer",
+      "regression": "Validacion/regresion_personalidad_persistente_humanos_norgard_v0.1.md",
+      "validationPack": "Validacion/norgard_persistent_personality_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_SISTEMA_PERSONALIDAD_PERSISTENTE_NORGARD_HUMANOS_v0.1.md"
+    }
   }
 }

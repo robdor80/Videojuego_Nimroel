@@ -819,5 +819,18 @@
     "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
     "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md",
     "localNewLayerRequired": false
+  },
+  "persistentPersonalityIntegration": {
+    "status": "active_inherited_Norgard_humans",
+    "coreProfile": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_persistent_personality_profile_contract_v0.1.json",
+    "coreAssignment": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personality_assignment_promotion_contract_v0.1.json",
+    "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_human_personality_generation_default_v0.1.json",
+    "norgardRecipeLibrary": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_procedural_personality_recipe_library_v0.1.json",
+    "populationTiersAligned": [
+      "A_authored",
+      "B_procedural_persistent",
+      "C_latent"
+    ],
+    "localNewPersonalityLawRequired": false
   }
 }

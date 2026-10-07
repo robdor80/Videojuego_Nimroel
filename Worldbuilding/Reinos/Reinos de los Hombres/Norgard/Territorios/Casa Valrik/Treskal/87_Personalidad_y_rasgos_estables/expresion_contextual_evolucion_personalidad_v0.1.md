@@ -165,6 +165,17 @@ No deben rerrollearse después.
 
 ---
 
+# 12B. Promoción y persistencia
+
+El sistema activo para humanos de Norgard añade:
+
+- C → seed latente;
+- C→B → resolución única de perfil;
+- B→A → ampliación autoral sin reroll;
+- evolución estable solo con causas trazables.
+
+Cambiar de oficio, residencia, riqueza, Casa, rango o LOD no cambia de personalidad.
+
 # 13. NPC autoral
 
 Los personajes escritos pueden fijar rasgos explícitos o usar perfiles más detallados.

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_npc_population_and_commerce_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_design_contract",
   "scope": "Norgard/Treskal",
   "populationModel": {
@@ -9,17 +9,20 @@
       "A": {
         "id": "authored_npc",
         "persistentFromStart": true,
-        "proceduralReplacementForbidden": true
+        "proceduralReplacementForbidden": true,
+        "personalityMode": "authored"
       },
       "B": {
         "id": "generated_persistent_resident",
         "generatedDeterministically": true,
-        "persistentAfterMaterialization": true
+        "persistentAfterMaterialization": true,
+        "personalityMode": "procedural_persistent"
       },
       "C": {
         "id": "latent_population",
         "fullIdentityRequired": false,
-        "promotesTo": "B"
+        "promotesTo": "B",
+        "personalityMode": "latent_seed"
       }
     },
     "promotion": {
@@ -31,8 +34,12 @@
         "home",
         "profession",
         "relationships",
-        "known_interactions"
-      ]
+        "known_interactions",
+        "personality_seed",
+        "observed_behavior_constraints",
+        "personality_profile_id_if_already_resolved"
+      ],
+      "personalityRule": "C_to_B_resolves_full_profile_once_from_latent_seed_and_observed_behavior"
     },
     "householdFirst": true,
     "visiblePopulationDependsOn": [
@@ -51,14 +58,18 @@
     "origin_seed",
     "household_id",
     "home_location_id",
-    "status"
+    "status",
+    "personality_seed"
   ],
   "optionalNpcFields": [
     "occupation_id",
     "workplace_id",
     "relationship_refs",
     "knowledge_refs",
-    "memory_refs"
+    "memory_refs",
+    "personality_profile_id",
+    "personality_observation_refs",
+    "personality_evolution_refs"
   ],
   "visitorModel": {
     "countsAsResident": false,
@@ -185,5 +196,14 @@
       "material_shortage"
     ],
     "institutionalStockPublicByDefault": false
+  },
+  "personalityIntegration": {
+    "status": "active_Norgard_humans",
+    "coreAssignment": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personality_assignment_promotion_contract_v0.1.json",
+    "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_human_personality_generation_default_v0.1.json",
+    "norgardRecipes": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_procedural_personality_recipe_library_v0.1.json",
+    "CtoBPersonalityPromotionIrreversible": true,
+    "BtoARerollForbidden": true,
+    "authoredAProfilePreferred": true
   }
 }

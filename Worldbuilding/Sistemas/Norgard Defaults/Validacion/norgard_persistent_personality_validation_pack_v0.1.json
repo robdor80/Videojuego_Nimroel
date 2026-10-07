@@ -1,0 +1,576 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_persistent_personality_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "scope": "Norgard_humans_only",
+  "caseCount": 60,
+  "cases": [
+    {
+      "id": "PERSYS01",
+      "given": {
+        "legacyIds": "PERS01-PERS10"
+      },
+      "expect": {
+        "semanticsChanged": false
+      }
+    },
+    {
+      "id": "PERSYS02",
+      "given": {
+        "traitContract": true
+      },
+      "expect": {
+        "dimensionCount": 28
+      }
+    },
+    {
+      "id": "PERSYS03",
+      "given": {
+        "tier": "A"
+      },
+      "expect": {
+        "defaultMode": "authored"
+      }
+    },
+    {
+      "id": "PERSYS04",
+      "given": {
+        "tier": "B"
+      },
+      "expect": {
+        "fullProceduralProfileRequired": true
+      }
+    },
+    {
+      "id": "PERSYS05",
+      "given": {
+        "tier": "C"
+      },
+      "expect": {
+        "fullProfileRequired": false,
+        "latentSeedAllowed": true
+      }
+    },
+    {
+      "id": "PERSYS06",
+      "given": {
+        "tier": "C",
+        "interaction": "single_incidental_line"
+      },
+      "expect": {
+        "promotionRequired": false
+      }
+    },
+    {
+      "id": "PERSYS07",
+      "given": {
+        "tier": "C",
+        "interaction": "persistent_relationship_created"
+      },
+      "expect": {
+        "promotionToBAllowed": true
+      }
+    },
+    {
+      "id": "PERSYS08",
+      "given": {
+        "tier": "C",
+        "interaction": "persistent_obligation_created"
+      },
+      "expect": {
+        "promotionToBAllowed": true
+      }
+    },
+    {
+      "id": "PERSYS09",
+      "given": {
+        "tier": "C",
+        "observed": "dry_reserved",
+        "laterPromotes": true
+      },
+      "expect": {
+        "resolvedProfileMustBeCompatible": true
+      }
+    },
+    {
+      "id": "PERSYS10",
+      "given": {
+        "transition": "C_to_B"
+      },
+      "expect": {
+        "irreversible": true,
+        "resolveOnce": true
+      }
+    },
+    {
+      "id": "PERSYS11",
+      "given": {
+        "transition": "B_to_A"
+      },
+      "expect": {
+        "reroll": false,
+        "authorialDeepening": true
+      }
+    },
+    {
+      "id": "PERSYS12",
+      "given": {
+        "sameNpc": true,
+        "saveLoad": true
+      },
+      "expect": {
+        "sameProfile": true
+      }
+    },
+    {
+      "id": "PERSYS13",
+      "given": {
+        "sameNpc": true,
+        "LODChange": true
+      },
+      "expect": {
+        "sameProfile": true
+      }
+    },
+    {
+      "id": "PERSYS14",
+      "given": {
+        "sameNpc": true,
+        "occupationChange": true
+      },
+      "expect": {
+        "sameProfile": true
+      }
+    },
+    {
+      "id": "PERSYS15",
+      "given": {
+        "sameNpc": true,
+        "residenceChange": true
+      },
+      "expect": {
+        "sameProfile": true
+      }
+    },
+    {
+      "id": "PERSYS16",
+      "given": {
+        "sameNpc": true,
+        "rankChange": true
+      },
+      "expect": {
+        "sameProfile": true
+      }
+    },
+    {
+      "id": "PERSYS17",
+      "given": {
+        "selector": "occupation"
+      },
+      "expect": {
+        "mayChooseRecipe": false
+      }
+    },
+    {
+      "id": "PERSYS18",
+      "given": {
+        "selector": "sex"
+      },
+      "expect": {
+        "mayChooseRecipe": false
+      }
+    },
+    {
+      "id": "PERSYS19",
+      "given": {
+        "selector": "wealth"
+      },
+      "expect": {
+        "mayChooseRecipe": false
+      }
+    },
+    {
+      "id": "PERSYS20",
+      "given": {
+        "selector": "Great_House"
+      },
+      "expect": {
+        "mayChooseRecipe": false
+      }
+    },
+    {
+      "id": "PERSYS21",
+      "given": {
+        "selector": "settlement"
+      },
+      "expect": {
+        "mayChooseRecipe": false
+      }
+    },
+    {
+      "id": "PERSYS22",
+      "given": {
+        "selector": "social_class"
+      },
+      "expect": {
+        "mayChooseRecipe": false
+      }
+    },
+    {
+      "id": "PERSYS23",
+      "given": {
+        "culture": "Norgard"
+      },
+      "expect": {
+        "mayRewriteCoreVector": false
+      }
+    },
+    {
+      "id": "PERSYS24",
+      "given": {
+        "profession": "blacksmith"
+      },
+      "expect": {
+        "mayAddRegister": true,
+        "mayRewriteCoreVector": false
+      }
+    },
+    {
+      "id": "PERSYS25",
+      "given": {
+        "currentState": "grief"
+      },
+      "expect": {
+        "baselineMustChange": false
+      }
+    },
+    {
+      "id": "PERSYS26",
+      "given": {
+        "currentState": "fatigue"
+      },
+      "expect": {
+        "baselineMustChange": false
+      }
+    },
+    {
+      "id": "PERSYS27",
+      "given": {
+        "relationshipTrustIncreased": true
+      },
+      "expect": {
+        "globalInitialTrustSpeedMustChange": false
+      }
+    },
+    {
+      "id": "PERSYS28",
+      "given": {
+        "personalityEvolution": true,
+        "causeRefs": []
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PERSYS29",
+      "given": {
+        "personalityEvolution": true,
+        "explicitCause": true,
+        "delta": 0.05
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PERSYS30",
+      "given": {
+        "ordinaryEvolutionDelta": 0.2
+      },
+      "expect": {
+        "ordinaryRecommended": false
+      }
+    },
+    {
+      "id": "PERSYS31",
+      "given": {
+        "annualRandomDrift": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS32",
+      "given": {
+        "recipeReuse": true,
+        "differentNpcSeeds": true
+      },
+      "expect": {
+        "allowed": true,
+        "exactProfilesMayDiffer": true
+      }
+    },
+    {
+      "id": "PERSYS33",
+      "given": {
+        "exactProfileReuseAcrossDifferentNpc": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS34",
+      "given": {
+        "recipeLibrary": "Norgard"
+      },
+      "expect": {
+        "recipeCount": 80
+      }
+    },
+    {
+      "id": "PERSYS35",
+      "given": {
+        "recipeId": "jon_snow"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS36",
+      "given": {
+        "recipeId": "ragnar"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS37",
+      "given": {
+        "referenceCharacterUsedAsTemplate": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS38",
+      "given": {
+        "generatedEntity": "elf"
+      },
+      "expect": {
+        "currentProductionAllowed": false
+      }
+    },
+    {
+      "id": "PERSYS39",
+      "given": {
+        "generatedEntity": "dwarf"
+      },
+      "expect": {
+        "currentProductionAllowed": false
+      }
+    },
+    {
+      "id": "PERSYS40",
+      "given": {
+        "generatedEntity": "Norgard_human"
+      },
+      "expect": {
+        "currentProductionAllowed": true
+      }
+    },
+    {
+      "id": "PERSYS41",
+      "given": {
+        "AIAction": "change_PERS_value"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS42",
+      "given": {
+        "AIAction": "change_profile_id"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS43",
+      "given": {
+        "AIAction": "invent_personality_history"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS44",
+      "given": {
+        "AIAction": "promote_C_to_B"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS45",
+      "given": {
+        "AIAction": "express_tone_consistent_with_profile"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "PERSYS46",
+      "given": {
+        "oldProfileOnlyPERS01to10": true
+      },
+      "expect": {
+        "stillValid": true
+      }
+    },
+    {
+      "id": "PERSYS47",
+      "given": {
+        "playerUI": true
+      },
+      "expect": {
+        "exactInternalNumbersRequiredVisible": false
+      }
+    },
+    {
+      "id": "PERSYS48",
+      "given": {
+        "latentSignature": true,
+        "sameSeed": true
+      },
+      "expect": {
+        "deterministic": true
+      }
+    },
+    {
+      "id": "PERSYS49",
+      "given": {
+        "laterFullProfile": true,
+        "latentObservedSignature": true
+      },
+      "expect": {
+        "mustFitSignature": true
+      }
+    },
+    {
+      "id": "PERSYS50",
+      "given": {
+        "sameCampaignSeed": true,
+        "sameNpcId": true,
+        "sameRulesVersion": true
+      },
+      "expect": {
+        "samePersonalitySeed": true
+      }
+    },
+    {
+      "id": "PERSYS51",
+      "given": {
+        "sameRecipe": true,
+        "differentPersonalitySeed": true
+      },
+      "expect": {
+        "exactVectorReuseRequired": false
+      }
+    },
+    {
+      "id": "PERSYS52",
+      "given": {
+        "proceduralSevereSadismAsFlavor": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS53",
+      "given": {
+        "proceduralPsychopathyAsFlavor": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PERSYS54",
+      "given": {
+        "corpusScope": "current"
+      },
+      "expect": {
+        "humanReferenceSamples": 65,
+        "nonhumanSamplesActive": 0
+      }
+    },
+    {
+      "id": "PERSYS55",
+      "given": {
+        "TreskalTier": "A"
+      },
+      "expect": {
+        "personalityTier": "authored"
+      }
+    },
+    {
+      "id": "PERSYS56",
+      "given": {
+        "TreskalTier": "B"
+      },
+      "expect": {
+        "personalityTier": "procedural_persistent"
+      }
+    },
+    {
+      "id": "PERSYS57",
+      "given": {
+        "TreskalTier": "C"
+      },
+      "expect": {
+        "personalityTier": "latent_seed"
+      }
+    },
+    {
+      "id": "PERSYS58",
+      "given": {
+        "TreskalLocalPersonalityOverride": true
+      },
+      "expect": {
+        "required": false
+      }
+    },
+    {
+      "id": "PERSYS59",
+      "given": {
+        "veryImportantNpcExistingLore": true
+      },
+      "expect": {
+        "proceduralOverwriteAllowed": false
+      }
+    },
+    {
+      "id": "PERSYS60",
+      "given": {
+        "randomNpcNeverBecomesRelevant": true
+      },
+      "expect": {
+        "mayRemainCIndefinitely": true
+      }
+    }
+  ],
+  "marker": "PERSISTENT_PERSONALITY_SYSTEM_NORGARD_HUMANS_ACTIVE"
+}

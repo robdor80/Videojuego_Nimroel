@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_persistent_personality_generation_pipeline",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal_mechanics",
+  "currentProductionActivation": [
+    "Norgard_humans"
+  ],
+  "inputs": [
+    "campaign_seed",
+    "npc_id",
+    "personality_depth_tier",
+    "people_scope",
+    "already_observed_behavior_constraints",
+    "authored_profile_ref_if_any",
+    "expression_context_refs"
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "id": "validate_people_scope",
+      "rule": "Current production generation proceeds only for human NPCs of Norgard."
+    },
+    {
+      "order": 2,
+      "id": "resolve_mode",
+      "rule": "A=authored, B=procedural persistent, C=latent unless promoted."
+    },
+    {
+      "order": 3,
+      "id": "resolve_seed",
+      "rule": "personality_seed = deterministic(campaign_seed + npc_id + 'personality' + rules_version)."
+    },
+    {
+      "order": 4,
+      "id": "select_recipe",
+      "rule": "For Norgard B choose one of 80 abstract recipes without using profession, sex, wealth, Great House, settlement or rank as selector."
+    },
+    {
+      "order": 5,
+      "id": "instantiate_anchors",
+      "rule": "Apply deterministic variation within ±0.08 to recipe anchors."
+    },
+    {
+      "order": 6,
+      "id": "fill_unspecified_dimensions",
+      "rule": "Resolve other PERS dimensions deterministically within [0.36,0.64] unless authored/observed constraints require otherwise."
+    },
+    {
+      "order": 7,
+      "id": "apply_observed_constraints",
+      "rule": "Previously witnessed behavior constrains the result; no contradiction may be introduced merely to fit a recipe."
+    },
+    {
+      "order": 8,
+      "id": "resolve_styles",
+      "rule": "Resolve qualitative traits and humor/stress/affection/disagreement/leadership/social styles."
+    },
+    {
+      "order": 9,
+      "id": "attach_expression_layers",
+      "rule": "Culture/upbringing/profession/relationship/current-state layers remain separate from core PERS."
+    },
+    {
+      "order": 10,
+      "id": "assign_profile_id",
+      "rule": "Create persistent personality_profile_id and bind permanently to npc_id."
+    },
+    {
+      "order": 11,
+      "id": "persist",
+      "rule": "Store profile, seed, rule version and provenance."
+    },
+    {
+      "order": 12,
+      "id": "ai_context",
+      "rule": "Dialogue receives a compact read-only expression block."
+    }
+  ],
+  "deterministicRules": {
+    "recipeChoiceStableForSameSeed": true,
+    "anchorVariationStableForSameSeed": true,
+    "unspecifiedValuesStableForSameSeed": true,
+    "styleChoiceStableForSameSeed": true,
+    "exactHashAlgorithmImplementationDeferredToEngine": true,
+    "semanticInputsMustRemainStable": true
+  },
+  "output": [
+    "personality_profile_id",
+    "personality_seed",
+    "recipe_id_or_authored_ref",
+    "initial_core_trait_vector",
+    "current_core_trait_vector",
+    "qualitative_traits",
+    "style_tags",
+    "observed_constraint_refs",
+    "expression_modifier_refs",
+    "evolution_history_refs"
+  ],
+  "fallback": {
+    "nonhumanNpc": "do_not_generate_from_Norgard_library",
+    "missingRecipeLibrary": "fail_closed_keep_latent_or_authored",
+    "contradictoryObservedConstraints": "prefer_observed_persistent_facts_over_recipe",
+    "missingOptionalExpressionLayer": "use_core_profile_without_inventing_culture"
+  },
+  "forbidden": [
+    "reroll_to_make_dialogue_more_interesting",
+    "choose_likeable_profile_for_player_convenience",
+    "choose_personality_from_job_or_status",
+    "copy_reference_character",
+    "activate_Norgard_human_recipes_for_nonhuman_people",
+    "AI_writeback_to_core_profile"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_personality_evolution_continuity_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal_mechanics",
+  "currentProductionActivation": [
+    "Norgard_humans"
+  ],
+  "principle": "La personalidad puede evolucionar de forma acotada por causas persistentes representadas; nunca se sustituye silenciosamente.",
+  "evolutionRecordFields": [
+    "event_id",
+    "npc_id",
+    "time",
+    "cause_refs",
+    "affected_PERS_ids",
+    "old_values",
+    "new_values",
+    "stability",
+    "visibility",
+    "notes"
+  ],
+  "ordinaryEvolution": {
+    "perEventRecommendedMaxDelta": 0.08,
+    "longTermAccumulationAllowed": true,
+    "largeInversionRequiresExceptionalExplicitCause": true,
+    "automaticAnnualDrift": false,
+    "randomDriftWithoutCause": false
+  },
+  "validCauseFamilies": [
+    "long_term_relationship_history",
+    "repeated_success_or_failure",
+    "sustained_responsibility",
+    "mentorship",
+    "major_loss_and_recovery",
+    "prolonged_social_experience",
+    "major_betrayal",
+    "years_of_represented_life_change",
+    "other_explicit_world_state_event"
+  ],
+  "normallyNotPersonalityChange": [
+    "single_bad_day",
+    "acute_fear",
+    "temporary_grief",
+    "fatigue",
+    "hunger",
+    "pain",
+    "injury",
+    "intoxication",
+    "current_anger",
+    "short_term_stress",
+    "one_argument",
+    "one_good_or_bad_interaction"
+  ],
+  "relationshipRule": "Calidez o confianza hacia una persona concreta cambia TRUST/AFF/FRI/RIFT antes que PERS global.",
+  "recoveryRule": "Un estado temporal puede desaparecer y dejar el baseline intacto; el evento puede seguir existiendo en MEM.",
+  "provenanceRequired": true,
+  "saveLoadPersistent": true,
+  "offscreenEvolutionRequiresPlausibleRepresentedCause": true,
+  "aiMaySuggestEvolution": false,
+  "engineOrAuthoredSystemMustValidateEvolution": true,
+  "examples": [
+    "Un NPC muy reservado puede volverse algo más abierto tras años de relaciones seguras, sin convertirse de golpe en extrovertido.",
+    "Una persona insegura puede ganar confianza tras repetidas experiencias de competencia real.",
+    "Una persona rígida puede ganar flexibilidad después de múltiples experiencias persistentes que cuestionen su método.",
+    "Un NPC habitualmente bromista puede permanecer callado durante un duelo sin que baje automáticamente PERS12."
+  ]
+}

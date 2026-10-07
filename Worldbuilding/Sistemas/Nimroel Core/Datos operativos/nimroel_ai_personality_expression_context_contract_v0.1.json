@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_ai_personality_expression_context_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal_ai_expression",
+  "currentProductionActivation": [
+    "Norgard_humans"
+  ],
+  "purpose": "Entregar a la IA un bloque compacto y autoritativo de personalidad sin darle autoridad para reescribir personalidad ni World State.",
+  "inputOrder": [
+    "speaker_identity_and_visible_role",
+    "authorized_knowledge",
+    "relationship_state_toward_interlocutor",
+    "persistent_personality_core",
+    "Norgard_expression_context_if_applicable",
+    "profession_or_institutional_register",
+    "current_EMO_MOOD_STRS_and_physical_state",
+    "current_activity_goal_and_scene_constraints"
+  ],
+  "compactBlockFields": [
+    "personality_profile_id",
+    "dominant_PERS",
+    "secondary_PERS",
+    "qualitative_traits",
+    "humor_style",
+    "social_signature",
+    "disagreement_style",
+    "stress_style",
+    "affection_style_if_relevant",
+    "relationship_specific_modifiers",
+    "current_state_modifiers",
+    "speech_preferences",
+    "hard_do_not_break"
+  ],
+  "expressionRules": [
+    "No mencionar etiquetas PERS en diálogo.",
+    "La personalidad se expresa estadísticamente a lo largo de la interacción, no como gimmick en cada frase.",
+    "El mismo NPC debe seguir siendo reconocible en calma, estrés, trabajo y ocio.",
+    "EMO/MOOD/STRS pueden amplificar o suprimir expresión, no sustituir el núcleo.",
+    "TRUST/AFF/FRI/RIFT pueden volver a un NPC reservado más cálido con una persona concreta sin reescribir PERS20/PERS21.",
+    "Profesión y rango pueden aumentar formalidad o vocabulario técnico sin cambiar personalidad.",
+    "Cultura y costumbre modifican expresión, nunca generan personalidad automáticamente.",
+    "Evitar caricatura y repetición mecánica de muletillas."
+  ],
+  "aiAuthority": {
+    "mayExpressPersonality": true,
+    "mayChooseConsistentWording": true,
+    "mayProposeEphemeralGestureOrTone": true,
+    "mayCreateCoreTrait": false,
+    "mayChangeTraitValue": false,
+    "mayChangePersonalityProfileId": false,
+    "mayInventPersonalityHistory": false,
+    "mayMutateRelationshipState": false,
+    "mayMutateEmotionState": false,
+    "mayPromoteCtoB": false
+  },
+  "outputValidation": [
+    "contradiction_with_persistent_profile",
+    "invented_relationship",
+    "invented_memory",
+    "invented_personality_change",
+    "knowledge_leak",
+    "world_state_mutation_without_engine"
+  ]
+}

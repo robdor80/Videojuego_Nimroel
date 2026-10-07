@@ -339,3 +339,31 @@ Canon:
 Regresión:
 
 `Validacion/regresion_e12_propiedad_herencia_alquiler_v0.1.md`
+
+
+### Sistema transversal — personalidad persistente de humanos de Norgard
+
+Activo sin alterar la numeración E1–E12 ni los Puntos generales de Norgard.
+
+- Core PERS ampliado a 28 dimensiones;
+- 80 recetas abstractas originales;
+- A = NPC autoral;
+- B = NPC procedural persistente;
+- C = NPC latente/random;
+- C→B irreversible y compatible con conducta ya observada;
+- B→A profundiza sin reroll;
+- profesión, sexo, riqueza, Casa y localidad no seleccionan personalidad;
+- IA expresa la personalidad pero no puede reescribirla;
+- generación no humana bloqueada hasta crear cada pueblo.
+
+Default:
+
+`Datos operativos/norgard_human_personality_generation_default_v0.1.json`
+
+Recetas:
+
+`Datos operativos/norgard_procedural_personality_recipe_library_v0.1.json`
+
+Validación:
+
+`Validacion/norgard_persistent_personality_validation_pack_v0.1.json`

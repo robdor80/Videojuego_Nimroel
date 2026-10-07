@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_personality_research_sources",
+  "version": "0.1",
+  "status": "research_evidence_only",
+  "policy": [
+    "Las fuentes sirven para extraer patrones observables de conducta, no para copiar personajes.",
+    "Los nombres de personajes de referencia no pueden aparecer como recetas de producción.",
+    "Se prefieren guías oficiales, páginas de reparto/serie y referencias descriptivas ampliamente contrastables.",
+    "El corpus registra rasgos abstractos, estilos de interacción, estrés y contradicciones útiles; no diagnósticos clínicos.",
+    "La producción de Nimroel consume solo abstracciones.",
+    "Aunque una franquicia contenga personajes no humanos, el corpus activo actual de Norgard excluye esas muestras."
+  ],
+  "sourceGroups": [
+    {
+      "id": "SRC_GOT",
+      "franchise": "Game of Thrones",
+      "sources": [
+        {
+          "id": "GOT_WIKI_ES",
+          "publisher": "Wikipedia",
+          "title": "Juego de tronos",
+          "url": "https://es.wikipedia.org/wiki/Juego_de_tronos",
+          "use": "reparto, arcos y descripciones generales de personajes"
+        }
+      ]
+    },
+    {
+      "id": "SRC_HOTD",
+      "franchise": "House of the Dragon",
+      "sources": [
+        {
+          "id": "HOTD_HBO_GUIDE",
+          "publisher": "HBO",
+          "title": "House of the Dragon — Character Guide",
+          "url": "https://hotd-character-guide.micro.hbo.com/",
+          "use": "identidad, relaciones y posición institucional"
+        },
+        {
+          "id": "HOTD_WIKI",
+          "publisher": "Wikipedia",
+          "title": "House of the Dragon",
+          "url": "https://en.wikipedia.org/wiki/House_of_the_Dragon",
+          "use": "descripciones generales y reparto"
+        }
+      ]
+    },
+    {
+      "id": "SRC_VIKINGS",
+      "franchise": "Vikings",
+      "sources": [
+        {
+          "id": "VIKINGS_HISTORY_CAST",
+          "publisher": "HISTORY",
+          "title": "Vikings Cast",
+          "url": "https://www.history.com/shows/vikings/cast",
+          "use": "descripciones oficiales de personajes"
+        },
+        {
+          "id": "VIKINGS_RAGNAR",
+          "publisher": "HISTORY",
+          "title": "Ragnar — Vikings Cast",
+          "url": "https://www.history.com/shows/vikings/cast/ragnar",
+          "use": "curiosidad, ambición, familia, exploración"
+        },
+        {
+          "id": "VIKINGS_LAGERTHA",
+          "publisher": "HISTORY",
+          "title": "Lagertha — Vikings Cast",
+          "url": "https://www.history.com/shows/vikings/cast/lagertha",
+          "use": "liderazgo, firmeza, resiliencia"
+        },
+        {
+          "id": "VIKINGS_ROLLO",
+          "publisher": "HISTORY",
+          "title": "Rollo — Vikings Cast",
+          "url": "https://www.history.com/shows/vikings/cast/rollo",
+          "use": "impulsividad, rivalidad, adaptación"
+        },
+        {
+          "id": "VIKINGS_FLOKI",
+          "publisher": "HISTORY",
+          "title": "Floki — Vikings Cast",
+          "url": "https://www.history.com/shows/vikings/cast/floki",
+          "use": "creatividad, intensidad, convicción"
+        }
+      ]
+    },
+    {
+      "id": "SRC_LAST_KINGDOM",
+      "franchise": "The Last Kingdom",
+      "sources": [
+        {
+          "id": "TLK_NETFLIX",
+          "publisher": "Netflix",
+          "title": "The Last Kingdom",
+          "url": "https://www.netflix.com/title/80074249",
+          "use": "premisa, reparto y contexto de personajes"
+        },
+        {
+          "id": "TLK_MEDIA",
+          "publisher": "Netflix Media Center",
+          "title": "The Last Kingdom",
+          "url": "https://media.netflix.com/en/only-on-netflix/80074249",
+          "use": "arcos y contexto tardío"
+        },
+        {
+          "id": "TLK_WIKI",
+          "publisher": "Wikipedia",
+          "title": "The Last Kingdom (TV series)",
+          "url": "https://en.wikipedia.org/wiki/The_Last_Kingdom_(TV_series)",
+          "use": "identidad y descripciones generales"
+        }
+      ]
+    },
+    {
+      "id": "SRC_WITCHER",
+      "franchise": "The Witcher",
+      "sources": [
+        {
+          "id": "WITCHER_TUDUM_CAST",
+          "publisher": "Netflix Tudum",
+          "title": "The Witcher Cast and Characters",
+          "url": "https://www.netflix.com/tudum/articles/the-witcher-cast",
+          "use": "arcos actuales y relaciones"
+        },
+        {
+          "id": "WITCHER_TUDUM_BIBLE",
+          "publisher": "Netflix Tudum",
+          "title": "The Witcher — Guide to the Continent and Characters",
+          "url": "https://www.netflix.com/tudum/articles/witcher-bible-guide-continent-creatures",
+          "use": "caracterización general"
+        },
+        {
+          "id": "WITCHER_TUDUM_S2",
+          "publisher": "Netflix Tudum",
+          "title": "Characters Vying for Power in The Witcher",
+          "url": "https://www.netflix.com/tudum/articles/all-the-characters-vying-for-power-in-the-witcher-season-2",
+          "use": "motivaciones e interacción"
+        }
+      ]
+    },
+    {
+      "id": "SRC_LOTR",
+      "franchise": "The Lord of the Rings",
+      "sources": [
+        {
+          "id": "LOTR_TG_FELLOWSHIP",
+          "publisher": "Tolkien Gateway",
+          "title": "Fellowship of the Ring",
+          "url": "https://tolkiengateway.net/wiki/Fellowship",
+          "use": "roles, decisiones y relaciones del grupo"
+        },
+        {
+          "id": "LOTR_TG_CHARACTERS",
+          "publisher": "Tolkien Gateway",
+          "title": "Characters in The Lord of the Rings",
+          "url": "https://tolkiengateway.net/wiki/Category:Characters_in_The_Lord_of_the_Rings",
+          "use": "índice de personajes"
+        },
+        {
+          "id": "LOTR_TG_FARAMIR",
+          "publisher": "Tolkien Gateway",
+          "title": "Faramir",
+          "url": "https://tolkiengateway.net/wiki/Faramir",
+          "use": "contraste entre resolución, prudencia y juicio"
+        }
+      ]
+    },
+    {
+      "id": "SRC_KOTSK",
+      "franchise": "A Knight of the Seven Kingdoms",
+      "sources": [
+        {
+          "id": "KOTSK_WIKI",
+          "publisher": "Wikipedia",
+          "title": "A Knight of the Seven Kingdoms (TV series)",
+          "url": "https://en.wikipedia.org/wiki/A_Knight_of_the_Seven_Kingdoms_(TV_series)",
+          "use": "reparto, relaciones y roles"
+        },
+        {
+          "id": "KOTSK_HBO_SHOP",
+          "publisher": "HBO",
+          "title": "A Knight of the Seven Kingdoms",
+          "url": "https://shop.hbo.com/collections/a-knight-of-the-seven-kingdoms",
+          "use": "premisa oficial y caracterización general de Dunk/Egg"
+        }
+      ]
+    }
+  ],
+  "currentScope": {
+    "productionTarget": "Norgard_humans_only",
+    "activeCorpusHumanSamples": 65,
+    "nonhumanReferenceExtractionEnabled": false,
+    "futurePolicy": "Elves and other non-human peoples receive separate research/production layers later."
+  }
+}

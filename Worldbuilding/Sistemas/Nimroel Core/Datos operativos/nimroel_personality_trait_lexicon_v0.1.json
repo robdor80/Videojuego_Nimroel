@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_personality_trait_lexicon",
+  "version": "0.1",
+  "status": "active_core_support",
+  "authorityScope": "nimroel_universal",
+  "sourceContract": "nimroel_personality_traits_contract_v0.1.json",
+  "scalarDimensions": [
+    {
+      "id": "PERS01",
+      "key": "sociability",
+      "low": "prefiere poca interacción",
+      "high": "busca/disfruta interacción"
+    },
+    {
+      "id": "PERS02",
+      "key": "caution",
+      "low": "actúa con poca comprobación",
+      "high": "evalúa riesgo y consecuencias"
+    },
+    {
+      "id": "PERS03",
+      "key": "patience",
+      "low": "tolera mal demora/repetición",
+      "high": "tolera espera y dificultad"
+    },
+    {
+      "id": "PERS04",
+      "key": "assertiveness",
+      "low": "evita afirmar deseos/límites",
+      "high": "expresa deseos/límites con firmeza"
+    },
+    {
+      "id": "PERS05",
+      "key": "flexibility",
+      "low": "se aferra a planes",
+      "high": "adapta planes con facilidad"
+    },
+    {
+      "id": "PERS06",
+      "key": "conscientiousness",
+      "low": "poco estructurado",
+      "high": "disciplinado y cuidadoso"
+    },
+    {
+      "id": "PERS07",
+      "key": "curiosity",
+      "low": "baja exploración",
+      "high": "alta curiosidad/exploración"
+    },
+    {
+      "id": "PERS08",
+      "key": "emotional_expressiveness",
+      "low": "contiene mucho la emoción visible",
+      "high": "expresa emoción con facilidad"
+    },
+    {
+      "id": "PERS09",
+      "key": "generosity",
+      "low": "protege tiempo/recursos",
+      "high": "ofrece ayuda/recursos con facilidad"
+    },
+    {
+      "id": "PERS10",
+      "key": "reserve",
+      "low": "comparte mucho de sí",
+      "high": "protege intimidad y distancia"
+    },
+    {
+      "id": "PERS11",
+      "key": "warmth",
+      "low": "presentación fría/distante",
+      "high": "presentación cálida/cercana"
+    },
+    {
+      "id": "PERS12",
+      "key": "humor_frequency",
+      "low": "humor raro",
+      "high": "humor frecuente"
+    },
+    {
+      "id": "PERS13",
+      "key": "empathy_expression",
+      "low": "empatía poco visible",
+      "high": "expresa activamente empatía"
+    },
+    {
+      "id": "PERS14",
+      "key": "directness",
+      "low": "indirecto",
+      "high": "muy directo"
+    },
+    {
+      "id": "PERS15",
+      "key": "tact",
+      "low": "brusco/poco diplomático",
+      "high": "muy cuidadoso con forma y momento"
+    },
+    {
+      "id": "PERS16",
+      "key": "rule_orientation",
+      "low": "tolera excepciones",
+      "high": "muy apegado a reglas/procedimientos"
+    },
+    {
+      "id": "PERS17",
+      "key": "authority_deference",
+      "low": "cuestiona autoridad fácilmente",
+      "high": "deferencia alta a autoridad legítima"
+    },
+    {
+      "id": "PERS18",
+      "key": "ambition",
+      "low": "baja búsqueda de avance/estatus",
+      "high": "alta búsqueda de logro/avance"
+    },
+    {
+      "id": "PERS19",
+      "key": "competitiveness",
+      "low": "poco competitivo",
+      "high": "muy competitivo"
+    },
+    {
+      "id": "PERS20",
+      "key": "initial_trust_speed",
+      "low": "confianza inicial lenta",
+      "high": "confianza inicial rápida"
+    },
+    {
+      "id": "PERS21",
+      "key": "intimacy_openness",
+      "low": "muy guardado personalmente",
+      "high": "se abre íntimamente con rapidez"
+    },
+    {
+      "id": "PERS22",
+      "key": "optimism",
+      "low": "expectativa pesimista/cauta",
+      "high": "expectativa optimista"
+    },
+    {
+      "id": "PERS23",
+      "key": "self_confidence",
+      "low": "duda de sí con facilidad",
+      "high": "alta seguridad personal"
+    },
+    {
+      "id": "PERS24",
+      "key": "forgiveness_tendency",
+      "low": "mantiene agravios",
+      "high": "tiende a perdonar"
+    },
+    {
+      "id": "PERS25",
+      "key": "teaching_instinct",
+      "low": "poco impulso de enseñar",
+      "high": "fuerte impulso de mentoría"
+    },
+    {
+      "id": "PERS26",
+      "key": "autonomy_need",
+      "low": "cómodo siendo dirigido",
+      "high": "fuerte necesidad de independencia"
+    },
+    {
+      "id": "PERS27",
+      "key": "status_sensitivity",
+      "low": "poco atento a rango/estatus",
+      "high": "muy atento a rango/posición"
+    },
+    {
+      "id": "PERS28",
+      "key": "pride",
+      "low": "poco orgullo identitario/logro",
+      "high": "alto orgullo de identidad/logro"
+    }
+  ],
+  "qualitativeTraits": [
+    "pragmatic",
+    "idealistic",
+    "loyal",
+    "protective",
+    "resilient",
+    "adaptable",
+    "perfectionistic",
+    "intellectual",
+    "hands_on",
+    "improvisational",
+    "skeptical",
+    "reputation_sensitive",
+    "people_pleasing",
+    "mastery_proud",
+    "self_deprecating",
+    "identity_secure",
+    "responsibility_driven",
+    "justice_oriented",
+    "relationship_invested",
+    "family_oriented",
+    "duty_focused",
+    "self_sacrificing",
+    "observant",
+    "resourceful",
+    "principled",
+    "courageous_despite_fear",
+    "recognition_seeking",
+    "anti_pretension",
+    "compassionate",
+    "tradition_aware",
+    "politically_adaptive",
+    "grievance_prone",
+    "status_aware"
+  ],
+  "styleTags": {
+    "humor": [
+      "dry",
+      "deadpan",
+      "playful",
+      "sarcastic",
+      "teasing",
+      "dark",
+      "self_deprecating",
+      "storytelling",
+      "boastful",
+      "warm",
+      "gentle",
+      "rare_or_none"
+    ],
+    "stress": [
+      "more_formal",
+      "more_blunt",
+      "withdraws",
+      "takes_control",
+      "seeks_input",
+      "uses_humor",
+      "becomes_impatient",
+      "hyperfocuses",
+      "protects_others",
+      "questions_self",
+      "overprepares",
+      "acts_fast",
+      "tightens_control"
+    ],
+    "affection": [
+      "verbal",
+      "acts_of_service",
+      "protective",
+      "teasing",
+      "quiet_presence",
+      "physical_warmth",
+      "formal_loyalty",
+      "slow_but_deep",
+      "shared_activity"
+    ],
+    "disagreement": [
+      "debate",
+      "direct_challenge",
+      "careful_dissent",
+      "sarcasm",
+      "questioning",
+      "avoidance",
+      "evidence_first",
+      "relationship_preserving",
+      "authority_appeal",
+      "pragmatic_compromise"
+    ],
+    "leadership": [
+      "directive",
+      "consultative",
+      "mentor",
+      "protective",
+      "duty_first",
+      "consensus_seeking",
+      "delegating",
+      "hands_on",
+      "calm_command",
+      "charismatic"
+    ],
+    "socialSignature": [
+      "small_talk_averse",
+      "storyteller",
+      "listener",
+      "banter_friendly",
+      "private",
+      "gregarious",
+      "quietly_observant",
+      "eager_to_impress",
+      "complainer",
+      "professional_distance",
+      "plainspoken"
+    ]
+  },
+  "allowedTensions": [
+    "alta calidez + baja sociabilidad",
+    "alto orgullo + baja sensibilidad al estatus",
+    "alta cautela + alta curiosidad",
+    "alto humor + alta formalidad",
+    "alta lealtad + baja deferencia a autoridad",
+    "alta empatía + comunicación brusca",
+    "alta confianza en sí + dudas puntuales",
+    "alta ambición + bajo exhibicionismo",
+    "alta orientación a reglas + alta autonomía",
+    "baja apertura íntima + apego profundo a largo plazo"
+  ],
+  "antiCaricatureRules": [
+    "Un rasgo alto no debe aparecer en cada frase.",
+    "La profesión no selecciona personalidad.",
+    "La cultura no selecciona personalidad.",
+    "La Casa, Reino o especie no seleccionan personalidad.",
+    "No generar sadismo, psicopatía, crueldad compulsiva o violencia extrema como adorno procedural.",
+    "Trauma, enfermedad o estados clínicos pertenecen a sistemas explícitos, no a PERS."
+  ]
+}

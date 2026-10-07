@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "nimroel_core_manifest",
-  "version": "0.4",
+  "version": "0.5",
   "status": "active_core_manifest",
   "authorityScope": "nimroel_universal",
   "root": "Worldbuilding/Sistemas/Nimroel Core/",
@@ -65,7 +65,13 @@
     "vesselNavigationSimulation": "Datos operativos/nimroel_vessel_navigation_simulation_contract_v0.1.json",
     "waterborneEncounterCombat": "Datos operativos/nimroel_waterborne_encounter_combat_contract_v0.1.json",
     "aquaticResourceHarvest": "Datos operativos/nimroel_aquatic_resource_harvest_contract_v0.1.json",
-    "transactionObligationLedger": "Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json"
+    "transactionObligationLedger": "Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json",
+    "personalityTraitLexicon": "Datos operativos/nimroel_personality_trait_lexicon_v0.1.json",
+    "persistentPersonalityProfile": "Datos operativos/nimroel_persistent_personality_profile_contract_v0.1.json",
+    "personalityAssignmentPromotion": "Datos operativos/nimroel_personality_assignment_promotion_contract_v0.1.json",
+    "personalityEvolutionContinuity": "Datos operativos/nimroel_personality_evolution_continuity_contract_v0.1.json",
+    "aiPersonalityExpressionContext": "Datos operativos/nimroel_ai_personality_expression_context_contract_v0.1.json",
+    "persistentPersonalityGenerationPipeline": "Datos operativos/nimroel_persistent_personality_generation_pipeline_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -160,6 +166,32 @@
       "status": "active_core_contract_static_validated",
       "contract": "transactionObligationLedger",
       "regression": "Validacion/regresion_transacciones_obligaciones_registro_v0.1.md"
+    },
+    "persistentPersonalitySystem": {
+      "status": "active_core_mechanics_norgard_humans_production_only",
+      "source": "01_Cognicion_y_conducta/personalidad_persistente_generacion_promocion_v0.1.md",
+      "contracts": [
+        "personalityTraits",
+        "personalityTraitLexicon",
+        "persistentPersonalityProfile",
+        "personalityAssignmentPromotion",
+        "personalityEvolutionContinuity",
+        "aiPersonalityExpressionContext",
+        "persistentPersonalityGenerationPipeline"
+      ],
+      "productionActivation": [
+        "Norgard_humans"
+      ],
+      "nonhumanGeneration": "blocked_until_dedicated_people_layer",
+      "stableIdsPreserved": "PERS01-PERS10",
+      "addedStableIds": "PERS11-PERS28"
+    }
+  },
+  "research": {
+    "personality": {
+      "sources": "Investigacion/Personalidad/fuentes_investigacion_personalidad_fantasia_v0.1.json",
+      "corpus": "Investigacion/Personalidad/corpus_personajes_referencia_personalidad_v0.1.json",
+      "productionCopiesReferenceCharacters": false
     }
   }
 }

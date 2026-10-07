@@ -36,7 +36,8 @@
       "relevant_memory",
       "applicable_reputation",
       "current_activity",
-      "culture_personality"
+      "culture_personality",
+      "persistent_personality_compact_block"
     ],
     "exclude": [
       "full_world_state",
@@ -46,7 +47,14 @@
     ],
     "knowsDoesNotMeanDiscloses": true,
     "lyingAllowedAsUtteranceNotWorldTruth": true,
-    "unknownAnswersAllowed": true
+    "unknownAnswersAllowed": true,
+    "personalitySource": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_ai_personality_expression_context_contract_v0.1.json",
+    "personalityAiAuthority": {
+      "express": true,
+      "mutateProfile": false,
+      "createPermanentTraits": false,
+      "promoteNpcTier": false
+    }
   },
   "outputTypes": [
     "text",
@@ -74,5 +82,11 @@
     "limited_knowledge",
     "naturalness",
     "secret_discipline"
+  ],
+  "personalityOutputValidation": [
+    "profile_consistency",
+    "no_invented_trait_history",
+    "no_relationship_substitution_for_global_personality",
+    "current_state_not_persisted_as_personality_without_engine_event"
   ]
 }

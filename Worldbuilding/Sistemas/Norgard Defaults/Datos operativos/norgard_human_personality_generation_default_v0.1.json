@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_human_personality_generation_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "Norgard_humans_only",
+  "coreContracts": {
+    "traits": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personality_traits_contract_v0.1.json",
+    "profile": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_persistent_personality_profile_contract_v0.1.json",
+    "assignment": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personality_assignment_promotion_contract_v0.1.json",
+    "evolution": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personality_evolution_continuity_contract_v0.1.json",
+    "aiExpression": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_ai_personality_expression_context_contract_v0.1.json"
+  },
+  "recipeLibrary": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_procedural_personality_recipe_library_v0.1.json",
+  "currentScope": {
+    "people": "human",
+    "realm": "Norgard",
+    "nonhumanGenerationEnabled": false,
+    "nonhumanPolicy": "blocked_until_dedicated_people_personality_layer_exists"
+  },
+  "assignment": {
+    "authoredVeryImportantNPC": "tier_A",
+    "proceduralImportantNPC": "tier_B",
+    "latentRandomNPC": "tier_C",
+    "CtoBPromotion": "automatic_when_persistent_identity_becomes_interaction_relevant",
+    "BtoA": "authorial_deepening_without_reroll"
+  },
+  "recipeSelection": {
+    "deterministic": true,
+    "mayUsePriorObservedBehaviorAsConstraint": true,
+    "mustNotUseAsSelector": [
+      "sex",
+      "occupation",
+      "wealth",
+      "social_class",
+      "Great_House",
+      "settlement",
+      "military_rank",
+      "noble_title",
+      "player_preference_for_likeable_NPC"
+    ],
+    "note": "Norgard no tiene una personalidad media obligatoria. La biblioteca produce diversidad humana."
+  },
+  "expressionLayers": {
+    "realmCultureMayShapeExpression": true,
+    "realmCultureMayRewriteCoreTraits": false,
+    "GreatHouseModifierCurrentlyRequired": false,
+    "localityModifierCurrentlyRequired": false,
+    "professionAddsRegisterNotPersonality": true,
+    "statusAndInstitutionMayChangeFormalityWithoutChangingPERS": true,
+    "familyAndUpbringingMayAddExpressionRefsWhenCanonical": true
+  },
+  "generationFormula": "campaign_seed + npc_id + personality + rules_version + Norgard_recipe_library_version",
+  "persistence": {
+    "profilePermanent": true,
+    "recipePermanentAfterResolution": true,
+    "exactVectorPermanentExceptValidatedEvolution": true,
+    "saveLoadStable": true,
+    "LODStable": true
+  },
+  "authoredNPCPolicy": {
+    "majorLoreNPCs": "hand_authored_personality_profile",
+    "authoringMayUse28Dimensions": true,
+    "proceduralRecipeOptionalAsInternalScaffold": false,
+    "preserveEstablishedLoreBehavior": true
+  },
+  "future": {
+    "elves": "separate_people_personality_layer_not_implemented",
+    "otherPeoples": "separate_people_personality_layer_not_implemented"
+  }
+}
