@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "0.7",
+  "version": "0.8",
   "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
@@ -20,7 +20,7 @@
     "bridgeCount": 1,
     "mainPermanentRiverCrossing": {
       "count": 1,
-      "position": "upstream_of_main_river_docks",
+      "position": "river_chainage_820m_upstream_of_T01",
       "connectsInteriorRoutesTo": [
         "T02",
         "T03"
@@ -32,11 +32,37 @@
         "goods",
         "official_traffic"
       ],
-      "construction": "robust_mixed_or_stone_wood_solution_to_be_resolved_by_span",
+      "construction": "stone_abutments_and_three_stone_cutwater_piers_with_timber_superstructure",
       "floodAware": true,
-      "fortifiedByDefault": false
+      "fortifiedByDefault": false,
+      "canonicalName": "Puente de los Gemelos",
+      "centerXYm": [
+        -120,
+        801
+      ],
+      "westAbutmentXYm": [
+        -158,
+        810
+      ],
+      "eastAbutmentXYm": [
+        -82,
+        792
+      ],
+      "structuralLengthM": 78,
+      "clearDeckWidthM": 6.2,
+      "overallDeckWidthM": 7.2,
+      "spanClearancesM": [
+        14,
+        17,
+        17,
+        14
+      ],
+      "pierCount": 3,
+      "ordinaryHighWaterClearanceM": 4.5,
+      "designFloodNavigation": "closed"
     },
-    "principalRoyalNavalBaseInT08": true
+    "principalRoyalNavalBaseInT08": true,
+    "primaryUrbanMassBank": "east_left_bank_hydrologically"
   },
   "sectors": {
     "T01": {
@@ -410,11 +436,6 @@
     "heavyTrafficDiversionRequired": true
   },
   "unresolvedByDesign": [
-    "exact_river_course",
-    "exact_coastline_and_elevation",
-    "exact_floodplain",
-    "exact_main_bridge_geometry_and_material_resolution",
-    "possible_minor_secondary_crossings",
     "T01_T12_metric_geometry",
     "S01_S13_exact_sites_and_footprints",
     "street_level_geometry",
@@ -882,11 +903,11 @@
     "exactValrikAncestralAshReturnLocation": "unresolved"
   },
   "cardinalOrientation": {
-    "primaryUrbanMass": "east_of_main_near_mouth_channel",
-    "mainBridge": "west_northwest_access_upstream_of_T01",
-    "T01": "west_southwest_river_edge",
-    "T07": "south_southwest_integrated_mouth_civil_port",
-    "T08": "south_southeast_adjacent_coast_Crown_royal_naval_complex_separate_from_T07",
+    "primaryUrbanMass": "east_of_main_river_channel",
+    "mainBridge": "upstream_crossing_at_river_PK_820_connecting_west_approach_to_east_urban_bank",
+    "T01": "lower_eastern_riverbank_PK_200_580",
+    "T07": "east_of_river_mouth_sheltered_civil_coast_PK_80_620",
+    "T08": "farther_east_coastal_reach_PK_880_1820_Crown_royal_naval_complex_separate_from_T07",
     "T03": "central_south_or_central_west_inland_of_port",
     "T02": "west_northwest_between_bridge_T03_T04",
     "T04": "north_northwest_and_intermediate_corridors",
@@ -1215,5 +1236,34 @@
       ]
     },
     "waterSurfaceExcludedFromLandFootprints": true
+  },
+  "metricGeography": {
+    "status": "point_3_closed",
+    "contract": "Datos operativos/treskal_metric_geography_contract_v0.1.json",
+    "localMetricReference": "TRESKAL_LOCAL_METRIC_V1",
+    "planningControlWindowM": {
+      "width": 2500,
+      "height": 1500
+    },
+    "river": {
+      "lengthWithinControlM": 1424,
+      "mouthWidthM": 100,
+      "mouthDepthM": 4.5,
+      "primaryUrbanBank": "east"
+    },
+    "coast": {
+      "eastControlledLengthM": 2036,
+      "T07FrontageM": 540,
+      "T07T08SeparationM": 260,
+      "T08FrontageM": 940
+    },
+    "bridge": {
+      "name": "Puente de los Gemelos",
+      "chainageM": 820,
+      "lengthM": 78,
+      "clearDeckWidthM": 6.2
+    },
+    "floodSafeGroundMinZM": 6,
+    "minorPermanentCrossingCount": 0
   }
 }
