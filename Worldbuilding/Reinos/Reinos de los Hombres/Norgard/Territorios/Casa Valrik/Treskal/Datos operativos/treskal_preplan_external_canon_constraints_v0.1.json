@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "1.1",
+  "version": "1.2",
   "status": "final_preplan_constraint_set_point_1_closed",
   "purpose": "Freeze every canonical spatial constraint required before Treskal metric planning and certify that no external canon blocker remains.",
-  "planReadiness": "point_2_closed_ready_for_point_3_metric_geography",
+  "planReadiness": "point_3_closed_ready_for_point_4_sector_fit",
   "authorInputRequiredNow": false,
   "closureMarker": "TRESKAL_METRIC_PLAN_POINT_1_PREPLAN_AUDIT_CLOSED",
   "externalCanonBlockers": [],
@@ -246,16 +246,7 @@
   },
   "openMetricDecisionsByPoint": {
     "point2": [],
-    "point3": [
-      "river_geometry",
-      "river_width_depth",
-      "coastline",
-      "elevation",
-      "slope",
-      "floodplain",
-      "bridge_geometry",
-      "minor_crossings_if_needed"
-    ],
+    "point3": [],
     "point4": [
       "T01_T12_exact_polygons"
     ],
@@ -282,7 +273,8 @@
     "unresolvedExternalCanonCount": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint2": 0,
     "remainingOpenItemsAreMetricPlanningWork": true,
-    "unresolvedAuthorDecisionsRequiredBeforePoint3": 0
+    "unresolvedAuthorDecisionsRequiredBeforePoint3": 0,
+    "unresolvedAuthorDecisionsRequiredBeforePoint4": 0
   },
   "resolvedMetricScale": {
     "contract": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
@@ -291,5 +283,23 @@
     "planningEnvelopeTargetHa": 250,
     "T08TargetHa": 36,
     "T12TargetHa": 15
+  },
+  "resolvedMetricGeography": {
+    "contract": "Datos operativos/treskal_metric_geography_contract_v0.1.json",
+    "localMetricReference": "TRESKAL_LOCAL_METRIC_V1",
+    "riverLengthWithinControlM": 1424,
+    "mouthWidthM": 100,
+    "primaryUrbanBank": "east",
+    "T01RiverFrontageM": 380,
+    "T07CoastFrontageM": 540,
+    "T08CoastFrontageM": 940,
+    "T07T08SeparationM": 260,
+    "bridge": {
+      "name": "Puente de los Gemelos",
+      "chainageM": 820,
+      "lengthM": 78
+    },
+    "minorPermanentCrossings": 0,
+    "floodSafeGroundMinZM": 6
   }
 }
