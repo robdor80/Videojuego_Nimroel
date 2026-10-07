@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "0.4",
+  "version": "0.5",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3190,6 +3190,100 @@
       "expected": [
         "25-35 ha ordinary growth reserve remains available",
         "reserve is not preassigned to an invented institution"
+      ]
+    },
+    {
+      "id": "metric_geography_orientation",
+      "expected": [
+        "primary urban mass remains on east bank",
+        "river flows from N/NW toward S/SE",
+        "city is not mirrored across both banks"
+      ]
+    },
+    {
+      "id": "metric_geography_river",
+      "expected": [
+        "river centerline follows TRESKAL_LOCAL_METRIC_V1",
+        "mouth normal width is about 100 m",
+        "normal thalweg depth grades from 4.5 m at mouth to 1.9 m at north control edge"
+      ]
+    },
+    {
+      "id": "metric_geography_mouth",
+      "expected": [
+        "one principal urban estuarine mouth",
+        "no urban delta",
+        "no permanent island inside urban mouth"
+      ]
+    },
+    {
+      "id": "metric_geography_T01",
+      "expected": [
+        "T01 uses east river bank PK 200-580",
+        "operational frontage is 380 m",
+        "bridge remains 240 m upstream of upper T01 frontage"
+      ]
+    },
+    {
+      "id": "metric_geography_T07",
+      "expected": [
+        "T07 uses east coast PK 80-620",
+        "civil frontage is 540 m"
+      ]
+    },
+    {
+      "id": "metric_geography_T08",
+      "expected": [
+        "T08 uses east coast PK 880-1820",
+        "naval frontage is 940 m",
+        "T08 has no primary river frontage"
+      ]
+    },
+    {
+      "id": "metric_geography_waterfront_separation",
+      "expected": [
+        "T07 and T08 are separated by 260 m of shoreline control",
+        "no continuous shared civil-naval quay"
+      ]
+    },
+    {
+      "id": "metric_geography_bridge",
+      "expected": [
+        "Puente de los Gemelos is at river PK 820",
+        "structural length is 78 m",
+        "clear deck width is 6.2 m",
+        "four spans 14/17/17/14 m",
+        "three stone piers and timber superstructure",
+        "not fortified by default"
+      ]
+    },
+    {
+      "id": "metric_geography_flood_safety",
+      "expected": [
+        "T06 and S03-S05 remain in F3 safe ground",
+        "T12 and S11-S12 remain in F3 safe ground",
+        "critical naval command/storage is moved rearward from F1/F2"
+      ]
+    },
+    {
+      "id": "metric_geography_minor_crossings",
+      "expected": [
+        "no minor permanent bridge is required",
+        "no ferry is required for ordinary urban function"
+      ]
+    },
+    {
+      "id": "metric_geography_land_water_accounting",
+      "expected": [
+        "river and sea remain excluded from Point 2 terrestrial area totals"
+      ]
+    },
+    {
+      "id": "metric_geography_deferred_scope",
+      "expected": [
+        "Point 3 does not fix T01-T12 polygons",
+        "Point 3 does not fix S01-S13 sites",
+        "Point 3 does not fix streets or dock internal geometry"
       ]
     }
   ]
