@@ -52,7 +52,7 @@
   "travelMustAllowPlausibleBasicNeedsResolution": true,
   "consumptionMayAffectStockAndOwnershipSystems": true,
   "hospitalityCareAndFavorsMayHelpOnlyWithRealResources": true,
-  "healthConsequencesDeferredToFutureHealthSystem": true,
+  "healthConsequencesDeferredToFutureHealthSystem": false,
   "lodMayAggregateSatisfiedRoutineNeeds": true,
   "lodMustPreserveUnsatisfiedRelevantNeed": true,
   "aiMayMentionNeedOnlyWhenRelevant": true,
@@ -67,6 +67,13 @@
     "last_update_time"
   ],
   "externalDependencies": {
-    "exactPhysiologyAndHealthConsequences": "future_Nimroel_health_system"
+    "exactPhysiologyAndHealthConsequences": "resolved_by_nimroel_health_system"
+  },
+  "healthIntegration": {
+    "status": "resolved_by_core_health_system",
+    "contract": "nimroel_health_injury_illness_recovery_contract_v0.1.json",
+    "prolongedHydrationFailureMayCreate": "HCOND16",
+    "prolongedNutritionFailureMayCreate": "HCOND17",
+    "extremeThermalFailureMayCreate": "HCOND09"
   }
 }

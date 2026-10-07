@@ -261,5 +261,14 @@
     "wartimeCombatRecruitmentBelow18Allowed": false,
     "pre18NavigationTrainingAllowed": true,
     "pre18CivilShipyardOrAuxiliaryWorkAllowedWhenAgeCompatible": true
+  },
+  "healthCareIntegration": {
+    "status": "resolved_by_Norgard_point_9",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_health_healing_tradition_default_v0.1.json",
+    "coreHealth": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_health_injury_illness_recovery_contract_v0.1.json",
+    "assignedOrContractedHealerPossible": true,
+    "universalHealerPerUnitOrVessel": false,
+    "trainedFirstAidDoesNotCreateFullHealerStatus": true,
+    "lackOfSpecialistRemainsRealConstraint": true
   }
 }

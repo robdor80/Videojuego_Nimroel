@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_health_healing_tradition_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "Norgard_human_healthcare_and_healing_tradition",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/salud_curanderia_norgard_v0.1.md",
+  "coreHealthContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_health_injury_illness_recovery_contract_v0.1.json",
+  "healthcareModel": {
+    "centralizedHospitalAssumed": false,
+    "medicalCollegeAssumed": false,
+    "universalPublicHealthcareAssumed": false,
+    "modernPharmacyAssumed": false,
+    "modernLaboratoryAssumed": false,
+    "distributedHouseholdAndHealerNetwork": true,
+    "homeVisitsSupported": true
+  },
+  "healingTradition": {
+    "specializedHealingPredominantlyFemale": true,
+    "maleHealerForbidden": false,
+    "transmission": "mainly_woman_to_woman_apprenticeship_observation_and_practice",
+    "formalApprenticeshipMinimumAge": 12,
+    "independentPracticeMinimumAge": 18,
+    "ageDoesNotGrantCompetenceAutomatically": true,
+    "universalLicenseRequired": false,
+    "universalGuildRequired": false,
+    "reputationAndTrainingMatter": true
+  },
+  "possibleCompetenceAreas": [
+    "wounds",
+    "burns",
+    "fractures_and_immobilization",
+    "fevers",
+    "respiratory_ailments",
+    "digestive_ailments",
+    "childbirth",
+    "recovery",
+    "child_care",
+    "medicinal_materials"
+  ],
+  "careLocations": [
+    "healer_home_or_workspace",
+    "patient_home",
+    "inn",
+    "workplace",
+    "institutional_building",
+    "safe_docked_vessel",
+    "camp",
+    "military_installation",
+    "other_compatible_location"
+  ],
+  "settlementAvailability": {
+    "largeCity": "multiple_healers_expected_by_capacity_not_fixed_count",
+    "town": "one_or_more_possible_by_population_routes_and_world_state",
+    "village": "local_healer_or_advanced_household_knowledge_or_external_dependency",
+    "specialistGuaranteedEverywhere": false
+  },
+  "ordinaryHouseholdCare": [
+    "cleaning",
+    "dressing",
+    "rest",
+    "warming",
+    "hydration",
+    "food_support",
+    "known_household_remedy",
+    "basic_fever_or_discomfort_care"
+  ],
+  "empiricalPracticesMayReduceRisk": [
+    "clean_water",
+    "wound_cleaning",
+    "cleaner_materials",
+    "potable_water_separation",
+    "sick_person_separation",
+    "ventilation",
+    "boiling_when_practice_and_resources_support_it",
+    "avoiding_dirty_dressing_reuse_without_cleaning"
+  ],
+  "noModernGermTheoryRequired": true,
+  "injuryCareMayInclude": [
+    "bleeding_control",
+    "wound_cleaning",
+    "accessible_debris_removal",
+    "dressing",
+    "wound_closure_if_competent",
+    "splinting",
+    "immobilization",
+    "joint_reduction_if_competent",
+    "fracture_setting_if_competent",
+    "burn_care",
+    "monitoring_for_infection"
+  ],
+  "highRiskProcedures": {
+    "allowedWhenCompetentAndNecessary": true,
+    "examples": [
+      "wound_closure",
+      "foreign_body_extraction",
+      "drainage",
+      "joint_or_fracture_reduction",
+      "last_resort_amputation"
+    ],
+    "ordinary": false,
+    "mayFailOrKill": true,
+    "modernAnesthesiaAssumed": false
+  },
+  "medicinalMaterials": {
+    "plantsOintmentsPoulticesInfusionsSupported": true,
+    "exactBotanicalNamesDefinedHere": false,
+    "genericHealingHerbForbidden": true,
+    "productionRequiresCanonicalMaterial": true,
+    "eachMaterialMustDeclareEffects": true
+  },
+  "illnessCare": {
+    "exactModernDiagnosisForbidden": true,
+    "supportiveCareAllowed": true,
+    "contagionNotAssumedForEveryIllness": true,
+    "suspectedContagionMayJustifySeparation": true,
+    "engineTruthMayExceedNpcKnowledge": true
+  },
+  "outbreakResponse": {
+    "permanentHealthBureaucracy": false,
+    "localOrTerritorialAuthorityMayCoordinate": true,
+    "CrownMayCoordinateCrossTerritory": true,
+    "measuresMayInclude": [
+      "warning",
+      "visible_case_identification",
+      "separation_when_viable",
+      "temporary_suspect_water_source_closure",
+      "temporary_building_or_area_access_restriction",
+      "priority_waste_removal",
+      "alternative_water_provision",
+      "healer_mobilization",
+      "care_task_distribution",
+      "intersettlement_communication"
+    ],
+    "fixedFortyDayQuarantine": false,
+    "realmWideRestrictionFromSingleCaseForbidden": true
+  },
+  "pregnancyAndBirth": {
+    "healerMayAssist": true,
+    "institutionalMaternityAssumed": false,
+    "normalSetting": [
+      "home",
+      "lodging",
+      "other_safe_compatible_place"
+    ],
+    "complicationUsesCoreHCOND18": true,
+    "pregnancyOrBirthOutcomeNotGuaranteed": true
+  },
+  "workAndCare": {
+    "illnessMayReduceEmploymentCapacity": true,
+    "modernPaidSickLeaveUniversal": false,
+    "WAITMayApplyToHealerCapacity": true,
+    "healerInfiniteCapacityForbidden": true
+  },
+  "compensation": {
+    "universalMandatoryTariff": false,
+    "allowedForms": [
+      "coin",
+      "food",
+      "materials",
+      "lodging",
+      "defined_work",
+      "favor",
+      "mixed",
+      "family_help_without_transaction"
+    ],
+    "anchorsClavos": {
+      "simpleAdviceOrSimpleMaterial": [
+        1,
+        4
+      ],
+      "ordinaryConsultationAtHealer": [
+        4,
+        8
+      ],
+      "localHomeVisitExcludingMaterials": [
+        8,
+        16
+      ],
+      "prolongedOrSpecializedCare": [
+        12,
+        36
+      ],
+      "prolongedChildbirthAttendance": [
+        24,
+        48
+      ]
+    },
+    "anchorsNotFixedPrices": true,
+    "urgencyDistanceMaterialsDurationRelationshipAndRiskMayModify": true
+  },
+  "privacy": {
+    "universalWrittenMedicalCode": false,
+    "strongProfessionalDiscretionNorm": true,
+    "noDefaultPublicDisclosure": true,
+    "disclosureMayBeJustifiedBy": [
+      "patient_authorization",
+      "care_need",
+      "serious_third_party_risk",
+      "competent_authority_valid_cause"
+    ]
+  },
+  "militaryAndNavy": {
+    "healersOrExperiencedCaregiversMayBeAssignedOrContracted": true,
+    "universalHealersPerUnit": false,
+    "universalHealersPerShip": false,
+    "lackOfSpecialistIsRealConstraint": true,
+    "trainedFirstAidDoesNotCreateFullHealerStatus": true
+  },
+  "nobleAndCrownHouseholds": {
+    "retainedTrustedHealerPossible": true,
+    "privateCareRoomPossible": true,
+    "medicinalStockPossible": true,
+    "createsPublicHospital": false
+  },
+  "legalIntegration": {
+    "badOutcomeAloneProvesCrime": false,
+    "existingPenalAndContractRulesApplyToFraudIntentionalHarmTheftOrOtherOffenses": true,
+    "noStandaloneMedicalCrimeInvented": true
+  },
+  "religionAndSupernatural": {
+    "godsExist": false,
+    "priestHealerInstitution": false,
+    "genericHealingMagicAssumed": false,
+    "miracleOrResurrectionAssumed": false
+  },
+  "aiAuthority": {
+    "mayDescribeAuthorizedSymptoms": true,
+    "mayExpressHealerBelief": true,
+    "maySuggestCulturallyPlausibleAction": true,
+    "mayDiagnoseEngineTruthOmnisciently": false,
+    "mayCreateMedicine": false,
+    "mayHeal": false,
+    "mayCreateOutbreak": false,
+    "mayKill": false
+  },
+  "externalDependencies": {
+    "medicinalFloraAndExactMaterials": "future_canonical_flora_and_shared_material_culture",
+    "namedDiseasesIfAny": "future_or_authored_condition_catalog",
+    "exactSpeciesPhysiology": "people_specific_override_when_defined"
+  },
+  "closureMarker": "HEALTH_POINT_9_CLOSED_NORGARD_HEALING_TRADITION"
+}

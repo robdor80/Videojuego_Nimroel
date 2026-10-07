@@ -84,9 +84,16 @@
   "institutionalObstetricModelDefinedByCore": false,
   "externalDependencies": {
     "exactPregnancyAndChildDevelopmentTiming": "future_Nimroel_character_lifecycle_system",
-    "exactPregnancyBirthHealthMechanics": "future_Nimroel_health_system",
+    "exactPregnancyBirthHealthMechanics": "resolved_by_nimroel_health_system",
     "conceptionAndReproductionRules": "future_Nimroel_character_lifecycle_system",
-    "namingParentageGuardianshipLaw": "future_Norgard_family_and_marriage_canon",
+    "namingParentageGuardianshipLaw": "resolved_by_Norgard_family_point_6_for_Norgard",
     "birthSettingAndCareTradition": "realm_or_local_defaults"
+  },
+  "healthIntegration": {
+    "status": "resolved_by_core_health_system",
+    "contract": "nimroel_health_injury_illness_recovery_contract_v0.1.json",
+    "complicationCondition": "HCOND18",
+    "complicationNotAutomatic": true,
+    "maternalAndNewbornHealthOwnedByHealthSystem": true
   }
 }

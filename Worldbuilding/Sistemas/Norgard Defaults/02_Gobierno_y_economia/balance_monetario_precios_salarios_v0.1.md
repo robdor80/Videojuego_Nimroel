@@ -192,3 +192,24 @@ Un aprendiz no recibe automáticamente el salario de un oficial; su compensació
 Fuente:
 
 `Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`
+
+
+---
+
+## 12. Atención sanitaria — integración Punto 9
+
+Anclas de referencia para humanos de Norgard:
+
+| Servicio | Rango ordinario |
+|---|---:|
+| consejo/remedio sencillo | 1–4 Clavos |
+| consulta ordinaria en casa de la curandera | 4–8 Clavos |
+| visita local a domicilio | 8–16 Clavos + materiales |
+| atención prolongada o procedimiento especializado | 12–36 Clavos o más |
+| asistencia prolongada a parto | 1–2 Lunas |
+
+No son tarifas obligatorias.
+
+Puede existir pago en moneda, especie, materiales, trabajo definido, favor o combinación.
+
+Urgencia, distancia, duración, riesgo, materiales, relación y disponibilidad pueden alterar el precio.

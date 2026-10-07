@@ -192,9 +192,9 @@ Este documento sigue sin establecer cuándo se asigna nombre, quién lo elige, c
 
 # 17. Salud y mortalidad
 
-El recién nacido puede enfermar o morir si el futuro sistema de salud lo determina.
+El recién nacido puede enfermar o morir si HLTH/HCOND lo determinan.
 
-No se fijan probabilidades aquí.
+No se fijan probabilidades universales aquí.
 
 Si muere, MORT se aplica, la familia conserva memoria, el hogar y CARE se recalculan y el NPC no se borra retroactivamente de la historia.
 

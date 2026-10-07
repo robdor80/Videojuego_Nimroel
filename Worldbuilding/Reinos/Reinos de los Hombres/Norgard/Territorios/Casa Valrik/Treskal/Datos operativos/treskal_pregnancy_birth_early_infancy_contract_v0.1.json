@@ -18,5 +18,12 @@
     "worldStateMeaningPreserved": true,
     "saveMigrationRequired": false
   },
-  "note": "Treskal inherits Nimroel Core PREG semantics. Only the local birth setting and healer model remain explicit Treskal overrides."
+  "note": "Treskal inherits Nimroel Core PREG semantics. Only the local birth setting and healer model remain explicit Treskal overrides.",
+  "healthIntegration": {
+    "status": "resolved_by_core_health_and_Norgard_point_9",
+    "coreHealth": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_health_injury_illness_recovery_contract_v0.1.json",
+    "norgardHealth": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_health_healing_tradition_default_v0.1.json",
+    "complicationCondition": "HCOND18",
+    "institutionalMaternityDefault": false
+  }
 }

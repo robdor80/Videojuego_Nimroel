@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_health_injury_illness_recovery_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "stableIdNamespaces": {
+    "HLTH": "overall_health_state",
+    "HCOND": "health_condition_type",
+    "HTRT": "health_treatment_state",
+    "OUTB": "outbreak_state"
+  },
+  "healthStates": {
+    "HLTH01": "well",
+    "HLTH02": "limited",
+    "HLTH03": "serious",
+    "HLTH04": "critical",
+    "HLTH05": "recovering",
+    "HLTH06": "chronic_impairment"
+  },
+  "conditionTypes": {
+    "HCOND01": "superficial_wound",
+    "HCOND02": "deep_or_penetrating_wound",
+    "HCOND03": "blunt_trauma",
+    "HCOND04": "fracture_or_dislocation",
+    "HCOND05": "burn_or_scald",
+    "HCOND06": "crush_injury",
+    "HCOND07": "sprain_strain_soft_tissue",
+    "HCOND08": "head_injury",
+    "HCOND09": "cold_or_heat_exposure",
+    "HCOND10": "respiratory_illness_syndrome",
+    "HCOND11": "gastrointestinal_illness_syndrome",
+    "HCOND12": "febrile_systemic_illness",
+    "HCOND13": "local_or_wound_infection",
+    "HCOND14": "severe_systemic_infection",
+    "HCOND15": "poisoning_or_toxic_exposure",
+    "HCOND16": "dehydration_health_consequence",
+    "HCOND17": "undernutrition_health_consequence",
+    "HCOND18": "pregnancy_or_birth_complication",
+    "HCOND19": "other_supported_condition"
+  },
+  "treatmentStates": {
+    "HTRT01": "requested",
+    "HTRT02": "waiting",
+    "HTRT03": "assessment",
+    "HTRT04": "active_care",
+    "HTRT05": "monitoring",
+    "HTRT06": "completed",
+    "HTRT07": "interrupted",
+    "HTRT08": "unavailable_or_failed_to_start"
+  },
+  "outbreakStates": {
+    "OUTB01": "isolated_case",
+    "OUTB02": "suspected_cluster",
+    "OUTB03": "local_outbreak",
+    "OUTB04": "spreading_outbreak",
+    "OUTB05": "contained",
+    "OUTB06": "declining",
+    "OUTB07": "resolved"
+  },
+  "severity": [
+    "minor",
+    "moderate",
+    "serious",
+    "critical"
+  ],
+  "trajectory": [
+    "worsening",
+    "stable",
+    "improving",
+    "recovering",
+    "resolved",
+    "chronic"
+  ],
+  "bleeding": [
+    "none",
+    "minor",
+    "controlled",
+    "ongoing",
+    "severe",
+    "life_threatening"
+  ],
+  "pain": [
+    "none",
+    "mild",
+    "moderate",
+    "severe",
+    "overwhelming"
+  ],
+  "consciousness": [
+    "alert",
+    "confused",
+    "reduced",
+    "unconscious"
+  ],
+  "exposureRoutes": [
+    "respiratory_proximity",
+    "direct_contact",
+    "contaminated_food_or_water",
+    "contaminated_wound_or_material",
+    "animal_or_vector_exposure",
+    "toxic_material",
+    "unknown_or_not_yet_resolved"
+  ],
+  "noHitPointModel": true,
+  "multipleConditionsSimultaneouslyAllowed": true,
+  "overallHealthDerivedFromConditions": true,
+  "engineTruthSeparateFromNpcDiagnosis": true,
+  "npcMayMisdiagnose": true,
+  "conditionFields": [
+    "condition_id",
+    "npc_ref",
+    "condition_type",
+    "body_region_if_any",
+    "onset_time",
+    "cause_refs",
+    "severity",
+    "trajectory",
+    "bleeding_state_if_any",
+    "pain_state_if_any",
+    "consciousness_effect_if_any",
+    "mobility_effect_if_any",
+    "function_effect_if_any",
+    "breathing_effect_if_any",
+    "contamination_or_infection_risk_if_any",
+    "fever_or_temperature_effect_if_any",
+    "contagious_or_exposure_model_if_any",
+    "treatment_refs",
+    "complication_refs",
+    "recovery_requirements",
+    "permanent_sequela_refs",
+    "death_event_ref_if_any",
+    "last_update_time"
+  ],
+  "treatmentMay": [
+    "stabilize",
+    "reduce_risk",
+    "relieve_symptom",
+    "support_recovery",
+    "avoid_complication",
+    "fail",
+    "cause_complication_if_inappropriate"
+  ],
+  "genericCareActions": [
+    "bleeding_control",
+    "wound_cleaning",
+    "surface_debris_removal",
+    "dressing",
+    "immobilization",
+    "splinting",
+    "rest",
+    "safe_hydration",
+    "safe_nutrition",
+    "warming_or_cooling",
+    "monitoring",
+    "positioning",
+    "isolation_if_plausible",
+    "canonical_medicinal_material_application",
+    "safe_transport",
+    "childbirth_assistance",
+    "limited_invasive_procedure_if_competent"
+  ],
+  "highRiskProcedures": [
+    "wound_closure",
+    "accessible_foreign_body_extraction",
+    "joint_reduction",
+    "fracture_reduction",
+    "drainage_or_limited_invasive_intervention",
+    "last_resort_amputation"
+  ],
+  "modernAnesthesiaAssumed": false,
+  "modernAntibioticsAssumed": false,
+  "modernLaboratoryDiagnosisAssumed": false,
+  "modernImagingAssumed": false,
+  "modernSterileTechniqueAssumed": false,
+  "empiricalCleaningCanReduceRisk": true,
+  "sleepingDoesNotInstantlyHeal": true,
+  "recoveryInputs": [
+    "severity",
+    "time",
+    "rest",
+    "hydration",
+    "nutrition",
+    "thermal_environment",
+    "hygiene",
+    "treatment",
+    "care_skill",
+    "age_or_development",
+    "preexisting_conditions",
+    "complications"
+  ],
+  "sequelaeMayInclude": [
+    "scar",
+    "persistent_pain",
+    "mobility_limitation",
+    "function_loss",
+    "weakness",
+    "sensitivity",
+    "care_need",
+    "employment_capacity_change"
+  ],
+  "needIntegration": {
+    "prolongedHydrationFailureMayCreate": "HCOND16",
+    "prolongedNutritionFailureMayCreate": "HCOND17",
+    "extremeThermalFailureMayCreate": "HCOND09",
+    "NEEDRemainsSeparateFromHealthConsequence": true
+  },
+  "sanitationIntegration": {
+    "wasteAccumulationDoesNotAutoCauseDisease": true,
+    "contaminatedWaterMayIncreaseExposureRisk": true,
+    "exposureStillRequiresCauseAndRoute": true
+  },
+  "accidentIntegration": {
+    "accidentMayCreateMultipleHealthConditions": true,
+    "ACCSeverityDoesNotReplaceHCOND": true
+  },
+  "pregnancyIntegration": {
+    "PREG04MayCreate": "HCOND18",
+    "complicationNotAutomatic": true,
+    "maternalAndNewbornHealthResolvedHere": true
+  },
+  "deathIntegration": {
+    "noGenericHpZeroDeath": true,
+    "fatalMechanismsMayInclude": [
+      "fatal_bleeding",
+      "incompatible_injury",
+      "critical_trauma",
+      "severe_systemic_infection",
+      "extreme_exposure",
+      "poisoning",
+      "pregnancy_or_birth_complication",
+      "severe_illness",
+      "combined_causes"
+    ],
+    "deathOutcomeRequiresOwningMortalitySystem": true
+  },
+  "outbreakRules": {
+    "requiresPlausibleCasesAndExposure": true,
+    "noNarrativeSpontaneousOutbreak": true,
+    "lodMayAggregateButNotIgnoreSpread": true
+  },
+  "aiAuthority": {
+    "mayDescribeAuthorizedSymptoms": true,
+    "maySuggestCulturallyPlausibleCare": true,
+    "mayCreateCondition": false,
+    "mayResolveCondition": false,
+    "mayCreateInfection": false,
+    "mayInventRemedy": false,
+    "mayHeal": false,
+    "mayKill": false,
+    "mayCreateSequela": false,
+    "mayMutateHealthState": false
+  },
+  "supernaturalHealing": {
+    "assumedByCore": false,
+    "requiresDedicatedCanonAndContract": true
+  },
+  "externalDependencies": {
+    "cultureSpecificHealingTradition": "realm_or_people_default",
+    "canonicalMedicinalMaterials": "future_canonical_flora_and_materials",
+    "speciesSpecificPhysiology": "people_or_species_health_override_when_defined"
+  }
+}

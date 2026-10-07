@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_health_healing_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "caseCount": 50,
+  "cases": [
+    {
+      "id": "HLTH01",
+      "given": {
+        "injury": "superficial_cut"
+      },
+      "expect": {
+        "hitPointBarRequired": false
+      }
+    },
+    {
+      "id": "HLTH02",
+      "given": {
+        "conditions": [
+          "deep_wound",
+          "fracture"
+        ]
+      },
+      "expect": {
+        "multipleConditionsAllowed": true
+      }
+    },
+    {
+      "id": "HLTH03",
+      "given": {
+        "sceneEnded": true,
+        "bleeding": "ongoing"
+      },
+      "expect": {
+        "bleedingStopsAutomatically": false
+      }
+    },
+    {
+      "id": "HLTH04",
+      "given": {
+        "fracture": true,
+        "sleptOneNight": true
+      },
+      "expect": {
+        "healed": false
+      }
+    },
+    {
+      "id": "HLTH05",
+      "given": {
+        "wound": true,
+        "contamination": "low"
+      },
+      "expect": {
+        "infectionGuaranteed": false
+      }
+    },
+    {
+      "id": "HLTH06",
+      "given": {
+        "wound": true,
+        "contamination": "high",
+        "timePassed": true
+      },
+      "expect": {
+        "infectionPossible": true
+      }
+    },
+    {
+      "id": "HLTH07",
+      "given": {
+        "fever": true
+      },
+      "expect": {
+        "contagiousAutomatically": false
+      }
+    },
+    {
+      "id": "HLTH08",
+      "given": {
+        "outbreakRequestedByNarrative": true,
+        "noCases": true
+      },
+      "expect": {
+        "outbreakCreated": false
+      }
+    },
+    {
+      "id": "HLTH09",
+      "given": {
+        "accident": "fall"
+      },
+      "expect": {
+        "mayCreateMultipleHCOND": true
+      }
+    },
+    {
+      "id": "HLTH10",
+      "given": {
+        "need": "hydration",
+        "prolongedFailure": true
+      },
+      "expect": {
+        "mayCreate": "HCOND16"
+      }
+    },
+    {
+      "id": "HLTH11",
+      "given": {
+        "need": "food",
+        "prolongedFailure": true
+      },
+      "expect": {
+        "mayCreate": "HCOND17"
+      }
+    },
+    {
+      "id": "HLTH12",
+      "given": {
+        "extremeColdExposure": true
+      },
+      "expect": {
+        "mayCreate": "HCOND09"
+      }
+    },
+    {
+      "id": "HLTH13",
+      "given": {
+        "wasteAccumulation": true,
+        "noExposureRoute": true
+      },
+      "expect": {
+        "diseaseAutomatic": false
+      }
+    },
+    {
+      "id": "HLTH14",
+      "given": {
+        "pregnancyState": "PREG04",
+        "complicationCause": true
+      },
+      "expect": {
+        "mayCreate": "HCOND18"
+      }
+    },
+    {
+      "id": "HLTH15",
+      "given": {
+        "pregnancyState": "PREG04",
+        "complicationCause": false
+      },
+      "expect": {
+        "complicationAutomatic": false
+      }
+    },
+    {
+      "id": "HLTH16",
+      "given": {
+        "aiAction": "heal_patient"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "HLTH17",
+      "given": {
+        "aiAction": "create_infection"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "HLTH18",
+      "given": {
+        "aiAction": "describe_visible_symptom"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "HLTH19",
+      "given": {
+        "realm": "Norgard",
+        "centralHospital": true
+      },
+      "expect": {
+        "assumed": false
+      }
+    },
+    {
+      "id": "HLTH20",
+      "given": {
+        "realm": "Norgard",
+        "medicalCollege": true
+      },
+      "expect": {
+        "assumed": false
+      }
+    },
+    {
+      "id": "HLTH21",
+      "given": {
+        "realm": "Norgard, healer sex male"
+      },
+      "expect": {
+        "legallyForbidden": false
+      }
+    },
+    {
+      "id": "HLTH22",
+      "given": {
+        "realm": "Norgard",
+        "formalHealerApprenticeAge": 11
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "HLTH23",
+      "given": {
+        "realm": "Norgard",
+        "formalHealerApprenticeAge": 12
+      },
+      "expect": {
+        "ageAllows": true
+      }
+    },
+    {
+      "id": "HLTH24",
+      "given": {
+        "realm": "Norgard",
+        "healerAge": 18,
+        "competence": false
+      },
+      "expect": {
+        "independentCompetenceAutomatic": false
+      }
+    },
+    {
+      "id": "HLTH25",
+      "given": {
+        "settlement": "village",
+        "healerExists": false
+      },
+      "expect": {
+        "spawnAutomaticHealer": false
+      }
+    },
+    {
+      "id": "HLTH26",
+      "given": {
+        "healerBusy": true,
+        "newOrdinaryPatient": true
+      },
+      "expect": {
+        "waitPossible": true
+      }
+    },
+    {
+      "id": "HLTH27",
+      "given": {
+        "healerReputation": "excellent"
+      },
+      "expect": {
+        "treatmentSuccessGuaranteed": false
+      }
+    },
+    {
+      "id": "HLTH28",
+      "given": {
+        "procedure": "amputation"
+      },
+      "expect": {
+        "ordinaryTreatment": false,
+        "highRisk": true
+      }
+    },
+    {
+      "id": "HLTH29",
+      "given": {
+        "procedure": "amputation",
+        "modernAnesthesia": true
+      },
+      "expect": {
+        "assumed": false
+      }
+    },
+    {
+      "id": "HLTH30",
+      "given": {
+        "medicineName": "generic_healing_herb"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "HLTH31",
+      "given": {
+        "medicinalPlantCanonical": false
+      },
+      "expect": {
+        "usableAsProductionMedicine": false
+      }
+    },
+    {
+      "id": "HLTH32",
+      "given": {
+        "carePayment": "coin"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "HLTH33",
+      "given": {
+        "carePayment": "food"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "HLTH34",
+      "given": {
+        "carePayment": "favor"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "HLTH35",
+      "given": {
+        "careDebt": true
+      },
+      "expect": {
+        "patientBecomesProperty": false
+      }
+    },
+    {
+      "id": "HLTH36",
+      "given": {
+        "emergency": "severe_bleeding",
+        "queueHasOrdinaryVisit": true
+      },
+      "expect": {
+        "priorityMayChange": true
+      }
+    },
+    {
+      "id": "HLTH37",
+      "given": {
+        "patientInfoPrivate": true
+      },
+      "expect": {
+        "broadcastAutomatically": false
+      }
+    },
+    {
+      "id": "HLTH38",
+      "given": {
+        "outbreak": "single_case"
+      },
+      "expect": {
+        "realmWideRestrictionAutomatic": false
+      }
+    },
+    {
+      "id": "HLTH39",
+      "given": {
+        "outbreak": "local",
+        "validAuthority": true
+      },
+      "expect": {
+        "temporaryMeasuresPossible": true
+      }
+    },
+    {
+      "id": "HLTH40",
+      "given": {
+        "outbreakAcrossTerritories": true
+      },
+      "expect": {
+        "CrownCoordinationPossible": true
+      }
+    },
+    {
+      "id": "HLTH41",
+      "given": {
+        "militaryUnit": true
+      },
+      "expect": {
+        "universalHealerPerUnit": false
+      }
+    },
+    {
+      "id": "HLTH42",
+      "given": {
+        "navalShip": true
+      },
+      "expect": {
+        "universalHealerPerShip": false
+      }
+    },
+    {
+      "id": "HLTH43",
+      "given": {
+        "nobleHousehold": true
+      },
+      "expect": {
+        "privateHealerPossible": true,
+        "publicHospitalCreated": false
+      }
+    },
+    {
+      "id": "HLTH44",
+      "given": {
+        "birth": true
+      },
+      "expect": {
+        "institutionalMaternityRequired": false
+      }
+    },
+    {
+      "id": "HLTH45",
+      "given": {
+        "elderly": true
+      },
+      "expect": {
+        "illnessAutomatic": false
+      }
+    },
+    {
+      "id": "HLTH46",
+      "given": {
+        "illness": true
+      },
+      "expect": {
+        "paidSickLeaveUniversal": false
+      }
+    },
+    {
+      "id": "HLTH47",
+      "given": {
+        "religiousHealerInstitution": true
+      },
+      "expect": {
+        "assumed": false
+      }
+    },
+    {
+      "id": "HLTH48",
+      "given": {
+        "genericHealingMagic": true
+      },
+      "expect": {
+        "assumed": false
+      }
+    },
+    {
+      "id": "HLTH49",
+      "given": {
+        "supernaturalHealingFuture": true,
+        "noContract": true
+      },
+      "expect": {
+        "mayMutateHealth": false
+      }
+    },
+    {
+      "id": "HLTH50",
+      "given": {
+        "lodReduced": true,
+        "sequela": true
+      },
+      "expect": {
+        "sequelaErased": false
+      }
+    }
+  ],
+  "marker": "HEALTH_POINT_9_CLOSED_NORGARD_HEALING_TRADITION"
+}

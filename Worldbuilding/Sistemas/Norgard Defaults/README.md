@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E12 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E13 ACTIVOS**
 
 ## Objetivo
 
@@ -39,7 +39,6 @@ No listos todavía:
 
 - sistema militar final;
 - derecho familiar, matrimonio, tutela y adopción;
-- tradición sanitaria de reino;
 - gastronomía general del reino;
 - nombres personales y apellidos;
 - calendario oficial detallado;
@@ -126,12 +125,12 @@ Contrato operativo:
 
 **Los candidatos históricos respaldados por canon suficiente han sido extraídos y la capa Casa Valrik ya existe.**
 
-Tras el cierre de los Puntos 5, 6, 7 y 8, los grandes bloques de Norgard que permanecen pendientes son los que figuran en `blockedPendingCanon`: sanidad, gastronomía, nombres/apellidos, calendario y cultura material común.
+Tras el cierre de los Puntos 5–9, los grandes bloques de Norgard que permanecen pendientes son los que figuran en `blockedPendingCanon`: gastronomía, nombres/apellidos, calendario y cultura material común.
 
 
 ## Validación de cierre
 
-E1–E12 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
+E1–E13 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
 
 Estado:
 
@@ -367,3 +366,35 @@ Recetas:
 Validación:
 
 `Validacion/norgard_persistent_personality_validation_pack_v0.1.json`
+
+
+### E13 — salud y curandería
+
+Activo a nivel Reino — **Punto 9 cerrado**:
+
+- Core de salud causal mediante HLTH/HCOND/HTRT/OUTB;
+- red sanitaria distribuida;
+- curandería predominantemente femenina;
+- aprendizaje desde 12 años y práctica independiente solo con mayoría y competencia;
+- sin hospital, colegio médico o licencia universal moderna;
+- atención domiciliaria;
+- heridas, infección, enfermedad, recuperación y secuelas persistentes;
+- procedimientos limitados de alto riesgo;
+- amputación como último recurso;
+- sin anestesia/antibióticos modernos por defecto;
+- brotes y medidas temporales de autoridad;
+- privacidad sanitaria;
+- integración con embarazo, necesidades, higiene, saneamiento, accidentes, empleo, ejército y Armada;
+- sin sacerdocio ni magia curativa genérica.
+
+Contrato operativo:
+
+`Datos operativos/norgard_health_healing_tradition_default_v0.1.json`
+
+Canon:
+
+`Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/salud_curanderia_norgard_v0.1.md`
+
+Regresión:
+
+`Validacion/regresion_e13_salud_curanderia_norgard_v0.1.md`

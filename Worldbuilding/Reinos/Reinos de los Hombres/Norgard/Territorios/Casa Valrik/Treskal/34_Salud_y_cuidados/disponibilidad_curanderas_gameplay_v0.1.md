@@ -75,12 +75,14 @@ No se modela necesariamente como restauración instantánea.
 
 # 5. Resultado
 
-El motor de salud futuro resuelve:
+El sistema Core de salud resuelve mediante HLTH/HCOND/HTRT:
 
 - mejora;
 - estabilidad;
 - empeoramiento;
-- recuperación.
+- recuperación;
+- complicación;
+- secuela.
 
 La IA puede describir.
 
@@ -178,3 +180,17 @@ Eso no significa conocer:
 ## Regla final
 
 **Buscar curación en Treskal significa buscar a una persona disponible y capaz, no pulsar un servicio urbano.**
+
+
+---
+
+## Integración Punto 9
+
+Treskal hereda:
+
+- mecánica HLTH/HCOND/HTRT/OUTB de Nimroel Core;
+- tradición sanitaria de Norgard;
+- anclas económicas sanitarias;
+- reglas de privacidad, brotes y capacidad.
+
+Solo conserva como particularidad local su escala urbana y la necesidad de múltiples curanderas reales.

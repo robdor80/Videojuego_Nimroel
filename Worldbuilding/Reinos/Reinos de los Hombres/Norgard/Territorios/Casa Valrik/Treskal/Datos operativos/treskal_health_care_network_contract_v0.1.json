@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_health_care_network_contract",
-  "version": "0.1",
-  "status": "active_canon_contract",
+  "version": "0.2",
+  "status": "active_local_override_over_core_and_Norgard",
   "trainedHealersMultipleRequired": true,
   "centralizedHospitalAssumed": false,
   "medicalCollegeAssumed": false,
@@ -48,8 +48,22 @@
   "privacyDoesNotBroadcastPatientInformation": true,
   "supernaturalHealingNotAssumedByThisContract": true,
   "externalDependencies": {
-    "exactHealingMechanics": "future_Nimroel_health_system",
-    "paymentAndFees": "Norgard_economic_system",
+    "exactHealingMechanics": "resolved_by_nimroel_health_system",
+    "paymentAndFees": "resolved_by_Norgard_points_5_and_9",
     "medicinalFlora": "future_canonical_medicinal_flora"
+  },
+  "coreHealthContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_health_injury_illness_recovery_contract_v0.1.json",
+  "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_health_healing_tradition_default_v0.1.json",
+  "inheritedNamespaces": [
+    "HLTH",
+    "HCOND",
+    "HTRT",
+    "OUTB"
+  ],
+  "localOverrides": {
+    "trainedHealersMultipleRequired": true,
+    "cityScaleCapacityDriven": true,
+    "centralizedHospitalAssumed": false,
+    "safeDockedVesselCarePossible": true
   }
 }

@@ -1,3 +1,8 @@
+> **ACTUALIZACIÓN 2026-10-07 — PUNTO 9 SANIDAD / CURANDERÍA CANONIZADO**  
+> El bloqueo histórico de tradición sanitaria queda resuelto mediante E13 y un nuevo contrato Core de salud.  
+> Accidentes, necesidades, saneamiento, embarazo/parto y la red de curanderas ya consumen una misma fisiología causal.  
+> La flora medicinal concreta sigue fuera de Punto 9 y no se inventa.
+
 > **ACTUALIZACIÓN 2026-10-06 — PUNTO 8 PROPIEDAD / HERENCIA / ALQUILER CANONIZADO**  
 > El bloqueo histórico de propiedad, herencia y alquiler queda resuelto mediante E12.  
 > Propiedad privada, copropiedad, patrimonio matrimonial, herencia, testamento, bienes de menores y arrendamiento pasan a ser default activo de todo Norgard.  

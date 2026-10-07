@@ -2495,3 +2495,25 @@ Norgard activa el sistema de personalidad persistente de Nimroel Core exclusivam
 - el perfil no se rerollea al guardar/cargar, cambiar oficio, residencia, rango o LOD.
 
 Elfos y demás pueblos no humanos quedan fuera de esta activación hasta que se desarrollen sus capas propias.
+
+
+---
+
+## Salud y curandería
+
+Norgard mantiene una red sanitaria distribuida basada en hogares, cuidados y curanderas formadas.
+
+- curandería predominantemente femenina;
+- hombres posibles, aunque menos habituales;
+- atención domiciliaria;
+- sin hospital central ni colegio médico universal;
+- conocimiento empírico sin diagnóstico moderno omnisciente;
+- heridas, enfermedad y recuperación resueltas por HLTH/HCOND/HTRT;
+- brotes persistentes mediante OUTB;
+- sin sacerdocio sanitario ni magia curativa genérica.
+
+La flora medicinal concreta no se inventa hasta disponer de canon.
+
+Canon:
+
+`Sociedad/salud_curanderia_norgard_v0.1.md`

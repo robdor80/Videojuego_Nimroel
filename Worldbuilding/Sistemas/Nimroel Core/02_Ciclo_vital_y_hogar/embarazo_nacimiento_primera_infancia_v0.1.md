@@ -15,3 +15,14 @@ Principios obligatorios:
 - parto y nacimiento offscreen requieren embarazo, tiempo, ubicación y resolución válidos;
 - el Core no fija el lugar cultural del parto, la institución obstétrica ni el tipo de profesional que asiste: esos datos pertenecen a defaults culturales o overrides locales;
 - la IA no puede inventar embarazo, pérdida, parto o recién nacido.
+
+
+---
+
+## Integración sanitaria activa
+
+Las complicaciones de embarazo/parto utilizan HCOND18 y demás condiciones sanitarias cuando proceda.
+
+PREG conserva la verdad reproductiva; HLTH/HCOND conserva la verdad sanitaria.
+
+No toda gestación ni todo parto genera complicación.

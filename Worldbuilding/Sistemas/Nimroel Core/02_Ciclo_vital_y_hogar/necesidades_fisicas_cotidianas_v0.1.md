@@ -17,3 +17,18 @@ Principios obligatorios:
 - viajes deben permitir resolución plausible de necesidades;
 - LOD puede agregar necesidades satisfechas, pero no borrar una necesidad relevante sin resolver;
 - la IA no puede declarar una necesidad satisfecha sin acción y recurso válidos.
+
+
+---
+
+## Consecuencias sanitarias
+
+NEED y HLTH/HCOND son capas distintas.
+
+Una necesidad desatendida puede producir consecuencia sanitaria:
+
+- hidratación grave/prolongada → HCOND16;
+- alimentación insuficiente prolongada → HCOND17;
+- exposición térmica extrema → HCOND09.
+
+Resolver la necesidad no borra automáticamente una condición sanitaria ya creada.

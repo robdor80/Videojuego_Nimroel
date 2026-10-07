@@ -19,3 +19,16 @@ Principios obligatorios:
 - un trabajador herido no genera sustituto automático;
 - consecuencias visuales persisten hasta limpieza o reparación reales;
 - regulación laboral y catálogo de protección pertenecen a defaults/canon, no al Core.
+
+
+---
+
+## Integración sanitaria activa
+
+La gravedad fisiológica ya se resuelve mediante:
+
+`nimroel_health_injury_illness_recovery_contract_v0.1.json`
+
+Un ACC puede crear uno o varios HCOND.
+
+ACC describe el incidente; HCOND describe lo que le ocurrió al cuerpo.

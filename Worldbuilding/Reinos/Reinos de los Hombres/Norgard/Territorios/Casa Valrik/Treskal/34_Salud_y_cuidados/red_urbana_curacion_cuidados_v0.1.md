@@ -124,7 +124,7 @@ Treskal presenta riesgos específicos:
 
 - riesgos de trabajo naval y materiales pesados.
 
-La gravedad concreta depende del sistema de salud futuro.
+La gravedad concreta la resuelve el sistema Core HLTH/HCOND.
 
 ---
 
@@ -165,7 +165,7 @@ Pueden utilizar:
 - ungüentos;
 - emplastos;
 - infusiones;
-- otros materiales coherentes con el canon sanitario de Norgard.
+- otros materiales coherentes con el canon sanitario de Norgard y realmente existentes.
 
 La lista botánica concreta se define solo cuando exista flora medicinal canónica.
 
@@ -261,22 +261,19 @@ Un accidente grave puede alterar:
 - desplazamiento;
 - actividad de hogar.
 
-No se fija todavía un sistema numérico de triage.
+No existe triage hospitalario moderno.
 
-La lógica básica prioriza riesgo inmediato sobre consulta ordinaria.
+La lógica práctica prioriza riesgo inmediato sobre consulta ordinaria y puede utilizar WAIT para capacidad/espera.
 
 ---
 
 # 16. Pago
 
-Este documento no fija:
+Punto 5 y Punto 9 permiten moneda, especie, materiales, trabajo definido, favor o combinación.
 
-- tarifas;
-- moneda;
-- gratuidad;
-- obligación.
+No existe tarifa universal ni gratuidad universal.
 
-Las formas de compensación dependen del futuro sistema económico/social.
+Las anclas sanitarias de Reino son orientativas y dependen de urgencia, distancia, duración, materiales y relación.
 
 ---
 
@@ -313,12 +310,23 @@ La curandera no “revive” al NPC porque la escena necesite continuidad.
 
 Este documento describe la **curación humana ordinaria** de Treskal.
 
-Si existen mecanismos sobrenaturales de curación en otros sistemas de Nimroel, se integrarán mediante su propio canon.
+Punto 9 confirma que Norgard no presupone sacerdocio, milagros, resurrección ni magia curativa genérica.
 
-No se presuponen aquí.
+Cualquier mecanismo sobrenatural futuro necesitará canon y contrato propios.
 
 ---
 
 ## Regla final
 
 **Treskal cuida a sus enfermos mediante hogares, experiencia y una red de especialistas reales; ser ciudad no convierte su medicina en moderna.**
+
+
+---
+
+## Integración con Core y Punto 9
+
+- HLTH resume el estado funcional.
+- HCOND registra lesión/enfermedad.
+- HTRT registra atención y seguimiento.
+- OUTB registra brotes.
+- La red de Treskal aporta personas, ubicaciones, stock, tiempo y disponibilidad.

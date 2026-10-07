@@ -136,11 +136,10 @@ Pendiente:
 
 - umbrales exactos de etapas CHD/ciclo vital más allá de las bandas jurídicas;
 - longevidad;
-- reproducción;
-- fisiología;
-- consecuencias médicas.
+- reproducción/concepción;
+- fisiología específica de pueblos que todavía no se hayan desarrollado.
 
-La filiación legal está resuelta por Punto 6 y las bandas jurídicas de edad por Punto 7.
+Las consecuencias sanitarias generales ya están resueltas por Core + Punto 9. La filiación legal está resuelta por Punto 6 y las bandas jurídicas de edad por Punto 7.
 
 ## Relaciones y sociedad
 
@@ -308,7 +307,7 @@ Sí significa:
 
 ---
 
-### Actualización posterior — Puntos 1–8 de Norgard
+### Actualización posterior — Puntos 1–9 de Norgard
 
 Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya han sido resueltas a nivel superior:
 
@@ -320,9 +319,10 @@ Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya 
 - moneda/balance base;
 - matrimonio/filiación/tutela/adopción;
 - mayoría de edad/capacidad/trabajo/aprendizaje;
-- propiedad/herencia/alquiler.
+- propiedad/herencia/alquiler;
+- salud/curandería y fisiología sanitaria.
 
-Esto confirma la decisión original de no crear una capa 100 local: Treskal hereda estos sistemas desde Norgard.
+Esto confirma la decisión original de no crear una capa 100 local: Treskal hereda estos sistemas desde Core/Norgard.
 
 
 ---
@@ -339,3 +339,15 @@ La capa psicológica de NPC humanos queda reforzada sin crear una nueva capa loc
 - IA solo expresiva, no autoritativa.
 
 Esto no altera el estado de cierre funcional de Treskal.
+
+
+Punto 9 resuelve además las antiguas dependencias locales de:
+
+- gravedad de accidentes;
+- enfermedad/infección;
+- recuperación y secuelas;
+- efectos sanitarios de higiene/saneamiento;
+- complicaciones de embarazo/parto;
+- capacidad y espera de curanderas.
+
+Permanece pendiente la flora medicinal concreta.

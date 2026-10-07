@@ -700,3 +700,24 @@ Treskal consume el sistema transversal de personalidad:
 - IA sin autoridad para modificar el perfil.
 
 No existe activación para elfos u otros pueblos no humanos.
+
+
+### Salud y curandería heredadas — Punto 9 de Norgard
+
+Treskal no crea una fisiología propia.
+
+Hereda:
+
+- `HLTH/HCOND/HTRT/OUTB` desde Nimroel Core;
+- tradición sanitaria de Norgard;
+- aprendizaje, privacidad, pagos y respuesta a brotes del Punto 9.
+
+Su capa local mantiene:
+
+- varias curanderas por escala urbana;
+- ubicaciones concretas de atención;
+- disponibilidad real;
+- visitas a domicilio;
+- integración con puerto, talleres y Astilleros.
+
+La flora medicinal concreta sigue pendiente de canon y no se inventa.

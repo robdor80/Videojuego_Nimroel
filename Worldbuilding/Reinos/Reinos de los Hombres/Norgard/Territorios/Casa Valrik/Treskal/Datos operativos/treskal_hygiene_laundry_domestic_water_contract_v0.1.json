@@ -66,8 +66,14 @@
   "genericMedievalDirtForbidden": true,
   "offscreenDryingAllowedWhenConditionsSupportIt": true,
   "externalDependencies": {
-    "healthEffects": "future_Nimroel_health_system",
+    "healthEffects": "resolved_by_nimroel_health_system",
     "exactWaterPointGeometry": "metric_city_plan",
     "textileAndLaundryMaterials": "future_Norgard_material_culture_detail"
+  },
+  "healthIntegration": {
+    "status": "resolved_by_core_health_system",
+    "contract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_health_injury_illness_recovery_contract_v0.1.json",
+    "hygieneMayModifyExposureAndRecoveryRisk": true,
+    "dirtDoesNotAutomaticallyCreateDisease": true
   }
 }

@@ -88,8 +88,14 @@
   "replacementWorkerNotAutomatic": true,
   "visualConsequencesPersistUntilActuallyClearedOrRepaired": true,
   "externalDependencies": {
-    "exactInjuryResolution": "future_Nimroel_health_system",
+    "exactInjuryResolution": "resolved_by_nimroel_health_system",
     "fatigueSystemIfAny": "future_Nimroel_character_needs_system",
     "legalLiability": "realm_law_and_labor_system"
+  },
+  "healthIntegration": {
+    "status": "resolved_by_core_health_system",
+    "contract": "nimroel_health_injury_illness_recovery_contract_v0.1.json",
+    "accidentMayCreateMultipleHealthConditions": true,
+    "physiologicalSeverityOwnedByHealthSystem": true
   }
 }

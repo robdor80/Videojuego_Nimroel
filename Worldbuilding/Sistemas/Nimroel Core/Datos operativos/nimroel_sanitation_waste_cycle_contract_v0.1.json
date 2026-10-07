@@ -77,7 +77,14 @@
   "problematicAccumulationPersistsAcrossLod": true,
   "externalDependencies": {
     "exactDisposalLocations": "local_cartography_or_world_state",
-    "healthEffects": "future_Nimroel_health_system",
+    "healthEffects": "resolved_by_nimroel_health_system",
     "exactMetallurgyByproducts": "realm_metallurgy_system"
+  },
+  "healthIntegration": {
+    "status": "resolved_by_core_health_system",
+    "contract": "nimroel_health_injury_illness_recovery_contract_v0.1.json",
+    "accumulationDoesNotAutomaticallyCauseDisease": true,
+    "contaminatedWaterOrWasteMayIncreaseExposureRisk": true,
+    "causeAndExposureRouteStillRequired": true
   }
 }

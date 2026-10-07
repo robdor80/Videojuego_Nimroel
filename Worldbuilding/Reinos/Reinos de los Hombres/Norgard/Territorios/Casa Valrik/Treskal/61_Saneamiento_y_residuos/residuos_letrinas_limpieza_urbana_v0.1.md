@@ -422,3 +422,17 @@ No aplicar una capa uniforme de basura medieval.
 ## Regla final
 
 **Treskal permanece funcional porque los residuos se mueven fuera de donde molestan o contaminan; la ausencia de alcantarillado moderno no implica ausencia de organización.**
+
+
+---
+
+## Integración sanitaria — Punto 9
+
+Letrinas, residuos, agua y limpieza ya tienen conexión sanitaria real mediante el Core de salud.
+
+- agua potable contaminada puede participar en HCOND;
+- residuos problemáticos pueden aumentar exposición;
+- separar aguas y residuos reduce presión de riesgo;
+- suciedad visible no equivale automáticamente a enfermedad.
+
+No se inventa una epidemia por estética medieval.

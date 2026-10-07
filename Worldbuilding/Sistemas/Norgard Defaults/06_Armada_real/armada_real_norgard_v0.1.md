@@ -258,3 +258,20 @@ La Armada Real hereda el derecho general de edad y trabajo de Norgard.
 Fuente:
 
 `Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`
+
+
+---
+
+## Integración sanitaria — Punto 9
+
+La Armada Real puede embarcar o asignar personal sanitario cuando exista dotación y necesidad.
+
+No se garantiza una curandera por buque.
+
+Un buque sin especialista:
+
+- conserva primeros cuidados plausibles de tripulantes entrenados;
+- puede necesitar arribar, evacuar o esperar ayuda;
+- no obtiene curación abstracta fuera de cámara.
+
+Heridas, enfermedad y brotes se resuelven mediante HLTH/HCOND/HTRT/OUTB.

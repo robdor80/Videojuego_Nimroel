@@ -312,3 +312,18 @@ El derecho general de Norgard fija:
 Fuente:
 
 `mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md`
+
+
+---
+
+## Integración sanitaria — Punto 9
+
+Las fuerzas de Norgard pueden asignar o contratar curanderas y personal con experiencia de primeros cuidados.
+
+No existe:
+
+- una curandera garantizada por unidad;
+- un cuerpo sanitario moderno universal;
+- curación automática tras combate.
+
+Las lesiones se resuelven mediante HLTH/HCOND y la disponibilidad de atención, materiales, transporte y reposo es real.

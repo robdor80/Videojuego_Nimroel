@@ -208,7 +208,11 @@
     "TXN": "economic_transaction",
     "OBL": "formal_obligation",
     "LED": "ledger_entry",
-    "CUS": "customs_clearance_case"
+    "CUS": "customs_clearance_case",
+    "HLTH": "overall_health_state",
+    "HCOND": "health_condition_type",
+    "HTRT": "health_treatment_state",
+    "OUTB": "outbreak_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -244,7 +248,7 @@
     "currencyAndExactPrices": "Norgard_monetary_and_economic_system",
     "royalNavyOrganization": "resolved_by_Norgard_E6_E7_navy_framework_and_operations",
     "navalTerminology": "resolved_functionally_for_2B_specialized_historical_lexicon_optional",
-    "exactHealingMechanics": "future_Nimroel_health_system",
+    "exactHealingMechanics": "resolved_by_nimroel_health_system",
     "medicinalFlora": "future_canonical_medicinal_flora",
     "exactSkillProgression": "future_Nimroel_character_progression_system",
     "canonicalCuisineAndRecipes": "future_Norgard_cuisine",
@@ -256,14 +260,14 @@
     "exactForgeAndMetallurgyFuels": "future_Norgard_metallurgy_system",
     "formalMarriageRitesAndRecognition": "resolved_by_Norgard_family_point_6",
     "exactPregnancyAndChildDevelopmentTiming": "future_Nimroel_character_lifecycle_system",
-    "exactPregnancyBirthHealthMechanics": "future_Nimroel_health_system",
+    "exactPregnancyBirthHealthMechanics": "resolved_by_nimroel_health_system",
     "namingParentageGuardianshipLaw": "parentage_guardianship_resolved_point_6__naming_future_point_11",
     "exactChildStageAgeThresholds": "future_Nimroel_character_lifecycle_system",
     "formalAgeOfMajorityAndWorkRules": "resolved_by_Norgard_labor_point_7",
     "exactAgingAndLongevityModel": "future_Nimroel_character_lifecycle_system",
     "pensionRetirementInheritanceRules": "inheritance_resolved_point_8__pension_retirement_if_any_future",
     "canonicalPersonalValueVocabulary": "future_Nimroel_character_psychology_core",
-    "exactPhysiologyAndHealthConsequences": "future_Nimroel_health_system",
+    "exactPhysiologyAndHealthConsequences": "resolved_by_nimroel_health_system",
     "exactClockAndCalendarScheduling": "future_Nimroel_time_system",
     "formalParentageGuardianshipAdoptionAndAffinity": "resolved_by_Norgard_family_point_6",
     "inheritanceAndPropertyConsequences": "resolved_by_Norgard_point_8",
@@ -671,6 +675,17 @@
         ],
         "localContract": "Datos operativos/treskal_fiscal_customs_profile_v0.1.json",
         "localOverridesEmpty": false
+      },
+      "healthSystem": {
+        "namespaces": [
+          "HLTH",
+          "HCOND",
+          "HTRT",
+          "OUTB"
+        ],
+        "localContract": "Datos operativos/treskal_health_care_network_contract_v0.1.json",
+        "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_health_healing_tradition_default_v0.1.json",
+        "localOverridesEmpty": false
       }
     },
     "validation": {
@@ -832,5 +847,19 @@
       "C_latent"
     ],
     "localNewPersonalityLawRequired": false
+  },
+  "healthSystemIntegration": {
+    "status": "inherited_core_plus_Norgard_point_9",
+    "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_health_injury_illness_recovery_contract_v0.1.json",
+    "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_health_healing_tradition_default_v0.1.json",
+    "localHealthContract": "Datos operativos/treskal_health_care_network_contract_v0.1.json",
+    "namespaces": [
+      "HLTH",
+      "HCOND",
+      "HTRT",
+      "OUTB"
+    ],
+    "localNewLayerRequired": false,
+    "medicinalFloraStillPending": true
   }
 }

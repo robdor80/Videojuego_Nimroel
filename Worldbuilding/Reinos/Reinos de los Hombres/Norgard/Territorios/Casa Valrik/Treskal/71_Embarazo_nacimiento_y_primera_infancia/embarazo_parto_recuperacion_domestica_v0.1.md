@@ -20,7 +20,7 @@ Siguen fuera de este documento:
 
 Matrimonio, filiación jurídica y tutela ya se rigen por el Punto 6 de Norgard.
 
-La fisiología y los riesgos concretos pertenecen al futuro sistema de salud y ciclo vital.
+La fisiología sanitaria y las complicaciones se resuelven ya mediante el Core de salud; la temporización exacta del ciclo reproductivo sigue perteneciendo al futuro sistema de ciclo vital.
 
 ---
 
@@ -149,9 +149,9 @@ WAIT, desplazamiento de la curandera y capacidad sanitaria siguen siendo reales.
 
 Este documento admite parto normal, complicaciones, necesidad de atención, recuperación difícil, pérdida gestacional o muerte.
 
-No fija porcentajes ni causas médicas concretas.
+No fija porcentajes universales.
 
-Eso pertenece al futuro sistema de salud.
+Las consecuencias concretas se resuelven mediante HCOND18 y demás condiciones sanitarias aplicables.
 
 ---
 
@@ -161,7 +161,7 @@ Tras el parto, la madre no retorna automáticamente a su rutina previa.
 
 La recuperación puede afectar REST, EMP, CHORE, CARE, movilidad y ocio.
 
-La duración exacta depende del futuro sistema sanitario y temporal.
+La duración depende de HLTH/HCOND, gravedad, cuidados, descanso, recursos y tiempo; no existe recuperación instantánea.
 
 ---
 

@@ -172,3 +172,19 @@ En alto detalle se materializan residuos coherentes con esa presión.
 ## Regla final
 
 **La limpieza visible de Treskal debe ser el resultado de una cadena logística de retirada, no de borrar objetos al cambiar de escena.**
+
+
+---
+
+## Integración sanitaria — Punto 9
+
+La acumulación de residuos no crea enfermedad automáticamente.
+
+Puede aumentar riesgo sanitario únicamente cuando existe:
+
+- agente/causa compatible;
+- exposición;
+- ruta material;
+- tiempo suficiente.
+
+El Core HLTH/HCOND/OUTB resuelve la consecuencia.
