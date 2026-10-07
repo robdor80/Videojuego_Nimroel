@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_world_time_calendar_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal_time_and_standard_calendar",
+  "stableIdNamespace": {
+    "TIME": "time_anchor_type"
+  },
+  "timeAnchorTypes": {
+    "TIME01": "exact_datetime",
+    "TIME02": "calendar_date",
+    "TIME03": "daypart",
+    "TIME04": "relative_window",
+    "TIME05": "deadline_or_due_date"
+  },
+  "units": {
+    "secondsPerMinute": 60,
+    "minutesPerHour": 60,
+    "hoursPerDay": 24,
+    "daysPerWeek": 7,
+    "daysPerYear": 365
+  },
+  "calendar": {
+    "leapYears": false,
+    "yearZero": false,
+    "referenceYear": 15375,
+    "historical15374RemainsValid": true,
+    "campaignStartDateMustBeExplicit": true,
+    "months": [
+      {
+        "index": 1,
+        "name": "enero",
+        "days": 31
+      },
+      {
+        "index": 2,
+        "name": "febrero",
+        "days": 28
+      },
+      {
+        "index": 3,
+        "name": "marzo",
+        "days": 31
+      },
+      {
+        "index": 4,
+        "name": "abril",
+        "days": 30
+      },
+      {
+        "index": 5,
+        "name": "mayo",
+        "days": 31
+      },
+      {
+        "index": 6,
+        "name": "junio",
+        "days": 30
+      },
+      {
+        "index": 7,
+        "name": "julio",
+        "days": 31
+      },
+      {
+        "index": 8,
+        "name": "agosto",
+        "days": 31
+      },
+      {
+        "index": 9,
+        "name": "septiembre",
+        "days": 30
+      },
+      {
+        "index": 10,
+        "name": "octubre",
+        "days": 31
+      },
+      {
+        "index": 11,
+        "name": "noviembre",
+        "days": 30
+      },
+      {
+        "index": 12,
+        "name": "diciembre",
+        "days": 31
+      }
+    ],
+    "weekdays": [
+      {
+        "index": 1,
+        "name": "lunes"
+      },
+      {
+        "index": 2,
+        "name": "martes"
+      },
+      {
+        "index": 3,
+        "name": "miércoles"
+      },
+      {
+        "index": 4,
+        "name": "jueves"
+      },
+      {
+        "index": 5,
+        "name": "viernes"
+      },
+      {
+        "index": 6,
+        "name": "sábado"
+      },
+      {
+        "index": 7,
+        "name": "domingo"
+      }
+    ],
+    "weekStartsOn": "lunes",
+    "epochAnchor": {
+      "date": "0001-01-01",
+      "weekday": "lunes"
+    },
+    "earthEtymologyImplied": false
+  },
+  "clock": {
+    "format24Hour": true,
+    "daylightSaving": false,
+    "timeZones": false,
+    "civilDayStarts": "00:00:00",
+    "civilDayEnds": "23:59:59",
+    "internalDateFormat": "YYYY-MM-DD",
+    "internalDateTimeFormat": "YYYY-MM-DDTHH:mm:ss",
+    "visibleSpanishDateFormat": "D de <mes> de YYYY",
+    "numericDateFormat": "DD/MM/YYYY"
+  },
+  "dayparts": [
+    {
+      "id": "madrugada",
+      "start": "00:00",
+      "end": "05:59"
+    },
+    {
+      "id": "mañana",
+      "start": "06:00",
+      "end": "11:59"
+    },
+    {
+      "id": "mediodía",
+      "start": "12:00",
+      "end": "13:59"
+    },
+    {
+      "id": "tarde",
+      "start": "14:00",
+      "end": "19:59"
+    },
+    {
+      "id": "noche",
+      "start": "20:00",
+      "end": "23:59"
+    }
+  ],
+  "solarRules": {
+    "sunriseAndSunsetFixedByClock": false,
+    "futureLocationAndSeasonModelMayResolve": true,
+    "daypartDoesNotOverrideAmbientLight": true
+  },
+  "arithmetic": {
+    "distinguishElapsedDurationFromCivilDateArithmetic": true,
+    "addMonthRule": "same_day_if_valid_else_last_day_of_target_month",
+    "addYearRule": "same_month_and_day_next_year",
+    "weekdayDerivedFromEpoch": true
+  },
+  "ageCalculation": {
+    "basedOnBirthDate": true,
+    "birthdayAtStartOfMatchingCivilDate": true,
+    "celebrationNotRequiredForAgeChange": true
+  },
+  "persistence": {
+    "monotonicAbsoluteTimeRequired": true,
+    "saveLoadPreservesExactTime": true,
+    "lodChangeDoesNotResetTime": true,
+    "offscreenTimeAdvances": true,
+    "timeSkipMustProcessRelevantConsequences": true
+  },
+  "scheduling": {
+    "exactDateTimeSupported": true,
+    "dateOnlySupported": true,
+    "daypartSupported": true,
+    "relativeWindowSupported": true,
+    "owningSystemMustDeclareDeadlineSemantics": true
+  },
+  "aiAuthority": {
+    "mayReferenceProvidedDateTime": true,
+    "mayResolveNaturalLanguageRelativeTimeFromContext": true,
+    "mayAdvanceTime": false,
+    "mayChangeDeadline": false,
+    "mayInventElapsedTime": false
+  },
+  "guardrails": {
+    "noLeapYears": true,
+    "noEarthReligiousMeaningFromWeekdayOrMonthNames": true,
+    "noAutomaticWeekendClosure": true,
+    "noAutomaticSundayRest": true,
+    "noPerRegionTimeZones": true
+  }
+}

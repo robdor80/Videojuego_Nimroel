@@ -250,7 +250,7 @@ No deben inventarse localmente:
 - vehículos exactos;
 - gastronomía detallada;
 - flora medicinal;
-- calendario fino de mercados.
+- frecuencias concretas de mercados especializados cuando se diseñen.
 
 Resolverlas en Treskal crearía contradicciones cuando el resto de Norgard las herede.
 
@@ -307,7 +307,7 @@ Sí significa:
 
 ---
 
-### Actualización posterior — Puntos 1–11 de Norgard
+### Actualización posterior — Puntos 1–12 de Norgard
 
 Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya han sido resueltas a nivel superior:
 
@@ -380,3 +380,18 @@ Punto 11 resuelve además las antiguas dependencias locales de:
 - relación NAME ↔ KIN/PREG/filiación.
 
 Treskal no necesita un sistema nominal local distinto.
+
+
+Punto 12 resuelve además las antiguas dependencias locales de:
+
+- fecha/hora global;
+- calendario;
+- estaciones;
+- agenda exacta;
+- cumpleaños y mayoría;
+- tres jornadas de luto;
+- vencimientos;
+- mercados diarios;
+- timestamps de World State.
+
+Treskal no necesita calendario local diferente.

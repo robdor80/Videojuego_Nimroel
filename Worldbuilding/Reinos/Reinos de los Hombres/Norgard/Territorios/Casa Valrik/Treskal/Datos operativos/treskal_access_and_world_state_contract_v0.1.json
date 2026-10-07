@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_access_and_world_state_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_design_contract",
   "accessClasses": {
     "P0": "public",
@@ -71,7 +71,9 @@
       "ships_present",
       "visitors",
       "commissions",
-      "temporary_route_blocks"
+      "temporary_route_blocks",
+      "world_datetime",
+      "pending_deadlines_and_calendar_events"
     ],
     "derivedTemporary": [
       "visible_density",
@@ -79,7 +81,10 @@
       "mud",
       "tavern_occupancy",
       "traffic",
-      "anchor_availability"
+      "anchor_availability",
+      "weekday",
+      "season",
+      "narrative_daypart"
     ],
     "saveIdentityByStableIds": true,
     "rerollCityOnLoadForbidden": true,
@@ -141,5 +146,12 @@
       "relevant_objects"
     ],
     "factsMustRemainInvariantAcrossLod": true
+  },
+  "timeIntegration": {
+    "status": "resolved_by_Core_TIME_and_Norgard_point_12",
+    "localContract": "Datos operativos/treskal_time_calendar_contract_v0.1.json",
+    "exactDateTimePersistent": true,
+    "derivedWeekdaySeasonDaypartMayBeReconstructed": true,
+    "saveLoadMustPreserveWorldDatetime": true
   }
 }

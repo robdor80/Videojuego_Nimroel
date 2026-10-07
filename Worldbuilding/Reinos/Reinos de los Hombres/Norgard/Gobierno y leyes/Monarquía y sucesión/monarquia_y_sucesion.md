@@ -247,3 +247,16 @@ El apellido Aethros queda protegido por el sistema general de nombres.
 - la adopción no crea sangre Aethros ni derecho sucesorio ordinario.
 
 El sistema NAME no sustituye la genealogía dinástica.
+
+
+---
+
+## Integración temporal — Punto 12
+
+La edad del soberano se calcula por fecha de nacimiento.
+
+- la Regencia termina al comenzar la fecha del **16.º cumpleaños**;
+- la mayoría civil general comienza al iniciar la fecha del **18.º cumpleaños**;
+- no se espera a ceremonia o celebración.
+
+La coronación solemne posterior a una minoría puede programarse mediante TIME/AGEN, pero no crea legitimidad.

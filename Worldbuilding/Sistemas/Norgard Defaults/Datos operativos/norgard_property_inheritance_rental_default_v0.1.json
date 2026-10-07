@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_property_inheritance_rental_default",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_realm_default",
   "authorityScope": "norgard_property_inheritance_rental_law",
   "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/propiedad_herencia_alquiler_v0.1.md",
@@ -231,7 +231,8 @@
     "KIN": "kinship",
     "BIZ": "business_persistence",
     "MORT": "death",
-    "PREG": "pregnancy"
+    "PREG": "pregnancy",
+    "TIME": "dates_deadlines_and_term_arithmetic"
   },
   "guardrails": {
     "doNotTurnPossessionIntoOwnership": true,
@@ -249,5 +250,22 @@
     "doNotCreateOwnershipFromLongOccupationAlone": true
   },
   "closureMarker": "PROPERTY_POINT_8_CLOSED_NORGARD_PROPERTY_INHERITANCE_RENTAL",
-  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json"
+  "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
+  "calendarIntegration": {
+    "status": "resolved_by_point_12",
+    "calendar": "Datos operativos/norgard_civil_calendar_default_v0.1.json",
+    "fixedTermLeaseMayUseExactDates": true,
+    "openEndedLeaseMayUseNoticeDates": true,
+    "rentFrequencyMayUse": [
+      "day",
+      "week",
+      "month",
+      "season",
+      "year",
+      "custom_period"
+    ],
+    "monthlyCalendarArithmetic": "same_day_if_valid_else_last_day",
+    "calendarMonthNotEquivalentTo30Days": true,
+    "deathAndInheritanceUsePersistentEventDates": true
+  }
 }

@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E15 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E16 ACTIVOS**
 
 ## Objetivo
 
@@ -39,7 +39,6 @@ No listos todavía:
 
 - sistema militar final;
 - derecho familiar, matrimonio, tutela y adopción;
-- calendario oficial detallado;
 - cultura material común suficientemente cerrada.
 
 Casa Valrik, no Norgard:
@@ -123,12 +122,12 @@ Contrato operativo:
 
 **Los candidatos históricos respaldados por canon suficiente han sido extraídos y la capa Casa Valrik ya existe.**
 
-Tras el cierre de los Puntos 5–11, los grandes bloques de Norgard que permanecen pendientes son los que figuran en `blockedPendingCanon`: calendario y cultura material común.
+Tras el cierre de los Puntos 5–12, el único gran bloque de Norgard pendiente en `blockedPendingCanon` es la cultura material común.
 
 
 ## Validación de cierre
 
-E1–E15 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
+E1–E16 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
 
 Estado:
 
@@ -459,3 +458,29 @@ Generador:
 Regresión:
 
 `Validacion/regresion_e15_nombres_apellidos_norgard_v0.1.md`
+
+
+### E16 — calendario civil
+
+Activo a nivel Reino — **Punto 12 cerrado**:
+
+- enero–diciembre con duraciones familiares;
+- 365 días fijos;
+- sin bisiestos;
+- lunes–domingo;
+- 24 horas;
+- semana desde lunes;
+- año de referencia 15375;
+- 15374 preservado como historia anterior;
+- estaciones marzo–mayo / junio–agosto / septiembre–noviembre / diciembre–febrero;
+- sin fin de semana laboral universal;
+- sin festivos terrestres importados;
+- TIME integrado con AGEN, edades, luto, contratos, alquileres, mercados y World State.
+
+Default:
+
+`Datos operativos/norgard_civil_calendar_default_v0.1.json`
+
+Regresión:
+
+`Validacion/regresion_e16_calendario_norgard_v0.1.md`

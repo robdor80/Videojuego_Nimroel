@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_personal_agenda_time_commitments_contract",
-  "version": "0.2",
+  "version": "0.3",
   "status": "migrated_to_core_override",
   "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personal_agenda_time_commitments_contract_v0.1.json",
   "inheritedNamespaces": [
-    "AGEN"
+    "AGEN",
+    "TIME"
   ],
   "localOverrides": {},
   "compatibility": {
@@ -13,5 +14,12 @@
     "worldStateMeaningPreserved": true,
     "saveMigrationRequired": false
   },
-  "note": "Treskal inherits Nimroel Core personal agenda and time commitment semantics without local exceptions."
+  "note": "Treskal inherits Nimroel Core personal agenda and time commitment semantics without local exceptions.",
+  "timeIntegration": {
+    "status": "resolved_by_Core_TIME_and_Norgard_point_12",
+    "coreTime": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_world_time_calendar_contract_v0.1.json",
+    "norgardCalendar": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_calendar_default_v0.1.json",
+    "exactDateTimeSupported": true,
+    "qualitativeAnchorsStillAllowed": true
+  }
 }

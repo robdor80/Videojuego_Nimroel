@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_personal_naming_surname_default",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_realm_default",
   "authorityScope": "Norgard_human_personal_naming",
   "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/nombres_apellidos_transmision_norgard_v0.1.md",
@@ -99,5 +99,12 @@
     "mayGrantProtectedSurname": false,
     "mayChangeSurnameFromMarriageWithoutEvent": false
   },
-  "closureMarker": "NAMING_POINT_11_CLOSED_NORGARD_PERSONAL_NAMES_SURNAMES"
+  "closureMarker": "NAMING_POINT_11_CLOSED_NORGARD_PERSONAL_NAMES_SURNAMES",
+  "calendarIntegration": {
+    "status": "resolved_by_point_12",
+    "calendar": "Datos operativos/norgard_civil_calendar_default_v0.1.json",
+    "nameRegistrationMayStoreDateTime": true,
+    "legalNameChangeMayStoreDateTime": true,
+    "formerNameValidityUsesCalendar": true
+  }
 }

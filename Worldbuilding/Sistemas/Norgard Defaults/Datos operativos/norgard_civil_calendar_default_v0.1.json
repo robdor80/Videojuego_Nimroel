@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_civil_calendar_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "Norgard_civil_calendar",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/calendario_fechas_estaciones_norgard_v0.1.md",
+  "coreTimeContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_world_time_calendar_contract_v0.1.json",
+  "structure": {
+    "months": 12,
+    "daysPerYear": 365,
+    "daysPerWeek": 7,
+    "hoursPerDay": 24,
+    "minutesPerHour": 60,
+    "secondsPerMinute": 60,
+    "leapYears": false
+  },
+  "monthNames": [
+    "enero",
+    "febrero",
+    "marzo",
+    "abril",
+    "mayo",
+    "junio",
+    "julio",
+    "agosto",
+    "septiembre",
+    "octubre",
+    "noviembre",
+    "diciembre"
+  ],
+  "monthLengths": [
+    31,
+    28,
+    31,
+    30,
+    31,
+    30,
+    31,
+    31,
+    30,
+    31,
+    30,
+    31
+  ],
+  "weekdayNames": [
+    "lunes",
+    "martes",
+    "miércoles",
+    "jueves",
+    "viernes",
+    "sábado",
+    "domingo"
+  ],
+  "weekStartsOn": "lunes",
+  "referenceYear": 15375,
+  "priorYear15374StillValid": true,
+  "campaignStartDateMustBeExplicit": true,
+  "epochAnchor": {
+    "date": "0001-01-01",
+    "weekday": "lunes"
+  },
+  "seasons": {
+    "spring": {
+      "label": "primavera",
+      "months": [
+        3,
+        4,
+        5
+      ]
+    },
+    "summer": {
+      "label": "verano",
+      "months": [
+        6,
+        7,
+        8
+      ]
+    },
+    "autumn": {
+      "label": "otoño",
+      "months": [
+        9,
+        10,
+        11
+      ]
+    },
+    "winter": {
+      "label": "invierno",
+      "months": [
+        12,
+        1,
+        2
+      ]
+    }
+  },
+  "seasonalTransitionInstantlyChangesWeather": false,
+  "climateRemainsLocalAndCausal": true,
+  "clock": {
+    "format24Hour": true,
+    "daylightSaving": false,
+    "timeZones": false,
+    "narrativeDayparts": [
+      "madrugada",
+      "mañana",
+      "mediodía",
+      "tarde",
+      "noche"
+    ]
+  },
+  "narrativeHeader": {
+    "recommendedFormat": "POV — Lugar, Reino\\nD de <mes> de YYYY — <Franja>",
+    "example": "Dorvan — Treskal, Norgard\\n18 de octubre de 15375 — Tarde"
+  },
+  "weekAndWork": {
+    "weekendAutomatic": false,
+    "saturdayAutomaticRest": false,
+    "sundayAutomaticRest": false,
+    "universalFiveDayWorkweek": false,
+    "marketClosureByWeekdayAutomatic": false
+  },
+  "markets": {
+    "TreskalDailyMarketsRemainDaily": true,
+    "specializedMarketsMayUseDeclaredWeekdayOrDate": true
+  },
+  "age": {
+    "legalAgeChangesAtStartOfBirthdayDate": true
+  },
+  "mourning": {
+    "formalMourningDays": 3,
+    "day1": "civil_date_when_death_is_known_certain_and_accepted",
+    "day2": "next_civil_date",
+    "day3": "second_next_civil_date",
+    "delayedNewsRetroactiveDays": false
+  },
+  "deadlines": {
+    "exactDateSupported": true,
+    "exactDateTimeSupported": true,
+    "calendarMonthSupported": true,
+    "elapsedDurationSupported": true,
+    "monthlyClampToLastDayIfNeeded": true
+  },
+  "festivities": {
+    "earthReligiousHolidaysImported": false,
+    "mandatoryRealmFixedHolidayList": [],
+    "localHouseDynasticHistoricalAndDynamicEventsSupported": true,
+    "calendarDoesNotAutoCreateHoliday": true
+  },
+  "religion": {
+    "monthAndWeekdayLabelsHaveNoEarthDivineMeaningInLore": true,
+    "saintsCalendar": false,
+    "religiousWeekdayObligation": false
+  },
+  "materialCultureDependency": {
+    "clocksAlmanacsBellsSundialsAndPhysicalCalendars": "point_13_shared_material_culture"
+  },
+  "aiAuthority": {
+    "mayUseProvidedDateTime": true,
+    "mayUseRelativeExpressions": true,
+    "mayInventHoliday": false,
+    "mayAdvanceTime": false,
+    "mayOverrideWeekday": false
+  },
+  "closureMarker": "CALENDAR_POINT_12_CLOSED_NORGARD_CIVIL_CALENDAR"
+}

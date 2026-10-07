@@ -1,0 +1,567 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_calendar_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "caseCount": 60,
+  "cases": [
+    {
+      "id": "CAL12_01",
+      "given": {
+        "year": 15375
+      },
+      "expect": {
+        "days": 365,
+        "leap": false
+      }
+    },
+    {
+      "id": "CAL12_02",
+      "given": {
+        "date": "15375-02-28"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CAL12_03",
+      "given": {
+        "date": "15375-02-29"
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CAL12_04",
+      "given": {
+        "date": "15375-04-31"
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CAL12_05",
+      "given": {
+        "date": "15375-10-18",
+        "format": "visible"
+      },
+      "expect": {
+        "value": "18 de octubre de 15375"
+      }
+    },
+    {
+      "id": "CAL12_06",
+      "given": {
+        "weekStart": true
+      },
+      "expect": {
+        "day": "lunes"
+      }
+    },
+    {
+      "id": "CAL12_07",
+      "given": {
+        "weekday": "domingo"
+      },
+      "expect": {
+        "automaticRest": false
+      }
+    },
+    {
+      "id": "CAL12_08",
+      "given": {
+        "weekday": "sábado"
+      },
+      "expect": {
+        "automaticMarketClosure": false
+      }
+    },
+    {
+      "id": "CAL12_09",
+      "given": {
+        "time": "24:00"
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CAL12_10",
+      "given": {
+        "time": "23:59"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CAL12_11",
+      "given": {
+        "currentYear": 15375
+      },
+      "expect": {
+        "historical15374Valid": true
+      }
+    },
+    {
+      "id": "CAL12_12",
+      "given": {
+        "seasonDate": "15375-03-01"
+      },
+      "expect": {
+        "season": "primavera"
+      }
+    },
+    {
+      "id": "CAL12_13",
+      "given": {
+        "seasonDate": "15375-06-01"
+      },
+      "expect": {
+        "season": "verano"
+      }
+    },
+    {
+      "id": "CAL12_14",
+      "given": {
+        "seasonDate": "15375-09-01"
+      },
+      "expect": {
+        "season": "otoño"
+      }
+    },
+    {
+      "id": "CAL12_15",
+      "given": {
+        "seasonDate": "15375-12-01"
+      },
+      "expect": {
+        "season": "invierno"
+      }
+    },
+    {
+      "id": "CAL12_16",
+      "given": {
+        "seasonChanged": true
+      },
+      "expect": {
+        "weatherInstantlyChanged": false
+      }
+    },
+    {
+      "id": "CAL12_17",
+      "given": {
+        "saveLoad": true
+      },
+      "expect": {
+        "exactTimePreserved": true
+      }
+    },
+    {
+      "id": "CAL12_18",
+      "given": {
+        "lodChange": true
+      },
+      "expect": {
+        "timeReset": false
+      }
+    },
+    {
+      "id": "CAL12_19",
+      "given": {
+        "offscreenNpc": true
+      },
+      "expect": {
+        "timeAdvances": true
+      }
+    },
+    {
+      "id": "CAL12_20",
+      "given": {
+        "date": "15375-01-31",
+        "addMonths": 1
+      },
+      "expect": {
+        "result": "15375-02-28"
+      }
+    },
+    {
+      "id": "CAL12_21",
+      "given": {
+        "birth": "15357-05-14",
+        "date": "15375-05-13"
+      },
+      "expect": {
+        "age": 17
+      }
+    },
+    {
+      "id": "CAL12_22",
+      "given": {
+        "birth": "15357-05-14",
+        "date": "15375-05-14"
+      },
+      "expect": {
+        "age": 18
+      }
+    },
+    {
+      "id": "CAL12_23",
+      "given": {
+        "mourningKnownDate": "15375-10-18"
+      },
+      "expect": {
+        "days": [
+          "15375-10-18",
+          "15375-10-19",
+          "15375-10-20"
+        ]
+      }
+    },
+    {
+      "id": "CAL12_24",
+      "given": {
+        "mourningNewsDelayed": true
+      },
+      "expect": {
+        "retroactiveDays": false
+      }
+    },
+    {
+      "id": "CAL12_25",
+      "given": {
+        "rentDue": "monthly",
+        "start": "15375-01-31"
+      },
+      "expect": {
+        "nextDue": "15375-02-28"
+      }
+    },
+    {
+      "id": "CAL12_26",
+      "given": {
+        "market": "Treskal",
+        "weekday": "domingo"
+      },
+      "expect": {
+        "dailyMarketCanOperate": true
+      }
+    },
+    {
+      "id": "CAL12_27",
+      "given": {
+        "holiday": "Navidad"
+      },
+      "expect": {
+        "importedByDefault": false
+      }
+    },
+    {
+      "id": "CAL12_28",
+      "given": {
+        "holiday": "Semana Santa"
+      },
+      "expect": {
+        "importedByDefault": false
+      }
+    },
+    {
+      "id": "CAL12_29",
+      "given": {
+        "religion": "saints_calendar"
+      },
+      "expect": {
+        "exists": false
+      }
+    },
+    {
+      "id": "CAL12_30",
+      "given": {
+        "event": "coronation",
+        "worldStateRecorded": true
+      },
+      "expect": {
+        "futureAnniversaryPossible": true
+      }
+    },
+    {
+      "id": "CAL12_31",
+      "given": {
+        "event": "coronation",
+        "worldStateRecorded": false
+      },
+      "expect": {
+        "holidayAutomatic": false
+      }
+    },
+    {
+      "id": "CAL12_32",
+      "given": {
+        "aiAction": "advance_one_day"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "CAL12_33",
+      "given": {
+        "aiAction": "move_deadline"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "CAL12_34",
+      "given": {
+        "aiAction": "use_known_date"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "CAL12_35",
+      "given": {
+        "daypartTime": "04:30"
+      },
+      "expect": {
+        "daypart": "madrugada"
+      }
+    },
+    {
+      "id": "CAL12_36",
+      "given": {
+        "daypartTime": "08:00"
+      },
+      "expect": {
+        "daypart": "mañana"
+      }
+    },
+    {
+      "id": "CAL12_37",
+      "given": {
+        "daypartTime": "12:30"
+      },
+      "expect": {
+        "daypart": "mediodía"
+      }
+    },
+    {
+      "id": "CAL12_38",
+      "given": {
+        "daypartTime": "17:00"
+      },
+      "expect": {
+        "daypart": "tarde"
+      }
+    },
+    {
+      "id": "CAL12_39",
+      "given": {
+        "daypartTime": "22:00"
+      },
+      "expect": {
+        "daypart": "noche"
+      }
+    },
+    {
+      "id": "CAL12_40",
+      "given": {
+        "daypart": "noche"
+      },
+      "expect": {
+        "sunsetExactKnownAutomatically": false
+      }
+    },
+    {
+      "id": "CAL12_41",
+      "given": {
+        "agendaAnchor": "15375-10-18T16:30:00"
+      },
+      "expect": {
+        "supported": true
+      }
+    },
+    {
+      "id": "CAL12_42",
+      "given": {
+        "agendaAnchor": "tarde"
+      },
+      "expect": {
+        "supported": true
+      }
+    },
+    {
+      "id": "CAL12_43",
+      "given": {
+        "relativeText": "mañana",
+        "persistentObligation": true
+      },
+      "expect": {
+        "mustResolveToDate": true
+      }
+    },
+    {
+      "id": "CAL12_44",
+      "given": {
+        "weekend": true
+      },
+      "expect": {
+        "fiveDayWorkweekAutomatic": false
+      }
+    },
+    {
+      "id": "CAL12_45",
+      "given": {
+        "foodSeason": "otoño"
+      },
+      "expect": {
+        "stockCreated": false
+      }
+    },
+    {
+      "id": "CAL12_46",
+      "given": {
+        "agricultureSeason": "primavera"
+      },
+      "expect": {
+        "harvestTriggeredAutomatically": false
+      }
+    },
+    {
+      "id": "CAL12_47",
+      "given": {
+        "calendarObject": "mechanical_clock"
+      },
+      "expect": {
+        "definedByPoint12": false
+      }
+    },
+    {
+      "id": "CAL12_48",
+      "given": {
+        "calendarObject": "almanac"
+      },
+      "expect": {
+        "definedByPoint12": false
+      }
+    },
+    {
+      "id": "CAL12_49",
+      "given": {
+        "monthName": "enero"
+      },
+      "expect": {
+        "earthGodMeaningInLore": false
+      }
+    },
+    {
+      "id": "CAL12_50",
+      "given": {
+        "weekdayName": "martes"
+      },
+      "expect": {
+        "earthGodMeaningInLore": false
+      }
+    },
+    {
+      "id": "CAL12_51",
+      "given": {
+        "newCampaign": true,
+        "dateMissing": true
+      },
+      "expect": {
+        "validStart": false
+      }
+    },
+    {
+      "id": "CAL12_52",
+      "given": {
+        "historicalSceneYear": 15374
+      },
+      "expect": {
+        "mustMigrateTo15375": false
+      }
+    },
+    {
+      "id": "CAL12_53",
+      "given": {
+        "birthdayCelebration": false,
+        "dateReached": true
+      },
+      "expect": {
+        "legalAgeStillChanges": true
+      }
+    },
+    {
+      "id": "CAL12_54",
+      "given": {
+        "contract": "5th_of_each_month"
+      },
+      "expect": {
+        "sameAsEvery30Days": false
+      }
+    },
+    {
+      "id": "CAL12_55",
+      "given": {
+        "timeZoneRequestedInsideNorgard": true
+      },
+      "expect": {
+        "defaultZones": 1
+      }
+    },
+    {
+      "id": "CAL12_56",
+      "given": {
+        "daylightSaving": true
+      },
+      "expect": {
+        "used": false
+      }
+    },
+    {
+      "id": "CAL12_57",
+      "given": {
+        "yearZero": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CAL12_58",
+      "given": {
+        "date": "0001-01-01"
+      },
+      "expect": {
+        "weekday": "lunes"
+      }
+    },
+    {
+      "id": "CAL12_59",
+      "given": {
+        "localFestival": true
+      },
+      "expect": {
+        "supported": true,
+        "realmHolidayAutomatic": false
+      }
+    },
+    {
+      "id": "CAL12_60",
+      "given": {
+        "GreatHouseDeclaredMourning": true
+      },
+      "expect": {
+        "mustHaveDatesAndAuthority": true
+      }
+    }
+  ],
+  "marker": "CALENDAR_POINT_12_CLOSED_NORGARD_CIVIL_CALENDAR"
+}

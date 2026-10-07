@@ -107,7 +107,7 @@ La geografía mundial confirma costa, río y relieve suave. Permanecen pendiente
 
 ## Estado del diseño
 
-La arquitectura funcional base de Treskal está cerrada. Permanecen abiertos los detalles finos: trazado métrico del río y calles, geometría exacta del puente, cruces menores, nombres urbanos, planos arquitectónicos concretos de algunos complejos, rangos de guardia y calendario fino de mercados especializados.
+La arquitectura funcional base de Treskal está cerrada. Permanecen abiertos los detalles finos: trazado métrico del río y calles, geometría exacta del puente, cruces menores, nombres urbanos, planos arquitectónicos concretos de algunos complejos, rangos de guardia y frecuencias concretas todavía no autoradas de mercados especializados.
 
 ### 04_Infraestructura_urbana
 
@@ -375,7 +375,7 @@ Treskal usa el modelo mixto de Norgard: nombres propios heredados cuando existe 
 
 ### 54_Estacionalidad_y_clima
 
-- `estacionalidad_clima_actividad_v0.1.md` — efectos estacionales sin fijar calendario y memoria ambiental.
+- `estacionalidad_clima_actividad_v0.1.md` — efectos estacionales conectados al calendario de Norgard y memoria ambiental.
 - `persistencia_ambiental_secado_v0.1.md` — estados ENV01–ENV06, secado y recuperación material.
 
 ### 55_Mobiliario_y_vida_material
@@ -764,3 +764,20 @@ Población:
 - C → seed nominal latente.
 
 El apellido se resuelve desde la familia antes de cualquier generación aleatoria.
+
+
+### Calendario heredado — Punto 12 de Norgard
+
+Treskal utiliza sin override local:
+
+- TIME de Nimroel Core;
+- enero–diciembre;
+- lunes–domingo;
+- 24 horas;
+- 365 días sin bisiestos;
+- estaciones civiles de Norgard;
+- año de referencia 15375.
+
+Los mercados ordinarios siguen siendo diarios, incluido sábado y domingo.
+
+Las frecuencias concretas de futuros mercados especializados pueden definirse sobre este calendario sin crear otro sistema temporal.

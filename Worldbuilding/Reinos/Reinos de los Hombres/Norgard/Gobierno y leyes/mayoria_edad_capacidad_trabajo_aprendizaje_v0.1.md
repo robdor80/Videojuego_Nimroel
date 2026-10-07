@@ -786,7 +786,7 @@ El Punto 7 no define todavía:
 - alquiler;
 - tutela patrimonial detallada;
 - nombres y apellidos;
-- calendario horario exacto.
+- objetos físicos de medición del tiempo, que pertenecen a cultura material.
 
 Esas materias se resolverán en sus puntos correspondientes sin reabrir las edades y capacidades aquí fijadas.
 
@@ -797,3 +797,18 @@ Esas materias se resolverán en sus puntos correspondientes sin reabrir las edad
 **En Norgard la adultez jurídica comienza a los 18 años, pero la capacidad se construye antes de forma progresiva: primero se ayuda, después se aprende, luego se trabaja con límites y finalmente se adquiere plena autonomía legal.**
 
 `LABOR_POINT_7_CLOSED_NORGARD_AGE_CAPACITY_WORK_APPRENTICESHIP`
+
+
+---
+
+## Integración con calendario — Punto 12
+
+La edad jurídica se calcula por fecha de nacimiento.
+
+Una persona:
+
+- cumple 12, 15, 16 o 18 años al comenzar su fecha de cumpleaños correspondiente;
+- no necesita celebrar el cumpleaños para cambiar de banda jurídica;
+- no cambia de capacidad por aproximación de año.
+
+La jornada laboral sigue sin tener duración universal obligatoria aunque exista reloj exacto.

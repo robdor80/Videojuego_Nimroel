@@ -184,3 +184,30 @@ La regulación económica detallada se definirá solo cuando sea necesaria para 
 ## Regla final
 
 **Treskal comercia todos los días porque recibe mercancía todos los días; la ciudad reparte ese tráfico entre espacios especializados en vez de concentrarlo todo en una sola plaza.**
+
+
+---
+
+## Calendario — Punto 12
+
+Los mercados ordinarios de Treskal funcionan **todos los días de la semana**:
+
+- lunes;
+- martes;
+- miércoles;
+- jueves;
+- viernes;
+- sábado;
+- domingo.
+
+No existe cierre automático de fin de semana.
+
+Una feria o mercado especializado puede adoptar en el futuro:
+
+- una fecha;
+- un día de la semana;
+- una recurrencia;
+
+pero solo cuando quede definida explícitamente.
+
+Clima, emergencia, falta de vendedores, stock o autoridad pueden reducir/cancelar actividad sin cambiar esta regla base.

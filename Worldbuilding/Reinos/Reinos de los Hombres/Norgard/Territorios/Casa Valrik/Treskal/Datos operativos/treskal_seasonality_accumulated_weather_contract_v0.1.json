@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_seasonality_accumulated_weather_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_design_contract",
-  "exactCalendarDatesDefined": false,
+  "exactCalendarDatesDefined": true,
   "immediateWeatherDistinctFromEnvironmentalMemory": true,
   "environmentalStates": {
     "ENV01": "dry_or_stable",
@@ -76,8 +76,40 @@
   "resolvedStormDoesNotAutoClearConsequences": true,
   "aiCannotInferMudFromSeasonAlone": true,
   "externalDependencies": {
-    "exactCalendar": "future_Nimroel_calendar",
+    "exactCalendar": "resolved_by_Norgard_point_12",
     "exactWeatherSimulation": "future_Nimroel_weather_system",
-    "exactDaylightModel": "future_Nimroel_time_system"
-  }
+    "exactDaylightModel": "future_location_aware_daylight_model"
+  },
+  "calendarSource": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_calendar_default_v0.1.json",
+  "seasons": {
+    "spring": {
+      "months": [
+        3,
+        4,
+        5
+      ]
+    },
+    "summer": {
+      "months": [
+        6,
+        7,
+        8
+      ]
+    },
+    "autumn": {
+      "months": [
+        9,
+        10,
+        11
+      ]
+    },
+    "winter": {
+      "months": [
+        12,
+        1,
+        2
+      ]
+    }
+  },
+  "seasonChangeDoesNotInstantlyMutateEnvironment": true
 }

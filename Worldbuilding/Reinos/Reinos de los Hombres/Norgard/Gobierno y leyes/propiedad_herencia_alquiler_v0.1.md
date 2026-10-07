@@ -1197,3 +1197,24 @@ Los títulos y bienes institucionales siguen su canon especial.
 **En Norgard poseer, usar, habitar, administrar y ser dueño son relaciones distintas; la muerte transfiere derechos mediante una herencia real, y el alquiler concede uso sin transferir propiedad.**
 
 `PROPERTY_POINT_8_CLOSED_NORGARD_PROPERTY_INHERITANCE_RENTAL`
+
+
+---
+
+## Integración con calendario — Punto 12
+
+Contratos, testamentos, entregas, alquileres, avisos y vencimientos pueden usar el calendario civil de Norgard.
+
+Debe distinguirse:
+
+- duración transcurrida;
+- días civiles;
+- semanas;
+- meses de calendario;
+- años.
+
+Ejemplo:
+
+`31 de enero + 1 mes = 28 de febrero`.
+
+Un alquiler mensual no equivale automáticamente a un alquiler cada 30 días.

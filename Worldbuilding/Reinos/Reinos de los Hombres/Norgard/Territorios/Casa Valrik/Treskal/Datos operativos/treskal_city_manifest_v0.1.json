@@ -103,7 +103,8 @@
     "maritimeSimulation": "Datos operativos/treskal_maritime_simulation_profile_v0.1.json",
     "fiscalCustoms": "Datos operativos/treskal_fiscal_customs_profile_v0.1.json",
     "portCustomsFlow": "Datos operativos/treskal_port_customs_flow_contract_v0.1.json",
-    "personalNaming": "Datos operativos/treskal_personal_naming_contract_v0.1.json"
+    "personalNaming": "Datos operativos/treskal_personal_naming_contract_v0.1.json",
+    "timeCalendar": "Datos operativos/treskal_time_calendar_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -215,7 +216,8 @@
     "HTRT": "health_treatment_state",
     "OUTB": "outbreak_state",
     "FOOD": "food_lot_state",
-    "NAME": "personal_name_record_state"
+    "NAME": "personal_name_record_state",
+    "TIME": "time_anchor_type"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -271,12 +273,13 @@
     "pensionRetirementInheritanceRules": "inheritance_resolved_point_8__pension_retirement_if_any_future",
     "canonicalPersonalValueVocabulary": "future_Nimroel_character_psychology_core",
     "exactPhysiologyAndHealthConsequences": "resolved_by_nimroel_health_system",
-    "exactClockAndCalendarScheduling": "future_Nimroel_time_system",
+    "exactClockAndCalendarScheduling": "resolved_by_Nimroel_Core_TIME_and_Norgard_point_12",
     "formalParentageGuardianshipAdoptionAndAffinity": "resolved_by_Norgard_family_point_6",
     "inheritanceAndPropertyConsequences": "resolved_by_Norgard_point_8",
     "conceptionAndAdditionalParentageRules": "future_Nimroel_character_lifecycle_system",
     "namingAndSurnameRules": "resolved_by_Norgard_point_11",
-    "fishingEcologySpecies": "future_ecology_profile_species_names_not_required_for_2B"
+    "fishingEcologySpecies": "future_ecology_profile_species_names_not_required_for_2B",
+    "exactCalendar": "resolved_by_Norgard_point_12"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",
@@ -705,6 +708,15 @@
         "localContract": "Datos operativos/treskal_personal_naming_contract_v0.1.json",
         "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_personal_naming_surname_default_v0.1.json",
         "localOverridesEmpty": true
+      },
+      "timeCalendar": {
+        "namespaces": [
+          "TIME"
+        ],
+        "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_world_time_calendar_contract_v0.1.json",
+        "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_calendar_default_v0.1.json",
+        "localOverridesEmpty": true,
+        "localContract": "Datos operativos/treskal_time_calendar_contract_v0.1.json"
       }
     },
     "validation": {
@@ -895,5 +907,16 @@
     "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_personal_naming_surname_default_v0.1.json",
     "localContract": "Datos operativos/treskal_personal_naming_contract_v0.1.json",
     "localNewLayerRequired": false
+  },
+  "timeCalendarIntegration": {
+    "status": "inherited_core_plus_Norgard_point_12",
+    "coreTime": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_world_time_calendar_contract_v0.1.json",
+    "norgardCalendar": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_calendar_default_v0.1.json",
+    "localCalendarOverride": false,
+    "referenceYear": 15375,
+    "dailyMarketsRemainDaily": true,
+    "exactClockAvailable": true,
+    "narrativeDaypartsSupported": true,
+    "localContract": "Datos operativos/treskal_time_calendar_contract_v0.1.json"
   }
 }

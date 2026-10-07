@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_family_marriage_guardianship_default",
-  "version": "0.2",
+  "version": "0.3",
   "status": "active_realm_default",
   "authorityScope": "norgard_family_law",
   "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/familia_matrimonio_filiacion_tutela_adopcion_v0.1.md",
@@ -236,5 +236,13 @@
     "birthOutsideMarriageCreatesSpecialSurname": false,
     "adoptionChangesSurnameAutomatically": false,
     "surnameDoesNotCreateKinship": true
+  },
+  "calendarIntegration": {
+    "status": "resolved_by_point_12",
+    "calendar": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_calendar_default_v0.1.json",
+    "marriageMayRecordExactDateAndTime": true,
+    "adoptionMayRecordExactDateAndTime": true,
+    "parentageRecognitionMayRecordExactDateAndTime": true,
+    "ageCapacityUsesBirthdayDate": true
   }
 }

@@ -70,6 +70,23 @@ No todo necesita guardarse si puede reconstruirse determinísticamente desde est
 
 ---
 
+# 3B. Tiempo persistente
+
+Treskal hereda TIME desde Nimroel Core y el calendario civil de Norgard.
+
+El World State debe conservar:
+
+- fecha;
+- hora;
+- eventos pendientes;
+- vencimientos;
+- agendas;
+- estado temporal relevante.
+
+La actividad derivada puede reconstruirse desde TIME cuando sea determinista.
+
+Guardar/cargar o cambiar de LOD no reinicia el reloj.
+
 # 4. Separación de identidad y estado
 
 Ejemplo:

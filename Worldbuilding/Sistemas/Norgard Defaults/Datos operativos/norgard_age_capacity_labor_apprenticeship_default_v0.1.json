@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_age_capacity_labor_apprenticeship_default",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_realm_default",
   "authorityScope": "norgard_age_capacity_labor_apprenticeship",
   "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md",
@@ -259,8 +259,7 @@
     "doNotInventUniversalEightHourDay": true
   },
   "deferred": [
-    "general_names_and_surnames",
-    "exact_clock_schedule"
+    "general_names_and_surnames"
   ],
   "closureMarker": "LABOR_POINT_7_CLOSED_NORGARD_AGE_CAPACITY_WORK_APPRENTICESHIP",
   "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
@@ -269,5 +268,13 @@
     "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
     "minorsMayOwnProperty": true,
     "majorMinorAssetTransferRequiresKingsJusticeAuthorization": true
+  },
+  "calendarIntegration": {
+    "status": "resolved_by_point_12",
+    "calendar": "Datos operativos/norgard_civil_calendar_default_v0.1.json",
+    "ageCalculatedFromBirthDate": true,
+    "birthdayAtStartOfCivilDate": true,
+    "legalMajorityAtStartOf18thBirthday": true,
+    "royalPersonalGovernmentAtStartOf16thBirthday": true
   }
 }

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_daily_market_stall_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_canon_contract",
   "marketsActiveDaily": true,
-  "specializedMarketFineCalendarDefined": false,
+  "specializedMarketFineCalendarDefined": true,
   "sellerTypes": {
     "MK01": "direct_producer",
     "MK02": "regular_vendor",
@@ -62,10 +62,17 @@
     ]
   },
   "temporaryAbsenceDoesNotSpawnCloneVendor": true,
-  "specializedMarketsDoNotReceiveEarthWeekdays": true,
+  "specializedMarketsDoNotReceiveEarthWeekdays": false,
   "externalDependencies": {
-    "specializedMarketCalendar": "Norgard_calendar_and_local_market_schedule_detail",
+    "specializedMarketCalendar": "resolved_by_Norgard_point_12_with_local_schedule_detail_when_authored",
     "marketFeesRules": "Norgard_fiscal_and_legal_system",
     "exactWeightsMeasures": "future_Norgard_trade_measurement_system"
+  },
+  "calendarIntegration": {
+    "status": "resolved_by_Norgard_point_12",
+    "dailyMarketsRemainDaily": true,
+    "mondayThroughSundaySupported": true,
+    "weekendClosureAutomatic": false,
+    "futureSpecializedSchedulesMayUseWeekdayDateOrRecurrence": true
   }
 }

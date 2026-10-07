@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_defaults_manifest",
-  "version": "1.0",
+  "version": "1.1",
   "status": "active_realm_defaults_manifest",
   "authorityScope": "norgard_realm_defaults",
   "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
@@ -34,7 +34,8 @@
     "cuisineFoodways": "Datos operativos/norgard_cuisine_foodways_default_v0.1.json",
     "cuisineRecipeCatalog": "Datos operativos/norgard_cuisine_recipe_catalog_v0.1.json",
     "personalNamingSurname": "Datos operativos/norgard_personal_naming_surname_default_v0.1.json",
-    "personalNameGenerator": "Datos operativos/norgard_personal_name_generator_v0.1.json"
+    "personalNameGenerator": "Datos operativos/norgard_personal_name_generator_v0.1.json",
+    "civilCalendar": "Datos operativos/norgard_civil_calendar_default_v0.1.json"
   },
   "readyCandidates": {
     "funeralMourning": "extracted_active_validated",
@@ -54,13 +55,13 @@
     "humanPersistentPersonality": "authored_active_validated_cross_cutting",
     "healthHealingTradition": "authored_active_validated",
     "cuisineFoodways": "authored_active_validated",
-    "personalNamingSurname": "authored_active_validated"
+    "personalNamingSurname": "authored_active_validated",
+    "civilCalendar": "authored_active_validated"
   },
   "houseOrTerritoryCandidates": {
     "givenWordSpecialWeight": "extracted_to_Casa_Valrik_Defaults"
   },
   "blockedPendingCanon": [
-    "official_calendar_detail",
     "shared_material_culture"
   ],
   "sourceAudit": "AUDITORIA_PREPARACION_DEFAULTS_NORGARD_v0.1.md",
@@ -170,6 +171,15 @@
       "regression": "Validacion/regresion_e15_nombres_apellidos_norgard_v0.1.md",
       "validationPack": "Validacion/norgard_personal_naming_validation_pack_v0.1.json",
       "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_11_NOMBRES_APELLIDOS_NORGARD_v0.1.md"
+    },
+    "E16": {
+      "status": "validated_static_regression_point_12_closed",
+      "default": "Datos operativos/norgard_civil_calendar_default_v0.1.json",
+      "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/calendario_fechas_estaciones_norgard_v0.1.md",
+      "coreTime": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_world_time_calendar_contract_v0.1.json",
+      "regression": "Validacion/regresion_e16_calendario_norgard_v0.1.md",
+      "validationPack": "Validacion/norgard_calendar_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PUNTO_12_CALENDARIO_NORGARD_v0.1.md"
     }
   },
   "downstreamDefaults": {
@@ -177,7 +187,7 @@
   },
   "validation": {
     "status": "validated_static_regression",
-    "regressionSpecifications": 15,
+    "regressionSpecifications": 16,
     "blockedPendingCanonIsIntentional": true,
     "monetaryValidationPack": "Validacion/norgard_monetary_validation_pack_v0.1.json",
     "familyLawValidationPack": "Validacion/norgard_family_law_validation_pack_v0.1.json",
@@ -186,7 +196,8 @@
     "personalitySystemValidationPack": "Validacion/norgard_persistent_personality_validation_pack_v0.1.json",
     "healthHealingValidationPack": "Validacion/norgard_health_healing_validation_pack_v0.1.json",
     "cuisineValidationPack": "Validacion/norgard_cuisine_validation_pack_v0.1.json",
-    "personalNamingValidationPack": "Validacion/norgard_personal_naming_validation_pack_v0.1.json"
+    "personalNamingValidationPack": "Validacion/norgard_personal_naming_validation_pack_v0.1.json",
+    "calendarValidationPack": "Validacion/norgard_calendar_validation_pack_v0.1.json"
   },
   "crossCuttingSystems": {
     "humanPersistentPersonality": {

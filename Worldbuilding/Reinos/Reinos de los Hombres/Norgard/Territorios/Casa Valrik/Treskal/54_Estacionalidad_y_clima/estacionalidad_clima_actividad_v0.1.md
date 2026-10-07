@@ -2,7 +2,7 @@
 
 ## Estado
 
-**DISEÑO AMBIENTAL/JUGABLE APROBADO — SIN CALENDARIO FINO**
+**DISEÑO AMBIENTAL/JUGABLE APROBADO — CALENDARIO PUNTO 12 INTEGRADO**
 
 ## Base territorial
 
@@ -13,7 +13,7 @@ El sur de Valrik, incluida Treskal, posee clima oceánico suave:
 - influencia marítima;
 - lluvia, viento y humedad como factores habituales.
 
-El calendario exacto de Nimroel sigue siendo una dependencia externa.
+El calendario exacto se resuelve mediante Nimroel Core + Punto 12 de Norgard.
 
 ---
 
@@ -60,12 +60,14 @@ La estación futura puede modificar probabilidades y necesidades:
 - pesca;
 - secado.
 
-Este documento no fija:
+Punto 12 fija:
 
-- fecha de inicio;
-- número de días;
-- nombres de meses;
-- festividades.
+- primavera: marzo–mayo;
+- verano: junio–agosto;
+- otoño: septiembre–noviembre;
+- invierno: diciembre–febrero.
+
+La estación civil no fuerza un cambio meteorológico instantáneo.
 
 ---
 
@@ -367,3 +369,14 @@ No decide que una calle está embarrada solo porque “es otoño”.
 ## Regla final
 
 **El tiempo en Treskal deja rastro: la lluvia puede parar, pero el barro, la humedad y sus consecuencias necesitan tiempo para desaparecer.**
+
+
+---
+
+## Integración Punto 12
+
+Treskal utiliza enero–diciembre y lunes–domingo como el resto de Norgard.
+
+El cambio de estación modifica contexto y probabilidades, no el estado ambiental por decreto.
+
+`1 de marzo` puede activar la etiqueta civil `primavera`, pero ENV, lluvia, barro, temperatura, combustible y ropa siguen respondiendo a causas reales.

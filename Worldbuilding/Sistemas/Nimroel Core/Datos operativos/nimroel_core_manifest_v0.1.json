@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "nimroel_core_manifest",
-  "version": "0.8",
+  "version": "0.9",
   "status": "active_core_manifest",
   "authorityScope": "nimroel_universal",
   "root": "Worldbuilding/Sistemas/Nimroel Core/",
@@ -74,7 +74,8 @@
     "persistentPersonalityGenerationPipeline": "Datos operativos/nimroel_persistent_personality_generation_pipeline_v0.1.json",
     "healthInjuryIllnessRecovery": "Datos operativos/nimroel_health_injury_illness_recovery_contract_v0.1.json",
     "foodCookingPreservation": "Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
-    "personalNameIdentity": "Datos operativos/nimroel_personal_name_identity_contract_v0.1.json"
+    "personalNameIdentity": "Datos operativos/nimroel_personal_name_identity_contract_v0.1.json",
+    "worldTimeCalendar": "Datos operativos/nimroel_world_time_calendar_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -153,7 +154,8 @@
     "HTRT": "health_treatment_state",
     "OUTB": "outbreak_state",
     "FOOD": "food_lot_state",
-    "NAME": "personal_name_record_state"
+    "NAME": "personal_name_record_state",
+    "TIME": "time_anchor_type"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",
@@ -224,6 +226,15 @@
       "namespace": "NAME",
       "cultureSpecificNamingRequired": true,
       "regression": "Validacion/regresion_identidad_nominal_core_v0.1.md"
+    },
+    "worldTimeCalendar": {
+      "status": "active_core_contract_static_validated",
+      "source": "03_Actividad_y_tiempo/tiempo_fecha_calendario_v0.1.md",
+      "contract": "worldTimeCalendar",
+      "namespace": "TIME",
+      "regression": "Validacion/regresion_tiempo_calendario_core_v0.1.md",
+      "referenceYear": 15375,
+      "leapYears": false
     }
   },
   "research": {

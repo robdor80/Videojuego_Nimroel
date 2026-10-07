@@ -296,3 +296,18 @@ No elimina:
 ## Regla final
 
 **Norgard concede tres jornadas a los vivos para detenerse, acompañarse y despedir al muerto; después la vida vuelve a moverse, aunque el duelo pueda permanecer.**
+
+
+---
+
+## Integración con calendario — Punto 12
+
+Las tres jornadas de luto se resuelven sobre fechas civiles:
+
+- Jornada 1: fecha en que el núcleo responsable conoce, considera cierta y asume la muerte;
+- Jornada 2: día civil siguiente;
+- Jornada 3: segundo día civil siguiente.
+
+La noticia tardía no consume jornadas retroactivamente.
+
+El luto formal concluye al terminar la tercera fecha civil, aunque el duelo personal continúe.

@@ -2562,3 +2562,35 @@ Reglas generales:
 Canon:
 
 `Sociedad/nombres_apellidos_transmision_norgard_v0.1.md`
+
+
+---
+
+## Calendario civil de Norgard — Punto 12
+
+Norgard utiliza la estructura de calendario familiar al jugador:
+
+- enero–diciembre;
+- 365 días;
+- sin bisiestos;
+- lunes–domingo;
+- 24 horas;
+- 60 minutos;
+- 60 segundos.
+
+El año de referencia actual del proyecto es **15375**.
+
+Los acontecimientos ya situados en 15374 permanecen en 15374.
+
+Estaciones civiles:
+
+- primavera: marzo–mayo;
+- verano: junio–agosto;
+- otoño: septiembre–noviembre;
+- invierno: diciembre–febrero.
+
+No existe fin de semana laboral universal ni se importan festividades terrestres o religiosas.
+
+Documento:
+
+`Sociedad/calendario_fechas_estaciones_norgard_v0.1.md`

@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_pregnancy_birth_early_infancy_contract",
-  "version": "0.3",
+  "version": "0.4",
   "status": "migrated_to_core_override",
   "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_pregnancy_birth_early_infancy_contract_v0.1.json",
   "inheritedNamespaces": [
-    "PREG"
+    "PREG",
+    "TIME"
   ],
   "localOverrides": {
     "birthNormallyOccursAtHomeOrCurrentLodgingWhenPlausible": true,
@@ -32,5 +33,12 @@
     "newbornMayTemporarilyRemainUnnamed": true,
     "birthNamingDoesNotAlterPREG": true,
     "surnameDependsOnLegalParentageAtRegistration": true
+  },
+  "calendarIntegration": {
+    "status": "resolved_by_Core_TIME_and_Norgard_point_12",
+    "localTime": "Datos operativos/treskal_time_calendar_contract_v0.1.json",
+    "pregnancyEventsMayStoreDateTime": true,
+    "birthStoresDateTimeWhenKnown": true,
+    "point12DoesNotInventGestationDuration": true
   }
 }

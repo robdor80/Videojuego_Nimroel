@@ -1,7 +1,12 @@
+> **ACTUALIZACIÓN 2026-10-08 — PUNTO 12 CALENDARIO CIVIL CANONIZADO**  
+> El bloqueo histórico de calendario oficial queda resuelto mediante E16 y el contrato Core TIME.  
+> Norgard usa enero–diciembre, lunes–domingo, 365 días sin bisiestos y 24 horas; 15375 es el año de referencia actual.  
+> Permanece pendiente únicamente la cultura material común.
+
 > **ACTUALIZACIÓN 2026-10-07 — PUNTO 11 NOMBRES / APELLIDOS CANONIZADO**  
 > El bloqueo histórico de nombres personales y apellidos queda resuelto mediante E15 y el contrato Core NAME.  
 > Matrimonio, filiación, adopción, Grandes Casas y generación procedural consumen ya una misma lógica nominal persistente.  
-> Permanecen pendientes únicamente calendario oficial y cultura material común.
+> Permanece pendiente únicamente cultura material común.
 
 > **ACTUALIZACIÓN 2026-10-07 — PUNTO 10 GASTRONOMÍA / ALIMENTACIÓN CANONIZADO**  
 > El bloqueo histórico de cocina general queda resuelto mediante E14 y el nuevo contrato Core FOOD.  
@@ -175,7 +180,7 @@ El sistema monetario y las anclas económicas de referencia ya están definidos 
 
 Treskal tiene una red sanitaria concreta, pero no se ha encontrado una autoridad de reino suficiente para universalizarla.
 
-### Marco naval, terminología marítima, gastronomía, nombres personales/apellidos, calendario oficial y cultura material común
+### Marco naval, terminología marítima, gastronomía, nombres personales/apellidos, cultura material común
 
 No existe todavía base suficiente para promoverlos como defaults generales sin añadir canon nuevo.
 

@@ -8,7 +8,7 @@
 
 ## Objetivo
 
-Definir una agenda personal que coordine actividades ya existentes sin fijar todavía horas universales exactas.
+Definir una agenda personal que coordine actividades existentes usando el reloj/calendario global cuando haga falta, sin obligar a expresar toda rutina con precisión de minuto.
 
 La agenda debe impedir que un mismo NPC esté comprometido simultáneamente con actividades incompatibles.
 
@@ -54,17 +54,21 @@ La actividad prevista terminó de forma suficiente.
 
 ---
 
-# 2. Tiempo cualitativo
+# 2. Tiempo exacto y cualitativo
 
-Hasta que exista el sistema horario global, una entrada puede usar:
+TIME ya permite que una entrada use:
 
+- fecha/hora exacta;
+- fecha sin hora;
 - franja del día;
 - secuencia relativa;
 - después de otra actividad;
 - antes de otra obligación;
-- día o fecha si el calendario ya la soporta.
+- ventana temporal.
 
-No se inventan horas exactas cuando el canon todavía no las define.
+No toda rutina necesita precisión de minuto.
+
+Cuando una promesa o compromiso persistente nace de una expresión como «mañana por la tarde», el World State la resuelve a la fecha correspondiente y conserva la franja.
 
 ---
 
