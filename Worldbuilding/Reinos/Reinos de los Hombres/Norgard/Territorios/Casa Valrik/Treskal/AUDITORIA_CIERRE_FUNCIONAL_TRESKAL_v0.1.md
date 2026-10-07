@@ -307,7 +307,7 @@ Sí significa:
 
 ---
 
-### Actualización posterior — Puntos 1–10 de Norgard
+### Actualización posterior — Puntos 1–11 de Norgard
 
 Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya han sido resueltas a nivel superior:
 
@@ -321,7 +321,8 @@ Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya 
 - mayoría de edad/capacidad/trabajo/aprendizaje;
 - propiedad/herencia/alquiler;
 - salud/curandería y fisiología sanitaria;
-- gastronomía, alimentos, cocina y conservación.
+- gastronomía, alimentos, cocina y conservación;
+- nombres personales, apellidos y transmisión nominal.
 
 Esto confirma la decisión original de no crear una capa 100 local: Treskal hereda estos sistemas desde Core/Norgard.
 
@@ -366,3 +367,16 @@ Punto 10 resuelve además las antiguas dependencias locales de:
 - relación FOOD ↔ almacenamiento/combustible.
 
 Siguen pendientes los nombres folclóricos locales y los menús ligados a festividades aún no definidas.
+
+
+Punto 11 resuelve además las antiguas dependencias locales de:
+
+- nombre procedural persistente;
+- apellido de nacimiento;
+- apellido matrimonial;
+- apellido adoptivo;
+- apodos/alias frente a nombre legal;
+- apellidos protegidos de Grandes Casas;
+- relación NAME ↔ KIN/PREG/filiación.
+
+Treskal no necesita un sistema nominal local distinto.

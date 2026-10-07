@@ -743,3 +743,24 @@ Su expresión local prioriza de forma natural:
 - vino llegado por comercio.
 
 No existe recetario local separado obligatorio.
+
+
+### Nombres y apellidos heredados — Punto 11 de Norgard
+
+Treskal no crea una ley nominal local.
+
+Hereda:
+
+- NAME desde Nimroel Core;
+- transmisión de apellidos desde Norgard;
+- generador humano de Norgard;
+- apellidos de Grandes Casas protegidos;
+- reglas de matrimonio, filiación y adopción.
+
+Población:
+
+- A → nombre autoral;
+- B → nombre procedural persistente;
+- C → seed nominal latente.
+
+El apellido se resuelve desde la familia antes de cualquier generación aleatoria.

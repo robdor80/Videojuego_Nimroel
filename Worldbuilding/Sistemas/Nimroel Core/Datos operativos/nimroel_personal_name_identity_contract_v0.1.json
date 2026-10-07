@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_personal_name_identity_contract",
+  "version": "0.1",
+  "status": "active_core_contract",
+  "authorityScope": "nimroel_universal",
+  "stableIdNamespace": {
+    "NAME": "personal_name_record_state"
+  },
+  "nameStates": {
+    "NAME01": "registered_current",
+    "NAME02": "provisional_or_unregistered",
+    "NAME03": "former_legal_name",
+    "NAME04": "alias_or_byname",
+    "NAME05": "unknown_or_unresolved"
+  },
+  "technicalIdentitySeparateFromVisibleName": true,
+  "nameRecordFields": [
+    "name_record_id",
+    "npc_id",
+    "given_name",
+    "additional_given_names",
+    "family_name",
+    "display_name",
+    "NAME_state",
+    "culture_scope",
+    "source_event_ref",
+    "valid_from",
+    "valid_to_if_former",
+    "alias_type_if_any",
+    "legal_or_social",
+    "visibility",
+    "former_name_ref_if_any",
+    "notes"
+  ],
+  "legalAndSocialNamesSeparate": true,
+  "titleIsNotCivilName": true,
+  "nicknameIsNotAutomaticallyLegalName": true,
+  "occupationBynameIsNotAutomaticallySurname": true,
+  "legalChange": {
+    "createsNewCurrentRecord": true,
+    "priorLegalNameBecomesFormer": true,
+    "preservesNpcId": true,
+    "preservesTraceability": true,
+    "cannotErase": [
+      "kinship",
+      "marriage",
+      "property",
+      "inheritance_rights",
+      "debts",
+      "criminal_history",
+      "employment",
+      "obligations",
+      "memory"
+    ],
+    "authorityDefinedByCultureOrLaw": true
+  },
+  "aliasRules": {
+    "mayBePersistent": true,
+    "mayBeKnownBySubsetOfPeople": true,
+    "doesNotChangeLegalIdentity": true,
+    "doesNotCreateKinship": true,
+    "doesNotCreateAuthority": true
+  },
+  "knowledgeIntegration": {
+    "KControlsWhoKnowsWhichName": true,
+    "CREDMayApplyToIdentityClaims": true,
+    "fullLegalNameNotPublicByDefault": true
+  },
+  "birthRules": {
+    "unnamedNewbornStateAllowed": "NAME02",
+    "namingDoesNotRecreateNpc": true
+  },
+  "proceduralGeneration": {
+    "deterministic": true,
+    "cultureSpecific": true,
+    "kinshipAware": true,
+    "stableAfterMaterialization": true,
+    "rerollAfterMaterializationForbidden": true,
+    "householdDoesNotImplySharedSurname": true,
+    "familyLawMustBeConsultedBeforeSurnameGeneration": true
+  },
+  "aiAuthority": {
+    "mayUseKnownName": true,
+    "mayUseAuthorizedAlias": true,
+    "mayChooseNaturalShortForm": true,
+    "mayInventPersistentName": false,
+    "mayChangeLegalName": false,
+    "mayRevealUnknownName": false,
+    "mayInferKinshipFromSharedSurname": false,
+    "mayInferTitleFromSurname": false
+  },
+  "lod": {
+    "preservesCurrentName": true,
+    "preservesFormerNames": true,
+    "preservesAliases": true
+  },
+  "externalDependencies": {
+    "culturalGivenNameRepertoire": "people_or_realm_naming_default",
+    "surnameTransmission": "people_or_realm_family_naming_law",
+    "protectedDynasticNames": "realm_or_dynastic_law",
+    "titlesAndStyles": "institutional_protocol_system"
+  }
+}

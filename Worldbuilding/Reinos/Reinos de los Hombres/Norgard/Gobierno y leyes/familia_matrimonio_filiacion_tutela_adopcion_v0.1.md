@@ -26,17 +26,9 @@ Regula:
 - afinidad familiar básica;
 - relación entre estas instituciones y los sistemas persistentes del World State.
 
-No regula todavía:
+No regula por sí solo los apellidos; esa materia queda cerrada por el Punto 11.
 
-- reparto de propiedad entre cónyuges;
-- herencia;
-- alquiler;
-- transmisión patrimonial;
-- régimen detallado de bienes;
-- apellidos generales;
-- reglas laborales de menores, reguladas por el Punto 7.
-
-Esas materias pertenecen a puntos posteriores.
+Las reglas nominales consumen la filiación, matrimonio, tutela y adopción definidos aquí sin reescribirlos.
 
 ---
 
@@ -796,3 +788,20 @@ Punto 8 confirma que:
 - filiación jurídica reconocida fuera del matrimonio hereda igual en la esfera civil;
 - tutor administra bienes del menor sin convertirse en propietario;
 - sucesión Aethros y títulos especiales permanecen fuera de la herencia civil ordinaria.
+
+
+---
+
+## 40. Integración con Punto 11
+
+El canon de nombres y apellidos se encuentra en:
+
+`../../Sociedad/nombres_apellidos_transmision_norgard_v0.1.md`
+
+Punto 11 confirma que:
+
+- matrimonio no cambia apellido automáticamente;
+- un hijo nacido fuera de matrimonio no recibe apellido especial;
+- adopción puede cambiar apellido mediante resolución, pero no crea sangre;
+- hijastros no cambian apellido por el matrimonio del progenitor;
+- parentesco y apellido siguen siendo capas distintas.

@@ -37,7 +37,8 @@
       "applicable_reputation",
       "current_activity",
       "culture_personality",
-      "persistent_personality_compact_block"
+      "persistent_personality_compact_block",
+      "known_name_and_authorized_aliases"
     ],
     "exclude": [
       "full_world_state",
@@ -54,6 +55,15 @@
       "mutateProfile": false,
       "createPermanentTraits": false,
       "promoteNpcTier": false
+    },
+    "namingSource": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personal_name_identity_contract_v0.1.json",
+    "namingAiAuthority": {
+      "mayUseKnownName": true,
+      "mayUseKnownAlias": true,
+      "mayRevealUnknownLegalName": false,
+      "mayInventPersistentName": false,
+      "mayInferKinshipFromSurname": false,
+      "mayGrantTitleFromSurname": false
     }
   },
   "outputTypes": [

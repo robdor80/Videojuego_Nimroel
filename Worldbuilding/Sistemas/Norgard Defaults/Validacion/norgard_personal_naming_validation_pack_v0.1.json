@@ -1,0 +1,591 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_personal_naming_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "caseCount": 63,
+  "cases": [
+    {
+      "id": "NAME11_01",
+      "given": {
+        "visibleNameChanged": true
+      },
+      "expect": {
+        "npcIdChanged": false
+      }
+    },
+    {
+      "id": "NAME11_02",
+      "given": {
+        "newbornNamed": false
+      },
+      "expect": {
+        "NAME": "NAME02"
+      }
+    },
+    {
+      "id": "NAME11_03",
+      "given": {
+        "newbornLaterNamed": true
+      },
+      "expect": {
+        "sameNpc": true,
+        "NAME": "NAME01"
+      }
+    },
+    {
+      "id": "NAME11_04",
+      "given": {
+        "legalSurnameCount": 2
+      },
+      "expect": {
+        "ordinaryDefaultValid": false
+      }
+    },
+    {
+      "id": "NAME11_05",
+      "given": {
+        "oneLegalParentAtBirth": true
+      },
+      "expect": {
+        "childSurname": "that_parent_current_surname"
+      }
+    },
+    {
+      "id": "NAME11_06",
+      "given": {
+        "twoLegalParents": true,
+        "agreement": "parent_A_surname"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "NAME11_07",
+      "given": {
+        "twoLegalParents": true,
+        "agreement": "parent_B_surname"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "NAME11_08",
+      "given": {
+        "twoLegalParents": true,
+        "noAgreement": true
+      },
+      "expect": {
+        "fallback": "birthing_parent_surname"
+      }
+    },
+    {
+      "id": "NAME11_09",
+      "given": {
+        "fallbackUsed": true
+      },
+      "expect": {
+        "extraParentalAuthority": false
+      }
+    },
+    {
+      "id": "NAME11_10",
+      "given": {
+        "secondParentRecognizedLater": true
+      },
+      "expect": {
+        "surnameChangesAutomatically": false
+      }
+    },
+    {
+      "id": "NAME11_11",
+      "given": {
+        "noKnownParent": true
+      },
+      "expect": {
+        "ordinaryNonProtectedSurnameAssigned": true
+      }
+    },
+    {
+      "id": "NAME11_12",
+      "given": {
+        "birthOutsideMarriage": true
+      },
+      "expect": {
+        "specialBastardSurname": false
+      }
+    },
+    {
+      "id": "NAME11_13",
+      "given": {
+        "married": true
+      },
+      "expect": {
+        "surnameChangesAutomatically": false
+      }
+    },
+    {
+      "id": "NAME11_14",
+      "given": {
+        "spouseSex": "male"
+      },
+      "expect": {
+        "surnamePriority": false
+      }
+    },
+    {
+      "id": "NAME11_15",
+      "given": {
+        "spouseSex": "female"
+      },
+      "expect": {
+        "surnamePriority": false
+      }
+    },
+    {
+      "id": "NAME11_16",
+      "given": {
+        "divorced": true
+      },
+      "expect": {
+        "surnameRevertsAutomatically": false
+      }
+    },
+    {
+      "id": "NAME11_17",
+      "given": {
+        "widowed": true
+      },
+      "expect": {
+        "surnameRevertsAutomatically": false
+      }
+    },
+    {
+      "id": "NAME11_18",
+      "given": {
+        "adultNameChange": true,
+        "registered": true
+      },
+      "expect": {
+        "allowed": true,
+        "formerNamePersisted": true
+      }
+    },
+    {
+      "id": "NAME11_19",
+      "given": {
+        "adultNameChange": true
+      },
+      "expect": {
+        "debtsErased": false
+      }
+    },
+    {
+      "id": "NAME11_20",
+      "given": {
+        "minorNameChange": true,
+        "noAuthority": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAME11_21",
+      "given": {
+        "adoption": true
+      },
+      "expect": {
+        "surnameReplacementAutomatic": false
+      }
+    },
+    {
+      "id": "NAME11_22",
+      "given": {
+        "adoption": true,
+        "resolutionChangesSurname": true
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "NAME11_23",
+      "given": {
+        "adoptionSurnameChanged": true
+      },
+      "expect": {
+        "biologicalBloodCreated": false
+      }
+    },
+    {
+      "id": "NAME11_24",
+      "given": {
+        "stepParentMarriage": true
+      },
+      "expect": {
+        "stepchildSurnameChanges": false
+      }
+    },
+    {
+      "id": "NAME11_25",
+      "given": {
+        "siblings": true,
+        "differentSurnames": true
+      },
+      "expect": {
+        "kinshipStillPossible": true
+      }
+    },
+    {
+      "id": "NAME11_26",
+      "given": {
+        "sameSurname": true
+      },
+      "expect": {
+        "kinshipProven": false
+      }
+    },
+    {
+      "id": "NAME11_27",
+      "given": {
+        "sharedHousehold": true
+      },
+      "expect": {
+        "sharedSurnameRequired": false
+      }
+    },
+    {
+      "id": "NAME11_28",
+      "given": {
+        "nickname": "el Rojo"
+      },
+      "expect": {
+        "legalSurnameAutomatic": false
+      }
+    },
+    {
+      "id": "NAME11_29",
+      "given": {
+        "occupationByname": "el Herrero"
+      },
+      "expect": {
+        "legalSurnameAutomatic": false
+      }
+    },
+    {
+      "id": "NAME11_PROT_AETHROS",
+      "given": {
+        "randomGeneratorSurname": "Aethros"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "NAME11_PROT_DAROVAN",
+      "given": {
+        "randomGeneratorSurname": "Darovan"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "NAME11_PROT_EDRANOR",
+      "given": {
+        "randomGeneratorSurname": "Edranor"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "NAME11_PROT_GALDREN",
+      "given": {
+        "randomGeneratorSurname": "Galdren"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "NAME11_PROT_VALRIK",
+      "given": {
+        "randomGeneratorSurname": "Valrik"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "NAME11_35",
+      "given": {
+        "marryGreatHouseMember": true
+      },
+      "expect": {
+        "protectedSurnameAutomatic": false
+      }
+    },
+    {
+      "id": "NAME11_36",
+      "given": {
+        "protectedSurnameHeld": true
+      },
+      "expect": {
+        "lordshipAutomatic": false
+      }
+    },
+    {
+      "id": "NAME11_37",
+      "given": {
+        "protectedSurnameHeld": true
+      },
+      "expect": {
+        "dynasticBloodAutomatic": false
+      }
+    },
+    {
+      "id": "NAME11_38",
+      "given": {
+        "protectedSurnameHeld": true
+      },
+      "expect": {
+        "specialSuccessionAutomatic": false
+      }
+    },
+    {
+      "id": "NAME11_39",
+      "given": {
+        "sovereignLine": "Aethros"
+      },
+      "expect": {
+        "surname": "Aethros"
+      }
+    },
+    {
+      "id": "NAME11_40",
+      "given": {
+        "legitimateChildOfMonarch": true
+      },
+      "expect": {
+        "surname": "Aethros"
+      }
+    },
+    {
+      "id": "NAME11_41",
+      "given": {
+        "secondaryAethrosBranch": true
+      },
+      "expect": {
+        "mayUseOtherSurname": true
+      }
+    },
+    {
+      "id": "NAME11_42",
+      "given": {
+        "secondaryBranchAscendsCrown": true
+      },
+      "expect": {
+        "restoreSurname": "Aethros"
+      }
+    },
+    {
+      "id": "NAME11_43",
+      "given": {
+        "adoptedByAethros": true
+      },
+      "expect": {
+        "aethrosBloodCreated": false
+      }
+    },
+    {
+      "id": "NAME11_44",
+      "given": {
+        "title": "Lord"
+      },
+      "expect": {
+        "civilSurnameChanged": false
+      }
+    },
+    {
+      "id": "NAME11_45",
+      "given": {
+        "twoNpcSameFullName": true
+      },
+      "expect": {
+        "allowed": true,
+        "npcIdDistinguishes": true
+      }
+    },
+    {
+      "id": "NAME11_46",
+      "given": {
+        "aiAction": "invent_persistent_name"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "NAME11_47",
+      "given": {
+        "aiAction": "reveal_unknown_legal_name"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "NAME11_48",
+      "given": {
+        "aiAction": "infer_kinship_from_surname"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "NAME11_49",
+      "given": {
+        "tier": "A"
+      },
+      "expect": {
+        "nameMode": "authored"
+      }
+    },
+    {
+      "id": "NAME11_50",
+      "given": {
+        "tier": "B"
+      },
+      "expect": {
+        "nameMode": "deterministic_persistent"
+      }
+    },
+    {
+      "id": "NAME11_51",
+      "given": {
+        "tier": "C"
+      },
+      "expect": {
+        "nameMode": "latent_seed"
+      }
+    },
+    {
+      "id": "NAME11_52",
+      "given": {
+        "transition": "C_to_B"
+      },
+      "expect": {
+        "resolveOnce": true
+      }
+    },
+    {
+      "id": "NAME11_53",
+      "given": {
+        "transition": "C_to_B",
+        "kinshipKnown": true
+      },
+      "expect": {
+        "consultKinshipBeforeSurname": true
+      }
+    },
+    {
+      "id": "NAME11_54",
+      "given": {
+        "observedName": "Taren Alden",
+        "laterPromoted": true
+      },
+      "expect": {
+        "mustPreserveObservedName": true
+      }
+    },
+    {
+      "id": "NAME11_55",
+      "given": {
+        "saveLoad": true
+      },
+      "expect": {
+        "rerollName": false
+      }
+    },
+    {
+      "id": "NAME11_56",
+      "given": {
+        "LODChange": true
+      },
+      "expect": {
+        "rerollName": false
+      }
+    },
+    {
+      "id": "NAME11_57",
+      "given": {
+        "occupationChange": true
+      },
+      "expect": {
+        "surnameChanges": false
+      }
+    },
+    {
+      "id": "NAME11_58",
+      "given": {
+        "region": "Valrik",
+        "nameFromDarovanBias": true
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "NAME11_59",
+      "given": {
+        "personCannotWrite": true
+      },
+      "expect": {
+        "legalNameCanExist": true
+      }
+    },
+    {
+      "id": "NAME11_60",
+      "given": {
+        "documentSpellingVariant": true
+      },
+      "expect": {
+        "newNpcCreated": false
+      }
+    },
+    {
+      "id": "NAME11_61",
+      "given": {
+        "inheritanceClaim": true,
+        "sameSurname": true
+      },
+      "expect": {
+        "inheritanceAutomatic": false
+      }
+    },
+    {
+      "id": "NAME11_62",
+      "given": {
+        "people": "elf"
+      },
+      "expect": {
+        "NorgardGeneratorAllowed": false
+      }
+    },
+    {
+      "id": "NAME11_63",
+      "given": {
+        "people": "Norgard_human"
+      },
+      "expect": {
+        "NorgardGeneratorAllowed": true
+      }
+    }
+  ],
+  "marker": "NAMING_POINT_11_CLOSED_NORGARD_PERSONAL_NAMES_SURNAMES"
+}

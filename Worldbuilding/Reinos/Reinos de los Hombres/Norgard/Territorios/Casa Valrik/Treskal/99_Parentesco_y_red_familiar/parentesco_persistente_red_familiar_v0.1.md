@@ -14,7 +14,7 @@ Formalizar relaciones de parentesco persistentes entre NPC sin convertir:
 - pareja;
 - cuidado;
 - amistad;
-- apellido futuro;
+- apellido actual e historial NAME;
 - herencia
 
 en sinónimos de familia biográfica.
@@ -234,3 +234,15 @@ para enriquecer diálogo o drama.
 ## Regla final
 
 **En Treskal una familia es una red persistente de personas concretas; puede atravesar hogares, distancias, conflictos y generaciones sin dejar de ser historia real del mundo.**
+
+
+---
+
+## Integración nominal — Punto 11
+
+KIN y NAME permanecen separados.
+
+- compartir apellido no prueba parentesco;
+- apellidos distintos no borran parentesco;
+- filiación determina las reglas de transmisión nominal;
+- el generador no inventa apellidos familiares al margen de KIN.

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_personal_naming_surname_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "Norgard_human_personal_naming",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/nombres_apellidos_transmision_norgard_v0.1.md",
+  "coreNameContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personal_name_identity_contract_v0.1.json",
+  "generator": "Datos operativos/norgard_personal_name_generator_v0.1.json",
+  "ordinaryStructure": {
+    "givenNameRequired": true,
+    "additionalGivenNamesOptional": true,
+    "legalSurnameCount": 1,
+    "doubleSurnameAutomatic": false,
+    "patronymicAutomatic": false,
+    "bastardSurnameSystem": false
+  },
+  "birthSurname": {
+    "oneLegalParent": "use_that_parent_current_legal_surname",
+    "twoLegalParents": "joint_choice_between_either_parent_current_legal_surname",
+    "disagreementFallback": "birthing_parent_current_legal_surname",
+    "disagreementFallbackCreatesExtraParentalAuthority": false,
+    "laterSecondParentRecognitionChangesSurnameAutomatically": false,
+    "noKnownLegalParent": "assign_ordinary_nonprotected_surname"
+  },
+  "marriage": {
+    "automaticSurnameChange": false,
+    "eitherSpouseMayKeepSurname": true,
+    "eitherSpouseMayRequestOtherSpouseSurname": true,
+    "sexPriority": false,
+    "sharedSurnameRequired": false
+  },
+  "marriageEnd": {
+    "automaticSurnameReversion": false,
+    "formerSurnameMayBeRestoredByValidChange": true
+  },
+  "legalChange": {
+    "adultGeneralCapacityAge": 18,
+    "registryRequired": true,
+    "formerNameTraceabilityRequired": true,
+    "doesNotEraseObligations": true,
+    "minorChangeNeedsParentalOrGuardianRequestAndAuthorityWhenDisputed": true,
+    "matureMinorShouldBeHeard": true
+  },
+  "adoption": {
+    "automaticSurnameReplacement": false,
+    "adoptionResolutionMayKeepOrChangeSurname": true,
+    "mayUseEitherAdoptiveParentSurname": true,
+    "formerNameRetainedInHistory": true,
+    "matureMinorShouldBeHeard": true,
+    "surnameDoesNotCreateBlood": true,
+    "surnameDoesNotCreateSpecialTitleSuccession": true
+  },
+  "stepfamily": {
+    "marriageAloneChangesStepchildSurname": false
+  },
+  "siblings": {
+    "sameSurnameRequired": false,
+    "kinshipNotInferredFromSurname": true
+  },
+  "bynames": {
+    "legalAutomatically": false,
+    "mayPersistSociallyAsNAME04": true
+  },
+  "protectedDynasticSurnames": [
+    "Aethros",
+    "Darovan",
+    "Edranor",
+    "Galdren",
+    "Valrik"
+  ],
+  "protectedSurnameRules": {
+    "randomAssignmentForbidden": true,
+    "marriageAloneGrantsSurname": false,
+    "explicitHouseAndLegalAuthorityRequiredForNonbirthGrant": true,
+    "surnameDoesNotByItselfGrantLordshipOrSuccession": true
+  },
+  "aethrosSpecialRule": {
+    "reigningSovereignUsesAethros": true,
+    "legitimateChildrenOfMonarchUseAethros": true,
+    "secondaryBranchesMayUseOtherSurnames": true,
+    "branchAscendingToCrownRestoresAethros": true,
+    "adoptionCreatesAethrosBlood": false,
+    "generalNamingRuleCannotOverrideDynasticCanon": true
+  },
+  "procedural": {
+    "tierA": "authored",
+    "tierB": "deterministic_persistent_full_name",
+    "tierC": "latent_name_seed",
+    "CtoBResolvesOnce": true,
+    "consultKinshipBeforeSurname": true,
+    "rerollForbidden": true,
+    "observedNameBinding": true
+  },
+  "aiAuthority": {
+    "mayUseKnownName": true,
+    "mayInventPersistentName": false,
+    "mayInferKinshipFromSurname": false,
+    "mayGrantProtectedSurname": false,
+    "mayChangeSurnameFromMarriageWithoutEvent": false
+  },
+  "closureMarker": "NAMING_POINT_11_CLOSED_NORGARD_PERSONAL_NAMES_SURNAMES"
+}

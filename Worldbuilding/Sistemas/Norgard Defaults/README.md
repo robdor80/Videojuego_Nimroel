@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E14 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E15 ACTIVOS**
 
 ## Objetivo
 
@@ -39,7 +39,6 @@ No listos todavía:
 
 - sistema militar final;
 - derecho familiar, matrimonio, tutela y adopción;
-- nombres personales y apellidos;
 - calendario oficial detallado;
 - cultura material común suficientemente cerrada.
 
@@ -124,12 +123,12 @@ Contrato operativo:
 
 **Los candidatos históricos respaldados por canon suficiente han sido extraídos y la capa Casa Valrik ya existe.**
 
-Tras el cierre de los Puntos 5–10, los grandes bloques de Norgard que permanecen pendientes son los que figuran en `blockedPendingCanon`: nombres/apellidos, calendario y cultura material común.
+Tras el cierre de los Puntos 5–11, los grandes bloques de Norgard que permanecen pendientes son los que figuran en `blockedPendingCanon`: calendario y cultura material común.
 
 
 ## Validación de cierre
 
-E1–E14 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
+E1–E15 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
 
 Estado:
 
@@ -428,3 +427,35 @@ Catálogo:
 Regresión:
 
 `Validacion/regresion_e14_gastronomia_norgard_v0.1.md`
+
+
+### E15 — nombres personales y apellidos
+
+Activo a nivel Reino — **Punto 11 cerrado**:
+
+- NAME como identidad nominal persistente;
+- nombre personal + un apellido legal ordinario;
+- segundo nombre opcional;
+- sin doble apellido obligatorio;
+- sin patronímico obligatorio;
+- sin apellido de bastardo;
+- matrimonio sin cambio automático de apellido;
+- transmisión a hijos desde filiación real;
+- adopción y cambios de nombre con trazabilidad;
+- apodos/alias separados del nombre legal;
+- apellidos Aethros/Darovan/Edranor/Galdren/Valrik protegidos;
+- preservación de la excepción sucesoria Aethros;
+- generador procedural humano de Norgard;
+- A/B/C integrable con población persistente.
+
+Default:
+
+`Datos operativos/norgard_personal_naming_surname_default_v0.1.json`
+
+Generador:
+
+`Datos operativos/norgard_personal_name_generator_v0.1.json`
+
+Regresión:
+
+`Validacion/regresion_e15_nombres_apellidos_norgard_v0.1.md`

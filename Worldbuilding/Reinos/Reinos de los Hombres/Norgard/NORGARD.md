@@ -2538,3 +2538,27 @@ La cocina no asigna una dieta rígida por clase. La desigualdad se expresa por c
 Canon:
 
 `Sociedad/gastronomia_alimentacion_norgard_v0.1.md`
+
+
+---
+
+## Nombres personales y apellidos
+
+Norgard utiliza de forma ordinaria **nombre personal + un apellido legal**.
+
+Reglas generales:
+
+- no existe doble apellido obligatorio;
+- no existe patronímico obligatorio;
+- no existe apellido de bastardo;
+- el matrimonio no cambia el apellido automáticamente;
+- los hijos reciben apellido conforme a filiación y registro;
+- adopción puede mantener o cambiar apellido mediante resolución;
+- apodo, título y apellido son capas diferentes;
+- compartir apellido no prueba parentesco;
+- Aethros, Darovan, Edranor, Galdren y Valrik son apellidos dinásticos protegidos;
+- el generador procedural no los asigna al azar.
+
+Canon:
+
+`Sociedad/nombres_apellidos_transmision_norgard_v0.1.md`

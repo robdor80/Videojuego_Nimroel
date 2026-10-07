@@ -1,3 +1,8 @@
+> **ACTUALIZACIÓN 2026-10-07 — PUNTO 11 NOMBRES / APELLIDOS CANONIZADO**  
+> El bloqueo histórico de nombres personales y apellidos queda resuelto mediante E15 y el contrato Core NAME.  
+> Matrimonio, filiación, adopción, Grandes Casas y generación procedural consumen ya una misma lógica nominal persistente.  
+> Permanecen pendientes únicamente calendario oficial y cultura material común.
+
 > **ACTUALIZACIÓN 2026-10-07 — PUNTO 10 GASTRONOMÍA / ALIMENTACIÓN CANONIZADO**  
 > El bloqueo histórico de cocina general queda resuelto mediante E14 y el nuevo contrato Core FOOD.  
 > Norgard dispone ya de ingredientes básicos, técnicas, conservación, cocina regional, 40 preparaciones canónicas y reglas de comida doméstica/comercial/institucional.  

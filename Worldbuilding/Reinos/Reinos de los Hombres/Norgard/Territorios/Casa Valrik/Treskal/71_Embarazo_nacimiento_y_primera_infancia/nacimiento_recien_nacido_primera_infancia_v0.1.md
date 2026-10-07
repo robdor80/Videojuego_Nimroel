@@ -42,7 +42,7 @@ Al crearse debe poder vincularse con:
 - caso de cuidado;
 - etapa vital correspondiente.
 
-El nombre visible puede depender de canon futuro.
+El nombre visible se resuelve mediante NAME y el canon de Norgard del Punto 11.
 
 La falta temporal de un nombre definitivo no impide que exista identidad técnica estable.
 
@@ -179,14 +179,24 @@ K, CONV y HEAR siguen gobernando la información.
 
 # 16. Nombre y reconocimiento formal
 
-El Punto 6 de Norgard ya regula:
+El recién nacido puede existir temporalmente como NAME02.
 
-- filiación jurídica;
-- reconocimiento;
-- tutela;
-- adopción.
+Cuando se registra:
 
-Este documento sigue sin establecer cuándo se asigna nombre, quién lo elige, ceremonia o reglas generales de apellido. Esas materias permanecen para el canon de nombres y apellidos de Norgard.
+- recibe nombre personal;
+- recibe apellido según la filiación jurídica disponible;
+- conserva el mismo `npc_id`;
+- PREG y KIN no se reescriben.
+
+Si existe un solo progenitor jurídico, usa por defecto su apellido.
+
+Si existen dos, pueden elegir uno de los dos.
+
+Si no hay acuerdo, se utiliza como fallback registral el apellido de quien dio a luz.
+
+Si no existe progenitor jurídico conocido, se asigna un apellido ordinario no protegido.
+
+No existe apellido de bastardo.
 
 ---
 

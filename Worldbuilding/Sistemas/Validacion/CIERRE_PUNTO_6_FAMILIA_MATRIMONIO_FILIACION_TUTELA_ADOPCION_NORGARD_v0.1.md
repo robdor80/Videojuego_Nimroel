@@ -78,16 +78,20 @@ La dependencia patrimonial queda cerrada:
 
 Punto 8 no reabre matrimonio, filiación, tutela ni adopción; consume esas relaciones como datos jurídicos.
 
-### Punto 11
+### Punto 11 — resuelto
 
-Quedan para nombres/apellidos:
+Quedan cerrados:
 
 - apellido matrimonial;
 - apellido de hijos;
 - apellido adoptivo;
-- transmisión ordinaria de nombres.
+- transmisión ordinaria de nombres;
+- cambios de nombre;
+- apodos/alias;
+- apellidos protegidos de Grandes Casas;
+- generación procedural.
 
-Las reglas Aethros ya existentes permanecen como excepción dinástica.
+Las reglas Aethros permanecen como especialidad dinástica y han sido preservadas.
 
 ## Compatibilidad con Treskal
 

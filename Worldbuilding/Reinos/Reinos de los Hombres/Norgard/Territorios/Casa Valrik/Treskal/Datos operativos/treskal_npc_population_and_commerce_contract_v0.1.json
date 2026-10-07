@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_npc_population_and_commerce_contract",
-  "version": "0.2",
+  "version": "0.3",
   "status": "active_design_contract",
   "scope": "Norgard/Treskal",
   "populationModel": {
@@ -10,19 +10,22 @@
         "id": "authored_npc",
         "persistentFromStart": true,
         "proceduralReplacementForbidden": true,
-        "personalityMode": "authored"
+        "personalityMode": "authored",
+        "nameMode": "authored"
       },
       "B": {
         "id": "generated_persistent_resident",
         "generatedDeterministically": true,
         "persistentAfterMaterialization": true,
-        "personalityMode": "procedural_persistent"
+        "personalityMode": "procedural_persistent",
+        "nameMode": "procedural_persistent"
       },
       "C": {
         "id": "latent_population",
         "fullIdentityRequired": false,
         "promotesTo": "B",
-        "personalityMode": "latent_seed"
+        "personalityMode": "latent_seed",
+        "nameMode": "latent_seed"
       }
     },
     "promotion": {
@@ -37,9 +40,13 @@
         "known_interactions",
         "personality_seed",
         "observed_behavior_constraints",
-        "personality_profile_id_if_already_resolved"
+        "personality_profile_id_if_already_resolved",
+        "name_seed",
+        "name_record_id_if_resolved",
+        "observed_name_if_any"
       ],
-      "personalityRule": "C_to_B_resolves_full_profile_once_from_latent_seed_and_observed_behavior"
+      "personalityRule": "C_to_B_resolves_full_profile_once_from_latent_seed_and_observed_behavior",
+      "namingRule": "C_to_B_resolves_name_once_after_consulting_KIN_and_Norgard_surname_law"
     },
     "householdFirst": true,
     "visiblePopulationDependsOn": [
@@ -59,7 +66,8 @@
     "household_id",
     "home_location_id",
     "status",
-    "personality_seed"
+    "personality_seed",
+    "name_seed"
   ],
   "optionalNpcFields": [
     "occupation_id",
@@ -69,7 +77,9 @@
     "memory_refs",
     "personality_profile_id",
     "personality_observation_refs",
-    "personality_evolution_refs"
+    "personality_evolution_refs",
+    "name_record_id",
+    "known_alias_refs"
   ],
   "visitorModel": {
     "countsAsResident": false,
@@ -205,5 +215,14 @@
     "CtoBPersonalityPromotionIrreversible": true,
     "BtoARerollForbidden": true,
     "authoredAProfilePreferred": true
+  },
+  "namingIntegration": {
+    "status": "active_Norgard_humans",
+    "coreName": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personal_name_identity_contract_v0.1.json",
+    "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_personal_naming_surname_default_v0.1.json",
+    "norgardGenerator": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_personal_name_generator_v0.1.json",
+    "CtoBResolveOnce": true,
+    "surnameAfterKinship": true,
+    "protectedHouseSurnameRandomForbidden": true
   }
 }

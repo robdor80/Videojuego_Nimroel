@@ -100,12 +100,34 @@ Cuando C promociona a B, el perfil se genera una sola vez usando:
 
 Una conversación incidental puede no promover al NPC. Si después promociona, lo observado sigue siendo vinculante.
 
+# 2C. Nombre asociado a los niveles
+
+Para humanos de Norgard:
+
+- **A** → nombre autoral;
+- **B** → nombre legal completo, determinista y persistente;
+- **C** → `name_seed` latente.
+
+En C→B:
+
+1. se conserva `npc_id`;
+2. se consulta filiación/KIN;
+3. se aplica la ley de apellidos de Norgard;
+4. se genera el nombre personal;
+5. se crea el registro NAME;
+6. no se rerollea.
+
+Si un nombre ya fue observado o dicho antes de la promoción, debe conservarse.
+
+Los apellidos Aethros, Darovan, Edranor, Galdren y Valrik no pueden salir al azar.
+
 # 3. Promoción irreversible
 
 Una vez un residente latente recibe identidad concreta:
 
 - no se rerollea;
 - no cambia de nombre;
+- conserva su historial NAME;
 - no cambia de familia arbitrariamente;
 - no cambia de profesión sin evento;
 - no vuelve a ser anónimo;

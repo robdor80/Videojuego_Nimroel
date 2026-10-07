@@ -102,7 +102,8 @@
     "fishingFleet": "Datos operativos/treskal_fishing_fleet_profile_v0.1.json",
     "maritimeSimulation": "Datos operativos/treskal_maritime_simulation_profile_v0.1.json",
     "fiscalCustoms": "Datos operativos/treskal_fiscal_customs_profile_v0.1.json",
-    "portCustomsFlow": "Datos operativos/treskal_port_customs_flow_contract_v0.1.json"
+    "portCustomsFlow": "Datos operativos/treskal_port_customs_flow_contract_v0.1.json",
+    "personalNaming": "Datos operativos/treskal_personal_naming_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -213,7 +214,8 @@
     "HCOND": "health_condition_type",
     "HTRT": "health_treatment_state",
     "OUTB": "outbreak_state",
-    "FOOD": "food_lot_state"
+    "FOOD": "food_lot_state",
+    "NAME": "personal_name_record_state"
   },
   "rules": {
     "stableIdsAreCanonicalTechnicalIdentity": true,
@@ -262,7 +264,7 @@
     "formalMarriageRitesAndRecognition": "resolved_by_Norgard_family_point_6",
     "exactPregnancyAndChildDevelopmentTiming": "future_Nimroel_character_lifecycle_system",
     "exactPregnancyBirthHealthMechanics": "resolved_by_nimroel_health_system",
-    "namingParentageGuardianshipLaw": "parentage_guardianship_resolved_point_6__naming_future_point_11",
+    "namingParentageGuardianshipLaw": "resolved_by_Norgard_points_6_and_11",
     "exactChildStageAgeThresholds": "future_Nimroel_character_lifecycle_system",
     "formalAgeOfMajorityAndWorkRules": "resolved_by_Norgard_labor_point_7",
     "exactAgingAndLongevityModel": "future_Nimroel_character_lifecycle_system",
@@ -273,7 +275,7 @@
     "formalParentageGuardianshipAdoptionAndAffinity": "resolved_by_Norgard_family_point_6",
     "inheritanceAndPropertyConsequences": "resolved_by_Norgard_point_8",
     "conceptionAndAdditionalParentageRules": "future_Nimroel_character_lifecycle_system",
-    "namingAndSurnameRules": "future_Norgard_family_and_naming_canon",
+    "namingAndSurnameRules": "resolved_by_Norgard_point_11",
     "fishingEcologySpecies": "future_ecology_profile_species_names_not_required_for_2B"
   },
   "validationFiles": {
@@ -695,6 +697,14 @@
         "localContract": "Datos operativos/treskal_daily_life_family_food_contract_v0.1.json",
         "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_cuisine_foodways_default_v0.1.json",
         "localOverridesEmpty": false
+      },
+      "personalNaming": {
+        "namespaces": [
+          "NAME"
+        ],
+        "localContract": "Datos operativos/treskal_personal_naming_contract_v0.1.json",
+        "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_personal_naming_surname_default_v0.1.json",
+        "localOverridesEmpty": true
       }
     },
     "validation": {
@@ -878,5 +888,12 @@
     "norgardRecipes": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_cuisine_recipe_catalog_v0.1.json",
     "localFoodContract": "Datos operativos/treskal_daily_life_family_food_contract_v0.1.json",
     "localNewCuisineLawRequired": false
+  },
+  "personalNamingIntegration": {
+    "status": "inherited_core_plus_Norgard_point_11",
+    "coreName": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personal_name_identity_contract_v0.1.json",
+    "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_personal_naming_surname_default_v0.1.json",
+    "localContract": "Datos operativos/treskal_personal_naming_contract_v0.1.json",
+    "localNewLayerRequired": false
   }
 }

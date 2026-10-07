@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "nimroel_kinship_family_network_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_core_contract",
   "authorityScope": "nimroel_universal",
   "appliesTo": "persistent_kinship_and_family_network",
@@ -67,7 +67,7 @@
   "formalAdoptionNotDefinedHere": true,
   "marriageAffinityNotDefinedHere": true,
   "inheritanceOrderNotDefinedHere": true,
-  "surnameTransmissionNotDefinedHere": true,
+  "surnameTransmissionNotDefinedHere": false,
   "lodDoesNotRerollKinship": true,
   "aiCannotInventFamilyRelationsForDialogueOrDrama": true,
   "kinshipRecordFields": [
@@ -83,9 +83,15 @@
     "last_update_time"
   ],
   "externalDependencies": {
-    "formalParentageGuardianshipAdoptionAndAffinity": "future_Norgard_family_and_marriage_canon",
-    "inheritanceAndPropertyConsequences": "Norgard_law_and_economic_institutions",
+    "formalParentageGuardianshipAdoptionAndAffinity": "realm_family_law",
+    "inheritanceAndPropertyConsequences": "realm_property_inheritance_law",
     "conceptionAndAdditionalParentageRules": "future_Nimroel_character_lifecycle_system",
-    "namingAndSurnameRules": "future_Norgard_family_and_naming_canon"
+    "namingAndSurnameRules": "realm_or_people_naming_law"
+  },
+  "namingIntegration": {
+    "status": "resolved_by_cultural_naming_law",
+    "coreNameContract": "nimroel_personal_name_identity_contract_v0.1.json",
+    "kinshipDoesNotRequireSharedSurname": true,
+    "sharedSurnameDoesNotProveKinship": true
   }
 }

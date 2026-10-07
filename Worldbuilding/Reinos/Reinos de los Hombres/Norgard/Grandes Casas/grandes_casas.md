@@ -122,6 +122,20 @@ Los bienes privados del fallecido sí se rigen por la herencia civil ordinaria d
 
 ---
 
+## 4C. Apellidos dinásticos protegidos
+
+Los apellidos **Aethros, Darovan, Edranor, Galdren y Valrik** están protegidos.
+
+No pueden:
+
+- asignarse por generación procedural ordinaria;
+- adquirirse automáticamente por matrimonio;
+- utilizarse como prueba suficiente de señorío o sucesión.
+
+El uso válido requiere pertenencia familiar o acto expreso autorizado.
+
+La adopción de un apellido de Gran Casa no crea sangre ni sustituye sus reglas sucesorias.
+
 # 5. Casa Aethros
 
 ## Identidad

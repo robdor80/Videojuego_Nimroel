@@ -139,9 +139,15 @@ Punto 7 / E11 ya resuelve:
 
 Punto 8 / E12 ya resuelve herencia, régimen patrimonial y alquiler.
 
-Sigue pendiente:
+Punto 11 / E15 resuelve ya:
 
-- apellidos generales.
+- apellidos generales;
+- apellido matrimonial;
+- apellido de hijos;
+- apellido adoptivo;
+- cambios de nombre y alias.
+
+Este documento conserva autoridad sobre las relaciones familiares que NAME utiliza como entrada.
 
 ## Regla final
 

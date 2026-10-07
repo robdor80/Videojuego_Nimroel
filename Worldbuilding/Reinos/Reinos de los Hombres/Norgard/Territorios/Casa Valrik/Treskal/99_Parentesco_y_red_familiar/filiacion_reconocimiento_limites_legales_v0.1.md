@@ -147,15 +147,19 @@ OWN y el futuro Punto 8 conservan autoridad.
 
 # 9. Apellidos y nombres
 
-Punto 6 no fija:
+Punto 11 de Norgard resuelve ya:
 
 - transmisión general de apellido;
-- nombres familiares;
-- patronímicos;
-- rito de nombramiento;
-- apellido adoptivo ordinario.
+- apellido matrimonial;
+- apellido de hijos;
+- apellido adoptivo;
+- cambios de nombre;
+- alias/sobrenombres;
+- apellidos protegidos de Grandes Casas.
 
-Esas reglas permanecen para el futuro canon de nombres y apellidos de Norgard. Las reglas dinásticas Aethros existentes siguen siendo excepción.
+La filiación legal sigue siendo autoridad sobre quién es progenitor; NAME consume ese dato y no lo sustituye.
+
+Las reglas dinásticas Aethros permanecen como excepción especial.
 
 ---
 

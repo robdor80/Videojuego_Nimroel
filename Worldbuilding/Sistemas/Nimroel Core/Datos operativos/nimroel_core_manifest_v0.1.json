@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "nimroel_core_manifest",
-  "version": "0.7",
+  "version": "0.8",
   "status": "active_core_manifest",
   "authorityScope": "nimroel_universal",
   "root": "Worldbuilding/Sistemas/Nimroel Core/",
@@ -73,7 +73,8 @@
     "aiPersonalityExpressionContext": "Datos operativos/nimroel_ai_personality_expression_context_contract_v0.1.json",
     "persistentPersonalityGenerationPipeline": "Datos operativos/nimroel_persistent_personality_generation_pipeline_v0.1.json",
     "healthInjuryIllnessRecovery": "Datos operativos/nimroel_health_injury_illness_recovery_contract_v0.1.json",
-    "foodCookingPreservation": "Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json"
+    "foodCookingPreservation": "Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
+    "personalNameIdentity": "Datos operativos/nimroel_personal_name_identity_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "MEM": "npc_memory_state",
@@ -151,7 +152,8 @@
     "HCOND": "health_condition_type",
     "HTRT": "health_treatment_state",
     "OUTB": "outbreak_state",
-    "FOOD": "food_lot_state"
+    "FOOD": "food_lot_state",
+    "NAME": "personal_name_record_state"
   },
   "migration": {
     "sourcePrototype": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",
@@ -214,6 +216,14 @@
       "namespace": "FOOD",
       "regression": "Validacion/regresion_alimentos_cocina_conservacion_core_v0.1.md",
       "cultureSpecificCuisineRequired": true
+    },
+    "personalNameIdentity": {
+      "status": "active_core_contract_static_validated",
+      "source": "01_Cognicion_y_conducta/identidad_nominal_nombres_alias_v0.1.md",
+      "contract": "personalNameIdentity",
+      "namespace": "NAME",
+      "cultureSpecificNamingRequired": true,
+      "regression": "Validacion/regresion_identidad_nominal_core_v0.1.md"
     }
   },
   "research": {

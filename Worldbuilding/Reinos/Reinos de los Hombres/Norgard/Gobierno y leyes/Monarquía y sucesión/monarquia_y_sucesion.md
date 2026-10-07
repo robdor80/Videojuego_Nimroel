@@ -231,3 +231,19 @@ La definición general de matrimonio, filiación, tutela y adopción se encuentr
 `../familia_matrimonio_filiacion_tutela_adopcion_v0.1.md`
 
 Las reglas dinásticas de este documento son una especialidad sucesoria y prevalecen únicamente en aquello que exige sangre Aethros y legitimidad de nacimiento.
+
+
+---
+
+## Integración con Punto 11 — nombres
+
+El apellido Aethros queda protegido por el sistema general de nombres.
+
+- no se asigna proceduralmente;
+- no se adquiere automáticamente por matrimonio;
+- la línea reinante mantiene Aethros;
+- los hijos legítimos del monarca usan Aethros;
+- las ramas secundarias pueden usar otros apellidos;
+- la adopción no crea sangre Aethros ni derecho sucesorio ordinario.
+
+El sistema NAME no sustituye la genealogía dinástica.

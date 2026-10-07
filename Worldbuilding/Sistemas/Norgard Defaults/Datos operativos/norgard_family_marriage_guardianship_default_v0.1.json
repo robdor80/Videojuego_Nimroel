@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_family_marriage_guardianship_default",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_realm_default",
   "authorityScope": "norgard_family_law",
   "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/familia_matrimonio_filiacion_tutela_adopcion_v0.1.md",
@@ -211,9 +211,7 @@
     "doNotEndMarriageFromAFFChangeAlone": true,
     "doNotInventConsent": true
   },
-  "deferred": [
-    "general_surname_rules"
-  ],
+  "deferred": [],
   "closureMarker": "FAMILY_POINT_6_CLOSED_NORGARD_FAMILY_LAW",
   "inheritsFrom": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
   "laborAgeIntegration": {
@@ -230,5 +228,13 @@
     "recognizedOutsideMarriageOrdinaryInheritanceEqual": true,
     "guardianOwnsMinorAssets": false,
     "universalMaritalPropertyCommunity": false
+  },
+  "namingIntegration": {
+    "status": "resolved_by_point_11",
+    "default": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_personal_naming_surname_default_v0.1.json",
+    "marriageChangesSurnameAutomatically": false,
+    "birthOutsideMarriageCreatesSpecialSurname": false,
+    "adoptionChangesSurnameAutomatically": false,
+    "surnameDoesNotCreateKinship": true
   }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_kinship_family_network_contract",
-  "version": "0.2",
+  "version": "0.3",
   "status": "migrated_to_core_override",
   "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_kinship_family_network_contract_v0.1.json",
   "inheritedNamespaces": [
@@ -13,5 +13,11 @@
     "worldStateMeaningPreserved": true,
     "saveMigrationRequired": false
   },
-  "note": "Treskal inherits Nimroel Core kinship semantics without local exceptions."
+  "note": "Treskal inherits Nimroel Core kinship semantics without local exceptions.",
+  "namingIntegration": {
+    "status": "inherited_from_Norgard_point_11",
+    "contract": "Datos operativos/treskal_personal_naming_contract_v0.1.json",
+    "sharedSurnameDoesNotProveKinship": true,
+    "differentSurnameDoesNotDisproveKinship": true
+  }
 }
