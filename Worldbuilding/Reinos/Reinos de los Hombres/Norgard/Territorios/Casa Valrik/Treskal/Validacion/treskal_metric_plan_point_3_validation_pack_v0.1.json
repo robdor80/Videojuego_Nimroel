@@ -1,0 +1,831 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_plan_point_3_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "sourceContract": "../Datos operativos/treskal_metric_geography_contract_v0.1.json",
+  "caseCount": 88,
+  "expectedCaseCount": 88,
+  "allExpectedConditionsDefined": true,
+  "cases": [
+    {
+      "id": "COORD01",
+      "given": {
+        "dominantAxisM": 2500
+      },
+      "expect": {
+        "withinPoint2Control": true
+      }
+    },
+    {
+      "id": "COORD02",
+      "given": {
+        "transverseAxisM": 1500
+      },
+      "expect": {
+        "withinPoint2Control": true
+      }
+    },
+    {
+      "id": "COORD03",
+      "given": {
+        "rectangularUrbanBoundary": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "COORD04",
+      "given": {
+        "xPositive": "east",
+        "yPositive": "north"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COORD05",
+      "given": {
+        "primaryUrbanMassBank": "east"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COORD06",
+      "given": {
+        "mirroredTwoBankCity": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "COORD07",
+      "given": {
+        "upstream": "north_northwest"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COORD08",
+      "given": {
+        "seaExposure": "south_and_southeast"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV01",
+      "given": {
+        "centerlineLengthM": 1424
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV02",
+      "given": {
+        "mouthWidthM": 100
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV03",
+      "given": {
+        "mouthDepthM": 4.5
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV04",
+      "given": {
+        "widthAt200M": 82
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV05",
+      "given": {
+        "depthAt200M": 4
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV06",
+      "given": {
+        "widthAt400M": 72
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV07",
+      "given": {
+        "depthAt400M": 3.5
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV08",
+      "given": {
+        "widthAt600M": 64
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV09",
+      "given": {
+        "depthAt600M": 3.1
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV10",
+      "given": {
+        "widthAt850M": 58
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV11",
+      "given": {
+        "depthAt850M": 2.6
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV12",
+      "given": {
+        "widthAt1100M": 54
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV13",
+      "given": {
+        "depthAt1100M": 2.2
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV14",
+      "given": {
+        "widthAt1424M": 50
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV15",
+      "given": {
+        "depthAt1424M": 1.9
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV16",
+      "given": {
+        "majorOceanGoingTrafficUpstream": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "RIV17",
+      "given": {
+        "routineCommercialDestination": "T01"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV18",
+      "given": {
+        "permanentIslandInsideUrbanMouth": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "RIV19",
+      "given": {
+        "urbanDelta": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "RIV20",
+      "given": {
+        "navigationOpenAtDesignFlood": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "COAST01",
+      "given": {
+        "eastShorelineLengthM": 2036
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COAST02",
+      "given": {
+        "T07FrontageM": 540
+      },
+      "expect": {
+        "withinPoint2Band": true
+      }
+    },
+    {
+      "id": "COAST03",
+      "given": {
+        "T08FrontageM": 940
+      },
+      "expect": {
+        "withinPoint2Band": true
+      }
+    },
+    {
+      "id": "COAST04",
+      "given": {
+        "T07StartChainageM": 80,
+        "T07EndChainageM": 620
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COAST05",
+      "given": {
+        "T08StartChainageM": 880,
+        "T08EndChainageM": 1820
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COAST06",
+      "given": {
+        "separatorM": 260
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COAST07",
+      "given": {
+        "continuousSharedCivilNavalQuay": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "COAST08",
+      "given": {
+        "operationalCliffAtT07": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "COAST09",
+      "given": {
+        "operationalCliffAtT08": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "COAST10",
+      "given": {
+        "civilMinus3mContourOffshoreM": 90
+      },
+      "expect": {
+        "withinBand": true
+      }
+    },
+    {
+      "id": "COAST11",
+      "given": {
+        "navalMinus4mContourOffshoreM": 75
+      },
+      "expect": {
+        "withinBand": true
+      }
+    },
+    {
+      "id": "COAST12",
+      "given": {
+        "navalReachDeeperThanCivilReach": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "TOPO01",
+      "given": {
+        "mainUrbanTerraceZM": [
+          6,
+          16
+        ]
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "TOPO02",
+      "given": {
+        "northNortheastUpperTerraceZM": [
+          16,
+          30
+        ]
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "TOPO03",
+      "given": {
+        "highFringeMaxZM": 42
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "TOPO04",
+      "given": {
+        "quaySlopePct": 1
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "TOPO05",
+      "given": {
+        "mainUrbanSlopePct": 3
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "TOPO06",
+      "given": {
+        "navalRearSlopePct": 2
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "TOPO07",
+      "given": {
+        "northNortheastSlopePct": 5
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "TOPO08",
+      "given": {
+        "essentialCartRouteSlopePct": 9
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "TOPO09",
+      "given": {
+        "bridgeApproachSlopePct": 4.5
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "TOPO10",
+      "given": {
+        "bridgeApproachSlopePct": 6
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "TOPO11",
+      "given": {
+        "mainDrainageDirection": "south_southwest"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "TOPO12",
+      "given": {
+        "modernSewerRequiredByTopography": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "FLOOD01",
+      "given": {
+        "F1EastRiverBeyondBankM": 25
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOOD02",
+      "given": {
+        "F1WestRiverBeyondBankM": 80
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOOD03",
+      "given": {
+        "F2EastRiverBeyondBankM": 80
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOOD04",
+      "given": {
+        "F2WestRiverBeyondBankM": 180
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOOD05",
+      "given": {
+        "F3MinGroundZM": 6
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOOD06",
+      "given": {
+        "T06InF1": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "FLOOD07",
+      "given": {
+        "T06InF2": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "FLOOD08",
+      "given": {
+        "T12InF1": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "FLOOD09",
+      "given": {
+        "T12InF2": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "FLOOD10",
+      "given": {
+        "T01WorkingEdgeInF1": true
+      },
+      "expect": {
+        "compatible": true
+      }
+    },
+    {
+      "id": "FLOOD11",
+      "given": {
+        "T07WorkingEdgeInF2": true
+      },
+      "expect": {
+        "compatible": true
+      }
+    },
+    {
+      "id": "FLOOD12",
+      "given": {
+        "T08CommandInF2": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "BRIDGE01",
+      "given": {
+        "bridgeCount": 1
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE02",
+      "given": {
+        "bridgeChainageM": 820
+      },
+      "expect": {
+        "upstreamOfT01": true
+      }
+    },
+    {
+      "id": "BRIDGE03",
+      "given": {
+        "structuralLengthM": 78
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE04",
+      "given": {
+        "clearDeckWidthM": 6.2
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE05",
+      "given": {
+        "overallDeckWidthM": 7.2
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE06",
+      "given": {
+        "stoneAbutments": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE07",
+      "given": {
+        "stonePierCount": 3
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE08",
+      "given": {
+        "timberSuperstructure": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE09",
+      "given": {
+        "toweredFortification": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "BRIDGE10",
+      "given": {
+        "spanCount": 4
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE11",
+      "given": {
+        "centralNavigableSpansM": [
+          17,
+          17
+        ]
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE12",
+      "given": {
+        "ordinaryHighWaterClearanceM": 4.5
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE13",
+      "given": {
+        "designFloodClearanceM": 2.2
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE14",
+      "given": {
+        "navigationAtDesignFlood": "open"
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "BRIDGE15",
+      "given": {
+        "minorPermanentBridgeCount": 0
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BRIDGE16",
+      "given": {
+        "ferryRequiredForUrbanFunction": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "REL01",
+      "given": {
+        "T01FrontageM": 380
+      },
+      "expect": {
+        "withinPoint2Band": true
+      }
+    },
+    {
+      "id": "REL02",
+      "given": {
+        "T01RiverChainageM": [
+          200,
+          580
+        ]
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "REL03",
+      "given": {
+        "T01UpperEndToBridgeM": 240
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "REL04",
+      "given": {
+        "T07FrontageM": 540
+      },
+      "expect": {
+        "withinPoint2Band": true
+      }
+    },
+    {
+      "id": "REL05",
+      "given": {
+        "T08FrontageM": 940
+      },
+      "expect": {
+        "withinPoint2Band": true
+      }
+    },
+    {
+      "id": "REL06",
+      "given": {
+        "T08DirectRiverFrontage": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "REL07",
+      "given": {
+        "waterCountedAsUrbanLand": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "REL08",
+      "given": {
+        "nextPoint": 4
+      },
+      "expect": {
+        "topic": "sector_fit_T01_T12"
+      }
+    }
+  ],
+  "summary": {
+    "coordinateCases": 8,
+    "riverCases": 20,
+    "coastCases": 12,
+    "topographyCases": 12,
+    "floodCases": 12,
+    "bridgeCases": 16,
+    "relationCases": 8,
+    "externalCanonBlockers": 0,
+    "authorDecisionRequiredBeforePoint4": false
+  },
+  "marker": "TRESKAL_METRIC_PLAN_POINT_3_GEOGRAPHY_CLOSED"
+}
