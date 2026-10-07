@@ -11,7 +11,8 @@ Roadmap:
 Estado:
 
 - Punto 1 — Auditoría final pre-plano: **CERRADO**;
-- Punto 2 — Escala y huella urbana: **SIGUIENTE**.
+- Punto 2 — Escala y huella urbana: **CERRADO**.
+- Punto 3 — Geografía métrica: **SIGUIENTE**.
 
 Auditoría vigente:
 
@@ -832,3 +833,20 @@ Sesgos locales:
 **No existen relojes en Treskal.**
 
 TIME puede conocer la hora exacta; los NPC dependen de sol, luz, rutina, comidas, guardias, señales y campanas.
+
+
+### Escala métrica cerrada — Punto 2
+
+Treskal utiliza como referencia de dimensionado:
+
+- 15.000 residentes;
+- 100–120 ha de tejido mixto, objetivo 110 ha;
+- 170–200 ha de huella funcional terrestre, objetivo 185 ha;
+- 230–270 ha de envolvente terrestre, objetivo 250 ha;
+- T08: 32–42 ha, objetivo 36 ha;
+- T12: 13–18 ha, objetivo 15 ha;
+- reserva de crecimiento: 25–35 ha.
+
+El agua no se cuenta como suelo urbano.
+
+La siguiente fase es fijar río, costa, cotas, inundabilidad y puente en el **Punto 3**.

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "0.3",
+  "version": "0.4",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3131,6 +3131,65 @@
       "expected": [
         "Valrik army cannot command T08 interior",
         "Royal Navy is not converted into House Valrik force"
+      ]
+    },
+    {
+      "id": "metric_scale_mixed_fabric",
+      "expected": [
+        "principal mixed urban fabric remains within 100-120 ha",
+        "design target is 110 ha"
+      ]
+    },
+    {
+      "id": "metric_scale_functional_footprint",
+      "expected": [
+        "functional terrestrial urban footprint remains within 170-200 ha",
+        "design target is 185 ha",
+        "river and sea surface are excluded"
+      ]
+    },
+    {
+      "id": "metric_scale_planning_envelope",
+      "expected": [
+        "planning terrestrial envelope remains within 230-270 ha",
+        "design target is 250 ha",
+        "edge remains gradual rather than walled"
+      ]
+    },
+    {
+      "id": "metric_scale_T08",
+      "expected": [
+        "T08 terrestrial reservation remains 32-42 ha",
+        "design target is 36 ha",
+        "water area is additional and not counted"
+      ]
+    },
+    {
+      "id": "metric_scale_T12",
+      "expected": [
+        "T12 terrestrial reservation remains 13-18 ha",
+        "design target is 15 ha"
+      ]
+    },
+    {
+      "id": "metric_scale_walkability",
+      "expected": [
+        "ordinary local trips remain commonly 5-20 minutes",
+        "functional extreme-to-extreme traversal is normally 30-40 minutes on foot"
+      ]
+    },
+    {
+      "id": "metric_scale_no_uniform_density",
+      "expected": [
+        "resident density is not distributed uniformly",
+        "T03 T09 and mixed T04 carry more residents than T08 T10 T12"
+      ]
+    },
+    {
+      "id": "metric_scale_growth_reserve",
+      "expected": [
+        "25-35 ha ordinary growth reserve remains available",
+        "reserve is not preassigned to an invented institution"
       ]
     }
   ]

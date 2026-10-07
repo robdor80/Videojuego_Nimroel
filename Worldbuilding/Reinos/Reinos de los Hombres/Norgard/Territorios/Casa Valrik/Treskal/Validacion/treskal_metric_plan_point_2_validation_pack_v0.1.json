@@ -1,0 +1,641 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_plan_point_2_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "caseCount": 70,
+  "cases": [
+    {
+      "id": "SCALE01",
+      "given": {
+        "residents": 12000
+      },
+      "expect": {
+        "canonical": true
+      }
+    },
+    {
+      "id": "SCALE02",
+      "given": {
+        "residents": 15000
+      },
+      "expect": {
+        "designReference": true
+      }
+    },
+    {
+      "id": "SCALE03",
+      "given": {
+        "residents": 18000
+      },
+      "expect": {
+        "canonical": true
+      }
+    },
+    {
+      "id": "SCALE04",
+      "given": {
+        "residents": 20000
+      },
+      "expect": {
+        "canonical": false
+      }
+    },
+    {
+      "id": "SCALE05",
+      "given": {
+        "mixedFabricHa": 100
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE06",
+      "given": {
+        "mixedFabricHa": 110
+      },
+      "expect": {
+        "target": true
+      }
+    },
+    {
+      "id": "SCALE07",
+      "given": {
+        "mixedFabricHa": 120
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE08",
+      "given": {
+        "mixedFabricHa": 80
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE09",
+      "given": {
+        "functionalLandHa": 170
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE10",
+      "given": {
+        "functionalLandHa": 185
+      },
+      "expect": {
+        "target": true
+      }
+    },
+    {
+      "id": "SCALE11",
+      "given": {
+        "functionalLandHa": 200
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE12",
+      "given": {
+        "functionalLandHa": 230
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE13",
+      "given": {
+        "planningEnvelopeHa": 230
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE14",
+      "given": {
+        "planningEnvelopeHa": 250
+      },
+      "expect": {
+        "target": true
+      }
+    },
+    {
+      "id": "SCALE15",
+      "given": {
+        "planningEnvelopeHa": 270
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE16",
+      "given": {
+        "planningEnvelopeHa": 350
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE17",
+      "given": {
+        "waterIncludedInLandHa": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE18",
+      "given": {
+        "densityResidents": 15000,
+        "mixedFabricHa": 110
+      },
+      "expect": {
+        "grossPerHaApprox": 136.36
+      }
+    },
+    {
+      "id": "SCALE19",
+      "given": {
+        "grossResidentDensityPerHa": 100
+      },
+      "expect": {
+        "withinBand": true
+      }
+    },
+    {
+      "id": "SCALE20",
+      "given": {
+        "grossResidentDensityPerHa": 180
+      },
+      "expect": {
+        "withinBand": true
+      }
+    },
+    {
+      "id": "SCALE21",
+      "given": {
+        "grossResidentDensityPerHa": 250
+      },
+      "expect": {
+        "withinBand": false
+      }
+    },
+    {
+      "id": "SCALE22",
+      "given": {
+        "densityUniformAcrossCity": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE23",
+      "given": {
+        "dominantAxisKm": 2.3
+      },
+      "expect": {
+        "withinControl": true
+      }
+    },
+    {
+      "id": "SCALE24",
+      "given": {
+        "dominantAxisKm": 2.6
+      },
+      "expect": {
+        "withinControl": true
+      }
+    },
+    {
+      "id": "SCALE25",
+      "given": {
+        "dominantAxisKm": 4
+      },
+      "expect": {
+        "withinControl": false
+      }
+    },
+    {
+      "id": "SCALE26",
+      "given": {
+        "transverseAxisKm": 1.3
+      },
+      "expect": {
+        "withinControl": true
+      }
+    },
+    {
+      "id": "SCALE27",
+      "given": {
+        "transverseAxisKm": 1.6
+      },
+      "expect": {
+        "withinControl": true
+      }
+    },
+    {
+      "id": "SCALE28",
+      "given": {
+        "boundingShape": "rectangle"
+      },
+      "expect": {
+        "required": false
+      }
+    },
+    {
+      "id": "SCALE29",
+      "given": {
+        "localWalkingMinutes": 10
+      },
+      "expect": {
+        "compatible": true
+      }
+    },
+    {
+      "id": "SCALE30",
+      "given": {
+        "extremeWalkingMinutes": 35
+      },
+      "expect": {
+        "compatible": true
+      }
+    },
+    {
+      "id": "SCALE31",
+      "given": {
+        "extremeWalkingMinutes": 90
+      },
+      "expect": {
+        "compatible": false
+      }
+    },
+    {
+      "id": "SCALE32",
+      "given": {
+        "T08LandHa": 32
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE33",
+      "given": {
+        "T08LandHa": 36
+      },
+      "expect": {
+        "target": true
+      }
+    },
+    {
+      "id": "SCALE34",
+      "given": {
+        "T08LandHa": 42
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE35",
+      "given": {
+        "T08LandHa": 15
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE36",
+      "given": {
+        "T08WaterfrontM": 850
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE37",
+      "given": {
+        "T08WaterfrontM": 1050
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE38",
+      "given": {
+        "T08WaterAreaCountedAsLand": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE39",
+      "given": {
+        "T07LandHa": 16
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE40",
+      "given": {
+        "T07LandHa": 18
+      },
+      "expect": {
+        "target": true
+      }
+    },
+    {
+      "id": "SCALE41",
+      "given": {
+        "T07LandHa": 22
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE42",
+      "given": {
+        "T07LandHa": 8
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE43",
+      "given": {
+        "T07WaterfrontM": 450
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE44",
+      "given": {
+        "T07WaterfrontM": 650
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE45",
+      "given": {
+        "T01LandHa": 5
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE46",
+      "given": {
+        "T01LandHa": 8
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE47",
+      "given": {
+        "T01RiverFrontageM": 300
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE48",
+      "given": {
+        "T01RiverFrontageM": 450
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE49",
+      "given": {
+        "T12LandHa": 13
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE50",
+      "given": {
+        "T12LandHa": 15
+      },
+      "expect": {
+        "target": true
+      }
+    },
+    {
+      "id": "SCALE51",
+      "given": {
+        "T12LandHa": 18
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE52",
+      "given": {
+        "T12LandHa": 5
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE53",
+      "given": {
+        "T10EnvelopeHa": 30
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE54",
+      "given": {
+        "T10EnvelopeHa": 45
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE55",
+      "given": {
+        "T10FullyBuilt": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE56",
+      "given": {
+        "growthReserveHa": 25
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE57",
+      "given": {
+        "growthReserveHa": 35
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE58",
+      "given": {
+        "growthReservePurpose": "future_unknown_palace"
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE59",
+      "given": {
+        "growthReservePurpose": "ordinary_growth"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCALE60",
+      "given": {
+        "T11ClosedAreaRequired": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE61",
+      "given": {
+        "T09IndependentIsolatedDistrictArea": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE62",
+      "given": {
+        "monumentalEmptySquaresUsedToFillArea": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE63",
+      "given": {
+        "highRiseUsedToCompensateSmallFootprint": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE64",
+      "given": {
+        "continuousHousingAcross250Ha": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE65",
+      "given": {
+        "T08FeelsLikeSmallDock": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE66",
+      "given": {
+        "T12FeelsLikeBackyard": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE67",
+      "given": {
+        "riverGeometryFixedInPoint2": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE68",
+      "given": {
+        "streetWidthsFixedInPoint2": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCALE69",
+      "given": {
+        "nextPoint": 3
+      },
+      "expect": {
+        "topic": "metric_geography"
+      }
+    },
+    {
+      "id": "SCALE70",
+      "given": {
+        "marker": "TRESKAL_METRIC_PLAN_POINT_2_SCALE_FOOTPRINT_CLOSED"
+      },
+      "expect": {
+        "point2Closed": true
+      }
+    }
+  ],
+  "marker": "TRESKAL_METRIC_PLAN_POINT_2_SCALE_FOOTPRINT_CLOSED"
+}

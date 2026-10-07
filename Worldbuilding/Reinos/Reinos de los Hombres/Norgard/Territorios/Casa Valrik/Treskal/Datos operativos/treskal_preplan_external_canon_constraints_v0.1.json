@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "1.0",
+  "version": "1.1",
   "status": "final_preplan_constraint_set_point_1_closed",
   "purpose": "Freeze every canonical spatial constraint required before Treskal metric planning and certify that no external canon blocker remains.",
-  "planReadiness": "point_1_closed_ready_for_point_2_scale_and_footprint",
+  "planReadiness": "point_2_closed_ready_for_point_3_metric_geography",
   "authorInputRequiredNow": false,
   "closureMarker": "TRESKAL_METRIC_PLAN_POINT_1_PREPLAN_AUDIT_CLOSED",
   "externalCanonBlockers": [],
@@ -245,14 +245,7 @@
     "exactGeometry": "point_2_and_point_3"
   },
   "openMetricDecisionsByPoint": {
-    "point2": [
-      "urban_width_length",
-      "urban_area",
-      "density",
-      "T08_scale",
-      "T12_scale",
-      "peripheral_reserve"
-    ],
+    "point2": [],
     "point3": [
       "river_geometry",
       "river_width_depth",
@@ -288,6 +281,15 @@
   "decisionClassification": {
     "unresolvedExternalCanonCount": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint2": 0,
-    "remainingOpenItemsAreMetricPlanningWork": true
+    "remainingOpenItemsAreMetricPlanningWork": true,
+    "unresolvedAuthorDecisionsRequiredBeforePoint3": 0
+  },
+  "resolvedMetricScale": {
+    "contract": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
+    "mixedUrbanFabricTargetHa": 110,
+    "functionalUrbanLandTargetHa": 185,
+    "planningEnvelopeTargetHa": 250,
+    "T08TargetHa": 36,
+    "T12TargetHa": 15
   }
 }

@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CANON URBANO EN DESARROLLO — TEJIDO EDIFICADO**
+**CANON URBANO — ESCALA MÉTRICA PUNTO 2 INTEGRADA**
 
 ## Objetivo
 
@@ -409,6 +409,35 @@ Predominan:
 - almacenes.
 
 ---
+
+# 17B. Escala métrica — Punto 2
+
+El tejido urbano mixto principal dispone de:
+
+- banda: **100–120 ha**;
+- objetivo: **110 ha**.
+
+Con el rango de 12.000–18.000 residentes, la densidad bruta compatible en la parte habitada compacta se mueve aproximadamente entre:
+
+**100 y 180 residentes/ha**.
+
+Referencia de diseño:
+
+**15.000 residentes / 110 ha ≈ 136 residentes/ha.**
+
+Esta cifra no se aplica uniformemente:
+
+- T03/T09 concentran más población;
+- T08/T12 casi no aportan residencia civil;
+- T10 permanece baja densidad.
+
+La huella funcional terrestre completa es mayor:
+
+**170–200 ha**, objetivo **185 ha**.
+
+La envolvente de planificación:
+
+**230–270 ha**, objetivo **250 ha**.
 
 # 18. Humedad y clima
 

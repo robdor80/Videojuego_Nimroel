@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "0.6",
+  "version": "0.7",
   "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
@@ -411,12 +411,18 @@
   },
   "unresolvedByDesign": [
     "exact_river_course",
-    "metric_city_plan",
+    "exact_coastline_and_elevation",
+    "exact_floodplain",
+    "exact_main_bridge_geometry_and_material_resolution",
+    "possible_minor_secondary_crossings",
+    "T01_T12_metric_geometry",
+    "S01_S13_exact_sites_and_footprints",
+    "street_level_geometry",
+    "T07_T08_waterfront_internal_geometry",
+    "parcel_and_urban_fabric_geometry",
     "official_district_names",
     "street_names",
     "exact_market_calendar_for_non_daily_specialized_markets",
-    "exact_main_bridge_geometry_and_material_resolution",
-    "possible_minor_secondary_crossings",
     "exact_judicial_complex_architectural_plan",
     "exact_T12_military_precinct_geometry",
     "exact_T08_royal_naval_complex_internal_geometry"
@@ -1146,5 +1152,68 @@
     "remainingGeneralGrowthReserve": true,
     "rule": "T12 resolves known military footprint while ordinary peripheral growth capacity remains available for future needs"
   },
-  "prePlanExternalCanonStatus": "complete_military_royal_naval_fiscal_and_penal_framework_resolved"
+  "prePlanExternalCanonStatus": "complete_military_royal_naval_fiscal_and_penal_framework_resolved",
+  "metricScale": {
+    "status": "point_2_closed",
+    "contract": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
+    "residentReference": 15000,
+    "mixedUrbanFabricHa": {
+      "range": [
+        100,
+        120
+      ],
+      "target": 110
+    },
+    "functionalUrbanLandHa": {
+      "range": [
+        170,
+        200
+      ],
+      "target": 185
+    },
+    "planningLandEnvelopeHa": {
+      "range": [
+        230,
+        270
+      ],
+      "target": 250
+    },
+    "controlDimensionsKm": {
+      "dominant": [
+        2.3,
+        2.6
+      ],
+      "transverse": [
+        1.3,
+        1.6
+      ]
+    },
+    "keyReservationsHa": {
+      "T08": [
+        32,
+        42
+      ],
+      "T07": [
+        16,
+        22
+      ],
+      "T01": [
+        5,
+        8
+      ],
+      "T12": [
+        13,
+        18
+      ],
+      "T10": [
+        30,
+        45
+      ],
+      "growthReserve": [
+        25,
+        35
+      ]
+    },
+    "waterSurfaceExcludedFromLandFootprints": true
+  }
 }

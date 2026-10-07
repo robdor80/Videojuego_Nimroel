@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_scale_footprint_contract",
+  "version": "0.1",
+  "status": "point_2_closed_static_validated",
+  "scope": "Treskal_metric_plan_scale_and_land_footprint",
+  "source": "../08_Cartografia/escala_huella_urbana_treskal_v0.1.md",
+  "closureMarker": "TRESKAL_METRIC_PLAN_POINT_2_SCALE_FOOTPRINT_CLOSED",
+  "population": {
+    "canonicalResidentRange": [
+      12000,
+      18000
+    ],
+    "designReferenceResidents": 15000,
+    "transientPopulationSeparate": true
+  },
+  "footprints": {
+    "mixedUrbanFabric": {
+      "rangeHa": [
+        100,
+        120
+      ],
+      "designTargetHa": 110,
+      "meaning": "principal_mixed_residential_commercial_productive_fabric"
+    },
+    "functionalUrbanLand": {
+      "rangeHa": [
+        170,
+        200
+      ],
+      "designTargetHa": 185,
+      "excludes": [
+        "river_surface",
+        "sea_surface",
+        "distant_regional_routes"
+      ]
+    },
+    "planningLandEnvelope": {
+      "rangeHa": [
+        230,
+        270
+      ],
+      "designTargetHa": 250,
+      "includes": [
+        "functional_urban_land",
+        "T10_T11_transition",
+        "ordinary_growth_reserve"
+      ],
+      "excludes": [
+        "river_surface",
+        "sea_surface",
+        "open_rural_land_beyond_urban_edge"
+      ]
+    }
+  },
+  "density": {
+    "mixedFabricGrossResidentDensityBandPerHa": [
+      100,
+      180
+    ],
+    "designReferenceAt15000ResidentsAnd110Ha": 136.36,
+    "uniformDensityForbidden": true
+  },
+  "controlDimensions": {
+    "dominantAxisKm": [
+      2.3,
+      2.6
+    ],
+    "transverseAxisKm": [
+      1.3,
+      1.6
+    ],
+    "rectangularBoundary": false,
+    "coastlineAndRiverMayReduceOccupiedFraction": true
+  },
+  "walkingScale": {
+    "planningSpeedKmh": [
+      4,
+      5
+    ],
+    "localTripsMinutes": [
+      5,
+      15
+    ],
+    "coreAdjacentSectorsMinutes": [
+      10,
+      20
+    ],
+    "T03ToT12Minutes": [
+      20,
+      30
+    ],
+    "T03ToOuterT08Minutes": [
+      20,
+      30
+    ],
+    "functionalExtremeToExtremeMinutes": [
+      30,
+      40
+    ]
+  },
+  "spatialReservations": {
+    "T08": {
+      "landRangeHa": [
+        32,
+        42
+      ],
+      "designTargetHa": 36,
+      "functionalWaterfrontM": [
+        850,
+        1050
+      ],
+      "waterAreaExcluded": true,
+      "exactInternalGeometryDeferredToPoint": 7
+    },
+    "T07": {
+      "landRangeHa": [
+        16,
+        22
+      ],
+      "designTargetHa": 18,
+      "civilWaterfrontM": [
+        450,
+        650
+      ],
+      "exactGeometryDeferredToPoint": 7
+    },
+    "T01": {
+      "landRangeHa": [
+        5,
+        8
+      ],
+      "riverOperationalFrontageM": [
+        300,
+        450
+      ],
+      "exactGeometryDeferredToPoint": 3
+    },
+    "T12": {
+      "landRangeHa": [
+        13,
+        18
+      ],
+      "designTargetHa": 15,
+      "includes": [
+        "S11",
+        "S12",
+        "support",
+        "circulation",
+        "light_stabling"
+      ],
+      "exactGeometryDeferredToPoint": 4
+    },
+    "T10": {
+      "envelopeOccupationRangeHa": [
+        30,
+        45
+      ],
+      "fullyBuiltUp": false
+    },
+    "ordinaryGrowthReserve": {
+      "rangeHa": [
+        25,
+        35
+      ],
+      "institutionalReserve": false,
+      "purpose": [
+        "housing",
+        "workshops",
+        "storage",
+        "ordinary_long_term_growth",
+        "compatible_civil_port_growth"
+      ]
+    }
+  },
+  "rules": {
+    "sectorReservationBandsAreNotAdditive": true,
+    "T11IsCorridorNotClosedArea": true,
+    "T09MayOverlapMixedUrbanFabric": true,
+    "waterDoesNotCountAsUrbanLand": true,
+    "noMonumentalEmptySquaresForAreaFilling": true,
+    "noArtificialHighRiseCompression": true,
+    "noContinuousHousingAcrossPlanningEnvelope": true,
+    "T08MustRemainLargeScale": true,
+    "T12MustRemainRealPrecinct": true
+  },
+  "nextPoint": {
+    "id": 3,
+    "name": "metric_geography",
+    "mustResolve": [
+      "river_geometry",
+      "river_width_depth",
+      "coastline",
+      "elevation",
+      "slope",
+      "floodplain",
+      "main_bridge_geometry",
+      "minor_crossings_if_needed"
+    ]
+  }
+}

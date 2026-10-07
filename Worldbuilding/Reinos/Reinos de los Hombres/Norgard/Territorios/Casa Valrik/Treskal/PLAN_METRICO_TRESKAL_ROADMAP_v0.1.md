@@ -37,9 +37,23 @@ Debe fijar:
 
 No coloca todavía cada calle.
 
+Estado: **CERRADO**.
+
+Resultado:
+
+- referencia de diseño: 15.000 residentes;
+- tejido mixto principal: 100–120 ha, objetivo 110 ha;
+- huella funcional terrestre: 170–200 ha, objetivo 185 ha;
+- envolvente terrestre: 230–270 ha, objetivo 250 ha;
+- T08: 32–42 ha, objetivo 36 ha;
+- T12: 13–18 ha, objetivo 15 ha;
+- reserva de crecimiento: 25–35 ha.
+
 ---
 
 ## Punto 3 — Geografía métrica
+
+Estado: **SIGUIENTE / ACTIVO**
 
 Debe fijar:
 
