@@ -1,0 +1,761 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_geography_contract",
+  "version": "0.1",
+  "status": "point_3_closed_static_validated",
+  "scope": "Treskal_metric_plan_geography",
+  "source": "../08_Cartografia/geografia_metrica_treskal_v0.1.md",
+  "closureMarker": "TRESKAL_METRIC_PLAN_POINT_3_GEOGRAPHY_CLOSED",
+  "coordinateReference": {
+    "id": "TRESKAL_LOCAL_METRIC_V1",
+    "units": "metres",
+    "horizontal": {
+      "origin": "river_mouth_thalweg_center_at_mean_coastline",
+      "xPositive": "east",
+      "yPositive": "north"
+    },
+    "vertical": {
+      "datum": "local_mean_sea_design_datum",
+      "z0M": 0,
+      "globalGeodeticClaim": false
+    },
+    "planningControlWindow": {
+      "xMinM": -450,
+      "xMaxM": 2050,
+      "yMinM": -120,
+      "yMaxM": 1380,
+      "dominantAxisM": 2500,
+      "transverseAxisM": 1500,
+      "rectangularUrbanBoundary": false
+    }
+  },
+  "regionalOrientation": {
+    "upstream": "north_northwest",
+    "downstream": "south_southeast",
+    "seaExposure": "south_and_southeast",
+    "primaryUrbanMassBank": "east_bank",
+    "hydrologicalBankName": "left_bank_facing_downstream",
+    "mirroredTwoBankCity": false
+  },
+  "river": {
+    "model": "single_principal_estuarine_channel_through_urban_control_area",
+    "flowDirection": "north_northwest_to_south_southeast",
+    "centerlineChainageOrigin": "mouth",
+    "centerlineLengthWithinControlM": 1424,
+    "centerline": [
+      {
+        "id": "R00",
+        "chainageM": 0,
+        "xM": 0,
+        "yM": 0
+      },
+      {
+        "id": "R01",
+        "chainageM": 164,
+        "xM": -35,
+        "yM": 160
+      },
+      {
+        "id": "R02",
+        "chainageM": 340,
+        "xM": -80,
+        "yM": 330
+      },
+      {
+        "id": "R03",
+        "chainageM": 525,
+        "xM": -125,
+        "yM": 510
+      },
+      {
+        "id": "R04",
+        "chainageM": 706,
+        "xM": -145,
+        "yM": 690
+      },
+      {
+        "id": "R05",
+        "chainageM": 886,
+        "xM": -105,
+        "yM": 865
+      },
+      {
+        "id": "R06",
+        "chainageM": 1063,
+        "xM": -155,
+        "yM": 1035
+      },
+      {
+        "id": "R07",
+        "chainageM": 1247,
+        "xM": -225,
+        "yM": 1205
+      },
+      {
+        "id": "R08",
+        "chainageM": 1424,
+        "xM": -250,
+        "yM": 1380
+      }
+    ],
+    "designCrossSections": [
+      {
+        "chainageM": 0,
+        "normalWaterWidthM": 100,
+        "bankfullWidthM": 118,
+        "normalThalwegDepthM": 4.5
+      },
+      {
+        "chainageM": 200,
+        "normalWaterWidthM": 82,
+        "bankfullWidthM": 98,
+        "normalThalwegDepthM": 4
+      },
+      {
+        "chainageM": 400,
+        "normalWaterWidthM": 72,
+        "bankfullWidthM": 88,
+        "normalThalwegDepthM": 3.5
+      },
+      {
+        "chainageM": 600,
+        "normalWaterWidthM": 64,
+        "bankfullWidthM": 80,
+        "normalThalwegDepthM": 3.1
+      },
+      {
+        "chainageM": 850,
+        "normalWaterWidthM": 58,
+        "bankfullWidthM": 72,
+        "normalThalwegDepthM": 2.6
+      },
+      {
+        "chainageM": 1100,
+        "normalWaterWidthM": 54,
+        "bankfullWidthM": 68,
+        "normalThalwegDepthM": 2.2
+      },
+      {
+        "chainageM": 1424,
+        "normalWaterWidthM": 50,
+        "bankfullWidthM": 64,
+        "normalThalwegDepthM": 1.9
+      }
+    ],
+    "waterSurfaceReference": {
+      "ordinaryHighWaterZM": [
+        {
+          "chainageM": 0,
+          "zM": 0.9
+        },
+        {
+          "chainageM": 820,
+          "zM": 1.6
+        },
+        {
+          "chainageM": 1424,
+          "zM": 2
+        }
+      ],
+      "designFloodSurfaceZM": [
+        {
+          "chainageM": 0,
+          "zM": 3.2
+        },
+        {
+          "chainageM": 820,
+          "zM": 3.9
+        },
+        {
+          "chainageM": 1424,
+          "zM": 4.4
+        }
+      ],
+      "probabilisticReturnPeriodClaim": false
+    },
+    "navigation": {
+      "routineCommercialDestination": "T01",
+      "T01SuitableFor": "small_merchant_river_craft_and_river_fishing_craft",
+      "majorOceanGoingTrafficUpstream": false,
+      "smallShallowCraftMayPassMainBridge": true,
+      "navigationPastBridgeConditionalOn": "beam_draft_air_draft_and_water_level",
+      "navigationClosedAtDesignFlood": true
+    },
+    "mouth": {
+      "type": "single_principal_estuarine_mouth",
+      "center": {
+        "xM": 0,
+        "yM": 0
+      },
+      "westBankMouth": {
+        "xM": -45,
+        "yM": -20
+      },
+      "eastBankMouth": {
+        "xM": 45,
+        "yM": 20
+      },
+      "openingApproxM": 100,
+      "normalThalwegDepthM": 4.5,
+      "permanentIslandInsideUrbanMouth": false,
+      "urbanDelta": false
+    }
+  },
+  "coastline": {
+    "morphology": "low_working_coast_with_gentle_estuarine_bend_and_eastward_rising_ENE_shoreline",
+    "cliffsOnOperationalFront": false,
+    "westOfMouthControlPolyline": [
+      {
+        "id": "CW0",
+        "xM": -450,
+        "yM": -90
+      },
+      {
+        "id": "CW1",
+        "xM": -280,
+        "yM": -65
+      },
+      {
+        "id": "CW2",
+        "xM": -150,
+        "yM": -40
+      },
+      {
+        "id": "CW3",
+        "xM": -45,
+        "yM": -20
+      }
+    ],
+    "eastOfMouthControlPolyline": [
+      {
+        "id": "CE0",
+        "chainageM": 0,
+        "xM": 45,
+        "yM": 20
+      },
+      {
+        "id": "CE1",
+        "chainageM": 178,
+        "xM": 220,
+        "yM": 50
+      },
+      {
+        "id": "CE2",
+        "chainageM": 383,
+        "xM": 420,
+        "yM": 95
+      },
+      {
+        "id": "CE3",
+        "chainageM": 575,
+        "xM": 610,
+        "yM": 120
+      },
+      {
+        "id": "CE4",
+        "chainageM": 731,
+        "xM": 760,
+        "yM": 165
+      },
+      {
+        "id": "CE5",
+        "chainageM": 874,
+        "xM": 900,
+        "yM": 190
+      },
+      {
+        "id": "CE6",
+        "chainageM": 1064,
+        "xM": 1090,
+        "yM": 185
+      },
+      {
+        "id": "CE7",
+        "chainageM": 1257,
+        "xM": 1280,
+        "yM": 220
+      },
+      {
+        "id": "CE8",
+        "chainageM": 1459,
+        "xM": 1480,
+        "yM": 250
+      },
+      {
+        "id": "CE9",
+        "chainageM": 1682,
+        "xM": 1700,
+        "yM": 285
+      },
+      {
+        "id": "CE10",
+        "chainageM": 1874,
+        "xM": 1890,
+        "yM": 315
+      },
+      {
+        "id": "CE11",
+        "chainageM": 2036,
+        "xM": 2050,
+        "yM": 340
+      }
+    ],
+    "eastShorelineLengthWithinControlM": 2036,
+    "bathymetry": {
+      "civilReach": {
+        "shorelineChainageM": [
+          80,
+          620
+        ],
+        "minus3mContourOffshoreM": [
+          70,
+          110
+        ],
+        "minus5mContourOffshoreM": [
+          150,
+          220
+        ],
+        "character": "sheltered_to_moderately_sheltered"
+      },
+      "navalReach": {
+        "shorelineChainageM": [
+          880,
+          1820
+        ],
+        "minus4mContourOffshoreM": [
+          60,
+          90
+        ],
+        "minus6mContourOffshoreM": [
+          120,
+          170
+        ],
+        "character": "deeper_and_more_open_than_civil_reach"
+      },
+      "exactDockAndBreakwaterGeometryDeferredToPoint": 7
+    }
+  },
+  "topography": {
+    "elevationBands": [
+      {
+        "id": "Z0",
+        "name": "active_water_edge",
+        "zM": [
+          1.5,
+          3.5
+        ],
+        "uses": "quays_working_edges_flood_tolerant_activity"
+      },
+      {
+        "id": "Z1",
+        "name": "lower_working_terrace",
+        "zM": [
+          3.5,
+          6
+        ],
+        "uses": "port_support_yards_lower_river_work"
+      },
+      {
+        "id": "Z2",
+        "name": "main_urban_terrace",
+        "zM": [
+          6,
+          16
+        ],
+        "uses": "principal_mixed_urban_fabric_and_institutions"
+      },
+      {
+        "id": "Z3",
+        "name": "inland_upper_terrace",
+        "zM": [
+          16,
+          30
+        ],
+        "uses": "north_and_northeast_interior_edge"
+      },
+      {
+        "id": "Z4",
+        "name": "high_fringe",
+        "zM": [
+          30,
+          42
+        ],
+        "uses": "limited_outer_high_ground_not_dominant_urban_fabric"
+      }
+    ],
+    "controlElevationPoints": [
+      {
+        "id": "E01",
+        "xM": 90,
+        "yM": 180,
+        "zM": 3.8
+      },
+      {
+        "id": "E02",
+        "xM": 30,
+        "yM": 420,
+        "zM": 4.5
+      },
+      {
+        "id": "E03",
+        "xM": -70,
+        "yM": 790,
+        "zM": 7
+      },
+      {
+        "id": "E04",
+        "xM": 350,
+        "yM": 700,
+        "zM": 9.5
+      },
+      {
+        "id": "E05",
+        "xM": 520,
+        "yM": 960,
+        "zM": 14
+      },
+      {
+        "id": "E06",
+        "xM": 900,
+        "yM": 1200,
+        "zM": 24
+      },
+      {
+        "id": "E07",
+        "xM": 1250,
+        "yM": 1150,
+        "zM": 27
+      },
+      {
+        "id": "E08",
+        "xM": 1350,
+        "yM": 520,
+        "zM": 10
+      },
+      {
+        "id": "E09",
+        "xM": 1850,
+        "yM": 700,
+        "zM": 15
+      },
+      {
+        "id": "E10",
+        "xM": -250,
+        "yM": 500,
+        "zM": 2.5
+      },
+      {
+        "id": "E11",
+        "xM": -320,
+        "yM": 1200,
+        "zM": 4.5
+      }
+    ],
+    "slopeRules": {
+      "quayAndWorkingApronsPct": [
+        0.5,
+        2
+      ],
+      "mainUrbanTerraceTypicalPct": [
+        1.5,
+        4
+      ],
+      "navalRearBenchToCoastTypicalPct": [
+        1.5,
+        3
+      ],
+      "northNortheastRiseTypicalPct": [
+        3,
+        6
+      ],
+      "locallyAcceptableNonPrimaryPctMax": 8,
+      "essentialCartRouteForcedAbovePct": 8,
+      "bridgeApproachPctMax": 4.5
+    },
+    "drainage": {
+      "mainUrbanBenchDirection": "south_to_southwest",
+      "navalRearBenchDirection": "south_to_southeast_toward_coast",
+      "naturalSurfaceDrainagePreserved": true,
+      "modernSewerAssumption": false
+    }
+  },
+  "floodRisk": {
+    "classes": [
+      {
+        "id": "F1",
+        "name": "active_low_edge",
+        "meaning": "frequent_or_ordinary_high_water_exposure",
+        "riverRule": {
+          "chainageM": [
+            0,
+            700
+          ],
+          "eastBankBeyondBankEdgeM": 25,
+          "westBankBeyondBankEdgeM": 80,
+          "maxGroundZM": 3
+        },
+        "coastRule": {
+          "eastCoastChainageM": [
+            0,
+            650
+          ],
+          "landwardDistanceM": 25,
+          "maxGroundZM": 2.8
+        },
+        "permanentSensitiveBuildingAllowed": false
+      },
+      {
+        "id": "F2",
+        "name": "exceptional_floodplain",
+        "meaning": "combined_river_or_coastal_high_water_design_exposure",
+        "riverRule": {
+          "chainageM": [
+            0,
+            900
+          ],
+          "eastBankBeyondBankEdgeM": 80,
+          "westBankBeyondBankEdgeM": 180,
+          "maxGroundZM": 4.8
+        },
+        "civilCoastRule": {
+          "eastCoastChainageM": [
+            0,
+            850
+          ],
+          "landwardDistanceM": 90,
+          "maxGroundZM": 4.5
+        },
+        "navalCoastRule": {
+          "eastCoastChainageM": [
+            880,
+            1820
+          ],
+          "landwardDistanceM": 50,
+          "maxGroundZM": 4.2
+        },
+        "criticalInstitutionAllowed": false
+      },
+      {
+        "id": "F3",
+        "name": "safe_urban_terrace",
+        "meaning": "preferred_for_critical_civic_and_military_functions",
+        "minGroundZM": 6,
+        "mustAlsoBeOutside": "F2"
+      }
+    ],
+    "mandatoryPlacements": {
+      "T06_and_S03_S04_S05": "F3",
+      "T12_and_S11_S12": "F3",
+      "T05_preferred": "F3",
+      "T01_waterfront": "F1_F2_working_edge_allowed_rear_support_above_low_edge",
+      "T07_waterfront": "F1_F2_working_edge_allowed_sensitive_storage_rearward",
+      "T08_waterfront": "F1_F2_slipway_berthing_edge_allowed_command_and_critical_storage_on_F3_or_equivalent_rear_bench"
+    }
+  },
+  "bridge": {
+    "canonicalName": "Puente de los Gemelos",
+    "count": 1,
+    "permanent": true,
+    "fortifiedByDefault": false,
+    "centerlineChainageMFromMouth": 820,
+    "center": {
+      "xM": -120,
+      "yM": 801
+    },
+    "axisBearingDegFromTrueNorthApprox": 103,
+    "westAbutment": {
+      "xM": -158,
+      "yM": 810,
+      "zDeckM": 7
+    },
+    "eastAbutment": {
+      "xM": -82,
+      "yM": 792,
+      "zDeckM": 7
+    },
+    "structuralLengthM": 78,
+    "clearDeckWidthM": 6.2,
+    "overallDeckWidthM": 7.2,
+    "deckCrownZM": 7.3,
+    "centralSoffitZM": 6.1,
+    "construction": {
+      "abutments": "stone",
+      "piers": "three_stone_piers_with_cutwaters",
+      "superstructure": "timber",
+      "deck": "timber_with_replaceable_wearing_surface",
+      "towers": false
+    },
+    "spans": [
+      {
+        "id": "B1",
+        "clearSpanM": 14,
+        "navigablePrimary": false
+      },
+      {
+        "id": "B2",
+        "clearSpanM": 17,
+        "navigablePrimary": true
+      },
+      {
+        "id": "B3",
+        "clearSpanM": 17,
+        "navigablePrimary": true
+      },
+      {
+        "id": "B4",
+        "clearSpanM": 14,
+        "navigablePrimary": false
+      }
+    ],
+    "ordinaryHighWaterClearanceUnderCentralSpansM": 4.5,
+    "designFloodClearanceUnderCentralSpansM": 2.2,
+    "navigationAtDesignFlood": "closed",
+    "approachReserve": {
+      "westM": 85,
+      "eastM": 65,
+      "maxGradientPct": 4.5,
+      "exactRoadAlignmentDeferredToPoint": 6
+    },
+    "positionRelativeToT01": {
+      "T01OperationalFrontageChainageM": [
+        200,
+        580
+      ],
+      "separationFromUpperT01FrontageM": 240,
+      "bridgeUpstreamOfT01": true
+    },
+    "namingOriginInferredFromGeometry": false
+  },
+  "crossings": {
+    "minorPermanentCrossingsRequired": false,
+    "plannedMinorPermanentCrossingCount": 0,
+    "ferryRequiredForUrbanFunction": false,
+    "rationale": "one_bank_city_and_main_bridge_satisfy_required_flows_without_duplicating_cross_river_infrastructure",
+    "reopeningRequiresNewFunctionalNeedOrAuthorCanon": true
+  },
+  "waterSectorRelationship": {
+    "T01": {
+      "location": "east_bank_lower_river",
+      "riverFrontageChainageM": [
+        200,
+        580
+      ],
+      "frontageLengthM": 380,
+      "point2AllowedRangeM": [
+        300,
+        450
+      ],
+      "downstreamDistanceToMouthM": 200,
+      "upstreamDistanceToBridgeM": 240
+    },
+    "T07": {
+      "location": "east_of_mouth_on_sheltered_civil_coast",
+      "eastCoastFrontageChainageM": [
+        80,
+        620
+      ],
+      "frontageLengthM": 540,
+      "point2AllowedRangeM": [
+        450,
+        650
+      ],
+      "approximateFrontageEndpoints": [
+        {
+          "xM": 124,
+          "yM": 34
+        },
+        {
+          "xM": 654,
+          "yM": 133
+        }
+      ]
+    },
+    "T08": {
+      "location": "farther_east_on_deeper_open_coast",
+      "eastCoastFrontageChainageM": [
+        880,
+        1820
+      ],
+      "frontageLengthM": 940,
+      "point2AllowedRangeM": [
+        850,
+        1050
+      ],
+      "approximateFrontageEndpoints": [
+        {
+          "xM": 907,
+          "yM": 190
+        },
+        {
+          "xM": 1837,
+          "yM": 307
+        }
+      ],
+      "directRiverFrontage": false
+    },
+    "T07_T08Separation": {
+      "shorelineChainageM": [
+        620,
+        880
+      ],
+      "shorelineLengthM": 260,
+      "continuousSharedQuay": false,
+      "role": "physical_and_security_separation_shoulder",
+      "exactTerrestrialSectorOwnershipDeferredToPoint": 4
+    },
+    "T01_T07Transition": {
+      "exists": true,
+      "location": "east_mouth_corner_between_lower_river_and_civil_coast",
+      "exactSectorPolygonDeferredToPoint": 4,
+      "exactS07SiteDeferredToPoint": 5
+    }
+  },
+  "geographyRules": {
+    "waterSurfaceExcludedFromPoint2LandAreas": true,
+    "urbanMassMustRemainPredominantlyEastOfRiver": true,
+    "noSecondUrbanCoreAcrossRiver": true,
+    "noMajorNavalTrafficThroughT01": true,
+    "T07AndT08MustNotShareContinuousOpenQuay": true,
+    "sensitiveCivicAndMilitaryFunctionsOutsideF1F2": true,
+    "noCliffForcedOnT07OrT08OperationalFront": true,
+    "point3DoesNotFixSectorPolygons": true,
+    "point3DoesNotFixDockGeometry": true,
+    "point3DoesNotFixStreetNetwork": true
+  },
+  "deferredToLaterPoints": {
+    "point4": [
+      "T01_T12_exact_polygons",
+      "assignment_of_separation_shoulder_land"
+    ],
+    "point5": [
+      "S01_S13_exact_sites_and_footprints"
+    ],
+    "point6": [
+      "street_and_cart_corridor_alignment",
+      "exact_bridge_approach_roads"
+    ],
+    "point7": [
+      "quays",
+      "docks",
+      "breakwaters_if_any",
+      "slipways",
+      "naval_basin_internal_geometry"
+    ],
+    "point8": [
+      "blocks",
+      "parcels",
+      "building_fabric"
+    ]
+  },
+  "nextPoint": {
+    "id": 4,
+    "name": "sector_fit_T01_T12",
+    "mustResolve": [
+      "T01_T12_exact_polygons",
+      "bands",
+      "corridors",
+      "borders",
+      "metric_adjacencies"
+    ]
+  }
+}
