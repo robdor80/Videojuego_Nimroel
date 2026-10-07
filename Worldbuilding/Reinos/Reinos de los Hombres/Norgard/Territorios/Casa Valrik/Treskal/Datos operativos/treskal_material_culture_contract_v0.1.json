@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_material_culture_contract",
+  "version": "0.1",
+  "status": "inherited_Norgard_default",
+  "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_shared_material_culture_default_v0.1.json",
+  "norgardObjectCatalog": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_common_material_object_catalog_v0.1.json",
+  "scope": "Norgard_humans_and_common_objects_in_Treskal",
+  "localOverrides": {
+    "ValrikWoodworkBias": true,
+    "maritimeHumidityAndSaltWear": true,
+    "portAndShipyardEquipmentMayAddSpecializedObjects": true,
+    "localTechLevelDifferent": false
+  },
+  "forbiddenLocalPromotion": [
+    "clock",
+    "industrial_machine",
+    "electricity",
+    "firearm",
+    "modern_plumbing"
+  ],
+  "rules": {
+    "sharedBaseTechnology": true,
+    "localStyleAndMaterialFrequencyMayDiffer": true,
+    "ordinaryObjectsUseCoreOwnershipConditionAndToolSystems": true
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_doors_locks_keys_access_contract",
-  "version": "0.2",
+  "version": "0.3",
   "status": "migrated_to_core_override",
   "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_doors_locks_keys_access_contract_v0.1.json",
   "inheritedNamespaces": [
@@ -16,5 +16,17 @@
     "worldStateMeaningPreserved": true,
     "saveMigrationRequired": false
   },
-  "note": "Treskal inherits Core DOOR semantics; its P access classes remain a local input."
+  "note": "Treskal inherits Core DOOR semantics; its P access classes remain a local input.",
+  "materialCultureIntegration": {
+    "status": "resolved_by_Norgard_point_13",
+    "localMaterialCulture": "Datos operativos/treskal_material_culture_contract_v0.1.json",
+    "simpleMetalLocksExist": true,
+    "everyDoorLocked": false,
+    "alternativeClosures": [
+      "latch",
+      "bar",
+      "bolt",
+      "simple_closure"
+    ]
+  }
 }

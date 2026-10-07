@@ -2,7 +2,7 @@
 
 ## Estado
 
-**CAPA DE DEFAULTS DEL REINO — E1–E16 ACTIVOS**
+**CAPA DE DEFAULTS DEL REINO — E1–E17 ACTIVOS · BLOQUE GENERAL CERRADO**
 
 ## Objetivo
 
@@ -39,7 +39,6 @@ No listos todavía:
 
 - sistema militar final;
 - derecho familiar, matrimonio, tutela y adopción;
-- cultura material común suficientemente cerrada.
 
 Casa Valrik, no Norgard:
 
@@ -122,18 +121,18 @@ Contrato operativo:
 
 **Los candidatos históricos respaldados por canon suficiente han sido extraídos y la capa Casa Valrik ya existe.**
 
-Tras el cierre de los Puntos 5–12, el único gran bloque de Norgard pendiente en `blockedPendingCanon` es la cultura material común.
+Tras el cierre de los Puntos 5–13, `blockedPendingCanon` queda vacío: los grandes defaults generales de Norgard detectados por la auditoría están cerrados.
 
 
 ## Validación de cierre
 
-E1–E16 disponen de canon/default activo y regresión estática en los ámbitos ya cerrados.
+E1–E17 disponen de canon/default activo y regresión estática.
 
 Estado:
 
 **NORGARD_DEFAULTS_STATICALLY_VALIDATED**
 
-Los elementos de `blockedPendingCanon` permanecen deliberadamente sin definir hasta que exista canon suficiente.
+`blockedPendingCanon` está vacío tras el cierre del Punto 13.
 
 
 ### E5 — sistema militar de Norgard
@@ -484,3 +483,38 @@ Default:
 Regresión:
 
 `Validacion/regresion_e16_calendario_norgard_v0.1.md`
+
+
+### E17 — cultura material común
+
+Activo a nivel Reino — **Punto 13 cerrado**:
+
+- base tecnológica preindustrial compartida;
+- madera, piedra, pizarra, hierro/acero seleccionado, cerámica y vidrio limitado;
+- lana, lino, cuero y fibras ordinarias;
+- mobiliario y almacenamiento;
+- cocina, vajilla y recipientes;
+- higiene y jabón simple;
+- iluminación mediante velas, candiles, antorchas y fuego;
+- cerraduras, llaves y herrajes;
+- escritura manual, papel, pergamino y archivos;
+- herramientas manuales;
+- transporte mediante fuerza humana/animal;
+- objetos médicos ordinarios;
+- diferencias sociales/regionales sin saltos tecnológicos;
+- **relojes completamente excluidos**;
+- catálogo inicial de 110 objetos canónicos.
+
+Default:
+
+`Datos operativos/norgard_shared_material_culture_default_v0.1.json`
+
+Catálogo:
+
+`Datos operativos/norgard_common_material_object_catalog_v0.1.json`
+
+Regresión:
+
+`Validacion/regresion_e17_cultura_material_norgard_v0.1.md`
+
+**Con E17 queda cerrado el gran bloque general de Norgard detectado por la auditoría.**

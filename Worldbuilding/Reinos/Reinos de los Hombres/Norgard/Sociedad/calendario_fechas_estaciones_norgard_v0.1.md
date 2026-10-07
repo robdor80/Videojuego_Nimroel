@@ -627,20 +627,19 @@ Nimroel sigue sin dioses.
 
 ---
 
-## 33. Objetos de medición
+## 33. Objetos de medición — resuelto por Punto 13
 
-Punto 12 no fija:
+Punto 13 cierra la cultura material temporal de Norgard:
 
-- relojes mecánicos;
-- relojes de arena;
-- relojes de sol;
-- campanas;
-- almanaques;
-- calendarios físicos.
-
-Eso pertenece a cultura material del Punto 13.
+- **no existen relojes**;
+- no existen relojes de torre, bolsillo o pulsera;
+- relojes de agua o arena no funcionan como sistema civil de hora;
+- no existe una red urbana de relojes de sol;
+- las campanas son señales, no relojes horarios.
 
 El motor puede conocer la hora exacta aunque una persona no disponga de instrumento capaz de medirla.
+
+Los personajes se orientan mediante luz, posición del sol, rutina, comidas, guardias, señales y experiencia.
 
 ---
 

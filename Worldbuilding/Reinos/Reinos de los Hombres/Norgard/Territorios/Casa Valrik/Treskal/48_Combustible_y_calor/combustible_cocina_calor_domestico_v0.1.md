@@ -167,6 +167,22 @@ Un horno activo debe tener combustible real suficiente.
 
 ---
 
+# 9B. Iluminación doméstica — Punto 13
+
+Norgard dispone de:
+
+- velas de sebo;
+- velas de cera de mayor coste;
+- candiles/lámparas simples;
+- antorchas para usos adecuados;
+- fuego del hogar.
+
+La iluminación artificial consume material/combustible y participa en FIRE.
+
+**No existen relojes.**
+
+La hora exacta pertenece al motor TIME, no a un objeto doméstico.
+
 # 10. Tabernas y posadas
 
 Su consumo puede aumentar por:

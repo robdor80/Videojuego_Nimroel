@@ -104,7 +104,8 @@
     "fiscalCustoms": "Datos operativos/treskal_fiscal_customs_profile_v0.1.json",
     "portCustomsFlow": "Datos operativos/treskal_port_customs_flow_contract_v0.1.json",
     "personalNaming": "Datos operativos/treskal_personal_naming_contract_v0.1.json",
-    "timeCalendar": "Datos operativos/treskal_time_calendar_contract_v0.1.json"
+    "timeCalendar": "Datos operativos/treskal_time_calendar_contract_v0.1.json",
+    "materialCulture": "Datos operativos/treskal_material_culture_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -279,7 +280,8 @@
     "conceptionAndAdditionalParentageRules": "future_Nimroel_character_lifecycle_system",
     "namingAndSurnameRules": "resolved_by_Norgard_point_11",
     "fishingEcologySpecies": "future_ecology_profile_species_names_not_required_for_2B",
-    "exactCalendar": "resolved_by_Norgard_point_12"
+    "exactCalendar": "resolved_by_Norgard_point_12",
+    "sharedMaterialCulture": "resolved_by_Norgard_point_13"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",
@@ -918,5 +920,13 @@
     "exactClockAvailable": true,
     "narrativeDaypartsSupported": true,
     "localContract": "Datos operativos/treskal_time_calendar_contract_v0.1.json"
+  },
+  "materialCultureIntegration": {
+    "status": "inherited_Norgard_point_13",
+    "norgardDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_shared_material_culture_default_v0.1.json",
+    "norgardObjectCatalog": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_common_material_object_catalog_v0.1.json",
+    "localContract": "Datos operativos/treskal_material_culture_contract_v0.1.json",
+    "localTechLevelOverride": false,
+    "clocks": false
   }
 }

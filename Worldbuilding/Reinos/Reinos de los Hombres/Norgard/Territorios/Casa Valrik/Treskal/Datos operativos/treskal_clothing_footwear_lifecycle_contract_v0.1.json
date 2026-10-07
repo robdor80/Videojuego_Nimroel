@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_clothing_footwear_lifecycle_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_design_contract",
   "clothingFunctions": {
     "CL01": "workwear",
@@ -61,10 +61,27 @@
     "maintenance"
   ],
   "industrialStandardSizingAssumed": false,
-  "exactTextileMaterials": "external_dependency",
+  "exactTextileMaterials": "resolved_by_Norgard_point_13",
   "externalDependencies": {
-    "textileFibersDyesLeatherAndConstruction": "future_Norgard_material_culture_detail",
-    "inheritanceRules": "Norgard_law_and_economic_institutions",
+    "textileFibersDyesLeatherAndConstruction": "resolved_by_Norgard_point_13",
+    "inheritanceRules": "resolved_by_Norgard_point_8",
     "bodyGrowthAndSizing": "future_Nimroel_character_lifecycle_system"
+  },
+  "materialCultureIntegration": {
+    "status": "resolved_by_Norgard_point_13",
+    "localMaterialCulture": "Datos operativos/treskal_material_culture_contract_v0.1.json",
+    "commonFibers": [
+      "wool",
+      "linen"
+    ],
+    "commonOtherMaterials": [
+      "leather",
+      "hide",
+      "felt_when_compatible"
+    ],
+    "cottonCommon": false,
+    "silkCommon": false,
+    "naturalDyes": true,
+    "exactDyePlantsDeferred": true
   }
 }

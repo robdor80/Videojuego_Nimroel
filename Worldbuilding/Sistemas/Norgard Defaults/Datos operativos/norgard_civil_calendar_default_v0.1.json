@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "norgard_civil_calendar_default",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_realm_default",
   "authorityScope": "Norgard_civil_calendar",
   "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/calendario_fechas_estaciones_norgard_v0.1.md",
@@ -152,7 +152,11 @@
     "religiousWeekdayObligation": false
   },
   "materialCultureDependency": {
-    "clocksAlmanacsBellsSundialsAndPhysicalCalendars": "point_13_shared_material_culture"
+    "status": "resolved_by_point_13",
+    "materialCulture": "Datos operativos/norgard_shared_material_culture_default_v0.1.json",
+    "clocksExist": false,
+    "bellsAreSignalsNotClocks": true,
+    "exactEngineTimeDoesNotImplyCharacterClockAccess": true
   },
   "aiAuthority": {
     "mayUseProvidedDateTime": true,

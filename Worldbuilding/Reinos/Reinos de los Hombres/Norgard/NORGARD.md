@@ -2594,3 +2594,35 @@ No existe fin de semana laboral universal ni se importan festividades terrestres
 Documento:
 
 `Sociedad/calendario_fechas_estaciones_norgard_v0.1.md`
+
+
+---
+
+## Cultura material común — Punto 13
+
+Norgard comparte una base material humana preindustrial.
+
+Elementos comunes:
+
+- madera, piedra, pizarra, hierro y acero seleccionado;
+- cerámica y vidrio limitado;
+- lana, lino, cuero y fibras ordinarias;
+- mobiliario, almacenamiento, vajilla y cocina;
+- jabón simple, recipientes de agua y útiles de aseo;
+- velas, candiles, antorchas y fuego;
+- cerraduras, llaves y herrajes;
+- papel, pergamino, tinta, libros manuscritos y archivos;
+- herramientas manuales de oficio;
+- carros, carretas y fuerza humana/animal.
+
+### Regla tecnológica
+
+**No existen relojes.**
+
+TIME conserva precisión interna para el motor, pero la población utiliza sol, luz, rutinas, comidas, guardias, señales y campanas.
+
+La riqueza cambia calidad, cantidad y acabado, no el nivel tecnológico.
+
+Canon:
+
+`Sociedad/cultura_material_comun_norgard_v0.1.md`

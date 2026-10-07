@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_material_culture_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "caseCount": 85,
+  "cases": [
+    {
+      "id": "MAT13_01",
+      "given": {
+        "requested": "mechanical_clock"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_02",
+      "given": {
+        "requested": "tower_clock"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_03",
+      "given": {
+        "requested": "pocket_watch"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_04",
+      "given": {
+        "requested": "wristwatch"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_05",
+      "given": {
+        "requested": "civil_water_clock"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_06",
+      "given": {
+        "requested": "civil_hourglass_clock"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_07",
+      "given": {
+        "signal": "bell"
+      },
+      "expect": {
+        "allowed": true,
+        "isClock": false
+      }
+    },
+    {
+      "id": "MAT13_08",
+      "given": {
+        "signal": "hourly_bell_schedule"
+      },
+      "expect": {
+        "assumed": false
+      }
+    },
+    {
+      "id": "MAT13_09",
+      "given": {
+        "object": "sundial_network"
+      },
+      "expect": {
+        "commonAssumed": false
+      }
+    },
+    {
+      "id": "MAT13_10",
+      "given": {
+        "material": "wood"
+      },
+      "expect": {
+        "common": true
+      }
+    },
+    {
+      "id": "MAT13_11",
+      "given": {
+        "material": "stone"
+      },
+      "expect": {
+        "common": true
+      }
+    },
+    {
+      "id": "MAT13_12",
+      "given": {
+        "material": "slate",
+        "supplyExists": true
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_13",
+      "given": {
+        "material": "iron"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_14",
+      "given": {
+        "material": "steel",
+        "use": "tool_edge"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_15",
+      "given": {
+        "material": "steel",
+        "use": "all_household_objects"
+      },
+      "expect": {
+        "cheapUniversal": false
+      }
+    },
+    {
+      "id": "MAT13_16",
+      "given": {
+        "material": "glass",
+        "household": "ordinary"
+      },
+      "expect": {
+        "omnipresent": false
+      }
+    },
+    {
+      "id": "MAT13_17",
+      "given": {
+        "object": "large_modern_glass_window"
+      },
+      "expect": {
+        "common": false
+      }
+    },
+    {
+      "id": "MAT13_18",
+      "given": {
+        "textile": "wool"
+      },
+      "expect": {
+        "common": true
+      }
+    },
+    {
+      "id": "MAT13_19",
+      "given": {
+        "textile": "linen"
+      },
+      "expect": {
+        "common": true
+      }
+    },
+    {
+      "id": "MAT13_20",
+      "given": {
+        "textile": "leather"
+      },
+      "expect": {
+        "common": true
+      }
+    },
+    {
+      "id": "MAT13_21",
+      "given": {
+        "textile": "cotton"
+      },
+      "expect": {
+        "commonDefault": false
+      }
+    },
+    {
+      "id": "MAT13_22",
+      "given": {
+        "textile": "silk"
+      },
+      "expect": {
+        "commonDefault": false
+      }
+    },
+    {
+      "id": "MAT13_23",
+      "given": {
+        "clothing": "optical_white"
+      },
+      "expect": {
+        "ordinaryDefault": false
+      }
+    },
+    {
+      "id": "MAT13_24",
+      "given": {
+        "clothingSizing": "industrial_standard"
+      },
+      "expect": {
+        "assumed": false
+      }
+    },
+    {
+      "id": "MAT13_25",
+      "given": {
+        "household": "humble"
+      },
+      "expect": {
+        "mustBeDirty": false,
+        "mustBeBroken": false
+      }
+    },
+    {
+      "id": "MAT13_26",
+      "given": {
+        "wealth": "high"
+      },
+      "expect": {
+        "modernTechnologyUnlocked": false
+      }
+    },
+    {
+      "id": "MAT13_27",
+      "given": {
+        "object": "sprung_mattress"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_28",
+      "given": {
+        "object": "wooden_chest"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_29",
+      "given": {
+        "door": "ordinary_humble"
+      },
+      "expect": {
+        "metalLockRequired": false
+      }
+    },
+    {
+      "id": "MAT13_30",
+      "given": {
+        "closure": "wooden_bar"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_31",
+      "given": {
+        "keyPossession": true
+      },
+      "expect": {
+        "ownershipGranted": false,
+        "permissionGranted": false
+      }
+    },
+    {
+      "id": "MAT13_32",
+      "given": {
+        "object": "ceramic_pot"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_33",
+      "given": {
+        "object": "iron_pan"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_34",
+      "given": {
+        "object": "full_modern_cutlery_set"
+      },
+      "expect": {
+        "assumed": false
+      }
+    },
+    {
+      "id": "MAT13_35",
+      "given": {
+        "object": "personal_knife_at_table"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_36",
+      "given": {
+        "object": "simple_soap"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_37",
+      "given": {
+        "object": "modern_detergent"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_38",
+      "given": {
+        "object": "perfumed_soap",
+        "wealth": "poor"
+      },
+      "expect": {
+        "universalCheap": false
+      }
+    },
+    {
+      "id": "MAT13_39",
+      "given": {
+        "object": "small_polished_metal_mirror"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_40",
+      "given": {
+        "object": "large_modern_mirror"
+      },
+      "expect": {
+        "common": false
+      }
+    },
+    {
+      "id": "MAT13_41",
+      "given": {
+        "lighting": "tallow_candle"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_42",
+      "given": {
+        "lighting": "beeswax_candle"
+      },
+      "expect": {
+        "allowed": true,
+        "higherCost": true
+      }
+    },
+    {
+      "id": "MAT13_43",
+      "given": {
+        "lighting": "electric_lamp"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_44",
+      "given": {
+        "lighting": "torch",
+        "context": "bedroom_all_evening"
+      },
+      "expect": {
+        "defaultPreferred": false
+      }
+    },
+    {
+      "id": "MAT13_45",
+      "given": {
+        "openFlame": true
+      },
+      "expect": {
+        "fireRisk": true
+      }
+    },
+    {
+      "id": "MAT13_46",
+      "given": {
+        "writingSupport": "parchment"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_47",
+      "given": {
+        "writingSupport": "paper"
+      },
+      "expect": {
+        "allowed": true,
+        "freeDisposable": false
+      }
+    },
+    {
+      "id": "MAT13_48",
+      "given": {
+        "writingTool": "ballpoint_pen"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_49",
+      "given": {
+        "printing": "industrial_press_mass_printing"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_50",
+      "given": {
+        "book": "manuscript"
+      },
+      "expect": {
+        "allowed": true,
+        "copyNeedsLabor": true
+      }
+    },
+    {
+      "id": "MAT13_51",
+      "given": {
+        "archive": true
+      },
+      "expect": {
+        "needsPhysicalStorage": true
+      }
+    },
+    {
+      "id": "MAT13_52",
+      "given": {
+        "documentExists": true
+      },
+      "expect": {
+        "publicKnowledgeAutomatic": false
+      }
+    },
+    {
+      "id": "MAT13_53",
+      "given": {
+        "tool": "hand_saw"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_54",
+      "given": {
+        "tool": "power_saw"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_55",
+      "given": {
+        "farmTool": "plough"
+      },
+      "expect": {
+        "allowed": true,
+        "engineRequired": false
+      }
+    },
+    {
+      "id": "MAT13_56",
+      "given": {
+        "forge": true
+      },
+      "expect": {
+        "fuelRequired": true
+      }
+    },
+    {
+      "id": "MAT13_57",
+      "given": {
+        "textileTool": "spindle"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_58",
+      "given": {
+        "textileTool": "hand_loom"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_59",
+      "given": {
+        "textileTool": "industrial_loom"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_60",
+      "given": {
+        "construction": "simple_pulley"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_61",
+      "given": {
+        "transport": "cart"
+      },
+      "expect": {
+        "allowed": true,
+        "requiresPower": true
+      }
+    },
+    {
+      "id": "MAT13_62",
+      "given": {
+        "transport": "motor_vehicle"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_63",
+      "given": {
+        "medical": "wood_splint"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_64",
+      "given": {
+        "medical": "modern_syringe"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_65",
+      "given": {
+        "medical": "thermometer"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_66",
+      "given": {
+        "medical": "stethoscope"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_67",
+      "given": {
+        "medical": "industrial_sterile_kit"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_68",
+      "given": {
+        "region": "Valrik"
+      },
+      "expect": {
+        "woodworkBias": true,
+        "separateTechLevel": false
+      }
+    },
+    {
+      "id": "MAT13_69",
+      "given": {
+        "region": "Galdren"
+      },
+      "expect": {
+        "agriculturalBias": true,
+        "separateTechLevel": false
+      }
+    },
+    {
+      "id": "MAT13_70",
+      "given": {
+        "region": "Darovan"
+      },
+      "expect": {
+        "importBias": true,
+        "importSpawn": false
+      }
+    },
+    {
+      "id": "MAT13_71",
+      "given": {
+        "region": "Edranor"
+      },
+      "expect": {
+        "wineMaterialBias": true,
+        "separateTechLevel": false
+      }
+    },
+    {
+      "id": "MAT13_72",
+      "given": {
+        "region": "Hallheim"
+      },
+      "expect": {
+        "multiRegionCraftPossible": true,
+        "separateTechLevel": false
+      }
+    },
+    {
+      "id": "MAT13_73",
+      "given": {
+        "catalogItemExists": true
+      },
+      "expect": {
+        "objectSpawnsAutomatically": false
+      }
+    },
+    {
+      "id": "MAT13_74",
+      "given": {
+        "objectOwnedBy": "npcA",
+        "aiDescribesTransfer": true
+      },
+      "expect": {
+        "ownershipChanges": false
+      }
+    },
+    {
+      "id": "MAT13_75",
+      "given": {
+        "toolBroken": true,
+        "sceneReload": true
+      },
+      "expect": {
+        "toolRepairedAutomatically": false
+      }
+    },
+    {
+      "id": "MAT13_76",
+      "given": {
+        "aiAction": "describe_clock_on_wall"
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "MAT13_77",
+      "given": {
+        "aiAction": "describe_existing_canonical_chest"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_78",
+      "given": {
+        "lodReduced": true,
+        "uniqueObjectRelevant": true
+      },
+      "expect": {
+        "identityMayPersist": true
+      }
+    },
+    {
+      "id": "MAT13_79",
+      "given": {
+        "objectPromotedPersistent": true
+      },
+      "expect": {
+        "rerollHistory": false
+      }
+    },
+    {
+      "id": "MAT13_80",
+      "given": {
+        "wealth": "noble"
+      },
+      "expect": {
+        "electricity": false,
+        "clocks": false
+      }
+    },
+    {
+      "id": "MAT13_81",
+      "given": {
+        "household": "poor",
+        "functional_table": true
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_82",
+      "given": {
+        "glass": "small_bottle",
+        "context": "healer"
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_83",
+      "given": {
+        "beeswaxCandle": true,
+        "honeyEconomy": true
+      },
+      "expect": {
+        "allowed": true
+      }
+    },
+    {
+      "id": "MAT13_84",
+      "given": {
+        "campBell": true
+      },
+      "expect": {
+        "canSignal": true,
+        "canTellExactHourAutomatically": false
+      }
+    },
+    {
+      "id": "MAT13_85",
+      "given": {
+        "exactTimeKnownByEngine": true,
+        "characterHasNoClock": true
+      },
+      "expect": {
+        "compatible": true
+      }
+    }
+  ],
+  "marker": "MATERIAL_CULTURE_POINT_13_CLOSED_NORGARD_SHARED_MATERIAL_CULTURE"
+}

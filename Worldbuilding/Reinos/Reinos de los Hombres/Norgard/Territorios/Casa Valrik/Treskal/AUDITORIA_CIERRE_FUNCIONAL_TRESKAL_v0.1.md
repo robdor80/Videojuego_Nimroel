@@ -307,7 +307,7 @@ Sí significa:
 
 ---
 
-### Actualización posterior — Puntos 1–12 de Norgard
+### Actualización posterior — Puntos 1–13 de Norgard
 
 Varias dependencias que esta auditoría dejó correctamente fuera de Treskal ya han sido resueltas a nivel superior:
 
@@ -395,3 +395,21 @@ Punto 12 resuelve además las antiguas dependencias locales de:
 - timestamps de World State.
 
 Treskal no necesita calendario local diferente.
+
+
+Punto 13 resuelve además las antiguas dependencias locales de:
+
+- fibras textiles;
+- materiales de lavado;
+- herramientas/materiales comunes;
+- cerraduras/herrajes;
+- iluminación;
+- mobiliario;
+- escritura;
+- vajilla;
+- objetos sanitarios;
+- cultura material temporal.
+
+Treskal hereda esta base desde Norgard y no crea nivel tecnológico propio.
+
+Regla autoral preservada: **relojes fuera**.

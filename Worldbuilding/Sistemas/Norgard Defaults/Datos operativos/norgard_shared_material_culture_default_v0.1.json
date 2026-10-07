@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_shared_material_culture_default",
+  "version": "0.1",
+  "status": "active_realm_default",
+  "authorityScope": "Norgard_shared_material_culture",
+  "canonicalSource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/cultura_material_comun_norgard_v0.1.md",
+  "objectCatalog": "Datos operativos/norgard_common_material_object_catalog_v0.1.json",
+  "technologyLevel": {
+    "preindustrial": true,
+    "electricity": false,
+    "combustionEngine": false,
+    "steamIndustry": false,
+    "factoryMechanization": false,
+    "industrialMassProduction": false,
+    "industrialInterchangeableParts": false,
+    "modernPipedDomesticWater": false,
+    "clocks": false
+  },
+  "commonMaterials": {
+    "structural": [
+      "wood",
+      "stone",
+      "slate_when_supplied"
+    ],
+    "metals": [
+      "iron",
+      "steel_for_selected_edges_or_strength",
+      "copper_and_compatible_alloys_limited"
+    ],
+    "containers": [
+      "ceramic",
+      "wood",
+      "glass_limited"
+    ],
+    "textiles": [
+      "wool",
+      "linen",
+      "leather",
+      "hide",
+      "felt_when_compatible",
+      "coarse_plant_fiber"
+    ],
+    "rope": [
+      "plant_fiber"
+    ],
+    "writing": [
+      "parchment",
+      "paper",
+      "ink",
+      "sealing_wax"
+    ]
+  },
+  "notCommonDefaults": [
+    "cotton",
+    "silk",
+    "large_modern_glass_windows",
+    "cheap_universal_steel",
+    "modern_springs",
+    "modern_detergent",
+    "industrial_disinfectant",
+    "mechanical_clock",
+    "tower_clock",
+    "pocket_watch",
+    "wristwatch",
+    "civil_water_clock",
+    "civil_hourglass_clock"
+  ],
+  "clothing": {
+    "commonFibers": [
+      "wool",
+      "linen"
+    ],
+    "leatherCommon": true,
+    "furAndHidePossible": true,
+    "cottonCommon": false,
+    "silkCommon": false,
+    "industrialSizing": false,
+    "naturalDyes": true,
+    "exactDyePlantsDeferred": true,
+    "opticalModernWhite": false
+  },
+  "household": {
+    "furniturePossible": [
+      "bed_or_sleeping_frame",
+      "mattress_or_pallet",
+      "blanket",
+      "table",
+      "bench",
+      "stool",
+      "chair",
+      "chest",
+      "coffer",
+      "shelf",
+      "peg"
+    ],
+    "storagePossible": [
+      "chest",
+      "coffer",
+      "box",
+      "sack",
+      "basket",
+      "barrel",
+      "cask",
+      "jar",
+      "shelf",
+      "hook"
+    ],
+    "modernSprungMattress": false
+  },
+  "kitchen": {
+    "implements": [
+      "pot",
+      "cauldron",
+      "pan",
+      "knife",
+      "spoon",
+      "ladle",
+      "mortar",
+      "pestle",
+      "board",
+      "bowl",
+      "jug",
+      "simple_strainer",
+      "tongs_or_hooks"
+    ],
+    "materials": [
+      "ceramic",
+      "wood",
+      "iron",
+      "copper_or_alloy_when_available"
+    ],
+    "fullModernCutlerySetAssumed": false
+  },
+  "hygiene": {
+    "commonObjects": [
+      "bucket",
+      "jug",
+      "basin",
+      "tub",
+      "cloth",
+      "comb",
+      "brush",
+      "simple_soap"
+    ],
+    "simpleSoapExists": true,
+    "simpleSoapBasis": "compatible_fat_or_oil_plus_alkali",
+    "perfumedSoapUniversal": false,
+    "modernDetergent": false,
+    "mirrorOptions": [
+      "polished_metal",
+      "costlier_reflective_glass"
+    ]
+  },
+  "lighting": {
+    "daylightPrimary": true,
+    "allowed": [
+      "tallow_candle",
+      "beeswax_candle",
+      "simple_lamp_or_candil",
+      "torch",
+      "hearth_fire"
+    ],
+    "freeArtificialLight": false,
+    "tallowCandleOrdinary": true,
+    "beeswaxCandleHigherCost": true,
+    "fireRiskIntegration": true
+  },
+  "accessHardware": {
+    "simpleMetalLocksExist": true,
+    "everyDoorHasLock": false,
+    "alternatives": [
+      "latch",
+      "bar",
+      "bolt",
+      "simple_closure"
+    ],
+    "compatibleWithCoreDOOR": true
+  },
+  "writing": {
+    "parchment": true,
+    "paper": true,
+    "paperFreeOrDisposable": false,
+    "manuscriptBooks": true,
+    "accountBooks": true,
+    "lettersContractsRegistersMaps": true,
+    "industrialPrinting": false,
+    "writingImplements": [
+      "quill",
+      "ink",
+      "small_knife",
+      "rule",
+      "cord_or_ribbon",
+      "seal",
+      "sealing_wax"
+    ]
+  },
+  "timeSignals": {
+    "clocks": false,
+    "mechanicalClocks": false,
+    "towerClocks": false,
+    "pocketWatches": false,
+    "wristWatches": false,
+    "civilWaterClocks": false,
+    "civilHourglassClocks": false,
+    "commonSundialNetwork": false,
+    "permittedOrientation": [
+      "sun_position",
+      "light",
+      "routine",
+      "meals",
+      "guard_changes",
+      "institutional_signals",
+      "bells",
+      "experience"
+    ],
+    "bellsAreSignalsNotClocks": true,
+    "hourlyBellScheduleAssumed": false,
+    "hourglassCommon": false
+  },
+  "tools": {
+    "manualTechnology": true,
+    "carpentry": [
+      "axe",
+      "adze",
+      "hand_saw",
+      "chisel",
+      "gouge",
+      "plane",
+      "auger",
+      "mallet",
+      "hammer",
+      "square",
+      "rule",
+      "marking_cord",
+      "work_knife",
+      "whetstone"
+    ],
+    "agriculture": [
+      "hoe",
+      "shovel",
+      "fork",
+      "rake",
+      "sickle",
+      "scythe",
+      "plough",
+      "baskets",
+      "sacks"
+    ],
+    "smithing": [
+      "forge",
+      "anvil",
+      "hammers",
+      "tongs",
+      "files",
+      "punches",
+      "chisels",
+      "bellows",
+      "whetstones"
+    ],
+    "textile": [
+      "spindle",
+      "spinning_wheel",
+      "hand_loom",
+      "needles",
+      "scissors",
+      "thimble",
+      "frames"
+    ],
+    "construction": [
+      "hammer",
+      "mallet",
+      "chisel",
+      "lever",
+      "saw",
+      "axe",
+      "plumb_line",
+      "cord",
+      "rule",
+      "square",
+      "wood_scaffold",
+      "simple_pulley",
+      "wheelbarrow_when_compatible"
+    ]
+  },
+  "transport": {
+    "allowed": [
+      "cart",
+      "wagon",
+      "wheelbarrow",
+      "sledge_when_appropriate",
+      "saddle",
+      "harness",
+      "basket",
+      "sack",
+      "barrel",
+      "box"
+    ],
+    "requiresRealDraftOrHumanPower": true,
+    "requiresMaintenance": true
+  },
+  "medicalMaterial": {
+    "allowedOrdinary": [
+      "cloth",
+      "bandage",
+      "container",
+      "compatible_knife_or_tool",
+      "needle",
+      "thread",
+      "wood_splint",
+      "mortar",
+      "small_bottle"
+    ],
+    "modernSyringe": false,
+    "thermometer": false,
+    "stethoscope": false,
+    "industrialSterileKit": false
+  },
+  "socialVariation": {
+    "wealthChanges": [
+      "quantity",
+      "quality",
+      "finish",
+      "material",
+      "decoration",
+      "specialization",
+      "glass_access",
+      "metal_access",
+      "fine_textiles",
+      "imports",
+      "furniture",
+      "lighting"
+    ],
+    "wealthDoesNotChangeTechnologyEpoch": true,
+    "humbleDoesNotMeanBrokenOrDirty": true
+  },
+  "regionalExpression": {
+    "commonTechnologyBase": true,
+    "Valrik": [
+      "high_quality_woodwork"
+    ],
+    "Galdren": [
+      "agricultural_material_culture_bias"
+    ],
+    "Darovan": [
+      "trade_and_imported_goods_bias"
+    ],
+    "Edranor": [
+      "wine_production_and_service_bias"
+    ],
+    "Aethros_Hallheim": [
+      "multi_region_goods_and_high_craft_concentration"
+    ],
+    "distinctTechLevelsByGreatHouse": false
+  },
+  "coreIntegration": {
+    "ownership": "OWN",
+    "condition": "COND",
+    "tools": "TOOL",
+    "workstation": "WS",
+    "access": "DOOR",
+    "building": "BUILD",
+    "food": "FOOD",
+    "waste": "WASTE",
+    "fire": "FIRE",
+    "time": "TIME"
+  },
+  "aiAuthority": {
+    "mayDescribeCompatibleCanonicalObjects": true,
+    "mayChooseObjectsFromCatalogWhenContextAllows": true,
+    "mayInventTechnology": false,
+    "maySpawnObject": false,
+    "mayIntroduceClock": false,
+    "mayIgnoreOwnershipConditionOrStock": false
+  },
+  "closureMarker": "MATERIAL_CULTURE_POINT_13_CLOSED_NORGARD_SHARED_MATERIAL_CULTURE"
+}

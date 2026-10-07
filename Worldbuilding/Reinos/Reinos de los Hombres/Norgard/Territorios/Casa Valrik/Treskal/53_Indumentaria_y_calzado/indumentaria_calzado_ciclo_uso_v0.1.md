@@ -16,7 +16,7 @@ Definir cómo la ropa y el calzado participan en:
 - compra;
 - sustitución.
 
-Sin fijar todavía un catálogo completo de tejidos, tintes o patronaje.
+Los materiales base quedan resueltos por el Punto 13 de Norgard; patronaje y estética fina siguen siendo una capa visual/local.
 
 ---
 
@@ -68,6 +68,23 @@ Solo cuando contexto y canon lo justifiquen.
 No toda persona posee todas las categorías.
 
 ---
+
+# 2B. Materiales textiles — Punto 13
+
+Treskal hereda de Norgard:
+
+- lana;
+- lino;
+- cuero;
+- piel;
+- fieltro cuando proceda;
+- fibras vegetales bastas para cuerda/sacos.
+
+No se considera algodón un tejido común.
+
+La seda requiere canon comercial específico y no aparece como tejido cotidiano.
+
+Los tintes naturales existen, pero las plantas tintóreas concretas no se inventan hasta disponer de flora canónica.
 
 # 3. Cantidad de prendas
 

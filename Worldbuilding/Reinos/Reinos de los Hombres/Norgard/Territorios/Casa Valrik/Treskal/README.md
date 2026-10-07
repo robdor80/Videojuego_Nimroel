@@ -781,3 +781,31 @@ Treskal utiliza sin override local:
 Los mercados ordinarios siguen siendo diarios, incluido sábado y domingo.
 
 Las frecuencias concretas de futuros mercados especializados pueden definirse sobre este calendario sin crear otro sistema temporal.
+
+
+### Cultura material heredada — Punto 13 de Norgard
+
+Treskal hereda la base tecnológica/material de Norgard:
+
+- materiales comunes;
+- textiles;
+- mobiliario;
+- cocina/vajilla;
+- iluminación;
+- escritura;
+- herramientas;
+- cierres/llaves;
+- transporte menor;
+- objetos sanitarios;
+- catálogo común de 110 objetos.
+
+Sesgos locales:
+
+- excelencia Valrik en madera;
+- humedad y salitre;
+- puerto;
+- Astilleros Reales.
+
+**No existen relojes en Treskal.**
+
+TIME puede conocer la hora exacta; los NPC dependen de sol, luz, rutina, comidas, guardias, señales y campanas.

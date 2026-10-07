@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_tools_workstations_equipment_contract",
-  "version": "0.2",
+  "version": "0.3",
   "status": "migrated_to_core_override",
   "coreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_tools_workstations_equipment_contract_v0.1.json",
   "inheritedNamespaces": [
@@ -14,5 +14,19 @@
     "worldStateMeaningPreserved": true,
     "saveMigrationRequired": false
   },
-  "note": "Treskal inherits Nimroel Core tool, workstation and productive capacity semantics without local exceptions."
+  "note": "Treskal inherits Nimroel Core tool, workstation and productive capacity semantics without local exceptions.",
+  "materialCultureIntegration": {
+    "status": "resolved_by_Norgard_point_13",
+    "localMaterialCulture": "Datos operativos/treskal_material_culture_contract_v0.1.json",
+    "manualToolBaseline": true,
+    "commonMaterials": [
+      "wood",
+      "iron",
+      "selected_steel",
+      "stone",
+      "leather",
+      "rope"
+    ],
+    "industrialMechanization": false
+  }
 }

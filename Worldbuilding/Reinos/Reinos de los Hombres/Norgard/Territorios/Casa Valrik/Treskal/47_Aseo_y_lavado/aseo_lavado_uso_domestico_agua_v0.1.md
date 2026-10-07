@@ -110,6 +110,25 @@ No se fija una microbiología simulada.
 
 ---
 
+# 4B. Materiales de limpieza — Punto 13
+
+Norgard canoniza:
+
+- jabón simple;
+- paños;
+- cepillos;
+- cubos;
+- jarras;
+- palanganas/barreños.
+
+La limpieza puede apoyarse también en:
+
+- agua caliente;
+- ceniza;
+- fricción.
+
+No existen detergentes modernos ni desinfectantes industriales de uso cotidiano.
+
 # 5. Aseo personal
 
 Puede incluir:
@@ -335,7 +354,7 @@ Debe surgir de:
 
 # 18. Enfermedad
 
-La higiene puede influir en situaciones de salud cuando el futuro sistema sanitario lo contemple.
+La higiene puede influir en riesgo y recuperación mediante el sistema sanitario Core ya activo.
 
 Este documento no define:
 

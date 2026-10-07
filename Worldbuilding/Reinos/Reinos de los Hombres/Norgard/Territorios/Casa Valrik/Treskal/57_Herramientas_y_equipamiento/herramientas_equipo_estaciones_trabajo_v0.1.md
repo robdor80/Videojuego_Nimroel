@@ -49,11 +49,26 @@ El canon de madera ya permite herramientas coherentes como:
 - mazos;
 - herramientas de medición y marcado.
 
-Otros oficios usan herramientas compatibles con su tecnología.
+El Punto 13 de Norgard fija ya la base material de herramientas manuales y oficios comunes.
 
 La presencia de herramienta manual no implica mecanización industrial.
 
 ---
+
+# 2B. Materiales y tecnología — Punto 13
+
+La herramienta ordinaria de Treskal se apoya en:
+
+- madera;
+- hierro;
+- acero seleccionado para filos/piezas exigentes;
+- piedra;
+- cuero;
+- cuerda.
+
+No existe mecanización industrial.
+
+La riqueza o importancia del taller puede mejorar calidad, especialización y mantenimiento, no introducir tecnología moderna.
 
 # 3. Función técnica
 

@@ -1,0 +1,1623 @@
+{
+  "schemaVersion": 1,
+  "documentId": "norgard_common_material_object_catalog",
+  "version": "0.1",
+  "status": "active_realm_catalog",
+  "scope": "Norgard_shared_material_culture",
+  "itemCount": 110,
+  "noClockItems": true,
+  "rules": {
+    "itemPresenceRequiresContext": true,
+    "catalogEntryDoesNotSpawnObject": true,
+    "wealthMayChangeQualityNotTechEpoch": true,
+    "exactRegionalStyleMayOverrideAppearanceNotFunction": true,
+    "ownershipConditionAndAccessUseExistingCoreSystems": true,
+    "industrialStandardization": false
+  },
+  "items": [
+    {
+      "id": "MAT001",
+      "name": "mesa de madera",
+      "category": "furniture",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "inn",
+        "workplace"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT002",
+      "name": "banco de madera",
+      "category": "furniture",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "inn",
+        "public"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT003",
+      "name": "taburete",
+      "category": "furniture",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "workplace",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT004",
+      "name": "silla",
+      "category": "furniture",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "institution"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT005",
+      "name": "arcón",
+      "category": "storage",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "household",
+        "institution"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT006",
+      "name": "cofre con cierre",
+      "category": "storage",
+      "materials": [
+        "wood",
+        "iron"
+      ],
+      "contexts": [
+        "household",
+        "institution"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT007",
+      "name": "estante",
+      "category": "furniture",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "shop",
+        "archive"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT008",
+      "name": "clavija o percha",
+      "category": "furniture",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "household",
+        "workplace"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT009",
+      "name": "cama de madera",
+      "category": "furniture",
+      "materials": [
+        "wood",
+        "textile"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT010",
+      "name": "jergón",
+      "category": "bedding",
+      "materials": [
+        "textile",
+        "plant_or_animal_fill"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT011",
+      "name": "manta de lana",
+      "category": "bedding",
+      "materials": [
+        "wool"
+      ],
+      "contexts": [
+        "household",
+        "travel",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT012",
+      "name": "saco",
+      "category": "storage",
+      "materials": [
+        "coarse_plant_fiber"
+      ],
+      "contexts": [
+        "household",
+        "market",
+        "transport"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT013",
+      "name": "cesta",
+      "category": "storage",
+      "materials": [
+        "woven_plant_material"
+      ],
+      "contexts": [
+        "household",
+        "market",
+        "transport"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT014",
+      "name": "caja de madera",
+      "category": "storage",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "shop",
+        "transport"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT015",
+      "name": "barril",
+      "category": "storage",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "household",
+        "market",
+        "ship",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT016",
+      "name": "tonel",
+      "category": "storage",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "cellar",
+        "inn",
+        "ship"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT017",
+      "name": "jarra cerámica",
+      "category": "tableware",
+      "materials": [
+        "ceramic"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT018",
+      "name": "cuenco cerámico",
+      "category": "tableware",
+      "materials": [
+        "ceramic"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT019",
+      "name": "plato o fuente cerámica",
+      "category": "tableware",
+      "materials": [
+        "ceramic"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT020",
+      "name": "vaso simple",
+      "category": "tableware",
+      "materials": [
+        "wood_or_ceramic"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT021",
+      "name": "copa de vidrio",
+      "category": "tableware",
+      "materials": [
+        "glass"
+      ],
+      "contexts": [
+        "wealthy_household",
+        "institution"
+      ],
+      "commonness": "uncommon",
+      "notes": null
+    },
+    {
+      "id": "MAT022",
+      "name": "botella de vidrio",
+      "category": "container",
+      "materials": [
+        "glass"
+      ],
+      "contexts": [
+        "inn",
+        "healer",
+        "wealthy_household"
+      ],
+      "commonness": "uncommon",
+      "notes": null
+    },
+    {
+      "id": "MAT023",
+      "name": "olla cerámica",
+      "category": "kitchen",
+      "materials": [
+        "ceramic"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT024",
+      "name": "caldero de hierro",
+      "category": "kitchen",
+      "materials": [
+        "iron"
+      ],
+      "contexts": [
+        "household",
+        "inn",
+        "camp"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT025",
+      "name": "sartén de hierro",
+      "category": "kitchen",
+      "materials": [
+        "iron"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT026",
+      "name": "cuchillo de cocina",
+      "category": "kitchen",
+      "materials": [
+        "iron_or_steel",
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT027",
+      "name": "cuchara de madera",
+      "category": "tableware",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT028",
+      "name": "cucharón",
+      "category": "kitchen",
+      "materials": [
+        "wood_or_metal"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT029",
+      "name": "mortero y mano",
+      "category": "kitchen",
+      "materials": [
+        "stone_or_wood"
+      ],
+      "contexts": [
+        "household",
+        "healer",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT030",
+      "name": "tabla de cortar",
+      "category": "kitchen",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT031",
+      "name": "colador simple",
+      "category": "kitchen",
+      "materials": [
+        "textile_or_metal_or_wicker"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT032",
+      "name": "cubeta o barreño",
+      "category": "hygiene",
+      "materials": [
+        "wood_or_ceramic"
+      ],
+      "contexts": [
+        "household",
+        "laundry"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT033",
+      "name": "palangana",
+      "category": "hygiene",
+      "materials": [
+        "ceramic_or_metal"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT034",
+      "name": "cubo",
+      "category": "water",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "household",
+        "well",
+        "workplace"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT035",
+      "name": "paño de limpieza",
+      "category": "hygiene",
+      "materials": [
+        "linen_or_coarse_textile"
+      ],
+      "contexts": [
+        "household",
+        "workplace"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT036",
+      "name": "jabón simple",
+      "category": "hygiene",
+      "materials": [
+        "fat_or_oil",
+        "alkali"
+      ],
+      "contexts": [
+        "household",
+        "laundry"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT037",
+      "name": "peine",
+      "category": "personal_care",
+      "materials": [
+        "wood_or_bone"
+      ],
+      "contexts": [
+        "household"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT038",
+      "name": "cepillo",
+      "category": "personal_care",
+      "materials": [
+        "wood",
+        "bristle_or_fiber"
+      ],
+      "contexts": [
+        "household",
+        "workplace"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT039",
+      "name": "navaja de afeitar",
+      "category": "personal_care",
+      "materials": [
+        "steel",
+        "wood_or_bone"
+      ],
+      "contexts": [
+        "household",
+        "barber_if_any"
+      ],
+      "commonness": "uncommon",
+      "notes": null
+    },
+    {
+      "id": "MAT040",
+      "name": "espejo pequeño",
+      "category": "personal_care",
+      "materials": [
+        "polished_metal_or_glass"
+      ],
+      "contexts": [
+        "household"
+      ],
+      "commonness": "uncommon",
+      "notes": null
+    },
+    {
+      "id": "MAT041",
+      "name": "vela de sebo",
+      "category": "lighting",
+      "materials": [
+        "tallow",
+        "wick"
+      ],
+      "contexts": [
+        "household",
+        "inn",
+        "institution"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT042",
+      "name": "vela de cera",
+      "category": "lighting",
+      "materials": [
+        "beeswax",
+        "wick"
+      ],
+      "contexts": [
+        "wealthy_household",
+        "institution"
+      ],
+      "commonness": "uncommon",
+      "notes": null
+    },
+    {
+      "id": "MAT043",
+      "name": "candil simple",
+      "category": "lighting",
+      "materials": [
+        "ceramic_or_metal",
+        "fuel",
+        "wick"
+      ],
+      "contexts": [
+        "household",
+        "inn"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT044",
+      "name": "antorcha",
+      "category": "lighting",
+      "materials": [
+        "wood",
+        "fuel_material"
+      ],
+      "contexts": [
+        "guard",
+        "street_event",
+        "emergency"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT045",
+      "name": "farol simple",
+      "category": "lighting",
+      "materials": [
+        "wood_or_metal",
+        "translucent_or_glass_panel_optional"
+      ],
+      "contexts": [
+        "guard",
+        "ship",
+        "institution"
+      ],
+      "commonness": "uncommon",
+      "notes": null
+    },
+    {
+      "id": "MAT046",
+      "name": "cerradura simple",
+      "category": "access",
+      "materials": [
+        "iron"
+      ],
+      "contexts": [
+        "door",
+        "chest",
+        "archive"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT047",
+      "name": "llave de hierro",
+      "category": "access",
+      "materials": [
+        "iron"
+      ],
+      "contexts": [
+        "door",
+        "chest",
+        "archive"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT048",
+      "name": "pestillo",
+      "category": "access",
+      "materials": [
+        "wood_or_iron"
+      ],
+      "contexts": [
+        "door",
+        "shutter"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT049",
+      "name": "tranca",
+      "category": "access",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "door",
+        "gate"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT050",
+      "name": "bisagra",
+      "category": "hardware",
+      "materials": [
+        "iron"
+      ],
+      "contexts": [
+        "door",
+        "chest",
+        "shutter"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT051",
+      "name": "clavo",
+      "category": "hardware",
+      "materials": [
+        "iron"
+      ],
+      "contexts": [
+        "construction",
+        "carpentry"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT052",
+      "name": "cadena",
+      "category": "hardware",
+      "materials": [
+        "iron"
+      ],
+      "contexts": [
+        "transport",
+        "access",
+        "ship"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT053",
+      "name": "cuerda",
+      "category": "rope",
+      "materials": [
+        "plant_fiber"
+      ],
+      "contexts": [
+        "household",
+        "construction",
+        "ship",
+        "transport"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT054",
+      "name": "hacha",
+      "category": "tool",
+      "materials": [
+        "iron_or_steel",
+        "wood"
+      ],
+      "contexts": [
+        "forestry",
+        "carpentry",
+        "household"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT055",
+      "name": "azuela",
+      "category": "tool",
+      "materials": [
+        "iron_or_steel",
+        "wood"
+      ],
+      "contexts": [
+        "carpentry",
+        "shipbuilding"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT056",
+      "name": "sierra manual",
+      "category": "tool",
+      "materials": [
+        "steel_or_iron",
+        "wood"
+      ],
+      "contexts": [
+        "carpentry",
+        "construction"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT057",
+      "name": "formón",
+      "category": "tool",
+      "materials": [
+        "steel_or_iron",
+        "wood"
+      ],
+      "contexts": [
+        "carpentry"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT058",
+      "name": "gubia",
+      "category": "tool",
+      "materials": [
+        "steel_or_iron",
+        "wood"
+      ],
+      "contexts": [
+        "carpentry"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT059",
+      "name": "cepillo de carpintero",
+      "category": "tool",
+      "materials": [
+        "wood",
+        "steel_or_iron"
+      ],
+      "contexts": [
+        "carpentry"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT060",
+      "name": "barrena manual",
+      "category": "tool",
+      "materials": [
+        "iron_or_steel",
+        "wood"
+      ],
+      "contexts": [
+        "carpentry",
+        "construction"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT061",
+      "name": "martillo",
+      "category": "tool",
+      "materials": [
+        "iron",
+        "wood"
+      ],
+      "contexts": [
+        "construction",
+        "smithing",
+        "household"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT062",
+      "name": "mazo",
+      "category": "tool",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "carpentry",
+        "construction"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT063",
+      "name": "piedra de afilar",
+      "category": "tool",
+      "materials": [
+        "stone"
+      ],
+      "contexts": [
+        "household",
+        "workplace",
+        "military"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT064",
+      "name": "escuadra",
+      "category": "tool",
+      "materials": [
+        "wood_or_metal"
+      ],
+      "contexts": [
+        "carpentry",
+        "construction"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT065",
+      "name": "regla de medida",
+      "category": "tool",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "carpentry",
+        "scribe",
+        "trade"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT066",
+      "name": "plomada",
+      "category": "tool",
+      "materials": [
+        "metal",
+        "cord"
+      ],
+      "contexts": [
+        "construction"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT067",
+      "name": "azada",
+      "category": "agricultural_tool",
+      "materials": [
+        "iron",
+        "wood"
+      ],
+      "contexts": [
+        "farm"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT068",
+      "name": "pala",
+      "category": "agricultural_tool",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "farm",
+        "construction"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT069",
+      "name": "horca agrícola",
+      "category": "agricultural_tool",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "farm"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT070",
+      "name": "rastrillo",
+      "category": "agricultural_tool",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "farm"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT071",
+      "name": "hoz",
+      "category": "agricultural_tool",
+      "materials": [
+        "steel_or_iron",
+        "wood"
+      ],
+      "contexts": [
+        "farm"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT072",
+      "name": "guadaña",
+      "category": "agricultural_tool",
+      "materials": [
+        "steel_or_iron",
+        "wood"
+      ],
+      "contexts": [
+        "farm"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT073",
+      "name": "arado",
+      "category": "agricultural_tool",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "farm"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT074",
+      "name": "yunque",
+      "category": "smithing",
+      "materials": [
+        "iron"
+      ],
+      "contexts": [
+        "forge"
+      ],
+      "commonness": "specialized",
+      "notes": null
+    },
+    {
+      "id": "MAT075",
+      "name": "tenazas de herrero",
+      "category": "smithing",
+      "materials": [
+        "iron"
+      ],
+      "contexts": [
+        "forge"
+      ],
+      "commonness": "specialized",
+      "notes": null
+    },
+    {
+      "id": "MAT076",
+      "name": "fuelle",
+      "category": "smithing",
+      "materials": [
+        "wood",
+        "leather"
+      ],
+      "contexts": [
+        "forge"
+      ],
+      "commonness": "specialized",
+      "notes": null
+    },
+    {
+      "id": "MAT077",
+      "name": "lima",
+      "category": "tool",
+      "materials": [
+        "steel_or_iron"
+      ],
+      "contexts": [
+        "smithing",
+        "metalwork"
+      ],
+      "commonness": "specialized",
+      "notes": null
+    },
+    {
+      "id": "MAT078",
+      "name": "huso",
+      "category": "textile_tool",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "textile"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT079",
+      "name": "rueca",
+      "category": "textile_tool",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "household",
+        "textile"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT080",
+      "name": "telar manual",
+      "category": "textile_workstation",
+      "materials": [
+        "wood"
+      ],
+      "contexts": [
+        "textile_workshop",
+        "household"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT081",
+      "name": "aguja",
+      "category": "textile_tool",
+      "materials": [
+        "metal_or_bone"
+      ],
+      "contexts": [
+        "household",
+        "tailor"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT082",
+      "name": "tijeras",
+      "category": "textile_tool",
+      "materials": [
+        "iron_or_steel"
+      ],
+      "contexts": [
+        "tailor",
+        "household"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT083",
+      "name": "dedal",
+      "category": "textile_tool",
+      "materials": [
+        "metal_or_leather"
+      ],
+      "contexts": [
+        "tailor",
+        "household"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT084",
+      "name": "carro",
+      "category": "transport",
+      "materials": [
+        "wood",
+        "iron_optional",
+        "leather"
+      ],
+      "contexts": [
+        "road",
+        "farm",
+        "market"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT085",
+      "name": "carreta",
+      "category": "transport",
+      "materials": [
+        "wood",
+        "iron_optional",
+        "leather"
+      ],
+      "contexts": [
+        "road",
+        "farm",
+        "market"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT086",
+      "name": "carretilla",
+      "category": "transport",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "construction",
+        "market",
+        "yard"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT087",
+      "name": "arnés",
+      "category": "transport",
+      "materials": [
+        "leather",
+        "metal"
+      ],
+      "contexts": [
+        "horse_or_draft_animal"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT088",
+      "name": "silla de montar",
+      "category": "transport",
+      "materials": [
+        "leather",
+        "wood",
+        "metal_optional"
+      ],
+      "contexts": [
+        "riding"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT089",
+      "name": "pluma de escritura",
+      "category": "writing",
+      "materials": [
+        "feather"
+      ],
+      "contexts": [
+        "scribe",
+        "household_literate",
+        "institution"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT090",
+      "name": "tintero",
+      "category": "writing",
+      "materials": [
+        "ceramic_or_glass"
+      ],
+      "contexts": [
+        "scribe",
+        "institution"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT091",
+      "name": "tinta",
+      "category": "writing",
+      "materials": [
+        "canonical_ink_materials"
+      ],
+      "contexts": [
+        "scribe",
+        "institution"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT092",
+      "name": "pergamino",
+      "category": "writing_support",
+      "materials": [
+        "prepared_hide"
+      ],
+      "contexts": [
+        "institution",
+        "scribe",
+        "formal_document"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT093",
+      "name": "papel",
+      "category": "writing_support",
+      "materials": [
+        "paper_fiber"
+      ],
+      "contexts": [
+        "institution",
+        "scribe",
+        "merchant"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT094",
+      "name": "cera de sellado",
+      "category": "writing",
+      "materials": [
+        "wax",
+        "pigment_optional"
+      ],
+      "contexts": [
+        "institution",
+        "merchant"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT095",
+      "name": "sello manual",
+      "category": "writing",
+      "materials": [
+        "metal_or_carved_hard_material"
+      ],
+      "contexts": [
+        "institution",
+        "merchant",
+        "noble"
+      ],
+      "commonness": "uncommon",
+      "notes": null
+    },
+    {
+      "id": "MAT096",
+      "name": "libro manuscrito",
+      "category": "document",
+      "materials": [
+        "paper_or_parchment",
+        "binding_material"
+      ],
+      "contexts": [
+        "institution",
+        "wealthy_household",
+        "archive"
+      ],
+      "commonness": "uncommon",
+      "notes": null
+    },
+    {
+      "id": "MAT097",
+      "name": "libro contable",
+      "category": "document",
+      "materials": [
+        "paper_or_parchment",
+        "binding_material"
+      ],
+      "contexts": [
+        "merchant",
+        "institution"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT098",
+      "name": "caja o arcón de archivo",
+      "category": "archive",
+      "materials": [
+        "wood",
+        "iron_optional"
+      ],
+      "contexts": [
+        "institution",
+        "merchant"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT099",
+      "name": "campana de señal",
+      "category": "signal",
+      "materials": [
+        "metal"
+      ],
+      "contexts": [
+        "institution",
+        "port",
+        "guard"
+      ],
+      "commonness": "variable",
+      "notes": "No es un reloj ni toca necesariamente cada hora."
+    },
+    {
+      "id": "MAT100",
+      "name": "férula de madera",
+      "category": "medical",
+      "materials": [
+        "wood",
+        "textile"
+      ],
+      "contexts": [
+        "healer",
+        "household"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT101",
+      "name": "venda o tira de tela",
+      "category": "medical",
+      "materials": [
+        "linen_or_other_textile"
+      ],
+      "contexts": [
+        "healer",
+        "household"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT102",
+      "name": "frasco pequeño",
+      "category": "medical",
+      "materials": [
+        "ceramic_or_glass"
+      ],
+      "contexts": [
+        "healer"
+      ],
+      "commonness": "variable",
+      "notes": null
+    },
+    {
+      "id": "MAT103",
+      "name": "aguja de sutura compatible",
+      "category": "medical",
+      "materials": [
+        "metal"
+      ],
+      "contexts": [
+        "healer"
+      ],
+      "commonness": "specialized",
+      "notes": null
+    },
+    {
+      "id": "MAT104",
+      "name": "capa de lana",
+      "category": "clothing",
+      "materials": [
+        "wool"
+      ],
+      "contexts": [
+        "everyday",
+        "travel"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT105",
+      "name": "camisa de lino",
+      "category": "clothing",
+      "materials": [
+        "linen"
+      ],
+      "contexts": [
+        "everyday"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT106",
+      "name": "prenda de lana",
+      "category": "clothing",
+      "materials": [
+        "wool"
+      ],
+      "contexts": [
+        "everyday",
+        "work"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT107",
+      "name": "cinturón de cuero",
+      "category": "clothing",
+      "materials": [
+        "leather"
+      ],
+      "contexts": [
+        "everyday",
+        "work"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT108",
+      "name": "botas de cuero",
+      "category": "clothing",
+      "materials": [
+        "leather"
+      ],
+      "contexts": [
+        "everyday",
+        "work",
+        "travel"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT109",
+      "name": "zapatos de cuero",
+      "category": "clothing",
+      "materials": [
+        "leather"
+      ],
+      "contexts": [
+        "everyday"
+      ],
+      "commonness": "common",
+      "notes": null
+    },
+    {
+      "id": "MAT110",
+      "name": "delantal de trabajo",
+      "category": "clothing",
+      "materials": [
+        "linen_or_wool_or_leather"
+      ],
+      "contexts": [
+        "work"
+      ],
+      "commonness": "common",
+      "notes": null
+    }
+  ]
+}

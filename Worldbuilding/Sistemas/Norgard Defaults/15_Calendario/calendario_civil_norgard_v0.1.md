@@ -65,3 +65,22 @@ Las celebraciones pueden ser:
 ## Regla final
 
 **La fecha debe ser inmediata para el jugador; las consecuencias de esa fecha son las que pertenecen a la simulación.**
+
+
+---
+
+## Integración material — Punto 13
+
+Norgard no posee relojes.
+
+La hora exacta existe como dato del motor, pero las personas dependen de:
+
+- luz;
+- posición del sol;
+- rutinas;
+- comidas;
+- cambios de guardia;
+- señales;
+- campanas.
+
+Las campanas no se presuponen como toque horario automático.
