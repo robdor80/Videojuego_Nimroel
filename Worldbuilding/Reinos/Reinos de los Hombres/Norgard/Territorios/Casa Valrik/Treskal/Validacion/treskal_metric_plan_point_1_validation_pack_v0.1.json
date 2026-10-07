@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_plan_point_1_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "caseCount": 50,
+  "cases": [
+    {
+      "id": "PRE01",
+      "given": {
+        "externalCanonBlockers": 0
+      },
+      "expect": {
+        "pass": true
+      }
+    },
+    {
+      "id": "PRE02",
+      "given": {
+        "norgardBlockedPendingCanon": 0
+      },
+      "expect": {
+        "pass": true
+      }
+    },
+    {
+      "id": "PRE03",
+      "given": {
+        "requiredSector": "T01"
+      },
+      "expect": {
+        "present": true
+      }
+    },
+    {
+      "id": "PRE04",
+      "given": {
+        "requiredSector": "T12"
+      },
+      "expect": {
+        "present": true
+      }
+    },
+    {
+      "id": "PRE05",
+      "given": {
+        "requiredFacility": "S01"
+      },
+      "expect": {
+        "present": true
+      }
+    },
+    {
+      "id": "PRE06",
+      "given": {
+        "requiredFacility": "S13"
+      },
+      "expect": {
+        "present": true
+      }
+    },
+    {
+      "id": "PRE07",
+      "given": {
+        "cityWall": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PRE08",
+      "given": {
+        "mintInTreskal": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PRE09",
+      "given": {
+        "standaloneCustomsHouse": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PRE10",
+      "given": {
+        "longTermPrison": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PRE11",
+      "given": {
+        "gunpowderArsenal": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PRE12",
+      "given": {
+        "secondRoyalNavalComplex": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PRE13",
+      "given": {
+        "internalGreatHouseCustoms": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PRE14",
+      "given": {
+        "monumentalValrikCastle": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PRE15",
+      "given": {
+        "towerClock": true
+      },
+      "expect": {
+        "allowed": false
+      }
+    },
+    {
+      "id": "PRE16",
+      "given": {
+        "topology": "integrated_river_mouth"
+      },
+      "expect": {
+        "required": true
+      }
+    },
+    {
+      "id": "PRE17",
+      "given": {
+        "mainUrbanMass": "one_primary_bank"
+      },
+      "expect": {
+        "required": true
+      }
+    },
+    {
+      "id": "PRE18",
+      "given": {
+        "mainBridgeCount": 0
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE19",
+      "given": {
+        "mainBridgePosition": "upstream_of_T01"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PRE20",
+      "given": {
+        "multipleBridges": true
+      },
+      "expect": {
+        "required": false
+      }
+    },
+    {
+      "id": "PRE21",
+      "given": {
+        "T07MixedFreelyWithT08": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE22",
+      "given": {
+        "T08Owner": "Crown"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PRE23",
+      "given": {
+        "T08Command": "House_Valrik"
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE24",
+      "given": {
+        "T12Position": "north_or_northeast_interior_edge"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PRE25",
+      "given": {
+        "T12CrossesT03ForRoutineDeployment": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE26",
+      "given": {
+        "S11Capacity": 300
+      },
+      "expect": {
+        "withinBand": true
+      }
+    },
+    {
+      "id": "PRE27",
+      "given": {
+        "S12ActivityCapacity": 1000
+      },
+      "expect": {
+        "withinBand": true
+      }
+    },
+    {
+      "id": "PRE28",
+      "given": {
+        "S04Role": "long_term_prison"
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE29",
+      "given": {
+        "S05Role": "urban_guard"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PRE30",
+      "given": {
+        "S06Sector": "T03"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PRE31",
+      "given": {
+        "S07Sector": "T01_T07_transition"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PRE32",
+      "given": {
+        "S09Sector": "T02_T04"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PRE33",
+      "given": {
+        "S10Sector": "T03"
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE34",
+      "given": {
+        "residentPopulation": 12000
+      },
+      "expect": {
+        "withinCanon": true
+      }
+    },
+    {
+      "id": "PRE35",
+      "given": {
+        "residentPopulation": 18000
+      },
+      "expect": {
+        "withinCanon": true
+      }
+    },
+    {
+      "id": "PRE36",
+      "given": {
+        "residentPopulation": 25000
+      },
+      "expect": {
+        "withinCanon": false
+      }
+    },
+    {
+      "id": "PRE37",
+      "given": {
+        "exactUrbanAreaDefinedInPoint1": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE38",
+      "given": {
+        "exactRiverGeometryDefinedInPoint1": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE39",
+      "given": {
+        "exactSectorPolygonsDefinedInPoint1": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE40",
+      "given": {
+        "exactRoadWidthsDefinedInPoint1": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE41",
+      "given": {
+        "exactParcelsDefinedInPoint1": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE42",
+      "given": {
+        "APP01Present": true,
+        "APP06Present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PRE43",
+      "given": {
+        "heavyTimberFlowThroughT03ByDefault": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE44",
+      "given": {
+        "livestockFlowThroughT03ByDefault": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PRE45",
+      "given": {
+        "T08SupplyCanAvoidT03": true
+      },
+      "expect": {
+        "required": true
+      }
+    },
+    {
+      "id": "PRE46",
+      "given": {
+        "architectureStoreys": "one_to_two_common_three_minority"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PRE47",
+      "given": {
+        "genericPeripheralGrowthReserve": true
+      },
+      "expect": {
+        "required": true
+      }
+    },
+    {
+      "id": "PRE48",
+      "given": {
+        "authorDecisionRequiredBeforePoint2": true
+      },
+      "expect": {
+        "expected": false
+      }
+    },
+    {
+      "id": "PRE49",
+      "given": {
+        "nextPoint": 2
+      },
+      "expect": {
+        "topic": "scale_and_footprint"
+      }
+    },
+    {
+      "id": "PRE50",
+      "given": {
+        "status": "TRESKAL_PREPLAN_FINAL_AUDIT_PASSED"
+      },
+      "expect": {
+        "point1Closed": true
+      }
+    }
+  ],
+  "marker": "TRESKAL_METRIC_PLAN_POINT_1_PREPLAN_AUDIT_CLOSED"
+}

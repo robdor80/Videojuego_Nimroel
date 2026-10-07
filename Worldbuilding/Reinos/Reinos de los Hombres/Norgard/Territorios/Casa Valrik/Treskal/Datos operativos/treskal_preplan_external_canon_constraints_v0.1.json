@@ -1,24 +1,106 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "0.5",
-  "status": "active_preplan_constraint_set",
-  "purpose": "Freeze only Norgard-level facts that materially affect Treskal metric planning, while keeping unresolved canon nonblocking and non-invented.",
-  "planReadiness": "ready_for_metric_city_plan_military_royal_naval_fiscal_and_penal_resolved",
+  "version": "1.0",
+  "status": "final_preplan_constraint_set_point_1_closed",
+  "purpose": "Freeze every canonical spatial constraint required before Treskal metric planning and certify that no external canon blocker remains.",
+  "planReadiness": "point_1_closed_ready_for_point_2_scale_and_footprint",
   "authorInputRequiredNow": false,
+  "closureMarker": "TRESKAL_METRIC_PLAN_POINT_1_PREPLAN_AUDIT_CLOSED",
+  "externalCanonBlockers": [],
+  "norgardGeneralBlockers": [],
+  "requiredTopology": {
+    "integratedRiverMouth": true,
+    "mainUrbanMassOnePrimaryBank": true,
+    "riverWharves": "T01",
+    "civilPort": "T07",
+    "royalNavalComplex": "T08",
+    "permanentMainBridge": true,
+    "mainBridgePosition": "upstream_of_T01",
+    "multipleBridgesRequired": false,
+    "cityWall": false,
+    "gradualTerritoryToCityTransition": true
+  },
+  "requiredSectors": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12"
+  ],
+  "requiredSingularFacilities": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13"
+  ],
+  "criticalFlows": {
+    "timber": [
+      "T11",
+      "T02",
+      "T04_or_T08"
+    ],
+    "food": [
+      "T11",
+      "T10_or_T02",
+      "T03",
+      "city"
+    ],
+    "riverCargo": [
+      "river",
+      "T01",
+      "T02_or_T03_or_T04"
+    ],
+    "maritimeCargo": [
+      "sea",
+      "T07",
+      "T02_or_T03"
+    ],
+    "administration": [
+      "territory",
+      "T11",
+      "T05_or_T06"
+    ],
+    "royalNavalConstruction": [
+      "T11_or_T02_or_T04",
+      "T08",
+      "sea"
+    ],
+    "territorialMobilization": [
+      "territory",
+      "T11",
+      "T12",
+      "territorial_exit"
+    ]
+  },
   "resolvedSpatialConstraints": {
     "royalProtocol": {
-      "source": "Norgard Defaults/norgard_royal_reception_residence_default_v0.1.json",
       "sector": "T05",
-      "facility": "S01",
-      "requirements": [
-        "royal_reception_seat",
-        "royal_apartments",
-        "privacy",
-        "service",
-        "controlled_access"
+      "facilities": [
+        "S01",
+        "S02"
       ],
-      "separateBuilding": false
+      "royalReceptionSeat": true,
+      "royalApartments": true,
+      "publicAdministrativeAndPrivateCirculationMustBeSeparable": true,
+      "separateRoyalPalace": false,
+      "castle": false
     },
     "justiceAndGuard": {
       "sector": "T06",
@@ -27,25 +109,76 @@
         "S04",
         "S05"
       ],
+      "outsideFloodRiskRequired": true,
+      "connects": [
+        "T05",
+        "T03",
+        "principal_routes"
+      ],
+      "S04Role": "temporary_custody_only",
       "standaloneLongTermPrison": false,
-      "realmPenalCode": "Norgard Defaults/norgard_penal_code_v0.1.json",
-      "S04Role": "temporary_custody_pretrial_and_transfer_only",
-      "penalLaborUsesDedicatedWorkSitesOrTemporaryGuardedBarracks": true
+      "urbanGuardRosterBand": [
+        140,
+        190
+      ]
     },
     "civilPort": {
       "sector": "T07",
       "separateFrom": "T08",
-      "genericControlOfficeCapacity": true,
+      "cartAccess": true,
+      "integratedCustomsControl": true,
       "standaloneCustomsHouse": false
     },
-    "royalShipyards": {
+    "royalNavalComplex": {
       "sector": "T08",
-      "facility": "S08",
+      "facilities": [
+        "S08",
+        "S13"
+      ],
       "crownOwned": true,
-      "internalSecurity": true,
-      "internalAdministration": true,
-      "pairedWithPrincipalNavalBase": "S13",
-      "independentGunpowderArsenal": false
+      "houseValrikCommand": false,
+      "controlledAccess": true,
+      "ownWaterfront": true,
+      "gunpowderFacilities": false
+    },
+    "territorialMilitary": {
+      "sector": "T12",
+      "facilities": [
+        "S11",
+        "S12"
+      ],
+      "position": "north_or_northeast_interior_edge",
+      "mustTouch": "T11",
+      "near": "T10",
+      "outsideFloodRiskRequired": true,
+      "avoidsRoutineCrossing": "T03",
+      "separateFrom": "T08",
+      "S11OrdinaryProfessionalCapacity": [
+        260,
+        340
+      ],
+      "S12SimultaneousActivityCapacity": [
+        800,
+        1200
+      ]
+    },
+    "marketsAndLogistics": {
+      "S06": {
+        "sector": "T03",
+        "daily": true
+      },
+      "S07": {
+        "sector": "T01_T07_transition"
+      },
+      "S09": {
+        "sector": "T02_T04",
+        "distributedCapacityAllowed": true,
+        "fireSeparationRequired": true
+      },
+      "S10": {
+        "sector": "T10",
+        "livestockAvoidsT03": true
+      }
     },
     "architecture": {
       "materials": [
@@ -54,70 +187,107 @@
         "slate"
       ],
       "ordinaryStoreys": "one_to_two_common_three_minority",
+      "tallFantasySkyline": false,
       "cityWall": false,
-      "monumentalCastleForValrik": false
+      "monumentalValrikCastle": false
     },
-    "territorialMilitary": {
-      "sector": "T12",
-      "facilities": [
-        "S11",
-        "S12"
+    "population": {
+      "residentBand": [
+        12000,
+        18000
       ],
-      "centralGarrisonBand": [
-        260,
-        340
-      ],
-      "musterCapacityBand": [
-        800,
-        1200
-      ],
-      "cityWallRequired": false
-    },
-    "principalRoyalNavalBase": {
-      "sector": "T08",
-      "facility": "S13",
-      "crownOwned": true,
-      "principalNotUniqueBase": true,
-      "houseValrikCommand": false,
-      "urbanGuardOrdinaryControlInside": false,
-      "sharesRoyalNavalComplexWith": "S08"
-    },
-    "fiscalAdministration": {
-      "sector": "T05",
-      "facility": "S02",
-      "functions": [
-        "territorial_fiscal_ledger",
-        "collection",
-        "records",
-        "Crown_remittance"
-      ],
-      "separateTreasuryBuilding": false
-    },
-    "portCustoms": {
-      "sector": "T07",
-      "integratedControlOfficeCapacity": true,
-      "standaloneCustomsHouse": false,
-      "externalCustomsOnly": true,
-      "internalNorgardCustoms": false
+      "exactUrbanAreaDeferredToPoint": 2,
+      "exactDensityDeferredToPoint": 2
     }
   },
+  "requiredApproaches": [
+    "APP01",
+    "APP02",
+    "APP03",
+    "APP04",
+    "APP05",
+    "APP06"
+  ],
+  "mobilityClasses": [
+    "TR01",
+    "TR02",
+    "TR03",
+    "TR04",
+    "TR05",
+    "TR06"
+  ],
   "forbiddenPrePlanInventions": [
-    "independent_arsenal",
+    "city_wall",
+    "mint",
     "standalone_customs_house",
     "long_term_prison_complex",
-    "mint",
-    "city_wall",
-    "second_independent_naval_complex_in_Treskal_without_new_canon",
-    "customs_gate_between_Great_House_territories"
+    "independent_gunpowder_arsenal",
+    "second_royal_naval_complex_without_new_canon",
+    "internal_customs_between_Great_Houses",
+    "monumental_Valrik_castle",
+    "cathedral_or_temple",
+    "university",
+    "academy",
+    "large_institutional_hospital",
+    "modern_bank",
+    "grand_public_library",
+    "monumental_theatre",
+    "tower_clock"
   ],
   "genericExpansionReserve": {
     "canonicalFacility": false,
-    "requirement": "retain_some_expandable_low_density_peripheral_land_beyond_resolved_T12_for_ordinary_future_growth",
+    "requirement": "retain_expandable_low_density_peripheral_land_for_ordinary_future_growth",
     "candidateContexts": [
       "T10_edge",
       "T11_corridor_edges",
       "beyond_T12_as_topography_allows"
     ],
-    "exactGeometry": "resolve_during_metric_plan"
+    "exactGeometry": "point_2_and_point_3"
+  },
+  "openMetricDecisionsByPoint": {
+    "point2": [
+      "urban_width_length",
+      "urban_area",
+      "density",
+      "T08_scale",
+      "T12_scale",
+      "peripheral_reserve"
+    ],
+    "point3": [
+      "river_geometry",
+      "river_width_depth",
+      "coastline",
+      "elevation",
+      "slope",
+      "floodplain",
+      "bridge_geometry",
+      "minor_crossings_if_needed"
+    ],
+    "point4": [
+      "T01_T12_exact_polygons"
+    ],
+    "point5": [
+      "S01_S13_exact_sites_and_footprints"
+    ],
+    "point6": [
+      "road_corridor_alignment_and_widths"
+    ],
+    "point7": [
+      "river_wharves_civil_port_docks_slipways_T08_internal_geometry"
+    ],
+    "point8": [
+      "blocks_parcels_building_fabric"
+    ],
+    "point9": [
+      "integrated_functional_validation"
+    ],
+    "point10": [
+      "canonical_map_and_stable_spatial_output"
+    ]
+  },
+  "decisionClassification": {
+    "unresolvedExternalCanonCount": 0,
+    "unresolvedAuthorDecisionsRequiredBeforePoint2": 0,
+    "remainingOpenItemsAreMetricPlanningWork": true
   }
 }

@@ -1,3 +1,8 @@
+> **SUPERADA POR LA AUDITORÍA FINAL PRE-PLANO MÉTRICO — 2026-10-08**  
+> Este documento se conserva como historial de la primera revisión de canon externo.  
+> La autoridad vigente para iniciar el plano métrico es `AUDITORIA_FINAL_PREPLANO_METRICO_TRESKAL_v0.1.md`.  
+> Tras los Puntos 1–13 de Norgard ya no existen bloqueos externos pendientes y el Punto 1 del plano métrico queda cerrado.
+
 > **ACTUALIZACIÓN 2026-10-06 — FISCALIDAD Y ADUANAS RESUELTAS**  
 > El Punto 3 ha quedado cerrado mediante Norgard E8, Casa Valrik V3 y los contratos fiscales de Treskal.  
 > S02 consolida la administración fiscal territorial y T07 integra el control aduanero exterior sin Casa de Aduanas singular.  

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "1.0",
+  "version": "1.1",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -105,7 +105,8 @@
     "portCustomsFlow": "Datos operativos/treskal_port_customs_flow_contract_v0.1.json",
     "personalNaming": "Datos operativos/treskal_personal_naming_contract_v0.1.json",
     "timeCalendar": "Datos operativos/treskal_time_calendar_contract_v0.1.json",
-    "materialCulture": "Datos operativos/treskal_material_culture_contract_v0.1.json"
+    "materialCulture": "Datos operativos/treskal_material_culture_contract_v0.1.json",
+    "preplanConstraints": "Datos operativos/treskal_preplan_external_canon_constraints_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -232,16 +233,16 @@
   },
   "unresolvedStructuralItems": [
     "metric_city_plan",
+    "urban_scale_and_footprint",
     "exact_river_geometry",
+    "exact_coastline_and_elevation",
     "exact_main_bridge_geometry",
-    "possible_minor_crossings",
+    "possible_minor_crossings_if_functionally_required",
+    "T01_T12_metric_geometry",
+    "S01_S13_exact_sites_and_footprints",
     "street_level_geometry",
-    "specialized_market_fine_calendar",
-    "house_valrik_exact_architectural_plan",
-    "judicial_complex_exact_architectural_plan",
-    "long_term_penal_system",
-    "exact_T12_military_precinct_geometry",
-    "exact_T08_royal_naval_complex_internal_geometry"
+    "T07_T08_waterfront_geometry",
+    "parcel_and_urban_fabric_geometry"
   ],
   "externalDependencies": {
     "urbanGuardRanks": "resolved_functionally_by_Norgard_and_Valrik_military_framework",
@@ -281,7 +282,9 @@
     "namingAndSurnameRules": "resolved_by_Norgard_point_11",
     "fishingEcologySpecies": "future_ecology_profile_species_names_not_required_for_2B",
     "exactCalendar": "resolved_by_Norgard_point_12",
-    "sharedMaterialCulture": "resolved_by_Norgard_point_13"
+    "sharedMaterialCulture": "resolved_by_Norgard_point_13",
+    "norgardGeneralCanon": "resolved_points_1_to_13_blockedPendingCanon_empty",
+    "metricPlanPreaudit": "resolved_point_1"
   },
   "validationFiles": {
     "aiComparativeTestPack": "Datos operativos/treskal_ai_comparative_test_pack_v0.1.json",
@@ -928,5 +931,20 @@
     "localContract": "Datos operativos/treskal_material_culture_contract_v0.1.json",
     "localTechLevelOverride": false,
     "clocks": false
+  },
+  "metricPlan": {
+    "status": "active",
+    "roadmap": "PLAN_METRICO_TRESKAL_ROADMAP_v0.1.md",
+    "currentPoint": 2,
+    "currentPointName": "scale_and_footprint",
+    "point1": {
+      "status": "closed_static_validated",
+      "audit": "AUDITORIA_FINAL_PREPLANO_METRICO_TRESKAL_v0.1.md",
+      "constraints": "Datos operativos/treskal_preplan_external_canon_constraints_v0.1.json",
+      "validation": "Validacion/treskal_metric_plan_point_1_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PLANO_METRICO_TRESKAL_PUNTO_1_AUDITORIA_PREPLANO_v0.1.md",
+      "externalBlockers": 0,
+      "authorDecisionRequiredBeforeNextPoint": false
+    }
   }
 }

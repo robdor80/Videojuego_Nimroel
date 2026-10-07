@@ -1,4 +1,27 @@
-# Treskal — ciudad
+# Treskal
+
+## Plano métrico — fase activa
+
+El desarrollo ha entrado en la fase **Plano Métrico de Treskal**.
+
+Roadmap:
+
+`PLAN_METRICO_TRESKAL_ROADMAP_v0.1.md`
+
+Estado:
+
+- Punto 1 — Auditoría final pre-plano: **CERRADO**;
+- Punto 2 — Escala y huella urbana: **SIGUIENTE**.
+
+Auditoría vigente:
+
+`AUDITORIA_FINAL_PREPLANO_METRICO_TRESKAL_v0.1.md`
+
+No existen bloqueos generales de Norgard pendientes antes del plano.
+
+---
+
+— ciudad
 
 ## Estado
 

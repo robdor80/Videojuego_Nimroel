@@ -2,7 +2,7 @@
 
 ## Estado
 
-**BASE FUNCIONAL CERRADA HASTA LA CAPA 99 — PENDIENTE DE DEPENDENCIAS CANÓNICAS Y DETALLE DE IMPLEMENTACIÓN**
+**BASE FUNCIONAL CERRADA HASTA LA CAPA 99 — CANON EXTERNO RESUELTO · PLANO MÉTRICO ACTIVO**
 
 ## Objetivo
 
@@ -285,7 +285,7 @@ Treskal debe conservar únicamente aquello que sea realmente local.
 
 Clasificación:
 
-**FUNCTIONAL_BASE_COMPLETE_PENDING_EXTERNAL_CANON**
+**FUNCTIONAL_BASE_COMPLETE_EXTERNAL_CANON_RESOLVED_METRIC_PLAN_ACTIVE**
 
 No significa:
 
@@ -413,3 +413,28 @@ Punto 13 resuelve además las antiguas dependencias locales de:
 Treskal hereda esta base desde Norgard y no crea nivel tecnológico propio.
 
 Regla autoral preservada: **relojes fuera**.
+
+
+---
+
+### Actualización — inicio del plano métrico
+
+La auditoría final pre-plano confirma:
+
+- `blockedPendingCanon = []` en Norgard;
+- 0 bloqueos externos;
+- T01–T12 congelados como sectores funcionales obligatorios;
+- S01–S13 congelados como capacidades singulares obligatorias;
+- topología de desembocadura integrada preservada;
+- ciudad sin muralla;
+- Punto 1 del plano métrico cerrado.
+
+La fase activa ya no es completar sistemas funcionales.
+
+La fase activa es:
+
+`Plano Métrico de Treskal — Punto 2: escala y huella urbana`.
+
+Referencia:
+
+`AUDITORIA_FINAL_PREPLANO_METRICO_TRESKAL_v0.1.md`
