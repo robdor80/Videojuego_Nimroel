@@ -11,8 +11,9 @@ Roadmap:
 Estado:
 
 - Punto 1 — Auditoría final pre-plano: **CERRADO**;
-- Punto 2 — Escala y huella urbana: **CERRADO**.
-- Punto 3 — Geografía métrica: **SIGUIENTE**.
+- Punto 2 — Escala y huella urbana: **CERRADO**;
+- Punto 3 — Geografía métrica: **CERRADO**;
+- Punto 4 — Encaje T01–T12: **SIGUIENTE**.
 
 Auditoría vigente:
 
@@ -849,4 +850,28 @@ Treskal utiliza como referencia de dimensionado:
 
 El agua no se cuenta como suelo urbano.
 
-La siguiente fase es fijar río, costa, cotas, inundabilidad y puente en el **Punto 3**.
+### Geografía métrica cerrada — Punto 3
+
+Referencia local:
+
+`TRESKAL_LOCAL_METRIC_V1`
+
+Quedan fijados:
+
+- río de ~1.424 m dentro de la ventana de control;
+- boca principal de ~100 m;
+- masa urbana principal en la margen oriental;
+- T01: 380 m de frente fluvial;
+- T07: 540 m de frente costero;
+- separación T07–T08: 260 m;
+- T08: 940 m de frente costero;
+- bandas topográficas Z0–Z4;
+- zonas de inundabilidad F1–F3;
+- Puente de los Gemelos en PK fluvial 820 m, 78 m de longitud y 6,2 m de ancho útil;
+- ningún paso menor permanente necesario.
+
+Contrato:
+
+`Datos operativos/treskal_metric_geography_contract_v0.1.json`
+
+La siguiente fase es el **Punto 4 — Encaje métrico T01–T12**.
