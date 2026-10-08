@@ -757,5 +757,27 @@
       "borders",
       "metric_adjacencies"
     ]
+  },
+  "T08MainlandContinuityCanon": {
+    "clarificationDate": "2026-10-08",
+    "status": "binding_visual_and_logistical_invariant_no_geometry_change",
+    "geographicNature": "mainland_east_coast_land_connected",
+    "island": false,
+    "artificialDetachedIsland": false,
+    "peninsulaAllowedOnlyIfContiguousMainland": true,
+    "T08OnSingleContinentalLandMassWithTreskal": true,
+    "landwardAccessMustRemainContinuous": true,
+    "landwardSeaChannelSeveringT08Forbidden": true,
+    "islandAppearanceInAerialOrMapForbidden": true,
+    "onlyBoatsOrFerriesForShipyardSuppliesForbidden": true,
+    "narrowFootbridgeOnlyAccessForbidden": true,
+    "noNewBridgeOrCanalAdded": true,
+    "mainlandServiceEntry": [
+      "C05",
+      "C16"
+    ],
+    "coastalShoulderBetweenT07AndT08": "260m_T04_shoreline_not_water_channel",
+    "orientation": "T08_on_eastern_or_southeastern_continental_shore_water_seaward_land_connection_rearward",
+    "rationale": "heavy_terrestrial_delivery_of_logs_beams_hulls_workers_provisions_and_artillery_free_shipbuilding_materials"
   }
 }
