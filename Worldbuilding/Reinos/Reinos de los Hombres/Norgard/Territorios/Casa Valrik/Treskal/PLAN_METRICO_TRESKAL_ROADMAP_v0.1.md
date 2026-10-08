@@ -122,7 +122,7 @@ Debe fijar:
 
 ## Punto 7 — Puerto civil y Complejo Naval Real
 
-Estado: **SIGUIENTE / ACTIVO**
+Estado: **CERRADO**
 
 Debe resolver métricamente:
 
@@ -142,6 +142,8 @@ Debe resolver métricamente:
 ---
 
 ## Punto 8 — Parcelación y tejido urbano
+
+Estado: **SIGUIENTE / ACTIVO**
 
 Debe fijar:
 
