@@ -592,7 +592,23 @@
         "toT09": 86.1,
         "toT12": 358.9
       },
-      "overlapPolicy": "exclusive_controlled_envelope_no_T07_T09_T12_overlap"
+      "overlapPolicy": "exclusive_controlled_envelope_no_T07_T09_T12_overlap",
+      "mainlandAttachment": {
+        "attachedTo": "continuous_east_bank_mainland",
+        "landAccessThrough": "rear_east_northeast_continental_approach",
+        "mainlandRouteIds": [
+          "C05",
+          "C16"
+        ],
+        "island": false,
+        "peninsulaPermittedIfContinuouslyAttached": true,
+        "inlandWaterBarrierAllowed": false,
+        "noWaterChannelSeparatesT08FromRestOfTreskal": true,
+        "noBridgeOnlyOrFerryOnlyConnection": true,
+        "navigableWaterOnLandwardBoundary": false,
+        "coastalShoulderRelation": "T04_shoreline_260m_does_not_isolate_T08",
+        "landSupplyForLargeTimberMandatory": true
+      }
     },
     "T09": {
       "geometryType": "Polygon",
@@ -1298,5 +1314,11 @@
       "facility_orientation",
       "internal_reserves"
     ]
+  },
+  "point10VisualGuardrail": {
+    "status": "binding_no_geometry_change",
+    "T08DetachedIsland": false,
+    "visualPeninsulaOnlyWhenLandConnected": true,
+    "distinguishPublicRestrictedByGatesAndBordersNotBySeaMoat": true
   }
 }
