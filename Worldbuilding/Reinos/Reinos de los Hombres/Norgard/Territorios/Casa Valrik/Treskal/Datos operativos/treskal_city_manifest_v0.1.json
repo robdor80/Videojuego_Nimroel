@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "1.8",
+  "version": "1.9",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -114,7 +114,8 @@
     "metricRoadNetwork": "Datos operativos/treskal_metric_road_network_contract_v0.1.json",
     "metricWaterfront": "Datos operativos/treskal_metric_waterfront_contract_v0.1.json",
     "metricUrbanFabric": "Datos operativos/treskal_metric_urban_fabric_contract_v0.1.json",
-    "urbanFabricRegistry": "Datos operativos/treskal_urban_fabric_registry_v0.1.json"
+    "urbanFabricRegistry": "Datos operativos/treskal_urban_fabric_registry_v0.1.json",
+    "integratedFunctionalValidation": "Datos operativos/treskal_integrated_functional_validation_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -302,7 +303,8 @@
     "metricPlanPoint5": "Validacion/treskal_metric_plan_point_5_validation_pack_v0.1.json",
     "metricPlanPoint6": "Validacion/treskal_metric_plan_point_6_validation_pack_v0.1.json",
     "metricPlanPoint7": "Validacion/treskal_metric_plan_point_7_validation_pack_v0.1.json",
-    "metricPlanPoint8": "Validacion/treskal_metric_plan_point_8_validation_pack_v0.1.json"
+    "metricPlanPoint8": "Validacion/treskal_metric_plan_point_8_validation_pack_v0.1.json",
+    "metricPlanPoint9": "Validacion/treskal_metric_plan_point_9_validation_pack_v0.1.json"
   },
   "coreInheritance": {
     "status": "complete_high_confidence_migration_validated",
@@ -939,8 +941,8 @@
   "metricPlan": {
     "status": "active",
     "roadmap": "PLAN_METRICO_TRESKAL_ROADMAP_v0.1.md",
-    "currentPoint": 9,
-    "currentPointName": "integrated_functional_validation",
+    "currentPoint": 10,
+    "currentPointName": "canonical_final_map",
     "point1": {
       "status": "closed_static_validated",
       "audit": "AUDITORIA_FINAL_PREPLANO_METRICO_TRESKAL_v0.1.md",
@@ -1034,6 +1036,20 @@
       "blockClusters": 110,
       "parcels": 2175,
       "validationCaseCount": 156,
+      "authorDecisionRequiredBeforeNextPoint": false
+    },
+    "point9": {
+      "status": "closed_integrated_validated",
+      "source": "08_Cartografia/validacion_funcional_integral_treskal_v0.1.md",
+      "contract": "Datos operativos/treskal_integrated_functional_validation_contract_v0.1.json",
+      "validation": "Validacion/treskal_metric_plan_point_9_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PLANO_METRICO_TRESKAL_PUNTO_9_VALIDACION_FUNCIONAL_INTEGRAL_v0.1.md",
+      "validationCaseCount": 180,
+      "stressScenarioCount": 24,
+      "unresolvedFailures": 0,
+      "acceptedResidualRisks": 5,
+      "geometryCorrectionsRequired": 0,
+      "operationalClarificationsApplied": 4,
       "authorDecisionRequiredBeforeNextPoint": false
     }
   }
