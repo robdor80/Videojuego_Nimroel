@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "1.8",
+  "version": "2.0",
   "status": "final_preplan_constraint_set_point_1_closed",
   "purpose": "Freeze every canonical spatial constraint required before Treskal metric planning and certify that no external canon blocker remains.",
-  "planReadiness": "point_9_closed_ready_for_point_10_canonical_final_map",
+  "planReadiness": "metric_plan_complete_canonical_map_published",
   "authorInputRequiredNow": false,
   "closureMarker": "TRESKAL_METRIC_PLAN_POINT_1_PREPLAN_AUDIT_CLOSED",
   "externalCanonBlockers": [],
@@ -253,9 +253,7 @@
     "point7": [],
     "point8": [],
     "point9": [],
-    "point10": [
-      "canonical_map_and_stable_spatial_output"
-    ]
+    "point10": []
   },
   "decisionClassification": {
     "unresolvedExternalCanonCount": 0,
@@ -268,7 +266,8 @@
     "unresolvedAuthorDecisionsRequiredBeforePoint7": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint8": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint9": 0,
-    "unresolvedAuthorDecisionsRequiredBeforePoint10": 0
+    "unresolvedAuthorDecisionsRequiredBeforePoint10": 0,
+    "unresolvedAuthorDecisionsRequiredAfterPoint10": 0
   },
   "resolvedMetricScale": {
     "contract": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
@@ -359,5 +358,16 @@
     "operationalClarificationsApplied": 4,
     "acceptedResidualRisks": 5,
     "readyForPoint10": true
+  },
+  "resolvedCanonicalMap": {
+    "contract": "Datos operativos/treskal_canonical_map_contract_v1.0.json",
+    "spatialExport": "08_Cartografia/exports/treskal_canonical_spatial_export_v1.0.geojson",
+    "mapsPublished": 3,
+    "spatialFeatures": 2404,
+    "stableBlocks": 110,
+    "stableParcels": 2175,
+    "validationCases": 200,
+    "unresolvedFailures": 0,
+    "metricPlanComplete": true
   }
 }
