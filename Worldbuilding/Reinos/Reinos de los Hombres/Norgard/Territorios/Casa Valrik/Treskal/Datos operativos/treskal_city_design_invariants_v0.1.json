@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "0.9",
+  "version": "1.0",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3624,6 +3624,115 @@
         "Point 7 does not fix ordinary blocks or parcels",
         "Point 8 remains responsible for urban fabric",
         "final map remains Point 10"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_area",
+      "expected": [
+        "mixed fabric remains 100-120 ha",
+        "canonical allocation is 110.7 ha",
+        "water excluded"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_density",
+      "expected": [
+        "12 fabric zones use D1-D5 gradients",
+        "core denser than periphery",
+        "population reference remains 15000 residents"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_parcels",
+      "expected": [
+        "110 organic block clusters",
+        "2175 ordinary parcel slots",
+        "parcel count is not active business count"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_heights",
+      "expected": [
+        "one and two storeys dominate",
+        "three storeys minority",
+        "above three not ordinary fabric"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_mixed_use",
+      "expected": [
+        "mixed use remains common",
+        "perfect residential-commercial separation forbidden",
+        "courtyards and work yards retained"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_wood_fire",
+      "expected": [
+        "UF05 UF06 include fire interruptions",
+        "bulk timber stays in S09 or approved large yards",
+        "fire access remains possible"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_local_lanes",
+      "expected": [
+        "L01-L12 remain fixed technical local lanes",
+        "R5/P1 widths inherit Point 6",
+        "official street names remain open"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_milling",
+      "expected": [
+        "MC01 and MC02 reserve milling capacity",
+        "no water powered sawmill inferred",
+        "no named institution created"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_funeral",
+      "expected": [
+        "PFA01 is nonreligious cremation capacity",
+        "not cemetery",
+        "maritime ash variant remains optional"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_water_waste",
+      "expected": [
+        "10 water access nodes reserved",
+        "raw river water not automatically potable",
+        "waste requires removal and no modern sewer"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_growth",
+      "expected": [
+        "25.82 ha ordinary growth reserve preserved",
+        "growth requires causal extension of roads and services"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_ids",
+      "expected": [
+        "UF01-UF12 B001-B110 P0001-P2175 stable",
+        "runtime reroll forbidden",
+        "Point 10 cannot renumber"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_T08_T12",
+      "expected": [
+        "no ordinary residential parcelization inside T08 or T12",
+        "singular compounds remain independent"
+      ]
+    },
+    {
+      "id": "metric_urban_fabric_scope",
+      "expected": [
+        "Point 8 does not perform integrated Point 9 stress tests",
+        "Point 10 renders but does not redesign parcel allocation"
       ]
     }
   ]
