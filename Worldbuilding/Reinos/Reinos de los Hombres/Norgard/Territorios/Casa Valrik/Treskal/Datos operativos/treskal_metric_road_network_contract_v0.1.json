@@ -1496,5 +1496,17 @@
     ],
     "officialStreetNamesAssigned": false,
     "mainC01C18GeometryUnchanged": true
+  },
+  "T08MainlandHeavyLogisticsRequirement": {
+    "invariant": "T08_terrestrial_access_is_uninterrupted",
+    "requiredExternalRoad": "C05",
+    "requiredInternalServiceRoad": "C16",
+    "C05Function": "heavy_navalsupply_from_continental_network_to_T08_controlled_gates",
+    "C16Function": "heavy_movements_within_T08_between_S08_and_S13",
+    "minimumInterpretation": "continuous_cart_and_heavy_timber_haulage_connection",
+    "noSeaGapBetweenC05AndC16": true,
+    "noMaritimeTransferRequiredForLandSourcedTimber": true,
+    "bridgeOrFerryAsOnlySupplyAccessForbidden": true,
+    "rasterOrIllustrationMayNotDrawWaterAcrossTheseRoutes": true
   }
 }
