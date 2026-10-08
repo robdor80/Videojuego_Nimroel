@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "0.8",
+  "version": "0.9",
   "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
@@ -436,7 +436,6 @@
     "heavyTrafficDiversionRequired": true
   },
   "unresolvedByDesign": [
-    "T01_T12_metric_geometry",
     "S01_S13_exact_sites_and_footprints",
     "street_level_geometry",
     "T07_T08_waterfront_internal_geometry",
@@ -1265,5 +1264,31 @@
     },
     "floodSafeGroundMinZM": 6,
     "minorPermanentCrossingCount": 0
+  },
+  "metricSectorFit": {
+    "status": "point_4_closed",
+    "contract": "Datos operativos/treskal_metric_sector_fit_contract_v0.1.json",
+    "functionalUnionHa": 185.995,
+    "planningEnvelopeHa": 250.516,
+    "sectorEnvelopeAreasHa": {
+      "T01": 5.747,
+      "T02": 19.535,
+      "T03": 24.35,
+      "T04": 36.451,
+      "T05": 14.6,
+      "T06": 7.68,
+      "T07": 18.371,
+      "T08": 36.022,
+      "T09": 76.885,
+      "T10": 41.495,
+      "T12": 15.395
+    },
+    "T11CorridorCount": 5,
+    "T11CorridorReservationWidthM": 60,
+    "growthReserveHa": 25.82,
+    "T07T08SeparationShoulderOwner": "T04",
+    "sectorAreasAreAdditive": false,
+    "T09Overlay": true,
+    "T11ClosedDistrict": false
   }
 }
