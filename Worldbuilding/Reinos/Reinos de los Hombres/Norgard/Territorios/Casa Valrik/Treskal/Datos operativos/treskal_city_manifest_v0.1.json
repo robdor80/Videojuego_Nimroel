@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "1.9",
+  "version": "2.0",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -115,7 +115,12 @@
     "metricWaterfront": "Datos operativos/treskal_metric_waterfront_contract_v0.1.json",
     "metricUrbanFabric": "Datos operativos/treskal_metric_urban_fabric_contract_v0.1.json",
     "urbanFabricRegistry": "Datos operativos/treskal_urban_fabric_registry_v0.1.json",
-    "integratedFunctionalValidation": "Datos operativos/treskal_integrated_functional_validation_contract_v0.1.json"
+    "integratedFunctionalValidation": "Datos operativos/treskal_integrated_functional_validation_contract_v0.1.json",
+    "canonicalMapContract": "Datos operativos/treskal_canonical_map_contract_v1.0.json",
+    "canonicalSpatialExport": "08_Cartografia/exports/treskal_canonical_spatial_export_v1.0.geojson",
+    "canonicalTechnicalMap": "08_Cartografia/mapas/treskal_plano_tecnico_canonico_v1.0.svg",
+    "canonicalOperationalMap": "08_Cartografia/mapas/treskal_plano_operativo_juego_v1.0.svg",
+    "canonicalReadableLoreMap": "08_Cartografia/mapas/treskal_mapa_legible_lore_v1.0.svg"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -240,9 +245,7 @@
     "royalShipyardsRemainCrownOwned": true,
     "principalRoyalNavalBaseInT08": true
   },
-  "unresolvedStructuralItems": [
-    "metric_city_plan"
-  ],
+  "unresolvedStructuralItems": [],
   "externalDependencies": {
     "urbanGuardRanks": "resolved_functionally_by_Norgard_and_Valrik_military_framework",
     "longTermPenalSystem": "Norgard_law_and_penal_system",
@@ -304,7 +307,8 @@
     "metricPlanPoint6": "Validacion/treskal_metric_plan_point_6_validation_pack_v0.1.json",
     "metricPlanPoint7": "Validacion/treskal_metric_plan_point_7_validation_pack_v0.1.json",
     "metricPlanPoint8": "Validacion/treskal_metric_plan_point_8_validation_pack_v0.1.json",
-    "metricPlanPoint9": "Validacion/treskal_metric_plan_point_9_validation_pack_v0.1.json"
+    "metricPlanPoint9": "Validacion/treskal_metric_plan_point_9_validation_pack_v0.1.json",
+    "metricPlanPoint10": "Validacion/treskal_metric_plan_point_10_validation_pack_v1.0.json"
   },
   "coreInheritance": {
     "status": "complete_high_confidence_migration_validated",
@@ -939,10 +943,10 @@
     "clocks": false
   },
   "metricPlan": {
-    "status": "active",
+    "status": "closed_complete",
     "roadmap": "PLAN_METRICO_TRESKAL_ROADMAP_v0.1.md",
-    "currentPoint": 10,
-    "currentPointName": "canonical_final_map",
+    "currentPoint": null,
+    "currentPointName": null,
     "point1": {
       "status": "closed_static_validated",
       "audit": "AUDITORIA_FINAL_PREPLANO_METRICO_TRESKAL_v0.1.md",
@@ -1051,6 +1055,24 @@
       "geometryCorrectionsRequired": 0,
       "operationalClarificationsApplied": 4,
       "authorDecisionRequiredBeforeNextPoint": false
-    }
+    },
+    "point10": {
+      "status": "closed_canonical_map_published",
+      "source": "08_Cartografia/mapa_canonico_definitivo_treskal_v1.0.md",
+      "contract": "Datos operativos/treskal_canonical_map_contract_v1.0.json",
+      "spatialExport": "08_Cartografia/exports/treskal_canonical_spatial_export_v1.0.geojson",
+      "technicalMap": "08_Cartografia/mapas/treskal_plano_tecnico_canonico_v1.0.svg",
+      "operationalMap": "08_Cartografia/mapas/treskal_plano_operativo_juego_v1.0.svg",
+      "readableLoreMap": "08_Cartografia/mapas/treskal_mapa_legible_lore_v1.0.svg",
+      "validation": "Validacion/treskal_metric_plan_point_10_validation_pack_v1.0.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PLANO_METRICO_TRESKAL_PUNTO_10_MAPA_CANONICO_DEFINITIVO_v1.0.md",
+      "spatialFeatureCount": 2404,
+      "blockClusters": 110,
+      "parcels": 2175,
+      "validationCaseCount": 200,
+      "unresolvedFailures": 0
+    },
+    "completed": true,
+    "nextRecommendedWork": "diegetic_map_family_design_outside_metric_plan"
   }
 }
