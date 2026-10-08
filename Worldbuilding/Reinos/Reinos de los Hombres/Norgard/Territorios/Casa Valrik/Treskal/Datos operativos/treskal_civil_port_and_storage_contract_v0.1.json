@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_civil_port_and_storage_contract",
-  "version": "0.5",
+  "version": "0.6",
   "status": "active_design_contract",
   "civilSystems": {
     "river": {
@@ -99,10 +99,10 @@
   ],
   "externalDependencies": {
     "portTaxesCustoms": "Norgard_fiscal_and_legal_system",
-    "exactAnchorageAndBerthGeometry": "future_Treskal_detailed_cartography"
+    "exactAnchorageAndBerthGeometry": "resolved_by_treskal_metric_waterfront_contract_v0.1"
   },
   "prePlanFiscalAccommodation": {
-    "exactCustomsAndPortTaxSystem": "pending_Norgard_fiscal_and_legal_system",
+    "exactCustomsAndPortTaxSystem": "resolved_external_system_integrated_spatially",
     "genericPortControlOfficeCapacityAlreadySupported": true,
     "standaloneCustomsHouseRequiredByCurrentCanon": false,
     "futureFiscalFunctionsMayUse": [
@@ -156,5 +156,36 @@
     "preservationMayChangeStorageBehavior": true,
     "FOODStateDoesNotReplaceSTClass": true,
     "spoilagePersists": true
+  },
+  "metricWaterfrontIntegration": {
+    "status": "point_7_closed",
+    "contract": "treskal_metric_waterfront_contract_v0.1.json",
+    "T01": {
+      "wharves": [
+        "RW01",
+        "RW02",
+        "RW03"
+      ],
+      "developedWharfM": 295
+    },
+    "T07": {
+      "shorelineZones": [
+        "CP01_FISH_LANDING",
+        "CP02_GENERAL_CARGO_QUAY",
+        "CP03_REPAIR_BEACHING",
+        "CP04_TRANSITION_EDGE"
+      ],
+      "piers": [
+        "CP05_FISHING_PIER",
+        "CP06_MERCHANT_PIER"
+      ],
+      "civilAnchorage": "CIV_ANCH_01",
+      "majorArtificialBreakwater": false
+    },
+    "S07Waterfront": [
+      "CP01_FISH_LANDING",
+      "CP05_FISHING_PIER"
+    ],
+    "capacityFinite": true
   }
 }
