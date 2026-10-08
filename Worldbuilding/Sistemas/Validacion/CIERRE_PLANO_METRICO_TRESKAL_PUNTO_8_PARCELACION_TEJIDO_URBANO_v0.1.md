@@ -124,10 +124,11 @@ Se incorporan:
 
 - contrato operativo;
 - documento cartográfico;
-- **150 validaciones estáticas**;
+- **156 validaciones estáticas**;
 - 12 zonas;
 - 110 agrupaciones;
 - 2.175 parcelas;
+- IDs estables **B001–B110** y **P0001–P2175**;
 - red menor;
 - control de densidad;
 - fuego;
