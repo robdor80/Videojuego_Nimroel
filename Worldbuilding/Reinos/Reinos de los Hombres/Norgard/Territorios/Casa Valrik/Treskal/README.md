@@ -15,7 +15,8 @@ Estado:
 - Punto 3 — Geografía métrica: **CERRADO**;
 - Punto 4 — Encaje T01–T12: **CERRADO**;
 - Punto 5 — Colocación S01–S13: **CERRADO**;
-- Punto 6 — Red viaria: **SIGUIENTE**.
+- Punto 6 — Red viaria: **CERRADO**;
+- Punto 7 — Puerto civil y Complejo Naval Real: **SIGUIENTE**.
 
 Auditoría vigente:
 
@@ -914,4 +915,20 @@ Contrato:
 
 `Datos operativos/treskal_metric_facility_fit_contract_v0.1.json`
 
-La siguiente fase es el **Punto 6 — Red viaria**.
+### Red viaria cerrada — Punto 6
+
+Treskal dispone ya de una red métrica canónica con:
+
+- **18 ejes técnicos**;
+- aproximadamente **12,98 km** de trazado controlado;
+- 7 clases funcionales de vía/movilidad;
+- integración exacta del Puente de los Gemelos;
+- acceso a S01–S13;
+- rutas de madera, ganado, militar y suministro naval capaces de evitar T03;
+- pavimentación selectiva y drenaje preindustrial.
+
+Contrato:
+
+`Datos operativos/treskal_metric_road_network_contract_v0.1.json`
+
+La siguiente fase es el **Punto 7 — Puerto civil y Complejo Naval Real**.
