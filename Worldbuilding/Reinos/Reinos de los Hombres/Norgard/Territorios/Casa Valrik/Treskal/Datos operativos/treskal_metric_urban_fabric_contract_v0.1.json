@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_metric_urban_fabric_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "point_8_closed_static_validated",
   "scope": "Treskal_metric_plan_parcel_and_urban_fabric",
   "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
@@ -20,7 +20,7 @@
     "planningAreaHa": "net_mixed_fabric_allocation_after_major_roads_singular_sites_and_large_open_work_areas",
     "blockClusters": "stable_authored_organic_groupings_not_modern_rectangular_blocks",
     "parcelCounts": "fixed_cartographic_capacity_slots_not_active_business_counts",
-    "parcelGeometryMaterialization": "Point_10_may_render_exact_lines_from_this_fixed_authored_subdivision_without_changing_counts_or_zone_assignments",
+    "parcelGeometryMaterialization": "Point_10_may_render_exact_lines_from_this_fixed_authored_subdivision_and_stable_registry_without_changing_counts_ids_or_zone_assignments",
     "runtimeProceduralGeneration": false
   },
   "areaControl": {
@@ -1640,5 +1640,6 @@
       "growth",
       "emergencies"
     ]
-  }
+  },
+  "stableSpatialRegistry": "treskal_urban_fabric_registry_v0.1.json"
 }
