@@ -18,7 +18,8 @@ Estado:
 - Punto 6 — Red viaria: **CERRADO**;
 - Punto 7 — Puerto civil y Complejo Naval Real: **CERRADO**;
 - Punto 8 — Parcelación y tejido urbano: **CERRADO**;
-- Punto 9 — Validación funcional integral: **SIGUIENTE**.
+- Punto 9 — Validación funcional integral: **CERRADO**;
+- Punto 10 — Mapa canónico definitivo: **SIGUIENTE**.
 
 Auditoría vigente:
 
@@ -972,4 +973,32 @@ Registro estable:
 
 `Datos operativos/treskal_urban_fabric_registry_v0.1.json`
 
-La siguiente fase es el **Punto 9 — Validación funcional integral**.
+### Validación funcional integral cerrada — Punto 9
+
+Treskal ha superado una prueba cruzada completa con:
+
+- **180 validaciones**;
+- **24 escenarios de estrés**;
+- población probada en 12.000 / 15.000 / 18.000 residentes;
+- movilidad y carga;
+- mercados;
+- incendios;
+- agua y saneamiento;
+- inundaciones y temporales;
+- puerto civil;
+- Astilleros/Base Naval;
+- logística militar;
+- crecimiento y emergencias.
+
+Resultado:
+
+- **0 fallos sin resolver**;
+- **0 correcciones geométricas**;
+- 4 clarificaciones operativas;
+- 5 riesgos residuales aceptados.
+
+Contrato:
+
+`Datos operativos/treskal_integrated_functional_validation_contract_v0.1.json`
+
+La siguiente fase es el **Punto 10 — Mapa canónico definitivo**.
