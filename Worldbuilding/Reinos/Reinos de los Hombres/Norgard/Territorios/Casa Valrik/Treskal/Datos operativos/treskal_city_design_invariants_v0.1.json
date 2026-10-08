@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "0.6",
+  "version": "0.7",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3376,6 +3376,84 @@
         "Point 4 does not fix S01-S13 sites",
         "Point 4 does not fix road widths",
         "Point 4 does not fix dock internals"
+      ]
+    },
+    {
+      "id": "metric_facility_fit_all",
+      "expected": [
+        "S01-S13 all have canonical sites",
+        "no new singular facility is introduced"
+      ]
+    },
+    {
+      "id": "metric_facility_fit_T05",
+      "expected": [
+        "S01 includes royal reception and royal apartments without monumental palace",
+        "S02 supports territorial fiscal administration",
+        "public and private circulation remain separable"
+      ]
+    },
+    {
+      "id": "metric_facility_fit_T06",
+      "expected": [
+        "S03 S04 S05 remain in F3",
+        "S04 is temporary custody only",
+        "secure detainee transfer is possible"
+      ]
+    },
+    {
+      "id": "metric_facility_fit_market",
+      "expected": [
+        "S06 remains daily functional market",
+        "loading waste water and fire separation are reserved"
+      ]
+    },
+    {
+      "id": "metric_facility_fit_fish",
+      "expected": [
+        "S07 remains in T01-T07 transition",
+        "fish handling and waste routes are separated",
+        "exact quay remains Point 7"
+      ]
+    },
+    {
+      "id": "metric_facility_fit_T08",
+      "expected": [
+        "S08 and S13 remain Crown-owned inside T08",
+        "land sites remain distinct",
+        "slipways and berths remain deferred to Point 7"
+      ]
+    },
+    {
+      "id": "metric_facility_fit_timber",
+      "expected": [
+        "S09 is distributed between T02 and T04",
+        "fire separation is retained",
+        "T08 supply remains possible"
+      ]
+    },
+    {
+      "id": "metric_facility_fit_livestock",
+      "expected": [
+        "S10 remains in T10",
+        "livestock can avoid T03",
+        "watering and manure handling are reserved"
+      ]
+    },
+    {
+      "id": "metric_facility_fit_T12",
+      "expected": [
+        "S11 supports 260-340 professionals",
+        "S12 supports 800-1200 simultaneous activity",
+        "S12 is not permanent mass housing"
+      ]
+    },
+    {
+      "id": "metric_facility_fit_scope",
+      "expected": [
+        "Point 5 does not fix street geometry",
+        "Point 5 does not fix docks",
+        "Point 5 does not fix architectural interiors"
       ]
     }
   ]
