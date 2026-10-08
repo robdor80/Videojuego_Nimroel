@@ -8,11 +8,11 @@
 
 **T08 (S08 Astilleros Reales + S13 Base Naval Principal) NO ES UNA ISLA.**
 
-T08 pertenece a la **misma masa terrestre continental** que el resto de Treskal y su territorio oriental. Una península o saliente litoral es admisible **solo** si se mantiene una unión terrestre real, ancha y suficiente para la actividad de astilleros y base naval.
+T08 pertenece a la **misma masa terrestre continental** que el resto de Treskal y su territorio oriental. **La lectura visual canónica preferente es una línea de costa continental continua, ligeramente curvada**, con las instalaciones S08/S13 extendidas a lo largo de ella. **No existe obligación de península**. La mera posibilidad de un saliente litoral no autoriza inventarlo: solo sería admisible si está sustentado por la línea costera métrica original y mantiene una unión terrestre real, ancha y suficiente.
 
 ## Justificación cartográfica
 
-- En el contrato geográfico la costa oriental forma una línea continental continua; no se define ningún canal tras T08.
+- En el contrato geográfico la costa oriental forma una línea continental continua con curva suave; **no hay una península naval destacada en la geometría base** ni se define ningún canal tras T08.
 - El polígono T08 tiene superficie terrestre y un frente naval de 940 m en la costa oriental, no contorno insular.
 - Entre T07 y T08 hay una franja costera T04 de 260 m; no un estrecho marino.
 - La red de abastecimiento C05 entra por tierra a T08 desde la retaguardia este/noreste.
@@ -35,7 +35,7 @@ T08 pertenece a la **misma masa terrestre continental** que el resto de Treskal 
                     MAR DE SUTHIROS
 ```
 
-Una imagen podrá enseñar mar en el frente, o un gran saliente costero, **nunca una masa naval separada de la costa continental por una franja de agua**, ni acceso exclusivo en barco o puente sobre un canal nuevo.
+Una imagen debe enseñar **un frente portuario/naval en línea con la costa**, con muelles, gradas y un rompeolas que pueden proyectarse al mar. **No debe dibujar una península monumental, cabo de roca o saliente naval artificial** por razones estéticas, y nunca una masa separada del continente por agua ni acceso exclusivo en barco o puente sobre canal nuevo.
 
 ## Lista de verificación visual: cumplimiento obligatorio
 
@@ -48,6 +48,7 @@ Una imagen podrá enseñar mar en el frente, o un gran saliente costero, **nunca
 - [ ] No se ha añadido un puente/calzamiento sobre agua inexistente para justificar el acceso.
 - [ ] La costa, el río, el puente, el puerto civil y T08 siguen las posiciones del **GeoJSON maestro**.
 - [ ] El área militar se diferencia por **control de acceso y perímetro institucional**, no por aislamiento geográfico.
+- [ ] El puerto naval ocupa un **tramo de costa normal**, sin península grande, nueva bahía trasera ni punta de tierra no documentada.
 - [ ] Una persona viendo la imagen completa **no interpreta T08 como isla**, incluso sin conocer el lore.
 
 **Regla de rechazo:** si cualquiera de las condiciones de continuidad terrestre falla, **asset rechazado**: sin aprobación visual ni ZIP NAP.
