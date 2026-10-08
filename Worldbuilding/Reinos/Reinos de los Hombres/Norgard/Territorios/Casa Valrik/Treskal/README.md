@@ -13,7 +13,8 @@ Estado:
 - Punto 1 — Auditoría final pre-plano: **CERRADO**;
 - Punto 2 — Escala y huella urbana: **CERRADO**;
 - Punto 3 — Geografía métrica: **CERRADO**;
-- Punto 4 — Encaje T01–T12: **SIGUIENTE**.
+- Punto 4 — Encaje T01–T12: **CERRADO**;
+- Punto 5 — Colocación S01–S13: **SIGUIENTE**.
 
 Auditoría vigente:
 
@@ -874,4 +875,25 @@ Contrato:
 
 `Datos operativos/treskal_metric_geography_contract_v0.1.json`
 
-La siguiente fase es el **Punto 4 — Encaje métrico T01–T12**.
+### Encaje métrico cerrado — Punto 4
+
+Quedan fijadas las envolventes T01–T12 y los corredores T11.
+
+Magnitudes de control:
+
+- unión funcional: **185,995 ha**;
+- envolvente terrestre: **250,516 ha**;
+- T01: **5,747 ha**;
+- T07: **18,371 ha**;
+- T08: **36,022 ha**;
+- T10: **41,495 ha**;
+- T12: **15,395 ha**;
+- reserva ordinaria de crecimiento: **25,820 ha**;
+- T11: cinco corredores de reserva;
+- el hombro de 260 m entre T07 y T08 queda adscrito a T04.
+
+Contrato:
+
+`Datos operativos/treskal_metric_sector_fit_contract_v0.1.json`
+
+La siguiente fase es el **Punto 5 — Colocación métrica S01–S13**.
