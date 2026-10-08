@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "0.5",
+  "version": "0.6",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3284,6 +3284,98 @@
         "Point 3 does not fix T01-T12 polygons",
         "Point 3 does not fix S01-S13 sites",
         "Point 3 does not fix streets or dock internal geometry"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_area",
+      "expected": [
+        "functional union remains within 170-200 ha",
+        "planning envelope remains within 230-270 ha",
+        "water remains excluded"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_non_additive",
+      "expected": [
+        "T sector envelope areas are not summed as city area",
+        "functional overlaps are allowed"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_T01",
+      "expected": [
+        "T01 remains 5-8 ha",
+        "T01 keeps 380 m river frontage",
+        "T01 stays on east lower river bank"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_T07",
+      "expected": [
+        "T07 remains 16-22 ha",
+        "T07 keeps 540 m civil coast frontage",
+        "T07 does not touch T08"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_T08",
+      "expected": [
+        "T08 remains 32-42 ha",
+        "T08 keeps 940 m naval frontage",
+        "T08 does not overlap T09 or T12"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_T10",
+      "expected": [
+        "T10 remains 30-45 ha",
+        "T10 remains low density and not fully built"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_T12",
+      "expected": [
+        "T12 remains 13-18 ha",
+        "T12 remains north/northeast",
+        "T12 touches T11 and stays out of T03 T07 T08"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_T11",
+      "expected": [
+        "T11 is a five-corridor reservation network",
+        "60 m is reservation width not final road width",
+        "heavy military traffic can avoid T03"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_T07_T08_separation",
+      "expected": [
+        "260 m shoreline shoulder remains between T07 and T08",
+        "shoulder assigned to T04",
+        "no continuous civil-naval quay"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_T09",
+      "expected": [
+        "T09 is a residential/mixed overlay wrapping T03 T04 T05 T06",
+        "T09 is not pure residential land"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_growth_reserve",
+      "expected": [
+        "25-35 ha ordinary growth reserve remains available",
+        "reserve is not assigned to invented institution"
+      ]
+    },
+    {
+      "id": "metric_sector_fit_scope",
+      "expected": [
+        "Point 4 does not fix S01-S13 sites",
+        "Point 4 does not fix road widths",
+        "Point 4 does not fix dock internals"
       ]
     }
   ]
