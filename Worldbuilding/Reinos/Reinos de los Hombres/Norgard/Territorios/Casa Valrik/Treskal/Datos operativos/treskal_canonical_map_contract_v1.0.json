@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_canonical_map_contract",
+  "version": "1.0",
+  "status": "point_10_closed_canonical_map_published",
+  "cityId": "treskal",
+  "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
+  "coordinateUnits": "metres",
+  "closureMarker": "TRESKAL_METRIC_PLAN_POINT_10_CANONICAL_MAP_CLOSED",
+  "authorityPrecedence": [
+    "Point_3_geography",
+    "Point_4_sector_fit",
+    "Point_5_facility_fit",
+    "Point_6_road_network",
+    "Point_7_waterfront",
+    "Point_8_urban_fabric_and_stable_ids",
+    "Point_9_integrated_operational_clarifications",
+    "Point_10_cartographic_materialization"
+  ],
+  "canonicalBoundsXYm": {
+    "minX": -500,
+    "maxX": 2150,
+    "minY": -600,
+    "maxY": 1450
+  },
+  "northReference": "+Y_true_north_local_reference",
+  "scalePolicy": {
+    "coordinateScale": "1_SVG_unit_equals_1_metric_metre_in_viewBox_geometry",
+    "printedOrScreenSizeMayScaleArbitrarily": true,
+    "canonicalScaleBarM": 500,
+    "distanceMeasurementsMustUseMetricCoordinatesNotScreenPixels": true
+  },
+  "spatialExport": {
+    "file": "08_Cartografia/exports/treskal_canonical_spatial_export_v1.0.geojson",
+    "format": "GeoJSON_FeatureCollection",
+    "featureCount": 2404,
+    "uniqueFeatureIds": true,
+    "layers": {
+      "planning_envelope": 1,
+      "hydrography": 1,
+      "coastline": 2,
+      "bridge": 1,
+      "sector": 11,
+      "singular_facility": 12,
+      "singular_facility_component": 2,
+      "road": 18,
+      "local_lane": 12,
+      "urban_fabric_zone": 12,
+      "block_cluster": 110,
+      "ordinary_parcel": 2175,
+      "water_node": 10,
+      "waste_node": 6,
+      "cremation_area": 1,
+      "river_wharf": 3,
+      "civil_pier": 2,
+      "naval_slipway": 5,
+      "naval_pier": 3,
+      "breakwater": 1,
+      "civil_port_shoreline_zone": 4,
+      "naval_shoreline_quay": 2,
+      "civil_anchorage": 1,
+      "maritime_approach": 2,
+      "naval_controlled_water": 1,
+      "naval_roadstead": 1,
+      "transition_band": 2,
+      "growth_reserve": 3
+    }
+  },
+  "stableSpatialIds": {
+    "fabricZones": "UF01-UF12",
+    "blockClusters": "B001-B110",
+    "ordinaryParcels": "P0001-P2175",
+    "singularFacilities": "S01-S13_with_S09_materialized_as_two_components_under_one_parent",
+    "mainRoads": "C01-C18",
+    "localLanes": "L01-L12",
+    "waterNodes": "W01-W10",
+    "idsMayBeRenumbered": false,
+    "runtimeRerollForbidden": true
+  },
+  "parcelMaterialization": {
+    "method": "offline_deterministic_cartographic_subdivision_inside_Point_8_zone_envelopes",
+    "purpose": "visible_canonical_parcel_boundaries_and_spatial_lookup",
+    "changesPoint8Counts": false,
+    "assignsActiveBusinessOrHousehold": false,
+    "compatibleUsesRemainWorldStateDependent": true,
+    "geometryNowCanonical": true
+  },
+  "mapOutputs": {
+    "technicalMaster": {
+      "file": "08_Cartografia/mapas/treskal_plano_tecnico_canonico_v1.0.svg",
+      "role": "authoritative_human_readable_technical_map",
+      "shows": [
+        "sectors",
+        "facilities",
+        "roads",
+        "local_lanes",
+        "fabric_zones",
+        "blocks",
+        "parcel_lines",
+        "water_nodes",
+        "waterfront",
+        "anchorages",
+        "maritime_approaches",
+        "growth_reserves",
+        "transition_bands"
+      ],
+      "parcelIds": "encoded_as_SVG_element_ids_and_full_GeoJSON_properties_not_mass_text_labels"
+    },
+    "operationalGame": {
+      "file": "08_Cartografia/mapas/treskal_plano_operativo_juego_v1.0.svg",
+      "role": "systems_and_navigation_reference",
+      "shows": [
+        "sectors",
+        "facilities",
+        "roads",
+        "local_lanes",
+        "blocks",
+        "water_nodes",
+        "waterfront",
+        "anchorages",
+        "maritime_approaches",
+        "growth_reserves"
+      ],
+      "excludes": [
+        "dense_individual_parcel_line_clutter"
+      ]
+    },
+    "readableLore": {
+      "file": "08_Cartografia/mapas/treskal_mapa_legible_lore_v1.0.svg",
+      "role": "clean_canonical_reading_map_before_diegetic_stylization",
+      "toponymPolicy": "functional_labels_only_where_safe",
+      "officialDistrictNamesInvented": false,
+      "officialStreetNamesInvented": false,
+      "geometryMatchesTechnicalMaster": true
+    }
+  },
+  "lookupModel": {
+    "example": "coordinate -> parcel Pxxxx -> block Bxxx -> UFxx -> overlapping functional sector Txx -> city Treskal",
+    "parcelLookupUsesGeoJSON": true,
+    "singularFacilityLookupUsesSIds": true,
+    "waterfrontLookupUsesDedicatedOperationalIds": true
+  },
+  "preservedCanonicalConstraints": {
+    "onePermanentMainBridge": true,
+    "cityWall": false,
+    "primaryUrbanMassEastBank": true,
+    "T07T08ContinuousQuay": false,
+    "T07T08SeparationM": 260,
+    "T08CrownControlled": true,
+    "ordinaryResidentialFabricInsideT08": false,
+    "ordinaryResidentialFabricInsideT12": false,
+    "waterExcludedFromTerrestrialUrbanArea": true,
+    "mixedFabricHa": 110.7,
+    "functionalLandHa": 185.995,
+    "planningEnvelopeHa": 250.516,
+    "growthReserveHa": 25.82,
+    "canonicalResidentRange": [
+      12000,
+      18000
+    ]
+  },
+  "namingRules": {
+    "T_C_UF_B_P_L_W_ids": "technical_not_in_world_names",
+    "noOfficialDistrictNamesCreatedByPoint10": true,
+    "noOfficialStreetNamesCreatedByPoint10": true,
+    "existingCanonicalNamePreserved": [
+      "Treskal",
+      "Puente de los Gemelos",
+      "Astilleros Reales",
+      "Base Naval Principal"
+    ],
+    "functionalLabelsAreNotOfficialToponyms": true
+  },
+  "futureMapProducts": {
+    "outsideMetricPlan": true,
+    "mayDeriveFromCanonicalGeometry": true,
+    "mayHideOrDistortInformationDiegetically": true,
+    "mayNotChangeUnderlyingCanonicalCity": true,
+    "examples": [
+      "merchant_street_map",
+      "Valrik_official_map",
+      "naval_restricted_plan",
+      "old_or_incomplete_map",
+      "player_discovery_map"
+    ]
+  },
+  "point10Conclusion": {
+    "metricPlanComplete": true,
+    "canonicalSpatialGeometryPublished": true,
+    "technicalMapPublished": true,
+    "operationalGameMapPublished": true,
+    "readableLoreMapPublished": true,
+    "stableSpatialExportPublished": true,
+    "geometryRedesignRequired": false,
+    "unresolvedFailures": 0
+  },
+  "authorDecisionRequiredAfterPoint10ForMetricClosure": false,
+  "nextRecommendedWork": "diegetic_map_family_design_outside_metric_plan"
+}
