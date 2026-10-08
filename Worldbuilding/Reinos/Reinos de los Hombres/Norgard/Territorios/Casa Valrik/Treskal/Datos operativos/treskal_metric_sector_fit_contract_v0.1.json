@@ -1,0 +1,1302 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_sector_fit_contract",
+  "version": "0.1",
+  "status": "point_4_closed_static_validated",
+  "scope": "Treskal_metric_plan_sector_fit_T01_T12",
+  "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
+  "sources": [
+    "../08_Cartografia/geografia_metrica_treskal_v0.1.md",
+    "treskal_metric_geography_contract_v0.1.json",
+    "treskal_metric_scale_footprint_contract_v0.1.json",
+    "treskal_city_structure_v0.1.json"
+  ],
+  "closureMarker": "TRESKAL_METRIC_PLAN_POINT_4_SECTOR_FIT_CLOSED",
+  "geometrySemantics": {
+    "sectorPolygonsAre": "functional_design_envelopes_not_cadastral_districts",
+    "polygonsMayOverlapWhenFunctionsInterpenetrate": true,
+    "polygonAreasMustNotBeSummedToDeriveCityArea": true,
+    "authoritativeFunctionalArea": "union_of_T01_T10_T12_envelopes_plus_T11_corridor_reservations",
+    "T09Meaning": "residential_and_mixed_fabric_overlay_wrapping_central_functional_sectors",
+    "T11Meaning": "corridor_reservation_network_not_closed_district",
+    "exactRoadCarriagewaysDeferredToPoint": 6,
+    "exactFacilitiesDeferredToPoint": 5,
+    "exactDockGeometryDeferredToPoint": 7
+  },
+  "planningEnvelope": {
+    "geometryType": "Polygon",
+    "polygonXYm": [
+      [
+        45,
+        20
+      ],
+      [
+        -5,
+        190
+      ],
+      [
+        -55,
+        365
+      ],
+      [
+        -95,
+        540
+      ],
+      [
+        -82,
+        792
+      ],
+      [
+        -100,
+        980
+      ],
+      [
+        -180,
+        1160
+      ],
+      [
+        -218,
+        1380
+      ],
+      [
+        700,
+        1380
+      ],
+      [
+        1550,
+        1380
+      ],
+      [
+        1980,
+        1180
+      ],
+      [
+        2050,
+        820
+      ],
+      [
+        2050,
+        340
+      ],
+      [
+        1890,
+        315
+      ],
+      [
+        1837,
+        307
+      ],
+      [
+        1700,
+        285
+      ],
+      [
+        1480,
+        250
+      ],
+      [
+        1280,
+        220
+      ],
+      [
+        1090,
+        185
+      ],
+      [
+        907,
+        190
+      ],
+      [
+        900,
+        190
+      ],
+      [
+        760,
+        165
+      ],
+      [
+        654,
+        133
+      ],
+      [
+        610,
+        120
+      ],
+      [
+        420,
+        95
+      ],
+      [
+        220,
+        50
+      ],
+      [
+        124,
+        34
+      ],
+      [
+        45,
+        20
+      ]
+    ],
+    "areaHa": 250.516,
+    "point2TargetHa": 250,
+    "withinPoint2BandHa": [
+      230,
+      270
+    ],
+    "waterExcluded": true,
+    "rectangularBoundary": false
+  },
+  "sectors": {
+    "T01": {
+      "geometryType": "Polygon",
+      "role": "river_interface",
+      "polygonXYm": [
+        [
+          -5,
+          190
+        ],
+        [
+          -55,
+          365
+        ],
+        [
+          -95,
+          540
+        ],
+        [
+          70,
+          555
+        ],
+        [
+          105,
+          385
+        ],
+        [
+          150,
+          205
+        ]
+      ],
+      "areaHa": 5.747,
+      "centroidXYm": [
+        27.4,
+        374.1
+      ],
+      "point2BandHa": [
+        5,
+        8
+      ],
+      "waterInterface": {
+        "riverChainageM": [
+          200,
+          580
+        ],
+        "frontageM": 380
+      },
+      "placement": "east_bank_lower_river",
+      "overlapPolicy": "transition_overlap_allowed_with_T02_T03_T07_and_small_T04_contact"
+    },
+    "T02": {
+      "geometryType": "Polygon",
+      "role": "interior_logistics",
+      "polygonXYm": [
+        [
+          -50,
+          590
+        ],
+        [
+          80,
+          540
+        ],
+        [
+          300,
+          560
+        ],
+        [
+          470,
+          700
+        ],
+        [
+          450,
+          900
+        ],
+        [
+          250,
+          1000
+        ],
+        [
+          20,
+          950
+        ],
+        [
+          -80,
+          800
+        ]
+      ],
+      "areaHa": 19.535,
+      "centroidXYm": [
+        190.5,
+        764.1
+      ],
+      "placement": "bridge_to_core_logistics_wedge",
+      "overlapPolicy": "functional_overlap_allowed_with_T03_T04_T09_T10_and_T11"
+    },
+    "T03": {
+      "geometryType": "Polygon",
+      "role": "commercial_core",
+      "polygonXYm": [
+        [
+          110,
+          350
+        ],
+        [
+          330,
+          320
+        ],
+        [
+          610,
+          380
+        ],
+        [
+          730,
+          520
+        ],
+        [
+          650,
+          720
+        ],
+        [
+          430,
+          820
+        ],
+        [
+          180,
+          760
+        ],
+        [
+          80,
+          570
+        ]
+      ],
+      "areaHa": 24.35,
+      "centroidXYm": [
+        387.5,
+        558.9
+      ],
+      "placement": "central_southwest_inland_of_T01_T07",
+      "overlapPolicy": "mixed_core_overlap_allowed_with_T02_T04_T06_T09_and_port_transition"
+    },
+    "T04": {
+      "geometryType": "Polygon",
+      "role": "woodcraft_and_wood_logistics",
+      "polygonXYm": [
+        [
+          0,
+          548
+        ],
+        [
+          70,
+          555
+        ],
+        [
+          260,
+          590
+        ],
+        [
+          430,
+          650
+        ],
+        [
+          650,
+          650
+        ],
+        [
+          760,
+          520
+        ],
+        [
+          700,
+          420
+        ],
+        [
+          654,
+          133
+        ],
+        [
+          760,
+          165
+        ],
+        [
+          907,
+          190
+        ],
+        [
+          1000,
+          587
+        ],
+        [
+          880,
+          720
+        ],
+        [
+          720,
+          780
+        ],
+        [
+          620,
+          1020
+        ],
+        [
+          350,
+          1040
+        ],
+        [
+          180,
+          900
+        ]
+      ],
+      "areaHa": 36.451,
+      "centroidXYm": [
+        560.1,
+        659.8
+      ],
+      "placement": "north_northwest_workshop_belt_with_coastal_logistics_shoulder",
+      "coastalShoulder": {
+        "coastChainageM": [
+          620,
+          880
+        ],
+        "shorelineLengthM": 260,
+        "assignment": "T04",
+        "purpose": [
+          "wood_logistics",
+          "workshop_transition",
+          "civil_naval_physical_separation"
+        ],
+        "continuousCivilNavalQuayAllowed": false
+      },
+      "T08SharedBoundaryM": 407.7,
+      "overlapPolicy": "mixed_workshop_overlap_allowed_with_T02_T03_T09_and_T11"
+    },
+    "T05": {
+      "geometryType": "Polygon",
+      "role": "valrik_administration",
+      "polygonXYm": [
+        [
+          650,
+          720
+        ],
+        [
+          900,
+          690
+        ],
+        [
+          1100,
+          800
+        ],
+        [
+          1080,
+          1030
+        ],
+        [
+          850,
+          1100
+        ],
+        [
+          650,
+          980
+        ]
+      ],
+      "areaHa": 14.6,
+      "centroidXYm": [
+        867.1,
+        886.6
+      ],
+      "placement": "central_east_upper_urban_terrace",
+      "floodClassRequirement": "F3_preferred_and_sensitive_functions_outside_F1_F2",
+      "separationM": {
+        "toT07": 285.8,
+        "toT08": 138.4
+      },
+      "overlapPolicy": "T09_residential_context_overlap_allowed_T06_transition_allowed"
+    },
+    "T06": {
+      "geometryType": "Polygon",
+      "role": "justice_and_urban_guard",
+      "polygonXYm": [
+        [
+          540,
+          550
+        ],
+        [
+          720,
+          520
+        ],
+        [
+          860,
+          620
+        ],
+        [
+          820,
+          780
+        ],
+        [
+          650,
+          830
+        ],
+        [
+          520,
+          720
+        ]
+      ],
+      "areaHa": 7.68,
+      "centroidXYm": [
+        684.1,
+        669.6
+      ],
+      "placement": "central_east_between_T03_and_T05",
+      "floodClassRequirement": "F3_mandatory",
+      "overlapPolicy": "T03_T05_T09_transition_overlap_allowed"
+    },
+    "T07": {
+      "geometryType": "Polygon",
+      "role": "civil_fishing_port",
+      "polygonXYm": [
+        [
+          124,
+          34
+        ],
+        [
+          220,
+          50
+        ],
+        [
+          420,
+          95
+        ],
+        [
+          610,
+          120
+        ],
+        [
+          654,
+          133
+        ],
+        [
+          690,
+          420
+        ],
+        [
+          520,
+          455
+        ],
+        [
+          300,
+          430
+        ],
+        [
+          135,
+          350
+        ]
+      ],
+      "areaHa": 18.371,
+      "centroidXYm": [
+        397.6,
+        256.3
+      ],
+      "point2BandHa": [
+        16,
+        22
+      ],
+      "point2TargetHa": 18,
+      "waterInterface": {
+        "coastChainageM": [
+          80,
+          620
+        ],
+        "frontageM": 540
+      },
+      "placement": "sheltered_east_coast_immediately_east_of_mouth",
+      "directT08Contact": false,
+      "distanceToT08M": 243.9,
+      "overlapPolicy": "transition_overlap_allowed_with_T03_T09_and_T01_T07_transition"
+    },
+    "T08": {
+      "geometryType": "Polygon",
+      "role": "royal_naval_complex",
+      "polygonXYm": [
+        [
+          907,
+          190
+        ],
+        [
+          1090,
+          185
+        ],
+        [
+          1280,
+          220
+        ],
+        [
+          1480,
+          250
+        ],
+        [
+          1700,
+          285
+        ],
+        [
+          1837,
+          307
+        ],
+        [
+          1880,
+          627
+        ],
+        [
+          1600,
+          667
+        ],
+        [
+          1300,
+          647
+        ],
+        [
+          1000,
+          587
+        ]
+      ],
+      "areaHa": 36.022,
+      "centroidXYm": [
+        1391.4,
+        435.1
+      ],
+      "point2BandHa": [
+        32,
+        42
+      ],
+      "point2TargetHa": 36,
+      "waterInterface": {
+        "coastChainageM": [
+          880,
+          1820
+        ],
+        "frontageM": 940
+      },
+      "placement": "deeper_eastern_coast",
+      "directRiverFrontage": false,
+      "controlledAccess": true,
+      "separationM": {
+        "toT07": 243.9,
+        "toT09": 86.1,
+        "toT12": 358.9
+      },
+      "overlapPolicy": "exclusive_controlled_envelope_no_T07_T09_T12_overlap"
+    },
+    "T09": {
+      "geometryType": "Polygon",
+      "role": "central_residential_fabric",
+      "polygonXYm": [
+        [
+          20,
+          300
+        ],
+        [
+          320,
+          260
+        ],
+        [
+          680,
+          300
+        ],
+        [
+          850,
+          430
+        ],
+        [
+          950,
+          700
+        ],
+        [
+          980,
+          1020
+        ],
+        [
+          850,
+          1200
+        ],
+        [
+          420,
+          1180
+        ],
+        [
+          120,
+          1050
+        ],
+        [
+          -20,
+          800
+        ]
+      ],
+      "areaHa": 76.885,
+      "centroidXYm": [
+        476.9,
+        728.8
+      ],
+      "placement": "central_mixed_residential_wrap",
+      "wraps": [
+        "T03",
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "controlledBufferToT08M": 86.1,
+      "overlapPolicy": "intentional_overlay_with_core_sectors_not_additive"
+    },
+    "T10": {
+      "geometryType": "Polygon",
+      "role": "rural_supply_periphery",
+      "polygonXYm": [
+        [
+          -20,
+          900
+        ],
+        [
+          300,
+          860
+        ],
+        [
+          700,
+          1000
+        ],
+        [
+          1000,
+          1100
+        ],
+        [
+          950,
+          1250
+        ],
+        [
+          650,
+          1380
+        ],
+        [
+          50,
+          1380
+        ],
+        [
+          -70,
+          1200
+        ]
+      ],
+      "areaHa": 41.495,
+      "centroidXYm": [
+        403.2,
+        1144.7
+      ],
+      "point2BandHa": [
+        30,
+        45
+      ],
+      "placement": "northwestern_to_northern_low_density_supply_edge",
+      "fullyBuiltUp": false,
+      "distanceToT12M": 110.1,
+      "overlapPolicy": "T11_and_growth_reserve_overlay_allowed"
+    },
+    "T11": {
+      "geometryType": "CorridorSet",
+      "role": "land_access_corridors",
+      "corridorReservationWidthM": 60,
+      "roadWidthMeaning": "not_set_here_reservation_only",
+      "corridors": {
+        "T11A_WEST_BRIDGE": {
+          "centerlineXYm": [
+            [
+              -450,
+              880
+            ],
+            [
+              -158,
+              810
+            ],
+            [
+              80,
+              760
+            ],
+            [
+              250,
+              720
+            ]
+          ],
+          "clippedLandReservationAreaHa": 1.536,
+          "connects": [
+            "territory_west",
+            "Puente_de_los_Gemelos",
+            "T02",
+            "T03"
+          ]
+        },
+        "T11B_RURAL_SUPPLY": {
+          "centerlineXYm": [
+            [
+              250,
+              1380
+            ],
+            [
+              260,
+              1150
+            ],
+            [
+              250,
+              930
+            ],
+            [
+              220,
+              800
+            ],
+            [
+              300,
+              700
+            ]
+          ],
+          "clippedLandReservationAreaHa": 3.204,
+          "connects": [
+            "territory_north",
+            "T10",
+            "T02",
+            "T03"
+          ]
+        },
+        "T11C_FOREST_NAVAL": {
+          "centerlineXYm": [
+            [
+              900,
+              1380
+            ],
+            [
+              780,
+              1150
+            ],
+            [
+              650,
+              950
+            ],
+            [
+              700,
+              800
+            ],
+            [
+              850,
+              700
+            ],
+            [
+              1050,
+              620
+            ],
+            [
+              1200,
+              600
+            ]
+          ],
+          "clippedLandReservationAreaHa": 5.399,
+          "connects": [
+            "forest_routes",
+            "T04",
+            "T08_rear"
+          ]
+        },
+        "T11D_MILITARY_INSTITUTIONAL": {
+          "centerlineXYm": [
+            [
+              1650,
+              1380
+            ],
+            [
+              1500,
+              1280
+            ],
+            [
+              1380,
+              1180
+            ],
+            [
+              1100,
+              1050
+            ],
+            [
+              950,
+              900
+            ],
+            [
+              780,
+              760
+            ]
+          ],
+          "clippedLandReservationAreaHa": 4.63,
+          "connects": [
+            "territory_northeast",
+            "T12",
+            "T05",
+            "T06"
+          ],
+          "heavyTrafficAvoidsT03": true
+        },
+        "T11E_EAST_NAVAL_SUPPLY": {
+          "centerlineXYm": [
+            [
+              2050,
+              820
+            ],
+            [
+              1780,
+              760
+            ],
+            [
+              1500,
+              720
+            ],
+            [
+              1300,
+              680
+            ],
+            [
+              1200,
+              620
+            ]
+          ],
+          "clippedLandReservationAreaHa": 3.954,
+          "connects": [
+            "coastal_regional_approach",
+            "T08_rear"
+          ],
+          "authorizedNavalSupply": true
+        }
+      },
+      "overlapPolicy": "corridor_reservations_overlay_other_sectors_and_do_not_create_closed_area"
+    },
+    "T12": {
+      "geometryType": "Polygon",
+      "role": "valrik_military_precinct",
+      "polygonXYm": [
+        [
+          1100,
+          1050
+        ],
+        [
+          1350,
+          1010
+        ],
+        [
+          1650,
+          1080
+        ],
+        [
+          1650,
+          1300
+        ],
+        [
+          1450,
+          1370
+        ],
+        [
+          1180,
+          1320
+        ]
+      ],
+      "areaHa": 15.395,
+      "centroidXYm": [
+        1387.9,
+        1185
+      ],
+      "point2BandHa": [
+        13,
+        18
+      ],
+      "point2TargetHa": 15,
+      "placement": "north_northeast_inland_edge",
+      "floodClassRequirement": "F3_mandatory",
+      "distanceM": {
+        "toT10": 110.1,
+        "toT08": 358.9
+      },
+      "touchesT11": true,
+      "overlapPolicy": "T11_corridor_overlap_allowed_no_T03_T07_T08_overlap"
+    }
+  },
+  "transitionBands": {
+    "T01_T07_FISH_TRANSFER": {
+      "geometryType": "Polygon",
+      "polygonXYm": [
+        [
+          80,
+          150
+        ],
+        [
+          180,
+          140
+        ],
+        [
+          280,
+          220
+        ],
+        [
+          260,
+          360
+        ],
+        [
+          150,
+          380
+        ],
+        [
+          80,
+          300
+        ]
+      ],
+      "areaHa": 3.78,
+      "purpose": [
+        "river_sea_land_fish_transfer",
+        "future_S07_candidate_context"
+      ],
+      "overlaps": [
+        "T01",
+        "T07",
+        "T03"
+      ],
+      "exactS07SiteDeferredToPoint": 5
+    },
+    "T07_T08_SEPARATION_SHOULDER": {
+      "geometryType": "Polygon",
+      "polygonXYm": [
+        [
+          654,
+          133
+        ],
+        [
+          760,
+          165
+        ],
+        [
+          907,
+          190
+        ],
+        [
+          930,
+          350
+        ],
+        [
+          780,
+          420
+        ],
+        [
+          700,
+          360
+        ]
+      ],
+      "areaHa": 5.219,
+      "owningSector": "T04",
+      "coastChainageM": [
+        620,
+        880
+      ],
+      "shorelineLengthM": 260,
+      "publicCivilNavalContinuousQuay": false
+    }
+  },
+  "ordinaryGrowthReserve": {
+    "geometryType": "MultiPolygonOverlay",
+    "targetBandHa": [
+      25,
+      35
+    ],
+    "totalReservedHa": 25.82,
+    "institutionalReserve": false,
+    "zones": {
+      "GR1_NW_T10": {
+        "polygonXYm": [
+          [
+            50,
+            1120
+          ],
+          [
+            250,
+            1040
+          ],
+          [
+            450,
+            1080
+          ],
+          [
+            500,
+            1300
+          ],
+          [
+            420,
+            1370
+          ],
+          [
+            100,
+            1370
+          ]
+        ],
+        "areaHa": 11.995,
+        "context": "T10_low_density_growth"
+      },
+      "GR2_NE_BEYOND_T12": {
+        "polygonXYm": [
+          [
+            1650,
+            950
+          ],
+          [
+            1900,
+            950
+          ],
+          [
+            1920,
+            1120
+          ],
+          [
+            1800,
+            1250
+          ],
+          [
+            1650,
+            1230
+          ]
+        ],
+        "areaHa": 7,
+        "context": "beyond_T12_ordinary_growth"
+      },
+      "GR3_EAST_REAR_NAVAL": {
+        "polygonXYm": [
+          [
+            1550,
+            690
+          ],
+          [
+            1850,
+            690
+          ],
+          [
+            1950,
+            820
+          ],
+          [
+            1850,
+            900
+          ],
+          [
+            1600,
+            900
+          ]
+        ],
+        "areaHa": 6.825,
+        "context": "T11_edge_storage_workshop_or_compatible_growth"
+      }
+    },
+    "allowedFutureUses": [
+      "housing",
+      "workshops",
+      "storage",
+      "ordinary_long_term_growth",
+      "compatible_civil_port_growth"
+    ],
+    "forbiddenPreassignment": "invented_institution"
+  },
+  "areaAccounting": {
+    "rawSectorEnvelopeAreasNotAdditive": true,
+    "baseSectorEnvelopeUnionHa": 178.601,
+    "functionalUnionIncludingT11ReservationsHa": 185.995,
+    "point2FunctionalBandHa": [
+      170,
+      200
+    ],
+    "point2FunctionalTargetHa": 185,
+    "planningEnvelopeHa": 250.516,
+    "point2PlanningBandHa": [
+      230,
+      270
+    ],
+    "point2PlanningTargetHa": 250,
+    "waterIncluded": false,
+    "functionalUnionWithinBand": true,
+    "planningEnvelopeWithinBand": true
+  },
+  "criticalRelations": {
+    "T01": [
+      "T02",
+      "T03",
+      "T04",
+      "T07_transition"
+    ],
+    "T02": [
+      "T01",
+      "T03",
+      "T04",
+      "T10",
+      "T11"
+    ],
+    "T03": [
+      "T01",
+      "T02",
+      "T04",
+      "T05",
+      "T06",
+      "T07",
+      "T09"
+    ],
+    "T04": [
+      "T01_transition",
+      "T02",
+      "T03",
+      "T08",
+      "T09",
+      "T11"
+    ],
+    "T05": [
+      "T03",
+      "T06",
+      "T09",
+      "T11"
+    ],
+    "T06": [
+      "T03",
+      "T05",
+      "T09",
+      "T11"
+    ],
+    "T07": [
+      "T01_transition",
+      "T03",
+      "T09"
+    ],
+    "T08": [
+      "T04",
+      "T11"
+    ],
+    "T09": [
+      "T03",
+      "T04",
+      "T05",
+      "T06",
+      "T07"
+    ],
+    "T10": [
+      "T02",
+      "T11",
+      "T12_near"
+    ],
+    "T11": [
+      "T02",
+      "T04",
+      "T05",
+      "T06",
+      "T08",
+      "T10",
+      "T12",
+      "territory"
+    ],
+    "T12": [
+      "T10_near",
+      "T11",
+      "T05_T06_via_T11"
+    ]
+  },
+  "flowProofs": {
+    "timber": [
+      "territory_or_forest",
+      "T11C",
+      "T02_or_T04",
+      "T08_or_urban_use"
+    ],
+    "food": [
+      "territory",
+      "T11B",
+      "T10_or_T02",
+      "T03",
+      "city"
+    ],
+    "riverCargo": [
+      "river",
+      "T01",
+      "T02_or_T03_or_T04"
+    ],
+    "maritimeCargo": [
+      "sea",
+      "T07",
+      "T03_or_T02"
+    ],
+    "administration": [
+      "territory",
+      "T11D_or_T11A",
+      "T05_or_T06"
+    ],
+    "royalNavalConstruction": [
+      "T11C_or_T11E_or_T04",
+      "T08",
+      "sea"
+    ],
+    "territorialMobilization": [
+      "territory",
+      "T11D",
+      "T12",
+      "territorial_exit"
+    ],
+    "livestock": [
+      "territory",
+      "T11B",
+      "T10",
+      "future_S10",
+      "city_without_default_T03_crossing"
+    ]
+  },
+  "prohibitions": {
+    "cityWall": false,
+    "secondUrbanCoreWestBank": false,
+    "secondPermanentBridge": false,
+    "T07T08ContinuousQuay": false,
+    "T08ResidentialOverlap": false,
+    "T12T08Overlap": false,
+    "T12FloodplainPlacement": false,
+    "streetsFixedInPoint4": false,
+    "facilitiesFixedInPoint4": false,
+    "docksFixedInPoint4": false
+  },
+  "deferredToLaterPoints": {
+    "point5": [
+      "S01_S13_exact_sites_and_footprints"
+    ],
+    "point6": [
+      "road_centerlines",
+      "carriageway_widths",
+      "street_hierarchy",
+      "exact_bridge_approach_roads"
+    ],
+    "point7": [
+      "quays",
+      "docks",
+      "breakwaters_if_any",
+      "slipways",
+      "naval_basin_internal_geometry"
+    ],
+    "point8": [
+      "blocks",
+      "parcels",
+      "building_fabric"
+    ]
+  },
+  "authorDecisionRequiredBeforePoint5": false,
+  "nextPoint": {
+    "id": 5,
+    "name": "site_fit_S01_S13",
+    "mustResolve": [
+      "S01_S13_exact_sites",
+      "facility_footprints",
+      "facility_accesses",
+      "facility_orientation",
+      "internal_reserves"
+    ]
+  }
+}
