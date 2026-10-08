@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_fishing_fleet_profile",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_local_profile",
   "cityId": "treskal",
   "inherits": [
@@ -12,7 +12,13 @@
     "sector": "T07",
     "landingFacility": "S07",
     "riverInterface": "T01",
-    "royalNavalSectorExcluded": "T08"
+    "royalNavalSectorExcluded": "T08",
+    "metricLandingInterfaces": [
+      "CP01_FISH_LANDING",
+      "CP05_FISHING_PIER"
+    ],
+    "waitingAnchorage": "CIV_ANCH_01",
+    "metricWaterfrontContract": "treskal_metric_waterfront_contract_v0.1.json"
   },
   "fleetIdentity": {
     "fixedBoatCount": false,
