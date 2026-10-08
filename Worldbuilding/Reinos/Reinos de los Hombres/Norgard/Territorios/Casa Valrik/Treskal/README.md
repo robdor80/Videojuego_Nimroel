@@ -14,7 +14,8 @@ Estado:
 - Punto 2 — Escala y huella urbana: **CERRADO**;
 - Punto 3 — Geografía métrica: **CERRADO**;
 - Punto 4 — Encaje T01–T12: **CERRADO**;
-- Punto 5 — Colocación S01–S13: **SIGUIENTE**.
+- Punto 5 — Colocación S01–S13: **CERRADO**;
+- Punto 6 — Red viaria: **SIGUIENTE**.
 
 Auditoría vigente:
 
@@ -896,4 +897,21 @@ Contrato:
 
 `Datos operativos/treskal_metric_sector_fit_contract_v0.1.json`
 
-La siguiente fase es el **Punto 5 — Colocación métrica S01–S13**.
+### Colocación métrica cerrada — Punto 5
+
+Las trece instalaciones singulares S01–S13 disponen ya de recinto, huella construida aproximada, orientación, accesos reservados y necesidades internas.
+
+Destacan:
+
+- S08 Astilleros Reales: **15,910 ha**;
+- S13 Base Naval Principal: **11,299 ha**;
+- S09 madera: **9,220 ha** distribuidas entre T02/T04;
+- S10 ganado: **8,075 ha**;
+- S11 Cuartel Territorial: **4,140 ha**;
+- S12 campo de instrucción/movilización: **5,705 ha**.
+
+Contrato:
+
+`Datos operativos/treskal_metric_facility_fit_contract_v0.1.json`
+
+La siguiente fase es el **Punto 6 — Red viaria**.
