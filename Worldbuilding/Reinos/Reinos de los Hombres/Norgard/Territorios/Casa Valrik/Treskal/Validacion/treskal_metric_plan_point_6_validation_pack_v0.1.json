@@ -1,0 +1,1261 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_plan_point_6_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "sourceContract": "../Datos operativos/treskal_metric_road_network_contract_v0.1.json",
+  "caseCount": 126,
+  "expectedCaseCount": 126,
+  "allExpectedConditionsDefined": true,
+  "categories": {
+    "roadClassesAndPrinciples": 21,
+    "roadGeometry": 36,
+    "facilityAccess": 26,
+    "movementPolicies": 15,
+    "bridgeIntegration": 10,
+    "surfacingDrainage": 10,
+    "scopeAndSafety": 8
+  },
+  "cases": [
+    {
+      "id": "CLASS01",
+      "given": {
+        "class": "R1",
+        "typicalCarriagewayM": 6.2
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS02",
+      "given": {
+        "class": "R2",
+        "typicalCarriagewayM": 5.6
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS03",
+      "given": {
+        "class": "R3",
+        "typicalCarriagewayM": 5.2
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS04",
+      "given": {
+        "class": "R4",
+        "typicalCarriagewayM": 4
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS05",
+      "given": {
+        "class": "R5",
+        "typicalCarriagewayM": 2.8
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS06",
+      "given": {
+        "class": "P1",
+        "minClearWidthM": 1.5
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS07",
+      "given": {
+        "class": "DR1",
+        "typicalUsableWidthM": 6
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS08",
+      "given": {
+        "perfectGrid": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CLASS09",
+      "given": {
+        "allStreetsPaved": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CLASS10",
+      "given": {
+        "modernRoadStandard": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CLASS11",
+      "given": {
+        "cityWallGateNetwork": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CLASS12",
+      "given": {
+        "heavyTrafficDiversion": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CLASS13",
+      "given": {
+        "walkingPrimaryModeDenseCore": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS14",
+      "given": {
+        "cartsSupported": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS15",
+      "given": {
+        "horsesSupported": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS16",
+      "given": {
+        "livestockSeparatedWherePractical": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CLASS17",
+      "given": {
+        "modernStormSewer": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CLASS18",
+      "given": {
+        "crossfallPct": 2
+      },
+      "expect": {
+        "withinBand": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "id": "CLASS19",
+      "given": {
+        "crossfallPct": 4
+      },
+      "expect": {
+        "withinBand": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "id": "CLASS20",
+      "given": {
+        "R5ThroughHeavyTraffic": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CLASS21",
+      "given": {
+        "technicalRoadIdsAreOfficialStreetNames": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "ROAD001",
+      "given": {
+        "road": "C01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD002",
+      "given": {
+        "road": "C01",
+        "lengthM": 874.7
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD003",
+      "given": {
+        "road": "C02",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD004",
+      "given": {
+        "road": "C02",
+        "lengthM": 814.9
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD005",
+      "given": {
+        "road": "C03",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD006",
+      "given": {
+        "road": "C03",
+        "lengthM": 1203.1
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD007",
+      "given": {
+        "road": "C04",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD008",
+      "given": {
+        "road": "C04",
+        "lengthM": 1352
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD009",
+      "given": {
+        "road": "C05",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD010",
+      "given": {
+        "road": "C05",
+        "lengthM": 1034.3
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD011",
+      "given": {
+        "road": "C06",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD012",
+      "given": {
+        "road": "C06",
+        "lengthM": 402.6
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD013",
+      "given": {
+        "road": "C07",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD014",
+      "given": {
+        "road": "C07",
+        "lengthM": 287.7
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD015",
+      "given": {
+        "road": "C08",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD016",
+      "given": {
+        "road": "C08",
+        "lengthM": 576.5
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD017",
+      "given": {
+        "road": "C09",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD018",
+      "given": {
+        "road": "C09",
+        "lengthM": 1052.3
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD019",
+      "given": {
+        "road": "C10",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD020",
+      "given": {
+        "road": "C10",
+        "lengthM": 712.5
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD021",
+      "given": {
+        "road": "C11",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD022",
+      "given": {
+        "road": "C11",
+        "lengthM": 539.4
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD023",
+      "given": {
+        "road": "C12",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD024",
+      "given": {
+        "road": "C12",
+        "lengthM": 362.6
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD025",
+      "given": {
+        "road": "C13",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD026",
+      "given": {
+        "road": "C13",
+        "lengthM": 775.5
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD027",
+      "given": {
+        "road": "C14",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD028",
+      "given": {
+        "road": "C14",
+        "lengthM": 514.8
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD029",
+      "given": {
+        "road": "C15",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD030",
+      "given": {
+        "road": "C15",
+        "lengthM": 653.7
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD031",
+      "given": {
+        "road": "C16",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD032",
+      "given": {
+        "road": "C16",
+        "lengthM": 708.1
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD033",
+      "given": {
+        "road": "C17",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD034",
+      "given": {
+        "road": "C17",
+        "lengthM": 483.2
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ROAD035",
+      "given": {
+        "road": "C18",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ROAD036",
+      "given": {
+        "road": "C18",
+        "lengthM": 633.2
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ACC001",
+      "given": {
+        "facility": "S01",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC002",
+      "given": {
+        "facility": "S01",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC003",
+      "given": {
+        "facility": "S02",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC004",
+      "given": {
+        "facility": "S02",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC005",
+      "given": {
+        "facility": "S03",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC006",
+      "given": {
+        "facility": "S03",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC007",
+      "given": {
+        "facility": "S04",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC008",
+      "given": {
+        "facility": "S04",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC009",
+      "given": {
+        "facility": "S05",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC010",
+      "given": {
+        "facility": "S05",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC011",
+      "given": {
+        "facility": "S06",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC012",
+      "given": {
+        "facility": "S06",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC013",
+      "given": {
+        "facility": "S07",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC014",
+      "given": {
+        "facility": "S07",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC015",
+      "given": {
+        "facility": "S08",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC016",
+      "given": {
+        "facility": "S08",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC017",
+      "given": {
+        "facility": "S09",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC018",
+      "given": {
+        "facility": "S09",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC019",
+      "given": {
+        "facility": "S10",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC020",
+      "given": {
+        "facility": "S10",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC021",
+      "given": {
+        "facility": "S11",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC022",
+      "given": {
+        "facility": "S11",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC023",
+      "given": {
+        "facility": "S12",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC024",
+      "given": {
+        "facility": "S12",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC025",
+      "given": {
+        "facility": "S13",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ACC026",
+      "given": {
+        "facility": "S13",
+        "hasAtLeastOneRoadOrControlledLink": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE01",
+      "given": {
+        "timberUses": [
+          "C03",
+          "C10",
+          "C13",
+          "C05"
+        ]
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE02",
+      "given": {
+        "timberForcedThroughT03": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "MOVE03",
+      "given": {
+        "livestockUses": [
+          "C02",
+          "C14"
+        ]
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE04",
+      "given": {
+        "livestockThroughT03": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "MOVE05",
+      "given": {
+        "militaryUses": [
+          "C04",
+          "C15"
+        ]
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE06",
+      "given": {
+        "militaryHeavyTrafficThroughT03ByDefault": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "MOVE07",
+      "given": {
+        "navalSupplyUses": [
+          "C05",
+          "C16"
+        ]
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE08",
+      "given": {
+        "T08ControlledEntry": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE09",
+      "given": {
+        "civilPortCargoUses": [
+          "C11",
+          "C06"
+        ]
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE10",
+      "given": {
+        "riverCargoUses": [
+          "C07"
+        ]
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE11",
+      "given": {
+        "publicPedestriansAllowedOnC08": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE12",
+      "given": {
+        "publicPedestriansUnrestrictedInsideC16": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "MOVE13",
+      "given": {
+        "localP1PassagesDeferredToPoint8": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE14",
+      "given": {
+        "heavyTrafficCanAvoidT03": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MOVE15",
+      "given": {
+        "livestockCanAvoidT03": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BR01",
+      "given": {
+        "bridge": "Puente de los Gemelos",
+        "road": "C01"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BR02",
+      "given": {
+        "bridgeDeckClearM": 6.2
+      },
+      "expect": {
+        "matchesPoint3": true
+      }
+    },
+    {
+      "id": "BR03",
+      "given": {
+        "bridgeCarriagewayM": 5.2
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BR04",
+      "given": {
+        "bridgeFootStripM": 1
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BR05",
+      "given": {
+        "bridgeAllocationTotalM": 6.2
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "BR06",
+      "given": {
+        "approachGradientPct": 4.5
+      },
+      "expect": {
+        "maxValid": true
+      }
+    },
+    {
+      "id": "BR07",
+      "given": {
+        "westApproachReserveM": 85
+      },
+      "expect": {
+        "matchesPoint3": true
+      }
+    },
+    {
+      "id": "BR08",
+      "given": {
+        "eastApproachReserveM": 65
+      },
+      "expect": {
+        "matchesPoint3": true
+      }
+    },
+    {
+      "id": "BR09",
+      "given": {
+        "secondPermanentBridge": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "BR10",
+      "given": {
+        "heavyConvoyControlAvailable": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SURF01",
+      "given": {
+        "stonePriorityAtBridgeApproaches": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SURF02",
+      "given": {
+        "stonePriorityAtS06": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SURF03",
+      "given": {
+        "stonePriorityAtT08Gates": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SURF04",
+      "given": {
+        "gravelPriorityHeavyRoutes": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SURF05",
+      "given": {
+        "packedEarthAllowedR4R5": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SURF06",
+      "given": {
+        "drainagePriorityC01": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SURF07",
+      "given": {
+        "drainagePriorityC06": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SURF08",
+      "given": {
+        "openDitchesAllowed": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SURF09",
+      "given": {
+        "stoneChannelsAllowed": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SURF10",
+      "given": {
+        "universalPavingRequired": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE01",
+      "given": {
+        "facilityRelocatedByPoint6": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE02",
+      "given": {
+        "sectorRelocatedByPoint6": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE03",
+      "given": {
+        "exactQuaysFixedInPoint6": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE04",
+      "given": {
+        "exactSlipwaysFixedInPoint6": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE05",
+      "given": {
+        "parcelServicePassagesAllFixedInPoint6": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE06",
+      "given": {
+        "T08AuthorityChangedToValrik": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE07",
+      "given": {
+        "T12AccessMergedIntoT08": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE08",
+      "given": {
+        "nextPoint": 7
+      },
+      "expect": {
+        "topic": "civil_port_and_royal_naval_waterfront"
+      }
+    }
+  ],
+  "summary": {
+    "technicalRoadCount": 18,
+    "controlledNetworkLengthM": 12981,
+    "facilitiesWithAccess": 13,
+    "heavyTrafficCanAvoidT03": true,
+    "livestockCanAvoidT03": true,
+    "secondPermanentBridge": false,
+    "externalCanonBlockers": 0,
+    "authorDecisionRequiredBeforePoint7": false
+  },
+  "marker": "TRESKAL_METRIC_PLAN_POINT_6_ROAD_NETWORK_CLOSED"
+}
