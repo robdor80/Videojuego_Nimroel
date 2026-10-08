@@ -157,7 +157,11 @@
     "canonicalResidentRange": [
       12000,
       18000
-    ]
+    ],
+    "T08IsMainlandNotIsland": true,
+    "T08HasContinuousHeavyRoadLandAccessViaC05C16": true,
+    "T08CoastFacingWaterButInlandFacingContinuousLand": true,
+    "T07T08ShoreShoulderDoesNotFormSeparatingChannel": true
   },
   "namingRules": {
     "T_C_UF_B_P_L_W_ids": "technical_not_in_world_names",
@@ -195,5 +199,19 @@
     "unresolvedFailures": 0
   },
   "authorDecisionRequiredAfterPoint10ForMetricClosure": false,
-  "nextRecommendedWork": "diegetic_map_family_design_outside_metric_plan"
+  "nextRecommendedWork": "diegetic_map_family_design_outside_metric_plan",
+  "cartographicVisualPreflight": {
+    "binding": "2026-10-08_T08_MAINLAND_CORRECTION",
+    "mainlandContiguityVisibleRequired": true,
+    "geographicSilhouetteMustMatchCanonicalGeoJSON": true,
+    "C05MustEnterT08OverUnbrokenLand": true,
+    "C16MustServeBothS08AndS13OnLand": true,
+    "T08MayLookLikePeninsulaOnlyIfAttachedToMainland": true,
+    "islandsArtificialNavalPlatformsAndDetachedSeaEnclavesForbidden": true,
+    "waterAcrossLandwardAccessForbidden": true,
+    "noInventedBridgesToRepairAnIsland": true,
+    "aestheticQualityCannotOverrideLandContinuity": true,
+    "visualRejectionIfAmbiguousIslandAppearance": true,
+    "note": "Does not alter frozen shoreline/road/site geometry; this explicitly forbids earlier invalid visual interpretations."
+  }
 }
