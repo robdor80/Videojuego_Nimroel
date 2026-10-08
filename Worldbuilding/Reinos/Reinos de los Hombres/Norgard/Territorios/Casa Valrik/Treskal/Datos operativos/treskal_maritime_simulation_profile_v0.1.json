@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_maritime_simulation_profile",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_local_profile",
   "cityId": "treskal",
   "inherits": [
@@ -127,8 +127,38 @@
     "LoboDePlataUnique": true
   },
   "fiscalInterface": {
-    "status": "reserved_for_point_3",
+    "status": "resolved_spatially_and_by_fiscal_contract",
     "navigationDoesNotAssumeTaxRate": true,
     "portControlCanReceiveFuture_customs_rules": true
+  },
+  "metricWaterfront": {
+    "status": "point_7_closed",
+    "contract": "treskal_metric_waterfront_contract_v0.1.json",
+    "riverBerths": [
+      "RW01",
+      "RW02",
+      "RW03"
+    ],
+    "civilPortBerths": [
+      "CP01_FISH_LANDING",
+      "CP02_GENERAL_CARGO_QUAY",
+      "CP05_FISHING_PIER",
+      "CP06_MERCHANT_PIER"
+    ],
+    "civilAnchorage": "CIV_ANCH_01",
+    "navalSlipways": [
+      "NSW01",
+      "NSW02",
+      "NSW03",
+      "NSW04",
+      "NSW05"
+    ],
+    "navalPiers": [
+      "NFP01",
+      "NFP02_HEAVY_FLEET",
+      "NFP03_TROOP_SUPPLY"
+    ],
+    "navalRoadstead": "NAV_ROADSTEAD_01",
+    "navalBreakwater": "NBW01_EASTERN"
   }
 }
