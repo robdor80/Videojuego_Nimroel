@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_metric_plan_point_8_validation_pack",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_static_validation",
   "sourceContract": "../Datos operativos/treskal_metric_urban_fabric_contract_v0.1.json",
-  "caseCount": 150,
-  "expectedCaseCount": 150,
+  "caseCount": 156,
+  "expectedCaseCount": 156,
   "allExpectedConditionsDefined": true,
   "categories": {
     "areaAccounting": 14,
@@ -14,7 +14,8 @@
     "buildingMorphology": 12,
     "minorLocalNetwork": 14,
     "peripheralAndInfrastructure": 13,
-    "scopeAndPreservation": 10
+    "scopeAndPreservation": 10,
+    "stableSpatialRegistry": 6
   },
   "cases": [
     {
@@ -1459,6 +1460,60 @@
       "expect": {
         "equals": 9
       }
+    },
+    {
+      "id": "REG01",
+      "given": {
+        "registry": "treskal_urban_fabric_registry_v0.1.json"
+      },
+      "expect": {
+        "present": true
+      }
+    },
+    {
+      "id": "REG02",
+      "given": {
+        "fabricZones": 12
+      },
+      "expect": {
+        "equals": 12
+      }
+    },
+    {
+      "id": "REG03",
+      "given": {
+        "blockClusterIds": "B001-B110"
+      },
+      "expect": {
+        "stable": true
+      }
+    },
+    {
+      "id": "REG04",
+      "given": {
+        "parcelIds": "P0001-P2175"
+      },
+      "expect": {
+        "stable": true
+      }
+    },
+    {
+      "id": "REG05",
+      "given": {
+        "runtimeParcelReroll": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "REG06",
+      "given": {
+        "point10MayRenumberParcels": true
+      },
+      "expect": {
+        "valid": false
+      }
     }
   ],
   "summary": {
@@ -1470,7 +1525,9 @@
     "minorLanes": 12,
     "waterNodes": 10,
     "externalCanonBlockers": 0,
-    "authorDecisionRequiredBeforePoint9": false
+    "authorDecisionRequiredBeforePoint9": false,
+    "stableBlockIds": "B001-B110",
+    "stableParcelIds": "P0001-P2175"
   },
   "marker": "TRESKAL_METRIC_PLAN_POINT_8_URBAN_FABRIC_CLOSED"
 }
