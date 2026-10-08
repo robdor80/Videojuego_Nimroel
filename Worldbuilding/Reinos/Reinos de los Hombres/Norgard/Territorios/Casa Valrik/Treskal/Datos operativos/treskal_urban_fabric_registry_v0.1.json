@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_urban_fabric_registry",
+  "version": "0.1",
+  "status": "point_8_closed_stable_spatial_ids",
+  "cityId": "treskal",
+  "source": "treskal_metric_urban_fabric_contract_v0.1.json",
+  "namespaces": {
+    "UF": "urban_fabric_zone",
+    "B": "organic_block_cluster",
+    "P": "ordinary_parcel_or_compound"
+  },
+  "invariants": {
+    "idsStableAcrossSaveLoad": true,
+    "visibleStreetNameNotRequiredForIdentity": true,
+    "runtimeRerollForbidden": true,
+    "point10MayMaterializeGeometryButNotRenumber": true,
+    "singularFacilitiesS01S13UseTheirExistingIds": true,
+    "waterfrontOperationalAreasUseTheirExistingIds": true
+  },
+  "ranges": {
+    "UF01": {
+      "blockClusterRange": "B001-B007",
+      "blockClusterCount": 7,
+      "parcelRange": "P0001-P0105",
+      "parcelCount": 105
+    },
+    "UF02": {
+      "blockClusterRange": "B008-B020",
+      "blockClusterCount": 13,
+      "parcelRange": "P0106-P0415",
+      "parcelCount": 310
+    },
+    "UF03": {
+      "blockClusterRange": "B021-B028",
+      "blockClusterCount": 8,
+      "parcelRange": "P0416-P0565",
+      "parcelCount": 150
+    },
+    "UF04": {
+      "blockClusterRange": "B029-B035",
+      "blockClusterCount": 7,
+      "parcelRange": "P0566-P0685",
+      "parcelCount": 120
+    },
+    "UF05": {
+      "blockClusterRange": "B036-B047",
+      "blockClusterCount": 12,
+      "parcelRange": "P0686-P0895",
+      "parcelCount": 210
+    },
+    "UF06": {
+      "blockClusterRange": "B048-B056",
+      "blockClusterCount": 9,
+      "parcelRange": "P0896-P1055",
+      "parcelCount": 160
+    },
+    "UF07": {
+      "blockClusterRange": "B057-B070",
+      "blockClusterCount": 14,
+      "parcelRange": "P1056-P1365",
+      "parcelCount": 310
+    },
+    "UF08": {
+      "blockClusterRange": "B071-B083",
+      "blockClusterCount": 13,
+      "parcelRange": "P1366-P1665",
+      "parcelCount": 300
+    },
+    "UF09": {
+      "blockClusterRange": "B084-B090",
+      "blockClusterCount": 7,
+      "parcelRange": "P1666-P1795",
+      "parcelCount": 130
+    },
+    "UF10": {
+      "blockClusterRange": "B091-B100",
+      "blockClusterCount": 10,
+      "parcelRange": "P1796-P2025",
+      "parcelCount": 230
+    },
+    "UF11": {
+      "blockClusterRange": "B101-B106",
+      "blockClusterCount": 6,
+      "parcelRange": "P2026-P2120",
+      "parcelCount": 95
+    },
+    "UF12": {
+      "blockClusterRange": "B107-B110",
+      "blockClusterCount": 4,
+      "parcelRange": "P2121-P2175",
+      "parcelCount": 55
+    }
+  },
+  "totals": {
+    "fabricZones": 12,
+    "blockClusters": 110,
+    "ordinaryParcels": 2175
+  },
+  "parcelMaterializationRule": {
+    "method": "offline_authored_cartographic_subdivision",
+    "runtimeGeneration": false,
+    "inputs": [
+      "fixed_zone",
+      "fixed_block_cluster",
+      "fixed_parcel_count",
+      "density_class",
+      "road_frontage",
+      "reserved_exclusions",
+      "historic_irregularity"
+    ],
+    "point10OutputMustBeDeterministic": true,
+    "onceMaterializedBoundariesBecomeCanonical": true
+  },
+  "marker": "TRESKAL_POINT_8_STABLE_PARCEL_IDS_CLOSED"
+}
