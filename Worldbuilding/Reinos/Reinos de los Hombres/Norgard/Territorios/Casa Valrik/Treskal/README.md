@@ -16,7 +16,8 @@ Estado:
 - Punto 4 — Encaje T01–T12: **CERRADO**;
 - Punto 5 — Colocación S01–S13: **CERRADO**;
 - Punto 6 — Red viaria: **CERRADO**;
-- Punto 7 — Puerto civil y Complejo Naval Real: **SIGUIENTE**.
+- Punto 7 — Puerto civil y Complejo Naval Real: **CERRADO**;
+- Punto 8 — Parcelación y tejido urbano: **SIGUIENTE**.
 
 Auditoría vigente:
 
@@ -931,4 +932,20 @@ Contrato:
 
 `Datos operativos/treskal_metric_road_network_contract_v0.1.json`
 
-La siguiente fase es el **Punto 7 — Puerto civil y Complejo Naval Real**.
+### Frente portuario y naval cerrado — Punto 7
+
+El agua de Treskal queda resuelta como infraestructura física:
+
+- T01: **295 m** de muelles desarrollados sobre 380 m de frente;
+- T07: puerto civil/pesquero con 2 pantalanes principales, fondeo finito y control aduanero integrado;
+- S08: **5 gradas** con capacidad de diseño hasta 60 m;
+- S13: muelles de flota, tropas y suministro;
+- un rompeolas naval oriental de ~**289 m**;
+- accesos civil y naval separados;
+- los **260 m** T07–T08 permanecen como hombro T04.
+
+Contrato:
+
+`Datos operativos/treskal_metric_waterfront_contract_v0.1.json`
+
+La siguiente fase es el **Punto 8 — Parcelación y tejido urbano**.
