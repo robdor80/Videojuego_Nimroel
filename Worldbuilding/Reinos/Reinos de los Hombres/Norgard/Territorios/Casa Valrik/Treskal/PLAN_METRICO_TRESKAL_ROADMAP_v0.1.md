@@ -184,7 +184,7 @@ Debe probar al menos:
 
 ## Punto 10 — Mapa canónico definitivo
 
-Estado: **SIGUIENTE / ACTIVO**
+Estado: **CERRADO**
 
 Debe producir:
 
@@ -215,3 +215,19 @@ antes de que el siguiente pueda modificar geometría dependiente.
 ## Regla final
 
 **Primero fijamos cuánto ocupa Treskal; después dónde está cada cosa; finalmente comprobamos que la ciudad pueda funcionar.**
+
+
+---
+
+## Cierre del plan métrico
+
+Estado: **COMPLETO — PUNTOS 1–10 CERRADOS**.
+
+Salidas maestras:
+
+- `08_Cartografia/exports/treskal_canonical_spatial_export_v1.0.geojson`;
+- `08_Cartografia/mapas/treskal_plano_tecnico_canonico_v1.0.svg`;
+- `08_Cartografia/mapas/treskal_plano_operativo_juego_v1.0.svg`;
+- `08_Cartografia/mapas/treskal_mapa_legible_lore_v1.0.svg`.
+
+El trabajo posterior de mapas diegéticos queda fuera de este roadmap y debe derivar de la misma geometría canónica.
