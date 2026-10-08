@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "1.5",
+  "version": "1.6",
   "status": "final_preplan_constraint_set_point_1_closed",
   "purpose": "Freeze every canonical spatial constraint required before Treskal metric planning and certify that no external canon blocker remains.",
-  "planReadiness": "point_6_closed_ready_for_point_7_waterfront",
+  "planReadiness": "point_7_closed_ready_for_point_8_parcel_and_urban_fabric",
   "authorInputRequiredNow": false,
   "closureMarker": "TRESKAL_METRIC_PLAN_POINT_1_PREPLAN_AUDIT_CLOSED",
   "externalCanonBlockers": [],
@@ -250,9 +250,7 @@
     "point4": [],
     "point5": [],
     "point6": [],
-    "point7": [
-      "river_wharves_civil_port_docks_slipways_T08_internal_geometry"
-    ],
+    "point7": [],
     "point8": [
       "blocks_parcels_building_fabric"
     ],
@@ -271,7 +269,8 @@
     "unresolvedAuthorDecisionsRequiredBeforePoint4": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint5": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint6": 0,
-    "unresolvedAuthorDecisionsRequiredBeforePoint7": 0
+    "unresolvedAuthorDecisionsRequiredBeforePoint7": 0,
+    "unresolvedAuthorDecisionsRequiredBeforePoint8": 0
   },
   "resolvedMetricScale": {
     "contract": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
@@ -328,5 +327,16 @@
     "heavyTrafficAvoidsT03": true,
     "livestockAvoidsT03": true,
     "secondPermanentBridge": false
+  },
+  "resolvedMetricWaterfront": {
+    "contract": "Datos operativos/treskal_metric_waterfront_contract_v0.1.json",
+    "T01DevelopedWharfM": 295,
+    "T07CivilPiers": 2,
+    "T07MajorBreakwater": false,
+    "S08Slipways": 5,
+    "S08MaxDesignVesselLengthM": 60,
+    "S13FleetPiers": 2,
+    "navalBreakwater": "NBW01_EASTERN",
+    "civilNavalSeparationM": 260
   }
 }
