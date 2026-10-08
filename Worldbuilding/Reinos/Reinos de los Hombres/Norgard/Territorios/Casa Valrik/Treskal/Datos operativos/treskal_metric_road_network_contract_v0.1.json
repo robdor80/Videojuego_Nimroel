@@ -1,0 +1,1478 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_road_network_contract",
+  "version": "0.1",
+  "status": "point_6_closed_static_validated",
+  "scope": "Treskal_metric_plan_road_network",
+  "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
+  "sources": [
+    "treskal_metric_geography_contract_v0.1.json",
+    "treskal_metric_sector_fit_contract_v0.1.json",
+    "treskal_metric_facility_fit_contract_v0.1.json",
+    "treskal_city_structure_v0.1.json"
+  ],
+  "closureMarker": "TRESKAL_METRIC_PLAN_POINT_6_ROAD_NETWORK_CLOSED",
+  "designPrinciples": {
+    "preindustrialNetwork": true,
+    "perfectGrid": false,
+    "allStreetsPaved": false,
+    "cityWallGates": false,
+    "heavyTrafficDiversion": true,
+    "walkingPrimaryModeInsideDenseCore": true,
+    "cartsSupported": true,
+    "horsesSupported": true,
+    "livestockSeparatedWherePractical": true,
+    "drainageByGradeDitchesAndChannels": true,
+    "roadNamesAreTechnicalIdsNotOfficialToponyms": true
+  },
+  "roadClasses": {
+    "R1": {
+      "role": "primary_regional_and_civic_arterial",
+      "carriagewayWidthM": [
+        5.8,
+        6.5
+      ],
+      "typicalCarriagewayM": 6.2,
+      "fullPublicWayReservationM": [
+        8.5,
+        11
+      ],
+      "twoWayCarts": true,
+      "pedestrians": true,
+      "drainage": "both_sides_where_terrain_requires",
+      "surface": "compacted_stone_and_gravel_with_local_stone_at_high_wear_sections"
+    },
+    "R2": {
+      "role": "heavy_logistics_and_workshop_route",
+      "carriagewayWidthM": [
+        5.2,
+        6
+      ],
+      "typicalCarriagewayM": 5.6,
+      "fullPublicWayReservationM": [
+        7.5,
+        10
+      ],
+      "twoWayCarts": true,
+      "heavyCarts": true,
+      "drainage": "at_least_one_side_normally_both_in_dense_or_wet_segments",
+      "surface": "compacted_gravel_crushed_stone_local_paving_at_yards_and_gates"
+    },
+    "R3": {
+      "role": "principal_urban_street",
+      "carriagewayWidthM": [
+        4.8,
+        5.6
+      ],
+      "typicalCarriagewayM": 5.2,
+      "fullPublicWayReservationM": [
+        6.5,
+        8.5
+      ],
+      "twoWayLightCarts": true,
+      "pedestrians": true,
+      "surface": "mixed_stone_gravel_and_compacted_surface_by_wear"
+    },
+    "R4": {
+      "role": "secondary_or_local_connector",
+      "carriagewayWidthM": [
+        3.4,
+        4.4
+      ],
+      "typicalCarriagewayM": 4,
+      "fullPublicWayReservationM": [
+        4.8,
+        6.5
+      ],
+      "passing": "at_junctions_yards_and_local_widenings",
+      "surface": "compacted_earth_gravel_local_stone_where_needed"
+    },
+    "R5": {
+      "role": "local_lane_service_access",
+      "carriagewayWidthM": [
+        2.4,
+        3.2
+      ],
+      "typicalCarriagewayM": 2.8,
+      "fullPublicWayReservationM": [
+        3.2,
+        4.5
+      ],
+      "surface": "compacted_earth_or_gravel",
+      "throughHeavyTraffic": false
+    },
+    "P1": {
+      "role": "pedestrian_lane_or_passage",
+      "clearWidthM": [
+        1.5,
+        2.4
+      ],
+      "carts": "handcarts_only_or_restricted",
+      "surface": "packed_or_stone_by_context"
+    },
+    "DR1": {
+      "role": "livestock_drove_route",
+      "usableWidthM": [
+        5.5,
+        7
+      ],
+      "typicalUsableWidthM": 6,
+      "reservationM": [
+        8,
+        11
+      ],
+      "surface": "durable_unpaved_or_gravel",
+      "pedestriansAndCarts": "yield_to_livestock_when_active",
+      "throughT03": false
+    }
+  },
+  "bridgeIntegration": {
+    "bridge": "Puente de los Gemelos",
+    "westApproachRoad": "C01",
+    "eastApproachRoad": "C01",
+    "bridgeClearDeckWidthM": 6.2,
+    "deckAllocation": {
+      "carriagewayM": 5.2,
+      "protectedOrRaisedFootStripM": 1
+    },
+    "oppositeCartsMayPass": "cautiously",
+    "heavyConvoyControl": "temporary_yield_or_direction_control_when_needed",
+    "approachGradientPctMax": 4.5,
+    "approachLengthsM": {
+      "west": 85,
+      "east": 65
+    },
+    "noSecondPermanentBridge": true
+  },
+  "roads": {
+    "C01": {
+      "name": "west_bridge_axis",
+      "class": "R1",
+      "centerlineXYm": [
+        [
+          -450,
+          880
+        ],
+        [
+          -158,
+          810
+        ],
+        [
+          -82,
+          792
+        ],
+        [
+          80,
+          760
+        ],
+        [
+          250,
+          720
+        ],
+        [
+          390,
+          650
+        ]
+      ],
+      "lengthM": 874.7,
+      "roles": [
+        "regional_access",
+        "bridge_axis",
+        "goods",
+        "official_traffic"
+      ],
+      "bridgeIntegrated": true
+    },
+    "C02": {
+      "name": "north_rural_supply_axis",
+      "class": "R1",
+      "centerlineXYm": [
+        [
+          250,
+          1380
+        ],
+        [
+          260,
+          1150
+        ],
+        [
+          250,
+          930
+        ],
+        [
+          220,
+          800
+        ],
+        [
+          300,
+          700
+        ],
+        [
+          390,
+          650
+        ]
+      ],
+      "lengthM": 814.9,
+      "roles": [
+        "food",
+        "rural_supply",
+        "travellers",
+        "carts"
+      ]
+    },
+    "C03": {
+      "name": "forest_timber_axis",
+      "class": "R2",
+      "centerlineXYm": [
+        [
+          900,
+          1380
+        ],
+        [
+          780,
+          1150
+        ],
+        [
+          650,
+          950
+        ],
+        [
+          700,
+          800
+        ],
+        [
+          850,
+          700
+        ],
+        [
+          1050,
+          620
+        ],
+        [
+          1200,
+          600
+        ]
+      ],
+      "lengthM": 1203.1,
+      "roles": [
+        "timber",
+        "workshop_supply",
+        "naval_supply"
+      ],
+      "heavyTraffic": true
+    },
+    "C04": {
+      "name": "military_institutional_axis",
+      "class": "R1",
+      "centerlineXYm": [
+        [
+          1650,
+          1380
+        ],
+        [
+          1500,
+          1280
+        ],
+        [
+          1430,
+          1100
+        ],
+        [
+          1380,
+          1180
+        ],
+        [
+          1100,
+          1050
+        ],
+        [
+          950,
+          900
+        ],
+        [
+          780,
+          760
+        ],
+        [
+          650,
+          700
+        ]
+      ],
+      "lengthM": 1352,
+      "roles": [
+        "military",
+        "administration",
+        "official_traffic"
+      ],
+      "heavyTrafficAvoidsT03": true
+    },
+    "C05": {
+      "name": "east_naval_supply_axis",
+      "class": "R2",
+      "centerlineXYm": [
+        [
+          2050,
+          820
+        ],
+        [
+          1780,
+          760
+        ],
+        [
+          1640,
+          620
+        ],
+        [
+          1500,
+          610
+        ],
+        [
+          1290,
+          555
+        ],
+        [
+          1090,
+          525
+        ]
+      ],
+      "lengthM": 1034.3,
+      "roles": [
+        "authorized_naval_supply",
+        "T08_rear_access"
+      ],
+      "controlledAtT08": true
+    },
+    "C06": {
+      "name": "civil_port_market_axis",
+      "class": "R3",
+      "centerlineXYm": [
+        [
+          654,
+          420
+        ],
+        [
+          560,
+          455
+        ],
+        [
+          500,
+          500
+        ],
+        [
+          460,
+          520
+        ],
+        [
+          405,
+          530
+        ],
+        [
+          350,
+          560
+        ],
+        [
+          300,
+          600
+        ]
+      ],
+      "lengthM": 402.6,
+      "roles": [
+        "civil_port",
+        "market",
+        "carts",
+        "pedestrians"
+      ]
+    },
+    "C07": {
+      "name": "river_market_connector",
+      "class": "R3",
+      "centerlineXYm": [
+        [
+          70,
+          555
+        ],
+        [
+          150,
+          540
+        ],
+        [
+          230,
+          520
+        ],
+        [
+          280,
+          500
+        ],
+        [
+          350,
+          500
+        ]
+      ],
+      "lengthM": 287.7,
+      "roles": [
+        "river_cargo",
+        "market",
+        "fish",
+        "carts"
+      ]
+    },
+    "C08": {
+      "name": "civic_institutional_spine",
+      "class": "R3",
+      "centerlineXYm": [
+        [
+          540,
+          720
+        ],
+        [
+          610,
+          790
+        ],
+        [
+          690,
+          850
+        ],
+        [
+          760,
+          900
+        ],
+        [
+          850,
+          930
+        ],
+        [
+          950,
+          900
+        ],
+        [
+          1040,
+          880
+        ]
+      ],
+      "lengthM": 576.5,
+      "roles": [
+        "administration",
+        "justice",
+        "guard",
+        "pedestrians",
+        "light_carts"
+      ]
+    },
+    "C09": {
+      "name": "eastern_residential_arc",
+      "class": "R4",
+      "centerlineXYm": [
+        [
+          850,
+          430
+        ],
+        [
+          900,
+          550
+        ],
+        [
+          930,
+          700
+        ],
+        [
+          940,
+          850
+        ],
+        [
+          930,
+          1000
+        ],
+        [
+          850,
+          1100
+        ],
+        [
+          700,
+          1150
+        ],
+        [
+          520,
+          1120
+        ]
+      ],
+      "lengthM": 1052.3,
+      "roles": [
+        "residential_distribution",
+        "local_services",
+        "pedestrians"
+      ]
+    },
+    "C10": {
+      "name": "woodcraft_workshop_axis",
+      "class": "R2",
+      "centerlineXYm": [
+        [
+          180,
+          900
+        ],
+        [
+          300,
+          900
+        ],
+        [
+          450,
+          880
+        ],
+        [
+          540,
+          850
+        ],
+        [
+          650,
+          800
+        ],
+        [
+          720,
+          780
+        ],
+        [
+          850,
+          700
+        ]
+      ],
+      "lengthM": 712.5,
+      "roles": [
+        "woodcraft",
+        "timber_distribution",
+        "workshop_carts"
+      ],
+      "heavyTraffic": true
+    },
+    "C11": {
+      "name": "civil_port_rear_road",
+      "class": "R3",
+      "centerlineXYm": [
+        [
+          135,
+          350
+        ],
+        [
+          250,
+          400
+        ],
+        [
+          400,
+          430
+        ],
+        [
+          520,
+          455
+        ],
+        [
+          654,
+          420
+        ]
+      ],
+      "lengthM": 539.4,
+      "roles": [
+        "port_rear_access",
+        "cargo_distribution",
+        "fish_distribution"
+      ]
+    },
+    "C12": {
+      "name": "fish_transfer_axis",
+      "class": "R4",
+      "centerlineXYm": [
+        [
+          100,
+          190
+        ],
+        [
+          170,
+          250
+        ],
+        [
+          240,
+          310
+        ],
+        [
+          300,
+          380
+        ],
+        [
+          350,
+          450
+        ]
+      ],
+      "lengthM": 362.6,
+      "roles": [
+        "S07",
+        "fish",
+        "handcarts",
+        "waste_removal"
+      ],
+      "freshFishPriority": true
+    },
+    "C13": {
+      "name": "timber_yard_service_axis",
+      "class": "R2",
+      "centerlineXYm": [
+        [
+          40,
+          650
+        ],
+        [
+          173,
+          736
+        ],
+        [
+          250,
+          860
+        ],
+        [
+          460,
+          790
+        ],
+        [
+          595,
+          766
+        ],
+        [
+          680,
+          840
+        ]
+      ],
+      "lengthM": 775.5,
+      "roles": [
+        "S09A",
+        "S09B",
+        "timber_yards",
+        "fire_access"
+      ],
+      "heavyTraffic": true
+    },
+    "C14": {
+      "name": "livestock_bypass",
+      "class": "DR1",
+      "centerlineXYm": [
+        [
+          240,
+          950
+        ],
+        [
+          300,
+          980
+        ],
+        [
+          360,
+          1060
+        ],
+        [
+          410,
+          1140
+        ],
+        [
+          520,
+          1080
+        ],
+        [
+          620,
+          1000
+        ]
+      ],
+      "lengthM": 514.8,
+      "roles": [
+        "livestock",
+        "drovers",
+        "S10",
+        "urban_edge_distribution"
+      ],
+      "avoidsT03": true
+    },
+    "C15": {
+      "name": "T12_internal_military_loop",
+      "class": "R4",
+      "centerlineXYm": [
+        [
+          1430,
+          1100
+        ],
+        [
+          1500,
+          1150
+        ],
+        [
+          1550,
+          1220
+        ],
+        [
+          1470,
+          1300
+        ],
+        [
+          1380,
+          1280
+        ],
+        [
+          1320,
+          1230
+        ],
+        [
+          1420,
+          1190
+        ],
+        [
+          1430,
+          1100
+        ]
+      ],
+      "lengthM": 653.7,
+      "roles": [
+        "S11",
+        "S12",
+        "military_internal",
+        "muster"
+      ]
+    },
+    "C16": {
+      "name": "T08_internal_service_spine",
+      "class": "R2",
+      "centerlineXYm": [
+        [
+          1090,
+          525
+        ],
+        [
+          1200,
+          560
+        ],
+        [
+          1290,
+          555
+        ],
+        [
+          1450,
+          560
+        ],
+        [
+          1480,
+          570
+        ],
+        [
+          1640,
+          620
+        ],
+        [
+          1780,
+          650
+        ]
+      ],
+      "lengthM": 708.1,
+      "roles": [
+        "S08",
+        "S13",
+        "naval_internal",
+        "controlled_logistics"
+      ],
+      "controlledAccess": true
+    },
+    "C17": {
+      "name": "central_north_south_residential",
+      "class": "R4",
+      "centerlineXYm": [
+        [
+          250,
+          720
+        ],
+        [
+          330,
+          820
+        ],
+        [
+          400,
+          930
+        ],
+        [
+          470,
+          1040
+        ],
+        [
+          520,
+          1120
+        ]
+      ],
+      "lengthM": 483.2,
+      "roles": [
+        "residential",
+        "pedestrians",
+        "light_carts"
+      ]
+    },
+    "C18": {
+      "name": "central_east_west_urban_axis",
+      "class": "R3",
+      "centerlineXYm": [
+        [
+          300,
+          600
+        ],
+        [
+          430,
+          620
+        ],
+        [
+          540,
+          650
+        ],
+        [
+          650,
+          700
+        ],
+        [
+          780,
+          760
+        ],
+        [
+          900,
+          790
+        ]
+      ],
+      "lengthM": 633.2,
+      "roles": [
+        "central_distribution",
+        "market",
+        "civic_access",
+        "pedestrians"
+      ]
+    }
+  },
+  "technicalNetworkLengthM": 12981,
+  "junctions": {
+    "J01": {
+      "xyM": [
+        250,
+        720
+      ],
+      "roads": [
+        "C01",
+        "C17"
+      ],
+      "role": "bridge_logistics_distribution"
+    },
+    "J02": {
+      "xyM": [
+        390,
+        650
+      ],
+      "roads": [
+        "C01",
+        "C02"
+      ],
+      "role": "western_and_northern_supply_merge"
+    },
+    "J03": {
+      "xyM": [
+        850,
+        700
+      ],
+      "roads": [
+        "C03",
+        "C10"
+      ],
+      "role": "woodcraft_forest_distribution"
+    },
+    "J04": {
+      "xyM": [
+        780,
+        760
+      ],
+      "roads": [
+        "C04",
+        "C10",
+        "C18"
+      ],
+      "role": "institutional_workshop_distribution"
+    },
+    "J05": {
+      "xyM": [
+        1090,
+        525
+      ],
+      "roads": [
+        "C05",
+        "C16"
+      ],
+      "role": "royal_shipyard_supply_gate_zone"
+    },
+    "J06": {
+      "xyM": [
+        1640,
+        620
+      ],
+      "roads": [
+        "C05",
+        "C16"
+      ],
+      "role": "naval_base_gate_zone"
+    },
+    "J07": {
+      "xyM": [
+        520,
+        455
+      ],
+      "roads": [
+        "C06",
+        "C11"
+      ],
+      "role": "civil_port_inland_distribution"
+    },
+    "J08": {
+      "xyM": [
+        350,
+        450
+      ],
+      "roads": [
+        "C12"
+      ],
+      "role": "fish_to_market_transition"
+    },
+    "J09": {
+      "xyM": [
+        540,
+        650
+      ],
+      "roads": [
+        "C18"
+      ],
+      "role": "central_civic_distribution"
+    },
+    "J10": {
+      "xyM": [
+        520,
+        1120
+      ],
+      "roads": [
+        "C09",
+        "C17"
+      ],
+      "role": "northern_residential_distribution"
+    }
+  },
+  "facilityAccess": {
+    "S01": [
+      {
+        "anchor": "publicAndAudience",
+        "xyM": [
+          690,
+          850
+        ],
+        "connectsTo": "C08",
+        "spurClass": "R5",
+        "maxSpurM": 20
+      },
+      {
+        "anchor": "privateAndHousehold",
+        "xyM": [
+          860,
+          1010
+        ],
+        "connectsTo": "C09",
+        "spurClass": "R5",
+        "maxSpurM": 35
+      },
+      {
+        "anchor": "serviceAndRoyalSupport",
+        "xyM": [
+          930,
+          900
+        ],
+        "connectsTo": "C08",
+        "spurClass": "R5",
+        "maxSpurM": 25
+      }
+    ],
+    "S02": [
+      {
+        "anchor": "publicAdministrative",
+        "xyM": [
+          1050,
+          880
+        ],
+        "connectsTo": "C08",
+        "spurClass": "R5",
+        "maxSpurM": 20
+      },
+      {
+        "anchor": "staffService",
+        "xyM": [
+          1040,
+          970
+        ],
+        "connectsTo": "C09",
+        "spurClass": "R5",
+        "maxSpurM": 45
+      },
+      {
+        "anchor": "controlledLinkToS01",
+        "xyM": [
+          930,
+          900
+        ],
+        "connectsTo": "S01_internal_edge",
+        "spurClass": "P1",
+        "maxSpurM": 0
+      }
+    ],
+    "S03": [
+      {
+        "anchor": "public",
+        "xyM": [
+          650,
+          573
+        ],
+        "connectsTo": "C18",
+        "spurClass": "R5",
+        "maxSpurM": 55
+      },
+      {
+        "anchor": "officials",
+        "xyM": [
+          780,
+          650
+        ],
+        "connectsTo": "C18",
+        "spurClass": "R5",
+        "maxSpurM": 55
+      },
+      {
+        "anchor": "secureDetaineeTransfer",
+        "xyM": [
+          700,
+          710
+        ],
+        "connectsTo": "S04_secure_link",
+        "spurClass": "R5",
+        "controlled": true
+      }
+    ],
+    "S04": [
+      {
+        "anchor": "secureFromS03",
+        "xyM": [
+          700,
+          710
+        ],
+        "connectsTo": "S03_secure_link",
+        "spurClass": "R5",
+        "controlled": true
+      },
+      {
+        "anchor": "guardAndTransfer",
+        "xyM": [
+          755,
+          785
+        ],
+        "connectsTo": "C08",
+        "spurClass": "R5",
+        "maxSpurM": 35
+      }
+    ],
+    "S05": [
+      {
+        "anchor": "publicAndPatrol",
+        "xyM": [
+          550,
+          620
+        ],
+        "connectsTo": "C18",
+        "spurClass": "R5",
+        "maxSpurM": 25
+      },
+      {
+        "anchor": "yardAndMountedSupport",
+        "xyM": [
+          610,
+          790
+        ],
+        "connectsTo": "C08",
+        "spurClass": "R5",
+        "maxSpurM": 15
+      }
+    ],
+    "S06": [
+      {
+        "anchor": "principalPublic",
+        "xyM": [
+          350,
+          630
+        ],
+        "connectsTo": "C18",
+        "spurClass": "R5",
+        "maxSpurM": 35
+      },
+      {
+        "anchor": "secondaryPublic",
+        "xyM": [
+          530,
+          610
+        ],
+        "connectsTo": "C18",
+        "spurClass": "R5",
+        "maxSpurM": 45
+      },
+      {
+        "anchor": "loadingAndCarts",
+        "xyM": [
+          280,
+          450
+        ],
+        "connectsTo": "C07_or_C12",
+        "spurClass": "R4",
+        "maxSpurM": 45
+      }
+    ],
+    "S07": [
+      {
+        "anchor": "watersideHandling",
+        "xyM": [
+          100,
+          190
+        ],
+        "connectsTo": "C12",
+        "spurClass": "R5",
+        "quayInterfaceDeferredToPoint": 7
+      },
+      {
+        "anchor": "marketAndCartSide",
+        "xyM": [
+          240,
+          310
+        ],
+        "connectsTo": "C12",
+        "spurClass": "R4"
+      },
+      {
+        "anchor": "wasteRemoval",
+        "xyM": [
+          170,
+          340
+        ],
+        "connectsTo": "C12",
+        "spurClass": "R5",
+        "maxSpurM": 45
+      }
+    ],
+    "S08": [
+      {
+        "anchor": "controlledLandGate",
+        "xyM": [
+          1290,
+          555
+        ],
+        "connectsTo": "C05_and_C16",
+        "spurClass": "R2"
+      },
+      {
+        "anchor": "materialsGate",
+        "xyM": [
+          1090,
+          525
+        ],
+        "connectsTo": "C05_and_C16",
+        "spurClass": "R2"
+      }
+    ],
+    "S09": [
+      {
+        "anchor": "S09A_cartGate",
+        "xyM": [
+          40,
+          650
+        ],
+        "connectsTo": "C13",
+        "spurClass": "R2"
+      },
+      {
+        "anchor": "S09A_dispatchGate",
+        "xyM": [
+          250,
+          860
+        ],
+        "connectsTo": "C13",
+        "spurClass": "R2"
+      },
+      {
+        "anchor": "S09B_cartGate",
+        "xyM": [
+          680,
+          840
+        ],
+        "connectsTo": "C13",
+        "spurClass": "R2"
+      }
+    ],
+    "S10": [
+      {
+        "anchor": "livestockEntry",
+        "xyM": [
+          240,
+          950
+        ],
+        "connectsTo": "C14",
+        "spurClass": "DR1"
+      },
+      {
+        "anchor": "urbanDispatch",
+        "xyM": [
+          410,
+          1140
+        ],
+        "connectsTo": "C14",
+        "spurClass": "R4"
+      }
+    ],
+    "S11": [
+      {
+        "anchor": "mainMilitaryGate",
+        "xyM": [
+          1430,
+          1100
+        ],
+        "connectsTo": "C04_and_C15",
+        "spurClass": "R1"
+      },
+      {
+        "anchor": "logisticsGate",
+        "xyM": [
+          1160,
+          1210
+        ],
+        "connectsTo": "C15",
+        "spurClass": "R4",
+        "maxSpurM": 55
+      }
+    ],
+    "S12": [
+      {
+        "anchor": "musterGate",
+        "xyM": [
+          1430,
+          1100
+        ],
+        "connectsTo": "C04_and_C15",
+        "spurClass": "R1"
+      },
+      {
+        "anchor": "fieldServiceGate",
+        "xyM": [
+          1620,
+          1100
+        ],
+        "connectsTo": "C15",
+        "spurClass": "R4",
+        "maxSpurM": 30
+      }
+    ],
+    "S13": [
+      {
+        "anchor": "controlledLandGate",
+        "xyM": [
+          1640,
+          620
+        ],
+        "connectsTo": "C05_and_C16",
+        "spurClass": "R2"
+      },
+      {
+        "anchor": "troopAndSupplyGate",
+        "xyM": [
+          1480,
+          570
+        ],
+        "connectsTo": "C16",
+        "spurClass": "R2"
+      }
+    ]
+  },
+  "movementPolicies": {
+    "heavyTimber": {
+      "preferred": [
+        "C03",
+        "C10",
+        "C13",
+        "C05"
+      ],
+      "avoid": [
+        "C06",
+        "C08",
+        "dense_T03_local_streets"
+      ]
+    },
+    "livestock": {
+      "preferred": [
+        "C02",
+        "C14"
+      ],
+      "avoid": [
+        "T03",
+        "S06_frontage",
+        "T05",
+        "T06"
+      ]
+    },
+    "military": {
+      "preferred": [
+        "C04",
+        "C15"
+      ],
+      "avoid": [
+        "T03_unless_emergency"
+      ]
+    },
+    "navalSupply": {
+      "preferred": [
+        "C05",
+        "C16"
+      ],
+      "controlledEntry": "T08"
+    },
+    "civilPortCargo": {
+      "preferred": [
+        "C11",
+        "C06",
+        "C01_or_C02_as_destination_requires"
+      ]
+    },
+    "riverCargo": {
+      "preferred": [
+        "C07",
+        "C01_or_C02"
+      ]
+    },
+    "pedestrians": {
+      "unrestrictedPublicNetwork": [
+        "C01",
+        "C02",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C11",
+        "C12",
+        "C17",
+        "C18"
+      ],
+      "controlledOrLimited": [
+        "C05_inside_T08",
+        "C15_inside_T12",
+        "C16_inside_T08"
+      ],
+      "localP1PassagesAddedAtPoint8": true
+    }
+  },
+  "surfacingAndDrainage": {
+    "noUniversalPaving": true,
+    "stonePriority": [
+      "Puente_de_los_Gemelos_approaches",
+      "S06_edges",
+      "S07_high_wear_handling_edge",
+      "T05_T06_civic_frontages",
+      "T08_controlled_gates"
+    ],
+    "gravelPriority": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C10",
+      "C13",
+      "C14"
+    ],
+    "packedEarthAllowed": [
+      "R4",
+      "R5",
+      "peripheral_segments"
+    ],
+    "drainagePriority": [
+      "C01",
+      "C06",
+      "C08",
+      "C11",
+      "S06_accesses",
+      "S07_accesses",
+      "T08_gates"
+    ],
+    "crossfallPct": [
+      2,
+      4
+    ],
+    "openDitchesAllowed": true,
+    "stoneChannelsAllowed": true,
+    "modernStormSewer": false
+  },
+  "trafficControl": {
+    "trafficLights": false,
+    "fixedSignals": "signs_posts_bells_or_guards_where_contextual",
+    "marketCongestionManagedBy": "time_space_guard_and_stall_control",
+    "bridgeCongestionManagedBy": "yield_priority_and_guard_control_when_needed",
+    "navalGatesControlledBy": "Crown_naval_authority",
+    "militaryGatesControlledBy": "Valrik_territorial_authority",
+    "urbanGuardAuthorityDoesNotExtendOrdinarilyInsideT08": true
+  },
+  "emergencyAccess": {
+    "fireAccessPriority": [
+      "S06",
+      "S07",
+      "S09",
+      "S08",
+      "S13",
+      "dense_T03_T04"
+    ],
+    "blockedPrimaryRouteMustHaveAlternateWherePractical": true,
+    "bridgeSinglePointVulnerabilityAcknowledged": true,
+    "secondBridgeAddedForRedundancy": false
+  },
+  "rules": {
+    "allS01S13HaveRoadOrControlledAccess": true,
+    "noFacilityRelocated": true,
+    "noSectorRelocated": true,
+    "noSecondPermanentBridge": true,
+    "noCityWallGateNetwork": true,
+    "noModernRoadStandard": true,
+    "roadWidthsRespectBridgeAndPreindustrialScale": true,
+    "heavyTrafficCanAvoidT03": true,
+    "livestockCanAvoidT03": true,
+    "T08AccessRemainsControlled": true,
+    "T12AccessRemainsDistinctFromT08": true
+  },
+  "deferredToLaterPoints": {
+    "point7": [
+      "quays",
+      "dock_aprons",
+      "slipways",
+      "berths",
+      "breakwaters_if_any",
+      "waterfront_internal_circulation_adjustments_within_fixed_access_anchors"
+    ],
+    "point8": [
+      "block_edges",
+      "minor_local_lanes",
+      "courtyards",
+      "parcel_service_passages"
+    ],
+    "point9": [
+      "integrated_congestion_and_emergency_validation"
+    ]
+  },
+  "authorDecisionRequiredBeforePoint7": false,
+  "nextPoint": {
+    "id": 7,
+    "name": "civil_port_and_royal_naval_waterfront",
+    "mustResolve": [
+      "T01_waterfront",
+      "T07_docks",
+      "S07_quay_interface",
+      "T08_waterfront",
+      "S08_slipways",
+      "S13_berths",
+      "security_and_circulation"
+    ]
+  }
+}
