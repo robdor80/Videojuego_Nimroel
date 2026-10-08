@@ -1,0 +1,939 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_waterfront_contract",
+  "version": "0.1",
+  "status": "point_7_closed_static_validated",
+  "scope": "Treskal_metric_plan_T01_T07_T08_waterfront",
+  "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
+  "sources": [
+    "treskal_metric_geography_contract_v0.1.json",
+    "treskal_metric_sector_fit_contract_v0.1.json",
+    "treskal_metric_facility_fit_contract_v0.1.json",
+    "treskal_metric_road_network_contract_v0.1.json",
+    "treskal_civil_port_and_storage_contract_v0.1.json",
+    "treskal_royal_naval_complex_contract_v0.1.json",
+    "treskal_maritime_simulation_profile_v0.1.json",
+    "treskal_fishing_fleet_profile_v0.1.json",
+    "treskal_port_customs_flow_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_royal_navy_default_v0.1.json"
+  ],
+  "closureMarker": "TRESKAL_METRIC_PLAN_POINT_7_WATERFRONT_CLOSED",
+  "principles": {
+    "capacityFinite": true,
+    "vesselCountDerivedNotFixedByPortPlan": true,
+    "berthAssignmentUsesActualVesselDimensionsDraftFunctionWeatherWaterState": true,
+    "waterAreaExcludedFromTerrestrialUrbanArea": true,
+    "civilAndNavalWaterfrontsSeparate": true,
+    "noContinuousCivilNavalQuay": true,
+    "noGunpowderFacilities": true,
+    "noCoastalFortressRequired": true,
+    "exactOrdinaryBuildingParcelsDeferredToPoint": 8
+  },
+  "T01RiverWaterfront": {
+    "riverChainageRangeM": [
+      200,
+      580
+    ],
+    "operationalFrontageM": 380,
+    "function": [
+      "small_merchant_craft",
+      "river_fishing",
+      "river_barge",
+      "inland_cargo",
+      "river_land_transfer"
+    ],
+    "developedWharves": [
+      {
+        "id": "RW01",
+        "chainageM": [
+          210,
+          300
+        ],
+        "developedLengthM": 90,
+        "eastBankApproxEndpointsXYm": [
+          [
+            -7.4,
+            214.9
+          ],
+          [
+            -32.6,
+            301.2
+          ]
+        ],
+        "construction": "timber_pile_wharf_with_local_stone_bank_protection",
+        "maxProjectionIntoNormalChannelM": 4,
+        "landApronWidthM": 12,
+        "primaryUse": [
+          "small_craft",
+          "river_fish",
+          "light_cargo"
+        ]
+      },
+      {
+        "id": "RW02",
+        "chainageM": [
+          325,
+          430
+        ],
+        "developedLengthM": 105,
+        "eastBankApproxEndpointsXYm": [
+          [
+            -39.6,
+            325.2
+          ],
+          [
+            -67.5,
+            426.2
+          ]
+        ],
+        "construction": "stone_revetment_with_timber_loading_face",
+        "maxProjectionIntoNormalChannelM": 5,
+        "landApronWidthM": 16,
+        "primaryUse": [
+          "river_barge",
+          "bulk_cargo",
+          "merchant_river_craft"
+        ]
+      },
+      {
+        "id": "RW03",
+        "chainageM": [
+          455,
+          555
+        ],
+        "developedLengthM": 100,
+        "eastBankApproxEndpointsXYm": [
+          [
+            -74.1,
+            450.4
+          ],
+          [
+            -95.6,
+            543.5
+          ]
+        ],
+        "construction": "timber_wharf_and_ramp_mix",
+        "maxProjectionIntoNormalChannelM": 4,
+        "landApronWidthM": 14,
+        "primaryUse": [
+          "mixed_river_cargo",
+          "small_craft",
+          "river_fish"
+        ]
+      }
+    ],
+    "totalDevelopedWharfM": 295,
+    "undevelopedOrRampGapsM": 85,
+    "ramps": [
+      {
+        "id": "RR01",
+        "chainageM": 240,
+        "widthM": 5,
+        "use": [
+          "small_boat_haulout",
+          "hand_loading"
+        ]
+      },
+      {
+        "id": "RR02",
+        "chainageM": 510,
+        "widthM": 6,
+        "use": [
+          "barge_ramp",
+          "cart_transfer_when_water_allows"
+        ]
+      }
+    ],
+    "navigation": {
+      "upstreamChannelRemainsOpen": true,
+      "minimumPlannedClearWaterCorridorM": 58,
+      "majorOceanGoingVesselsAllowed": false,
+      "bridgePassageForSmallShallowCraftConditional": true,
+      "designFloodNavigationClosed": true
+    },
+    "breakwaterRequired": false,
+    "roadInterfaces": [
+      "C07",
+      "C01_or_C02_by_destination"
+    ],
+    "floodPolicy": {
+      "workingEdgeMayOccupyF1F2": true,
+      "permanentSensitiveStorageOnLowEdge": false,
+      "repairableWaterfrontMaterialsPreferred": true
+    }
+  },
+  "T07CivilPort": {
+    "coastChainageRangeM": [
+      80,
+      620
+    ],
+    "operationalFrontageM": 540,
+    "character": "sheltered_to_moderately_sheltered_civil_and_fishing_port",
+    "shorelineZones": [
+      {
+        "id": "CP01_FISH_LANDING",
+        "coastChainageM": [
+          80,
+          190
+        ],
+        "shorelineLengthM": 110,
+        "landApronDepthM": 18,
+        "primaryUse": [
+          "fishing_landing",
+          "rapid_unload",
+          "S07_transfer"
+        ],
+        "construction": "stone_edge_and_timber_working_deck",
+        "connects": [
+          "S07",
+          "C12"
+        ]
+      },
+      {
+        "id": "CP02_GENERAL_CARGO_QUAY",
+        "coastChainageM": [
+          210,
+          390
+        ],
+        "shorelineLengthM": 180,
+        "landApronDepthM": 22,
+        "primaryUse": [
+          "civil_cargo",
+          "coastal_traders",
+          "merchant_loading_unloading"
+        ],
+        "construction": "stone_revetment_with_timber_faces_and_bollards",
+        "connects": [
+          "C11",
+          "C06"
+        ]
+      },
+      {
+        "id": "CP03_REPAIR_BEACHING",
+        "coastChainageM": [
+          420,
+          540
+        ],
+        "shorelineLengthM": 120,
+        "landwardWorkingDepthM": 60,
+        "primaryUse": [
+          "small_civil_repair",
+          "beaching",
+          "careening",
+          "net_and_gear_work"
+        ],
+        "construction": "graded_working_shore_with_timber_skids_and_yards",
+        "largeRoyalWarshipRepairAllowed": false
+      },
+      {
+        "id": "CP04_TRANSITION_EDGE",
+        "coastChainageM": [
+          540,
+          620
+        ],
+        "shorelineLengthM": 80,
+        "primaryUse": [
+          "port_service_transition",
+          "buffer_to_T04_shoulder"
+        ],
+        "continuousQuayIntoT08": false
+      }
+    ],
+    "piers": [
+      {
+        "id": "CP05_FISHING_PIER",
+        "rootCoastChainageM": 150,
+        "rootApproxXYm": [
+          192.5,
+          45.3
+        ],
+        "axisEndXYm": [
+          190,
+          -50
+        ],
+        "projectionM": 95,
+        "deckWidthM": 6,
+        "headWidthM": 35,
+        "targetUse": [
+          "inshore_fishing_boat",
+          "coastal_fishing_boat",
+          "offshore_fishing_vessel_when_draft_allows"
+        ],
+        "publicCivil": true
+      },
+      {
+        "id": "CP06_MERCHANT_PIER",
+        "rootCoastChainageM": 360,
+        "rootApproxXYm": [
+          397.6,
+          90.1
+        ],
+        "axisEndXYm": [
+          390,
+          -100
+        ],
+        "projectionM": 190,
+        "deckWidthM": 9,
+        "headLengthM": 75,
+        "targetBerthDepthM": 4.5,
+        "targetUse": [
+          "coastal_trader",
+          "merchant_ship_subject_to_actual_draft_and_water_state"
+        ],
+        "publicCivil": true
+      }
+    ],
+    "S07Interface": {
+      "facility": "S07",
+      "preferredWaterfront": [
+        "CP01_FISH_LANDING",
+        "CP05_FISHING_PIER"
+      ],
+      "priorityFlow": [
+        "vessel",
+        "landing",
+        "S07",
+        "sale_or_preservation_or_distribution"
+      ],
+      "perishabilityPriority": true,
+      "fishCartExit": "C12",
+      "wasteRemovalMustNotCrossFreshFishHoldingWherePractical": true
+    },
+    "portControlAndCustoms": {
+      "standaloneCustomsHouse": false,
+      "integratedPortControlRequired": true,
+      "inspectionApron": {
+        "id": "PCZ01",
+        "polygonXYm": [
+          [
+            430,
+            230
+          ],
+          [
+            530,
+            225
+          ],
+          [
+            560,
+            295
+          ],
+          [
+            455,
+            325
+          ]
+        ],
+        "areaHaApprox": 0.72,
+        "use": [
+          "manifest_control",
+          "selective_inspection",
+          "temporary_hold_while_processing"
+        ]
+      },
+      "heldCargoYard": {
+        "id": "PCZ02",
+        "polygonXYm": [
+          [
+            500,
+            325
+          ],
+          [
+            610,
+            300
+          ],
+          [
+            630,
+            370
+          ],
+          [
+            520,
+            400
+          ]
+        ],
+        "areaHaApprox": 0.79,
+        "use": [
+          "held_or_disputed_cargo",
+          "service_storage",
+          "no_resource_creation"
+        ]
+      },
+      "internalNorgardFastPath": true,
+      "localFishingFastPath": true,
+      "externalFiscalControlOnlyWhereApplicable": true
+    },
+    "anchorage": {
+      "id": "CIV_ANCH_01",
+      "polygonXYm": [
+        [
+          130,
+          -90
+        ],
+        [
+          300,
+          -210
+        ],
+        [
+          620,
+          -220
+        ],
+        [
+          760,
+          -90
+        ],
+        [
+          620,
+          20
+        ],
+        [
+          260,
+          0
+        ]
+      ],
+      "waterAreaHaApprox": 44,
+      "planningEquivalentMerchantSlots": 8,
+      "actualSimultaneousCapacityDependsOn": [
+        "vessel_length",
+        "swing_room",
+        "weather",
+        "water_state",
+        "traffic"
+      ],
+      "waitingAllowed": true,
+      "fixedHomeFleetCountImplied": false
+    },
+    "breakwater": {
+      "majorArtificialBreakwater": false,
+      "rationale": "T07 occupies the sheltered estuarine bend; exposed outer operations may suspend in severe southerly or southeasterly weather rather than requiring a major civil breakwater"
+    },
+    "approach": {
+      "routeId": "MR_TRESKAL_CIVIL_APPROACH",
+      "centerlineXYm": [
+        [
+          420,
+          -450
+        ],
+        [
+          405,
+          -260
+        ],
+        [
+          390,
+          -100
+        ]
+      ],
+      "ordinaryApproachWidthM": 110,
+      "controllingDepthTargetM": 4.5,
+      "actualDraftCheckAlwaysRequired": true,
+      "conflictsWithNavalApproach": false
+    },
+    "roadInterfaces": [
+      "C11",
+      "C06",
+      "C12"
+    ],
+    "stormModes": {
+      "normal": "all_compatible_berths_available",
+      "restricted": "outer_merchant_pier_and_anchorage_capacity_may_reduce",
+      "severe": "outer_berthing_may_close_while_inner_fishing_or_sheltered_work_continues_if_safe"
+    }
+  },
+  "T08RoyalNavalComplex": {
+    "coastChainageRangeM": [
+      880,
+      1820
+    ],
+    "operationalFrontageM": 940,
+    "authority": "Crown_of_Norgard_House_Aethros",
+    "publicCivilAccess": false,
+    "controlledWaterBoundary": {
+      "id": "NAV_SEC_WATER_01",
+      "polygonXYm": [
+        [
+          906,
+          190
+        ],
+        [
+          1837,
+          307
+        ],
+        [
+          1790,
+          25
+        ],
+        [
+          1500,
+          -120
+        ],
+        [
+          1050,
+          -120
+        ],
+        [
+          900,
+          40
+        ]
+      ],
+      "civilOrdinaryMooringAllowed": false,
+      "ValrikUrbanGuardOrdinaryAuthority": false
+    },
+    "S08Shipyards": {
+      "facility": "S08",
+      "shoreChainageM": [
+        880,
+        1450
+      ],
+      "slipways": [
+        {
+          "id": "NSW01",
+          "rootCoastChainageM": 930,
+          "rootApproxXYm": [
+            956,
+            188.5
+          ],
+          "seawardEndXYm": [
+            955,
+            125
+          ],
+          "totalReservedWayLengthM": 72,
+          "clearWayWidthM": 12,
+          "designVesselLengthMaxM": 28,
+          "use": [
+            "construction",
+            "haulout",
+            "repair"
+          ]
+        },
+        {
+          "id": "NSW02",
+          "rootCoastChainageM": 1030,
+          "rootApproxXYm": [
+            1056,
+            185.9
+          ],
+          "seawardEndXYm": [
+            1050,
+            105
+          ],
+          "totalReservedWayLengthM": 90,
+          "clearWayWidthM": 14,
+          "designVesselLengthMaxM": 38,
+          "use": [
+            "construction",
+            "haulout",
+            "repair"
+          ]
+        },
+        {
+          "id": "NSW03",
+          "rootCoastChainageM": 1140,
+          "rootApproxXYm": [
+            1164.8,
+            198.8
+          ],
+          "seawardEndXYm": [
+            1155,
+            95
+          ],
+          "totalReservedWayLengthM": 112,
+          "clearWayWidthM": 16,
+          "designVesselLengthMaxM": 48,
+          "use": [
+            "construction",
+            "major_repair"
+          ]
+        },
+        {
+          "id": "NSW04",
+          "rootCoastChainageM": 1260,
+          "rootApproxXYm": [
+            1283,
+            220.4
+          ],
+          "seawardEndXYm": [
+            1265,
+            90
+          ],
+          "totalReservedWayLengthM": 140,
+          "clearWayWidthM": 18,
+          "designVesselLengthMaxM": 54,
+          "use": [
+            "construction",
+            "major_repair"
+          ]
+        },
+        {
+          "id": "NSW05",
+          "rootCoastChainageM": 1380,
+          "rootApproxXYm": [
+            1401.8,
+            238.3
+          ],
+          "seawardEndXYm": [
+            1380,
+            70
+          ],
+          "totalReservedWayLengthM": 180,
+          "clearWayWidthM": 20,
+          "designVesselLengthMaxM": 60,
+          "use": [
+            "largest_royal_ship_construction_or_major_repair"
+          ]
+        }
+      ],
+      "fittingOutPier": {
+        "id": "NFP01",
+        "rootCoastChainageM": 1450,
+        "rootApproxXYm": [
+          1471.1,
+          248.7
+        ],
+        "axisEndXYm": [
+          1460,
+          80
+        ],
+        "projectionM": 169,
+        "deckWidthM": 11,
+        "headLengthM": 95,
+        "maxDesignVesselLengthM": 60,
+        "use": [
+          "fitting_out",
+          "rigging",
+          "final_supply",
+          "post_repair_checks"
+        ]
+      },
+      "dryDock": {
+        "permanentMasonryDryDockRequired": false,
+        "rationale": "the fixed requirement is satisfied by graded slipways, haulout and fitting-out capacity without inventing a monumental dry-dock complex"
+      },
+      "internalFlow": [
+        "C05",
+        "C16",
+        "materials_gate",
+        "workshops",
+        "staging_yards",
+        "slipways_or_NFP01"
+      ],
+      "fireSafety": {
+        "dedicatedInternalResponse": true,
+        "waterAccess": true,
+        "timberStackSeparation": true,
+        "controlledForgeSeparation": true
+      }
+    },
+    "S13NavalBase": {
+      "facility": "S13",
+      "shoreChainageM": [
+        1480,
+        1820
+      ],
+      "shorelineQuays": [
+        {
+          "id": "NBQ01",
+          "coastChainageM": [
+            1480,
+            1600
+          ],
+          "shorelineLengthM": 120,
+          "use": [
+            "light_naval_craft",
+            "service",
+            "crew_transfer"
+          ],
+          "controlled": true
+        },
+        {
+          "id": "NBQ02",
+          "coastChainageM": [
+            1740,
+            1820
+          ],
+          "shorelineLengthM": 80,
+          "use": [
+            "stores",
+            "small_craft",
+            "harbor_service"
+          ],
+          "controlled": true
+        }
+      ],
+      "fleetPiers": [
+        {
+          "id": "NFP02_HEAVY_FLEET",
+          "rootCoastChainageM": 1630,
+          "rootApproxXYm": [
+            1648.7,
+            276.8
+          ],
+          "axisEndXYm": [
+            1630,
+            80
+          ],
+          "projectionM": 198,
+          "deckWidthM": 12,
+          "headLengthM": 110,
+          "maxDesignVesselLengthM": 60,
+          "heavyBerthEquivalentPositions": 2,
+          "compatibility": "actual_dimensions_draft_water_state_and_mooring_clearance_control_assignment"
+        },
+        {
+          "id": "NFP03_TROOP_SUPPLY",
+          "rootCoastChainageM": 1700,
+          "rootApproxXYm": [
+            1717.8,
+            287.8
+          ],
+          "axisEndXYm": [
+            1710,
+            110
+          ],
+          "projectionM": 178,
+          "deckWidthM": 11,
+          "headLengthM": 85,
+          "maxDesignVesselLengthM": 48,
+          "mediumLargeBerthEquivalentPositions": 2,
+          "use": [
+            "troop_embarkation",
+            "supply_loading",
+            "transport_and_escort_service"
+          ]
+        }
+      ],
+      "inshoreLightBerthEquivalentPositions": 4,
+      "berthCapacityRule": "equivalent_positions_are_planning_capacity_not_fixed_fleet_count",
+      "landFlow": [
+        "C05",
+        "C16",
+        "controlled_land_gate",
+        "troop_and_supply_staging",
+        "piers"
+      ],
+      "commandAndCriticalStoresRemainRearwardOfFloodExposedEdge": true
+    },
+    "breakwater": {
+      "id": "NBW01_EASTERN",
+      "rootCoastChainageM": 1820,
+      "rootApproxXYm": [
+        1836.6,
+        306.6
+      ],
+      "polylineXYm": [
+        [
+          1836.6,
+          306.6
+        ],
+        [
+          1810,
+          190
+        ],
+        [
+          1790,
+          70
+        ],
+        [
+          1775,
+          25
+        ]
+      ],
+      "lengthM": 289,
+      "crestWidthM": 6,
+      "construction": "rubble_core_with_stone_and_timber_working_faces",
+      "artilleryEmplacement": false,
+      "gunpowderMagazine": false,
+      "role": [
+        "storm_shelter",
+        "naval_water_boundary",
+        "lee_for_fleet_berths"
+      ],
+      "secondMajorBreakwaterRequired": false
+    },
+    "protectedRoadstead": {
+      "id": "NAV_ROADSTEAD_01",
+      "polygonXYm": [
+        [
+          1450,
+          40
+        ],
+        [
+          1775,
+          25
+        ],
+        [
+          1836.6,
+          306.6
+        ],
+        [
+          1500,
+          253
+        ],
+        [
+          1380,
+          120
+        ]
+      ],
+      "waterAreaHaApprox": 57,
+      "planningEquivalentMediumLargeWaitingSlots": 6,
+      "actualCapacityDynamic": true,
+      "fixedFleetCountImplied": false
+    },
+    "approach": {
+      "routeId": "MR_TRESKAL_NAVAL_APPROACH",
+      "centerlineXYm": [
+        [
+          1570,
+          -520
+        ],
+        [
+          1600,
+          -300
+        ],
+        [
+          1640,
+          -120
+        ],
+        [
+          1650,
+          40
+        ]
+      ],
+      "ordinaryApproachWidthM": 140,
+      "controllingDepthTargetM": 5.5,
+      "largestClassCompatibilityRequiresActualDraftAndWaterState": true,
+      "civilTrafficOrdinaryAccess": false
+    },
+    "maintenanceDredging": {
+      "majorArtificialDredgedBasin": false,
+      "localizedMaintenanceDredgingAllowed": true,
+      "reason": "sediment_or_bar_management_where_required_to_preserve_compatible_access",
+      "unlimitedDepthGuarantee": false
+    },
+    "security": {
+      "controlledLandGates": [
+        "S08_controlledLandGate",
+        "S08_materialsGate",
+        "S13_controlledLandGate",
+        "S13_troopAndSupplyGate"
+      ],
+      "controlledRoads": [
+        "C05_inside_T08",
+        "C16"
+      ],
+      "controlledWater": true,
+      "civilPortTrafficMayTransitThroughT08": false,
+      "HouseValrikInternalCommand": false,
+      "ValrikTerritorialArmyInternalCommand": false,
+      "TreskalUrbanGuardOrdinaryControlInside": false
+    }
+  },
+  "civilNavalSeparation": {
+    "T07LastOperationalCoastChainageM": 620,
+    "T08FirstOperationalCoastChainageM": 880,
+    "shorelineSeparationM": 260,
+    "interveningLandOwnerSector": "T04",
+    "continuousSharedQuay": false,
+    "civilApproachAndNavalApproachSeparated": true,
+    "sharedPublicAnchorage": false
+  },
+  "integratedOperationalFlows": {
+    "riverCargo": [
+      "river",
+      "RW01_RW03",
+      "T01_apron",
+      "C07",
+      "C01_or_C02_or_T03"
+    ],
+    "civilCargo": [
+      "MR_TRESKAL_CIVIL_APPROACH",
+      "CP06_or_CP02",
+      "port_control_if_applicable",
+      "C11",
+      "C06_or_regional_network"
+    ],
+    "fish": [
+      "fishing_ground",
+      "CP05_or_CP01",
+      "S07",
+      "C12",
+      "market_preservation_or_distribution"
+    ],
+    "shipbuilding": [
+      "C03_or_C05",
+      "C16",
+      "S08_staging",
+      "NSW01_NSW05",
+      "NFP01",
+      "sea"
+    ],
+    "navalRepair": [
+      "sea",
+      "naval_approach",
+      "NFP02_or_NFP01",
+      "S08_work",
+      "return_to_service"
+    ],
+    "navalSupply": [
+      "C05",
+      "C16",
+      "S13_staging",
+      "NFP02_or_NFP03",
+      "vessel"
+    ],
+    "troopEmbarkation": [
+      "C04_to_regional_link_or_C05",
+      "C16",
+      "S13_staging",
+      "NFP03",
+      "transport_vessel"
+    ]
+  },
+  "weatherAndCapacityRules": {
+    "waitingAllowed": true,
+    "berthCapacityFinite": true,
+    "severeWeatherCanCloseSpecificOuterFacilities": true,
+    "ordinaryRainDoesNotClosePortAutomatically": true,
+    "portCongestionLocalNotGlobal": true,
+    "noTeleportBerthing": true,
+    "noResourceSpawnFromArrival": true
+  },
+  "preservedConstraints": {
+    "T01FrontageM": 380,
+    "T07FrontageM": 540,
+    "T08FrontageM": 940,
+    "T07T08SeparationM": 260,
+    "S07SiteUnchanged": true,
+    "S08SiteUnchanged": true,
+    "S13SiteUnchanged": true,
+    "C05C06C07C11C12C16InterfacesPreserved": true,
+    "waterExcludedFromLandArea": true
+  },
+  "deferredToLaterPoints": {
+    "point8": [
+      "ordinary_blocks",
+      "ordinary_parcels",
+      "warehouse_parcelization",
+      "minor_service_lanes_around_port"
+    ],
+    "point9": [
+      "integrated_runtime_capacity_stress_test",
+      "fire_flood_storm_congestion_joint_validation"
+    ],
+    "point10": [
+      "final_map_rendering_and_stable_spatial_output"
+    ]
+  },
+  "authorDecisionRequiredBeforePoint8": false,
+  "nextPoint": {
+    "id": 8,
+    "name": "parcel_and_urban_fabric",
+    "mustResolve": [
+      "blocks",
+      "parcels",
+      "housing",
+      "house_workshops",
+      "shops",
+      "courtyards",
+      "warehouses",
+      "density_transitions"
+    ]
+  }
+}
