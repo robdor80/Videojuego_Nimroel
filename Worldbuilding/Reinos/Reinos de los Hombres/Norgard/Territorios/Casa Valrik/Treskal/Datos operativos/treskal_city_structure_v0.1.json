@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "1.1",
+  "version": "1.2",
   "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
@@ -436,14 +436,11 @@
     "heavyTrafficDiversionRequired": true
   },
   "unresolvedByDesign": [
-    "T07_T08_waterfront_internal_geometry",
     "parcel_and_urban_fabric_geometry",
     "official_district_names",
     "street_names",
     "exact_market_calendar_for_non_daily_specialized_markets",
-    "exact_judicial_complex_architectural_plan",
-    "exact_T12_military_precinct_geometry",
-    "exact_T08_royal_naval_complex_internal_geometry"
+    "exact_judicial_complex_architectural_plan"
   ],
   "infrastructure": {
     "water": {
@@ -1344,5 +1341,29 @@
     "secondPermanentBridge": false,
     "exactWaterfrontCirculationDeferredToPoint": 7,
     "minorParcelLanesDeferredToPoint": 8
+  },
+  "metricWaterfront": {
+    "status": "point_7_closed",
+    "contract": "Datos operativos/treskal_metric_waterfront_contract_v0.1.json",
+    "T01": {
+      "wharves": 3,
+      "developedWharfM": 295
+    },
+    "T07": {
+      "shorelineFrontageM": 540,
+      "piers": 2,
+      "anchorage": "CIV_ANCH_01",
+      "majorBreakwater": false
+    },
+    "T08": {
+      "shorelineFrontageM": 940,
+      "S08Slipways": 5,
+      "S08FittingOutPier": "NFP01",
+      "S13FleetPiers": 2,
+      "navalBreakwater": "NBW01_EASTERN",
+      "navalRoadstead": "NAV_ROADSTEAD_01"
+    },
+    "civilNavalSeparationM": 260,
+    "waterExcludedFromLandArea": true
   }
 }
