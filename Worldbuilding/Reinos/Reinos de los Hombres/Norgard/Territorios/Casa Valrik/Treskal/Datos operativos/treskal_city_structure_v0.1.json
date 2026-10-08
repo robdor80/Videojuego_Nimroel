@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "1.5",
-  "status": "functional_city_design_base_closed_v0.1",
+  "version": "2.0",
+  "status": "canonical_city_spatial_structure_closed_v1.0",
   "procedural": false,
   "cityId": "treskal",
   "population": {
@@ -1410,5 +1410,18 @@
       "labor_dependent_water_and_sanitation"
     ],
     "readyForFinalMap": true
+  },
+  "canonicalMap": {
+    "status": "published",
+    "contract": "Datos operativos/treskal_canonical_map_contract_v1.0.json",
+    "spatialExport": "08_Cartografia/exports/treskal_canonical_spatial_export_v1.0.geojson",
+    "technicalMap": "08_Cartografia/mapas/treskal_plano_tecnico_canonico_v1.0.svg",
+    "operationalMap": "08_Cartografia/mapas/treskal_plano_operativo_juego_v1.0.svg",
+    "readableLoreMap": "08_Cartografia/mapas/treskal_mapa_legible_lore_v1.0.svg",
+    "spatialFeatures": 2404,
+    "stableBlockIds": "B001-B110",
+    "stableParcelIds": "P0001-P2175",
+    "geometryCanonical": true,
+    "runtimeReroll": false
   }
 }
