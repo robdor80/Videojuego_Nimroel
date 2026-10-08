@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "1.0",
+  "version": "1.1",
   "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
@@ -436,7 +436,6 @@
     "heavyTrafficDiversionRequired": true
   },
   "unresolvedByDesign": [
-    "street_level_geometry",
     "T07_T08_waterfront_internal_geometry",
     "parcel_and_urban_fabric_geometry",
     "official_district_names",
@@ -1323,5 +1322,27 @@
     ],
     "exactRoadsDeferredToPoint": 6,
     "exactWaterfrontGeometryDeferredToPoint": 7
+  },
+  "metricRoadNetwork": {
+    "status": "point_6_closed",
+    "contract": "Datos operativos/treskal_metric_road_network_contract_v0.1.json",
+    "technicalRoadCount": 18,
+    "controlledNetworkLengthM": 12981,
+    "roadClasses": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "P1",
+      "DR1"
+    ],
+    "allFacilitiesAccessible": true,
+    "heavyTrafficCanAvoidT03": true,
+    "livestockCanAvoidT03": true,
+    "PuenteDeLosGemelosIntegrated": true,
+    "secondPermanentBridge": false,
+    "exactWaterfrontCirculationDeferredToPoint": 7,
+    "minorParcelLanesDeferredToPoint": 8
   }
 }
