@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "0.8",
+  "version": "0.9",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3527,6 +3527,103 @@
         "no traffic lights",
         "no modern lane-marking standard",
         "no city-wall gate network"
+      ]
+    },
+    {
+      "id": "metric_waterfront_T01",
+      "expected": [
+        "T01 retains 380 m frontage",
+        "295 m developed wharf",
+        "upstream navigation remains open",
+        "no river breakwater"
+      ]
+    },
+    {
+      "id": "metric_waterfront_T07",
+      "expected": [
+        "T07 retains 540 m civil frontage",
+        "civil fishing cargo repair functions remain separate from T08",
+        "major civil breakwater is not required"
+      ]
+    },
+    {
+      "id": "metric_waterfront_S07",
+      "expected": [
+        "S07 receives fish from CP01/CP05",
+        "fresh fish flow reaches C12",
+        "waste handling does not replace fish priority"
+      ]
+    },
+    {
+      "id": "metric_waterfront_customs",
+      "expected": [
+        "customs control is integrated in T07",
+        "no standalone customs house",
+        "held cargo remains physically held"
+      ]
+    },
+    {
+      "id": "metric_waterfront_T08_authority",
+      "expected": [
+        "T08 remains Crown-controlled",
+        "ordinary civil access forbidden",
+        "Valrik and urban guard do not gain internal command"
+      ]
+    },
+    {
+      "id": "metric_waterfront_S08",
+      "expected": [
+        "S08 has five graded slipways",
+        "largest design envelope reaches 60 m",
+        "no monumental dry dock is invented"
+      ]
+    },
+    {
+      "id": "metric_waterfront_S13",
+      "expected": [
+        "S13 has finite heavy medium and light berthing",
+        "berth equivalents do not fix fleet size",
+        "troop and supply flow remains physical"
+      ]
+    },
+    {
+      "id": "metric_waterfront_breakwater",
+      "expected": [
+        "one eastern naval breakwater exists",
+        "no gunpowder artillery or magazine",
+        "no second major breakwater required"
+      ]
+    },
+    {
+      "id": "metric_waterfront_separation",
+      "expected": [
+        "T07 and T08 remain separated by 260 m T04 shoulder",
+        "no continuous shared quay",
+        "civil and naval approaches remain distinct"
+      ]
+    },
+    {
+      "id": "metric_waterfront_capacity",
+      "expected": [
+        "berth and anchorage capacity is finite",
+        "vessel assignment checks dimensions draft weather and water state",
+        "no unlimited vessel spawn"
+      ]
+    },
+    {
+      "id": "metric_waterfront_weather",
+      "expected": [
+        "severe weather may reduce or close exposed operations",
+        "ordinary rain does not automatically close port",
+        "waiting remains valid"
+      ]
+    },
+    {
+      "id": "metric_waterfront_scope",
+      "expected": [
+        "Point 7 does not fix ordinary blocks or parcels",
+        "Point 8 remains responsible for urban fabric",
+        "final map remains Point 10"
       ]
     }
   ]
