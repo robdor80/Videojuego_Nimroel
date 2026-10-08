@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "1.7",
+  "version": "1.8",
   "status": "final_preplan_constraint_set_point_1_closed",
   "purpose": "Freeze every canonical spatial constraint required before Treskal metric planning and certify that no external canon blocker remains.",
-  "planReadiness": "point_8_closed_ready_for_point_9_integrated_validation",
+  "planReadiness": "point_9_closed_ready_for_point_10_canonical_final_map",
   "authorInputRequiredNow": false,
   "closureMarker": "TRESKAL_METRIC_PLAN_POINT_1_PREPLAN_AUDIT_CLOSED",
   "externalCanonBlockers": [],
@@ -252,9 +252,7 @@
     "point6": [],
     "point7": [],
     "point8": [],
-    "point9": [
-      "integrated_functional_validation"
-    ],
+    "point9": [],
     "point10": [
       "canonical_map_and_stable_spatial_output"
     ]
@@ -269,7 +267,8 @@
     "unresolvedAuthorDecisionsRequiredBeforePoint6": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint7": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint8": 0,
-    "unresolvedAuthorDecisionsRequiredBeforePoint9": 0
+    "unresolvedAuthorDecisionsRequiredBeforePoint9": 0,
+    "unresolvedAuthorDecisionsRequiredBeforePoint10": 0
   },
   "resolvedMetricScale": {
     "contract": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
@@ -350,5 +349,15 @@
     "localLanes": 12,
     "waterNodes": 10,
     "growthReservePreserved": true
+  },
+  "resolvedIntegratedValidation": {
+    "contract": "Datos operativos/treskal_integrated_functional_validation_contract_v0.1.json",
+    "validationCases": 180,
+    "stressScenarios": 24,
+    "unresolvedFailures": 0,
+    "geometryCorrectionsRequired": 0,
+    "operationalClarificationsApplied": 4,
+    "acceptedResidualRisks": 5,
+    "readyForPoint10": true
   }
 }
