@@ -104,7 +104,7 @@ No requiere plano interior completo de cada edificio.
 
 ## Punto 6 — Red viaria
 
-Estado: **SIGUIENTE / ACTIVO**
+Estado: **CERRADO**
 
 Debe fijar:
 
@@ -121,6 +121,8 @@ Debe fijar:
 ---
 
 ## Punto 7 — Puerto civil y Complejo Naval Real
+
+Estado: **SIGUIENTE / ACTIVO**
 
 Debe resolver métricamente:
 
