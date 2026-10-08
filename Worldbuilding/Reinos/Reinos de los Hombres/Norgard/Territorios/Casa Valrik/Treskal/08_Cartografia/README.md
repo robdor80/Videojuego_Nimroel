@@ -64,6 +64,17 @@ No introduce nombres oficiales de barrios o calles.
 
 `../Validacion/treskal_metric_plan_point_10_validation_pack_v1.0.json`
 
+
+## Corrección canónica obligatoria — T08 NO es una isla
+
+**ATENCIÓN:** el Complejo Naval Real S08/S13 es un recinto **continental de costa oriental** con acceso terrestre continuo para tráfico pesado por **C05** y **C16**. Puede parecer una península, pero **no una isla** ni una plataforma separada por agua.
+
+Control visual obligatorio antes de aprobar cartografía o escenas:
+
+`CONTROL_CANON_T08_ACCESO_CONTINENTAL_v1.0.md`
+
+Las tres ilustraciones antiguas de mapas Oficial, Mercantil y Naval quedan rechazadas por ambigüedad/representación insular. No deben tomarse como referencia ni empaquetarse para NAP hasta su sustitución visual aprobada.
+
 ## Regla
 
 Los mapas futuros pueden:
