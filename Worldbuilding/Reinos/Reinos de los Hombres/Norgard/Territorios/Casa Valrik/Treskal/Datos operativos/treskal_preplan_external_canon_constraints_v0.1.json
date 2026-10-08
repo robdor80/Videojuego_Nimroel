@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "1.2",
+  "version": "1.3",
   "status": "final_preplan_constraint_set_point_1_closed",
   "purpose": "Freeze every canonical spatial constraint required before Treskal metric planning and certify that no external canon blocker remains.",
-  "planReadiness": "point_3_closed_ready_for_point_4_sector_fit",
+  "planReadiness": "point_4_closed_ready_for_point_5_site_fit",
   "authorInputRequiredNow": false,
   "closureMarker": "TRESKAL_METRIC_PLAN_POINT_1_PREPLAN_AUDIT_CLOSED",
   "externalCanonBlockers": [],
@@ -247,9 +247,7 @@
   "openMetricDecisionsByPoint": {
     "point2": [],
     "point3": [],
-    "point4": [
-      "T01_T12_exact_polygons"
-    ],
+    "point4": [],
     "point5": [
       "S01_S13_exact_sites_and_footprints"
     ],
@@ -274,7 +272,8 @@
     "unresolvedAuthorDecisionsRequiredBeforePoint2": 0,
     "remainingOpenItemsAreMetricPlanningWork": true,
     "unresolvedAuthorDecisionsRequiredBeforePoint3": 0,
-    "unresolvedAuthorDecisionsRequiredBeforePoint4": 0
+    "unresolvedAuthorDecisionsRequiredBeforePoint4": 0,
+    "unresolvedAuthorDecisionsRequiredBeforePoint5": 0
   },
   "resolvedMetricScale": {
     "contract": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
@@ -301,5 +300,18 @@
     },
     "minorPermanentCrossings": 0,
     "floodSafeGroundMinZM": 6
+  },
+  "resolvedMetricSectorFit": {
+    "contract": "Datos operativos/treskal_metric_sector_fit_contract_v0.1.json",
+    "functionalUnionHa": 185.995,
+    "planningEnvelopeHa": 250.516,
+    "T01Ha": 5.747,
+    "T07Ha": 18.371,
+    "T08Ha": 36.022,
+    "T10Ha": 41.495,
+    "T12Ha": 15.395,
+    "growthReserveHa": 25.82,
+    "T11Corridors": 5,
+    "T07T08SeparationShoulder": "T04"
   }
 }
