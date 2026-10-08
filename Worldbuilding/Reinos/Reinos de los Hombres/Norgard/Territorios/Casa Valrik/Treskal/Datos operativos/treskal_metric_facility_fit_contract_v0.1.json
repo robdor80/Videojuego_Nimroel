@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_metric_facility_fit_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "point_5_closed_static_validated",
   "scope": "Treskal_metric_plan_S01_S13_site_fit",
   "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
@@ -1070,7 +1070,24 @@
     },
     "T12": {
       "S11S12ShareControlledBoundary": true,
-      "exactInternalMilitaryRoadsDeferredToPoint": 6
+      "exactInternalMilitaryRoadsDeferredToPoint": 6,
+      "point9WaterResolution": {
+        "status": "resolved",
+        "sources": [
+          {
+            "id": "MW01",
+            "context": "S11",
+            "type": "covered_cistern_clean_collection_and_cart_resupply"
+          },
+          {
+            "id": "MW02",
+            "context": "S12",
+            "type": "covered_cistern_and_muster_water_storage"
+          }
+        ],
+        "temporaryMusterResupplyVia": "C04_and_C15",
+        "noSingleSourceDependency": true
+      }
     }
   },
   "siteAreaSummaryHa": {
