@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "1.4",
+  "version": "1.5",
   "status": "final_preplan_constraint_set_point_1_closed",
   "purpose": "Freeze every canonical spatial constraint required before Treskal metric planning and certify that no external canon blocker remains.",
-  "planReadiness": "point_5_closed_ready_for_point_6_road_network",
+  "planReadiness": "point_6_closed_ready_for_point_7_waterfront",
   "authorInputRequiredNow": false,
   "closureMarker": "TRESKAL_METRIC_PLAN_POINT_1_PREPLAN_AUDIT_CLOSED",
   "externalCanonBlockers": [],
@@ -249,9 +249,7 @@
     "point3": [],
     "point4": [],
     "point5": [],
-    "point6": [
-      "road_corridor_alignment_and_widths"
-    ],
+    "point6": [],
     "point7": [
       "river_wharves_civil_port_docks_slipways_T08_internal_geometry"
     ],
@@ -272,7 +270,8 @@
     "unresolvedAuthorDecisionsRequiredBeforePoint3": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint4": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint5": 0,
-    "unresolvedAuthorDecisionsRequiredBeforePoint6": 0
+    "unresolvedAuthorDecisionsRequiredBeforePoint6": 0,
+    "unresolvedAuthorDecisionsRequiredBeforePoint7": 0
   },
   "resolvedMetricScale": {
     "contract": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
@@ -320,5 +319,14 @@
     "noNewSingularInstitutionAdded": true,
     "roadGeometryStillOpen": true,
     "dockGeometryStillOpen": true
+  },
+  "resolvedMetricRoadNetwork": {
+    "contract": "Datos operativos/treskal_metric_road_network_contract_v0.1.json",
+    "technicalRoadCount": 18,
+    "controlledNetworkLengthM": 12981,
+    "allFacilitiesAccessible": true,
+    "heavyTrafficAvoidsT03": true,
+    "livestockAvoidsT03": true,
+    "secondPermanentBridge": false
   }
 }
