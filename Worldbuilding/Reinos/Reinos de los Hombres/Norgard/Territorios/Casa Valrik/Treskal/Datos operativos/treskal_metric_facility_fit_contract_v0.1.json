@@ -1,0 +1,1136 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_facility_fit_contract",
+  "version": "0.1",
+  "status": "point_5_closed_static_validated",
+  "scope": "Treskal_metric_plan_S01_S13_site_fit",
+  "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
+  "sources": [
+    "treskal_metric_sector_fit_contract_v0.1.json",
+    "treskal_city_structure_v0.1.json",
+    "treskal_royal_naval_complex_contract_v0.1.json",
+    "treskal_fiscal_customs_profile_v0.1.json",
+    "../AUDITORIA_CIERRE_MILITAR_VALRIK_TRESKAL_v0.1.md"
+  ],
+  "closureMarker": "TRESKAL_METRIC_PLAN_POINT_5_FACILITY_FIT_CLOSED",
+  "semantics": {
+    "sitePolygon": "canonical_land_reservation_for_facility_or_complex",
+    "builtFootprint": "approximate_total_ground_coverage_not_final_architectural_plan",
+    "accessAnchor": "reserved_connection_point_not_final_street_centerline",
+    "internalReserve": "functional_space_requirement_not_final_building_layout",
+    "point5DoesNotFixRoadWidths": true,
+    "point5DoesNotFixDockGeometry": true,
+    "point5DoesNotFixBuildingInteriors": true
+  },
+  "facilities": {
+    "S01": {
+      "id": "house_valrik_main_seat",
+      "sector": "T05",
+      "sitePolygonXYm": [
+        [
+          690,
+          790
+        ],
+        [
+          850,
+          740
+        ],
+        [
+          930,
+          790
+        ],
+        [
+          930,
+          920
+        ],
+        [
+          860,
+          1010
+        ],
+        [
+          710,
+          970
+        ],
+        [
+          670,
+          880
+        ]
+      ],
+      "siteAreaHa": 5.275,
+      "centroidXYm": [
+        808.1,
+        874.1
+      ],
+      "builtFootprintTargetHa": 0.62,
+      "builtFootprintBandHa": [
+        0.5,
+        0.75
+      ],
+      "orientation": {
+        "principalLongAxisBearingDegFromNorth": 75,
+        "mainCeremonialFront": "west_southwest"
+      },
+      "accesses": {
+        "publicAndAudience": {
+          "xM": 690,
+          "yM": 850,
+          "exactRoadDeferredToPoint": 6
+        },
+        "privateAndHousehold": {
+          "xM": 860,
+          "yM": 1010,
+          "exactRoadDeferredToPoint": 6
+        },
+        "serviceAndRoyalSupport": {
+          "xM": 930,
+          "yM": 900,
+          "exactRoadDeferredToPoint": 6
+        }
+      },
+      "internalReserves": [
+        "house_valrik_residence",
+        "audience_and_public_reception",
+        "royal_reception_seat",
+        "royal_apartments",
+        "private_household_court",
+        "service_court",
+        "guard_presence",
+        "archive_safe_rooms",
+        "garden_or_quiet_yard"
+      ],
+      "rules": {
+        "separateRoyalBuildingRequired": false,
+        "monumentalPalaceScale": false,
+        "castle": false,
+        "publicPrivateCirculationSeparable": true
+      }
+    },
+    "S02": {
+      "id": "territorial_administration_center",
+      "sector": "T05",
+      "sitePolygonXYm": [
+        [
+          930,
+          790
+        ],
+        [
+          1050,
+          820
+        ],
+        [
+          1040,
+          970
+        ],
+        [
+          950,
+          1010
+        ],
+        [
+          930,
+          920
+        ]
+      ],
+      "siteAreaHa": 2.075,
+      "centroidXYm": [
+        980.8,
+        897.2
+      ],
+      "builtFootprintTargetHa": 0.38,
+      "builtFootprintBandHa": [
+        0.28,
+        0.48
+      ],
+      "orientation": {
+        "principalLongAxisBearingDegFromNorth": 10,
+        "mainPublicFront": "east"
+      },
+      "accesses": {
+        "publicAdministrative": {
+          "xM": 1050,
+          "yM": 880,
+          "exactRoadDeferredToPoint": 6
+        },
+        "staffService": {
+          "xM": 1040,
+          "yM": 970,
+          "exactRoadDeferredToPoint": 6
+        },
+        "controlledLinkToS01": {
+          "xM": 930,
+          "yM": 900
+        }
+      },
+      "internalReserves": [
+        "territorial_ledger",
+        "fiscal_assessment_and_collection_record",
+        "archives",
+        "clerks_and_waiting",
+        "in_kind_documentation_without_bulk_storage",
+        "Crown_remittance_accounting"
+      ],
+      "rules": {
+        "mayShareComplexWithS01": true,
+        "siteOverlapWithS01Ha": 0,
+        "bulkInKindStorageRequired": false
+      }
+    },
+    "S03": {
+      "id": "territorial_judicial_seat",
+      "sector": "T06",
+      "sitePolygonXYm": [
+        [
+          630,
+          580
+        ],
+        [
+          720,
+          550
+        ],
+        [
+          790,
+          610
+        ],
+        [
+          780,
+          690
+        ],
+        [
+          700,
+          710
+        ],
+        [
+          620,
+          670
+        ]
+      ],
+      "siteAreaHa": 2,
+      "centroidXYm": [
+        704.7,
+        627.9
+      ],
+      "builtFootprintTargetHa": 0.32,
+      "builtFootprintBandHa": [
+        0.24,
+        0.4
+      ],
+      "orientation": {
+        "principalLongAxisBearingDegFromNorth": 70,
+        "mainPublicFront": "northwest"
+      },
+      "accesses": {
+        "public": {
+          "xM": 650,
+          "yM": 573,
+          "exactRoadDeferredToPoint": 6
+        },
+        "officials": {
+          "xM": 780,
+          "yM": 650,
+          "exactRoadDeferredToPoint": 6
+        },
+        "secureDetaineeTransfer": {
+          "xM": 700,
+          "yM": 710,
+          "connectsTo": "S04"
+        }
+      },
+      "internalReserves": [
+        "hearing_rooms",
+        "judicial_offices",
+        "records",
+        "public_waiting",
+        "separate_secure_route"
+      ],
+      "floodRequirement": "F3"
+    },
+    "S04": {
+      "id": "main_urban_custody",
+      "sector": "T06",
+      "sitePolygonXYm": [
+        [
+          700,
+          710
+        ],
+        [
+          780,
+          690
+        ],
+        [
+          805,
+          735
+        ],
+        [
+          755,
+          785
+        ],
+        [
+          650,
+          780
+        ],
+        [
+          650,
+          730
+        ]
+      ],
+      "siteAreaHa": 1.035,
+      "centroidXYm": [
+        725.3,
+        744.6
+      ],
+      "builtFootprintTargetHa": 0.16,
+      "builtFootprintBandHa": [
+        0.12,
+        0.22
+      ],
+      "orientation": {
+        "principalLongAxisBearingDegFromNorth": 80,
+        "publicFrontRequired": false
+      },
+      "accesses": {
+        "secureFromS03": {
+          "xM": 700,
+          "yM": 710
+        },
+        "guardAndTransfer": {
+          "xM": 755,
+          "yM": 785,
+          "exactRoadDeferredToPoint": 6
+        }
+      },
+      "internalReserves": [
+        "temporary_cells",
+        "controlled_yard",
+        "guard_room",
+        "search_and_intake",
+        "secure_transfer"
+      ],
+      "rules": {
+        "longTermPrison": false,
+        "publicThroughRoute": false
+      },
+      "floodRequirement": "F3"
+    },
+    "S05": {
+      "id": "urban_guard_main_post",
+      "sector": "T06",
+      "sitePolygonXYm": [
+        [
+          550,
+          620
+        ],
+        [
+          630,
+          580
+        ],
+        [
+          620,
+          670
+        ],
+        [
+          650,
+          730
+        ],
+        [
+          610,
+          790
+        ],
+        [
+          540,
+          720
+        ]
+      ],
+      "siteAreaHa": 1.38,
+      "centroidXYm": [
+        592.3,
+        686
+      ],
+      "builtFootprintTargetHa": 0.35,
+      "builtFootprintBandHa": [
+        0.25,
+        0.45
+      ],
+      "orientation": {
+        "principalLongAxisBearingDegFromNorth": 20,
+        "mainOperationalFront": "west"
+      },
+      "accesses": {
+        "publicAndPatrol": {
+          "xM": 550,
+          "yM": 620,
+          "exactRoadDeferredToPoint": 6
+        },
+        "yardAndMountedSupport": {
+          "xM": 610,
+          "yM": 790,
+          "exactRoadDeferredToPoint": 6
+        },
+        "secureCoordinationToS04": {
+          "xM": 650,
+          "yM": 730
+        }
+      },
+      "internalReserves": [
+        "watch_room",
+        "administration",
+        "equipment",
+        "briefing",
+        "small_secure_room",
+        "yard",
+        "limited_mount_support"
+      ],
+      "rules": {
+        "housesEntireUrbanGuardRoster": false,
+        "urbanGuardRosterBand": [
+          140,
+          190
+        ]
+      },
+      "floodRequirement": "F3"
+    },
+    "S06": {
+      "id": "main_provision_market",
+      "sector": "T03",
+      "sitePolygonXYm": [
+        [
+          280,
+          450
+        ],
+        [
+          460,
+          430
+        ],
+        [
+          560,
+          500
+        ],
+        [
+          530,
+          610
+        ],
+        [
+          350,
+          630
+        ],
+        [
+          250,
+          560
+        ]
+      ],
+      "siteAreaHa": 4.69,
+      "centroidXYm": [
+        405,
+        530
+      ],
+      "builtFootprintTargetHa": 0.55,
+      "builtFootprintBandHa": [
+        0.35,
+        0.7
+      ],
+      "orientation": {
+        "principalMarketAxisBearingDegFromNorth": 80
+      },
+      "accesses": {
+        "principalPublic": {
+          "xM": 350,
+          "yM": 630,
+          "exactRoadDeferredToPoint": 6
+        },
+        "secondaryPublic": {
+          "xM": 530,
+          "yM": 610,
+          "exactRoadDeferredToPoint": 6
+        },
+        "loadingAndCarts": {
+          "xM": 280,
+          "yM": 450,
+          "exactRoadDeferredToPoint": 6
+        }
+      },
+      "internalReserves": [
+        "open_daily_stall_area",
+        "covered_stall_or_hall_capacity",
+        "cart_loading_edge",
+        "waste_collection_points",
+        "water_access",
+        "fire_breaks"
+      ],
+      "rules": {
+        "dailyMarket": true,
+        "monumentalEmptySquare": false
+      }
+    },
+    "S07": {
+      "id": "fish_exchange_facility",
+      "sectorTransition": [
+        "T01",
+        "T07"
+      ],
+      "sitePolygonXYm": [
+        [
+          100,
+          190
+        ],
+        [
+          190,
+          170
+        ],
+        [
+          250,
+          220
+        ],
+        [
+          240,
+          310
+        ],
+        [
+          170,
+          340
+        ],
+        [
+          110,
+          300
+        ]
+      ],
+      "siteAreaHa": 1.915,
+      "centroidXYm": [
+        174.1,
+        252.1
+      ],
+      "builtFootprintTargetHa": 0.38,
+      "builtFootprintBandHa": [
+        0.25,
+        0.5
+      ],
+      "orientation": {
+        "principalLongAxisBearingDegFromNorth": 65,
+        "waterFacingFront": "southwest_to_west"
+      },
+      "accesses": {
+        "watersideHandling": {
+          "xM": 100,
+          "yM": 190,
+          "exactQuayDeferredToPoint": 7
+        },
+        "marketAndCartSide": {
+          "xM": 240,
+          "yM": 310,
+          "exactRoadDeferredToPoint": 6
+        },
+        "wasteRemoval": {
+          "xM": 170,
+          "yM": 340,
+          "exactRoadDeferredToPoint": 6
+        }
+      },
+      "internalReserves": [
+        "covered_exchange",
+        "sorting_apron",
+        "wash_and_drainage",
+        "rapid_cart_transfer",
+        "preservation_transfer",
+        "waste_hold_short_duration"
+      ],
+      "rules": {
+        "freshFishPriority": true,
+        "frequentWasteRemoval": true,
+        "standaloneCustomsHouse": false
+      }
+    },
+    "S08": {
+      "id": "royal_shipyard_complex",
+      "sector": "T08",
+      "owner": "Crown_of_Norgard_House_Aethros",
+      "sitePolygonXYm": [
+        [
+          907,
+          190
+        ],
+        [
+          1090,
+          185
+        ],
+        [
+          1280,
+          220
+        ],
+        [
+          1450,
+          246
+        ],
+        [
+          1440,
+          500
+        ],
+        [
+          1290,
+          555
+        ],
+        [
+          1090,
+          525
+        ],
+        [
+          980,
+          490
+        ]
+      ],
+      "siteAreaHa": 15.91,
+      "centroidXYm": [
+        1189.2,
+        362.7
+      ],
+      "builtFootprintTargetHa": 3.8,
+      "builtFootprintBandHa": [
+        3,
+        4.8
+      ],
+      "orientation": {
+        "principalYardAxisBearingDegFromNorth": 80,
+        "waterFacingFront": "south"
+      },
+      "accesses": {
+        "controlledLandGate": {
+          "xM": 1290,
+          "yM": 555,
+          "exactRoadDeferredToPoint": 6
+        },
+        "materialsGate": {
+          "xM": 1090,
+          "yM": 525,
+          "exactRoadDeferredToPoint": 6
+        },
+        "waterfrontInterface": {
+          "coastChainageM": [
+            880,
+            1450
+          ],
+          "exactSlipwaysAndQuaysDeferredToPoint": 7
+        }
+      },
+      "internalReserves": [
+        "construction_yards",
+        "repair_yards",
+        "large_workshops",
+        "timber_and_component_staging",
+        "controlled_forges",
+        "administration",
+        "internal_fire_response",
+        "slipway_reserve"
+      ],
+      "rules": {
+        "CrownOwned": true,
+        "HouseValrikInternalCommand": false,
+        "controlledAccess": true,
+        "gunpowderMagazine": false,
+        "exactSlipwayCountDeferredToPoint": 7
+      }
+    },
+    "S09": {
+      "id": "main_timber_storage_capacity",
+      "sectorOptions": [
+        "T02",
+        "T04"
+      ],
+      "geometryType": "MultiSite",
+      "components": {
+        "S09A_T02": {
+          "sitePolygonXYm": [
+            [
+              40,
+              650
+            ],
+            [
+              180,
+              620
+            ],
+            [
+              310,
+              650
+            ],
+            [
+              330,
+              780
+            ],
+            [
+              250,
+              860
+            ],
+            [
+              80,
+              830
+            ],
+            [
+              0,
+              760
+            ]
+          ],
+          "siteAreaHa": 5.89,
+          "centroidXYm": [
+            173.4,
+            736.5
+          ],
+          "builtFootprintTargetHa": 0.55,
+          "primaryRole": "main_receiving_drying_and_storage_yard",
+          "accesses": {
+            "cartGate": {
+              "xM": 40,
+              "yM": 650,
+              "exactRoadDeferredToPoint": 6
+            },
+            "dispatchGate": {
+              "xM": 250,
+              "yM": 860,
+              "exactRoadDeferredToPoint": 6
+            }
+          }
+        },
+        "S09B_T04": {
+          "sitePolygonXYm": [
+            [
+              500,
+              700
+            ],
+            [
+              650,
+              680
+            ],
+            [
+              730,
+              740
+            ],
+            [
+              680,
+              840
+            ],
+            [
+              540,
+              850
+            ],
+            [
+              460,
+              790
+            ]
+          ],
+          "siteAreaHa": 3.33,
+          "centroidXYm": [
+            595,
+            766.2
+          ],
+          "builtFootprintTargetHa": 0.35,
+          "primaryRole": "distributed_overflow_and_workshop_supply_yard",
+          "accesses": {
+            "cartGate": {
+              "xM": 680,
+              "yM": 840,
+              "exactRoadDeferredToPoint": 6
+            }
+          }
+        }
+      },
+      "totalSiteAreaHa": 9.22,
+      "totalBuiltFootprintTargetHa": 0.9,
+      "internalReserves": [
+        "open_timber_stacks",
+        "covered_dry_storage",
+        "seasoning_space",
+        "fire_separation",
+        "cart_turning",
+        "inspection"
+      ],
+      "rules": {
+        "distributedCapacity": true,
+        "fireSeparationRequired": true,
+        "directFunctionalConnectionToT08": true
+      }
+    },
+    "S10": {
+      "id": "main_livestock_reception_capacity",
+      "sector": "T10",
+      "sitePolygonXYm": [
+        [
+          40,
+          1000
+        ],
+        [
+          240,
+          950
+        ],
+        [
+          390,
+          1000
+        ],
+        [
+          410,
+          1140
+        ],
+        [
+          300,
+          1220
+        ],
+        [
+          100,
+          1200
+        ],
+        [
+          20,
+          1120
+        ]
+      ],
+      "siteAreaHa": 8.075,
+      "centroidXYm": [
+        217.7,
+        1086.8
+      ],
+      "builtFootprintTargetHa": 0.42,
+      "builtFootprintBandHa": [
+        0.28,
+        0.6
+      ],
+      "orientation": {
+        "principalHoldingAxisBearingDegFromNorth": 75
+      },
+      "accesses": {
+        "livestockEntry": {
+          "xM": 240,
+          "yM": 950,
+          "preferredCorridor": "T11B",
+          "exactRoadDeferredToPoint": 6
+        },
+        "urbanDispatch": {
+          "xM": 410,
+          "yM": 1140,
+          "exactRoadDeferredToPoint": 6
+        }
+      },
+      "internalReserves": [
+        "corrals",
+        "sorting_pens",
+        "watering",
+        "covered_shelter",
+        "inspection",
+        "manure_collection",
+        "cart_and_drover_space"
+      ],
+      "rules": {
+        "livestockDefaultRouteThroughT03": false,
+        "largeScaleSlaughterRequiredOnSite": false
+      }
+    },
+    "S11": {
+      "id": "valrik_territorial_barracks",
+      "sector": "T12",
+      "sitePolygonXYm": [
+        [
+          1120,
+          1090
+        ],
+        [
+          1320,
+          1050
+        ],
+        [
+          1430,
+          1100
+        ],
+        [
+          1420,
+          1190
+        ],
+        [
+          1320,
+          1230
+        ],
+        [
+          1160,
+          1210
+        ]
+      ],
+      "siteAreaHa": 4.14,
+      "centroidXYm": [
+        1280.4,
+        1141.2
+      ],
+      "builtFootprintTargetHa": 1.35,
+      "builtFootprintBandHa": [
+        1.05,
+        1.65
+      ],
+      "orientation": {
+        "principalBarracksAxisBearingDegFromNorth": 80
+      },
+      "accesses": {
+        "mainMilitaryGate": {
+          "xM": 1430,
+          "yM": 1100,
+          "preferredCorridor": "T11D",
+          "exactRoadDeferredToPoint": 6
+        },
+        "logisticsGate": {
+          "xM": 1160,
+          "yM": 1210,
+          "exactRoadDeferredToPoint": 6
+        },
+        "controlledLinkToS12": {
+          "xM": 1420,
+          "yM": 1190
+        }
+      },
+      "internalReserves": [
+        "barracks",
+        "command",
+        "stores",
+        "kitchens",
+        "equipment",
+        "yard",
+        "light_mounted_support",
+        "guard"
+      ],
+      "capacity": {
+        "ordinaryProfessionals": [
+          260,
+          340
+        ]
+      },
+      "floodRequirement": "F3"
+    },
+    "S12": {
+      "id": "valrik_training_muster_field",
+      "sector": "T12",
+      "sitePolygonXYm": [
+        [
+          1430,
+          1100
+        ],
+        [
+          1620,
+          1100
+        ],
+        [
+          1640,
+          1280
+        ],
+        [
+          1470,
+          1350
+        ],
+        [
+          1320,
+          1300
+        ],
+        [
+          1320,
+          1230
+        ],
+        [
+          1420,
+          1190
+        ]
+      ],
+      "siteAreaHa": 5.705,
+      "centroidXYm": [
+        1493.9,
+        1223.5
+      ],
+      "builtFootprintTargetHa": 0.18,
+      "builtFootprintBandHa": [
+        0.1,
+        0.3
+      ],
+      "orientation": {
+        "principalFieldAxisBearingDegFromNorth": 5
+      },
+      "accesses": {
+        "musterGate": {
+          "xM": 1430,
+          "yM": 1100,
+          "preferredCorridor": "T11D",
+          "exactRoadDeferredToPoint": 6
+        },
+        "fieldServiceGate": {
+          "xM": 1620,
+          "yM": 1100,
+          "exactRoadDeferredToPoint": 6
+        },
+        "controlledLinkToS11": {
+          "xM": 1420,
+          "yM": 1190
+        }
+      },
+      "internalReserves": [
+        "open_training_ground",
+        "muster_assembly",
+        "temporary_tents_or_equipment_when_mobilized",
+        "small_support_sheds",
+        "water_points"
+      ],
+      "capacity": {
+        "simultaneousActivity": [
+          800,
+          1200
+        ],
+        "permanentHousing": false
+      },
+      "floodRequirement": "F3"
+    },
+    "S13": {
+      "id": "principal_royal_naval_base",
+      "sector": "T08",
+      "owner": "Crown_of_Norgard_House_Aethros",
+      "sitePolygonXYm": [
+        [
+          1480,
+          250
+        ],
+        [
+          1700,
+          285
+        ],
+        [
+          1837,
+          307
+        ],
+        [
+          1840,
+          565
+        ],
+        [
+          1640,
+          620
+        ],
+        [
+          1480,
+          570
+        ]
+      ],
+      "siteAreaHa": 11.299,
+      "centroidXYm": [
+        1652.9,
+        436.2
+      ],
+      "builtFootprintTargetHa": 2.2,
+      "builtFootprintBandHa": [
+        1.6,
+        2.8
+      ],
+      "orientation": {
+        "principalBaseAxisBearingDegFromNorth": 82,
+        "waterFacingFront": "south"
+      },
+      "accesses": {
+        "controlledLandGate": {
+          "xM": 1640,
+          "yM": 620,
+          "preferredCorridor": "T11E",
+          "exactRoadDeferredToPoint": 6
+        },
+        "troopAndSupplyGate": {
+          "xM": 1480,
+          "yM": 570,
+          "exactRoadDeferredToPoint": 6
+        },
+        "waterfrontInterface": {
+          "coastChainageM": [
+            1480,
+            1820
+          ],
+          "exactBerthsDeferredToPoint": 7
+        }
+      },
+      "internalReserves": [
+        "naval_command",
+        "crew_support",
+        "stores",
+        "troop_embarkation_staging",
+        "convoy_preparation",
+        "security",
+        "berthing_interface"
+      ],
+      "rules": {
+        "principalNotUniqueBase": true,
+        "HouseValrikInternalCommand": false,
+        "urbanGuardOrdinaryControl": false,
+        "gunpowderMagazine": false
+      }
+    }
+  },
+  "sharedComplexRules": {
+    "T05": {
+      "S01S02MayShareSecurityAndServiceEdge": true,
+      "publicAdministrativeAndPrivateResidentialCirculationMustRemainSeparable": true
+    },
+    "T06": {
+      "S03S04SecureTransferRequired": true,
+      "S05SupportsCustodyAndCourtSecurityWithoutReplacingJudicialAuthority": true
+    },
+    "T08": {
+      "S08S13LandSitesSeparatedByInternalSecurityAndServiceBufferM": 30.1,
+      "sharedControlledOuterT08Boundary": true,
+      "exactInternalRoadAndGateNetworkDeferredToPoint": 6,
+      "exactWaterfrontDivisionDeferredToPoint": 7
+    },
+    "T12": {
+      "S11S12ShareControlledBoundary": true,
+      "exactInternalMilitaryRoadsDeferredToPoint": 6
+    }
+  },
+  "siteAreaSummaryHa": {
+    "S01": 5.275,
+    "S02": 2.075,
+    "S03": 2,
+    "S04": 1.035,
+    "S05": 1.38,
+    "S06": 4.69,
+    "S07": 1.915,
+    "S08": 15.91,
+    "S09": 9.22,
+    "S10": 8.075,
+    "S11": 4.14,
+    "S12": 5.705,
+    "S13": 11.299
+  },
+  "rules": {
+    "allRequiredSFacilitiesPlaced": true,
+    "noNewSingularInstitutionAdded": true,
+    "allSitesRemainInsideAuthorizedSectorOrTransition": true,
+    "noFacilityForcesSecondBridge": true,
+    "noFacilityRequiresCityWall": true,
+    "noFacilityRequiresModernInfrastructure": true,
+    "roadGeometryRemainsOpen": true,
+    "dockGeometryRemainsOpen": true,
+    "architectureAndInteriorPlansRemainOpen": true
+  },
+  "deferredToLaterPoints": {
+    "point6": [
+      "street_centerlines",
+      "carriageway_widths",
+      "exact_access_road_alignment",
+      "internal_T08_T12_service_roads"
+    ],
+    "point7": [
+      "S07_exact_quay_interface",
+      "S08_slipways",
+      "S13_berths",
+      "breakwaters_if_any",
+      "naval_basin_geometry"
+    ],
+    "point8": [
+      "architectural_parcel_edges_where_not_singular_complex",
+      "surrounding_blocks",
+      "building_fabric"
+    ]
+  },
+  "authorDecisionRequiredBeforePoint6": false,
+  "nextPoint": {
+    "id": 6,
+    "name": "road_network",
+    "mustResolve": [
+      "corridor_centerlines",
+      "street_hierarchy",
+      "cart_routes",
+      "livestock_routes",
+      "pedestrian_network",
+      "widths",
+      "bridge_approaches"
+    ]
+  }
+}
