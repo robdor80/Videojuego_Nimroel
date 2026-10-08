@@ -1,0 +1,1076 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_plan_point_5_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "sourceContract": "../Datos operativos/treskal_metric_facility_fit_contract_v0.1.json",
+  "caseCount": 104,
+  "expectedCaseCount": 104,
+  "allExpectedConditionsDefined": true,
+  "cases": [
+    {
+      "id": "FAC001",
+      "given": {
+        "facility": "S01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC002",
+      "given": {
+        "facility": "S01",
+        "authorizedContext": "T05"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC003",
+      "given": {
+        "facility": "S01",
+        "siteAreaHa": 5.275
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC004",
+      "given": {
+        "facility": "S01",
+        "builtFootprintHa": 0.62,
+        "siteAreaHa": 5.275
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC005",
+      "given": {
+        "facility": "S01",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC006",
+      "given": {
+        "facility": "S01",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC007",
+      "given": {
+        "facility": "S01",
+        "specialRule": "royalApartmentsRequired"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC008",
+      "given": {
+        "facility": "S01",
+        "specialRule": "monumentalPalaceForbidden"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC009",
+      "given": {
+        "facility": "S02",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC010",
+      "given": {
+        "facility": "S02",
+        "authorizedContext": "T05"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC011",
+      "given": {
+        "facility": "S02",
+        "siteAreaHa": 2.075
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC012",
+      "given": {
+        "facility": "S02",
+        "builtFootprintHa": 0.38,
+        "siteAreaHa": 2.075
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC013",
+      "given": {
+        "facility": "S02",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC014",
+      "given": {
+        "facility": "S02",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC015",
+      "given": {
+        "facility": "S02",
+        "specialRule": "bulkGoodsStorageNotRequired"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC016",
+      "given": {
+        "facility": "S02",
+        "specialRule": "publicPrivateCirculationSeparable"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC017",
+      "given": {
+        "facility": "S03",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC018",
+      "given": {
+        "facility": "S03",
+        "authorizedContext": "T06"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC019",
+      "given": {
+        "facility": "S03",
+        "siteAreaHa": 2
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC020",
+      "given": {
+        "facility": "S03",
+        "builtFootprintHa": 0.32,
+        "siteAreaHa": 2
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC021",
+      "given": {
+        "facility": "S03",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC022",
+      "given": {
+        "facility": "S03",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC023",
+      "given": {
+        "facility": "S03",
+        "specialRule": "publicAndSecureRoutesSeparated"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC024",
+      "given": {
+        "facility": "S03",
+        "specialRule": "F3Required"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC025",
+      "given": {
+        "facility": "S04",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC026",
+      "given": {
+        "facility": "S04",
+        "authorizedContext": "T06"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC027",
+      "given": {
+        "facility": "S04",
+        "siteAreaHa": 1.035
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC028",
+      "given": {
+        "facility": "S04",
+        "builtFootprintHa": 0.16,
+        "siteAreaHa": 1.035
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC029",
+      "given": {
+        "facility": "S04",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC030",
+      "given": {
+        "facility": "S04",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC031",
+      "given": {
+        "facility": "S04",
+        "specialRule": "temporaryCustodyOnly"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC032",
+      "given": {
+        "facility": "S04",
+        "specialRule": "longTermPrisonForbidden"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC033",
+      "given": {
+        "facility": "S05",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC034",
+      "given": {
+        "facility": "S05",
+        "authorizedContext": "T06"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC035",
+      "given": {
+        "facility": "S05",
+        "siteAreaHa": 1.38
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC036",
+      "given": {
+        "facility": "S05",
+        "builtFootprintHa": 0.35,
+        "siteAreaHa": 1.38
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC037",
+      "given": {
+        "facility": "S05",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC038",
+      "given": {
+        "facility": "S05",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC039",
+      "given": {
+        "facility": "S05",
+        "specialRule": "notEntireGuardHousing"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC040",
+      "given": {
+        "facility": "S05",
+        "specialRule": "F3Required"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC041",
+      "given": {
+        "facility": "S06",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC042",
+      "given": {
+        "facility": "S06",
+        "authorizedContext": "T03"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC043",
+      "given": {
+        "facility": "S06",
+        "siteAreaHa": 4.69
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC044",
+      "given": {
+        "facility": "S06",
+        "builtFootprintHa": 0.55,
+        "siteAreaHa": 4.69
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC045",
+      "given": {
+        "facility": "S06",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC046",
+      "given": {
+        "facility": "S06",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC047",
+      "given": {
+        "facility": "S06",
+        "specialRule": "dailyMarket"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC048",
+      "given": {
+        "facility": "S06",
+        "specialRule": "monumentalEmptySquareForbidden"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC049",
+      "given": {
+        "facility": "S07",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC050",
+      "given": {
+        "facility": "S07",
+        "authorizedContext": "T01_T07_transition"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC051",
+      "given": {
+        "facility": "S07",
+        "siteAreaHa": 1.915
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC052",
+      "given": {
+        "facility": "S07",
+        "builtFootprintHa": 0.38,
+        "siteAreaHa": 1.915
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC053",
+      "given": {
+        "facility": "S07",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC054",
+      "given": {
+        "facility": "S07",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC055",
+      "given": {
+        "facility": "S07",
+        "specialRule": "fishPriority"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC056",
+      "given": {
+        "facility": "S07",
+        "specialRule": "exactQuayDeferred"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC057",
+      "given": {
+        "facility": "S08",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC058",
+      "given": {
+        "facility": "S08",
+        "authorizedContext": "T08"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC059",
+      "given": {
+        "facility": "S08",
+        "siteAreaHa": 15.91
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC060",
+      "given": {
+        "facility": "S08",
+        "builtFootprintHa": 3.8,
+        "siteAreaHa": 15.91
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC061",
+      "given": {
+        "facility": "S08",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC062",
+      "given": {
+        "facility": "S08",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC063",
+      "given": {
+        "facility": "S08",
+        "specialRule": "CrownOwned"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC064",
+      "given": {
+        "facility": "S08",
+        "specialRule": "exactSlipwaysDeferred"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC065",
+      "given": {
+        "facility": "S09",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC066",
+      "given": {
+        "facility": "S09",
+        "authorizedContext": "T02_T04"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC067",
+      "given": {
+        "facility": "S09",
+        "siteAreaHa": 9.22
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC068",
+      "given": {
+        "facility": "S09",
+        "builtFootprintHa": 0.9,
+        "siteAreaHa": 9.22
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC069",
+      "given": {
+        "facility": "S09",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC070",
+      "given": {
+        "facility": "S09",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC071",
+      "given": {
+        "facility": "S09",
+        "specialRule": "distributedCapacity"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC072",
+      "given": {
+        "facility": "S09",
+        "specialRule": "fireSeparationRequired"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC073",
+      "given": {
+        "facility": "S10",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC074",
+      "given": {
+        "facility": "S10",
+        "authorizedContext": "T10"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC075",
+      "given": {
+        "facility": "S10",
+        "siteAreaHa": 8.075
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC076",
+      "given": {
+        "facility": "S10",
+        "builtFootprintHa": 0.42,
+        "siteAreaHa": 8.075
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC077",
+      "given": {
+        "facility": "S10",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC078",
+      "given": {
+        "facility": "S10",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC079",
+      "given": {
+        "facility": "S10",
+        "specialRule": "livestockAvoidsT03"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC080",
+      "given": {
+        "facility": "S10",
+        "specialRule": "slaughterNotRequired"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC081",
+      "given": {
+        "facility": "S11",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC082",
+      "given": {
+        "facility": "S11",
+        "authorizedContext": "T12"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC083",
+      "given": {
+        "facility": "S11",
+        "siteAreaHa": 4.14
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC084",
+      "given": {
+        "facility": "S11",
+        "builtFootprintHa": 1.35,
+        "siteAreaHa": 4.14
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC085",
+      "given": {
+        "facility": "S11",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC086",
+      "given": {
+        "facility": "S11",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC087",
+      "given": {
+        "facility": "S11",
+        "specialRule": "capacity260_340"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC088",
+      "given": {
+        "facility": "S11",
+        "specialRule": "F3Required"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC089",
+      "given": {
+        "facility": "S12",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC090",
+      "given": {
+        "facility": "S12",
+        "authorizedContext": "T12"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC091",
+      "given": {
+        "facility": "S12",
+        "siteAreaHa": 5.705
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC092",
+      "given": {
+        "facility": "S12",
+        "builtFootprintHa": 0.18,
+        "siteAreaHa": 5.705
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC093",
+      "given": {
+        "facility": "S12",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC094",
+      "given": {
+        "facility": "S12",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC095",
+      "given": {
+        "facility": "S12",
+        "specialRule": "activity800_1200"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC096",
+      "given": {
+        "facility": "S12",
+        "specialRule": "permanentHousingForbidden"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC097",
+      "given": {
+        "facility": "S13",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC098",
+      "given": {
+        "facility": "S13",
+        "authorizedContext": "T08"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC099",
+      "given": {
+        "facility": "S13",
+        "siteAreaHa": 11.299
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "FAC100",
+      "given": {
+        "facility": "S13",
+        "builtFootprintHa": 2.2,
+        "siteAreaHa": 11.299
+      },
+      "expect": {
+        "builtLessThanSite": true
+      }
+    },
+    {
+      "id": "FAC101",
+      "given": {
+        "facility": "S13",
+        "accessDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC102",
+      "given": {
+        "facility": "S13",
+        "internalReserveDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FAC103",
+      "given": {
+        "facility": "S13",
+        "specialRule": "CrownOwned"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    },
+    {
+      "id": "FAC104",
+      "given": {
+        "facility": "S13",
+        "specialRule": "exactBerthsDeferred"
+      },
+      "expect": {
+        "mustHold": true
+      }
+    }
+  ],
+  "summary": {
+    "facilitiesChecked": 13,
+    "allRequiredFacilitiesPlaced": true,
+    "allAuthorizedContextsPreserved": true,
+    "point4SectorGeometryPreserved": true,
+    "roadGeometryStillDeferred": true,
+    "dockGeometryStillDeferred": true,
+    "externalCanonBlockers": 0,
+    "authorDecisionRequiredBeforePoint6": false
+  },
+  "marker": "TRESKAL_METRIC_PLAN_POINT_5_FACILITY_FIT_CLOSED"
+}
