@@ -1,0 +1,1004 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_plan_point_4_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "sourceContract": "../Datos operativos/treskal_metric_sector_fit_contract_v0.1.json",
+  "caseCount": 96,
+  "expectedCaseCount": 96,
+  "allExpectedConditionsDefined": true,
+  "categories": {
+    "planning": 12,
+    "sectorFit": 36,
+    "relations": 20,
+    "corridors": 10,
+    "flows": 10,
+    "safetyAndScope": 8
+  },
+  "cases": [
+    {
+      "id": "PLAN01",
+      "given": {
+        "planningEnvelopeHa": 250.516
+      },
+      "expect": {
+        "withinBand": [
+          230,
+          270
+        ],
+        "targetApprox": 250
+      }
+    },
+    {
+      "id": "PLAN02",
+      "given": {
+        "functionalUnionHa": 185.995
+      },
+      "expect": {
+        "withinBand": [
+          170,
+          200
+        ],
+        "targetApprox": 185
+      }
+    },
+    {
+      "id": "PLAN03",
+      "given": {
+        "waterIncludedInLandArea": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PLAN04",
+      "given": {
+        "rectangularUrbanBoundary": true
+      },
+      "expect": {
+        "required": false
+      }
+    },
+    {
+      "id": "PLAN05",
+      "given": {
+        "sectorEnvelopeAreasSummedAsCityArea": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PLAN06",
+      "given": {
+        "sectorPolygonsAreCadastralDistricts": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PLAN07",
+      "given": {
+        "sectorPolygonsMayOverlap": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PLAN08",
+      "given": {
+        "T09OverlayAllowed": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PLAN09",
+      "given": {
+        "T11ClosedDistrict": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PLAN10",
+      "given": {
+        "growthReserveHa": 25.82
+      },
+      "expect": {
+        "withinBand": [
+          25,
+          35
+        ]
+      }
+    },
+    {
+      "id": "PLAN11",
+      "given": {
+        "growthReserveAssignedToInventedInstitution": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PLAN12",
+      "given": {
+        "coordinateReference": "TRESKAL_LOCAL_METRIC_V1"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC01",
+      "given": {
+        "sector": "T01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC02",
+      "given": {
+        "sector": "T01",
+        "areaHa": 5.747
+      },
+      "expect": {
+        "withinBand": [
+          5,
+          8
+        ]
+      }
+    },
+    {
+      "id": "SEC03",
+      "given": {
+        "sector": "T01",
+        "placement": "east_bank_lower_river"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC04",
+      "given": {
+        "sector": "T02",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC05",
+      "given": {
+        "sector": "T02",
+        "areaHa": 19.535
+      },
+      "expect": {
+        "withinBand": "not_constrained_by_point2"
+      }
+    },
+    {
+      "id": "SEC06",
+      "given": {
+        "sector": "T02",
+        "placement": "bridge_to_core_logistics_wedge"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC07",
+      "given": {
+        "sector": "T03",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC08",
+      "given": {
+        "sector": "T03",
+        "areaHa": 24.35
+      },
+      "expect": {
+        "withinBand": "not_constrained_by_point2"
+      }
+    },
+    {
+      "id": "SEC09",
+      "given": {
+        "sector": "T03",
+        "placement": "central_southwest_inland_of_T01_T07"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC10",
+      "given": {
+        "sector": "T04",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC11",
+      "given": {
+        "sector": "T04",
+        "areaHa": 36.451
+      },
+      "expect": {
+        "withinBand": "not_constrained_by_point2"
+      }
+    },
+    {
+      "id": "SEC12",
+      "given": {
+        "sector": "T04",
+        "placement": "north_northwest_workshop_belt_with_coastal_logistics_shoulder"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC13",
+      "given": {
+        "sector": "T05",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC14",
+      "given": {
+        "sector": "T05",
+        "areaHa": 14.6
+      },
+      "expect": {
+        "withinBand": "not_constrained_by_point2"
+      }
+    },
+    {
+      "id": "SEC15",
+      "given": {
+        "sector": "T05",
+        "placement": "central_east_upper_urban_terrace"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC16",
+      "given": {
+        "sector": "T06",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC17",
+      "given": {
+        "sector": "T06",
+        "areaHa": 7.68
+      },
+      "expect": {
+        "withinBand": "not_constrained_by_point2"
+      }
+    },
+    {
+      "id": "SEC18",
+      "given": {
+        "sector": "T06",
+        "placement": "central_east_between_T03_and_T05"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC19",
+      "given": {
+        "sector": "T07",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC20",
+      "given": {
+        "sector": "T07",
+        "areaHa": 18.371
+      },
+      "expect": {
+        "withinBand": [
+          16,
+          22
+        ]
+      }
+    },
+    {
+      "id": "SEC21",
+      "given": {
+        "sector": "T07",
+        "placement": "sheltered_east_coast_immediately_east_of_mouth"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC22",
+      "given": {
+        "sector": "T08",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC23",
+      "given": {
+        "sector": "T08",
+        "areaHa": 36.022
+      },
+      "expect": {
+        "withinBand": [
+          32,
+          42
+        ]
+      }
+    },
+    {
+      "id": "SEC24",
+      "given": {
+        "sector": "T08",
+        "placement": "deeper_eastern_coast"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC25",
+      "given": {
+        "sector": "T09",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC26",
+      "given": {
+        "sector": "T09",
+        "areaHa": 76.885
+      },
+      "expect": {
+        "withinBand": "not_constrained_by_point2"
+      }
+    },
+    {
+      "id": "SEC27",
+      "given": {
+        "sector": "T09",
+        "placement": "central_mixed_residential_wrap"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC28",
+      "given": {
+        "sector": "T10",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC29",
+      "given": {
+        "sector": "T10",
+        "areaHa": 41.495
+      },
+      "expect": {
+        "withinBand": [
+          30,
+          45
+        ]
+      }
+    },
+    {
+      "id": "SEC30",
+      "given": {
+        "sector": "T10",
+        "placement": "northwestern_to_northern_low_density_supply_edge"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC31",
+      "given": {
+        "sector": "T12",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC32",
+      "given": {
+        "sector": "T12",
+        "areaHa": 15.395
+      },
+      "expect": {
+        "withinBand": [
+          13,
+          18
+        ]
+      }
+    },
+    {
+      "id": "SEC33",
+      "given": {
+        "sector": "T12",
+        "placement": "north_northeast_inland_edge"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEC34",
+      "given": {
+        "T01RiverFrontageM": 380
+      },
+      "expect": {
+        "withinPoint2Band": [
+          300,
+          450
+        ]
+      }
+    },
+    {
+      "id": "SEC35",
+      "given": {
+        "T07CoastFrontageM": 540
+      },
+      "expect": {
+        "withinPoint2Band": [
+          450,
+          650
+        ]
+      }
+    },
+    {
+      "id": "SEC36",
+      "given": {
+        "T08CoastFrontageM": 940
+      },
+      "expect": {
+        "withinPoint2Band": [
+          850,
+          1050
+        ]
+      }
+    },
+    {
+      "id": "REL01",
+      "given": {
+        "T07DirectContactT08": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "REL02",
+      "given": {
+        "T07T08DistanceM": 243.9
+      },
+      "expect": {
+        "separated": true
+      }
+    },
+    {
+      "id": "REL03",
+      "given": {
+        "T08T09DistanceM": 86.1
+      },
+      "expect": {
+        "residentialBufferPresent": true
+      }
+    },
+    {
+      "id": "REL04",
+      "given": {
+        "T08T12DistanceM": 358.9
+      },
+      "expect": {
+        "separated": true
+      }
+    },
+    {
+      "id": "REL05",
+      "given": {
+        "T10T12DistanceM": 110.1
+      },
+      "expect": {
+        "near": true
+      }
+    },
+    {
+      "id": "REL06",
+      "given": {
+        "T04SharedBoundaryWithT08M": 407.7
+      },
+      "expect": {
+        "connected": true
+      }
+    },
+    {
+      "id": "REL07",
+      "given": {
+        "T05DistanceToT07M": 285.8
+      },
+      "expect": {
+        "avoidImmediateSatisfied": true
+      }
+    },
+    {
+      "id": "REL08",
+      "given": {
+        "T05DistanceToT08M": 138.4
+      },
+      "expect": {
+        "avoidImmediateSatisfied": true
+      }
+    },
+    {
+      "id": "REL09",
+      "given": {
+        "T06AdjacentT05": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "REL10",
+      "given": {
+        "T06NearT03": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "REL11",
+      "given": {
+        "T03ConnectedT07": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "REL12",
+      "given": {
+        "T03ConnectedT01": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "REL13",
+      "given": {
+        "T02ConnectedT11": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "REL14",
+      "given": {
+        "T04ConnectedT11": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "REL15",
+      "given": {
+        "T08ConnectedT11": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "REL16",
+      "given": {
+        "T12TouchesT11": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "REL17",
+      "given": {
+        "T12OverlapsT03": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "REL18",
+      "given": {
+        "T12OverlapsT07": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "REL19",
+      "given": {
+        "T12OverlapsT08": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "REL20",
+      "given": {
+        "T07T08SeparationShoulderOwner": "T04"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COR01",
+      "given": {
+        "corridor": "T11A_WEST_BRIDGE",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COR02",
+      "given": {
+        "corridor": "T11B_RURAL_SUPPLY",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COR03",
+      "given": {
+        "corridor": "T11C_FOREST_NAVAL",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COR04",
+      "given": {
+        "corridor": "T11D_MILITARY_INSTITUTIONAL",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COR05",
+      "given": {
+        "corridor": "T11E_EAST_NAVAL_SUPPLY",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COR06",
+      "given": {
+        "corridorReservationWidthM": 60
+      },
+      "expect": {
+        "meaning": "reservation_not_carriageway"
+      }
+    },
+    {
+      "id": "COR07",
+      "given": {
+        "T11DRoutesHeavyTrafficThroughT03": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "COR08",
+      "given": {
+        "T11EAuthorizedNavalSupply": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "COR09",
+      "given": {
+        "T11ClosedAreaRequired": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "COR10",
+      "given": {
+        "exactRoadWidthsFixedInPoint4": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "FLOW01",
+      "given": {
+        "path": [
+          "territory_or_forest",
+          "T11C",
+          "T02_or_T04",
+          "T08_or_urban_use"
+        ]
+      },
+      "expect": {
+        "supports": "timber"
+      }
+    },
+    {
+      "id": "FLOW02",
+      "given": {
+        "path": [
+          "territory",
+          "T11B",
+          "T10_or_T02",
+          "T03",
+          "city"
+        ]
+      },
+      "expect": {
+        "supports": "food"
+      }
+    },
+    {
+      "id": "FLOW03",
+      "given": {
+        "path": [
+          "river",
+          "T01",
+          "T02_or_T03_or_T04"
+        ]
+      },
+      "expect": {
+        "supports": "riverCargo"
+      }
+    },
+    {
+      "id": "FLOW04",
+      "given": {
+        "path": [
+          "sea",
+          "T07",
+          "T03_or_T02"
+        ]
+      },
+      "expect": {
+        "supports": "maritimeCargo"
+      }
+    },
+    {
+      "id": "FLOW05",
+      "given": {
+        "path": [
+          "territory",
+          "T11D_or_T11A",
+          "T05_or_T06"
+        ]
+      },
+      "expect": {
+        "supports": "administration"
+      }
+    },
+    {
+      "id": "FLOW06",
+      "given": {
+        "path": [
+          "T11C_or_T11E_or_T04",
+          "T08",
+          "sea"
+        ]
+      },
+      "expect": {
+        "supports": "royalNavalConstruction"
+      }
+    },
+    {
+      "id": "FLOW07",
+      "given": {
+        "path": [
+          "territory",
+          "T11D",
+          "T12",
+          "territorial_exit"
+        ]
+      },
+      "expect": {
+        "supports": "territorialMobilization"
+      }
+    },
+    {
+      "id": "FLOW08",
+      "given": {
+        "path": [
+          "territory",
+          "T11B",
+          "T10",
+          "future_S10"
+        ]
+      },
+      "expect": {
+        "supports": "livestock"
+      }
+    },
+    {
+      "id": "FLOW09",
+      "given": {
+        "livestockDefaultCrossesT03": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "FLOW10",
+      "given": {
+        "T08SupplyMustCrossT03": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SAFE01",
+      "given": {
+        "T06FloodClass": "F3"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SAFE02",
+      "given": {
+        "T12FloodClass": "F3"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SAFE03",
+      "given": {
+        "T08ResidentialOverlap": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SAFE04",
+      "given": {
+        "cityWallAdded": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SAFE05",
+      "given": {
+        "secondPermanentBridgeAdded": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SAFE06",
+      "given": {
+        "T07T08ContinuousQuay": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SAFE07",
+      "given": {
+        "facilitiesS01S13FixedInPoint4": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SAFE08",
+      "given": {
+        "dockInternalGeometryFixedInPoint4": true
+      },
+      "expect": {
+        "valid": false
+      }
+    }
+  ],
+  "summary": {
+    "point2ScalePreserved": true,
+    "point3GeographyPreserved": true,
+    "allT01T12Represented": true,
+    "T11RepresentedAsCorridorNetwork": true,
+    "criticalFlowsRemainPossible": true,
+    "externalCanonBlockers": 0,
+    "authorDecisionRequiredBeforePoint5": false
+  },
+  "marker": "TRESKAL_METRIC_PLAN_POINT_4_SECTOR_FIT_CLOSED"
+}
