@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "0.7",
+  "version": "0.8",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3454,6 +3454,79 @@
         "Point 5 does not fix street geometry",
         "Point 5 does not fix docks",
         "Point 5 does not fix architectural interiors"
+      ]
+    },
+    {
+      "id": "metric_road_network_classes",
+      "expected": [
+        "R1 R2 R3 R4 R5 P1 DR1 remain defined",
+        "technical road IDs are not official street names"
+      ]
+    },
+    {
+      "id": "metric_road_network_bridge",
+      "expected": [
+        "C01 uses Puente de los Gemelos",
+        "bridge clear deck remains 6.2 m",
+        "no second permanent bridge is added"
+      ]
+    },
+    {
+      "id": "metric_road_network_heavy",
+      "expected": [
+        "timber military and naval heavy traffic can avoid T03",
+        "heavy routes use C03 C04 C05 C10 C13 as appropriate"
+      ]
+    },
+    {
+      "id": "metric_road_network_livestock",
+      "expected": [
+        "livestock uses C02/C14",
+        "livestock does not cross T03 by default"
+      ]
+    },
+    {
+      "id": "metric_road_network_T08",
+      "expected": [
+        "C05/C16 serve T08",
+        "T08 access remains controlled by Crown naval authority"
+      ]
+    },
+    {
+      "id": "metric_road_network_facilities",
+      "expected": [
+        "S01-S13 all remain accessible",
+        "no facility is relocated"
+      ]
+    },
+    {
+      "id": "metric_road_network_surface",
+      "expected": [
+        "not all streets are paved",
+        "stone gravel and compacted earth remain context-dependent"
+      ]
+    },
+    {
+      "id": "metric_road_network_drainage",
+      "expected": [
+        "crossfall ditches and channels are used",
+        "modern storm sewer is not assumed"
+      ]
+    },
+    {
+      "id": "metric_road_network_scope",
+      "expected": [
+        "Point 6 does not fix quay geometry",
+        "Point 6 does not fix slipways or berths",
+        "minor parcel lanes remain Point 8"
+      ]
+    },
+    {
+      "id": "metric_road_network_no_modernity",
+      "expected": [
+        "no traffic lights",
+        "no modern lane-marking standard",
+        "no city-wall gate network"
       ]
     }
   ]
