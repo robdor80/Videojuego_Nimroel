@@ -66,6 +66,27 @@ Treskal se sitúa:
 - con el Complejo Naval Real T08 — Astilleros Reales + Base Naval Principal — en litoral contiguo pero separado;
 - con relieve inmediato suave o abierto.
 
+## 2A. Referencia cartográfica canónica
+
+Toda vista general, aérea o urbana que requiera posición espacial debe respetar:
+
+- `Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/08_Cartografia/exports/treskal_canonical_spatial_export_v1.0.geojson`;
+- `Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/08_Cartografia/mapas/treskal_plano_tecnico_canonico_v1.0.svg`.
+
+La cartografía canónica prevalece sobre interpretaciones visuales anteriores cuando exista conflicto de:
+
+- costa;
+- río;
+- puente;
+- posición de sectores;
+- puerto;
+- Astilleros Reales;
+- Base Naval Principal;
+- red viaria;
+- escala urbana.
+
+No recolocar elementos para mejorar una composición visual.
+
 ## Prohibido por defecto
 
 - grandes montañas inmediatas;
