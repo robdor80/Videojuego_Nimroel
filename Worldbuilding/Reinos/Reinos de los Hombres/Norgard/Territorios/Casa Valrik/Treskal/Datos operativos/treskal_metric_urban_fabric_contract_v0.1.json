@@ -1,0 +1,1644 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_urban_fabric_contract",
+  "version": "0.1",
+  "status": "point_8_closed_static_validated",
+  "scope": "Treskal_metric_plan_parcel_and_urban_fabric",
+  "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
+  "sources": [
+    "treskal_metric_sector_fit_contract_v0.1.json",
+    "treskal_metric_facility_fit_contract_v0.1.json",
+    "treskal_metric_road_network_contract_v0.1.json",
+    "treskal_metric_waterfront_contract_v0.1.json",
+    "treskal_city_structure_v0.1.json",
+    "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Perfiles locales/Treskal/TRESKAL_CITY_VISUAL_PROFILE_v0.1.md"
+  ],
+  "closureMarker": "TRESKAL_METRIC_PLAN_POINT_8_URBAN_FABRIC_CLOSED",
+  "semantics": {
+    "fabricZonesAre": "authored_spatial_envelopes_with_net_mixed_fabric_area_allocations",
+    "anchorEnvelopeXYm": "spatial_control_envelope_not_direct_area_accounting_polygon",
+    "planningAreaHa": "net_mixed_fabric_allocation_after_major_roads_singular_sites_and_large_open_work_areas",
+    "blockClusters": "stable_authored_organic_groupings_not_modern_rectangular_blocks",
+    "parcelCounts": "fixed_cartographic_capacity_slots_not_active_business_counts",
+    "parcelGeometryMaterialization": "Point_10_may_render_exact_lines_from_this_fixed_authored_subdivision_without_changing_counts_or_zone_assignments",
+    "runtimeProceduralGeneration": false
+  },
+  "areaControl": {
+    "point2MixedFabricBandHa": [
+      100,
+      120
+    ],
+    "point2MixedFabricTargetHa": 110,
+    "fixedMixedFabricHa": 110.7,
+    "withinPoint2Band": true,
+    "totalBlockClusterCount": 110,
+    "totalParcelCount": 2175,
+    "designResidentReference": 15000,
+    "designResidentCapacityAcrossFabric": 15000,
+    "transientPopulationIncludedInResidentCapacity": false,
+    "waterIncluded": false,
+    "T08OrdinaryFabricIncluded": false,
+    "T12OrdinaryFabricIncluded": false
+  },
+  "densityClasses": {
+    "D1_core": {
+      "description": "dense_mixed_preindustrial_core",
+      "typicalParcelAreaM2": [
+        90,
+        260
+      ],
+      "frontageM": [
+        4.5,
+        8.5
+      ],
+      "depthM": [
+        18,
+        34
+      ],
+      "ordinaryStoreys": [
+        2,
+        3
+      ],
+      "threeStoreyShare": "minority",
+      "internalOpenFraction": [
+        0.12,
+        0.28
+      ]
+    },
+    "D2_dense_mixed": {
+      "description": "central_or_port_mixed_fabric",
+      "typicalParcelAreaM2": [
+        110,
+        340
+      ],
+      "frontageM": [
+        5.5,
+        10
+      ],
+      "depthM": [
+        20,
+        40
+      ],
+      "ordinaryStoreys": [
+        1,
+        2
+      ],
+      "threeStoreyAllowedRarely": true,
+      "internalOpenFraction": [
+        0.18,
+        0.35
+      ]
+    },
+    "D2_port_mixed": {
+      "description": "port_rear_mixed_service_housing",
+      "typicalParcelAreaM2": [
+        140,
+        480
+      ],
+      "frontageM": [
+        6,
+        14
+      ],
+      "depthM": [
+        22,
+        45
+      ],
+      "ordinaryStoreys": [
+        1,
+        2
+      ],
+      "internalOpenFraction": [
+        0.22,
+        0.42
+      ]
+    },
+    "D2_residential_mixed": {
+      "description": "central_residential_and_local_service",
+      "typicalParcelAreaM2": [
+        120,
+        360
+      ],
+      "frontageM": [
+        6,
+        11
+      ],
+      "depthM": [
+        22,
+        40
+      ],
+      "ordinaryStoreys": [
+        1,
+        2
+      ],
+      "internalOpenFraction": [
+        0.2,
+        0.38
+      ]
+    },
+    "D2_civic_edge": {
+      "description": "housing_and_services_around_institutional_core",
+      "typicalParcelAreaM2": [
+        140,
+        420
+      ],
+      "frontageM": [
+        6,
+        12
+      ],
+      "depthM": [
+        24,
+        42
+      ],
+      "ordinaryStoreys": [
+        1,
+        2
+      ],
+      "internalOpenFraction": [
+        0.22,
+        0.4
+      ]
+    },
+    "D3_workshop_mixed": {
+      "description": "house_workshop_and_craft_yard_fabric",
+      "typicalParcelAreaM2": [
+        180,
+        650
+      ],
+      "frontageM": [
+        8,
+        16
+      ],
+      "depthM": [
+        28,
+        55
+      ],
+      "ordinaryStoreys": [
+        1,
+        2
+      ],
+      "workYardFraction": [
+        0.25,
+        0.48
+      ]
+    },
+    "D3_outer_residential": {
+      "description": "lower_density_residential_transition",
+      "typicalParcelAreaM2": [
+        220,
+        800
+      ],
+      "frontageM": [
+        9,
+        20
+      ],
+      "depthM": [
+        30,
+        60
+      ],
+      "ordinaryStoreys": [
+        1,
+        2
+      ],
+      "internalOpenFraction": [
+        0.32,
+        0.58
+      ]
+    },
+    "D4_logistics": {
+      "description": "warehouse_granary_cart_yard",
+      "typicalParcelAreaM2": [
+        400,
+        1800
+      ],
+      "frontageM": [
+        12,
+        30
+      ],
+      "depthM": [
+        35,
+        80
+      ],
+      "ordinaryStoreys": [
+        1,
+        2
+      ],
+      "yardFraction": [
+        0.35,
+        0.62
+      ]
+    },
+    "D4_service_edge": {
+      "description": "large_service_workshop_and_storage_edge",
+      "typicalParcelAreaM2": [
+        350,
+        1600
+      ],
+      "frontageM": [
+        12,
+        28
+      ],
+      "depthM": [
+        32,
+        75
+      ],
+      "ordinaryStoreys": [
+        1,
+        2
+      ],
+      "yardFraction": [
+        0.38,
+        0.65
+      ]
+    },
+    "D5_peripheral": {
+      "description": "garden_corral_scattered_workshop_transition",
+      "typicalParcelAreaM2": [
+        700,
+        3200
+      ],
+      "frontageM": [
+        15,
+        40
+      ],
+      "depthM": [
+        40,
+        100
+      ],
+      "ordinaryStoreys": [
+        1
+      ],
+      "openFraction": [
+        0.55,
+        0.82
+      ]
+    }
+  },
+  "fabricZones": {
+    "UF01": {
+      "name": "riverfront_mixed_fabric",
+      "contexts": [
+        "T01",
+        "T03",
+        "T09"
+      ],
+      "planningAreaHa": 6.2,
+      "blockClusterCount": 7,
+      "parcelCount": 105,
+      "designResidentCapacity": 850,
+      "densityClass": "D2_dense_mixed",
+      "anchorEnvelopeXYm": [
+        [
+          -20,
+          340
+        ],
+        [
+          160,
+          330
+        ],
+        [
+          260,
+          400
+        ],
+        [
+          250,
+          570
+        ],
+        [
+          160,
+          650
+        ],
+        [
+          20,
+          610
+        ],
+        [
+          -40,
+          500
+        ]
+      ],
+      "dominantUses": [
+        "U03",
+        "U01",
+        "U04",
+        "U08",
+        "U13"
+      ],
+      "groundCoverageTargetPct": 46,
+      "ordinaryStoreys": "mostly_2_some_1",
+      "character": [
+        "river_workers",
+        "small_trade",
+        "lodging",
+        "mixed_housing",
+        "cargo_edge"
+      ],
+      "openSpace": [
+        "small_rear_yards",
+        "loading_gaps"
+      ]
+    },
+    "UF02": {
+      "name": "market_core_mixed_fabric",
+      "contexts": [
+        "T03",
+        "T09"
+      ],
+      "planningAreaHa": 12.5,
+      "blockClusterCount": 13,
+      "parcelCount": 310,
+      "designResidentCapacity": 2800,
+      "densityClass": "D1_core",
+      "anchorEnvelopeXYm": [
+        [
+          160,
+          320
+        ],
+        [
+          450,
+          310
+        ],
+        [
+          680,
+          390
+        ],
+        [
+          790,
+          520
+        ],
+        [
+          650,
+          720
+        ],
+        [
+          430,
+          820
+        ],
+        [
+          180,
+          760
+        ],
+        [
+          80,
+          570
+        ]
+      ],
+      "dominantUses": [
+        "U03",
+        "U04",
+        "U01",
+        "U05",
+        "U06"
+      ],
+      "groundCoverageTargetPct": 52,
+      "ordinaryStoreys": "2_dominant_3_minority",
+      "character": [
+        "daily_trade",
+        "shops",
+        "taverns",
+        "inns",
+        "dense_mixed_housing"
+      ],
+      "reservedExclusions": [
+        "S06",
+        "major_road_reservations"
+      ]
+    },
+    "UF03": {
+      "name": "civil_port_rear_fabric",
+      "contexts": [
+        "T07",
+        "T09"
+      ],
+      "planningAreaHa": 8.2,
+      "blockClusterCount": 8,
+      "parcelCount": 150,
+      "designResidentCapacity": 1000,
+      "densityClass": "D2_port_mixed",
+      "anchorEnvelopeXYm": [
+        [
+          130,
+          300
+        ],
+        [
+          300,
+          250
+        ],
+        [
+          650,
+          300
+        ],
+        [
+          690,
+          420
+        ],
+        [
+          520,
+          455
+        ],
+        [
+          300,
+          430
+        ],
+        [
+          135,
+          350
+        ]
+      ],
+      "dominantUses": [
+        "U13",
+        "U08",
+        "U03",
+        "U05",
+        "U06",
+        "U01"
+      ],
+      "groundCoverageTargetPct": 44,
+      "ordinaryStoreys": "1_to_2",
+      "character": [
+        "port_services",
+        "warehouse_rear",
+        "lodging",
+        "fishing_households"
+      ],
+      "reservedExclusions": [
+        "S07",
+        "PCZ01",
+        "PCZ02",
+        "C11",
+        "C12"
+      ]
+    },
+    "UF04": {
+      "name": "interior_logistics_fabric",
+      "contexts": [
+        "T02"
+      ],
+      "planningAreaHa": 9,
+      "blockClusterCount": 7,
+      "parcelCount": 120,
+      "designResidentCapacity": 500,
+      "densityClass": "D4_logistics",
+      "anchorEnvelopeXYm": [
+        [
+          -40,
+          590
+        ],
+        [
+          100,
+          550
+        ],
+        [
+          280,
+          580
+        ],
+        [
+          450,
+          700
+        ],
+        [
+          430,
+          900
+        ],
+        [
+          250,
+          980
+        ],
+        [
+          40,
+          940
+        ],
+        [
+          -60,
+          800
+        ]
+      ],
+      "dominantUses": [
+        "U08",
+        "U09",
+        "U07",
+        "U02",
+        "U10"
+      ],
+      "groundCoverageTargetPct": 35,
+      "ordinaryStoreys": "1_dominant_some_2",
+      "character": [
+        "warehouses",
+        "granaries",
+        "cart_yards",
+        "timber_receiving",
+        "limited_housing"
+      ],
+      "reservedExclusions": [
+        "S09A_T02",
+        "C01",
+        "C02",
+        "C13"
+      ]
+    },
+    "UF05": {
+      "name": "woodcraft_west_fabric",
+      "contexts": [
+        "T04",
+        "T09"
+      ],
+      "planningAreaHa": 12.8,
+      "blockClusterCount": 12,
+      "parcelCount": 210,
+      "designResidentCapacity": 1400,
+      "densityClass": "D3_workshop_mixed",
+      "anchorEnvelopeXYm": [
+        [
+          120,
+          600
+        ],
+        [
+          330,
+          590
+        ],
+        [
+          500,
+          650
+        ],
+        [
+          520,
+          800
+        ],
+        [
+          400,
+          900
+        ],
+        [
+          220,
+          900
+        ],
+        [
+          100,
+          780
+        ]
+      ],
+      "dominantUses": [
+        "U02",
+        "U07",
+        "U01",
+        "U03",
+        "U08"
+      ],
+      "groundCoverageTargetPct": 42,
+      "ordinaryStoreys": "1_to_2",
+      "character": [
+        "house_workshops",
+        "carpentry",
+        "cabinetmaking",
+        "yards",
+        "timber_handling"
+      ],
+      "reservedExclusions": [
+        "S09A_T02",
+        "C10",
+        "C13"
+      ]
+    },
+    "UF06": {
+      "name": "woodcraft_east_fabric",
+      "contexts": [
+        "T04",
+        "T09"
+      ],
+      "planningAreaHa": 9.4,
+      "blockClusterCount": 9,
+      "parcelCount": 160,
+      "designResidentCapacity": 1000,
+      "densityClass": "D3_workshop_mixed",
+      "anchorEnvelopeXYm": [
+        [
+          430,
+          520
+        ],
+        [
+          700,
+          420
+        ],
+        [
+          850,
+          500
+        ],
+        [
+          900,
+          650
+        ],
+        [
+          720,
+          780
+        ],
+        [
+          650,
+          850
+        ],
+        [
+          500,
+          800
+        ]
+      ],
+      "dominantUses": [
+        "U02",
+        "U07",
+        "U01",
+        "U03",
+        "U08"
+      ],
+      "groundCoverageTargetPct": 40,
+      "ordinaryStoreys": "1_to_2",
+      "character": [
+        "skilled_workshops",
+        "house_workshops",
+        "supply_transition",
+        "fire_yards"
+      ],
+      "reservedExclusions": [
+        "S03",
+        "S04",
+        "S05",
+        "S09B_T04",
+        "C03",
+        "C10",
+        "C18"
+      ]
+    },
+    "UF07": {
+      "name": "central_residential_west",
+      "contexts": [
+        "T09"
+      ],
+      "planningAreaHa": 13,
+      "blockClusterCount": 14,
+      "parcelCount": 310,
+      "designResidentCapacity": 2600,
+      "densityClass": "D2_residential_mixed",
+      "anchorEnvelopeXYm": [
+        [
+          40,
+          700
+        ],
+        [
+          250,
+          700
+        ],
+        [
+          430,
+          820
+        ],
+        [
+          470,
+          1040
+        ],
+        [
+          420,
+          1150
+        ],
+        [
+          120,
+          1050
+        ],
+        [
+          -10,
+          850
+        ]
+      ],
+      "dominantUses": [
+        "U01",
+        "U04",
+        "U02",
+        "U03"
+      ],
+      "groundCoverageTargetPct": 46,
+      "ordinaryStoreys": "2_common_1_secondary",
+      "character": [
+        "family_housing",
+        "multi_household",
+        "small_workshops",
+        "local_services"
+      ],
+      "reservedExclusions": [
+        "C01",
+        "C02",
+        "C17"
+      ]
+    },
+    "UF08": {
+      "name": "central_residential_east",
+      "contexts": [
+        "T09"
+      ],
+      "planningAreaHa": 12.6,
+      "blockClusterCount": 13,
+      "parcelCount": 300,
+      "designResidentCapacity": 2500,
+      "densityClass": "D2_residential_mixed",
+      "anchorEnvelopeXYm": [
+        [
+          600,
+          760
+        ],
+        [
+          820,
+          700
+        ],
+        [
+          950,
+          700
+        ],
+        [
+          980,
+          1020
+        ],
+        [
+          850,
+          1200
+        ],
+        [
+          650,
+          1140
+        ],
+        [
+          550,
+          950
+        ]
+      ],
+      "dominantUses": [
+        "U01",
+        "U04",
+        "U03",
+        "U02"
+      ],
+      "groundCoverageTargetPct": 44,
+      "ordinaryStoreys": "2_common_1_secondary_3_rare",
+      "character": [
+        "family_housing",
+        "mixed_use",
+        "local_services",
+        "civic_edge"
+      ],
+      "reservedExclusions": [
+        "S01",
+        "S02",
+        "C08",
+        "C09"
+      ]
+    },
+    "UF09": {
+      "name": "civic_fringe_fabric",
+      "contexts": [
+        "T05",
+        "T06",
+        "T09"
+      ],
+      "planningAreaHa": 7,
+      "blockClusterCount": 7,
+      "parcelCount": 130,
+      "designResidentCapacity": 850,
+      "densityClass": "D2_civic_edge",
+      "anchorEnvelopeXYm": [
+        [
+          520,
+          550
+        ],
+        [
+          860,
+          620
+        ],
+        [
+          1100,
+          800
+        ],
+        [
+          1040,
+          1030
+        ],
+        [
+          850,
+          1100
+        ],
+        [
+          620,
+          900
+        ]
+      ],
+      "dominantUses": [
+        "U01",
+        "U03",
+        "U04",
+        "U11",
+        "U12"
+      ],
+      "groundCoverageTargetPct": 38,
+      "ordinaryStoreys": "2_common",
+      "character": [
+        "clerks",
+        "service_households",
+        "small_trade",
+        "formal_frontages"
+      ],
+      "reservedExclusions": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "C08",
+        "C18"
+      ]
+    },
+    "UF10": {
+      "name": "northern_residential_transition",
+      "contexts": [
+        "T09",
+        "T10"
+      ],
+      "planningAreaHa": 8.8,
+      "blockClusterCount": 10,
+      "parcelCount": 230,
+      "designResidentCapacity": 1050,
+      "densityClass": "D3_outer_residential",
+      "anchorEnvelopeXYm": [
+        [
+          200,
+          950
+        ],
+        [
+          500,
+          950
+        ],
+        [
+          800,
+          1050
+        ],
+        [
+          850,
+          1200
+        ],
+        [
+          650,
+          1320
+        ],
+        [
+          300,
+          1280
+        ]
+      ],
+      "dominantUses": [
+        "U01",
+        "U02",
+        "U10",
+        "U07"
+      ],
+      "groundCoverageTargetPct": 32,
+      "ordinaryStoreys": "1_to_2",
+      "character": [
+        "larger_yards",
+        "craft_households",
+        "stables",
+        "garden_edges"
+      ],
+      "reservedExclusions": [
+        "S10",
+        "C02",
+        "C14",
+        "growth_reserve"
+      ]
+    },
+    "UF11": {
+      "name": "rural_peripheral_transition",
+      "contexts": [
+        "T10"
+      ],
+      "planningAreaHa": 7.2,
+      "blockClusterCount": 6,
+      "parcelCount": 95,
+      "designResidentCapacity": 350,
+      "densityClass": "D5_peripheral",
+      "anchorEnvelopeXYm": [
+        [
+          -20,
+          900
+        ],
+        [
+          240,
+          860
+        ],
+        [
+          350,
+          1000
+        ],
+        [
+          300,
+          1220
+        ],
+        [
+          100,
+          1320
+        ],
+        [
+          -50,
+          1200
+        ]
+      ],
+      "dominantUses": [
+        "U10",
+        "U07",
+        "U01",
+        "U02"
+      ],
+      "groundCoverageTargetPct": 20,
+      "ordinaryStoreys": "1_dominant",
+      "character": [
+        "market_gardens",
+        "corrals",
+        "space_hungry_workshops",
+        "scattered_housing"
+      ],
+      "reservedExclusions": [
+        "S10",
+        "C14",
+        "growth_reserve"
+      ]
+    },
+    "UF12": {
+      "name": "eastern_service_shoulder",
+      "contexts": [
+        "T04",
+        "T09"
+      ],
+      "planningAreaHa": 4,
+      "blockClusterCount": 4,
+      "parcelCount": 55,
+      "designResidentCapacity": 100,
+      "densityClass": "D4_service_edge",
+      "anchorEnvelopeXYm": [
+        [
+          700,
+          420
+        ],
+        [
+          900,
+          430
+        ],
+        [
+          1000,
+          587
+        ],
+        [
+          930,
+          680
+        ],
+        [
+          850,
+          700
+        ],
+        [
+          720,
+          620
+        ]
+      ],
+      "dominantUses": [
+        "U07",
+        "U08",
+        "U13",
+        "U02"
+      ],
+      "groundCoverageTargetPct": 28,
+      "ordinaryStoreys": "1_dominant",
+      "character": [
+        "service_workshops",
+        "storage",
+        "civil_naval_buffer_support"
+      ],
+      "reservedExclusions": [
+        "T08_controlled_boundary",
+        "C05",
+        "C16"
+      ]
+    }
+  },
+  "parcelCapacitySlots": {
+    "total": 2175,
+    "byCompatiblePrimaryForm": {
+      "U01_urban_family_house": 650,
+      "U02_house_workshop": 360,
+      "U03_shop_with_dwelling": 330,
+      "U04_multi_household_preindustrial_building": 240,
+      "U05_lodging_capable": 40,
+      "U06_tavern_food_service_capable": 80,
+      "U07_dedicated_specialized_workshop": 180,
+      "U08_warehouse": 150,
+      "U09_urban_or_logistics_granary": 45,
+      "U10_stable_or_corral": 70,
+      "U13_port_service_building": 30
+    },
+    "activeBusinessCountFixedByParcelPlan": false,
+    "exactOccupantHouseholdCountFixedByParcelPlan": false,
+    "ordinaryParcelMayChangeCompatibleUseThroughWorldState": true,
+    "singularFacilitiesS01S13ExcludedFromTheseCounts": true
+  },
+  "buildingFabric": {
+    "materials": [
+      "stone",
+      "timber",
+      "slate_roofing"
+    ],
+    "ordinaryHeightRules": {
+      "oneStorey": "common_periphery_workshops_warehouses_auxiliary",
+      "twoStorey": "very_common_central_and_intermediate",
+      "threeStorey": "minority_only_in_D1_or_selected_D2_sites",
+      "aboveThreeStoreys": false
+    },
+    "estimatedGroundCoverageHa": 44.806,
+    "estimatedGrossFloorAreaHa": 70.613,
+    "grossFloorAreaIsDesignControlNotCensus": true,
+    "mixedUseCommon": true,
+    "perfectResidentialCommercialSeparation": false,
+    "noSkylineTowers": true
+  },
+  "blockAndParcelRules": {
+    "perfectGrid": false,
+    "roadFrontagePreferredForPrimaryParcelAccess": true,
+    "rearServiceAccessMayUseR5OrP1": true,
+    "blindRearCompoundsAllowedWhenAccessEasementExists": true,
+    "partyWallsAllowedInD1AndD2": true,
+    "detachedOrSemiDetachedMoreCommonInD3ToD5": true,
+    "courtyardsCommon": true,
+    "workshopYardsCommon": true,
+    "portLoadingYardsCommon": true,
+    "lotsFollowRoadCurvatureAndHistoricEdges": true,
+    "uniformFrontageForbidden": true,
+    "everyParcelRectangular": false,
+    "modernSetbackUniformity": false
+  },
+  "minorLocalNetwork": {
+    "status": "point_8_fixed",
+    "lanes": {
+      "L01": {
+        "class": "R5",
+        "centerlineXYm": [
+          [
+            30,
+            580
+          ],
+          [
+            120,
+            600
+          ],
+          [
+            200,
+            620
+          ]
+        ],
+        "role": [
+          "river_rear_service",
+          "local_access"
+        ]
+      },
+      "L02": {
+        "class": "P1",
+        "centerlineXYm": [
+          [
+            180,
+            700
+          ],
+          [
+            260,
+            650
+          ],
+          [
+            330,
+            620
+          ]
+        ],
+        "role": [
+          "market_back_passage",
+          "pedestrian"
+        ]
+      },
+      "L03": {
+        "class": "P1",
+        "centerlineXYm": [
+          [
+            430,
+            720
+          ],
+          [
+            500,
+            680
+          ],
+          [
+            540,
+            650
+          ]
+        ],
+        "role": [
+          "core_east_passage",
+          "pedestrian"
+        ]
+      },
+      "L04": {
+        "class": "R5",
+        "centerlineXYm": [
+          [
+            250,
+            400
+          ],
+          [
+            300,
+            350
+          ],
+          [
+            400,
+            330
+          ],
+          [
+            500,
+            350
+          ]
+        ],
+        "role": [
+          "port_rear_service",
+          "warehouse_access"
+        ]
+      },
+      "L05": {
+        "class": "R5",
+        "centerlineXYm": [
+          [
+            220,
+            780
+          ],
+          [
+            300,
+            820
+          ],
+          [
+            400,
+            800
+          ]
+        ],
+        "role": [
+          "woodcraft_west_service",
+          "fire_access"
+        ]
+      },
+      "L06": {
+        "class": "R5",
+        "centerlineXYm": [
+          [
+            500,
+            780
+          ],
+          [
+            600,
+            750
+          ],
+          [
+            700,
+            720
+          ]
+        ],
+        "role": [
+          "woodcraft_east_service",
+          "fire_access"
+        ]
+      },
+      "L07": {
+        "class": "P1",
+        "centerlineXYm": [
+          [
+            120,
+            880
+          ],
+          [
+            220,
+            860
+          ],
+          [
+            330,
+            820
+          ]
+        ],
+        "role": [
+          "residential_west_passage"
+        ]
+      },
+      "L08": {
+        "class": "R5",
+        "centerlineXYm": [
+          [
+            300,
+            980
+          ],
+          [
+            420,
+            1000
+          ],
+          [
+            520,
+            1040
+          ]
+        ],
+        "role": [
+          "residential_north_service"
+        ]
+      },
+      "L09": {
+        "class": "P1",
+        "centerlineXYm": [
+          [
+            650,
+            930
+          ],
+          [
+            780,
+            920
+          ],
+          [
+            900,
+            900
+          ]
+        ],
+        "role": [
+          "residential_east_passage"
+        ]
+      },
+      "L10": {
+        "class": "R5",
+        "centerlineXYm": [
+          [
+            850,
+            1030
+          ],
+          [
+            930,
+            1000
+          ],
+          [
+            1040,
+            970
+          ]
+        ],
+        "role": [
+          "administrative_rear_service"
+        ]
+      },
+      "L11": {
+        "class": "P1",
+        "centerlineXYm": [
+          [
+            600,
+            800
+          ],
+          [
+            680,
+            830
+          ],
+          [
+            760,
+            900
+          ]
+        ],
+        "role": [
+          "civic_residential_passage"
+        ]
+      },
+      "L12": {
+        "class": "R5",
+        "centerlineXYm": [
+          [
+            100,
+            1100
+          ],
+          [
+            180,
+            1080
+          ],
+          [
+            260,
+            1150
+          ]
+        ],
+        "role": [
+          "outer_household_service"
+        ]
+      }
+    },
+    "laneCount": 12,
+    "R5WidthUsesPoint6Class": true,
+    "P1WidthUsesPoint6Class": true,
+    "officialStreetNamesAssigned": false
+  },
+  "fireAndYardMorphology": {
+    "woodcraftZones": [
+      "UF05",
+      "UF06"
+    ],
+    "continuousDenseTimberFrontageMaxM": 85,
+    "requiredInterruptionTypes": [
+      "yard",
+      "cross_lane",
+      "stone_party_wall_cluster",
+      "open_work_space"
+    ],
+    "workshopYardFractionTarget": [
+      0.25,
+      0.48
+    ],
+    "majorTimberStacksRemainInS09OrApprovedLargeYards": true,
+    "ordinaryResidentialParcelsNotDefaultBulkTimberStacks": true,
+    "fireAccessLanes": [
+      "L05",
+      "L06",
+      "C10",
+      "C13"
+    ]
+  },
+  "portParcelization": {
+    "zones": [
+      "UF01",
+      "UF03",
+      "UF12"
+    ],
+    "warehouseFrontageMayBeLargerThanResidential": true,
+    "waterfrontApronsNotSubdividedIntoPrivateResidentialParcels": true,
+    "CP01_CP06OperationalAreasRemainPublicOrControlledOperationalSpace": true,
+    "inspectionAndHeldCargoZonesRemainOperationalNotOrdinaryCommercialParcels": true
+  },
+  "institutionalEdges": {
+    "S01S13RemainIndependentCanonicalCompounds": true,
+    "ordinaryFabricMayAbutButNotConsumeSingularSites": true,
+    "T08OrdinaryResidentialParcels": false,
+    "T12OrdinaryResidentialParcels": false,
+    "T05T06SurroundingFabricMayContainHousingAndServices": true
+  },
+  "peripheralCapacityReservations": {
+    "milling": {
+      "status": "spatial_capacity_resolved_without_named_institution",
+      "reservations": [
+        {
+          "id": "MC01_T02",
+          "context": "UF04",
+          "approxAreaHa": 0.65,
+          "near": [
+            "C02",
+            "C13"
+          ],
+          "purpose": "grain_food_milling_capacity",
+          "waterPoweredSawmill": false
+        },
+        {
+          "id": "MC02_T10",
+          "context": "UF11",
+          "approxAreaHa": 0.85,
+          "near": [
+            "C02",
+            "C14"
+          ],
+          "purpose": "grain_food_milling_capacity",
+          "waterPoweredSawmill": false
+        }
+      ],
+      "exactOperatorCountWorldStateDependent": true,
+      "technologyMustFollowExistingCanon": true
+    },
+    "communalCremation": {
+      "status": "required_peripheral_capacity_reserved",
+      "id": "PFA01",
+      "context": "outer_T10_edge",
+      "anchorPolygonXYm": [
+        [
+          -10,
+          1230
+        ],
+        [
+          110,
+          1210
+        ],
+        [
+          170,
+          1290
+        ],
+        [
+          140,
+          1370
+        ],
+        [
+          20,
+          1370
+        ],
+        [
+          -30,
+          1310
+        ]
+      ],
+      "approximateAreaHa": 1.25,
+      "religiousSite": false,
+      "cemetery": false,
+      "ordinaryUrbanHousing": false,
+      "communalAshReturnForLandlessResidentsSupported": true,
+      "maritimeAshScatteringUnaffected": true
+    }
+  },
+  "infrastructureReservations": {
+    "publicWaterAccessNodes": [
+      {
+        "id": "W01",
+        "xyM": [
+          210,
+          610
+        ],
+        "context": "river_core"
+      },
+      {
+        "id": "W02",
+        "xyM": [
+          390,
+          670
+        ],
+        "context": "market_core"
+      },
+      {
+        "id": "W03",
+        "xyM": [
+          520,
+          410
+        ],
+        "context": "port_rear"
+      },
+      {
+        "id": "W04",
+        "xyM": [
+          300,
+          840
+        ],
+        "context": "woodcraft_west"
+      },
+      {
+        "id": "W05",
+        "xyM": [
+          700,
+          850
+        ],
+        "context": "woodcraft_east"
+      },
+      {
+        "id": "W06",
+        "xyM": [
+          240,
+          980
+        ],
+        "context": "residential_west"
+      },
+      {
+        "id": "W07",
+        "xyM": [
+          820,
+          980
+        ],
+        "context": "residential_east"
+      },
+      {
+        "id": "W08",
+        "xyM": [
+          930,
+          850
+        ],
+        "context": "civic_east"
+      },
+      {
+        "id": "W09",
+        "xyM": [
+          520,
+          1180
+        ],
+        "context": "northern_transition"
+      },
+      {
+        "id": "W10",
+        "xyM": [
+          150,
+          1180
+        ],
+        "context": "periphery"
+      }
+    ],
+    "waterNodeCount": 10,
+    "sourceRule": "each_node_must_resolve_to_protected_well_fountain_cistern_or_other_canonical_safe_source_before_runtime; raw_river_water_is_not_automatically_potable",
+    "wasteCollectionAndRemovalNodes": [
+      {
+        "id": "WR01",
+        "xyM": [
+          170,
+          340
+        ],
+        "context": "fish_and_port"
+      },
+      {
+        "id": "WR02",
+        "xyM": [
+          260,
+          660
+        ],
+        "context": "market_west"
+      },
+      {
+        "id": "WR03",
+        "xyM": [
+          520,
+          700
+        ],
+        "context": "market_east"
+      },
+      {
+        "id": "WR04",
+        "xyM": [
+          300,
+          900
+        ],
+        "context": "woodcraft"
+      },
+      {
+        "id": "WR05",
+        "xyM": [
+          840,
+          1040
+        ],
+        "context": "residential_east"
+      },
+      {
+        "id": "WR06",
+        "xyM": [
+          420,
+          1180
+        ],
+        "context": "outer_residential"
+      }
+    ],
+    "modernSewer": false,
+    "removalRequiresRealLaborAndDestination": true
+  },
+  "growthTransition": {
+    "ordinaryGrowthReserveHa": 25.82,
+    "reserveFromPoint4Preserved": true,
+    "UF10UF11AreCurrentTransitionNotConsumptionOfEntireReserve": true,
+    "futureGrowthMustExtendRoadsAndServicesCausally": true,
+    "noInstantNewDistricts": true
+  },
+  "preservedConstraints": {
+    "mixedFabricPoint2TargetPreserved": true,
+    "T01T12SectorGeometryPreserved": true,
+    "S01S13SitesPreserved": true,
+    "C01C18RoadNetworkPreserved": true,
+    "T01T07T08WaterfrontPreserved": true,
+    "noCityWall": true,
+    "noReligiousArchitecture": true,
+    "noModernSewer": true,
+    "noUniversalPaving": true,
+    "lowRiseProfilePreserved": true
+  },
+  "deferredToLaterPoints": {
+    "point9": [
+      "integrated_mobility_capacity_test",
+      "fire_access_test",
+      "water_redundancy_test",
+      "sanitation_test",
+      "flood_test",
+      "port_logistics_test",
+      "military_logistics_test",
+      "growth_test",
+      "emergency_test"
+    ],
+    "point10": [
+      "final_cartographic_rendering",
+      "exact_visible_parcel_line_materialization",
+      "stable_spatial_export",
+      "lore_map_versions",
+      "game_operational_map"
+    ]
+  },
+  "authorDecisionRequiredBeforePoint9": false,
+  "nextPoint": {
+    "id": 9,
+    "name": "integrated_functional_validation",
+    "mustResolve": [
+      "mobility",
+      "cargo",
+      "markets",
+      "fire",
+      "water",
+      "sanitation",
+      "flood",
+      "port",
+      "naval_logistics",
+      "military_logistics",
+      "institutional_access",
+      "population",
+      "growth",
+      "emergencies"
+    ]
+  }
+}
