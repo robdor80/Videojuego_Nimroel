@@ -143,7 +143,7 @@ Debe resolver métricamente:
 
 ## Punto 8 — Parcelación y tejido urbano
 
-Estado: **SIGUIENTE / ACTIVO**
+Estado: **CERRADO**
 
 Debe fijar:
 
@@ -160,6 +160,8 @@ Debe fijar:
 ---
 
 ## Punto 9 — Validación funcional integral
+
+Estado: **SIGUIENTE / ACTIVO**
 
 Debe probar al menos:
 
