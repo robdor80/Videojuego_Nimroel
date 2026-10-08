@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "1.4",
+  "version": "1.5",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -109,7 +109,8 @@
     "preplanConstraints": "Datos operativos/treskal_preplan_external_canon_constraints_v0.1.json",
     "metricScaleFootprint": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
     "metricGeography": "Datos operativos/treskal_metric_geography_contract_v0.1.json",
-    "metricSectorFit": "Datos operativos/treskal_metric_sector_fit_contract_v0.1.json"
+    "metricSectorFit": "Datos operativos/treskal_metric_sector_fit_contract_v0.1.json",
+    "metricFacilityFit": "Datos operativos/treskal_metric_facility_fit_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -236,7 +237,6 @@
   },
   "unresolvedStructuralItems": [
     "metric_city_plan",
-    "S01_S13_exact_sites_and_footprints",
     "street_level_geometry",
     "T07_T08_waterfront_geometry",
     "parcel_and_urban_fabric_geometry"
@@ -297,7 +297,8 @@
     "fiscalCustomsIntegrationTestPack": "Datos operativos/treskal_fiscal_customs_integration_test_pack_v0.1.json",
     "fiscalCustomsClosure": "AUDITORIA_CIERRE_FISCAL_ADUANERO_TRESKAL_v0.1.md",
     "metricPlanPoint3": "Validacion/treskal_metric_plan_point_3_validation_pack_v0.1.json",
-    "metricPlanPoint4": "Validacion/treskal_metric_plan_point_4_validation_pack_v0.1.json"
+    "metricPlanPoint4": "Validacion/treskal_metric_plan_point_4_validation_pack_v0.1.json",
+    "metricPlanPoint5": "Validacion/treskal_metric_plan_point_5_validation_pack_v0.1.json"
   },
   "coreInheritance": {
     "status": "complete_high_confidence_migration_validated",
@@ -934,8 +935,8 @@
   "metricPlan": {
     "status": "active",
     "roadmap": "PLAN_METRICO_TRESKAL_ROADMAP_v0.1.md",
-    "currentPoint": 5,
-    "currentPointName": "site_fit_S01_S13",
+    "currentPoint": 6,
+    "currentPointName": "road_network",
     "point1": {
       "status": "closed_static_validated",
       "audit": "AUDITORIA_FINAL_PREPLANO_METRICO_TRESKAL_v0.1.md",
@@ -980,6 +981,16 @@
       "functionalUnionHa": 185.995,
       "planningEnvelopeHa": 250.516,
       "validationCaseCount": 96,
+      "authorDecisionRequiredBeforeNextPoint": false
+    },
+    "point5": {
+      "status": "closed_static_validated",
+      "source": "08_Cartografia/colocacion_metrica_S01_S13_treskal_v0.1.md",
+      "contract": "Datos operativos/treskal_metric_facility_fit_contract_v0.1.json",
+      "validation": "Validacion/treskal_metric_plan_point_5_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PLANO_METRICO_TRESKAL_PUNTO_5_COLOCACION_S01_S13_v0.1.md",
+      "facilitiesPlaced": 13,
+      "validationCaseCount": 104,
       "authorDecisionRequiredBeforeNextPoint": false
     }
   }
