@@ -1,0 +1,591 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_integrated_functional_validation_contract",
+  "version": "0.1",
+  "status": "point_9_closed_integrated_validated",
+  "scope": "Treskal_metric_plan_integrated_functional_validation",
+  "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
+  "sources": [
+    "treskal_metric_scale_footprint_contract_v0.1.json",
+    "treskal_metric_geography_contract_v0.1.json",
+    "treskal_metric_sector_fit_contract_v0.1.json",
+    "treskal_metric_facility_fit_contract_v0.1.json",
+    "treskal_metric_road_network_contract_v0.1.json",
+    "treskal_metric_waterfront_contract_v0.1.json",
+    "treskal_metric_urban_fabric_contract_v0.1.json",
+    "treskal_urban_fabric_registry_v0.1.json",
+    "treskal_city_structure_v0.1.json"
+  ],
+  "closureMarker": "TRESKAL_METRIC_PLAN_POINT_9_INTEGRATED_VALIDATION_CLOSED",
+  "validationMethod": {
+    "type": "cross_system_static_and_stress_validation",
+    "geometryRedesignAllowed": false,
+    "correctionsAllowed": "non_authorial_operational_clarifications_only",
+    "passClasses": [
+      "PASS",
+      "PASS_WITH_CONSTRAINT",
+      "PASS_WITH_ACCEPTED_RESIDUAL_RISK"
+    ],
+    "failClass": "FAIL",
+    "rule": "any unresolved FAIL blocks Point 10"
+  },
+  "correctiveClarificationsApplied": [
+    {
+      "id": "CFIX01",
+      "issue": "Point 8 field could be read as 15000 hard resident capacity despite canonical 12000-18000 range",
+      "resolution": "15000 explicitly remains design reference; 18000 is high-occupancy stress state on same macro geometry",
+      "geometryChanged": false
+    },
+    {
+      "id": "CFIX02",
+      "issue": "public water nodes had locations but safe source archetypes were not yet resolved",
+      "resolution": "W01-W10 assigned ten independent safe source groups using protected wells or covered cisterns; raw river water excluded as automatic potable source",
+      "geometryChanged": false
+    },
+    {
+      "id": "CFIX03",
+      "issue": "T08 and T12 require autonomous water for controlled institutional operation and emergency response",
+      "resolution": "T08 gains two controlled clean cistern sources plus two non-potable waterfront fire-water draw points; T12 gains two controlled cistern/storage sources",
+      "geometryChanged": false
+    },
+    {
+      "id": "CFIX04",
+      "issue": "waste removal nodes lacked an explicit outward destination policy",
+      "resolution": "organic/manure streams route outward for plausible agricultural reuse; non-reusable waste leaves dense fabric for controlled external disposal; harbor/river dumping is not default",
+      "geometryChanged": false
+    }
+  ],
+  "quantitativeControls": {
+    "population": {
+      "canonicalRangeResidents": [
+        12000,
+        18000
+      ],
+      "designReferenceResidents": 15000,
+      "lowStateResidents": 12000,
+      "highStressResidents": 18000,
+      "mixedFabricHa": 110.7,
+      "referenceDensityResidentsPerMixedHa": 135.5,
+      "highStressDensityResidentsPerMixedHa": 162.6,
+      "functionalLandHa": 185.995,
+      "referenceGrossDensityResidentsPerFunctionalHa": 80.6,
+      "highStressGrossDensityResidentsPerFunctionalHa": 96.8,
+      "ordinaryParcels": 2175,
+      "blockClusters": 110,
+      "estimatedGrossFloorAreaHa": 70.613,
+      "grossFloorAreaM2PerResidentAtReferenceIncludingNonResidential": 47.1,
+      "grossFloorAreaM2PerResidentAtHighStressIncludingNonResidential": 39.2,
+      "highStressRequiresNewMacroGeometry": false
+    },
+    "mobility": {
+      "technicalPrimarySecondaryNetworkM": 12981,
+      "technicalMainRoadCount": 18,
+      "localLaneCount": 12,
+      "permanentMainBridgeCount": 1,
+      "allS01S13Accessible": true,
+      "heavyTimberCanAvoidT03": true,
+      "livestockCanAvoidT03": true,
+      "militaryHeavyTrafficCanAvoidT03": true,
+      "navalSupplyCanAvoidT03": true
+    },
+    "marketsAndLogistics": {
+      "S06MarketSiteHa": 4.69,
+      "S07FishExchangeSiteHa": 1.915,
+      "S09TimberCapacityHa": 9.22,
+      "S10LivestockSiteHa": 8.075,
+      "millingReservations": 2,
+      "logisticsPrinciple": "capacity_before_establishment_count"
+    },
+    "fire": {
+      "UF05NearestWaterM": 95.2,
+      "UF05SecondWaterM": 108.1,
+      "UF06NearestWaterM": 205.4,
+      "UF06SecondWaterM": 284.1,
+      "S09ANearestWaterM": 131.7,
+      "S09BNearestWaterM": 134.3,
+      "continuousDenseTimberFrontageMaxM": 85,
+      "shipyardOwnResponse": true,
+      "T08DedicatedNonPotableFireWaterDrawPoints": 2,
+      "modernFireBrigade": false
+    },
+    "water": {
+      "publicSafeSourceGroups": 10,
+      "navalCleanControlledSources": 2,
+      "navalFireWaterDrawPoints": 2,
+      "militaryControlledWaterSources": 2,
+      "rawRiverAutomaticallyPotable": false,
+      "citySingleSourceDependency": false
+    },
+    "sanitation": {
+      "wasteRemovalNodes": 6,
+      "fishWastePriorityRemoval": true,
+      "modernSewer": false,
+      "outwardReuseOrDisposalRequired": true,
+      "defaultRiverHarborDumping": false
+    },
+    "flood": {
+      "T06CriticalFunctionsInF3": true,
+      "T12CriticalFunctionsInF3": true,
+      "T05PreferredF3": true,
+      "waterfrontWorkingEdgesMayFlood": true,
+      "sensitiveLowEdgeStorageForbidden": true,
+      "designFloodClosesRiverNavigation": true
+    },
+    "waterfront": {
+      "T01DevelopedWharfM": 295,
+      "civilPortFrontageM": 540,
+      "civilPiers": 2,
+      "civilAnchorageEquivalentMerchantSlots": 8,
+      "navalFrontageM": 940,
+      "shipyardSlipways": 5,
+      "shipyardLargestDesignLengthM": 60,
+      "navalHeavyBerthEquivalentPositions": 2,
+      "navalMediumLargeBerthEquivalentPositions": 2,
+      "navalLightBerthEquivalentPositions": 4,
+      "navalWaitingEquivalentSlots": 6,
+      "civilNavalSeparationM": 260
+    },
+    "military": {
+      "S11OrdinaryProfessionals": [
+        260,
+        340
+      ],
+      "S12SimultaneousActivity": [
+        800,
+        1200
+      ],
+      "T12SeparateFromT08": true,
+      "mobilizationUsesRealPopulation": true
+    },
+    "growth": {
+      "ordinaryReserveHa": 25.82,
+      "reservePreserved": true,
+      "instantDistrictGrowth": false,
+      "roadAndServiceExtensionRequired": true
+    }
+  },
+  "stressScenarios": [
+    {
+      "id": "ST01",
+      "name": "resident_low_state_12000",
+      "result": "PASS",
+      "proof": [
+        "canonical_range",
+        "110.7ha_fabric",
+        "2175_parcels"
+      ],
+      "effects": [
+        "lower_occupancy_no_geometry_change"
+      ]
+    },
+    {
+      "id": "ST02",
+      "name": "resident_design_state_15000",
+      "result": "PASS",
+      "proof": [
+        "design_reference",
+        "parcel_capacity",
+        "mixed_use_fabric"
+      ]
+    },
+    {
+      "id": "ST03",
+      "name": "resident_high_state_18000",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "1.20_occupancy_factor",
+        "multi_household_capacity",
+        "same_macro_geometry"
+      ],
+      "constraints": [
+        "higher_household_and_multi_household_occupancy",
+        "service_load_increases"
+      ]
+    },
+    {
+      "id": "ST04",
+      "name": "ordinary_food_inbound_morning",
+      "result": "PASS",
+      "proof": [
+        "C02",
+        "T10_or_T02",
+        "C18_or_local_distribution",
+        "S06"
+      ],
+      "coreHeavyTrafficRequired": false
+    },
+    {
+      "id": "ST05",
+      "name": "daily_market_peak",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "S06_4.69ha",
+        "multiple_accesses",
+        "C18",
+        "C07",
+        "waste_nodes_WR02_WR03"
+      ],
+      "constraints": [
+        "local_congestion_possible",
+        "guard_and_time_space_management_required"
+      ]
+    },
+    {
+      "id": "ST06",
+      "name": "livestock_arrival_day",
+      "result": "PASS",
+      "proof": [
+        "C02",
+        "C14",
+        "S10_8.075ha"
+      ],
+      "T03CrossingRequired": false
+    },
+    {
+      "id": "ST07",
+      "name": "timber_to_urban_workshops",
+      "result": "PASS",
+      "proof": [
+        "C03",
+        "C10",
+        "C13",
+        "S09",
+        "UF05_UF06"
+      ],
+      "T03HeavyCrossingRequired": false
+    },
+    {
+      "id": "ST08",
+      "name": "timber_to_royal_shipyards",
+      "result": "PASS",
+      "proof": [
+        "C03_or_C05",
+        "C16",
+        "S08",
+        "NSW01_NSW05"
+      ],
+      "civilPortEntryRequired": false
+    },
+    {
+      "id": "ST09",
+      "name": "civil_merchant_arrival_when_berths_full",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "CIV_ANCH_01",
+        "waiting_allowed",
+        "finite_berth_capacity"
+      ],
+      "constraints": [
+        "delay",
+        "anchorage_capacity",
+        "weather"
+      ]
+    },
+    {
+      "id": "ST10",
+      "name": "fishing_return_peak",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "CP01",
+        "CP05",
+        "S07",
+        "C12",
+        "WR01"
+      ],
+      "constraints": [
+        "perishability_priority",
+        "congestion_can_delay"
+      ]
+    },
+    {
+      "id": "ST11",
+      "name": "naval_return_and_repair",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "MR_TRESKAL_NAVAL_APPROACH",
+        "NFP02_or_NFP01",
+        "S08",
+        "five_slipways"
+      ],
+      "constraints": [
+        "actual_draft",
+        "berth_capacity",
+        "repair_capacity"
+      ]
+    },
+    {
+      "id": "ST12",
+      "name": "large_troop_embarkation",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "C04",
+        "C05",
+        "C16",
+        "S13",
+        "NFP03",
+        "S12_capacity"
+      ],
+      "constraints": [
+        "staging_and_berth_time",
+        "real_transport_capacity"
+      ]
+    },
+    {
+      "id": "ST13",
+      "name": "design_flood",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "S03_S05_F3",
+        "S11_S12_F3",
+        "sensitive_storage_rearward"
+      ],
+      "constraints": [
+        "river_navigation_closed",
+        "low_working_edges_may_be_lost",
+        "repair_required_after_damage"
+      ]
+    },
+    {
+      "id": "ST14",
+      "name": "severe_southerly_or_southeasterly_storm",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "T07_restricted_modes",
+        "NBW01",
+        "waiting_allowed"
+      ],
+      "constraints": [
+        "civil_outer_berths_may_close",
+        "naval_capacity_may_reduce",
+        "supply_delays"
+      ]
+    },
+    {
+      "id": "ST15",
+      "name": "woodcraft_fire_UF05",
+      "result": "PASS_WITH_ACCEPTED_RESIDUAL_RISK",
+      "proof": [
+        "W04_95m",
+        "W02_108m",
+        "L05",
+        "C10",
+        "C13",
+        "85m_fire_interruptions"
+      ],
+      "constraints": [
+        "no_modern_fire_brigade",
+        "damage_can_spread_before_control"
+      ]
+    },
+    {
+      "id": "ST16",
+      "name": "woodcraft_fire_UF06",
+      "result": "PASS_WITH_ACCEPTED_RESIDUAL_RISK",
+      "proof": [
+        "W05_205m",
+        "secondary_water_284m",
+        "L06",
+        "C10",
+        "C13",
+        "85m_fire_interruptions"
+      ],
+      "constraints": [
+        "longer_bucket_cart_response_than_UF05",
+        "real_damage_possible"
+      ]
+    },
+    {
+      "id": "ST17",
+      "name": "royal_shipyard_fire",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "S08_internal_response",
+        "NFW01",
+        "NFW02",
+        "forge_separation",
+        "timber_stack_separation"
+      ],
+      "constraints": [
+        "large_timber_fire_remains_serious"
+      ]
+    },
+    {
+      "id": "ST18",
+      "name": "one_public_water_source_unavailable",
+      "result": "PASS",
+      "proof": [
+        "10_independent_public_source_groups",
+        "no_single_source_dependency"
+      ],
+      "effects": [
+        "localized_queue_or_extra_walk_possible"
+      ]
+    },
+    {
+      "id": "ST19",
+      "name": "sanitation_collection_delayed",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "six_removal_nodes",
+        "outward_destination_policy"
+      ],
+      "constraints": [
+        "waste_accumulates",
+        "smell_pests_and_service_pressure_can_rise",
+        "no_auto_disappearance"
+      ]
+    },
+    {
+      "id": "ST20",
+      "name": "Puente_de_los_Gemelos_temporarily_blocked",
+      "result": "PASS_WITH_ACCEPTED_RESIDUAL_RISK",
+      "proof": [
+        "east_bank_primary_city",
+        "north_and_east_regional_accesses",
+        "internal_network_remains_connected"
+      ],
+      "constraints": [
+        "west_bank_access_disrupted",
+        "no_second_bridge_redundancy"
+      ]
+    },
+    {
+      "id": "ST21",
+      "name": "simultaneous_market_port_and_workshop_cart_peak",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "C06_C07_C11_C13_C18",
+        "heavy_diversion",
+        "distributed_markets"
+      ],
+      "constraints": [
+        "local_queueing_expected",
+        "not_global_gridlock_by_design"
+      ]
+    },
+    {
+      "id": "ST22",
+      "name": "T08_security_lockdown",
+      "result": "PASS",
+      "proof": [
+        "controlled_C05_C16",
+        "civil_port_separate",
+        "T07_operates_independently"
+      ],
+      "effects": [
+        "naval_access_restricted_without_closing_civil_city"
+      ]
+    },
+    {
+      "id": "ST23",
+      "name": "T12_mobilization_peak",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "C04",
+        "C15",
+        "S11",
+        "S12",
+        "MW01_MW02"
+      ],
+      "constraints": [
+        "temporary_water_and_supply_resupply_needed",
+        "traffic_management_needed"
+      ]
+    },
+    {
+      "id": "ST24",
+      "name": "growth_into_reserved_land",
+      "result": "PASS_WITH_CONSTRAINT",
+      "proof": [
+        "25.82ha_reserve",
+        "UF10_UF11_transition",
+        "stable_macro_edges"
+      ],
+      "constraints": [
+        "roads_water_waste_and_services_must_extend_before_occupation"
+      ]
+    }
+  ],
+  "integratedFindings": {
+    "unresolvedFailures": 0,
+    "geometryCorrectionsRequired": 0,
+    "operationalClarificationsApplied": 4,
+    "authorialDecisionsRequired": 0,
+    "populationRangeSupported": true,
+    "mobilityFunctional": true,
+    "cargoFlowsFunctional": true,
+    "marketsFunctional": true,
+    "fireResponsePlausibleButRiskBearing": true,
+    "waterRedundancyFunctional": true,
+    "sanitationFunctionalButLaborDependent": true,
+    "floodBehaviorCoherent": true,
+    "civilPortFunctional": true,
+    "royalNavalComplexFunctional": true,
+    "militaryLogisticsFunctional": true,
+    "institutionalAccessFunctional": true,
+    "growthReserveFunctional": true,
+    "emergencyBehaviorCausal": true
+  },
+  "acceptedResidualRisks": [
+    {
+      "id": "RR01",
+      "risk": "single_permanent_bridge",
+      "consequence": "temporary loss blocks direct western access",
+      "acceptedBecause": "single bridge is canon; east-bank city remains internally functional and other regional approaches remain"
+    },
+    {
+      "id": "RR02",
+      "risk": "timber_city_fire",
+      "consequence": "serious property loss remains possible",
+      "acceptedBecause": "preindustrial city has real fire risk; yards, water, lanes and response reduce rather than erase it"
+    },
+    {
+      "id": "RR03",
+      "risk": "storm_and_flood_waterfront_shutdown",
+      "consequence": "port delay and low-edge damage",
+      "acceptedBecause": "waterfront is deliberately finite and weather-sensitive rather than magically all-weather"
+    },
+    {
+      "id": "RR04",
+      "risk": "finite_port_and_naval_capacity",
+      "consequence": "waiting and congestion",
+      "acceptedBecause": "finite berth and repair capacity is required for simulation causality"
+    },
+    {
+      "id": "RR05",
+      "risk": "labor_dependent_water_and_sanitation",
+      "consequence": "service degradation when workers, carts or maintenance fail",
+      "acceptedBecause": "preindustrial infrastructure must depend on real people and maintenance"
+    }
+  ],
+  "point9Conclusion": {
+    "cityCanFunctionAtCanonicalScale": true,
+    "cityIsNotFailureProof": true,
+    "failuresCreateWorldStateConsequences": true,
+    "noMacroRedesignRequired": true,
+    "readyForPoint10": true
+  },
+  "deferredToPoint10": [
+    "final_cartographic_rendering",
+    "deterministic_visible_block_and_parcel_line_materialization",
+    "stable_spatial_export",
+    "technical_map",
+    "lore_readable_map",
+    "game_operational_map"
+  ],
+  "authorDecisionRequiredBeforePoint10": false,
+  "nextPoint": {
+    "id": 10,
+    "name": "canonical_final_map",
+    "mustResolve": [
+      "final_geometry_export",
+      "visible_parcel_lines",
+      "legend",
+      "scale",
+      "north_reference",
+      "technical_map",
+      "lore_map",
+      "game_operational_map"
+    ]
+  }
+}
