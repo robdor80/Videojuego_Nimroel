@@ -28,7 +28,8 @@
     "noContinuousCivilNavalQuay": true,
     "noGunpowderFacilities": true,
     "noCoastalFortressRequired": true,
-    "exactOrdinaryBuildingParcelsDeferredToPoint": 8
+    "exactOrdinaryBuildingParcelsDeferredToPoint": 8,
+    "noNavalIslandOrOnlySeaAccess": true
   },
   "T01RiverWaterfront": {
     "riverChainageRangeM": [
@@ -869,6 +870,20 @@
       ],
       "noSinglePotableSourceDependency": true,
       "rawSeaWaterPotable": false
+    },
+    "mainlandShipyardSupplyInvariant": {
+      "status": "mandatory_continental_land_access",
+      "T08_island": false,
+      "T08DetachedPeninsula": false,
+      "allowMainlandConnectedPromontory": true,
+      "landConnectionNeverCutByNavigableWater": true,
+      "C05_externalHeavySupply": true,
+      "C16_internalHeavyService": true,
+      "S08_and_S13_operate_on_continuous_land": true,
+      "logs_beams_tools_workers_provisions_access_by_road": true,
+      "seaTransportMaySupplementButNotReplaceRoadSupply": true,
+      "coastalDocksSlipwaysBreakwaterDoNotImplyIsland": true,
+      "civilNavalCoastalGap_is_T04_shoreline_not_water_isolation": true
     }
   },
   "civilNavalSeparation": {
