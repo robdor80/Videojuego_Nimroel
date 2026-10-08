@@ -161,7 +161,7 @@ Debe fijar:
 
 ## Punto 9 — Validación funcional integral
 
-Estado: **SIGUIENTE / ACTIVO**
+Estado: **CERRADO**
 
 Debe probar al menos:
 
@@ -183,6 +183,8 @@ Debe probar al menos:
 ---
 
 ## Punto 10 — Mapa canónico definitivo
+
+Estado: **SIGUIENTE / ACTIVO**
 
 Debe producir:
 
