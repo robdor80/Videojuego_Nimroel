@@ -17,7 +17,8 @@ Estado:
 - Punto 5 — Colocación S01–S13: **CERRADO**;
 - Punto 6 — Red viaria: **CERRADO**;
 - Punto 7 — Puerto civil y Complejo Naval Real: **CERRADO**;
-- Punto 8 — Parcelación y tejido urbano: **SIGUIENTE**.
+- Punto 8 — Parcelación y tejido urbano: **CERRADO**;
+- Punto 9 — Validación funcional integral: **SIGUIENTE**.
 
 Auditoría vigente:
 
@@ -948,4 +949,27 @@ Contrato:
 
 `Datos operativos/treskal_metric_waterfront_contract_v0.1.json`
 
-La siguiente fase es el **Punto 8 — Parcelación y tejido urbano**.
+### Parcelación y tejido urbano cerrado — Punto 8
+
+Treskal dispone ya de:
+
+- **110,7 ha** de tejido mixto;
+- **12 zonas UF01–UF12**;
+- **110 agrupaciones orgánicas B001–B110**;
+- **2.175 parcelas/recintos P0001–P2175**;
+- gradientes D1–D5;
+- **12 vías locales L01–L12**;
+- 10 nodos reservados de agua;
+- capacidad espacial de molienda resuelta;
+- área periférica de cremación comunitaria;
+- reserva de crecimiento preservada.
+
+Contrato:
+
+`Datos operativos/treskal_metric_urban_fabric_contract_v0.1.json`
+
+Registro estable:
+
+`Datos operativos/treskal_urban_fabric_registry_v0.1.json`
+
+La siguiente fase es el **Punto 9 — Validación funcional integral**.
