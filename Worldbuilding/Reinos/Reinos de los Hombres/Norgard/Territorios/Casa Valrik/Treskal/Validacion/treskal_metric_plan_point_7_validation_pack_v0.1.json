@@ -1,0 +1,1373 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_plan_point_7_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "sourceContract": "../Datos operativos/treskal_metric_waterfront_contract_v0.1.json",
+  "caseCount": 140,
+  "expectedCaseCount": 140,
+  "allExpectedConditionsDefined": true,
+  "categories": {
+    "T01RiverWaterfront": 20,
+    "T07CivilPort": 34,
+    "T08RoyalNavalComplex": 42,
+    "civilNavalSeparationAndSecurity": 16,
+    "flowsWeatherAndCapacity": 16,
+    "scope": 12
+  },
+  "cases": [
+    {
+      "id": "RIV01",
+      "given": {
+        "frontageM": 380
+      },
+      "expect": {
+        "equals": 380
+      }
+    },
+    {
+      "id": "RIV02",
+      "given": {
+        "wharfCount": 3
+      },
+      "expect": {
+        "equals": 3
+      }
+    },
+    {
+      "id": "RIV03",
+      "given": {
+        "developedWharfM": 295
+      },
+      "expect": {
+        "equals": 295
+      }
+    },
+    {
+      "id": "RIV04",
+      "given": {
+        "undevelopedOrRampGapsM": 85
+      },
+      "expect": {
+        "equals": 85
+      }
+    },
+    {
+      "id": "RIV05",
+      "given": {
+        "maxProjectionM": 5
+      },
+      "expect": {
+        "max": 5
+      }
+    },
+    {
+      "id": "RIV06",
+      "given": {
+        "minimumClearWaterCorridorM": 58
+      },
+      "expect": {
+        "min": 58
+      }
+    },
+    {
+      "id": "RIV07",
+      "given": {
+        "upstreamChannelRemainsOpen": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV08",
+      "given": {
+        "majorOceanGoingVesselsAllowed": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "RIV09",
+      "given": {
+        "designFloodNavigationClosed": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV10",
+      "given": {
+        "breakwaterRequired": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "RIV11",
+      "given": {
+        "rampCount": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "id": "RIV12",
+      "given": {
+        "RW01Use": [
+          "small_craft",
+          "river_fish",
+          "light_cargo"
+        ]
+      },
+      "expect": {
+        "contains": "river_fish"
+      }
+    },
+    {
+      "id": "RIV13",
+      "given": {
+        "RW02Use": [
+          "river_barge",
+          "bulk_cargo",
+          "merchant_river_craft"
+        ]
+      },
+      "expect": {
+        "contains": "river_barge"
+      }
+    },
+    {
+      "id": "RIV14",
+      "given": {
+        "RW03Use": [
+          "mixed_river_cargo",
+          "small_craft",
+          "river_fish"
+        ]
+      },
+      "expect": {
+        "contains": "mixed_river_cargo"
+      }
+    },
+    {
+      "id": "RIV15",
+      "given": {
+        "roadInterfaces": [
+          "C07",
+          "C01_or_C02_by_destination"
+        ]
+      },
+      "expect": {
+        "contains": "C07"
+      }
+    },
+    {
+      "id": "RIV16",
+      "given": {
+        "workingEdgeF1F2": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "RIV17",
+      "given": {
+        "sensitiveStorageLowEdge": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "RIV18",
+      "given": {
+        "riverChainage": [
+          200,
+          580
+        ]
+      },
+      "expect": {
+        "equals": [
+          200,
+          580
+        ]
+      }
+    },
+    {
+      "id": "RIV19",
+      "given": {
+        "wharfFrontageSum": 295
+      },
+      "expect": {
+        "equals": 295
+      }
+    },
+    {
+      "id": "RIV20",
+      "given": {
+        "frontageAccounting": 380
+      },
+      "expect": {
+        "equals": 380
+      }
+    },
+    {
+      "id": "CIV01",
+      "given": {
+        "frontageM": 540
+      },
+      "expect": {
+        "equals": 540
+      }
+    },
+    {
+      "id": "CIV02",
+      "given": {
+        "shoreZoneCount": 4
+      },
+      "expect": {
+        "equals": 4
+      }
+    },
+    {
+      "id": "CIV03",
+      "given": {
+        "pierCount": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "id": "CIV04",
+      "given": {
+        "CP01LengthM": 110
+      },
+      "expect": {
+        "equals": 110
+      }
+    },
+    {
+      "id": "CIV05",
+      "given": {
+        "CP02LengthM": 180
+      },
+      "expect": {
+        "equals": 180
+      }
+    },
+    {
+      "id": "CIV06",
+      "given": {
+        "CP03LengthM": 120
+      },
+      "expect": {
+        "equals": 120
+      }
+    },
+    {
+      "id": "CIV07",
+      "given": {
+        "CP04LengthM": 80
+      },
+      "expect": {
+        "equals": 80
+      }
+    },
+    {
+      "id": "CIV08",
+      "given": {
+        "developedShoreAccounting": 490
+      },
+      "expect": {
+        "equals": 490
+      }
+    },
+    {
+      "id": "CIV09",
+      "given": {
+        "shorelineGapsM": 50
+      },
+      "expect": {
+        "equals": 50
+      }
+    },
+    {
+      "id": "CIV10",
+      "given": {
+        "fishLandingConnects": [
+          "S07",
+          "C12"
+        ]
+      },
+      "expect": {
+        "contains": "S07"
+      }
+    },
+    {
+      "id": "CIV11",
+      "given": {
+        "CP05ProjectionM": 95
+      },
+      "expect": {
+        "equals": 95
+      }
+    },
+    {
+      "id": "CIV12",
+      "given": {
+        "CP06ProjectionM": 190
+      },
+      "expect": {
+        "equals": 190
+      }
+    },
+    {
+      "id": "CIV13",
+      "given": {
+        "CP06TargetDepthM": 4.5
+      },
+      "expect": {
+        "equals": 4.5
+      }
+    },
+    {
+      "id": "CIV14",
+      "given": {
+        "merchantShipConditional": [
+          "coastal_trader",
+          "merchant_ship_subject_to_actual_draft_and_water_state"
+        ]
+      },
+      "expect": {
+        "contains": "merchant_ship_subject_to_actual_draft_and_water_state"
+      }
+    },
+    {
+      "id": "CIV15",
+      "given": {
+        "S07PreferredWaterfront": [
+          "CP01_FISH_LANDING",
+          "CP05_FISHING_PIER"
+        ]
+      },
+      "expect": {
+        "contains": "CP01_FISH_LANDING"
+      }
+    },
+    {
+      "id": "CIV16",
+      "given": {
+        "fishPerishabilityPriority": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CIV17",
+      "given": {
+        "fishCartExit": "C12"
+      },
+      "expect": {
+        "equals": "C12"
+      }
+    },
+    {
+      "id": "CIV18",
+      "given": {
+        "standaloneCustomsHouse": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CIV19",
+      "given": {
+        "inspectionAreaHa": 0.72
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "CIV20",
+      "given": {
+        "heldCargoAreaHa": 0.79
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "CIV21",
+      "given": {
+        "internalFastPath": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CIV22",
+      "given": {
+        "localFishingFastPath": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CIV23",
+      "given": {
+        "anchorageSlots": 8
+      },
+      "expect": {
+        "equals": 8
+      }
+    },
+    {
+      "id": "CIV24",
+      "given": {
+        "anchorageFixedFleetCount": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CIV25",
+      "given": {
+        "majorCivilBreakwater": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CIV26",
+      "given": {
+        "approachWidthM": 110
+      },
+      "expect": {
+        "equals": 110
+      }
+    },
+    {
+      "id": "CIV27",
+      "given": {
+        "approachDepthM": 4.5
+      },
+      "expect": {
+        "equals": 4.5
+      }
+    },
+    {
+      "id": "CIV28",
+      "given": {
+        "actualDraftCheck": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CIV29",
+      "given": {
+        "navalApproachConflict": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "CIV30",
+      "given": {
+        "roadInterfaceC11": [
+          "C11",
+          "C06",
+          "C12"
+        ]
+      },
+      "expect": {
+        "contains": "C11"
+      }
+    },
+    {
+      "id": "CIV31",
+      "given": {
+        "roadInterfaceC06": [
+          "C11",
+          "C06",
+          "C12"
+        ]
+      },
+      "expect": {
+        "contains": "C06"
+      }
+    },
+    {
+      "id": "CIV32",
+      "given": {
+        "stormRestrictedDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CIV33",
+      "given": {
+        "stormSevereDefined": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "CIV34",
+      "given": {
+        "largeRoyalRepairAtCP03": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV01",
+      "given": {
+        "frontageM": 940
+      },
+      "expect": {
+        "equals": 940
+      }
+    },
+    {
+      "id": "NAV02",
+      "given": {
+        "authority": "Crown_of_Norgard_House_Aethros"
+      },
+      "expect": {
+        "equals": "Crown_of_Norgard_House_Aethros"
+      }
+    },
+    {
+      "id": "NAV03",
+      "given": {
+        "publicCivilAccess": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV04",
+      "given": {
+        "civilMooringInSecurityWater": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV05",
+      "given": {
+        "slipwayCount": 5
+      },
+      "expect": {
+        "equals": 5
+      }
+    },
+    {
+      "id": "NAV06",
+      "given": {
+        "NSW01MaxM": 28
+      },
+      "expect": {
+        "equals": 28
+      }
+    },
+    {
+      "id": "NAV07",
+      "given": {
+        "NSW02MaxM": 38
+      },
+      "expect": {
+        "equals": 38
+      }
+    },
+    {
+      "id": "NAV08",
+      "given": {
+        "NSW03MaxM": 48
+      },
+      "expect": {
+        "equals": 48
+      }
+    },
+    {
+      "id": "NAV09",
+      "given": {
+        "NSW04MaxM": 54
+      },
+      "expect": {
+        "equals": 54
+      }
+    },
+    {
+      "id": "NAV10",
+      "given": {
+        "NSW05MaxM": 60
+      },
+      "expect": {
+        "equals": 60
+      }
+    },
+    {
+      "id": "NAV11",
+      "given": {
+        "NSW01WidthM": 12
+      },
+      "expect": {
+        "equals": 12
+      }
+    },
+    {
+      "id": "NAV12",
+      "given": {
+        "NSW02WidthM": 14
+      },
+      "expect": {
+        "equals": 14
+      }
+    },
+    {
+      "id": "NAV13",
+      "given": {
+        "NSW03WidthM": 16
+      },
+      "expect": {
+        "equals": 16
+      }
+    },
+    {
+      "id": "NAV14",
+      "given": {
+        "NSW04WidthM": 18
+      },
+      "expect": {
+        "equals": 18
+      }
+    },
+    {
+      "id": "NAV15",
+      "given": {
+        "NSW05WidthM": 20
+      },
+      "expect": {
+        "equals": 20
+      }
+    },
+    {
+      "id": "NAV16",
+      "given": {
+        "fittingOutMaxM": 60
+      },
+      "expect": {
+        "equals": 60
+      }
+    },
+    {
+      "id": "NAV17",
+      "given": {
+        "dryDockRequired": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV18",
+      "given": {
+        "shipyardFireResponse": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "NAV19",
+      "given": {
+        "forgeSeparation": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "NAV20",
+      "given": {
+        "S13ShoreQuayCount": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "id": "NAV21",
+      "given": {
+        "S13FleetPierCount": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "id": "NAV22",
+      "given": {
+        "heavyPierMaxM": 60
+      },
+      "expect": {
+        "equals": 60
+      }
+    },
+    {
+      "id": "NAV23",
+      "given": {
+        "heavyBerths": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "id": "NAV24",
+      "given": {
+        "troopSupplyMaxM": 48
+      },
+      "expect": {
+        "equals": 48
+      }
+    },
+    {
+      "id": "NAV25",
+      "given": {
+        "mediumLargeBerths": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "id": "NAV26",
+      "given": {
+        "lightBerths": 4
+      },
+      "expect": {
+        "equals": 4
+      }
+    },
+    {
+      "id": "NAV27",
+      "given": {
+        "berthPositionsFixedFleetCount": "equivalent_positions_are_planning_capacity_not_fixed_fleet_count"
+      },
+      "expect": {
+        "equals": "equivalent_positions_are_planning_capacity_not_fixed_fleet_count"
+      }
+    },
+    {
+      "id": "NAV28",
+      "given": {
+        "criticalStoresRearward": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "NAV29",
+      "given": {
+        "breakwaterLengthM": 289
+      },
+      "expect": {
+        "equals": 289
+      }
+    },
+    {
+      "id": "NAV30",
+      "given": {
+        "breakwaterCrestWidthM": 6
+      },
+      "expect": {
+        "equals": 6
+      }
+    },
+    {
+      "id": "NAV31",
+      "given": {
+        "artilleryEmplacement": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV32",
+      "given": {
+        "gunpowderMagazine": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV33",
+      "given": {
+        "secondMajorBreakwater": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV34",
+      "given": {
+        "roadsteadSlots": 6
+      },
+      "expect": {
+        "equals": 6
+      }
+    },
+    {
+      "id": "NAV35",
+      "given": {
+        "roadsteadFixedFleet": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV36",
+      "given": {
+        "navalApproachWidthM": 140
+      },
+      "expect": {
+        "equals": 140
+      }
+    },
+    {
+      "id": "NAV37",
+      "given": {
+        "navalApproachDepthM": 5.5
+      },
+      "expect": {
+        "equals": 5.5
+      }
+    },
+    {
+      "id": "NAV38",
+      "given": {
+        "civilAccessViaNavalApproach": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV39",
+      "given": {
+        "majorArtificialDredgedBasin": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV40",
+      "given": {
+        "localizedMaintenanceDredging": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "NAV41",
+      "given": {
+        "HouseValrikInternalCommand": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "NAV42",
+      "given": {
+        "UrbanGuardOrdinaryControl": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SEP01",
+      "given": {
+        "shorelineSeparationM": 260
+      },
+      "expect": {
+        "equals": 260
+      }
+    },
+    {
+      "id": "SEP02",
+      "given": {
+        "interveningSector": "T04"
+      },
+      "expect": {
+        "equals": "T04"
+      }
+    },
+    {
+      "id": "SEP03",
+      "given": {
+        "continuousSharedQuay": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SEP04",
+      "given": {
+        "approachesSeparated": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEP05",
+      "given": {
+        "sharedPublicAnchorage": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SEP06",
+      "given": {
+        "T07LastPK": 620
+      },
+      "expect": {
+        "equals": 620
+      }
+    },
+    {
+      "id": "SEP07",
+      "given": {
+        "T08FirstPK": 880
+      },
+      "expect": {
+        "equals": 880
+      }
+    },
+    {
+      "id": "SEP08",
+      "given": {
+        "gapArithmetic": 260
+      },
+      "expect": {
+        "equals": 260
+      }
+    },
+    {
+      "id": "SEP09",
+      "given": {
+        "S07Unchanged": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEP10",
+      "given": {
+        "S08Unchanged": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEP11",
+      "given": {
+        "S13Unchanged": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEP12",
+      "given": {
+        "roadsPreserved": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEP13",
+      "given": {
+        "waterIncludedInLandArea": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEP14",
+      "given": {
+        "gunpowderAllowed": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEP15",
+      "given": {
+        "coastalFortressRequired": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SEP16",
+      "given": {
+        "civilNavalSeparate": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOW01",
+      "given": {
+        "path": [
+          "river",
+          "RW01_RW03",
+          "T01_apron",
+          "C07",
+          "C01_or_C02_or_T03"
+        ]
+      },
+      "expect": {
+        "supports": "riverCargo"
+      }
+    },
+    {
+      "id": "FLOW02",
+      "given": {
+        "path": [
+          "MR_TRESKAL_CIVIL_APPROACH",
+          "CP06_or_CP02",
+          "port_control_if_applicable",
+          "C11",
+          "C06_or_regional_network"
+        ]
+      },
+      "expect": {
+        "supports": "civilCargo"
+      }
+    },
+    {
+      "id": "FLOW03",
+      "given": {
+        "path": [
+          "fishing_ground",
+          "CP05_or_CP01",
+          "S07",
+          "C12",
+          "market_preservation_or_distribution"
+        ]
+      },
+      "expect": {
+        "supports": "fish"
+      }
+    },
+    {
+      "id": "FLOW04",
+      "given": {
+        "path": [
+          "C03_or_C05",
+          "C16",
+          "S08_staging",
+          "NSW01_NSW05",
+          "NFP01",
+          "sea"
+        ]
+      },
+      "expect": {
+        "supports": "shipbuilding"
+      }
+    },
+    {
+      "id": "FLOW05",
+      "given": {
+        "path": [
+          "sea",
+          "naval_approach",
+          "NFP02_or_NFP01",
+          "S08_work",
+          "return_to_service"
+        ]
+      },
+      "expect": {
+        "supports": "navalRepair"
+      }
+    },
+    {
+      "id": "FLOW06",
+      "given": {
+        "path": [
+          "C05",
+          "C16",
+          "S13_staging",
+          "NFP02_or_NFP03",
+          "vessel"
+        ]
+      },
+      "expect": {
+        "supports": "navalSupply"
+      }
+    },
+    {
+      "id": "FLOW07",
+      "given": {
+        "path": [
+          "C04_to_regional_link_or_C05",
+          "C16",
+          "S13_staging",
+          "NFP03",
+          "transport_vessel"
+        ]
+      },
+      "expect": {
+        "supports": "troopEmbarkation"
+      }
+    },
+    {
+      "id": "FLOW08",
+      "given": {
+        "waitingAllowed": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOW09",
+      "given": {
+        "berthCapacityFinite": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOW10",
+      "given": {
+        "severeWeatherCanClose": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOW11",
+      "given": {
+        "ordinaryRainAutoCloses": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOW12",
+      "given": {
+        "portCongestionLocal": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOW13",
+      "given": {
+        "teleportBerthing": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOW14",
+      "given": {
+        "resourceSpawnFromArrival": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOW15",
+      "given": {
+        "vesselCountFixedByPlan": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "FLOW16",
+      "given": {
+        "compatibilityUsesActualVessel": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE01",
+      "given": {
+        "ordinaryBlocksFixedInPoint7": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE02",
+      "given": {
+        "ordinaryParcelsFixedInPoint7": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE03",
+      "given": {
+        "warehouseParcelizationFixedInPoint7": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE04",
+      "given": {
+        "minorPortServiceLanesFixedInPoint7": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE05",
+      "given": {
+        "point8StillOpen": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE06",
+      "given": {
+        "point9IntegratedStressTestDeferred": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE07",
+      "given": {
+        "point10FinalMapDeferred": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE08",
+      "given": {
+        "newNamedInstitutionAdded": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE09",
+      "given": {
+        "civilFleetCountFrozen": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE10",
+      "given": {
+        "navalCategoriesIToIIICountFrozen": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE11",
+      "given": {
+        "authorDecisionRequiredBeforePoint8": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE12",
+      "given": {
+        "nextPoint": 8
+      },
+      "expect": {
+        "equals": 8
+      }
+    }
+  ],
+  "summary": {
+    "T01Wharves": 3,
+    "T07Piers": 2,
+    "S08Slipways": 5,
+    "S13FleetPiers": 2,
+    "majorNavalBreakwaters": 1,
+    "civilMajorBreakwater": false,
+    "allWaterfrontRoadInterfacesPreserved": true,
+    "externalCanonBlockers": 0,
+    "authorDecisionRequiredBeforePoint8": false
+  },
+  "marker": "TRESKAL_METRIC_PLAN_POINT_7_WATERFRONT_CLOSED"
+}
