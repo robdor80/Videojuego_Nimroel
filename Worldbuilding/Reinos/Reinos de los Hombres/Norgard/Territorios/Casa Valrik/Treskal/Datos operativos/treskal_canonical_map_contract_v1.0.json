@@ -212,6 +212,11 @@
     "noInventedBridgesToRepairAnIsland": true,
     "aestheticQualityCannotOverrideLandContinuity": true,
     "visualRejectionIfAmbiguousIslandAppearance": true,
-    "note": "Does not alter frozen shoreline/road/site geometry; this explicitly forbids earlier invalid visual interpretations."
+    "note": "Does not alter frozen shoreline/road/site geometry; this explicitly forbids earlier invalid visual interpretations.",
+    "preferredNavalForm": "land_based_shipyards_and_base_along_continuous_eastern_mainland_coast",
+    "prominentPeninsulaRequired": false,
+    "noInventedPeninsulaOrHeadland": true,
+    "peninsulaOnlyIfSupportedByFrozenCoastalPolyline": true,
+    "rejectionIfNavalComplexInventedAsPromontory": true
   }
 }
