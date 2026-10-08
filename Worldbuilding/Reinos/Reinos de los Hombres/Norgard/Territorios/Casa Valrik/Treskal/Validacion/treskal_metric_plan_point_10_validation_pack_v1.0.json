@@ -1,0 +1,2083 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_plan_point_10_validation_pack",
+  "version": "1.0",
+  "status": "canonical_map_validation_passed",
+  "sourceContract": "../Datos operativos/treskal_canonical_map_contract_v1.0.json",
+  "caseCount": 200,
+  "expectedCaseCount": 200,
+  "allExpectedConditionsDefined": true,
+  "categoryCounts": {
+    "authority": 20,
+    "spatialExport": 30,
+    "stableIds": 20,
+    "technicalMap": 25,
+    "operationalMap": 20,
+    "loreMap": 20,
+    "canonicalConstraints": 25,
+    "waterfrontGrowth": 20,
+    "closureIntegrity": 20
+  },
+  "cases": [
+    {
+      "category": "authority",
+      "id": "AUTH01",
+      "given": {
+        "coordinateReference": "TRESKAL_LOCAL_METRIC_V1"
+      },
+      "expect": {
+        "equals": "TRESKAL_LOCAL_METRIC_V1"
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH02",
+      "given": {
+        "units": "metres"
+      },
+      "expect": {
+        "equals": "metres"
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH03",
+      "given": {
+        "point9Ready": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH04",
+      "given": {
+        "unresolvedFailures": 0
+      },
+      "expect": {
+        "equals": 0
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH05",
+      "given": {
+        "geometryRedesign": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH06",
+      "given": {
+        "northReference": "+Y_true_north_local_reference"
+      },
+      "expect": {
+        "equals": "+Y_true_north_local_reference"
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH07",
+      "given": {
+        "metricPlanComplete": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH08",
+      "given": {
+        "spatialPublished": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH09",
+      "given": {
+        "technicalPublished": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH10",
+      "given": {
+        "operationalPublished": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH11",
+      "given": {
+        "lorePublished": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH12",
+      "given": {
+        "stableExportPublished": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH13",
+      "given": {
+        "noRenumber": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH14",
+      "given": {
+        "runtimeReroll": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH15",
+      "given": {
+        "officialDistrictNames": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH16",
+      "given": {
+        "officialStreetNames": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH17",
+      "given": {
+        "parcelBusinessAssignment": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH18",
+      "given": {
+        "parcelWorldStateUse": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH19",
+      "given": {
+        "geometryNowCanonical": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "authority",
+      "id": "AUTH20",
+      "given": {
+        "postMetricMapsOutsidePlan": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO01",
+      "given": {
+        "layer": "planning_envelope",
+        "count": 1
+      },
+      "expect": {
+        "equals": 1
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO02",
+      "given": {
+        "layer": "hydrography",
+        "count": 1
+      },
+      "expect": {
+        "equals": 1
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO03",
+      "given": {
+        "layer": "coastline",
+        "count": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO04",
+      "given": {
+        "layer": "bridge",
+        "count": 1
+      },
+      "expect": {
+        "equals": 1
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO05",
+      "given": {
+        "layer": "sector",
+        "count": 11
+      },
+      "expect": {
+        "equals": 11
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO06",
+      "given": {
+        "layer": "singular_facility",
+        "count": 12
+      },
+      "expect": {
+        "equals": 12
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO07",
+      "given": {
+        "layer": "singular_facility_component",
+        "count": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO08",
+      "given": {
+        "layer": "road",
+        "count": 18
+      },
+      "expect": {
+        "equals": 18
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO09",
+      "given": {
+        "layer": "local_lane",
+        "count": 12
+      },
+      "expect": {
+        "equals": 12
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO10",
+      "given": {
+        "layer": "urban_fabric_zone",
+        "count": 12
+      },
+      "expect": {
+        "equals": 12
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO11",
+      "given": {
+        "layer": "block_cluster",
+        "count": 110
+      },
+      "expect": {
+        "equals": 110
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO12",
+      "given": {
+        "layer": "ordinary_parcel",
+        "count": 2175
+      },
+      "expect": {
+        "equals": 2175
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO13",
+      "given": {
+        "layer": "water_node",
+        "count": 10
+      },
+      "expect": {
+        "equals": 10
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO14",
+      "given": {
+        "layer": "waste_node",
+        "count": 6
+      },
+      "expect": {
+        "equals": 6
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO15",
+      "given": {
+        "layer": "cremation_area",
+        "count": 1
+      },
+      "expect": {
+        "equals": 1
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO16",
+      "given": {
+        "layer": "river_wharf",
+        "count": 3
+      },
+      "expect": {
+        "equals": 3
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO17",
+      "given": {
+        "layer": "civil_pier",
+        "count": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO18",
+      "given": {
+        "layer": "naval_slipway",
+        "count": 5
+      },
+      "expect": {
+        "equals": 5
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO19",
+      "given": {
+        "layer": "naval_pier",
+        "count": 3
+      },
+      "expect": {
+        "equals": 3
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO20",
+      "given": {
+        "layer": "breakwater",
+        "count": 1
+      },
+      "expect": {
+        "equals": 1
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO21",
+      "given": {
+        "layer": "civil_port_shoreline_zone",
+        "count": 4
+      },
+      "expect": {
+        "equals": 4
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO22",
+      "given": {
+        "layer": "naval_shoreline_quay",
+        "count": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO23",
+      "given": {
+        "layer": "civil_anchorage",
+        "count": 1
+      },
+      "expect": {
+        "equals": 1
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO24",
+      "given": {
+        "layer": "maritime_approach",
+        "count": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO25",
+      "given": {
+        "layer": "naval_controlled_water",
+        "count": 1
+      },
+      "expect": {
+        "equals": 1
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO26",
+      "given": {
+        "layer": "naval_roadstead",
+        "count": 1
+      },
+      "expect": {
+        "equals": 1
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO27",
+      "given": {
+        "layer": "transition_band",
+        "count": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO28",
+      "given": {
+        "layer": "growth_reserve",
+        "count": 3
+      },
+      "expect": {
+        "equals": 3
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO29",
+      "given": {
+        "featureCount": 2404
+      },
+      "expect": {
+        "equals": 2404
+      }
+    },
+    {
+      "category": "spatialExport",
+      "id": "GEO30",
+      "given": {
+        "uniqueIds": 2404,
+        "featureCount": 2404
+      },
+      "expect": {
+        "allUnique": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID01",
+      "given": {
+        "id": "P0001",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID02",
+      "given": {
+        "id": "P2175",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID03",
+      "given": {
+        "id": "B001",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID04",
+      "given": {
+        "id": "B110",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID05",
+      "given": {
+        "id": "UF01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID06",
+      "given": {
+        "id": "UF12",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID07",
+      "given": {
+        "id": "C01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID08",
+      "given": {
+        "id": "C18",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID09",
+      "given": {
+        "id": "L01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID10",
+      "given": {
+        "id": "L12",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID11",
+      "given": {
+        "id": "W01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID12",
+      "given": {
+        "id": "W10",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID13",
+      "given": {
+        "id": "S01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID14",
+      "given": {
+        "id": "S13",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID15",
+      "given": {
+        "id": "S09A_T02",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID16",
+      "given": {
+        "id": "S09B_T04",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID17",
+      "given": {
+        "id": "CP01_FISH_LANDING",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID18",
+      "given": {
+        "id": "NBW01_EASTERN",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID19",
+      "given": {
+        "id": "CIV_ANCH_01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stableIds",
+      "id": "ID20",
+      "given": {
+        "id": "NAV_ROADSTEAD_01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC01",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC02",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC03",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC04",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC05",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC06",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC07",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC08",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC09",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC10",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC11",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC12",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC13",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC14",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC15",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC16",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC17",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC18",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC19",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC20",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC21",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC22",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC23",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC24",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "technicalMap",
+      "id": "TEC25",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP01",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP02",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP03",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP04",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP05",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP06",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP07",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP08",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP09",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP10",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP11",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP12",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP13",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP14",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP15",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP16",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP17",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP18",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP19",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "operationalMap",
+      "id": "OP20",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR01",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR02",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR03",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR04",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR05",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR06",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR07",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR08",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR09",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR10",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR11",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR12",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR13",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR14",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR15",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR16",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR17",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR18",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR19",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "loreMap",
+      "id": "LOR20",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN01",
+      "given": {
+        "value": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN02",
+      "given": {
+        "value": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN03",
+      "given": {
+        "value": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN04",
+      "given": {
+        "value": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN05",
+      "given": {
+        "value": 260
+      },
+      "expect": {
+        "equals": 260
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN06",
+      "given": {
+        "value": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN07",
+      "given": {
+        "value": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN08",
+      "given": {
+        "value": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN09",
+      "given": {
+        "value": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN10",
+      "given": {
+        "value": 110.7
+      },
+      "expect": {
+        "equals": 110.7
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN11",
+      "given": {
+        "value": 185.995
+      },
+      "expect": {
+        "equals": 185.995
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN12",
+      "given": {
+        "value": 250.516
+      },
+      "expect": {
+        "equals": 250.516
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN13",
+      "given": {
+        "value": 25.82
+      },
+      "expect": {
+        "equals": 25.82
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN14",
+      "given": {
+        "value": "[12000,18000]"
+      },
+      "expect": {
+        "equals": "[12000,18000]"
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN15",
+      "given": {
+        "value": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN16",
+      "given": {
+        "value": 500
+      },
+      "expect": {
+        "equals": 500
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN17",
+      "given": {
+        "value": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN18",
+      "given": {
+        "value": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN19",
+      "given": {
+        "value": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN20",
+      "given": {
+        "value": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN21",
+      "given": {
+        "value": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN22",
+      "given": {
+        "value": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN23",
+      "given": {
+        "value": true
+      },
+      "expect": {
+        "equals": true
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN24",
+      "given": {
+        "value": 0
+      },
+      "expect": {
+        "equals": 0
+      }
+    },
+    {
+      "category": "canonicalConstraints",
+      "id": "CAN25",
+      "given": {
+        "value": false
+      },
+      "expect": {
+        "equals": false
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG01",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG02",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG03",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG04",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG05",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG06",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG07",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG08",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG09",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG10",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG11",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG12",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG13",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG14",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG15",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG16",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG17",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG18",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG19",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfrontGrowth",
+      "id": "WG20",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS01",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS02",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS03",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS04",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS05",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS06",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS07",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS08",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS09",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS10",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS11",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS12",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS13",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS14",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS15",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS16",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS17",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS18",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS19",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "closureIntegrity",
+      "id": "CLS20",
+      "given": {
+        "condition": true
+      },
+      "expect": {
+        "valid": true
+      }
+    }
+  ],
+  "summary": {
+    "spatialFeatures": 2404,
+    "uniqueSpatialIds": 2404,
+    "blockClusters": 110,
+    "ordinaryParcels": 2175,
+    "mapOutputs": 3,
+    "unresolvedFailures": 0,
+    "geometryRedesignRequired": false,
+    "metricPlanComplete": true
+  },
+  "marker": "TRESKAL_METRIC_PLAN_POINT_10_CANONICAL_MAP_CLOSED"
+}
