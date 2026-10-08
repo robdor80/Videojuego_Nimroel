@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "1.1",
+  "version": "1.2",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3840,6 +3840,92 @@
       "expected": [
         "zero unresolved failures",
         "Point 10 may render but not redesign validated city"
+      ]
+    },
+    {
+      "id": "canonical_map_single_geometry",
+      "expected": [
+        "all Treskal maps derive from one canonical geometry",
+        "Point 10 does not redesign P2-P9"
+      ]
+    },
+    {
+      "id": "canonical_map_ids",
+      "expected": [
+        "2404 spatial features have unique IDs",
+        "B001-B110 and P0001-P2175 remain stable",
+        "runtime reroll forbidden"
+      ]
+    },
+    {
+      "id": "canonical_map_scale",
+      "expected": [
+        "metric local coordinates remain authoritative",
+        "500 m scale bar present",
+        "screen pixels are not canonical distance"
+      ]
+    },
+    {
+      "id": "canonical_map_north",
+      "expected": [
+        "local +Y remains north reference",
+        "maps include north reference"
+      ]
+    },
+    {
+      "id": "canonical_map_parcels",
+      "expected": [
+        "2175 visible parcel geometries materialized",
+        "parcel geometry does not fix active business or household"
+      ]
+    },
+    {
+      "id": "canonical_map_water",
+      "expected": [
+        "civil anchorage naval roadstead approaches shoreline zones quays slipways piers and breakwater are spatially represented",
+        "no fake origin placeholders"
+      ]
+    },
+    {
+      "id": "canonical_map_growth",
+      "expected": [
+        "GR1-GR3 remain visible reserved land totaling 25.82 ha",
+        "reserve is not treated as built district"
+      ]
+    },
+    {
+      "id": "canonical_map_technical",
+      "expected": [
+        "technical master exposes canonical layers and fine geometry",
+        "parcel IDs remain available through SVG elements and GeoJSON"
+      ]
+    },
+    {
+      "id": "canonical_map_operational",
+      "expected": [
+        "operational map reduces parcel clutter without changing geometry",
+        "navigation and systems layers remain visible"
+      ]
+    },
+    {
+      "id": "canonical_map_lore",
+      "expected": [
+        "readable lore map shares canonical geometry",
+        "functional labels are not official district or street names"
+      ]
+    },
+    {
+      "id": "canonical_map_naming",
+      "expected": [
+        "T C L UF B P identifiers remain technical",
+        "no official street or district names invented by Point 10"
+      ]
+    },
+    {
+      "id": "canonical_map_future_derivatives",
+      "expected": [
+        "diegetic maps may omit distort or age information",
+        "future maps may not alter underlying canonical Treskal"
       ]
     }
   ]
