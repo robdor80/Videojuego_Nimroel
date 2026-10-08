@@ -93,12 +93,13 @@ No recolocar elementos para mejorar una composición visual.
 
 Este requisito prevalece sobre cualquier composición artística, plano narrativo, ilustración isométrica o prompt. La superficie terrestre de T08 es parte continua del continente de Treskal. Su costa marítima y su rompeolas **no deben convertirse en un canal por detrás**, ni separar el complejo del territorio.
 
-**Puede representarse como un saliente o península costera SOLO cuando exista una continuidad física, amplia y visualmente inequívoca con tierra firme.** No se admite una isla, islote artificial, plataforma naval independiente, canal de aislamiento, puente como único acceso, transbordador obligatorio ni un istmo tan fino que imposibilite el transporte por carros de vigas y troncos voluminosos.
+**Configuración visual preferente y obligatoria por defecto: astilleros y base naval dispuestos EN LÍNEA SOBRE LA COSTA CONTINENTAL ORIENTAL, sin península artificial ni gran saliente inventado.** La península NO es una característica canónica requerida; solo se admitiría un pequeño saliente si estuviera realmente documentado por la línea de costa canónica, manteniendo continuidad física, amplia y visualmente inequívoca con tierra firme. No se admite una isla, islote artificial, plataforma naval independiente, canal de aislamiento, puente como único acceso, transbordador obligatorio ni un istmo tan fino que imposibilite el transporte por carros de vigas y troncos voluminosos.
 
 - La **C05** entra por tierra desde la red de abastecimiento continental y llega a las puertas navales restringidas.
 - La **C16** enlaza por tierra Astilleros (S08) y Base Naval (S13) y sirve para mover troncos, grandes maderas, materiales de construcción, carros, obreros, tripulaciones y suministros.
 - Los **260 m de separación T07–T08** son **costa intermedia del sector T04**, NO un estrecho o brazo de mar que aísle T08.
-- El agua está en el frente operativo marítimo, con muelles, gradas y rompeolas. Hacia la retaguardia debe verse **tierra conectada** y las rutas terrestres de suministro.
+- El agua está en el **frente lineal operativo marítimo**, con muelles, gradas y rompeolas proyectados desde el litoral. Hacia la retaguardia debe verse **tierra continental amplia y conectada**, con talleres, patios, almacenes y rutas de suministro.
+- **No dibujar un promontorio, península, istmo, cabo, fortín saliente o contorno de isla estilizada por estética** si no existe en la polilínea costera de los contratos métricos.
 - Un recinto cerrado por murallas o vallados y controles navales **no equivale** a un recinto cercado por mar.
 - **Prohibido corregir el error inventando un gran puente, un canal, una calzada sobre el agua, una fortaleza o un nuevo acceso** que no exista en el GeoJSON canónico.
 
@@ -110,7 +111,8 @@ Antes de autorizar un asset:
 2. Comprobar que **C16** conecta S08 y S13 sobre **suelo continuo**.
 3. Comprobar que el sector T08 comparte continente con la ciudad y el territorio, aunque el recinto naval sea restringido.
 4. Verificar que río, costa, puente, T07, franja T04 y T08 conservan la relación espacial del export GeoJSON.
-5. Preguntar visualmente: **«¿Parece una isla o un recinto al que solo se llega en barco?»**. Si la respuesta es sí, o no puede distinguirse claramente la unión terrestre, **RECHAZAR**, aunque el mapa sea espectacular.
+5. Comprobar que **T08 sigue el litoral oriental continuo**: S08 y S13 están en una franja costera terrestre y el mar queda delante, no alrededor de un cabo inventado.
+6. Preguntar visualmente: **«¿Parece una isla, una península artificial o un recinto al que solo se llega en barco?»**. Si la respuesta es sí, o no puede distinguirse claramente la unión terrestre, **RECHAZAR**, aunque el mapa sea espectacular.
 
 **Referencia autoritativa:** `treskal_canonical_spatial_export_v1.0.geojson` y contratos métricos de geografía, sectores, viario y waterfront. Esta regla **no cambia** los polígonos ni la red ya cerrados: impide dibujarlos mal.
 
