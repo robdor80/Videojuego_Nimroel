@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_design_invariants",
-  "version": "1.0",
+  "version": "1.1",
   "status": "active_manual_design_checks",
   "cases": [
     {
@@ -3733,6 +3733,113 @@
       "expected": [
         "Point 8 does not perform integrated Point 9 stress tests",
         "Point 10 renders but does not redesign parcel allocation"
+      ]
+    },
+    {
+      "id": "metric_integrated_population",
+      "expected": [
+        "12000-18000 resident range functions without macro geometry change",
+        "15000 remains design reference not hard cap"
+      ]
+    },
+    {
+      "id": "metric_integrated_mobility",
+      "expected": [
+        "all S01-S13 accessible",
+        "heavy timber livestock military and naval supply can avoid T03",
+        "single bridge remains accepted constraint"
+      ]
+    },
+    {
+      "id": "metric_integrated_markets",
+      "expected": [
+        "S06 S07 S09 S10 have physical capacity and access",
+        "peak congestion may exist without forcing global gridlock"
+      ]
+    },
+    {
+      "id": "metric_integrated_fire",
+      "expected": [
+        "fire remains possible and damaging",
+        "UF05 UF06 have water and fire access",
+        "S08 has internal response and waterfront fire water"
+      ]
+    },
+    {
+      "id": "metric_integrated_water",
+      "expected": [
+        "W01-W10 resolve to independent safe source groups",
+        "T08 and T12 have controlled independent water",
+        "raw river or sea water is not automatically potable"
+      ]
+    },
+    {
+      "id": "metric_integrated_sanitation",
+      "expected": [
+        "waste requires labor and outward destination",
+        "fish waste receives priority",
+        "river and harbor are not default dumps"
+      ]
+    },
+    {
+      "id": "metric_integrated_flood",
+      "expected": [
+        "critical justice and military functions remain F3",
+        "working waterfront may shut or suffer damage",
+        "design flood closes river navigation"
+      ]
+    },
+    {
+      "id": "metric_integrated_port",
+      "expected": [
+        "civil berth capacity finite",
+        "waiting is valid",
+        "weather may reduce capacity",
+        "T07 remains independent from T08"
+      ]
+    },
+    {
+      "id": "metric_integrated_navy",
+      "expected": [
+        "S08 S13 capacity is finite",
+        "repair embarkation and supply require real berth labor materials and time",
+        "T08 remains Crown controlled"
+      ]
+    },
+    {
+      "id": "metric_integrated_military",
+      "expected": [
+        "T12 supports ordinary garrison and 800-1200 activity",
+        "mobilization requires real population water supply and traffic capacity"
+      ]
+    },
+    {
+      "id": "metric_integrated_growth",
+      "expected": [
+        "25.82 ha reserve remains",
+        "growth requires road water waste and service extension",
+        "no instant districts"
+      ]
+    },
+    {
+      "id": "metric_integrated_residual_risk",
+      "expected": [
+        "bridge fire weather capacity and labor risks remain real",
+        "validation does not make city failure-proof"
+      ]
+    },
+    {
+      "id": "metric_integrated_no_redesign",
+      "expected": [
+        "Point 9 required zero geometry corrections",
+        "P2-P8 geometry remains authoritative"
+      ]
+    },
+    {
+      "id": "metric_integrated_ready_point10",
+      "expected": [
+        "zero unresolved failures",
+        "Point 10 may render but not redesign validated city"
       ]
     }
   ]
