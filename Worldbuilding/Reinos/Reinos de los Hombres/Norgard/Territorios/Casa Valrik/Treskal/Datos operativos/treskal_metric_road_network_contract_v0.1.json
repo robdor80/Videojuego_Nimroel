@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_metric_road_network_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "point_6_closed_static_validated",
   "scope": "Treskal_metric_plan_road_network",
   "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
@@ -1452,10 +1452,7 @@
       "waterfront_internal_circulation_adjustments_within_fixed_access_anchors"
     ],
     "point8": [
-      "block_edges",
-      "minor_local_lanes",
-      "courtyards",
-      "parcel_service_passages"
+      "block_edges"
     ],
     "point9": [
       "integrated_congestion_and_emergency_validation"
@@ -1474,5 +1471,30 @@
       "S13_berths",
       "security_and_circulation"
     ]
+  },
+  "point8LocalNetworkIntegration": {
+    "status": "closed",
+    "source": "treskal_metric_urban_fabric_contract_v0.1.json",
+    "localLaneCount": 12,
+    "laneIds": [
+      "L01",
+      "L02",
+      "L03",
+      "L04",
+      "L05",
+      "L06",
+      "L07",
+      "L08",
+      "L09",
+      "L10",
+      "L11",
+      "L12"
+    ],
+    "classesUsed": [
+      "R5",
+      "P1"
+    ],
+    "officialStreetNamesAssigned": false,
+    "mainC01C18GeometryUnchanged": true
   }
 }
