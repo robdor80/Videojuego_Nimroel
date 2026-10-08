@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_preplan_external_canon_constraints",
-  "version": "1.6",
+  "version": "1.7",
   "status": "final_preplan_constraint_set_point_1_closed",
   "purpose": "Freeze every canonical spatial constraint required before Treskal metric planning and certify that no external canon blocker remains.",
-  "planReadiness": "point_7_closed_ready_for_point_8_parcel_and_urban_fabric",
+  "planReadiness": "point_8_closed_ready_for_point_9_integrated_validation",
   "authorInputRequiredNow": false,
   "closureMarker": "TRESKAL_METRIC_PLAN_POINT_1_PREPLAN_AUDIT_CLOSED",
   "externalCanonBlockers": [],
@@ -251,9 +251,7 @@
     "point5": [],
     "point6": [],
     "point7": [],
-    "point8": [
-      "blocks_parcels_building_fabric"
-    ],
+    "point8": [],
     "point9": [
       "integrated_functional_validation"
     ],
@@ -270,7 +268,8 @@
     "unresolvedAuthorDecisionsRequiredBeforePoint5": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint6": 0,
     "unresolvedAuthorDecisionsRequiredBeforePoint7": 0,
-    "unresolvedAuthorDecisionsRequiredBeforePoint8": 0
+    "unresolvedAuthorDecisionsRequiredBeforePoint8": 0,
+    "unresolvedAuthorDecisionsRequiredBeforePoint9": 0
   },
   "resolvedMetricScale": {
     "contract": "Datos operativos/treskal_metric_scale_footprint_contract_v0.1.json",
@@ -338,5 +337,18 @@
     "S13FleetPiers": 2,
     "navalBreakwater": "NBW01_EASTERN",
     "civilNavalSeparationM": 260
+  },
+  "resolvedMetricUrbanFabric": {
+    "contract": "Datos operativos/treskal_metric_urban_fabric_contract_v0.1.json",
+    "registry": "Datos operativos/treskal_urban_fabric_registry_v0.1.json",
+    "mixedFabricHa": 110.7,
+    "fabricZones": 12,
+    "blockClusters": 110,
+    "parcels": 2175,
+    "stableBlockIds": "B001-B110",
+    "stableParcelIds": "P0001-P2175",
+    "localLanes": 12,
+    "waterNodes": 10,
+    "growthReservePreserved": true
   }
 }
