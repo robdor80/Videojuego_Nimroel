@@ -71,7 +71,7 @@ Debe fijar:
 
 ## Punto 4 — Encaje T01–T12
 
-Estado: **SIGUIENTE / ACTIVO**
+Estado: **CERRADO**
 
 Debe traducir los sectores funcionales a:
 
@@ -86,6 +86,8 @@ Los T siguen siendo IDs técnicos, no nombres de barrios.
 ---
 
 ## Punto 5 — Colocación S01–S13
+
+Estado: **SIGUIENTE / ACTIVO**
 
 Debe asignar:
 
