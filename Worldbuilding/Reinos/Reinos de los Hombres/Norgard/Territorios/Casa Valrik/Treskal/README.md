@@ -19,7 +19,9 @@ Estado:
 - Punto 7 — Puerto civil y Complejo Naval Real: **CERRADO**;
 - Punto 8 — Parcelación y tejido urbano: **CERRADO**;
 - Punto 9 — Validación funcional integral: **CERRADO**;
-- Punto 10 — Mapa canónico definitivo: **SIGUIENTE**.
+- Punto 10 — Mapa canónico definitivo: **CERRADO**.
+
+**PLAN MÉTRICO DE TRESKAL: COMPLETO — 10/10.**
 
 Auditoría vigente:
 
@@ -1001,4 +1003,29 @@ Contrato:
 
 `Datos operativos/treskal_integrated_functional_validation_contract_v0.1.json`
 
-La siguiente fase es el **Punto 10 — Mapa canónico definitivo**.
+### Mapa canónico definitivo publicado — Punto 10
+
+Treskal dispone ya de una única geometría espacial canónica:
+
+- **2.404 features espaciales** con IDs únicos;
+- **110 agrupaciones B001–B110**;
+- **2.175 parcelas P0001–P2175**;
+- export maestro GeoJSON;
+- plano técnico SVG;
+- plano operativo SVG;
+- mapa legible de lore SVG;
+- geometría portuaria, naval y de crecimiento materializada.
+
+Archivos principales:
+
+`08_Cartografia/exports/treskal_canonical_spatial_export_v1.0.geojson`
+
+`08_Cartografia/mapas/treskal_plano_tecnico_canonico_v1.0.svg`
+
+`08_Cartografia/mapas/treskal_plano_operativo_juego_v1.0.svg`
+
+`08_Cartografia/mapas/treskal_mapa_legible_lore_v1.0.svg`
+
+**El plan métrico de Treskal queda completo.**
+
+El siguiente trabajo recomendado ya queda fuera del plan: crear la familia de **mapas diegéticos de Treskal** a partir de esta misma geometría.
