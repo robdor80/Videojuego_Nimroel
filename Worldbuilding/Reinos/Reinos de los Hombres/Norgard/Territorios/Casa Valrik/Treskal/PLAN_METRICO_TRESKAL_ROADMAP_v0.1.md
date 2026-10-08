@@ -87,7 +87,7 @@ Los T siguen siendo IDs técnicos, no nombres de barrios.
 
 ## Punto 5 — Colocación S01–S13
 
-Estado: **SIGUIENTE / ACTIVO**
+Estado: **CERRADO**
 
 Debe asignar:
 
@@ -103,6 +103,8 @@ No requiere plano interior completo de cada edificio.
 ---
 
 ## Punto 6 — Red viaria
+
+Estado: **SIGUIENTE / ACTIVO**
 
 Debe fijar:
 
