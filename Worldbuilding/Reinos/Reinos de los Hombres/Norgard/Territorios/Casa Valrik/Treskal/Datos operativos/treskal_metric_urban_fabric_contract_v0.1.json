@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_metric_urban_fabric_contract",
-  "version": "0.2",
+  "version": "0.3",
   "status": "point_8_closed_static_validated",
   "scope": "Treskal_metric_plan_parcel_and_urban_fabric",
   "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
@@ -38,7 +38,17 @@
     "transientPopulationIncludedInResidentCapacity": false,
     "waterIncluded": false,
     "T08OrdinaryFabricIncluded": false,
-    "T12OrdinaryFabricIncluded": false
+    "T12OrdinaryFabricIncluded": false,
+    "designResidentReferenceAcrossFabric": 15000,
+    "designResidentCapacityAcrossFabricIsReferenceNotHardCap": true,
+    "canonicalResidentRangeSupported": [
+      12000,
+      18000
+    ],
+    "highOccupancyStressResidents": 18000,
+    "highOccupancyFactorVsDesignReference": 1.2,
+    "highOccupancyRequiresMacroGeometryExpansion": false,
+    "highOccupancyRule": "uses_existing_multi_household_and_mixed_residential_capacity_with_higher_occupancy_not_new_parcel_generation"
   },
   "densityClasses": {
     "D1_core": {
@@ -1451,7 +1461,10 @@
           210,
           610
         ],
-        "context": "river_core"
+        "context": "river_core",
+        "resolvedSafeSourceType": "protected_well",
+        "independentSourceGroup": "WSG01",
+        "rawRiverWaterSource": false
       },
       {
         "id": "W02",
@@ -1459,7 +1472,10 @@
           390,
           670
         ],
-        "context": "market_core"
+        "context": "market_core",
+        "resolvedSafeSourceType": "protected_well",
+        "independentSourceGroup": "WSG02",
+        "rawRiverWaterSource": false
       },
       {
         "id": "W03",
@@ -1467,7 +1483,10 @@
           520,
           410
         ],
-        "context": "port_rear"
+        "context": "port_rear",
+        "resolvedSafeSourceType": "covered_cistern_clean_roof_collection_with_cart_refill",
+        "independentSourceGroup": "WSG03",
+        "rawRiverWaterSource": false
       },
       {
         "id": "W04",
@@ -1475,7 +1494,10 @@
           300,
           840
         ],
-        "context": "woodcraft_west"
+        "context": "woodcraft_west",
+        "resolvedSafeSourceType": "protected_well",
+        "independentSourceGroup": "WSG04",
+        "rawRiverWaterSource": false
       },
       {
         "id": "W05",
@@ -1483,7 +1505,10 @@
           700,
           850
         ],
-        "context": "woodcraft_east"
+        "context": "woodcraft_east",
+        "resolvedSafeSourceType": "protected_well",
+        "independentSourceGroup": "WSG05",
+        "rawRiverWaterSource": false
       },
       {
         "id": "W06",
@@ -1491,7 +1516,10 @@
           240,
           980
         ],
-        "context": "residential_west"
+        "context": "residential_west",
+        "resolvedSafeSourceType": "protected_well",
+        "independentSourceGroup": "WSG06",
+        "rawRiverWaterSource": false
       },
       {
         "id": "W07",
@@ -1499,7 +1527,10 @@
           820,
           980
         ],
-        "context": "residential_east"
+        "context": "residential_east",
+        "resolvedSafeSourceType": "protected_well",
+        "independentSourceGroup": "WSG07",
+        "rawRiverWaterSource": false
       },
       {
         "id": "W08",
@@ -1507,7 +1538,10 @@
           930,
           850
         ],
-        "context": "civic_east"
+        "context": "civic_east",
+        "resolvedSafeSourceType": "covered_cistern_clean_roof_collection_with_cart_refill",
+        "independentSourceGroup": "WSG08",
+        "rawRiverWaterSource": false
       },
       {
         "id": "W09",
@@ -1515,7 +1549,10 @@
           520,
           1180
         ],
-        "context": "northern_transition"
+        "context": "northern_transition",
+        "resolvedSafeSourceType": "protected_well",
+        "independentSourceGroup": "WSG09",
+        "rawRiverWaterSource": false
       },
       {
         "id": "W10",
@@ -1523,7 +1560,10 @@
           150,
           1180
         ],
-        "context": "periphery"
+        "context": "periphery",
+        "resolvedSafeSourceType": "protected_well",
+        "independentSourceGroup": "WSG10",
+        "rawRiverWaterSource": false
       }
     ],
     "waterNodeCount": 10,
@@ -1579,7 +1619,24 @@
       }
     ],
     "modernSewer": false,
-    "removalRequiresRealLaborAndDestination": true
+    "removalRequiresRealLaborAndDestination": true,
+    "waterSourceResolution": {
+      "status": "resolved_by_point_9",
+      "safeSourceGroups": 10,
+      "cityDependsOnSingleSource": false,
+      "exactWellDepthsNotClaimed": true,
+      "cisternsRequireCleanCatchmentAndMaintenance": true,
+      "cartRefillAllowedWhenCisternLow": true
+    },
+    "wasteDestinationPolicy": {
+      "status": "resolved_by_point_9",
+      "reusableOrganicAndManure": "removed_outward_to_agricultural_reuse_when_plausible_via_C02_or_C14",
+      "fishWaste": "priority_removal_from_WR01_via_port_rear_network_then_outward_or_approved_reuse",
+      "nonReusableWaste": "removed_beyond_dense_urban_fabric_to_controlled_external_disposal",
+      "dumpingIntoPotableWaterSourcesForbidden": true,
+      "dumpingIntoWorkingHarborOrRiverAsDefaultForbidden": true,
+      "noPermanentDenseCoreDump": true
+    }
   },
   "growthTransition": {
     "ordinaryGrowthReserveHa": 25.82,
