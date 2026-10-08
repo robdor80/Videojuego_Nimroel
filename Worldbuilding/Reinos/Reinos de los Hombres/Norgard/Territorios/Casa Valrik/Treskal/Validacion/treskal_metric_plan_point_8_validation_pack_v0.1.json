@@ -1,0 +1,1476 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_plan_point_8_validation_pack",
+  "version": "0.1",
+  "status": "active_static_validation",
+  "sourceContract": "../Datos operativos/treskal_metric_urban_fabric_contract_v0.1.json",
+  "caseCount": 150,
+  "expectedCaseCount": 150,
+  "allExpectedConditionsDefined": true,
+  "categories": {
+    "areaAccounting": 14,
+    "fabricZones": 72,
+    "parcelCapacity": 15,
+    "buildingMorphology": 12,
+    "minorLocalNetwork": 14,
+    "peripheralAndInfrastructure": 13,
+    "scopeAndPreservation": 10
+  },
+  "cases": [
+    {
+      "id": "AREA01",
+      "given": {
+        "mixedFabricHa": 110.7
+      },
+      "expect": {
+        "withinBand": [
+          100,
+          120
+        ]
+      }
+    },
+    {
+      "id": "AREA02",
+      "given": {
+        "mixedFabricTargetHa": 110
+      },
+      "expect": {
+        "equals": 110
+      }
+    },
+    {
+      "id": "AREA03",
+      "given": {
+        "zoneAreaSum": 110.69999999999999
+      },
+      "expect": {
+        "equalsApprox": 110.7
+      }
+    },
+    {
+      "id": "AREA04",
+      "given": {
+        "zoneCount": 12
+      },
+      "expect": {
+        "equals": 12
+      }
+    },
+    {
+      "id": "AREA05",
+      "given": {
+        "blockClusters": 110
+      },
+      "expect": {
+        "equals": 110
+      }
+    },
+    {
+      "id": "AREA06",
+      "given": {
+        "blockClusterSum": 110
+      },
+      "expect": {
+        "equals": 110
+      }
+    },
+    {
+      "id": "AREA07",
+      "given": {
+        "parcelCount": 2175
+      },
+      "expect": {
+        "equals": 2175
+      }
+    },
+    {
+      "id": "AREA08",
+      "given": {
+        "parcelCountSum": 2175
+      },
+      "expect": {
+        "equals": 2175
+      }
+    },
+    {
+      "id": "AREA09",
+      "given": {
+        "residentReference": 15000
+      },
+      "expect": {
+        "equals": 15000
+      }
+    },
+    {
+      "id": "AREA10",
+      "given": {
+        "residentCapacitySum": 15000
+      },
+      "expect": {
+        "equals": 15000
+      }
+    },
+    {
+      "id": "AREA11",
+      "given": {
+        "transientsIncluded": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "AREA12",
+      "given": {
+        "waterIncluded": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "AREA13",
+      "given": {
+        "T08OrdinaryFabricIncluded": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "AREA14",
+      "given": {
+        "T12OrdinaryFabricIncluded": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "ZONE001",
+      "given": {
+        "zone": "UF01",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE002",
+      "given": {
+        "zone": "UF01",
+        "planningAreaHa": 6.2
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE003",
+      "given": {
+        "zone": "UF01",
+        "blockClusterCount": 7
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE004",
+      "given": {
+        "zone": "UF01",
+        "parcelCount": 105
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE005",
+      "given": {
+        "zone": "UF01",
+        "designResidentCapacity": 850
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE006",
+      "given": {
+        "zone": "UF01",
+        "densityClass": "D2_dense_mixed"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE007",
+      "given": {
+        "zone": "UF02",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE008",
+      "given": {
+        "zone": "UF02",
+        "planningAreaHa": 12.5
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE009",
+      "given": {
+        "zone": "UF02",
+        "blockClusterCount": 13
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE010",
+      "given": {
+        "zone": "UF02",
+        "parcelCount": 310
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE011",
+      "given": {
+        "zone": "UF02",
+        "designResidentCapacity": 2800
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE012",
+      "given": {
+        "zone": "UF02",
+        "densityClass": "D1_core"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE013",
+      "given": {
+        "zone": "UF03",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE014",
+      "given": {
+        "zone": "UF03",
+        "planningAreaHa": 8.2
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE015",
+      "given": {
+        "zone": "UF03",
+        "blockClusterCount": 8
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE016",
+      "given": {
+        "zone": "UF03",
+        "parcelCount": 150
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE017",
+      "given": {
+        "zone": "UF03",
+        "designResidentCapacity": 1000
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE018",
+      "given": {
+        "zone": "UF03",
+        "densityClass": "D2_port_mixed"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE019",
+      "given": {
+        "zone": "UF04",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE020",
+      "given": {
+        "zone": "UF04",
+        "planningAreaHa": 9
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE021",
+      "given": {
+        "zone": "UF04",
+        "blockClusterCount": 7
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE022",
+      "given": {
+        "zone": "UF04",
+        "parcelCount": 120
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE023",
+      "given": {
+        "zone": "UF04",
+        "designResidentCapacity": 500
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE024",
+      "given": {
+        "zone": "UF04",
+        "densityClass": "D4_logistics"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE025",
+      "given": {
+        "zone": "UF05",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE026",
+      "given": {
+        "zone": "UF05",
+        "planningAreaHa": 12.8
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE027",
+      "given": {
+        "zone": "UF05",
+        "blockClusterCount": 12
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE028",
+      "given": {
+        "zone": "UF05",
+        "parcelCount": 210
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE029",
+      "given": {
+        "zone": "UF05",
+        "designResidentCapacity": 1400
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE030",
+      "given": {
+        "zone": "UF05",
+        "densityClass": "D3_workshop_mixed"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE031",
+      "given": {
+        "zone": "UF06",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE032",
+      "given": {
+        "zone": "UF06",
+        "planningAreaHa": 9.4
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE033",
+      "given": {
+        "zone": "UF06",
+        "blockClusterCount": 9
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE034",
+      "given": {
+        "zone": "UF06",
+        "parcelCount": 160
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE035",
+      "given": {
+        "zone": "UF06",
+        "designResidentCapacity": 1000
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE036",
+      "given": {
+        "zone": "UF06",
+        "densityClass": "D3_workshop_mixed"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE037",
+      "given": {
+        "zone": "UF07",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE038",
+      "given": {
+        "zone": "UF07",
+        "planningAreaHa": 13
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE039",
+      "given": {
+        "zone": "UF07",
+        "blockClusterCount": 14
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE040",
+      "given": {
+        "zone": "UF07",
+        "parcelCount": 310
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE041",
+      "given": {
+        "zone": "UF07",
+        "designResidentCapacity": 2600
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE042",
+      "given": {
+        "zone": "UF07",
+        "densityClass": "D2_residential_mixed"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE043",
+      "given": {
+        "zone": "UF08",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE044",
+      "given": {
+        "zone": "UF08",
+        "planningAreaHa": 12.6
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE045",
+      "given": {
+        "zone": "UF08",
+        "blockClusterCount": 13
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE046",
+      "given": {
+        "zone": "UF08",
+        "parcelCount": 300
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE047",
+      "given": {
+        "zone": "UF08",
+        "designResidentCapacity": 2500
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE048",
+      "given": {
+        "zone": "UF08",
+        "densityClass": "D2_residential_mixed"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE049",
+      "given": {
+        "zone": "UF09",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE050",
+      "given": {
+        "zone": "UF09",
+        "planningAreaHa": 7
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE051",
+      "given": {
+        "zone": "UF09",
+        "blockClusterCount": 7
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE052",
+      "given": {
+        "zone": "UF09",
+        "parcelCount": 130
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE053",
+      "given": {
+        "zone": "UF09",
+        "designResidentCapacity": 850
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE054",
+      "given": {
+        "zone": "UF09",
+        "densityClass": "D2_civic_edge"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE055",
+      "given": {
+        "zone": "UF10",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE056",
+      "given": {
+        "zone": "UF10",
+        "planningAreaHa": 8.8
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE057",
+      "given": {
+        "zone": "UF10",
+        "blockClusterCount": 10
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE058",
+      "given": {
+        "zone": "UF10",
+        "parcelCount": 230
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE059",
+      "given": {
+        "zone": "UF10",
+        "designResidentCapacity": 1050
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE060",
+      "given": {
+        "zone": "UF10",
+        "densityClass": "D3_outer_residential"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE061",
+      "given": {
+        "zone": "UF11",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE062",
+      "given": {
+        "zone": "UF11",
+        "planningAreaHa": 7.2
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE063",
+      "given": {
+        "zone": "UF11",
+        "blockClusterCount": 6
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE064",
+      "given": {
+        "zone": "UF11",
+        "parcelCount": 95
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE065",
+      "given": {
+        "zone": "UF11",
+        "designResidentCapacity": 350
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE066",
+      "given": {
+        "zone": "UF11",
+        "densityClass": "D5_peripheral"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "ZONE067",
+      "given": {
+        "zone": "UF12",
+        "present": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "ZONE068",
+      "given": {
+        "zone": "UF12",
+        "planningAreaHa": 4
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE069",
+      "given": {
+        "zone": "UF12",
+        "blockClusterCount": 4
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE070",
+      "given": {
+        "zone": "UF12",
+        "parcelCount": 55
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "ZONE071",
+      "given": {
+        "zone": "UF12",
+        "designResidentCapacity": 100
+      },
+      "expect": {
+        "nonNegative": true
+      }
+    },
+    {
+      "id": "ZONE072",
+      "given": {
+        "zone": "UF12",
+        "densityClass": "D4_service_edge"
+      },
+      "expect": {
+        "definedInDensityClasses": true
+      }
+    },
+    {
+      "id": "PAR01",
+      "given": {
+        "slotTotal": 2175
+      },
+      "expect": {
+        "equals": 2175
+      }
+    },
+    {
+      "id": "PAR02",
+      "given": {
+        "slotSum": 2175
+      },
+      "expect": {
+        "equals": 2175
+      }
+    },
+    {
+      "id": "PAR03",
+      "given": {
+        "activeBusinessCountFixed": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PAR04",
+      "given": {
+        "householdCountFixed": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "PAR05",
+      "given": {
+        "worldStateCompatibleUseChange": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PAR06",
+      "given": {
+        "singularFacilitiesExcluded": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "PAR07",
+      "given": {
+        "U01": 650
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "PAR08",
+      "given": {
+        "U02": 360
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "PAR09",
+      "given": {
+        "U03": 330
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "PAR10",
+      "given": {
+        "U04": 240
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "PAR11",
+      "given": {
+        "U05": 40
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "PAR12",
+      "given": {
+        "U06": 80
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "PAR13",
+      "given": {
+        "U07": 180
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "PAR14",
+      "given": {
+        "U08": 150
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "PAR15",
+      "given": {
+        "U10": 70
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "MORPH01",
+      "given": {
+        "aboveThreeStoreys": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "MORPH02",
+      "given": {
+        "mixedUseCommon": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MORPH03",
+      "given": {
+        "perfectResidentialCommercialSeparation": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "MORPH04",
+      "given": {
+        "groundCoverageHa": 44.806
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "id": "MORPH05",
+      "given": {
+        "grossFloorAreaHa": 70.613
+      },
+      "expect": {
+        "greaterThan": 44.806
+      }
+    },
+    {
+      "id": "MORPH06",
+      "given": {
+        "perfectGrid": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "MORPH07",
+      "given": {
+        "uniformFrontage": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MORPH08",
+      "given": {
+        "everyParcelRectangular": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "MORPH09",
+      "given": {
+        "courtyardsCommon": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MORPH10",
+      "given": {
+        "workshopYardsCommon": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MORPH11",
+      "given": {
+        "portLoadingYardsCommon": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "MORPH12",
+      "given": {
+        "noSkylineTowers": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "LANE01",
+      "given": {
+        "laneCount": 12
+      },
+      "expect": {
+        "equals": 12
+      }
+    },
+    {
+      "id": "LANE02",
+      "given": {
+        "actualLaneCount": 12
+      },
+      "expect": {
+        "equals": 12
+      }
+    },
+    {
+      "id": "LANE03",
+      "given": {
+        "status": "point_8_fixed"
+      },
+      "expect": {
+        "equals": "point_8_fixed"
+      }
+    },
+    {
+      "id": "LANE04",
+      "given": {
+        "R5WidthUsesPoint6": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "LANE05",
+      "given": {
+        "P1WidthUsesPoint6": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "LANE06",
+      "given": {
+        "officialStreetNamesAssigned": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "LANE07",
+      "given": {
+        "L01Class": "R5"
+      },
+      "expect": {
+        "equals": "R5"
+      }
+    },
+    {
+      "id": "LANE08",
+      "given": {
+        "L02Class": "P1"
+      },
+      "expect": {
+        "equals": "P1"
+      }
+    },
+    {
+      "id": "LANE09",
+      "given": {
+        "L04Role": [
+          "port_rear_service",
+          "warehouse_access"
+        ]
+      },
+      "expect": {
+        "contains": "port_rear_service"
+      }
+    },
+    {
+      "id": "LANE10",
+      "given": {
+        "L05Role": [
+          "woodcraft_west_service",
+          "fire_access"
+        ]
+      },
+      "expect": {
+        "contains": "fire_access"
+      }
+    },
+    {
+      "id": "LANE11",
+      "given": {
+        "L06Role": [
+          "woodcraft_east_service",
+          "fire_access"
+        ]
+      },
+      "expect": {
+        "contains": "fire_access"
+      }
+    },
+    {
+      "id": "LANE12",
+      "given": {
+        "L07Class": "P1"
+      },
+      "expect": {
+        "equals": "P1"
+      }
+    },
+    {
+      "id": "LANE13",
+      "given": {
+        "L10Role": [
+          "administrative_rear_service"
+        ]
+      },
+      "expect": {
+        "contains": "administrative_rear_service"
+      }
+    },
+    {
+      "id": "LANE14",
+      "given": {
+        "L12Role": [
+          "outer_household_service"
+        ]
+      },
+      "expect": {
+        "contains": "outer_household_service"
+      }
+    },
+    {
+      "id": "INF01",
+      "given": {
+        "woodFrontageMaxM": 85
+      },
+      "expect": {
+        "equals": 85
+      }
+    },
+    {
+      "id": "INF02",
+      "given": {
+        "fireAccessLanes": [
+          "L05",
+          "L06",
+          "C10",
+          "C13"
+        ]
+      },
+      "expect": {
+        "contains": "L05"
+      }
+    },
+    {
+      "id": "INF03",
+      "given": {
+        "majorTimberStacksRestricted": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "INF04",
+      "given": {
+        "millReservationCount": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "id": "INF05",
+      "given": {
+        "millWaterSawmill": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "INF06",
+      "given": {
+        "cremationReligious": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "INF07",
+      "given": {
+        "cremationCemetery": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "INF08",
+      "given": {
+        "waterNodeCount": 10
+      },
+      "expect": {
+        "equals": 10
+      }
+    },
+    {
+      "id": "INF09",
+      "given": {
+        "actualWaterNodes": 10
+      },
+      "expect": {
+        "equals": 10
+      }
+    },
+    {
+      "id": "INF10",
+      "given": {
+        "rawRiverAutomaticallyPotable": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "INF11",
+      "given": {
+        "wasteNodeCount": 6
+      },
+      "expect": {
+        "equals": 6
+      }
+    },
+    {
+      "id": "INF12",
+      "given": {
+        "modernSewer": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "INF13",
+      "given": {
+        "growthReservePreserved": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE01",
+      "given": {
+        "sectorsPreserved": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE02",
+      "given": {
+        "facilitiesPreserved": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE03",
+      "given": {
+        "roadsPreserved": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE04",
+      "given": {
+        "waterfrontPreserved": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE05",
+      "given": {
+        "cityWall": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE06",
+      "given": {
+        "religiousArchitecture": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE07",
+      "given": {
+        "modernSewer": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE08",
+      "given": {
+        "universalPaving": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "id": "SCOPE09",
+      "given": {
+        "authorDecisionRequiredBeforePoint9": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "id": "SCOPE10",
+      "given": {
+        "nextPoint": 9
+      },
+      "expect": {
+        "equals": 9
+      }
+    }
+  ],
+  "summary": {
+    "mixedFabricHa": 110.7,
+    "fabricZones": 12,
+    "blockClusters": 110,
+    "parcels": 2175,
+    "residentDesignReference": 15000,
+    "minorLanes": 12,
+    "waterNodes": 10,
+    "externalCanonBlockers": 0,
+    "authorDecisionRequiredBeforePoint9": false
+  },
+  "marker": "TRESKAL_METRIC_PLAN_POINT_8_URBAN_FABRIC_CLOSED"
+}
