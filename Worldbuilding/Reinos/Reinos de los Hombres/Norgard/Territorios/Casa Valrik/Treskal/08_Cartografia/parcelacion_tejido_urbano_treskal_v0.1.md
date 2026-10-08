@@ -442,11 +442,18 @@ Validación funcional integral.
 
 Renderización cartográfica final y materialización visual de las líneas parcelarias estables.
 
+Además queda fijado el registro espacial estable:
+
+- zonas: **UF01–UF12**;
+- agrupaciones: **B001–B110**;
+- parcelas: **P0001–P2175**.
+
 Punto 10 podrá dibujar las subdivisiones, pero **no cambiar**:
 
 - 12 zonas;
 - 110 agrupaciones;
 - 2.175 parcelas;
+- sus IDs;
 - sus capacidades y asignaciones.
 
 ---
