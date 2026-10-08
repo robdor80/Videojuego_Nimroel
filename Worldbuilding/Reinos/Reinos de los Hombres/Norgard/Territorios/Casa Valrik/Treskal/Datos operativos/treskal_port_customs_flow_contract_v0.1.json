@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_port_customs_flow_contract",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active_local_contract",
   "cityId": "treskal",
   "sector": "T07",
@@ -114,5 +114,14 @@
     "importantCasesPersist": true,
     "randomDetectionWithoutCauseForbidden": true,
     "heldCargoRemainsPhysicallyHeld": true
+  },
+  "spatialIntegration": {
+    "status": "point_7_closed",
+    "contract": "treskal_metric_waterfront_contract_v0.1.json",
+    "integratedControlZone": "PCZ01",
+    "heldCargoYard": "PCZ02",
+    "standaloneCustomsHouse": false,
+    "civilPortOnly": true,
+    "T08NavalTrafficExcluded": true
   }
 }
