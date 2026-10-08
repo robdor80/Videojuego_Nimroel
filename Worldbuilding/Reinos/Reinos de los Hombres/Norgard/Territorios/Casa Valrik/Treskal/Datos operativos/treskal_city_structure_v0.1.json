@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_structure",
-  "version": "1.4",
+  "version": "1.5",
   "status": "functional_city_design_base_closed_v0.1",
   "procedural": false,
   "cityId": "treskal",
@@ -1390,5 +1390,25 @@
     "stableBlockIds": "B001-B110",
     "stableParcelIds": "P0001-P2175",
     "runtimeParcelGeneration": false
+  },
+  "integratedFunctionalValidation": {
+    "status": "point_9_closed_passed",
+    "contract": "Datos operativos/treskal_integrated_functional_validation_contract_v0.1.json",
+    "validation": "Validacion/treskal_metric_plan_point_9_validation_pack_v0.1.json",
+    "stressScenarios": 24,
+    "unresolvedFailures": 0,
+    "geometryCorrectionsRequired": 0,
+    "populationRangeSupported": [
+      12000,
+      18000
+    ],
+    "acceptedResidualRisks": [
+      "single_permanent_bridge",
+      "timber_city_fire",
+      "storm_and_flood_waterfront_shutdown",
+      "finite_port_and_naval_capacity",
+      "labor_dependent_water_and_sanitation"
+    ],
+    "readyForFinalMap": true
   }
 }
