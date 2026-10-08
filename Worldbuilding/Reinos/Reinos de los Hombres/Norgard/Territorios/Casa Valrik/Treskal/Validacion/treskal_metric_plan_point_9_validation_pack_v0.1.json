@@ -1,0 +1,1880 @@
+{
+  "schemaVersion": 1,
+  "documentId": "treskal_metric_plan_point_9_validation_pack",
+  "version": "0.1",
+  "status": "integrated_validation_passed",
+  "sourceContract": "../Datos operativos/treskal_integrated_functional_validation_contract_v0.1.json",
+  "caseCount": 180,
+  "expectedCaseCount": 180,
+  "allExpectedConditionsDefined": true,
+  "categoryCounts": {
+    "sourceClosure": 12,
+    "population": 14,
+    "mobility": 18,
+    "marketsCargo": 14,
+    "fire": 14,
+    "water": 12,
+    "sanitation": 8,
+    "flood": 10,
+    "waterfront": 16,
+    "militaryInstitutional": 8,
+    "growthEmergency": 8,
+    "stressScenarios": 24,
+    "scope": 12,
+    "integratedFindings": 10
+  },
+  "cases": [
+    {
+      "category": "sourceClosure",
+      "id": "SRC01",
+      "given": {
+        "point2": true
+      },
+      "expect": {
+        "closed": true
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC02",
+      "given": {
+        "point3": true
+      },
+      "expect": {
+        "closed": true
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC03",
+      "given": {
+        "point4": true
+      },
+      "expect": {
+        "closed": true
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC04",
+      "given": {
+        "point5": true
+      },
+      "expect": {
+        "closed": true
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC05",
+      "given": {
+        "point6": true
+      },
+      "expect": {
+        "closed": true
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC06",
+      "given": {
+        "point7": true
+      },
+      "expect": {
+        "closed": true
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC07",
+      "given": {
+        "point8": true
+      },
+      "expect": {
+        "closed": true
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC08",
+      "given": {
+        "coordinateReference": "TRESKAL_LOCAL_METRIC_V1"
+      },
+      "expect": {
+        "equals": "TRESKAL_LOCAL_METRIC_V1"
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC09",
+      "given": {
+        "geometryRedesignAllowed": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC10",
+      "given": {
+        "correctionsApplied": 4
+      },
+      "expect": {
+        "equals": 4
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC11",
+      "given": {
+        "authorialDecisionsRequired": 0
+      },
+      "expect": {
+        "equals": 0
+      }
+    },
+    {
+      "category": "sourceClosure",
+      "id": "SRC12",
+      "given": {
+        "unresolvedFailures": 0
+      },
+      "expect": {
+        "equals": 0
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP01",
+      "given": {
+        "canonicalRange": [
+          12000,
+          18000
+        ]
+      },
+      "expect": {
+        "equals": [
+          12000,
+          18000
+        ]
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP02",
+      "given": {
+        "designReference": 15000
+      },
+      "expect": {
+        "equals": 15000
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP03",
+      "given": {
+        "low": 12000
+      },
+      "expect": {
+        "equals": 12000
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP04",
+      "given": {
+        "high": 18000
+      },
+      "expect": {
+        "equals": 18000
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP05",
+      "given": {
+        "mixedFabricHa": 110.7
+      },
+      "expect": {
+        "equals": 110.7
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP06",
+      "given": {
+        "referenceDensity": 135.5
+      },
+      "expect": {
+        "approx": 135.5
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP07",
+      "given": {
+        "highDensity": 162.6
+      },
+      "expect": {
+        "approx": 162.6
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP08",
+      "given": {
+        "functionalLandHa": 185.995
+      },
+      "expect": {
+        "approx": 185.995
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP09",
+      "given": {
+        "referenceGrossDensity": 80.6
+      },
+      "expect": {
+        "approx": 80.6
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP10",
+      "given": {
+        "highGrossDensity": 96.8
+      },
+      "expect": {
+        "approx": 96.8
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP11",
+      "given": {
+        "ordinaryParcels": 2175
+      },
+      "expect": {
+        "equals": 2175
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP12",
+      "given": {
+        "blockClusters": 110
+      },
+      "expect": {
+        "equals": 110
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP13",
+      "given": {
+        "highStressNeedsExpansion": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "population",
+      "id": "POP14",
+      "given": {
+        "highStressGFAperResident": 39.2
+      },
+      "expect": {
+        "positive": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV01",
+      "given": {
+        "networkM": 12981
+      },
+      "expect": {
+        "equals": 12981
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV02",
+      "given": {
+        "mainRoads": 18
+      },
+      "expect": {
+        "equals": 18
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV03",
+      "given": {
+        "localLanes": 12
+      },
+      "expect": {
+        "equals": 12
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV04",
+      "given": {
+        "bridgeCount": 1
+      },
+      "expect": {
+        "equals": 1
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV05",
+      "given": {
+        "allFacilitiesAccessible": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV06",
+      "given": {
+        "timberAvoidsT03": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV07",
+      "given": {
+        "livestockAvoidsT03": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV08",
+      "given": {
+        "militaryAvoidsT03": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV09",
+      "given": {
+        "navalSupplyAvoidsT03": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV10",
+      "given": {
+        "foodRoute": "C02_to_T10_or_T02_to_T03"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV11",
+      "given": {
+        "riverCargoRoute": "T01_C07_to_distribution"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV12",
+      "given": {
+        "civilPortRoute": "T07_C11_C06"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV13",
+      "given": {
+        "institutionalRoute": "C04_C08"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV14",
+      "given": {
+        "woodcraftRoute": "C03_C10_C13"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV15",
+      "given": {
+        "T08ControlledRoute": "C05_C16"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV16",
+      "given": {
+        "T12Route": "C04_C15"
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV17",
+      "given": {
+        "secondBridgeRequired": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "mobility",
+      "id": "MOV18",
+      "given": {
+        "perfectGridRequired": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG01",
+      "given": {
+        "S06Ha": 4.69
+      },
+      "expect": {
+        "equals": 4.69
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG02",
+      "given": {
+        "S07Ha": 1.915
+      },
+      "expect": {
+        "equals": 1.915
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG03",
+      "given": {
+        "S09Ha": 9.22
+      },
+      "expect": {
+        "equals": 9.22
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG04",
+      "given": {
+        "S10Ha": 8.075
+      },
+      "expect": {
+        "equals": 8.075
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG05",
+      "given": {
+        "mills": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG06",
+      "given": {
+        "principle": "capacity_before_establishment_count"
+      },
+      "expect": {
+        "equals": "capacity_before_establishment_count"
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG07",
+      "given": {
+        "marketDaily": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG08",
+      "given": {
+        "fishPerishableFlow": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG09",
+      "given": {
+        "timberDistributed": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG10",
+      "given": {
+        "livestockCoreCrossingRequired": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG11",
+      "given": {
+        "portCargoNeedsT08": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG12",
+      "given": {
+        "warehouseCapacityFinite": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG13",
+      "given": {
+        "stockCreatedByArrival": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "marketsCargo",
+      "id": "LOG14",
+      "given": {
+        "cargoTransferConsumesLaborTime": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR01",
+      "given": {
+        "UF05FirstM": 95.2
+      },
+      "expect": {
+        "max": 100
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR02",
+      "given": {
+        "UF05SecondM": 108.1
+      },
+      "expect": {
+        "max": 110
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR03",
+      "given": {
+        "UF06FirstM": 205.4
+      },
+      "expect": {
+        "max": 210
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR04",
+      "given": {
+        "UF06SecondM": 284.1
+      },
+      "expect": {
+        "max": 285
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR05",
+      "given": {
+        "S09AFirstM": 131.7
+      },
+      "expect": {
+        "max": 135
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR06",
+      "given": {
+        "S09BFirstM": 134.3
+      },
+      "expect": {
+        "max": 135
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR07",
+      "given": {
+        "timberFrontageMaxM": 85
+      },
+      "expect": {
+        "equals": 85
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR08",
+      "given": {
+        "shipyardOwnResponse": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR09",
+      "given": {
+        "T08FireDraws": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR10",
+      "given": {
+        "modernFireBrigade": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR11",
+      "given": {
+        "woodcraftFireAccess": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR12",
+      "given": {
+        "bulkTimberDefaultResidential": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR13",
+      "given": {
+        "forgeSeparation": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "fire",
+      "id": "FIR14",
+      "given": {
+        "fireRiskEliminatedCompletely": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT01",
+      "given": {
+        "publicGroups": 10
+      },
+      "expect": {
+        "equals": 10
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT02",
+      "given": {
+        "navalClean": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT03",
+      "given": {
+        "navalFire": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT04",
+      "given": {
+        "militaryWater": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT05",
+      "given": {
+        "rawRiverPotable": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT06",
+      "given": {
+        "singleSourceDependency": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT07",
+      "given": {
+        "onePublicNodeFailureSurvivable": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT08",
+      "given": {
+        "cisternMaintenanceRequired": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT09",
+      "given": {
+        "wellDepthClaimedAsExact": false
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT10",
+      "given": {
+        "dirtyActivityCanContaminateIntake": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT11",
+      "given": {
+        "T08DependsOnPublicUrbanNode": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "water",
+      "id": "WAT12",
+      "given": {
+        "T12DependsOnSinglePublicNode": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "sanitation",
+      "id": "SAN01",
+      "given": {
+        "removalNodes": 6
+      },
+      "expect": {
+        "equals": 6
+      }
+    },
+    {
+      "category": "sanitation",
+      "id": "SAN02",
+      "given": {
+        "fishPriority": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "sanitation",
+      "id": "SAN03",
+      "given": {
+        "modernSewer": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "sanitation",
+      "id": "SAN04",
+      "given": {
+        "outwardRequired": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "sanitation",
+      "id": "SAN05",
+      "given": {
+        "defaultDumping": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "sanitation",
+      "id": "SAN06",
+      "given": {
+        "wasteAutoDisappears": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "sanitation",
+      "id": "SAN07",
+      "given": {
+        "reusePossible": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "sanitation",
+      "id": "SAN08",
+      "given": {
+        "removalDependsOnLabor": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "flood",
+      "id": "FLD01",
+      "given": {
+        "T06F3": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "flood",
+      "id": "FLD02",
+      "given": {
+        "T12F3": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "flood",
+      "id": "FLD03",
+      "given": {
+        "T05PreferredF3": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "flood",
+      "id": "FLD04",
+      "given": {
+        "waterfrontMayFlood": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "flood",
+      "id": "FLD05",
+      "given": {
+        "sensitiveLowStorage": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "flood",
+      "id": "FLD06",
+      "given": {
+        "designFloodClosesRiver": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "flood",
+      "id": "FLD07",
+      "given": {
+        "floodRequiresCityEvacuationByDefault": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "flood",
+      "id": "FLD08",
+      "given": {
+        "criticalJusticeLostAtDesignFlood": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "flood",
+      "id": "FLD09",
+      "given": {
+        "militaryPrecinctFloodProne": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "flood",
+      "id": "FLD10",
+      "given": {
+        "lowEdgeDamageCanPersist": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT01",
+      "given": {
+        "T01WharfM": 295
+      },
+      "expect": {
+        "equals": 295
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT02",
+      "given": {
+        "civilFrontageM": 540
+      },
+      "expect": {
+        "equals": 540
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT03",
+      "given": {
+        "civilPiers": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT04",
+      "given": {
+        "civilAnchorageSlots": 8
+      },
+      "expect": {
+        "equals": 8
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT05",
+      "given": {
+        "navalFrontageM": 940
+      },
+      "expect": {
+        "equals": 940
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT06",
+      "given": {
+        "slipways": 5
+      },
+      "expect": {
+        "equals": 5
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT07",
+      "given": {
+        "maxShipyardLengthM": 60
+      },
+      "expect": {
+        "equals": 60
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT08",
+      "given": {
+        "heavyBerths": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT09",
+      "given": {
+        "mediumLargeBerths": 2
+      },
+      "expect": {
+        "equals": 2
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT10",
+      "given": {
+        "lightBerths": 4
+      },
+      "expect": {
+        "equals": 4
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT11",
+      "given": {
+        "navalWaiting": 6
+      },
+      "expect": {
+        "equals": 6
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT12",
+      "given": {
+        "separationM": 260
+      },
+      "expect": {
+        "equals": 260
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT13",
+      "given": {
+        "sharedCivilNavalAnchorage": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT14",
+      "given": {
+        "unlimitedBerthCapacity": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT15",
+      "given": {
+        "weatherCanReduceCapacity": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "waterfront",
+      "id": "WFT16",
+      "given": {
+        "actualDraftCheckRequired": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "militaryInstitutional",
+      "id": "MIL01",
+      "given": {
+        "S11": [
+          260,
+          340
+        ]
+      },
+      "expect": {
+        "equals": [
+          260,
+          340
+        ]
+      }
+    },
+    {
+      "category": "militaryInstitutional",
+      "id": "MIL02",
+      "given": {
+        "S12": [
+          800,
+          1200
+        ]
+      },
+      "expect": {
+        "equals": [
+          800,
+          1200
+        ]
+      }
+    },
+    {
+      "category": "militaryInstitutional",
+      "id": "MIL03",
+      "given": {
+        "separateT08": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "militaryInstitutional",
+      "id": "MIL04",
+      "given": {
+        "realPopulation": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "militaryInstitutional",
+      "id": "MIL05",
+      "given": {
+        "S03S05Accessible": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "militaryInstitutional",
+      "id": "MIL06",
+      "given": {
+        "S01S02PublicPrivateSeparable": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "militaryInstitutional",
+      "id": "MIL07",
+      "given": {
+        "T08ValrikCommand": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "militaryInstitutional",
+      "id": "MIL08",
+      "given": {
+        "S04LongTermPrison": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "growthEmergency",
+      "id": "GR01",
+      "given": {
+        "reserveHa": 25.82
+      },
+      "expect": {
+        "equals": 25.82
+      }
+    },
+    {
+      "category": "growthEmergency",
+      "id": "GR02",
+      "given": {
+        "preserved": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "growthEmergency",
+      "id": "GR03",
+      "given": {
+        "instantGrowth": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "growthEmergency",
+      "id": "GR04",
+      "given": {
+        "servicesRequired": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "growthEmergency",
+      "id": "GR05",
+      "given": {
+        "reserveAlreadyFullyConsumed": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "growthEmergency",
+      "id": "GR06",
+      "given": {
+        "futureRoadExtensionNeeded": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "growthEmergency",
+      "id": "GR07",
+      "given": {
+        "futureWaterExtensionNeeded": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "growthEmergency",
+      "id": "GR08",
+      "given": {
+        "futureWasteExtensionNeeded": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST01",
+      "given": {
+        "scenario": "resident_low_state_12000",
+        "result": "PASS"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST02",
+      "given": {
+        "scenario": "resident_design_state_15000",
+        "result": "PASS"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST03",
+      "given": {
+        "scenario": "resident_high_state_18000",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST04",
+      "given": {
+        "scenario": "ordinary_food_inbound_morning",
+        "result": "PASS"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST05",
+      "given": {
+        "scenario": "daily_market_peak",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST06",
+      "given": {
+        "scenario": "livestock_arrival_day",
+        "result": "PASS"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST07",
+      "given": {
+        "scenario": "timber_to_urban_workshops",
+        "result": "PASS"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST08",
+      "given": {
+        "scenario": "timber_to_royal_shipyards",
+        "result": "PASS"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST09",
+      "given": {
+        "scenario": "civil_merchant_arrival_when_berths_full",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST10",
+      "given": {
+        "scenario": "fishing_return_peak",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST11",
+      "given": {
+        "scenario": "naval_return_and_repair",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST12",
+      "given": {
+        "scenario": "large_troop_embarkation",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST13",
+      "given": {
+        "scenario": "design_flood",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST14",
+      "given": {
+        "scenario": "severe_southerly_or_southeasterly_storm",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST15",
+      "given": {
+        "scenario": "woodcraft_fire_UF05",
+        "result": "PASS_WITH_ACCEPTED_RESIDUAL_RISK"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST16",
+      "given": {
+        "scenario": "woodcraft_fire_UF06",
+        "result": "PASS_WITH_ACCEPTED_RESIDUAL_RISK"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST17",
+      "given": {
+        "scenario": "royal_shipyard_fire",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST18",
+      "given": {
+        "scenario": "one_public_water_source_unavailable",
+        "result": "PASS"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST19",
+      "given": {
+        "scenario": "sanitation_collection_delayed",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST20",
+      "given": {
+        "scenario": "Puente_de_los_Gemelos_temporarily_blocked",
+        "result": "PASS_WITH_ACCEPTED_RESIDUAL_RISK"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST21",
+      "given": {
+        "scenario": "simultaneous_market_port_and_workshop_cart_peak",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST22",
+      "given": {
+        "scenario": "T08_security_lockdown",
+        "result": "PASS"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST23",
+      "given": {
+        "scenario": "T12_mobilization_peak",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "stressScenarios",
+      "id": "ST24",
+      "given": {
+        "scenario": "growth_into_reserved_land",
+        "result": "PASS_WITH_CONSTRAINT"
+      },
+      "expect": {
+        "unresolvedFail": false
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP01",
+      "given": {
+        "unresolvedFailures": 0
+      },
+      "expect": {
+        "equals": 0
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP02",
+      "given": {
+        "geometryCorrections": 0
+      },
+      "expect": {
+        "equals": 0
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP03",
+      "given": {
+        "clarifications": 4
+      },
+      "expect": {
+        "equals": 4
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP04",
+      "given": {
+        "populationSupported": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP05",
+      "given": {
+        "mobilityFunctional": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP06",
+      "given": {
+        "waterFunctional": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP07",
+      "given": {
+        "portFunctional": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP08",
+      "given": {
+        "navalFunctional": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP09",
+      "given": {
+        "militaryFunctional": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP10",
+      "given": {
+        "readyForPoint10": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP11",
+      "given": {
+        "authorDecisionBeforeP10": false
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "scope",
+      "id": "SCP12",
+      "given": {
+        "nextPoint": 10
+      },
+      "expect": {
+        "equals": 10
+      }
+    },
+    {
+      "category": "integratedFindings",
+      "id": "INT01",
+      "given": {
+        "cityCanFunction": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "integratedFindings",
+      "id": "INT02",
+      "given": {
+        "failureProof": true
+      },
+      "expect": {
+        "valid": false
+      }
+    },
+    {
+      "category": "integratedFindings",
+      "id": "INT03",
+      "given": {
+        "consequencesPersist": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "integratedFindings",
+      "id": "INT04",
+      "given": {
+        "macroRedesign": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "integratedFindings",
+      "id": "INT05",
+      "given": {
+        "acceptedRisks": 5
+      },
+      "expect": {
+        "equals": 5
+      }
+    },
+    {
+      "category": "integratedFindings",
+      "id": "INT06",
+      "given": {
+        "bridgeRisk": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "integratedFindings",
+      "id": "INT07",
+      "given": {
+        "fireRisk": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "integratedFindings",
+      "id": "INT08",
+      "given": {
+        "weatherRisk": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "integratedFindings",
+      "id": "INT09",
+      "given": {
+        "capacityRisk": true
+      },
+      "expect": {
+        "valid": true
+      }
+    },
+    {
+      "category": "integratedFindings",
+      "id": "INT10",
+      "given": {
+        "laborRisk": true
+      },
+      "expect": {
+        "valid": true
+      }
+    }
+  ],
+  "summary": {
+    "stressScenarios": 24,
+    "unresolvedFailures": 0,
+    "acceptedResidualRisks": 5,
+    "geometryCorrectionsRequired": 0,
+    "operationalClarificationsApplied": 4,
+    "readyForPoint10": true,
+    "authorDecisionRequiredBeforePoint10": false
+  },
+  "marker": "TRESKAL_METRIC_PLAN_POINT_9_INTEGRATED_VALIDATION_CLOSED"
+}
