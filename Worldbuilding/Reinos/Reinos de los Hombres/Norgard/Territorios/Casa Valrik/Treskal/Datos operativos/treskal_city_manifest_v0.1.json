@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "documentId": "treskal_city_manifest",
-  "version": "1.6",
+  "version": "1.7",
   "status": "active_city_manifest",
   "cityId": "treskal",
   "procedural": false,
@@ -111,7 +111,8 @@
     "metricGeography": "Datos operativos/treskal_metric_geography_contract_v0.1.json",
     "metricSectorFit": "Datos operativos/treskal_metric_sector_fit_contract_v0.1.json",
     "metricFacilityFit": "Datos operativos/treskal_metric_facility_fit_contract_v0.1.json",
-    "metricRoadNetwork": "Datos operativos/treskal_metric_road_network_contract_v0.1.json"
+    "metricRoadNetwork": "Datos operativos/treskal_metric_road_network_contract_v0.1.json",
+    "metricWaterfront": "Datos operativos/treskal_metric_waterfront_contract_v0.1.json"
   },
   "stableIdNamespaces": {
     "T": "functional_sector",
@@ -238,7 +239,6 @@
   },
   "unresolvedStructuralItems": [
     "metric_city_plan",
-    "T07_T08_waterfront_geometry",
     "parcel_and_urban_fabric_geometry"
   ],
   "externalDependencies": {
@@ -299,7 +299,8 @@
     "metricPlanPoint3": "Validacion/treskal_metric_plan_point_3_validation_pack_v0.1.json",
     "metricPlanPoint4": "Validacion/treskal_metric_plan_point_4_validation_pack_v0.1.json",
     "metricPlanPoint5": "Validacion/treskal_metric_plan_point_5_validation_pack_v0.1.json",
-    "metricPlanPoint6": "Validacion/treskal_metric_plan_point_6_validation_pack_v0.1.json"
+    "metricPlanPoint6": "Validacion/treskal_metric_plan_point_6_validation_pack_v0.1.json",
+    "metricPlanPoint7": "Validacion/treskal_metric_plan_point_7_validation_pack_v0.1.json"
   },
   "coreInheritance": {
     "status": "complete_high_confidence_migration_validated",
@@ -936,8 +937,8 @@
   "metricPlan": {
     "status": "active",
     "roadmap": "PLAN_METRICO_TRESKAL_ROADMAP_v0.1.md",
-    "currentPoint": 7,
-    "currentPointName": "civil_port_and_royal_naval_waterfront",
+    "currentPoint": 8,
+    "currentPointName": "parcel_and_urban_fabric",
     "point1": {
       "status": "closed_static_validated",
       "audit": "AUDITORIA_FINAL_PREPLANO_METRICO_TRESKAL_v0.1.md",
@@ -1003,6 +1004,20 @@
       "technicalRoadCount": 18,
       "controlledNetworkLengthM": 12981,
       "validationCaseCount": 126,
+      "authorDecisionRequiredBeforeNextPoint": false
+    },
+    "point7": {
+      "status": "closed_static_validated",
+      "source": "08_Cartografia/frente_portuario_naval_treskal_v0.1.md",
+      "contract": "Datos operativos/treskal_metric_waterfront_contract_v0.1.json",
+      "validation": "Validacion/treskal_metric_plan_point_7_validation_pack_v0.1.json",
+      "closure": "Worldbuilding/Sistemas/Validacion/CIERRE_PLANO_METRICO_TRESKAL_PUNTO_7_FRENTE_PORTUARIO_NAVAL_v0.1.md",
+      "T01DevelopedWharfM": 295,
+      "T07CivilPiers": 2,
+      "S08Slipways": 5,
+      "S13FleetPiers": 2,
+      "majorNavalBreakwaters": 1,
+      "validationCaseCount": 140,
       "authorDecisionRequiredBeforeNextPoint": false
     }
   }
