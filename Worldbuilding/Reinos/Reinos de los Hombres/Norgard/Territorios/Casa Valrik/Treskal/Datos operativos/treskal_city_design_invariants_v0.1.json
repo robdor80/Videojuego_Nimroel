@@ -3927,6 +3927,45 @@
         "diegetic maps may omit distort or age information",
         "future maps may not alter underlying canonical Treskal"
       ]
+    },
+    {
+      "id": "T08_mainland_contiguity_mandatory",
+      "expected": [
+        "T08 S08 S13 are mainland east-coast installations not an island",
+        "T08 may be rendered as a peninsula only when visibly attached to mainland",
+        "no landward sea channel isolates T08"
+      ]
+    },
+    {
+      "id": "T08_mainland_heavy_haulage_mandatory",
+      "expected": [
+        "C05 reaches T08 by continuous dry land",
+        "C16 connects S08 and S13 by continuous heavy-capable land road",
+        "large timber beams and shipbuilding supplies arrive by land without compulsory boat transfer"
+      ]
+    },
+    {
+      "id": "T08_map_visual_island_veto",
+      "expected": [
+        "reject any map scene or illustration visually depicting the naval complex as an island or disconnected sea platform",
+        "waterfront coast and defensive/restricted boundary must not be mistaken for a sea channel",
+        "no invented bridge causeway or ferry-only repair of mainland access"
+      ]
+    },
+    {
+      "id": "T08_prior_visual_maps_rejected",
+      "expected": [
+        "three Treskal generated illustrative maps Official Mercantile Reserved Naval from 2026-10-08 are rejected pending recreation",
+        "no incorrect reference map approved for NAP production",
+        "canonical GeoJSON remains authoritative"
+      ]
     }
-  ]
+  ],
+  "T08VisualMainlandCanon": {
+    "status": "mandatory",
+    "source": "08_Cartografia/CONTROL_CANON_T08_ACCESO_CONTINENTAL_v1.0.md",
+    "noCanonicGeometryChanged": true,
+    "illustrationApprovalRequiresVisibleLandConnection": true,
+    "visuallyIslandLikeImageFails": true
+  }
 }

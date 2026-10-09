@@ -52,6 +52,15 @@ No utiliza el sistema procedural de Aldeas, Pueblos y Villas.
 - `estructura_funcional_treskal_v0.1.md` — áreas funcionales necesarias antes de diseñar el plano.
 - `sectores_funcionales_treskal_v0.1.md` — IDs funcionales T01–T11 para organizar el plano sin fijar todavía nombres de barrios.
 
+
+## Advertencia canónica visual — Complejo Naval Real T08
+
+T08 no es isla ni enclave al que se acceda solo por mar. **S08 y S13 forman parte de la tierra firme oriental** y cuentan con suministro pesado continuo por **C05 → C16**. Una península es admisible solo si la unión terrestre es evidente y apta para grandes maderas y carros.
+
+**No utilizar** como referencia canónica las ilustraciones antiguas de los mapas Oficial, Mercantil y Reservado Naval; fueron rechazadas por el error insular. La corrección no mueve coordenadas ni cambia el plano métrico.
+
+Revisión obligatoria: `08_Cartografia/CONTROL_CANON_T08_ACCESO_CONTINENTAL_v1.0.md`.
+
 ## Regla
 
 La topología general ya está resuelta mediante la **Opción A — Desembocadura integrada**. La toponimia urbana se desarrolla con la convención mixta de Norgard y mantiene IDs técnicos estables.

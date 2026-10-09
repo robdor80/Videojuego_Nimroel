@@ -63,7 +63,7 @@ Treskal se sitúa:
 - junto a la desembocadura integrada de un río;
 - con muelles fluviales;
 - con puerto civil marítimo;
-- con el Complejo Naval Real T08 — Astilleros Reales + Base Naval Principal — en litoral contiguo pero separado;
+- con el Complejo Naval Real T08 — Astilleros Reales + Base Naval Principal — en **tierra firme de la costa oriental**, separado del puerto civil por zona litoral T04 y controles de acceso, **no separado del continente por agua**;
 - con relieve inmediato suave o abierto.
 
 ## 2A. Referencia cartográfica canónica
@@ -86,6 +86,45 @@ La cartografía canónica prevalece sobre interpretaciones visuales anteriores c
 - escala urbana.
 
 No recolocar elementos para mejorar una composición visual.
+
+## 2B. Regla INNEGOCIABLE — T08 pertenece a tierra firme
+
+**Los Astilleros Reales (S08) y la Base Naval Principal (S13) NO ESTÁN EN UNA ISLA.**
+
+Este requisito prevalece sobre cualquier composición artística, plano narrativo, ilustración isométrica o prompt. La superficie terrestre de T08 es parte continua del continente de Treskal. Su costa marítima y su rompeolas **no deben convertirse en un canal por detrás**, ni separar el complejo del territorio.
+
+**Configuración visual preferente y obligatoria por defecto: astilleros y base naval dispuestos EN LÍNEA SOBRE LA COSTA CONTINENTAL ORIENTAL, sin península artificial ni gran saliente inventado.** La península NO es una característica canónica requerida; solo se admitiría un pequeño saliente si estuviera realmente documentado por la línea de costa canónica, manteniendo continuidad física, amplia y visualmente inequívoca con tierra firme. No se admite una isla, islote artificial, plataforma naval independiente, canal de aislamiento, puente como único acceso, transbordador obligatorio ni un istmo tan fino que imposibilite el transporte por carros de vigas y troncos voluminosos.
+
+- La **C05** entra por tierra desde la red de abastecimiento continental y llega a las puertas navales restringidas.
+- La **C16** enlaza por tierra Astilleros (S08) y Base Naval (S13) y sirve para mover troncos, grandes maderas, materiales de construcción, carros, obreros, tripulaciones y suministros.
+- Los **260 m de separación T07–T08** son **costa intermedia del sector T04**, NO un estrecho o brazo de mar que aísle T08.
+- El agua está en el **frente lineal operativo marítimo**, con muelles, gradas y rompeolas proyectados desde el litoral. Hacia la retaguardia debe verse **tierra continental amplia y conectada**, con talleres, patios, almacenes y rutas de suministro.
+- **No dibujar un promontorio, península, istmo, cabo, fortín saliente o contorno de isla estilizada por estética** si no existe en la polilínea costera de los contratos métricos.
+- Un recinto cerrado por murallas o vallados y controles navales **no equivale** a un recinto cercado por mar.
+- **Prohibido corregir el error inventando un gran puente, un canal, una calzada sobre el agua, una fortaleza o un nuevo acceso** que no exista en el GeoJSON canónico.
+
+### Prueba visual obligatoria para cualquier mapa o escena de Treskal
+
+Antes de autorizar un asset:
+
+1. Identificar el acceso terrestre **C05** y comprobar que alcanza T08 **sin cruzar agua**.
+2. Comprobar que **C16** conecta S08 y S13 sobre **suelo continuo**.
+3. Comprobar que el sector T08 comparte continente con la ciudad y el territorio, aunque el recinto naval sea restringido.
+4. Verificar que río, costa, puente, T07, franja T04 y T08 conservan la relación espacial del export GeoJSON.
+5. Comprobar que **T08 sigue el litoral oriental continuo**: S08 y S13 están en una franja costera terrestre y el mar queda delante, no alrededor de un cabo inventado.
+6. Preguntar visualmente: **«¿Parece una isla, una península artificial o un recinto al que solo se llega en barco?»**. Si la respuesta es sí, o no puede distinguirse claramente la unión terrestre, **RECHAZAR**, aunque el mapa sea espectacular.
+
+**Referencia autoritativa:** `treskal_canonical_spatial_export_v1.0.geojson` y contratos métricos de geografía, sectores, viario y waterfront. Esta regla **no cambia** los polígonos ni la red ya cerrados: impide dibujarlos mal.
+
+### Ilustraciones rechazadas por este error (8 de octubre de 2026)
+
+Quedan **NO APTAS PARA CANON NI PARA PRODUCCIÓN NAP** las ilustraciones generadas anteriormente tituladas:
+
+- **Plano Oficial de la Ciudad de Treskal**;
+- **Plano Mercantil y de Tránsito de Treskal**;
+- **Plano Reservado del Complejo Naval Real de Treskal**.
+
+Motivo común: sugieren T08 como isla o masa naval segregada por agua. Sus archivos previos y ZIP no deben considerarse assets aprobados, aunque se conserve una copia para revisión histórica. Cualquier sustituto necesitará **nuevo visto bueno visual antes de generar su ZIP NAP**.
 
 ## Prohibido por defecto
 
@@ -154,20 +193,27 @@ No convertirlo automáticamente en:
 
 Debe transmitir escala mediante:
 
-- gradas;\n- muelles militares y atraques;\n- presencia ocasional de grandes navíos de las clases IV y V;
+- gradas;
+- muelles militares y atraques;
+- presencia ocasional de grandes navíos de las clases IV y V;
 - cascos en construcción;
 - madera;
 - talleres;
 - patios;
-- trabajadores;\n- marineros y tripulaciones;\n- embarque de tropas o suministros cuando proceda;
+- trabajadores;
+- marineros y tripulaciones;
+- embarque de tropas o suministros cuando proceda;
 - movimiento de materiales.
 
-S08 representa los Astilleros Reales y S13 la Base Naval Principal. Ambas instalaciones pertenecen a la Corona / Casa Aethros, no a Casa Valrik.\n\nSu carácter institucional puede mostrar heráldica real de forma funcional.
+S08 representa los Astilleros Reales y S13 la Base Naval Principal. Ambas instalaciones pertenecen a la Corona / Casa Aethros, no a Casa Valrik.
+
+Su carácter institucional puede mostrar heráldica real de forma funcional.
 
 No debe parecer:
 
 - fortaleza costera;
-- palacio naval;\n- base artillera de pólvora;
+- palacio naval;
+- base artillera de pólvora;
 - complejo industrial moderno.
 
 La escala procede del trabajo, no de monumentalidad gratuita.
