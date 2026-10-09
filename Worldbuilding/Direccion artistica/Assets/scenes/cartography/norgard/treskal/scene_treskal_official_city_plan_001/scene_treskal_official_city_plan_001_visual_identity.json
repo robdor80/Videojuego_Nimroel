@@ -1,0 +1,48 @@
+{
+  "location": "treskal",
+  "culture": "norgard",
+  "realm": "norgard",
+  "scene_kind": "official_city_plan",
+  "document_nature": "public_administrative_map",
+  "represented_subject": "official city plan of Treskal issued by House Valrik administration",
+  "medium_style": "parchment map, ink and watercolor illustration",
+  "orientation": "landscape",
+  "aspect_ratio": "16:10_approx",
+  "time_of_day": "neutral daylight depiction",
+  "climate": "temperate coastal north",
+  "palette": [
+    "aged parchment beige",
+    "desaturated blue-green water",
+    "brown ink lines",
+    "muted earthy accents",
+    "subtle heraldic highlights"
+  ],
+  "environment_elements": [
+    "river",
+    "coast",
+    "east-bank main city mass",
+    "Puente de los Gemelos",
+    "Puerto Civil",
+    "Astilleros Reales",
+    "Base Naval Principal",
+    "public urban districts",
+    "restricted royal/naval zone"
+  ],
+  "architecture_dominant": "norgard medieval-fantasy port city",
+  "cartographic_elements": [
+    "title cartouche",
+    "House Valrik heraldic crest",
+    "compass rose",
+    "north marker",
+    "scale bar",
+    "decorative border",
+    "Spanish map labels"
+  ],
+  "atmosphere": "official, elegant, legible, prestigious, slightly romanticized",
+  "military_detail_level": "limited_public_information",
+  "continuity_notes": [
+    "must read as a diegetic official artifact of Nimroel",
+    "must remain coherent with canonical Treskal geography",
+    "must not expose excessive internal military detail"
+  ]
+}

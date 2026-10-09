@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "universe_id": "nimroel",
+  "asset_id": "scene_treskal_official_city_plan_001",
+  "asset_type": "scene",
+  "production_profile": "scene_cartography",
+  "classification": {
+    "culture": "norgard",
+    "location": "treskal"
+  }
+}
