@@ -223,3 +223,11 @@ Los esqueletos procedurales de **Aldea, Pueblo y Villa** están aprobados.
 Treskal ciudad queda fuera de la generación procedural y se desarrollará manualmente como ciudad canónica única.
 
 Los puestos de guardia fronterizos se tratarán como instalaciones funcionales separadas, no como asentamientos civiles.
+
+---
+
+## Paquete de prueba v0.0.1 — primera aldea V1
+
+El lore **específico del primer ensayo** está cerrado y se documenta en [03_Prueba_v0.0.1/README.md](03_Prueba_v0.0.1/README.md). Su situación de gameplay es el encargo **opcional** «La herramienta rota», descubierto mediante exploración libre y situado en una aldea V1 generada. Contiene alcance, flujo del encargo, contrato de traspaso y matriz de aceptación.
+
+Este cierre no fija una aldea canónica, los nombres de sus habitantes, los pesos de todos los servicios ni un Content Pack ya ejecutable. Se trata de **preparación de lore y pruebas**, mientras que el generador, el Host 2D, las acciones y la simulación, y el Content Pack real pertenecen a futuras fases de implementación.
