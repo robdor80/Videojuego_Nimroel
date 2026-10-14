@@ -5,6 +5,7 @@
 **Base:** lore de la primera aldea V1 y «La herramienta rota» integrado mediante PR #12.
 **Definición de experiencia:** [NIM-01_EXPERIENCIA_CONVERSACIONAL.md](NIM-01_EXPERIENCIA_CONVERSACIONAL.md).
 **Generación espacial:** [NIM-01_GENERACION_ESPACIAL_PROCEDURAL.md](NIM-01_GENERACION_ESPACIAL_PROCEDURAL.md).
+**Auditoría de riesgos Android y voz:** [NIM-01_AUDITORIA_ANDROID_CORERPG_VOZ.md](NIM-01_AUDITORIA_ANDROID_CORERPG_VOZ.md).
 
 ## 1. Propósito
 
