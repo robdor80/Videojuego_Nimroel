@@ -10,7 +10,8 @@ var _backdrop: TextureRect
 var _shade: ColorRect
 var _masthead: PanelContainer
 var _conversation_panel: PanelContainer
-var _history: RichTextLabel
+var _history_scroll: ScrollContainer
+var _history_messages: VBoxContainer
 var _input: LineEdit
 var _portrait_line: HBoxContainer
 var _portrait: TextureRect
@@ -66,16 +67,17 @@ func _build_interface() -> void:
 	state.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	conversation.add_child(state)
 
-	_history = RichTextLabel.new()
-	_history.name = "Historial"
-	_history.bbcode_enabled = false
-	_history.scroll_active = true
-	_history.scroll_following = true
-	_history.selection_enabled = true
-	_history.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	_history.add_theme_color_override("default_color", Color(0.918, 0.936, 0.920))
-	_history.add_theme_font_size_override("normal_font_size", 17)
-	conversation.add_child(_history)
+	_history_scroll = ScrollContainer.new()
+	_history_scroll.name = "Historial"
+	_history_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_history_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	_history_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	conversation.add_child(_history_scroll)
+	_history_messages = VBoxContainer.new()
+	_history_messages.name = "Bocadillos"
+	_history_messages.add_theme_constant_override("separation", 11)
+	_history_messages.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_history_scroll.add_child(_history_messages)
 
 	_portrait_line = HBoxContainer.new()
 	_portrait_line.name = "RetratoEnConversacion"
@@ -153,19 +155,53 @@ func _on_send(raw_text: String) -> void:
 		return
 	var routed: Dictionary = GATEWAY.route(message)
 	_input.clear()
-	_history.text += "\n\nTÚ > " + message
-	_history.text += "\n\nSIMULADOR [" + str(routed["proposal_type"]) + "] > " + str(routed["demo_response"])
+	_append_bubble("TÚ", message, true)
+	_append_bubble("SIMULADOR · NO ES UN NPC", str(routed["demo_response"]), false)
 	_portrait_line.visible = bool(routed["portrait_demo"])
 	_hint.text = "Sin hechos del mundo modificados"
-	_history.call_deferred("scroll_to_line", maxi(0, _history.get_line_count() - 1))
 
 func _reset_demo() -> void:
-	if not is_instance_valid(_history):
+	if not is_instance_valid(_history_messages):
 		return
-	_history.text = "Bienvenido al laboratorio visual de Nimroel RPG.\n\nEsta es una demostración de interfaz, NO una partida generada. Todavía no están conectados Gemini ni CoreRPG; ninguna acción modifica el mundo.\n\nPuedes probar estas frases:\n  · ¿Qué veo desde donde estoy?\n  · Avanzo por la aldea y busco a alguien.\n  · Hablo con un aldeano.\n\nEl fondo y el retrato son provisionales y no describen una aldea canónica."
+	for item in _history_messages.get_children():
+		_history_messages.remove_child(item)
+		item.queue_free()
+	_append_bubble("SISTEMA · PRUEBA", "Bienvenido al laboratorio visual de Nimroel RPG.\n\nEsta es una demostración de interfaz, NO una partida generada. Todavía no están conectados Gemini ni CoreRPG y ninguna acción modifica el mundo.\n\nPrueba: ¿Qué veo desde donde estoy? / Avanzo por la aldea / Hablo con un aldeano.", false)
 	_portrait_line.visible = false
 	_input.clear()
 	_hint.text = "Solo se ensaya la interfaz"
+
+func _append_bubble(author: String, body: String, player: bool) -> void:
+	var row := HBoxContainer.new()
+	row.name = "MensajeJugador" if player else "MensajeRespuesta"
+	row.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_history_messages.add_child(row)
+	var spacer := Control.new()
+	spacer.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	if player:
+		row.add_child(spacer)
+	var bubble := PanelContainer.new()
+	bubble.custom_minimum_size.x = maxf(195.0, minf(460.0, _conversation_panel.size.x - 94.0))
+	bubble.add_theme_stylebox_override("panel", _panel_style(Color(0.17, 0.30, 0.29, 0.98) if player else Color(0.12, 0.17, 0.19, 0.98), 12))
+	row.add_child(bubble)
+	var content := VBoxContainer.new()
+	content.add_theme_constant_override("separation", 5)
+	bubble.add_child(content)
+	var heading := _make_label(author, 11, Color(0.88, 0.95, 0.75) if player else Color(0.94, 0.82, 0.62))
+	content.add_child(heading)
+	var text_label := Label.new()
+	text_label.text = body
+	text_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	text_label.add_theme_font_size_override("font_size", 16)
+	text_label.add_theme_color_override("font_color", Color(0.94, 0.95, 0.92))
+	content.add_child(text_label)
+	if not player:
+		row.add_child(spacer)
+	call_deferred("_scroll_to_latest")
+
+func _scroll_to_latest() -> void:
+	if is_instance_valid(_history_scroll):
+		_history_scroll.scroll_vertical = int(_history_scroll.get_v_scroll_bar().max_value)
 
 func submit_intent_for_test(raw_text: String) -> Dictionary:
 	## Puerto de prueba: devuelve estructura de intención SIN efectos secundarios.
