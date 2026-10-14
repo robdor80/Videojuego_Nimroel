@@ -81,18 +81,23 @@ Preguntas descriptivas no mutan el mundo. Las acciones con varios pasos requiere
 - Evidencias de cada prueba: commit Nimroel, commit CoreRPG si aplica, plataforma, pasos, observado, incidencia y estado.
 - No convertir mock, documentación o código no compilado en test «aprobado».
 
-## 9. Criterios de salida NIM-01
+## 9. Criterios de salida NIM-01 — ejecución real
 
 - [x] Modalidad definida: RPG conversacional, sin clics obligatorios ni avatar móvil.
-- [x] Frontera técnica de autoridad descrita.
-- [x] Regla de layout procedural persistente documentada; implementación pendiente.
-- [x] Modelos Gemini designados por el autor registrados; conexión pendiente.
-- [ ] Framework elegido con spike documentado.
-- [ ] Proyecto arrancable Windows: fondo + cuadro conversacional + retrato contextual.
-- [ ] Entrada de texto y respuesta de prueba no autoritativa verificadas.
-- [ ] UI adaptable a Android; exportación/instalación comprobada o aplazamiento formal explícito.
-- [ ] Contrato propuesto para conexión futura a CoreRPG con límites de IA documentados.
-- [ ] Estado de voz, proveedor, red y capacidades offline declarado con honestidad.
-- [ ] PR auditada; tests con evidencia.
+- [x] Frontera técnica de autoridad descrita, junto con contratos de Core/voz que NO fingen capacidades activas.
+- [x] Regla de layout procedural persistente documentada; implementación pendiente en paquetes posteriores.
+- [x] Godot 4.7.2 Standard seleccionado y **validado por CI oficial Godot en Linux headless**.
+- [x] Proyecto importable y escena 2D básica comprobados en CI; bocadillos de jugador/respuesta, fondo, retrato provisional, teclado y respuesta de prueba sin mutaciones.
+- [x] Exportación del prototipo **Windows x64 (exe+pck) y Android ARM64 (APK)** por GitHub Actions, sin credenciales ni IA remota.
+- [x] Comprobación del tipo ARM64 del APK y SHA-256 de artefactos en CI.
+- [x] Contrato de integración futura CoreRPG y sherpa/Gemini documentado; ni Core ni sherpa integrados aún.
+- [x] Plan de pruebas, limitaciones de demo y protocolo para MSI/Tab S9+ documentados.
+- [ ] **Ejecución real en MSI Windows**: requiere abrir el exe exportado en el equipo objetivo.
+- [ ] **Instalación/ejecución en Galaxy Tab S9+**: requiere prueba táctil sobre el dispositivo objetivo.
+- [ ] Auditoría humana de la PR y autorización para fusionar.
 
-**No son requisitos de cierre de NIM-01:** integración real de un modelo IA; aldea V1 completa; NPC vivos; encargo ejecutable; Content Pack definitivo; guardado integral; lanzamiento v0.0.1. Su implementación se programará en paquetes posteriores sin renunciar a la experiencia conversacional definida.
+**Evidencia de CI:** https://github.com/robdor80/Videojuego_Nimroel/actions/runs/38554823204 (dos jobs correctos; artefacto Windows+Android). Véase [NIM-01_PRUEBAS_Y_ENTREGA.md](NIM-01_PRUEBAS_Y_ENTREGA.md) para límites y procedimientos. No existe evidencia de ejecución física, llamadas Gemini, CoreRPG real o voz sherpa.
+
+**No forman parte del cierre técnico de NIM-01:** aldea V1 completa, NPC vivos, reconocimiento o síntesis de voz real, encargo ejecutable, Content Pack definitivo, guardado integral ni lanzamiento v0.0.1. Su implementación se programará en paquetes posteriores manteniendo la experiencia conversacional definida.
+
+**Estado de entrega:** paquete técnico de cimentación compilado y exportado para ambas plataformas, **pendiente de smoke en MSI/Tab S9+ y merge autorizado**.
