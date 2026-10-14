@@ -4,6 +4,7 @@
 **Rama:** feat/nim-01-build
 **Base:** lore de la primera aldea V1 y «La herramienta rota» integrado mediante PR #12.
 **Definición de experiencia:** [NIM-01_EXPERIENCIA_CONVERSACIONAL.md](NIM-01_EXPERIENCIA_CONVERSACIONAL.md).
+**Generación espacial:** [NIM-01_GENERACION_ESPACIAL_PROCEDURAL.md](NIM-01_GENERACION_ESPACIAL_PROCEDURAL.md).
 
 ## 1. Propósito
 
@@ -15,6 +16,8 @@ Preparar el ejecutable de **Nimroel RPG v0.0.1 — primera aldea V1 de Treskal**
 - Exploración **conversacional por lenguaje natural**: el jugador habla o escribe «qué veo», «avanzo», «pregunto», «busco», «llevo la herramienta» y otras intenciones.
 - Sin desplazamiento obligatorio de un avatar 2D, ni búsqueda de hotspots/clics obligatorios sobre una imagen; la ilustración puede omitir objetos, edificios o NPC existentes.
 - La IA interpreta y narra como Máster; el motor determina qué se ve, qué se sabe, qué sucede y si una acción está autorizada.
+- **También se genera proceduralmente el plano lógico de cada aldea:** edificios, hogares, espacios productivos, caminos, conexiones y posiciones; no se diseñan planos individuales a mano ni se exige mostrarlos gráficamente. El layout generado es estable y persistente.
+- **Modelos de IA ya decididos por el autor:** Gemini 3.5 Flash-Lite habitual y Gemini 3.8 Flash para trabajo más exigente. Requisito de explotación indicado: servicio gratuito en el EEE. No reabrir comparación de proveedores; integración/API y condiciones efectivas quedan sujetas a comprobación durante las pruebas.
 - CoreRPG mantiene el WorldState; Nimroel añade las reglas de su mundo y el Host solo solicita/representa. No permitir que una narración cree hechos.
 - Windows: teclado y ratón; Android: pantalla táctil con aplicación independiente del PC.
 - El encargo «La herramienta rota» sigue siendo opcional, emergente y persistente, nunca una misión obligatoria ni una excusa para fijar la aldea.
@@ -42,7 +45,7 @@ Preguntas descriptivas no mutan el mundo. Las acciones con varios pasos requiere
 - Game/Host2D/ — pantalla, fondo, retratos, historial, texto/voz y controles; sin autoridad de hechos.
 - Game/BridgeCoreRPG/ — futuro adaptador a C++20, con contratos de consulta/acción y sin WorldState duplicado.
 - Game/Interaction/ — intérprete de intenciones, narración controlada y adaptadores de voz/IA; sin mutación directa.
-- Game/Content/TreskalV001/ — datos V1, fixture regional versionado y mapping al futuro Content Pack.
+- Game/Content/TreskalV001/ — datos V1, fixture regional versionado, grafo interno/layout procedural persistible y mapping al futuro Content Pack. El fixture regional **no** es un plano prehecho de la aldea.
 - Game/Tests/ — pruebas de UI, contratos, generador e integración V001, con evidencia.
 - Worldbuilding/ — canon, biblias visuales, prompts y assets de origen, no mover ni reescribir sin necesidad.
 
@@ -53,7 +56,7 @@ Preguntas descriptivas no mutan el mundo. Las acciones con varios pasos requiere
 3. Estructurar Host e interfaz en un proyecto compilable; no implementar acciones falsas.
 4. Documentar contratos y pruebas del conducto petición -> respuesta, usando fixtures temporales claramente etiquetados, sin inventar APIs de CoreRPG.
 5. Probar diseño adaptativo Windows/Android y evaluar exportación Android de forma independiente.
-6. Evaluar vías de voz (ASR, TTS), sin exigirlas al primer arranque técnico ni declarar que ya funcionan.
+6. Definir la integración de los modelos Gemini elegidos y las vías de voz (ASR, TTS), sin exigir una API activa al primer arranque técnico ni declarar que ya funciona.
 7. Registrar evidencia real, incidencias y decisiones; mantener PR Draft hasta revisión y validación.
 
 ## 7. Dependencias
@@ -80,6 +83,8 @@ Preguntas descriptivas no mutan el mundo. Las acciones con varios pasos requiere
 
 - [x] Modalidad definida: RPG conversacional, sin clics obligatorios ni avatar móvil.
 - [x] Frontera técnica de autoridad descrita.
+- [x] Regla de layout procedural persistente documentada; implementación pendiente.
+- [x] Modelos Gemini designados por el autor registrados; conexión pendiente.
 - [ ] Framework elegido con spike documentado.
 - [ ] Proyecto arrancable Windows: fondo + cuadro conversacional + retrato contextual.
 - [ ] Entrada de texto y respuesta de prueba no autoritativa verificadas.
