@@ -1,0 +1,47 @@
+name: Nimroel · NIM-01 Host 2D checks
+
+on:
+  push:
+    branches:
+      - feat/nim-01-build
+    paths:
+      - "Game/**"
+      - ".github/workflows/nim-01-host-check.yml"
+  pull_request:
+    paths:
+      - "Game/**"
+      - ".github/workflows/nim-01-host-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  godot-linux-headless:
+    name: Godot 4.7.2 editor import + smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download exact official Godot editor
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 \
+            --output /tmp/nimroel-godot.zip \
+            "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip"
+          unzip -q /tmp/nimroel-godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --version
+      - name: Import project and parse scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 \
+            --headless --editor --path Game/Host2D --import --quit
+      - name: Run NIM-01 smoke tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 \
+            --headless --path Game/Host2D --script res://tests/smoke.gd
