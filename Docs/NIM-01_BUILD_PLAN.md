@@ -1,91 +1,91 @@
-# NIM-01 BUILD — arquitectura y arranque del juego 2D
+# NIM-01 BUILD — arquitectura y arranque del juego 2D conversacional
 
-**Estado:** planificación técnica en rama de desarrollo; sin juego compilado ni pruebas de ejecución.
+**Estado:** arquitectura y planificación en PR Draft; sin juego compilado ni pruebas de ejecución.
 **Rama:** feat/nim-01-build
-**Repositorio:** robdor80/Videojuego_Nimroel
-**Base de alcance y canon:** Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/ (PR #12 fusionada).
+**Base:** lore de la primera aldea V1 y «La herramienta rota» integrado mediante PR #12.
+**Definición de experiencia:** [NIM-01_EXPERIENCIA_CONVERSACIONAL.md](NIM-01_EXPERIENCIA_CONVERSACIONAL.md).
 
 ## 1. Propósito
 
-Preparar el proyecto ejecutable de **Nimroel RPG v0.0.1 — la primera aldea V1 de Treskal**, sin modificar el lore cerrado y sin crear un segundo motor RPG.
+Preparar el ejecutable de **Nimroel RPG v0.0.1 — primera aldea V1 de Treskal** sin modificar el canon, duplicar CoreRPG ni presentar simulaciones visuales como mecánicas verdaderas.
 
-Este documento organiza únicamente trabajo técnico. No es un Content Pack de CoreRPG ni una prueba superada.
+## 2. Decisiones de dirección jugable
 
-## 2. Decisiones de producto confirmadas
+- Windows y Android, **solo 2D**: imágenes de fondo para ambientación y retratos en interacciones, sin modelos 3D.
+- Exploración **conversacional por lenguaje natural**: el jugador habla o escribe «qué veo», «avanzo», «pregunto», «busco», «llevo la herramienta» y otras intenciones.
+- Sin desplazamiento obligatorio de un avatar 2D, ni búsqueda de hotspots/clics obligatorios sobre una imagen; la ilustración puede omitir objetos, edificios o NPC existentes.
+- La IA interpreta y narra como Máster; el motor determina qué se ve, qué se sabe, qué sucede y si una acción está autorizada.
+- CoreRPG mantiene el WorldState; Nimroel añade las reglas de su mundo y el Host solo solicita/representa. No permitir que una narración cree hechos.
+- Windows: teclado y ratón; Android: pantalla táctil con aplicación independiente del PC.
+- El encargo «La herramienta rota» sigue siendo opcional, emergente y persistente, nunca una misión obligatoria ni una excusa para fijar la aldea.
+- Placeholders 2D permitidos para pruebas; no tratar arte provisional como asset final NAP.
 
-- Juego **estrictamente 2D** para **Windows y Android**. Ningún modelo, escenario o personaje 3D.
-- Escenarios y ambientes ilustrados como **imágenes de fondo**.
-- **Retratos de NPC durante las interacciones** y diálogos.
-- Interacción local y jugabilidad sin depender de una IA o servicio de red.
-- Windows: ratón y teclado; Android: controles táctiles, aplicación autónoma sin depender del PC.
-- CoreRPG (otro repositorio) es la única autoridad del estado lógico; presentación y gráficos no son entidades ni hechos del mundo.
-- En el primer ensayo se permite utilizar material gráfico provisional compatible con el estilo, sin atribuirle aprobación NAP ni categoría de asset final.
-- La prueba sigue siendo libre: «La herramienta rota» se descubre opcionalmente y no gobierna la generación de la aldea.
+## 3. Experiencia e interfaz
 
-## 3. Decisión de interacción pendiente (único bloqueo de UX)
+El Host presentará un escenario ilustrado de contexto, panel narrativo con historial, entrada libre, y retrato pertinente al mantener conversación con un NPC. Los elementos opcionales de UI (menús, sugerencias, accesibilidad) no deben impedir órdenes libres ni condicionar la existencia de objetos/servicios.
 
-Confirmar con el autor cómo se recorre el espacio:
-- A: **escenas ilustradas conectadas**; seleccionar caminos, puertas y NPC, sin avatar caminando.
-- B: **mapa 2D transitable**, avatar bidimensional caminando sobre escenarios dibujados y retratos solo al conversar.
+Ruta lógica futura: texto/voz transcrita -> intérprete de intención -> consulta o solicitud estructurada -> CoreRPG y reglas Nimroel -> resultado y contexto autorizado -> narración IA -> Host 2D.
 
-No implementar movimiento, hotspots, cámara o navegación definitiva hasta confirmar A/B. La arquitectura debe poder conservar entidades, hotspots/contextos y acciones sin acoplar el WorldState al renderizado.
+Preguntas descriptivas no mutan el mundo. Las acciones con varios pasos requieren validación y resultados por etapa. Ante órdenes ambiguas, aclarar antes de efectos no deseados. Nunca revelar conocimiento que no corresponde al observador.
 
-## 4. Tecnologías candidatas: recomendación, no aprobación definitiva
+**Distinción de modo:** la aplicación puede arrancar sin IA remota y ofrecer un modo técnico limitado para probar la interfaz y el Core; ello **no implica experiencia conversacional libre equivalente sin IA**. Evaluar interpretación local/remota/híbrida y ASR/TTS antes de prometer operación offline plena en Windows o Android.
 
-**Candidata principal: Godot 4.7.2 estable, versión estándar sin .NET.**
+## 4. Tecnología candidata, pendiente de spike
 
-Justificación: flujo 2D e interfaz adaptable, manejo de imágenes/retratos, exportación Windows/Android, entrada de ratón/táctil y posibilidad de conectar código C++ a través de GDExtension. Godot es presentación, no motor de reglas. GDScript se limitaría a la interfaz y adaptación; todo hecho persistente deberá resolverlo CoreRPG o las reglas específicas Nimroel autorizadas a través de su integración.
+- Primera candidata: **Godot estable estándar**, como interfaz y Host 2D, por exportación Windows/Android, paneles gráficos y posible integración de núcleo C++ mediante GDExtension.
+- Contingencia: SDL3 + C++ si las pruebas reales demuestran inconvenientes materiales para el Host de conversación.
+- Ninguna elección es definitiva hasta una prueba técnica de interfaz y compatibilidad. No afirmar que CoreRPG está enlazado, que Android funciona o que la voz está integrada antes de probarlos.
 
-**Alternativa contingente: SDL3 + C++**, si un spike real desaconseja Godot/GDExtension por coste o incompatibilidad. No diseñar un renderizador ni UI custom antes de medir la opción preferente.
+## 5. Estructura propuesta (crear progresivamente)
 
-La decisión final exige prueba de arranque Windows, validación de exportación Android y comprobación posterior del enlace de CoreRPG. No inferir soporte Android a partir de compilar Windows.
+- Game/ — ejecutable Nimroel, separado de Worldbuilding.
+- Game/Host2D/ — pantalla, fondo, retratos, historial, texto/voz y controles; sin autoridad de hechos.
+- Game/BridgeCoreRPG/ — futuro adaptador a C++20, con contratos de consulta/acción y sin WorldState duplicado.
+- Game/Interaction/ — intérprete de intenciones, narración controlada y adaptadores de voz/IA; sin mutación directa.
+- Game/Content/TreskalV001/ — datos V1, fixture regional versionado y mapping al futuro Content Pack.
+- Game/Tests/ — pruebas de UI, contratos, generador e integración V001, con evidencia.
+- Worldbuilding/ — canon, biblias visuales, prompts y assets de origen, no mover ni reescribir sin necesidad.
 
-## 5. Estructura futura propuesta (a crear solo cuando se necesite)
+## 6. Ejecución incremental NIM-01
 
-- Game/ — raíz del juego ejecutable, distinta del canon.
-- Game/Host2D/ — escenas, interfaz, HUD, retratos y manejo de controles.
-- Game/BridgeCoreRPG/ — integración C++20 y adaptador que NO conserva otro WorldState.
-- Game/Content/TreskalV001/ — fixture regional versionado, datos de generación V1 y mapeos futuros a Content Pack.
-- Game/Tests/ — smoke tests y matriz de aceptación V001 con evidencias.
-- Worldbuilding/ — canon, biblias visuales y assets fuente (no mutar ni duplicar sin necesidad).
+1. Registrar la modalidad conversacional y su autoridad (realizado en documentación).
+2. Probar una interfaz 2D mínima para Windows: fondo ilustrado, historial, caja de texto, retrato contextual y respuesta estructurada de ejemplo.
+3. Estructurar Host e interfaz en un proyecto compilable; no implementar acciones falsas.
+4. Documentar contratos y pruebas del conducto petición -> respuesta, usando fixtures temporales claramente etiquetados, sin inventar APIs de CoreRPG.
+5. Probar diseño adaptativo Windows/Android y evaluar exportación Android de forma independiente.
+6. Evaluar vías de voz (ASR, TTS), sin exigirlas al primer arranque técnico ni declarar que ya funcionan.
+7. Registrar evidencia real, incidencias y decisiones; mantener PR Draft hasta revisión y validación.
 
-Los nombres son provisionales hasta crear la implementación real. Los assets visuales aprobados se referenciarán con manifest o IDs, evitando mover la biblioteca original.
+## 7. Dependencias
 
-## 6. Orden de ejecución NIM-01
+- CoreRPG 4.5–4.8: identidad, relaciones, RNG, población agregada, snapshots estructurales (no simulan ya toda la aldea).
+- 4.9: conocimiento/percepción por observador.
+- 4.10: acciones, tiempo, simulación causal y continuidad fuera de escena.
+- 4.11: inspector.
+- 4.12: Context Builder y paso seguro a IA.
+- 4.13: primer Content Pack Nimroel.
+- NAP: assets finales cuando proceda; placeholders autorizados.
+- Android: verificación independiente Windows + NDK/export y dispositivo.
+- 4.14 Unreal/Star Trek: NO bloquea Nimroel.
 
-1. Registrar las invariantes y resolver el tipo de exploración (A/B).
-2. Tomar la decisión de Host con una prueba acotada: arranque 2D Windows, imagen de fondo, overlay de retrato y entrada local.
-3. Crear estructura mínima de proyecto, configuración reproducible y README de compilación.
-4. Comprobar tamaño, escalado y navegación para pantalla Windows y diseño táctil Android (sin proclamar builds ejecutados).
-5. Realizar smoke Android real cuando sea viable (SDK/export templates y dispositivo); registrar plataforma y resultado separado del de Windows.
-6. Definir el puerto mínimo futuro hacia CoreRPG: identidad/consulta, presentación, solicitudes estructuradas y snapshots sin introducir APIs ficticias.
-7. Ejecutar los checks disponibles, documentar evidencias y preparar la PR para revisión.
+## 8. GitHub y pruebas
 
-## 7. Contratos y autoridad
+- Rama de paquete feat/nim-01-build desde main; PR Draft; commits de unidad lógica conformes con Docs/NIMROEL_GIT_COMMIT_CONVENTIONS.md.
+- No modificar el canon de PR #12 para resolver un problema del Host.
+- No fusionar sin auditoría humana del paquete aprobado.
+- Evidencias de cada prueba: commit Nimroel, commit CoreRPG si aplica, plataforma, pasos, observado, incidencia y estado.
+- No convertir mock, documentación o código no compilado en test «aprobado».
 
-- Leer los documentos de PR #12 como origen de alcance y matriz V001-G/P/Q/S/H.
-- Nunca escribir desde diálogos o scripts visuales directamente el estado lógico ni la propiedad, reparación, tiempo o conocimiento.
-- CoreRPG 4.5–4.8 permite infraestructura estructural; 4.9–4.13 incorpora progresivamente conocimiento, acciones/simulación, inspector, contexto y primer Content Pack Nimroel.
-- No introducir nombres, NPC ni edificios específicos predefinidos como canon; los fixtures de prueba serán explícitos y versionados.
-- No simular un motor completo solo para declarar el encargo superado.
+## 9. Criterios de salida NIM-01
 
-## 8. Política de desarrollo y GitHub
+- [x] Modalidad definida: RPG conversacional, sin clics obligatorios ni avatar móvil.
+- [x] Frontera técnica de autoridad descrita.
+- [ ] Framework elegido con spike documentado.
+- [ ] Proyecto arrancable Windows: fondo + cuadro conversacional + retrato contextual.
+- [ ] Entrada de texto y respuesta de prueba no autoritativa verificadas.
+- [ ] UI adaptable a Android; exportación/instalación comprobada o aplazamiento formal explícito.
+- [ ] Contrato propuesto para conexión futura a CoreRPG con límites de IA documentados.
+- [ ] Estado de voz, proveedor, red y capacidades offline declarado con honestidad.
+- [ ] PR auditada; tests con evidencia.
 
-- Cada paquete NIM se desarrolla en rama propia desde main actualizado, mediante commits pequeños con la norma oficial Docs/NIMROEL_GIT_COMMIT_CONVENTIONS.md.
-- Para NIM-01: rama feat/nim-01-build, PR inicialmente Draft; no fusionar sin validación y revisión.
-- No mezclar trabajo de CoreRPG ni NAP, ni modificar su repositorio/canon.
-- Cada prueba debe identificar commit de Nimroel, commit de CoreRPG si aplica, plataformas realmente comprobadas y resultado observado.
-- No interpretar documentación redactada, código sin compilar o una PR abierta como evidencia de juego funcional.
-
-## 9. Criterios mínimos de salida de NIM-01
-
-- [ ] Tipo de exploración aprobado.
-- [ ] Tecnología de Host elegida tras evaluación técnica.
-- [ ] Proyecto arrancable y escena 2D básica funcionando en Windows.
-- [ ] Fondo y retrato provisionales en una interacción de prueba.
-- [ ] Input local y escalado inicial comprobados.
-- [ ] Android planificado desde el inicio; smoke exportación/instalación probado y anotado, o aplazamiento explícito con motivo.
-- [ ] Integración futura CoreRPG documentada sin segundo WorldState.
-- [ ] Archivos, commits y PR auditados; build/tests reportados con precisión.
-
-**No forman parte del cierre de NIM-01:** aldea V1 completa, población viva, Content Pack operativo, reparación simulada, matriz V001 completa ni lanzamiento de Nimroel v0.0.1.
+**No son requisitos de cierre de NIM-01:** integración real de un modelo IA; aldea V1 completa; NPC vivos; encargo ejecutable; Content Pack definitivo; guardado integral; lanzamiento v0.0.1. Su implementación se programará en paquetes posteriores sin renunciar a la experiencia conversacional definida.
