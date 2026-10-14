@@ -77,3 +77,24 @@ La prueba real de CoreRPG mediante NDK + GDExtension es una tarea **diferente** 
 - \`Docs/NIM-01_AUDITORIA_ANDROID_CORERPG_VOZ.md\`
 
 No se ha alterado el canon de \`Worldbuilding\`.
+
+
+## Informe de prueba real — Samsung Galaxy Tab S9+ (14/10/2026)
+
+**Origen de evidencia:** capturas remitidas por el usuario desde su Samsung Galaxy Tab S9+, instalando el paquete NIM-01 generado en GitHub Actions. La evidencia visual no es un test instrumentado de Android ni valida micrófono, Gemini o biblioteca CoreRPG.
+
+### Incidencia detectada en primer APK
+- La interfaz de inicio se mostraba en horizontal, con el paisaje y el panel de relato, pero **el campo de escritura quedaba oculto** fuera del área visible.
+- Causa localizada en el layout inicial de la conversación; el historial podía desplazar las acciones de la parte inferior.
+- Corrección realizada en `Game/Host2D/scripts/main.gd`: barra de entrada anclada abajo y historial con espacio variable, más prueba automática contra desbordamiento de controles de escritura.
+- CI de APK corregido: https://github.com/robdor80/Videojuego_Nimroel/actions/runs/38593322081 (success).
+
+### Segunda captura después de instalar el APK corregido
+- **Verificado por captura:** aplicación iniciada en Tab S9+ apaisada.
+- **Verificado por captura:** campo de escritura y botón «Enviar» visibles en el panel inferior.
+- **Verificado por captura:** el jugador envió «Qué veo desde aquí?»; aparece bocadillo de jugador.
+- **Verificado por captura:** aparece respuesta del **simulador**, que informa que CoreRPG no está conectado; el historial tiene barra visible de desplazamiento.
+- **Verificado por captura:** botón «Reiniciar demo» visible, pero su funcionamiento táctil no ha sido probado expresamente.
+- **No evaluado:** uso prolongado, rotación/pantalla completa, retorno del teclado, reinicio, audio, instalación en MSI Windows ni consumo/estabilidad bajo carga.
+
+**Resultado:** smoke de pantalla e interacción textual **APROBADO visualmente para la Galaxy Tab S9+**; el problema de controles ocultos quedó corregido. Se mantiene pendiente la prueba Windows MSI y las integraciones funcionales posteriores. No confundir este resultado con una partida Nimroel conectada a CoreRPG, Gemini o sherpa.
