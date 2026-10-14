@@ -3,7 +3,7 @@ name: Nimroel · NIM-01 Host 2D checks
 on:
   push:
     branches:
-      - feat/nim-01-build
+      - main
     paths:
       - "Game/**"
       - ".github/workflows/nim-01-host-check.yml"
@@ -104,6 +104,24 @@ jobs:
             --headless --path Game/Host2D \
             --export-debug "Samsung Tab S9+ ARM64" export/Nimroel_NIM01_TabS9Plus.apk
           test -s Game/Host2D/export/Nimroel_NIM01_TabS9Plus.apk
+      - name: Verify Android ABI and record file checksums
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          apk = Path("Game/Host2D/export/Nimroel_NIM01_TabS9Plus.apk")
+          with zipfile.ZipFile(apk) as z:
+              libs = [name for name in z.namelist() if name.startswith("lib/") and name.endswith(".so")]
+          assert libs, "El APK no contiene bibliotecas nativas"
+          assert all(name.startswith("lib/arm64-v8a/") for name in libs), f"ABI no permitida: {libs}"
+          print("APK contiene solamente bibliotecas ARM64:", libs)
+          PY
+          cd Game/Host2D/export
+          sha256sum Nimroel_NIM01_Windows.exe Nimroel_NIM01_Windows.pck \
+            Nimroel_NIM01_TabS9Plus.apk > SHA256SUMS.txt
+          cat SHA256SUMS.txt
       - name: Publish NIM-01 prototype packages for manual device testing
         uses: actions/upload-artifact@v4
         with:
