@@ -1,6 +1,6 @@
 # ADR NIM-01 — Selección de Godot para el Host conversacional
 
-**Estado:** APROBADA COMO DECISIÓN TÉCNICA DE NIM-01, con gates obligatorios de validación.
+**Estado:** Godot 4.7.2 Standard y sherpa-onnx APROBADOS para Nimroel NIM-01 por el autor; implementación, modelos de voz concretos y pruebas multiplataforma pendientes.
 **Fecha:** 2026-10-14
 **Decisor de arquitectura:** ChatGPT, con autorización para dirigir NIM-01.
 **Alcance de plataformas:** MSI Windows x64 y **solo Samsung Galaxy Tab S9+ Android ARM64**; no hay obligación de soportar móviles ni otros modelos Android.
@@ -24,8 +24,8 @@ Se selecciona **Godot 4.7.2 Standard** como Host 2D en Windows y Android. Unreal
 1. **Host Godot:** pantalla, dibujo ilustrado, retratos, teclado/táctil, control del micrófono y reproducción TTS; no WorldState paralelo.
 2. **Bridge C++:** `CoreRPG STATIC` compilado para Win x64 y Android ARM64, enlazado en `GDExtension`; versión del bridge y esquema de mensajes separados del modelo de mundo.
 3. **Capa IA:** interpretar audio o texto, proponer acciones estructuradas, narrar solo percepciones y resultados autorizados. Fallos de red/API no alteran la simulación.
-4. **VoiceManager:** gestiona personajes por ID estable y roles vocales; selección por voz disponible por plataforma (`tts_get_voices_for_language("es")`, `tts_get_voices()`), preferencias persistentes, control de volumen/tono/velocidad, interrupción, cancelación y fallback textual. Los IDs de voces de Windows y Android **no son intercambiables**.
-5. **VoiceBackend:** interfaz separada del juego que permite inicialmente `DisplayServer.tts_speak` y, si es insuficiente, un backend adicional Android nativo por plugin Kotlin/Java o un sintetizador con voces distribuidas/licenciadas. No prometer modelos de voz y calidades aún no medidos.
+4. **VoiceManager:** gestiona personajes por ID estable y roles vocales; selección de modelos compatibles con sherpa-onnx, preferencias persistentes, control de volumen/tono/velocidad, interrupción, cancelación y fallback textual. Los identificadores internos y disponibilidad de los modelos se validarán por plataforma.
+5. **VoiceBackend:** utilizar **sherpa-onnx como motor aprobado de voz local**, con ASR (entrada hablada → transcripción) y TTS (texto NPC → voz asignada). Deben elegirse modelos específicos compatibles en castellano, comprobar licencias, rendimiento, ARM64 y calidad en Samsung Tab S9+. `DisplayServer.tts_speak` podrá servir como fallback accesible si hace falta, pero no es el backend principal decidido.
 6. **Push-to-talk:** capturar fragmentos, permiso `RECORD_AUDIO` en Android y mostrar transcripción para confirmación de acciones sensibles; salida por texto siempre disponible.
 
 ## Condiciones de calidad y aceptación
@@ -37,11 +37,11 @@ La selección de motor no equivale a aprobación de los siguientes puntos:
 - [ ] Misma prueba mínima CoreRPG ejecutada en Windows y Android con resultados deterministas.
 - [ ] Entrada escrita y micro de Windows y Tab S9+ probados con transcripción en castellano de frases reales.
 - [ ] Gemini interpreta una solicitud; CoreRPG valida; texto narrado refleja únicamente estado autorizado. Ningún mock se presenta como gameplay.
-- [ ] TTS castellano comprobado en ambas plataformas: enumeración de voces, prueba audible, interrupción y recuperación.
+- [ ] TTS castellano con **sherpa-onnx** comprobado en ambas plataformas: selección de modelo/speaker, prueba audible, interrupción y recuperación.
 - [ ] **Objetivo de diferenciación de voz:** narrador distinguible y varias voces masculinas/femeninas (objetivo de pruebas: al menos dos masculinas y dos femeninas de calidad utilizable si se dispone de packs). No marcar satisfecho por 1 voz con cambios de pitch artificiales.
 - [ ] Persistir por rol/NPC la **preferencia** de voz, remapeando por plataforma sin afectar a la identidad NPC.
 - [ ] Registrar coste/latencia/permisos, fallback texto y acceso a API; no incrustar credenciales Gemini distribuidas en APK ni GitHub.
-- [ ] Si los motores TTS instalados no ofrecen variedad suficiente, probar backend alternativo de voces *antes de cerrar el requisito de inmersión*.
+- [ ] Si los modelos TTS de sherpa-onnx evaluados no ofrecen variedad suficiente, probar modelos compatibles alternativos *antes de cerrar el requisito de inmersión*.
 - [ ] Documentar cada prueba con commit, dispositivo, SO, API, reproducibilidad, incidencias y resultado.
 
 ## Condición de reevaluación
@@ -61,4 +61,4 @@ Solo reconsiderar UE5 para Nimroel si los spikes muestran un impedimento concret
 - UE5 experimental TTS: https://dev.epicgames.com/documentation/unreal-engine/API/PluginIndex/TextToSpeech
 - Samsung España Tab S9+: https://www.samsung.com/es/mobile-phone-buying-guide/latest-samsung-galaxy-tab-2023/
 
-**Estado de implementación:** no hay evidencias de APK real, audio real, múltiples voces TTS ni bridge CoreRPG ejecutado. Este ADR fija decisión y aceptación; no acredita resultados.
+**Estado de implementación:** la elección de Godot y sherpa-onnx ya está aprobada, pero no hay evidencias de APK real, audio real, múltiples modelos de voz ni bridge CoreRPG ejecutado. Este ADR fija decisión y aceptación; no acredita resultados.
