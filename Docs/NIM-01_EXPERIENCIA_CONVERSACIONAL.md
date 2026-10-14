@@ -1,6 +1,6 @@
 # NIM-01 — experiencia conversacional y presentación 2D
 
-**Estado:** decisión de dirección jugable registrada; implementación, proveedor de IA y pruebas pendientes.
+**Estado:** decisión de dirección jugable registrada; modelos Gemini designados por el autor; integración técnica y pruebas pendientes.
 **Ámbito:** videojuego Nimroel, no nuevo canon del mundo.
 **Referencia narrativa:** PR #12, aldea V1 y encargo opcional «La herramienta rota».
 **Fecha de decisión:** 2026-10-14.
@@ -66,6 +66,10 @@ Si la petición es ambigua, no se decide por sorpresa una acción irreversible: 
 
 La representación gráfica se elige a partir de contexto de localización, región y momento de la experiencia; puede ser general, estilizada o reutilizada por distintas instancias compatibles. El catálogo de fondos no determina qué servicios existen ni qué NPC están presentes.
 
+**El plano de cada aldea también se genera proceduralmente**: su ubicación y conexiones regionales preceden a la generación de hogares, edificios, caminos y distribución interior; el layout resultante se persiste en la partida. No hay plano aldeano fijo ni diseño manual por instancia. El motor consulta ese grafo espacial interno para rutas, presencia, accesibilidad y, cuando se implementen reglas suficientes, visibilidad. El plano lógico no tiene por qué mostrarse al jugador ni coincidir píxel por píxel con los fondos artísticos.
+
+Véase [NIM-01_GENERACION_ESPACIAL_PROCEDURAL.md](NIM-01_GENERACION_ESPACIAL_PROCEDURAL.md).
+
 - Una taberna puede existir lógicamente aunque no aparezca en la imagen de entrada.
 - Una herrería puede encontrarse mediante diálogo o exploración, sin hotspot visible.
 - Los retratos se vinculan a IDs lógicos de NPC por un manifest de assets; su ausencia no borra al NPC.
@@ -75,7 +79,7 @@ La UI prioriza el contexto narrativo, caja de entrada, historial de conversació
 
 ## 5. Voz, red y degradación honesta
 
-La intención de producto admite **voz y escritura**. La voz necesita una capa de transcripción (ASR) y, si se desea, síntesis de voz (TTS), separadas del modelo de interpretación y de CoreRPG; no se eligen proveedores sin evaluar coste, privacidad, latencia y Windows/Android.
+La intención de producto admite **voz y escritura**. Los modelos de interpretación/narración elegidos previamente por el autor son **Gemini 3.5 Flash-Lite** para uso habitual y **Gemini 3.8 Flash** para tareas exigentes. La condición de uso del proyecto es disponer de un servicio gratuito en el EEE, según la decisión comunicada por el autor; esta documentación no constituye verificación independiente de disponibilidad, cuota o IDs de API. **No se abre una nueva selección comparativa de modelos en NIM-01.** La voz necesita una capa de transcripción (ASR) y, si se desea, síntesis de voz (TTS), separadas del modelo de interpretación y de CoreRPG.
 
 La experiencia conversacional libre requiere un intérprete suficientemente capaz: el prototipo sin IA puede usar comandos de prueba o un parser acotado, **pero no debe presentarse como equivalente a la IA narradora**.
 
@@ -110,7 +114,8 @@ La aplicación debe poder arrancar y diagnosticar su estado sin IA remota. Esto 
 ## 8. Cuestiones técnicas por resolver, no decisiones de lore
 
 - Framework Host 2D y API estable de integración con CoreRPG.
-- Proveedor/es de interpretación/narración (local, remoto o híbrido); costes y degradación.
+- Integración técnica y límites efectivos de los modelos Gemini ya elegidos, con mecanismo de control de cuotas/errores; no volver a elegir proveedor en NIM-01.
+- Generación procedural del layout y navegación lógica documentadas aparte; su implementación se planifica con el generador V1.
 - Alcance real del dictado y TTS en Windows y Android.
 - Contratos de intents multietapa, cancelación, aclaraciones y temporización.
 - Selección de fondos/retratos e integración de assets NAP existentes sin mover los originales.
