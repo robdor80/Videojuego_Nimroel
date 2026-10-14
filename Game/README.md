@@ -1,29 +1,30 @@
-# Nimroel RPG — juego ejecutable 2D
+# Nimroel RPG — Host 2D conversacional
 
-**Estado:** carpeta reservada para el desarrollo del videojuego. Todavía no contiene un build jugable.
+**Estado:** raíz de desarrollo reservada; sin build ni pruebas ejecutadas.
 
-## Alcance de este árbol
+## Experiencia objetivo
 
-Este directorio alojará el Host 2D de Nimroel para Windows y Android, el puente hacia CoreRPG, los datos de instancia y las pruebas. Su existencia no modifica el canon ni los contratos de Worldbuilding.
+Nimroel es un juego de rol narrativo con fondos 2D ilustrados, retratos de NPC y conversación libre por escrito o por voz. Su interfaz no exige seleccionar objetos/edificios dibujados, pulsar hotspots ni mover un avatar por un mapa. Las imágenes ambientan, sin representar exhaustivamente la realidad del mundo.
 
-La interfaz utilizará fondos ilustrados y retratos durante conversaciones e interacciones. No se admiten modelos 3D. El patrón de desplazamiento por escenas o mapa 2D está pendiente de decisión del autor.
+La IA actuará como **intérprete de intención y Máster narrativo**, con narración autorizada. **CoreRPG sigue siendo el árbitro y estado autoritativo**; las reglas Nimroel definen contenido específico. La IA no puede crear, reparar, entregar o revelar hechos saltándose validaciones del motor.
 
-## Separación obligatoria
+Se prepararán Windows y Android como aplicaciones independientes. El soporte real de IA/voz/offline se verificará explícitamente; un parser limitado usado en pruebas no equivale a conversación libre.
 
-- **Worldbuilding/**: reglas, canon, biblias, perfiles, contenidos autorizados y fuentes de assets.
-- **Game/Host2D/** (futuro): presentación, input, navegación visual y HUD; ninguna autoridad sobre hechos del mundo.
-- **Game/BridgeCoreRPG/** (futuro): adaptador al núcleo de lógica portable C++20, sin estado autoritativo paralelo.
-- **Game/Content/TreskalV001/** (futuro): datos de prueba y fixture regional versionado, diferenciados de lore permanente y de Content Packs aceptados.
-- **Game/Tests/** (futuro): smoke tests y matriz V001 ejecutada con resultados y evidencias.
+## Límites de responsabilidad
 
-Los subdirectorios se materializarán conforme se implemente cada incremento, no con esqueletos falsamente completos.
+- **Worldbuilding/**: canon, biblias, perfiles y activos de producción; no se modifica en NIM-01.
+- **Game/Host2D/** (futuro): escenas de fondo, retratos, historial narrativo e inputs adaptados a cada pantalla.
+- **Game/Interaction/** (futuro): interpretación de intenciones, narración basada en resultados y adaptadores de voz.
+- **Game/BridgeCoreRPG/** (futuro): adaptador al motor portable C++20, sin WorldState alternativo.
+- **Game/Content/TreskalV001/** (futuro): fixture regional, configuración V1 y futuro mapping a Content Pack.
+- **Game/Tests/** (futuro): pruebas técnicas y matriz V001 con evidencias.
 
-## Plan de trabajo
+Los directorios aparecen únicamente cuando los incrementos correspondientes estén implementados. Los assets fuentes permanecerán en sus ubicaciones existentes, referenciados desde el juego.
 
-Ver Docs/NIM-01_BUILD_PLAN.md. La PR de NIM-01 se mantendrá en estado Draft hasta completar el paquete aprobado y su auditoría. No se declarará soporte Android sin una prueba en dispositivo.
+## Referencias
 
-## Registro de trazabilidad
-
-- Canon de prueba: PR #12 de Videojuego_Nimroel.
-- Fases CoreRPG de referencia: 4.5–4.8 estructurales; 4.9–4.13 integraciones posteriores.
-- Norma Git: Docs/NIMROEL_GIT_COMMIT_CONVENTIONS.md.
+- Plan: [Docs/NIM-01_BUILD_PLAN.md](../Docs/NIM-01_BUILD_PLAN.md).
+- Contrato de experiencia: [Docs/NIM-01_EXPERIENCIA_CONVERSACIONAL.md](../Docs/NIM-01_EXPERIENCIA_CONVERSACIONAL.md).
+- Canon de prueba: Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/ (PR #12).
+- Commits: Docs/NIMROEL_GIT_COMMIT_CONVENTIONS.md.
+- PR NIM-01: permanecerá Draft hasta cierre real; no se declara soporte Android ni funcionamiento de la IA sin pruebas.
