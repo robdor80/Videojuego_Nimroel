@@ -10,6 +10,9 @@ var _backdrop: TextureRect
 var _shade: ColorRect
 var _masthead: PanelContainer
 var _conversation_panel: PanelContainer
+var _content_area: Control
+var _top_info: VBoxContainer
+var _entry_dock: VBoxContainer
 var _history_scroll: ScrollContainer
 var _history_messages: VBoxContainer
 var _input: LineEdit
@@ -56,23 +59,32 @@ func _build_interface() -> void:
 	_conversation_panel.name = "PanelConversacion"
 	_conversation_panel.add_theme_stylebox_override("panel", _panel_style(Color(0.055, 0.087, 0.107, 0.955), 18))
 	add_child(_conversation_panel)
-	var conversation := VBoxContainer.new()
-	conversation.name = "Contenido"
-	conversation.add_theme_constant_override("separation", 10)
-	_conversation_panel.add_child(conversation)
+	_content_area = Control.new()
+	_content_area.name = "Contenido"
+	_conversation_panel.add_child(_content_area)
+
+	_top_info = VBoxContainer.new()
+	_top_info.name = "CabeceraRelato"
+	_top_info.add_theme_constant_override("separation", 5)
+	_content_area.add_child(_top_info)
+
+	_entry_dock = VBoxContainer.new()
+	_entry_dock.name = "BarraInferior"
+	_entry_dock.add_theme_constant_override("separation", 9)
+	_content_area.add_child(_entry_dock)
 
 	var heading := _make_label("TU PARTIDA  /  RELATO", 15, Color(0.953, 0.850, 0.617))
-	conversation.add_child(heading)
+	_top_info.add_child(heading)
 	var state := _make_label("MODO MAQUETA   ·   MUNDO NO CARGADO   ·   GEMINI Y CORERPG DESCONECTADOS", 11, Color(1.0, 0.72, 0.51))
 	state.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	conversation.add_child(state)
+	_top_info.add_child(state)
 
 	_history_scroll = ScrollContainer.new()
 	_history_scroll.name = "Historial"
 	_history_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_history_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	_history_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	conversation.add_child(_history_scroll)
+	_content_area.add_child(_history_scroll)
 	_history_messages = VBoxContainer.new()
 	_history_messages.name = "Bocadillos"
 	_history_messages.add_theme_constant_override("separation", 11)
@@ -82,7 +94,7 @@ func _build_interface() -> void:
 	_portrait_line = HBoxContainer.new()
 	_portrait_line.name = "RetratoEnConversacion"
 	_portrait_line.add_theme_constant_override("separation", 12)
-	conversation.add_child(_portrait_line)
+	_entry_dock.add_child(_portrait_line)
 	_portrait = TextureRect.new()
 	_portrait.name = "RetratoProvisional"
 	_portrait.texture = ART_PORTRAIT
@@ -96,8 +108,9 @@ func _build_interface() -> void:
 	_portrait_line.add_child(portrait_caption)
 
 	var entry_row := HBoxContainer.new()
+	entry_row.name = "EntradaFila"
 	entry_row.add_theme_constant_override("separation", 8)
-	conversation.add_child(entry_row)
+	_entry_dock.add_child(entry_row)
 	_input = LineEdit.new()
 	_input.name = "EntradaLibre"
 	_input.placeholder_text = "¿Qué veo desde donde estoy?"
@@ -115,8 +128,9 @@ func _build_interface() -> void:
 	entry_row.add_child(submit)
 
 	var footer := HBoxContainer.new()
+	footer.name = "Pie"
 	footer.add_theme_constant_override("separation", 8)
-	conversation.add_child(footer)
+	_entry_dock.add_child(footer)
 	var reset := Button.new()
 	reset.name = "ReiniciarMaqueta"
 	reset.text = "Reiniciar demo"
@@ -145,6 +159,26 @@ func _update_layout() -> void:
 		var left: float = maxf(340.0, view.x * 0.515)
 		_conversation_panel.position = Vector2(left, 109.0)
 		_conversation_panel.size = Vector2(maxf(340.0, view.x - left - margin), maxf(260.0, view.y - 109.0 - margin))
+	call_deferred("_layout_panel_controls")
+
+func _layout_panel_controls() -> void:
+	# Las acciones de entrada NO dependen del tamaño del historial.
+	# La barra se coloca abajo de la zona útil; el historial ocupa lo restante.
+	if not is_instance_valid(_content_area):
+		return
+	var inner: Vector2 = _content_area.size
+	if inner.x < 1.0 or inner.y < 1.0:
+		return
+	var head_height: float = _top_info.get_combined_minimum_size().y
+	_top_info.position = Vector2.ZERO
+	_top_info.size = Vector2(inner.x, head_height)
+	var dock_height: float = _entry_dock.get_combined_minimum_size().y
+	_entry_dock.position = Vector2(0.0, maxf(0.0, inner.y - dock_height))
+	_entry_dock.size = Vector2(inner.x, dock_height)
+	var history_top: float = head_height + 12.0
+	var history_bottom: float = _entry_dock.position.y - 10.0
+	_history_scroll.position = Vector2(0.0, history_top)
+	_history_scroll.size = Vector2(inner.x, maxf(1.0, history_bottom - history_top))
 
 func _send_from_button() -> void:
 	_on_send(_input.text)
@@ -159,6 +193,7 @@ func _on_send(raw_text: String) -> void:
 	_append_bubble("SIMULADOR · NO ES UN NPC", str(routed["demo_response"]), false)
 	_portrait_line.visible = bool(routed["portrait_demo"])
 	_hint.text = "Sin hechos del mundo modificados"
+	call_deferred("_layout_panel_controls")
 
 func _reset_demo() -> void:
 	if not is_instance_valid(_history_messages):
@@ -170,6 +205,7 @@ func _reset_demo() -> void:
 	_portrait_line.visible = false
 	_input.clear()
 	_hint.text = "Solo se ensaya la interfaz"
+	call_deferred("_layout_panel_controls")
 
 func _append_bubble(author: String, body: String, player: bool) -> void:
 	var row := HBoxContainer.new()
