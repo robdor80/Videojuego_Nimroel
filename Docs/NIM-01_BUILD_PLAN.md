@@ -93,7 +93,7 @@ Preguntas descriptivas no mutan el mundo. Las acciones con varios pasos requiere
 - [x] Contrato de integración futura CoreRPG y sherpa/Gemini documentado; ni Core ni sherpa integrados aún.
 - [x] Plan de pruebas, limitaciones de demo y protocolo para MSI/Tab S9+ documentados.
 - [ ] **Ejecución real en MSI Windows**: requiere abrir el exe exportado en el equipo objetivo.
-- [ ] **Instalación/ejecución en Galaxy Tab S9+**: requiere prueba táctil sobre el dispositivo objetivo.
+- [x] **Instalación/ejecución y envío textual en Galaxy Tab S9+**: verificados por capturas del usuario (14/10/2026), tras corregir el campo de escritura oculto; quedan sin comprobar reanudación, pruebas prolongadas, audio y controles adicionales.
 - [ ] Auditoría humana de la PR y autorización para fusionar.
 
 **Evidencia de CI:** https://github.com/robdor80/Videojuego_Nimroel/actions/runs/38554823204 (dos jobs correctos; artefacto Windows+Android). Véase [NIM-01_PRUEBAS_Y_ENTREGA.md](NIM-01_PRUEBAS_Y_ENTREGA.md) para límites y procedimientos. No existe evidencia de ejecución física, llamadas Gemini, CoreRPG real o voz sherpa.
