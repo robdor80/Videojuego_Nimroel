@@ -52,6 +52,27 @@ func _run_checks() -> void:
 				errors.append("Falta la imagen de fondo")
 			if scene.get_node_or_null("PanelConversacion") == null:
 				errors.append("Falta el panel de conversación")
+			# Prueba de regresión Tab S9+: los controles de entrada no pueden
+			# quedar debajo del panel o fuera del viewport, aunque el historial crezca.
+			var entry: Control = scene.get_node_or_null("PanelConversacion/Contenido/BarraInferior/EntradaFila/EntradaLibre")
+			var send_button: Control = scene.get_node_or_null("PanelConversacion/Contenido/BarraInferior/EntradaFila/Enviar")
+			if entry == null or send_button == null:
+				errors.append("La barra inferior de entrada no existe")
+			else:
+				var bounds: Rect2 = scene.get_viewport_rect()
+				var panel: Control = scene.get_node("PanelConversacion")
+				var panel_box: Rect2 = panel.get_global_rect()
+				for control in [entry, send_button]:
+					var box: Rect2 = control.get_global_rect()
+					if box.size.x < 40.0 or box.size.y < 35.0:
+						errors.append("Control de entrada ilegible por dimensiones: " + control.name)
+					if box.position.y < panel_box.position.y or box.end.y > panel_box.end.y + 1.0:
+						errors.append("Control fuera del panel (vertical): " + control.name)
+					if box.position.x < bounds.position.x or box.end.x > bounds.end.x + 1.0:
+						errors.append("Control fuera de pantalla (horizontal): " + control.name)
+					if box.end.y > bounds.end.y - 1.0:
+						errors.append("Control fuera de pantalla (vertical): " + control.name)
+
 			var transcript: Node = scene.get_node_or_null("PanelConversacion/Contenido/Historial/Bocadillos")
 			if transcript == null:
 				errors.append("No existen bocadillos diferenciados")
