@@ -45,3 +45,69 @@ jobs:
           set -euo pipefail
           /tmp/Godot_v4.7.2-stable_linux.x86_64 \
             --headless --path Game/Host2D --script res://tests/smoke.gd
+
+  export-prototype-packages:
+    name: Export prototype Windows + Android (not device-tested)
+    needs: godot-linux-headless
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare JDK 17 for Android export
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: Install Godot editor and matching export templates
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fL --retry 3 --connect-timeout 20 \
+            -o /tmp/godot.zip \
+            "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip"
+          unzip -q /tmp/godot.zip -d /tmp
+          chmod +x /tmp/Godot_v4.7.2-stable_linux.x86_64
+          curl -fL --retry 3 --connect-timeout 20 \
+            -o /tmp/templates.tpz \
+            "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz"
+          mkdir -p "$HOME/.local/share/godot/export_templates/4.7.2.stable"
+          unzip -q /tmp/templates.tpz -d /tmp/godot-templates
+          cp -a /tmp/godot-templates/templates/. "$HOME/.local/share/godot/export_templates/4.7.2.stable/"
+      - name: Export Windows x64 demonstration
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p Game/Host2D/export
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 \
+            --headless --editor --path Game/Host2D --import --quit
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 \
+            --headless --path Game/Host2D \
+            --export-release "Windows MSI x64" export/Nimroel_NIM01_Windows.exe
+          test -s Game/Host2D/export/Nimroel_NIM01_Windows.exe
+      - name: Prepare temporary debug-signing keystore
+        shell: bash
+        run: |
+          set -euo pipefail
+          keytool -genkeypair -noprompt -keystore /tmp/nimroel-debug.keystore \
+            -storepass android -keypass android -alias androiddebugkey \
+            -dname "CN=Android Debug,O=Nimroel NIM01,C=ES" \
+            -keyalg RSA -keysize 2048 -validity 3650
+      - name: Export Android arm64 demonstration (APK; no device test)
+        shell: bash
+        env:
+          GODOT_ANDROID_KEYSTORE_DEBUG_PATH: /tmp/nimroel-debug.keystore
+          GODOT_ANDROID_KEYSTORE_DEBUG_USER: androiddebugkey
+          GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD: android
+        run: |
+          set -euo pipefail
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 \
+            --headless --path Game/Host2D \
+            --export-debug "Samsung Tab S9+ ARM64" export/Nimroel_NIM01_TabS9Plus.apk
+          test -s Game/Host2D/export/Nimroel_NIM01_TabS9Plus.apk
+      - name: Publish NIM-01 prototype packages for manual device testing
+        uses: actions/upload-artifact@v4
+        with:
+          name: NIM01-Godot-Prototype-Windows-Android
+          path: Game/Host2D/export/*
+          retention-days: 14
+          if-no-files-found: error
