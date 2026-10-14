@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_v001_treskal_v1_test_handoff",
+  "version": "0.1",
+  "status": "lore_scope_closed_not_runtime_implemented",
+  "scope": "nimroel_v0.0.1_treskal_village_V1",
+  "documentRole": "authoring_handoff_and_test_contract",
+  "isCoreRpgContentPack": false,
+  "isWorldStateSnapshot": false,
+  "isNAPAsset": false,
+  "authority": {
+    "authorApproved": [
+      "V1_village_exploration",
+      "traveler_without_mandatory_biography",
+      "optional_discoverable_broken_tool_request",
+      "help_wait_abandon_or_ignore",
+      "save_load_world_continuity"
+    ],
+    "inheritedCanon": [
+      "Aldea/esqueleto_minimo",
+      "Aldea/posibilidades",
+      "Aldea/V1",
+      "regional_deterministic_generation",
+      "Nimroel_Core/TOOL_COND_OWN_WAIT_MEM_TIME"
+    ],
+    "doesNotCreateNewUniversalLore": true
+  },
+  "testLocation": {
+    "realm": "Norgard",
+    "territory": "Casa_Valrik_Treskal",
+    "settlementClass": "aldea",
+    "model": "V1_Mixta_maderera_agricola",
+    "actualSettlementNameGenerated": true,
+    "cityOfTreskalProcedurallyGenerated": false
+  },
+  "generation": {
+    "population": {
+      "generalCanonicalRange": [
+        35,
+        100
+      ],
+      "v001TargetRange": [
+        40,
+        60
+      ],
+      "v001IsFixtureRangeNotUniversalRule": true
+    },
+    "worldSeedRequired": true,
+    "stableSettlementIdRequired": true,
+    "derivedSeedInputs": [
+      "worldSeed",
+      "stableSettlementId",
+      "subsystemKey",
+      "rulesVersion"
+    ],
+    "generatorVersionPersisted": true,
+    "regionGraphOrVersionedRegionFixtureRequired": true,
+    "mandatoryCapabilities": [
+      "housing_for_generated_households",
+      "permanent_potable_water_access",
+      "local_production",
+      "functional_external_connection",
+      "domestic_productive_auxiliary_space",
+      "community_meeting_point",
+      "basic_blacksmithing",
+      "local_tavern"
+    ],
+    "v1ActivityTags": [
+      "local_agriculture",
+      "some_livestock",
+      "visible_timber_haulage_road_influence"
+    ],
+    "optionalServicesNotForced": [
+      "mill",
+      "inn",
+      "carpentry",
+      "cartwright",
+      "trained_healer",
+      "advanced_blacksmith"
+    ],
+    "proceduralFields": [
+      "population_count",
+      "visible_name",
+      "families",
+      "npc_names",
+      "npc_roles_beyond_guarantees",
+      "homes",
+      "service_variants",
+      "building_layout",
+      "individual_skill_levels"
+    ],
+    "fixedForQuestOnly": [
+      "one_valid_agricultural_worker_with_repairable_tool_problem",
+      "local_basic_smith_capable_of_normal_repair_under_valid_conditions"
+    ],
+    "forbiddenDefaults": [
+      "perimeter_city_wall",
+      "permanent_local_garrison",
+      "formal_sawmill",
+      "compulsory_inn",
+      "compulsory_mill"
+    ],
+    "regionalContextNotImplementedFallback": "explicit_versioned_region_fixture_not_isolated_fake_regional_procedural_generation"
+  },
+  "player": {
+    "backgroundMandatory": false,
+    "start": "rural_road_approach",
+    "questAutomaticallyAccepted": false,
+    "freeExploration": true,
+    "questDiscoveryChannels": [
+      "direct_conversation",
+      "plausible_informed_neighbor_or_tavern_source"
+    ]
+  },
+  "quest": {
+    "id": "test_v001_broken_tool",
+    "workingTitle": "La herramienta rota",
+    "permanentCanonEvent": false,
+    "objectType": "ordinary_repairable_agricultural_tool",
+    "npcRoles": [
+      "agricultural_worker",
+      "basic_blacksmith"
+    ],
+    "resultModes": [
+      "resolved_with_valid_return",
+      "pending",
+      "refused",
+      "player_abandoned",
+      "unnoticed"
+    ],
+    "progressRequires": [
+      "valid_ownership_or_custody",
+      "worker_capacity",
+      "workstation_and_tools",
+      "materials",
+      "valid_time_progress"
+    ],
+    "worldMayContinueWithoutPlayerParticipation": true,
+    "perActorKnowledgeRequired": true,
+    "aiCannotMutateTruth": true,
+    "trackedIndependently": [
+      "quest_state",
+      "repair_order_state",
+      "tool_condition",
+      "owner",
+      "possessor",
+      "location",
+      "calendar_time",
+      "npc_knowledge"
+    ],
+    "noUniversalRepairDurationSet": true,
+    "noFixedRewardOrPaymentSet": true
+  },
+  "acceptance": {
+    "documents": [
+      "README.md",
+      "ALCANCE_LORE_V001_v0.1.md",
+      "ENCARGO_HERRAMIENTA_ROTA_v0.1.md",
+      "MATRIZ_ACEPTACION_V001_v0.1.md"
+    ],
+    "testIdPrefixes": [
+      "V001-G",
+      "V001-P",
+      "V001-Q",
+      "V001-S",
+      "V001-H"
+    ],
+    "testsExecuted": false,
+    "implementationVerified": false,
+    "requiredEvidence": [
+      "corerpg_commit",
+      "nimroel_commit",
+      "seed_and_region_fixture",
+      "generator_version",
+      "platform",
+      "test_steps",
+      "observed_result",
+      "incidents"
+    ]
+  },
+  "dependencies": {
+    "coreMilestones": [
+      "4.9_KnowledgeVisibility",
+      "4.10_ActionsSimulation",
+      "4.11_Inspector",
+      "4.12_ContextBuilderAI",
+      "4.13_FirstNimroelContentPack"
+    ],
+    "nimroelMilestones": [
+      "tuned_V1_generation_data",
+      "runtime_payloads_and_adapter",
+      "windows_2d_host",
+      "quest_rules_and_states",
+      "acceptance_test_automation"
+    ],
+    "visualAssets": "provisional_2d_placeholders_allowed",
+    "android": "separate_ndk_and_native_host_validation",
+    "ue5Phase414RequiredForNimroel": false
+  },
+  "deferredToImplementation": [
+    "optional_service_probabilities_and_weights",
+    "plot_layout_algorithm",
+    "material_and_repair_costs",
+    "repair_duration_and_calendar_fixture",
+    "runtime_payload_schema",
+    "physical_save_mechanism",
+    "android_support",
+    "content_pack_schema_mapping"
+  ]
+}
