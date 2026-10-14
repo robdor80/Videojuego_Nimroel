@@ -6,6 +6,7 @@
 **Definición de experiencia:** [NIM-01_EXPERIENCIA_CONVERSACIONAL.md](NIM-01_EXPERIENCIA_CONVERSACIONAL.md).
 **Generación espacial:** [NIM-01_GENERACION_ESPACIAL_PROCEDURAL.md](NIM-01_GENERACION_ESPACIAL_PROCEDURAL.md).
 **Auditoría de riesgos Android y voz:** [NIM-01_AUDITORIA_ANDROID_CORERPG_VOZ.md](NIM-01_AUDITORIA_ANDROID_CORERPG_VOZ.md).
+**Contrato de conversación y sherpa:** [NIM-01_CONTRATO_CONVERSACION_Y_VOZ.md](NIM-01_CONTRATO_CONVERSACION_Y_VOZ.md).
 
 ## 1. Propósito
 
@@ -57,7 +58,7 @@ Preguntas descriptivas no mutan el mundo. Las acciones con varios pasos requiere
 3. Estructurar Host e interfaz en un proyecto compilable; no implementar acciones falsas.
 4. Documentar contratos y pruebas del conducto petición -> respuesta, usando fixtures temporales claramente etiquetados, sin inventar APIs de CoreRPG.
 5. Probar diseño adaptativo Windows/Android y evaluar exportación Android de forma independiente.
-6. Definir la integración de los modelos Gemini elegidos y las vías de voz (ASR, TTS), sin exigir una API activa al primer arranque técnico ni declarar que ya funciona.
+6. Definir la integración de los modelos Gemini elegidos y la ruta de voz sherpa-onnx (ASR local como preferencia a probar y TTS con voz por NPC), sin exigir una API activa al primer arranque técnico ni declarar que ya funciona. Entrada del jugador escrita/hablada en su bocadillo, **nunca reproducida con TTS**; intervención del NPC en bocadillo y salida por voz. Narración general como texto por defecto.
 7. Registrar evidencia real, incidencias y decisiones; mantener PR Draft hasta revisión y validación.
 
 ## 7. Dependencias
