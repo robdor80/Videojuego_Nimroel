@@ -3,6 +3,8 @@ extends SceneTree
 ## Comprobaciones honestas: el simulador no debe cambiar WorldState.
 
 const Gateway = preload("res://scripts/demo_gateway.gd")
+const CorePort = preload("res://scripts/core_port.gd")
+const VoicePort = preload("res://scripts/voice_port.gd")
 
 func _initialize() -> void:
 	call_deferred("_run_checks")
@@ -16,6 +18,17 @@ func _run_checks() -> void:
 	_assert_proposal("¿Dónde está la herrería?", "query_information", errors)
 	_assert_proposal("Guardo la partida", "propose_save", errors)
 	_assert_proposal("Abro mi inventario", "unclassified", errors)
+
+	var core_status: Dictionary = CorePort.submit({"action": "move"})
+	if core_status.get("status", "") != "unavailable" or core_status.get("world_mutated", true) != false:
+		errors.append("El puerto Core no conectado debe devolver indisponible sin mutar el mundo")
+	var voice_status: Dictionary = VoicePort.capabilities()
+	if voice_status.get("asr_available", true) or voice_status.get("tts_available", true):
+		errors.append("Se anuncian capacidades sherpa-onnx no implementadas")
+	if VoicePort.transcribe(PackedByteArray()).get("status", "") != "unavailable":
+		errors.append("ASR no instalado no debe simular transcripción")
+	if VoicePort.synthesize("npc_demo", "Hola").get("status", "") != "unavailable":
+		errors.append("TTS no instalado no debe simular sonido")
 
 	var load_error: Error = change_scene_to_file("res://main.tscn")
 	if load_error != OK:
@@ -39,6 +52,19 @@ func _run_checks() -> void:
 				errors.append("Falta la imagen de fondo")
 			if scene.get_node_or_null("PanelConversacion") == null:
 				errors.append("Falta el panel de conversación")
+			var transcript: Node = scene.get_node_or_null("PanelConversacion/Contenido/Historial/Bocadillos")
+			if transcript == null:
+				errors.append("No existen bocadillos diferenciados")
+			else:
+				var initial_bubbles: int = transcript.get_child_count()
+				scene.call("_on_send", "¿Qué veo desde aquí?")
+				if transcript.get_child_count() != initial_bubbles + 2:
+					errors.append("No se añadieron un bocadillo del jugador y uno del simulador")
+				else:
+					var row: Node = transcript.get_child(transcript.get_child_count() - 2)
+					if row.name != "MensajeJugador":
+						errors.append("El turno del jugador no tiene un bocadillo propio")
+
 
 	if errors.is_empty():
 		print("NIM-01 SMOKE PASS: Godot importa escena y router; WorldState no mutado.")
