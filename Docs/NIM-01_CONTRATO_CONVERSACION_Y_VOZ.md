@@ -1,6 +1,6 @@
 # NIM-01 — contrato de conversación, entrada multimodal y voces de NPC
 
-**Estado:** decisión de producto y diseño técnico; **NO IMPLEMENTADO / NO PROBADO**.
+**Estado:** Godot + sherpa-onnx elegidos y aprobados por el autor; contrato de interacción definido; **NO IMPLEMENTADO / NO PROBADO**.
 **Fecha:** 2026-10-14
 **Aprobación de dirección:** el jugador puede escribir o hablar; su participación aparece en bocadillo de jugador y **no se sintetiza**; las respuestas verbales de NPC aparecen en bocadillo de NPC y **sí se sintetizan** con la voz personalizada asignada. La ilustración sigue siendo ambientación 2D, no una interfaz point-and-click.
 
@@ -48,7 +48,7 @@ No toda petición implica una acción. Preguntar «¿qué veo?» solo consulta p
 **Voz:** capturar con Godot al pulsar/hablar, con permiso de micrófono en Android; transcribir; mostrar el texto que el sistema ha reconocido en el bocadillo del jugador; permitir corregir antes de enviar o confirmar acciones sensibles. **No reproducir la voz del jugador.**
 
 Rutas técnicamente posibles:
-- **Preferente a evaluar:** sherpa-onnx **ASR local** para convertir audio a texto en Windows y Android; el mismo proyecto sherpa-onnx dispone de ASR y TTS, pero necesitan modelos distintos. Unificación de bibliotecas NO significa que el modelo de TTS transcriba ni viceversa.
+- **Tecnología aprobada para evaluar en dispositivo:** sherpa-onnx **ASR local** para convertir audio a texto en Windows y Android; el mismo proyecto sherpa-onnx dispone de ASR y TTS, pero necesitan modelos distintos. Unificación de bibliotecas NO significa que el modelo de TTS transcriba ni viceversa.
 - **Alternativa/fallback:** enviar audio a Gemini multimodal y pedir transcripción o una estructura de intención con evidencia; controlar cuota, red, tipos de audio, ambigüedad y seguridad. Una ruta puede resultar más rápida/precisa en la Tab S9+; elegir tras medidas reales.
 - Ambas rutas deben entregar un **formato textual/intermedio equivalente** al flujo escrito. Nunca enviar audio o transcripción directamente a mutación CoreRPG.
 
@@ -116,7 +116,7 @@ No prometer streaming palabra a palabra, sincronización labial ni latencia conc
 
 - CoreRPG 4.9 (percepción y conocimiento), 4.10 (acciones/simulación), 4.12 (contextos autorizados) y Content Pack Nimroel 4.13 son relevantes para una conversación real; **no pasar un simulador de UI por diálogo jugable**.
 - Gemini 3.5 Flash-Lite habitual y Gemini 3.8 Flash excepcional: elección del autor; integración no acreditada.
-- **sherpa-onnx:** candidato de biblioteca local de entrada ASR y salida TTS; evaluar modelos de idiomas, licencias, rendimiento y binding Godot/Android. Selección de implementación concreta pendiente de pruebas.
+- **sherpa-onnx:** motor local aprobado de entrada ASR y salida TTS. Evaluar y seleccionar modelos concretos en castellano, licencias, rendimiento y binding Godot/Android. La aprobación de tecnología no equivale a validar voces concretas o compatibilidad en dispositivo.
 - El requisito gratuito de servicio Gemini dentro del EEE es una restricción de proyecto reportada por el autor; validar condiciones de API efectivas antes de publicar/distribuir.
 
 ## Referencias oficiales
