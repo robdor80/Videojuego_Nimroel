@@ -23,7 +23,7 @@ var _portrait: TextureRect
 var _hint: Label
 var _service_state: Label
 var _mode_button: Button
-var _gemini_diagnostic: Node
+var _gemini_diagnostic
 var _integration_mode: bool = false
 var _turn_sequence: int = 0
 
