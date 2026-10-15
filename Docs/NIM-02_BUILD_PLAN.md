@@ -28,4 +28,4 @@ Transformar el laboratorio Godot 4.7.2 Standard en un Host de conversación con 
 Enlace nativo C++ CoreRPG real, Gemini autenticado y funcionando, sherpa-onnx enlazado y modelos reales, mundo procedural cargado, Content Pack V001, NPC vivos, motor de acciones, guardado real y pruebas prolongadas físicas.
 
 ## Cierre
-El alcance de software se considera terminado cuando el smoke de NIM-01 y NIM-02 y ambos exports pasan la CI. La verificación física MSI / Tab S9+ es otra puerta, pendiente hasta que el usuario la ejecute. PR Draft en revisión sin merge.
+**Criterios cumplidos el 15/10/2026:** regresiones NIM-01/NIM-02 y exportaciones Windows/ARM64 en CI; ejecución y pruebas manuales de interfaz en MSI Windows 11 y Galaxy Tab S9+; seguimiento en `NIM-02_EVIDENCIA_WINDOWS_2026-10-15.md` y `NIM-02_EVIDENCIA_ANDROID_2026-10-15.md`. La comprobación física se limita a interfaz y estados de error, no acredita motores externos. Autor del proyecto autoriza el merge de PR #18 sujeto a auditoría final. NIM-03 no iniciada.
