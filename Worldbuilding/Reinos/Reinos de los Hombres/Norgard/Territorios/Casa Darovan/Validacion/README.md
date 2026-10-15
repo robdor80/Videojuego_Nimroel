@@ -1,7 +1,9 @@
 # Validación — Casa Darovan
 
 - D01: `D01_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md` y `validate_d01.py` (PR #15 fusionada).
-- D02: `D02_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md` y `validate_d02.py` (PR D02 pendiente de merge).
-- Comprobaciones estáticas remotas JavaScript/JSON D02: **16 positivas y 8 negativas ejecutadas**. El validador Python se publica para ejecución reproducible en un checkout completo: **no se ha ejecutado en esta sesión**.
+- D02: `D02_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md` y `validate_d02.py` (PR #16 fusionada en main).
+- Comprobaciones estáticas remotas JavaScript/JSON D02: **16 positivas y 8 negativas ejecutadas** durante construcción de D02. **Verificación posterior:** el validador Python original D02 se ejecutó sobre réplica semántica de los campos relevantes recuperados de GitHub y superó también 8 pruebas negativas. D01 Python original se ejecutó igualmente con resultado OK. La **repetición en checkout íntegro del MSI se completó con éxito (D01, D02 y D03)**; evidencia en `../Auditorias/D03_VALIDACION_MSI_CHECKOUT_2026-10-15.md` y acta histórica de réplica `../Auditorias/D03_VALIDACION_PYTHON_EN_ENTORNO_AISLADO_2026-10-15.md`.
 - Ni la documentación ni estas comprobaciones acreditan simulación de terreno, CoreRPG/Godot, persistencia, navegación o CI de juego.
 - Acta: `../Auditorias/D02_CIERRE_Y_VALIDACION_2026-10-15.md`; no elevar propuestas a canon.
+
+- D03: `D03_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md` (30 invariantes) y `validate_d03.py` (10 casos negativos). JavaScript remoto realizado sobre perfil y referencias. **Python D03 EJECUTADO — OK** sobre réplica semántica contrastada con GitHub: script idéntico al blob GitHub, JSON D03 canónico idéntico y 10 pruebas negativas superadas. No fue un checkout íntegro: D01/D02/Core se representaron por los campos leídos y las 13 rutas se verificaron remotamente. **D01/D02 Python también EJECUTADOS — OK** en réplicas semánticas contrastadas; **SUPERADO — MSI / checkout íntegro:** ejecución Python D01/D02/D03 OK (8 negativos D02 y 10 negativos D03); **PENDIENTE — GODOT** runtime y **MSI/GIS** pruebas geográficas. Evidencia en `../Auditorias/D03_CIERRE_Y_VALIDACION_2026-10-15.md`.

@@ -24,15 +24,16 @@
 - Aplicar contrato Core `nimroel_physical_geography_drainage_contract_v0.1.json`.
 - **Salida D01 (15-10-2026):** marco físico y 12 unidades cualitativas con fuentes, perfil JSON no-runtime, interfaz cartográfica, matriz de 18 controles, acta y traspaso D02. **Cierre documental, NO canon nuevo ni implementación runtime.** PR #15 fusionada en main (9f3f723b0e7b2b78567c6397bba7099bfe658b0a).
 
-## D02 — Hidrología y drenaje [CERRADA DOCUMENTALMENTE; PR SIN FUSIONAR]
+## D02 — Hidrología y drenaje [FUSIONADA EN MAIN; PR #16]
 - Grafos Belara/Lhera/Veldora/Thalen, cuencas, afluentes plausibles, manantiales y arroyos con límites estrictos.
 - Zonas de inundación, estacionalidad, vados, navegabilidad y recursos hídricos sin caudales inventados.
 - **Salida D02 (15-10-2026):** 4 ríos, 3 sistemas topológicos, 13 nodos, 10 aristas; cuencas cualitativas, perfil JSON no-runtime, reglas, validador y acta. Sin afluentes, caudales, medidas ni geometría inventados; PR propia para revisión y sin merge.
 
-## D03 — Climas y ecosistemas [PENDIENTE]
+## D03 — Climas y ecosistemas [CERRADA DOCUMENTALMENTE; PR A REVISIÓN SIN FUSIONAR]
 - Clima del litoral Veldora, Valkram, transición fría norte, península Taramin y Syvaris; microclimas y suelos.
 - Evitar falsa homogeneidad: costa atlántica, altura, sotavento, valle, corredor seco y protegido.
-- **Salida:** documento de relaciones causales y perfil ecológico regional sin grados/lluvias no documentados.
+- **Salida D03 (15-10-2026):** 3 documentos climáticos/ecológicos, 12 unidades D01 trazadas, JSON de planificación NO RUNTIME, 30 invariantes, script de regresión, acta y traspaso D04; sin grados, lluvias, cumbres, especies o ríos nuevos.
+- **Estado de pruebas:** validación JavaScript remota sobre perfil, fuentes e interfaces D01/D02; script Python para checkout completo PENDIENTE — MSI, Godot PENDIENTE — GODOT. Ningún canon nuevo ni runtime.
 
 ## D04 — Recursos y economía territorial [PENDIENTE]
 - Oro/plata/minas, fundición y ensayo, carbón importado de Azurios, madera de Pilares, agricultura, pesca/puertos y transportes.
@@ -97,4 +98,4 @@
 - **PR:** revisión por autor, **nunca fusionar `main` sin permiso expreso**.
 
 ## Continuidad de conversaciones
-Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **fusionada por PR #15**. Darovan 3: D02 **cerrada documentalmente**, PR a revisión y sin merge. Darovan 4: abrir D03 **solo tras merge autorizado D02**, leyendo `00_Control_del_proyecto/TRASPASO_D03.md`. Una fase por conversación. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
+Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **fusionada por PR #15**. Darovan 3: D02 **fusionada en main por PR #16**. Darovan 4: D03 **documentalmente cerrada, PR sin merge**, habiendo leído `00_Control_del_proyecto/TRASPASO_D03.md`. Darovan 5: D04 condicionada a merge D03 y TRASPASO_D04.md. Una fase por conversación. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
