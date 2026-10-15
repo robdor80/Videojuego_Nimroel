@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d03_climate_ecosystems",
+  "version": "0.1",
+  "date": "2026-10-15",
+  "status": "planning_reference_not_runtime",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "sourceHierarchy": [
+    "AUTHORED",
+    "DERIVED",
+    "GENERATED",
+    "DYNAMIC",
+    "UNKNOWN"
+  ],
+  "canonicalAuthority": "norgard_originals_author_decisions_only",
+  "sourceRefs": {
+    "climate": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Clima/clima_general.md",
+    "geography": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/geografia_general.md",
+    "regions": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+    "mountains": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+    "forests": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+    "waters": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "coasts": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+    "art": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Datos operativos/norgard_regions_v0.1.json",
+    "core": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+    "coreText": "Worldbuilding/Sistemas/Nimroel Core/Geografia fisica/geografia_fisica_drenaje_hidrografia_v0.1.md",
+    "defaults": "Worldbuilding/Sistemas/Norgard Defaults/README.md",
+    "d01": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "d02": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d02_hydro_network_v0.1.json"
+  },
+  "referenceD01Relief": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+  "referenceD02Hydro": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d02_hydro_network_v0.1.json",
+  "referenceCoreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+  "containsCoordinates": false,
+  "containsClimateMeasurements": false,
+  "containsMeasuredSoilProperties": false,
+  "containsWeatherEvents": false,
+  "containsNewSpecies": false,
+  "containsNewRiverInstances": false,
+  "containsRuntimeAssets": false,
+  "zones": [
+    {
+      "id": "d01_valkram_oeste",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "western_mountain_barrier_no_measured_altitude"
+      ],
+      "ecosystemAuthored": [],
+      "sourceRefIds": [
+        "mountains",
+        "waters",
+        "regions"
+      ],
+      "derivedCandidates": [
+        "lapse_rate_orographic_effect_unlocated"
+      ],
+      "administrativeOwner": null,
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_elyra_paso_peninsular",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "southern_western_mountain_no_wind_assignment"
+      ],
+      "ecosystemAuthored": [],
+      "sourceRefIds": [
+        "mountains",
+        "regions"
+      ],
+      "derivedCandidates": [
+        "slope_exposure_not_mapped"
+      ],
+      "administrativeOwner": null,
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_norte_transicion",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "north_polar_cold_continental_gradual_transition"
+      ],
+      "ecosystemAuthored": [
+        "boreal_conifers_and_northward_tundra_transition"
+      ],
+      "sourceRefIds": [
+        "climate",
+        "regions",
+        "forests"
+      ],
+      "derivedCandidates": [
+        "snow_season_undetermined"
+      ],
+      "administrativeOwner": null,
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_aguja_litoral",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "northern_transition_near_west_coast"
+      ],
+      "ecosystemAuthored": [
+        "ancient_conifer_forest"
+      ],
+      "sourceRefIds": [
+        "climate",
+        "forests",
+        "coasts",
+        "waters"
+      ],
+      "derivedCandidates": [
+        "edge_vs_interior_humidity_unmeasured"
+      ],
+      "administrativeOwner": null,
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_belara_treihord",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "western_oceanic_regional_context"
+      ],
+      "ecosystemAuthored": [],
+      "sourceRefIds": [
+        "climate",
+        "waters"
+      ],
+      "derivedCandidates": [
+        "industrial_water_seasonality_unknown"
+      ],
+      "administrativeOwner": "casa_darovan_city_only",
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_veldora_litoral",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "western_mild_oceanic"
+      ],
+      "ecosystemAuthored": [],
+      "sourceRefIds": [
+        "climate",
+        "coasts"
+      ],
+      "derivedCandidates": [
+        "maritime_moderation_local_variation_unmeasured"
+      ],
+      "administrativeOwner": "casa_darovan_city_only",
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_linde_caminos",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "western_mild_oceanic_regional_context"
+      ],
+      "ecosystemAuthored": [
+        "small_conifer_woodland"
+      ],
+      "sourceRefIds": [
+        "climate",
+        "forests"
+      ],
+      "derivedCandidates": [
+        "forest_margin_exposure_unmapped"
+      ],
+      "administrativeOwner": null,
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_pilares_sur",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "western_mild_oceanic_regional_context"
+      ],
+      "ecosystemAuthored": [
+        "single_conifer_forest_with_open_hills_and_clearings"
+      ],
+      "sourceRefIds": [
+        "climate",
+        "forests",
+        "mountains"
+      ],
+      "derivedCandidates": [
+        "vegetation_cover_vs_runoff_unverified"
+      ],
+      "administrativeOwner": null,
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_taramin_norte_centro",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "semiarid_transition_north_and_central_peninsula"
+      ],
+      "ecosystemAuthored": [
+        "dry_stony_ground_scrub_hard_grasses_breñas_seasonal_gullies_as_category_only"
+      ],
+      "sourceRefIds": [
+        "climate",
+        "regions",
+        "geography"
+      ],
+      "derivedCandidates": [
+        "soil_erosion_on_slope_unquantified"
+      ],
+      "administrativeOwner": null,
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_taramin_bosque_sur",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "moisture_increases_gradually_toward_south"
+      ],
+      "ecosystemAuthored": [
+        "single_longitudinal_forest_north_conifer_mid_mixed_far_south_humid_subtropical"
+      ],
+      "sourceRefIds": [
+        "climate",
+        "forests",
+        "regions"
+      ],
+      "derivedCandidates": [
+        "vegetation_recharge_relation_unquantified"
+      ],
+      "administrativeOwner": null,
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_syvaris",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "warm_mild_semitropical_or_slightly_tropical_partly_dry"
+      ],
+      "ecosystemAuthored": [
+        "dry_hills_scrub_seasonal_meadows_scattered_woodland_green_sheltered_coves_south_visual_more_humid"
+      ],
+      "sourceRefIds": [
+        "climate",
+        "geography",
+        "regions",
+        "forests",
+        "art"
+      ],
+      "derivedCandidates": [
+        "sheltered_cove_recharge_unknown"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    },
+    {
+      "id": "d01_arven_contexto",
+      "classification": "qualitative_study_unit_not_polygon",
+      "climateAuthored": [
+        "UNKNOWN"
+      ],
+      "ecosystemAuthored": [
+        "arven_green_mantle_continuous_conifer_forest"
+      ],
+      "sourceRefIds": [
+        "forests",
+        "coasts"
+      ],
+      "derivedCandidates": [
+        "island_local_climate_not_transferred_from_syvaris"
+      ],
+      "administrativeOwner": null,
+      "temperatureC": null,
+      "precipitationMm": null,
+      "elevationM": null,
+      "seasonDates": null,
+      "dominantWind": null,
+      "soilClass": null,
+      "groundwaterAvailability": null,
+      "watercoursePermanence": null
+    }
+  ],
+  "regionalAnchors": {
+    "westernCoast": "mild_oceanic",
+    "northernTransition": "polar_to_cold_to_continental_gradual",
+    "taraminNorthCentral": "semiarid_not_desert",
+    "taraminSouth": "increasing_moisture_and_humid_subtropical_forest_at_far_south",
+    "syvaris": "warm_partly_dry_with_green_sheltered_areas_not_desert_or_uniform_jungle",
+    "arvenOwner": null,
+    "syvarisOwner": "casa_darovan",
+    "manualCities": [
+      "treihord",
+      "veldora",
+      "taramin",
+      "syvaris"
+    ],
+    "excludedCity": "karsath",
+    "permanentSettlementsInsideAgujasAllowed": false,
+    "pilaresOneForest": true,
+    "taraminOneForest": true,
+    "syvarisForestsDiscontinuous": true
+  },
+  "hydroProtection": {
+    "namedRivers": [
+      "belara",
+      "lhera",
+      "veldora",
+      "thalen"
+    ],
+    "belaraMouth": "golfo_de_norgard",
+    "belaraAdjacentCity": "treihord",
+    "belaraCrossesCity": false,
+    "lheraFrom": "belara",
+    "lheraMouth": "golfo_de_veldora",
+    "veldoraIndependentFrom": [
+      "belara",
+      "lhera"
+    ],
+    "veldoraMouth": "golfo_de_veldora",
+    "thalenTerminalArms": 2,
+    "thalenCityBetween": "taramin",
+    "thalenMouth": "golfo_de_norgard",
+    "namedRiverPermanence": "UNKNOWN",
+    "newTributaries": [],
+    "newSprings": [],
+    "newWetlands": [],
+    "newBasins": [],
+    "channelGeometry": null
+  },
+  "prospectiveProcesses": [
+    "orographic_precipitation_if_exposure_verified",
+    "snow_melt_if_thermal_evidence",
+    "infiltration_by_soil_and_cover",
+    "runoff_by_slope_and_soil",
+    "vegetation_can_modify_recharge_not_channel_topology"
+  ],
+  "prospectiveRisks": [
+    "erosion_conditional",
+    "flood_susceptibility_conditional",
+    "seasonal_water_stress_conditional",
+    "snow_and_ice_conditional",
+    "coastal_exposure_conditional"
+  ],
+  "unknown": [
+    "temperature",
+    "rainfall_amount",
+    "rainfall_calendar",
+    "snow_occurrence_by_site",
+    "snowline",
+    "wind_direction",
+    "season_duration",
+    "orographic_barrier_sides",
+    "soil_profiles",
+    "recharge_rates",
+    "aquifers",
+    "river_discharge",
+    "named_river_permanence",
+    "hydrographical_polygons",
+    "map_scale",
+    "exact_microclimate_boundaries",
+    "storm_frequency",
+    "river_veldora_headwater",
+    "thalen_headwater",
+    "belara_split_location",
+    "arven_owner"
+  ],
+  "approvals": {
+    "newCanonApproved": false,
+    "pendingAuthor": [
+      "DAR-P01",
+      "DAR-P04",
+      "DAR-P07",
+      "DAR-P08"
+    ],
+    "d04MayUseAsQualitativeConstraintsOnly": true
+  },
+  "runtimeIntegration": {
+    "status": "not_implemented",
+    "validatedInGame": false,
+    "generatedClimateCells": 0,
+    "generatedSpecies": 0,
+    "persistedClimateState": false
+  }
+}
