@@ -3,6 +3,7 @@ extends Control
 ## No existe conexión con CoreRPG/Gemini en esta maqueta ejecutable.
 
 const GATEWAY = preload("res://scripts/demo_gateway.gd")
+const PIPELINE = preload("res://scripts/interaction_pipeline.gd")
 const ART_SCENE = preload("res://art/aldea_fondo_provisional.svg")
 const ART_PORTRAIT = preload("res://art/retrato_provisional.svg")
 
@@ -19,6 +20,10 @@ var _input: LineEdit
 var _portrait_line: HBoxContainer
 var _portrait: TextureRect
 var _hint: Label
+var _service_state: Label
+var _mode_button: Button
+var _integration_mode: bool = false
+var _turn_sequence: int = 0
 
 func _ready() -> void:
 	_build_interface()
@@ -75,9 +80,10 @@ func _build_interface() -> void:
 
 	var heading := _make_label("TU PARTIDA  /  RELATO", 15, Color(0.953, 0.850, 0.617))
 	_top_info.add_child(heading)
-	var state := _make_label("MODO MAQUETA   ·   MUNDO NO CARGADO   ·   GEMINI Y CORERPG DESCONECTADOS", 11, Color(1.0, 0.72, 0.51))
-	state.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	_top_info.add_child(state)
+	_service_state = _make_label("MODO MAQUETA   ·   MUNDO NO CARGADO   ·   GEMINI Y CORERPG DESCONECTADOS", 11, Color(1.0, 0.72, 0.51))
+	_service_state.name = "EstadoServicios"
+	_service_state.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_top_info.add_child(_service_state)
 
 	_history_scroll = ScrollContainer.new()
 	_history_scroll.name = "Historial"
@@ -136,6 +142,12 @@ func _build_interface() -> void:
 	reset.text = "Reiniciar demo"
 	reset.pressed.connect(_reset_demo)
 	footer.add_child(reset)
+	_mode_button = Button.new()
+	_mode_button.name = "ModoIntegracion"
+	_mode_button.text = "Modo: demo"
+	_mode_button.tooltip_text = "Alterna laboratorio y conexión real (todavía no disponible)"
+	_mode_button.pressed.connect(_toggle_mode)
+	footer.add_child(_mode_button)
 	_hint = _make_label("Solo se ensaya la interfaz", 11, Color(0.73, 0.78, 0.78))
 	_hint.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
@@ -184,15 +196,25 @@ func _send_from_button() -> void:
 	_on_send(_input.text)
 
 func _on_send(raw_text: String) -> void:
-	var message: String = raw_text.strip_edges()
-	if message.is_empty():
+	var mode: String = PIPELINE.MODE_INTEGRATION if _integration_mode else PIPELINE.MODE_DEMO
+	var result: Dictionary = submit_turn_for_test(raw_text, mode)
+	if str(result.get("status", "")) == "rejected":
+		_hint.text = str(result.get("reply", "Entrada no válida"))
 		return
-	var routed: Dictionary = GATEWAY.route(message)
+	_turn_sequence += 1
 	_input.clear()
-	_append_bubble("TÚ", message, true)
-	_append_bubble("SIMULADOR · NO ES UN NPC", str(routed["demo_response"]), false)
-	_portrait_line.visible = bool(routed["portrait_demo"])
+	_append_bubble("TÚ", raw_text.strip_edges(), true)
+	var demo: bool = str(result.get("status", "")) == "demo"
+	_append_bubble("SIMULADOR · NO ES UN NPC" if demo else "SISTEMA · CONEXIÓN NO DISPONIBLE", str(result.get("reply", "")), false)
+	_portrait_line.visible = demo and bool(result.get("portrait_demo", false))
 	_hint.text = "Sin hechos del mundo modificados"
+	call_deferred("_layout_panel_controls")
+
+func _toggle_mode() -> void:
+	_integration_mode = not _integration_mode
+	_mode_button.text = "Modo: integración" if _integration_mode else "Modo: demo"
+	_service_state.text = "MODO INTEGRACIÓN   ·   CORERPG / GEMINI / VOZ NO DISPONIBLES" if _integration_mode else "MODO MAQUETA   ·   MUNDO NO CARGADO   ·   GEMINI Y CORERPG DESCONECTADOS"
+	_hint.text = "Conexiones reales sin verificar" if _integration_mode else "Solo se ensaya la interfaz"
 	call_deferred("_layout_panel_controls")
 
 func _reset_demo() -> void:
@@ -240,8 +262,12 @@ func _scroll_to_latest() -> void:
 		_history_scroll.scroll_vertical = int(_history_scroll.get_v_scroll_bar().max_value)
 
 func submit_intent_for_test(raw_text: String) -> Dictionary:
-	## Puerto de prueba: devuelve estructura de intención SIN efectos secundarios.
+	## Se conserva el contrato de pruebas NIM-01.
 	return GATEWAY.route(raw_text)
+
+func submit_turn_for_test(raw_text: String, mode: String = PIPELINE.MODE_DEMO) -> Dictionary:
+	## Contrato NIM-02: no se realizan mutaciones ni peticiones de red.
+	return PIPELINE.submit_text(raw_text, mode, _turn_sequence + 1)
 
 func _make_label(value: String, font_px: int, tone: Color) -> Label:
 	var output := Label.new()
