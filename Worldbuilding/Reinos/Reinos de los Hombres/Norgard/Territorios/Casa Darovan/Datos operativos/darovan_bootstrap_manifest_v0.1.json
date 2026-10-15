@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_territory_bootstrap",
+  "version": "0.1",
+  "status": "planning_reference_not_runtime",
+  "canonStatus": "non_canonical_working_index",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "canonicalLocalities": [
+    {
+      "id": "treihord",
+      "type": "capital_city",
+      "canonical": true,
+      "designMode": "manual",
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md"
+    },
+    {
+      "id": "veldora",
+      "type": "major_port_city",
+      "canonical": true,
+      "designMode": "manual",
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md"
+    },
+    {
+      "id": "taramin",
+      "type": "fishing_port_city",
+      "canonical": true,
+      "designMode": "manual",
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md"
+    },
+    {
+      "id": "syvaris",
+      "type": "island_city",
+      "canonical": true,
+      "designMode": "manual",
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md"
+    }
+  ],
+  "scopeChecks": [
+    {
+      "name": "Karsath",
+      "includedInDarovan": false,
+      "evidence": "norgard_regions_v0.1.json: central_norgard"
+    },
+    {
+      "name": "Arven",
+      "includedInDarovan": null,
+      "reviewStatus": "administrative_ownership_unverified"
+    },
+    {
+      "name": "red_markup",
+      "isPoliticalBorder": null,
+      "reviewStatus": "area_of_study_only"
+    }
+  ],
+  "referenceOnlyContracts": [
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_vessel_navigation_simulation_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_aquatic_resource_harvest_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_legal_case_sentence_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_defaults_manifest_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_military_authority_house_forces_default_v0.1.json"
+  ],
+  "generatorConfig": {
+    "enabled": false,
+    "settlements": {
+      "canonicalCitiesProtected": true,
+      "ranges": "undecided",
+      "weights": "undecided",
+      "seeds": "not_assigned"
+    }
+  },
+  "pendingAuthorReview": [
+    "narrative_eshneva_vs_canonical_belara",
+    "darovan_family_identity",
+    "arven_administration"
+  ],
+  "runtimeIntegration": {
+    "status": "not_implemented_by_this_manifest",
+    "validatedInGame": false
+  },
+  "evidenceDate": "2026-10-15"
+}
