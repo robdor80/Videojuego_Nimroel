@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b7c6b9"/><stop offset=".65" stop-color="#d8d7be"/><stop offset="1" stop-color="#a6b596"/></linearGradient>
+<linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#70836b"/><stop offset="1" stop-color="#334d3d"/></linearGradient>
+<linearGradient id="path" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a2927e"/><stop offset="1" stop-color="#665a49"/></linearGradient>
+</defs>
+<rect width="1280" height="720" fill="url(#sky)"/>
+<circle cx="910" cy="155" r="78" fill="#efe2af" opacity=".45"/>
+<path d="M0 390 120 280 210 335 340 205 490 340 660 250 830 350 1020 245 1190 335 1280 300V520H0Z" fill="#85978b" opacity=".56"/>
+<path d="M0 455Q170 370 335 418T700 395T1280 418V720H0Z" fill="url(#ground)"/>
+<path d="M480 720Q620 595 555 505Q518 458 610 429L690 412Q640 481 705 516Q785 620 975 720Z" fill="url(#path)"/>
+<g opacity=".84">
+<path d="M50 435 137 364 224 435Z" fill="#4b5149"/><rect x="73" y="429" width="127" height="92" fill="#8c8273"/><rect x="121" y="463" width="32" height="58" fill="#4f453b"/><rect x="167" y="453" width="22" height="25" fill="#d4c5a0"/>
+<path d="M260 423 349 348 451 420Z" fill="#3e4841"/><rect x="280" y="418" width="150" height="106" fill="#918779"/><rect x="326" y="465" width="35" height="59" fill="#55483e"/><rect x="385" y="446" width="28" height="29" fill="#d2b88f"/>
+<path d="M729 427 806 367 877 426Z" fill="#495148"/><rect x="748" y="425" width="117" height="75" fill="#98907f"/><rect x="792" y="460" width="26" height="40" fill="#55483d"/>
+<path d="M934 419 1020 348 1117 420Z" fill="#435047"/><rect x="959" y="414" width="133" height="89" fill="#8f897a"/><rect x="1008" y="461" width="28" height="42" fill="#51483c"/>
+</g>
+<g fill="#2d483a" opacity=".83">
+<path d="M8 538 48 285 86 538Z"/><path d="M26 490 57 239 105 501Z"/><path d="M111 521 154 301 187 522Z"/>
+<path d="M1120 541 1172 259 1219 540Z"/><path d="M1170 577 1214 204 1280 579Z"/><path d="M1230 530 1270 290 1299 530Z"/>
+</g>
+<g stroke="#c6bb92" stroke-width="6" opacity=".35">
+<path d="M0 596Q190 566 430 610"/><path d="M790 560Q1008 524 1280 572"/>
+</g>
+<rect x="0" y="0" width="1280" height="720" fill="#1d352b" opacity=".11"/>
+</svg>
