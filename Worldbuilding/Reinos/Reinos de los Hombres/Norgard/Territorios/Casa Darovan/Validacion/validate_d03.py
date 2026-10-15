@@ -56,8 +56,8 @@ def validate(d: dict, repo: Path) -> None:
     core = json.loads((repo / refs["core"]).read_text(encoding="utf-8"))
     # Compatibility is about identifiers and invariant values; not runtime code.
     check(core["status"] == "active_core_contract", "Core inactive")
-    check(len(relief["studyUnits"]) == 12 and
-          {u["id"] for u in relief["studyUnits"]} == ZONE_IDS, "D01 incompatibility")
+    check(len(relief["physicalUnits"]) == 12 and
+          {u["id"] for u in relief["physicalUnits"]} == ZONE_IDS, "D01 incompatibility")
     check([r["id"] for r in hydro["rivers"]] == ["belara", "lhera", "veldora", "thalen"],
           "D02 river set")
 
