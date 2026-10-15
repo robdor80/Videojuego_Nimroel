@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d01_qualitative_relief_profile",
+  "version": "0.1",
+  "phase": "D01",
+  "status": "planning_reference_not_runtime",
+  "canonStatus": "non_canonical_geographic_work_index",
+  "preparedAt": "2026-10-15",
+  "scope": "western_norgard_darovan_and_unassigned_context",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "provenanceClasses": [
+    "AUTHORED",
+    "DERIVED",
+    "GENERATED",
+    "DYNAMIC",
+    "UNKNOWN"
+  ],
+  "geometryStatus": "not_georeferenced",
+  "containsBorders": false,
+  "containsCoordinates": false,
+  "containsElevations": false,
+  "containsRuntimeAssets": false,
+  "cityAnchors": [
+    {
+      "id": "treihord",
+      "adminOwner": "casa_darovan",
+      "kind": "manually_authored_city",
+      "site": "inland_adjacent_to_belara_not_crossed_by_it",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md"
+      ]
+    },
+    {
+      "id": "veldora",
+      "adminOwner": "casa_darovan",
+      "kind": "manually_authored_city",
+      "site": "gulf_of_veldora_commercial_port",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md",
+        "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Datos operativos/norgard_settlements_v0.2.json"
+      ]
+    },
+    {
+      "id": "taramin",
+      "adminOwner": "casa_darovan",
+      "kind": "manually_authored_city",
+      "site": "between_two_terminal_thalen_arms",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md"
+      ]
+    },
+    {
+      "id": "syvaris",
+      "adminOwner": "casa_darovan",
+      "kind": "manually_authored_city",
+      "site": "syvaris_island_main_bay",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md"
+      ]
+    }
+  ],
+  "physicalUnits": [
+    {
+      "id": "d01_valkram_oeste",
+      "label": "Montes Valkram, vertiente occidental",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md"
+      ],
+      "constraints": [
+        "north_south_barrier",
+        "gold_silver",
+        "no_political_border_assumption"
+      ]
+    },
+    {
+      "id": "d01_elyra_paso_peninsular",
+      "label": "Elyra y prolongación peninsular",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md"
+      ],
+      "constraints": [
+        "no_unmapped_mountain_passes"
+      ]
+    },
+    {
+      "id": "d01_norte_transicion",
+      "label": "Transición fría septentrional occidental",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Clima/clima_general.md"
+      ],
+      "constraints": [
+        "supraterritorial",
+        "no_fixed_south_boundary"
+      ]
+    },
+    {
+      "id": "d01_aguja_litoral",
+      "label": "Bosque de las Agujas y costa de Agonía",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md"
+      ],
+      "constraints": [
+        "no_permanent_settlements_inside_forest"
+      ]
+    },
+    {
+      "id": "d01_belara_treihord",
+      "label": "Ámbito Belara/Treihord",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md"
+      ],
+      "constraints": [
+        "belara_adjacent_not_crossing_city",
+        "industrial_shallow_draft_only"
+      ]
+    },
+    {
+      "id": "d01_veldora_litoral",
+      "label": "Interfaz Veldora y su golfo",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+        "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Datos operativos/norgard_settlements_v0.2.json"
+      ],
+      "constraints": [
+        "two_independent_named_mouths",
+        "do_not_assign_name_to_river_behind_city_without_source"
+      ]
+    },
+    {
+      "id": "d01_linde_caminos",
+      "label": "Bosque de la Linde y camino Veldora–Treihord",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md"
+      ],
+      "constraints": [
+        "road_adjacent_to_woodland_not_necessarily_through"
+      ]
+    },
+    {
+      "id": "d01_pilares_sur",
+      "label": "Bosque de los Pilares y pie meridional de Valkram",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md"
+      ],
+      "constraints": [
+        "single_forest_system_with_open_clearings"
+      ]
+    },
+    {
+      "id": "d01_taramin_norte_centro",
+      "label": "Taramin peninsular semiárida",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/geografia_general.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md"
+      ],
+      "constraints": [
+        "not_uniform_desert",
+        "no_exact_dry_zone_boundary"
+      ]
+    },
+    {
+      "id": "d01_taramin_bosque_sur",
+      "label": "Bosque de Taramin y transición hacia el sur",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md"
+      ],
+      "constraints": [
+        "single_longitudinal_forest",
+        "vegetation_gradient_not_numeric"
+      ]
+    },
+    {
+      "id": "d01_syvaris",
+      "label": "Isla de Syvaris",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": "casa_darovan",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/geografia_general.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+        "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Datos operativos/norgard_regions_v0.1.json"
+      ],
+      "constraints": [
+        "warm_partly_dry",
+        "main_bay_and_unnamed_coves",
+        "not_uniform_desert_or_jungle"
+      ]
+    },
+    {
+      "id": "d01_arven_contexto",
+      "label": "Isla de Arven, contexto NO adjudicado",
+      "classification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md"
+      ],
+      "constraints": [
+        "administrative_ownership_unknown",
+        "do_not_assign_to_darovan"
+      ]
+    }
+  ],
+  "lockedHydroAnchors": {
+    "belara": {
+      "rises": "west_flank_northern_valkram",
+      "flowsPast": "treihord",
+      "crossesCity": false,
+      "mouth": "golfo_de_norgard",
+      "portNearTreihord": "industrial_shallow_draft",
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+    },
+    "lhera": {
+      "branchesFrom": "belara",
+      "mouth": "golfo_de_veldora",
+      "runsBy": "bosque_de_las_agujas",
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+    },
+    "veldora": {
+      "independentOf": [
+        "belara",
+        "lhera"
+      ],
+      "mouth": "golfo_de_veldora",
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+    },
+    "thalen": {
+      "terminalArms": 2,
+      "cityBetweenArms": "taramin",
+      "mouth": "golfo_de_norgard",
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+    }
+  },
+  "administration": {
+    "darovanCities": [
+      "treihord",
+      "veldora",
+      "taramin",
+      "syvaris"
+    ],
+    "syvarisIslandOwner": "casa_darovan",
+    "excludedCity": "karsath",
+    "arvenIslandOwner": null,
+    "redMapMarkupIsLegalBorder": false
+  },
+  "referenceCoreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+  "genericMicroreliefTypesFromCore": [
+    "divide_ridge",
+    "convex_upland",
+    "slope",
+    "hollow_swale",
+    "valley_floor",
+    "fluvial_terrace",
+    "floodplain",
+    "depression",
+    "piedmont_fan",
+    "gully_gorge",
+    "pass_saddle",
+    "coastal_lowland"
+  ],
+  "dependencyOrder": [
+    "authored_large_scale_anchors",
+    "macro_elevation",
+    "microrelief",
+    "slope_and_flow_direction",
+    "drainage_divides_and_catchments",
+    "flow_accumulation",
+    "spring_candidates",
+    "channel_initiation",
+    "tributary_connectivity",
+    "human_overlay",
+    "materialization_and_persistence"
+  ],
+  "pending": [
+    "arven_administrative_ownership",
+    "political_borders",
+    "map_scale_and_coordinates",
+    "measured_elevations_and_slopes",
+    "minor_passes_and_coastal_geometry",
+    "exact_veldora_river_behind_city",
+    "d02_catchment_networks",
+    "d03_microclimate"
+  ],
+  "runtimeIntegration": {
+    "status": "not_implemented",
+    "validatedInGame": false,
+    "generatedEntities": 0
+  }
+}
