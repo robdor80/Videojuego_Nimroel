@@ -52,8 +52,8 @@ La prueba real de CoreRPG mediante NDK + GDExtension es una tarea **diferente** 
 | Interfaz Godot carga y scripts pasan smoke en Linux CI | **VERIFICADO** |
 | Windows x64 exporta ejecutable de demo | **VERIFICADO** |
 | APK Android ARM64 exportable | **VERIFICADO** |
-| Windows MSI ejecuta y UI responde | **PENDIENTE prueba en MSI** |
-| Galaxy Tab S9+ instala APK y UI táctil funciona | **PENDIENTE prueba en tablet** |
+| Windows MSI ejecuta y UI responde | **VERIFICADO visualmente por 4 capturas (15/10/2026)** |
+| Galaxy Tab S9+ instala APK y permite enviar texto | **VERIFICADO visualmente (14/10/2026), tras corregir layout** |
 | Gemini responde libremente | **NO INTEGRADO** (posterior) |
 | CoreRPG enlazado con GDExtension y mundo real | **NO INTEGRADO** (posterior) |
 | sherpa-onnx ASR/TTS local | **NO INTEGRADO** (posterior) |
@@ -63,8 +63,8 @@ La prueba real de CoreRPG mediante NDK + GDExtension es una tarea **diferente** 
 
 ## Criterios de revisión de la PR
 
-- [ ] Último commit con CI verde y ambos artefactos publicados.
-- [ ] Verificación manual del MSI y de la S9+ (o aplazamiento formal si solo se aprueba la cimentación técnica).
+- [x] Compilación de Godot con CI verde y ambos artefactos publicados (verificada; nueva CI de documentación pendiente al editar la PR).
+- [x] Prueba básica manual del MSI y de la S9+ mediante ejecución real y capturas (no incluye todas las pruebas opcionales del protocolo).
 - [ ] PR #13 inspeccionada: no modificar lore/worldbuilding ni CoreRPG, y commits conforme a convención.
 - [ ] Verificar continuidad de contratos de Core, voz, intención y visualización.
 - [ ] Guardar resultado de pruebas e incidencias antes de decidir el merge.
@@ -97,4 +97,19 @@ No se ha alterado el canon de \`Worldbuilding\`.
 - **Verificado por captura:** botón «Reiniciar demo» visible, pero su funcionamiento táctil no ha sido probado expresamente.
 - **No evaluado:** uso prolongado, rotación/pantalla completa, retorno del teclado, reinicio, audio, instalación en MSI Windows ni consumo/estabilidad bajo carga.
 
-**Resultado:** smoke de pantalla e interacción textual **APROBADO visualmente para la Galaxy Tab S9+**; el problema de controles ocultos quedó corregido. Se mantiene pendiente la prueba Windows MSI y las integraciones funcionales posteriores. No confundir este resultado con una partida Nimroel conectada a CoreRPG, Gemini o sherpa.
+**Resultado:** smoke de pantalla e interacción textual **APROBADO visualmente para la Galaxy Tab S9+**; el problema de controles ocultos quedó corregido. Las integraciones funcionales posteriores permanecen pendientes; Windows MSI se comprobó el 15/10/2026. No confundir este resultado con una partida Nimroel conectada a CoreRPG, Gemini o sherpa.
+
+
+## Informe de prueba real — MSI Windows 11 (15/10/2026)
+
+**Origen de evidencia:** cuatro capturas enviadas por el usuario del ejecutable NIM-01 en su portátil MSI Windows 11. Corresponden a ejecución real de la maqueta en Windows, no a simulación de CI.
+
+- **Comprobado:** aplicación arranca y presenta fondo, cabecera y panel de conversación correctamente.
+- **Comprobado:** campo para escribir y botón «Enviar» visibles; el usuario escribió y envió «¿Qué veo desde aquí?».
+- **Comprobado:** la respuesta del simulador para la consulta de percepción aparece en su bocadillo, sin afirmar que haya mundo real cargado.
+- **Comprobado:** orden «Avanzo por la aldea» y respuesta de prueba visible; el simulador indica expresamente que no ha desplazado a nadie ni ha modificado el mundo.
+- **Comprobado:** conversación más larga con scroll vertical, bocadillos separados y retrato provisional al entrar en intención conversacional. El retrato aclara que no existe NPC real ni identidad generada.
+- **No verificado todavía:** botón «Reiniciar demo», redimensionado en distintas resoluciones/ventanas, comportamiento prolongado, rendimiento, consumo de RAM/CPU/GPU, lectura por pantalla o accesibilidad.
+- **No integrado:** CoreRPG, Gemini, sherpa-onnx (ASR/TTS), guardado de mundos ni generación espacial/NPC.
+
+**Resultado:** prueba básica de arranque e interacción **APROBADA en MSI Windows 11**; se suma al smoke básico **APROBADO en Galaxy Tab S9+** (14/10/2026). La cimentación del Host 2D se considera comprobada en sus dos plataformas objetivo. La PR permanece Draft hasta revisión y autorización de fusión; los componentes jugables posteriores quedan explícitamente fuera del cierre NIM-01.
