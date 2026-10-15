@@ -1,5 +1,5 @@
 # Territorio de Casa Darovan — índice de desarrollo
-**Estado:** **D00 CERRADA DOCUMENTALMENTE** (PR #14 pendiente de aprobación/fusión). D01 no iniciada. La documentación de trabajo **NO eleva a canon**.
+**Estado:** **D00 integrada en main** (PR #14, 15-10-2026). **D01 CERRADA DOCUMENTALMENTE; PR #15 abierta, SIN FUSIONAR**. La documentación D01 es NO CANÓNICA y no activa el motor. La documentación de trabajo **NO eleva a canon**.
 **Sede administrativa:** Treihord. **Ámbito:** occidente de Norgard, incluida la isla de Syvaris.
 
 ## Fuentes de autoridad (no duplicarlas)
@@ -26,8 +26,8 @@ La Casa **no sustituye** contratos activos de rango superior. Un override requie
 - **Subámbitos de diseño, sin atribuir nuevos límites administrativos:** litoral Veldora/Arven, cuenca Belara, Valkram/Elyra, península Taramin, isla Syvaris, norte frío.
 - **Registro de incertidumbres:** toda interpretación cartográfica o pendiente de autor se marca. Ningún documento de esta etapa crea topónimos, NPC importantes, cifras de población o fronteras nuevos.
 
-## Reanudación en Darovan 2+
-Leer por orden este README, la auditoría, la hoja de ruta y el manifiesto; verificar el HEAD de la rama/PR contra `main`. Continuar tareas por fases, sin fusionar sin autorización.
+## Reanudación y fase siguiente
+Para abrir D02, leer **00_Control_del_proyecto/TRASPASO_D02.md** y verificar que PR #15 esté fusionada en main. Consultar las fuentes originales y el manifiesto, no asumir que la PR equivale a ejecución runtime. Una fase por conversación y rama; prohibido fusionar sin autorización.
 
 ## Organización establecida en D00 (15-10-2026)
 - [`00_Control_del_proyecto/`](00_Control_del_proyecto/README.md): registro de fases, protocolo PR/commits, decisiones y traspaso D01.
@@ -40,3 +40,12 @@ Leer por orden este README, la auditoría, la hoja de ruta y el manifiesto; veri
 - [`Contratos_y_runtime/`](Contratos_y_runtime/README.md), [`Datos operativos/`](Datos%20operativos/README.md), [`Validacion/`](Validacion/README.md): integración futura y verificación.
 
 La presencia de una carpeta **no** significa que su fase haya empezado o finalizado. Ningún dato de D01–D12 se declara implementado con esta estructura.
+
+## Darovan 2 — D01, entrega documental (PR #15)
+- [Marco físico y orografía](Geografia_local/01_marco_fisico_y_orografia_v0.1.md).
+- [Unidades naturales y corredores cualitativos](Geografia_local/02_subzonas_y_corredores_cualitativos_v0.1.md).
+- [Perfil operativo de relieve](Geografia_local/03_perfil_operativo_del_relieve_v0.1.md).
+- [Dependencias cartográficas](Cartografia/01_dependencias_cartograficas_D01_v0.1.md).
+- [Perfil JSON de planificación NO runtime](Datos%20operativos/darovan_d01_relief_profile_v0.1.json).
+- [Validación estática D01](Validacion/D01_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md) y [acta de cierre](Auditorias/D01_CIERRE_Y_VALIDACION_2026-10-15.md).
+- [Traspaso D02](00_Control_del_proyecto/TRASPASO_D02.md), condicionado al merge autorizado de PR #15.

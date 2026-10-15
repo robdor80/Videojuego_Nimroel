@@ -104,10 +104,12 @@
     }
   ],
   "projectPhaseStatus": {
-    "D00": "documentary_complete_pending_merge",
-    "D01": "not_started",
+    "D00": "merged_into_main_pr14",
+    "D01": "documentary_complete_pr15_pending_merge",
     "governancePath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/00_Control_del_proyecto/REGISTRO_FASES.md",
     "handoffPath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/00_Control_del_proyecto/TRASPASO_D01.md",
-    "canonicalAnchorIndexPath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d00_canonical_anchors_v0.1.json"
+    "canonicalAnchorIndexPath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d00_canonical_anchors_v0.1.json",
+    "d01DataPath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "nextHandoffPath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/00_Control_del_proyecto/TRASPASO_D02.md"
   }
 }

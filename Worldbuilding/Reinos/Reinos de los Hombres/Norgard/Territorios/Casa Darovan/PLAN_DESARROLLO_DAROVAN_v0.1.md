@@ -10,7 +10,7 @@
 - No se afirma funcionamiento runtime por disponer de contratos JSON; requiere integración real con CoreRPG/Godot y pruebas.
 - En cada fase: inventario de fuentes, especificación separando niveles, datos operativos si procede, comprobación de referencias y JSON, informe de deuda y PR propio o incrementos auditables. **No merge automático.**
 
-## D00 — Auditoría y arranque [CERRADA DOCUMENTALMENTE; PR #14 EN REVISIÓN]
+## D00 — Auditoría y arranque [FUSIONADA EN MAIN; PR #14]
 - Inventario del canon, fuentes, perfiles, reglas y alcance. Diferencias de línea roja y frontera.
 - Comparación con árboles Valrik/Treskal y Core/Defaults.
 - Registrar resolución canónica Belara (Eshneva descartado para Darovan por decisión del autor), y detectar dudas pendientes (Arven, casas menores/figuras nobles).
@@ -18,11 +18,11 @@
 - **Cierre 15-10-2026:** estructura territorial y de ciudades preparada; anclas de Treihord y cuatro ciudades auditadas; fuentes trazadas; protocolo de una fase por conversación y una PR por fase; pendientes preservados. Ver `Auditorias/D00_CIERRE_Y_VALIDACION_2026-10-15.md`.
 - **Salida:** fuentes trazadas, ninguna alteración de canon, pendientes registrados. La PR debe ser autorizada para fusionar; D01 no comienza en esta conversación.
 
-## D01 — Límites, subregiones y geografía física [PENDIENTE]
+## D01 — Límites, subregiones y geografía física [CERRADA DOCUMENTALMENTE; PR #15 SIN FUSIONAR]
 - Delimitar cualitativamente montaña, costa, bahías, islas, península, gradientes y relaciones políticas sin cartografía falsa.
 - Separar capas físicas/administrativas y puntos de control; capa georreferenciada solo cuando exista plano/escala.
 - Aplicar contrato Core `nimroel_physical_geography_drainage_contract_v0.1.json`.
-- **Salida:** perfil espacial Darovan, reglas de validez y dudas de frontera localizadas.
+- **Salida D01 (15-10-2026):** marco físico y 12 unidades cualitativas con fuentes, perfil JSON no-runtime, interfaz cartográfica, matriz de 18 controles, acta y traspaso D02. **Cierre documental, NO canon nuevo ni implementación runtime.** PR #15 pendiente de revisión y autorización de merge.
 
 ## D02 — Hidrología y drenaje [PENDIENTE]
 - Grafos Belara/Lhera/Veldora/Thalen, cuencas, afluentes plausibles, manantiales y arroyos con límites estrictos.
@@ -97,4 +97,4 @@
 - **PR:** revisión por autor, **nunca fusionar `main` sin permiso expreso**.
 
 ## Continuidad de conversaciones
-Darovan 1: D00 **cerrada documentalmente**, PR #14 a revisión. Darovan 2: iniciar exclusivamente D01 **después de verificar la integración de D00 en `main`** y leer `00_Control_del_proyecto/TRASPASO_D01.md`. Cada fase sucesiva en conversación propia. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
+Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **cerrada documentalmente**, PR #15 a revisión y sin merge. Darovan 3: abrir D02 **solo tras verificar el merge autorizado de PR #15** y leer `00_Control_del_proyecto/TRASPASO_D02.md`. Cada fase sucesiva en conversación propia. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
