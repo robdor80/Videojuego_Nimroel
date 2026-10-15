@@ -34,12 +34,14 @@ Leídos originales Norgard: Clima/clima_general.md; Geografía/geografia_general
 
 **Ampliación posterior:** se ejecutaron también realmente los scripts originales **D01 y D02 en Python**, cada uno con SHA Git local idéntico a GitHub. Salidas: `D01 STATIC OK: 12 unidades, 4 ciudades, 12 fuentes, sin runtime`; `D02 STATIC OK: 4 ríos, 3 redes, 13 nodos, 10 aristas, 8 pruebas negativas; NO runtime`. Al igual que D03, utilizaron **proyecciones semánticas de los campos de JSON originales consumidos por cada validador** y rutas verificadas en GitHub, no un checkout íntegro. Acta detallada: `D03_VALIDACION_PYTHON_EN_ENTORNO_AISLADO_2026-10-15.md`.
 
-**No ejecutado aún:** los tres validadores sobre un checkout íntegro con todos los archivos originales; ningún pipeline GitHub Actions acreditado; ningún entorno Godot, generador de relieve, GIS, meteorología, navegación, prueba de persistencia ni cálculo de escorrentía usado. La validación Python/JavaScript estática no suple estos pasos.
+**Ejecución definitiva sobre MSI / checkout real (15-10-2026): SUPERADA.** El autor abrió CMD en la raíz del repositorio `Videojuego_Nimroel`, rama D03 confirmada en GitHub Desktop, y ejecutó los tres scripts Python originales concatenados con `&&`. Salidas aportadas: `D01 STATIC OK: 12 unidades, 4 ciudades, 12 fuentes, sin runtime`; `D02 STATIC OK: 4 ríos, 3 redes, 13 nodos, 10 aristas, 8 pruebas negativas; NO runtime`; `D03 STATIC OK: 12 qualitative units, 13 references, 10 negative tests; NOT RUNTIME`. No hubo errores. **El antiguo pendiente de checkout íntegro queda resuelto**. Acta con procedimiento y limitaciones: `D03_VALIDACION_MSI_CHECKOUT_2026-10-15.md`.
+
+**No ejecutado:** ningún pipeline GitHub Actions acreditado; ningún entorno Godot, generador de relieve, GIS, meteorología, navegación, prueba de persistencia ni cálculo de escorrentía usado. La validación estática no suple estos pasos.
 
 ## Pendientes, diferenciando naturaleza
 | Estado | Necesidad | ¿Bloquea cierre documental? |
 |---|---|---|
-| **PENDIENTE — CHECKOUT ÍNTEGRO** | Ejecutar conjuntamente `validate_d01.py`, `validate_d02.py`, `validate_d03.py` contra todas las fuentes originales. **Los tres han pasado ya en Python con réplicas semánticas contrastadas**; falta exclusivamente la repetición sobre checkout completo | No bloquea cierre documental; sí una certificación de suite completa |
+| **SUPERADO — MSI / CHECKOUT ÍNTEGRO** | Los tres validadores Python D01/D02/D03 ejecutados por el autor desde CMD en el repositorio real, con resultado OK para todos | Prueba estática cerrada; no es certificación runtime |
 | **PENDIENTE — MSI / GIS** | Altimetría, topografía, mapas y suelos verificados; exposición de laderas y drenaje regional | No; sí para modelización espacial |
 | **PENDIENTE — GODOT** | Integración física, estaciones, agua dinámica, eventos, persistencia y juego en funcionamiento | No; sí para certificar runtime D11 |
 | **PENDIENTE AUTOR** | DAR-P01 Arven, DAR-P04 cartografía, DAR-P07 río visual, DAR-P08 red fluvial detallada, DAR-P09 climatología/suelos | No para entrega cualitativa; sí donde afecte a canon o materialización |
