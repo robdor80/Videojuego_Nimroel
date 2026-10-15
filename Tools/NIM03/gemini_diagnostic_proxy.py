@@ -14,7 +14,7 @@ from urllib import error, request
 ALLOWED_INTENTS = frozenset({"observar", "desplazarse", "dialogar", "otro"})
 MAX_CHARS = 500
 MAX_BODY_BYTES = 4096
-MODEL_DEFAULT = "gemini-3.5-flash"
+MODEL_DEFAULT = "gemini-3.5-flash-lite"
 MODEL_PATTERN = re.compile(r"^[A-Za-z0-9._-]+$")
 GOOGLE_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
