@@ -1,6 +1,6 @@
 # NIM-01 BUILD — arquitectura y arranque del juego 2D conversacional
 
-**Estado:** arquitectura y planificación en PR Draft; sin juego compilado ni pruebas de ejecución.
+**Estado:** Host 2D de demostración implementado; exportación CI verde y pruebas básicas de interacción realizadas en Windows MSI y Samsung Galaxy Tab S9+. PR #13 aún Draft, pendiente de autorización de merge.
 **Rama:** feat/nim-01-build
 **Base:** lore de la primera aldea V1 y «La herramienta rota» integrado mediante PR #12.
 **Definición de experiencia:** [NIM-01_EXPERIENCIA_CONVERSACIONAL.md](NIM-01_EXPERIENCIA_CONVERSACIONAL.md).
@@ -35,11 +35,12 @@ Preguntas descriptivas no mutan el mundo. Las acciones con varios pasos requiere
 
 **Distinción de modo:** la aplicación puede arrancar sin IA remota y ofrecer un modo técnico limitado para probar la interfaz y el Core; ello **no implica experiencia conversacional libre equivalente sin IA**. Evaluar interpretación local/remota/híbrida y ASR/TTS antes de prometer operación offline plena en Windows o Android.
 
-## 4. Tecnología candidata, pendiente de spike
+## 4. Tecnología aprobada y alcance real de su validación
 
-- Primera candidata: **Godot estable estándar**, como interfaz y Host 2D, por exportación Windows/Android, paneles gráficos y posible integración de núcleo C++ mediante GDExtension.
-- Contingencia: SDL3 + C++ si las pruebas reales demuestran inconvenientes materiales para el Host de conversación.
-- Ninguna elección es definitiva hasta una prueba técnica de interfaz y compatibilidad. No afirmar que CoreRPG está enlazado, que Android funciona o que la voz está integrada antes de probarlos.
+- **Godot 4.7.2 Standard**, aprobado para el Host 2D Nimroel. La maqueta se ha exportado e iniciado realmente en Windows MSI y Samsung Galaxy Tab S9+; entrada textual y respuesta del simulador vistas en ambos dispositivos.
+- **sherpa-onnx**, elegido para ASR/TTS locales, pero **no integrado ni probado** en estos paquetes. Requiere seleccionar y medir modelos de voz compatibles.
+- **CoreRPG** C++20 permanece independiente del Host; GDExtension Windows/Android ARM64 **no implementada ni probada**. No interpretar la ejecución de la maqueta como integración del Core.
+- Gemini, generación procedural y narración real siguen pendientes para fases posteriores. Si aparecen limitaciones objetivas, reevaluar las decisiones de forma documentada.
 
 ## 5. Estructura propuesta (crear progresivamente)
 
@@ -92,12 +93,12 @@ Preguntas descriptivas no mutan el mundo. Las acciones con varios pasos requiere
 - [x] Comprobación del tipo ARM64 del APK y SHA-256 de artefactos en CI.
 - [x] Contrato de integración futura CoreRPG y sherpa/Gemini documentado; ni Core ni sherpa integrados aún.
 - [x] Plan de pruebas, limitaciones de demo y protocolo para MSI/Tab S9+ documentados.
-- [ ] **Ejecución real en MSI Windows**: requiere abrir el exe exportado en el equipo objetivo.
+- [x] **Ejecución real en MSI Windows**: corroborada por cuatro capturas del usuario (15/10/2026), con escritura, envío de consultas y órdenes de prueba, respuesta del simulador, desplazamiento del historial y retrato provisional. No equivale a test de carga/estabilidad ni a integración Core/voz.
 - [x] **Instalación/ejecución y envío textual en Galaxy Tab S9+**: verificados por capturas del usuario (14/10/2026), tras corregir el campo de escritura oculto; quedan sin comprobar reanudación, pruebas prolongadas, audio y controles adicionales.
 - [ ] Auditoría humana de la PR y autorización para fusionar.
 
-**Evidencia de CI:** https://github.com/robdor80/Videojuego_Nimroel/actions/runs/38554823204 (dos jobs correctos; artefacto Windows+Android). Véase [NIM-01_PRUEBAS_Y_ENTREGA.md](NIM-01_PRUEBAS_Y_ENTREGA.md) para límites y procedimientos. No existe evidencia de ejecución física, llamadas Gemini, CoreRPG real o voz sherpa.
+**Evidencia técnica:** CI y exportación: https://github.com/robdor80/Videojuego_Nimroel/actions/runs/38593322081 (build corregida, ambos jobs verdes). Pruebas reales por capturas: Galaxy Tab S9+ 14/10/2026 y MSI Windows 15/10/2026. Véase [NIM-01_PRUEBAS_Y_ENTREGA.md](NIM-01_PRUEBAS_Y_ENTREGA.md). Ninguna de esas pruebas constituye evidencia de llamadas Gemini, enlace CoreRPG ni síntesis/reconocimiento sherpa.
 
 **No forman parte del cierre técnico de NIM-01:** aldea V1 completa, NPC vivos, reconocimiento o síntesis de voz real, encargo ejecutable, Content Pack definitivo, guardado integral ni lanzamiento v0.0.1. Su implementación se programará en paquetes posteriores manteniendo la experiencia conversacional definida.
 
-**Estado de entrega:** paquete técnico de cimentación compilado y exportado para ambas plataformas, **pendiente de smoke en MSI/Tab S9+ y merge autorizado**.
+**Estado de entrega:** NIM-01 como **cimentación de Host 2D** con smoke básico positivo en ambos dispositivos y CI verde; **pendiente únicamente de revisión/merge autorizado**. No equivale a videojuego completo ni a v0.0.1 jugable.
