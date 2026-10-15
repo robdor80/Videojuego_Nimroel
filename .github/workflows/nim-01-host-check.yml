@@ -1,4 +1,4 @@
-name: Nimroel · NIM-01 Host 2D checks
+name: Nimroel · NIM-01/NIM-02 Host 2D checks
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "Game/**"
+      - "Docs/NIM-02_**"
       - ".github/workflows/nim-01-host-check.yml"
   pull_request:
     paths:
@@ -18,7 +19,7 @@ permissions:
 
 jobs:
   godot-linux-headless:
-    name: Godot 4.7.2 editor import + smoke
+    name: Godot 4.7.2 editor import + NIM-01/NIM-02 smoke
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -45,9 +46,15 @@ jobs:
           set -euo pipefail
           /tmp/Godot_v4.7.2-stable_linux.x86_64 \
             --headless --path Game/Host2D --script res://tests/smoke.gd
+      - name: Run NIM-02 contract and integration-state smoke
+        shell: bash
+        run: |
+          set -euo pipefail
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 \
+            --headless --path Game/Host2D --script res://tests/nim02_smoke.gd
 
   export-prototype-packages:
-    name: Export prototype Windows + Android (not device-tested)
+    name: Export NIM-02 prototype Windows + Android (not device-tested)
     needs: godot-linux-headless
     runs-on: ubuntu-latest
     timeout-minutes: 35
@@ -82,8 +89,8 @@ jobs:
             --headless --editor --path Game/Host2D --import --quit
           /tmp/Godot_v4.7.2-stable_linux.x86_64 \
             --headless --path Game/Host2D \
-            --export-release "Windows MSI x64" export/Nimroel_NIM01_Windows.exe
-          test -s Game/Host2D/export/Nimroel_NIM01_Windows.exe
+            --export-release "Windows MSI x64" export/Nimroel_NIM02_Windows.exe
+          test -s Game/Host2D/export/Nimroel_NIM02_Windows.exe
       - name: Prepare temporary debug-signing keystore
         shell: bash
         run: |
@@ -102,8 +109,8 @@ jobs:
           set -euo pipefail
           /tmp/Godot_v4.7.2-stable_linux.x86_64 \
             --headless --path Game/Host2D \
-            --export-debug "Samsung Tab S9+ ARM64" export/Nimroel_NIM01_TabS9Plus.apk
-          test -s Game/Host2D/export/Nimroel_NIM01_TabS9Plus.apk
+            --export-debug "Samsung Tab S9+ ARM64" export/Nimroel_NIM02_TabS9Plus.apk
+          test -s Game/Host2D/export/Nimroel_NIM02_TabS9Plus.apk
       - name: Verify Android ABI and record file checksums
         shell: bash
         run: |
@@ -111,7 +118,7 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import zipfile
-          apk = Path("Game/Host2D/export/Nimroel_NIM01_TabS9Plus.apk")
+          apk = Path("Game/Host2D/export/Nimroel_NIM02_TabS9Plus.apk")
           with zipfile.ZipFile(apk) as z:
               libs = [name for name in z.namelist() if name.startswith("lib/") and name.endswith(".so")]
           assert libs, "El APK no contiene bibliotecas nativas"
@@ -119,13 +126,13 @@ jobs:
           print("APK contiene solamente bibliotecas ARM64:", libs)
           PY
           cd Game/Host2D/export
-          sha256sum Nimroel_NIM01_Windows.exe Nimroel_NIM01_Windows.pck \
-            Nimroel_NIM01_TabS9Plus.apk > SHA256SUMS.txt
+          sha256sum Nimroel_NIM02_Windows.exe Nimroel_NIM02_Windows.pck \
+            Nimroel_NIM02_TabS9Plus.apk > SHA256SUMS.txt
           cat SHA256SUMS.txt
-      - name: Publish NIM-01 prototype packages for manual device testing
+      - name: Publish NIM-02 prototype packages for manual device testing
         uses: actions/upload-artifact@v4
         with:
-          name: NIM01-Godot-Prototype-Windows-Android
+          name: NIM02-Godot-Prototype-Windows-Android
           path: Game/Host2D/export/*
           retention-days: 14
           if-no-files-found: error
