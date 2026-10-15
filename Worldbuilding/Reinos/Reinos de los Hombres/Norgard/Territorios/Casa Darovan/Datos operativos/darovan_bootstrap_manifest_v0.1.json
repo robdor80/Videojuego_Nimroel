@@ -79,7 +79,6 @@
     }
   },
   "pendingAuthorReview": [
-    "narrative_eshneva_vs_canonical_belara",
     "darovan_family_identity",
     "arven_administration"
   ],
@@ -87,5 +86,21 @@
     "status": "not_implemented_by_this_manifest",
     "validatedInGame": false
   },
-  "evidenceDate": "2026-10-15"
+  "evidenceDate": "2026-10-15",
+  "resolvedAuthorDecisions": [
+    {
+      "id": "treihord_river_name",
+      "date": "2026-10-15",
+      "canonicalName": "Belara",
+      "sourceAuthority": "github_canon_confirmed_by_author",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md"
+      ],
+      "historicalDraftName": "Eshneva",
+      "historicalDraftStatus": "obsolete_narrative_wording_editorial_review_only",
+      "relationToCity": "adjacent_to_city_not_through_urban_core",
+      "status": "resolved"
+    }
+  ]
 }
