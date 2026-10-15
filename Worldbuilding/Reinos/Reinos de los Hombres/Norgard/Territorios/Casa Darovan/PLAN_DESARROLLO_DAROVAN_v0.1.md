@@ -10,12 +10,13 @@
 - No se afirma funcionamiento runtime por disponer de contratos JSON; requiere integración real con CoreRPG/Godot y pruebas.
 - En cada fase: inventario de fuentes, especificación separando niveles, datos operativos si procede, comprobación de referencias y JSON, informe de deuda y PR propio o incrementos auditables. **No merge automático.**
 
-## D00 — Auditoría y arranque [EN CURSO]
+## D00 — Auditoría y arranque [CERRADA DOCUMENTALMENTE; PR #14 EN REVISIÓN]
 - Inventario del canon, fuentes, perfiles, reglas y alcance. Diferencias de línea roja y frontera.
 - Comparación con árboles Valrik/Treskal y Core/Defaults.
 - Registrar resolución canónica Belara (Eshneva descartado para Darovan por decisión del autor), y detectar dudas pendientes (Arven, casas menores/figuras nobles).
 - Entregables: auditoría, inventario del mapa, este plan y manifiesto inicial no-runtime.
-- **Salida:** fuentes trazadas, ninguna alteración de canon, pendientes registrados.
+- **Cierre 15-10-2026:** estructura territorial y de ciudades preparada; anclas de Treihord y cuatro ciudades auditadas; fuentes trazadas; protocolo de una fase por conversación y una PR por fase; pendientes preservados. Ver `Auditorias/D00_CIERRE_Y_VALIDACION_2026-10-15.md`.
+- **Salida:** fuentes trazadas, ninguna alteración de canon, pendientes registrados. La PR debe ser autorizada para fusionar; D01 no comienza en esta conversación.
 
 ## D01 — Límites, subregiones y geografía física [PENDIENTE]
 - Delimitar cualitativamente montaña, costa, bahías, islas, península, gradientes y relaciones políticas sin cartografía falsa.
@@ -96,4 +97,4 @@
 - **PR:** revisión por autor, **nunca fusionar `main` sin permiso expreso**.
 
 ## Continuidad de conversaciones
-Darovan 1: D00/documentación inicial. Darovan 2+: leer README, auditoría, este plan y manifiesto; confirmar último SHA, estado PR y dependencias antes de avanzar. Actualizar `Estado` de cada fase con commit por incremento.
+Darovan 1: D00 **cerrada documentalmente**, PR #14 a revisión. Darovan 2: iniciar exclusivamente D01 **después de verificar la integración de D00 en `main`** y leer `00_Control_del_proyecto/TRASPASO_D01.md`. Cada fase sucesiva en conversación propia. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.

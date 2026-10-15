@@ -102,5 +102,12 @@
       "relationToCity": "adjacent_to_city_not_through_urban_core",
       "status": "resolved"
     }
-  ]
+  ],
+  "projectPhaseStatus": {
+    "D00": "documentary_complete_pending_merge",
+    "D01": "not_started",
+    "governancePath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/00_Control_del_proyecto/REGISTRO_FASES.md",
+    "handoffPath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/00_Control_del_proyecto/TRASPASO_D01.md",
+    "canonicalAnchorIndexPath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d00_canonical_anchors_v0.1.json"
+  }
 }
