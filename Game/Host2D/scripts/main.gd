@@ -1,9 +1,10 @@
 extends Control
 ## Nimroel 2D NIM-01: solo presentación, SIN autoridad de mundo.
-## No existe conexión con CoreRPG/Gemini en esta maqueta ejecutable.
+## NIM-03: diagnóstico Gemini aislado; CoreRPG y la partida siguen desconectados.
 
 const GATEWAY = preload("res://scripts/demo_gateway.gd")
 const PIPELINE = preload("res://scripts/interaction_pipeline.gd")
+const GEMINI_DIAGNOSTIC = preload("res://scripts/gemini_diagnostic.gd")
 const ART_SCENE = preload("res://art/aldea_fondo_provisional.svg")
 const ART_PORTRAIT = preload("res://art/retrato_provisional.svg")
 
@@ -22,10 +23,14 @@ var _portrait: TextureRect
 var _hint: Label
 var _service_state: Label
 var _mode_button: Button
+var _gemini_diagnostic: Node
 var _integration_mode: bool = false
 var _turn_sequence: int = 0
 
 func _ready() -> void:
+	_gemini_diagnostic = GEMINI_DIAGNOSTIC.new()
+	add_child(_gemini_diagnostic)
+	_gemini_diagnostic.probe_finished.connect(_on_gemini_probe_finished)
 	_build_interface()
 	get_viewport().size_changed.connect(_update_layout)
 	_update_layout()
@@ -148,6 +153,14 @@ func _build_interface() -> void:
 	_mode_button.tooltip_text = "Alterna laboratorio y conexión real (todavía no disponible)"
 	_mode_button.pressed.connect(_toggle_mode)
 	footer.add_child(_mode_button)
+	# Solo Windows: no se activa red en Android ni se añaden controles en la tablet.
+	if not OS.has_feature("mobile"):
+		var diagnostic_button := Button.new()
+		diagnostic_button.name = "DiagnosticoGemini"
+		diagnostic_button.text = "Probar Gemini"
+		diagnostic_button.tooltip_text = "Envía el texto al proxy local y a Google Gemini. No es gameplay ni respuesta de un NPC."
+		diagnostic_button.pressed.connect(_probe_gemini)
+		footer.add_child(diagnostic_button)
 	_hint = _make_label("Solo se ensaya la interfaz", 11, Color(0.73, 0.78, 0.78))
 	_hint.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
@@ -208,6 +221,23 @@ func _on_send(raw_text: String) -> void:
 	_append_bubble("SIMULADOR · NO ES UN NPC" if demo else "SISTEMA · CONEXIÓN NO DISPONIBLE", str(result.get("reply", "")), false)
 	_portrait_line.visible = demo and bool(result.get("portrait_demo", false))
 	_hint.text = "Sin hechos del mundo modificados"
+	call_deferred("_layout_panel_controls")
+
+func _probe_gemini() -> void:
+	# Interacción deliberada y separada de submit_turn_for_test. No se borra
+	# el texto, ni se añade un mensaje de jugador ni se modifica el turno.
+	_hint.text = "Diagnóstico externo solicitado (no es una partida)"
+	_gemini_diagnostic.probe(_input.text)
+
+func _on_gemini_probe_finished(result: Dictionary) -> void:
+	if str(result.get("status", "")) == "ok":
+		var kind: String = str(result.get("intent", ""))
+		_append_bubble("SISTEMA · DIAGNÓSTICO GEMINI", "Clasificación técnica recibida: " + kind + ". No es una respuesta de NPC; no hay CoreRPG ni mundo conectado.", false)
+		_hint.text = "Gemini respondió solo al diagnóstico"
+	else:
+		var code: String = str(result.get("error_code", "UNKNOWN"))
+		_append_bubble("SISTEMA · DIAGNÓSTICO", "No se completó el diagnóstico Gemini (" + code + "). La demo sigue disponible.", false)
+		_hint.text = "Diagnóstico sin confirmar"
 	call_deferred("_layout_panel_controls")
 
 func _toggle_mode() -> void:
