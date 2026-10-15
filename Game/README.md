@@ -1,6 +1,6 @@
 # Nimroel RPG — Host 2D conversacional
 
-**Estado:** raíz de desarrollo reservada; sin build ni pruebas ejecutadas.
+**Estado (15/10/2026):** proyecto Godot 4.7.2 Standard con demo conversacional compilada y verificada por capturas en MSI Windows y Samsung Galaxy Tab S9+. No contiene aún conexión real con CoreRPG, Gemini o sherpa-onnx.
 
 ## Experiencia objetivo
 
@@ -13,7 +13,7 @@ Se prepararán Windows y Android como aplicaciones independientes. El soporte re
 ## Límites de responsabilidad
 
 - **Worldbuilding/**: canon, biblias, perfiles y activos de producción; no se modifica en NIM-01.
-- **Game/Host2D/** (futuro): escenas de fondo, retratos, historial narrativo e inputs adaptados a cada pantalla.
+- **Game/Host2D/** (implementado como laboratorio técnico): escenas de fondo, retratos, historial narrativo e inputs adaptados; exportaciones Windows x64 y APK ARM64 comprobadas.
 - **Game/Interaction/** (futuro): interpretación de intenciones, narración basada en resultados y adaptadores de voz.
 - **Game/BridgeCoreRPG/** (futuro): adaptador al motor portable C++20, sin WorldState alternativo.
 - **Game/Content/TreskalV001/** (futuro): fixture regional, configuración V1, layout aldeano generado y futuro mapping a Content Pack.
@@ -28,4 +28,5 @@ Los directorios aparecen únicamente cuando los incrementos correspondientes est
 - Plano lógico procedural: [Docs/NIM-01_GENERACION_ESPACIAL_PROCEDURAL.md](../Docs/NIM-01_GENERACION_ESPACIAL_PROCEDURAL.md).
 - Canon de prueba: Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/ (PR #12).
 - Commits: Docs/NIMROEL_GIT_COMMIT_CONVENTIONS.md.
-- PR NIM-01: permanecerá Draft hasta cierre real; no se declara soporte Android ni funcionamiento de la IA sin pruebas.
+- PR NIM-01: permanece Draft hasta revisión/merge autorizado. La demo se ha instalado y probado en Galaxy Tab S9+ y Windows MSI, pero no se declara funcionamiento de IA, voz ni motor lógico.
+- Evidencias y descarga: [Docs/NIM-01_PRUEBAS_Y_ENTREGA.md](../Docs/NIM-01_PRUEBAS_Y_ENTREGA.md).
