@@ -1,5 +1,7 @@
 # Darovan D01–D03 — Reproducción Python aislada, 15-10-2026
 
+> **ACTUALIZACIÓN POSTERIOR:** la repetición pendiente sobre **checkout real de MSI ya se ejecutó y pasó el 15-10-2026**. Véase `D03_VALIDACION_MSI_CHECKOUT_2026-10-15.md`. Los estados PENDIENTE que aparecen más abajo documentan la situación histórica anterior a esa ejecución y ya no son vigentes para la suite Python.
+
 **Ámbito:** ejecución real de validadores estáticos originales recuperados desde la rama `feat/darovan-d03-clima-ecosistemas`, dentro de un entorno Python aislado sin acceso de red. Esta acta complementa las auditorías D01–D03. **No es un checkout íntegro ni prueba runtime.**
 
 ## Integridad del código ejecutado
