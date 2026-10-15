@@ -14,11 +14,12 @@
 
 ## Resultado limitado
 
-**APROBADO visualmente para MSI Windows 11:** modo integración, bloqueo honesto por falta de CoreRPG, bocadillos de jugador/sistema, envío vacío rechazado, entrada visible e historial desplazable.
+**APROBADO visualmente para MSI Windows 11:** modo integración, bloqueo honesto por falta de CoreRPG, bocadillos de jugador/sistema, envío vacío rechazado, entrada visible e historial desplazable. **APROBADO manualmente por declaración del usuario:** botón `Reiniciar demo` limpia el historial y permite volver a escribir.
 
 ## Pendientes y exclusiones
 
-- No hay evidencia nueva de pulsación de `Reiniciar demo` ni regreso efectivo a modo demo en estas tres capturas.
+- **Reiniciar demo: APROBADO por prueba manual posterior comunicada por el usuario.** El usuario pulsó el botón e informó de que eliminó el historial y dejó el campo preparado para una nueva entrada. Evidencia testimonial, no captura o prueba automatizada adicional.
+- Regreso efectivo de modo integración a modo demo: **pendiente de confirmación explícita**; reiniciar el historial no acredita un cambio de modo.
 - No se verifica redimensionado, reanudación, estabilidad bajo carga, latencia, ni funcionamiento durante una sesión prolongada.
 - No existe prueba de integración CoreRPG real, API Gemini autenticada, ASR/TTS sherpa-onnx o lectura real del estado de mundo.
 - **Samsung Galaxy Tab S9+ pendiente:** el usuario indica que realizará la prueba cuando tenga disponible la tablet.
