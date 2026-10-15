@@ -1,40 +1,27 @@
-# Nimroel · NIM-01 Host 2D
+# Nimroel — Host 2D Godot (NIM-02)
 
-**Estado:** primer prototipo de interfaz Godot; conversación y mundo **simulados**. No integra Gemini, CoreRPG, sherpa-onnx, ASR ni síntesis. No es la v0.0.1 jugable.
+Godot 4.7.2 Standard, renderer GL Compatibility, Windows 11 x64 / Galaxy Tab S9+ Android ARM64, **solo 2D**.
 
-## Herramientas
-- Godot **4.7.2 Standard**, edición sin .NET.
-- Windows MSI: Editor Godot para Windows. Desde Godot, abrir la carpeta \`Game/Host2D\`, importar SVG y ejecutar el proyecto con F6/F5.
-- Android Tab S9+: exportación futura del **mismo proyecto** con perfil ARM64. No se proclama soporte Android hasta compilar/instalar un APK y probarlo.
-- La interfaz de pantalla usa imágenes SVG **provisionales**, no assets de canon ni mapas de aldea generados.
+## Estado comprobable
+- NIM-01 PR #13 integrada: escritura y bocadillos de demostración ejecutados por el usuario en MSI y Tab S9+.
+- NIM-02 PR #18 Draft: la UI usa interaction_pipeline.gd; modo demo y modo integración diferenciados, sin WorldState.
+- Ningún motor de gameplay integrado: CoreRPG GDExtension, Gemini autenticado y sherpa-onnx siguen no disponibles.
+- CI importa Godot 4.7.2, ejecuta tests NIM-01/NIM-02 y exporta prototipos; no sustituye pruebas de los dispositivos.
 
-## Pruebas reproducibles (sin claves)
-Importar y verificar scripts:
+## Arranque manual
+Desde Godot Standard abrir la carpeta Game/Host2D y ejecutar main.tscn. En modo demo la respuesta del SIMULADOR es determinista. Cambiar a Modo: integración y escribir para observar CORE_NOT_CONNECTED sin acciones de mundo.
 
-\`\`\`sh
-godot --headless --editor --path Game/Host2D --import --quit
-\`\`\`
+## Pruebas de laboratorio
+1. godot --headless --editor --path Game/Host2D --import --quit
+2. godot --headless --path Game/Host2D --script res://tests/smoke.gd
+3. godot --headless --path Game/Host2D --script res://tests/nim02_smoke.gd
 
-Ejecutar las pruebas:
+Tras la CI de PR, los artefactos NIM02-Godot-Prototype-Windows-Android incluyen exe + pck para MSI y apk ARM64 para Tab S9+, más SHA256SUMS.txt. APK firmado con clave debug temporal; una versión anterior firmada con otra clave puede requerir desinstalación.
 
-\`\`\`sh
-godot --headless --path Game/Host2D --script res://tests/smoke.gd
-\`\`\`
+## Límites de seguridad
+- Nunca guardar claves Gemini ni tokens en GitHub, res:// o APK.
+- La demo nunca es un NPC. El puerto CoreRPG no modifica WorldState.
+- La voz del jugador no se sintetiza; los futuros NPC pronunciarán exclusivamente textos autorizados.
+- No son partidas jugables: no existe un Content Pack Nimroel en ejecución.
 
-La CI hace estas mismas comprobaciones con binario oficial Godot 4.7.2 en Ubuntu. Una CI verde prueba importación/parsing y demo, **no compila Windows ni Android**.
-
-## Interfaz
-- Imagen de ambientación de ejemplo.
-- Caja de texto libre + botón Enviar.
-- Historial de jugador y simulador claramente etiquetados.
-- Control de reiniciar la demostración y retrato provisional en intención de conversación.
-- Nunca se modifica un \`WorldState\`; \`demo_gateway.gd\` es únicamente un clasificador fijo para ejercitar la UI.
-
-## Integraciones que no deben falsificarse
-- **Gemini:** interpretación y narración de acuerdo con contratos versionados; nunca simular generación libre y presentarla como IA real.
-- **CoreRPG:** único mundo autoritativo; bridge C++ GDExtension por plataforma y Content Pack Nimroel real solo cuando esté preparado.
-- **sherpa-onnx:** modelo ASR de castellano para entrada hablada y TTS local para respuestas NPC; voz de jugador no se sintetiza. No incluir modelos binarios ni licencias sin evaluación.
-- Android solo **Samsung Galaxy Tab S9+**; pruebas de micrófono, APK, permisos, rendimiento y audio requieren dispositivo real.
-
-## Seguridad
-No incorporar claves API en el repositorio, export templates, assets \`res://\` o APK distribuido. La eventual distribución a terceros requiere una solución de credenciales apropiada. El prototipo actual no hace peticiones externas.
+Documentos: Docs/NIM-02_BUILD_PLAN.md y Docs/NIM-02_CONTRATOS_Y_DEPENDENCIAS.md. El canon de Worldbuilding/ no se modifica.
