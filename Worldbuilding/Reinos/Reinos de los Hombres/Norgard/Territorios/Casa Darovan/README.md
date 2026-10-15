@@ -59,3 +59,6 @@ La presencia de una carpeta **no** significa que su fase haya empezado o finaliz
 - [Gradientes](Clima_local/01_gradientes_climaticos_regionales_v0.1.md), [ecosistemas](Clima_local/02_ecosistemas_suelos_y_microclimas_v0.1.md) y [agua y riesgos](Clima_local/03_clima_agua_riesgos_y_d04_v0.1.md).
 - [Perfil JSON NO RUNTIME](Datos%20operativos/darovan_d03_climate_ecosystems_v0.1.json), [matriz D03](Validacion/D03_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md), [validador](Validacion/validate_d03.py), [acta](Auditorias/D03_CIERRE_Y_VALIDACION_2026-10-15.md) y [TRASPASO D04](00_Control_del_proyecto/TRASPASO_D04.md).
 - D03 no crea temperaturas, precipitaciones, especies, cauces, límites ni biomas jugables. D04 no iniciada.
+
+## D04 — estado 15-10-2026
+D01–D03 integradas en main y Python MSI superado. D04: rama `feat/darovan-d04-recursos-produccion`, PR #20 para revisión (no fusionar automáticamente), sin canon nuevo ni runtime. Ver `Recursos_y_produccion/`, `Economia_y_abastecimiento/`, acta D04 y TRASPASO_D05.md.
