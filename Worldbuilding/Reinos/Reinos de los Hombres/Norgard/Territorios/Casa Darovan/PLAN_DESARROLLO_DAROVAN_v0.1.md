@@ -18,16 +18,16 @@
 - **Cierre 15-10-2026:** estructura territorial y de ciudades preparada; anclas de Treihord y cuatro ciudades auditadas; fuentes trazadas; protocolo de una fase por conversación y una PR por fase; pendientes preservados. Ver `Auditorias/D00_CIERRE_Y_VALIDACION_2026-10-15.md`.
 - **Salida:** fuentes trazadas, ninguna alteración de canon, pendientes registrados. La PR debe ser autorizada para fusionar; D01 no comienza en esta conversación.
 
-## D01 — Límites, subregiones y geografía física [CERRADA DOCUMENTALMENTE; PR #15 SIN FUSIONAR]
+## D01 — Límites, subregiones y geografía física [FUSIONADA EN MAIN; PR #15]
 - Delimitar cualitativamente montaña, costa, bahías, islas, península, gradientes y relaciones políticas sin cartografía falsa.
 - Separar capas físicas/administrativas y puntos de control; capa georreferenciada solo cuando exista plano/escala.
 - Aplicar contrato Core `nimroel_physical_geography_drainage_contract_v0.1.json`.
-- **Salida D01 (15-10-2026):** marco físico y 12 unidades cualitativas con fuentes, perfil JSON no-runtime, interfaz cartográfica, matriz de 18 controles, acta y traspaso D02. **Cierre documental, NO canon nuevo ni implementación runtime.** PR #15 pendiente de revisión y autorización de merge.
+- **Salida D01 (15-10-2026):** marco físico y 12 unidades cualitativas con fuentes, perfil JSON no-runtime, interfaz cartográfica, matriz de 18 controles, acta y traspaso D02. **Cierre documental, NO canon nuevo ni implementación runtime.** PR #15 fusionada en main (9f3f723b0e7b2b78567c6397bba7099bfe658b0a).
 
-## D02 — Hidrología y drenaje [PENDIENTE]
+## D02 — Hidrología y drenaje [CERRADA DOCUMENTALMENTE; PR SIN FUSIONAR]
 - Grafos Belara/Lhera/Veldora/Thalen, cuencas, afluentes plausibles, manantiales y arroyos con límites estrictos.
 - Zonas de inundación, estacionalidad, vados, navegabilidad y recursos hídricos sin caudales inventados.
-- **Salida:** contratos de grafo/relaciones, invariantes de flujo, pruebas estáticas.
+- **Salida D02 (15-10-2026):** 4 ríos, 3 sistemas topológicos, 13 nodos, 10 aristas; cuencas cualitativas, perfil JSON no-runtime, reglas, validador y acta. Sin afluentes, caudales, medidas ni geometría inventados; PR propia para revisión y sin merge.
 
 ## D03 — Climas y ecosistemas [PENDIENTE]
 - Clima del litoral Veldora, Valkram, transición fría norte, península Taramin y Syvaris; microclimas y suelos.
@@ -97,4 +97,4 @@
 - **PR:** revisión por autor, **nunca fusionar `main` sin permiso expreso**.
 
 ## Continuidad de conversaciones
-Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **cerrada documentalmente**, PR #15 a revisión y sin merge. Darovan 3: abrir D02 **solo tras verificar el merge autorizado de PR #15** y leer `00_Control_del_proyecto/TRASPASO_D02.md`. Cada fase sucesiva en conversación propia. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
+Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **fusionada por PR #15**. Darovan 3: D02 **cerrada documentalmente**, PR a revisión y sin merge. Darovan 4: abrir D03 **solo tras merge autorizado D02**, leyendo `00_Control_del_proyecto/TRASPASO_D03.md`. Una fase por conversación. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
