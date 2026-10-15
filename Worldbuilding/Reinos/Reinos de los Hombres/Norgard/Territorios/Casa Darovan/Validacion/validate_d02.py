@@ -114,7 +114,7 @@ def validate(d: dict, repo: Path) -> None:
           and city["excludedCity"] == "karsath"
           and city["arvenIslandOwner"] is None
           and city["syvarisIslandOwner"] == "casa_darovan"
-          and city["permanentSettlementsInsideAguyasAllowed"] is False
+          and city["permanentSettlementsInsideAgujasAllowed"] is False
           and city["redMapMarkupIsLegalBorder"] is False, "ciudades, Arven, Agujas")
     runtime = d["runtimeIntegration"]
     check(runtime["validatedInGame"] is False and runtime["generatedWatercourseEntities"] == 0
