@@ -13,7 +13,7 @@
 ## D00 — Auditoría y arranque [EN CURSO]
 - Inventario del canon, fuentes, perfiles, reglas y alcance. Diferencias de línea roja y frontera.
 - Comparación con árboles Valrik/Treskal y Core/Defaults.
-- Detectar dudas para autor (Eshneva/Belara, Arven, casas menores/figuras nobles).
+- Registrar resolución canónica Belara (Eshneva descartado para Darovan por decisión del autor), y detectar dudas pendientes (Arven, casas menores/figuras nobles).
 - Entregables: auditoría, inventario del mapa, este plan y manifiesto inicial no-runtime.
 - **Salida:** fuentes trazadas, ninguna alteración de canon, pendientes registrados.
 
@@ -92,7 +92,7 @@
 - **Terreno o mapa métrico:** cotas, distancias, tiempos y cuencas exactas siguen provisionales.
 - **Core RPG:** la integración ejecutable no se presupone completada; contratos estáticos sí se pueden preparar ya.
 - **Arven:** no asignar administración Darovan sin confirmación.
-- **Eshneva/Belara:** registrar discrepancia narrativa en D00 y no bloquear trabajos basados en canon geográfico aprobado.
+- **Belara (RESUELTO 15-10-2026):** por decisión explícita del autor prevalece el canon de GitHub; Belara pasa junto a Treihord, no por su casco urbano. «Eshneva» en el manuscrito es una discrepancia editorial pendiente de revisión del texto, **no** una dependencia de canon o de desarrollo.
 - **PR:** revisión por autor, **nunca fusionar `main` sin permiso expreso**.
 
 ## Continuidad de conversaciones
