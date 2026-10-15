@@ -12,8 +12,9 @@
 
 ## Semáforo
 - **APROBADO VISUALMENTE:** arranque APK en tablet, modo integración, entrada textual observada, bocadillos, error de Core transparente, historial desplazable y controles visibles.
-- **NO ACREDITADO** por estas capturas: cambio del modo integración al modo demo y su respuesta posterior; pulsación de `Reiniciar demo` en la tablet; apertura del teclado virtual, permiso de micro, pausa/reanudación, rotación o pruebas de sesión larga.
+- **VALIDADO POR DECLARACIÓN DEL USUARIO (15/10/2026):** cambio del modo integración al modo demo, envío de mensaje con nueva respuesta del simulador, pulsación de `Reiniciar demo` y limpieza de historial, así como salida y regreso a la aplicación sin incidencia. Es prueba manual comunicada por el usuario, sin nueva captura/log específico de estas acciones.
+- **NO ACREDITADO** por esta evidencia: permiso de micro, rotación, medición de estabilidad prolongada, calidad de voz o latencias; la interacción textual acredita entrada pero no aporta una captura específica del teclado virtual.
 - **NO IMPLEMENTADO NI PROBADO:** bridge C++ GDExtension CoreRPG real en Android ARM64, Gemini autenticado, sherpa-onnx ASR/TTS y mutación de WorldState real.
 
 ## Cierre pendiente
-Antes de autorizar la fusión de la PR #18, confirmar cambio de integración a demo con nueva respuesta de simulador y `Reiniciar demo` en Android. Se recomienda probar reanudación desde segundo plano. La PR permanece en Draft; no fusionar automáticamente. Esta evidencia no es la aprobación final de NIM-02.
+**Pruebas manuales solicitadas completadas**, incluida reanudación, según confirmación explícita del usuario el 15/10/2026. El alcance de NIM-02 queda validado funcionalmente en Android, limitado a interfaz y puertos sin backend. La PR permanece en Draft; pendiente revisión/autorización de fusión. Esta aprobación NO se extiende a CoreRPG, Gemini, sherpa-onnx ni un mundo jugable.
