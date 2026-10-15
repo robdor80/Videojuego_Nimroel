@@ -4,7 +4,7 @@ Godot 4.7.2 Standard, renderer GL Compatibility, Windows 11 x64 / Galaxy Tab S9+
 
 ## Estado comprobable
 - NIM-01 PR #13 integrada: escritura y bocadillos de demostración ejecutados por el usuario en MSI y Tab S9+.
-- NIM-02 PR #18 Draft: la UI usa interaction_pipeline.gd; modo demo y modo integración diferenciados, sin WorldState.
+- NIM-02 PR #18: pruebas de laboratorio y manuales Windows/S9+ completas; autorizada su revisión y fusión. La UI usa interaction_pipeline.gd; modos demo e integración diferenciados, sin WorldState.
 - Ningún motor de gameplay integrado: CoreRPG GDExtension, Gemini autenticado y sherpa-onnx siguen no disponibles.
 - CI importa Godot 4.7.2, ejecuta tests NIM-01/NIM-02 y exporta prototipos; no sustituye pruebas de los dispositivos.
 
