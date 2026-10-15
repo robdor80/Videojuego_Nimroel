@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d00_canonical_anchor_index",
+  "version": "0.1",
+  "status": "audit_index_not_runtime",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "cities": [
+    {
+      "id": "treihord",
+      "canonical": true,
+      "designMode": "manual"
+    },
+    {
+      "id": "veldora",
+      "canonical": true,
+      "designMode": "manual"
+    },
+    {
+      "id": "taramin",
+      "canonical": true,
+      "designMode": "manual"
+    },
+    {
+      "id": "syvaris",
+      "canonical": true,
+      "designMode": "manual"
+    }
+  ],
+  "excludedCity": "karsath",
+  "arvenAdministrativeOwner": null,
+  "treihord": {
+    "populationApprox": 32000,
+    "river": "belara",
+    "riverCrossesCity": false,
+    "portType": "industrial_shallow_draft",
+    "gates": [
+      "puerta_alta",
+      "puerta_del_rio",
+      "puerta_del_camino",
+      "puerta_sur"
+    ],
+    "districts": [
+      "el_recinto",
+      "los_altos",
+      "el_peso",
+      "las_lonjas",
+      "los_oficios",
+      "la_calzada",
+      "la_ribera",
+      "la_costra"
+    ],
+    "squares": [
+      "plaza_vieja",
+      "plaza_de_las_balanzas",
+      "plaza_de_las_lonjas",
+      "plaza_del_camino"
+    ],
+    "facilities": [
+      "el_crisol",
+      "la_boveda_del_grifo",
+      "la_vena"
+    ],
+    "ownsMint": false,
+    "metalFrom": "montes_valkram",
+    "industrialCoalFrom": "montes_azurios"
+  },
+  "watercourseInvariants": {
+    "lheraBranchesFrom": "belara",
+    "veldoraRiverIndependent": true,
+    "thalenMouthBifurcated": true
+  },
+  "forestInvariants": {
+    "bosqueAgujasPermanentSettlements": false,
+    "syvarisUniformDesert": false
+  },
+  "createdSettlements": 0,
+  "runtimeValidated": false,
+  "provenance": "canonical_norgard_docs_and_author_darovan_1"
+}
