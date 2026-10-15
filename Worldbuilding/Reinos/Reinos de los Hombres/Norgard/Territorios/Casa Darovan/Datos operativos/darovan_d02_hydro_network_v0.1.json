@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d02_hydro_network",
+  "version": "0.1",
+  "date": "2026-10-15",
+  "status": "planning_reference_not_runtime",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "sourceHierarchy": [
+    "AUTHORED",
+    "DERIVED",
+    "GENERATED",
+    "DYNAMIC",
+    "UNKNOWN"
+  ],
+  "canonicalAuthority": "norgard_originals_and_author_decisions_only",
+  "referenceCoreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+  "referenceD01Relief": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+  "containsCoordinates": false,
+  "containsMeasuredSlopes": false,
+  "containsBasinPolygons": false,
+  "containsDischargeValues": false,
+  "containsTributaryInstances": false,
+  "containsRuntimeAssets": false,
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/geografia_general.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Geografia fisica/geografia_fisica_drenaje_hidrografia_v0.1.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json"
+  ],
+  "rivers": [
+    {
+      "id": "belara",
+      "systemId": "belara_lhera",
+      "source": "west_flank_northern_valkram",
+      "sourceKnown": true,
+      "mainCourseMouth": "golfo_de_norgard",
+      "passesByCity": "treihord",
+      "crossesCity": false,
+      "navigationNearCity": "industrial_shallow_draft_only",
+      "branchGivesRiseTo": "lhera",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md"
+      ]
+    },
+    {
+      "id": "lhera",
+      "systemId": "belara_lhera",
+      "source": "bifurcation_from_belara",
+      "sourceKnown": true,
+      "mainCourseMouth": "golfo_de_veldora",
+      "branchesFrom": "belara",
+      "adjacentTo": "bosque_de_las_agujas",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md"
+      ]
+    },
+    {
+      "id": "veldora",
+      "systemId": "veldora",
+      "source": null,
+      "sourceKnown": false,
+      "mainCourseMouth": "golfo_de_veldora",
+      "independentOf": [
+        "belara",
+        "lhera"
+      ],
+      "namesCity": "veldora",
+      "visualRiverBehindCityIdentification": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md"
+      ]
+    },
+    {
+      "id": "thalen",
+      "systemId": "thalen",
+      "source": null,
+      "sourceKnown": false,
+      "mainCourseMouth": "golfo_de_norgard",
+      "terminalArms": 2,
+      "cityBetweenTerminalArms": "taramin",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+      ]
+    }
+  ],
+  "systems": [
+    {
+      "id": "belara_lhera",
+      "kind": "connected_surface_network_with_two_marine_outlets",
+      "riverIds": [
+        "belara",
+        "lhera"
+      ],
+      "mouths": [
+        "golfo_de_norgard",
+        "golfo_de_veldora"
+      ],
+      "catchmentPolygon": null,
+      "hydraulicSplitFraction": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+      ]
+    },
+    {
+      "id": "veldora",
+      "kind": "independent_surface_network",
+      "riverIds": [
+        "veldora"
+      ],
+      "mouths": [
+        "golfo_de_veldora"
+      ],
+      "catchmentPolygon": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+      ]
+    },
+    {
+      "id": "thalen",
+      "kind": "single_river_with_terminal_fork",
+      "riverIds": [
+        "thalen"
+      ],
+      "mouths": [
+        "golfo_de_norgard"
+      ],
+      "catchmentPolygon": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+      ]
+    }
+  ],
+  "conceptualGraph": {
+    "description": "Topological anchors only; neither metric positions nor Belara split position relative to Treihord fixed",
+    "nodes": [
+      {
+        "id": "d02_belara_source",
+        "systemId": "belara_lhera",
+        "role": "canonic_west_northern_valkram_headwater",
+        "provenance": "AUTHORED",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_belara_lhera_split",
+        "systemId": "belara_lhera",
+        "role": "canonic_divergence_location_unknown",
+        "provenance": "AUTHORED",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_belara_mouth",
+        "systemId": "belara_lhera",
+        "role": "golfo_de_norgard",
+        "provenance": "AUTHORED",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_lhera_agujas",
+        "systemId": "belara_lhera",
+        "role": "adjacent_to_agujas_not_a_coordinate",
+        "provenance": "AUTHORED",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_lhera_mouth",
+        "systemId": "belara_lhera",
+        "role": "golfo_de_veldora",
+        "provenance": "AUTHORED",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_veldora_upstream_unknown",
+        "systemId": "veldora",
+        "role": "unspecified_upstream_reach_not_a_new_source",
+        "provenance": "UNKNOWN",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_veldora_mouth",
+        "systemId": "veldora",
+        "role": "golfo_de_veldora",
+        "provenance": "AUTHORED",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_thalen_upstream_unknown",
+        "systemId": "thalen",
+        "role": "unspecified_upstream_reach_not_a_new_source",
+        "provenance": "UNKNOWN",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_thalen_terminal_split",
+        "systemId": "thalen",
+        "role": "terminal_bifurcation",
+        "provenance": "AUTHORED",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_thalen_arm_a",
+        "systemId": "thalen",
+        "role": "terminal_arm_technical_label",
+        "provenance": "AUTHORED",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_thalen_arm_b",
+        "systemId": "thalen",
+        "role": "terminal_arm_technical_label",
+        "provenance": "AUTHORED",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_thalen_mouth_a",
+        "systemId": "thalen",
+        "role": "golfo_de_norgard_technical_arm_outlet",
+        "provenance": "DERIVED",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_thalen_mouth_b",
+        "systemId": "thalen",
+        "role": "golfo_de_norgard_technical_arm_outlet",
+        "provenance": "DERIVED",
+        "coordinate": null,
+        "geom": null
+      }
+    ],
+    "edges": [
+      {
+        "id": "d02_e_01",
+        "from": "d02_belara_source",
+        "to": "d02_belara_lhera_split",
+        "kind": "topological_relation_not_cartographic_line"
+      },
+      {
+        "id": "d02_e_02",
+        "from": "d02_belara_lhera_split",
+        "to": "d02_belara_mouth",
+        "kind": "topological_relation_not_cartographic_line"
+      },
+      {
+        "id": "d02_e_03",
+        "from": "d02_belara_lhera_split",
+        "to": "d02_lhera_agujas",
+        "kind": "topological_relation_not_cartographic_line"
+      },
+      {
+        "id": "d02_e_04",
+        "from": "d02_lhera_agujas",
+        "to": "d02_lhera_mouth",
+        "kind": "topological_relation_not_cartographic_line"
+      },
+      {
+        "id": "d02_e_05",
+        "from": "d02_veldora_upstream_unknown",
+        "to": "d02_veldora_mouth",
+        "kind": "topological_relation_not_cartographic_line"
+      },
+      {
+        "id": "d02_e_06",
+        "from": "d02_thalen_upstream_unknown",
+        "to": "d02_thalen_terminal_split",
+        "kind": "topological_relation_not_cartographic_line"
+      },
+      {
+        "id": "d02_e_07",
+        "from": "d02_thalen_terminal_split",
+        "to": "d02_thalen_arm_a",
+        "kind": "topological_relation_not_cartographic_line"
+      },
+      {
+        "id": "d02_e_08",
+        "from": "d02_thalen_terminal_split",
+        "to": "d02_thalen_arm_b",
+        "kind": "topological_relation_not_cartographic_line"
+      },
+      {
+        "id": "d02_e_09",
+        "from": "d02_thalen_arm_a",
+        "to": "d02_thalen_mouth_a",
+        "kind": "topological_relation_not_cartographic_line"
+      },
+      {
+        "id": "d02_e_10",
+        "from": "d02_thalen_arm_b",
+        "to": "d02_thalen_mouth_b",
+        "kind": "topological_relation_not_cartographic_line"
+      }
+    ],
+    "adjacencies": [
+      {
+        "river": "belara",
+        "place": "treihord",
+        "kind": "adjacent_not_crossing",
+        "orderRelativeToSplit": null,
+        "sourcePaths": [
+          "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+          "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+        ]
+      },
+      {
+        "river": "lhera",
+        "place": "bosque_de_las_agujas",
+        "kind": "beside_forest_boundary",
+        "sourcePaths": [
+          "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+          "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md"
+        ]
+      },
+      {
+        "river": "thalen",
+        "place": "taramin",
+        "kind": "city_between_two_terminal_arms",
+        "sourcePaths": [
+          "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+        ]
+      }
+    ]
+  },
+  "catchmentPlanning": {
+    "type": "qualitative_unmapped_surface_systems_not_hydrologic_polygons",
+    "basinDivides": null,
+    "minorTributaries": [],
+    "springInstances": [],
+    "wetlandInstances": [],
+    "floodplainInstances": [],
+    "knownMinorCourseType": [
+      {
+        "locationCategory": "taramin_north_central_semiarid",
+        "type": "seasonal_gullies_and_channels_as_regional_category_only",
+        "instances": [],
+        "sourcePaths": [
+          "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/geografia_general.md",
+          "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md"
+        ]
+      }
+    ],
+    "unknown": [
+      "catchment_divides",
+      "surface_gradients",
+      "coordinates",
+      "basin_areas",
+      "tributaries",
+      "minor_outlets",
+      "channel_permanence",
+      "discharge",
+      "springs",
+      "floodplain_polygons",
+      "storm_response",
+      "silt_transport"
+    ]
+  },
+  "cityProtection": {
+    "manualCities": [
+      "treihord",
+      "veldora",
+      "taramin",
+      "syvaris"
+    ],
+    "excludedCity": "karsath",
+    "arvenIslandOwner": null,
+    "syvarisIslandOwner": "casa_darovan",
+    "permanentSettlementsInsideAgujasAllowed": false,
+    "redMapMarkupIsLegalBorder": false
+  },
+  "futureDependencies": {
+    "d03": [
+      "hydrologic_recharge",
+      "hydroclimatic_seasonality",
+      "potential_permanence"
+    ],
+    "d04": [
+      "industrial_water_and_resources"
+    ],
+    "d05": [
+      "crossings",
+      "low_draft_navigation"
+    ],
+    "d06": [
+      "safe_settlement_siting"
+    ],
+    "d07": [
+      "city_riverside_mapping",
+      "river_behind_veldora_review",
+      "taramin_terminal_arms"
+    ],
+    "d11": [
+      "terrain_simulation",
+      "persisted_geometry",
+      "runtime_integration"
+    ]
+  },
+  "blocked": [
+    "DAR-P01_arven_ownership",
+    "DAR-P04_borders_scale_elevations",
+    "DAR-P07_veldora_visual_river_identity",
+    "belara_branch_location_relative_to_treihord",
+    "unknown_veldora_and_thalen_headwaters",
+    "minor_river_names",
+    "quantified_seasonality",
+    "flood_risk_geometry"
+  ],
+  "runtimeIntegration": {
+    "status": "not_implemented",
+    "validatedInGame": false,
+    "generatedWatercourseEntities": 0,
+    "persistedGeometry": false
+  }
+}

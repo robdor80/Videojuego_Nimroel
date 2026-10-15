@@ -1,5 +1,5 @@
 # Territorio de Casa Darovan — índice de desarrollo
-**Estado:** **D00 integrada en main** (PR #14, 15-10-2026). **D01 CERRADA DOCUMENTALMENTE; PR #15 abierta, SIN FUSIONAR**. La documentación D01 es NO CANÓNICA y no activa el motor. La documentación de trabajo **NO eleva a canon**.
+**Estado:** D00 y D01 integradas en main (PR #14 y #15). D02 cerrada documentalmente en rama de PR para revisión, no fusionada. La documentación D01 es NO CANÓNICA y no activa el motor. La documentación de trabajo **NO eleva a canon**.
 **Sede administrativa:** Treihord. **Ámbito:** occidente de Norgard, incluida la isla de Syvaris.
 
 ## Fuentes de autoridad (no duplicarlas)
@@ -27,7 +27,7 @@ La Casa **no sustituye** contratos activos de rango superior. Un override requie
 - **Registro de incertidumbres:** toda interpretación cartográfica o pendiente de autor se marca. Ningún documento de esta etapa crea topónimos, NPC importantes, cifras de población o fronteras nuevos.
 
 ## Reanudación y fase siguiente
-Para abrir D02, leer **00_Control_del_proyecto/TRASPASO_D02.md** y verificar que PR #15 esté fusionada en main. Consultar las fuentes originales y el manifiesto, no asumir que la PR equivale a ejecución runtime. Una fase por conversación y rama; prohibido fusionar sin autorización.
+Para abrir D03, leer **00_Control_del_proyecto/TRASPASO_D03.md** y comprobar primero que la PR D02 esté fusionada en main. Consultar las fuentes originales y el manifiesto, no asumir que la PR equivale a ejecución runtime. Una fase por conversación y rama; prohibido fusionar sin autorización.
 
 ## Organización establecida en D00 (15-10-2026)
 - [`00_Control_del_proyecto/`](00_Control_del_proyecto/README.md): registro de fases, protocolo PR/commits, decisiones y traspaso D01.
@@ -49,3 +49,8 @@ La presencia de una carpeta **no** significa que su fase haya empezado o finaliz
 - [Perfil JSON de planificación NO runtime](Datos%20operativos/darovan_d01_relief_profile_v0.1.json).
 - [Validación estática D01](Validacion/D01_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md) y [acta de cierre](Auditorias/D01_CIERRE_Y_VALIDACION_2026-10-15.md).
 - [Traspaso D02](00_Control_del_proyecto/TRASPASO_D02.md), condicionado al merge autorizado de PR #15.
+
+## Darovan 3 — D02: documentación y grafo no-runtime (PR pendiente de merge)
+- [Red y grafo](Hidrografia/01_red_hidrografica_y_grafo_v0.1.md), [cuencas y reglas](Hidrografia/02_cuencas_divisorias_y_reglas_v0.1.md), [dependencias](Hidrografia/03_interacciones_territoriales_y_traspaso_v0.1.md).
+- [JSON D02](Datos%20operativos/darovan_d02_hydro_network_v0.1.json), [matriz](Validacion/D02_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md), [validador Python](Validacion/validate_d02.py), [acta](Auditorias/D02_CIERRE_Y_VALIDACION_2026-10-15.md) y [traspaso D03](00_Control_del_proyecto/TRASPASO_D03.md).
+- **No** hay ríos menores inventados, cuencas métricas, caudales, nuevos asentamientos, geometría ni validación del motor. D03 no iniciada.

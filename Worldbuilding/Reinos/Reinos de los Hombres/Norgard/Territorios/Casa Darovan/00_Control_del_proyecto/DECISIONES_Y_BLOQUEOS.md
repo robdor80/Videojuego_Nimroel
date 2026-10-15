@@ -23,3 +23,10 @@ No resolver ambigüedades creando canon propio.
 - **DAR-P04 sigue abierto:** sin polígonos de frontera, alturas, collados, distancias, puentes ni escala geográfica pese al inventario cualitativo D01.
 - **DAR-P01 sigue abierto:** Arven tiene geografía norgardiana pero no propietario Darovan confirmado.
 - D01 deja **12 claves técnicas de unidades de estudio**, NO nuevos nombres/límites de regiones naturales ni canon publicado. La PR #15 requiere decisión expresa del autor para su merge; D02 no iniciada.
+
+## Seguimiento D02 — 15-10-2026 (sin promulgar canon)
+- **DAR-P01** continúa: Arven no adjudicada a Darovan.
+- **DAR-P04** continúa: desconocidos fronteras, cotas, escala, altimetría y delimitación de cuencas.
+- **DAR-P07** continúa: no atribuir nombre al curso que aparece detrás de Veldora en el perfil visual.
+- **DAR-P08 (nuevo registro de UNKNOWN, NO hecho canónico):** posición de bifurcación Belara/Lhera respecto del tramo cercano a Treihord; nacimientos Veldora y Thalen; recorridos y divisorias exactos; orden/disposición cartográfica de los brazos terminales Thalen; caudales y permanencia. Documentar, no resolver por proximidad ni ficción.
+- **D03 no iniciada:** puede preparar clima cualitativo cuando D02 esté fusionada, sin atribuir valores numéricos no acreditados.

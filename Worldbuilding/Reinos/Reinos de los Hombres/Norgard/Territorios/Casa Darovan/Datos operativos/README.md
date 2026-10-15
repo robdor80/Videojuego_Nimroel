@@ -1,4 +1,7 @@
-# Registros JSON
-**Carpeta preparada en D00. Fase de desarrollo: D00–D12, todavía sin implementar.**
-Referencias y anclas no-runtime; no duplicar contratos genéricos.
-Consultar `../00_Control_del_proyecto/REGISTRO_FASES.md`. No elevar propuestas a canon.
+# Datos operativos — Casa Darovan
+
+Perfiles de referencia **NO RUNTIME** bajo Core → Norgard Defaults → Darovan → Localidad → World State.
+- `darovan_bootstrap_manifest_v0.1.json` y `darovan_d00_canonical_anchors_v0.1.json`: índices D00.
+- `darovan_d01_relief_profile_v0.1.json`: relieve D01, integrado por PR #15.
+- `darovan_d02_hydro_network_v0.1.json`: grafo topológico D02 (4 ríos, 3 sistemas, 13 nodos, 10 aristas), SIN polígonos/caudales/afluentes/entidades jugables.
+Consultar `../Hidrografia/README.md`, `../00_Control_del_proyecto/REGISTRO_FASES.md` y el contrato original Nimroel Core.
