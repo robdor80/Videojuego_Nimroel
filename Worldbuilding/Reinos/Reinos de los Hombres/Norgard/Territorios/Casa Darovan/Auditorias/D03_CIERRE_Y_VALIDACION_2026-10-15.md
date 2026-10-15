@@ -30,12 +30,14 @@ Leídos originales Norgard: Clima/clima_general.md; Geografía/geografia_general
 - Comparación base 34c9652... frente a rama: antes del acta, **15 commits, 14 archivos, 0 fuera de Casa Darovan**, rama adelantada y sin commits detrás; después del acta, comprobar nuevamente los totales.
 - Ninguna fuente original de Norgard, Core, Treihord u otra Casa modificada.
 
-**No ejecutado:** validate_d01.py, validate_d02.py ni validate_d03.py dentro de checkout completo; ningún pipeline GitHub Actions acreditado; ningún entorno Godot, generador de relieve, GIS, meteorología, navegación, prueba de persistencia ni cálculo de escorrentía usado. La validación JavaScript no suple estos pasos.
+**Verificación Python adicional (15-10-2026, posterior a la apertura de PR #17):** ejecutado realmente el script original `validate_d03.py` en Python aislado, **resultado `D03 STATIC OK: 12 qualitative units, 13 references, 10 negative tests; NOT RUNTIME`**. Integridad del código: SHA Git local `06b777a25121607ad31f87b37a707cbb34115e57`, idéntico al blob GitHub. Integridad semántica del JSON D03: versión local reconstruida con el contenido efectivo de GitHub; ambas serializaciones canónicas ordenadas tienen 10.768 caracteres y FNV-1a de 64 bits `1172922043d07674`. Para D01, D02 y Core se utilizaron **únicamente los campos realmente leídos por el validador**, recuperados de sus JSON de GitHub; los restantes 10 archivos referenciados se comprobaron en GitHub (13/13) y sus rutas se representaron localmente para la comprobación de presencia. Por tanto, es una **ejecución real Python sobre una réplica semántica contrastada**, NO una ejecución sobre checkout íntegro ni una ejecución independiente de `validate_d01.py` o `validate_d02.py`.
+
+**No ejecutado aún:** suite D01/D02 Python independiente ni los tres validadores en checkout íntegro; ningún pipeline GitHub Actions acreditado; ningún entorno Godot, generador de relieve, GIS, meteorología, navegación, prueba de persistencia ni cálculo de escorrentía usado. La validación Python/JavaScript estática no suple estos pasos.
 
 ## Pendientes, diferenciando naturaleza
 | Estado | Necesidad | ¿Bloquea cierre documental? |
 |---|---|---|
-| **PENDIENTE — MSI** | Ejecutar Python validate_d01.py, validate_d02.py, validate_d03.py desde copia íntegra del repositorio | No; antes de declarar validación local completa |
+| **PENDIENTE — CHECKOUT ÍNTEGRO** | Ejecutar conjuntamente `validate_d01.py`, `validate_d02.py`, `validate_d03.py` contra todas las fuentes originales. D03 ya pasó en Python con una réplica semántica contrastada; faltan D01/D02 independientes y la repetición sobre checkout completo | No bloquea cierre documental; sí una certificación de suite completa |
 | **PENDIENTE — MSI / GIS** | Altimetría, topografía, mapas y suelos verificados; exposición de laderas y drenaje regional | No; sí para modelización espacial |
 | **PENDIENTE — GODOT** | Integración física, estaciones, agua dinámica, eventos, persistencia y juego en funcionamiento | No; sí para certificar runtime D11 |
 | **PENDIENTE AUTOR** | DAR-P01 Arven, DAR-P04 cartografía, DAR-P07 río visual, DAR-P08 red fluvial detallada, DAR-P09 climatología/suelos | No para entrega cualitativa; sí donde afecte a canon o materialización |
