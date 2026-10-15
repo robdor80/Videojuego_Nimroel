@@ -1,0 +1,731 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d04_resources_production_economy",
+  "version": "0.1",
+  "phase": "D04",
+  "preparedAt": "2026-10-15",
+  "status": "planning_reference_not_runtime",
+  "canonStatus": "source_traced_no_new_canon",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "sourceHierarchy": [
+    "AUTHORED",
+    "DERIVED",
+    "GENERATED",
+    "DYNAMIC",
+    "UNKNOWN"
+  ],
+  "evidenceLabels": [
+    "AUTHORED",
+    "DERIVED",
+    "PROPOSAL",
+    "UNKNOWN"
+  ],
+  "referenceD01Relief": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+  "referenceD02Hydro": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d02_hydro_network_v0.1.json",
+  "referenceD03Climate": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d03_climate_ecosystems_v0.1.json",
+  "referenceCoreLedger": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json",
+  "referenceFiscalDefault": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+  "sourceRefs": {
+    "mountains": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+    "forests": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+    "rivers": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "geography": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/geografia_general.md",
+    "regions": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+    "climate": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Clima/clima_general.md",
+    "coasts": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+    "treihord": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+    "houses": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md",
+    "visual": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Datos operativos/norgard_settlements_v0.2.json",
+    "d01": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "d02": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d02_hydro_network_v0.1.json",
+    "d03": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d03_climate_ecosystems_v0.1.json",
+    "corePhysical": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+    "coreLedger": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json",
+    "coreAquatic": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_aquatic_resource_harvest_contract_v0.1.json",
+    "norgardFiscal": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "norgardMoney": "Worldbuilding/Sistemas/Norgard Defaults/02_Gobierno_y_economia/autoridad_monetaria_acunacion_v0.1.md",
+    "norgardMaritime": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json"
+  },
+  "containsNewMiningSites": false,
+  "containsNewDeposits": false,
+  "containsNewRoutes": false,
+  "containsNewFarmSites": false,
+  "containsNewSpecies": false,
+  "containsNewHarbours": false,
+  "containsNewQuantities": false,
+  "containsCoordinates": false,
+  "containsRuntimeAssets": false,
+  "studyUnits": [
+    {
+      "id": "d01_valkram_oeste",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "gold_silver_regional_context",
+        "mines_specific_unknown"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_elyra_paso_peninsular",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "precious_metals_regional_context",
+        "darovan_extraction_unknown"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_norte_transicion",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "cold_transition_only",
+        "productive_sites_unknown"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_aguja_litoral",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "agujas_forest_no_permanent_settlements",
+        "exploitation_unknown"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_belara_treihord",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "treihord_industrial_river_interface",
+        "shallow_draft_only"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_veldora_litoral",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "veldora_commercial_port",
+        "fishing_catch_not_quantified"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_linde_caminos",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "veldora_treihord_path_context",
+        "no_major_timber_claim"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_pilares_sur",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "single_pilares_woodland",
+        "timber_supplies_valkram_mines"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_taramin_norte_centro",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "semiarid_stony",
+        "crop_livestock_irrigation_unknown"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_taramin_bosque_sur",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "single_taramin_forest",
+        "traditional_nonindustrial_use"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_syvaris",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "warm_partly_dry_island",
+        "agriculture_water_unknown"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    },
+    {
+      "id": "d01_arven_contexto",
+      "classification": "qualitative_study_unit_not_polygon",
+      "contextTags": [
+        "arven_owner_unknown",
+        "context_only_no_darovan_tax"
+      ],
+      "newExtractiveSites": null,
+      "agriculturalYield": null,
+      "livestockCount": null,
+      "stockVolume": null,
+      "harvestRate": null,
+      "agriculturalLandArea": null,
+      "waterAvailable": null
+    }
+  ],
+  "resourceChains": [
+    {
+      "id": "d04_mineral_valkram_treihord",
+      "resource": "gold_silver_ore_and_refined_metal",
+      "provenance": "AUTHORED",
+      "zoneIds": [
+        "d01_valkram_oeste",
+        "d01_belara_treihord"
+      ],
+      "sourceRefIds": [
+        "mountains",
+        "treihord",
+        "rivers",
+        "houses"
+      ],
+      "documentedSteps": [
+        "valkram_mining",
+        "cart_transfer",
+        "belara_shallow_barge_transfer",
+        "treihord_industrial_port",
+        "ore_coal_yards",
+        "metallurgical_processing",
+        "crisol_assay_refining_recording"
+      ],
+      "routingDetail": "canonical_modal_relation_unmapped",
+      "producerIds": [],
+      "quantity": null,
+      "capacity": null,
+      "annualYield": null,
+      "geometry": null,
+      "explicitUnknowns": [
+        "mine_sites",
+        "cart_track",
+        "barge_loading_points",
+        "exact_processing_order",
+        "recovery_rates"
+      ]
+    },
+    {
+      "id": "d04_elyra_precious_metals_context",
+      "resource": "precious_minerals_regional_occurrence",
+      "provenance": "AUTHORED",
+      "zoneIds": [
+        "d01_elyra_paso_peninsular"
+      ],
+      "sourceRefIds": [
+        "mountains"
+      ],
+      "documentedSteps": [
+        "elyra_regional_resource_presence"
+      ],
+      "routingDetail": "no_darovan_extraction_route_authored",
+      "producerIds": [],
+      "quantity": null,
+      "capacity": null,
+      "annualYield": null,
+      "geometry": null,
+      "explicitUnknowns": [
+        "darovan_mine_site",
+        "ownership",
+        "extraction_in_elyra"
+      ]
+    },
+    {
+      "id": "d04_azurios_coal_import",
+      "resource": "industrial_coal",
+      "provenance": "AUTHORED",
+      "zoneIds": [
+        "d01_belara_treihord"
+      ],
+      "sourceRefIds": [
+        "treihord",
+        "mountains"
+      ],
+      "documentedSteps": [
+        "azurios_regional_supply",
+        "route_unspecified",
+        "treihord_coal_reserves",
+        "industry_consumption"
+      ],
+      "routingDetail": "source_and_destination_known_route_unknown",
+      "producerIds": [],
+      "quantity": null,
+      "capacity": null,
+      "annualYield": null,
+      "geometry": null,
+      "explicitUnknowns": [
+        "azurios_mine",
+        "intermediate_nodes",
+        "transport_mode",
+        "route",
+        "stock_quantity"
+      ]
+    },
+    {
+      "id": "d04_pilares_wood_to_valkram_mining",
+      "resource": "mine_support_timber",
+      "provenance": "AUTHORED",
+      "zoneIds": [
+        "d01_pilares_sur",
+        "d01_valkram_oeste"
+      ],
+      "sourceRefIds": [
+        "forests",
+        "mountains"
+      ],
+      "documentedSteps": [
+        "pilares_timber_use",
+        "supply_to_valkram_gold_silver_mines"
+      ],
+      "routingDetail": "resource_use_known_path_unknown",
+      "producerIds": [],
+      "quantity": null,
+      "capacity": null,
+      "annualYield": null,
+      "geometry": null,
+      "explicitUnknowns": [
+        "cutting_plots",
+        "harvest_rate",
+        "regeneration_rate",
+        "haulage_route"
+      ]
+    },
+    {
+      "id": "d04_treihord_food_supply",
+      "resource": "food_and_other_urban_supplies",
+      "provenance": "AUTHORED",
+      "zoneIds": [
+        "d01_belara_treihord"
+      ],
+      "sourceRefIds": [
+        "treihord",
+        "d03"
+      ],
+      "documentedSteps": [
+        "treihord_peripheral_market_gardens",
+        "other_sources_unspecified",
+        "urban_supply"
+      ],
+      "routingDetail": "unmapped_food_supply",
+      "producerIds": [],
+      "quantity": null,
+      "capacity": null,
+      "annualYield": null,
+      "geometry": null,
+      "explicitUnknowns": [
+        "crops",
+        "farms",
+        "livestock",
+        "food_routes",
+        "yields",
+        "water_access"
+      ]
+    },
+    {
+      "id": "d04_veldora_port_commerce",
+      "resource": "commercial_cargo_unspecified",
+      "provenance": "AUTHORED",
+      "zoneIds": [
+        "d01_veldora_litoral"
+      ],
+      "sourceRefIds": [
+        "visual",
+        "houses",
+        "coasts"
+      ],
+      "documentedSteps": [
+        "commercial_port",
+        "warehouse_and_services",
+        "external_customs_when_applicable"
+      ],
+      "routingDetail": "port_function_only_not_named_routes",
+      "producerIds": [],
+      "quantity": null,
+      "capacity": null,
+      "annualYield": null,
+      "geometry": null,
+      "explicitUnknowns": [
+        "goods_manifest",
+        "routes",
+        "port_capacity"
+      ]
+    },
+    {
+      "id": "d04_taramin_fisheries",
+      "resource": "maritime_river_fishery_and_marine_products",
+      "provenance": "AUTHORED",
+      "zoneIds": [
+        "d01_taramin_norte_centro",
+        "d01_taramin_bosque_sur"
+      ],
+      "sourceRefIds": [
+        "visual",
+        "rivers",
+        "norgardMaritime"
+      ],
+      "documentedSteps": [
+        "maritime_and_river_fishing",
+        "marine_products",
+        "whale_oil_listed_as_city_function"
+      ],
+      "routingDetail": "fishery_functions_not_specific_water_routes",
+      "producerIds": [],
+      "quantity": null,
+      "capacity": null,
+      "annualYield": null,
+      "geometry": null,
+      "explicitUnknowns": [
+        "species",
+        "grounds",
+        "catch",
+        "fleet_size",
+        "production_methods",
+        "thalen_navigability"
+      ]
+    },
+    {
+      "id": "d04_syvaris_fisheries_commerce",
+      "resource": "marine_products_and_commercial_cargo",
+      "provenance": "AUTHORED",
+      "zoneIds": [
+        "d01_syvaris"
+      ],
+      "sourceRefIds": [
+        "visual",
+        "coasts",
+        "norgardMaritime"
+      ],
+      "documentedSteps": [
+        "fishing",
+        "main_bay_safe_port",
+        "commerce",
+        "naval_presence"
+      ],
+      "routingDetail": "island_port_no_route_drawn",
+      "producerIds": [],
+      "quantity": null,
+      "capacity": null,
+      "annualYield": null,
+      "geometry": null,
+      "explicitUnknowns": [
+        "coves_berths",
+        "freshwater",
+        "catch",
+        "agricultural_surplus",
+        "routes"
+      ]
+    }
+  ],
+  "facilityAnchors": [
+    {
+      "id": "treihord_industrial_port",
+      "kind": "industrial_shallow_barge_port",
+      "city": "treihord",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord",
+        "rivers"
+      ]
+    },
+    {
+      "id": "treihord_industrial_stores",
+      "kind": "ore_and_coal_depots",
+      "city": "treihord",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord"
+      ]
+    },
+    {
+      "id": "crisol",
+      "kind": "house_owned_assay_refining_not_mint",
+      "city": "treihord",
+      "provenance": "AUTHORED",
+      "coinMint": false,
+      "sourceRefIds": [
+        "treihord",
+        "norgardMoney"
+      ]
+    },
+    {
+      "id": "vena",
+      "kind": "fortified_discreet_link_crisol_boveda_only",
+      "city": "treihord",
+      "provenance": "AUTHORED",
+      "publicCargoRoute": false,
+      "sourceRefIds": [
+        "treihord"
+      ]
+    },
+    {
+      "id": "veldora_commercial_port",
+      "kind": "commercial_seaport",
+      "city": "veldora",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "visual",
+        "houses"
+      ]
+    },
+    {
+      "id": "taramin_fishing_port",
+      "kind": "fishing_coastal_city",
+      "city": "taramin",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "visual",
+        "houses"
+      ]
+    },
+    {
+      "id": "syvaris_safe_port",
+      "kind": "island_safe_port",
+      "city": "syvaris",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "visual",
+        "coasts"
+      ]
+    }
+  ],
+  "marineFunctions": [
+    {
+      "city": "veldora",
+      "identity": "major_commercial_port",
+      "externalCustoms": "when_external_fiscal_frontier_crossed",
+      "newFishingSpecies": null,
+      "sourceRefIds": [
+        "visual",
+        "houses",
+        "norgardFiscal"
+      ]
+    },
+    {
+      "city": "taramin",
+      "identity": "marine_and_river_fishing_marine_products_whale_oil_function",
+      "thalenNavigability": null,
+      "newFishingSpecies": null,
+      "sourceRefIds": [
+        "visual",
+        "rivers",
+        "norgardMaritime"
+      ]
+    },
+    {
+      "city": "syvaris",
+      "identity": "island_fishing_trade_marine_products_safe_port_naval_presence",
+      "freshwaterSufficiency": null,
+      "newFishingSpecies": null,
+      "sourceRefIds": [
+        "visual",
+        "coasts",
+        "norgardMaritime"
+      ]
+    }
+  ],
+  "forestProtection": {
+    "agujasPermanentInteriorSettlementsAllowed": false,
+    "pilaresSingleForest": true,
+    "taraminSingleForest": true,
+    "taraminIndustrialLoggingAllowed": false,
+    "syvarisForestDiscontinuous": true,
+    "syvarisIntensiveForestryAllowed": false,
+    "lindeMajorIndustrialLoggingAuthored": false,
+    "arvenAdministrativeOwner": null
+  },
+  "geographyProtection": {
+    "manualCities": [
+      "treihord",
+      "veldora",
+      "taramin",
+      "syvaris"
+    ],
+    "excludedCity": "karsath",
+    "arvenOwner": null,
+    "belaraAdjacentCity": "treihord",
+    "belaraCrossesCity": false,
+    "belaraNavigation": "industrial_shallow_draft_only",
+    "lheraBranchesFrom": "belara",
+    "veldoraRiverIndependentOf": [
+      "belara",
+      "lhera"
+    ],
+    "thalenTerminalArms": 2,
+    "thalenCityBetween": "taramin",
+    "thalenPerennialStatus": "UNKNOWN",
+    "newMinorRivers": false
+  },
+  "resourceSourceProtection": {
+    "treihordCoalSource": "montes_azurios",
+    "valkramCoalDepositAuthored": false,
+    "treihordPreciousMetalMinesSource": "montes_valkram",
+    "elyraHasPreciousMetals": true,
+    "elyraDarovanMineConfirmed": false,
+    "pilaresTimberSuppliesValkramMines": true,
+    "coalRouteGeometry": null,
+    "siteCoordinates": null,
+    "metalMineCounts": null,
+    "coalInventoryAmount": null,
+    "harvestYield": null,
+    "forestRegenerationTime": null,
+    "fishingQuota": null
+  },
+  "fiscalCompatibility": {
+    "realm": "norgard",
+    "internalCustomsBetweenGreatHouses": false,
+    "universalRetailSalesTax": false,
+    "crownSupremeFiscalAuthority": true,
+    "crownOnlyOfficialMint": true,
+    "crisolIsMint": false,
+    "accountingUnit": "clavo",
+    "clavosPerLuna": 24,
+    "clavosPerCorona": 480,
+    "specificLocalTaxRates": null,
+    "authorizedPortServiceFeesRequireActualService": true,
+    "localCatchIsForeignImport": false,
+    "assetMovementRequiresRealHoldings": true,
+    "ledgerDoesNotCreatePayment": true
+  },
+  "hypotheticalDependencies": [
+    {
+      "id": "d04_hypothetical_coal_shortage",
+      "status": "hypothetical_not_historical_event",
+      "neededData": [
+        "coal_inventory",
+        "consumption",
+        "supply_route"
+      ]
+    },
+    {
+      "id": "d04_hypothetical_low_belara_navigability",
+      "status": "hypothetical_not_historical_event",
+      "neededData": [
+        "river_conditions",
+        "barge_draft",
+        "cargo"
+      ]
+    },
+    {
+      "id": "d04_hypothetical_pilares_regeneration_stress",
+      "status": "hypothetical_not_historical_event",
+      "neededData": [
+        "harvest_rate",
+        "forest_inventory",
+        "regeneration"
+      ]
+    },
+    {
+      "id": "d04_hypothetical_dry_agriculture",
+      "status": "hypothetical_not_historical_event",
+      "neededData": [
+        "soil",
+        "weather",
+        "water_rights"
+      ]
+    },
+    {
+      "id": "d04_hypothetical_port_fishing_disruption",
+      "status": "hypothetical_not_historical_event",
+      "neededData": [
+        "season",
+        "weather",
+        "crew",
+        "grounds"
+      ]
+    }
+  ],
+  "approvals": {
+    "newCanonApproved": false,
+    "pendingAuthor": [
+      "DAR-P01",
+      "DAR-P04",
+      "DAR-P07",
+      "DAR-P08",
+      "DAR-P09"
+    ]
+  },
+  "runtimeIntegration": {
+    "status": "not_implemented",
+    "validatedInGodot": false,
+    "validatedWithCoreRPG": false,
+    "generatedProductionEntities": 0,
+    "executedTransactions": 0,
+    "persistedStockLedger": false
+  }
+}
