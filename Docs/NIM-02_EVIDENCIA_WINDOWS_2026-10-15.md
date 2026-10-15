@@ -19,11 +19,11 @@
 ## Pendientes y exclusiones
 
 - **Reiniciar demo: APROBADO por prueba manual posterior comunicada por el usuario.** El usuario pulsó el botón e informó de que eliminó el historial y dejó el campo preparado para una nueva entrada. Evidencia testimonial, no captura o prueba automatizada adicional.
-- Regreso efectivo de modo integración a modo demo: **pendiente de confirmación explícita**; reiniciar el historial no acredita un cambio de modo.
+- Regreso efectivo de modo integración a modo demo en MSI: no hay confirmación individualizada de esa prueba; el retorno y la respuesta demo sí se comprobaron expresamente en la Galaxy Tab S9+.
 - No se verifica redimensionado, reanudación, estabilidad bajo carga, latencia, ni funcionamiento durante una sesión prolongada.
 - No existe prueba de integración CoreRPG real, API Gemini autenticada, ASR/TTS sherpa-onnx o lectura real del estado de mundo.
-- **Samsung Galaxy Tab S9+ pendiente:** el usuario indica que realizará la prueba cuando tenga disponible la tablet.
-- PR #18 continúa en Draft; no fusionar hasta completar revisión y pruebas pendientes.
+- **Samsung Galaxy Tab S9+: verificada posteriormente el 15/10/2026.** Véase `Docs/NIM-02_EVIDENCIA_ANDROID_2026-10-15.md`; allí consta la prueba de regreso a demo, reinicio y reanudación confirmada por el usuario.
+- Las pruebas funcionales básicas acordadas se completaron para ambos dispositivos; usuario autoriza explícitamente la fusión de PR #18 una vez comprobada la CI y auditoría final.
 
 ## Proveniencia
 
