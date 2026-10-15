@@ -30,3 +30,9 @@ No resolver ambigüedades creando canon propio.
 - **DAR-P07** continúa: no atribuir nombre al curso que aparece detrás de Veldora en el perfil visual.
 - **DAR-P08 (nuevo registro de UNKNOWN, NO hecho canónico):** posición de bifurcación Belara/Lhera respecto del tramo cercano a Treihord; nacimientos Veldora y Thalen; recorridos y divisorias exactos; orden/disposición cartográfica de los brazos terminales Thalen; caudales y permanencia. Documentar, no resolver por proximidad ni ficción.
 - **D03 no iniciada:** puede preparar clima cualitativo cuando D02 esté fusionada, sin atribuir valores numéricos no acreditados.
+
+## Seguimiento D03 — 15-10-2026 (NO canon nuevo)
+- **DAR-P09 (nuevo, no bloqueante para documentación):** faltan valores y calendario de temperaturas, precipitaciones, viento, nieve y deshielo, límites climáticos, suelos y permeabilidad, niveles freáticos, recarga, erosión y riesgos verificados. NO atribuir climatología cuantitativa ni regímenes fluviales por analogía.
+- **DAR-P01/P04/P07/P08 permanecen abiertos:** Arven sin dueño administrativo, altimetría y límites desconocidos, cauce visual detrás de Veldora por resolver, bifurcación Belara/Lhera y cabeceras/caudales por localizar. Ninguno se inventa en D03.
+- **Protección ecológica:** Agujas sin asentamientos permanentes interiores; Pilares y Taramin son bosques únicos en sus respectivas transiciones; Syvaris bosquetes discontinuos, región cálida parcialmente seca y sectores resguardados verdes.
+- **D03 en rama exclusiva:** documentos de Clima_local y JSON NO RUNTIME; pruebas estáticas JavaScript efectuadas, validador Python aportado sin ejecución en checkout completo; D04 NO iniciada.
