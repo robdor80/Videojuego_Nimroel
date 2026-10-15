@@ -1,27 +1,23 @@
-# Nimroel — Host 2D Godot (NIM-02)
+# Nimroel — Host 2D Godot (NIM-03 BUILD)
 
-Godot 4.7.2 Standard, renderer GL Compatibility, Windows 11 x64 / Galaxy Tab S9+ Android ARM64, **solo 2D**.
+Godot 4.7.2 Standard, GL Compatibility, Windows 11 x64 y Galaxy Tab S9+ Android ARM64, exclusivamente 2D.
 
-## Estado comprobable
-- NIM-01 PR #13 integrada: escritura y bocadillos de demostración ejecutados por el usuario en MSI y Tab S9+.
-- NIM-02 PR #18: pruebas de laboratorio y manuales Windows/S9+ completas; autorizada su revisión y fusión. La UI usa interaction_pipeline.gd; modos demo e integración diferenciados, sin WorldState.
-- Ningún motor de gameplay integrado: CoreRPG GDExtension, Gemini autenticado y sherpa-onnx siguen no disponibles.
-- CI importa Godot 4.7.2, ejecuta tests NIM-01/NIM-02 y exporta prototipos; no sustituye pruebas de los dispositivos.
+## Lo que funciona
+- NIM-01 y NIM-02: laboratorio de escritura, bocadillos, historial, interfaz táctil y modo demo determinista. Modo integración conserva bloqueo honesto \`CORE_NOT_CONNECTED\`.
+- NIM-03: botón **Probar Gemini** solo en Windows. **Es un diagnóstico técnico opcional**: envía el texto al proxy loopback del MSI y clasifica intención, si hay clave propia y acceso real a Gemini. No ejecuta jugadas, no crea NPC ni modifica mundo.
+- NIM-03: benchmark sherpa-onnx TTS castellano en Tools/NIM03 y CI Windows externa al juego, con audio WAV y métricas. El puerto VoicePort de Godot continúa desconectado.
+- CoreRPG GDExtension sigue pendiente del puente nativo en el Core independiente.
 
-## Arranque manual
-Desde Godot Standard abrir la carpeta Game/Host2D y ejecutar main.tscn. En modo demo la respuesta del SIMULADOR es determinista. Cambiar a Modo: integración y escribir para observar CORE_NOT_CONNECTED sin acciones de mundo.
+## Pruebas Godot
+\`\`\`text
+godot --headless --editor --path Game/Host2D --import --quit
+godot --headless --path Game/Host2D --script res://tests/smoke.gd
+godot --headless --path Game/Host2D --script res://tests/nim02_smoke.gd
+godot --headless --path Game/Host2D --script res://tests/nim03_smoke.gd
+\`\`\`
+Pruebas Python offline:
+\`python -m unittest discover -s Tools/NIM03 -p "test_*.py" -v\`.
 
-## Pruebas de laboratorio
-1. godot --headless --editor --path Game/Host2D --import --quit
-2. godot --headless --path Game/Host2D --script res://tests/smoke.gd
-3. godot --headless --path Game/Host2D --script res://tests/nim02_smoke.gd
+Para probar conexión Gemini real sin clave en APK, véase \`Docs/NIM-03_PRUEBAS_Y_ENTREGA.md\`. Exportaciones NIM03 CI: \`.exe\` + \`.pck\` y \`.apk\` ARM64 en artefactos de la PR Draft. NIM03 Android utiliza otro identificador de paquete que NIM02.
 
-Tras la CI de PR, los artefactos NIM02-Godot-Prototype-Windows-Android incluyen exe + pck para MSI y apk ARM64 para Tab S9+, más SHA256SUMS.txt. APK firmado con clave debug temporal; una versión anterior firmada con otra clave puede requerir desinstalación.
-
-## Límites de seguridad
-- Nunca guardar claves Gemini ni tokens en GitHub, res:// o APK.
-- La demo nunca es un NPC. El puerto CoreRPG no modifica WorldState.
-- La voz del jugador no se sintetiza; los futuros NPC pronunciarán exclusivamente textos autorizados.
-- No son partidas jugables: no existe un Content Pack Nimroel en ejecución.
-
-Documentos: Docs/NIM-02_BUILD_PLAN.md y Docs/NIM-02_CONTRATOS_Y_DEPENDENCIAS.md. El canon de Worldbuilding/ no se modifica.
+Nimroel no es aún una partida persistente; la ejecución de los tests y del benchmark no acredita una partida ni voz de NPC. Nunca usar IA como fuente de verdad fuera de CoreRPG.
