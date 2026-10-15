@@ -89,7 +89,7 @@ class ProxyContractTests(unittest.TestCase):
         try:
             code, body = self.send()
         finally:
-            self.server.RequestHandlerClass.classifier = original
+            self.server.RequestHandlerClass.classifier = staticmethod(original)
         self.assertEqual(code, 502)
         self.assertNotIn("secret-test-value", json.dumps(body))
         self.assertNotIn("fake-for-unit-test", json.dumps(body))

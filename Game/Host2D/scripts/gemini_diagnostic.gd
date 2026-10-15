@@ -53,7 +53,10 @@ static func parse_response(response_code: int, body: PackedByteArray) -> Diction
 		return _fail("GEMINI_DIAGNOSTIC_UNAVAILABLE")
 	if body.size() > 2048:
 		return _fail("INVALID_DIAGNOSTIC_RESPONSE")
-	var parsed: Variant = JSON.parse_string(body.get_string_from_utf8())
+	var document := JSON.new()
+	if document.parse(body.get_string_from_utf8()) != OK:
+		return _fail("INVALID_DIAGNOSTIC_RESPONSE")
+	var parsed: Variant = document.data
 	if not parsed is Dictionary:
 		return _fail("INVALID_DIAGNOSTIC_RESPONSE")
 	if parsed.get("status", "") != "ok" or parsed.get("source", "") != "gemini":
