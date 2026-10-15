@@ -36,14 +36,16 @@
 | Madera/artesanía/astilleros propios de Treskal | No | No trasladar especialización local a Darovan |
 | Rangos de población de asentamientos Valrik | No | Sus archivos prohíben explícitamente extrapolarlos a Norgard |
 
-## Contradicciones / incertidumbres (no resolver sin autor)
-1. **Topónimo fluvial manuscrito vs canon:** el PDF de trabajo `TODO NIMROEL 10.09.26.pdf` (pasaje del capítulo 27, página impresa 1059) dice «Treihord ... sobre el Eshneva». El canon geográfico y urbano de GitHub sitúa junto a Treihord al **Belara** (que no atraviesa el casco urbano). **No cambiar ningún documento**: aclarar si la versión narrativa es histórica, provisional o requiere corrección editorial. No se incorpora «Eshneva» a contratos.
-2. **Arven:** ubicación en ámbito occidental de Norgard confirmada; falta documento explícito hallado que la asigne administrativamente a Darovan. Se analiza por proximidad, con adscripción `pendiente_verificacion`.
-3. **Fronteras y geometría:** la línea roja es una marca de recorte/área de estudio proporcionada por el autor; no se georreferencia como frontera política.
-4. **Treihord, militar:** el documento urbano aún conserva lenguaje histórico de «revisión militar»; Norgard E5 ya aparece activo. Requiere una futura auditoría de compatibilidad, **sin reabrir** el canon base.
-5. **Faltan cierres de autor:** señor actual de Casa, herederos, origen histórico, casas menores, origen de rivalidad y organización particular guardia; `grandes_casas.md` marca varios explícitamente pendientes.
-6. **Escalas:** no existen aquí medidas cartográficas suficientes para fijar kilómetros, cotas, tiempos de viaje o caudales. Ninguno se inventa.
-7. **Ciudades Veldora/Taramin/Syvaris:** constan perfiles visuales regionales en JSON, pero no equivalen a biblia urbana detallada ni a trazado de calles.
+## Decisión de autor cerrada: nombre del río de Treihord
+**RESUELTO por el autor en «Darovan 1», 15-10-2026.** El río canónico junto a Treihord es el **Belara**. Para esta discrepancia se establece explícitamente que prevalece el canon de GitHub —`Norgard/Geografía/rios_y_lagos.md` y `Norgard/Ciudades/Casa Darovan/Treihord.md`— frente a la redacción del manuscrito de trabajo `TODO NIMROEL 10.09.26.pdf` (capítulo 27, página impresa 1059), donde figura «Eshneva». El Belara pasa **junto a** Treihord, **no atraviesa** su casco urbano. «Eshneva» en ese pasaje queda señalado como texto narrativo desactualizado que requiere revisión editorial; no constituye topónimo válido para los contratos Darovan. No se cambia la ficha canónica ni el PDF original por esta auditoría.
+
+## Incertidumbres restantes (sin resolver sin autor)
+1. **Arven:** ubicación en ámbito occidental de Norgard confirmada; falta documento explícito hallado que la asigne administrativamente a Darovan. Se analiza por proximidad, con adscripción `pendiente_verificacion`.
+2. **Fronteras y geometría:** la línea roja es una marca de recorte/área de estudio proporcionada por el autor; no se georreferencia como frontera política.
+3. **Treihord, militar:** el documento urbano aún conserva lenguaje histórico de «revisión militar»; Norgard E5 ya aparece activo. Requiere una futura auditoría de compatibilidad, **sin reabrir** el canon base.
+4. **Faltan cierres de autor:** señor actual de Casa, herederos, origen histórico, casas menores, origen de rivalidad y organización particular guardia; `grandes_casas.md` marca varios explícitamente pendientes.
+5. **Escalas:** no existen aquí medidas cartográficas suficientes para fijar kilómetros, cotas, tiempos de viaje o caudales. Ninguno se inventa.
+6. **Ciudades Veldora/Taramin/Syvaris:** constan perfiles visuales regionales en JSON, pero no equivalen a biblia urbana detallada ni a trazado de calles.
 
 ## Revisión de compatibilidad por hacer antes de declararlo «auditado completamente»
 - Inventario cruzado de TODAS las referencias a Darovan/Treihord en canon urbano, gobierno, economía, heráldica, barcos y archivos operativos.
