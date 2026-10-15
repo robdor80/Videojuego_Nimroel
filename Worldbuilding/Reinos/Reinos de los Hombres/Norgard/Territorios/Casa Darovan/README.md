@@ -6,7 +6,7 @@
 - [Treihord canónica](../../Ciudades/Casa%20Darovan/Treihord.md): **CANON — DISEÑO BASE CERRADO**. El diseño urbano permanece en su fichero original.
 - [Grandes Casas](../../Grandes%20Casas/grandes_casas.md): pertenencia de Treihord, Veldora, Taramin y Syvaris a Darovan.
 - [Geografía general de Norgard](../../Geografía/geografia_general.md), [ríos](../../Geografía/rios_y_lagos.md), [mares e islas](../../Geografía/mares_y_costas.md), [montañas](../../Geografía/montanas.md), [bosques](../../Geografía/bosques.md), [regiones naturales](../../Geografía/regiones_naturales.md) y [clima](../../Clima/clima_general.md).
-- [Nimroel Core](../../../../Sistemas/Nimroel%20Core/README.md) y [Norgard Defaults](../../../../Sistemas/Norgard%20Defaults/README.md).
+- [Nimroel Core](../../../../../Sistemas/Nimroel%20Core/README.md) y [Norgard Defaults](../../../../../Sistemas/Norgard%20Defaults/README.md).
 - [Referencia metodológica Valrik](../Casa%20Valrik/): reutilizar procedimiento, no trasladar parámetros locales.
 
 ## Jerarquía obligatoria
