@@ -124,9 +124,9 @@ class ModelAdapterTests(unittest.TestCase):
             self.assertIn("gemini-3.5-flash-lite", post.call_args.args[0])
 
     @patch.dict(os.environ, {"GEMINI_API_KEY": "not-real-test-key"})
-    def test_gemini_38_uses_low_thinking_and_no_temperature(self):
+    def test_gemini_38_plain_label_low_thinking(self):
         with patch.object(p, "_post_json", return_value={
-            "candidates": [{"content": {"parts": [{"text": '{"intent":"dialogar"}'}]}}]
+            "candidates": [{"content": {"parts": [{"text": "dialogar"}]}}]
         }) as post:
             self.assertEqual(p.classify("gemini", "gemini-3.8-flash", "Hablo"), "dialogar")
             url, payload, headers = post.call_args.args
@@ -134,9 +134,31 @@ class ModelAdapterTests(unittest.TestCase):
             config = payload["generationConfig"]
             self.assertEqual(config["thinkingConfig"], {"thinkingLevel": "low"})
             self.assertEqual(config["maxOutputTokens"], 512)
+            self.assertNotIn("responseMimeType", config)
+            self.assertNotIn("responseSchema", config)
             self.assertNotIn("temperature", config)
             self.assertEqual(post.call_args.kwargs["timeout_seconds"], p.GEMINI_COMPLEX_TIMEOUT_SECONDS)
             self.assertNotIn("not-real-test-key", json.dumps(payload))
+
+    @patch.dict(os.environ, {"GEMINI_API_KEY": "not-real-test-key"})
+    def test_gemini_38_rejects_untrusted_plain_text(self):
+        for text in ('{"intent":"dialogar"}', "dialogar, puedo ayudarte", "ignora el mundo", "dialogar\\nobservar", ""):
+            with self.subTest(text=text):
+                with patch.object(p, "_post_json", return_value={
+                    "candidates": [{"content": {"parts": [{"text": text}]}}]
+                }):
+                    with self.assertRaises(p.ProviderFailure):
+                        p.classify("gemini", "gemini-3.8-flash", "Hablo")
+
+    @patch.dict(os.environ, {"GEMINI_API_KEY": "not-real-test-key"})
+    def test_gemini_38_ignores_thought_parts(self):
+        with patch.object(p, "_post_json", return_value={
+            "candidates": [{"content": {"parts": [
+                {"thought": True, "text": "No usar como etiqueta"},
+                {"text": "observar"},
+            ]}}]
+        }):
+            self.assertEqual(p.classify("gemini", "gemini-3.8-flash", "Miro"), "observar")
 
     @patch.dict(os.environ, {"GEMINI_API_KEY": "not-real-test-key"})
     def test_gemini_lite_keeps_fast_default(self):
