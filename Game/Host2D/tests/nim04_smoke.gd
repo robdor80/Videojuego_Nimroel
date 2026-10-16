@@ -32,6 +32,23 @@ func _run() -> void:
 			errors.append("NIM04 aceptación de esquema inseguro")
 	if Provider.parse_response(503, PackedByteArray()).get("status") == "ok":
 		errors.append("NIM04 503 aceptado")
+	var timeout_error: Dictionary = {"status": "unavailable", "error_code": "PROVIDERS_TEMPORARILY_UNAVAILABLE", "diagnostic_reason": "timeout", "world_mutated": false}
+	var timeout_parsed: Dictionary = Provider.parse_response(503, JSON.stringify(timeout_error).to_utf8_buffer())
+	if timeout_parsed.get("error_code") != "PROVIDERS_TEMPORARILY_UNAVAILABLE" or timeout_parsed.get("diagnostic_reason") != "timeout" or timeout_parsed.get("world_mutated", true):
+		errors.append("NIM04 se perdio codigo tecnico timeout del broker")
+	timeout_error["diagnostic_reason"] = "http_503"
+	if Provider.parse_response(503, JSON.stringify(timeout_error).to_utf8_buffer()).get("diagnostic_reason") != "http_503":
+		errors.append("NIM04 no distingue HTTP 503 remoto de timeout")
+	timeout_error["diagnostic_reason"] = "API_KEY_SUPER_SECRETA"
+	if Provider.parse_response(503, JSON.stringify(timeout_error).to_utf8_buffer()).get("diagnostic_reason") != "":
+		errors.append("NIM04 permite texto remoto en diagnostico")
+	timeout_error["error_code"] = "ATAQUE_NPC"
+	if Provider.parse_response(503, JSON.stringify(timeout_error).to_utf8_buffer()).get("error_code") != "PROVIDER_UNAVAILABLE":
+		errors.append("NIM04 permite texto ajeno del broker")
+	timeout_error["error_code"] = "PROVIDERS_TEMPORARILY_UNAVAILABLE"
+	timeout_error["world_mutated"] = true
+	if Provider.parse_response(503, JSON.stringify(timeout_error).to_utf8_buffer()).get("error_code") != "PROVIDER_UNAVAILABLE":
+		errors.append("NIM04 acepta supuesta mutacion de mundo")
 	if Provider.parse_response(200, "not-json".to_utf8_buffer()).get("status") == "ok":
 		errors.append("NIM04 basura aceptada")
 	if Pipeline.submit_text("Hablar", Pipeline.MODE_INTEGRATION).get("error_code") != "CORE_NOT_CONNECTED":
