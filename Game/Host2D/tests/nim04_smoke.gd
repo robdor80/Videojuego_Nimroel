@@ -10,8 +10,8 @@ func _run() -> void:
 	var errors: Array[String] = []
 	var good: Dictionary = {
 		"status": "ok", "kind": "technical_diagnostic",
-		"source": "mistral", "model": "mistral-small-2603", "tier": "simple",
-		"intent": "dialogar", "fallback_used": true,
+		"source": "gemini", "model": "gemini-3.5-flash-lite", "tier": "simple",
+		"intent": "dialogar", "fallback_used": false,
 		"latency_ms": 19, "world_mutated": false
 	}
 	var parsed: Dictionary = Provider.parse_response(200, JSON.stringify(good).to_utf8_buffer())
@@ -43,12 +43,14 @@ func _run() -> void:
 	if Provider.parse_response(429, JSON.stringify(paid_error).to_utf8_buffer()).get("error_code") != "LOCAL_CALL_CAP_REACHED":
 		errors.append("NIM04 muestra código de error no autorizado")
 	var broken: Array[Dictionary] = [
-		{"status": "ok", "kind": "npc", "source": "mistral", "model": "mistral-small-2603", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
-		{"status": "ok", "kind": "technical_diagnostic", "source": "mistral", "model": "mistral-medium-3-5", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
+		# Un proveedor retirado nunca puede regresar en la respuesta técnica.
+		{"status": "ok", "kind": "technical_diagnostic", "source": "mistral", "model": "mistral-small-2603", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
+		{"status": "ok", "kind": "npc", "source": "gemini", "model": "gemini-3.5-flash-lite", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
+		{"status": "ok", "kind": "technical_diagnostic", "source": "openai", "model": "gpt-6-sol", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
 		{"status": "ok", "kind": "technical_diagnostic", "source": "gemini", "model": "gemini-3.8-flash", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
-		{"status": "ok", "kind": "technical_diagnostic", "source": "mistral", "model": "mistral-small-2603", "tier": "simple", "intent": "ejecutar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
-		{"status": "ok", "kind": "technical_diagnostic", "source": "mistral", "model": "mistral-small-2603", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": true},
-		{"status": "ok", "kind": "technical_diagnostic", "source": "mistral", "model": "mistral-small-2603", "tier": "simple", "intent": "dialogar", "fallback_used": "yes", "latency_ms": 19, "world_mutated": false},
+		{"status": "ok", "kind": "technical_diagnostic", "source": "gemini", "model": "gemini-3.5-flash-lite", "tier": "simple", "intent": "ejecutar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
+		{"status": "ok", "kind": "technical_diagnostic", "source": "gemini", "model": "gemini-3.5-flash-lite", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": true},
+		{"status": "ok", "kind": "technical_diagnostic", "source": "gemini", "model": "gemini-3.5-flash-lite", "tier": "simple", "intent": "dialogar", "fallback_used": "yes", "latency_ms": 19, "world_mutated": false},
 	]
 	for example in broken:
 		if Provider.parse_response(200, JSON.stringify(example).to_utf8_buffer()).get("status") == "ok":
