@@ -1,4 +1,4 @@
-name: Nimroel · NIM-01 a NIM-04 Host 2D checks
+name: Nimroel · NIM-01 a NIM-05 Host 2D checks
 
 on:
   push:
@@ -10,14 +10,18 @@ on:
       - "Docs/NIM-03_**"
       - "Tools/NIM03/**"
       - "Tools/NIM04/**"
+      - "Tools/NIM05/**"
       - "Docs/NIM-04_**"
+      - "Docs/NIM-05_**"
       - ".github/workflows/nim-01-host-check.yml"
   pull_request:
     paths:
       - "Game/**"
       - "Tools/NIM03/**"
       - "Tools/NIM04/**"
+      - "Tools/NIM05/**"
       - "Docs/NIM-04_**"
+      - "Docs/NIM-05_**"
       - ".github/workflows/nim-01-host-check.yml"
   workflow_dispatch:
 
@@ -26,7 +30,7 @@ permissions:
 
 jobs:
   godot-linux-headless:
-    name: Godot 4.7.2 import + NIM-01/02/03/04 smoke
+    name: Godot 4.7.2 import + NIM-01/02/03/04/05 smoke
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -72,6 +76,12 @@ jobs:
           set -euo pipefail
           /tmp/Godot_v4.7.2-stable_linux.x86_64 \
             --headless --path Game/Host2D --script res://tests/nim04_smoke.gd
+      - name: Run NIM-05 Godot broker and Core boundary smoke
+        shell: bash
+        run: |
+          set -euo pipefail
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 \
+            --headless --path Game/Host2D --script res://tests/nim05_smoke.gd
       - name: Run offline proxy and voice preflight negative tests
         shell: bash
         run: |
@@ -85,6 +95,12 @@ jobs:
           python3 -m compileall -q Tools/NIM04
           python3 -m unittest discover -s Tools/NIM04 -p "test_*.py" -v
 
+      - name: Run NIM-05 Python offline idempotency and concurrency tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m compileall -q Tools/NIM05
+          python3 -m unittest discover -s Tools/NIM05 -p "test_*.py" -v
       - name: Run NIM-03 Android keyboard layout regression tests
         shell: bash
         run: |
@@ -93,7 +109,7 @@ jobs:
             --headless --path Game/Host2D --script res://tests/keyboard_layout_smoke.gd
 
   export-prototype-packages:
-    name: Export NIM-04 prototype Windows + Android (not device-tested)
+    name: Export NIM-05 prototype Windows + Android (not device-tested)
     needs: godot-linux-headless
     runs-on: ubuntu-latest
     timeout-minutes: 35
@@ -128,8 +144,8 @@ jobs:
             --headless --editor --path Game/Host2D --import --quit
           /tmp/Godot_v4.7.2-stable_linux.x86_64 \
             --headless --path Game/Host2D \
-            --export-release "Windows MSI x64" export/Nimroel_NIM04_Windows.exe
-          test -s Game/Host2D/export/Nimroel_NIM04_Windows.exe
+            --export-release "Windows MSI x64" export/Nimroel_NIM05_Windows.exe
+          test -s Game/Host2D/export/Nimroel_NIM05_Windows.exe
       - name: Prepare temporary debug-signing keystore
         shell: bash
         run: |
@@ -148,8 +164,8 @@ jobs:
           set -euo pipefail
           /tmp/Godot_v4.7.2-stable_linux.x86_64 \
             --headless --path Game/Host2D \
-            --export-debug "Samsung Tab S9+ ARM64" export/Nimroel_NIM04_TabS9Plus.apk
-          test -s Game/Host2D/export/Nimroel_NIM04_TabS9Plus.apk
+            --export-debug "Samsung Tab S9+ ARM64" export/Nimroel_NIM05_TabS9Plus.apk
+          test -s Game/Host2D/export/Nimroel_NIM05_TabS9Plus.apk
       - name: Verify Android ABI and record file checksums
         shell: bash
         run: |
@@ -157,7 +173,7 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import zipfile
-          apk = Path("Game/Host2D/export/Nimroel_NIM04_TabS9Plus.apk")
+          apk = Path("Game/Host2D/export/Nimroel_NIM05_TabS9Plus.apk")
           with zipfile.ZipFile(apk) as z:
               libs = [name for name in z.namelist() if name.startswith("lib/") and name.endswith(".so")]
           assert libs, "El APK no contiene bibliotecas nativas"
@@ -165,13 +181,13 @@ jobs:
           print("APK contiene solamente bibliotecas ARM64:", libs)
           PY
           cd Game/Host2D/export
-          sha256sum Nimroel_NIM04_Windows.exe Nimroel_NIM04_Windows.pck \
-            Nimroel_NIM04_TabS9Plus.apk > SHA256SUMS.txt
+          sha256sum Nimroel_NIM05_Windows.exe Nimroel_NIM05_Windows.pck \
+            Nimroel_NIM05_TabS9Plus.apk > SHA256SUMS.txt
           cat SHA256SUMS.txt
-      - name: Publish NIM-04 prototype packages for manual device testing
+      - name: Publish NIM-05 prototype packages for manual device testing
         uses: actions/upload-artifact@v4
         with:
-          name: NIM04-Godot-Prototype-Windows-Android
+          name: NIM05-Godot-Prototype-Windows-Android
           path: Game/Host2D/export/*
           retention-days: 14
           if-no-files-found: error
