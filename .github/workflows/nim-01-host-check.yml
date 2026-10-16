@@ -69,6 +69,13 @@ jobs:
           python3 -m compileall -q Tools/NIM03
           python3 -m unittest discover -s Tools/NIM03 -p "test_*.py" -v
 
+      - name: Run NIM-03 Android keyboard layout regression tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          /tmp/Godot_v4.7.2-stable_linux.x86_64 \
+            --headless --path Game/Host2D --script res://tests/keyboard_layout_smoke.gd
+
   export-prototype-packages:
     name: Export NIM-03 prototype Windows + Android (not device-tested)
     needs: godot-linux-headless
