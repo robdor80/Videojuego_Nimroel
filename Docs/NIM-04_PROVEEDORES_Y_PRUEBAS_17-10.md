@@ -2,6 +2,23 @@
 
 **Protocolo y registro de pruebas:** el 16/10/2026 se confirmó una llamada autenticada real a Gemini 3.8 **directamente desde PowerShell en MSI** (fuera del broker y de Godot); ver evidencia al final del apartado Gemini. Durante la preparación del broker NIM-04 no se emplearon credenciales reales ni se realizaron llamadas a Mistral. El broker y el Host son diagnósticos; CoreRPG NO está conectado.
 
+## OpenAI: preparativo y contrato técnico de respaldo (17/10/2026)
+
+**Hechos de cuenta vistos en capturas del usuario:** proyecto de OpenAI Platform `Nimroel-RPG` creado; usuario confirma que generó y guardó la clave (no recibida por el asistente ni almacenada en GitHub); facturación `Pay as you go`, **5,00 USD de saldo**, `Auto-reload is OFF`. Esto **no** equivale a una llamada API validada ni a disponibilidad de cada modelo.
+
+**Adaptador offline añadido al broker NIM-04**, implementado con la [Responses API](https://developers.openai.com/api/reference/resources/responses/methods/create), `store: false`, clasificación como etiqueta única de cuatro valores, sin herramientas, sin WorldState ni respuesta narrativa:
+
+| Nivel | Primario gratis | Respaldo OpenAI facturable |
+|---|---|---|
+| `simple` / Sencilla | `gemini-3.5-flash-lite` | `gpt-6-luna` |
+| `complex` / Exigente | `gemini-3.8-flash` | `gpt-6-sol` |
+
+En esta iteración se utiliza **`gpt-6-sol`**, modelo con identificador fijo, no un alias `latest`. La elección de `gpt-6.1-sol` queda para evaluación explícita posterior. Mistral permanece para pruebas directas, no forma parte del fallback automático.
+
+**Guardias obligatorias para evitar gasto involuntario:** `OPENAI_API_KEY` solo en entorno del proceso broker, `NIMROEL_OPENAI_CONSENT=1` requerido para cualquier invocación OpenAI; `NIMROEL_ENABLE_FALLBACK=1` requerido adicionalmente para fallback desde Gemini (valor por defecto deshabilitado); límite `MAX_PAID_PROVIDER_CALLS=4` por proceso de laboratorio y `MAX_PROVIDER_CALLS=30` total; cada solicitud pide hasta 256 tokens de salida y limita la entrada a 500 caracteres. La cuota de llamadas **no es un presupuesto monetario**; para una futura aplicación real se necesita control estricto de costes y servidor seguro. `OPENAI_API_KEY` no debe incluirse en APK, PCK, EXE, commits ni capturas.
+
+**Pruebas sin coste (offline)** en `Tools/NIM04/test_openai_adapter.py`: ruta exacta, `store=false`, parseo fail-closed, consentimiento requerido, tope local y selección gemini→OpenAI. **Pendiente** validar CI y dos peticiones **reales** dentro de Godot Windows, una a Luna y otra a Sol, con autorización/consentimiento controlado por el usuario. No inferir calidad narrativa de un clasificador de intención. PR #21 permanece Draft sin fusión.
+
 ## Modelos fijados para comparación
 | Nivel | Prioridad de partida | Alternativa candidata | Estado |
 |---|---|---|---|
