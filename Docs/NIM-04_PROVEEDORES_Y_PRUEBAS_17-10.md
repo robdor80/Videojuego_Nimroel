@@ -66,7 +66,7 @@ Al terminar: `Stop-Process -Id $broker.Id`, cerrar el juego y eliminar con `Remo
 - **Primera llamada:** HTTP **400** por un bloque de PowerShell pegado incorrectamente que no construyó bien la variable `$body`; **no** equivale a un 503 del proveedor.
 - **Segundo intento con JSON literal válido:** **ÉXITO**, texto del modelo **`GEMINI FUNCIONA`** (petición completada; HTTP 200 implícito por `Invoke-RestMethod` sin excepción). Esto verifica generación real autenticada con ese modelo, no disponibilidad permanente ni su funcionamiento en el broker NIM-04, Godot, modo narrativo, NPC o CoreRPG.
 - **Latencia, tokens y coste:** no medidos en esta ejecución; requieren toma explícita de datos. El 503 anterior no se reprodujo con la petición corregida, **sin atribuir causa**.
-- **Pendiente NIM-04:** ensayo del broker `provider_proxy.py` con `tier=complex`, proveedor principal `gemini`, fallback deshabilitado, y visualización en Godot Windows. Conservar límite de peticiones y privacidad.
+- **Situación posterior:** el ensayo del broker con `tier=complex`, proveedor `gemini` y fallback deshabilitado, y la visualización en Godot Windows, quedaron validados posteriormente (véase «Validación positiva Godot + Gemini 3.8»). Mantener límites y privacidad.
 
 ### Ensayos posteriores de clasificación — 16/10/2026
 
@@ -84,7 +84,18 @@ Captura suministrada por el propietario: interfaz **Modo: demo**, entrada `Hablo
 
 **Parche experimental en la PR, pendiente de prueba física:** mantener API Gemini 3.8 con `thinkingLevel=low`, pero retirar exclusivamente para ese modelo el formato `responseMimeType/application-json` y `responseSchema` forzados, dado que el único ensayo directo exitoso anterior fue de texto normal. La salida se rechaza salvo que sea *exactamente* `observar`, `desplazarse`, `dialogar` u `otro` (sin prosa, JSON, instrucciones ni contenido de mundo). Gemini 3.5 conserva esquema JSON validado. La app Godot ahora conserva solo `error_code` y `diagnostic_reason` de una lista cerrada y muestra `timeout` o `http_503` si el broker los comunicó, sin devolver trazas, secretos ni texto de proveedores.
 
-**No es prueba de servicio ni solución confirmada**: solo CI offline y una prueba posterior desde la interfaz Godot pueden validar el nuevo camino. No enviar canon ni habilitar fallback durante el ensayo. **Es necesario actualizar ambos componentes** (broker local Python y EXE/PCK recompilados de la misma revisión de la rama); no sirve la instancia antigua.
+**Nota histórica (anterior al éxito final):** en este punto todavía faltaba una prueba real desde la interfaz Godot. No enviar canon ni habilitar fallback durante el ensayo. **Es necesario actualizar ambos componentes** (broker local Python y EXE/PCK recompilados de la misma revisión de la rama); no sirve la instancia antigua.
+
+### Validación positiva Godot + Gemini 3.8 — 16/10/2026
+
+**PRUEBA REAL SUPERADA (diagnóstico solamente).** Evidencia: captura de Nimroel NIM-04 proporcionada por el propietario, Windows MSI; compilación de GitHub Actions del commit `e5f86ac8c30b029187feac044dd1ac75731c3e89`, ejecución https://github.com/robdor80/Videojuego_Nimroel/actions/runs/38969848950 (3/3 jobs correctos).
+
+- **Preparación:** PowerShell renovado, `GEMINI_API_KEY` local, broker actualizado `provider_proxy.py` escuchando `127.0.0.1:8766`, `NIMROEL_PRIMARY_PROVIDER=gemini`, `NIMROEL_ENABLE_FALLBACK=0`, `NIMROEL_LOCAL_TOKEN` compartido mediante variables de entorno. El EXE se lanzó **desde esa misma sesión PowerShell** para heredar el token.
+- **Acción en Godot:** `Modo: demo`; campo `Hablo con un aldeano`; `Laboratorio IA (no NPC): Exigente`; botón `Probar proveedores`.
+- **Resultado visible exacto:** `gemini / gemini-3.8-flash`, `Intención: dialogar · 1562 ms`. La aplicación muestra la respuesta técnica tras recorrido **Godot → broker Python → API Gemini 3.8 → broker → Godot**, aproximadamente **1,56 segundos** medidos por el broker.
+- **Seguridad y alcance:** sin respaldo Mistral, sin NPC narrativo, sin mutación de WorldState y sin intervención de CoreRPG. No hay tokens consumidos ni coste medidos; es **un éxito puntual**, no garantía de disponibilidad continua.
+- **Incidencia de arranque anterior resuelta:** `LOCAL_AUTH_REQUIRED` apareció al ejecutar el EXE sin heredar el token de PowerShell. Se corrigió ejecutándolo mediante `Start-Process` **en la misma sesión**; no se modificó la autenticación del broker ni se deshabilitó su protección.
+- **Conclusión delimitada:** validado el diagnóstico real de Gemini 3.8 dentro de Godot/Windows. Siguen pendientes Gemini 3.5 **mediante el broker NIM-04**, Mistral real, tablet Tab S9+ y cualquier integración narrativa/autoridad CoreRPG. Mantener PR #21 en borrador, sin fusionar sin consentimiento expreso.
 
 ## Matriz de evidencias (separando prueba directa y pruebas de integración)
 | Caso | Resultado hoy | Latencia | Consumo/coste | Observación |
@@ -95,7 +106,7 @@ Captura suministrada por el propietario: interfaz **Modo: demo**, entrada `Hablo
 | Gemini 3.8 / exigente, broker NIM-04 anterior | FALLÓ: 503 **local** genérico | 12 s configurados; sin métrica medida | No medido | No identifica HTTP remoto ni causa exacta |
 | Gemini 3.8 / exigente, Google directo clasificación | TIMEOUT en dos ensayos (JSON schema y JSON simple) | ~53 s primero; >35 s segundo | No medido | No demuestra fallo de disponibilidad ni de schema exclusivamente |
 | Gemini 3.8 / exigente, Godot + broker previo | **FALLO mostrado en Godot** | No medido | No medido | PROVIDER_UNAVAILABLE, causa oculta por parser anterior |
-| Gemini 3.8 / exigente, Godot + broker experimental sin JSON forzado | PENDIENTE | — | — | Recompilar y ensayar con ambos componentes actualizados |
+| Gemini 3.8 / exigente, Godot + broker actualizado sin JSON forzado | **ÉXITO REAL — 16/10**, `dialogar` | **1562 ms (1,56 s)** | No medido | Captura del juego en Windows, commit `e5f86ac8`; solo clasificación técnica |
 | Mistral Medium 3.5 / exigente | PENDIENTE | — | — | Acceso/coste |
 | Alternancia en error simulado | SOLO UNIT TEST OFFLINE | — | 0 | No acredita outage real |
 | Cambio de proveedor remoto real | PENDIENTE | — | — | Requiere autorización explícita |
