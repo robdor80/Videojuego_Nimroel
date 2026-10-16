@@ -9,7 +9,6 @@ import argparse
 import hmac
 import json
 import os
-import re
 import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -24,7 +23,6 @@ TIMEOUT_SECONDS = 12
 GEMINI_COMPLEX_TIMEOUT_SECONDS = 22  # inferior al timeout de Godot (28 s)
 CIRCUIT_SECONDS = 60
 GOOGLE_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-MISTRAL_URL = "https://api.mistral.ai/v1/chat/completions"
 OPENAI_URL = "https://api.openai.com/v1/responses"
 MAX_PAID_PROVIDER_CALLS = 4  # pruebas explícitas por proceso; no presupuesto monetario
 SYSTEM_PROMPT = (
@@ -46,13 +44,11 @@ LABEL_PROMPT = (
 # pueden cambiar de versión silenciosamente.
 ROUTES = {
     "simple": (("gemini", "gemini-3.5-flash-lite"),
-               ("mistral", "mistral-small-2603"),
                ("openai", "gpt-6-luna")),
     "complex": (("gemini", "gemini-3.8-flash"),
-                ("mistral", "mistral-medium-3-5"),
                 ("openai", "gpt-6-sol")),
 }
-KEY_ENV = {"gemini": "GEMINI_API_KEY", "mistral": "MISTRAL_API_KEY", "openai": "OPENAI_API_KEY"}
+KEY_ENV = {"gemini": "GEMINI_API_KEY", "openai": "OPENAI_API_KEY"}
 
 
 class ProviderFailure(Exception):
@@ -79,7 +75,7 @@ def _intent_from_json(value):
 
 
 def _intent_from_label(value):
-    """Gemini 3.8: solamente una de cuatro etiquetas, sin prosa ni JSON libre."""
+    """Solo una de cuatro etiquetas, sin prosa ni JSON libre."""
     if not isinstance(value, str):
         raise ProviderFailure("malformed")
     label = value.strip()
@@ -166,25 +162,6 @@ def classify(provider, model, text):
             return _intent_from_label(contents) if is_complex else _intent_from_json(json.loads(contents))
         except (KeyError, IndexError, TypeError, ValueError):
             raise ProviderFailure("malformed") from None
-    if provider == "mistral":
-        payload = {
-            "model": model,
-            "messages": [
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": text},
-            ],
-            "temperature": 0,
-            "max_tokens": 256,
-            "response_format": {"type": "json_object"},
-        }
-        result = _post_json(MISTRAL_URL, payload, {"Authorization": "Bearer " + api_key})
-        try:
-            contents = result["choices"][0]["message"]["content"]
-            if not isinstance(contents, str):
-                raise ProviderFailure("malformed")
-            return _intent_from_json(json.loads(contents))
-        except (KeyError, IndexError, TypeError, ValueError):
-            raise ProviderFailure("malformed") from None
     if provider == "openai":
         # Solo un diagnóstico técnico: sin herramientas, sin WorldState y sin
         # persistencia del contenido en Responses (store=false).
@@ -239,8 +216,8 @@ class ProviderRouter:
         available = dict(ROUTES[tier])
         if preferred_provider not in available:
             raise ProviderFailure("request_rejected")
-        # Nunca enviar a Mistral por error cuando Gemini falle: ruta de pago
-        # autorizada Gemini -> OpenAI. Mistral se conserva para pruebas directas.
+        # Ruta operativa única: Gemini gratuito -> OpenAI con consentimiento.
+        # OpenAI directo se permite solo con autorización de gasto explícita.
         primary = (preferred_provider, available[preferred_provider])
         backup = ("openai", available["openai"])
         ranked = (primary, backup) if preferred_provider == "gemini" else (primary,)
