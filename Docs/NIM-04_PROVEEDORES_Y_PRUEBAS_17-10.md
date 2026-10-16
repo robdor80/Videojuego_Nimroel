@@ -25,6 +25,19 @@ En esta iteración se utiliza **`gpt-6-sol`**, modelo con identificador fijo, no
 
 **Pruebas sin coste (offline)** en `Tools/NIM04/test_openai_adapter.py`: ruta exacta, `store=false`, parseo fail-closed, consentimiento requerido, tope local y selección gemini→OpenAI. **Pendiente** validar CI y dos peticiones **reales** dentro de Godot Windows, una a Luna y otra a Sol, con autorización/consentimiento controlado por el usuario. No inferir calidad narrativa de un clasificador de intención. PR #21 permanece Draft sin fusión.
 
+## Estado arquitectónico vigente (decisión del propietario, 17/10/2026)
+
+**Mistral eliminado definitivamente de la arquitectura de Nimroel.** Su adaptador, URL API, variable `MISTRAL_API_KEY`, rutas del router, whitelist de Godot y tests positivos se han retirado. Los HTTP 429 registrados anteriormente son evidencia histórica, no un proveedor pendiente de reactivar.
+
+| Clase | Prioridad 1 — gratuita | Prioridad 2 — facturable |
+|---|---|---|
+| Sencilla | Gemini 3.5 Flash-Lite — `gemini-3.5-flash-lite` | GPT-6 Luna — `gpt-6-luna` |
+| Exigente | Gemini 3.8 Flash — `gemini-3.8-flash` | GPT-6 Sol — `gpt-6-sol` |
+
+**Fallback controlado:** predeterminado `OFF`; requiere `NIMROEL_ENABLE_FALLBACK=1` y `NIMROEL_OPENAI_CONSENT=1`, con máximo de 4 llamadas OpenAI por proceso del laboratorio. Esto limita ensayos, **no establece un techo monetario robusto** para producción. La conmutación ante fallo de Gemini se ha probado offline, no todavía de extremo a extremo con fallo real en Godot. El propietario ya ha validado Luna y Sol individualmente en Godot (1531 y 1391 ms respectivamente); Gemini 3.8 también. Gemini 3.5 sigue demostrado en NIM-03; prueba individual NIM-04 por broker pendiente. Ninguna prueba narrativa NPC ni mutación de WorldState.
+
+**Trazabilidad:** el bloque «Modelos fijados para comparación», las observaciones posteriores sobre Mistral y su matriz de pruebas proceden del período previo a esta decisión. Se conservan para auditoría exclusivamente y **no** son instrucciones de uso ni plan actual.
+
 ## Modelos fijados para comparación
 | Nivel | Prioridad de partida | Alternativa candidata | Estado |
 |---|---|---|---|
