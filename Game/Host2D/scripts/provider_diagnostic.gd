@@ -8,8 +8,8 @@ const ENDPOINT := "http://127.0.0.1:8766/v1/provider-probe"
 const TIERS := ["simple", "complex"]
 const INTENTS := ["observar", "desplazarse", "dialogar", "otro"]
 const MODELS := {
-	"simple": {"gemini": "gemini-3.5-flash-lite", "mistral": "mistral-small-2603"},
-	"complex": {"gemini": "gemini-3.8-flash", "mistral": "mistral-medium-3-5"}
+	"simple": {"gemini": "gemini-3.5-flash-lite", "mistral": "mistral-small-2603", "openai": "gpt-6-luna"},
+	"complex": {"gemini": "gemini-3.8-flash", "mistral": "mistral-medium-3-5", "openai": "gpt-6-sol"}
 }
 
 var _http: HTTPRequest
@@ -59,6 +59,14 @@ static func parse_response(code: int, body: PackedByteArray) -> Dictionary:
 		if code == 403:
 			return _fail("LOCAL_AUTH_REQUIRED")
 		if code == 429:
+			# La cuota de llamadas local incluye un cupo facturable separado.
+			# Solo aceptar códigos seguros: nunca imprimir mensajes upstream.
+			if body.size() <= 512:
+				var cap_doc := JSON.new()
+				if cap_doc.parse(body.get_string_from_utf8()) == OK and cap_doc.data is Dictionary:
+					var details: Dictionary = cap_doc.data
+					if details.get("status") == "unavailable" and details.get("world_mutated", true) == false and details.get("error_code") == "LOCAL_PAID_CALL_CAP_REACHED":
+						return _fail("LOCAL_PAID_CALL_CAP_REACHED")
 			return _fail("LOCAL_CALL_CAP_REACHED")
 		# Solo trasladar codigos tecnicos definidos por nuestro broker local.
 		# Nunca mostrar cuerpos de Google/Mistral ni contenido libre remoto.
@@ -71,7 +79,8 @@ static func parse_response(code: int, body: PackedByteArray) -> Dictionary:
 				var allowed_codes := [
 					"PROVIDERS_TEMPORARILY_UNAVAILABLE", "PROVIDER_AUTH_UNAVAILABLE",
 					"PROVIDER_KEY_NOT_CONFIGURED", "PROVIDER_OUTPUT_REJECTED",
-					"PROVIDER_REQUEST_REJECTED"
+					"PROVIDER_REQUEST_REJECTED",
+					"PAID_PROVIDER_NOT_AUTHORIZED", "LOCAL_PAID_CALL_CAP_REACHED"
 				]
 				var allowed_reasons := [
 					"timeout", "network_error", "http_429", "http_500",
