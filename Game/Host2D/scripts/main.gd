@@ -5,6 +5,7 @@ extends Control
 const GATEWAY = preload("res://scripts/demo_gateway.gd")
 const PIPELINE = preload("res://scripts/interaction_pipeline.gd")
 const GEMINI_DIAGNOSTIC = preload("res://scripts/gemini_diagnostic.gd")
+const PROVIDER_DIAGNOSTIC = preload("res://scripts/provider_diagnostic.gd")
 const KEYBOARD_LAYOUT = preload("res://scripts/keyboard_layout.gd")
 const ART_SCENE = preload("res://art/aldea_fondo_provisional.svg")
 const ART_PORTRAIT = preload("res://art/retrato_provisional.svg")
@@ -26,6 +27,9 @@ var _hint: Label
 var _service_state: Label
 var _mode_button: Button
 var _gemini_diagnostic
+var _provider_diagnostic
+var _provider_tier: OptionButton
+var _provider_row: HBoxContainer
 var _integration_mode: bool = false
 var _turn_sequence: int = 0
 var _keyboard_compact: bool = false
@@ -38,6 +42,9 @@ func _ready() -> void:
 	_gemini_diagnostic = GEMINI_DIAGNOSTIC.new()
 	add_child(_gemini_diagnostic)
 	_gemini_diagnostic.probe_finished.connect(_on_gemini_probe_finished)
+	_provider_diagnostic = PROVIDER_DIAGNOSTIC.new()
+	add_child(_provider_diagnostic)
+	_provider_diagnostic.probe_finished.connect(_on_provider_probe_finished)
 	_build_interface()
 	get_viewport().size_changed.connect(_update_layout)
 	set_process(OS.has_feature("mobile"))
@@ -190,6 +197,25 @@ func _build_interface() -> void:
 	_hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	footer.add_child(_hint)
 	_footer = footer
+	# NIM-04: fila técnica separada; no se muestra en Android y no altera
+	# la barra de envío ni el flujo de partida.
+	if not OS.has_feature("mobile"):
+		_provider_row = HBoxContainer.new()
+		_provider_row.name = "DiagnosticoProveedores"
+		_provider_row.add_theme_constant_override("separation", 8)
+		_entry_dock.add_child(_provider_row)
+		_provider_row.add_child(_make_label("Laboratorio IA (no NPC):", 11, Color(0.78, 0.84, 0.83)))
+		_provider_tier = OptionButton.new()
+		_provider_tier.name = "NivelDiagnostico"
+		_provider_tier.add_item("Sencilla", 0)
+		_provider_tier.add_item("Exigente", 1)
+		_provider_row.add_child(_provider_tier)
+		var provider_button := Button.new()
+		provider_button.name = "ProbarProveedores"
+		provider_button.text = "Probar proveedores"
+		provider_button.tooltip_text = "Envía tu texto al proxy local y al proveedor habilitado. Solo clasificación técnica; no hay NPC ni partida."
+		provider_button.pressed.connect(_probe_providers)
+		_provider_row.add_child(provider_button)
 
 func _update_layout() -> void:
 	if not is_instance_valid(_conversation_panel):
@@ -207,6 +233,8 @@ func _update_layout() -> void:
 	_masthead.visible = not _keyboard_compact
 	_top_info.visible = not _keyboard_compact
 	_footer.visible = not _keyboard_compact
+	if is_instance_valid(_provider_row):
+		_provider_row.visible = not _keyboard_compact
 	_sync_portrait_visibility()
 
 	var phone: bool = view.x < 760.0
@@ -282,6 +310,28 @@ func _on_gemini_probe_finished(result: Dictionary) -> void:
 		var code: String = str(result.get("error_code", "UNKNOWN"))
 		_append_bubble("SISTEMA · DIAGNÓSTICO", "No se completó el diagnóstico Gemini (" + code + "). La demo sigue disponible.", false)
 		_hint.text = "Diagnóstico sin confirmar"
+	call_deferred("_layout_panel_controls")
+
+func _probe_providers() -> void:
+	_hint.text = "Diagnóstico multiproveedor solicitado (no es una partida)"
+	var tier: String = "complex" if _provider_tier.selected == 1 else "simple"
+	_provider_diagnostic.probe(_input.text, tier)
+
+func _on_provider_probe_finished(result: Dictionary) -> void:
+	if str(result.get("status", "")) == "ok":
+		var provider: String = str(result.get("source", ""))
+		var model: String = str(result.get("model", ""))
+		var intent: String = str(result.get("intent", ""))
+		var latency: String = str(result.get("latency_ms", 0))
+		var fallback: String = " · respaldo" if bool(result.get("fallback_used", false)) else ""
+		_append_bubble("SISTEMA · PRUEBA IA", provider + " / " + model + fallback + "\nIntención: " + intent + " · " + latency + " ms. No es respuesta NPC ni modifica el mundo.", false)
+		_hint.text = "Proveedor verificado solo como clasificación"
+	else:
+		var code: String = str(result.get("error_code", "UNKNOWN"))
+		var reason: String = str(result.get("diagnostic_reason", ""))
+		var reason_detail: String = " · Motivo: " + reason if not reason.is_empty() else ""
+		_append_bubble("SISTEMA · PRUEBA IA", "Diagnóstico no disponible (" + code + reason_detail + "). La demo sigue operativa y CoreRPG no ha intervenido.", false)
+		_hint.text = "Prueba multiproveedor sin confirmar"
 	call_deferred("_layout_panel_controls")
 
 func _toggle_mode() -> void:
