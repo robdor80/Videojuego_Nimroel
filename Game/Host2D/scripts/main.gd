@@ -328,7 +328,9 @@ func _on_provider_probe_finished(result: Dictionary) -> void:
 		_hint.text = "Proveedor verificado solo como clasificación"
 	else:
 		var code: String = str(result.get("error_code", "UNKNOWN"))
-		_append_bubble("SISTEMA · PRUEBA IA", "Diagnóstico no disponible (" + code + "). La demo sigue operativa y CoreRPG no ha intervenido.", false)
+		var reason: String = str(result.get("diagnostic_reason", ""))
+		var reason_detail: String = " · Motivo: " + reason if not reason.is_empty() else ""
+		_append_bubble("SISTEMA · PRUEBA IA", "Diagnóstico no disponible (" + code + reason_detail + "). La demo sigue operativa y CoreRPG no ha intervenido.", false)
 		_hint.text = "Prueba multiproveedor sin confirmar"
 	call_deferred("_layout_panel_controls")
 
