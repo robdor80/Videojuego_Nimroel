@@ -105,19 +105,6 @@ class RouterTests(unittest.TestCase):
 
 
 class ModelAdapterTests(unittest.TestCase):
-    @patch.dict(os.environ, {"MISTRAL_API_KEY": "not-real-test-key"})
-    def test_mistral_json_parsed_without_world(self):
-        with patch.object(p, "_post_json", return_value={
-            "choices": [{"message": {"content": '{"intent":"desplazarse"}'}}]
-        }) as post:
-            self.assertEqual(p.classify("mistral", "mistral-small-2603", "Avanzo"), "desplazarse")
-            url, payload, headers = post.call_args.args
-            self.assertEqual(url, p.MISTRAL_URL)
-            self.assertEqual(payload["model"], "mistral-small-2603")
-            self.assertEqual(payload["response_format"], {"type": "json_object"})
-            self.assertTrue(headers["Authorization"].startswith("Bearer "))
-            self.assertNotIn("not-real-test-key", json.dumps(payload))
-
     @patch.dict(os.environ, {"GEMINI_API_KEY": "not-real-test-key"})
     def test_gemini_json_parsed(self):
         with patch.object(p, "_post_json", return_value={
@@ -180,36 +167,32 @@ class ModelAdapterTests(unittest.TestCase):
     def test_timeout_reason_is_safe_and_separate_from_http_503(self):
         with patch.object(p.request, "urlopen", side_effect=TimeoutError("local-test-only-secret")):
             with self.assertRaises(p.ProviderFailure) as caught:
-                p._post_json(p.MISTRAL_URL, {}, {}, timeout_seconds=2)
+                p._post_json(p.OPENAI_URL, {}, {}, timeout_seconds=2)
         self.assertEqual(caught.exception.code, "transient")
         self.assertEqual(caught.exception.diagnostic_reason, "timeout")
         self.assertNotIn("local-test-only-secret", str(caught.exception))
-        http_error = error.HTTPError(p.MISTRAL_URL, 503, "local-test-only-secret", {}, None)
+        http_error = error.HTTPError(p.OPENAI_URL, 503, "local-test-only-secret", {}, None)
         with patch.object(p.request, "urlopen", side_effect=http_error):
             with self.assertRaises(p.ProviderFailure) as caught_http:
-                p._post_json(p.MISTRAL_URL, {}, {})
+                p._post_json(p.OPENAI_URL, {}, {})
         self.assertEqual(caught_http.exception.diagnostic_reason, "http_503")
-
-    @patch.dict(os.environ, {"MISTRAL_API_KEY": "test-only"})
-    def test_mistral_rejects_prose_and_other_fields(self):
-        for response in ('{"intent":"dialogar","action":"kill"}', 'Hola', '{"intent":"conjurar"}'):
-            with patch.object(p, "_post_json", return_value={"choices": [{"message": {"content": response}}]}):
-                with self.assertRaises(p.ProviderFailure):
-                    p.classify("mistral", "mistral-small-2603", "Hola")
 
     def test_http_503_and_429_are_transient_401_is_not(self):
         for status, expected in ((503, "transient"), (429, "transient"), (401, "authorization")):
             with self.subTest(status=status):
-                http_error = error.HTTPError(p.MISTRAL_URL, status, "test", {}, None)
+                http_error = error.HTTPError(p.OPENAI_URL, status, "test", {}, None)
                 with patch.object(p.request, "urlopen", side_effect=http_error):
                     with self.assertRaises(p.ProviderFailure) as c:
-                        p._post_json(p.MISTRAL_URL, {}, {})
+                        p._post_json(p.OPENAI_URL, {}, {})
                 self.assertEqual(c.exception.code, expected)
 
-    def test_secretless_no_key(self):
-        with patch.dict(os.environ, {"MISTRAL_API_KEY": ""}):
-            with self.assertRaisesRegex(p.ProviderFailure, "not_configured"):
-                p.classify("mistral", "mistral-small-2603", "Hola")
+    def test_provider_not_in_operational_routes(self):
+        for tier in ("simple", "complex"):
+            with self.assertRaisesRegex(p.ProviderFailure, "request_rejected"):
+                p.ProviderRouter(adapter=lambda *_: "otro").run(
+                    tier, "Hola", preferred_provider="mistral"
+                )
+
 
 
 class HTTPServerTests(unittest.TestCase):
