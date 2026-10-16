@@ -21,6 +21,7 @@ class RouterTests(unittest.TestCase):
         self.assertFalse(result["fallback_used"])
         self.assertNotIn("reply", result)
 
+    @patch.dict(os.environ, {"NIMROEL_OPENAI_CONSENT": "1"})
     def test_complex_fallback_after_503(self):
         seen = []
         def adapter(provider, model, _text):
@@ -31,14 +32,14 @@ class RouterTests(unittest.TestCase):
         result = p.ProviderRouter(adapter=adapter).run("complex", "Miro", fallback_enabled=True)
         self.assertEqual(seen, [
             ("gemini", "gemini-3.8-flash"),
-            ("mistral", "mistral-medium-3-5"),
+            ("openai", "gpt-6-sol"),
         ])
         self.assertTrue(result["fallback_used"])
         self.assertFalse(result["world_mutated"])
 
     def test_default_no_fallback(self):
         def adapter(provider, _model, _text):
-            if provider == "mistral":
+            if provider == "openai":
                 self.fail("Fallback no autorizado")
             raise p.ProviderFailure("transient")
         with self.assertRaises(p.ProviderFailure):
@@ -55,6 +56,7 @@ class RouterTests(unittest.TestCase):
                     p.ProviderRouter(adapter=adapter).run("simple", "Hola", True)
                 self.assertEqual(seen, ["gemini"])
 
+    @patch.dict(os.environ, {"NIMROEL_OPENAI_CONSENT": "1"})
     def test_missing_primary_key_can_route_if_enabled(self):
         seen = []
         def adapter(provider, *_):
@@ -63,8 +65,9 @@ class RouterTests(unittest.TestCase):
                 raise p.ProviderFailure("not_configured")
             return "otro"
         self.assertTrue(p.ProviderRouter(adapter=adapter).run("simple", "Hola", True)["fallback_used"])
-        self.assertEqual(seen, ["gemini", "mistral"])
+        self.assertEqual(seen, ["gemini", "openai"])
 
+    @patch.dict(os.environ, {"NIMROEL_OPENAI_CONSENT": "1"})
     def test_two_transients_open_circuit_then_cooldown(self):
         fake_time = [100.]
         seen = []
