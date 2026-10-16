@@ -1,9 +1,11 @@
 extends Control
 ## Nimroel 2D NIM-01: solo presentación, SIN autoridad de mundo.
-## No existe conexión con CoreRPG/Gemini en esta maqueta ejecutable.
+## NIM-03: diagnóstico Gemini aislado; CoreRPG y la partida siguen desconectados.
 
 const GATEWAY = preload("res://scripts/demo_gateway.gd")
 const PIPELINE = preload("res://scripts/interaction_pipeline.gd")
+const GEMINI_DIAGNOSTIC = preload("res://scripts/gemini_diagnostic.gd")
+const KEYBOARD_LAYOUT = preload("res://scripts/keyboard_layout.gd")
 const ART_SCENE = preload("res://art/aldea_fondo_provisional.svg")
 const ART_PORTRAIT = preload("res://art/retrato_provisional.svg")
 
@@ -14,6 +16,7 @@ var _conversation_panel: PanelContainer
 var _content_area: Control
 var _top_info: VBoxContainer
 var _entry_dock: VBoxContainer
+var _footer: HBoxContainer
 var _history_scroll: ScrollContainer
 var _history_messages: VBoxContainer
 var _input: LineEdit
@@ -22,14 +25,40 @@ var _portrait: TextureRect
 var _hint: Label
 var _service_state: Label
 var _mode_button: Button
+var _gemini_diagnostic
 var _integration_mode: bool = false
 var _turn_sequence: int = 0
+var _keyboard_compact: bool = false
+var _portrait_wanted: bool = false
+var _keyboard_height_last: int = -1
+var _keyboard_poll_time: float = 0.0
+var _normal_view_height: float = 720.0
 
 func _ready() -> void:
+	_gemini_diagnostic = GEMINI_DIAGNOSTIC.new()
+	add_child(_gemini_diagnostic)
+	_gemini_diagnostic.probe_finished.connect(_on_gemini_probe_finished)
 	_build_interface()
 	get_viewport().size_changed.connect(_update_layout)
+	set_process(OS.has_feature("mobile"))
 	_update_layout()
 	_reset_demo()
+
+func _process(delta: float) -> void:
+	# Android: el cambio de altura del teclado no garantiza un resize de viewport.
+	# Un teclado Bluetooth no abre el IME y conserva el layout normal.
+	_keyboard_poll_time += delta
+	if _keyboard_poll_time < 0.12:
+		return
+	_keyboard_poll_time = 0.0
+	var keyboard_px: int = DisplayServer.virtual_keyboard_get_height()
+	if keyboard_px != _keyboard_height_last:
+		_keyboard_height_last = keyboard_px
+		_update_layout()
+
+func _sync_portrait_visibility() -> void:
+	if is_instance_valid(_portrait_line):
+		_portrait_line.visible = _portrait_wanted and not _keyboard_compact
 
 func _build_interface() -> void:
 	_backdrop = TextureRect.new()
@@ -148,10 +177,19 @@ func _build_interface() -> void:
 	_mode_button.tooltip_text = "Alterna laboratorio y conexión real (todavía no disponible)"
 	_mode_button.pressed.connect(_toggle_mode)
 	footer.add_child(_mode_button)
+	# Solo Windows: no se activa red en Android ni se añaden controles en la tablet.
+	if not OS.has_feature("mobile"):
+		var diagnostic_button := Button.new()
+		diagnostic_button.name = "DiagnosticoGemini"
+		diagnostic_button.text = "Probar Gemini"
+		diagnostic_button.tooltip_text = "Envía el texto al proxy local y a Google Gemini. No es gameplay ni respuesta de un NPC."
+		diagnostic_button.pressed.connect(_probe_gemini)
+		footer.add_child(diagnostic_button)
 	_hint = _make_label("Solo se ensaya la interfaz", 11, Color(0.73, 0.78, 0.78))
 	_hint.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	footer.add_child(_hint)
+	_footer = footer
 
 func _update_layout() -> void:
 	if not is_instance_valid(_conversation_panel):
@@ -159,11 +197,29 @@ func _update_layout() -> void:
 	var view: Vector2 = size
 	if view.x < 1.0 or view.y < 1.0:
 		view = get_viewport_rect().size
+	var keyboard_px: int = DisplayServer.virtual_keyboard_get_height() if OS.has_feature("mobile") else 0
+	var layout: Dictionary = KEYBOARD_LAYOUT.calculate(
+		view, keyboard_px, DisplayServer.screen_get_size(), _normal_view_height, OS.has_feature("mobile")
+	)
+	_keyboard_compact = bool(layout.get("compact", false))
+	if not _keyboard_compact:
+		_normal_view_height = maxf(_normal_view_height, view.y)
+	_masthead.visible = not _keyboard_compact
+	_top_info.visible = not _keyboard_compact
+	_footer.visible = not _keyboard_compact
+	_sync_portrait_visibility()
+
 	var phone: bool = view.x < 760.0
-	var margin: float = 12.0 if phone else 20.0
+	var margin: float = 12.0 if phone or _keyboard_compact else 20.0
 	_masthead.position = Vector2(margin, margin)
 	_masthead.size = Vector2(maxf(250.0, view.x - 2.0 * margin), 72.0)
-	if phone:
+	if _keyboard_compact:
+		# Teclado virtual: conservar historial + texto + Enviar por encima de
+		# la zona ocupada. Los elementos decorativos reaparecen al ocultarlo.
+		var usable: float = float(layout.get("usable_height", view.y))
+		_conversation_panel.position = Vector2(margin, 6.0)
+		_conversation_panel.size = Vector2(maxf(250.0, view.x - 2.0 * margin), maxf(150.0, usable - 12.0))
+	elif phone:
 		var top: float = maxf(102.0, view.y * 0.32)
 		_conversation_panel.position = Vector2(margin, top)
 		_conversation_panel.size = Vector2(maxf(250.0, view.x - 2.0 * margin), maxf(220.0, view.y - top - margin))
@@ -181,7 +237,7 @@ func _layout_panel_controls() -> void:
 	var inner: Vector2 = _content_area.size
 	if inner.x < 1.0 or inner.y < 1.0:
 		return
-	var head_height: float = _top_info.get_combined_minimum_size().y
+	var head_height: float = _top_info.get_combined_minimum_size().y if _top_info.visible else 0.0
 	_top_info.position = Vector2.ZERO
 	_top_info.size = Vector2(inner.x, head_height)
 	var dock_height: float = _entry_dock.get_combined_minimum_size().y
@@ -206,8 +262,26 @@ func _on_send(raw_text: String) -> void:
 	_append_bubble("TÚ", raw_text.strip_edges(), true)
 	var demo: bool = str(result.get("status", "")) == "demo"
 	_append_bubble("SIMULADOR · NO ES UN NPC" if demo else "SISTEMA · CONEXIÓN NO DISPONIBLE", str(result.get("reply", "")), false)
-	_portrait_line.visible = demo and bool(result.get("portrait_demo", false))
+	_portrait_wanted = demo and bool(result.get("portrait_demo", false))
+	_sync_portrait_visibility()
 	_hint.text = "Sin hechos del mundo modificados"
+	call_deferred("_layout_panel_controls")
+
+func _probe_gemini() -> void:
+	# Interacción deliberada y separada de submit_turn_for_test. No se borra
+	# el texto, ni se añade un mensaje de jugador ni se modifica el turno.
+	_hint.text = "Diagnóstico externo solicitado (no es una partida)"
+	_gemini_diagnostic.probe(_input.text)
+
+func _on_gemini_probe_finished(result: Dictionary) -> void:
+	if str(result.get("status", "")) == "ok":
+		var kind: String = str(result.get("intent", ""))
+		_append_bubble("SISTEMA · DIAGNÓSTICO GEMINI", "Clasificación técnica recibida: " + kind + ". No es una respuesta de NPC; no hay CoreRPG ni mundo conectado.", false)
+		_hint.text = "Gemini respondió solo al diagnóstico"
+	else:
+		var code: String = str(result.get("error_code", "UNKNOWN"))
+		_append_bubble("SISTEMA · DIAGNÓSTICO", "No se completó el diagnóstico Gemini (" + code + "). La demo sigue disponible.", false)
+		_hint.text = "Diagnóstico sin confirmar"
 	call_deferred("_layout_panel_controls")
 
 func _toggle_mode() -> void:
@@ -224,7 +298,8 @@ func _reset_demo() -> void:
 		_history_messages.remove_child(item)
 		item.queue_free()
 	_append_bubble("SISTEMA · PRUEBA", "Bienvenido al laboratorio visual de Nimroel RPG.\n\nEsta es una demostración de interfaz, NO una partida generada. Todavía no están conectados Gemini ni CoreRPG y ninguna acción modifica el mundo.\n\nPrueba: ¿Qué veo desde donde estoy? / Avanzo por la aldea / Hablo con un aldeano.", false)
-	_portrait_line.visible = false
+	_portrait_wanted = false
+	_sync_portrait_visibility()
 	_input.clear()
 	_hint.text = "Solo se ensaya la interfaz"
 	call_deferred("_layout_panel_controls")
