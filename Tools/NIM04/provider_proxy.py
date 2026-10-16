@@ -288,7 +288,6 @@ class ProviderRouter:
 
 
 ROUTER = ProviderRouter()
-LEDGER = RequestLedger()
 
 
 
@@ -330,6 +329,9 @@ class RequestLedger:
                 self._entries[request_id] = (
                     previous[0], (status, dict(response)), self.clock()
                 )
+
+
+LEDGER = RequestLedger()
 
 
 class Handler(BaseHTTPRequestHandler):
