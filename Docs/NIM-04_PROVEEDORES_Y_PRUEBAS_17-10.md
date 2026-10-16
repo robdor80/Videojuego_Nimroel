@@ -68,13 +68,25 @@ Al terminar: `Stop-Process -Id $broker.Id`, cerrar el juego y eliminar con `Remo
 - **Latencia, tokens y coste:** no medidos en esta ejecución; requieren toma explícita de datos. El 503 anterior no se reprodujo con la petición corregida, **sin atribuir causa**.
 - **Pendiente NIM-04:** ensayo del broker `provider_proxy.py` con `tier=complex`, proveedor principal `gemini`, fallback deshabilitado, y visualización en Godot Windows. Conservar límite de peticiones y privacidad.
 
+### Ensayos posteriores de clasificación — 16/10/2026
+
+Evidencia proporcionada por el usuario desde PowerShell MSI, no pruebas ejecutadas por GitHub:
+- **Broker NIM-04 (código anterior)**: POST autenticado a `127.0.0.1:8766/v1/provider-probe` con `tier=complex`, `text="Hablo con un aldeano"`, fallback `0`; respondió **HTTP local 503** `PROVIDERS_TEMPORARILY_UNAVAILABLE`. El HTTP 503 **lo produce el broker**: no acredita que Google respondiese 503; la implementación anterior agrupaba timeouts, errores de red y HTTP 429/503.
+- **Petición directa Google con schema JSON y temperature 0**: timeout desde PowerShell al cabo de ~53 segundos con `-TimeoutSec 45`; sin respuesta remota ni código HTTP confirmado.
+- **Petición directa Google con responseMimeType JSON y sin schema ni temperature**: otro timeout desde PowerShell con `-TimeoutSec 35`; sin respuesta ni HTTP remoto confirmado. Por ello no se demuestra que el schema o temperature causen el timeout por sí solos.
+- El mensaje posterior `finally : El término 'finally' no se reconoce` es sintaxis de PowerShell por ejecutar `finally` separadamente de `try/catch`; no es respuesta de Google.
+- **Intervención en rama NIM-04 pendiente de ensayo remoto:** para `gemini-3.8-flash`, `thinkingConfig.thinkingLevel="low"`, retirada de `temperature`, `maxOutputTokens=512`, timeout de broker **22 s** frente a 12 s anterior (Godot tiene 28 s), respuesta técnica `diagnostic_reason` solo con valores seguros como `timeout`, `network_error` o `http_503`. El modo JSON y la validación estricta de intención permanecen. Cambios basados en documentación Google oficial: https://ai.google.dev/gemini-api/docs/generate-content/whats-new-gemini-3.8 y https://ai.google.dev/gemini-api/docs/generate-content/thinking .
+- **La modificación no es una prueba exitosa real**, no garantiza menor latencia ni disponibilidad. Requiere reiniciar el broker Python anterior y cargar nueva versión del script, antes de **un único** nuevo ensayo remoto con consentimiento. No se modificó `main`, CoreRPG ni el canon.
+
 ## Matriz de evidencias (separando prueba directa y pruebas de integración)
 | Caso | Resultado hoy | Latencia | Consumo/coste | Observación |
 |---|---|---|---|---|
 | Gemini 3.5 / sencilla, broker NIM-04 | PENDIENTE | — | — | No heredar como test de broker la prueba NIM-03 |
 | Mistral Small 4 / sencilla | PENDIENTE | — | — | Free y acceso del modelo |
 | Gemini 3.8 / exigente, llamada directa PowerShell MSI | **ÉXITO REAL — 16/10**, texto `GEMINI FUNCIONA` | No medida | No medido | JSON válido; API real autentificada, sin broker ni Godot |
-| Gemini 3.8 / exigente, broker NIM-04 + Godot | PENDIENTE | — | — | No extrapolar la prueba directa a integración |
+| Gemini 3.8 / exigente, broker NIM-04 anterior | FALLÓ: 503 **local** genérico | 12 s configurados; sin métrica medida | No medido | No identifica HTTP remoto ni causa exacta |
+| Gemini 3.8 / exigente, Google directo clasificación | TIMEOUT en dos ensayos (JSON schema y JSON simple) | ~53 s primero; >35 s segundo | No medido | No demuestra fallo de disponibilidad ni de schema exclusivamente |
+| Gemini 3.8 / exigente, broker corregido + Godot | PENDIENTE | — | — | Requiere versión nueva y prueba física MSI |
 | Mistral Medium 3.5 / exigente | PENDIENTE | — | — | Acceso/coste |
 | Alternancia en error simulado | SOLO UNIT TEST OFFLINE | — | 0 | No acredita outage real |
 | Cambio de proveedor remoto real | PENDIENTE | — | — | Requiere autorización explícita |
