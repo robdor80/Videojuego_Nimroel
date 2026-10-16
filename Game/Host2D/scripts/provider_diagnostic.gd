@@ -8,8 +8,8 @@ const ENDPOINT := "http://127.0.0.1:8766/v1/provider-probe"
 const TIERS := ["simple", "complex"]
 const INTENTS := ["observar", "desplazarse", "dialogar", "otro"]
 const MODELS := {
-	"simple": {"gemini": "gemini-3.5-flash-lite", "mistral": "mistral-small-2603", "openai": "gpt-6-luna"},
-	"complex": {"gemini": "gemini-3.8-flash", "mistral": "mistral-medium-3-5", "openai": "gpt-6-sol"}
+	"simple": {"gemini": "gemini-3.5-flash-lite", "openai": "gpt-6-luna"},
+	"complex": {"gemini": "gemini-3.8-flash", "openai": "gpt-6-sol"}
 }
 
 var _http: HTTPRequest
@@ -69,7 +69,7 @@ static func parse_response(code: int, body: PackedByteArray) -> Dictionary:
 						return _fail("LOCAL_PAID_CALL_CAP_REACHED")
 			return _fail("LOCAL_CALL_CAP_REACHED")
 		# Solo trasladar codigos tecnicos definidos por nuestro broker local.
-		# Nunca mostrar cuerpos de Google/Mistral ni contenido libre remoto.
+		# Nunca mostrar cuerpos de Google/OpenAI ni contenido libre remoto.
 		if (code == 502 or code == 503) and body.size() <= 512:
 			var error_doc := JSON.new()
 			if error_doc.parse(body.get_string_from_utf8()) == OK and error_doc.data is Dictionary:
