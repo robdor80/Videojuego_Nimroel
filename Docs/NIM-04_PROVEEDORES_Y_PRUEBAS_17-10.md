@@ -95,7 +95,7 @@ Captura suministrada por el propietario: interfaz **Modo: demo**, entrada `Hablo
 - **Resultado visible exacto:** `gemini / gemini-3.8-flash`, `Intención: dialogar · 1562 ms`. La aplicación muestra la respuesta técnica tras recorrido **Godot → broker Python → API Gemini 3.8 → broker → Godot**, aproximadamente **1,56 segundos** medidos por el broker.
 - **Seguridad y alcance:** sin respaldo Mistral, sin NPC narrativo, sin mutación de WorldState y sin intervención de CoreRPG. No hay tokens consumidos ni coste medidos; es **un éxito puntual**, no garantía de disponibilidad continua.
 - **Incidencia de arranque anterior resuelta:** `LOCAL_AUTH_REQUIRED` apareció al ejecutar el EXE sin heredar el token de PowerShell. Se corrigió ejecutándolo mediante `Start-Process` **en la misma sesión**; no se modificó la autenticación del broker ni se deshabilitó su protección.
-- **Conclusión delimitada:** validado el diagnóstico real de Gemini 3.8 dentro de Godot/Windows. Siguen pendientes Gemini 3.5 **mediante el broker NIM-04**, Mistral real, tablet Tab S9+ y cualquier integración narrativa/autoridad CoreRPG. Mantener PR #21 en borrador, sin fusionar sin consentimiento expreso.
+- **Conclusión delimitada:** validado el diagnóstico real de Gemini 3.8 dentro de Godot/Windows. Siguen pendientes Gemini 3.5 **mediante el broker NIM-04**, Mistral real, cualquier regresión específica de teclado sobre NIM-04 no confirmada individualmente y la integración narrativa/autoridad CoreRPG. El funcionamiento general de la tablet y los dos teclados en NIM-03 han sido confirmados por el propietario. Mantener PR #21 en borrador, sin fusionar sin consentimiento expreso.
 
 ## Matriz de evidencias (separando prueba directa y pruebas de integración)
 | Caso | Resultado hoy | Latencia | Consumo/coste | Observación |
@@ -111,8 +111,10 @@ Captura suministrada por el propietario: interfaz **Modo: demo**, entrada `Hablo
 | Alternancia en error simulado | SOLO UNIT TEST OFFLINE | — | 0 | No acredita outage real |
 | Cambio de proveedor remoto real | PENDIENTE | — | — | Requiere autorización explícita |
 
-## Tablet Tab S9+ — requisito diferido
-Descargar la APK `Nimroel_NIM04_TabS9Plus.apk` desde la CI del SHA final, verificar que corresponde al commit y el paquete `org.nimroel.rpg.nim04`. Con teclado Samsung virtual: escribir, leer historial, pulsar Enviar, ocultar teclado y confirmar que cabecera/retrato/pie reaparecen; con Bluetooth: escribir sin IME visible y comprobar que mantiene tamaño completo; alternar ambos con texto conservado. Repetir demo/integración y reanudación. El nuevo panel de proveedores solo existe en Windows; tablet **no** puede llamar a la API.
+## Tablet Tab S9+ — funcionamiento informado por el propietario
+**Confirmaciones del 16/10/2026:** el propietario indica que **la tablet funciona bien** con Nimroel y precisa expresamente que **los dos teclados (Samsung virtual y Bluetooth) ya funcionaban en NIM-03**. Registrar ambos teclados como verificados en NIM-03 por testimonio directo del usuario, sin seguir describiéndolos como fallidos. La confirmación de NIM-04 es de funcionamiento general; no se deduce automáticamente que se haya probado de nuevo cada teclado sobre la APK NIM-04 ni la recuperación del diseño tras ocultar IME. No confundir un test NIM-03 confirmado con un test NIM-04 individual no detallado.
+
+**Comprobaciones adicionales de NIM-04, solo si resultan necesarias para cerrar regresiones:** Descargar la APK `Nimroel_NIM04_TabS9Plus.apk` desde la CI del SHA final, verificar que corresponde al commit y el paquete `org.nimroel.rpg.nim04`. Con teclado Samsung virtual: escribir, leer historial, pulsar Enviar, ocultar teclado y confirmar que cabecera/retrato/pie reaparecen; con Bluetooth: escribir sin IME visible y comprobar que mantiene tamaño completo; alternar ambos con texto conservado. Repetir demo/integración y reanudación. El nuevo panel de proveedores solo existe en Windows; tablet **no** puede llamar a la API.
 
 ## Futuro fuera del laboratorio
 - Núcleo narrativo real: solo tras WorldState y APIs de conocimiento/acciones CoreRPG (4.9/4.10/4.12) y puente nativo ABI/GDExtension probado Windows+ARM64. Ningún LLM aplica directamente cambios ni inventa hechos autorizados.
