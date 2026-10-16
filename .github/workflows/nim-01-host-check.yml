@@ -221,10 +221,17 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit 1 }
           python Tools/NIM03/voice_tts_bench.py --model-dir vits-piper-es_ES-sharvard-medium --output-dir nim03-tts-evidence --speaker 1
           if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Generate REAL dynamic sherpa TTS through NIM-05 lab adapter
+        shell: pwsh
+        run: |
+          python Tools/NIM05/tts_local.py --model-dir vits-piper-es_ES-sharvard-medium --self-test nim05-tts-evidence/nim05_dynamic.wav
+          if ($LASTEXITCODE -ne 0) { exit 1 }
       - name: Publish Windows CI evidence (not tablet or MSI physical test)
         uses: actions/upload-artifact@v4
         with:
           name: NIM03-sherpa-real-TTS-Windows-CI
-          path: nim03-tts-evidence/*
+          path: |
+            nim03-tts-evidence/*
+            nim05-tts-evidence/*
           if-no-files-found: error
           retention-days: 14
