@@ -237,7 +237,7 @@ func _layout_panel_controls() -> void:
 	var inner: Vector2 = _content_area.size
 	if inner.x < 1.0 or inner.y < 1.0:
 		return
-	var head_height: float = _top_info.get_combined_minimum_size().y
+	var head_height: float = _top_info.get_combined_minimum_size().y if _top_info.visible else 0.0
 	_top_info.position = Vector2.ZERO
 	_top_info.size = Vector2(inner.x, head_height)
 	var dock_height: float = _entry_dock.get_combined_minimum_size().y

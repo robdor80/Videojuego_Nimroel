@@ -3,7 +3,7 @@
 ## Estado de evidencia (no confundir)
 | Función | Código | CI de último HEAD | Servicio real | MSI físico | Tab S9+ física |
 | --- | --- | --- | --- | --- | --- |
-| Host 2D NIM-01/NIM-02 | Sí | Tests y export Windows/ARM64 verdes en run 38754496226 (SHA d8ed716) | Demo local | NIM-02 validado | NIM-02 validado |
+| Host 2D NIM-01/NIM-02 | Sí | CI anterior verde; nuevo teclado pendiente de CI | Demo local | NIM-02 validado; NIM-03 pendiente | NIM-03: usuario confirma pruebas funcionales superadas (capturas de integración) |
 | Gemini diagnóstico clasificación (fuera de gameplay) | Sí | Tests negativos/mocks verdes en run 38754496226; NO es Google real | Requiere GEMINI_API_KEY + prueba con Google | Pendiente | No implementado |
 | sherpa-onnx TTS castellano benchmark | Sí | Inferencia REAL Windows CI verde en run 38754496226 | 2 voces WAV/JSON, artifact 11983480292 | Pendiente | No integrado |
 | sherpa-onnx ASR, voz dentro de Godot | No | No | No | No | No |
@@ -46,6 +46,14 @@ Escucha los WAV y registra duración, latencia, factor de tiempo real y SHA256. 
 
 ## APK
 La exportación NIM-03 usa paquete `org.nimroel.rpg.nim03` para coexistir con el APK NIM-02; estará firmado solo para depuración. En Tab S9+, probar arranque, giro, teclado, historial, demo, integración bloqueada, reinicio y reanudación. No habrá botón de diagnóstico Gemini móvil y no hay todavía micrófono/voz local.
+
+## Android: pruebas realizadas y nuevo requisito teclado (16/10/2026)
+
+- Usuario confirma **NIM-03 en Galaxy Tab S9+ como superada** en la compilación APK original: arranque, interfaz apaisada, entrada «Avanzo por la aldea», historial y rechazo por Core desconectado documentados con capturas. La confirmación no acredita conexión real a Core/Gemini/voz.
+- **Incidencia descubierta:** teclado Samsung en pantalla ocupa gran parte de la pantalla y puede ocultar conversación o entrada.
+- Solución nueva: con teclado virtual visible (altura IME real en Android) ocultar temporalmente cabecera/retrato/pie y extender conversación a la zona visible; con teclado Bluetooth (IME=0) conservar la interfaz original. No borrar texto ni cambiar modo al abrir/cerrar teclado.
+- El test geométrico verifica teclado virtual, Bluetooth, viewport reducido y regreso al layout normal. **Todavía debe probarse la nueva APK físicamente**: abrir teclado Samsung, leer historial, enviar; conectar teclado Bluetooth, escribir sin IME y verificar pantalla completa; alternar ambos y comprobar recuperación de pantalla.
+- APK específico de tablet ARM64 (support_normal=false y support_small=false). La compatibilidad móvil no está validada ni incluida en esta fase.
 
 ## Aceptación de PR
 Se debe revisar la CI del **último SHA de rama**, el artefacto de exportación y el WAV/JSON real. Si falla un job, no presentar la PR como validada. Se espera revisión humana y aprobación explícita antes del merge. 

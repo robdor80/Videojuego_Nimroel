@@ -14,7 +14,7 @@ Fecha: 2026-10-15. Base comprobada: main @ df43be5b2a62b137b8ed77f7900818e39646c
 3. **P03 sherpa-onnx TTS castellano**: prueba de inferencia REAL separada de Godot en Windows CI con paquete fijado `sherpa-onnx==1.13.8` y modelo público `vits-piper-es_ES-sharvard-medium`, voces 0/1, WAV, duración, factor de tiempo real y SHA-256. Pendiente evidencia CI/escucha MSI. ASR y backend de Godot/Android NO integrados.
 4. **P04 CoreRPG**: documentar contrato mínimo de GDExtension + C ABI, sin copiar biblioteca ni desarrollar motor lógico. Esperar coordinación de repo independiente sin detener el resto.
 5. **P05 CI**: regresiones NIM-01/NIM-02, NIM-03 parser/seguridad, tests Python, inferencia sherpa, exportación y ABI Windows/Android. **Su estado se verifica con el run del último HEAD, no se anticipa**.
-6. **P06 pruebas físicas**: instalar nueva APK (paquete NIM03 distinto); MSI.exe+pck, demo/integración, diagnóstico voluntario con proxy, audio TTS local separado. Android no se considerará conectada a Gemini, Core ni voz hasta ejecución nativa propia.
+6. **P06 pruebas físicas**: tablet NIM-03 original confirmada por usuario (interfaz y bloqueo Core, no servicio real), MSI pendiente. Se incorpora corrección de teclado Samsung/Bluetooth con prueba geométrica y se requiere una **nueva prueba Android específica** antes de dar ese cambio por validado. Android no se considera conectada a Gemini, Core ni voz.
 
 ## Fronteras inviolables
 - `interaction_pipeline.gd` sigue bloqueando integración de gameplay con `CORE_NOT_CONNECTED`. El diagnóstico Gemini no es `interpret()` ni `narrate()`, no se mezcla en el pipeline y no crea acciones.
