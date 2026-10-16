@@ -123,6 +123,45 @@ class ModelAdapterTests(unittest.TestCase):
             self.assertEqual(p.classify("gemini", "gemini-3.5-flash-lite", "Miro"), "observar")
             self.assertIn("gemini-3.5-flash-lite", post.call_args.args[0])
 
+    @patch.dict(os.environ, {"GEMINI_API_KEY": "not-real-test-key"})
+    def test_gemini_38_uses_low_thinking_and_no_temperature(self):
+        with patch.object(p, "_post_json", return_value={
+            "candidates": [{"content": {"parts": [{"text": '{"intent":"dialogar"}'}]}}]
+        }) as post:
+            self.assertEqual(p.classify("gemini", "gemini-3.8-flash", "Hablo"), "dialogar")
+            url, payload, headers = post.call_args.args
+            self.assertIn("gemini-3.8-flash", url)
+            config = payload["generationConfig"]
+            self.assertEqual(config["thinkingConfig"], {"thinkingLevel": "low"})
+            self.assertEqual(config["maxOutputTokens"], 512)
+            self.assertNotIn("temperature", config)
+            self.assertEqual(post.call_args.kwargs["timeout_seconds"], p.GEMINI_COMPLEX_TIMEOUT_SECONDS)
+            self.assertNotIn("not-real-test-key", json.dumps(payload))
+
+    @patch.dict(os.environ, {"GEMINI_API_KEY": "not-real-test-key"})
+    def test_gemini_lite_keeps_fast_default(self):
+        with patch.object(p, "_post_json", return_value={
+            "candidates": [{"content": {"parts": [{"text": '{"intent":"otro"}'}]}}]
+        }) as post:
+            self.assertEqual(p.classify("gemini", "gemini-3.5-flash-lite", "Hola"), "otro")
+            config = post.call_args.args[1]["generationConfig"]
+            self.assertNotIn("thinkingConfig", config)
+            self.assertNotIn("temperature", config)
+            self.assertEqual(post.call_args.kwargs["timeout_seconds"], p.TIMEOUT_SECONDS)
+
+    def test_timeout_reason_is_safe_and_separate_from_http_503(self):
+        with patch.object(p.request, "urlopen", side_effect=TimeoutError("local-test-only-secret")):
+            with self.assertRaises(p.ProviderFailure) as caught:
+                p._post_json(p.MISTRAL_URL, {}, {}, timeout_seconds=2)
+        self.assertEqual(caught.exception.code, "transient")
+        self.assertEqual(caught.exception.diagnostic_reason, "timeout")
+        self.assertNotIn("local-test-only-secret", str(caught.exception))
+        http_error = error.HTTPError(p.MISTRAL_URL, 503, "local-test-only-secret", {}, None)
+        with patch.object(p.request, "urlopen", side_effect=http_error):
+            with self.assertRaises(p.ProviderFailure) as caught_http:
+                p._post_json(p.MISTRAL_URL, {}, {})
+        self.assertEqual(caught_http.exception.diagnostic_reason, "http_503")
+
     @patch.dict(os.environ, {"MISTRAL_API_KEY": "test-only"})
     def test_mistral_rejects_prose_and_other_fields(self):
         for response in ('{"intent":"dialogar","action":"kill"}', 'Hola', '{"intent":"conjurar"}'):
