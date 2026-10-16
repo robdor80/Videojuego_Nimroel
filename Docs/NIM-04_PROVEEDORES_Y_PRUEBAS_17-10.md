@@ -1,12 +1,12 @@
 # NIM-04 — Protocolo de proveedor real y pruebas (17/10/2026)
 
-**No interpretar esta guía como una prueba efectuada.** No se ha empleado ninguna API key en la fase de preparación, ni se han realizado llamadas remotas a Mistral por este código. El broker y el Host son diagnósticos; CoreRPG NO está conectado.
+**Protocolo y registro de pruebas:** el 16/10/2026 se confirmó una llamada autenticada real a Gemini 3.8 **directamente desde PowerShell en MSI** (fuera del broker y de Godot); ver evidencia al final del apartado Gemini. Durante la preparación del broker NIM-04 no se emplearon credenciales reales ni se realizaron llamadas a Mistral. El broker y el Host son diagnósticos; CoreRPG NO está conectado.
 
 ## Modelos fijados para comparación
 | Nivel | Prioridad de partida | Alternativa candidata | Estado |
 |---|---|---|---|
 | sencilla | Gemini `gemini-3.5-flash-lite` | Mistral Small 4 `mistral-small-2603` | Gemini 3.5 verificado previamente solo en NIM-03; nuevo broker sin verificación real |
-| exigente | Gemini `gemini-3.8-flash` | Mistral Medium 3.5 `mistral-medium-3-5` | Ambos pendientes de generación autenticada desde NIM-04 |
+| exigente | Gemini `gemini-3.8-flash` | Mistral Medium 3.5 `mistral-medium-3-5` | Gemini 3.8 probado con generación directa autenticada PowerShell/MSI el 16/10; ambos adaptadores NIM-04 siguen sin prueba remota |
 
 Los nombres Mistral son IDs específicos documentados. Los alias `mistral-small-latest` y `mistral-medium-latest` existen, pero **NO** se usan en código: la documentación oficial avisa de posibles cambios silenciosos. Referencias:
 - https://docs.mistral.ai/models/mistral-small-4-0-26-03
@@ -59,12 +59,22 @@ Al terminar: `Stop-Process -Id $broker.Id`, cerrar el juego y eliminar con `Remo
 - Si aparece de nuevo `HTTP 503 UNAVAILABLE`, permitir **como máximo un segundo ensayo diferido**, no insistir indefinidamente; registrar `EXTERNAL_UNAVAILABLE`. No confundir ausencia de 429 con acceso garantizado ni suponer causa.
 - Si responde, contrastar la salida de la misma frase desde Godot y el broker. Resultado 200 verificado + salida válida = *clasificación diagnóstica*, no narrativa, CoreRPG ni gameplay.
 
-## Matriz de evidencias a rellenar únicamente tras ejecutar
+### Evidencia de reintento Gemini 3.8 — 16/10/2026
+- **Origen:** salida de PowerShell en MSI aportada por el propietario; no es un log de CI ni una prueba ejecutada por GitHub/Godot.
+- **Clave:** `GEMINI_API_KEY` cargada únicamente en el entorno local, confirmada presente. **No se recoge valor ni se incluye ningún secreto.**
+- **Endpoint:** Google Generative Language API `v1beta/models/gemini-3.8-flash:generateContent`, encabezado `x-goog-api-key`, JSON con `contents/parts/text`.
+- **Primera llamada:** HTTP **400** por un bloque de PowerShell pegado incorrectamente que no construyó bien la variable `$body`; **no** equivale a un 503 del proveedor.
+- **Segundo intento con JSON literal válido:** **ÉXITO**, texto del modelo **`GEMINI FUNCIONA`** (petición completada; HTTP 200 implícito por `Invoke-RestMethod` sin excepción). Esto verifica generación real autenticada con ese modelo, no disponibilidad permanente ni su funcionamiento en el broker NIM-04, Godot, modo narrativo, NPC o CoreRPG.
+- **Latencia, tokens y coste:** no medidos en esta ejecución; requieren toma explícita de datos. El 503 anterior no se reprodujo con la petición corregida, **sin atribuir causa**.
+- **Pendiente NIM-04:** ensayo del broker `provider_proxy.py` con `tier=complex`, proveedor principal `gemini`, fallback deshabilitado, y visualización en Godot Windows. Conservar límite de peticiones y privacidad.
+
+## Matriz de evidencias (separando prueba directa y pruebas de integración)
 | Caso | Resultado hoy | Latencia | Consumo/coste | Observación |
 |---|---|---|---|---|
 | Gemini 3.5 / sencilla, broker NIM-04 | PENDIENTE | — | — | No heredar como test de broker la prueba NIM-03 |
 | Mistral Small 4 / sencilla | PENDIENTE | — | — | Free y acceso del modelo |
-| Gemini 3.8 / exigente | PENDIENTE | — | — | 503 anterior, verificar de nuevo |
+| Gemini 3.8 / exigente, llamada directa PowerShell MSI | **ÉXITO REAL — 16/10**, texto `GEMINI FUNCIONA` | No medida | No medido | JSON válido; API real autentificada, sin broker ni Godot |
+| Gemini 3.8 / exigente, broker NIM-04 + Godot | PENDIENTE | — | — | No extrapolar la prueba directa a integración |
 | Mistral Medium 3.5 / exigente | PENDIENTE | — | — | Acceso/coste |
 | Alternancia en error simulado | SOLO UNIT TEST OFFLINE | — | 0 | No acredita outage real |
 | Cambio de proveedor remoto real | PENDIENTE | — | — | Requiere autorización explícita |
