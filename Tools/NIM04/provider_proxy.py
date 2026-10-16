@@ -274,7 +274,7 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(400, {"status": "error", "error_code": "INVALID_JSON"})
         if (set(payload) != {"purpose", "tier", "text"} or
                 payload["purpose"] != "diagnostic_intent" or
-                payload["tier"] not in ROUTES or
+                not isinstance(payload["tier"], str) or payload["tier"] not in ROUTES or
                 not isinstance(payload["text"], str) or
                 not 0 < len(payload["text"].strip()) <= MAX_CHARS):
             return self._send(400, {"status": "error", "error_code": "INVALID_PROBE"})
