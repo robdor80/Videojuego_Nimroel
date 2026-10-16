@@ -36,8 +36,17 @@ func probe(raw_text: String, tier: String = "simple") -> void:
 	if _busy:
 		probe_finished.emit(_fail("DIAGNOSTIC_BUSY"))
 		return
+	var nonce: PackedByteArray = Crypto.new().generate_random_bytes(16)
+	if nonce.size() != 16:
+		probe_finished.emit(_fail("LOCAL_ID_UNAVAILABLE"))
+		return
 	_busy = true
-	var payload: String = JSON.stringify({"purpose": "diagnostic_intent", "tier": tier, "text": text})
+	# El broker deduplica este identificador aleatorio durante cinco minutos.
+	# No es una identidad del jugador ni un identificador de entidad CoreRPG.
+	var payload: String = JSON.stringify({
+		"purpose": "diagnostic_intent", "tier": tier,
+		"text": text, "request_id": nonce.hex_encode()
+	})
 	var err: Error = _http.request(
 		ENDPOINT,
 		PackedStringArray(["Content-Type: application/json", "X-Nimroel-Token: " + token]),
@@ -70,7 +79,7 @@ static func parse_response(code: int, body: PackedByteArray) -> Dictionary:
 			return _fail("LOCAL_CALL_CAP_REACHED")
 		# Solo trasladar codigos tecnicos definidos por nuestro broker local.
 		# Nunca mostrar cuerpos de Google/OpenAI ni contenido libre remoto.
-		if (code == 502 or code == 503) and body.size() <= 512:
+		if (code == 409 or code == 502 or code == 503) and body.size() <= 512:
 			var error_doc := JSON.new()
 			if error_doc.parse(body.get_string_from_utf8()) == OK and error_doc.data is Dictionary:
 				var details: Dictionary = error_doc.data
@@ -80,7 +89,9 @@ static func parse_response(code: int, body: PackedByteArray) -> Dictionary:
 					"PROVIDERS_TEMPORARILY_UNAVAILABLE", "PROVIDER_AUTH_UNAVAILABLE",
 					"PROVIDER_KEY_NOT_CONFIGURED", "PROVIDER_OUTPUT_REJECTED",
 					"PROVIDER_REQUEST_REJECTED",
-					"PAID_PROVIDER_NOT_AUTHORIZED", "LOCAL_PAID_CALL_CAP_REACHED"
+					"PAID_PROVIDER_NOT_AUTHORIZED", "LOCAL_PAID_CALL_CAP_REACHED",
+					"LOCAL_PROBE_BUSY", "LOCAL_DUPLICATE_IN_PROGRESS",
+					"REQUEST_ID_REUSED", "LOCAL_REQUEST_CACHE_FULL"
 				]
 				var allowed_reasons := [
 					"timeout", "network_error", "http_429", "http_500",
