@@ -21,6 +21,7 @@ MAX_BODY_BYTES = 4096
 MAX_RESPONSE_BYTES = 65536
 MAX_PROVIDER_CALLS = 30  # por proceso, incluidas alternativas
 TIMEOUT_SECONDS = 12
+GEMINI_COMPLEX_TIMEOUT_SECONDS = 22  # inferior al timeout de Godot (28 s)
 CIRCUIT_SECONDS = 60
 GOOGLE_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 MISTRAL_URL = "https://api.mistral.ai/v1/chat/completions"
@@ -45,9 +46,11 @@ KEY_ENV = {"gemini": "GEMINI_API_KEY", "mistral": "MISTRAL_API_KEY"}
 class ProviderFailure(Exception):
     """Solo categorías controladas: no se serializan detalles del upstream."""
 
-    def __init__(self, code):
+    def __init__(self, code, diagnostic_reason=None):
         super().__init__(code)
         self.code = code
+        # Exclusivamente codigos seguros, nunca texto, respuesta ni clave.
+        self.diagnostic_reason = diagnostic_reason
 
 
 def _json_object(value):
@@ -63,13 +66,13 @@ def _intent_from_json(value):
     return value["intent"]
 
 
-def _post_json(url, payload, headers):
+def _post_json(url, payload, headers, timeout_seconds=TIMEOUT_SECONDS):
     req = request.Request(
         url, data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
         headers={"Content-Type": "application/json", **headers}, method="POST"
     )
     try:
-        with request.urlopen(req, timeout=TIMEOUT_SECONDS) as response:
+        with request.urlopen(req, timeout=timeout_seconds) as response:
             if response.status != 200:
                 raise ProviderFailure("transient" if response.status >= 500 else "malformed")
             raw = response.read(MAX_RESPONSE_BYTES + 1)
@@ -77,10 +80,12 @@ def _post_json(url, payload, headers):
         if exc.code in (401, 403):
             raise ProviderFailure("authorization") from None
         if exc.code == 429 or exc.code in (500, 502, 503, 504):
-            raise ProviderFailure("transient") from None
+            raise ProviderFailure("transient", "http_" + str(exc.code)) from None
         raise ProviderFailure("request_rejected") from None
-    except (error.URLError, TimeoutError, OSError):
-        raise ProviderFailure("transient") from None
+    except (error.URLError, TimeoutError, OSError) as exc:
+        underlying = getattr(exc, "reason", None)
+        reason = "timeout" if isinstance(exc, TimeoutError) or isinstance(underlying, TimeoutError) else "network_error"
+        raise ProviderFailure("transient", reason) from None
     if len(raw) > MAX_RESPONSE_BYTES:
         raise ProviderFailure("malformed")
     try:
@@ -95,11 +100,12 @@ def classify(provider, model, text):
     if not api_key:
         raise ProviderFailure("not_configured")
     if provider == "gemini":
+        is_complex = model == "gemini-3.8-flash"
         payload = {
             "systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]},
             "contents": [{"role": "user", "parts": [{"text": text}]}],
             "generationConfig": {
-                "temperature": 0, "maxOutputTokens": 256,
+                "maxOutputTokens": 512 if is_complex else 256,
                 "responseMimeType": "application/json",
                 "responseSchema": {
                     "type": "OBJECT",
@@ -110,7 +116,14 @@ def classify(provider, model, text):
                 },
             },
         }
-        result = _post_json(GOOGLE_URL.format(model=model), payload, {"x-goog-api-key": api_key})
+        # Gemini 3.8: temperature obsoleta; pensamiento LOW reduce latencia
+        # para una clasificacion breve sin relajar la validacion estructurada.
+        if is_complex:
+            payload["generationConfig"]["thinkingConfig"] = {"thinkingLevel": "low"}
+        result = _post_json(
+            GOOGLE_URL.format(model=model), payload, {"x-goog-api-key": api_key},
+            timeout_seconds=GEMINI_COMPLEX_TIMEOUT_SECONDS if is_complex else TIMEOUT_SECONDS
+        )
         try:
             contents = result["candidates"][0]["content"]["parts"][0]["text"]
             return _intent_from_json(json.loads(contents))
@@ -221,7 +234,7 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
-    def _failure(self, code):
+    def _failure(self, code, diagnostic_reason=None):
         status = 429 if code == "budget_exhausted" else 503
         if code in ("malformed", "request_rejected"):
             status = 502
@@ -233,10 +246,15 @@ class Handler(BaseHTTPRequestHandler):
             "malformed": "PROVIDER_OUTPUT_REJECTED",
             "request_rejected": "PROVIDER_REQUEST_REJECTED",
         }
-        self._send(status, {
+        response = {
             "status": "unavailable", "error_code": labels.get(code, "PROVIDER_UNAVAILABLE"),
             "world_mutated": False
-        })
+        }
+        if code == "transient" and diagnostic_reason in (
+            "timeout", "network_error", "http_429", "http_500", "http_502", "http_503", "http_504"
+        ):
+            response["diagnostic_reason"] = diagnostic_reason
+        self._send(status, response)
 
     def _local_host_ok(self):
         return self.headers.get("Host", "") in {
@@ -289,7 +307,7 @@ class Handler(BaseHTTPRequestHandler):
                 preferred_provider=os.environ.get("NIMROEL_PRIMARY_PROVIDER", "gemini")
             )
         except ProviderFailure as exc:
-            return self._failure(exc.code)
+            return self._failure(exc.code, exc.diagnostic_reason)
         outcome["latency_ms"] = round((time.monotonic() - start) * 1000)
         self._send(200, outcome)
 
