@@ -78,6 +78,14 @@ Evidencia proporcionada por el usuario desde PowerShell MSI, no pruebas ejecutad
 - **Intervención en rama NIM-04 pendiente de ensayo remoto:** para `gemini-3.8-flash`, `thinkingConfig.thinkingLevel="low"`, retirada de `temperature`, `maxOutputTokens=512`, timeout de broker **22 s** frente a 12 s anterior (Godot tiene 28 s), respuesta técnica `diagnostic_reason` solo con valores seguros como `timeout`, `network_error` o `http_503`. El modo JSON y la validación estricta de intención permanecen. Cambios basados en documentación Google oficial: https://ai.google.dev/gemini-api/docs/generate-content/whats-new-gemini-3.8 y https://ai.google.dev/gemini-api/docs/generate-content/thinking .
 - **La modificación no es una prueba exitosa real**, no garantiza menor latencia ni disponibilidad. Requiere reiniciar el broker Python anterior y cargar nueva versión del script, antes de **un único** nuevo ensayo remoto con consentimiento. No se modificó `main`, CoreRPG ni el canon.
 
+### Ensayo desde Godot Windows y ajuste posterior — 16/10/2026
+
+Captura suministrada por el propietario: interfaz **Modo: demo**, entrada `Hablo con un aldeano`, selector **Exigente** y botón **Probar proveedores**. Godot mostró `Diagnóstico no disponible (PROVIDER_UNAVAILABLE)`, con demo y CoreRPG intactos. Por tanto **NO está validada la integración Gemini 3.8 desde Godot**. La aplicación antigua descartaba el cuerpo de error técnico del broker (HTTP 502/503), impidiendo saber si fue timeout, 503 remoto o rechazo; no atribuir causa exacta sin evidencia.
+
+**Parche experimental en la PR, pendiente de prueba física:** mantener API Gemini 3.8 con `thinkingLevel=low`, pero retirar exclusivamente para ese modelo el formato `responseMimeType/application-json` y `responseSchema` forzados, dado que el único ensayo directo exitoso anterior fue de texto normal. La salida se rechaza salvo que sea *exactamente* `observar`, `desplazarse`, `dialogar` u `otro` (sin prosa, JSON, instrucciones ni contenido de mundo). Gemini 3.5 conserva esquema JSON validado. La app Godot ahora conserva solo `error_code` y `diagnostic_reason` de una lista cerrada y muestra `timeout` o `http_503` si el broker los comunicó, sin devolver trazas, secretos ni texto de proveedores.
+
+**No es prueba de servicio ni solución confirmada**: solo CI offline y una prueba posterior desde la interfaz Godot pueden validar el nuevo camino. No enviar canon ni habilitar fallback durante el ensayo. **Es necesario actualizar ambos componentes** (broker local Python y EXE/PCK recompilados de la misma revisión de la rama); no sirve la instancia antigua.
+
 ## Matriz de evidencias (separando prueba directa y pruebas de integración)
 | Caso | Resultado hoy | Latencia | Consumo/coste | Observación |
 |---|---|---|---|---|
@@ -86,7 +94,8 @@ Evidencia proporcionada por el usuario desde PowerShell MSI, no pruebas ejecutad
 | Gemini 3.8 / exigente, llamada directa PowerShell MSI | **ÉXITO REAL — 16/10**, texto `GEMINI FUNCIONA` | No medida | No medido | JSON válido; API real autentificada, sin broker ni Godot |
 | Gemini 3.8 / exigente, broker NIM-04 anterior | FALLÓ: 503 **local** genérico | 12 s configurados; sin métrica medida | No medido | No identifica HTTP remoto ni causa exacta |
 | Gemini 3.8 / exigente, Google directo clasificación | TIMEOUT en dos ensayos (JSON schema y JSON simple) | ~53 s primero; >35 s segundo | No medido | No demuestra fallo de disponibilidad ni de schema exclusivamente |
-| Gemini 3.8 / exigente, broker corregido + Godot | PENDIENTE | — | — | Requiere versión nueva y prueba física MSI |
+| Gemini 3.8 / exigente, Godot + broker previo | **FALLO mostrado en Godot** | No medido | No medido | PROVIDER_UNAVAILABLE, causa oculta por parser anterior |
+| Gemini 3.8 / exigente, Godot + broker experimental sin JSON forzado | PENDIENTE | — | — | Recompilar y ensayar con ambos componentes actualizados |
 | Mistral Medium 3.5 / exigente | PENDIENTE | — | — | Acceso/coste |
 | Alternancia en error simulado | SOLO UNIT TEST OFFLINE | — | 0 | No acredita outage real |
 | Cambio de proveedor remoto real | PENDIENTE | — | — | Requiere autorización explícita |
