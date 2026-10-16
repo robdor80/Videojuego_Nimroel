@@ -66,6 +66,16 @@ def _intent_from_json(value):
     return value["intent"]
 
 
+def _intent_from_label(value):
+    """Gemini 3.8: solamente una de cuatro etiquetas, sin prosa ni JSON libre."""
+    if not isinstance(value, str):
+        raise ProviderFailure("malformed")
+    label = value.strip()
+    if label not in ALLOWED_INTENTS:
+        raise ProviderFailure("malformed")
+    return label
+
+
 def _post_json(url, payload, headers, timeout_seconds=TIMEOUT_SECONDS):
     req = request.Request(
         url, data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
@@ -101,32 +111,51 @@ def classify(provider, model, text):
         raise ProviderFailure("not_configured")
     if provider == "gemini":
         is_complex = model == "gemini-3.8-flash"
-        payload = {
-            "systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]},
-            "contents": [{"role": "user", "parts": [{"text": text}]}],
-            "generationConfig": {
-                "maxOutputTokens": 512 if is_complex else 256,
-                "responseMimeType": "application/json",
-                "responseSchema": {
-                    "type": "OBJECT",
-                    "properties": {"intent": {
-                        "type": "STRING", "enum": sorted(ALLOWED_INTENTS)
-                    }},
-                    "required": ["intent"],
-                },
-            },
-        }
-        # Gemini 3.8: temperature obsoleta; pensamiento LOW reduce latencia
-        # para una clasificacion breve sin relajar la validacion estructurada.
         if is_complex:
-            payload["generationConfig"]["thinkingConfig"] = {"thinkingLevel": "low"}
+            # Prueba NIM-04: en MSI, texto libre genero 200, dos peticiones
+            # JSON se agotaron. Eliminar formato forzado SOLO para 3.8,
+            # manteniendo el contrato de salida fail-closed (etiqueta exacta).
+            payload = {
+                "systemInstruction": {"parts": [{"text": (
+                    SYSTEM_PROMPT +
+                    " Para este ensayo devuelve SOLO una de las cuatro palabras "
+                    "sin JSON, comillas, formato ni explicaciones."
+                )}]},
+                "contents": [{"role": "user", "parts": [{"text": text}]}],
+                "generationConfig": {
+                    "maxOutputTokens": 512,
+                    "thinkingConfig": {"thinkingLevel": "low"},
+                },
+            }
+        else:
+            payload = {
+                "systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]},
+                "contents": [{"role": "user", "parts": [{"text": text}]}],
+                "generationConfig": {
+                    "maxOutputTokens": 256,
+                    "responseMimeType": "application/json",
+                    "responseSchema": {
+                        "type": "OBJECT",
+                        "properties": {"intent": {
+                            "type": "STRING", "enum": sorted(ALLOWED_INTENTS)
+                        }},
+                        "required": ["intent"],
+                    },
+                },
+            }
         result = _post_json(
             GOOGLE_URL.format(model=model), payload, {"x-goog-api-key": api_key},
             timeout_seconds=GEMINI_COMPLEX_TIMEOUT_SECONDS if is_complex else TIMEOUT_SECONDS
         )
         try:
-            contents = result["candidates"][0]["content"]["parts"][0]["text"]
-            return _intent_from_json(json.loads(contents))
+            parts = result["candidates"][0]["content"]["parts"]
+            visible_parts = [part["text"] for part in parts
+                             if isinstance(part, dict) and not part.get("thought", False)
+                             and isinstance(part.get("text"), str)]
+            if len(visible_parts) != 1:
+                raise ProviderFailure("malformed")
+            contents = visible_parts[0]
+            return _intent_from_label(contents) if is_complex else _intent_from_json(json.loads(contents))
         except (KeyError, IndexError, TypeError, ValueError):
             raise ProviderFailure("malformed") from None
     if provider == "mistral":
