@@ -137,6 +137,9 @@ class ModelAdapterTests(unittest.TestCase):
             self.assertNotIn("responseMimeType", config)
             self.assertNotIn("responseSchema", config)
             self.assertNotIn("temperature", config)
+            system_prompt = payload["systemInstruction"]["parts"][0]["text"]
+            self.assertIn("No escribas JSON", system_prompt)
+            self.assertNotIn("Responde solo JSON", system_prompt)
             self.assertEqual(post.call_args.kwargs["timeout_seconds"], p.GEMINI_COMPLEX_TIMEOUT_SECONDS)
             self.assertNotIn("not-real-test-key", json.dumps(payload))
 
