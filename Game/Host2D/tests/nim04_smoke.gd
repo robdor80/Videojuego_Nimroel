@@ -19,6 +19,29 @@ func _run() -> void:
 		errors.append("NIM04 respuesta mock válida rechazada")
 	if parsed.get("world_mutated", true) or parsed.has("reply"):
 		errors.append("NIM04 diagnóstico con poder de partida")
+	# Regresión real detectada el 17/10: Godot rechazaba una respuesta OpenAI 200
+	# válida porque faltaban openai/Luna/Sol en MODELS.
+	for pair in [["simple", "gpt-6-luna"], ["complex", "gpt-6-sol"]]:
+		var openai_ok: Dictionary = good.duplicate(true)
+		openai_ok["source"] = "openai"
+		openai_ok["model"] = pair[1]
+		openai_ok["tier"] = pair[0]
+		openai_ok["fallback_used"] = false
+		var parsed_openai: Dictionary = Provider.parse_response(200, JSON.stringify(openai_ok).to_utf8_buffer())
+		if parsed_openai.get("status") != "ok" or parsed_openai.get("model") != pair[1]:
+			errors.append("NIM04 Godot rechaza OpenAI válido: " + str(pair[1]))
+		openai_ok["model"] = "gpt-6-sol" if pair[0] == "simple" else "gpt-6-luna"
+		if Provider.parse_response(200, JSON.stringify(openai_ok).to_utf8_buffer()).get("status") == "ok":
+			errors.append("NIM04 permite modelo OpenAI de nivel equivocado")
+	var paid_error: Dictionary = {"status": "unavailable", "error_code": "PAID_PROVIDER_NOT_AUTHORIZED", "world_mutated": false}
+	if Provider.parse_response(503, JSON.stringify(paid_error).to_utf8_buffer()).get("error_code") != "PAID_PROVIDER_NOT_AUTHORIZED":
+		errors.append("NIM04 oculta rechazo explícito de proveedor de pago")
+	paid_error["error_code"] = "LOCAL_PAID_CALL_CAP_REACHED"
+	if Provider.parse_response(429, JSON.stringify(paid_error).to_utf8_buffer()).get("error_code") != "LOCAL_PAID_CALL_CAP_REACHED":
+		errors.append("NIM04 oculta límite local facturable")
+	paid_error["error_code"] = "OTHER_UNTRUSTED_ERROR"
+	if Provider.parse_response(429, JSON.stringify(paid_error).to_utf8_buffer()).get("error_code") != "LOCAL_CALL_CAP_REACHED":
+		errors.append("NIM04 muestra código de error no autorizado")
 	var broken: Array[Dictionary] = [
 		{"status": "ok", "kind": "npc", "source": "mistral", "model": "mistral-small-2603", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
 		{"status": "ok", "kind": "technical_diagnostic", "source": "mistral", "model": "mistral-medium-3-5", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
