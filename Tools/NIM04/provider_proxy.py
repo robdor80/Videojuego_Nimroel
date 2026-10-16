@@ -153,10 +153,13 @@ class ProviderRouter:
         self._failures = {}
         self._open_until = {}
 
-    def run(self, tier, text, fallback_enabled=False):
+    def run(self, tier, text, fallback_enabled=False, preferred_provider="gemini"):
         if tier not in ROUTES or not isinstance(text, str) or not 0 < len(text.strip()) <= MAX_CHARS:
             raise ProviderFailure("request_rejected")
-        chain = ROUTES[tier] if fallback_enabled else ROUTES[tier][:1]
+        if preferred_provider not in KEY_ENV:
+            raise ProviderFailure("request_rejected")
+        ranked = ROUTES[tier] if preferred_provider == "gemini" else ROUTES[tier][::-1]
+        chain = ranked if fallback_enabled else ranked[:1]
         for index, (provider, model) in enumerate(chain):
             with self._lock:
                 if self._open_until.get(model, 0) > self.clock():
@@ -282,7 +285,8 @@ class Handler(BaseHTTPRequestHandler):
         try:
             outcome = self.router.run(
                 payload["tier"], payload["text"],
-                fallback_enabled=os.environ.get("NIMROEL_ENABLE_FALLBACK") == "1"
+                fallback_enabled=os.environ.get("NIMROEL_ENABLE_FALLBACK") == "1",
+                preferred_provider=os.environ.get("NIMROEL_PRIMARY_PROVIDER", "gemini")
             )
         except ProviderFailure as exc:
             return self._failure(exc.code)
