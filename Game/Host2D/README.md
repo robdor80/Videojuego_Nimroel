@@ -21,3 +21,8 @@ Pruebas Python offline:
 Para probar conexión Gemini real sin clave en APK, véase `Docs/NIM-03_PRUEBAS_Y_ENTREGA.md`. Exportaciones NIM03 CI: `.exe` + `.pck` y `.apk` ARM64 en artefactos de la PR Draft. NIM03 Android utiliza otro identificador de paquete que NIM02.
 
 Nimroel no es aún una partida persistente; la ejecución de los tests y del benchmark no acredita una partida ni voz de NPC. Nunca usar IA como fuente de verdad fuera de CoreRPG.
+
+
+## Política de modelos de IA (17/10/2026)
+
+La fuente vigente está en [`Docs/IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md`](../../Docs/IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md). El laboratorio NIM-04 en Windows utiliza Gemini en Free y permite OpenAI de pago **solo** con consentimiento. El modelo OpenAI Sol complejo se ha actualizado a `gpt-6.1-sol` en la rama de política: requiere prueba E2E adicional. El nombre solicitado Luna 6.1 aún no tiene ID oficial confirmado: la ruta anterior `gpt-6-luna` **no demuestra Luna 6.1**. Mistral no participa en el enrutador activo. **No enviar clave API al APK** ni considerar este laboratorio un backend narrativo o integración con CoreRPG.
