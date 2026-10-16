@@ -6,7 +6,9 @@ contenido del proveedor. Toda salida se valida como clasificación técnica.
 Sin CoreRPG no hay NPC, autorización ni cambio de partida.
 """
 import argparse
+import hashlib
 import hmac
+import re
 import json
 import os
 import threading
@@ -22,6 +24,9 @@ MAX_PROVIDER_CALLS = 30  # por proceso, incluidas alternativas
 TIMEOUT_SECONDS = 12
 GEMINI_COMPLEX_TIMEOUT_SECONDS = 22  # inferior al timeout de Godot (28 s)
 CIRCUIT_SECONDS = 60
+MAX_CONCURRENT_PROBES = 1  # proceso de laboratorio, nunca llamadas pagables simultáneas
+REQUEST_CACHE_SECONDS = 300  # idempotencia en memoria; nunca persiste texto
+REQUEST_CACHE_SIZE = 128
 GOOGLE_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 OPENAI_URL = "https://api.openai.com/v1/responses"
 MAX_PAID_PROVIDER_CALLS = 4  # pruebas explícitas por proceso; no presupuesto monetario
@@ -209,8 +214,22 @@ class ProviderRouter:
         self._paid_attempts = 0
         self._failures = {}
         self._open_until = {}
+        self._active_probes = 0
 
     def run(self, tier, text, fallback_enabled=False, preferred_provider="gemini"):
+        # Protege el cupo y la facturación ante pulsaciones/hosts simultáneos.
+        # Nunca dejar una petición de red en curso fuera de finally.
+        with self._lock:
+            if self._active_probes >= MAX_CONCURRENT_PROBES:
+                raise ProviderFailure("busy")
+            self._active_probes += 1
+        try:
+            return self._route(tier, text, fallback_enabled, preferred_provider)
+        finally:
+            with self._lock:
+                self._active_probes -= 1
+
+    def _route(self, tier, text, fallback_enabled=False, preferred_provider="gemini"):
         if tier not in ROUTES or not isinstance(text, str) or not 0 < len(text.strip()) <= MAX_CHARS:
             raise ProviderFailure("request_rejected")
         available = dict(ROUTES[tier])
@@ -269,10 +288,53 @@ class ProviderRouter:
 
 
 ROUTER = ProviderRouter()
+LEDGER = RequestLedger()
+
+
+
+class RequestLedger:
+    """Idempotencia efímera de solicitudes diagnósticas, sin almacenar texto.
+
+    Un reenvío del mismo ID nunca repite la API, ni siquiera tras timeout
+    si la primera respuesta llegó a registrarse. La protección solo alcanza
+    a este proceso y a su TTL; no equivale a idempotencia global ni facturación.
+    """
+
+    def __init__(self, clock=time.monotonic):
+        self.clock = clock
+        self._lock = threading.Lock()
+        self._entries = {}  # id -> (huella, respuesta o None, momento)
+
+    def begin(self, request_id, fingerprint):
+        with self._lock:
+            now = self.clock()
+            for key, (_, _, created) in list(self._entries.items()):
+                if now - created >= REQUEST_CACHE_SECONDS:
+                    del self._entries[key]
+            previous = self._entries.get(request_id)
+            if previous is not None:
+                if previous[0] != fingerprint:
+                    return "conflict", None
+                if previous[1] is None:
+                    return "pending", None
+                return "replay", previous[1]
+            if len(self._entries) >= REQUEST_CACHE_SIZE:
+                return "full", None
+            self._entries[request_id] = (fingerprint, None, now)
+            return "new", None
+
+    def complete(self, request_id, status, response):
+        with self._lock:
+            previous = self._entries.get(request_id)
+            if previous is not None and previous[1] is None:
+                self._entries[request_id] = (
+                    previous[0], (status, dict(response)), self.clock()
+                )
 
 
 class Handler(BaseHTTPRequestHandler):
     router = ROUTER
+    ledger = LEDGER
     protocol_version = "HTTP/1.1"
 
     def log_message(self, *_args):
@@ -289,7 +351,7 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
-    def _failure(self, code, diagnostic_reason=None):
+    def _failure(self, code, diagnostic_reason=None, request_id=None):
         status = 429 if code in ("budget_exhausted", "paid_call_cap") else 503
         if code in ("malformed", "request_rejected"):
             status = 502
@@ -299,6 +361,7 @@ class Handler(BaseHTTPRequestHandler):
             "budget_exhausted": "LOCAL_CALL_CAP_REACHED",
             "paid_call_cap": "LOCAL_PAID_CALL_CAP_REACHED",
             "paid_not_authorized": "PAID_PROVIDER_NOT_AUTHORIZED",
+            "busy": "LOCAL_PROBE_BUSY",
             "transient": "PROVIDERS_TEMPORARILY_UNAVAILABLE",
             "malformed": "PROVIDER_OUTPUT_REJECTED",
             "request_rejected": "PROVIDER_REQUEST_REJECTED",
@@ -311,6 +374,8 @@ class Handler(BaseHTTPRequestHandler):
             "timeout", "network_error", "http_429", "http_500", "http_502", "http_503", "http_504"
         ):
             response["diagnostic_reason"] = diagnostic_reason
+        if request_id is not None:
+            self.ledger.complete(request_id, status, response)
         self._send(status, response)
 
     def _local_host_ok(self):
@@ -350,12 +415,32 @@ class Handler(BaseHTTPRequestHandler):
             payload = _json_object(json.loads(self.rfile.read(size)))
         except (ValueError, UnicodeDecodeError, ProviderFailure):
             return self._send(400, {"status": "error", "error_code": "INVALID_JSON"})
-        if (set(payload) != {"purpose", "tier", "text"} or
+        if (set(payload) != {"purpose", "tier", "text", "request_id"} or
+                not isinstance(payload.get("request_id"), str) or
+                re.fullmatch(r"[a-f0-9]{32}", payload["request_id"]) is None or
                 payload["purpose"] != "diagnostic_intent" or
                 not isinstance(payload["tier"], str) or payload["tier"] not in ROUTES or
                 not isinstance(payload["text"], str) or
                 not 0 < len(payload["text"].strip()) <= MAX_CHARS):
             return self._send(400, {"status": "error", "error_code": "INVALID_PROBE"})
+        # Hash efímero solo en RAM: la clave idempotente no contiene texto.
+        fingerprint = hashlib.sha256(json.dumps(
+            [payload["tier"], payload["text"]], ensure_ascii=False,
+            separators=(",", ":")
+        ).encode("utf-8")).hexdigest()
+        request_id = payload["request_id"]
+        action, replay = self.ledger.begin(request_id, fingerprint)
+        if action != "new":
+            if action == "replay":
+                return self._send(replay[0], replay[1])
+            code = {
+                "pending": "LOCAL_DUPLICATE_IN_PROGRESS",
+                "conflict": "REQUEST_ID_REUSED",
+                "full": "LOCAL_REQUEST_CACHE_FULL",
+            }[action]
+            return self._send(409 if action != "full" else 503, {
+                "status": "unavailable", "error_code": code, "world_mutated": False
+            })
         start = time.monotonic()
         try:
             outcome = self.router.run(
@@ -364,8 +449,12 @@ class Handler(BaseHTTPRequestHandler):
                 preferred_provider=os.environ.get("NIMROEL_PRIMARY_PROVIDER", "gemini")
             )
         except ProviderFailure as exc:
-            return self._failure(exc.code, exc.diagnostic_reason)
+            return self._failure(exc.code, exc.diagnostic_reason, request_id)
+        except Exception:
+            # Ni trazas ni detalles de excepciones alcanzan Godot.
+            return self._failure("malformed", request_id=request_id)
         outcome["latency_ms"] = round((time.monotonic() - start) * 1000)
+        self.ledger.complete(request_id, 200, outcome)
         self._send(200, outcome)
 
 
