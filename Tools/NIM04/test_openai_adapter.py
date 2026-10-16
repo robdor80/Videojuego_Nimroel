@@ -94,16 +94,17 @@ class OpenAIRouterTests(unittest.TestCase):
             r.run("complex", "Hola", preferred_provider="openai")
         self.assertEqual(len(seen), p.MAX_PAID_PROVIDER_CALLS)
 
-    def test_manual_mistral_preserved_free_defaults(self):
+    def test_only_gemini_and_openai_are_supported(self):
         seen = []
         r = p.ProviderRouter(adapter=lambda provider, model, text:
                              (seen.append((provider, model)), "otro")[1])
         r.run("simple", "Hola")
-        r.run("simple", "Hola", preferred_provider="mistral")
-        self.assertEqual(seen, [
-            ("gemini", "gemini-3.5-flash-lite"),
-            ("mistral", "mistral-small-2603"),
-        ])
+        self.assertEqual(seen, [("gemini", "gemini-3.5-flash-lite")])
+        self.assertEqual(set(p.KEY_ENV), {"gemini", "openai"})
+        self.assertEqual(tuple(model for _provider, model in p.ROUTES["simple"]),
+                         ("gemini-3.5-flash-lite", "gpt-6-luna"))
+        self.assertEqual(tuple(model for _provider, model in p.ROUTES["complex"]),
+                         ("gemini-3.8-flash", "gpt-6-sol"))
 
 
 if __name__ == "__main__":
