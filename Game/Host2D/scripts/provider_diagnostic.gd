@@ -87,12 +87,12 @@ static func parse_response(code: int, body: PackedByteArray) -> Dictionary:
 		return _fail("INVALID_DIAGNOSTIC_RESPONSE")
 	if not intent is String or not INTENTS.has(intent):
 		return _fail("INVALID_DIAGNOSTIC_RESPONSE")
-	if not fallback is bool or not latency is int or latency < 0 or latency > 90000:
+	if not fallback is bool or not (latency is float or latency is int) or latency < 0 or latency > 90000:
 		return _fail("INVALID_DIAGNOSTIC_RESPONSE")
 	return {
 		"status": "ok", "reply_kind": "technical_diagnostic",
 		"source": source, "model": model, "tier": tier, "intent": intent,
-		"fallback_used": fallback, "latency_ms": latency,
+		"fallback_used": fallback, "latency_ms": int(latency),
 		"world_mutated": false, "speaker_id": ""
 	}
 
