@@ -3,6 +3,7 @@ extends SceneTree
 const Provider = preload("res://scripts/provider_diagnostic.gd")
 const Pipeline = preload("res://scripts/interaction_pipeline.gd")
 const VoicePort = preload("res://scripts/voice_port.gd")
+const VoiceLab = preload("res://scripts/tts_diagnostic.gd")
 
 func _initialize() -> void:
 	call_deferred("_run")
@@ -35,6 +36,12 @@ func _run() -> void:
 		errors.append("NIM05 broker invade la narración")
 	if Pipeline.submit_text("Hola", Pipeline.MODE_INTEGRATION).get("error_code") != "CORE_NOT_CONNECTED":
 		errors.append("NIM05 desbloqueo indebido del Core")
+	var safe_error: Dictionary = {"error_code": "TTS_GENERATION_FAILED"}
+	if VoiceLab._safe_error(503, JSON.stringify(safe_error).to_utf8_buffer()) != "TTS_GENERATION_FAILED":
+		errors.append("NIM05 TTS error local autorizado perdido")
+	safe_error["error_code"] = "INJECTED_SECRET"
+	if VoiceLab._safe_error(503, JSON.stringify(safe_error).to_utf8_buffer()) != "TTS_UNAVAILABLE":
+		errors.append("NIM05 TTS acepta error arbitrario")
 	if VoicePort.capabilities().get("tts_available", true):
 		errors.append("NIM05 declaró falsamente TTS de NPC disponible")
 	if errors.is_empty():
