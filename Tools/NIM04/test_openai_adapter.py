@@ -12,7 +12,7 @@ class OpenAIAdapterTests(unittest.TestCase):
     def test_models_use_responses_api_no_storage(self):
         answer = {"status": "completed", "output": [{"type": "message",
             "content": [{"type": "output_text", "text": "dialogar"}]}]}
-        for model in ("gpt-6-luna", "gpt-6-sol"):
+        for model in ("gpt-6-luna", "gpt-6.1-sol"):
             with self.subTest(model=model), patch.object(p, "_post_json", return_value=answer) as post:
                 self.assertEqual(p.classify("openai", model, "Hablo"), "dialogar")
                 url, payload, headers = post.call_args.args
@@ -77,10 +77,10 @@ class OpenAIRouterTests(unittest.TestCase):
             return "dialogar"
         r = p.ProviderRouter(adapter=adapter)
         self.assertEqual(r.run("simple", "Hola", fallback_enabled=True)["model"], "gpt-6-luna")
-        self.assertEqual(r.run("complex", "Hola", fallback_enabled=True)["model"], "gpt-6-sol")
+        self.assertEqual(r.run("complex", "Hola", fallback_enabled=True)["model"], "gpt-6.1-sol")
         self.assertEqual(seen, [
             ("gemini", "gemini-3.5-flash-lite"), ("openai", "gpt-6-luna"),
-            ("gemini", "gemini-3.8-flash"), ("openai", "gpt-6-sol"),
+            ("gemini", "gemini-3.8-flash"), ("openai", "gpt-6.1-sol"),
         ])
 
     @patch.dict(os.environ, {"NIMROEL_OPENAI_CONSENT": "1"})
@@ -104,7 +104,7 @@ class OpenAIRouterTests(unittest.TestCase):
         self.assertEqual(tuple(model for _provider, model in p.ROUTES["simple"]),
                          ("gemini-3.5-flash-lite", "gpt-6-luna"))
         self.assertEqual(tuple(model for _provider, model in p.ROUTES["complex"]),
-                         ("gemini-3.8-flash", "gpt-6-sol"))
+                         ("gemini-3.8-flash", "gpt-6.1-sol"))
 
 
 if __name__ == "__main__":

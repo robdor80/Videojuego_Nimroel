@@ -46,7 +46,7 @@ ROUTES = {
     "simple": (("gemini", "gemini-3.5-flash-lite"),
                ("openai", "gpt-6-luna")),
     "complex": (("gemini", "gemini-3.8-flash"),
-                ("openai", "gpt-6-sol")),
+                ("openai", "gpt-6.1-sol")),
 }
 KEY_ENV = {"gemini": "GEMINI_API_KEY", "openai": "OPENAI_API_KEY"}
 

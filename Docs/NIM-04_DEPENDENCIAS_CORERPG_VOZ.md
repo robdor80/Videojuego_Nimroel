@@ -35,3 +35,8 @@ La documentación sherpa acredita C/C++ y Android ARM64 como objetivos posibles,
 - **Fase de voz posterior:** prototipo TTS en Godot Windows, export Android con librerías reales, pruebas físicas, después STT. Los tests acústicos previos se usan como punto de partida, no como prueba de integración.
 
 No se crean `DLL`, `.so`, voces empaquetadas, plugins falsos ni claves de terceros en esta fase documental.
+
+
+## Política de modelos posterior — 17/10/2026
+
+Los modelos de IA se rigen por [`Docs/IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md`](IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md): Gemini 3.5 Flash-Lite / Gemini 3.8 Flash en Free, Sol 6.1 verificado en catálogo para pago exigente; Luna 6.1 pendiente de ID/API real. Mistral excluido. Esta política no elimina la dependencia de CoreRPG GDExtension ni altera los trabajos de sherpa-onnx.
