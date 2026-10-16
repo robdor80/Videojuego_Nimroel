@@ -60,6 +60,27 @@ static func parse_response(code: int, body: PackedByteArray) -> Dictionary:
 			return _fail("LOCAL_AUTH_REQUIRED")
 		if code == 429:
 			return _fail("LOCAL_CALL_CAP_REACHED")
+		# Solo trasladar codigos tecnicos definidos por nuestro broker local.
+		# Nunca mostrar cuerpos de Google/Mistral ni contenido libre remoto.
+		if (code == 502 or code == 503) and body.size() <= 512:
+			var error_doc := JSON.new()
+			if error_doc.parse(body.get_string_from_utf8()) == OK and error_doc.data is Dictionary:
+				var details: Dictionary = error_doc.data
+				var error_code: Variant = details.get("error_code", "")
+				var reason: Variant = details.get("diagnostic_reason", "")
+				var allowed_codes := [
+					"PROVIDERS_TEMPORARILY_UNAVAILABLE", "PROVIDER_AUTH_UNAVAILABLE",
+					"PROVIDER_KEY_NOT_CONFIGURED", "PROVIDER_OUTPUT_REJECTED",
+					"PROVIDER_REQUEST_REJECTED"
+				]
+				var allowed_reasons := [
+					"timeout", "network_error", "http_429", "http_500",
+					"http_502", "http_503", "http_504"
+				]
+				if details.get("status") == "unavailable" and details.get("world_mutated", true) == false:
+					if error_code is String and allowed_codes.has(error_code):
+						var safe_reason: String = reason if reason is String and allowed_reasons.has(reason) else ""
+						return _fail(error_code, safe_reason)
 		return _fail("PROVIDER_UNAVAILABLE")
 	if body.size() > 2048:
 		return _fail("INVALID_DIAGNOSTIC_RESPONSE")
@@ -96,8 +117,9 @@ static func parse_response(code: int, body: PackedByteArray) -> Dictionary:
 		"world_mutated": false, "speaker_id": ""
 	}
 
-static func _fail(code: String) -> Dictionary:
+static func _fail(code: String, reason: String = "") -> Dictionary:
 	return {
 		"status": "unavailable", "error_code": code,
+		"diagnostic_reason": reason,
 		"world_mutated": false, "reply_kind": "system", "speaker_id": ""
 	}
