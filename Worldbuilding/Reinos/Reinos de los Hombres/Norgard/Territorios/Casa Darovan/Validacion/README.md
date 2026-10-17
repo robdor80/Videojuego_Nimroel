@@ -7,3 +7,6 @@
 - Acta: `../Auditorias/D02_CIERRE_Y_VALIDACION_2026-10-15.md`; no elevar propuestas a canon.
 
 - D03: `D03_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md` (30 invariantes) y `validate_d03.py` (10 casos negativos). JavaScript remoto realizado sobre perfil y referencias. **Python D03 EJECUTADO — OK** sobre réplica semántica contrastada con GitHub: script idéntico al blob GitHub, JSON D03 canónico idéntico y 10 pruebas negativas superadas. No fue un checkout íntegro: D01/D02/Core se representaron por los campos leídos y las 13 rutas se verificaron remotamente. **D01/D02 Python también EJECUTADOS — OK** en réplicas semánticas contrastadas; **SUPERADO — MSI / checkout íntegro:** ejecución Python D01/D02/D03 OK (8 negativos D02 y 10 negativos D03); **PENDIENTE — GODOT** runtime y **MSI/GIS** pruebas geográficas. Evidencia en `../Auditorias/D03_CIERRE_Y_VALIDACION_2026-10-15.md`.
+
+## D04
+`validate_d04.py`: D01+D02+D03, Core libro y Default fiscal Norgard; 16 mutaciones negativas. **Python pendiente de ejecutar en MSI**. Remoto JavaScript sobre JSON publicado: 22/22 OK incluidas 16 mutaciones negativas rechazadas. Sin ejecución de Godot. Ver matriz D04.
