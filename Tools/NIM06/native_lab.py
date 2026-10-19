@@ -71,7 +71,7 @@ def build(target):
     out = LAB / f'build-{target}'
     args = ['cmake', '-S', LAB, '-B', out, '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']
     if target == 'windows':
-        args += ['-G', 'Visual Studio 17 2022', '-A', 'x64', '-T', 'v143']
+        args += ['-G', 'Visual Studio 17 2022', '-A', 'x64', '-T', 'v143,version=14.44.35207']
     else:
         args += ['-G', 'Ninja']
     if target == 'android':
