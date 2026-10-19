@@ -130,7 +130,12 @@ def smoke():
     exe = godot()
     import_error = None
     try:
-        run([exe, '--headless', '--editor', '--path', PROJECT, '--import', '--quit'], 'godot-import.txt')
+        # --import sets quit_after=1. Allow queued extension documentation to run
+        # before teardown (upstream godot-cpp issue #2024, first-import crash).
+        imported = run([exe, '--headless', '--editor', '--path', PROJECT, '--import',
+                        '--quit-after', '30', '--max-fps', '30'], 'godot-import.txt')
+        if 'ERROR:' in imported:
+            raise RuntimeError('Godot import emitted errors')
     except RuntimeError as error:
         import_error = error
         baseline = CACHE / 'baseline'
