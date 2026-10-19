@@ -1,0 +1,8 @@
+[configuration]
+entry_symbol = "nimroel_core_lab_init"
+compatibility_minimum = "4.5"
+reloadable = false
+[libraries]
+windows.x86_64 = "res://bin/nimroel_core_lab.windows.x86_64.dll"
+android.arm64 = "res://bin/libnimroel_core_lab.android.arm64.so"
+linux.x86_64 = "res://bin/libnimroel_core_lab.linux.x86_64.so"
