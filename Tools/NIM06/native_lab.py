@@ -130,11 +130,10 @@ def smoke():
     exe = godot()
     import_error = None
     try:
-        # --import sets quit_after=1. Allow queued extension documentation to run
-        # before teardown (upstream godot-cpp issue #2024, first-import crash).
-        imported = run([exe, '--headless', '--editor', '--path', PROJECT, '--import',
-                        '--quit-after', '30', '--max-fps', '30'], 'godot-import.txt')
-        if 'ERROR:' in imported:
+        imported = run([exe, '--headless', '--editor', '--path', PROJECT,
+                        '--script', ROOT / 'Tools/NIM06/import_lab.gd',
+                        '--max-fps', '30'], 'godot-import.txt')
+        if 'NIM06_EDITOR_IMPORT_OK' not in imported or 'ERROR:' in imported:
             raise RuntimeError('Godot import emitted errors')
     except RuntimeError as error:
         import_error = error
