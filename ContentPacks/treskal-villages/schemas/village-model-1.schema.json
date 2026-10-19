@@ -1,0 +1,141 @@
+{
+  "$id": "urn:nimroel:413:village-model-1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "activities": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "deferred": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "forbidden_defaults": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "model_definition": {
+      "const": "nimroel.treskal.villages:models/v1"
+    },
+    "optional_services": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "population": {
+      "additionalProperties": false,
+      "properties": {
+        "generalCanonicalRange": {
+          "items": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        },
+        "v001IsFixtureRangeNotUniversalRule": {
+          "const": true
+        },
+        "v001TargetRange": {
+          "items": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        }
+      },
+      "required": [
+        "generalCanonicalRange",
+        "v001TargetRange",
+        "v001IsFixtureRangeNotUniversalRule"
+      ],
+      "type": "object"
+    },
+    "quest_object_category": {
+      "const": "ordinary_repairable_agricultural_tool"
+    },
+    "required_capabilities": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "rules_status": {
+      "const": "approved_v001_scope_model_still_in_development"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "scope": {
+      "additionalProperties": false,
+      "properties": {
+        "actualSettlementNameGenerated": {
+          "const": true
+        },
+        "cityOfTreskalProcedurallyGenerated": {
+          "const": false
+        },
+        "model": {
+          "const": "V1_Mixta_maderera_agricola"
+        },
+        "realm": {
+          "const": "Norgard"
+        },
+        "settlementClass": {
+          "const": "aldea"
+        },
+        "territory": {
+          "const": "Casa_Valrik_Treskal"
+        }
+      },
+      "required": [
+        "realm",
+        "territory",
+        "settlementClass",
+        "model",
+        "actualSettlementNameGenerated",
+        "cityOfTreskalProcedurallyGenerated"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "model_definition",
+    "scope",
+    "rules_status",
+    "population",
+    "required_capabilities",
+    "activities",
+    "optional_services",
+    "forbidden_defaults",
+    "quest_object_category",
+    "deferred"
+  ],
+  "type": "object"
+}

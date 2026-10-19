@@ -1,0 +1,170 @@
+{
+  "$id": "urn:nimroel:413:integration-fixture-1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "fixture_id": {
+      "const": "v001-structural-1"
+    },
+    "generation": {
+      "const": "fixed_reproducible_integration_not_procedural_generation"
+    },
+    "generator_version": {
+      "const": "structural-fixture-1"
+    },
+    "materialized": {
+      "maximum": 60,
+      "minimum": 2,
+      "type": "integer"
+    },
+    "max_batch": {
+      "maximum": 256,
+      "minimum": 2,
+      "type": "integer"
+    },
+    "population": {
+      "maximum": 60,
+      "minimum": 40,
+      "type": "integer"
+    },
+    "region": {
+      "additionalProperties": false,
+      "properties": {
+        "coverage": {
+          "const": "not_simulated"
+        },
+        "edges": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "cart_suitable": {
+                "const": true
+              },
+              "functional": {
+                "const": true
+              },
+              "route": {
+                "const": "rural_timber_haulage"
+              },
+              "seasonal_model": {
+                "const": "unresolved"
+              },
+              "source": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "target": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "travel_cost": {
+                "const": "unresolved"
+              },
+              "water_crossings": {
+                "const": "unresolved"
+              }
+            },
+            "required": [
+              "source",
+              "target",
+              "route",
+              "functional",
+              "cart_suitable",
+              "travel_cost",
+              "seasonal_model",
+              "water_crossings"
+            ],
+            "type": "object"
+          },
+          "maxItems": 1,
+          "minItems": 1,
+          "type": "array"
+        },
+        "id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "nodes": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "version": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "version",
+        "nodes",
+        "edges",
+        "coverage"
+      ],
+      "type": "object"
+    },
+    "relation_kinds": {
+      "additionalProperties": false,
+      "properties": {
+        "external_connection": {
+          "const": 2
+        },
+        "population_association": {
+          "const": 3
+        },
+        "service": {
+          "const": 1
+        }
+      },
+      "required": [
+        "service",
+        "external_connection",
+        "population_association"
+      ],
+      "type": "object"
+    },
+    "rng_probe_stream": {
+      "pattern": "^(0|[1-9][0-9]{0,19})$",
+      "type": "string"
+    },
+    "rules_version": {
+      "const": "v001-handoff-0.1"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "seed_source": {
+      "const": "explicit_technical_fixture"
+    },
+    "stable_settlement_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "world_seed": {
+      "pattern": "^(0|[1-9][0-9]{0,19})$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "fixture_id",
+    "generator_version",
+    "rules_version",
+    "world_seed",
+    "rng_probe_stream",
+    "seed_source",
+    "stable_settlement_id",
+    "population",
+    "materialized",
+    "max_batch",
+    "region",
+    "relation_kinds",
+    "generation"
+  ],
+  "type": "object"
+}
