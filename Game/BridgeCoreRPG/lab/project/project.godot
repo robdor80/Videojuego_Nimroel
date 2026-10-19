@@ -11,3 +11,5 @@ window/handheld/orientation=0
 textures/vram_compression/import_etc2_astc=true
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+[editor_plugins]
+enabled=PackedStringArray("res://addons/nim06_ci_import/plugin.cfg")

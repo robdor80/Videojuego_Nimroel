@@ -26,10 +26,11 @@ ASSETS = {
 }
 
 
-def run(args, name=None, cwd=ROOT):
+def run(args, name=None, cwd=ROOT, extra_env=None):
     print('+', ' '.join(str(x) for x in args), flush=True)
     proc = subprocess.run([str(x) for x in args], cwd=cwd, stdout=subprocess.PIPE,
-                          stderr=subprocess.STDOUT, text=True, errors='replace')
+                          stderr=subprocess.STDOUT, text=True, errors='replace',
+                          env=os.environ | (extra_env or {}))
     print(proc.stdout, flush=True)
     if name:
         (EVIDENCE / name).write_text(proc.stdout, encoding='utf-8')
@@ -131,8 +132,8 @@ def smoke():
     import_error = None
     try:
         imported = run([exe, '--headless', '--editor', '--path', PROJECT,
-                        '--script', ROOT / 'Tools/NIM06/import_lab.gd',
-                        '--max-fps', '30'], 'godot-import.txt')
+                        '--quit-after', '3600', '--max-fps', '30'], 'godot-import.txt',
+                       extra_env={'NIM06_IMPORT_ONLY': '1'})
         if 'NIM06_EDITOR_IMPORT_OK' not in imported or 'ERROR:' in imported:
             raise RuntimeError('Godot import emitted errors')
     except RuntimeError as error:
