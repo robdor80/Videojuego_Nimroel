@@ -162,9 +162,15 @@ def export_android():
     shutil.copytree(templates, destination, dirs_exist_ok=True)
     output = PROJECT / 'export'
     output.mkdir(exist_ok=True)
-    run([exe, '--headless', '--path', PROJECT, '--export-debug', 'Android Lab ARM64',
-         'export/Nimroel_NIM06_Lab.apk'], 'android-export.txt')
+    exported = run([exe, '--headless', '--path', PROJECT, '--export-debug', 'Android Lab ARM64',
+                    'export/Nimroel_NIM06_Lab.apk'], 'android-export.txt')
+    if 'ERROR:' in exported:
+        raise RuntimeError('Godot export emitted errors')
+    if '/build-tools/36.0.0/apksigner' not in exported.replace('\\', '/'):
+        raise RuntimeError('Godot did not use the pinned Android signing tool')
     apk = output / 'Nimroel_NIM06_Lab.apk'
+    run([Path(os.environ['ANDROID_HOME']) / 'build-tools/36.0.0/apksigner',
+         'verify', '--verbose', apk], 'android-signature.txt')
     with zipfile.ZipFile(apk) as archive:
         libs = [n for n in archive.namelist() if n.startswith('lib/') and n.endswith('.so')]
         assert libs and all(n.startswith('lib/arm64-v8a/') for n in libs), libs

@@ -43,7 +43,7 @@ jobs:
           set -euo pipefail
           sudo apt-get update -qq
           sudo apt-get install -y gdb
-          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "ndk;29.0.14206865" "platforms;android-36" "build-tools;36.1.0"
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "ndk;29.0.14206865" "platforms;android-36" "build-tools;36.0.0"
           mkdir -p Tools/NIM06/evidence
           cp "$ANDROID_HOME/ndk/29.0.14206865/source.properties" Tools/NIM06/evidence/android-ndk.txt
           "$ANDROID_HOME/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" --version > Tools/NIM06/evidence/android-clang.txt
