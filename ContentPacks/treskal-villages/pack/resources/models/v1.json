@@ -1,0 +1,15 @@
+{
+  "$schema": "https://robdor80.github.io/CoreRPG/schemas/content/0.1.0/resource-definition.schema.json",
+  "id": "nimroel.treskal.villages:models/v1",
+  "kind": "settlement_model",
+  "references": [
+    {
+      "expected_kind": "service_capability",
+      "target": "nimroel.treskal.villages:capabilities/basic-blacksmithing"
+    },
+    {
+      "expected_kind": "service_capability",
+      "target": "nimroel.treskal.villages:capabilities/local-tavern"
+    }
+  ]
+}

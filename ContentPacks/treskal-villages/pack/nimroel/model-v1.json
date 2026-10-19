@@ -1,0 +1,65 @@
+{
+  "activities": [
+    "local_agriculture",
+    "some_livestock",
+    "visible_timber_haulage_road_influence"
+  ],
+  "deferred": [
+    "optional_service_probabilities_and_weights",
+    "plot_layout_algorithm",
+    "material_and_repair_costs",
+    "repair_duration_and_calendar_fixture",
+    "runtime_payload_schema",
+    "physical_save_mechanism",
+    "android_support",
+    "content_pack_schema_mapping"
+  ],
+  "forbidden_defaults": [
+    "perimeter_city_wall",
+    "permanent_local_garrison",
+    "formal_sawmill",
+    "compulsory_inn",
+    "compulsory_mill"
+  ],
+  "model_definition": "nimroel.treskal.villages:models/v1",
+  "optional_services": [
+    "mill",
+    "inn",
+    "carpentry",
+    "cartwright",
+    "trained_healer",
+    "advanced_blacksmith"
+  ],
+  "population": {
+    "generalCanonicalRange": [
+      35,
+      100
+    ],
+    "v001IsFixtureRangeNotUniversalRule": true,
+    "v001TargetRange": [
+      40,
+      60
+    ]
+  },
+  "quest_object_category": "ordinary_repairable_agricultural_tool",
+  "required_capabilities": [
+    "housing_for_generated_households",
+    "permanent_potable_water_access",
+    "local_production",
+    "functional_external_connection",
+    "domestic_productive_auxiliary_space",
+    "community_meeting_point",
+    "basic_blacksmithing",
+    "local_tavern"
+  ],
+  "rules_status": "approved_v001_scope_model_still_in_development",
+  "schema_version": 1,
+  "scope": {
+    "actualSettlementNameGenerated": true,
+    "cityOfTreskalProcedurallyGenerated": false,
+    "model": "V1_Mixta_maderera_agricola",
+    "realm": "Norgard",
+    "settlementClass": "aldea",
+    "territory": "Casa_Valrik_Treskal"
+  }
+}
