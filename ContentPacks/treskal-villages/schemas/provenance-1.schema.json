@@ -1,0 +1,246 @@
+{
+  "$id": "urn:nimroel:413:provenance-1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "definitions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "definition_id": {
+            "pattern": "^nimroel\\.treskal\\.villages:[a-z0-9][a-z0-9/._-]*$",
+            "type": "string"
+          },
+          "pointer": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "resource": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "definition_id",
+          "resource",
+          "source",
+          "pointer"
+        ],
+        "type": "object"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "inheritance_is_documentary_not_pack_dependencies": {
+      "const": true
+    },
+    "profile_fields": {
+      "additionalProperties": false,
+      "properties": {
+        "activities": {
+          "additionalProperties": false,
+          "properties": {
+            "pointer": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "source",
+            "pointer"
+          ],
+          "type": "object"
+        },
+        "deferred": {
+          "additionalProperties": false,
+          "properties": {
+            "pointer": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "source",
+            "pointer"
+          ],
+          "type": "object"
+        },
+        "forbidden_defaults": {
+          "additionalProperties": false,
+          "properties": {
+            "pointer": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "source",
+            "pointer"
+          ],
+          "type": "object"
+        },
+        "optional_services": {
+          "additionalProperties": false,
+          "properties": {
+            "pointer": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "source",
+            "pointer"
+          ],
+          "type": "object"
+        },
+        "population": {
+          "additionalProperties": false,
+          "properties": {
+            "pointer": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "source",
+            "pointer"
+          ],
+          "type": "object"
+        },
+        "quest_object_category": {
+          "additionalProperties": false,
+          "properties": {
+            "pointer": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "source",
+            "pointer"
+          ],
+          "type": "object"
+        },
+        "required_capabilities": {
+          "additionalProperties": false,
+          "properties": {
+            "pointer": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "source",
+            "pointer"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "population",
+        "required_capabilities",
+        "activities",
+        "optional_services",
+        "forbidden_defaults",
+        "quest_object_category",
+        "deferred"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "selection_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "sources": {
+      "additionalProperties": false,
+      "properties": {
+        "format_version": {
+          "const": 1
+        },
+        "repository": {
+          "const": "robdor80/Videojuego_Nimroel"
+        },
+        "revision": {
+          "const": "35c9d22ca3f688c62c709320b20cba565518669d"
+        },
+        "sources": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "type": "object"
+          },
+          "maxItems": 128,
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "format_version",
+        "repository",
+        "revision",
+        "sources"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "sources",
+    "selection_sha256",
+    "definitions",
+    "profile_fields",
+    "inheritance_is_documentary_not_pack_dependencies"
+  ],
+  "type": "object"
+}

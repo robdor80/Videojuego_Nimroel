@@ -1,0 +1,6 @@
+{
+  "$schema": "https://robdor80.github.io/CoreRPG/schemas/content/0.1.0/resource-definition.schema.json",
+  "id": "nimroel.treskal.villages:capabilities/local-tavern",
+  "kind": "service_capability",
+  "references": []
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://robdor80.github.io/CoreRPG/schemas/content/0.1.0/content-pack-manifest.schema.json",
+  "content_contract_version": "0.1.0",
+  "dependencies": [],
+  "description": "Modelo rural mixto maderero-agrícola. No instancia Treskal ciudad.",
+  "display_name": "Aldeas de Treskal — modelo V1",
+  "minimum_core_version": "0.1.0",
+  "pack_id": "nimroel.treskal.villages",
+  "pack_version": "0.1.0",
+  "resources": [
+    "resources/capabilities/basic-blacksmithing.json",
+    "resources/capabilities/local-tavern.json",
+    "resources/models/v1.json",
+    "resources/objects/ordinary-agricultural-tool.json"
+  ]
+}
