@@ -17,5 +17,11 @@ func finish_import() -> void:
             printerr("NIM06_EDITOR_IMPORT_TIMEOUT")
             quit(1)
             return
+    # Public editor API: opening native help joins EditorHelp's documentation
+    # worker (go_to_help -> _wait_for_thread). Drain its queued extension-doc
+    # callbacks before teardown; a completed filesystem scan alone is insufficient.
+    EditorInterface.get_script_editor().goto_help("class_name:RefCounted")
+    await process_frame
+    await process_frame
     print("NIM06_EDITOR_IMPORT_OK")
     quit(0)
