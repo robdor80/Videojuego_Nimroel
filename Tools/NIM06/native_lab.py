@@ -126,8 +126,24 @@ def verify(target):
 
 def smoke():
     exe = godot()
-    run([exe, '--headless', '--editor', '--path', PROJECT, '--import', '--quit'], 'godot-import.txt')
+    import_error = None
+    try:
+        run([exe, '--headless', '--editor', '--path', PROJECT, '--import', '--quit'], 'godot-import.txt')
+    except RuntimeError as error:
+        import_error = error
+        baseline = CACHE / 'baseline'
+        baseline.mkdir(exist_ok=True)
+        (baseline / 'project.godot').write_text('config_version=5\n[application]\nconfig/name="Empty control"\n[rendering]\nrenderer/rendering_method="gl_compatibility"\n')
+        try:
+            run([exe, '--headless', '--editor', '--path', baseline, '--import', '--quit'], 'godot-empty-control.txt')
+        except RuntimeError as baseline_error:
+            print('Empty control also failed:', baseline_error)
+        if platform.system() == 'Linux' and shutil.which('gdb'):
+            run(['gdb', '--batch', '-ex', 'run', '-ex', 'thread apply all bt', '--args', exe,
+                 '--headless', '--editor', '--path', PROJECT, '--import', '--quit'], 'godot-gdb.txt')
     output = run([exe, '--headless', '--path', PROJECT, '--script', 'res://smoke.gd'], 'godot-smoke.txt')
+    if import_error:
+        raise import_error
     if 'NIM06_CORE_OPERATION_OK cases=8' not in output or 'ERROR:' in output:
         raise RuntimeError('No successful native operation evidence')
 
