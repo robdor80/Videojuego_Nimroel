@@ -56,3 +56,10 @@ en 4.13. Los contratos ricos no son ejecución C++ por estar en Datos operativos
 Publicación mediante dos PR Draft coordinadas. No fusionar automáticamente;
 la aprobación y cierre corresponden a auditoría humana. Star Trek conserva su
 main `577fd1bfda89205f5d8a95e27cde13cadc46f04d`, sin modificaciones.
+
+Incidencia CI de preparación: el primer workflow intentó leer CoreRPG privado
+desde el token limitado del repositorio público y falló en checkout antes de
+ejecutar tests. Se eliminó esa dependencia de acceso: los schemas privados y
+C++ se verifican en CoreRPG, y Nimroel valida su publicación propia. Se fijan LF
+para reproducir hashes entre Windows/Linux. No se amplían permisos ni se publican
+fuentes o schemas de CoreRPG en Nimroel.

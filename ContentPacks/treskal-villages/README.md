@@ -135,3 +135,17 @@ progreso, hogares/layout, descubrimiento/diálogos y consecuencias del encargo.
 La IA sólo recibe contexto autorizado y propone solicitudes estructuradas. No
 hay rumores, percepción auditiva, secretos completos o personalidad ejecutable
 por haber heredado sus documentos. La v0.0.1 jugable sigue pendiente.
+
+## CI y acceso a schemas
+
+CoreRPG es privado; Nimroel es público. La CI pública ejecuta schemas específicos
+y restricciones de esta publicación con `--nimroel-only`, sin credenciales ni
+copias de los schemas privados. Las 18 pruebas mantienen todas sus aserciones
+de canon, forma, hashes y negativos. La validación completa de los schemas Core
+originales, tipos fuertes y catálogo se ejecuta en CoreRPG CI, que obtiene este
+pack público por SHA fijo. Cuando se proporciona `--core-root`, la herramienta
+también ejecuta esos schemas originales offline. No confundir ambos alcances.
+
+Los fuentes fijados y artefactos tienen `eol=lf` en .gitattributes para que el
+checkout Windows no cambie los bytes aprobados ni sus huellas. No se normaliza
+silenciosamente un archivo recibido: bytes diferentes siguen siendo un error.

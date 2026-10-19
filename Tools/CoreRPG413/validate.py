@@ -32,7 +32,7 @@ def schema(name, value):
     Draft202012Validator(spec).validate(value)
 
 
-def validate_installed(root, core_root):
+def validate_installed(root, core_root=None):
     """No network or canonical repository needed once pack and schemas are installed.
 
     Hashes identify a release, not its publisher. The Host must select a trusted
@@ -51,20 +51,30 @@ def validate_installed(root, core_root):
         require(len(data) <= MAX_BYTES and sha(data) == digest, f"content hash mismatch: {name}")
     require(sha(canonical(files)) == lock["release_sha256"], "release fingerprint mismatch")
     # Closed local registry. An unknown URI fails resolution; there is no HTTP fallback.
-    specs = [read(p) for p in sorted((Path(core_root) / "schemas/content/0.1.0").glob("*.json"))]
-    require(len(specs) == 3, "Core 0.1.0 schemas unavailable")
+    specs = [] if core_root is None else [read(p) for p in sorted((Path(core_root) / "schemas/content/0.1.0").glob("*.json"))]
+    require(core_root is None or len(specs) == 3, "Core 0.1.0 schemas unavailable")
     registry = Registry().with_resources((s["$id"], Resource.from_contents(s)) for s in specs)
     by_id = {s["$id"]: s for s in specs}
 
     def core_schema(role, value):
         key = "https://robdor80.github.io/CoreRPG/schemas/content/0.1.0/" + role + ".schema.json"
-        Draft202012Validator(by_id[key], registry=registry).validate(value)
+        if specs:
+            Draft202012Validator(by_id[key], registry=registry).validate(value)
+        else:
+            # Release-specific envelope restrictions, not a second generic Core schema.
+            # Full Core schemas/strong types are exercised by the private Core CI.
+            required = ({"pack_id", "pack_version", "content_contract_version", "minimum_core_version",
+                         "dependencies", "resources", "display_name", "description"}
+                        if role == "content-pack-manifest" else {"id", "kind", "references"})
+            require(required <= set(value) <= required | {"$schema"}, "unknown/missing envelope field")
+            require(value.get("$schema", key) == key, "unexpected schema URI")
 
     manifest = read(inside(root, "manifest.json"))
     core_schema("content-pack-manifest", manifest)
     require(manifest["pack_id"] == lock["pack_id"] and manifest["pack_version"] == lock["pack_version"], "manifest identity mismatch")
     require(manifest["content_contract_version"] == "0.1.0" and manifest["minimum_core_version"] == "0.1.0", "incompatible Core contract")
     require(manifest["dependencies"] == [], "nonexistent physical dependencies")
+    require(len(manifest["resources"]) == len(set(manifest["resources"])), "duplicate resource locator")
     require(set(manifest["resources"]) == {p for p in files if p.startswith("resources/")}, "unindexed resource")
     definitions = {}
     for name in manifest["resources"]:
@@ -74,7 +84,9 @@ def validate_installed(root, core_root):
         definitions[entry["id"]] = entry
     require({key: d["kind"] for key, d in definitions.items()} == KINDS, "wrong definition set or kinds")
     for entry in definitions.values():
+        require(len(entry["references"]) == len({(r["target"], r["expected_kind"]) for r in entry["references"]}), "duplicate reference")
         for ref in entry["references"]:
+            require(set(ref) == {"target", "expected_kind"}, "unknown reference field")
             require(ref["target"] in definitions, "missing reference")
             require(definitions[ref["target"]]["kind"] == ref["expected_kind"], "reference type mismatch")
     expected_refs = {
@@ -129,14 +141,18 @@ def require_compatible(saved, installed_lock):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pack", type=Path, default=CONTENT / "pack")
-    parser.add_argument("--core-root", type=Path, required=True)
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--core-root", type=Path)
+    group.add_argument("--nimroel-only", action="store_true",
+                       help="Validate Nimroel schemas/release constraints; full Core schema validation runs in Core CI")
     parser.add_argument("--source-root", type=Path, default=REPO)
     parser.add_argument("--installed-only", action="store_true")
     args = parser.parse_args()
     lock = validate_installed(args.pack, args.core_root)
     if not args.installed_only:
         check_artifacts(args.pack, extract(args.source_root))
-    print("OK: schema, canon, provenance, hashes; " + lock["release_sha256"])
+    coverage = "Nimroel schemas/release constraints" if args.nimroel_only else "Nimroel + Core schemas"
+    print("OK: " + coverage + ", canon, provenance, hashes; " + lock["release_sha256"])
 
 
 if __name__ == "__main__":

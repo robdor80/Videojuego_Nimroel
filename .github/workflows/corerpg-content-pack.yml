@@ -15,18 +15,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
-        with:
-          repository: robdor80/CoreRPG
-          ref: 864e1788a11e6541805342945896195e3d1ae699
-          path: .corerpg-validation
-          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: python -m pip install -r Tools/CoreRPG413/requirements.txt
       - run: python Tools/CoreRPG413/pack.py --check
-      - run: python Tools/CoreRPG413/validate.py --core-root .corerpg-validation
+      # CoreRPG is private. Its CI consumes this public pack by fixed SHA and
+      # runs the original Core schemas, C++ catalog and WorldState integration.
+      - run: python Tools/CoreRPG413/validate.py --nimroel-only
       - run: python -m unittest discover -s Tools/CoreRPG413 -p test_pack.py -v
-        env:
-          CORERPG_SOURCE_DIR: .corerpg-validation

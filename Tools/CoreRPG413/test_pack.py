@@ -11,6 +11,8 @@ import pack
 import validate
 
 CORE = Path(os.environ.get("CORERPG_SOURCE_DIR", pack.REPO.parent / "CoreRPG"))
+if not CORE.exists() and "CORERPG_SOURCE_DIR" not in os.environ:
+    CORE = None  # Public Nimroel CI: full Core schemas are tested in CoreRPG CI.
 
 
 class PackTest(unittest.TestCase):
