@@ -173,7 +173,7 @@ def export_android():
          'verify', '--verbose', apk], 'android-signature.txt')
     manifest = run([Path(os.environ['ANDROID_HOME']) / 'build-tools/36.0.0/aapt2',
                     'dump', 'badging', apk], 'android-manifest.txt')
-    if "sdkVersion:'24'" not in manifest or "targetSdkVersion:'36'" not in manifest:
+    if "minSdkVersion:'24'" not in manifest or "targetSdkVersion:'36'" not in manifest:
         raise RuntimeError('Unexpected minimum/target Android SDK in actual APK')
     with zipfile.ZipFile(apk) as archive:
         libs = [n for n in archive.namelist() if n.startswith('lib/') and n.endswith('.so')]
