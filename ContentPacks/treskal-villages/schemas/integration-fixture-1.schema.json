@@ -13,14 +13,10 @@
       "const": "structural-fixture-1"
     },
     "materialized": {
-      "maximum": 60,
-      "minimum": 2,
-      "type": "integer"
+      "const": 2
     },
     "max_batch": {
-      "maximum": 256,
-      "minimum": 2,
-      "type": "integer"
+      "const": 2
     },
     "population": {
       "maximum": 60,

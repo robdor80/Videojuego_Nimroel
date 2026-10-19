@@ -198,8 +198,7 @@
           "const": "robdor80/Videojuego_Nimroel"
         },
         "revision": {
-          "pattern": "^[0-9a-f]{40}$",
-          "type": "string"
+          "const": "35c9d22ca3f688c62c709320b20cba565518669d"
         },
         "sources": {
           "items": {

@@ -96,6 +96,10 @@ def validate_installed(root, core_root):
     schema("provenance-1", provenance)
     source_paths = [s["path"] for s in provenance["sources"]["sources"]]
     require(len(source_paths) == len(set(source_paths)), "duplicate source path")
+    for name in source_paths:
+        inside(CONTENT, name)  # syntax/confinement only, not an installed source lookup
+    for field in provenance["profile_fields"].values():
+        require(field["source"] in source_paths and field["pointer"].startswith("/"), "unlocked profile source")
     mappings = provenance["definitions"]
     require({m["definition_id"] for m in mappings} == set(definitions), "missing provenance")
     for m in mappings:
@@ -103,7 +107,8 @@ def validate_installed(root, core_root):
         require(read(inside(root, m["resource"]))["id"] == m["definition_id"], "ambiguous provenance")
     fixture = read(inside(root, "integration-fixture.json"))
     schema("integration-fixture-1", fixture)
-    require(fixture["materialized"] <= min(fixture["max_batch"], fixture["population"]), "invalid materialization budget")
+    require(fixture["materialized"] == 2 and fixture["max_batch"] == 2,
+            "this structural fixture supports exactly two anonymous observers")
     require(int(fixture["world_seed"]) <= 2**64 - 1 and int(fixture["rng_probe_stream"]) <= 2**64 - 1, "uint64 overflow")
     region = fixture["region"]
     require(fixture["stable_settlement_id"] in region["nodes"], "unknown settlement in regional fixture")

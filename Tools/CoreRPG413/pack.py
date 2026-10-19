@@ -143,7 +143,9 @@ def check_artifacts(output, artifacts):
     if actual != expected:
         raise ValueError(f"artifact inventory differs: {sorted(actual ^ expected)}")
     for name, data in artifacts.items():
-        if inside(output, name).read_bytes() != data:
+        with inside(output, name).open("rb") as stream:
+            actual_bytes = stream.read(MAX_BYTES + 1)
+        if actual_bytes != data:
             raise ValueError(f"non-reproducible artifact: {name}")
 
 
