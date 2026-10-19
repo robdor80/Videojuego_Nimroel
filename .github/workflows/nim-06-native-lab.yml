@@ -1,7 +1,7 @@
 name: NIM-06 native GDExtension laboratory
 on:
   push:
-    branches: [prep/nim-06-native-gdextension]
+    branches: [main]
     paths: ['Game/BridgeCoreRPG/lab/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
   pull_request:
     paths: ['Game/BridgeCoreRPG/lab/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
