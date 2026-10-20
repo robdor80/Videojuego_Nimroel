@@ -1,5 +1,7 @@
 # NIM-04 — Protocolo de proveedor real y pruebas (17/10/2026)
 
+> **DECISIÓN VIGENTE, 20/10/2026 — Aclaración del autor:** en pago sencillo se utilizará la Luna más avanzada oficialmente publicada. Actualmente se selecciona **GPT-6 Luna, `gpt-6-luna`**; no se espera a una hipotética Luna 6.1. Los registros siguientes de 17/10 sobre Luna 6.1 se conservan como **historial anterior a esta aclaración**, no como bloqueo actual. No se autorizan por ello llamadas de pago nuevas. Política vigente: [Política de modelos](IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md).
+
 > **ACTUALIZACIÓN POSTERIOR, 17/10/2026 — NO REESCRIBIR LA EVIDENCIA HISTÓRICA.**
 > El autor ha aprobado **Gemini 3.5 Flash-Lite / Gemini 3.8 Flash para Free** y solicita **OpenAI Luna 6.1 / Sol 6.1 para Pago**; **Mistral excluido**. Se actualizó la ruta diagnóstica exigente a `gpt-6.1-sol` y los tests offline de la rama de política; **no implica prueba E2E realizada con Sol 6.1**. La API OpenAI presenta `gpt-6-luna`, pero no un ID oficial `gpt-6.1-luna`; por ello la antigua Luna permanece señalada como legado del laboratorio, sin declararla equivalente a la solicitada.
 >

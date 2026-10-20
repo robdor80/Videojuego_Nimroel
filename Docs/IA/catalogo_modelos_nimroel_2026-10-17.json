@@ -29,12 +29,13 @@
       "mode": "paid",
       "tier": "simple",
       "provider": "openai",
-      "displayRequested": "OpenAI Luna 6.1",
-      "apiModel": null,
-      "catalogVerified": false,
-      "blockedReason": "no_published_gpt_6_1_luna_identifier",
-      "previousDiagnosticModel": "gpt-6-luna",
-      "previousIsNotEquivalent": true
+      "apiModel": "gpt-6-luna",
+      "catalogVerified": true,
+      "display": "OpenAI GPT-6 Luna (última Luna oficial verificada)",
+      "runtimeValidated": true,
+      "runtimeValidationScope": "NIM-04 MSI/Godot 17/10/2026: clasificación diagnóstica solamente",
+      "selectionPolicy": "highest_official_pinned_version_after_review",
+      "lastCatalogCheck": "2026-10-20"
     },
     {
       "mode": "paid",
@@ -61,5 +62,6 @@
     "https://ai.google.dev/gemini-api/docs/models",
     "https://ai.google.dev/gemini-api/docs/pricing",
     "https://developers.openai.com/api/docs/models"
-  ]
+  ],
+  "updatedOn": "2026-10-20"
 }

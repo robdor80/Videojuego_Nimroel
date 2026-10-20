@@ -1,6 +1,6 @@
 # Nimroel RPG — Política de proveedores y modelos de IA
 
-**Decisión del autor:** 17 de octubre de 2026. **Estado:** normativa de proyecto aprobada; implementación y validaciones por modelo, en curso.
+**Decisión inicial del autor:** 17 de octubre de 2026. **Aclaración sobre Luna:** 20 de octubre de 2026. **Estado:** normativa de proyecto aprobada; implementación y validaciones por modelo, en curso.
 
 ## Tabla de intención del autor
 
@@ -8,19 +8,21 @@
 |---|---|---|---|---|---|
 | Free | `simple` | Google Gemini | Gemini 3.5 Flash-Lite | `gemini-3.5-flash-lite` | Confirmado en catálogo oficial; pruebas NIM-03 previas |
 | Free | `complex` | Google Gemini | Gemini 3.8 Flash | `gemini-3.8-flash` | Confirmado en catálogo oficial; pruebas NIM-04 previas |
-| Pago | `simple` | OpenAI | Luna 6.1 | **PENDIENTE: no figura `gpt-6.1-luna` en catálogo oficial** | **No asignar un ID inventado** |
+| Pago | `simple` | OpenAI | **La versión Luna más avanzada oficialmente disponible** (actualmente GPT-6 Luna) | `gpt-6-luna` | ID oficial verificado; E2E de diagnóstico NIM-04 previo (17/10) |
 | Pago | `complex` | OpenAI | Sol 6.1 | `gpt-6.1-sol` | ID oficial verificado; NO validado aún en el broker NIM-04 |
 
 **Mistral queda excluido completamente de la arquitectura activa:** no crear nuevas integraciones, rutas, credenciales, fallback, interfaz de selección o pruebas positivas de Mistral. Los ensayos anteriores pueden permanecer como **historial archivado** claramente marcado y no deben confundirse con la configuración operativa.
 
-### Decisión pendiente exclusiva del autor: Luna 6.1
+### Decisión definitiva del autor — 20/10/2026: última versión oficial de Luna
 
-La [documentación oficial de OpenAI](https://developers.openai.com/api/docs/models) presenta `gpt-6-luna` como Luna disponible, **no** `gpt-6.1-luna` (consulta 17/10/2026). El autor ha escrito «Luna 6.1» expresamente. Por tanto:
+El autor aclara que **no exige Luna 6.1**: quiere siempre la versión Luna más avanzada **que esté publicada oficialmente y comprobada para la API**. La designación «Luna 6.1» del 17/10 fue una referencia imprecisa, no un bloqueo de lanzamiento.
 
-- NO afirmar que `gpt-6.1-luna` existe; NO enviarlo a la API sin validación independiente.
-- NO sustituir silenciosamente la petición por `gpt-6-luna`.
-- Mantener el **laboratorio histórico existente** de `gpt-6-luna` identificado como versión anterior y no como cumplimiento de Luna 6.1.
-- Antes de activar el perfil definitivo de pago sencillo, solicitar autorización del autor para utilizar Luna 6.0, o esperar a un identificador real de Luna 6.1.
+- **Selección actual (20/10/2026): GPT-6 Luna, ID fijo `gpt-6-luna`.** Es la versión más avanzada de Luna que muestra el catálogo oficial consultado. No consta un ID público `gpt-6.1-luna`; no inventarlo.
+- **Criterio futuro:** cuando aparezca una nueva versión oficial de Luna, revisar catálogo, compatibilidad, precio, permisos y pruebas automatizadas/físicas; actualizar el ID versionado mediante cambio revisado. **No usar aliases flotantes ni cambiar silenciosamente de modelo**, para preservar reproducibilidad.
+- **Antecedente comprobado:** NIM-04 validó un diagnóstico real desde Godot Windows con `gpt-6-luna` el 17/10/2026; esa prueba no valida narrativa de NPC, ni uso de CoreRPG, ni futuras versiones.
+- El acceso OpenAI sigue siendo **de pago, deshabilitado sin consentimiento expreso**, con fallback desactivado por defecto. Esta aclaración no autoriza ni dispara llamadas remotas pagables.
+
+Fuente de selección actual: https://developers.openai.com/api/docs/models (consulta 20/10/2026).
 
 ## Enrutado y responsabilidad
 
@@ -55,7 +57,7 @@ El resto de los sistemas conserva los contratos de IA abstractos ya existentes. 
 
 ## Evidencia histórica y estado de despliegue
 
-- NIM-04 probó `gpt-6-luna` y `gpt-6-sol` reales desde Godot Windows, ambos como clasificadores diagnósticos; **eso NO valida** Luna 6.1 ni Sol 6.1 ni un máster narrativo real.
+- NIM-04 probó `gpt-6-luna` y `gpt-6-sol` reales desde Godot Windows, ambos como clasificadores diagnósticos; la prueba de Luna corresponde al modelo ahora seleccionado, **pero NO valida** Sol 6.1, posibles Luna futuras ni un máster narrativo real.
 - Nueva integración de `gpt-6.1-sol` requerirá regresiones unitarias, CI, prueba autorizada contra API y aceptación humana. La generación/diálogo CoreRPG permanece sin conectar.
 - Mistral Small/Medium fueron ensayos históricos; el código actual ya los retiró antes de esta política.
 
@@ -67,7 +69,7 @@ El resto de los sistemas conserva los contratos de IA abstractos ya existentes. 
 
 ## Pendientes para cierre definitivo
 
-1. Confirmación del autor para **Luna 6.1**: ¿mantener petición y bloquear, o aceptar GPT-6 Luna como sustituto?
+1. **Decisión Luna resuelta el 20/10/2026:** mantener la última Luna oficial verificada (`gpt-6-luna`), y revisar si aparece una versión más reciente antes de futuras actualizaciones.
 2. Comprobar acceso API real a `gpt-6.1-sol` con credenciales privadas y consentimiento del propietario.
 3. Completar control de coste robusto y diseño de servicio seguro antes de producción y Android.
 4. Revisar la documentación de NIM-04 y los 69/70 sistemas con esta política sin reescribir registros históricos.
