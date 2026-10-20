@@ -23,6 +23,8 @@ Para probar conexión Gemini real sin clave en APK, véase `Docs/NIM-03_PRUEBAS_
 Nimroel no es aún una partida persistente; la ejecución de los tests y del benchmark no acredita una partida ni voz de NPC. Nunca usar IA como fuente de verdad fuera de CoreRPG.
 
 
-## Política de modelos de IA (17/10/2026)
+## Política de IA vigente (revisión 20/10/2026)
 
-La fuente vigente está en [`Docs/IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md`](../../Docs/IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md). El laboratorio NIM-04 en Windows utiliza Gemini en Free y permite OpenAI de pago **solo** con consentimiento. El modelo OpenAI Sol complejo se ha actualizado a `gpt-6.1-sol` en la rama de política: requiere prueba E2E adicional. El nombre solicitado Luna 6.1 aún no tiene ID oficial confirmado: la ruta anterior `gpt-6-luna` **no demuestra Luna 6.1**. Mistral no participa en el enrutador activo. **No enviar clave API al APK** ni considerar este laboratorio un backend narrativo o integración con CoreRPG.
+La [política de las tres IA](../../Docs/IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md) separa **Luna (diálogos NPC + consultas off the record)**, **Sol (Máster de presentación de escenas y cambios importantes)** y **ChatGPT Plus (procesamiento humano mediante ZIP, fuera de la partida)**. CoreRPG es la autoridad única.
+
+El broker de `Tools/NIM04` sigue siendo **solo un laboratorio clasificador**: Gemini 3.5/3.8 y OpenAI Luna/Sol 6.1 son rutas técnicas históricas de diagnóstico, no escenas narrativas implementadas. Las pruebas reales de Sol 6.1 y Luna están documentadas en la [issue #29](https://github.com/robdor80/Videojuego_Nimroel/issues/29). Sin integración conversacional CoreRPG no hay gameplay narrativo, importación ZIP automática ni facturación activada. Nunca poner secretos en APK/PCK/EXE.
