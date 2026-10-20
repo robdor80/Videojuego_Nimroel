@@ -1,22 +1,6 @@
 cmake_minimum_required(VERSION 3.25)
 project(NimroelCoreRPGLab LANGUAGES CXX)
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)
-set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded")
-set(BUILD_TESTING OFF CACHE BOOL "" FORCE)
-set(CORERPG_BUILD_CONTENT_JSON OFF CACHE BOOL "" FORCE)
-set(GODOTCPP_TARGET template_debug CACHE STRING "" FORCE)
-set(GODOTCPP_USE_STATIC_CPP ON CACHE BOOL "" FORCE)
-set(GODOTCPP_DISABLE_EXCEPTIONS OFF CACHE BOOL "" FORCE)
-set(GODOTCPP_BUILD_PROFILE "${CMAKE_CURRENT_SOURCE_DIR}/build_profile.json" CACHE FILEPATH "" FORCE)
-include(FetchContent)
-FetchContent_Declare(corerpg GIT_REPOSITORY https://github.com/robdor80/CoreRPG.git
-    GIT_TAG 4f282863737bcd8f5add401202a9e1064c133672)
-FetchContent_Declare(godotcpp GIT_REPOSITORY https://github.com/godotengine/godot-cpp.git
-    GIT_TAG e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77)
-FetchContent_MakeAvailable(corerpg godotcpp)
+include(../cmake/dependencies.cmake)
 add_library(nimroel_core_lab SHARED src/core_rpg_lab.cpp)
 target_link_libraries(nimroel_core_lab PRIVATE CoreRPG::CoreRPG godot::cpp)
 set_target_properties(nimroel_core_lab PROPERTIES

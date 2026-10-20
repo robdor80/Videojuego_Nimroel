@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 project(NimroelCoreRPGBridge LANGUAGES CXX)
-# Reuse the proven, pinned dependency toolchain and retain its reference target.
-add_subdirectory(../lab ${CMAKE_CURRENT_BINARY_DIR}/lab)
+# Production and reference lab share pins, ABI and binding profile.
+include(../cmake/dependencies.cmake)
 add_library(nimroel_core SHARED src/bridge.cpp)
 target_link_libraries(nimroel_core PRIVATE CoreRPG::CoreRPG godot::cpp)
 target_compile_features(nimroel_core PRIVATE cxx_std_20)
