@@ -23,10 +23,10 @@ expone SemanticVersion; sus ocho casos no prueban ninguna operación de mundo.
 Las rutas Core siguientes se refieren al SHA anterior en
 https://github.com/robdor80/CoreRPG/tree/4f282863737bcd8f5add401202a9e1064c133672 .
 
-| Capacidad real | Contrato Core | Operación prevista / frontera |
+| Capacidad real | Contrato Core | Operación implementada / frontera |
 | --- | --- | --- |
 | Crear identidades, revisión | include/corerpg/world_state.hpp | Host.initialize / Host.admin; privilegiado |
-| Contención y relaciones | action.hpp, src/action.cpp | Host.step; Session.submit con actor implícito y permisos explícitos |
+| Contención y relaciones | action.hpp, src/action.cpp | Host.step; Session.submit contención propia con actor implícito y permisos explícitos |
 | Precondiciones estructurales | rule_check.hpp | Solo solicitudes privilegiadas Host.step |
 | Tiradas y streams deterministas | action.hpp, random_streams.hpp | Host.step; no entregar ActionResult a sesiones |
 | Paso causal acotado | simulation.hpp, src/simulation.cpp | Host.step, prefijo procesado explícito; sin replay automático |
@@ -58,3 +58,32 @@ en el mismo proceso: los scripts del Host forman parte de la base de confianza.
 ContentJson usa filesystem físico; el contenido APK requiere un lector Host y
 catálogo explícito. No es un bloqueo del Core para esta vertical sin definiciones.
 Su integración futura se documenta como cobertura no implementada, no se simula.
+
+## Implementación y evidencia final
+
+
+Base Nimroel `6c7ed6a8013b471be0e66dbc4d5bedaeb3541782`; CoreRPG
+`4f282863737bcd8f5add401202a9e1064c133672`. Código verificado por CI:
+`c071105fcb02e125641594cea4f859dbaad711a2`.
+Godot 4.7.2 Standard; godot-cpp oficial `e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`
+(API 4.5 compatible hacia versiones menores posteriores, comprobada con 4.7.2).
+[Pins y hashes oficiales](evidence/dependencies.json).
+Resultados nuevos y enlaces de CI: [evidencia compacta](evidence/ci-summary.json).
+Las pruebas físicas no están realizadas.
+CI final: [39430632471](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39430632471), success.
+Checkout automático PR `8c990b3e1d3672b951f545e9028b6b6f7dc94259`,
+árbol idéntico al HEAD de código (verificado por API). No se ha fusionado en main.
+
+Esquemas cerrados y límites completos: [README nativo](../../Game/BridgeCoreRPG/native/README.md).
+La configuración de dependencias se comparte desde Game/BridgeCoreRPG/cmake;
+no se modifica código Core ni se importan sus APIs privilegiadas a las sesiones.
+
+Cierre: PR #22 cambió externamente a `469f27f376eacbe44fe0fcb5770ae5984befa5cb`
+por merge de main, sin cambios de archivos que colisionen con este trabajo.
+La referencia inicial anterior se conserva como evidencia histórica. Main sigue en su referencia inicial. PR #23 avanzó externamente a
+`be7806c5a8d661db35dfb417b5244bf684318732` (13:32:16 UTC), reconciliando
+NIM-05/política IA. Nueva comparación de archivos sin colisiones. No se escribió
+en ninguna de esas ramas.
+
+El puerto final no posee sesión global: cada llamada usa una capacidad explícita.
+Se prueba aislamiento también en el Controller GDScript, no solo en C++.
