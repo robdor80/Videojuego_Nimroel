@@ -30,11 +30,11 @@ ASSETS = {
 }
 
 
-def run(args, name=None, cwd=ROOT, extra_env=None):
+def run(args, name=None, cwd=ROOT, extra_env=None, timeout=1200):
     print('+', ' '.join(str(x) for x in args), flush=True)
     proc = subprocess.run([str(x) for x in args], cwd=cwd, stdout=subprocess.PIPE,
                           stderr=subprocess.STDOUT, text=True, errors='replace',
-                          env=os.environ | (extra_env or {}))
+                          env=os.environ | (extra_env or {}), timeout=timeout)
     print(proc.stdout, flush=True)
     if name:
         (EVIDENCE / name).write_text(proc.stdout, encoding='utf-8')
@@ -132,6 +132,7 @@ def verify(target):
             assert aligns and all(value >= 16384 for value in aligns), aligns
         details.update(machine='ELF AArch64 (183)' if target == 'android' else 'ELF x86-64 (62)', needed=needed)
     (EVIDENCE / f'{target}-binary.json').write_text(json.dumps(details, indent=2) + '\n')
+    print(json.dumps(details, indent=2))
 
 
 def smoke():
@@ -140,7 +141,7 @@ def smoke():
     try:
         imported = run([exe, '--headless', '--editor', '--path', PROJECT,
                         '--quit-after', '3600', '--max-fps', '30'], 'godot-import.txt',
-                       extra_env={'NIM06_IMPORT_ONLY': '1'})
+                       extra_env={'NIM06_IMPORT_ONLY': '1'}, timeout=180)
         if 'NIM06_EDITOR_IMPORT_OK' not in imported or 'ERROR:' in imported:
             raise RuntimeError('Godot import emitted errors')
     except RuntimeError as error:
@@ -155,7 +156,7 @@ def smoke():
         if platform.system() == 'Linux' and shutil.which('gdb'):
             run(['gdb', '--batch', '-ex', 'run', '-ex', 'thread apply all bt', '--args', exe,
                  '--headless', '--editor', '--path', PROJECT, '--import', '--quit'], 'godot-gdb.txt')
-    output = run([exe, '--headless', '--path', PROJECT, '--script', 'res://tests/nim06_smoke.gd' if FUNCTIONAL else 'res://smoke.gd'], 'godot-smoke.txt')
+    output = run([exe, '--headless', '--path', PROJECT, '--script', 'res://tests/nim06_smoke.gd' if FUNCTIONAL else 'res://smoke.gd'], 'godot-smoke.txt', timeout=180)
     if import_error:
         raise import_error
     if not ('NIM06_FUNCTIONAL_REPORT' in output and '"ok":true' in output.replace(' ', '') if FUNCTIONAL else 'NIM06_CORE_OPERATION_OK cases=8' in output) or 'ERROR:' in output:
@@ -211,7 +212,7 @@ def export_windows():
     assert len(packaged) == 1 and packaged[0].read_bytes() == compiled.read_bytes(), packaged
     console = output / 'Nimroel_NIM06_Functional.console.exe'
     assert console.exists()
-    tested = run([console, '--headless', '--', '--nim06-self-test'], 'windows-package-execution.txt', cwd=output)
+    tested = run([console, '--headless', '--', '--nim06-self-test'], 'windows-package-execution.txt', cwd=output, timeout=180)
     assert 'NIM06_FUNCTIONAL_REPORT' in tested and '"ok":true' in tested.replace(' ', '') and 'ERROR:' not in tested
     details = {str(p.relative_to(output)): {'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
                for p in output.rglob('*') if p.is_file()}
@@ -222,7 +223,7 @@ def export_windows():
 def regressions():
     exe = godot()
     for script in ['smoke', 'nim02_smoke', 'nim03_smoke', 'nim04_smoke', 'keyboard_layout_smoke']:
-        output = run([exe, '--headless', '--path', PROJECT, '--script', f'res://tests/{script}.gd'], f'regression-{script}.txt')
+        output = run([exe, '--headless', '--path', PROJECT, '--script', f'res://tests/{script}.gd'], f'regression-{script}.txt', timeout=120)
         assert 'ERROR:' not in output and 'PASS' in output, script
     for folder in ['NIM03', 'NIM04']:
         run(['python', '-m', 'unittest', 'discover', '-s', ROOT / 'Tools' / folder, '-p', 'test_*.py', '-v'], f'regression-{folder}.txt')

@@ -1,6 +1,7 @@
 extends RefCounted
 ## Integration tests execute CoreRPG through the registered native classes.
 ## Host-only diagnostics stay here; none are sent to dialogue/providers.
+const Store = preload("res://scripts/core_save_store.gd")
 const Port = preload("res://scripts/core_port.gd")
 static var _errors: Array[String] = []
 static var _checks: int = 0
@@ -125,16 +126,15 @@ static func verify() -> Dictionary:
 	check(step(host, [roll]).results[0].consumed_random, "real deterministic RNG draw")
 	check(host.call("diagnostics").revision == revision_before_roll, "RNG draw does not invent world revision")
 	var checkpoint := saved(host)
-	var file := FileAccess.open("user://nim06-test-save.core", FileAccess.WRITE)
-	check(file != null, "Host opens physical save")
-	if file != null:
-		file.store_buffer(checkpoint)
-		file.close()
-	var from_disk := FileAccess.get_file_as_bytes("user://nim06-test-save.core")
+	check(Store.save(host, "nim06_test").status == "ok", "Host writes physical save")
+	check(Store.save(host, "nim06_test").status == "ok", "Host replaces physical save with backup")
+	check(Store.save(host, "../escape").error_code == "INVALID_SAVE_SLOT", "Host rejects path traversal")
+	check(Store.load_save(host, "missing_slot").error_code == "LOAD_OPEN_FAILED", "Host reports missing file")
+	var from_disk := FileAccess.get_file_as_bytes("user://core_saves/nim06_test.core")
 	check(from_disk == checkpoint, "Host filesystem roundtrip")
 	var continued := step(host, [roll, roll, roll])
 	var after_continued := saved(host)
-	var restored: Dictionary = host.call("restore", from_disk)
+	var restored: Dictionary = Store.load_save(host, "nim06_test")
 	check(restored.status == "ok", "Core restores v3")
 	check(saved(host) == checkpoint, "canonical bytes identical after restore")
 	check(player.call("availability").error_code == "SESSION_EXPIRED", "restore invalidates old session despite same IDs")
@@ -142,10 +142,12 @@ static func verify() -> Dictionary:
 	check(saved(host) == after_continued, "deterministic world and streams continuation")
 	var corrupt := checkpoint.duplicate()
 	corrupt[corrupt.size() - 1] = corrupt[corrupt.size() - 1] ^ 1
+	var valid_after_restore: RefCounted = host.call("open_session", {"api_version": 1, "observer": 1, "audience": "player"}).session
 	var before_load_error := saved(host)
 	check(host.call("restore", corrupt).error_code == "LOAD_REJECTED", "CRC rejects corrupt save")
 	check(host.call("restore", checkpoint.slice(0, 20)).error_code == "LOAD_REJECTED", "truncated save rejected")
 	check(saved(host) == before_load_error, "failed restore preserves active world and RNG")
+	check(valid_after_restore.call("availability").status == "ok", "failed restore preserves active session")
 	var other: RefCounted = ClassDB.instantiate("CoreRPGHost")
 	check(other.call("initialize", {"api_version": 1, "seed": "3", "entities": 1}).status == "ok", "second independent instance")
 	check(host.call("diagnostics").entities == 7 and other.call("diagnostics").entities == 1, "instances isolated")
@@ -156,5 +158,6 @@ static func verify() -> Dictionary:
 	check(reopened.call("close").status == "ok" and context(reopened).error_code == "SESSION_EXPIRED", "explicit session close")
 	check(Port.bind_session(null), "detach port")
 	check(host.call("close").status == "ok" and host.call("capture").error_code == "NOT_INITIALIZED", "Host shutdown")
-	DirAccess.remove_absolute("user://nim06-test-save.core")
+	DirAccess.remove_absolute("user://core_saves/nim06_test.core")
+	DirAccess.remove_absolute("user://core_saves/nim06_test.core.bak")
 	return {"ok": _errors.is_empty(), "checks": _checks, "errors": _errors, "core_commit": "4f282863737bcd8f5add401202a9e1064c133672", "scope": "native functional vertical; physical device acceptance separate"}

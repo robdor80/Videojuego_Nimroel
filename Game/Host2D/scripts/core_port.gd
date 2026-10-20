@@ -7,7 +7,7 @@ const API_VERSION := 1
 static var _session: RefCounted
 
 static func capabilities() -> Dictionary:
-	var connected := _session != null and _session.call("availability").get("status") == "ok"
+	var connected: bool = _session != null and _session.call("availability").get("status") == "ok"
 	return {"core_available": connected, "native_available": ClassDB.class_exists("CoreRPGHost"), "api_version": API_VERSION}
 
 static func bind_session(session: RefCounted) -> bool:
