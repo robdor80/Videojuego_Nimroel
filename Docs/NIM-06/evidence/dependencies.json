@@ -29,5 +29,7 @@
     "editor_linux": "cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4",
     "templates": "f298490b8d44d934be425a5a65a51bf15f422428b229a06a6e11d9ffea248011"
   },
-  "reproducibility": "Pins de código y herramientas; imagen hospedada mutable. No se promete identidad binaria entre runners."
+  "reproducibility": "Pins de código y herramientas; imagen hospedada mutable. No se promete identidad binaria entre runners.",
+  "nimroel_main_integrated": "cd1735b1c9a1bb7507a3b1ce42d96c6d103b0977",
+  "nimroel_tested_head": "9924cc38f2fb1162e49ad80779db76c8e5d3f886"
 }

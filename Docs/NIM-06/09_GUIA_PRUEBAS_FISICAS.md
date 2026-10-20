@@ -1,16 +1,15 @@
 # Guía de pruebas físicas
 
-Base Nimroel `6c7ed6a8013b471be0e66dbc4d5bedaeb3541782`; CoreRPG
-`4f282863737bcd8f5add401202a9e1064c133672`. Código verificado por CI:
-`c071105fcb02e125641594cea4f859dbaad711a2`.
-Godot 4.7.2 Standard; godot-cpp oficial `e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`
-(API 4.5 compatible hacia versiones menores posteriores, comprobada con 4.7.2).
-[Pins y hashes oficiales](evidence/dependencies.json).
-Resultados nuevos y enlaces de CI: [evidencia compacta](evidence/ci-summary.json).
-Las pruebas físicas no están realizadas.
-CI final: [39430632471](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39430632471), success.
-Checkout automático PR `8c990b3e1d3672b951f545e9028b6b6f7dc94259`,
-árbol idéntico al HEAD de código (verificado por API). No se ha fusionado en main.
+Main integrado: `cd1735b1c9a1bb7507a3b1ce42d96c6d103b0977` (NIM-05 / PR #22).
+CoreRPG `4f282863737bcd8f5add401202a9e1064c133672`; godot-cpp oficial
+`e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`, API 4.5; Godot **4.7.2 Standard**.
+Código verificado: `9924cc38f2fb1162e49ad80779db76c8e5d3f886`.
+[CI nativa 39483287563](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563) y
+[regresiones 39483287443](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287443): success.
+Checkout PR automático `7296c1eb43eaf3da96cc9d995f13bcdb9cb9c7eb`, árbol idéntico al HEAD de código.
+[Pins](evidence/dependencies.json) · [Evidencia vigente](evidence/ci-summary.json) ·
+[Integración NIM-05 y conservación de fuentes](11_INTEGRACION_MAIN_NIM05.md).
+No se ha fusionado ninguna PR ni modificado main. Las pruebas físicas no están realizadas.
 
 Estas pruebas están **pendientes**. El usuario las ejecutará; no se registran como
 superadas por compilar/exportar. Guardar fecha, modelo, versión OS, run/SHA y hashes
@@ -25,7 +24,7 @@ junto al resultado y logs. Usar los artefactos del run final de ci-summary.json.
 2. Ejecutar `Nimroel_NIM06_Functional.console.exe`. En Host2D pulsar
    **CoreRPG · prueba nativa**. No requiere abrir el editor ni un servicio de IA.
 3. Pulsar **Ejecutar pruebas**: esperar NIM06 FUNCTIONAL PASS, errors vacío y el
-   número de checks del informe final (**124**). Recoger stdout y user://nim06-result.json.
+   número de checks del informe final (**129**). Recoger stdout y user://nim06-result.json.
 4. **Crear mundo técnico** y **Consultar**: cuatro hechos de tres identidades
    conocidas, contención propia en 2; el cuarto ID del mundo no aparece.
 5. **Guardar**, **Contener en 3**, **Consultar**: contención referencia 3;
@@ -66,3 +65,8 @@ La ejecución física se acepta solo si hay carga real, suite aprobada, acción/
 autorizada y continuidad después de restaurar. Firma, ABI o presencia de la SO
 por sí solas no satisfacen esos puntos. Si falla, conservar log completo, JSON y
 paso exacto; no pulsar repetidamente acciones como sustituto de restaurar.
+
+El paquete actualizado conserva el laboratorio técnico de voz NIM05 en Windows;
+es opt-in, requiere su proceso local y no es voz NPC. No confundir el WAV generado
+en CI con reproducción física del MSI. En Android ese laboratorio sigue deshabilitado.
+Usar los artefactos nuevos de 39483287563 y esperar 129 checks, no el paquete antiguo.

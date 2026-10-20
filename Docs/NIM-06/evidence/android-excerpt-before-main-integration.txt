@@ -1,0 +1,9 @@
+-- The CXX compiler identification is Clang 21.0.0
+-- The CXX compiler identification is GNU 13.3.0
+NIM06_EDITOR_IMPORT_OK
+NIM06_FUNCTIONAL_REPORT {"checks":124,"core_commit":"4f282863737bcd8f5add401202a9e1064c133672","errors":[],"ok":true,"scope":"native functional vertical; physical device acceptance separate"}
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+minSdkVersion:'24'
+targetSdkVersion:'36'
+native-code: 'arm64-v8a'

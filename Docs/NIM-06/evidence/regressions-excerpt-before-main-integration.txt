@@ -1,0 +1,7 @@
+NIM-01 SMOKE PASS: Godot importa escena y router; WorldState no mutado.
+NIM-02 SMOKE PASS: flujo seguro, estados honestos y UI compatible.
+NIM-03 SMOKE PASS: diagnóstico aislado, parser fail-closed, Core intacto.
+NIM-04 SMOKE PASS: multiproveedor solo diagnóstico y Core intacto.
+Ran 8 tests in 0.514s
+Ran 29 tests in 0.529s
+NIM-03 KEYBOARD PASS: virtual compacto, Bluetooth pantalla completa, sin doble descuento.

@@ -1,16 +1,15 @@
 # Android ARM64 — Pruebas
 
-Base Nimroel `6c7ed6a8013b471be0e66dbc4d5bedaeb3541782`; CoreRPG
-`4f282863737bcd8f5add401202a9e1064c133672`. Código verificado por CI:
-`c071105fcb02e125641594cea4f859dbaad711a2`.
-Godot 4.7.2 Standard; godot-cpp oficial `e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`
-(API 4.5 compatible hacia versiones menores posteriores, comprobada con 4.7.2).
-[Pins y hashes oficiales](evidence/dependencies.json).
-Resultados nuevos y enlaces de CI: [evidencia compacta](evidence/ci-summary.json).
-Las pruebas físicas no están realizadas.
-CI final: [39430632471](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39430632471), success.
-Checkout automático PR `8c990b3e1d3672b951f545e9028b6b6f7dc94259`,
-árbol idéntico al HEAD de código (verificado por API). No se ha fusionado en main.
+Main integrado: `cd1735b1c9a1bb7507a3b1ce42d96c6d103b0977` (NIM-05 / PR #22).
+CoreRPG `4f282863737bcd8f5add401202a9e1064c133672`; godot-cpp oficial
+`e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`, API 4.5; Godot **4.7.2 Standard**.
+Código verificado: `9924cc38f2fb1162e49ad80779db76c8e5d3f886`.
+[CI nativa 39483287563](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563) y
+[regresiones 39483287443](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287443): success.
+Checkout PR automático `7296c1eb43eaf3da96cc9d995f13bcdb9cb9c7eb`, árbol idéntico al HEAD de código.
+[Pins](evidence/dependencies.json) · [Evidencia vigente](evidence/ci-summary.json) ·
+[Integración NIM-05 y conservación de fuentes](11_INTEGRACION_MAIN_NIM05.md).
+No se ha fusionado ninguna PR ni modificado main. Las pruebas físicas no están realizadas.
 
 NDK 29.0.14206865, toolchain CMake oficial, ABI arm64-v8a, android-24,
 Clang del NDK, c++_static; runner ubuntu-24.04. SDK 36/build-tools 36.0.0,
@@ -71,21 +70,27 @@ por obtener un workflow verde.
 
 ## Resultado final nuevo
 
-- [Job Android](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39430632471/job/118654457892): **success**.
+- [Job Android](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563/job/118837120978): **success**.
 - **Clang 21.0.0** del NDK fijado; Core/godot-cpp/puente compilan y enlazan.
 - SO **618608 bytes**, ELF64 AArch64 183, LOAD >=16KiB.
 - Dependencias observadas: **libm.so, libdl.so, libc.so**.
 - ABI C++ interna oculta; nimroel_core_init accesible.
 - APK firmado v2/v3, SDK 24/36, solo arm64-v8a, extensión idéntica al build.
-- Control Linux **GNU 13.3.0**, Godot 4.7.2, **124 checks aprobados**.
+- Control Linux **GNU 13.3.0**, Godot 4.7.2, **129 checks aprobados**.
 - Ejecución Android real/Tab S9+: **NO PROBADA**.
-- [Artefacto publicado](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39430632471/artifacts/12268366478), 30 días.
+- [Artefacto publicado](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563/artifacts/12290784767), 30 días.
 
 | Archivo | SHA-256 |
 | --- | --- |
 | libnimroel_core.android.arm64.so | `c3570bccdeec5b1ff2d1bca0554cd650e64931624c4958632d7366676d00050e` |
-| Nimroel_NIM06_Functional.apk | `acf8ebfac3d9131326c75ed72f5d933947af776db450eb454248165db83e01d1` |
+| Nimroel_NIM06_Functional.apk | `15567475adb0a2ab92502495d351c6524bc838d1068e9cd42a860d777186a715` |
 
 [Extracto permanente del log](evidence/android-excerpt.txt). Los hashes del ZIP
 publicado y del control Linux se conservan en ci-summary.json; el control no es
 un artefacto para instalar en Android. La firma temporal no es distribución final.
+
+El control Linux también supera las seis suites Godot NIM01–05/teclado y los
+48 tests Python offline (8+29+11) con extensión cargada. El laboratorio de voz
+Windows continúa deshabilitado en Android, sin añadir servicios al adaptador.
+La biblioteca ARM64 coincide incluso con el hash anterior; el APK y su firma son
+nuevos, y sus hashes se registran como evidencia de esta integración.

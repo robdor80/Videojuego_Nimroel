@@ -1,16 +1,15 @@
 # Incidencias y soluciones
 
-Base Nimroel `6c7ed6a8013b471be0e66dbc4d5bedaeb3541782`; CoreRPG
-`4f282863737bcd8f5add401202a9e1064c133672`. Código verificado por CI:
-`c071105fcb02e125641594cea4f859dbaad711a2`.
-Godot 4.7.2 Standard; godot-cpp oficial `e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`
-(API 4.5 compatible hacia versiones menores posteriores, comprobada con 4.7.2).
-[Pins y hashes oficiales](evidence/dependencies.json).
-Resultados nuevos y enlaces de CI: [evidencia compacta](evidence/ci-summary.json).
-Las pruebas físicas no están realizadas.
-CI final: [39430632471](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39430632471), success.
-Checkout automático PR `8c990b3e1d3672b951f545e9028b6b6f7dc94259`,
-árbol idéntico al HEAD de código (verificado por API). No se ha fusionado en main.
+Main integrado: `cd1735b1c9a1bb7507a3b1ce42d96c6d103b0977` (NIM-05 / PR #22).
+CoreRPG `4f282863737bcd8f5add401202a9e1064c133672`; godot-cpp oficial
+`e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`, API 4.5; Godot **4.7.2 Standard**.
+Código verificado: `9924cc38f2fb1162e49ad80779db76c8e5d3f886`.
+[CI nativa 39483287563](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563) y
+[regresiones 39483287443](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287443): success.
+Checkout PR automático `7296c1eb43eaf3da96cc9d995f13bcdb9cb9c7eb`, árbol idéntico al HEAD de código.
+[Pins](evidence/dependencies.json) · [Evidencia vigente](evidence/ci-summary.json) ·
+[Integración NIM-05 y conservación de fuentes](11_INTEGRACION_MAIN_NIM05.md).
+No se ha fusionado ninguna PR ni modificado main. Las pruebas físicas no están realizadas.
 
 | Revisión / run | Hallazgo | Causa y corrección | Resultado |
 | --- | --- | --- | --- |
@@ -57,3 +56,18 @@ este trabajo. PR #23 avanzó también externamente a
 `be7806c5a8d661db35dfb417b5244bf684318732` (13:32:16 UTC), reconciliando
 NIM-05/política IA. Se volvió a comparar el listado de archivos: sin intersecciones.
 Main y Core mantienen los SHAs auditados. No fue necesaria intervención del usuario.
+
+## Integración posterior de main / NIM-05
+
+- Merge 7b3c2873 desde main cd1735b1, sin conflictos ni descarte de trabajo.
+- Ref remota NIM06 no existía en el seguimiento local (origin solo configuraba main);
+  fetch explícito de esa ref y comparación local/remota antes de merge/push.
+- 9924cc38 amplía regresiones NIM05 y aislamiento de diagnóstico con Core activo.
+- CI 39483287563 y 39483287443: success en todos los jobs. 129 checks nativos
+  por proceso y 8+29+11 tests Python, seis suites Godot. No hubo fallos técnicos
+  de compilación, carga o exportación que requirieran corrección adicional.
+- PR23 avanzó externamente de ea564e95 a c3d15241 durante el trabajo; no se
+  modifica ni se integra su rama. Evidencia de refs en main-integration-audit.json.
+
+Las secciones previas son historial de la entrega original; el estado actual
+se resume en 11 y ci-summary.json. No hubo force push ni fusión de PR.
