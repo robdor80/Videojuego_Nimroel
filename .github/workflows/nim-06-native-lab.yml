@@ -1,10 +1,10 @@
-name: NIM-06 native GDExtension laboratory
+name: NIM-06 functional native bridge
 on:
   push:
     branches: [main]
-    paths: ['Game/BridgeCoreRPG/lab/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
+    paths: ['Game/BridgeCoreRPG/**', 'Game/Host2D/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
   pull_request:
-    paths: ['Game/BridgeCoreRPG/lab/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
+    paths: ['Game/BridgeCoreRPG/**', 'Game/Host2D/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -48,16 +48,22 @@ jobs:
           cp "$ANDROID_HOME/ndk/29.0.14206865/source.properties" Tools/NIM06/evidence/android-ndk.txt
           "$ANDROID_HOME/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" --version > Tools/NIM06/evidence/android-clang.txt
       - name: Build CoreRPG + godot-cpp + extension and verify architecture/link
-        run: python Tools/NIM06/native_lab.py build --target ${{ matrix.target }}
+        run: python Tools/NIM06/native_lab.py build --functional --target ${{ matrix.target }}
       - name: Load extension and execute CoreRPG in Windows Godot
         if: matrix.target == 'windows'
-        run: python Tools/NIM06/native_lab.py smoke
+        run: python Tools/NIM06/native_lab.py smoke --functional
+      - name: Execute existing Host regressions with native extension loaded
+        if: matrix.target == 'windows'
+        run: python Tools/NIM06/native_lab.py regressions --functional
+      - name: Export and execute Windows native package; compare DLL bytes
+        if: matrix.target == 'windows'
+        run: python Tools/NIM06/native_lab.py export-windows --functional
       - name: Build Linux control for export host (not Android runtime evidence)
         if: matrix.target == 'android'
-        run: python Tools/NIM06/native_lab.py build --target linux
+        run: python Tools/NIM06/native_lab.py build --functional --target linux
       - name: Load Linux control in official Godot before export
         if: matrix.target == 'android'
-        run: python Tools/NIM06/native_lab.py smoke
+        run: python Tools/NIM06/native_lab.py smoke --functional
       - name: Temporary laboratory debug signing key
         if: matrix.target == 'android'
         shell: bash
@@ -71,13 +77,14 @@ jobs:
           GODOT_ANDROID_KEYSTORE_DEBUG_PATH: ${{ runner.temp }}/nim06-debug.keystore
           GODOT_ANDROID_KEYSTORE_DEBUG_USER: androiddebugkey
           GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD: android
-        run: python Tools/NIM06/native_lab.py export-android
-      - name: Publish libraries, laboratory project and evidence (including failures)
+        run: python Tools/NIM06/native_lab.py export-android --functional
+      - name: Publish libraries, Host2D project and evidence (including failures)
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: NIM06-native-${{ matrix.target }}-${{ github.sha }}
+          name: NIM06-functional-${{ matrix.target }}-${{ github.sha }}
           path: |
+            Game/Host2D/
             Game/BridgeCoreRPG/lab/project/
             Tools/NIM06/evidence/
           retention-days: 30
