@@ -1,0 +1,5 @@
+/build*/
+/project/.godot/
+/project/bin/*
+/project/export/
+*.gd.uid

@@ -4,6 +4,7 @@ import json
 import os
 import threading
 import unittest
+import uuid
 from unittest.mock import patch
 from urllib import error
 
@@ -213,6 +214,10 @@ class HTTPServerTests(unittest.TestCase):
     def send(self, body=None, path="/v1/provider-probe", method="POST", headers=None):
         if body is None:
             body = {"purpose": "diagnostic_intent", "tier": "simple", "text": "Saludo"}
+        # NIM-05 exige un nonce por petición; el helper lo inyecta en
+        # solicitudes JSON anteriores sin alterar sus pruebas negativas.
+        if isinstance(body, dict):
+            body = {**body, "request_id": body.get("request_id", uuid.uuid4().hex)}
         content = json.dumps(body).encode("utf-8") if isinstance(body, dict) else body
         conn = http.client.HTTPConnection("127.0.0.1", self.server.server_port, timeout=5)
         hdr = {"Content-Type": "application/json", "X-Nimroel-Token": "local-testing-token"}

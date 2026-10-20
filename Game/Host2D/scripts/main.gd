@@ -6,6 +6,7 @@ const GATEWAY = preload("res://scripts/demo_gateway.gd")
 const PIPELINE = preload("res://scripts/interaction_pipeline.gd")
 const GEMINI_DIAGNOSTIC = preload("res://scripts/gemini_diagnostic.gd")
 const PROVIDER_DIAGNOSTIC = preload("res://scripts/provider_diagnostic.gd")
+const TTS_DIAGNOSTIC = preload("res://scripts/tts_diagnostic.gd")
 const KEYBOARD_LAYOUT = preload("res://scripts/keyboard_layout.gd")
 const ART_SCENE = preload("res://art/aldea_fondo_provisional.svg")
 const ART_PORTRAIT = preload("res://art/retrato_provisional.svg")
@@ -28,6 +29,7 @@ var _service_state: Label
 var _mode_button: Button
 var _gemini_diagnostic
 var _provider_diagnostic
+var _tts_diagnostic
 var _provider_tier: OptionButton
 var _provider_row: HBoxContainer
 var _integration_mode: bool = false
@@ -45,6 +47,11 @@ func _ready() -> void:
 	_provider_diagnostic = PROVIDER_DIAGNOSTIC.new()
 	add_child(_provider_diagnostic)
 	_provider_diagnostic.probe_finished.connect(_on_provider_probe_finished)
+	# El servicio de voz no existe en Android: sin dependencia del MSI.
+	if not OS.has_feature("mobile"):
+		_tts_diagnostic = TTS_DIAGNOSTIC.new()
+		add_child(_tts_diagnostic)
+		_tts_diagnostic.finished.connect(_on_tts_test_finished)
 	_build_interface()
 	get_viewport().size_changed.connect(_update_layout)
 	set_process(OS.has_feature("mobile"))
@@ -216,6 +223,12 @@ func _build_interface() -> void:
 		provider_button.tooltip_text = "Envía tu texto al proxy local y al proveedor habilitado. Solo clasificación técnica; no hay NPC ni partida."
 		provider_button.pressed.connect(_probe_providers)
 		_provider_row.add_child(provider_button)
+		var voice_button := Button.new()
+		voice_button.name = "PruebaVozLocal"
+		voice_button.text = "Escuchar TTS local"
+		voice_button.tooltip_text = "Genera una frase en tiempo real con sherpa-onnx local. No es la voz de un NPC ni accede a CoreRPG."
+		voice_button.pressed.connect(_probe_tts)
+		_provider_row.add_child(voice_button)
 
 func _update_layout() -> void:
 	if not is_instance_valid(_conversation_panel):
@@ -332,6 +345,21 @@ func _on_provider_probe_finished(result: Dictionary) -> void:
 		var reason_detail: String = " · Motivo: " + reason if not reason.is_empty() else ""
 		_append_bubble("SISTEMA · PRUEBA IA", "Diagnóstico no disponible (" + code + reason_detail + "). La demo sigue operativa y CoreRPG no ha intervenido.", false)
 		_hint.text = "Prueba multiproveedor sin confirmar"
+	call_deferred("_layout_panel_controls")
+
+func _probe_tts() -> void:
+	# Botón explícito: texto visible -> servidor localhost -> inferencia real
+	# sherpa-onnx -> WAV -> AudioStreamPlayer. Nunca es un turno de juego.
+	_hint.text = "Solicitada síntesis local técnica (sin NPC)"
+	_tts_diagnostic.speak_test(_input.text)
+
+func _on_tts_test_finished(result: Dictionary) -> void:
+	if result.get("status") == "ok":
+		_append_bubble("SISTEMA · PRUEBA DE VOZ", "Audio sintetizado dinámicamente con sherpa-onnx y reproducción iniciada en Godot. Confirma si lo escuchas en el MSI. No es voz de NPC.", false)
+		_hint.text = "TTS técnico: reproducción iniciada"
+	else:
+		_append_bubble("SISTEMA · PRUEBA DE VOZ", "TTS local no disponible (" + str(result.get("error_code", "TTS_UNAVAILABLE")) + "). La demo continúa y no hay voz de NPC.", false)
+		_hint.text = "Voz técnica no confirmada"
 	call_deferred("_layout_panel_controls")
 
 func _toggle_mode() -> void:

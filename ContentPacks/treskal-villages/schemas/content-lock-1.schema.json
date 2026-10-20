@@ -1,0 +1,45 @@
+{
+  "$id": "urn:nimroel:413:content-lock-1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "definition_set_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "files": {
+      "additionalProperties": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "maxProperties": 8,
+      "minProperties": 8,
+      "propertyNames": {
+        "pattern": "^(manifest\\.json|provenance\\.json|integration-fixture\\.json|nimroel/model-v1\\.json|resources/[a-z0-9/_-]+\\.json)$"
+      },
+      "type": "object"
+    },
+    "pack_id": {
+      "const": "nimroel.treskal.villages"
+    },
+    "pack_version": {
+      "const": "0.1.0"
+    },
+    "release_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "pack_id",
+    "pack_version",
+    "definition_set_sha256",
+    "release_sha256",
+    "files"
+  ],
+  "type": "object"
+}
