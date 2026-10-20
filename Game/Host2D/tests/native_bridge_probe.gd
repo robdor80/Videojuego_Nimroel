@@ -4,6 +4,9 @@ extends RefCounted
 const Controller = preload("res://scripts/native_world_controller.gd")
 const Store = preload("res://scripts/core_save_store.gd")
 const Port = preload("res://scripts/core_port.gd")
+const Pipeline = preload("res://scripts/interaction_pipeline.gd")
+const Provider = preload("res://scripts/provider_diagnostic.gd")
+const VoiceLab = preload("res://scripts/tts_diagnostic.gd")
 static var _errors: Array[String] = []
 static var _checks: int = 0
 
@@ -46,6 +49,12 @@ static func verify() -> Dictionary:
 	check(host.call("initialize", {"api_version": 1, "seed": "18446744073709551615", "entities": 4}).entities == [1, 2, 3, 4], "Core creates entities and full u64 seed")
 	check(host.call("diagnostics").revision == "4", "initial revision")
 	var initial := saved(host)
+	# NIM-05 diagnostics coexist with a live native world but have no capability.
+	check(Pipeline.submit_text("Hola", Pipeline.MODE_INTEGRATION).error_code == "CORE_NOT_CONNECTED", "NIM05 text flow cannot acquire native authority")
+	var local_error := {"status": "unavailable", "error_code": "REQUEST_ID_REUSED", "world_mutated": false}
+	check(Provider.parse_response(409, JSON.stringify(local_error).to_utf8_buffer()).error_code == "REQUEST_ID_REUSED", "NIM05 broker retains safe replay error")
+	check(VoiceLab._safe_error(503, JSON.stringify({"error_code": "INJECTED_SECRET"}).to_utf8_buffer()) == "TTS_UNAVAILABLE", "NIM05 voice diagnostic sanitizes external errors")
+	check(saved(host) == initial, "NIM05 diagnostics preserve native world and RNG")
 	for bad in [
 		{"api_version": 1, "seed": "01", "entities": 4},
 		{"api_version": 1, "seed": "18446744073709551616", "entities": 4},

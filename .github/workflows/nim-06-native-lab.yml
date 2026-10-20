@@ -64,6 +64,9 @@ jobs:
       - name: Load Linux control in official Godot before export
         if: matrix.target == 'android'
         run: python Tools/NIM06/native_lab.py smoke --functional
+      - name: Run NIM-01 to NIM-05 regressions with Linux native control
+        if: matrix.target == 'android'
+        run: python Tools/NIM06/native_lab.py regressions --functional
       - name: Temporary laboratory debug signing key
         if: matrix.target == 'android'
         shell: bash
