@@ -21,7 +21,7 @@ func _run() -> void:
 		errors.append("NIM04 diagnóstico con poder de partida")
 	# Regresión real detectada el 17/10: Godot rechazaba una respuesta OpenAI 200
 	# válida porque faltaban openai/Luna/Sol en MODELS.
-	for pair in [["simple", "gpt-6-luna"], ["complex", "gpt-6-sol"]]:
+	for pair in [["simple", "gpt-6-luna"], ["complex", "gpt-6.1-sol"]]:
 		var openai_ok: Dictionary = good.duplicate(true)
 		openai_ok["source"] = "openai"
 		openai_ok["model"] = pair[1]
@@ -30,7 +30,7 @@ func _run() -> void:
 		var parsed_openai: Dictionary = Provider.parse_response(200, JSON.stringify(openai_ok).to_utf8_buffer())
 		if parsed_openai.get("status") != "ok" or parsed_openai.get("model") != pair[1]:
 			errors.append("NIM04 Godot rechaza OpenAI válido: " + str(pair[1]))
-		openai_ok["model"] = "gpt-6-sol" if pair[0] == "simple" else "gpt-6-luna"
+		openai_ok["model"] = "gpt-6.1-sol" if pair[0] == "simple" else "gpt-6-luna"
 		if Provider.parse_response(200, JSON.stringify(openai_ok).to_utf8_buffer()).get("status") == "ok":
 			errors.append("NIM04 permite modelo OpenAI de nivel equivocado")
 	var paid_error: Dictionary = {"status": "unavailable", "error_code": "PAID_PROVIDER_NOT_AUTHORIZED", "world_mutated": false}
@@ -46,7 +46,7 @@ func _run() -> void:
 		# Un proveedor retirado nunca puede regresar en la respuesta técnica.
 		{"status": "ok", "kind": "technical_diagnostic", "source": "mistral", "model": "mistral-small-2603", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
 		{"status": "ok", "kind": "npc", "source": "gemini", "model": "gemini-3.5-flash-lite", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
-		{"status": "ok", "kind": "technical_diagnostic", "source": "openai", "model": "gpt-6-sol", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
+		{"status": "ok", "kind": "technical_diagnostic", "source": "openai", "model": "gpt-6.1-sol", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
 		{"status": "ok", "kind": "technical_diagnostic", "source": "gemini", "model": "gemini-3.8-flash", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
 		{"status": "ok", "kind": "technical_diagnostic", "source": "gemini", "model": "gemini-3.5-flash-lite", "tier": "simple", "intent": "ejecutar", "fallback_used": false, "latency_ms": 19, "world_mutated": false},
 		{"status": "ok", "kind": "technical_diagnostic", "source": "gemini", "model": "gemini-3.5-flash-lite", "tier": "simple", "intent": "dialogar", "fallback_used": false, "latency_ms": 19, "world_mutated": true},

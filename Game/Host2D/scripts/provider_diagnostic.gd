@@ -9,7 +9,7 @@ const TIERS := ["simple", "complex"]
 const INTENTS := ["observar", "desplazarse", "dialogar", "otro"]
 const MODELS := {
 	"simple": {"gemini": "gemini-3.5-flash-lite", "openai": "gpt-6-luna"},
-	"complex": {"gemini": "gemini-3.8-flash", "openai": "gpt-6-sol"}
+	"complex": {"gemini": "gemini-3.8-flash", "openai": "gpt-6.1-sol"}
 }
 
 var _http: HTTPRequest

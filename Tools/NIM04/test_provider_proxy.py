@@ -33,7 +33,7 @@ class RouterTests(unittest.TestCase):
         result = p.ProviderRouter(adapter=adapter).run("complex", "Miro", fallback_enabled=True)
         self.assertEqual(seen, [
             ("gemini", "gemini-3.8-flash"),
-            ("openai", "gpt-6-sol"),
+            ("openai", "gpt-6.1-sol"),
         ])
         self.assertTrue(result["fallback_used"])
         self.assertFalse(result["world_mutated"])

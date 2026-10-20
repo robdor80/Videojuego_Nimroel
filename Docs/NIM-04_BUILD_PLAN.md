@@ -1,5 +1,13 @@
 # NIM-04 BUILD — Plan autorizado y puertas de aceptación
 
+> **NOTA VIGENTE DEL 20/10/2026:** la arquitectura narrativa aprobada tiene **tres IA**: Luna para NPC y consultas puntuales al Máster; Sol para presentar escenas y eventos importantes; ChatGPT Plus para crear paquetes importables mediante ZIP **manual y fuera del juego**. La tabla Free/Gemini ↔ OpenAI que figura a continuación describe exclusivamente el **diagnóstico histórico NIM-04**; sus rutas técnicas y pruebas se conservan, pero no equivalen a un enrutador narrativo activo. **CoreRPG mantiene la autoridad.** Política normativa: [Política actual](IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md). Las notas del 17/10 que siguen son antecedentes históricos, no la política narrativa vigente.
+
+> **ACTUALIZACIÓN DEL 17/10/2026 — política posterior (prioritaria).**
+> El autor define **Free: Gemini 3.5 Flash-Lite / Gemini 3.8 Flash** y **Pago: OpenAI Luna 6.1 / OpenAI Sol 6.1**; **Mistral fuera**. `gpt-6.1-sol` está verificado en el catálogo y es la ruta `complex` propuesta en la rama de actualización; no se ha revalidado en API real. **`gpt-6.1-luna` no figura en el catálogo oficial**: `gpt-6-luna` se conserva únicamente en el laboratorio anterior hasta decisión del autor. Las pruebas previas de `gpt-6-luna`/`gpt-6-sol` siguen siendo históricas; los párrafos originales no deben leerse como la configuración definitiva.
+>
+> Contrato normativo: [Política de modelos](IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md) · [Catálogo JSON](IA/catalogo_modelos_nimroel_2026-10-17.json).
+
+
 Fecha de inicio: 2026-10-16. Base verificada: `main` @ `8d27751809f11c1dae1cdeb881a5cf41f11c012d` (NIM-03 PR #19 fusionada). Rama: `feat/nim-04-build`. Estado: **en desarrollo; no autoriza fusión automática**.
 
 ## Decisión arquitectónica de proveedores — 17/10/2026

@@ -1,5 +1,15 @@
 # NIM-04 — Protocolo de proveedor real y pruebas (17/10/2026)
 
+> **ACTUALIZACIÓN VIGENTE 20/10/2026:** las pruebas y el enrutado Free/Gemini→OpenAI descritos aquí son **del clasificador técnico NIM-04**, no del Máster ni los NPC. La política narrativa posterior establece **Luna (diálogo NPC + consultas puntuales), Sol (escena nueva/evento importante), ChatGPT Plus (ZIP manual fuera de partida)** y CoreRPG como autoridad. El requisito «Luna 6.1» y «Sol 6.1 aún sin prueba real» en párrafos históricos ya fueron aclarados/superados en ensayos controlados; no leerlos como bloqueos actuales. [Política revisada](IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md) y [evidencia](https://github.com/robdor80/Videojuego_Nimroel/issues/29).
+
+> **DECISIÓN VIGENTE, 20/10/2026 — Aclaración del autor:** en pago sencillo se utilizará la Luna más avanzada oficialmente publicada. Actualmente se selecciona **GPT-6 Luna, `gpt-6-luna`**; no se espera a una hipotética Luna 6.1. Los registros siguientes de 17/10 sobre Luna 6.1 se conservan como **historial anterior a esta aclaración**, no como bloqueo actual. No se autorizan por ello llamadas de pago nuevas. Política vigente: [Política de modelos](IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md).
+
+> **ACTUALIZACIÓN POSTERIOR, 17/10/2026 — NO REESCRIBIR LA EVIDENCIA HISTÓRICA.**
+> El autor ha aprobado **Gemini 3.5 Flash-Lite / Gemini 3.8 Flash para Free** y solicita **OpenAI Luna 6.1 / Sol 6.1 para Pago**; **Mistral excluido**. Se actualizó la ruta diagnóstica exigente a `gpt-6.1-sol` y los tests offline de la rama de política; **no implica prueba E2E realizada con Sol 6.1**. La API OpenAI presenta `gpt-6-luna`, pero no un ID oficial `gpt-6.1-luna`; por ello la antigua Luna permanece señalada como legado del laboratorio, sin declararla equivalente a la solicitada.
+>
+> **La tabla y los experimentos anteriores que mencionan Mistral, Luna anterior o Sol anterior son exclusivamente históricos**, no política actual. Antes de nuevas llamadas de pago se exige consentimiento por sesión, control de coste y nuevos ensayos autorizados. Referencia normativa vigente: [Política de modelos](IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md).
+
+
 **Protocolo y registro de pruebas:** el 16/10/2026 se confirmó una llamada autenticada real a Gemini 3.8 **directamente desde PowerShell en MSI** (fuera del broker y de Godot); ver evidencia al final del apartado Gemini. Durante la preparación del broker NIM-04 no se emplearon credenciales reales ni se realizaron llamadas a Mistral. El broker y el Host son diagnósticos; CoreRPG NO está conectado.
 
 ## OpenAI: preparativo y contrato técnico de respaldo (17/10/2026)
