@@ -1,6 +1,7 @@
 extends RefCounted
 ## Integration tests execute CoreRPG through the registered native classes.
 ## Host-only diagnostics stay here; none are sent to dialogue/providers.
+const Controller = preload("res://scripts/native_world_controller.gd")
 const Store = preload("res://scripts/core_save_store.gd")
 const Port = preload("res://scripts/core_port.gd")
 static var _errors: Array[String] = []
@@ -102,6 +103,10 @@ static func verify() -> Dictionary:
 	check(accepted.outcome == "accepted", "session calls Core action via Host2D port")
 	check(not accepted.has("revision") and not accepted.has("consequence") and not accepted.has("rejection"), "safe receipt strips privileged result")
 	check(Port.submit(proposal).error_code == "REQUEST_REPLAYED", "request deduplication")
+	var fresh := context(player)
+	var old_ticket := proposal.duplicate()
+	old_ticket.request_id = 2
+	check(old_ticket.context_id != fresh.context_id and Port.submit(old_ticket).error_code == "CONTEXT_EXPIRED", "consumed tickets never reused")
 	var remembered := context(player, {"subject": 1, "kind": 3})
 	check(remembered.facts[0].reference == 2 and remembered.facts[0].provenance == "remembered", "actions do not silently refresh knowledge")
 	check(learn(host, 1, 1, 3).status == "ok", "explicit knowledge refresh")
@@ -123,7 +128,9 @@ static func verify() -> Dictionary:
 	# Persistent world + remembered knowledge + RNG continuation, not replay.
 	var roll := {"operation": "roll", "actor": 1, "stream": 7, "minimum": 1, "maximum": 1000000}
 	var revision_before_roll: String = host.call("diagnostics").revision
-	check(step(host, [roll]).results[0].consumed_random, "real deterministic RNG draw")
+	var first_roll := step(host, [roll])
+	check(first_roll.results[0].consumed_random, "real deterministic RNG draw")
+	check(first_roll.results[0].roll_value == "714378", "independent golden RNG vector")
 	check(host.call("diagnostics").revision == revision_before_roll, "RNG draw does not invent world revision")
 	var checkpoint := saved(host)
 	check(Store.save(host, "nim06_test").status == "ok", "Host writes physical save")
@@ -133,6 +140,7 @@ static func verify() -> Dictionary:
 	var from_disk := FileAccess.get_file_as_bytes("user://core_saves/nim06_test.core")
 	check(from_disk == checkpoint, "Host filesystem roundtrip")
 	var continued := step(host, [roll, roll, roll])
+	check(continued.results[0].roll_value == "888664" and continued.results[1].roll_value == "173266" and continued.results[2].roll_value == "20245", "independent golden RNG continuation")
 	var after_continued := saved(host)
 	var restored: Dictionary = Store.load_save(host, "nim06_test")
 	check(restored.status == "ok", "Core restores v3")
@@ -144,6 +152,10 @@ static func verify() -> Dictionary:
 	corrupt[corrupt.size() - 1] = corrupt[corrupt.size() - 1] ^ 1
 	var valid_after_restore: RefCounted = host.call("open_session", {"api_version": 1, "observer": 1, "audience": "player"}).session
 	var before_load_error := saved(host)
+	var worker := Thread.new()
+	check(worker.start(Callable(host, "diagnostics")) == OK, "start thread guard test")
+	var threaded: Dictionary = worker.wait_to_finish()
+	check(threaded.error_code == "WRONG_THREAD", "cross-thread access rejected")
 	check(host.call("restore", corrupt).error_code == "LOAD_REJECTED", "CRC rejects corrupt save")
 	check(host.call("restore", checkpoint.slice(0, 20)).error_code == "LOAD_REJECTED", "truncated save rejected")
 	check(saved(host) == before_load_error, "failed restore preserves active world and RNG")
@@ -158,6 +170,16 @@ static func verify() -> Dictionary:
 	check(reopened.call("close").status == "ok" and context(reopened).error_code == "SESSION_EXPIRED", "explicit session close")
 	check(Port.bind_session(null), "detach port")
 	check(host.call("close").status == "ok" and host.call("capture").error_code == "NOT_INITIALIZED", "Host shutdown")
+	var controller := Controller.new()
+	check(controller.start().status == "ok", "interactive Host controller initializes Core")
+	check(controller.query().facts.size() == 4, "interactive view omits secret entity")
+	check(controller.save_slot("nim06_controller").status == "ok", "controller saves")
+	check(controller.act("place", 3).outcome == "accepted", "controller action is native")
+	check(controller.query().facts[1].reference == 3, "controller observes new containment")
+	check(controller.load_slot("nim06_controller").status == "ok", "controller restores and reauthorizes")
+	check(controller.query().facts[1].reference == 2, "controller continuity restored")
+	check(controller.close().status == "ok", "controller closes")
+	DirAccess.remove_absolute("user://core_saves/nim06_controller.core")
 	DirAccess.remove_absolute("user://core_saves/nim06_test.core")
 	DirAccess.remove_absolute("user://core_saves/nim06_test.core.bak")
 	return {"ok": _errors.is_empty(), "checks": _checks, "errors": _errors, "core_commit": "4f282863737bcd8f5add401202a9e1064c133672", "scope": "native functional vertical; physical device acceptance separate"}
