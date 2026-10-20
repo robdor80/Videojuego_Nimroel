@@ -31,7 +31,6 @@ func _bind() -> Dictionary:
 		return opened
 	_session = opened.session
 	_request_id = 0
-	Port.bind_session(_session)
 	return query()
 
 func query() -> Dictionary:
@@ -52,7 +51,7 @@ func act(operation: String, target: int = 0) -> Dictionary:
 	var proposal := {"api_version": 1, "operation": operation, "context_id": issued.context_id, "request_id": _request_id}
 	if target != 0:
 		proposal["target"] = target
-	return Port.submit(proposal)
+	return Port.submit(proposal, _session)
 
 func save_slot(slot: String = "native_vertical") -> Dictionary:
 	if _host == null:
@@ -67,11 +66,9 @@ func load_slot(slot: String = "native_vertical") -> Dictionary:
 		return loaded
 	# Restore invalida todas las capacidades previas. El Host debe autorizar de nuevo.
 	_session = null
-	Port.bind_session(null)
 	return _bind()
 
 func close() -> Dictionary:
-	Port.bind_session(null)
 	_session = null
 	if _host != null:
 		var closed: Dictionary = _host.call("close")
