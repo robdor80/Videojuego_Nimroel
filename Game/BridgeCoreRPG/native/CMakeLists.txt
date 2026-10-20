@@ -14,7 +14,7 @@ set_target_properties(nimroel_core PROPERTIES
 if(MSVC)
     target_link_options(nimroel_core PRIVATE "/MAP:${CMAKE_CURRENT_BINARY_DIR}/nimroel.map")
 else()
-    target_link_options(nimroel_core PRIVATE "-Wl,-Map,${CMAKE_CURRENT_BINARY_DIR}/nimroel.map" -Wl,--no-undefined)
+    target_link_options(nimroel_core PRIVATE "-Wl,-Map,${CMAKE_CURRENT_BINARY_DIR}/nimroel.map" -Wl,--no-undefined -Wl,--exclude-libs,ALL)
 endif()
 if(ANDROID)
     if(NOT ANDROID_ABI STREQUAL "arm64-v8a")

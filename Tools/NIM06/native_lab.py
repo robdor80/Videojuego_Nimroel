@@ -125,6 +125,9 @@ def verify(target):
         reader = ndk_root() / 'toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf' if target == 'android' else 'readelf'
         text = run([reader, '-h', '-d', '-l', '--dyn-syms', '--wide', path], f'{target}-elf.txt')
         assert ENTRY in text
+        if FUNCTIONAL:
+            # Only the GDExtension ABI is public, not Core C++ implementation symbols.
+            assert 'WorldState' not in text and 'Inspector' not in text and 'ActionEngine' not in text
         needed = re.findall(r'\(NEEDED\).*?\[(.*?)\]', text)
         if target == 'android':
             assert set(needed) <= {'libc.so', 'libm.so', 'libdl.so', 'liblog.so', 'libandroid.so'}, needed
