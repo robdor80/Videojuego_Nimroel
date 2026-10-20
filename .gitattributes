@@ -1,2 +1,40 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# 4.13: byte-reproducible pack and approved source snapshots on every Host.
+/ContentPacks/treskal-villages/** text eol=lf
+/Tools/CoreRPG413/** text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/00_Base/aldea_tipo_treskal.md" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/00_Base/posibilidades_aldea_treskal.md" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/01_Modelos/V1_Mixta_maderera_agricola/modelo_v1.md" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/ALCANCE_LORE_V001_v0.1.md" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/ENCARGO_HERRAMIENTA_ROTA_v0.1.md" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/MATRIZ_ACEPTACION_V001_v0.1.md" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/README.md" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/contrato_prueba_v001_v0.1.json" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Pueblos/05_Coordinacion_regional/generacion_regional_determinista.md" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Pueblos/Datos operativos/generation_invariants_v0.1.json" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Pueblos/Datos operativos/pueblo_generation_rules_v0.1.json" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Pueblos/Datos operativos/pueblo_instance_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Pueblos/Datos operativos/regional_generation_rules_v0.1.json" text eol=lf
+"/Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/metodologia_generacion_asentamientos_treskal.md" text eol=lf
+"/Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_defaults_manifest_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_given_word_honor_default_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_military_structure_default_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_apprenticeship_skill_transmission_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_employment_jobs_vacancies_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_interpersonal_trust_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_kinship_family_network_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_knowledge_provenance_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_memory_salience_forgetting_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personal_name_identity_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_property_possession_object_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_tools_workstations_equipment_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_waiting_service_capacity_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_wear_maintenance_repair_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_world_time_calendar_contract_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_defaults_manifest_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_personal_naming_surname_default_v0.1.json" text eol=lf
+"/Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json" text eol=lf

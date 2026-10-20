@@ -1,0 +1,40 @@
+{
+  "fixture_id": "v001-structural-1",
+  "generation": "fixed_reproducible_integration_not_procedural_generation",
+  "generator_version": "structural-fixture-1",
+  "materialized": 2,
+  "max_batch": 2,
+  "population": 50,
+  "region": {
+    "coverage": "not_simulated",
+    "edges": [
+      {
+        "cart_suitable": true,
+        "functional": true,
+        "route": "rural_timber_haulage",
+        "seasonal_model": "unresolved",
+        "source": "region-fixture-1/node-0001",
+        "target": "region-fixture-1/external-boundary",
+        "travel_cost": "unresolved",
+        "water_crossings": "unresolved"
+      }
+    ],
+    "id": "interior-timber-route-fixture",
+    "nodes": [
+      "region-fixture-1/node-0001",
+      "region-fixture-1/external-boundary"
+    ],
+    "version": 1
+  },
+  "relation_kinds": {
+    "external_connection": 2,
+    "population_association": 3,
+    "service": 1
+  },
+  "rng_probe_stream": "413",
+  "rules_version": "v001-handoff-0.1",
+  "schema_version": 1,
+  "seed_source": "explicit_technical_fixture",
+  "stable_settlement_id": "region-fixture-1/node-0001",
+  "world_seed": "413001"
+}

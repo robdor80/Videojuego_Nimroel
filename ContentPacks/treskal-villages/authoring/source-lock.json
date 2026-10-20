@@ -1,0 +1,143 @@
+{
+  "format_version": 1,
+  "repository": "robdor80/Videojuego_Nimroel",
+  "revision": "35c9d22ca3f688c62c709320b20cba565518669d",
+  "sources": [
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/00_Base/aldea_tipo_treskal.md",
+      "sha256": "b514725f7fc636792ebc0b140d14886e91d1083937cc0fcbb4403926dc6e352b"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/00_Base/posibilidades_aldea_treskal.md",
+      "sha256": "f5ecde2c5e563b35033b3be2ba898bd84e8919841d1a046430c89696bdde586e"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/01_Modelos/V1_Mixta_maderera_agricola/modelo_v1.md",
+      "sha256": "d7f094ab56bf93f95ba02fd3c1b887f577874335718343bad2a4eef05e04b781"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/ALCANCE_LORE_V001_v0.1.md",
+      "sha256": "6a247291afb23afa9d66b55a347e3e8e9d2f7844d8391fce8d1087023ffa6706"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/ENCARGO_HERRAMIENTA_ROTA_v0.1.md",
+      "sha256": "1d5f08ea0ff7a8c26ffb6c932936762a756758009c022ab48033f6aae62d9146"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/MATRIZ_ACEPTACION_V001_v0.1.md",
+      "sha256": "305d1521be7c5ec442df31e124a35fedd684811b36b2161833367ef96ab91c12"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/README.md",
+      "sha256": "130d230f22b599e2d92e9c656799c0b6e122a4f8da04884a3f46c34b746f593d"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/contrato_prueba_v001_v0.1.json",
+      "sha256": "53962aa685713cd1ff0ff4dd56d6469f1f447b045622dc1878c47c6f090c7639"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Pueblos/05_Coordinacion_regional/generacion_regional_determinista.md",
+      "sha256": "7246f06c8dbb26717a821fb9a546d18f42b77b1dc0b7baaf959c4a55032a421a"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Pueblos/Datos operativos/generation_invariants_v0.1.json",
+      "sha256": "2539e60bb22416c98fbed069d93cb653e82815ef3e3a6512e1cd50d14fc0abc9"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Pueblos/Datos operativos/pueblo_generation_rules_v0.1.json",
+      "sha256": "d28b6c383b2c023f0ba88af2697bb9067d28009378b54a2e15e5f89cf94865c3"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Pueblos/Datos operativos/pueblo_instance_contract_v0.1.json",
+      "sha256": "1071deffe69d22e778926b63c05b5c9f3644f300ea56c6ec0eee5135d5334bc7"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Pueblos/Datos operativos/regional_generation_rules_v0.1.json",
+      "sha256": "b1795afed56cdd1d3897b5089d5f9300687a04d39d0bff7b63d6ed6c57e1db4d"
+    },
+    {
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/metodologia_generacion_asentamientos_treskal.md",
+      "sha256": "9dc3462d7962a15977bd3ad7368b10f0cdcbae8bffd59164c498974deb09da6b"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_defaults_manifest_v0.1.json",
+      "sha256": "f85b641d31617b3af9a0f1e5cbfcdc0bf0ab9a2d8a691471871bdac546f35ee8"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_given_word_honor_default_v0.1.json",
+      "sha256": "2c2c70f53103e945473168b754b5fbc742e4815d904d8113d76c90df3e1ac627"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Casa Valrik Defaults/Datos operativos/casa_valrik_military_structure_default_v0.1.json",
+      "sha256": "25ac48673f1f21bebd7bcb6ed52e0400e5601c744eb0b55731413f5f9e30741a"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_apprenticeship_skill_transmission_contract_v0.1.json",
+      "sha256": "68dbca7a6e9b802959d1fb40a61b63f6f911dd46a543bb00966f7e8893d786a7"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_core_manifest_v0.1.json",
+      "sha256": "2a85e3e9756c86580148db4ef80eec4a4b4dd76df9176f1d8b98be895d76f045"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_employment_jobs_vacancies_contract_v0.1.json",
+      "sha256": "9320602c6b85727dedbe320fee4dc42abf1278d22bc2c899a650a01e78c0ecea"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_interpersonal_trust_contract_v0.1.json",
+      "sha256": "8654aea2234ce2e002eb2117514ad6c0e8e4b4e66aaa120983d700fa8486c006"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_kinship_family_network_contract_v0.1.json",
+      "sha256": "f2a98b0b44cb68e9ebb84fa8e6d0a47de195087e90245f74e0868505a563ee46"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_knowledge_provenance_contract_v0.1.json",
+      "sha256": "dd8113cdb22555f4b0273ff7fce9850d745eef6add607297af66a5d740fea88a"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_memory_salience_forgetting_contract_v0.1.json",
+      "sha256": "ea5051bcddc34d5e77d14999741711f3439da741a290f81ad5d16d7219c67215"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_personal_name_identity_contract_v0.1.json",
+      "sha256": "ad1330497f2707821cbd616fa81f737668097410d18bb52528d23ccea88251ab"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_property_possession_object_contract_v0.1.json",
+      "sha256": "f4bfd5067f7108eaf2450c66632dd3b87bd0e781b5d5459bac31d2fee6057386"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_tools_workstations_equipment_contract_v0.1.json",
+      "sha256": "9da8a14e922ad3b6b27cdf097e50fb0ca5df70eeca152856a4e39fd0afe191c8"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_waiting_service_capacity_contract_v0.1.json",
+      "sha256": "0d091f8bfcdaa9e6f3a03eaddd4a5446c04f15f07daf0e72e4babfd969cc43d2"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_wear_maintenance_repair_contract_v0.1.json",
+      "sha256": "28eeb5613acfac74352f1c453987bc5b6e58fca775a52c068959759c18d45151"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_world_time_calendar_contract_v0.1.json",
+      "sha256": "6227068d8fb14d24437da9545ac269a0a0fcc1b122de2ed41f5f02b416046180"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json",
+      "sha256": "9a7fd4c85330ef176362bee817b402d7a36ac82756e1e6a17d76e629cae04a10"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_defaults_manifest_v0.1.json",
+      "sha256": "35d3d50113a0a4bb35dbfdd1250ae89f74f00ea29b9a8803d8cf523719f5a1c9"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_personal_naming_surname_default_v0.1.json",
+      "sha256": "51c138271c352e4a3de9acbb6ebd46cff027ec32a9569fab40b735fd8c2eb38d"
+    },
+    {
+      "path": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+      "sha256": "903034df5f07bfdd1019a12ccaaa786d933835fd5821512947db86d5627fc1e3"
+    }
+  ]
+}

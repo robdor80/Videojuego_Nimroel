@@ -1,0 +1,50 @@
+{
+  "definitions": [
+    {
+      "id": "nimroel.treskal.villages:models/v1",
+      "kind": "settlement_model",
+      "pointer": "# Modelo V1",
+      "references": [
+        {
+          "expected_kind": "service_capability",
+          "target": "nimroel.treskal.villages:capabilities/basic-blacksmithing"
+        },
+        {
+          "expected_kind": "service_capability",
+          "target": "nimroel.treskal.villages:capabilities/local-tavern"
+        }
+      ],
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/01_Modelos/V1_Mixta_maderera_agricola/modelo_v1.md"
+    },
+    {
+      "id": "nimroel.treskal.villages:capabilities/basic-blacksmithing",
+      "kind": "service_capability",
+      "pointer": "/generation/mandatoryCapabilities/6",
+      "references": [],
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/contrato_prueba_v001_v0.1.json"
+    },
+    {
+      "id": "nimroel.treskal.villages:capabilities/local-tavern",
+      "kind": "service_capability",
+      "pointer": "/generation/mandatoryCapabilities/7",
+      "references": [],
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/contrato_prueba_v001_v0.1.json"
+    },
+    {
+      "id": "nimroel.treskal.villages:objects/ordinary-agricultural-tool",
+      "kind": "object_category",
+      "pointer": "/quest/objectType",
+      "references": [
+        {
+          "expected_kind": "service_capability",
+          "target": "nimroel.treskal.villages:capabilities/basic-blacksmithing"
+        }
+      ],
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/contrato_prueba_v001_v0.1.json"
+    }
+  ],
+  "format_version": 1,
+  "handoff": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Aldeas/03_Prueba_v0.0.1/contrato_prueba_v001_v0.1.json",
+  "pack_id": "nimroel.treskal.villages",
+  "pack_version": "0.1.0"
+}

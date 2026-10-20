@@ -1,0 +1,84 @@
+name: NIM-06 native GDExtension laboratory
+on:
+  push:
+    branches: [main]
+    paths: ['Game/BridgeCoreRPG/lab/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
+  pull_request:
+    paths: ['Game/BridgeCoreRPG/lab/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: nim06-native-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  native:
+    name: ${{ matrix.target }} native build + verification
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: windows
+            os: windows-2022
+          - target: android
+            os: ubuntu-24.04
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12.10'
+      - name: Install pinned build drivers
+        run: python -m pip install cmake==3.31.6 ninja==1.11.1.3
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        if: matrix.target == 'android'
+        with:
+          distribution: temurin
+          java-version: '17.0.15+6'
+      - name: Install exact Godot Android toolchain
+        if: matrix.target == 'android'
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y gdb
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "ndk;29.0.14206865" "platforms;android-36" "build-tools;36.0.0"
+          mkdir -p Tools/NIM06/evidence
+          cp "$ANDROID_HOME/ndk/29.0.14206865/source.properties" Tools/NIM06/evidence/android-ndk.txt
+          "$ANDROID_HOME/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" --version > Tools/NIM06/evidence/android-clang.txt
+      - name: Build CoreRPG + godot-cpp + extension and verify architecture/link
+        run: python Tools/NIM06/native_lab.py build --target ${{ matrix.target }}
+      - name: Load extension and execute CoreRPG in Windows Godot
+        if: matrix.target == 'windows'
+        run: python Tools/NIM06/native_lab.py smoke
+      - name: Build Linux control for export host (not Android runtime evidence)
+        if: matrix.target == 'android'
+        run: python Tools/NIM06/native_lab.py build --target linux
+      - name: Load Linux control in official Godot before export
+        if: matrix.target == 'android'
+        run: python Tools/NIM06/native_lab.py smoke
+      - name: Temporary laboratory debug signing key
+        if: matrix.target == 'android'
+        shell: bash
+        run: |
+          keytool -genkeypair -noprompt -keystore "$RUNNER_TEMP/nim06-debug.keystore" \
+            -storepass android -keypass android -alias androiddebugkey \
+            -dname "CN=Nimroel Native Lab,O=Nimroel,C=ES" -keyalg RSA -keysize 2048 -validity 3650
+      - name: Export Android and verify actual extension bytes in arm64 APK
+        if: matrix.target == 'android'
+        env:
+          GODOT_ANDROID_KEYSTORE_DEBUG_PATH: ${{ runner.temp }}/nim06-debug.keystore
+          GODOT_ANDROID_KEYSTORE_DEBUG_USER: androiddebugkey
+          GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD: android
+        run: python Tools/NIM06/native_lab.py export-android
+      - name: Publish libraries, laboratory project and evidence (including failures)
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: NIM06-native-${{ matrix.target }}-${{ github.sha }}
+          path: |
+            Game/BridgeCoreRPG/lab/project/
+            Tools/NIM06/evidence/
+          retention-days: 30
+          if-no-files-found: error
