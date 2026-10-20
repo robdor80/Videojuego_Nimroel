@@ -1,5 +1,7 @@
 # NIM-04 — Protocolo de proveedor real y pruebas (17/10/2026)
 
+> **ACTUALIZACIÓN VIGENTE 20/10/2026:** las pruebas y el enrutado Free/Gemini→OpenAI descritos aquí son **del clasificador técnico NIM-04**, no del Máster ni los NPC. La política narrativa posterior establece **Luna (diálogo NPC + consultas puntuales), Sol (escena nueva/evento importante), ChatGPT Plus (ZIP manual fuera de partida)** y CoreRPG como autoridad. El requisito «Luna 6.1» y «Sol 6.1 aún sin prueba real» en párrafos históricos ya fueron aclarados/superados en ensayos controlados; no leerlos como bloqueos actuales. [Política revisada](IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md) y [evidencia](https://github.com/robdor80/Videojuego_Nimroel/issues/29).
+
 > **DECISIÓN VIGENTE, 20/10/2026 — Aclaración del autor:** en pago sencillo se utilizará la Luna más avanzada oficialmente publicada. Actualmente se selecciona **GPT-6 Luna, `gpt-6-luna`**; no se espera a una hipotética Luna 6.1. Los registros siguientes de 17/10 sobre Luna 6.1 se conservan como **historial anterior a esta aclaración**, no como bloqueo actual. No se autorizan por ello llamadas de pago nuevas. Política vigente: [Política de modelos](IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md).
 
 > **ACTUALIZACIÓN POSTERIOR, 17/10/2026 — NO REESCRIBIR LA EVIDENCIA HISTÓRICA.**
