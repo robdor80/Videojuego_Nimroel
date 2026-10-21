@@ -51,7 +51,7 @@ GATES = ["Puerta Alta", "Puerta del Río", "Puerta del Camino", "Puerta Sur"]
 TOP_KEYS = {"schemaVersion", "documentId", "version", "phase", "preparedAt", "status",
             "canonStatus", "authorityChain", "sourceRefs", "manualCityIds", "excludedCityIds",
             "otherDarovanIsland", "hydro", "fiscal", "prohibitions", "measurementPolicy",
-            "confirmedPhysicalLinkIds", "cities", "authorialPendingIds", "runtimeIntegration"}
+            "confirmedPhysicalLinkIds", "cities", "authorialPendingIds", "authorialDecisions", "runtimeIntegration"}
 
 def check(ok: bool, why: str) -> None:
     if not ok:
@@ -95,7 +95,30 @@ def validate(data: dict, repo: Path) -> None:
     }, "pretend runtime / generated city")
     check(data["authorialPendingIds"] == ["DAR-P02", "DAR-P04", "DAR-P05",
           "DAR-P08", "DAR-P09", "DAR-P10", "DAR-P11",
-          "DAR-D07-01", "DAR-D07-02", "DAR-D07-03"], "authorial pending removed")
+          "DAR-D07-02", "DAR-D07-03"], "authorial pending removed")
+    # Only the AUTHOR-approved conceptual choice B is closed; no physical districts or plans.
+    approvals = data["authorialDecisions"]
+    check(type(approvals) is list and len(approvals) == 1, "approved decisions count")
+    approval = approvals[0]
+    check(set(approval) == {
+        "id", "cityId", "choice", "status", "approvingAuthority",
+        "approvedConcept", "description", "affectsUrbanLayout",
+        "createsCanonicalDistrictNames", "createsPhysicalRoutes",
+        "createsNewFacilities", "changesPopulation", "pendingDetails"
+    } and approval["id"] == "DAR-D07-01" and approval["cityId"] == "veldora"
+          and approval["choice"] == "B" and approval["status"] == "APPROVED_CONCEPT_ONLY"
+          and approval["approvingAuthority"] == "autor"
+          and approval["approvedConcept"] == "multiple_organic_commercial_sectors"
+          and isinstance(approval["description"], str)
+          and len(approval["description"]) > 30
+          and all(approval[k] is False for k in [
+              "affectsUrbanLayout", "createsCanonicalDistrictNames",
+              "createsPhysicalRoutes", "createsNewFacilities", "changesPopulation"
+          ])
+          and approval["pendingDetails"] == [
+              "district_names", "district_boundaries", "street_plan",
+              "placement_of_facilities", "new_buildings_and_accesses"
+          ], "Veldora B authorial decision or scope tampered")
     sources = data["sourceRefs"]
     check(set(sources) == {"treihord", "visual", "visualData", "houses", "rivers", "coasts",
           "forests", "regions", "climate", "fiscal", "navigation", "d00", "d01", "d02",
@@ -258,7 +281,11 @@ def run() -> None:
         ("runtime_claim", lambda x: x["runtimeIntegration"].update(godotValidated=True)),
         ("world_state_claim", lambda x: x["cities"][3].update(worldStateEntityId="instantiated")),
         ("missing_source", lambda x: x["sourceRefs"].update(treihord="Worldbuilding/borrado.md")),
-        ("missing_approval_gate", lambda x: x["authorialPendingIds"].remove("DAR-D07-01")),
+        ("missing_approval_gate", lambda x: x["authorialPendingIds"].remove("DAR-D07-02")),
+        ("choice_flip", lambda x: x["authorialDecisions"][0].update(choice="A")),
+        ("approve_building", lambda x: x["authorialDecisions"][0].update(createsNewFacilities=True)),
+        ("approve_streets", lambda x: x["authorialDecisions"][0].update(affectsUrbanLayout=True)),
+        ("decision_dropped", lambda x: x.update(authorialDecisions=[])),
         ("duplicate_city", lambda x: x["cities"][3].update(id="veldora")),
     ]
     for name, mutate in mutations:
