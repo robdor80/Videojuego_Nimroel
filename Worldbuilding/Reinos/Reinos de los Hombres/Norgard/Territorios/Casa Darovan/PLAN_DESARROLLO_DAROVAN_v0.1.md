@@ -45,7 +45,7 @@
 - Caminos, puentes, vados, barcazas, mercantes, barcos pesqueros, mensajería y tiempos derivados por terreno cuando exista escala.
 - **Salida:** grafo modal básico, nodos y restricciones, sin kilómetros/itinerarios ficticios.
 
-## D06 — Asentamientos ordinarios y generación procedural [PENDIENTE]
+## D06 — Asentamientos ordinarios y generación procedural [EN REVISIÓN; RAMA EXCLUSIVA]
 - Aldeas → pueblos → villas; enclaves mineros, pesqueros, forestales, agrícolas, isleños y servicios de ruta.
 - Esqueleto obligatorio → posibilidades → condiciones → pesos regionales → modelos → instancias y seed.
 - Diferenciar distribución espacial, servicios y límites logísticos de rangos Valrik.
@@ -102,3 +102,7 @@ Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **fusionada
 
 ## Nota de ejecución D05 (21-10-2026)
 D04 PR #20 fusionada en `main` (`d4a07ba25f8560d5005a52aafc763699917f2388`); D05 rama propia desde ese SHA. Grafo cualitativo con 17 nodos, 3 vínculos físicos apoyados por fuentes y 4 relaciones de suministro **no equivalentes a caminos**. Mensajería MSG trazada, cinco riesgos condicionales, sin cartografía, rutas nuevas, mediciones, correos postales ni runtime. D06 no iniciado. CI real D01–D05 Windows/Linux superada en [run #39587112092](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39587112092) (30 negativos D05), cierre documental de D05 acreditado sin activar canon ni runtime; [acta](Auditorias/D05_CIERRE_Y_VALIDACION_2026-10-21.md). PR #30 precisa aprobación del autor para fusionar.
+
+
+## Adenda operativa D06 — 21-10-2026
+D05 PR #30 fue fusionada en `main`, commit `0818886f8cc9f91c21b5db00f91feb1b942d230d`. D06 cuenta con documentos de modelo, datos no runtime, seis casos sintéticos y 40 mutaciones negativas. Los pesos 0–4 son prioridades de diseño, nunca densidades demográficas; solo se valida laboratorio. No se inicia D07 ni se fusiona D06 automáticamente. Las menciones históricas a Arven UNKNOWN y cuatro ríos quedan sustituidas por la corrección del autor: Arven Darovan y cinco ríos/cuatro redes, con Fhalion. CI por verificar en PR Draft.

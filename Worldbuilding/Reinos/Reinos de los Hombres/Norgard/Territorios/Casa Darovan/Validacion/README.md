@@ -12,3 +12,9 @@
 `validate_d04.py`: D01+D02+D03, Core libro y Default fiscal Norgard; 16 mutaciones negativas. **Python ejecutado sobre checkout íntegro en GitHub Actions Windows 2022 y Ubuntu 24.04 — ambos SUCCESS (21-10-2026, run 39583142837).** Todos los validadores D01–D04 terminaron STATIC OK. La ejecución física específica de D04 en MSI no se ha efectuado; es opcional, no requisito de cierre estático. Remoto JavaScript previo: 22/22 OK incluidas 16 mutaciones negativas rechazadas. Sin ejecución de Godot/GIS/CoreRPG runtime. Ver [acta CI](../Auditorias/D04_VALIDACION_CI_Y_CIERRE_2026-10-21.md) y matriz D04.
 
 - **D05:** [matriz](D05_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md) / [validador Python](validate_d05.py), red cualitativa y regresiones D01–D04, no-runtime; ver CI real antes de afirmar resultado.
+
+## D06 — Asentamientos ordinarios
+- [Matriz D06](D06_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md): trazabilidad D01–D05, nueve modelos, doce prioridades, seis escenarios sintéticos, pruebas de semillas e invariantes.
+- `validate_d06.py` con `d06_generator.py` y dos JSON de datos operativos. **20 mutaciones negativas de reglas + 20 de escenarios**; rechazan canonicidad automática, Agujas, navegación, aduanas, colocación sin agua y otros saltos de autoridad.
+- Workflow D01–D06 en Ubuntu 24.04 y Windows 2022. Verificar ejecución real de PR, no afirmar `SUCCESS` por existir el archivo.
+- **Solo laboratorio y validación estática.** CoreRPG/Godot/GIS/persistencia, densidades y localización real quedan pendientes.
