@@ -27,3 +27,6 @@ D07 ha validado **cuatro ciudades manuales, 40 hechos con referencia de fuente, 
 
 ## Cierre editorial condicionado
 Aprobación autoral pendiente de enfoques para Veldora, Taramin y Syvaris; solo entonces se podrá considerar cerrado el diseño urbano sustantivo, si así lo decide el autor. Ni CI verde ni JSON de propuesta promulgan identidad o localización. D08 no se ha desarrollado; traspaso preparado.
+
+## Adenda — aprobación del autor DAR-D07-02 (21/10/2026)
+El autor elige A para Taramin: una **zona pesquera principal**, con alcance exclusivo de organización funcional. Continúan desconocidos emplazamiento, brazos navegables del Thalen, conexiones, puentes, muelles, edificios y personas. No se atribuye capacidad de navegación ni se materializa mundo. D07-01 Veldora B continúa aprobada solo como concepto. D07-03 Syvaris pendiente. Las pruebas anteriores a este cambio no validan el nuevo HEAD; consultar GitHub Actions.
