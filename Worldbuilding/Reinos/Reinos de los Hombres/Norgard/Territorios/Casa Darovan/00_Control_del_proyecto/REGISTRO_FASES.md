@@ -47,3 +47,6 @@ Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o
 - Nueva rama exclusiva feat/darovan-d07-ciudades-canonicas, desde ese commit. Canon Treihord cerrado conservado; tres perfiles de ciudad con propuestas urbanas aún no aprobadas.
 - D07 añade auditorías, matriz de hechos y fuente, JSON de planificación con UNKNOWN, 9 capas conceptuales PROPOSAL_PENDING_AUTHOR, validador y CI D01–D07. No runtime ni demografía D08.
 - **No merge automático ni D08.** Los enfoques pendientes de aprobación son DAR-D07-01/02/03. CI de HEAD D07 se registrará al finalizar; no presumir éxito de un run previo.
+
+## Actualización D07 — Resolución autoral 02 (21-10-2026)
+Veldora DAR-D07-01 B y Taramin DAR-D07-02 A aprobadas **solo a nivel conceptual**. Taramin organiza su actividad pesquera alrededor de una zona principal sin fijar ubicación, accesos, navegación ni infraestructura. Queda pendiente DAR-D07-03 Syvaris. Se mantiene la PR #32 como Draft, sin fusionar ni iniciar D08.
