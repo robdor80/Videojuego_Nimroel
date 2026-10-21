@@ -70,13 +70,19 @@ Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o
 - Treihord, Veldora, Taramin y Syvaris siguen fuera del generador. No hay población permanente en Bosque de las Agujas. Ninguna ruta D04/D05 de suministro se materializa como camino.
 - Las decisiones sobre nuevos nombres, enclaves oficiales, fronteras, personas importantes e instituciones corresponden al autor y quedan fuera de D06.
 
-## D07 — Decisiones urbanas pendientes de aprobación (21-10-2026)
+## D07 — Decisiones urbanas: una aprobada y dos pendientes (21-10-2026)
 **No constituyen canon.** Los campos JSON etiquetados PROPOSAL_PENDING_AUTHOR no son decretos, barrios reales, emplazamientos ni prueba cartográfica. Treihord queda estrictamente excluida de rediseño.
 
 | ID | Pregunta al autor | Alternativas para valorar | Recomendación técnica, NO aprobada |
 |---|---|---|---|
-| **DAR-D07-01** | ¿Cómo expresar la estructura urbana comercial de Veldora? | A: frente mercantil funcional relativamente concentrado; B: varias zonas mercantiles orgánicas conectadas sin diseñar rutas | Estudiar funciones existentes primero y optar por tejidos orgánicos, sin nombrar barrios ni dibujar ejes |
+| **DAR-D07-01 — RESUELTA: B** | ¿Cómo expresar la estructura urbana comercial de Veldora? | **B aprobada por el autor: varios sectores comerciales y artesanales orgánicos**, con puerto comercial como referencia | Aprobación de concepto general, no de trazado, nombres, límites ni nuevos edificios |
 | **DAR-D07-02** | ¿Qué organización pesquera de Taramin es compatible con el interfluvio? | A: un frente principal cuya posición exige evidencia; B: varios espacios especializados solo si agua/accesos lo permiten | No decidir posición ni cantidad hasta conocer accesibilidad y navegabilidad real de los brazos Thalen |
 | **DAR-D07-03** | ¿Qué grado de concentración urbana desea el autor en Syvaris? | A: actividad principal relacionada con bahía canónica; B: actividad más distribuida, sin atribuir puertos a calas | Priorizar conceptualización en bahía principal y diversidad climática, manteniendo calas sin función nueva |
 
 En los tres casos la aprobación de un criterio conceptual NO autoriza por sí sola edificios singulares, puentes, muelles nuevos, mapas, personajes, calles, nombres de barrios, instituciones o actividades no respaldadas. La materialización requiere alcance y fuentes definidos por el autor. Pendientes DAR-P02/P04/P05/P08 (parcial)/P09/P10/P11 sin modificación. DAR-P01 y P07 siguen resueltos y no se reabren. D08 y D11 son fases futuras.
+
+### Resolución expresa DAR-D07-01 — Veldora
+**Autor, 21/10/2026:** «Decisión 1 de D07: elijo la opción B para Veldora».
+**APROBADO (solo concepto):** varios sectores comerciales, artesanales y residenciales, surgidos de crecimiento orgánico, sin reducir la ciudad a un único núcleo de comercio. Continúa vigente el canon preexistente de puerto principal, aduana exterior, almacenes, gremios, viviendas mixtas y zonas acomodadas alejadas de muelles.
+**NO aprobado:** nomenclatura/número exacto de barrios, división urbana, calles, trazado, rutas, puentes, muelles nuevos, establecimientos singulares, personajes, habitantes, hogares ni servicios D08. En el índice operativo figura como `APPROVED_CONCEPT_ONLY`, sin `authorApprovedNewLayout`.
+**Aún pendientes:** DAR-D07-02 (Taramin) y DAR-D07-03 (Syvaris). No actualizar `main` ni fusionar PR Draft sin autorización.
