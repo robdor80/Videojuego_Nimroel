@@ -18,3 +18,6 @@
 
 ## Deuda retenida
 DAR-P02, P04, P05, P08 parcial, P09, P10, P11; urbanismo decisorio de Veldora, Taramin y Syvaris según DAR-D07-01/02/03. Ver el registro de decisiones. Mantener UNKNOWN cuando falten aprobaciones.
+
+## Anexo autoral D07 — 21/10/2026
+DAR-D07-01 Veldora B (varios sectores comerciales orgánicos) y DAR-D07-02 Taramin A (una zona pesquera principal) aprobadas **solo como criterios conceptuales**. No asignan geometría, calles, accesos, puertos, demografía o instalaciones. DAR-D07-03 Syvaris continúa pendiente. No iniciar D08 mientras no exista cierre autorizado de D07.
