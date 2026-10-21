@@ -69,3 +69,14 @@ Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o
 - **D06 no legisla canon:** los modelos, pesos 0–4, clases, edificios posibles, nombres de slots de prueba y semillas son únicamente propuestas técnicas. No hay emplazamientos específicos acreditados. El canon ya menciona aldeas en Arven/Pilares/Taramin, sin que D06 les asigne instancias.
 - Treihord, Veldora, Taramin y Syvaris siguen fuera del generador. No hay población permanente en Bosque de las Agujas. Ninguna ruta D04/D05 de suministro se materializa como camino.
 - Las decisiones sobre nuevos nombres, enclaves oficiales, fronteras, personas importantes e instituciones corresponden al autor y quedan fuera de D06.
+
+## D07 — Decisiones urbanas pendientes de aprobación (21-10-2026)
+**No constituyen canon.** Los campos JSON etiquetados PROPOSAL_PENDING_AUTHOR no son decretos, barrios reales, emplazamientos ni prueba cartográfica. Treihord queda estrictamente excluida de rediseño.
+
+| ID | Pregunta al autor | Alternativas para valorar | Recomendación técnica, NO aprobada |
+|---|---|---|---|
+| **DAR-D07-01** | ¿Cómo expresar la estructura urbana comercial de Veldora? | A: frente mercantil funcional relativamente concentrado; B: varias zonas mercantiles orgánicas conectadas sin diseñar rutas | Estudiar funciones existentes primero y optar por tejidos orgánicos, sin nombrar barrios ni dibujar ejes |
+| **DAR-D07-02** | ¿Qué organización pesquera de Taramin es compatible con el interfluvio? | A: un frente principal cuya posición exige evidencia; B: varios espacios especializados solo si agua/accesos lo permiten | No decidir posición ni cantidad hasta conocer accesibilidad y navegabilidad real de los brazos Thalen |
+| **DAR-D07-03** | ¿Qué grado de concentración urbana desea el autor en Syvaris? | A: actividad principal relacionada con bahía canónica; B: actividad más distribuida, sin atribuir puertos a calas | Priorizar conceptualización en bahía principal y diversidad climática, manteniendo calas sin función nueva |
+
+En los tres casos la aprobación de un criterio conceptual NO autoriza por sí sola edificios singulares, puentes, muelles nuevos, mapas, personajes, calles, nombres de barrios, instituciones o actividades no respaldadas. La materialización requiere alcance y fuentes definidos por el autor. Pendientes DAR-P02/P04/P05/P08 (parcial)/P09/P10/P11 sin modificación. DAR-P01 y P07 siguen resueltos y no se reabren. D08 y D11 son fases futuras.
