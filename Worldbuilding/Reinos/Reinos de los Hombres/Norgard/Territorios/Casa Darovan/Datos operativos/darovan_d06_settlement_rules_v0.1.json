@@ -1,0 +1,559 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d06_settlement_design_rules",
+  "version": "0.1",
+  "generatorVersion": "d06-lab-0.1",
+  "phase": "D06",
+  "preparedAt": "2026-10-21",
+  "status": "planning_reference_not_runtime",
+  "canonStatus": "no_new_settlements_or_toponyms",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "provenance": "PROPOSAL",
+  "sourceRefs": {
+    "d01": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "d02": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d02_hydro_network_v0.1.json",
+    "d03": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d03_climate_ecosystems_v0.1.json",
+    "d04": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d04_resources_production_v0.1.json",
+    "d05": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d05_mobility_communications_v0.1.json",
+    "coreGeography": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+    "norgardFiscal": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "forests": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+    "rivers": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+  },
+  "manualCityIds": [
+    "treihord",
+    "veldora",
+    "taramin",
+    "syvaris"
+  ],
+  "excludedCityIds": [
+    "karsath"
+  ],
+  "administration": {
+    "arven": "casa_darovan",
+    "syvaris": "casa_darovan",
+    "otherStudyUnits": "verify_site_jurisdiction_no_polygon"
+  },
+  "hydro": {
+    "namedRivers": [
+      "belara",
+      "lhera",
+      "veldora",
+      "fhalion",
+      "thalen"
+    ],
+    "systems": [
+      "belara_lhera",
+      "veldora",
+      "fhalion",
+      "thalen"
+    ],
+    "fhalionNavigation": null,
+    "thalenNavigation": null,
+    "belaraDeepDraftAllowed": false
+  },
+  "globalRequiredEvidence": [
+    "habitable_ground_verified",
+    "potable_water_verified",
+    "local_access_verified",
+    "livelihood_viable_verified",
+    "local_jurisdiction_verified"
+  ],
+  "specialConstraints": {
+    "insideBosqueAgujasPermanent": false,
+    "taraminIndustrialForestry": false,
+    "syvarisIntensiveForestry": false,
+    "arvenTimberIndustrial": false,
+    "arvenNewRouteAutomatic": false,
+    "newMinorHarbourAutomatic": false,
+    "riverNavigationAutomatic": false,
+    "d05SupplyEdgesAreRoads": false,
+    "cityGenerationAllowed": false,
+    "autoPromoteWorksiteToVillage": false,
+    "customsBetweenNorgardGreatHouses": false
+  },
+  "proposalForbiddenFlags": [
+    "insideAgujasInterior",
+    "inCanonicalCityFootprint",
+    "claimsOfficialToponym",
+    "claimsNewRoute",
+    "claimsNewHarbour",
+    "claimsRiverNavigation",
+    "claimsBelaraDeepDraft",
+    "claimsInternalCustoms",
+    "claimsDarovanNavy",
+    "claimsCanonicalSettlement",
+    "containsMapCoordinates",
+    "claimsFixedPopulation",
+    "claimsFixedDistance"
+  ],
+  "enclavePromotionRequires": "resident_community_justified_verified",
+  "models": [
+    {
+      "id": "agricola",
+      "classes": [
+        "aldea",
+        "pueblo",
+        "villa"
+      ],
+      "requiredEvidence": [
+        "soil_and_cultivation_verified",
+        "land_use_rights_verified"
+      ],
+      "buildingPossibilities": [
+        "viviendas",
+        "granero",
+        "huertos",
+        "establo"
+      ],
+      "servicePossibilities": [
+        "molienda",
+        "mercado",
+        "taller_reparaciones"
+      ],
+      "automaticServices": [],
+      "automaticBuildings": []
+    },
+    {
+      "id": "ganadera",
+      "classes": [
+        "aldea",
+        "pueblo"
+      ],
+      "requiredEvidence": [
+        "grazing_suitable_verified",
+        "grazing_rights_verified"
+      ],
+      "buildingPossibilities": [
+        "viviendas",
+        "corrales",
+        "almacen_forraje"
+      ],
+      "servicePossibilities": [
+        "veterinaria_tradicional",
+        "mercado"
+      ],
+      "automaticServices": [],
+      "automaticBuildings": []
+    },
+    {
+      "id": "pesquera",
+      "classes": [
+        "aldea",
+        "pueblo",
+        "villa"
+      ],
+      "requiredEvidence": [
+        "coastal_or_fishery_water_verified",
+        "safe_landing_verified",
+        "fishing_rights_verified"
+      ],
+      "buildingPossibilities": [
+        "viviendas",
+        "secadero",
+        "almacen_redes"
+      ],
+      "servicePossibilities": [
+        "lonja_local_condicional",
+        "taller_redes"
+      ],
+      "automaticServices": [],
+      "automaticBuildings": []
+    },
+    {
+      "id": "minera_auxiliar",
+      "classes": [
+        "enclave",
+        "aldea"
+      ],
+      "requiredEvidence": [
+        "specific_mine_site_authorized",
+        "mineral_site_access_verified",
+        "site_ownership_verified"
+      ],
+      "buildingPossibilities": [
+        "viviendas_condicionales",
+        "deposito_herramientas",
+        "almacen"
+      ],
+      "servicePossibilities": [
+        "herreria_auxiliar",
+        "botiquin_condicional"
+      ],
+      "automaticServices": [],
+      "automaticBuildings": []
+    },
+    {
+      "id": "metalurgica_auxiliar",
+      "classes": [
+        "enclave",
+        "aldea",
+        "pueblo"
+      ],
+      "requiredEvidence": [
+        "legal_processing_function_verified",
+        "fuel_and_inputs_verified",
+        "site_access_for_supplies_verified"
+      ],
+      "buildingPossibilities": [
+        "taller",
+        "almacen_combustible_condicional",
+        "viviendas_condicionales"
+      ],
+      "servicePossibilities": [
+        "reparacion_herramientas"
+      ],
+      "automaticServices": [],
+      "automaticBuildings": []
+    },
+    {
+      "id": "forestal_sostenible",
+      "classes": [
+        "enclave",
+        "aldea",
+        "pueblo"
+      ],
+      "requiredEvidence": [
+        "managed_forest_site_verified",
+        "forest_use_rights_verified",
+        "sustainable_harvest_verified"
+      ],
+      "buildingPossibilities": [
+        "viviendas_condicionales",
+        "cobertizo",
+        "deposito_madera_condicional"
+      ],
+      "servicePossibilities": [
+        "carpinteria",
+        "taller_herramientas"
+      ],
+      "automaticServices": [],
+      "automaticBuildings": []
+    },
+    {
+      "id": "servicio_camino",
+      "classes": [
+        "enclave",
+        "aldea",
+        "pueblo"
+      ],
+      "requiredEvidence": [
+        "attested_road_at_site_verified",
+        "local_traffic_demand_verified"
+      ],
+      "buildingPossibilities": [
+        "refugio",
+        "establo_condicional",
+        "viviendas_condicionales"
+      ],
+      "servicePossibilities": [
+        "posada_condicional",
+        "reparacion_carros_condicional"
+      ],
+      "automaticServices": [],
+      "automaticBuildings": []
+    },
+    {
+      "id": "insular_mixta",
+      "classes": [
+        "aldea",
+        "pueblo"
+      ],
+      "requiredEvidence": [
+        "island_site_verified",
+        "local_land_use_verified",
+        "insular_food_base_verified"
+      ],
+      "buildingPossibilities": [
+        "viviendas",
+        "almacen",
+        "espacio_comunal"
+      ],
+      "servicePossibilities": [
+        "intercambio_local",
+        "taller_reparaciones"
+      ],
+      "automaticServices": [],
+      "automaticBuildings": []
+    },
+    {
+      "id": "enclave_especializado",
+      "classes": [
+        "enclave"
+      ],
+      "requiredEvidence": [
+        "specific_authorized_function_verified",
+        "resident_community_justified_verified"
+      ],
+      "buildingPossibilities": [
+        "instalacion_no_equivale_asentamiento",
+        "viviendas_solo_si_justificadas"
+      ],
+      "servicePossibilities": [
+        "servicios_segun_necesidad"
+      ],
+      "automaticServices": [],
+      "automaticBuildings": []
+    }
+  ],
+  "zones": [
+    {
+      "id": "d01_valkram_oeste",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 0,
+        "ganadera": 1,
+        "pesquera": 0,
+        "minera_auxiliar": 4,
+        "metalurgica_auxiliar": 2,
+        "forestal_sostenible": 1,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_elyra_paso_peninsular",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 0,
+        "ganadera": 1,
+        "pesquera": 0,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 0,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_norte_transicion",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 1,
+        "ganadera": 2,
+        "pesquera": 0,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 1,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_aguja_litoral",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 0,
+        "ganadera": 0,
+        "pesquera": 0,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 0,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 0
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_belara_treihord",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 3,
+        "ganadera": 2,
+        "pesquera": 0,
+        "minera_auxiliar": 1,
+        "metalurgica_auxiliar": 2,
+        "forestal_sostenible": 0,
+        "servicio_camino": 1,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_veldora_litoral",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 2,
+        "ganadera": 1,
+        "pesquera": 3,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 0,
+        "servicio_camino": 1,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_linde_caminos",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 2,
+        "ganadera": 2,
+        "pesquera": 0,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 1,
+        "servicio_camino": 3,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_pilares_sur",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 2,
+        "ganadera": 2,
+        "pesquera": 0,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 4,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_taramin_norte_centro",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 1,
+        "ganadera": 2,
+        "pesquera": 3,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 0,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_taramin_bosque_sur",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 1,
+        "ganadera": 2,
+        "pesquera": 3,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 2,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_syvaris",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 1,
+        "ganadera": 1,
+        "pesquera": 4,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 0,
+        "servicio_camino": 0,
+        "insular_mixta": 3,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    },
+    {
+      "id": "d01_arven_contexto",
+      "class": "qualitative_study_unit_not_polygon",
+      "modelWeights": {
+        "agricola": 0,
+        "ganadera": 1,
+        "pesquera": 2,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 1,
+        "servicio_camino": 0,
+        "insular_mixta": 4,
+        "enclave_especializado": 1
+      },
+      "weightsMeaning": "relative_design_priority_not_frequency_or_population",
+      "jurisdictionAtSpecificSite": "UNKNOWN_until_validated",
+      "siteSelectionEnabled": false
+    }
+  ],
+  "versioning": {
+    "stableIdAlgorithm": "sha256_utf8_prefix16",
+    "stableIdInputs": [
+      "namespace_v0.1",
+      "seed",
+      "studyZoneId",
+      "slotId"
+    ],
+    "modelDecisionAlgorithm": "sha256_8byte_weighted_sorted",
+    "decisionInputs": [
+      "seed",
+      "stableId",
+      "model",
+      "version"
+    ],
+    "visibleNameAffectsId": false,
+    "existingSaveAutoReroll": false
+  },
+  "runtimeIntegration": {
+    "status": "not_implemented",
+    "coreRpgPersisted": false,
+    "godotSpawned": false,
+    "gisVerified": false,
+    "generatedCanonicalSettlements": 0
+  },
+  "pending": [
+    "DAR-P04",
+    "DAR-P08",
+    "DAR-P09",
+    "DAR-P10",
+    "DAR-P11",
+    "site_level_ownership",
+    "population_ranges_D08",
+    "actual_route_graph_D11",
+    "cross_arch_persistence_D11"
+  ]
+}

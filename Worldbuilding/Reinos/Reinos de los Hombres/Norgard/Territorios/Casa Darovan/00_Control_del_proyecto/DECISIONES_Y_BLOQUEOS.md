@@ -62,3 +62,10 @@ Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o
 **Corrección retroactiva de las referencias documentales D01–D05, no una reapertura de sus implementaciones ni runtime.** El grafo D02 pasa a 5 ríos / 4 redes / 15 nodos / 11 enlaces topológicos simbólicos, manteniendo D05 sus 17 nodos logísticos y 3 conexiones modales acreditadas. Los hitos documentados anteriormente permanecen como actas de lo que se sabía en aquella fecha.
 
 **Estado de cuestiones pendientes tras la decisión de hoy:** DAR-P01 y DAR-P07 cerradas; DAR-P08 parcialmente resuelta; DAR-P04, DAR-P09, DAR-P10 y DAR-P11 siguen abiertas. La decisión del autor tiene prioridad sobre la tabla histórica que mostraba P01 y P07 abiertas.
+
+## D06 — Protección de decisiones (21-10-2026)
+- Se respetan los cierres **DAR-P01 (Arven Casa Darovan)** y **DAR-P07 (río Veldora identificado)** y la resolución parcial **DAR-P08 (Fhalion y cinco ríos, cuatro redes)** conforme al anexo aprobado por el autor.
+- **No** se reabren los pendientes DAR-P04, P08 restante, P09, P10 y P11; permanecen UNKNOWN cartografía, suelo/agua, emplazamientos mineros, vías, navegabilidad, volúmenes y capacidad.
+- **D06 no legisla canon:** los modelos, pesos 0–4, clases, edificios posibles, nombres de slots de prueba y semillas son únicamente propuestas técnicas. No hay emplazamientos específicos acreditados. El canon ya menciona aldeas en Arven/Pilares/Taramin, sin que D06 les asigne instancias.
+- Treihord, Veldora, Taramin y Syvaris siguen fuera del generador. No hay población permanente en Bosque de las Agujas. Ninguna ruta D04/D05 de suministro se materializa como camino.
+- Las decisiones sobre nuevos nombres, enclaves oficiales, fronteras, personas importantes e instituciones corresponden al autor y quedan fuera de D06.
