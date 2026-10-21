@@ -22,7 +22,7 @@ RISK = {
     "d05_risk_shallow_belara", "d05_risk_road_weather", "d05_risk_coal_dependency",
     "d05_risk_coastal_weather", "d05_risk_thalen",
 }
-PENDING = {"DAR-P01", "DAR-P04", "DAR-P07", "DAR-P08", "DAR-P09", "DAR-P10", "DAR-P11"}
+PENDING = {"DAR-P04", "DAR-P08", "DAR-P09", "DAR-P10", "DAR-P11"}
 
 def check(condition: bool, message: str) -> None:
     if not condition:
@@ -56,13 +56,13 @@ def validate(d: dict, repo: Path) -> None:
     check(relief["administration"]["darovanCities"] == CITIES, "D01 cities")
     check({x["id"] for x in relief["physicalUnits"]} == {x["id"] for x in climate["zones"]},
           "D01/D03 study units")
-    check([x["id"] for x in hydro["rivers"]] == ["belara", "lhera", "veldora", "thalen"]
+    check([x["id"] for x in hydro["rivers"]] == ["belara", "lhera", "veldora", "fhalion", "thalen"]
           and hydro["rivers"][0]["crossesCity"] is False
           and hydro["rivers"][1]["branchesFrom"] == "belara"
           and hydro["rivers"][3]["terminalArms"] == 2, "D02 hydro")
     check(economy["resourceSourceProtection"]["treihordCoalSource"] == "montes_azurios"
           and economy["resourceSourceProtection"]["pilaresTimberSuppliesValkramMines"] is True
-          and economy["geographyProtection"]["arvenOwner"] is None
+          and economy["geographyProtection"]["arvenOwner"] == "casa_darovan"
           and len(economy["resourceChains"]) == 8, "D04 dependencies")
     check(vessels["status"] == "active_core_contract"
           and vessels["immutableRules"]["movementRequiresNavigableConnection"]
@@ -90,7 +90,7 @@ def validate(d: dict, repo: Path) -> None:
               n["geometry"] is None and n["coordinates"] is None, "invented node geometry")
     check(all(node_map["d05_city_" + city]["administrativeOwner"] == "casa_darovan"
               for city in CITIES), "city authority")
-    check(node_map["d05_arven_context"]["administrativeOwner"] is None
+    check(node_map["d05_arven_context"]["administrativeOwner"] == "casa_darovan"
           and node_map["d05_linde_context"]["type"] == "landmark_not_waypoint",
           "Arven / Linde must remain contextual")
     check(len(edges) == len(PHYSICAL) and {e["id"] for e in edges} == set(PHYSICAL),
@@ -141,14 +141,17 @@ def validate(d: dict, repo: Path) -> None:
     movement = d["movementSemantics"]
     check(movement["admissibleForActualRoutingOnly"] == list(PHYSICAL)
           and movement["graphContainsOnlyAttestedConnections"] is True
-          and movement["separatedWaters"] == ["belara_lhera","veldora","thalen"]
+          and movement["separatedWaters"] == ["belara_lhera","veldora","fhalion","thalen"]
           and movement["thalenUniqueRiver"] is True and movement["thalenTerminalArms"] == 2
           and movement["taraminBetweenThalenArms"] is True
           and movement["lheraBranchesFrom"] == "belara"
           and movement["veldoraIndependentFromBelaraLhera"] is True
           and movement["belaraAdjacentToTreihord"] is True
           and movement["belaraCrossesTreihord"] is False
-          and movement["arvenJurisdiction"] is None
+          and movement["arvenJurisdiction"] == "casa_darovan"
+          and movement["fhalionNamedMinorRiver"] is True
+          and movement["fhalionRiverNavigability"] is None
+          and movement["fhalionCoastalOutletExact"] is None
           and movement["arvenHasDarovanRoute"] is False
           and movement["crossGreatHouseCustomsOnlyBecauseBoundary"] is False
           and movement["navigableFromKnownPortToOtherNamedPort"] is None
@@ -212,9 +215,11 @@ def run() -> None:
         ("vena_public", lambda x: x["confirmedTransportLinks"][2].update(access="public")),
         ("mines_geometry", lambda x: x["nodes"][8].update(coordinates=[0,0])),
         ("bridge", lambda x: x["geometryPolicy"].update(containsNewBridges=True)),
-        ("arven_owner", lambda x: x["movementSemantics"].update(arvenJurisdiction="casa_darovan")),
-        ("arven_node_owner", lambda x: x["nodes"][15].update(administrativeOwner="casa_darovan")),
+        ("arven_owner_erased", lambda x: x["movementSemantics"].update(arvenJurisdiction=None)),
+        ("arven_node_owner_erased", lambda x: x["nodes"][15].update(administrativeOwner=None)),
         ("arven_sea_link", lambda x: x["movementSemantics"].update(arvenHasDarovanRoute=True)),
+        ("fhalion_navigation_invented", lambda x: x["movementSemantics"].update(fhalionRiverNavigability=True)),
+        ("fhalion_missing", lambda x: x["movementSemantics"].update(separatedWaters=["belara_lhera","veldora","thalen"])),
         ("thalen_single_arm", lambda x: x["movementSemantics"].update(thalenTerminalArms=1)),
         ("veldora_join", lambda x: x["movementSemantics"].update(veldoraIndependentFromBelaraLhera=False)),
         ("belara_city", lambda x: x["movementSemantics"].update(belaraCrossesTreihord=True)),

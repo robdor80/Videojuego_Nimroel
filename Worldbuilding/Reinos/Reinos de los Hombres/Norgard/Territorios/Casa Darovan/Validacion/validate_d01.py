@@ -26,15 +26,17 @@ def run() -> None:
     check(len(cities) == 4 and {c["id"] for c in cities} == {"treihord", "veldora", "taramin", "syvaris"}, "cuatro ciudades")
     check(all(c["adminOwner"] == "casa_darovan" and c["kind"] == "manually_authored_city" for c in cities), "ciudades manuales")
     a = data["administration"]
-    check(a["excludedCity"] == "karsath" and a["arvenIslandOwner"] is None, "Karsath/Arven")
+    check(a["excludedCity"] == "karsath" and a["arvenIslandOwner"] == "casa_darovan", "Karsath/Arven")
     check(a["syvarisIslandOwner"] == "casa_darovan" and a["redMapMarkupIsLegalBorder"] is False, "Syvaris/línea roja")
-    assert next(u for u in units if u["id"] == "d01_arven_contexto")["administrativeOwner"] is None
+    assert next(u for u in units if u["id"] == "d01_arven_contexto")["administrativeOwner"] == "casa_darovan"
     assert next(u for u in units if u["id"] == "d01_syvaris")["administrativeOwner"] == "casa_darovan"
     h = data["lockedHydroAnchors"]
     check(h["belara"]["crossesCity"] is False and h["belara"]["mouth"] == "golfo_de_norgard", "Belara")
     check(h["belara"]["portNearTreihord"] == "industrial_shallow_draft", "puerto Treihord")
     check(h["lhera"]["branchesFrom"] == "belara" and h["lhera"]["mouth"] == "golfo_de_veldora", "Lhera")
     check({"belara", "lhera"} <= set(h["veldora"]["independentOf"]), "Veldora independiente")
+    check(h["fhalion"]["independentRiver"] is True and h["fhalion"]["sourceKnown"] is False
+          and h["fhalion"]["mainCourseMouth"] is None, "Fhalion de autor, sin boca falsa")
     check(h["thalen"]["terminalArms"] == 2 and h["thalen"]["cityBetweenArms"] == "taramin", "Thalen")
     check(all(u["classification"] == "qualitative_working_area_not_canonical_boundary" for u in units), "unidades no canónicas")
     references = {data["referenceCoreContract"]}

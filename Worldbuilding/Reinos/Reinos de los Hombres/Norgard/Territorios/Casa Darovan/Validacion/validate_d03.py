@@ -58,7 +58,7 @@ def validate(d: dict, repo: Path) -> None:
     check(core["status"] == "active_core_contract", "Core inactive")
     check(len(relief["physicalUnits"]) == 12 and
           {u["id"] for u in relief["physicalUnits"]} == ZONE_IDS, "D01 incompatibility")
-    check([r["id"] for r in hydro["rivers"]] == ["belara", "lhera", "veldora", "thalen"],
+    check([r["id"] for r in hydro["rivers"]] == ["belara", "lhera", "veldora", "fhalion", "thalen"],
           "D02 river set")
 
     a = d["regionalAnchors"]
@@ -68,7 +68,7 @@ def validate(d: dict, repo: Path) -> None:
           and a["taraminSouth"] == "increasing_moisture_and_humid_subtropical_forest_at_far_south"
           and a["syvaris"] == "warm_partly_dry_with_green_sheltered_areas_not_desert_or_uniform_jungle",
           "canonical regional gradients")
-    check(a["arvenOwner"] is None and a["syvarisOwner"] == "casa_darovan"
+    check(a["arvenOwner"] == "casa_darovan" and a["syvarisOwner"] == "casa_darovan"
           and a["excludedCity"] == "karsath"
           and a["manualCities"] == ["treihord", "veldora", "taramin", "syvaris"],
           "administration/cities")
@@ -76,12 +76,13 @@ def validate(d: dict, repo: Path) -> None:
           and a["pilaresOneForest"] is True and a["taraminOneForest"] is True
           and a["syvarisForestsDiscontinuous"] is True, "forests/Agujas")
     by_id = {z["id"]: z for z in zones}
-    check(by_id["d01_arven_contexto"]["administrativeOwner"] is None
+    check(by_id["d01_arven_contexto"]["administrativeOwner"] == "casa_darovan"
           and by_id["d01_syvaris"]["administrativeOwner"] == "casa_darovan",
           "island owners")
 
     h = d["hydroProtection"]
     check(h["namedRivers"] == ["belara", "lhera", "veldora", "thalen"]
+          and h["fhalionSourceKnown"] is False and h["fhalionMouthNameKnown"] is False
           and h["belaraMouth"] == "golfo_de_norgard"
           and h["belaraAdjacentCity"] == "treihord"
           and h["belaraCrossesCity"] is False, "Belara")
@@ -106,7 +107,7 @@ def validate(d: dict, repo: Path) -> None:
           and run["persistedClimateState"] is False, "false runtime claim")
     check(d["approvals"]["newCanonApproved"] is False
           and set(d["approvals"]["pendingAuthor"]) ==
-          {"DAR-P01", "DAR-P04", "DAR-P07", "DAR-P08"}, "canon approvals")
+          {"DAR-P04", "DAR-P08"}, "canon approvals")
 
 def run() -> None:
     here = Path(__file__).resolve()
@@ -117,7 +118,8 @@ def run() -> None:
     data = json.loads(file_path.read_text(encoding="utf-8"))
     validate(data, repo)
     negative = [
-        ("arven_claim", lambda d: d["regionalAnchors"].update(arvenOwner="casa_darovan")),
+        ("arven_owner_erased", lambda d: d["regionalAnchors"].update(arvenOwner=None)),
+        ("fhalion_missing", lambda d: d["hydroProtection"].update(namedRivers=["belara","lhera","veldora","thalen"])),
         ("belara_cross", lambda d: d["hydroProtection"].update(belaraCrossesCity=True)),
         ("lhera_source", lambda d: d["hydroProtection"].update(lheraFrom="veldora")),
         ("veldora_join", lambda d: d["hydroProtection"].update(veldoraIndependentFrom=[])),
