@@ -13,7 +13,10 @@ Ciudad de menor escala que Taramin, única ciudad importante de la isla con otra
 2. **Hábitat adaptado al microclima:** examinar sombra, exposición, pendientes y necesidad de agua antes de diseñar sectores, sin declarar zonificación ejecutable.
 3. **Relación con calas y paisaje:** conservar las calas como restricciones de planificación, no como asentamientos, embarcaderos o rutas físicas.
 
-Alternativas para discusión: concentración funcional junto a bahía / diferenciación de tejidos funcionales sin ocupar necesariamente calas. Recomendación inicial: **partir de la bahía principal y preservar la diversidad seca-verde**, sin fijar plano hasta aprobación autoral.
+## Resolución del autor — DAR-D07-03: opción A aprobada (solo concepto)
+**21/10/2026:** el autor elige **A — concentración principal alrededor de la bahía protegida**. En términos generales la actividad urbana, comercial, pesquera y naval se organiza principalmente en torno a esa bahía, respetando la menor escala de Syvaris y sus contrastes ambientales. Es una aprobación del **criterio funcional general**, no del trazado urbano.
+
+**No aprobado:** nombres o límites de barrios, emplazamiento exacto de viviendas, muelles o instalaciones navales, construcciones nuevas, funciones portuarias en calas menores, transporte y rutas marítimas, caminos, cifras de población o servicios. La presencia naval es de Norgard, no una armada exclusiva de Darovan. Las tres capas técnicas de estudio siguen siendo PROPOSAL no materializadas; la opción elegida consta como `APPROVED_CONCEPT_ONLY` en el índice D07. Las calas menores continúan sin puerto o itinerario acreditado.
 
 ## Cruces y límites
 D01 no aporta polígonos; D03 distingue humedades, D04 prohíbe explotación forestal intensiva supuesta, D05 no acredita itinerarios de navegación a Taramin/Veldora, D06 prohíbe sustitución procedural. Norgard Defaults regula navegación/pesca y Armada del Reino. Rutas, stocks, tripulaciones y persistencia son de CoreRPG cuando se integren.
