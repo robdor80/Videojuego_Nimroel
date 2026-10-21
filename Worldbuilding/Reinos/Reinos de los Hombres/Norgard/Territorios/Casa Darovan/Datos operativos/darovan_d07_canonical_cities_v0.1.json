@@ -772,8 +772,7 @@
     "DAR-P08",
     "DAR-P09",
     "DAR-P10",
-    "DAR-P11",
-    "DAR-D07-03"
+    "DAR-P11"
   ],
   "runtimeIntegration": {
     "status": "not_implemented",
@@ -825,6 +824,27 @@
         "land_access_and_bridges",
         "dock_placement",
         "fish_handling_facilities"
+      ]
+    },
+    {
+      "id": "DAR-D07-03",
+      "cityId": "syvaris",
+      "choice": "A",
+      "status": "APPROVED_CONCEPT_ONLY",
+      "approvingAuthority": "autor",
+      "approvedConcept": "principal_urban_activity_concentrated_around_sheltered_main_bay",
+      "description": "Concentrar la actividad urbana, comercial, pesquera y naval principal en torno a la bahía protegida de Syvaris, sin decidir zonificación, muelles adicionales, funciones nuevas para calas menores ni rutas",
+      "affectsUrbanLayout": false,
+      "createsCanonicalDistrictNames": false,
+      "createsPhysicalRoutes": false,
+      "createsNewFacilities": false,
+      "changesPopulation": false,
+      "pendingDetails": [
+        "main_bay_precise_urban_layout",
+        "district_names_and_boundaries",
+        "port_and_naval_facility_positions",
+        "minor_coves_without_new_ports",
+        "island_land_access_and_maritime_routes"
       ]
     }
   ]
