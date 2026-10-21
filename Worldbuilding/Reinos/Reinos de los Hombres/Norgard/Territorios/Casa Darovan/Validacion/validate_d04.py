@@ -81,24 +81,26 @@ def validate(d: dict, repo: Path) -> None:
           and f["syvarisForestDiscontinuous"] is True
           and f["syvarisIntensiveForestryAllowed"] is False
           and f["lindeMajorIndustrialLoggingAuthored"] is False
-          and f["arvenAdministrativeOwner"] is None, "forest / Arven")
+          and f["arvenAdministrativeOwner"] == "casa_darovan", "forest / Arven")
     g = d["geographyProtection"]
     check(g["manualCities"] == CITIES and g["excludedCity"] == "karsath"
-          and g["arvenOwner"] is None, "city or ownership regression")
+          and g["arvenOwner"] == "casa_darovan", "city or ownership regression")
     check(g["belaraAdjacentCity"] == "treihord" and g["belaraCrossesCity"] is False
           and g["belaraNavigation"] == "industrial_shallow_draft_only", "Belara navigability")
     check(g["lheraBranchesFrom"] == "belara"
           and g["veldoraRiverIndependentOf"] == ["belara", "lhera"]
           and g["thalenTerminalArms"] == 2
           and g["thalenCityBetween"] == "taramin" and g["thalenPerennialStatus"] == "UNKNOWN"
-          and g["newMinorRivers"] is False, "D02 hydro protection")
-    check([r["id"] for r in hydro["rivers"]] == ["belara", "lhera", "veldora", "thalen"]
+          and g["newMinorRivers"] is False
+          and g["namedRivers"] == ["belara", "lhera", "veldora", "fhalion", "thalen"]
+          and g["fhalionMouthNamed"] is False, "D02 hydro protection")
+    check([r["id"] for r in hydro["rivers"]] == ["belara", "lhera", "veldora", "fhalion", "thalen"]
           and hydro["rivers"][0]["crossesCity"] is False
           and hydro["rivers"][1]["branchesFrom"] == "belara"
-          and hydro["rivers"][3]["terminalArms"] == 2, "D02 source regression")
+          and hydro["rivers"][4]["terminalArms"] == 2, "D02 source regression")
     check(climate["regionalAnchors"]["pilaresOneForest"]
           and climate["regionalAnchors"]["taraminOneForest"]
-          and climate["regionalAnchors"]["arvenOwner"] is None, "D03 source regression")
+          and climate["regionalAnchors"]["arvenOwner"] == "casa_darovan", "D03 source regression")
 
     r = d["resourceSourceProtection"]
     check(r["treihordCoalSource"] == "montes_azurios"
@@ -127,7 +129,7 @@ def validate(d: dict, repo: Path) -> None:
 
     a, runtime = d["approvals"], d["runtimeIntegration"]
     check(a["newCanonApproved"] is False and set(a["pendingAuthor"]) ==
-          {"DAR-P01", "DAR-P04", "DAR-P07", "DAR-P08", "DAR-P09", "DAR-P10", "DAR-P11"}, "author approval")
+          {"DAR-P04", "DAR-P08", "DAR-P09", "DAR-P10", "DAR-P11"}, "author approval")
     check(runtime == {"status":"not_implemented", "validatedInGodot":False,
                       "validatedWithCoreRPG":False, "generatedProductionEntities":0,
                       "executedTransactions":0, "persistedStockLedger":False}, "runtime claim")
@@ -140,10 +142,11 @@ def run() -> None:
     d = json.loads(document.read_text(encoding="utf-8"))
     validate(d, repo)
     mutations = [
-        ("arven_owned", lambda x: x["geographyProtection"].update(arvenOwner="casa_darovan")),
+        ("arven_owner_erased", lambda x: x["geographyProtection"].update(arvenOwner=None)),
         ("unknown_mine", lambda x: x["studyUnits"][0].update(newExtractiveSites=["mine1"])),
         ("production_yield", lambda x: x["resourceChains"][0].update(annualYield=250)),
         ("coal_from_valkram", lambda x: x["resourceSourceProtection"].update(treihordCoalSource="montes_valkram")),
+        ("fhalion_mouth_invented", lambda x: x["geographyProtection"].update(fhalionMouthNamed=True)),
         ("belara_through_city", lambda x: x["geographyProtection"].update(belaraCrossesCity=True)),
         ("lhera_wrong_source", lambda x: x["geographyProtection"].update(lheraBranchesFrom="veldora")),
         ("veldora_join", lambda x: x["geographyProtection"].update(veldoraRiverIndependentOf=[])),

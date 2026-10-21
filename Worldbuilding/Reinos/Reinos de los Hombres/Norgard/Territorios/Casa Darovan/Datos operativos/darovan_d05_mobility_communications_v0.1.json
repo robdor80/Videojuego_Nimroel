@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d05_qualitative_mobility_communications",
+  "version": "0.1",
+  "phase": "D05",
+  "preparedAt": "2026-10-21",
+  "status": "planning_reference_not_runtime",
+  "canonStatus": "source_traced_no_new_canon",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "evidenceLabels": [
+    "AUTHORED",
+    "DERIVED",
+    "PROPOSAL",
+    "UNKNOWN"
+  ],
+  "sourceRefs": {
+    "mountains": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+    "forests": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+    "rivers": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "geography": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/geografia_general.md",
+    "regions": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+    "climate": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Clima/clima_general.md",
+    "coasts": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+    "treihord": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+    "houses": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md",
+    "visual": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Datos operativos/norgard_settlements_v0.2.json",
+    "d01": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "d02": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d02_hydro_network_v0.1.json",
+    "d03": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d03_climate_ecosystems_v0.1.json",
+    "corePhysical": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
+    "coreLedger": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json",
+    "coreAquatic": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_aquatic_resource_harvest_contract_v0.1.json",
+    "norgardFiscal": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "norgardMoney": "Worldbuilding/Sistemas/Norgard Defaults/02_Gobierno_y_economia/autoridad_monetaria_acunacion_v0.1.md",
+    "norgardMaritime": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
+    "d04": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d04_resources_production_v0.1.json",
+    "coreVessels": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_vessel_navigation_simulation_contract_v0.1.json",
+    "coreMessage": "Worldbuilding/Sistemas/Nimroel Core/06_Comunicacion_y_saber/mensajeria_entrega_v0.1.md",
+    "norgardNavigation": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json"
+  },
+  "referenceD01Relief": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+  "referenceD02Hydro": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d02_hydro_network_v0.1.json",
+  "referenceD03Climate": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d03_climate_ecosystems_v0.1.json",
+  "referenceD04Economy": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d04_resources_production_v0.1.json",
+  "geometryPolicy": {
+    "containsCoordinates": false,
+    "containsGeometry": false,
+    "containsNewNamedRoutes": false,
+    "containsNewBridges": false,
+    "containsNewFords": false,
+    "containsNewHarbours": false,
+    "containsDistances": false,
+    "containsTravelTimes": false,
+    "containsInventedCapacity": false,
+    "containsNavigationSchedules": false,
+    "containsRuntimeAssets": false,
+    "graphIsTravelPlanner": false
+  },
+  "nodes": [
+    {
+      "id": "d05_city_treihord",
+      "type": "canonical_city",
+      "label": "Treihord",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord",
+        "houses"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_city_veldora",
+      "type": "canonical_city",
+      "label": "Veldora",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "houses",
+        "visual"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_city_taramin",
+      "type": "canonical_city",
+      "label": "Taramin",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "houses",
+        "visual"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_city_syvaris",
+      "type": "canonical_city",
+      "label": "Syvaris",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "houses",
+        "visual",
+        "coasts"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_port_treihord",
+      "type": "industrial_river_port",
+      "label": "Puerto industrial de Treihord",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord",
+        "rivers"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_port_veldora",
+      "type": "commercial_seaport",
+      "label": "Puerto comercial de Veldora",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "houses",
+        "visual"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_port_taramin",
+      "type": "fishing_coastal_port",
+      "label": "Puerto pesquero de Taramin",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "visual",
+        "houses"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_port_syvaris",
+      "type": "safe_island_port",
+      "label": "Puerto de Syvaris en bahía principal",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "coasts",
+        "visual"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_valkram_mines_unlocated",
+      "type": "unlocated_authored_extractive_origin",
+      "label": "Explotaciones de mineral de Valkram: emplazamientos no fijados",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord",
+        "mountains"
+      ],
+      "administrativeOwner": null,
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_belara_loading_unlocated",
+      "type": "unlocated_authored_transshipment_function",
+      "label": "Puntos de carga fluvial del Belara: no individualizados",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord",
+        "rivers"
+      ],
+      "administrativeOwner": null,
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_azurios_coal_source",
+      "type": "regional_source_not_mine",
+      "label": "Montes Azurios: origen regional del carbón",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord",
+        "mountains"
+      ],
+      "administrativeOwner": null,
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_pilares_forest",
+      "type": "forest_resource_origin",
+      "label": "Bosque de los Pilares, una masa forestal",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "forests"
+      ],
+      "administrativeOwner": null,
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_industrial_stores_treihord",
+      "type": "industrial_stores",
+      "label": "Depósitos y patios industriales de Treihord",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_crisol",
+      "type": "protected_assay_facility",
+      "label": "El Crisol",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_boveda",
+      "type": "protected_residence_and_vault",
+      "label": "La Bóveda del Grifo",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_arven_context",
+      "type": "geographic_context_only",
+      "label": "Isla de Arven (Casa Darovan; ruta desconocida)",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "coasts",
+        "forests"
+      ],
+      "administrativeOwner": "casa_darovan",
+      "coordinates": null,
+      "geometry": null
+    },
+    {
+      "id": "d05_linde_context",
+      "type": "landmark_not_waypoint",
+      "label": "Bosque de la Linde (próximo al camino, no atravesado acreditadamente)",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "forests"
+      ],
+      "administrativeOwner": null,
+      "coordinates": null,
+      "geometry": null
+    }
+  ],
+  "confirmedTransportLinks": [
+    {
+      "id": "d05_road_veldora_treihord",
+      "from": "d05_city_veldora",
+      "to": "d05_city_treihord",
+      "mode": "land_road",
+      "provenance": "AUTHORED",
+      "relationKind": "attested_modal_connection_without_cartographic_path",
+      "evidence": "Existe camino principal entre Veldora y Treihord; Linde está junto a él, sin afirmar que lo atraviese.",
+      "sourceRefIds": [
+        "forests"
+      ],
+      "physicalRouteConfirmed": true,
+      "waypoints": [],
+      "routeGeometry": null,
+      "distanceKm": null,
+      "travelTime": null,
+      "capacity": null,
+      "access": "not_specified",
+      "operationalRestriction": "Tramo intermedio, vados, puentes, pavimentos, riesgo y tiempos UNKNOWN."
+    },
+    {
+      "id": "d05_belara_shallow_haul",
+      "from": "d05_belara_loading_unlocated",
+      "to": "d05_port_treihord",
+      "mode": "river_shallow_draft_barge",
+      "provenance": "AUTHORED",
+      "relationKind": "attested_modal_connection_without_cartographic_path",
+      "evidence": "Transporte combinado mineral: carros, puntos de carga, barcazas por el Belara hasta el puerto industrial.",
+      "sourceRefIds": [
+        "treihord",
+        "rivers"
+      ],
+      "physicalRouteConfirmed": true,
+      "waypoints": [],
+      "routeGeometry": null,
+      "distanceKm": null,
+      "travelTime": null,
+      "capacity": null,
+      "access": "industrial_heavy_cargo",
+      "operationalRestriction": "Solo embarcaciones de poco calado; emplazamiento del punto de carga y continuidad por estación UNKNOWN."
+    },
+    {
+      "id": "d05_vena_restricted",
+      "from": "d05_crisol",
+      "to": "d05_boveda",
+      "mode": "fortified_underground_gallery",
+      "provenance": "AUTHORED",
+      "relationKind": "attested_modal_connection_without_cartographic_path",
+      "evidence": "La Vena une el Crisol y la Bóveda del Grifo para bienes valiosos y documentación sensible.",
+      "sourceRefIds": [
+        "treihord"
+      ],
+      "physicalRouteConfirmed": true,
+      "waypoints": [],
+      "routeGeometry": null,
+      "distanceKm": null,
+      "travelTime": null,
+      "capacity": null,
+      "access": "restricted_guarded",
+      "operationalRestriction": "Acceso controlado; no tránsito público general, no red de carga ordinaria."
+    }
+  ],
+  "supplyRelationsNotRoutes": [
+    {
+      "id": "d05_ore_cart_stage",
+      "from": "d05_valkram_mines_unlocated",
+      "to": "d05_belara_loading_unlocated",
+      "provenance": "AUTHORED",
+      "relationKind": "supply_or_handling_relation_not_proof_of_mapped_route",
+      "description": "Tramo de transporte mediante carros hasta puntos de carga; camino y puntos sin identificar.",
+      "transportMode": "cart_unspecified_road",
+      "sourceRefIds": [
+        "treihord",
+        "rivers"
+      ],
+      "physicalRouteConfirmed": false,
+      "routeGeometry": null,
+      "waypoints": [],
+      "distanceKm": null,
+      "travelTime": null,
+      "capacity": null
+    },
+    {
+      "id": "d05_ore_port_handling",
+      "from": "d05_port_treihord",
+      "to": "d05_industrial_stores_treihord",
+      "provenance": "AUTHORED",
+      "relationKind": "supply_or_handling_relation_not_proof_of_mapped_route",
+      "description": "Recepción y movimiento dentro del sistema industrial; sin fijar calle ni itinerario interno.",
+      "transportMode": "internal_handling_unspecified",
+      "sourceRefIds": [
+        "treihord"
+      ],
+      "physicalRouteConfirmed": false,
+      "routeGeometry": null,
+      "waypoints": [],
+      "distanceKm": null,
+      "travelTime": null,
+      "capacity": null
+    },
+    {
+      "id": "d05_coal_azurios_supply",
+      "from": "d05_azurios_coal_source",
+      "to": "d05_industrial_stores_treihord",
+      "provenance": "AUTHORED",
+      "relationKind": "supply_or_handling_relation_not_proof_of_mapped_route",
+      "description": "Suministro de carbón desde los Montes Azurios a las reservas industriales de Treihord; ruta y medio UNKNOWN.",
+      "transportMode": null,
+      "sourceRefIds": [
+        "treihord",
+        "mountains"
+      ],
+      "physicalRouteConfirmed": false,
+      "routeGeometry": null,
+      "waypoints": [],
+      "distanceKm": null,
+      "travelTime": null,
+      "capacity": null
+    },
+    {
+      "id": "d05_pilares_wood_supply",
+      "from": "d05_pilares_forest",
+      "to": "d05_valkram_mines_unlocated",
+      "provenance": "AUTHORED",
+      "relationKind": "supply_or_handling_relation_not_proof_of_mapped_route",
+      "description": "Madera procedente del Bosque de los Pilares usada para las minas de Valkram; ruta y medio UNKNOWN.",
+      "transportMode": null,
+      "sourceRefIds": [
+        "forests",
+        "treihord"
+      ],
+      "physicalRouteConfirmed": false,
+      "routeGeometry": null,
+      "waypoints": [],
+      "distanceKm": null,
+      "travelTime": null,
+      "capacity": null
+    }
+  ],
+  "facilitiesByCity": [
+    {
+      "city": "treihord",
+      "facilityId": "d05_port_treihord",
+      "function": "shallow_draft_industrial_river_cargo",
+      "provenance": "AUTHORED",
+      "navigationLimits": "industrial_shallow_draft_only",
+      "sourceRefIds": [
+        "treihord",
+        "rivers"
+      ],
+      "linkedMaritimeRoute": null
+    },
+    {
+      "city": "veldora",
+      "facilityId": "d05_port_veldora",
+      "function": "commercial_seaport_external_customs_when_applicable",
+      "provenance": "AUTHORED",
+      "navigationLimits": null,
+      "sourceRefIds": [
+        "visual",
+        "houses",
+        "norgardFiscal"
+      ],
+      "linkedMaritimeRoute": null
+    },
+    {
+      "city": "taramin",
+      "facilityId": "d05_port_taramin",
+      "function": "coastal_and_river_fishing_city",
+      "provenance": "AUTHORED",
+      "navigationLimits": null,
+      "thalenArmNavigability": null,
+      "sourceRefIds": [
+        "visual",
+        "houses",
+        "rivers"
+      ],
+      "linkedMaritimeRoute": null
+    },
+    {
+      "city": "syvaris",
+      "facilityId": "d05_port_syvaris",
+      "function": "safe_island_bay_trade_and_fishing",
+      "provenance": "AUTHORED",
+      "navigationLimits": null,
+      "sourceRefIds": [
+        "visual",
+        "coasts"
+      ],
+      "linkedMaritimeRoute": null
+    }
+  ],
+  "movementSemantics": {
+    "admissibleForActualRoutingOnly": [
+      "d05_road_veldora_treihord",
+      "d05_belara_shallow_haul",
+      "d05_vena_restricted"
+    ],
+    "graphContainsOnlyAttestedConnections": true,
+    "riverNetworkReference": "d02_topology_is_hydrology_not_passenger_or_trade_navigation",
+    "separatedWaters": [
+      "belara_lhera",
+      "veldora",
+      "fhalion",
+      "thalen"
+    ],
+    "thalenUniqueRiver": true,
+    "thalenTerminalArms": 2,
+    "taraminBetweenThalenArms": true,
+    "lheraBranchesFrom": "belara",
+    "veldoraIndependentFromBelaraLhera": true,
+    "belaraAdjacentToTreihord": true,
+    "belaraCrossesTreihord": false,
+    "syvarisRequiresWaterTravelToLeaveIsland": "DERIVED_not_specific_route",
+    "arvenJurisdiction": "casa_darovan",
+    "arvenHasDarovanRoute": false,
+    "crossGreatHouseCustomsOnlyBecauseBoundary": false,
+    "navigableFromKnownPortToOtherNamedPort": null,
+    "genericRoadNetworkAvailability": null,
+    "unknownWaypointsAllowedAsCanon": false,
+    "fhalionNamedMinorRiver": true,
+    "fhalionRiverNavigability": null,
+    "fhalionCoastalOutletExact": null
+  },
+  "communicationEvidence": [
+    {
+      "id": "d05_msg_treihord_caminos",
+      "scopeNode": "d05_city_treihord",
+      "activity": "messengers_travellers_at_plaza_del_camino",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord"
+      ],
+      "networkService": null,
+      "dispatchSchedule": null
+    },
+    {
+      "id": "d05_msg_treihord_avisos",
+      "scopeNode": "d05_city_treihord",
+      "activity": "public_announcements_at_plaza_vieja",
+      "provenance": "AUTHORED",
+      "sourceRefIds": [
+        "treihord"
+      ],
+      "networkService": null,
+      "dispatchSchedule": null
+    },
+    {
+      "id": "d05_msg_delivery_policy",
+      "scopeNode": null,
+      "activity": "core_MSG01_MSG05_physical_delivery_knowledge_confidentiality",
+      "provenance": "PROPOSAL",
+      "sourceRefIds": [
+        "coreMessage"
+      ],
+      "networkService": null,
+      "dispatchSchedule": null
+    }
+  ],
+  "riskCandidates": [
+    {
+      "id": "d05_risk_shallow_belara",
+      "provenance": "DERIVED",
+      "scenario": "Calado o condiciones del Belara podrían limitar barcazas.",
+      "sourceRefIds": [
+        "rivers",
+        "d03",
+        "coreVessels"
+      ],
+      "requires": [
+        "water_level",
+        "actual_draft",
+        "temporal_flow"
+      ],
+      "currentClosure": false,
+      "measuredSeverity": null
+    },
+    {
+      "id": "d05_risk_road_weather",
+      "provenance": "DERIVED",
+      "scenario": "Lluvia, barro, crecidas o heladas podrían afectar rutas si concurren topografía y tiempo.",
+      "sourceRefIds": [
+        "d03",
+        "forests"
+      ],
+      "requires": [
+        "road_geometry",
+        "weather_state",
+        "terrain"
+      ],
+      "currentClosure": false,
+      "measuredSeverity": null
+    },
+    {
+      "id": "d05_risk_coal_dependency",
+      "provenance": "DERIVED",
+      "scenario": "Interrupción hipotética de carbón afectaría existencias industriales.",
+      "sourceRefIds": [
+        "treihord",
+        "d04"
+      ],
+      "requires": [
+        "actual_supply_route",
+        "stock",
+        "consumption"
+      ],
+      "currentClosure": false,
+      "measuredSeverity": null
+    },
+    {
+      "id": "d05_risk_coastal_weather",
+      "provenance": "DERIVED",
+      "scenario": "Oleaje y viento podrían restringir actividad marítima según barco y ruta.",
+      "sourceRefIds": [
+        "d03",
+        "norgardNavigation",
+        "coreVessels"
+      ],
+      "requires": [
+        "wave_wind_visibility",
+        "vessel",
+        "verified_route"
+      ],
+      "currentClosure": false,
+      "measuredSeverity": null
+    },
+    {
+      "id": "d05_risk_thalen",
+      "provenance": "DERIVED",
+      "scenario": "Riesgo de inundación potencial entre brazos Thalen, sin cierre ni navegación acreditados.",
+      "sourceRefIds": [
+        "d02",
+        "d03"
+      ],
+      "requires": [
+        "water_levels",
+        "elevation",
+        "river_profile"
+      ],
+      "currentClosure": false,
+      "measuredSeverity": null
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "DAR-P04",
+      "topic": "map_scale_borders_bridges_passes_fords_distances",
+      "provenance": "UNKNOWN",
+      "materialized": false
+    },
+    {
+      "id": "DAR-P08",
+      "topic": "belara_lhera_split_metric_nacimientos_and_fhalion_mouth_unknown",
+      "provenance": "UNKNOWN",
+      "materialized": false
+    },
+    {
+      "id": "DAR-P09",
+      "topic": "weather_soil_water_levels_and_seasonal_risks",
+      "provenance": "UNKNOWN",
+      "materialized": false
+    },
+    {
+      "id": "DAR-P10",
+      "topic": "site_owner_mine_forest_farm_fishing_details",
+      "provenance": "UNKNOWN",
+      "materialized": false
+    },
+    {
+      "id": "DAR-P11",
+      "topic": "azurios_coal_itinerary_storage_port_capacity_water_navigation",
+      "provenance": "UNKNOWN",
+      "materialized": false
+    }
+  ],
+  "authorship": {
+    "authorApprovalRequiredForNewNamedRoutes": true,
+    "newCanonApproved": false,
+    "pendingAuthor": [
+      "DAR-P04",
+      "DAR-P08",
+      "DAR-P09",
+      "DAR-P10",
+      "DAR-P11"
+    ]
+  },
+  "runtimeIntegration": {
+    "status": "not_implemented",
+    "validatedWithCoreRPG": false,
+    "validatedInGodot": false,
+    "routeFinderPresent": false,
+    "messageDeliverySimulated": false,
+    "cargoMoved": false,
+    "boatsSpawned": 0,
+    "coordinatesMaterialized": 0
+  },
+  "authorialCorrection20261021": {
+    "darP01": "resolved",
+    "darP07": "resolved",
+    "darP08": "partial_fhalion_named",
+    "remainingGeometry": "UNKNOWN",
+    "noNewRoutes": true
+  }
+}

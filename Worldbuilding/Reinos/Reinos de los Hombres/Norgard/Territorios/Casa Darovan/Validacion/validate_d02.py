@@ -13,6 +13,7 @@ EXPECTED_EDGES = {
     ("d02_belara_lhera_split", "d02_lhera_agujas"),
     ("d02_lhera_agujas", "d02_lhera_mouth"),
     ("d02_veldora_upstream_unknown", "d02_veldora_mouth"),
+    ("d02_fhalion_upstream_unknown", "d02_fhalion_west_coast_mouth_unlocated"),
     ("d02_thalen_upstream_unknown", "d02_thalen_terminal_split"),
     ("d02_thalen_terminal_split", "d02_thalen_arm_a"),
     ("d02_thalen_terminal_split", "d02_thalen_arm_b"),
@@ -44,8 +45,8 @@ def validate(d: dict, repo: Path) -> None:
                  "containsDischargeValues", "containsTributaryInstances", "containsRuntimeAssets"):
         check(d[flag] is False, "dato no autorizado: " + flag)
     rivers = {r["id"]: r for r in d["rivers"]}
-    check(len(d["rivers"]) == 4 and len(rivers) == 4
-          and set(rivers) == {"belara", "lhera", "veldora", "thalen"}, "ríos")
+    check(len(d["rivers"]) == 5 and len(rivers) == 5
+          and set(rivers) == {"belara", "lhera", "veldora", "fhalion", "thalen"}, "ríos")
     b, l, v, t = (rivers[k] for k in ("belara", "lhera", "veldora", "thalen"))
     check(b["source"] == "west_flank_northern_valkram" and b["sourceKnown"] is True, "nacimiento Belara")
     check(b["mainCourseMouth"] == "golfo_de_norgard" and b["passesByCity"] == "treihord"
@@ -56,28 +57,33 @@ def validate(d: dict, repo: Path) -> None:
     check(v["source"] is None and v["sourceKnown"] is False
           and v["mainCourseMouth"] == "golfo_de_veldora"
           and set(v["independentOf"]) == {"belara", "lhera"}
-          and v["visualRiverBehindCityIdentification"] is None, "Veldora independiente")
+          and v["visualRiverBehindCityIdentification"] == "veldora", "Veldora independiente")
+    f = rivers["fhalion"]
+    check(f["source"] is None and f["sourceKnown"] is False and f["mainCourseMouth"] is None
+          and f["coastalSector"] == "costa_occidental_al_sur_de_veldora"
+          and set(f["independentOf"]) == {"belara","lhera","veldora","thalen"}, "Fhalion")
     check(t["source"] is None and t["sourceKnown"] is False
           and t["mainCourseMouth"] == "golfo_de_norgard"
           and t["terminalArms"] == 2 and t["cityBetweenTerminalArms"] == "taramin", "Thalen")
     systems = {s["id"]: s for s in d["systems"]}
-    check(len(systems) == 3 and len(d["systems"]) == 3 and
-          set(systems) == {"belara_lhera", "veldora", "thalen"}, "sistemas")
+    check(len(systems) == 4 and len(d["systems"]) == 4 and
+          set(systems) == {"belara_lhera", "veldora", "fhalion", "thalen"}, "sistemas")
     check(systems["belara_lhera"]["riverIds"] == ["belara", "lhera"] and
           set(systems["belara_lhera"]["mouths"]) == {"golfo_de_norgard", "golfo_de_veldora"} and
           systems["belara_lhera"]["hydraulicSplitFraction"] is None, "red divergente")
     check(systems["veldora"]["riverIds"] == ["veldora"] and
           systems["veldora"]["mouths"] == ["golfo_de_veldora"], "red Veldora")
+    check(systems["fhalion"]["riverIds"] == ["fhalion"] and systems["fhalion"]["mouths"] == [] and systems["fhalion"]["mouthSpecificName"] is None, "Fhalion boca desconocida")
     check(systems["thalen"]["riverIds"] == ["thalen"] and
           systems["thalen"]["mouths"] == ["golfo_de_norgard"], "red Thalen")
     check(all(s["catchmentPolygon"] is None for s in systems.values()), "polígonos falsos")
     ng = d["conceptualGraph"]["nodes"]
     nodes = {n["id"]: n for n in ng}
-    check(len(nodes) == len(ng) == 13, "IDs nodos")
+    check(len(nodes) == len(ng) == 15, "IDs nodos")
     check(all(n["coordinate"] is None and n["geom"] is None for n in ng), "nodo cartográfico prohibido")
     edges = d["conceptualGraph"]["edges"]
     actual = {(e["from"], e["to"]) for e in edges}
-    check(len(edges) == len(actual) == len({e["id"] for e in edges}) == 10
+    check(len(edges) == len(actual) == len({e["id"] for e in edges}) == 11
           and actual == EXPECTED_EDGES, "aristas topológicas")
     graph = defaultdict(list)
     for fr, to in actual:
@@ -112,7 +118,7 @@ def validate(d: dict, repo: Path) -> None:
     city = d["cityProtection"]
     check(set(city["manualCities"]) == {"treihord", "veldora", "taramin", "syvaris"}
           and city["excludedCity"] == "karsath"
-          and city["arvenIslandOwner"] is None
+          and city["arvenIslandOwner"] == "casa_darovan"
           and city["syvarisIslandOwner"] == "casa_darovan"
           and city["permanentSettlementsInsideAgujasAllowed"] is False
           and city["redMapMarkupIsLegalBorder"] is False, "ciudades, Arven, Agujas")
@@ -139,9 +145,11 @@ def run() -> None:
         ("belara_desembocadura", lambda x: x["rivers"][0].update(mainCourseMouth="golfo_de_veldora")),
         ("lhera_sin_bifurcacion", lambda x: x["rivers"][1].update(branchesFrom=None)),
         ("veldora_conectada", lambda x: x["rivers"][2].update(independentOf=[])),
-        ("thalen_un_brazo", lambda x: x["rivers"][3].update(terminalArms=1)),
+        ("thalen_un_brazo", lambda x: x["rivers"][4].update(terminalArms=1)),
         ("belara_cruza_treihord", lambda x: x["rivers"][0].update(crossesCity=True)),
-        ("arven_darovan", lambda x: x["cityProtection"].update(arvenIslandOwner="casa_darovan")),
+        ("arven_owner_erased", lambda x: x["cityProtection"].update(arvenIslandOwner=None)),
+        ("fhalion_mouth_invented", lambda x: x["rivers"][3].update(mainCourseMouth="golfo_de_norgard")),
+        ("fhalion_join", lambda x: x["conceptualGraph"]["edges"][10].update(to="d02_thalen_mouth_a")),
         ("arroyo_inventado", lambda x: x["catchmentPlanning"]["minorTributaries"].append({"id":"inventado"})),
         ("arista_conectando_redes", lambda x: x["conceptualGraph"]["edges"][0].update(to="d02_veldora_mouth")),
     ]
