@@ -239,7 +239,16 @@ def run() -> None:
         ("duplicate_proof",lambda x:x["evidence"].append("habitable_ground_verified")),
         ("unknown_region",lambda x:x.update(studyZoneId="d01_not_found")),
         ("unknown_model",lambda x:x.update(allowedModel="unknown_model")),
+        ("unauthorized_geometry_field",lambda x:x.update(routeGeometry=[[1,2],[3,4]])),
     ]
+    special = copy.deepcopy(fixtures["scenarios"][2])
+    special["evidence"].remove("resident_community_justified_verified")
+    try:
+        generate_test_design(original,special,fixtures["seed"])
+    except IneligibleSite:
+        pass
+    else:
+        raise AssertionError("worksite promoted to resident settlement without proof")
     for name, mutate in bad_sites:
         test = copy.deepcopy(first)
         mutate(test)
@@ -249,7 +258,7 @@ def run() -> None:
             continue
         raise AssertionError("accepted invalid site mutation: " + name)
     print(f"D06 STATIC OK: {len(fixtures['scenarios'])} positive fixtures, "
-          f"{len(bad_rules)} negative rules, {len(bad_sites)} negative sites, "
+          f"{len(bad_rules)} negative rules, {len(bad_sites)+1} negative sites, "
           "D01-D05 cross-checks; NO RUNTIME")
 
 

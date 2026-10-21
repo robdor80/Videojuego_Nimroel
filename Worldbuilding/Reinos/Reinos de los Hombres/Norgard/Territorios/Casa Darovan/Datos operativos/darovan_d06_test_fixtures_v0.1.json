@@ -61,7 +61,8 @@
         "livelihood_viable_verified",
         "local_jurisdiction_verified",
         "attested_road_at_site_verified",
-        "local_traffic_demand_verified"
+        "local_traffic_demand_verified",
+        "resident_community_justified_verified"
       ],
       "allowedModel": "servicio_camino",
       "fixtureKind": "synthetic_test_only",
@@ -83,7 +84,8 @@
         "local_jurisdiction_verified",
         "specific_mine_site_authorized",
         "mineral_site_access_verified",
-        "site_ownership_verified"
+        "site_ownership_verified",
+        "resident_community_justified_verified"
       ],
       "allowedModel": "minera_auxiliar",
       "fixtureKind": "synthetic_test_only",

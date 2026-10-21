@@ -41,7 +41,13 @@ def generate_test_design(rules: dict[str, Any], proposal: dict[str, Any], seed: 
         raise IneligibleSite("laboratory proposals only")
     if proposal.get("visibleName") is not None or proposal.get("coordinates") is not None:
         raise IneligibleSite("new names and coordinates forbidden")
-    if proposal.get("flags") or proposal.get("claimsOfficialToponym") or proposal.get("claimedCity"):
+    allowed = {"id", "studyZoneId", "slotId", "settlementClass", "evidence",
+               "allowedModel", "fixtureKind", "flags", "visibleName",
+               "coordinates", "canonical"}
+    if set(proposal) - (allowed | set(rules["proposalForbiddenFlags"])):
+        raise IneligibleSite("unknown fixture fields cannot assert facts")
+    if proposal.get("flags") or proposal.get("claimedCity") or any(
+            proposal.get(flag) for flag in rules["proposalForbiddenFlags"]):
         raise IneligibleSite("unapproved world claim")
     zone = proposal.get("studyZoneId")
     slot = proposal.get("slotId")
@@ -55,6 +61,8 @@ def generate_test_design(rules: dict[str, Any], proposal: dict[str, Any], seed: 
     if not isinstance(evidence, list) or len(evidence) != len(set(evidence)):
         raise IneligibleSite("invalid site evidence")
     proof = set(evidence)
+    if klass == "enclave" and rules["enclavePromotionRequires"] not in proof:
+        raise IneligibleSite("worksite is not a settlement without residents")
     if not set(rules["globalRequiredEvidence"]).issubset(proof):
         raise IneligibleSite("missing mandatory site proof")
     stable = stable_id(seed, zone, slot)
