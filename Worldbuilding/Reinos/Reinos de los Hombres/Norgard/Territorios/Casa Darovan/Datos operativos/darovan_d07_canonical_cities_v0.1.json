@@ -773,7 +773,6 @@
     "DAR-P09",
     "DAR-P10",
     "DAR-P11",
-    "DAR-D07-02",
     "DAR-D07-03"
   ],
   "runtimeIntegration": {
@@ -805,6 +804,27 @@
         "street_plan",
         "placement_of_facilities",
         "new_buildings_and_accesses"
+      ]
+    },
+    {
+      "id": "DAR-D07-02",
+      "cityId": "taramin",
+      "choice": "A",
+      "status": "APPROVED_CONCEPT_ONLY",
+      "approvingAuthority": "autor",
+      "approvedConcept": "one_principal_fishing_activity_sector",
+      "description": "Una zona pesquera principal concentra la mayor parte de la actividad de pesca y descarga, sin emplazamiento aprobado ni afirmación de navegabilidad de los brazos terminales del Thalen",
+      "affectsUrbanLayout": false,
+      "createsCanonicalDistrictNames": false,
+      "createsPhysicalRoutes": false,
+      "createsNewFacilities": false,
+      "changesPopulation": false,
+      "pendingDetails": [
+        "fishing_sector_location",
+        "thalen_arm_navigability",
+        "land_access_and_bridges",
+        "dock_placement",
+        "fish_handling_facilities"
       ]
     }
   ]
