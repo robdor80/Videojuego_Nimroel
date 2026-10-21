@@ -106,3 +106,6 @@ D04 PR #20 fusionada en `main` (`d4a07ba25f8560d5005a52aafc763699917f2388`); D05
 
 ## Adenda operativa D06 — 21-10-2026
 D05 PR #30 fue fusionada en `main`, commit `0818886f8cc9f91c21b5db00f91feb1b942d230d`. D06 cuenta con documentos de modelo, datos no runtime, seis casos sintéticos y 42 mutaciones negativas. Los pesos 0–4 son prioridades de diseño, nunca densidades demográficas; solo se valida laboratorio. No se inicia D07 ni se fusiona D06 automáticamente. Las menciones históricas a Arven UNKNOWN y cuatro ríos quedan sustituidas por la corrección del autor: Arven Darovan y cinco ríos/cuatro redes, con Fhalion. Primera CI D01–D06 superada en Windows y Linux, run #39627654566; revalidar commit final de PR.
+
+## Seguimiento D07 — 21-10-2026
+Tras verificar la fusión de D06 PR #31 (main e2636f33791b11ec6ad2e478df95ab190de0f09e), D07 trabaja en rama exclusiva feat/darovan-d07-ciudades-canonicas. Entrega técnica prevista: auditoría de cuatro ciudades, Treihord solo compatibilidad con D01–D06, perfiles manuales Veldora/Taramin/Syvaris, matriz de fuente, JSON no-runtime, validación Python y PR Draft. Las decisiones de organización urbana DAR-D07-01/02/03 permanecen pendientes del autor. No se han desarrollado D08, NPC, habitantes nuevos, calles, puertos o rutas; no hay integración CoreRPG/Godot acreditada.
