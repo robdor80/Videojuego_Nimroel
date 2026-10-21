@@ -81,7 +81,7 @@ def validate(d: dict, repo: Path) -> None:
           "island owners")
 
     h = d["hydroProtection"]
-    check(h["namedRivers"] == ["belara", "lhera", "veldora", "thalen"]
+    check(h["namedRivers"] == ["belara", "lhera", "veldora", "fhalion", "thalen"]
           and h["fhalionSourceKnown"] is False and h["fhalionMouthNameKnown"] is False
           and h["belaraMouth"] == "golfo_de_norgard"
           and h["belaraAdjacentCity"] == "treihord"
