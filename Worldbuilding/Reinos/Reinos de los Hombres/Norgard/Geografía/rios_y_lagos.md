@@ -180,7 +180,7 @@ No se han definido todavía:
 
 ---
 
-## 8. Río Caleran
+## 9. Río Caleran
 
 ### Definición
 
@@ -220,7 +220,7 @@ Finalmente desemboca en el **Mar de Suthiros**.
 
 ---
 
-## 9. Ríos Sareno y Theleno
+## 10. Ríos Sareno y Theleno
 
 ### Definición
 
@@ -246,7 +246,7 @@ Este sobrenombre hace referencia a su recorrido paralelo e identidad asociada a 
 
 ---
 
-## 10. Río Vornarsk
+## 11. Río Vornarsk
 
 ### Definición
 
@@ -266,7 +266,7 @@ El significado original del término en lengua enana queda pendiente de definir.
 
 ---
 
-## 11. Río Keldarsk
+## 12. Río Keldarsk
 
 ### Definición
 
@@ -284,7 +284,7 @@ El significado original del término en lengua enana queda pendiente de definir.
 
 ---
 
-## 12. Principios generales
+## 13. Principios generales
 
 Los ríos de Norgard cumplen funciones muy diferentes según la región:
 
