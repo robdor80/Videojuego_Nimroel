@@ -26,3 +26,6 @@ Auditar una por una las fuentes, preparar perfiles de ciudad **manuales** sin su
 D08 resolverá hogares, necesidades, clases de asentamiento y servicios con CoreRPG. D11 comprobará redes reales, cartografía, semillas jugables, persistencia y visualización Godot. Los seis fixtures D06 son `TEST_ONLY`, no se importan como localidades.
 
 **No merge automático, no abrir D07 en esta entrega.**
+
+## Nota de ejecución D07 — 21/10/2026 (posterior a este traspaso histórico)
+D06 PR #31 fusionada, main e2636f33791b11ec6ad2e478df95ab190de0f09e y CI post-merge #39628590145 en verde. D07 iniciada en feat/darovan-d07-ciudades-canonicas. Las frases previas «no iniciada» documentan la precondición de D06, no el estado presente. Ver auditoría D07, datos versionados, decisiones DAR-D07-01/02/03 aún pendientes y TRASPASO_D08.md de carácter exclusivamente preparatorio. Prohibidos merge automático y comienzo D08.
