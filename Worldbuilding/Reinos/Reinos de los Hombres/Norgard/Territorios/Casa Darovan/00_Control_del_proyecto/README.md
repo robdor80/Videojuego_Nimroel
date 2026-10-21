@@ -10,3 +10,6 @@ Ninguna de estas fichas modifica el canon original. Prioridad: Nimroel Core → 
 - [Traspaso histórico a D02](TRASPASO_D02.md) — D01 fusionada por PR #15.
 - [Traspaso a D03](TRASPASO_D03.md) — D03 NO iniciada; exige merge D02.
 - [Acta D02](../Auditorias/D02_CIERRE_Y_VALIDACION_2026-10-15.md)
+
+- [Traspaso a D05](TRASPASO_D05.md) — leído tras merge autorizado de PR #20.
+- [Traspaso a D06](TRASPASO_D06.md) — D06 NO INICIADA, condicionado al merge de D05.

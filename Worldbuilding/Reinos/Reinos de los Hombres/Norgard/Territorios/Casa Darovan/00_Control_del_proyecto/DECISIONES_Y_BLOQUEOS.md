@@ -42,3 +42,9 @@ No resolver ambigüedades creando canon propio.
 - **DAR-P11 (nuevo, dependencias técnicas D05/D07/D08/D11):** itinerario y nodos del carbón Azurios→Treihord, existencias/capacidades, accesos Belara, métodos y quotas de pesca, almacenamiento y disponibilidad de agua; no inventar magnitudes ni tiempos.
 - **DAR-P01/P04/P07/P08/P09:** Arven UNKNOWN, límites/cotas desconocidos, río visual Veldora no identificado, drenaje detallado y clima/suelos no medidos.
 - **Evidencia:** PR #17 fusionada en `191bcd5`; D01–D03 Python MSI superados. D04 rama desde `df43be5`, PR #20 a revisión; 22 controles JS remotos OK y 16 negativos rechazados. Python D04 sobre checkout completo PENDIENTE MSI. No se ha modificado canon.
+
+## D05 — Inventario de incertidumbres (21-10-2026, NO resolución de canon)
+- **DAR-P01/P04/P07/P08/P09/P10/P11 continúan abiertos** sin alterar su contenido anterior. Arven sin atribución, sin escala, cruces, pasos ni puentes; río visual Veldora sin identificar; posiciones/caudales de D02 no medidos; riesgos D03 sin calendario; explotaciones no localizadas; itinerario carbón Azurios→Treihord UNKNOWN.
+- Ninguna conexión marina Syvaris↔Veldora/Taramin, terrestre a Taramin, correo interurbano o transbordo nuevo resulta autorizada por un mapa o necesidad logística. Si el autor define alguna, actualizar fuente canónica primero y revalidar D05.
+- En D05 la red física acreditada se limita a camino Veldora–Treihord, función logística con barcaza somera Belara y galería restringida La Vena. Los enlaces carbón Azurios y madera Pilares son suministros acreditados, no itinerarios.
+- No se crea un nuevo identificador DAR-P sin decisión sustantiva; el cierre documental D05 conserva estas incógnitas.
