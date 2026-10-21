@@ -30,3 +30,6 @@ Aprobación autoral pendiente de enfoques para Veldora, Taramin y Syvaris; solo 
 
 ## Adenda — aprobación del autor DAR-D07-02 (21/10/2026)
 El autor elige A para Taramin: una **zona pesquera principal**, con alcance exclusivo de organización funcional. Continúan desconocidos emplazamiento, brazos navegables del Thalen, conexiones, puentes, muelles, edificios y personas. No se atribuye capacidad de navegación ni se materializa mundo. D07-01 Veldora B continúa aprobada solo como concepto. D07-03 Syvaris pendiente. Las pruebas anteriores a este cambio no validan el nuevo HEAD; consultar GitHub Actions.
+
+## Adenda de cierre conceptual D07 — Syvaris y decisiones 1–3 (21/10/2026)
+El autor aprobó explícitamente **Syvaris A**, ciudad principalmente concentrada en torno a la bahía resguardada, y previamente **Veldora B** y **Taramin A**. Las tres elecciones están registradas en el JSON como `APPROVED_CONCEPT_ONLY`. No fijan ciudad georreferenciada, puertos nuevos, rutas, barrios, cantidades ni capacidades, ni autorizan instancias runtime. Las 9 capas de estudio continúan como propuestas no materializadas. Las dudas de fuentes/cartografía/infraestructuras y la demografía D08 permanecen para futuras decisiones. El cierre formal de la PR requiere CI en HEAD y autorización expresa para fusionar; D08 no ha comenzado.
