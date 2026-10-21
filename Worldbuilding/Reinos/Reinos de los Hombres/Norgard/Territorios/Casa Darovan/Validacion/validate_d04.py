@@ -127,7 +127,7 @@ def validate(d: dict, repo: Path) -> None:
 
     a, runtime = d["approvals"], d["runtimeIntegration"]
     check(a["newCanonApproved"] is False and set(a["pendingAuthor"]) ==
-          {"DAR-P01", "DAR-P04", "DAR-P07", "DAR-P08", "DAR-P09"}, "author approval")
+          {"DAR-P01", "DAR-P04", "DAR-P07", "DAR-P08", "DAR-P09", "DAR-P10", "DAR-P11"}, "author approval")
     check(runtime == {"status":"not_implemented", "validatedInGodot":False,
                       "validatedWithCoreRPG":False, "generatedProductionEntities":0,
                       "executedTransactions":0, "persistedStockLedger":False}, "runtime claim")
