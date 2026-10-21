@@ -16,7 +16,10 @@ Intercambios exteriores y servicios a viajeros, mercaderes y marineros. Aduana e
 2. **Tejido comercial mixto:** estudiar agrupación legible de tiendas, talleres, alojamiento y calles de servicio sobre arquitectura aprobada. Sin geometría ni denominaciones.
 3. **Transición a zonas acomodadas:** estudiar cómo expresar la separación respecto de los muelles sin decidir límites, nombres ni jerarquías de barrios.
 
-Alternativas para la discusión: eje mercantil más concentrado / distribución en varios sectores funcionales (sin ratificar ningún trazado). Recomendación preliminar: **identificar funciones antes de dibujar barrios**, por fidelidad al crecimiento orgánico.
+### Decisión del autor — DAR-D07-01: opción B aprobada
+El autor ha elegido **varios sectores comerciales distribuidos orgánicamente por Veldora**. El puerto mantiene su identidad como centro del intercambio marítimo, pero los espacios de comercio y artesanía no se reducen a un único núcleo. Esta decisión aprueba un **criterio de organización urbana general**, NO un plano urbano cerrado.
+
+**Quedan expresamente sin aprobar** el número, nombre, extensión o ubicación exacta de barrios; calles y rutas, nuevos muelles, almacenes o edificios singulares; y toda demografía D08. Las tres capas de estudio anteriores permanecen **PROPOSAL**, sin materialización, hasta que se precisen sus decisiones de detalle. Datos operativos: `authorialDecisions/DAR-D07-01 = APPROVED_CONCEPT_ONLY`.
 
 ## Dependencias y pendientes
 Autor: organización final de barrios, plazas no documentadas, nuevos edificios singulares, hitos históricos, gobierno local y personajes; cualquier puerto/puente/travesía. Técnica: cartografía y suelo real, agua, riesgo portuario, escalas y accesos. D08: hogares, habitantes, profesiones, cuantías y dotación de servicios; D11: rutas geométricas, sistemas de carga/aduana, CoreRPG y Godot.
