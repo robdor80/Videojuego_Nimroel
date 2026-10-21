@@ -86,3 +86,6 @@ En los tres casos la aprobación de un criterio conceptual NO autoriza por sí s
 **APROBADO (solo concepto):** varios sectores comerciales, artesanales y residenciales, surgidos de crecimiento orgánico, sin reducir la ciudad a un único núcleo de comercio. Continúa vigente el canon preexistente de puerto principal, aduana exterior, almacenes, gremios, viviendas mixtas y zonas acomodadas alejadas de muelles.
 **NO aprobado:** nomenclatura/número exacto de barrios, división urbana, calles, trazado, rutas, puentes, muelles nuevos, establecimientos singulares, personajes, habitantes, hogares ni servicios D08. En el índice operativo figura como `APPROVED_CONCEPT_ONLY`, sin `authorApprovedNewLayout`.
 **Aún pendientes:** DAR-D07-02 (Taramin) y DAR-D07-03 (Syvaris). No actualizar `main` ni fusionar PR Draft sin autorización.
+
+## Resolución del autor D07-01 — 21/10/2026
+El autor elige B para Veldora: varios sectores comerciales orgánicos. Aprobación exclusivamente conceptual, sin calles, barrios, nuevos edificios, rutas ni cartografía definitiva. DAR-D07-02 Taramin y DAR-D07-03 Syvaris siguen pendientes.
