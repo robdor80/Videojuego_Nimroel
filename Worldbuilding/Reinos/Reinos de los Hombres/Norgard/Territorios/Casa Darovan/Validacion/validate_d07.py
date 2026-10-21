@@ -95,10 +95,10 @@ def validate(data: dict, repo: Path) -> None:
     }, "pretend runtime / generated city")
     check(data["authorialPendingIds"] == ["DAR-P02", "DAR-P04", "DAR-P05",
           "DAR-P08", "DAR-P09", "DAR-P10", "DAR-P11",
-          "DAR-D07-03"], "authorial pending removed")
-    # The two AUTHOR-approved conceptual choices are closed; neither creates layout or infrastructure.
+          ], "authorial pending removed")
+    # Three AUTHOR-approved conceptual choices closed; no physical design approved.
     approvals = data["authorialDecisions"]
-    check(type(approvals) is list and len(approvals) == 2, "approved decisions count")
+    check(type(approvals) is list and len(approvals) == 3, "approved decisions count")
     approval = approvals[0]
     check(set(approval) == {
         "id", "cityId", "choice", "status", "approvingAuthority",
@@ -137,6 +137,25 @@ def validate(data: dict, repo: Path) -> None:
               "fishing_sector_location", "thalen_arm_navigability",
               "land_access_and_bridges", "dock_placement", "fish_handling_facilities"
           ], "Taramin A authorial decision or scope tampered")
+    syvaris_approval = approvals[2]
+    check(set(syvaris_approval) == set(approval)
+          and syvaris_approval["id"] == "DAR-D07-03"
+          and syvaris_approval["cityId"] == "syvaris"
+          and syvaris_approval["choice"] == "A"
+          and syvaris_approval["status"] == "APPROVED_CONCEPT_ONLY"
+          and syvaris_approval["approvingAuthority"] == "autor"
+          and syvaris_approval["approvedConcept"] == "principal_urban_activity_concentrated_around_sheltered_main_bay"
+          and isinstance(syvaris_approval["description"], str)
+          and "bahía" in syvaris_approval["description"]
+          and all(syvaris_approval[k] is False for k in [
+              "affectsUrbanLayout", "createsCanonicalDistrictNames",
+              "createsPhysicalRoutes", "createsNewFacilities", "changesPopulation"
+          ])
+          and syvaris_approval["pendingDetails"] == [
+              "main_bay_precise_urban_layout", "district_names_and_boundaries",
+              "port_and_naval_facility_positions", "minor_coves_without_new_ports",
+              "island_land_access_and_maritime_routes"
+          ], "Syvaris A authorial decision or scope tampered")
     sources = data["sourceRefs"]
     check(set(sources) == {"treihord", "visual", "visualData", "houses", "rivers", "coasts",
           "forests", "regions", "climate", "fiscal", "navigation", "d00", "d01", "d02",
@@ -299,7 +318,7 @@ def run() -> None:
         ("runtime_claim", lambda x: x["runtimeIntegration"].update(godotValidated=True)),
         ("world_state_claim", lambda x: x["cities"][3].update(worldStateEntityId="instantiated")),
         ("missing_source", lambda x: x["sourceRefs"].update(treihord="Worldbuilding/borrado.md")),
-        ("missing_approval_gate", lambda x: x["authorialPendingIds"].remove("DAR-D07-03")),
+        ("missing_approval_gate", lambda x: x["authorialPendingIds"].remove("DAR-P09")),
         ("choice_flip", lambda x: x["authorialDecisions"][0].update(choice="A")),
         ("approve_building", lambda x: x["authorialDecisions"][0].update(createsNewFacilities=True)),
         ("approve_streets", lambda x: x["authorialDecisions"][0].update(affectsUrbanLayout=True)),
@@ -308,6 +327,11 @@ def run() -> None:
         ("taramin_fake_navigation", lambda x: x["hydro"].update(thalenArmsNavigation=True)),
         ("taramin_approval_spatialized", lambda x: x["authorialDecisions"][1].update(affectsUrbanLayout=True)),
         ("taramin_approval_builds_port", lambda x: x["authorialDecisions"][1].update(createsNewFacilities=True)),
+        ("syvaris_choice_flip", lambda x: x["authorialDecisions"][2].update(choice="B")),
+        ("syvaris_fake_new_port", lambda x: x["authorialDecisions"][2].update(createsNewFacilities=True)),
+        ("syvaris_spatialized", lambda x: x["authorialDecisions"][2].update(affectsUrbanLayout=True)),
+        ("syvaris_new_districts", lambda x: x["authorialDecisions"][2].update(createsCanonicalDistrictNames=True)),
+        ("syvaris_world_route", lambda x: x["authorialDecisions"][2].update(createsPhysicalRoutes=True)),
         ("duplicate_city", lambda x: x["cities"][3].update(id="veldora")),
     ]
     for name, mutate in mutations:
