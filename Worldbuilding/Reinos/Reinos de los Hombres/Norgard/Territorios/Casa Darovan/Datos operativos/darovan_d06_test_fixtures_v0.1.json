@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d06_lab_fixtures",
+  "version": "0.1",
+  "status": "synthetic_test_only_noncanonical",
+  "seed": "d06-laboratorio-21-10-2026",
+  "scenarios": [
+    {
+      "id": "synthetic-pilares",
+      "studyZoneId": "d01_pilares_sur",
+      "slotId": "sandbox_pilares_01",
+      "settlementClass": "aldea",
+      "evidence": [
+        "habitable_ground_verified",
+        "potable_water_verified",
+        "local_access_verified",
+        "livelihood_viable_verified",
+        "local_jurisdiction_verified",
+        "managed_forest_site_verified",
+        "forest_use_rights_verified",
+        "sustainable_harvest_verified"
+      ],
+      "allowedModel": "forestal_sostenible",
+      "fixtureKind": "synthetic_test_only",
+      "flags": [],
+      "visibleName": null,
+      "coordinates": null,
+      "canonical": false
+    },
+    {
+      "id": "synthetic-arven",
+      "studyZoneId": "d01_arven_contexto",
+      "slotId": "sandbox_arven_02",
+      "settlementClass": "aldea",
+      "evidence": [
+        "habitable_ground_verified",
+        "potable_water_verified",
+        "local_access_verified",
+        "livelihood_viable_verified",
+        "local_jurisdiction_verified",
+        "island_site_verified",
+        "local_land_use_verified",
+        "insular_food_base_verified"
+      ],
+      "allowedModel": "insular_mixta",
+      "fixtureKind": "synthetic_test_only",
+      "flags": [],
+      "visibleName": null,
+      "coordinates": null,
+      "canonical": false
+    },
+    {
+      "id": "synthetic-linde",
+      "studyZoneId": "d01_linde_caminos",
+      "slotId": "sandbox_linde_03",
+      "settlementClass": "enclave",
+      "evidence": [
+        "habitable_ground_verified",
+        "potable_water_verified",
+        "local_access_verified",
+        "livelihood_viable_verified",
+        "local_jurisdiction_verified",
+        "attested_road_at_site_verified",
+        "local_traffic_demand_verified"
+      ],
+      "allowedModel": "servicio_camino",
+      "fixtureKind": "synthetic_test_only",
+      "flags": [],
+      "visibleName": null,
+      "coordinates": null,
+      "canonical": false
+    },
+    {
+      "id": "synthetic-valkram",
+      "studyZoneId": "d01_valkram_oeste",
+      "slotId": "sandbox_valkram_04",
+      "settlementClass": "enclave",
+      "evidence": [
+        "habitable_ground_verified",
+        "potable_water_verified",
+        "local_access_verified",
+        "livelihood_viable_verified",
+        "local_jurisdiction_verified",
+        "specific_mine_site_authorized",
+        "mineral_site_access_verified",
+        "site_ownership_verified"
+      ],
+      "allowedModel": "minera_auxiliar",
+      "fixtureKind": "synthetic_test_only",
+      "flags": [],
+      "visibleName": null,
+      "coordinates": null,
+      "canonical": false
+    },
+    {
+      "id": "synthetic-syvaris",
+      "studyZoneId": "d01_syvaris",
+      "slotId": "sandbox_syvaris_05",
+      "settlementClass": "aldea",
+      "evidence": [
+        "habitable_ground_verified",
+        "potable_water_verified",
+        "local_access_verified",
+        "livelihood_viable_verified",
+        "local_jurisdiction_verified",
+        "coastal_or_fishery_water_verified",
+        "safe_landing_verified",
+        "fishing_rights_verified"
+      ],
+      "allowedModel": "pesquera",
+      "fixtureKind": "synthetic_test_only",
+      "flags": [],
+      "visibleName": null,
+      "coordinates": null,
+      "canonical": false
+    },
+    {
+      "id": "synthetic-taramin",
+      "studyZoneId": "d01_taramin_bosque_sur",
+      "slotId": "sandbox_taramin_06",
+      "settlementClass": "aldea",
+      "evidence": [
+        "habitable_ground_verified",
+        "potable_water_verified",
+        "local_access_verified",
+        "livelihood_viable_verified",
+        "local_jurisdiction_verified",
+        "managed_forest_site_verified",
+        "forest_use_rights_verified",
+        "sustainable_harvest_verified"
+      ],
+      "allowedModel": "forestal_sostenible",
+      "fixtureKind": "synthetic_test_only",
+      "flags": [],
+      "visibleName": null,
+      "coordinates": null,
+      "canonical": false
+    }
+  ]
+}
