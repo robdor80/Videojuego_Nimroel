@@ -9,7 +9,7 @@
 | D03 | Clima y ecosistemas | **FUSIONADA MAIN, PR #17 squash 191bcd5; PYTHON MSI D01–D03 SUPERADO**; 12 zonas de estudio cualitativas; no-runtime/no canon nuevo | Darovan 4 |
 | D04 | Recursos y producción | **FUSIONADA EN MAIN**, PR #20, commit d4a07ba25f8560d5005a52aafc763699917f2388; CI D01–D04 Windows/Linux OK; no runtime | Darovan 5 |
 | D05 | Movilidad y comunicaciones | **DOCUMENTALMENTE CERRADA Y CI ESTÁTICA WINDOWS/LINUX OK**; PR #30 en revisión, SIN FUSIONAR; no canon nuevo ni runtime, merge exige autor | Darovan 6 |
-| D06 | Asentamientos ordinarios y diseño procedural | EN DESARROLLO; rama exclusiva y PR Draft, CI por verificar; NO RUNTIME | Darovan 7 |
+| D06 | Asentamientos ordinarios y diseño procedural | DOCUMENTACIÓN / CI D01–D06 WINDOWS+LINUX SUPERADA en primer run #39627654566; PR Draft #31 sin fusionar; no runtime | Darovan 7 |
 | D07 | Ciudades canónicas | NO INICIADA | Darovan 8 |
 | D08 | Población y servicios | NO INICIADA | Darovan 9 |
 | D09 | Administración y defensa | NO INICIADA | Darovan 10 |
@@ -38,6 +38,6 @@ Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o
 
 ## Seguimiento D06 — 21-10-2026
 - **D05 PR #30 fusionada en main** (commit `0818886f8cc9f91c21b5db00f91feb1b942d230d`) antes de crear D06.
-- D06 prepara reglas y simulaciones `TEST_ONLY` con nueve modelos, doce unidades D01, esqueleto obligatorio, pesos relativos no demográficos, validador Python y 40 negativos. Sin nuevos topónimos ni asentamientos canónicos.
+- D06 prepara reglas y simulaciones `TEST_ONLY` con nueve modelos, doce unidades D01, esqueleto obligatorio, pesos relativos no demográficos, validador Python y 42 negativos. Sin nuevos topónimos ni asentamientos canónicos.
 - D06 rama `feat/darovan-d06-asentamientos-ordinarios` y PR Draft propia; comprobar CI Windows/Linux y acta antes de afirmar cierre. No fusionar sin permiso. D07 NO INICIADA.
 - **Nota histórica:** el antiguo estado D05 «sin fusionar» más arriba refleja el estado de redacción anterior al merge del 21-10-2026, no el estado actual de GitHub.

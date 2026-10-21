@@ -15,6 +15,6 @@
 
 ## D06 — Asentamientos ordinarios
 - [Matriz D06](D06_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md): trazabilidad D01–D05, nueve modelos, doce prioridades, seis escenarios sintéticos, pruebas de semillas e invariantes.
-- `validate_d06.py` con `d06_generator.py` y dos JSON de datos operativos. **20 mutaciones negativas de reglas + 20 de escenarios**; rechazan canonicidad automática, Agujas, navegación, aduanas, colocación sin agua y otros saltos de autoridad.
+- `validate_d06.py` con `d06_generator.py` y dos JSON de datos operativos. **20 mutaciones negativas de reglas + 22 de escenarios**; rechazan canonicidad automática, Agujas, navegación, aduanas, colocación sin agua y otros saltos de autoridad.
 - Workflow D01–D06 en Ubuntu 24.04 y Windows 2022. Verificar ejecución real de PR, no afirmar `SUCCESS` por existir el archivo.
 - **Solo laboratorio y validación estática.** CoreRPG/Godot/GIS/persistencia, densidades y localización real quedan pendientes.

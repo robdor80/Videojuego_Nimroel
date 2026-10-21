@@ -28,7 +28,7 @@ Seis escenarios de laboratorio con base probatoria **supuestamente verificada so
 
 **20 mutaciones de reglas:** pérdida de ciudad protegida, Arven sin dueño, Fhalion borrado, quinto sistema falso, permitir Agujas, autoselección espacial, peso fuera de escala, ID de modelo inválido, clase ciudad, edificio automático, quitar requisitos de modelo, suministro como carretera, navegación automática, aduana interna, tala industrial Taramin/Syvaris, runtime fingido, referencia inexistente, duplicar unidad D01 y mina Elyra afirmada por inferencia.
 
-**20 mutaciones de sitio:** falta de agua, acceso, competencia, sostenibilidad, sustento o derechos; prueba de interior Agujas; ciudad, identidad urbana, localidad canónica, topónimo oficial, ruta nueva, puerto nuevo, aduana interna, buque profundo Belara, coordenadas fabricadas, fuente no sintética, evidencia duplicada, zona inexistente o modelo ilegítimo.
+**22 mutaciones de sitio:** falta de agua, acceso, competencia, sostenibilidad, sustento o derechos; prueba de interior Agujas; ciudad, identidad urbana, localidad canónica, topónimo oficial, ruta nueva, puerto nuevo, aduana interna, buque profundo Belara, coordenadas fabricadas, fuente no sintética, evidencia duplicada, zona inexistente o modelo ilegítimo, inyección de geometría por campo no autorizado, y rechazo específico de enclave sin residentes demostrados.
 
 Toda mutación debe fallar y dejar de servir como fixture. CI ejecuta D01, D02, D03, D04, D05 y D06 en Ubuntu y Windows con checkout completo del repositorio.
 
