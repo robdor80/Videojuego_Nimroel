@@ -95,10 +95,10 @@ def validate(data: dict, repo: Path) -> None:
     }, "pretend runtime / generated city")
     check(data["authorialPendingIds"] == ["DAR-P02", "DAR-P04", "DAR-P05",
           "DAR-P08", "DAR-P09", "DAR-P10", "DAR-P11",
-          "DAR-D07-02", "DAR-D07-03"], "authorial pending removed")
-    # Only the AUTHOR-approved conceptual choice B is closed; no physical districts or plans.
+          "DAR-D07-03"], "authorial pending removed")
+    # The two AUTHOR-approved conceptual choices are closed; neither creates layout or infrastructure.
     approvals = data["authorialDecisions"]
-    check(type(approvals) is list and len(approvals) == 1, "approved decisions count")
+    check(type(approvals) is list and len(approvals) == 2, "approved decisions count")
     approval = approvals[0]
     check(set(approval) == {
         "id", "cityId", "choice", "status", "approvingAuthority",
@@ -119,6 +119,24 @@ def validate(data: dict, repo: Path) -> None:
               "district_names", "district_boundaries", "street_plan",
               "placement_of_facilities", "new_buildings_and_accesses"
           ], "Veldora B authorial decision or scope tampered")
+    taramin_approval = approvals[1]
+    check(set(taramin_approval) == set(approval)
+          and taramin_approval["id"] == "DAR-D07-02"
+          and taramin_approval["cityId"] == "taramin"
+          and taramin_approval["choice"] == "A"
+          and taramin_approval["status"] == "APPROVED_CONCEPT_ONLY"
+          and taramin_approval["approvingAuthority"] == "autor"
+          and taramin_approval["approvedConcept"] == "one_principal_fishing_activity_sector"
+          and isinstance(taramin_approval["description"], str)
+          and "Thalen" in taramin_approval["description"]
+          and all(taramin_approval[k] is False for k in [
+              "affectsUrbanLayout", "createsCanonicalDistrictNames",
+              "createsPhysicalRoutes", "createsNewFacilities", "changesPopulation"
+          ])
+          and taramin_approval["pendingDetails"] == [
+              "fishing_sector_location", "thalen_arm_navigability",
+              "land_access_and_bridges", "dock_placement", "fish_handling_facilities"
+          ], "Taramin A authorial decision or scope tampered")
     sources = data["sourceRefs"]
     check(set(sources) == {"treihord", "visual", "visualData", "houses", "rivers", "coasts",
           "forests", "regions", "climate", "fiscal", "navigation", "d00", "d01", "d02",
@@ -281,11 +299,15 @@ def run() -> None:
         ("runtime_claim", lambda x: x["runtimeIntegration"].update(godotValidated=True)),
         ("world_state_claim", lambda x: x["cities"][3].update(worldStateEntityId="instantiated")),
         ("missing_source", lambda x: x["sourceRefs"].update(treihord="Worldbuilding/borrado.md")),
-        ("missing_approval_gate", lambda x: x["authorialPendingIds"].remove("DAR-D07-02")),
+        ("missing_approval_gate", lambda x: x["authorialPendingIds"].remove("DAR-D07-03")),
         ("choice_flip", lambda x: x["authorialDecisions"][0].update(choice="A")),
         ("approve_building", lambda x: x["authorialDecisions"][0].update(createsNewFacilities=True)),
         ("approve_streets", lambda x: x["authorialDecisions"][0].update(affectsUrbanLayout=True)),
         ("decision_dropped", lambda x: x.update(authorialDecisions=[])),
+        ("taramin_choice_flip", lambda x: x["authorialDecisions"][1].update(choice="B")),
+        ("taramin_fake_navigation", lambda x: x["hydro"].update(thalenArmsNavigation=True)),
+        ("taramin_approval_spatialized", lambda x: x["authorialDecisions"][1].update(affectsUrbanLayout=True)),
+        ("taramin_approval_builds_port", lambda x: x["authorialDecisions"][1].update(createsNewFacilities=True)),
         ("duplicate_city", lambda x: x["cities"][3].update(id="veldora")),
     ]
     for name, mutate in mutations:
