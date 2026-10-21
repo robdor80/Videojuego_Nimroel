@@ -38,9 +38,9 @@
 ## D04 — Recursos y economía territorial [DOCUMENTALMENTE CERRADA; PYTHON CI WINDOWS/LINUX OK; PR #20]
 - Oro/plata/minas, fundición y ensayo, carbón importado de Azurios, madera de Pilares, agricultura, pesca/puertos y transportes.
 - Revisar fiscalidad E8, moneda E2, transacciones Core, sin aduanas internas entre Grandes Casas.
-- **Salida D04:** 4 documentos, 12 unidades, 8 cadenas, 19 fuentes y validador Python con 16 negativos; 22 controles JS remotos superados. **21-10-2026: Python D01–D04 STATIC OK tanto en Windows 2022 como Ubuntu 24.04 con checkout íntegro de GitHub Actions (run #39583142837).** No se ha ejecutado físicamente D04 en el MSI; esa repetición es opcional, no condición de cierre estático. Godot/GIS/CoreRPG runtime no ejecutados por D04. PR #20 sujeta a verificación de estado real para merge; no canon nuevo.
+- **Salida D04:** 4 documentos, 12 unidades, 8 cadenas, 19 fuentes y validador Python con 16 negativos; 22 controles JS remotos superados. **21-10-2026: Python D01–D04 STATIC OK tanto en Windows 2022 como Ubuntu 24.04 con checkout íntegro de GitHub Actions (run #39583142837).** No se ha ejecutado físicamente D04 en el MSI; esa repetición es opcional, no condición de cierre estático. Godot/GIS/CoreRPG runtime no ejecutados por D04. PR #20 fusionada el 21-10-2026, commit `d4a07ba25f8560d5005a52aafc763699917f2388`; no canon nuevo.
 
-## D05 — Red de transporte, rutas y comunicaciones [EN DESARROLLO DOCUMENTAL: RAMA D05]
+## D05 — Red de transporte, rutas y comunicaciones [DOCUMENTALMENTE CERRADA; CI WINDOWS/LINUX OK; PR #30 SIN MERGE]
 - Corredores existentes (Veldora–Treihord), transporte mineral/Belara, accesos a Taramin, cabotaje y Syvaris.
 - Caminos, puentes, vados, barcazas, mercantes, barcos pesqueros, mensajería y tiempos derivados por terreno cuando exista escala.
 - **Salida:** grafo modal básico, nodos y restricciones, sin kilómetros/itinerarios ficticios.
@@ -98,7 +98,7 @@
 - **PR:** revisión por autor, **nunca fusionar `main` sin permiso expreso**.
 
 ## Continuidad de conversaciones
-Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **fusionada por PR #15**. Darovan 3: D02 **fusionada en main por PR #16**. Darovan 4: D03 **FUSIONADA PR #17, Python MSI D01–D03 OK**, habiendo leído `00_Control_del_proyecto/TRASPASO_D03.md`. Darovan 5: D04 **documentalmente entregada a PR #20, Python CI Windows/Linux OK (21-10-2026)**. Darovan 6: D05 condicionada a merge D04 y TRASPASO_D05.md. Una fase por conversación. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
+Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **fusionada por PR #15**. Darovan 3: D02 **fusionada en main por PR #16**. Darovan 4: D03 **FUSIONADA PR #17, Python MSI D01–D03 OK**, habiendo leído `00_Control_del_proyecto/TRASPASO_D03.md`. Darovan 5: D04 **fusionada PR #20, Python CI Windows/Linux OK (21-10-2026)**. Darovan 6: D05 **desarrollada y validada estáticamente en PR #30; sin fusionar**, solo tras comprobar el merge D04. Una fase por conversación. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
 
 ## Nota de ejecución D05 (21-10-2026)
-D04 PR #20 fusionada en `main` (`d4a07ba25f8560d5005a52aafc763699917f2388`); D05 rama propia desde ese SHA. Grafo cualitativo con 17 nodos, 3 vínculos físicos apoyados por fuentes y 4 relaciones de suministro **no equivalentes a caminos**. Mensajería MSG trazada, cinco riesgos condicionales, sin cartografía, rutas nuevas, mediciones, correos postales ni runtime. D06 no iniciado. Revisar validación CI y PR antes de declarar cerrada la fase.
+D04 PR #20 fusionada en `main` (`d4a07ba25f8560d5005a52aafc763699917f2388`); D05 rama propia desde ese SHA. Grafo cualitativo con 17 nodos, 3 vínculos físicos apoyados por fuentes y 4 relaciones de suministro **no equivalentes a caminos**. Mensajería MSG trazada, cinco riesgos condicionales, sin cartografía, rutas nuevas, mediciones, correos postales ni runtime. D06 no iniciado. CI real D01–D05 Windows/Linux superada en [run #39587112092](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39587112092) (30 negativos D05), cierre documental de D05 acreditado sin activar canon ni runtime; [acta](Auditorias/D05_CIERRE_Y_VALIDACION_2026-10-21.md). PR #30 precisa aprobación del autor para fusionar.

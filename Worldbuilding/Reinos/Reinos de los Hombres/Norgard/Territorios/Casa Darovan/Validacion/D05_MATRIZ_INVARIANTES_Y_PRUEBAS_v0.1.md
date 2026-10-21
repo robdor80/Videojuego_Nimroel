@@ -28,3 +28,6 @@ El script crea **30 copias mutadas**, desde carretera añadida, ruta rectificada
 
 ## Alcance
 GitHub Actions matriz Ubuntu 24.04 / Windows 2022 ejecutará secuencialmente los validadores D01, D02, D03, D04 y D05 en un checkout completo. **Antes de observar la ejecución real, esta matriz no afirma que Python haya pasado.** No hay pruebas de Godot, CoreRPG live, GIS, MSI físico ni Samsung Tab S9+. Esas pertenecen al desarrollo del motor/D11.
+
+## Evidencia tras ejecución real (21-10-2026)
+En [run #39587112092](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39587112092) los dos jobs Windows 2022 y Ubuntu 24.04 han terminado `success` en D01–D05. Salida D05 real idéntica: `D05 STATIC OK: 17 nodes, 3 attested modal links, 4 non-route supply relations, 23 source paths, 30 negative mutations; NOT RUNTIME`. El acta nueva requiere repetición CI para su propio commit final. Ningún motor ni GIS ejecutado.

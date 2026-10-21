@@ -22,3 +22,6 @@ Metodología `esqueleto → posibilidades → condiciones → pesos regionales �
 Pendientes DAR-P01/P04/P07/P08/P09/P10/P11; nuevos topónimos, límites políticos y asentamientos importantes no se promulgan sin decisión del autor. D07 ciudades/puertos; D08 hogares/servicios/mensajería; D11 rutas reales, embarcaciones, mensajes, stocks, navegación y persistencia. Cualquier mapa métrico, servicio de correos o ruta Azurios se tratará aparte.
 
 **No comenzar D06 en esta conversación.**
+
+## Evidencia de D05 a heredar (21-10-2026)
+PR [#30](https://github.com/robdor80/Videojuego_Nimroel/pull/30) debe estar **fusionada** antes de D06. La CI [#39587112092](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39587112092) ejecutó D01–D05 en Windows/Linux y rechazó **30 mutaciones negativas D05**. Consultar [acta D05](../Auditorias/D05_CIERRE_Y_VALIDACION_2026-10-21.md), y comprobar nuevamente el resultado asociado al último commit y a la fusión; no dar por realizadas pruebas CoreRPG/Godot ni GIS.
