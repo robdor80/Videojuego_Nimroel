@@ -773,7 +773,6 @@
     "DAR-P09",
     "DAR-P10",
     "DAR-P11",
-    "DAR-D07-01",
     "DAR-D07-02",
     "DAR-D07-03"
   ],
@@ -785,5 +784,28 @@
     "persistedCityEntities": 0,
     "materializedRoutes": 0,
     "generatedCities": 0
-  }
+  },
+  "authorialDecisions": [
+    {
+      "id": "DAR-D07-01",
+      "cityId": "veldora",
+      "choice": "B",
+      "status": "APPROVED_CONCEPT_ONLY",
+      "approvingAuthority": "autor",
+      "approvedConcept": "multiple_organic_commercial_sectors",
+      "description": "Varios sectores comerciales, artesanales y residenciales surgidos de crecimiento orgánico; el puerto conserva su función marítima comercial",
+      "affectsUrbanLayout": false,
+      "createsCanonicalDistrictNames": false,
+      "createsPhysicalRoutes": false,
+      "createsNewFacilities": false,
+      "changesPopulation": false,
+      "pendingDetails": [
+        "district_names",
+        "district_boundaries",
+        "street_plan",
+        "placement_of_facilities",
+        "new_buildings_and_accesses"
+      ]
+    }
+  ]
 }
