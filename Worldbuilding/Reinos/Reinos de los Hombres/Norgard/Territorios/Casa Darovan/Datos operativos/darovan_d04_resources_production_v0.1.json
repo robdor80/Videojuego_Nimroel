@@ -717,7 +717,9 @@
       "DAR-P04",
       "DAR-P07",
       "DAR-P08",
-      "DAR-P09"
+      "DAR-P09",
+      "DAR-P10",
+      "DAR-P11"
     ]
   },
   "runtimeIntegration": {
