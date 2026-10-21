@@ -97,7 +97,7 @@ def validate(d: dict, repo: Path) -> None:
     check([r["id"] for r in hydro["rivers"]] == ["belara", "lhera", "veldora", "fhalion", "thalen"]
           and hydro["rivers"][0]["crossesCity"] is False
           and hydro["rivers"][1]["branchesFrom"] == "belara"
-          and hydro["rivers"][3]["terminalArms"] == 2, "D02 source regression")
+          and hydro["rivers"][4]["terminalArms"] == 2, "D02 source regression")
     check(climate["regionalAnchors"]["pilaresOneForest"]
           and climate["regionalAnchors"]["taraminOneForest"]
           and climate["regionalAnchors"]["arvenOwner"] == "casa_darovan", "D03 source regression")

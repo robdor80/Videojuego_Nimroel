@@ -145,7 +145,7 @@ def run() -> None:
         ("belara_desembocadura", lambda x: x["rivers"][0].update(mainCourseMouth="golfo_de_veldora")),
         ("lhera_sin_bifurcacion", lambda x: x["rivers"][1].update(branchesFrom=None)),
         ("veldora_conectada", lambda x: x["rivers"][2].update(independentOf=[])),
-        ("thalen_un_brazo", lambda x: x["rivers"][3].update(terminalArms=1)),
+        ("thalen_un_brazo", lambda x: x["rivers"][4].update(terminalArms=1)),
         ("belara_cruza_treihord", lambda x: x["rivers"][0].update(crossesCity=True)),
         ("arven_owner_erased", lambda x: x["cityProtection"].update(arvenIslandOwner=None)),
         ("fhalion_mouth_invented", lambda x: x["rivers"][3].update(mainCourseMouth="golfo_de_norgard")),

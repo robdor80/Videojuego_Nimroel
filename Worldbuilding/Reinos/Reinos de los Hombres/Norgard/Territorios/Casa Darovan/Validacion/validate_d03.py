@@ -99,7 +99,7 @@ def validate(d: dict, repo: Path) -> None:
     check(hydro["rivers"][0]["crossesCity"] is False
           and hydro["rivers"][1]["branchesFrom"] == "belara"
           and set(hydro["rivers"][2]["independentOf"]) == {"belara", "lhera"}
-          and hydro["rivers"][3]["terminalArms"] == 2, "D02 regression")
+          and hydro["rivers"][4]["terminalArms"] == 2, "D02 regression")
     run = d["runtimeIntegration"]
     check(run["status"] == "not_implemented" and run["validatedInGame"] is False
           and run["generatedClimateCells"] == 0

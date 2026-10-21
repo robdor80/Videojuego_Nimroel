@@ -59,7 +59,7 @@ def validate(d: dict, repo: Path) -> None:
     check([x["id"] for x in hydro["rivers"]] == ["belara", "lhera", "veldora", "fhalion", "thalen"]
           and hydro["rivers"][0]["crossesCity"] is False
           and hydro["rivers"][1]["branchesFrom"] == "belara"
-          and hydro["rivers"][3]["terminalArms"] == 2, "D02 hydro")
+          and hydro["rivers"][4]["terminalArms"] == 2, "D02 hydro")
     check(economy["resourceSourceProtection"]["treihordCoalSource"] == "montes_azurios"
           and economy["resourceSourceProtection"]["pilaresTimberSuppliesValkramMines"] is True
           and economy["geographyProtection"]["arvenOwner"] == "casa_darovan"
