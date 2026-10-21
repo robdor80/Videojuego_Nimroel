@@ -10,7 +10,7 @@
 | D04 | Recursos y producción | **FUSIONADA EN MAIN**, PR #20, commit d4a07ba25f8560d5005a52aafc763699917f2388; CI D01–D04 Windows/Linux OK; no runtime | Darovan 5 |
 | D05 | Movilidad y comunicaciones | **DOCUMENTALMENTE CERRADA Y CI ESTÁTICA WINDOWS/LINUX OK**; PR #30 en revisión, SIN FUSIONAR; no canon nuevo ni runtime, merge exige autor | Darovan 6 |
 | D06 | Asentamientos ordinarios y diseño procedural | DOCUMENTACIÓN / CI D01–D06 WINDOWS+LINUX SUPERADA en primer run #39627654566; PR Draft #31 sin fusionar; no runtime | Darovan 7 |
-| D07 | Ciudades canónicas | NO INICIADA | Darovan 8 |
+| D07 | Ciudades canónicas | **EN REVISIÓN — rama exclusiva, PR Draft pendiente de auditoría CI/autor; NO FUSIONADA** | Darovan 8 |
 | D08 | Población y servicios | NO INICIADA | Darovan 9 |
 | D09 | Administración y defensa | NO INICIADA | Darovan 10 |
 | D10 | Cultura y sociedad | NO INICIADA | Darovan 11 |
@@ -41,3 +41,15 @@ Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o
 - D06 prepara reglas y simulaciones `TEST_ONLY` con nueve modelos, doce unidades D01, esqueleto obligatorio, pesos relativos no demográficos, validador Python y 42 negativos. Sin nuevos topónimos ni asentamientos canónicos.
 - D06 rama `feat/darovan-d06-asentamientos-ordinarios` y PR Draft propia; comprobar CI Windows/Linux y acta antes de afirmar cierre. No fusionar sin permiso. D07 NO INICIADA.
 - **Nota histórica:** el antiguo estado D05 «sin fusionar» más arriba refleja el estado de redacción anterior al merge del 21-10-2026, no el estado actual de GitHub.
+
+## Inicio D07 confirmado — 21-10-2026
+- D06 PR #31 **fusionada** en main mediante e2636f33791b11ec6ad2e478df95ab190de0f09e. GitHub Actions post-merge #39628590145 completada en verde Windows/Linux; las afirmaciones antiguas «D06 sin fusionar» de arriba son históricas.
+- Nueva rama exclusiva feat/darovan-d07-ciudades-canonicas, desde ese commit. Canon Treihord cerrado conservado; tres perfiles de ciudad con propuestas urbanas aún no aprobadas.
+- D07 añade auditorías, matriz de hechos y fuente, JSON de planificación con UNKNOWN, 9 capas conceptuales PROPOSAL_PENDING_AUTHOR, validador y CI D01–D07. No runtime ni demografía D08.
+- **No merge automático ni D08.** Los enfoques pendientes de aprobación son DAR-D07-01/02/03. CI de HEAD D07 se registrará al finalizar; no presumir éxito de un run previo.
+
+## Actualización D07 — Resolución autoral 02 (21-10-2026)
+Veldora DAR-D07-01 B y Taramin DAR-D07-02 A aprobadas **solo a nivel conceptual**. Taramin organiza su actividad pesquera alrededor de una zona principal sin fijar ubicación, accesos, navegación ni infraestructura. Queda pendiente DAR-D07-03 Syvaris. Se mantiene la PR #32 como Draft, sin fusionar ni iniciar D08.
+
+## D07 — Cierre de las tres decisiones urbanas conceptuales (21/10/2026)
+El autor aprobó DAR-D07-01 Veldora **B** (varios sectores comerciales orgánicos); DAR-D07-02 Taramin **A** (una zona pesquera principal); y DAR-D07-03 Syvaris **A** (actividad urbana principal concentrada alrededor de la bahía protegida). Son decisiones de orientación funcional, **sin aprobación de trazados, barrios, puertos o edificios concretos**. Las incertidumbres geográficas y demográficas continúan sin inventar. PR #32 preparada para revisión, sigue Draft y no fusionada; D08 no comenzada.

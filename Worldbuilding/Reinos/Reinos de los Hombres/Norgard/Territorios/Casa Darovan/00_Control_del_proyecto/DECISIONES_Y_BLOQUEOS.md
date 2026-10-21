@@ -69,3 +69,29 @@ Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o
 - **D06 no legisla canon:** los modelos, pesos 0–4, clases, edificios posibles, nombres de slots de prueba y semillas son únicamente propuestas técnicas. No hay emplazamientos específicos acreditados. El canon ya menciona aldeas en Arven/Pilares/Taramin, sin que D06 les asigne instancias.
 - Treihord, Veldora, Taramin y Syvaris siguen fuera del generador. No hay población permanente en Bosque de las Agujas. Ninguna ruta D04/D05 de suministro se materializa como camino.
 - Las decisiones sobre nuevos nombres, enclaves oficiales, fronteras, personas importantes e instituciones corresponden al autor y quedan fuera de D06.
+
+## D07 — Tres decisiones conceptuales aprobadas (21-10-2026)
+**No constituyen canon.** Los campos JSON etiquetados PROPOSAL_PENDING_AUTHOR no son decretos, barrios reales, emplazamientos ni prueba cartográfica. Treihord queda estrictamente excluida de rediseño.
+
+| ID | Pregunta al autor | Alternativas para valorar | Recomendación técnica, NO aprobada |
+|---|---|---|---|
+| **DAR-D07-01 — RESUELTA: B** | ¿Cómo expresar la estructura urbana comercial de Veldora? | **B aprobada por el autor: varios sectores comerciales y artesanales orgánicos**, con puerto comercial como referencia | Aprobación de concepto general, no de trazado, nombres, límites ni nuevos edificios |
+| **DAR-D07-02 — RESUELTA: A** | ¿Qué organización pesquera de Taramin es compatible con el interfluvio? | **A aprobada por el autor: una zona pesquera principal** | Solo criterio de concentración funcional; posición, navegación, acceso y muelles no aprobados |
+| **DAR-D07-03 — RESUELTA: A** | ¿Qué grado de concentración urbana desea el autor en Syvaris? | **A aprobada por el autor: actividad urbana principal en torno a bahía resguardada** | Sin trazado, localizaciones de edificios o nuevos puertos en calas |
+
+En los tres casos la aprobación de un criterio conceptual NO autoriza por sí sola edificios singulares, puentes, muelles nuevos, mapas, personajes, calles, nombres de barrios, instituciones o actividades no respaldadas. La materialización requiere alcance y fuentes definidos por el autor. Pendientes DAR-P02/P04/P05/P08 (parcial)/P09/P10/P11 sin modificación. DAR-P01 y P07 siguen resueltos y no se reabren. D08 y D11 son fases futuras.
+
+### Resolución expresa DAR-D07-01 — Veldora
+**Autor, 21/10/2026:** «Decisión 1 de D07: elijo la opción B para Veldora».
+**APROBADO (solo concepto):** varios sectores comerciales, artesanales y residenciales, surgidos de crecimiento orgánico, sin reducir la ciudad a un único núcleo de comercio. Continúa vigente el canon preexistente de puerto principal, aduana exterior, almacenes, gremios, viviendas mixtas y zonas acomodadas alejadas de muelles.
+**NO aprobado:** nomenclatura/número exacto de barrios, división urbana, calles, trazado, rutas, puentes, muelles nuevos, establecimientos singulares, personajes, habitantes, hogares ni servicios D08. En el índice operativo figura como `APPROVED_CONCEPT_ONLY`, sin `authorApprovedNewLayout`.
+**Aún pendientes:** DAR-D07-02 (Taramin) y DAR-D07-03 (Syvaris). No actualizar `main` ni fusionar PR Draft sin autorización.
+
+## Resolución del autor D07-01 — 21/10/2026
+El autor elige B para Veldora: varios sectores comerciales orgánicos. Aprobación exclusivamente conceptual, sin calles, barrios, nuevos edificios, rutas ni cartografía definitiva. DAR-D07-02 Taramin y DAR-D07-03 Syvaris siguen pendientes.
+
+## Resolución expresa DAR-D07-02 — Taramin (21/10/2026)
+El autor declara: «Decisión 2 de D07: elijo la opción A para Taramin». Queda **APROBADA SOLO COMO CONCEPTO** una zona pesquera principal para concentrar la mayor parte de la faena y descarga. Sin determinación de su ubicación, número de muelles, navegación de los brazos del Thalen, puentes, caminos, edificios o población. No se crean instancias CoreRPG/Godot y no se transforma ninguna capa PROPOSAL en canon. Permanecen pendientes DAR-D07-03 Syvaris y las aprobaciones espaciales futuras. D08 no comenzada; PR #32 mantiene estado Draft.
+
+## Resolución expresa DAR-D07-03 — Syvaris (21/10/2026)
+El autor confirma: «Decisión 3 de D07: elijo la opción A para Syvaris». **APROBADO SOLO COMO CONCEPTO:** concentrar la actividad urbana principal, comercial, pesquera y naval de Syvaris alrededor de su bahía protegida. Se mantiene la presencia naval de Norgard (no armada de Darovan), las calas menores sin funciones portuarias nuevas, y la variedad climática de la isla. No se han aprobado barrios, callejero, nuevos puertos, infraestructura, rutas, medidas ni población. `DAR-D07-01 B / DAR-D07-02 A / DAR-D07-03 A` quedan cerradas a nivel conceptual; siguen abiertas las decisiones cartográficas y de detalle en su fase competente. D08 NO iniciada. PR #32 DRAFT, SIN FUSIONAR.
