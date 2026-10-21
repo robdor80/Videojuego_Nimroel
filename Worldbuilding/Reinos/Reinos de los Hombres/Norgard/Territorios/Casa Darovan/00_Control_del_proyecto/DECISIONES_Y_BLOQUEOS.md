@@ -76,7 +76,7 @@ Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o
 | ID | Pregunta al autor | Alternativas para valorar | Recomendación técnica, NO aprobada |
 |---|---|---|---|
 | **DAR-D07-01 — RESUELTA: B** | ¿Cómo expresar la estructura urbana comercial de Veldora? | **B aprobada por el autor: varios sectores comerciales y artesanales orgánicos**, con puerto comercial como referencia | Aprobación de concepto general, no de trazado, nombres, límites ni nuevos edificios |
-| **DAR-D07-02** | ¿Qué organización pesquera de Taramin es compatible con el interfluvio? | A: un frente principal cuya posición exige evidencia; B: varios espacios especializados solo si agua/accesos lo permiten | No decidir posición ni cantidad hasta conocer accesibilidad y navegabilidad real de los brazos Thalen |
+| **DAR-D07-02 — RESUELTA: A** | ¿Qué organización pesquera de Taramin es compatible con el interfluvio? | **A aprobada por el autor: una zona pesquera principal** | Solo criterio de concentración funcional; posición, navegación, acceso y muelles no aprobados |
 | **DAR-D07-03** | ¿Qué grado de concentración urbana desea el autor en Syvaris? | A: actividad principal relacionada con bahía canónica; B: actividad más distribuida, sin atribuir puertos a calas | Priorizar conceptualización en bahía principal y diversidad climática, manteniendo calas sin función nueva |
 
 En los tres casos la aprobación de un criterio conceptual NO autoriza por sí sola edificios singulares, puentes, muelles nuevos, mapas, personajes, calles, nombres de barrios, instituciones o actividades no respaldadas. La materialización requiere alcance y fuentes definidos por el autor. Pendientes DAR-P02/P04/P05/P08 (parcial)/P09/P10/P11 sin modificación. DAR-P01 y P07 siguen resueltos y no se reabren. D08 y D11 son fases futuras.
@@ -89,3 +89,6 @@ En los tres casos la aprobación de un criterio conceptual NO autoriza por sí s
 
 ## Resolución del autor D07-01 — 21/10/2026
 El autor elige B para Veldora: varios sectores comerciales orgánicos. Aprobación exclusivamente conceptual, sin calles, barrios, nuevos edificios, rutas ni cartografía definitiva. DAR-D07-02 Taramin y DAR-D07-03 Syvaris siguen pendientes.
+
+## Resolución expresa DAR-D07-02 — Taramin (21/10/2026)
+El autor declara: «Decisión 2 de D07: elijo la opción A para Taramin». Queda **APROBADA SOLO COMO CONCEPTO** una zona pesquera principal para concentrar la mayor parte de la faena y descarga. Sin determinación de su ubicación, número de muelles, navegación de los brazos del Thalen, puentes, caminos, edificios o población. No se crean instancias CoreRPG/Godot y no se transforma ninguna capa PROPOSAL en canon. Permanecen pendientes DAR-D07-03 Syvaris y las aprobaciones espaciales futuras. D08 no comenzada; PR #32 mantiene estado Draft.
