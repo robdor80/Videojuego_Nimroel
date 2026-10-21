@@ -21,3 +21,6 @@ DAR-P02, P04, P05, P08 parcial, P09, P10, P11; urbanismo decisorio de Veldora, T
 
 ## Anexo autoral D07 — 21/10/2026
 DAR-D07-01 Veldora B (varios sectores comerciales orgánicos) y DAR-D07-02 Taramin A (una zona pesquera principal) aprobadas **solo como criterios conceptuales**. No asignan geometría, calles, accesos, puertos, demografía o instalaciones. DAR-D07-03 Syvaris continúa pendiente. No iniciar D08 mientras no exista cierre autorizado de D07.
+
+## Adenda de aprobaciones conceptuales D07 — 21/10/2026
+**Las tres decisiones iniciales están cerradas:** Veldora B (varios sectores comerciales orgánicos), Taramin A (zona pesquera principal) y Syvaris A (ciudad concentrada funcionalmente en torno a bahía principal). Cada una tiene estado `APPROVED_CONCEPT_ONLY`. Ninguna aprueba vías, fronteras de barrios, muelles nuevos, calas con puerto, navegación de brazos del Thalen, geometrías, NPC, demografía o establecimientos singulares. La mención histórica de decisiones urbanas abiertas en secciones anteriores corresponde al estado previo; siguen UNKNOWN las cuestiones cartográficas y los detalles de los asentamientos. **Este traspaso prepara D08, no la inicia.** La PR #32 permanece Draft hasta autorización humana de fusión.
