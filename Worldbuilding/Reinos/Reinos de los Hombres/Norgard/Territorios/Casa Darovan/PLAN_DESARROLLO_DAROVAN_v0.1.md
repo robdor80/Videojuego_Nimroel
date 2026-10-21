@@ -29,16 +29,16 @@
 - Zonas de inundación, estacionalidad, vados, navegabilidad y recursos hídricos sin caudales inventados.
 - **Salida D02 (15-10-2026):** 4 ríos, 3 sistemas topológicos, 13 nodos, 10 aristas; cuencas cualitativas, perfil JSON no-runtime, reglas, validador y acta. Sin afluentes, caudales, medidas ni geometría inventados; PR propia para revisión y sin merge.
 
-## D03 — Climas y ecosistemas [CERRADA DOCUMENTALMENTE; PR A REVISIÓN SIN FUSIONAR]
+## D03 — Climas y ecosistemas [FUSIONADA EN MAIN, PR #17]
 - Clima del litoral Veldora, Valkram, transición fría norte, península Taramin y Syvaris; microclimas y suelos.
 - Evitar falsa homogeneidad: costa atlántica, altura, sotavento, valle, corredor seco y protegido.
 - **Salida D03 (15-10-2026):** 3 documentos climáticos/ecológicos, 12 unidades D01 trazadas, JSON de planificación NO RUNTIME, 30 invariantes, script de regresión, acta y traspaso D04; sin grados, lluvias, cumbres, especies o ríos nuevos.
-- **Estado de pruebas:** validación JavaScript remota sobre perfil, fuentes e interfaces D01/D02; script Python para checkout completo PENDIENTE — MSI, Godot PENDIENTE — GODOT. Ningún canon nuevo ni runtime.
+- **Estado vigente:** validadores Python D01/D02/D03 superados por el autor en MSI checkout completo 15-10-2026; PR #17 fusionada squash 191bcd5. Godot/GIS siguen pendientes; NO RUNTIME.
 
-## D04 — Recursos y economía territorial [PENDIENTE]
+## D04 — Recursos y economía territorial [DOCUMENTALMENTE CERRADA; PYTHON CI WINDOWS/LINUX OK; PR #20]
 - Oro/plata/minas, fundición y ensayo, carbón importado de Azurios, madera de Pilares, agricultura, pesca/puertos y transportes.
 - Revisar fiscalidad E8, moneda E2, transacciones Core, sin aduanas internas entre Grandes Casas.
-- **Salida:** cadenas productivas y abastecimiento, almacenaje, reservas, trazabilidad, riesgos.
+- **Salida D04:** 4 documentos, 12 unidades, 8 cadenas, 19 fuentes y validador Python con 16 negativos; 22 controles JS remotos superados. **21-10-2026: Python D01–D04 STATIC OK tanto en Windows 2022 como Ubuntu 24.04 con checkout íntegro de GitHub Actions (run #39583142837).** No se ha ejecutado físicamente D04 en el MSI; esa repetición es opcional, no condición de cierre estático. Godot/GIS/CoreRPG runtime no ejecutados por D04. PR #20 sujeta a verificación de estado real para merge; no canon nuevo.
 
 ## D05 — Red de transporte, rutas y comunicaciones [PENDIENTE]
 - Corredores existentes (Veldora–Treihord), transporte mineral/Belara, accesos a Taramin, cabotaje y Syvaris.
@@ -98,4 +98,4 @@
 - **PR:** revisión por autor, **nunca fusionar `main` sin permiso expreso**.
 
 ## Continuidad de conversaciones
-Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **fusionada por PR #15**. Darovan 3: D02 **fusionada en main por PR #16**. Darovan 4: D03 **documentalmente cerrada, PR sin merge**, habiendo leído `00_Control_del_proyecto/TRASPASO_D03.md`. Darovan 5: D04 condicionada a merge D03 y TRASPASO_D04.md. Una fase por conversación. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
+Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **fusionada por PR #15**. Darovan 3: D02 **fusionada en main por PR #16**. Darovan 4: D03 **FUSIONADA PR #17, Python MSI D01–D03 OK**, habiendo leído `00_Control_del_proyecto/TRASPASO_D03.md`. Darovan 5: D04 **documentalmente entregada a PR #20, Python CI Windows/Linux OK (21-10-2026)**. Darovan 6: D05 condicionada a merge D04 y TRASPASO_D05.md. Una fase por conversación. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.

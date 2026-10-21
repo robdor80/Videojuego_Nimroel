@@ -1,6 +1,6 @@
 # Darovan 5 — Traspaso a D04 (Recursos y producción)
 
-**D04 NO INICIADA.** D03 cerrada documentalmente en PR propia, pendiente de aprobación/merge del autor. **No abrir D04 desde main si D03 aún no está fusionada.** El acta final de D03 y el registro de fases prevalecen sobre este documento provisional de continuidad.
+**TRASPASO D03 → D04 EJECUTADO.** D03 fusionada PR #17 (squash 191bcd5); D04 creada desde main df43be5 y publicada en PR #20. D01–D03 Python superados en MSI sobre checkout completo. Los apartados siguientes son instrucciones históricas de entrada a D04, no tareas pendientes; continuar por TRASPASO_D05.md.
 
 ## Puerta de entrada
 1. Verificar en GitHub D03 merged=true y HEAD main; leer registro de fases, decisiones/bloqueos, protocolo PR y acta D03.
@@ -25,6 +25,6 @@ Esquemas cualitativos de cadenas de extracción-transformación-consumo-almacena
 - **DAR-P08:** ubicación bifurcación Belara/Lhera respecto de Treihord; cabeceras de Veldora/Thalen; caudales, divisorias, régimen y trazados UNKNOWN.
 - **DAR-P09 (D03):** parámetros por región de precipitación, nieve, estación, viento, suelo y capacidad de recarga, así como riesgos verificables, pendientes de documentación/aprobación. No bloquear economía descriptiva por falta de cifras.
 - Dependencias D05 transporte, D07 ciudades y D11 runtime; conservar identidad/geometría una vez materializadas.
-- Test reproducible Python D01/D02/D03 **PENDIENTE — MSI** si no se ha ejecutado en checkout completo; pruebas numéricas de terreno **PENDIENTE — GODOT/MSI/GIS**.
+- Test reproducible Python D01/D02/D03 **SUPERADO — MSI 15-10-2026** sobre checkout completo; pruebas numéricas de terreno **PENDIENTE — GODOT/MSI/GIS**.
 
-**Se respeta Core → Norgard Defaults → Casa Darovan → Localidad → World State. No elevar inferencias a canon sin el autor. D04 no arrancada ni autorizada en esta conversación.**
+**Se respeta Core → Norgard Defaults → Casa Darovan → Localidad → World State. No elevar inferencias a canon sin el autor. D04 autorizada y ejecutada documentalmente en Darovan 5; PR #20 no fusionada. D05 NO iniciada.**

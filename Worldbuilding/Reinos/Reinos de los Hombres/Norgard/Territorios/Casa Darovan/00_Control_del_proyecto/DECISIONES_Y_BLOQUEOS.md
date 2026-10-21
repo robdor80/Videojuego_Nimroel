@@ -36,3 +36,9 @@ No resolver ambigüedades creando canon propio.
 - **DAR-P01/P04/P07/P08 permanecen abiertos:** Arven sin dueño administrativo, altimetría y límites desconocidos, cauce visual detrás de Veldora por resolver, bifurcación Belara/Lhera y cabeceras/caudales por localizar. Ninguno se inventa en D03.
 - **Protección ecológica:** Agujas sin asentamientos permanentes interiores; Pilares y Taramin son bosques únicos en sus respectivas transiciones; Syvaris bosquetes discontinuos, región cálida parcialmente seca y sectores resguardados verdes.
 - **D03 en rama exclusiva:** documentos de Clima_local y JSON NO RUNTIME; pruebas estáticas JavaScript efectuadas, validador Python aportado sin ejecución en checkout completo; D04 NO iniciada.
+
+## Seguimiento D04 — 15-10-2026 (no nuevo canon)
+- **DAR-P10 (nuevo, aprobación de autor):** localización/identidad de explotaciones minerales concretas, eventual minería Darovan en Elyra, parcelas madereras, cultivos, ganado, nuevos propietarios y acuerdos económicos aún no acreditados. Una riqueza regional no prueba una mina individual.
+- **DAR-P11 (nuevo, dependencias técnicas D05/D07/D08/D11):** itinerario y nodos del carbón Azurios→Treihord, existencias/capacidades, accesos Belara, métodos y quotas de pesca, almacenamiento y disponibilidad de agua; no inventar magnitudes ni tiempos.
+- **DAR-P01/P04/P07/P08/P09:** Arven UNKNOWN, límites/cotas desconocidos, río visual Veldora no identificado, drenaje detallado y clima/suelos no medidos.
+- **Evidencia:** PR #17 fusionada en `191bcd5`; D01–D03 Python MSI superados. D04 rama desde `df43be5`, PR #20 a revisión; 22 controles JS remotos OK y 16 negativos rechazados. Python D04 sobre checkout completo PENDIENTE MSI. No se ha modificado canon.
