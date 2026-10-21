@@ -1,5 +1,5 @@
 # Territorio de Casa Darovan — índice de desarrollo
-**Estado:** D00–D02 integradas en main (PR #14, #15 y #16). D03 cerrada documentalmente, PR propia para revisión, **SIN FUSIONAR**. La documentación D01 es NO CANÓNICA y no activa el motor. La documentación de trabajo **NO eleva a canon**.
+**Estado comprobado 21-10-2026:** D00–D03 integradas en main (PR #14–#17). D04 cerrada documentalmente y validada con Python en GitHub Actions Windows/Linux; PR #20 para integración. La documentación D01 es NO CANÓNICA y no activa el motor. La documentación de trabajo **NO eleva a canon**.
 **Sede administrativa:** Treihord. **Ámbito:** occidente de Norgard, incluida la isla de Syvaris.
 
 ## Fuentes de autoridad (no duplicarlas)
@@ -55,10 +55,10 @@ La presencia de una carpeta **no** significa que su fase haya empezado o finaliz
 - [JSON D02](Datos%20operativos/darovan_d02_hydro_network_v0.1.json), [matriz](Validacion/D02_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md), [validador Python](Validacion/validate_d02.py), [acta](Auditorias/D02_CIERRE_Y_VALIDACION_2026-10-15.md) y [traspaso D03](00_Control_del_proyecto/TRASPASO_D03.md).
 - **No** hay ríos menores inventados, cuencas métricas, caudales, nuevos asentamientos, geometría ni validación del motor. D03 documentada después de la fusión de D02, sin canon nuevo.
 
-## Darovan 4 — D03: clima y ecosistemas (PR para revisión, SIN MERGE)
+## Darovan 4 — D03: clima y ecosistemas (PR #17 fusionada)
 - [Gradientes](Clima_local/01_gradientes_climaticos_regionales_v0.1.md), [ecosistemas](Clima_local/02_ecosistemas_suelos_y_microclimas_v0.1.md) y [agua y riesgos](Clima_local/03_clima_agua_riesgos_y_d04_v0.1.md).
 - [Perfil JSON NO RUNTIME](Datos%20operativos/darovan_d03_climate_ecosystems_v0.1.json), [matriz D03](Validacion/D03_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md), [validador](Validacion/validate_d03.py), [acta](Auditorias/D03_CIERRE_Y_VALIDACION_2026-10-15.md) y [TRASPASO D04](00_Control_del_proyecto/TRASPASO_D04.md).
-- D03 no crea temperaturas, precipitaciones, especies, cauces, límites ni biomas jugables. D04 no iniciada.
+- D03 no crea temperaturas, precipitaciones, especies, cauces, límites ni biomas jugables. D04 se inició tras fusión de PR #17.
 
-## D04 — estado 15-10-2026
-D01–D03 integradas en main y Python MSI superado. D04: rama `feat/darovan-d04-recursos-produccion`, PR #20 para revisión (no fusionar automáticamente), sin canon nuevo ni runtime. Ver `Recursos_y_produccion/`, `Economia_y_abastecimiento/`, acta D04 y TRASPASO_D05.md.
+## D04 — entrega validada el 21-10-2026
+D01–D03 integradas en main, Python MSI superado previamente. D04: rama `feat/darovan-d04-recursos-produccion`, PR #20; Python D01–D04 **STATIC OK** en GitHub Actions sobre checkout íntegro **Windows y Linux**, incluidos 16 casos negativos D04. [Acta de validación CI](Auditorias/D04_VALIDACION_CI_Y_CIERRE_2026-10-21.md). La fusión se comprueba por estado real de PR #20, sin presumirla al redactar esta entrega. **No canon nuevo ni runtime**. D05 no iniciada; leer `00_Control_del_proyecto/TRASPASO_D05.md`.

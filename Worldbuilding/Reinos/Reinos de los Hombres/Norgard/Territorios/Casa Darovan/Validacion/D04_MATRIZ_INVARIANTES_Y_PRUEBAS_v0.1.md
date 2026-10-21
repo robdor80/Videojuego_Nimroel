@@ -1,5 +1,5 @@
 # D04 — Matriz de invariantes y pruebas (v0.1)
-**NO CANON NUEVO, NO RUNTIME.** 36 controles de diseño agrupados a continuación; 22 comprobaciones JS remotas ejecutadas; Python D04 PENDIENTE MSI.
+**NO CANON NUEVO, NO RUNTIME.** 36 controles de diseño agrupados a continuación; 22 comprobaciones JS remotas ejecutadas; **Python D01–D04 ejecutado con éxito en CI Windows/Linux 21-10-2026** (checkout íntegro; D04 no ejecutado en MSI físico).
 
 | Controles | Regla |
 |---|---|
@@ -20,4 +20,4 @@
 ```cmd
 python "Worldbuilding\Reinos\Reinos de los Hombres\Norgard\Territorios\Casa Darovan\Validacion\validate_d01.py" && python "Worldbuilding\Reinos\Reinos de los Hombres\Norgard\Territorios\Casa Darovan\Validacion\validate_d02.py" && python "Worldbuilding\Reinos\Reinos de los Hombres\Norgard\Territorios\Casa Darovan\Validacion\validate_d03.py" && python "Worldbuilding\Reinos\Reinos de los Hombres\Norgard\Territorios\Casa Darovan\Validacion\validate_d04.py"
 ```
-**Salida esperada solo si realmente se ejecuta:** `D04 STATIC OK: 12 zones, 8 chains, 19 sources, 16 negative tests; NOT RUNTIME`. No declarar que Python o Godot corrieron basándose en JS.
+**Salida REAL obtenida en GitHub Actions (21-10-2026), ambos SO:** `D04 STATIC OK: 12 zones, 8 chains, 19 sources, 16 negative tests; NOT RUNTIME`. Evidencia: [run #39583142837](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39583142837). El CMD anterior queda disponible como repetición opcional en MSI. **Ninguna prueba CI acredita ejecución física MSI ni runtime Godot/CoreRPG.**
