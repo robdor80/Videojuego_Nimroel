@@ -258,13 +258,13 @@
     {
       "id": "d05_arven_context",
       "type": "geographic_context_only",
-      "label": "Isla de Arven (jurisdicción UNKNOWN)",
+      "label": "Isla de Arven (Casa Darovan; ruta desconocida)",
       "provenance": "AUTHORED",
       "sourceRefIds": [
         "coasts",
         "forests"
       ],
-      "administrativeOwner": null,
+      "administrativeOwner": "casa_darovan",
       "coordinates": null,
       "geometry": null
     },
@@ -485,6 +485,7 @@
     "separatedWaters": [
       "belara_lhera",
       "veldora",
+      "fhalion",
       "thalen"
     ],
     "thalenUniqueRiver": true,
@@ -495,12 +496,15 @@
     "belaraAdjacentToTreihord": true,
     "belaraCrossesTreihord": false,
     "syvarisRequiresWaterTravelToLeaveIsland": "DERIVED_not_specific_route",
-    "arvenJurisdiction": null,
+    "arvenJurisdiction": "casa_darovan",
     "arvenHasDarovanRoute": false,
     "crossGreatHouseCustomsOnlyBecauseBoundary": false,
     "navigableFromKnownPortToOtherNamedPort": null,
     "genericRoadNetworkAvailability": null,
-    "unknownWaypointsAllowedAsCanon": false
+    "unknownWaypointsAllowedAsCanon": false,
+    "fhalionNamedMinorRiver": true,
+    "fhalionRiverNavigability": null,
+    "fhalionCoastalOutletExact": null
   },
   "communicationEvidence": [
     {
@@ -623,26 +627,14 @@
   ],
   "unknowns": [
     {
-      "id": "DAR-P01",
-      "topic": "arven_formal_jurisdiction_and_trade_rights",
-      "provenance": "UNKNOWN",
-      "materialized": false
-    },
-    {
       "id": "DAR-P04",
       "topic": "map_scale_borders_bridges_passes_fords_distances",
       "provenance": "UNKNOWN",
       "materialized": false
     },
     {
-      "id": "DAR-P07",
-      "topic": "visual_river_behind_veldora_not_identified",
-      "provenance": "UNKNOWN",
-      "materialized": false
-    },
-    {
       "id": "DAR-P08",
-      "topic": "belara_lhera_split_relative_order_thalen_hydrology",
+      "topic": "belara_lhera_split_metric_nacimientos_and_fhalion_mouth_unknown",
       "provenance": "UNKNOWN",
       "materialized": false
     },
@@ -669,9 +661,7 @@
     "authorApprovalRequiredForNewNamedRoutes": true,
     "newCanonApproved": false,
     "pendingAuthor": [
-      "DAR-P01",
       "DAR-P04",
-      "DAR-P07",
       "DAR-P08",
       "DAR-P09",
       "DAR-P10",
@@ -687,5 +677,12 @@
     "cargoMoved": false,
     "boatsSpawned": 0,
     "coordinatesMaterialized": 0
+  },
+  "authorialCorrection20261021": {
+    "darP01": "resolved",
+    "darP07": "resolved",
+    "darP08": "partial_fhalion_named",
+    "remainingGeometry": "UNKNOWN",
+    "noNewRoutes": true
   }
 }

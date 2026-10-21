@@ -231,8 +231,8 @@
       "id": "d01_arven_contexto",
       "classification": "qualitative_study_unit_not_polygon",
       "contextTags": [
-        "arven_owner_unknown",
-        "context_only_no_darovan_tax"
+        "arven_darovan_confirmed",
+        "no_trade_route_implied"
       ],
       "newExtractiveSites": null,
       "agriculturalYield": null,
@@ -607,7 +607,7 @@
     "syvarisForestDiscontinuous": true,
     "syvarisIntensiveForestryAllowed": false,
     "lindeMajorIndustrialLoggingAuthored": false,
-    "arvenAdministrativeOwner": null
+    "arvenAdministrativeOwner": "casa_darovan"
   },
   "geographyProtection": {
     "manualCities": [
@@ -617,7 +617,7 @@
       "syvaris"
     ],
     "excludedCity": "karsath",
-    "arvenOwner": null,
+    "arvenOwner": "casa_darovan",
     "belaraAdjacentCity": "treihord",
     "belaraCrossesCity": false,
     "belaraNavigation": "industrial_shallow_draft_only",
@@ -629,7 +629,15 @@
     "thalenTerminalArms": 2,
     "thalenCityBetween": "taramin",
     "thalenPerennialStatus": "UNKNOWN",
-    "newMinorRivers": false
+    "newMinorRivers": false,
+    "namedRivers": [
+      "belara",
+      "lhera",
+      "veldora",
+      "fhalion",
+      "thalen"
+    ],
+    "fhalionMouthNamed": false
   },
   "resourceSourceProtection": {
     "treihordCoalSource": "montes_azurios",
@@ -713,9 +721,7 @@
   "approvals": {
     "newCanonApproved": false,
     "pendingAuthor": [
-      "DAR-P01",
       "DAR-P04",
-      "DAR-P07",
       "DAR-P08",
       "DAR-P09",
       "DAR-P10",
@@ -729,5 +735,6 @@
     "generatedProductionEntities": 0,
     "executedTransactions": 0,
     "persistedStockLedger": false
-  }
+  },
+  "authorialCorrection20261021": "Canon corregido tras D04, sin nuevas fuentes de producción, rutas ni puertos"
 }
