@@ -51,7 +51,7 @@
 - Diferenciar distribución espacial, servicios y límites logísticos de rangos Valrik.
 - **Salida:** modelos Darovan verificables y datos no canónicos de prueba.
 
-## D07 — Las ciudades canónicas [PENDIENTE]
+## D07 — Las ciudades canónicas [FUSIONADA EN MAIN, PR #32]
 - **Treihord:** extracción de referencias, necesidades operativas, validación con canon vigente **sin rediseñar**; cartografía técnica solo cuando proceda.
 - **Veldora:** auditoría previa de su perfil aprobado y diseño manual puerto comercial/aduanas/almacenes y ciudad.
 - **Taramin:** auditoría previa y diseño manual puerto pesquero, desembocadura bifurcada Thalen, abastecimiento.
@@ -76,15 +76,44 @@
 - Heredar Norgard (nombres, familia, ritos, cultura material, toponimia) sin inventar tradiciones universales.
 - **Salida:** perfiles diferenciados de subregiones y variantes locales autorizadas.
 
+## D10-A — Veldora: desarrollo urbano y canónico integral [PROGRAMADA; NO INICIADA]
+- **Finalidad:** llevar Veldora a una profundidad descriptiva y funcional comparable a Treihord y Treskal, sin copiar identidad, barrios, instituciones ni composición social de esas ciudades. Fase exclusiva con conversación, rama, auditoría, decisiones de autor y PR propias.
+- **Canon inicial:** gran puerto mercante de Norgard; aduana de comercio exterior y presencia administrativa/fiscal de la Corona; almacenes, talleres y gremios; crecimiento orgánico de varios sectores comerciales (decisión autoral **DAR-D07-01 B**); zonas acomodadas alejadas de los muelles. El río Veldora es independiente de Belara/Lhera; no adjudicar puentes, puertos fluviales ni travesías sin evidencia.
+- **Diseño a desarrollar:** historia y evolución de la ciudad, organización de barrios y plazas, tejido residencial, mercados/zonas de oficios, muelles ya acreditados como función, arquitectura característica, instituciones acreditadas, actividad económica, hogares, servicios, gobierno, seguridad, cultura y espacios narrativos. Diferenciar propuestas de decisiones cerradas.
+- **Dependencias:** D08 población y servicios; D09 competencias; D10 cultura; cartografía D01–D07. Cifras nuevas de población, topónimos, personajes importantes, barrios concretos e instituciones nuevas requieren aprobación expresa del autor.
+- **Salida:** monografía canónica aprobable, matriz de fuentes/decisiones/UNKNOWN, fichas urbanas y datos operativos **no-runtime**, validador y auditoría; sin geometría métrica, instalaciones, NPC o world state materializados por defecto.
+
+## D10-B — Taramin: desarrollo urbano y canónico integral [PROGRAMADA; NO INICIADA]
+- **Finalidad:** diseñar Taramin con el mismo nivel de detalle editorial y operativo que Treihord y Treskal, adaptado a su propia economía pesquera y territorio, mediante fase/conversación/rama/PR independiente.
+- **Canon inicial:** ciudad media pesquera marítima y fluvial entre los **dos brazos terminales del mismo río Thalen**; entorno peninsular de transición semiárida; identidad funcional no monumental y pesca/productos marinos. Decisión autoral **DAR-D07-02 A**: **una zona pesquera principal**, sin ubicación ni navegabilidad de brazos aprobadas. Bosque de Taramin sin tala industrial.
+- **Diseño a desarrollar:** historia, sectores urbanos, barrios y espacios comunes, frentes de pesca y comercio acreditables, vivienda, trabajo, oficios, abastecimiento, agua y salubridad, servicios, gobierno/seguridad, arquitectura, cultura local, relaciones socioeconómicas y posibilidades narrativas.
+- **Dependencias:** D08–D10 y evidencia hidrográfica/topográfica. No inventar puentes, rutas, embarcaderos, muelles, flotas, navegación, población ni capacidad; cuando falten datos, registrar `UNKNOWN` o alternativa `pendiente_autor`.
+- **Salida:** monografía canónica aprobable y datos operativos trazados, estudio de dependencias y riesgos, validación estática/auditoría, sin crear elementos físicos ni NPC en runtime.
+
+## D10-C — Syvaris: desarrollo urbano y canónico integral [PROGRAMADA; NO INICIADA]
+- **Finalidad:** desarrollar Syvaris con profundidad comparable a Treihord y Treskal, preservando su identidad de ciudad insular del reino de Norgard bajo administración Darovan. Fase/conversación/rama/PR propia.
+- **Canon inicial:** ciudad principal de la isla, más pequeña que Taramin; puerto seguro y **presencia naval de Norgard**, nunca armada privativa de Casa Darovan. Decisión autoral **DAR-D07-03 A**: concentración de funciones urbanas principales en la **bahía protegida**. Calas menores sin nuevos puertos ni rutas acreditadas. Contraste de sur más verde y centro/norte más secos; bosques discontinuos, edificios bajos de piedra y madera, encalado parcial.
+- **Diseño a desarrollar:** historia insular, barrios y tejido edificado, centro ligado a bahía, vivienda, pesca/comercio, servicios y abastecimiento, gobierno y seguridad, funciones navales ya acreditadas, adaptación a microclimas, cultura, relaciones comunitarias, personajes relevantes sujetos a autorización y espacios narrativos.
+- **Dependencias:** D08–D10, Norgard marítimo/naval, clima D03, recursos D04 y logística D05. Sin atribuir instalaciones militares, flotas, fondeaderos, viajes, puertos secundarios, cifras demográficas o itinerarios no aprobados.
+- **Salida:** monografía canónica aprobable y fichas/datos operativos trazados, decisiones y `UNKNOWN` auditables, regresión de compatibilidad; sin materialización en CoreRPG/Godot.
+
+### Condiciones comunes de cierre D10-A, D10-B y D10-C
+- Cada ciudad debe alcanzar **profundidad de diseño comparable**, no diseños iguales, a las fuentes canónicas de **Treihord y Treskal**: origen e historia, estructura urbana, espacios reconocibles, economía, hogares y población cuando estén autorizados, servicios, instituciones, sociedad, cultura, personajes e historias solo con aprobación del autor, y utilidad narrativa para Nimroel RPG.
+- **Treihord continúa cerrada y no se rediseña.** Treskal sirve como referencia de grado de detalle/metodología, nunca fuente para copiar instituciones, topónimos, demografía ni canon de Valrik.
+- Las tres fases son **desarrollo canónico manual**, no generación procedural D06. Ninguna deducción cartográfica, cuantía demográfica o propuesta técnica pasa a canon silenciosamente. El autor toma decisiones sustantivas **una por una**.
+- Cada fase tiene entregables versionados, auditoría, validaciones y una PR propia; **no fusionar sin autorización expresa**. La finalización de D10-C y los cierres autorales mínimos habilitan D11; los `UNKNOWN` residuales se rastrean explícitamente y no se ocultan ni impiden pruebas de partes independientes.
+- D11 y D12 **conservan su numeración original**: estas tres subfases se insertan entre D10 y D11 y todavía no han comenzado.
+
 ## D11 — Integración técnica y pruebas [PENDIENTE]
 - Datos con IDs persistentes y trazabilidad fuente; precedencia y versionado.
 - Validar JSON/schema real, integridad de referencias, derivación de overrides y determinismo.
 - Escenarios: ruta mina–Crisol, bloqueo de carbón, barcaza Belara, comercio exterior Veldora, pesca Taramin, travesía Syvaris, migración de hogares; todos **fixtures de prueba, no sucesos canónicos**.
 - Pruebas de continuidad con Norgard/Core/Valrik, ausencia de duplicación y persistencia del world state.
+- Integrar las tres ciudades completas de **D10-A Veldora, D10-B Taramin y D10-C Syvaris**, junto al canon cerrado de Treihord, solo cuando existan sus aprobaciones; no simular una ciudad completa a partir de su ficha conceptual D07.
 - **Salida:** reporte de regresión estática; runtime SOLO cuando el motor esté integrado y ejecutado.
 
 ## D12 — Auditoría integral y cierre territorial [PENDIENTE]
-- Comparar canon, perfil geográfico, pueblos, cuatro ciudades, rutas, economía, clima y contratos.
+- Comparar canon, perfil geográfico, pueblos, cuatro ciudades (Treihord y las monografías **D10-A / D10-B / D10-C**), rutas, economía, clima y contratos.
 - Resolver por el autor los bloqueos de canon; consolidar referencias sin copias.
 - Emitir ficha de versión, matriz aprobaciones y deuda real.
 - **Salida:** propuesta de cierre a revisión humana; canon solo tras decisión de autor.
@@ -109,3 +138,7 @@ D05 PR #30 fue fusionada en `main`, commit `0818886f8cc9f91c21b5db00f91feb1b942d
 
 ## Seguimiento D07 — 21-10-2026
 Tras verificar la fusión de D06 PR #31 (main e2636f33791b11ec6ad2e478df95ab190de0f09e), D07 trabaja en rama exclusiva feat/darovan-d07-ciudades-canonicas. Entrega técnica prevista: auditoría de cuatro ciudades, Treihord solo compatibilidad con D01–D06, perfiles manuales Veldora/Taramin/Syvaris, matriz de fuente, JSON no-runtime, validación Python y PR Draft. Las decisiones de organización urbana DAR-D07-01/02/03 permanecen pendientes del autor. No se han desarrollado D08, NPC, habitantes nuevos, calles, puertos o rutas; no hay integración CoreRPG/Godot acreditada.
+
+## Actualización del calendario aprobada por el autor — 21-10-2026
+**Decisión:** reservar **D10-A (Veldora)**, **D10-B (Taramin)** y **D10-C (Syvaris)** inmediatamente **después de D10** y **antes de D11**. Cada ciudad contará con una fase integral manual, independiente y comparable en profundidad con Treihord y Treskal. No cambia la numeración de D11 (integración) y D12 (auditoría final). **No se han iniciado estas subfases.**
+**Estado de partida real para la revisión de este plan:** D00–D07 fusionadas; D07 PR #32 integrada en `main` por commit `23670e68532447d918c04839369a9962448f2e44`, regresión post-merge D01–D07 en Windows/Linux [Actions #39669078239](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39669078239) satisfactoria. Decisiones D07 confirmadas: Veldora B, Taramin A y Syvaris A, **solo a nivel conceptual**. D08 sigue pendiente de iniciar. Los estados históricos anteriores del plan se conservan como cronología y no prevalecen sobre esta nota.
