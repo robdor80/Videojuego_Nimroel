@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d08_test_only_cases",
+  "phase": "D08",
+  "status": "TEST_ONLY_NOT_CANON",
+  "noNewCanonicalSettlements": true,
+  "usesOnlySyntheticLocations": true,
+  "allowedLocationPrefix": "TEST_ONLY_",
+  "createdNpcCountInWorldState": 0,
+  "cases": [
+    {
+      "id": "t01_unrelated_cotenant",
+      "site": "TEST_ONLY_hamlet_A",
+      "scenario": "unrelated_residents_share_one_household_without_kinship",
+      "persons": [
+        {
+          "id": "TEST_ONLY_p1",
+          "age": 31
+        },
+        {
+          "id": "TEST_ONLY_p2",
+          "age": 28
+        }
+      ],
+      "households": [
+        {
+          "id": "TEST_ONLY_h1",
+          "members": [
+            "TEST_ONLY_p1",
+            "TEST_ONLY_p2"
+          ]
+        }
+      ],
+      "expected": "no_kinship_inference"
+    },
+    {
+      "id": "t02_married_separate",
+      "site": "TEST_ONLY_town_B",
+      "scenario": "marriage_does_not_imply_shared_residence",
+      "persons": [
+        {
+          "id": "TEST_ONLY_p3",
+          "age": 35
+        },
+        {
+          "id": "TEST_ONLY_p4",
+          "age": 36
+        }
+      ],
+      "households": [
+        {
+          "id": "TEST_ONLY_h2",
+          "members": [
+            "TEST_ONLY_p3"
+          ]
+        },
+        {
+          "id": "TEST_ONLY_h3",
+          "members": [
+            "TEST_ONLY_p4"
+          ]
+        }
+      ],
+      "expected": "independent_residence"
+    },
+    {
+      "id": "t03_apprentice_13",
+      "site": "TEST_ONLY_village_C",
+      "scenario": "apprentice_requires_mentor_and_child_protections",
+      "persons": [
+        {
+          "id": "TEST_ONLY_p5",
+          "age": 13
+        },
+        {
+          "id": "TEST_ONLY_p6",
+          "age": 42
+        }
+      ],
+      "households": [
+        {
+          "id": "TEST_ONLY_h4",
+          "members": [
+            "TEST_ONLY_p5",
+            "TEST_ONLY_p6"
+          ]
+        }
+      ],
+      "expected": "supervision_required_no_full_worker"
+    },
+    {
+      "id": "t04_youth_worker_16",
+      "site": "TEST_ONLY_villa_D",
+      "scenario": "youth_employment_limited",
+      "persons": [
+        {
+          "id": "TEST_ONLY_p7",
+          "age": 16
+        }
+      ],
+      "households": [
+        {
+          "id": "TEST_ONLY_h5",
+          "members": [
+            "TEST_ONLY_p7"
+          ]
+        }
+      ],
+      "expected": "consent_and_risk_review"
+    },
+    {
+      "id": "t05_care_gap",
+      "site": "TEST_ONLY_village_E",
+      "scenario": "care_shortfall_does_not_spawn_carer",
+      "persons": [
+        {
+          "id": "TEST_ONLY_p8",
+          "age": 70
+        }
+      ],
+      "households": [
+        {
+          "id": "TEST_ONLY_h6",
+          "members": [
+            "TEST_ONLY_p8"
+          ]
+        }
+      ],
+      "expected": "care_gap_persists_only_if_need_real"
+    },
+    {
+      "id": "t06_no_synthetic_route",
+      "site": "TEST_ONLY_island_F",
+      "scenario": "supply_edge_does_not_prove_route",
+      "persons": [],
+      "households": [],
+      "expected": "no_travel_or_invented_port"
+    },
+    {
+      "id": "t07_no_inventory_spawn",
+      "site": "TEST_ONLY_port_G",
+      "scenario": "lack_of_food_does_not_create_supply",
+      "persons": [],
+      "households": [],
+      "expected": "unserved_need_persists"
+    }
+  ]
+}

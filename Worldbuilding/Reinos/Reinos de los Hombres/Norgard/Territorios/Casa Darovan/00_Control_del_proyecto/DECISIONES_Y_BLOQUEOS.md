@@ -95,3 +95,12 @@ El autor declara: «Decisión 2 de D07: elijo la opción A para Taramin». Queda
 
 ## Resolución expresa DAR-D07-03 — Syvaris (21/10/2026)
 El autor confirma: «Decisión 3 de D07: elijo la opción A para Syvaris». **APROBADO SOLO COMO CONCEPTO:** concentrar la actividad urbana principal, comercial, pesquera y naval de Syvaris alrededor de su bahía protegida. Se mantiene la presencia naval de Norgard (no armada de Darovan), las calas menores sin funciones portuarias nuevas, y la variedad climática de la isla. No se han aprobado barrios, callejero, nuevos puertos, infraestructura, rutas, medidas ni población. `DAR-D07-01 B / DAR-D07-02 A / DAR-D07-03 A` quedan cerradas a nivel conceptual; siguen abiertas las decisiones cartográficas y de detalle en su fase competente. D08 NO iniciada. PR #32 DRAFT, SIN FUSIONAR.
+
+## Pendientes específicos D08 — 21/10/2026
+- **DAR-D08-01 (PENDIENTE AUTOR):** rango poblacional o número aproximado de habitantes de Veldora, Taramin y Syvaris, por separado; también total territorial. No se proponen cifras canónicas ni se interpolan por tamaños.
+- **DAR-D08-02 (PENDIENTE AUTOR):** rangos/patrones cuantitativos de tamaño de hogar y estructura demográfica urbana/rural. Hasta decisión: `UNKNOWN`.
+- **DAR-D08-03 (CONDICIONAL):** nueva categoría social, institución singular o especialidad profesional que exceda Norgard; no hay ninguna aprobada ni creada en D08.
+- Las opciones D07 Veldora B / Taramin A / Syvaris A están **APROBADO SOLO CONCEPTO**, sin convertirse en traza urbana; Treihord ≈32.000 y su canon intactos.
+- No se traslada a Darovan el mínimo herrero de Treskal ni la posada casi generalizada de Valrik. Salud sin hospital universal, cuidado sin asistente automático.
+- CoreRPG integra relaciones genéricas/población agregada (4.8), pero **no** implementa como API los contratos semánticos de hogar, EMP, salarios o stocks de Nimroel Core. D08 es exclusivamente estática.
+Estas reservas no impiden validar datos documentales. Decisiones sustantivas de canon corresponden al autor, de una en una.

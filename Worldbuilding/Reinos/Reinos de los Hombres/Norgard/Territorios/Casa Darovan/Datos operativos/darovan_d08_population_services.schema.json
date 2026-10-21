@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nimroel.invalid/schemas/darovan_d08_population_services_v0.1.schema.json",
+  "title": "Darovan D08 reference-only contract; NOT CoreRPG runtime",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "documentId",
+    "version",
+    "phase",
+    "preparedAt",
+    "status",
+    "canonStatus",
+    "authorityChain",
+    "sourceRefs",
+    "coreRpgAudit",
+    "manualCityIds",
+    "excludedCityIds",
+    "cities",
+    "settlementProfiles",
+    "householdModel",
+    "occupationFamilies",
+    "serviceNeeds",
+    "causalFlow",
+    "planningUnknowns",
+    "authorialApprovalRequiredFor",
+    "runtimeIntegration"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "documentId": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string",
+      "const": "D08"
+    },
+    "preparedAt": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "const": "planning_reference_not_runtime"
+    },
+    "canonStatus": {
+      "type": "string",
+      "const": "no_new_demography_professions_or_institutions"
+    },
+    "authorityChain": {
+      "type": "array",
+      "const": [
+        "nimroel_core",
+        "norgard_defaults",
+        "casa_darovan",
+        "locality",
+        "world_state"
+      ]
+    },
+    "sourceRefs": {
+      "type": "object"
+    },
+    "coreRpgAudit": {
+      "type": "object"
+    },
+    "manualCityIds": {
+      "type": "array",
+      "const": [
+        "treihord",
+        "veldora",
+        "taramin",
+        "syvaris"
+      ]
+    },
+    "excludedCityIds": {
+      "type": "array",
+      "const": [
+        "karsath"
+      ]
+    },
+    "cities": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "populationApprox",
+          "populationStatus",
+          "economicFocus",
+          "householdCount",
+          "physicalServicesRegistered",
+          "geometry",
+          "serviceCapacity"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "treihord",
+              "veldora",
+              "taramin",
+              "syvaris"
+            ]
+          },
+          "populationApprox": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "populationStatus": {
+            "enum": [
+              "AUTHORED_APPROX",
+              "UNKNOWN"
+            ]
+          },
+          "economicFocus": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "householdCount": {
+            "type": "null"
+          },
+          "physicalServicesRegistered": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "geometry": {
+            "type": "null"
+          },
+          "serviceCapacity": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    "settlementProfiles": {
+      "type": "array"
+    },
+    "householdModel": {
+      "type": "object"
+    },
+    "occupationFamilies": {
+      "type": "array"
+    },
+    "serviceNeeds": {
+      "type": "array"
+    },
+    "causalFlow": {
+      "type": "object"
+    },
+    "planningUnknowns": {
+      "type": "array"
+    },
+    "authorialApprovalRequiredFor": {
+      "type": "array"
+    },
+    "runtimeIntegration": {
+      "type": "object"
+    }
+  }
+}

@@ -109,3 +109,6 @@ D05 PR #30 fue fusionada en `main`, commit `0818886f8cc9f91c21b5db00f91feb1b942d
 
 ## Seguimiento D07 — 21-10-2026
 Tras verificar la fusión de D06 PR #31 (main e2636f33791b11ec6ad2e478df95ab190de0f09e), D07 trabaja en rama exclusiva feat/darovan-d07-ciudades-canonicas. Entrega técnica prevista: auditoría de cuatro ciudades, Treihord solo compatibilidad con D01–D06, perfiles manuales Veldora/Taramin/Syvaris, matriz de fuente, JSON no-runtime, validación Python y PR Draft. Las decisiones de organización urbana DAR-D07-01/02/03 permanecen pendientes del autor. No se han desarrollado D08, NPC, habitantes nuevos, calles, puertos o rutas; no hay integración CoreRPG/Godot acreditada.
+
+## Seguimiento D08 — 21-10-2026
+Tras D07 PR #32 fusionada (main `23670e68532447d918c04839369a9962448f2e44`), D08 trabaja en rama exclusiva `feat/darovan-d08-hogares-poblacion-servicios`. Entregables: auditoría CoreRPG/API y canon, modelos domésticos/laborales, matriz de servicios, datos JSON no-runtime y fixtures TEST_ONLY, validador D08 con negativos y CI Windows/Linux D01–D08. El canon de Treihord y elecciones conceptuales de D07 no se modifican. Demografía, cuotas, hogares, capacidades, personal y edificios siguen UNKNOWN; solo aprobación expresa del autor puede canonizarlos. D09/D10/D11 fuera de alcance.

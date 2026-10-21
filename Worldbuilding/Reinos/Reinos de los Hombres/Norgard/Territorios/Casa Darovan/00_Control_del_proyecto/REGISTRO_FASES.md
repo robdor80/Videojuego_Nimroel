@@ -53,3 +53,6 @@ Veldora DAR-D07-01 B y Taramin DAR-D07-02 A aprobadas **solo a nivel conceptual*
 
 ## D07 — Cierre de las tres decisiones urbanas conceptuales (21/10/2026)
 El autor aprobó DAR-D07-01 Veldora **B** (varios sectores comerciales orgánicos); DAR-D07-02 Taramin **A** (una zona pesquera principal); y DAR-D07-03 Syvaris **A** (actividad urbana principal concentrada alrededor de la bahía protegida). Son decisiones de orientación funcional, **sin aprobación de trazados, barrios, puertos o edificios concretos**. Las incertidumbres geográficas y demográficas continúan sin inventar. PR #32 preparada para revisión, sigue Draft y no fusionada; D08 no comenzada.
+
+## Actualización D08 — 21/10/2026 (no sustituye el historial)
+**Estado real GitHub verificado al inicio de D08:** D00–D07 FUSIONADAS en `main`; D07 PR #32 fusionada, merge `23670e68532447d918c04839369a9962448f2e44`; post-merge Actions #39669078239 comunicada como verde (verificación del estado corriente en el inicio D08). D08 tiene rama exclusiva `feat/darovan-d08-hogares-poblacion-servicios`; entregables exclusivamente documentales/JSON de planificación y 35 negativos; PR Draft prevista para auditoría humana. **D08 NO FUSIONADA, D09–D11 NO INICIADAS.** Ningún resultado estático acredita CoreRPG/Godot runtime.
