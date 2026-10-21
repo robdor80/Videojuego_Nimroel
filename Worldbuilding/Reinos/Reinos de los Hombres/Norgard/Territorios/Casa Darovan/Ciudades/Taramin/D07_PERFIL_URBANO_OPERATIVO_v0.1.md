@@ -13,7 +13,10 @@ Ciudad media, más modesta que Treihord y Veldora; imagen funcional pesquera, no
 2. **Agua y abastecimiento:** evaluar si son necesarios espacios para tratamiento, conservación y distribución, condicionados a recursos y derechos reales; no aparecen en el mundo todavía.
 3. **Continuidad de accesos:** estudiar escenarios de accesibilidad del interfluvio con altimetría futura; ningún puente, vado, embarcadero ni carretera se materializa por necesidad.
 
-Opciones de discusión: frente pesquero funcional concentrado / más de un frente diferenciado si mapa y navegabilidad lo justifican. Recomendación: **sin decidir número o emplazamiento de frentes hasta disponer de prueba cartográfica e hidrográfica**.
+## Decisión del autor DAR-D07-02 — Aprobada opción A (solo concepto)
+**21/10/2026:** el autor elige **una zona pesquera principal** para concentrar la mayor parte de la actividad de pesca y descarga de Taramin, en lugar de una distribución equivalente entre varios sectores. Es una preferencia de estructura funcional y no un plano urbano ni un número aprobado de muelles.
+
+**Expresamente pendiente:** ubicación del núcleo pesquero, qué costa o brazo le da acceso, hidrografía y navegabilidad de los dos brazos terminales del **mismo** Thalen, accesos terrestres, puentes, muelles, instalaciones específicas, distribución y denominación de barrios, demografía y capacidad. Este criterio **no demuestra** que ninguno de los brazos sea navegable ni crea edificios o rutas físicas. En el índice D07: `DAR-D07-02 = APPROVED_CONCEPT_ONLY`. Las tres capas técnicas de estudio anteriores permanecen sin materializar.
 
 ## Verificaciones D01–D06
 D02 registra cinco ríos y cuatro sistemas, con Thalen y sus dos brazos terminales; D03 exige no tratar toda la península como desierto; D04 mantiene uso tradicional disperso de bosque sin tala industrial; D05 reconoce función pesquera/portuaria y mantiene navegabilidad y enlaces físicos interurbanos UNKNOWN; D06 no puede generar la ciudad. Las redes de suministro no son trayectorias.
