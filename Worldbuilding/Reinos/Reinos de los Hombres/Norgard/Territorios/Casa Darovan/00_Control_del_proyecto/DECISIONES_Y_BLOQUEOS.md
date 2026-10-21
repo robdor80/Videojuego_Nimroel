@@ -48,3 +48,17 @@ No resolver ambigüedades creando canon propio.
 - Ninguna conexión marina Syvaris↔Veldora/Taramin, terrestre a Taramin, correo interurbano o transbordo nuevo resulta autorizada por un mapa o necesidad logística. Si el autor define alguna, actualizar fuente canónica primero y revalidar D05.
 - En D05 la red física acreditada se limita a camino Veldora–Treihord, función logística con barcaza somera Belara y galería restringida La Vena. Los enlaces carbón Azurios y madera Pilares son suministros acreditados, no itinerarios.
 - No se crea un nuevo identificador DAR-P sin decisión sustantiva; el cierre documental D05 conserva estas incógnitas.
+
+
+### Anexo canónico aprobado por el autor — 21/10/2026
+
+Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o **río Veldora no identificado** son históricas y se sustituyen por esta decisión expresa del autor:
+
+- **DAR-P01 RESUELTA:** Arven pertenece formalmente a Casa Darovan. No se autoriza por ello puerto, travesía o ruta comercial nueva.
+- **DAR-P07 RESUELTA:** el cauce verde junto al sur de Veldora es el **río Veldora**, independiente del sistema Belara/Lhera.
+- **DAR-P08 PARCIALMENTE RESUELTA:** cinco ríos nombrados según flechas del mapa confirmado: **Belara** (azul, río principal desde el norte y junto a Treihord), **Lhera** (rojo, rama del Belara hasta el litoral al norte de Veldora), **Veldora** (verde), **Fhalion** (amarillo, nuevo río menor al sur del Veldora), **Thalen** (violeta, al otro lado de las montañas con dos brazos finales alrededor de Taramin). **Cuatro sistemas hidrográficos:** Belara/Lhera, Veldora, Fhalion, Thalen.
+- **DAR-P04 aún abierta:** la escala gráfica de **400 millas** aportada por el autor no constituye levantamiento topográfico verificado. Nacimientos exactos, caudales, cotas, recorridos métricos, bifurcación Belara/Lhera, desembocadura precisa del Fhalion, puentes, vados, navegación y accesos siguen pendientes. No deducir rutas a Arven o por Fhalion.
+
+**Corrección retroactiva de las referencias documentales D01–D05, no una reapertura de sus implementaciones ni runtime.** El grafo D02 pasa a 5 ríos / 4 redes / 15 nodos / 11 enlaces topológicos simbólicos, manteniendo D05 sus 17 nodos logísticos y 3 conexiones modales acreditadas. Los hitos documentados anteriormente permanecen como actas de lo que se sabía en aquella fecha.
+
+**Estado de cuestiones pendientes tras la decisión de hoy:** DAR-P01 y DAR-P07 cerradas; DAR-P08 parcialmente resuelta; DAR-P04, DAR-P09, DAR-P10 y DAR-P11 siguen abiertas. La decisión del autor tiene prioridad sobre la tabla histórica que mostraba P01 y P07 abiertas.

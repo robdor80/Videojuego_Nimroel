@@ -31,3 +31,15 @@ GitHub Actions matriz Ubuntu 24.04 / Windows 2022 ejecutará secuencialmente los
 
 ## Evidencia tras ejecución real (21-10-2026)
 En [run #39587112092](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39587112092) los dos jobs Windows 2022 y Ubuntu 24.04 han terminado `success` en D01–D05. Salida D05 real idéntica: `D05 STATIC OK: 17 nodes, 3 attested modal links, 4 non-route supply relations, 23 source paths, 30 negative mutations; NOT RUNTIME`. El acta nueva requiere repetición CI para su propio commit final. Ningún motor ni GIS ejecutado.
+
+
+### Anexo canónico aprobado por el autor — 21/10/2026
+
+Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o **río Veldora no identificado** son históricas y se sustituyen por esta decisión expresa del autor:
+
+- **DAR-P01 RESUELTA:** Arven pertenece formalmente a Casa Darovan. No se autoriza por ello puerto, travesía o ruta comercial nueva.
+- **DAR-P07 RESUELTA:** el cauce verde junto al sur de Veldora es el **río Veldora**, independiente del sistema Belara/Lhera.
+- **DAR-P08 PARCIALMENTE RESUELTA:** cinco ríos nombrados según flechas del mapa confirmado: **Belara** (azul, río principal desde el norte y junto a Treihord), **Lhera** (rojo, rama del Belara hasta el litoral al norte de Veldora), **Veldora** (verde), **Fhalion** (amarillo, nuevo río menor al sur del Veldora), **Thalen** (violeta, al otro lado de las montañas con dos brazos finales alrededor de Taramin). **Cuatro sistemas hidrográficos:** Belara/Lhera, Veldora, Fhalion, Thalen.
+- **DAR-P04 aún abierta:** la escala gráfica de **400 millas** aportada por el autor no constituye levantamiento topográfico verificado. Nacimientos exactos, caudales, cotas, recorridos métricos, bifurcación Belara/Lhera, desembocadura precisa del Fhalion, puentes, vados, navegación y accesos siguen pendientes. No deducir rutas a Arven o por Fhalion.
+
+**Corrección retroactiva de las referencias documentales D01–D05, no una reapertura de sus implementaciones ni runtime.** El grafo D02 pasa a 5 ríos / 4 redes / 15 nodos / 11 enlaces topológicos simbólicos, manteniendo D05 sus 17 nodos logísticos y 3 conexiones modales acreditadas. Los hitos documentados anteriormente permanecen como actas de lo que se sabía en aquella fecha.
