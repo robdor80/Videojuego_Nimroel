@@ -53,3 +53,24 @@ Veldora DAR-D07-01 B y Taramin DAR-D07-02 A aprobadas **solo a nivel conceptual*
 
 ## D07 — Cierre de las tres decisiones urbanas conceptuales (21/10/2026)
 El autor aprobó DAR-D07-01 Veldora **B** (varios sectores comerciales orgánicos); DAR-D07-02 Taramin **A** (una zona pesquera principal); y DAR-D07-03 Syvaris **A** (actividad urbana principal concentrada alrededor de la bahía protegida). Son decisiones de orientación funcional, **sin aprobación de trazados, barrios, puertos o edificios concretos**. Las incertidumbres geográficas y demográficas continúan sin inventar. PR #32 preparada para revisión, sigue Draft y no fusionada; D08 no comenzada.
+
+## Actualización D08 — 21/10/2026 (no sustituye el historial)
+**Estado real GitHub verificado al inicio de D08:** D00–D07 FUSIONADAS en `main`; D07 PR #32 fusionada, merge `23670e68532447d918c04839369a9962448f2e44`; post-merge Actions #39669078239 comunicada como verde (verificación del estado corriente en el inicio D08). D08 tiene rama exclusiva `feat/darovan-d08-hogares-poblacion-servicios`; entregables exclusivamente documentales/JSON de planificación y 35 negativos; PR Draft prevista para auditoría humana. **D08 NO FUSIONADA, D09–D11 NO INICIADAS.** Ningún resultado estático acredita CoreRPG/Godot runtime.
+
+## Aprobación parcial DAR-D08-01 — 22/10/2026
+El autor aprueba Veldora **opción B, intervalo 29.000–35.000 habitantes** como rango demográfico canónico, sin censo exacto. Registro incorporado solo a rama D08/PR Draft #34. Taramin, Syvaris y total Darovan siguen `UNKNOWN`. D07 no se altera; D09–D11 no se inician.
+
+## Aprobación parcial DAR-D08-01 — Taramin — 22/10/2026
+El autor aprueba **opción B, rango 14.000–20.000 habitantes** para Taramin como canon de referencia, sin censo exacto. Veldora B (29.000–35.000) y Treihord ~32.000 conservadas. Syvaris y población total Darovan permanecen `UNKNOWN`. Se anexa la decisión y se amplían validaciones en rama D08, PR #34 Draft sin fusión. Ninguna fase D09–D11 iniciada.
+
+## DAR-D08-01 — Resolución Syvaris (22/10/2026)
+El autor aprueba **opción B 7.000–10.000 habitantes**, rango de la **ciudad** de Syvaris; el resto de su isla, el total insular y el total demográfico de Darovan permanecen `UNKNOWN`. Se incorporan acta autoral, JSON, esquema y nuevas pruebas negativas a D08. Veldora B, Taramin B y Treihord sin alterar. **PR #34 permanece Draft y no fusionada**, D09–D11 no iniciadas.
+
+## DAR-D08-01 — Total de población territorial aprobado (22/10/2026)
+El autor elige opción B: **rango canónico de 300.000–450.000 habitantes para toda Casa Darovan**, sin fijar censo puntual, porcentajes rurales/urbanos, nuevas localidades ni habitantes por asentamiento. Se completan los rangos autorales de DAR-D08-01 (tres ciudades + total territorial) y se mantienen incógnitas documentadas; D08 solo planificación y pruebas estáticas. PR #34 sigue Draft SIN FUSIONAR, D09–D11 no iniciadas.
+
+## DAR-D08-02 — Aprobación de hogares urbanos (22/10/2026)
+Autor aprueba **opción B, intervalo 3–5 personas por hogar urbano de media**. Fuente archivada con referencia autoral, índice JSON, esquema y regresiones negativas en rama D08. No se autoriza censo de hogares ni viviendas, media urbana exacta, media rural o cambios a los cuatro rangos urbanos y total Casa Darovan aprobados. PR #34 sigue abierta en Draft SIN FUSIONAR.
+
+## Resolución conjunta de cierre documental D08 — 22/10/2026
+En un solo lote, autor aprueba **rural B 4–6** media por hogar, **edad 1B 30/60/10**, **diferencias edades urbano/rurales 2C sin desglose**, **reparto territorial 3C urbano 35–45 % / rural 55–65 %** y **social 4A sin categorías ni instituciones nuevas en D08**. Persisten cifras exactas y asentamientos no registrados como `UNKNOWN`; cuatro ciudades no bastan para cubrir el porcentaje urbano y no se crean otras. Acta `../Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`; entrega documental lista para revisión tras CI del nuevo HEAD, sin runtime ni fusionar PR #34. D09–D11 no iniciadas.

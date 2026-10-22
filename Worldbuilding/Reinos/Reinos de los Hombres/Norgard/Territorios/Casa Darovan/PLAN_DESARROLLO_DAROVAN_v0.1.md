@@ -109,3 +109,24 @@ D05 PR #30 fue fusionada en `main`, commit `0818886f8cc9f91c21b5db00f91feb1b942d
 
 ## Seguimiento D07 — 21-10-2026
 Tras verificar la fusión de D06 PR #31 (main e2636f33791b11ec6ad2e478df95ab190de0f09e), D07 trabaja en rama exclusiva feat/darovan-d07-ciudades-canonicas. Entrega técnica prevista: auditoría de cuatro ciudades, Treihord solo compatibilidad con D01–D06, perfiles manuales Veldora/Taramin/Syvaris, matriz de fuente, JSON no-runtime, validación Python y PR Draft. Las decisiones de organización urbana DAR-D07-01/02/03 permanecen pendientes del autor. No se han desarrollado D08, NPC, habitantes nuevos, calles, puertos o rutas; no hay integración CoreRPG/Godot acreditada.
+
+## Seguimiento D08 — 21-10-2026
+Tras D07 PR #32 fusionada (main `23670e68532447d918c04839369a9962448f2e44`), D08 trabaja en rama exclusiva `feat/darovan-d08-hogares-poblacion-servicios`. Entregables: auditoría CoreRPG/API y canon, modelos domésticos/laborales, matriz de servicios, datos JSON no-runtime y fixtures TEST_ONLY, validador D08 con negativos y CI Windows/Linux D01–D08. El canon de Treihord y elecciones conceptuales de D07 no se modifican. Demografía, cuotas, hogares, capacidades, personal y edificios siguen UNKNOWN; solo aprobación expresa del autor puede canonizarlos. D09/D10/D11 fuera de alcance.
+
+## D08 — Decisión demográfica autoral parcial (22-10-2026)
+Veldora: aprobada **opción B, 29.000–35.000 habitantes** como intervalo canónico, sin total puntual ni despiece doméstico/laboral. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md`. Taramin/Syvaris/total Darovan y composición hogar continúan `UNKNOWN`; D08 PR #34 Draft y no fusionada. D09–D11 no iniciadas.
+
+## D08 — Aprobación demográfica de Taramin (22-10-2026)
+Taramin: autor aprueba **opción B, 14.000–20.000 habitantes** como rango canónico. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md`. Ya aprobado Veldora B 29.000–35.000; Treihord ~32.000 se preserva. Syvaris, población total, cifras exactas y demografía doméstica siguen `UNKNOWN`. Sin nuevo urbanismo ni integración CoreRPG. D08 PR #34 Draft sin fusionar; D09–D11 no iniciadas.
+
+## D08 — Aprobación del intervalo urbano de Syvaris (22-10-2026)
+`DAR-D08-01`: el autor aprueba **opción B, 7.000–10.000 habitantes** para **la ciudad**, no para toda la isla Syvaris. Acta `Auditorias/D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md`. Tres ciudades: Veldora 29.000–35.000, Taramin 14.000–20.000 y Syvaris 7.000–10.000; Treihord ~32.000. Los censos exactos, población insular fuera de la ciudad y total Darovan continúan UNKNOWN. Sin nuevos edificios/NPC ni integración runtime. PR #34 Draft sin fusionar; D09–D11 no iniciadas.
+
+## D08 — Total territorial aprobado (22-10-2026)
+`DAR-D08-01`: opción B, **300.000–450.000 habitantes para toda Casa Darovan**. Acta `Auditorias/D08_RESOLUCION_DAR-D08-01_TOTAL_DAROVAN_2026-10-22.md`. Junto a Treihord ~32.000, Veldora 29.000–35.000, Taramin 14.000–20.000 y la ciudad Syvaris 7.000–10.000, queda resuelta la escala poblacional general. Persisten `UNKNOWN` censos exactos, resto de isla Syvaris, cuotas de población por localidad, asentamientos reales no documentados, tamaños de hogares, infraestructura/servicios y distribución por edades. Sin creación de mundo ni API runtime; D08 PR #34 Draft sin fusionar.
+
+## D08 — Decisión del autor sobre hogares urbanos (22-10-2026)
+`DAR-D08-02`: opción B, **3–5 personas por hogar urbano de media**, rango de referencia aprobado. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-02_HOGARES_URBANOS_2026-10-22.md`. Sin tamaños individuales obligatorios ni hogares/viviendas/censos cuantificados; rurales y medias globales pendientes. Norgard Defaults y límites D06/D07 intactos. PR #34 Draft sin fusionar. D09–D11 no iniciadas.
+
+## D08 — Lote demográfico definitivo del autor (22-10-2026)
+Acta: `Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`. **B rural 4–6 personas/hogar de media**; **1B edades 30/60/10** para todo Darovan; **2C sin desglose etario rural/urbano cuantificado**; **3C 35–45 % urbano / 55–65 % rural**; **4A no crear categorías/instituciones/especialidades nuevas en D08**. El cálculo básico muestra cobertura incompleta del inventario de cuatro ciudades frente al rango porcentual urbano: no atribuir censos ni agregar localidades no documentadas. El rango territorial, ciudades y medias urbanas previamente aprobadas permanecen intactos. Completadas decisiones conceptuales de D08; números concretos por ciudad/pueblo, hogares, trabajadores, infraestructuras y runtime reservados. PR #34 continúa Draft sin fusionar; D09–D11 no autorizadas.
