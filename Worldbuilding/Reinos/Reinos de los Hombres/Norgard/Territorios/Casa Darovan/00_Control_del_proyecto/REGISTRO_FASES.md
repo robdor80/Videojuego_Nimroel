@@ -62,3 +62,6 @@ El autor aprueba Veldora **opción B, intervalo 29.000–35.000 habitantes** com
 
 ## Aprobación parcial DAR-D08-01 — Taramin — 22/10/2026
 El autor aprueba **opción B, rango 14.000–20.000 habitantes** para Taramin como canon de referencia, sin censo exacto. Veldora B (29.000–35.000) y Treihord ~32.000 conservadas. Syvaris y población total Darovan permanecen `UNKNOWN`. Se anexa la decisión y se amplían validaciones en rama D08, PR #34 Draft sin fusión. Ninguna fase D09–D11 iniciada.
+
+## DAR-D08-01 — Resolución Syvaris (22/10/2026)
+El autor aprueba **opción B 7.000–10.000 habitantes**, rango de la **ciudad** de Syvaris; el resto de su isla, el total insular y el total demográfico de Darovan permanecen `UNKNOWN`. Se incorporan acta autoral, JSON, esquema y nuevas pruebas negativas a D08. Veldora B, Taramin B y Treihord sin alterar. **PR #34 permanece Draft y no fusionada**, D09–D11 no iniciadas.

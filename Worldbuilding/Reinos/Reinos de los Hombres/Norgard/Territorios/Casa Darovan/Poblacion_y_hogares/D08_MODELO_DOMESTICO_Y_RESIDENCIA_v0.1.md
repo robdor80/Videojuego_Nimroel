@@ -25,3 +25,6 @@ Treihord mantiene su cifra aproximada canónica de **32.000**. Por resolución a
 
 ## Interfaces diferidas
 D11 decidirá IDs estables, relaciones numéricas `RelationKind`, adaptadores de políticas `RES/KIN/EMP/CARE`, orden de mutación, guardado y tests runtime. El JSON D08 es exclusivamente un índice operativo de requisitos con vacíos declarados, no un pack ejecutable.
+
+## Adenda DAR-D08-01 Syvaris — 22/10/2026
+La ciudad de Syvaris tiene aprobado el intervalo de **7.000–10.000 habitantes (opción B)**, no un número exacto. La población del resto de la isla y el total insular no están aprobados. El total territorial Darovan, las cantidades exactas de Veldora/Taramin/Syvaris y los tamaños y cantidades de hogares siguen `UNKNOWN`. Esta adenda prevalece sobre el estado histórico de «Syvaris UNKNOWN» en el párrafo previo. Sin simulación ni materialización de habitantes en CoreRPG.

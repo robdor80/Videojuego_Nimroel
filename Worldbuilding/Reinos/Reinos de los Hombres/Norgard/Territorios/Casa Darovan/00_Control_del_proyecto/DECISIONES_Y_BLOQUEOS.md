@@ -116,3 +116,8 @@ PR #34 sigue **Draft y SIN FUSIONAR**. D08 no es integración runtime.
 **RESUELTA PARCIALMENTE por el autor:** Opción **B**, **14.000–20.000 habitantes**, intervalo demográfico de referencia canónico para Taramin. Aprobación expresa; acta `../Auditorias/D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md`.
 
 No se fija censo exacto ni plazas de empleo, hogares, población latente, infraestructura o capacidades. Se preserva el carácter de ciudad pesquera mediana, la opción D07-A de zona pesquera principal **solo conceptual**, y su escala inferior a Treihord/Veldora. Quedan abiertas **Syvaris, el total territorial, las cifras puntuales** y DAR-D08-02/03. El registro de Veldora B 29.000–35.000 sigue vigente. PR #34 permanece Draft, sin fusionar; D09 no iniciada.
+
+## DAR-D08-01 — Syvaris, intervalo de población urbana aprobado (22/10/2026)
+**AUTOR APRUEBA OPCIÓN B:** **7.000–10.000 habitantes para la ciudad de Syvaris**, rango inclusivo. No corresponde al total de la isla; no hay valor exacto y la población rural/otros núcleos insulares y el total insular permanecen `UNKNOWN`. Acta `../Auditorias/D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md`.
+
+Se conserva el canon D07-A de bahía protegida, pesca y presencia naval de Norgard (no armada Darovan); la ciudad es menor que Taramin. Treihord (~32.000), Veldora (29.000–35.000) y Taramin (14.000–20.000) intactas. **DAR-D08-01 queda resuelta para los tres intervalos urbanos pendientes**, pero aún falta decidir el total demográfico de Casa Darovan y se mantienen desconocidos los valores exactos y hogares. No crear casas, NPC, instalaciones o censos automáticos. PR #34 Draft, sin fusionar; D09–D11 sin iniciar.

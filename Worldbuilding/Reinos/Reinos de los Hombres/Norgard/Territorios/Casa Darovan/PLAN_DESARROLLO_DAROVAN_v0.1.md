@@ -118,3 +118,6 @@ Veldora: aprobada **opción B, 29.000–35.000 habitantes** como intervalo canó
 
 ## D08 — Aprobación demográfica de Taramin (22-10-2026)
 Taramin: autor aprueba **opción B, 14.000–20.000 habitantes** como rango canónico. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md`. Ya aprobado Veldora B 29.000–35.000; Treihord ~32.000 se preserva. Syvaris, población total, cifras exactas y demografía doméstica siguen `UNKNOWN`. Sin nuevo urbanismo ni integración CoreRPG. D08 PR #34 Draft sin fusionar; D09–D11 no iniciadas.
+
+## D08 — Aprobación del intervalo urbano de Syvaris (22-10-2026)
+`DAR-D08-01`: el autor aprueba **opción B, 7.000–10.000 habitantes** para **la ciudad**, no para toda la isla Syvaris. Acta `Auditorias/D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md`. Tres ciudades: Veldora 29.000–35.000, Taramin 14.000–20.000 y Syvaris 7.000–10.000; Treihord ~32.000. Los censos exactos, población insular fuera de la ciudad y total Darovan continúan UNKNOWN. Sin nuevos edificios/NPC ni integración runtime. PR #34 Draft sin fusionar; D09–D11 no iniciadas.

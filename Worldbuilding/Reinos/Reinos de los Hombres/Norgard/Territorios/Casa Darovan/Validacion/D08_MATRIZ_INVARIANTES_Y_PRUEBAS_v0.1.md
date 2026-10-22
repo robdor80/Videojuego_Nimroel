@@ -22,3 +22,6 @@ El validador debe aceptar únicamente el rango autoral **[29000,35000]** para **
 
 ## Extensión Taramin DAR-D08-01 — 22/10/2026
 Taramin: intervalo autoral inclusivo **[14000,20000]** (opción B) ligado a acta propia y estado `AUTHORED_RANGE`, sin cifra exacta, hogares, infraestructura ni nueva instancia runtime. Preservar el intervalo de Veldora [29000,35000] y Treihord ≈32.000, y mantener Syvaris UNKNOWN. Rechazar alteraciones de extremos, fuente, provincia, clase, autoría, censo inventado o trasplante del rango a Syvaris. Se añaden **9 negativos** (44 → **53** negativos D08), además del control de orden de escala poblacional. Ningún cambio de los validadores D01–D07.
+
+## Extensión Syvaris DAR-D08-01 — 22/10/2026
+Comprobar `populationRange=[7000,10000]` únicamente para **ciudad Syvaris**, estado `AUTHORED_RANGE`, procedencia del acta y `populationApprox=null`. No atribuir a la isla completa ni inventar su resto poblacional; `planningUnknowns` conserva población insular restante y total insular. Respetar jerarquía de tamaño Syvaris (10.000 máximo) < Taramin (14.000 mínimo), Veldora y Treihord invariantes. Añadidas **9 mutaciones negativas** (53 → **62**): límites, rango anulado, contaminación Treihord, falsa autoría, censo exacto, estado, enlace de fuente y fuente inexistente. Regresiones D01–D07 conservadas.
