@@ -54,7 +54,7 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and data["documentId"] == "darovan_d08_household_population_services"
           and data["phase"] == "D08" and data["version"] == "0.1"
           and data["status"] == "planning_reference_not_runtime"
-          and data["canonStatus"] == "approved_darovan_territorial_and_three_city_population_ranges_no_new_entities_or_institutions"
+          and data["canonStatus"] == "approved_population_ranges_and_urban_household_mean_range_no_new_entities_or_institutions"
           and data["authorityChain"] == AUTH, "schema, phase, authority")
     schema = read(repo, SCHEMA)
     check(schema.get("$schema") == "https://json-schema.org/draft/2020-12/schema"
@@ -62,13 +62,13 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and set(schema["properties"]) == TOP
           and schema["additionalProperties"] is False, "D08 JSON Schema mismatch")
     source = data["sourceRefs"]
-    check(len(source) == 29 and all(isinstance(k, str) and isinstance(v, str)
+    check(len(source) == 30 and all(isinstance(k, str) and isinstance(v, str)
           and (repo / v).is_file() and v.startswith("Worldbuilding/")
           for k, v in source.items()), "missing/redirected D08 sources")
     for k in ["d04", "d05", "d06", "d07", "treihord", "rural", "family",
               "labor", "property", "health", "fiscal", "currency", "maritime",
               "res", "kin", "care", "chore", "emp", "apr", "need", "wait",
-              "txn", "own", "food", "waste", "decisionD0801", "decisionD0801Taramin", "decisionD0801Syvaris", "decisionD0801DarovanTotal"]:
+              "txn", "own", "food", "waste", "decisionD0801", "decisionD0801Taramin", "decisionD0801Syvaris", "decisionD0801DarovanTotal", "decisionD0802UrbanHousehold"]:
         check(k in source, "missing source key: " + k)
     d04, d06, d07 = (read(repo, source[k]) for k in ("d04", "d06", "d07"))
     check(d07["manualCityIds"] == CITY_IDS
@@ -205,7 +205,8 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
               "D06 model mismatch or false population")
     household = data["householdModel"]
     check(set(household) == {"provenance", "patterns", "patternsAreNotSocialCasteOrCanonicalHouseholdShares",
-          "householdCount", "meanPersonsPerHousehold", "ageShares", "ruralUrbanShares",
+          "householdCount", "meanPersonsPerHousehold", "urbanMeanPersonsPerHouseholdRange",
+          "ruralMeanPersonsPerHouseholdRange", "ageShares", "ruralUrbanShares",
           "headOfHouseholdDefault", "sexBasedChoresDefault", "marriageImpliesCoResidence",
           "coResidenceImpliesMarriage", "kinshipImpliesCare", "ownershipImpliesResidence",
           "movingHouseMovesBusiness", "populationMaterializesAutomatically",
@@ -216,6 +217,7 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           "unrelated_co_residents", "temporary_separation"]
           and household["patternsAreNotSocialCasteOrCanonicalHouseholdShares"] is True
           and household["provenance"] == "DERIVED"
+          and household["ruralMeanPersonsPerHouseholdRange"] is None
           and all(household[k] is None for k in ["householdCount",
                 "meanPersonsPerHousehold", "ageShares", "ruralUrbanShares",
                 "headOfHouseholdDefault"])
@@ -230,6 +232,21 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and household["provenanceOfAgeBands"] == "AUTHORED"
           and household["typesOfRelations"] == ["RES", "MOVE", "KIN", "CARE",
                 "CHORE", "EMP", "APR", "OWN", "TXN"], "family, labor or household canon changed")
+    check(household["urbanMeanPersonsPerHouseholdRange"] == {
+          "minInclusive": 3, "maxInclusive": 5, "unit": "personas_por_hogar",
+          "statistic": "rango_de_media_urbana",
+          "status": "APPROVED_AUTHOR_RANGE", "decisionId": "DAR-D08-02",
+          "option": "B", "provenance": "AUTHORED",
+          "sourceRefId": "decisionD0802UrbanHousehold",
+          "approvalScope": "urban_only_mean_range_no_household_census_no_obligatory_individual_size",
+          "notAnIndividualHouseholdLimit": True,
+          }, "DAR-D08-02 urban mean range misrepresented")
+    urban_decision_text = (repo / source["decisionD0802UrbanHousehold"]).read_text(encoding="utf-8")
+    check("DAR-D08-02" in urban_decision_text
+          and "3–5" in urban_decision_text
+          and "Opción B" in urban_decision_text
+          and "hogares urbanos" in urban_decision_text,
+          "DAR-D08-02 author decision or household scope missing")
     jobs = data["occupationFamilies"]
     check([j["family"] for j in jobs] == EXPECTED_PROFESSIONS,
           "missing/extraneous occupation family")
@@ -296,6 +313,9 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and "settlement_population_distribution" in data["planningUnknowns"]
           and "settlement_physical_count" in data["planningUnknowns"]
           and "all_household_counts" in data["planningUnknowns"]
+          and "urban_mean_household_size_exact" in data["planningUnknowns"]
+          and "urban_household_size_distribution" in data["planningUnknowns"]
+          and "rural_mean_household_size_range" in data["planningUnknowns"]
           and "new_social_categories" in data["authorialApprovalRequiredFor"]
           and "new_canonical_population_bands" in data["authorialApprovalRequiredFor"],
           "unknown and authorial approvals dropped")
@@ -393,6 +413,20 @@ def run() -> None:
         ("territory_range_source_deleted", "d", lambda x: x["sourceRefs"].pop("decisionD0801DarovanTotal")),
         ("territory_falsely_runtime", "d", lambda x: x["territoryPopulation"].update(runtimeInstantiated=True)),
         ("territory_range_stolen_by_city", "d", lambda x: x["cities"][3].update(populationRange=copy.deepcopy(x["territoryPopulation"]["populationRange"]))),
+
+        ("urban_mean_min_changed", "d", lambda x: x["householdModel"]["urbanMeanPersonsPerHouseholdRange"].update(minInclusive=2)),
+        ("urban_mean_max_changed", "d", lambda x: x["householdModel"]["urbanMeanPersonsPerHouseholdRange"].update(maxInclusive=6)),
+        ("urban_mean_range_revoked", "d", lambda x: x["householdModel"].update(urbanMeanPersonsPerHouseholdRange=None)),
+        ("urban_mean_wrong_provenance", "d", lambda x: x["householdModel"]["urbanMeanPersonsPerHouseholdRange"].update(provenance="DERIVED")),
+        ("urban_mean_wrong_scope", "d", lambda x: x["householdModel"]["urbanMeanPersonsPerHouseholdRange"].update(statistic="rango_de_media_rural")),
+        ("urban_mean_exact_global_invented", "d", lambda x: x["householdModel"].update(meanPersonsPerHousehold=4)),
+        ("urban_mean_exact_urban_invented", "d", lambda x: x["householdModel"].update(urbanMeanPersonsPerHouseholdExact=4)),
+        ("urban_mean_falsely_limits_individual", "d", lambda x: x["householdModel"]["urbanMeanPersonsPerHouseholdRange"].update(notAnIndividualHouseholdLimit=False)),
+        ("rural_mean_invented", "d", lambda x: x["householdModel"].update(ruralMeanPersonsPerHouseholdRange={"minInclusive":4,"maxInclusive":6})),
+        ("urban_mean_source_id_changed", "d", lambda x: x["householdModel"]["urbanMeanPersonsPerHouseholdRange"].update(sourceRefId="decisionD0801Syvaris")),
+        ("urban_mean_source_deleted", "d", lambda x: x["sourceRefs"].pop("decisionD0802UrbanHousehold")),
+        ("urban_mean_unknown_rural_removed", "d", lambda x: x["planningUnknowns"].remove("rural_mean_household_size_range")),
+        ("urban_mean_fake_household_count", "d", lambda x: x["householdModel"].update(householdCount=80000)),
 
         ("treihord_changed", "d", lambda x: x["cities"][0].update(populationApprox=30000)),
         ("made_city", "d", lambda x: x["cities"].append(copy.deepcopy(x["cities"][0]))),

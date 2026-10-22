@@ -31,3 +31,8 @@ La ciudad de Syvaris tiene aprobado el intervalo de **7.000–10.000 habitantes 
 
 ## Adenda DAR-D08-01 — Total territorial Casa Darovan (22/10/2026)
 El autor fija como canon **un rango de 300.000–450.000 habitantes**, correspondiente a **todo** el territorio de Casa Darovan (incluidas ciudades y territorios rurales/insulares dentro de su jurisdicción). El número exacto, distribución urbano/rural, población de cada asentamiento no definido, población no urbana de la isla Syvaris, tamaño/cantidad de hogares y demografía por edades siguen **UNKNOWN**. No calcular población rural por diferencia entre puntos medios; los rangos urbanos son referencias, no censos exactos. Sin materialización CoreRPG ni inferencia de número o ubicación de aldeas.
+
+## Adenda DAR-D08-02 — Hogares urbanos (22/10/2026)
+El autor fija un **intervalo aprobado de 3–5 personas por hogar urbano como media de referencia** (opción B), aplicable a los núcleos urbanos de Casa Darovan. **No** es un mínimo/máximo obligatorio por hogar individual: hogares unipersonales y convivencias extensas siguen siendo posibles, sin cuotas asignadas.
+
+Se preservan `meanPersonsPerHousehold=null` para el promedio **global territorial** y `householdCount=null` para el número de hogares. `ruralMeanPersonsPerHouseholdRange=null`, porque todavía no se ha decidido tamaño medio rural. No traducir poblaciones aprobadas en cantidades de hogares, edificios, viviendas, porcentajes urbanos, categorías sociales, NPC ni relaciones familiares. No establece por sí misma estructura demográfica.

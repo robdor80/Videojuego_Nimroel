@@ -5,7 +5,7 @@
   "phase": "D08",
   "preparedAt": "2026-10-21",
   "status": "planning_reference_not_runtime",
-  "canonStatus": "approved_darovan_territorial_and_three_city_population_ranges_no_new_entities_or_institutions",
+  "canonStatus": "approved_population_ranges_and_urban_household_mean_range_no_new_entities_or_institutions",
   "authorityChain": [
     "nimroel_core",
     "norgard_defaults",
@@ -42,7 +42,8 @@
     "decisionD0801": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md",
     "decisionD0801Taramin": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md",
     "decisionD0801Syvaris": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md",
-    "decisionD0801DarovanTotal": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_TOTAL_DAROVAN_2026-10-22.md"
+    "decisionD0801DarovanTotal": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_TOTAL_DAROVAN_2026-10-22.md",
+    "decisionD0802UrbanHousehold": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-02_HOGARES_URBANOS_2026-10-22.md"
   },
   "coreRpgAudit": {
     "repository": "robdor80/CoreRPG",
@@ -366,7 +367,21 @@
     "adultAgeMin": 18,
     "apprenticeshipMinAge": 12,
     "youthEmploymentMinAge": 15,
-    "provenanceOfAgeBands": "AUTHORED"
+    "provenanceOfAgeBands": "AUTHORED",
+    "urbanMeanPersonsPerHouseholdRange": {
+      "minInclusive": 3,
+      "maxInclusive": 5,
+      "unit": "personas_por_hogar",
+      "statistic": "rango_de_media_urbana",
+      "status": "APPROVED_AUTHOR_RANGE",
+      "decisionId": "DAR-D08-02",
+      "option": "B",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0802UrbanHousehold",
+      "approvalScope": "urban_only_mean_range_no_household_census_no_obligatory_individual_size",
+      "notAnIndividualHouseholdLimit": true
+    },
+    "ruralMeanPersonsPerHouseholdRange": null
   },
   "occupationFamilies": [
     {
@@ -697,7 +712,10 @@
     "new_persons",
     "territory_rural_exact_population",
     "settlement_population_distribution",
-    "settlement_physical_count"
+    "settlement_physical_count",
+    "urban_mean_household_size_exact",
+    "urban_household_size_distribution",
+    "rural_mean_household_size_range"
   ],
   "authorialApprovalRequiredFor": [
     "new_canonical_population_bands",

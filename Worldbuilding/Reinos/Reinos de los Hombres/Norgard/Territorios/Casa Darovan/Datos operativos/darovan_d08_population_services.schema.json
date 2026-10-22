@@ -52,7 +52,7 @@
     },
     "canonStatus": {
       "type": "string",
-      "const": "approved_darovan_territorial_and_three_city_population_ranges_no_new_entities_or_institutions"
+      "const": "approved_population_ranges_and_urban_household_mean_range_no_new_entities_or_institutions"
     },
     "authorityChain": {
       "type": "array",
@@ -316,7 +316,70 @@
       "type": "array"
     },
     "householdModel": {
-      "type": "object"
+      "type": "object",
+      "required": [
+        "urbanMeanPersonsPerHouseholdRange",
+        "ruralMeanPersonsPerHouseholdRange"
+      ],
+      "properties": {
+        "urbanMeanPersonsPerHouseholdRange": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "minInclusive",
+            "maxInclusive",
+            "unit",
+            "statistic",
+            "status",
+            "decisionId",
+            "option",
+            "provenance",
+            "sourceRefId",
+            "approvalScope",
+            "notAnIndividualHouseholdLimit"
+          ],
+          "properties": {
+            "minInclusive": {
+              "type": "integer",
+              "const": 3
+            },
+            "maxInclusive": {
+              "type": "integer",
+              "const": 5
+            },
+            "unit": {
+              "const": "personas_por_hogar"
+            },
+            "statistic": {
+              "const": "rango_de_media_urbana"
+            },
+            "status": {
+              "const": "APPROVED_AUTHOR_RANGE"
+            },
+            "decisionId": {
+              "const": "DAR-D08-02"
+            },
+            "option": {
+              "const": "B"
+            },
+            "provenance": {
+              "const": "AUTHORED"
+            },
+            "sourceRefId": {
+              "const": "decisionD0802UrbanHousehold"
+            },
+            "approvalScope": {
+              "const": "urban_only_mean_range_no_household_census_no_obligatory_individual_size"
+            },
+            "notAnIndividualHouseholdLimit": {
+              "const": true
+            }
+          }
+        },
+        "ruralMeanPersonsPerHouseholdRange": {
+          "type": "null"
+        }
+      }
     },
     "occupationFamilies": {
       "type": "array"

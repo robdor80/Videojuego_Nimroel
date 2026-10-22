@@ -126,3 +126,8 @@ Se conserva el canon D07-A de bahía protegida, pesca y presencia naval de Norga
 **APROBADO POR EL AUTOR:** **300.000–450.000 habitantes** para el **territorio completo** de Casa Darovan. Fuente `../Auditorias/D08_RESOLUCION_DAR-D08-01_TOTAL_DAROVAN_2026-10-22.md`.
 
 La aprobación resuelve la parte de **intervalos territoriales y urbanos DAR-D08-01**: Treihord ≈32.000, Veldora 29.000–35.000, Taramin 14.000–20.000, Syvaris ciudad 7.000–10.000, Darovan total 300.000–450.000. **Censos exactos, resto y total insular Syvaris, distribución urbano/rural, número y habitantes de asentamientos ordinarios permanecen UNKNOWN.** Las cuatro ciudades son subconjuntos del territorio, no población adicional al total. Ninguna cifra crea pueblos, hogares, NPC, infraestructuras o actividad CoreRPG. `DAR-D08-02` continúa pendiente de decisiones domésticas una por una. PR #34 Draft, sin fusionar. D09–D11 no iniciadas.
+
+## DAR-D08-02 — Hogares urbanos, intervalo de promedio aprobado (22/10/2026)
+**AUTOR APRUEBA OPCIÓN B:** **3–5 personas por hogar urbano, de media** en Casa Darovan. Documento fuente `../Auditorias/D08_RESOLUCION_DAR-D08-02_HOGARES_URBANOS_2026-10-22.md`. Aprobado **como rango de la media urbana**, sin imponer esos tamaños a todos los hogares ni fijar media exacta de cuatro personas.
+
+**Siguen pendientes:** rango medio de hogares rurales, promedio territorial global, cantidades exactas de hogares/viviendas/habitantes, distribución por tamaños, demografía por edades y proporciones urbano/rurales. D08 no crea edificios ni hogares CoreRPG y mantiene Norgard Defaults. PR #34 Draft sin fusionar; D09–D11 sin iniciar.
