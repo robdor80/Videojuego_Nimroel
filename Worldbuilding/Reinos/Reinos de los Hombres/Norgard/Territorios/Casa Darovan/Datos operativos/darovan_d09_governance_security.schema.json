@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nimroel.invalid/schemas/darovan_d09_governance_security.schema.json",
+  "title": "Darovan D09 documental, no ejecutable",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "documentId",
+    "version",
+    "phase",
+    "preparedAt",
+    "status",
+    "canonStatus",
+    "authorityChain",
+    "sourceRefs",
+    "authorDecisions",
+    "government",
+    "fiscal",
+    "security",
+    "localities",
+    "unknowns",
+    "runtimeIntegration"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "documentId": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "phase": {
+      "const": "D09"
+    },
+    "preparedAt": {
+      "type": "string"
+    },
+    "status": {
+      "const": "planning_reference_not_runtime"
+    },
+    "canonStatus": {
+      "type": "string"
+    },
+    "authorityChain": {
+      "const": [
+        "nimroel_core",
+        "norgard_defaults",
+        "casa_darovan",
+        "locality",
+        "world_state"
+      ]
+    },
+    "sourceRefs": {
+      "type": "object",
+      "minProperties": 20
+    },
+    "authorDecisions": {
+      "type": "array",
+      "minItems": 17,
+      "maxItems": 17,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "option",
+          "scope",
+          "provenance",
+          "approval",
+          "createsNewTax",
+          "createsNamedInstitution",
+          "instantiatesRuntime"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^DAR-D09-(G|F|D|S)[0-9]{2}$"
+          },
+          "option": {
+            "enum": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "scope": {
+            "type": "string"
+          },
+          "provenance": {
+            "const": "AUTHORED_CONCEPT"
+          },
+          "approval": {
+            "const": "AUTHOR_BATCH_2026-10-22"
+          },
+          "createsNewTax": {
+            "const": false
+          },
+          "createsNamedInstitution": {
+            "const": false
+          },
+          "instantiatesRuntime": {
+            "const": false
+          }
+        }
+      }
+    },
+    "government": {
+      "type": "object"
+    },
+    "fiscal": {
+      "type": "object"
+    },
+    "security": {
+      "type": "object"
+    },
+    "localities": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "unknowns": {
+      "type": "object"
+    },
+    "runtimeIntegration": {
+      "type": "object"
+    }
+  }
+}
