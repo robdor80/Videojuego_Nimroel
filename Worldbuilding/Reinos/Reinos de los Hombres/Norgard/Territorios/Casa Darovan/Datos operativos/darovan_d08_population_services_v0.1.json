@@ -5,7 +5,7 @@
   "phase": "D08",
   "preparedAt": "2026-10-21",
   "status": "planning_reference_not_runtime",
-  "canonStatus": "approved_veldora_taramin_syvaris_population_ranges_no_new_entities_or_institutions",
+  "canonStatus": "approved_darovan_territorial_and_three_city_population_ranges_no_new_entities_or_institutions",
   "authorityChain": [
     "nimroel_core",
     "norgard_defaults",
@@ -41,7 +41,8 @@
     "waste": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_sanitation_waste_cycle_contract_v0.1.json",
     "decisionD0801": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md",
     "decisionD0801Taramin": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md",
-    "decisionD0801Syvaris": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md"
+    "decisionD0801Syvaris": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md",
+    "decisionD0801DarovanTotal": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_TOTAL_DAROVAN_2026-10-22.md"
   },
   "coreRpgAudit": {
     "repository": "robdor80/CoreRPG",
@@ -679,7 +680,7 @@
     "doNotUseD05SupplyDependencyAsRoad": true
   },
   "planningUnknowns": [
-    "total_darovan_population",
+    "total_darovan_exact_population",
     "veldora_exact_population",
     "taramin_exact_population",
     "syvaris_exact_city_population",
@@ -693,7 +694,10 @@
     "residence_job_commuting_metrics",
     "stock_volumes",
     "new_institutions",
-    "new_persons"
+    "new_persons",
+    "territory_rural_exact_population",
+    "settlement_population_distribution",
+    "settlement_physical_count"
   ],
   "authorialApprovalRequiredFor": [
     "new_canonical_population_bands",
@@ -709,5 +713,29 @@
     "householdsInstantiated": 0,
     "physicalServicesInstantiated": 0,
     "kindNumericRegistryApproved": false
+  },
+  "territoryPopulation": {
+    "scope": "casa_darovan_entire_territory_including_islands",
+    "populationApprox": null,
+    "populationStatus": "AUTHORED_RANGE",
+    "populationRange": {
+      "minInclusive": 300000,
+      "maxInclusive": 450000,
+      "unit": "habitantes",
+      "status": "APPROVED_AUTHOR_RANGE",
+      "decisionId": "DAR-D08-01",
+      "option": "B",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0801DarovanTotal",
+      "approvalScope": "territory_total_including_urban_rural_and_islands_no_exact_census"
+    },
+    "sourceRefIds": [
+      "decisionD0801DarovanTotal"
+    ],
+    "ruralPopulationApprox": null,
+    "canonicalSettlementCensus": null,
+    "physicalSettlementCount": null,
+    "cityTotalsAreExact": false,
+    "runtimeInstantiated": false
   }
 }

@@ -38,7 +38,7 @@ EXPECTED_FIXTURES = ["t01_unrelated_cotenant", "t02_married_separate",
                      "t05_care_gap", "t06_no_synthetic_route", "t07_no_inventory_spawn"]
 TOP = {"schemaVersion", "documentId", "version", "phase", "preparedAt",
        "status", "canonStatus", "authorityChain", "sourceRefs", "coreRpgAudit",
-       "manualCityIds", "excludedCityIds", "cities", "settlementProfiles",
+       "manualCityIds", "excludedCityIds", "cities", "territoryPopulation", "settlementProfiles",
        "householdModel", "occupationFamilies", "serviceNeeds", "causalFlow",
        "planningUnknowns", "authorialApprovalRequiredFor", "runtimeIntegration"}
 
@@ -54,7 +54,7 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and data["documentId"] == "darovan_d08_household_population_services"
           and data["phase"] == "D08" and data["version"] == "0.1"
           and data["status"] == "planning_reference_not_runtime"
-          and data["canonStatus"] == "approved_veldora_taramin_syvaris_population_ranges_no_new_entities_or_institutions"
+          and data["canonStatus"] == "approved_darovan_territorial_and_three_city_population_ranges_no_new_entities_or_institutions"
           and data["authorityChain"] == AUTH, "schema, phase, authority")
     schema = read(repo, SCHEMA)
     check(schema.get("$schema") == "https://json-schema.org/draft/2020-12/schema"
@@ -62,13 +62,13 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and set(schema["properties"]) == TOP
           and schema["additionalProperties"] is False, "D08 JSON Schema mismatch")
     source = data["sourceRefs"]
-    check(len(source) == 28 and all(isinstance(k, str) and isinstance(v, str)
+    check(len(source) == 29 and all(isinstance(k, str) and isinstance(v, str)
           and (repo / v).is_file() and v.startswith("Worldbuilding/")
           for k, v in source.items()), "missing/redirected D08 sources")
     for k in ["d04", "d05", "d06", "d07", "treihord", "rural", "family",
               "labor", "property", "health", "fiscal", "currency", "maritime",
               "res", "kin", "care", "chore", "emp", "apr", "need", "wait",
-              "txn", "own", "food", "waste", "decisionD0801", "decisionD0801Taramin", "decisionD0801Syvaris"]:
+              "txn", "own", "food", "waste", "decisionD0801", "decisionD0801Taramin", "decisionD0801Syvaris", "decisionD0801DarovanTotal"]:
         check(k in source, "missing source key: " + k)
     d04, d06, d07 = (read(repo, source[k]) for k in ("d04", "d06", "d07"))
     check(d07["manualCityIds"] == CITY_IDS
@@ -153,6 +153,41 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           cities[1]["populationRange"]["minInclusive"], "Taramin must be below Veldora")
     check(cities[2]["populationRange"]["maxInclusive"] < 32000,
           "Taramin must be below approved Treihord approximate population")
+    territory = data["territoryPopulation"]
+    check(set(territory) == {
+          "scope", "populationApprox", "populationStatus", "populationRange",
+          "sourceRefIds", "ruralPopulationApprox", "canonicalSettlementCensus",
+          "physicalSettlementCount", "cityTotalsAreExact", "runtimeInstantiated"},
+          "DAR-D08-01 territorial fields or extra census not approved")
+    expected_territory_range = {
+        "minInclusive": 300000, "maxInclusive": 450000, "unit": "habitantes",
+        "status": "APPROVED_AUTHOR_RANGE", "decisionId": "DAR-D08-01",
+        "option": "B", "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0801DarovanTotal",
+        "approvalScope": "territory_total_including_urban_rural_and_islands_no_exact_census",
+    }
+    check(territory["scope"] == "casa_darovan_entire_territory_including_islands"
+          and territory["populationApprox"] is None
+          and territory["populationStatus"] == "AUTHORED_RANGE"
+          and territory["populationRange"] == expected_territory_range
+          and territory["sourceRefIds"] == ["decisionD0801DarovanTotal"]
+          and territory["ruralPopulationApprox"] is None
+          and territory["canonicalSettlementCensus"] is None
+          and territory["physicalSettlementCount"] is None
+          and territory["cityTotalsAreExact"] is False
+          and territory["runtimeInstantiated"] is False,
+          "DAR-D08-01 territorial scope/range/census illegally changed")
+    total_decision_text = (repo / source["decisionD0801DarovanTotal"]).read_text(encoding="utf-8")
+    check("DAR-D08-01" in total_decision_text
+          and "300.000" in total_decision_text
+          and "450.000" in total_decision_text
+          and "Opción B" in total_decision_text
+          and "territorio completo" in total_decision_text,
+          "DAR-D08-01 territorial authored decision not documented")
+    check(territory["populationRange"]["minInclusive"] >
+          sum((c["populationRange"]["maxInclusive"] if c["populationRange"] else
+              c["populationApprox"]) for c in cities),
+          "territorial lower bound does not cover cited urban reference maxima")
     profiles = data["settlementProfiles"]
     check([p["tier"] for p in profiles] == ["aldea", "pueblo", "villa", "enclave"],
           "settlement tiers")
@@ -255,7 +290,11 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and "syvaris_island_outside_city_population" in data["planningUnknowns"]
           and "syvaris_island_total_population" in data["planningUnknowns"]
           and "syvaris_population" not in data["planningUnknowns"]
-          and "total_darovan_population" in data["planningUnknowns"]
+          and "total_darovan_exact_population" in data["planningUnknowns"]
+          and "total_darovan_population" not in data["planningUnknowns"]
+          and "territory_rural_exact_population" in data["planningUnknowns"]
+          and "settlement_population_distribution" in data["planningUnknowns"]
+          and "settlement_physical_count" in data["planningUnknowns"]
           and "all_household_counts" in data["planningUnknowns"]
           and "new_social_categories" in data["authorialApprovalRequiredFor"]
           and "new_canonical_population_bands" in data["authorialApprovalRequiredFor"],
@@ -339,6 +378,21 @@ def run() -> None:
         ("syvaris_range_status_wrong", "d", lambda x: x["cities"][3].update(populationStatus="UNKNOWN")),
         ("syvaris_range_source_unlinked", "d", lambda x: x["cities"][3].update(sourceRefIds=["d07", "d04"])),
         ("syvaris_range_source_deleted", "d", lambda x: x["sourceRefs"].pop("decisionD0801Syvaris")),
+
+        ("territory_range_min_mutated", "d", lambda x: x["territoryPopulation"]["populationRange"].update(minInclusive=290000)),
+        ("territory_range_max_mutated", "d", lambda x: x["territoryPopulation"]["populationRange"].update(maxInclusive=460000)),
+        ("territory_range_revoked", "d", lambda x: x["territoryPopulation"].update(populationRange=None)),
+        ("territory_range_wrong_provenance", "d", lambda x: x["territoryPopulation"]["populationRange"].update(provenance="DERIVED")),
+        ("territory_exact_census_invented", "d", lambda x: x["territoryPopulation"].update(populationApprox=375000)),
+        ("territory_wrong_scope", "d", lambda x: x["territoryPopulation"].update(scope="kingdom_of_norgard")),
+        ("territory_unapproved_rural_population", "d", lambda x: x["territoryPopulation"].update(ruralPopulationApprox=250000)),
+        ("territory_unapproved_settlement_census", "d", lambda x: x["territoryPopulation"].update(canonicalSettlementCensus=183)),
+        ("territory_unapproved_settlement_count", "d", lambda x: x["territoryPopulation"].update(physicalSettlementCount=89)),
+        ("territory_unapproved_exact_city_sums", "d", lambda x: x["territoryPopulation"].update(cityTotalsAreExact=True)),
+        ("territory_range_source_unlinked", "d", lambda x: x["territoryPopulation"].update(sourceRefIds=[])),
+        ("territory_range_source_deleted", "d", lambda x: x["sourceRefs"].pop("decisionD0801DarovanTotal")),
+        ("territory_falsely_runtime", "d", lambda x: x["territoryPopulation"].update(runtimeInstantiated=True)),
+        ("territory_range_stolen_by_city", "d", lambda x: x["cities"][3].update(populationRange=copy.deepcopy(x["territoryPopulation"]["populationRange"]))),
 
         ("treihord_changed", "d", lambda x: x["cities"][0].update(populationApprox=30000)),
         ("made_city", "d", lambda x: x["cities"].append(copy.deepcopy(x["cities"][0]))),

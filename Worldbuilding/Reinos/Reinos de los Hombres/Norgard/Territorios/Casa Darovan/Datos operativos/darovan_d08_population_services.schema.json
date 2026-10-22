@@ -24,7 +24,8 @@
     "causalFlow",
     "planningUnknowns",
     "authorialApprovalRequiredFor",
-    "runtimeIntegration"
+    "runtimeIntegration",
+    "territoryPopulation"
   ],
   "additionalProperties": false,
   "properties": {
@@ -51,7 +52,7 @@
     },
     "canonStatus": {
       "type": "string",
-      "const": "approved_veldora_taramin_syvaris_population_ranges_no_new_entities_or_institutions"
+      "const": "approved_darovan_territorial_and_three_city_population_ranges_no_new_entities_or_institutions"
     },
     "authorityChain": {
       "type": "array",
@@ -334,6 +335,100 @@
     },
     "runtimeIntegration": {
       "type": "object"
+    },
+    "territoryPopulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "populationApprox",
+        "populationStatus",
+        "populationRange",
+        "sourceRefIds",
+        "ruralPopulationApprox",
+        "canonicalSettlementCensus",
+        "physicalSettlementCount",
+        "cityTotalsAreExact",
+        "runtimeInstantiated"
+      ],
+      "properties": {
+        "scope": {
+          "const": "casa_darovan_entire_territory_including_islands"
+        },
+        "populationApprox": {
+          "type": "null"
+        },
+        "populationStatus": {
+          "const": "AUTHORED_RANGE"
+        },
+        "populationRange": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "minInclusive",
+            "maxInclusive",
+            "unit",
+            "status",
+            "decisionId",
+            "option",
+            "provenance",
+            "sourceRefId",
+            "approvalScope"
+          ],
+          "properties": {
+            "minInclusive": {
+              "type": "integer",
+              "const": 300000
+            },
+            "maxInclusive": {
+              "type": "integer",
+              "const": 450000
+            },
+            "unit": {
+              "const": "habitantes"
+            },
+            "status": {
+              "const": "APPROVED_AUTHOR_RANGE"
+            },
+            "decisionId": {
+              "const": "DAR-D08-01"
+            },
+            "option": {
+              "const": "B"
+            },
+            "provenance": {
+              "const": "AUTHORED"
+            },
+            "sourceRefId": {
+              "const": "decisionD0801DarovanTotal"
+            },
+            "approvalScope": {
+              "const": "territory_total_including_urban_rural_and_islands_no_exact_census"
+            }
+          }
+        },
+        "sourceRefIds": {
+          "type": "array",
+          "const": [
+            "decisionD0801DarovanTotal"
+          ]
+        },
+        "ruralPopulationApprox": {
+          "type": "null"
+        },
+        "canonicalSettlementCensus": {
+          "type": "null"
+        },
+        "physicalSettlementCount": {
+          "type": "null"
+        },
+        "cityTotalsAreExact": {
+          "const": false
+        },
+        "runtimeInstantiated": {
+          "const": false
+        }
+      }
     }
   }
 }

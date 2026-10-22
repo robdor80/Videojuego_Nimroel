@@ -28,3 +28,6 @@ D11 decidirá IDs estables, relaciones numéricas `RelationKind`, adaptadores de
 
 ## Adenda DAR-D08-01 Syvaris — 22/10/2026
 La ciudad de Syvaris tiene aprobado el intervalo de **7.000–10.000 habitantes (opción B)**, no un número exacto. La población del resto de la isla y el total insular no están aprobados. El total territorial Darovan, las cantidades exactas de Veldora/Taramin/Syvaris y los tamaños y cantidades de hogares siguen `UNKNOWN`. Esta adenda prevalece sobre el estado histórico de «Syvaris UNKNOWN» en el párrafo previo. Sin simulación ni materialización de habitantes en CoreRPG.
+
+## Adenda DAR-D08-01 — Total territorial Casa Darovan (22/10/2026)
+El autor fija como canon **un rango de 300.000–450.000 habitantes**, correspondiente a **todo** el territorio de Casa Darovan (incluidas ciudades y territorios rurales/insulares dentro de su jurisdicción). El número exacto, distribución urbano/rural, población de cada asentamiento no definido, población no urbana de la isla Syvaris, tamaño/cantidad de hogares y demografía por edades siguen **UNKNOWN**. No calcular población rural por diferencia entre puntos medios; los rangos urbanos son referencias, no censos exactos. Sin materialización CoreRPG ni inferencia de número o ubicación de aldeas.

@@ -65,3 +65,6 @@ El autor aprueba **opción B, rango 14.000–20.000 habitantes** para Taramin co
 
 ## DAR-D08-01 — Resolución Syvaris (22/10/2026)
 El autor aprueba **opción B 7.000–10.000 habitantes**, rango de la **ciudad** de Syvaris; el resto de su isla, el total insular y el total demográfico de Darovan permanecen `UNKNOWN`. Se incorporan acta autoral, JSON, esquema y nuevas pruebas negativas a D08. Veldora B, Taramin B y Treihord sin alterar. **PR #34 permanece Draft y no fusionada**, D09–D11 no iniciadas.
+
+## DAR-D08-01 — Total de población territorial aprobado (22/10/2026)
+El autor elige opción B: **rango canónico de 300.000–450.000 habitantes para toda Casa Darovan**, sin fijar censo puntual, porcentajes rurales/urbanos, nuevas localidades ni habitantes por asentamiento. Se completan los rangos autorales de DAR-D08-01 (tres ciudades + total territorial) y se mantienen incógnitas documentadas; D08 solo planificación y pruebas estáticas. PR #34 sigue Draft SIN FUSIONAR, D09–D11 no iniciadas.

@@ -35,3 +35,6 @@ El autor aprueba **Taramin, DAR-D08-01 opción B, intervalo canónico 14.000–2
 
 ## Tercera adenda autoral — Syvaris — 22/10/2026
 Aprobado el intervalo canónico **7.000–10.000 habitantes** para la **ciudad de Syvaris** (opción B, `DAR-D08-01`); documentación fuente `D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md`. No se equipara población urbana e insular. Se mantiene el total territorial como UNKNOWN y las fichas previas de Treihord/Veldora/Taramin sin alterar. El presente informe del 21/10 es histórico: el nuevo HEAD exige CI adicional en Windows y Linux. D08 sigue exclusivamente documental/estático. PR #34 Draft sin fusionar.
+
+## Cuarta adenda autoral — Total territorial (22/10/2026)
+El autor ha aprobado **DAR-D08-01 total Casa Darovan B: 300.000–450.000 habitantes**. Acta `D08_RESOLUCION_DAR-D08-01_TOTAL_DAROVAN_2026-10-22.md`. El rango incorpora ciudades y habitantes rurales e insulares de Darovan; no representa el reino Norgard ni la isla Syvaris aislada. Los censos exactos, distribución y la población de asentamientos no definidos permanecen nulos. La anterior mención del total como UNKNOWN es histórica: continúa desconocido el **censo puntual**, ya no el intervalo autoral. No ejecutar `PopulationRecord` ni crear asentamientos. CI correspondiente al nuevo HEAD obligatoria; anteriores runs no validan el incremento. PR #34 Draft sin fusionar.
