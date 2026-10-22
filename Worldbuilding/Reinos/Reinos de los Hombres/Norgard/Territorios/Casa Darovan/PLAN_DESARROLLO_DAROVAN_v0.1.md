@@ -112,3 +112,6 @@ Tras verificar la fusión de D06 PR #31 (main e2636f33791b11ec6ad2e478df95ab190d
 
 ## Seguimiento D08 — 21-10-2026
 Tras D07 PR #32 fusionada (main `23670e68532447d918c04839369a9962448f2e44`), D08 trabaja en rama exclusiva `feat/darovan-d08-hogares-poblacion-servicios`. Entregables: auditoría CoreRPG/API y canon, modelos domésticos/laborales, matriz de servicios, datos JSON no-runtime y fixtures TEST_ONLY, validador D08 con negativos y CI Windows/Linux D01–D08. El canon de Treihord y elecciones conceptuales de D07 no se modifican. Demografía, cuotas, hogares, capacidades, personal y edificios siguen UNKNOWN; solo aprobación expresa del autor puede canonizarlos. D09/D10/D11 fuera de alcance.
+
+## D08 — Decisión demográfica autoral parcial (22-10-2026)
+Veldora: aprobada **opción B, 29.000–35.000 habitantes** como intervalo canónico, sin total puntual ni despiece doméstico/laboral. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md`. Taramin/Syvaris/total Darovan y composición hogar continúan `UNKNOWN`; D08 PR #34 Draft y no fusionada. D09–D11 no iniciadas.

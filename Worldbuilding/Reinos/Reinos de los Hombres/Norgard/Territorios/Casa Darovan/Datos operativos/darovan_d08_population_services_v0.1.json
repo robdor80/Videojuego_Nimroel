@@ -5,7 +5,7 @@
   "phase": "D08",
   "preparedAt": "2026-10-21",
   "status": "planning_reference_not_runtime",
-  "canonStatus": "no_new_demography_professions_or_institutions",
+  "canonStatus": "approved_veldora_population_range_no_new_entities_or_institutions",
   "authorityChain": [
     "nimroel_core",
     "norgard_defaults",
@@ -38,7 +38,8 @@
     "txn": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json",
     "own": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_property_possession_object_contract_v0.1.json",
     "food": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
-    "waste": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_sanitation_waste_cycle_contract_v0.1.json"
+    "waste": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_sanitation_waste_cycle_contract_v0.1.json",
+    "decisionD0801": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md"
   },
   "coreRpgAudit": {
     "repository": "robdor80/CoreRPG",
@@ -108,12 +109,13 @@
         "d04"
       ],
       "provenance": "DERIVED",
-      "studyOnly": true
+      "studyOnly": true,
+      "populationRange": null
     },
     {
       "id": "veldora",
       "populationApprox": null,
-      "populationStatus": "UNKNOWN",
+      "populationStatus": "AUTHORED_RANGE",
       "economicFocus": [
         "comercio_exterior",
         "aduana_exterior_corona",
@@ -135,10 +137,22 @@
       "travelTimes": null,
       "sourceRefIds": [
         "d07",
-        "d04"
+        "d04",
+        "decisionD0801"
       ],
       "provenance": "DERIVED",
-      "studyOnly": true
+      "studyOnly": true,
+      "populationRange": {
+        "minInclusive": 29000,
+        "maxInclusive": 35000,
+        "unit": "habitantes",
+        "status": "APPROVED_AUTHOR_RANGE",
+        "decisionId": "DAR-D08-01",
+        "option": "B",
+        "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0801",
+        "approvalScope": "demographic_reference_range_only_no_exact_count"
+      }
     },
     {
       "id": "taramin",
@@ -167,7 +181,8 @@
         "d04"
       ],
       "provenance": "DERIVED",
-      "studyOnly": true
+      "studyOnly": true,
+      "populationRange": null
     },
     {
       "id": "syvaris",
@@ -197,7 +212,8 @@
         "d04"
       ],
       "provenance": "DERIVED",
-      "studyOnly": true
+      "studyOnly": true,
+      "populationRange": null
     }
   ],
   "settlementProfiles": [
@@ -640,7 +656,7 @@
   },
   "planningUnknowns": [
     "total_darovan_population",
-    "veldora_population",
+    "veldora_exact_population",
     "taramin_population",
     "syvaris_population",
     "all_household_counts",

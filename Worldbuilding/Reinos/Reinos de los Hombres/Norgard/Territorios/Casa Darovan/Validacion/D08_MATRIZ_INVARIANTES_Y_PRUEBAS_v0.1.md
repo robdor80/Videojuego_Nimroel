@@ -16,3 +16,6 @@
 | TEST_ONLY | Casos de laboratorio aislados, IDs prefijados y sin NPC persistentes creados |
 
 Ejecutar `python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d08.py"` sobre checkout íntegro. CI GitHub Actions en Ubuntu y Windows ejecutará D01–D08 sin necesidad de MSI. Estas pruebas **son estáticas**, no certifican integración CoreRPG/Godot, ni desplazamientos, guardados o economía simulada.
+
+## Extensión DAR-D08-01 — 22/10/2026
+El validador debe aceptar únicamente el rango autoral **[29000,35000]** para **Veldora**, con `AUTHORED_RANGE` y referencia exacta a la decisión. Rechazar alteración de extremos, pérdida de autoría, desaparición de rango, creación de cifra puntual y contaminación de Taramin/Syvaris o Treihord. Las cifras restantes y la población total continúan nulas. Nueve mutaciones negativas adicionales: de 35 a **44**. No altera las regresiones D01–D07.

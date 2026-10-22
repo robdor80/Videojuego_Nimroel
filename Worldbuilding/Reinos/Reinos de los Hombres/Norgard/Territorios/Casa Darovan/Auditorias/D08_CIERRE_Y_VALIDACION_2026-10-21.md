@@ -26,3 +26,6 @@
 - Adendas en plan, registro y decisiones; traspaso **preparatorio**, no inicio, `00_Control_del_proyecto/TRASPASO_D09.md`.
 
 **Criterio de cierre:** CI final del HEAD verde, revisión de PR #34 y aprobación expresa del autor para cualquier fusión. D08 no canoniza sus propuestas ni sustituye los Defaults de Norgard.
+
+## Adenda de revisión autoral posterior (22/10/2026)
+El autor aprobó DAR-D08-01 Veldora, opción B, como **rango canónico de 29.000–35.000 habitantes** (no número exacto). Véase `D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md`. Esta adenda modifica exclusivamente el alcance de la afirmación original de «solo Treihord con demografía conocida». Ningún valor se materializa en WorldState. Taramin/Syvaris/total siguen UNKNOWN. El HEAD de GitHub Actions original no sirve para validar este cambio: es imprescindible CI del nuevo commit antes de declarar este incremento en verde. PR #34 permanece Draft.

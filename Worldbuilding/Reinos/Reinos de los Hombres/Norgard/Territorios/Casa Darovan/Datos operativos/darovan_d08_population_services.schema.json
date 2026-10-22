@@ -51,7 +51,7 @@
     },
     "canonStatus": {
       "type": "string",
-      "const": "no_new_demography_professions_or_institutions"
+      "const": "approved_veldora_population_range_no_new_entities_or_institutions"
     },
     "authorityChain": {
       "type": "array",
@@ -98,7 +98,8 @@
           "householdCount",
           "physicalServicesRegistered",
           "geometry",
-          "serviceCapacity"
+          "serviceCapacity",
+          "populationRange"
         ],
         "properties": {
           "id": {
@@ -118,7 +119,8 @@
           "populationStatus": {
             "enum": [
               "AUTHORED_APPROX",
-              "UNKNOWN"
+              "UNKNOWN",
+              "AUTHORED_RANGE"
             ]
           },
           "economicFocus": {
@@ -139,6 +141,66 @@
           },
           "serviceCapacity": {
             "type": "null"
+          },
+          "populationRange": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "minInclusive",
+                  "maxInclusive",
+                  "unit",
+                  "status",
+                  "decisionId",
+                  "option",
+                  "provenance",
+                  "sourceRefId",
+                  "approvalScope"
+                ],
+                "properties": {
+                  "minInclusive": {
+                    "type": "integer",
+                    "const": 29000
+                  },
+                  "maxInclusive": {
+                    "type": "integer",
+                    "const": 35000
+                  },
+                  "unit": {
+                    "type": "string",
+                    "const": "habitantes"
+                  },
+                  "status": {
+                    "type": "string",
+                    "const": "APPROVED_AUTHOR_RANGE"
+                  },
+                  "decisionId": {
+                    "type": "string",
+                    "const": "DAR-D08-01"
+                  },
+                  "option": {
+                    "type": "string",
+                    "const": "B"
+                  },
+                  "provenance": {
+                    "type": "string",
+                    "const": "AUTHORED"
+                  },
+                  "sourceRefId": {
+                    "type": "string",
+                    "const": "decisionD0801"
+                  },
+                  "approvalScope": {
+                    "type": "string",
+                    "const": "demographic_reference_range_only_no_exact_count"
+                  }
+                }
+              }
+            ]
           }
         }
       }

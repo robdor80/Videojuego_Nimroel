@@ -104,3 +104,10 @@ El autor confirma: «Decisión 3 de D07: elijo la opción A para Syvaris». **AP
 - No se traslada a Darovan el mínimo herrero de Treskal ni la posada casi generalizada de Valrik. Salud sin hospital universal, cuidado sin asistente automático.
 - CoreRPG integra relaciones genéricas/población agregada (4.8), pero **no** implementa como API los contratos semánticos de hogar, EMP, salarios o stocks de Nimroel Core. D08 es exclusivamente estática.
 Estas reservas no impiden validar datos documentales. Decisiones sustantivas de canon corresponden al autor, de una en una.
+
+## DAR-D08-01 — Veldora, intervalo poblacional aprobado (22/10/2026)
+**RESUELTA PARCIALMENTE por el autor:** Opción **B**, **29.000–35.000 habitantes**, intervalo de referencia **canónico aprobado** para Veldora. Aprobado expresamente, **no** extrapolado. Véase `../Auditorias/D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md`.
+
+Se conserva `UNKNOWN` el número exacto de Veldora; no convertir el punto medio ni una semilla en canon, ni derivar viviendas, empleo, aforos o stock. Sin cambios en Treihord ≈32.000 o la decisión urbana D07 Veldora B. **DAR-D08-01 sigue abierto exclusivamente para las siguientes localidades** Taramin/Syvaris y el total territorial, tratadas una a una. Todas las demás decisiones pendientes se mantienen.
+
+PR #34 sigue **Draft y SIN FUSIONAR**. D08 no es integración runtime.
