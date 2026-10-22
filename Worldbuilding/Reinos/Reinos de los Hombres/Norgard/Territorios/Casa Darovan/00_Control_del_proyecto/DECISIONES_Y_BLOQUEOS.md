@@ -131,3 +131,10 @@ La aprobación resuelve la parte de **intervalos territoriales y urbanos DAR-D08
 **AUTOR APRUEBA OPCIÓN B:** **3–5 personas por hogar urbano, de media** en Casa Darovan. Documento fuente `../Auditorias/D08_RESOLUCION_DAR-D08-02_HOGARES_URBANOS_2026-10-22.md`. Aprobado **como rango de la media urbana**, sin imponer esos tamaños a todos los hogares ni fijar media exacta de cuatro personas.
 
 **Siguen pendientes:** rango medio de hogares rurales, promedio territorial global, cantidades exactas de hogares/viviendas/habitantes, distribución por tamaños, demografía por edades y proporciones urbano/rurales. D08 no crea edificios ni hogares CoreRPG y mantiene Norgard Defaults. PR #34 Draft sin fusionar; D09–D11 sin iniciar.
+
+## Lote final de decisiones autorales D08 — 22/10/2026
+El autor aprueba conjuntamente: **hogares rurales B 4–6 personas por hogar como media**, **1B edades 30 % (0–17), 60 % (18–59), 10 % (60+)**, **2C sin porcentajes diferenciados urbano/rurales por edad (NO equivalencia forzada)**, **3C 35–45 % de población urbana y 55–65 % rural como porcentajes complementarios del territorio**, y **4A sin nuevas categorías sociales, instituciones singulares ni especialidades profesionales en D08**, sin bloquear propuestas futuras.
+
+Acta vinculante: `../Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`. La población urbana de las cuatro ciudades conocidas **no cubre por sí sola el rango urbano territorial**: queda `UNKNOWN` la cobertura de otras localidades, sin crearlas o atribuirles censos. Siguen sin aprobarse censos puntuales, cantidades de hogares/viviendas, nuevos asentamientos o NPC, desglose de edades por ciudad/campo, normas sobre familias adicionales o ejecución CoreRPG/Godot.
+
+**DAR-D08-01** resuelto a nivel de rangos territoriales/urbanos; **DAR-D08-02** resuelto para promedios urbanos/rurales y proporciones agregadas; **DAR-D08-03** resuelto con 4A «ninguna nueva en D08». Pendientes operativos solo para futura materialización y autoría de localidades/cifras exactas, no bloquean el cierre documental. PR #34 queda Draft y sin fusionar.

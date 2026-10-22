@@ -5,7 +5,7 @@
   "phase": "D08",
   "preparedAt": "2026-10-21",
   "status": "planning_reference_not_runtime",
-  "canonStatus": "approved_population_ranges_and_urban_household_mean_range_no_new_entities_or_institutions",
+  "canonStatus": "approved_D08_demographic_and_household_ranges_no_new_social_institutions",
   "authorityChain": [
     "nimroel_core",
     "norgard_defaults",
@@ -43,7 +43,8 @@
     "decisionD0801Taramin": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md",
     "decisionD0801Syvaris": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md",
     "decisionD0801DarovanTotal": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_TOTAL_DAROVAN_2026-10-22.md",
-    "decisionD0802UrbanHousehold": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-02_HOGARES_URBANOS_2026-10-22.md"
+    "decisionD0802UrbanHousehold": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-02_HOGARES_URBANOS_2026-10-22.md",
+    "decisionD0802FinalBatch": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md"
   },
   "coreRpgAudit": {
     "repository": "robdor80/CoreRPG",
@@ -325,8 +326,56 @@
     "patternsAreNotSocialCasteOrCanonicalHouseholdShares": true,
     "householdCount": null,
     "meanPersonsPerHousehold": null,
-    "ageShares": null,
-    "ruralUrbanShares": null,
+    "ageShares": {
+      "scope": "casa_darovan_entire_territory",
+      "status": "APPROVED_AUTHOR_DISTRIBUTION",
+      "decisionId": "DAR-D08-02",
+      "option": "1B",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0802FinalBatch",
+      "unit": "percent",
+      "bands": [
+        {
+          "minAge": 0,
+          "maxAge": 17,
+          "percent": 30
+        },
+        {
+          "minAge": 18,
+          "maxAge": 59,
+          "percent": 60
+        },
+        {
+          "minAge": 60,
+          "maxAge": null,
+          "percent": 10
+        }
+      ],
+      "countsAreNotApproved": true,
+      "urbanRuralBreakdownNotApproved": true
+    },
+    "ruralUrbanShares": {
+      "scope": "casa_darovan_entire_territory",
+      "status": "APPROVED_AUTHOR_RANGES",
+      "decisionId": "DAR-D08-02",
+      "option": "3C",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0802FinalBatch",
+      "unit": "percent",
+      "urbanSharePercentRange": {
+        "minInclusive": 35,
+        "maxInclusive": 45
+      },
+      "ruralSharePercentRange": {
+        "minInclusive": 55,
+        "maxInclusive": 65
+      },
+      "complementaryPairedExtremes": true,
+      "exactUrbanPopulation": null,
+      "exactRuralPopulation": null,
+      "cityListIsCompleteUrbanCoverage": false,
+      "settlementClassificationApproved": false
+    },
     "headOfHouseholdDefault": null,
     "sexBasedChoresDefault": false,
     "marriageImpliesCoResidence": false,
@@ -381,7 +430,29 @@
       "approvalScope": "urban_only_mean_range_no_household_census_no_obligatory_individual_size",
       "notAnIndividualHouseholdLimit": true
     },
-    "ruralMeanPersonsPerHouseholdRange": null
+    "ruralMeanPersonsPerHouseholdRange": {
+      "minInclusive": 4,
+      "maxInclusive": 6,
+      "unit": "personas_por_hogar",
+      "statistic": "rango_de_media_rural",
+      "status": "APPROVED_AUTHOR_RANGE",
+      "decisionId": "DAR-D08-02",
+      "option": "B",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0802FinalBatch",
+      "approvalScope": "rural_only_mean_range_no_household_census_no_obligatory_individual_size",
+      "notAnIndividualHouseholdLimit": true
+    },
+    "urbanRuralAgeBreakdown": {
+      "status": "NO_QUANTITATIVE_SPLIT_APPROVED",
+      "decisionId": "DAR-D08-02",
+      "option": "2C",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0802FinalBatch",
+      "urbanAgeShares": null,
+      "ruralAgeShares": null,
+      "sameDistributionAssumed": false
+    }
   },
   "occupationFamilies": [
     {
@@ -702,7 +773,6 @@
     "syvaris_island_outside_city_population",
     "syvaris_island_total_population",
     "all_household_counts",
-    "age_structure",
     "job_counts",
     "service_provider_counts",
     "service_capacity",
@@ -715,7 +785,13 @@
     "settlement_physical_count",
     "urban_mean_household_size_exact",
     "urban_household_size_distribution",
-    "rural_mean_household_size_range"
+    "rural_mean_household_size_exact",
+    "rural_household_size_distribution",
+    "urban_rural_age_distributions",
+    "exact_urban_rural_population_shares",
+    "urban_rural_settlement_classification",
+    "undocumented_urban_population_coverage",
+    "exact_age_band_counts"
   ],
   "authorialApprovalRequiredFor": [
     "new_canonical_population_bands",
@@ -755,5 +831,17 @@
     "physicalSettlementCount": null,
     "cityTotalsAreExact": false,
     "runtimeInstantiated": false
+  },
+  "socialInstitutionPolicyD08": {
+    "status": "AUTHORED_NO_NEW_IN_D08",
+    "decisionId": "DAR-D08-03",
+    "option": "4A",
+    "provenance": "AUTHORED",
+    "sourceRefId": "decisionD0802FinalBatch",
+    "newSocialCategoriesApproved": false,
+    "newSingularInstitutionsApproved": false,
+    "newProfessionalSpecialtiesApproved": false,
+    "relyOnExistingNorgardAndDarovanCanon": true,
+    "futurePhasesMaySubmitNewProposals": true
   }
 }

@@ -40,7 +40,8 @@ TOP = {"schemaVersion", "documentId", "version", "phase", "preparedAt",
        "status", "canonStatus", "authorityChain", "sourceRefs", "coreRpgAudit",
        "manualCityIds", "excludedCityIds", "cities", "territoryPopulation", "settlementProfiles",
        "householdModel", "occupationFamilies", "serviceNeeds", "causalFlow",
-       "planningUnknowns", "authorialApprovalRequiredFor", "runtimeIntegration"}
+       "planningUnknowns", "authorialApprovalRequiredFor", "runtimeIntegration",
+       "socialInstitutionPolicyD08"}
 
 def check(pred: bool, message: str) -> None:
     if not pred:
@@ -54,7 +55,7 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and data["documentId"] == "darovan_d08_household_population_services"
           and data["phase"] == "D08" and data["version"] == "0.1"
           and data["status"] == "planning_reference_not_runtime"
-          and data["canonStatus"] == "approved_population_ranges_and_urban_household_mean_range_no_new_entities_or_institutions"
+          and data["canonStatus"] == "approved_D08_demographic_and_household_ranges_no_new_social_institutions"
           and data["authorityChain"] == AUTH, "schema, phase, authority")
     schema = read(repo, SCHEMA)
     check(schema.get("$schema") == "https://json-schema.org/draft/2020-12/schema"
@@ -62,13 +63,14 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and set(schema["properties"]) == TOP
           and schema["additionalProperties"] is False, "D08 JSON Schema mismatch")
     source = data["sourceRefs"]
-    check(len(source) == 30 and all(isinstance(k, str) and isinstance(v, str)
+    check(len(source) == 31 and all(isinstance(k, str) and isinstance(v, str)
           and (repo / v).is_file() and v.startswith("Worldbuilding/")
           for k, v in source.items()), "missing/redirected D08 sources")
     for k in ["d04", "d05", "d06", "d07", "treihord", "rural", "family",
               "labor", "property", "health", "fiscal", "currency", "maritime",
               "res", "kin", "care", "chore", "emp", "apr", "need", "wait",
-              "txn", "own", "food", "waste", "decisionD0801", "decisionD0801Taramin", "decisionD0801Syvaris", "decisionD0801DarovanTotal", "decisionD0802UrbanHousehold"]:
+              "txn", "own", "food", "waste", "decisionD0801", "decisionD0801Taramin", "decisionD0801Syvaris", "decisionD0801DarovanTotal",
+              "decisionD0802UrbanHousehold", "decisionD0802FinalBatch"]:
         check(k in source, "missing source key: " + k)
     d04, d06, d07 = (read(repo, source[k]) for k in ("d04", "d06", "d07"))
     check(d07["manualCityIds"] == CITY_IDS
@@ -206,7 +208,7 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
     household = data["householdModel"]
     check(set(household) == {"provenance", "patterns", "patternsAreNotSocialCasteOrCanonicalHouseholdShares",
           "householdCount", "meanPersonsPerHousehold", "urbanMeanPersonsPerHouseholdRange",
-          "ruralMeanPersonsPerHouseholdRange", "ageShares", "ruralUrbanShares",
+          "ruralMeanPersonsPerHouseholdRange", "ageShares", "urbanRuralAgeBreakdown", "ruralUrbanShares",
           "headOfHouseholdDefault", "sexBasedChoresDefault", "marriageImpliesCoResidence",
           "coResidenceImpliesMarriage", "kinshipImpliesCare", "ownershipImpliesResidence",
           "movingHouseMovesBusiness", "populationMaterializesAutomatically",
@@ -217,9 +219,8 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           "unrelated_co_residents", "temporary_separation"]
           and household["patternsAreNotSocialCasteOrCanonicalHouseholdShares"] is True
           and household["provenance"] == "DERIVED"
-          and household["ruralMeanPersonsPerHouseholdRange"] is None
           and all(household[k] is None for k in ["householdCount",
-                "meanPersonsPerHousehold", "ageShares", "ruralUrbanShares",
+                "meanPersonsPerHousehold",
                 "headOfHouseholdDefault"])
           and all(household[k] is False for k in ["sexBasedChoresDefault",
                 "marriageImpliesCoResidence", "coResidenceImpliesMarriage",
@@ -247,6 +248,82 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and "Opción B" in urban_decision_text
           and "hogares urbanos" in urban_decision_text,
           "DAR-D08-02 author decision or household scope missing")
+    expected_rural_mean = {
+        "minInclusive": 4, "maxInclusive": 6, "unit": "personas_por_hogar",
+        "statistic": "rango_de_media_rural", "status": "APPROVED_AUTHOR_RANGE",
+        "decisionId": "DAR-D08-02", "option": "B", "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0802FinalBatch",
+        "approvalScope": "rural_only_mean_range_no_household_census_no_obligatory_individual_size",
+        "notAnIndividualHouseholdLimit": True,
+    }
+    check(household["ruralMeanPersonsPerHouseholdRange"] == expected_rural_mean,
+          "DAR-D08-02 rural mean interval or scope changed")
+    expected_age_shares = {
+        "scope": "casa_darovan_entire_territory",
+        "status": "APPROVED_AUTHOR_DISTRIBUTION", "decisionId": "DAR-D08-02",
+        "option": "1B", "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0802FinalBatch", "unit": "percent",
+        "bands": [
+            {"minAge": 0, "maxAge": 17, "percent": 30},
+            {"minAge": 18, "maxAge": 59, "percent": 60},
+            {"minAge": 60, "maxAge": None, "percent": 10},
+        ],
+        "countsAreNotApproved": True,
+        "urbanRuralBreakdownNotApproved": True,
+    }
+    check(household["ageShares"] == expected_age_shares
+          and sum(b["percent"] for b in household["ageShares"]["bands"]) == 100,
+          "DAR-D08-02 age 1B proportions changed or claims exact counts")
+    check(household["urbanRuralAgeBreakdown"] == {
+        "status": "NO_QUANTITATIVE_SPLIT_APPROVED", "decisionId": "DAR-D08-02",
+        "option": "2C", "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0802FinalBatch",
+        "urbanAgeShares": None, "ruralAgeShares": None,
+        "sameDistributionAssumed": False,
+    }, "DAR-D08-02 2C claims separate or identical urban/rural age profiles")
+    expected_shares = {
+        "scope": "casa_darovan_entire_territory",
+        "status": "APPROVED_AUTHOR_RANGES", "decisionId": "DAR-D08-02",
+        "option": "3C", "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0802FinalBatch", "unit": "percent",
+        "urbanSharePercentRange": {"minInclusive": 35, "maxInclusive": 45},
+        "ruralSharePercentRange": {"minInclusive": 55, "maxInclusive": 65},
+        "complementaryPairedExtremes": True,
+        "exactUrbanPopulation": None, "exactRuralPopulation": None,
+        "cityListIsCompleteUrbanCoverage": False,
+        "settlementClassificationApproved": False,
+    }
+    check(household["ruralUrbanShares"] == expected_shares,
+          "DAR-D08-02 3C urban-rural range or precision violated")
+    shares = household["ruralUrbanShares"]
+    check(shares["urbanSharePercentRange"]["minInclusive"] +
+          shares["ruralSharePercentRange"]["maxInclusive"] == 100
+          and shares["urbanSharePercentRange"]["maxInclusive"] +
+          shares["ruralSharePercentRange"]["minInclusive"] == 100,
+          "DAR-D08-02 urban/rural endpoints not complementary")
+    check(data["socialInstitutionPolicyD08"] == {
+        "status": "AUTHORED_NO_NEW_IN_D08", "decisionId": "DAR-D08-03",
+        "option": "4A", "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0802FinalBatch",
+        "newSocialCategoriesApproved": False,
+        "newSingularInstitutionsApproved": False,
+        "newProfessionalSpecialtiesApproved": False,
+        "relyOnExistingNorgardAndDarovanCanon": True,
+        "futurePhasesMaySubmitNewProposals": True,
+    }, "DAR-D08-03 4A new institutions or future canon changed")
+    batch_text = (repo / source["decisionD0802FinalBatch"]).read_text(encoding="utf-8")
+    check(all(s in batch_text for s in ["4–6", "1B", "2C", "3C", "4A",
+                                      "35–45", "55–65", "30 %", "60 %", "10 %"]),
+          "D08 final authorial batch provenance missing")
+    # Four known cities are NOT the exhaustive urban population under the
+    # approved 35–45 % territorial share. Keep coverage UNKNOWN; do not
+    # generate or name settlements to fill the gap.
+    known_city_upper = sum((c["populationRange"]["maxInclusive"]
+            if c["populationRange"] else c["populationApprox"]) for c in cities)
+    territory_min = data["territoryPopulation"]["populationRange"]["minInclusive"]
+    check(known_city_upper < (territory_min * 35) / 100
+          and "undocumented_urban_population_coverage" in data["planningUnknowns"],
+          "urban coverage gap concealed or fictional urban totals approved")
     jobs = data["occupationFamilies"]
     check([j["family"] for j in jobs] == EXPECTED_PROFESSIONS,
           "missing/extraneous occupation family")
@@ -315,7 +392,15 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and "all_household_counts" in data["planningUnknowns"]
           and "urban_mean_household_size_exact" in data["planningUnknowns"]
           and "urban_household_size_distribution" in data["planningUnknowns"]
-          and "rural_mean_household_size_range" in data["planningUnknowns"]
+          and "rural_mean_household_size_range" not in data["planningUnknowns"]
+          and "age_structure" not in data["planningUnknowns"]
+          and "rural_mean_household_size_exact" in data["planningUnknowns"]
+          and "rural_household_size_distribution" in data["planningUnknowns"]
+          and "urban_rural_age_distributions" in data["planningUnknowns"]
+          and "exact_urban_rural_population_shares" in data["planningUnknowns"]
+          and "urban_rural_settlement_classification" in data["planningUnknowns"]
+          and "undocumented_urban_population_coverage" in data["planningUnknowns"]
+          and "exact_age_band_counts" in data["planningUnknowns"]
           and "new_social_categories" in data["authorialApprovalRequiredFor"]
           and "new_canonical_population_bands" in data["authorialApprovalRequiredFor"],
           "unknown and authorial approvals dropped")
@@ -427,6 +512,43 @@ def run() -> None:
         ("urban_mean_source_deleted", "d", lambda x: x["sourceRefs"].pop("decisionD0802UrbanHousehold")),
         ("urban_mean_unknown_rural_removed", "d", lambda x: x["planningUnknowns"].remove("rural_mean_household_size_range")),
         ("urban_mean_fake_household_count", "d", lambda x: x["householdModel"].update(householdCount=80000)),
+
+        ("rural_mean_min_changed", "d", lambda x: x["householdModel"]["ruralMeanPersonsPerHouseholdRange"].update(minInclusive=3)),
+        ("rural_mean_max_changed", "d", lambda x: x["householdModel"]["ruralMeanPersonsPerHouseholdRange"].update(maxInclusive=7)),
+        ("rural_mean_range_revoked", "d", lambda x: x["householdModel"].update(ruralMeanPersonsPerHouseholdRange=None)),
+        ("rural_mean_wrong_provenance", "d", lambda x: x["householdModel"]["ruralMeanPersonsPerHouseholdRange"].update(provenance="DERIVED")),
+        ("rural_mean_wrong_statistic", "d", lambda x: x["householdModel"]["ruralMeanPersonsPerHouseholdRange"].update(statistic="rango_de_media_urbana")),
+        ("rural_mean_wrong_source", "d", lambda x: x["householdModel"]["ruralMeanPersonsPerHouseholdRange"].update(sourceRefId="decisionD0802UrbanHousehold")),
+        ("rural_mean_obligatory_size", "d", lambda x: x["householdModel"]["ruralMeanPersonsPerHouseholdRange"].update(notAnIndividualHouseholdLimit=False)),
+        ("age_child_share_changed", "d", lambda x: x["householdModel"]["ageShares"]["bands"][0].update(percent=35)),
+        ("age_adult_share_changed", "d", lambda x: x["householdModel"]["ageShares"]["bands"][1].update(percent=55)),
+        ("age_senior_share_changed", "d", lambda x: x["householdModel"]["ageShares"]["bands"][2].update(percent=15)),
+        ("age_min_age_changed", "d", lambda x: x["householdModel"]["ageShares"]["bands"][1].update(minAge=19)),
+        ("age_global_distribution_revoked", "d", lambda x: x["householdModel"].update(ageShares=None)),
+        ("age_global_distribution_wrong_scope", "d", lambda x: x["householdModel"]["ageShares"].update(scope="city_syvaris")),
+        ("age_exact_counts_fake", "d", lambda x: x["householdModel"]["ageShares"].update(countsAreNotApproved=False)),
+        ("age_split_fabricated", "d", lambda x: x["householdModel"]["urbanRuralAgeBreakdown"].update(urbanAgeShares={"0-17":30})),
+        ("age_same_split_assumed", "d", lambda x: x["householdModel"]["urbanRuralAgeBreakdown"].update(sameDistributionAssumed=True)),
+        ("age_split_option_mutated", "d", lambda x: x["householdModel"]["urbanRuralAgeBreakdown"].update(option="2A")),
+        ("age_split_status_mutated", "d", lambda x: x["householdModel"]["urbanRuralAgeBreakdown"].update(status="APPROVED_IDENTICAL")),
+        ("age_rural_split_fabricated", "d", lambda x: x["householdModel"]["urbanRuralAgeBreakdown"].update(ruralAgeShares={"60+":10})),
+        ("urban_population_min_changed", "d", lambda x: x["householdModel"]["ruralUrbanShares"]["urbanSharePercentRange"].update(minInclusive=34)),
+        ("urban_population_max_changed", "d", lambda x: x["householdModel"]["ruralUrbanShares"]["urbanSharePercentRange"].update(maxInclusive=46)),
+        ("rural_population_min_changed", "d", lambda x: x["householdModel"]["ruralUrbanShares"]["ruralSharePercentRange"].update(minInclusive=54)),
+        ("rural_population_max_changed", "d", lambda x: x["householdModel"]["ruralUrbanShares"]["ruralSharePercentRange"].update(maxInclusive=66)),
+        ("urban_rural_distribution_revoked", "d", lambda x: x["householdModel"].update(ruralUrbanShares=None)),
+        ("urban_rural_exact_fabricated", "d", lambda x: x["householdModel"]["ruralUrbanShares"].update(exactUrbanPopulation=130000)),
+        ("urban_rural_exhaustive_cities_claim", "d", lambda x: x["householdModel"]["ruralUrbanShares"].update(cityListIsCompleteUrbanCoverage=True)),
+        ("urban_rural_places_classified", "d", lambda x: x["householdModel"]["ruralUrbanShares"].update(settlementClassificationApproved=True)),
+        ("urban_rural_not_complementary", "d", lambda x: x["householdModel"]["ruralUrbanShares"].update(complementaryPairedExtremes=False)),
+        ("institution_new_category_fabricated", "d", lambda x: x["socialInstitutionPolicyD08"].update(newSocialCategoriesApproved=True)),
+        ("institution_singular_fabricated", "d", lambda x: x["socialInstitutionPolicyD08"].update(newSingularInstitutionsApproved=True)),
+        ("institution_specialty_fabricated", "d", lambda x: x["socialInstitutionPolicyD08"].update(newProfessionalSpecialtiesApproved=True)),
+        ("institution_future_proposals_banned", "d", lambda x: x["socialInstitutionPolicyD08"].update(futurePhasesMaySubmitNewProposals=False)),
+        ("institution_policy_revoked", "d", lambda x: x.pop("socialInstitutionPolicyD08")),
+        ("batch_source_removed", "d", lambda x: x["sourceRefs"].pop("decisionD0802FinalBatch")),
+        ("rural_mean_exact_count_fabricated", "d", lambda x: x["householdModel"].update(meanPersonsPerHousehold=5)),
+        ("urban_coverage_gap_hidden", "d", lambda x: x["planningUnknowns"].remove("undocumented_urban_population_coverage")),
 
         ("treihord_changed", "d", lambda x: x["cities"][0].update(populationApprox=30000)),
         ("made_city", "d", lambda x: x["cities"].append(copy.deepcopy(x["cities"][0]))),

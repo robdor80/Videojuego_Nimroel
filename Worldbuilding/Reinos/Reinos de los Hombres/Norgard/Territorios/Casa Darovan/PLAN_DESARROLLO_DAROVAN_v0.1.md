@@ -127,3 +127,6 @@ Taramin: autor aprueba **opción B, 14.000–20.000 habitantes** como rango can�
 
 ## D08 — Decisión del autor sobre hogares urbanos (22-10-2026)
 `DAR-D08-02`: opción B, **3–5 personas por hogar urbano de media**, rango de referencia aprobado. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-02_HOGARES_URBANOS_2026-10-22.md`. Sin tamaños individuales obligatorios ni hogares/viviendas/censos cuantificados; rurales y medias globales pendientes. Norgard Defaults y límites D06/D07 intactos. PR #34 Draft sin fusionar. D09–D11 no iniciadas.
+
+## D08 — Lote demográfico definitivo del autor (22-10-2026)
+Acta: `Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`. **B rural 4–6 personas/hogar de media**; **1B edades 30/60/10** para todo Darovan; **2C sin desglose etario rural/urbano cuantificado**; **3C 35–45 % urbano / 55–65 % rural**; **4A no crear categorías/instituciones/especialidades nuevas en D08**. El cálculo básico muestra cobertura incompleta del inventario de cuatro ciudades frente al rango porcentual urbano: no atribuir censos ni agregar localidades no documentadas. El rango territorial, ciudades y medias urbanas previamente aprobadas permanecen intactos. Completadas decisiones conceptuales de D08; números concretos por ciudad/pueblo, hogares, trabajadores, infraestructuras y runtime reservados. PR #34 continúa Draft sin fusionar; D09–D11 no autorizadas.

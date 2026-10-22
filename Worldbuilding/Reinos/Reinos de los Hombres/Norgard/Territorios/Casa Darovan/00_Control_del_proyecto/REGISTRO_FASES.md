@@ -71,3 +71,6 @@ El autor elige opción B: **rango canónico de 300.000–450.000 habitantes para
 
 ## DAR-D08-02 — Aprobación de hogares urbanos (22/10/2026)
 Autor aprueba **opción B, intervalo 3–5 personas por hogar urbano de media**. Fuente archivada con referencia autoral, índice JSON, esquema y regresiones negativas en rama D08. No se autoriza censo de hogares ni viviendas, media urbana exacta, media rural o cambios a los cuatro rangos urbanos y total Casa Darovan aprobados. PR #34 sigue abierta en Draft SIN FUSIONAR.
+
+## Resolución conjunta de cierre documental D08 — 22/10/2026
+En un solo lote, autor aprueba **rural B 4–6** media por hogar, **edad 1B 30/60/10**, **diferencias edades urbano/rurales 2C sin desglose**, **reparto territorial 3C urbano 35–45 % / rural 55–65 %** y **social 4A sin categorías ni instituciones nuevas en D08**. Persisten cifras exactas y asentamientos no registrados como `UNKNOWN`; cuatro ciudades no bastan para cubrir el porcentaje urbano y no se crean otras. Acta `../Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`; entrega documental lista para revisión tras CI del nuevo HEAD, sin runtime ni fusionar PR #34. D09–D11 no iniciadas.

@@ -25,7 +25,8 @@
     "planningUnknowns",
     "authorialApprovalRequiredFor",
     "runtimeIntegration",
-    "territoryPopulation"
+    "territoryPopulation",
+    "socialInstitutionPolicyD08"
   ],
   "additionalProperties": false,
   "properties": {
@@ -52,7 +53,7 @@
     },
     "canonStatus": {
       "type": "string",
-      "const": "approved_population_ranges_and_urban_household_mean_range_no_new_entities_or_institutions"
+      "const": "approved_D08_demographic_and_household_ranges_no_new_social_institutions"
     },
     "authorityChain": {
       "type": "array",
@@ -319,7 +320,10 @@
       "type": "object",
       "required": [
         "urbanMeanPersonsPerHouseholdRange",
-        "ruralMeanPersonsPerHouseholdRange"
+        "ruralMeanPersonsPerHouseholdRange",
+        "ageShares",
+        "urbanRuralAgeBreakdown",
+        "ruralUrbanShares"
       ],
       "properties": {
         "urbanMeanPersonsPerHouseholdRange": {
@@ -377,7 +381,89 @@
           }
         },
         "ruralMeanPersonsPerHouseholdRange": {
-          "type": "null"
+          "type": "object",
+          "const": {
+            "minInclusive": 4,
+            "maxInclusive": 6,
+            "unit": "personas_por_hogar",
+            "statistic": "rango_de_media_rural",
+            "status": "APPROVED_AUTHOR_RANGE",
+            "decisionId": "DAR-D08-02",
+            "option": "B",
+            "provenance": "AUTHORED",
+            "sourceRefId": "decisionD0802FinalBatch",
+            "approvalScope": "rural_only_mean_range_no_household_census_no_obligatory_individual_size",
+            "notAnIndividualHouseholdLimit": true
+          }
+        },
+        "ageShares": {
+          "type": "object",
+          "const": {
+            "scope": "casa_darovan_entire_territory",
+            "status": "APPROVED_AUTHOR_DISTRIBUTION",
+            "decisionId": "DAR-D08-02",
+            "option": "1B",
+            "provenance": "AUTHORED",
+            "sourceRefId": "decisionD0802FinalBatch",
+            "unit": "percent",
+            "bands": [
+              {
+                "minAge": 0,
+                "maxAge": 17,
+                "percent": 30
+              },
+              {
+                "minAge": 18,
+                "maxAge": 59,
+                "percent": 60
+              },
+              {
+                "minAge": 60,
+                "maxAge": null,
+                "percent": 10
+              }
+            ],
+            "countsAreNotApproved": true,
+            "urbanRuralBreakdownNotApproved": true
+          }
+        },
+        "urbanRuralAgeBreakdown": {
+          "type": "object",
+          "const": {
+            "status": "NO_QUANTITATIVE_SPLIT_APPROVED",
+            "decisionId": "DAR-D08-02",
+            "option": "2C",
+            "provenance": "AUTHORED",
+            "sourceRefId": "decisionD0802FinalBatch",
+            "urbanAgeShares": null,
+            "ruralAgeShares": null,
+            "sameDistributionAssumed": false
+          }
+        },
+        "ruralUrbanShares": {
+          "type": "object",
+          "const": {
+            "scope": "casa_darovan_entire_territory",
+            "status": "APPROVED_AUTHOR_RANGES",
+            "decisionId": "DAR-D08-02",
+            "option": "3C",
+            "provenance": "AUTHORED",
+            "sourceRefId": "decisionD0802FinalBatch",
+            "unit": "percent",
+            "urbanSharePercentRange": {
+              "minInclusive": 35,
+              "maxInclusive": 45
+            },
+            "ruralSharePercentRange": {
+              "minInclusive": 55,
+              "maxInclusive": 65
+            },
+            "complementaryPairedExtremes": true,
+            "exactUrbanPopulation": null,
+            "exactRuralPopulation": null,
+            "cityListIsCompleteUrbanCoverage": false,
+            "settlementClassificationApproved": false
+          }
         }
       }
     },
@@ -491,6 +577,21 @@
         "runtimeInstantiated": {
           "const": false
         }
+      }
+    },
+    "socialInstitutionPolicyD08": {
+      "type": "object",
+      "const": {
+        "status": "AUTHORED_NO_NEW_IN_D08",
+        "decisionId": "DAR-D08-03",
+        "option": "4A",
+        "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0802FinalBatch",
+        "newSocialCategoriesApproved": false,
+        "newSingularInstitutionsApproved": false,
+        "newProfessionalSpecialtiesApproved": false,
+        "relyOnExistingNorgardAndDarovanCanon": true,
+        "futurePhasesMaySubmitNewProposals": true
       }
     }
   }
