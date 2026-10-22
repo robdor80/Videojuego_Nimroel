@@ -510,7 +510,7 @@ def run() -> None:
         ("rural_mean_invented", "d", lambda x: x["householdModel"].update(ruralMeanPersonsPerHouseholdRange={"minInclusive":4,"maxInclusive":6})),
         ("urban_mean_source_id_changed", "d", lambda x: x["householdModel"]["urbanMeanPersonsPerHouseholdRange"].update(sourceRefId="decisionD0801Syvaris")),
         ("urban_mean_source_deleted", "d", lambda x: x["sourceRefs"].pop("decisionD0802UrbanHousehold")),
-        ("urban_mean_unknown_rural_removed", "d", lambda x: x["planningUnknowns"].remove("rural_mean_household_size_range")),
+        ("rural_mean_unknown_exact_removed", "d", lambda x: x["planningUnknowns"].remove("rural_mean_household_size_exact")),
         ("urban_mean_fake_household_count", "d", lambda x: x["householdModel"].update(householdCount=80000)),
 
         ("rural_mean_min_changed", "d", lambda x: x["householdModel"]["ruralMeanPersonsPerHouseholdRange"].update(minInclusive=3)),
