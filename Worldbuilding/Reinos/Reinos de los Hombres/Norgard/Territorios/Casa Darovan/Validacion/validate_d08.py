@@ -54,7 +54,7 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and data["documentId"] == "darovan_d08_household_population_services"
           and data["phase"] == "D08" and data["version"] == "0.1"
           and data["status"] == "planning_reference_not_runtime"
-          and data["canonStatus"] == "approved_veldora_population_range_no_new_entities_or_institutions"
+          and data["canonStatus"] == "approved_veldora_taramin_population_ranges_no_new_entities_or_institutions"
           and data["authorityChain"] == AUTH, "schema, phase, authority")
     schema = read(repo, SCHEMA)
     check(schema.get("$schema") == "https://json-schema.org/draft/2020-12/schema"
@@ -62,13 +62,13 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           and set(schema["properties"]) == TOP
           and schema["additionalProperties"] is False, "D08 JSON Schema mismatch")
     source = data["sourceRefs"]
-    check(len(source) == 26 and all(isinstance(k, str) and isinstance(v, str)
+    check(len(source) == 27 and all(isinstance(k, str) and isinstance(v, str)
           and (repo / v).is_file() and v.startswith("Worldbuilding/")
           for k, v in source.items()), "missing/redirected D08 sources")
     for k in ["d04", "d05", "d06", "d07", "treihord", "rural", "family",
               "labor", "property", "health", "fiscal", "currency", "maritime",
               "res", "kin", "care", "chore", "emp", "apr", "need", "wait",
-              "txn", "own", "food", "waste", "decisionD0801"]:
+              "txn", "own", "food", "waste", "decisionD0801", "decisionD0801Taramin"]:
         check(k in source, "missing source key: " + k)
     d04, d06, d07 = (read(repo, source[k]) for k in ("d04", "d06", "d07"))
     check(d07["manualCityIds"] == CITY_IDS
@@ -98,13 +98,14 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
               and city["conceptStatus"] == CITY_CONCEPT[cid]
               and set(city["d04Chains"]).issubset(chains)
               and len(city["d04Chains"]) >= 1
-              and city["sourceRefIds"] == (["d07", "d04", "decisionD0801"] if cid == "veldora" else ["d07", "d04"])
+              and city["sourceRefIds"] == (["d07", "d04", "decisionD0801"] if cid == "veldora" else
+                  ["d07", "d04", "decisionD0801Taramin"] if cid == "taramin" else ["d07", "d04"])
               and city["provenance"] == "DERIVED" and city["studyOnly"] is True,
               "invented city profession or concept change")
         check(city["populationApprox"] == (32000 if cid == "treihord" else None)
               and city["populationStatus"] == (
                 "AUTHORED_APPROX" if cid == "treihord" else
-                "AUTHORED_RANGE" if cid == "veldora" else "UNKNOWN")
+                "AUTHORED_RANGE" if cid in ("veldora", "taramin") else "UNKNOWN")
               and all(city[k] is None for k in ["householdCount", "occupationCounts",
                         "serviceCapacity", "workforceShare", "geometry", "travelTimes"])
               and city["physicalServicesRegistered"] == []
@@ -115,13 +116,28 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
             "status": "APPROVED_AUTHOR_RANGE", "decisionId": "DAR-D08-01",
             "option": "B", "provenance": "AUTHORED", "sourceRefId": "decisionD0801",
             "approvalScope": "demographic_reference_range_only_no_exact_count",
-        } if cid == "veldora" else None
+        } if cid == "veldora" else {
+            "minInclusive": 14000, "maxInclusive": 20000, "unit": "habitantes",
+            "status": "APPROVED_AUTHOR_RANGE", "decisionId": "DAR-D08-01",
+            "option": "B", "provenance": "AUTHORED",
+            "sourceRefId": "decisionD0801Taramin",
+            "approvalScope": "demographic_reference_range_only_no_exact_count",
+        } if cid == "taramin" else None
         check(city["populationRange"] == expected_range, "D08-01 population interval or city scope")
         if cid == "veldora":
             decision_text = (repo / source["decisionD0801"]).read_text(encoding="utf-8")
             check("DAR-D08-01" in decision_text and "29.000" in decision_text
                   and "35.000" in decision_text and "Opción B" in decision_text,
                   "D08-01 decision provenance missing")
+        if cid == "taramin":
+            decision_text = (repo / source["decisionD0801Taramin"]).read_text(encoding="utf-8")
+            check("DAR-D08-01" in decision_text and "14.000" in decision_text
+                  and "20.000" in decision_text and "Opción B" in decision_text,
+                  "D08-01 Taramin decision provenance missing")
+    check(cities[2]["populationRange"]["maxInclusive"] <
+          cities[1]["populationRange"]["minInclusive"], "Taramin must be below Veldora")
+    check(cities[2]["populationRange"]["maxInclusive"] < 32000,
+          "Taramin must be below approved Treihord approximate population")
     profiles = data["settlementProfiles"]
     check([p["tier"] for p in profiles] == ["aldea", "pueblo", "villa", "enclave"],
           "settlement tiers")
@@ -218,6 +234,9 @@ def validate(data: dict, fixtures: dict, repo: Path) -> None:
           "runtime integration falsely claimed")
     check("veldora_exact_population" in data["planningUnknowns"]
           and "veldora_population" not in data["planningUnknowns"]
+          and "taramin_exact_population" in data["planningUnknowns"]
+          and "taramin_population" not in data["planningUnknowns"]
+          and "syvaris_population" in data["planningUnknowns"]
           and "total_darovan_population" in data["planningUnknowns"]
           and "all_household_counts" in data["planningUnknowns"]
           and "new_social_categories" in data["authorialApprovalRequiredFor"]
@@ -282,6 +301,16 @@ def run() -> None:
         ("veldora_range_status_wrong", "d", lambda x: x["cities"][1].update(populationStatus="UNKNOWN")),
         ("veldora_range_source_unlinked", "d", lambda x: x["cities"][1].update(sourceRefIds=["d07", "d04"])),
         ("veldora_range_source_deleted", "d", lambda x: x["sourceRefs"].pop("decisionD0801")),
+
+        ("taramin_range_min_mutated", "d", lambda x: x["cities"][2]["populationRange"].update(minInclusive=13000)),
+        ("taramin_range_max_mutated", "d", lambda x: x["cities"][2]["populationRange"].update(maxInclusive=21000)),
+        ("taramin_range_revoked", "d", lambda x: x["cities"][2].update(populationRange=None)),
+        ("taramin_range_fabricated_on_syvaris", "d", lambda x: x["cities"][3].update(populationRange=copy.deepcopy(x["cities"][2]["populationRange"]))),
+        ("taramin_range_provenance_lost", "d", lambda x: x["cities"][2]["populationRange"].update(provenance="DERIVED")),
+        ("taramin_range_claims_exact_pop", "d", lambda x: x["cities"][2].update(populationApprox=17000)),
+        ("taramin_range_status_wrong", "d", lambda x: x["cities"][2].update(populationStatus="UNKNOWN")),
+        ("taramin_range_source_unlinked", "d", lambda x: x["cities"][2].update(sourceRefIds=["d07", "d04"])),
+        ("taramin_range_source_deleted", "d", lambda x: x["sourceRefs"].pop("decisionD0801Taramin")),
 
         ("treihord_changed", "d", lambda x: x["cities"][0].update(populationApprox=30000)),
         ("made_city", "d", lambda x: x["cities"].append(copy.deepcopy(x["cities"][0]))),

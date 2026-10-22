@@ -115,3 +115,6 @@ Tras D07 PR #32 fusionada (main `23670e68532447d918c04839369a9962448f2e44`), D08
 
 ## D08 — Decisión demográfica autoral parcial (22-10-2026)
 Veldora: aprobada **opción B, 29.000–35.000 habitantes** como intervalo canónico, sin total puntual ni despiece doméstico/laboral. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md`. Taramin/Syvaris/total Darovan y composición hogar continúan `UNKNOWN`; D08 PR #34 Draft y no fusionada. D09–D11 no iniciadas.
+
+## D08 — Aprobación demográfica de Taramin (22-10-2026)
+Taramin: autor aprueba **opción B, 14.000–20.000 habitantes** como rango canónico. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md`. Ya aprobado Veldora B 29.000–35.000; Treihord ~32.000 se preserva. Syvaris, población total, cifras exactas y demografía doméstica siguen `UNKNOWN`. Sin nuevo urbanismo ni integración CoreRPG. D08 PR #34 Draft sin fusionar; D09–D11 no iniciadas.

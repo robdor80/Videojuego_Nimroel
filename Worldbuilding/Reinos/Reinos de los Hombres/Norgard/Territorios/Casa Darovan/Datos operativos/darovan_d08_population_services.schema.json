@@ -51,7 +51,7 @@
     },
     "canonStatus": {
       "type": "string",
-      "const": "approved_veldora_population_range_no_new_entities_or_institutions"
+      "const": "approved_veldora_taramin_population_ranges_no_new_entities_or_institutions"
     },
     "authorityChain": {
       "type": "array",
@@ -193,6 +193,59 @@
                   "sourceRefId": {
                     "type": "string",
                     "const": "decisionD0801"
+                  },
+                  "approvalScope": {
+                    "type": "string",
+                    "const": "demographic_reference_range_only_no_exact_count"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "minInclusive",
+                  "maxInclusive",
+                  "unit",
+                  "status",
+                  "decisionId",
+                  "option",
+                  "provenance",
+                  "sourceRefId",
+                  "approvalScope"
+                ],
+                "properties": {
+                  "minInclusive": {
+                    "type": "integer",
+                    "const": 14000
+                  },
+                  "maxInclusive": {
+                    "type": "integer",
+                    "const": 20000
+                  },
+                  "unit": {
+                    "type": "string",
+                    "const": "habitantes"
+                  },
+                  "status": {
+                    "type": "string",
+                    "const": "APPROVED_AUTHOR_RANGE"
+                  },
+                  "decisionId": {
+                    "type": "string",
+                    "const": "DAR-D08-01"
+                  },
+                  "option": {
+                    "type": "string",
+                    "const": "B"
+                  },
+                  "provenance": {
+                    "type": "string",
+                    "const": "AUTHORED"
+                  },
+                  "sourceRefId": {
+                    "type": "string",
+                    "const": "decisionD0801Taramin"
                   },
                   "approvalScope": {
                     "type": "string",

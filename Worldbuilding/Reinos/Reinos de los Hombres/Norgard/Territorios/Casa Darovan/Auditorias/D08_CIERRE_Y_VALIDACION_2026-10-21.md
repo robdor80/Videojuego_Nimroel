@@ -29,3 +29,6 @@
 
 ## Adenda de revisión autoral posterior (22/10/2026)
 El autor aprobó DAR-D08-01 Veldora, opción B, como **rango canónico de 29.000–35.000 habitantes** (no número exacto). Véase `D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md`. Esta adenda modifica exclusivamente el alcance de la afirmación original de «solo Treihord con demografía conocida». Ningún valor se materializa en WorldState. Taramin/Syvaris/total siguen UNKNOWN. El HEAD de GitHub Actions original no sirve para validar este cambio: es imprescindible CI del nuevo commit antes de declarar este incremento en verde. PR #34 permanece Draft.
+
+## Segunda adenda autoral — Taramin — 22/10/2026
+El autor aprueba **Taramin, DAR-D08-01 opción B, intervalo canónico 14.000–20.000 habitantes**, sin cifra exacta. Acta `D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md`. Es una modificación ulterior a la adenda Veldora y a la auditoría histórica inicial, sin alterarlas retroactivamente. La cifra de Syvaris y el total territorial siguen UNKNOWN; no se añade ciudad, edificio, NPC ni instancia CoreRPG. La validación nueva exige un CI de HEAD actualizado Windows/Linux, sin depender del anterior run de Veldora. PR #34 sigue Draft y sin fusionar.

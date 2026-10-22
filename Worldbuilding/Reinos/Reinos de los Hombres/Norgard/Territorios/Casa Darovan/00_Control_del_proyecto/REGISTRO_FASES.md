@@ -59,3 +59,6 @@ El autor aprobó DAR-D07-01 Veldora **B** (varios sectores comerciales orgánico
 
 ## Aprobación parcial DAR-D08-01 — 22/10/2026
 El autor aprueba Veldora **opción B, intervalo 29.000–35.000 habitantes** como rango demográfico canónico, sin censo exacto. Registro incorporado solo a rama D08/PR Draft #34. Taramin, Syvaris y total Darovan siguen `UNKNOWN`. D07 no se altera; D09–D11 no se inician.
+
+## Aprobación parcial DAR-D08-01 — Taramin — 22/10/2026
+El autor aprueba **opción B, rango 14.000–20.000 habitantes** para Taramin como canon de referencia, sin censo exacto. Veldora B (29.000–35.000) y Treihord ~32.000 conservadas. Syvaris y población total Darovan permanecen `UNKNOWN`. Se anexa la decisión y se amplían validaciones en rama D08, PR #34 Draft sin fusión. Ninguna fase D09–D11 iniciada.

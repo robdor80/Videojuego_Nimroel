@@ -19,3 +19,6 @@ Ejecutar `python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios
 
 ## Extensión DAR-D08-01 — 22/10/2026
 El validador debe aceptar únicamente el rango autoral **[29000,35000]** para **Veldora**, con `AUTHORED_RANGE` y referencia exacta a la decisión. Rechazar alteración de extremos, pérdida de autoría, desaparición de rango, creación de cifra puntual y contaminación de Taramin/Syvaris o Treihord. Las cifras restantes y la población total continúan nulas. Nueve mutaciones negativas adicionales: de 35 a **44**. No altera las regresiones D01–D07.
+
+## Extensión Taramin DAR-D08-01 — 22/10/2026
+Taramin: intervalo autoral inclusivo **[14000,20000]** (opción B) ligado a acta propia y estado `AUTHORED_RANGE`, sin cifra exacta, hogares, infraestructura ni nueva instancia runtime. Preservar el intervalo de Veldora [29000,35000] y Treihord ≈32.000, y mantener Syvaris UNKNOWN. Rechazar alteraciones de extremos, fuente, provincia, clase, autoría, censo inventado o trasplante del rango a Syvaris. Se añaden **9 negativos** (44 → **53** negativos D08), además del control de orden de escala poblacional. Ningún cambio de los validadores D01–D07.

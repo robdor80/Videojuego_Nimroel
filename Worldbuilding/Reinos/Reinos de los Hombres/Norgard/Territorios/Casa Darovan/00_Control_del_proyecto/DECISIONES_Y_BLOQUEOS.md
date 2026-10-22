@@ -111,3 +111,8 @@ Estas reservas no impiden validar datos documentales. Decisiones sustantivas de 
 Se conserva `UNKNOWN` el número exacto de Veldora; no convertir el punto medio ni una semilla en canon, ni derivar viviendas, empleo, aforos o stock. Sin cambios en Treihord ≈32.000 o la decisión urbana D07 Veldora B. **DAR-D08-01 sigue abierto exclusivamente para las siguientes localidades** Taramin/Syvaris y el total territorial, tratadas una a una. Todas las demás decisiones pendientes se mantienen.
 
 PR #34 sigue **Draft y SIN FUSIONAR**. D08 no es integración runtime.
+
+## DAR-D08-01 — Taramin, intervalo poblacional aprobado (22/10/2026)
+**RESUELTA PARCIALMENTE por el autor:** Opción **B**, **14.000–20.000 habitantes**, intervalo demográfico de referencia canónico para Taramin. Aprobación expresa; acta `../Auditorias/D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md`.
+
+No se fija censo exacto ni plazas de empleo, hogares, población latente, infraestructura o capacidades. Se preserva el carácter de ciudad pesquera mediana, la opción D07-A de zona pesquera principal **solo conceptual**, y su escala inferior a Treihord/Veldora. Quedan abiertas **Syvaris, el total territorial, las cifras puntuales** y DAR-D08-02/03. El registro de Veldora B 29.000–35.000 sigue vigente. PR #34 permanece Draft, sin fusionar; D09 no iniciada.
