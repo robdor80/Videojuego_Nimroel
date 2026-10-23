@@ -1,0 +1,110 @@
+{
+  "version": "0.1.0",
+  "status": "TEST_ONLY",
+  "worldStateEvents": 0,
+  "scenarios": [
+    {
+      "id": "T01",
+      "title": "Mineral y Crisol",
+      "classification": "TEST_ONLY",
+      "kind": "SPECIFICATION_NOT_EXECUTED",
+      "sourcePhases": [
+        "D04",
+        "D05",
+        "D09"
+      ],
+      "expected": "Origen de mineral, transformación y Crisol sin inventar minas ni caminos",
+      "requires": "resourceConversion",
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T02",
+      "title": "Suministro de carbón",
+      "classification": "TEST_ONLY",
+      "kind": "SPECIFICATION_NOT_EXECUTED",
+      "sourcePhases": [
+        "D04",
+        "D05"
+      ],
+      "expected": "Dependencia Azurios-Treihord sin inventar ruta o crisis histórica",
+      "requires": "resourceConversion",
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T03",
+      "title": "Transporte por el Belara",
+      "classification": "TEST_ONLY",
+      "kind": "SPECIFICATION_NOT_EXECUTED",
+      "sourcePhases": [
+        "D02",
+        "D05"
+      ],
+      "expected": "Solo enlace atestiguado de barcazas someras y capacidad desconocida",
+      "requires": "routing",
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T04",
+      "title": "Comercio exterior de Veldora",
+      "classification": "TEST_ONLY",
+      "kind": "SPECIFICATION_NOT_EXECUTED",
+      "sourcePhases": [
+        "D04",
+        "D09"
+      ],
+      "expected": "Aduanas exteriores y propiedad acreditada; prohibidas aduanas interiores",
+      "requires": "fiscalAuthority",
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T05",
+      "title": "Pesca y abastecimiento de Taramin",
+      "classification": "TEST_ONLY",
+      "kind": "SPECIFICATION_NOT_EXECUTED",
+      "sourcePhases": [
+        "D04",
+        "D08"
+      ],
+      "expected": "No materializar barcos, especies, stocks ni tasas sin fuente",
+      "requires": "resourceConversion",
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T06",
+      "title": "Comunicaciones y tránsito de Syvaris",
+      "classification": "TEST_ONLY",
+      "kind": "SPECIFICATION_NOT_EXECUTED",
+      "sourcePhases": [
+        "D05",
+        "D07"
+      ],
+      "expected": "No inventar rutas marítimas ni tiempos",
+      "requires": "routing",
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T07",
+      "title": "Migración de hogares",
+      "classification": "TEST_ONLY",
+      "kind": "SPECIFICATION_NOT_EXECUTED",
+      "sourcePhases": [
+        "D08"
+      ],
+      "expected": "Conservar identidades y relaciones; ausencia de mecánica ejecutable",
+      "requires": "householdMigration",
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T08",
+      "title": "Cultura y autonomía individual",
+      "classification": "TEST_ONLY",
+      "kind": "SPECIFICATION_NOT_EXECUTED",
+      "sourcePhases": [
+        "D10"
+      ],
+      "expected": "Origen o trabajo no asignan prejuicios ni personalidad automática",
+      "requires": "culturalPersonality",
+      "executedInCoreRPG": false
+    }
+  ]
+}

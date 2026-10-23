@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Darovan D11 authoring projection v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "projectionVersion",
+    "contentContract",
+    "packId",
+    "authorityLayers",
+    "status",
+    "worldStateEntitiesCreated",
+    "sourceLocks",
+    "definitions",
+    "canonicalCityIds",
+    "excludedCityIds",
+    "islandAdministrativeOwner",
+    "arvenCulturalIdentity",
+    "namedRiverIds",
+    "hydroSystemIds",
+    "belaraCrossesTreihord",
+    "physicalTransportLinkIds",
+    "supplyRelationsNotRoutes",
+    "unmeasuredRouteDistances",
+    "sourceDemographyPointer",
+    "sourceCultureDecisionPointer",
+    "executionCapabilities",
+    "dataClassification"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "projectionVersion": {
+      "const": "0.1.0"
+    },
+    "contentContract": {
+      "const": "0.1.0"
+    },
+    "packId": {
+      "const": "nimroel.darovan.territory"
+    },
+    "authorityLayers": {
+      "type": "array",
+      "minItems": 5
+    },
+    "status": {
+      "const": "planning_reference_not_runtime"
+    },
+    "worldStateEntitiesCreated": {
+      "const": 0
+    },
+    "sourceLocks": {
+      "type": "array",
+      "minItems": 11
+    },
+    "definitions": {
+      "type": "array",
+      "minItems": 5
+    },
+    "canonicalCityIds": {
+      "type": "array",
+      "minItems": 4
+    },
+    "excludedCityIds": {
+      "type": "array",
+      "minItems": 1
+    },
+    "islandAdministrativeOwner": {
+      "type": "object"
+    },
+    "arvenCulturalIdentity": {
+      "type": "null"
+    },
+    "namedRiverIds": {
+      "type": "array",
+      "minItems": 5
+    },
+    "hydroSystemIds": {
+      "type": "array",
+      "minItems": 4
+    },
+    "belaraCrossesTreihord": {
+      "const": false
+    },
+    "physicalTransportLinkIds": {
+      "type": "array",
+      "minItems": 3
+    },
+    "supplyRelationsNotRoutes": {
+      "type": "array",
+      "minItems": 4
+    },
+    "unmeasuredRouteDistances": {
+      "const": true
+    },
+    "sourceDemographyPointer": {
+      "type": "string"
+    },
+    "sourceCultureDecisionPointer": {
+      "type": "string"
+    },
+    "executionCapabilities": {
+      "type": "object"
+    },
+    "dataClassification": {
+      "const": "AUTHORING_PROJECTION_ONLY"
+    }
+  }
+}
