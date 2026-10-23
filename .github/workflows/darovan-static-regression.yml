@@ -1,4 +1,4 @@
-name: Darovan static regression D01-D09
+name: Darovan static regression D01-D10
 
 on:
   pull_request:
@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   static-regressions:
-    name: Python D01-D09 · ${{ matrix.os }}
+    name: Python D01-D10 · ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     strategy:
@@ -49,3 +49,5 @@ jobs:
         run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d08.py"
       - name: Validate D09 government, fiscality, security, cross-phase provenance and negative mutations
         run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d09.py"
+      - name: Validate D10 cultural profiles, authority and negative mutations
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d10.py"

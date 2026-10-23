@@ -1,0 +1,438 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nimroel.invalid/schemas/darovan_d10_culture_society.schema.json",
+  "title": "Darovan D10, contractual planning data only (not executable)",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "documentId",
+    "version",
+    "preparedAt",
+    "phase",
+    "status",
+    "canonStatus",
+    "authorityChain",
+    "sourceRefs",
+    "authorDecisions",
+    "localProfiles",
+    "guardrails",
+    "unknowns",
+    "runtimeIntegration"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "documentId": {
+      "const": "darovan_d10_culture_society"
+    },
+    "version": {
+      "const": "0.1"
+    },
+    "preparedAt": {
+      "const": "2026-10-23"
+    },
+    "phase": {
+      "const": "D10"
+    },
+    "status": {
+      "const": "planning_reference_not_runtime"
+    },
+    "canonStatus": {
+      "const": "author_approved_17_conceptual_choices"
+    },
+    "authorityChain": {
+      "const": [
+        "nimroel_core",
+        "norgard_defaults",
+        "casa_darovan",
+        "locality",
+        "world_state"
+      ]
+    },
+    "sourceRefs": {
+      "type": "object",
+      "minProperties": 30,
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^Worldbuilding/"
+      }
+    },
+    "authorDecisions": {
+      "type": "array",
+      "minItems": 17,
+      "maxItems": 17,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "option",
+          "scope",
+          "provenance",
+          "approval",
+          "createsInstitutions",
+          "createsPersons",
+          "createsEvents",
+          "createsLocalLaw"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^DAR-D10-(0[1-9]|1[0-7])$"
+          },
+          "option": {
+            "enum": [
+              "B",
+              "C"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 4
+          },
+          "provenance": {
+            "const": "AUTHORED_CONCEPT"
+          },
+          "approval": {
+            "const": "AUTHOR_BATCH_2026-10-23"
+          },
+          "createsInstitutions": {
+            "const": false
+          },
+          "createsPersons": {
+            "const": false
+          },
+          "createsEvents": {
+            "const": false
+          },
+          "createsLocalLaw": {
+            "const": false
+          }
+        }
+      }
+    },
+    "localProfiles": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "decision",
+          "culturalState",
+          "contextTags",
+          "individualVariation",
+          "createsNewLocations",
+          "createsNpc"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "decision": {
+            "type": "string"
+          },
+          "culturalState": {
+            "enum": [
+              "AUTHORED_CONCEPT",
+              "UNKNOWN",
+              "DERIVED_NONCANON"
+            ]
+          },
+          "contextTags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "individualVariation": {
+            "const": true
+          },
+          "createsNewLocations": {
+            "const": false
+          },
+          "createsNpc": {
+            "const": false
+          }
+        }
+      }
+    },
+    "guardrails": {
+      "type": "object",
+      "required": [
+        "newLegalCastes",
+        "newLegalPrivileges",
+        "automaticNpcPersonalityFromOccupation",
+        "automaticNpcPersonalityFromResidence",
+        "automaticNpcCrimeFromWealth",
+        "automaticNpcHostilityFromIsland",
+        "inventedInstitution",
+        "inventedCalendarHoliday",
+        "newReligiousRite",
+        "newRecipes",
+        "physicalClocks",
+        "foreignResidentsAutoMaterialized",
+        "houseNavy",
+        "newRoutes",
+        "newSettlements",
+        "nameOrSurnameRandomOverride",
+        "rerollExistingPersonality",
+        "cultureAffectsLearnedExpressionOnly",
+        "materialTransferRequiresOwn",
+        "socialKnowledgeRequiresEvidence",
+        "funeralCremation",
+        "funeralTerritorialReturn",
+        "mourningFormalDays",
+        "treihordCanonicalDistrictCount",
+        "treihordBelaraCrossesCity",
+        "canonicalCityIds",
+        "arvenIsDarovan",
+        "karsathIsDarovan",
+        "fairTreihordAlreadyCanonical",
+        "fairNewNameOrDateApproved",
+        "norgardNavyOnSyvaris",
+        "darovanMintAllowed"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "newLegalCastes": {
+          "const": false
+        },
+        "newLegalPrivileges": {
+          "const": false
+        },
+        "automaticNpcPersonalityFromOccupation": {
+          "const": false
+        },
+        "automaticNpcPersonalityFromResidence": {
+          "const": false
+        },
+        "automaticNpcCrimeFromWealth": {
+          "const": false
+        },
+        "automaticNpcHostilityFromIsland": {
+          "const": false
+        },
+        "inventedInstitution": {
+          "const": false
+        },
+        "inventedCalendarHoliday": {
+          "const": false
+        },
+        "newReligiousRite": {
+          "const": false
+        },
+        "newRecipes": {
+          "const": false
+        },
+        "physicalClocks": {
+          "const": false
+        },
+        "foreignResidentsAutoMaterialized": {
+          "const": false
+        },
+        "houseNavy": {
+          "const": false
+        },
+        "newRoutes": {
+          "const": false
+        },
+        "newSettlements": {
+          "const": false
+        },
+        "nameOrSurnameRandomOverride": {
+          "const": false
+        },
+        "rerollExistingPersonality": {
+          "const": false
+        },
+        "cultureAffectsLearnedExpressionOnly": {
+          "const": true
+        },
+        "materialTransferRequiresOwn": {
+          "const": true
+        },
+        "socialKnowledgeRequiresEvidence": {
+          "const": true
+        },
+        "funeralCremation": {
+          "const": true
+        },
+        "funeralTerritorialReturn": {
+          "const": true
+        },
+        "mourningFormalDays": {
+          "const": 3
+        },
+        "treihordCanonicalDistrictCount": {
+          "const": 8
+        },
+        "treihordBelaraCrossesCity": {
+          "const": false
+        },
+        "canonicalCityIds": {
+          "const": [
+            "treihord",
+            "veldora",
+            "taramin",
+            "syvaris"
+          ]
+        },
+        "arvenIsDarovan": {
+          "const": true
+        },
+        "karsathIsDarovan": {
+          "const": false
+        },
+        "fairTreihordAlreadyCanonical": {
+          "const": true
+        },
+        "fairNewNameOrDateApproved": {
+          "const": false
+        },
+        "norgardNavyOnSyvaris": {
+          "const": true
+        },
+        "darovanMintAllowed": {
+          "const": false
+        }
+      }
+    },
+    "unknowns": {
+      "type": "object",
+      "required": [
+        "arvenCulturalIdentity",
+        "arvenLocalCustoms",
+        "fairOfficialName",
+        "fairExactDates",
+        "fairAnnualFrequency",
+        "galdrenRivalryOrigin",
+        "newFeastDatesOrTitles",
+        "newRites",
+        "funeralReturnLocations",
+        "specificResidents",
+        "specificActors",
+        "newSettlements",
+        "newLocalInstitutions",
+        "newLanguageOrDialect",
+        "syvarisIslandPopulationExact",
+        "realWorldStateEvents",
+        "localDressUniforms",
+        "newRecipes",
+        "singularHistoricalNarratives"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "arvenCulturalIdentity": {
+          "type": "null"
+        },
+        "arvenLocalCustoms": {
+          "type": "null"
+        },
+        "fairOfficialName": {
+          "type": "null"
+        },
+        "fairExactDates": {
+          "type": "null"
+        },
+        "fairAnnualFrequency": {
+          "type": "null"
+        },
+        "galdrenRivalryOrigin": {
+          "type": "null"
+        },
+        "newFeastDatesOrTitles": {
+          "type": "null"
+        },
+        "newRites": {
+          "type": "null"
+        },
+        "funeralReturnLocations": {
+          "type": "null"
+        },
+        "specificResidents": {
+          "type": "null"
+        },
+        "specificActors": {
+          "type": "null"
+        },
+        "newSettlements": {
+          "type": "null"
+        },
+        "newLocalInstitutions": {
+          "type": "null"
+        },
+        "newLanguageOrDialect": {
+          "type": "null"
+        },
+        "syvarisIslandPopulationExact": {
+          "type": "null"
+        },
+        "realWorldStateEvents": {
+          "type": "null"
+        },
+        "localDressUniforms": {
+          "type": "null"
+        },
+        "newRecipes": {
+          "type": "null"
+        },
+        "singularHistoricalNarratives": {
+          "type": "null"
+        }
+      }
+    },
+    "runtimeIntegration": {
+      "type": "object",
+      "required": [
+        "coreRpgExecuted",
+        "godotExecuted",
+        "gdeExtensionExecuted",
+        "worldStateMaterialized",
+        "createdNpcCount",
+        "createdBuildingCount",
+        "createdSettlementCount",
+        "createdHistoricalEvents",
+        "contractsAreExecutableApis"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "coreRpgExecuted": {
+          "const": false
+        },
+        "godotExecuted": {
+          "const": false
+        },
+        "gdeExtensionExecuted": {
+          "const": false
+        },
+        "worldStateMaterialized": {
+          "const": false
+        },
+        "createdNpcCount": {
+          "const": 0
+        },
+        "createdBuildingCount": {
+          "const": 0
+        },
+        "createdSettlementCount": {
+          "const": 0
+        },
+        "createdHistoricalEvents": {
+          "const": 0
+        },
+        "contractsAreExecutableApis": {
+          "const": false
+        }
+      }
+    }
+  }
+}
