@@ -1,0 +1,17 @@
+{
+  "$schema": "https://robdor80.github.io/CoreRPG/schemas/content/0.1.0/content-pack-manifest.schema.json",
+  "pack_id": "nimroel.darovan.territory",
+  "pack_version": "0.1.0",
+  "content_contract_version": "0.1.0",
+  "minimum_core_version": "0.1.0",
+  "dependencies": [],
+  "resources": [
+    "resources/cities/syvaris.json",
+    "resources/cities/taramin.json",
+    "resources/cities/treihord.json",
+    "resources/cities/veldora.json",
+    "resources/territory/darovan.json"
+  ],
+  "display_name": "Darovan: referencias territoriales y cuatro ciudades canónicas",
+  "description": "Índice estructural sin habitantes, rutas, simulación ni propiedades de dominio; el sidecar Nimroel es documental."
+}

@@ -152,3 +152,10 @@ Acta vinculante: `../Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`. La pob
 **Fuente: autor en Darovan 11, «Apruebo todas tus recomendaciones».** D10-01B identidad diversa; 02B desigualdad no casteada y movilidad posible; 03B cultura de oficio sin psicología obligatoria; 04B rivalidad Galdren contextual; 05B Treihord plural dentro de sus ocho barrios; 06B Veldora mercantil diversa; 07B Taramin pesquera sin exclusividad; 08B Syvaris insular sin aislamiento forzado; **09C Arven cultura UNKNOWN**; 10B rural condicionado por asentamientos realmente acreditados; 11B cocina solo Norgard existente; 12B atuendo y objetos por recursos/contexto; 13B feria de metales preexistente pero nombre/fecha UNKNOWN; 14B funeral Norgard sin rito nuevo; 15B redes de relaciones personales causales; 16B nombres Norgard y registro/contexto sin dialecto inventado; 17B PERS individual inalterada. No se autoriza fiesta, Casa menor, institución, privilegio legal, religión, edificio, NPC, asentamiento, evento ni World State. Se mantiene el origen histórico Galdren, nombre/fechas feria, población Arven, personajes y tradiciones nuevas en UNKNOWN.
 
 **Estado:** D10 en rama exclusiva, PR Draft y CI por verificar; no fusionar sin aprobación. D11/D12 NO iniciadas.
+
+## D11 — Decisiones técnicas no canónicas (23/10/2026)
+- DAR-D11-T01: usar CoreRPG Content Contract 0.1.0 solo para sobres de identidad de Darovan y cuatro ciudades; sidecar Nimroel separado para propiedades y trazabilidad, sin extensión pública de Core.
+- DAR-D11-T02: once bloqueos de procedencia D00–D10 por SHA de blob; futuros cambios obligan a revisión y nueva versión, sin reescribir fases históricas.
+- DAR-D11-T03: ocho escenarios TEST_ONLY son especificaciones; ninguno es canon ni prueba de ejecución de reglas de dominio.
+- DAR-D11-T04: bloqueos de canon se conservan: Arven cultura UNKNOWN, geometrías, minas y recursos exactos pendientes; la Casa no crea armada ni fiscalidad interior nueva.
+- DAR-D11-T05: no se modifica CoreRPG, GDExtension o Host; dependencias CoreRPG se documentan en petición técnica separada. Revisión del autor obligatoria antes de fusionar PR D11; D12 no iniciada.
