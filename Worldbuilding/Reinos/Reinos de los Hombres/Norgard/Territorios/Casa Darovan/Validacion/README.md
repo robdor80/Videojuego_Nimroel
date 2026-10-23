@@ -18,3 +18,8 @@
 - `validate_d06.py` con `d06_generator.py` y dos JSON de datos operativos. **20 mutaciones negativas de reglas + 22 de escenarios**; rechazan canonicidad automática, Agujas, navegación, aduanas, colocación sin agua y otros saltos de autoridad.
 - Workflow D01–D06 en Ubuntu 24.04 y Windows 2022. Verificar ejecución real de PR, no afirmar `SUCCESS` por existir el archivo.
 - **Solo laboratorio y validación estática.** CoreRPG/Godot/GIS/persistencia, densidades y localización real quedan pendientes.
+
+## D10 — Cultura y sociedad
+- `D10_MATRIZ_INVARIANTES_Y_PRUEBAS_v0.1.md` (matriz de protección de 17 decisiones, perfiles y canon superior).
+- `validate_d10.py` verifica fuentes existentes, esquema documental, seis perfiles, dieciséis escenarios `TEST_ONLY`, coherencia D07/D08/D09 y mutaciones negativas.
+- Workflow D01–D10 Windows 2022 / Ubuntu 24.04; comprobar resultado de CI real antes de declararlo superado. No es runtime.
