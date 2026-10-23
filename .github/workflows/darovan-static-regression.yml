@@ -1,10 +1,12 @@
-name: Darovan static regression D01-D10
+name: Darovan static regression D01-D11
 
 on:
   pull_request:
     paths:
       - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/**'
       - '.github/workflows/darovan-static-regression.yml'
+      - 'ContentPacks/darovan-territory/**'
+      - 'Tools/DarovanD11/**'
   push:
     branches: [main]
     paths:
@@ -17,9 +19,9 @@ permissions:
 
 jobs:
   static-regressions:
-    name: Python D01-D10 · ${{ matrix.os }}
+    name: Python D01-D11 · ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 10
+    timeout-minutes: 35
     strategy:
       fail-fast: false
       matrix:
@@ -51,3 +53,20 @@ jobs:
         run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d09.py"
       - name: Validate D10 cultural profiles, authority and negative mutations
         run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d10.py"
+
+      - name: Checkout CoreRPG at fixed 4.13 SHA (separate source)
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: robdor80/CoreRPG
+          ref: 4f282863737bcd8f5add401202a9e1064c133672
+          path: .darovan-core
+      - name: Install pinned D11 JSON Schema dependency
+        run: python -m pip install jsonschema==4.26.0
+      - name: D11 source locks, official Core schemas, scenarios and 23 negative tests
+        run: python Tools/DarovanD11/validate.py --core-root .darovan-core
+      - name: Configure actual CoreRPG ContentJson and D11 C++ laboratory
+        run: cmake -S Tools/DarovanD11 -B d11-build -DCORERPG_ROOT="${{ github.workspace }}/.darovan-core" -DCMAKE_BUILD_TYPE=Release
+      - name: Compile actual C++ catalog consumer
+        run: cmake --build d11-build --config Release --target darovan_d11_core_smoke --parallel 2
+      - name: CTest CoreRPG catalog and TEST_ONLY persistence
+        run: ctest --test-dir d11-build -C Release --output-on-failure
