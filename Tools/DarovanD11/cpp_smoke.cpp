@@ -34,6 +34,18 @@ int main(int argc,char**argv) {
   corerpg::RandomStreams rng2{99};
   if(corerpg::Persistence::load(data.bytes,restored,rng2,{},catalog)!=corerpg::PersistenceStatus::success)return 9;
   if(restored.entity_count()!=1 || !restored.definition_of(e) || restored.definition_of(e)->value()!=ids[1])return 10;
-  std::cout<<"DAROVAN_D11_CORE_CPP_OK catalog=5 TEST_ONLY_save_restore=1\n";
+  // Igual entrada y semilla: misma codificación canónica del estado sintético.
+  corerpg::WorldState replay_world;
+  const auto replay_entity=replay_world.create_entity();
+  if(replay_world.bind_definition(replay_entity,*catalog,*id)!=corerpg::DefinitionBindingChange::applied)return 11;
+  corerpg::RandomStreams replay_random{110011};
+  auto replay_data=corerpg::Persistence::serialize(corerpg::Persistence::capture(replay_world,replay_random));
+  if(replay_data.status!=corerpg::PersistenceStatus::success || replay_data.bytes!=data.bytes)return 12;
+  // No restaurar bindings si el catálogo no se entrega explícitamente.
+  corerpg::WorldState missing_catalog_world;
+  corerpg::RandomStreams missing_catalog_random{99};
+  const auto rejection=corerpg::Persistence::load(data.bytes,missing_catalog_world,missing_catalog_random);
+  if(rejection!=corerpg::PersistenceStatus::catalog_required || missing_catalog_world.entity_count()!=0)return 13;
+  std::cout<<"DAROVAN_D11_CORE_CPP_OK catalog=5 TEST_ONLY_save_restore=1 same_seed_bytes=1 missing_catalog_rejected=1\n";
   return 0;
 }

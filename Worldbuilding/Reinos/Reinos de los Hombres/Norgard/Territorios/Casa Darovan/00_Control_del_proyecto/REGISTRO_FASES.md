@@ -93,3 +93,6 @@ Aprobadas las 17 opciones D10 por el autor (01–08 B, 09 C, 10–17 B). Documen
 
 ## Inicio D11 — 23/10/2026
 Autorizada D11 tras fusión de PR #36; main a5d25d8e6a1d70015a63b0327837fd0da0004cbd y postmerge Actions #40026616322 SUCCESS Windows/Linux. Rama exclusiva feat/darovan-d11-integracion-contratos-pruebas. Auditoría CoreRPG 4.13 fijada a 4f282863737bcd8f5add401202a9e1064c133672. Entregado primer pack estructural de 5 IDs, sidecar con locks 11 fases, T01–T08 TEST_ONLY y validadores/C++ CI. **CI D11, PR y cierre PENDIENTES de verificación**. No cambia D00–D10 ni Core/Godot; D12 NO INICIADA.
+
+## D11 — Entrega para revisión, 23/10/2026
+PR Draft #37 abierta: pack estructural y sidecar con 11 SHA D00–D10, 8 TEST_ONLY y matriz D00–D10 / CoreRPG. [Actions #40029048181](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40029048181) SUCCESS Windows/Linux: regresión D01–D11, 23 negativos, schemas oficiales Core, compilación C++ y 1/1 CTest por SO. Se añade comprobación aislada de doble semilla idéntica y rechazo de guardado sin catálogo, **pendiente de repetir CI en el HEAD final**. Acta D11 en Auditorias; **fase lista para auditoría autoral, PR NO FUSIONADA**, runtime territorial y D12 pendientes.
