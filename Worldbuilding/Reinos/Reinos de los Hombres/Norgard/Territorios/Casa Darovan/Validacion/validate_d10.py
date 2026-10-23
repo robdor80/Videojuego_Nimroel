@@ -165,8 +165,9 @@ def validate(d: dict, f: dict, repo: Path) -> None:
     check(d07["manualCityIds"] == CITY and d07["otherDarovanIsland"] == "arven"
           and d07["hydro"]["belaraCrossesTreihord"] is False
           and [c["id"] for c in d07["cities"]] == CITY, "D07 canonical city regression")
-    check(d08["territoryPopulation"]["populationRange"] == {
-              "minInclusive": 300000, "maxInclusive": 450000}
+    check(d08["territoryPopulation"]["populationRange"]["minInclusive"] == 300000
+          and d08["territoryPopulation"]["populationRange"]["maxInclusive"] == 450000
+          and d08["territoryPopulation"]["populationRange"]["status"] == "APPROVED_AUTHOR_RANGE"
           and d08["territoryPopulation"]["populationApprox"] is None
           and d08["householdModel"]["ruralUrbanShares"]["cityListIsCompleteUrbanCoverage"] is False,
           "D08 demographics drift")
