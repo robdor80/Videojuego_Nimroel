@@ -136,7 +136,7 @@ def negatives(p,m,d,t):
     change(3,"missing T08",lambda x:x["scenarios"].pop())
     for which,name,obj in edits:
         all_items=[p,m,d,t]; all_items[which]=obj
-        try: check(*all_items,real_sources=False)
+        try: check(*all_items,real_sources=(name=="drift"))
         except D11Error: pass
         else: raise D11Error("Negative mutation accepted: "+name)
     return len(edits)
