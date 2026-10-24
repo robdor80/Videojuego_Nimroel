@@ -3,6 +3,7 @@
 config_version=5
 
 [application]
+config/icon="res://art/nim06.svg"
 config/name="Nimroel RPG — Laboratorio v0.0.1"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
@@ -22,3 +23,9 @@ renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/default_filters/use_nearest_mipmap_filter=false
 environment/defaults/default_clear_color=Color(0.0588235, 0.0901961, 0.109804, 1)
+
+[autoload]
+NativeDiagnostics="*res://scripts/native_diagnostics_entry.gd"
+
+[editor_plugins]
+enabled=PackedStringArray("res://addons/nim06_ci_import/plugin.cfg")

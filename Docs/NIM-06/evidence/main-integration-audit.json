@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-20",
+  "timezone": "Europe/Madrid",
+  "branch": "feat/nim-06-functional-gdextension",
+  "previous_head": "eeb179c87cbb27c3b182de2f0bcabff3dff45087",
+  "integrated_main": "cd1735b1c9a1bb7507a3b1ce42d96c6d103b0977",
+  "merge_commit": "7b3c2873399b52746d4fd367690bfc533c78ce3f",
+  "tested_head": "9924cc38f2fb1162e49ad80779db76c8e5d3f886",
+  "initial_worktree_clean": true,
+  "local_and_pr_head_equal_before_start": true,
+  "other_agents_observed": false,
+  "concurrency_limit": "Comprobados agentes de esta sesión, procesos locales, worktrees y estabilidad de ref remota; sin visibilidad global de entornos Cloud ajenos.",
+  "merge_conflicts": [],
+  "native_preservation": [
+    {
+      "path": "Game/BridgeCoreRPG/native/src/bridge.cpp",
+      "before_blob": "5856092869e36fb24e101994eee148ada25f859f",
+      "after_blob": "5856092869e36fb24e101994eee148ada25f859f",
+      "unchanged": true
+    },
+    {
+      "path": "Game/BridgeCoreRPG/native/CMakeLists.txt",
+      "before_blob": "b333070d64ee353242d8ce5c6cc60fac07df2ebf",
+      "after_blob": "b333070d64ee353242d8ce5c6cc60fac07df2ebf",
+      "unchanged": true
+    },
+    {
+      "path": "Game/BridgeCoreRPG/cmake/dependencies.cmake",
+      "before_blob": "da9a373371ae6293d8ee7b7b2e027484b4e428a6",
+      "after_blob": "da9a373371ae6293d8ee7b7b2e027484b4e428a6",
+      "unchanged": true
+    },
+    {
+      "path": "Game/Host2D/scripts/core_port.gd",
+      "before_blob": "f452b7c641c7ba7af4713c2ebc30427b9a2de5e8",
+      "after_blob": "f452b7c641c7ba7af4713c2ebc30427b9a2de5e8",
+      "unchanged": true
+    },
+    {
+      "path": "Game/Host2D/scripts/native_world_controller.gd",
+      "before_blob": "7a33d1aa626c2529f09959561e912438a7c3f3de",
+      "after_blob": "7a33d1aa626c2529f09959561e912438a7c3f3de",
+      "unchanged": true
+    },
+    {
+      "path": "Game/Host2D/scripts/core_save_store.gd",
+      "before_blob": "d7c0a138d383a539ace6df8f3390e5a115448ecf",
+      "after_blob": "d7c0a138d383a539ace6df8f3390e5a115448ecf",
+      "unchanged": true
+    },
+    {
+      "path": "Game/Host2D/project.godot",
+      "before_blob": "52d13c52ce7c1b2fee56481dd240efde9d77e64a",
+      "after_blob": "52d13c52ce7c1b2fee56481dd240efde9d77e64a",
+      "unchanged": true
+    },
+    {
+      "path": "Game/Host2D/export_presets.cfg",
+      "before_blob": "48e6ef8f0439389a9790e731b59bbb4f83d05fad",
+      "after_blob": "48e6ef8f0439389a9790e731b59bbb4f83d05fad",
+      "unchanged": true
+    }
+  ],
+  "policy_paths_equal_to_integrated_main": [
+    "Game/Host2D/scripts/main.gd",
+    "Game/Host2D/scripts/provider_diagnostic.gd",
+    "Game/Host2D/scripts/tts_diagnostic.gd",
+    "Game/Host2D/scripts/voice_port.gd",
+    "Tools/NIM04/provider_proxy.py",
+    "Tools/NIM05/tts_local.py",
+    ".github/workflows/nim-01-host-check.yml"
+  ],
+  "pr23_initial_head": "ea564e95238db61a608afb0f0d59da737bce355a",
+  "pr23_modified_by_this_task": false,
+  "corerpg_modified": false,
+  "force_push_used": false,
+  "pr23_final_observed": "c3d15241987f7dfe20dd339a6768a84a433c3659",
+  "pr23_note": "Avance externo durante el trabajo, no realizado por esta tarea.",
+  "native_run": 39483287563,
+  "regression_run": 39483287443
+}

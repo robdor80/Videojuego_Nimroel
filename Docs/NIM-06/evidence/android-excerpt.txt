@@ -1,0 +1,18 @@
+-- The CXX compiler identification is Clang 21.0.0
+-- The CXX compiler identification is GNU 13.3.0
+NIM06_EDITOR_IMPORT_OK
+NIM06_FUNCTIONAL_REPORT {"checks":129,"core_commit":"4f282863737bcd8f5add401202a9e1064c133672","errors":[],"ok":true,"scope":"native functional vertical; physical device acceptance separate"}
+NIM-01 SMOKE PASS: Godot importa escena y router; WorldState no mutado.
+NIM-02 SMOKE PASS: flujo seguro, estados honestos y UI compatible.
+NIM-03 SMOKE PASS: diagnóstico aislado, parser fail-closed, Core intacto.
+NIM-04 SMOKE PASS: multiproveedor solo diagnóstico y Core intacto.
+NIM-05 SMOKE PASS: fallback solo diagnóstico, Core y NPC bloqueados.
+NIM-03 KEYBOARD PASS: virtual compacto, Bluetooth pantalla completa, sin doble descuento.
+Ran 8 tests in 0.514s
+Ran 29 tests in 0.530s
+Ran 11 tests in 1.018s
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+minSdkVersion:'24'
+targetSdkVersion:'36'
+native-code: 'arm64-v8a'

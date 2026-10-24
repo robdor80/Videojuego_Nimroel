@@ -1,0 +1,211 @@
+{
+  "date_utc": "2026-10-20",
+  "report_timezone": "Europe/Madrid",
+  "pr": "https://github.com/robdor80/Videojuego_Nimroel/pull/27",
+  "branch": "feat/nim-06-functional-gdextension",
+  "base": "cd1735b1c9a1bb7507a3b1ce42d96c6d103b0977",
+  "feature_base": "6c7ed6a8013b471be0e66dbc4d5bedaeb3541782",
+  "previous_delivery": "eeb179c87cbb27c3b182de2f0bcabff3dff45087",
+  "main_integration_merge": "7b3c2873399b52746d4fd367690bfc533c78ce3f",
+  "head_code": "9924cc38f2fb1162e49ad80779db76c8e5d3f886",
+  "actions_checkout": "7296c1eb43eaf3da96cc9d995f13bcdb9cb9c7eb",
+  "code_tree": "d8de5cb79ee812ff70c06e78ffeaab6bea98022b",
+  "checkout_tree_equals_head": true,
+  "checkout_note": "Merge ref automático de PR: mismo árbol que HEAD, sin fusión de PR/main por esta tarea.",
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "native_run": {
+    "id": 39483287563,
+    "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563",
+    "conclusion": "success"
+  },
+  "windows": {
+    "job_id": 118837121816,
+    "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563/job/118837121816",
+    "conclusion": "success",
+    "compiler": "MSVC 19.44.35229.0",
+    "sdk": "10.0.26100.0",
+    "binary": {
+      "file": "nimroel_core.windows.x86_64.dll",
+      "sha256": "5ab23eec733f62f01bda0a33e1c698d94be6c20835371a041764ad0f93d36e3e",
+      "bytes": 472064,
+      "machine": "PE AMD64 (0x8664)"
+    },
+    "reports": [
+      {
+        "checks": 129,
+        "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+        "errors": [],
+        "ok": true,
+        "scope": "native functional vertical; physical device acceptance separate"
+      },
+      {
+        "checks": 129,
+        "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+        "errors": [],
+        "ok": true,
+        "scope": "native functional vertical; physical device acceptance separate"
+      }
+    ],
+    "package": {
+      "nimroel_core.windows.x86_64.dll": {
+        "bytes": 472064,
+        "sha256": "5ab23eec733f62f01bda0a33e1c698d94be6c20835371a041764ad0f93d36e3e"
+      },
+      "Nimroel_NIM06_Functional.console.exe": {
+        "bytes": 69632,
+        "sha256": "26da30e450d68668992cff319620e6d788fdcfa150534310cffa733a44b6f91c"
+      },
+      "Nimroel_NIM06_Functional.exe": {
+        "bytes": 103055360,
+        "sha256": "9f44a61a9589e5dba56aa5001882d681f4ca6cca992ba3a3a24e23aafddf69af"
+      },
+      "Nimroel_NIM06_Functional.pck": {
+        "bytes": 117136,
+        "sha256": "5cabfc138ff43ac1bc1dd3dde5c63f38f05dc66294f47bc08ba10fd8522033b6"
+      }
+    },
+    "extension_bytes_match": true,
+    "runtime_editor": "PASS",
+    "runtime_exported_exe": "PASS",
+    "physical_msi": "NOT TESTED",
+    "python_regressions": [
+      8,
+      29,
+      11
+    ],
+    "godot_regression_suites": 6,
+    "artifact": {
+      "id": 12291679162,
+      "name": "NIM06-functional-windows-7296c1eb43eaf3da96cc9d995f13bcdb9cb9c7eb",
+      "size": 36032854,
+      "sha256": "773478157ffa24d3e1884fefc65ef1305b43b70e8f3c5cce2d7164a81320963b"
+    }
+  },
+  "android": {
+    "job_id": 118837120978,
+    "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563/job/118837120978",
+    "conclusion": "success",
+    "compiler": "Clang 21.0.0, NDK 29.0.14206865",
+    "binary": {
+      "file": "libnimroel_core.android.arm64.so",
+      "sha256": "c3570bccdeec5b1ff2d1bca0554cd650e64931624c4958632d7366676d00050e",
+      "bytes": 618608,
+      "machine": "ELF AArch64 (183)",
+      "needed": [
+        "libm.so",
+        "libdl.so",
+        "libc.so"
+      ]
+    },
+    "core_cpp_abi_exported": false,
+    "load_min_alignment": 16384,
+    "apk": {
+      "sha256": "15567475adb0a2ab92502495d351c6524bc838d1068e9cd42a860d777186a715",
+      "libraries": [
+        "lib/arm64-v8a/libc++_shared.so",
+        "lib/arm64-v8a/libgodot_android.so",
+        "lib/arm64-v8a/libnimroel_core.android.arm64.so"
+      ],
+      "extension_bytes_match": true,
+      "device_execution": "NOT TESTED",
+      "file": "Nimroel_NIM06_Functional.apk"
+    },
+    "signature": {
+      "tool": "apksigner 36.0.0",
+      "v2": true,
+      "v3": true
+    },
+    "min_sdk": 24,
+    "target_sdk": 36,
+    "android_runtime": "NOT TESTED",
+    "physical_tab_s9_plus": "NOT TESTED",
+    "linux_export_host_control": {
+      "compiler": "GNU 13.3.0",
+      "binary": {
+        "file": "libnimroel_core.linux.x86_64.so",
+        "sha256": "cbf95eb31e0eab0bc31262886eca83dffb94aa4e93b22c4492bc5d1aed85aa85",
+        "bytes": 1134016,
+        "machine": "ELF x86-64 (62)",
+        "needed": [
+          "libm.so.6",
+          "libc.so.6",
+          "ld-linux-x86-64.so.2"
+        ]
+      },
+      "reports": [
+        {
+          "checks": 129,
+          "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+          "errors": [],
+          "ok": true,
+          "scope": "native functional vertical; physical device acceptance separate"
+        }
+      ],
+      "python_regressions": [
+        8,
+        29,
+        11
+      ],
+      "godot_regression_suites": 6,
+      "is_android_execution": false
+    },
+    "artifact": {
+      "id": 12290784767,
+      "name": "NIM06-functional-android-7296c1eb43eaf3da96cc9d995f13bcdb9cb9c7eb",
+      "size": 29563135,
+      "sha256": "e4487b6d3a45a55cc5740882035156e61e9a6701d6002246af32eb471310bfa9"
+    }
+  },
+  "existing_regression_run": {
+    "id": 39483287443,
+    "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287443",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "id": 118837118291,
+        "name": "NIM01-05 + keyboard + offline Python",
+        "conclusion": "success"
+      },
+      {
+        "id": 118837118433,
+        "name": "Existing sherpa + NIM05 dynamic TTS Windows",
+        "conclusion": "success"
+      },
+      {
+        "id": 118837460400,
+        "name": "Existing NIM05 prototype exports",
+        "conclusion": "success"
+      }
+    ],
+    "python_tests": [
+      8,
+      29,
+      11
+    ],
+    "scope": "Workflow de main integrado sin modificaciones propias; no cambia proveedores/voz.",
+    "nim05_real_tts": {
+      "bytes": 121388,
+      "wav_sha256": "d1b4567ec3416be49cf6f396dfde23cb0c6ba8ee86bec30d87af2daa48c18156",
+      "runner_execution": true,
+      "physical_playback": "NOT TESTED"
+    }
+  },
+  "parallel_work_audit": {
+    "pr22": "MERGED before this task, included via origin/main",
+    "pr23_initial": "ea564e95238db61a608afb0f0d59da737bce355a",
+    "pr23_final_observed": "c3d15241987f7dfe20dd339a6768a84a433c3659",
+    "pr23_note": "Avance externo observado; no se modifica su rama ni se integra PR23 por separado.",
+    "refs_modified_by_this_task": false,
+    "main_modified_by_this_task": false,
+    "corerpg_modified": false,
+    "force_push_used": false
+  },
+  "limitations": [
+    "Sin ejecución Android ARM64 en CI o dispositivo",
+    "MSI físico pendiente",
+    "Sin ASan/fuzz/inyección de OOM del adaptador",
+    "ContentJson/definiciones no integrados",
+    "Sin sistemas RPG futuros ni cadena conversacional IA/voz",
+    "Artefactos expiran a los 30 días; evidencia compacta permanece en Git"
+  ]
+}
