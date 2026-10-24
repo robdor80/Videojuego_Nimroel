@@ -6,6 +6,7 @@ func _ready() -> void:
 	if OS.get_cmdline_user_args().has("--nim06-self-test"):
 		_self_test.call_deferred()
 	var layer := CanvasLayer.new()
+	layer.name = "Launcher"
 	layer.layer = 20
 	add_child(layer)
 	var button := Button.new()
