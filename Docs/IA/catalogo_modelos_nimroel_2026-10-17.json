@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "documentId": "nimroel_ai_model_policy_2026_10_17",
+  "status": "approved_three_ai_roles_diagnostic_router_only",
+  "approvedOn": "2026-10-17",
+  "engineAuthority": "CoreRPG",
+  "host": "Godot 4.7.2 2D",
+  "excludedProviders": [
+    "mistral"
+  ],
+  "profiles": [
+    {
+      "mode": "free",
+      "tier": "simple",
+      "provider": "gemini",
+      "display": "Gemini 3.5 Flash-Lite",
+      "apiModel": "gemini-3.5-flash-lite",
+      "catalogVerified": true,
+      "scope": "NIM04_technical_diagnostic_only"
+    },
+    {
+      "mode": "free",
+      "tier": "complex",
+      "provider": "gemini",
+      "display": "Gemini 3.8 Flash",
+      "apiModel": "gemini-3.8-flash",
+      "catalogVerified": true,
+      "scope": "NIM04_technical_diagnostic_only"
+    },
+    {
+      "mode": "paid",
+      "tier": "simple",
+      "provider": "openai",
+      "apiModel": "gpt-6-luna",
+      "catalogVerified": true,
+      "display": "OpenAI GPT-6 Luna (última Luna oficial verificada)",
+      "runtimeValidated": true,
+      "runtimeValidationScope": "NIM-04 MSI/Godot 17/10/2026: clasificación diagnóstica solamente",
+      "selectionPolicy": "highest_official_pinned_version_after_review",
+      "lastCatalogCheck": "2026-10-20",
+      "scope": "NIM04_technical_diagnostic_only",
+      "narrativeLabValidated": true,
+      "narrativeLabScope": "20/10/2026 V2 ficticio: 5 interacciones NPC Taren, sin CoreRPG"
+    },
+    {
+      "mode": "paid",
+      "tier": "complex",
+      "provider": "openai",
+      "display": "OpenAI Sol 6.1",
+      "apiModel": "gpt-6.1-sol",
+      "catalogVerified": true,
+      "runtimeValidated": true,
+      "previousDiagnosticModel": "gpt-6-sol",
+      "scope": "NIM04_technical_diagnostic_only",
+      "runtimeValidationScope": "20/10/2026 MSI/Godot: clasificador diagnóstico (no Master integrado)",
+      "narrativeLabValidated": true,
+      "narrativeLabScope": "20/10/2026 V2 Sol 5 intervenciones y A/B 6 llamadas repartidas, mundo ficticio sin CoreRPG"
+    }
+  ],
+  "costPolicy": {
+    "freeNotUnlimited": true,
+    "paidRequiresExplicitConsent": true,
+    "automaticFallbackDefault": false,
+    "productionMonetaryBudgetNotImplemented": true,
+    "gameApiAndPlusSeparate": true,
+    "automaticLiveCallsEnabled": false,
+    "monetaryCapNeededBeforeAutomaticPaidRouting": true
+  },
+  "security": {
+    "noProviderSecretsInClient": true,
+    "outputsCannotMutateWorldState": true,
+    "npcAndOffRecordKnowledgeSeparated": true,
+    "zipNoExecutableImport": true,
+    "unknownFactsNotNegations": true
+  },
+  "sources": [
+    "https://ai.google.dev/gemini-api/docs/models",
+    "https://ai.google.dev/gemini-api/docs/pricing",
+    "https://developers.openai.com/api/docs/models"
+  ],
+  "updatedOn": "2026-10-20",
+  "authorPolicyRevision": "2026-10-20_three_ai_roles",
+  "authorityRule": "corerpg_only",
+  "gameplayRoles": [
+    {
+      "id": "npc_dialogue",
+      "persona": "Luna",
+      "provider": "openai",
+      "apiModel": "gpt-6-luna",
+      "task": "Conversación con NPC; contexto player-safe y conocimiento específico del NPC",
+      "implementation": "design_only"
+    },
+    {
+      "id": "master_query",
+      "persona": "Luna",
+      "provider": "openai",
+      "apiModel": "gpt-6-luna",
+      "task": "Preguntas puntuales fuera de personaje sobre escena ya descrita",
+      "implementation": "design_only"
+    },
+    {
+      "id": "scene_introduction",
+      "persona": "Sol",
+      "provider": "openai",
+      "apiModel": "gpt-6.1-sol",
+      "task": "Presentación evocadora inicial de escena nueva con hechos autorizados",
+      "implementation": "design_only"
+    },
+    {
+      "id": "significant_event",
+      "persona": "Sol",
+      "provider": "openai",
+      "apiModel": "gpt-6.1-sol",
+      "task": "Narrar eventos relevantes previamente validados por CoreRPG",
+      "implementation": "design_only"
+    }
+  ],
+  "offlineAuthoring": {
+    "persona": "ChatGPT Plus",
+    "kind": "human_mediated_external_workflow",
+    "apiModel": null,
+    "consumesGameApiBudget": false,
+    "automaticIntegrationAvailable": false,
+    "flow": [
+      "manual_export_sanitized_context_zip",
+      "manual_upload_author_requirement",
+      "proposal_structured_pack",
+      "human_review",
+      "schema_reference_conflict_and_security_validation",
+      "explicit_import_after_approval"
+    ],
+    "importImplementation": "not_implemented",
+    "requirements": [
+      "no_secrets",
+      "canonical_authority_corerpg",
+      "versioned_manifest",
+      "safe_import_dry_run",
+      "human_approval"
+    ]
+  },
+  "geminiGameplayPolicy": "not_approved_as_active_narrative_role; retain NIM04 diagnostics, reconsider separate issue #29"
+}

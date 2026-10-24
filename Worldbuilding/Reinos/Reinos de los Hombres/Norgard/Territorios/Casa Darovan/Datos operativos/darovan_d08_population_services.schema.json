@@ -1,0 +1,598 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nimroel.invalid/schemas/darovan_d08_population_services_v0.1.schema.json",
+  "title": "Darovan D08 reference-only contract; NOT CoreRPG runtime",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "documentId",
+    "version",
+    "phase",
+    "preparedAt",
+    "status",
+    "canonStatus",
+    "authorityChain",
+    "sourceRefs",
+    "coreRpgAudit",
+    "manualCityIds",
+    "excludedCityIds",
+    "cities",
+    "settlementProfiles",
+    "householdModel",
+    "occupationFamilies",
+    "serviceNeeds",
+    "causalFlow",
+    "planningUnknowns",
+    "authorialApprovalRequiredFor",
+    "runtimeIntegration",
+    "territoryPopulation",
+    "socialInstitutionPolicyD08"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "documentId": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string",
+      "const": "D08"
+    },
+    "preparedAt": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "const": "planning_reference_not_runtime"
+    },
+    "canonStatus": {
+      "type": "string",
+      "const": "approved_D08_demographic_and_household_ranges_no_new_social_institutions"
+    },
+    "authorityChain": {
+      "type": "array",
+      "const": [
+        "nimroel_core",
+        "norgard_defaults",
+        "casa_darovan",
+        "locality",
+        "world_state"
+      ]
+    },
+    "sourceRefs": {
+      "type": "object"
+    },
+    "coreRpgAudit": {
+      "type": "object"
+    },
+    "manualCityIds": {
+      "type": "array",
+      "const": [
+        "treihord",
+        "veldora",
+        "taramin",
+        "syvaris"
+      ]
+    },
+    "excludedCityIds": {
+      "type": "array",
+      "const": [
+        "karsath"
+      ]
+    },
+    "cities": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "populationApprox",
+          "populationStatus",
+          "economicFocus",
+          "householdCount",
+          "physicalServicesRegistered",
+          "geometry",
+          "serviceCapacity",
+          "populationRange"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "treihord",
+              "veldora",
+              "taramin",
+              "syvaris"
+            ]
+          },
+          "populationApprox": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "populationStatus": {
+            "enum": [
+              "AUTHORED_APPROX",
+              "UNKNOWN",
+              "AUTHORED_RANGE"
+            ]
+          },
+          "economicFocus": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "householdCount": {
+            "type": "null"
+          },
+          "physicalServicesRegistered": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "geometry": {
+            "type": "null"
+          },
+          "serviceCapacity": {
+            "type": "null"
+          },
+          "populationRange": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "minInclusive",
+                  "maxInclusive",
+                  "unit",
+                  "status",
+                  "decisionId",
+                  "option",
+                  "provenance",
+                  "sourceRefId",
+                  "approvalScope"
+                ],
+                "properties": {
+                  "minInclusive": {
+                    "type": "integer",
+                    "const": 29000
+                  },
+                  "maxInclusive": {
+                    "type": "integer",
+                    "const": 35000
+                  },
+                  "unit": {
+                    "type": "string",
+                    "const": "habitantes"
+                  },
+                  "status": {
+                    "type": "string",
+                    "const": "APPROVED_AUTHOR_RANGE"
+                  },
+                  "decisionId": {
+                    "type": "string",
+                    "const": "DAR-D08-01"
+                  },
+                  "option": {
+                    "type": "string",
+                    "const": "B"
+                  },
+                  "provenance": {
+                    "type": "string",
+                    "const": "AUTHORED"
+                  },
+                  "sourceRefId": {
+                    "type": "string",
+                    "const": "decisionD0801"
+                  },
+                  "approvalScope": {
+                    "type": "string",
+                    "const": "demographic_reference_range_only_no_exact_count"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "minInclusive",
+                  "maxInclusive",
+                  "unit",
+                  "status",
+                  "decisionId",
+                  "option",
+                  "provenance",
+                  "sourceRefId",
+                  "approvalScope"
+                ],
+                "properties": {
+                  "minInclusive": {
+                    "type": "integer",
+                    "const": 14000
+                  },
+                  "maxInclusive": {
+                    "type": "integer",
+                    "const": 20000
+                  },
+                  "unit": {
+                    "type": "string",
+                    "const": "habitantes"
+                  },
+                  "status": {
+                    "type": "string",
+                    "const": "APPROVED_AUTHOR_RANGE"
+                  },
+                  "decisionId": {
+                    "type": "string",
+                    "const": "DAR-D08-01"
+                  },
+                  "option": {
+                    "type": "string",
+                    "const": "B"
+                  },
+                  "provenance": {
+                    "type": "string",
+                    "const": "AUTHORED"
+                  },
+                  "sourceRefId": {
+                    "type": "string",
+                    "const": "decisionD0801Taramin"
+                  },
+                  "approvalScope": {
+                    "type": "string",
+                    "const": "demographic_reference_range_only_no_exact_count"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "minInclusive",
+                  "maxInclusive",
+                  "unit",
+                  "status",
+                  "decisionId",
+                  "option",
+                  "provenance",
+                  "sourceRefId",
+                  "approvalScope"
+                ],
+                "properties": {
+                  "minInclusive": {
+                    "type": "integer",
+                    "const": 7000
+                  },
+                  "maxInclusive": {
+                    "type": "integer",
+                    "const": 10000
+                  },
+                  "unit": {
+                    "type": "string",
+                    "const": "habitantes"
+                  },
+                  "status": {
+                    "type": "string",
+                    "const": "APPROVED_AUTHOR_RANGE"
+                  },
+                  "decisionId": {
+                    "type": "string",
+                    "const": "DAR-D08-01"
+                  },
+                  "option": {
+                    "type": "string",
+                    "const": "B"
+                  },
+                  "provenance": {
+                    "type": "string",
+                    "const": "AUTHORED"
+                  },
+                  "sourceRefId": {
+                    "type": "string",
+                    "const": "decisionD0801Syvaris"
+                  },
+                  "approvalScope": {
+                    "type": "string",
+                    "const": "demographic_reference_range_only_city_not_island_no_exact_count"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "settlementProfiles": {
+      "type": "array"
+    },
+    "householdModel": {
+      "type": "object",
+      "required": [
+        "urbanMeanPersonsPerHouseholdRange",
+        "ruralMeanPersonsPerHouseholdRange",
+        "ageShares",
+        "urbanRuralAgeBreakdown",
+        "ruralUrbanShares"
+      ],
+      "properties": {
+        "urbanMeanPersonsPerHouseholdRange": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "minInclusive",
+            "maxInclusive",
+            "unit",
+            "statistic",
+            "status",
+            "decisionId",
+            "option",
+            "provenance",
+            "sourceRefId",
+            "approvalScope",
+            "notAnIndividualHouseholdLimit"
+          ],
+          "properties": {
+            "minInclusive": {
+              "type": "integer",
+              "const": 3
+            },
+            "maxInclusive": {
+              "type": "integer",
+              "const": 5
+            },
+            "unit": {
+              "const": "personas_por_hogar"
+            },
+            "statistic": {
+              "const": "rango_de_media_urbana"
+            },
+            "status": {
+              "const": "APPROVED_AUTHOR_RANGE"
+            },
+            "decisionId": {
+              "const": "DAR-D08-02"
+            },
+            "option": {
+              "const": "B"
+            },
+            "provenance": {
+              "const": "AUTHORED"
+            },
+            "sourceRefId": {
+              "const": "decisionD0802UrbanHousehold"
+            },
+            "approvalScope": {
+              "const": "urban_only_mean_range_no_household_census_no_obligatory_individual_size"
+            },
+            "notAnIndividualHouseholdLimit": {
+              "const": true
+            }
+          }
+        },
+        "ruralMeanPersonsPerHouseholdRange": {
+          "type": "object",
+          "const": {
+            "minInclusive": 4,
+            "maxInclusive": 6,
+            "unit": "personas_por_hogar",
+            "statistic": "rango_de_media_rural",
+            "status": "APPROVED_AUTHOR_RANGE",
+            "decisionId": "DAR-D08-02",
+            "option": "B",
+            "provenance": "AUTHORED",
+            "sourceRefId": "decisionD0802FinalBatch",
+            "approvalScope": "rural_only_mean_range_no_household_census_no_obligatory_individual_size",
+            "notAnIndividualHouseholdLimit": true
+          }
+        },
+        "ageShares": {
+          "type": "object",
+          "const": {
+            "scope": "casa_darovan_entire_territory",
+            "status": "APPROVED_AUTHOR_DISTRIBUTION",
+            "decisionId": "DAR-D08-02",
+            "option": "1B",
+            "provenance": "AUTHORED",
+            "sourceRefId": "decisionD0802FinalBatch",
+            "unit": "percent",
+            "bands": [
+              {
+                "minAge": 0,
+                "maxAge": 17,
+                "percent": 30
+              },
+              {
+                "minAge": 18,
+                "maxAge": 59,
+                "percent": 60
+              },
+              {
+                "minAge": 60,
+                "maxAge": null,
+                "percent": 10
+              }
+            ],
+            "countsAreNotApproved": true,
+            "urbanRuralBreakdownNotApproved": true
+          }
+        },
+        "urbanRuralAgeBreakdown": {
+          "type": "object",
+          "const": {
+            "status": "NO_QUANTITATIVE_SPLIT_APPROVED",
+            "decisionId": "DAR-D08-02",
+            "option": "2C",
+            "provenance": "AUTHORED",
+            "sourceRefId": "decisionD0802FinalBatch",
+            "urbanAgeShares": null,
+            "ruralAgeShares": null,
+            "sameDistributionAssumed": false
+          }
+        },
+        "ruralUrbanShares": {
+          "type": "object",
+          "const": {
+            "scope": "casa_darovan_entire_territory",
+            "status": "APPROVED_AUTHOR_RANGES",
+            "decisionId": "DAR-D08-02",
+            "option": "3C",
+            "provenance": "AUTHORED",
+            "sourceRefId": "decisionD0802FinalBatch",
+            "unit": "percent",
+            "urbanSharePercentRange": {
+              "minInclusive": 35,
+              "maxInclusive": 45
+            },
+            "ruralSharePercentRange": {
+              "minInclusive": 55,
+              "maxInclusive": 65
+            },
+            "complementaryPairedExtremes": true,
+            "exactUrbanPopulation": null,
+            "exactRuralPopulation": null,
+            "cityListIsCompleteUrbanCoverage": false,
+            "settlementClassificationApproved": false
+          }
+        }
+      }
+    },
+    "occupationFamilies": {
+      "type": "array"
+    },
+    "serviceNeeds": {
+      "type": "array"
+    },
+    "causalFlow": {
+      "type": "object"
+    },
+    "planningUnknowns": {
+      "type": "array"
+    },
+    "authorialApprovalRequiredFor": {
+      "type": "array"
+    },
+    "runtimeIntegration": {
+      "type": "object"
+    },
+    "territoryPopulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "populationApprox",
+        "populationStatus",
+        "populationRange",
+        "sourceRefIds",
+        "ruralPopulationApprox",
+        "canonicalSettlementCensus",
+        "physicalSettlementCount",
+        "cityTotalsAreExact",
+        "runtimeInstantiated"
+      ],
+      "properties": {
+        "scope": {
+          "const": "casa_darovan_entire_territory_including_islands"
+        },
+        "populationApprox": {
+          "type": "null"
+        },
+        "populationStatus": {
+          "const": "AUTHORED_RANGE"
+        },
+        "populationRange": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "minInclusive",
+            "maxInclusive",
+            "unit",
+            "status",
+            "decisionId",
+            "option",
+            "provenance",
+            "sourceRefId",
+            "approvalScope"
+          ],
+          "properties": {
+            "minInclusive": {
+              "type": "integer",
+              "const": 300000
+            },
+            "maxInclusive": {
+              "type": "integer",
+              "const": 450000
+            },
+            "unit": {
+              "const": "habitantes"
+            },
+            "status": {
+              "const": "APPROVED_AUTHOR_RANGE"
+            },
+            "decisionId": {
+              "const": "DAR-D08-01"
+            },
+            "option": {
+              "const": "B"
+            },
+            "provenance": {
+              "const": "AUTHORED"
+            },
+            "sourceRefId": {
+              "const": "decisionD0801DarovanTotal"
+            },
+            "approvalScope": {
+              "const": "territory_total_including_urban_rural_and_islands_no_exact_census"
+            }
+          }
+        },
+        "sourceRefIds": {
+          "type": "array",
+          "const": [
+            "decisionD0801DarovanTotal"
+          ]
+        },
+        "ruralPopulationApprox": {
+          "type": "null"
+        },
+        "canonicalSettlementCensus": {
+          "type": "null"
+        },
+        "physicalSettlementCount": {
+          "type": "null"
+        },
+        "cityTotalsAreExact": {
+          "const": false
+        },
+        "runtimeInstantiated": {
+          "const": false
+        }
+      }
+    },
+    "socialInstitutionPolicyD08": {
+      "type": "object",
+      "const": {
+        "status": "AUTHORED_NO_NEW_IN_D08",
+        "decisionId": "DAR-D08-03",
+        "option": "4A",
+        "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0802FinalBatch",
+        "newSocialCategoriesApproved": false,
+        "newSingularInstitutionsApproved": false,
+        "newProfessionalSpecialtiesApproved": false,
+        "relyOnExistingNorgardAndDarovanCanon": true,
+        "futurePhasesMaySubmitNewProposals": true
+      }
+    }
+  }
+}

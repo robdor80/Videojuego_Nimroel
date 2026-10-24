@@ -35,3 +35,10 @@ La documentación sherpa acredita C/C++ y Android ARM64 como objetivos posibles,
 - **Fase de voz posterior:** prototipo TTS en Godot Windows, export Android con librerías reales, pruebas físicas, después STT. Los tests acústicos previos se usan como punto de partida, no como prueba de integración.
 
 No se crean `DLL`, `.so`, voces empaquetadas, plugins falsos ni claves de terceros en esta fase documental.
+
+
+## Política de IA vigente — revisión 20/10/2026
+
+La [política de las tres IA](IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md) asigna **Luna** (diálogo NPC y preguntas off the record al Máster), **Sol 6.1** (presentación detallada de escenas/eventos importantes) y **ChatGPT Plus** (procesamiento externo de ZIP mediante envío y aprobación manual). **CoreRPG conserva la autoridad**; ninguna de estas funciones se implementa por este documento.
+
+La ruta Gemini 3.5/3.8→OpenAI descrita en los planes del 17/10 permanece como **diagnóstico técnico histórico** de NIM-04, no como política de narración en gameplay. `gpt-6-luna` fue seleccionado explícitamente como la Luna oficial verificada y `gpt-6.1-sol` ya se probó con API real en MSI/laboratorios ficticios el 20/10 (issue #29). El broker mantiene consentimiento de pago y fallback desactivados por defecto. Mistral excluido. Ninguna de estas decisiones elimina dependencias de CoreRPG/GDExtension ni altera sherpa-onnx.

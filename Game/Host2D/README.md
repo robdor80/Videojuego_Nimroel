@@ -21,3 +21,10 @@ Pruebas Python offline:
 Para probar conexión Gemini real sin clave en APK, véase `Docs/NIM-03_PRUEBAS_Y_ENTREGA.md`. Exportaciones NIM03 CI: `.exe` + `.pck` y `.apk` ARM64 en artefactos de la PR Draft. NIM03 Android utiliza otro identificador de paquete que NIM02.
 
 Nimroel no es aún una partida persistente; la ejecución de los tests y del benchmark no acredita una partida ni voz de NPC. Nunca usar IA como fuente de verdad fuera de CoreRPG.
+
+
+## Política de IA vigente (revisión 20/10/2026)
+
+La [política de las tres IA](../../Docs/IA/POLITICA_MODELOS_NIMROEL_2026-10-17.md) separa **Luna (diálogos NPC + consultas off the record)**, **Sol (Máster de presentación de escenas y cambios importantes)** y **ChatGPT Plus (procesamiento humano mediante ZIP, fuera de la partida)**. CoreRPG es la autoridad única.
+
+El broker de `Tools/NIM04` sigue siendo **solo un laboratorio clasificador**: Gemini 3.5/3.8 y OpenAI Luna/Sol 6.1 son rutas técnicas históricas de diagnóstico, no escenas narrativas implementadas. Las pruebas reales de Sol 6.1 y Luna están documentadas en la [issue #29](https://github.com/robdor80/Videojuego_Nimroel/issues/29). Sin integración conversacional CoreRPG no hay gameplay narrativo, importación ZIP automática ni facturación activada. Nunca poner secretos en APK/PCK/EXE.

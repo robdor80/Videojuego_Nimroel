@@ -1,0 +1,847 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d08_household_population_services",
+  "version": "0.1",
+  "phase": "D08",
+  "preparedAt": "2026-10-21",
+  "status": "planning_reference_not_runtime",
+  "canonStatus": "approved_D08_demographic_and_household_ranges_no_new_social_institutions",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "sourceRefs": {
+    "d04": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d04_resources_production_v0.1.json",
+    "d05": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d05_mobility_communications_v0.1.json",
+    "d06": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d06_settlement_rules_v0.1.json",
+    "d07": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json",
+    "treihord": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+    "rural": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Sociedad/aldeas_servicios_y_economia_local.md",
+    "family": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_family_marriage_guardianship_default_v0.1.json",
+    "labor": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json",
+    "property": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+    "health": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_health_healing_tradition_default_v0.1.json",
+    "fiscal": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "currency": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_currency_economic_balance_default_v0.1.json",
+    "maritime": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
+    "res": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_residency_household_mobility_contract_v0.1.json",
+    "kin": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_kinship_family_network_contract_v0.1.json",
+    "care": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_dependents_care_network_contract_v0.1.json",
+    "chore": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_household_chores_domestic_load_contract_v0.1.json",
+    "emp": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_employment_jobs_vacancies_contract_v0.1.json",
+    "apr": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_apprenticeship_skill_transmission_contract_v0.1.json",
+    "need": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_basic_physical_needs_contract_v0.1.json",
+    "wait": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_waiting_service_capacity_contract_v0.1.json",
+    "txn": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json",
+    "own": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_property_possession_object_contract_v0.1.json",
+    "food": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_food_cooking_preservation_contract_v0.1.json",
+    "waste": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_sanitation_waste_cycle_contract_v0.1.json",
+    "decisionD0801": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md",
+    "decisionD0801Taramin": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md",
+    "decisionD0801Syvaris": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md",
+    "decisionD0801DarovanTotal": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_TOTAL_DAROVAN_2026-10-22.md",
+    "decisionD0802UrbanHousehold": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-02_HOGARES_URBANOS_2026-10-22.md",
+    "decisionD0802FinalBatch": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md"
+  },
+  "coreRpgAudit": {
+    "repository": "robdor80/CoreRPG",
+    "scope": "audited_repository_contracts_not_executable_D08_integration",
+    "checkedFiles": [
+      "docs/adr/0003-generic-population-relations.md",
+      "include/corerpg/entity_structure.hpp",
+      "include/corerpg/world_state.hpp",
+      "src/population.cpp",
+      "include/corerpg/persistence.hpp"
+    ],
+    "implementedPrimitives": [
+      "EntityId",
+      "WorldState",
+      "EntityRelation_directed_uint64_kind",
+      "PopulationRecord_group_total_latent",
+      "materialize_population_bounded",
+      "population_origin",
+      "snapshot_persistence"
+    ],
+    "notImplementedAsNativeCoreMechanics": [
+      "household_family_rules",
+      "residence_and_move_semantics",
+      "occupation_job_salary_simulation",
+      "service_building_coverage",
+      "inventory_goods_stock_economy",
+      "legal_family_and_labor_semantics"
+    ],
+    "numericRelationKindIds": null
+  },
+  "manualCityIds": [
+    "treihord",
+    "veldora",
+    "taramin",
+    "syvaris"
+  ],
+  "excludedCityIds": [
+    "karsath"
+  ],
+  "cities": [
+    {
+      "id": "treihord",
+      "populationApprox": 32000,
+      "populationStatus": "AUTHORED_APPROX",
+      "economicFocus": [
+        "industria_metalurgica",
+        "ensayo_refinado_crisol_no_ceca",
+        "logistica_mineral_carros_barcas_someras",
+        "servicios_urbanos"
+      ],
+      "d04Chains": [
+        "d04_mineral_valkram_treihord",
+        "d04_azurios_coal_import",
+        "d04_treihord_food_supply"
+      ],
+      "conceptStatus": "CANON_DISENO_BASE_CERRADO",
+      "householdCount": null,
+      "occupationCounts": null,
+      "serviceCapacity": null,
+      "workforceShare": null,
+      "physicalServicesRegistered": [],
+      "newBuildingsApproved": false,
+      "geometry": null,
+      "travelTimes": null,
+      "sourceRefIds": [
+        "d07",
+        "d04"
+      ],
+      "provenance": "DERIVED",
+      "studyOnly": true,
+      "populationRange": null
+    },
+    {
+      "id": "veldora",
+      "populationApprox": null,
+      "populationStatus": "AUTHORED_RANGE",
+      "economicFocus": [
+        "comercio_exterior",
+        "aduana_exterior_corona",
+        "almacenaje",
+        "talleres",
+        "sectores_comerciales_organicos"
+      ],
+      "d04Chains": [
+        "d04_veldora_port_commerce"
+      ],
+      "conceptStatus": "APPROVED_CONCEPT_ONLY_B",
+      "householdCount": null,
+      "occupationCounts": null,
+      "serviceCapacity": null,
+      "workforceShare": null,
+      "physicalServicesRegistered": [],
+      "newBuildingsApproved": false,
+      "geometry": null,
+      "travelTimes": null,
+      "sourceRefIds": [
+        "d07",
+        "d04",
+        "decisionD0801"
+      ],
+      "provenance": "DERIVED",
+      "studyOnly": true,
+      "populationRange": {
+        "minInclusive": 29000,
+        "maxInclusive": 35000,
+        "unit": "habitantes",
+        "status": "APPROVED_AUTHOR_RANGE",
+        "decisionId": "DAR-D08-01",
+        "option": "B",
+        "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0801",
+        "approvalScope": "demographic_reference_range_only_no_exact_count"
+      }
+    },
+    {
+      "id": "taramin",
+      "populationApprox": null,
+      "populationStatus": "AUTHORED_RANGE",
+      "economicFocus": [
+        "pesca_maritima_y_fluvial",
+        "productos_marinos",
+        "aceites",
+        "zona_pesquera_principal_sin_ubicacion"
+      ],
+      "d04Chains": [
+        "d04_taramin_fisheries"
+      ],
+      "conceptStatus": "APPROVED_CONCEPT_ONLY_A",
+      "householdCount": null,
+      "occupationCounts": null,
+      "serviceCapacity": null,
+      "workforceShare": null,
+      "physicalServicesRegistered": [],
+      "newBuildingsApproved": false,
+      "geometry": null,
+      "travelTimes": null,
+      "sourceRefIds": [
+        "d07",
+        "d04",
+        "decisionD0801Taramin"
+      ],
+      "provenance": "DERIVED",
+      "studyOnly": true,
+      "populationRange": {
+        "minInclusive": 14000,
+        "maxInclusive": 20000,
+        "unit": "habitantes",
+        "status": "APPROVED_AUTHOR_RANGE",
+        "decisionId": "DAR-D08-01",
+        "option": "B",
+        "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0801Taramin",
+        "approvalScope": "demographic_reference_range_only_no_exact_count"
+      }
+    },
+    {
+      "id": "syvaris",
+      "populationApprox": null,
+      "populationStatus": "AUTHORED_RANGE",
+      "economicFocus": [
+        "pesca",
+        "productos_marinos_y_aceites",
+        "comercio",
+        "actividad_bahia_principal",
+        "presencia_naval_norgard_no_darovan"
+      ],
+      "d04Chains": [
+        "d04_syvaris_fisheries_commerce"
+      ],
+      "conceptStatus": "APPROVED_CONCEPT_ONLY_A",
+      "householdCount": null,
+      "occupationCounts": null,
+      "serviceCapacity": null,
+      "workforceShare": null,
+      "physicalServicesRegistered": [],
+      "newBuildingsApproved": false,
+      "geometry": null,
+      "travelTimes": null,
+      "sourceRefIds": [
+        "d07",
+        "d04",
+        "decisionD0801Syvaris"
+      ],
+      "provenance": "DERIVED",
+      "studyOnly": true,
+      "populationRange": {
+        "minInclusive": 7000,
+        "maxInclusive": 10000,
+        "unit": "habitantes",
+        "status": "APPROVED_AUTHOR_RANGE",
+        "decisionId": "DAR-D08-01",
+        "option": "B",
+        "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0801Syvaris",
+        "approvalScope": "demographic_reference_range_only_city_not_island_no_exact_count"
+      }
+    }
+  ],
+  "settlementProfiles": [
+    {
+      "tier": "aldea",
+      "modelExamples": [
+        "agricola",
+        "ganadera",
+        "pesquera",
+        "minera_auxiliar",
+        "metalurgica_auxiliar",
+        "forestal_sostenible",
+        "servicio_camino",
+        "insular_mixta"
+      ],
+      "demographicBand": null,
+      "householdsPerSite": null,
+      "serviceQuota": null,
+      "actualSettlements": [],
+      "evidenceGate": "D06_site_specific_evidence_required",
+      "provenance": "DERIVED",
+      "testModelsOnly": true
+    },
+    {
+      "tier": "pueblo",
+      "modelExamples": [
+        "agricola",
+        "ganadera",
+        "pesquera",
+        "metalurgica_auxiliar",
+        "forestal_sostenible",
+        "servicio_camino",
+        "insular_mixta"
+      ],
+      "demographicBand": null,
+      "householdsPerSite": null,
+      "serviceQuota": null,
+      "actualSettlements": [],
+      "evidenceGate": "D06_site_specific_evidence_required",
+      "provenance": "DERIVED",
+      "testModelsOnly": true
+    },
+    {
+      "tier": "villa",
+      "modelExamples": [
+        "agricola",
+        "pesquera"
+      ],
+      "demographicBand": null,
+      "householdsPerSite": null,
+      "serviceQuota": null,
+      "actualSettlements": [],
+      "evidenceGate": "D06_site_specific_evidence_required",
+      "provenance": "DERIVED",
+      "testModelsOnly": true
+    },
+    {
+      "tier": "enclave",
+      "modelExamples": [
+        "minera_auxiliar",
+        "metalurgica_auxiliar",
+        "forestal_sostenible",
+        "servicio_camino",
+        "enclave_especializado"
+      ],
+      "demographicBand": null,
+      "householdsPerSite": null,
+      "serviceQuota": null,
+      "actualSettlements": [],
+      "evidenceGate": "D06_site_specific_evidence_required",
+      "provenance": "DERIVED",
+      "testModelsOnly": true
+    }
+  ],
+  "householdModel": {
+    "provenance": "DERIVED",
+    "patterns": [
+      "one_resident",
+      "related_co_residents",
+      "unrelated_co_residents",
+      "temporary_separation"
+    ],
+    "patternsAreNotSocialCasteOrCanonicalHouseholdShares": true,
+    "householdCount": null,
+    "meanPersonsPerHousehold": null,
+    "ageShares": {
+      "scope": "casa_darovan_entire_territory",
+      "status": "APPROVED_AUTHOR_DISTRIBUTION",
+      "decisionId": "DAR-D08-02",
+      "option": "1B",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0802FinalBatch",
+      "unit": "percent",
+      "bands": [
+        {
+          "minAge": 0,
+          "maxAge": 17,
+          "percent": 30
+        },
+        {
+          "minAge": 18,
+          "maxAge": 59,
+          "percent": 60
+        },
+        {
+          "minAge": 60,
+          "maxAge": null,
+          "percent": 10
+        }
+      ],
+      "countsAreNotApproved": true,
+      "urbanRuralBreakdownNotApproved": true
+    },
+    "ruralUrbanShares": {
+      "scope": "casa_darovan_entire_territory",
+      "status": "APPROVED_AUTHOR_RANGES",
+      "decisionId": "DAR-D08-02",
+      "option": "3C",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0802FinalBatch",
+      "unit": "percent",
+      "urbanSharePercentRange": {
+        "minInclusive": 35,
+        "maxInclusive": 45
+      },
+      "ruralSharePercentRange": {
+        "minInclusive": 55,
+        "maxInclusive": 65
+      },
+      "complementaryPairedExtremes": true,
+      "exactUrbanPopulation": null,
+      "exactRuralPopulation": null,
+      "cityListIsCompleteUrbanCoverage": false,
+      "settlementClassificationApproved": false
+    },
+    "headOfHouseholdDefault": null,
+    "sexBasedChoresDefault": false,
+    "marriageImpliesCoResidence": false,
+    "coResidenceImpliesMarriage": false,
+    "kinshipImpliesCare": false,
+    "ownershipImpliesResidence": false,
+    "movingHouseMovesBusiness": false,
+    "populationMaterializesAutomatically": false,
+    "typesOfRelations": [
+      "RES",
+      "MOVE",
+      "KIN",
+      "CARE",
+      "CHORE",
+      "EMP",
+      "APR",
+      "OWN",
+      "TXN"
+    ],
+    "childAgeBandsFromNorgard": [
+      [
+        0,
+        7
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        15,
+        17
+      ]
+    ],
+    "adultAgeMin": 18,
+    "apprenticeshipMinAge": 12,
+    "youthEmploymentMinAge": 15,
+    "provenanceOfAgeBands": "AUTHORED",
+    "urbanMeanPersonsPerHouseholdRange": {
+      "minInclusive": 3,
+      "maxInclusive": 5,
+      "unit": "personas_por_hogar",
+      "statistic": "rango_de_media_urbana",
+      "status": "APPROVED_AUTHOR_RANGE",
+      "decisionId": "DAR-D08-02",
+      "option": "B",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0802UrbanHousehold",
+      "approvalScope": "urban_only_mean_range_no_household_census_no_obligatory_individual_size",
+      "notAnIndividualHouseholdLimit": true
+    },
+    "ruralMeanPersonsPerHouseholdRange": {
+      "minInclusive": 4,
+      "maxInclusive": 6,
+      "unit": "personas_por_hogar",
+      "statistic": "rango_de_media_rural",
+      "status": "APPROVED_AUTHOR_RANGE",
+      "decisionId": "DAR-D08-02",
+      "option": "B",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0802FinalBatch",
+      "approvalScope": "rural_only_mean_range_no_household_census_no_obligatory_individual_size",
+      "notAnIndividualHouseholdLimit": true
+    },
+    "urbanRuralAgeBreakdown": {
+      "status": "NO_QUANTITATIVE_SPLIT_APPROVED",
+      "decisionId": "DAR-D08-02",
+      "option": "2C",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0802FinalBatch",
+      "urbanAgeShares": null,
+      "ruralAgeShares": null,
+      "sameDistributionAssumed": false
+    }
+  },
+  "occupationFamilies": [
+    {
+      "family": "agricultura",
+      "d04Chain": "d04_treihord_food_supply",
+      "gate": "cultivation_or_livestock_site_must_be_evidenced",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "ganaderia",
+      "d04Chain": null,
+      "gate": "grazing_and_rights_must_be_evidenced",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "mineria",
+      "d04Chain": "d04_mineral_valkram_treihord",
+      "gate": "specific_mine_site_authorization_required",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "metalurgia",
+      "d04Chain": "d04_mineral_valkram_treihord",
+      "gate": "industrial_process_material_energy_and_access_required",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "artesania",
+      "d04Chain": null,
+      "gate": "real_skill_tools_stock_and_customer_access",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "pesca_taramin",
+      "d04Chain": "d04_taramin_fisheries",
+      "gate": "fishing_access_and_maritime_rules",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "pesca_syvaris",
+      "d04Chain": "d04_syvaris_fisheries_commerce",
+      "gate": "fishing_access_and_maritime_rules",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "comercio_veldora",
+      "d04Chain": "d04_veldora_port_commerce",
+      "gate": "external_customs_only",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "transporte",
+      "d04Chain": null,
+      "gate": "D05_verified_connection_no_fictional_route",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "servicios_domesticos",
+      "d04Chain": null,
+      "gate": "actual_household_need_and_available_actor",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "salud_y_cuidados",
+      "d04Chain": null,
+      "gate": "skill_person_time_materials",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    },
+    {
+      "family": "aprendizaje",
+      "d04Chain": null,
+      "gate": "age_mentor_consent_and_supervision",
+      "formalGuildCreated": false,
+      "canonicalJobCount": null,
+      "contractorCount": null,
+      "provenance": "DERIVED",
+      "personIds": []
+    }
+  ],
+  "serviceNeeds": [
+    {
+      "id": "alimentacion",
+      "needType": "food",
+      "evidenceGate": "existing_food_stock",
+      "providerPattern": "household_or_market",
+      "sourceRefIds": [
+        "food",
+        "need"
+      ],
+      "coverageRule": "must_evaluate_not_assume_facility",
+      "actualBuildings": [],
+      "providerCount": null,
+      "effectiveCapacity": null,
+      "serviceTravelTime": null,
+      "provenance": "DERIVED",
+      "autoCreateProvider": false
+    },
+    {
+      "id": "agua",
+      "needType": "water",
+      "evidenceGate": "verified_potable_water_access",
+      "providerPattern": "physical_source_conditional",
+      "sourceRefIds": [
+        "need",
+        "chore"
+      ],
+      "coverageRule": "must_evaluate_not_assume_facility",
+      "actualBuildings": [],
+      "providerCount": null,
+      "effectiveCapacity": null,
+      "serviceTravelTime": null,
+      "provenance": "DERIVED",
+      "autoCreateProvider": false
+    },
+    {
+      "id": "higiene_y_residuos",
+      "needType": "sanitation",
+      "evidenceGate": "separation_of_water_and_waste",
+      "providerPattern": "household_or_local_service",
+      "sourceRefIds": [
+        "waste",
+        "chore"
+      ],
+      "coverageRule": "must_evaluate_not_assume_facility",
+      "actualBuildings": [],
+      "providerCount": null,
+      "effectiveCapacity": null,
+      "serviceTravelTime": null,
+      "provenance": "DERIVED",
+      "autoCreateProvider": false
+    },
+    {
+      "id": "cuidados",
+      "needType": "care",
+      "evidenceGate": "real_carer_time_and_relationship",
+      "providerPattern": "family_neighbor_or_specialist",
+      "sourceRefIds": [
+        "care",
+        "health"
+      ],
+      "coverageRule": "must_evaluate_not_assume_facility",
+      "actualBuildings": [],
+      "providerCount": null,
+      "effectiveCapacity": null,
+      "serviceTravelTime": null,
+      "provenance": "DERIVED",
+      "autoCreateProvider": false
+    },
+    {
+      "id": "salud",
+      "needType": "care",
+      "evidenceGate": "trained_healer_or_household_remedies_if_competent",
+      "providerPattern": "qualified_provider_conditional",
+      "sourceRefIds": [
+        "health",
+        "wait"
+      ],
+      "coverageRule": "must_evaluate_not_assume_facility",
+      "actualBuildings": [],
+      "providerCount": null,
+      "effectiveCapacity": null,
+      "serviceTravelTime": null,
+      "provenance": "DERIVED",
+      "autoCreateProvider": false
+    },
+    {
+      "id": "aprendizaje",
+      "needType": "apprenticeship",
+      "evidenceGate": "mentor_and_supervision",
+      "providerPattern": "mentor_or_household",
+      "sourceRefIds": [
+        "apr",
+        "labor"
+      ],
+      "coverageRule": "must_evaluate_not_assume_facility",
+      "actualBuildings": [],
+      "providerCount": null,
+      "effectiveCapacity": null,
+      "serviceTravelTime": null,
+      "provenance": "DERIVED",
+      "autoCreateProvider": false
+    },
+    {
+      "id": "alojamiento",
+      "needType": "housing",
+      "evidenceGate": "physical_bed_or_home_and_right_of_use",
+      "providerPattern": "home_or_inn_conditional",
+      "sourceRefIds": [
+        "res",
+        "own"
+      ],
+      "coverageRule": "must_evaluate_not_assume_facility",
+      "actualBuildings": [],
+      "providerCount": null,
+      "effectiveCapacity": null,
+      "serviceTravelTime": null,
+      "provenance": "DERIVED",
+      "autoCreateProvider": false
+    },
+    {
+      "id": "transporte",
+      "needType": "logistics",
+      "evidenceGate": "evidenced_modal_access_and_real_capacity",
+      "providerPattern": "verified_route_only",
+      "sourceRefIds": [
+        "d05"
+      ],
+      "coverageRule": "must_evaluate_not_assume_facility",
+      "actualBuildings": [],
+      "providerCount": null,
+      "effectiveCapacity": null,
+      "serviceTravelTime": null,
+      "provenance": "DERIVED",
+      "autoCreateProvider": false
+    },
+    {
+      "id": "mantenimiento",
+      "needType": "maintenance",
+      "evidenceGate": "worker_tools_materials_and_time",
+      "providerPattern": "household_or_specialist",
+      "sourceRefIds": [
+        "chore",
+        "emp"
+      ],
+      "coverageRule": "must_evaluate_not_assume_facility",
+      "actualBuildings": [],
+      "providerCount": null,
+      "effectiveCapacity": null,
+      "serviceTravelTime": null,
+      "provenance": "DERIVED",
+      "autoCreateProvider": false
+    },
+    {
+      "id": "comercio_y_abastecimiento",
+      "needType": "trade",
+      "evidenceGate": "stock_owner_provider_and_access",
+      "providerPattern": "home_neighbor_market_or_supplier",
+      "sourceRefIds": [
+        "txn",
+        "own",
+        "wait"
+      ],
+      "coverageRule": "must_evaluate_not_assume_facility",
+      "actualBuildings": [],
+      "providerCount": null,
+      "effectiveCapacity": null,
+      "serviceTravelTime": null,
+      "provenance": "DERIVED",
+      "autoCreateProvider": false
+    }
+  ],
+  "causalFlow": {
+    "phases": [
+      "need_or_demand",
+      "check_people_skills_availability",
+      "check_rights_resources_stock",
+      "check_verified_access_time_capacity",
+      "perform_authorized_transaction_or_service",
+      "persist_change_in_world_state"
+    ],
+    "requireNonnegativeStock": true,
+    "providerNotCreatedByDemand": true,
+    "unservedNeedsCanPersist": true,
+    "absenceDoesNotCreateReplacement": true,
+    "waitingNotAlwaysFIFO": true,
+    "noInstantPlayerPriority": true,
+    "doNotUseD05SupplyDependencyAsRoad": true
+  },
+  "planningUnknowns": [
+    "total_darovan_exact_population",
+    "veldora_exact_population",
+    "taramin_exact_population",
+    "syvaris_exact_city_population",
+    "syvaris_island_outside_city_population",
+    "syvaris_island_total_population",
+    "all_household_counts",
+    "job_counts",
+    "service_provider_counts",
+    "service_capacity",
+    "residence_job_commuting_metrics",
+    "stock_volumes",
+    "new_institutions",
+    "new_persons",
+    "territory_rural_exact_population",
+    "settlement_population_distribution",
+    "settlement_physical_count",
+    "urban_mean_household_size_exact",
+    "urban_household_size_distribution",
+    "rural_mean_household_size_exact",
+    "rural_household_size_distribution",
+    "urban_rural_age_distributions",
+    "exact_urban_rural_population_shares",
+    "urban_rural_settlement_classification",
+    "undocumented_urban_population_coverage",
+    "exact_age_band_counts"
+  ],
+  "authorialApprovalRequiredFor": [
+    "new_canonical_population_bands",
+    "new_social_categories",
+    "singular_institutions",
+    "new_important_npcs",
+    "new_family_law_overrides"
+  ],
+  "runtimeIntegration": {
+    "coreRpgExecuted": false,
+    "godotExecuted": false,
+    "populationEntitiesInstantiated": 0,
+    "householdsInstantiated": 0,
+    "physicalServicesInstantiated": 0,
+    "kindNumericRegistryApproved": false
+  },
+  "territoryPopulation": {
+    "scope": "casa_darovan_entire_territory_including_islands",
+    "populationApprox": null,
+    "populationStatus": "AUTHORED_RANGE",
+    "populationRange": {
+      "minInclusive": 300000,
+      "maxInclusive": 450000,
+      "unit": "habitantes",
+      "status": "APPROVED_AUTHOR_RANGE",
+      "decisionId": "DAR-D08-01",
+      "option": "B",
+      "provenance": "AUTHORED",
+      "sourceRefId": "decisionD0801DarovanTotal",
+      "approvalScope": "territory_total_including_urban_rural_and_islands_no_exact_census"
+    },
+    "sourceRefIds": [
+      "decisionD0801DarovanTotal"
+    ],
+    "ruralPopulationApprox": null,
+    "canonicalSettlementCensus": null,
+    "physicalSettlementCount": null,
+    "cityTotalsAreExact": false,
+    "runtimeInstantiated": false
+  },
+  "socialInstitutionPolicyD08": {
+    "status": "AUTHORED_NO_NEW_IN_D08",
+    "decisionId": "DAR-D08-03",
+    "option": "4A",
+    "provenance": "AUTHORED",
+    "sourceRefId": "decisionD0802FinalBatch",
+    "newSocialCategoriesApproved": false,
+    "newSingularInstitutionsApproved": false,
+    "newProfessionalSpecialtiesApproved": false,
+    "relyOnExistingNorgardAndDarovanCanon": true,
+    "futurePhasesMaySubmitNewProposals": true
+  }
+}

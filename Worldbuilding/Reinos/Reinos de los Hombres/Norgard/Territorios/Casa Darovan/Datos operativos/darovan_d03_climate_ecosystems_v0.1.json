@@ -349,7 +349,7 @@
       "derivedCandidates": [
         "island_local_climate_not_transferred_from_syvaris"
       ],
-      "administrativeOwner": null,
+      "administrativeOwner": "casa_darovan",
       "temperatureC": null,
       "precipitationMm": null,
       "elevationM": null,
@@ -366,7 +366,7 @@
     "taraminNorthCentral": "semiarid_not_desert",
     "taraminSouth": "increasing_moisture_and_humid_subtropical_forest_at_far_south",
     "syvaris": "warm_partly_dry_with_green_sheltered_areas_not_desert_or_uniform_jungle",
-    "arvenOwner": null,
+    "arvenOwner": "casa_darovan",
     "syvarisOwner": "casa_darovan",
     "manualCities": [
       "treihord",
@@ -385,6 +385,7 @@
       "belara",
       "lhera",
       "veldora",
+      "fhalion",
       "thalen"
     ],
     "belaraMouth": "golfo_de_norgard",
@@ -405,7 +406,9 @@
     "newSprings": [],
     "newWetlands": [],
     "newBasins": [],
-    "channelGeometry": null
+    "channelGeometry": null,
+    "fhalionSourceKnown": false,
+    "fhalionMouthNameKnown": false
   },
   "prospectiveProcesses": [
     "orographic_precipitation_if_exposure_verified",
@@ -447,9 +450,7 @@
   "approvals": {
     "newCanonApproved": false,
     "pendingAuthor": [
-      "DAR-P01",
       "DAR-P04",
-      "DAR-P07",
       "DAR-P08"
     ],
     "d04MayUseAsQualitativeConstraintsOnly": true
@@ -460,5 +461,6 @@
     "generatedClimateCells": 0,
     "generatedSpecies": 0,
     "persistedClimateState": false
-  }
+  },
+  "authorialCorrection20261021": "Arven Darovan, Veldora confirmado y Fhalion nombrado; caudales y meteorología UNKNOWN"
 }

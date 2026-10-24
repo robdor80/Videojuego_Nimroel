@@ -227,16 +227,16 @@
     },
     {
       "id": "d01_arven_contexto",
-      "label": "Isla de Arven, contexto NO adjudicado",
+      "label": "Isla de Arven, Casa Darovan",
       "classification": "qualitative_working_area_not_canonical_boundary",
-      "administrativeOwner": null,
+      "administrativeOwner": "casa_darovan",
       "sourcePaths": [
         "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
         "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md"
       ],
       "constraints": [
-        "administrative_ownership_unknown",
-        "do_not_assign_to_darovan"
+        "boundary_geometry_unknown",
+        "no_routes_inferred"
       ]
     }
   ],
@@ -268,6 +268,13 @@
       "cityBetweenArms": "taramin",
       "mouth": "golfo_de_norgard",
       "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+    },
+    "fhalion": {
+      "independentRiver": true,
+      "sourceKnown": false,
+      "mainCourseMouth": null,
+      "coastalSector": "costa_occidental_al_sur_de_veldora",
+      "source": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
     }
   },
   "administration": {
@@ -279,7 +286,7 @@
     ],
     "syvarisIslandOwner": "casa_darovan",
     "excludedCity": "karsath",
-    "arvenIslandOwner": null,
+    "arvenIslandOwner": "casa_darovan",
     "redMapMarkupIsLegalBorder": false
   },
   "referenceCoreContract": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json",
@@ -311,12 +318,10 @@
     "materialization_and_persistence"
   ],
   "pending": [
-    "arven_administrative_ownership",
     "political_borders",
     "map_scale_and_coordinates",
     "measured_elevations_and_slopes",
     "minor_passes_and_coastal_geometry",
-    "exact_veldora_river_behind_city",
     "d02_catchment_networks",
     "d03_microclimate"
   ],
@@ -324,5 +329,11 @@
     "status": "not_implemented",
     "validatedInGame": false,
     "generatedEntities": 0
+  },
+  "authorialApproval20261021": {
+    "arvenOwner": "casa_darovan",
+    "visualVeldoraRiver": "veldora",
+    "fhalionNamed": true,
+    "hydroGeometryApproved": false
   }
 }

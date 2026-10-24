@@ -1,4 +1,2 @@
-# Servicios
-**Carpeta preparada en D00. Fase de desarrollo: D08, todavía sin implementar.**
-Infraestructuras ajustadas a habitantes y nodos canónicos.
-Consultar `../00_Control_del_proyecto/REGISTRO_FASES.md`. No elevar propuestas a canon.
+# Servicios — D08
+La `D08_MATRIZ_NECESIDADES_COBERTURA_v0.1.md` distingue necesidades de instalaciones realmente existentes. Ningún nuevo establecimiento, curandera, posada, escuela, hospital, camino o proveedor queda canonizado por esta fase. Datos: `../Datos operativos/darovan_d08_population_services_v0.1.json`. D08 NO RUNTIME.

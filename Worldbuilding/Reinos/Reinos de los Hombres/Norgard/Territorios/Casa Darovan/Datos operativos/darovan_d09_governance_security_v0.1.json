@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d09_governance_fiscal_defense_security",
+  "version": "0.1",
+  "phase": "D09",
+  "preparedAt": "2026-10-22",
+  "status": "planning_reference_not_runtime",
+  "canonStatus": "author_approved_17_conceptual_choices_no_local_statutes",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "sourceRefs": {
+    "auditD09": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D09_AUDITORIA_CANON_Y_APROBACIONES_2026-10-22.md",
+    "governmentD09": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Administracion_y_fiscalidad/D09_GOBIERNO_Y_JUSTICIA_v0.1.md",
+    "fiscalD09": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Administracion_y_fiscalidad/D09_FISCALIDAD_Y_CONTROLES_v0.1.md",
+    "securityD09": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Seguridad_y_defensa/D09_GUARDIAS_DEFENSA_RESPUESTA_v0.1.md",
+    "d04": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d04_resources_production_v0.1.json",
+    "d05": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d05_mobility_communications_v0.1.json",
+    "d06": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d06_settlement_rules_v0.1.json",
+    "d07": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json",
+    "d08": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d08_population_services_v0.1.json",
+    "treihord": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+    "crownGovernance": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/organizacion_del_reino.md",
+    "monetary": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/moneda_y_acunacion.md",
+    "fiscalCanon": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_fiscal_y_aduanero_v0.1.md",
+    "militaryCanon": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_militar_norgard_v0.1.md",
+    "kingsJustice": "Worldbuilding/Sistemas/Norgard Defaults/08_Sistema_penal/SISTEMA_PENAL_Y_JUSTICIA_DEL_REY_NORGARD_v0.1.md",
+    "navy": "Worldbuilding/Sistemas/Norgard Defaults/06_Armada_real/armada_real_norgard_v0.1.md",
+    "norgardFiscal": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "norgardMilitary": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_military_authority_house_forces_default_v0.1.json",
+    "norgardPenal": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_penal_code_v0.1.json",
+    "norgardProcedure": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_kings_justice_procedure_v0.1.json",
+    "norgardNavy": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_royal_navy_default_v0.1.json",
+    "norgardProperty": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_property_inheritance_rental_default_v0.1.json",
+    "norgardAge": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_age_capacity_labor_apprenticeship_default_v0.1.json",
+    "coreLegal": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_legal_case_sentence_contract_v0.1.json",
+    "coreTxn": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_transaction_obligation_ledger_contract_v0.1.json",
+    "coreOwn": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_property_possession_object_contract_v0.1.json",
+    "coreEmergency": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_emergency_personal_response_contract_v0.1.json",
+    "coreMessaging": "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_messaging_letters_delivery_contract_v0.1.json"
+  },
+  "authorDecisions": [
+    {
+      "id": "DAR-D09-G01",
+      "option": "B",
+      "scope": "territorial_central_direction_functional_delegation",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-G02",
+      "option": "B",
+      "scope": "consultation_existing_local_actors_no_new_council",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-G03",
+      "option": "B",
+      "scope": "subordinate_rural_island_function_unknown_boundaries",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-G04",
+      "option": "B",
+      "scope": "four_cities_ordinary_justice_itinerant_minor_locations",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-G05",
+      "option": "C",
+      "scope": "capital_sentence_confirming_officer_unknown",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-G06",
+      "option": "A",
+      "scope": "minor_house_identities_and_existence_unknown",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-F01",
+      "option": "B",
+      "scope": "local_records_central_reconciliation_crown_accountability",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-F02",
+      "option": "C",
+      "scope": "veldora_royal_customs_darovan_support",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-F03",
+      "option": "B",
+      "scope": "crisol_records_checked_by_crown",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-F04",
+      "option": "C",
+      "scope": "remittance_period_and_rate_unknown",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-D01",
+      "option": "A",
+      "scope": "house_guard_boveda_crisol_vena_escorts",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-D02",
+      "option": "C",
+      "scope": "locally_scoped_guards_territorial_coordination",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-D03",
+      "option": "C",
+      "scope": "balanced_professional_defense_threat_response",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-D04",
+      "option": "A",
+      "scope": "syvaris_terrestrial_darovan_naval_crown",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-S01",
+      "option": "B",
+      "scope": "risk_based_resource_bound_patrols",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-S02",
+      "option": "C",
+      "scope": "mixed_escort_by_owner_risk_and_authority",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    },
+    {
+      "id": "DAR-D09-S03",
+      "option": "B",
+      "scope": "vena_joint_authorization_and_custody",
+      "provenance": "AUTHORED_CONCEPT",
+      "approval": "AUTHOR_BATCH_2026-10-22",
+      "createsNewTax": false,
+      "createsNamedInstitution": false,
+      "instantiatesRuntime": false
+    }
+  ],
+  "government": {
+    "crownSupreme": true,
+    "houseIndependentLegislation": false,
+    "houseSovereign": false,
+    "seat": "treihord",
+    "delegation": "functional_local_subordinate",
+    "consultation": "existing_actors_nonbinding_no_council_created",
+    "ruralAdministration": "subordinate_undelimited",
+    "arvenAdminHouse": "casa_darovan",
+    "karsathExcluded": true,
+    "royalEnvoyTreihord": {
+      "exists": true,
+      "role": "fiscal_oversight",
+      "operatesDarovanFacilities": false
+    },
+    "kingsJustice": {
+      "onePenalLaw": true,
+      "ordinaryCities": [
+        "treihord",
+        "veldora",
+        "taramin",
+        "syvaris"
+      ],
+      "smallerLocalities": "itinerant_without_claimed_routes_or_buildings",
+      "penalCodeOwner": "norgard_defaults",
+      "longPrisonOrdinary": false,
+      "professionalProsecutorCreated": false,
+      "professionalDefenseCounselCreated": false,
+      "juryCreated": false,
+      "tortureAsEvidence": false,
+      "automaticConviction": false,
+      "capitalTerritorialConfirmationRequired": true,
+      "capitalAuthorityExact": null,
+      "executionsWithoutConfirmedCompetence": false
+    },
+    "namedRuler": null,
+    "namedHeirs": null,
+    "minorHouses": null,
+    "newCouncilsCreated": false,
+    "newJudicialBuildingsCreated": false
+  },
+  "fiscal": {
+    "crownSuperior": true,
+    "localRecords": true,
+    "treihordReconciliation": true,
+    "crownAccounting": true,
+    "allowedCategories": [
+      "territorial_contribution",
+      "market_real_service",
+      "port_actual_service",
+      "external_customs",
+      "recorded_crown_remittance",
+      "royal_authorized_extraordinary_levy"
+    ],
+    "taxRates": null,
+    "remittancePeriod": null,
+    "remittanceShare": null,
+    "customsBetweenGreatHouses": false,
+    "transactionPerPurchaseTaxAutomatic": false,
+    "extraordinaryLevyRequiresRoyalOrder": true,
+    "veldora": {
+      "externalCustoms": true,
+      "customsDecisionAuthority": "crown",
+      "darovanRole": "port_logistics_administration_civil_security",
+      "declarationRequiredWhenApplicable": [
+        "origin",
+        "responsible_party",
+        "goods",
+        "aggregate_quantity",
+        "destination",
+        "value_when_required",
+        "exemptions_when_any"
+      ],
+      "localFishingIsImport": false,
+      "inspectionRequiresEvidenceOrLawfulSelection": true
+    },
+    "crisol": {
+      "ownerAndOperator": "casa_darovan",
+      "canRefineAndAssay": true,
+      "canMint": false,
+      "relatedFacility": "boveda_del_grifo",
+      "venaRestricted": true,
+      "recordsReconciledWithCrown": true
+    },
+    "currency": {
+      "accountingUnit": "clavo",
+      "lunaToClavo": 24,
+      "coronaToClavo": 480,
+      "physicalGoodsSurviveValuation": true,
+      "crownMintOnly": true
+    },
+    "ledgerNeedsEvidence": true,
+    "booksAreNotWorldState": true
+  },
+  "security": {
+    "royalMilitarySupremacy": true,
+    "royalNavyOnly": true,
+    "darovanIndependentNavy": false,
+    "minCombatAge": 18,
+    "layers": [
+      {
+        "id": "house_guard",
+        "purpose": "person_and_institutional_high_value_protection",
+        "notArmy": true,
+        "numericStrength": null
+      },
+      {
+        "id": "urban_guard",
+        "purpose": "ordinary_policing_investigation_custody",
+        "notArmy": true,
+        "numericStrength": null
+      },
+      {
+        "id": "territorial_professional",
+        "purpose": "defense_and_serious_armed_threats",
+        "notArmy": false,
+        "numericStrength": null
+      },
+      {
+        "id": "mobilizable_reserve",
+        "purpose": "lawful_mobilization_not_permanently_barracked",
+        "notArmy": false,
+        "numericStrength": null
+      }
+    ],
+    "houseGuardProtected": [
+      "boveda_del_grifo",
+      "crisol",
+      "vena",
+      "house_family",
+      "institutional_high_value_escort"
+    ],
+    "localGuards": "local_scope_territorial_coordination",
+    "territorialProfessionals": "balanced_response_real_threat_resources_required",
+    "syvaris": {
+      "darovanLandCivilSecurity": true,
+      "royalNavyCommand": "crown",
+      "darovanNavy": false,
+      "navalBaseOrQuartersNew": false
+    },
+    "patrols": {
+      "riskAdaptive": true,
+      "scheduleAndRoutesMaterialized": false,
+      "staffAndResourcesGuaranteed": false
+    },
+    "escorts": {
+      "mode": "private_or_darovan_according_to_authority_owner_risk",
+      "automaticFreeEscort": false
+    },
+    "vena": {
+      "restricted": true,
+      "authorization": "crisol_and_boveda_joint_recorded_coordination",
+      "publicAccess": false
+    },
+    "incidentFlow": [
+      "verified_signal",
+      "jurisdiction",
+      "real_resources",
+      "proportional_protection",
+      "record_testimony_custody",
+      "refer_to_kings_justice_if_criminal",
+      "persist_only_after_runtime_integration"
+    ],
+    "civilGuardsBecomeArmyAutomatically": false,
+    "forcedConscriptionMinors": false,
+    "legalProofRequired": true,
+    "confirmedPhysicalLinksOnly": [
+      "d05_road_veldora_treihord",
+      "d05_belara_shallow_haul",
+      "d05_vena_restricted"
+    ],
+    "supplyRelationsDoNotProveRoads": true
+  },
+  "localities": [
+    {
+      "id": "treihord",
+      "isCanonicalCity": true,
+      "functions": [
+        "territorial_seat",
+        "kings_justice_ordinary",
+        "crisol_ensay_not_mint",
+        "crown_permanent_envoy_existing",
+        "house_guard_boveda_crisol_vena"
+      ],
+      "locationOrBuildingNew": false,
+      "personnelNumbers": null
+    },
+    {
+      "id": "veldora",
+      "isCanonicalCity": true,
+      "functions": [
+        "commercial_port",
+        "royal_external_customs",
+        "darovan_administrative_and_port_support",
+        "kings_justice_ordinary",
+        "urban_security"
+      ],
+      "locationOrBuildingNew": false,
+      "personnelNumbers": null
+    },
+    {
+      "id": "taramin",
+      "isCanonicalCity": true,
+      "functions": [
+        "fishing_zone_concept_only",
+        "kings_justice_ordinary",
+        "urban_security",
+        "local_fishing_not_customs_import"
+      ],
+      "locationOrBuildingNew": false,
+      "personnelNumbers": null
+    },
+    {
+      "id": "syvaris",
+      "isCanonicalCity": true,
+      "functions": [
+        "main_bay_concept_only",
+        "kings_justice_ordinary",
+        "darovan_civil_security",
+        "norgard_royal_navy_presence"
+      ],
+      "locationOrBuildingNew": false,
+      "personnelNumbers": null
+    }
+  ],
+  "unknowns": {
+    "rulerAndHeirs": null,
+    "minorHouses": null,
+    "capitalConfirmationOfficer": null,
+    "remittancePeriod": null,
+    "remittancePercentage": null,
+    "tariffsAndTaxRates": null,
+    "guardStrengthsAndRosters": null,
+    "perCityOfficialsAndMagistrates": null,
+    "guaranteedPhysicalCourts": null,
+    "municipalCouncils": null,
+    "ruralDistrictNamesAndBounds": null,
+    "specificMines": null,
+    "portCapacities": null,
+    "roadsBeyondD05Evidence": null,
+    "syvarisNavyShipCounts": null,
+    "specificPatrolRoutes": null,
+    "householdAndWorkforceExactCounts": null
+  },
+  "runtimeIntegration": {
+    "coreRpgExecuted": false,
+    "godotExecuted": false,
+    "gdeExtensionExecuted": false,
+    "createdNpcCount": 0,
+    "createdNamedInstitutions": 0,
+    "generatedBuildings": 0,
+    "worldStateMaterialized": false,
+    "contractsAreNativeCoreAPIs": false
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "projectionVersion": "0.1.0",
+  "contentContract": "0.1.0",
+  "packId": "nimroel.darovan.territory",
+  "authorityLayers": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "localidad",
+    "world_state"
+  ],
+  "status": "planning_reference_not_runtime",
+  "worldStateEntitiesCreated": 0,
+  "sourceLocks": [
+    {
+      "phase": "D00",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d00_canonical_anchors_v0.1.json",
+      "gitBlobSha": "4533130584a2de054bd49d56b25236473b399d17"
+    },
+    {
+      "phase": "D01",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+      "gitBlobSha": "ae6fe922ba53531d23fd6e22b2cc738eda330113"
+    },
+    {
+      "phase": "D02",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d02_hydro_network_v0.1.json",
+      "gitBlobSha": "ccbd489c1916713984fdfe8ac1ffe79df1ea2d97"
+    },
+    {
+      "phase": "D03",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d03_climate_ecosystems_v0.1.json",
+      "gitBlobSha": "df9a94c227d46dde4fa996988bacc5234c8093a0"
+    },
+    {
+      "phase": "D04",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d04_resources_production_v0.1.json",
+      "gitBlobSha": "330e3301869aebbe042252ed54dcf0f52b108276"
+    },
+    {
+      "phase": "D05",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d05_mobility_communications_v0.1.json",
+      "gitBlobSha": "14d55c29db112f784417edce7de0bac3387efc37"
+    },
+    {
+      "phase": "D06",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d06_settlement_rules_v0.1.json",
+      "gitBlobSha": "400ad129b603dcef482979c1ca0cf177d5dee20a"
+    },
+    {
+      "phase": "D07",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json",
+      "gitBlobSha": "cbc584765c077601eb2a37971ed7ff64e69038cb"
+    },
+    {
+      "phase": "D08",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d08_population_services_v0.1.json",
+      "gitBlobSha": "141a24a199fbced4200e9fe5aa3e952112b3b80a"
+    },
+    {
+      "phase": "D09",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d09_governance_security_v0.1.json",
+      "gitBlobSha": "1a50cae87e509b815af9559952ee6aeb19edb999"
+    },
+    {
+      "phase": "D10",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d10_culture_society_v0.1.json",
+      "gitBlobSha": "fc8eb51850a5381401a6d0b51f55a2b42d5f9013"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "nimroel.darovan.territory:territory/darovan",
+      "kind": "territory_reference",
+      "sourcePhase": "D07",
+      "sourcePointer": "/manualCityIds"
+    },
+    {
+      "id": "nimroel.darovan.territory:cities/treihord",
+      "kind": "canonical_city_reference",
+      "sourcePhase": "D07",
+      "sourcePointer": "/cities/0"
+    },
+    {
+      "id": "nimroel.darovan.territory:cities/veldora",
+      "kind": "canonical_city_reference",
+      "sourcePhase": "D07",
+      "sourcePointer": "/cities/1"
+    },
+    {
+      "id": "nimroel.darovan.territory:cities/taramin",
+      "kind": "canonical_city_reference",
+      "sourcePhase": "D07",
+      "sourcePointer": "/cities/2"
+    },
+    {
+      "id": "nimroel.darovan.territory:cities/syvaris",
+      "kind": "canonical_city_reference",
+      "sourcePhase": "D07",
+      "sourcePointer": "/cities/3"
+    }
+  ],
+  "canonicalCityIds": [
+    "treihord",
+    "veldora",
+    "taramin",
+    "syvaris"
+  ],
+  "excludedCityIds": [
+    "karsath"
+  ],
+  "islandAdministrativeOwner": {
+    "arven": "casa_darovan",
+    "syvaris": "casa_darovan"
+  },
+  "arvenCulturalIdentity": null,
+  "namedRiverIds": [
+    "belara",
+    "lhera",
+    "veldora",
+    "fhalion",
+    "thalen"
+  ],
+  "hydroSystemIds": [
+    "belara_lhera",
+    "veldora",
+    "fhalion",
+    "thalen"
+  ],
+  "belaraCrossesTreihord": false,
+  "physicalTransportLinkIds": [
+    "d05_road_veldora_treihord",
+    "d05_belara_shallow_haul",
+    "d05_vena_restricted"
+  ],
+  "supplyRelationsNotRoutes": [
+    "d05_ore_cart_stage",
+    "d05_ore_port_handling",
+    "d05_coal_azurios_supply",
+    "d05_pilares_wood_supply"
+  ],
+  "unmeasuredRouteDistances": true,
+  "sourceDemographyPointer": "/territoryPopulation",
+  "sourceCultureDecisionPointer": "/authorDecisions",
+  "executionCapabilities": {
+    "territoryLogic": false,
+    "resourceConversion": false,
+    "routing": false,
+    "householdMigration": false,
+    "culturalPersonality": false,
+    "fiscalAuthority": false,
+    "hostIntegration": false
+  },
+  "dataClassification": "AUTHORING_PROJECTION_ONLY"
+}

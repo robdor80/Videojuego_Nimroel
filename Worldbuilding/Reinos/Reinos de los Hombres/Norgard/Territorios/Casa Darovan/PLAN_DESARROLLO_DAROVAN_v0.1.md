@@ -29,23 +29,23 @@
 - Zonas de inundación, estacionalidad, vados, navegabilidad y recursos hídricos sin caudales inventados.
 - **Salida D02 (15-10-2026):** 4 ríos, 3 sistemas topológicos, 13 nodos, 10 aristas; cuencas cualitativas, perfil JSON no-runtime, reglas, validador y acta. Sin afluentes, caudales, medidas ni geometría inventados; PR propia para revisión y sin merge.
 
-## D03 — Climas y ecosistemas [CERRADA DOCUMENTALMENTE; PR A REVISIÓN SIN FUSIONAR]
+## D03 — Climas y ecosistemas [FUSIONADA EN MAIN, PR #17]
 - Clima del litoral Veldora, Valkram, transición fría norte, península Taramin y Syvaris; microclimas y suelos.
 - Evitar falsa homogeneidad: costa atlántica, altura, sotavento, valle, corredor seco y protegido.
 - **Salida D03 (15-10-2026):** 3 documentos climáticos/ecológicos, 12 unidades D01 trazadas, JSON de planificación NO RUNTIME, 30 invariantes, script de regresión, acta y traspaso D04; sin grados, lluvias, cumbres, especies o ríos nuevos.
-- **Estado de pruebas:** validación JavaScript remota sobre perfil, fuentes e interfaces D01/D02; script Python para checkout completo PENDIENTE — MSI, Godot PENDIENTE — GODOT. Ningún canon nuevo ni runtime.
+- **Estado vigente:** validadores Python D01/D02/D03 superados por el autor en MSI checkout completo 15-10-2026; PR #17 fusionada squash 191bcd5. Godot/GIS siguen pendientes; NO RUNTIME.
 
-## D04 — Recursos y economía territorial [PENDIENTE]
+## D04 — Recursos y economía territorial [DOCUMENTALMENTE CERRADA; PYTHON CI WINDOWS/LINUX OK; PR #20]
 - Oro/plata/minas, fundición y ensayo, carbón importado de Azurios, madera de Pilares, agricultura, pesca/puertos y transportes.
 - Revisar fiscalidad E8, moneda E2, transacciones Core, sin aduanas internas entre Grandes Casas.
-- **Salida:** cadenas productivas y abastecimiento, almacenaje, reservas, trazabilidad, riesgos.
+- **Salida D04:** 4 documentos, 12 unidades, 8 cadenas, 19 fuentes y validador Python con 16 negativos; 22 controles JS remotos superados. **21-10-2026: Python D01–D04 STATIC OK tanto en Windows 2022 como Ubuntu 24.04 con checkout íntegro de GitHub Actions (run #39583142837).** No se ha ejecutado físicamente D04 en el MSI; esa repetición es opcional, no condición de cierre estático. Godot/GIS/CoreRPG runtime no ejecutados por D04. PR #20 fusionada el 21-10-2026, commit `d4a07ba25f8560d5005a52aafc763699917f2388`; no canon nuevo.
 
-## D05 — Red de transporte, rutas y comunicaciones [PENDIENTE]
+## D05 — Red de transporte, rutas y comunicaciones [DOCUMENTALMENTE CERRADA; CI WINDOWS/LINUX OK; PR #30 SIN MERGE]
 - Corredores existentes (Veldora–Treihord), transporte mineral/Belara, accesos a Taramin, cabotaje y Syvaris.
 - Caminos, puentes, vados, barcazas, mercantes, barcos pesqueros, mensajería y tiempos derivados por terreno cuando exista escala.
 - **Salida:** grafo modal básico, nodos y restricciones, sin kilómetros/itinerarios ficticios.
 
-## D06 — Asentamientos ordinarios y generación procedural [PENDIENTE]
+## D06 — Asentamientos ordinarios y generación procedural [EN REVISIÓN; RAMA EXCLUSIVA]
 - Aldeas → pueblos → villas; enclaves mineros, pesqueros, forestales, agrícolas, isleños y servicios de ruta.
 - Esqueleto obligatorio → posibilidades → condiciones → pesos regionales → modelos → instancias y seed.
 - Diferenciar distribución espacial, servicios y límites logísticos de rangos Valrik.
@@ -98,4 +98,39 @@
 - **PR:** revisión por autor, **nunca fusionar `main` sin permiso expreso**.
 
 ## Continuidad de conversaciones
-Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **fusionada por PR #15**. Darovan 3: D02 **fusionada en main por PR #16**. Darovan 4: D03 **documentalmente cerrada, PR sin merge**, habiendo leído `00_Control_del_proyecto/TRASPASO_D03.md`. Darovan 5: D04 condicionada a merge D03 y TRASPASO_D04.md. Una fase por conversación. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
+Darovan 1: D00 **integrada en main** mediante PR #14. Darovan 2: D01 **fusionada por PR #15**. Darovan 3: D02 **fusionada en main por PR #16**. Darovan 4: D03 **FUSIONADA PR #17, Python MSI D01–D03 OK**, habiendo leído `00_Control_del_proyecto/TRASPASO_D03.md`. Darovan 5: D04 **fusionada PR #20, Python CI Windows/Linux OK (21-10-2026)**. Darovan 6: D05 **desarrollada y validada estáticamente en PR #30; sin fusionar**, solo tras comprobar el merge D04. Una fase por conversación. No presumir merge ni pruebas runtime. Actualizar `Estado` de cada fase con commit por incremento.
+
+## Nota de ejecución D05 (21-10-2026)
+D04 PR #20 fusionada en `main` (`d4a07ba25f8560d5005a52aafc763699917f2388`); D05 rama propia desde ese SHA. Grafo cualitativo con 17 nodos, 3 vínculos físicos apoyados por fuentes y 4 relaciones de suministro **no equivalentes a caminos**. Mensajería MSG trazada, cinco riesgos condicionales, sin cartografía, rutas nuevas, mediciones, correos postales ni runtime. D06 no iniciado. CI real D01–D05 Windows/Linux superada en [run #39587112092](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39587112092) (30 negativos D05), cierre documental de D05 acreditado sin activar canon ni runtime; [acta](Auditorias/D05_CIERRE_Y_VALIDACION_2026-10-21.md). PR #30 precisa aprobación del autor para fusionar.
+
+
+## Adenda operativa D06 — 21-10-2026
+D05 PR #30 fue fusionada en `main`, commit `0818886f8cc9f91c21b5db00f91feb1b942d230d`. D06 cuenta con documentos de modelo, datos no runtime, seis casos sintéticos y 42 mutaciones negativas. Los pesos 0–4 son prioridades de diseño, nunca densidades demográficas; solo se valida laboratorio. No se inicia D07 ni se fusiona D06 automáticamente. Las menciones históricas a Arven UNKNOWN y cuatro ríos quedan sustituidas por la corrección del autor: Arven Darovan y cinco ríos/cuatro redes, con Fhalion. Primera CI D01–D06 superada en Windows y Linux, run #39627654566; revalidar commit final de PR.
+
+## Seguimiento D07 — 21-10-2026
+Tras verificar la fusión de D06 PR #31 (main e2636f33791b11ec6ad2e478df95ab190de0f09e), D07 trabaja en rama exclusiva feat/darovan-d07-ciudades-canonicas. Entrega técnica prevista: auditoría de cuatro ciudades, Treihord solo compatibilidad con D01–D06, perfiles manuales Veldora/Taramin/Syvaris, matriz de fuente, JSON no-runtime, validación Python y PR Draft. Las decisiones de organización urbana DAR-D07-01/02/03 permanecen pendientes del autor. No se han desarrollado D08, NPC, habitantes nuevos, calles, puertos o rutas; no hay integración CoreRPG/Godot acreditada.
+
+## Seguimiento D08 — 21-10-2026
+Tras D07 PR #32 fusionada (main `23670e68532447d918c04839369a9962448f2e44`), D08 trabaja en rama exclusiva `feat/darovan-d08-hogares-poblacion-servicios`. Entregables: auditoría CoreRPG/API y canon, modelos domésticos/laborales, matriz de servicios, datos JSON no-runtime y fixtures TEST_ONLY, validador D08 con negativos y CI Windows/Linux D01–D08. El canon de Treihord y elecciones conceptuales de D07 no se modifican. Demografía, cuotas, hogares, capacidades, personal y edificios siguen UNKNOWN; solo aprobación expresa del autor puede canonizarlos. D09/D10/D11 fuera de alcance.
+
+## D08 — Decisión demográfica autoral parcial (22-10-2026)
+Veldora: aprobada **opción B, 29.000–35.000 habitantes** como intervalo canónico, sin total puntual ni despiece doméstico/laboral. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-01_VELDORA_2026-10-22.md`. Taramin/Syvaris/total Darovan y composición hogar continúan `UNKNOWN`; D08 PR #34 Draft y no fusionada. D09–D11 no iniciadas.
+
+## D08 — Aprobación demográfica de Taramin (22-10-2026)
+Taramin: autor aprueba **opción B, 14.000–20.000 habitantes** como rango canónico. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-01_TARAMIN_2026-10-22.md`. Ya aprobado Veldora B 29.000–35.000; Treihord ~32.000 se preserva. Syvaris, población total, cifras exactas y demografía doméstica siguen `UNKNOWN`. Sin nuevo urbanismo ni integración CoreRPG. D08 PR #34 Draft sin fusionar; D09–D11 no iniciadas.
+
+## D08 — Aprobación del intervalo urbano de Syvaris (22-10-2026)
+`DAR-D08-01`: el autor aprueba **opción B, 7.000–10.000 habitantes** para **la ciudad**, no para toda la isla Syvaris. Acta `Auditorias/D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md`. Tres ciudades: Veldora 29.000–35.000, Taramin 14.000–20.000 y Syvaris 7.000–10.000; Treihord ~32.000. Los censos exactos, población insular fuera de la ciudad y total Darovan continúan UNKNOWN. Sin nuevos edificios/NPC ni integración runtime. PR #34 Draft sin fusionar; D09–D11 no iniciadas.
+
+## D08 — Total territorial aprobado (22-10-2026)
+`DAR-D08-01`: opción B, **300.000–450.000 habitantes para toda Casa Darovan**. Acta `Auditorias/D08_RESOLUCION_DAR-D08-01_TOTAL_DAROVAN_2026-10-22.md`. Junto a Treihord ~32.000, Veldora 29.000–35.000, Taramin 14.000–20.000 y la ciudad Syvaris 7.000–10.000, queda resuelta la escala poblacional general. Persisten `UNKNOWN` censos exactos, resto de isla Syvaris, cuotas de población por localidad, asentamientos reales no documentados, tamaños de hogares, infraestructura/servicios y distribución por edades. Sin creación de mundo ni API runtime; D08 PR #34 Draft sin fusionar.
+
+## D08 — Decisión del autor sobre hogares urbanos (22-10-2026)
+`DAR-D08-02`: opción B, **3–5 personas por hogar urbano de media**, rango de referencia aprobado. Fuente `Auditorias/D08_RESOLUCION_DAR-D08-02_HOGARES_URBANOS_2026-10-22.md`. Sin tamaños individuales obligatorios ni hogares/viviendas/censos cuantificados; rurales y medias globales pendientes. Norgard Defaults y límites D06/D07 intactos. PR #34 Draft sin fusionar. D09–D11 no iniciadas.
+
+## D08 — Lote demográfico definitivo del autor (22-10-2026)
+Acta: `Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`. **B rural 4–6 personas/hogar de media**; **1B edades 30/60/10** para todo Darovan; **2C sin desglose etario rural/urbano cuantificado**; **3C 35–45 % urbano / 55–65 % rural**; **4A no crear categorías/instituciones/especialidades nuevas en D08**. El cálculo básico muestra cobertura incompleta del inventario de cuatro ciudades frente al rango porcentual urbano: no atribuir censos ni agregar localidades no documentadas. El rango territorial, ciudades y medias urbanas previamente aprobadas permanecen intactos. Completadas decisiones conceptuales de D08; números concretos por ciudad/pueblo, hogares, trabajadores, infraestructuras y runtime reservados. PR #34 continúa Draft sin fusionar; D09–D11 no autorizadas.
+
+
+## Adenda de avance D09 — 22/10/2026
+D09 está autorizada por el autor con 17 opciones agrupadas y se prepara para revisión como entrega **documental** en `feat/darovan-d09-gobierno-fiscalidad-defensa`. G01B/G02B/G03B/G04B/G05C/G06A, F01B/F02C/F03B/F04C, D01A/D02C/D03C/D04A, S01B/S02C/S03B. La opción UNKNOWN fue elegida expresamente donde corresponde. Ver auditoría D09, documentos de gobierno, fiscalidad, seguridad, índice JSON, schema, 14 casos TEST_ONLY, validador y traspaso preparatorio D10. El workflow se amplía a D01–D09 para Windows/Linux. **D09 no está fusionada**, no crea runtime y D10 no comienza por la mera existencia del traspaso. Los estados antiguos de planificación son historial, no la realidad tras esta autorización.

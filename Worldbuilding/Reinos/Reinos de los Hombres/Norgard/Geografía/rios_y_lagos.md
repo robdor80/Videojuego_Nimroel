@@ -133,7 +133,17 @@ La ciudad de **Taramin** se encuentra situada entre ambos brazos de la desemboca
 
 ---
 
-## 7. Río Serhan
+## 7. Río Fhalion — decisión expresa del autor (21/10/2026)
+
+El **Río Fhalion** es un curso **menor e independiente** del occidente de Norgard, al sur del Río Veldora, antes de la cordillera occidental de la península de Taramin. El autor lo identifica en su mapa mediante la **flecha amarilla**. No pertenece al sistema Belara/Lhera ni al Thalen.
+
+Son cinco ríos nombrados en Darovan: **Belara** (azul, principal al norte, pasa junto a Treihord, desemboca al sur de la ciudad), **Lhera** (rojo, se separa del Belara y desemboca al norte de Veldora), **Veldora** (verde, independiente y junto a su ciudad), **Fhalion** (amarillo, más al sur), **Thalen** (violeta, se divide en dos brazos alrededor de Taramin). **Cuatro sistemas hidrográficos independientes**, porque Belara y Lhera son una red conectada.
+
+Nacimiento exacto, desembocadura precisa, golfo receptor, altitud, caudal, estación seca, puentes, navegabilidad y coordenadas Fhalion **UNKNOWN**. El mapa tiene una referencia gráfica de 400 millas, no cartografía métrica certificada.
+
+---
+
+## 8. Río Serhan
 
 ### Definición
 
@@ -170,7 +180,7 @@ No se han definido todavía:
 
 ---
 
-## 8. Río Caleran
+## 9. Río Caleran
 
 ### Definición
 
@@ -210,7 +220,7 @@ Finalmente desemboca en el **Mar de Suthiros**.
 
 ---
 
-## 9. Ríos Sareno y Theleno
+## 10. Ríos Sareno y Theleno
 
 ### Definición
 
@@ -236,7 +246,7 @@ Este sobrenombre hace referencia a su recorrido paralelo e identidad asociada a 
 
 ---
 
-## 10. Río Vornarsk
+## 11. Río Vornarsk
 
 ### Definición
 
@@ -256,7 +266,7 @@ El significado original del término en lengua enana queda pendiente de definir.
 
 ---
 
-## 11. Río Keldarsk
+## 12. Río Keldarsk
 
 ### Definición
 
@@ -274,7 +284,7 @@ El significado original del término en lengua enana queda pendiente de definir.
 
 ---
 
-## 12. Principios generales
+## 13. Principios generales
 
 Los ríos de Norgard cumplen funciones muy diferentes según la región:
 

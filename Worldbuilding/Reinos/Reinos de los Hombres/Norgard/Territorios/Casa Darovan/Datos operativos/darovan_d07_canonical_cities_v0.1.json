@@ -1,0 +1,851 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_d07_canonical_city_operational_index",
+  "version": "0.1",
+  "phase": "D07",
+  "preparedAt": "2026-10-21",
+  "status": "planning_reference_not_runtime",
+  "canonStatus": "index_of_authored_facts_and_unapproved_technical_options",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "sourceRefs": {
+    "treihord": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+    "visual": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/NORGARD_VISUAL_PROFILE_v0.1.md",
+    "visualData": "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Datos operativos/norgard_settlements_v0.2.json",
+    "houses": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md",
+    "rivers": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "coasts": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+    "forests": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+    "regions": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+    "climate": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Clima/clima_general.md",
+    "fiscal": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_fiscal_customs_default_v0.1.json",
+    "navigation": "Worldbuilding/Sistemas/Norgard Defaults/Datos operativos/norgard_civil_maritime_fishing_default_v0.1.json",
+    "d00": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d00_canonical_anchors_v0.1.json",
+    "d01": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "d02": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d02_hydro_network_v0.1.json",
+    "d03": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d03_climate_ecosystems_v0.1.json",
+    "d04": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d04_resources_production_v0.1.json",
+    "d05": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d05_mobility_communications_v0.1.json",
+    "d06": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d06_settlement_rules_v0.1.json",
+    "decisions": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/00_Control_del_proyecto/DECISIONES_Y_BLOQUEOS.md"
+  },
+  "manualCityIds": [
+    "treihord",
+    "veldora",
+    "taramin",
+    "syvaris"
+  ],
+  "excludedCityIds": [
+    "karsath"
+  ],
+  "otherDarovanIsland": "arven",
+  "hydro": {
+    "namedRivers": [
+      "belara",
+      "lhera",
+      "veldora",
+      "fhalion",
+      "thalen"
+    ],
+    "systems": [
+      "belara_lhera",
+      "veldora",
+      "fhalion",
+      "thalen"
+    ],
+    "belaraCrossesTreihord": false,
+    "belaraNavigation": "industrial_shallow_draft_only",
+    "veldoraIndependent": true,
+    "thalenTerminalArms": 2,
+    "thalenArmsNavigation": null,
+    "fhalionNavigation": null
+  },
+  "fiscal": {
+    "internalCustomsBetweenGreatHouses": false,
+    "veldoraExternalCustoms": true
+  },
+  "prohibitions": {
+    "generateCanonicalCities": false,
+    "createCanonicalDistrictsWithoutAuthor": false,
+    "createPhysicalRoutesWithoutEvidence": false,
+    "createBridgesWithoutEvidence": false,
+    "createHarboursWithoutEvidence": false,
+    "assumeRiverNavigation": false,
+    "permanentAgujasInteriorSettlements": false,
+    "industrialTaraminForestry": false,
+    "intensiveSyvarisForestry": false,
+    "darovanIndependentNavy": false,
+    "createD08Demographics": false
+  },
+  "measurementPolicy": {
+    "coordinates": null,
+    "distances": null,
+    "travelTimes": null,
+    "portCapacities": null,
+    "streetMaps": null,
+    "hydrologicDischarge": null
+  },
+  "confirmedPhysicalLinkIds": [
+    "d05_road_veldora_treihord",
+    "d05_belara_shallow_haul",
+    "d05_vena_restricted"
+  ],
+  "cities": [
+    {
+      "id": "treihord",
+      "name": "Treihord",
+      "administrativeOwner": "casa_darovan",
+      "manualOnly": true,
+      "proceduralGenerationAllowed": false,
+      "sourceOfIdentity": "treihord",
+      "designStatus": "CANON_DISENO_BASE_CERRADO",
+      "facts": [
+        {
+          "id": "capital_of_darovan",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord",
+            "houses"
+          ]
+        },
+        {
+          "id": "population_approx_approved",
+          "value": 32000,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord",
+            "houses"
+          ]
+        },
+        {
+          "id": "belara_adjacent_not_crossing",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord",
+            "rivers",
+            "d02"
+          ]
+        },
+        {
+          "id": "port_industrial_shallow_draft_only",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord",
+            "rivers",
+            "d05"
+          ]
+        },
+        {
+          "id": "crisol_not_mint",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord",
+            "fiscal"
+          ]
+        },
+        {
+          "id": "coal_source_montes_azurios",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord",
+            "d04"
+          ]
+        },
+        {
+          "id": "vena_restricted_gallery",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord",
+            "d05"
+          ]
+        },
+        {
+          "id": "boveda_del_grifo_existing",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord"
+          ]
+        },
+        {
+          "id": "eight_approved_districts",
+          "value": [
+            "El Recinto",
+            "Los Altos",
+            "El Peso",
+            "Las Lonjas",
+            "Los Oficios",
+            "La Calzada",
+            "La Ribera",
+            "La Costra"
+          ],
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord"
+          ]
+        },
+        {
+          "id": "four_approved_squares",
+          "value": [
+            "Plaza Vieja",
+            "Plaza de las Balanzas",
+            "Plaza de las Lonjas",
+            "Plaza del Camino"
+          ],
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord"
+          ]
+        },
+        {
+          "id": "four_approved_gates",
+          "value": [
+            "Puerta Alta",
+            "Puerta del Río",
+            "Puerta del Camino",
+            "Puerta Sur"
+          ],
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "treihord"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "id": "exact_street_parcels_and_belara_crossings",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "municipal_procedures_and_character_ids",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "coal_route_and_capacity",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        }
+      ],
+      "conceptualLayers": [],
+      "cityGeometry": null,
+      "routeGeometry": null,
+      "portGeometry": null,
+      "worldStateEntityId": null,
+      "generatedByD06": false,
+      "authorApprovedNewLayout": false
+    },
+    {
+      "id": "veldora",
+      "name": "Veldora",
+      "administrativeOwner": "casa_darovan",
+      "manualOnly": true,
+      "proceduralGenerationAllowed": false,
+      "sourceOfIdentity": "visual",
+      "designStatus": "VISUAL_APROBADO_TRAZADO_URBANO_PENDIENTE",
+      "facts": [
+        {
+          "id": "primary_commercial_port",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "houses",
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "west_coast_golfo_veldora",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "coasts",
+            "visualData"
+          ]
+        },
+        {
+          "id": "river_veldora_independent",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "rivers",
+            "d02",
+            "decisions"
+          ]
+        },
+        {
+          "id": "river_behind_city_visual_anchor",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData",
+            "decisions"
+          ]
+        },
+        {
+          "id": "external_customs_and_royal_presence",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "fiscal"
+          ]
+        },
+        {
+          "id": "merchant_storage_workshops_guilds",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "organic_growth_not_perfect_grid",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "stone_wood_tile_two_floors_some_three",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "affluent_areas_away_from_docks",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "offshore_forested_island",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "coasts"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "id": "street_district_plan",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "precise_dock_and_warehouse_positions",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "river_crossings_and_navigability",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "population_and_services_D08",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "identity_of_visual_offshore_island",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        }
+      ],
+      "conceptualLayers": [
+        {
+          "id": "study_port_cargo_customs_interface",
+          "goal": "Estudiar agrupación funcional de descarga, almacenaje e inspección exterior, sin definir nuevos muelles, edificios o barrios",
+          "status": "PROPOSAL_PENDING_AUTHOR",
+          "isCanonical": false,
+          "spatiallyLocated": false,
+          "createsNewDistrict": false,
+          "createsNewFacility": false,
+          "materializedInWorld": false
+        },
+        {
+          "id": "study_commercial_mixed_fabric",
+          "goal": "Examinar continuidad de comercio-taller-vivienda heredando arquitectura aprobada, sin dibujar calles",
+          "status": "PROPOSAL_PENDING_AUTHOR",
+          "isCanonical": false,
+          "spatiallyLocated": false,
+          "createsNewDistrict": false,
+          "createsNewFacility": false,
+          "materializedInWorld": false
+        },
+        {
+          "id": "study_affluent_transition",
+          "goal": "Examinar separación cualitativa entre puerto y sectores acomodados ya descrita; límites y nombres reservados",
+          "status": "PROPOSAL_PENDING_AUTHOR",
+          "isCanonical": false,
+          "spatiallyLocated": false,
+          "createsNewDistrict": false,
+          "createsNewFacility": false,
+          "materializedInWorld": false
+        }
+      ],
+      "cityGeometry": null,
+      "routeGeometry": null,
+      "portGeometry": null,
+      "worldStateEntityId": null,
+      "generatedByD06": false,
+      "authorApprovedNewLayout": false
+    },
+    {
+      "id": "taramin",
+      "name": "Taramin",
+      "administrativeOwner": "casa_darovan",
+      "manualOnly": true,
+      "proceduralGenerationAllowed": false,
+      "sourceOfIdentity": "visual",
+      "designStatus": "VISUAL_APROBADO_TRAZADO_URBANO_PENDIENTE",
+      "facts": [
+        {
+          "id": "fishing_port_and_fluvial_fishing",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "houses",
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "between_two_thalen_terminal_arms",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "rivers",
+            "d02",
+            "visual"
+          ]
+        },
+        {
+          "id": "thalen_terminal_arms_two_not_two_rivers",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "rivers",
+            "d02"
+          ]
+        },
+        {
+          "id": "maritime_and_fluvial_fishing",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "marine_products_and_whale_oil_visual",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "medium_scale_below_veldora_treihord",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "functional_non_monumental_character",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "semiarid_peninsular_transition",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "regions",
+            "climate"
+          ]
+        },
+        {
+          "id": "taramin_forest_no_industrial_logging",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "forests",
+            "d04"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "id": "urban_plan_and_actual_land_access",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "terminal_arm_navigability_and_bridges",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "fish_handling_sites_and_water_supply",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "population_professions_services_D08",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "specific_coastal_moorings",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        }
+      ],
+      "conceptualLayers": [
+        {
+          "id": "study_fishing_interface",
+          "goal": "Estudiar frente de faena y desembarco sin elegir brazo del Thalen ni crear nuevos muelles",
+          "status": "PROPOSAL_PENDING_AUTHOR",
+          "isCanonical": false,
+          "spatiallyLocated": false,
+          "createsNewDistrict": false,
+          "createsNewFacility": false,
+          "materializedInWorld": false
+        },
+        {
+          "id": "study_supply_water_resilience",
+          "goal": "Evaluar condicionantes de agua, salubridad y suministro sin afirmar instalaciones",
+          "status": "PROPOSAL_PENDING_AUTHOR",
+          "isCanonical": false,
+          "spatiallyLocated": false,
+          "createsNewDistrict": false,
+          "createsNewFacility": false,
+          "materializedInWorld": false
+        },
+        {
+          "id": "study_interfluvial_access",
+          "goal": "Mantener alternativas de accesos sobre terreno real pendientes de cartografía; ningún puente o navegación declarados",
+          "status": "PROPOSAL_PENDING_AUTHOR",
+          "isCanonical": false,
+          "spatiallyLocated": false,
+          "createsNewDistrict": false,
+          "createsNewFacility": false,
+          "materializedInWorld": false
+        }
+      ],
+      "cityGeometry": null,
+      "routeGeometry": null,
+      "portGeometry": null,
+      "worldStateEntityId": null,
+      "generatedByD06": false,
+      "authorApprovedNewLayout": false
+    },
+    {
+      "id": "syvaris",
+      "name": "Syvaris",
+      "administrativeOwner": "casa_darovan",
+      "manualOnly": true,
+      "proceduralGenerationAllowed": false,
+      "sourceOfIdentity": "visual",
+      "designStatus": "VISUAL_APROBADO_TRAZADO_URBANO_PENDIENTE",
+      "facts": [
+        {
+          "id": "island_is_norgard_and_darovan",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "coasts",
+            "houses",
+            "d01"
+          ]
+        },
+        {
+          "id": "city_at_main_bay_with_minor_coves",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "coasts",
+            "visual"
+          ]
+        },
+        {
+          "id": "safe_island_port",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData",
+            "d05"
+          ]
+        },
+        {
+          "id": "norgard_naval_presence_not_darovan_navy",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "navigation"
+          ]
+        },
+        {
+          "id": "smaller_than_taramin",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "fishing_trade_marine_products_oils",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "south_greener_center_north_drier",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData",
+            "regions",
+            "climate"
+          ]
+        },
+        {
+          "id": "discontinuous_small_forests_nonintensive",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "forests",
+            "d03",
+            "d04"
+          ]
+        },
+        {
+          "id": "low_stone_wood_some_whitewash_not_all",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "visual",
+            "visualData"
+          ]
+        },
+        {
+          "id": "not_desert",
+          "value": true,
+          "provenance": "AUTHORED",
+          "sourceRefIds": [
+            "regions",
+            "climate"
+          ]
+        }
+      ],
+      "unknowns": [
+        {
+          "id": "detailed_main_bay_layout_and_cove_names",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "water_supply_actual_sites",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "island_maritime_schedules_and_routes",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "population_professions_services_D08",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        },
+        {
+          "id": "naval_facility_positions",
+          "value": null,
+          "status": "UNKNOWN",
+          "resolution": "pending_autor"
+        }
+      ],
+      "conceptualLayers": [
+        {
+          "id": "study_main_bay_interfaces",
+          "goal": "Diferenciar conceptualmente refugio, pesca, comercio y presencia naval real sin asignar parcelas ni instalaciones nuevas",
+          "status": "PROPOSAL_PENDING_AUTHOR",
+          "isCanonical": false,
+          "spatiallyLocated": false,
+          "createsNewDistrict": false,
+          "createsNewFacility": false,
+          "materializedInWorld": false
+        },
+        {
+          "id": "study_microclimate_fabric",
+          "goal": "Estudiar adaptación de tejido urbano a relieve, viento, agua y sombra sin declarar zonificación",
+          "status": "PROPOSAL_PENDING_AUTHOR",
+          "isCanonical": false,
+          "spatiallyLocated": false,
+          "createsNewDistrict": false,
+          "createsNewFacility": false,
+          "materializedInWorld": false
+        },
+        {
+          "id": "study_coves_without_routes",
+          "goal": "Registrar las calas como condicionantes cualitativos, sin crear puertos menores ni travesías",
+          "status": "PROPOSAL_PENDING_AUTHOR",
+          "isCanonical": false,
+          "spatiallyLocated": false,
+          "createsNewDistrict": false,
+          "createsNewFacility": false,
+          "materializedInWorld": false
+        }
+      ],
+      "cityGeometry": null,
+      "routeGeometry": null,
+      "portGeometry": null,
+      "worldStateEntityId": null,
+      "generatedByD06": false,
+      "authorApprovedNewLayout": false
+    }
+  ],
+  "authorialPendingIds": [
+    "DAR-P02",
+    "DAR-P04",
+    "DAR-P05",
+    "DAR-P08",
+    "DAR-P09",
+    "DAR-P10",
+    "DAR-P11"
+  ],
+  "runtimeIntegration": {
+    "status": "not_implemented",
+    "coreRpgValidated": false,
+    "godotValidated": false,
+    "gisValidated": false,
+    "persistedCityEntities": 0,
+    "materializedRoutes": 0,
+    "generatedCities": 0
+  },
+  "authorialDecisions": [
+    {
+      "id": "DAR-D07-01",
+      "cityId": "veldora",
+      "choice": "B",
+      "status": "APPROVED_CONCEPT_ONLY",
+      "approvingAuthority": "autor",
+      "approvedConcept": "multiple_organic_commercial_sectors",
+      "description": "Varios sectores comerciales, artesanales y residenciales surgidos de crecimiento orgánico; el puerto conserva su función marítima comercial",
+      "affectsUrbanLayout": false,
+      "createsCanonicalDistrictNames": false,
+      "createsPhysicalRoutes": false,
+      "createsNewFacilities": false,
+      "changesPopulation": false,
+      "pendingDetails": [
+        "district_names",
+        "district_boundaries",
+        "street_plan",
+        "placement_of_facilities",
+        "new_buildings_and_accesses"
+      ]
+    },
+    {
+      "id": "DAR-D07-02",
+      "cityId": "taramin",
+      "choice": "A",
+      "status": "APPROVED_CONCEPT_ONLY",
+      "approvingAuthority": "autor",
+      "approvedConcept": "one_principal_fishing_activity_sector",
+      "description": "Una zona pesquera principal concentra la mayor parte de la actividad de pesca y descarga, sin emplazamiento aprobado ni afirmación de navegabilidad de los brazos terminales del Thalen",
+      "affectsUrbanLayout": false,
+      "createsCanonicalDistrictNames": false,
+      "createsPhysicalRoutes": false,
+      "createsNewFacilities": false,
+      "changesPopulation": false,
+      "pendingDetails": [
+        "fishing_sector_location",
+        "thalen_arm_navigability",
+        "land_access_and_bridges",
+        "dock_placement",
+        "fish_handling_facilities"
+      ]
+    },
+    {
+      "id": "DAR-D07-03",
+      "cityId": "syvaris",
+      "choice": "A",
+      "status": "APPROVED_CONCEPT_ONLY",
+      "approvingAuthority": "autor",
+      "approvedConcept": "principal_urban_activity_concentrated_around_sheltered_main_bay",
+      "description": "Concentrar la actividad urbana, comercial, pesquera y naval principal en torno a la bahía protegida de Syvaris, sin decidir zonificación, muelles adicionales, funciones nuevas para calas menores ni rutas",
+      "affectsUrbanLayout": false,
+      "createsCanonicalDistrictNames": false,
+      "createsPhysicalRoutes": false,
+      "createsNewFacilities": false,
+      "changesPopulation": false,
+      "pendingDetails": [
+        "main_bay_precise_urban_layout",
+        "district_names_and_boundaries",
+        "port_and_naval_facility_positions",
+        "minor_coves_without_new_ports",
+        "island_land_access_and_maritime_routes"
+      ]
+    }
+  ]
+}

@@ -79,10 +79,27 @@
         "lhera"
       ],
       "namesCity": "veldora",
-      "visualRiverBehindCityIdentification": null,
+      "visualRiverBehindCityIdentification": "veldora",
       "sourcePaths": [
         "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
         "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md"
+      ]
+    },
+    {
+      "id": "fhalion",
+      "systemId": "fhalion",
+      "source": null,
+      "sourceKnown": false,
+      "mainCourseMouth": null,
+      "coastalSector": "costa_occidental_al_sur_de_veldora",
+      "independentOf": [
+        "belara",
+        "lhera",
+        "veldora",
+        "thalen"
+      ],
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
       ]
     },
     {
@@ -125,6 +142,19 @@
       "mouths": [
         "golfo_de_veldora"
       ],
+      "catchmentPolygon": null,
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+      ]
+    },
+    {
+      "id": "fhalion",
+      "kind": "independent_minor_surface_network_unmapped",
+      "riverIds": [
+        "fhalion"
+      ],
+      "mouths": [],
+      "mouthSpecificName": null,
       "catchmentPolygon": null,
       "sourcePaths": [
         "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
@@ -251,6 +281,22 @@
         "provenance": "DERIVED",
         "coordinate": null,
         "geom": null
+      },
+      {
+        "id": "d02_fhalion_upstream_unknown",
+        "systemId": "fhalion",
+        "role": "minor_course_upstream_not_new_source",
+        "provenance": "UNKNOWN",
+        "coordinate": null,
+        "geom": null
+      },
+      {
+        "id": "d02_fhalion_west_coast_mouth_unlocated",
+        "systemId": "fhalion",
+        "role": "western_coast_south_of_veldora_unlocated",
+        "provenance": "AUTHORED",
+        "coordinate": null,
+        "geom": null
       }
     ],
     "edges": [
@@ -313,6 +359,12 @@
         "from": "d02_thalen_arm_b",
         "to": "d02_thalen_mouth_b",
         "kind": "topological_relation_not_cartographic_line"
+      },
+      {
+        "id": "d02_e_11",
+        "from": "d02_fhalion_upstream_unknown",
+        "to": "d02_fhalion_west_coast_mouth_unlocated",
+        "kind": "topological_relation_not_cartographic_line"
       }
     ],
     "adjacencies": [
@@ -339,6 +391,14 @@
         "river": "thalen",
         "place": "taramin",
         "kind": "city_between_two_terminal_arms",
+        "sourcePaths": [
+          "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
+        ]
+      },
+      {
+        "river": "fhalion",
+        "place": "costa_occidental_sur_de_veldora",
+        "kind": "minor_separate_course_map_confirmed",
         "sourcePaths": [
           "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md"
         ]
@@ -386,7 +446,7 @@
       "syvaris"
     ],
     "excludedCity": "karsath",
-    "arvenIslandOwner": null,
+    "arvenIslandOwner": "casa_darovan",
     "syvarisIslandOwner": "casa_darovan",
     "permanentSettlementsInsideAgujasAllowed": false,
     "redMapMarkupIsLegalBorder": false
@@ -433,5 +493,11 @@
     "validatedInGame": false,
     "generatedWatercourseEntities": 0,
     "persistedGeometry": false
+  },
+  "authorialApproval20261021": {
+    "arvenOwner": "casa_darovan",
+    "visualVeldoraRiver": "veldora",
+    "fhalionRiverIndependent": true,
+    "exactMouthKnown": false
   }
 }

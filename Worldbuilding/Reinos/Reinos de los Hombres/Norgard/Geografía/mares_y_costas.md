@@ -259,3 +259,8 @@ Los pequeños entrantes, islotes, calas o accidentes puramente cartográficos pu
 **Bloque marítimo general de Norgard cerrado como canon.**
 
 Quedan pendientes únicamente desarrollos locales o de detalle cuando sean necesarios para historia, navegación, asentamientos o gameplay.
+
+
+### Aprobación autoral DAR-P01 (21/10/2026)
+
+La **isla de Arven pertenece políticamente a Casa Darovan** por decisión explícita del autor. No se derivan rutas o tiempos de navegación de su proximidad a Veldora.
