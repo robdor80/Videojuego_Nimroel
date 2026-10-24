@@ -1,5 +1,8 @@
 # Integración de main y NIM-05 en NIM-06
 
+Histórico de la integración anterior. El main actualizado, las pruebas físicas
+comunicadas y la verificación final están en [12_CIERRE_FINAL.md](12_CIERRE_FINAL.md).
+
 Actualización del 20 de octubre de 2026 (Europe/Madrid). Rama exclusiva:
 `feat/nim-06-functional-gdextension`. PR #27 permanece Draft; no se fusiona ninguna PR.
 

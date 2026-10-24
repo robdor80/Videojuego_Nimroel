@@ -1,22 +1,17 @@
 # NIM-06 BUILD — Informe general
 
-Main integrado: `cd1735b1c9a1bb7507a3b1ce42d96c6d103b0977` (NIM-05 / PR #22).
-CoreRPG `4f282863737bcd8f5add401202a9e1064c133672`; godot-cpp oficial
-`e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`, API 4.5; Godot **4.7.2 Standard**.
-Código verificado: `9924cc38f2fb1162e49ad80779db76c8e5d3f886`.
-[CI nativa 39483287563](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563) y
-[regresiones 39483287443](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287443): success.
-Checkout PR automático `7296c1eb43eaf3da96cc9d995f13bcdb9cb9c7eb`, árbol idéntico al HEAD de código.
-[Pins](evidence/dependencies.json) · [Evidencia vigente](evidence/ci-summary.json) ·
-[Integración NIM-05 y conservación de fuentes](11_INTEGRACION_MAIN_NIM05.md).
-No se ha fusionado ninguna PR ni modificado main. Las pruebas físicas no están realizadas.
+Estado vigente: [cierre final y evidencia CI](12_CIERRE_FINAL.md).
+Las secciones de CI anteriores conservan sus SHAs y resultados históricos; no acreditan la interfaz corregida.
+Pruebas funcionales físicas anteriores: satisfactorias según el propietario en ambos dispositivos.
+La interfaz corregida requiere nueva comprobación física.
+
 
 ## Resultado final
 
 **Puente funcional completado y verificado en el ámbito estructural disponible.**
 Windows: carga real en Godot 4.7.2 y ejecutable exportado, **129 comprobaciones
 aprobadas en cada proceso**. Android: compilación/enlace ARM64, APK firmado e
-integridad de la SO comprobada; **ejecución Android y dispositivos físicos pendientes**.
+integridad de la SO comprobada; **ejecución Android acreditada por comunicación del propietario para la versión anterior**.
 Control Linux de exportación: 129 comprobaciones aprobadas; no cuenta como Android.
 
 [CI nativa final](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563)
@@ -25,8 +20,8 @@ ambas success. NIM01–05 y teclado pasan; Python NIM03: 8/8, NIM04: 29/29 y NIM
 tanto en Windows con extensión como en el workflow Linux existente. Los tres jobs
 del workflow existente (incluidas exportaciones y TTS previo) pasan sin cambiarlo.
 
-No hay bloqueo del Core para esta vertical. La aceptación plena Android requiere
-la ejecución física indicada en 09. La carga de catálogos/definiciones y los sistemas
+No hay bloqueo del Core para esta vertical. El propietario comunica aceptación funcional
+física de la versión anterior en ambos dispositivos; la interfaz corregida queda pendiente según 12. La carga de catálogos/definiciones y los sistemas
 RPG posteriores se identifican expresamente como cobertura no implementada.
 Las revisiones posteriores al HEAD de código solo consolidan documentación.
 
@@ -62,7 +57,7 @@ anuncia `native_available=false`; no presenta una conexión ficticia.
 ## Estado verificable
 
 El estado definitivo por plataforma y los hashes están en los informes 04/05 y
-ci-summary.json. Carga/ejecución Windows y paquete Windows se verifican de forma
+12_CIERRE_FINAL.md para la entrega actual; ci-summary.json conserva evidencia histórica. Carga/ejecución Windows y paquete Windows se verifican de forma
 independiente. En Android se verifica compilación/enlace/ABI/dependencias/firma y
 bytes de la extensión dentro del APK; no se confunden con ejecutar Android.
 
@@ -78,7 +73,8 @@ bytes de la extensión dentro del APK; no se confunden con ejecutar Android.
 8. [Pendientes y traspaso](08_PENDIENTES_Y_TRASPASO.md)
 9. [Pruebas físicas](09_GUIA_PRUEBAS_FISICAS.md)
 10. [Matriz de verificación](10_MATRIZ_DE_VERIFICACION.md)
-11. [Integración actual de main y NIM-05](11_INTEGRACION_MAIN_NIM05.md)
+11. [Integración anterior de main y NIM-05](11_INTEGRACION_MAIN_NIM05.md)
+12. [Cierre final, pruebas físicas y verificación actual](12_CIERRE_FINAL.md)
 
 La entrega permanece en la PR Draft #27. No se fusiona ninguna PR ni se modifica main.
 PR #22 se integra a través de main; no se modifica PR #23 ni su rama. Los informes y evidencia compacta quedan en

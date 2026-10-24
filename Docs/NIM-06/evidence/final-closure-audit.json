@@ -1,0 +1,26 @@
+{
+  "report_date_local": "2026-10-24",
+  "timezone": "Europe/Madrid",
+  "previous_delivery": "27ac85c5b0b23186f5ebb99839a59a2aff516c6f",
+  "main_integrated": "028ea86ec69cf2223d0e47b006cbb84554068b91",
+  "merge": "c804612d78b60bfac03264b46789a192cb737fb9",
+  "merge_conflicts": false,
+  "code_commit": "0479a2da81fd467b793359e1e7b28a91c8b7e32a",
+  "local_godot": "4.7.2.stable.official.ed1daf0bf",
+  "local_layout": "PASS",
+  "physical_previous_version": {
+    "source": "owner report in final closure request",
+    "msi_windows11": "PASS: 129/129, zero errors, persistence across restarts, expected no_change",
+    "tab_s9plus_android_arm64": "PASS: 129/129, zero errors, persistence across restarts, expected no_change",
+    "package_sha_not_supplied": true
+  },
+  "corrected_ui_physical_test": "PENDING OWNER",
+  "final_ci": {
+    "source": "GitHub Actions live results and permanent PR comment",
+    "evidence_url": "https://github.com/robdor80/Videojuego_Nimroel/pull/27#issuecomment-6384753666",
+    "full_runs_planned": "one per existing relevant workflow; repeat affected jobs only after corrected failure"
+  },
+  "core_and_nonpresentation_sources_unchanged_since_merge": true,
+  "mass_zip_tests": "NOT RUN; explicitly excluded",
+  "pr_merged": false
+}

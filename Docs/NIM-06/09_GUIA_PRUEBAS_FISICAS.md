@@ -1,19 +1,18 @@
 # Guía de pruebas físicas
 
-Main integrado: `cd1735b1c9a1bb7507a3b1ce42d96c6d103b0977` (NIM-05 / PR #22).
-CoreRPG `4f282863737bcd8f5add401202a9e1064c133672`; godot-cpp oficial
-`e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`, API 4.5; Godot **4.7.2 Standard**.
-Código verificado: `9924cc38f2fb1162e49ad80779db76c8e5d3f886`.
-[CI nativa 39483287563](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563) y
-[regresiones 39483287443](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287443): success.
-Checkout PR automático `7296c1eb43eaf3da96cc9d995f13bcdb9cb9c7eb`, árbol idéntico al HEAD de código.
-[Pins](evidence/dependencies.json) · [Evidencia vigente](evidence/ci-summary.json) ·
-[Integración NIM-05 y conservación de fuentes](11_INTEGRACION_MAIN_NIM05.md).
-No se ha fusionado ninguna PR ni modificado main. Las pruebas físicas no están realizadas.
+Estado vigente: [cierre final y evidencia CI](12_CIERRE_FINAL.md).
+Las secciones de CI anteriores conservan sus SHAs y resultados históricos; no acreditan la interfaz corregida.
+Pruebas funcionales físicas anteriores: satisfactorias según el propietario en ambos dispositivos.
+La interfaz corregida requiere nueva comprobación física.
 
-Estas pruebas están **pendientes**. El usuario las ejecutará; no se registran como
-superadas por compilar/exportar. Guardar fecha, modelo, versión OS, run/SHA y hashes
-junto al resultado y logs. Usar los artefactos del run final de ci-summary.json.
+
+El propietario ya comunica pruebas funcionales satisfactorias en ambos dispositivos
+para la versión anterior: 129/129, cero errores y persistencia entre ejecuciones.
+No ha aportado logs, capturas, fecha física ni SHA del paquete; no se inventan.
+Esta guía se conserva como procedimiento de reproducción. El pendiente actual es
+la interfaz corregida: scroll completo, legibilidad/tacto en pantalla completa y
+dividida, controles accesibles y ausencia de solapamientos. Usar los paquetes finales
+enlazados en 12, no los hashes históricos de ci-summary.json.
 
 ## Windows 11 — MSI Raider
 
@@ -69,4 +68,5 @@ paso exacto; no pulsar repetidamente acciones como sustituto de restaurar.
 El paquete actualizado conserva el laboratorio técnico de voz NIM05 en Windows;
 es opt-in, requiere su proceso local y no es voz NPC. No confundir el WAV generado
 en CI con reproducción física del MSI. En Android ese laboratorio sigue deshabilitado.
-Usar los artefactos nuevos de 39483287563 y esperar 129 checks, no el paquete antiguo.
+Para probar las correcciones visuales usar los artefactos de la ejecución final enlazada en 12.
+No hace falta repetir campañas ajenas al scroll y adaptación de pantalla.

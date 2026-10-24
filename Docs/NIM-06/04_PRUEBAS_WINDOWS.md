@@ -1,15 +1,10 @@
 # Windows x64 — Pruebas
 
-Main integrado: `cd1735b1c9a1bb7507a3b1ce42d96c6d103b0977` (NIM-05 / PR #22).
-CoreRPG `4f282863737bcd8f5add401202a9e1064c133672`; godot-cpp oficial
-`e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`, API 4.5; Godot **4.7.2 Standard**.
-Código verificado: `9924cc38f2fb1162e49ad80779db76c8e5d3f886`.
-[CI nativa 39483287563](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563) y
-[regresiones 39483287443](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287443): success.
-Checkout PR automático `7296c1eb43eaf3da96cc9d995f13bcdb9cb9c7eb`, árbol idéntico al HEAD de código.
-[Pins](evidence/dependencies.json) · [Evidencia vigente](evidence/ci-summary.json) ·
-[Integración NIM-05 y conservación de fuentes](11_INTEGRACION_MAIN_NIM05.md).
-No se ha fusionado ninguna PR ni modificado main. Las pruebas físicas no están realizadas.
+Estado vigente: [cierre final y evidencia CI](12_CIERRE_FINAL.md).
+Las secciones de CI anteriores conservan sus SHAs y resultados históricos; no acreditan la interfaz corregida.
+Pruebas funcionales físicas anteriores: satisfactorias según el propietario en ambos dispositivos.
+La interfaz corregida requiere nueva comprobación física.
+
 
 ## Herramientas y procedimiento
 
@@ -67,7 +62,9 @@ La primera implementación anterior obtuvo 108 checks, pero no se presenta como
 validación de los controles añadidos después. El resultado aceptable es el run
 final enlazado en la evidencia compacta.
 
-MSI Raider Windows 11: pendiente de ejecución física. Se entregan los archivos
+MSI Raider Windows 11: validación funcional física satisfactoria comunicada por el propietario
+(129/129, cero errores, acciones/consultas, guardar/restaurar y persistencia tras reabrir, no_change esperado).
+No se aportaron capturas, logs, fecha de ejecución ni hash de ese paquete. Interfaz corregida pendiente. Se entregan los archivos
 exportados juntos, con instrucciones en 09. No hay firma Authenticode de producción.
 No se ejecutó una suite completa upstream CoreRPG ni un perfil ASan del adaptador;
 no se declaran esas verificaciones como realizadas.
@@ -92,7 +89,8 @@ no se declaran esas verificaciones como realizadas.
 
 [Extracto permanente del log](evidence/windows-excerpt.txt).
 [Regresiones Linux independientes](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287443).
-MSI físico continúa pendiente; no se sustituye por estos resultados.
+Esta CI histórica es independiente de la validación física comunicada por el propietario.
+La nueva interfaz no se declara físicamente probada.
 
 Compatibilidad NIM-05: diagnóstico broker/voz ejecutado con un mundo nativo activo
 sin alterar sus bytes; TTS real del runner aprobado en job 118837118433 (WAV

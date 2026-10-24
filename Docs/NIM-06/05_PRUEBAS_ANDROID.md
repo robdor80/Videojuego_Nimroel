@@ -1,15 +1,10 @@
 # Android ARM64 — Pruebas
 
-Main integrado: `cd1735b1c9a1bb7507a3b1ce42d96c6d103b0977` (NIM-05 / PR #22).
-CoreRPG `4f282863737bcd8f5add401202a9e1064c133672`; godot-cpp oficial
-`e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77`, API 4.5; Godot **4.7.2 Standard**.
-Código verificado: `9924cc38f2fb1162e49ad80779db76c8e5d3f886`.
-[CI nativa 39483287563](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563) y
-[regresiones 39483287443](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287443): success.
-Checkout PR automático `7296c1eb43eaf3da96cc9d995f13bcdb9cb9c7eb`, árbol idéntico al HEAD de código.
-[Pins](evidence/dependencies.json) · [Evidencia vigente](evidence/ci-summary.json) ·
-[Integración NIM-05 y conservación de fuentes](11_INTEGRACION_MAIN_NIM05.md).
-No se ha fusionado ninguna PR ni modificado main. Las pruebas físicas no están realizadas.
+Estado vigente: [cierre final y evidencia CI](12_CIERRE_FINAL.md).
+Las secciones de CI anteriores conservan sus SHAs y resultados históricos; no acreditan la interfaz corregida.
+Pruebas funcionales físicas anteriores: satisfactorias según el propietario en ambos dispositivos.
+La interfaz corregida requiere nueva comprobación física.
+
 
 NDK 29.0.14206865, toolchain CMake oficial, ABI arm64-v8a, android-24,
 Clang del NDK, c++_static; runner ubuntu-24.04. SDK 36/build-tools 36.0.0,
@@ -43,12 +38,14 @@ el editor de exportación y ejecutar los contratos/guardado/RNG de la vertical.
 Eso prueba el Host de exportación y el código común, **no una ejecución Android**.
 No se ha establecido un proceso Android ARM64 capaz de cargar la SO en este CI:
 los runners disponibles son x64 y no se ha ejecutado un emulador ARM64. Un emulador
-x86_64 tampoco acreditaría la ABI solicitada. No se afirma funcionamiento físico.
+x86_64 tampoco acreditaría la ABI solicitada. La CI no acredita funcionamiento físico;
+el propietario sí comunica una prueba funcional física satisfactoria de la versión anterior.
 
-Samsung Galaxy Tab S9+: pendiente instalar el APK, abrir la prueba nativa,
-comprobar el ciclo interactivo, ejecutar la suite y recoger logcat. También quedan
-rotación/pausa/reanudación, presión de memoria, persistencia entre procesos, pantalla
-táctil, rendimiento y apariencia del icono. Consulte 09.
+Samsung Galaxy Tab S9+: el propietario confirma APK instalado/ejecutado, GDExtension
+cargada, 129/129 y cero errores, consultas/acciones/restauración, persistencia entre
+ejecuciones y no_change esperado. No se aportan logcat, versión Android ni mediciones.
+Quedan la nueva interfaz y los comportamientos no comunicados; no se exige una campaña
+masiva ni se amplía el alcance. Consulte 09 y 12.
 
 El aviso upstream de aapt2 sobre themed_icon.xml se registra si aparece; no se
 parchea la plantilla oficial. No hay prueba visual del icono temático por CI.
@@ -77,7 +74,7 @@ por obtener un workflow verde.
 - ABI C++ interna oculta; nimroel_core_init accesible.
 - APK firmado v2/v3, SDK 24/36, solo arm64-v8a, extensión idéntica al build.
 - Control Linux **GNU 13.3.0**, Godot 4.7.2, **129 checks aprobados**.
-- Ejecución Android real/Tab S9+: **NO PROBADA**.
+- Ejecución Android en CI: **NO PROBADA**. Prueba física anterior: **satisfactoria según el propietario**.
 - [Artefacto publicado](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/39483287563/artifacts/12290784767), 30 días.
 
 | Archivo | SHA-256 |
