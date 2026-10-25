@@ -1,3 +1,26 @@
-# D.P13 — Territorio físico completo
+# D.P13 — Territorio físico completo · Casa Darovan
 
-Fase autorizada el 25-10-2026. Documentos en elaboración; sin canon nuevo ni runtime.
+**Fecha:** 25-10-2026 · **Rama:** `feat/darovan-dp13-territorio-fisico` · **Autoridad:** diseño DERIVED_CONDITIONAL, sin nuevos hechos canónicos.
+
+## Itinerario de estudio
+
+- `00_comparacion_fuentes_y_metodo.md` — contraste Valrik/Treskal y autoridad.
+- `01_regiones_y_subzonas.md` — cobertura de doce unidades.
+- `02_relieve_y_microrelieve.md` — capas de terreno y divisorias.
+- `03_cuencas_y_agua_menor.md` — ríos, cuencas y red menor candidata.
+- `04_temperatura_y_estaciones.md` — temperaturas y cuatro estaciones.
+- `05_lluvia_nieve_y_deshielo.md` — precipitación, hielo y balance hídrico.
+- `06_viento_humedad_niebla.md` — exposición, viento y visibilidad.
+- `07_suelos_drenaje_erosion.md` — suelos y respuesta al agua.
+- `08_bosques_vegetacion_ecosistemas.md` — identidad y dinámica forestal.
+- `09_inferencia_causal_y_persistencia.md` — integración ambiental.
+- `10_contratos_y_validacion.md` — JSON, pruebas y host futuro.
+- `11_auditoria_suficiencia.md` — evaluación comparable con Valrik/Treskal.
+
+## Datos
+
+En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_dp13_hydro_overlay_v0.1.json`, `darovan_dp13_environment_causal_v0.1.json`. La carpeta D.P13 no sustituye fuentes D01–D03. Estados espaciales concretos, política, nuevas poblaciones y hechos de juego quedan fuera de su alcance.
+
+## Verificación
+
+`python Tools/DarovanDP13/validate.py`, regresiones D01–D12 y CI Windows/Linux. **Documento de diseño, no juego en funcionamiento.**

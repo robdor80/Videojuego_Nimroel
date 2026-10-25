@@ -1,0 +1,30 @@
+# D.P13 — Comparativa final de profundidad frente a Valrik/Treskal
+
+**Fecha:** 25-10-2026. **Estado:** dictamen documental de diseño; validación GitHub Actions a registrar separadamente. Valrik posee bloque climático de diez capítulos, tres documentos adicionales de geografía local y perfil JSON; su estatus es borrador de diseño aprobado como tal, no canon final ni ejecución de física.
+
+| Criterio | Valrik/Treskal verificado | Darovan tras D.P13 | Juicio y reserva |
+|---|---|---|---|
+| Relieve/microrelieve | Catálogos por ocho zonas; Montes Invernos con cotas de borrador | 12 unidades; formas, continuidad y filtros | Comparable conceptualmente; cotas Valkram/Elyra UNKNOWN |
+| Subzonas geográficas | 8 contextos | 12 claves D01 con matrices por 14 dimensiones | Equivalente o más granular en cobertura |
+| Cuencas/red menor | Cinco familias y perfil de red candidata | Cuatro sistemas mayores, doce perfiles, reglas de nacimiento y receptor | Comparable cualitativamente; sin geometría ni nuevos afluentes |
+| Temperatura/estaciones | Cuatro estaciones por contexto | Cuatro estaciones por contrastes Darovan y doce gradientes térmicos | Comparable conceptualmente, sin números |
+| Lluvias/nieve/deshielo | Contrastes por zonas y fases | Matrices por 12 unidades, procesos y falsas inferencias rechazadas | Comparable como reglas; no hay calendario local aprobado |
+| Vientos/humedad/nieblas | Rosa estacional de borrador Valrik | Flujo efectivo y barlovento por episodio; niebla por saturación | Reserva: direcciones dominantes Darovan UNKNOWN, no copiables |
+| Suelos/drenaje | Contrastes aluviales, forestales y montanos | Contrastes Taramin, Linde, Pilares, isla, montaña y corredores | Comparable en causalidad; clases reales de suelo UNKNOWN |
+| Ecosistemas/vegetación | Bosque Negro, Gemelos, montaña y costa | Agujas, Linde, Pilares, Taramin, Syvaris, Arven | Comparable en identidad diferenciada; sin inventar especies |
+| Microclimas | Valles, costa, dosel, exposición | 12 perfiles cruzados y mecanismos de sombra/exposición | Comparable como hipótesis condicionadas |
+| Reglas de generación | Pipeline espacial y restricciones | Pipeline por capas + 10 reglas operativas y topológicas | Equivalencia conceptual, no algoritmo implementado |
+| Persistencia/causalidad | Continuidad conceptual de WorldState | Esquema de estado y deltas, versionado, semillas y 8 negativos | Comparable en diseño, no en ejecución |
+| Datos y pruebas | JSON de hidrología de borrador | 3 JSON nuevos, validador con negativos y CI prevista | Conclusión condicionada a verificaciones reales |
+
+## Diferencias justificadas
+
+La ausencia de cotas métricas específicas, mapas de cuencas, aforos, vientos por rumbo, bocas exactas del Fhalion y red de cauces materializada **no se cierra inventando**. Son decisiones autorales o dependen de cartografía posterior. Tampoco Valrik materializa en runtime sus reglas de geografía local. La ciudad Treskal sí dispone de plano métrico, pero **comparar esa materialización urbana con D.P13** sería extrapolar una fase posterior D.P16 y violar el alcance.
+
+## Puertas de cierre
+
+[A] Fuentes/autoridad y doce unidades; [B] coherencia de 5 ríos/4 sistemas; [C] cobertura temática; [D] regresiones y negativos CI Windows/Linux; [E] diferencia justificada frente a Valrik; [F] incertidumbres y contrato no-runtime. Si una de A-D falla, D.P13 es **INCOMPLETA**; si todas pasan y E/F son transparentes, dictamen **COMPLETA CON RESERVAS DE CARTOGRAFÍA MATERIAL Y RUNTIME**, nunca «entorno físico ejecutado».
+
+## Decisiones de autor
+
+No bloquea la finalización documental ninguna decisión nueva. Quedan futuros: relieves georreferenciados y cotas, localización exacta de cauces menores y manantiales, bifurcación Belara/Lhera, desembocadura Fhalion, rosa de vientos local y datos de suelo medidos. `UNKNOWN` permanece hasta aportación de fuente o materialización legítima.
