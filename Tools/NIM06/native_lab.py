@@ -225,7 +225,10 @@ def export_windows():
 
 def regressions():
     exe = godot()
-    for script in ['smoke', 'nim02_smoke', 'nim03_smoke', 'nim04_smoke', 'nim05_smoke', 'keyboard_layout_smoke', 'native_layout_smoke']:
+    scripts = ['smoke', 'nim02_smoke', 'nim03_smoke', 'nim04_smoke', 'nim05_smoke', 'keyboard_layout_smoke', 'native_layout_smoke']
+    if FUNCTIONAL:
+        scripts.append('nim07_smoke')
+    for script in scripts:
         output = run([exe, '--headless', '--path', PROJECT, '--script', f'res://tests/{script}.gd'], f'regression-{script}.txt', timeout=120)
         assert 'ERROR:' not in output and 'PASS' in output, script
     for folder in ['NIM03', 'NIM04', 'NIM05']:

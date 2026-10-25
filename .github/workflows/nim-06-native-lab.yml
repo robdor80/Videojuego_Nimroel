@@ -1,7 +1,7 @@
 name: NIM-06 functional native bridge
 on:
   push:
-    branches: [main]
+    branches: [main, feat/nim-07-first-rpg-experience]
     paths: ['Game/BridgeCoreRPG/**', 'Game/Host2D/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
   pull_request:
     paths: ['Game/BridgeCoreRPG/**', 'Game/Host2D/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
@@ -52,7 +52,7 @@ jobs:
       - name: Load extension and execute CoreRPG in Windows Godot
         if: matrix.target == 'windows'
         run: python Tools/NIM06/native_lab.py smoke --functional
-      - name: Execute existing Host regressions with native extension loaded
+      - name: Execute Host regressions and NIM-07 I1 main conversation with native DLL
         if: matrix.target == 'windows'
         run: python Tools/NIM06/native_lab.py regressions --functional
       - name: Export and execute Windows native package; compare DLL bytes
@@ -64,7 +64,7 @@ jobs:
       - name: Load Linux control in official Godot before export
         if: matrix.target == 'android'
         run: python Tools/NIM06/native_lab.py smoke --functional
-      - name: Run NIM-01 to NIM-05 regressions with Linux native control
+      - name: Run Host regressions and NIM-07 I1 conversation with Linux native control
         if: matrix.target == 'android'
         run: python Tools/NIM06/native_lab.py regressions --functional
       - name: Temporary laboratory debug signing key
