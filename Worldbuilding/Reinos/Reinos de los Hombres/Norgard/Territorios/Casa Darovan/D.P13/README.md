@@ -37,3 +37,6 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 - **DAR-DP13-SNOW-01:** opción B de nieve para **la Viuda**: neveros localizados que sobreviven al verano en zonas altas y protegidas. No afirma glaciares, cota de nieve, ni permanencia nival general de Valkram.
 
 - **DAR-DP13-PASS-01:** principales pasos naturales de Valkram con rango altitudinal orientativo **1.400–2.200 m**, sin crear pasos nominados, rutas ni geometría de terreno.
+
+- `14_altitud_treihord_autorizada.md`: banda urbana autoral **150–350 m** (opción A), sin cotas individuales ni plano métrico.
+- `../Datos operativos/darovan_dp13_treihord_elevation_authorial_v0.1.json`: ancla de altitud referencial de Treihord.

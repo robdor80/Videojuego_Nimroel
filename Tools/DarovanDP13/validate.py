@@ -185,7 +185,63 @@ def validate_elyra_authorial(record):
            "valkramHighestSummitApproxMeters":4200,"elyraLowerThanValkram":True},"relative canon")
     demand(record["runtime"] == {"implemented":False,"terrainGeometryCreated":False},"elyra runtime")
 
+def validate_treihord_authorial(record):
+    demand(record["schemaVersion"] == 1 and
+           record["documentId"] == "darovan_dp13_treihord_elevation_authorial",
+           "treihord schema")
+    demand(record["authorDecisionId"] == "DAR-DP13-CITY-ALT-01"
+           and record["authorDecisionDate"] == "2026-10-25"
+           and record["authority"] == "AUTHORED_AUTHOR_DECISION"
+           and record["status"] == "AUTHORED_AUTHOR_DECISION_NOT_GEOMETRY",
+           "treihord author decision")
+    demand(record["settlementId"] == "treihord" and
+           record["type"] == "canonical_city" and
+           record["role"] == "darovan_capital" and
+           record["selectedOption"] == "A",
+           "treihord identity and option")
+    demand(record["urbanAltitudeReferenceBandMetersApprox"] == {"min":150,"max":350}
+           and record["referenceType"] == "approximate_general_urban_site_not_every_district",
+           "treihord elevation band")
+    demand(all(record[k] is None for k in
+           ("urbanAltitudeSingleValueMeters","cityCenterCoordinates",
+            "elevationOfBelaraAtPortMeters","dockLevelMeters",
+            "embankmentSlopePercent","cadastralOrStreetTopography","terrainElevationRaster"))
+           and record["neighborhoodElevations"] == [],"no invented city measurements")
+    demand("sin ser atravesada por el río" in record["autoralAnchorNotes"][0]
+           and "poco calado" in record["autoralAnchorNotes"][1],
+           "Belara and shallow-draft port canon")
+    demand(record["worldStateRuntimeImplemented"] is False
+           and record["mapGeoreferenced"] is False
+           and record["createsNewInfrastructure"] is False
+           and record["legacyPhaseFilesModified"] is False,
+           "no infrastructure/runtime/legacy rewrite")
+    demand(len(record["sourcePaths"]) >= 3,"treihord provenance")
+
 def run():
+    treihord=load(DATA/"darovan_dp13_treihord_elevation_authorial_v0.1.json")
+    validate_treihord_authorial(treihord)
+    treihord_mutations=[
+      ("wrong_city",lambda d:d.__setitem__("settlementId","veldora")),
+      ("wrong_altitude_min",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("min",350)),
+      ("wrong_altitude_max",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("max",600)),
+      ("assigned_center_height",lambda d:d.__setitem__("urbanAltitudeSingleValueMeters",250)),
+      ("invented_district_height",lambda d:d["neighborhoodElevations"].append({"district":"Los Altos","elevation":320})),
+      ("invented_river_level",lambda d:d.__setitem__("elevationOfBelaraAtPortMeters",180)),
+      ("invented_belara_cross_city",lambda d:d["autoralAnchorNotes"].__setitem__(0,"El Belara cruza la ciudad")),
+      ("invented_bridge",lambda d:d.__setitem__("createsNewInfrastructure",True)),
+      ("fake_runtime",lambda d:d.__setitem__("worldStateRuntimeImplemented",True)),
+      ("fake_gis",lambda d:d.__setitem__("mapGeoreferenced",True))
+    ]
+    for label,change in treihord_mutations:
+        test=copy.deepcopy(treihord)
+        change(test)
+        try:
+            validate_treihord_authorial(test)
+        except AssertionError:
+            continue
+        raise AssertionError("Treihord negative test failed to reject "+label)
+    demand((TERR/"D.P13"/"14_altitud_treihord_autorizada.md").is_file(),
+           "missing Treihord altitude document")
     elyra=load(DATA/"darovan_dp13_elyra_altitude_authorial_v0.1.json")
     validate_elyra_authorial(elyra)
     elyra_mutations=[
@@ -284,7 +340,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()
