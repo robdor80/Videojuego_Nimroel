@@ -1,6 +1,6 @@
 extends Control
 ## Nimroel 2D NIM-01: solo presentación, SIN autoridad de mundo.
-## NIM-03: diagnóstico Gemini aislado; CoreRPG y la partida siguen desconectados.
+## NIM-07 I1: conversación estructural nativa separada de demo/diagnósticos.
 
 const GATEWAY = preload("res://scripts/demo_gateway.gd")
 const PIPELINE = preload("res://scripts/interaction_pipeline.gd")
@@ -8,6 +8,7 @@ const GEMINI_DIAGNOSTIC = preload("res://scripts/gemini_diagnostic.gd")
 const PROVIDER_DIAGNOSTIC = preload("res://scripts/provider_diagnostic.gd")
 const TTS_DIAGNOSTIC = preload("res://scripts/tts_diagnostic.gd")
 const KEYBOARD_LAYOUT = preload("res://scripts/keyboard_layout.gd")
+const NATIVE_CONVERSATION = preload("res://scripts/native_conversation.gd")
 const ART_SCENE = preload("res://art/aldea_fondo_provisional.svg")
 const ART_PORTRAIT = preload("res://art/retrato_provisional.svg")
 
@@ -27,6 +28,12 @@ var _portrait: TextureRect
 var _hint: Label
 var _service_state: Label
 var _mode_button: Button
+var _native_button: Button
+var _gemini_button: Button
+var _title: Label
+var _subtitle: Label
+var _native_conversation := NATIVE_CONVERSATION.new()
+var _native_active: bool = false
 var _gemini_diagnostic
 var _provider_diagnostic
 var _tts_diagnostic
@@ -98,10 +105,11 @@ func _build_interface() -> void:
 	var header_content := VBoxContainer.new()
 	header_content.add_theme_constant_override("separation", 1)
 	_masthead.add_child(header_content)
-	var title := _make_label("NIMROEL  ·  TRESKAL", 24, Color(0.956, 0.891, 0.703))
-	header_content.add_child(title)
-	var subtitle := _make_label("v0.0.1  |  LABORATORIO 2D CONVERSACIONAL", 12, Color(0.75, 0.84, 0.80))
-	header_content.add_child(subtitle)
+	_title = _make_label("NIMROEL  ·  TRESKAL", 24, Color(0.956, 0.891, 0.703))
+	header_content.add_child(_title)
+	_subtitle = _make_label("v0.0.1  |  LABORATORIO 2D CONVERSACIONAL", 12, Color(0.75, 0.84, 0.80))
+	_subtitle.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	header_content.add_child(_subtitle)
 
 	_conversation_panel = PanelContainer.new()
 	_conversation_panel.name = "PanelConversacion"
@@ -156,6 +164,15 @@ func _build_interface() -> void:
 	portrait_caption.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_portrait_line.add_child(portrait_caption)
 
+	_native_button = Button.new()
+	_native_button.name = "IniciarCoreRPG"
+	_native_button.text = "Iniciar experiencia CoreRPG (estructura de prueba)"
+	_native_button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_native_button.custom_minimum_size.y = 48
+	_native_button.add_theme_font_size_override("font_size", 14)
+	_native_button.pressed.connect(_start_native)
+	_entry_dock.add_child(_native_button)
+
 	var entry_row := HBoxContainer.new()
 	entry_row.name = "EntradaFila"
 	entry_row.add_theme_constant_override("separation", 8)
@@ -188,7 +205,7 @@ func _build_interface() -> void:
 	_mode_button = Button.new()
 	_mode_button.name = "ModoIntegracion"
 	_mode_button.text = "Modo: demo"
-	_mode_button.tooltip_text = "Alterna laboratorio y conexión real (todavía no disponible)"
+	_mode_button.tooltip_text = "Alterna maqueta e integración antigua bloqueada. CoreRPG tiene su propia entrada."
 	_mode_button.pressed.connect(_toggle_mode)
 	footer.add_child(_mode_button)
 	# Solo Windows: no se activa red en Android ni se añaden controles en la tablet.
@@ -199,7 +216,9 @@ func _build_interface() -> void:
 		diagnostic_button.tooltip_text = "Envía el texto al proxy local y a Google Gemini. No es gameplay ni respuesta de un NPC."
 		diagnostic_button.pressed.connect(_probe_gemini)
 		footer.add_child(diagnostic_button)
+		_gemini_button = diagnostic_button
 	_hint = _make_label("Solo se ensaya la interfaz", 11, Color(0.73, 0.78, 0.78))
+	_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	_hint.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	footer.add_child(_hint)
@@ -246,8 +265,9 @@ func _update_layout() -> void:
 	_masthead.visible = not _keyboard_compact
 	_top_info.visible = not _keyboard_compact
 	_footer.visible = not _keyboard_compact
+	_native_button.visible = not _keyboard_compact
 	if is_instance_valid(_provider_row):
-		_provider_row.visible = not _keyboard_compact
+		_provider_row.visible = not _keyboard_compact and not _native_active
 	_sync_portrait_visibility()
 
 	var phone: bool = view.x < 760.0
@@ -293,6 +313,20 @@ func _send_from_button() -> void:
 	_on_send(_input.text)
 
 func _on_send(raw_text: String) -> void:
+	if _native_active:
+		var native_result: Dictionary = _native_conversation.submit_text(raw_text)
+		if native_result.status == "rejected":
+			_hint.text = native_result.reply
+			return
+		_turn_sequence += 1
+		_input.clear()
+		_append_bubble("TÚ", raw_text.strip_edges(), true)
+		_append_bubble(NATIVE_CONVERSATION.AUTHOR, native_result.reply, false)
+		if native_result.status == "unavailable":
+			_service_state.text = "CORERPG NO DISPONIBLE · SIN SIMULACIÓN · SIN IA"
+		_hint.text = "Consulta local determinista · sin acciones ni IA"
+		call_deferred("_layout_panel_controls")
+		return
 	var mode: String = PIPELINE.MODE_INTEGRATION if _integration_mode else PIPELINE.MODE_DEMO
 	var result: Dictionary = submit_turn_for_test(raw_text, mode)
 	if str(result.get("status", "")) == "rejected":
@@ -363,7 +397,9 @@ func _on_tts_test_finished(result: Dictionary) -> void:
 	call_deferred("_layout_panel_controls")
 
 func _toggle_mode() -> void:
+	_native_active = false
 	_integration_mode = not _integration_mode
+	_show_legacy_header()
 	_mode_button.text = "Modo: integración" if _integration_mode else "Modo: demo"
 	_service_state.text = "MODO INTEGRACIÓN   ·   CORERPG / GEMINI / VOZ NO DISPONIBLES" if _integration_mode else "MODO MAQUETA   ·   MUNDO NO CARGADO   ·   GEMINI Y CORERPG DESCONECTADOS"
 	_hint.text = "Conexiones reales sin verificar" if _integration_mode else "Solo se ensaya la interfaz"
@@ -372,6 +408,11 @@ func _toggle_mode() -> void:
 func _reset_demo() -> void:
 	if not is_instance_valid(_history_messages):
 		return
+	_native_active = false
+	_integration_mode = false
+	_mode_button.text = "Modo: demo"
+	_service_state.text = "MODO MAQUETA   ·   MUNDO NO CARGADO   ·   GEMINI Y CORERPG DESCONECTADOS"
+	_show_legacy_header()
 	for item in _history_messages.get_children():
 		_history_messages.remove_child(item)
 		item.queue_free()
@@ -381,6 +422,45 @@ func _reset_demo() -> void:
 	_input.clear()
 	_hint.text = "Solo se ensaya la interfaz"
 	call_deferred("_layout_panel_controls")
+
+func _show_legacy_header() -> void:
+	_title.text = "NIMROEL  ·  TRESKAL"
+	_subtitle.text = "v0.0.1  |  LABORATORIO 2D CONVERSACIONAL"
+	_backdrop.show()
+	_input.placeholder_text = "¿Qué veo desde donde estoy?"
+	if is_instance_valid(_gemini_button):
+		_gemini_button.show()
+	if is_instance_valid(_provider_row):
+		_provider_row.visible = not _keyboard_compact
+
+func _start_native() -> void:
+	var result: Dictionary = _native_conversation.start()
+	if result.status != "ok":
+		_append_bubble(NATIVE_CONVERSATION.AUTHOR, result.reply, false)
+		_hint.text = "Experiencia nativa no disponible"
+		return
+	_native_active = true
+	_integration_mode = false
+	_title.text = "NIMROEL  ·  CORERPG"
+	_subtitle.text = "I1  |  PRUEBA ESTRUCTURAL NEUTRA · SIN TRESKAL NI ALDEA V1"
+	_backdrop.hide()
+	_mode_button.text = "Modo: nativo"
+	if is_instance_valid(_gemini_button):
+		_gemini_button.hide()
+	if is_instance_valid(_provider_row):
+		_provider_row.hide()
+	_service_state.text = "CORERPG CONECTADO · CONTEXTO AUTORIZADO · CONSULTAS LOCALES SIN IA"
+	_input.placeholder_text = "estado / ¿qué conozco?"
+	_portrait_wanted = false
+	_sync_portrait_visibility()
+	_input.clear()
+	_append_bubble(NATIVE_CONVERSATION.AUTHOR, "Experiencia nativa activa: estructura neutra de laboratorio. No es Treskal ni una aldea V1 generada.\n" + NATIVE_CONVERSATION.HELP, false)
+	_append_bubble(NATIVE_CONVERSATION.AUTHOR, result.reply, false)
+	_hint.text = "Misma partida durante esta pantalla · sin guardado I1"
+	call_deferred("_layout_panel_controls")
+
+func _exit_tree() -> void:
+	_native_conversation.close()
 
 func _append_bubble(author: String, body: String, player: bool) -> void:
 	var row := HBoxContainer.new()
