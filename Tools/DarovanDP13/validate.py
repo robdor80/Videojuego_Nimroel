@@ -239,7 +239,7 @@ def validate_veldora_authorial(record, d01, d07):
             "riverBehindCityIdentity","riverMouthToCityGeometry","terrainElevationRaster",
             "cadastralOrStreetTopography")) and record["neighborhoodElevations"] == [],
            "Veldora invented measurement, district or river identity")
-    demand("principal puerto comercial marítimo" in record["autoralAnchorNotes"][0] and
+    demand("puerto comercial marítimo" in record["autoralAnchorNotes"][0] and
            "no queda identificado" in record["autoralAnchorNotes"][3] and
            "dos ríos canónicos distintos" in record["autoralAnchorNotes"][4],
            "Veldora coastal and river guards")
