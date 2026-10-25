@@ -159,3 +159,14 @@ Acta vinculante: `../Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`. La pob
 - DAR-D11-T03: ocho escenarios TEST_ONLY son especificaciones; ninguno es canon ni prueba de ejecución de reglas de dominio.
 - DAR-D11-T04: bloqueos de canon se conservan: Arven cultura UNKNOWN, geometrías, minas y recursos exactos pendientes; la Casa no crea armada ni fiscalidad interior nueva.
 - DAR-D11-T05: no se modifica CoreRPG, GDExtension o Host; dependencias CoreRPG se documentan en petición técnica separada. Revisión del autor obligatoria antes de fusionar PR D11; D12 no iniciada.
+
+## Resolución autoral de altitud — 25 de octubre de 2026
+
+**DAR-DP13-ALT-01 (APROBADA):** Montes Valkram, **opción B**: cordillera muy alta. Rango orientativo de **3.600–4.200 m para las grandes cumbres**, no para la totalidad del macizo ni cada montaña individual. Es una escala de diseño expresamente aprobada por el autor; las cotas de valles, cumbres secundarias, pasos, cabeceras y localidades permanecen sin definir.
+
+**DAR-DP13-ALT-02 (APROBADA):** una cumbre excepcional situada en el **sector norte de Valkram**, representada en el mapa del autor **entre la N y la O del rótulo «NORGARD»**, es **la mayor elevación de todo Norgard** y alcanza **aproximadamente 4.200 metros sobre el nivel del mar**. Su nombre propio, coordenadas, laderas exactas, jurisdicción precisa, extensión nival y existencia de glaciares permanecen **UNKNOWN**. «Cumbre septentrional de Valkram» es una descripción, NO un topónimo nuevo.
+
+**Compatibilidad transversal pendiente:** `Geografía/montanas.md` define los Montes Azurios como más altos, anchos y abruptos en términos generales. La elección más reciente del autor fija una **excepción puntual de altura máxima absoluta** para Valkram, compatible con un sistema Azurios globalmente más elevado/abrupto, pero se requiere armonización editorial futura a escala de Norgard para eliminar ambigüedades. **No se cambia la ficha superior en D.P13.**
+
+**Registro operativo:** `Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json`. Esta nueva decisión autoral no contradice la protección del perfil antiguo `darovan_dp13_physical_profiles_v0.1.json`, cuyos campos nulos corresponden a zonas de estudio sin cota única, no a las nuevas anclas individuales aprobadas.
+

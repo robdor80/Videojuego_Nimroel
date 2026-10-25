@@ -37,3 +37,7 @@ El commit de documentación y auditoría `3b77cd9f70f36d1ec49344b941d71a34a6f871
 - [Regresión D01–D12 — ejecución #40186172806](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40186172806): **SUCCESS** tanto en `windows-2022` como en `ubuntu-24.04`, incluida la compilación C++ de catálogo CoreRPG y CTest sintético heredados de D11.
 
 **Dictamen documental actualizado: D.P13 COMPLETA CON RESERVAS.** Cobertura ambiental comparable al borrador geográfico de Valrik/Treskal a nivel conceptual y de contratos; no equivale a cotas, posiciones ni simulación de terreno en CoreRPG/Godot. Las reservas de materialización se trasladan sin inventarlas. Este anexo registra una ejecución concreta, no sustituye la obligación de comprobar las Actions correspondientes a cualquier HEAD nuevo.
+
+## Adenda de altitud aprobada (25-10-2026)
+
+La reserva previa «sin alturas de Valkram» es **histórica y parcialmente resuelta**: escala B de grandes cumbres Valkram (3.600–4.200 m) y máximo absoluto de Norgard de **aprox. 4.200 m** en la cumbre del norte de Valkram entre N/O del rótulo. Otras altitudes, divisorias y geometrías siguen UNKNOWN. Ver `12_altitud_valkram_autorizada.md` y el JSON AUTHORED de altitud. No confundir el dato aprobado con malla métrica ni con climatología medida.

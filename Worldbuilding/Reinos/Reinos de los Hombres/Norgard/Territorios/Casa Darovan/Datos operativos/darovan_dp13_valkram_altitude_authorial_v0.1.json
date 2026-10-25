@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_valkram_altitude_authorial",
+  "version": "0.1.0",
+  "phase": "D.P13",
+  "authority": "AUTHORED_AUTHOR_DECISION",
+  "authorDecisionDate": "2026-10-25",
+  "decisionIds": [
+    "DAR-DP13-ALT-01",
+    "DAR-DP13-ALT-02"
+  ],
+  "rangeDefinition": {
+    "mountainRange": "Montes Valkram",
+    "peakClass": "very_high",
+    "option": "B",
+    "representativeMajorSummitBandMetersApprox": {
+      "min": 3600,
+      "max": 4200
+    },
+    "scope": "grandes cumbres como referencia, no todas las cotas de la cordillera",
+    "source": "Aprobación expresa del autor en conversación de D.P13 de 25/10/2026"
+  },
+  "worldHighestSummit": {
+    "technicalReferenceId": "dp13_valkram_north_highest_summit",
+    "officialToponym": null,
+    "mountainRange": "Montes Valkram",
+    "sector": "northern",
+    "altitudeMetersApprox": 4200,
+    "approximation": true,
+    "highestInNorgard": true,
+    "mapLocator": "Pico triangular del norte de Valkram, entre las letras N y O del rótulo NORGARD del mapa facilitado por el autor",
+    "coordinates": null,
+    "administrativeOwnership": null,
+    "exactElevationMeasurement": null,
+    "climateConditions": null,
+    "snowPersistence": null,
+    "glacierPresence": null
+  },
+  "limits": {
+    "otherSummitExactElevations": "UNKNOWN",
+    "subrangeBoundaries": "UNKNOWN",
+    "slopeMetrics": "UNKNOWN",
+    "passElevations": "UNKNOWN",
+    "permanentSnow": "UNKNOWN",
+    "otherNorgardRangeSummitHeights": "UNKNOWN",
+    "cartographicReferenceIsGeoreferenced": false,
+    "topographicRuntimeMaterialized": false
+  },
+  "crossCanon": {
+    "document": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+    "existingDescription": "Montes Azurios se describen como más altos y más abruptos en conjunto",
+    "interpretation": "Comparación general de macizos, no certificación de una cumbre individual más alta",
+    "explicitlyAuthoredException": "La cumbre absoluta de Norgard está en el norte de Valkram con unos 4200m",
+    "harmonizationPendingAtNorgardScope": true,
+    "superiorCanonFileModified": false
+  },
+  "generatedFeatures": [],
+  "runtime": {
+    "implemented": false,
+    "geometryGenerated": false
+  }
+}

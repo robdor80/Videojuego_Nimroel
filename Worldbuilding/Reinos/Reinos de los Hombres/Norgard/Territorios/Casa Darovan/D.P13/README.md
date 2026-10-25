@@ -24,3 +24,9 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 ## Verificación
 
 `python Tools/DarovanDP13/validate.py`, regresiones D01–D12 y CI Windows/Linux. **Documento de diseño, no juego en funcionamiento.**
+
+
+## Ampliación autoral de altimetría
+
+- `12_altitud_valkram_autorizada.md`: opción B y cumbre septentrional de ~4.200 m, la más alta de Norgard, con ubicación visual aproximada y sin topónimo nuevo.
+- `../Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json`: anclas elevacionales **AUTHORED**, independientes del perfil de doce zonas todavía sin cotas.

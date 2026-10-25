@@ -120,7 +120,44 @@ def validate(profiles, hydro, causal, d01, d02, d03, *, check_fs=True):
         for p in hydro["sources"]:
             demand((ROOT/p).is_file(),"hydro source absent")
 
+def validate_authorial_altitudes(record):
+    demand(record["schemaVersion"] == 1 and record["authority"] == "AUTHORED_AUTHOR_DECISION","alt authority")
+    demand(record["decisionIds"] == ["DAR-DP13-ALT-01","DAR-DP13-ALT-02"],"author decisions")
+    rg=record["rangeDefinition"]
+    demand(rg["mountainRange"] == "Montes Valkram" and rg["option"] == "B","mountain range choice")
+    demand(rg["representativeMajorSummitBandMetersApprox"] == {"min":3600,"max":4200},"peak band")
+    p=record["worldHighestSummit"]
+    demand(p["mountainRange"] == "Montes Valkram" and p["sector"] == "northern","summit sector")
+    demand(p["altitudeMetersApprox"] == 4200 and p["approximation"] is True and p["highestInNorgard"] is True,"absolute high point")
+    demand("entre las letras N y O" in p["mapLocator"],"visual map anchor")
+    demand(p["officialToponym"] is None and p["coordinates"] is None and p["administrativeOwnership"] is None,"no fabricated toponym/position")
+    demand(all(p[k] is None for k in ("exactElevationMeasurement","climateConditions","snowPersistence","glacierPresence")),"unknown mountain conditions")
+    demand(record["limits"]["cartographicReferenceIsGeoreferenced"] is False
+           and record["limits"]["topographicRuntimeMaterialized"] is False,"not GIS/runtime")
+    demand(record["crossCanon"]["harmonizationPendingAtNorgardScope"] is True
+           and record["crossCanon"]["superiorCanonFileModified"] is False,"superior document guard")
+    demand(record["generatedFeatures"] == [] and record["runtime"] == {"implemented":False,"geometryGenerated":False},"altitude runtime")
+
 def run():
+    peak=load(DATA/"darovan_dp13_valkram_altitude_authorial_v0.1.json")
+    validate_authorial_altitudes(peak)
+    alt_mutations=[
+      ("apex_height",lambda d:d["worldHighestSummit"].__setitem__("altitudeMetersApprox",4800)),
+      ("apex_location",lambda d:d["worldHighestSummit"].__setitem__("sector","southern")),
+      ("apex_owner",lambda d:d["worldHighestSummit"].__setitem__("administrativeOwnership","casa_darovan")),
+      ("apex_toponym",lambda d:d["worldHighestSummit"].__setitem__("officialToponym","Pico Nuevo")),
+      ("glacier_approved",lambda d:d["worldHighestSummit"].__setitem__("glacierPresence",True)),
+      ("azor_superior_overwritten",lambda d:d["crossCanon"].__setitem__("superiorCanonFileModified",True))
+    ]
+    for label,change in alt_mutations:
+        test=copy.deepcopy(peak)
+        change(test)
+        try:
+            validate_authorial_altitudes(test)
+        except AssertionError:
+            continue
+        raise AssertionError("Authorial peak negative test not rejected "+label)
+    demand((TERR/"D.P13"/"12_altitud_valkram_autorizada.md").is_file(),"missing altitude decision document")
     profiles=load(DATA/"darovan_dp13_physical_profiles_v0.1.json")
     hydro=load(DATA/"darovan_dp13_hydro_overlay_v0.1.json")
     causal=load(DATA/"darovan_dp13_environment_causal_v0.1.json")
@@ -164,7 +201,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()
