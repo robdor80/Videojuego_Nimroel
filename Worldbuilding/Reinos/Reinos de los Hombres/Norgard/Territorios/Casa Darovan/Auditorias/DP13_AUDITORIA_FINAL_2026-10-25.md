@@ -121,3 +121,10 @@ La cumbre máxima exacta, su nombre, emplazamiento, cartografía, pendientes, co
 
 Documentación: `D.P13/18_altitud_maxima_isla_syvaris_autorizada.md`; registro: `Datos operativos/darovan_dp13_syvaris_island_relief_authorial_v0.1.json`. No supone iniciar D.P16/D.P18.
 
+
+## DAR-DP13-ISLAND-ALT-02 — Cota máxima insular de Arven (25/10/2026)
+
+**APROBACIÓN EXPRESA DEL AUTOR — opción B:** la **máxima elevación natural de la isla de Arven** se situará aproximadamente **entre 250 y 500 m s. n. m.** Es un intervalo para el **máximo de la isla**, no una altitud para todas sus lomas, acantilados, aldeas o costa. No se elige una altura puntual ni se bautiza una montaña.
+
+Se mantiene el **Bosque del Manto Verde** (aproximadamente **90 %** de Arven, continuo y principalmente de coníferas), las aldeas concentradas principalmente en la costa interior orientada al Golfo de Veldora, la caza y la gestión maderera limitada. Se conserva la jurisdicción de **Casa Darovan**. Sin alturas de aldeas, geometría, manantiales, nuevos caminos o gameplay runtime. Ver `D.P13/19_altitud_maxima_isla_arven_autorizada.md` y `Datos operativos/darovan_dp13_arven_island_relief_authorial_v0.1.json`.
+

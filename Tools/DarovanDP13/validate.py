@@ -393,7 +393,85 @@ def validate_syvaris_island_maximum(record, urban_record, d01, d07):
     demand((TERR/"D.P13"/"18_altitud_maxima_isla_syvaris_autorizada.md").is_file(),
            "Syvaris island documentation missing")
 
+def validate_arven_island_maximum(record, d01):
+    demand(record["schemaVersion"] == 1
+           and record["documentId"] == "darovan_dp13_arven_island_maximum_elevation_authorial"
+           and record["authority"] == "AUTHORED_AUTHOR_DECISION"
+           and record["authorDecisionId"] == "DAR-DP13-ISLAND-ALT-02"
+           and record["authorDecisionDate"] == "2026-10-25",
+           "Arven author decision")
+    demand(record["geographyId"] == "arven_island"
+           and record["geographyName"] == "isla de Arven"
+           and record["adminOwner"] == "casa_darovan"
+           and record["selectedOption"] == "B","Arven island identity")
+    demand(record["approximateHighestNaturalElevationBandMeters"] == {"min":250,"max":500}
+           and record["semantics"] == "island_natural_maximum_lies_approximately_within_band_not_all_hills_or_villages",
+           "Arven maximum elevation constraint")
+    demand(all(record[k] is None for k in
+           ("exactMaximumElevationMeters","highestSummitOfficialName","highestSummitCoordinates",
+            "elevatedAreasPolygon","terrainHeightmap","villageAltitudeMeters",
+            "coastLevelMetrics","rainfallOrTemperatureMeasured","permanentSnow")),
+           "No fabricated Arven elevations or climatic measurements")
+    demand(all(record[k] == [] for k in
+           ("specificHillOrCliffElevations","officialPeakInstances","villageCoordinates",
+            "watercoursesOrSpringsCreated")),
+           "No invented Arven peaks, villages or watercourses")
+    demand(record["protectedPreexistingCanon"] == {
+           "islandFacesGolfoDeVeldora":True,
+           "islandPartOfNorgard":True,
+           "administeredByDarovan":True,
+           "mainForestName":"Bosque del Manto Verde",
+           "forestCoverApproxPercent":90,
+           "forestContinuous":True,
+           "forestDominantlyConifers":True,
+           "villagesExist":True,
+           "villagesConcentratedOnInnerCoastFacingGulf":True,
+           "forestHuntingImportant":True,
+           "loggingLimited":True}, "Arven forest and settlement canon")
+    demand(record["implementation"] == {
+           "georeferencedMap":False,"terrainCreated":False,
+           "worldStateRuntime":False,"changedPriorPhases":False},
+           "Arven not materialized in engine or old phases")
+    demand(any(z["id"] == "d01_arven_contexto"
+               and z["administrativeOwner"] == "casa_darovan"
+               for z in d01["physicalUnits"]), "Arven D01 work-unit anchor")
+    for source in record["sourcePaths"]:
+        demand((ROOT/source).is_file(),"Arven source path unavailable "+source)
+    demand((TERR/"D.P13"/"19_altitud_maxima_isla_arven_autorizada.md").is_file(),
+           "Arven decision documentation missing")
+
 def run():
+    arven=load(DATA/"darovan_dp13_arven_island_relief_authorial_v0.1.json")
+    ad01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
+    validate_arven_island_maximum(arven,ad01)
+    arven_mutations=[
+      ("wrong_island",lambda d:d.__setitem__("geographyId","syvaris_island")),
+      ("wrong_option",lambda d:d.__setitem__("selectedOption","A")),
+      ("lower_bound_wrong",lambda d:d["approximateHighestNaturalElevationBandMeters"].__setitem__("min",100)),
+      ("upper_bound_wrong",lambda d:d["approximateHighestNaturalElevationBandMeters"].__setitem__("max",800)),
+      ("invented_exact_peak",lambda d:d.__setitem__("exactMaximumElevationMeters",375)),
+      ("invented_peak_name",lambda d:d.__setitem__("highestSummitOfficialName","Pico Manto Verde")),
+      ("invented_peak_location",lambda d:d.__setitem__("highestSummitCoordinates",[1,2])),
+      ("all_villages_at_height",lambda d:d.__setitem__("villageAltitudeMeters",300)),
+      ("false_forest_reduction",lambda d:d["protectedPreexistingCanon"].__setitem__("forestCoverApproxPercent",40)),
+      ("false_forest_split",lambda d:d["protectedPreexistingCanon"].__setitem__("forestContinuous",False)),
+      ("wrong_admin_owner",lambda d:d.__setitem__("adminOwner","casa_galdren")),
+      ("wrong_village_coast",lambda d:d["protectedPreexistingCanon"].__setitem__("villagesConcentratedOnInnerCoastFacingGulf",False)),
+      ("invented_village",lambda d:d["villageCoordinates"].append([1,2])),
+      ("invented_river",lambda d:d["watercoursesOrSpringsCreated"].append("new river")),
+      ("fake_heightmap",lambda d:d.__setitem__("terrainHeightmap",[[250,500]])),
+      ("fabricated_snow",lambda d:d.__setitem__("permanentSnow",True)),
+      ("wrong_landform_semantics",lambda d:d.__setitem__("semantics","average_height")),
+      ("invented_runtime",lambda d:d["implementation"].__setitem__("worldStateRuntime",True))
+    ]
+    for label,change in arven_mutations:
+        altered=copy.deepcopy(arven)
+        change(altered)
+        try:
+            validate_arven_island_maximum(altered,ad01)
+        except AssertionError:
+            continue
+        raise AssertionError("Arven negative mutation accepted "+label)
     syvaris_island=load(DATA/"darovan_dp13_syvaris_island_relief_authorial_v0.1.json")
     syvaris_urban=load(DATA/"darovan_dp13_syvaris_elevation_authorial_v0.1.json")
     sd01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
@@ -630,7 +708,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)+len(syvaris_island_mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)+len(syvaris_island_mutations)+len(arven_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()

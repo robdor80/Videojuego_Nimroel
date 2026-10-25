@@ -52,3 +52,6 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 
 - `18_altitud_maxima_isla_syvaris_autorizada.md`: opción A para **máximo altitudinal de la isla** entre ~200 y 400 m, separada de la cota urbana 0–40 m.
 - `../Datos operativos/darovan_dp13_syvaris_island_relief_authorial_v0.1.json`: contrato autoral del máximo del relieve insular sin terreno generado.
+
+- `19_altitud_maxima_isla_arven_autorizada.md`: **Arven**, opción B, cota máxima natural orientativa **250–500 m**, no alturas de aldeas.
+- `../Datos operativos/darovan_dp13_arven_island_relief_authorial_v0.1.json`: ancla autoral con protecciones de Manto Verde y los asentamientos costeros existentes.
