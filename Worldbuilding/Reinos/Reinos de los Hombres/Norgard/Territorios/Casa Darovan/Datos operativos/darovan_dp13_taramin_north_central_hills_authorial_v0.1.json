@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_taramin_north_central_hills_authorial",
+  "version": "0.1.0",
+  "phase": "D.P13",
+  "authority": "AUTHORED_AUTHOR_DECISION",
+  "authorDecisionId": "DAR-DP13-HILLS-01",
+  "authorDecisionDate": "2026-10-25",
+  "geographyId": "taramin_peninsula_north_central_hills",
+  "sourceStudyUnitId": "d01_taramin_norte_centro",
+  "excludesStudyUnitId": "d01_elyra_paso_peninsular",
+  "selectedOption": "B",
+  "characteristicHillElevationBandMetersApprox": {
+    "min": 300,
+    "max": 600
+  },
+  "semantics": "characteristic_elevations_of_north_central_peninsular_hills_not_all_terrain_nor_peninsula_maximum",
+  "physicalProfile": {
+    "landformCategory": "hills",
+    "canonicalTraits": [
+      "ochre_hills",
+      "rocky_exposures",
+      "semiarid_transition"
+    ],
+    "seasonalGulliesPossibleByTopologyNotInstantiated": true
+  },
+  "specificHillHeightMeters": null,
+  "exactHillMaximumMeters": null,
+  "peninsulaOverallMaximumMeters": null,
+  "heightmap": null,
+  "polygon": null,
+  "coordinates": null,
+  "roadOrPassLocations": [],
+  "namedNewFeatures": [],
+  "measuredRainfallMm": null,
+  "measuredTemperatureC": null,
+  "permanentWatercoursesAdded": [],
+  "exactSeasonalGullies": [],
+  "namedSettlementsAdded": [],
+  "specificForestsModified": [],
+  "referenceConstraints": {
+    "elyraSeparateMountainRange": true,
+    "elyraUpperSummitsMetersApprox": 2600,
+    "taraminMainUrbanCoreMetersApprox": {
+      "min": 0,
+      "max": 40
+    },
+    "northCentralSemiaridNotUniformDesert": true,
+    "thalenOneRiverWithTwoTerminalArms": true,
+    "southTaraminForestSeparate": true
+  },
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d03_climate_ecosystems_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_elyra_altitude_authorial_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_taramin_elevation_authorial_v0.1.json"
+  ],
+  "implementation": {
+    "worldStateRuntime": false,
+    "georeferencedMap": false,
+    "terrainCreated": false,
+    "olderPhasesModified": false
+  }
+}

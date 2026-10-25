@@ -440,7 +440,92 @@ def validate_arven_island_maximum(record, d01):
     demand((TERR/"D.P13"/"19_altitud_maxima_isla_arven_autorizada.md").is_file(),
            "Arven decision documentation missing")
 
+def validate_taramin_hills_authorial(record, d01, elyra, taramin_city):
+    demand(record["schemaVersion"] == 1 and
+           record["documentId"] == "darovan_dp13_taramin_north_central_hills_authorial"
+           and record["authority"] == "AUTHORED_AUTHOR_DECISION"
+           and record["authorDecisionId"] == "DAR-DP13-HILLS-01"
+           and record["authorDecisionDate"] == "2026-10-25",
+           "Taramin hills author decision")
+    demand(record["geographyId"] == "taramin_peninsula_north_central_hills"
+           and record["sourceStudyUnitId"] == "d01_taramin_norte_centro"
+           and record["excludesStudyUnitId"] == "d01_elyra_paso_peninsular"
+           and record["selectedOption"] == "B","Taramin hills geographic scope")
+    demand(record["characteristicHillElevationBandMetersApprox"] == {"min":300,"max":600}
+           and record["semantics"] ==
+           "characteristic_elevations_of_north_central_peninsular_hills_not_all_terrain_nor_peninsula_maximum",
+           "Taramin hills reference heights")
+    demand(record["physicalProfile"] == {
+           "landformCategory":"hills",
+           "canonicalTraits":["ochre_hills","rocky_exposures","semiarid_transition"],
+           "seasonalGulliesPossibleByTopologyNotInstantiated":True},
+           "Taramin hills qualitative source profile")
+    demand(all(record[k] is None for k in
+           ("specificHillHeightMeters","exactHillMaximumMeters",
+            "peninsulaOverallMaximumMeters","heightmap","polygon","coordinates",
+            "measuredRainfallMm","measuredTemperatureC")),
+           "No fabricated hill geometry/measurement")
+    demand(all(record[k] == [] for k in
+           ("roadOrPassLocations","namedNewFeatures","permanentWatercoursesAdded",
+            "exactSeasonalGullies","namedSettlementsAdded","specificForestsModified")),
+           "No invented Taramin features")
+    demand(record["referenceConstraints"] == {
+           "elyraSeparateMountainRange":True,
+           "elyraUpperSummitsMetersApprox":2600,
+           "taraminMainUrbanCoreMetersApprox":{"min":0,"max":40},
+           "northCentralSemiaridNotUniformDesert":True,
+           "thalenOneRiverWithTwoTerminalArms":True,
+           "southTaraminForestSeparate":True},
+           "Taramin source and other authorial decisions")
+    demand(elyra["majorSummitsApproximateUpperElevationMeters"] == 2600
+           and taramin_city["urbanAltitudeReferenceBandMetersApprox"] == {"min":0,"max":40},
+           "Crosscheck Elyra and city records")
+    demand(any(z["id"] == "d01_taramin_norte_centro" for z in d01["physicalUnits"])
+           and any(z["id"] == "d01_elyra_paso_peninsular" for z in d01["physicalUnits"]),
+           "Preserve D01 unit identities")
+    demand(record["implementation"] == {
+           "worldStateRuntime":False,"georeferencedMap":False,
+           "terrainCreated":False,"olderPhasesModified":False},
+           "Taramin hills not materialized")
+    for source in record["sourcePaths"]:
+        demand((ROOT/source).is_file(),"Missing source for Taramin hills "+source)
+    demand((TERR/"D.P13"/"20_colinas_norte_centro_taramin_autorizadas.md").is_file(),
+           "Missing Taramin hills authored document")
+
 def run():
+    taramin_hills=load(DATA/"darovan_dp13_taramin_north_central_hills_authorial_v0.1.json")
+    hd01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
+    helyra=load(DATA/"darovan_dp13_elyra_altitude_authorial_v0.1.json")
+    hcity=load(DATA/"darovan_dp13_taramin_elevation_authorial_v0.1.json")
+    validate_taramin_hills_authorial(taramin_hills,hd01,helyra,hcity)
+    taramin_hill_mutations=[
+      ("wrong_option",lambda d:d.__setitem__("selectedOption","A")),
+      ("wrong_lower_band",lambda d:d["characteristicHillElevationBandMetersApprox"].__setitem__("min",100)),
+      ("wrong_upper_band",lambda d:d["characteristicHillElevationBandMetersApprox"].__setitem__("max",900)),
+      ("wrong_study_area",lambda d:d.__setitem__("sourceStudyUnitId","d01_taramin_bosque_sur")),
+      ("wrong_elyra_exclusion",lambda d:d.__setitem__("excludesStudyUnitId","d01_valkram_oeste")),
+      ("uniform_height_misread",lambda d:d.__setitem__("semantics","all_land_has_this_elevation")),
+      ("wrong_elyra_height",lambda d:d["referenceConstraints"].__setitem__("elyraUpperSummitsMetersApprox",600)),
+      ("wrong_city_height",lambda d:d["referenceConstraints"]["taraminMainUrbanCoreMetersApprox"].__setitem__("max",600)),
+      ("fixed_peninsula_max",lambda d:d.__setitem__("peninsulaOverallMaximumMeters",600)),
+      ("invented_exact_hill",lambda d:d.__setitem__("specificHillHeightMeters",450)),
+      ("invented_new_road",lambda d:d["roadOrPassLocations"].append("road")),
+      ("invented_new_watercourse",lambda d:d["permanentWatercoursesAdded"].append("river")),
+      ("invented_gully_location",lambda d:d["exactSeasonalGullies"].append([2,5])),
+      ("made_up_measurement",lambda d:d.__setitem__("measuredRainfallMm",450)),
+      ("turns_into_uniform_desert",lambda d:d["referenceConstraints"].__setitem__("northCentralSemiaridNotUniformDesert",False)),
+      ("changes_thalen",lambda d:d["referenceConstraints"].__setitem__("thalenOneRiverWithTwoTerminalArms",False)),
+      ("claims_heightmap",lambda d:d.__setitem__("heightmap",[[300,600]])),
+      ("claims_runtime",lambda d:d["implementation"].__setitem__("worldStateRuntime",True))
+    ]
+    for label,change in taramin_hill_mutations:
+        altered=copy.deepcopy(taramin_hills)
+        change(altered)
+        try:
+            validate_taramin_hills_authorial(altered,hd01,helyra,hcity)
+        except AssertionError:
+            continue
+        raise AssertionError("Taramin hills negative mutation accepted "+label)
     arven=load(DATA/"darovan_dp13_arven_island_relief_authorial_v0.1.json")
     ad01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
     validate_arven_island_maximum(arven,ad01)
@@ -708,7 +793,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)+len(syvaris_island_mutations)+len(arven_mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)+len(syvaris_island_mutations)+len(arven_mutations)+len(taramin_hill_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()

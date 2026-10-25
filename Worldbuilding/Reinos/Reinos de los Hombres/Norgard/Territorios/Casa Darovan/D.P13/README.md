@@ -55,3 +55,6 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 
 - `19_altitud_maxima_isla_arven_autorizada.md`: **Arven**, opción B, cota máxima natural orientativa **250–500 m**, no alturas de aldeas.
 - `../Datos operativos/darovan_dp13_arven_island_relief_authorial_v0.1.json`: ancla autoral con protecciones de Manto Verde y los asentamientos costeros existentes.
+
+- `20_colinas_norte_centro_taramin_autorizadas.md`: colinas características del norte/centro de Taramin **300–600 m (B)**, excluyendo Elyra; sin geometría.
+- `../Datos operativos/darovan_dp13_taramin_north_central_hills_authorial_v0.1.json`: banda de cotas de colinas y guardas de canon.
