@@ -549,7 +549,136 @@ def validate_valkram_west_foothills_authorial(record, d01, valkram, treihord):
     demand((TERR/"D.P13"/"21_piedemonte_occidental_valkram_autorizado.md").is_file(),
            "Foothills authorial document missing")
 
+def validate_author_delegated_choices(record):
+    demand(record["schemaVersion"] == 1 and
+           record["documentId"] == "darovan_dp13_delegated_decisions_authorized_2026_10_25"
+           and record["phase"] == "D.P13", "Delegated closure schema")
+    delegation=record["delegation"]
+    demand(delegation["authorizedBy"] == "author"
+           and delegation["authorizedDate"] == "2026-10-25"
+           and delegation["method"] == "assistant_chooses_recommended_options_without_additional_questions",
+           "Explicit author delegation recorded")
+    demand("not personally selected individually" in delegation["attribution"]
+           and "no merge" in delegation["limits"], "Do not misattribute decision or PR authority")
+    demand(record["status"] == "DESIGN_DECISIONS_CLOSED_WITH_MATERIALIZATION_RESERVES",
+           "Do not claim fully mapped/runtime world")
+    expected=[
+      ("valkram_valleys",700,1300),
+      ("elyra_main_passes",900,1500),
+      ("elyra_valleys",400,900),
+      ("taramin_south_hills",150,500),
+      ("northern_cold",None,None),
+      ("west_coast",None,None),
+      ("snow",None,None),
+      ("wind",None,None),
+      ("rain",None,None),
+      ("fog",None,None),
+      ("soil",None,None),
+      ("streams",None,None),
+      ("flood",None,None),
+      ("pass_weather",None,None),
+      ("forest",None,None),
+      ("mapping",None,None)
+    ]
+    demand(len(record["decisions"]) == len(expected), "Q13-Q28 coverage")
+    for i,(scope,lower,upper) in enumerate(expected):
+        decision=record["decisions"][i]
+        demand(decision["id"] == "DAR-DP13-DELEGATED-Q"+str(i+13)
+               and decision["question"] == i+13 and decision["selectedOption"] == "B"
+               and decision["authority"] == "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION"
+               and decision["scopeId"] == scope, "Delegated choice Q"+str(i+13))
+        band=None if lower is None else {"min":lower,"max":upper}
+        demand(decision["characteristicElevationMetersApprox"] == band,
+               "Delegated characteristic band Q"+str(i+13))
+        demand(len(decision["subject"]) > 6 and len(decision["scopeRule"]) > 18,
+               "Decision must explain scope Q"+str(i+13))
+        demand(decision["authorPersonallyChoseThisOption"] is False
+               and decision["createsGeoreferencedGeometry"] is False
+               and decision["claimsMeasuredValues"] is False,
+               "Delegation cannot imply personal response, GIS or observation")
+    anchors=record["directAuthorCanon"]
+    demand(anchors["valkramHighSummitName"] == "la Viuda"
+           and anchors["valkramHighSummitApproxMeters"] == 4200
+           and anchors["valkramMainPassesMeters"] == {"min":1400,"max":2200}
+           and anchors["valkramWestFoothillsMeters"] == {"min":400,"max":900}
+           and anchors["elyraTopApproxMeters"] == 2600
+           and anchors["treihordUrbanMeters"] == {"min":150,"max":350}
+           and anchors["veldoraUrbanMeters"] == {"min":0,"max":60}
+           and anchors["taraminUrbanMeters"] == {"min":0,"max":40}
+           and anchors["syvarisUrbanMeters"] == {"min":0,"max":40}
+           and anchors["syvarisIslandMaximumMeters"] == {"min":200,"max":400}
+           and anchors["arvenIslandMaximumMeters"] == {"min":250,"max":500}
+           and anchors["taraminNorthCenterHillsMeters"] == {"min":300,"max":600}
+           and anchors["laViudaSnowPatchesSurviveSummer"] is True,
+           "Do not override directly approved facts")
+    demand(record["hydrologyGuards"] == {
+           "rivers":["belara","lhera","veldora","fhalion","thalen"],
+           "systemCount":4,"belaraCrossesTreihord":False,
+           "thalenTerminalArms":2,"fhalionMouthUnconfirmed":True},
+           "Protect five rivers and four systems")
+    unknown=record["unresolvedRequiringPhysicalData"]
+    demand(len(unknown)==9 and len(set(unknown))==9
+           and "georeferenced_elevation_grid" in unknown
+           and "executable_CoreRPG_environmental_simulation" in unknown
+           and "prevailing_wind_statistics" in unknown,
+           "Metric and runtime reservations persist")
+    policy=record["prohibitions"]
+    demand(all(policy[k]==[] for k in (
+           "newGeographicNames","newRivers","newRoads","newSettlements",
+           "newBridges","newCanals")), "No newly invented physical features")
+    demand(all(policy[k] is False for k in (
+           "exactCoordinatesAuthorized","meteorologicalMeasurementsApproved",
+           "heightmapCreated","glaciersConfirmed","engineSimulationExecuted",
+           "mainModified","nextPhaseStarted","mayMergePr")),
+           "No invented metrics, simulation, phase or PR merge")
+    demand((TERR/"D.P13"/"22_cierre_delegado_preguntas_y_opciones.md").is_file(),
+           "Delegated decision report required")
+
 def run():
+    delegated=load(DATA/"darovan_dp13_delegated_decisions_authorized_v0.1.json")
+    validate_author_delegated_choices(delegated)
+    delegated_mutations=[]
+    for idx in range(16):
+        delegated_mutations.append(
+            ("delegate_wrong_choice_"+str(idx),
+             lambda d,i=idx:d["decisions"][i].__setitem__("selectedOption","A")))
+    for idx in range(4):
+        delegated_mutations.extend([
+            ("delegate_wrong_min_"+str(idx),
+             lambda d,i=idx:d["decisions"][i]["characteristicElevationMetersApprox"].__setitem__("min",5)),
+            ("delegate_wrong_max_"+str(idx),
+             lambda d,i=idx:d["decisions"][i]["characteristicElevationMetersApprox"].__setitem__("max",9999))
+        ])
+    delegated_mutations.extend([
+      ("wrong_source",lambda d:d["delegation"].__setitem__("authorizedBy","assistant")),
+      ("pretend_direct_author",lambda d:d["decisions"][0].__setitem__("authorPersonallyChoseThisOption",True)),
+      ("invented_alt_geometry",lambda d:d["decisions"][0].__setitem__("createsGeoreferencedGeometry",True)),
+      ("invented_weather_reading",lambda d:d["decisions"][9].__setitem__("claimsMeasuredValues",True)),
+      ("renamed_la_viuda",lambda d:d["directAuthorCanon"].__setitem__("valkramHighSummitName","otra")),
+      ("raised_veldora",lambda d:d["directAuthorCanon"]["veldoraUrbanMeters"].__setitem__("max",150)),
+      ("changed_belara",lambda d:d["hydrologyGuards"].__setitem__("belaraCrossesTreihord",True)),
+      ("changed_thalen",lambda d:d["hydrologyGuards"].__setitem__("thalenTerminalArms",3)),
+      ("invented_fhalion_mouth",lambda d:d["hydrologyGuards"].__setitem__("fhalionMouthUnconfirmed",False)),
+      ("invented_new_river",lambda d:d["prohibitions"]["newRivers"].append("false_river")),
+      ("invented_new_road",lambda d:d["prohibitions"]["newRoads"].append("false_road")),
+      ("invented_new_city",lambda d:d["prohibitions"]["newSettlements"].append("false_city")),
+      ("faked_heightmap",lambda d:d["prohibitions"].__setitem__("heightmapCreated",True)),
+      ("invented_glacier",lambda d:d["prohibitions"].__setitem__("glaciersConfirmed",True)),
+      ("faked_rainfall",lambda d:d["prohibitions"].__setitem__("meteorologicalMeasurementsApproved",True)),
+      ("merges_without_permission",lambda d:d["prohibitions"].__setitem__("mayMergePr",True)),
+      ("changes_main",lambda d:d["prohibitions"].__setitem__("mainModified",True)),
+      ("fakes_engine_simulation",lambda d:d["prohibitions"].__setitem__("engineSimulationExecuted",True)),
+      ("claims_no_reservations",lambda d:d.__setitem__("unresolvedRequiringPhysicalData",[])),
+      ("not_a_delegated_status",lambda d:d.__setitem__("status","PHYSICAL_RUNTIME_READY"))
+    ])
+    for label,change in delegated_mutations:
+        altered=copy.deepcopy(delegated)
+        change(altered)
+        try:
+            validate_author_delegated_choices(altered)
+        except AssertionError:
+            continue
+        raise AssertionError("Delegated option negative mutation accepted "+label)
     foothills=load(DATA/"darovan_dp13_valkram_west_foothills_authorial_v0.1.json")
     fd01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
     fv=load(DATA/"darovan_dp13_valkram_altitude_authorial_v0.1.json")
@@ -885,7 +1014,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)+len(syvaris_island_mutations)+len(arven_mutations)+len(taramin_hill_mutations)+len(foothills_mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)+len(syvaris_island_mutations)+len(arven_mutations)+len(taramin_hill_mutations)+len(foothills_mutations)+len(delegated_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()
