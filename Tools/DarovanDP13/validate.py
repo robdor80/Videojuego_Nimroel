@@ -122,7 +122,7 @@ def validate(profiles, hydro, causal, d01, d02, d03, *, check_fs=True):
 
 def validate_authorial_altitudes(record):
     demand(record["schemaVersion"] == 1 and record["authority"] == "AUTHORED_AUTHOR_DECISION","alt authority")
-    demand(record["decisionIds"] == ["DAR-DP13-ALT-01","DAR-DP13-ALT-02","DAR-DP13-ALT-03","DAR-DP13-SNOW-01"],"author decisions")
+    demand(record["decisionIds"] == ["DAR-DP13-ALT-01","DAR-DP13-ALT-02","DAR-DP13-ALT-03","DAR-DP13-SNOW-01","DAR-DP13-PASS-01"],"author decisions")
     rg=record["rangeDefinition"]
     demand(rg["mountainRange"] == "Montes Valkram" and rg["option"] == "B","mountain range choice")
     demand(rg["representativeMajorSummitBandMetersApprox"] == {"min":3600,"max":4200},"peak band")
@@ -147,6 +147,23 @@ def validate_authorial_altitudes(record):
            "no glacier conclusion")
     demand(record["limits"]["permanentSnow"] == "localized_perennial_snow_patches_confirmed_only_on_la_Viuda",
            "snow restriction scope")
+    pas=record["principalNaturalPasses"]
+    demand(pas["authorDecisionId"] == "DAR-DP13-PASS-01" and pas["authorChoice"] == "B"
+           and pas["authority"] == "AUTHORED_AUTHOR_DECISION"
+           and pas["authorDecisionDate"] == "2026-10-25","pass author decision")
+    demand(pas["mountainRange"] == "Montes Valkram" and
+           pas["approximateElevationBandMeters"] == {"min":1400,"max":2200}
+           and pas["bandAppliesTo"] == "principal_natural_passes_as_typological_reference","pass elevations")
+    demand(pas["namesApproved"] == [] and pas["geographicPassLocations"] == []
+           and pas["exactPassElevations"] == [] and pas["exactNumberOfPasses"] is None
+           and pas["establishedRoadsOrBridges"] == [] and pas["seasonalClosureDates"] is None,
+           "no named passes, fixed positions, closures or infrastructure")
+    demand(pas["guaranteesYearRoundTransit"] is False and
+           pas["createsPassInstances"] is False and pas["measuredGeoreferencedTerrain"] is False,
+           "passes not materialized")
+    demand(record["limits"]["passElevations"] ==
+           "general_principal_natural_pass_band_1400_to_2200_m_authorized_individual_pass_elevations_unknown",
+           "pass authority scope")
     demand(record["limits"]["cartographicReferenceIsGeoreferenced"] is False
            and record["limits"]["topographicRuntimeMaterialized"] is False,"not GIS/runtime")
     demand(record["crossCanon"]["harmonizationPendingAtNorgardScope"] is True
@@ -204,6 +221,14 @@ def run():
       ("glaciers_implicitly_approved",lambda d:d["worldHighestSummit"]["snowPersistenceDetail"].__setitem__("glacierAuthorizationInThisDecision",True)),
       ("glacier_existence_fabricated",lambda d:d["worldHighestSummit"].__setitem__("glacierPresence",True)),
       ("snow_generalized_to_all_valkram",lambda d:d["limits"].__setitem__("permanentSnow","confirmed_everywhere")),
+      ("pass_wrong_min",lambda d:d["principalNaturalPasses"]["approximateElevationBandMeters"].__setitem__("min",900)),
+      ("pass_wrong_max",lambda d:d["principalNaturalPasses"]["approximateElevationBandMeters"].__setitem__("max",2800)),
+      ("pass_invented_name",lambda d:d["principalNaturalPasses"]["namesApproved"].append("Paso del Sol")),
+      ("pass_invented_road",lambda d:d["principalNaturalPasses"]["establishedRoadsOrBridges"].append("camino nuevo")),
+      ("pass_invented_location",lambda d:d["principalNaturalPasses"]["geographicPassLocations"].append("UTM test")),
+      ("pass_materialized",lambda d:d["principalNaturalPasses"].__setitem__("createsPassInstances",True)),
+      ("pass_pretend_year_round",lambda d:d["principalNaturalPasses"].__setitem__("guaranteesYearRoundTransit",True)),
+      ("pass_wrong_scope",lambda d:d["limits"].__setitem__("passElevations","all_passes_exact")),
       ("glacier_approved",lambda d:d["worldHighestSummit"].__setitem__("glacierPresence",True)),
       ("azor_superior_overwritten",lambda d:d["crossCanon"].__setitem__("superiorCanonFileModified",True))
     ]

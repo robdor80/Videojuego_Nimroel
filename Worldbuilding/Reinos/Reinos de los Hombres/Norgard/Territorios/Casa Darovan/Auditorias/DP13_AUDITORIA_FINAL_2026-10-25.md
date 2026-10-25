@@ -65,3 +65,14 @@ El topónimo **la Viuda** reemplaza la reserva del nombre para la cumbre máxima
 ## Anexo autoral de nieve en la Viuda (25/10/2026)
 
 Decisión **DAR-DP13-SNOW-01**, **opción B**: neveros persistentes durante el verano en sectores altos y resguardados de **la Viuda** (~4.200 m, norte de Valkram). Se corrige únicamente la incógnita de persistencia nival local para esta cumbre, sin geometría, nieve perpetua en toda la cordillera, cotas de nieve ni afirmación de glaciares. Se actualizan los contratos y las pruebas de canon. La auditoría de suficiencia territorial general mantiene sus reservas de materialización.
+
+## DAR-DP13-PASS-01 — Altitudes orientativas de los principales pasos de Valkram (25/10/2026)
+
+**Decisión expresa del autor: OPCIÓN B (APROBADA).** Los principales **pasos naturales** practicables de los Montes Valkram tendrán un **rango de referencia aproximado de 1.400 a 2.200 metros sobre el nivel del mar**.
+
+Este intervalo describe la **categoría general de los pasos principales**, no la cota de todos los collados, ni una obligación de distribuirlos uniformemente en esas alturas. Pueden existir relieves menores o collados más altos si el canon y la futura topografía lo permiten; la decisión **no autoriza** afirmar nombres, cantidad, emplazamientos, rutas, pasos abiertos durante todo el año, infraestructuras, puentes ni caminos nuevos.
+
+**Comportamiento plausible (DERIVED_CONDITIONAL, no hecho local decretado):** a esas alturas, algunos pasos pueden sufrir nieve, hielo, viento o dificultades de circulación durante episodios fríos. No se aprueban cierres regulares, fechas, duraciones ni cotas de nieve de pasos individuales. **La Viuda (≈4.200 m) y sus neveros de verano permanecen intactos**.
+
+**Dato operativo:** `Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json` → `principalNaturalPasses`. Esta nueva autorización sustituye el UNKNOWN anterior referido al **rango general de pasos principales**, pero no resuelve la altitud individual de ningún paso ni la cartografía métrica. Fuentes: aprobación expresa del autor en conversación D.P13, 25/10/2026, y canon de `Geografía/montanas.md`.
+

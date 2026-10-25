@@ -35,3 +35,5 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 - `../Datos operativos/darovan_dp13_elyra_altitude_authorial_v0.1.json`: altura orientativa de Elyra por decisión expresa del autor.
 
 - **DAR-DP13-SNOW-01:** opción B de nieve para **la Viuda**: neveros localizados que sobreviven al verano en zonas altas y protegidas. No afirma glaciares, cota de nieve, ni permanencia nival general de Valkram.
+
+- **DAR-DP13-PASS-01:** principales pasos naturales de Valkram con rango altitudinal orientativo **1.400–2.200 m**, sin crear pasos nominados, rutas ni geometría de terreno.

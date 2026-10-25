@@ -9,7 +9,8 @@
     "DAR-DP13-ALT-01",
     "DAR-DP13-ALT-02",
     "DAR-DP13-ALT-03",
-    "DAR-DP13-SNOW-01"
+    "DAR-DP13-SNOW-01",
+    "DAR-DP13-PASS-01"
   ],
   "rangeDefinition": {
     "mountainRange": "Montes Valkram",
@@ -59,7 +60,7 @@
     "otherSummitExactElevations": "UNKNOWN",
     "subrangeBoundaries": "UNKNOWN",
     "slopeMetrics": "UNKNOWN",
-    "passElevations": "UNKNOWN",
+    "passElevations": "general_principal_natural_pass_band_1400_to_2200_m_authorized_individual_pass_elevations_unknown",
     "permanentSnow": "localized_perennial_snow_patches_confirmed_only_on_la_Viuda",
     "otherNorgardRangeSummitHeights": "UNKNOWN",
     "cartographicReferenceIsGeoreferenced": false,
@@ -77,5 +78,28 @@
   "runtime": {
     "implemented": false,
     "geometryGenerated": false
+  },
+  "principalNaturalPasses": {
+    "authorDecisionId": "DAR-DP13-PASS-01",
+    "authorChoice": "B",
+    "authority": "AUTHORED_AUTHOR_DECISION",
+    "authorDecisionDate": "2026-10-25",
+    "mountainRange": "Montes Valkram",
+    "approximateElevationBandMeters": {
+      "min": 1400,
+      "max": 2200
+    },
+    "bandAppliesTo": "principal_natural_passes_as_typological_reference",
+    "namesApproved": [],
+    "geographicPassLocations": [],
+    "exactPassElevations": [],
+    "exactNumberOfPasses": null,
+    "establishedRoadsOrBridges": [],
+    "canHaveSeasonalSnowRestrictions": true,
+    "seasonalClosureDates": null,
+    "guaranteesYearRoundTransit": false,
+    "createsPassInstances": false,
+    "measuredGeoreferencedTerrain": false,
+    "source": "Aprobación expresa de opción B por el autor para los principales pasos naturales de Valkram durante D.P13"
   }
 }

@@ -87,3 +87,7 @@ Fuentes originales prioritarias: [relieve de Norgard](https://github.com/robdor8
 
 **Registro estructurado:** `Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json` → `worldHighestSummit.snowPersistence` y `snowPersistenceDetail`. Referencias anteriores a «nieve permanente UNKNOWN» en registros históricos quedan parcialmente superadas **solo para la Viuda**; el régimen del resto de Valkram/Elyra permanece por definir.
 
+
+## Efectos estacionales posibles de pasos de Valkram (aprobación de 25/10/2026)
+
+Los pasos naturales principales tienen rango orientativo de 1.400–2.200 m por decisión `DAR-DP13-PASS-01`. Nieve/hielo y dificultades por viento son consecuencias potenciales dependientes de tiempo y situación local; no se fijan cierres, fechas ni frecuencias de uso. **No confundir un collado hipotético con un camino existente o una vía de paso materializada.**
