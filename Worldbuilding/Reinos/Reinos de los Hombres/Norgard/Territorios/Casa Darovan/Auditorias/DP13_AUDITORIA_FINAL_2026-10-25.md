@@ -61,3 +61,7 @@ Aprobada en D.P13 opción B de altura de grandes cumbres Valkram (3.600–4.200 
 ## Ampliación de decisiones de altitud — 25/10/2026
 
 El topónimo **la Viuda** reemplaza la reserva del nombre para la cumbre máxima (~4.200 m) del norte de Valkram. La altura orientativa de las cumbres más altas de Elyra queda aprobada en **~2.600 m (A)**. Ninguna supone topografía métrica ni reabre D01–D12. Ver `D.P13/12_altitud_valkram_autorizada.md` y `D.P13/13_altitud_elyra_autorizada.md`.
+
+## Anexo autoral de nieve en la Viuda (25/10/2026)
+
+Decisión **DAR-DP13-SNOW-01**, **opción B**: neveros persistentes durante el verano en sectores altos y resguardados de **la Viuda** (~4.200 m, norte de Valkram). Se corrige únicamente la incógnita de persistencia nival local para esta cumbre, sin geometría, nieve perpetua en toda la cordillera, cotas de nieve ni afirmación de glaciares. Se actualizan los contratos y las pruebas de canon. La auditoría de suficiencia territorial general mantiene sus reservas de materialización.

@@ -8,7 +8,8 @@
   "decisionIds": [
     "DAR-DP13-ALT-01",
     "DAR-DP13-ALT-02",
-    "DAR-DP13-ALT-03"
+    "DAR-DP13-ALT-03",
+    "DAR-DP13-SNOW-01"
   ],
   "rangeDefinition": {
     "mountainRange": "Montes Valkram",
@@ -34,18 +35,32 @@
     "administrativeOwnership": null,
     "exactElevationMeasurement": null,
     "climateConditions": null,
-    "snowPersistence": null,
+    "snowPersistence": "localized_perennial_snow_patches",
     "glacierPresence": null,
     "toponymAuthority": "AUTHORED_AUTHOR_DECISION",
     "toponymApprovedDate": "2026-10-25",
-    "etymology": null
+    "etymology": null,
+    "snowPersistenceDetail": {
+      "authorChoice": "B",
+      "authorDecisionDate": "2026-10-25",
+      "authority": "AUTHORED_AUTHOR_DECISION",
+      "appliesTo": "la Viuda only; upper and sheltered sections",
+      "survivesSummer": true,
+      "continuousBlanketOverEntireSummit": false,
+      "fixedSnowlineMeters": null,
+      "fixedSnowpatchGeometry": null,
+      "coveragePercentage": null,
+      "glacierExistenceDetermined": false,
+      "glacierAuthorizationInThisDecision": false,
+      "snowmeltAmountOrTiming": null
+    }
   },
   "limits": {
     "otherSummitExactElevations": "UNKNOWN",
     "subrangeBoundaries": "UNKNOWN",
     "slopeMetrics": "UNKNOWN",
     "passElevations": "UNKNOWN",
-    "permanentSnow": "UNKNOWN",
+    "permanentSnow": "localized_perennial_snow_patches_confirmed_only_on_la_Viuda",
     "otherNorgardRangeSummitHeights": "UNKNOWN",
     "cartographicReferenceIsGeoreferenced": false,
     "topographicRuntimeMaterialized": false

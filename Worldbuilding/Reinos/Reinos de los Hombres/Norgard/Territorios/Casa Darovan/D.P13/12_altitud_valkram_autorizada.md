@@ -34,3 +34,14 @@ Cotas típicas de valle/piedemonte, altura de collados, cima secundaria, relieve
 
 - [Montañas de Norgard](https://github.com/robdor80/Videojuego_Nimroel/blob/main/Worldbuilding/Reinos/Reinos%20de%20los%20Hombres/Norgard/Geograf%C3%ADa/montanas.md): anterior definición comparativa.
 - Referencia autoral primaria: intervención directa del autor en la conversación D.P13 del **25/10/2026**, acompañada de recorte del mapa de Norgard. El archivo original de imagen no se publica como recurso por el mero hecho de usar su contenido como referencia.
+
+## Decisión autoral DAR-DP13-SNOW-01 — Neveros permanentes en la Viuda (25/10/2026)
+
+**APROBADA — opción B.** En **la Viuda**, cumbre septentrional de los Montes Valkram (~4.200 m), **existen acumulaciones de nieve (neveros) que sobreviven al verano en sectores altos y protegidos**. Se confirma la persistencia localizada de nieve de un año a otro; **no** se afirma que todo el pico permanezca nevado ni que exista un límite altitudinal de nieve uniforme para el conjunto de Valkram.
+
+**No se han aprobado glaciares** con esta decisión. Su existencia real sigue **UNKNOWN**, no debe darse por demostrada ni descartada definitivamente sin otra decisión autoral. No se fijan tamaños, volúmenes, espesores, cotas de aparición, localización métrica de neveros, fechas de deshielo ni caudales. La aportación hídrica por fusión es una **posibilidad causal derivada**, no un nuevo nacimiento de río ni una cuantificación.
+
+**Fuente autoral:** elección expresa de opción B a la pregunta 3 de D.P13, 25 de octubre de 2026.
+
+**Registro estructurado:** `Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json` → `worldHighestSummit.snowPersistence` y `snowPersistenceDetail`. Referencias anteriores a «nieve permanente UNKNOWN» en registros históricos quedan parcialmente superadas **solo para la Viuda**; el régimen del resto de Valkram/Elyra permanece por definir.
+

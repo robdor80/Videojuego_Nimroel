@@ -122,7 +122,7 @@ def validate(profiles, hydro, causal, d01, d02, d03, *, check_fs=True):
 
 def validate_authorial_altitudes(record):
     demand(record["schemaVersion"] == 1 and record["authority"] == "AUTHORED_AUTHOR_DECISION","alt authority")
-    demand(record["decisionIds"] == ["DAR-DP13-ALT-01","DAR-DP13-ALT-02","DAR-DP13-ALT-03"],"author decisions")
+    demand(record["decisionIds"] == ["DAR-DP13-ALT-01","DAR-DP13-ALT-02","DAR-DP13-ALT-03","DAR-DP13-SNOW-01"],"author decisions")
     rg=record["rangeDefinition"]
     demand(rg["mountainRange"] == "Montes Valkram" and rg["option"] == "B","mountain range choice")
     demand(rg["representativeMajorSummitBandMetersApprox"] == {"min":3600,"max":4200},"peak band")
@@ -132,7 +132,21 @@ def validate_authorial_altitudes(record):
     demand("entre las letras N y O" in p["mapLocator"],"visual map anchor")
     demand(p["officialToponym"] == "la Viuda" and p["toponymAuthority"] == "AUTHORED_AUTHOR_DECISION" and p["toponymApprovedDate"] == "2026-10-25","official authorial summit name")
     demand(p["coordinates"] is None and p["administrativeOwnership"] is None and p["etymology"] is None,"no fabricated location or origin")
-    demand(all(p[k] is None for k in ("exactElevationMeasurement","climateConditions","snowPersistence","glacierPresence")),"unknown mountain conditions")
+    demand(all(p[k] is None for k in ("exactElevationMeasurement","climateConditions","glacierPresence")),"unknown mountain conditions")
+    demand(p["snowPersistence"] == "localized_perennial_snow_patches","approved snow persistence")
+    snow=p["snowPersistenceDetail"]
+    demand(snow["authorChoice"] == "B" and snow["authorDecisionDate"] == "2026-10-25"
+           and snow["authority"] == "AUTHORED_AUTHOR_DECISION","snow author decision")
+    demand(snow["appliesTo"] == "la Viuda only; upper and sheltered sections"
+           and snow["survivesSummer"] is True and snow["continuousBlanketOverEntireSummit"] is False,
+           "localized summer snow")
+    demand(all(snow[k] is None for k in ("fixedSnowlineMeters","fixedSnowpatchGeometry",
+                                         "coveragePercentage","snowmeltAmountOrTiming")),"no fabricated snow measurements")
+    demand(snow["glacierExistenceDetermined"] is False and
+           snow["glacierAuthorizationInThisDecision"] is False and p["glacierPresence"] is None,
+           "no glacier conclusion")
+    demand(record["limits"]["permanentSnow"] == "localized_perennial_snow_patches_confirmed_only_on_la_Viuda",
+           "snow restriction scope")
     demand(record["limits"]["cartographicReferenceIsGeoreferenced"] is False
            and record["limits"]["topographicRuntimeMaterialized"] is False,"not GIS/runtime")
     demand(record["crossCanon"]["harmonizationPendingAtNorgardScope"] is True
@@ -183,6 +197,13 @@ def run():
       ("apex_toponym",lambda d:d["worldHighestSummit"].__setitem__("officialToponym","Pico Nuevo")),
       ("apex_toponym_case",lambda d:d["worldHighestSummit"].__setitem__("officialToponym","La Viuda")),
       ("apex_invented_etymology",lambda d:d["worldHighestSummit"].__setitem__("etymology","leyenda inventada")),
+      ("snow_patches_removed",lambda d:d["worldHighestSummit"].__setitem__("snowPersistence",None)),
+      ("snow_does_not_survive_summer",lambda d:d["worldHighestSummit"]["snowPersistenceDetail"].__setitem__("survivesSummer",False)),
+      ("snow_spans_entire_peak",lambda d:d["worldHighestSummit"]["snowPersistenceDetail"].__setitem__("continuousBlanketOverEntireSummit",True)),
+      ("snowline_fabricated",lambda d:d["worldHighestSummit"]["snowPersistenceDetail"].__setitem__("fixedSnowlineMeters",2700)),
+      ("glaciers_implicitly_approved",lambda d:d["worldHighestSummit"]["snowPersistenceDetail"].__setitem__("glacierAuthorizationInThisDecision",True)),
+      ("glacier_existence_fabricated",lambda d:d["worldHighestSummit"].__setitem__("glacierPresence",True)),
+      ("snow_generalized_to_all_valkram",lambda d:d["limits"].__setitem__("permanentSnow","confirmed_everywhere")),
       ("glacier_approved",lambda d:d["worldHighestSummit"].__setitem__("glacierPresence",True)),
       ("azor_superior_overwritten",lambda d:d["crossCanon"].__setitem__("superiorCanonFileModified",True))
     ]

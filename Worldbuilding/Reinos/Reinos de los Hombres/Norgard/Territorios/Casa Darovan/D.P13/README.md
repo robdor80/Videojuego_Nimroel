@@ -33,3 +33,5 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 
 - `13_altitud_elyra_autorizada.md`: opción A de Montañas Elyra, cumbres máximas de hasta ~2.600 m, sin inventar un pico individual.
 - `../Datos operativos/darovan_dp13_elyra_altitude_authorial_v0.1.json`: altura orientativa de Elyra por decisión expresa del autor.
+
+- **DAR-DP13-SNOW-01:** opción B de nieve para **la Viuda**: neveros localizados que sobreviven al verano en zonas altas y protegidas. No afirma glaciares, cota de nieve, ni permanencia nival general de Valkram.

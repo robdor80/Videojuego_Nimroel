@@ -179,3 +179,14 @@ Acta vinculante: `../Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`. La pob
 
 **Contratos:** `D.P13/12_altitud_valkram_autorizada.md`, `D.P13/13_altitud_elyra_autorizada.md` y JSON de decisión autoral correspondientes, con nuevas pruebas negativas. Las referencias previas a topónimo o alturas UNKNOWN son actas históricas anteriores y quedan resueltas en estos dos puntos, sin modificar D01–D12.
 
+
+## Decisión autoral DAR-DP13-SNOW-01 — Neveros permanentes en la Viuda (25/10/2026)
+
+**APROBADA — opción B.** En **la Viuda**, cumbre septentrional de los Montes Valkram (~4.200 m), **existen acumulaciones de nieve (neveros) que sobreviven al verano en sectores altos y protegidos**. Se confirma la persistencia localizada de nieve de un año a otro; **no** se afirma que todo el pico permanezca nevado ni que exista un límite altitudinal de nieve uniforme para el conjunto de Valkram.
+
+**No se han aprobado glaciares** con esta decisión. Su existencia real sigue **UNKNOWN**, no debe darse por demostrada ni descartada definitivamente sin otra decisión autoral. No se fijan tamaños, volúmenes, espesores, cotas de aparición, localización métrica de neveros, fechas de deshielo ni caudales. La aportación hídrica por fusión es una **posibilidad causal derivada**, no un nuevo nacimiento de río ni una cuantificación.
+
+**Fuente autoral:** elección expresa de opción B a la pregunta 3 de D.P13, 25 de octubre de 2026.
+
+**Registro estructurado:** `Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json` → `worldHighestSummit.snowPersistence` y `snowPersistenceDetail`. Referencias anteriores a «nieve permanente UNKNOWN» en registros históricos quedan parcialmente superadas **solo para la Viuda**; el régimen del resto de Valkram/Elyra permanece por definir.
+

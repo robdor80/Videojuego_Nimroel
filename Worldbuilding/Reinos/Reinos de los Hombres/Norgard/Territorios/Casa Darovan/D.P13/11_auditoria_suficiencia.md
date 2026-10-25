@@ -45,3 +45,7 @@ La reserva previa «sin alturas de Valkram» es **histórica y parcialmente resu
 ## Resoluciones canónicas adicionales — 25/10/2026
 
 **la Viuda** queda aprobada como topónimo oficial de la cima de ~4.200 m del norte de Valkram, récord absoluto de Norgard. **Elyra, opción A**, queda aprobada para cumbres de hasta ~2.600 m. Son anclas expresamente aprobadas por el autor y almacenadas en los contratos de elevación; el resto de las cotas y geometrías sigue UNKNOWN. Validez documental, sin runtime ni mapa de alturas. 
+
+## Decisión de nieve aprobada con posterioridad a la auditoría
+
+`DAR-DP13-SNOW-01` confirma **neveros localizados que sobreviven al verano en la Viuda**, únicamente en zonas altas y resguardadas. Las incógnitas nival-métricas restantes y la existencia de glaciares no se resuelven. Se incorpora al JSON autoral y la batería negativa sin suponer un sistema físico en runtime.
