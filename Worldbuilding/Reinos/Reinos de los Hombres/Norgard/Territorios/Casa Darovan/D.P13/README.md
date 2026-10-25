@@ -49,3 +49,6 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 
 - `17_altitud_syvaris_autorizada.md`: ciudad de Syvaris, núcleo principal junto a bahía, opción A **0–40 m**, sin extrapolar al relieve de la isla.
 - `../Datos operativos/darovan_dp13_syvaris_elevation_authorial_v0.1.json`: contrato autoral y guardas de puerto, jurisdicción y ecosistemas.
+
+- `18_altitud_maxima_isla_syvaris_autorizada.md`: opción A para **máximo altitudinal de la isla** entre ~200 y 400 m, separada de la cota urbana 0–40 m.
+- `../Datos operativos/darovan_dp13_syvaris_island_relief_authorial_v0.1.json`: contrato autoral del máximo del relieve insular sin terreno generado.

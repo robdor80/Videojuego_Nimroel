@@ -345,7 +345,84 @@ def validate_syvaris_authorial(record, d01, d07):
     demand((TERR/"D.P13"/"17_altitud_syvaris_autorizada.md").is_file(),
            "Syvaris decision documentation missing")
 
+def validate_syvaris_island_maximum(record, urban_record, d01, d07):
+    demand(record["schemaVersion"] == 1
+           and record["documentId"] == "darovan_dp13_syvaris_island_maximum_elevation_authorial"
+           and record["authority"] == "AUTHORED_AUTHOR_DECISION"
+           and record["authorDecisionId"] == "DAR-DP13-ISLAND-ALT-01"
+           and record["authorDecisionDate"] == "2026-10-25",
+           "Syvaris island decision")
+    demand(record["geographyId"] == "syvaris_island"
+           and record["geographyName"] == "isla de Syvaris"
+           and record["adminOwner"] == "casa_darovan"
+           and record["selectedOption"] == "A",
+           "Syvaris island identity")
+    demand(record["approximateHighestNaturalElevationBandMeters"] == {"min":200,"max":400}
+           and record["semantics"] ==
+           "the_islands_maximum_height_lies_approximately_within_this_band_not_a_uniform_elevation_of_hills",
+           "Syvaris island maximum band")
+    demand(all(record[k] is None for k in
+           ("exactMaximumElevationMeters","highestSummitOfficialName",
+            "highestSummitCoordinates","elevatedAreasPolygon","terrainHeightmap",
+            "generalizedSnowClimateInference","permanentSnow")),
+           "No fabricated summit coordinates or snow")
+    demand(record["specificHillsAndCliffElevations"] == []
+           and record["officialMountainPeakInstances"] == [],
+           "No specific summits or terrain measurements")
+    demand(record["separateCityAltitude"] == {
+           "cityId":"syvaris","urbanCoreBandMetersApprox":{"min":0,"max":40},
+           "cityDecisionId":"DAR-DP13-CITY-ALT-04"},
+           "Distinguish city and island maximum")
+    demand(urban_record["urbanAltitudeReferenceBandMetersApprox"] == {"min":0,"max":40}
+           and urban_record["islandMaximumElevationMeters"] is None,
+           "Preserve the exact UNKNOWN and urban core")
+    demand(record["protectedPreexistingCanon"] == {
+           "cityAtMainBay":True,"drierNorthCentralSectors":True,
+           "greenerSouth":True,"discontinuousSmallForests":True,"notDesert":True,
+           "islandIsNorgard":True,"administeredByDarovan":True},
+           "Syvaris source canon")
+    demand(record["implementation"] == {
+           "georeferencedMap":False,"terrainCreated":False,
+           "worldStateRuntime":False,"changedPriorPhases":False},
+           "Syvaris island non-runtime")
+    demand([c["id"] for c in d01["cityAnchors"] if c["id"]=="syvaris"] == ["syvaris"]
+           and d07["manualCityIds"] == ["treihord","veldora","taramin","syvaris"],
+           "Syvaris D01/D07 continuity")
+    for source in record["sourcePaths"]:
+        demand((ROOT/source).is_file(),"Syvaris island source missing "+source)
+    demand((TERR/"D.P13"/"18_altitud_maxima_isla_syvaris_autorizada.md").is_file(),
+           "Syvaris island documentation missing")
+
 def run():
+    syvaris_island=load(DATA/"darovan_dp13_syvaris_island_relief_authorial_v0.1.json")
+    syvaris_urban=load(DATA/"darovan_dp13_syvaris_elevation_authorial_v0.1.json")
+    sd01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
+    sd07=load(DATA/"darovan_d07_canonical_cities_v0.1.json")
+    validate_syvaris_island_maximum(syvaris_island,syvaris_urban,sd01,sd07)
+    syvaris_island_mutations=[
+      ("wrong_island",lambda d:d.__setitem__("geographyId","arven")),
+      ("wrong_option",lambda d:d.__setitem__("selectedOption","B")),
+      ("maximum_below_approved_band",lambda d:d["approximateHighestNaturalElevationBandMeters"].__setitem__("min",100)),
+      ("maximum_above_approved_band",lambda d:d["approximateHighestNaturalElevationBandMeters"].__setitem__("max",700)),
+      ("exact_height_invented",lambda d:d.__setitem__("exactMaximumElevationMeters",300)),
+      ("invented_peak_name",lambda d:d.__setitem__("highestSummitOfficialName","Pico de la Isla")),
+      ("invented_peak_position",lambda d:d.__setitem__("highestSummitCoordinates",[1,2])),
+      ("whole_island_urban_band",lambda d:d["separateCityAltitude"]["urbanCoreBandMetersApprox"].__setitem__("max",400)),
+      ("invented_landform",lambda d:d["officialMountainPeakInstances"].append("new")),
+      ("fabricated_heightmap",lambda d:d.__setitem__("terrainHeightmap",[[200,300]])),
+      ("fabricated_snow",lambda d:d.__setitem__("permanentSnow",True)),
+      ("wrong_south_green",lambda d:d["protectedPreexistingCanon"].__setitem__("greenerSouth",False)),
+      ("invented_runtime",lambda d:d["implementation"].__setitem__("terrainCreated",True)),
+      ("misrepresented_mean",lambda d:d.__setitem__("semantics","average_elevation_of_island"))
+    ]
+    for label,change in syvaris_island_mutations:
+        altered=copy.deepcopy(syvaris_island)
+        change(altered)
+        try:
+            validate_syvaris_island_maximum(altered,syvaris_urban,sd01,sd07)
+        except AssertionError:
+            continue
+        raise AssertionError("Syvaris island maximum mutation accepted "+label)
     syvaris=load(DATA/"darovan_dp13_syvaris_elevation_authorial_v0.1.json")
     sd01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
     sd07=load(DATA/"darovan_d07_canonical_cities_v0.1.json")
@@ -553,7 +630,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)+len(syvaris_island_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()
