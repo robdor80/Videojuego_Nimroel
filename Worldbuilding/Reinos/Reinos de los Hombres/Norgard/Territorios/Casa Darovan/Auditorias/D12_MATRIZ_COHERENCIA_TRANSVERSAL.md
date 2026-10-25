@@ -3,7 +3,7 @@
 
 | ID | Cruce | Contrato verificable | Evidencia | Prueba D12 |
 |---|---|---|---|---|
-| C01 | D00/D01/D02/D06/D07/D08/D09/D10/D11 | Cuatro ciudades manuales, Karsath excluida | Anchors JSON + \`manualCityIds\` + proyección | Igualdad de IDs, orden y exclusiones |
+| C01 | D00/D01/D02/D06/D07/D08/D09/D10/D11 | Cuatro ciudades manuales, Karsath excluida | Anchors JSON + `manualCityIds` + proyección | Igualdad de IDs, orden y exclusiones |
 | C02 | D00/D01/D02/D03/D07/D10 | Belara adyacente, no cruza Treihord | Treihord original, JSON D00–D10 | Booleanos y contradicción negativa |
 | C03 | D02/D03/D06/D07/D11 | Cinco ríos, cuatro sistemas | D02 ríos/sistemas + proyección | Coincidencia exacta |
 | C04 | D02/D05 | Grafo fluvial topológico NO red de transporte | D02 15 nodos/11 aristas, D05 | Existencia extremos; tipo no cartográfico |
@@ -14,7 +14,7 @@
 | C09 | D06/D07 | 9 modelos no crean ciudades manuales ni aldeas reales | generator y city index | 9 modelos, sin WorldState |
 | C10 | D07/D08 | Aprobaciones Veldora B / Taramin A / Syvaris A SOLO conceptuales | Actas D07 | Sin creación de rutas/edificios/población |
 | C11 | D00/D07/D08/D10 | Treihord conserva ocho barrios y unos 32.000 habitantes | Treihord original, D00 y D10 | Cantidad y guardrail |
-| C12 | D08/D11 | Rangos Veldora 29–35k, Taramin 14–20k, ciudad Syvaris 7–10k, total 300–450k | Actas D08, \`territoryPopulation\` | Valores, sin \`populationApprox\` inventado |
+| C12 | D08/D11 | Rangos Veldora 29–35k, Taramin 14–20k, ciudad Syvaris 7–10k, total 300–450k | Actas D08, `territoryPopulation` | Valores, sin `populationApprox` inventado |
 | C13 | D08 | Medias urbanas 3–5, rurales 4–6; edades 30/60/10; urbano 35–45 %, rural 55–65 % | Lote autoral D08 | Intervalos; suma edades 100; sin censo |
 | C14 | D09/D10 | Corona suprema, ley única, Armada de Norgard | Grandes Casas, D09, D10 | Seguridad, legislación, banderas |
 | C15 | D10/D11 | Arven es Darovan, identidad cultural UNKNOWN | Decisión 21/10, D10, proyección | Null / UNKNOWN; negativo adversarial |

@@ -1,9 +1,9 @@
 # D12 — Acta de cierre territorial de Casa Darovan
 **Fecha de inicio:** 25/10/2026. **Naturaleza:** auditoría documental y técnica, no aprobación creativa.
-**Estado inicial de esta acta:** CIERRE CONDICIONADO a la CI final de la PR Draft D12 y a la revisión del autor.
+**Dictamen técnico A:** FAVORABLE para cierre documental y técnico territorial, con reservas explícitas y sin fusión automática. **No significa Darovan jugable**. Se requiere autorización del autor para fusionar la PR.
 
 ## A. ¿Puede cerrarse el ciclo documental D00–D12?
-**Dictamen técnico condicionado:** Los datos y contratos de D00–D11 constituyen una base territorial coherente, con once fuentes congeladas, decisiones autorales conservadas, cuatro ciudades manuales, protección hidrográfica y límites de simulación declarados. Para recomendar cierre documental/técnico D12 sin reservas críticas debe superarse íntegramente D01–D12 en Windows/Linux, incluidas pruebas C++ D11, y quedar resuelta cualquier nueva incidencia crítica.
+**Dictamen técnico favorable tras primera CI integral:** Los datos y contratos de D00–D11 constituyen una base territorial coherente, con once fuentes congeladas, decisiones autorales conservadas, cuatro ciudades manuales, protección hidrográfica y límites de simulación declarados. Para recomendar cierre documental/técnico D12 sin reservas críticas debe superarse íntegramente D01–D12 en Windows/Linux, incluidas pruebas C++ D11, y quedar resuelta cualquier nueva incidencia crítica.
 
 No se afirma que todas las incertidumbres de canon estén resueltas, que el terreno esté cartografiado a escala verificable ni que el territorio sea jugable.
 
@@ -21,4 +21,5 @@ No se afirma que todas las incertidumbres de canon estén resueltas, que el terr
 - No abrir automáticamente D13, una fase de CoreRPG o de Nimroel.
 
 ## Resultado y trazabilidad
-El veredicto **DEFINTIVO** debe constar en una adenda fechada a este documento tras conocer CI real del HEAD final de D12, con IDs de runs, sistemas operativos, incidencias y conclusión A/B/C. Hasta entonces, esta acta es un marco técnico condicionado, NO aceptación final ni cierre autoral.
+**Evidencia de validación inicial de la PR #38:** [GitHub Actions #40178146688](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40178146688), HEAD `71fdb5b44bb5c83056cf21dd3a7d841e148b6df6`, SUCCESS en Windows 2022 y Ubuntu 24.04. Se leyeron automáticamente 162 archivos territoriales (131 MD, 19 JSON), se verificaron 282 referencias de fuente y se rechazaron 17 mutaciones negativas D12. Regresiones D01–D11 y validación del contrato CoreRPG superadas; 23 negativas D11 rechazadas; C++ y CTest D11 superados en ambos sistemas operativos.
+**Condición administrativa final:** este acta describe el resultado probado en el HEAD indicado; tras cualquier commit posterior, debe existir nuevo CI SUCCESS sobre el HEAD definitivo. La PR conservará en su descripción el enlace a esa CI. NO constituye permiso del autor para fusionar.

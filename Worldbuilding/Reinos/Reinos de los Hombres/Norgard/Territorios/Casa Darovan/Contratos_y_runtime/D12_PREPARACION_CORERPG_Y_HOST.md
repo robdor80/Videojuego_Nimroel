@@ -13,15 +13,15 @@
 | Población/hogares/profesiones | D08: intervalos y reglas orientativas, sin censos/personas | Contratos semánticos y tests estáticos; CoreRPG generic population/relations preexistentes NO son hogar Darovan | CORE-REQ-D11-02: residencia, parentesco, empleo, propiedad, turnos, traslado con conservación de identidad |
 | Gobierno/fiscalidad/seguridad | D09: límites competenciales, autoridades, categorías fiscales | Tests estáticos, NO motor fiscal/judicial | CORE-REQ-D11-04: autoridad, permisos, libro mayor, jurisdicción y recursos |
 | Cultura/NPC/vida social | D10: 17 elecciones, límites de atribución, Arven UNKNOWN | Tests estáticos, NO personalidad social de Darovan | CORE-REQ-D11-06: personalidad individual no esencialista, conocimiento, hechos, relaciones y consecuencias |
-| Acontecimientos | D11 T01–T08: especificaciones de situaciones futuras | NO ejecutadas: \`SPECIFICATION_NOT_EXECUTED\` | CORE-REQ-D11-05: reloj, eventos, determinismo, continuidad, snapshots |
+| Acontecimientos | D11 T01–T08: especificaciones de situaciones futuras | NO ejecutadas: `SPECIFICATION_NOT_EXECUTED` | CORE-REQ-D11-05: reloj, eventos, determinismo, continuidad, snapshots |
 | Catálogo/persistencia | D11: manifest+5 defs+11 locks+8 fixtures | C++ real de catálogo con binding/save-load sintético y esquemas Core 0.1.0; CI D11 verde en ambos SO | Adaptador semántico del sidecar; secuencia de migración/persistencia de contenido |
 | Host 2D | NIM-06 merge PR #27 en main 24/10 | Bridge genérico GDExtension; CI y comprobaciones propias NIM-06, NO prueba de Darovan | NIM-HOST-D11-01: integración del pack, preflight de versión/locks, escenarios en MSI y Tab S9+ |
 
 ## Qué puede consumirse ya SIN atribuir simulación
-1. \`ContentPacks/darovan-territory/pack\`: identificadores estables y enlaces tipados (contrato Core 0.1.0).
-2. \`authoring/projection-v0.1.json\`: sidecar Nimroel para preflight, reglas/guardrails y trazabilidad. CoreRPG no acepta directamente ese objeto como ResourceDefinition.
+1. `ContentPacks/darovan-territory/pack`: identificadores estables y enlaces tipados (contrato Core 0.1.0).
+2. `authoring/projection-v0.1.json`: sidecar Nimroel para preflight, reglas/guardrails y trazabilidad. CoreRPG no acepta directamente ese objeto como ResourceDefinition.
 3. Índices D00–D10 como fuentes de diseño y validación, manteniendo UNKNOWN y PROPOSAL.
-4. \`fixtures/d11-scenarios-v0.1.json\` SOLO como especificación futura, nunca evidencia de juego.
+4. `fixtures/d11-scenarios-v0.1.json` SOLO como especificación futura, nunca evidencia de juego.
 
 ## Dependencias y estrategia futura (no autorizadas para ejecutar ahora)
 - **P1 — CORE-REQ-D11-01/02/03**: recursos, hogares, movimiento; definir APIs genéricas reutilizables, pruebas temporales y de persistencia, sin codificar Darovan dentro de CoreRPG.
