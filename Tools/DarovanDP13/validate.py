@@ -229,8 +229,8 @@ def validate_veldora_authorial(record, d01, d07):
     demand(record["settlementId"] == "veldora" and
            record["type"] == "canonical_city" and
            record["role"] == "darovan_primary_commercial_seaport" and
-           record["selectedOption"] == "B","Veldora identity and option")
-    demand(record["urbanAltitudeReferenceBandMetersApprox"] == {"min":0,"max":150}
+           record["selectedOption"] == "A","Veldora identity and option")
+    demand(record["urbanAltitudeReferenceBandMetersApprox"] == {"min":0,"max":60}
            and record["referenceType"] == "approximate_general_coastal_urban_site_not_every_street",
            "Veldora urban elevation range")
     demand(all(record[k] is None for k in
@@ -265,9 +265,10 @@ def run():
     validate_veldora_authorial(veldora,vd01,vd07)
     veldora_mutations=[
       ("veldora_wrong_city",lambda d:d.__setitem__("settlementId","treihord")),
-      ("veldora_wrong_option",lambda d:d.__setitem__("selectedOption","A")),
+      ("veldora_wrong_option",lambda d:d.__setitem__("selectedOption","B")),
       ("veldora_wrong_min",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("min",30)),
       ("veldora_wrong_max",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("max",250)),
+      ("veldora_previous_B_band",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("max",150)),
       ("veldora_invented_port_height",lambda d:d.__setitem__("portDockElevationsMeters",2)),
       ("veldora_fake_city_height",lambda d:d.__setitem__("urbanAltitudeSingleValueMeters",50)),
       ("veldora_named_back_river",lambda d:d.__setitem__("riverBehindCityIdentity","lhera")),

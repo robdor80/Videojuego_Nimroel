@@ -9,10 +9,10 @@
   "settlementId": "veldora",
   "type": "canonical_city",
   "role": "darovan_primary_commercial_seaport",
-  "selectedOption": "B",
+  "selectedOption": "A",
   "urbanAltitudeReferenceBandMetersApprox": {
     "min": 0,
-    "max": 150
+    "max": 60
   },
   "referenceType": "approximate_general_coastal_urban_site_not_every_street",
   "urbanAltitudeSingleValueMeters": null,
@@ -30,7 +30,7 @@
   "autoralAnchorNotes": [
     "Veldora es una ciudad costera del Golfo de Veldora con puerto comercial marítimo principal",
     "Los muelles marítimos se relacionan con el nivel del mar, sin fijar su cota de obra ni ubicación precisa",
-    "La banda urbana 0–150 m permite zonas de mayor elevación tierra adentro, sin que se cartografíen barrios ni vías",
+    "La banda urbana 0–60 m permite zonas de mayor elevación tierra adentro, sin que se cartografíen barrios ni vías",
     "El cauce situado detrás de la ciudad en el perfil visual no queda identificado por esta decisión",
     "Lhera y Veldora son dos ríos canónicos distintos que desembocan en el Golfo de Veldora, sin conexión inventada"
   ],
@@ -47,5 +47,19 @@
   "createsNewInfrastructure": false,
   "changesCanonicalRivers": false,
   "createsNewDistricts": false,
-  "legacyPhaseFilesModified": false
+  "legacyPhaseFilesModified": false,
+  "decisionCorrection": {
+    "note": "La opción A (0–60 m) fue aprobada expresamente por el autor en la conversación D.P13. Corrige una anotación previa de opción B (0–150 m), no apoyada por esta aprobación.",
+    "authorApprovedOption": "A",
+    "authorApprovedBandMeters": {
+      "min": 0,
+      "max": 60
+    },
+    "outdatedRecordedOption": "B",
+    "outdatedBandMeters": {
+      "min": 0,
+      "max": 150
+    },
+    "date": "2026-10-25"
+  }
 }

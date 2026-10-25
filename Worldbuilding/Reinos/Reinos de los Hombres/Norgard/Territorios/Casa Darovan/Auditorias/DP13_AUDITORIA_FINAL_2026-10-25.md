@@ -64,7 +64,7 @@ El topónimo **la Viuda** reemplaza la reserva del nombre para la cumbre máxima
 
 ## Anexo autoral de nieve en la Viuda (25/10/2026)
 
-Decisión **DAR-DP13-SNOW-01**, **opción B**: neveros persistentes durante el verano en sectores altos y resguardados de **la Viuda** (~4.200 m, norte de Valkram). Se corrige únicamente la incógnita de persistencia nival local para esta cumbre, sin geometría, nieve perpetua en toda la cordillera, cotas de nieve ni afirmación de glaciares. Se actualizan los contratos y las pruebas de canon. La auditoría de suficiencia territorial general mantiene sus reservas de materialización.
+Decisión **DAR-DP13-SNOW-01**, **opción A**: neveros persistentes durante el verano en sectores altos y resguardados de **la Viuda** (~4.200 m, norte de Valkram). Se corrige únicamente la incógnita de persistencia nival local para esta cumbre, sin geometría, nieve perpetua en toda la cordillera, cotas de nieve ni afirmación de glaciares. Se actualizan los contratos y las pruebas de canon. La auditoría de suficiencia territorial general mantiene sus reservas de materialización.
 
 ## DAR-DP13-PASS-01 — Altitudes orientativas de los principales pasos de Valkram (25/10/2026)
 
@@ -86,9 +86,13 @@ Documento: `D.P13/14_altitud_treihord_autorizada.md`; contrato: `Datos operativo
 
 ## DAR-DP13-CITY-ALT-02 — Altitud urbana orientativa de Veldora (25/10/2026)
 
-**OPCIÓN B APROBADA POR EL AUTOR:** el emplazamiento general de **Veldora** tiene un rango altitudinal aproximado de **0–150 m s. n. m.**, que admite una franja litoral baja y zonas interiores más elevadas sin fijar cotas individuales. La ciudad permanece como **principal puerto comercial marítimo de Darovan en el Golfo de Veldora**.
+**OPCIÓN B APROBADA POR EL AUTOR:** el emplazamiento general de **Veldora** tiene un rango altitudinal aproximado de **0–60 m s. n. m.**, que admite una franja litoral baja y zonas interiores más elevadas sin fijar cotas individuales. La ciudad permanece como **principal puerto comercial marítimo de Darovan en el Golfo de Veldora**.
 
 No se asignan alturas a muelles, calles, barrios, mar, mareas, lechos o desembocaduras fluviales. Los ríos **Lhera** y **Veldora** conservan su independencia; la identidad del cauce mostrado tras la ciudad en el perfil visual sigue **UNKNOWN (DAR-P07)**. El dato de autor no es un levantamiento topográfico ni genera infraestructura, poblaciones, rutas o WorldState.
 
 Documento: `D.P13/15_altitud_veldora_autorizada.md`. JSON: `Datos operativos/darovan_dp13_veldora_elevation_authorial_v0.1.json`. Decisión destinada a D.P16/D.P18 sin iniciarlas.
 
+
+## Rectificación de la banda altitudinal de Veldora — 25/10/2026
+
+La decisión autoral **DAR-DP13-CITY-ALT-02** es **opción A, de 0–60 m** para el núcleo urbano principal. La versión que anotaba **opción B (0–150 m)** fue una discrepancia de registro y queda expresamente invalidada, sin modificar el canon hidrológico ni las fases previas. El dato autoral es aproximado, no cartografía métrica.

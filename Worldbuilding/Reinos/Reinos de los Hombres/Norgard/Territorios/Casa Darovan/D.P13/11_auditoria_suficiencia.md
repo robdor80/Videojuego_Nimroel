@@ -70,9 +70,13 @@ Documento: `D.P13/14_altitud_treihord_autorizada.md`; contrato: `Datos operativo
 
 ## DAR-DP13-CITY-ALT-02 — Altitud urbana orientativa de Veldora (25/10/2026)
 
-**OPCIÓN B APROBADA POR EL AUTOR:** el emplazamiento general de **Veldora** tiene un rango altitudinal aproximado de **0–150 m s. n. m.**, que admite una franja litoral baja y zonas interiores más elevadas sin fijar cotas individuales. La ciudad permanece como **principal puerto comercial marítimo de Darovan en el Golfo de Veldora**.
+**OPCIÓN B APROBADA POR EL AUTOR:** el emplazamiento general de **Veldora** tiene un rango altitudinal aproximado de **0–60 m s. n. m.**, que admite una franja litoral baja y zonas interiores más elevadas sin fijar cotas individuales. La ciudad permanece como **principal puerto comercial marítimo de Darovan en el Golfo de Veldora**.
 
 No se asignan alturas a muelles, calles, barrios, mar, mareas, lechos o desembocaduras fluviales. Los ríos **Lhera** y **Veldora** conservan su independencia; la identidad del cauce mostrado tras la ciudad en el perfil visual sigue **UNKNOWN (DAR-P07)**. El dato de autor no es un levantamiento topográfico ni genera infraestructura, poblaciones, rutas o WorldState.
 
 Documento: `D.P13/15_altitud_veldora_autorizada.md`. JSON: `Datos operativos/darovan_dp13_veldora_elevation_authorial_v0.1.json`. Decisión destinada a D.P16/D.P18 sin iniciarlas.
 
+
+## Corrección de Veldora en el cierre de suficiencia
+
+La opción vigente aprobada es **A, 0–60 m** para el núcleo urbano principal de Veldora, y no la opción B/0–150 m que aparecía en el registro provisional. Sin cambios a los ríos Lhera/Veldora, puerto o microaltitudes UNKNOWN.
