@@ -154,3 +154,7 @@ No modifica el curso del **Belara**, que pasa junto a Treihord sin atravesarlo. 
 
 Documentación: `D.P13/21_piedemonte_occidental_valkram_autorizado.md`. Contrato: `Datos operativos/darovan_dp13_valkram_west_foothills_authorial_v0.1.json`. D.P18 queda pendiente.
 
+
+## Elecciones restantes de D.P13 cerradas
+
+Ver `D.P13/22_cierre_delegado_preguntas_y_opciones.md` y su contrato JSON; las bandas altitudinales y reglas son **diseño delegado**, sin sustituir mediciones ni datos espaciales. El capítulo conserva sus premisas e incertidumbres.

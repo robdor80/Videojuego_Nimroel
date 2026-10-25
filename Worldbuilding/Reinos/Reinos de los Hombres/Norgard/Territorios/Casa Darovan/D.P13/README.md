@@ -61,3 +61,6 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 
 - `21_piedemonte_occidental_valkram_autorizado.md`: elevaciones características **400–900 m** (B), distintas de las cumbres, pasos y Treihord.
 - `../Datos operativos/darovan_dp13_valkram_west_foothills_authorial_v0.1.json`: banda autoral y guardas del canon físico de Valkram.
+
+- `22_cierre_delegado_preguntas_y_opciones.md`: elecciones Q13–Q28 del asistente por delegación autoral, cuatro bandas altitudinales y doce reglas ambientales, sin atribuciones falsas.
+- `../Datos operativos/darovan_dp13_delegated_decisions_authorized_v0.1.json`: opciones, procedencia, guardas y reservas materiales.

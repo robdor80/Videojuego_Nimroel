@@ -97,3 +97,7 @@ Continúa siendo una isla de Norgard administrada por Darovan, con **puerto segu
 
 **Documentos:** `D.P13/17_altitud_syvaris_autorizada.md` y `Datos operativos/darovan_dp13_syvaris_elevation_authorial_v0.1.json`. D.P16/D.P18 pendientes, sin runtime.
 
+
+## Elecciones restantes de D.P13 cerradas
+
+Ver `D.P13/22_cierre_delegado_preguntas_y_opciones.md` y su contrato JSON; las bandas altitudinales y reglas son **diseño delegado**, sin sustituir mediciones ni datos espaciales. El capítulo conserva sus premisas e incertidumbres.

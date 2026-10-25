@@ -30,3 +30,7 @@ Rechazar ciudad extra, Karsath adscrita, Arven sin Darovan, Belara cruzando Trei
 ## Pruebas posteriores a D.P13
 
 Los contratos solo demostrarán consistencia documental. Para declarar juego real hacen falta terreno de producción, resolución espacial CoreRPG, GDExtension, representación 2D Godot y ensayos físicos Windows x64/Android ARM64; fuera del alcance de esta fase.
+
+## Elecciones restantes de D.P13 cerradas
+
+Ver `D.P13/22_cierre_delegado_preguntas_y_opciones.md` y su contrato JSON; las bandas altitudinales y reglas son **diseño delegado**, sin sustituir mediciones ni datos espaciales. El capítulo conserva sus premisas e incertidumbres.

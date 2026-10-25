@@ -54,3 +54,7 @@ Fuentes originales prioritarias: [relieve de Norgard](https://github.com/robdor8
 
 Se mantiene el **Bosque del Manto Verde** (aproximadamente **90 %** de Arven, continuo y principalmente de coníferas), las aldeas concentradas principalmente en la costa interior orientada al Golfo de Veldora, la caza y la gestión maderera limitada. Se conserva la jurisdicción de **Casa Darovan**. Sin alturas de aldeas, geometría, manantiales, nuevos caminos o gameplay runtime. Ver `D.P13/19_altitud_maxima_isla_arven_autorizada.md` y `Datos operativos/darovan_dp13_arven_island_relief_authorial_v0.1.json`.
 
+
+## Elecciones restantes de D.P13 cerradas
+
+Ver `D.P13/22_cierre_delegado_preguntas_y_opciones.md` y su contrato JSON; las bandas altitudinales y reglas son **diseño delegado**, sin sustituir mediciones ni datos espaciales. El capítulo conserva sus premisas e incertidumbres.

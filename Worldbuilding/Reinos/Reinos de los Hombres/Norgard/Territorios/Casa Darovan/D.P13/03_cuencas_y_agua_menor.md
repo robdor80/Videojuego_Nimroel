@@ -51,7 +51,7 @@ Fuentes originales prioritarias: [relieve de Norgard](https://github.com/robdor8
 
 ## DAR-DP13-CITY-ALT-02 — Altitud urbana orientativa de Veldora (25/10/2026)
 
-**OPCIÓN A APROBADA POR EL AUTOR:** el emplazamiento general de **Veldora** tiene un rango altitudinal aproximado de **0–150 m s. n. m.**, que admite una franja litoral baja y zonas interiores más elevadas sin fijar cotas individuales. La ciudad permanece como **principal puerto comercial marítimo de Darovan en el Golfo de Veldora**.
+**OPCIÓN A APROBADA POR EL AUTOR:** el emplazamiento general de **Veldora** tiene un rango altitudinal aproximado de **0–60 m s. n. m.**, que admite una franja litoral baja y zonas interiores más elevadas sin fijar cotas individuales. La ciudad permanece como **principal puerto comercial marítimo de Darovan en el Golfo de Veldora**.
 
 No se asignan alturas a muelles, calles, barrios, mar, mareas, lechos o desembocaduras fluviales. Los ríos **Lhera** y **Veldora** conservan su independencia; la identidad del cauce mostrado tras la ciudad en el perfil visual sigue **UNKNOWN (DAR-P07)**. El dato de autor no es un levantamiento topográfico ni genera infraestructura, poblaciones, rutas o WorldState.
 
@@ -63,4 +63,11 @@ Documento: `D.P13/15_altitud_veldora_autorizada.md`. JSON: `Datos operativos/dar
 **APROBADO POR EL AUTOR:** el **núcleo urbano principal de Taramin** tiene una banda altitudinal de referencia aproximada de **0–40 m s. n. m.**. No define una altitud exacta de barrios, muelles, nivel de agua, pendientes o plano georreferenciado. Mantiene un único **Thalen** con **dos brazos terminales** entre los que se sitúa la ciudad; las conexiones físicas, navegabilidad y emplazamiento exacto de estructuras permanecen UNKNOWN. No se crea isla, puente, vía, canal, puerto adicional ni escenario de inundación.
 
 Documento: `D.P13/16_altitud_taramin_autorizada.md`. Registro: `Datos operativos/darovan_dp13_taramin_elevation_authorial_v0.1.json`. La cifra es una decisión autoral y no una topografía métrica ejecutada; no inicia D.P16/D.P18.
+
+
+## Cierre delegado de preguntas Q13–Q28 — 25/10/2026
+
+El autor concede autonomía expresa al asistente para escoger las opciones recomendadas de todas las preguntas pendientes. Se registran **16 opciones B (Q13–Q28)**, de las cuales cuatro son nuevas referencias altitudinales: **valles interiores de Valkram 700–1.300 m**, **pasos principales de Elyra 900–1.500 m**, **valles interiores de Elyra 400–900 m**, **lomas del ámbito forestal meridional de Taramin fuera de Elyra 150–500 m**. Las restantes protegen condiciones climáticas, agua menor, suelo, vegetación y riesgos sin inventar mediciones.
+
+Las decisiones son del **asistente por delegación** y no respuestas individuales dadas por el autor; en ningún caso suponen geometría métrica, vientos medidos, glaciares, cauces ubicados o simulación CoreRPG/Godot. Documentación: `D.P13/22_cierre_delegado_preguntas_y_opciones.md`; datos: `Datos operativos/darovan_dp13_delegated_decisions_authorized_v0.1.json`. D.P14 y fases posteriores siguen sin iniciar; PR #39 Draft, main sin fusionar.
 
