@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_arven_island_maximum_elevation_authorial",
+  "version": "0.1.0",
+  "phase": "D.P13",
+  "authority": "AUTHORED_AUTHOR_DECISION",
+  "authorDecisionId": "DAR-DP13-ISLAND-ALT-02",
+  "authorDecisionDate": "2026-10-25",
+  "geographyId": "arven_island",
+  "geographyName": "isla de Arven",
+  "adminOwner": "casa_darovan",
+  "selectedOption": "B",
+  "approximateHighestNaturalElevationBandMeters": {
+    "min": 250,
+    "max": 500
+  },
+  "semantics": "island_natural_maximum_lies_approximately_within_band_not_all_hills_or_villages",
+  "exactMaximumElevationMeters": null,
+  "highestSummitOfficialName": null,
+  "highestSummitCoordinates": null,
+  "elevatedAreasPolygon": null,
+  "terrainHeightmap": null,
+  "specificHillOrCliffElevations": [],
+  "officialPeakInstances": [],
+  "villageAltitudeMeters": null,
+  "villageCoordinates": [],
+  "coastLevelMetrics": null,
+  "watercoursesOrSpringsCreated": [],
+  "rainfallOrTemperatureMeasured": null,
+  "permanentSnow": null,
+  "protectedPreexistingCanon": {
+    "islandFacesGolfoDeVeldora": true,
+    "islandPartOfNorgard": true,
+    "administeredByDarovan": true,
+    "mainForestName": "Bosque del Manto Verde",
+    "forestCoverApproxPercent": 90,
+    "forestContinuous": true,
+    "forestDominantlyConifers": true,
+    "villagesExist": true,
+    "villagesConcentratedOnInnerCoastFacingGulf": true,
+    "forestHuntingImportant": true,
+    "loggingLimited": true
+  },
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/00_Control_del_proyecto/DECISIONES_Y_BLOQUEOS.md"
+  ],
+  "authorBasis": "Pregunta 10 de D.P13: opción B para máxima elevación natural aproximada de toda la isla de Arven",
+  "implementation": {
+    "georeferencedMap": false,
+    "terrainCreated": false,
+    "worldStateRuntime": false,
+    "changedPriorPhases": false
+  }
+}
