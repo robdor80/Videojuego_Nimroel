@@ -101,3 +101,8 @@ PR Draft #37 abierta: pack estructural y sidecar con 11 SHA D00–D10, 8 TEST_ON
 ## Actualización vigente D12 — 25/10/2026 (sin reescribir la cronología)
 Comprobación independiente en GitHub: **D00–D11 todas fusionadas** (PR #14/#15/#16/#17/#20/#30/#31/#32/#34/#35/#36/#37); D11 PR #37 merge `028ea86ec69cf2223d0e47b006cbb84554068b91` del 23/10 y Actions postmerge #40031213970 SUCCESS Windows/Linux. La PR #27 NIM-06 se fusionó posteriormente y el HEAD verificado de `main` al inicio D12 es `1865fb7fedb616ef7abdffbb195d3698825d4c8a` (24/10).
 **D12 AUTORIZADA el 25/10/2026; rama de auditoría `audit/darovan-d12-integral`.** Toda línea anterior «D08/D09/D10/D11/D12 no iniciada» o «PR sin fusionar» debe leerse como estado histórico a su fecha. Nuevo estado actual detallado en `ESTADO_VIGENTE_D12.md`. No cambia canon ni el cumplimiento de funciones de CoreRPG. La PR de D12 debe permanecer Draft sin merge hasta autorización del autor.
+
+
+## D.P13 — Desarrollo físico de profundización (25/10/2026)
+
+Tras D12 PR #38 fusionada y rama eliminada, el autor autorizó expresamente ejecutar la profundización D.P13 en su totalidad, con desarrollo autónomo y sin merge automático. Se creó `feat/darovan-dp13-territorio-fisico` y PR Draft #39 para su revisión. Se añadieron 12 capítulos de geografía, hidrografía, clima, ecosistemas, integración y auditoría; 3 JSON; `Tools/DarovanDP13/validate.py` y CI de dos sistemas. D.P14–D.P18 quedan sin comenzar. Validación definitiva y dictamen de cierre: consultar `../Auditorias/DP13_AUDITORIA_FINAL_2026-10-25.md` y estados GitHub Actions del último commit de PR #39. Ningún resultado documental acredita ejecución de CoreRPG/Godot ni cartografía métrica.
