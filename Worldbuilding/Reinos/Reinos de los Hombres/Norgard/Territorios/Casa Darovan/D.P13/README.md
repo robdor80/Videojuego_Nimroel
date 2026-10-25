@@ -28,5 +28,8 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 
 ## Ampliación autoral de altimetría
 
-- `12_altitud_valkram_autorizada.md`: opción B y cumbre septentrional de ~4.200 m, la más alta de Norgard, con ubicación visual aproximada y sin topónimo nuevo.
+- `12_altitud_valkram_autorizada.md`: opción B y cumbre septentrional de ~4.200 m, la más alta de Norgard, con ubicación visual aproximada y nombre oficial **la Viuda** (DAR-DP13-ALT-03).
 - `../Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json`: anclas elevacionales **AUTHORED**, independientes del perfil de doce zonas todavía sin cotas.
+
+- `13_altitud_elyra_autorizada.md`: opción A de Montañas Elyra, cumbres máximas de hasta ~2.600 m, sin inventar un pico individual.
+- `../Datos operativos/darovan_dp13_elyra_altitude_authorial_v0.1.json`: altura orientativa de Elyra por decisión expresa del autor.

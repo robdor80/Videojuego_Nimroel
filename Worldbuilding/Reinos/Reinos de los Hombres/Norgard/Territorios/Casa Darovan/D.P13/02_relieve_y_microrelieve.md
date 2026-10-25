@@ -73,3 +73,7 @@ Fuentes originales prioritarias: [relieve de Norgard](https://github.com/robdor8
 
 **Registro operativo:** `Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json`. Esta nueva decisión autoral no contradice la protección del perfil antiguo `darovan_dp13_physical_profiles_v0.1.json`, cuyos campos nulos corresponden a zonas de estudio sin cota única, no a las nuevas anclas individuales aprobadas.
 
+
+## Anclas altimétricas aprobadas el 25/10/2026
+
+La cumbre septentrional de Valkram, **la Viuda (~4.200 m)**, es la elevación más alta de Norgard. Las Montañas Elyra tienen cumbres de hasta **~2.600 m** (opción A). Son anclas del autor que no convierten las doce zonas cualitativas D01 en polígonos con cota. Sin nombre adicional para cumbres de Elyra ni límites de nieve fijados.

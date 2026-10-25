@@ -170,3 +170,12 @@ Acta vinculante: `../Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`. La pob
 
 **Registro operativo:** `Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json`. Esta nueva decisión autoral no contradice la protección del perfil antiguo `darovan_dp13_physical_profiles_v0.1.json`, cuyos campos nulos corresponden a zonas de estudio sin cota única, no a las nuevas anclas individuales aprobadas.
 
+
+## Nuevas decisiones autorales de D.P13 — 25/10/2026
+
+**DAR-DP13-ALT-03 — APROBADA:** nombre oficial **«la Viuda»** (grafía exacta facilitada por el autor) para la cumbre excepcional de **~4.200 m**, en el norte de los Montes Valkram, la más alta de Norgard, identificada visualmente entre las letras N y O del título del mapa. El nombre deja de estar UNKNOWN; etimología, coordenadas, glaciar y territorio político preciso siguen UNKNOWN. Tiene prioridad sobre anotaciones anteriores de nombre pendiente.
+
+**DAR-DP13-ALT-04 — APROBADA:** **opción A** para las Montañas Elyra: cumbres más altas de **hasta aproximadamente 2.600 m**. No implica nombrar ni localizar una cumbre concreta, ni fijar toda la altimetría de la península de Taramin. Se conserva el carácter de Elyra como cordillera menor que Valkram, su posición y el alcance no runtime de D.P13.
+
+**Contratos:** `D.P13/12_altitud_valkram_autorizada.md`, `D.P13/13_altitud_elyra_autorizada.md` y JSON de decisión autoral correspondientes, con nuevas pruebas negativas. Las referencias previas a topónimo o alturas UNKNOWN son actas históricas anteriores y quedan resueltas en estos dos puntos, sin modificar D01–D12.
+

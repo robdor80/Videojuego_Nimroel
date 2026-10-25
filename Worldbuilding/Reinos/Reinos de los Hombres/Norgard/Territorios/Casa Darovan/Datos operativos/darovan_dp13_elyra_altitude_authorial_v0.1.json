@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_elyra_altitude_authorial",
+  "version": "0.1.0",
+  "phase": "D.P13",
+  "authority": "AUTHORED_AUTHOR_DECISION",
+  "authorDecisionDate": "2026-10-25",
+  "decisionId": "DAR-DP13-ALT-04",
+  "mountainRange": "Montañas Elyra",
+  "selectedOption": "A",
+  "majorSummitsApproximateUpperElevationMeters": 2600,
+  "boundMeaning": "altura máxima aproximada propuesta para las cumbres más altas de la cordillera; no una cota exacta ni la altura de todas las cimas",
+  "authorSource": "Aprobación expresa del autor en conversación D.P13 (opción A de Elyra)",
+  "exactPeakElevationMeters": null,
+  "officialHighestPeakName": null,
+  "georeferencedPeakPosition": null,
+  "specificPassElevations": null,
+  "exactValleyElevations": null,
+  "glacierPresence": null,
+  "permanentSnow": null,
+  "georeferencedMountainGeometry": null,
+  "relativeCanon": {
+    "valkramHighestSummitName": "la Viuda",
+    "valkramHighestSummitApproxMeters": 4200,
+    "elyraLowerThanValkram": true
+  },
+  "approvedNumberIsMeasuredSurvey": false,
+  "geographySource": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+  "runtime": {
+    "implemented": false,
+    "terrainGeometryCreated": false
+  }
+}

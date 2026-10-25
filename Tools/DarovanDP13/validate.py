@@ -122,7 +122,7 @@ def validate(profiles, hydro, causal, d01, d02, d03, *, check_fs=True):
 
 def validate_authorial_altitudes(record):
     demand(record["schemaVersion"] == 1 and record["authority"] == "AUTHORED_AUTHOR_DECISION","alt authority")
-    demand(record["decisionIds"] == ["DAR-DP13-ALT-01","DAR-DP13-ALT-02"],"author decisions")
+    demand(record["decisionIds"] == ["DAR-DP13-ALT-01","DAR-DP13-ALT-02","DAR-DP13-ALT-03"],"author decisions")
     rg=record["rangeDefinition"]
     demand(rg["mountainRange"] == "Montes Valkram" and rg["option"] == "B","mountain range choice")
     demand(rg["representativeMajorSummitBandMetersApprox"] == {"min":3600,"max":4200},"peak band")
@@ -130,7 +130,8 @@ def validate_authorial_altitudes(record):
     demand(p["mountainRange"] == "Montes Valkram" and p["sector"] == "northern","summit sector")
     demand(p["altitudeMetersApprox"] == 4200 and p["approximation"] is True and p["highestInNorgard"] is True,"absolute high point")
     demand("entre las letras N y O" in p["mapLocator"],"visual map anchor")
-    demand(p["officialToponym"] is None and p["coordinates"] is None and p["administrativeOwnership"] is None,"no fabricated toponym/position")
+    demand(p["officialToponym"] == "la Viuda" and p["toponymAuthority"] == "AUTHORED_AUTHOR_DECISION" and p["toponymApprovedDate"] == "2026-10-25","official authorial summit name")
+    demand(p["coordinates"] is None and p["administrativeOwnership"] is None and p["etymology"] is None,"no fabricated location or origin")
     demand(all(p[k] is None for k in ("exactElevationMeasurement","climateConditions","snowPersistence","glacierPresence")),"unknown mountain conditions")
     demand(record["limits"]["cartographicReferenceIsGeoreferenced"] is False
            and record["limits"]["topographicRuntimeMaterialized"] is False,"not GIS/runtime")
@@ -138,7 +139,41 @@ def validate_authorial_altitudes(record):
            and record["crossCanon"]["superiorCanonFileModified"] is False,"superior document guard")
     demand(record["generatedFeatures"] == [] and record["runtime"] == {"implemented":False,"geometryGenerated":False},"altitude runtime")
 
+def validate_elyra_authorial(record):
+    demand(record["schemaVersion"] == 1 and record["documentId"] == "darovan_dp13_elyra_altitude_authorial","elyra schema")
+    demand(record["authority"] == "AUTHORED_AUTHOR_DECISION"
+           and record["decisionId"] == "DAR-DP13-ALT-04","elyra author approval")
+    demand(record["mountainRange"] == "Montañas Elyra" and record["selectedOption"] == "A","elyra option")
+    demand(record["majorSummitsApproximateUpperElevationMeters"] == 2600
+           and record["approvedNumberIsMeasuredSurvey"] is False,"elyra peak ceiling")
+    demand(all(record[x] is None for x in
+           ["exactPeakElevationMeters","officialHighestPeakName","georeferencedPeakPosition",
+            "specificPassElevations","exactValleyElevations","glacierPresence",
+            "permanentSnow","georeferencedMountainGeometry"]),"elyra uncertainty")
+    demand(record["relativeCanon"] == {"valkramHighestSummitName":"la Viuda",
+           "valkramHighestSummitApproxMeters":4200,"elyraLowerThanValkram":True},"relative canon")
+    demand(record["runtime"] == {"implemented":False,"terrainGeometryCreated":False},"elyra runtime")
+
 def run():
+    elyra=load(DATA/"darovan_dp13_elyra_altitude_authorial_v0.1.json")
+    validate_elyra_authorial(elyra)
+    elyra_mutations=[
+      ("elyra_wrong_option",lambda d:d.__setitem__("selectedOption","B")),
+      ("elyra_wrong_height",lambda d:d.__setitem__("majorSummitsApproximateUpperElevationMeters",3200)),
+      ("elyra_invented_peak",lambda d:d.__setitem__("officialHighestPeakName","Pico de las Lomas")),
+      ("elyra_invented_terrain",lambda d:d.__setitem__("georeferencedMountainGeometry",{"lat":10})),
+      ("elyra_misrepresented_survey",lambda d:d.__setitem__("approvedNumberIsMeasuredSurvey",True)),
+      ("elyra_wrong_relative_canon",lambda d:d["relativeCanon"].__setitem__("valkramHighestSummitName","otro"))
+    ]
+    for label,change in elyra_mutations:
+        test=copy.deepcopy(elyra)
+        change(test)
+        try:
+            validate_elyra_authorial(test)
+        except AssertionError:
+            continue
+        raise AssertionError("Elyra negative mutation not rejected "+label)
+    demand((TERR/"D.P13"/"13_altitud_elyra_autorizada.md").is_file(),"missing Elyra document")
     peak=load(DATA/"darovan_dp13_valkram_altitude_authorial_v0.1.json")
     validate_authorial_altitudes(peak)
     alt_mutations=[
@@ -146,6 +181,8 @@ def run():
       ("apex_location",lambda d:d["worldHighestSummit"].__setitem__("sector","southern")),
       ("apex_owner",lambda d:d["worldHighestSummit"].__setitem__("administrativeOwnership","casa_darovan")),
       ("apex_toponym",lambda d:d["worldHighestSummit"].__setitem__("officialToponym","Pico Nuevo")),
+      ("apex_toponym_case",lambda d:d["worldHighestSummit"].__setitem__("officialToponym","La Viuda")),
+      ("apex_invented_etymology",lambda d:d["worldHighestSummit"].__setitem__("etymology","leyenda inventada")),
       ("glacier_approved",lambda d:d["worldHighestSummit"].__setitem__("glacierPresence",True)),
       ("azor_superior_overwritten",lambda d:d["crossCanon"].__setitem__("superiorCanonFileModified",True))
     ]
@@ -201,7 +238,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)+len(alt_mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()

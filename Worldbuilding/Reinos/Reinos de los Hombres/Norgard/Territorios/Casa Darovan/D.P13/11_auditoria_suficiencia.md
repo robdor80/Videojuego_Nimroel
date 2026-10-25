@@ -41,3 +41,7 @@ El commit de documentación y auditoría `3b77cd9f70f36d1ec49344b941d71a34a6f871
 ## Adenda de altitud aprobada (25-10-2026)
 
 La reserva previa «sin alturas de Valkram» es **histórica y parcialmente resuelta**: escala B de grandes cumbres Valkram (3.600–4.200 m) y máximo absoluto de Norgard de **aprox. 4.200 m** en la cumbre del norte de Valkram entre N/O del rótulo. Otras altitudes, divisorias y geometrías siguen UNKNOWN. Ver `12_altitud_valkram_autorizada.md` y el JSON AUTHORED de altitud. No confundir el dato aprobado con malla métrica ni con climatología medida.
+
+## Resoluciones canónicas adicionales — 25/10/2026
+
+**la Viuda** queda aprobada como topónimo oficial de la cima de ~4.200 m del norte de Valkram, récord absoluto de Norgard. **Elyra, opción A**, queda aprobada para cumbres de hasta ~2.600 m. Son anclas expresamente aprobadas por el autor y almacenadas en los contratos de elevación; el resto de las cotas y geometrías sigue UNKNOWN. Validez documental, sin runtime ni mapa de alturas. 

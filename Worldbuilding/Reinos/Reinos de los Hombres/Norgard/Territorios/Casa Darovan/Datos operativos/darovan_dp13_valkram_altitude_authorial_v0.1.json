@@ -7,7 +7,8 @@
   "authorDecisionDate": "2026-10-25",
   "decisionIds": [
     "DAR-DP13-ALT-01",
-    "DAR-DP13-ALT-02"
+    "DAR-DP13-ALT-02",
+    "DAR-DP13-ALT-03"
   ],
   "rangeDefinition": {
     "mountainRange": "Montes Valkram",
@@ -22,7 +23,7 @@
   },
   "worldHighestSummit": {
     "technicalReferenceId": "dp13_valkram_north_highest_summit",
-    "officialToponym": null,
+    "officialToponym": "la Viuda",
     "mountainRange": "Montes Valkram",
     "sector": "northern",
     "altitudeMetersApprox": 4200,
@@ -34,7 +35,10 @@
     "exactElevationMeasurement": null,
     "climateConditions": null,
     "snowPersistence": null,
-    "glacierPresence": null
+    "glacierPresence": null,
+    "toponymAuthority": "AUTHORED_AUTHOR_DECISION",
+    "toponymApprovedDate": "2026-10-25",
+    "etymology": null
   },
   "limits": {
     "otherSummitExactElevations": "UNKNOWN",
@@ -50,7 +54,7 @@
     "document": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
     "existingDescription": "Montes Azurios se describen como más altos y más abruptos en conjunto",
     "interpretation": "Comparación general de macizos, no certificación de una cumbre individual más alta",
-    "explicitlyAuthoredException": "La cumbre absoluta de Norgard está en el norte de Valkram con unos 4200m",
+    "explicitlyAuthoredException": "La cumbre máxima absoluta de Norgard es la Viuda, en el norte de Valkram, con altitud aproximada de 4200 m",
     "harmonizationPendingAtNorgardScope": true,
     "superiorCanonFileModified": false
   },

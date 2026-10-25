@@ -57,3 +57,7 @@ El commit de documentación y auditoría `3b77cd9f70f36d1ec49344b941d71a34a6f871
 ## Adenda autoral posterior a la auditoría (25-10-2026)
 
 Aprobada en D.P13 opción B de altura de grandes cumbres Valkram (3.600–4.200 m), junto con una **cumbre excepcional de aproximadamente 4.200 m**, récord absoluto de Norgard, localizada visualmente al norte de Valkram entre las letras N y O del rótulo NORGARD. Conservar alturas restantes UNKNOWN y el estado documental/no runtime. La comparación general con Azurios queda pendiente de armonización editorial superior, sin invalidar esta decisión expresa. Ver `D.P13/12_altitud_valkram_autorizada.md`.
+
+## Ampliación de decisiones de altitud — 25/10/2026
+
+El topónimo **la Viuda** reemplaza la reserva del nombre para la cumbre máxima (~4.200 m) del norte de Valkram. La altura orientativa de las cumbres más altas de Elyra queda aprobada en **~2.600 m (A)**. Ninguna supone topografía métrica ni reabre D01–D12. Ver `D.P13/12_altitud_valkram_autorizada.md` y `D.P13/13_altitud_elyra_autorizada.md`.
