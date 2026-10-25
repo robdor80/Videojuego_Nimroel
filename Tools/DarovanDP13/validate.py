@@ -492,7 +492,99 @@ def validate_taramin_hills_authorial(record, d01, elyra, taramin_city):
     demand((TERR/"D.P13"/"20_colinas_norte_centro_taramin_autorizadas.md").is_file(),
            "Missing Taramin hills authored document")
 
+def validate_valkram_west_foothills_authorial(record, d01, valkram, treihord):
+    demand(record["schemaVersion"] == 1 and
+           record["documentId"] == "darovan_dp13_valkram_west_foothills_authorial"
+           and record["authority"] == "AUTHORED_AUTHOR_DECISION"
+           and record["authorDecisionId"] == "DAR-DP13-FOOTHILLS-01"
+           and record["authorDecisionDate"] == "2026-10-25",
+           "Valkram foothills authored contract")
+    demand(record["landformId"] == "valkram_west_foothills"
+           and record["mountainRange"] == "Montes Valkram"
+           and record["direction"] == "western"
+           and record["sourceStudyUnitId"] == "d01_valkram_oeste"
+           and record["option"] == "B",
+           "Valkram western foothills identity")
+    demand(record["characteristicFoothillElevationBandMetersApprox"] == {"min":400,"max":900}
+           and record["semantics"] ==
+           "characteristic_western_foothill_elevations_not_every_slope_valley_or_valkram_summit",
+           "Valkram foothills reference band and proper scope")
+    demand(all(record[k] is None for k in
+           ("zonePolygon","heightmap","uniformHeightMeters",
+            "exactFoothillPeakHeightMeters","individualSlopePercent",
+            "exactRiverElevationsMeters","climateMeasurements",
+            "forestCoverByAltitude","observedSnowlineMeters")),
+           "Valkram foothills no invented geometry or measurements")
+    demand(all(record[k] == [] for k in
+           ("valleyFloorHeightsMeters","roadOrPassLocations","newValleyNames",
+            "newWatercourseNames","newBridgesOrSettlements")),
+           "Valkram foothills no invented features")
+    demand(record["sourceCanonProtection"] == {
+           "valkramMajorSummitsBandMetersApprox":{"min":3600,"max":4200},
+           "valkramHighestPeakName":"la Viuda",
+           "valkramHighestPeakApproxMeters":4200,
+           "valkramPrincipalPassesBandMetersApprox":{"min":1400,"max":2200},
+           "treihordUrbanCoreBandMetersApprox":{"min":150,"max":350},
+           "belaraAdjacentToTreihordNotCrossing":True,
+           "noNewBelaraRiverBranch":True,
+           "noAutomaticPoliticalBoundaryFromRidge":True,
+           "naturalWestwardDescentOnlyConditional":True},
+           "Valkram foothills cross-canon protection")
+    demand(valkram["rangeDefinition"]["representativeMajorSummitBandMetersApprox"] ==
+           {"min":3600,"max":4200}
+           and valkram["worldHighestSummit"]["officialToponym"] == "la Viuda"
+           and valkram["worldHighestSummit"]["altitudeMetersApprox"] == 4200
+           and valkram["principalNaturalPasses"]["approximateElevationBandMeters"] ==
+           {"min":1400,"max":2200}
+           and treihord["urbanAltitudeReferenceBandMetersApprox"] == {"min":150,"max":350},
+           "Foothills preserve other authored altitude contracts")
+    demand(any(z["id"] == "d01_valkram_oeste"
+               for z in d01["physicalUnits"]),"Foothills D01 unit")
+    demand(record["implementation"] == {
+           "worldStateRuntime":False,"georeferencedMap":False,
+           "terrainCreated":False,"olderPhasesModified":False},
+           "Foothills not runtime")
+    for source in record["sourcePaths"]:
+        demand((ROOT/source).is_file(),"Missing foothills source "+source)
+    demand((TERR/"D.P13"/"21_piedemonte_occidental_valkram_autorizado.md").is_file(),
+           "Foothills authorial document missing")
+
 def run():
+    foothills=load(DATA/"darovan_dp13_valkram_west_foothills_authorial_v0.1.json")
+    fd01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
+    fv=load(DATA/"darovan_dp13_valkram_altitude_authorial_v0.1.json")
+    ft=load(DATA/"darovan_dp13_treihord_elevation_authorial_v0.1.json")
+    validate_valkram_west_foothills_authorial(foothills,fd01,fv,ft)
+    foothills_mutations=[
+      ("wrong_range",lambda d:d.__setitem__("mountainRange","Montañas Elyra")),
+      ("wrong_direction",lambda d:d.__setitem__("direction","eastern")),
+      ("wrong_study_unit",lambda d:d.__setitem__("sourceStudyUnitId","d01_taramin_norte_centro")),
+      ("wrong_option",lambda d:d.__setitem__("option","A")),
+      ("wrong_min_elevation",lambda d:d["characteristicFoothillElevationBandMetersApprox"].__setitem__("min",250)),
+      ("wrong_max_elevation",lambda d:d["characteristicFoothillElevationBandMetersApprox"].__setitem__("max",1200)),
+      ("uniform_altitude_misread",lambda d:d.__setitem__("semantics","each_valley_is_at_400_to_900")),
+      ("fabricated_terrain",lambda d:d.__setitem__("heightmap",[[400,900]])),
+      ("fabricated_polygon",lambda d:d.__setitem__("zonePolygon",{"type":"Polygon"})),
+      ("invented_valley_height",lambda d:d["valleyFloorHeightsMeters"].append(500)),
+      ("invented_pass",lambda d:d["roadOrPassLocations"].append("Paso ficticio")),
+      ("invented_belara_branch",lambda d:d["newWatercourseNames"].append("Afluente nuevo")),
+      ("belara_crosses_treihord",lambda d:d["sourceCanonProtection"].__setitem__("belaraAdjacentToTreihordNotCrossing",False)),
+      ("wrong_peak",lambda d:d["sourceCanonProtection"].__setitem__("valkramHighestPeakName","otro")),
+      ("wrong_pass_band",lambda d:d["sourceCanonProtection"]["valkramPrincipalPassesBandMetersApprox"].__setitem__("max",3000)),
+      ("wrong_city_band",lambda d:d["sourceCanonProtection"]["treihordUrbanCoreBandMetersApprox"].__setitem__("min",450)),
+      ("invented_snowline",lambda d:d.__setitem__("observedSnowlineMeters",2500)),
+      ("invented_slope",lambda d:d.__setitem__("individualSlopePercent",30)),
+      ("false_political_border",lambda d:d["sourceCanonProtection"].__setitem__("noAutomaticPoliticalBoundaryFromRidge",False)),
+      ("false_runtime",lambda d:d["implementation"].__setitem__("terrainCreated",True))
+    ]
+    for label,change in foothills_mutations:
+        altered=copy.deepcopy(foothills)
+        change(altered)
+        try:
+            validate_valkram_west_foothills_authorial(altered,fd01,fv,ft)
+        except AssertionError:
+            continue
+        raise AssertionError("Foothills negative mutation accepted "+label)
     taramin_hills=load(DATA/"darovan_dp13_taramin_north_central_hills_authorial_v0.1.json")
     hd01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
     helyra=load(DATA/"darovan_dp13_elyra_altitude_authorial_v0.1.json")
@@ -793,7 +885,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)+len(syvaris_island_mutations)+len(arven_mutations)+len(taramin_hill_mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)+len(syvaris_island_mutations)+len(arven_mutations)+len(taramin_hill_mutations)+len(foothills_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()

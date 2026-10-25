@@ -137,3 +137,12 @@ No modifica la altura del núcleo de Taramin (**0–40 m**), ni la referencia al
 
 **Trazabilidad:** `D.P13/20_colinas_norte_centro_taramin_autorizadas.md` y `Datos operativos/darovan_dp13_taramin_north_central_hills_authorial_v0.1.json`. Sin modificar D01–D12 ni iniciar D.P14–D.P18.
 
+
+## DAR-DP13-FOOTHILLS-01 — Piedemonte occidental de Valkram (25/10/2026)
+
+**APROBACIÓN DEL AUTOR, opción B:** las **elevaciones características de las estribaciones occidentales de los Montes Valkram** se sitúan aproximadamente entre **400 y 900 m s. n. m.** No es un rango uniforme para cada ladera, valle, aldea, ni la cota máxima de la cordillera. Mantiene las cumbres (3.600–4.200 m), **la Viuda (~4.200 m)**, los pasos naturales principales (1.400–2.200 m) y la altura urbana general de **Treihord (150–350 m)** como referencias distintas.
+
+No modifica el curso del **Belara**, que pasa junto a Treihord sin atravesarlo. La unidad `d01_valkram_oeste` sigue siendo un ámbito cualitativo y no una frontera política. No se atribuyen pendientes medidas, bosque altitudinal concreto, nuevos ríos, caminos, pasos, núcleos ni terreno generado.
+
+Documentación: `D.P13/21_piedemonte_occidental_valkram_autorizado.md`. Contrato: `Datos operativos/darovan_dp13_valkram_west_foothills_authorial_v0.1.json`. D.P18 queda pendiente.
+

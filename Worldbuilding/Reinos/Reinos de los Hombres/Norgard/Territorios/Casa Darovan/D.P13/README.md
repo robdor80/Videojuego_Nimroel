@@ -58,3 +58,6 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 
 - `20_colinas_norte_centro_taramin_autorizadas.md`: colinas características del norte/centro de Taramin **300–600 m (B)**, excluyendo Elyra; sin geometría.
 - `../Datos operativos/darovan_dp13_taramin_north_central_hills_authorial_v0.1.json`: banda de cotas de colinas y guardas de canon.
+
+- `21_piedemonte_occidental_valkram_autorizado.md`: elevaciones características **400–900 m** (B), distintas de las cumbres, pasos y Treihord.
+- `../Datos operativos/darovan_dp13_valkram_west_foothills_authorial_v0.1.json`: banda autoral y guardas del canon físico de Valkram.
