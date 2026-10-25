@@ -43,3 +43,6 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 
 - `15_altitud_veldora_autorizada.md`: Veldora opción A; franja urbana de referencia **0–60 m** junto al golfo, sin cotas de muelles ni barrios.
 - `../Datos operativos/darovan_dp13_veldora_elevation_authorial_v0.1.json`: ancla de altitud expresamente aprobada para Veldora.
+
+- `16_altitud_taramin_autorizada.md`: Taramin opción A, referencia de altitud para núcleo urbano principal **0–40 m**, sin nuevos cruces ni infraestructura.
+- `../Datos operativos/darovan_dp13_taramin_elevation_authorial_v0.1.json`: aprobación autoral y guardas del Thalen de dos brazos.

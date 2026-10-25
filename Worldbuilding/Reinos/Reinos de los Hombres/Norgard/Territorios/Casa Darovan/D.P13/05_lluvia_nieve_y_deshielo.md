@@ -91,3 +91,10 @@ Fuentes originales prioritarias: [relieve de Norgard](https://github.com/robdor8
 ## Efectos estacionales posibles de pasos de Valkram (aprobación de 25/10/2026)
 
 Los pasos naturales principales tienen rango orientativo de 1.400–2.200 m por decisión `DAR-DP13-PASS-01`. Nieve/hielo y dificultades por viento son consecuencias potenciales dependientes de tiempo y situación local; no se fijan cierres, fechas ni frecuencias de uso. **No confundir un collado hipotético con un camino existente o una vía de paso materializada.**
+
+## DAR-DP13-CITY-ALT-03 — Taramin, opción A (25/10/2026)
+
+**APROBADO POR EL AUTOR:** el **núcleo urbano principal de Taramin** tiene una banda altitudinal de referencia aproximada de **0–40 m s. n. m.**. No define una altitud exacta de barrios, muelles, nivel de agua, pendientes o plano georreferenciado. Mantiene un único **Thalen** con **dos brazos terminales** entre los que se sitúa la ciudad; las conexiones físicas, navegabilidad y emplazamiento exacto de estructuras permanecen UNKNOWN. No se crea isla, puente, vía, canal, puerto adicional ni escenario de inundación.
+
+Documento: `D.P13/16_altitud_taramin_autorizada.md`. Registro: `Datos operativos/darovan_dp13_taramin_elevation_authorial_v0.1.json`. La cifra es una decisión autoral y no una topografía métrica ejecutada; no inicia D.P16/D.P18.
+

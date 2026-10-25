@@ -258,7 +258,73 @@ def validate_veldora_authorial(record, d01, d07):
     demand((TERR/"D.P13"/"15_altitud_veldora_autorizada.md").is_file(),
            "Veldora decision document missing")
 
+def validate_taramin_authorial(record, d01, d07):
+    demand(record["schemaVersion"] == 1 and
+           record["documentId"] == "darovan_dp13_taramin_elevation_authorial"
+           and record["status"] == "AUTHORED_AUTHOR_DECISION_NOT_GEOMETRY",
+           "Taramin schema and status")
+    demand(record["authorDecisionId"] == "DAR-DP13-CITY-ALT-03"
+           and record["authorDecisionDate"] == "2026-10-25"
+           and record["authority"] == "AUTHORED_AUTHOR_DECISION","Taramin author decision")
+    demand(record["settlementId"] == "taramin" and record["type"] == "canonical_city"
+           and record["role"] == "darovan_fishing_port" and record["selectedOption"] == "A",
+           "Taramin identity and option")
+    demand(record["urbanAltitudeReferenceBandMetersApprox"] == {"min":0,"max":40}
+           and record["referenceType"] == "approximate_main_urban_core_not_every_street_or_dock",
+           "Taramin reference elevations")
+    demand(all(record[x] is None for x in ("singleUrbanAltitudeMeters","cityCenterCoordinates",
+           "portDockElevationMeters","tidalRangeMeters","tidalOrSurgeFloodRiskMeasured",
+           "thalenArmSurfaceHeightsMeters","thalenArmNavigability",
+           "thalenExactRiverChannelCoordinates","bridgeCount","shorelineTopographicSlope",
+           "urbanTerrainRaster","georeferencedCityPlan")),"No invented Taramin measurements")
+    demand(record["neighborhoodElevations"] == [] and record["bridgeLocations"] == []
+           and record["newCanals"] == [] and record["newIslands"] == [],"No invented Taramin objects")
+    demand(record["canonicalGuards"] == {
+           "cityBetweenThalenTerminalArms":True,
+           "thalenOneNamedRiverTwoTerminalArms":True,
+           "armCrossingsOrBridgesUnconfirmed":True,
+           "maritimeAndFluvialFishingAuthored":True,
+           "fishingPortExisting":True,
+           "semiaridPeninsularTransition":True,
+           "noInventedHydroConnections":True}, "Taramin canonical guards")
+    demand(record["implementation"] == {
+           "worldStateRuntime":False,"georeferencedMap":False,
+           "createsInfrastructure":False,"modifiesPriorPhases":False},"Taramin implementation")
+    demand([c["id"] for c in d01["cityAnchors"] if c["id"]=="taramin"] == ["taramin"]
+           and d07["manualCityIds"] == ["treihord","veldora","taramin","syvaris"],
+           "Taramin prior index")
+    for source in record["sourcePaths"]:
+        demand((ROOT/source).is_file(),"Missing Taramin source "+source)
+    demand((TERR/"D.P13"/"16_altitud_taramin_autorizada.md").is_file(),
+           "Missing Taramin decision doc")
+
 def run():
+    taramin=load(DATA/"darovan_dp13_taramin_elevation_authorial_v0.1.json")
+    td01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
+    td07=load(DATA/"darovan_d07_canonical_cities_v0.1.json")
+    validate_taramin_authorial(taramin,td01,td07)
+    taramin_mutations=[
+      ("wrong_city",lambda d:d.__setitem__("settlementId","syvaris")),
+      ("wrong_option",lambda d:d.__setitem__("selectedOption","B")),
+      ("wrong_max",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("max",100)),
+      ("wrong_min",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("min",40)),
+      ("false_dock_height",lambda d:d.__setitem__("portDockElevationMeters",1)),
+      ("false_river_level",lambda d:d.__setitem__("thalenArmSurfaceHeightsMeters",[1,2])),
+      ("false_tide",lambda d:d.__setitem__("tidalRangeMeters",1.2)),
+      ("third_thalen_arm",lambda d:d["canonicalGuards"].__setitem__("thalenOneNamedRiverTwoTerminalArms",False)),
+      ("invented_bridge",lambda d:d["bridgeLocations"].append("fictional_bridge")),
+      ("invented_island",lambda d:d["newIslands"].append("fictional_island")),
+      ("false_flood_risk",lambda d:d.__setitem__("tidalOrSurgeFloodRiskMeasured",True)),
+      ("false_runtime",lambda d:d["implementation"].__setitem__("worldStateRuntime",True))
+    ]
+    for label,change in taramin_mutations:
+        altered=copy.deepcopy(taramin)
+        change(altered)
+        try:
+            validate_taramin_authorial(altered,td01,td07)
+        except AssertionError:
+            continue
+        raise AssertionError("Taramin negative mutation accepted "+label)
     veldora=load(DATA/"darovan_dp13_veldora_elevation_authorial_v0.1.json")
     vd01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
     vd07=load(DATA/"darovan_d07_canonical_cities_v0.1.json")
@@ -410,7 +476,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()
