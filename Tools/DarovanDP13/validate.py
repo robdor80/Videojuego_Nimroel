@@ -217,7 +217,76 @@ def validate_treihord_authorial(record):
            "no infrastructure/runtime/legacy rewrite")
     demand(len(record["sourcePaths"]) >= 3,"treihord provenance")
 
+def validate_veldora_authorial(record, d01, d07):
+    demand(record["schemaVersion"] == 1 and
+           record["documentId"] == "darovan_dp13_veldora_elevation_authorial",
+           "Veldora schema")
+    demand(record["authorDecisionId"] == "DAR-DP13-CITY-ALT-02" and
+           record["authorDecisionDate"] == "2026-10-25" and
+           record["authority"] == "AUTHORED_AUTHOR_DECISION" and
+           record["status"] == "AUTHORED_AUTHOR_DECISION_NOT_GEOMETRY",
+           "Veldora author decision")
+    demand(record["settlementId"] == "veldora" and
+           record["type"] == "canonical_city" and
+           record["role"] == "darovan_primary_commercial_seaport" and
+           record["selectedOption"] == "B","Veldora identity and option")
+    demand(record["urbanAltitudeReferenceBandMetersApprox"] == {"min":0,"max":150}
+           and record["referenceType"] == "approximate_general_coastal_urban_site_not_every_street",
+           "Veldora urban elevation range")
+    demand(all(record[k] is None for k in
+           ("urbanAltitudeSingleValueMeters","cityCenterCoordinates","portDockElevationsMeters",
+            "coastlineCoordinates","quayPositions","tidalRangeMeters","shorelineSlopePercent",
+            "riverBehindCityIdentity","riverMouthToCityGeometry","terrainElevationRaster",
+            "cadastralOrStreetTopography")) and record["neighborhoodElevations"] == [],
+           "Veldora invented measurement, district or river identity")
+    demand("principal puerto comercial marítimo" in record["autoralAnchorNotes"][0] and
+           "no queda identificado" in record["autoralAnchorNotes"][3] and
+           "dos ríos canónicos distintos" in record["autoralAnchorNotes"][4],
+           "Veldora coastal and river guards")
+    demand(record["worldStateRuntimeImplemented"] is False and
+           record["mapGeoreferenced"] is False and
+           record["createsNewInfrastructure"] is False and
+           record["changesCanonicalRivers"] is False and
+           record["createsNewDistricts"] is False and
+           record["legacyPhaseFilesModified"] is False,"Veldora no new terrain")
+    demand([c["id"] for c in d01["cityAnchors"] if c["id"] == "veldora"] == ["veldora"],
+           "D01 Veldora identity")
+    demand(d07["manualCityIds"] == ["treihord","veldora","taramin","syvaris"] and
+           d07["excludedCityIds"] == ["karsath"],"D07 canonical cities")
+    for p in record["sourcePaths"]:
+        demand((ROOT/p).is_file(),"Veldora source missing "+p)
+    demand((TERR/"D.P13"/"15_altitud_veldora_autorizada.md").is_file(),
+           "Veldora decision document missing")
+
 def run():
+    veldora=load(DATA/"darovan_dp13_veldora_elevation_authorial_v0.1.json")
+    vd01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
+    vd07=load(DATA/"darovan_d07_canonical_cities_v0.1.json")
+    validate_veldora_authorial(veldora,vd01,vd07)
+    veldora_mutations=[
+      ("veldora_wrong_city",lambda d:d.__setitem__("settlementId","treihord")),
+      ("veldora_wrong_option",lambda d:d.__setitem__("selectedOption","A")),
+      ("veldora_wrong_min",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("min",30)),
+      ("veldora_wrong_max",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("max",250)),
+      ("veldora_invented_port_height",lambda d:d.__setitem__("portDockElevationsMeters",2)),
+      ("veldora_fake_city_height",lambda d:d.__setitem__("urbanAltitudeSingleValueMeters",50)),
+      ("veldora_named_back_river",lambda d:d.__setitem__("riverBehindCityIdentity","lhera")),
+      ("veldora_fake_tide",lambda d:d.__setitem__("tidalRangeMeters",1.8)),
+      ("veldora_new_breakwater",lambda d:d.__setitem__("createsNewInfrastructure",True)),
+      ("veldora_connect_rivers",lambda d:d.__setitem__("changesCanonicalRivers",True)),
+      ("veldora_new_districts",lambda d:d.__setitem__("createsNewDistricts",True)),
+      ("veldora_false_georeference",lambda d:d.__setitem__("mapGeoreferenced",True)),
+      ("veldora_fake_runtime",lambda d:d.__setitem__("worldStateRuntimeImplemented",True)),
+      ("veldora_made_up_street",lambda d:d["neighborhoodElevations"].append({"name":"Barrio inventado","height":120})),
+    ]
+    for label,change in veldora_mutations:
+        tmp=copy.deepcopy(veldora)
+        change(tmp)
+        try:
+            validate_veldora_authorial(tmp,vd01,vd07)
+        except AssertionError:
+            continue
+        raise AssertionError("Veldora negative mutation accepted "+label)
     treihord=load(DATA/"darovan_dp13_treihord_elevation_authorial_v0.1.json")
     validate_treihord_authorial(treihord)
     treihord_mutations=[
@@ -340,7 +409,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()

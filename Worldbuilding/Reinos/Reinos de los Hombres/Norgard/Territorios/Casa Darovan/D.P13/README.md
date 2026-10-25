@@ -40,3 +40,6 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 
 - `14_altitud_treihord_autorizada.md`: banda urbana autoral **150–350 m** (opción A), sin cotas individuales ni plano métrico.
 - `../Datos operativos/darovan_dp13_treihord_elevation_authorial_v0.1.json`: ancla de altitud referencial de Treihord.
+
+- `15_altitud_veldora_autorizada.md`: Veldora opción B; franja urbana de referencia **0–150 m** junto al golfo, sin cotas de muelles ni barrios.
+- `../Datos operativos/darovan_dp13_veldora_elevation_authorial_v0.1.json`: ancla de altitud expresamente aprobada para Veldora.
