@@ -298,7 +298,84 @@ def validate_taramin_authorial(record, d01, d07):
     demand((TERR/"D.P13"/"16_altitud_taramin_autorizada.md").is_file(),
            "Missing Taramin decision doc")
 
+def validate_syvaris_authorial(record, d01, d07):
+    demand(record["schemaVersion"] == 1
+           and record["documentId"] == "darovan_dp13_syvaris_elevation_authorial"
+           and record["status"] == "AUTHORED_AUTHOR_DECISION_NOT_GEOMETRY",
+           "Syvaris schema/status")
+    demand(record["authorDecisionId"] == "DAR-DP13-CITY-ALT-04"
+           and record["authorDecisionDate"] == "2026-10-25"
+           and record["authority"] == "AUTHORED_AUTHOR_DECISION",
+           "Syvaris author decision")
+    demand(record["settlementId"] == "syvaris"
+           and record["type"] == "canonical_city"
+           and record["role"] == "darovan_insular_main_bay_settlement"
+           and record["selectedOption"] == "A","Syvaris city identity and option")
+    demand(record["urbanAltitudeReferenceBandMetersApprox"] == {"min":0,"max":40}
+           and record["referenceType"] == "approximate_main_urban_core_near_bay_not_whole_island",
+           "Syvaris urban elevation band")
+    demand(all(record[x] is None for x in
+           ("oneExactUrbanElevationMeters","mainBayGeometry","cityCenterCoordinates",
+            "harborOrQuayElevationsMeters","islandMaximumElevationMeters",
+            "islandAverageElevationMeters","bayTidalRangeMeters","coastalFloodReturnPeriod",
+            "cliffHeightsMeters","shorelineSlopePercent","urbanTerrainRaster","officialStreetPlan")),
+           "Syvaris speculative measurements forbidden")
+    demand(all(record[x] == [] for x in
+           ("neighborhoodElevations","coveCoordinates","waterSupplySites",
+            "navalFacilityPositions")),"Syvaris fictional specific features")
+    demand(record["canonicalGuards"] == {
+           "islandIsNorgardAndAdministeredByDarovan":True,
+           "cityAtMainBay":True,
+           "minorCovesExistingAsQualitativeFeatures":True,
+           "safePortAlreadyAuthored":True,
+           "norgardNavalPresenceIsRoyalNotPrivateDarovanFleet":True,
+           "southGreenerCenterNorthDrier":True,
+           "scatteredForestNotUniformJungle":True,
+           "noNewPortsOrCoves":True,
+           "noNewNavalFacility":True},"Syvaris source-anchored guards")
+    demand(record["implementation"] ==
+           {"worldStateRuntime":False,"georeferencedMap":False,
+            "newInfrastructure":False,"modifiedPriorPhases":False},
+           "Syvaris is non-runtime")
+    demand([c["id"] for c in d01["cityAnchors"] if c["id"] == "syvaris"] == ["syvaris"]
+           and d07["manualCityIds"] == ["treihord","veldora","taramin","syvaris"],
+           "Syvaris D01/D07 identity")
+    for p in record["sourcePaths"]:
+        demand((ROOT/p).is_file(),"Syvaris source missing "+p)
+    demand((TERR/"D.P13"/"17_altitud_syvaris_autorizada.md").is_file(),
+           "Syvaris decision documentation missing")
+
 def run():
+    syvaris=load(DATA/"darovan_dp13_syvaris_elevation_authorial_v0.1.json")
+    sd01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
+    sd07=load(DATA/"darovan_d07_canonical_cities_v0.1.json")
+    validate_syvaris_authorial(syvaris,sd01,sd07)
+    syvaris_mutations=[
+      ("wrong_city",lambda d:d.__setitem__("settlementId","arven")),
+      ("wrong_option",lambda d:d.__setitem__("selectedOption","B")),
+      ("wrong_minimum",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("min",40)),
+      ("wrong_maximum",lambda d:d["urbanAltitudeReferenceBandMetersApprox"].__setitem__("max",100)),
+      ("whole_island_false_ceiling",lambda d:d.__setitem__("islandMaximumElevationMeters",40)),
+      ("invented_bay_polygon",lambda d:d.__setitem__("mainBayGeometry",{"point":[0,0]})),
+      ("invented_quay_height",lambda d:d.__setitem__("harborOrQuayElevationsMeters",2)),
+      ("invented_street_height",lambda d:d["neighborhoodElevations"].append({"name":"Nuevo","height":20})),
+      ("invented_cove",lambda d:d["coveCoordinates"].append([5,5])),
+      ("invented_water_supply",lambda d:d["waterSupplySites"].append("manantial")),
+      ("private_navy",lambda d:d["canonicalGuards"].__setitem__("norgardNavalPresenceIsRoyalNotPrivateDarovanFleet",False)),
+      ("uniform_jungle",lambda d:d["canonicalGuards"].__setitem__("scatteredForestNotUniformJungle",False)),
+      ("new_naval_facility",lambda d:d["navalFacilityPositions"].append("artificial")),
+      ("invented_tide",lambda d:d.__setitem__("bayTidalRangeMeters",2.5)),
+      ("new_port",lambda d:d["implementation"].__setitem__("newInfrastructure",True)),
+      ("fake_runtime",lambda d:d["implementation"].__setitem__("worldStateRuntime",True))
+    ]
+    for label,change in syvaris_mutations:
+        altered=copy.deepcopy(syvaris)
+        change(altered)
+        try:
+            validate_syvaris_authorial(altered,sd01,sd07)
+        except AssertionError:
+            continue
+        raise AssertionError("Syvaris negative mutation accepted "+label)
     taramin=load(DATA/"darovan_dp13_taramin_elevation_authorial_v0.1.json")
     td01=load(DATA/"darovan_d01_relief_profile_v0.1.json")
     td07=load(DATA/"darovan_d07_canonical_cities_v0.1.json")
@@ -476,7 +553,7 @@ def run():
         raise AssertionError("Negative test did not reject "+label)
     print(f"D.P13 STATIC OK: {len(profiles['zones'])} zones, "
           f"{len(hydro['systems'])} systems, {len(causal['rules'])} causal rules, "
-          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)} negative tests; NO RUNTIME")
+          f"{len(mutations)+len(alt_mutations)+len(elyra_mutations)+len(treihord_mutations)+len(veldora_mutations)+len(taramin_mutations)+len(syvaris_mutations)} negative tests; NO RUNTIME")
 
 if __name__=="__main__":
     run()

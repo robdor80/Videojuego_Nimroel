@@ -46,3 +46,6 @@ En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_
 
 - `16_altitud_taramin_autorizada.md`: Taramin opción A, referencia de altitud para núcleo urbano principal **0–40 m**, sin nuevos cruces ni infraestructura.
 - `../Datos operativos/darovan_dp13_taramin_elevation_authorial_v0.1.json`: aprobación autoral y guardas del Thalen de dos brazos.
+
+- `17_altitud_syvaris_autorizada.md`: ciudad de Syvaris, núcleo principal junto a bahía, opción A **0–40 m**, sin extrapolar al relieve de la isla.
+- `../Datos operativos/darovan_dp13_syvaris_elevation_authorial_v0.1.json`: contrato autoral y guardas de puerto, jurisdicción y ecosistemas.

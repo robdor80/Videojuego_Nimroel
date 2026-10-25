@@ -103,3 +103,12 @@ La decisión autoral **DAR-DP13-CITY-ALT-02** es **opción A, de 0–60 m** para
 
 Documento: `D.P13/16_altitud_taramin_autorizada.md`. Registro: `Datos operativos/darovan_dp13_taramin_elevation_authorial_v0.1.json`. La cifra es una decisión autoral y no una topografía métrica ejecutada; no inicia D.P16/D.P18.
 
+
+## DAR-DP13-CITY-ALT-04 — Syvaris: banda altitudinal aprobada (25/10/2026)
+
+**APROBACIÓN AUTORAL, opción A:** el **núcleo urbano principal de Syvaris** se sitúa aproximadamente entre **0 y 40 metros sobre el nivel del mar**, junto a la bahía principal de la isla. **No** implica que toda Syvaris o sus colinas/calas/acantilados estén por debajo de 40 m; tampoco fija coordenadas, barrios, pendientes, muelles, mareas, inundabilidad, abastecimiento de agua o instalaciones navales.
+
+Continúa siendo una isla de Norgard administrada por Darovan, con **puerto seguro y presencia naval del Reino (no armada privada Darovan)**. Se respetan sus sectores secos y verdes y sus bosques discontinuos, sin inventar infraestructuras, fenómenos, vías, calas adicionales o cartografía métrica.
+
+**Documentos:** `D.P13/17_altitud_syvaris_autorizada.md` y `Datos operativos/darovan_dp13_syvaris_elevation_authorial_v0.1.json`. D.P16/D.P18 pendientes, sin runtime.
+
