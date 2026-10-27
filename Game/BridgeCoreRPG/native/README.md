@@ -47,7 +47,42 @@ esta vertical se limitan a 4096 y son int. No se transportan punteros o spans.
 Admin: create_entity; declare_population(entity,total); materialize(entity,count≤256);
 learn/revoke(observer,subject,kind[,relation_kind,target]); revoke_knowledge(observer).
 FactKind 1 existencia, 2 definición, 3 contención, 4 relación exacta, 5 población,
-6 origen. No hay carga/binding de definiciones en esta versión del puente.
+6 origen.
+
+NIM-07 I2 añade `initialize_v001({api_version:1, files:Dictionary})` únicamente al
+Host privilegiado. `files` contiene exactamente los nueve nombres relativos del
+pack y sus `PackedByteArray`; no admite rutas filesystem, overrides de semilla,
+permisos ni metadatos aportados por jugador. Límites: 64 KiB/documento,
+128 KiB/publicación. El SHA-256 del lock aprobado fija a su vez inventario,
+huellas de archivos, release y conjunto de definiciones; una sustitución con su
+propio lock se rechaza. Los bytes exactos fijados satisfacen los schemas Nimroel
+verificados offline; manifiesto y recursos pasan además por los decoders/schema
+reales de `CoreRPG::ContentJson` antes de construir `ContentCatalog`.
+
+Preparación reproducible: `python Tools/NIM07/stage_pack.py` desde la raíz
+(requiere `Tools/CoreRPG413/requirements.txt`; admite `--core-root`). El driver
+funcional lo ejecuta antes de build/import/regresiones/export. Solo se generan
+nueve JSON ignorados en `Host2D/generated_content/treskal-v001`; los presets
+nativos los incluyen expresamente. Godot lee los bytes desde `res://` con
+FileAccess; C++ nunca recibe esa ruta. Sin staging, V001 falla con código claro.
+
+El catálogo inmutable pertenece a Campaign mediante `shared_ptr<const ...>` y
+sobrevive a copias transaccionales del mundo. Solo se publica la campaña después
+de verificar contenido, bootstrap, Inspector y límites Persistence. Los errores
+`CONTENT_*` conservan campaña/capacidades anteriores; éxito invalida capacidades.
+Se reproduce el fixture y `remember` del test upstream, sin tiradas de prueba RNG.
+La sesión del observador 6 se abre sin permisos de acción; el 7 tiene conocimiento
+separado. La presentación recibe exclusivamente contexto de sesión autorizado.
+
+`restore` resuelve definiciones con el catálogo de la campaña ya verificada;
+sin catálogo conserva el comportamiento neutral. Esto prepara el mecanismo Core,
+**no valida compatibilidad externa de saves V001**: publicación/contexto original
+y almacenamiento atómico de metadatos siguen pendientes de I4. El controlador
+rechaza save/load de V001 y no ofrece botones de continuidad entre procesos.
+`diagnostics` añade conteos privilegiados de catálogo y vínculos, nunca usados
+como contexto del jugador. Core, godot-cpp y jsoncons mantienen los SHAs fijados.
+ContentJson y HashingContext se habilitan solo en el puente funcional; el laboratorio
+legado conserva ContentJson OFF y su perfil de clases original.
 Los códigos Core se preservan como `core_status` ordinal del enum upstream; cada
 operación está identificada por el esquema y sus tipos en el informe de contratos.
 

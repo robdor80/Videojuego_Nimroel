@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.25)
 project(NimroelCoreRPGBridge LANGUAGES CXX)
 # Production and reference lab share pins, ABI and binding profile.
+set(NIMROEL_CONTENT_JSON ON)
+set(NIMROEL_BUILD_PROFILE "${CMAKE_CURRENT_SOURCE_DIR}/build_profile.json")
 include(../cmake/dependencies.cmake)
 add_library(nimroel_core SHARED src/bridge.cpp)
-target_link_libraries(nimroel_core PRIVATE CoreRPG::CoreRPG godot::cpp)
+target_link_libraries(nimroel_core PRIVATE CoreRPG::CoreRPG CoreRPG::ContentJson jsoncons godot::cpp)
 target_compile_features(nimroel_core PRIVATE cxx_std_20)
 set_target_properties(nimroel_core PROPERTIES
     CXX_EXTENSIONS OFF CXX_VISIBILITY_PRESET hidden VISIBILITY_INLINES_HIDDEN ON

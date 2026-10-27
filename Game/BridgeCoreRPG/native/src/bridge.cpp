@@ -1,5 +1,10 @@
 // Host-owned authority boundary. No Godot types are stored in the Core world.
 #include <corerpg/action.hpp>
+#include <corerpg/content_catalog.hpp>
+#include <corerpg/content_json/content_document_decoder.hpp>
+#include <corerpg/inspector.hpp>
+#include <jsoncons/json.hpp>
+#include <godot_cpp/classes/hashing_context.hpp>
 #include <corerpg/context_builder.hpp>
 #include <corerpg/persistence.hpp>
 #include <corerpg/simulation.hpp>
@@ -87,10 +92,12 @@ core::PersistenceLimits persistence_limits() {
     return p;
 }
 struct Campaign {
+    std::shared_ptr<const core::ContentCatalog> catalog;
     core::WorldState world;
     core::RandomStreams random;
     explicit Campaign(uint64_t seed) : random(seed) {}
 };
+#include "v001.hpp"
 struct Runtime {
     const std::thread::id owner = std::this_thread::get_id();
     std::mutex mutex;
@@ -263,6 +270,7 @@ class CoreRPGHost : public RefCounted {
 protected:
     static void _bind_methods() {
         ClassDB::bind_method(D_METHOD("initialize","request"), &CoreRPGHost::initialize);
+        ClassDB::bind_method(D_METHOD("initialize_v001","request"), &CoreRPGHost::initialize_v001);
         ClassDB::bind_method(D_METHOD("admin","request"), &CoreRPGHost::admin);
         ClassDB::bind_method(D_METHOD("step","request"), &CoreRPGHost::step);
         ClassDB::bind_method(D_METHOD("open_session","request"), &CoreRPGHost::open_session);
@@ -272,6 +280,15 @@ protected:
         ClassDB::bind_method(D_METHOD("close"), &CoreRPGHost::close);
     }
 public:
+    Dictionary initialize_v001(const Dictionary &d) {
+        return boundary([&] {
+            auto r = runtime_; r->thread(); std::lock_guard lock(r->mutex);
+            schema(d,{"api_version","files"}); version(d);
+            auto candidate = v001::prepare(object(d["files"]));
+            auto out = result(); out["observer"] = int64_t(6);
+            r->replace(std::move(candidate)); return out;
+        });
+    }
     Dictionary initialize(const Dictionary &d) {
         return boundary([&] {
             auto r = runtime_; r->thread(); std::lock_guard lock(r->mutex);
@@ -393,7 +410,8 @@ public:
             if (decoded.status != core::PersistenceStatus::success) return out;
             require(decoded.snapshot && decoded.snapshot->last_entity_id <= max_entities,"WORLD_LIMIT");
             auto candidate = std::make_unique<Campaign>(0);
-            const auto loaded = core::Persistence::restore(*decoded.snapshot,candidate->world,candidate->random,persistence_limits());
+            candidate->catalog = r->campaign ? r->campaign->catalog : nullptr;
+            const auto loaded = core::Persistence::restore(*decoded.snapshot,candidate->world,candidate->random,persistence_limits(),candidate->catalog.get());
             if (loaded != core::PersistenceStatus::success) { out["core_status"] = int64_t(loaded); return out; }
             out = result(); r->replace(std::move(candidate)); return out;
         });
@@ -403,7 +421,9 @@ public:
             auto r = runtime_; r->thread(); std::lock_guard lock(r->mutex); auto out = result();
             out["initialized"] = bool(r->campaign); out["core_version"] = String(core::library_version().data());
             out["core_commit"] = "4f282863737bcd8f5add401202a9e1064c133672";
-            if (r->campaign) { out["revision"] = u64(r->campaign->world.revision()); out["entities"] = int64_t(r->campaign->world.entity_count()); }
+            if (r->campaign) { out["catalog_size"] = int64_t(r->campaign->catalog ? r->campaign->catalog->size() : 0);
+                out["definition_bindings"] = int64_t(core::Persistence::capture(r->campaign->world,r->campaign->random).definitions.size());
+                out["revision"] = u64(r->campaign->world.revision()); out["entities"] = int64_t(r->campaign->world.entity_count()); }
             return out;
         });
     }

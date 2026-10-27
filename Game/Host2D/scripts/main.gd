@@ -29,11 +29,14 @@ var _hint: Label
 var _service_state: Label
 var _mode_button: Button
 var _native_button: Button
+var _v001_button: Button
 var _gemini_button: Button
 var _title: Label
 var _subtitle: Label
 var _native_conversation := NATIVE_CONVERSATION.new()
 var _native_active: bool = false
+var _v001_conversation := NATIVE_CONVERSATION.new(true)
+var _active_conversation: RefCounted = _native_conversation
 var _gemini_diagnostic
 var _provider_diagnostic
 var _tts_diagnostic
@@ -173,6 +176,15 @@ func _build_interface() -> void:
 	_native_button.pressed.connect(_start_native)
 	_entry_dock.add_child(_native_button)
 
+	_v001_button = Button.new()
+	_v001_button.name = "IniciarV001"
+	_v001_button.text = "Iniciar V001 de Treskal (fixture estructural)"
+	_v001_button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	_v001_button.custom_minimum_size.y = 48
+	_v001_button.add_theme_font_size_override("font_size", 14)
+	_v001_button.pressed.connect(_start_v001)
+	_entry_dock.add_child(_v001_button)
+
 	var entry_row := HBoxContainer.new()
 	entry_row.name = "EntradaFila"
 	entry_row.add_theme_constant_override("separation", 8)
@@ -266,6 +278,7 @@ func _update_layout() -> void:
 	_top_info.visible = not _keyboard_compact
 	_footer.visible = not _keyboard_compact
 	_native_button.visible = not _keyboard_compact
+	_v001_button.visible = not _keyboard_compact
 	if is_instance_valid(_provider_row):
 		_provider_row.visible = not _keyboard_compact and not _native_active
 	_sync_portrait_visibility()
@@ -314,7 +327,7 @@ func _send_from_button() -> void:
 
 func _on_send(raw_text: String) -> void:
 	if _native_active:
-		var native_result: Dictionary = _native_conversation.submit_text(raw_text)
+		var native_result: Dictionary = _active_conversation.submit_text(raw_text)
 		if native_result.status == "rejected":
 			_hint.text = native_result.reply
 			return
@@ -434,15 +447,23 @@ func _show_legacy_header() -> void:
 		_provider_row.visible = not _keyboard_compact
 
 func _start_native() -> void:
-	var result: Dictionary = _native_conversation.start()
+	_start_experience(false)
+
+func _start_v001() -> void:
+	_start_experience(true)
+
+func _start_experience(v001: bool) -> void:
+	var conversation: RefCounted = _v001_conversation if v001 else _native_conversation
+	var result: Dictionary = conversation.start()
 	if result.status != "ok":
 		_append_bubble(NATIVE_CONVERSATION.AUTHOR, result.reply, false)
 		_hint.text = "Experiencia nativa no disponible"
 		return
+	_active_conversation = conversation
 	_native_active = true
 	_integration_mode = false
 	_title.text = "NIMROEL  ·  CORERPG"
-	_subtitle.text = "I1  |  PRUEBA ESTRUCTURAL NEUTRA · SIN TRESKAL NI ALDEA V1"
+	_subtitle.text = "I2  |  V001 — FIXTURE ESTRUCTURAL DE TRESKAL" if v001 else "I1  |  PRUEBA ESTRUCTURAL NEUTRA · SIN TRESKAL NI ALDEA V1"
 	_backdrop.hide()
 	_mode_button.text = "Modo: nativo"
 	if is_instance_valid(_gemini_button):
@@ -454,13 +475,17 @@ func _start_native() -> void:
 	_portrait_wanted = false
 	_sync_portrait_visibility()
 	_input.clear()
-	_append_bubble(NATIVE_CONVERSATION.AUTHOR, "Experiencia nativa activa: estructura neutra de laboratorio. No es Treskal ni una aldea V1 generada.\n" + NATIVE_CONVERSATION.HELP, false)
+	if v001:
+		_append_bubble(NATIVE_CONVERSATION.AUTHOR, "V001 — fixture estructural. Observador anónimo de prueba; sin aldea jugable ni identidad canónica.\n" + NATIVE_CONVERSATION.HELP, false)
+	else:
+		_append_bubble(NATIVE_CONVERSATION.AUTHOR, "Experiencia nativa activa: estructura neutra de laboratorio. No es Treskal ni una aldea V1 generada.\n" + NATIVE_CONVERSATION.HELP, false)
 	_append_bubble(NATIVE_CONVERSATION.AUTHOR, result.reply, false)
-	_hint.text = "Misma partida durante esta pantalla · sin guardado I1"
+	_hint.text = "Misma instancia durante esta pantalla · guardado V001 pendiente I4" if v001 else "Misma partida durante esta pantalla · sin guardado I1"
 	call_deferred("_layout_panel_controls")
 
 func _exit_tree() -> void:
 	_native_conversation.close()
+	_v001_conversation.close()
 
 func _append_bubble(author: String, body: String, player: bool) -> void:
 	var row := HBoxContainer.new()

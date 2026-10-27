@@ -6,12 +6,28 @@ const Store = preload("res://scripts/core_save_store.gd")
 var _host: RefCounted
 var _session: RefCounted
 var _request_id: int = 0
+var _v001: bool = false
+
+func _init(use_v001: bool = false) -> void:
+	_v001 = use_v001
 
 func start() -> Dictionary:
 	close()
 	if not ClassDB.class_exists("CoreRPGHost"):
 		return {"status": "unavailable", "error_code": "CORE_NOT_CONNECTED"}
 	_host = ClassDB.instantiate("CoreRPGHost")
+	if _v001:
+		var bundle: Dictionary = preload("res://scripts/v001_pack.gd").read_bundle()
+		if bundle.status != "ok":
+			return bundle
+		var loaded: Dictionary = _host.call("initialize_v001", {"api_version": 1, "files": bundle.files})
+		if loaded.status != "ok":
+			return loaded
+		var opened: Dictionary = _host.call("open_session", {"api_version": 1, "observer": loaded.observer, "audience": "player"})
+		if opened.status != "ok":
+			return opened
+		_session = opened.session
+		return query()
 	var initialized: Dictionary = _host.call("initialize", {"api_version": 1, "seed": "42", "entities": 4})
 	if initialized.status != "ok":
 		return initialized
@@ -36,6 +52,8 @@ func _bind() -> Dictionary:
 func query() -> Dictionary:
 	if _host == null or _session == null:
 		return {"status": "unavailable", "error_code": "WORLD_NOT_STARTED"}
+	if _v001:
+		return _session.call("context", {"api_version": 1})
 	# Política de esta vertical: el jugador observa su propia contención actual.
 	# Core conserva y valida el hecho; no se infiere nada desde la presentación.
 	var learned: Dictionary = _host.call("admin", {"api_version": 1, "operation": "learn", "observer": 1, "subject": 1, "kind": 3})
@@ -54,11 +72,15 @@ func act(operation: String, target: int = 0) -> Dictionary:
 	return Port.submit(proposal, _session)
 
 func save_slot(slot: String = "native_vertical") -> Dictionary:
+	if _v001:
+		return {"status": "rejected", "error_code": "CONTENT_PERSISTENCE_PENDING_I4"}
 	if _host == null:
 		return {"status": "unavailable", "error_code": "WORLD_NOT_STARTED"}
 	return Store.save(_host, slot)
 
 func load_slot(slot: String = "native_vertical") -> Dictionary:
+	if _v001:
+		return {"status": "rejected", "error_code": "CONTENT_PERSISTENCE_PENDING_I4"}
 	if _host == null:
 		return {"status": "unavailable", "error_code": "WORLD_NOT_STARTED"}
 	var loaded := Store.load_save(_host, slot)
