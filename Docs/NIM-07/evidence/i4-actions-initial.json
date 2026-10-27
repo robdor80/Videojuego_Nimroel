@@ -1,0 +1,296 @@
+{
+  "code_sha": "1d5edee3e3a542e41c1c7edccd2eab6983018695",
+  "run_id": 40525522937,
+  "run_url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40525522937",
+  "platforms": {
+    "windows": {
+      "artifact_zip": {
+        "bytes": 37293624,
+        "sha256": "206c5875235e5c823957702b7448954feb9c02401044195c18640128e47802b4"
+      },
+      "reports": {
+        "godot-smoke.txt": [
+          {
+            "suite": "NIM06_FUNCTIONAL_REPORT",
+            "checks": 129,
+            "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+            "errors": [],
+            "ok": true,
+            "scope": "native functional vertical; physical device acceptance separate"
+          }
+        ],
+        "i4-processes.json": {
+          "independent_processes": true,
+          "reports": [
+            {
+              "checks": 16,
+              "device_execution": "NOT TESTED",
+              "errors": [],
+              "ok": true,
+              "phase": "write",
+              "pid": 2800,
+              "proof": {
+                "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+                "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+                "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+                "writer_pid": 2800
+              }
+            },
+            {
+              "checks": 91,
+              "device_execution": "NOT TESTED",
+              "errors": [],
+              "ok": true,
+              "phase": "read",
+              "pid": 6208,
+              "proof": {
+                "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+                "reader_pid": 6208,
+                "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+                "writer_pid": 2800
+              }
+            }
+          ]
+        },
+        "regression-i4-write.txt": [
+          {
+            "suite": "NIM07_I4_REPORT",
+            "checks": 16,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true,
+            "phase": "write",
+            "pid": 2800,
+            "proof": {
+              "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+              "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+              "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+              "writer_pid": 2800
+            }
+          }
+        ],
+        "regression-i4-read.txt": [
+          {
+            "suite": "NIM07_I4_REPORT",
+            "checks": 91,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true,
+            "phase": "read",
+            "pid": 6208,
+            "proof": {
+              "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+              "reader_pid": 6208,
+              "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+              "writer_pid": 2800
+            }
+          }
+        ],
+        "regression-nim07_i2_smoke.txt": [
+          {
+            "suite": "NIM07_I2_REPORT",
+            "checks": 37,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true
+          }
+        ],
+        "regression-nim07_i3_smoke.txt": [
+          {
+            "suite": "NIM07_I3_REPORT",
+            "checks": 51,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true
+          }
+        ],
+        "regression-nim07_smoke.txt": [
+          {
+            "suite": "NIM07_I1_REPORT",
+            "checks": 48,
+            "errors": [],
+            "ok": true,
+            "scope": "main screen; native runtime when available; no physical device test"
+          }
+        ],
+        "windows-binary.json": {
+          "file": "nimroel_core.windows.x86_64.dll",
+          "sha256": "b6e4134a8ac2621f801eb08be0babd59cee1395c6a740e211158b63a72ffcbd4",
+          "bytes": 1741312,
+          "machine": "PE AMD64 (0x8664)"
+        },
+        "windows-corerpg-commit.txt": "4f282863737bcd8f5add401202a9e1064c133672",
+        "windows-godotcpp-commit.txt": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+        "windows-jsoncons-commit.txt": "bcb44594c50c495ee1e690602cdd71455942ad0e",
+        "windows-pack-read.txt": [
+          {
+            "suite": "NIM07_PACK_REPORT",
+            "android_device_execution": false,
+            "files": 9,
+            "ok": true,
+            "source": "Nimroel_NIM06_Functional.pck"
+          }
+        ],
+        "windows-package-execution.txt": [
+          {
+            "suite": "NIM06_FUNCTIONAL_REPORT",
+            "checks": 129,
+            "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+            "errors": [],
+            "ok": true,
+            "scope": "native functional vertical; physical device acceptance separate"
+          }
+        ],
+        "windows-package-i2.txt": [
+          {
+            "suite": "NIM07_I2_REPORT",
+            "checks": 37,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true
+          }
+        ],
+        "windows-package-i3.txt": [
+          {
+            "suite": "NIM07_I3_REPORT",
+            "checks": 51,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true
+          }
+        ],
+        "windows-package-i4-read.txt": [
+          {
+            "suite": "NIM07_I4_REPORT",
+            "checks": 91,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true,
+            "phase": "read",
+            "pid": 3624,
+            "proof": {
+              "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+              "reader_pid": 3624,
+              "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+              "writer_pid": 6656
+            }
+          }
+        ],
+        "windows-package-i4-write.txt": [
+          {
+            "suite": "NIM07_I4_REPORT",
+            "checks": 16,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true,
+            "phase": "write",
+            "pid": 6656,
+            "proof": {
+              "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+              "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+              "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+              "writer_pid": 6656
+            }
+          }
+        ],
+        "windows-package-i4.json": {
+          "independent_processes": true,
+          "reports": [
+            {
+              "checks": 16,
+              "device_execution": "NOT TESTED",
+              "errors": [],
+              "ok": true,
+              "phase": "write",
+              "pid": 6656,
+              "proof": {
+                "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+                "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+                "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+                "writer_pid": 6656
+              }
+            },
+            {
+              "checks": 91,
+              "device_execution": "NOT TESTED",
+              "errors": [],
+              "ok": true,
+              "phase": "read",
+              "pid": 3624,
+              "proof": {
+                "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+                "reader_pid": 3624,
+                "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+                "writer_pid": 6656
+              }
+            }
+          ]
+        },
+        "windows-package.json": {
+          "nimroel_core.windows.x86_64.dll": {
+            "bytes": 1741312,
+            "sha256": "b6e4134a8ac2621f801eb08be0babd59cee1395c6a740e211158b63a72ffcbd4"
+          },
+          "Nimroel_NIM06_Functional.console.exe": {
+            "bytes": 69632,
+            "sha256": "26da30e450d68668992cff319620e6d788fdcfa150534310cffa733a44b6f91c"
+          },
+          "Nimroel_NIM06_Functional.exe": {
+            "bytes": 103055360,
+            "sha256": "9f44a61a9589e5dba56aa5001882d681f4ca6cca992ba3a3a24e23aafddf69af"
+          },
+          "Nimroel_NIM06_Functional.pck": {
+            "bytes": 201284,
+            "sha256": "0c82adceaee2a98081dbe58cd9a87c6e6b37e81087696433d5a5fd179899c778"
+          }
+        },
+        "windows-v001-package.json": {
+          "files": {
+            "content-lock.json": "669891e25821b36a431d0af940aed02c4d40be6b6972cd9466179b686a2cc370",
+            "integration-fixture.json": "f4911bfca2fb705ecde3c35146239d0db4a64648abf6cee21ce301f542eb692a",
+            "manifest.json": "b7f60326997dad03f808798c44d739b48b8a90de56603beccd925db2f3eb06f7",
+            "provenance.json": "3399c71b1f7d7fc4522ac626281c6aea692a206c6a6bc2b756ed7e5c2e170154",
+            "nimroel/model-v1.json": "16ce05f23fb9129ab3198f4594422fc0c4e27774ca1c60abd0669fc5d4b0247a",
+            "resources/capabilities/basic-blacksmithing.json": "fee9d9e431999552fcd3a7395dda433feabf8265696de9e720e9b74c9ff06062",
+            "resources/capabilities/local-tavern.json": "7095cc28907a9707abe038921deffa390e0047da4e2da65be1572b2ffcbc898f",
+            "resources/models/v1.json": "9f6794996a91e00225e5b8f2034782adba2c6be48a734882fe563e121dbccbad",
+            "resources/objects/ordinary-agricultural-tool.json": "660430b148163b5dd4c87cbdb91e1bcac7c6c91baa676383ee109611965f56a1"
+          },
+          "bytes_match": true,
+          "godot_fileaccess_and_native_catalog": true,
+          "scope": "actual Windows PCK mounted in Godot"
+        }
+      },
+      "packages": {
+        "nimroel_core.windows.x86_64.dll": {
+          "bytes": 1741312,
+          "sha256": "b6e4134a8ac2621f801eb08be0babd59cee1395c6a740e211158b63a72ffcbd4"
+        },
+        "Nimroel_NIM06_Functional.console.exe": {
+          "bytes": 69632,
+          "sha256": "26da30e450d68668992cff319620e6d788fdcfa150534310cffa733a44b6f91c"
+        },
+        "Nimroel_NIM06_Functional.exe": {
+          "bytes": 103055360,
+          "sha256": "9f44a61a9589e5dba56aa5001882d681f4ca6cca992ba3a3a24e23aafddf69af"
+        },
+        "Nimroel_NIM06_Functional.pck": {
+          "bytes": 201284,
+          "sha256": "0c82adceaee2a98081dbe58cd9a87c6e6b37e81087696433d5a5fd179899c778"
+        }
+      },
+      "downloaded_payloads_independently_verified": true
+    }
+  },
+  "status": "Initial CI success (both jobs); downloaded Windows evidence only. Superseded by final correction.",
+  "superseding_run_id": 40526909619,
+  "run": {
+    "conclusion": "success",
+    "created_at": "2026-10-27T14:53:33Z",
+    "head_sha": "1d5edee3e3a542e41c1c7edccd2eab6983018695",
+    "html_url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40525522937",
+    "id": 40525522937,
+    "status": "completed",
+    "updated_at": "2026-10-27T15:02:48Z"
+  }
+}

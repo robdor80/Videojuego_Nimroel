@@ -1,0 +1,909 @@
+{
+  "code_sha": "024121dca46c044f9539ebfbab6b177c6fb82a03",
+  "run_id": 40526909619,
+  "run_url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40526909619",
+  "platforms": {
+    "windows": {
+      "artifact_zip": {
+        "bytes": 37294912,
+        "sha256": "11405a403eb5925eafd1acab054110c826af14c4a2fd647efdc3548ea961abf1"
+      },
+      "reports": {
+        "godot-smoke.txt": [
+          {
+            "suite": "NIM06_FUNCTIONAL_REPORT",
+            "checks": 129,
+            "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+            "errors": [],
+            "ok": true,
+            "scope": "native functional vertical; physical device acceptance separate"
+          }
+        ],
+        "i4-processes.json": {
+          "independent_processes": true,
+          "reports": [
+            {
+              "checks": 16,
+              "device_execution": "NOT TESTED",
+              "errors": [],
+              "ok": true,
+              "phase": "write",
+              "pid": 6248,
+              "proof": {
+                "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+                "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+                "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+                "writer_pid": 6248
+              }
+            },
+            {
+              "checks": 97,
+              "device_execution": "NOT TESTED",
+              "errors": [],
+              "ok": true,
+              "phase": "read",
+              "pid": 6024,
+              "proof": {
+                "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+                "reader_pid": 6024,
+                "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+                "writer_pid": 6248
+              }
+            }
+          ]
+        },
+        "regression-i4-read.txt": [
+          {
+            "suite": "NIM07_I4_REPORT",
+            "checks": 97,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true,
+            "phase": "read",
+            "pid": 6024,
+            "proof": {
+              "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+              "reader_pid": 6024,
+              "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+              "writer_pid": 6248
+            }
+          }
+        ],
+        "regression-i4-write.txt": [
+          {
+            "suite": "NIM07_I4_REPORT",
+            "checks": 16,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true,
+            "phase": "write",
+            "pid": 6248,
+            "proof": {
+              "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+              "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+              "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+              "writer_pid": 6248
+            }
+          }
+        ],
+        "regression-nim07_i2_smoke.txt": [
+          {
+            "suite": "NIM07_I2_REPORT",
+            "checks": 37,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true
+          }
+        ],
+        "regression-nim07_i3_smoke.txt": [
+          {
+            "suite": "NIM07_I3_REPORT",
+            "checks": 51,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true
+          }
+        ],
+        "regression-nim07_smoke.txt": [
+          {
+            "suite": "NIM07_I1_REPORT",
+            "checks": 48,
+            "errors": [],
+            "ok": true,
+            "scope": "main screen; native runtime when available; no physical device test"
+          }
+        ],
+        "windows-binary.json": {
+          "file": "nimroel_core.windows.x86_64.dll",
+          "sha256": "019be0c2df7291782b30a5aee981a9c0cd8cb9693cf5bf36cdcb86ea9e89e280",
+          "bytes": 1741312,
+          "machine": "PE AMD64 (0x8664)"
+        },
+        "windows-corerpg-commit.txt": "4f282863737bcd8f5add401202a9e1064c133672",
+        "windows-godotcpp-commit.txt": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+        "windows-jsoncons-commit.txt": "bcb44594c50c495ee1e690602cdd71455942ad0e",
+        "windows-pack-read.txt": [
+          {
+            "suite": "NIM07_PACK_REPORT",
+            "android_device_execution": false,
+            "files": 9,
+            "ok": true,
+            "source": "Nimroel_NIM06_Functional.pck"
+          }
+        ],
+        "windows-package-execution.txt": [
+          {
+            "suite": "NIM06_FUNCTIONAL_REPORT",
+            "checks": 129,
+            "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+            "errors": [],
+            "ok": true,
+            "scope": "native functional vertical; physical device acceptance separate"
+          }
+        ],
+        "windows-package-i2.txt": [
+          {
+            "suite": "NIM07_I2_REPORT",
+            "checks": 37,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true
+          }
+        ],
+        "windows-package-i4-read.txt": [
+          {
+            "suite": "NIM07_I4_REPORT",
+            "checks": 97,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true,
+            "phase": "read",
+            "pid": 2104,
+            "proof": {
+              "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+              "reader_pid": 2104,
+              "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+              "writer_pid": 6556
+            }
+          }
+        ],
+        "windows-package-i3.txt": [
+          {
+            "suite": "NIM07_I3_REPORT",
+            "checks": 51,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true
+          }
+        ],
+        "windows-package-i4-write.txt": [
+          {
+            "suite": "NIM07_I4_REPORT",
+            "checks": 16,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true,
+            "phase": "write",
+            "pid": 6556,
+            "proof": {
+              "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+              "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+              "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+              "writer_pid": 6556
+            }
+          }
+        ],
+        "windows-package-i4.json": {
+          "independent_processes": true,
+          "reports": [
+            {
+              "checks": 16,
+              "device_execution": "NOT TESTED",
+              "errors": [],
+              "ok": true,
+              "phase": "write",
+              "pid": 6556,
+              "proof": {
+                "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+                "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+                "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+                "writer_pid": 6556
+              }
+            },
+            {
+              "checks": 97,
+              "device_execution": "NOT TESTED",
+              "errors": [],
+              "ok": true,
+              "phase": "read",
+              "pid": 2104,
+              "proof": {
+                "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+                "reader_pid": 2104,
+                "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+                "writer_pid": 6556
+              }
+            }
+          ]
+        },
+        "windows-package.json": {
+          "nimroel_core.windows.x86_64.dll": {
+            "bytes": 1741312,
+            "sha256": "019be0c2df7291782b30a5aee981a9c0cd8cb9693cf5bf36cdcb86ea9e89e280"
+          },
+          "Nimroel_NIM06_Functional.console.exe": {
+            "bytes": 69632,
+            "sha256": "26da30e450d68668992cff319620e6d788fdcfa150534310cffa733a44b6f91c"
+          },
+          "Nimroel_NIM06_Functional.exe": {
+            "bytes": 103055360,
+            "sha256": "9f44a61a9589e5dba56aa5001882d681f4ca6cca992ba3a3a24e23aafddf69af"
+          },
+          "Nimroel_NIM06_Functional.pck": {
+            "bytes": 202148,
+            "sha256": "90381d2c1d013aef30340adad19c6f095b47db9f85e239c81c49bc96504dbb5c"
+          }
+        },
+        "windows-v001-package.json": {
+          "files": {
+            "content-lock.json": "669891e25821b36a431d0af940aed02c4d40be6b6972cd9466179b686a2cc370",
+            "integration-fixture.json": "f4911bfca2fb705ecde3c35146239d0db4a64648abf6cee21ce301f542eb692a",
+            "manifest.json": "b7f60326997dad03f808798c44d739b48b8a90de56603beccd925db2f3eb06f7",
+            "provenance.json": "3399c71b1f7d7fc4522ac626281c6aea692a206c6a6bc2b756ed7e5c2e170154",
+            "nimroel/model-v1.json": "16ce05f23fb9129ab3198f4594422fc0c4e27774ca1c60abd0669fc5d4b0247a",
+            "resources/capabilities/basic-blacksmithing.json": "fee9d9e431999552fcd3a7395dda433feabf8265696de9e720e9b74c9ff06062",
+            "resources/capabilities/local-tavern.json": "7095cc28907a9707abe038921deffa390e0047da4e2da65be1572b2ffcbc898f",
+            "resources/models/v1.json": "9f6794996a91e00225e5b8f2034782adba2c6be48a734882fe563e121dbccbad",
+            "resources/objects/ordinary-agricultural-tool.json": "660430b148163b5dd4c87cbdb91e1bcac7c6c91baa676383ee109611965f56a1"
+          },
+          "bytes_match": true,
+          "godot_fileaccess_and_native_catalog": true,
+          "scope": "actual Windows PCK mounted in Godot"
+        }
+      },
+      "packages": {
+        "nimroel_core.windows.x86_64.dll": {
+          "bytes": 1741312,
+          "sha256": "019be0c2df7291782b30a5aee981a9c0cd8cb9693cf5bf36cdcb86ea9e89e280"
+        },
+        "Nimroel_NIM06_Functional.console.exe": {
+          "bytes": 69632,
+          "sha256": "26da30e450d68668992cff319620e6d788fdcfa150534310cffa733a44b6f91c"
+        },
+        "Nimroel_NIM06_Functional.exe": {
+          "bytes": 103055360,
+          "sha256": "9f44a61a9589e5dba56aa5001882d681f4ca6cca992ba3a3a24e23aafddf69af"
+        },
+        "Nimroel_NIM06_Functional.pck": {
+          "bytes": 202148,
+          "sha256": "90381d2c1d013aef30340adad19c6f095b47db9f85e239c81c49bc96504dbb5c"
+        }
+      },
+      "downloaded_payloads_independently_verified": true,
+      "github_artifact_digest_matches": true,
+      "regression_summary": {
+        "regression-i4-read.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-i4-write.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-keyboard_layout_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-native_layout_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim02_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-NIM03.txt": {
+          "tests": 8,
+          "passed": true
+        },
+        "regression-nim03_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-NIM04.txt": {
+          "tests": 29,
+          "passed": true
+        },
+        "regression-nim04_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-NIM05.txt": {
+          "tests": 11,
+          "passed": true
+        },
+        "regression-nim05_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim07_i2_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim07_i3_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim07_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        }
+      }
+    },
+    "android": {
+      "artifact_zip": {
+        "bytes": 32312287,
+        "sha256": "eb73936636915eaacdca5f32a6f1cf3f863d79ee97b70efffc9fab5dd5c3d50c"
+      },
+      "reports": {
+        "android-apk.json": {
+          "sha256": "59605354358d1ada8a4950a2129aa945b4a156fd79fc1d3479b08aeba34f49af",
+          "libraries": [
+            "lib/arm64-v8a/libc++_shared.so",
+            "lib/arm64-v8a/libgodot_android.so",
+            "lib/arm64-v8a/libnimroel_core.android.arm64.so"
+          ],
+          "extension_bytes_match": true,
+          "device_execution": "NOT TESTED",
+          "file": "Nimroel_NIM06_Functional.apk"
+        },
+        "android-binary.json": {
+          "file": "libnimroel_core.android.arm64.so",
+          "sha256": "3dddb0e7a978ad26e6c6def38b24197ef47bd4ea5b67a810ede2aba3339bbeb2",
+          "bytes": 2286696,
+          "machine": "ELF AArch64 (183)",
+          "needed": [
+            "libm.so",
+            "libdl.so",
+            "libc.so"
+          ]
+        },
+        "android-corerpg-commit.txt": "4f282863737bcd8f5add401202a9e1064c133672",
+        "android-godotcpp-commit.txt": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+        "android-jsoncons-commit.txt": "bcb44594c50c495ee1e690602cdd71455942ad0e",
+        "android-pack-read.txt": [
+          {
+            "suite": "NIM07_PACK_REPORT",
+            "android_device_execution": false,
+            "files": 9,
+            "ok": true,
+            "source": "android-v001-assets.zip"
+          }
+        ],
+        "android-v001-package.json": {
+          "files": {
+            "manifest.json": "b7f60326997dad03f808798c44d739b48b8a90de56603beccd925db2f3eb06f7",
+            "content-lock.json": "669891e25821b36a431d0af940aed02c4d40be6b6972cd9466179b686a2cc370",
+            "provenance.json": "3399c71b1f7d7fc4522ac626281c6aea692a206c6a6bc2b756ed7e5c2e170154",
+            "integration-fixture.json": "f4911bfca2fb705ecde3c35146239d0db4a64648abf6cee21ce301f542eb692a",
+            "nimroel/model-v1.json": "16ce05f23fb9129ab3198f4594422fc0c4e27774ca1c60abd0669fc5d4b0247a",
+            "resources/objects/ordinary-agricultural-tool.json": "660430b148163b5dd4c87cbdb91e1bcac7c6c91baa676383ee109611965f56a1",
+            "resources/models/v1.json": "9f6794996a91e00225e5b8f2034782adba2c6be48a734882fe563e121dbccbad",
+            "resources/capabilities/local-tavern.json": "7095cc28907a9707abe038921deffa390e0047da4e2da65be1572b2ffcbc898f",
+            "resources/capabilities/basic-blacksmithing.json": "fee9d9e431999552fcd3a7395dda433feabf8265696de9e720e9b74c9ff06062"
+          },
+          "bytes_match": true,
+          "godot_fileaccess_and_native_catalog": true,
+          "scope": "APK asset ZIP mounted in Linux control; no Android runtime"
+        },
+        "godot-smoke.txt": [
+          {
+            "suite": "NIM06_FUNCTIONAL_REPORT",
+            "checks": 129,
+            "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+            "errors": [],
+            "ok": true,
+            "scope": "native functional vertical; physical device acceptance separate"
+          }
+        ],
+        "i4-processes.json": {
+          "independent_processes": true,
+          "reports": [
+            {
+              "checks": 16,
+              "device_execution": "NOT TESTED",
+              "errors": [],
+              "ok": true,
+              "phase": "write",
+              "pid": 4392,
+              "proof": {
+                "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+                "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+                "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+                "writer_pid": 4392
+              }
+            },
+            {
+              "checks": 97,
+              "device_execution": "NOT TESTED",
+              "errors": [],
+              "ok": true,
+              "phase": "read",
+              "pid": 4402,
+              "proof": {
+                "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+                "reader_pid": 4402,
+                "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+                "writer_pid": 4392
+              }
+            }
+          ]
+        },
+        "linux-binary.json": {
+          "file": "libnimroel_core.linux.x86_64.so",
+          "sha256": "b9ce07f8ff49152fba6eaab1c569a53f4b69f1615304717dd74311ffde0ce83a",
+          "bytes": 3474992,
+          "machine": "ELF x86-64 (62)",
+          "needed": [
+            "libm.so.6",
+            "libc.so.6",
+            "ld-linux-x86-64.so.2"
+          ]
+        },
+        "linux-corerpg-commit.txt": "4f282863737bcd8f5add401202a9e1064c133672",
+        "linux-godotcpp-commit.txt": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+        "linux-jsoncons-commit.txt": "bcb44594c50c495ee1e690602cdd71455942ad0e",
+        "regression-i4-write.txt": [
+          {
+            "suite": "NIM07_I4_REPORT",
+            "checks": 16,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true,
+            "phase": "write",
+            "pid": 4392,
+            "proof": {
+              "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+              "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+              "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+              "writer_pid": 4392
+            }
+          }
+        ],
+        "regression-i4-read.txt": [
+          {
+            "suite": "NIM07_I4_REPORT",
+            "checks": 97,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true,
+            "phase": "read",
+            "pid": 4402,
+            "proof": {
+              "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+              "reader_pid": 4402,
+              "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+              "writer_pid": 4392
+            }
+          }
+        ],
+        "regression-nim07_i2_smoke.txt": [
+          {
+            "suite": "NIM07_I2_REPORT",
+            "checks": 37,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true
+          }
+        ],
+        "regression-nim07_i3_smoke.txt": [
+          {
+            "suite": "NIM07_I3_REPORT",
+            "checks": 51,
+            "device_execution": "NOT TESTED",
+            "errors": [],
+            "ok": true
+          }
+        ],
+        "regression-nim07_smoke.txt": [
+          {
+            "suite": "NIM07_I1_REPORT",
+            "checks": 48,
+            "errors": [],
+            "ok": true,
+            "scope": "main screen; native runtime when available; no physical device test"
+          }
+        ]
+      },
+      "packages": {
+        "Nimroel_NIM06_Functional.apk": {
+          "bytes": 30785403,
+          "sha256": "59605354358d1ada8a4950a2129aa945b4a156fd79fc1d3479b08aeba34f49af"
+        },
+        "Nimroel_NIM06_Functional.apk.idsig": {
+          "bytes": 247226,
+          "sha256": "9886f1e66bfd03d445342ababa71182b5dfadd1a8dd1630d8c971e5998a4dcf3"
+        }
+      },
+      "downloaded_payloads_independently_verified": true,
+      "github_artifact_digest_matches": true,
+      "regression_summary": {
+        "regression-NIM03.txt": {
+          "tests": 8,
+          "passed": true
+        },
+        "regression-NIM04.txt": {
+          "tests": 29,
+          "passed": true
+        },
+        "regression-NIM05.txt": {
+          "tests": 11,
+          "passed": true
+        },
+        "regression-i4-write.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-i4-read.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-keyboard_layout_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-native_layout_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim02_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim03_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim04_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim05_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim07_i2_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim07_i3_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-nim07_smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        },
+        "regression-smoke.txt": {
+          "passed": true,
+          "no_godot_errors": true
+        }
+      },
+      "android_manifest_badging": [
+        "package: name='org.nimroel.rpg.nim06functional' versionCode='7' versionName='0.0.1-nim07-i4' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+        "targetSdkVersion:'36'",
+        "application-label:'Nimroel V001 I4'",
+        "native-code: 'arm64-v8a'"
+      ]
+    }
+  },
+  "jobs": [
+    {
+      "id": 122269401360,
+      "name": "windows native build + verification",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 40526909619,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install pinned build drivers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 5
+        },
+        {
+          "name": "Install exact Godot Android toolchain",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6
+        },
+        {
+          "name": "Build CoreRPG + godot-cpp + extension and verify architecture/link",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Load extension and execute CoreRPG in Windows Godot",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Execute Host regressions and NIM-07 I1/I2/I3/I4 main conversation with native DLL",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Export and execute Windows native package; compare DLL bytes",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Build Linux control for export host (not Android runtime evidence)",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 11
+        },
+        {
+          "name": "Load Linux control in official Godot before export",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 12
+        },
+        {
+          "name": "Run Host regressions and NIM-07 I1/I2/I3/I4 conversation with Linux native control",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13
+        },
+        {
+          "name": "Temporary laboratory debug signing key",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 14
+        },
+        {
+          "name": "Export Android and verify actual extension bytes in arm64 APK",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 15
+        },
+        {
+          "name": "Publish libraries, Host2D project and evidence (including failures)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33
+        }
+      ]
+    },
+    {
+      "id": 122269401639,
+      "name": "android native build + verification",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 40526909619,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install pinned build drivers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Install exact Godot Android toolchain",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Build CoreRPG + godot-cpp + extension and verify architecture/link",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Load extension and execute CoreRPG in Windows Godot",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 8
+        },
+        {
+          "name": "Execute Host regressions and NIM-07 I1/I2/I3/I4 main conversation with native DLL",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 9
+        },
+        {
+          "name": "Export and execute Windows native package; compare DLL bytes",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 10
+        },
+        {
+          "name": "Build Linux control for export host (not Android runtime evidence)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Load Linux control in official Godot before export",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Run Host regressions and NIM-07 I1/I2/I3/I4 conversation with Linux native control",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        },
+        {
+          "name": "Temporary laboratory debug signing key",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14
+        },
+        {
+          "name": "Export Android and verify actual extension bytes in arm64 APK",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        },
+        {
+          "name": "Publish libraries, Host2D project and evidence (including failures)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Post Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30
+        },
+        {
+          "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 12744498215,
+      "name": "NIM06-functional-android-024121dca46c044f9539ebfbab6b177c6fb82a03",
+      "size_in_bytes": 32312287,
+      "url": "https://api.github.com/repos/robdor80/Videojuego_Nimroel/actions/artifacts/12744498215",
+      "archive_download_url": "https://api.github.com/repos/robdor80/Videojuego_Nimroel/actions/artifacts/12744498215/zip",
+      "expired": false,
+      "created_at": "2026-10-27T15:06:41Z",
+      "expires_at": "2026-11-26T15:06:39Z",
+      "updated_at": "2026-10-27T15:06:41Z",
+      "digest": "sha256:eb73936636915eaacdca5f32a6f1cf3f863d79ee97b70efffc9fab5dd5c3d50c",
+      "workflow_run": {
+        "id": 40526909619,
+        "repository_id": 1367185619,
+        "head_repository_id": 1367185619,
+        "head_branch": "feat/nim-07-first-rpg-experience",
+        "head_sha": "024121dca46c044f9539ebfbab6b177c6fb82a03"
+      }
+    },
+    {
+      "id": 12742909763,
+      "name": "NIM06-functional-windows-024121dca46c044f9539ebfbab6b177c6fb82a03",
+      "size_in_bytes": 37294912,
+      "url": "https://api.github.com/repos/robdor80/Videojuego_Nimroel/actions/artifacts/12742909763",
+      "archive_download_url": "https://api.github.com/repos/robdor80/Videojuego_Nimroel/actions/artifacts/12742909763/zip",
+      "expired": false,
+      "created_at": "2026-10-27T15:06:26Z",
+      "expires_at": "2026-11-26T15:06:22Z",
+      "updated_at": "2026-10-27T15:06:26Z",
+      "digest": "sha256:11405a403eb5925eafd1acab054110c826af14c4a2fd647efdc3548ea961abf1",
+      "workflow_run": {
+        "id": 40526909619,
+        "repository_id": 1367185619,
+        "head_repository_id": 1367185619,
+        "head_branch": "feat/nim-07-first-rpg-experience",
+        "head_sha": "024121dca46c044f9539ebfbab6b177c6fb82a03"
+      }
+    }
+  ],
+  "run": {
+    "conclusion": "success",
+    "created_at": "2026-10-27T15:01:51Z",
+    "head_sha": "024121dca46c044f9539ebfbab6b177c6fb82a03",
+    "html_url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40526909619",
+    "id": 40526909619,
+    "status": "completed",
+    "updated_at": "2026-10-27T15:06:45Z"
+  }
+}
