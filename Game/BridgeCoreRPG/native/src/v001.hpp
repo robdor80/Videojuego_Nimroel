@@ -20,7 +20,21 @@ String digest(const std::string &data) {
     require(hash->start(HashingContext::HASH_SHA256) == OK && hash->update(input) == OK, "CONTENT_HASH_FAILURE");
     return hash->finish().hex_encode();
 }
-std::unique_ptr<Campaign> prepare(const Dictionary &files) {
+Dictionary metadata(const Dictionary &files) {
+    // Canonical UTF-8 ASCII recipe, LF including final LF; fixture hash binds ALL
+    // generation parameters, relation kinds, region and upstream recipe versions.
+    const std::string recipe = "nimroel-v001-generation-context/1\n"
+        "recipe=nim07-v001-bootstrap-1\n"
+        "fixture_sha256=" + std::string(digest(bytes(files,"integration-fixture.json")).utf8().get_data()) +
+        "\nworld_seed=413001\nobserver=first-materialized\nrng_bootstrap_draws=0\n";
+    Dictionary out;
+    out["save_schema"] = "1"; out["pack_id"] = "nimroel.treskal.villages";
+    out["pack_version"] = "0.1.0"; out["content_contract"] = "0.1.0";
+    out["release_sha256"] = release_hash; out["definition_set_sha256"] = definition_hash;
+    out["lock_sha256"] = lock_hash; out["generation_context_sha256"] = digest(recipe);
+    return out;
+}
+std::unique_ptr<Campaign> prepare(const Dictionary &files, bool bootstrap = true) {
     require(files.size() == 9, "CONTENT_FILE_SET");
     const auto lock_bytes = bytes(files, "content-lock.json");
     require(digest(lock_bytes) == lock_hash, "CONTENT_UNTRUSTED_RELEASE");
@@ -61,6 +75,7 @@ std::unique_ptr<Campaign> prepare(const Dictionary &files) {
     const auto config = jsoncons::json::parse(bytes(files,"integration-fixture.json"));
     auto candidate = std::make_unique<Campaign>(std::stoull(config.at("world_seed").as<std::string>()));
     candidate->catalog = std::make_shared<const core::ContentCatalog>(*built.catalog());
+    if (!bootstrap) return candidate; // Catalog only: NEVER generate a world on resume.
     auto &world = candidate->world;
     const auto village = world.create_entity(), smith = world.create_entity(), tavern = world.create_entity(),
         external = world.create_entity(), tool = world.create_entity();

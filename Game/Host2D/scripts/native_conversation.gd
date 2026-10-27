@@ -83,6 +83,34 @@ func _submit_v001(text: String) -> Dictionary:
 		return _result("unavailable", "CoreRPG no está disponible: inicia V001 para consultar el conocimiento autorizado.")
 	return format_query(_world.query(), intent, _world.get("_observer"))
 
+func save_game() -> Dictionary:
+	if not _v001 or not _started:
+		return _result("rejected", "Inicia V001 antes de guardar.")
+	var saved: Dictionary = _world.save_slot("treskal")
+	return _result("ok", "Partida V001 guardada. Ya puedes cerrar Nimroel y reanudarla al volver.") if saved.status == "ok" else _save_failure(saved)
+
+func resume_game(backup_only: bool = false) -> Dictionary:
+	if not _v001:
+		return _result("rejected", "La reanudación pertenece a V001.")
+	var context: Dictionary = _world.load_slot("treskal", backup_only)
+	if context.status != "ok":
+		return _save_failure(context)
+	_started = true
+	var presented := _present(context, true)
+	presented["reply"] = ("Partida recuperada desde la copia de seguridad. " if context.get("recovered_backup", false) else "Partida V001 reanudada. ") + presented.reply
+	return presented
+
+static func _save_failure(failure: Dictionary) -> Dictionary:
+	var code: String = failure.get("error_code", "")
+	var explanation := "No se completó el guardado o la recuperación. La partida activa se conserva."
+	if code == "LOAD_OPEN_FAILED":
+		explanation = "No hay una partida guardada disponible. La partida activa se conserva."
+	elif code in ["SAVE_CONTENT_INCOMPATIBLE", "SAVE_SCHEMA_UNSUPPORTED"]:
+		explanation = "La partida guardada no es compatible con esta versión de V001. La partida activa se conserva."
+	elif code in ["SAVE_LIMIT", "SAVE_FORMAT", "SAVE_HEADER", "SAVE_LENGTH", "SAVE_CHECKSUM", "LOAD_REJECTED", "SAVE_EXISTING_INVALID"]:
+		explanation = "El archivo guardado no es válido. Se conserva sin reemplazarlo. Puedes intentar recuperar la copia de seguridad; la partida activa se conserva."
+	return _result("rejected", explanation)
+
 func close() -> void:
 	_world.close()
 	_started = false

@@ -271,6 +271,7 @@ protected:
     static void _bind_methods() {
         ClassDB::bind_method(D_METHOD("initialize","request"), &CoreRPGHost::initialize);
         ClassDB::bind_method(D_METHOD("initialize_v001","request"), &CoreRPGHost::initialize_v001);
+        ClassDB::bind_method(D_METHOD("prepare_v001_restore","request"), &CoreRPGHost::prepare_v001_restore);
         ClassDB::bind_method(D_METHOD("admin","request"), &CoreRPGHost::admin);
         ClassDB::bind_method(D_METHOD("step","request"), &CoreRPGHost::step);
         ClassDB::bind_method(D_METHOD("open_session","request"), &CoreRPGHost::open_session);
@@ -286,6 +287,18 @@ public:
             schema(d,{"api_version","files"}); version(d);
             auto candidate = v001::prepare(object(d["files"]));
             auto out = result(); out["observer"] = int64_t(6);
+            out["metadata"] = v001::metadata(object(d["files"]));
+            r->replace(std::move(candidate)); return out;
+        });
+    }
+    Dictionary prepare_v001_restore(const Dictionary &d) {
+        return boundary([&] {
+            auto r = runtime_; r->thread(); std::lock_guard lock(r->mutex);
+            schema(d,{"api_version","files"}); version(d);
+            const auto files = object(d["files"]);
+            auto candidate = v001::prepare(files, false);
+            auto out = result(); out["metadata"] = v001::metadata(files);
+            out["observer"] = int64_t(6); // First materialized identity in pinned recipe.
             r->replace(std::move(candidate)); return out;
         });
     }

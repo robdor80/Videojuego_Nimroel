@@ -30,6 +30,11 @@ var _service_state: Label
 var _mode_button: Button
 var _native_button: Button
 var _v001_button: Button
+var _resume_entry: Button
+var _save_row: HBoxContainer
+var _save_button: Button
+var _resume_button: Button
+var _backup_button: Button
 var _gemini_button: Button
 var _title: Label
 var _subtitle: Label
@@ -184,6 +189,33 @@ func _build_interface() -> void:
 	_v001_button.add_theme_font_size_override("font_size", 14)
 	_v001_button.pressed.connect(_start_v001)
 	_entry_dock.add_child(_v001_button)
+	_resume_entry = Button.new()
+	_resume_entry.name = "AbrirGuardadoV001"
+	_resume_entry.text = "Reanudar partida V001 guardada"
+	_resume_entry.custom_minimum_size.y = 44
+	_resume_entry.pressed.connect(func(): _start_experience(true, true))
+	_entry_dock.add_child(_resume_entry)
+
+	_save_row = HBoxContainer.new()
+	_save_row.name = "PartidaV001"
+	_entry_dock.add_child(_save_row)
+	_save_button = Button.new()
+	_save_button.name = "GuardarV001"
+	_save_button.text = "Guardar"
+	_save_button.pressed.connect(_save_v001)
+	_resume_button = Button.new()
+	_resume_button.name = "ReanudarV001"
+	_resume_button.text = "Reanudar"
+	_resume_button.pressed.connect(_resume_v001)
+	_backup_button = Button.new()
+	_backup_button.name = "RecuperarCopiaV001"
+	_backup_button.text = "Recuperar copia"
+	_backup_button.tooltip_text = "Recupera explícitamente el guardado anterior; conserva los archivos existentes."
+	_backup_button.pressed.connect(func(): _resume_v001(true))
+	for control in [_save_button, _resume_button, _backup_button]:
+		control.custom_minimum_size.y = 44
+		control.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		_save_row.add_child(control)
 
 	var entry_row := HBoxContainer.new()
 	entry_row.name = "EntradaFila"
@@ -278,7 +310,9 @@ func _update_layout() -> void:
 	_top_info.visible = not _keyboard_compact
 	_footer.visible = not _keyboard_compact
 	_native_button.visible = not _keyboard_compact
+	_resume_entry.visible = not _keyboard_compact and not _native_active
 	_v001_button.visible = not _keyboard_compact
+	_save_row.visible = not _keyboard_compact and _native_active and _active_conversation == _v001_conversation
 	if is_instance_valid(_provider_row):
 		_provider_row.visible = not _keyboard_compact and not _native_active
 	_sync_portrait_visibility()
@@ -411,6 +445,8 @@ func _on_tts_test_finished(result: Dictionary) -> void:
 
 func _toggle_mode() -> void:
 	_native_active = false
+	_save_row.hide()
+	_resume_entry.visible = not _keyboard_compact
 	_integration_mode = not _integration_mode
 	_show_legacy_header()
 	_mode_button.text = "Modo: integración" if _integration_mode else "Modo: demo"
@@ -422,6 +458,8 @@ func _reset_demo() -> void:
 	if not is_instance_valid(_history_messages):
 		return
 	_native_active = false
+	_save_row.hide()
+	_resume_entry.visible = not _keyboard_compact
 	_integration_mode = false
 	_mode_button.text = "Modo: demo"
 	_service_state.text = "MODO MAQUETA   ·   MUNDO NO CARGADO   ·   GEMINI Y CORERPG DESCONECTADOS"
@@ -452,18 +490,19 @@ func _start_native() -> void:
 func _start_v001() -> void:
 	_start_experience(true)
 
-func _start_experience(v001: bool) -> void:
+func _start_experience(v001: bool, resume: bool = false) -> void:
 	var conversation: RefCounted = _v001_conversation if v001 else _native_conversation
-	var result: Dictionary = conversation.start()
+	var result: Dictionary = conversation.resume_game() if resume else conversation.start()
 	if result.status != "ok":
 		_append_bubble(NATIVE_CONVERSATION.AUTHOR, result.reply, false)
 		_hint.text = "Experiencia nativa no disponible"
 		return
+	_resume_entry.hide()
 	_active_conversation = conversation
 	_native_active = true
 	_integration_mode = false
 	_title.text = "NIMROEL  ·  CORERPG"
-	_subtitle.text = "I3  |  V001 — FIXTURE ESTRUCTURAL DE TRESKAL" if v001 else "I1  |  PRUEBA ESTRUCTURAL NEUTRA · SIN TRESKAL NI ALDEA V1"
+	_subtitle.text = "I4  |  V001 — FIXTURE ESTRUCTURAL DE TRESKAL" if v001 else "I1  |  PRUEBA ESTRUCTURAL NEUTRA · SIN TRESKAL NI ALDEA V1"
 	_backdrop.hide()
 	_mode_button.text = "Modo: nativo"
 	if is_instance_valid(_gemini_button):
@@ -480,7 +519,27 @@ func _start_experience(v001: bool) -> void:
 	else:
 		_append_bubble(NATIVE_CONVERSATION.AUTHOR, "Experiencia nativa activa: estructura neutra de laboratorio. No es Treskal ni una aldea V1 generada.\n" + NATIVE_CONVERSATION.HELP, false)
 	_append_bubble(NATIVE_CONVERSATION.AUTHOR, result.reply, false)
-	_hint.text = "Misma instancia durante esta pantalla · guardado V001 pendiente I4" if v001 else "Misma partida durante esta pantalla · sin guardado I1"
+	_hint.text = "Guardar conserva la partida · Reanudar recupera el último guardado" if v001 else "Misma partida durante esta pantalla · sin guardado I1"
+	_backup_button.hide()
+	_save_row.visible = v001 and not _keyboard_compact
+	call_deferred("_layout_panel_controls")
+
+func _save_v001() -> void:
+	if not _native_active or _active_conversation != _v001_conversation:
+		return
+	var result: Dictionary = _v001_conversation.save_game()
+	_append_bubble(NATIVE_CONVERSATION.AUTHOR, result.reply, false)
+	_hint.text = result.reply
+	_backup_button.visible = result.status != "ok"
+	call_deferred("_layout_panel_controls")
+
+func _resume_v001(backup_only: bool = false) -> void:
+	if not _native_active or _active_conversation != _v001_conversation:
+		return
+	var result: Dictionary = _v001_conversation.resume_game(backup_only)
+	_append_bubble(NATIVE_CONVERSATION.AUTHOR, result.reply, false)
+	_hint.text = "Partida recuperada · consultas autorizadas disponibles" if result.status == "ok" else result.reply
+	_backup_button.visible = result.status != "ok"
 	call_deferred("_layout_panel_controls")
 
 func _exit_tree() -> void:
