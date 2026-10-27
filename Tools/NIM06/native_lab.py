@@ -32,9 +32,18 @@ ASSETS = {
 
 def run(args, name=None, cwd=ROOT, extra_env=None, timeout=1200):
     print('+', ' '.join(str(x) for x in args), flush=True)
-    proc = subprocess.run([str(x) for x in args], cwd=cwd, stdout=subprocess.PIPE,
-                          stderr=subprocess.STDOUT, text=True, errors='replace',
-                          env=os.environ | (extra_env or {}), timeout=timeout)
+    try:
+        proc = subprocess.run([str(x) for x in args], cwd=cwd, stdout=subprocess.PIPE,
+                              stderr=subprocess.STDOUT, text=True, errors='replace',
+                              env=os.environ | (extra_env or {}), timeout=timeout)
+    except subprocess.TimeoutExpired as error:
+        output = error.stdout or ''
+        if isinstance(output, bytes):
+            output = output.decode('utf-8', errors='replace')
+        print(output, flush=True)
+        if name:
+            (EVIDENCE / name).write_text(output, encoding='utf-8')
+        raise
     print(proc.stdout, flush=True)
     if name:
         (EVIDENCE / name).write_text(proc.stdout, encoding='utf-8')
@@ -228,7 +237,7 @@ def export_windows():
     assert console.exists()
     tested = run([console, '--headless', '--', '--nim06-self-test'], 'windows-package-execution.txt', cwd=output, timeout=180)
     assert 'NIM06_FUNCTIONAL_REPORT' in tested and '"ok":true' in tested.replace(' ', '') and 'ERROR:' not in tested
-    packaged_i2 = run([console, '--headless', '--script', 'res://tests/nim07_i2_smoke.gd'], 'windows-package-i2.txt', cwd=output, timeout=180)
+    packaged_i2 = run([console, '--headless', '--', '--nim07-i2-self-test'], 'windows-package-i2.txt', cwd=output, timeout=180)
     assert 'NIM-07 I2 SMOKE PASS' in packaged_i2 and 'ERROR:' not in packaged_i2
     verify_v001_package(exe, output / 'Nimroel_NIM06_Functional.pck')
     details = {str(p.relative_to(output)): {'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}

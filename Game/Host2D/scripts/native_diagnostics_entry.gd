@@ -3,6 +3,9 @@ extends Node
 func _ready() -> void:
 	if not ClassDB.class_exists("CoreRPGHost"):
 		return
+	if OS.get_cmdline_user_args().has("--nim07-i2-self-test"):
+		_i2_self_test.call_deferred()
+		return
 	if OS.get_cmdline_user_args().has("--nim06-self-test"):
 		_self_test.call_deferred()
 	var layer := CanvasLayer.new()
@@ -18,3 +21,8 @@ func _ready() -> void:
 func _self_test() -> void:
 	await get_tree().process_frame
 	get_tree().change_scene_to_file("res://native_vertical.tscn")
+
+func _i2_self_test() -> void:
+	await get_tree().process_frame
+	var checks := preload("res://tests/nim07_i2_checks.gd").new()
+	await checks.run(get_tree())
