@@ -87,7 +87,7 @@ static func load_save(host: RefCounted, slot: String) -> Dictionary:
 	return restored
 
 # V001 reuses the slot policy and temporal/backup pattern without changing .core.
-# validate is a bounded envelope/checksum check, never a Core restore.
+# validate checks the envelope and an isolated Core candidate, never the active Host.
 static func commit_package(path: String, bytes: PackedByteArray, validate: Callable) -> Dictionary:
 	var created := DirAccess.make_dir_recursive_absolute(path.get_base_dir())
 	if created != OK:

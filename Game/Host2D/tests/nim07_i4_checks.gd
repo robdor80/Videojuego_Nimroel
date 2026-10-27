@@ -156,6 +156,13 @@ func run(scene_tree: SceneTree, requested_phase: String) -> void:
 		for slot in ["../treskal", "", "a/b", "a\\b", "a.b", "á", "a".repeat(33)]:
 			check(world.save_slot(slot).error_code == "INVALID_SAVE_SLOT" and world.load_slot(slot).error_code == "INVALID_SAVE_SLOT", "slot inseguro rechazado")
 		put(path, original)
+		# Core-invalid but checksum-coherent primary must NOT replace a good backup.
+		put(path + ".bak", original)
+		put(path, wrong_core)
+		check(world.save_slot("treskal").error_code == "SAVE_EXISTING_INVALID" and FileAccess.get_file_as_bytes(path + ".bak") == original and FileAccess.get_file_as_bytes(path) == wrong_core, "Core inválido con checksum coherente no destruye backup")
+		put(path, Save.encode(neutral.call("capture").bytes, installed))
+		check(world.save_slot("treskal").error_code == "SAVE_EXISTING_INVALID" and FileAccess.get_file_as_bytes(path + ".bak") == original, "observador inválido no destruye backup")
+		put(path, original)
 		# Valid overwrite makes backup. Partial temp must never be treated as committed.
 		check(world.save_slot("treskal").status == "ok" and FileAccess.get_file_as_bytes(path + ".bak") == original, "sobrescritura segura conserva backup")
 		put(path + ".tmp", "partial".to_utf8_buffer())

@@ -90,7 +90,26 @@ static func save(host: RefCounted, slot: String, installed: Dictionary) -> Dicti
 	var package := encode(captured.bytes, installed)
 	if decode(package, installed).status != "ok":
 		return Store._error("SAVE_HEADER")
-	return Store.commit_package(path, package, func(p): return read_package(p, installed))
+	# A coherent checksum alone does not make an existing backup candidate GOOD.
+	# Validate Core and observer in isolation before rotating the previous file.
+	var bundle: Dictionary = preload("res://scripts/v001_pack.gd").read_bundle()
+	if bundle.status != "ok":
+		return bundle
+	var verifier: RefCounted = ClassDB.instantiate("CoreRPGHost")
+	var prepared: Dictionary = verifier.call("prepare_v001_restore", {"api_version": 1, "files": bundle.files})
+	if prepared.status != "ok":
+		return prepared
+	if prepared.metadata != installed:
+		return Store._error("SAVE_CONTENT_INCOMPATIBLE")
+	var validate := func(p: String) -> Dictionary:
+		var loaded := read_package(p, installed)
+		if loaded.status != "ok":
+			return loaded
+		var checked: Dictionary = verifier.call("restore", loaded.bytes)
+		if checked.status != "ok":
+			return checked
+		return verifier.call("open_session", {"api_version": 1, "observer": prepared.observer, "audience": "player"})
+	return Store.commit_package(path, package, validate)
 
 static func load_save(host: RefCounted, slot: String, installed: Dictionary, backup_only: bool = false) -> Dictionary:
 	var path := path_for(slot)
