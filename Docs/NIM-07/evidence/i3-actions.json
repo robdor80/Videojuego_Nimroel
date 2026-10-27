@@ -1,0 +1,907 @@
+{
+  "run_id": 40458842972,
+  "run_url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40458842972",
+  "code_sha": "c5c2cb521b865d54d4953de22bf26ed0b7605837",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "id": 122038420476,
+      "name": "android native build + verification",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 40458842972,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install pinned build drivers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Install exact Godot Android toolchain",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Build CoreRPG + godot-cpp + extension and verify architecture/link",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Load extension and execute CoreRPG in Windows Godot",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 8
+        },
+        {
+          "name": "Execute Host regressions and NIM-07 I1/I2/I3 main conversation with native DLL",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 9
+        },
+        {
+          "name": "Export and execute Windows native package; compare DLL bytes",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 10
+        },
+        {
+          "name": "Build Linux control for export host (not Android runtime evidence)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Load Linux control in official Godot before export",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Run Host regressions and NIM-07 I1/I2/I3 conversation with Linux native control",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13
+        },
+        {
+          "name": "Temporary laboratory debug signing key",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14
+        },
+        {
+          "name": "Export Android and verify actual extension bytes in arm64 APK",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15
+        },
+        {
+          "name": "Publish libraries, Host2D project and evidence (including failures)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Post Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30
+        },
+        {
+          "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33
+        }
+      ]
+    },
+    {
+      "id": 122038420820,
+      "name": "windows native build + verification",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 40458842972,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install pinned build drivers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 5
+        },
+        {
+          "name": "Install exact Godot Android toolchain",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6
+        },
+        {
+          "name": "Build CoreRPG + godot-cpp + extension and verify architecture/link",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Load extension and execute CoreRPG in Windows Godot",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Execute Host regressions and NIM-07 I1/I2/I3 main conversation with native DLL",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Export and execute Windows native package; compare DLL bytes",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Build Linux control for export host (not Android runtime evidence)",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 11
+        },
+        {
+          "name": "Load Linux control in official Godot before export",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 12
+        },
+        {
+          "name": "Run Host regressions and NIM-07 I1/I2/I3 conversation with Linux native control",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13
+        },
+        {
+          "name": "Temporary laboratory debug signing key",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 14
+        },
+        {
+          "name": "Export Android and verify actual extension bytes in arm64 APK",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 15
+        },
+        {
+          "name": "Publish libraries, Host2D project and evidence (including failures)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16
+        },
+        {
+          "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31
+        },
+        {
+          "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 12713920984,
+      "name": "NIM06-functional-windows-c5c2cb521b865d54d4953de22bf26ed0b7605837",
+      "size_in_bytes": 37255956,
+      "url": "https://api.github.com/repos/robdor80/Videojuego_Nimroel/actions/artifacts/12713920984",
+      "archive_download_url": "https://api.github.com/repos/robdor80/Videojuego_Nimroel/actions/artifacts/12713920984/zip",
+      "expired": false,
+      "created_at": "2026-10-27T06:07:06Z",
+      "expires_at": "2026-11-26T06:07:03Z",
+      "updated_at": "2026-10-27T06:07:06Z",
+      "digest": "sha256:3f742b5ebd433f9d3a8c7b1d8ea9614067e3693667eee0e0c5197e9d3b6d586b",
+      "workflow_run": {
+        "id": 40458842972,
+        "repository_id": 1367185619,
+        "head_repository_id": 1367185619,
+        "head_branch": "feat/nim-07-first-rpg-experience",
+        "head_sha": "c5c2cb521b865d54d4953de22bf26ed0b7605837"
+      }
+    },
+    {
+      "id": 12713479484,
+      "name": "NIM06-functional-android-c5c2cb521b865d54d4953de22bf26ed0b7605837",
+      "size_in_bytes": 32271058,
+      "url": "https://api.github.com/repos/robdor80/Videojuego_Nimroel/actions/artifacts/12713479484",
+      "archive_download_url": "https://api.github.com/repos/robdor80/Videojuego_Nimroel/actions/artifacts/12713479484/zip",
+      "expired": false,
+      "created_at": "2026-10-27T06:08:02Z",
+      "expires_at": "2026-11-26T06:08:00Z",
+      "updated_at": "2026-10-27T06:08:02Z",
+      "digest": "sha256:629171c95618db5d9d1aab2ca5cd3f147e5ec23e0e4077a2f71c73044fa84697",
+      "workflow_run": {
+        "id": 40458842972,
+        "repository_id": 1367185619,
+        "head_repository_id": 1367185619,
+        "head_branch": "feat/nim-07-first-rpg-experience",
+        "head_sha": "c5c2cb521b865d54d4953de22bf26ed0b7605837"
+      }
+    }
+  ],
+  "run_metadata": {
+    "conclusion": "success",
+    "createdAt": "2026-10-27T06:03:33Z",
+    "headBranch": "feat/nim-07-first-rpg-experience",
+    "headSha": "c5c2cb521b865d54d4953de22bf26ed0b7605837",
+    "jobs": [
+      {
+        "completedAt": "2026-10-27T06:08:04Z",
+        "conclusion": "success",
+        "databaseId": 122038420476,
+        "name": "android native build + verification",
+        "startedAt": "2026-10-27T06:03:39Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-10-27T06:03:41Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-10-27T06:03:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:03:43Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 2,
+            "startedAt": "2026-10-27T06:03:41Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:03:51Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+            "number": 3,
+            "startedAt": "2026-10-27T06:03:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:03:54Z",
+            "conclusion": "success",
+            "name": "Install pinned build drivers",
+            "number": 4,
+            "startedAt": "2026-10-27T06:03:51Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:03:58Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+            "number": 5,
+            "startedAt": "2026-10-27T06:03:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:04:21Z",
+            "conclusion": "success",
+            "name": "Install exact Godot Android toolchain",
+            "number": 6,
+            "startedAt": "2026-10-27T06:03:58Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:05:40Z",
+            "conclusion": "success",
+            "name": "Build CoreRPG + godot-cpp + extension and verify architecture/link",
+            "number": 7,
+            "startedAt": "2026-10-27T06:04:21Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:05:40Z",
+            "conclusion": "skipped",
+            "name": "Load extension and execute CoreRPG in Windows Godot",
+            "number": 8,
+            "startedAt": "2026-10-27T06:05:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:05:40Z",
+            "conclusion": "skipped",
+            "name": "Execute Host regressions and NIM-07 I1/I2/I3 main conversation with native DLL",
+            "number": 9,
+            "startedAt": "2026-10-27T06:05:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:05:40Z",
+            "conclusion": "skipped",
+            "name": "Export and execute Windows native package; compare DLL bytes",
+            "number": 10,
+            "startedAt": "2026-10-27T06:05:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:16Z",
+            "conclusion": "success",
+            "name": "Build Linux control for export host (not Android runtime evidence)",
+            "number": 11,
+            "startedAt": "2026-10-27T06:05:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:23Z",
+            "conclusion": "success",
+            "name": "Load Linux control in official Godot before export",
+            "number": 12,
+            "startedAt": "2026-10-27T06:07:16Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:30Z",
+            "conclusion": "success",
+            "name": "Run Host regressions and NIM-07 I1/I2/I3 conversation with Linux native control",
+            "number": 13,
+            "startedAt": "2026-10-27T06:07:23Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:31Z",
+            "conclusion": "success",
+            "name": "Temporary laboratory debug signing key",
+            "number": 14,
+            "startedAt": "2026-10-27T06:07:30Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:08:00Z",
+            "conclusion": "success",
+            "name": "Export Android and verify actual extension bytes in arm64 APK",
+            "number": 15,
+            "startedAt": "2026-10-27T06:07:31Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:08:02Z",
+            "conclusion": "success",
+            "name": "Publish libraries, Host2D project and evidence (including failures)",
+            "number": 16,
+            "startedAt": "2026-10-27T06:08:00Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:08:02Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+            "number": 30,
+            "startedAt": "2026-10-27T06:08:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:08:03Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+            "number": 31,
+            "startedAt": "2026-10-27T06:08:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:08:03Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 32,
+            "startedAt": "2026-10-27T06:08:03Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:08:03Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 33,
+            "startedAt": "2026-10-27T06:08:03Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40458842972/job/122038420476"
+      },
+      {
+        "completedAt": "2026-10-27T06:07:10Z",
+        "conclusion": "success",
+        "databaseId": 122038420820,
+        "name": "windows native build + verification",
+        "startedAt": "2026-10-27T06:03:39Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-10-27T06:03:42Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-10-27T06:03:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:03:50Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 2,
+            "startedAt": "2026-10-27T06:03:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:03:51Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+            "number": 3,
+            "startedAt": "2026-10-27T06:03:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:04:09Z",
+            "conclusion": "success",
+            "name": "Install pinned build drivers",
+            "number": 4,
+            "startedAt": "2026-10-27T06:03:51Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:04:09Z",
+            "conclusion": "skipped",
+            "name": "Run actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3",
+            "number": 5,
+            "startedAt": "2026-10-27T06:04:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:04:09Z",
+            "conclusion": "skipped",
+            "name": "Install exact Godot Android toolchain",
+            "number": 6,
+            "startedAt": "2026-10-27T06:04:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:06:11Z",
+            "conclusion": "success",
+            "name": "Build CoreRPG + godot-cpp + extension and verify architecture/link",
+            "number": 7,
+            "startedAt": "2026-10-27T06:04:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:06:28Z",
+            "conclusion": "success",
+            "name": "Load extension and execute CoreRPG in Windows Godot",
+            "number": 8,
+            "startedAt": "2026-10-27T06:06:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:06:37Z",
+            "conclusion": "success",
+            "name": "Execute Host regressions and NIM-07 I1/I2/I3 main conversation with native DLL",
+            "number": 9,
+            "startedAt": "2026-10-27T06:06:28Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:02Z",
+            "conclusion": "success",
+            "name": "Export and execute Windows native package; compare DLL bytes",
+            "number": 10,
+            "startedAt": "2026-10-27T06:06:37Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:02Z",
+            "conclusion": "skipped",
+            "name": "Build Linux control for export host (not Android runtime evidence)",
+            "number": 11,
+            "startedAt": "2026-10-27T06:07:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:02Z",
+            "conclusion": "skipped",
+            "name": "Load Linux control in official Godot before export",
+            "number": 12,
+            "startedAt": "2026-10-27T06:07:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:02Z",
+            "conclusion": "skipped",
+            "name": "Run Host regressions and NIM-07 I1/I2/I3 conversation with Linux native control",
+            "number": 13,
+            "startedAt": "2026-10-27T06:07:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:02Z",
+            "conclusion": "skipped",
+            "name": "Temporary laboratory debug signing key",
+            "number": 14,
+            "startedAt": "2026-10-27T06:07:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:02Z",
+            "conclusion": "skipped",
+            "name": "Export Android and verify actual extension bytes in arm64 APK",
+            "number": 15,
+            "startedAt": "2026-10-27T06:07:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:07Z",
+            "conclusion": "success",
+            "name": "Publish libraries, Host2D project and evidence (including failures)",
+            "number": 16,
+            "startedAt": "2026-10-27T06:07:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:07Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+            "number": 31,
+            "startedAt": "2026-10-27T06:07:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:08Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+            "number": 32,
+            "startedAt": "2026-10-27T06:07:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-27T06:07:09Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 33,
+            "startedAt": "2026-10-27T06:07:08Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40458842972/job/122038420820"
+      }
+    ],
+    "startedAt": "2026-10-27T06:03:33Z",
+    "status": "completed",
+    "updatedAt": "2026-10-27T06:08:05Z",
+    "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40458842972"
+  },
+  "verified_artifact_contents": {
+    "windows": {
+      "reports": {
+        "godot-smoke": {
+          "checks": 129,
+          "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+          "errors": [],
+          "ok": true,
+          "scope": "native functional vertical; physical device acceptance separate"
+        },
+        "regression-nim07_smoke": {
+          "checks": 48,
+          "errors": [],
+          "ok": true,
+          "scope": "main screen; native runtime when available; no physical device test"
+        },
+        "regression-nim07_i2_smoke": {
+          "checks": 37,
+          "device_execution": "NOT TESTED",
+          "errors": [],
+          "ok": true
+        },
+        "regression-nim07_i3_smoke": {
+          "checks": 51,
+          "device_execution": "NOT TESTED",
+          "errors": [],
+          "ok": true
+        },
+        "windows-package-execution": {
+          "checks": 129,
+          "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+          "errors": [],
+          "ok": true,
+          "scope": "native functional vertical; physical device acceptance separate"
+        },
+        "windows-package-i2": {
+          "checks": 37,
+          "device_execution": "NOT TESTED",
+          "errors": [],
+          "ok": true
+        },
+        "windows-package-i3": {
+          "checks": 51,
+          "device_execution": "NOT TESTED",
+          "errors": [],
+          "ok": true
+        }
+      },
+      "json_evidence": {
+        "windows-binary.json": {
+          "file": "nimroel_core.windows.x86_64.dll",
+          "sha256": "84a60c90376a57b5d9bbb7194802de4ec6b8735520a55197959db7dcc56270bf",
+          "bytes": 1735680,
+          "machine": "PE AMD64 (0x8664)"
+        },
+        "windows-package.json": {
+          "nimroel_core.windows.x86_64.dll": {
+            "bytes": 1735680,
+            "sha256": "84a60c90376a57b5d9bbb7194802de4ec6b8735520a55197959db7dcc56270bf"
+          },
+          "Nimroel_NIM06_Functional.console.exe": {
+            "bytes": 69632,
+            "sha256": "26da30e450d68668992cff319620e6d788fdcfa150534310cffa733a44b6f91c"
+          },
+          "Nimroel_NIM06_Functional.exe": {
+            "bytes": 103055360,
+            "sha256": "9f44a61a9589e5dba56aa5001882d681f4ca6cca992ba3a3a24e23aafddf69af"
+          },
+          "Nimroel_NIM06_Functional.pck": {
+            "bytes": 180772,
+            "sha256": "f09866be7c2298010845f882a34a2265c75f18fadebc70b0b3bb731abd905fac"
+          }
+        },
+        "windows-v001-package.json": {
+          "files": {
+            "content-lock.json": "669891e25821b36a431d0af940aed02c4d40be6b6972cd9466179b686a2cc370",
+            "integration-fixture.json": "f4911bfca2fb705ecde3c35146239d0db4a64648abf6cee21ce301f542eb692a",
+            "manifest.json": "b7f60326997dad03f808798c44d739b48b8a90de56603beccd925db2f3eb06f7",
+            "provenance.json": "3399c71b1f7d7fc4522ac626281c6aea692a206c6a6bc2b756ed7e5c2e170154",
+            "nimroel/model-v1.json": "16ce05f23fb9129ab3198f4594422fc0c4e27774ca1c60abd0669fc5d4b0247a",
+            "resources/capabilities/basic-blacksmithing.json": "fee9d9e431999552fcd3a7395dda433feabf8265696de9e720e9b74c9ff06062",
+            "resources/capabilities/local-tavern.json": "7095cc28907a9707abe038921deffa390e0047da4e2da65be1572b2ffcbc898f",
+            "resources/models/v1.json": "9f6794996a91e00225e5b8f2034782adba2c6be48a734882fe563e121dbccbad",
+            "resources/objects/ordinary-agricultural-tool.json": "660430b148163b5dd4c87cbdb91e1bcac7c6c91baa676383ee109611965f56a1"
+          },
+          "bytes_match": true,
+          "godot_fileaccess_and_native_catalog": true,
+          "scope": "actual Windows PCK mounted in Godot"
+        }
+      },
+      "regressions": {
+        "smoke": {
+          "result": "PASS"
+        },
+        "nim02_smoke": {
+          "result": "PASS"
+        },
+        "nim03_smoke": {
+          "result": "PASS"
+        },
+        "nim04_smoke": {
+          "result": "PASS"
+        },
+        "nim05_smoke": {
+          "result": "PASS"
+        },
+        "keyboard_layout_smoke": {
+          "result": "PASS"
+        },
+        "native_layout_smoke": {
+          "result": "PASS"
+        },
+        "NIM03": {
+          "result": "PASS",
+          "tests": 8
+        },
+        "NIM04": {
+          "result": "PASS",
+          "tests": 29
+        },
+        "NIM05": {
+          "result": "PASS",
+          "tests": 11
+        }
+      },
+      "pins": {
+        "windows-corerpg-commit.txt": "4f282863737bcd8f5add401202a9e1064c133672",
+        "windows-godotcpp-commit.txt": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+        "windows-jsoncons-commit.txt": "bcb44594c50c495ee1e690602cdd71455942ad0e"
+      },
+      "downloaded_package_hashes_verified": true
+    },
+    "android": {
+      "reports": {
+        "godot-smoke": {
+          "checks": 129,
+          "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+          "errors": [],
+          "ok": true,
+          "scope": "native functional vertical; physical device acceptance separate"
+        },
+        "regression-nim07_smoke": {
+          "checks": 48,
+          "errors": [],
+          "ok": true,
+          "scope": "main screen; native runtime when available; no physical device test"
+        },
+        "regression-nim07_i2_smoke": {
+          "checks": 37,
+          "device_execution": "NOT TESTED",
+          "errors": [],
+          "ok": true
+        },
+        "regression-nim07_i3_smoke": {
+          "checks": 51,
+          "device_execution": "NOT TESTED",
+          "errors": [],
+          "ok": true
+        }
+      },
+      "json_evidence": {
+        "android-apk.json": {
+          "sha256": "c2248440a3eeeacc0cfa3ea65c0369867caeb9710d3e8888421825ef0f457c53",
+          "libraries": [
+            "lib/arm64-v8a/libc++_shared.so",
+            "lib/arm64-v8a/libgodot_android.so",
+            "lib/arm64-v8a/libnimroel_core.android.arm64.so"
+          ],
+          "extension_bytes_match": true,
+          "device_execution": "NOT TESTED",
+          "file": "Nimroel_NIM06_Functional.apk"
+        },
+        "android-binary.json": {
+          "file": "libnimroel_core.android.arm64.so",
+          "sha256": "b5485c7e25540ea2f68e7170d3a8abfbef7a1b2e825b5fc7a104c9b9b34bc635",
+          "bytes": 2281112,
+          "machine": "ELF AArch64 (183)",
+          "needed": [
+            "libm.so",
+            "libdl.so",
+            "libc.so"
+          ]
+        },
+        "android-v001-package.json": {
+          "files": {
+            "manifest.json": "b7f60326997dad03f808798c44d739b48b8a90de56603beccd925db2f3eb06f7",
+            "content-lock.json": "669891e25821b36a431d0af940aed02c4d40be6b6972cd9466179b686a2cc370",
+            "provenance.json": "3399c71b1f7d7fc4522ac626281c6aea692a206c6a6bc2b756ed7e5c2e170154",
+            "integration-fixture.json": "f4911bfca2fb705ecde3c35146239d0db4a64648abf6cee21ce301f542eb692a",
+            "nimroel/model-v1.json": "16ce05f23fb9129ab3198f4594422fc0c4e27774ca1c60abd0669fc5d4b0247a",
+            "resources/objects/ordinary-agricultural-tool.json": "660430b148163b5dd4c87cbdb91e1bcac7c6c91baa676383ee109611965f56a1",
+            "resources/models/v1.json": "9f6794996a91e00225e5b8f2034782adba2c6be48a734882fe563e121dbccbad",
+            "resources/capabilities/local-tavern.json": "7095cc28907a9707abe038921deffa390e0047da4e2da65be1572b2ffcbc898f",
+            "resources/capabilities/basic-blacksmithing.json": "fee9d9e431999552fcd3a7395dda433feabf8265696de9e720e9b74c9ff06062"
+          },
+          "bytes_match": true,
+          "godot_fileaccess_and_native_catalog": true,
+          "scope": "APK asset ZIP mounted in Linux control; no Android runtime"
+        },
+        "linux-binary.json": {
+          "file": "libnimroel_core.linux.x86_64.so",
+          "sha256": "0a201c432709bc1bf59b24afe84eb01dbf746f1538a0d3eeb21c849a7be8c249",
+          "bytes": 3466800,
+          "machine": "ELF x86-64 (62)",
+          "needed": [
+            "libm.so.6",
+            "libc.so.6",
+            "ld-linux-x86-64.so.2"
+          ]
+        }
+      },
+      "regressions": {
+        "smoke": {
+          "result": "PASS"
+        },
+        "nim02_smoke": {
+          "result": "PASS"
+        },
+        "nim03_smoke": {
+          "result": "PASS"
+        },
+        "nim04_smoke": {
+          "result": "PASS"
+        },
+        "nim05_smoke": {
+          "result": "PASS"
+        },
+        "keyboard_layout_smoke": {
+          "result": "PASS"
+        },
+        "native_layout_smoke": {
+          "result": "PASS"
+        },
+        "NIM03": {
+          "result": "PASS",
+          "tests": 8
+        },
+        "NIM04": {
+          "result": "PASS",
+          "tests": 29
+        },
+        "NIM05": {
+          "result": "PASS",
+          "tests": 11
+        }
+      },
+      "pins": {
+        "android-corerpg-commit.txt": "4f282863737bcd8f5add401202a9e1064c133672",
+        "android-godotcpp-commit.txt": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+        "android-jsoncons-commit.txt": "bcb44594c50c495ee1e690602cdd71455942ad0e",
+        "linux-corerpg-commit.txt": "4f282863737bcd8f5add401202a9e1064c133672",
+        "linux-godotcpp-commit.txt": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+        "linux-jsoncons-commit.txt": "bcb44594c50c495ee1e690602cdd71455942ad0e"
+      },
+      "downloaded_package_hashes_verified": true
+    }
+  },
+  "physical_acceptance": "NOT TESTED",
+  "android_runtime": "NOT TESTED; ARM64 build/export and Linux asset control only"
+}

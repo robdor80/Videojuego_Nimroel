@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-27",
+  "timezone": "Europe/Madrid",
+  "os": "Windows x64",
+  "code_sha": "c5c2cb521b865d54d4953de22bf26ed0b7605837",
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "native_dll": {
+    "source_run": 40453998709,
+    "source_artifact": 12711576933,
+    "scope": "Authentic accepted I2 binary reused locally; C++ unchanged. I3 CI builds fresh binaries.",
+    "sha256": "9c54ccd4c41bbaa34fb28e6e807f2f112ee94c13b107e8dd8e04899e345f5f93",
+    "bytes": 1735680
+  },
+  "reports": {
+    "godot-smoke": {
+      "checks": 129,
+      "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+      "errors": [],
+      "ok": true,
+      "scope": "native functional vertical; physical device acceptance separate"
+    },
+    "regression-nim07_smoke": {
+      "checks": 48,
+      "errors": [],
+      "ok": true,
+      "scope": "main screen; native runtime when available; no physical device test"
+    },
+    "regression-nim07_i2_smoke": {
+      "checks": 37,
+      "device_execution": "NOT TESTED",
+      "errors": [],
+      "ok": true
+    },
+    "regression-nim07_i3_smoke": {
+      "checks": 51,
+      "device_execution": "NOT TESTED",
+      "errors": [],
+      "ok": true
+    }
+  },
+  "host_and_offline_regressions": {
+    "smoke": {
+      "result": "PASS",
+      "log_sha256": "60f567c915d551e0be263d535681b89980536dfc2b137840e1e466d8e30d208c"
+    },
+    "nim02_smoke": {
+      "result": "PASS",
+      "log_sha256": "36091f2867af05206e311f2eef4a9844db34c08bea5792443e645b18c73ef842"
+    },
+    "nim03_smoke": {
+      "result": "PASS",
+      "log_sha256": "4925c24c1259db46f3f4a8a250362d9eb1ef8a7d7626660dd8fdc3b3d9f00ec8"
+    },
+    "nim04_smoke": {
+      "result": "PASS",
+      "log_sha256": "6c1db2669a0f941c78eaa1c7881dfac08cbba235cedeb733eac361126f296a0c"
+    },
+    "nim05_smoke": {
+      "result": "PASS",
+      "log_sha256": "3c409d8780fb743596d0f85e0baf4807de1a1ef4b364198400a06852b6bc48c3"
+    },
+    "keyboard_layout_smoke": {
+      "result": "PASS",
+      "log_sha256": "0b3c5e5b0418893a20f8389890e0093e3bb1ab650ecb7ae6b164e8f0ddabadeb"
+    },
+    "native_layout_smoke": {
+      "result": "PASS",
+      "log_sha256": "72431ca41bb8f88a2ef7bd2f8b5db51382660170380b41fdf1b25fcaac799bf5"
+    },
+    "NIM03": {
+      "result": "PASS",
+      "log_sha256": "996b75bf9484aa5973daa823f7ff7c80c6b0d8937671a87d1d1d546f06a16814"
+    },
+    "NIM04": {
+      "result": "PASS",
+      "log_sha256": "fa09067c66cf9537431827708c4a8c1e5dfe16e50210dc0691592a53623675f1"
+    },
+    "NIM05": {
+      "result": "PASS",
+      "log_sha256": "a1379048f652cc7b55fe456e08e1c2be8498dac3390acbc844065f6e72c9fc97"
+    }
+  },
+  "published_pack": {
+    "files": {
+      "content-lock.json": "669891e25821b36a431d0af940aed02c4d40be6b6972cd9466179b686a2cc370",
+      "integration-fixture.json": "f4911bfca2fb705ecde3c35146239d0db4a64648abf6cee21ce301f542eb692a",
+      "manifest.json": "b7f60326997dad03f808798c44d739b48b8a90de56603beccd925db2f3eb06f7",
+      "nimroel/model-v1.json": "16ce05f23fb9129ab3198f4594422fc0c4e27774ca1c60abd0669fc5d4b0247a",
+      "provenance.json": "3399c71b1f7d7fc4522ac626281c6aea692a206c6a6bc2b756ed7e5c2e170154",
+      "resources/capabilities/basic-blacksmithing.json": "fee9d9e431999552fcd3a7395dda433feabf8265696de9e720e9b74c9ff06062",
+      "resources/capabilities/local-tavern.json": "7095cc28907a9707abe038921deffa390e0047da4e2da65be1572b2ffcbc898f",
+      "resources/models/v1.json": "9f6794996a91e00225e5b8f2034782adba2c6be48a734882fe563e121dbccbad",
+      "resources/objects/ordinary-agricultural-tool.json": "660430b148163b5dd4c87cbdb91e1bcac7c6c91baa676383ee109611965f56a1"
+    },
+    "staged_bytes_identical": true
+  },
+  "physical_acceptance": "NOT TESTED",
+  "android_runtime": "NOT TESTED"
+}
