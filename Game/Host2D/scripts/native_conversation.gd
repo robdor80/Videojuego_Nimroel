@@ -1,8 +1,24 @@
 extends RefCounted
-## NIM-07 I1: consultas cerradas; conserva capacidades, nunca hechos del mundo.
+## NIM-07: consultas cerradas; conserva capacidades, nunca hechos del mundo.
 const World = preload("res://scripts/native_world_controller.gd")
 const AUTHOR := "SISTEMA · CORERPG (PRUEBA ESTRUCTURAL)"
 const HELP := "Prueba: estado / ¿qué sabe mi personaje? / ¿qué conozco? Solo consultas estructurales locales, sin IA ni acciones."
+const V001_HELP := "Puedes preguntar: ¿qué conozco de la aldea?, ¿qué servicios conozco?, ¿qué sé de la herrería?, ¿cuántos habitantes hay?, ¿qué conozco de la herramienta?, ¿dónde está la herramienta? o ¿de dónde procede mi personaje? «estado» resume lo conocido. Solo consultas; V001 es un fixture estructural."
+# Repertorio completo tras normalización ortográfica; nunca extraer entidades libres.
+const QUERIES := {
+	"estado": "summary", "que se": "summary", "que conozco": "summary",
+	"que sabe mi personaje": "summary", "que se de la aldea": "village",
+	"que conozco de la aldea": "village", "que conozco de esta aldea": "village",
+	"que conozco de este lugar": "village", "que servicios conozco": "services",
+	"que se de la herreria": "smith", "que conozco de la herreria": "smith",
+	"cuantos habitantes hay": "population", "que poblacion conozco": "population",
+	"que se de la herramienta": "tool", "que conozco de la herramienta": "tool",
+	"donde esta la herramienta": "tool", "de donde procede mi personaje": "origin",
+	"cual es el origen de mi personaje": "origin", "que puedo preguntar": "help", "ayuda": "help",
+	"que veo": "perception", "que veo desde donde estoy": "perception",
+	"donde estoy": "location", "voy a la herreria": "action",
+	"hablo con el herrero": "action", "reparo la herramienta": "action", "reparar herramienta": "action",
+}
 const MAX_MESSAGE_CHARS := 1500
 var _world := World.new()
 var _started: bool = false
@@ -32,7 +48,9 @@ func submit_text(raw_text: String) -> Dictionary:
 		return _result("rejected", "Escribe una consulta antes de enviarla.")
 	if text.length() > MAX_MESSAGE_CHARS:
 		return _result("rejected", "El mensaje supera el límite de 1500 caracteres.")
-	# Solo normalizamos mayúsculas, espacios exteriores y signos de pregunta.
+	if _v001:
+		return _submit_v001(text)
+	# Se conserva la ruta neutral I1.
 	text = text.to_lower().trim_prefix("¿").trim_suffix("?").strip_edges()
 	if text == "qué veo" or text == "que veo":
 		return _result("limited", "Todavía no hay percepción visual ni espacial. No puedo describir lo que ves. Usa «estado» para consultar el conocimiento estructural autorizado.")
@@ -42,6 +60,29 @@ func submit_text(raw_text: String) -> Dictionary:
 		return _result("unavailable", "CoreRPG no está disponible: inicia la experiencia estructural con una extensión nativa compilada. No se ha simulado una respuesta.")
 	return _present(_world.query(), _v001)
 
+static func normalize_query(text: String) -> String:
+	text = text.to_lower().strip_edges().trim_prefix("¿").trim_suffix("?").strip_edges()
+	for pair in [["á", "a"], ["é", "e"], ["í", "i"], ["ó", "o"], ["ú", "u"], ["ü", "u"]]:
+		text = text.replace(pair[0], pair[1])
+	return " ".join(text.split(" ", false))
+
+func _submit_v001(text: String) -> Dictionary:
+	var intent: String = QUERIES.get(normalize_query(text), "unsupported")
+	match intent:
+		"help":
+			return _result("ok", V001_HELP)
+		"perception":
+			return _result("limited", "Todavía no hay percepción visual ni espacial. No puedo describir lo que ves. Puedes consultar lo conocido con «estado».")
+		"location":
+			return _result("limited", "La ubicación actual no está modelada. El origen poblacional conocido no indica posición, vivienda ni procedencia biográfica. Puedes preguntar «¿de dónde procede mi personaje?».")
+		"action":
+			return _result("unsupported", "Consulta no soportada. Esa acción RPG todavía no está implementada. Solo puedes consultar conocimiento; la contención estructural no permite caminar, conversar, recoger ni reparar.")
+		"unsupported":
+			return _result("unsupported", "Consulta no soportada. " + V001_HELP)
+	if not _started:
+		return _result("unavailable", "CoreRPG no está disponible: inicia V001 para consultar el conocimiento autorizado.")
+	return format_query(_world.query(), intent, _world.get("_observer"))
+
 func close() -> void:
 	_world.close()
 	_started = false
@@ -50,10 +91,96 @@ static func _result(status: String, reply: String) -> Dictionary:
 	# La IU solo recibe texto saneado y estado de presentación, sin el envelope Core.
 	return {"status": status, "reply": reply, "world_mutated": false}
 
-static func _present(context: Dictionary, v001: bool = false) -> Dictionary:
+func _present(context: Dictionary, v001: bool = false) -> Dictionary:
 	if context.get("status") != "ok":
 		return _result("unavailable", "CoreRPG no está disponible para esta consulta. Comprueba la compilación nativa e inicia la experiencia. No se ha simulado una respuesta.")
-	return format_context(context, v001)
+	return format_query(context, "summary", _world.get("_observer")) if v001 else format_context(context)
+
+# La identidad ligada a la capacidad se conserva en el controlador de confianza.
+# Todos los hechos y etiquetas siguientes requieren el contexto de esa sesión.
+static func format_query(context: Dictionary, intent: String, observer: int = 0) -> Dictionary:
+	var validated := format_context(context, true)
+	if validated.status != "ok":
+		return validated
+	if intent not in ["summary", "village", "services", "smith", "population", "tool", "origin"]:
+		return _result("unsupported", "Consulta no soportada. " + V001_HELP)
+	var facts: Array = context.facts
+	var village := _defined_subject(facts, "nimroel.treskal.villages:models/v1")
+	var smith := _defined_subject(facts, "nimroel.treskal.villages:capabilities/basic-blacksmithing")
+	var tool := _defined_subject(facts, "nimroel.treskal.villages:objects/ordinary-agricultural-tool")
+	var lines: Array[String] = []
+	if intent in ["summary", "village"]:
+		lines.append("Conoces el modelo de aldea V1 agrícola-maderera." if village > 0 else _unknown())
+	if intent in ["summary", "village", "services", "smith"]:
+		var service := _fact(facts, village, 4, 1, smith)
+		if village > 0 and smith > 0 and not service.is_empty():
+			lines.append("Conoces una capacidad de herrería básica asociada a la aldea como servicio." if service.present else "Conoces la ausencia de asociación de servicio entre la aldea y la capacidad de herrería básica.")
+		elif intent == "smith" and smith > 0:
+			lines.append("Conoces la definición de capacidad de herrería básica. Su asociación como servicio no consta entre lo que conoce este observador.")
+		else:
+			lines.append(_unknown())
+		if intent in ["summary", "smith"]:
+			var aggregate := _fact(facts, smith, 5)
+			if not aggregate.is_empty() and not aggregate.present:
+				lines.append("Conoces la ausencia de agregado poblacional en la capacidad de herrería básica. Esto no describe personas ni un edificio físico.")
+	if intent in ["summary", "village", "population"]:
+		var population := _fact(facts, village, 5)
+		if population.is_empty():
+			lines.append(_unknown())
+		elif population.present:
+			lines.append("El agregado de aldea conocido declara " + population.total + " habitantes y " + population.latent + " pendientes de materializar. No es un recuento de personas presentes físicamente.")
+		else:
+			lines.append("Conoces la ausencia de agregado poblacional en la aldea; eso no significa que tenga cero habitantes.")
+	if intent in ["summary", "tool"]:
+		if tool == 0:
+			lines.append(_unknown())
+		else:
+			lines.append("Conoces la categoría de herramienta agrícola ordinaria.")
+			var containment := _fact(facts, tool, 3)
+			if containment.is_empty():
+				lines.append("Su contención no consta entre lo que conoce este observador.")
+			elif not containment.present:
+				lines.append("Conoces la ausencia de contención de la herramienta.")
+			elif smith > 0 and containment.reference == smith:
+				lines.append("La herramienta está contenida estructuralmente en la capacidad de herrería básica. No indica una ubicación física, propiedad ni posibilidad de recogerla o repararla.")
+			else:
+				lines.append("Conoces su contención estructural, pero el destino no tiene una etiqueta autorizada en esta respuesta. No indica posición física.")
+	if intent in ["summary", "origin"]:
+		var origin := _fact(facts, observer, 6) if _knows(facts, observer) else {}
+		if origin.is_empty():
+			lines.append(_unknown())
+		elif not origin.present:
+			lines.append("Conoces la ausencia de origen poblacional de tu observador de prueba.")
+		elif village > 0 and origin.reference == village:
+			lines.append("El origen poblacional conocido de tu observador de prueba es el agregado de aldea V1 agrícola-maderera. No indica ubicación actual, vivienda ni procedencia biográfica.")
+		else:
+			lines.append("Conoces un origen poblacional, pero el agregado no tiene una etiqueta autorizada en esta respuesta. No indica ubicación actual ni biografía.")
+	var heading := "V001 — fixture estructural."
+	if context.context_status != "complete":
+		heading += " Contexto truncado: pueden faltar hechos; no permite concluir ausencia."
+	return _result("ok", heading + "\n" + "\n".join(lines))
+
+static func _unknown() -> String:
+	return "Ese dato no consta entre lo que conoce este observador. No demuestra ausencia en el mundo."
+
+static func _knows(facts: Array, subject: int) -> bool:
+	return facts.any(func(f): return f.kind == 1 and f.subject == subject and f.present)
+
+static func _defined_subject(facts: Array, definition: String) -> int:
+	var subjects: Array[int] = []
+	for fact in facts:
+		if fact.kind == 2 and fact.present and fact.definition_id == definition and _knows(facts, fact.subject) and fact.subject not in subjects:
+			subjects.append(fact.subject)
+	return subjects[0] if subjects.size() == 1 else 0
+
+static func _fact(facts: Array, subject: int, kind: int, relation: int = 0, target: int = 0) -> Dictionary:
+	if subject < 1:
+		return {}
+	for fact in facts:
+		if fact.subject == subject and fact.kind == kind:
+			if kind != 4 or (fact.relation_kind == str(relation) and target > 0 and fact.target == target):
+				return fact
+	return {}
 
 static func format_context(context: Dictionary, v001: bool = false) -> Dictionary:
 	# Lista cerrada de campos interpretables de la vista ligada al jugador.

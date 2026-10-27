@@ -463,7 +463,7 @@ func _start_experience(v001: bool) -> void:
 	_native_active = true
 	_integration_mode = false
 	_title.text = "NIMROEL  ·  CORERPG"
-	_subtitle.text = "I2  |  V001 — FIXTURE ESTRUCTURAL DE TRESKAL" if v001 else "I1  |  PRUEBA ESTRUCTURAL NEUTRA · SIN TRESKAL NI ALDEA V1"
+	_subtitle.text = "I3  |  V001 — FIXTURE ESTRUCTURAL DE TRESKAL" if v001 else "I1  |  PRUEBA ESTRUCTURAL NEUTRA · SIN TRESKAL NI ALDEA V1"
 	_backdrop.hide()
 	_mode_button.text = "Modo: nativo"
 	if is_instance_valid(_gemini_button):
@@ -471,12 +471,12 @@ func _start_experience(v001: bool) -> void:
 	if is_instance_valid(_provider_row):
 		_provider_row.hide()
 	_service_state.text = "CORERPG CONECTADO · CONTEXTO AUTORIZADO · CONSULTAS LOCALES SIN IA"
-	_input.placeholder_text = "estado / ¿qué conozco?"
+	_input.placeholder_text = "¿Qué conozco de la aldea?" if v001 else "estado / ¿qué conozco?"
 	_portrait_wanted = false
 	_sync_portrait_visibility()
 	_input.clear()
 	if v001:
-		_append_bubble(NATIVE_CONVERSATION.AUTHOR, "V001 — fixture estructural. Observador anónimo de prueba; sin aldea jugable ni identidad canónica.\n" + NATIVE_CONVERSATION.HELP, false)
+		_append_bubble(NATIVE_CONVERSATION.AUTHOR, "V001 — fixture estructural. Observador anónimo de prueba; sin aldea jugable ni identidad canónica.\n" + NATIVE_CONVERSATION.V001_HELP, false)
 	else:
 		_append_bubble(NATIVE_CONVERSATION.AUTHOR, "Experiencia nativa activa: estructura neutra de laboratorio. No es Treskal ni una aldea V1 generada.\n" + NATIVE_CONVERSATION.HELP, false)
 	_append_bubble(NATIVE_CONVERSATION.AUTHOR, result.reply, false)

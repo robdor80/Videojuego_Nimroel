@@ -239,6 +239,8 @@ def export_windows():
     assert 'NIM06_FUNCTIONAL_REPORT' in tested and '"ok":true' in tested.replace(' ', '') and 'ERROR:' not in tested
     packaged_i2 = run([console, '--headless', '--', '--nim07-i2-self-test'], 'windows-package-i2.txt', cwd=output, timeout=180)
     assert 'NIM-07 I2 SMOKE PASS' in packaged_i2 and 'ERROR:' not in packaged_i2
+    packaged_i3 = run([console, '--headless', '--', '--nim07-i3-self-test'], 'windows-package-i3.txt', cwd=output, timeout=180)
+    assert 'NIM-07 I3 SMOKE PASS' in packaged_i3 and 'ERROR:' not in packaged_i3
     verify_v001_package(exe, output / 'Nimroel_NIM06_Functional.pck')
     details = {str(p.relative_to(output)): {'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
                for p in output.rglob('*') if p.is_file()}
@@ -301,7 +303,7 @@ def regressions():
     exe = godot()
     scripts = ['smoke', 'nim02_smoke', 'nim03_smoke', 'nim04_smoke', 'nim05_smoke', 'keyboard_layout_smoke', 'native_layout_smoke']
     if FUNCTIONAL:
-        scripts += ['nim07_smoke', 'nim07_i2_smoke']
+        scripts += ['nim07_smoke', 'nim07_i2_smoke', 'nim07_i3_smoke']
     for script in scripts:
         output = run([exe, '--headless', '--path', PROJECT, '--script', f'res://tests/{script}.gd'], f'regression-{script}.txt', timeout=120)
         assert 'ERROR:' not in output and 'PASS' in output, script

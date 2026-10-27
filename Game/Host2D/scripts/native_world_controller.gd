@@ -7,6 +7,7 @@ var _host: RefCounted
 var _session: RefCounted
 var _request_id: int = 0
 var _v001: bool = false
+var _observer: int = 0 # Identidad de la capacidad; no es un hecho ni ubicación.
 
 func _init(use_v001: bool = false) -> void:
 	_v001 = use_v001
@@ -27,6 +28,7 @@ func start() -> Dictionary:
 		if opened.status != "ok":
 			return opened
 		_session = opened.session
+		_observer = loaded.observer
 		return query()
 	var initialized: Dictionary = _host.call("initialize", {"api_version": 1, "seed": "42", "entities": 4})
 	if initialized.status != "ok":
@@ -92,6 +94,7 @@ func load_slot(slot: String = "native_vertical") -> Dictionary:
 
 func close() -> Dictionary:
 	_session = null
+	_observer = 0
 	if _host != null:
 		var closed: Dictionary = _host.call("close")
 		_host = null

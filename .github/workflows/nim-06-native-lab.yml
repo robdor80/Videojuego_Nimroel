@@ -52,7 +52,7 @@ jobs:
       - name: Load extension and execute CoreRPG in Windows Godot
         if: matrix.target == 'windows'
         run: python Tools/NIM06/native_lab.py smoke --functional
-      - name: Execute Host regressions and NIM-07 I1/I2 main conversation with native DLL
+      - name: Execute Host regressions and NIM-07 I1/I2/I3 main conversation with native DLL
         if: matrix.target == 'windows'
         run: python Tools/NIM06/native_lab.py regressions --functional
       - name: Export and execute Windows native package; compare DLL bytes
@@ -64,7 +64,7 @@ jobs:
       - name: Load Linux control in official Godot before export
         if: matrix.target == 'android'
         run: python Tools/NIM06/native_lab.py smoke --functional
-      - name: Run Host regressions and NIM-07 I1/I2 conversation with Linux native control
+      - name: Run Host regressions and NIM-07 I1/I2/I3 conversation with Linux native control
         if: matrix.target == 'android'
         run: python Tools/NIM06/native_lab.py regressions --functional
       - name: Temporary laboratory debug signing key

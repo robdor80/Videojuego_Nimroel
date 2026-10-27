@@ -41,8 +41,8 @@ func _run() -> void:
 	input.text_submitted.emit(input.text)
 	var response := reply(scene)
 	check(response.contains("modelo de aldea V1") and response.contains("herrería básica") and response.contains("herramienta agrícola ordinaria"), "authorized Core definition bindings")
-	check(response.contains("población declarada 50; reserva latente 48") and response.contains("ausencia de agregado poblacional"), "known population and absence")
-	check(response.contains("asociación de servicio") and response.contains("origen poblacional conocido en #1"), "authorized relation and origin")
+	check(response.contains("declara 50 habitantes y 48 pendientes de materializar") and response.contains("ausencia de agregado poblacional"), "known population and absence")
+	check(response.contains("asociada a la aldea como servicio") and response.contains("origen poblacional conocido de tu observador"), "authorized relation and origin")
 	check(not response.contains("#3") and not response.contains("#4") and not response.contains("#7") and not response.contains("taberna"), "hidden identities/definition excluded")
 	check(not response.contains("context_id") and not response.contains("revision") and not response.contains("413001"), "no privileged metadata")
 	var other: RefCounted = host.call("open_session", {"api_version": 1, "observer": 7, "audience": "npc"}).session
