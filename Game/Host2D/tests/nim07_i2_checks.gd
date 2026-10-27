@@ -59,7 +59,7 @@ func _run() -> void:
 	var issued: Dictionary = session.call("context", {"api_version": 1})
 	check(session.call("submit", {"api_version": 1, "context_id": issued.context_id, "request_id": 1, "operation": "place", "target": 1}).error_code == "OPERATION_DENIED", "V001 session has no movement grants")
 	check(host.call("capture").bytes == before, "queries/rejections preserve Core/RNG")
-	check(world.save_slot().error_code == "CONTENT_PERSISTENCE_PENDING_I4", "no unverified content save")
+	check(world.save_slot("../invalid").error_code == "INVALID_SAVE_SLOT", "I4 rechaza slot inseguro sin escribir")
 	# Test-only privileged session: observe real world tables without exporting WorldState.
 	for subject in [1, 2, 3, 4, 5, 6, 7]:
 		host.call("admin", {"api_version": 1, "operation": "learn", "observer": 4, "subject": subject, "kind": 1})

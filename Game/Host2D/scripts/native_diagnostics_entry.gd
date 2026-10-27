@@ -3,6 +3,9 @@ extends Node
 func _ready() -> void:
 	if not ClassDB.class_exists("CoreRPGHost"):
 		return
+	if (OS.get_cmdline_user_args().has("--nim07-i4-write") or OS.get_cmdline_user_args().has("--nim07-i4-read")) and not OS.get_cmdline_args().has("--script"):
+		_i4_self_test.call_deferred()
+		return
 	if OS.get_cmdline_user_args().has("--nim07-i3-self-test"):
 		_i3_self_test.call_deferred()
 		return
@@ -34,3 +37,8 @@ func _i3_self_test() -> void:
 	await get_tree().process_frame
 	var checks := preload("res://tests/nim07_i3_checks.gd").new()
 	await checks.run(get_tree())
+
+func _i4_self_test() -> void:
+	await get_tree().process_frame
+	var phase := "write" if OS.get_cmdline_user_args().has("--nim07-i4-write") else "read"
+	await preload("res://tests/nim07_i4_checks.gd").new().run(get_tree(), phase)

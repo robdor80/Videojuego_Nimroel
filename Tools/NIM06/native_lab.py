@@ -11,6 +11,7 @@ import struct
 import subprocess
 import urllib.request
 import zipfile
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[2]
 LAB = ROOT / 'Game/BridgeCoreRPG/lab'
@@ -241,6 +242,7 @@ def export_windows():
     assert 'NIM-07 I2 SMOKE PASS' in packaged_i2 and 'ERROR:' not in packaged_i2
     packaged_i3 = run([console, '--headless', '--', '--nim07-i3-self-test'], 'windows-package-i3.txt', cwd=output, timeout=180)
     assert 'NIM-07 I3 SMOKE PASS' in packaged_i3 and 'ERROR:' not in packaged_i3
+    i4_processes(console, packaged=True, cwd=output)
     verify_v001_package(exe, output / 'Nimroel_NIM06_Functional.pck')
     details = {str(p.relative_to(output)): {'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
                for p in output.rglob('*') if p.is_file()}
@@ -298,6 +300,25 @@ def verify_v001_package(exe, package, android=False):
     (EVIDENCE / ('android-v001-package.json' if android else 'windows-v001-package.json')).write_text(json.dumps(detail, indent=2) + '\n')
 
 
+def i4_processes(exe, packaged=False, cwd=ROOT):
+    """Two OS processes, fresh per-pair user storage, shared ONLY through files."""
+    with tempfile.TemporaryDirectory(prefix='nim07-i4-') as directory:
+        env = {'APPDATA': directory} if platform.system() == 'Windows' else {'XDG_DATA_HOME': directory}
+        reports = []
+        for phase in ('write', 'read'):
+            args = [exe, '--headless']
+            if not packaged:
+                args += ['--path', PROJECT, '--script', 'res://tests/nim07_i4_smoke.gd']
+            args += ['--', '--nim07-i4-' + phase]
+            output = run(args, ('windows-package' if packaged else 'regression') + '-i4-' + phase + '.txt',
+                         cwd=cwd, extra_env=env, timeout=180)
+            assert 'NIM-07 I4 SMOKE PASS ' + phase in output and 'ERROR:' not in output
+            reports.append(json.loads(re.search(r'NIM07_I4_REPORT (.*)', output).group(1)))
+        assert reports[0]['pid'] != reports[1]['pid']
+        (EVIDENCE / ('windows-package-i4.json' if packaged else 'i4-processes.json')).write_text(
+            json.dumps({'independent_processes': True, 'reports': reports}, indent=2) + '\n')
+
+
 def regressions():
     stage_v001()
     exe = godot()
@@ -307,6 +328,8 @@ def regressions():
     for script in scripts:
         output = run([exe, '--headless', '--path', PROJECT, '--script', f'res://tests/{script}.gd'], f'regression-{script}.txt', timeout=120)
         assert 'ERROR:' not in output and 'PASS' in output, script
+    if FUNCTIONAL:
+        i4_processes(exe)
     for folder in ['NIM03', 'NIM04', 'NIM05']:
         run(['python', '-m', 'unittest', 'discover', '-s', ROOT / 'Tools' / folder, '-p', 'test_*.py', '-v'], f'regression-{folder}.txt')
 

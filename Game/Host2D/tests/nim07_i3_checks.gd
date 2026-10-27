@@ -107,7 +107,7 @@ func run(scene_tree: SceneTree) -> void:
 	check(ask(scene, "¿De dónde procede mi personaje?").contains("no consta"), "no infiere origen desde relaciones o fixture")
 	var changed: PackedByteArray = host.call("capture").bytes
 	check(ask(scene, "estado").contains("no consta") and host.call("capture").bytes == changed, "consultas posteriores preservan nuevo estado Core")
-	check(world.save_slot().error_code == "CONTENT_PERSISTENCE_PENDING_I4", "no habilita I4")
+	check(world.save_slot("../invalid").error_code == "INVALID_SAVE_SLOT", "I4 rechaza slot inseguro sin escribir")
 	scene.queue_free()
 	await tree.process_frame
 	check(session.call("availability").error_code == "SESSION_EXPIRED", "salir cierra sesión")
