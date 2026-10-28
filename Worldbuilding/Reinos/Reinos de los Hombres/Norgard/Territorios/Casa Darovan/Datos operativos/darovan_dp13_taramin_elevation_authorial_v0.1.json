@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_taramin_elevation_authorial",
+  "version": "0.1.0",
+  "phase": "D.P13",
+  "status": "AUTHORED_AUTHOR_DECISION_NOT_GEOMETRY",
+  "authorDecisionId": "DAR-DP13-CITY-ALT-03",
+  "authorDecisionDate": "2026-10-25",
+  "authority": "AUTHORED_AUTHOR_DECISION",
+  "settlementId": "taramin",
+  "type": "canonical_city",
+  "role": "darovan_fishing_port",
+  "selectedOption": "A",
+  "urbanAltitudeReferenceBandMetersApprox": {
+    "min": 0,
+    "max": 40
+  },
+  "referenceType": "approximate_main_urban_core_not_every_street_or_dock",
+  "singleUrbanAltitudeMeters": null,
+  "cityCenterCoordinates": null,
+  "neighborhoodElevations": [],
+  "portDockElevationMeters": null,
+  "tidalRangeMeters": null,
+  "tidalOrSurgeFloodRiskMeasured": null,
+  "thalenArmSurfaceHeightsMeters": null,
+  "thalenArmNavigability": null,
+  "thalenExactRiverChannelCoordinates": null,
+  "bridgeCount": null,
+  "bridgeLocations": [],
+  "newCanals": [],
+  "newIslands": [],
+  "shorelineTopographicSlope": null,
+  "urbanTerrainRaster": null,
+  "georeferencedCityPlan": null,
+  "canonicalGuards": {
+    "cityBetweenThalenTerminalArms": true,
+    "thalenOneNamedRiverTwoTerminalArms": true,
+    "armCrossingsOrBridgesUnconfirmed": true,
+    "maritimeAndFluvialFishingAuthored": true,
+    "fishingPortExisting": true,
+    "semiaridPeninsularTransition": true,
+    "noInventedHydroConnections": true
+  },
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json"
+  ],
+  "implementation": {
+    "worldStateRuntime": false,
+    "georeferencedMap": false,
+    "createsInfrastructure": false,
+    "modifiesPriorPhases": false
+  }
+}

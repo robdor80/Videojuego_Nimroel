@@ -82,7 +82,7 @@ Las referencias de esta fase que afirmaban **Arven UNKNOWN**, **cuatro ríos** o
 En los tres casos la aprobación de un criterio conceptual NO autoriza por sí sola edificios singulares, puentes, muelles nuevos, mapas, personajes, calles, nombres de barrios, instituciones o actividades no respaldadas. La materialización requiere alcance y fuentes definidos por el autor. Pendientes DAR-P02/P04/P05/P08 (parcial)/P09/P10/P11 sin modificación. DAR-P01 y P07 siguen resueltos y no se reabren. D08 y D11 son fases futuras.
 
 ### Resolución expresa DAR-D07-01 — Veldora
-**Autor, 21/10/2026:** «Decisión 1 de D07: elijo la opción B para Veldora».
+**Autor, 21/10/2026:** «Decisión 1 de D07: elijo la opción A para Veldora».
 **APROBADO (solo concepto):** varios sectores comerciales, artesanales y residenciales, surgidos de crecimiento orgánico, sin reducir la ciudad a un único núcleo de comercio. Continúa vigente el canon preexistente de puerto principal, aduana exterior, almacenes, gremios, viviendas mixtas y zonas acomodadas alejadas de muelles.
 **NO aprobado:** nomenclatura/número exacto de barrios, división urbana, calles, trazado, rutas, puentes, muelles nuevos, establecimientos singulares, personajes, habitantes, hogares ni servicios D08. En el índice operativo figura como `APPROVED_CONCEPT_ONLY`, sin `authorApprovedNewLayout`.
 **Aún pendientes:** DAR-D07-02 (Taramin) y DAR-D07-03 (Syvaris). No actualizar `main` ni fusionar PR Draft sin autorización.
@@ -159,3 +159,122 @@ Acta vinculante: `../Auditorias/D08_RESOLUCION_LOTE_FINAL_2026-10-22.md`. La pob
 - DAR-D11-T03: ocho escenarios TEST_ONLY son especificaciones; ninguno es canon ni prueba de ejecución de reglas de dominio.
 - DAR-D11-T04: bloqueos de canon se conservan: Arven cultura UNKNOWN, geometrías, minas y recursos exactos pendientes; la Casa no crea armada ni fiscalidad interior nueva.
 - DAR-D11-T05: no se modifica CoreRPG, GDExtension o Host; dependencias CoreRPG se documentan en petición técnica separada. Revisión del autor obligatoria antes de fusionar PR D11; D12 no iniciada.
+
+## Resolución autoral de altitud — 25 de octubre de 2026
+
+**DAR-DP13-ALT-01 (APROBADA):** Montes Valkram, **opción A**: cordillera muy alta. Rango orientativo de **3.600–4.200 m para las grandes cumbres**, no para la totalidad del macizo ni cada montaña individual. Es una escala de diseño expresamente aprobada por el autor; las cotas de valles, cumbres secundarias, pasos, cabeceras y localidades permanecen sin definir.
+
+**DAR-DP13-ALT-02 (APROBADA):** una cumbre excepcional situada en el **sector norte de Valkram**, representada en el mapa del autor **entre la N y la O del rótulo «NORGARD»**, es **la mayor elevación de todo Norgard** y alcanza **aproximadamente 4.200 metros sobre el nivel del mar**. Su nombre propio, coordenadas, laderas exactas, jurisdicción precisa, extensión nival y existencia de glaciares permanecen **UNKNOWN**. «Cumbre septentrional de Valkram» es una descripción, NO un topónimo nuevo.
+
+**Compatibilidad transversal pendiente:** `Geografía/montanas.md` define los Montes Azurios como más altos, anchos y abruptos en términos generales. La elección más reciente del autor fija una **excepción puntual de altura máxima absoluta** para Valkram, compatible con un sistema Azurios globalmente más elevado/abrupto, pero se requiere armonización editorial futura a escala de Norgard para eliminar ambigüedades. **No se cambia la ficha superior en D.P13.**
+
+**Registro operativo:** `Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json`. Esta nueva decisión autoral no contradice la protección del perfil antiguo `darovan_dp13_physical_profiles_v0.1.json`, cuyos campos nulos corresponden a zonas de estudio sin cota única, no a las nuevas anclas individuales aprobadas.
+
+
+## Nuevas decisiones autorales de D.P13 — 25/10/2026
+
+**DAR-DP13-ALT-03 — APROBADA:** nombre oficial **«la Viuda»** (grafía exacta facilitada por el autor) para la cumbre excepcional de **~4.200 m**, en el norte de los Montes Valkram, la más alta de Norgard, identificada visualmente entre las letras N y O del título del mapa. El nombre deja de estar UNKNOWN; etimología, coordenadas, glaciar y territorio político preciso siguen UNKNOWN. Tiene prioridad sobre anotaciones anteriores de nombre pendiente.
+
+**DAR-DP13-ALT-04 — APROBADA:** **opción A** para las Montañas Elyra: cumbres más altas de **hasta aproximadamente 2.600 m**. No implica nombrar ni localizar una cumbre concreta, ni fijar toda la altimetría de la península de Taramin. Se conserva el carácter de Elyra como cordillera menor que Valkram, su posición y el alcance no runtime de D.P13.
+
+**Contratos:** `D.P13/12_altitud_valkram_autorizada.md`, `D.P13/13_altitud_elyra_autorizada.md` y JSON de decisión autoral correspondientes, con nuevas pruebas negativas. Las referencias previas a topónimo o alturas UNKNOWN son actas históricas anteriores y quedan resueltas en estos dos puntos, sin modificar D01–D12.
+
+
+## Decisión autoral DAR-DP13-SNOW-01 — Neveros permanentes en la Viuda (25/10/2026)
+
+**APROBADA — opción B.** En **la Viuda**, cumbre septentrional de los Montes Valkram (~4.200 m), **existen acumulaciones de nieve (neveros) que sobreviven al verano en sectores altos y protegidos**. Se confirma la persistencia localizada de nieve de un año a otro; **no** se afirma que todo el pico permanezca nevado ni que exista un límite altitudinal de nieve uniforme para el conjunto de Valkram.
+
+**No se han aprobado glaciares** con esta decisión. Su existencia real sigue **UNKNOWN**, no debe darse por demostrada ni descartada definitivamente sin otra decisión autoral. No se fijan tamaños, volúmenes, espesores, cotas de aparición, localización métrica de neveros, fechas de deshielo ni caudales. La aportación hídrica por fusión es una **posibilidad causal derivada**, no un nuevo nacimiento de río ni una cuantificación.
+
+**Fuente autoral:** elección expresa de opción B a la pregunta 3 de D.P13, 25 de octubre de 2026.
+
+**Registro estructurado:** `Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json` → `worldHighestSummit.snowPersistence` y `snowPersistenceDetail`. Referencias anteriores a «nieve permanente UNKNOWN» en registros históricos quedan parcialmente superadas **solo para la Viuda**; el régimen del resto de Valkram/Elyra permanece por definir.
+
+
+## DAR-DP13-PASS-01 — Altitudes orientativas de los principales pasos de Valkram (25/10/2026)
+
+**Decisión expresa del autor: OPCIÓN B (APROBADA).** Los principales **pasos naturales** practicables de los Montes Valkram tendrán un **rango de referencia aproximado de 1.400 a 2.200 metros sobre el nivel del mar**.
+
+Este intervalo describe la **categoría general de los pasos principales**, no la cota de todos los collados, ni una obligación de distribuirlos uniformemente en esas alturas. Pueden existir relieves menores o collados más altos si el canon y la futura topografía lo permiten; la decisión **no autoriza** afirmar nombres, cantidad, emplazamientos, rutas, pasos abiertos durante todo el año, infraestructuras, puentes ni caminos nuevos.
+
+**Comportamiento plausible (DERIVED_CONDITIONAL, no hecho local decretado):** a esas alturas, algunos pasos pueden sufrir nieve, hielo, viento o dificultades de circulación durante episodios fríos. No se aprueban cierres regulares, fechas, duraciones ni cotas de nieve de pasos individuales. **La Viuda (≈4.200 m) y sus neveros de verano permanecen intactos**.
+
+**Dato operativo:** `Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json` → `principalNaturalPasses`. Esta nueva autorización sustituye el UNKNOWN anterior referido al **rango general de pasos principales**, pero no resuelve la altitud individual de ningún paso ni la cartografía métrica. Fuentes: aprobación expresa del autor en conversación D.P13, 25/10/2026, y canon de `Geografía/montanas.md`.
+
+
+## DAR-DP13-CITY-ALT-01 — Altitud de Treihord (25/10/2026)
+
+**APROBADA — opción A:** banda de referencia de **150–350 m s. n. m.** para el emplazamiento urbano general de Treihord. No se fija una altitud exacta de la ciudad ni de sus ocho barrios, muelles o plazas. Tampoco cota del Belara, pendientes, accesos, nuevos puentes o navegabilidad. La ciudad sigue **junto al Belara, sin que el río la atraviese**, y su puerto continúa siendo exclusivamente industrial para barcazas de poco calado. Este rango es dato de **autor**, no altimetría métrica de un mapa.
+
+Documento: `D.P13/14_altitud_treihord_autorizada.md`; contrato: `Datos operativos/darovan_dp13_treihord_elevation_authorial_v0.1.json`. Uso para D.P16/D.P18 únicamente como referencia, sin iniciar esas fases.
+
+
+## DAR-DP13-CITY-ALT-02 — Altitud urbana orientativa de Veldora (25/10/2026)
+
+**OPCIÓN A APROBADA POR EL AUTOR:** el emplazamiento general de **Veldora** tiene un rango altitudinal aproximado de **0–60 m s. n. m.**, que admite una franja litoral baja y zonas interiores más elevadas sin fijar cotas individuales. La ciudad permanece como **principal puerto comercial marítimo de Darovan en el Golfo de Veldora**.
+
+No se asignan alturas a muelles, calles, barrios, mar, mareas, lechos o desembocaduras fluviales. Los ríos **Lhera** y **Veldora** conservan su independencia; la identidad del cauce mostrado tras la ciudad en el perfil visual sigue **UNKNOWN (DAR-P07)**. El dato de autor no es un levantamiento topográfico ni genera infraestructura, poblaciones, rutas o WorldState.
+
+Documento: `D.P13/15_altitud_veldora_autorizada.md`. JSON: `Datos operativos/darovan_dp13_veldora_elevation_authorial_v0.1.json`. Decisión destinada a D.P16/D.P18 sin iniciarlas.
+
+
+## Rectificación de la banda altitudinal de Veldora — 25/10/2026
+
+La decisión autoral **DAR-DP13-CITY-ALT-02** es **opción A, de 0–60 m** para el núcleo urbano principal. La versión que anotaba **opción B (0–150 m)** fue una discrepancia de registro y queda expresamente invalidada, sin modificar el canon hidrológico ni las fases previas. El dato autoral es aproximado, no cartografía métrica.
+
+## DAR-DP13-CITY-ALT-03 — Taramin, opción A (25/10/2026)
+
+**APROBADO POR EL AUTOR:** el **núcleo urbano principal de Taramin** tiene una banda altitudinal de referencia aproximada de **0–40 m s. n. m.**. No define una altitud exacta de barrios, muelles, nivel de agua, pendientes o plano georreferenciado. Mantiene un único **Thalen** con **dos brazos terminales** entre los que se sitúa la ciudad; las conexiones físicas, navegabilidad y emplazamiento exacto de estructuras permanecen UNKNOWN. No se crea isla, puente, vía, canal, puerto adicional ni escenario de inundación.
+
+Documento: `D.P13/16_altitud_taramin_autorizada.md`. Registro: `Datos operativos/darovan_dp13_taramin_elevation_authorial_v0.1.json`. La cifra es una decisión autoral y no una topografía métrica ejecutada; no inicia D.P16/D.P18.
+
+
+## DAR-DP13-CITY-ALT-04 — Syvaris: banda altitudinal aprobada (25/10/2026)
+
+**APROBACIÓN AUTORAL, opción A:** el **núcleo urbano principal de Syvaris** se sitúa aproximadamente entre **0 y 40 metros sobre el nivel del mar**, junto a la bahía principal de la isla. **No** implica que toda Syvaris o sus colinas/calas/acantilados estén por debajo de 40 m; tampoco fija coordenadas, barrios, pendientes, muelles, mareas, inundabilidad, abastecimiento de agua o instalaciones navales.
+
+Continúa siendo una isla de Norgard administrada por Darovan, con **puerto seguro y presencia naval del Reino (no armada privada Darovan)**. Se respetan sus sectores secos y verdes y sus bosques discontinuos, sin inventar infraestructuras, fenómenos, vías, calas adicionales o cartografía métrica.
+
+**Documentos:** `D.P13/17_altitud_syvaris_autorizada.md` y `Datos operativos/darovan_dp13_syvaris_elevation_authorial_v0.1.json`. D.P16/D.P18 pendientes, sin runtime.
+
+
+## DAR-DP13-ISLAND-ALT-01 — Máxima altitud de la isla de Syvaris (25/10/2026)
+
+**APROBADO POR EL AUTOR — opción A:** el **punto natural más elevado de toda la isla de Syvaris** estará aproximadamente **entre 200 y 400 m s. n. m.** La franja corresponde a su **máximo insular**; no fija una altura uniforme de las colinas ni certifica un pico a 300 m. La ciudad de Syvaris conserva por separado los **0–40 m** de su núcleo urbano junto a la bahía.
+
+La cumbre máxima exacta, su nombre, emplazamiento, cartografía, pendientes, cotas de acantilados y condiciones climáticas medidas siguen UNKNOWN. El norte/centro seco, el sur más verde y los bosques discontinuos no se alteran. No se generan montañas, rutas, ríos, infraestructuras ni runtime.
+
+Documentación: `D.P13/18_altitud_maxima_isla_syvaris_autorizada.md`; registro: `Datos operativos/darovan_dp13_syvaris_island_relief_authorial_v0.1.json`. No supone iniciar D.P16/D.P18.
+
+
+## DAR-DP13-ISLAND-ALT-02 — Cota máxima insular de Arven (25/10/2026)
+
+**APROBACIÓN EXPRESA DEL AUTOR — opción B:** la **máxima elevación natural de la isla de Arven** se situará aproximadamente **entre 250 y 500 m s. n. m.** Es un intervalo para el **máximo de la isla**, no una altitud para todas sus lomas, acantilados, aldeas o costa. No se elige una altura puntual ni se bautiza una montaña.
+
+Se mantiene el **Bosque del Manto Verde** (aproximadamente **90 %** de Arven, continuo y principalmente de coníferas), las aldeas concentradas principalmente en la costa interior orientada al Golfo de Veldora, la caza y la gestión maderera limitada. Se conserva la jurisdicción de **Casa Darovan**. Sin alturas de aldeas, geometría, manantiales, nuevos caminos o gameplay runtime. Ver `D.P13/19_altitud_maxima_isla_arven_autorizada.md` y `Datos operativos/darovan_dp13_arven_island_relief_authorial_v0.1.json`.
+
+
+## DAR-DP13-HILLS-01 — Colinas del norte y centro de Taramin (25/10/2026)
+
+**AUTOR APROBÓ OPCIÓN B:** las colinas **del norte y centro de la península de Taramin, fuera de Elyra**, tienen **elevaciones características aproximadas de 300–600 m s. n. m.** Es rango de las **colinas del sector**, NO una altitud uniforme de toda la zona, un máximo de la península o una cifra válida para las Montañas Elyra.
+
+No modifica la altura del núcleo de Taramin (**0–40 m**), ni la referencia alta de Elyra (hasta **~2.600 m**); sigue el canon de colinas ocres y transición semiárida, Thalen de dos brazos terminales y Bosque de Taramin meridional. No define cotas individuales, barrancos específicos, ríos, rutas, localidades, precipitaciones ni terreno ejecutable.
+
+**Trazabilidad:** `D.P13/20_colinas_norte_centro_taramin_autorizadas.md` y `Datos operativos/darovan_dp13_taramin_north_central_hills_authorial_v0.1.json`. Sin modificar D01–D12 ni iniciar D.P14–D.P18.
+
+
+## DAR-DP13-FOOTHILLS-01 — Piedemonte occidental de Valkram (25/10/2026)
+
+**APROBACIÓN DEL AUTOR, opción B:** las **elevaciones características de las estribaciones occidentales de los Montes Valkram** se sitúan aproximadamente entre **400 y 900 m s. n. m.** No es un rango uniforme para cada ladera, valle, aldea, ni la cota máxima de la cordillera. Mantiene las cumbres (3.600–4.200 m), **la Viuda (~4.200 m)**, los pasos naturales principales (1.400–2.200 m) y la altura urbana general de **Treihord (150–350 m)** como referencias distintas.
+
+No modifica el curso del **Belara**, que pasa junto a Treihord sin atravesarlo. La unidad `d01_valkram_oeste` sigue siendo un ámbito cualitativo y no una frontera política. No se atribuyen pendientes medidas, bosque altitudinal concreto, nuevos ríos, caminos, pasos, núcleos ni terreno generado.
+
+Documentación: `D.P13/21_piedemonte_occidental_valkram_autorizado.md`. Contrato: `Datos operativos/darovan_dp13_valkram_west_foothills_authorial_v0.1.json`. D.P18 queda pendiente.
+
+
+## Cierre delegado de preguntas Q13–Q28 — 25/10/2026
+
+El autor concede autonomía expresa al asistente para escoger las opciones recomendadas de todas las preguntas pendientes. Se registran **16 opciones B (Q13–Q28)**, de las cuales cuatro son nuevas referencias altitudinales: **valles interiores de Valkram 700–1.300 m**, **pasos principales de Elyra 900–1.500 m**, **valles interiores de Elyra 400–900 m**, **lomas del ámbito forestal meridional de Taramin fuera de Elyra 150–500 m**. Las restantes protegen condiciones climáticas, agua menor, suelo, vegetación y riesgos sin inventar mediciones.
+
+Las decisiones son del **asistente por delegación** y no respuestas individuales dadas por el autor; en ningún caso suponen geometría métrica, vientos medidos, glaciares, cauces ubicados o simulación CoreRPG/Godot. Documentación: `D.P13/22_cierre_delegado_preguntas_y_opciones.md`; datos: `Datos operativos/darovan_dp13_delegated_decisions_authorized_v0.1.json`. D.P14 y fases posteriores siguen sin iniciar; PR #39 Draft, main sin fusionar.
+

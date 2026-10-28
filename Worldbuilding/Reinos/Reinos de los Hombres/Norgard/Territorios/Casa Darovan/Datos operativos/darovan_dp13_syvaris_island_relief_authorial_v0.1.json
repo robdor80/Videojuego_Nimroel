@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_syvaris_island_maximum_elevation_authorial",
+  "version": "0.1.0",
+  "phase": "D.P13",
+  "authority": "AUTHORED_AUTHOR_DECISION",
+  "authorDecisionId": "DAR-DP13-ISLAND-ALT-01",
+  "authorDecisionDate": "2026-10-25",
+  "geographyId": "syvaris_island",
+  "geographyName": "isla de Syvaris",
+  "adminOwner": "casa_darovan",
+  "selectedOption": "A",
+  "approximateHighestNaturalElevationBandMeters": {
+    "min": 200,
+    "max": 400
+  },
+  "semantics": "the_islands_maximum_height_lies_approximately_within_this_band_not_a_uniform_elevation_of_hills",
+  "exactMaximumElevationMeters": null,
+  "highestSummitOfficialName": null,
+  "highestSummitCoordinates": null,
+  "elevatedAreasPolygon": null,
+  "terrainHeightmap": null,
+  "specificHillsAndCliffElevations": [],
+  "officialMountainPeakInstances": [],
+  "generalizedSnowClimateInference": null,
+  "permanentSnow": null,
+  "separateCityAltitude": {
+    "cityId": "syvaris",
+    "urbanCoreBandMetersApprox": {
+      "min": 0,
+      "max": 40
+    },
+    "cityDecisionId": "DAR-DP13-CITY-ALT-04"
+  },
+  "protectedPreexistingCanon": {
+    "cityAtMainBay": true,
+    "drierNorthCentralSectors": true,
+    "greenerSouth": true,
+    "discontinuousSmallForests": true,
+    "notDesert": true,
+    "islandIsNorgard": true,
+    "administeredByDarovan": true
+  },
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_syvaris_elevation_authorial_v0.1.json"
+  ],
+  "authorBasis": "Pregunta 9 de D.P13 aprobada expresamente por el autor: opción A para la elevación máxima aproximada de la isla de Syvaris",
+  "implementation": {
+    "georeferencedMap": false,
+    "terrainCreated": false,
+    "worldStateRuntime": false,
+    "changedPriorPhases": false
+  }
+}

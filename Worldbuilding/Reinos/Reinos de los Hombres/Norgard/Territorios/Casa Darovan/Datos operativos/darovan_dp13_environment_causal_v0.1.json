@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_environment_causal_contract",
+  "version": "0.1.0",
+  "status": "documented_not_executed",
+  "authorityChain": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "locality",
+    "world_state"
+  ],
+  "inputs": [
+    "authored_anchors",
+    "terrain_if_present",
+    "study_unit",
+    "observed_weather_if_present",
+    "season_if_present",
+    "soil_if_present",
+    "vegetation_if_present",
+    "previous_state_if_present"
+  ],
+  "order": [
+    "authorial_guards",
+    "macrorelief",
+    "microrelief",
+    "flow_divides",
+    "basins",
+    "minor_hydro_candidates",
+    "weather_and_snow_reservoir",
+    "infiltration_runoff_soil",
+    "vegetation_humidity_visibility",
+    "risk_and_travel_filters",
+    "persisted_delta_if_runtime"
+  ],
+  "rules": [
+    {
+      "id": "C01",
+      "cause": [
+        "height",
+        "aspect",
+        "weather_airflow"
+      ],
+      "effect": [
+        "temperature_modifier",
+        "orographic_exposure"
+      ],
+      "requires": [
+        "height",
+        "aspect",
+        "weather_airflow"
+      ],
+      "unknownFallback": "UNKNOWN"
+    },
+    {
+      "id": "C02",
+      "cause": [
+        "rain",
+        "snowmelt",
+        "catchment",
+        "soil_infiltration"
+      ],
+      "effect": [
+        "runoff",
+        "conditional_discharge"
+      ],
+      "requires": [
+        "valid_basin",
+        "valid_receiver"
+      ],
+      "unknownFallback": "UNKNOWN"
+    },
+    {
+      "id": "C03",
+      "cause": [
+        "slope",
+        "cover",
+        "soil_wetness",
+        "rain"
+      ],
+      "effect": [
+        "erosion_risk",
+        "mud_possible"
+      ],
+      "requires": [
+        "material",
+        "real_wetting"
+      ],
+      "unknownFallback": "UNKNOWN"
+    },
+    {
+      "id": "C04",
+      "cause": [
+        "canopy",
+        "relative_humidity",
+        "wind"
+      ],
+      "effect": [
+        "local_drying_modifier",
+        "fog_candidate"
+      ],
+      "requires": [
+        "condensation_conditions_for_fog"
+      ],
+      "unknownFallback": "NO_FOG_BY_DEFAULT"
+    },
+    {
+      "id": "C05",
+      "cause": [
+        "season",
+        "snowpack",
+        "thermal_event"
+      ],
+      "effect": [
+        "meltwater_supply",
+        "surface_ice_possible"
+      ],
+      "requires": [
+        "snowpack_exists",
+        "thermal_balance"
+      ],
+      "unknownFallback": "UNKNOWN"
+    },
+    {
+      "id": "C06",
+      "cause": [
+        "marine_exposure",
+        "effective_airflow"
+      ],
+      "effect": [
+        "coastal_humidity_modifier",
+        "wind_exposure"
+      ],
+      "requires": [
+        "actual_coastal_location"
+      ],
+      "unknownFallback": "UNKNOWN"
+    },
+    {
+      "id": "C07",
+      "cause": [
+        "soil_saturation",
+        "gradient",
+        "receiver"
+      ],
+      "effect": [
+        "localized_waterlogging_candidate"
+      ],
+      "requires": [
+        "low_drainage_or_water_table"
+      ],
+      "unknownFallback": "UNKNOWN"
+    },
+    {
+      "id": "C08",
+      "cause": [
+        "persisted_weather",
+        "drying_interval",
+        "cover",
+        "soil"
+      ],
+      "effect": [
+        "wet_surface_memory"
+      ],
+      "requires": [
+        "prior_event_or_actual_moisture"
+      ],
+      "unknownFallback": "UNKNOWN"
+    },
+    {
+      "id": "C09",
+      "cause": [
+        "landform",
+        "water_balance",
+        "stability"
+      ],
+      "effect": [
+        "future_settlement_suitability_filter"
+      ],
+      "requires": [
+        "actual_site_before_D.P14"
+      ],
+      "unknownFallback": "UNASSESSED"
+    },
+    {
+      "id": "C10",
+      "cause": [
+        "authorized_disturbance",
+        "vegetation_cover",
+        "elapsed_time"
+      ],
+      "effect": [
+        "cover_recovery_candidate"
+      ],
+      "requires": [
+        "persistent_disturbance_record"
+      ],
+      "unknownFallback": "NO_CHANGE"
+    }
+  ],
+  "futureEntityContract": {
+    "definitionId": "UNKNOWN_UNTIL_MATERIALIZATION",
+    "entityId": "UNKNOWN_UNTIL_MATERIALIZATION",
+    "generatorVersionRequired": true,
+    "seedRequired": true,
+    "topologyRequired": true,
+    "writeAuthority": "corerpg_only_when_implemented"
+  },
+  "persistedFieldsProposed": [
+    "snowpack",
+    "soil_wetness",
+    "surface_mud",
+    "channel_state",
+    "vegetation_disturbance",
+    "erosion_delta",
+    "fog_event_if_persistent"
+  ],
+  "noClaims": {
+    "coreRpgImplementation": false,
+    "godotImplementation": false,
+    "liveWorldState": false,
+    "measuredTerrain": false
+  },
+  "negativeCases": [
+    {
+      "id": "N01",
+      "given": "rain_without_valid_catchment",
+      "mustReject": "new_minor_channel"
+    },
+    {
+      "id": "N02",
+      "given": "green_syvaris_bay",
+      "mustReject": "confirmed_freshwater_spring"
+    },
+    {
+      "id": "N03",
+      "given": "forest_present",
+      "mustReject": "rainfall_increase_as_fact"
+    },
+    {
+      "id": "N04",
+      "given": "thalen_terminal_bifurcation",
+      "mustReject": "second_named_river"
+    },
+    {
+      "id": "N05",
+      "given": "dry_taramin_gully",
+      "mustReject": "thalen_dried_by_default"
+    },
+    {
+      "id": "N06",
+      "given": "cool_event_on_coast",
+      "mustReject": "permanent_glacier"
+    },
+    {
+      "id": "N07",
+      "given": "nearby_gulf_of_veldora",
+      "mustReject": "veldora_lhera_join"
+    },
+    {
+      "id": "N08",
+      "given": "return_to_area",
+      "mustReject": "environment_reset_without_cause"
+    }
+  ]
+}

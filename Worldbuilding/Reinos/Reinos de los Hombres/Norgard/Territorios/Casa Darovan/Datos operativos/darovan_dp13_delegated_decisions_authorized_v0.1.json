@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_delegated_decisions_authorized_2026_10_25",
+  "phase": "D.P13",
+  "delegation": {
+    "authorizedBy": "author",
+    "authorizedDate": "2026-10-25",
+    "method": "assistant_chooses_recommended_options_without_additional_questions",
+    "limits": "documentary physical-worldbuilding choices only; no merge or next phase without explicit authorization",
+    "attribution": "options chosen by assistant under general authorization, not personally selected individually by author"
+  },
+  "status": "DESIGN_DECISIONS_CLOSED_WITH_MATERIALIZATION_RESERVES",
+  "directAuthorCanon": {
+    "valkramHighSummitName": "la Viuda",
+    "valkramHighSummitApproxMeters": 4200,
+    "valkramMainPassesMeters": {
+      "min": 1400,
+      "max": 2200
+    },
+    "valkramWestFoothillsMeters": {
+      "min": 400,
+      "max": 900
+    },
+    "elyraTopApproxMeters": 2600,
+    "treihordUrbanMeters": {
+      "min": 150,
+      "max": 350
+    },
+    "veldoraUrbanMeters": {
+      "min": 0,
+      "max": 60
+    },
+    "taraminUrbanMeters": {
+      "min": 0,
+      "max": 40
+    },
+    "syvarisUrbanMeters": {
+      "min": 0,
+      "max": 40
+    },
+    "syvarisIslandMaximumMeters": {
+      "min": 200,
+      "max": 400
+    },
+    "arvenIslandMaximumMeters": {
+      "min": 250,
+      "max": 500
+    },
+    "taraminNorthCenterHillsMeters": {
+      "min": 300,
+      "max": 600
+    },
+    "laViudaSnowPatchesSurviveSummer": true
+  },
+  "decisions": [
+    {
+      "id": "DAR-DP13-DELEGATED-Q13",
+      "question": 13,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Valles interiores de Valkram",
+      "scopeId": "valkram_valleys",
+      "characteristicElevationMetersApprox": {
+        "min": 700,
+        "max": 1300
+      },
+      "scopeRule": "cotas típicas de fondos de valle, no todos los fondos",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q14",
+      "question": 14,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Pasos naturales principales de Elyra",
+      "scopeId": "elyra_main_passes",
+      "characteristicElevationMetersApprox": {
+        "min": 900,
+        "max": 1500
+      },
+      "scopeRule": "intervalo de collados principales, no caminos",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q15",
+      "question": 15,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Valles interiores de Elyra",
+      "scopeId": "elyra_valleys",
+      "characteristicElevationMetersApprox": {
+        "min": 400,
+        "max": 900
+      },
+      "scopeRule": "cotas típicas de fondos interiores, no toda Elyra",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q16",
+      "question": 16,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Lomas meridionales del ámbito del Bosque de Taramin fuera de Elyra",
+      "scopeId": "taramin_south_hills",
+      "characteristicElevationMetersApprox": {
+        "min": 150,
+        "max": 500
+      },
+      "scopeRule": "altura de colinas características, sin crear particiones del bosque",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q17",
+      "question": 17,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Transición fría septentrional",
+      "scopeId": "northern_cold",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "gradiente térmico condicionado por latitud relativa, altitud y episodios; sin límites métricos",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q18",
+      "question": 18,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Relieve litoral occidental",
+      "scopeId": "west_coast",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "acantilados donde las fuentes los permiten, sin cotas generalizadas",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q19",
+      "question": 19,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Nieve, neveros y deshielo",
+      "scopeId": "snow",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "nieve estacional condicionada; neveros estivales solo autorizados en la Viuda; glaciares UNKNOWN",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q20",
+      "question": 20,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Viento dominante y orientación",
+      "scopeId": "wind",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "dirección y barlovento por episodio; no rosa anual inventada",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q21",
+      "question": 21,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Precipitación y contrastes",
+      "scopeId": "rain",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "humedad marina dependiente de episodios, Taramin interior semiárida y sur relativamente más húmedo",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q22",
+      "question": 22,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Niebla y humedad",
+      "scopeId": "fog",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "fenómeno condicionado a saturación y estabilidad; no niebla diaria obligatoria",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q23",
+      "question": 23,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Suelos y drenaje",
+      "scopeId": "soil",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "dependencia de pendiente, cubierta, sustrato y humedad; sin fertilidad automática",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q24",
+      "question": 24,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Cuencas y agua menor",
+      "scopeId": "streams",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "requiere terreno, cuenca y receptor válidos; cinco ríos y cuatro sistemas intactos",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q25",
+      "question": 25,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Riesgos de crecida",
+      "scopeId": "flood",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "riesgos solo tras nivel de agua, exposición y geometría; no inundaciones decretadas",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q26",
+      "question": 26,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Transitabilidad de pasos",
+      "scopeId": "pass_weather",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "afectación meteorológica solo cuando existan tramos materiales; sin cierres fijos",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q27",
+      "question": 27,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Cubierta forestal",
+      "scopeId": "forest",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "proteger Agujas, Pilares/Taramin unitarios, Syvaris disperso y Arven Manto Verde ~90%",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    },
+    {
+      "id": "DAR-DP13-DELEGATED-Q28",
+      "question": 28,
+      "selectedOption": "B",
+      "authority": "ASSISTANT_UNDER_AUTHOR_BLANKET_DELEGATION",
+      "subject": "Materialización cartográfica y simulación",
+      "scopeId": "mapping",
+      "characteristicElevationMetersApprox": null,
+      "scopeRule": "solo después de disponer de datos físicos coherentes; no fingir DEM ni CoreRPG/Godot",
+      "authorPersonallyChoseThisOption": false,
+      "createsGeoreferencedGeometry": false,
+      "claimsMeasuredValues": false
+    }
+  ],
+  "hydrologyGuards": {
+    "rivers": [
+      "belara",
+      "lhera",
+      "veldora",
+      "fhalion",
+      "thalen"
+    ],
+    "systemCount": 4,
+    "belaraCrossesTreihord": false,
+    "thalenTerminalArms": 2,
+    "fhalionMouthUnconfirmed": true
+  },
+  "unresolvedRequiringPhysicalData": [
+    "georeferenced_elevation_grid",
+    "validated_minor_stream_positions",
+    "verified_sources_and_mouths",
+    "measured_climate_and_precipitation",
+    "prevailing_wind_statistics",
+    "soil_and_aquifer_measurements",
+    "bathymetry_and_flood_levels",
+    "permanent_glacier_presence",
+    "executable_CoreRPG_environmental_simulation"
+  ],
+  "prohibitions": {
+    "newGeographicNames": [],
+    "newRivers": [],
+    "newRoads": [],
+    "newSettlements": [],
+    "newBridges": [],
+    "newCanals": [],
+    "exactCoordinatesAuthorized": false,
+    "meteorologicalMeasurementsApproved": false,
+    "heightmapCreated": false,
+    "glaciersConfirmed": false,
+    "engineSimulationExecuted": false,
+    "mainModified": false,
+    "nextPhaseStarted": false,
+    "mayMergePr": false
+  }
+}

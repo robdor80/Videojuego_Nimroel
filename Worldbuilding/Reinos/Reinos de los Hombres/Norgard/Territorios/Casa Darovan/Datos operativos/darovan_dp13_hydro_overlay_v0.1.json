@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_hydro_overlay",
+  "version": "0.1.0",
+  "status": "derived_design_not_runtime",
+  "canonMutation": false,
+  "containsGeometry": false,
+  "containsNamedMinorRivers": false,
+  "containsNavigabilityClaims": false,
+  "canonicalRivers": [
+    "belara",
+    "lhera",
+    "veldora",
+    "fhalion",
+    "thalen"
+  ],
+  "systems": [
+    {
+      "id": "belara_lhera",
+      "riverIds": [
+        "belara",
+        "lhera"
+      ],
+      "canonicalOutlets": [
+        "golfo_de_norgard",
+        "golfo_de_veldora"
+      ],
+      "authorizedSplit": "belara_to_lhera",
+      "splitCoordinates": null,
+      "riverFlowRatio": null,
+      "minorDrainageReceivers": "UNKNOWN_UNTIL_DIVIDE"
+    },
+    {
+      "id": "veldora",
+      "riverIds": [
+        "veldora"
+      ],
+      "canonicalOutlets": [
+        "golfo_de_veldora"
+      ],
+      "authorizedSplit": null,
+      "splitCoordinates": null,
+      "riverFlowRatio": null,
+      "minorDrainageReceivers": "UNKNOWN_UNTIL_DIVIDE"
+    },
+    {
+      "id": "fhalion",
+      "riverIds": [
+        "fhalion"
+      ],
+      "canonicalOutlets": [],
+      "authorizedSplit": null,
+      "splitCoordinates": null,
+      "riverFlowRatio": null,
+      "minorDrainageReceivers": "UNKNOWN_UNTIL_DIVIDE"
+    },
+    {
+      "id": "thalen",
+      "riverIds": [
+        "thalen"
+      ],
+      "canonicalOutlets": [
+        "golfo_de_norgard"
+      ],
+      "authorizedSplit": "two_terminal_arms_around_taramin",
+      "splitCoordinates": null,
+      "riverFlowRatio": null,
+      "minorDrainageReceivers": "UNKNOWN_UNTIL_DIVIDE"
+    }
+  ],
+  "minorFeatureTypes": [
+    "minor_perennial_channel_candidate",
+    "seasonal_channel_candidate",
+    "ephemeral_channel_candidate",
+    "spring_candidate",
+    "wetland_candidate"
+  ],
+  "mandatoryInputs": [
+    "terrain_elevation",
+    "flow_direction",
+    "catchment_area",
+    "valid_downstream_receiver",
+    "sustained_or_event_water_supply"
+  ],
+  "cannotInferFrom": [
+    "city_proximity",
+    "forest_name",
+    "single_rain_event_alone",
+    "island_bay_greenery",
+    "political_border"
+  ],
+  "candidateProfiles": [
+    {
+      "studyUnitId": "d01_valkram_oeste",
+      "candidateRule": "headwater_possible_if_western_divide_and_supply",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_elyra_paso_peninsular",
+      "candidateRule": "mountain_divide_and_receiver_required",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_norte_transicion",
+      "candidateRule": "cold_drainage_candidate_with_unknown_receiver",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_aguja_litoral",
+      "candidateRule": "lhera_adjacent_or_direct_coast_only_if_valid_divide",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_belara_treihord",
+      "candidateRule": "belara_riparian_receptor_only_with_topology",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_veldora_litoral",
+      "candidateRule": "independent_mouths_no_cross_connection",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_linde_caminos",
+      "candidateRule": "no_stream_from_path_or_forest_presence",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_pilares_sur",
+      "candidateRule": "piedmont_microbasins_require_receivers",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_taramin_norte_centro",
+      "candidateRule": "seasonal_gullies_are_type_not_instances",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_taramin_bosque_sur",
+      "candidateRule": "unknown_receivers_forest_does_not_fix_basin",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_syvaris",
+      "candidateRule": "short_island_microbasins_candidate_not_named",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    },
+    {
+      "studyUnitId": "d01_arven_contexto",
+      "candidateRule": "unknown_island_water_availability",
+      "assignedBasin": null,
+      "geometry": null,
+      "featureInstances": [],
+      "status": "DERIVED_CONDITIONAL"
+    }
+  ],
+  "topologyGuards": {
+    "belaraAdjacentTreihord": true,
+    "belaraCrossesTreihord": false,
+    "lheraBranchesFrom": "belara",
+    "veldoraConnectedToBelaraLhera": false,
+    "fhalionMouth": "UNKNOWN",
+    "thalenTerminalArms": 2,
+    "taraminBetweenArms": true,
+    "namedMinorRiverCount": 0,
+    "bridgesOrFordsCreated": 0
+  },
+  "waterStates": [
+    "unknown",
+    "inactive",
+    "low",
+    "ordinary",
+    "high",
+    "overflow"
+  ],
+  "permanenceClasses": [
+    "UNKNOWN",
+    "perennial_candidate",
+    "seasonal_candidate",
+    "ephemeral_candidate"
+  ],
+  "runtime": {
+    "implemented": false,
+    "generatedSegments": 0,
+    "persistedWorldState": false
+  },
+  "sources": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d02_hydro_network_v0.1.json",
+    "Worldbuilding/Sistemas/Nimroel Core/Datos operativos/nimroel_physical_geography_drainage_contract_v0.1.json"
+  ]
+}

@@ -1,0 +1,66 @@
+# D.P13 — Territorio físico completo · Casa Darovan
+
+**Fecha:** 25-10-2026 · **Rama:** `feat/darovan-dp13-territorio-fisico` · **Autoridad:** diseño DERIVED_CONDITIONAL, sin nuevos hechos canónicos.
+
+## Itinerario de estudio
+
+- `00_comparacion_fuentes_y_metodo.md` — contraste Valrik/Treskal y autoridad.
+- `01_regiones_y_subzonas.md` — cobertura de doce unidades.
+- `02_relieve_y_microrelieve.md` — capas de terreno y divisorias.
+- `03_cuencas_y_agua_menor.md` — ríos, cuencas y red menor candidata.
+- `04_temperatura_y_estaciones.md` — temperaturas y cuatro estaciones.
+- `05_lluvia_nieve_y_deshielo.md` — precipitación, hielo y balance hídrico.
+- `06_viento_humedad_niebla.md` — exposición, viento y visibilidad.
+- `07_suelos_drenaje_erosion.md` — suelos y respuesta al agua.
+- `08_bosques_vegetacion_ecosistemas.md` — identidad y dinámica forestal.
+- `09_inferencia_causal_y_persistencia.md` — integración ambiental.
+- `10_contratos_y_validacion.md` — JSON, pruebas y host futuro.
+- `11_auditoria_suficiencia.md` — evaluación comparable con Valrik/Treskal.
+
+## Datos
+
+En `../Datos operativos/`: `darovan_dp13_physical_profiles_v0.1.json`, `darovan_dp13_hydro_overlay_v0.1.json`, `darovan_dp13_environment_causal_v0.1.json`. La carpeta D.P13 no sustituye fuentes D01–D03. Estados espaciales concretos, política, nuevas poblaciones y hechos de juego quedan fuera de su alcance.
+
+## Verificación
+
+`python Tools/DarovanDP13/validate.py`, regresiones D01–D12 y CI Windows/Linux. **Documento de diseño, no juego en funcionamiento.**
+
+
+## Ampliación autoral de altimetría
+
+- `12_altitud_valkram_autorizada.md`: opción B y cumbre septentrional de ~4.200 m, la más alta de Norgard, con ubicación visual aproximada y nombre oficial **la Viuda** (DAR-DP13-ALT-03).
+- `../Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json`: anclas elevacionales **AUTHORED**, independientes del perfil de doce zonas todavía sin cotas.
+
+- `13_altitud_elyra_autorizada.md`: opción A de Montañas Elyra, cumbres máximas de hasta ~2.600 m, sin inventar un pico individual.
+- `../Datos operativos/darovan_dp13_elyra_altitude_authorial_v0.1.json`: altura orientativa de Elyra por decisión expresa del autor.
+
+- **DAR-DP13-SNOW-01:** opción B de nieve para **la Viuda**: neveros localizados que sobreviven al verano en zonas altas y protegidas. No afirma glaciares, cota de nieve, ni permanencia nival general de Valkram.
+
+- **DAR-DP13-PASS-01:** principales pasos naturales de Valkram con rango altitudinal orientativo **1.400–2.200 m**, sin crear pasos nominados, rutas ni geometría de terreno.
+
+- `14_altitud_treihord_autorizada.md`: banda urbana autoral **150–350 m** (opción A), sin cotas individuales ni plano métrico.
+- `../Datos operativos/darovan_dp13_treihord_elevation_authorial_v0.1.json`: ancla de altitud referencial de Treihord.
+
+- `15_altitud_veldora_autorizada.md`: Veldora opción A; franja urbana de referencia **0–60 m** junto al golfo, sin cotas de muelles ni barrios.
+- `../Datos operativos/darovan_dp13_veldora_elevation_authorial_v0.1.json`: ancla de altitud expresamente aprobada para Veldora.
+
+- `16_altitud_taramin_autorizada.md`: Taramin opción A, referencia de altitud para núcleo urbano principal **0–40 m**, sin nuevos cruces ni infraestructura.
+- `../Datos operativos/darovan_dp13_taramin_elevation_authorial_v0.1.json`: aprobación autoral y guardas del Thalen de dos brazos.
+
+- `17_altitud_syvaris_autorizada.md`: ciudad de Syvaris, núcleo principal junto a bahía, opción A **0–40 m**, sin extrapolar al relieve de la isla.
+- `../Datos operativos/darovan_dp13_syvaris_elevation_authorial_v0.1.json`: contrato autoral y guardas de puerto, jurisdicción y ecosistemas.
+
+- `18_altitud_maxima_isla_syvaris_autorizada.md`: opción A para **máximo altitudinal de la isla** entre ~200 y 400 m, separada de la cota urbana 0–40 m.
+- `../Datos operativos/darovan_dp13_syvaris_island_relief_authorial_v0.1.json`: contrato autoral del máximo del relieve insular sin terreno generado.
+
+- `19_altitud_maxima_isla_arven_autorizada.md`: **Arven**, opción B, cota máxima natural orientativa **250–500 m**, no alturas de aldeas.
+- `../Datos operativos/darovan_dp13_arven_island_relief_authorial_v0.1.json`: ancla autoral con protecciones de Manto Verde y los asentamientos costeros existentes.
+
+- `20_colinas_norte_centro_taramin_autorizadas.md`: colinas características del norte/centro de Taramin **300–600 m (B)**, excluyendo Elyra; sin geometría.
+- `../Datos operativos/darovan_dp13_taramin_north_central_hills_authorial_v0.1.json`: banda de cotas de colinas y guardas de canon.
+
+- `21_piedemonte_occidental_valkram_autorizado.md`: elevaciones características **400–900 m** (B), distintas de las cumbres, pasos y Treihord.
+- `../Datos operativos/darovan_dp13_valkram_west_foothills_authorial_v0.1.json`: banda autoral y guardas del canon físico de Valkram.
+
+- `22_cierre_delegado_preguntas_y_opciones.md`: elecciones Q13–Q28 del asistente por delegación autoral, cuatro bandas altitudinales y doce reglas ambientales, sin atribuciones falsas.
+- `../Datos operativos/darovan_dp13_delegated_decisions_authorized_v0.1.json`: opciones, procedencia, guardas y reservas materiales.

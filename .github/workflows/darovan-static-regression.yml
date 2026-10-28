@@ -1,4 +1,4 @@
-name: Darovan static regression D01-D11
+name: Darovan static regression D01-D12
 
 on:
   pull_request:
@@ -7,6 +7,7 @@ on:
       - '.github/workflows/darovan-static-regression.yml'
       - 'ContentPacks/darovan-territory/**'
       - 'Tools/DarovanD11/**'
+      - 'Tools/DarovanD12/**'
   push:
     branches: [main]
     paths:
@@ -19,7 +20,7 @@ permissions:
 
 jobs:
   static-regressions:
-    name: Python D01-D11 · ${{ matrix.os }}
+    name: Python D01-D12 · ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     timeout-minutes: 35
     strategy:
@@ -53,6 +54,9 @@ jobs:
         run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d09.py"
       - name: Validate D10 cultural profiles, authority and negative mutations
         run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d10.py"
+
+      - name: D12 cross-phase integral audit and negative tests
+        run: python Tools/DarovanD12/validate.py
 
       - name: Checkout CoreRPG at fixed 4.13 SHA (separate source)
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4

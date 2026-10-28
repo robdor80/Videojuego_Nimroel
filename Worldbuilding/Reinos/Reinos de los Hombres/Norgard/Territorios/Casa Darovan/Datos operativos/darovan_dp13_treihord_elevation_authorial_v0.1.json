@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_treihord_elevation_authorial",
+  "version": "0.1.0",
+  "phase": "D.P13",
+  "status": "AUTHORED_AUTHOR_DECISION_NOT_GEOMETRY",
+  "authorDecisionId": "DAR-DP13-CITY-ALT-01",
+  "authorDecisionDate": "2026-10-25",
+  "settlementId": "treihord",
+  "type": "canonical_city",
+  "role": "darovan_capital",
+  "selectedOption": "A",
+  "urbanAltitudeReferenceBandMetersApprox": {
+    "min": 150,
+    "max": 350
+  },
+  "referenceType": "approximate_general_urban_site_not_every_district",
+  "urbanAltitudeSingleValueMeters": null,
+  "cityCenterCoordinates": null,
+  "neighborhoodElevations": [],
+  "elevationOfBelaraAtPortMeters": null,
+  "dockLevelMeters": null,
+  "embankmentSlopePercent": null,
+  "cadastralOrStreetTopography": null,
+  "terrainElevationRaster": null,
+  "autoralAnchorNotes": [
+    "Ciudad interior junto al Belara sin ser atravesada por el río",
+    "Puerto fluvial industrial de barcazas de poco calado",
+    "La elevación general no fija por sí sola profundidad, navegabilidad, pendientes ni cota del río"
+  ],
+  "authority": "AUTHORED_AUTHOR_DECISION",
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json"
+  ],
+  "worldStateRuntimeImplemented": false,
+  "mapGeoreferenced": false,
+  "createsNewInfrastructure": false,
+  "legacyPhaseFilesModified": false
+}

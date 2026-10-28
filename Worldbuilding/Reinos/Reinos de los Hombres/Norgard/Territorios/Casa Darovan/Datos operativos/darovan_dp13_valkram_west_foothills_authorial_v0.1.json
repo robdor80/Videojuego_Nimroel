@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp13_valkram_west_foothills_authorial",
+  "version": "0.1.0",
+  "phase": "D.P13",
+  "authority": "AUTHORED_AUTHOR_DECISION",
+  "authorDecisionId": "DAR-DP13-FOOTHILLS-01",
+  "authorDecisionDate": "2026-10-25",
+  "landformId": "valkram_west_foothills",
+  "mountainRange": "Montes Valkram",
+  "direction": "western",
+  "sourceStudyUnitId": "d01_valkram_oeste",
+  "option": "B",
+  "characteristicFoothillElevationBandMetersApprox": {
+    "min": 400,
+    "max": 900
+  },
+  "semantics": "characteristic_western_foothill_elevations_not_every_slope_valley_or_valkram_summit",
+  "zonePolygon": null,
+  "heightmap": null,
+  "uniformHeightMeters": null,
+  "exactFoothillPeakHeightMeters": null,
+  "individualSlopePercent": null,
+  "valleyFloorHeightsMeters": [],
+  "roadOrPassLocations": [],
+  "newValleyNames": [],
+  "newWatercourseNames": [],
+  "newBridgesOrSettlements": [],
+  "exactRiverElevationsMeters": null,
+  "climateMeasurements": null,
+  "forestCoverByAltitude": null,
+  "observedSnowlineMeters": null,
+  "sourceCanonProtection": {
+    "valkramMajorSummitsBandMetersApprox": {
+      "min": 3600,
+      "max": 4200
+    },
+    "valkramHighestPeakName": "la Viuda",
+    "valkramHighestPeakApproxMeters": 4200,
+    "valkramPrincipalPassesBandMetersApprox": {
+      "min": 1400,
+      "max": 2200
+    },
+    "treihordUrbanCoreBandMetersApprox": {
+      "min": 150,
+      "max": 350
+    },
+    "belaraAdjacentToTreihordNotCrossing": true,
+    "noNewBelaraRiverBranch": true,
+    "noAutomaticPoliticalBoundaryFromRidge": true,
+    "naturalWestwardDescentOnlyConditional": true
+  },
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_valkram_altitude_authorial_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_treihord_elevation_authorial_v0.1.json"
+  ],
+  "authorBasis": "Pregunta 12 de D.P13: opción B para las elevaciones características del piedemonte occidental de los Montes Valkram.",
+  "implementation": {
+    "worldStateRuntime": false,
+    "georeferencedMap": false,
+    "terrainCreated": false,
+    "olderPhasesModified": false
+  }
+}
