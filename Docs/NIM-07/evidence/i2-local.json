@@ -1,0 +1,73 @@
+{
+  "code_sha": "b8987b7cd70d92e069e3540b2ec8078ce6554bcd",
+  "scope": "Linux x86_64 local native runtime; no physical Windows/Android test",
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "cmake": "3.31.6",
+  "ninja": "1.11.1.3",
+  "core_sha": "4f282863737bcd8f5add401202a9e1064c133672",
+  "godot_cpp_sha": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+  "jsoncons_sha": "bcb44594c50c495ee1e690602cdd71455942ad0e",
+  "binary": {
+    "file": "libnimroel_core.linux.x86_64.so",
+    "sha256": "b7dea800b034bc15b614d8eea5cde42455b02f41e991b31e718e77ae6fb1d906",
+    "bytes": 3401000,
+    "machine": "ELF x86-64 (62)",
+    "needed": [
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux-x86-64.so.2"
+    ]
+  },
+  "reports": {
+    "nim06": {
+      "checks": 129,
+      "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+      "errors": [],
+      "ok": true,
+      "scope": "native functional vertical; physical device acceptance separate"
+    },
+    "i1": {
+      "checks": 48,
+      "errors": [],
+      "ok": true,
+      "scope": "main screen; native runtime when available; no physical device test"
+    },
+    "i2": {
+      "checks": 37,
+      "device_execution": "NOT TESTED",
+      "errors": [],
+      "ok": true
+    },
+    "i1_without_extension": {
+      "ok": true,
+      "checks": 7,
+      "source": "separate copied Host project without native/; official Godot 4.7.2",
+      "code_sha": "b8987b7cd70d92e069e3540b2ec8078ce6554bcd"
+    },
+    "final_followup_checks": {
+      "i1": 48,
+      "nim06": 129,
+      "i2_editor": 37,
+      "i2_user_argument": 37,
+      "i2_official_template": 37,
+      "ok": true
+    }
+  },
+  "regressions": {
+    "Host NIM01-05 / keyboard / native layout": "PASS",
+    "NIM03 offline": 8,
+    "NIM04 offline": 29,
+    "NIM05 offline": 11
+  },
+  "pack": {
+    "original_full_Core_and_Nimroel_schemas": "PASS",
+    "installed_full_Core_and_Nimroel_schemas": "PASS",
+    "reextraction": "9 identical files",
+    "release_sha256": "45c143a8e997e74617ab5bf9d12245ce3f59e023f7d677c299440d73897808af",
+    "local_exported_pck_godot_fileaccess_and_native_catalog": "PASS; actual PCK v4 parsed and nine payloads compared byte-for-byte",
+    "packaged_runtime_i2_control": "PASS 37/37 using official Linux runtime --main-pack of Windows preset PCK; not Windows execution",
+    "official_linux_export_template_self_test": "PASS 37/37 with adjacent PCK and --nim07-i2-self-test; no editor/path overrides"
+  },
+  "initial_code_sha": "ba5b0531eaacab2725a3c69fd588741b9fb84836",
+  "native_sources_unchanged_by_followup": true
+}

@@ -1,0 +1,84 @@
+{
+  "platform": "Linux x86_64",
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "native_binary": {
+    "file": "libnimroel_core.linux.x86_64.so",
+    "sha256": "d11b7073828ca5797b998cf91e7aa1dbdca1e4924080087bfdd80fc9d16a8cb0",
+    "bytes": 3409192,
+    "machine": "ELF x86-64 (62)",
+    "needed": [
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux-x86-64.so.2"
+    ]
+  },
+  "i4": {
+    "independent_processes": true,
+    "reports": [
+      {
+        "checks": 16,
+        "device_execution": "NOT TESTED",
+        "errors": [],
+        "ok": true,
+        "phase": "write",
+        "pid": 2623,
+        "proof": {
+          "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+          "initial_sha256": "029eed6f7a4297a4127a7ab56af43ac9a3d3b3f2ea51934c76ca0263a4289245",
+          "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+          "writer_pid": 2623
+        }
+      },
+      {
+        "checks": 97,
+        "device_execution": "NOT TESTED",
+        "errors": [],
+        "ok": true,
+        "phase": "read",
+        "pid": 2631,
+        "proof": {
+          "generation_context_sha256": "6ad814ba488e8bc26a9d5d185f530d70f608de34264aef6fe62d3b2d77c063cd",
+          "reader_pid": 2631,
+          "snapshot_sha256": "274861c8d67d1da117f1a1b58f416b7d5b323d80dc981a9601c2405309090e8d",
+          "writer_pid": 2623
+        }
+      }
+    ]
+  },
+  "regressions": {
+    "nim07_smoke": {
+      "checks": 48,
+      "errors": [],
+      "ok": true,
+      "scope": "main screen; native runtime when available; no physical device test"
+    },
+    "nim07_i2_smoke": {
+      "checks": 37,
+      "device_execution": "NOT TESTED",
+      "errors": [],
+      "ok": true
+    },
+    "nim07_i3_smoke": {
+      "checks": 51,
+      "device_execution": "NOT TESTED",
+      "errors": [],
+      "ok": true
+    },
+    "nim06": {
+      "checks": 129,
+      "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+      "errors": [],
+      "ok": true,
+      "scope": "native functional vertical; physical device acceptance separate"
+    }
+  },
+  "source_pins": {
+    "corerpg": "4f282863737bcd8f5add401202a9e1064c133672",
+    "godotcpp": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+    "jsoncons": "bcb44594c50c495ee1e690602cdd71455942ad0e"
+  },
+  "nim01_05": "Host, teclado y geometría PASS; Python 8/8 + 29/29 + 11/11",
+  "pack": "9 files identical; original and staged validation with pinned Core schemas PASS",
+  "limits": "No physical device tests; local Linux only. Windows/Android verified separately in Actions.",
+  "code_sha": "024121dca46c044f9539ebfbab6b177c6fb82a03"
+}

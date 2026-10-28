@@ -1,0 +1,190 @@
+{
+  "scope": "NIM-07 I1; Windows native runtime and Android export with Linux control; no physical device execution",
+  "branch": "feat/nim-07-first-rpg-experience",
+  "code_sha": "f4b55c09dde0581d7a7e0980bc8247ff31b835ad",
+  "runs": [
+    {
+      "id": 40150161604,
+      "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40150161604",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "id": 121039843952,
+          "name": "android native build + verification",
+          "conclusion": "success",
+          "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40150161604/job/121039843952"
+        },
+        {
+          "id": 121039844096,
+          "name": "windows native build + verification",
+          "conclusion": "success",
+          "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40150161604/job/121039844096"
+        }
+      ]
+    },
+    {
+      "id": 40150167626,
+      "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40150167626",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "id": 121039865241,
+          "name": "Godot 4.7.2 import + NIM-01/02/03/04/05 smoke",
+          "conclusion": "success",
+          "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40150167626/job/121039865241"
+        },
+        {
+          "id": 121039865442,
+          "name": "sherpa-onnx real Spanish TTS on Windows CI (not MSI)",
+          "conclusion": "success",
+          "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40150167626/job/121039865442"
+        },
+        {
+          "id": 121039924835,
+          "name": "Export NIM-05 prototype Windows + Android (not device-tested)",
+          "conclusion": "success",
+          "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40150167626/job/121039924835"
+        }
+      ]
+    }
+  ],
+  "windows": {
+    "reports": [
+      {
+        "type": "NIM06_FUNCTIONAL_REPORT",
+        "report": {
+          "checks": 129,
+          "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+          "errors": [],
+          "ok": true,
+          "scope": "native functional vertical; physical device acceptance separate"
+        }
+      },
+      {
+        "type": "NIM07_I1_REPORT",
+        "report": {
+          "checks": 48,
+          "errors": [],
+          "ok": true,
+          "scope": "main screen; native runtime when available; no physical device test"
+        }
+      },
+      {
+        "type": "NIM06_FUNCTIONAL_REPORT",
+        "report": {
+          "checks": 129,
+          "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+          "errors": [],
+          "ok": true,
+          "scope": "native functional vertical; physical device acceptance separate"
+        }
+      }
+    ],
+    "binaries": [
+      {
+        "file": "nimroel_core.windows.x86_64.dll",
+        "sha256": "61cac3dab9f712e09315f2f488ef0a33a99577baabb5e7bd020613a534875866",
+        "bytes": 472064,
+        "machine": "PE AMD64 (0x8664)"
+      }
+    ],
+    "packages": [
+      {
+        "nimroel_core.windows.x86_64.dll": {
+          "bytes": 472064,
+          "sha256": "61cac3dab9f712e09315f2f488ef0a33a99577baabb5e7bd020613a534875866"
+        },
+        "Nimroel_NIM06_Functional.console.exe": {
+          "bytes": 69632,
+          "sha256": "26da30e450d68668992cff319620e6d788fdcfa150534310cffa733a44b6f91c"
+        },
+        "Nimroel_NIM06_Functional.exe": {
+          "bytes": 103055360,
+          "sha256": "9f44a61a9589e5dba56aa5001882d681f4ca6cca992ba3a3a24e23aafddf69af"
+        },
+        "Nimroel_NIM06_Functional.pck": {
+          "bytes": 136156,
+          "sha256": "16027b5e6125c3fbbf5a1a86fca1c87d4f8e0003d2a6332e0722dcacb1bb37e7"
+        }
+      }
+    ]
+  },
+  "android_and_linux_control": {
+    "reports": [
+      {
+        "type": "NIM06_FUNCTIONAL_REPORT",
+        "report": {
+          "checks": 129,
+          "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+          "errors": [],
+          "ok": true,
+          "scope": "native functional vertical; physical device acceptance separate"
+        }
+      },
+      {
+        "type": "NIM07_I1_REPORT",
+        "report": {
+          "checks": 48,
+          "errors": [],
+          "ok": true,
+          "scope": "main screen; native runtime when available; no physical device test"
+        }
+      }
+    ],
+    "binaries": [
+      {
+        "file": "libnimroel_core.android.arm64.so",
+        "sha256": "c3570bccdeec5b1ff2d1bca0554cd650e64931624c4958632d7366676d00050e",
+        "bytes": 618608,
+        "machine": "ELF AArch64 (183)",
+        "needed": [
+          "libm.so",
+          "libdl.so",
+          "libc.so"
+        ]
+      },
+      {
+        "file": "libnimroel_core.linux.x86_64.so",
+        "sha256": "cbf95eb31e0eab0bc31262886eca83dffb94aa4e93b22c4492bc5d1aed85aa85",
+        "bytes": 1134016,
+        "machine": "ELF x86-64 (62)",
+        "needed": [
+          "libm.so.6",
+          "libc.so.6",
+          "ld-linux-x86-64.so.2"
+        ]
+      }
+    ],
+    "packages": [
+      {
+        "sha256": "8f96862efe11c51e99f15075341836000081b581ba4f9e785617d3a4f8bf3272",
+        "libraries": [
+          "lib/arm64-v8a/libc++_shared.so",
+          "lib/arm64-v8a/libgodot_android.so",
+          "lib/arm64-v8a/libnimroel_core.android.arm64.so"
+        ],
+        "extension_bytes_match": true,
+        "device_execution": "NOT TESTED",
+        "file": "Nimroel_NIM06_Functional.apk"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "id": 12582353690,
+      "name": "NIM06-functional-windows-f4b55c09dde0581d7a7e0980bc8247ff31b835ad",
+      "bytes": 36060884,
+      "digest": "sha256:15d5bb911b6a76a791ff722efe687cadd38e6561383e238f4581df309309222e",
+      "expires_at": "2026-11-24T01:21:51Z",
+      "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40150161604/artifacts/12582353690"
+    },
+    {
+      "id": 12581839110,
+      "name": "NIM06-functional-android-f4b55c09dde0581d7a7e0980bc8247ff31b835ad",
+      "bytes": 29592095,
+      "digest": "sha256:22d86f41dd702770c4df47716ad98e5ca462e7b7a09c5221219b716fcc992a8e",
+      "expires_at": "2026-11-24T01:21:51Z",
+      "url": "https://github.com/robdor80/Videojuego_Nimroel/actions/runs/40150161604/artifacts/12581839110"
+    }
+  ]
+}

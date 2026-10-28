@@ -7,3 +7,5 @@ build/
 
 *.gd.uid
 *.svg.import
+generated_content/
+native/*.gdextension.uid

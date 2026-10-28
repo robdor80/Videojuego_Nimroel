@@ -1,0 +1,55 @@
+{
+  "scope": "NIM-07 I1; local Linux headless; physical devices not tested",
+  "base_sha": "ee9e192d",
+  "implementation_sha": "f1fa8647b2146d42c9bc2641d45de6fe60390e81",
+  "ci_code_sha": "f4b55c09dde0581d7a7e0980bc8247ff31b835ad",
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "binary": {
+    "file": "libnimroel_core.linux.x86_64.so",
+    "sha256": "a2e30e74c5979f0165e86694f420b598dfd1e908888a3dcb2a9dee8021345385",
+    "bytes": 1101080,
+    "machine": "ELF x86-64 (62)",
+    "needed": [
+      "libm.so.6",
+      "libc.so.6",
+      "ld-linux-x86-64.so.2"
+    ]
+  },
+  "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+  "godot_cpp_commit": "e83fd0904c13356ed1d4c3d09f8bb9132bdc6b77",
+  "native": {
+    "checks": 129,
+    "core_commit": "4f282863737bcd8f5add401202a9e1064c133672",
+    "errors": [],
+    "ok": true,
+    "scope": "native functional vertical; physical device acceptance separate"
+  },
+  "nim07": {
+    "checks": 48,
+    "errors": [],
+    "ok": true,
+    "scope": "main screen; native runtime when available; no physical device test"
+  },
+  "host_regressions": [
+    "smoke",
+    "nim02_smoke",
+    "nim03_smoke",
+    "nim04_smoke",
+    "nim05_smoke",
+    "keyboard_layout_smoke",
+    "native_layout_smoke"
+  ],
+  "offline_python": {
+    "NIM03": 8,
+    "NIM04": 29,
+    "NIM05": 11
+  },
+  "control_without_native": {
+    "checks": 7,
+    "ok": true
+  },
+  "notes": [
+    "Last implementation smoke rerun after text signal and screen teardown checks: 48/48 PASS.",
+    "No external AI API or physical device execution."
+  ]
+}

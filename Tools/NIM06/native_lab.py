@@ -11,6 +11,7 @@ import struct
 import subprocess
 import urllib.request
 import zipfile
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[2]
 LAB = ROOT / 'Game/BridgeCoreRPG/lab'
@@ -32,9 +33,18 @@ ASSETS = {
 
 def run(args, name=None, cwd=ROOT, extra_env=None, timeout=1200):
     print('+', ' '.join(str(x) for x in args), flush=True)
-    proc = subprocess.run([str(x) for x in args], cwd=cwd, stdout=subprocess.PIPE,
-                          stderr=subprocess.STDOUT, text=True, errors='replace',
-                          env=os.environ | (extra_env or {}), timeout=timeout)
+    try:
+        proc = subprocess.run([str(x) for x in args], cwd=cwd, stdout=subprocess.PIPE,
+                              stderr=subprocess.STDOUT, text=True, errors='replace',
+                              env=os.environ | (extra_env or {}), timeout=timeout)
+    except subprocess.TimeoutExpired as error:
+        output = error.stdout or ''
+        if isinstance(output, bytes):
+            output = output.decode('utf-8', errors='replace')
+        print(output, flush=True)
+        if name:
+            (EVIDENCE / name).write_text(output, encoding='utf-8')
+        raise
     print(proc.stdout, flush=True)
     if name:
         (EVIDENCE / name).write_text(proc.stdout, encoding='utf-8')
@@ -72,7 +82,13 @@ def ndk_root():
     return Path(os.environ['ANDROID_HOME']) / 'ndk' / NDK
 
 
+def stage_v001():
+    if FUNCTIONAL:
+        run(["python", ROOT / "Tools/NIM07/stage_pack.py"], "v001-stage.txt")
+
+
 def build(target):
+    stage_v001()
     out = SOURCE / f'build-{target}'
     args = ['cmake', '-S', SOURCE, '-B', out, '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']
     if target == 'windows':
@@ -90,12 +106,12 @@ def build(target):
     shutil.copyfile(out / 'CMakeCache.txt', EVIDENCE / f'{target}-CMakeCache.txt')
     shutil.copyfile(out / 'nimroel.map', EVIDENCE / f'{target}-link.map')
     linkmap = (out / 'nimroel.map').read_text(errors='replace')
-    for symbol in (['ActionEngine', 'Simulation', 'Persistence', 'ContextBuilder', 'Visibility'] if FUNCTIONAL else ['SemanticVersion']):
+    for symbol in (['ActionEngine', 'Simulation', 'Persistence', 'ContextBuilder', 'Visibility', 'ContentCatalog', 'decode_content_pack_manifest', 'decode_resource_definition'] if FUNCTIONAL else ['SemanticVersion']):
         if symbol not in linkmap:
             raise RuntimeError(f'CoreRPG {symbol} absent from link map')
     if FUNCTIONAL:
         shutil.copyfile(SOURCE / 'host.gdextension.in', PROJECT / 'native/core_rpg.gdextension')
-    for dep in ['corerpg', 'godotcpp']:
+    for dep in (['corerpg', 'godotcpp', 'jsoncons'] if FUNCTIONAL else ['corerpg', 'godotcpp']):
         run(['git', '-C', out / f'_deps/{dep}-src', 'rev-parse', 'HEAD'], f'{target}-{dep}-commit.txt')
     verify(target)
 
@@ -139,6 +155,7 @@ def verify(target):
 
 
 def smoke():
+    stage_v001()
     exe = godot()
     import_error = None
     try:
@@ -167,6 +184,7 @@ def smoke():
 
 
 def export_android():
+    stage_v001()
     exe = godot()
     templates = asset('templates') / 'templates'
     destination = Path.home() / '.local/share/godot/export_templates/4.7.2.stable'
@@ -193,6 +211,8 @@ def export_android():
         assert entry in libs, libs
         assert archive.read(entry) == (PROJECT / ('native/bin' if FUNCTIONAL else 'bin') / f'lib{NAME}.android.arm64.so').read_bytes()
         assert all(struct.unpack_from('<H', archive.read(n), 18)[0] == 183 for n in libs)
+    if FUNCTIONAL:
+        verify_v001_package(exe, apk, android=True)
     details = {'sha256': hashlib.sha256(apk.read_bytes()).hexdigest(), 'libraries': libs,
                'extension_bytes_match': True, 'device_execution': 'NOT TESTED', 'file': apk.name}
     (EVIDENCE / 'android-apk.json').write_text(json.dumps(details, indent=2) + '\n')
@@ -200,6 +220,7 @@ def export_android():
 
 
 def export_windows():
+    stage_v001()
     exe = godot()
     templates = asset('templates') / 'templates'
     destination = Path(os.environ['APPDATA']) / 'Godot/export_templates/4.7.2.stable'
@@ -217,17 +238,98 @@ def export_windows():
     assert console.exists()
     tested = run([console, '--headless', '--', '--nim06-self-test'], 'windows-package-execution.txt', cwd=output, timeout=180)
     assert 'NIM06_FUNCTIONAL_REPORT' in tested and '"ok":true' in tested.replace(' ', '') and 'ERROR:' not in tested
+    packaged_i2 = run([console, '--headless', '--', '--nim07-i2-self-test'], 'windows-package-i2.txt', cwd=output, timeout=180)
+    assert 'NIM-07 I2 SMOKE PASS' in packaged_i2 and 'ERROR:' not in packaged_i2
+    packaged_i3 = run([console, '--headless', '--', '--nim07-i3-self-test'], 'windows-package-i3.txt', cwd=output, timeout=180)
+    assert 'NIM-07 I3 SMOKE PASS' in packaged_i3 and 'ERROR:' not in packaged_i3
+    i4_processes(console, packaged=True, cwd=output)
+    verify_v001_package(exe, output / 'Nimroel_NIM06_Functional.pck')
     details = {str(p.relative_to(output)): {'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
                for p in output.rglob('*') if p.is_file()}
     (EVIDENCE / 'windows-package.json').write_text(json.dumps(details, indent=2) + '\n')
     print(json.dumps(details, indent=2))
 
 
+def verify_v001_package(exe, package, android=False):
+    """Read exported bytes, not the editor copy. APK ZIP is a Linux FileAccess control."""
+    source = ROOT / 'ContentPacks/treskal-villages/pack'
+    expected = {p.relative_to(source).as_posix(): p.read_bytes() for p in source.rglob('*') if p.is_file()}
+    prefix = 'generated_content/treskal-v001/'
+    mounted = package
+    if android:
+        # Godot Android exports individual assets rather than a desktop PCK.
+        # Re-root ONLY the original nine JSON asset bytes into a mountable ZIP.
+        mounted = EVIDENCE / 'android-v001-assets.zip'
+        with zipfile.ZipFile(package) as apk, zipfile.ZipFile(mounted, 'w') as content:
+            entries = {n.removeprefix('assets/generated_content/treskal-v001/'): n
+                       for n in apk.namelist() if n.startswith('assets/generated_content/treskal-v001/') and not n.endswith('/')}
+            assert set(entries) == set(expected), entries
+            for name, entry in entries.items():
+                data = apk.read(entry)
+                assert data == expected[name], name
+                content.writestr('generated_content/treskal-v001/' + name, data)
+    else:
+        # Parse the unencrypted Godot 4 PCK directory; compare its actual payloads.
+        data = package.read_bytes()
+        assert data[:4] == b'GDPC'
+        pack_version = struct.unpack_from('<I', data, 4)[0]
+        assert pack_version in (2, 3, 4), pack_version
+        flags = struct.unpack_from('<I', data, 20)[0]
+        base = struct.unpack_from('<Q', data, 24)[0]
+        assert flags & ~2 == 0, flags
+        offset = struct.unpack_from('<Q', data, 32)[0] if pack_version >= 3 else 96
+        count = struct.unpack_from('<I', data, offset)[0]
+        offset += 4
+        entries = {}
+        for _ in range(count):
+            length = struct.unpack_from('<I', data, offset)[0]
+            offset += 4
+            path = data[offset:offset+length].rstrip(b'\0').decode('utf-8').removeprefix('res://')
+            offset += length
+            position, size = struct.unpack_from('<QQ', data, offset)
+            offset += 36  # position, size, MD5, flags
+            if path.startswith(prefix):
+                entries[path.removeprefix(prefix)] = data[base+position:base+position+size]
+        assert entries == expected, list(entries)
+    tested = run([exe, '--headless', '--path', PROJECT, '--script', 'res://tests/nim07_pack_probe.gd', '--', mounted.resolve()],
+                 'android-pack-read.txt' if android else 'windows-pack-read.txt', timeout=180)
+    assert 'NIM07_PACK_REPORT' in tested and '"ok":true' in tested.replace(' ', '') and 'ERROR:' not in tested
+    detail = {'files': {n: hashlib.sha256(b).hexdigest() for n, b in expected.items()},
+              'bytes_match': True, 'godot_fileaccess_and_native_catalog': True,
+              'scope': 'APK asset ZIP mounted in Linux control; no Android runtime' if android else 'actual Windows PCK mounted in Godot'}
+    (EVIDENCE / ('android-v001-package.json' if android else 'windows-v001-package.json')).write_text(json.dumps(detail, indent=2) + '\n')
+
+
+def i4_processes(exe, packaged=False, cwd=ROOT):
+    """Two OS processes, fresh per-pair user storage, shared ONLY through files."""
+    with tempfile.TemporaryDirectory(prefix='nim07-i4-') as directory:
+        env = {'APPDATA': directory} if platform.system() == 'Windows' else {'XDG_DATA_HOME': directory}
+        reports = []
+        for phase in ('write', 'read'):
+            args = [exe, '--headless']
+            if not packaged:
+                args += ['--path', PROJECT, '--script', 'res://tests/nim07_i4_smoke.gd']
+            args += ['--', '--nim07-i4-' + phase]
+            output = run(args, ('windows-package' if packaged else 'regression') + '-i4-' + phase + '.txt',
+                         cwd=cwd, extra_env=env, timeout=180)
+            assert 'NIM-07 I4 SMOKE PASS ' + phase in output and 'ERROR:' not in output
+            reports.append(json.loads(re.search(r'NIM07_I4_REPORT (.*)', output).group(1)))
+        assert reports[0]['pid'] != reports[1]['pid']
+        (EVIDENCE / ('windows-package-i4.json' if packaged else 'i4-processes.json')).write_text(
+            json.dumps({'independent_processes': True, 'reports': reports}, indent=2) + '\n')
+
+
 def regressions():
+    stage_v001()
     exe = godot()
-    for script in ['smoke', 'nim02_smoke', 'nim03_smoke', 'nim04_smoke', 'nim05_smoke', 'keyboard_layout_smoke', 'native_layout_smoke']:
+    scripts = ['smoke', 'nim02_smoke', 'nim03_smoke', 'nim04_smoke', 'nim05_smoke', 'keyboard_layout_smoke', 'native_layout_smoke']
+    if FUNCTIONAL:
+        scripts += ['nim07_smoke', 'nim07_i2_smoke', 'nim07_i3_smoke']
+    for script in scripts:
         output = run([exe, '--headless', '--path', PROJECT, '--script', f'res://tests/{script}.gd'], f'regression-{script}.txt', timeout=120)
         assert 'ERROR:' not in output and 'PASS' in output, script
+    if FUNCTIONAL:
+        i4_processes(exe)
     for folder in ['NIM03', 'NIM04', 'NIM05']:
         run(['python', '-m', 'unittest', 'discover', '-s', ROOT / 'Tools' / folder, '-p', 'test_*.py', '-v'], f'regression-{folder}.txt')
 

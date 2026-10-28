@@ -1,10 +1,10 @@
 name: NIM-06 functional native bridge
 on:
   push:
-    branches: [main]
-    paths: ['Game/BridgeCoreRPG/**', 'Game/Host2D/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
+    branches: [main, feat/nim-07-first-rpg-experience]
+    paths: ['Game/BridgeCoreRPG/**', 'Game/Host2D/**', 'Tools/NIM06/**', 'Tools/NIM07/**', 'ContentPacks/treskal-villages/**', '.github/workflows/nim-06-native-lab.yml']
   pull_request:
-    paths: ['Game/BridgeCoreRPG/**', 'Game/Host2D/**', 'Tools/NIM06/**', '.github/workflows/nim-06-native-lab.yml']
+    paths: ['Game/BridgeCoreRPG/**', 'Game/Host2D/**', 'Tools/NIM06/**', 'Tools/NIM07/**', 'ContentPacks/treskal-villages/**', '.github/workflows/nim-06-native-lab.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: '3.12.10'
       - name: Install pinned build drivers
-        run: python -m pip install cmake==3.31.6 ninja==1.11.1.3
+        run: python -m pip install cmake==3.31.6 ninja==1.11.1.3 -r Tools/CoreRPG413/requirements.txt
       - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
         if: matrix.target == 'android'
         with:
@@ -52,7 +52,7 @@ jobs:
       - name: Load extension and execute CoreRPG in Windows Godot
         if: matrix.target == 'windows'
         run: python Tools/NIM06/native_lab.py smoke --functional
-      - name: Execute existing Host regressions with native extension loaded
+      - name: Execute Host regressions and NIM-07 I1/I2/I3/I4 main conversation with native DLL
         if: matrix.target == 'windows'
         run: python Tools/NIM06/native_lab.py regressions --functional
       - name: Export and execute Windows native package; compare DLL bytes
@@ -64,7 +64,7 @@ jobs:
       - name: Load Linux control in official Godot before export
         if: matrix.target == 'android'
         run: python Tools/NIM06/native_lab.py smoke --functional
-      - name: Run NIM-01 to NIM-05 regressions with Linux native control
+      - name: Run Host regressions and NIM-07 I1/I2/I3/I4 conversation with Linux native control
         if: matrix.target == 'android'
         run: python Tools/NIM06/native_lab.py regressions --functional
       - name: Temporary laboratory debug signing key

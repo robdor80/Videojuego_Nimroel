@@ -1,0 +1,74 @@
+name: NIM-07 integration audit · Darovan D01-DP13
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'Game/BridgeCoreRPG/**'
+      - 'Game/Host2D/**'
+      - 'Tools/NIM06/**'
+      - 'Docs/NIM-07/**'
+      - '.github/workflows/nim07-integration-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-regressions:
+    name: Darovan D01-DP13 · ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    env:
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12.10'
+      - name: Validate D01 geography
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d01.py"
+      - name: Validate D02 hydrology
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d02.py"
+      - name: Validate D03 climate
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d03.py"
+      - name: Validate D04 economy with 16 negative mutations
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d04.py"
+      - name: Validate D05 mobility, communications and negative mutations
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d05.py"
+      - name: Validate D06 settlement models, seeds and negative mutations
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d06.py"
+      - name: Validate D07 canonical cities, source trace and negative mutations
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d07.py"
+      - name: Validate D08 households, work, services, provenance and 125 negative mutations
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d08.py"
+      - name: Validate D09 government, fiscality, security, cross-phase provenance and negative mutations
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d09.py"
+      - name: Validate D10 cultural profiles, authority and negative mutations
+        run: python "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Validacion/validate_d10.py"
+
+      - name: D12 cross-phase integral audit and negative tests
+        run: python Tools/DarovanD12/validate.py
+
+      - name: Checkout CoreRPG at fixed 4.13 SHA (separate source)
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: robdor80/CoreRPG
+          ref: 4f282863737bcd8f5add401202a9e1064c133672
+          path: .darovan-core
+      - name: Install pinned D11 JSON Schema dependency
+        run: python -m pip install jsonschema==4.26.0
+      - name: D11 source locks, official Core schemas, scenarios and 23 negative tests
+        run: python Tools/DarovanD11/validate.py --core-root .darovan-core
+      - name: Configure actual CoreRPG ContentJson and D11 C++ laboratory
+        run: cmake -S Tools/DarovanD11 -B d11-build -DCORERPG_ROOT="${{ github.workspace }}/.darovan-core" -DCMAKE_BUILD_TYPE=Release
+      - name: Compile actual C++ catalog consumer
+        run: cmake --build d11-build --config Release --target darovan_d11_core_smoke --parallel 2
+      - name: CTest CoreRPG catalog and TEST_ONLY persistence
+        run: ctest --test-dir d11-build -C Release --output-on-failure
+      - name: D.P13 physical territory contracts and negative tests
+        run: python Tools/DarovanDP13/validate.py
