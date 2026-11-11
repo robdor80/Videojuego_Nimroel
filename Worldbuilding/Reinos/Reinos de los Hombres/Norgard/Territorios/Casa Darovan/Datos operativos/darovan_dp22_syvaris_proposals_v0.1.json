@@ -1,0 +1,700 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp22_syvaris_city_authorship_proposals_v0.1",
+  "version": "0.1.0",
+  "phase": "D.P22",
+  "date": "2026-11-11",
+  "cityId": "syvaris",
+  "cityKind": "canonical_city_manual_reference",
+  "status": "AUTHORSHIP_PROPOSAL_PR_DRAFT_NO_CANON_PROMOTION",
+  "creativeDelegation": "GENERAL_EDITORIAL_RECOMMENDATIONS_2026_11_11_NOT_INDIVIDUAL_CANON_RATIFICATION",
+  "authorRatifiedNewContent": false,
+  "addsCanon": false,
+  "createsWorldStateEntities": false,
+  "createsBuildings": false,
+  "createsPhysicalMap": false,
+  "coreRpgIntegrated": false,
+  "godotIntegrated": false,
+  "mergeAuthorized": false,
+  "dependency": {
+    "predecessorPhase": "D.P21",
+    "predecessorPr": 44,
+    "predecessorBranch": "feat/darovan-dp21-taramin-ciudad-vivida-20261111",
+    "predecessorMergedWhenStarted": false,
+    "baseOfWork": "PREDECESSOR_BRANCH",
+    "requiresPredecessorMergeBeforeMainMerge": true
+  },
+  "canonClaims": {
+    "kingdom": "Norgard",
+    "territorialHouse": "Darovan",
+    "cityOnIsland": true,
+    "islandIndependentKingdom": false,
+    "cityPopulationRange": {
+      "minInclusive": 7000,
+      "maxInclusive": 10000,
+      "exact": null
+    },
+    "totalIslandPopulation": null,
+    "citySmallerThanTaramin": true,
+    "d07ConceptDecision": "DAR-D07-03_A",
+    "urbanActivityConcentratedAroundProtectedBay": true,
+    "protectedBayExists": true,
+    "smallerCovesExist": true,
+    "smallerCovesHaveAuthorizedPorts": false,
+    "fishingCommerceOilsAndMarineProducts": true,
+    "royalNavyPresenceAuthority": "CORONA_NORGARD",
+    "darovanPrivateNavyExists": false,
+    "royalNavyGovernsAllCivilians": false,
+    "islandClimate": "WARM_DRY_EXPOSED_CENTRE_NORTH_GREENER_SOUTH_SHELTERED",
+    "woodlands": "LIGHT_DISPERSED_DISCONTINUOUS",
+    "architecture": "LOWER_VOLUMES_STONE_WOOD_PALE_TONES_PARTIAL_WHITEWASH",
+    "automaticMainlandSeaRoute": false,
+    "automaticNewWaterSource": false,
+    "externalCustomsPortOfVeldoraTransferred": false
+  },
+  "lockedUnknowns": {
+    "officialDistricts": null,
+    "streetGeometry": null,
+    "cityCentreCoordinates": null,
+    "islandPopulationExact": null,
+    "restOfIslandPopulation": null,
+    "cityPopulationExact": null,
+    "navalFacilitiesLocation": null,
+    "royalShipCount": null,
+    "navalRanksOfProposedCharacters": null,
+    "bayBerthCapacity": null,
+    "bayDepth": null,
+    "boatTypes": null,
+    "secondaryCoveNames": null,
+    "secondaryCovePorts": null,
+    "maritimeTravelRoutes": null,
+    "maritimeTravelTimes": null,
+    "waterSources": null,
+    "freshWaterStocks": null,
+    "parcelMap": null,
+    "buildingCounts": null,
+    "householdCounts": null,
+    "realNpcInstances": null,
+    "individualAges": null,
+    "publicHistoricalDates": null,
+    "islandVillageCount": null,
+    "noncityVillageNames": null,
+    "climateQuantification": null,
+    "coastlineGeometry": null,
+    "realFishStocks": null,
+    "realOilStocks": null
+  },
+  "canonicalSourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Ciudades/Syvaris/D07_PERFIL_URBANO_OPERATIVO_v0.1.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P16/ciudad_syvaris_plan_funcional_condicionado.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Auditorias/D08_RESOLUCION_DAR-D08-01_SYVARIS_2026-10-22.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P18/03_cierre_editorial_real_y_traspaso_DP20.md"
+  ],
+  "proposedUrbanAreas": [
+    {
+      "id": "SYV-U01",
+      "name": "La Orilla del Abrigo",
+      "functionalPurpose": "interfaz_bahia_refugio",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "popularNameApproved": false,
+      "isOfficialDistrict": false,
+      "geometry": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-U02",
+      "name": "Los Patios de la Sombra",
+      "functionalPurpose": "habitat_y_cuidados",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "popularNameApproved": false,
+      "isOfficialDistrict": false,
+      "geometry": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-U03",
+      "name": "La Piedra Tibia",
+      "functionalPurpose": "oficios_y_reparaciones",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "popularNameApproved": false,
+      "isOfficialDistrict": false,
+      "geometry": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-U04",
+      "name": "Las Cuentas del Agua",
+      "functionalPurpose": "abastecimiento_no_acreditado",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "popularNameApproved": false,
+      "isOfficialDistrict": false,
+      "geometry": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-U05",
+      "name": "El Borde de Secano",
+      "functionalPurpose": "gradiente_insular",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "popularNameApproved": false,
+      "isOfficialDistrict": false,
+      "geometry": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-U06",
+      "name": "Los Bancos del Regreso",
+      "functionalPurpose": "espera_y_relaciones",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "popularNameApproved": false,
+      "isOfficialDistrict": false,
+      "geometry": null,
+      "worldStateEntityId": null
+    }
+  ],
+  "proposedEstablishments": [
+    {
+      "id": "SYV-L01",
+      "name": "Casa del Cuaderno Salado",
+      "purpose": "contabilidad_privada",
+      "areaId": "SYV-U01",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L02",
+      "name": "La Aguja de Viento",
+      "purpose": "reparacion_velas_textiles",
+      "areaId": "SYV-U03",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L03",
+      "name": "Sal de las Tres Mesas",
+      "purpose": "conservacion_alimentos",
+      "areaId": "SYV-U01",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L04",
+      "name": "La Teja Abierta",
+      "purpose": "hospedaje_privado",
+      "areaId": "SYV-U02",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L05",
+      "name": "La Medida Clara",
+      "purpose": "distribucion_civil_agua_condicional",
+      "areaId": "SYV-U04",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L06",
+      "name": "El Nudo Paciente",
+      "purpose": "reparacion_redes_cordaje",
+      "areaId": "SYV-U03",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L07",
+      "name": "Banco de la Piedra Clara",
+      "purpose": "reparacion_albanileria",
+      "areaId": "SYV-U03",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L08",
+      "name": "Horno del Viento Calmo",
+      "purpose": "panaderia_privada",
+      "areaId": "SYV-U02",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L09",
+      "name": "Mesa de la Vela Gris",
+      "purpose": "trato_tasacion_privada",
+      "areaId": "SYV-U01",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L10",
+      "name": "La Carta Doblada",
+      "purpose": "escribania_mensajes_privados",
+      "areaId": "SYV-U06",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L11",
+      "name": "Patio del Aceite Sereno",
+      "purpose": "comercio_aceites",
+      "areaId": "SYV-U05",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-L12",
+      "name": "La Silla Vuelta",
+      "purpose": "cuidados_privados",
+      "areaId": "SYV-U06",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "futureEditorialObjectiveOnly": true,
+      "buildingMaterialized": false,
+      "propertyEntityId": null,
+      "actualLocationId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "worldStateEntityId": null
+    }
+  ],
+  "proposedPeople": [
+    {
+      "id": "SYV-N01",
+      "name": "Iria Selven",
+      "role": "reparadora_aparejos",
+      "associatedEstablishmentId": "SYV-L06",
+      "biographySource": "04_syvaris_diez_biografias.md",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "npcMaterialized": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownWorldFacts": [],
+      "royalNavalRank": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-N02",
+      "name": "Darel Vorn",
+      "role": "pescador",
+      "associatedEstablishmentId": "SYV-L03",
+      "biographySource": "04_syvaris_diez_biografias.md",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "npcMaterialized": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownWorldFacts": [],
+      "royalNavalRank": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-N03",
+      "name": "Maela Ruvin",
+      "role": "abastecedora_civil",
+      "associatedEstablishmentId": "SYV-L05",
+      "biographySource": "04_syvaris_diez_biografias.md",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "npcMaterialized": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownWorldFacts": [],
+      "royalNavalRank": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-N04",
+      "name": "Teren Velas",
+      "role": "copista_privado",
+      "associatedEstablishmentId": "SYV-L01",
+      "biographySource": "04_syvaris_diez_biografias.md",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "npcMaterialized": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownWorldFacts": [],
+      "royalNavalRank": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-N05",
+      "name": "Nelis Varda",
+      "role": "costurera_velas",
+      "associatedEstablishmentId": "SYV-L02",
+      "biographySource": "04_syvaris_diez_biografias.md",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "npcMaterialized": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownWorldFacts": [],
+      "royalNavalRank": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-N06",
+      "name": "Sera Nald",
+      "role": "hospedera",
+      "associatedEstablishmentId": "SYV-L04",
+      "biographySource": "04_syvaris_diez_biografias.md",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "npcMaterialized": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownWorldFacts": [],
+      "royalNavalRank": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-N07",
+      "name": "Orel Sena",
+      "role": "servidor_armada_real_rango_unknown",
+      "associatedEstablishmentId": null,
+      "biographySource": "04_syvaris_diez_biografias.md",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "npcMaterialized": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownWorldFacts": [],
+      "royalNavalRank": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-N08",
+      "name": "Cira Denor",
+      "role": "comerciante_aceites_producto_marino",
+      "associatedEstablishmentId": "SYV-L11",
+      "biographySource": "04_syvaris_diez_biografias.md",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "npcMaterialized": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownWorldFacts": [],
+      "royalNavalRank": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-N09",
+      "name": "Miran Ovel",
+      "role": "albanil",
+      "associatedEstablishmentId": "SYV-L07",
+      "biographySource": "04_syvaris_diez_biografias.md",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "npcMaterialized": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownWorldFacts": [],
+      "royalNavalRank": null,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "SYV-N10",
+      "name": "Elen Savar",
+      "role": "cuidados_privados",
+      "associatedEstablishmentId": "SYV-L12",
+      "biographySource": "04_syvaris_diez_biografias.md",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "npcMaterialized": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownWorldFacts": [],
+      "royalNavalRank": null,
+      "worldStateEntityId": null
+    }
+  ],
+  "proposedPrivateMemories": [
+    {
+      "id": "SYV-M01",
+      "title": "El cuenco reservado",
+      "personRef": "SYV-N03",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "isPublicHistoricalFact": false,
+      "datedEvent": null,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-M02",
+      "title": "La costura casi invisible",
+      "personRef": "SYV-N05",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "isPublicHistoricalFact": false,
+      "datedEvent": null,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-M03",
+      "title": "La palabra dada antes de la orden",
+      "personRef": "SYV-N07",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "isPublicHistoricalFact": false,
+      "datedEvent": null,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-M04",
+      "title": "La habitación que quedó vacía",
+      "personRef": "SYV-N06",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "isPublicHistoricalFact": false,
+      "datedEvent": null,
+      "worldStateEventId": null
+    }
+  ],
+  "proposedConditionalArcs": [
+    {
+      "id": "SYV-H01",
+      "title": "Caben bajo el cielo, no bajo un techo",
+      "personRefs": [
+        "SYV-N06",
+        "SYV-N10",
+        "SYV-N07"
+      ],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "conditional": true,
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "triggered": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-H02",
+      "title": "El agua tiene dueño y memoria",
+      "personRefs": [
+        "SYV-N03",
+        "SYV-N08",
+        "SYV-N09"
+      ],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "conditional": true,
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "triggered": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-H03",
+      "title": "Una orden no atraviesa todas las puertas",
+      "personRefs": [
+        "SYV-N07",
+        "SYV-N04",
+        "SYV-N05"
+      ],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "conditional": true,
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "triggered": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-H04",
+      "title": "La cala que solo conocen dos voces",
+      "personRefs": [
+        "SYV-N02",
+        "SYV-N06",
+        "SYV-N10"
+      ],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "conditional": true,
+      "implementationStatus": "NOT_IMPLEMENTED",
+      "triggered": false,
+      "worldStateEventId": null
+    }
+  ],
+  "testOnlyScenes": [
+    {
+      "id": "SYV-E01",
+      "title": "Se ve tranquilo desde fuera",
+      "personRefs": [
+        "SYV-N06"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-E02",
+      "title": "La costura que no prometo",
+      "personRefs": [
+        "SYV-N01",
+        "SYV-N02",
+        "SYV-N05"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-E03",
+      "title": "No es el agua del mar",
+      "personRefs": [
+        "SYV-N03"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-E04",
+      "title": "La misma puerta, dos autoridades",
+      "personRefs": [
+        "SYV-N04",
+        "SYV-N07"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-E05",
+      "title": "La cala que aparece en dos relatos",
+      "personRefs": [
+        "SYV-N02",
+        "SYV-N06"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "SYV-E06",
+      "title": "Volver no termina el trabajo",
+      "personRefs": [
+        "SYV-N03",
+        "SYV-N06",
+        "SYV-N08",
+        "SYV-N10"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEventId": null
+    }
+  ],
+  "editorialDecisionRecommendations": [
+    {
+      "id": "SYV-DP22-01",
+      "selectedRecommendedOption": "A",
+      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
+      "authorRatified": false,
+      "canonPromotion": false
+    },
+    {
+      "id": "SYV-DP22-02",
+      "selectedRecommendedOption": "A",
+      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
+      "authorRatified": false,
+      "canonPromotion": false
+    },
+    {
+      "id": "SYV-DP22-03",
+      "selectedRecommendedOption": "A",
+      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
+      "authorRatified": false,
+      "canonPromotion": false
+    },
+    {
+      "id": "SYV-DP22-04",
+      "selectedRecommendedOption": "A",
+      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
+      "authorRatified": false,
+      "canonPromotion": false
+    },
+    {
+      "id": "SYV-DP22-05",
+      "selectedRecommendedOption": "A",
+      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
+      "authorRatified": false,
+      "canonPromotion": false
+    },
+    {
+      "id": "SYV-DP22-06",
+      "selectedRecommendedOption": "A",
+      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
+      "authorRatified": false,
+      "canonPromotion": false
+    },
+    {
+      "id": "SYV-DP22-07",
+      "selectedRecommendedOption": "A",
+      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
+      "authorRatified": false,
+      "canonPromotion": false
+    },
+    {
+      "id": "SYV-DP22-08",
+      "selectedRecommendedOption": "A",
+      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
+      "authorRatified": false,
+      "canonPromotion": false
+    }
+  ],
+  "scopes": {
+    "popularAreaNames": "CANDIDATES_NO_DISTRICTS",
+    "futureEstablishments": "CANDIDATES_NO_PHYSICAL_INSTANCES",
+    "biographies": "CANDIDATES_NO_NPCS",
+    "privateMemories": "CANDIDATES_NO_EVENTS",
+    "storyArcs": "CANDIDATES_NOT_IMPLEMENTED",
+    "cartography": "AUTHOR_AUTHORIZED_MAP_REQUIRED",
+    "closure": "EDITORIAL_ONLY_AFTER_APPROVAL_AND_CI",
+    "merge": "EXPLICIT_AUTHOR_AUTHORIZATION_REQUIRED"
+  }
+}
