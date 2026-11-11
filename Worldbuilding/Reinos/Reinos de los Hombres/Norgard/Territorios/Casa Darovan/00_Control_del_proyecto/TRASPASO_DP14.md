@@ -29,3 +29,24 @@ El autor concede autonomía expresa al asistente para escoger las opciones recom
 
 Las decisiones son del **asistente por delegación** y no respuestas individuales dadas por el autor; en ningún caso suponen geometría métrica, vientos medidos, glaciares, cauces ubicados o simulación CoreRPG/Godot. Documentación: `D.P13/22_cierre_delegado_preguntas_y_opciones.md`; datos: `Datos operativos/darovan_dp13_delegated_decisions_authorized_v0.1.json`. D.P14 y fases posteriores siguen sin iniciar; PR #39 Draft, main sin fusionar.
 
+
+
+## Actualización de profundización D.P14–D.P18 — 11/11/2026
+
+**Cronología:** esta adenda sustituye únicamente la lectura *actual* de las menciones históricas «D.P14–D.P18 no iniciadas»; no altera el estado de D00–D12 ni D.P13 ya fusionadas.
+
+Por autorización general del autor, se desarrolla consecutivamente en la rama `feat/darovan-dp14-dp18-profundizacion-20261111` y la **PR Draft #41**, sin Codex y sin fusión automática:
+
+- **D.P14:** doce unidades de estudio y diez puertas de elegibilidad física; ningún asentamiento nuevo autorizado por la banda altitudinal.
+- **D.P15:** nueve modelos de asentamiento y diez necesidades D08; red funcional con rutas y capacidades pendientes de prueba.
+- **D.P16:** cuatro ciudades manuales, doce puertas de análisis urbano, triado de las 99 capas funcionales de Treskal (100 carpetas 01–99 por duplicidad del 34) y trece cadenas funcionales Darovan; **no constituye diseño canónico completo de nuevos barrios de Veldora/Taramin/Syvaris**.
+- **D.P17:** 57 namespaces de consulta desde el mapa de extracción Valrik/Core y 24 escenarios `TEST_ONLY`; sin implementación.
+- **D.P18:** informe de equivalencia y **12 reservas** claras entre identidad urbana autoral, cartografía y runtime.
+
+Archivos de entrada: `Profundizacion_2026/README.md`, contratos JSON `darovan_dp14_*` a `darovan_dp18_*` y `Tools/DarovanDP14_DP18/validate.py`; GitHub Actions `darovan-dp14-dp18.yml` con pruebas adversariales estáticas. El resultado definitivo depende de GitHub Actions sobre el **último HEAD** de PR #41; los commits anteriores no certifican automáticamente uno nuevo.
+
+**Resultado profesional honesto:** paquete de **diseño funcional y territorial condicional** muy avanzado; no se declara igual de completo que la ciudad de Treskal a nivel de canon urbano ni ejecutable en CoreRPG/Godot. Se requiere decisión del autor para elevar a canon nuevos barrios y singularidades de Veldora, Taramin y Syvaris. Hasta entonces, nuevos topónimos/barrios/edificios singulares permanecen `UNKNOWN` o `PROPOSAL_PENDING_AUTHOR`. Todo lo métrico y de integración física se reserva para una fase posterior.
+
+## Nota editorial de rescate D.P14–D.P18 — 11/11/2026
+
+La adenda histórica de apertura D.P14–D.P18 refleja el primer paquete, con exceso de contratos y poco contenido urbano particular. **Se ha recuperado el material útil y reescrito el contenido insuficiente en la misma PR #41**. El índice vigente está en Profundizacion_2026/README.md y la auditoría de cierre en Profundizacion_2026/D.P18/03_cierre_editorial_real_y_traspaso_DP20.md. No hay trasplante de lore de Treskal, ni nuevo canon por commit, ni runtime simulado.

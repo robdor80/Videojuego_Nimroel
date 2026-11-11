@@ -1,0 +1,799 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp17_integration_contract_v0.1",
+  "phase": "D.P17",
+  "version": "0.1.0",
+  "status": "INTERFACE_AND_TEST_ONLY_NO_EXECUTABLE_INTEGRATION",
+  "authority": "DERIVED_CONDITIONAL",
+  "authorityOrder": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_darovan",
+    "manual_city_or_settlement_instance",
+    "world_state"
+  ],
+  "valrikCoreExtractionMap": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+  "reuseNamespaceCatalogue": [
+    {
+      "namespace": "MEM",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "PERS",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "EMO",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "MOOD",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "GOAL",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "DEC",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "TRUST",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "VIEW",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "STAT",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "CRED",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "CONF",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "DIAL",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "ATTN",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "EXP",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "STRS",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "VAL",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "SELF",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "PREG",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "CHD",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "AGE",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "KIN",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "DEP",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "CARE",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "CHORE",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "DOM",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "REST",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "NEED",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "EMP",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "AGEN",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "WAIT",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "RES",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "MOVE",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "APR",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "FAV",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "REQ",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "OWN",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "COND",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "TOOL",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "WS",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "BUILD",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "DOOR",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "WASTE",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "WST",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "HAZ",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "ACC",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "FIRE",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "ERSP",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "FRI",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "AFF",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "RIFT",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "GIFT",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "CONV",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "VOICE",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "HEAR",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "MSG",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "ED",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    },
+    {
+      "namespace": "K",
+      "source": "Casa Valrik/Treskal/MAPA_EXTRACCION_CORE_NORGARD_TRESKAL_v0.1.md",
+      "reuseIntent": "READ_AND_VALIDATE_AGAINST_CORE_CONTRACT_WHEN_INTEGRATING",
+      "darovanUniqueOverride": null,
+      "currentlySimulatedByThisPhase": false
+    }
+  ],
+  "requiresCurrentContractVerification": true,
+  "conceptualInputs": [
+    "authoredPlaceId",
+    "provenance",
+    "verifiedCoordinatesOrUnknown",
+    "timeAndSeasonOrUnknown",
+    "actualWorldStateOrUnknown",
+    "actorKnowledgeAndPermissions",
+    "serviceProviderIdOrUnknown",
+    "resourceStockOrUnknown",
+    "routeGraphOrUnknown"
+  ],
+  "evaluationOrder": [
+    "authority",
+    "physical_eligibility",
+    "legal_permissions",
+    "identity",
+    "existing_objects",
+    "route_and_capacity",
+    "state_transition",
+    "record_event_and_provenance",
+    "expose_observer_subset_to_ai"
+  ],
+  "conceptualOutputs": [
+    "allowed_or_rejected",
+    "reason_codes",
+    "evidence_sources",
+    "legal_authority",
+    "unchanged_worldstate_when_rejected",
+    "proposed_mutations_for_engine_only"
+  ],
+  "testOnlyScenarios": [
+    {
+      "id": "DP17-T01",
+      "title": "Veldora descarga e inspección exterior",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d07_veldora",
+        "d09_governance",
+        "d05_transport"
+      ],
+      "precondition": "REQUIRE_EXISTS_STOCK_CUSTOMS_PERMISSION",
+      "forbidden": "NO_NEW_DOCK_OR_INTERNAL_CUSTOMS",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T02",
+      "title": "Veldora llega comercio terrestre de Treihord",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d05_road_veldora_treihord"
+      ],
+      "precondition": "REQUIRE_ACCESS_AND_SUPPLY",
+      "forbidden": "NO_KM_TRAVEL_TIME_OR_STOCK_GUESS",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T03",
+      "title": "Taramin descarga pesquera conceptual",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d07_taramin",
+        "d08_jobs"
+      ],
+      "precondition": "REQUIRE_VERIFIED_DOCK_LOCATION",
+      "forbidden": "NO_THALEN_BRANCH_NAVIGABILITY_INFERRED",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T04",
+      "title": "Taramin evaluación de acceso de interfluvio",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d02_thalen"
+      ],
+      "precondition": "REQUIRE_PHYSICAL_BRIDGE_IF_CROSSING",
+      "forbidden": "NO_NEW_BRIDGE_OR_FORD",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T05",
+      "title": "Syvaris abrigo en bahía",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d07_syvaris"
+      ],
+      "precondition": "REQUIRE_BAY_SITE_AND_WEATHER",
+      "forbidden": "NO_MARITIME_ROUTE_SCHEDULE",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T06",
+      "title": "Syvaris operación naval",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "norgard_royal_navy"
+      ],
+      "precondition": "REQUIRE_ROYAL_AUTHORITY",
+      "forbidden": "NO_DAROVAN_PRIVATE_NAVY",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T07",
+      "title": "Treihord barguería industrial del Belara",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d05_belara_shallow_haul"
+      ],
+      "precondition": "REQUIRE_SHALLOW_DRAFT_AND_ACTUAL_CARGO",
+      "forbidden": "NO_MERCHANT_OCEAN_PORT",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T08",
+      "title": "Treihord acceso a la Vena",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d05_vena_restricted"
+      ],
+      "precondition": "REQUIRE_RESTRICTED_ACCESS",
+      "forbidden": "NO_PUBLIC_TRANSIT",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T09",
+      "title": "Arven actividad forestal solicitada",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "forest_manto_verde"
+      ],
+      "precondition": "REQUIRE_RIGHT_AND_SUSTAINABLE_LIMIT",
+      "forbidden": "NO_AUTOMATIC_FOREST_REDUCTION",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T10",
+      "title": "Agujas asentamiento propuesto",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "forest_aguja"
+      ],
+      "precondition": "REJECT_PERMANENT_SETTLEMENT_IN_INTERIOR",
+      "forbidden": "NO_NEW_VILLAGE",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T11",
+      "title": "Aldea candidata recibe peso regional alto",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d06_weights"
+      ],
+      "precondition": "REQUIRE_ALL_TEN_DP14_GATES",
+      "forbidden": "NO_PROBABILITY_EQUALS_REAL_SITE",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T12",
+      "title": "Aldea reclama agua potable por proximidad",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d02_hydro"
+      ],
+      "precondition": "REQUIRE_SOURCE_POTABILITY_RIGHT",
+      "forbidden": "NO_DRINKING_WATER_BY_RIVER_PROXIMITY",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T13",
+      "title": "Servicios a domicilio en localidad",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "core_CARE",
+        "core_WAIT"
+      ],
+      "precondition": "REQUIRE_PROVIDER_CAPACITY_AND_TRAVEL",
+      "forbidden": "NO_INSTANT_PROVIDER",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T14",
+      "title": "Vacante para joven de Norgard",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "core_EMP",
+        "norgard_age_law"
+      ],
+      "precondition": "REQUIRE_WORK_AUTHORIZATION_AND_PROTECTIONS",
+      "forbidden": "NO_CHILD_EMPLOYMENT_DEFAULT",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T15",
+      "title": "Cambio de hogar y residencia",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "core_RES",
+        "core_MOVE",
+        "core_OWN"
+      ],
+      "precondition": "REQUIRE_LEGAL_RIGHT_AND_ACTUAL_MOVE",
+      "forbidden": "NO_TELEPORT_OR_AUTO_PROPERTY",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T16",
+      "title": "Rumor sobre inspección aduanera",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "core_K",
+        "core_CRED",
+        "core_MEM"
+      ],
+      "precondition": "REQUIRE_SOURCE_AND_VISIBILITY",
+      "forbidden": "NO_AI_OMNISCIENCE",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T17",
+      "title": "Incendio de almacén",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "core_FIRE",
+        "core_HAZ",
+        "core_WAIT"
+      ],
+      "precondition": "REQUIRE_CAUSE_GEOMETRY_CAPACITY",
+      "forbidden": "NO_UNCAUSED_INCIDENT",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T18",
+      "title": "Abastecimiento invernal piedemonte",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "dp13_climate",
+        "d05_transport"
+      ],
+      "precondition": "REQUIRE_REAL_WEATHER_AND_ROUTE",
+      "forbidden": "NO_FIXED_WINTER_CLOSURES",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T19",
+      "title": "Fhalion receptor de cuenca hipotético",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d02_hydro"
+      ],
+      "precondition": "REJECT_MOUTH_NOT_AUTHORED",
+      "forbidden": "NO_FHALION_MOUTH_COORDINATES",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T20",
+      "title": "Aldea insular genera NPC persistente",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "core_RES",
+        "d06_models"
+      ],
+      "precondition": "REQUIRE_VALID_REAL_SITE_AND_STABLE_IDS",
+      "forbidden": "NO_INSTANT_NPC_IN_LORE",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T21",
+      "title": "Compraventa de metales de Valkram",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "d04_economy",
+        "norgard_coin_law"
+      ],
+      "precondition": "REQUIRE_ASSAY_PROVENANCE_AND_LEDGER",
+      "forbidden": "NO_MINT_IN_TREIHORD",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T22",
+      "title": "Tratamiento de accidente",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "core_HAZ",
+        "core_HLTH",
+        "core_CARE"
+      ],
+      "precondition": "REQUIRE_SKILL_MATERIALS_CAPACITY",
+      "forbidden": "NO_FREE_HOSPITAL_ASSUMPTION",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T23",
+      "title": "Investigación de persona no conocida",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "core_K",
+        "core_CRED",
+        "core_MEM"
+      ],
+      "precondition": "REQUIRE_AUTHORIZED_KNOWLEDGE",
+      "forbidden": "NO_REVEAL_UNLEARNED_SECRETS",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    },
+    {
+      "id": "DP17-T24",
+      "title": "Tala, erosión y recuperación del bosque",
+      "status": "TEST_ONLY",
+      "inputs": [
+        "dp13_ecology",
+        "core_WASTE"
+      ],
+      "precondition": "REQUIRE_OCCURRED_CHANGE_AND_PERSISTENCE",
+      "forbidden": "NO_ONE_DAY_FOREST_REGENERATION",
+      "directWorldStateMutation": false,
+      "output": "REQUIRE_EVIDENCE_OR_REJECT",
+      "narrativeMayNotMutateState": true
+    }
+  ],
+  "simulationClaims": {
+    "implementedByThisPR": false,
+    "compiledRuntimeAdapter": false,
+    "realNpcSpawn": false,
+    "realWorldStateWrites": false,
+    "aiHasStateAuthority": false
+  },
+  "authorialCanonProtections": [
+    "treihord_is_manual",
+    "veldora_taramin_syvaris_manual",
+    "thalen_one_river_two_arms",
+    "fhalion_mouth_unknown",
+    "no_private_darovan_navy",
+    "aguja_interior_uninhabited",
+    "arven_manto_verde_90percent",
+    "no_internal_customs",
+    "no_mint_in_treihord"
+  ]
+}

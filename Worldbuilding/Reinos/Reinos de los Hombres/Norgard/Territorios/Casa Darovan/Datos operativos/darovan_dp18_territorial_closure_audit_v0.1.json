@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp18_territorial_closure_audit_v0.1",
+  "phase": "D.P18",
+  "version": "0.1.0",
+  "date": "2026-11-11",
+  "status": "DOCUMENTARY_DESIGN_SUBSTANTIALLY_PREPARED_MATERIALIZATION_AND_AUTHORIAL_URBAN_GAPS_OPEN",
+  "baseEvidence": {
+    "priorDarovanPhasesMerged": "D00–D12, D.P13",
+    "valrikCityReference": "Treskal 99-layer functional base and Core/Norgard extraction",
+    "fourCanonicalCityIds": [
+      "treihord",
+      "veldora",
+      "taramin",
+      "syvaris"
+    ],
+    "d01StudyUnits": 12,
+    "d02MajorRivers": 5,
+    "d02Systems": 4,
+    "physicalDataAuthoritativeSource": "D.P13 approved authorial and delegated JSON records"
+  },
+  "deliverableMetrics": [
+    {
+      "phase": "D.P14",
+      "id": "twelveStudyUnits",
+      "value": 12,
+      "note": "Matriz de ámbitos, no parcelas"
+    },
+    {
+      "phase": "D.P14",
+      "id": "eligibilityGates",
+      "value": 10,
+      "note": "Puertas que exigen evidencia local"
+    },
+    {
+      "phase": "D.P15",
+      "id": "settlementModels",
+      "value": 9,
+      "note": "Reutiliza modelos D06 y no los vuelve a generar"
+    },
+    {
+      "phase": "D.P15",
+      "id": "serviceNeeds",
+      "value": 10,
+      "note": "Servicios conceptuales, sin proveedores"
+    },
+    {
+      "phase": "D.P16",
+      "id": "manualCityPlans",
+      "value": 4,
+      "note": "Cuatro fichas urbanas, sin planos geométricos"
+    },
+    {
+      "phase": "D.P16",
+      "id": "treskalIndexedFolders",
+      "value": 100,
+      "note": "Inventario metodológico; número 34 duplicado en la referencia"
+    },
+    {
+      "phase": "D.P17",
+      "id": "globalNamespaceCandidates",
+      "value": 57,
+      "note": "Consultas futuras a Core/Norgard, sin integración ejecutada"
+    },
+    {
+      "phase": "D.P17",
+      "id": "testOnlyScenarios",
+      "value": 24,
+      "note": "Escenarios conceptuales, no pruebas físicas"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "P18-G01",
+      "topic": "Plano de huella de Veldora",
+      "kind": "NEEDS_AUTHORIAL_URBAN_DESIGN_AND_CARTOGRAPHY",
+      "detail": "Número/nombres de barrios, muelles concretos y traza no autorizados",
+      "closed": false,
+      "responsibleFuture": "author_lore_and_later_technical"
+    },
+    {
+      "id": "P18-G02",
+      "topic": "Plano de huella de Taramin",
+      "kind": "NEEDS_AUTHORIAL_URBAN_DESIGN_AND_CARTOGRAPHY",
+      "detail": "Ubicación zona pesquera principal y de cruces de los dos brazos del Thalen no decidida",
+      "closed": false,
+      "responsibleFuture": "author_lore_and_later_technical"
+    },
+    {
+      "id": "P18-G03",
+      "topic": "Plano de huella de Syvaris",
+      "kind": "NEEDS_AUTHORIAL_URBAN_DESIGN_AND_CARTOGRAPHY",
+      "detail": "Posición de instalaciones civiles/navales y sectores de la bahía no decidida",
+      "closed": false,
+      "responsibleFuture": "author_lore_and_later_technical"
+    },
+    {
+      "id": "P18-G04",
+      "topic": "Geometría detallada Treihord",
+      "kind": "NEEDS_CARTOGRAPHY_WHILE_PRESERVING_CANON",
+      "detail": "Ocho barrios canónicos y Belara no se mueven; faltan ejes/cartografía exacta",
+      "closed": false,
+      "responsibleFuture": "future_mapping_or_runtime"
+    },
+    {
+      "id": "P18-G05",
+      "topic": "Cartografía física de 12 unidades",
+      "kind": "NEEDS_APPROVED_GEOMETRY",
+      "detail": "Las bandas de D.P13 no crean DEM ni escala métrica",
+      "closed": false,
+      "responsibleFuture": "future_mapping_or_runtime"
+    },
+    {
+      "id": "P18-G06",
+      "topic": "Cauces y receptores menores",
+      "kind": "NEEDS_BASIN_TOPOLOGY",
+      "detail": "Fhalion y otras bocas precisas no localizadas; preservar red D02",
+      "closed": false,
+      "responsibleFuture": "future_mapping_or_runtime"
+    },
+    {
+      "id": "P18-G07",
+      "topic": "Rutas materiales y tiempo de viaje",
+      "kind": "NEEDS_TOPOLOGY_AND_GEOMETRY",
+      "detail": "D05 acredita solo 3 vínculos de naturaleza diferente; sin todos los enlaces",
+      "closed": false,
+      "responsibleFuture": "future_mapping_or_runtime"
+    },
+    {
+      "id": "P18-G08",
+      "topic": "Censos y hogares exactos",
+      "kind": "NEEDS_AUTHOR_OR_GAME_INSTANCE",
+      "detail": "Rangos D08 no se transforman en recuento de proveedores o pobladores",
+      "closed": false,
+      "responsibleFuture": "author_lore_and_later_technical"
+    },
+    {
+      "id": "P18-G09",
+      "topic": "Instalaciones y proveedores concretos",
+      "kind": "NEEDS_AUTHOR_OR_GAME_INSTANCE",
+      "detail": "No asumir hospitales, escuelas, guardias o puestos por cada población",
+      "closed": false,
+      "responsibleFuture": "author_lore_and_later_technical"
+    },
+    {
+      "id": "P18-G10",
+      "topic": "NPC nominados y genealogías concretas",
+      "kind": "NEEDS_AUTHOR_LORE_DECISION",
+      "detail": "Core/Norgard permite NPC genéricos; personajes importantes requieren autoría",
+      "closed": false,
+      "responsibleFuture": "author_lore_and_later_technical"
+    },
+    {
+      "id": "P18-G11",
+      "topic": "Parámetros ambientales medidos",
+      "kind": "NEEDS_EVIDENCE_OR_CALIBRATION",
+      "detail": "No deducir mm lluvias, viento prevalente o permeabilidad exacta de altitudes",
+      "closed": false,
+      "responsibleFuture": "future_mapping_or_runtime"
+    },
+    {
+      "id": "P18-G12",
+      "topic": "Integración ejecutable en CoreRPG/Godot",
+      "kind": "NEEDS_FUTURE_IMPLEMENTATION",
+      "detail": "El contenido de esta rama no materializa sistema C++, GDExtension ni exportables",
+      "closed": false,
+      "responsibleFuture": "future_mapping_or_runtime"
+    }
+  ],
+  "phaseStatuses": [
+    {
+      "phase": "D.P14",
+      "status": "DOCUMENTARY_DESIGN_PREPARED",
+      "runtime": false
+    },
+    {
+      "phase": "D.P15",
+      "status": "DOCUMENTARY_DESIGN_PREPARED",
+      "runtime": false
+    },
+    {
+      "phase": "D.P16",
+      "status": "FUNCTIONAL_READINESS_PREPARED_INDIVIDUAL_CITY_LORE_PENDING",
+      "runtime": false
+    },
+    {
+      "phase": "D.P17",
+      "status": "TEST_ONLY_CONTRACT_PREPARED",
+      "runtime": false
+    },
+    {
+      "phase": "D.P18",
+      "status": "CROSS_PHASE_AUDIT_PREPARED_CI_TO_VERIFY",
+      "runtime": false
+    }
+  ],
+  "projectGuard": {
+    "authorDecisionsNotFabricated": true,
+    "notEquivalentToValrik99LocalDetail": true,
+    "newCanonicalCities": [],
+    "newCanonicalDistricts": [],
+    "newRoads": [],
+    "newRivers": [],
+    "treihordCanonicalDesignUntouched": true,
+    "mayMergePr": false,
+    "nextHouseNotStarted": true,
+    "worldStateMutations": 0
+  },
+  "technicalValidation": {
+    "staticValidatorExpected": "Tools/DarovanDP14_DP18/validate.py",
+    "actionsWorkflowExpected": ".github/workflows/darovan-dp14-dp18.yml",
+    "githubActionsFinalResult": null,
+    "executedEngineValidation": false
+  }
+}

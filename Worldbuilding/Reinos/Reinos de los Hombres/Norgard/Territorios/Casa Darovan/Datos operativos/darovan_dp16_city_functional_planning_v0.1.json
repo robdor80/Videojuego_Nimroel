@@ -1,0 +1,1508 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp16_manual_city_functional_planning_v0.1",
+  "phase": "D.P16",
+  "version": "0.1.0",
+  "status": "FUNCTIONAL_DESIGN_COMPLETE_CITY_PLANS_NOT_AUTHORED",
+  "authority": "DERIVED_CONDITIONAL_SOURCE_FACTS_LOCKED",
+  "valrikFunctionalReference": {
+    "treskalSourcePath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/Treskal/",
+    "cataloguedIndexedFolders": 100,
+    "notes": "100 folders for 01–99 because section 34 has two distinct names; source categorization not duplicated canon",
+    "catalog": [
+      {
+        "sourceFolder": "01_Estructura_urbana",
+        "number": 1,
+        "displayTitle": "Estructura urbana",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "02_Topologia",
+        "number": 2,
+        "displayTitle": "Topologia",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "03_Distribucion_urbana",
+        "number": 3,
+        "displayTitle": "Distribucion urbana",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "04_Infraestructura_urbana",
+        "number": 4,
+        "displayTitle": "Infraestructura urbana",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "05_Tejido_urbano",
+        "number": 5,
+        "displayTitle": "Tejido urbano",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "06_Edificios_singulares",
+        "number": 6,
+        "displayTitle": "Edificios singulares",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "07_Vida_urbana",
+        "number": 7,
+        "displayTitle": "Vida urbana",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "08_Cartografia",
+        "number": 8,
+        "displayTitle": "Cartografia",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "09_Economia",
+        "number": 9,
+        "displayTitle": "Economia",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "10_Poblacion_NPC",
+        "number": 10,
+        "displayTitle": "Poblacion NPC",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "11_Identidad_urbana",
+        "number": 11,
+        "displayTitle": "Identidad urbana",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "12_Historia_urbana",
+        "number": 12,
+        "displayTitle": "Historia urbana",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "13_Toponimia",
+        "number": 13,
+        "displayTitle": "Toponimia",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "14_Simulacion_urbana",
+        "number": 14,
+        "displayTitle": "Simulacion urbana",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "15_Vias_y_espacios",
+        "number": 15,
+        "displayTitle": "Vias y espacios",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "16_Interiores_y_actividad",
+        "number": 16,
+        "displayTitle": "Interiores y actividad",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "17_Integracion_juego",
+        "number": 17,
+        "displayTitle": "Integracion juego",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "18_Demografia_espacial",
+        "number": 18,
+        "displayTitle": "Demografia espacial",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "19_Informacion_y_reputacion",
+        "number": 19,
+        "displayTitle": "Informacion y reputacion",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "20_Gameplay_urbano",
+        "number": 20,
+        "displayTitle": "Gameplay urbano",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "21_Demografia_laboral",
+        "number": 21,
+        "displayTitle": "Demografia laboral",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "22_Puerto_y_almacenamiento",
+        "number": 22,
+        "displayTitle": "Puerto y almacenamiento",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "23_Vivienda_y_geografia_social",
+        "number": 23,
+        "displayTitle": "Vivienda y geografia social",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "24_Contexto_IA",
+        "number": 24,
+        "displayTitle": "Contexto IA",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "25_Pruebas_IA",
+        "number": 25,
+        "displayTitle": "Pruebas IA",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "26_Materializacion_y_runtime",
+        "number": 26,
+        "displayTitle": "Materializacion y runtime",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "27_Eventos_y_causalidad",
+        "number": 27,
+        "displayTitle": "Eventos y causalidad",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "28_Entradas_y_viaje",
+        "number": 28,
+        "displayTitle": "Entradas y viaje",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "29_Economia_simulada",
+        "number": 29,
+        "displayTitle": "Economia simulada",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "30_Cultura_de_la_madera",
+        "number": 30,
+        "displayTitle": "Cultura de la madera",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "31_Percepcion_urbana",
+        "number": 31,
+        "displayTitle": "Percepcion urbana",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "32_Validacion_integrada",
+        "number": 32,
+        "displayTitle": "Validacion integrada",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "33_Cultura_maritima",
+        "number": 33,
+        "displayTitle": "Cultura maritima",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "34_Fiscalidad_aduanas",
+        "number": 34,
+        "displayTitle": "Fiscalidad aduanas",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "34_Salud_y_cuidados",
+        "number": 34,
+        "displayTitle": "Salud y cuidados",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "35_Aprendizaje_y_saber",
+        "number": 35,
+        "displayTitle": "Aprendizaje y saber",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "36_Hospitalidad",
+        "number": 36,
+        "displayTitle": "Hospitalidad",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "37_Vida_cotidiana",
+        "number": 37,
+        "displayTitle": "Vida cotidiana",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "38_Honor_y_palabra",
+        "number": 38,
+        "displayTitle": "Honor y palabra",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "39_Orientacion_y_senalizacion",
+        "number": 39,
+        "displayTitle": "Orientacion y senalizacion",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "40_Transporte_y_animales",
+        "number": 40,
+        "displayTitle": "Transporte y animales",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "41_Mensajeria_y_comunicacion",
+        "number": 41,
+        "displayTitle": "Mensajeria y comunicacion",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "42_Propiedad_y_objetos",
+        "number": 42,
+        "displayTitle": "Propiedad y objetos",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "43_Mantenimiento_y_reparacion",
+        "number": 43,
+        "displayTitle": "Mantenimiento y reparacion",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "44_Mercados_y_puestos",
+        "number": 44,
+        "displayTitle": "Mercados y puestos",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "45_Ciclo_de_negocios",
+        "number": 45,
+        "displayTitle": "Ciclo de negocios",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "46_Encargos_artesanales",
+        "number": 46,
+        "displayTitle": "Encargos artesanales",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "47_Aseo_y_lavado",
+        "number": 47,
+        "displayTitle": "Aseo y lavado",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "48_Combustible_y_calor",
+        "number": 48,
+        "displayTitle": "Combustible y calor",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "49_Accesos_fisicos",
+        "number": 49,
+        "displayTitle": "Accesos fisicos",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "50_Empleo_y_vacantes",
+        "number": 50,
+        "displayTitle": "Empleo y vacantes",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "51_Residencia_y_mudanzas",
+        "number": 51,
+        "displayTitle": "Residencia y mudanzas",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "52_Construccion_y_cambio_edificado",
+        "number": 52,
+        "displayTitle": "Construccion y cambio edificado",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "53_Indumentaria_y_calzado",
+        "number": 53,
+        "displayTitle": "Indumentaria y calzado",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "54_Estacionalidad_y_clima",
+        "number": 54,
+        "displayTitle": "Estacionalidad y clima",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "55_Mobiliario_y_vida_material",
+        "number": 55,
+        "displayTitle": "Mobiliario y vida material",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "56_Integracion_de_sistemas",
+        "number": 56,
+        "displayTitle": "Integracion de sistemas",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "57_Herramientas_y_equipamiento",
+        "number": 57,
+        "displayTitle": "Herramientas y equipamiento",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "58_Seguridad_laboral_y_accidentes",
+        "number": 58,
+        "displayTitle": "Seguridad laboral y accidentes",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "59_Sueno_y_descanso",
+        "number": 59,
+        "displayTitle": "Sueno y descanso",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "60_Incendios_y_respuesta",
+        "number": 60,
+        "displayTitle": "Incendios y respuesta",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "61_Saneamiento_y_residuos",
+        "number": 61,
+        "displayTitle": "Saneamiento y residuos",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "62_Muerte_duelo_y_funeral",
+        "number": 62,
+        "displayTitle": "Muerte duelo y funeral",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "63_Privacidad_y_conversacion",
+        "number": 63,
+        "displayTitle": "Privacidad y conversacion",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "64_Esperas_y_capacidad",
+        "number": 64,
+        "displayTitle": "Esperas y capacidad",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "65_Cuidados_y_dependientes",
+        "number": 65,
+        "displayTitle": "Cuidados y dependientes",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "66_Hospitalidad_y_visitas",
+        "number": 66,
+        "displayTitle": "Hospitalidad y visitas",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "67_Tareas_domesticas",
+        "number": 67,
+        "displayTitle": "Tareas domesticas",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "68_Aprendizaje_de_oficio",
+        "number": 68,
+        "displayTitle": "Aprendizaje de oficio",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "69_Ocio_y_sociabilidad",
+        "number": 69,
+        "displayTitle": "Ocio y sociabilidad",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "70_Relaciones_afectivas_y_pareja",
+        "number": 70,
+        "displayTitle": "Relaciones afectivas y pareja",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "71_Embarazo_nacimiento_y_primera_infancia",
+        "number": 71,
+        "displayTitle": "Embarazo nacimiento y primera infancia",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "72_Desarrollo_infantil_y_transicion_juvenil",
+        "number": 72,
+        "displayTitle": "Desarrollo infantil y transicion juvenil",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "73_Envejecimiento_y_vejez_activa",
+        "number": 73,
+        "displayTitle": "Envejecimiento y vejez activa",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "74_Amistad_y_circulos_sociales",
+        "number": 74,
+        "displayTitle": "Amistad y circulos sociales",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "75_Conflicto_interpersonal_y_reconciliacion",
+        "number": 75,
+        "displayTitle": "Conflicto interpersonal y reconciliacion",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "76_Preferencias_y_habitos_personales",
+        "number": 76,
+        "displayTitle": "Preferencias y habitos personales",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "77_Favores_y_reciprocidad",
+        "number": 77,
+        "displayTitle": "Favores y reciprocidad",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "78_Regalos_y_significado_social",
+        "number": 78,
+        "displayTitle": "Regalos y significado social",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "79_Peticiones_y_limites_personales",
+        "number": 79,
+        "displayTitle": "Peticiones y limites personales",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "80_Secretos_y_confidencias",
+        "number": 80,
+        "displayTitle": "Secretos y confidencias",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "81_Verdad_error_y_versiones_falsas",
+        "number": 81,
+        "displayTitle": "Verdad error y versiones falsas",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "82_Credibilidad_sospecha_y_verificacion",
+        "number": 82,
+        "displayTitle": "Credibilidad sospecha y verificacion",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "83_Emociones_y_estado_de_animo",
+        "number": 83,
+        "displayTitle": "Emociones y estado de animo",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "84_Motivaciones_objetivos_e_intenciones",
+        "number": 84,
+        "displayTitle": "Motivaciones objetivos e intenciones",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "85_Toma_de_decisiones_y_riesgo",
+        "number": 85,
+        "displayTitle": "Toma de decisiones y riesgo",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "86_Estres_presion_y_recuperacion",
+        "number": 86,
+        "displayTitle": "Estres presion y recuperacion",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "87_Personalidad_y_rasgos_estables",
+        "number": 87,
+        "displayTitle": "Personalidad y rasgos estables",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "88_Memoria_relevancia_y_olvido",
+        "number": 88,
+        "displayTitle": "Memoria relevancia y olvido",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "89_Valores_principios_y_conflictos_internos",
+        "number": 89,
+        "displayTitle": "Valores principios y conflictos internos",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "90_Identidad_personal_y_roles_vitales",
+        "number": 90,
+        "displayTitle": "Identidad personal y roles vitales",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "91_Confianza_interpersonal_y_fiabilidad",
+        "number": 91,
+        "displayTitle": "Confianza interpersonal y fiabilidad",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "92_Expectativas_anticipacion_y_sorpresa",
+        "number": 92,
+        "displayTitle": "Expectativas anticipacion y sorpresa",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "93_Atencion_foco_y_distraccion",
+        "number": 93,
+        "displayTitle": "Atencion foco y distraccion",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "94_Necesidades_fisicas_cotidianas",
+        "number": 94,
+        "displayTitle": "Necesidades fisicas cotidianas",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "95_Dinamica_de_conversacion",
+        "number": 95,
+        "displayTitle": "Dinamica de conversacion",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "96_Actitudes_y_opiniones_personales",
+        "number": 96,
+        "displayTitle": "Actitudes y opiniones personales",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "97_Agenda_y_uso_del_tiempo",
+        "number": 97,
+        "displayTitle": "Agenda y uso del tiempo",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "98_Respuesta_personal_ante_emergencias",
+        "number": 98,
+        "displayTitle": "Respuesta personal ante emergencias",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      },
+      {
+        "sourceFolder": "99_Parentesco_y_red_familiar",
+        "number": 99,
+        "displayTitle": "Parentesco y red familiar",
+        "isModuleFromTreskal": true,
+        "localRulesCopied": false,
+        "applicableToDarovan": "AUDIT_FOR_INHERITANCE_OR_LOCAL_REQUIREMENT_NOT_TRANSPLANTED",
+        "darovanUrbanInstanceCreated": false
+      }
+    ],
+    "transferPolicy": "ONLY_CORE_NORGARD_GENERAL_MODULES_MAY_BE_REUSED_WHEN_VERIFIED; NO_TRESKAL_LOCAL_LAYOUTS"
+  },
+  "cityIds": [
+    "treihord",
+    "veldora",
+    "taramin",
+    "syvaris"
+  ],
+  "functionalGates": [
+    {
+      "id": "topology",
+      "description": "Huella, costa y ríos concretos solo cuando existan geometrías verificadas"
+    },
+    {
+      "id": "housing",
+      "description": "Residencia y hogares sujetos a derechos, ocupación y capacidad; población urbana no es número de viviendas"
+    },
+    {
+      "id": "goods",
+      "description": "Entradas de mercancías sustentadas por cadena, permiso, stock y acceso; sin cargas conjuradas"
+    },
+    {
+      "id": "services",
+      "description": "Proveedor real, localización, turno y aforo; necesidad no obliga a instalar institución"
+    },
+    {
+      "id": "employment",
+      "description": "Oficios y contratos condicionados a empleador, vacante, aptitud, edad y normas de Norgard"
+    },
+    {
+      "id": "law",
+      "description": "Justicia del Rey, jurisdicción Casa-Corona y custodia diferenciadas; sin ley local propia"
+    },
+    {
+      "id": "fiscal",
+      "description": "No aduanas entre Grandes Casas; control exterior solo donde está respaldado"
+    },
+    {
+      "id": "security",
+      "description": "Autoridad de Guardia urbana, Casa y Armada Real separada; no nuevo cuerpo militar"
+    },
+    {
+      "id": "care",
+      "description": "Salud, cuidados y dependencia sin hospital o cuidador universal por plantilla"
+    },
+    {
+      "id": "relationships",
+      "description": "Core hereda parentesco, reputación, conocimiento, memoria, diálogo y consentimientos"
+    },
+    {
+      "id": "maintenance",
+      "description": "Agua, saneamiento, incendios, desgaste y combustible solo con infraestructura específica o estado UNKNOWN"
+    },
+    {
+      "id": "worldstate",
+      "description": "Entidades, ubicaciones, accesos, actividades y cambios persisten solamente cuando CoreRPG los ejecuta"
+    }
+  ],
+  "cities": [
+    {
+      "cityId": "treihord",
+      "name": "Treihord",
+      "cityManualOnly": true,
+      "sourceDesignStatus": "CANON_DISENO_BASE_CERRADO",
+      "approvedCoreFacts": [
+        "capital_of_darovan",
+        "population_approx_approved",
+        "belara_adjacent_not_crossing",
+        "port_industrial_shallow_draft_only",
+        "crisol_not_mint",
+        "coal_source_montes_azurios",
+        "vena_restricted_gallery",
+        "boveda_del_grifo_existing",
+        "eight_approved_districts",
+        "four_approved_squares",
+        "four_approved_gates"
+      ],
+      "canonicalDistrictNames": [
+        "El Recinto",
+        "Los Altos",
+        "El Peso",
+        "Las Lonjas",
+        "Los Oficios",
+        "La Calzada",
+        "La Ribera",
+        "La Costra"
+      ],
+      "originalUnknownIds": [
+        "exact_street_parcels_and_belara_crossings",
+        "municipal_procedures_and_character_ids",
+        "coal_route_and_capacity"
+      ],
+      "approvedFunctionalPrinciples": [
+        "capital de Casa Darovan",
+        "diseño base canónico cerrado, ocho barrios/cuatro plazas/cuatro puertas",
+        "Crisol ensaya y refina, no acuña",
+        "Belara junto a ciudad; barcazas industriales someras",
+        "Bóveda del Grifo y galería La Vena con accesos protegidos"
+      ],
+      "administrativeFunctionsAlreadyInD09": [
+        "territorial_seat",
+        "kings_justice_ordinary",
+        "crisol_ensay_not_mint",
+        "crown_permanent_envoy_existing",
+        "house_guard_boveda_crisol_vena"
+      ],
+      "demographicReference": {
+        "approx": 32000
+      },
+      "concreteCityPlanGeometry": null,
+      "citySectorPolygons": [],
+      "newDistrictNames": [],
+      "newBuildingIds": [],
+      "cityStreetNetwork": null,
+      "marketServiceCapacities": null,
+      "explicitProhibition": [
+        "Do not create a fifth city or procedural replacement",
+        "No coordinates, names of new districts or geometric route without author and map",
+        "No personnel, service capacities, housing or shop inventories inferred from population",
+        "No port/quay/bridge/river geometry inferred from concept"
+      ],
+      "checksForFutureUrbanPlanning": [
+        {
+          "gateId": "topology",
+          "rule": "Huella, costa y ríos concretos solo cuando existan geometrías verificadas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "housing",
+          "rule": "Residencia y hogares sujetos a derechos, ocupación y capacidad; población urbana no es número de viviendas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "goods",
+          "rule": "Entradas de mercancías sustentadas por cadena, permiso, stock y acceso; sin cargas conjuradas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "services",
+          "rule": "Proveedor real, localización, turno y aforo; necesidad no obliga a instalar institución",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "employment",
+          "rule": "Oficios y contratos condicionados a empleador, vacante, aptitud, edad y normas de Norgard",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "law",
+          "rule": "Justicia del Rey, jurisdicción Casa-Corona y custodia diferenciadas; sin ley local propia",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "fiscal",
+          "rule": "No aduanas entre Grandes Casas; control exterior solo donde está respaldado",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "security",
+          "rule": "Autoridad de Guardia urbana, Casa y Armada Real separada; no nuevo cuerpo militar",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "care",
+          "rule": "Salud, cuidados y dependencia sin hospital o cuidador universal por plantilla",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "relationships",
+          "rule": "Core hereda parentesco, reputación, conocimiento, memoria, diálogo y consentimientos",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "maintenance",
+          "rule": "Agua, saneamiento, incendios, desgaste y combustible solo con infraestructura específica o estado UNKNOWN",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "worldstate",
+          "rule": "Entidades, ubicaciones, accesos, actividades y cambios persisten solamente cuando CoreRPG los ejecuta",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        }
+      ],
+      "status": "FUNCTIONAL_PLANNING_DESIGN_ONLY",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d08_population_services_v0.1.json",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d09_governance_security_v0.1.json"
+      ]
+    },
+    {
+      "cityId": "veldora",
+      "name": "Veldora",
+      "cityManualOnly": true,
+      "sourceDesignStatus": "VISUAL_APROBADO_TRAZADO_URBANO_PENDIENTE",
+      "approvedCoreFacts": [
+        "primary_commercial_port",
+        "west_coast_golfo_veldora",
+        "river_veldora_independent",
+        "river_behind_city_visual_anchor",
+        "external_customs_and_royal_presence",
+        "merchant_storage_workshops_guilds",
+        "organic_growth_not_perfect_grid",
+        "stone_wood_tile_two_floors_some_three",
+        "affluent_areas_away_from_docks",
+        "offshore_forested_island"
+      ],
+      "canonicalDistrictNames": [],
+      "originalUnknownIds": [
+        "street_district_plan",
+        "precise_dock_and_warehouse_positions",
+        "river_crossings_and_navigability",
+        "population_and_services_D08",
+        "identity_of_visual_offshore_island"
+      ],
+      "approvedFunctionalPrinciples": [
+        "principal puerto mercante y comercio exterior con aduanas reales",
+        "desarrollo comercial orgánico distribuido (DAR-D07-01 opción B)",
+        "gremios, almacenes y talleres ya acreditados",
+        "zonas acomodadas alejadas de muelles",
+        "río Veldora independiente de Lhera, frente del Golfo de Veldora"
+      ],
+      "administrativeFunctionsAlreadyInD09": [
+        "commercial_port",
+        "royal_external_customs",
+        "darovan_administrative_and_port_support",
+        "kings_justice_ordinary",
+        "urban_security"
+      ],
+      "demographicReference": {
+        "minInclusive": 29000,
+        "maxInclusive": 35000,
+        "unit": "habitantes",
+        "status": "APPROVED_AUTHOR_RANGE",
+        "decisionId": "DAR-D08-01",
+        "option": "B",
+        "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0801",
+        "approvalScope": "demographic_reference_range_only_no_exact_count"
+      },
+      "concreteCityPlanGeometry": null,
+      "citySectorPolygons": [],
+      "newDistrictNames": [],
+      "newBuildingIds": [],
+      "cityStreetNetwork": null,
+      "marketServiceCapacities": null,
+      "explicitProhibition": [
+        "Do not create a fifth city or procedural replacement",
+        "No coordinates, names of new districts or geometric route without author and map",
+        "No personnel, service capacities, housing or shop inventories inferred from population",
+        "No port/quay/bridge/river geometry inferred from concept"
+      ],
+      "checksForFutureUrbanPlanning": [
+        {
+          "gateId": "topology",
+          "rule": "Huella, costa y ríos concretos solo cuando existan geometrías verificadas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "housing",
+          "rule": "Residencia y hogares sujetos a derechos, ocupación y capacidad; población urbana no es número de viviendas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "goods",
+          "rule": "Entradas de mercancías sustentadas por cadena, permiso, stock y acceso; sin cargas conjuradas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "services",
+          "rule": "Proveedor real, localización, turno y aforo; necesidad no obliga a instalar institución",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "employment",
+          "rule": "Oficios y contratos condicionados a empleador, vacante, aptitud, edad y normas de Norgard",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "law",
+          "rule": "Justicia del Rey, jurisdicción Casa-Corona y custodia diferenciadas; sin ley local propia",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "fiscal",
+          "rule": "No aduanas entre Grandes Casas; control exterior solo donde está respaldado",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "security",
+          "rule": "Autoridad de Guardia urbana, Casa y Armada Real separada; no nuevo cuerpo militar",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "care",
+          "rule": "Salud, cuidados y dependencia sin hospital o cuidador universal por plantilla",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "relationships",
+          "rule": "Core hereda parentesco, reputación, conocimiento, memoria, diálogo y consentimientos",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "maintenance",
+          "rule": "Agua, saneamiento, incendios, desgaste y combustible solo con infraestructura específica o estado UNKNOWN",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "worldstate",
+          "rule": "Entidades, ubicaciones, accesos, actividades y cambios persisten solamente cuando CoreRPG los ejecuta",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        }
+      ],
+      "status": "FUNCTIONAL_PLANNING_DESIGN_ONLY",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d08_population_services_v0.1.json",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d09_governance_security_v0.1.json"
+      ]
+    },
+    {
+      "cityId": "taramin",
+      "name": "Taramin",
+      "cityManualOnly": true,
+      "sourceDesignStatus": "VISUAL_APROBADO_TRAZADO_URBANO_PENDIENTE",
+      "approvedCoreFacts": [
+        "fishing_port_and_fluvial_fishing",
+        "between_two_thalen_terminal_arms",
+        "thalen_terminal_arms_two_not_two_rivers",
+        "maritime_and_fluvial_fishing",
+        "marine_products_and_whale_oil_visual",
+        "medium_scale_below_veldora_treihord",
+        "functional_non_monumental_character",
+        "semiarid_peninsular_transition",
+        "taramin_forest_no_industrial_logging"
+      ],
+      "canonicalDistrictNames": [],
+      "originalUnknownIds": [
+        "urban_plan_and_actual_land_access",
+        "terminal_arm_navigability_and_bridges",
+        "fish_handling_sites_and_water_supply",
+        "population_professions_services_D08",
+        "specific_coastal_moorings"
+      ],
+      "approvedFunctionalPrinciples": [
+        "una zona principal de actividad pesquera (DAR-D07-02 opción A)",
+        "entre dos brazos terminales de un solo Thalen",
+        "pesca marítima y fluvial, productos marinos y aceites",
+        "ciudad funcional y no monumental",
+        "bosque meridional no dividido y transición semiárida"
+      ],
+      "administrativeFunctionsAlreadyInD09": [
+        "fishing_zone_concept_only",
+        "kings_justice_ordinary",
+        "urban_security",
+        "local_fishing_not_customs_import"
+      ],
+      "demographicReference": {
+        "minInclusive": 14000,
+        "maxInclusive": 20000,
+        "unit": "habitantes",
+        "status": "APPROVED_AUTHOR_RANGE",
+        "decisionId": "DAR-D08-01",
+        "option": "B",
+        "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0801Taramin",
+        "approvalScope": "demographic_reference_range_only_no_exact_count"
+      },
+      "concreteCityPlanGeometry": null,
+      "citySectorPolygons": [],
+      "newDistrictNames": [],
+      "newBuildingIds": [],
+      "cityStreetNetwork": null,
+      "marketServiceCapacities": null,
+      "explicitProhibition": [
+        "Do not create a fifth city or procedural replacement",
+        "No coordinates, names of new districts or geometric route without author and map",
+        "No personnel, service capacities, housing or shop inventories inferred from population",
+        "No port/quay/bridge/river geometry inferred from concept"
+      ],
+      "checksForFutureUrbanPlanning": [
+        {
+          "gateId": "topology",
+          "rule": "Huella, costa y ríos concretos solo cuando existan geometrías verificadas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "housing",
+          "rule": "Residencia y hogares sujetos a derechos, ocupación y capacidad; población urbana no es número de viviendas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "goods",
+          "rule": "Entradas de mercancías sustentadas por cadena, permiso, stock y acceso; sin cargas conjuradas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "services",
+          "rule": "Proveedor real, localización, turno y aforo; necesidad no obliga a instalar institución",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "employment",
+          "rule": "Oficios y contratos condicionados a empleador, vacante, aptitud, edad y normas de Norgard",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "law",
+          "rule": "Justicia del Rey, jurisdicción Casa-Corona y custodia diferenciadas; sin ley local propia",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "fiscal",
+          "rule": "No aduanas entre Grandes Casas; control exterior solo donde está respaldado",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "security",
+          "rule": "Autoridad de Guardia urbana, Casa y Armada Real separada; no nuevo cuerpo militar",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "care",
+          "rule": "Salud, cuidados y dependencia sin hospital o cuidador universal por plantilla",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "relationships",
+          "rule": "Core hereda parentesco, reputación, conocimiento, memoria, diálogo y consentimientos",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "maintenance",
+          "rule": "Agua, saneamiento, incendios, desgaste y combustible solo con infraestructura específica o estado UNKNOWN",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "worldstate",
+          "rule": "Entidades, ubicaciones, accesos, actividades y cambios persisten solamente cuando CoreRPG los ejecuta",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        }
+      ],
+      "status": "FUNCTIONAL_PLANNING_DESIGN_ONLY",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d08_population_services_v0.1.json",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d09_governance_security_v0.1.json"
+      ]
+    },
+    {
+      "cityId": "syvaris",
+      "name": "Syvaris",
+      "cityManualOnly": true,
+      "sourceDesignStatus": "VISUAL_APROBADO_TRAZADO_URBANO_PENDIENTE",
+      "approvedCoreFacts": [
+        "island_is_norgard_and_darovan",
+        "city_at_main_bay_with_minor_coves",
+        "safe_island_port",
+        "norgard_naval_presence_not_darovan_navy",
+        "smaller_than_taramin",
+        "fishing_trade_marine_products_oils",
+        "south_greener_center_north_drier",
+        "discontinuous_small_forests_nonintensive",
+        "low_stone_wood_some_whitewash_not_all",
+        "not_desert"
+      ],
+      "canonicalDistrictNames": [],
+      "originalUnknownIds": [
+        "detailed_main_bay_layout_and_cove_names",
+        "water_supply_actual_sites",
+        "island_maritime_schedules_and_routes",
+        "population_professions_services_D08",
+        "naval_facility_positions"
+      ],
+      "approvedFunctionalPrinciples": [
+        "bahía principal concentradora de actividad (DAR-D07-03 opción A)",
+        "puerto seguro y presencia naval del Reino, no de Darovan",
+        "ciudad menor que Taramin, isla Norgard administrada por Darovan",
+        "más verde al sur y relativamente seca al centro/norte",
+        "bosquetes dispersos, no selva continua"
+      ],
+      "administrativeFunctionsAlreadyInD09": [
+        "main_bay_concept_only",
+        "kings_justice_ordinary",
+        "darovan_civil_security",
+        "norgard_royal_navy_presence"
+      ],
+      "demographicReference": {
+        "minInclusive": 7000,
+        "maxInclusive": 10000,
+        "unit": "habitantes",
+        "status": "APPROVED_AUTHOR_RANGE",
+        "decisionId": "DAR-D08-01",
+        "option": "B",
+        "provenance": "AUTHORED",
+        "sourceRefId": "decisionD0801Syvaris",
+        "approvalScope": "demographic_reference_range_only_city_not_island_no_exact_count"
+      },
+      "concreteCityPlanGeometry": null,
+      "citySectorPolygons": [],
+      "newDistrictNames": [],
+      "newBuildingIds": [],
+      "cityStreetNetwork": null,
+      "marketServiceCapacities": null,
+      "explicitProhibition": [
+        "Do not create a fifth city or procedural replacement",
+        "No coordinates, names of new districts or geometric route without author and map",
+        "No personnel, service capacities, housing or shop inventories inferred from population",
+        "No port/quay/bridge/river geometry inferred from concept"
+      ],
+      "checksForFutureUrbanPlanning": [
+        {
+          "gateId": "topology",
+          "rule": "Huella, costa y ríos concretos solo cuando existan geometrías verificadas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "housing",
+          "rule": "Residencia y hogares sujetos a derechos, ocupación y capacidad; población urbana no es número de viviendas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "goods",
+          "rule": "Entradas de mercancías sustentadas por cadena, permiso, stock y acceso; sin cargas conjuradas",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "services",
+          "rule": "Proveedor real, localización, turno y aforo; necesidad no obliga a instalar institución",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "employment",
+          "rule": "Oficios y contratos condicionados a empleador, vacante, aptitud, edad y normas de Norgard",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "law",
+          "rule": "Justicia del Rey, jurisdicción Casa-Corona y custodia diferenciadas; sin ley local propia",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "fiscal",
+          "rule": "No aduanas entre Grandes Casas; control exterior solo donde está respaldado",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "security",
+          "rule": "Autoridad de Guardia urbana, Casa y Armada Real separada; no nuevo cuerpo militar",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "care",
+          "rule": "Salud, cuidados y dependencia sin hospital o cuidador universal por plantilla",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "relationships",
+          "rule": "Core hereda parentesco, reputación, conocimiento, memoria, diálogo y consentimientos",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "maintenance",
+          "rule": "Agua, saneamiento, incendios, desgaste y combustible solo con infraestructura específica o estado UNKNOWN",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        },
+        {
+          "gateId": "worldstate",
+          "rule": "Entidades, ubicaciones, accesos, actividades y cambios persisten solamente cuando CoreRPG los ejecuta",
+          "proof": "PENDING_SITE_AND_INSTITUTION_DATA"
+        }
+      ],
+      "status": "FUNCTIONAL_PLANNING_DESIGN_ONLY",
+      "sourcePaths": [
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d08_population_services_v0.1.json",
+        "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d09_governance_security_v0.1.json"
+      ]
+    }
+  ],
+  "neverInvented": {
+    "newCityIds": [],
+    "newDistricts": [],
+    "newQuays": [],
+    "newNavalFacilities": [],
+    "newCrossings": [],
+    "newNamedStreets": []
+  },
+  "runtime": {
+    "cityWorldStateCreated": false,
+    "geometryCreated": false,
+    "coreCityEntityInstantiated": false
+  }
+}
