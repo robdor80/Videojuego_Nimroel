@@ -46,3 +46,9 @@ Los sectores funcionales son funciones de estudio, **no** barrios, solares, edif
 Treskal posee planificación sectorial T/S aprobada y plano métrico en progreso. Darovan todavía no tiene para Veldora, Taramin o Syvaris un plano urbano métrico, un inventario de barrios aprobados o localización exacta de instalaciones. **Este déficit es real y no se marca como completado por un JSON**.
 
 El trabajo **intelectual de contratos, principios y compatibilidades urbanas queda preparado**; la materialización y aprobación de detalles únicos permanecen abiertas y necesitan autor/cartografía cuando corresponda.
+
+## Cierre editorial de los anteproyectos D.P16 — 11/11/2026
+
+La presente **matriz inicial de doce comprobaciones** sigue siendo una lista de controles, pero **ya no debe presentarse como el contenido urbano total**. Se han **reescrito íntegramente** las cuatro fichas [Treihord](ciudad_treihord_plan_funcional_condicionado.md), [Veldora](ciudad_veldora_plan_funcional_condicionado.md), [Taramin](ciudad_taramin_plan_funcional_condicionado.md) y [Syvaris](ciudad_syvaris_plan_funcional_condicionado.md) con identidad, espacialidad funcional, vida humana y escenas propuestas distintas.
+
+El cierre comparado está en [D.P16/03 — Cuatro ciudades](03_cuatro_ciudades_comparativa_editorial_y_criterios_de_lore.md), con **21 semillas narrativas específicas**. Los anteproyectos están completos **en su alcance funcional**, no como barrios/edificios/NPC canónicos ni mapas métricos. D.P20–D.P23 son fases nuevas de autoría urbana profunda, no una repetición de esta matriz.
