@@ -32,7 +32,7 @@ Cada operación con un lote requerirá: id único, titular, custodio, calidad/es
 
 **Autorización del autor (11/11/2026):** el inventario, las decisiones 01–08 y el contenido literario pueden darse por editorialmente terminados **solo si** el HEAD final de la PR #43 supera las validaciones D.P20 en Windows/Linux y las regresiones D01–D12, D.P13 y D.P14–D.P18 pertinentes. La aprobación del cierre **no autoriza la fusión** de la PR, que permanece Draft.
 
-**Deuda preservada:** cartografía urbana georreferenciada, parcelas, accesos, edificios, propietarios, capacidad, recursos, NPC, hogares, relaciones persistentes, ejecución de los arcos y la integración CoreRPG/Godot. Los documentos aprobados son contratos editoriales para tareas futuras, no prueba de simulación real.
+**Deuda preservada (PROPOSAL_PENDING_AUTHOR para su materialización):** cartografía urbana georreferenciada, parcelas, accesos, edificios, propietarios, capacidad, recursos, NPC, hogares, relaciones persistentes, ejecución de los arcos y la integración CoreRPG/Godot. La aprobación del cierre editorial no constituye autorización de instanciar estos elementos. Los documentos aprobados son contratos editoriales para tareas futuras, no prueba de simulación real.
 
 ## Aceptación editorial: ocho preguntas con respuesta concreta
 
