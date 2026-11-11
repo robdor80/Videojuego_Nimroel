@@ -77,3 +77,7 @@ Se ha incluido validación estática de contrato y mutaciones adversariales; **l
 El registro `Datos operativos/darovan_dp16_valrik_functional_coverage_v0.1.json` contrasta **100 carpetas reales 01–99** de Treskal (doble 34) y las agrupa por nivel de responsabilidad **de modo provisional**, sin suponer que todos esos archivos hayan sido revisados línea a línea o que los módulos Core estén probados en el host. Incorpora **13 cadenas funcionales propias de Treihord/Veldora/Taramin/Syvaris/Arven**, con pruebas de legitimidad y prohibición de rutas o instalaciones ficticias.
 
 Este triado completa el **índice de trabajo**, pero **no resuelve** los bloques de urbanismo canónico G01–G03 ni la cartografía G04–G07. Las decisiones personales y de topónimos siguen reservadas al autor.
+
+## Addendum de recuperación y dictamen vigente — 11/11/2026
+
+Esta fue la **auditoría inicial antes de rehacer D.P16**. Su diagnóstico de carencias sigue siendo una evidencia histórica valiosa, pero su evaluación del nivel editorial de las ciudades debe leerse junto al [D.P18/03 — Cierre editorial real y traspaso D.P20](03_cierre_editorial_real_y_traspaso_DP20.md): cuatro fichas ya reescritas, 21 escenas y 30 controles de continuidad. Las reservas P18-G01–G12 **no se falsean como cerradas**: los anteproyectos de diseño están completos y los pendientes de canon urbano, cartografía y runtime continúan asignados a sus fases posteriores.
