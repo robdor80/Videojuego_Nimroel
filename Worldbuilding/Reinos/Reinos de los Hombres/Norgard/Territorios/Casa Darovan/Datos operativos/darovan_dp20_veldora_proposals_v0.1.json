@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "phase": "D.P20",
   "date": "2026-11-11",
-  "status": "MIXED_AUTHORED_POPULAR_NAMES_AND_PENDING_PROPOSALS",
+  "status": "MIXED_AUTHORED_DP20_01_02_AND_PENDING_PROPOSALS",
   "cityId": "veldora",
   "cityKind": "canonical_city_manual_reference",
   "canonClaims": {
@@ -33,7 +33,11 @@
       "Tejas Serenas",
       "Vuelta del Camino"
     ],
-    "approvedPopularAreaNamesDoNotDefineDistricts": true
+    "approvedPopularAreaNamesDoNotDefineDistricts": true,
+    "approvedCityCharacter": "PREDOMINANTLY_TRADITIONAL_AND_GUILD_ORIENTED",
+    "approvedCityCharacterOption": "DAR-DP20-02_B",
+    "cityCharacterDoesNotDisplaceExternalPort": true,
+    "cityCharacterCreatesNewGuildInstitutions": false
   },
   "lockedUnknowns": {
     "officialDistrictCount": null,
@@ -628,10 +632,11 @@
     },
     {
       "id": "DAR-DP20-02",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "B",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "PREDOMINANTLY_TRADITIONAL_AND_GUILD_ORIENTED_CULTURAL_CHARACTER_NO_NEW_INSTITUTIONS"
     },
     {
       "id": "DAR-DP20-03",

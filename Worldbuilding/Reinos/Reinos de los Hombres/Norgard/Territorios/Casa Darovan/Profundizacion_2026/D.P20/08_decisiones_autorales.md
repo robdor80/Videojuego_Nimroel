@@ -1,6 +1,6 @@
 # D.P20 — Cuaderno de decisión autoral de Veldora
 
-**Cuaderno de decisiones parcialmente aprobadas.** El 11/11/2026 el autor aprobó expresamente **DAR-DP20-01 A**, limitada a seis denominaciones populares. Las demás cuestiones siguen pendientes; no se aprueban barrios administrativos, posiciones, instalaciones o WorldState.
+**Cuaderno de decisiones parcialmente aprobadas.** El 11/11/2026 el autor aprobó expresamente **DAR-DP20-01 A** (seis denominaciones populares) y **DAR-DP20-02 B** (personalidad predominantemente tradicional y gremial). Las decisiones 03–08 siguen pendientes; no se aprueban barrios administrativos, posiciones, locales, personajes ni WorldState.
 
 ## DAR-DP20-01 · Identidad espacial: seis ámbitos candidatos
 
@@ -10,7 +10,9 @@
 
 ## DAR-DP20-02 · Carácter de la ciudad
 
-**A (recomendada):** puerto marítimo mercante de Norgard con fuerte vida de contrato, almacén, oficio y comercio distribuido; riqueza y precariedad coexistentes, sin clichés de delincuencia sistemática. **B:** énfasis más tradicional en redes familiares y artesanía, sin desplazar la función canónica exterior. **Estado: PROPOSAL_PENDING_AUTHOR** solo para la nueva profundidad; el puerto principal y D07-B ya son AUTHORED.
+**A (recomendada):** puerto marítimo mercante de Norgard con fuerte vida de contrato, almacén, oficio y comercio distribuido; riqueza y precariedad coexistentes, sin clichés de delincuencia sistemática. **B:** énfasis más tradicional en redes familiares y artesanía, sin desplazar la función canónica exterior. **Estado: APPROVED_AUTHOR — opción B, 11/11/2026.** El carácter de Veldora es **predominantemente tradicional y gremial**, con fuerte arraigo familiar, talleres y oficios transmitidos, redes de confianza, relaciones duraderas y comercio local distribuido. Esta identidad coexiste con su función ya canónica de mayor puerto mercante exterior de Norgard; **no** convierte la ciudad en un enclave aislado ni presupone que todos sus habitantes compartan valores o pertenezcan a gremios. La aprobación define el tono cultural general, **no crea gremios con nombres, privilegios, instituciones o normas inéditas**.
+
+**Declaración expresa del autor:** «DAR-DP20-02: Apruebo la opción B, carácter predominantemente tradicional y gremial».
 
 ## DAR-DP20-03 · Locales de identidad
 
@@ -41,7 +43,7 @@
 | ID | Resolución del autor | Fecha | Efecto canónico | Estado |
 | --- | --- | --- | --- | --- |
 | DAR-DP20-01 | Opción A: seis denominaciones populares, superponibles | 11/11/2026 | Solo los nombres U01–U06 AUTHORED; barrios, geometría y locales aún pendientes | APROBADA |
-| DAR-DP20-02 | — | — | Ninguno | PENDIENTE |
+| DAR-DP20-02 | Opción B: carácter predominantemente tradicional y gremial | 11/11/2026 | Identidad cultural de Veldora AUTHORED; puerto exterior y comercio distribuido preservados; sin crear instituciones | APROBADA |
 | DAR-DP20-03 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-04 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-05 | — | — | Ninguno | PENDIENTE |

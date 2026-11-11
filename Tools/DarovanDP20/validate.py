@@ -20,11 +20,13 @@ def invariant(d, check_files=True):
     req(d["schemaVersion"] == 1 and d["version"] == "0.1.0", "schema version")
     req(d["documentId"] == "darovan_dp20_veldora_city_authorship_proposals_v0.1", "document id")
     req(d["phase"] == "D.P20" and d["cityId"] == "veldora" and d["cityKind"] == "canonical_city_manual_reference", "scope")
-    req(d["status"] == "MIXED_AUTHORED_POPULAR_NAMES_AND_PENDING_PROPOSALS" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
+    req(d["status"] == "MIXED_AUTHORED_DP20_01_02_AND_PENDING_PROPOSALS" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
     req(d["createsWorldStateEntities"] is False and d["externalCustomsFacilityCreated"] is False and d["privateRoyalArmyCreated"] is False, "no instances")
     c=d["canonClaims"]
     req(c["principalCommercialPortOfNorgard"] is True and c["gulf"] == "Golfo de Veldora", "canonical commercial role")
     req(c["commercialLayout"] == "distributed_organic_B" and c["d07AuthorDecision"] == "DAR-D07-01_B", "D07 layout")
+    req(c["approvedCityCharacter"]=="PREDOMINANTLY_TRADITIONAL_AND_GUILD_ORIENTED" and c["approvedCityCharacterOption"]=="DAR-DP20-02_B", "approved B city character")
+    req(c["cityCharacterDoesNotDisplaceExternalPort"] is True and c["cityCharacterCreatesNewGuildInstitutions"] is False, "character may not invent institutions")
     approved_names=["Borde de las Marcas","Patios de la Cuenta","Calles del Trato","Patios del Oficio","Tejas Serenas","Vuelta del Camino"]
     req(c["approvedPopularAreaNames"]==approved_names and c["approvedPopularAreaNamesDoNotDefineDistricts"] is True,"approved popular names without official districts")
     req(c["populationRange"] == {"minInclusive":29000,"maxInclusive":35000,"exact":None}, "D08 population")
@@ -62,6 +64,8 @@ def invariant(d, check_files=True):
     for i,x in enumerate(d["authorDecisions"],1):
         if i==1:
             req(x=={"id":"DAR-DP20-01","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"SIX_POPULAR_NAMES_NO_ADMIN_DISTRICTS_NO_GEOMETRY"}, "exact approval scope")
+        elif i==2:
+            req(x=={"id":"DAR-DP20-02","status":"APPROVED","selectedOption":"B","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"PREDOMINANTLY_TRADITIONAL_AND_GUILD_ORIENTED_CULTURAL_CHARACTER_NO_NEW_INSTITUTIONS"}, "exact character approval scope")
         else:
             req(x=={"id":"DAR-DP20-"+str(i).zfill(2),"status":"PENDING_AUTHOR","selectedOption":None,"approvedDate":None,"canonPromotion":False}, "unauthorized other decision")
     req(all(v is False for v in d["runtime"].values()) and d["nextPhase"]=="D.P21_TARAMIN_NOT_STARTED", "scope isolation")
@@ -106,7 +110,10 @@ def mutation_tests(d):
         ("event claimed",lambda x:x["proposedConflicts"][0].update(scenarioState="OCCURRED")),
         ("scene event",lambda x:x["testOnlyScenes"][0].update(createsEvent=True)),
         ("approved decision changed",lambda x:x["authorDecisions"][0].update(selectedOption="B")),
-        ("other decision prematurely selected",lambda x:x["authorDecisions"][1].update(selectedOption="A")),
+        ("character decision altered",lambda x:x["authorDecisions"][1].update(selectedOption="A")),
+        ("other decision prematurely selected",lambda x:x["authorDecisions"][2].update(selectedOption="A")),
+        ("character altered",lambda x:x["canonClaims"].update(approvedCityCharacter="COSMOPOLITAN")),
+        ("character invents guilds",lambda x:x["canonClaims"].update(cityCharacterCreatesNewGuildInstitutions=True)),
         ("popular name changed",lambda x:x["proposedUrbanAreas"][0].update(name="Otro nombre")),
         ("popular name approval removed",lambda x:x["proposedUrbanAreas"][0].update(popularNameAuthorApproved=False)),
         ("approved popular name omitted",lambda x:x["canonClaims"]["approvedPopularAreaNames"].pop()),
@@ -124,4 +131,4 @@ if __name__=="__main__":
     d=read(DATA); invariant(d)
     n=mutation_tests(d)
     print(f"PASS D.P20: integral contract and {n} adverse mutations; source files and chapters verified.")
-    print("DOCUMENTARY ONLY: six popular names approved; no official districts, runtime, NPCs or map instantiated.")
+    print("DOCUMENTARY ONLY: six popular names and traditional-guild city character approved; no official districts, new guild institutions, runtime, NPCs or map instantiated.")

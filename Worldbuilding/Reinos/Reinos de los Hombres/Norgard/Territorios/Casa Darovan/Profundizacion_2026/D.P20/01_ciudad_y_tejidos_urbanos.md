@@ -2,9 +2,13 @@
 
 **Decisión autoral DAR-DP20-01 A (11/11/2026):** los seis nombres U01–U06 son **AUTHORED como denominaciones populares de ámbitos urbanos que pueden solaparse**. Las ubicaciones y la composición urbana continúan en **PROPOSAL_PENDING_AUTHOR**. No son barrios administrativos ni delimitaciones físicas; seis nombres no implican seis distritos oficiales.
 
+## Carácter cultural aprobado: tradición y vida gremial
+
+**DAR-DP20-02 B (11/11/2026) — AUTHORED:** Veldora es **predominantemente tradicional y gremial**. Las relaciones familiares, talleres, oficios heredados y reputaciones construidas durante generaciones marcan su personalidad urbana. Esto convive con el principal puerto comercial exterior de Norgard y sus redes de intercambio: recibir marineros y compradores de fuera no transforma por sí mismo a la ciudad en una metrópolis cosmopolita de mentalidad homogénea. Tampoco se presupone una pertenencia gremial universal, ni se han fundado gremios nuevos, ni fijado su derecho, jerarquías o privilegios. La artesanía y la continuidad familiar constituyen el tono mayoritario; individuos y hogares pueden diferir.
+
 ## La impresión al llegar
 
-Veldora no empieza al tocar el agua: empieza cuando alguien necesita demostrar que lo que transporta es suyo. Una tabla con números puede pesar más que un fardo y un contrato puede detener un carro sin que nadie desenvaine un arma. El puerto domina el horizonte económico, pero las compras pequeñas, las reparaciones, los alojamientos y las familias ocupan muchas otras calles. Su riqueza se nota por el trabajo constante; sus desigualdades, por quién puede permitirse esperar.
+Veldora no empieza al tocar el agua: comienza también en el taller que heredó una hija, en el apellido que un comerciante recuerda y en la reputación que tarda años en construirse. Incluso los recién llegados aprenden que un buen contrato importa tanto como la confianza de quienes llevan generaciones trabajando juntos. Una tabla con números puede pesar más que un fardo y un contrato puede detener un carro sin que nadie desenvaine un arma. El puerto domina el horizonte económico, pero las compras pequeñas, las reparaciones, los alojamientos y las familias ocupan muchas otras calles. Su riqueza se nota por el trabajo constante; sus desigualdades, por quién puede permitirse esperar.
 
 **Vista desde la costa, sin fijar cartografía:** aparejos, piedra desgastada y teja sobre madera; el sonido va del golpe breve de una herramienta al murmullo de una discusión por una entrega. Ni bruma obligatoria ni lluvia constante: la escena depende del clima real. Una persona venida del mar puede descubrir que descargar no equivale a vender, y que vender no equivale a cobrar.
 

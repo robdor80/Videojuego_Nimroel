@@ -1,6 +1,6 @@
 # D.P20 — Veldora, ciudad mercantil vivida
 
-**Fecha:** 11/11/2026 · **Estado:** APROBACIÓN PARCIAL DE SEIS NOMBRES POPULARES (DAR-DP20-01 A); resto en revisión autoral · **Integración en CoreRPG/Godot:** NO.
+**Fecha:** 11/11/2026 · **Estado:** APROBACIÓN PARCIAL (DAR-DP20-01 A: nombres populares; DAR-DP20-02 B: personalidad tradicional y gremial); decisiones 03–08 pendientes · **Integración en CoreRPG/Godot:** NO.
 
 Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de puertos ni ampliación automática de D.P16. Su materia prima es el canon de Norgard/D07–D10 y D.P13, y el anteproyecto D.P16. La PR aporta autoría urbana, negocios, personas posibles, relaciones, escenas y obligaciones de implementación; **solo convierte en canon los seis nombres populares aprobados expresamente el 11/11/2026; las personas, establecimientos y geometrías siguen pendientes**.
 
@@ -25,6 +25,7 @@ Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de p
 - **AUTHORED:** río Veldora independiente de Belara/Lhera; no se deducen puentes, bocas, navegación ni muelles de río. La gran isla boscosa de la referencia visual no se identifica automáticamente con Arven.
 - **AUTHORED:** vínculo terrestre cualitativo Veldora–Treihord; sin trayecto, duración, puente, peaje ni establecimientos intermedios acreditados.
 - **AUTHORED (DAR-DP20-01 A):** «Borde de las Marcas», «Patios de la Cuenta», «Calles del Trato», «Patios del Oficio», «Tejas Serenas», «Vuelta del Camino», seis denominaciones populares superponibles, **no barrios administrativos ni polígonos delimitados**.
+- **AUTHORED (DAR-DP20-02 B):** personalidad cultural **predominantemente tradicional y gremial** (redes familiares, oficios, artesanía, reputación heredada), compatible con el puerto mercante exterior. No se aprueban gremios, privilegios o leyes nuevos.
 
 ## Semántica de autoridad
 
