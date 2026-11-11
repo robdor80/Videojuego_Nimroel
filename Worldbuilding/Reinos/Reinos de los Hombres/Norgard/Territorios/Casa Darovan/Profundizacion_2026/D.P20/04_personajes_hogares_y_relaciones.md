@@ -1,6 +1,6 @@
 # Veldora — diez vidas que no se dejan reducir a su oficio
 
-**DAR-DP20-04 A aprobada el 11/11/2026: los nombres, roles y biografías individuales VEL-N01–N10 son AUTHORED_BIOGRAPHY_BASE, base canónica para su desarrollo.** No hay todavía NPC creados, residentes censados, hogares concretos, parentescos aprobados ni herederos de Casas canónicas. **Los establecimientos L01–L12 están aprobados solo como objetivos futuros por DAR-DP20-03 B**, de modo que su asociación con personas sigue siendo afinidad editorial, **no empleo, propiedad ni posición física confirmada**. No se deducen genealogías Darovan/Valrik ni vínculos automáticos con casas nobiliarias. Las relaciones candidatas son premisas de diseño que no se han ejecutado en el mundo.
+**DAR-DP20-04 A aprobada el 11/11/2026: los nombres, roles y biografías individuales VEL-N01–N10 son AUTHORED_BIOGRAPHY_BASE, base canónica para su desarrollo.** Las **instancias de persona y hogar permanecen en PROPOSAL_PENDING_AUTHOR**: no hay todavía NPC creados, residentes censados, hogares concretos, parentescos aprobados ni herederos de Casas canónicas. **Los establecimientos L01–L12 están aprobados solo como objetivos futuros por DAR-DP20-03 B**, de modo que su asociación con personas sigue siendo afinidad editorial, **no empleo, propiedad ni posición física confirmada**. No se deducen genealogías Darovan/Valrik ni vínculos automáticos con casas nobiliarias. Las relaciones candidatas son premisas de diseño que no se han ejecutado en el mundo.
 
 ## N01 · Liria Menor — comerciante que debe cumplir más de lo que posee
 
