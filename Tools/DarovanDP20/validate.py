@@ -20,7 +20,7 @@ def invariant(d, check_files=True):
     req(d["schemaVersion"] == 1 and d["version"] == "0.1.0", "schema version")
     req(d["documentId"] == "darovan_dp20_veldora_city_authorship_proposals_v0.1", "document id")
     req(d["phase"] == "D.P20" and d["cityId"] == "veldora" and d["cityKind"] == "canonical_city_manual_reference", "scope")
-    req(d["status"] == "MIXED_AUTHORED_DP20_01_02_03_AND_PENDING_PROPOSALS" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
+    req(d["status"] == "MIXED_AUTHORED_DP20_01_02_03_04_AND_PENDING_PROPOSALS" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
     req(d["createsWorldStateEntities"] is False and d["externalCustomsFacilityCreated"] is False and d["privateRoyalArmyCreated"] is False, "no instances")
     c=d["canonClaims"]
     req(c["principalCommercialPortOfNorgard"] is True and c["gulf"] == "Golfo de Veldora", "canonical commercial role")
@@ -30,6 +30,9 @@ def invariant(d, check_files=True):
     approved_future_names=["Depósito de la Cuerda Ceniza","Mesa de los Tres Renglones","Taller de la Cuña Fina","Fragua del Arco Corto","Casa de las Dos Tejas","Patio del Encordado","La Medida Prestada","Horno de los Postigos","Casa de los Pliegos","Banco de las Hebillas","Archivo de las Copias","Patio de los Carros"]
     approved_future_purposes=["custodia_privada","escribania_privada","carpinteria_reparacion","herreria_menor","hospedaje","trabajo_cooperativo","pesaje_privado","panaderia","hogar_mercantil","taller_tienda","deposito_documental_privado","servicio_urbano"]
     req(c["approvedFutureEstablishments"]==[{"id":"VEL-L"+str(i).zfill(2),"name":approved_future_names[i-1],"purpose":approved_future_purposes[i-1]} for i in range(1,13)] and c["futureEstablishmentsArePhysicalEntities"] is False, "exact 12 future editorial objectives, not runtime")
+    approved_biography_names=["Liria Menor","Sered Alvar","Naia Corven","Oren Talen","Vesa Orrin","Bram Iven","Mira Sern","Edris Fen","Adel Renvar","Fenra Doril"]
+    approved_biography_roles=["comerciante","custodio","artesana","escribiente_aduanas_de_corona","trabajadora_adulta","transportista","posadera","copista","comerciante_acomodada","panadera"]
+    req(c["approvedCharacterBiographyBases"]==[{"id":"VEL-N"+str(i).zfill(2),"name":approved_biography_names[i-1],"role":approved_biography_roles[i-1],"biographySource":"04_personajes_hogares_y_relaciones.md"} for i in range(1,11)] and c["approvedCharacterBiographiesCreatePeople"] is False, "exact ten approved biographies, no NPCs")
     approved_names=["Borde de las Marcas","Patios de la Cuenta","Calles del Trato","Patios del Oficio","Tejas Serenas","Vuelta del Camino"]
     req(c["approvedPopularAreaNames"]==approved_names and c["approvedPopularAreaNamesDoNotDefineDistricts"] is True,"approved popular names without official districts")
     req(c["populationRange"] == {"minInclusive":29000,"maxInclusive":35000,"exact":None}, "D08 population")
@@ -56,7 +59,9 @@ def invariant(d, check_files=True):
         req(x["canonicalFutureObjective"] is True and x["futureNameAndPurposeApproved"] is True and x["futureObjectiveApproval"]=="AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B" and x["materialized"] is False, "future objective distinct from physical instance")
         req(x["areaId"] in refs["proposedUrbanAreas"] and x["actualLocationId"] is None, "places not located")
         req(x["capacity"] is None and x["ownerEntityId"] is None and x["inventoryEntityIds"] == [], "no stock or owner")
-    for x in d["proposedPeople"]:
+    for i,x in enumerate(d["proposedPeople"]):
+        req(x["name"]==approved_biography_names[i] and x["role"]==approved_biography_roles[i], "approved name and role")
+        req(x["biographyApproval"]=="AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A" and x["nameRoleBiographyApproved"] is True and x["npcMaterialized"] is False, "approved biography is not instantiated NPC")
         req(x["associatedEstablishmentId"] is None or x["associatedEstablishmentId"] in refs["proposedEstablishments"], "person place reference")
         req(x["personEntityId"] is None and x["householdEntityId"] is None and x["isNamedNpcInWorld"] is False and x["knownCurrentFacts"]==[], "NPC not instantiated")
     for x in d["proposedConflicts"]:
@@ -73,6 +78,8 @@ def invariant(d, check_files=True):
             req(x=={"id":"DAR-DP20-02","status":"APPROVED","selectedOption":"B","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"PREDOMINANTLY_TRADITIONAL_AND_GUILD_ORIENTED_CULTURAL_CHARACTER_NO_NEW_INSTITUTIONS"}, "exact character approval scope")
         elif i==3:
             req(x=={"id":"DAR-DP20-03","status":"APPROVED","selectedOption":"B","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"TWELVE_NAMED_ESTABLISHMENT_FUTURE_OBJECTIVES_ONLY_NO_PHYSICAL_MATERIALIZATION"}, "exact twelve future objectives approval")
+        elif i==4:
+            req(x=={"id":"DAR-DP20-04","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"TEN_CHARACTER_NAME_ROLE_BIOGRAPHY_BASES_ONLY_NO_NPC_MATERIALIZATION"}, "exact biography approval scope")
         else:
             req(x=={"id":"DAR-DP20-"+str(i).zfill(2),"status":"PENDING_AUTHOR","selectedOption":None,"approvedDate":None,"canonPromotion":False}, "unauthorized other decision")
     req(all(v is False for v in d["runtime"].values()) and d["nextPhase"]=="D.P21_TARAMIN_NOT_STARTED", "scope isolation")
@@ -119,7 +126,14 @@ def mutation_tests(d):
         ("approved decision changed",lambda x:x["authorDecisions"][0].update(selectedOption="B")),
         ("character decision altered",lambda x:x["authorDecisions"][1].update(selectedOption="A")),
         ("establishment decision altered",lambda x:x["authorDecisions"][2].update(selectedOption="A")),
-        ("other decision prematurely selected",lambda x:x["authorDecisions"][3].update(selectedOption="A")),
+        ("biography approval changed",lambda x:x["authorDecisions"][3].update(selectedOption="B")),
+        ("other decision prematurely selected",lambda x:x["authorDecisions"][4].update(selectedOption="A")),
+        ("approved character name changed",lambda x:x["proposedPeople"][0].update(name="Nombre cambiado")),
+        ("approved character role changed",lambda x:x["proposedPeople"][0].update(role="superintendente")),
+        ("approved biography scope stripped",lambda x:x["proposedPeople"][0].update(nameRoleBiographyApproved=False)),
+        ("NPC materialized from biography",lambda x:x["proposedPeople"][0].update(npcMaterialized=True)),
+        ("biography implicitly creates people",lambda x:x["canonClaims"].update(approvedCharacterBiographiesCreatePeople=True)),
+        ("biography list mutated",lambda x:x["canonClaims"]["approvedCharacterBiographyBases"].pop()),
         ("establishment future name altered",lambda x:x["proposedEstablishments"][0].update(name="Otro depósito")),
         ("establishment future function altered",lambda x:x["proposedEstablishments"][0].update(purpose="aduana_corona")),
         ("establishment future approval erased",lambda x:x["proposedEstablishments"][0].update(futureNameAndPurposeApproved=False)),
@@ -145,4 +159,4 @@ if __name__=="__main__":
     d=read(DATA); invariant(d)
     n=mutation_tests(d)
     print(f"PASS D.P20: integral contract and {n} adverse mutations; source files and chapters verified.")
-    print("DOCUMENTARY ONLY: 6 popular names, traditional-guild character, 12 establishment future objectives approved; no physical establishments, official districts, runtime, NPCs or map instantiated.")
+    print("DOCUMENTARY ONLY: 6 popular names, traditional-guild character, 12 future establishments, 10 biography bases approved; no physical NPCs, premises, households, official districts or runtime entities.")

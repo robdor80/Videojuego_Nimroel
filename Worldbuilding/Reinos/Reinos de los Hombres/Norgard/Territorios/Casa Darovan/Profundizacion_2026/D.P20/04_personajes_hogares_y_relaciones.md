@@ -1,6 +1,6 @@
 # Veldora — diez vidas que no se dejan reducir a su oficio
 
-**Todos los nombres y biografías VEL-N01–N10 son PROPOSAL_PENDING_AUTHOR.** Ninguno es NPC creado, residente censado, parentesco aprobado o heredero de una Casa canónica. **Sus espacios de referencia L01–L12 también son propuestas**, por lo que la localización es una afinidad de escenario, NO una posición física. No hay genealogías Darovan/Valrik ni vínculos automáticos con casas nobiliarias.
+**DAR-DP20-04 A aprobada el 11/11/2026: los nombres, roles y biografías individuales VEL-N01–N10 son AUTHORED_BIOGRAPHY_BASE, base canónica para su desarrollo.** No hay todavía NPC creados, residentes censados, hogares concretos, parentescos aprobados ni herederos de Casas canónicas. **Los establecimientos L01–L12 están aprobados solo como objetivos futuros por DAR-DP20-03 B**, de modo que su asociación con personas sigue siendo afinidad editorial, **no empleo, propiedad ni posición física confirmada**. No se deducen genealogías Darovan/Valrik ni vínculos automáticos con casas nobiliarias. Las relaciones candidatas son premisas de diseño que no se han ejecutado en el mundo.
 
 ## N01 · Liria Menor — comerciante que debe cumplir más de lo que posee
 
@@ -80,4 +80,4 @@
 
 Para materializar N01–N10 será necesario crear EntityId de persona, nombre aprobado, autorización de existencia, hogar legal, posiciones, objetos realmente poseídos, relación de empleo, conocimiento individual, intereses, memoria y límites. Ni estos nombres ni los lugares citados se importan por un constructor procedural al iniciar partida.
 
-**Salida editorial:** diez personas distinguibles con conflictos propios y siete conexiones dramáticas. El autor puede aprobar algunas, cambiar otras o mantener todo como biblioteca no canónica.
+**Salida editorial:** diez nombres y biografías **aprobados como base canónica**, con conflictos propios y siete conexiones dramáticas como propuestas de implementación, **sin crear entidades jugables ni afirmar que sus relaciones o acontecimientos hayan sucedido en WorldState**. La resolución exacta está registrada en [08](08_decisiones_autorales.md).

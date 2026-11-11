@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "phase": "D.P20",
   "date": "2026-11-11",
-  "status": "MIXED_AUTHORED_DP20_01_02_03_AND_PENDING_PROPOSALS",
+  "status": "MIXED_AUTHORED_DP20_01_02_03_04_AND_PENDING_PROPOSALS",
   "cityId": "veldora",
   "cityKind": "canonical_city_manual_reference",
   "canonClaims": {
@@ -100,7 +100,70 @@
         "purpose": "servicio_urbano"
       }
     ],
-    "futureEstablishmentsArePhysicalEntities": false
+    "futureEstablishmentsArePhysicalEntities": false,
+    "approvedCharacterBiographyBases": [
+      {
+        "id": "VEL-N01",
+        "name": "Liria Menor",
+        "role": "comerciante",
+        "biographySource": "04_personajes_hogares_y_relaciones.md"
+      },
+      {
+        "id": "VEL-N02",
+        "name": "Sered Alvar",
+        "role": "custodio",
+        "biographySource": "04_personajes_hogares_y_relaciones.md"
+      },
+      {
+        "id": "VEL-N03",
+        "name": "Naia Corven",
+        "role": "artesana",
+        "biographySource": "04_personajes_hogares_y_relaciones.md"
+      },
+      {
+        "id": "VEL-N04",
+        "name": "Oren Talen",
+        "role": "escribiente_aduanas_de_corona",
+        "biographySource": "04_personajes_hogares_y_relaciones.md"
+      },
+      {
+        "id": "VEL-N05",
+        "name": "Vesa Orrin",
+        "role": "trabajadora_adulta",
+        "biographySource": "04_personajes_hogares_y_relaciones.md"
+      },
+      {
+        "id": "VEL-N06",
+        "name": "Bram Iven",
+        "role": "transportista",
+        "biographySource": "04_personajes_hogares_y_relaciones.md"
+      },
+      {
+        "id": "VEL-N07",
+        "name": "Mira Sern",
+        "role": "posadera",
+        "biographySource": "04_personajes_hogares_y_relaciones.md"
+      },
+      {
+        "id": "VEL-N08",
+        "name": "Edris Fen",
+        "role": "copista",
+        "biographySource": "04_personajes_hogares_y_relaciones.md"
+      },
+      {
+        "id": "VEL-N09",
+        "name": "Adel Renvar",
+        "role": "comerciante_acomodada",
+        "biographySource": "04_personajes_hogares_y_relaciones.md"
+      },
+      {
+        "id": "VEL-N10",
+        "name": "Fenra Doril",
+        "role": "panadera",
+        "biographySource": "04_personajes_hogares_y_relaciones.md"
+      }
+    ],
+    "approvedCharacterBiographiesCreatePeople": false
   },
   "lockedUnknowns": {
     "officialDistrictCount": null,
@@ -460,7 +523,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A",
+      "nameRoleBiographyApproved": true,
+      "npcMaterialized": false
     },
     {
       "id": "VEL-N02",
@@ -475,7 +541,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A",
+      "nameRoleBiographyApproved": true,
+      "npcMaterialized": false
     },
     {
       "id": "VEL-N03",
@@ -490,7 +559,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A",
+      "nameRoleBiographyApproved": true,
+      "npcMaterialized": false
     },
     {
       "id": "VEL-N04",
@@ -505,7 +577,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A",
+      "nameRoleBiographyApproved": true,
+      "npcMaterialized": false
     },
     {
       "id": "VEL-N05",
@@ -520,7 +595,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A",
+      "nameRoleBiographyApproved": true,
+      "npcMaterialized": false
     },
     {
       "id": "VEL-N06",
@@ -535,7 +613,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A",
+      "nameRoleBiographyApproved": true,
+      "npcMaterialized": false
     },
     {
       "id": "VEL-N07",
@@ -550,7 +631,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A",
+      "nameRoleBiographyApproved": true,
+      "npcMaterialized": false
     },
     {
       "id": "VEL-N08",
@@ -565,7 +649,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A",
+      "nameRoleBiographyApproved": true,
+      "npcMaterialized": false
     },
     {
       "id": "VEL-N09",
@@ -580,7 +667,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A",
+      "nameRoleBiographyApproved": true,
+      "npcMaterialized": false
     },
     {
       "id": "VEL-N10",
@@ -595,7 +685,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_DAR_DP20_04_A",
+      "nameRoleBiographyApproved": true,
+      "npcMaterialized": false
     }
   ],
   "proposedConflicts": [
@@ -759,10 +852,11 @@
     },
     {
       "id": "DAR-DP20-04",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "TEN_CHARACTER_NAME_ROLE_BIOGRAPHY_BASES_ONLY_NO_NPC_MATERIALIZATION"
     },
     {
       "id": "DAR-DP20-05",

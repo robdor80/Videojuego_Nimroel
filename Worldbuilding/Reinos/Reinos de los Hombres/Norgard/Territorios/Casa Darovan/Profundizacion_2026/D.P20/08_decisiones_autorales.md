@@ -1,6 +1,6 @@
 # D.P20 — Cuaderno de decisión autoral de Veldora
 
-**Cuaderno de decisiones parcialmente aprobadas.** El 11/11/2026 el autor aprobó expresamente **DAR-DP20-01 A** (seis denominaciones populares), **DAR-DP20-02 B** (personalidad tradicional y gremial) y **DAR-DP20-03 B** (doce establecimientos como objetivos canónicos futuros, únicamente sus nombres y funciones). Las decisiones 04–08 siguen pendientes. No se crean barrios administrativos, locales físicos, personas ni WorldState.
+**Cuaderno de decisiones parcialmente aprobadas.** El 11/11/2026 el autor aprobó expresamente **DAR-DP20-01 A** (seis denominaciones populares), **DAR-DP20-02 B** (personalidad tradicional y gremial), **DAR-DP20-03 B** (doce establecimientos como objetivos canónicos futuros) y **DAR-DP20-04 A** (diez personajes con nombre y biografía como base canónica). Las decisiones 05–08 siguen pendientes. No se crean barrios administrativos, locales físicos, personas instanciadas, hogares ni WorldState.
 
 ## DAR-DP20-01 · Identidad espacial: seis ámbitos candidatos
 
@@ -22,7 +22,9 @@
 
 ## DAR-DP20-04 · Reparto inicial de personas relevantes
 
-**A (recomendada):** aprobar los diez conceptos N01–N10 **como biografías de personajes locales**, sujeto a revisión de nombres y vivienda antes de registrar NPC. **B:** aprobar solo N01–N05 primero. **C:** elegir o cambiar individuos. **Estado: PROPOSAL_PENDING_AUTHOR.** No se aprueban linajes nobles, parentescos nuevos ni censo por implicación.
+**A (recomendada):** aprobar los diez conceptos N01–N10 **como biografías de personajes locales**, sujeto a revisión de nombres y vivienda antes de registrar NPC. **B:** aprobar solo N01–N05 primero. **C:** elegir o cambiar individuos. **Estado: APPROVED_AUTHOR — opción A, 11/11/2026.** Los diez nombres, roles y biografías individuales de `04_personajes_hogares_y_relaciones.md` son **AUTHORED_BIOGRAPHY_BASE** para desarrollo futuro. La autorización **no** crea ni censa personas, hogares, matrimonios, parentescos, linajes nobles, posesiones, negocios activos, coordenadas o relaciones materializadas. Los vínculos narrativos son **bases de relación**, no sucesos verificados o cambios de WorldState; los episodios e historias municipales de D.P20-05 siguen pendientes.
+
+**Declaración expresa del autor:** «DAR-DP20-04: Apruebo la opción A, los diez personajes y sus biografías como base canónica, sin materializar NPC todavía».
 
 ## DAR-DP20-05 · Historia y memoria
 
@@ -47,10 +49,10 @@
 | DAR-DP20-01 | Opción A: seis denominaciones populares, superponibles | 11/11/2026 | Solo los nombres U01–U06 AUTHORED; barrios, geometría y locales aún pendientes | APROBADA |
 | DAR-DP20-02 | Opción B: carácter predominantemente tradicional y gremial | 11/11/2026 | Identidad cultural de Veldora AUTHORED; puerto exterior y comercio distribuido preservados; sin crear instituciones | APROBADA |
 | DAR-DP20-03 | Opción B: doce establecimientos previstos, nombres y funciones L01–L12 | 11/11/2026 | Objetivos canónicos futuros AUTHORED; edificios, locales activos, inventarios y posiciones aún inexistentes | APROBADA |
-| DAR-DP20-04 | — | — | Ninguno | PENDIENTE |
+| DAR-DP20-04 | Opción A: diez nombres y biografías como base canónica de personajes | 11/11/2026 | Biografías N01–N10 AUTHORED_BIOGRAPHY_BASE; sin NPC, hogares, genealogías ni relaciones ejecutadas | APROBADA |
 | DAR-DP20-05 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-06 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-07 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-08 | — | — | Ninguno | PENDIENTE |
 
-**Disciplina al aprobar:** registrar fuente/fecha/opción y contenido exacto; convertir SOLO lo aprobado a AUTHORED. **Para U01–U06 se ha aprobado el nombre popular, no su geometría ni que sean barrios oficiales.** Dejar las **instancias físicas** de locales, personas e historias en PROPOSAL_PENDING_AUTHOR; los doce **objetivos editoriales de establecimientos** sí están aprobados por DAR-DP20-03 B. Jamás actualizar WorldState por alterar un Markdown.
+**Disciplina al aprobar:** registrar fuente/fecha/opción y contenido exacto; convertir SOLO lo aprobado a AUTHORED. **Para U01–U06 se ha aprobado el nombre popular, no su geometría ni que sean barrios oficiales.** Dejar las **instancias físicas** de locales, personas e historias en PROPOSAL_PENDING_AUTHOR; los doce **objetivos editoriales de establecimientos** están aprobados por DAR-DP20-03 B y las diez **biografías base** por DAR-DP20-04 A. La aprobación editorial jamás crea un EntityId, hogar o evento. Jamás actualizar WorldState por alterar un Markdown.
