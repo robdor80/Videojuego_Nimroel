@@ -1,6 +1,6 @@
-# Veldora — doce lugares candidatos que generan vida
+# Veldora — doce establecimientos previstos que generarán vida
 
-**Todos los nombres y negocios VEL-L01–VEL-L12: PROPOSAL_PENDING_AUTHOR.** Ningún local se declara existente, ni se fija una parcela. Los nombres describen funciones creíbles sobre el canon de talleres, almacenes, gremios, comercio y vivienda; **no son automáticamente un duodécimo de la oferta comercial real**. No se reemplaza ni desdobla la aduana exterior de la Corona.
+**DAR-DP20-03 B aprobada el 11/11/2026: los doce nombres y sus actividades previstas VEL-L01–VEL-L12 son objetivos editoriales canónicos futuros (AUTHORED_FUTURE_OBJECTIVE).** Su **materialización física permanece en PROPOSAL_PENDING_AUTHOR**: ninguno se declara todavía edificio existente, local activo, establecimiento abierto, parcela definida ni recurso de WorldState. Las escenas y dependencias siguientes describen posibilidades futuras, no hechos sucedidos. No son automáticamente un duodécimo de la oferta comercial real. No se reemplaza ni desdobla la aduana exterior de la Corona.
 
 ## Lugares y personas en los que pasa algo
 
@@ -73,4 +73,4 @@ La arquitectura fuente permite actividad en planta baja y vivienda arriba **como
 
 **La palabra de un huésped.** Un rumor escuchado en L05 causa una decisión prudente de L09. Se registra quién lo dijo y quién decidió; **no se registra como hecho histórico** que el rumor fuese verdadero.
 
-**Salida editorial:** doce locales **ilustrados con cadenas sociales** y límites de autoridad, listos para revisión de identidad, nunca tratados como instancias disponibles para el jugador.
+**Salida editorial:** doce establecimientos **aprobados como objetivos futuros con nombres y funciones**, ilustrados con cadenas sociales y límites de autoridad; no son instancias disponibles para el jugador hasta su creación física y validación posterior.

@@ -1,8 +1,8 @@
 # D.P20 — Veldora, ciudad mercantil vivida
 
-**Fecha:** 11/11/2026 · **Estado:** APROBACIÓN PARCIAL (DAR-DP20-01 A: nombres populares; DAR-DP20-02 B: personalidad tradicional y gremial); decisiones 03–08 pendientes · **Integración en CoreRPG/Godot:** NO.
+**Fecha:** 11/11/2026 · **Estado:** APROBACIÓN PARCIAL (DAR-DP20-01 A: nombres populares; DAR-DP20-02 B: personalidad tradicional y gremial; DAR-DP20-03 B: doce establecimientos previstos); decisiones 04–08 pendientes · **Integración en CoreRPG/Godot:** NO.
 
-Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de puertos ni ampliación automática de D.P16. Su materia prima es el canon de Norgard/D07–D10 y D.P13, y el anteproyecto D.P16. La PR aporta autoría urbana, negocios, personas posibles, relaciones, escenas y obligaciones de implementación; **solo convierte en canon los seis nombres populares aprobados expresamente el 11/11/2026; las personas, establecimientos y geometrías siguen pendientes**.
+Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de puertos ni ampliación automática de D.P16. Su materia prima es el canon de Norgard/D07–D10 y D.P13, y el anteproyecto D.P16. La PR aporta autoría urbana, negocios, personas posibles, relaciones, escenas y obligaciones de implementación; **integra al canon solo los seis nombres populares, el carácter cultural y los doce objetivos futuros de establecimientos aprobados; las personas y geometrías, así como las instancias físicas y la apertura de dichos establecimientos, siguen pendientes**.
 
 ## Lectura recomendada
 
@@ -26,10 +26,11 @@ Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de p
 - **AUTHORED:** vínculo terrestre cualitativo Veldora–Treihord; sin trayecto, duración, puente, peaje ni establecimientos intermedios acreditados.
 - **AUTHORED (DAR-DP20-01 A):** «Borde de las Marcas», «Patios de la Cuenta», «Calles del Trato», «Patios del Oficio», «Tejas Serenas», «Vuelta del Camino», seis denominaciones populares superponibles, **no barrios administrativos ni polígonos delimitados**.
 - **AUTHORED (DAR-DP20-02 B):** personalidad cultural **predominantemente tradicional y gremial** (redes familiares, oficios, artesanía, reputación heredada), compatible con el puerto mercante exterior. No se aprueban gremios, privilegios o leyes nuevos.
+- **AUTHORED_FUTURE_OBJECTIVE (DAR-DP20-03 B):** los doce nombres y funciones de establecimientos VEL-L01–VEL-L12 son objetivos futuros. **No** hay locales activos, coordenadas, parcelas, propietarios, inventarios ni recursos creados.
 
 ## Semántica de autoridad
 
-**AUTHORED** = reconocido en fuentes existentes. **DERIVED_CONDITIONAL** = consecuencia posible si existen recursos, permisos y contexto. **PROPOSAL_PENDING_AUTHOR** = creación nueva que el autor debe aceptar antes de ingresar al canon. **TEST_ONLY** = escena hipotética que nunca entra en WorldState.
+**AUTHORED** = reconocido en fuentes existentes. **AUTHORED_FUTURE_OBJECTIVE** = compromiso editorial aprobado para desarrollo posterior, sin afirmar existencia física. **DERIVED_CONDITIONAL** = consecuencia posible si existen recursos, permisos y contexto. **PROPOSAL_PENDING_AUTHOR** = creación nueva que el autor debe aceptar antes de ingresar al canon. **TEST_ONLY** = escena hipotética que nunca entra en WorldState.
 
 No hay calles, establecimientos, NPC, barcos, cantidades, contratos ni cronologías nuevos ejecutados. La IA no puede usar estas propuestas como evidencia de presencia real. Esta fase tampoco declara que los siete bloques P18-G01/G09/G10/cartografía/rutas estén resueltos. El objetivo de D.P20 es **autoría profunda comprobable**, no fingir un mapa o una simulación.
 

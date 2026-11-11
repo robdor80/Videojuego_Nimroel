@@ -1,6 +1,6 @@
 # D.P20 — Cuaderno de decisión autoral de Veldora
 
-**Cuaderno de decisiones parcialmente aprobadas.** El 11/11/2026 el autor aprobó expresamente **DAR-DP20-01 A** (seis denominaciones populares) y **DAR-DP20-02 B** (personalidad predominantemente tradicional y gremial). Las decisiones 03–08 siguen pendientes; no se aprueban barrios administrativos, posiciones, locales, personajes ni WorldState.
+**Cuaderno de decisiones parcialmente aprobadas.** El 11/11/2026 el autor aprobó expresamente **DAR-DP20-01 A** (seis denominaciones populares), **DAR-DP20-02 B** (personalidad tradicional y gremial) y **DAR-DP20-03 B** (doce establecimientos como objetivos canónicos futuros, únicamente sus nombres y funciones). Las decisiones 04–08 siguen pendientes. No se crean barrios administrativos, locales físicos, personas ni WorldState.
 
 ## DAR-DP20-01 · Identidad espacial: seis ámbitos candidatos
 
@@ -16,7 +16,9 @@
 
 ## DAR-DP20-03 · Locales de identidad
 
-**A (recomendada):** seleccionar hasta doce candidatos L01–L12, dar prioridad editorial a L01/L02/L03/L05/L08/L09 y materializar los restantes solo si la futura ciudad los necesita. **B:** aceptar todos los nombres como objetivos futuros, **sin** edificios activos ni posiciones. **C:** renombrar/recortar. **Estado: PROPOSAL_PENDING_AUTHOR.** Los almacenes, talleres y gremios como **funciones generales** ya son canónicos; esta pregunta no decide si existen.
+**A (recomendada):** seleccionar hasta doce candidatos L01–L12, dar prioridad editorial a L01/L02/L03/L05/L08/L09 y materializar los restantes solo si la futura ciudad los necesita. **B:** aceptar todos los nombres como objetivos futuros, **sin** edificios activos ni posiciones. **C:** renombrar/recortar. **Estado: APPROVED_AUTHOR — opción B, 11/11/2026.** Se aprueban **VEL-L01–VEL-L12 como objetivos canónicos futuros, con sus nombres y actividades proyectadas**. Esto no equivale a declarar que existan físicamente, que funcionen, que tengan dueño, plantilla, parcela, mobiliario, existencias o acceso. Las funciones generales de almacenes, talleres y gremios siguen amparadas por el canon anterior; esta decisión fija doce objetivos singulares para fases posteriores.
+
+**Declaración expresa del autor:** «DAR-DP20-03: Apruebo la opción B, los doce establecimientos como objetivos canónicos futuros, sin materializarlos todavía».
 
 ## DAR-DP20-04 · Reparto inicial de personas relevantes
 
@@ -44,11 +46,11 @@
 | --- | --- | --- | --- | --- |
 | DAR-DP20-01 | Opción A: seis denominaciones populares, superponibles | 11/11/2026 | Solo los nombres U01–U06 AUTHORED; barrios, geometría y locales aún pendientes | APROBADA |
 | DAR-DP20-02 | Opción B: carácter predominantemente tradicional y gremial | 11/11/2026 | Identidad cultural de Veldora AUTHORED; puerto exterior y comercio distribuido preservados; sin crear instituciones | APROBADA |
-| DAR-DP20-03 | — | — | Ninguno | PENDIENTE |
+| DAR-DP20-03 | Opción B: doce establecimientos previstos, nombres y funciones L01–L12 | 11/11/2026 | Objetivos canónicos futuros AUTHORED; edificios, locales activos, inventarios y posiciones aún inexistentes | APROBADA |
 | DAR-DP20-04 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-05 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-06 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-07 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-08 | — | — | Ninguno | PENDIENTE |
 
-**Disciplina al aprobar:** registrar fuente/fecha/opción y contenido exacto; convertir SOLO lo aprobado a AUTHORED. **Para U01–U06 se ha aprobado el nombre popular, no su geometría ni que sean barrios oficiales.** Dejar locales, personas e historias en PROPOSAL_PENDING_AUTHOR. Jamás actualizar WorldState por alterar un Markdown.
+**Disciplina al aprobar:** registrar fuente/fecha/opción y contenido exacto; convertir SOLO lo aprobado a AUTHORED. **Para U01–U06 se ha aprobado el nombre popular, no su geometría ni que sean barrios oficiales.** Dejar las **instancias físicas** de locales, personas e historias en PROPOSAL_PENDING_AUTHOR; los doce **objetivos editoriales de establecimientos** sí están aprobados por DAR-DP20-03 B. Jamás actualizar WorldState por alterar un Markdown.

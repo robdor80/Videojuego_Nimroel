@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "phase": "D.P20",
   "date": "2026-11-11",
-  "status": "MIXED_AUTHORED_DP20_01_02_AND_PENDING_PROPOSALS",
+  "status": "MIXED_AUTHORED_DP20_01_02_03_AND_PENDING_PROPOSALS",
   "cityId": "veldora",
   "cityKind": "canonical_city_manual_reference",
   "canonClaims": {
@@ -37,7 +37,70 @@
     "approvedCityCharacter": "PREDOMINANTLY_TRADITIONAL_AND_GUILD_ORIENTED",
     "approvedCityCharacterOption": "DAR-DP20-02_B",
     "cityCharacterDoesNotDisplaceExternalPort": true,
-    "cityCharacterCreatesNewGuildInstitutions": false
+    "cityCharacterCreatesNewGuildInstitutions": false,
+    "approvedFutureEstablishments": [
+      {
+        "id": "VEL-L01",
+        "name": "Depósito de la Cuerda Ceniza",
+        "purpose": "custodia_privada"
+      },
+      {
+        "id": "VEL-L02",
+        "name": "Mesa de los Tres Renglones",
+        "purpose": "escribania_privada"
+      },
+      {
+        "id": "VEL-L03",
+        "name": "Taller de la Cuña Fina",
+        "purpose": "carpinteria_reparacion"
+      },
+      {
+        "id": "VEL-L04",
+        "name": "Fragua del Arco Corto",
+        "purpose": "herreria_menor"
+      },
+      {
+        "id": "VEL-L05",
+        "name": "Casa de las Dos Tejas",
+        "purpose": "hospedaje"
+      },
+      {
+        "id": "VEL-L06",
+        "name": "Patio del Encordado",
+        "purpose": "trabajo_cooperativo"
+      },
+      {
+        "id": "VEL-L07",
+        "name": "La Medida Prestada",
+        "purpose": "pesaje_privado"
+      },
+      {
+        "id": "VEL-L08",
+        "name": "Horno de los Postigos",
+        "purpose": "panaderia"
+      },
+      {
+        "id": "VEL-L09",
+        "name": "Casa de los Pliegos",
+        "purpose": "hogar_mercantil"
+      },
+      {
+        "id": "VEL-L10",
+        "name": "Banco de las Hebillas",
+        "purpose": "taller_tienda"
+      },
+      {
+        "id": "VEL-L11",
+        "name": "Archivo de las Copias",
+        "purpose": "deposito_documental_privado"
+      },
+      {
+        "id": "VEL-L12",
+        "name": "Patio de los Carros",
+        "purpose": "servicio_urbano"
+      }
+    ],
+    "futureEstablishmentsArePhysicalEntities": false
   },
   "lockedUnknowns": {
     "officialDistrictCount": null,
@@ -167,7 +230,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L02",
@@ -182,7 +249,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L03",
@@ -197,7 +268,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L04",
@@ -212,7 +287,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L05",
@@ -227,7 +306,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L06",
@@ -242,7 +325,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L07",
@@ -257,7 +344,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L08",
@@ -272,7 +363,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L09",
@@ -287,7 +382,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L10",
@@ -302,7 +401,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L11",
@@ -317,7 +420,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     },
     {
       "id": "VEL-L12",
@@ -332,7 +439,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_DAR_DP20_03_B",
+      "futureNameAndPurposeApproved": true,
+      "materialized": false
     }
   ],
   "proposedPeople": [
@@ -640,10 +751,11 @@
     },
     {
       "id": "DAR-DP20-03",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "B",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "TWELVE_NAMED_ESTABLISHMENT_FUTURE_OBJECTIVES_ONLY_NO_PHYSICAL_MATERIALIZATION"
     },
     {
       "id": "DAR-DP20-04",
