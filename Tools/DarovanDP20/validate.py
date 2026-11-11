@@ -20,7 +20,7 @@ def invariant(d, check_files=True):
     req(d["schemaVersion"] == 1 and d["version"] == "0.1.0", "schema version")
     req(d["documentId"] == "darovan_dp20_veldora_city_authorship_proposals_v0.1", "document id")
     req(d["phase"] == "D.P20" and d["cityId"] == "veldora" and d["cityKind"] == "canonical_city_manual_reference", "scope")
-    req(d["status"] == "MIXED_AUTHORED_DP20_01_02_03_04_AND_PENDING_PROPOSALS" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
+    req(d["status"] == "MIXED_AUTHORED_DP20_01_02_03_04_05_AND_PENDING_PROPOSALS" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
     req(d["createsWorldStateEntities"] is False and d["externalCustomsFacilityCreated"] is False and d["privateRoyalArmyCreated"] is False, "no instances")
     c=d["canonClaims"]
     req(c["principalCommercialPortOfNorgard"] is True and c["gulf"] == "Golfo de Veldora", "canonical commercial role")
@@ -33,6 +33,9 @@ def invariant(d, check_files=True):
     approved_biography_names=["Liria Menor","Sered Alvar","Naia Corven","Oren Talen","Vesa Orrin","Bram Iven","Mira Sern","Edris Fen","Adel Renvar","Fenra Doril"]
     approved_biography_roles=["comerciante","custodio","artesana","escribiente_aduanas_de_corona","trabajadora_adulta","transportista","posadera","copista","comerciante_acomodada","panadera"]
     req(c["approvedCharacterBiographyBases"]==[{"id":"VEL-N"+str(i).zfill(2),"name":approved_biography_names[i-1],"role":approved_biography_roles[i-1],"biographySource":"04_personajes_hogares_y_relaciones.md"} for i in range(1,11)] and c["approvedCharacterBiographiesCreatePeople"] is False, "exact ten approved biographies, no NPCs")
+    approved_personal_memories=[("VEL-M01","La promesa incompleta","VEL-N01","Liria Menor"),("VEL-M02","El error de una copia","VEL-N08","Edris Fen"),("VEL-M03","La reparación hecha deprisa","VEL-N03","Naia Corven"),("VEL-M04","La ración prestada","VEL-N10","Fenra Doril")]
+    req(c["approvedPersonalMemories"]==[{"id":mid,"title":title,"characterId":person_id,"characterName":person_name,"approval":"AUTHORED_PERSONAL_MEMORY_DAR_DP20_05_A","publicEvent":False,"eventDate":None,"worldStateEventId":None} for mid,title,person_id,person_name in approved_personal_memories], "only four approved personal memories without dates or events")
+    req(c["personalMemoriesCreateHistoricalPublicEvents"] is False and c["personalMemoriesCreateWorldStateEvents"] is False, "no public history or worldstate from memories")
     approved_names=["Borde de las Marcas","Patios de la Cuenta","Calles del Trato","Patios del Oficio","Tejas Serenas","Vuelta del Camino"]
     req(c["approvedPopularAreaNames"]==approved_names and c["approvedPopularAreaNamesDoNotDefineDistricts"] is True,"approved popular names without official districts")
     req(c["populationRange"] == {"minInclusive":29000,"maxInclusive":35000,"exact":None}, "D08 population")
@@ -80,6 +83,8 @@ def invariant(d, check_files=True):
             req(x=={"id":"DAR-DP20-03","status":"APPROVED","selectedOption":"B","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"TWELVE_NAMED_ESTABLISHMENT_FUTURE_OBJECTIVES_ONLY_NO_PHYSICAL_MATERIALIZATION"}, "exact twelve future objectives approval")
         elif i==4:
             req(x=={"id":"DAR-DP20-04","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"TEN_CHARACTER_NAME_ROLE_BIOGRAPHY_BASES_ONLY_NO_NPC_MATERIALIZATION"}, "exact biography approval scope")
+        elif i==5:
+            req(x=={"id":"DAR-DP20-05","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"FOUR_PRIVATE_BIOGRAPHICAL_MEMORIES_ONLY_NO_DATE_NO_PUBLIC_EVENTS_NO_WORLDSTATE"}, "private memories only approval")
         else:
             req(x=={"id":"DAR-DP20-"+str(i).zfill(2),"status":"PENDING_AUTHOR","selectedOption":None,"approvedDate":None,"canonPromotion":False}, "unauthorized other decision")
     req(all(v is False for v in d["runtime"].values()) and d["nextPhase"]=="D.P21_TARAMIN_NOT_STARTED", "scope isolation")
@@ -127,7 +132,16 @@ def mutation_tests(d):
         ("character decision altered",lambda x:x["authorDecisions"][1].update(selectedOption="A")),
         ("establishment decision altered",lambda x:x["authorDecisions"][2].update(selectedOption="A")),
         ("biography approval changed",lambda x:x["authorDecisions"][3].update(selectedOption="B")),
-        ("other decision prematurely selected",lambda x:x["authorDecisions"][4].update(selectedOption="A")),
+        ("memory approval changed",lambda x:x["authorDecisions"][4].update(selectedOption="B")),
+        ("other decision prematurely selected",lambda x:x["authorDecisions"][5].update(selectedOption="A")),
+        ("approved memory title mutated",lambda x:x["canonClaims"]["approvedPersonalMemories"][0].update(title="Otra historia")),
+        ("approved memory owner mutated",lambda x:x["canonClaims"]["approvedPersonalMemories"][0].update(characterId="VEL-N02")),
+        ("approved memory invented date",lambda x:x["canonClaims"]["approvedPersonalMemories"][0].update(eventDate="1234-01-01")),
+        ("approved memory turned public",lambda x:x["canonClaims"]["approvedPersonalMemories"][0].update(publicEvent=True)),
+        ("approved memory created event",lambda x:x["canonClaims"]["approvedPersonalMemories"][0].update(worldStateEventId="fake")),
+        ("public history forged",lambda x:x["canonClaims"].update(personalMemoriesCreateHistoricalPublicEvents=True)),
+        ("memory created worldstate",lambda x:x["canonClaims"].update(personalMemoriesCreateWorldStateEvents=True)),
+        ("approved memory omitted",lambda x:x["canonClaims"]["approvedPersonalMemories"].pop()),
         ("approved character name changed",lambda x:x["proposedPeople"][0].update(name="Nombre cambiado")),
         ("approved character role changed",lambda x:x["proposedPeople"][0].update(role="superintendente")),
         ("approved biography scope stripped",lambda x:x["proposedPeople"][0].update(nameRoleBiographyApproved=False)),
@@ -159,4 +173,4 @@ if __name__=="__main__":
     d=read(DATA); invariant(d)
     n=mutation_tests(d)
     print(f"PASS D.P20: integral contract and {n} adverse mutations; source files and chapters verified.")
-    print("DOCUMENTARY ONLY: 6 popular names, traditional-guild character, 12 future establishments, 10 biography bases approved; no physical NPCs, premises, households, official districts or runtime entities.")
+    print("DOCUMENTARY ONLY: 6 popular names, traditional-guild character, 12 future establishments, 10 biography bases, 4 private memories approved; no dates, public events, physical NPCs, premises, households, official districts or runtime entities.")

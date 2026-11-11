@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "phase": "D.P20",
   "date": "2026-11-11",
-  "status": "MIXED_AUTHORED_DP20_01_02_03_04_AND_PENDING_PROPOSALS",
+  "status": "MIXED_AUTHORED_DP20_01_02_03_04_05_AND_PENDING_PROPOSALS",
   "cityId": "veldora",
   "cityKind": "canonical_city_manual_reference",
   "canonClaims": {
@@ -163,7 +163,51 @@
         "biographySource": "04_personajes_hogares_y_relaciones.md"
       }
     ],
-    "approvedCharacterBiographiesCreatePeople": false
+    "approvedCharacterBiographiesCreatePeople": false,
+    "approvedPersonalMemories": [
+      {
+        "id": "VEL-M01",
+        "title": "La promesa incompleta",
+        "characterId": "VEL-N01",
+        "characterName": "Liria Menor",
+        "approval": "AUTHORED_PERSONAL_MEMORY_DAR_DP20_05_A",
+        "publicEvent": false,
+        "eventDate": null,
+        "worldStateEventId": null
+      },
+      {
+        "id": "VEL-M02",
+        "title": "El error de una copia",
+        "characterId": "VEL-N08",
+        "characterName": "Edris Fen",
+        "approval": "AUTHORED_PERSONAL_MEMORY_DAR_DP20_05_A",
+        "publicEvent": false,
+        "eventDate": null,
+        "worldStateEventId": null
+      },
+      {
+        "id": "VEL-M03",
+        "title": "La reparación hecha deprisa",
+        "characterId": "VEL-N03",
+        "characterName": "Naia Corven",
+        "approval": "AUTHORED_PERSONAL_MEMORY_DAR_DP20_05_A",
+        "publicEvent": false,
+        "eventDate": null,
+        "worldStateEventId": null
+      },
+      {
+        "id": "VEL-M04",
+        "title": "La ración prestada",
+        "characterId": "VEL-N10",
+        "characterName": "Fenra Doril",
+        "approval": "AUTHORED_PERSONAL_MEMORY_DAR_DP20_05_A",
+        "publicEvent": false,
+        "eventDate": null,
+        "worldStateEventId": null
+      }
+    ],
+    "personalMemoriesCreateHistoricalPublicEvents": false,
+    "personalMemoriesCreateWorldStateEvents": false
   },
   "lockedUnknowns": {
     "officialDistrictCount": null,
@@ -860,10 +904,11 @@
     },
     {
       "id": "DAR-DP20-05",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "FOUR_PRIVATE_BIOGRAPHICAL_MEMORIES_ONLY_NO_DATE_NO_PUBLIC_EVENTS_NO_WORLDSTATE"
     },
     {
       "id": "DAR-DP20-06",

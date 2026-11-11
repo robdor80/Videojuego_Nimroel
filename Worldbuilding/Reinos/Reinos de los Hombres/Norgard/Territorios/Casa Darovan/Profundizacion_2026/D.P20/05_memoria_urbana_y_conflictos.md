@@ -1,16 +1,16 @@
 # Veldora — el peso de la palabra: memoria local y conflictos que persisten
 
-**PROPOSAL_PENDING_AUTHOR.** No se crea historia oficial, fecha, siniestro, ley, gremio o institución. Los recuerdos de los personajes siguientes son hipótesis biográficas **condicionadas a su aprobación**. Las secuencias de juego son diseños, no eventos sucedidos.
+**DAR-DP20-05 A (11/11/2026): AUTHORED_PERSONAL_MEMORY para M1–M4, cuatro antecedentes biográficos de escala íntima.** No se ha canonizado ninguna fecha, crónica pública, desastre, ley, gremio ni institución. **PROPOSAL_PENDING_AUTHOR** permanece vigente para los hilos H01–H04 y sus disparadores; las secuencias jugables siguen siendo diseños condicionales, no eventos sucedidos o ejecutados en WorldState.
 
-## Cuatro estratos de memoria posibles
+## Cuatro recuerdos personales canónicos
 
-**M1 · La promesa incompleta.** Una generación de comerciantes recuerda casos domésticos de compras que se demoraron. La ciudad no necesita una gran «Guerra del Comercio» ficticia para tener historia: basta con que una promesa documentada cambiara una amistad. **Testigo clave propuesto:** Liria cree que la confianza rota dura más que la demora de un bien. **No canónico:** no se adjudica año ni hecho público.
+**M1 · La promesa incompleta.** Una generación de comerciantes recuerda casos domésticos de compras que se demoraron. La ciudad no necesita una gran «Guerra del Comercio» ficticia para tener historia: basta con que una promesa documentada cambiara una amistad. **Memoria personal aprobada de Liria:** cree que la confianza rota dura más que la demora de un bien. **Alcance no aprobado:** ningún año ni hecho público.
 
-**M2 · El error de una copia.** En un negocio concreto, un texto mal interpretado dejó a dos familias con expectativas distintas. Edris sabe que el documento no resuelve por sí solo la intención de sus autores. **No canónico:** no establece precedente jurídico ni una institución de escribanos con potestad regia.
+**M2 · El error de una copia.** En un negocio concreto, un texto mal interpretado dejó a dos familias con expectativas distintas. Edris sabe que el documento no resuelve por sí solo la intención de sus autores. **Alcance no aprobado:** no establece precedente jurídico ni una institución de escribanos con potestad regia.
 
-**M3 · La reparación hecha deprisa.** Un trabajo de Naia estuvo a punto de fracasar por aceptar un plazo imposible; en vez de escandalizar a toda Veldora, el acontecimiento modela su prudencia. **No canónico:** ninguna embarcación se hundió ni existe infraestructura destruida.
+**M3 · La reparación hecha deprisa.** Un trabajo de Naia estuvo a punto de fracasar por aceptar un plazo imposible; en vez de escandalizar a toda Veldora, el acontecimiento modela su prudencia. **Alcance no aprobado:** ninguna embarcación se hundió ni existe infraestructura destruida.
 
-**M4 · La ración prestada.** Fenra recuerda que prestar comida y condonar deuda son actos distintos; la persona ayudada puede aceptar uno y rechazar el otro. **No canónico:** no hubo hambruna ciudadana por derivación de esta anécdota.
+**M4 · La ración prestada.** Fenra recuerda que prestar comida y condonar deuda son actos distintos; la persona ayudada puede aceptar uno y rechazar el otro. **Alcance no aprobado:** no hubo hambruna ciudadana por derivación de esta anécdota.
 
 **Regla:** una memoria biográfica, incluso aprobada, no modifica automáticamente economía, cronología nacional o topografía.
 
@@ -54,4 +54,4 @@
 
 Veldora tendrá crónicas públicas reales cuando el autor las apruebe; esta fase **no las fabrica**. Su profundidad nace también de lo menudo: el origen de una medida, una herramienta heredada, la forma de anotar de una persona, el olor de un horno en una mañana húmeda o una deuda que pesa más por amistad que por importe. Cada episodio admite varias interpretaciones humanas, y ninguna convierte a todo un grupo social en facción moral.
 
-**Salida editorial:** cuatro capas de memoria íntima, cuatro conflictos cruzados y tres contratos de continuidad. Nada aquí crea una guerra, epidemia, héroe nacional, desastre histórico o ley nueva.
+**Salida editorial:** cuatro recuerdos íntimos aprobados como antecedentes biográficos; cuatro conflictos cruzados condicionales aún pendientes de DAR-DP20-06 y tres contratos de continuidad futura. Nada aquí crea una guerra, epidemia, héroe nacional, desastre histórico, fecha pública o ley nueva.

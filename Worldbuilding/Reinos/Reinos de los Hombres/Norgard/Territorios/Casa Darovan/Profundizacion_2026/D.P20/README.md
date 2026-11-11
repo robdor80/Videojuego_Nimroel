@@ -1,8 +1,8 @@
 # D.P20 — Veldora, ciudad mercantil vivida
 
-**Fecha:** 11/11/2026 · **Estado:** APROBACIÓN PARCIAL (DAR-DP20-01 A: nombres populares; DAR-DP20-02 B: personalidad tradicional y gremial; DAR-DP20-03 B: doce establecimientos previstos; DAR-DP20-04 A: diez biografías base); decisiones 05–08 pendientes · **Integración en CoreRPG/Godot:** NO.
+**Fecha:** 11/11/2026 · **Estado:** APROBACIÓN PARCIAL (DAR-DP20-01 A: nombres populares; DAR-DP20-02 B: personalidad tradicional y gremial; DAR-DP20-03 B: doce establecimientos previstos; DAR-DP20-04 A: diez biografías base; DAR-DP20-05 A: cuatro recuerdos personales); decisiones 06–08 pendientes · **Integración en CoreRPG/Godot:** NO.
 
-Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de puertos ni ampliación automática de D.P16. Su materia prima es el canon de Norgard/D07–D10 y D.P13, y el anteproyecto D.P16. La PR aporta autoría urbana, negocios, personas posibles, relaciones, escenas y obligaciones de implementación; **integra al canon seis nombres populares, el carácter cultural, doce objetivos futuros de establecimientos y diez biografías individuales como base canónica; las instancias físicas de personas y locales, así como la geometría, siguen pendientes**.
+Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de puertos ni ampliación automática de D.P16. Su materia prima es el canon de Norgard/D07–D10 y D.P13, y el anteproyecto D.P16. La PR aporta autoría urbana, negocios, personas posibles, relaciones, escenas y obligaciones de implementación; **integra al canon seis nombres populares, el carácter cultural, doce objetivos futuros de establecimientos, diez biografías base y cuatro recuerdos personales; las instancias físicas de personas y locales, la geometría y los conflictos jugables siguen pendientes**.
 
 ## Lectura recomendada
 
@@ -28,10 +28,11 @@ Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de p
 - **AUTHORED (DAR-DP20-02 B):** personalidad cultural **predominantemente tradicional y gremial** (redes familiares, oficios, artesanía, reputación heredada), compatible con el puerto mercante exterior. No se aprueban gremios, privilegios o leyes nuevos.
 - **AUTHORED_FUTURE_OBJECTIVE (DAR-DP20-03 B):** los doce nombres y funciones de establecimientos VEL-L01–VEL-L12 son objetivos futuros. **No** hay locales activos, coordenadas, parcelas, propietarios, inventarios ni recursos creados.
 - **AUTHORED_BIOGRAPHY_BASE (DAR-DP20-04 A):** diez nombres, roles y biografías VEL-N01–VEL-N10 aprobados como base canónica para futuros NPC. **No** se crean personas, hogares, parentescos, EntityId, inventarios, relaciones activas ni ubicaciones.
+- **AUTHORED_PERSONAL_MEMORY (DAR-DP20-05 A):** M1 promesa incompleta (Liria), M2 error de copia (Edris), M3 reparación apresurada (Naia), M4 ración prestada (Fenra). Son **recuerdos privados**, sin fechas, crónicas públicas ni sucesos de WorldState.
 
 ## Semántica de autoridad
 
-**AUTHORED** = reconocido en fuentes existentes. **AUTHORED_FUTURE_OBJECTIVE** = compromiso editorial aprobado para desarrollo posterior, sin afirmar existencia física. **AUTHORED_BIOGRAPHY_BASE** = nombre, rol y biografía aprobados para futuro NPC, sin entidad ni vida simulada. **DERIVED_CONDITIONAL** = consecuencia posible si existen recursos, permisos y contexto. **PROPOSAL_PENDING_AUTHOR** = creación nueva que el autor debe aceptar antes de ingresar al canon. **TEST_ONLY** = escena hipotética que nunca entra en WorldState.
+**AUTHORED** = reconocido en fuentes existentes. **AUTHORED_FUTURE_OBJECTIVE** = compromiso editorial aprobado para desarrollo posterior, sin afirmar existencia física. **AUTHORED_BIOGRAPHY_BASE** = nombre, rol y biografía aprobados para futuro NPC, sin entidad ni vida simulada. **AUTHORED_PERSONAL_MEMORY** = antecedente biográfico íntimo aprobado, sin suceso público ni evento en WorldState. **DERIVED_CONDITIONAL** = consecuencia posible si existen recursos, permisos y contexto. **PROPOSAL_PENDING_AUTHOR** = creación nueva que el autor debe aceptar antes de ingresar al canon. **TEST_ONLY** = escena hipotética que nunca entra en WorldState.
 
 No hay calles, establecimientos, NPC, barcos, cantidades, contratos ni cronologías nuevos ejecutados. La IA no puede usar estas propuestas como evidencia de presencia real. Esta fase tampoco declara que los siete bloques P18-G01/G09/G10/cartografía/rutas estén resueltos. El objetivo de D.P20 es **autoría profunda comprobable**, no fingir un mapa o una simulación.
 
