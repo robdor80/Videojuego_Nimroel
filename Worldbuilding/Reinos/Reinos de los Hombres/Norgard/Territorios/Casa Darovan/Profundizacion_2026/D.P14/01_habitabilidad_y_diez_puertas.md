@@ -46,3 +46,7 @@ Los pesos D06 (0–4) **no son porcentajes ni probabilidades de presencia**, ni 
 Se puede determinar **qué hace falta demostrar para implantar un lugar** y qué propuestas rechazar. No se puede determinar aún la lista de casillas habitables o una distancia al pozo/mercado. La documentación no crea propietarios, aldeas, hidrología menor, puertos, puentes ni porcentajes de superficie utilizable.
 
 **Datos:** `../Datos operativos/darovan_dp14_habitability_planning_v0.1.json`; heredados D01, D02, D03, D06 y D.P13.
+
+## Adenda editorial — 11/11/2026
+
+La matriz de puertas se complementa ahora con [D.P14/02 — Territorio vivido](02_territorio_vivido_habitabilidad_y_estaciones.md): las doce áreas incorporan significado humano, condicionantes estacionales, situaciones narrativas y límites de emplazamiento. **D.P14 está completa como planificación ecológica y de habitabilidad**, sin declarar casillas o aldeas materializadas.
