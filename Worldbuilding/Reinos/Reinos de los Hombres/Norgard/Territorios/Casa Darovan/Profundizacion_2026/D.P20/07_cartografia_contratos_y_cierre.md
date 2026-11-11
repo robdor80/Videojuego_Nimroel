@@ -1,6 +1,6 @@
 # D.P20 — Veldora: puertas de cartografía, integración y aceptación
 
-**Estado:** decisiones autorales DAR-DP20-01 A, 02 B, 03 B, 04 A, 05 A y 06 A **registradas**, con aprobaciones únicamente editoriales. Las decisiones 07–08 permanecen **PROPOSAL_PENDING_AUTHOR**. Especificación de futura producción **sin malla de terreno, callejero ni runtime**. P18-G01, G07, G09, G10 y G12 continúan abiertos en su dimensión material/autoría hasta resolución efectiva. La calidad de esta entrega no se mide por fingir polígonos.
+**Estado:** decisiones autorales DAR-DP20-01 A, 02 B, 03 B, 04 A, 05 A y 06 A **registradas**, con aprobaciones únicamente editoriales. **DAR-DP20-07 A ha quedado aprobada como decisión de proceso:** se conserva el canon editorial y se elaborará la cartografía física futura desde el mapa autorizado, sin geometrías supuestas. DAR-DP20-08 permanece **PROPOSAL_PENDING_AUTHOR**. Especificación de futura producción **sin malla de terreno, callejero ni runtime**. P18-G01, G07, G09, G10 y G12 continúan abiertos en su dimensión material/autoría hasta resolución efectiva. La calidad de esta entrega no se mide por fingir polígonos.
 
 ## Qué tenemos y qué falta
 
@@ -14,9 +14,9 @@
 2. **Escala urbana de autoría:** seis nombres populares U01–U06 aprobados (no barrios oficiales), doce establecimientos L01–L12 aprobados como objetivos futuros y diez biografías N01–N10 aprobadas como base canónica; cuatro memorias privadas M01–M04 y cuatro arcos narrativos H01–H04 también aprobados. **Nada de ello fija geometrías ni crea entidades en WorldState**.
 3. **Escala operativa de CoreRPG/Godot:** EntityId, coordenada validada, propiedad, ocupación y conexiones reales deberán llegar de sistemas futuros; la escena usa estas entidades, nunca crea recursos que falten.
 
-## Propuesta de orden de cartografía, sin ejecutar
+## Procedimiento cartográfico aprobado por DAR-DP20-07 A (sin ejecutar)
 
-**G1.** Bloquear fuentes y versión del mapa, resolver escala y proyección autorizadas. **G2.** Levantar costa/relieve y cauces sin modificar hidrología. **G3.** Delimitar el puerto marítimo que ya existe y accesibilidad segura, sin añadir muelles. **G4.** Someter a decisión oficial número/nombres/carácter de barrios, distribución comercial y emplazamiento de sectores acomodados. **G5.** Situar casas y talleres **aprobados** con derecho de ocupación, capacidad y abastecimiento. **G6.** Registrar calles/conectividad real, accesos y enlaces urbanos; conservar que camino a Treihord no aporta por sí solo kilometraje ni puntos intermedios. **G7.** Probar desplazamiento, interacción y persistencia con escenarios sintéticos. **G8.** Activar contenidos aprobados solo tras validación de motor y permisos.
+**G1.** Identificar y fijar la versión del mapa autorizado y sus fuentes; determinar la escala y la proyección solo si están acreditadas por el autor. **G2.** Levantar costa/relieve y cauces sin modificar hidrología. **G3.** Delimitar el puerto marítimo que ya existe y accesibilidad segura, sin añadir muelles. **G4.** Someter a decisión oficial número/nombres/carácter de barrios, distribución comercial y emplazamiento de sectores acomodados. **G5.** Situar casas y talleres **aprobados** con derecho de ocupación, capacidad y abastecimiento. **G6.** Registrar calles/conectividad real, accesos y enlaces urbanos; conservar que camino a Treihord no aporta por sí solo kilometraje ni puntos intermedios. **G7.** Probar desplazamiento, interacción y persistencia con escenarios sintéticos. **G8.** Activar contenidos aprobados solo tras validación de motor y permisos.
 
 Ninguno de esos pasos puede saltarse porque un documento literario describe un paseo.
 
@@ -46,7 +46,7 @@ Cada operación con un lote requerirá: id único, titular, custodio, calidad/es
 - **P18-G10:** diez biografías base canónicas aprobadas, **no NPC activos, hogares ni genealogías materializadas**.
 - **P18-G07/G05/G06/G11:** rutas, relieve, hidrología y medidas siguen por demostrar.
 - **P18-G12:** ingeniería de CoreRPG + Godot pendiente.
-- **Nueva dependencia:** localizar e instanciar en fases posteriores **solo** entidades aprobadas y físicamente justificadas. Los seis nombres populares, doce negocios futuros, diez biografías base y cuatro arcos condicionales ya tienen aprobación editorial; falta decidir la cartografía (DAR-DP20-07) y el cierre (DAR-DP20-08).
+- **Nueva dependencia:** localizar e instanciar en fases posteriores **solo** entidades aprobadas y físicamente justificadas. Los seis nombres populares, doce negocios futuros, diez biografías base y cuatro arcos condicionales ya tienen aprobación editorial; el procedimiento cartográfico DAR-DP20-07 A está aprobado sin geometría, y falta decidir el cierre DAR-DP20-08.
 
 **Resultado que puede certificarse con esta PR:** entrega de autoría profunda, trazabilidad del canon, validador de inventario y CI. **Resultado que NO puede certificarse:** ciudad física, simulación en vivo, población por hogar, personajes en juego o equivalencia cartográfica con Treskal.
 

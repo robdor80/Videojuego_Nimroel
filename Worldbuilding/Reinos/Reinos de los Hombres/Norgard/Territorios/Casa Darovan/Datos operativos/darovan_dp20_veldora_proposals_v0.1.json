@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "phase": "D.P20",
   "date": "2026-11-11",
-  "status": "MIXED_AUTHORED_DP20_01_02_03_04_05_06_AND_PENDING_PROPOSALS",
+  "status": "MIXED_AUTHORED_DP20_01_02_03_04_05_06_PROCESS07_APPROVED_08_PENDING",
   "cityId": "veldora",
   "cityKind": "canonical_city_manual_reference",
   "canonClaims": {
@@ -1001,10 +1001,11 @@
     },
     {
       "id": "DAR-DP20-07",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": false,
+      "approvalScope": "AUTHOR_MAP_BASED_FUTURE_CARTOGRAPHY_NO_GEOMETRY_CREATED"
     },
     {
       "id": "DAR-DP20-08",
@@ -1042,5 +1043,26 @@
     "createdNpcEntities": false,
     "persistenceTested": false
   },
-  "nextPhase": "D.P21_TARAMIN_NOT_STARTED"
+  "nextPhase": "D.P21_TARAMIN_NOT_STARTED",
+  "approvedCartographyProcess": {
+    "decisionId": "DAR-DP20-07",
+    "selectedOption": "A",
+    "approvalDate": "2026-11-11",
+    "processStatus": "APPROVED_NOT_EXECUTED",
+    "sourcePolicy": "AUTHOR_AUTHORIZED_MAP_ONLY",
+    "preserveExistingEditorialCanon": true,
+    "requireSeparateAuthorDecisionForUnknownGeometry": true,
+    "inventGeometry": false,
+    "createsPhysicalMap": false,
+    "createsStreets": false,
+    "createsDocks": false,
+    "createsBridges": false,
+    "createsRiverPort": false,
+    "createsBuildings": false,
+    "createsTravelRouteMetrics": false,
+    "altitudinalUrbanReferenceMetersApprox": {
+      "min": 0,
+      "max": 60
+    }
+  }
 }

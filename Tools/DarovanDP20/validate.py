@@ -20,8 +20,9 @@ def invariant(d, check_files=True):
     req(d["schemaVersion"] == 1 and d["version"] == "0.1.0", "schema version")
     req(d["documentId"] == "darovan_dp20_veldora_city_authorship_proposals_v0.1", "document id")
     req(d["phase"] == "D.P20" and d["cityId"] == "veldora" and d["cityKind"] == "canonical_city_manual_reference", "scope")
-    req(d["status"] == "MIXED_AUTHORED_DP20_01_02_03_04_05_06_AND_PENDING_PROPOSALS" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
+    req(d["status"] == "MIXED_AUTHORED_DP20_01_02_03_04_05_06_PROCESS07_APPROVED_08_PENDING" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
     req(d["createsWorldStateEntities"] is False and d["externalCustomsFacilityCreated"] is False and d["privateRoyalArmyCreated"] is False, "no instances")
+    req(d["approvedCartographyProcess"]=={"decisionId":"DAR-DP20-07","selectedOption":"A","approvalDate":"2026-11-11","processStatus":"APPROVED_NOT_EXECUTED","sourcePolicy":"AUTHOR_AUTHORIZED_MAP_ONLY","preserveExistingEditorialCanon":True,"requireSeparateAuthorDecisionForUnknownGeometry":True,"inventGeometry":False,"createsPhysicalMap":False,"createsStreets":False,"createsDocks":False,"createsBridges":False,"createsRiverPort":False,"createsBuildings":False,"createsTravelRouteMetrics":False,"altitudinalUrbanReferenceMetersApprox":{"min":0,"max":60}}, "cartography process approved, no made-up geometry")
     c=d["canonClaims"]
     req(c["principalCommercialPortOfNorgard"] is True and c["gulf"] == "Golfo de Veldora", "canonical commercial role")
     req(c["commercialLayout"] == "distributed_organic_B" and c["d07AuthorDecision"] == "DAR-D07-01_B", "D07 layout")
@@ -93,6 +94,8 @@ def invariant(d, check_files=True):
             req(x=={"id":"DAR-DP20-05","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"FOUR_PRIVATE_BIOGRAPHICAL_MEMORIES_ONLY_NO_DATE_NO_PUBLIC_EVENTS_NO_WORLDSTATE"}, "private memories only approval")
         elif i==6:
             req(x=={"id":"DAR-DP20-06","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"FOUR_FUTURE_CONDITIONAL_NARRATIVE_ARCS_ONLY_NOT_IMPLEMENTED_NOT_TRIGGERED"}, "exact future narrative approval")
+        elif i==7:
+            req(x=={"id":"DAR-DP20-07","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":False,"approvalScope":"AUTHOR_MAP_BASED_FUTURE_CARTOGRAPHY_NO_GEOMETRY_CREATED"}, "future cartography decision must not create a map")
         else:
             req(x=={"id":"DAR-DP20-"+str(i).zfill(2),"status":"PENDING_AUTHOR","selectedOption":None,"approvedDate":None,"canonPromotion":False}, "unauthorized other decision")
     req(all(v is False for v in d["runtime"].values()) and d["nextPhase"]=="D.P21_TARAMIN_NOT_STARTED", "scope isolation")
@@ -142,7 +145,16 @@ def mutation_tests(d):
         ("biography approval changed",lambda x:x["authorDecisions"][3].update(selectedOption="B")),
         ("memory approval changed",lambda x:x["authorDecisions"][4].update(selectedOption="B")),
         ("approved arc option changed",lambda x:x["authorDecisions"][5].update(selectedOption="B")),
-        ("other decision prematurely selected",lambda x:x["authorDecisions"][6].update(selectedOption="A")),
+        ("approved cartography changed",lambda x:x["authorDecisions"][6].update(selectedOption="B")),
+        ("other decision prematurely selected",lambda x:x["authorDecisions"][7].update(selectedOption="A")),
+        ("cartography invented",lambda x:x["approvedCartographyProcess"].update(inventGeometry=True)),
+        ("cartography creates streets",lambda x:x["approvedCartographyProcess"].update(createsStreets=True)),
+        ("cartography creates new docks",lambda x:x["approvedCartographyProcess"].update(createsDocks=True)),
+        ("cartography creates bridge",lambda x:x["approvedCartographyProcess"].update(createsBridges=True)),
+        ("cartography creates river port",lambda x:x["approvedCartographyProcess"].update(createsRiverPort=True)),
+        ("cartography creates buildings",lambda x:x["approvedCartographyProcess"].update(createsBuildings=True)),
+        ("cartography source replaced",lambda x:x["approvedCartographyProcess"].update(sourcePolicy="AI_GENERATED_MAP")),
+        ("cartography unapproved coordinates",lambda x:x["approvedCartographyProcess"].update(requireSeparateAuthorDecisionForUnknownGeometry=False)),
         ("approved arc title changed",lambda x:x["canonClaims"]["approvedFutureConditionalArcs"][0].update(title="Otro")),
         ("approved arc missing",lambda x:x["canonClaims"]["approvedFutureConditionalArcs"].pop()),
         ("arc implemented silently",lambda x:x["proposedConflicts"][0].update(arcImplemented=True)),
@@ -188,4 +200,4 @@ if __name__=="__main__":
     d=read(DATA); invariant(d)
     n=mutation_tests(d)
     print(f"PASS D.P20: integral contract and {n} adverse mutations; source files and chapters verified.")
-    print("DOCUMENTARY ONLY: six popular names, traditional-guild character, twelve future establishments, ten biographies, four private memories and four future conditional narrative arcs approved; no active missions, entities or events.")
+    print("DOCUMENTARY ONLY: seven decisions approved (six editorial and one cartographic process); no physical map, routes, buildings, NPC, missions or WorldState.")
