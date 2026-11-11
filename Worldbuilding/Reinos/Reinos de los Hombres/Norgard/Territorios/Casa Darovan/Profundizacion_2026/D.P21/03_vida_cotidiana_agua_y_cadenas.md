@@ -1,5 +1,7 @@
 # D.P21 — Taramin: una economía donde cada espera importa
 
+**Estado de las escenas y cadenas: PROPOSAL_PENDING_AUTHOR.** Ninguna cadena es mercancía, instalación o actividad materializada.
+
 **Autoría condicional, no simulación.** El valor jugable no nace de declarar «hay pescado en el mercado», sino de describir qué debe ser cierto para que llegue, cambie de manos y mantenga calidad.
 
 ## Ocho cadenas materiales y sociales

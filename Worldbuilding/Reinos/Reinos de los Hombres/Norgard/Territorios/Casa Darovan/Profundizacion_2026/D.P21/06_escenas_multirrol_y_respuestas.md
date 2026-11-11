@@ -1,5 +1,7 @@
 # D.P21 — Taramin: seis escenas para probar que la ciudad es jugable
 
+**Estado editorial: PROPOSAL_PENDING_AUTHOR; todas las escenas son TEST_ONLY.** No se crean misiones ni sucesos.
+
 **Todas las escenas TAR-E01–E06 son TEST_ONLY**, no misiones activas, ni eventos del mundo. Cada una exige que CoreRPG sostenga hechos, recursos, conocimiento, autoridad y persistencia antes de utilizarse.
 
 ## E01 · «No puedes vender lo que no has visto» (N01, N05)

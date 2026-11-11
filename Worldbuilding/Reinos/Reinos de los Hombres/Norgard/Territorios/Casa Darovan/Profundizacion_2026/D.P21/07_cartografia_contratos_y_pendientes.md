@@ -1,5 +1,7 @@
 # D.P21 — Cartografía responsable, autoridad y traspaso
 
+**Estado de la cartografía propuesta: PROPOSAL_PENDING_AUTHOR.** No hay geometría nueva aprobada ni creada.
+
 ## Lo que puede representarse ya
 
 Ciudad manual canónica de Taramin (Casa Darovan); pesca marítima/fluvial y puerto pesquero **sin nuevo emplazamiento inventado**; única zona principal de trabajo pesquero como criterio de distribución, 14.000–20.000 habitantes, núcleo principal 0–40 m, Thalen único con dos brazos terminales, Golfo de Norgard, transición semiárida peninsular con colinas del norte/centro 300–600 m, bosque meridional único sin tala industrial. Estas son referencias de **identidad**, nunca coordenadas.
