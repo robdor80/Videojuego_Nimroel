@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "phase": "D.P20",
   "date": "2026-11-11",
-  "status": "MIXED_AUTHORED_DP20_01_02_03_04_05_06_PROCESS07_APPROVED_08_PENDING",
+  "status": "EDITORIAL_CLOSURE_APPROVED_CI_REQUIRED_PR_DRAFT",
   "cityId": "veldora",
   "cityKind": "canonical_city_manual_reference",
   "canonClaims": {
@@ -1009,10 +1009,11 @@
     },
     {
       "id": "DAR-DP20-08",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": false,
+      "approvalScope": "EDITORIAL_CLOSURE_CONDITIONAL_ALL_CI_GREEN_NO_MERGE_PR43_DRAFT"
     }
   ],
   "sourcePaths": [
@@ -1064,5 +1065,33 @@
       "min": 0,
       "max": 60
     }
+  },
+  "editorialClosure": {
+    "decisionId": "DAR-DP20-08",
+    "selectedOption": "A",
+    "approvedDate": "2026-11-11",
+    "approvalStatus": "APPROVED_CONDITIONAL_CI",
+    "closureScope": "EDITORIAL_AUTHORSHIP_ONLY",
+    "requiredWorkflowFamilies": [
+      "Darovan D.P20 Veldora authoring validation",
+      "Darovan static regression D01-D12",
+      "Darovan DP13 physical territory checks",
+      "Darovan D.P14–D.P18 documentation contracts"
+    ],
+    "ciCondition": "ALL_FOUR_WORKFLOW_FAMILIES_GREEN_ON_FINAL_HEAD",
+    "ciCertifiedInRepositoryData": false,
+    "requiredCiPlatforms": [
+      "windows-2022",
+      "ubuntu-24.04"
+    ],
+    "prNumber": 43,
+    "prMustRemainDraft": true,
+    "mergeAuthorized": false,
+    "requiresNewExplicitAuthorPermissionToMerge": true,
+    "physicalCityCompleted": false,
+    "coreRpgIntegrated": false,
+    "godotIntegrated": false,
+    "materializedWorldState": false,
+    "nextPhase": "D.P21_TARAMIN_NOT_STARTED"
   }
 }

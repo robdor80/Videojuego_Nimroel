@@ -1,6 +1,6 @@
 # D.P20 — Veldora, ciudad mercantil vivida
 
-**Fecha:** 11/11/2026 · **Estado:** APROBACIÓN PARCIAL (DAR-DP20-01 A: nombres populares; DAR-DP20-02 B: personalidad tradicional y gremial; DAR-DP20-03 B: doce establecimientos previstos; DAR-DP20-04 A: diez biografías base; DAR-DP20-05 A: cuatro recuerdos personales; DAR-DP20-06 A: cuatro arcos condicionales futuros; DAR-DP20-07 A: procedimiento de cartografía desde el mapa autorizado); decisión 08 pendiente · **Integración en CoreRPG/Godot:** NO.
+**Fecha:** 11/11/2026 · **Estado:** APROBACIÓN PARCIAL (DAR-DP20-01 A: nombres populares; DAR-DP20-02 B: personalidad tradicional y gremial; DAR-DP20-03 B: doce establecimientos previstos; DAR-DP20-04 A: diez biografías base; DAR-DP20-05 A: cuatro recuerdos personales; DAR-DP20-06 A: cuatro arcos condicionales futuros; DAR-DP20-07 A: procedimiento de cartografía desde el mapa autorizado; DAR-DP20-08 A: cierre editorial condicionado a CI verde y PR Draft sin fusionar); cierre editorial aprobado por DAR-DP20-08 A, condicionado a CI verde del HEAD final · **Integración en CoreRPG/Godot:** NO.
 
 Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de puertos ni ampliación automática de D.P16. Su materia prima es el canon de Norgard/D07–D10 y D.P13, y el anteproyecto D.P16. La PR aporta autoría urbana, negocios, personas posibles, relaciones, escenas y obligaciones de implementación; **integra al canon seis nombres populares, el carácter cultural, doce objetivos futuros de establecimientos, diez biografías base y cuatro recuerdos personales; las instancias físicas de personas y locales, la geometría y la ejecución de los cuatro arcos narrativos siguen pendientes**.
 
@@ -31,6 +31,7 @@ Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de p
 - **AUTHORED_PERSONAL_MEMORY (DAR-DP20-05 A):** M1 promesa incompleta (Liria), M2 error de copia (Edris), M3 reparación apresurada (Naia), M4 ración prestada (Fenra). Son **recuerdos privados**, sin fechas, crónicas públicas ni sucesos de WorldState.
 - **AUTHORED_FUTURE_CONDITIONAL_ARC (DAR-DP20-06 A):** H01–H04 como diseños de historias futuras condicionales; sin misiones activas, NPC, bienes ni WorldState instanciados.
 - **APPROVED_CARTOGRAPHY_PROCESS (DAR-DP20-07 A):** conservar el canon editorial y realizar cartografía física solo a partir del mapa autorizado y nuevas decisiones expresas sobre datos desconocidos. **Ninguna geometría ha sido creada o deducida**.
+- **APPROVED_EDITORIAL_CLOSURE_CONDITIONAL_CI (DAR-DP20-08 A):** decisiones 01–08 aprobadas; cierre editorial **solo tras CI verde del HEAD final**. **PR #43 abierta y Draft, sin fusionar**, salvo nueva autorización del autor.
 
 ## Semántica de autoridad
 

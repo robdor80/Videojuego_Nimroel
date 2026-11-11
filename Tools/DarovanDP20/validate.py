@@ -20,8 +20,9 @@ def invariant(d, check_files=True):
     req(d["schemaVersion"] == 1 and d["version"] == "0.1.0", "schema version")
     req(d["documentId"] == "darovan_dp20_veldora_city_authorship_proposals_v0.1", "document id")
     req(d["phase"] == "D.P20" and d["cityId"] == "veldora" and d["cityKind"] == "canonical_city_manual_reference", "scope")
-    req(d["status"] == "MIXED_AUTHORED_DP20_01_02_03_04_05_06_PROCESS07_APPROVED_08_PENDING" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
+    req(d["status"] == "EDITORIAL_CLOSURE_APPROVED_CI_REQUIRED_PR_DRAFT" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
     req(d["createsWorldStateEntities"] is False and d["externalCustomsFacilityCreated"] is False and d["privateRoyalArmyCreated"] is False, "no instances")
+    req(d["editorialClosure"]=={"decisionId":"DAR-DP20-08","selectedOption":"A","approvedDate":"2026-11-11","approvalStatus":"APPROVED_CONDITIONAL_CI","closureScope":"EDITORIAL_AUTHORSHIP_ONLY","requiredWorkflowFamilies":["Darovan D.P20 Veldora authoring validation","Darovan static regression D01-D12","Darovan DP13 physical territory checks","Darovan D.P14–D.P18 documentation contracts"],"ciCondition":"ALL_FOUR_WORKFLOW_FAMILIES_GREEN_ON_FINAL_HEAD","ciCertifiedInRepositoryData":False,"requiredCiPlatforms":["windows-2022","ubuntu-24.04"],"prNumber":43,"prMustRemainDraft":True,"mergeAuthorized":False,"requiresNewExplicitAuthorPermissionToMerge":True,"physicalCityCompleted":False,"coreRpgIntegrated":False,"godotIntegrated":False,"materializedWorldState":False,"nextPhase":"D.P21_TARAMIN_NOT_STARTED"}, "editorial closure conditional CI, no merger or runtime")
     req(d["approvedCartographyProcess"]=={"decisionId":"DAR-DP20-07","selectedOption":"A","approvalDate":"2026-11-11","processStatus":"APPROVED_NOT_EXECUTED","sourcePolicy":"AUTHOR_AUTHORIZED_MAP_ONLY","preserveExistingEditorialCanon":True,"requireSeparateAuthorDecisionForUnknownGeometry":True,"inventGeometry":False,"createsPhysicalMap":False,"createsStreets":False,"createsDocks":False,"createsBridges":False,"createsRiverPort":False,"createsBuildings":False,"createsTravelRouteMetrics":False,"altitudinalUrbanReferenceMetersApprox":{"min":0,"max":60}}, "cartography process approved, no made-up geometry")
     c=d["canonClaims"]
     req(c["principalCommercialPortOfNorgard"] is True and c["gulf"] == "Golfo de Veldora", "canonical commercial role")
@@ -96,6 +97,8 @@ def invariant(d, check_files=True):
             req(x=={"id":"DAR-DP20-06","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"FOUR_FUTURE_CONDITIONAL_NARRATIVE_ARCS_ONLY_NOT_IMPLEMENTED_NOT_TRIGGERED"}, "exact future narrative approval")
         elif i==7:
             req(x=={"id":"DAR-DP20-07","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":False,"approvalScope":"AUTHOR_MAP_BASED_FUTURE_CARTOGRAPHY_NO_GEOMETRY_CREATED"}, "future cartography decision must not create a map")
+        elif i==8:
+            req(x=={"id":"DAR-DP20-08","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":False,"approvalScope":"EDITORIAL_CLOSURE_CONDITIONAL_ALL_CI_GREEN_NO_MERGE_PR43_DRAFT"}, "final closure authorized conditional CI only")
         else:
             req(x=={"id":"DAR-DP20-"+str(i).zfill(2),"status":"PENDING_AUTHOR","selectedOption":None,"approvedDate":None,"canonPromotion":False}, "unauthorized other decision")
     req(all(v is False for v in d["runtime"].values()) and d["nextPhase"]=="D.P21_TARAMIN_NOT_STARTED", "scope isolation")
@@ -146,7 +149,14 @@ def mutation_tests(d):
         ("memory approval changed",lambda x:x["authorDecisions"][4].update(selectedOption="B")),
         ("approved arc option changed",lambda x:x["authorDecisions"][5].update(selectedOption="B")),
         ("approved cartography changed",lambda x:x["authorDecisions"][6].update(selectedOption="B")),
-        ("other decision prematurely selected",lambda x:x["authorDecisions"][7].update(selectedOption="A")),
+        ("editorial closure option altered",lambda x:x["authorDecisions"][7].update(selectedOption="B")),
+        ("closure marked certified without external CI",lambda x:x["editorialClosure"].update(ciCertifiedInRepositoryData=True)),
+        ("merge permission fabricated",lambda x:x["editorialClosure"].update(mergeAuthorized=True)),
+        ("draft lost",lambda x:x["editorialClosure"].update(prMustRemainDraft=False)),
+        ("CI requirement bypassed",lambda x:x["editorialClosure"].update(ciCondition="IGNORED")),
+        ("physical city falsely completed",lambda x:x["editorialClosure"].update(physicalCityCompleted=True)),
+        ("coreRpg falsely integrated",lambda x:x["editorialClosure"].update(coreRpgIntegrated=True)),
+        ("closure workflow omitted",lambda x:x["editorialClosure"]["requiredWorkflowFamilies"].pop()),
         ("cartography invented",lambda x:x["approvedCartographyProcess"].update(inventGeometry=True)),
         ("cartography creates streets",lambda x:x["approvedCartographyProcess"].update(createsStreets=True)),
         ("cartography creates new docks",lambda x:x["approvedCartographyProcess"].update(createsDocks=True)),
@@ -200,4 +210,4 @@ if __name__=="__main__":
     d=read(DATA); invariant(d)
     n=mutation_tests(d)
     print(f"PASS D.P20: integral contract and {n} adverse mutations; source files and chapters verified.")
-    print("DOCUMENTARY ONLY: seven decisions approved (six editorial and one cartographic process); no physical map, routes, buildings, NPC, missions or WorldState.")
+    print("DOCUMENTARY ONLY: all eight decisions approved; editorial closure conditional to external green CI, PR #43 Draft and not merged; no physical map, NPC, missions or WorldState.")

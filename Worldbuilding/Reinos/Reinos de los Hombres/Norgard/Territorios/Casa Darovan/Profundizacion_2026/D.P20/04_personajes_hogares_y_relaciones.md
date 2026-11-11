@@ -80,4 +80,4 @@
 
 Para materializar N01–N10 será necesario crear EntityId de persona, nombre aprobado, autorización de existencia, hogar legal, posiciones, objetos realmente poseídos, relación de empleo, conocimiento individual, intereses, memoria y límites. Ni estos nombres ni los lugares citados se importan por un constructor procedural al iniciar partida.
 
-**Salida editorial:** diez nombres y biografías **aprobados como base canónica**, con conflictos propios y siete conexiones dramáticas como propuestas de implementación, **sin crear entidades jugables ni afirmar que sus relaciones o acontecimientos hayan sucedido en WorldState**. La resolución exacta está registrada en [08](08_decisiones_autorales.md).
+**Salida editorial:** diez nombres y biografías **aprobados como base canónica** por DAR-DP20-04 A, con conflictos propios y siete conexiones dramáticas como propuestas de implementación; los recuerdos biográficos M01–M04 están aprobados por DAR-DP20-05 A, sin crear entidades jugables ni afirmar que las relaciones o los arcos H01–H04 se hayan ejecutado en WorldState. La resolución exacta está registrada en [08](08_decisiones_autorales.md).

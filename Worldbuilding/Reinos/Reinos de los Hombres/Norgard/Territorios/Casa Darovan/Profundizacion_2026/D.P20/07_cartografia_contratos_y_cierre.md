@@ -1,6 +1,6 @@
 # D.P20 — Veldora: puertas de cartografía, integración y aceptación
 
-**Estado:** decisiones autorales DAR-DP20-01 A, 02 B, 03 B, 04 A, 05 A y 06 A **registradas**, con aprobaciones únicamente editoriales. **DAR-DP20-07 A ha quedado aprobada como decisión de proceso:** se conserva el canon editorial y se elaborará la cartografía física futura desde el mapa autorizado, sin geometrías supuestas. DAR-DP20-08 permanece **PROPOSAL_PENDING_AUTHOR**. Especificación de futura producción **sin malla de terreno, callejero ni runtime**. P18-G01, G07, G09, G10 y G12 continúan abiertos en su dimensión material/autoría hasta resolución efectiva. La calidad de esta entrega no se mide por fingir polígonos.
+**Estado:** decisiones autorales DAR-DP20-01 A, 02 B, 03 B, 04 A, 05 A y 06 A **registradas**, con aprobaciones únicamente editoriales. **DAR-DP20-07 A ha quedado aprobada como decisión de proceso:** se conserva el canon editorial y se elaborará la cartografía física futura desde el mapa autorizado, sin geometrías supuestas. **DAR-DP20-08 A aprobada:** cierre editorial condicionado a la totalidad de la CI verde sobre el HEAD final; la PR #43 permanece Draft sin fusionar hasta nueva orden. Especificación de futura producción **sin malla de terreno, callejero ni runtime**. P18-G01, G07, G09, G10 y G12 continúan abiertos en su dimensión material/autoría hasta resolución efectiva. La calidad de esta entrega no se mide por fingir polígonos.
 
 ## Qué tenemos y qué falta
 
@@ -28,6 +28,12 @@ Cada persona aprobada requerirá: id persistente, hogar/ocupación posibles, eda
 
 Cada operación con un lote requerirá: id único, titular, custodio, calidad/estado, volumen real, origen declarado vs verificado, restricciones aduaneras exteriores, intentos idempotentes, transacciones atómicas y guardado. **La aduana no se ejecuta** hasta disponer de procedimientos en Core/Norgard.
 
+## Cierre editorial condicionado a CI — DAR-DP20-08 A
+
+**Autorización del autor (11/11/2026):** el inventario, las decisiones 01–08 y el contenido literario pueden darse por editorialmente terminados **solo si** el HEAD final de la PR #43 supera las validaciones D.P20 en Windows/Linux y las regresiones D01–D12, D.P13 y D.P14–D.P18 pertinentes. La aprobación del cierre **no autoriza la fusión** de la PR, que permanece Draft.
+
+**Deuda preservada:** cartografía urbana georreferenciada, parcelas, accesos, edificios, propietarios, capacidad, recursos, NPC, hogares, relaciones persistentes, ejecución de los arcos y la integración CoreRPG/Godot. Los documentos aprobados son contratos editoriales para tareas futuras, no prueba de simulación real.
+
 ## Aceptación editorial: ocho preguntas con respuesta concreta
 
 1. ¿Reconocemos a Veldora sin llamarla «puerto genérico»? **Sí:** custodia, inspección real y comercio urbano repartido, con casos humanos.
@@ -48,6 +54,6 @@ Cada operación con un lote requerirá: id único, titular, custodio, calidad/es
 - **P18-G12:** ingeniería de CoreRPG + Godot pendiente.
 - **Nueva dependencia:** localizar e instanciar en fases posteriores **solo** entidades aprobadas y físicamente justificadas. Los seis nombres populares, doce negocios futuros, diez biografías base y cuatro arcos condicionales ya tienen aprobación editorial; el procedimiento cartográfico DAR-DP20-07 A está aprobado sin geometría, y falta decidir el cierre DAR-DP20-08.
 
-**Resultado que puede certificarse con esta PR:** entrega de autoría profunda, trazabilidad del canon, validador de inventario y CI. **Resultado que NO puede certificarse:** ciudad física, simulación en vivo, población por hogar, personajes en juego o equivalencia cartográfica con Treskal.
+**Resultado que puede certificarse con esta PR solo tras CI verde del HEAD final:** entrega editorial aprobada, trazabilidad de las ocho decisiones, validador de inventario y regresiones documentales. **Resultado que NO puede certificarse:** ciudad física, simulación en vivo, población por hogar, personajes en juego o equivalencia cartográfica con Treskal.
 
 **Siguiente fase reservada:** D.P21 Taramin. Ningún fichero D01–D12, D.P13–D.P18, ContentPacks ni CoreRPG se modifica por este paquete.
