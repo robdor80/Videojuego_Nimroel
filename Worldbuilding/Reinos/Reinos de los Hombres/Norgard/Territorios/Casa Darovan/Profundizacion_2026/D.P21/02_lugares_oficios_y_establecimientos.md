@@ -1,8 +1,8 @@
 # D.P21 — Taramin: doce lugares que podrían sostener vidas distintas
 
-**Estado de TAR-L01–L12: PROPOSAL_PENDING_AUTHOR.** Son objetivos de autoría, no instalaciones existentes. Las actividades generales pesqueras y portuarias sí proceden del canon; **ninguno de estos nombres acredita un establecimiento activo, un solar, un dueño, una plantilla ni existencias**.
+**TAR-DP21-03 A, 11/11/2026: APROBADOS TAR-L01–L12 como AUTHORED_FUTURE_OBJECTIVE (nombres y funciones).** Los nombres y funciones son objetivos canónicos futuros, **no instalaciones existentes**. La materialización física de cada establecimiento, su ubicación, personal, actividad, propiedad, inventario y asociación espacial siguen en **PROPOSAL_PENDING_AUTHOR**. Las actividades generales pesqueras y portuarias sí proceden del canon; **ninguno de estos nombres acredita un establecimiento activo, un solar, un dueño, una plantilla ni existencias**.
 
-| ID | Nombre propuesto | Función prevista | Vínculo editorial propuesto |
+| ID | Nombre aprobado como objetivo futuro | Función futura aprobada | Vínculo editorial propuesto |
 | --- | --- | --- | --- |
 | TAR-L01 | **Casa del Cabo Zurcido** | Reparación manual de cuerdas y útiles | TAR-U02 |
 | TAR-L02 | **El Peso de la Sal** | Verificación pactada de peso, calidad y conservación de lotes | TAR-U01 |
@@ -31,6 +31,6 @@ No se presupone que una estancia privada tenga capacidad infinita, agua limpia, 
 
 ## Obligaciones para la futura implementación
 
-Cada lugar, **solo si se aprueba y se construye**, exigirá identidad estable, fuente de titularidad, emplazamiento aprobado, espacio accesible, inventario finito, responsables reales, horarios causales, permisos y persistencia. Lugares propuestos no pueden activar NPC ni misiones por sí solos. Los enlaces TAR-U son asociaciones temáticas, **no coordenadas**.
+Cada lugar, **solo si posteriormente se autoriza y materializa**, exigirá identidad estable, fuente de titularidad, emplazamiento aprobado, espacio accesible, inventario finito, responsables reales, horarios causales, permisos y persistencia. Lugares propuestos no pueden activar NPC ni misiones por sí solos. Los enlaces TAR-U son asociaciones temáticas, **no coordenadas**.
 
-**Decisión TAR-DP21-03 pendiente:** validar todos, una selección o ningún nombre. Se prohíbe heredar nombres y funciones de Veldora para completar huecos.
+**Decisión TAR-DP21-03 A aprobada:** se conservan los doce nombres y funciones como objetivos editoriales futuros. **No se han construido establecimientos ni generado entidades de mundo.** Se prohíbe heredar nombres y funciones de Veldora para completar huecos.

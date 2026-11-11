@@ -5,7 +5,7 @@
   "date": "2026-11-11",
   "phase": "D.P21",
   "cityId": "taramin",
-  "status": "PARTIAL_AUTHOR_APPROVAL_NAMES_AND_CITY_CHARACTER",
+  "status": "PARTIAL_AUTHOR_APPROVAL_NAMES_CHARACTER_FUTURE_ESTABLISHMENTS",
   "authorApprovalRecorded": true,
   "addsCanon": true,
   "createsWorldStateEntities": false,
@@ -54,7 +54,95 @@
     "approvedCityCharacter": "PRAGMATICA_MARINERA_PLURAL",
     "approvedCityCharacterOption": "A",
     "cityCharacterDoesNotReduceResidentsToFishing": true,
-    "cityCharacterCreatesNewLegalOrGuildInstitutions": false
+    "cityCharacterCreatesNewLegalOrGuildInstitutions": false,
+    "approvedFutureEstablishments": [
+      {
+        "id": "TAR-L01",
+        "name": "Casa del Cabo Zurcido",
+        "purpose": "reparacion_cabos",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L02",
+        "name": "El Peso de la Sal",
+        "purpose": "verificacion_calidad",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L03",
+        "name": "Despensa de las Dos Vasijas",
+        "purpose": "preparacion_alimentos",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L04",
+        "name": "Taller del Aro Partido",
+        "purpose": "reparacion_recipientes",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L05",
+        "name": "Patio de las Tinajas Quietas",
+        "purpose": "almacenaje_agua_condicionado",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L06",
+        "name": "Mesa del Cordel Corto",
+        "purpose": "acuerdos_pequena_escala",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L07",
+        "name": "La Hoja y el Anzuelo",
+        "purpose": "herramientas_manuales",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L08",
+        "name": "Fogón de Bruma",
+        "purpose": "comida_y_reunion",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L09",
+        "name": "Escribanía del Trato Llano",
+        "purpose": "copia_de_acuerdos_privados",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L10",
+        "name": "El Nudo de Regreso",
+        "purpose": "noticias_no_verificadas",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L11",
+        "name": "Cestas de la Tierra Ocre",
+        "purpose": "intercambio_interior",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      },
+      {
+        "id": "TAR-L12",
+        "name": "El Telar de las Horas",
+        "purpose": "textiles",
+        "status": "AUTHORED_FUTURE_OBJECTIVE",
+        "materialized": false
+      }
+    ],
+    "futureEstablishmentsArePhysicalEntities": false,
+    "futureEstablishmentApprovalCreatesNewPortOrWaterInfrastructure": false
   },
   "lockedUnknowns": {
     "actualCityPolygon": null,
@@ -189,7 +277,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L02",
@@ -205,7 +296,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L03",
@@ -221,7 +315,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L04",
@@ -237,7 +334,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L05",
@@ -253,7 +353,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L06",
@@ -269,7 +372,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L07",
@@ -285,7 +391,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L08",
@@ -301,7 +410,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L09",
@@ -317,7 +429,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L10",
@@ -333,7 +448,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L11",
@@ -349,7 +467,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     },
     {
       "id": "TAR-L12",
@@ -365,7 +486,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalFutureObjective": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_TAR_DP21_03_A",
+      "futureNameAndPurposeApproved": true
     }
   ],
   "proposedPeople": [
@@ -727,10 +851,11 @@
     },
     {
       "id": "TAR-DP21-03",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "TWELVE_NAMED_ESTABLISHMENT_FUTURE_OBJECTIVES_ONLY_NO_PHYSICAL_MATERIALIZATION"
     },
     {
       "id": "TAR-DP21-04",
