@@ -29,3 +29,7 @@
 Para cada geometría futura se exige: `canonicalAnchor`, `sourcePath`, `coordinateSystem`, `geometryEvidence`, `rights`, `validatedAgainstHydrology`, `authoredOrGeneratedProvenance`. Sin ellos no se promueve ninguna celda a canon físico de juego.
 
 Los mapas urbanos detallados de Veldora/Taramin/Syvaris continúan pendientes de decisión autoral y cartografía; los de Treihord han de respetar el diseño base canónico, no sustituirlo.
+
+## Reserva conservada tras el rescate — 11/11/2026
+
+Las escenas nuevas de D.P14–D.P17 **no aportan mapa métrico, DEM, coordenadas ni conectividad**. Las precondiciones de esta página siguen vigentes. El dictamen de cierre de las cinco fases de **diseño documental** está en [D.P18/03](03_cierre_editorial_real_y_traspaso_DP20.md).
