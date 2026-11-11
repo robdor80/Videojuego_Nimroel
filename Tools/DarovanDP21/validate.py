@@ -13,7 +13,7 @@ def req(cond,msg):
     if not cond: raise AssertionError(msg)
 
 def validate(d, files=True):
-    req((d["phase"],d["cityId"],d["status"]) == ("D.P21","taramin","PARTIAL_AUTHOR_APPROVAL_POPULAR_NAMES_ONLY"),"wrong phase/state")
+    req((d["phase"],d["cityId"],d["status"]) == ("D.P21","taramin","PARTIAL_AUTHOR_APPROVAL_NAMES_AND_CITY_CHARACTER"),"wrong phase/state")
     req(d["authorApprovalRecorded"] is True and d["addsCanon"] is True and d["createsWorldStateEntities"] is False,"limited author approval")
     c=d["canonClaims"]
     exact={
@@ -30,7 +30,11 @@ def validate(d, files=True):
       "darovanOwnNavy":False,"externalCustomsAuthorityTransferredFromVeldora":False,
       "riverNavigabilityConfirmed":False,"bridgeKnown":False,
       "approvedPopularAreaNames":["Voces de la Marea","El Patio de los Remiendos","Sombras de la Cal","Las Cuentas Secas","La Voz del Thalen","Los Oficios de Tierra"],
-      "approvedPopularAreaNamesDoNotDefineDistricts":True}
+      "approvedPopularAreaNamesDoNotDefineDistricts":True,
+      "approvedCityCharacter":"PRAGMATICA_MARINERA_PLURAL",
+      "approvedCityCharacterOption":"A",
+      "cityCharacterDoesNotReduceResidentsToFishing":True,
+      "cityCharacterCreatesNewLegalOrGuildInstitutions":False}
     req(c==exact,"protected canon altered")
     req(len(d["lockedUnknowns"])>=30 and all(v is None for v in d["lockedUnknowns"].values()),"invented unknown")
     ids={}
@@ -69,9 +73,12 @@ def validate(d, files=True):
             and len(e["personRefs"])>=2 and set(e["personRefs"])<=ids["proposedPeople"],"scene made real")
     req(d["authorDecisions"]==[{"id":"TAR-DP21-01","status":"APPROVED","selectedOption":"A",
          "approvedDate":"2026-11-11","canonPromotion":True,
-         "approvalScope":"SIX_POPULAR_NAMES_NO_OFFICIAL_DISTRICTS_NO_GEOMETRY"}]
+         "approvalScope":"SIX_POPULAR_NAMES_NO_OFFICIAL_DISTRICTS_NO_GEOMETRY"},
+         {"id":"TAR-DP21-02","status":"APPROVED","selectedOption":"A",
+          "approvedDate":"2026-11-11","canonPromotion":True,
+          "approvalScope":"PRAGMATIC_MARITIME_PLURAL_CITY_CHARACTER_NO_NEW_LAWS_OR_INSTITUTIONS"}]
          + [{"id":f"TAR-DP21-{i:02d}","status":"PENDING_AUTHOR","selectedOption":None,
-             "approvedDate":None,"canonPromotion":False} for i in range(2,9)],"approvals forged")
+             "approvedDate":None,"canonPromotion":False} for i in range(3,9)],"approvals forged")
     req(all(v is False for v in d["runtime"].values()) and d["nextPhase"]=="D.P22_SYVARIS_NOT_STARTED","runtime created")
     req(d["editorialClosure"]=={"authorDecisionId":"TAR-DP21-08","closureApproved":False,
           "ciCertifiedInData":False,"mergeAuthorized":False,"prMustRemainDraft":True,
@@ -158,7 +165,14 @@ def mutation_test(d):
       ("decision",lambda x:x["authorDecisions"][0].update(selectedOption="B")),
       ("decisionstatus",lambda x:x["authorDecisions"][0].update(status="PENDING_AUTHOR")),
       ("decision_scope",lambda x:x["authorDecisions"][0].update(approvalScope="SIX_OFFICIAL_DISTRICTS")),
-      ("another_decision",lambda x:x["authorDecisions"][1].update(status="APPROVED")),
+      ("second_decision_option",lambda x:x["authorDecisions"][1].update(selectedOption="B")),
+      ("second_decision_status",lambda x:x["authorDecisions"][1].update(status="PENDING_AUTHOR")),
+      ("second_decision_scope",lambda x:x["authorDecisions"][1].update(approvalScope="CREATES_NEW_GUILD")),
+      ("city_character_changed",lambda x:x["canonClaims"].update(approvedCityCharacter="GREMIAL")), 
+      ("city_character_option_changed",lambda x:x["canonClaims"].update(approvedCityCharacterOption="B")),
+      ("all_fishers",lambda x:x["canonClaims"].update(cityCharacterDoesNotReduceResidentsToFishing=False)),
+      ("invented_institutions",lambda x:x["canonClaims"].update(cityCharacterCreatesNewLegalOrGuildInstitutions=True)),
+      ("another_decision",lambda x:x["authorDecisions"][2].update(status="APPROVED")),
       ("ci",lambda x:x["editorialClosure"].update(ciCertifiedInData=True)),
       ("merge",lambda x:x["editorialClosure"].update(mergeAuthorized=True)),
       ("draft",lambda x:x["editorialClosure"].update(prMustRemainDraft=False)),
@@ -174,4 +188,4 @@ def mutation_test(d):
 if __name__=="__main__":
     d=read(DATA);validate(d)
     print("D.P21 Taramin CONTRACT PASS; negative mutations rejected:",mutation_test(d))
-    print("PARTIAL AUTHOR APPROVAL: six popular names only; no official districts, geometry, runtime or merge.")
+    print("PARTIAL AUTHOR APPROVAL: six popular names and pragmatic maritime plural cultural character; no new institutions, official districts, geometry, runtime or merge.")

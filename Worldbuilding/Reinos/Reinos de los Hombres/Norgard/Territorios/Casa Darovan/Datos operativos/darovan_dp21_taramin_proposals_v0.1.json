@@ -5,7 +5,7 @@
   "date": "2026-11-11",
   "phase": "D.P21",
   "cityId": "taramin",
-  "status": "PARTIAL_AUTHOR_APPROVAL_POPULAR_NAMES_ONLY",
+  "status": "PARTIAL_AUTHOR_APPROVAL_NAMES_AND_CITY_CHARACTER",
   "authorApprovalRecorded": true,
   "addsCanon": true,
   "createsWorldStateEntities": false,
@@ -50,7 +50,11 @@
       "La Voz del Thalen",
       "Los Oficios de Tierra"
     ],
-    "approvedPopularAreaNamesDoNotDefineDistricts": true
+    "approvedPopularAreaNamesDoNotDefineDistricts": true,
+    "approvedCityCharacter": "PRAGMATICA_MARINERA_PLURAL",
+    "approvedCityCharacterOption": "A",
+    "cityCharacterDoesNotReduceResidentsToFishing": true,
+    "cityCharacterCreatesNewLegalOrGuildInstitutions": false
   },
   "lockedUnknowns": {
     "actualCityPolygon": null,
@@ -715,10 +719,11 @@
     },
     {
       "id": "TAR-DP21-02",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "PRAGMATIC_MARITIME_PLURAL_CITY_CHARACTER_NO_NEW_LAWS_OR_INSTITUTIONS"
     },
     {
       "id": "TAR-DP21-03",

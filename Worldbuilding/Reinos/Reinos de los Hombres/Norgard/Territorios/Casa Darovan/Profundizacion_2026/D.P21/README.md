@@ -1,6 +1,6 @@
 # D.P21 — Taramin: ciudad pesquera e interfluvial vivida
 
-**Fecha:** 11/11/2026 · **Estado:** TAR-DP21-01 A APROBADA (seis nombres populares); TAR-DP21-02–08 PENDIENTES · **Implementación:** ninguna. Las fases anteriores están fusionadas en main antes de esta rama. **Esta PR debe permanecer Draft hasta aprobación editorial, CI y autorización separada de fusión.**
+**Fecha:** 11/11/2026 · **Estado:** TAR-DP21-01 A (nombres) y TAR-DP21-02 A (carácter cultural) APROBADAS; TAR-DP21-03–08 PENDIENTES · **Implementación:** ninguna. Las fases anteriores están fusionadas en main antes de esta rama. **Esta PR debe permanecer Draft hasta aprobación editorial, CI y autorización separada de fusión.**
 
 Esta fase es **autoría urbana específica**, no repetición de las matrices D.P16 ni clonación de Veldora D.P20. El coste del tiempo, la calidad de lo perecedero, el agua y el derecho a una vida distinta al oficio familiar configuran una experiencia propia. Taramin existe canónicamente; los lugares y personas aquí nombrados **aún no**.
 
@@ -25,8 +25,8 @@ Esta fase es **autoría urbana específica**, no repetición de las matrices D.P
 - Población **14.000–20.000**, no cifra exacta; núcleo principal **0–40 m**, no altimetría de calles.
 - Norte/centro peninsular semiáridos con colinas características **300–600 m**, y un solo Bosque de Taramin al sur; sin talas industriales deducidas.
 - Justicia del Rey y seguridad ordinaria; ninguna aduana mercantil principal trasladada de Veldora ni Armada Real de Syvaris.
-- Los **seis nombres TAR-U01–TAR-U06 son canónicos exclusivamente como denominaciones populares** por TAR-DP21-01 A. Los ámbitos físicos, establecimientos TAR-L, personas TAR-N, memorias TAR-M y arcos TAR-H siguen pendientes; escenas TAR-E son TEST_ONLY. **No** hay barrios oficiales, edificios, NPC, hogares, misiones, cronologías, rutas ni WorldState nuevos.
+- **TAR-DP21-02 A: Taramin es pragmática, marinera y plural**, sin personalidad colectiva obligatoria ni nuevas leyes o instituciones. Los **seis nombres TAR-U01–TAR-U06 son canónicos exclusivamente como denominaciones populares** por TAR-DP21-01 A. Los ámbitos físicos, establecimientos TAR-L, personas TAR-N, memorias TAR-M y arcos TAR-H siguen pendientes; escenas TAR-E son TEST_ONLY. **No** hay barrios oficiales, edificios, NPC, hogares, misiones, cronologías, rutas ni WorldState nuevos.
 
-**Decisiones:** [08](08_decisiones_autorales.md). No convertir las decisiones 02–08 en APPROVED sin respuesta expresa del autor. Si se aprueban parcialmente, actualizar solo el alcance aprobado y validar otra vez sobre el HEAD final. Ningún pase de tests constituye aprobación de lore.
+**Decisiones:** [08](08_decisiones_autorales.md). No convertir las decisiones 03–08 en APPROVED sin respuesta expresa del autor. Si se aprueban parcialmente, actualizar solo el alcance aprobado y validar otra vez sobre el HEAD final. Ningún pase de tests constituye aprobación de lore.
 
 **Próxima ciudad:** D.P22 Syvaris, solamente después de resolver esta fase.

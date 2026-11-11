@@ -1,10 +1,14 @@
 # D.P21 — Taramin: la ciudad que vive pendiente de lo que llega
 
-**Naturaleza:** autoría urbana profunda, **APROBACIÓN PARCIAL TAR-DP21-01 A: seis nombres populares únicamente**; el resto del lore sigue pendiente del autor. Fecha de creación: 11/11/2026. No es plano aprobado ni localización física de entidades.
+**Naturaleza:** autoría urbana profunda, **APROBACIÓN PARCIAL TAR-DP21-01 A (seis nombres populares) y TAR-DP21-02 A (carácter cultural pragmático, marinero y plural)**; el resto del lore sigue pendiente del autor. Fecha de creación: 11/11/2026. No es plano aprobado ni localización física de entidades.
 
 ## Lo que ya es canon
 
 Taramin es una ciudad pesquera y costera/fluvial de Casa Darovan, en el suroeste peninsular de Norgard, entre **los dos brazos terminales del único río Thalen**, cuya desembocadura se vincula al **Golfo de Norgard**. Tiene un **puerto pesquero existente** en su identidad visual; la pesca marítima y fluvial, productos marinos y aceites forman su economía característica. D07, decisión DAR-D07-02 A, fija **una zona principal** para concentrar conceptualmente el trabajo pesquero, pero **no autoriza emplazar un muelle nuevo ni elegir un brazo navegable**. D08 fija **14.000–20.000 habitantes** como intervalo, no censo; D.P13 establece **0–40 m** para el núcleo urbano principal, no para cada calle. Norte y centro de la península: transición semiárida, colinas ocres/pedregales y relieves característicos de **300–600 m**; bosque meridional de Taramin único, no maderera industrial. D09 somete la ciudad a seguridad ordinaria y Justicia del Rey; D10 exige diversidad de medios de vida y personalidades.
+
+## Identidad cultural aprobada — TAR-DP21-02 A (11/11/2026)
+
+Taramin tiene personalidad **pragmática, marinera y plural**. Importan el trabajo bien hecho, los acuerdos cumplidos, el reconocimiento de quienes cuidan y la colaboración cotidiana. El producto perecedero y la pesca influyen en parte del ritmo urbano, pero **no todos sus habitantes trabajan en la pesca ni comparten un único temperamento**. La identidad aprobada no implica pobreza general, superstición colectiva, una cultura uniforme ni jerarquías gremiales impuestas. **No** funda leyes, instituciones, gremios, privilegios ni obligaciones nuevos: las autoridades y reglas de Norgard prevalecen.
 
 ## La idea urbana
 
@@ -41,4 +45,4 @@ Una buena escena debe notar la diferencia entre **lo que realmente se ha captura
 2. **Interfluvio / acceso verificado:** ninguna conversación sobre cruzar un brazo equivale a confirmar un paso.
 3. **Península semiárida / vida cotidiana:** sombra, abastecimiento y saneamiento deben resolverse al construir lugares, pero no se presupone que ya haya infraestructuras físicas.
 
-**Pendiente de decisión:** carácter cultural, funcionamiento y delimitación física de los ámbitos, emplazamientos y mapa. **Solo los seis nombres populares son AUTHORED**; sus entidades, usos y límites espaciales continúan PROPOSAL_PENDING_AUTHOR. Fuentes: D07/D08/D09/D10, D.P13 y D.P16 Taramin.
+**Pendiente de decisión:** funcionamiento y delimitación física de los ámbitos, emplazamientos y mapa. **Son AUTHORED los seis nombres populares y la personalidad cultural pragmática, marinera y plural**. Las entidades, usos y límites espaciales continúan PROPOSAL_PENDING_AUTHOR. Fuentes: D07/D08/D09/D10, D.P13 y D.P16 Taramin.
