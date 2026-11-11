@@ -1,6 +1,6 @@
 # D.P21 — Cartografía responsable, autoridad y traspaso
 
-**Estado de la cartografía propuesta: PROPOSAL_PENDING_AUTHOR.** No hay geometría nueva aprobada ni creada.
+**TAR-DP21-07 A APROBADA (11/11/2026): procedimiento de cartografía autorizado sobre mapa validado, con decisión explícita para incógnitas.** La **PROPUESTA física permanece PENDIENTE**: no se aprueba ni crea geometría, coordenadas, barrios oficiales, cruces del Thalen, calles o instalaciones.
 
 ## Lo que puede representarse ya
 
@@ -31,4 +31,4 @@ Un futuro content pack autoral requerirá registro estable de lugares y personas
 - **Treihord:** ciudad institucional y metalúrgica; no se copian sus barrios canónicos.
 - **Taramin:** existencia del puerto pesquero sí; ubicación física concreta, instalaciones nuevas y navegación del Thalen no.
 
-**Resultado de D.P21:** paquete editorial para decisión autoral y posterior cartografía. La prueba documental no certifica geometría, población simulada ni CoreRPG. Siguiente ciudad D.P22 Syvaris, previa aprobación y cierre de esta fase.
+**Resultado de D.P21:** el método cartográfico está aprobado, no el mapa físico. Todos los datos UNKNOWN siguen null. TAR-DP21-08 A exige CI del HEAD definitivo antes de certificar cierre editorial, siempre con PR Draft sin fusión. La prueba documental no certifica geometría, población simulada ni CoreRPG. Siguiente ciudad D.P22 Syvaris tras cierre editorial.

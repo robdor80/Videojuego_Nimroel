@@ -5,7 +5,7 @@
   "date": "2026-11-11",
   "phase": "D.P21",
   "cityId": "taramin",
-  "status": "PARTIAL_AUTHOR_APPROVAL_NAMES_CHARACTER_ESTABLISHMENTS_BIOGRAPHIES",
+  "status": "AUTHORIAL_DECISIONS_APPROVED_EDITORIAL_CI_GATE",
   "authorApprovalRecorded": true,
   "addsCanon": true,
   "createsWorldStateEntities": false,
@@ -227,7 +227,99 @@
     ],
     "approvedBiographiesDoNotCreateNPCs": true,
     "approvedBiographiesDoNotEstablishRelationships": true,
-    "approvedBiographiesDoNotEstablishPrivateMemories": true
+    "approvedBiographiesDoNotEstablishPrivateMemories": true,
+    "approvedPrivateBiographicalMemories": [
+      {
+        "id": "TAR-M01",
+        "title": "La balanza sin testigos",
+        "characterId": "TAR-N01",
+        "status": "AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY",
+        "eventDate": null,
+        "publicHistoricalEvent": false
+      },
+      {
+        "id": "TAR-M02",
+        "title": "La cuerda que parecía suficiente",
+        "characterId": "TAR-N02",
+        "status": "AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY",
+        "eventDate": null,
+        "publicHistoricalEvent": false
+      },
+      {
+        "id": "TAR-M03",
+        "title": "La comida que se quedó fría",
+        "characterId": "TAR-N03",
+        "status": "AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY",
+        "eventDate": null,
+        "publicHistoricalEvent": false
+      },
+      {
+        "id": "TAR-M04",
+        "title": "La noticia a medias",
+        "characterId": "TAR-N08",
+        "status": "AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY",
+        "eventDate": null,
+        "publicHistoricalEvent": false
+      }
+    ],
+    "approvedPrivateMemoriesAreWorldStateEvents": false,
+    "approvedPrivateMemoriesArePublicChronology": false,
+    "approvedFutureNarrativeArcs": [
+      {
+        "id": "TAR-H01",
+        "title": "La entrega que pierde su tiempo útil",
+        "personRefs": [
+          "TAR-N01",
+          "TAR-N02",
+          "TAR-N07"
+        ],
+        "status": "AUTHORED_CONDITIONAL_NARRATIVE_DESIGN",
+        "implemented": false,
+        "triggered": false
+      },
+      {
+        "id": "TAR-H02",
+        "title": "Dos recipientes y tres necesidades",
+        "personRefs": [
+          "TAR-N03",
+          "TAR-N04",
+          "TAR-N09"
+        ],
+        "status": "AUTHORED_CONDITIONAL_NARRATIVE_DESIGN",
+        "implemented": false,
+        "triggered": false
+      },
+      {
+        "id": "TAR-H03",
+        "title": "El paso que todos conocen de oídas",
+        "personRefs": [
+          "TAR-N05",
+          "TAR-N08",
+          "TAR-N10"
+        ],
+        "status": "AUTHORED_CONDITIONAL_NARRATIVE_DESIGN",
+        "implemented": false,
+        "triggered": false
+      },
+      {
+        "id": "TAR-H04",
+        "title": "Lo que vale una hora ajena",
+        "personRefs": [
+          "TAR-N06",
+          "TAR-N07",
+          "TAR-N01"
+        ],
+        "status": "AUTHORED_CONDITIONAL_NARRATIVE_DESIGN",
+        "implemented": false,
+        "triggered": false
+      }
+    ],
+    "approvedNarrativeArcsInstantiateMissions": false,
+    "approvedNarrativeArcsConfirmRumoredCrossings": false,
+    "approvedCartographyMethod": "AUTHORIZED_MAP_AND_EXPLICIT_NEW_AUTHORIAL_DECISIONS_ONLY",
+    "cartographyApprovalAuthorizesNewGeometry": false,
+    "unknownThalenCrossingsRemainNull": true,
+    "authorialDecisionDelegationAppliesToDP21Only": true
   },
   "lockedUnknowns": {
     "actualCityPolygon": null,
@@ -779,7 +871,9 @@
       "private": true,
       "eventDate": null,
       "publicHistoricalEvent": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "privateBiographicalAntecedentApproved": true,
+      "privateMemoryApproval": "AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY_TAR_DP21_05_A"
     },
     {
       "id": "TAR-M02",
@@ -790,7 +884,9 @@
       "private": true,
       "eventDate": null,
       "publicHistoricalEvent": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "privateBiographicalAntecedentApproved": true,
+      "privateMemoryApproval": "AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY_TAR_DP21_05_A"
     },
     {
       "id": "TAR-M03",
@@ -801,7 +897,9 @@
       "private": true,
       "eventDate": null,
       "publicHistoricalEvent": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "privateBiographicalAntecedentApproved": true,
+      "privateMemoryApproval": "AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY_TAR_DP21_05_A"
     },
     {
       "id": "TAR-M04",
@@ -812,7 +910,9 @@
       "private": true,
       "eventDate": null,
       "publicHistoricalEvent": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "privateBiographicalAntecedentApproved": true,
+      "privateMemoryApproval": "AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY_TAR_DP21_05_A"
     }
   ],
   "proposedConditionalArcs": [
@@ -829,7 +929,9 @@
       "conditional": true,
       "implemented": false,
       "triggered": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "futureNarrativeDesignApproved": true,
+      "arcDesignApproval": "AUTHORED_CONDITIONAL_NARRATIVE_DESIGN_TAR_DP21_06_A"
     },
     {
       "id": "TAR-H02",
@@ -844,7 +946,9 @@
       "conditional": true,
       "implemented": false,
       "triggered": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "futureNarrativeDesignApproved": true,
+      "arcDesignApproval": "AUTHORED_CONDITIONAL_NARRATIVE_DESIGN_TAR_DP21_06_A"
     },
     {
       "id": "TAR-H03",
@@ -859,7 +963,9 @@
       "conditional": true,
       "implemented": false,
       "triggered": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "futureNarrativeDesignApproved": true,
+      "arcDesignApproval": "AUTHORED_CONDITIONAL_NARRATIVE_DESIGN_TAR_DP21_06_A"
     },
     {
       "id": "TAR-H04",
@@ -874,7 +980,9 @@
       "conditional": true,
       "implemented": false,
       "triggered": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "futureNarrativeDesignApproved": true,
+      "arcDesignApproval": "AUTHORED_CONDITIONAL_NARRATIVE_DESIGN_TAR_DP21_06_A"
     }
   ],
   "testOnlyScenes": [
@@ -982,31 +1090,39 @@
     },
     {
       "id": "TAR-DP21-05",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "FOUR_PRIVATE_PERSONAL_BIOGRAPHICAL_ANTECEDENTS_NO_DATES_OR_PUBLIC_EVENTS",
+      "approvedBy": "AUTHOR_EXPRESS_BLANKET_DELEGATION_TAR_DP21_05_TO_08"
     },
     {
       "id": "TAR-DP21-06",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "FOUR_CONDITIONAL_FUTURE_ARC_DESIGNS_NO_MISSIONS_OR_RUNTIME",
+      "approvedBy": "AUTHOR_EXPRESS_BLANKET_DELEGATION_TAR_DP21_05_TO_08"
     },
     {
       "id": "TAR-DP21-07",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "CARTOGRAPHY_ONLY_ON_AUTHORIZED_MAP_WITH_EXPLICIT_DECISIONS_NO_INVENTED_GEOMETRY",
+      "approvedBy": "AUTHOR_EXPRESS_BLANKET_DELEGATION_TAR_DP21_05_TO_08"
     },
     {
       "id": "TAR-DP21-08",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": false,
+      "approvalScope": "EDITORIAL_CLOSURE_WHEN_ALL_AUTHOR_DECISIONS_RECORDED_AND_FINAL_HEAD_CI_GREEN_DRAFT_NO_MERGE",
+      "approvedBy": "AUTHOR_EXPRESS_BLANKET_DELEGATION_TAR_DP21_05_TO_08"
     }
   ],
   "sourcePaths": [
@@ -1041,7 +1157,7 @@
   "nextPhase": "D.P22_SYVARIS_NOT_STARTED",
   "editorialClosure": {
     "authorDecisionId": "TAR-DP21-08",
-    "closureApproved": false,
+    "closureApproved": true,
     "ciCertifiedInData": false,
     "mergeAuthorized": false,
     "prMustRemainDraft": true,
@@ -1049,6 +1165,9 @@
     "requiredCiPlatforms": [
       "ubuntu-24.04",
       "windows-2022"
-    ]
+    ],
+    "approvedCriterion": "ALL_EIGHT_DECISIONS_AND_SUCCESSFUL_CI_ON_FINAL_HEAD",
+    "approvedOn": "2026-11-11",
+    "authorialDelegationAppliedToClosingCriterion": true
   }
 }

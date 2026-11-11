@@ -1,6 +1,6 @@
 # D.P21 — Cuaderno de decisiones del autor: Taramin
 
-**Estado de las decisiones: TAR-DP21-01 A, TAR-DP21-02 A, TAR-DP21-03 A y TAR-DP21-04 A APROBADAS (11/11/2026); TAR-DP21-05–08 PENDIENTES.** La orden de desarrollar la fase autoriza la creación de propuestas, no la elección automática de sus opciones. Los IDs TAR-DP21-01–08 no heredan resoluciones de Veldora. Registro previsto: respuesta del autor, fecha, opción, alcance exacto y transición de estado **solo** para lo aprobado.
+**Estado de las decisiones: TAR-DP21-01–08, LAS OCHO OPCIONES A APROBADAS (11/11/2026).** El autor aprobó personalmente TAR-DP21-01–05 A y delegó expresamente al asistente las recomendaciones restantes TAR-DP21-06–08 A. La delegación es editorial y no autoriza fusionar ni ejecutar contenidos.
 
 ## TAR-DP21-01 · Seis nombres populares de ámbitos
 **A (recomendada):** aceptar «Voces de la Marea», «El Patio de los Remiendos», «Sombras de la Cal», «Las Cuentas Secas», «La Voz del Thalen» y «Los Oficios de Tierra» como nombres populares susceptibles de solapamiento. **B:** mantener los seis solo como conceptos sin aprobar topónimos. **C:** modificar cantidad/nombres. **APROBADA — opción A (11/11/2026).** Los seis nombres TAR-U01–TAR-U06 pasan a ser **AUTHORED como denominaciones populares de ámbitos susceptibles de solaparse**; no constituyen barrios administrativos, perímetros, posiciones, calles, parcelas, instalaciones ni geometría. Su función espacial y los vínculos entre establecimientos siguen sujetos a propuesta y cartografía. **Declaración expresa del autor:** «TAR-DP21-01: Apruebo la opción A, los seis nombres populares sin geometría».
@@ -15,16 +15,16 @@
 **A (recomendada):** aprobar nombres, roles y biografías TAR-N01–N10 como **bases editoriales**; ninguna persona, hogar, genealogía o EntityId se instancia. **B:** aprobar un subconjunto. **C:** modificar el reparto. **APROBADA — opción A (11/11/2026).** Las diez identidades TAR-N01–TAR-N10 se aprueban por **nombre, rol y biografía como bases canónicas editoriales futuras**, incluidas sus motivaciones y contradicciones del capítulo 04. No se crean NPC, personas existentes en WorldState, hogares, propiedades, genealogías ni relaciones efectuadas; las referencias a establecimientos, recuerdos y conflictos se mantienen condicionadas a implementación y decisiones posteriores. **Declaración expresa del autor al responder TAR-DP21-04:** «a».
 
 ## TAR-DP21-05 · Cuatro recuerdos privados
-**A (recomendada):** aprobar M01–M04 como recuerdos biográficos individuales, **sin fecha ni evento público**. **B:** conservar solo como escenas posibles. **C:** reescribir. **Pendiente.** No crea memoria de IA ni WorldState.
+**A (recomendada):** aprobar M01–M04 como recuerdos biográficos individuales, **sin fecha ni evento público**. **B:** conservar solo como escenas posibles. **C:** reescribir. **APROBADA — opción A (11/11/2026).** Cuatro recuerdos TAR-M01–M04 aprobados como antecedentes privados de biografías; sin fecha, historia pública, crónica judicial ni registro de memoria en CoreRPG. No crea memoria de IA ni WorldState.
 
 ## TAR-DP21-06 · Cuatro hilos narrativos
-**A (recomendada):** aprobar H01–H04 como diseños de **arcos futuros condicionales**. **B:** solo inspiración literaria. **C:** revisar hilos. **Pendiente.** E01–E06 siguen TEST_ONLY; no se activan misiones por escribirlas.
+**A (recomendada):** aprobar H01–H04 como diseños de **arcos futuros condicionales**. **B:** solo inspiración literaria. **C:** revisar hilos. **APROBADA — opción A (11/11/2026), por delegación expresa.** Cuatro arcos TAR-H01–H04 aprobados exclusivamente como diseños futuros condicionales. No existen misiones, sucesos activados, lotes, bienes ni rutas que la IA pueda crear por narrarlos. Las escenas TAR-E siguen TEST_ONLY. E01–E06 siguen TEST_ONLY; no se activan misiones por escribirlas.
 
 ## TAR-DP21-07 · Método de cartografía
-**A (recomendada):** preservar el canon editorial que se apruebe y cartografiar después, sobre mapa autorizado y decisiones explícitas para elementos desconocidos; **ningún** puente, cruce, muelle, calle o coordenada ahora. **B:** dejar también los ámbitos sin localización ni uso toponímico hasta plano. **C:** instrucciones específicas del autor. **Pendiente.**
+**A (recomendada):** preservar el canon editorial que se apruebe y cartografiar después, sobre mapa autorizado y decisiones explícitas para elementos desconocidos; **ningún** puente, cruce, muelle, calle o coordenada ahora. **B:** dejar también los ámbitos sin localización ni uso toponímico hasta plano. **C:** instrucciones específicas del autor. **APROBADA — opción A (11/11/2026), por delegación expresa.** Procedimiento futuro aprobado: únicamente mapa autorizado y nueva decisión explícita para cualquier geometría desconocida. No se crean puentes, vados, transbordos, muelles, callejero ni coordenadas.
 
 ## TAR-DP21-08 · Criterio de cierre
-**A (recomendada):** cierre **editorial** tras decisiones registradas y CI real verde del HEAD final, con PR Draft y sin fusionar hasta orden expresa; geometría, NPC y runtime posteriores. **B:** cierre solo después de más contenido literario. **C:** decidir condición distinta. **Pendiente.** Ni la CI ni el Markdown autorizan merge por sí solos.
+**A (recomendada):** cierre **editorial** tras decisiones registradas y CI real verde del HEAD final, con PR Draft y sin fusionar hasta orden expresa; geometría, NPC y runtime posteriores. **B:** cierre solo después de más contenido literario. **C:** decidir condición distinta. **APROBADA — opción A (11/11/2026), por delegación expresa.** Criterio de cierre editorial aprobado: ocho decisiones registradas y CI verde en Windows y Linux sobre el HEAD final. La PR se mantiene Draft; la fusión requiere orden expresa separada y no se certifica geometría, NPC ni runtime. Ni la CI ni el Markdown autorizan merge por sí solos.
 
 ## Hoja de registro
 
@@ -34,15 +34,19 @@
 | TAR-DP21-02 | Personalidad pragmática, marinera y plural; sin crear instituciones | A | 11/11/2026 | APROBADA (solo identidad cultural) |
 | TAR-DP21-03 | Doce nombres y funciones de establecimientos como objetivos canónicos futuros, sin instancias | A | 11/11/2026 | APROBADA (solo objetivos editoriales) |
 | TAR-DP21-04 | Diez nombres, roles y biografías como bases canónicas editoriales de NPC futuros | A | 11/11/2026 | APROBADA (sin instancias ni relaciones) |
-| TAR-DP21-05 | Memorias privadas | — | — | PENDIENTE |
-| TAR-DP21-06 | Arcos condicionales | — | — | PENDIENTE |
-| TAR-DP21-07 | Cartografía futura | — | — | PENDIENTE |
-| TAR-DP21-08 | Cierre y CI | — | — | PENDIENTE |
+| TAR-DP21-05 | Cuatro recuerdos privados como antecedente biográfico | A | 11/11/2026 | APROBADA; sin WorldState ni autorización de fusión |
+| TAR-DP21-06 | Cuatro arcos futuros condicionales | A | 11/11/2026 | APROBADA por delegación; sin WorldState ni autorización de fusión |
+| TAR-DP21-07 | Cartografía futura sobre mapa autorizado | A | 11/11/2026 | APROBADA por delegación; sin WorldState ni autorización de fusión |
+| TAR-DP21-08 | Criterio de cierre editorial condicionado a CI final | A | 11/11/2026 | APROBADA por delegación; sin WorldState ni autorización de fusión |
 
-**Registro de canon parcial (11/11/2026):** TAR-U01 «Voces de la Marea», TAR-U02 «El Patio de los Remiendos», TAR-U03 «Sombras de la Cal», TAR-U04 «Las Cuentas Secas», TAR-U05 «La Voz del Thalen» y TAR-U06 «Los Oficios de Tierra» son nombres populares aprobados; TAR-DP21-02 queda aprobada solo en personalidad cultural; TAR-DP21-03 queda aprobada solo para doce objetivos futuros; TAR-DP21-04 queda aprobada como base editorial de diez NPC futuros sin instanciación; TAR-DP21-05–08 permanecen pendientes. No se conocen límites urbanos, barrios oficiales ni localizaciones de sus elementos.
+**Registro de canon parcial (11/11/2026):** TAR-U01 «Voces de la Marea», TAR-U02 «El Patio de los Remiendos», TAR-U03 «Sombras de la Cal», TAR-U04 «Las Cuentas Secas», TAR-U05 «La Voz del Thalen» y TAR-U06 «Los Oficios de Tierra» son nombres populares aprobados; TAR-DP21-02 queda aprobada solo en personalidad cultural; TAR-DP21-03 queda aprobada solo para doce objetivos futuros; TAR-DP21-04 queda aprobada como base editorial de diez NPC futuros sin instanciación; TAR-DP21-05–08 están aprobadas como contenido/procedimiento editorial; PENDIENTE la materialización y la verificación de CI final. No hay permiso para fusionar. No se conocen límites urbanos, barrios oficiales ni localizaciones de sus elementos.
 
 **Registro TAR-DP21-03 A:** los doce nombres y funciones TAR-L01–TAR-L12 del capítulo 02 quedan **AUTHORED_FUTURE_OBJECTIVE**. Su presencia en el inventario de canon editorial no significa que existan ya; «El Peso de la Sal» no funda lonja oficial, «Patio de las Tinajas Quietas» no crea agua ni infraestructura hidráulica y «El Nudo de Regreso» no valida un cruce del Thalen.
 
 **Registro TAR-DP21-04 A:** TAR-N01–TAR-N10 adquieren la condición **AUTHORED_EDITORIAL_BIOGRAPHY** por nombre, oficio/rol y biografía del capítulo 04. Sus relaciones hipotéticas, memorias privadas, eventos y hogares no están aprobados como hechos consumados ni generan entidades CoreRPG.
 
 **Política estricta:** aprobar un nombre no aprueba geometría; aprobar local/biografía no crea edificio/NPC; aprobar historia no afirma acontecimiento ni establece ley; aprobar proceso de cartografía no inventa un cruce del Thalen. La autoridad de cada dato debe quedar trazada.
+
+
+## Delegación editorial y trazabilidad (11/11/2026)
+El autor confirmó «a» para TAR-DP21-05 y añadió: «sería genial que aprobases TODAS las preguntas con la respuesta que recomendases, porque coincidimos siempre». El asistente aplicó la opción recomendada **A** a TAR-DP21-06, 07 y 08 en esta fase, sin extender permiso de merge, geometría, CoreRPG ni otras decisiones fuera de D.P21. El cierre queda sujeto a CI real del HEAD final. **PENDIENTE** autorización de fusionar, separada y expresa.

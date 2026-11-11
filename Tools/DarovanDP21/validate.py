@@ -13,7 +13,7 @@ def req(cond,msg):
     if not cond: raise AssertionError(msg)
 
 def validate(d, files=True):
-    req((d["phase"],d["cityId"],d["status"]) == ("D.P21","taramin","PARTIAL_AUTHOR_APPROVAL_NAMES_CHARACTER_ESTABLISHMENTS_BIOGRAPHIES"),"wrong phase/state")
+    req((d["phase"],d["cityId"],d["status"]) == ("D.P21","taramin","AUTHORIAL_DECISIONS_APPROVED_EDITORIAL_CI_GATE"),"wrong phase/state")
     req(d["authorApprovalRecorded"] is True and d["addsCanon"] is True and d["createsWorldStateEntities"] is False,"limited author approval")
     c=d["canonClaims"]
     exact={
@@ -68,7 +68,17 @@ def validate(d, files=True):
           ("Breon Cal","auxiliar_seguridad_civil","No confunde su función civil con sentencia o mando naval")],1)],
       "approvedBiographiesDoNotCreateNPCs":True,
       "approvedBiographiesDoNotEstablishRelationships":True,
-      "approvedBiographiesDoNotEstablishPrivateMemories":True}
+      "approvedBiographiesDoNotEstablishPrivateMemories":True,
+      "approvedPrivateBiographicalMemories":[{"id":"TAR-M01","title":"La balanza sin testigos","characterId":"TAR-N01","status":"AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY","eventDate":None,"publicHistoricalEvent":False},{"id":"TAR-M02","title":"La cuerda que parecía suficiente","characterId":"TAR-N02","status":"AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY","eventDate":None,"publicHistoricalEvent":False},{"id":"TAR-M03","title":"La comida que se quedó fría","characterId":"TAR-N03","status":"AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY","eventDate":None,"publicHistoricalEvent":False},{"id":"TAR-M04","title":"La noticia a medias","characterId":"TAR-N08","status":"AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY","eventDate":None,"publicHistoricalEvent":False}],
+      "approvedPrivateMemoriesAreWorldStateEvents":False,
+      "approvedPrivateMemoriesArePublicChronology":False,
+      "approvedFutureNarrativeArcs":[{"id":"TAR-H01","title":"La entrega que pierde su tiempo útil","personRefs":["TAR-N01","TAR-N02","TAR-N07"],"status":"AUTHORED_CONDITIONAL_NARRATIVE_DESIGN","implemented":False,"triggered":False},{"id":"TAR-H02","title":"Dos recipientes y tres necesidades","personRefs":["TAR-N03","TAR-N04","TAR-N09"],"status":"AUTHORED_CONDITIONAL_NARRATIVE_DESIGN","implemented":False,"triggered":False},{"id":"TAR-H03","title":"El paso que todos conocen de oídas","personRefs":["TAR-N05","TAR-N08","TAR-N10"],"status":"AUTHORED_CONDITIONAL_NARRATIVE_DESIGN","implemented":False,"triggered":False},{"id":"TAR-H04","title":"Lo que vale una hora ajena","personRefs":["TAR-N06","TAR-N07","TAR-N01"],"status":"AUTHORED_CONDITIONAL_NARRATIVE_DESIGN","implemented":False,"triggered":False}],
+      "approvedNarrativeArcsInstantiateMissions":False,
+      "approvedNarrativeArcsConfirmRumoredCrossings":False,
+      "approvedCartographyMethod":"AUTHORIZED_MAP_AND_EXPLICIT_NEW_AUTHORIAL_DECISIONS_ONLY",
+      "cartographyApprovalAuthorizesNewGeometry":False,
+      "unknownThalenCrossingsRemainNull":True,
+      "authorialDecisionDelegationAppliesToDP21Only":True}
     req(c==exact,"protected canon altered")
     req(len(d["lockedUnknowns"])>=30 and all(v is None for v in d["lockedUnknowns"].values()),"invented unknown")
     ids={}
@@ -101,12 +111,22 @@ def validate(d, files=True):
         req(e["personEntityId"] is None and e["householdEntityId"] is None and e["npcMaterialized"] is False
             and e["relationsMaterialized"] is False and e["knownCurrentFacts"]==[] and bool(e["role"]) and bool(e["biography"]),"NPC invented")
     req([e["id"] for e in d["proposedPersonalMemories"]]==[f"TAR-M{i:02d}" for i in range(1,5)],"memory IDs")
-    for e in d["proposedPersonalMemories"]:
+    for i,e in enumerate(d["proposedPersonalMemories"]):
+        expected=exact["approvedPrivateBiographicalMemories"][i]
+        req(e["title"]==expected["title"] and e["characterId"]==expected["characterId"]
+            and e["privateBiographicalAntecedentApproved"] is True
+            and e["privateMemoryApproval"]=="AUTHORED_PRIVATE_BIOGRAPHICAL_MEMORY_TAR_DP21_05_A",
+            "approved private memories changed")
         req(e["status"]=="PROPOSAL_PENDING_AUTHOR" and e["authorApproved"] is False and e["private"] is True
             and e["characterId"] in ids["proposedPeople"] and e["eventDate"] is None
             and e["publicHistoricalEvent"] is False and e["worldStateEventId"] is None and bool(e["title"]),"memory invented")
     req([e["id"] for e in d["proposedConditionalArcs"]]==[f"TAR-H{i:02d}" for i in range(1,5)],"arc IDs")
-    for e in d["proposedConditionalArcs"]:
+    for i,e in enumerate(d["proposedConditionalArcs"]):
+        expected=exact["approvedFutureNarrativeArcs"][i]
+        req(e["title"]==expected["title"] and e["personRefs"]==expected["personRefs"]
+            and e["futureNarrativeDesignApproved"] is True
+            and e["arcDesignApproval"]=="AUTHORED_CONDITIONAL_NARRATIVE_DESIGN_TAR_DP21_06_A",
+            "approved arc designs changed")
         req(e["status"]=="PROPOSAL_PENDING_AUTHOR" and e["authorApproved"] is False
             and e["conditional"] is True and e["implemented"] is False and e["triggered"] is False
             and e["worldStateEventId"] is None and len(e["personRefs"])>=2
@@ -115,24 +135,9 @@ def validate(d, files=True):
     for e in d["testOnlyScenes"]:
         req(e["status"]=="TEST_ONLY" and e["createsEvent"] is False and e["worldStateEntityId"] is None
             and len(e["personRefs"])>=2 and set(e["personRefs"])<=ids["proposedPeople"],"scene made real")
-    req(d["authorDecisions"]==[{"id":"TAR-DP21-01","status":"APPROVED","selectedOption":"A",
-         "approvedDate":"2026-11-11","canonPromotion":True,
-         "approvalScope":"SIX_POPULAR_NAMES_NO_OFFICIAL_DISTRICTS_NO_GEOMETRY"},
-         {"id":"TAR-DP21-02","status":"APPROVED","selectedOption":"A",
-          "approvedDate":"2026-11-11","canonPromotion":True,
-          "approvalScope":"PRAGMATIC_MARITIME_PLURAL_CITY_CHARACTER_NO_NEW_LAWS_OR_INSTITUTIONS"},
-         {"id":"TAR-DP21-03","status":"APPROVED","selectedOption":"A",
-          "approvedDate":"2026-11-11","canonPromotion":True,
-          "approvalScope":"TWELVE_NAMED_ESTABLISHMENT_FUTURE_OBJECTIVES_ONLY_NO_PHYSICAL_MATERIALIZATION"},
-         {"id":"TAR-DP21-04","status":"APPROVED","selectedOption":"A",
-          "approvedDate":"2026-11-11","canonPromotion":True,
-          "approvalScope":"TEN_NAMED_ROLE_BIOGRAPHY_EDITORIAL_BASES_ONLY_NO_NPC_HOUSEHOLD_OR_RELATION_INSTANTIATION"}]
-         + [{"id":f"TAR-DP21-{i:02d}","status":"PENDING_AUTHOR","selectedOption":None,
-             "approvedDate":None,"canonPromotion":False} for i in range(5,9)],"approvals forged")
+    req(d["authorDecisions"]==[{"id":"TAR-DP21-01","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"SIX_POPULAR_NAMES_NO_OFFICIAL_DISTRICTS_NO_GEOMETRY"},{"id":"TAR-DP21-02","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"PRAGMATIC_MARITIME_PLURAL_CITY_CHARACTER_NO_NEW_LAWS_OR_INSTITUTIONS"},{"id":"TAR-DP21-03","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"TWELVE_NAMED_ESTABLISHMENT_FUTURE_OBJECTIVES_ONLY_NO_PHYSICAL_MATERIALIZATION"},{"id":"TAR-DP21-04","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"TEN_NAMED_ROLE_BIOGRAPHY_EDITORIAL_BASES_ONLY_NO_NPC_HOUSEHOLD_OR_RELATION_INSTANTIATION"},{"id":"TAR-DP21-05","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"FOUR_PRIVATE_PERSONAL_BIOGRAPHICAL_ANTECEDENTS_NO_DATES_OR_PUBLIC_EVENTS","approvedBy":"AUTHOR_EXPRESS_BLANKET_DELEGATION_TAR_DP21_05_TO_08"},{"id":"TAR-DP21-06","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"FOUR_CONDITIONAL_FUTURE_ARC_DESIGNS_NO_MISSIONS_OR_RUNTIME","approvedBy":"AUTHOR_EXPRESS_BLANKET_DELEGATION_TAR_DP21_05_TO_08"},{"id":"TAR-DP21-07","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"CARTOGRAPHY_ONLY_ON_AUTHORIZED_MAP_WITH_EXPLICIT_DECISIONS_NO_INVENTED_GEOMETRY","approvedBy":"AUTHOR_EXPRESS_BLANKET_DELEGATION_TAR_DP21_05_TO_08"},{"id":"TAR-DP21-08","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":False,"approvalScope":"EDITORIAL_CLOSURE_WHEN_ALL_AUTHOR_DECISIONS_RECORDED_AND_FINAL_HEAD_CI_GREEN_DRAFT_NO_MERGE","approvedBy":"AUTHOR_EXPRESS_BLANKET_DELEGATION_TAR_DP21_05_TO_08"}],"approvals forged")
     req(all(v is False for v in d["runtime"].values()) and d["nextPhase"]=="D.P22_SYVARIS_NOT_STARTED","runtime created")
-    req(d["editorialClosure"]=={"authorDecisionId":"TAR-DP21-08","closureApproved":False,
-          "ciCertifiedInData":False,"mergeAuthorized":False,"prMustRemainDraft":True,
-          "physicalCityCompleted":False,"requiredCiPlatforms":["ubuntu-24.04","windows-2022"]},"merge/closure forged")
+    req(d["editorialClosure"]=={"authorDecisionId":"TAR-DP21-08","closureApproved":True,"ciCertifiedInData":False,"mergeAuthorized":False,"prMustRemainDraft":True,"physicalCityCompleted":False,"requiredCiPlatforms":["ubuntu-24.04","windows-2022"],"approvedCriterion":"ALL_EIGHT_DECISIONS_AND_SUCCESSFUL_CI_ON_FINAL_HEAD","approvedOn":"2026-11-11","authorialDelegationAppliedToClosingCriterion":True},"merge/closure forged")
     if not files: return
     req(len(d["sourcePaths"])==7 and len(d["documentPaths"])==9,"inventory missing")
     for p in d["sourcePaths"]+d["documentPaths"]:
@@ -246,7 +251,30 @@ def mutation_test(d):
       ("future_character_instantiation_forged",lambda x:x["canonClaims"].update(approvedBiographiesDoNotCreateNPCs=False)),
       ("future_character_relationship_forged",lambda x:x["canonClaims"].update(approvedBiographiesDoNotEstablishRelationships=False)),
       ("future_character_memory_forged",lambda x:x["canonClaims"].update(approvedBiographiesDoNotEstablishPrivateMemories=False)),
-      ("another_decision",lambda x:x["authorDecisions"][4].update(status="APPROVED")),
+      ("fifth_decision_option",lambda x:x["authorDecisions"][4].update(selectedOption="B")),
+      ("sixth_decision_option",lambda x:x["authorDecisions"][5].update(selectedOption="B")),
+      ("seventh_decision_option",lambda x:x["authorDecisions"][6].update(selectedOption="B")),
+      ("eighth_decision_option",lambda x:x["authorDecisions"][7].update(selectedOption="B")),
+      ("delegation_forgery",lambda x:x["authorDecisions"][5].update(approvedBy="NOT_AUTHOR")),
+      ("private_memory_title",lambda x:x["proposedPersonalMemories"][0].update(title="Otra memoria")),
+      ("private_memory_approval",lambda x:x["proposedPersonalMemories"][0].update(privateBiographicalAntecedentApproved=False)),
+      ("private_memory_scope",lambda x:x["proposedPersonalMemories"][0].update(privateMemoryApproval="PUBLIC_EVENT")),
+      ("private_memory_canon_lost",lambda x:x["canonClaims"]["approvedPrivateBiographicalMemories"].pop()),
+      ("private_memory_worldstate_forgery",lambda x:x["canonClaims"].update(approvedPrivateMemoriesAreWorldStateEvents=True)),
+      ("private_memory_public_forgery",lambda x:x["canonClaims"].update(approvedPrivateMemoriesArePublicChronology=True)),
+      ("arc_title_changed",lambda x:x["proposedConditionalArcs"][0].update(title="Otro arco")),
+      ("arc_approval_removed",lambda x:x["proposedConditionalArcs"][0].update(futureNarrativeDesignApproved=False)),
+      ("arc_approval_scope",lambda x:x["proposedConditionalArcs"][0].update(arcDesignApproval="ACTIVE_QUEST")),
+      ("arc_canon_lost",lambda x:x["canonClaims"]["approvedFutureNarrativeArcs"].pop()),
+      ("arc_mission_forgery",lambda x:x["canonClaims"].update(approvedNarrativeArcsInstantiateMissions=True)),
+      ("arc_crossing_forgery",lambda x:x["canonClaims"].update(approvedNarrativeArcsConfirmRumoredCrossings=True)),
+      ("map_freehand_forgery",lambda x:x["canonClaims"].update(approvedCartographyMethod="FREEHAND")),
+      ("map_geometry_forgery",lambda x:x["canonClaims"].update(cartographyApprovalAuthorizesNewGeometry=True)),
+      ("map_crossings_forgery",lambda x:x["canonClaims"].update(unknownThalenCrossingsRemainNull=False)),
+      ("delegation_scope_forgery",lambda x:x["canonClaims"].update(authorialDecisionDelegationAppliesToDP21Only=False)),
+      ("closure_approval_forgery",lambda x:x["editorialClosure"].update(closureApproved=False)),
+      ("closure_ci_requirement_removed",lambda x:x["editorialClosure"].update(approvedCriterion="NO_CI")),
+      ("closure_delegation_removed",lambda x:x["editorialClosure"].update(authorialDelegationAppliedToClosingCriterion=False)),
       ("ci",lambda x:x["editorialClosure"].update(ciCertifiedInData=True)),
       ("merge",lambda x:x["editorialClosure"].update(mergeAuthorized=True)),
       ("draft",lambda x:x["editorialClosure"].update(prMustRemainDraft=False)),
@@ -262,4 +290,4 @@ def mutation_test(d):
 if __name__=="__main__":
     d=read(DATA);validate(d)
     print("D.P21 Taramin CONTRACT PASS; negative mutations rejected:",mutation_test(d))
-    print("PARTIAL AUTHOR APPROVAL: six popular names, city character, twelve future establishments and ten editorial biographies; no NPC, relationships, memories, buildings, geometry, runtime or merge.")
+    print("EIGHT EDITORIAL DECISIONS AUTHOR-APPROVED: four private backstories and four conditional future arcs; CI of final HEAD required before editorial closure; no NPC, public events, geometry, runtime or merge.")

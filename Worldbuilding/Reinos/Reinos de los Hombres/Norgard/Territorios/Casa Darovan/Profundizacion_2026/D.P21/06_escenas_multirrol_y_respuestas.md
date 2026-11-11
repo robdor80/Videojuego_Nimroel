@@ -1,6 +1,6 @@
 # D.P21 — Taramin: seis escenas para probar que la ciudad es jugable
 
-**Estado editorial: PROPOSAL_PENDING_AUTHOR; todas las escenas son TEST_ONLY.** No se crean misiones ni sucesos.
+**Estado editorial: todas las escenas TAR-E01–E06 siguen TEST_ONLY.** TAR-DP21-06 A aprueba cuatro diseños de arcos condicionales en capítulo 05, pero **no** activa estas seis escenas, personajes, misiones ni sucesos. La implementación es **PENDIENTE**.
 
 **Todas las escenas TAR-E01–E06 son TEST_ONLY**, no misiones activas, ni eventos del mundo. Cada una exige que CoreRPG sostenga hechos, recursos, conocimiento, autoridad y persistencia antes de utilizarse.
 
