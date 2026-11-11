@@ -71,3 +71,7 @@ Cada caso es **TEST_ONLY**. Aquí no se ha invocado simulador, compilador C++ o 
 - Conservar ausencias: incapacidad, falta de agua, espera y suministro imposible no deben generar servicios de la nada.
 
 El contrato de D.P17 no introduce nuevos eventos, NPC, edificios ni instituciones.
+
+## Cierre de diseño D.P17 — 11/11/2026
+
+Los 24 escenarios TEST_ONLY y namespaces de referencia se complementan con [D.P17/02 — Situaciones jugables, autoridad y memoria](02_situaciones_jugables_autoridad_y_memoria.md). El segundo documento desarrolla **cinco secuencias de interacción** y tres casos de continuidad social con fuentes, rechazos, espera y persistencia **como requisitos futuros**. D.P17 queda completa **como especificación conceptual**; no se ha implementado ni probado un runtime de Darovan.
