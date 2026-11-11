@@ -1,0 +1,34 @@
+# D.P20 — Veldora, ciudad mercantil vivida
+
+**Fecha:** 11/11/2026 · **Estado:** PROPUESTA EDITORIAL COMPLETA PARA REVISIÓN AUTORAL · **Integración en CoreRPG/Godot:** NO.
+
+Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de puertos ni ampliación automática de D.P16. Su materia prima es el canon de Norgard/D07–D10 y D.P13, y el anteproyecto D.P16. La PR aporta autoría urbana, negocios, personas posibles, relaciones, escenas y obligaciones de implementación; **no convierte los topónimos o personas de nueva creación en canon por estar en Git**.
+
+## Lectura recomendada
+
+1. [01 — La ciudad y sus seis ámbitos candidatos](01_ciudad_y_tejidos_urbanos.md): identidad espacial, recorridos dramáticos y vida de calle.
+2. [02 — Lugares, casas, talleres y establecimientos](02_lugares_oficios_y_establecimientos.md): doce propuestas enlazadas y sus restricciones.
+3. [03 — Ritmos cotidianos, economía e instituciones](03_vida_cotidiana_y_cadenas_materiales.md): qué cambia durante una jornada y por qué.
+4. [04 — Personas y relaciones](04_personajes_hogares_y_relaciones.md): diez individuos **propuestos**, no arquetipos clonados.
+5. [05 — Historia local, relatos y episodios](05_memoria_urbana_y_conflictos.md): conflictos entrelazados y memoria persistente.
+6. [06 — Escenas jugables desde varios puntos de vista](06_escenas_y_ramas_de_decision.md): pruebas literarias de Veldora y sus desenlaces.
+7. [07 — Cartografía y futuro motor](07_cartografia_contratos_y_cierre.md): lo que falta para un entorno real y verificaciones.
+8. [08 — Resoluciones reservadas al autor](08_decisiones_autorales.md): paquete listo para aprobar, corregir o rechazar sin canonizar supuestos.
+
+**Registro técnico:** [Datos operativos/darovan_dp20_veldora_proposals_v0.1.json](../../Datos%20operativos/darovan_dp20_veldora_proposals_v0.1.json). El esquema es un inventario editorial no ejecutable. Validación estática: Tools/DarovanDP20/validate.py y CI Windows/Linux.
+
+## Anclas inmutables de Veldora
+
+- **AUTHORED:** principal puerto mercante exterior de Norgard, Golfo de Veldora; 29.000–35.000 habitantes como **intervalo**, no censo; cota urbana general 0–60 m, no callejero.
+- **AUTHORED:** crecimiento mercantil orgánico; **varios sectores comerciales** aprobados en DAR-D07-01 opción B, no bazar único; piedra y madera, teja, calle empedrada, dos plantas comunes y algunas tres; zonas acomodadas más apartadas de muelles.
+- **AUTHORED:** puerto, almacenes, gremios y talleres; **aduana exterior de la Corona** con apoyo de la Casa; no aduanas entre Casas.
+- **AUTHORED:** río Veldora independiente de Belara/Lhera; no se deducen puentes, bocas, navegación ni muelles de río. La gran isla boscosa de la referencia visual no se identifica automáticamente con Arven.
+- **AUTHORED:** vínculo terrestre cualitativo Veldora–Treihord; sin trayecto, duración, puente, peaje ni establecimientos intermedios acreditados.
+
+## Semántica de autoridad
+
+**AUTHORED** = reconocido en fuentes existentes. **DERIVED_CONDITIONAL** = consecuencia posible si existen recursos, permisos y contexto. **PROPOSAL_PENDING_AUTHOR** = creación nueva que el autor debe aceptar antes de ingresar al canon. **TEST_ONLY** = escena hipotética que nunca entra en WorldState.
+
+No hay calles, establecimientos, NPC, barcos, cantidades, contratos ni cronologías nuevos ejecutados. La IA no puede usar estas propuestas como evidencia de presencia real. Esta fase tampoco declara que los siete bloques P18-G01/G09/G10/cartografía/rutas estén resueltos. El objetivo de D.P20 es **autoría profunda comprobable**, no fingir un mapa o una simulación.
+
+**Siguiente etapa, no iniciada aquí:** D.P21 Taramin. D.P25 podrá cruzar personajes de las cuatro ciudades solo con canon aprobado.
