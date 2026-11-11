@@ -46,3 +46,7 @@ Por autorización general del autor, se desarrolla consecutivamente en la rama `
 Archivos de entrada: `Profundizacion_2026/README.md`, contratos JSON `darovan_dp14_*` a `darovan_dp18_*` y `Tools/DarovanDP14_DP18/validate.py`; GitHub Actions `darovan-dp14-dp18.yml` con pruebas adversariales estáticas. El resultado definitivo depende de GitHub Actions sobre el **último HEAD** de PR #41; los commits anteriores no certifican automáticamente uno nuevo.
 
 **Resultado profesional honesto:** paquete de **diseño funcional y territorial condicional** muy avanzado; no se declara igual de completo que la ciudad de Treskal a nivel de canon urbano ni ejecutable en CoreRPG/Godot. Se requiere decisión del autor para elevar a canon nuevos barrios y singularidades de Veldora, Taramin y Syvaris. Hasta entonces, nuevos topónimos/barrios/edificios singulares permanecen `UNKNOWN` o `PROPOSAL_PENDING_AUTHOR`. Todo lo métrico y de integración física se reserva para una fase posterior.
+
+## Nota editorial de rescate D.P14–D.P18 — 11/11/2026
+
+La adenda histórica de apertura D.P14–D.P18 refleja el primer paquete, con exceso de contratos y poco contenido urbano particular. **Se ha recuperado el material útil y reescrito el contenido insuficiente en la misma PR #41**. El índice vigente está en Profundizacion_2026/README.md y la auditoría de cierre en Profundizacion_2026/D.P18/03_cierre_editorial_real_y_traspaso_DP20.md. No hay trasplante de lore de Treskal, ni nuevo canon por commit, ni runtime simulado.
