@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp15_settlement_service_network_v0.1",
+  "phase": "D.P15",
+  "version": "0.1.0",
+  "status": "DOCUMENTARY_COMPLETE_NO_GENERATED_SITES",
+  "authority": "DERIVED_CONDITIONAL_INHERITS_CORE_NORGARD_D06_D08",
+  "referenceValrikMethod": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Valrik/metodologia_generacion_asentamientos_treskal.md",
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d05_mobility_communications_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d06_settlement_rules_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d08_population_services_v0.1.json"
+  ],
+  "generationLayers": [
+    "esqueleto_minimo",
+    "posibilidades",
+    "filtros_fisicos_ley_y_compatibilidad",
+    "coherencia_regional",
+    "pesos_de_d06",
+    "seleccion_de_modelo",
+    "instancia_y_persistencia"
+  ],
+  "availableModels": [
+    {
+      "modelId": "agricola",
+      "classes": [
+        "aldea",
+        "pueblo",
+        "villa"
+      ],
+      "requiredEvidence": [
+        "soil_and_cultivation_verified",
+        "land_use_rights_verified"
+      ],
+      "possibleBuildings": [
+        "viviendas",
+        "granero",
+        "huertos",
+        "establo"
+      ],
+      "possibleServices": [
+        "molienda",
+        "mercado",
+        "taller_reparaciones"
+      ],
+      "actualInstanceCount": null,
+      "actualProviderIds": [],
+      "automaticBuildingCreation": false,
+      "automaticServiceCreation": false
+    },
+    {
+      "modelId": "ganadera",
+      "classes": [
+        "aldea",
+        "pueblo"
+      ],
+      "requiredEvidence": [
+        "grazing_suitable_verified",
+        "grazing_rights_verified"
+      ],
+      "possibleBuildings": [
+        "viviendas",
+        "corrales",
+        "almacen_forraje"
+      ],
+      "possibleServices": [
+        "veterinaria_tradicional",
+        "mercado"
+      ],
+      "actualInstanceCount": null,
+      "actualProviderIds": [],
+      "automaticBuildingCreation": false,
+      "automaticServiceCreation": false
+    },
+    {
+      "modelId": "pesquera",
+      "classes": [
+        "aldea",
+        "pueblo",
+        "villa"
+      ],
+      "requiredEvidence": [
+        "coastal_or_fishery_water_verified",
+        "safe_landing_verified",
+        "fishing_rights_verified"
+      ],
+      "possibleBuildings": [
+        "viviendas",
+        "secadero",
+        "almacen_redes"
+      ],
+      "possibleServices": [
+        "lonja_local_condicional",
+        "taller_redes"
+      ],
+      "actualInstanceCount": null,
+      "actualProviderIds": [],
+      "automaticBuildingCreation": false,
+      "automaticServiceCreation": false
+    },
+    {
+      "modelId": "minera_auxiliar",
+      "classes": [
+        "enclave",
+        "aldea"
+      ],
+      "requiredEvidence": [
+        "specific_mine_site_authorized",
+        "mineral_site_access_verified",
+        "site_ownership_verified"
+      ],
+      "possibleBuildings": [
+        "viviendas_condicionales",
+        "deposito_herramientas",
+        "almacen"
+      ],
+      "possibleServices": [
+        "herreria_auxiliar",
+        "botiquin_condicional"
+      ],
+      "actualInstanceCount": null,
+      "actualProviderIds": [],
+      "automaticBuildingCreation": false,
+      "automaticServiceCreation": false
+    },
+    {
+      "modelId": "metalurgica_auxiliar",
+      "classes": [
+        "enclave",
+        "aldea",
+        "pueblo"
+      ],
+      "requiredEvidence": [
+        "legal_processing_function_verified",
+        "fuel_and_inputs_verified",
+        "site_access_for_supplies_verified"
+      ],
+      "possibleBuildings": [
+        "taller",
+        "almacen_combustible_condicional",
+        "viviendas_condicionales"
+      ],
+      "possibleServices": [
+        "reparacion_herramientas"
+      ],
+      "actualInstanceCount": null,
+      "actualProviderIds": [],
+      "automaticBuildingCreation": false,
+      "automaticServiceCreation": false
+    },
+    {
+      "modelId": "forestal_sostenible",
+      "classes": [
+        "enclave",
+        "aldea",
+        "pueblo"
+      ],
+      "requiredEvidence": [
+        "managed_forest_site_verified",
+        "forest_use_rights_verified",
+        "sustainable_harvest_verified"
+      ],
+      "possibleBuildings": [
+        "viviendas_condicionales",
+        "cobertizo",
+        "deposito_madera_condicional"
+      ],
+      "possibleServices": [
+        "carpinteria",
+        "taller_herramientas"
+      ],
+      "actualInstanceCount": null,
+      "actualProviderIds": [],
+      "automaticBuildingCreation": false,
+      "automaticServiceCreation": false
+    },
+    {
+      "modelId": "servicio_camino",
+      "classes": [
+        "enclave",
+        "aldea",
+        "pueblo"
+      ],
+      "requiredEvidence": [
+        "attested_road_at_site_verified",
+        "local_traffic_demand_verified"
+      ],
+      "possibleBuildings": [
+        "refugio",
+        "establo_condicional",
+        "viviendas_condicionales"
+      ],
+      "possibleServices": [
+        "posada_condicional",
+        "reparacion_carros_condicional"
+      ],
+      "actualInstanceCount": null,
+      "actualProviderIds": [],
+      "automaticBuildingCreation": false,
+      "automaticServiceCreation": false
+    },
+    {
+      "modelId": "insular_mixta",
+      "classes": [
+        "aldea",
+        "pueblo"
+      ],
+      "requiredEvidence": [
+        "island_site_verified",
+        "local_land_use_verified",
+        "insular_food_base_verified"
+      ],
+      "possibleBuildings": [
+        "viviendas",
+        "almacen",
+        "espacio_comunal"
+      ],
+      "possibleServices": [
+        "intercambio_local",
+        "taller_reparaciones"
+      ],
+      "actualInstanceCount": null,
+      "actualProviderIds": [],
+      "automaticBuildingCreation": false,
+      "automaticServiceCreation": false
+    },
+    {
+      "modelId": "enclave_especializado",
+      "classes": [
+        "enclave"
+      ],
+      "requiredEvidence": [
+        "specific_authorized_function_verified",
+        "resident_community_justified_verified"
+      ],
+      "possibleBuildings": [
+        "instalacion_no_equivale_asentamiento",
+        "viviendas_solo_si_justificadas"
+      ],
+      "possibleServices": [
+        "servicios_segun_necesidad"
+      ],
+      "actualInstanceCount": null,
+      "actualProviderIds": [],
+      "automaticBuildingCreation": false,
+      "automaticServiceCreation": false
+    }
+  ],
+  "serviceNeeds": [
+    {
+      "needId": "alimentacion",
+      "needType": "food",
+      "requiresEvidence": "existing_food_stock",
+      "actualProviderIds": [],
+      "actualCapacity": null,
+      "unmetNeedPermitted": true
+    },
+    {
+      "needId": "agua",
+      "needType": "water",
+      "requiresEvidence": "verified_potable_water_access",
+      "actualProviderIds": [],
+      "actualCapacity": null,
+      "unmetNeedPermitted": true
+    },
+    {
+      "needId": "higiene_y_residuos",
+      "needType": "sanitation",
+      "requiresEvidence": "separation_of_water_and_waste",
+      "actualProviderIds": [],
+      "actualCapacity": null,
+      "unmetNeedPermitted": true
+    },
+    {
+      "needId": "cuidados",
+      "needType": "care",
+      "requiresEvidence": "real_carer_time_and_relationship",
+      "actualProviderIds": [],
+      "actualCapacity": null,
+      "unmetNeedPermitted": true
+    },
+    {
+      "needId": "salud",
+      "needType": "care",
+      "requiresEvidence": "trained_healer_or_household_remedies_if_competent",
+      "actualProviderIds": [],
+      "actualCapacity": null,
+      "unmetNeedPermitted": true
+    },
+    {
+      "needId": "aprendizaje",
+      "needType": "apprenticeship",
+      "requiresEvidence": "mentor_and_supervision",
+      "actualProviderIds": [],
+      "actualCapacity": null,
+      "unmetNeedPermitted": true
+    },
+    {
+      "needId": "alojamiento",
+      "needType": "housing",
+      "requiresEvidence": "physical_bed_or_home_and_right_of_use",
+      "actualProviderIds": [],
+      "actualCapacity": null,
+      "unmetNeedPermitted": true
+    },
+    {
+      "needId": "transporte",
+      "needType": "logistics",
+      "requiresEvidence": "evidenced_modal_access_and_real_capacity",
+      "actualProviderIds": [],
+      "actualCapacity": null,
+      "unmetNeedPermitted": true
+    },
+    {
+      "needId": "mantenimiento",
+      "needType": "maintenance",
+      "requiresEvidence": "worker_tools_materials_and_time",
+      "actualProviderIds": [],
+      "actualCapacity": null,
+      "unmetNeedPermitted": true
+    },
+    {
+      "needId": "comercio_y_abastecimiento",
+      "needType": "trade",
+      "requiresEvidence": "stock_owner_provider_and_access",
+      "actualProviderIds": [],
+      "actualCapacity": null,
+      "unmetNeedPermitted": true
+    }
+  ],
+  "cityManualIds": [
+    "treihord",
+    "veldora",
+    "taramin",
+    "syvaris"
+  ],
+  "actualVillageIds": [],
+  "newCanonicalTownNames": [],
+  "serviceNetworkProofRequired": [
+    "settlement_or_city_exists",
+    "provider_exists",
+    "local_access_verified",
+    "capacity_real",
+    "available_goods_or_staff",
+    "legal_eligibility"
+  ],
+  "confirmedTransportLinkIds": [
+    "d05_road_veldora_treihord",
+    "d05_belara_shallow_haul",
+    "d05_vena_restricted"
+  ],
+  "linksMayNotBeEquatedToUniversalCivilRoads": true,
+  "populationRangesNotExactCensuses": true,
+  "realServiceNetworkGeometry": null,
+  "travelTimesMinutes": null,
+  "fullProviderCoverageAsserted": false,
+  "runtime": {
+    "implemented": false,
+    "generatedSites": 0,
+    "worldStateChanged": false
+  }
+}

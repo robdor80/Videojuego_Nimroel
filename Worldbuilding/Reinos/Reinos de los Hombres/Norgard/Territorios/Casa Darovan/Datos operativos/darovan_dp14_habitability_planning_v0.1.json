@@ -1,0 +1,530 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp14_habitability_planning_v0.1",
+  "phase": "D.P14",
+  "version": "0.1.0",
+  "status": "DOCUMENTARY_COMPLETE_CONDITIONAL_NOT_GEOMETRY",
+  "authority": "DERIVED_CONDITIONAL_FROM_D01_D06_DP13",
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d06_settlement_rules_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_physical_profiles_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_delegated_decisions_authorized_v0.1.json"
+  ],
+  "orderedGates": [
+    {
+      "id": "authored_anchor",
+      "desc": "Clasificación de unidad y prohibiciones del canon y ciudad manual separada",
+      "requires": [
+        "source_status",
+        "protected_anchor"
+      ]
+    },
+    {
+      "id": "topography",
+      "desc": "Pendiente, estabilidad, geomorfología y condición del sitio",
+      "requires": [
+        "approved_site_coordinates",
+        "validated_terrain"
+      ]
+    },
+    {
+      "id": "water_supply",
+      "desc": "Abastecimiento legal y potabilidad comprobada; río no equivale a agua potable",
+      "requires": [
+        "source_identity",
+        "seasonal_reliability",
+        "potability",
+        "access_right"
+      ]
+    },
+    {
+      "id": "drainage_risk",
+      "desc": "Riesgo de crecida, erosión, costa y helada si está justificado",
+      "requires": [
+        "topography",
+        "basin",
+        "exposure"
+      ]
+    },
+    {
+      "id": "legal_land_use",
+      "desc": "Titularidad y usos permitidos bajo Norgard/Casa",
+      "requires": [
+        "jurisdiction",
+        "land_use_rights"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "desc": "Acceso real comprobado, no la mera relación comercial abstracta",
+      "requires": [
+        "verified_physical_route_or_access"
+      ]
+    },
+    {
+      "id": "food_and_sustenance",
+      "desc": "Base económica comprobada y cobertura alimentaria",
+      "requires": [
+        "resource_or_supply_proof",
+        "local_capacity"
+      ]
+    },
+    {
+      "id": "network_coverage",
+      "desc": "Cobertura de salud, cuidados, empleo, servicios y abastecimiento",
+      "requires": [
+        "provider_exists",
+        "capacity",
+        "travel_access"
+      ]
+    },
+    {
+      "id": "community",
+      "desc": "Diferenciar enclave productivo de comunidad residente",
+      "requires": [
+        "resident_community_evidence",
+        "legal_residence"
+      ]
+    },
+    {
+      "id": "persistence",
+      "desc": "Instancia solo después de elegibilidad, ID y semilla estables",
+      "requires": [
+        "world_state_authority",
+        "versioned_generation"
+      ]
+    }
+  ],
+  "studyUnits": [
+    {
+      "studyUnitId": "d01_valkram_oeste",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "physicalNarrative": "Piedemonte occidental 400–900 m y valles interiores 700–1.300 m son referencias características, no emplazamientos",
+      "strictGuard": "Ningún yacimiento nuevo: toda actividad minera exige explotación concreta, título, accesos y riesgos",
+      "d06ModelPriorities": {
+        "agricola": 0,
+        "ganadera": 1,
+        "pesquera": 0,
+        "minera_auxiliar": 4,
+        "metalurgica_auxiliar": 2,
+        "forestal_sostenible": 1,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "ganadera",
+        "minera_auxiliar",
+        "metalurgica_auxiliar",
+        "forestal_sostenible",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    },
+    {
+      "studyUnitId": "d01_elyra_paso_peninsular",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "physicalNarrative": "Elyra: cumbres hasta ~2.600 m, pasos principales 900–1.500 m, valles 400–900 m, no rutas autorizadas",
+      "strictGuard": "La ganadería y refugios requieren derechos, agua y acceso real; minería Darovan no se infiere",
+      "d06ModelPriorities": {
+        "agricola": 0,
+        "ganadera": 1,
+        "pesquera": 0,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 0,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "ganadera",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    },
+    {
+      "studyUnitId": "d01_norte_transicion",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "physicalNarrative": "Frío septentrional es gradiente no frontera y no demuestra nieve continua",
+      "strictGuard": "El cultivo o pastoreo necesita ventana efectiva de uso y asentamiento legal",
+      "d06ModelPriorities": {
+        "agricola": 1,
+        "ganadera": 2,
+        "pesquera": 0,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 1,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "agricola",
+        "ganadera",
+        "forestal_sostenible",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    },
+    {
+      "studyUnitId": "d01_aguja_litoral",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "physicalNarrative": "Bosque de las Agujas: interior sin población permanente",
+      "strictGuard": "Su borde litoral es una posibilidad distinta, nunca lugar automáticamente habilitado",
+      "d06ModelPriorities": {
+        "agricola": 0,
+        "ganadera": 0,
+        "pesquera": 0,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 0,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 0
+      },
+      "eligibleModelsAfterSiteProof": [],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": false
+    },
+    {
+      "studyUnitId": "d01_belara_treihord",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "physicalNarrative": "Treihord es ciudad manual; Belara pasa junto a ella y tiene barcazas someras industriales",
+      "strictGuard": "La cercanía de río no prueba agua potable o llanura inundable; proteger ocho barrios",
+      "d06ModelPriorities": {
+        "agricola": 3,
+        "ganadera": 2,
+        "pesquera": 0,
+        "minera_auxiliar": 1,
+        "metalurgica_auxiliar": 2,
+        "forestal_sostenible": 0,
+        "servicio_camino": 1,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "agricola",
+        "ganadera",
+        "minera_auxiliar",
+        "metalurgica_auxiliar",
+        "servicio_camino",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    },
+    {
+      "studyUnitId": "d01_veldora_litoral",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "physicalNarrative": "Veldora es ciudad manual con puerto mercante; Lhera y Veldora no forman un solo río",
+      "strictGuard": "La carretera cualitativa Veldora–Treihord no aprueba conexiones locales o rutas nuevas",
+      "d06ModelPriorities": {
+        "agricola": 2,
+        "ganadera": 1,
+        "pesquera": 3,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 0,
+        "servicio_camino": 1,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "agricola",
+        "ganadera",
+        "pesquera",
+        "servicio_camino",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    },
+    {
+      "studyUnitId": "d01_linde_caminos",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "physicalNarrative": "La Linde es bosque pequeño y camino documentado; no elevarlo a gran masa explotable",
+      "strictGuard": "Puestos y posadas solo bajo demanda, acceso acreditado y derechos",
+      "d06ModelPriorities": {
+        "agricola": 2,
+        "ganadera": 2,
+        "pesquera": 0,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 1,
+        "servicio_camino": 3,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "agricola",
+        "ganadera",
+        "forestal_sostenible",
+        "servicio_camino",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    },
+    {
+      "studyUnitId": "d01_pilares_sur",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "physicalNarrative": "Pilares es bosque unitario con claros y madera documentada",
+      "strictGuard": "Sostenibilidad, titularidad, recuperación forestal y trazabilidad minera/combustible obligatorias",
+      "d06ModelPriorities": {
+        "agricola": 2,
+        "ganadera": 2,
+        "pesquera": 0,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 4,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "agricola",
+        "ganadera",
+        "forestal_sostenible",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    },
+    {
+      "studyUnitId": "d01_taramin_norte_centro",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "physicalNarrative": "Colinas ocres características 300–600 m fuera de Elyra, transición semiárida",
+      "strictGuard": "Barrancos estacionales no garantizan agua permanente; Taramin no se genera",
+      "d06ModelPriorities": {
+        "agricola": 1,
+        "ganadera": 2,
+        "pesquera": 3,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 0,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "agricola",
+        "ganadera",
+        "pesquera",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    },
+    {
+      "studyUnitId": "d01_taramin_bosque_sur",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": null,
+      "physicalNarrative": "Bosque de Taramin unitario con gradiente de coníferas a mixto/subtropical húmedo",
+      "strictGuard": "Lomas 150–500 m solo referencia, sin dividir bosque ni crear industria maderera",
+      "d06ModelPriorities": {
+        "agricola": 1,
+        "ganadera": 2,
+        "pesquera": 3,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 2,
+        "servicio_camino": 0,
+        "insular_mixta": 0,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "agricola",
+        "ganadera",
+        "pesquera",
+        "forestal_sostenible",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    },
+    {
+      "studyUnitId": "d01_syvaris",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": "casa_darovan",
+      "physicalNarrative": "Isla con máximo natural ~200–400 m; ciudad Syvaris 0–40 m y bahía protegida",
+      "strictGuard": "Bosques dispersos; no se autorizan rutas marítimas o puertos de las calas",
+      "d06ModelPriorities": {
+        "agricola": 1,
+        "ganadera": 1,
+        "pesquera": 4,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 0,
+        "servicio_camino": 0,
+        "insular_mixta": 3,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "agricola",
+        "ganadera",
+        "pesquera",
+        "insular_mixta",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    },
+    {
+      "studyUnitId": "d01_arven_contexto",
+      "studyUnitClassification": "qualitative_working_area_not_canonical_boundary",
+      "administrativeOwner": "casa_darovan",
+      "physicalNarrative": "Arven administrada por Darovan con máximo natural ~250–500 m",
+      "strictGuard": "Manto Verde ~90 % y aldeas costeras ya conocidas, sin crear aldeas nuevas o talar la masa continua",
+      "d06ModelPriorities": {
+        "agricola": 0,
+        "ganadera": 1,
+        "pesquera": 2,
+        "minera_auxiliar": 0,
+        "metalurgica_auxiliar": 0,
+        "forestal_sostenible": 1,
+        "servicio_camino": 0,
+        "insular_mixta": 4,
+        "enclave_especializado": 1
+      },
+      "eligibleModelsAfterSiteProof": [
+        "ganadera",
+        "pesquera",
+        "forestal_sostenible",
+        "insular_mixta",
+        "enclave_especializado"
+      ],
+      "siteCoordinates": null,
+      "eligiblePhysicalSlots": [],
+      "actualSettlementIds": [],
+      "authorApprovedNewSite": false,
+      "availableDrinkingWater": null,
+      "realLocalAccess": null,
+      "measuredSlope": null,
+      "measuredFloodProbability": null,
+      "planningResult": "UNDETERMINED_UNTIL_REAL_SITE_PROOF",
+      "ifInsideAgujasPermanentResidenceAllowed": null
+    }
+  ],
+  "globalInvariants": {
+    "fourManualCities": [
+      "treihord",
+      "veldora",
+      "taramin",
+      "syvaris"
+    ],
+    "forbiddenCityIds": [
+      "karsath"
+    ],
+    "forestAgujasNoPermanentResidents": true,
+    "d06WeightsAreNotPercentages": true,
+    "siteCanBeAuthorizedWithoutCoordinates": false,
+    "physicalRouteCannotBeInferredFromSupply": true
+  },
+  "runtime": {
+    "implemented": false,
+    "worldStateModified": false,
+    "siteGeometryCreated": false
+  }
+}
