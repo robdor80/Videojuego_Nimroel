@@ -5,9 +5,9 @@
   "date": "2026-11-11",
   "phase": "D.P21",
   "cityId": "taramin",
-  "status": "PROPOSALS_AWAITING_AUTHOR",
-  "authorApprovalRecorded": false,
-  "addsCanon": false,
+  "status": "PARTIAL_AUTHOR_APPROVAL_POPULAR_NAMES_ONLY",
+  "authorApprovalRecorded": true,
+  "addsCanon": true,
   "createsWorldStateEntities": false,
   "canonClaims": {
     "cityOwner": "CASA_DAROVAN",
@@ -41,7 +41,16 @@
     "darovanOwnNavy": false,
     "externalCustomsAuthorityTransferredFromVeldora": false,
     "riverNavigabilityConfirmed": false,
-    "bridgeKnown": false
+    "bridgeKnown": false,
+    "approvedPopularAreaNames": [
+      "Voces de la Marea",
+      "El Patio de los Remiendos",
+      "Sombras de la Cal",
+      "Las Cuentas Secas",
+      "La Voz del Thalen",
+      "Los Oficios de Tierra"
+    ],
+    "approvedPopularAreaNamesDoNotDefineDistricts": true
   },
   "lockedUnknowns": {
     "actualCityPolygon": null,
@@ -86,7 +95,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_TAR_DP21_01_A",
+      "popularNameAuthorApproved": true
     },
     {
       "id": "TAR-U02",
@@ -98,7 +109,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_TAR_DP21_01_A",
+      "popularNameAuthorApproved": true
     },
     {
       "id": "TAR-U03",
@@ -110,7 +123,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_TAR_DP21_01_A",
+      "popularNameAuthorApproved": true
     },
     {
       "id": "TAR-U04",
@@ -122,7 +137,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_TAR_DP21_01_A",
+      "popularNameAuthorApproved": true
     },
     {
       "id": "TAR-U05",
@@ -134,7 +151,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_TAR_DP21_01_A",
+      "popularNameAuthorApproved": true
     },
     {
       "id": "TAR-U06",
@@ -146,7 +165,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_TAR_DP21_01_A",
+      "popularNameAuthorApproved": true
     }
   ],
   "proposedEstablishments": [
@@ -686,10 +707,11 @@
   "authorDecisions": [
     {
       "id": "TAR-DP21-01",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "SIX_POPULAR_NAMES_NO_OFFICIAL_DISTRICTS_NO_GEOMETRY"
     },
     {
       "id": "TAR-DP21-02",

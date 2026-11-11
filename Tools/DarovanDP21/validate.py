@@ -13,8 +13,8 @@ def req(cond,msg):
     if not cond: raise AssertionError(msg)
 
 def validate(d, files=True):
-    req((d["phase"],d["cityId"],d["status"]) == ("D.P21","taramin","PROPOSALS_AWAITING_AUTHOR"),"wrong phase/state")
-    req(all(d[k] is False for k in ("authorApprovalRecorded","addsCanon","createsWorldStateEntities")),"canon promotion")
+    req((d["phase"],d["cityId"],d["status"]) == ("D.P21","taramin","PARTIAL_AUTHOR_APPROVAL_POPULAR_NAMES_ONLY"),"wrong phase/state")
+    req(d["authorApprovalRecorded"] is True and d["addsCanon"] is True and d["createsWorldStateEntities"] is False,"limited author approval")
     c=d["canonClaims"]
     exact={
       "cityOwner":"CASA_DAROVAN","cityManualOnly":True,"thalenSingleNamedRiver":True,
@@ -28,7 +28,9 @@ def validate(d, files=True):
       "northernCentralSemiaridTransition":True,"southernTaraminForestOne":True,
       "industrialTaraminLoggingAllowed":False,"kingsJusticeAuthority":True,
       "darovanOwnNavy":False,"externalCustomsAuthorityTransferredFromVeldora":False,
-      "riverNavigabilityConfirmed":False,"bridgeKnown":False}
+      "riverNavigabilityConfirmed":False,"bridgeKnown":False,
+      "approvedPopularAreaNames":["Voces de la Marea","El Patio de los Remiendos","Sombras de la Cal","Las Cuentas Secas","La Voz del Thalen","Los Oficios de Tierra"],
+      "approvedPopularAreaNamesDoNotDefineDistricts":True}
     req(c==exact,"protected canon altered")
     req(len(d["lockedUnknowns"])>=30 and all(v is None for v in d["lockedUnknowns"].values()),"invented unknown")
     ids={}
@@ -39,8 +41,11 @@ def validate(d, files=True):
         for e in items:
             req(e["status"]=="PROPOSAL_PENDING_AUTHOR" and e["authorApproved"] is False and e["isCanonical"] is False,"new lore promoted: "+key)
             req(e["worldStateEntityId"] is None and e["coordinates"] is None and bool(e["name"]),"materialized or unnamed: "+key)
-    for e in d["proposedUrbanAreas"]:
+    for i,e in enumerate(d["proposedUrbanAreas"]):
         req(e["isOfficialDistrict"] is False and e["spatialBoundary"] is None,"district invented")
+        req(e["name"]==exact["approvedPopularAreaNames"][i]
+            and e["popularNameApproval"]=="AUTHORED_TAR_DP21_01_A"
+            and e["popularNameAuthorApproved"] is True,"approved popular names changed")
     for e in d["proposedEstablishments"]:
         req(e["areaId"] in ids["proposedUrbanAreas"] and e["actualLocationId"] is None and e["materialized"] is False
             and e["ownerEntityId"] is None and e["inventoryEntityIds"]==[] and e["capacity"] is None,"shop invented")
@@ -62,8 +67,11 @@ def validate(d, files=True):
     for e in d["testOnlyScenes"]:
         req(e["status"]=="TEST_ONLY" and e["createsEvent"] is False and e["worldStateEntityId"] is None
             and len(e["personRefs"])>=2 and set(e["personRefs"])<=ids["proposedPeople"],"scene made real")
-    req(d["authorDecisions"]==[{"id":f"TAR-DP21-{i:02d}","status":"PENDING_AUTHOR","selectedOption":None,
-                                 "approvedDate":None,"canonPromotion":False} for i in range(1,9)],"approvals forged")
+    req(d["authorDecisions"]==[{"id":"TAR-DP21-01","status":"APPROVED","selectedOption":"A",
+         "approvedDate":"2026-11-11","canonPromotion":True,
+         "approvalScope":"SIX_POPULAR_NAMES_NO_OFFICIAL_DISTRICTS_NO_GEOMETRY"}]
+         + [{"id":f"TAR-DP21-{i:02d}","status":"PENDING_AUTHOR","selectedOption":None,
+             "approvedDate":None,"canonPromotion":False} for i in range(2,9)],"approvals forged")
     req(all(v is False for v in d["runtime"].values()) and d["nextPhase"]=="D.P22_SYVARIS_NOT_STARTED","runtime created")
     req(d["editorialClosure"]=={"authorDecisionId":"TAR-DP21-08","closureApproved":False,
           "ciCertifiedInData":False,"mergeAuthorized":False,"prMustRemainDraft":True,
@@ -102,7 +110,7 @@ def validate(d, files=True):
 
 def mutation_test(d):
     edits=[
-      ("canon",lambda x:x.update(addsCanon=True)),("approval",lambda x:x.update(authorApprovalRecorded=True)),
+      ("canon",lambda x:x.update(addsCanon=False)),("approval",lambda x:x.update(authorApprovalRecorded=False)),
       ("state",lambda x:x.update(createsWorldStateEntities=True)),
       ("river",lambda x:x["canonClaims"].update(thalenTerminalArms=3)),
       ("rivers",lambda x:x["canonClaims"].update(thalenSingleNamedRiver=False)),
@@ -123,6 +131,10 @@ def mutation_test(d):
       ("district",lambda x:x["proposedUrbanAreas"][0].update(isOfficialDistrict=True)),
       ("boundary",lambda x:x["proposedUrbanAreas"][0].update(spatialBoundary="poly")),
       ("areaapproved",lambda x:x["proposedUrbanAreas"][0].update(authorApproved=True)),
+      ("popular_name_modified",lambda x:x["proposedUrbanAreas"][0].update(name="Otro nombre")),
+      ("popular_name_approval_lost",lambda x:x["proposedUrbanAreas"][0].update(popularNameAuthorApproved=False)),
+      ("popular_name_canon_lost",lambda x:x["canonClaims"]["approvedPopularAreaNames"].pop()),
+      ("popular_district_forged",lambda x:x["canonClaims"].update(approvedPopularAreaNamesDoNotDefineDistricts=False)),
       ("areaentity",lambda x:x["proposedUrbanAreas"][0].update(worldStateEntityId="id")),
       ("owner",lambda x:x["proposedEstablishments"][0].update(ownerEntityId="id")),
       ("stock",lambda x:x["proposedEstablishments"][0].update(inventoryEntityIds=["fish"])),
@@ -143,8 +155,10 @@ def mutation_test(d):
       ("arcperson",lambda x:x["proposedConditionalArcs"][0].update(personRefs=["TAR-N99"])),
       ("scene",lambda x:x["testOnlyScenes"][0].update(createsEvent=True)),
       ("sceneperson",lambda x:x["testOnlyScenes"][0].update(personRefs=["TAR-N99"])),
-      ("decision",lambda x:x["authorDecisions"][0].update(selectedOption="A")),
-      ("decisionstatus",lambda x:x["authorDecisions"][0].update(status="APPROVED")),
+      ("decision",lambda x:x["authorDecisions"][0].update(selectedOption="B")),
+      ("decisionstatus",lambda x:x["authorDecisions"][0].update(status="PENDING_AUTHOR")),
+      ("decision_scope",lambda x:x["authorDecisions"][0].update(approvalScope="SIX_OFFICIAL_DISTRICTS")),
+      ("another_decision",lambda x:x["authorDecisions"][1].update(status="APPROVED")),
       ("ci",lambda x:x["editorialClosure"].update(ciCertifiedInData=True)),
       ("merge",lambda x:x["editorialClosure"].update(mergeAuthorized=True)),
       ("draft",lambda x:x["editorialClosure"].update(prMustRemainDraft=False)),
@@ -160,4 +174,4 @@ def mutation_test(d):
 if __name__=="__main__":
     d=read(DATA);validate(d)
     print("D.P21 Taramin CONTRACT PASS; negative mutations rejected:",mutation_test(d))
-    print("PROPOSALS ONLY: no author approvals, geometry, runtime or merge are certified.")
+    print("PARTIAL AUTHOR APPROVAL: six popular names only; no official districts, geometry, runtime or merge.")

@@ -1,6 +1,6 @@
 # D.P21 — Taramin: la ciudad que vive pendiente de lo que llega
 
-**Naturaleza:** autoría urbana profunda, PROPUESTA PENDIENTE DEL AUTOR. Fecha de creación: 11/11/2026. No es plano aprobado ni localización física de entidades.
+**Naturaleza:** autoría urbana profunda, **APROBACIÓN PARCIAL TAR-DP21-01 A: seis nombres populares únicamente**; el resto del lore sigue pendiente del autor. Fecha de creación: 11/11/2026. No es plano aprobado ni localización física de entidades.
 
 ## Lo que ya es canon
 
@@ -12,11 +12,11 @@ Veldora negocia la custodia de mercancías exteriores; **Taramin negocia tiempo 
 
 Una buena escena debe notar la diferencia entre **lo que realmente se ha capturado**, **lo que alguien promete**, **lo que puede conservarse** y **lo que otro vecino sabe**. Los brazos del Thalen afectan a la incertidumbre de acceso sin que se dibujen sus márgenes por intuición.
 
-## Seis ámbitos de experiencia propuestos (TAR-U01–U06)
+## Seis nombres populares aprobados (TAR-U01–U06)
 
-Los nombres son **topónimos populares candidatos**, no barrios, distritos, límites, calles ni geografía aprobada. Pueden coexistir o solaparse si el autor los aprueba; ni siquiera se confirma su número final.
+**TAR-DP21-01 A, 11/11/2026:** el autor aprueba los seis nombres de uso popular como **AUTHORED**, susceptibles de solaparse. Su aprobación **no** crea ni fija barrios administrativos, distritos oficiales, número de divisiones municipales, límites, calles, parcelas, coordenadas o nuevas instalaciones. La asociación temática de cada ámbito es todavía una propuesta editorial no situada.
 
-| ID | Nombre propuesto | Experiencia humana | Lo que NO afirma |
+| ID | Nombre popular aprobado | Experiencia humana propuesta | Lo que NO afirma |
 | --- | --- | --- | --- |
 | TAR-U01 | **Voces de la Marea** | Espera, valoración y traslado de productos del agua alrededor de la **zona pesquera principal conceptual** | Ningún muelle, mercado formal ni ubicación en un brazo |
 | TAR-U02 | **El Patio de los Remiendos** | Reparar útiles, negociar pequeños encargos y aprender con materiales limitados | No funda un gremio ni taller físico |
@@ -25,7 +25,7 @@ Los nombres son **topónimos populares candidatos**, no barrios, distritos, lím
 | TAR-U05 | **La Voz del Thalen** | Memoria oral de rutas, cautelas y noticias relacionadas con los brazos | No certifica paso, embarcadero, puente ni vado |
 | TAR-U06 | **Los Oficios de Tierra** | Actividades no pesqueras, cuidados, pequeños servicios e intercambios con la península | No crea camino transpeninsular ni gran explotación del bosque |
 
-**Nota estética:** «Sombras de la Cal» es evocación popular propuesta; no prueba que toda Taramin esté encalada. «Voces de la Marea» no atribuye valores de marea ni comportamiento hidrológico específico.
+**Nota estética:** «Sombras de la Cal» es denominación popular aprobada; no prueba que toda Taramin esté encalada. «Voces de la Marea» no atribuye valores de marea ni comportamiento hidrológico específico.
 
 ## Cómo se siente la ciudad
 
@@ -41,4 +41,4 @@ Los nombres son **topónimos populares candidatos**, no barrios, distritos, lím
 2. **Interfluvio / acceso verificado:** ninguna conversación sobre cruzar un brazo equivale a confirmar un paso.
 3. **Península semiárida / vida cotidiana:** sombra, abastecimiento y saneamiento deben resolverse al construir lugares, pero no se presupone que ya haya infraestructuras físicas.
 
-**Pendiente de decisión:** carácter cultural, seis nombres de ámbitos y posterior mapa físico. Todos los nombres aquí introducidos permanecen PROPOSAL_PENDING_AUTHOR. Fuentes: D07/D08/D09/D10, D.P13 y D.P16 Taramin.
+**Pendiente de decisión:** carácter cultural, funcionamiento y delimitación física de los ámbitos, emplazamientos y mapa. **Solo los seis nombres populares son AUTHORED**; sus entidades, usos y límites espaciales continúan PROPOSAL_PENDING_AUTHOR. Fuentes: D07/D08/D09/D10, D.P13 y D.P16 Taramin.

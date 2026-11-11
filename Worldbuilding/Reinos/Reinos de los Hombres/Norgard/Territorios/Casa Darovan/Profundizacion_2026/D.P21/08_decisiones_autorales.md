@@ -1,9 +1,9 @@
 # D.P21 — Cuaderno de decisiones del autor: Taramin
 
-**Estado de las ocho decisiones: PENDIENTE DE APROBACIÓN EXPLÍCITA.** La orden de desarrollar la fase autoriza la creación de propuestas, no la elección automática de sus opciones. Los IDs TAR-DP21-01–08 no heredan resoluciones de Veldora. Registro previsto: respuesta del autor, fecha, opción, alcance exacto y transición de estado **solo** para lo aprobado.
+**Estado de las decisiones: TAR-DP21-01 A APROBADA (11/11/2026); TAR-DP21-02–08 PENDIENTES.** La orden de desarrollar la fase autoriza la creación de propuestas, no la elección automática de sus opciones. Los IDs TAR-DP21-01–08 no heredan resoluciones de Veldora. Registro previsto: respuesta del autor, fecha, opción, alcance exacto y transición de estado **solo** para lo aprobado.
 
 ## TAR-DP21-01 · Seis nombres populares de ámbitos
-**A (recomendada):** aceptar «Voces de la Marea», «El Patio de los Remiendos», «Sombras de la Cal», «Las Cuentas Secas», «La Voz del Thalen» y «Los Oficios de Tierra» como nombres populares susceptibles de solapamiento. **B:** mantener los seis solo como conceptos sin aprobar topónimos. **C:** modificar cantidad/nombres. **Pendiente.** A no crea barrios administrativos ni límites.
+**A (recomendada):** aceptar «Voces de la Marea», «El Patio de los Remiendos», «Sombras de la Cal», «Las Cuentas Secas», «La Voz del Thalen» y «Los Oficios de Tierra» como nombres populares susceptibles de solapamiento. **B:** mantener los seis solo como conceptos sin aprobar topónimos. **C:** modificar cantidad/nombres. **APROBADA — opción A (11/11/2026).** Los seis nombres TAR-U01–TAR-U06 pasan a ser **AUTHORED como denominaciones populares de ámbitos susceptibles de solaparse**; no constituyen barrios administrativos, perímetros, posiciones, calles, parcelas, instalaciones ni geometría. Su función espacial y los vínculos entre establecimientos siguen sujetos a propuesta y cartografía. **Declaración expresa del autor:** «TAR-DP21-01: Apruebo la opción A, los seis nombres populares sin geometría».
 
 ## TAR-DP21-02 · Personalidad cultural
 **A (recomendada):** ciudad **pragmática, marinera y plural**: la reputación procede del trabajo y los cuidados, sin mística colectiva ni miseria general; el ritmo está afectado por lo perecedero, pero la identidad no reduce a todos a la pesca. **B:** enfatizar la convivencia de oficios de tierra y agua sin caracterizar una mayoría cultural. **C:** carácter propuesto por el autor. **Pendiente.** Ninguna opción modifica ley o instituciones.
@@ -30,7 +30,7 @@
 
 | ID | Decisión | Opción | Fecha | Aprobación |
 | --- | --- | --- | --- | --- |
-| TAR-DP21-01 | Nombres de ámbitos | — | — | PENDIENTE |
+| TAR-DP21-01 | Seis nombres populares, ámbitos superponibles sin geometría | A | 11/11/2026 | APROBADA (solo nombres) |
 | TAR-DP21-02 | Personalidad cultural | — | — | PENDIENTE |
 | TAR-DP21-03 | Establecimientos futuros | — | — | PENDIENTE |
 | TAR-DP21-04 | Biografías futuras | — | — | PENDIENTE |
@@ -38,5 +38,7 @@
 | TAR-DP21-06 | Arcos condicionales | — | — | PENDIENTE |
 | TAR-DP21-07 | Cartografía futura | — | — | PENDIENTE |
 | TAR-DP21-08 | Cierre y CI | — | — | PENDIENTE |
+
+**Registro de canon parcial (11/11/2026):** TAR-U01 «Voces de la Marea», TAR-U02 «El Patio de los Remiendos», TAR-U03 «Sombras de la Cal», TAR-U04 «Las Cuentas Secas», TAR-U05 «La Voz del Thalen» y TAR-U06 «Los Oficios de Tierra» son nombres populares aprobados; TAR-DP21-02–08 permanecen pendientes. No se conocen límites urbanos, barrios oficiales ni localizaciones de sus elementos.
 
 **Política estricta:** aprobar un nombre no aprueba geometría; aprobar local/biografía no crea edificio/NPC; aprobar historia no afirma acontecimiento ni establece ley; aprobar proceso de cartografía no inventa un cruce del Thalen. La autoridad de cada dato debe quedar trazada.
