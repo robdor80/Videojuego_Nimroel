@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp20_veldora_city_authorship_proposals_v0.1",
+  "version": "0.1.0",
+  "phase": "D.P20",
+  "date": "2026-11-11",
+  "status": "PROPOSAL_PENDING_AUTHOR",
+  "cityId": "veldora",
+  "cityKind": "canonical_city_manual_reference",
+  "canonClaims": {
+    "principalCommercialPortOfNorgard": true,
+    "gulf": "Golfo de Veldora",
+    "commercialLayout": "distributed_organic_B",
+    "d07AuthorDecision": "DAR-D07-01_B",
+    "populationRange": {
+      "minInclusive": 29000,
+      "maxInclusive": 35000,
+      "exact": null
+    },
+    "urbanReferenceAltitudeMetersApprox": {
+      "min": 0,
+      "max": 60
+    },
+    "riverVeldoraIndependentFromBelaraLhera": true,
+    "externalCustomsAuthority": "CORONA",
+    "internalCustomsBetweenHouses": false,
+    "roadVeldoraTreihordExistsAsQualitativeLink": true
+  },
+  "lockedUnknowns": {
+    "officialDistrictCount": null,
+    "cityCenterCoordinates": null,
+    "coastlineGeometry": null,
+    "portGeometry": null,
+    "newDocks": null,
+    "quaysAndCapacities": null,
+    "riverVeldoraNavigation": null,
+    "riverCrossings": null,
+    "islandIdentification": null,
+    "streetLayout": null,
+    "parcelMap": null,
+    "roadDistanceKm": null,
+    "roadTravelTime": null,
+    "populationExact": null,
+    "buildingCounts": null,
+    "householdCounts": null,
+    "realInventory": null,
+    "realNpcPopulation": null,
+    "datesOfLocalHistoricalEvents": null,
+    "customsSchedule": null,
+    "commercialVolumes": null
+  },
+  "authorApprovalRecorded": false,
+  "addsCanon": false,
+  "createsWorldStateEntities": false,
+  "externalCustomsFacilityCreated": false,
+  "privateRoyalArmyCreated": false,
+  "proposedUrbanAreas": [
+    {
+      "id": "VEL-U01",
+      "name": "Borde de las Marcas",
+      "purpose": "interfaz_mercante_maritima",
+      "spatialBoundary": null,
+      "isOfficialDistrict": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-U02",
+      "name": "Patios de la Cuenta",
+      "purpose": "deposito_y_custodia",
+      "spatialBoundary": null,
+      "isOfficialDistrict": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-U03",
+      "name": "Calles del Trato",
+      "purpose": "comercio_distribuido",
+      "spatialBoundary": null,
+      "isOfficialDistrict": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-U04",
+      "name": "Patios del Oficio",
+      "purpose": "artesania_y_reparacion",
+      "spatialBoundary": null,
+      "isOfficialDistrict": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-U05",
+      "name": "Tejas Serenas",
+      "purpose": "habitat_acomodado",
+      "spatialBoundary": null,
+      "isOfficialDistrict": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-U06",
+      "name": "Vuelta del Camino",
+      "purpose": "transicion_treihord",
+      "spatialBoundary": null,
+      "isOfficialDistrict": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    }
+  ],
+  "proposedEstablishments": [
+    {
+      "id": "VEL-L01",
+      "name": "Depósito de la Cuerda Ceniza",
+      "purpose": "custodia_privada",
+      "areaId": "VEL-U02",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L02",
+      "name": "Mesa de los Tres Renglones",
+      "purpose": "escribania_privada",
+      "areaId": "VEL-U03",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L03",
+      "name": "Taller de la Cuña Fina",
+      "purpose": "carpinteria_reparacion",
+      "areaId": "VEL-U04",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L04",
+      "name": "Fragua del Arco Corto",
+      "purpose": "herreria_menor",
+      "areaId": "VEL-U04",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L05",
+      "name": "Casa de las Dos Tejas",
+      "purpose": "hospedaje",
+      "areaId": "VEL-U03",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L06",
+      "name": "Patio del Encordado",
+      "purpose": "trabajo_cooperativo",
+      "areaId": "VEL-U04",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L07",
+      "name": "La Medida Prestada",
+      "purpose": "pesaje_privado",
+      "areaId": "VEL-U03",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L08",
+      "name": "Horno de los Postigos",
+      "purpose": "panaderia",
+      "areaId": "VEL-U03",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L09",
+      "name": "Casa de los Pliegos",
+      "purpose": "hogar_mercantil",
+      "areaId": "VEL-U05",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L10",
+      "name": "Banco de las Hebillas",
+      "purpose": "taller_tienda",
+      "areaId": "VEL-U04",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L11",
+      "name": "Archivo de las Copias",
+      "purpose": "deposito_documental_privado",
+      "areaId": "VEL-U03",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-L12",
+      "name": "Patio de los Carros",
+      "purpose": "servicio_urbano",
+      "areaId": "VEL-U06",
+      "actualLocationId": null,
+      "capacity": null,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    }
+  ],
+  "proposedPeople": [
+    {
+      "id": "VEL-N01",
+      "name": "Liria Menor",
+      "role": "comerciante",
+      "associatedEstablishmentId": null,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownCurrentFacts": [],
+      "isNamedNpcInWorld": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-N02",
+      "name": "Sered Alvar",
+      "role": "custodio",
+      "associatedEstablishmentId": "VEL-L01",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownCurrentFacts": [],
+      "isNamedNpcInWorld": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-N03",
+      "name": "Naia Corven",
+      "role": "artesana",
+      "associatedEstablishmentId": "VEL-L03",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownCurrentFacts": [],
+      "isNamedNpcInWorld": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-N04",
+      "name": "Oren Talen",
+      "role": "escribiente_aduanas_de_corona",
+      "associatedEstablishmentId": null,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownCurrentFacts": [],
+      "isNamedNpcInWorld": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-N05",
+      "name": "Vesa Orrin",
+      "role": "trabajadora_adulta",
+      "associatedEstablishmentId": "VEL-L06",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownCurrentFacts": [],
+      "isNamedNpcInWorld": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-N06",
+      "name": "Bram Iven",
+      "role": "transportista",
+      "associatedEstablishmentId": "VEL-L12",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownCurrentFacts": [],
+      "isNamedNpcInWorld": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-N07",
+      "name": "Mira Sern",
+      "role": "posadera",
+      "associatedEstablishmentId": "VEL-L05",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownCurrentFacts": [],
+      "isNamedNpcInWorld": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-N08",
+      "name": "Edris Fen",
+      "role": "copista",
+      "associatedEstablishmentId": "VEL-L02",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownCurrentFacts": [],
+      "isNamedNpcInWorld": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-N09",
+      "name": "Adel Renvar",
+      "role": "comerciante_acomodada",
+      "associatedEstablishmentId": "VEL-L09",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownCurrentFacts": [],
+      "isNamedNpcInWorld": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-N10",
+      "name": "Fenra Doril",
+      "role": "panadera",
+      "associatedEstablishmentId": "VEL-L08",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "knownCurrentFacts": [],
+      "isNamedNpcInWorld": false,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    }
+  ],
+  "proposedConflicts": [
+    {
+      "id": "VEL-H01",
+      "theme": "bulto_que_nadie_quiere_abrir",
+      "personRefs": [
+        "VEL-N01",
+        "VEL-N02",
+        "VEL-N04",
+        "VEL-N08"
+      ],
+      "scenarioState": "CONDITIONAL_NOT_TRIGGERED",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-H02",
+      "theme": "herramienta_dos_hogares",
+      "personRefs": [
+        "VEL-N03",
+        "VEL-N05",
+        "VEL-N09"
+      ],
+      "scenarioState": "CONDITIONAL_NOT_TRIGGERED",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-H03",
+      "theme": "rumor_vela_extranjera",
+      "personRefs": [
+        "VEL-N07",
+        "VEL-N06",
+        "VEL-N04"
+      ],
+      "scenarioState": "CONDITIONAL_NOT_TRIGGERED",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "VEL-H04",
+      "theme": "pan_paga_y_credito",
+      "personRefs": [
+        "VEL-N10",
+        "VEL-N05",
+        "VEL-N09"
+      ],
+      "scenarioState": "CONDITIONAL_NOT_TRIGGERED",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    }
+  ],
+  "testOnlyScenes": [
+    {
+      "id": "VEL-E01",
+      "theme": "ultimo_cordel_del_dia",
+      "personRefs": [
+        "VEL-N05",
+        "VEL-N02",
+        "VEL-N03"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "VEL-E02",
+      "theme": "palabra_distinta_en_papel",
+      "personRefs": [
+        "VEL-N08",
+        "VEL-N01",
+        "VEL-N02"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "VEL-E03",
+      "theme": "hombre_que_no_vio_barco",
+      "personRefs": [
+        "VEL-N07",
+        "VEL-N06"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "VEL-E04",
+      "theme": "pan_para_pasado_manana",
+      "personRefs": [
+        "VEL-N10",
+        "VEL-N05"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "VEL-E05",
+      "theme": "factura_desde_arriba",
+      "personRefs": [
+        "VEL-N09",
+        "VEL-N03",
+        "VEL-N01"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "VEL-E06",
+      "theme": "encargo_a_treihord",
+      "personRefs": [
+        "VEL-N06",
+        "VEL-N01"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    }
+  ],
+  "authorDecisions": [
+    {
+      "id": "DAR-DP20-01",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "DAR-DP20-02",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "DAR-DP20-03",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "DAR-DP20-04",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "DAR-DP20-05",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "DAR-DP20-06",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "DAR-DP20-07",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "DAR-DP20-08",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    }
+  ],
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Ciudades/Veldora/D07_PERFIL_URBANO_OPERATIVO_v0.1.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d08_population_services_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d05_mobility_communications_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_veldora_elevation_authorial_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P16/ciudad_veldora_plan_funcional_condicionado.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P18/03_cierre_editorial_real_y_traspaso_DP20.md"
+  ],
+  "documentPaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P20/README.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P20/01_ciudad_y_tejidos_urbanos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P20/02_lugares_oficios_y_establecimientos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P20/03_vida_cotidiana_y_cadenas_materiales.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P20/04_personajes_hogares_y_relaciones.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P20/05_memoria_urbana_y_conflictos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P20/06_escenas_y_ramas_de_decision.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P20/07_cartografia_contratos_y_cierre.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P20/08_decisiones_autorales.md"
+  ],
+  "runtime": {
+    "coreRpgIntegration": false,
+    "godotIntegration": false,
+    "materializedStreets": false,
+    "generatedDistricts": false,
+    "createdNpcEntities": false,
+    "persistenceTested": false
+  },
+  "nextPhase": "D.P21_TARAMIN_NOT_STARTED"
+}
