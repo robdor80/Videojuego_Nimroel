@@ -1,10 +1,12 @@
 # D.P20 — Cuaderno de decisión autoral de Veldora
 
-**Este documento NO constituye una aprobación.** El autor ha autorizado **crear la propuesta D.P20**. La conversión de material nuevo a AUTHORED requiere su decisión **expresa** y el registro correspondiente en GitHub. Cada pregunta admite aceptar, renombrar, corregir o rechazar. La ausencia de respuesta nunca equivale a canon.
+**Cuaderno de decisiones parcialmente aprobadas.** El 11/11/2026 el autor aprobó expresamente **DAR-DP20-01 A**, limitada a seis denominaciones populares. Las demás cuestiones siguen pendientes; no se aprueban barrios administrativos, posiciones, instalaciones o WorldState.
 
 ## DAR-DP20-01 · Identidad espacial: seis ámbitos candidatos
 
-**Propuesta A (recomendada):** conservar como nombres de uso popular susceptibles de solaparse los seis ámbitos U01–U06, sin asegurar que sean seis barrios administrativos. Después se decidirán forma y límites en mapa. **B:** mantener las seis identidades solo como descriptores funcionales sin ningún topónimo aprobado. **C:** selección/renombrado libre del autor. **Estado: PROPOSAL_PENDING_AUTHOR.**
+**Propuesta A (recomendada):** conservar como nombres de uso popular susceptibles de solaparse los seis ámbitos U01–U06, sin asegurar que sean seis barrios administrativos. Después se decidirán forma y límites en mapa. **B:** mantener las seis identidades solo como descriptores funcionales sin ningún topónimo aprobado. **C:** selección/renombrado libre del autor. **Estado: APPROVED_AUTHOR — opción A, 11/11/2026.** Se aprueban los nombres populares «Borde de las Marcas», «Patios de la Cuenta», «Calles del Trato», «Patios del Oficio», «Tejas Serenas», «Vuelta del Camino». Los ámbitos pueden solaparse. **No** se aprueba que sean barrios administrativos, número real de barrios, límites, planos, calles, parcelas ni edificios.
+
+**Declaración expresa del autor:** «DAR-DP20-01: Apruebo la opción A».
 
 ## DAR-DP20-02 · Carácter de la ciudad
 
@@ -38,7 +40,7 @@
 
 | ID | Resolución del autor | Fecha | Efecto canónico | Estado |
 | --- | --- | --- | --- | --- |
-| DAR-DP20-01 | — | — | Ninguno | PENDIENTE |
+| DAR-DP20-01 | Opción A: seis denominaciones populares, superponibles | 11/11/2026 | Solo los nombres U01–U06 AUTHORED; barrios, geometría y locales aún pendientes | APROBADA |
 | DAR-DP20-02 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-03 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-04 | — | — | Ninguno | PENDIENTE |
@@ -47,4 +49,4 @@
 | DAR-DP20-07 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-08 | — | — | Ninguno | PENDIENTE |
 
-**Disciplina al aprobar:** escribir fuente/fecha/opción y contenido exacto; revisar colisiones de nombres con el canon global; convertir SOLO elementos nombrados a AUTHORED en el registro competente; dejar resto en PROPOSAL_PENDING_AUTHOR. Jamás actualizar WorldState por alterar un Markdown.
+**Disciplina al aprobar:** registrar fuente/fecha/opción y contenido exacto; convertir SOLO lo aprobado a AUTHORED. **Para U01–U06 se ha aprobado el nombre popular, no su geometría ni que sean barrios oficiales.** Dejar locales, personas e historias en PROPOSAL_PENDING_AUTHOR. Jamás actualizar WorldState por alterar un Markdown.

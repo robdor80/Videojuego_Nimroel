@@ -1,6 +1,6 @@
 # Veldora: la ciudad que cambia de manos
 
-**Estado de todo nombre nuevo en este archivo: PROPOSAL_PENDING_AUTHOR.** Los seis nombres son candidatos de **ámbitos urbanos**, no barrios registrados, límites territoriales ni posiciones cartográficas. La ciudad canónica tiene comercio repartido; la cantidad de seis ámbitos **no implica seis distritos oficiales**.
+**Decisión autoral DAR-DP20-01 A (11/11/2026):** los seis nombres U01–U06 son **AUTHORED como denominaciones populares de ámbitos urbanos que pueden solaparse**. Las ubicaciones y la composición urbana continúan en **PROPOSAL_PENDING_AUTHOR**. No son barrios administrativos ni delimitaciones físicas; seis nombres no implican seis distritos oficiales.
 
 ## La impresión al llegar
 
@@ -10,7 +10,7 @@ Veldora no empieza al tocar el agua: empieza cuando alguien necesita demostrar q
 
 **Vista desde el interior, sin fijar puerta:** fachadas que alternan trabajo y vivienda, tránsito que se adapta a la pendiente que exista, establecimientos especializados separados por calles vivas. Los acomodados buscan distancia relativa de la agitación portuaria, no segregación legal ni un anillo imposible de atravesar.
 
-## Seis ámbitos propuestos, con voz propia
+## Seis nombres populares aprobados; ámbitos físicos pendientes
 
 ### VEL-U01 — «Borde de las Marcas»: interfaz mercante marítima
 
@@ -78,4 +78,4 @@ El río **Veldora** existe al sur de la ciudad según la resolución de mapa; el
 
 Una escena que se traslada sin cambios a Taramin o Syvaris **fracasa** aquí. Veldora es un puerto de transacción mercantil y responsabilidad múltiple, no la ciudad centrada en la pesca de Taramin ni el abrigo de la Armada Real en Syvaris. Una escena que convierte Treihord en puerto marítimo, o aduana exterior en tributo de Casa, también fracasa.
 
-**Salida editorial:** seis ámbitos con carácter, transiciones narrativas y restricciones precisas, **sin decidir número oficial de barrios ni emplazamiento**. Las opciones de incorporación están en 08.
+**Salida editorial:** seis denominaciones populares **aprobadas**, con ámbitos funcionales descritos y sin decidir el número oficial de barrios ni emplazamiento. Negocios y personajes siguen propuestos. Resolución registrada en [08](08_decisiones_autorales.md).

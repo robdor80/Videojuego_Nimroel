@@ -1,8 +1,8 @@
 # D.P20 — Veldora, ciudad mercantil vivida
 
-**Fecha:** 11/11/2026 · **Estado:** PROPUESTA EDITORIAL COMPLETA PARA REVISIÓN AUTORAL · **Integración en CoreRPG/Godot:** NO.
+**Fecha:** 11/11/2026 · **Estado:** APROBACIÓN PARCIAL DE SEIS NOMBRES POPULARES (DAR-DP20-01 A); resto en revisión autoral · **Integración en CoreRPG/Godot:** NO.
 
-Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de puertos ni ampliación automática de D.P16. Su materia prima es el canon de Norgard/D07–D10 y D.P13, y el anteproyecto D.P16. La PR aporta autoría urbana, negocios, personas posibles, relaciones, escenas y obligaciones de implementación; **no convierte los topónimos o personas de nueva creación en canon por estar en Git**.
+Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de puertos ni ampliación automática de D.P16. Su materia prima es el canon de Norgard/D07–D10 y D.P13, y el anteproyecto D.P16. La PR aporta autoría urbana, negocios, personas posibles, relaciones, escenas y obligaciones de implementación; **solo convierte en canon los seis nombres populares aprobados expresamente el 11/11/2026; las personas, establecimientos y geometrías siguen pendientes**.
 
 ## Lectura recomendada
 
@@ -24,6 +24,7 @@ Este paquete desarrolla Veldora **como ciudad singular**, no como plantilla de p
 - **AUTHORED:** puerto, almacenes, gremios y talleres; **aduana exterior de la Corona** con apoyo de la Casa; no aduanas entre Casas.
 - **AUTHORED:** río Veldora independiente de Belara/Lhera; no se deducen puentes, bocas, navegación ni muelles de río. La gran isla boscosa de la referencia visual no se identifica automáticamente con Arven.
 - **AUTHORED:** vínculo terrestre cualitativo Veldora–Treihord; sin trayecto, duración, puente, peaje ni establecimientos intermedios acreditados.
+- **AUTHORED (DAR-DP20-01 A):** «Borde de las Marcas», «Patios de la Cuenta», «Calles del Trato», «Patios del Oficio», «Tejas Serenas», «Vuelta del Camino», seis denominaciones populares superponibles, **no barrios administrativos ni polígonos delimitados**.
 
 ## Semántica de autoridad
 

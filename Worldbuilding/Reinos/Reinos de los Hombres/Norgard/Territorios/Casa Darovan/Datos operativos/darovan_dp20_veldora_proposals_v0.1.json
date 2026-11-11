@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "phase": "D.P20",
   "date": "2026-11-11",
-  "status": "PROPOSAL_PENDING_AUTHOR",
+  "status": "MIXED_AUTHORED_POPULAR_NAMES_AND_PENDING_PROPOSALS",
   "cityId": "veldora",
   "cityKind": "canonical_city_manual_reference",
   "canonClaims": {
@@ -24,7 +24,16 @@
     "riverVeldoraIndependentFromBelaraLhera": true,
     "externalCustomsAuthority": "CORONA",
     "internalCustomsBetweenHouses": false,
-    "roadVeldoraTreihordExistsAsQualitativeLink": true
+    "roadVeldoraTreihordExistsAsQualitativeLink": true,
+    "approvedPopularAreaNames": [
+      "Borde de las Marcas",
+      "Patios de la Cuenta",
+      "Calles del Trato",
+      "Patios del Oficio",
+      "Tejas Serenas",
+      "Vuelta del Camino"
+    ],
+    "approvedPopularAreaNamesDoNotDefineDistricts": true
   },
   "lockedUnknowns": {
     "officialDistrictCount": null,
@@ -49,8 +58,8 @@
     "customsSchedule": null,
     "commercialVolumes": null
   },
-  "authorApprovalRecorded": false,
-  "addsCanon": false,
+  "authorApprovalRecorded": true,
+  "addsCanon": true,
   "createsWorldStateEntities": false,
   "externalCustomsFacilityCreated": false,
   "privateRoyalArmyCreated": false,
@@ -65,7 +74,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_DAR_DP20_01_A",
+      "popularNameAuthorApproved": true
     },
     {
       "id": "VEL-U02",
@@ -77,7 +88,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_DAR_DP20_01_A",
+      "popularNameAuthorApproved": true
     },
     {
       "id": "VEL-U03",
@@ -89,7 +102,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_DAR_DP20_01_A",
+      "popularNameAuthorApproved": true
     },
     {
       "id": "VEL-U04",
@@ -101,7 +116,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_DAR_DP20_01_A",
+      "popularNameAuthorApproved": true
     },
     {
       "id": "VEL-U05",
@@ -113,7 +130,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_DAR_DP20_01_A",
+      "popularNameAuthorApproved": true
     },
     {
       "id": "VEL-U06",
@@ -125,7 +144,9 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "popularNameApproval": "AUTHORED_DAR_DP20_01_A",
+      "popularNameAuthorApproved": true
     }
   ],
   "proposedEstablishments": [
@@ -599,10 +620,11 @@
   "authorDecisions": [
     {
       "id": "DAR-DP20-01",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "SIX_POPULAR_NAMES_NO_ADMIN_DISTRICTS_NO_GEOMETRY"
     },
     {
       "id": "DAR-DP20-02",

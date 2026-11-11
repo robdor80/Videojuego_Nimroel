@@ -20,11 +20,13 @@ def invariant(d, check_files=True):
     req(d["schemaVersion"] == 1 and d["version"] == "0.1.0", "schema version")
     req(d["documentId"] == "darovan_dp20_veldora_city_authorship_proposals_v0.1", "document id")
     req(d["phase"] == "D.P20" and d["cityId"] == "veldora" and d["cityKind"] == "canonical_city_manual_reference", "scope")
-    req(d["status"] == "PROPOSAL_PENDING_AUTHOR" and d["authorApprovalRecorded"] is False and d["addsCanon"] is False, "authorial reserve")
+    req(d["status"] == "MIXED_AUTHORED_POPULAR_NAMES_AND_PENDING_PROPOSALS" and d["authorApprovalRecorded"] is True and d["addsCanon"] is True, "approval limited to popular names")
     req(d["createsWorldStateEntities"] is False and d["externalCustomsFacilityCreated"] is False and d["privateRoyalArmyCreated"] is False, "no instances")
     c=d["canonClaims"]
     req(c["principalCommercialPortOfNorgard"] is True and c["gulf"] == "Golfo de Veldora", "canonical commercial role")
     req(c["commercialLayout"] == "distributed_organic_B" and c["d07AuthorDecision"] == "DAR-D07-01_B", "D07 layout")
+    approved_names=["Borde de las Marcas","Patios de la Cuenta","Calles del Trato","Patios del Oficio","Tejas Serenas","Vuelta del Camino"]
+    req(c["approvedPopularAreaNames"]==approved_names and c["approvedPopularAreaNamesDoNotDefineDistricts"] is True,"approved popular names without official districts")
     req(c["populationRange"] == {"minInclusive":29000,"maxInclusive":35000,"exact":None}, "D08 population")
     req(c["urbanReferenceAltitudeMetersApprox"] == {"min":0,"max":60}, "D.P13 altitude")
     req(c["riverVeldoraIndependentFromBelaraLhera"] is True, "hydro")
@@ -41,7 +43,8 @@ def invariant(d, check_files=True):
             req(x["status"]=="PROPOSAL_PENDING_AUTHOR" and x["authorApproved"] is False and x["isCanonical"] is False, "not canon: "+key)
             req(x["worldStateEntityId"] is None and x["coordinates"] is None, "no geometry/WorldState: "+key)
             req(bool(x.get("name",x.get("theme"))), "not empty: "+key)
-    for x in d["proposedUrbanAreas"]:
+    for i,x in enumerate(d["proposedUrbanAreas"]):
+        req(x["name"]==approved_names[i] and x["popularNameApproval"]=="AUTHORED_DAR_DP20_01_A" and x["popularNameAuthorApproved"] is True, "popular names canonical only")
         req(x["spatialBoundary"] is None and x["isOfficialDistrict"] is False, "no approved district")
     for x in d["proposedEstablishments"]:
         req(x["areaId"] in refs["proposedUrbanAreas"] and x["actualLocationId"] is None, "places not located")
@@ -57,7 +60,10 @@ def invariant(d, check_files=True):
         req(set(x["personRefs"])<=refs["proposedPeople"], "scene people refs")
     req(len(d["authorDecisions"])==8, "eight authorial choices")
     for i,x in enumerate(d["authorDecisions"],1):
-        req(x=={"id":"DAR-DP20-"+str(i).zfill(2),"status":"PENDING_AUTHOR","selectedOption":None,"approvedDate":None,"canonPromotion":False}, "unauthorized approval")
+        if i==1:
+            req(x=={"id":"DAR-DP20-01","status":"APPROVED","selectedOption":"A","approvedDate":"2026-11-11","canonPromotion":True,"approvalScope":"SIX_POPULAR_NAMES_NO_ADMIN_DISTRICTS_NO_GEOMETRY"}, "exact approval scope")
+        else:
+            req(x=={"id":"DAR-DP20-"+str(i).zfill(2),"status":"PENDING_AUTHOR","selectedOption":None,"approvedDate":None,"canonPromotion":False}, "unauthorized other decision")
     req(all(v is False for v in d["runtime"].values()) and d["nextPhase"]=="D.P21_TARAMIN_NOT_STARTED", "scope isolation")
     if check_files:
         req(len(d["sourcePaths"])==7 and len(d["documentPaths"])==9, "document inventory")
@@ -83,7 +89,7 @@ def invariant(d, check_files=True):
 def mutation_tests(d):
     cases=[
         ("canon declared",lambda x:x.update(status="AUTHORED")),
-        ("author bypass",lambda x:x.update(authorApprovalRecorded=True)),
+        ("author approval erased",lambda x:x.update(authorApprovalRecorded=False)),
         ("world created",lambda x:x.update(createsWorldStateEntities=True)),
         ("population invented",lambda x:x["canonClaims"]["populationRange"].update(exact=32000)),
         ("altitude invented",lambda x:x["canonClaims"]["urbanReferenceAltitudeMetersApprox"].update(max=200)),
@@ -99,7 +105,11 @@ def mutation_tests(d):
         ("npc bad ref",lambda x:x["proposedPeople"][0].update(associatedEstablishmentId="unknown")),
         ("event claimed",lambda x:x["proposedConflicts"][0].update(scenarioState="OCCURRED")),
         ("scene event",lambda x:x["testOnlyScenes"][0].update(createsEvent=True)),
-        ("author choice guessed",lambda x:x["authorDecisions"][0].update(selectedOption="A")),
+        ("approved decision changed",lambda x:x["authorDecisions"][0].update(selectedOption="B")),
+        ("other decision prematurely selected",lambda x:x["authorDecisions"][1].update(selectedOption="A")),
+        ("popular name changed",lambda x:x["proposedUrbanAreas"][0].update(name="Otro nombre")),
+        ("popular name approval removed",lambda x:x["proposedUrbanAreas"][0].update(popularNameAuthorApproved=False)),
+        ("approved popular name omitted",lambda x:x["canonClaims"]["approvedPopularAreaNames"].pop()),
         ("runtime claimed",lambda x:x["runtime"].update(coreRpgIntegration=True)),
         ("D.P21 silently started",lambda x:x.update(nextPhase="D.P21_STARTED")),
     ]
@@ -114,4 +124,4 @@ if __name__=="__main__":
     d=read(DATA); invariant(d)
     n=mutation_tests(d)
     print(f"PASS D.P20: integral contract and {n} adverse mutations; source files and chapters verified.")
-    print("DOCUMENTARY ONLY: no lore approved, no runtime, no NPCs or map instantiated.")
+    print("DOCUMENTARY ONLY: six popular names approved; no official districts, runtime, NPCs or map instantiated.")
