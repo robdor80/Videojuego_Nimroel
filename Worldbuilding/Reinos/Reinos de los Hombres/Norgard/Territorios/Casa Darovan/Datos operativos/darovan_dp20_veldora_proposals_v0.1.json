@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "phase": "D.P20",
   "date": "2026-11-11",
-  "status": "MIXED_AUTHORED_DP20_01_02_03_04_05_AND_PENDING_PROPOSALS",
+  "status": "MIXED_AUTHORED_DP20_01_02_03_04_05_06_AND_PENDING_PROPOSALS",
   "cityId": "veldora",
   "cityKind": "canonical_city_manual_reference",
   "canonClaims": {
@@ -207,7 +207,72 @@
       }
     ],
     "personalMemoriesCreateHistoricalPublicEvents": false,
-    "personalMemoriesCreateWorldStateEvents": false
+    "personalMemoriesCreateWorldStateEvents": false,
+    "approvedFutureConditionalArcs": [
+      {
+        "id": "VEL-H01",
+        "title": "El bulto que nadie quiere abrir",
+        "theme": "bulto_que_nadie_quiere_abrir",
+        "personRefs": [
+          "VEL-N01",
+          "VEL-N02",
+          "VEL-N04",
+          "VEL-N08"
+        ],
+        "approval": "AUTHORED_FUTURE_CONDITIONAL_ARC_DAR_DP20_06_A",
+        "conditional": true,
+        "implementationStatus": "NOT_IMPLEMENTED",
+        "triggered": false,
+        "worldStateEventId": null
+      },
+      {
+        "id": "VEL-H02",
+        "title": "La herramienta que sostiene dos hogares",
+        "theme": "herramienta_dos_hogares",
+        "personRefs": [
+          "VEL-N03",
+          "VEL-N05",
+          "VEL-N09"
+        ],
+        "approval": "AUTHORED_FUTURE_CONDITIONAL_ARC_DAR_DP20_06_A",
+        "conditional": true,
+        "implementationStatus": "NOT_IMPLEMENTED",
+        "triggered": false,
+        "worldStateEventId": null
+      },
+      {
+        "id": "VEL-H03",
+        "title": "El rumor de una vela extranjera",
+        "theme": "rumor_vela_extranjera",
+        "personRefs": [
+          "VEL-N07",
+          "VEL-N06",
+          "VEL-N04"
+        ],
+        "approval": "AUTHORED_FUTURE_CONDITIONAL_ARC_DAR_DP20_06_A",
+        "conditional": true,
+        "implementationStatus": "NOT_IMPLEMENTED",
+        "triggered": false,
+        "worldStateEventId": null
+      },
+      {
+        "id": "VEL-H04",
+        "title": "Pan, paga y crédito",
+        "theme": "pan_paga_y_credito",
+        "personRefs": [
+          "VEL-N10",
+          "VEL-N05",
+          "VEL-N09"
+        ],
+        "approval": "AUTHORED_FUTURE_CONDITIONAL_ARC_DAR_DP20_06_A",
+        "conditional": true,
+        "implementationStatus": "NOT_IMPLEMENTED",
+        "triggered": false,
+        "worldStateEventId": null
+      }
+    ],
+    "conditionalArcsMayStartWithoutCoreRpgPreconditions": false,
+    "conditionalArcsCreateExistingWorldStateEvents": false
   },
   "lockedUnknowns": {
     "officialDistrictCount": null,
@@ -750,7 +815,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "designApproved": true,
+      "arcImplemented": false,
+      "arcTriggered": false,
+      "futureNarrativeArcApproval": "AUTHORED_FUTURE_CONDITIONAL_ARC_DAR_DP20_06_A"
     },
     {
       "id": "VEL-H02",
@@ -765,7 +834,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "designApproved": true,
+      "arcImplemented": false,
+      "arcTriggered": false,
+      "futureNarrativeArcApproval": "AUTHORED_FUTURE_CONDITIONAL_ARC_DAR_DP20_06_A"
     },
     {
       "id": "VEL-H03",
@@ -780,7 +853,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "designApproved": true,
+      "arcImplemented": false,
+      "arcTriggered": false,
+      "futureNarrativeArcApproval": "AUTHORED_FUTURE_CONDITIONAL_ARC_DAR_DP20_06_A"
     },
     {
       "id": "VEL-H04",
@@ -795,7 +872,11 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "designApproved": true,
+      "arcImplemented": false,
+      "arcTriggered": false,
+      "futureNarrativeArcApproval": "AUTHORED_FUTURE_CONDITIONAL_ARC_DAR_DP20_06_A"
     }
   ],
   "testOnlyScenes": [
@@ -912,10 +993,11 @@
     },
     {
       "id": "DAR-DP20-06",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "FOUR_FUTURE_CONDITIONAL_NARRATIVE_ARCS_ONLY_NOT_IMPLEMENTED_NOT_TRIGGERED"
     },
     {
       "id": "DAR-DP20-07",

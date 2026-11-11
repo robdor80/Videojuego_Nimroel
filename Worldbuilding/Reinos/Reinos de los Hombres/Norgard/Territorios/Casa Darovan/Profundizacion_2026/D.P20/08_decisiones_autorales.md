@@ -1,6 +1,6 @@
 # D.P20 — Cuaderno de decisión autoral de Veldora
 
-**Cuaderno de decisiones parcialmente aprobadas.** El 11/11/2026 el autor aprobó expresamente **DAR-DP20-01 A** (seis denominaciones populares), **DAR-DP20-02 B** (personalidad tradicional y gremial), **DAR-DP20-03 B** (doce establecimientos como objetivos canónicos futuros), **DAR-DP20-04 A** (diez biografías base) y **DAR-DP20-05 A** (cuatro recuerdos de escala personal). Las decisiones 06–08 siguen pendientes. No se crean barrios administrativos, locales físicos, personas instanciadas, hogares, hechos públicos ni WorldState.
+**Cuaderno de decisiones parcialmente aprobadas.** El 11/11/2026 el autor aprobó expresamente **DAR-DP20-01 A** (seis denominaciones populares), **DAR-DP20-02 B** (personalidad tradicional y gremial), **DAR-DP20-03 B** (doce establecimientos como objetivos canónicos futuros), **DAR-DP20-04 A** (diez biografías base) y **DAR-DP20-05 A** (cuatro recuerdos de escala personal). DAR-DP20-06 A también queda aprobada (cuatro arcos narrativos condicionales futuros). Las decisiones 07–08 siguen pendientes. No se crean barrios administrativos, locales físicos, personas instanciadas, hogares, hechos públicos ni WorldState.
 
 ## DAR-DP20-01 · Identidad espacial: seis ámbitos candidatos
 
@@ -34,7 +34,9 @@
 
 ## DAR-DP20-06 · Hilos jugables
 
-**A (recomendada):** desarrollar H01–H04 como **arcos narrativos condicionales** cuando existan entidades y sistemas materiales. **B:** conservarlos solo como inspiración literaria. **Estado: PROPOSAL_PENDING_AUTHOR; ejecución NO.** No existen seis misiones ni un barco por aparecer en E03.
+**A (recomendada):** desarrollar H01–H04 como **arcos narrativos condicionales** cuando existan entidades y sistemas materiales. **B:** conservarlos solo como inspiración literaria. **Estado: APPROVED_AUTHOR, opción A (11/11/2026).** Se aprueban como **AUTHORED_FUTURE_CONDITIONAL_ARC** los cuatro diseños H01 «El bulto que nadie quiere abrir», H02 «La herramienta que sostiene dos hogares», H03 «El rumor de una vela extranjera» y H04 «Pan, paga y crédito». **No** son eventos ocurridos ni misiones activas; dependen de entidades y condiciones reales validadas por CoreRPG. No nacen barcos, bienes, sanciones, contratos, NPC, ni WorldState. E01–E06 permanecen TEST_ONLY.
+
+**Declaración expresa del autor:** «DAR-DP20-06: Apruebo la opción A, los cuatro hilos como arcos narrativos condicionales para su futura implementación».
 
 ## DAR-DP20-07 · Cartografía
 
@@ -53,8 +55,8 @@
 | DAR-DP20-03 | Opción B: doce establecimientos previstos, nombres y funciones L01–L12 | 11/11/2026 | Objetivos canónicos futuros AUTHORED; edificios, locales activos, inventarios y posiciones aún inexistentes | APROBADA |
 | DAR-DP20-04 | Opción A: diez nombres y biografías como base canónica de personajes | 11/11/2026 | Biografías N01–N10 AUTHORED_BIOGRAPHY_BASE; sin NPC, hogares, genealogías ni relaciones ejecutadas | APROBADA |
 | DAR-DP20-05 | Opción A: recuerdos privados M1–M4 de Liria, Edris, Naia y Fenra | 11/11/2026 | Antecedentes personales AUTHORED_PERSONAL_MEMORY; ninguna fecha, suceso público, evento o WorldState | APROBADA |
-| DAR-DP20-06 | — | — | Ninguno | PENDIENTE |
+| DAR-DP20-06 | Opción A: cuatro arcos narrativos condicionales H01–H04 para implementar en el futuro | 11/11/2026 | AUTHORED_FUTURE_CONDITIONAL_ARC; sin activar misiones, sucesos ni WorldState | APROBADA |
 | DAR-DP20-07 | — | — | Ninguno | PENDIENTE |
 | DAR-DP20-08 | — | — | Ninguno | PENDIENTE |
 
-**Disciplina al aprobar:** registrar fuente/fecha/opción y contenido exacto; convertir SOLO lo aprobado a AUTHORED. **Para U01–U06 se ha aprobado el nombre popular, no su geometría ni que sean barrios oficiales.** Dejar las **instancias físicas** de locales, personas e historias en PROPOSAL_PENDING_AUTHOR; los doce **objetivos editoriales de establecimientos** están aprobados por DAR-DP20-03 B y las diez **biografías base** por DAR-DP20-04 A. La aprobación editorial, incluidos los recuerdos M1–M4, jamás crea un EntityId, hogar, suceso público o evento ejecutado. Los conflictos H01–H04 y escenas continúan sujetos a aprobación. Jamás actualizar WorldState por alterar un Markdown.
+**Disciplina al aprobar:** registrar fuente/fecha/opción y contenido exacto; convertir SOLO lo aprobado a AUTHORED. **Para U01–U06 se ha aprobado el nombre popular, no su geometría ni que sean barrios oficiales.** Dejar las **instancias físicas** de locales, personas e historias en PROPOSAL_PENDING_AUTHOR; los doce **objetivos editoriales de establecimientos** están aprobados por DAR-DP20-03 B y las diez **biografías base** por DAR-DP20-04 A. La aprobación editorial, incluidos los recuerdos M1–M4, jamás crea un EntityId, hogar, suceso público o evento ejecutado. Los conflictos H01–H04 ya están aprobados **solo como diseños narrativos futuros condicionales**; E01–E06 siguen siendo TEST_ONLY y los conflictos no se ejecutan automáticamente. Jamás actualizar WorldState por alterar un Markdown.

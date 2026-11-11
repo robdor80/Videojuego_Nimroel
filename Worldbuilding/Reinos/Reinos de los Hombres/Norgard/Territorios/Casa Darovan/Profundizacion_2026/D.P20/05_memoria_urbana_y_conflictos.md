@@ -1,6 +1,6 @@
 # Veldora — el peso de la palabra: memoria local y conflictos que persisten
 
-**DAR-DP20-05 A (11/11/2026): AUTHORED_PERSONAL_MEMORY para M1–M4, cuatro antecedentes biográficos de escala íntima.** No se ha canonizado ninguna fecha, crónica pública, desastre, ley, gremio ni institución. **PROPOSAL_PENDING_AUTHOR** permanece vigente para los hilos H01–H04 y sus disparadores; las secuencias jugables siguen siendo diseños condicionales, no eventos sucedidos o ejecutados en WorldState.
+**DAR-DP20-05 A (11/11/2026): AUTHORED_PERSONAL_MEMORY para M1–M4, cuatro antecedentes biográficos de escala íntima.** No se ha canonizado ninguna fecha, crónica pública, desastre, ley, gremio ni institución. **AUTHORED_FUTURE_CONDITIONAL_ARC (DAR-DP20-06 A)** aprueba los cuatro diseños H01–H04 para desarrollo futuro. **PROPOSAL_PENDING_AUTHOR** continúa para sus instancias concretas, disparadores reales y eventos;  las secuencias jugables siguen siendo diseños condicionales, no eventos sucedidos o ejecutados en WorldState.
 
 ## Cuatro recuerdos personales canónicos
 
@@ -14,7 +14,7 @@
 
 **Regla:** una memoria biográfica, incluso aprobada, no modifica automáticamente economía, cronología nacional o topografía.
 
-## Cuatro conflictos enlazados, cada uno con su verdad parcialmente oculta
+## Cuatro arcos condicionales aprobados para futuro desarrollo
 
 ### H01 — El bulto que nadie quiere abrir
 
@@ -54,4 +54,4 @@
 
 Veldora tendrá crónicas públicas reales cuando el autor las apruebe; esta fase **no las fabrica**. Su profundidad nace también de lo menudo: el origen de una medida, una herramienta heredada, la forma de anotar de una persona, el olor de un horno en una mañana húmeda o una deuda que pesa más por amistad que por importe. Cada episodio admite varias interpretaciones humanas, y ninguna convierte a todo un grupo social en facción moral.
 
-**Salida editorial:** cuatro recuerdos íntimos aprobados como antecedentes biográficos; cuatro conflictos cruzados condicionales aún pendientes de DAR-DP20-06 y tres contratos de continuidad futura. Nada aquí crea una guerra, epidemia, héroe nacional, desastre histórico, fecha pública o ley nueva.
+**Salida editorial:** cuatro recuerdos íntimos aprobados como antecedentes biográficos; cuatro arcos narrativos condicionales aprobados por DAR-DP20-06 A (no implementados) y tres contratos de continuidad futura. Nada aquí crea una guerra, epidemia, héroe nacional, desastre histórico, fecha pública o ley nueva.

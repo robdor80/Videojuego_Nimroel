@@ -1,6 +1,6 @@
 # Veldora — seis escenas para comprobar que es una ciudad, no un decorado
 
-**TEST_ONLY y PROPOSAL_PENDING_AUTHOR.** Son guiones literarios de prueba. Cada escena requiere lugares, personas, tiempo, permisos y existencias **materializados** antes de mostrarse como juego efectivo. El texto de diálogo no hace nacer al interlocutor. Los nombres Nxx y Lxx remiten al mismo paquete D.P20.
+**TEST_ONLY y PROPOSAL_PENDING_AUTHOR para la ejecución.** Los cuatro arcos H01–H04 fueron aprobados como objetivos futuros condicionales en DAR-DP20-06 A; las seis escenas E01–E06 **no son misiones creadas ni activadas**. Son guiones literarios de prueba. Cada escena requiere lugares, personas, tiempo, permisos y existencias **materializados** antes de mostrarse como juego efectivo. El texto de diálogo no hace nacer al interlocutor. Los nombres Nxx y Lxx remiten al mismo paquete D.P20.
 
 ## E01 · El último cordel del día
 
