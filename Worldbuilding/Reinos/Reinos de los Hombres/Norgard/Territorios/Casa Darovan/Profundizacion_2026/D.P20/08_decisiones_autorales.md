@@ -1,0 +1,66 @@
+# D.P20 — Cuaderno de decisión autoral de Veldora
+
+**Cuaderno de decisiones parcialmente aprobadas.** El 11/11/2026 el autor aprobó expresamente **DAR-DP20-01 A** (seis denominaciones populares), **DAR-DP20-02 B** (personalidad tradicional y gremial), **DAR-DP20-03 B** (doce establecimientos como objetivos canónicos futuros), **DAR-DP20-04 A** (diez biografías base) y **DAR-DP20-05 A** (cuatro recuerdos de escala personal). DAR-DP20-06 A también queda aprobada (cuatro arcos narrativos condicionales futuros). Las decisiones **07 A** (cartografía futura basada en el mapa autorizado) y **08 A** (cierre editorial condicionado a CI verde) también han sido aprobadas. **Las ocho decisiones autorales están resueltas**. La certificación técnica final exige CI verde en el HEAD final; fusionar la PR #43 requiere una nueva autorización explícita. No se crean barrios administrativos, locales físicos, personas instanciadas, hogares, hechos públicos ni WorldState.
+
+## DAR-DP20-01 · Identidad espacial: seis ámbitos candidatos
+
+**Propuesta A (recomendada):** conservar como nombres de uso popular susceptibles de solaparse los seis ámbitos U01–U06, sin asegurar que sean seis barrios administrativos. Después se decidirán forma y límites en mapa. **B:** mantener las seis identidades solo como descriptores funcionales sin ningún topónimo aprobado. **C:** selección/renombrado libre del autor. **Estado: APPROVED_AUTHOR — opción A, 11/11/2026.** Se aprueban los nombres populares «Borde de las Marcas», «Patios de la Cuenta», «Calles del Trato», «Patios del Oficio», «Tejas Serenas», «Vuelta del Camino». Los ámbitos pueden solaparse. **No** se aprueba que sean barrios administrativos, número real de barrios, límites, planos, calles, parcelas ni edificios.
+
+**Declaración expresa del autor:** «DAR-DP20-01: Apruebo la opción A».
+
+## DAR-DP20-02 · Carácter de la ciudad
+
+**A (recomendada):** puerto marítimo mercante de Norgard con fuerte vida de contrato, almacén, oficio y comercio distribuido; riqueza y precariedad coexistentes, sin clichés de delincuencia sistemática. **B:** énfasis más tradicional en redes familiares y artesanía, sin desplazar la función canónica exterior. **Estado: APPROVED_AUTHOR — opción B, 11/11/2026.** El carácter de Veldora es **predominantemente tradicional y gremial**, con fuerte arraigo familiar, talleres y oficios transmitidos, redes de confianza, relaciones duraderas y comercio local distribuido. Esta identidad coexiste con su función ya canónica de mayor puerto mercante exterior de Norgard; **no** convierte la ciudad en un enclave aislado ni presupone que todos sus habitantes compartan valores o pertenezcan a gremios. La aprobación define el tono cultural general, **no crea gremios con nombres, privilegios, instituciones o normas inéditas**.
+
+**Declaración expresa del autor:** «DAR-DP20-02: Apruebo la opción B, carácter predominantemente tradicional y gremial».
+
+## DAR-DP20-03 · Locales de identidad
+
+**A (recomendada):** seleccionar hasta doce candidatos L01–L12, dar prioridad editorial a L01/L02/L03/L05/L08/L09 y materializar los restantes solo si la futura ciudad los necesita. **B:** aceptar todos los nombres como objetivos futuros, **sin** edificios activos ni posiciones. **C:** renombrar/recortar. **Estado: APPROVED_AUTHOR — opción B, 11/11/2026.** Se aprueban **VEL-L01–VEL-L12 como objetivos canónicos futuros, con sus nombres y actividades proyectadas**. Esto no equivale a declarar que existan físicamente, que funcionen, que tengan dueño, plantilla, parcela, mobiliario, existencias o acceso. Las funciones generales de almacenes, talleres y gremios siguen amparadas por el canon anterior; esta decisión fija doce objetivos singulares para fases posteriores.
+
+**Declaración expresa del autor:** «DAR-DP20-03: Apruebo la opción B, los doce establecimientos como objetivos canónicos futuros, sin materializarlos todavía».
+
+## DAR-DP20-04 · Reparto inicial de personas relevantes
+
+**A (recomendada):** aprobar los diez conceptos N01–N10 **como biografías de personajes locales**, sujeto a revisión de nombres y vivienda antes de registrar NPC. **B:** aprobar solo N01–N05 primero. **C:** elegir o cambiar individuos. **Estado: APPROVED_AUTHOR — opción A, 11/11/2026.** Los diez nombres, roles y biografías individuales de `04_personajes_hogares_y_relaciones.md` son **AUTHORED_BIOGRAPHY_BASE** para desarrollo futuro. La autorización **no** crea ni censa personas, hogares, matrimonios, parentescos, linajes nobles, posesiones, negocios activos, coordenadas o relaciones materializadas. Los vínculos narrativos son **bases de relación**, no sucesos verificados o cambios de WorldState; los episodios e historias municipales de D.P20-05 siguen pendientes.
+
+**Declaración expresa del autor:** «DAR-DP20-04: Apruebo la opción A, los diez personajes y sus biografías como base canónica, sin materializar NPC todavía».
+
+## DAR-DP20-05 · Historia y memoria
+
+**A (recomendada):** adoptar cuatro recuerdos de **escala personal** M1–M4 sin fecha histórica o acontecimiento público. **B:** conservarlos como hipótesis de escena sin ningún antecedente canónico. **C:** incorporar una historia local oficial distinta mediante decisión específica. **Estado: APPROVED_AUTHOR — opción A, 11/11/2026.** Quedan **AUTHORED_PERSONAL_MEMORY** los antecedentes privados M1 «La promesa incompleta» de Liria, M2 «El error de una copia» de Edris, M3 «La reparación hecha deprisa» de Naia y M4 «La ración prestada» de Fenra. Son recuerdos biográficos, **no** hechos históricos de alcance público, ni fechas, leyes, fallos judiciales, hambrunas, incendios, guerras, instituciones o héroes de Veldora. Esta aprobación editorial **no instancia personas, memorias de IA ni eventos de WorldState**. Los hilos H01–H04 siguen pendientes de DAR-DP20-06.
+
+**Declaración expresa del autor:** «DAR-DP20-05: Apruebo la opción A, los cuatro recuerdos personales como antecedentes canónicos sin fechas ni acontecimientos públicos».
+
+## DAR-DP20-06 · Hilos jugables
+
+**A (recomendada):** desarrollar H01–H04 como **arcos narrativos condicionales** cuando existan entidades y sistemas materiales. **B:** conservarlos solo como inspiración literaria. **Estado: APPROVED_AUTHOR, opción A (11/11/2026).** Se aprueban como **AUTHORED_FUTURE_CONDITIONAL_ARC** los cuatro diseños H01 «El bulto que nadie quiere abrir», H02 «La herramienta que sostiene dos hogares», H03 «El rumor de una vela extranjera» y H04 «Pan, paga y crédito». **No** son eventos ocurridos ni misiones activas; dependen de entidades y condiciones reales validadas por CoreRPG. No nacen barcos, bienes, sanciones, contratos, NPC, ni WorldState. E01–E06 permanecen TEST_ONLY.
+
+**Declaración expresa del autor:** «DAR-DP20-06: Apruebo la opción A, los cuatro hilos como arcos narrativos condicionales para su futura implementación».
+
+## DAR-DP20-07 · Cartografía
+
+**A (recomendada):** aprobar primero identidad urbana y nombres, luego levantar geometría real del autor antes de fijar calles, muelles, casas, río y rutas. **B:** no canonizar topónimos hasta tener plano. **Estado: APPROVED_AUTHOR — opción A, 11/11/2026.** Se conserva el canon editorial de DAR-DP20-01–06; en una etapa posterior se elaborará la cartografía física exclusivamente a partir del mapa autorizado, sus fuentes verificadas y nuevas decisiones expresas cuando falten datos. **No se aprueba ni crea geometría**, calles, puentes, muelles adicionales, puertos fluviales, edificios, parcelas, coordenadas o rutas cuantificadas. Se preserva la banda altitudinal urbana general 0–60 m como referencia, no como mapa de alturas.
+
+**Declaración expresa del autor:** «DAR-DP20-07: Apruebo la opción A. Conservamos el canon editorial aprobado y elaboraremos la cartografía física de Veldora a partir del mapa autorizado, sin inventar geometría».
+
+## DAR-DP20-08 · Criterio de finalización
+
+**A (recomendada):** cerrar D.P20 como **autoría profunda presentada para aprobación** con CI verde y PR Draft, mantener pendientes explícitos de canon/cartografía/runtime, no fusionar sin nueva orden. **B:** esperar aprobación de cada nuevo nombre antes de declarar cierre editorial. **Estado: APPROVED_AUTHOR — opción A, 11/11/2026.** Se aprueba el **cierre editorial de D.P20**, **condicionado a la superación de todas las comprobaciones CI pertinentes sobre el HEAD final**. La PR #43 debe permanecer abierta en **Draft, SIN FUSIONAR**, hasta nueva autorización explícita del autor. Este cierre es de creación documental y aprobación de canon editorial; **no significa** que Veldora tenga plano navegable, edificios, pobladores instanciados, economía o historias ejecutadas en CoreRPG/Godot.
+
+**Declaración expresa del autor:** «DAR-DP20-08: Apruebo la opción A. Cierre editorial de D.P20 condicionado a CI verde, sin fusionar todavía la PR #43».
+
+## Registro de resoluciones
+
+| ID | Resolución del autor | Fecha | Efecto canónico | Estado |
+| --- | --- | --- | --- | --- |
+| DAR-DP20-01 | Opción A: seis denominaciones populares, superponibles | 11/11/2026 | Solo los nombres U01–U06 AUTHORED; barrios, geometría y locales aún pendientes | APROBADA |
+| DAR-DP20-02 | Opción B: carácter predominantemente tradicional y gremial | 11/11/2026 | Identidad cultural de Veldora AUTHORED; puerto exterior y comercio distribuido preservados; sin crear instituciones | APROBADA |
+| DAR-DP20-03 | Opción B: doce establecimientos previstos, nombres y funciones L01–L12 | 11/11/2026 | Objetivos canónicos futuros AUTHORED; edificios, locales activos, inventarios y posiciones aún inexistentes | APROBADA |
+| DAR-DP20-04 | Opción A: diez nombres y biografías como base canónica de personajes | 11/11/2026 | Biografías N01–N10 AUTHORED_BIOGRAPHY_BASE; sin NPC, hogares, genealogías ni relaciones ejecutadas | APROBADA |
+| DAR-DP20-05 | Opción A: recuerdos privados M1–M4 de Liria, Edris, Naia y Fenra | 11/11/2026 | Antecedentes personales AUTHORED_PERSONAL_MEMORY; ninguna fecha, suceso público, evento o WorldState | APROBADA |
+| DAR-DP20-06 | Opción A: cuatro arcos narrativos condicionales H01–H04 para implementar en el futuro | 11/11/2026 | AUTHORED_FUTURE_CONDITIONAL_ARC; sin activar misiones, sucesos ni WorldState | APROBADA |
+| DAR-DP20-07 | Opción A: cartografía futura basada en el mapa autorizado y canon editorial conservado | 11/11/2026 | Procedimiento aprobado; sin geometría, vías, puentes, muelles, edificios ni mapas materializados | APROBADA |
+| DAR-DP20-08 | Opción A: cierre editorial condicionado a CI verde; PR #43 Draft sin fusionar | 11/11/2026 | Aprobación de proceso; cierre certificable tras CI verde del último HEAD, sin cierre técnico/runtime ni autorización de merge | APROBADA CON CONDICIÓN CI |
+
+**Disciplina al aprobar:** registrar fuente/fecha/opción y contenido exacto; convertir SOLO lo aprobado a AUTHORED. **Para U01–U06 se ha aprobado el nombre popular, no su geometría ni que sean barrios oficiales.** Dejar las **instancias físicas** de locales, personas e historias en PROPOSAL_PENDING_AUTHOR; los doce **objetivos editoriales de establecimientos** están aprobados por DAR-DP20-03 B y las diez **biografías base** por DAR-DP20-04 A. La aprobación editorial, incluidos los recuerdos M1–M4, jamás crea un EntityId, hogar, suceso público o evento ejecutado. Los conflictos H01–H04 ya están aprobados **solo como diseños narrativos futuros condicionales**; E01–E06 siguen siendo TEST_ONLY y los conflictos no se ejecutan automáticamente. El procedimiento DAR-DP20-07 A exige mapa de referencia autorizado y decisiones nuevas antes de fijar detalles no acreditados. **La aprobación de D.P20-08 no autoriza fusionar ni desplegar**, y solo podrá declararse cierre editorial técnicamente certificado si las cuatro familias CI D.P20, D01–D12, D.P13 y D.P14–D.P18 quedan verdes en el HEAD final. Jamás actualizar WorldState por alterar un Markdown.
