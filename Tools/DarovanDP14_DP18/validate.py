@@ -310,6 +310,101 @@ def negative_checks(data,source):
         raise AssertionError("Negative mutation was accepted: "+label)
     return len(edits)
 
+def validate_valrik_triage():
+    r=read(DATA/"darovan_dp16_valrik_functional_coverage_v0.1.json")
+    check(r["schemaVersion"] == 1 and r["phase"] == "D.P16"
+          and r["documentId"] == "darovan_dp16_valrik_functional_coverage_triage_v0.1"
+          and r["authority"] == "ASSISTANT_DESIGN_TRIAGE_NOT_CANON",
+          "Valrik 99-layer triage authority")
+    entries=r["referenceLayers"]
+    check(r["folderCount"]==len(entries)==100
+          and r["distinctNumericIndices"]==99
+          and r["duplicatedNumericIndex"]==34,
+          "Triage source counts")
+    check(len(set(x["sourceFolder"] for x in entries))==100
+          and set(x["number"] for x in entries)==set(range(1,100))
+          and sum(x["number"]==34 for x in entries)==2,
+          "Valrik numbering sanity")
+    check(sum(r["categoryCounts"].values())==100
+          and {k:sum(x["triage"]==k for x in entries)
+               for k in r["categoryCounts"]}==r["categoryCounts"],
+          "Every folder classified")
+    check(all(not x["canonicalDarovanFactCreated"]
+              and x["requiresManualCityReview"]
+              and not x["localRulesCopied"]
+              and not x["darovanUrbanInstanceCreated"]
+              for x in entries), "No Treskal local canon copied")
+    flows=r["cityFunctionalFlows"]
+    check(len(flows)==13 and len(set(f["id"] for f in flows))==13,
+          "Thirteen functional chains")
+    check({x["place"] for x in flows}=={"Treihord","Veldora","Taramin","Syvaris","Arven"},
+          "Coverage of 4 cities and Arven")
+    check(all(x["status"]=="FUNCTIONAL_CONCEPT_ONLY"
+              and not x["createsSpatialRoute"]
+              and not x["createsCanonicalInfrastructure"]
+              and len(x["requiredProof"])>20
+              and len(x["forbidden"])>10 for x in flows),
+          "No physical network or building inferred")
+    check(r["cityIds"]==["treihord","veldora","taramin","syvaris"]
+          and r["noNewRoads"]==[] and r["noNewNeighborhoods"]==[]
+          and r["noNewBuildings"]==[] and r["noWorldStateRuntime"] is True,
+          "City boundary and no-runtime triage")
+    check((ROOT/r["sourcePath"]).is_dir(), "Valrik reference root")
+    for entry in entries:
+        check((ROOT/r["sourcePath"]/entry["sourceFolder"]).is_dir(),
+              "Unverified Treskal folder "+entry["sourceFolder"])
+    check((TERR/"Profundizacion_2026/D.P16/02_99_capas_triado_y_13_cadenas_darovan.md").is_file(),
+          "Triage report absent")
+    edits=[
+      ("invented_city",lambda d:d["cityIds"].append("new_city")),
+      ("invented_road",lambda d:d["noNewRoads"].append("road")),
+      ("invented_neighborhood",lambda d:d["noNewNeighborhoods"].append("new")),
+      ("invented_building",lambda d:d["noNewBuildings"].append("new")),
+      ("fake_worldstate",lambda d:d.__setitem__("noWorldStateRuntime",False)),
+      ("missing_treskal_layer",lambda d:d["referenceLayers"].pop()),
+      ("duplicate_layer",lambda d:d["referenceLayers"][0].__setitem__("sourceFolder","fake")),
+      ("cloned_local_canon",lambda d:d["referenceLayers"][0].__setitem__("localRulesCopied",True)),
+      ("made_up_local_fact",lambda d:d["referenceLayers"][0].__setitem__("canonicalDarovanFactCreated",True)),
+      ("made_up_category_count",lambda d:d["categoryCounts"].__setitem__("LOCAL_SPACE_AND_SITE_PROOF",999)),
+      ("removed_function",lambda d:d["cityFunctionalFlows"].pop()),
+      ("materialized_road",lambda d:d["cityFunctionalFlows"][0].__setitem__("createsSpatialRoute",True)),
+      ("materialized_installation",lambda d:d["cityFunctionalFlows"][0].__setitem__("createsCanonicalInfrastructure",True)),
+      ("pretend_authored",lambda d:d.__setitem__("authority","AUTHORED"))
+    ]
+    for label,change in edits:
+        changed=copy.deepcopy(r)
+        change(changed)
+        try:
+            # The same structural rules, without evaluating file system on mutation.
+            rows=changed["referenceLayers"]
+            check(changed["schemaVersion"]==1 and
+                  changed["authority"]=="ASSISTANT_DESIGN_TRIAGE_NOT_CANON",
+                  "mutated triage authority")
+            check(changed["cityIds"]==["treihord","veldora","taramin","syvaris"]
+                  and not changed["noNewRoads"] and not changed["noNewNeighborhoods"]
+                  and not changed["noNewBuildings"]
+                  and changed["noWorldStateRuntime"] is True,
+                  "mutated forbidden addition")
+            check(len(rows)==100 and len(set(x["sourceFolder"] for x in rows))==100
+                  and all((ROOT/changed["sourcePath"]/x["sourceFolder"]).is_dir()
+                          for x in rows), "mutated reference integrity")
+            check(all(not x["localRulesCopied"] and not x["canonicalDarovanFactCreated"]
+                      and not x["darovanUrbanInstanceCreated"] for x in rows),
+                  "mutated canon")
+            check(sum(changed["categoryCounts"].values())==100 and
+                  {k:sum(x["triage"]==k for x in rows)
+                   for k in changed["categoryCounts"]}==changed["categoryCounts"],
+                  "mutated classification")
+            fs=changed["cityFunctionalFlows"]
+            check(len(fs)==13 and
+                  all(not f["createsSpatialRoute"] and
+                      not f["createsCanonicalInfrastructure"] for f in fs),
+                  "mutated flow")
+        except AssertionError:
+            continue
+        raise AssertionError("Triage negative mutation accepted "+label)
+    return len(edits)
+
 def main():
     documents=[read(DATA/f) for f in FILES]
     source=[read(DATA/f) for f in (
@@ -321,10 +416,11 @@ def main():
         "darovan_d09_governance_security_v0.1.json")]
     invariant(documents,source,check_fs=True)
     count=negative_checks(documents,source)
+    triage_count=validate_valrik_triage()
     print("DAROVAN D.P14-D.P18 STATIC OK: 12 study units, 10 gates, "
           "9 D06 models, 10 needs, 4 manual cities, 100 Treskal 01-99 folders, "
           "57 source namespaces, 24 TEST_ONLY scenarios, "
-          f"12 explicit gaps, {count} negative mutations; NO RUNTIME")
+          f"12 explicit gaps, {count+triage_count} negative mutations; NO RUNTIME")
 
 if __name__=="__main__":
     main()

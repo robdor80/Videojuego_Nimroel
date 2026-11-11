@@ -71,3 +71,9 @@ Antes de elevar planes de Veldora, Taramin o Syvaris a canon local cerrado, se r
 Se ha incluido validación estática de contrato y mutaciones adversariales; **los resultados reales de GitHub Actions han de verificarse en el HEAD de la PR antes de afirmar SUCCESS**. Se mantienen todas las pruebas existentes D01–D12 y D.P13.
 
 **Registro JSON:** `../Datos operativos/darovan_dp18_territorial_closure_audit_v0.1.json`.
+
+## Ampliación de auditoría funcional — triado 99 capas y cadenas propias
+
+El registro `Datos operativos/darovan_dp16_valrik_functional_coverage_v0.1.json` contrasta **100 carpetas reales 01–99** de Treskal (doble 34) y las agrupa por nivel de responsabilidad **de modo provisional**, sin suponer que todos esos archivos hayan sido revisados línea a línea o que los módulos Core estén probados en el host. Incorpora **13 cadenas funcionales propias de Treihord/Veldora/Taramin/Syvaris/Arven**, con pruebas de legitimidad y prohibición de rutas o instalaciones ficticias.
+
+Este triado completa el **índice de trabajo**, pero **no resuelve** los bloques de urbanismo canónico G01–G03 ni la cartografía G04–G07. Las decisiones personales y de topónimos siguen reservadas al autor.
