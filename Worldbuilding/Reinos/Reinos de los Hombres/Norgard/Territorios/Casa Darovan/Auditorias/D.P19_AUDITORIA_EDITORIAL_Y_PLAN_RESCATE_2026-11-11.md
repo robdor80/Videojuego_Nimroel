@@ -110,6 +110,21 @@ La numeración representa **orden editorial**, no un plazo ni obligación de cla
 - **Normativa y estado:** no aduanas entre Grandes Casas; no duplicar mecanismos globales Core/Norgard; IA narrativa sin autoridad para inventar mutaciones de WorldState.
 - **Geometría:** no presentar mapa ilustrado o propuestas conceptuales como cartografía métrica.
 
+
+## 9. Revisión adicional de datos operativos y validación
+
+Contrastados asimismo los seis JSON añadidos por #41, el validador Python de 427 líneas, el workflow Windows/Linux, los índices del paquete y el historial de traspaso. Observaciones:
+
+- **D.P14 JSON (18.385 caracteres)**: sus doce unidades son áreas de estudio, con coordenadas nulas, cero asentamientos materializados y diez comprobaciones conceptuales. **Valor:** no convertir posibilidades en pueblos ficticios. **Límite:** no aporta una sola localidad habitable real.
+- **D.P15 JSON (9.733 caracteres)**: nueve modelos y diez necesidades; `actualVillageIds=[]` y capacidades desconocidas. **Valor:** integridad de supuestos. **Límite:** no aporta red local poblada de comerciantes, cuidadores, plazas, caminos ni viviendas.
+- **D.P16 JSON urbano (60.503 caracteres)**: cuatro entradas de ciudad replican doce campos `checksForFutureUrbanPlanning` con resultados `PENDING_SITE_AND_INSTITUTION_DATA`; la geometría está nula y `newDistrictNames=[]`. Su etiqueta de estado `FUNCTIONAL_DESIGN_COMPLETE_CITY_PLANS_NOT_AUTHORED` puede confundirse con «ciudades desarrolladas»; para efectos editoriales debe leerse **inventario de comprobaciones, NO diseño de ciudades completado**.
+- **D.P16 cobertura Valrik JSON (53.898 caracteres)**: cien nombres de carpetas de referencia y trece flujos conceptuales. **Valor:** comprobar herencia funcional. **Límite:** una lista de nombres de carpetas, incluso íntegra, no equivale a leer y adaptar el contenido de cien capítulos.
+- **D.P17 JSON (28.343 caracteres)**: 57 candidatos de namespace, 24 escenarios `TEST_ONLY`; no acredita implementación real. **Aparcar** hasta integrar contenido aprobado y el motor.
+- **D.P18 JSON (6.857 caracteres)**: doce reservas explícitas y advertencias de cierre material. **Conservar** como registro vivo, sin presentar estas reservas como trabajo creativo ejecutado.
+- **Validador y workflow:** el validador verifica consistencia estructural y mutaciones adversariales de un **conjunto de documentos ya definidos**. Que todos los casos pasen es positivo para estabilidad, pero no evalúa calidad de prosa, singularidad de barrios, biografías, escenas o densidad social.
+
+**Decisión operativa:** no aprovechar la aprobación técnica para dar por aprobada una versión editorial todavía vacía. El exceso de serialización y comprobación debe reducirse a lo imprescindible en las fases de creación de mundo. La prioridad desde D.P20 son propuestas concretas de autoría y decisiones razonadas.
+
 ## 8. Condición de cierre D.P19
 
 D.P19 se considera **auditoría editorial iniciada y documentada**, **no cierre de D.P14–D.P18 ni aprobación de sus contenidos**. Falta la decisión del autor sobre la estrategia final de la PR #41 (mantenerla experimental, dividirla o cerrarla sin fusionar) y el comienzo de D.P20 con propuestas de contenido originales.
