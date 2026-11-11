@@ -1,6 +1,6 @@
 # D.P21 — Taramin: diez personas que no caben en un único oficio
 
-**TAR-N01–N10: PROPOSAL_PENDING_AUTHOR; biografías editoriales nuevas, no NPC existentes.** Nombres, edades exactas, hogares físicos, parentescos y posesiones no se crean en WorldState. Sus relaciones son ganchos de escritura **condicionales**.
+**TAR-DP21-04 A, 11/11/2026: TAR-N01–N10 aprobados como AUTHORED_EDITORIAL_BIOGRAPHY.** Son **bases canónicas editoriales de diez futuros personajes**, con sus nombres, roles y biografías, incluyendo motivaciones, deseos, contradicciones y límites personales descritos aquí. **No son NPC existentes**: no se crean personas, edades exactas, hogares físicos, genealogías, parentescos, posesiones ni entidades en WorldState. Los vínculos a establecimientos, relaciones potenciales y sucesos son **ganchos condicionales**, no hechos confirmados.
 
 ### TAR-N01 — Mareva Senn · negociadora de partidas
 Sabe apreciar una entrega por su estado y sus límites; prefiere perder una venta antes que atribuir a su nombre una calidad no comprobada. Quiere ampliar su clientela sin aceptar promesas imposibles. **Punto ciego:** cree que su franqueza siempre basta, aunque a veces humille a quien está empezando. Puede relacionarse con L02 y L06, si se materializan.
@@ -41,4 +41,4 @@ Conoce los límites de su competencia: puede preservar un testimonio, advertir d
 - N08 puede transmitir una información a N10, que deberá verificarla en vez de castigar por rumor.
 - N07 puede reclamar tiempo o paga a N01: el conflicto no convierte a nadie en villano.
 
-**Privacidad:** nadie recibe conocimiento omnisciente de la ciudad. Ningún recuerdo se exporta a otro personaje sin comunicación, testimonio o permiso pertinente. **Decisión TAR-DP21-04 pendiente:** aprobar, recortar o corregir estas biografías **como base editorial**, no como censos de personas reales en el juego.
+**Privacidad:** nadie recibe conocimiento omnisciente de la ciudad. Ningún recuerdo se exporta a otro personaje sin comunicación, testimonio o permiso pertinente. **Decisión TAR-DP21-04 A aprobada:** estos diez nombres, roles y biografías constituyen **canon editorial para futura materialización**, pero no censo de NPC existentes ni prueba de relaciones, contratos, recuerdos o conocimientos compartidos. Todo ello requerirá implementación y autoridad de CoreRPG.

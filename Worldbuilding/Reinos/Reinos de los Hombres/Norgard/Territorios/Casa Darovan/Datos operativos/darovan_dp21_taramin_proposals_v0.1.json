@@ -5,7 +5,7 @@
   "date": "2026-11-11",
   "phase": "D.P21",
   "cityId": "taramin",
-  "status": "PARTIAL_AUTHOR_APPROVAL_NAMES_CHARACTER_FUTURE_ESTABLISHMENTS",
+  "status": "PARTIAL_AUTHOR_APPROVAL_NAMES_CHARACTER_ESTABLISHMENTS_BIOGRAPHIES",
   "authorApprovalRecorded": true,
   "addsCanon": true,
   "createsWorldStateEntities": false,
@@ -142,7 +142,92 @@
       }
     ],
     "futureEstablishmentsArePhysicalEntities": false,
-    "futureEstablishmentApprovalCreatesNewPortOrWaterInfrastructure": false
+    "futureEstablishmentApprovalCreatesNewPortOrWaterInfrastructure": false,
+    "approvedFuturePeople": [
+      {
+        "id": "TAR-N01",
+        "name": "Mareva Senn",
+        "role": "negociadora_partidas",
+        "biography": "Se niega a certificar calidad sin comprobar",
+        "status": "AUTHORED_EDITORIAL_BIOGRAPHY",
+        "npcMaterialized": false
+      },
+      {
+        "id": "TAR-N02",
+        "name": "Eiron Valc",
+        "role": "reparador_utiles",
+        "biography": "Exige probar reparaciones y teme reconocer errores",
+        "status": "AUTHORED_EDITORIAL_BIOGRAPHY",
+        "npcMaterialized": false
+      },
+      {
+        "id": "TAR-N03",
+        "name": "Telia Arvenn",
+        "role": "cuidadora_cocinera",
+        "biography": "Cuida a otros pero anhela tiempo propio",
+        "status": "AUTHORED_EDITORIAL_BIOGRAPHY",
+        "npcMaterialized": false
+      },
+      {
+        "id": "TAR-N04",
+        "name": "Corven Dail",
+        "role": "reparador_recipientes",
+        "biography": "Reconoce la dureza con clientes sin recursos",
+        "status": "AUTHORED_EDITORIAL_BIOGRAPHY",
+        "npcMaterialized": false
+      },
+      {
+        "id": "TAR-N05",
+        "name": "Orea Niv",
+        "role": "aprendiz_escribania",
+        "biography": "Quiere un oficio ajeno a la pesca",
+        "status": "AUTHORED_EDITORIAL_BIOGRAPHY",
+        "npcMaterialized": false
+      },
+      {
+        "id": "TAR-N06",
+        "name": "Daric Fen",
+        "role": "proveedor_encargos",
+        "biography": "Prefiere pequeños compromisos verificables",
+        "status": "AUTHORED_EDITORIAL_BIOGRAPHY",
+        "npcMaterialized": false
+      },
+      {
+        "id": "TAR-N07",
+        "name": "Inara Vel",
+        "role": "trabajadora_textil",
+        "biography": "Defiende que el trabajo doméstico tiene valor",
+        "status": "AUTHORED_EDITORIAL_BIOGRAPHY",
+        "npcMaterialized": false
+      },
+      {
+        "id": "TAR-N08",
+        "name": "Sarel Tern",
+        "role": "transmisor_noticias",
+        "biography": "Distingue testimonio de conocimiento aunque falle",
+        "status": "AUTHORED_EDITORIAL_BIOGRAPHY",
+        "npcMaterialized": false
+      },
+      {
+        "id": "TAR-N09",
+        "name": "Yalena Mors",
+        "role": "cuidadora_vecinal",
+        "biography": "Necesita apoyo además de ofrecer cuidados",
+        "status": "AUTHORED_EDITORIAL_BIOGRAPHY",
+        "npcMaterialized": false
+      },
+      {
+        "id": "TAR-N10",
+        "name": "Breon Cal",
+        "role": "auxiliar_seguridad_civil",
+        "biography": "No confunde su función civil con sentencia o mando naval",
+        "status": "AUTHORED_EDITORIAL_BIOGRAPHY",
+        "npcMaterialized": false
+      }
+    ],
+    "approvedBiographiesDoNotCreateNPCs": true,
+    "approvedBiographiesDoNotEstablishRelationships": true,
+    "approvedBiographiesDoNotEstablishPrivateMemories": true
   },
   "lockedUnknowns": {
     "actualCityPolygon": null,
@@ -507,7 +592,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalEditorialBase": true,
+      "editorialBiographyApproval": "AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A",
+      "futureNameRoleBiographyApproved": true
     },
     {
       "id": "TAR-N02",
@@ -523,7 +611,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalEditorialBase": true,
+      "editorialBiographyApproval": "AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A",
+      "futureNameRoleBiographyApproved": true
     },
     {
       "id": "TAR-N03",
@@ -539,7 +630,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalEditorialBase": true,
+      "editorialBiographyApproval": "AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A",
+      "futureNameRoleBiographyApproved": true
     },
     {
       "id": "TAR-N04",
@@ -555,7 +649,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalEditorialBase": true,
+      "editorialBiographyApproval": "AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A",
+      "futureNameRoleBiographyApproved": true
     },
     {
       "id": "TAR-N05",
@@ -571,7 +668,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalEditorialBase": true,
+      "editorialBiographyApproval": "AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A",
+      "futureNameRoleBiographyApproved": true
     },
     {
       "id": "TAR-N06",
@@ -587,7 +687,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalEditorialBase": true,
+      "editorialBiographyApproval": "AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A",
+      "futureNameRoleBiographyApproved": true
     },
     {
       "id": "TAR-N07",
@@ -603,7 +706,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalEditorialBase": true,
+      "editorialBiographyApproval": "AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A",
+      "futureNameRoleBiographyApproved": true
     },
     {
       "id": "TAR-N08",
@@ -619,7 +725,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalEditorialBase": true,
+      "editorialBiographyApproval": "AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A",
+      "futureNameRoleBiographyApproved": true
     },
     {
       "id": "TAR-N09",
@@ -635,7 +744,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalEditorialBase": true,
+      "editorialBiographyApproval": "AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A",
+      "futureNameRoleBiographyApproved": true
     },
     {
       "id": "TAR-N10",
@@ -651,7 +763,10 @@
       "authorApproved": false,
       "isCanonical": false,
       "worldStateEntityId": null,
-      "coordinates": null
+      "coordinates": null,
+      "canonicalEditorialBase": true,
+      "editorialBiographyApproval": "AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A",
+      "futureNameRoleBiographyApproved": true
     }
   ],
   "proposedPersonalMemories": [
@@ -859,10 +974,11 @@
     },
     {
       "id": "TAR-DP21-04",
-      "status": "PENDING_AUTHOR",
-      "selectedOption": null,
-      "approvedDate": null,
-      "canonPromotion": false
+      "status": "APPROVED",
+      "selectedOption": "A",
+      "approvedDate": "2026-11-11",
+      "canonPromotion": true,
+      "approvalScope": "TEN_NAMED_ROLE_BIOGRAPHY_EDITORIAL_BASES_ONLY_NO_NPC_HOUSEHOLD_OR_RELATION_INSTANTIATION"
     },
     {
       "id": "TAR-DP21-05",

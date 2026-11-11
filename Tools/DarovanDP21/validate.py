@@ -13,7 +13,7 @@ def req(cond,msg):
     if not cond: raise AssertionError(msg)
 
 def validate(d, files=True):
-    req((d["phase"],d["cityId"],d["status"]) == ("D.P21","taramin","PARTIAL_AUTHOR_APPROVAL_NAMES_CHARACTER_FUTURE_ESTABLISHMENTS"),"wrong phase/state")
+    req((d["phase"],d["cityId"],d["status"]) == ("D.P21","taramin","PARTIAL_AUTHOR_APPROVAL_NAMES_CHARACTER_ESTABLISHMENTS_BIOGRAPHIES"),"wrong phase/state")
     req(d["authorApprovalRecorded"] is True and d["addsCanon"] is True and d["createsWorldStateEntities"] is False,"limited author approval")
     c=d["canonClaims"]
     exact={
@@ -51,7 +51,24 @@ def validate(d, files=True):
           ("Cestas de la Tierra Ocre","intercambio_interior"),
           ("El Telar de las Horas","textiles")],1)],
       "futureEstablishmentsArePhysicalEntities":False,
-      "futureEstablishmentApprovalCreatesNewPortOrWaterInfrastructure":False}
+      "futureEstablishmentApprovalCreatesNewPortOrWaterInfrastructure":False,
+      "approvedFuturePeople":[
+        {"id":f"TAR-N{i:02d}","name":name,"role":role,"biography":bio,
+         "status":"AUTHORED_EDITORIAL_BIOGRAPHY","npcMaterialized":False}
+        for i,(name,role,bio) in enumerate([
+          ("Mareva Senn","negociadora_partidas","Se niega a certificar calidad sin comprobar"),
+          ("Eiron Valc","reparador_utiles","Exige probar reparaciones y teme reconocer errores"),
+          ("Telia Arvenn","cuidadora_cocinera","Cuida a otros pero anhela tiempo propio"),
+          ("Corven Dail","reparador_recipientes","Reconoce la dureza con clientes sin recursos"),
+          ("Orea Niv","aprendiz_escribania","Quiere un oficio ajeno a la pesca"),
+          ("Daric Fen","proveedor_encargos","Prefiere pequeños compromisos verificables"),
+          ("Inara Vel","trabajadora_textil","Defiende que el trabajo doméstico tiene valor"),
+          ("Sarel Tern","transmisor_noticias","Distingue testimonio de conocimiento aunque falle"),
+          ("Yalena Mors","cuidadora_vecinal","Necesita apoyo además de ofrecer cuidados"),
+          ("Breon Cal","auxiliar_seguridad_civil","No confunde su función civil con sentencia o mando naval")],1)],
+      "approvedBiographiesDoNotCreateNPCs":True,
+      "approvedBiographiesDoNotEstablishRelationships":True,
+      "approvedBiographiesDoNotEstablishPrivateMemories":True}
     req(c==exact,"protected canon altered")
     req(len(d["lockedUnknowns"])>=30 and all(v is None for v in d["lockedUnknowns"].values()),"invented unknown")
     ids={}
@@ -75,7 +92,12 @@ def validate(d, files=True):
             and e["futureNameAndPurposeApproved"] is True,"approved future establishment changed")
         req(e["areaId"] in ids["proposedUrbanAreas"] and e["actualLocationId"] is None and e["materialized"] is False
             and e["ownerEntityId"] is None and e["inventoryEntityIds"]==[] and e["capacity"] is None,"shop invented")
-    for e in d["proposedPeople"]:
+    for i,e in enumerate(d["proposedPeople"]):
+        target=exact["approvedFuturePeople"][i]
+        req(e["name"]==target["name"] and e["role"]==target["role"] and e["biography"]==target["biography"]
+            and e["canonicalEditorialBase"] is True
+            and e["editorialBiographyApproval"]=="AUTHORED_EDITORIAL_BIOGRAPHY_TAR_DP21_04_A"
+            and e["futureNameRoleBiographyApproved"] is True,"approved editorial character altered")
         req(e["personEntityId"] is None and e["householdEntityId"] is None and e["npcMaterialized"] is False
             and e["relationsMaterialized"] is False and e["knownCurrentFacts"]==[] and bool(e["role"]) and bool(e["biography"]),"NPC invented")
     req([e["id"] for e in d["proposedPersonalMemories"]]==[f"TAR-M{i:02d}" for i in range(1,5)],"memory IDs")
@@ -101,9 +123,12 @@ def validate(d, files=True):
           "approvalScope":"PRAGMATIC_MARITIME_PLURAL_CITY_CHARACTER_NO_NEW_LAWS_OR_INSTITUTIONS"},
          {"id":"TAR-DP21-03","status":"APPROVED","selectedOption":"A",
           "approvedDate":"2026-11-11","canonPromotion":True,
-          "approvalScope":"TWELVE_NAMED_ESTABLISHMENT_FUTURE_OBJECTIVES_ONLY_NO_PHYSICAL_MATERIALIZATION"}]
+          "approvalScope":"TWELVE_NAMED_ESTABLISHMENT_FUTURE_OBJECTIVES_ONLY_NO_PHYSICAL_MATERIALIZATION"},
+         {"id":"TAR-DP21-04","status":"APPROVED","selectedOption":"A",
+          "approvedDate":"2026-11-11","canonPromotion":True,
+          "approvalScope":"TEN_NAMED_ROLE_BIOGRAPHY_EDITORIAL_BASES_ONLY_NO_NPC_HOUSEHOLD_OR_RELATION_INSTANTIATION"}]
          + [{"id":f"TAR-DP21-{i:02d}","status":"PENDING_AUTHOR","selectedOption":None,
-             "approvedDate":None,"canonPromotion":False} for i in range(4,9)],"approvals forged")
+             "approvedDate":None,"canonPromotion":False} for i in range(5,9)],"approvals forged")
     req(all(v is False for v in d["runtime"].values()) and d["nextPhase"]=="D.P22_SYVARIS_NOT_STARTED","runtime created")
     req(d["editorialClosure"]=={"authorDecisionId":"TAR-DP21-08","closureApproved":False,
           "ciCertifiedInData":False,"mergeAuthorized":False,"prMustRemainDraft":True,
@@ -208,7 +233,20 @@ def mutation_test(d):
       ("future_establishment_canon_mutated",lambda x:x["canonClaims"]["approvedFutureEstablishments"].pop()),
       ("future_establishment_physically_forged",lambda x:x["canonClaims"].update(futureEstablishmentsArePhysicalEntities=True)),
       ("new_water_infrastructure_forged",lambda x:x["canonClaims"].update(futureEstablishmentApprovalCreatesNewPortOrWaterInfrastructure=True)),
-      ("another_decision",lambda x:x["authorDecisions"][3].update(status="APPROVED")),
+      ("fourth_decision_option",lambda x:x["authorDecisions"][3].update(selectedOption="B")),
+      ("fourth_decision_status",lambda x:x["authorDecisions"][3].update(status="PENDING_AUTHOR")),
+      ("fourth_decision_scope",lambda x:x["authorDecisions"][3].update(approvalScope="TEN_NPCS_MATERIALIZED")),
+      ("future_character_name",lambda x:x["proposedPeople"][0].update(name="Otra persona")),
+      ("future_character_role",lambda x:x["proposedPeople"][0].update(role="juez_rey")),
+      ("future_character_bio",lambda x:x["proposedPeople"][0].update(biography="Otro pasado")),
+      ("future_character_approval_lost",lambda x:x["proposedPeople"][0].update(futureNameRoleBiographyApproved=False)),
+      ("future_character_flag_lost",lambda x:x["proposedPeople"][0].update(canonicalEditorialBase=False)),
+      ("future_character_scope_changed",lambda x:x["proposedPeople"][0].update(editorialBiographyApproval="NPC_AUTHORED_PHYSICAL")),
+      ("future_character_canon_mutated",lambda x:x["canonClaims"]["approvedFuturePeople"].pop()),
+      ("future_character_instantiation_forged",lambda x:x["canonClaims"].update(approvedBiographiesDoNotCreateNPCs=False)),
+      ("future_character_relationship_forged",lambda x:x["canonClaims"].update(approvedBiographiesDoNotEstablishRelationships=False)),
+      ("future_character_memory_forged",lambda x:x["canonClaims"].update(approvedBiographiesDoNotEstablishPrivateMemories=False)),
+      ("another_decision",lambda x:x["authorDecisions"][4].update(status="APPROVED")),
       ("ci",lambda x:x["editorialClosure"].update(ciCertifiedInData=True)),
       ("merge",lambda x:x["editorialClosure"].update(mergeAuthorized=True)),
       ("draft",lambda x:x["editorialClosure"].update(prMustRemainDraft=False)),
@@ -224,4 +262,4 @@ def mutation_test(d):
 if __name__=="__main__":
     d=read(DATA);validate(d)
     print("D.P21 Taramin CONTRACT PASS; negative mutations rejected:",mutation_test(d))
-    print("PARTIAL AUTHOR APPROVAL: six popular names, pragmatic maritime plural cultural character and twelve future establishment objectives; no physical buildings, institutions, geometry, runtime or merge.")
+    print("PARTIAL AUTHOR APPROVAL: six popular names, city character, twelve future establishments and ten editorial biographies; no NPC, relationships, memories, buildings, geometry, runtime or merge.")
