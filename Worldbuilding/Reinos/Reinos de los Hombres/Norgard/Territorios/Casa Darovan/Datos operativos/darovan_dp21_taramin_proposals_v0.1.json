@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp21_taramin_city_authorship_proposals_v0.1",
+  "version": "0.1.0",
+  "date": "2026-11-11",
+  "phase": "D.P21",
+  "cityId": "taramin",
+  "status": "PROPOSALS_AWAITING_AUTHOR",
+  "authorApprovalRecorded": false,
+  "addsCanon": false,
+  "createsWorldStateEntities": false,
+  "canonClaims": {
+    "cityOwner": "CASA_DAROVAN",
+    "cityManualOnly": true,
+    "thalenSingleNamedRiver": true,
+    "thalenTerminalArms": 2,
+    "cityBetweenThalenTerminalArms": true,
+    "receivingGulf": "GOLFO_DE_NORGARD",
+    "fishingPortCanonical": true,
+    "principalFishingWorkAreaConceptualOnly": true,
+    "principalFishingZonePosition": null,
+    "maritimeAndFluvialFishing": true,
+    "marineProductsAndOils": true,
+    "populationRange": {
+      "minInclusive": 14000,
+      "maxInclusive": 20000,
+      "exact": null
+    },
+    "urbanReferenceAltitudeMetersApprox": {
+      "min": 0,
+      "max": 40
+    },
+    "northCentralPeninsularHillsReferenceMetersApprox": {
+      "min": 300,
+      "max": 600
+    },
+    "northernCentralSemiaridTransition": true,
+    "southernTaraminForestOne": true,
+    "industrialTaraminLoggingAllowed": false,
+    "kingsJusticeAuthority": true,
+    "darovanOwnNavy": false,
+    "externalCustomsAuthorityTransferredFromVeldora": false,
+    "riverNavigabilityConfirmed": false,
+    "bridgeKnown": false
+  },
+  "lockedUnknowns": {
+    "actualCityPolygon": null,
+    "cityCenterCoordinates": null,
+    "thalenArmGeometry": null,
+    "thalenArmNavigability": null,
+    "bridgeCount": null,
+    "crossingMethodOrLocation": null,
+    "ferriesOrFords": null,
+    "newDocks": null,
+    "quayCapacity": null,
+    "portGeometry": null,
+    "portExactLocation": null,
+    "fishingZonePolygon": null,
+    "officialDistricts": null,
+    "streetLayout": null,
+    "parcelMap": null,
+    "waterSupplySources": null,
+    "waterPotability": null,
+    "sanitationInfrastructure": null,
+    "roadDistanceKm": null,
+    "routeGeometry": null,
+    "populationExact": null,
+    "householdCount": null,
+    "fishingFleet": null,
+    "captureSpecies": null,
+    "realStockOrGoods": null,
+    "existingNpcEntityIds": null,
+    "historicPublicEventDates": null,
+    "localTaxesOrNewLaw": null,
+    "residentialCoordinates": null,
+    "seasonalFlowMeasurements": null
+  },
+  "proposedUrbanAreas": [
+    {
+      "id": "TAR-U01",
+      "name": "Voces de la Marea",
+      "purpose": "fishing",
+      "isOfficialDistrict": false,
+      "spatialBoundary": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-U02",
+      "name": "El Patio de los Remiendos",
+      "purpose": "repairs",
+      "isOfficialDistrict": false,
+      "spatialBoundary": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-U03",
+      "name": "Sombras de la Cal",
+      "purpose": "care",
+      "isOfficialDistrict": false,
+      "spatialBoundary": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-U04",
+      "name": "Las Cuentas Secas",
+      "purpose": "agreements",
+      "isOfficialDistrict": false,
+      "spatialBoundary": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-U05",
+      "name": "La Voz del Thalen",
+      "purpose": "rumours",
+      "isOfficialDistrict": false,
+      "spatialBoundary": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-U06",
+      "name": "Los Oficios de Tierra",
+      "purpose": "other_work",
+      "isOfficialDistrict": false,
+      "spatialBoundary": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    }
+  ],
+  "proposedEstablishments": [
+    {
+      "id": "TAR-L01",
+      "name": "Casa del Cabo Zurcido",
+      "purpose": "reparacion_cabos",
+      "areaId": "TAR-U02",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L02",
+      "name": "El Peso de la Sal",
+      "purpose": "verificacion_calidad",
+      "areaId": "TAR-U01",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L03",
+      "name": "Despensa de las Dos Vasijas",
+      "purpose": "preparacion_alimentos",
+      "areaId": "TAR-U03",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L04",
+      "name": "Taller del Aro Partido",
+      "purpose": "reparacion_recipientes",
+      "areaId": "TAR-U02",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L05",
+      "name": "Patio de las Tinajas Quietas",
+      "purpose": "almacenaje_agua_condicionado",
+      "areaId": "TAR-U03",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L06",
+      "name": "Mesa del Cordel Corto",
+      "purpose": "acuerdos_pequena_escala",
+      "areaId": "TAR-U04",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L07",
+      "name": "La Hoja y el Anzuelo",
+      "purpose": "herramientas_manuales",
+      "areaId": "TAR-U02",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L08",
+      "name": "Fogón de Bruma",
+      "purpose": "comida_y_reunion",
+      "areaId": "TAR-U03",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L09",
+      "name": "Escribanía del Trato Llano",
+      "purpose": "copia_de_acuerdos_privados",
+      "areaId": "TAR-U04",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L10",
+      "name": "El Nudo de Regreso",
+      "purpose": "noticias_no_verificadas",
+      "areaId": "TAR-U05",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L11",
+      "name": "Cestas de la Tierra Ocre",
+      "purpose": "intercambio_interior",
+      "areaId": "TAR-U06",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-L12",
+      "name": "El Telar de las Horas",
+      "purpose": "textiles",
+      "areaId": "TAR-U06",
+      "actualLocationId": null,
+      "materialized": false,
+      "ownerEntityId": null,
+      "inventoryEntityIds": [],
+      "capacity": null,
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    }
+  ],
+  "proposedPeople": [
+    {
+      "id": "TAR-N01",
+      "name": "Mareva Senn",
+      "role": "negociadora_partidas",
+      "biography": "Se niega a certificar calidad sin comprobar",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "npcMaterialized": false,
+      "relationsMaterialized": false,
+      "knownCurrentFacts": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-N02",
+      "name": "Eiron Valc",
+      "role": "reparador_utiles",
+      "biography": "Exige probar reparaciones y teme reconocer errores",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "npcMaterialized": false,
+      "relationsMaterialized": false,
+      "knownCurrentFacts": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-N03",
+      "name": "Telia Arvenn",
+      "role": "cuidadora_cocinera",
+      "biography": "Cuida a otros pero anhela tiempo propio",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "npcMaterialized": false,
+      "relationsMaterialized": false,
+      "knownCurrentFacts": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-N04",
+      "name": "Corven Dail",
+      "role": "reparador_recipientes",
+      "biography": "Reconoce la dureza con clientes sin recursos",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "npcMaterialized": false,
+      "relationsMaterialized": false,
+      "knownCurrentFacts": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-N05",
+      "name": "Orea Niv",
+      "role": "aprendiz_escribania",
+      "biography": "Quiere un oficio ajeno a la pesca",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "npcMaterialized": false,
+      "relationsMaterialized": false,
+      "knownCurrentFacts": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-N06",
+      "name": "Daric Fen",
+      "role": "proveedor_encargos",
+      "biography": "Prefiere pequeños compromisos verificables",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "npcMaterialized": false,
+      "relationsMaterialized": false,
+      "knownCurrentFacts": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-N07",
+      "name": "Inara Vel",
+      "role": "trabajadora_textil",
+      "biography": "Defiende que el trabajo doméstico tiene valor",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "npcMaterialized": false,
+      "relationsMaterialized": false,
+      "knownCurrentFacts": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-N08",
+      "name": "Sarel Tern",
+      "role": "transmisor_noticias",
+      "biography": "Distingue testimonio de conocimiento aunque falle",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "npcMaterialized": false,
+      "relationsMaterialized": false,
+      "knownCurrentFacts": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-N09",
+      "name": "Yalena Mors",
+      "role": "cuidadora_vecinal",
+      "biography": "Necesita apoyo además de ofrecer cuidados",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "npcMaterialized": false,
+      "relationsMaterialized": false,
+      "knownCurrentFacts": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    },
+    {
+      "id": "TAR-N10",
+      "name": "Breon Cal",
+      "role": "auxiliar_seguridad_civil",
+      "biography": "No confunde su función civil con sentencia o mando naval",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "npcMaterialized": false,
+      "relationsMaterialized": false,
+      "knownCurrentFacts": [],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "isCanonical": false,
+      "worldStateEntityId": null,
+      "coordinates": null
+    }
+  ],
+  "proposedPersonalMemories": [
+    {
+      "id": "TAR-M01",
+      "title": "La balanza sin testigos",
+      "characterId": "TAR-N01",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "private": true,
+      "eventDate": null,
+      "publicHistoricalEvent": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "TAR-M02",
+      "title": "La cuerda que parecía suficiente",
+      "characterId": "TAR-N02",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "private": true,
+      "eventDate": null,
+      "publicHistoricalEvent": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "TAR-M03",
+      "title": "La comida que se quedó fría",
+      "characterId": "TAR-N03",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "private": true,
+      "eventDate": null,
+      "publicHistoricalEvent": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "TAR-M04",
+      "title": "La noticia a medias",
+      "characterId": "TAR-N08",
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "private": true,
+      "eventDate": null,
+      "publicHistoricalEvent": false,
+      "worldStateEventId": null
+    }
+  ],
+  "proposedConditionalArcs": [
+    {
+      "id": "TAR-H01",
+      "title": "La entrega que pierde su tiempo útil",
+      "personRefs": [
+        "TAR-N01",
+        "TAR-N02",
+        "TAR-N07"
+      ],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "conditional": true,
+      "implemented": false,
+      "triggered": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "TAR-H02",
+      "title": "Dos recipientes y tres necesidades",
+      "personRefs": [
+        "TAR-N03",
+        "TAR-N04",
+        "TAR-N09"
+      ],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "conditional": true,
+      "implemented": false,
+      "triggered": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "TAR-H03",
+      "title": "El paso que todos conocen de oídas",
+      "personRefs": [
+        "TAR-N05",
+        "TAR-N08",
+        "TAR-N10"
+      ],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "conditional": true,
+      "implemented": false,
+      "triggered": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "TAR-H04",
+      "title": "Lo que vale una hora ajena",
+      "personRefs": [
+        "TAR-N06",
+        "TAR-N07",
+        "TAR-N01"
+      ],
+      "status": "PROPOSAL_PENDING_AUTHOR",
+      "authorApproved": false,
+      "conditional": true,
+      "implemented": false,
+      "triggered": false,
+      "worldStateEventId": null
+    }
+  ],
+  "testOnlyScenes": [
+    {
+      "id": "TAR-E01",
+      "theme": "No puedes vender lo que no has visto",
+      "personRefs": [
+        "TAR-N01",
+        "TAR-N05"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "TAR-E02",
+      "theme": "El remiendo y la salida",
+      "personRefs": [
+        "TAR-N02",
+        "TAR-N07"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "TAR-E03",
+      "theme": "Para beber o para limpiar",
+      "personRefs": [
+        "TAR-N03",
+        "TAR-N04",
+        "TAR-N09"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "TAR-E04",
+      "theme": "La dirección que no existe aún",
+      "personRefs": [
+        "TAR-N08",
+        "TAR-N10"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "TAR-E05",
+      "theme": "Una deuda escrita una deuda recordada",
+      "personRefs": [
+        "TAR-N06",
+        "TAR-N05"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    },
+    {
+      "id": "TAR-E06",
+      "theme": "No quiero seguir el oficio",
+      "personRefs": [
+        "TAR-N05",
+        "TAR-N01",
+        "TAR-N03"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "worldStateEntityId": null
+    }
+  ],
+  "authorDecisions": [
+    {
+      "id": "TAR-DP21-01",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "TAR-DP21-02",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "TAR-DP21-03",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "TAR-DP21-04",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "TAR-DP21-05",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "TAR-DP21-06",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "TAR-DP21-07",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    },
+    {
+      "id": "TAR-DP21-08",
+      "status": "PENDING_AUTHOR",
+      "selectedOption": null,
+      "approvedDate": null,
+      "canonPromotion": false
+    }
+  ],
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d07_canonical_cities_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d08_population_services_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d09_governance_security_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d10_culture_society_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_taramin_elevation_authorial_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_taramin_north_central_hills_authorial_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P16/ciudad_taramin_plan_funcional_condicionado.md"
+  ],
+  "documentPaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P21/README.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P21/01_taramin_identidad_y_ambitos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P21/02_lugares_oficios_y_establecimientos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P21/03_vida_cotidiana_agua_y_cadenas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P21/04_personas_biografias_y_relaciones.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P21/05_memorias_privadas_y_conflictos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P21/06_escenas_multirrol_y_respuestas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P21/07_cartografia_contratos_y_pendientes.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P21/08_decisiones_autorales.md"
+  ],
+  "runtime": {
+    "coreRpgIntegration": false,
+    "godotIntegration": false,
+    "createdNpcEntities": false,
+    "createdBuildings": false,
+    "materializedStreets": false,
+    "createdRoutes": false,
+    "persistenceTested": false
+  },
+  "nextPhase": "D.P22_SYVARIS_NOT_STARTED",
+  "editorialClosure": {
+    "authorDecisionId": "TAR-DP21-08",
+    "closureApproved": false,
+    "ciCertifiedInData": false,
+    "mergeAuthorized": false,
+    "prMustRemainDraft": true,
+    "physicalCityCompleted": false,
+    "requiredCiPlatforms": [
+      "ubuntu-24.04",
+      "windows-2022"
+    ]
+  }
+}
