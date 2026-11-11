@@ -1,6 +1,6 @@
 # D.P20 — Veldora: puertas de cartografía, integración y aceptación
 
-**Estado:** especificación de futura producción, **sin malla de terreno, callejero ni runtime**. P18-G01, G07, G09, G10 y G12 continúan abiertos en su dimensión material/autoría hasta resolución efectiva. La calidad de esta entrega no se mide por fingir polígonos.
+**Estado:** PROPOSAL_PENDING_AUTHOR — especificación de futura producción, **sin malla de terreno, callejero ni runtime**. P18-G01, G07, G09, G10 y G12 continúan abiertos en su dimensión material/autoría hasta resolución efectiva. La calidad de esta entrega no se mide por fingir polígonos.
 
 ## Qué tenemos y qué falta
 
