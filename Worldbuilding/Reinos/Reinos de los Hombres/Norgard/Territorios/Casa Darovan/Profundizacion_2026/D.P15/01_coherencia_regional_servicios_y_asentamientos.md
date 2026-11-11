@@ -54,3 +54,7 @@ Por tanto **no se autoriza** construir una red all-to-all entre ciudades/islas n
 Los cuatro núcleos `treihord, veldora, taramin, syvaris` son ciudades manuales. Nunca entran en el generador de aldeas/pueblos/villas. Sus rangos demográficos D08 no permiten deducir números exactos de hogares o establecimientos. Las leyes del Reino sobre edad, propiedad, tutela, salud, fiscalidad y ejército se heredan desde Defaults; no se adaptan arbitrariamente a la Casa.
 
 **Salida:** `../Datos operativos/darovan_dp15_settlement_service_network_v0.1.json`. No se acreditan NPC activos, inventarios, ofertas laborales ni WorldState.
+
+## Adenda editorial — 11/11/2026
+
+Los modelos, necesidades y filtros de esta especificación se desarrollan socialmente en [D.P15/03 — Economía vivida](03_economia_vivida_red_regional_y_necesidades.md), con ocho cadenas de trabajo, escasez, custodia, movilidad y decisiones del jugador. **D.P15 completa el diseño regional de relaciones y servicios**, pero no crea proveedores físicos, tiempos de ruta ni red ejecutable.
