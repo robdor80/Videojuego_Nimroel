@@ -1,0 +1,42 @@
+name: Darovan D.P23 Treihord editorial validation
+
+on:
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P23/**'
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp23_treihord_editorial_v0.1.json'
+      - 'Tools/DarovanDP23/**'
+      - '.github/workflows/darovan-dp23.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  treihord-editorial-validation:
+    name: D.P23 Treihord · ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    env:
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12.10'
+      - name: Validate Treihord D.P23 canon anchors and adversarial mutations
+        run: python Tools/DarovanDP23/validate.py
+      - name: Regress Syvaris D.P22
+        run: python Tools/DarovanDP22/validate.py
+      - name: Regress Taramin D.P21
+        run: python Tools/DarovanDP21/validate.py
+      - name: Regress Veldora D.P20
+        run: python Tools/DarovanDP20/validate.py
+      - name: Regress D.P14–D.P18
+        run: python Tools/DarovanDP14_DP18/validate.py
+      - name: Regress D.P13
+        run: python Tools/DarovanDP13/validate.py
