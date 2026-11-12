@@ -29,3 +29,7 @@ El índice inicial anterior refleja la PR #41 antes de profundizar el contenido.
 5. [D.P18/03 — Dictamen vigente y traspaso hacia D.P20](D.P18/03_cierre_editorial_real_y_traspaso_DP20.md), manteniendo las reservas de D.P18/01–02.
 
 **Resultado:** D.P14–D.P18 se consideran **capas de planificación y diseño editorial sustantivas y diferenciadas**, aún bajo revisión de PR y sin canon nuevo por commit, mundo simulado ni aprobación automática de barrios/personajes. La siguiente fase de contenido es **D.P20 Veldora**; D.P19 auditó la insuficiencia anterior, no introduce una nueva espera ni otra vuelta de matrices.
+
+## D.P23 — Treihord (12/11/2026)
+
+[Monografía de Treihord](D.P23/README.md): mantiene su canon cerrado de ocho barrios y desarrolla doce establecimientos futuros, diez biografías base, cuatro memorias privadas, cuatro arcos condicionales y ocho escenas TEST_ONLY. Decisiones de autoría adoptadas por delegación; ninguna geometría ni NPC instanciados. PR Draft no fusionada mientras no haya orden expresa.
