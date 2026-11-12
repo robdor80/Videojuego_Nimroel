@@ -94,7 +94,7 @@ def verify_refs(m: dict, roots: dict[str, Path]) -> dict[str, dict]:
             protected["noDarovanMint"] and protected["laVenaRestricted"] and
             protected["noInternalCustoms"] and protected["noUnverifiedNewRoutes"],
             "protected canon changed")
-    require(protected["angujasPermanentInteriorSettlements"] is False,
+    require(protected["agujasPermanentInteriorSettlements"] is False,
             "Bosque de las Agujas inhabited by fiat")
     require(m["originalTreihordBlob"] == "cfc1d664ac87e1f1521a79b6299cdf1a71b45de5",
             "Treihord original blob changed in manifest")
@@ -280,7 +280,7 @@ def negative_tests(m: dict, roots: dict[str, Path]) -> int:
         ("wrong_pr_order", ("requiredIntegrationPrOrder",), [48, 47, 46, "D.P26"]),
         ("fake_authority", ("protected", "noInternalCustoms"), False),
         ("mint", ("protected", "noDarovanMint"), False),
-        ("Agujas", ("protected", "angujasPermanentInteriorSettlements"), True),
+        ("Agujas", ("protected", "agujasPermanentInteriorSettlements"), True),
         ("wrong_cities", ("canonicalCities",), ["treihord", "veldora"]),
         ("fake_unknown", ("unresolved", "currentDarovanRuler"), "Nuevo señor"),
         ("treihord_changed", ("originalTreihordBlob",), "badsha"),
