@@ -220,7 +220,7 @@ def validate(d: dict, *, docs: bool = False) -> None:
         for filename in ("04_poderes_y_justicia.md", "06_contratos_y_materializacion.md",
                          "08_auditoria_y_deuda.md"):
             req((DOC / filename).is_file(), f"missing {filename}")
-        for token in ("CoreRPG", "PR #46", "PR #47", "no"):
+        for token in ("CoreRPG", "#46", "#47", "no"):
             req(token.lower() in (DOC / "README.md").read_text(encoding="utf-8").lower(),
                 f"missing central scope rule {token}")
 
