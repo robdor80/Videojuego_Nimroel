@@ -1,5 +1,8 @@
 # D.P22 · Syvaris — Diez vidas que no caben en un estereotipo
 
+**RESOLUCIÓN AUTORAL VIGENTE — 12/11/2026.** El autor autorizó expresamente ratificar las ocho recomendaciones de D.P22 (opción A) y fusionar la PR #45 tras validación de CI. Se aprueban únicamente: seis nombres populares sin barrios o geometría; carácter cultural; doce objetivos futuros por nombre/función; diez nombres, roles y biografías base; cuatro memorias privadas sin acontecimientos públicos; cuatro arcos futuros condicionales; método cartográfico prudente; cierre editorial sujeto a CI. **Los elementos físicos, los NPC ejecutables, las misiones, la geografía desconocida y CoreRPG/Godot no se crean.** Los calificativos anteriores «propuesta», «pendiente» y «no aprobado» en esta ficha reflejan su redacción histórica y quedan sustituidos por esta resolución **solo dentro del alcance editorial descrito**.
+
+
 **SYV-N01–N10: nombres, perfiles y biografías PROPUESTOS.** Son posibles bases editoriales de NPC, no personas ya nacidas o instanciadas. Ningún parentesco, propiedad, rango, residencia, edad precisa o apellido noble se declara canónico. Las relaciones descritas son **posibles tensiones** que solo surgirán en el futuro con entidades, consentimiento y encuentros reales. Los roles se encuadran en la vida de Syvaris, sin definir moralidad por origen.
 
 ### SYV-N01 · Iria Selven — reparadora de aparejos

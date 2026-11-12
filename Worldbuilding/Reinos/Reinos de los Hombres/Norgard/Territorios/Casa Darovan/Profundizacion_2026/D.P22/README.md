@@ -1,6 +1,9 @@
 # D.P22 — Syvaris, puerto de refugio y ciudad insular
 
-**Fecha:** 11/11/2026. **Estado:** AUTORÍA DOCUMENTAL PROPUESTA, rama encadenada a D.P21 PR #44, revisión editorial pendiente. **NO CANON NUEVO PROMULGADO / NO RUNTIME / NO MERGE**.
+**RESOLUCIÓN AUTORAL VIGENTE — 12/11/2026.** El autor autorizó expresamente ratificar las ocho recomendaciones de D.P22 (opción A) y fusionar la PR #45 tras validación de CI. Se aprueban únicamente: seis nombres populares sin barrios o geometría; carácter cultural; doce objetivos futuros por nombre/función; diez nombres, roles y biografías base; cuatro memorias privadas sin acontecimientos públicos; cuatro arcos futuros condicionales; método cartográfico prudente; cierre editorial sujeto a CI. **Los elementos físicos, los NPC ejecutables, las misiones, la geografía desconocida y CoreRPG/Godot no se crean.** Los calificativos anteriores «propuesta», «pendiente» y «no aprobado» en esta ficha reflejan su redacción histórica y quedan sustituidos por esta resolución **solo dentro del alcance editorial descrito**.
+
+
+**Fecha de inicio:** 11/11/2026. **Ratificación autoral:** 12/11/2026. **Estado:** AUTORÍA EDITORIAL APROBADA, PR #44 fusionada, PR #45 autorizada a fusionar tras CI satisfactoria. **SIN MATERIALIZACIÓN / NO RUNTIME**.
 
 ## Identidad
 

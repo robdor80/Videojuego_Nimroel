@@ -1,5 +1,8 @@
 # D.P22 · Syvaris — Seis escenas de un refugio incompleto
 
+**RESOLUCIÓN AUTORAL VIGENTE — 12/11/2026.** El autor autorizó expresamente ratificar las ocho recomendaciones de D.P22 (opción A) y fusionar la PR #45 tras validación de CI. Se aprueban únicamente: seis nombres populares sin barrios o geometría; carácter cultural; doce objetivos futuros por nombre/función; diez nombres, roles y biografías base; cuatro memorias privadas sin acontecimientos públicos; cuatro arcos futuros condicionales; método cartográfico prudente; cierre editorial sujeto a CI. **Los elementos físicos, los NPC ejecutables, las misiones, la geografía desconocida y CoreRPG/Godot no se crean.** Los calificativos anteriores «propuesta», «pendiente» y «no aprobado» en esta ficha reflejan su redacción histórica y quedan sustituidos por esta resolución **solo dentro del alcance editorial descrito**.
+
+
 **SYV-E01–E06 son TEST_ONLY, no misiones.** Los protagonistas Nxx, establecimientos Lxx y ámbitos Uxx son propuestas; sus diálogos ilustran comportamiento condicional, **no** hechos que ya hayan ocurrido. Toda consecuencia futura necesitará entidades, lugar válido, percepción, permisos, existencias y tiempo.
 
 ## SYV-E01 · «Se ve tranquilo desde fuera»

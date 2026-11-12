@@ -1,5 +1,8 @@
 # D.P22 · Syvaris — La ciudad que sabe esperar
 
+**RESOLUCIÓN AUTORAL VIGENTE — 12/11/2026.** El autor autorizó expresamente ratificar las ocho recomendaciones de D.P22 (opción A) y fusionar la PR #45 tras validación de CI. Se aprueban únicamente: seis nombres populares sin barrios o geometría; carácter cultural; doce objetivos futuros por nombre/función; diez nombres, roles y biografías base; cuatro memorias privadas sin acontecimientos públicos; cuatro arcos futuros condicionales; método cartográfico prudente; cierre editorial sujeto a CI. **Los elementos físicos, los NPC ejecutables, las misiones, la geografía desconocida y CoreRPG/Godot no se crean.** Los calificativos anteriores «propuesta», «pendiente» y «no aprobado» en esta ficha reflejan su redacción histórica y quedan sustituidos por esta resolución **solo dentro del alcance editorial descrito**.
+
+
 **11/11/2026 · Autoría editorial bajo delegación general, PROPUESTA NO PROMULGADA.** El criterio de concentración en la bahía (DAR-D07-03 A) ya es canon; los seis nombres populares SYV-U01–U06 que siguen son candidatos y **no** barrios oficiales, calles ni coordenadas. Ninguna elección de diseño crea un objeto de CoreRPG.
 
 ## La primera impresión

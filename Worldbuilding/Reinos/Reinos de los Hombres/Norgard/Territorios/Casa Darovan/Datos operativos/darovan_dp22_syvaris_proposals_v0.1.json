@@ -6,23 +6,26 @@
   "date": "2026-11-11",
   "cityId": "syvaris",
   "cityKind": "canonical_city_manual_reference",
-  "status": "AUTHORSHIP_PROPOSAL_PR_DRAFT_NO_CANON_PROMOTION",
-  "creativeDelegation": "GENERAL_EDITORIAL_RECOMMENDATIONS_2026_11_11_NOT_INDIVIDUAL_CANON_RATIFICATION",
-  "authorRatifiedNewContent": false,
-  "addsCanon": false,
+  "status": "EDITORIAL_CANON_AUTHOR_APPROVED_CI_REQUIRED",
+  "creativeDelegation": "GENERAL_RECOMMENDATIONS_2026_11_11_AND_EXPLICIT_RATIFICATION_2026_11_12",
+  "authorRatifiedNewContent": true,
+  "addsCanon": true,
   "createsWorldStateEntities": false,
   "createsBuildings": false,
   "createsPhysicalMap": false,
   "coreRpgIntegrated": false,
   "godotIntegrated": false,
-  "mergeAuthorized": false,
+  "mergeAuthorized": true,
   "dependency": {
     "predecessorPhase": "D.P21",
     "predecessorPr": 44,
     "predecessorBranch": "feat/darovan-dp21-taramin-ciudad-vivida-20261111",
     "predecessorMergedWhenStarted": false,
     "baseOfWork": "PREDECESSOR_BRANCH",
-    "requiresPredecessorMergeBeforeMainMerge": true
+    "requiresPredecessorMergeBeforeMainMerge": true,
+    "predecessorMergedNow": true,
+    "predecessorMergeCommit": "f6c8457ef363c0cd16f07dccf35a0e580dd4334e",
+    "currentPullRequestBase": "main"
   },
   "canonClaims": {
     "kingdom": "Norgard",
@@ -96,60 +99,66 @@
       "name": "La Orilla del Abrigo",
       "functionalPurpose": "interfaz_bahia_refugio",
       "status": "PROPOSAL_PENDING_AUTHOR",
-      "popularNameApproved": false,
+      "popularNameApproved": true,
       "isOfficialDistrict": false,
       "geometry": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "popularNameApproval": "AUTHORED_POPULAR_NAME_SYV_DP22_01_A"
     },
     {
       "id": "SYV-U02",
       "name": "Los Patios de la Sombra",
       "functionalPurpose": "habitat_y_cuidados",
       "status": "PROPOSAL_PENDING_AUTHOR",
-      "popularNameApproved": false,
+      "popularNameApproved": true,
       "isOfficialDistrict": false,
       "geometry": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "popularNameApproval": "AUTHORED_POPULAR_NAME_SYV_DP22_01_A"
     },
     {
       "id": "SYV-U03",
       "name": "La Piedra Tibia",
       "functionalPurpose": "oficios_y_reparaciones",
       "status": "PROPOSAL_PENDING_AUTHOR",
-      "popularNameApproved": false,
+      "popularNameApproved": true,
       "isOfficialDistrict": false,
       "geometry": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "popularNameApproval": "AUTHORED_POPULAR_NAME_SYV_DP22_01_A"
     },
     {
       "id": "SYV-U04",
       "name": "Las Cuentas del Agua",
       "functionalPurpose": "abastecimiento_no_acreditado",
       "status": "PROPOSAL_PENDING_AUTHOR",
-      "popularNameApproved": false,
+      "popularNameApproved": true,
       "isOfficialDistrict": false,
       "geometry": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "popularNameApproval": "AUTHORED_POPULAR_NAME_SYV_DP22_01_A"
     },
     {
       "id": "SYV-U05",
       "name": "El Borde de Secano",
       "functionalPurpose": "gradiente_insular",
       "status": "PROPOSAL_PENDING_AUTHOR",
-      "popularNameApproved": false,
+      "popularNameApproved": true,
       "isOfficialDistrict": false,
       "geometry": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "popularNameApproval": "AUTHORED_POPULAR_NAME_SYV_DP22_01_A"
     },
     {
       "id": "SYV-U06",
       "name": "Los Bancos del Regreso",
       "functionalPurpose": "espera_y_relaciones",
       "status": "PROPOSAL_PENDING_AUTHOR",
-      "popularNameApproved": false,
+      "popularNameApproved": true,
       "isOfficialDistrict": false,
       "geometry": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "popularNameApproval": "AUTHORED_POPULAR_NAME_SYV_DP22_01_A"
     }
   ],
   "proposedEstablishments": [
@@ -165,7 +174,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L02",
@@ -179,7 +190,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L03",
@@ -193,7 +206,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L04",
@@ -207,7 +222,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L05",
@@ -221,7 +238,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L06",
@@ -235,7 +254,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L07",
@@ -249,7 +270,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L08",
@@ -263,7 +286,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L09",
@@ -277,7 +302,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L10",
@@ -291,7 +318,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L11",
@@ -305,7 +334,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     },
     {
       "id": "SYV-L12",
@@ -319,7 +350,9 @@
       "actualLocationId": null,
       "inventoryEntityIds": [],
       "capacity": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "futureNameAndPurposeApproved": true,
+      "futureObjectiveApproval": "AUTHORED_FUTURE_OBJECTIVE_SYV_DP22_03_A"
     }
   ],
   "proposedPeople": [
@@ -335,7 +368,9 @@
       "householdEntityId": null,
       "knownWorldFacts": [],
       "royalNavalRank": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "nameRoleBiographyApproved": true,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_SYV_DP22_04_A"
     },
     {
       "id": "SYV-N02",
@@ -349,7 +384,9 @@
       "householdEntityId": null,
       "knownWorldFacts": [],
       "royalNavalRank": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "nameRoleBiographyApproved": true,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_SYV_DP22_04_A"
     },
     {
       "id": "SYV-N03",
@@ -363,7 +400,9 @@
       "householdEntityId": null,
       "knownWorldFacts": [],
       "royalNavalRank": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "nameRoleBiographyApproved": true,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_SYV_DP22_04_A"
     },
     {
       "id": "SYV-N04",
@@ -377,7 +416,9 @@
       "householdEntityId": null,
       "knownWorldFacts": [],
       "royalNavalRank": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "nameRoleBiographyApproved": true,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_SYV_DP22_04_A"
     },
     {
       "id": "SYV-N05",
@@ -391,7 +432,9 @@
       "householdEntityId": null,
       "knownWorldFacts": [],
       "royalNavalRank": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "nameRoleBiographyApproved": true,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_SYV_DP22_04_A"
     },
     {
       "id": "SYV-N06",
@@ -405,7 +448,9 @@
       "householdEntityId": null,
       "knownWorldFacts": [],
       "royalNavalRank": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "nameRoleBiographyApproved": true,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_SYV_DP22_04_A"
     },
     {
       "id": "SYV-N07",
@@ -419,7 +464,9 @@
       "householdEntityId": null,
       "knownWorldFacts": [],
       "royalNavalRank": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "nameRoleBiographyApproved": true,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_SYV_DP22_04_A"
     },
     {
       "id": "SYV-N08",
@@ -433,7 +480,9 @@
       "householdEntityId": null,
       "knownWorldFacts": [],
       "royalNavalRank": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "nameRoleBiographyApproved": true,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_SYV_DP22_04_A"
     },
     {
       "id": "SYV-N09",
@@ -447,7 +496,9 @@
       "householdEntityId": null,
       "knownWorldFacts": [],
       "royalNavalRank": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "nameRoleBiographyApproved": true,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_SYV_DP22_04_A"
     },
     {
       "id": "SYV-N10",
@@ -461,7 +512,9 @@
       "householdEntityId": null,
       "knownWorldFacts": [],
       "royalNavalRank": null,
-      "worldStateEntityId": null
+      "worldStateEntityId": null,
+      "nameRoleBiographyApproved": true,
+      "biographyApproval": "AUTHORED_BIOGRAPHY_BASE_SYV_DP22_04_A"
     }
   ],
   "proposedPrivateMemories": [
@@ -472,7 +525,9 @@
       "status": "PROPOSAL_PENDING_AUTHOR",
       "isPublicHistoricalFact": false,
       "datedEvent": null,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "personalMemoryApproved": true,
+      "personalMemoryApproval": "AUTHORED_PERSONAL_MEMORY_SYV_DP22_05_A"
     },
     {
       "id": "SYV-M02",
@@ -481,7 +536,9 @@
       "status": "PROPOSAL_PENDING_AUTHOR",
       "isPublicHistoricalFact": false,
       "datedEvent": null,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "personalMemoryApproved": true,
+      "personalMemoryApproval": "AUTHORED_PERSONAL_MEMORY_SYV_DP22_05_A"
     },
     {
       "id": "SYV-M03",
@@ -490,7 +547,9 @@
       "status": "PROPOSAL_PENDING_AUTHOR",
       "isPublicHistoricalFact": false,
       "datedEvent": null,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "personalMemoryApproved": true,
+      "personalMemoryApproval": "AUTHORED_PERSONAL_MEMORY_SYV_DP22_05_A"
     },
     {
       "id": "SYV-M04",
@@ -499,7 +558,9 @@
       "status": "PROPOSAL_PENDING_AUTHOR",
       "isPublicHistoricalFact": false,
       "datedEvent": null,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "personalMemoryApproved": true,
+      "personalMemoryApproval": "AUTHORED_PERSONAL_MEMORY_SYV_DP22_05_A"
     }
   ],
   "proposedConditionalArcs": [
@@ -515,7 +576,9 @@
       "conditional": true,
       "implementationStatus": "NOT_IMPLEMENTED",
       "triggered": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "designApproved": true,
+      "futureNarrativeArcApproval": "AUTHORED_FUTURE_CONDITIONAL_ARC_SYV_DP22_06_A"
     },
     {
       "id": "SYV-H02",
@@ -529,7 +592,9 @@
       "conditional": true,
       "implementationStatus": "NOT_IMPLEMENTED",
       "triggered": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "designApproved": true,
+      "futureNarrativeArcApproval": "AUTHORED_FUTURE_CONDITIONAL_ARC_SYV_DP22_06_A"
     },
     {
       "id": "SYV-H03",
@@ -543,7 +608,9 @@
       "conditional": true,
       "implementationStatus": "NOT_IMPLEMENTED",
       "triggered": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "designApproved": true,
+      "futureNarrativeArcApproval": "AUTHORED_FUTURE_CONDITIONAL_ARC_SYV_DP22_06_A"
     },
     {
       "id": "SYV-H04",
@@ -557,7 +624,9 @@
       "conditional": true,
       "implementationStatus": "NOT_IMPLEMENTED",
       "triggered": false,
-      "worldStateEventId": null
+      "worldStateEventId": null,
+      "designApproved": true,
+      "futureNarrativeArcApproval": "AUTHORED_FUTURE_CONDITIONAL_ARC_SYV_DP22_06_A"
     }
   ],
   "testOnlyScenes": [
@@ -633,68 +702,124 @@
     {
       "id": "SYV-DP22-01",
       "selectedRecommendedOption": "A",
-      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
-      "authorRatified": false,
-      "canonPromotion": false
+      "selectionStatus": "APPROVED_AUTHOR",
+      "authorRatified": true,
+      "canonPromotion": true,
+      "approvedDate": "2026-11-12",
+      "approvalScope": "SIX_POPULAR_NAMES_NO_DISTRICTS_NO_GEOMETRY"
     },
     {
       "id": "SYV-DP22-02",
       "selectedRecommendedOption": "A",
-      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
-      "authorRatified": false,
-      "canonPromotion": false
+      "selectionStatus": "APPROVED_AUTHOR",
+      "authorRatified": true,
+      "canonPromotion": true,
+      "approvedDate": "2026-11-12",
+      "approvalScope": "CULTURAL_CHARACTER_NO_NEW_INSTITUTIONS"
     },
     {
       "id": "SYV-DP22-03",
       "selectedRecommendedOption": "A",
-      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
-      "authorRatified": false,
-      "canonPromotion": false
+      "selectionStatus": "APPROVED_AUTHOR",
+      "authorRatified": true,
+      "canonPromotion": true,
+      "approvedDate": "2026-11-12",
+      "approvalScope": "TWELVE_NAMED_FUTURE_ESTABLISHMENT_OBJECTIVES_NO_BUILDINGS"
     },
     {
       "id": "SYV-DP22-04",
       "selectedRecommendedOption": "A",
-      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
-      "authorRatified": false,
-      "canonPromotion": false
+      "selectionStatus": "APPROVED_AUTHOR",
+      "authorRatified": true,
+      "canonPromotion": true,
+      "approvedDate": "2026-11-12",
+      "approvalScope": "TEN_BIOGRAPHY_BASES_NO_NPC_MATERIALIZATION"
     },
     {
       "id": "SYV-DP22-05",
       "selectedRecommendedOption": "A",
-      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
-      "authorRatified": false,
-      "canonPromotion": false
+      "selectionStatus": "APPROVED_AUTHOR",
+      "authorRatified": true,
+      "canonPromotion": true,
+      "approvedDate": "2026-11-12",
+      "approvalScope": "FOUR_PRIVATE_MEMORIES_NO_PUBLIC_EVENTS"
     },
     {
       "id": "SYV-DP22-06",
       "selectedRecommendedOption": "A",
-      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
-      "authorRatified": false,
-      "canonPromotion": false
+      "selectionStatus": "APPROVED_AUTHOR",
+      "authorRatified": true,
+      "canonPromotion": true,
+      "approvedDate": "2026-11-12",
+      "approvalScope": "FOUR_FUTURE_CONDITIONAL_ARCS_NOT_IMPLEMENTED"
     },
     {
       "id": "SYV-DP22-07",
       "selectedRecommendedOption": "A",
-      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
-      "authorRatified": false,
-      "canonPromotion": false
+      "selectionStatus": "APPROVED_AUTHOR",
+      "authorRatified": true,
+      "canonPromotion": false,
+      "approvedDate": "2026-11-12",
+      "approvalScope": "CARTOGRAPHY_METHOD_APPROVED_NOT_EXECUTED"
     },
     {
       "id": "SYV-DP22-08",
       "selectedRecommendedOption": "A",
-      "selectionStatus": "SELECTED_CREATIVE_PROPOSAL",
-      "authorRatified": false,
-      "canonPromotion": false
+      "selectionStatus": "APPROVED_AUTHOR",
+      "authorRatified": true,
+      "canonPromotion": false,
+      "approvedDate": "2026-11-12",
+      "approvalScope": "EDITORIAL_CLOSURE_AFTER_FINAL_CI_AND_MERGE_AUTHORIZED"
     }
   ],
   "scopes": {
-    "popularAreaNames": "CANDIDATES_NO_DISTRICTS",
-    "futureEstablishments": "CANDIDATES_NO_PHYSICAL_INSTANCES",
-    "biographies": "CANDIDATES_NO_NPCS",
-    "privateMemories": "CANDIDATES_NO_EVENTS",
-    "storyArcs": "CANDIDATES_NOT_IMPLEMENTED",
-    "cartography": "AUTHOR_AUTHORIZED_MAP_REQUIRED",
-    "closure": "EDITORIAL_ONLY_AFTER_APPROVAL_AND_CI",
-    "merge": "EXPLICIT_AUTHOR_AUTHORIZATION_REQUIRED"
+    "popularAreaNames": "AUTHORED_POPULAR_NAMES_NO_DISTRICTS",
+    "futureEstablishments": "AUTHORED_FUTURE_OBJECTIVES_NO_PHYSICAL_INSTANCES",
+    "biographies": "AUTHORED_BIOGRAPHY_BASES_NO_NPCS",
+    "privateMemories": "AUTHORED_PERSONAL_MEMORIES_NO_WORLDSTATE_EVENTS",
+    "storyArcs": "AUTHORED_FUTURE_ARCS_NOT_IMPLEMENTED",
+    "cartography": "APPROVED_AUTHOR_MAP_PROCESS_NOT_EXECUTED",
+    "closure": "EDITORIAL_APPROVED_CI_REQUIRED",
+    "merge": "EXPLICIT_AUTHOR_AUTHORIZATION_GRANTED_2026_11_12"
+  },
+  "authorApproval": {
+    "date": "2026-11-12",
+    "source": "EXPLICIT_USER_AUTHORIZATION_TO_RATIFY_SYVARIS_AND_MERGE_PR45",
+    "scope": "EDITORIAL_CONTENT_AND_MERGE_ONLY_NO_PHYSICAL_OR_RUNTIME",
+    "decisions": [
+      "SYV-DP22-01",
+      "SYV-DP22-02",
+      "SYV-DP22-03",
+      "SYV-DP22-04",
+      "SYV-DP22-05",
+      "SYV-DP22-06",
+      "SYV-DP22-07",
+      "SYV-DP22-08"
+    ],
+    "coreRpgIntegrated": false,
+    "godotIntegrated": false,
+    "worldStateMaterialized": false,
+    "requiresFinalHeadCiGreen": true,
+    "ciCertifiedInRepositoryData": false
+  },
+  "approvedCulturalCharacter": {
+    "decisionId": "SYV-DP22-02",
+    "option": "A",
+    "status": "AUTHORED_EDITORIAL_CHARACTER",
+    "value": "CONVIVENCIA_DE_ABRIGO_PRUDENCIA_PRACTICA_Y_ORGULLO_DEL_OFICIO",
+    "createsInstitutions": false,
+    "imposesUniformPersonalities": false
+  },
+  "approvedCartographyProcess": {
+    "decisionId": "SYV-DP22-07",
+    "option": "A",
+    "status": "APPROVED_NOT_EXECUTED",
+    "authorizedMapRequired": true,
+    "requiresNewDecisionsForUnknownGeometry": true,
+    "geometryCreated": false,
+    "streetsCreated": false,
+    "docksCreated": false,
+    "secondaryCovePortsCreated": false,
+    "maritimeRoutesCreated": false
   }
 }

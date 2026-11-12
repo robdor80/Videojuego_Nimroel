@@ -1,42 +1,42 @@
-# D.P22 · Syvaris — Cuaderno de decisiones recomendadas
+# D.P22 · Syvaris — Resolución autoral definitiva de las ocho decisiones
 
-**11/11/2026 · Decisiones creativas tomadas bajo la instrucción de autonomía del autor.** El autor pidió iniciar Syvaris y delegó las decisiones recomendadas. Esto permite seleccionar y redactar las **propuestas** siguientes, pero no debe confundirse con la lectura y ratificación individual de nombres, personajes e historia todavía no mostrados. Se registra **SELECTED_CREATIVE_PROPOSAL**; ninguna nueva afirmación se promueve automáticamente a AUTHORED. Canon preexistente D07/D08/Norgard permanece intacto.
+**12/11/2026 · AUTORIZACIÓN EXPRESA DEL AUTOR.** Tras solicitar el cierre de Taramin y la ratificación/fusión de Syvaris, el autor indicó «Haz los dos pasos, tienes permiso». Quedan aprobadas las ocho opciones A recomendadas en D.P22 **únicamente en su alcance editorial y procedimental**. La PR #44 de Taramin se fusionó en `main` mediante `f6c8457ef363c0cd16f07dccf35a0e580dd4334e`. Para la PR #45 existe autorización explícita de fusión, condicionada a controles CI del HEAD final. **No son decisiones de materialización.**
 
-### SYV-DP22-01 · Identidad y nombres populares
-**Recomendación A (seleccionada para la propuesta):** seis expresiones populares superponibles U01–U06: «La Orilla del Abrigo», «Los Patios de la Sombra», «La Piedra Tibia», «Las Cuentas del Agua», «El Borde de Secano», «Los Bancos del Regreso». **Alternativa B:** retener los nombres como meros títulos literarios. **Alcance:** no barrios oficiales, límites, calles ni plano. **Estado:** pendiente de ratificación canónica expresa.
+## SYV-DP22-01 — Nombres populares · A, APROBADA
+«La Orilla del Abrigo», «Los Patios de la Sombra», «La Piedra Tibia», «Las Cuentas del Agua», «El Borde de Secano», «Los Bancos del Regreso» (SYV-U01–U06) son **AUTHORED_POPULAR_NAME**, denominaciones populares susceptibles de solapamiento. **No** constituyen seis barrios administrativos ni fijan mapa, límites, calles o solares. La estructura espacial de cada ámbito continúa en propuesta.
 
-### SYV-DP22-02 · Tono cultural
-**Recomendación A (seleccionada):** convivencia de abrigo, prudencia práctica y orgullo de oficio. La seguridad relativa de la bahía no garantiza abundancia; ningún habitante queda obligado a una psicología colectiva. **Alternativa B:** carácter cultural sin definición mayoritaria. Sin nuevas instituciones, ritos, fiestas ni privilegios. **Estado:** pendiente de ratificación.
+## SYV-DP22-02 — Personalidad cultural · A, APROBADA
+Carácter de **convivencia de abrigo, prudencia práctica y orgullo del oficio**: refugio no equivale a abundancia. Es un tono cultural predominante, sin imponer una psicología común a todos; no crea instituciones, ritos, fiestas, leyes, gremios o privilegios.
 
-### SYV-DP22-03 · Doce establecimientos
-**Recomendación A (seleccionada):** reservar L01–L12 **como futuros objetivos de autoría por nombre y función**, sin existencia ni materialización. **Alternativa B:** solo cinco establecimientos prioritarios. Ninguno crea pozo, hospital, dependencia naval, aduana, muelle o almacén activo. **Estado:** pendiente de ratificación de nombres/funciones.
+## SYV-DP22-03 — Doce establecimientos · A, APROBADA
+Los nombres y funciones SYV-L01–L12 se aceptan como **AUTHORED_FUTURE_OBJECTIVE** (objetivos canónicos de autoría futura). No son locales activos ni inmuebles construidos: ningún muelle, pozo, hospital, dependencia naval, calle, capacidad, inventario, titularidad o proveedor nace de la ratificación.
 
-### SYV-DP22-04 · Diez personajes
-**Recomendación A (seleccionada):** diez bases de biografía N01–N10, con voz, límites de conocimiento y aspiraciones propias. **Alternativa B:** aprobar solo protagonistas centrales. La base literaria no crea hogar, filiación, rango, vida o EntityId. **Estado:** pendiente de ratificación.
+## SYV-DP22-04 — Diez biografías · A, APROBADA
+SYV-N01–N10 quedan aceptadas por nombre, rol y biografía narrativa como **AUTHORED_BIOGRAPHY_BASE**, incluyendo sus motivaciones y contradicciones del capítulo 04. No aparecen personas en WorldState, hogares, genealogías, propiedades, rangos navales ni relaciones consumadas.
 
-### SYV-DP22-05 · Memoria individual
-**Recomendación A (seleccionada):** M01–M04 como recuerdos íntimos condicionales de Maela, Nelis, Orel y Sera. **Alternativa B:** mantenerlos como ejercicios literarios. No ocurren en fecha concreta, no existen como historia pública ni actualizan la memoria persistida. **Estado:** pendiente de ratificación.
+## SYV-DP22-05 — Cuatro recuerdos íntimos · A, APROBADA
+SYV-M01–M04 quedan aceptados como **AUTHORED_PERSONAL_MEMORY** de Maela, Nelis, Orel y Sera. No se fijan fechas, crónicas públicas, hechos judiciales ni memorias de entidades; sigue sin conocerse el destino de la persona que Sera esperaba.
 
-### SYV-DP22-06 · Narración
-**Recomendación A (seleccionada):** H01–H04 como **cuatro arcos futuros condicionales**, diferentes de las seis escenas E01–E06 TEST_ONLY. **Alternativa B:** solo inspiración. Activación requiere CoreRPG, causalidad, acceso, datos del mundo y guardado. **Estado:** pendiente de ratificación.
+## SYV-DP22-06 — Cuatro hilos narrativos · A, APROBADA
+SYV-H01–H04 pasan a **AUTHORED_FUTURE_CONDITIONAL_ARC**, diseños literarios para implementación futura dependiente de CoreRPG. No hay sucesos ya desencadenados ni misiones activas, y SYV-E01–E06 siguen siendo `TEST_ONLY`.
 
-### SYV-DP22-07 · Cartografía
-**Recomendación A (seleccionada):** preservar primero lo que eventualmente se apruebe y, después, levantar plano sobre el mapa autorizado y nuevas decisiones explícitas para huecos. **Alternativa B:** congelar completamente identidad hasta tener geometría. Ningún muro, puente, cala, muelle, camino, distancia o parcela se inventa. **Estado:** método propuesto, no ejecutado.
+## SYV-DP22-07 — Cartografía futura · A, APROBADA
+Conservar la identidad editorial aprobada y cartografiar únicamente desde el mapa autorizado y fuentes nuevas cuando falten datos. No se crean ahora costas métricas, puertos secundarios, caminos, calles, sectores navales, fuentes de agua, rutas ni edificios.
 
-### SYV-DP22-08 · Cierre editorial y Git
-**Recomendación A (seleccionada):** documentación y pruebas de Syvaris completas en rama **dependiente de la PR #44**; PR propia en Draft, sin fusionar; cierre editorial solo tras aceptación del contenido canónico y CI verde sobre HEAD definitivo. **Alternativa B:** mantener la fase en revisión mientras falten decisiones. **Estado:** procedimiento preparado; fusión no autorizada.
+## SYV-DP22-08 — Cierre y fusión · A, APROBADA
+Cierre exclusivamente **editorial**, sujeto a que las cuatro familias de GitHub Actions de la PR #45 estén en verde **sobre el último HEAD**, Windows 2022 y Ubuntu 24.04; sin declarar runtime, NPC ni cartografía construidos. **El autor autorizó expresamente la fusión de PR #45** después de D.P21 y de esa certificación.
 
-## Registro de decisión y frontera de aprobaciones
+## Registro de aprobación
 
-| ID | Elección creativa | Autoría formal |
-|---|---|---|
-| SYV-DP22-01 | A · seis nombres populares propuestos | PENDING_AUTHOR_RATIFICATION |
-| SYV-DP22-02 | A · carácter de abrigo prudente y oficioso | PENDING_AUTHOR_RATIFICATION |
-| SYV-DP22-03 | A · doce establecimientos futuros candidatos | PENDING_AUTHOR_RATIFICATION |
-| SYV-DP22-04 | A · diez biografías candidatas | PENDING_AUTHOR_RATIFICATION |
-| SYV-DP22-05 | A · cuatro memorias íntimas candidatas | PENDING_AUTHOR_RATIFICATION |
-| SYV-DP22-06 | A · cuatro arcos futuros condicionales | PENDING_AUTHOR_RATIFICATION |
-| SYV-DP22-07 | A · método cartográfico conservador | PENDING_AUTHOR_RATIFICATION |
-| SYV-DP22-08 | A · cierre editorial condicionado a aprobación y CI | PENDING_AUTHOR_RATIFICATION |
+| Decisión | Opción | Estado | Alcance |
+|---|---|---|---|
+| SYV-DP22-01 | A | APROBADA 12/11/2026 | Solo nombres populares |
+| SYV-DP22-02 | A | APROBADA 12/11/2026 | Carácter cultural |
+| SYV-DP22-03 | A | APROBADA 12/11/2026 | Objetivos editoriales futuros L01–L12 |
+| SYV-DP22-04 | A | APROBADA 12/11/2026 | Biografías base N01–N10 |
+| SYV-DP22-05 | A | APROBADA 12/11/2026 | Memorias íntimas M01–M04 |
+| SYV-DP22-06 | A | APROBADA 12/11/2026 | Arcos futuros condicionales H01–H04 |
+| SYV-DP22-07 | A | APROBADA 12/11/2026 | Procedimiento cartográfico no ejecutado |
+| SYV-DP22-08 | A | APROBADA 12/11/2026 | Cierre editorial + autorización de merge condicionada a CI |
 
-**No aprobar por implicación:** nombres físicos de calas, población de toda la isla, poderes de Orel, ubicación de la Armada, fuentes de agua, instituciones especiales, rango naval, topónimos oficiales, fechas históricas y rutas marítimas. Ninguna «aprobación general de comenzar» es por sí sola permiso de merge.
+**Canon heredado inalterado:** Syvaris ciudad 7.000–10.000 habitantes, resto de isla y censo insular UNKNOWN; actividad principal en bahía protegida; calas menores sin puertos inventados; Armada **Real de Norgard**, no de Darovan. Cero entidades materiales, eventos públicos nuevos, rutas, barcos o instalaciones creados.

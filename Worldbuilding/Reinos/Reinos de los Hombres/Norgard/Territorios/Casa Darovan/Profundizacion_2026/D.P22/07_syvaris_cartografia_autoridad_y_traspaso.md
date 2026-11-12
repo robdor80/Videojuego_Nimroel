@@ -1,5 +1,8 @@
 # D.P22 · Syvaris — Lo que podemos dibujar y lo que sería falsificar el mapa
 
+**RESOLUCIÓN AUTORAL VIGENTE — 12/11/2026.** El autor autorizó expresamente ratificar las ocho recomendaciones de D.P22 (opción A) y fusionar la PR #45 tras validación de CI. Se aprueban únicamente: seis nombres populares sin barrios o geometría; carácter cultural; doce objetivos futuros por nombre/función; diez nombres, roles y biografías base; cuatro memorias privadas sin acontecimientos públicos; cuatro arcos futuros condicionales; método cartográfico prudente; cierre editorial sujeto a CI. **Los elementos físicos, los NPC ejecutables, las misiones, la geografía desconocida y CoreRPG/Godot no se crean.** Los calificativos anteriores «propuesta», «pendiente» y «no aprobado» en esta ficha reflejan su redacción histórica y quedan sustituidos por esta resolución **solo dentro del alcance editorial descrito**.
+
+
 **La autoría editorial precede a la cartografía.** Se inspeccionó la referencia gráfica proporcionada por el autor y las fuentes de D01–D13/D07/D.P16. El mapa ilustra la ubicación general de Syvaris en una isla al sur de Norgard, pero su escala gráfica no es levantamiento geodésico, ni demuestra muelles, calas concretas, carretera, manantiales o límites catastrales.
 
 ## Anclas verificables de la futura materialización
