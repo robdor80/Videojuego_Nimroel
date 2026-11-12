@@ -1,6 +1,6 @@
 # NIM-08 a NIM-19 — Primera aldea jugable y fábrica reproducible de mundos
 
-**Fecha:** 12 de noviembre de 2026. **Estado:** planificación documentada, pendiente autorización de ejecución. **No hay implementación de estas fases, PR de cierre ni fusión en main.**
+**Fecha:** 12 de noviembre de 2026. **Estado del documento:** planificación V001 histórica; su autorización posterior de NIM-08 está desarrollada en [NIM-08/](NIM-08/README.md) y PR Draft #50. No confundir avance de NIM-08 documental con implantación del mundo jugable. **No se ha iniciado NIM-09 ni fusionado NIM-08.**
 
 **Objetivo:** convertir la aldea procedural V1 de Casa Valrik/Treskal y el encargo opcional «La herramienta rota» en una aventura **real**, con edificios, hogares, población, movimientos, percepciones, objetos, oficios, tiempo, decisiones, conversaciones y persistencia que operan en CoreRPG y se presentan mediante Godot 2D en Windows/Android. Su éxito valida un método para escalar al resto de Treskal, Casa Valrik, Casa Darovan y los otros territorios aprobados.
 
@@ -35,7 +35,7 @@
 - Los commits de la antigua rama NIM-07 están ya incorporados al historial de main, aunque no existe en estas comprobaciones una certificación física adicional de I4 en MSI/Tab S9+.
 - Los 28 criterios V001 completos **NO se consideran ejecutados** solo por las validaciones estructurales NIM-07.
 
-## Primera acción futura
+## Instrucción histórica de planificación (superada para NIM-08)
 
 Cuando el propietario dé autorización a **NIM-08**, ChatGPT debe auditar HEADs actuales y completar los contratos/ADRs **sin consumir cuota Codex**. Solo después, NIM-09 producirá el primer paquete reproducible de datos y validadores. No se trabaja en CoreRPG ni se lanza compilación alguna por la mera existencia de este documento.
 
