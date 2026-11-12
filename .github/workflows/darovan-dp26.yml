@@ -1,6 +1,13 @@
 name: Darovan D.P26 integral editorial closure audit
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P26/**'
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp26_cierre_editorial_v0.1.json'
+      - 'Tools/DarovanDP26/**'
+      - '.github/workflows/darovan-dp26.yml'
   pull_request:
     paths:
       - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P26/**'
