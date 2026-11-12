@@ -74,7 +74,7 @@
     "noDarovanMint": true,
     "laVenaRestricted": true,
     "noInternalCustoms": true,
-    "angujasPermanentInteriorSettlements": false,
+    "agujasPermanentInteriorSettlements": false,
     "noUnverifiedNewRoutes": true
   },
   "delivery": {
