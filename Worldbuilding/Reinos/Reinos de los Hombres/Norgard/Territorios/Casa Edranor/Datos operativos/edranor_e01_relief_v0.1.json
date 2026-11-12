@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e01_relief",
+  "version": "0.1",
+  "date": "2026-11-12",
+  "phase": "E01",
+  "status": "DOCUMENTARY_PLANNING_ONLY",
+  "runtimeEnabled": false,
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor",
+    "localidad",
+    "world_state"
+  ],
+  "sourceAuthorities": [
+    "CANON_REPO",
+    "AUTOR_2026_11_12",
+    "OBSERVACION_MAPA",
+    "PROPUESTA",
+    "UNKNOWN"
+  ],
+  "cartography": {
+    "reference": "E00_MAPA_Y_LIMITES.md",
+    "authorPerimeter": "RED_LINE_2026_11_12",
+    "authorRodasMarker": "BLUE_X_2026_11_12",
+    "northBoundaryClosed": false,
+    "metricGeometryValidated": false,
+    "georeferenced": false,
+    "coordinateSystem": "UNKNOWN",
+    "scale": "UNKNOWN",
+    "elevationModel": "UNKNOWN",
+    "polygonGeometry": [],
+    "drainageBasinsValidated": false,
+    "watercoursesValidated": false
+  },
+  "anchors": [
+    {
+      "id": "dorth",
+      "territorialRole": "SEDE",
+      "insideTerritorialScope": true,
+      "jurisdictionOwner": "casa_edranor",
+      "procedural": false
+    },
+    {
+      "id": "lumina",
+      "territorialRole": "ASENTAMIENTO_CANON",
+      "insideTerritorialScope": true,
+      "jurisdictionOwner": "casa_edranor",
+      "procedural": false
+    },
+    {
+      "id": "karsath",
+      "territorialRole": "ASENTAMIENTO_CANON",
+      "insideTerritorialScope": true,
+      "jurisdictionOwner": "casa_edranor",
+      "procedural": false
+    },
+    {
+      "id": "rodas",
+      "territorialRole": "ENCLAVE_REAL_GEOGRAFICO",
+      "insideTerritorialScope": true,
+      "jurisdictionOwner": "crown_aethros",
+      "militaryOwner": "crown_aethros",
+      "fiscalOwner": "crown_aethros",
+      "procedural": false,
+      "urbanClass": "ALDEA_AUTOR_FINAL_CLASS_PENDING"
+    },
+    {
+      "id": "hallheim",
+      "territorialRole": "CAPITAL_REAL_FUERA",
+      "insideTerritorialScope": false,
+      "jurisdictionOwner": "crown_aethros",
+      "procedural": false
+    }
+  ],
+  "reliefUnits": [
+    {
+      "id": "edr_e01_west_valkram_interface",
+      "sector": "OESTE",
+      "landform": "INTERFAZ_DE_BARRERA_MONTANOSA",
+      "evidence": "CANON_REPO",
+      "territorialExtent": "UNKNOWN",
+      "slopeAssignment": "UNKNOWN",
+      "elevation": "UNKNOWN",
+      "description": "Valkram separa las regiones occidental y central; la adjudicacion de crestas y vertientes a Edranor no se deduce."
+    },
+    {
+      "id": "edr_e01_karsath_central_west",
+      "sector": "OESTE_CENTRAL",
+      "landform": "LLANURA_MESETA_TRANSICION_POSIBLE",
+      "evidence": "PROPUESTA",
+      "territorialExtent": "UNKNOWN",
+      "slopeAssignment": "UNKNOWN",
+      "elevation": "UNKNOWN",
+      "description": "Sector de lectura del entorno de Karsath, mas occidental que Lumina y Dorth; microrelieve por resolver."
+    },
+    {
+      "id": "edr_e01_lumina_bosque_alto",
+      "sector": "CENTRO",
+      "landform": "MESETA_ELEVADA_FORESTAL",
+      "evidence": "CANON_REPO",
+      "territorialExtent": "UNKNOWN",
+      "slopeAssignment": "UNKNOWN",
+      "elevation": "UNKNOWN",
+      "description": "Bosque Alto ocupa una meseta elevada en el entorno de Lumina, con laderas y lindes; no se fija su perimetro."
+    },
+    {
+      "id": "edr_e01_central_wine_context",
+      "sector": "CENTRO_MERIDIONAL",
+      "landform": "MOSAICO_CENTRAL_LLANA_Y_MESETAS",
+      "evidence": "PROPUESTA",
+      "territorialExtent": "UNKNOWN",
+      "slopeAssignment": "UNKNOWN",
+      "elevation": "UNKNOWN",
+      "description": "Superficie de analisis para la franja vinicola ya canonica; no implica cultivo continuo o en todo el norte."
+    },
+    {
+      "id": "edr_e01_dorth_azurios_west",
+      "sector": "ESTE",
+      "landform": "BORDE_FORESTAL_PIEDEMONTE_AZURIOS",
+      "evidence": "CANON_REPO",
+      "territorialExtent": "UNKNOWN",
+      "slopeAssignment": "UNKNOWN",
+      "elevation": "UNKNOWN",
+      "description": "Dorth en lindes del Bosque de los Azurios, que recorre buena parte de la vertiente occidental de los montes."
+    },
+    {
+      "id": "edr_e01_north_cold_transition",
+      "sector": "NORTE_INTERIOR",
+      "landform": "TRANSICION_CENTRAL_FRIA_BOREAL",
+      "evidence": "PROPUESTA",
+      "territorialExtent": "UNKNOWN",
+      "slopeAssignment": "UNKNOWN",
+      "elevation": "UNKNOWN",
+      "description": "Proyeccion cualitativa del gradiente frio y boreal regional sobre la lectura del norte; sin lindes ni poblacion local."
+    },
+    {
+      "id": "edr_e01_far_north_unclosed",
+      "sector": "NORTE_RECORTADO",
+      "landform": "EXTREMO_FRIO_SUBPOLAR_POLAR_POTENCIAL",
+      "evidence": "UNKNOWN",
+      "territorialExtent": "UNKNOWN",
+      "slopeAssignment": "UNKNOWN",
+      "elevation": "UNKNOWN",
+      "description": "No esta demostrado hasta donde llega Edranor en el recorte; no se afirma costa, tundra o dominio polar de la Casa."
+    }
+  ],
+  "qualitativeContacts": [
+    {
+      "id": "edr_e01_contact_west_center",
+      "from": "edr_e01_west_valkram_interface",
+      "to": "edr_e01_karsath_central_west",
+      "status": "HYPOTHESIS",
+      "physicalContactValidated": false,
+      "travelRouteConfirmed": false
+    },
+    {
+      "id": "edr_e01_contact_karsath_lumina",
+      "from": "edr_e01_karsath_central_west",
+      "to": "edr_e01_lumina_bosque_alto",
+      "status": "HYPOTHESIS",
+      "physicalContactValidated": false,
+      "travelRouteConfirmed": false
+    },
+    {
+      "id": "edr_e01_contact_lumina_dorth",
+      "from": "edr_e01_lumina_bosque_alto",
+      "to": "edr_e01_dorth_azurios_west",
+      "status": "HYPOTHESIS",
+      "physicalContactValidated": false,
+      "travelRouteConfirmed": false
+    },
+    {
+      "id": "edr_e01_contact_south_north",
+      "from": "edr_e01_central_wine_context",
+      "to": "edr_e01_north_cold_transition",
+      "status": "HYPOTHESIS",
+      "physicalContactValidated": false,
+      "travelRouteConfirmed": false
+    },
+    {
+      "id": "edr_e01_contact_north_edge",
+      "from": "edr_e01_north_cold_transition",
+      "to": "edr_e01_far_north_unclosed",
+      "status": "HYPOTHESIS",
+      "physicalContactValidated": false,
+      "travelRouteConfirmed": false
+    }
+  ],
+  "corridorQuestions": [
+    {
+      "id": "edr_e01_corridor_karsath_lumina",
+      "endpoints": [
+        "karsath",
+        "lumina"
+      ],
+      "type": "TOPOLOGICAL_STUDY_ONLY",
+      "routeExists": false,
+      "passNamed": false,
+      "physicalTransitValidated": false,
+      "trace": "UNKNOWN",
+      "futurePhase": "E05"
+    },
+    {
+      "id": "edr_e01_corridor_lumina_dorth",
+      "endpoints": [
+        "lumina",
+        "dorth"
+      ],
+      "type": "TOPOLOGICAL_STUDY_ONLY",
+      "routeExists": false,
+      "passNamed": false,
+      "physicalTransitValidated": false,
+      "trace": "UNKNOWN",
+      "futurePhase": "E05"
+    },
+    {
+      "id": "edr_e01_corridor_rodas",
+      "endpoints": [
+        "rodas",
+        "dorth"
+      ],
+      "type": "JURISDICTION_CROSSING_STUDY_ONLY",
+      "routeExists": false,
+      "passNamed": false,
+      "physicalTransitValidated": false,
+      "trace": "UNKNOWN",
+      "futurePhase": "E05"
+    },
+    {
+      "id": "edr_e01_corridor_valkram",
+      "endpoints": [],
+      "type": "UNLOCATED_MOUNTAIN_PASS_STUDY_ONLY",
+      "routeExists": false,
+      "passNamed": false,
+      "physicalTransitValidated": false,
+      "trace": "UNKNOWN",
+      "futurePhase": "E05"
+    }
+  ],
+  "administrativeOverlays": {
+    "rodasControlledBy": "crown_aethros",
+    "berserkersControlledBy": "crown_aethros",
+    "hallheimOutside": true,
+    "forestOwnerships": "UNKNOWN",
+    "noInternalCustoms": true
+  },
+  "unknown": [
+    "EDD-01_NORTH_BOUNDARY_CLOSURE",
+    "EDD-02_GEOREFERENCING_AND_SCALE",
+    "EDD-03_DRAINAGE_AND_HYDRONYMS",
+    "EDD-07_ACCESS_AND_PATHS",
+    "LOCAL_SLOPES_AND_PASSES",
+    "BOUNDARY_VERTICES",
+    "RIDGE_ADMINISTRATION",
+    "FOREST_OWNERSHIP",
+    "TERRAIN_HEIGHTS",
+    "NORTHERN_POLAR_REACH"
+  ],
+  "forbiddenClaims": [
+    "NUMERIC_ELEVATIONS",
+    "NEW_SETTLEMENTS",
+    "ROADS_AS_FACT",
+    "PASS_AS_FACT",
+    "MAPPED_RIVERS_AS_FACT",
+    "BOUNDARY_POLYGON_AS_FACT",
+    "RODAS_EDRANOR_JURISDICTION",
+    "HALLHEIM_INSIDE",
+    "POLAR_WINE_VINEYARDS_BY_DEFAULT"
+  ]
+}
