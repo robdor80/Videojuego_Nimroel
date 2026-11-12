@@ -119,5 +119,34 @@
     "editorial": "APTO_CON_DEPENDENCIAS",
     "administrative": "PENDING_AUTHOR_AND_SEQUENTIAL_MERGES",
     "runtime": "NOT_IMPLEMENTED_BY_DP26"
+  },
+  "integrationReconciliation": {
+    "status": "UPSTREAM_PRS_MERGED_AND_VERIFIED_IN_MAIN",
+    "verifiedDate": "2026-11-12",
+    "mainAfterDP25": "50e2412dc2160b3bb5bf5abef0d04382160807d2",
+    "upstreamPrMerges": [
+      {
+        "pr": 46,
+        "phase": "D.P23",
+        "mergeCommit": "dcb2bb8939ee6f62ca89ca926ea1f4afbf75dab0",
+        "manifestBlobSha": "0f6f2ecad7cbbd9adeb4290e15df6ed25b2b5d6b"
+      },
+      {
+        "pr": 47,
+        "phase": "D.P24",
+        "mergeCommit": "21712c17d1369f4979a518247ec040f44c529ab9",
+        "manifestBlobSha": "5a2c41e07c654ef15f751dd07d3670c0468a3bfc"
+      },
+      {
+        "pr": 48,
+        "phase": "D.P25",
+        "mergeCommit": "50e2412dc2160b3bb5bf5abef0d04382160807d2",
+        "manifestBlobSha": "8fb6ef595138581781a202dcd95d95f56a0dd504"
+      }
+    ],
+    "allManifestBlobsIdenticalToPinnedSources": true,
+    "dp26MergeStatusAtAttestation": "AWAITING_PR49_MERGE",
+    "finalPostMergeCiRequired": true,
+    "runtimeStillNotIntegrated": true
   }
 }
