@@ -584,7 +584,7 @@
     },
     {
       "id": "edr_e03_risk_wind_damage",
-      "trigger": "VIENTO_INTENSO_Y_EXP0SICION_LOCAL",
+      "trigger": "VIENTO_INTENSO_Y_EXPOSICION_LOCAL",
       "effect": "DANOS_CONDICIONALES_EN_CUBIERTA_Y_CULTIVOS",
       "state": "CONDITIONAL_ONLY",
       "hazardLocalConfirmed": false,
