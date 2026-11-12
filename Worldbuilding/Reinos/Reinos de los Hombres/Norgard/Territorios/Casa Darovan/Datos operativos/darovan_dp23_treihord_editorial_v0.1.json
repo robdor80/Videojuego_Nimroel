@@ -1,0 +1,670 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp23_treihord_editorial_v0.1",
+  "version": "0.1.0",
+  "phase": "D.P23",
+  "date": "2026-11-12",
+  "cityId": "treihord",
+  "status": "EDITORIAL_APPROVED_BY_EXPLICIT_DELEGATION_CI_REQUIRED",
+  "approval": {
+    "source": "USER_D.P23_2026_11_12_AUTONOMOUS_DECISIONS_AS_THEIRS",
+    "scope": "EDITORIAL_ONLY",
+    "creativeApprovedByDelegation": true,
+    "explicitMergeAuthorization": false
+  },
+  "addsEditorialCanon": true,
+  "mergeAuthorized": false,
+  "createsPhysicalMap": false,
+  "createsBuildings": false,
+  "createsWorldStateEntities": false,
+  "coreRpgIntegrated": false,
+  "godotIntegrated": false,
+  "predecessor": {
+    "phase": "D.P22",
+    "pr": 45,
+    "merged": true,
+    "mainBaseSha": "512434957f248f2513761615a9685ddd6c49c65f"
+  },
+  "canon": {
+    "originalPath": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+    "originalBlobSha": "cfc1d664ac87e1f1521a79b6299cdf1a71b45de5",
+    "originalLines": 2374,
+    "populationApprox": 32000,
+    "territorialHouse": "Darovan",
+    "capital": true,
+    "river": "Belara",
+    "riverCrossesCity": false,
+    "riverIndustrialShallowBarges": true,
+    "oreFrom": "Valkram",
+    "coalFrom": "Azurios",
+    "hasMint": false,
+    "kingdomMint": "Hallheim",
+    "crownAuditsHouseProduction": true,
+    "crownOperatesHouseProduction": false,
+    "laVenaPublicAccess": false,
+    "secondContinuousWall": false,
+    "royalJusticeAppliesInLaCostra": true,
+    "neighborhoodCount": 8,
+    "mainSquares": [
+      "Plaza Vieja",
+      "Plaza de las Balanzas",
+      "Plaza de las Lonjas",
+      "Plaza del Camino"
+    ],
+    "mainGates": [
+      "Puerta Alta",
+      "Puerta del Río",
+      "Puerta del Camino",
+      "Puerta Sur"
+    ]
+  },
+  "lockedUnknowns": {
+    "exactPopulation": null,
+    "householdCount": null,
+    "buildingCount": null,
+    "streetNames": null,
+    "streetGeometry": null,
+    "streetLengths": null,
+    "districtPolygons": null,
+    "cityCoordinates": null,
+    "parcelMap": null,
+    "riverCrossings": null,
+    "vados": null,
+    "bridges": null,
+    "coalRoute": null,
+    "coalTravelTimes": null,
+    "coalStocks": null,
+    "metalInventories": null,
+    "portCapacity": null,
+    "individualAges": null,
+    "npcEntities": null,
+    "householdEntities": null,
+    "buildingEntities": null,
+    "activeTransactions": null,
+    "realEvents": null,
+    "templeLocations": null,
+    "municipalOffices": null,
+    "namedCurrentDarovanHead": null,
+    "namedCrownEnvoy": null,
+    "guardRanks": null,
+    "guardHeadcount": null,
+    "judicialProcedures": null,
+    "propertyOwnership": null,
+    "waterStock": null,
+    "allWaterPotability": null,
+    "allSewerNetwork": null,
+    "timeScales": null,
+    "livingNpcCoordinates": null
+  },
+  "neighborhoods": [
+    {
+      "id": "TRH-B01",
+      "name": "El Recinto",
+      "status": "AUTHORED_EXISTING",
+      "newDistrict": false,
+      "geometry": null
+    },
+    {
+      "id": "TRH-B02",
+      "name": "Los Altos",
+      "status": "AUTHORED_EXISTING",
+      "newDistrict": false,
+      "geometry": null
+    },
+    {
+      "id": "TRH-B03",
+      "name": "El Peso",
+      "status": "AUTHORED_EXISTING",
+      "newDistrict": false,
+      "geometry": null
+    },
+    {
+      "id": "TRH-B04",
+      "name": "Las Lonjas",
+      "status": "AUTHORED_EXISTING",
+      "newDistrict": false,
+      "geometry": null
+    },
+    {
+      "id": "TRH-B05",
+      "name": "Los Oficios",
+      "status": "AUTHORED_EXISTING",
+      "newDistrict": false,
+      "geometry": null
+    },
+    {
+      "id": "TRH-B06",
+      "name": "La Calzada",
+      "status": "AUTHORED_EXISTING",
+      "newDistrict": false,
+      "geometry": null
+    },
+    {
+      "id": "TRH-B07",
+      "name": "La Ribera",
+      "status": "AUTHORED_EXISTING",
+      "newDistrict": false,
+      "geometry": null
+    },
+    {
+      "id": "TRH-B08",
+      "name": "La Costra",
+      "status": "AUTHORED_EXISTING",
+      "newDistrict": false,
+      "geometry": null
+    }
+  ],
+  "futureEstablishments": [
+    {
+      "id": "TRH-L01",
+      "name": "La Mesa del Pliego",
+      "neighborhoodRef": "TRH-B01",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L02",
+      "name": "El Fogón de la Esquina Vieja",
+      "neighborhoodRef": "TRH-B01",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L03",
+      "name": "Paños del Umbral",
+      "neighborhoodRef": "TRH-B02",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L04",
+      "name": "La Cuaderna Limpia",
+      "neighborhoodRef": "TRH-B02",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L05",
+      "name": "La Lima Gris",
+      "neighborhoodRef": "TRH-B03",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L06",
+      "name": "Libro y Balanza",
+      "neighborhoodRef": "TRH-B03",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L07",
+      "name": "El Patio del Cordonero",
+      "neighborhoodRef": "TRH-B04",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L08",
+      "name": "La Última Copia",
+      "neighborhoodRef": "TRH-B04",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L09",
+      "name": "La Media Bisagra",
+      "neighborhoodRef": "TRH-B05",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L10",
+      "name": "La Cama de Tránsito",
+      "neighborhoodRef": "TRH-B06",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L11",
+      "name": "El Nudo de Ribera",
+      "neighborhoodRef": "TRH-B07",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    },
+    {
+      "id": "TRH-L12",
+      "name": "La Aguja Reunida",
+      "neighborhoodRef": "TRH-B08",
+      "status": "AUTHORED_FUTURE_OBJECTIVE",
+      "created": false,
+      "buildingId": null,
+      "ownerId": null,
+      "coordinates": null,
+      "inventoryIds": [],
+      "capacity": null
+    }
+  ],
+  "biographyBases": [
+    {
+      "id": "TRH-N01",
+      "name": "Aldren Meris",
+      "neighborhoodRef": "TRH-B01",
+      "status": "AUTHORED_BIOGRAPHY_BASE",
+      "created": false,
+      "entityId": null,
+      "householdId": null,
+      "age": null,
+      "officialRank": null,
+      "activeRelations": [],
+      "privilegedKnowledge": []
+    },
+    {
+      "id": "TRH-N02",
+      "name": "Serna Belcor",
+      "neighborhoodRef": "TRH-B02",
+      "status": "AUTHORED_BIOGRAPHY_BASE",
+      "created": false,
+      "entityId": null,
+      "householdId": null,
+      "age": null,
+      "officialRank": null,
+      "activeRelations": [],
+      "privilegedKnowledge": []
+    },
+    {
+      "id": "TRH-N03",
+      "name": "Erian Tovel",
+      "neighborhoodRef": "TRH-B03",
+      "status": "AUTHORED_BIOGRAPHY_BASE",
+      "created": false,
+      "entityId": null,
+      "householdId": null,
+      "age": null,
+      "officialRank": null,
+      "activeRelations": [],
+      "privilegedKnowledge": []
+    },
+    {
+      "id": "TRH-N04",
+      "name": "Ilva Nered",
+      "neighborhoodRef": "TRH-B04",
+      "status": "AUTHORED_BIOGRAPHY_BASE",
+      "created": false,
+      "entityId": null,
+      "householdId": null,
+      "age": null,
+      "officialRank": null,
+      "activeRelations": [],
+      "privilegedKnowledge": []
+    },
+    {
+      "id": "TRH-N05",
+      "name": "Beren Cavar",
+      "neighborhoodRef": "TRH-B05",
+      "status": "AUTHORED_BIOGRAPHY_BASE",
+      "created": false,
+      "entityId": null,
+      "householdId": null,
+      "age": null,
+      "officialRank": null,
+      "activeRelations": [],
+      "privilegedKnowledge": []
+    },
+    {
+      "id": "TRH-N06",
+      "name": "Malen Orda",
+      "neighborhoodRef": "TRH-B06",
+      "status": "AUTHORED_BIOGRAPHY_BASE",
+      "created": false,
+      "entityId": null,
+      "householdId": null,
+      "age": null,
+      "officialRank": null,
+      "activeRelations": [],
+      "privilegedKnowledge": []
+    },
+    {
+      "id": "TRH-N07",
+      "name": "Orven Deil",
+      "neighborhoodRef": "TRH-B07",
+      "status": "AUTHORED_BIOGRAPHY_BASE",
+      "created": false,
+      "entityId": null,
+      "householdId": null,
+      "age": null,
+      "officialRank": null,
+      "activeRelations": [],
+      "privilegedKnowledge": []
+    },
+    {
+      "id": "TRH-N08",
+      "name": "Naira Halven",
+      "neighborhoodRef": "TRH-B08",
+      "status": "AUTHORED_BIOGRAPHY_BASE",
+      "created": false,
+      "entityId": null,
+      "householdId": null,
+      "age": null,
+      "officialRank": null,
+      "activeRelations": [],
+      "privilegedKnowledge": []
+    },
+    {
+      "id": "TRH-N09",
+      "name": "Cadel Virel",
+      "neighborhoodRef": "TRH-B05",
+      "status": "AUTHORED_BIOGRAPHY_BASE",
+      "created": false,
+      "entityId": null,
+      "householdId": null,
+      "age": null,
+      "officialRank": null,
+      "activeRelations": [],
+      "privilegedKnowledge": []
+    },
+    {
+      "id": "TRH-N10",
+      "name": "Varo Mendir",
+      "neighborhoodRef": "TRH-B06",
+      "status": "AUTHORED_BIOGRAPHY_BASE",
+      "created": false,
+      "entityId": null,
+      "householdId": null,
+      "age": null,
+      "officialRank": null,
+      "activeRelations": [],
+      "privilegedKnowledge": []
+    }
+  ],
+  "privateMemories": [
+    {
+      "id": "TRH-M01",
+      "title": "Una palabra que sobraba",
+      "personRef": "TRH-N01",
+      "status": "AUTHORED_PERSONAL_MEMORY",
+      "publicHistoricalFact": false,
+      "eventId": null,
+      "eventDate": null
+    },
+    {
+      "id": "TRH-M02",
+      "title": "El cierre invisible",
+      "personRef": "TRH-N02",
+      "status": "AUTHORED_PERSONAL_MEMORY",
+      "publicHistoricalFact": false,
+      "eventId": null,
+      "eventDate": null
+    },
+    {
+      "id": "TRH-M03",
+      "title": "El borde de la cuenta",
+      "personRef": "TRH-N04",
+      "status": "AUTHORED_PERSONAL_MEMORY",
+      "publicHistoricalFact": false,
+      "eventId": null,
+      "eventDate": null
+    },
+    {
+      "id": "TRH-M04",
+      "title": "El agua que no alcanzó",
+      "personRef": "TRH-N08",
+      "status": "AUTHORED_PERSONAL_MEMORY",
+      "publicHistoricalFact": false,
+      "eventId": null,
+      "eventDate": null
+    }
+  ],
+  "futureConditionalArcs": [
+    {
+      "id": "TRH-H01",
+      "title": "La ley del objeto",
+      "personRefs": [
+        "TRH-N03",
+        "TRH-N04",
+        "TRH-N01"
+      ],
+      "status": "AUTHORED_FUTURE_CONDITIONAL_ARC",
+      "implemented": false,
+      "triggered": false,
+      "eventId": null
+    },
+    {
+      "id": "TRH-H02",
+      "title": "La entrega que se negó",
+      "personRefs": [
+        "TRH-N04",
+        "TRH-N07",
+        "TRH-N10"
+      ],
+      "status": "AUTHORED_FUTURE_CONDITIONAL_ARC",
+      "implemented": false,
+      "triggered": false,
+      "eventId": null
+    },
+    {
+      "id": "TRH-H03",
+      "title": "Un nombre en la posada",
+      "personRefs": [
+        "TRH-N06",
+        "TRH-N10",
+        "TRH-N01"
+      ],
+      "status": "AUTHORED_FUTURE_CONDITIONAL_ARC",
+      "implemented": false,
+      "triggered": false,
+      "eventId": null
+    },
+    {
+      "id": "TRH-H04",
+      "title": "La reparación que falta",
+      "personRefs": [
+        "TRH-N08",
+        "TRH-N09",
+        "TRH-N05"
+      ],
+      "status": "AUTHORED_FUTURE_CONDITIONAL_ARC",
+      "implemented": false,
+      "triggered": false,
+      "eventId": null
+    }
+  ],
+  "testOnlyScenes": [
+    {
+      "id": "TRH-E01",
+      "title": "La palabra de la plaza",
+      "personRefs": [
+        "TRH-N01"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "eventId": null
+    },
+    {
+      "id": "TRH-E02",
+      "title": "La invitación no abre la puerta",
+      "personRefs": [
+        "TRH-N02"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "eventId": null
+    },
+    {
+      "id": "TRH-E03",
+      "title": "No basta que brille",
+      "personRefs": [
+        "TRH-N03",
+        "TRH-N04"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "eventId": null
+    },
+    {
+      "id": "TRH-E04",
+      "title": "Prometido no es recibido",
+      "personRefs": [
+        "TRH-N04",
+        "TRH-N07",
+        "TRH-N10"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "eventId": null
+    },
+    {
+      "id": "TRH-E05",
+      "title": "La puerta cede",
+      "personRefs": [
+        "TRH-N05",
+        "TRH-N09"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "eventId": null
+    },
+    {
+      "id": "TRH-E06",
+      "title": "La cama que no se cuenta",
+      "personRefs": [
+        "TRH-N06",
+        "TRH-N10"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "eventId": null
+    },
+    {
+      "id": "TRH-E07",
+      "title": "El nudo que no aprueba la cuenta",
+      "personRefs": [
+        "TRH-N07"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "eventId": null
+    },
+    {
+      "id": "TRH-E08",
+      "title": "La culpa tiene dirección, no barrio",
+      "personRefs": [
+        "TRH-N08",
+        "TRH-N01"
+      ],
+      "status": "TEST_ONLY",
+      "createsEvent": false,
+      "eventId": null
+    }
+  ],
+  "decisions": [
+    {
+      "id": "TRH-DP23-01",
+      "option": "A",
+      "approved": "DELEGATED_AUTHORIAL_DECISION",
+      "scope": "EIGHT_EXISTING_BARRIOS_ONLY"
+    },
+    {
+      "id": "TRH-DP23-02",
+      "option": "A",
+      "approved": "DELEGATED_AUTHORIAL_DECISION",
+      "scope": "CULTURAL_CHARACTER_EDITORIAL"
+    },
+    {
+      "id": "TRH-DP23-03",
+      "option": "A",
+      "approved": "DELEGATED_AUTHORIAL_DECISION",
+      "scope": "TWELVE_FUTURE_PLACES"
+    },
+    {
+      "id": "TRH-DP23-04",
+      "option": "A",
+      "approved": "DELEGATED_AUTHORIAL_DECISION",
+      "scope": "TEN_BIOGRAPHY_BASES"
+    },
+    {
+      "id": "TRH-DP23-05",
+      "option": "A",
+      "approved": "DELEGATED_AUTHORIAL_DECISION",
+      "scope": "FOUR_PRIVATE_MEMORIES"
+    },
+    {
+      "id": "TRH-DP23-06",
+      "option": "A",
+      "approved": "DELEGATED_AUTHORIAL_DECISION",
+      "scope": "FOUR_FUTURE_ARCS_TEST_SCENES"
+    },
+    {
+      "id": "TRH-DP23-07",
+      "option": "A",
+      "approved": "DELEGATED_AUTHORIAL_DECISION",
+      "scope": "CARTOGRAPHY_CONDITIONAL_METHOD"
+    },
+    {
+      "id": "TRH-DP23-08",
+      "option": "A",
+      "approved": "DELEGATED_AUTHORIAL_DECISION",
+      "scope": "EDITORIAL_CLOSURE_CI_REQUIRED_NO_MERGE"
+    }
+  ],
+  "sources": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Ciudades/Casa Darovan/Treihord.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Ciudades/Treihord/ANCLAS_CANONICAS_TREIHORD_v0.1.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Profundizacion_2026/D.P16/ciudad_treihord_plan_funcional_condicionado.md"
+  ]
+}
