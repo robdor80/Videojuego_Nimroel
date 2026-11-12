@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e08_synthetic_fixtures",
+  "phase": "E08",
+  "syntheticOnly": true,
+  "canonPopulation": false,
+  "runtimeEnabled": false,
+  "units": "synthetic_person_day_and_hours_not_territorial_data",
+  "baseCase": {
+    "locality": "dorth",
+    "jurisdictionOwner": "casa_edranor",
+    "residentIds": [
+      "residentA",
+      "residentB"
+    ],
+    "visitorIds": [
+      "travelerC"
+    ],
+    "seasonalWorkerIds": [
+      "travelerC"
+    ],
+    "lodgerIds": [
+      "travelerC"
+    ],
+    "housingBeds": 2,
+    "visitorBeds": 1,
+    "safeWaterPersonDays": 3,
+    "foodPersonDays": 3,
+    "sanitationPersonDays": 3,
+    "availableWorkHours": 12,
+    "workers": [
+      {
+        "personId": "residentA",
+        "age": 34,
+        "hours": 7,
+        "engagement": "employment",
+        "mentorId": null,
+        "guardianConsent": null,
+        "ownConsent": true,
+        "supervised": true,
+        "safeTask": true
+      }
+    ],
+    "requestedServices": [
+      {
+        "id": "edr_e08_service_food",
+        "providerVerified": true,
+        "inputsVerified": true,
+        "rightsVerified": true
+      }
+    ],
+    "unlawfulInternalCustoms": false,
+    "edranorTaxesInRodas": false,
+    "edranorCommandsBerserkers": false
+  },
+  "scenarios": [
+    {
+      "id": "lab_dorth_adult",
+      "expected": true,
+      "changes": []
+    },
+    {
+      "id": "lab_lumina_supervised_apprentice",
+      "expected": true,
+      "changes": [
+        {
+          "path": [
+            "locality"
+          ],
+          "value": "lumina"
+        },
+        {
+          "path": [
+            "workers"
+          ],
+          "value": [
+            {
+              "personId": "residentA",
+              "age": 34,
+              "hours": 5,
+              "engagement": "employment",
+              "mentorId": null,
+              "guardianConsent": null,
+              "ownConsent": true,
+              "supervised": true,
+              "safeTask": true
+            },
+            {
+              "personId": "residentB",
+              "age": 14,
+              "hours": 2,
+              "engagement": "apprenticeship",
+              "mentorId": "residentA",
+              "guardianConsent": true,
+              "ownConsent": true,
+              "supervised": true,
+              "safeTask": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lab_karsath_youth_safe",
+      "expected": true,
+      "changes": [
+        {
+          "path": [
+            "locality"
+          ],
+          "value": "karsath"
+        },
+        {
+          "path": [
+            "workers"
+          ],
+          "value": [
+            {
+              "personId": "residentA",
+              "age": 16,
+              "hours": 4,
+              "engagement": "employment",
+              "mentorId": null,
+              "guardianConsent": true,
+              "ownConsent": true,
+              "supervised": true,
+              "safeTask": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lab_rodas_crown_forge",
+      "expected": true,
+      "changes": [
+        {
+          "path": [
+            "locality"
+          ],
+          "value": "rodas"
+        },
+        {
+          "path": [
+            "jurisdictionOwner"
+          ],
+          "value": "crown_aethros"
+        },
+        {
+          "path": [
+            "requestedServices"
+          ],
+          "value": [
+            {
+              "id": "edr_e08_service_forge",
+              "providerVerified": true,
+              "inputsVerified": true,
+              "rightsVerified": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reject_rodas_house_jurisdiction",
+      "expected": false,
+      "changes": [
+        {
+          "path": [
+            "locality"
+          ],
+          "value": "rodas"
+        }
+      ]
+    },
+    {
+      "id": "reject_insufficient_potable_water",
+      "expected": false,
+      "changes": [
+        {
+          "path": [
+            "safeWaterPersonDays"
+          ],
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "reject_no_visitor_bed",
+      "expected": false,
+      "changes": [
+        {
+          "path": [
+            "visitorBeds"
+          ],
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "reject_duplicate_visitor_resident",
+      "expected": false,
+      "changes": [
+        {
+          "path": [
+            "visitorIds"
+          ],
+          "value": [
+            "residentA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reject_worker_unregistered",
+      "expected": false,
+      "changes": [
+        {
+          "path": [
+            "workers",
+            0,
+            "personId"
+          ],
+          "value": "ghost"
+        }
+      ]
+    },
+    {
+      "id": "reject_child_employment",
+      "expected": false,
+      "changes": [
+        {
+          "path": [
+            "workers",
+            0,
+            "age"
+          ],
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "reject_apprentice_without_mentor",
+      "expected": false,
+      "changes": [
+        {
+          "path": [
+            "workers",
+            0,
+            "age"
+          ],
+          "value": 14
+        },
+        {
+          "path": [
+            "workers",
+            0,
+            "engagement"
+          ],
+          "value": "apprenticeship"
+        },
+        {
+          "path": [
+            "workers",
+            0,
+            "guardianConsent"
+          ],
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "reject_work_time_overcapacity",
+      "expected": false,
+      "changes": [
+        {
+          "path": [
+            "workers",
+            0,
+            "hours"
+          ],
+          "value": 13
+        }
+      ]
+    },
+    {
+      "id": "reject_unverified_food_service",
+      "expected": false,
+      "changes": [
+        {
+          "path": [
+            "requestedServices",
+            0,
+            "inputsVerified"
+          ],
+          "value": false
+        }
+      ]
+    }
+  ]
+}

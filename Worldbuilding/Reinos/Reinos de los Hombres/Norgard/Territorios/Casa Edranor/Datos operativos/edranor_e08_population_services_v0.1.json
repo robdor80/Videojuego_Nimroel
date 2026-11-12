@@ -1,0 +1,835 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e08_population_services",
+  "version": "0.1",
+  "phase": "E08",
+  "date": "2026-11-13",
+  "status": "DOCUMENTAL_DESIGN_ONLY",
+  "runtimeEnabled": false,
+  "sourceAuthorities": [
+    "CANON_REPO",
+    "VISUAL_APROBADO",
+    "AUTOR_2026_11_12",
+    "OBSERVACION_MAPA",
+    "PROPUESTA",
+    "UNKNOWN"
+  ],
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor_or_crown_aethros",
+    "localidad",
+    "world_state"
+  ],
+  "protectedIds": [
+    "dorth",
+    "lumina",
+    "karsath",
+    "rodas",
+    "hallheim"
+  ],
+  "scope": {
+    "territory": "casa_edranor",
+    "designedNuclei": 4,
+    "instantiatedNuclei": 0,
+    "demographicCensusApproved": false,
+    "georeferenced": false,
+    "physicalRoadsValidated": false,
+    "localWaterVerified": false,
+    "totalTerritorialPopulation": null,
+    "totalHouseholds": null,
+    "peopleInstantiated": 0,
+    "householdsInstantiated": 0,
+    "dwellingsInstantiated": 0,
+    "jobsInstantiated": 0,
+    "serviceProvidersInstantiated": 0,
+    "stocksInstantiated": 0
+  },
+  "law": {
+    "adulthoodAge": 18,
+    "formalApprenticeshipMinAge": 12,
+    "ordinaryYouthEmploymentMinAge": 15,
+    "ageBands": [
+      {
+        "min": 0,
+        "max": 7,
+        "employment": false,
+        "formalApprenticeship": false
+      },
+      {
+        "min": 8,
+        "max": 11,
+        "employment": false,
+        "formalApprenticeship": false
+      },
+      {
+        "min": 12,
+        "max": 14,
+        "employment": false,
+        "formalApprenticeship": true
+      },
+      {
+        "min": 15,
+        "max": 17,
+        "employment": true,
+        "formalApprenticeship": true
+      },
+      {
+        "min": 18,
+        "max": null,
+        "employment": true,
+        "formalApprenticeship": true
+      }
+    ],
+    "marriageMustBeValidCivilAct": true,
+    "coResidenceDoesNotCreateMarriage": true,
+    "occupationDoesNotConferOwnership": true,
+    "juvenilesRequireConsentAndSafeguards": true,
+    "apprenticesRequireMentor": true,
+    "legalSource": "Norgard/Gobierno y leyes/mayoria_edad_capacidad_trabajo_aprendizaje_v0.1.md"
+  },
+  "identityPolicy": {
+    "uniqueResidentPersonIdPerCensus": true,
+    "visitorAndSeasonalWorkerAreSubsetsNotExtraPopulation": true,
+    "oneHabitualResidencePerCensusCutoff": true,
+    "householdDistinctFromFamilyAndDwelling": true,
+    "tenureDistinctFromProperty": true,
+    "providerDistinctFromGovernment": true,
+    "workHoursMustNotOverlap": true,
+    "positionsRequireRealProviderAndDemand": true
+  },
+  "presenceAccounting": [
+    "residentIds",
+    "visitorIds",
+    "seasonalWorkerIds",
+    "lodgerIds",
+    "workerPersonIds"
+  ],
+  "requiredCapacityEvidence": [
+    "housingBeds",
+    "visitorBeds",
+    "safeWaterPersonDays",
+    "foodPersonDays",
+    "sanitationPersonDays",
+    "availableWorkHours"
+  ],
+  "localityModels": [
+    {
+      "id": "dorth",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "casa_edranor",
+      "fiscalOwner": "casa_edranor",
+      "militaryOwner": "crown_supreme_house_subordinate",
+      "berserkerCommandOwner": null,
+      "legalCategory": "city",
+      "editorialSummary": "Ciudad sede, tintos, expedición; número de vecinos UNKNOWN",
+      "population": null,
+      "householdCount": null,
+      "meanPersonsPerHousehold": null,
+      "permanentJobsCount": null,
+      "temporaryWorkersCount": null,
+      "capacity": {
+        "residentialBeds": null,
+        "visitorBeds": null,
+        "safeWaterPersonDays": null,
+        "foodPersonDays": null,
+        "sanitationPersonDays": null,
+        "availableWorkHours": null
+      },
+      "serviceProgramIds": [
+        "edr_e08_service_water",
+        "edr_e08_service_sanitation",
+        "edr_e08_service_food",
+        "edr_e08_service_housing",
+        "edr_e08_service_heating",
+        "edr_e08_service_care",
+        "edr_e08_service_wine",
+        "edr_e08_service_cooperage",
+        "edr_e08_service_forge",
+        "edr_e08_service_lodging",
+        "edr_e08_service_transport",
+        "edr_e08_service_market"
+      ],
+      "roleProgramIds": [
+        "edr_e08_role_viticultor",
+        "edr_e08_role_temporero",
+        "edr_e08_role_prensa",
+        "edr_e08_role_bodeguero",
+        "edr_e08_role_tonelero",
+        "edr_e08_role_carpintero",
+        "edr_e08_role_herrero",
+        "edr_e08_role_carretero",
+        "edr_e08_role_escribiente",
+        "edr_e08_role_comerciante",
+        "edr_e08_role_posadero",
+        "edr_e08_role_cuidador"
+      ],
+      "knownVisualTypes": [
+        "wine_cellars",
+        "commercial_courtyards"
+      ],
+      "evidenceStatus": "PROPOSAL_UNVERIFIED_OPERATION",
+      "instantiated": {
+        "personIds": [],
+        "householdIds": [],
+        "residenceIds": [],
+        "dwellingIds": [],
+        "tenureIds": [],
+        "jobAssignmentIds": [],
+        "providerIds": [],
+        "buildingIds": [],
+        "inventoryIds": []
+      },
+      "onMapPhysicalCoordinates": null,
+      "physicalRoads": [],
+      "actualProviders": [],
+      "actualResidents": [],
+      "classifiedAsProtectedCanonicalAnchor": true,
+      "proceduralSpawnAllowed": false
+    },
+    {
+      "id": "lumina",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "casa_edranor",
+      "fiscalOwner": "casa_edranor",
+      "militaryOwner": "crown_supreme_house_subordinate",
+      "berserkerCommandOwner": null,
+      "legalCategory": "small_compact_settlement",
+      "editorialSummary": "Blancos, plaza alargada y mercado anual, no mercado diario presumido",
+      "population": null,
+      "householdCount": null,
+      "meanPersonsPerHousehold": null,
+      "permanentJobsCount": null,
+      "temporaryWorkersCount": null,
+      "capacity": {
+        "residentialBeds": null,
+        "visitorBeds": null,
+        "safeWaterPersonDays": null,
+        "foodPersonDays": null,
+        "sanitationPersonDays": null,
+        "availableWorkHours": null
+      },
+      "serviceProgramIds": [
+        "edr_e08_service_water",
+        "edr_e08_service_sanitation",
+        "edr_e08_service_food",
+        "edr_e08_service_housing",
+        "edr_e08_service_heating",
+        "edr_e08_service_care",
+        "edr_e08_service_wine",
+        "edr_e08_service_cooperage",
+        "edr_e08_service_forge",
+        "edr_e08_service_lodging",
+        "edr_e08_service_market",
+        "edr_e08_service_communal_oven"
+      ],
+      "roleProgramIds": [
+        "edr_e08_role_viticultor",
+        "edr_e08_role_temporero",
+        "edr_e08_role_bodeguero",
+        "edr_e08_role_tonelero",
+        "edr_e08_role_carpintero",
+        "edr_e08_role_herrero",
+        "edr_e08_role_escribiente",
+        "edr_e08_role_comerciante",
+        "edr_e08_role_posadero",
+        "edr_e08_role_cuidador"
+      ],
+      "knownVisualTypes": [
+        "elongated_square",
+        "annual_wine_market",
+        "main_inn_visual_type"
+      ],
+      "evidenceStatus": "PROPOSAL_UNVERIFIED_OPERATION",
+      "instantiated": {
+        "personIds": [],
+        "householdIds": [],
+        "residenceIds": [],
+        "dwellingIds": [],
+        "tenureIds": [],
+        "jobAssignmentIds": [],
+        "providerIds": [],
+        "buildingIds": [],
+        "inventoryIds": []
+      },
+      "onMapPhysicalCoordinates": null,
+      "physicalRoads": [],
+      "actualProviders": [],
+      "actualResidents": [],
+      "classifiedAsProtectedCanonicalAnchor": true,
+      "proceduralSpawnAllowed": false
+    },
+    {
+      "id": "karsath",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "casa_edranor",
+      "fiscalOwner": "casa_edranor",
+      "militaryOwner": "crown_supreme_house_subordinate",
+      "berserkerCommandOwner": null,
+      "legalCategory": "small_lakeside_visual_settlement",
+      "editorialSummary": "Producción escasa y exclusiva, lago contextual sin ribera comprobada",
+      "population": null,
+      "householdCount": null,
+      "meanPersonsPerHousehold": null,
+      "permanentJobsCount": null,
+      "temporaryWorkersCount": null,
+      "capacity": {
+        "residentialBeds": null,
+        "visitorBeds": null,
+        "safeWaterPersonDays": null,
+        "foodPersonDays": null,
+        "sanitationPersonDays": null,
+        "availableWorkHours": null
+      },
+      "serviceProgramIds": [
+        "edr_e08_service_water",
+        "edr_e08_service_sanitation",
+        "edr_e08_service_food",
+        "edr_e08_service_housing",
+        "edr_e08_service_heating",
+        "edr_e08_service_care",
+        "edr_e08_service_wine",
+        "edr_e08_service_forge"
+      ],
+      "roleProgramIds": [
+        "edr_e08_role_viticultor",
+        "edr_e08_role_temporero",
+        "edr_e08_role_bodeguero",
+        "edr_e08_role_herrero",
+        "edr_e08_role_agricultor",
+        "edr_e08_role_cuidador"
+      ],
+      "knownVisualTypes": [
+        "lake_visual_context",
+        "small_batch_wine_program"
+      ],
+      "evidenceStatus": "PROPOSAL_UNVERIFIED_OPERATION",
+      "instantiated": {
+        "personIds": [],
+        "householdIds": [],
+        "residenceIds": [],
+        "dwellingIds": [],
+        "tenureIds": [],
+        "jobAssignmentIds": [],
+        "providerIds": [],
+        "buildingIds": [],
+        "inventoryIds": []
+      },
+      "onMapPhysicalCoordinates": null,
+      "physicalRoads": [],
+      "actualProviders": [],
+      "actualResidents": [],
+      "classifiedAsProtectedCanonicalAnchor": true,
+      "proceduralSpawnAllowed": false
+    },
+    {
+      "id": "rodas",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "crown_aethros",
+      "fiscalOwner": "crown_aethros",
+      "militaryOwner": "crown_aethros",
+      "berserkerCommandOwner": "crown_aethros",
+      "legalCategory": "village",
+      "editorialSummary": "Aldea directa Aethros: druidas y herreros, berserkers excepcionales",
+      "population": null,
+      "householdCount": null,
+      "meanPersonsPerHousehold": null,
+      "permanentJobsCount": null,
+      "temporaryWorkersCount": null,
+      "capacity": {
+        "residentialBeds": null,
+        "visitorBeds": null,
+        "safeWaterPersonDays": null,
+        "foodPersonDays": null,
+        "sanitationPersonDays": null,
+        "availableWorkHours": null
+      },
+      "serviceProgramIds": [
+        "edr_e08_service_water",
+        "edr_e08_service_sanitation",
+        "edr_e08_service_food",
+        "edr_e08_service_housing",
+        "edr_e08_service_heating",
+        "edr_e08_service_care",
+        "edr_e08_service_communal_oven",
+        "edr_e08_service_forge",
+        "edr_e08_service_druid_house"
+      ],
+      "roleProgramIds": [
+        "edr_e08_role_agricultor",
+        "edr_e08_role_herrero",
+        "edr_e08_role_carpintero",
+        "edr_e08_role_cuidador",
+        "edr_e08_role_custodio_druidico",
+        "edr_e08_role_artesano_pociones",
+        "edr_e08_role_gestor_horno_comunal"
+      ],
+      "knownVisualTypes": [
+        "guarded_two_storey_nonreligious_druid_house",
+        "small_forges",
+        "open_square"
+      ],
+      "evidenceStatus": "PROPOSAL_UNVERIFIED_OPERATION",
+      "instantiated": {
+        "personIds": [],
+        "householdIds": [],
+        "residenceIds": [],
+        "dwellingIds": [],
+        "tenureIds": [],
+        "jobAssignmentIds": [],
+        "providerIds": [],
+        "buildingIds": [],
+        "inventoryIds": []
+      },
+      "onMapPhysicalCoordinates": null,
+      "physicalRoads": [],
+      "actualProviders": [],
+      "actualResidents": [],
+      "classifiedAsProtectedCanonicalAnchor": true,
+      "proceduralSpawnAllowed": false
+    }
+  ],
+  "serviceCatalog": [
+    {
+      "id": "edr_e08_service_water",
+      "label": "agua_potable",
+      "evidence": "CANON_REPO",
+      "preconditions": [
+        "site_water_verified",
+        "safe_water_verified",
+        "rights_verified",
+        "capacity_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_sanitation",
+      "label": "saneamiento",
+      "evidence": "PROPUESTA",
+      "preconditions": [
+        "sanitation_site_verified",
+        "capacity_verified",
+        "maintenance_provider_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_food",
+      "label": "alimentacion",
+      "evidence": "CANON_REPO",
+      "preconditions": [
+        "stock_verified",
+        "supplier_verified",
+        "access_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_heating",
+      "label": "combustible_y_calor",
+      "evidence": "CANON_REPO",
+      "preconditions": [
+        "legal_fuel_source",
+        "seasonal_access_verified",
+        "fire_safety_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_housing",
+      "label": "vivienda",
+      "evidence": "PROPUESTA",
+      "preconditions": [
+        "building_verified",
+        "tenure_verified",
+        "habitability_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_care",
+      "label": "cuidado_y_salud",
+      "evidence": "CANON_REPO",
+      "preconditions": [
+        "qualified_provider_verified",
+        "availability_verified",
+        "supplies_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_communal_oven",
+      "label": "horno_comunal",
+      "evidence": "CANON_REPO",
+      "preconditions": [
+        "building_verified",
+        "fuel_verified",
+        "shared_schedule_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_mill",
+      "label": "molino",
+      "evidence": "CANON_REPO",
+      "preconditions": [
+        "energy_source_verified",
+        "legal_operation_verified",
+        "verified_demand"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_forge",
+      "label": "herrería_y_reparacion",
+      "evidence": "VISUAL_APROBADO",
+      "preconditions": [
+        "workshop_rights_verified",
+        "inputs_verified",
+        "qualified_worker_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_lodging",
+      "label": "hospedaje",
+      "evidence": "VISUAL_APROBADO",
+      "preconditions": [
+        "usable_beds_verified",
+        "safe_water_verified",
+        "sanitation_verified",
+        "operator_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_market",
+      "label": "intercambio_y_mercado",
+      "evidence": "VISUAL_APROBADO",
+      "preconditions": [
+        "calendar_verified",
+        "space_verified",
+        "authorization_verified",
+        "real_goods_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_wine",
+      "label": "vino_y_bodega",
+      "evidence": "VISUAL_APROBADO",
+      "preconditions": [
+        "legal_harvest_verified",
+        "storage_verified",
+        "rights_verified",
+        "demand_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_cooperage",
+      "label": "toneleria",
+      "evidence": "CANON_REPO",
+      "preconditions": [
+        "wood_rights_verified",
+        "regeneration_verified",
+        "workshop_verified",
+        "demand_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_transport",
+      "label": "mensajeria_y_transporte",
+      "evidence": "PROPUESTA",
+      "preconditions": [
+        "physical_route_verified",
+        "provider_verified",
+        "time_verified",
+        "rights_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    },
+    {
+      "id": "edr_e08_service_druid_house",
+      "label": "casa_druidica_custodiada",
+      "evidence": "VISUAL_APROBADO",
+      "preconditions": [
+        "aethros_authority_verified",
+        "custody_rights_verified",
+        "access_verified"
+      ],
+      "operational": false,
+      "providerInstances": []
+    }
+  ],
+  "occupationCatalog": [
+    {
+      "id": "edr_e08_role_viticultor",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": false,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_temporero",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": false,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_prensa",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": true,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_bodeguero",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": false,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_tonelero",
+      "applicableLocalities": [
+        "dorth",
+        "lumina"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": true,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_carpintero",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath",
+        "rodas"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": true,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_herrero",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath",
+        "rodas"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": true,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_carretero",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": false,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_escribiente",
+      "applicableLocalities": [
+        "dorth",
+        "lumina"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": false,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_comerciante",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": false,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_posadero",
+      "applicableLocalities": [
+        "dorth",
+        "lumina"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": false,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_agricultor",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath",
+        "rodas"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": false,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_cuidador",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath",
+        "rodas"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": false,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_custodio_druidico",
+      "applicableLocalities": [
+        "rodas"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": true,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_artesano_pociones",
+      "applicableLocalities": [
+        "rodas"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": true,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    },
+    {
+      "id": "edr_e08_role_gestor_horno_comunal",
+      "applicableLocalities": [
+        "dorth",
+        "lumina",
+        "karsath",
+        "rodas"
+      ],
+      "evidence": "PROPUESTA",
+      "hazardousTasksPossible": false,
+      "filledPositions": 0,
+      "workerPersonIds": [],
+      "requiresVerifiedDemand": true
+    }
+  ],
+  "outsideScope": {
+    "id": "hallheim",
+    "insideEdranor": false,
+    "designed": false,
+    "jurisdictionOwner": "crown_aethros"
+  },
+  "hardConstraints": {
+    "rodasCrownFiscal": true,
+    "rodasCrownMilitary": true,
+    "rodasCrownBerserkers": true,
+    "rodasNotTemple": true,
+    "noEdranorTaxInRodas": true,
+    "noEdranorGuardInRodas": true,
+    "noCustomsBetweenGreatHouses": true,
+    "noUnlicensedForestHarvest": true,
+    "noUnverifiedShoreKarsath": true,
+    "noPhysicalRoadsFromE05": true,
+    "noProceduralSpawnsOnProtectedAnchors": true,
+    "noSyntheticNumbersAsCanon": true
+  },
+  "unresolved": [
+    "EDD-01_north",
+    "EDD-02_scale",
+    "EDD-03_local_water",
+    "EDD-04_census",
+    "EDD-05_house_leadership",
+    "EDD-07_physical_routes",
+    "EDD-08_rodas_history",
+    "local_service_rights",
+    "dwelling_capacity",
+    "real_sanitation",
+    "legal_owner_registry",
+    "real_job_assignments",
+    "resident_person_registry"
+  ],
+  "instanceRegistry": {
+    "people": [],
+    "households": [],
+    "dwellings": [],
+    "residences": [],
+    "tenures": [],
+    "jobs": [],
+    "providers": [],
+    "buildings": [],
+    "stocks": []
+  },
+  "runtimeClaims": []
+}
