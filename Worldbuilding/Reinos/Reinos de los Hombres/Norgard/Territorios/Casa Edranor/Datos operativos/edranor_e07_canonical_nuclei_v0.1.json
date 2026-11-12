@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e07_canonical_nuclei",
+  "phase": "E07",
+  "version": "0.1",
+  "date": "2026-11-12",
+  "status": "DOCUMENTAL_DESIGN_ONLY",
+  "runtimeEnabled": false,
+  "sourceAuthorities": [
+    "CANON_REPO",
+    "VISUAL_APROBADO",
+    "AUTOR_2026_11_12",
+    "OBSERVACION_MAPA",
+    "PROPUESTA",
+    "UNKNOWN"
+  ],
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor_or_crown_aethros",
+    "localidad",
+    "world_state"
+  ],
+  "protectedIds": [
+    "dorth",
+    "lumina",
+    "karsath",
+    "rodas",
+    "hallheim"
+  ],
+  "scope": {
+    "territory": "casa_edranor",
+    "designedCanonicalNuclei": 4,
+    "instantiatedCanonicalNuclei": 0,
+    "georeferenced": false,
+    "physicalRoadGraphValidated": false,
+    "localWaterMapped": false,
+    "localSoilsMapped": false,
+    "householdsInstantiated": 0,
+    "buildingsInstantiated": 0,
+    "npcInstantiated": 0,
+    "inventoryInstantiated": 0
+  },
+  "editorial": {
+    "rodasScale": "ALDEA",
+    "rodasDivergentNarrativeTerm": "CIUDAD_IN_DRAFT_SOURCES",
+    "rodasTextEdited": false,
+    "edd06TerritorialDesignResolved": true,
+    "rodasAuthorMapOverridesOldMapFlag": true,
+    "rodasGeoreferenced": false,
+    "luminaLegalStatus": "UNKNOWN",
+    "karsathUrbanShore": "UNKNOWN"
+  },
+  "settlements": [
+    {
+      "id": "dorth",
+      "name": "Dorth",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "casa_edranor",
+      "fiscalOwner": "casa_edranor",
+      "militaryOwner": "crown_supreme_house_subordinate",
+      "berserkerCommandOwner": null,
+      "type": "city",
+      "production": "red_wine",
+      "roof": "tile",
+      "areas": [
+        "house_administration",
+        "civic_commerce",
+        "grape_reception",
+        "wine_storage",
+        "residences_workshops",
+        "azurios_edge"
+      ],
+      "landmarks": [
+        "house_residence_program",
+        "wine_cellars"
+      ],
+      "forbidden": [
+        "no_independent_law",
+        "no_automatic_river",
+        "no_ambient_banners"
+      ],
+      "protected": true,
+      "procedural": false,
+      "designOnly": true,
+      "instantiated": false,
+      "coordinates": null,
+      "population": null,
+      "physicalRoads": [],
+      "buildings": [],
+      "npcInstances": [],
+      "inventories": [],
+      "households": [],
+      "dependencies": [
+        "E08",
+        "E09",
+        "E10",
+        "E11"
+      ]
+    },
+    {
+      "id": "lumina",
+      "name": "Lumina",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "casa_edranor",
+      "fiscalOwner": "casa_edranor",
+      "militaryOwner": "crown_supreme_house_subordinate",
+      "berserkerCommandOwner": null,
+      "type": "small_compact_settlement",
+      "production": "white_wine",
+      "roof": "red_tile",
+      "areas": [
+        "elongated_square",
+        "family_cellars",
+        "residential_patios",
+        "highland_vineyards",
+        "bosque_alto_interface"
+      ],
+      "landmarks": [
+        "elongated_square",
+        "annual_wine_market",
+        "main_inn_visual_type"
+      ],
+      "forbidden": [
+        "no_walls",
+        "no_fortifications",
+        "no_major_river",
+        "no_canal",
+        "no_lake",
+        "no_harbor",
+        "no_heavy_industry"
+      ],
+      "protected": true,
+      "procedural": false,
+      "designOnly": true,
+      "instantiated": false,
+      "coordinates": null,
+      "population": null,
+      "physicalRoads": [],
+      "buildings": [],
+      "npcInstances": [],
+      "inventories": [],
+      "households": [],
+      "dependencies": [
+        "E08",
+        "E09",
+        "E10",
+        "E11"
+      ]
+    },
+    {
+      "id": "karsath",
+      "name": "Karsath",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "casa_edranor",
+      "fiscalOwner": "casa_edranor",
+      "militaryOwner": "crown_supreme_house_subordinate",
+      "berserkerCommandOwner": null,
+      "type": "small_lakeside_visual_settlement",
+      "production": "exclusive_small_batch_wine",
+      "roof": "tile",
+      "areas": [
+        "communal_space",
+        "small_batch_storage",
+        "residences",
+        "lakeside_vineyard_context",
+        "open_horizon"
+      ],
+      "landmarks": [
+        "small_batch_wine_program",
+        "lake_visual_context"
+      ],
+      "forbidden": [
+        "no_assumed_urban_shore",
+        "no_harbor",
+        "no_navigable_river_in_city",
+        "no_ambient_banners"
+      ],
+      "protected": true,
+      "procedural": false,
+      "designOnly": true,
+      "instantiated": false,
+      "coordinates": null,
+      "population": null,
+      "physicalRoads": [],
+      "buildings": [],
+      "npcInstances": [],
+      "inventories": [],
+      "households": [],
+      "dependencies": [
+        "E08",
+        "E09",
+        "E10",
+        "E11"
+      ]
+    },
+    {
+      "id": "rodas",
+      "name": "Rodas",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "crown_aethros",
+      "fiscalOwner": "crown_aethros",
+      "militaryOwner": "crown_aethros",
+      "berserkerCommandOwner": "crown_aethros",
+      "type": "village",
+      "production": "rural_and_berserker_tradition",
+      "roof": "slate",
+      "areas": [
+        "open_square",
+        "guarded_druid_house_adjacent_square",
+        "homes_and_small_forges",
+        "cold_rural_interface"
+      ],
+      "landmarks": [
+        "open_square",
+        "two_storey_guarded_nonreligious_druid_house"
+      ],
+      "forbidden": [
+        "no_walls",
+        "no_fences",
+        "no_palisades",
+        "no_castle",
+        "no_fortress",
+        "no_church",
+        "no_temple",
+        "no_transformed_berserkers_wandering",
+        "no_edranor_taxation",
+        "no_edranor_military_command"
+      ],
+      "protected": true,
+      "procedural": false,
+      "designOnly": true,
+      "instantiated": false,
+      "coordinates": null,
+      "population": null,
+      "physicalRoads": [],
+      "buildings": [],
+      "npcInstances": [],
+      "inventories": [],
+      "households": [],
+      "dependencies": [
+        "E08",
+        "E09",
+        "E10",
+        "E11"
+      ]
+    }
+  ],
+  "outsideScope": {
+    "id": "hallheim",
+    "jurisdictionOwner": "crown_aethros",
+    "insideEdranor": false,
+    "designed": false
+  },
+  "rights": {
+    "rodasTaxedByEdranor": false,
+    "rodasCommandedByEdranor": false,
+    "rodasBerserkersOwnedByEdranor": false,
+    "customsBetweenGreatHouses": false,
+    "roadsInventedFromE05": false,
+    "forestExploitedWithoutRights": false,
+    "buildingInstancesGenerated": false,
+    "peopleGenerated": false,
+    "stocksGenerated": false
+  },
+  "hooks": [
+    "edr_e07_hook_dorth_lote",
+    "edr_e07_hook_dorth_bodega",
+    "edr_e07_hook_dorth_carta",
+    "edr_e07_hook_lumina_tonel",
+    "edr_e07_hook_lumina_mercado",
+    "edr_e07_hook_lumina_registro",
+    "edr_e07_hook_karsath_muestra",
+    "edr_e07_hook_karsath_parcela",
+    "edr_e07_hook_rodas_herrero",
+    "edr_e07_hook_rodas_acceso",
+    "edr_e07_hook_rodas_mensaje",
+    "edr_e07_hook_rodas_excepcion"
+  ],
+  "unknown": [
+    "EDD-01_north",
+    "EDD-02_scale",
+    "EDD-03_local_water",
+    "EDD-04_census",
+    "EDD-05_house_leaders",
+    "EDD-07_physical_routes",
+    "EDD-08_rodas_history",
+    "site_specific_land_rights",
+    "local_building_footprints",
+    "current_wine_stocks",
+    "demographic_counts",
+    "local_guards"
+  ],
+  "runtimeClaims": []
+}
