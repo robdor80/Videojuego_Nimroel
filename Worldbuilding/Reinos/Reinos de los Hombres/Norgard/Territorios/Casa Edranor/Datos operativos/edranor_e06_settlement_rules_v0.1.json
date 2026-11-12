@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e06_settlement_rules",
+  "version": "0.1",
+  "date": "2026-11-12",
+  "phase": "E06",
+  "status": "SYNTHETIC_DESIGN_ONLY",
+  "runtimeEnabled": false,
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor",
+    "localidad",
+    "world_state"
+  ],
+  "sourceAuthorities": [
+    "CANON_REPO",
+    "AUTOR_2026_11_12",
+    "OBSERVACION_MAPA",
+    "PROPUESTA",
+    "UNKNOWN"
+  ],
+  "scope": {
+    "territory": "casa_edranor",
+    "northBoundaryClosed": false,
+    "georeferenced": false,
+    "localHydrographyValidated": false,
+    "localSoilsMapped": false,
+    "physicalRoadGraphValidated": false,
+    "realSitePlacementAllowed": false,
+    "syntheticLabOnly": true,
+    "proceduralSettlementsInstantiated": 0,
+    "realSettlementInstances": [],
+    "coordinates": "UNKNOWN",
+    "population": "UNKNOWN",
+    "territorialQuota": "UNKNOWN"
+  },
+  "protectedAnchors": [
+    {
+      "id": "dorth",
+      "jurisdictionOwner": "casa_edranor",
+      "insideTerritorialContext": true,
+      "procedural": false
+    },
+    {
+      "id": "lumina",
+      "jurisdictionOwner": "casa_edranor",
+      "insideTerritorialContext": true,
+      "procedural": false
+    },
+    {
+      "id": "karsath",
+      "jurisdictionOwner": "casa_edranor",
+      "insideTerritorialContext": true,
+      "procedural": false
+    },
+    {
+      "id": "rodas",
+      "jurisdictionOwner": "crown_aethros",
+      "fiscalOwner": "crown_aethros",
+      "militaryOwner": "crown_aethros",
+      "insideTerritorialContext": true,
+      "procedural": false
+    },
+    {
+      "id": "hallheim",
+      "jurisdictionOwner": "crown_aethros",
+      "insideTerritorialContext": false,
+      "procedural": false
+    }
+  ],
+  "blockedZones": [
+    "edr_e01_west_valkram_interface",
+    "edr_e01_north_cold_transition",
+    "edr_e01_far_north_unclosed"
+  ],
+  "exclusionFlags": [
+    "royal_forest",
+    "protected_habitat",
+    "unresolved_northern_border",
+    "canonical_footprint",
+    "unverified_forest_rights",
+    "unverified_local_route",
+    "unverified_water_source",
+    "archaeological_protection"
+  ],
+  "foundationEvidence": [
+    "habitableGroundVerified",
+    "potableWaterVerified",
+    "localAccessVerified",
+    "livelihoodViableVerified",
+    "localJurisdictionVerified",
+    "landUseRightsVerified",
+    "ecologicalClearanceVerified",
+    "canonicalClearanceVerified"
+  ],
+  "classEvidence": {
+    "aldea": [],
+    "pueblo": [
+      "localServiceDemandVerified",
+      "sharedCommunityFunctionsVerified"
+    ],
+    "villa": [
+      "localServiceDemandVerified",
+      "sharedCommunityFunctionsVerified",
+      "urbanScaleApprovedVerified"
+    ],
+    "enclave": [
+      "residentCommunityJustifiedVerified",
+      "specializedPurposeAuthorizedVerified"
+    ]
+  },
+  "models": [
+    {
+      "id": "edr_e06_model_agricultura_mixta",
+      "classes": [
+        "aldea",
+        "pueblo"
+      ],
+      "extraEvidence": [
+        "agriculturalSoilValidated",
+        "seasonalWaterSupplyVerified",
+        "cultivationRightsVerified"
+      ],
+      "potentialBuildings": [
+        "viviendas",
+        "huertos",
+        "granero"
+      ],
+      "potentialServices": [
+        "intercambio_local"
+      ],
+      "installationConfirmed": false,
+      "unconditionalSpawn": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e06_model_viticultura_condicional",
+      "classes": [
+        "aldea",
+        "pueblo"
+      ],
+      "extraEvidence": [
+        "wineParcelValidated",
+        "microclimateAndSoilsVerified",
+        "vineCultivationRightsVerified",
+        "vineyardSupplyVerified"
+      ],
+      "potentialBuildings": [
+        "viviendas",
+        "lagares",
+        "almacen_de_cosecha"
+      ],
+      "potentialServices": [
+        "vendimia_y_acopio"
+      ],
+      "installationConfirmed": false,
+      "unconditionalSpawn": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e06_model_toneleria_auxiliar",
+      "classes": [
+        "aldea",
+        "pueblo",
+        "enclave"
+      ],
+      "extraEvidence": [
+        "licensedWorkshopSiteVerified",
+        "legitimateWoodSupplyVerified",
+        "cooperageDemandVerified",
+        "actualInputAccessVerified"
+      ],
+      "potentialBuildings": [
+        "taller_de_duelas",
+        "zona_de_curado",
+        "almacen_condicional"
+      ],
+      "potentialServices": [
+        "reparacion_de_barricas"
+      ],
+      "installationConfirmed": false,
+      "unconditionalSpawn": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e06_model_forestal_controlado",
+      "classes": [
+        "aldea",
+        "enclave"
+      ],
+      "extraEvidence": [
+        "managedForestPlotVerified",
+        "forestRightsVerified",
+        "regenerationPlanVerified",
+        "forestProtectionClearanceVerified"
+      ],
+      "potentialBuildings": [
+        "refugio_de_trabajo",
+        "deposito_condicional"
+      ],
+      "potentialServices": [
+        "vigilancia_forestal"
+      ],
+      "installationConfirmed": false,
+      "unconditionalSpawn": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e06_model_ganaderia_transicion",
+      "classes": [
+        "aldea"
+      ],
+      "extraEvidence": [
+        "pastureSiteValidated",
+        "grazingRightsVerified",
+        "winterFeedVerified"
+      ],
+      "potentialBuildings": [
+        "viviendas",
+        "corral",
+        "almacen_de_forraje"
+      ],
+      "potentialServices": [
+        "intercambio_de_productos"
+      ],
+      "installationConfirmed": false,
+      "unconditionalSpawn": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e06_model_servicios_camino",
+      "classes": [
+        "aldea",
+        "pueblo",
+        "enclave"
+      ],
+      "extraEvidence": [
+        "physicalRoadAtSiteVerified",
+        "realTravelDemandVerified",
+        "serviceRightsVerified"
+      ],
+      "potentialBuildings": [
+        "refugio_condicional",
+        "patio_de_reparacion"
+      ],
+      "potentialServices": [
+        "asistencia_a_viajeros"
+      ],
+      "installationConfirmed": false,
+      "unconditionalSpawn": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e06_model_artesania_intercambio",
+      "classes": [
+        "aldea",
+        "pueblo"
+      ],
+      "extraEvidence": [
+        "localDemandVerified",
+        "legitimateInputsVerified",
+        "workshopRightsVerified"
+      ],
+      "potentialBuildings": [
+        "taller",
+        "espacio_de_intercambio"
+      ],
+      "potentialServices": [
+        "reparaciones_y_oficios"
+      ],
+      "installationConfirmed": false,
+      "unconditionalSpawn": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e06_model_bodega_auxiliar",
+      "classes": [
+        "aldea",
+        "pueblo",
+        "enclave"
+      ],
+      "extraEvidence": [
+        "legalWineSourceVerified",
+        "approvedStorageSiteVerified",
+        "verifiedStorageDemand",
+        "authorizedSupplyAccessVerified"
+      ],
+      "potentialBuildings": [
+        "bodega_condicional",
+        "zona_de_barricas"
+      ],
+      "potentialServices": [
+        "almacenaje_legal"
+      ],
+      "installationConfirmed": false,
+      "unconditionalSpawn": false,
+      "evidence": "PROPUESTA"
+    }
+  ],
+  "zones": [
+    {
+      "id": "edr_e01_west_valkram_interface",
+      "eligibility": "CLOSED_PENDING_SITE_AND_RIGHTS",
+      "weights": {
+        "edr_e06_model_agricultura_mixta": 0,
+        "edr_e06_model_viticultura_condicional": 0,
+        "edr_e06_model_toneleria_auxiliar": 0,
+        "edr_e06_model_forestal_controlado": 0,
+        "edr_e06_model_ganaderia_transicion": 0,
+        "edr_e06_model_servicios_camino": 0,
+        "edr_e06_model_artesania_intercambio": 0,
+        "edr_e06_model_bodega_auxiliar": 0
+      },
+      "terrainMapped": false,
+      "settlementSitesConfirmed": 0,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e01_karsath_central_west",
+      "eligibility": "STUDY_ONLY",
+      "weights": {
+        "edr_e06_model_agricultura_mixta": 3,
+        "edr_e06_model_viticultura_condicional": 4,
+        "edr_e06_model_toneleria_auxiliar": 1,
+        "edr_e06_model_forestal_controlado": 0,
+        "edr_e06_model_ganaderia_transicion": 1,
+        "edr_e06_model_servicios_camino": 1,
+        "edr_e06_model_artesania_intercambio": 2,
+        "edr_e06_model_bodega_auxiliar": 2
+      },
+      "terrainMapped": false,
+      "settlementSitesConfirmed": 0,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e01_lumina_bosque_alto",
+      "eligibility": "STUDY_ONLY",
+      "weights": {
+        "edr_e06_model_agricultura_mixta": 1,
+        "edr_e06_model_viticultura_condicional": 1,
+        "edr_e06_model_toneleria_auxiliar": 4,
+        "edr_e06_model_forestal_controlado": 3,
+        "edr_e06_model_ganaderia_transicion": 1,
+        "edr_e06_model_servicios_camino": 1,
+        "edr_e06_model_artesania_intercambio": 2,
+        "edr_e06_model_bodega_auxiliar": 2
+      },
+      "terrainMapped": false,
+      "settlementSitesConfirmed": 0,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e01_central_wine_context",
+      "eligibility": "STUDY_ONLY",
+      "weights": {
+        "edr_e06_model_agricultura_mixta": 3,
+        "edr_e06_model_viticultura_condicional": 4,
+        "edr_e06_model_toneleria_auxiliar": 2,
+        "edr_e06_model_forestal_controlado": 0,
+        "edr_e06_model_ganaderia_transicion": 1,
+        "edr_e06_model_servicios_camino": 1,
+        "edr_e06_model_artesania_intercambio": 2,
+        "edr_e06_model_bodega_auxiliar": 3
+      },
+      "terrainMapped": false,
+      "settlementSitesConfirmed": 0,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e01_dorth_azurios_west",
+      "eligibility": "STUDY_ONLY_FOREST_GUARD",
+      "weights": {
+        "edr_e06_model_agricultura_mixta": 1,
+        "edr_e06_model_viticultura_condicional": 1,
+        "edr_e06_model_toneleria_auxiliar": 1,
+        "edr_e06_model_forestal_controlado": 0,
+        "edr_e06_model_ganaderia_transicion": 1,
+        "edr_e06_model_servicios_camino": 1,
+        "edr_e06_model_artesania_intercambio": 3,
+        "edr_e06_model_bodega_auxiliar": 1
+      },
+      "terrainMapped": false,
+      "settlementSitesConfirmed": 0,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e01_north_cold_transition",
+      "eligibility": "CLOSED_PENDING_NORTH_BOUNDARY",
+      "weights": {
+        "edr_e06_model_agricultura_mixta": 0,
+        "edr_e06_model_viticultura_condicional": 0,
+        "edr_e06_model_toneleria_auxiliar": 0,
+        "edr_e06_model_forestal_controlado": 0,
+        "edr_e06_model_ganaderia_transicion": 0,
+        "edr_e06_model_servicios_camino": 0,
+        "edr_e06_model_artesania_intercambio": 0,
+        "edr_e06_model_bodega_auxiliar": 0
+      },
+      "terrainMapped": false,
+      "settlementSitesConfirmed": 0,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e01_far_north_unclosed",
+      "eligibility": "CLOSED_PENDING_NORTH_BOUNDARY",
+      "weights": {
+        "edr_e06_model_agricultura_mixta": 0,
+        "edr_e06_model_viticultura_condicional": 0,
+        "edr_e06_model_toneleria_auxiliar": 0,
+        "edr_e06_model_forestal_controlado": 0,
+        "edr_e06_model_ganaderia_transicion": 0,
+        "edr_e06_model_servicios_camino": 0,
+        "edr_e06_model_artesania_intercambio": 0,
+        "edr_e06_model_bodega_auxiliar": 0
+      },
+      "terrainMapped": false,
+      "settlementSitesConfirmed": 0,
+      "evidence": "PROPUESTA"
+    }
+  ],
+  "seedContract": {
+    "namespace": "edranor-e06/v0.1",
+    "encoding": "json-array-utf8-compact",
+    "hash": "sha256",
+    "idHexChars": 16,
+    "idPrefix": "edr_e06_test_",
+    "selectionHashBytes": 8,
+    "modelSort": "lexicographic_id",
+    "weightedChoice": "unsigned_big_endian_modulo_weight_sum",
+    "globalRngUsed": false
+  },
+  "worldStateConstraints": {
+    "noRuntimeMaterialization": true,
+    "noLocationWithoutSurvey": true,
+    "noPopulationOrHouseholds": true,
+    "noNPCsOrInventories": true,
+    "noTransportFromE05Questions": true,
+    "noViticultureFromRegionLabel": true,
+    "noForestCutWithoutRights": true,
+    "noRoyalForestClaim": true,
+    "noRodasEdranorAuthority": true,
+    "noCustomsWithinNorgard": true,
+    "preserveGeneratedIdentityAcrossPresentationChanges": true,
+    "revalidateRealSitesAfterWorldStateChanges": true
+  },
+  "unknown": [
+    "EDD-01_NORTH_BOUNDARY_CLOSURE",
+    "EDD-02_GEOREFERENCING_AND_SCALE",
+    "EDD-03_LOCAL_WATER",
+    "EDD-04_CENSUS",
+    "EDD-07_ACCESS_AND_PATHS",
+    "LOCAL_SOILS_AND_MICROCLIMATE",
+    "LAND_OWNERSHIP_AND_PERMISSIONS",
+    "FOREST_PROTECTED_PARCELS",
+    "REAL_SETTLEMENT_SITES",
+    "SERVICES_COVERAGE_AND_DEMAND",
+    "PROCEDURAL_DENSITY_AND_CAPACITY",
+    "E11_RUNTIME_AND_PERSISTENCE"
+  ],
+  "forbiddenClaims": [
+    "GENERATED_SETTLEMENTS_CANONICAL",
+    "POPULATION_ASSIGNED",
+    "GODOT_SCENES_INSTALLED",
+    "CORERPG_SETTLEMENTS_ACTIVE",
+    "REAL_VINEYARD_PLOTS_CONFIRMED",
+    "ROADS_FROM_E05_QUESTIONS",
+    "LOCAL_WATER_FROM_LURIEN_OR_ANTELA",
+    "FOREST_AUTOMATIC_HARVEST",
+    "ROYAL_FOREST_OWNED_BY_EDRANOR",
+    "RODAS_PROCEDURAL",
+    "RODAS_EDRANOR_TAXES_OR_BERSERKERS",
+    "HALLHEIM_INSIDE_EDRANOR",
+    "NORTHERN_POLAR_LANDS_CLAIMED",
+    "INTERNAL_CUSTOMS",
+    "UNSURVEYED_SITE_ACTIVATED"
+  ]
+}

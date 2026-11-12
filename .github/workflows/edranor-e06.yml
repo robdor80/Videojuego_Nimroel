@@ -1,0 +1,36 @@
+name: Edranor E06 static regression
+on:
+  push:
+    branches:
+      - 'feat/edranor-e06-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/**'
+      - 'Tools/EdranorE06/**'
+      - '.github/workflows/edranor-e06.yml'
+jobs:
+  e06-static:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: E00 foundation regression
+        run: python Tools/EdranorE00/validate.py
+      - name: E01 relief regression
+        run: python Tools/EdranorE01/validate.py
+      - name: E02 hydrology regression
+        run: python Tools/EdranorE02/validate.py
+      - name: E03 climate regression
+        run: python Tools/EdranorE03/validate.py
+      - name: E04 economy regression
+        run: python Tools/EdranorE04/validate.py
+      - name: E05 roads regression
+        run: python Tools/EdranorE05/validate.py
+      - name: E06 settlements laboratory and negative mutations
+        run: python Tools/EdranorE06/validate.py
