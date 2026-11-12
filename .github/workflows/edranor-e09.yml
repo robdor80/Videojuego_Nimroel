@@ -1,0 +1,42 @@
+name: Edranor E09 static regression
+on:
+  push:
+    branches:
+      - 'feat/edranor-e09-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/**'
+      - 'Tools/EdranorE09/**'
+      - '.github/workflows/edranor-e09.yml'
+jobs:
+  e09-static:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: E00
+        run: python Tools/EdranorE00/validate.py
+      - name: E01
+        run: python Tools/EdranorE01/validate.py
+      - name: E02
+        run: python Tools/EdranorE02/validate.py
+      - name: E03
+        run: python Tools/EdranorE03/validate.py
+      - name: E04
+        run: python Tools/EdranorE04/validate.py
+      - name: E05
+        run: python Tools/EdranorE05/validate.py
+      - name: E06
+        run: python Tools/EdranorE06/validate.py
+      - name: E07
+        run: python Tools/EdranorE07/validate.py
+      - name: E08
+        run: python Tools/EdranorE08/validate.py
+      - name: E09
+        run: python Tools/EdranorE09/validate.py
