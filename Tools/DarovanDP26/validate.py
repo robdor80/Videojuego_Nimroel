@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import argparse
 import copy
-import hashlib
 import json
 import subprocess
 from pathlib import Path
@@ -48,8 +47,12 @@ def unchanged_unknowns(value: dict) -> None:
 
 
 def official_blob(path: Path) -> str:
-    data = path.read_bytes()
-    return hashlib.sha1(b"blob " + str(len(data)).encode("ascii") + bytes([0]) + data).hexdigest()
+    # Git tree SHA, not working-tree bytes (CRLF differs on Windows).
+    relative = path.relative_to(ROOT).as_posix()
+    cmd = subprocess.run(
+        ["git", "-C", str(ROOT), "rev-parse", "HEAD:" + relative],
+        text=True, capture_output=True, check=True)
+    return cmd.stdout.strip()
 
 
 def verify_refs(m: dict, roots: dict[str, Path]) -> dict[str, dict]:
