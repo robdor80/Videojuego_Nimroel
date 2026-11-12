@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e03_climate_soils_ecosystems",
+  "version": "0.1",
+  "date": "2026-11-12",
+  "phase": "E03",
+  "status": "DOCUMENTARY_PLANNING_ONLY",
+  "runtimeEnabled": false,
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor",
+    "localidad",
+    "world_state"
+  ],
+  "sourceAuthorities": [
+    "CANON_REPO",
+    "AUTOR_2026_11_12",
+    "OBSERVACION_MAPA",
+    "PROPUESTA",
+    "UNKNOWN"
+  ],
+  "scope": {
+    "territory": "casa_edranor",
+    "regionalCanon": "norgard",
+    "northBoundaryClosed": false,
+    "georeferenced": false,
+    "metricGeometryValidated": false,
+    "localClimateMapped": false,
+    "localSoilsMapped": false,
+    "localBiomesMapped": false,
+    "climatePolygons": [],
+    "soilPolygons": [],
+    "habitatPolygons": [],
+    "hazardPolygons": [],
+    "scale": "UNKNOWN",
+    "coordinates": "UNKNOWN",
+    "northernPolarMembership": "UNKNOWN",
+    "localHydrologicalNetwork": "UNKNOWN"
+  },
+  "anchors": [
+    {
+      "id": "dorth",
+      "owner": "casa_edranor",
+      "inside": true
+    },
+    {
+      "id": "lumina",
+      "owner": "casa_edranor",
+      "inside": true
+    },
+    {
+      "id": "karsath",
+      "owner": "casa_edranor",
+      "inside": true
+    },
+    {
+      "id": "rodas",
+      "owner": "crown_aethros",
+      "inside": true,
+      "militaryOwner": "crown_aethros",
+      "fiscalOwner": "crown_aethros",
+      "berserkersUnderCrown": true
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros",
+      "inside": false
+    }
+  ],
+  "regionalClimateCanon": {
+    "centralGradient": [
+      "CENTRAL_CONTINENTAL",
+      "CENTRAL_COLD",
+      "FAR_NORTH_POLAR"
+    ],
+    "orderedNorthwardTransition": [
+      "CONTINENTAL",
+      "COLD",
+      "POLAR"
+    ],
+    "farNorthPolarBandIsPoliticalBorder": false,
+    "polarBandInsideEdranor": "UNKNOWN",
+    "exactClimateBoundaries": "UNKNOWN",
+    "localMeasuredTemperatures": "UNKNOWN",
+    "evidence": "CANON_REPO"
+  },
+  "regionalEcosystemCanon": [
+    {
+      "id": "bosque_alto",
+      "associatedWith": "lumina",
+      "description": "MIXED_TEMPERATE_HIGHLAND_FOREST",
+      "treeReferences": [
+        "ROBLES",
+        "HAYAS",
+        "CONIFERAS"
+      ],
+      "localArea": "UNKNOWN",
+      "localOwnership": "UNKNOWN",
+      "evidence": "CANON_REPO"
+    },
+    {
+      "id": "bosque_azurios",
+      "associatedWith": "dorth",
+      "description": "MIXED_CONTINENTAL_MONTANE_FOREST",
+      "treeReferences": [
+        "ROBLES",
+        "HAYAS",
+        "FRESNOS",
+        "ARCES",
+        "PINOS",
+        "ABETOS"
+      ],
+      "localArea": "UNKNOWN",
+      "localOwnership": "UNKNOWN",
+      "evidence": "CANON_REPO"
+    },
+    {
+      "id": "boreal_norgard",
+      "associatedWith": "NORGARD_NORTH",
+      "description": "BOREAL_SUBPOLAR_FOREST_TRANSITION",
+      "treeReferences": [
+        "PICEAS",
+        "ABETOS",
+        "PINOS",
+        "ALERCES",
+        "ABEDULES"
+      ],
+      "edranorMembership": "UNKNOWN",
+      "evidence": "CANON_REPO"
+    },
+    {
+      "id": "tundra_norgard",
+      "associatedWith": "NORGARD_FAR_NORTH",
+      "description": "TUNDRA_IN_POLAR_CLIMATIC_CONTEXT",
+      "treeReferences": [],
+      "edranorMembership": "UNKNOWN",
+      "evidence": "CANON_REPO"
+    }
+  ],
+  "reliefProfiles": [
+    {
+      "id": "edr_e03_profile_west_valkram_interface",
+      "reliefUnitId": "edr_e01_west_valkram_interface",
+      "climate": {
+        "studyClass": "OROGRAPHIC_INTERFACE_STUDY",
+        "regionalReference": "NORGARD_CENTRAL_WESTERN_MOUNTAIN_BARRIER",
+        "regionalEvidence": "CANON_REPO",
+        "localClimateType": "UNKNOWN",
+        "localClimateValidated": false,
+        "monthlyTemperatures": "UNKNOWN",
+        "precipitationAmounts": "UNKNOWN",
+        "precipitationSeasonality": "UNKNOWN",
+        "snowDuration": "UNKNOWN",
+        "frostDays": "UNKNOWN",
+        "prevailingWind": "UNKNOWN",
+        "localHumidity": "UNKNOWN",
+        "weatherStation": "UNKNOWN"
+      },
+      "soil": {
+        "studyQuestion": "VALKRAM_SLOPE_SOIL_STUDY",
+        "parentMaterial": "UNKNOWN",
+        "texture": "UNKNOWN",
+        "effectiveDepth": "UNKNOWN",
+        "drainage": "UNKNOWN",
+        "permeability": "UNKNOWN",
+        "organicMatter": "UNKNOWN",
+        "soilPh": "UNKNOWN",
+        "slopeParcel": "UNKNOWN",
+        "soilValidated": false,
+        "soilProfileLocations": [],
+        "viticultureSuitability": "UNASSESSED",
+        "vineyardOnUnitConfirmed": false,
+        "evidence": "PROPUESTA"
+      },
+      "ecosystem": {
+        "regionalReference": "NORGARD_GENERAL",
+        "regionalEvidence": "UNKNOWN",
+        "localMembership": "UNKNOWN",
+        "localEcosystemMapped": false,
+        "habitatPolygons": [],
+        "speciesInventory": "UNKNOWN",
+        "localFaunaInventory": "UNKNOWN",
+        "habitatOwnership": "UNKNOWN",
+        "ecosystemStudyOnly": true
+      },
+      "boundary": {
+        "unitExtent": "UNKNOWN",
+        "insideNorthernEdranorValidated": false
+      }
+    },
+    {
+      "id": "edr_e03_profile_karsath_central_west",
+      "reliefUnitId": "edr_e01_karsath_central_west",
+      "climate": {
+        "studyClass": "CENTRAL_INTERIOR_STUDY",
+        "regionalReference": "NORGARD_CENTRAL_CONTINENTAL_GRADIENT",
+        "regionalEvidence": "CANON_REPO",
+        "localClimateType": "UNKNOWN",
+        "localClimateValidated": false,
+        "monthlyTemperatures": "UNKNOWN",
+        "precipitationAmounts": "UNKNOWN",
+        "precipitationSeasonality": "UNKNOWN",
+        "snowDuration": "UNKNOWN",
+        "frostDays": "UNKNOWN",
+        "prevailingWind": "UNKNOWN",
+        "localHumidity": "UNKNOWN",
+        "weatherStation": "UNKNOWN"
+      },
+      "soil": {
+        "studyQuestion": "KARSATH_LANDSCAPE_SOIL_STUDY",
+        "parentMaterial": "UNKNOWN",
+        "texture": "UNKNOWN",
+        "effectiveDepth": "UNKNOWN",
+        "drainage": "UNKNOWN",
+        "permeability": "UNKNOWN",
+        "organicMatter": "UNKNOWN",
+        "soilPh": "UNKNOWN",
+        "slopeParcel": "UNKNOWN",
+        "soilValidated": false,
+        "soilProfileLocations": [],
+        "viticultureSuitability": "UNASSESSED",
+        "vineyardOnUnitConfirmed": false,
+        "evidence": "PROPUESTA"
+      },
+      "ecosystem": {
+        "regionalReference": "NORGARD_CENTRAL_GENERAL",
+        "regionalEvidence": "UNKNOWN",
+        "localMembership": "UNKNOWN",
+        "localEcosystemMapped": false,
+        "habitatPolygons": [],
+        "speciesInventory": "UNKNOWN",
+        "localFaunaInventory": "UNKNOWN",
+        "habitatOwnership": "UNKNOWN",
+        "ecosystemStudyOnly": true
+      },
+      "boundary": {
+        "unitExtent": "UNKNOWN",
+        "insideNorthernEdranorValidated": false
+      }
+    },
+    {
+      "id": "edr_e03_profile_lumina_bosque_alto",
+      "reliefUnitId": "edr_e01_lumina_bosque_alto",
+      "climate": {
+        "studyClass": "HIGHLAND_FOREST_STUDY",
+        "regionalReference": "BOSQUE_ALTO_TEMPERATE_MIXED_HIGHLAND",
+        "regionalEvidence": "CANON_REPO",
+        "localClimateType": "UNKNOWN",
+        "localClimateValidated": false,
+        "monthlyTemperatures": "UNKNOWN",
+        "precipitationAmounts": "UNKNOWN",
+        "precipitationSeasonality": "UNKNOWN",
+        "snowDuration": "UNKNOWN",
+        "frostDays": "UNKNOWN",
+        "prevailingWind": "UNKNOWN",
+        "localHumidity": "UNKNOWN",
+        "weatherStation": "UNKNOWN"
+      },
+      "soil": {
+        "studyQuestion": "LUMINA_HIGHLAND_SOIL_STUDY",
+        "parentMaterial": "UNKNOWN",
+        "texture": "UNKNOWN",
+        "effectiveDepth": "UNKNOWN",
+        "drainage": "UNKNOWN",
+        "permeability": "UNKNOWN",
+        "organicMatter": "UNKNOWN",
+        "soilPh": "UNKNOWN",
+        "slopeParcel": "UNKNOWN",
+        "soilValidated": false,
+        "soilProfileLocations": [],
+        "viticultureSuitability": "UNASSESSED",
+        "vineyardOnUnitConfirmed": false,
+        "evidence": "PROPUESTA"
+      },
+      "ecosystem": {
+        "regionalReference": "BOSQUE_ALTO",
+        "regionalEvidence": "CANON_REPO",
+        "localMembership": "UNKNOWN",
+        "localEcosystemMapped": false,
+        "habitatPolygons": [],
+        "speciesInventory": "UNKNOWN",
+        "localFaunaInventory": "UNKNOWN",
+        "habitatOwnership": "UNKNOWN",
+        "ecosystemStudyOnly": true
+      },
+      "boundary": {
+        "unitExtent": "UNKNOWN",
+        "insideNorthernEdranorValidated": false
+      }
+    },
+    {
+      "id": "edr_e03_profile_central_wine_context",
+      "reliefUnitId": "edr_e01_central_wine_context",
+      "climate": {
+        "studyClass": "CULTIVABLE_MOSAIC_STUDY",
+        "regionalReference": "NORGARD_CENTRAL_CONTINENTAL_GRADIENT",
+        "regionalEvidence": "CANON_REPO",
+        "localClimateType": "UNKNOWN",
+        "localClimateValidated": false,
+        "monthlyTemperatures": "UNKNOWN",
+        "precipitationAmounts": "UNKNOWN",
+        "precipitationSeasonality": "UNKNOWN",
+        "snowDuration": "UNKNOWN",
+        "frostDays": "UNKNOWN",
+        "prevailingWind": "UNKNOWN",
+        "localHumidity": "UNKNOWN",
+        "weatherStation": "UNKNOWN"
+      },
+      "soil": {
+        "studyQuestion": "WINE_REGION_PARCEL_STUDY",
+        "parentMaterial": "UNKNOWN",
+        "texture": "UNKNOWN",
+        "effectiveDepth": "UNKNOWN",
+        "drainage": "UNKNOWN",
+        "permeability": "UNKNOWN",
+        "organicMatter": "UNKNOWN",
+        "soilPh": "UNKNOWN",
+        "slopeParcel": "UNKNOWN",
+        "soilValidated": false,
+        "soilProfileLocations": [],
+        "viticultureSuitability": "UNASSESSED",
+        "vineyardOnUnitConfirmed": false,
+        "evidence": "PROPUESTA"
+      },
+      "ecosystem": {
+        "regionalReference": "WINE_REGION_CONTEXT",
+        "regionalEvidence": "CANON_REPO",
+        "localMembership": "UNKNOWN",
+        "localEcosystemMapped": false,
+        "habitatPolygons": [],
+        "speciesInventory": "UNKNOWN",
+        "localFaunaInventory": "UNKNOWN",
+        "habitatOwnership": "UNKNOWN",
+        "ecosystemStudyOnly": true
+      },
+      "boundary": {
+        "unitExtent": "UNKNOWN",
+        "insideNorthernEdranorValidated": false
+      }
+    },
+    {
+      "id": "edr_e03_profile_dorth_azurios_west",
+      "reliefUnitId": "edr_e01_dorth_azurios_west",
+      "climate": {
+        "studyClass": "MONTANE_FOREST_EDGE_STUDY",
+        "regionalReference": "AZURIOS_WESTERN_FOREST_GRADIENT",
+        "regionalEvidence": "CANON_REPO",
+        "localClimateType": "UNKNOWN",
+        "localClimateValidated": false,
+        "monthlyTemperatures": "UNKNOWN",
+        "precipitationAmounts": "UNKNOWN",
+        "precipitationSeasonality": "UNKNOWN",
+        "snowDuration": "UNKNOWN",
+        "frostDays": "UNKNOWN",
+        "prevailingWind": "UNKNOWN",
+        "localHumidity": "UNKNOWN",
+        "weatherStation": "UNKNOWN"
+      },
+      "soil": {
+        "studyQuestion": "DORTH_PIEDEMONT_SOIL_STUDY",
+        "parentMaterial": "UNKNOWN",
+        "texture": "UNKNOWN",
+        "effectiveDepth": "UNKNOWN",
+        "drainage": "UNKNOWN",
+        "permeability": "UNKNOWN",
+        "organicMatter": "UNKNOWN",
+        "soilPh": "UNKNOWN",
+        "slopeParcel": "UNKNOWN",
+        "soilValidated": false,
+        "soilProfileLocations": [],
+        "viticultureSuitability": "UNASSESSED",
+        "vineyardOnUnitConfirmed": false,
+        "evidence": "PROPUESTA"
+      },
+      "ecosystem": {
+        "regionalReference": "BOSQUE_AZURIOS",
+        "regionalEvidence": "CANON_REPO",
+        "localMembership": "UNKNOWN",
+        "localEcosystemMapped": false,
+        "habitatPolygons": [],
+        "speciesInventory": "UNKNOWN",
+        "localFaunaInventory": "UNKNOWN",
+        "habitatOwnership": "UNKNOWN",
+        "ecosystemStudyOnly": true
+      },
+      "boundary": {
+        "unitExtent": "UNKNOWN",
+        "insideNorthernEdranorValidated": false
+      }
+    },
+    {
+      "id": "edr_e03_profile_north_cold_transition",
+      "reliefUnitId": "edr_e01_north_cold_transition",
+      "climate": {
+        "studyClass": "NORTHERN_TRANSITION_STUDY",
+        "regionalReference": "NORGARD_CENTRAL_COLD_TO_BOREAL",
+        "regionalEvidence": "CANON_REPO",
+        "localClimateType": "UNKNOWN",
+        "localClimateValidated": false,
+        "monthlyTemperatures": "UNKNOWN",
+        "precipitationAmounts": "UNKNOWN",
+        "precipitationSeasonality": "UNKNOWN",
+        "snowDuration": "UNKNOWN",
+        "frostDays": "UNKNOWN",
+        "prevailingWind": "UNKNOWN",
+        "localHumidity": "UNKNOWN",
+        "weatherStation": "UNKNOWN"
+      },
+      "soil": {
+        "studyQuestion": "COLD_SOIL_SEASONALITY_STUDY",
+        "parentMaterial": "UNKNOWN",
+        "texture": "UNKNOWN",
+        "effectiveDepth": "UNKNOWN",
+        "drainage": "UNKNOWN",
+        "permeability": "UNKNOWN",
+        "organicMatter": "UNKNOWN",
+        "soilPh": "UNKNOWN",
+        "slopeParcel": "UNKNOWN",
+        "soilValidated": false,
+        "soilProfileLocations": [],
+        "viticultureSuitability": "UNASSESSED",
+        "vineyardOnUnitConfirmed": false,
+        "evidence": "PROPUESTA"
+      },
+      "ecosystem": {
+        "regionalReference": "NORGARD_BOREAL_TRANSITION",
+        "regionalEvidence": "CANON_REPO",
+        "localMembership": "UNKNOWN",
+        "localEcosystemMapped": false,
+        "habitatPolygons": [],
+        "speciesInventory": "UNKNOWN",
+        "localFaunaInventory": "UNKNOWN",
+        "habitatOwnership": "UNKNOWN",
+        "ecosystemStudyOnly": true
+      },
+      "boundary": {
+        "unitExtent": "UNKNOWN",
+        "insideNorthernEdranorValidated": false
+      }
+    },
+    {
+      "id": "edr_e03_profile_far_north_unclosed",
+      "reliefUnitId": "edr_e01_far_north_unclosed",
+      "climate": {
+        "studyClass": "NORTHERN_EXTENT_UNRESOLVED",
+        "regionalReference": "NORGARD_FAR_NORTH_POLAR_REGION",
+        "regionalEvidence": "CANON_REPO",
+        "localClimateType": "UNKNOWN",
+        "localClimateValidated": false,
+        "monthlyTemperatures": "UNKNOWN",
+        "precipitationAmounts": "UNKNOWN",
+        "precipitationSeasonality": "UNKNOWN",
+        "snowDuration": "UNKNOWN",
+        "frostDays": "UNKNOWN",
+        "prevailingWind": "UNKNOWN",
+        "localHumidity": "UNKNOWN",
+        "weatherStation": "UNKNOWN"
+      },
+      "soil": {
+        "studyQuestion": "BOUNDARY_BEFORE_SOIL_STUDY",
+        "parentMaterial": "UNKNOWN",
+        "texture": "UNKNOWN",
+        "effectiveDepth": "UNKNOWN",
+        "drainage": "UNKNOWN",
+        "permeability": "UNKNOWN",
+        "organicMatter": "UNKNOWN",
+        "soilPh": "UNKNOWN",
+        "slopeParcel": "UNKNOWN",
+        "soilValidated": false,
+        "soilProfileLocations": [],
+        "viticultureSuitability": "UNASSESSED",
+        "vineyardOnUnitConfirmed": false,
+        "evidence": "PROPUESTA"
+      },
+      "ecosystem": {
+        "regionalReference": "NORGARD_POLAR_GENERAL",
+        "regionalEvidence": "CANON_REPO",
+        "localMembership": "UNKNOWN",
+        "localEcosystemMapped": false,
+        "habitatPolygons": [],
+        "speciesInventory": "UNKNOWN",
+        "localFaunaInventory": "UNKNOWN",
+        "habitatOwnership": "UNKNOWN",
+        "ecosystemStudyOnly": true
+      },
+      "boundary": {
+        "unitExtent": "UNKNOWN",
+        "insideNorthernEdranorValidated": false
+      }
+    }
+  ],
+  "riskScenarios": [
+    {
+      "id": "edr_e03_risk_frost_vines",
+      "trigger": "HELADA_DURANTE_PERIODO_VEGETATIVO",
+      "effect": "DANO_POTENCIAL_BROTES_CULTIVOS",
+      "state": "CONDITIONAL_ONLY",
+      "hazardLocalConfirmed": false,
+      "exposureValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN",
+      "locality": "UNKNOWN",
+      "hazardGeometry": [],
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e03_risk_cold_snow",
+      "trigger": "FRIO_NIEVE_O_HIELO_SI_PRESENTES",
+      "effect": "AFECCION_CONDICIONAL_A_ACCESOS_Y_HABITATS",
+      "state": "CONDITIONAL_ONLY",
+      "hazardLocalConfirmed": false,
+      "exposureValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN",
+      "locality": "UNKNOWN",
+      "hazardGeometry": [],
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e03_risk_saturated_soils",
+      "trigger": "LLUVIA_PERSISTENTE_Y_BAJA_PERMEABILIDAD",
+      "effect": "ENCHARCAMIENTO_Y_ESTRES_RADICULAR",
+      "state": "CONDITIONAL_ONLY",
+      "hazardLocalConfirmed": false,
+      "exposureValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN",
+      "locality": "UNKNOWN",
+      "hazardGeometry": [],
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e03_risk_slope_erosion",
+      "trigger": "PRECIPITACION_INTENSA_EN_PENDIENTE_DESPROTEGIDA",
+      "effect": "EROSION_Y_PERDIDA_DE_SUELO",
+      "state": "CONDITIONAL_ONLY",
+      "hazardLocalConfirmed": false,
+      "exposureValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN",
+      "locality": "UNKNOWN",
+      "hazardGeometry": [],
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e03_risk_thaw_runoff",
+      "trigger": "DESHIELO_O_LLUVIA_SOBRE_SUELO_HELADO",
+      "effect": "ESCORRENTIA_RAPIDA_CONDICIONAL",
+      "state": "CONDITIONAL_ONLY",
+      "hazardLocalConfirmed": false,
+      "exposureValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN",
+      "locality": "UNKNOWN",
+      "hazardGeometry": [],
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e03_risk_dry_stress",
+      "trigger": "DEFICIT_DE_AGUA_EN_ETAPA_SENSIBLE",
+      "effect": "ESTRES_HIDRICO_AGRICOLA",
+      "state": "CONDITIONAL_ONLY",
+      "hazardLocalConfirmed": false,
+      "exposureValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN",
+      "locality": "UNKNOWN",
+      "hazardGeometry": [],
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e03_risk_forest_fire",
+      "trigger": "SEQUEDAD_COMBUSTIBLE_Y_FUENTE_IGNICION",
+      "effect": "INCENDIO_POTENCIAL_CONDICIONAL",
+      "state": "CONDITIONAL_ONLY",
+      "hazardLocalConfirmed": false,
+      "exposureValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN",
+      "locality": "UNKNOWN",
+      "hazardGeometry": [],
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e03_risk_wind_damage",
+      "trigger": "VIENTO_INTENSO_Y_EXPOSICION_LOCAL",
+      "effect": "DANOS_CONDICIONALES_EN_CUBIERTA_Y_CULTIVOS",
+      "state": "CONDITIONAL_ONLY",
+      "hazardLocalConfirmed": false,
+      "exposureValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN",
+      "locality": "UNKNOWN",
+      "hazardGeometry": [],
+      "evidence": "PROPUESTA"
+    }
+  ],
+  "seasonalityStudy": [
+    {
+      "id": "edr_e03_season_primavera",
+      "season": "PRIMAVERA",
+      "calendarDuration": "UNKNOWN",
+      "localPhenology": "UNKNOWN",
+      "regionalComparisonOnly": true,
+      "forecastValidated": false
+    },
+    {
+      "id": "edr_e03_season_verano",
+      "season": "VERANO",
+      "calendarDuration": "UNKNOWN",
+      "localPhenology": "UNKNOWN",
+      "regionalComparisonOnly": true,
+      "forecastValidated": false
+    },
+    {
+      "id": "edr_e03_season_otono",
+      "season": "OTONO",
+      "calendarDuration": "UNKNOWN",
+      "localPhenology": "UNKNOWN",
+      "regionalComparisonOnly": true,
+      "forecastValidated": false
+    },
+    {
+      "id": "edr_e03_season_invierno",
+      "season": "INVIERNO",
+      "calendarDuration": "UNKNOWN",
+      "localPhenology": "UNKNOWN",
+      "regionalComparisonOnly": true,
+      "forecastValidated": false
+    }
+  ],
+  "landUseRules": {
+    "edranorMainWineRegion": true,
+    "allSevenUnitsViticultural": false,
+    "viticulturePolygonValidated": false,
+    "irrigationConfirmed": false,
+    "polarViticultureByDefault": false,
+    "localSoilSuitabilityValidated": false,
+    "luminaForestWoodSupportsBarrels": true,
+    "royalForestWholeAzuriosAssignedToEdranor": false
+  },
+  "hydrologyGuard": {
+    "lurienCourseInEdranor": "UNKNOWN",
+    "antelaInsideEdranor": "UNKNOWN",
+    "localBasinBoundariesValidated": false,
+    "localSpringsConfirmed": false,
+    "roadCrossingsConfirmed": false
+  },
+  "governance": {
+    "rodasFiscalOwner": "crown_aethros",
+    "rodasMilitaryOwner": "crown_aethros",
+    "hallheimInside": false,
+    "ecologicalZonesAreAdministrativeBorders": false,
+    "noInternalCustoms": true
+  },
+  "unknown": [
+    "EDD-01_NORTH_BOUNDARY_CLOSURE",
+    "EDD-02_GEOREFERENCING_AND_SCALE",
+    "EDD-03_LOCAL_HYDROGRAPHY_AND_GROUNDWATER",
+    "EDD-07_ACCESS_AND_PATHS",
+    "LOCAL_CLIMATE_TIME_SERIES",
+    "LOCAL_WIND_RAIN_SNOW_FROST",
+    "SOIL_MAP_AND_PROFILE_MEASUREMENTS",
+    "PARCEL_SLOPES_AND_PERMEABILITY",
+    "VINEYARD_PARCEL_ELIGIBILITY",
+    "BIOME_POLYGONS_AND_HABITAT_OWNERSHIP",
+    "LOCAL_SPECIES_AND_FAUNA",
+    "LOCAL_HAZARD_EXPOSURE_AND_FREQUENCY"
+  ],
+  "forbiddenClaims": [
+    "POLAR_WINE_BY_DEFAULT",
+    "EVERY_UNIT_VINEYARD",
+    "NUMERIC_CLIMATE_NORMALS_AS_FACT",
+    "LOCAL_CLIMATE_BORDER_AS_FACT",
+    "SOIL_PH_OR_TEXTURE_AS_FACT",
+    "LOCAL_WETLAND_OR_WATERCOURSE_AS_FACT",
+    "BOREAL_OR_TUNDRA_EDRANOR_MEMBERSHIP_AS_FACT",
+    "FOREST_OWNERSHIP_BY_BIOME",
+    "RODAS_EDRANOR_FISCAL_OR_MILITARY_CONTROL",
+    "HALLHEIM_INSIDE_EDRANOR",
+    "WINE_IRRIGATION_AS_FACT",
+    "E03_SIMULATION_READY",
+    "NEW_WILDLIFE_SPECIES_AS_CANON",
+    "LOCAL_RISK_AS_CONFIRMED",
+    "ROUTE_OR_BRIDGE_AS_FACT"
+  ]
+}
