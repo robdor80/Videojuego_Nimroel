@@ -1,6 +1,6 @@
 # E02 — Interferencia hídrica de los corredores E01: transferencia a E05
 
-Se conservan **cuatro preguntas** planteadas en \`E01_CORREDORES.md\`. No existe en E01 una carretera cartografiada, y E02 no la crea. La presencia regional del Lurien/Antela tampoco demuestra cruce de un hipotético corredor.
+Se conservan **cuatro preguntas** planteadas en `E01_CORREDORES.md`. No existe en E01 una carretera cartografiada, y E02 no la crea. La presencia regional del Lurien/Antela tampoco demuestra cruce de un hipotético corredor.
 
 | Corredor E01 | Duda hidrológica a resolver | Cruce | Puente/vado |
 |---|---|---|---|

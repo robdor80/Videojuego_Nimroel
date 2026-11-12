@@ -17,7 +17,7 @@
 3. **Deshielo o lluvia sobre suelo helado → escorrentía rápida**: no imputar heladas locales por analogía con Zanthir.
 4. **Crecida de cauce → inundación potencial**: exige cauce, cotas y llanura de inundación concretos.
 
-No se han trazado llanuras inundables ni declarado eventos recurrentes, permanentes o estacionales. Humedales, capas freáticas, aguas termales, manantiales, molinos y obras de encauzamiento son \`UNKNOWN\`.
+No se han trazado llanuras inundables ni declarado eventos recurrentes, permanentes o estacionales. Humedales, capas freáticas, aguas termales, manantiales, molinos y obras de encauzamiento son `UNKNOWN`.
 
 ## Reglas de consistencia para fases futuras
 - La hidrología causal no se sustituye por un decorado de «río azul» sin naciente/desembocadura.

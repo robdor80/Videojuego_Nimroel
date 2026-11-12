@@ -3,7 +3,7 @@
 ## 1. Elementos canónicos verificables del Reino
 | Elemento | Fuente | Hecho que sí consta | Pertenencia/ubicación Edranor |
 |---|---|---|---|
-| **Río Lurien** | \`Norgard/Geografía/rios_y_lagos.md\`, §1 | Nace en **vertiente oriental de Valkram**; cruza la región central, forma **Lago Antela**, pasa por **Hallheim** y llega al **Golfo de Norgard**. | **UNKNOWN**: no hay polilínea ni cruce acreditado con el perímetro rojo de Edranor |
+| **Río Lurien** | `Norgard/Geografía/rios_y_lagos.md`, §1 | Nace en **vertiente oriental de Valkram**; cruza la región central, forma **Lago Antela**, pasa por **Hallheim** y llega al **Golfo de Norgard**. | **UNKNOWN**: no hay polilínea ni cruce acreditado con el perímetro rojo de Edranor |
 | **Lago Antela** | misma fuente, §2 | Gran lago interior **al sur de Karsath**; Lurien entra y sale. | **UNKNOWN**: orientación relativa ≠ declaración de titularidad, orillas o extensión dentro de la Casa |
 | **Tramo navegable Lurien** | misma fuente, §1 | **Hallheim → mar**, sistema estratégico de transporte real. | No se extiende la navegabilidad **aguas arriba hasta Antela/Karsath** |
 
