@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e02_hydrology",
+  "version": "0.1",
+  "date": "2026-11-12",
+  "phase": "E02",
+  "status": "DOCUMENTARY_PLANNING_ONLY",
+  "runtimeEnabled": false,
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor",
+    "localidad",
+    "world_state"
+  ],
+  "sourceAuthorities": [
+    "CANON_REPO",
+    "AUTOR_2026_11_12",
+    "OBSERVACION_MAPA",
+    "PROPUESTA",
+    "UNKNOWN"
+  ],
+  "scope": {
+    "territory": "casa_edranor",
+    "regionalCanon": "norgard",
+    "administrativeAndHydrologicalLayersIndependent": true,
+    "northBoundaryClosed": false,
+    "georeferenced": false,
+    "metricGeometryValidated": false,
+    "localHydrographyValidated": false,
+    "coordinates": "UNKNOWN",
+    "scale": "UNKNOWN",
+    "dem": "UNKNOWN",
+    "basinPolygons": [],
+    "riverPolylines": [],
+    "floodPolygons": []
+  },
+  "anchors": [
+    {
+      "id": "dorth",
+      "jurisdictionOwner": "casa_edranor",
+      "insideTerritorialScope": true
+    },
+    {
+      "id": "lumina",
+      "jurisdictionOwner": "casa_edranor",
+      "insideTerritorialScope": true
+    },
+    {
+      "id": "karsath",
+      "jurisdictionOwner": "casa_edranor",
+      "insideTerritorialScope": true
+    },
+    {
+      "id": "rodas",
+      "jurisdictionOwner": "crown_aethros",
+      "militaryOwner": "crown_aethros",
+      "fiscalOwner": "crown_aethros",
+      "insideTerritorialScope": true,
+      "berserkersUnderCrown": true
+    },
+    {
+      "id": "hallheim",
+      "jurisdictionOwner": "crown_aethros",
+      "insideTerritorialScope": false
+    }
+  ],
+  "regionalCanonicalFeatures": [
+    {
+      "id": "norgard_rio_lurien",
+      "name": "Río Lurien",
+      "kind": "RIVER",
+      "evidence": "CANON_REPO",
+      "source": "Geografía/rios_y_lagos.md#1-río-lurien",
+      "regionalLocation": "NORGARD_CENTRAL",
+      "sourceContext": "VERTIENTE_ORIENTAL_MONTES_VALKRAM",
+      "orderedCourse": [
+        "VERTIENTE_ORIENTAL_MONTES_VALKRAM",
+        "LAGO_ANTELA",
+        "HALLHEIM",
+        "GOLFO_DE_NORGARD"
+      ],
+      "navigableFrom": "hallheim",
+      "navigableTo": "golfo_de_norgard",
+      "membershipInEdranor": "UNKNOWN",
+      "edranorLocalCourse": "UNKNOWN",
+      "confirmedCrossings": [],
+      "localFlowRates": "UNKNOWN"
+    },
+    {
+      "id": "norgard_lago_antela",
+      "name": "Lago Antela",
+      "kind": "LAKE",
+      "evidence": "CANON_REPO",
+      "source": "Geografía/rios_y_lagos.md#2-lago-antela",
+      "relativeLocation": "SUR_DE_KARSATH",
+      "inputRiver": "norgard_rio_lurien",
+      "outputRiver": "norgard_rio_lurien",
+      "membershipInEdranor": "UNKNOWN",
+      "shoreline": "UNKNOWN",
+      "area": "UNKNOWN",
+      "waterLevels": "UNKNOWN"
+    }
+  ],
+  "excludedTransplants": [
+    {
+      "system": "belara_lhera",
+      "source": "Geografía/rios_y_lagos.md",
+      "edranorAssignment": false
+    },
+    {
+      "system": "caleran",
+      "source": "Geografía/rios_y_lagos.md",
+      "edranorAssignment": false
+    },
+    {
+      "system": "vornarsk_keldarsk",
+      "source": "Geografía/rios_y_lagos.md",
+      "edranorAssignment": false
+    }
+  ],
+  "localDrainageUnits": [
+    {
+      "id": "edr_e02_drain_west_valkram_interface",
+      "reliefUnitId": "edr_e01_west_valkram_interface",
+      "watercourse": "UNKNOWN",
+      "recipientBasin": "UNKNOWN",
+      "outflowDirection": "UNKNOWN",
+      "permanentOrSeasonal": "UNKNOWN",
+      "springs": "UNKNOWN",
+      "groundwater": "UNKNOWN",
+      "subcatchmentsDelimited": false,
+      "watercourseOnTerritoryConfirmed": false,
+      "evidence": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_drain_karsath_central_west",
+      "reliefUnitId": "edr_e01_karsath_central_west",
+      "watercourse": "UNKNOWN",
+      "recipientBasin": "UNKNOWN",
+      "outflowDirection": "UNKNOWN",
+      "permanentOrSeasonal": "UNKNOWN",
+      "springs": "UNKNOWN",
+      "groundwater": "UNKNOWN",
+      "subcatchmentsDelimited": false,
+      "watercourseOnTerritoryConfirmed": false,
+      "evidence": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_drain_lumina_bosque_alto",
+      "reliefUnitId": "edr_e01_lumina_bosque_alto",
+      "watercourse": "UNKNOWN",
+      "recipientBasin": "UNKNOWN",
+      "outflowDirection": "UNKNOWN",
+      "permanentOrSeasonal": "UNKNOWN",
+      "springs": "UNKNOWN",
+      "groundwater": "UNKNOWN",
+      "subcatchmentsDelimited": false,
+      "watercourseOnTerritoryConfirmed": false,
+      "evidence": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_drain_central_wine_context",
+      "reliefUnitId": "edr_e01_central_wine_context",
+      "watercourse": "UNKNOWN",
+      "recipientBasin": "UNKNOWN",
+      "outflowDirection": "UNKNOWN",
+      "permanentOrSeasonal": "UNKNOWN",
+      "springs": "UNKNOWN",
+      "groundwater": "UNKNOWN",
+      "subcatchmentsDelimited": false,
+      "watercourseOnTerritoryConfirmed": false,
+      "evidence": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_drain_dorth_azurios_west",
+      "reliefUnitId": "edr_e01_dorth_azurios_west",
+      "watercourse": "UNKNOWN",
+      "recipientBasin": "UNKNOWN",
+      "outflowDirection": "UNKNOWN",
+      "permanentOrSeasonal": "UNKNOWN",
+      "springs": "UNKNOWN",
+      "groundwater": "UNKNOWN",
+      "subcatchmentsDelimited": false,
+      "watercourseOnTerritoryConfirmed": false,
+      "evidence": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_drain_north_cold_transition",
+      "reliefUnitId": "edr_e01_north_cold_transition",
+      "watercourse": "UNKNOWN",
+      "recipientBasin": "UNKNOWN",
+      "outflowDirection": "UNKNOWN",
+      "permanentOrSeasonal": "UNKNOWN",
+      "springs": "UNKNOWN",
+      "groundwater": "UNKNOWN",
+      "subcatchmentsDelimited": false,
+      "watercourseOnTerritoryConfirmed": false,
+      "evidence": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_drain_far_north_unclosed",
+      "reliefUnitId": "edr_e01_far_north_unclosed",
+      "watercourse": "UNKNOWN",
+      "recipientBasin": "UNKNOWN",
+      "outflowDirection": "UNKNOWN",
+      "permanentOrSeasonal": "UNKNOWN",
+      "springs": "UNKNOWN",
+      "groundwater": "UNKNOWN",
+      "subcatchmentsDelimited": false,
+      "watercourseOnTerritoryConfirmed": false,
+      "evidence": "UNKNOWN"
+    }
+  ],
+  "basinStudyQuestions": [
+    {
+      "id": "edr_e02_basin_lurien_membership",
+      "region": "VALKRAM_EAST_KARSATH_SOUTH",
+      "kind": "RIVER_BASIN_INTERSECTION_STUDY",
+      "relatedFeature": "norgard_rio_lurien",
+      "state": "UNDELIMITED_HYPOTHESIS",
+      "physicalExtent": "UNKNOWN",
+      "edranorOverlap": "UNKNOWN",
+      "outlet": "UNKNOWN",
+      "watershedGeometry": [],
+      "validated": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e02_divide_lumina_highland",
+      "region": "BOSQUE_ALTO_LUMINA",
+      "kind": "POTENTIAL_LOCAL_DRAINAGE_DIVIDE_STUDY",
+      "relatedFeature": "UNKNOWN",
+      "state": "UNDELIMITED_HYPOTHESIS",
+      "physicalExtent": "UNKNOWN",
+      "edranorOverlap": "UNKNOWN",
+      "outlet": "UNKNOWN",
+      "watershedGeometry": [],
+      "validated": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e02_divide_azurios_west",
+      "region": "AZURIOS_DORTH",
+      "kind": "CROSS_SLOPE_OUTFLOW_STUDY",
+      "relatedFeature": "UNKNOWN",
+      "state": "UNDELIMITED_HYPOTHESIS",
+      "physicalExtent": "UNKNOWN",
+      "edranorOverlap": "UNKNOWN",
+      "outlet": "UNKNOWN",
+      "watershedGeometry": [],
+      "validated": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e02_northern_discharge_question",
+      "region": "NORTE_SIN_CIERRE",
+      "kind": "NORTHERN_OUTFLOW_UNCERTAINTY",
+      "relatedFeature": "UNKNOWN",
+      "state": "UNDELIMITED_HYPOTHESIS",
+      "physicalExtent": "UNKNOWN",
+      "edranorOverlap": "UNKNOWN",
+      "outlet": "UNKNOWN",
+      "watershedGeometry": [],
+      "validated": false,
+      "evidence": "UNKNOWN"
+    }
+  ],
+  "useQuestions": [
+    {
+      "id": "edr_e02_water_dorth",
+      "locationId": "dorth",
+      "purpose": "ABASTECIMIENTO_LOCAL",
+      "sourceWaterbody": "UNKNOWN",
+      "withdrawalRights": "UNKNOWN",
+      "infrastructure": "UNKNOWN",
+      "capacity": "UNKNOWN",
+      "confirmed": false,
+      "evidence": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_water_lumina",
+      "locationId": "lumina",
+      "purpose": "BODEGAS_Y_TONELERIA",
+      "sourceWaterbody": "UNKNOWN",
+      "withdrawalRights": "UNKNOWN",
+      "infrastructure": "UNKNOWN",
+      "capacity": "UNKNOWN",
+      "confirmed": false,
+      "evidence": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_water_karsath",
+      "locationId": "karsath",
+      "purpose": "VITICULTURA",
+      "sourceWaterbody": "UNKNOWN",
+      "withdrawalRights": "UNKNOWN",
+      "infrastructure": "UNKNOWN",
+      "capacity": "UNKNOWN",
+      "confirmed": false,
+      "evidence": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_water_rodas",
+      "locationId": "rodas",
+      "purpose": "SUMINISTRO_ENCLAVE_REAL",
+      "sourceWaterbody": "UNKNOWN",
+      "withdrawalRights": "UNKNOWN",
+      "infrastructure": "UNKNOWN",
+      "capacity": "UNKNOWN",
+      "confirmed": false,
+      "evidence": "UNKNOWN"
+    }
+  ],
+  "riskScenarios": [
+    {
+      "id": "edr_e02_risk_slopes",
+      "trigger": "PRECIPITACION_INTENSA_EN_LADERA",
+      "responseToStudy": "ESCORRENTIA_Y_EROSION",
+      "state": "CONDITIONAL_ONLY",
+      "localHazardConfirmed": false,
+      "mapValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_risk_plateau",
+      "trigger": "SUELO_SATURADO_O_BAJA_PERMEABILIDAD",
+      "responseToStudy": "ENCHARCAMIENTO_Y_DRENAJE_AGRARIO",
+      "state": "CONDITIONAL_ONLY",
+      "localHazardConfirmed": false,
+      "mapValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_risk_frost",
+      "trigger": "DESHIELO_O_PRECIPITACION_SOBRE_SUELO_HELADO",
+      "responseToStudy": "PICOS_DE_ESCORRENTIA_SI_OCURREN",
+      "state": "CONDITIONAL_ONLY",
+      "localHazardConfirmed": false,
+      "mapValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN"
+    },
+    {
+      "id": "edr_e02_risk_channel",
+      "trigger": "CRECIDA_EN_CAUCE_EVENTUAL",
+      "responseToStudy": "LLANURA_INUNDABLE_A_COMPROBAR",
+      "state": "CONDITIONAL_ONLY",
+      "localHazardConfirmed": false,
+      "mapValidated": false,
+      "frequency": "UNKNOWN",
+      "intensity": "UNKNOWN"
+    }
+  ],
+  "corridorWaterChecks": [
+    {
+      "corridorId": "edr_e01_corridor_karsath_lumina",
+      "waterCrossing": "UNKNOWN",
+      "bridgeConfirmed": false,
+      "fordConfirmed": false,
+      "routeConfirmed": false
+    },
+    {
+      "corridorId": "edr_e01_corridor_lumina_dorth",
+      "waterCrossing": "UNKNOWN",
+      "bridgeConfirmed": false,
+      "fordConfirmed": false,
+      "routeConfirmed": false
+    },
+    {
+      "corridorId": "edr_e01_corridor_rodas",
+      "waterCrossing": "UNKNOWN",
+      "bridgeConfirmed": false,
+      "fordConfirmed": false,
+      "routeConfirmed": false
+    },
+    {
+      "corridorId": "edr_e01_corridor_valkram",
+      "waterCrossing": "UNKNOWN",
+      "bridgeConfirmed": false,
+      "fordConfirmed": false,
+      "routeConfirmed": false
+    }
+  ],
+  "governance": {
+    "rodasFiscalOwner": "crown_aethros",
+    "rodasMilitaryOwner": "crown_aethros",
+    "rodasWaterRights": "UNKNOWN",
+    "edranorWaterRights": "UNKNOWN",
+    "hallheimInEdranor": false,
+    "waterBasinIsAdministrativeBorder": false,
+    "noInternalCustoms": true
+  },
+  "unknown": [
+    "EDD-01_NORTH_BOUNDARY_CLOSURE",
+    "EDD-02_GEOREFERENCING_AND_SCALE",
+    "EDD-03_LOCAL_RIVERS_AFFLUENTS_AND_CATCHMENTS",
+    "EDD-03_LURIEN_ANTELA_EDRANOR_OVERLAP",
+    "EDD-03_LOCAL_FLOW_DIRECTIONS",
+    "EDD-03_SPRINGS_GROUNDWATER_WETLANDS",
+    "EDD-03_FLOODPLAINS_AND_SEASONALITY",
+    "EDD-07_BRIDGES_FORDS_AND_PATHS",
+    "LOCAL_WATER_RIGHTS_AND_WITHDRAWALS",
+    "LOCAL_FLOW_RATES_AND_DEPTHS"
+  ],
+  "forbiddenClaims": [
+    "UNMAPPED_LOCAL_RIVER_AS_CANON",
+    "ANTELA_INSIDE_EDRANOR_AS_FACT",
+    "LURIEN_FULLY_WITHIN_EDRANOR",
+    "UPSTREAM_LURIEN_NAVIGABILITY",
+    "METRIC_BASIN_OR_RIVER_GEOMETRY",
+    "DRAINAGE_DIVIDE_AS_ADMIN_BORDER",
+    "RODAS_EDRANOR_FISCAL_OR_MILITARY_CONTROL",
+    "HALLHEIM_INSIDE_EDRANOR",
+    "BRIDGE_OR_FORD_AS_FACT",
+    "FLOODPLAIN_OR_FROST_ON_SITE_AS_FACT",
+    "CALERAN_OR_BELARA_IMPORTED",
+    "WINERY_WATER_INFRASTRUCTURE_AS_FACT"
+  ]
+}
