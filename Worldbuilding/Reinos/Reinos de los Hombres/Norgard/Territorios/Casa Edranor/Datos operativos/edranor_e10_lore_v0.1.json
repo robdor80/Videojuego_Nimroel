@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e10_lore",
+  "date": "2026-11-13",
+  "version": "0.1",
+  "phase": "E10",
+  "status": "DOCUMENTAL_DESIGN_ONLY",
+  "runtimeEnabled": false,
+  "sourceAuthorities": [
+    "CANON_REPO",
+    "VISUAL_APROBADO",
+    "AUTOR_2026_11_12",
+    "OBSERVACION_MAPA",
+    "PROPUESTA_E10",
+    "UNKNOWN"
+  ],
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor_or_crown_aethros",
+    "localidad",
+    "world_state"
+  ],
+  "protectedIds": [
+    "dorth",
+    "lumina",
+    "karsath",
+    "rodas",
+    "hallheim"
+  ],
+  "norgardCalendar": {
+    "referenceYear": 15375,
+    "months": 12,
+    "daysPerYear": 365
+  },
+  "governance": {
+    "singleCrown": "crown_aethros",
+    "singleLaw": true,
+    "internalCustoms": false,
+    "houseHasIndependentArmy": false,
+    "houseHasMint": false,
+    "druidicHouseIsTemple": false,
+    "rodasBerserkerCommander": "crown_aethros",
+    "hallheimWithinEdranor": false
+  },
+  "territorialPlaces": [
+    {
+      "id": "dorth",
+      "authorityOwner": "casa_edranor",
+      "justiceOwner": "casa_edranor",
+      "taxOwner": "casa_edranor",
+      "securityOwner": "casa_edranor",
+      "legalCategory": "city",
+      "physicalRouteConfirmed": false,
+      "protectedAnchor": true,
+      "instantiatedNpcIds": []
+    },
+    {
+      "id": "lumina",
+      "authorityOwner": "casa_edranor",
+      "justiceOwner": "casa_edranor",
+      "taxOwner": "casa_edranor",
+      "securityOwner": "casa_edranor",
+      "legalCategory": "small_compact_settlement",
+      "physicalRouteConfirmed": false,
+      "protectedAnchor": true,
+      "instantiatedNpcIds": []
+    },
+    {
+      "id": "karsath",
+      "authorityOwner": "casa_edranor",
+      "justiceOwner": "casa_edranor",
+      "taxOwner": "casa_edranor",
+      "securityOwner": "casa_edranor",
+      "legalCategory": "small_lakeside_visual_settlement",
+      "physicalRouteConfirmed": false,
+      "protectedAnchor": true,
+      "instantiatedNpcIds": []
+    },
+    {
+      "id": "rodas",
+      "authorityOwner": "crown_aethros",
+      "justiceOwner": "crown_aethros",
+      "taxOwner": "crown_aethros",
+      "securityOwner": "crown_aethros",
+      "legalCategory": "village",
+      "physicalRouteConfirmed": false,
+      "protectedAnchor": true,
+      "instantiatedNpcIds": []
+    }
+  ],
+  "dynasty": {
+    "status": "PROPUESTA_E10_NOT_LEGAL_KIN",
+    "headDesignId": "edr_e10_char_elira",
+    "presumptiveHeirDesignId": "edr_e10_char_maelis",
+    "siblingsOrChildren": [
+      "edr_e10_char_maelis",
+      "edr_e10_char_caelen",
+      "edr_e10_char_vesra"
+    ],
+    "legalSuccessionEstablished": false,
+    "houseInheritancePrinciple": "hereditary_with_crown_confirmation",
+    "coronationOrElectionRequired": false
+  },
+  "characters": [
+    {
+      "designId": "edr_e10_char_elira",
+      "name": "Lady Elira Edranor",
+      "placeId": "dorth",
+      "authorityOwner": "casa_edranor",
+      "type": "dynasty",
+      "role": "current_house_head_proposal",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    },
+    {
+      "designId": "edr_e10_char_maelis",
+      "name": "Maelis Edranor",
+      "placeId": "dorth",
+      "authorityOwner": "casa_edranor",
+      "type": "dynasty",
+      "role": "presumptive_heir_proposal",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    },
+    {
+      "designId": "edr_e10_char_caelen",
+      "name": "Caelen Edranor",
+      "placeId": "dorth",
+      "authorityOwner": "casa_edranor",
+      "type": "dynasty",
+      "role": "adult_child_proposal",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    },
+    {
+      "designId": "edr_e10_char_vesra",
+      "name": "Vesra Edranor",
+      "placeId": "dorth",
+      "authorityOwner": "casa_edranor",
+      "type": "dynasty",
+      "role": "sibling_of_head_proposal",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    },
+    {
+      "designId": "edr_e10_char_orlan",
+      "name": "Orlan Vereth",
+      "placeId": "dorth",
+      "authorityOwner": "casa_edranor",
+      "type": "civilian",
+      "role": "merchant_proposal",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    },
+    {
+      "designId": "edr_e10_char_ysna",
+      "name": "Ysna Calven",
+      "placeId": "lumina",
+      "authorityOwner": "casa_edranor",
+      "type": "civilian",
+      "role": "cellar_craft_proposal",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    },
+    {
+      "designId": "edr_e10_char_tovan",
+      "name": "Tovan Brask",
+      "placeId": "lumina",
+      "authorityOwner": "casa_edranor",
+      "type": "civilian",
+      "role": "cooper_proposal",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    },
+    {
+      "designId": "edr_e10_char_lira",
+      "name": "Lira Venn",
+      "placeId": "karsath",
+      "authorityOwner": "casa_edranor",
+      "type": "civilian",
+      "role": "small_wine_producer_proposal",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    },
+    {
+      "designId": "edr_e10_char_heran",
+      "name": "Heran Malk",
+      "placeId": "rodas",
+      "authorityOwner": "crown_aethros",
+      "type": "civilian",
+      "role": "royal_civil_liaison_candidate_not_appointed",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    },
+    {
+      "designId": "edr_e10_char_saer",
+      "name": "Saer Celdan",
+      "placeId": "rodas",
+      "authorityOwner": "crown_aethros",
+      "type": "civilian",
+      "role": "druidic_custodian_candidate_not_appointed",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    },
+    {
+      "designId": "edr_e10_char_bren",
+      "name": "Bren Tovar",
+      "placeId": "rodas",
+      "authorityOwner": "crown_aethros",
+      "type": "civilian",
+      "role": "smith_proposal",
+      "provenance": "PROPUESTA_E10",
+      "npcId": null,
+      "appointedOfficeId": null,
+      "birthDate": null,
+      "legalKinRecordId": null
+    }
+  ],
+  "relativeHistory": [
+    {
+      "id": "edr_e10_hist_h01",
+      "relativeOnly": true,
+      "absoluteYear": null,
+      "evidence": "PROPUESTA_E10"
+    },
+    {
+      "id": "edr_e10_hist_h02",
+      "relativeOnly": true,
+      "absoluteYear": null,
+      "evidence": "PROPUESTA_E10"
+    },
+    {
+      "id": "edr_e10_hist_h03",
+      "relativeOnly": true,
+      "absoluteYear": null,
+      "evidence": "PROPUESTA_E10"
+    },
+    {
+      "id": "edr_e10_hist_h04",
+      "relativeOnly": true,
+      "absoluteYear": null,
+      "evidence": "PROPUESTA_E10"
+    },
+    {
+      "id": "edr_e10_hist_h05",
+      "relativeOnly": true,
+      "absoluteYear": null,
+      "evidence": "PROPUESTA_E10"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "edr_e10_conflict_c01",
+      "status": "SEED_NOT_TRIGGERED",
+      "outcome": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "edr_e10_conflict_c02",
+      "status": "SEED_NOT_TRIGGERED",
+      "outcome": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "edr_e10_conflict_c03",
+      "status": "SEED_NOT_TRIGGERED",
+      "outcome": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "edr_e10_conflict_c04",
+      "status": "SEED_NOT_TRIGGERED",
+      "outcome": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "edr_e10_conflict_c05",
+      "status": "SEED_NOT_TRIGGERED",
+      "outcome": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "edr_e10_conflict_c06",
+      "status": "SEED_NOT_TRIGGERED",
+      "outcome": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "edr_e10_conflict_c07",
+      "status": "SEED_NOT_TRIGGERED",
+      "outcome": null,
+      "runtimeEnabled": false
+    },
+    {
+      "id": "edr_e10_conflict_c08",
+      "status": "SEED_NOT_TRIGGERED",
+      "outcome": null,
+      "runtimeEnabled": false
+    }
+  ],
+  "scenes": [
+    {
+      "id": "edr_e10_scene_s01",
+      "conflictId": "edr_e10_conflict_c01",
+      "status": "DESIGN_ONLY",
+      "runtimeEnabled": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "edr_e10_scene_s02",
+      "conflictId": "edr_e10_conflict_c02",
+      "status": "DESIGN_ONLY",
+      "runtimeEnabled": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "edr_e10_scene_s03",
+      "conflictId": "edr_e10_conflict_c03",
+      "status": "DESIGN_ONLY",
+      "runtimeEnabled": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "edr_e10_scene_s04",
+      "conflictId": "edr_e10_conflict_c04",
+      "status": "DESIGN_ONLY",
+      "runtimeEnabled": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "edr_e10_scene_s05",
+      "conflictId": "edr_e10_conflict_c05",
+      "status": "DESIGN_ONLY",
+      "runtimeEnabled": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "edr_e10_scene_s06",
+      "conflictId": "edr_e10_conflict_c06",
+      "status": "DESIGN_ONLY",
+      "runtimeEnabled": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "edr_e10_scene_s07",
+      "conflictId": "edr_e10_conflict_c07",
+      "status": "DESIGN_ONLY",
+      "runtimeEnabled": false,
+      "worldStateEventId": null
+    },
+    {
+      "id": "edr_e10_scene_s08",
+      "conflictId": "edr_e10_conflict_c08",
+      "status": "DESIGN_ONLY",
+      "runtimeEnabled": false,
+      "worldStateEventId": null
+    }
+  ],
+  "culturalPractices": [
+    {
+      "id": "edr_e10_culture_lot_provenance",
+      "provenance": "PROPUESTA_E10",
+      "mandatoryLaw": false,
+      "publicHolidayDate": null
+    },
+    {
+      "id": "edr_e10_culture_shared_craft_meal",
+      "provenance": "PROPUESTA_E10",
+      "mandatoryLaw": false,
+      "publicHolidayDate": null
+    },
+    {
+      "id": "edr_e10_culture_sealed_letter_caution",
+      "provenance": "PROPUESTA_E10",
+      "mandatoryLaw": false,
+      "publicHolidayDate": null
+    },
+    {
+      "id": "edr_e10_culture_karsath_small_batch_honesty",
+      "provenance": "PROPUESTA_E10",
+      "mandatoryLaw": false,
+      "publicHolidayDate": null
+    },
+    {
+      "id": "edr_e10_culture_barrel_care",
+      "provenance": "PROPUESTA_E10",
+      "mandatoryLaw": false,
+      "publicHolidayDate": null
+    },
+    {
+      "id": "edr_e10_culture_royal_hospitality",
+      "provenance": "PROPUESTA_E10",
+      "mandatoryLaw": false,
+      "publicHolidayDate": null
+    }
+  ],
+  "unknowns": [
+    "EDD-01",
+    "EDD-02",
+    "EDD-03",
+    "EDD-04",
+    "EDD-05_LEGAL_RECORDS",
+    "EDD-07",
+    "EDD-08_DATED_ACTS"
+  ],
+  "instantiatedNpcIds": [],
+  "instantiatedQuestIds": [],
+  "issuedOrders": [],
+  "resolvedWars": [],
+  "historicalTreatyIds": [],
+  "physicalRoadIds": [],
+  "newTaxIds": [],
+  "newCourtIds": []
+}

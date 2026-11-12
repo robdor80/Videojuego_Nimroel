@@ -1,0 +1,30 @@
+name: Edranor E10 static regression
+on:
+  push:
+    branches:
+      - 'feat/edranor-e10-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/**'
+      - 'Tools/EdranorE10/**'
+      - '.github/workflows/edranor-e10.yml'
+jobs:
+  e10-static:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regression E00-E09
+        shell: bash
+        run: |
+          for n in 00 01 02 03 04 05 06 07 08 09; do
+            python "Tools/EdranorE${n}/validate.py"
+          done
+      - name: E10 canonical and adversarial validation
+        run: python Tools/EdranorE10/validate.py
