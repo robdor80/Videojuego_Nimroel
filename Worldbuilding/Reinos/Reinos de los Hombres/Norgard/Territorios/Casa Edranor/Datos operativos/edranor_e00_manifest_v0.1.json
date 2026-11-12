@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e00",
+  "version": "0.1",
+  "date": "2026-11-12",
+  "phase": "E00",
+  "runtimeEnabled": false,
+  "status": "DOCUMENTARY_PLANNING_ONLY",
+  "provenance": {
+    "authorMap": "1000024893.jpg",
+    "mapFeatures": [
+      "red_territorial_perimeter",
+      "blue_x_rodas"
+    ],
+    "metricGeometryValidated": false,
+    "northernLimitClosedInCrop": false
+  },
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor",
+    "localidad",
+    "world_state"
+  ],
+  "house": {
+    "id": "casa_edranor",
+    "seatId": "dorth",
+    "polityId": "norgard",
+    "emblem": {
+      "figure": "ciervo_gran_cornamenta",
+      "metal": "plata_envejecida",
+      "field": "purpura_vino_oscuro"
+    },
+    "economy": [
+      "vino",
+      "comercio_vinicola"
+    ]
+  },
+  "locations": [
+    {
+      "id": "dorth",
+      "jurisdictionOwner": "casa_edranor",
+      "geographicContextHouse": "casa_edranor",
+      "procedural": false,
+      "role": "SEDE"
+    },
+    {
+      "id": "lumina",
+      "jurisdictionOwner": "casa_edranor",
+      "geographicContextHouse": "casa_edranor",
+      "procedural": false,
+      "role": "VINO"
+    },
+    {
+      "id": "karsath",
+      "jurisdictionOwner": "casa_edranor",
+      "geographicContextHouse": "casa_edranor",
+      "procedural": false,
+      "role": "VINO"
+    },
+    {
+      "id": "rodas",
+      "jurisdictionOwner": "crown_aethros",
+      "militaryOwner": "crown_aethros",
+      "fiscalOwner": "crown_aethros",
+      "geographicContextHouse": "casa_edranor",
+      "procedural": false,
+      "role": "ROYAL_BERSERKER_ENCLAVE",
+      "settlementClassification": "ALDEA_AUTHOR_2026_11_12_FINAL_SCALE_PENDING"
+    },
+    {
+      "id": "hallheim",
+      "jurisdictionOwner": "crown_aethros",
+      "geographicContextHouse": "casa_aethros",
+      "procedural": false,
+      "role": "ROYAL_CAPITAL",
+      "insideEdranorPerimeter": false
+    }
+  ],
+  "protectedIds": [
+    "dorth",
+    "lumina",
+    "karsath",
+    "rodas",
+    "hallheim"
+  ],
+  "ecosystems": [
+    {
+      "id": "bosque_alto",
+      "near": "lumina",
+      "ownership": "UNKNOWN",
+      "product": "madera_para_barricas"
+    },
+    {
+      "id": "bosque_azurios",
+      "near": "dorth",
+      "ownership": "UNKNOWN"
+    },
+    {
+      "id": "far_north",
+      "climateGradient": [
+        "frio",
+        "boreal",
+        "subpolar",
+        "polar"
+      ],
+      "viticultureByDefault": false
+    }
+  ],
+  "government": {
+    "singleCrown": true,
+    "singleLaw": true,
+    "houseSovereign": false,
+    "houseControlsRodas": false,
+    "houseCommandsBerserkers": false,
+    "internalCustoms": false
+  },
+  "unknown": [
+    "NORTH_BOUNDARY",
+    "MAP_SCALE",
+    "POPULATION",
+    "LOCAL_RIVERS",
+    "LORD_HEIRS",
+    "RODAS_URBAN_CLASS_FINAL",
+    "RODAS_HISTORY",
+    "LOCAL_ROUTES"
+  ]
+}

@@ -1,0 +1,23 @@
+name: Edranor E00 static
+on:
+  push:
+    branches:
+      - 'feat/edranor-e00-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/**'
+      - 'Tools/EdranorE00/**'
+      - '.github/workflows/edranor-e00.yml'
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/EdranorE00/validate.py
