@@ -32,3 +32,9 @@
 Aportar links de CI verde en Ubuntu y Windows del HEAD definitivo de D.P26; revisar diferencias entre referencias de cada fase y versiones finalmente fusionadas. Una PR abierta de D.P26, incluso con test verde, acredita **entrega para revisión** y no certifica su integración. Esta distinción no puede ser eliminada por una frase de cierre.
 
 **Acta emitida con reservas explícitas y sin promulgar canon nuevo.**
+
+## Adenda autoral — autorización y cierre de las dependencias
+
+Tras la emisión del acta inicial, el autor **autorizó expresamente** la fusión de #46, #47, #48 y #49, con sus verificaciones. Las PR **#46, #47 y #48 se han fusionado**: commits `dcb2bb8939ee6f62ca89ca926ea1f4afbf75dab0`, `21712c17d1369f4979a518247ec040f44c529ab9` y `50e2412dc2160b3bb5bf5abef0d04382160807d2`. Sus JSON fueron cotejados con los blobs de las fuentes originales: **idénticos**. Véase [reconciliación D.P26/05](05_reconciliacion_de_fusiones.md).
+
+**A-01: dependencias #46–#48 resueltas**, pendiente solamente de fusionar la PR #49 y verificar CI postmerge. La prohibición de merge del acta inicial era aplicable **antes de esta autorización**, no queda borrada ni se reescribe su cronología. La aprobación narrativa no genera automáticamente ninguna entidad en CoreRPG o Godot.
