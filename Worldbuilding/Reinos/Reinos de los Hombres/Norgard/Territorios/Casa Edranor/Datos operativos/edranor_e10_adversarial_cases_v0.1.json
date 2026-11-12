@@ -6,25 +6,25 @@
   "cases": [
     {
       "id": "rodas_tax_grab",
-      "mutationPath": "rodas.taxOwner",
+      "mutationPath": "territorialPlaces[3].taxOwner",
       "mutationValue": "casa_edranor",
       "expected": "REJECT"
     },
     {
       "id": "rodas_guard_grab",
-      "mutationPath": "rodas.securityOwner",
+      "mutationPath": "territorialPlaces[3].securityOwner",
       "mutationValue": "casa_edranor",
       "expected": "REJECT"
     },
     {
       "id": "rodas_justice_grab",
-      "mutationPath": "rodas.justiceOwner",
+      "mutationPath": "territorialPlaces[3].justiceOwner",
       "mutationValue": "casa_edranor",
       "expected": "REJECT"
     },
     {
       "id": "rodas_jurisdiction",
-      "mutationPath": "rodas.authorityOwner",
+      "mutationPath": "territorialPlaces[3].authorityOwner",
       "mutationValue": "casa_edranor",
       "expected": "REJECT"
     },

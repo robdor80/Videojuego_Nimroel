@@ -98,8 +98,10 @@ def set_mutation(d,path,value):
     for key in bits[:-1]:
         ref=ref[int(key[1:-1])] if key.startswith("[") else ref[key]
     k=bits[-1]
-    ref[int(k[1:-1])] = value if k.startswith("[") else ref.setdefault(k,value) # replaced below
-    if not k.startswith("["): ref[k]=value
+    if k.startswith("["):
+        ref[int(k[1:-1])]=value
+    else:
+        ref[k]=value
 
 validate(doc)
 assert lab["schemaVersion"]==1 and lab["phase"]=="E10"
@@ -126,5 +128,5 @@ for must in ["Rodas","Corona","EDD-08"]:
 assert [x["id"] for x in e09["localityModels"]]==list(OWNERS)
 for x in e09["localityModels"]:
     assert x["jurisdictionOwner"]==OWNERS[x["id"]]
-assert len(e07["nuclei"])==4 if "nuclei" in e07 else len(e07.get("canonicalNuclei",[]))==4
+assert len(e07["settlements"])==4
 print("EDRANOR E10 PASS: 11 proposed characters; 8 conflicts/scenes; 24 negative mutations; E07/E09 compatibility; docs and canon guards. NO RUNTIME.")
