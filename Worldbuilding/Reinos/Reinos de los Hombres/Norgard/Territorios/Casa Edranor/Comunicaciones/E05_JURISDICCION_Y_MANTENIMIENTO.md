@@ -1,0 +1,6 @@
+# E05 — Derecho de paso, gobierno y conservación
+La Corona es autoridad superior de Norgard. Edranor administra por delegación: estar dentro del ámbito geográfico no transmite automáticamente propiedad de caminos, bosques, cauces, puentes ni fincas.
+**Rodas es un enclave real dentro del contexto geográfico Edranor**. Su fiscalidad, mando militar y berserkers siguen bajo la Corona Aethros. Una vía hipotética desde Dorth NO crea recaudación, guarnición ni peaje de Casa en Rodas. Hallheim es capital real fuera de Edranor.
+En Norgard **no existen aduanas interiores entre Grandes Casas**. Las tasas de mercado/pesaje/almacén u otros servicios requieren servicio efectivamente prestado y autorización; jamás cobrar por el mero cruce administrativo. No se fija ninguna tarifa E05.
+Pendiente para cada futuro tramo: dueño, dominio, servidumbre, autorización forestal, permisos hídricos, gestor, responsabilidad de mantenimiento, seguridad, coste y derechos del viajero. El Bosque Alto abastece madera bajo explotación controlada; no es derecho de paso ni tala libre. El Bosque Real meridional de Azurios no pasa a la Casa por cercanía.
+La ficha futura de infraestructura tendrá ID, geometría/versionado, título, clase, trazabilidad E01–E03, tramos jurisdiccionales y estado operativo World State. En E05 todos esos datos siguen UNKNOWN.

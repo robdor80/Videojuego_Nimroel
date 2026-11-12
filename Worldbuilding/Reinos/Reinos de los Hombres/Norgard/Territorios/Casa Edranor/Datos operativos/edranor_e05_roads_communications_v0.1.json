@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e05_roads_communications",
+  "version": "0.1",
+  "date": "2026-11-12",
+  "phase": "E05",
+  "status": "DOCUMENTARY_PLANNING_ONLY",
+  "runtimeEnabled": false,
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor",
+    "localidad",
+    "world_state"
+  ],
+  "sourceAuthorities": [
+    "CANON_REPO",
+    "AUTOR_2026_11_12",
+    "OBSERVACION_MAPA",
+    "PROPUESTA",
+    "UNKNOWN"
+  ],
+  "scope": {
+    "territory": "casa_edranor",
+    "northBoundaryClosed": false,
+    "georeferenced": false,
+    "metricGeometryValidated": false,
+    "physicalGraphValidated": false,
+    "hydrologicalCrossingsValidated": false,
+    "pathfindingEnabled": false,
+    "communicationsEnabled": false,
+    "roadPolylines": [],
+    "physicalEdges": [],
+    "bridges": [],
+    "fords": [],
+    "courierStations": [],
+    "signalTowers": [],
+    "coordinates": "UNKNOWN",
+    "scale": "UNKNOWN"
+  },
+  "canonicalBasis": {
+    "dorthSeat": true,
+    "luminaKarsathEdranor": true,
+    "rodasRoyal": true,
+    "hallheimOutside": true,
+    "realmWineTrade": true,
+    "antelaSouthOfKarsath": true,
+    "lurienNavigableHallheimToSea": true,
+    "localLurienTransportConfirmed": false,
+    "localRoadsConfirmed": false
+  },
+  "anchors": [
+    {
+      "id": "dorth",
+      "owner": "casa_edranor",
+      "inside": true,
+      "roadAccess": "UNKNOWN",
+      "evidence": "CANON_REPO"
+    },
+    {
+      "id": "lumina",
+      "owner": "casa_edranor",
+      "inside": true,
+      "roadAccess": "UNKNOWN",
+      "evidence": "CANON_REPO"
+    },
+    {
+      "id": "karsath",
+      "owner": "casa_edranor",
+      "inside": true,
+      "roadAccess": "UNKNOWN",
+      "evidence": "CANON_REPO"
+    },
+    {
+      "id": "rodas",
+      "owner": "crown_aethros",
+      "inside": true,
+      "roadAccess": "UNKNOWN",
+      "evidence": "AUTOR_2026_11_12"
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros",
+      "inside": false,
+      "roadAccess": "UNKNOWN",
+      "evidence": "CANON_REPO"
+    }
+  ],
+  "candidateRoadQuestions": [
+    {
+      "id": "edr_e05_question_dorth_lumina",
+      "from": "dorth",
+      "to": "lumina",
+      "sourceE01": "edr_e01_corridor_lumina_dorth",
+      "sourceE04": "edr_e04_trade_question_dorth_lumina",
+      "status": "QUESTION_ONLY",
+      "roadConfirmed": false,
+      "traversable": false,
+      "geometry": "UNKNOWN",
+      "length": "UNKNOWN",
+      "travelTime": "UNKNOWN",
+      "roadClass": "UNKNOWN",
+      "waterCrossings": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "maintenance": "UNKNOWN",
+      "seasonality": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e05_question_lumina_karsath",
+      "from": "lumina",
+      "to": "karsath",
+      "sourceE01": "edr_e01_corridor_karsath_lumina",
+      "sourceE04": "edr_e04_trade_question_lumina_karsath",
+      "status": "QUESTION_ONLY",
+      "roadConfirmed": false,
+      "traversable": false,
+      "geometry": "UNKNOWN",
+      "length": "UNKNOWN",
+      "travelTime": "UNKNOWN",
+      "roadClass": "UNKNOWN",
+      "waterCrossings": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "maintenance": "UNKNOWN",
+      "seasonality": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e05_question_dorth_karsath",
+      "from": "dorth",
+      "to": "karsath",
+      "sourceE01": "NONE",
+      "sourceE04": "edr_e04_trade_question_dorth_karsath",
+      "status": "QUESTION_ONLY",
+      "roadConfirmed": false,
+      "traversable": false,
+      "geometry": "UNKNOWN",
+      "length": "UNKNOWN",
+      "travelTime": "UNKNOWN",
+      "roadClass": "UNKNOWN",
+      "waterCrossings": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "maintenance": "UNKNOWN",
+      "seasonality": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e05_question_dorth_rodas",
+      "from": "dorth",
+      "to": "rodas",
+      "sourceE01": "edr_e01_corridor_rodas",
+      "sourceE04": "NONE",
+      "status": "QUESTION_ONLY",
+      "roadConfirmed": false,
+      "traversable": false,
+      "geometry": "UNKNOWN",
+      "length": "UNKNOWN",
+      "travelTime": "UNKNOWN",
+      "roadClass": "UNKNOWN",
+      "waterCrossings": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "maintenance": "UNKNOWN",
+      "seasonality": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    }
+  ],
+  "externalInterfaces": [
+    {
+      "id": "edr_e05_external_edranor_rodas",
+      "from": "casa_edranor",
+      "to": "rodas",
+      "sourceE04": "edr_e04_trade_question_edranor_rodas",
+      "status": "QUESTION_ONLY",
+      "roadConfirmed": false,
+      "itinerary": "UNKNOWN",
+      "authorityToAgree": "UNKNOWN",
+      "foreignCustomsBorder": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e05_external_edranor_realm",
+      "from": "casa_edranor",
+      "to": "norgard_commercial_network",
+      "sourceE04": "edr_e04_trade_question_edranor_realm",
+      "status": "QUESTION_ONLY",
+      "roadConfirmed": false,
+      "itinerary": "UNKNOWN",
+      "authorityToAgree": "UNKNOWN",
+      "foreignCustomsBorder": false,
+      "evidence": "PROPUESTA"
+    }
+  ],
+  "passQuestion": {
+    "id": "edr_e05_question_valkram",
+    "sourceE01": "edr_e01_corridor_valkram",
+    "namedPassConfirmed": false,
+    "physicalConnectionConfirmed": false,
+    "geometry": "UNKNOWN",
+    "legalAccess": "UNKNOWN",
+    "winterCondition": "UNKNOWN",
+    "evidence": "PROPUESTA"
+  },
+  "communicationStudies": [
+    {
+      "id": "edr_e05_channel_foot_messenger",
+      "optionOnly": true,
+      "networkInstalled": false,
+      "stations": [],
+      "operators": "UNKNOWN",
+      "coverage": "UNKNOWN",
+      "deliveryTime": "UNKNOWN",
+      "guaranteedDelivery": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e05_channel_mounted_courier",
+      "optionOnly": true,
+      "networkInstalled": false,
+      "stations": [],
+      "operators": "UNKNOWN",
+      "coverage": "UNKNOWN",
+      "deliveryTime": "UNKNOWN",
+      "guaranteedDelivery": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e05_channel_merchant_dispatch",
+      "optionOnly": true,
+      "networkInstalled": false,
+      "stations": [],
+      "operators": "UNKNOWN",
+      "coverage": "UNKNOWN",
+      "deliveryTime": "UNKNOWN",
+      "guaranteedDelivery": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e05_channel_local_notice",
+      "optionOnly": true,
+      "networkInstalled": false,
+      "stations": [],
+      "operators": "UNKNOWN",
+      "coverage": "UNKNOWN",
+      "deliveryTime": "UNKNOWN",
+      "guaranteedDelivery": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e05_channel_emergency_signal",
+      "optionOnly": true,
+      "networkInstalled": false,
+      "stations": [],
+      "operators": "UNKNOWN",
+      "coverage": "UNKNOWN",
+      "deliveryTime": "UNKNOWN",
+      "guaranteedDelivery": false,
+      "evidence": "PROPUESTA"
+    }
+  ],
+  "validationGates": [
+    {
+      "id": "edr_e05_gate_boundary",
+      "dependsOn": "EDD-01",
+      "passed": false,
+      "proof": "UNKNOWN"
+    },
+    {
+      "id": "edr_e05_gate_georeference",
+      "dependsOn": "EDD-02",
+      "passed": false,
+      "proof": "UNKNOWN"
+    },
+    {
+      "id": "edr_e05_gate_hydrology",
+      "dependsOn": "EDD-03",
+      "passed": false,
+      "proof": "UNKNOWN"
+    },
+    {
+      "id": "edr_e05_gate_seasonality",
+      "dependsOn": "E03",
+      "passed": false,
+      "proof": "UNKNOWN"
+    },
+    {
+      "id": "edr_e05_gate_rights",
+      "dependsOn": "EDD-07",
+      "passed": false,
+      "proof": "UNKNOWN"
+    },
+    {
+      "id": "edr_e05_gate_royal_access",
+      "dependsOn": "RODAS_CROWN",
+      "passed": false,
+      "proof": "UNKNOWN"
+    },
+    {
+      "id": "edr_e05_gate_world_state",
+      "dependsOn": "E11_WORLD_STATE",
+      "passed": false,
+      "proof": "UNKNOWN"
+    }
+  ],
+  "rightsAndFiscality": {
+    "rodasFiscalOwner": "crown_aethros",
+    "rodasMilitaryOwner": "crown_aethros",
+    "rodasBerserkersUnderCrown": true,
+    "edranorControlsRodas": false,
+    "hallheimInEdranor": false,
+    "noInternalHouseCustoms": true,
+    "foreignCustomsAtRodas": false,
+    "automaticTransitToll": false,
+    "servicesNeedActualAuthorization": true,
+    "propertyRightsPreserved": true,
+    "forestHarvestWithoutRights": false,
+    "roadOwner": "UNKNOWN",
+    "serviceTariff": "UNKNOWN"
+  },
+  "worldStateConstraints": {
+    "roadRequiresConfirmedGeometry": true,
+    "deliveryRequiresRealAgentAndGoods": true,
+    "eventualClosureRequiresRealRouteAndEvent": true,
+    "noTransitTimeFromMapSymbols": true,
+    "noRoadGenerationFromQuestions": true,
+    "noAutomaticWineShippingOnLurien": true,
+    "noUnverifiedWinterClosure": true
+  },
+  "unknown": [
+    "EDD-01_NORTH_BOUNDARY_CLOSURE",
+    "EDD-02_GEOREFERENCING_AND_SCALE",
+    "EDD-03_LOCAL_WATER_AND_GROUNDWATER",
+    "EDD-07_ACCESS_AND_PATHS",
+    "ROUTE_RIGHTS_AND_OWNERSHIP",
+    "BRIDGES_AND_FORDS",
+    "DISTANCES_AND_TRAVEL_TIMES",
+    "LOCAL_PASSABILITY",
+    "RODAS_REAL_ACCESS_PROTOCOL",
+    "POSTAL_NETWORK",
+    "FOREST_ACCESS_RIGHTS",
+    "MAINTENANCE_AND_SECURITY"
+  ],
+  "forbiddenClaims": [
+    "PHYSICAL_DORTH_LUMINA_ROAD_EXISTS",
+    "PHYSICAL_LUMINA_KARSATH_ROAD_EXISTS",
+    "PHYSICAL_DORTH_KARSATH_ROAD_EXISTS",
+    "PHYSICAL_DORTH_RODAS_ROAD_EXISTS",
+    "RODAS_EDRANOR_TAXES",
+    "RODAS_EDRANOR_BERSERKERS",
+    "HALLHEIM_INSIDE_EDRANOR",
+    "LOCAL_LURIEN_WINE_BOATS_CONFIRMED",
+    "VALKRAM_PASS_CONFIRMED",
+    "BRIDGE_WITHOUT_SURVEY",
+    "UNVERIFIED_TRAVEL_TIME",
+    "CUSTOMS_WITHIN_NORGARD",
+    "INSTALLED_POST_STATIONS",
+    "PATHFINDING_ON_STUDY_GRAPH",
+    "E05_RUNTIME_CERTIFIED"
+  ]
+}
