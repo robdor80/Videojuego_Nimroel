@@ -89,6 +89,38 @@ def verify_refs(m: dict, roots: dict[str, Path]) -> dict[str, dict]:
         "doesNotProveGodotAndroidRuntime": True,
     }, "CI contract")
     unchanged_unknowns(m["unresolved"])
+    merged = m["integrationReconciliation"]
+    require(merged["status"] == "UPSTREAM_PRS_MERGED_AND_VERIFIED_IN_MAIN"
+            and merged["verifiedDate"] == "2026-11-12"
+            and merged["mainAfterDP25"] == "50e2412dc2160b3bb5bf5abef0d04382160807d2"
+            and merged["allManifestBlobsIdenticalToPinnedSources"] is True
+            and merged["dp26MergeStatusAtAttestation"] == "AWAITING_PR49_MERGE"
+            and merged["finalPostMergeCiRequired"] is True
+            and merged["runtimeStillNotIntegrated"] is True,
+            "merged upstream attestation or PR49 state")
+    merged_sources = [
+        (46, "D.P23", "dcb2bb8939ee6f62ca89ca926ea1f4afbf75dab0",
+         "darovan_dp23_treihord_editorial_v0.1.json",
+         "0f6f2ecad7cbbd9adeb4290e15df6ed25b2b5d6b"),
+        (47, "D.P24", "21712c17d1369f4979a518247ec040f44c529ab9",
+         "darovan_dp24_rural_editorial_v0.1.json",
+         "5a2c41e07c654ef15f751dd07d3670c0468a3bfc"),
+        (48, "D.P25", "50e2412dc2160b3bb5bf5abef0d04382160807d2",
+         "darovan_dp25_personajes_relaciones_conflictos_v0.1.json",
+         "8fb6ef595138581781a202dcd95d95f56a0dd504"),
+    ]
+    require(len(merged["upstreamPrMerges"]) == 3, "merged PR count")
+    for index, (number, phase, merge_sha, filename, expected_blob) in enumerate(merged_sources):
+        require(merged["upstreamPrMerges"][index] == {
+            "pr": number, "phase": phase, "mergeCommit": merge_sha,
+            "manifestBlobSha": expected_blob,
+        }, f"merged PR attestation changed: {number}")
+        relative = (DATA / filename).as_posix()
+        cmd = subprocess.run(
+            ["git", "-C", str(ROOT), "rev-parse", "HEAD:" + relative],
+            text=True, capture_output=True, check=True)
+        require(cmd.stdout.strip() == expected_blob,
+                f"main vs pinned source drift: {phase}")
     protected = m["protected"]
     require(protected["arvenUnderDarovan"] and
             protected["belaraContiguousNotCrossingTreihord"] and
@@ -254,7 +286,8 @@ def verify_refs(m: dict, roots: dict[str, Path]) -> dict[str, dict]:
 
     for name in ("README.md", "01_auditoria_transversal.md",
                  "02_matriz_dependencias_y_pruebas.md",
-                 "03_deuda_real_y_traspaso.md", "04_acta_cierre_editorial.md"):
+                 "03_deuda_real_y_traspaso.md", "04_acta_cierre_editorial.md",
+                 "05_reconciliacion_de_fusiones.md"):
         require((DOC / name).is_file(), f"missing D.P26 acta: {name}")
     return {"sourceProfiles": len(source_people), "selected": len(selected),
             "unselected": len(source_people) - len(selected),
@@ -293,6 +326,8 @@ def negative_tests(m: dict, roots: dict[str, Path]) -> int:
         ("wrong_source", ("sourcePrPins", 0, "sha"), "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"),
         ("no_windows", ("ciRequirements", "windows2022"), False),
         ("merge_claim", ("classification", "administrative"), "CLOSED"),
+        ("wrong_merged_sha", ("integrationReconciliation", "upstreamPrMerges", 1, "manifestBlobSha"), "forged"),
+        ("fake_upstream", ("integrationReconciliation", "status"), "UNKNOWN"),
     ]
     passed = 0
     for name, path, replacement in cases:
