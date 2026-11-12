@@ -20,3 +20,7 @@
 El inventario de D.P26 **no copia ni sustituye** inventarios de D.P20–D.P25, no crea nuevas entidades narrativas ni promueve propuestas a hechos consumados. Los 52 perfiles base siguen siendo 52, de los cuales D.P25 destaca 27. Las 30 relaciones y los diez conflictos **no están activados**. Los datos desconocidos se mantienen desconocidos.
 
 **Estado de esta acta:** certificación final CI del HEAD se documenta mediante el historial de Actions y la PR D.P26; hasta entonces, no afirmar éxito de pruebas nuevas.
+
+## Reconciliación posterior a la autorización de fusiones — 12/11/2026
+
+Las PR **#46 D.P23, #47 D.P24 y #48 D.P25 ya están fusionadas en main**, por autorización explícita del autor y en el orden acordado. Los tres inventarios conservan **exactamente los mismos blobs Git** que en los SHAs fuente de la primera auditoría. Consultar [05 — Reconciliación de fusiones](05_reconciliacion_de_fusiones.md) para hashes y secuencia. La referencia inicial a PR pendientes describe solamente el **momento de partida**, no el estado actual. D.P26/PR #49 es la última pieza, pendiente de fusión y CI postmerge al redactar este anexo. Se mantiene el dictamen de **cierre editorial favorable**, no runtime.
