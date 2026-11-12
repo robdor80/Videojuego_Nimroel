@@ -1,0 +1,725 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e04_economy_viticulture",
+  "version": "0.1",
+  "date": "2026-11-12",
+  "phase": "E04",
+  "status": "DOCUMENTARY_PLANNING_ONLY",
+  "runtimeEnabled": false,
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor",
+    "localidad",
+    "world_state"
+  ],
+  "sourceAuthorities": [
+    "CANON_REPO",
+    "AUTOR_2026_11_12",
+    "OBSERVACION_MAPA",
+    "PROPUESTA",
+    "UNKNOWN"
+  ],
+  "scope": {
+    "territory": "casa_edranor",
+    "regionalCanon": "norgard",
+    "northBoundaryClosed": false,
+    "georeferenced": false,
+    "metricGeometryValidated": false,
+    "parcelMapValidated": false,
+    "productionMapValidated": false,
+    "transportGraphValidated": false,
+    "riverTransportValidated": false,
+    "settlementEconomiesInstantiated": false,
+    "localMarketsInstantiated": false,
+    "productionPolygons": [],
+    "vineyardPolygons": [],
+    "roadEdges": [],
+    "riverEdges": [],
+    "coordinates": "UNKNOWN",
+    "area": "UNKNOWN",
+    "localHydrography": "UNKNOWN"
+  },
+  "canonicalBasis": {
+    "primaryNorgardWineRegion": true,
+    "realmWineTradeExists": true,
+    "luminaBosqueAltoSuppliesWineIndustryWood": true,
+    "forestExploitationControlled": true,
+    "dorthPoliticalSeat": true,
+    "luminaAndKarsathRelevant": true,
+    "grapesCanonicalFood": true,
+    "wineTypesCanonicalPossibilities": [
+      "WINE_COMMON",
+      "WINE_HIGH_QUALITY",
+      "WINE_YOUNG",
+      "WINE_AGED",
+      "WINE_COOKED_OR_SPICED"
+    ],
+    "wineCategoriesAreGuaranteedLocalStock": false,
+    "individualWineProducersNamed": false,
+    "evidence": "CANON_REPO"
+  },
+  "forestGuard": {
+    "sourceForest": "bosque_alto",
+    "associatedTown": "lumina",
+    "confirmedApplications": [
+      "TONEL",
+      "BARRICA",
+      "BODEGA_STRUCTURE",
+      "OTHER_WINE_STORAGE"
+    ],
+    "forestParcelsValidated": false,
+    "authorizedHarvestSites": [],
+    "specificTreeToBarrelSpecies": "UNKNOWN",
+    "rightsHolder": "UNKNOWN",
+    "harvestQuota": "UNKNOWN",
+    "replantingPolicy": "UNKNOWN",
+    "forestIsOwnedByEdranor": "UNKNOWN",
+    "azuriosRealSouthAssignedToEdranor": false,
+    "forestProcessingSitesConfirmed": false,
+    "evidence": "CANON_REPO"
+  },
+  "anchors": [
+    {
+      "id": "dorth",
+      "owner": "casa_edranor",
+      "inside": true,
+      "productionSitesConfirmed": false,
+      "localMarketInfrastructure": "UNKNOWN",
+      "wineInventories": "UNKNOWN",
+      "priceList": "UNKNOWN",
+      "roadAccess": "UNKNOWN",
+      "taxAuthority": "casa_edranor_under_crown",
+      "evidence": "CANON_REPO"
+    },
+    {
+      "id": "lumina",
+      "owner": "casa_edranor",
+      "inside": true,
+      "productionSitesConfirmed": false,
+      "localMarketInfrastructure": "UNKNOWN",
+      "wineInventories": "UNKNOWN",
+      "priceList": "UNKNOWN",
+      "roadAccess": "UNKNOWN",
+      "taxAuthority": "casa_edranor_under_crown",
+      "evidence": "CANON_REPO"
+    },
+    {
+      "id": "karsath",
+      "owner": "casa_edranor",
+      "inside": true,
+      "productionSitesConfirmed": false,
+      "localMarketInfrastructure": "UNKNOWN",
+      "wineInventories": "UNKNOWN",
+      "priceList": "UNKNOWN",
+      "roadAccess": "UNKNOWN",
+      "taxAuthority": "casa_edranor_under_crown",
+      "evidence": "CANON_REPO"
+    },
+    {
+      "id": "rodas",
+      "owner": "crown_aethros",
+      "inside": true,
+      "productionSitesConfirmed": false,
+      "localMarketInfrastructure": "UNKNOWN",
+      "wineInventories": "UNKNOWN",
+      "priceList": "UNKNOWN",
+      "roadAccess": "UNKNOWN",
+      "taxAuthority": "crown_aethros",
+      "evidence": "AUTOR_2026_11_12"
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros",
+      "inside": false,
+      "productionSitesConfirmed": false,
+      "localMarketInfrastructure": "UNKNOWN",
+      "wineInventories": "UNKNOWN",
+      "priceList": "UNKNOWN",
+      "roadAccess": "UNKNOWN",
+      "taxAuthority": "crown_aethros",
+      "evidence": "CANON_REPO"
+    }
+  ],
+  "territorialStudies": [
+    {
+      "id": "edr_e04_study_west_valkram_interface",
+      "reliefUnitId": "edr_e01_west_valkram_interface",
+      "siteParcel": "UNKNOWN",
+      "localWineProductionConfirmed": false,
+      "soilAndMicroclimateValidated": false,
+      "eligibility": "UNASSESSED",
+      "hectares": "UNKNOWN",
+      "yieldPerHectare": "UNKNOWN",
+      "irrigation": "UNKNOWN",
+      "transportInfrastructure": "UNKNOWN",
+      "jurisdictionVerified": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_study_karsath_central_west",
+      "reliefUnitId": "edr_e01_karsath_central_west",
+      "siteParcel": "UNKNOWN",
+      "localWineProductionConfirmed": false,
+      "soilAndMicroclimateValidated": false,
+      "eligibility": "UNASSESSED",
+      "hectares": "UNKNOWN",
+      "yieldPerHectare": "UNKNOWN",
+      "irrigation": "UNKNOWN",
+      "transportInfrastructure": "UNKNOWN",
+      "jurisdictionVerified": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_study_lumina_bosque_alto",
+      "reliefUnitId": "edr_e01_lumina_bosque_alto",
+      "siteParcel": "UNKNOWN",
+      "localWineProductionConfirmed": false,
+      "soilAndMicroclimateValidated": false,
+      "eligibility": "UNASSESSED",
+      "hectares": "UNKNOWN",
+      "yieldPerHectare": "UNKNOWN",
+      "irrigation": "UNKNOWN",
+      "transportInfrastructure": "UNKNOWN",
+      "jurisdictionVerified": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_study_central_wine_context",
+      "reliefUnitId": "edr_e01_central_wine_context",
+      "siteParcel": "UNKNOWN",
+      "localWineProductionConfirmed": false,
+      "soilAndMicroclimateValidated": false,
+      "eligibility": "UNASSESSED",
+      "hectares": "UNKNOWN",
+      "yieldPerHectare": "UNKNOWN",
+      "irrigation": "UNKNOWN",
+      "transportInfrastructure": "UNKNOWN",
+      "jurisdictionVerified": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_study_dorth_azurios_west",
+      "reliefUnitId": "edr_e01_dorth_azurios_west",
+      "siteParcel": "UNKNOWN",
+      "localWineProductionConfirmed": false,
+      "soilAndMicroclimateValidated": false,
+      "eligibility": "UNASSESSED",
+      "hectares": "UNKNOWN",
+      "yieldPerHectare": "UNKNOWN",
+      "irrigation": "UNKNOWN",
+      "transportInfrastructure": "UNKNOWN",
+      "jurisdictionVerified": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_study_north_cold_transition",
+      "reliefUnitId": "edr_e01_north_cold_transition",
+      "siteParcel": "UNKNOWN",
+      "localWineProductionConfirmed": false,
+      "soilAndMicroclimateValidated": false,
+      "eligibility": "UNASSESSED",
+      "hectares": "UNKNOWN",
+      "yieldPerHectare": "UNKNOWN",
+      "irrigation": "UNKNOWN",
+      "transportInfrastructure": "UNKNOWN",
+      "jurisdictionVerified": false,
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_study_far_north_unclosed",
+      "reliefUnitId": "edr_e01_far_north_unclosed",
+      "siteParcel": "UNKNOWN",
+      "localWineProductionConfirmed": false,
+      "soilAndMicroclimateValidated": false,
+      "eligibility": "UNASSESSED",
+      "hectares": "UNKNOWN",
+      "yieldPerHectare": "UNKNOWN",
+      "irrigation": "UNKNOWN",
+      "transportInfrastructure": "UNKNOWN",
+      "jurisdictionVerified": false,
+      "evidence": "PROPUESTA"
+    }
+  ],
+  "chainStages": [
+    {
+      "id": "edr_e04_vine_preflight",
+      "lane": "VINE",
+      "stageClass": "PRECONDITION",
+      "inputs": [
+        "parcel_title",
+        "soil_climate_evidence",
+        "water_rights_if_needed"
+      ],
+      "outputs": [
+        "eligible_parcel_if_approved"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_cultivate",
+      "lane": "VINE",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "eligible_parcel_if_approved",
+        "plant_material",
+        "labor",
+        "tools"
+      ],
+      "outputs": [
+        "grape_crop_if_world_state"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_harvest",
+      "lane": "VINE",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "grape_crop_if_world_state",
+        "labor",
+        "containers"
+      ],
+      "outputs": [
+        "grape_lot"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_sort_crush",
+      "lane": "CELLAR",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "grape_lot",
+        "pressing_tools"
+      ],
+      "outputs": [
+        "must_lot",
+        "pomace_lot"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_ferment",
+      "lane": "CELLAR",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "must_lot",
+        "suitable_vessel",
+        "labor"
+      ],
+      "outputs": [
+        "young_wine_lot",
+        "lees_lot"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_care_age",
+      "lane": "CELLAR",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "young_wine_lot",
+        "storage_capacity"
+      ],
+      "outputs": [
+        "finished_wine_lot"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_pack_store",
+      "lane": "CELLAR",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "finished_wine_lot",
+        "clean_vessels",
+        "legitimate_storage"
+      ],
+      "outputs": [
+        "market_wine_lot"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_distribute",
+      "lane": "TRADE",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "market_wine_lot",
+        "owner_consent",
+        "commercial_contract",
+        "transport_capacity"
+      ],
+      "outputs": [
+        "delivered_wine_lot"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_sell",
+      "lane": "TRADE",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "delivered_wine_lot",
+        "buyer",
+        "lawful_transaction"
+      ],
+      "outputs": [
+        "transfer_record"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_legal_harvest_wood",
+      "lane": "WOOD",
+      "stageClass": "PRECONDITION",
+      "inputs": [
+        "verified_title_or_harvest_permission",
+        "forest_stewardship",
+        "labor"
+      ],
+      "outputs": [
+        "authorized_wood_lot"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_season_shape_wood",
+      "lane": "WOOD",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "authorized_wood_lot",
+        "craft_tools",
+        "workshop_capacity"
+      ],
+      "outputs": [
+        "prepared_staves_or_timber"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_cooper_build",
+      "lane": "WOOD",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "prepared_staves_or_timber",
+        "hoops_and_fittings",
+        "artisan_labor"
+      ],
+      "outputs": [
+        "barrel_or_cask_lot"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_maintain_vessels",
+      "lane": "WOOD",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "barrel_or_cask_lot",
+        "maintenance_labor"
+      ],
+      "outputs": [
+        "usable_vessels"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_vinegar_byproduct",
+      "lane": "CELLAR",
+      "stageClass": "OPTIONAL_PROCESS",
+      "inputs": [
+        "suitable_fermented_lot",
+        "vessel",
+        "controlled_process"
+      ],
+      "outputs": [
+        "vinegar_lot"
+      ],
+      "implementation": "DESIGN_ONLY",
+      "active": false,
+      "locality": "UNKNOWN",
+      "operator": "UNKNOWN",
+      "quantity": "UNKNOWN",
+      "processTime": "UNKNOWN",
+      "rights": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    }
+  ],
+  "professionsStudy": [
+    {
+      "id": "edr_e04_role_grower",
+      "role": "VINEYARD_WORK",
+      "siteConfirmed": false,
+      "workforce": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_role_cellarer",
+      "role": "FERMENT_AND_STORE",
+      "siteConfirmed": false,
+      "workforce": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_role_cooper",
+      "role": "WOODEN_VESSELS",
+      "siteConfirmed": false,
+      "workforce": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_role_woodsman",
+      "role": "AUTHORIZED_FOREST_WORK",
+      "siteConfirmed": false,
+      "workforce": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_role_carrier",
+      "role": "GOODS_TRANSPORT",
+      "siteConfirmed": false,
+      "workforce": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_role_merchant",
+      "role": "WHOLESALE_OR_MARKET",
+      "siteConfirmed": false,
+      "workforce": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_role_clerk",
+      "role": "CONTRACT_AND_RECORD",
+      "siteConfirmed": false,
+      "workforce": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    }
+  ],
+  "tradeStudy": [
+    {
+      "id": "edr_e04_trade_question_dorth_lumina",
+      "from": "dorth",
+      "to": "lumina",
+      "commercialLinkVerified": false,
+      "physicalRoute": "UNKNOWN",
+      "travelTime": "UNKNOWN",
+      "transshipment": "UNKNOWN",
+      "commodityVolume": "UNKNOWN",
+      "authorizedAtBoundary": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_trade_question_lumina_karsath",
+      "from": "lumina",
+      "to": "karsath",
+      "commercialLinkVerified": false,
+      "physicalRoute": "UNKNOWN",
+      "travelTime": "UNKNOWN",
+      "transshipment": "UNKNOWN",
+      "commodityVolume": "UNKNOWN",
+      "authorizedAtBoundary": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_trade_question_dorth_karsath",
+      "from": "dorth",
+      "to": "karsath",
+      "commercialLinkVerified": false,
+      "physicalRoute": "UNKNOWN",
+      "travelTime": "UNKNOWN",
+      "transshipment": "UNKNOWN",
+      "commodityVolume": "UNKNOWN",
+      "authorizedAtBoundary": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_trade_question_edranor_rodas",
+      "from": "casa_edranor",
+      "to": "rodas",
+      "commercialLinkVerified": false,
+      "physicalRoute": "UNKNOWN",
+      "travelTime": "UNKNOWN",
+      "transshipment": "UNKNOWN",
+      "commodityVolume": "UNKNOWN",
+      "authorizedAtBoundary": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    },
+    {
+      "id": "edr_e04_trade_question_edranor_realm",
+      "from": "casa_edranor",
+      "to": "norgard_commercial_network",
+      "commercialLinkVerified": false,
+      "physicalRoute": "UNKNOWN",
+      "travelTime": "UNKNOWN",
+      "transshipment": "UNKNOWN",
+      "commodityVolume": "UNKNOWN",
+      "authorizedAtBoundary": "UNKNOWN",
+      "evidence": "PROPUESTA"
+    }
+  ],
+  "economicRules": {
+    "singleNorgardMarket": true,
+    "noInternalHouseCustoms": true,
+    "crownIsSupremeFiscalAuthority": true,
+    "edranorMayCollectAuthorizedTaxesOnly": true,
+    "rodasFiscalOwner": "crown_aethros",
+    "rodasMilitaryOwner": "crown_aethros",
+    "berserkersUnderCrown": true,
+    "hallheimInsideEdranor": false,
+    "currencyAccountingUnit": "CLAVO",
+    "clavosPerLuna": 24,
+    "clavosPerCorona": 480,
+    "localMintAllowed": false,
+    "localWineTaxRate": "UNKNOWN",
+    "approvedMarketServiceTariffs": "UNKNOWN",
+    "remittanceShareToCrown": "UNKNOWN",
+    "wineUnitPrice": "UNKNOWN",
+    "productionCost": "UNKNOWN",
+    "wagesSpecificToEdranor": "UNKNOWN",
+    "wineSalesAtRodasUnderEdranorTax": false,
+    "goodsRequiresRealInventory": true,
+    "tradeRequiresRealContractAndRights": true,
+    "evidence": "CANON_REPO"
+  },
+  "guardrails": {
+    "allSevenUnitsAreVineyards": false,
+    "polarViticultureByDefault": false,
+    "irrigationEstablished": false,
+    "wineRiverTransportEstablished": false,
+    "roadsEstablished": false,
+    "woodHarvestWithoutRightsAllowed": false,
+    "edranorOwnsAllLand": false,
+    "edranorControlsRoyalForest": false,
+    "rodasIsEdranorTaxDistrict": false,
+    "internalHouseTollsAsCustoms": false,
+    "fictionalVineyardVolumesAsFact": false,
+    "simulationOrCoreIntegration": false
+  },
+  "unknown": [
+    "EDD-01_NORTH_BOUNDARY_CLOSURE",
+    "EDD-02_GEOREFERENCING_AND_SCALE",
+    "EDD-03_LOCAL_WATER_AND_GROUNDWATER",
+    "EDD-07_ACCESS_AND_PATHS",
+    "LOCAL_PARCELS_AND_OWNERSHIP",
+    "LOCAL_SOIL_CLIMATE_PHENOLOGY",
+    "WINE_VARIETIES_AND_YIELD",
+    "WINE_PRICE_SPECIFIC",
+    "CELLAR_LOCATIONS_CAPACITIES",
+    "FOREST_HARVEST_RIGHTS_QUOTAS",
+    "WOOD_SPECIES_PER_BARREL",
+    "LOCAL_MARKETS_AND_GUILD_EXISTENCE",
+    "SPECIFIC_FISCAL_TARIFFS",
+    "SEASONAL_VINTAGE_DATE",
+    "RODAS_ECONOMIC_RELATIONSHIP_DETAILS"
+  ],
+  "forbiddenClaims": [
+    "RODAS_EDRANOR_FISCAL_CONTROL",
+    "HALLHEIM_EDRANOR",
+    "E04_RUNTIME_ENABLED",
+    "EACH_UNIT_HAS_VINEYARDS",
+    "POLAR_VINEYARDS_DEFAULT",
+    "LOCAL_WINE_TAX_AS_CANON",
+    "INTERNAL_HOUSE_CUSTOMS",
+    "UNVERIFIED_FOREST_OWNERSHIP",
+    "ROYAL_FOREST_EDRANOR",
+    "DIRECT_RIVER_WINE_ROUTE",
+    "FABRICATED_TRADE_ROADS",
+    "NUMERIC_HARVEST_OUTPUT_AS_CANON",
+    "UNAUTHORIZED_TIMBER_CUTTING",
+    "INVENTORY_WITHOUT_WORLD_STATE"
+  ]
+}
