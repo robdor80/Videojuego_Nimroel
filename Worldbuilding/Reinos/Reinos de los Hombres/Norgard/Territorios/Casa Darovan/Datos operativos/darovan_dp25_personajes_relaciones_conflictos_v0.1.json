@@ -1,0 +1,1672 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp25_personajes_relaciones_conflictos_v0.1",
+  "version": "0.1.0",
+  "phase": "D.P25",
+  "date": "2026-11-12",
+  "status": "EDITORIAL_SELECTED_BY_EXPLICIT_DELEGATION_NOT_WORLDSTATE",
+  "approval": {
+    "creativeApproved": true,
+    "source": "USER_D.P25_2026_11_12_AUTONOMOUS_DECISIONS",
+    "scope": "EDITORIAL_ONLY",
+    "mergeAuthorized": false
+  },
+  "branchBase": {
+    "name": "main",
+    "sha": "512434957f248f2513761615a9685ddd6c49c65f"
+  },
+  "dependencies": [
+    {
+      "phase": "D.P23",
+      "pr": 46,
+      "expectedHeadAtStart": "6ee4f4a672a138e29feefb558e41bbf10fbce64e",
+      "wasDraft": true,
+      "mergedIntoBranch": false
+    },
+    {
+      "phase": "D.P24",
+      "pr": 47,
+      "expectedHeadAtStart": "b0b14db66f1cf1ca0e9eb27f28cde403e3e16a89",
+      "wasDraft": true,
+      "mergedIntoBranch": false
+    }
+  ],
+  "inheritedCanon": {
+    "kingdom": "Norgard",
+    "house": "Darovan",
+    "cities": [
+      "treihord",
+      "veldora",
+      "taramin",
+      "syvaris"
+    ],
+    "excludedCity": "karsath",
+    "treihordRiver": "Belara",
+    "treihordNeighborhoodCount": 8,
+    "treihordApproxPopulation": 32000,
+    "treihordMint": false,
+    "treihordLaVenaPublicAccess": false,
+    "belaraShallowIndustrialNavigationOnly": true,
+    "veldoraExternalCustomsAuthority": "CORONA_NORGARD",
+    "noInternalCustoms": true,
+    "taraminRiver": "Thalen",
+    "taraminRiverBranchCount": 2,
+    "taraminSingleSouthernForest": true,
+    "syvarisNavy": "ARMADA_REAL_NORGARD",
+    "arvenOwner": "DAROVAN",
+    "arvenMantoVerdePercentApprox": 90,
+    "arvenSyvarisFerryExists": false,
+    "verifiedNewTransportRoutes": [],
+    "pilaresSingleForest": true,
+    "agujaInteriorPermanentSettlements": false
+  },
+  "sourceCatalog": {
+    "biographiesTotal": 52,
+    "byPhase": {
+      "D.P20": 10,
+      "D.P21": 10,
+      "D.P22": 10,
+      "D.P23": 10,
+      "D.P24": 12
+    },
+    "selectedCount": 27,
+    "unselectedCount": 25,
+    "sourceFilesStatus": "D.P23_D.P24_UNMERGED_WHEN_AUTHORED"
+  },
+  "people": [
+    {
+      "id": "DP25-P01",
+      "sourceBiographyId": "TRH-N01",
+      "sourcePhase": "D.P23",
+      "editorialName": "Aldren Meris",
+      "territorialScope": "treihord",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P02",
+      "sourceBiographyId": "TRH-N04",
+      "sourcePhase": "D.P23",
+      "editorialName": "Ilva Nered",
+      "territorialScope": "treihord",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P03",
+      "sourceBiographyId": "TRH-N07",
+      "sourcePhase": "D.P23",
+      "editorialName": "Orven Deil",
+      "territorialScope": "treihord",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P04",
+      "sourceBiographyId": "TRH-N08",
+      "sourcePhase": "D.P23",
+      "editorialName": "Naira Halven",
+      "territorialScope": "treihord",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P05",
+      "sourceBiographyId": "TRH-N10",
+      "sourcePhase": "D.P23",
+      "editorialName": "Varo Mendir",
+      "territorialScope": "treihord",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P06",
+      "sourceBiographyId": "VEL-N01",
+      "sourcePhase": "D.P20",
+      "editorialName": "Liria Menor",
+      "territorialScope": "veldora",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P07",
+      "sourceBiographyId": "VEL-N02",
+      "sourcePhase": "D.P20",
+      "editorialName": "Sered Alvar",
+      "territorialScope": "veldora",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P08",
+      "sourceBiographyId": "VEL-N04",
+      "sourcePhase": "D.P20",
+      "editorialName": "Oren Talen",
+      "territorialScope": "veldora",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P09",
+      "sourceBiographyId": "VEL-N05",
+      "sourcePhase": "D.P20",
+      "editorialName": "Vesa Orrin",
+      "territorialScope": "veldora",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P10",
+      "sourceBiographyId": "VEL-N08",
+      "sourcePhase": "D.P20",
+      "editorialName": "Edris Fen",
+      "territorialScope": "veldora",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P11",
+      "sourceBiographyId": "VEL-N10",
+      "sourcePhase": "D.P20",
+      "editorialName": "Fenra Doril",
+      "territorialScope": "veldora",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P12",
+      "sourceBiographyId": "TAR-N01",
+      "sourcePhase": "D.P21",
+      "editorialName": "Mareva Senn",
+      "territorialScope": "taramin",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P13",
+      "sourceBiographyId": "TAR-N04",
+      "sourcePhase": "D.P21",
+      "editorialName": "Corven Dail",
+      "territorialScope": "taramin",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P14",
+      "sourceBiographyId": "TAR-N05",
+      "sourcePhase": "D.P21",
+      "editorialName": "Orea Niv",
+      "territorialScope": "taramin",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P15",
+      "sourceBiographyId": "TAR-N08",
+      "sourcePhase": "D.P21",
+      "editorialName": "Sarel Tern",
+      "territorialScope": "taramin",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P16",
+      "sourceBiographyId": "TAR-N10",
+      "sourcePhase": "D.P21",
+      "editorialName": "Breon Cal",
+      "territorialScope": "taramin",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P17",
+      "sourceBiographyId": "SYV-N03",
+      "sourcePhase": "D.P22",
+      "editorialName": "Maela Ruvin",
+      "territorialScope": "syvaris",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P18",
+      "sourceBiographyId": "SYV-N04",
+      "sourcePhase": "D.P22",
+      "editorialName": "Teren Velas",
+      "territorialScope": "syvaris",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P19",
+      "sourceBiographyId": "SYV-N06",
+      "sourcePhase": "D.P22",
+      "editorialName": "Sera Nald",
+      "territorialScope": "syvaris",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P20",
+      "sourceBiographyId": "SYV-N07",
+      "sourcePhase": "D.P22",
+      "editorialName": "Orel Sena",
+      "territorialScope": "syvaris",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P21",
+      "sourceBiographyId": "SYV-N08",
+      "sourcePhase": "D.P22",
+      "editorialName": "Cira Denor",
+      "territorialScope": "syvaris",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P22",
+      "sourceBiographyId": "RUR-N01",
+      "sourcePhase": "D.P24",
+      "editorialName": "Mara Lenvar",
+      "territorialScope": "rural_conditional",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P23",
+      "sourceBiographyId": "RUR-N04",
+      "sourcePhase": "D.P24",
+      "editorialName": "Toren Valis",
+      "territorialScope": "rural_conditional",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P24",
+      "sourceBiographyId": "RUR-N05",
+      "sourcePhase": "D.P24",
+      "editorialName": "Saira Dren",
+      "territorialScope": "rural_conditional",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P25",
+      "sourceBiographyId": "RUR-N06",
+      "sourcePhase": "D.P24",
+      "editorialName": "Olven Seran",
+      "territorialScope": "rural_conditional",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P26",
+      "sourceBiographyId": "RUR-N07",
+      "sourcePhase": "D.P24",
+      "editorialName": "Mira Kelen",
+      "territorialScope": "arven_conditional",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-P27",
+      "sourceBiographyId": "RUR-N08",
+      "sourcePhase": "D.P24",
+      "editorialName": "Neris Salvar",
+      "territorialScope": "arven_conditional",
+      "editorialStatus": "AUTHORED_EDITORIAL_SELECTED",
+      "selectedForTerritorialNarrative": true,
+      "npcInstantiated": false,
+      "personEntityId": null,
+      "householdEntityId": null,
+      "actualLocationId": null,
+      "legalRoleId": null,
+      "currentRelationshipIds": [],
+      "knowledgeStateId": null,
+      "worldStateChanged": false
+    }
+  ],
+  "relationships": [
+    {
+      "id": "DP25-R01",
+      "personRefs": [
+        "TRH-N01",
+        "TRH-N08"
+      ],
+      "domain": "urban_petition",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R02",
+      "personRefs": [
+        "TRH-N04",
+        "TRH-N07"
+      ],
+      "domain": "cargo_safety",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R03",
+      "personRefs": [
+        "TRH-N10",
+        "TRH-N01"
+      ],
+      "domain": "message_confidentiality",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R04",
+      "personRefs": [
+        "VEL-N01",
+        "VEL-N02"
+      ],
+      "domain": "custody_contract",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R05",
+      "personRefs": [
+        "VEL-N04",
+        "VEL-N08"
+      ],
+      "domain": "external_file_private_copy",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R06",
+      "personRefs": [
+        "VEL-N05",
+        "VEL-N10"
+      ],
+      "domain": "work_credit",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R07",
+      "personRefs": [
+        "TAR-N01",
+        "TAR-N04"
+      ],
+      "domain": "perishable_packaging",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R08",
+      "personRefs": [
+        "TAR-N08",
+        "TAR-N10"
+      ],
+      "domain": "rumor_evidence",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R09",
+      "personRefs": [
+        "TAR-N05",
+        "TAR-N01"
+      ],
+      "domain": "apprenticeship",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R10",
+      "personRefs": [
+        "SYV-N03",
+        "SYV-N07"
+      ],
+      "domain": "navy_civil_competences",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R11",
+      "personRefs": [
+        "SYV-N04",
+        "SYV-N06"
+      ],
+      "domain": "private_letter",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R12",
+      "personRefs": [
+        "SYV-N08",
+        "SYV-N03"
+      ],
+      "domain": "supply_terms",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R13",
+      "personRefs": [
+        "RUR-N04",
+        "RUR-N05"
+      ],
+      "domain": "forest_rights",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R14",
+      "personRefs": [
+        "RUR-N07",
+        "RUR-N08"
+      ],
+      "domain": "arven_stewardship",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R15",
+      "personRefs": [
+        "RUR-N01",
+        "TRH-N08"
+      ],
+      "domain": "rural_urban_needs",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R16",
+      "personRefs": [
+        "RUR-N06",
+        "TRH-N07"
+      ],
+      "domain": "industrial_cargo_risks",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R17",
+      "personRefs": [
+        "VEL-N01",
+        "TRH-N04"
+      ],
+      "domain": "veldora_treihord_qualitative_link",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R18",
+      "personRefs": [
+        "VEL-N08",
+        "TRH-N01"
+      ],
+      "domain": "consented_transmission",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R19",
+      "personRefs": [
+        "TAR-N01",
+        "VEL-N01"
+      ],
+      "domain": "unverified_transport",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R20",
+      "personRefs": [
+        "SYV-N08",
+        "TAR-N01"
+      ],
+      "domain": "unverified_maritime_transport",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R21",
+      "personRefs": [
+        "RUR-N07",
+        "SYV-N03"
+      ],
+      "domain": "no_verified_interisland_route",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R22",
+      "personRefs": [
+        "RUR-N05",
+        "TRH-N01"
+      ],
+      "domain": "lawful_petition",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R23",
+      "personRefs": [
+        "TAR-N05",
+        "VEL-N08"
+      ],
+      "domain": "consented_learning",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R24",
+      "personRefs": [
+        "SYV-N06",
+        "TRH-N10"
+      ],
+      "domain": "unverified_postal_chain",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R25",
+      "personRefs": [
+        "VEL-N04",
+        "SYV-N07"
+      ],
+      "domain": "distinct_authorities",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R26",
+      "personRefs": [
+        "RUR-N01",
+        "VEL-N10"
+      ],
+      "domain": "unverified_food_chain",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R27",
+      "personRefs": [
+        "TAR-N10",
+        "SYV-N07"
+      ],
+      "domain": "civil_naval_distinction",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R28",
+      "personRefs": [
+        "RUR-N08",
+        "SYV-N08"
+      ],
+      "domain": "unverified_interisland_transport",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R29",
+      "personRefs": [
+        "RUR-N04",
+        "TRH-N07"
+      ],
+      "domain": "unverified_wood_delivery",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-R30",
+      "personRefs": [
+        "VEL-N05",
+        "TAR-N05"
+      ],
+      "domain": "legal_training",
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actorContactsVerified": false,
+      "sourceEventId": null,
+      "actualRelationshipId": null,
+      "aToBDimensions": null,
+      "bToADimensions": null,
+      "approvedRouteId": null,
+      "active": false,
+      "worldStateChanged": false
+    }
+  ],
+  "householdCareModels": [
+    {
+      "id": "DP25-F01",
+      "name": "Dependencia alimentaria",
+      "personRefs": [
+        "RUR-N01",
+        "TRH-N08"
+      ],
+      "status": "FUTURE_HOUSEHOLD_CARE_MODEL",
+      "actualKinshipIds": [],
+      "actualHouseholdIds": [],
+      "kinshipEstablished": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-F02",
+      "name": "Aprender lejos del oficio esperado",
+      "personRefs": [
+        "TAR-N05",
+        "VEL-N05"
+      ],
+      "status": "FUTURE_HOUSEHOLD_CARE_MODEL",
+      "actualKinshipIds": [],
+      "actualHouseholdIds": [],
+      "kinshipEstablished": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-F03",
+      "name": "Trabajo y cuidados compartidos",
+      "personRefs": [
+        "VEL-N10",
+        "SYV-N06"
+      ],
+      "status": "FUTURE_HOUSEHOLD_CARE_MODEL",
+      "actualKinshipIds": [],
+      "actualHouseholdIds": [],
+      "kinshipEstablished": false,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-F04",
+      "name": "Cuidado del territorio",
+      "personRefs": [
+        "RUR-N07",
+        "RUR-N08"
+      ],
+      "status": "FUTURE_HOUSEHOLD_CARE_MODEL",
+      "actualKinshipIds": [],
+      "actualHouseholdIds": [],
+      "kinshipEstablished": false,
+      "worldStateChanged": false
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "DP25-C01",
+      "name": "La misma cifra en dos libros",
+      "personRefs": [
+        "VEL-N01",
+        "VEL-N02",
+        "TRH-N04",
+        "VEL-N08"
+      ],
+      "triggersRequired": [
+        "identified_lot",
+        "legal_custody",
+        "contract",
+        "consented_copies",
+        "actual_delivery"
+      ],
+      "relationshipIdeaRefs": [
+        "DP25-R04",
+        "DP25-R17",
+        "DP25-R18"
+      ],
+      "status": "FUTURE_CONDITIONAL_CONFLICT",
+      "activated": false,
+      "triggerSatisfied": false,
+      "actualConflictEntityId": null,
+      "actualQuestId": null,
+      "publicHistoryEventId": null,
+      "determinedOutcome": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-C02",
+      "name": "La cincha y el silencio",
+      "personRefs": [
+        "RUR-N06",
+        "TRH-N07",
+        "TRH-N04"
+      ],
+      "triggersRequired": [
+        "existing_mine",
+        "authorized_access",
+        "inspected_cargo",
+        "verified_route",
+        "actual_contract"
+      ],
+      "relationshipIdeaRefs": [
+        "DP25-R02",
+        "DP25-R16"
+      ],
+      "status": "FUTURE_CONDITIONAL_CONFLICT",
+      "activated": false,
+      "triggerSatisfied": false,
+      "actualConflictEntityId": null,
+      "actualQuestId": null,
+      "publicHistoryEventId": null,
+      "determinedOutcome": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-C03",
+      "name": "Reserva para nadie y para todos",
+      "personRefs": [
+        "RUR-N01",
+        "TRH-N08",
+        "TRH-N01",
+        "VEL-N10"
+      ],
+      "triggersRequired": [
+        "verified_rural_site",
+        "real_food_stock",
+        "rights_and_need",
+        "authorized_delivery"
+      ],
+      "relationshipIdeaRefs": [
+        "DP25-R01",
+        "DP25-R15",
+        "DP25-R26"
+      ],
+      "status": "FUTURE_CONDITIONAL_CONFLICT",
+      "activated": false,
+      "triggerSatisfied": false,
+      "actualConflictEntityId": null,
+      "actualQuestId": null,
+      "publicHistoryEventId": null,
+      "determinedOutcome": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-C04",
+      "name": "La sombra del único bosque",
+      "personRefs": [
+        "RUR-N04",
+        "RUR-N05",
+        "TRH-N07"
+      ],
+      "triggersRequired": [
+        "real_plot",
+        "verified_permission",
+        "regeneration",
+        "work_contract",
+        "route"
+      ],
+      "relationshipIdeaRefs": [
+        "DP25-R13",
+        "DP25-R29"
+      ],
+      "status": "FUTURE_CONDITIONAL_CONFLICT",
+      "activated": false,
+      "triggerSatisfied": false,
+      "actualConflictEntityId": null,
+      "actualQuestId": null,
+      "publicHistoryEventId": null,
+      "determinedOutcome": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-C05",
+      "name": "Lo perecedero no espera",
+      "personRefs": [
+        "TAR-N01",
+        "TAR-N04",
+        "SYV-N08",
+        "VEL-N01"
+      ],
+      "triggersRequired": [
+        "real_perishable_lot",
+        "storage",
+        "elapsed_time",
+        "authorized_transport"
+      ],
+      "relationshipIdeaRefs": [
+        "DP25-R07",
+        "DP25-R19",
+        "DP25-R20"
+      ],
+      "status": "FUTURE_CONDITIONAL_CONFLICT",
+      "activated": false,
+      "triggerSatisfied": false,
+      "actualConflictEntityId": null,
+      "actualQuestId": null,
+      "publicHistoryEventId": null,
+      "determinedOutcome": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-C06",
+      "name": "La orden detrás de la puerta",
+      "personRefs": [
+        "SYV-N07",
+        "SYV-N03",
+        "SYV-N04",
+        "SYV-N06"
+      ],
+      "triggersRequired": [
+        "valid_royal_naval_order",
+        "specified_competence",
+        "civil_rights",
+        "real_capacity"
+      ],
+      "relationshipIdeaRefs": [
+        "DP25-R10",
+        "DP25-R11"
+      ],
+      "status": "FUTURE_CONDITIONAL_CONFLICT",
+      "activated": false,
+      "triggerSatisfied": false,
+      "actualConflictEntityId": null,
+      "actualQuestId": null,
+      "publicHistoryEventId": null,
+      "determinedOutcome": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-C07",
+      "name": "Lo que una isla conserva",
+      "personRefs": [
+        "RUR-N07",
+        "RUR-N08",
+        "SYV-N03",
+        "SYV-N08"
+      ],
+      "triggersRequired": [
+        "verified_arven_rights",
+        "finite_stock",
+        "consent",
+        "verified_interisland_access"
+      ],
+      "relationshipIdeaRefs": [
+        "DP25-R14",
+        "DP25-R21",
+        "DP25-R28"
+      ],
+      "status": "FUTURE_CONDITIONAL_CONFLICT",
+      "activated": false,
+      "triggerSatisfied": false,
+      "actualConflictEntityId": null,
+      "actualQuestId": null,
+      "publicHistoryEventId": null,
+      "determinedOutcome": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-C08",
+      "name": "La noticia que cambió de manos",
+      "personRefs": [
+        "TAR-N08",
+        "TAR-N10",
+        "TRH-N10",
+        "SYV-N06"
+      ],
+      "triggersRequired": [
+        "real_message",
+        "sender_and_receiver",
+        "evidence_chain",
+        "elapsed_time",
+        "consent"
+      ],
+      "relationshipIdeaRefs": [
+        "DP25-R03",
+        "DP25-R08",
+        "DP25-R24"
+      ],
+      "status": "FUTURE_CONDITIONAL_CONFLICT",
+      "activated": false,
+      "triggerSatisfied": false,
+      "actualConflictEntityId": null,
+      "actualQuestId": null,
+      "publicHistoryEventId": null,
+      "determinedOutcome": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-C09",
+      "name": "Aprender sin deberse a todos",
+      "personRefs": [
+        "TAR-N05",
+        "VEL-N05",
+        "VEL-N08"
+      ],
+      "triggersRequired": [
+        "legal_age_capacity",
+        "consent",
+        "teacher",
+        "real_time",
+        "meeting_or_communication"
+      ],
+      "relationshipIdeaRefs": [
+        "DP25-R09",
+        "DP25-R23",
+        "DP25-R30"
+      ],
+      "status": "FUTURE_CONDITIONAL_CONFLICT",
+      "activated": false,
+      "triggerSatisfied": false,
+      "actualConflictEntityId": null,
+      "actualQuestId": null,
+      "publicHistoryEventId": null,
+      "determinedOutcome": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "DP25-C10",
+      "name": "El precio de una palabra",
+      "personRefs": [
+        "TRH-N01",
+        "RUR-N05",
+        "SYV-N04",
+        "VEL-N04"
+      ],
+      "triggersRequired": [
+        "identified_document",
+        "real_authority",
+        "rights",
+        "valid_contact"
+      ],
+      "relationshipIdeaRefs": [
+        "DP25-R05",
+        "DP25-R22",
+        "DP25-R25"
+      ],
+      "status": "FUTURE_CONDITIONAL_CONFLICT",
+      "activated": false,
+      "triggerSatisfied": false,
+      "actualConflictEntityId": null,
+      "actualQuestId": null,
+      "publicHistoryEventId": null,
+      "determinedOutcome": null,
+      "worldStateChanged": false
+    }
+  ],
+  "testOnlyScenes": [
+    {
+      "id": "DP25-E01",
+      "linkedConflictRef": "DP25-C01",
+      "personRefs": [
+        "VEL-N01",
+        "VEL-N02",
+        "TRH-N04"
+      ],
+      "status": "TEST_ONLY",
+      "everOccurred": false,
+      "actualSceneEntityId": null,
+      "worldStateEventId": null,
+      "worldStateChanged": false,
+      "knowledgeLeaked": false,
+      "realTravelPerformed": false,
+      "inventoryMutation": false
+    },
+    {
+      "id": "DP25-E02",
+      "linkedConflictRef": "DP25-C02",
+      "personRefs": [
+        "RUR-N06",
+        "TRH-N07",
+        "TRH-N04"
+      ],
+      "status": "TEST_ONLY",
+      "everOccurred": false,
+      "actualSceneEntityId": null,
+      "worldStateEventId": null,
+      "worldStateChanged": false,
+      "knowledgeLeaked": false,
+      "realTravelPerformed": false,
+      "inventoryMutation": false
+    },
+    {
+      "id": "DP25-E03",
+      "linkedConflictRef": "DP25-C03",
+      "personRefs": [
+        "RUR-N01",
+        "TRH-N08",
+        "TRH-N01"
+      ],
+      "status": "TEST_ONLY",
+      "everOccurred": false,
+      "actualSceneEntityId": null,
+      "worldStateEventId": null,
+      "worldStateChanged": false,
+      "knowledgeLeaked": false,
+      "realTravelPerformed": false,
+      "inventoryMutation": false
+    },
+    {
+      "id": "DP25-E04",
+      "linkedConflictRef": "DP25-C04",
+      "personRefs": [
+        "RUR-N04",
+        "RUR-N05",
+        "TRH-N07"
+      ],
+      "status": "TEST_ONLY",
+      "everOccurred": false,
+      "actualSceneEntityId": null,
+      "worldStateEventId": null,
+      "worldStateChanged": false,
+      "knowledgeLeaked": false,
+      "realTravelPerformed": false,
+      "inventoryMutation": false
+    },
+    {
+      "id": "DP25-E05",
+      "linkedConflictRef": "DP25-C05",
+      "personRefs": [
+        "TAR-N01",
+        "TAR-N04",
+        "SYV-N08"
+      ],
+      "status": "TEST_ONLY",
+      "everOccurred": false,
+      "actualSceneEntityId": null,
+      "worldStateEventId": null,
+      "worldStateChanged": false,
+      "knowledgeLeaked": false,
+      "realTravelPerformed": false,
+      "inventoryMutation": false
+    },
+    {
+      "id": "DP25-E06",
+      "linkedConflictRef": "DP25-C06",
+      "personRefs": [
+        "SYV-N07",
+        "SYV-N03",
+        "SYV-N04"
+      ],
+      "status": "TEST_ONLY",
+      "everOccurred": false,
+      "actualSceneEntityId": null,
+      "worldStateEventId": null,
+      "worldStateChanged": false,
+      "knowledgeLeaked": false,
+      "realTravelPerformed": false,
+      "inventoryMutation": false
+    },
+    {
+      "id": "DP25-E07",
+      "linkedConflictRef": "DP25-C07",
+      "personRefs": [
+        "RUR-N07",
+        "RUR-N08",
+        "SYV-N03"
+      ],
+      "status": "TEST_ONLY",
+      "everOccurred": false,
+      "actualSceneEntityId": null,
+      "worldStateEventId": null,
+      "worldStateChanged": false,
+      "knowledgeLeaked": false,
+      "realTravelPerformed": false,
+      "inventoryMutation": false
+    },
+    {
+      "id": "DP25-E08",
+      "linkedConflictRef": "DP25-C08",
+      "personRefs": [
+        "TAR-N08",
+        "TAR-N10",
+        "TRH-N10"
+      ],
+      "status": "TEST_ONLY",
+      "everOccurred": false,
+      "actualSceneEntityId": null,
+      "worldStateEventId": null,
+      "worldStateChanged": false,
+      "knowledgeLeaked": false,
+      "realTravelPerformed": false,
+      "inventoryMutation": false
+    },
+    {
+      "id": "DP25-E09",
+      "linkedConflictRef": "DP25-C09",
+      "personRefs": [
+        "TAR-N05",
+        "VEL-N05",
+        "VEL-N08"
+      ],
+      "status": "TEST_ONLY",
+      "everOccurred": false,
+      "actualSceneEntityId": null,
+      "worldStateEventId": null,
+      "worldStateChanged": false,
+      "knowledgeLeaked": false,
+      "realTravelPerformed": false,
+      "inventoryMutation": false
+    },
+    {
+      "id": "DP25-E10",
+      "linkedConflictRef": "DP25-C10",
+      "personRefs": [
+        "TRH-N01",
+        "RUR-N05",
+        "SYV-N04"
+      ],
+      "status": "TEST_ONLY",
+      "everOccurred": false,
+      "actualSceneEntityId": null,
+      "worldStateEventId": null,
+      "worldStateChanged": false,
+      "knowledgeLeaked": false,
+      "realTravelPerformed": false,
+      "inventoryMutation": false
+    }
+  ],
+  "delegatedDecisions": [
+    {
+      "id": "DP25-D01",
+      "option": "A",
+      "status": "EDITORIAL_APPROVED_BY_USER_DELEGATION",
+      "createsWorldState": false,
+      "grantsMergeAuthority": false
+    },
+    {
+      "id": "DP25-D02",
+      "option": "A",
+      "status": "EDITORIAL_APPROVED_BY_USER_DELEGATION",
+      "createsWorldState": false,
+      "grantsMergeAuthority": false
+    },
+    {
+      "id": "DP25-D03",
+      "option": "A",
+      "status": "EDITORIAL_APPROVED_BY_USER_DELEGATION",
+      "createsWorldState": false,
+      "grantsMergeAuthority": false
+    },
+    {
+      "id": "DP25-D04",
+      "option": "A",
+      "status": "EDITORIAL_APPROVED_BY_USER_DELEGATION",
+      "createsWorldState": false,
+      "grantsMergeAuthority": false
+    },
+    {
+      "id": "DP25-D05",
+      "option": "A",
+      "status": "EDITORIAL_APPROVED_BY_USER_DELEGATION",
+      "createsWorldState": false,
+      "grantsMergeAuthority": false
+    },
+    {
+      "id": "DP25-D06",
+      "option": "A",
+      "status": "EDITORIAL_APPROVED_BY_USER_DELEGATION",
+      "createsWorldState": false,
+      "grantsMergeAuthority": false
+    },
+    {
+      "id": "DP25-D07",
+      "option": "A",
+      "status": "EDITORIAL_APPROVED_BY_USER_DELEGATION",
+      "createsWorldState": false,
+      "grantsMergeAuthority": false
+    },
+    {
+      "id": "DP25-D08",
+      "option": "A",
+      "status": "EDITORIAL_APPROVED_BY_USER_DELEGATION",
+      "createsWorldState": false,
+      "grantsMergeAuthority": false
+    }
+  ],
+  "lockedUnknowns": {
+    "currentDarovanLord": null,
+    "royalCommanders": null,
+    "namedJudges": null,
+    "exactNpcAges": null,
+    "npcEntityIds": null,
+    "verifiedNpcHomes": null,
+    "actualKinshipGraph": null,
+    "actualRelationships": null,
+    "relationshipScores": null,
+    "npcCoordinates": null,
+    "householdCensus": null,
+    "validatedRuralSites": null,
+    "sourceWaterIds": null,
+    "parcelRights": null,
+    "materialInventory": null,
+    "pricesAndWages": null,
+    "timeToTravel": null,
+    "interIslandRoutes": null,
+    "bridgesAndFords": null,
+    "verifiedForestPlots": null,
+    "actualHistoricalEvents": null,
+    "publicQuestEvents": null
+  },
+  "runtime": {
+    "coreRpgIntegrated": false,
+    "godotIntegrated": false,
+    "newNpcs": 0,
+    "newHouseholds": 0,
+    "activeConflicts": 0,
+    "realQuests": 0,
+    "worldStateChanged": false,
+    "activatedRelationships": 0,
+    "physicalSettlements": 0,
+    "newRoutes": 0,
+    "newMilitaryOrders": 0,
+    "newCustoms": 0
+  },
+  "verification": {
+    "mustReconcilePrs": [
+      46,
+      47
+    ],
+    "requireFinalHeadCi": true,
+    "ciNotProofOfRuntime": true,
+    "dP26AuditRequired": true,
+    "mergeNeedsSeparateAuthorization": true
+  }
+}
