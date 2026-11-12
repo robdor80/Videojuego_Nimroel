@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp24_rural_editorial_v0.1",
+  "phase": "D.P24",
+  "version": "0.1.0",
+  "date": "2026-11-12",
+  "status": "EDITORIAL_AUTHOR_DELEGATED_SELECTED_NO_PHYSICAL_INSTANCES",
+  "authority": "AUTHORED_EDITORIAL_BASE_NOT_WORLDSTATE",
+  "delegation": "USER_EXPLICIT_CREATIVE_AUTONOMY_2026_11_12",
+  "merger": {
+    "authorized": false,
+    "baseBranch": "main",
+    "baseCommit": "512434957f248f2513761615a9685ddd6c49c65f",
+    "predecessorPhase": "D.P23",
+    "predecessorPr": 46,
+    "predecessorDraftWhenStarted": true,
+    "dependsOnResolutionBeforeTerritorialClosure": true
+  },
+  "sourcePaths": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d01_relief_profile_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d06_settlement_rules_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d08_population_services_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d09_governance_security_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_d10_culture_society_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp13_arven_island_relief_authorial_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Darovan/Datos operativos/darovan_dp15_settlement_service_network_v0.1.json"
+  ],
+  "inheritedCanon": {
+    "kingdom": "Norgard",
+    "territory": "Darovan",
+    "cities": [
+      "treihord",
+      "veldora",
+      "taramin",
+      "syvaris"
+    ],
+    "excludedCity": "karsath",
+    "arvenOwner": "casa_darovan",
+    "arvenMantoVerdeCoverApproxPercent": 90,
+    "arvenVillagesKnownGenerically": true,
+    "arvenVillagesMostlyInnerCoast": true,
+    "arvenNewSeaRouteAllowed": false,
+    "agujaInteriorPermanentSettlements": false,
+    "pilaresSingleForest": true,
+    "taraminSingleForest": true,
+    "belaraShallowIndustryOnly": true,
+    "treihordCrisolDuplicatesAllowed": false,
+    "royalNavyOfSyvarisAuthority": "CORONA_NORGARD",
+    "internalCustomsCreated": false,
+    "knownModalLinks": [
+      "d05_road_veldora_treihord",
+      "d05_belara_shallow_haul",
+      "d05_vena_restricted"
+    ]
+  },
+  "futureCommunities": [
+    {
+      "id": "RUR-S01",
+      "name": "Los Hojales",
+      "studyZoneId": "d01_belara_treihord",
+      "conditionalD06ModelId": "agricola",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "futureObjectiveOnly": true,
+      "limitation": "reservas versus intercambio",
+      "siteId": null,
+      "geometry": null,
+      "settlementClass": null,
+      "actualResidentCount": null,
+      "waterSourceId": null,
+      "verifiedLocalAccessId": null,
+      "verifiedRightsId": null,
+      "worldStateEntityId": null,
+      "instantiated": false,
+      "gatesPassed": false,
+      "physicalMapApproved": false,
+      "needsModelReassessmentIfEvidenceFails": false
+    },
+    {
+      "id": "RUR-S02",
+      "name": "Casas del Resguardo",
+      "studyZoneId": "d01_norte_transicion",
+      "conditionalD06ModelId": "ganadera",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "futureObjectiveOnly": true,
+      "limitation": "forraje y abrigo real",
+      "siteId": null,
+      "geometry": null,
+      "settlementClass": null,
+      "actualResidentCount": null,
+      "waterSourceId": null,
+      "verifiedLocalAccessId": null,
+      "verifiedRightsId": null,
+      "worldStateEntityId": null,
+      "instantiated": false,
+      "gatesPassed": false,
+      "physicalMapApproved": false,
+      "needsModelReassessmentIfEvidenceFails": false
+    },
+    {
+      "id": "RUR-S03",
+      "name": "Piedra de Sal",
+      "studyZoneId": "d01_taramin_norte_centro",
+      "conditionalD06ModelId": "pesquera",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "futureObjectiveOnly": true,
+      "limitation": "acceso pesquero por verificar; si falla, no se materializa como asentamiento pesquero",
+      "siteId": null,
+      "geometry": null,
+      "settlementClass": null,
+      "actualResidentCount": null,
+      "waterSourceId": null,
+      "verifiedLocalAccessId": null,
+      "verifiedRightsId": null,
+      "worldStateEntityId": null,
+      "instantiated": false,
+      "gatesPassed": false,
+      "physicalMapApproved": false,
+      "needsModelReassessmentIfEvidenceFails": true
+    },
+    {
+      "id": "RUR-S04",
+      "name": "La Cuesta de la Pesa",
+      "studyZoneId": "d01_valkram_oeste",
+      "conditionalD06ModelId": "minera_auxiliar",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "futureObjectiveOnly": true,
+      "limitation": "mina existente autorizada, nunca nueva bocamina",
+      "siteId": null,
+      "geometry": null,
+      "settlementClass": null,
+      "actualResidentCount": null,
+      "waterSourceId": null,
+      "verifiedLocalAccessId": null,
+      "verifiedRightsId": null,
+      "worldStateEntityId": null,
+      "instantiated": false,
+      "gatesPassed": false,
+      "physicalMapApproved": false,
+      "needsModelReassessmentIfEvidenceFails": false
+    },
+    {
+      "id": "RUR-S05",
+      "name": "Patio de las Tenazas",
+      "studyZoneId": "d01_belara_treihord",
+      "conditionalD06ModelId": "metalurgica_auxiliar",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "futureObjectiveOnly": true,
+      "limitation": "sin duplicar El Crisol ni acuñación",
+      "siteId": null,
+      "geometry": null,
+      "settlementClass": null,
+      "actualResidentCount": null,
+      "waterSourceId": null,
+      "verifiedLocalAccessId": null,
+      "verifiedRightsId": null,
+      "worldStateEntityId": null,
+      "instantiated": false,
+      "gatesPassed": false,
+      "physicalMapApproved": false,
+      "needsModelReassessmentIfEvidenceFails": false
+    },
+    {
+      "id": "RUR-S06",
+      "name": "El Claro Guardado",
+      "studyZoneId": "d01_pilares_sur",
+      "conditionalD06ModelId": "forestal_sostenible",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "futureObjectiveOnly": true,
+      "limitation": "Bosque de los Pilares único y extracción limitada",
+      "siteId": null,
+      "geometry": null,
+      "settlementClass": null,
+      "actualResidentCount": null,
+      "waterSourceId": null,
+      "verifiedLocalAccessId": null,
+      "verifiedRightsId": null,
+      "worldStateEntityId": null,
+      "instantiated": false,
+      "gatesPassed": false,
+      "physicalMapApproved": false,
+      "needsModelReassessmentIfEvidenceFails": false
+    },
+    {
+      "id": "RUR-S07",
+      "name": "La Última Sombra",
+      "studyZoneId": "d01_linde_caminos",
+      "conditionalD06ModelId": "servicio_camino",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "futureObjectiveOnly": true,
+      "limitation": "el camino regional no acredita una parada en el emplazamiento",
+      "siteId": null,
+      "geometry": null,
+      "settlementClass": null,
+      "actualResidentCount": null,
+      "waterSourceId": null,
+      "verifiedLocalAccessId": null,
+      "verifiedRightsId": null,
+      "worldStateEntityId": null,
+      "instantiated": false,
+      "gatesPassed": false,
+      "physicalMapApproved": false,
+      "needsModelReassessmentIfEvidenceFails": false
+    },
+    {
+      "id": "RUR-S08",
+      "name": "Orilla del Manto",
+      "studyZoneId": "d01_arven_contexto",
+      "conditionalD06ModelId": "insular_mixta",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "futureObjectiveOnly": true,
+      "limitation": "Arven Darovan; costa interior, Manto Verde 90 % y sin nuevo ferry",
+      "siteId": null,
+      "geometry": null,
+      "settlementClass": null,
+      "actualResidentCount": null,
+      "waterSourceId": null,
+      "verifiedLocalAccessId": null,
+      "verifiedRightsId": null,
+      "worldStateEntityId": null,
+      "instantiated": false,
+      "gatesPassed": false,
+      "physicalMapApproved": false,
+      "needsModelReassessmentIfEvidenceFails": false
+    },
+    {
+      "id": "RUR-S09",
+      "name": "Las Piedras Quietas",
+      "studyZoneId": "d01_elyra_paso_peninsular",
+      "conditionalD06ModelId": "enclave_especializado",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "futureObjectiveOnly": true,
+      "limitation": "enclave no es aldea ni paso acreditado",
+      "siteId": null,
+      "geometry": null,
+      "settlementClass": null,
+      "actualResidentCount": null,
+      "waterSourceId": null,
+      "verifiedLocalAccessId": null,
+      "verifiedRightsId": null,
+      "worldStateEntityId": null,
+      "instantiated": false,
+      "gatesPassed": false,
+      "physicalMapApproved": false,
+      "needsModelReassessmentIfEvidenceFails": false
+    }
+  ],
+  "materialChains": [
+    {
+      "id": "RUR-C01",
+      "status": "DESIGN_CONDITIONAL_NOT_ACTIVE",
+      "realStockIds": [],
+      "realProviderIds": [],
+      "transactionIds": [],
+      "realOutputQuantity": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "RUR-C02",
+      "status": "DESIGN_CONDITIONAL_NOT_ACTIVE",
+      "realStockIds": [],
+      "realProviderIds": [],
+      "transactionIds": [],
+      "realOutputQuantity": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "RUR-C03",
+      "status": "DESIGN_CONDITIONAL_NOT_ACTIVE",
+      "realStockIds": [],
+      "realProviderIds": [],
+      "transactionIds": [],
+      "realOutputQuantity": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "RUR-C04",
+      "status": "DESIGN_CONDITIONAL_NOT_ACTIVE",
+      "realStockIds": [],
+      "realProviderIds": [],
+      "transactionIds": [],
+      "realOutputQuantity": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "RUR-C05",
+      "status": "DESIGN_CONDITIONAL_NOT_ACTIVE",
+      "realStockIds": [],
+      "realProviderIds": [],
+      "transactionIds": [],
+      "realOutputQuantity": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "RUR-C06",
+      "status": "DESIGN_CONDITIONAL_NOT_ACTIVE",
+      "realStockIds": [],
+      "realProviderIds": [],
+      "transactionIds": [],
+      "realOutputQuantity": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "RUR-C07",
+      "status": "DESIGN_CONDITIONAL_NOT_ACTIVE",
+      "realStockIds": [],
+      "realProviderIds": [],
+      "transactionIds": [],
+      "realOutputQuantity": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "RUR-C08",
+      "status": "DESIGN_CONDITIONAL_NOT_ACTIVE",
+      "realStockIds": [],
+      "realProviderIds": [],
+      "transactionIds": [],
+      "realOutputQuantity": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "RUR-C09",
+      "status": "DESIGN_CONDITIONAL_NOT_ACTIVE",
+      "realStockIds": [],
+      "realProviderIds": [],
+      "transactionIds": [],
+      "realOutputQuantity": null,
+      "worldStateChanged": false
+    },
+    {
+      "id": "RUR-C10",
+      "status": "DESIGN_CONDITIONAL_NOT_ACTIVE",
+      "realStockIds": [],
+      "realProviderIds": [],
+      "transactionIds": [],
+      "realOutputQuantity": null,
+      "worldStateChanged": false
+    }
+  ],
+  "biographyBases": [
+    {
+      "id": "RUR-N01",
+      "name": "Mara Lenvar",
+      "communityRef": "RUR-S01",
+      "role": "cultivadora y administradora de reserva",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N02",
+      "name": "Eren Caldis",
+      "communityRef": "RUR-S07",
+      "role": "reparador itinerante",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N03",
+      "name": "Dela Farren",
+      "communityRef": "RUR-S01",
+      "role": "conservadora de alimentos",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N04",
+      "name": "Toren Valis",
+      "communityRef": "RUR-S06",
+      "role": "trabajador forestal autorizado",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N05",
+      "name": "Saira Dren",
+      "communityRef": "RUR-S06",
+      "role": "lectora de contratos de uso",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N06",
+      "name": "Olven Seran",
+      "communityRef": "RUR-S04",
+      "role": "auxiliar de suministro de mina existente",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N07",
+      "name": "Mira Kelen",
+      "communityRef": "RUR-S08",
+      "role": "aprovechamiento insular prudente",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N08",
+      "name": "Neris Salvar",
+      "communityRef": "RUR-S08",
+      "role": "reparación de redes condicional",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N09",
+      "name": "Elma Varen",
+      "communityRef": "RUR-S03",
+      "role": "cuidadora de animales condicional",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N10",
+      "name": "Cail Breno",
+      "communityRef": "RUR-S03",
+      "role": "aspirante a aprendiz de reparación",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N11",
+      "name": "Arel Nivas",
+      "communityRef": "RUR-S02",
+      "role": "gestión doméstica de reservas",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    },
+    {
+      "id": "RUR-N12",
+      "name": "Veya Coren",
+      "communityRef": "RUR-S09",
+      "role": "guía eventual si ruta acreditada",
+      "editorialStatus": "AUTHORED_EDITORIAL_BASE",
+      "biographyDoc": "04_personas_y_relaciones.md",
+      "personEntityId": null,
+      "householdEntityId": null,
+      "worldStateEntityId": null,
+      "npcInstantiated": false,
+      "knownWorldFacts": []
+    }
+  ],
+  "relationshipIdeas": [
+    {
+      "id": "RUR-R01",
+      "personRefs": [
+        "RUR-N01",
+        "RUR-N03"
+      ],
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actualRelationshipId": null
+    },
+    {
+      "id": "RUR-R02",
+      "personRefs": [
+        "RUR-N04",
+        "RUR-N05"
+      ],
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actualRelationshipId": null
+    },
+    {
+      "id": "RUR-R03",
+      "personRefs": [
+        "RUR-N07",
+        "RUR-N08"
+      ],
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actualRelationshipId": null
+    },
+    {
+      "id": "RUR-R04",
+      "personRefs": [
+        "RUR-N09",
+        "RUR-N10"
+      ],
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actualRelationshipId": null
+    },
+    {
+      "id": "RUR-R05",
+      "personRefs": [
+        "RUR-N11",
+        "RUR-N12"
+      ],
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actualRelationshipId": null
+    },
+    {
+      "id": "RUR-R06",
+      "personRefs": [
+        "RUR-N02",
+        "RUR-N06"
+      ],
+      "status": "FUTURE_CONDITIONAL_RELATION",
+      "actualRelationshipId": null
+    }
+  ],
+  "personalMemories": [
+    {
+      "id": "RUR-M01",
+      "title": "La venta aplazada",
+      "personRef": "RUR-N01",
+      "status": "AUTHORED_EDITORIAL_BASE_PRIVATE_MEMORY",
+      "publicHistory": false,
+      "historicalDate": null,
+      "worldStateMemoryId": null
+    },
+    {
+      "id": "RUR-M02",
+      "title": "La marca en la madera",
+      "personRef": "RUR-N04",
+      "status": "AUTHORED_EDITORIAL_BASE_PRIVATE_MEMORY",
+      "publicHistory": false,
+      "historicalDate": null,
+      "worldStateMemoryId": null
+    },
+    {
+      "id": "RUR-M03",
+      "title": "La conversación de la orilla",
+      "personRef": "RUR-N07",
+      "status": "AUTHORED_EDITORIAL_BASE_PRIVATE_MEMORY",
+      "publicHistory": false,
+      "historicalDate": null,
+      "worldStateMemoryId": null
+    },
+    {
+      "id": "RUR-M04",
+      "title": "La predicción fallida",
+      "personRef": "RUR-N11",
+      "status": "AUTHORED_EDITORIAL_BASE_PRIVATE_MEMORY",
+      "publicHistory": false,
+      "historicalDate": null,
+      "worldStateMemoryId": null
+    }
+  ],
+  "conditionalArcs": [
+    {
+      "id": "RUR-H01",
+      "title": "Dos cuentas, un solo saco",
+      "personRefs": [
+        "RUR-N01",
+        "RUR-N03"
+      ],
+      "status": "FUTURE_CONDITIONAL_ARC",
+      "activated": false,
+      "worldStateQuestId": null,
+      "triggerSatisfied": false
+    },
+    {
+      "id": "RUR-H02",
+      "title": "El claro que debía quedarse",
+      "personRefs": [
+        "RUR-N04",
+        "RUR-N05"
+      ],
+      "status": "FUTURE_CONDITIONAL_ARC",
+      "activated": false,
+      "worldStateQuestId": null,
+      "triggerSatisfied": false
+    },
+    {
+      "id": "RUR-H03",
+      "title": "El precio de una noche",
+      "personRefs": [
+        "RUR-N02"
+      ],
+      "status": "FUTURE_CONDITIONAL_ARC",
+      "activated": false,
+      "worldStateQuestId": null,
+      "triggerSatisfied": false
+    },
+    {
+      "id": "RUR-H04",
+      "title": "La orilla sin travesía",
+      "personRefs": [
+        "RUR-N07",
+        "RUR-N08"
+      ],
+      "status": "FUTURE_CONDITIONAL_ARC",
+      "activated": false,
+      "worldStateQuestId": null,
+      "triggerSatisfied": false
+    },
+    {
+      "id": "RUR-H05",
+      "title": "Aprender a marcharse",
+      "personRefs": [
+        "RUR-N09",
+        "RUR-N10"
+      ],
+      "status": "FUTURE_CONDITIONAL_ARC",
+      "activated": false,
+      "worldStateQuestId": null,
+      "triggerSatisfied": false
+    }
+  ],
+  "testOnlyScenes": [
+    {
+      "id": "RUR-E01",
+      "title": "La reserva",
+      "personRefs": [
+        "RUR-N01",
+        "RUR-N03"
+      ],
+      "status": "TEST_ONLY",
+      "completedInWorld": false,
+      "worldStateEventId": null,
+      "ledgerMutation": false,
+      "unverifiedTravelAllowed": false
+    },
+    {
+      "id": "RUR-E02",
+      "title": "La corta",
+      "personRefs": [
+        "RUR-N04",
+        "RUR-N05"
+      ],
+      "status": "TEST_ONLY",
+      "completedInWorld": false,
+      "worldStateEventId": null,
+      "ledgerMutation": false,
+      "unverifiedTravelAllowed": false
+    },
+    {
+      "id": "RUR-E03",
+      "title": "La noche",
+      "personRefs": [
+        "RUR-N02"
+      ],
+      "status": "TEST_ONLY",
+      "completedInWorld": false,
+      "worldStateEventId": null,
+      "ledgerMutation": false,
+      "unverifiedTravelAllowed": false
+    },
+    {
+      "id": "RUR-E04",
+      "title": "La caja de herramientas",
+      "personRefs": [
+        "RUR-N02",
+        "RUR-N06"
+      ],
+      "status": "TEST_ONLY",
+      "completedInWorld": false,
+      "worldStateEventId": null,
+      "ledgerMutation": false,
+      "unverifiedTravelAllowed": false
+    },
+    {
+      "id": "RUR-E05",
+      "title": "La sed",
+      "personRefs": [
+        "RUR-N09",
+        "RUR-N10"
+      ],
+      "status": "TEST_ONLY",
+      "completedInWorld": false,
+      "worldStateEventId": null,
+      "ledgerMutation": false,
+      "unverifiedTravelAllowed": false
+    },
+    {
+      "id": "RUR-E06",
+      "title": "El paso",
+      "personRefs": [
+        "RUR-N11",
+        "RUR-N12"
+      ],
+      "status": "TEST_ONLY",
+      "completedInWorld": false,
+      "worldStateEventId": null,
+      "ledgerMutation": false,
+      "unverifiedTravelAllowed": false
+    },
+    {
+      "id": "RUR-E07",
+      "title": "La costa interior",
+      "personRefs": [
+        "RUR-N07",
+        "RUR-N08"
+      ],
+      "status": "TEST_ONLY",
+      "completedInWorld": false,
+      "worldStateEventId": null,
+      "ledgerMutation": false,
+      "unverifiedTravelAllowed": false
+    },
+    {
+      "id": "RUR-E08",
+      "title": "El precio del frío",
+      "personRefs": [
+        "RUR-N11"
+      ],
+      "status": "TEST_ONLY",
+      "completedInWorld": false,
+      "worldStateEventId": null,
+      "ledgerMutation": false,
+      "unverifiedTravelAllowed": false
+    }
+  ],
+  "delegatedDecisions": [
+    {
+      "id": "DAR-DP24-01",
+      "option": "A",
+      "status": "EDITORIAL_SELECTED_UNDER_EXPLICIT_CREATIVE_DELEGATION",
+      "physicalMaterializationAuthorized": false
+    },
+    {
+      "id": "DAR-DP24-02",
+      "option": "A",
+      "status": "EDITORIAL_SELECTED_UNDER_EXPLICIT_CREATIVE_DELEGATION",
+      "physicalMaterializationAuthorized": false
+    },
+    {
+      "id": "DAR-DP24-03",
+      "option": "A",
+      "status": "EDITORIAL_SELECTED_UNDER_EXPLICIT_CREATIVE_DELEGATION",
+      "physicalMaterializationAuthorized": false
+    },
+    {
+      "id": "DAR-DP24-04",
+      "option": "A",
+      "status": "EDITORIAL_SELECTED_UNDER_EXPLICIT_CREATIVE_DELEGATION",
+      "physicalMaterializationAuthorized": false
+    },
+    {
+      "id": "DAR-DP24-05",
+      "option": "A",
+      "status": "EDITORIAL_SELECTED_UNDER_EXPLICIT_CREATIVE_DELEGATION",
+      "physicalMaterializationAuthorized": false
+    },
+    {
+      "id": "DAR-DP24-06",
+      "option": "A",
+      "status": "EDITORIAL_SELECTED_UNDER_EXPLICIT_CREATIVE_DELEGATION",
+      "physicalMaterializationAuthorized": false
+    },
+    {
+      "id": "DAR-DP24-07",
+      "option": "A",
+      "status": "EDITORIAL_SELECTED_UNDER_EXPLICIT_CREATIVE_DELEGATION",
+      "physicalMaterializationAuthorized": false
+    },
+    {
+      "id": "DAR-DP24-08",
+      "option": "A",
+      "status": "EDITORIAL_SELECTED_UNDER_EXPLICIT_CREATIVE_DELEGATION",
+      "physicalMaterializationAuthorized": false
+    },
+    {
+      "id": "DAR-DP24-09",
+      "option": "A",
+      "status": "EDITORIAL_SELECTED_UNDER_EXPLICIT_CREATIVE_DELEGATION",
+      "physicalMaterializationAuthorized": false
+    }
+  ],
+  "lockedUnknowns": {
+    "communityLocations": null,
+    "communityCoordinates": null,
+    "totalRuralPopulation": null,
+    "siteWaterSources": null,
+    "siteRights": null,
+    "localRouteGeometry": null,
+    "bridgeAndFordLocations": null,
+    "ruralServiceProviderIds": null,
+    "actualLivestock": null,
+    "actualCrops": null,
+    "actualMineralFlows": null,
+    "realHouseholdMembers": null,
+    "materialChainActualQuantities": null,
+    "travelTimes": null,
+    "tradePrices": null,
+    "settlementBuildingIds": null
+  },
+  "runtime": {
+    "coreRpgIntegrated": false,
+    "godotIntegrated": false,
+    "generatedSettlements": 0,
+    "instantiatedNpcs": 0,
+    "activeQuests": 0,
+    "worldStateChanged": false
+  }
+}
