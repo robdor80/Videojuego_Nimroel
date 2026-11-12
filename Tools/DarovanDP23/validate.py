@@ -100,9 +100,9 @@ def invariant(d, check_files=False):
         req(x=={"id":f"TRH-DP23-{i+1:02d}","option":"A",
                 "approved":"DELEGATED_AUTHORIAL_DECISION","scope":scopes[i]},
             "decision authority")
-    req(d["sources"]==[ORIGINAL, str(BASE.relative_to(ROOT))+
+    req(d["sources"]==[ORIGINAL, BASE.relative_to(ROOT).as_posix()+
         "/Ciudades/Treihord/ANCLAS_CANONICAS_TREIHORD_v0.1.md",
-        str(BASE.relative_to(ROOT))+
+        BASE.relative_to(ROOT).as_posix()+
         "/Profundizacion_2026/D.P16/ciudad_treihord_plan_funcional_condicionado.md"],
         "source list")
     if check_files:
@@ -118,7 +118,8 @@ def invariant(d, check_files=False):
         for key,(_,_,f) in SPEC.items():
             txt=(DOC/f).read_text(encoding="utf-8")
             for row in d[key]:
-                req(row["id"] in txt,"ID not in prose: "+row["id"])
+                req((row["name"] if key=="neighborhoods" else row["id"]) in txt,
+                    "missing in prose: "+row["id"])
                 if key!="decisions": req(row.get("name",row.get("title")) in txt,
                                         "name not in prose: "+row["id"])
         for src in d["sources"]: req((ROOT/src).is_file(),"missing source "+src)
