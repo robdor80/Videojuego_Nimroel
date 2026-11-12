@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "documentId": "darovan_dp26_cierre_editorial_v0.1",
+  "phase": "D.P26",
+  "date": "2026-11-12",
+  "scope": "INTEGRAL_EDITORIAL_AUDIT_NOT_RUNTIME",
+  "baseline": {
+    "branch": "main",
+    "sha": "512434957f248f2513761615a9685ddd6c49c65f",
+    "mergedEditorialPhases": [
+      "D.P20",
+      "D.P21",
+      "D.P22"
+    ]
+  },
+  "sourcePrPins": [
+    {
+      "phase": "D.P23",
+      "pr": 46,
+      "sha": "6ee4f4a672a138e29feefb558e41bbf10fbce64e",
+      "wasDraftAtAudit": true,
+      "mergedIntoBaseline": false
+    },
+    {
+      "phase": "D.P24",
+      "pr": 47,
+      "sha": "b0b14db66f1cf1ca0e9eb27f28cde403e3e16a89",
+      "wasDraftAtAudit": true,
+      "mergedIntoBaseline": false
+    },
+    {
+      "phase": "D.P25",
+      "pr": 48,
+      "sha": "2288d79ab03ed7d5a7509943ec140d3387b8f76f",
+      "wasDraftAtAudit": true,
+      "mergedIntoBaseline": false
+    }
+  ],
+  "biographies": {
+    "sourcesByPhase": {
+      "D.P20": 10,
+      "D.P21": 10,
+      "D.P22": 10,
+      "D.P23": 10,
+      "D.P24": 12
+    },
+    "totalUnique": 52,
+    "selectedByDP25": 27,
+    "notSelected": 25
+  },
+  "proposals": {
+    "namedRuralCommunities": 9,
+    "treihordExistingNeighborhoods": 8,
+    "treihordFutureEstablishments": 12,
+    "veldoraFutureEstablishments": 12,
+    "taraminFutureEstablishments": 12,
+    "syvarisFutureEstablishments": 12,
+    "proposedRelationships": 30,
+    "proposedTerritorialConflicts": 10,
+    "testOnlyDP25Scenes": 10
+  },
+  "canonicalCities": [
+    "treihord",
+    "veldora",
+    "taramin",
+    "syvaris"
+  ],
+  "originalTreihordBlob": "cfc1d664ac87e1f1521a79b6299cdf1a71b45de5",
+  "protected": {
+    "arvenUnderDarovan": true,
+    "belaraContiguousNotCrossingTreihord": true,
+    "taraminThalenTwoBranchesOneRiver": true,
+    "syvarisNorgardRoyalNavy": true,
+    "noDarovanMint": true,
+    "laVenaRestricted": true,
+    "noInternalCustoms": true,
+    "angujasPermanentInteriorSettlements": false,
+    "noUnverifiedNewRoutes": true
+  },
+  "delivery": {
+    "editorialSufficient": true,
+    "administrativeIntegrationComplete": false,
+    "runtimePlayable": false,
+    "newWorldStateEntities": 0,
+    "activatedNewRelationships": 0,
+    "activatedNewConflicts": 0,
+    "newQuests": 0,
+    "authorAuthorizedMerges": false
+  },
+  "unresolved": {
+    "cartographicGeometry": null,
+    "bridgeFords": null,
+    "riverMouthPrecision": null,
+    "exactSettlementSites": null,
+    "realNpcEntities": null,
+    "actualKinships": null,
+    "actualRelationships": null,
+    "householdCensus": null,
+    "inventoryStocks": null,
+    "newSeaRoutes": null,
+    "publicHistoricalDates": null,
+    "currentDarovanRuler": null,
+    "finalAdministrativeMergeSha": null
+  },
+  "requiredIntegrationPrOrder": [
+    46,
+    47,
+    48,
+    "D.P26"
+  ],
+  "ciRequirements": {
+    "windows2022": true,
+    "ubuntu2404": true,
+    "checkSourceCommits": true,
+    "recheckAfterMerges": true,
+    "doesNotProveGodotAndroidRuntime": true
+  },
+  "classification": {
+    "editorial": "APTO_CON_DEPENDENCIAS",
+    "administrative": "PENDING_AUTHOR_AND_SEQUENTIAL_MERGES",
+    "runtime": "NOT_IMPLEMENTED_BY_DP26"
+  }
+}
