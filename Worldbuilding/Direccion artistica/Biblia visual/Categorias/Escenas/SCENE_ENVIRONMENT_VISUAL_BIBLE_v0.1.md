@@ -115,6 +115,33 @@ Si no existe plano aprobado del edificio, el diseño es **hipótesis visual revi
 
 La vegetación y la fauna deben corresponder a bioma, región, estación y actividad. No añadir animales por decoración o porque sean típicos de una fantasía genérica.
 
+
+### 9.1. Integridad anatómica y separación de animales — control obligatorio
+
+Los generadores de imágenes pueden **fusionar animales próximos** o inventar anatomías imposibles. Una gallina puede aparecer con **dos cuellos o dos cabezas** que parten de un mismo cuerpo; dos ovejas juntas pueden compartir lomo, cabeza, patas o cuello; también pueden aparecer extremidades duplicadas, cuerpos entrelazados, colas mal conectadas o transiciones donde no es posible distinguir a qué animal pertenece cada parte.
+
+**No aceptar estas anomalías como una licencia artística ni pasarlas por alto por tratarse de elementos secundarios o lejanos.** Toda criatura visible, aunque ocupe pocos píxeles, debe conservar una anatomía individual físicamente plausible y una silueta interpretable.
+
+**Reglas de generación:**
+
+- Formular los animales como **individuos independientes**, con número y especie identificables, posturas naturales y separación espacial suficiente cuando compartan plano.
+- Evitar amontonamientos, cruces de siluetas, superposiciones ambiguas y grupos densos en primer plano o plano medio; mantener distancias visuales que permitan distinguir cuerpos y cuellos.
+- No usar el mero número de patas visibles como prueba de error: la perspectiva y la oclusión pueden ocultar extremidades. Lo importante es que **ninguna extremidad, cabeza, cuello o cuerpo aparezca duplicado, compartido, imposible o conectado al individuo equivocado**.
+- Para aves comprobar explícitamente cabeza, pico, **un cuello continuo por ave**, tronco, alas y patas en una misma anatomía coherente. Para cuadrúpedos, revisar cabeza, cuello, tórax, tronco, grupa y extremidades con articulaciones plausibles.
+- Extender el mismo criterio a personas, monturas, animales de carga y grupos de criaturas; evitar manos, piernas, torsos y rostros fusionados cuando haya solapamientos.
+
+**Control visual antes de entregar un asset:**
+
+1. Inspeccionar la imagen completa y **ampliar las regiones que contengan animales**, especialmente cercas, corrales, huertos, caminos y agrupaciones de ganado o aves.
+2. Contar individuos y comprobar que cada cabeza y cuello pertenecen a **un único cuerpo**, que las articulaciones son plausibles y que los solapamientos no crean una figura híbrida.
+3. Si una postura o superposición no permite verificar la anatomía, clasificarla como **anomalía potencial**, no como aprobada por defecto.
+4. Ante fusión, duplicación o deformación evidente: **REJECTED para ese candidato**; corregir mediante edición/regeneración y volver a revisar **el PNG final**, no solo el prompt.
+5. Registrar la revisión en las notas o informe de identidad visual cuando el asset incluya animales destacados. La validación técnica de NAP **no sustituye este control artístico**.
+
+**Regla negativa para los prompts:** «Sin animales fusionados, sin cuerpos compartidos, sin cabezas ni cuellos duplicados, sin extremidades extra, sin anatomías híbridas, sin superposiciones ambiguas; cada animal es un individuo íntegro y reconocible».
+
+Esta precaución nace de una incidencia observada en la primera imagen ambiental de la aldea V1 de Treskal, **scene_treskal_v1_village_approach_day_001**, donde se detectaron posibles fusiones anatómicas en gallinas y ovejas. El caso es una alerta de calidad visual, **no un cambio del canon biológico de Nimroel**.
+
 La población visible ha de ser proporcional a la localidad y diversa en edad, complexión, profesión y presentación. Para personas reconocibles heredar las reglas de Retratos NPC y cualquier identidad existente; los extras ambientales no crean personajes históricos permanentes.
 
 Aplicar la distinción de la Biblia General entre **pátina de ropa A–D** y **suciedad/presentación de contexto 1–5** cuando la imagen incluya personajes. No extrapolar esta escala literalmente al paisaje o los edificios.
@@ -265,6 +292,7 @@ La existencia de un fondo 2D no certifica aún el generador espacial ni la simul
 5. ¿Se ha evitado convertir un servicio opcional en obligatorio?
 6. ¿Es naturalista la luz, el color y el desgaste?
 7. ¿Población, animales y objetos tienen función plausible?
+7a. ¿Se han ampliado y examinado los animales y grupos de figuras para descartar **dobles cabezas/cuello, extremidades extra, cuerpos fusionados o solapamientos anatómicamente imposibles**? Ante un defecto visible, ¿se ha rechazado y corregido el candidato?
 8. ¿No hay heráldica, texto, religión o magia inventados?
 9. ¿Se respetan el estado y el conocimiento visibles para el jugador?
 10. ¿La composición sirve al Host 2D y no simula gameplay inexistente?
