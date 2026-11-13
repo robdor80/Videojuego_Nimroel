@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "documentId": "galdren_g00",
+  "phase": "G00",
+  "version": "0.1.0",
+  "date": "2026-11-13",
+  "runtimeEnabled": false,
+  "status": "DOCUMENTARY_PLANNING_ONLY",
+  "authorApproval": "G00_APPROVED_WORK; NEW_CANON_NOT_RATIFIED",
+  "provenance": {
+    "repository": "robdor80/Videojuego_Nimroel",
+    "baselineMainSha": "b3edd92ab164ad4b4c2ee0c67e8048386a3d950f",
+    "authorTerritorialMap": "Adjunto en conversación del 13-11-2026: contorno rojo autoral aproximado sobre mapa Nimroel",
+    "imageCommittedToRepository": false,
+    "redPerimeterIsApproximate": true,
+    "metricGeometryValidated": false,
+    "coordinatesValidated": false,
+    "borderTopologyValidated": false,
+    "scaleForTerritoryValidated": false
+  },
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_galdren",
+    "localidad",
+    "world_state"
+  ],
+  "house": {
+    "id": "casa_galdren",
+    "seatId": "arleon",
+    "polityId": "norgard",
+    "sovereign": false,
+    "heraldry": {
+      "figure": "toro",
+      "metal": "hierro_ennegrecido_acero_oscuro_envejecido",
+      "field": "dorado_trigo_envejecido"
+    },
+    "economy": [
+      "agricultura",
+      "ganaderia",
+      "mineria_zanthir",
+      "armas_y_herramientas_zanthir"
+    ]
+  },
+  "locations": [
+    {
+      "id": "arleon",
+      "name": "Arleon",
+      "geographicContextHouse": "casa_galdren",
+      "jurisdictionOwner": "casa_galdren",
+      "procedural": false,
+      "role": "SEDE",
+      "settlementScale": "UNKNOWN"
+    },
+    {
+      "id": "zanthir",
+      "name": "Zanthir",
+      "geographicContextHouse": "casa_galdren",
+      "jurisdictionOwner": "casa_galdren",
+      "procedural": false,
+      "role": "NUCLEO_MINERO_INDUSTRIAL_NORTE",
+      "settlementScale": "UNKNOWN"
+    },
+    {
+      "id": "forja_estelar",
+      "name": "Forja Estelar",
+      "geographicContextHouse": "casa_galdren",
+      "jurisdictionOwner": "norgard",
+      "peacetimeTerritorialAdministration": "casa_galdren",
+      "wartimeStrategicCommand": "crown_aethros_hallheim",
+      "procedural": false,
+      "role": "INSTALACION_ESTRATEGICA",
+      "settlementScale": "NOT_A_SETTLEMENT"
+    },
+    {
+      "id": "treskal",
+      "name": "Treskal",
+      "geographicContextHouse": "casa_valrik",
+      "jurisdictionOwner": "casa_valrik",
+      "insideGaldrenPerimeter": false,
+      "procedural": false,
+      "role": "SEDE_VALRIK"
+    },
+    {
+      "id": "hallheim",
+      "name": "Hallheim",
+      "geographicContextHouse": "casa_aethros",
+      "jurisdictionOwner": "crown_aethros",
+      "insideGaldrenPerimeter": false,
+      "procedural": false,
+      "role": "CAPITAL_REINO"
+    },
+    {
+      "id": "dorth",
+      "name": "Dorth",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "casa_edranor",
+      "insideGaldrenPerimeter": false,
+      "procedural": false,
+      "role": "SEDE_EDRANOR"
+    }
+  ],
+  "protectedIds": [
+    "arleon",
+    "zanthir",
+    "forja_estelar",
+    "treskal",
+    "hallheim",
+    "dorth"
+  ],
+  "government": {
+    "singleCrown": true,
+    "singleLaw": true,
+    "houseSovereign": false,
+    "ownCurrency": false,
+    "internalCustoms": false,
+    "independentWarPower": false,
+    "crownWartimeForgeCommand": true,
+    "royalJustice": true
+  },
+  "canonToponyms": [
+    {
+      "id": "montes_azurios",
+      "name": "Montes Azurios",
+      "kind": "cordillera",
+      "evidence": "barrera centro/oriente; fuente exclusiva de Metal Estelar",
+      "sourceClass": "ORIGEN_ENANO_CANON",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "montes_invernos",
+      "name": "Montes Invernos",
+      "kind": "cordillera",
+      "evidence": "barrera climática norte/sur; no frontera legal exacta",
+      "sourceClass": "ORIGEN_HUMANO_CANON",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "montanas_velaris",
+      "name": "Montañas Velaris",
+      "kind": "cordillera",
+      "evidence": "sistema al sur de Azurios; alcance administrativo sin resolver",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "paso_vareth",
+      "name": "Paso de Vareth",
+      "kind": "paso",
+      "evidence": "entre Azurios y Velaris; sin adscripción Galdren automática",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "rio_caleran",
+      "name": "Río Caleran",
+      "kind": "rio",
+      "evidence": "nace vertiente occidental Azurios; cruza Arleon; llega a Suthiros",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "brazo_occidental_caleran",
+      "name": "Brazo occidental del Caleran",
+      "kind": "brazo",
+      "evidence": "división aguas abajo; no río distinto",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "brazo_oriental_caleran",
+      "name": "Brazo oriental del Caleran",
+      "kind": "brazo",
+      "evidence": "división aguas abajo; no río distinto",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "rio_vornarsk",
+      "name": "Río Vornarsk",
+      "kind": "rio",
+      "evidence": "entorno Zanthir; hielo invernal; hidrónimo enano",
+      "sourceClass": "ORIGEN_ENANO_CANON",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "rio_keldarsk",
+      "name": "Río Keldarsk",
+      "kind": "rio",
+      "evidence": "entorno Zanthir; hielo invernal; hidrónimo enano",
+      "sourceClass": "ORIGEN_ENANO_CANON",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "bahia_zanthir",
+      "name": "Bahía de Zanthir",
+      "kind": "bahia",
+      "evidence": "norte, abierta al Mar del Norte; hielo dificulta navegación",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "mar_del_norte",
+      "name": "Mar del Norte",
+      "kind": "mar",
+      "evidence": "costa norte de Norgard; no implica soberanía sobre todas sus riberas",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "mar_suthiros",
+      "name": "Mar de Suthiros",
+      "kind": "mar",
+      "evidence": "recibe desembocadura del Caleran; ámbito costero político sin fijar",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "bosque_quebrado",
+      "name": "Bosque Quebrado",
+      "kind": "bosque",
+      "evidence": "este de Azurios, Caleran lo divide; territorio caballar",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "bosque_caminoreal",
+      "name": "Bosque del Camino Real",
+      "kind": "bosque",
+      "evidence": "franja próxima a Velaris y brazo occidental del Caleran",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "bosque_riberas",
+      "name": "Bosque de las Riberas",
+      "kind": "bosque",
+      "evidence": "en torno al brazo oriental del Caleran; paisaje agrario",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "rios_sareno_theleno",
+      "name": "Ríos Sareno y Theleno",
+      "kind": "rios",
+      "evidence": "par de ríos asociado a Treskal/Valrik, NO Galdren",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "gemelos_treskal",
+      "name": "Los Gemelos de Treskal",
+      "kind": "sobrenombre",
+      "evidence": "Sareno y Theleno, región de Treskal; fuera de apropiación Galdren",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    },
+    {
+      "id": "bosque_gemelos",
+      "name": "Bosque de los Gemelos",
+      "kind": "bosque",
+      "evidence": "asociado a los ríos de Treskal; sin adscripción Galdren",
+      "sourceClass": "CANON_REPO",
+      "canonStatus": "CANON_REPO",
+      "galdrenJurisdiction": "NOT_INFERRED",
+      "newlyCoined": false
+    }
+  ],
+  "toponymPolicy": {
+    "newNamesRequireRatification": true,
+    "fictionalEtymologyWithoutSourceForbidden": true,
+    "legalBordersNotDerivedFromNaturalFeatures": true,
+    "unverifiedProposalsCount": 0
+  },
+  "plannedPhases": [
+    "G00",
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09",
+    "G10",
+    "G11",
+    "G12"
+  ],
+  "unknown": [
+    "BORDER_NORTH",
+    "BORDER_AETHROS",
+    "BORDER_EDRANOR",
+    "BORDER_VALRIK",
+    "BORDER_SOUTH_COAST",
+    "MAP_GEOREFERENCE",
+    "ARLEON_STREET_LAYOUT",
+    "ZANTHIR_SETTLEMENT_CLASS",
+    "FORGE_OPERATIONAL_PROTOCOL",
+    "FORGE_OWNERSHIP_TITLE",
+    "DWARVEN_HISTORY_RECONCILIATION",
+    "LORD_HEIRS",
+    "POPULATION",
+    "ARMY_SIZE",
+    "LOCAL_ROADS",
+    "NEW_TOPONYMS",
+    "RIVER_SUBBASINS",
+    "COAST_CLAIMS"
+  ],
+  "sourceRegistry": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/NORGARD.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/organizacion_del_reino.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_militar_norgard_v0.1.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_fiscal_y_aduanero_v0.1.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/moneda_y_acunacion.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Clima/clima_general.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Toponimia/convencion_toponimica_norgard_v0.1.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/README.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/PLAN_DESARROLLO_EDRANOR_v0.1.md",
+    "Worldbuilding/Direccion artistica/Biblia visual/Culturas/Norgard/Heráldica/Casa Galdren/GALDREN_HOUSE_BANNER_v0.1_PROMPT.md",
+    "Worldbuilding/Sistemas/Nimroel Core/README.md",
+    "Worldbuilding/Sistemas/Norgard Defaults/README.md"
+  ]
+}

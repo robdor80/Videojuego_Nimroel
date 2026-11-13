@@ -1,0 +1,23 @@
+name: Galdren G00 foundation static
+on:
+  push:
+    branches:
+      - 'feat/galdren-g00-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/**'
+      - 'Tools/GaldrenG00/**'
+      - '.github/workflows/galdren-g00.yml'
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/GaldrenG00/validate.py
