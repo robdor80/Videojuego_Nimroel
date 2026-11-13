@@ -1,0 +1,376 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nimroel Edranor E11 Authoring Projection 0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "projectionVersion",
+    "contentContract",
+    "packId",
+    "classification",
+    "runtimeEnabled",
+    "worldStateEntitiesCreated",
+    "authorityLayers",
+    "sourceLocks",
+    "definitions",
+    "protectedIds",
+    "territorialContextPlaceIds",
+    "excludedPlaceIds",
+    "places",
+    "governance",
+    "unpromotedDesign",
+    "unknowns",
+    "executionCapabilities"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "projectionVersion": {
+      "const": "0.1.0"
+    },
+    "contentContract": {
+      "const": "0.1.0"
+    },
+    "packId": {
+      "const": "nimroel.edranor.territory"
+    },
+    "classification": {
+      "const": "STRUCTURAL_CATALOG_NOT_GAMEPLAY"
+    },
+    "runtimeEnabled": {
+      "const": false
+    },
+    "worldStateEntitiesCreated": {
+      "const": 0
+    },
+    "authorityLayers": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "sourceLocks": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "phase",
+          "path",
+          "gitBlobSha"
+        ],
+        "properties": {
+          "phase": {
+            "type": "string",
+            "pattern": "^E(0[0-9]|10)$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 20
+          },
+          "gitBlobSha": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          }
+        }
+      }
+    },
+    "definitions": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "sourcePhase",
+          "sourcePointer"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "sourcePhase": {
+            "type": "string"
+          },
+          "sourcePointer": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "protectedIds": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "territorialContextPlaceIds": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "string"
+      }
+    },
+    "excludedPlaceIds": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "places": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "definitionId",
+          "resourceKind",
+          "legalCategory",
+          "geographicContextHouse",
+          "jurisdictionOwner",
+          "fiscalOwner",
+          "justiceOwner",
+          "securityOwner",
+          "berserkerCommander",
+          "protectedCanonicalAnchor",
+          "proceduralSpawnAllowed",
+          "physicalRouteConfirmed",
+          "coordinates",
+          "population",
+          "instantiatedNpcIds",
+          "activeQuestIds",
+          "courtCaseIds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "definitionId": {
+            "type": "string"
+          },
+          "resourceKind": {
+            "type": "string"
+          },
+          "legalCategory": {
+            "type": "string"
+          },
+          "geographicContextHouse": {
+            "type": "string"
+          },
+          "jurisdictionOwner": {
+            "type": "string"
+          },
+          "fiscalOwner": {
+            "type": "string"
+          },
+          "justiceOwner": {
+            "type": "string"
+          },
+          "securityOwner": {
+            "type": "string"
+          },
+          "berserkerCommander": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "protectedCanonicalAnchor": {
+            "type": "boolean"
+          },
+          "proceduralSpawnAllowed": {
+            "type": "boolean"
+          },
+          "physicalRouteConfirmed": {
+            "type": "boolean"
+          },
+          "coordinates": {
+            "type": "null"
+          },
+          "population": {
+            "type": "null"
+          },
+          "instantiatedNpcIds": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "activeQuestIds": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "courtCaseIds": {
+            "type": "array",
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "crown",
+        "singleLaw",
+        "internalCustoms",
+        "independentHouseArmy",
+        "independentHouseMint",
+        "rodasDruidicHouseIsTemple",
+        "rodasMilitaryCommand",
+        "hallheimInsideEdranor"
+      ],
+      "properties": {
+        "crown": {
+          "type": "string"
+        },
+        "singleLaw": {
+          "type": "boolean"
+        },
+        "internalCustoms": {
+          "type": "boolean"
+        },
+        "independentHouseArmy": {
+          "type": "boolean"
+        },
+        "independentHouseMint": {
+          "type": "boolean"
+        },
+        "rodasDruidicHouseIsTemple": {
+          "type": "boolean"
+        },
+        "rodasMilitaryCommand": {
+          "type": "string"
+        },
+        "hallheimInsideEdranor": {
+          "type": "boolean"
+        }
+      }
+    },
+    "unpromotedDesign": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourcePhase",
+        "provenance",
+        "characters",
+        "conflicts",
+        "scenes",
+        "legalKinRecords",
+        "npcInstances",
+        "questInstances",
+        "worldStateEvents"
+      ],
+      "properties": {
+        "sourcePhase": {
+          "type": "string"
+        },
+        "provenance": {
+          "type": "string"
+        },
+        "characters": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "conflicts": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "scenes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "legalKinRecords": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "npcInstances": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "questInstances": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "worldStateEvents": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "string"
+      }
+    },
+    "executionCapabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gameplay",
+        "governance",
+        "routing",
+        "households",
+        "trade",
+        "quests",
+        "npcSpawning",
+        "kin",
+        "worldStateEvents",
+        "godotScene"
+      ],
+      "properties": {
+        "gameplay": {
+          "const": false
+        },
+        "governance": {
+          "const": false
+        },
+        "routing": {
+          "const": false
+        },
+        "households": {
+          "const": false
+        },
+        "trade": {
+          "const": false
+        },
+        "quests": {
+          "const": false
+        },
+        "npcSpawning": {
+          "const": false
+        },
+        "kin": {
+          "const": false
+        },
+        "worldStateEvents": {
+          "const": false
+        },
+        "godotScene": {
+          "const": false
+        }
+      }
+    }
+  }
+}

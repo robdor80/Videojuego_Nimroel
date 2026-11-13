@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "projectionVersion": "0.1.0",
+  "contentContract": "0.1.0",
+  "packId": "nimroel.edranor.territory",
+  "classification": "STRUCTURAL_CATALOG_NOT_GAMEPLAY",
+  "runtimeEnabled": false,
+  "worldStateEntitiesCreated": 0,
+  "authorityLayers": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor_or_crown_aethros",
+    "localidad",
+    "world_state"
+  ],
+  "sourceLocks": [
+    {
+      "phase": "E00",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e00_manifest_v0.1.json",
+      "gitBlobSha": "a5d003f183d8a2c2a754c39b5ee5c154f19a95c9"
+    },
+    {
+      "phase": "E01",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e01_relief_v0.1.json",
+      "gitBlobSha": "7e22fa9d2e6214a8402bc9fa24140ada7332839d"
+    },
+    {
+      "phase": "E02",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e02_hydrology_v0.1.json",
+      "gitBlobSha": "b0764d13a4c899d72db4dffdb3e49626a365a6aa"
+    },
+    {
+      "phase": "E03",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e03_climate_soils_ecosystems_v0.1.json",
+      "gitBlobSha": "a715ee0d5b641e886f394e69e5081135397deaa9"
+    },
+    {
+      "phase": "E04",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e04_economy_viticulture_v0.1.json",
+      "gitBlobSha": "a0ca6880375c5d4ac3d88a2c79d71ea406c7dab5"
+    },
+    {
+      "phase": "E05",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e05_roads_communications_v0.1.json",
+      "gitBlobSha": "47bdf1fdf560029bc8328292c398b2ed5dd46a28"
+    },
+    {
+      "phase": "E06",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e06_settlement_rules_v0.1.json",
+      "gitBlobSha": "401938170890e189a8d052e69ddf96055a7bd6f0"
+    },
+    {
+      "phase": "E07",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e07_canonical_nuclei_v0.1.json",
+      "gitBlobSha": "1ee1d2bf6757443366702095707c913d50aa8de1"
+    },
+    {
+      "phase": "E08",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e08_population_services_v0.1.json",
+      "gitBlobSha": "b8acd87045e0e75580691869d0bc0cb37b0ae6b9"
+    },
+    {
+      "phase": "E09",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e09_governance_v0.1.json",
+      "gitBlobSha": "6ded136a9971a40c36fdf03e09b2fe50f81a4748"
+    },
+    {
+      "phase": "E10",
+      "path": "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e10_lore_v0.1.json",
+      "gitBlobSha": "6ad5a879a574cf7dea0f64868d37ae0200f082e9"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "nimroel.edranor.territory:territory/edranor",
+      "kind": "territory_reference",
+      "sourcePhase": "E00",
+      "sourcePointer": "/house/id"
+    },
+    {
+      "id": "nimroel.edranor.territory:places/dorth",
+      "kind": "canonical_city_reference",
+      "sourcePhase": "E07",
+      "sourcePointer": "/settlements/0/id"
+    },
+    {
+      "id": "nimroel.edranor.territory:places/lumina",
+      "kind": "canonical_settlement_reference",
+      "sourcePhase": "E07",
+      "sourcePointer": "/settlements/1/id"
+    },
+    {
+      "id": "nimroel.edranor.territory:places/karsath",
+      "kind": "canonical_settlement_reference",
+      "sourcePhase": "E07",
+      "sourcePointer": "/settlements/2/id"
+    },
+    {
+      "id": "nimroel.edranor.territory:places/rodas",
+      "kind": "crown_village_reference",
+      "sourcePhase": "E07",
+      "sourcePointer": "/settlements/3/id"
+    }
+  ],
+  "protectedIds": [
+    "dorth",
+    "lumina",
+    "karsath",
+    "rodas",
+    "hallheim"
+  ],
+  "territorialContextPlaceIds": [
+    "dorth",
+    "lumina",
+    "karsath",
+    "rodas"
+  ],
+  "excludedPlaceIds": [
+    "hallheim"
+  ],
+  "places": [
+    {
+      "id": "dorth",
+      "definitionId": "nimroel.edranor.territory:places/dorth",
+      "resourceKind": "canonical_city_reference",
+      "legalCategory": "city",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "casa_edranor",
+      "fiscalOwner": "casa_edranor",
+      "justiceOwner": "casa_edranor",
+      "securityOwner": "casa_edranor",
+      "berserkerCommander": null,
+      "protectedCanonicalAnchor": true,
+      "proceduralSpawnAllowed": false,
+      "physicalRouteConfirmed": false,
+      "coordinates": null,
+      "population": null,
+      "instantiatedNpcIds": [],
+      "activeQuestIds": [],
+      "courtCaseIds": []
+    },
+    {
+      "id": "lumina",
+      "definitionId": "nimroel.edranor.territory:places/lumina",
+      "resourceKind": "canonical_settlement_reference",
+      "legalCategory": "small_compact_settlement",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "casa_edranor",
+      "fiscalOwner": "casa_edranor",
+      "justiceOwner": "casa_edranor",
+      "securityOwner": "casa_edranor",
+      "berserkerCommander": null,
+      "protectedCanonicalAnchor": true,
+      "proceduralSpawnAllowed": false,
+      "physicalRouteConfirmed": false,
+      "coordinates": null,
+      "population": null,
+      "instantiatedNpcIds": [],
+      "activeQuestIds": [],
+      "courtCaseIds": []
+    },
+    {
+      "id": "karsath",
+      "definitionId": "nimroel.edranor.territory:places/karsath",
+      "resourceKind": "canonical_settlement_reference",
+      "legalCategory": "small_lakeside_visual_settlement",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "casa_edranor",
+      "fiscalOwner": "casa_edranor",
+      "justiceOwner": "casa_edranor",
+      "securityOwner": "casa_edranor",
+      "berserkerCommander": null,
+      "protectedCanonicalAnchor": true,
+      "proceduralSpawnAllowed": false,
+      "physicalRouteConfirmed": false,
+      "coordinates": null,
+      "population": null,
+      "instantiatedNpcIds": [],
+      "activeQuestIds": [],
+      "courtCaseIds": []
+    },
+    {
+      "id": "rodas",
+      "definitionId": "nimroel.edranor.territory:places/rodas",
+      "resourceKind": "crown_village_reference",
+      "legalCategory": "village",
+      "geographicContextHouse": "casa_edranor",
+      "jurisdictionOwner": "crown_aethros",
+      "fiscalOwner": "crown_aethros",
+      "justiceOwner": "crown_aethros",
+      "securityOwner": "crown_aethros",
+      "berserkerCommander": "crown_aethros",
+      "protectedCanonicalAnchor": true,
+      "proceduralSpawnAllowed": false,
+      "physicalRouteConfirmed": false,
+      "coordinates": null,
+      "population": null,
+      "instantiatedNpcIds": [],
+      "activeQuestIds": [],
+      "courtCaseIds": []
+    }
+  ],
+  "governance": {
+    "crown": "crown_aethros",
+    "singleLaw": true,
+    "internalCustoms": false,
+    "independentHouseArmy": false,
+    "independentHouseMint": false,
+    "rodasDruidicHouseIsTemple": false,
+    "rodasMilitaryCommand": "crown_aethros",
+    "hallheimInsideEdranor": false
+  },
+  "unpromotedDesign": {
+    "sourcePhase": "E10",
+    "provenance": "PROPUESTA_E10",
+    "characters": 11,
+    "conflicts": 8,
+    "scenes": 8,
+    "legalKinRecords": 0,
+    "npcInstances": 0,
+    "questInstances": 0,
+    "worldStateEvents": 0
+  },
+  "unknowns": [
+    "EDD-01",
+    "EDD-02",
+    "EDD-03",
+    "EDD-04",
+    "EDD-05_LEGAL_RECORDS",
+    "EDD-07",
+    "EDD-08_DATED_ACTS"
+  ],
+  "executionCapabilities": {
+    "gameplay": false,
+    "governance": false,
+    "routing": false,
+    "households": false,
+    "trade": false,
+    "quests": false,
+    "npcSpawning": false,
+    "kin": false,
+    "worldStateEvents": false,
+    "godotScene": false
+  }
+}

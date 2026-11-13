@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "phase": "E11",
+  "status": "TEST_ONLY",
+  "worldStateEvents": 0,
+  "scenarios": [
+    {
+      "id": "T01",
+      "goal": "Catalogue lookup of all five stable definitions",
+      "area": "catalog",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T02",
+      "goal": "Synthetic bind and persistence round-trip",
+      "area": "persistence",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T03",
+      "goal": "Deterministic equal-seed serialized bytes",
+      "area": "persistence",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T04",
+      "goal": "Reject missing catalogue on rehydration",
+      "area": "persistence",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T05",
+      "goal": "Reject Rodas authority reassignment",
+      "area": "governance",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T06",
+      "goal": "Reject invented physical Dorth-Lumina road",
+      "area": "routing",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T07",
+      "goal": "Reject automatic customs or tariff on Rodas",
+      "area": "governance",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T08",
+      "goal": "Reject fabricated Edranor census and households",
+      "area": "households",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T09",
+      "goal": "Reject promotion of E10 proposals to NPCs or NAME/KIN",
+      "area": "kin",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T10",
+      "goal": "Reject conflict seed becoming active quest",
+      "area": "quests",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T11",
+      "goal": "Reject an unratified dated treaty over Rodas",
+      "area": "gameplay",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    },
+    {
+      "id": "T12",
+      "goal": "Reject automatic materialization of World State events",
+      "area": "worldStateEvents",
+      "classification": "TEST_ONLY",
+      "implementedAsGameplay": false,
+      "executedInCoreRPG": false
+    }
+  ]
+}
