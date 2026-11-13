@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://robdor80.github.io/Videojuego_Nimroel/nim08/generation-manifest-0.1.0.schema.json",
+  "title": "NIM-08 generation manifest — proposed handoff; not a CoreRPG pack format",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_id",
+    "contract_version",
+    "stage",
+    "source_lock",
+    "content_pack",
+    "runtime",
+    "generation",
+    "source_policy"
+  ],
+  "properties": {
+    "contract_id": {
+      "const": "nimroel.generation.manifest"
+    },
+    "contract_version": {
+      "const": "0.1.0"
+    },
+    "stage": {
+      "const": "DESIGN_ONLY"
+    },
+    "source_lock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "git_blob_sha",
+        "revision"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^ContentPacks/.+/authoring/source-lock\\.json$"
+        },
+        "git_blob_sha": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "revision": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        }
+      }
+    },
+    "content_pack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version",
+        "contract_version",
+        "release_sha256"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "contract_version": {
+          "const": "0.1.0"
+        },
+        "release_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nimroel_sha",
+        "corerpg_pin",
+        "godot_version",
+        "target_platforms"
+      ],
+      "properties": {
+        "nimroel_sha": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "corerpg_pin": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "godot_version": {
+          "const": "4.7.2"
+        },
+        "target_platforms": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "windows-x64",
+              "android-arm64"
+            ]
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        }
+      }
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "world_seed",
+        "stable_settlement_key",
+        "region_fixture_id",
+        "region_fixture_version",
+        "generator_id",
+        "generator_version",
+        "rules_version",
+        "rng_derivation",
+        "subsystems"
+      ],
+      "properties": {
+        "world_seed": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]*)$"
+        },
+        "stable_settlement_key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "region_fixture_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "region_fixture_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "generator_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "generator_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rules_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rng_derivation": {
+          "const": "DOMAIN_SEPARATED_SHA256_DESIGN"
+        },
+        "subsystems": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "settlement",
+              "layout",
+              "households",
+              "population",
+              "objects",
+              "activities"
+            ]
+          },
+          "minItems": 6,
+          "maxItems": 6,
+          "uniqueItems": true
+        }
+      }
+    },
+    "source_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unapproved_values",
+        "experimental_tuning",
+        "generated_pack_editing"
+      ],
+      "properties": {
+        "unapproved_values": {
+          "const": "REJECT"
+        },
+        "experimental_tuning": {
+          "const": "LABEL_EXPLICIT"
+        },
+        "generated_pack_editing": {
+          "const": "FORBIDDEN"
+        }
+      }
+    }
+  }
+}

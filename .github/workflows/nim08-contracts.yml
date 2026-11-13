@@ -1,0 +1,27 @@
+name: NIM-08 contractual static validation
+on:
+  pull_request:
+    paths:
+      - 'Docs/NIM-08-19/**'
+      - 'Tools/NIM08/**'
+      - '.github/workflows/nim08-contracts.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-contracts:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check canonical V001 IDs, versions and manifests
+        run: python Tools/NIM08/check_contracts.py --json
+      - name: Unit tests and negative contract cases
+        run: python -m unittest discover -s Tools/NIM08 -p 'test_*.py' -v
+      # Passing this workflow is strictly documentary/static, never V001 gameplay certification.
