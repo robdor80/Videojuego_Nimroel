@@ -1,0 +1,931 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e16_services_mobility",
+  "version": "0.1",
+  "phase": "E16",
+  "date": "2026-11-13",
+  "status": "DELEGATED_DESIGN_NOT_CANON",
+  "authority": "ASSISTANT_DELEGATED_DESIGN",
+  "runtimeEnabled": false,
+  "syntheticOnly": true,
+  "georeferenced": false,
+  "physicalGraphValidated": false,
+  "noNextPhaseExecuted": true,
+  "sourceContracts": [
+    "edranor_e05_roads_communications",
+    "edranor_e07_canonical_nuclei",
+    "edranor_e08_population_services",
+    "edranor_e13_physical_design",
+    "edranor_e14_habitability",
+    "edranor_e15_living_economy"
+  ],
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor_or_crown_aethros",
+    "localidad",
+    "world_state"
+  ],
+  "created": {
+    "physicalRoads": 0,
+    "bridges": 0,
+    "fords": 0,
+    "ports": 0,
+    "carriers": 0,
+    "postalStations": 0,
+    "signalTowers": 0,
+    "serviceBuildings": 0,
+    "workOrders": 0,
+    "deliveries": 0,
+    "messagesSent": 0,
+    "people": 0,
+    "levies": 0
+  },
+  "unknownMetrics": {
+    "routeDistance": null,
+    "travelHours": null,
+    "freightTonnage": null,
+    "networkCapacity": null,
+    "serviceCoverage": null,
+    "repairBudget": null,
+    "workforce": null,
+    "forecastCalendar": null
+  },
+  "rights": {
+    "rodasJurisdiction": "crown_aethros",
+    "rodasFiscalOwner": "crown_aethros",
+    "rodasMilitaryOwner": "crown_aethros",
+    "hallheimInsideEdranor": false,
+    "edranorTaxOnRodas": false,
+    "internalCustoms": false,
+    "automaticRoadToll": false,
+    "forestCuttingWithoutPermit": false,
+    "karsathUrbanHarborVerified": false,
+    "borealWineTransportNetworkAssumed": false
+  },
+  "anchors": [
+    {
+      "id": "dorth",
+      "owner": "casa_edranor",
+      "role": "HOUSE_SEAT_RED_WINE",
+      "serviceInstancesConfirmed": 0,
+      "carriersConfirmed": 0,
+      "physicalRoadAccess": "UNKNOWN",
+      "jurisdictionForServices": "HOUSE_UNDER_CROWN"
+    },
+    {
+      "id": "lumina",
+      "owner": "casa_edranor",
+      "role": "WHITE_WINE_ANNUAL_MARKET",
+      "serviceInstancesConfirmed": 0,
+      "carriersConfirmed": 0,
+      "physicalRoadAccess": "UNKNOWN",
+      "jurisdictionForServices": "HOUSE_UNDER_CROWN"
+    },
+    {
+      "id": "karsath",
+      "owner": "casa_edranor",
+      "role": "SELECT_SMALL_BATCH_INTERIOR_LAKES",
+      "serviceInstancesConfirmed": 0,
+      "carriersConfirmed": 0,
+      "physicalRoadAccess": "UNKNOWN",
+      "jurisdictionForServices": "HOUSE_UNDER_CROWN"
+    },
+    {
+      "id": "rodas",
+      "owner": "crown_aethros",
+      "role": "CROWN_VILLAGE_CONTACT",
+      "serviceInstancesConfirmed": 0,
+      "carriersConfirmed": 0,
+      "physicalRoadAccess": "UNKNOWN",
+      "jurisdictionForServices": "CROWN_DIRECT"
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros",
+      "role": "EXTERNAL_CROWN_CAPITAL",
+      "serviceInstancesConfirmed": 0,
+      "carriersConfirmed": 0,
+      "physicalRoadAccess": "UNKNOWN",
+      "jurisdictionForServices": "OUT_OF_SCOPE"
+    }
+  ],
+  "units": [
+    {
+      "unitId": "edr_e01_west_valkram_interface",
+      "assessment": "STUDY_ONLY",
+      "geometryValidated": false,
+      "accessCertified": false,
+      "servicesInstalled": 0,
+      "maintenanceJobsCreated": 0,
+      "territoryMembershipConfirmed": null
+    },
+    {
+      "unitId": "edr_e01_karsath_central_west",
+      "assessment": "STUDY_ONLY",
+      "geometryValidated": false,
+      "accessCertified": false,
+      "servicesInstalled": 0,
+      "maintenanceJobsCreated": 0,
+      "territoryMembershipConfirmed": null
+    },
+    {
+      "unitId": "edr_e01_lumina_bosque_alto",
+      "assessment": "STUDY_ONLY",
+      "geometryValidated": false,
+      "accessCertified": false,
+      "servicesInstalled": 0,
+      "maintenanceJobsCreated": 0,
+      "territoryMembershipConfirmed": null
+    },
+    {
+      "unitId": "edr_e01_central_wine_context",
+      "assessment": "STUDY_ONLY",
+      "geometryValidated": false,
+      "accessCertified": false,
+      "servicesInstalled": 0,
+      "maintenanceJobsCreated": 0,
+      "territoryMembershipConfirmed": null
+    },
+    {
+      "unitId": "edr_e01_dorth_azurios_west",
+      "assessment": "STUDY_ONLY",
+      "geometryValidated": false,
+      "accessCertified": false,
+      "servicesInstalled": 0,
+      "maintenanceJobsCreated": 0,
+      "territoryMembershipConfirmed": null
+    },
+    {
+      "unitId": "edr_e01_north_cold_transition",
+      "assessment": "STUDY_ONLY",
+      "geometryValidated": false,
+      "accessCertified": false,
+      "servicesInstalled": 0,
+      "maintenanceJobsCreated": 0,
+      "territoryMembershipConfirmed": null
+    },
+    {
+      "unitId": "edr_e01_far_north_unclosed",
+      "assessment": "NON_EVALUABLE",
+      "geometryValidated": false,
+      "accessCertified": false,
+      "servicesInstalled": 0,
+      "maintenanceJobsCreated": 0,
+      "territoryMembershipConfirmed": false
+    }
+  ],
+  "graph": {
+    "studyQuestions": [
+      {
+        "from": "dorth",
+        "to": "lumina",
+        "sourceE05": "edr_e05_question_dorth_lumina",
+        "status": "QUESTION_ONLY",
+        "physicalEdgeCreated": false,
+        "routeSurvey": "UNKNOWN",
+        "travelTime": null,
+        "capacity": null,
+        "geometry": null,
+        "permissionVerified": false
+      },
+      {
+        "from": "lumina",
+        "to": "karsath",
+        "sourceE05": "edr_e05_question_lumina_karsath",
+        "status": "QUESTION_ONLY",
+        "physicalEdgeCreated": false,
+        "routeSurvey": "UNKNOWN",
+        "travelTime": null,
+        "capacity": null,
+        "geometry": null,
+        "permissionVerified": false
+      },
+      {
+        "from": "dorth",
+        "to": "karsath",
+        "sourceE05": "edr_e05_question_dorth_karsath",
+        "status": "QUESTION_ONLY",
+        "physicalEdgeCreated": false,
+        "routeSurvey": "UNKNOWN",
+        "travelTime": null,
+        "capacity": null,
+        "geometry": null,
+        "permissionVerified": false
+      },
+      {
+        "from": "dorth",
+        "to": "rodas",
+        "sourceE05": "edr_e05_question_dorth_rodas",
+        "status": "QUESTION_ONLY",
+        "physicalEdgeCreated": false,
+        "routeSurvey": "UNKNOWN",
+        "travelTime": null,
+        "capacity": null,
+        "geometry": null,
+        "permissionVerified": false
+      }
+    ],
+    "physicalEdges": [],
+    "pathfindingEnabled": false,
+    "externalInterfaces": [
+      "edr_e05_external_edranor_rodas",
+      "edr_e05_external_edranor_realm"
+    ],
+    "passQuestion": "edr_e05_question_valkram",
+    "routeSurveyState": "UNKNOWN"
+  },
+  "transport": {
+    "loadClasses": [
+      "WINE_GRAPE",
+      "COOPERAGE_WOOD",
+      "FOOD_GRAIN_FLOUR",
+      "FOOD_PERISHABLE",
+      "FUEL",
+      "TOOLS_REPAIRS",
+      "PEOPLE",
+      "MESSAGES"
+    ],
+    "requiredFields": [
+      "originId",
+      "destinationId",
+      "loadRef",
+      "owner",
+      "rights",
+      "routeSurvey",
+      "carrier",
+      "capacity",
+      "seasonWindow",
+      "receiverAck"
+    ],
+    "lifeCycle": [
+      "REQUEST",
+      "PROVE_RIGHTS",
+      "VERIFY_STOCK",
+      "VERIFY_ROUTE",
+      "VERIFY_CARRIER_AND_CAPACITY",
+      "RESERVE",
+      "DISPATCH_IF_REAL_RUNTIME",
+      "RECEIVE_ACK",
+      "CLOSE_BOOKS"
+    ],
+    "dispatchAllowedInE16": false,
+    "freightBalancesFromE15": true,
+    "invoiceIsNotDelivery": true,
+    "transportModeOptions": [
+      "ON_FOOT",
+      "PACK_ANIMAL",
+      "WAGON_IF_AUTHORIZED",
+      "MOUNTED_COURIER",
+      "BOAT_IF_VERIFIED"
+    ],
+    "activeTransportModes": []
+  },
+  "communication": {
+    "candidateChannels": [
+      "FOOT_MESSENGER",
+      "MOUNTED_COURIER",
+      "MERCHANT_DISPATCH",
+      "LOCAL_NOTICE",
+      "EMERGENCY_SIGNAL"
+    ],
+    "installedChannels": [],
+    "requiredFields": [
+      "messageId",
+      "sender",
+      "recipient",
+      "readAuthority",
+      "deliveryChannel",
+      "agent",
+      "realRouteOrLocalContact",
+      "eventEvidence",
+      "receiverAck"
+    ],
+    "knowledgeRequiresReceipt": true,
+    "emergencyRequiresObservedEvent": true,
+    "crownRecipientForRodas": true,
+    "noMagicalRelayAssumed": true,
+    "confidentialityRequired": true
+  },
+  "services": {
+    "catalogue": [
+      {
+        "id": "DRINKING_WATER",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "SANITATION",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "FOOD",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "FUEL_HEAT",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "SHELTER",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "CARE",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "BAKING",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "MILLING",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "BLACKSMITH_REPAIR",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "LODGING",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "MARKET_ANNUAL",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "WINERY_COOPERAGE",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      },
+      {
+        "id": "COURIER_TRANSPORT",
+        "status": "NEED_MODEL_ONLY",
+        "installedProviders": 0
+      }
+    ],
+    "escalation": [
+      "HOUSEHOLD",
+      "NEIGHBOR",
+      "SPECIALIST",
+      "NEARBY_VILLAGE",
+      "MARKET",
+      "LARGER_CENTER"
+    ],
+    "requiredFields": [
+      "need",
+      "authority",
+      "provider",
+      "realLocation",
+      "availability",
+      "supply",
+      "access",
+      "safeOperation",
+      "recipient"
+    ],
+    "availabilityMustBeObserved": true,
+    "specialistNotGuaranteed": true,
+    "safetyBeforeAdmission": true,
+    "luminaMarketFrequency": "ANNUAL",
+    "rodasServiceAuthority": "CROWN_DIRECT"
+  },
+  "maintenance": {
+    "potentialAssetClasses": [
+      "ROAD_SEGMENT",
+      "BRIDGE_OR_FORD",
+      "WATER_SYSTEM",
+      "SANITATION",
+      "PUBLIC_SERVICE_SPACE",
+      "BUILDING_FURNACE",
+      "WAREHOUSE",
+      "MESSAGE_CHANNEL"
+    ],
+    "requiredFields": [
+      "assetId",
+      "realGeometry",
+      "title",
+      "operator",
+      "defectEvidence",
+      "hazardReview",
+      "workRights",
+      "partsAndLabor",
+      "funding",
+      "inspectionAck"
+    ],
+    "lifeCycle": [
+      "REPORT",
+      "IDENTIFY_REAL_ASSET",
+      "VERIFY_OWNER_AND_RIGHTS",
+      "ASSESS_RISK",
+      "ALLOCATE_REAL_RESOURCES",
+      "WORK_IF_AUTHORIZED",
+      "INSPECT",
+      "REOPEN_OR_RESTRICT"
+    ],
+    "createdJobs": [],
+    "reopenRequiresInspection": true,
+    "closureNeedsRealAssetAndEvent": true,
+    "forestOrWaterWorkNeedsPermit": true,
+    "noInstantRepair": true
+  },
+  "gatePolicy": {
+    "unknownResult": "PENDING_EVIDENCE",
+    "falseResult": "BLOCKED",
+    "allTrueResult": "ELIGIBLE_SYNTHETIC_ONLY",
+    "runtimeDispatchBlocked": true,
+    "requiredTransportProof": [
+      "rights",
+      "loadRef",
+      "routeSurvey",
+      "carrier",
+      "capacity",
+      "seasonWindow",
+      "receiverAck"
+    ],
+    "requiredMessageProof": [
+      "sender",
+      "recipient",
+      "readAuthority",
+      "deliveryChannel",
+      "agent",
+      "realRouteOrLocalContact",
+      "receiverAck"
+    ],
+    "requiredServiceProof": [
+      "authority",
+      "provider",
+      "realLocation",
+      "availability",
+      "supply",
+      "access",
+      "safeOperation"
+    ],
+    "requiredMaintenanceProof": [
+      "assetId",
+      "realGeometry",
+      "title",
+      "operator",
+      "defectEvidence",
+      "workRights",
+      "partsAndLabor",
+      "inspectionAck"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "ED16-T01",
+      "family": "MOBILITY",
+      "question": "Dorth–Lumina como carretera sin traza",
+      "missingProof": "routeSurvey",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-T02",
+      "family": "MOBILITY",
+      "question": "Dorth–Karsath como atajo directo",
+      "missingProof": "routeSurvey",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-T03",
+      "family": "MOBILITY",
+      "question": "Lumina–Karsath con cruce sin estudio",
+      "missingProof": "rights",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-T04",
+      "family": "MOBILITY",
+      "question": "Expedicion de tinto sin inventario",
+      "missingProof": "loadRef",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-T05",
+      "family": "MOBILITY",
+      "question": "Barrica sin transportista confirmado",
+      "missingProof": "carrier",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-T06",
+      "family": "MOBILITY",
+      "question": "Carro supera capacidad probada",
+      "missingProof": "capacity",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-T07",
+      "family": "MOBILITY",
+      "question": "Rodas tratado como peaje Edranor",
+      "missingProof": "authority",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-T08",
+      "family": "MOBILITY",
+      "question": "Barcaza desde Karsath sin muelle",
+      "missingProof": "portEvidence",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-T09",
+      "family": "MOBILITY",
+      "question": "Entrega con receptor sin acuse",
+      "missingProof": "receiverAck",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-T10",
+      "family": "MOBILITY",
+      "question": "Invierno cerrado por regla fija",
+      "missingProof": "seasonWindow",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-C01",
+      "family": "COMMUNICATION",
+      "question": "Mensaje sin emisor autorizado",
+      "missingProof": "sender",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-C02",
+      "family": "COMMUNICATION",
+      "question": "Despacho leido sin competencia",
+      "missingProof": "readAuthority",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-C03",
+      "family": "COMMUNICATION",
+      "question": "Mensaje perdido contado como recibido",
+      "missingProof": "receiverAck",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-C04",
+      "family": "COMMUNICATION",
+      "question": "Posta creada desde estudio E05",
+      "missingProof": "deliveryChannel",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-C05",
+      "family": "COMMUNICATION",
+      "question": "Alarma de nieve sin fenomeno observado",
+      "missingProof": "eventEvidence",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-C06",
+      "family": "COMMUNICATION",
+      "question": "Aviso a Rodas usurpa mando real",
+      "missingProof": "authority",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-S01",
+      "family": "SERVICE",
+      "question": "Pozo o captacion no georreferenciado",
+      "missingProof": "realLocation",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-S02",
+      "family": "SERVICE",
+      "question": "Agua sin analisis de potabilidad",
+      "missingProof": "safeOperation",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-S03",
+      "family": "SERVICE",
+      "question": "Molino elegido sin energia ni local",
+      "missingProof": "provider",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-S04",
+      "family": "SERVICE",
+      "question": "Horno sin combustible ni higiene",
+      "missingProof": "supply",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-S05",
+      "family": "SERVICE",
+      "question": "Médico creado por necesidad de hogar",
+      "missingProof": "provider",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-S06",
+      "family": "SERVICE",
+      "question": "Alojamiento sin agua y letrinas",
+      "missingProof": "safeOperation",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-S07",
+      "family": "SERVICE",
+      "question": "Feria Lumina supuesta permanente",
+      "missingProof": "calendar",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-S08",
+      "family": "SERVICE",
+      "question": "Caserio U7 recibe un hospital",
+      "missingProof": "territory",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-M01",
+      "family": "MAINTENANCE",
+      "question": "Puente reparado sin puente real",
+      "missingProof": "assetId",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-M02",
+      "family": "MAINTENANCE",
+      "question": "Desbroce implica tala en Bosque Alto",
+      "missingProof": "workRights",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-M03",
+      "family": "MAINTENANCE",
+      "question": "Zanja altera cauce sin permiso",
+      "missingProof": "workRights",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-M04",
+      "family": "MAINTENANCE",
+      "question": "Reabrir paso sin inspeccion",
+      "missingProof": "inspectionAck",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-M05",
+      "family": "MAINTENANCE",
+      "question": "Recambio descontado dos veces",
+      "missingProof": "partsAndLabor",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    },
+    {
+      "id": "ED16-M06",
+      "family": "MAINTENANCE",
+      "question": "Averia de carretera genera cierre real",
+      "missingProof": "defectEvidence",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "assetId": null,
+      "carrierId": null
+    }
+  ],
+  "debts": [
+    {
+      "id": "EDD-01",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-02",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-03",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-04",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-05",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-06",
+      "status": "RESOLVED_FOR_DESIGN"
+    },
+    {
+      "id": "EDD-07",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-08",
+      "status": "OPEN"
+    }
+  ],
+  "decisionRegister": [
+    {
+      "id": "ED16-DEC-01",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED16-DEC-02",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED16-DEC-03",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED16-DEC-04",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED16-DEC-05",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED16-DEC-06",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED16-DEC-07",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED16-DEC-08",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    }
+  ],
+  "carryForwardTo": [
+    "E17",
+    "E18",
+    "E19",
+    "E20-E24",
+    "E26",
+    "E28"
+  ]
+}
