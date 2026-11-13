@@ -1,0 +1,1062 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e14_habitability",
+  "version": "0.1",
+  "phase": "E14",
+  "date": "2026-11-13",
+  "status": "DELEGATED_DESIGN_CONDITIONAL_NOT_CANON",
+  "authority": "ASSISTANT_DELEGATED_DESIGN",
+  "runtimeEnabled": false,
+  "georeferenced": false,
+  "worldStateEntitiesCreated": 0,
+  "settlementsCreated": 0,
+  "parcelsCertified": 0,
+  "buildingsCreated": 0,
+  "residentsCreated": 0,
+  "sourceContracts": [
+    "edranor_e01_relief",
+    "edranor_e06_settlement_rules",
+    "edranor_e07_canonical_nuclei",
+    "edranor_e08_population_services",
+    "edranor_e13_physical_design"
+  ],
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor_or_crown_aethros",
+    "localidad",
+    "world_state"
+  ],
+  "occupationTypes": [
+    "PERMANENT_RESIDENCE",
+    "SEASONAL_WORKSTATION",
+    "AGRICULTURAL_USE",
+    "FOREST_USE",
+    "TEMPORARY_PASSAGE",
+    "EXCLUDED"
+  ],
+  "requirements": {
+    "PERMANENT_RESIDENCE": [
+      "legalTenure",
+      "stableSlope",
+      "potableYearRoundWater",
+      "sanitation",
+      "yearRoundAccess",
+      "hazardClearance",
+      "dwellingCapacity",
+      "livelihoodCapacity",
+      "seasonalClimateVerified"
+    ],
+    "SEASONAL_WORKSTATION": [
+      "legalTenure",
+      "stableSlope",
+      "seasonalPotableWater",
+      "sanitation",
+      "seasonalAccess",
+      "hazardClearance",
+      "safeWorkShelter",
+      "seasonalClimateVerified"
+    ],
+    "AGRICULTURAL_USE": [
+      "legalTenure",
+      "stableSlope",
+      "productiveSoil",
+      "waterForUse",
+      "seasonalClimateVerified",
+      "hazardClearance",
+      "agriculturalRights"
+    ],
+    "FOREST_USE": [
+      "legalTenure",
+      "stableSlope",
+      "forestRights",
+      "protectionClearance",
+      "regenerationPlan",
+      "hazardClearance",
+      "accessAssessment"
+    ],
+    "TEMPORARY_PASSAGE": [
+      "passageRights",
+      "stableSlope",
+      "seasonalAccess",
+      "hazardClearance",
+      "routeSurvey"
+    ],
+    "EXCLUDED": []
+  },
+  "gateReasons": {
+    "ABSENT": "No hay levantamiento de parcela ni dato físico verificado",
+    "UNKNOWN": "Dato ausente o no ratificado: no equivale a permiso ni a viabilidad",
+    "DENIED": "La autoridad competente deniega o limita el uso",
+    "BLOCKED": "Riesgo activo, zona excluida o protección incompatible",
+    "ALLOWED_IN_SYNTHETIC_ONLY": "Veredicto solo para fixture sintético completo"
+  },
+  "protectedAnchors": [
+    {
+      "id": "dorth",
+      "owner": "casa_edranor",
+      "proceduralSpawnAllowed": false,
+      "excludedFromEdranorClaim": false,
+      "occupationCapacityVerified": false,
+      "extraPopulationCreated": 0,
+      "siteGeometry": null
+    },
+    {
+      "id": "lumina",
+      "owner": "casa_edranor",
+      "proceduralSpawnAllowed": false,
+      "excludedFromEdranorClaim": false,
+      "occupationCapacityVerified": false,
+      "extraPopulationCreated": 0,
+      "siteGeometry": null
+    },
+    {
+      "id": "karsath",
+      "owner": "casa_edranor",
+      "proceduralSpawnAllowed": false,
+      "excludedFromEdranorClaim": false,
+      "occupationCapacityVerified": false,
+      "extraPopulationCreated": 0,
+      "siteGeometry": null
+    },
+    {
+      "id": "rodas",
+      "owner": "crown_aethros",
+      "proceduralSpawnAllowed": false,
+      "excludedFromEdranorClaim": false,
+      "occupationCapacityVerified": false,
+      "extraPopulationCreated": 0,
+      "siteGeometry": null
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros",
+      "proceduralSpawnAllowed": false,
+      "excludedFromEdranorClaim": true,
+      "occupationCapacityVerified": false,
+      "extraPopulationCreated": 0,
+      "siteGeometry": null
+    }
+  ],
+  "units": [
+    {
+      "id": "edr_e01_west_valkram_interface",
+      "studyId": "U1",
+      "name": "Interfaz Valkram occidental",
+      "focus": "ladera, rellano y piedemonte; pertenencia de crestas no acreditada",
+      "territorialGeometryVerified": false,
+      "soilStatus": "UNASSESSED",
+      "waterStatus": "UNKNOWN",
+      "legalPlotOwnership": "UNKNOWN",
+      "approvedOccupationSites": 0,
+      "archetypes": [
+        {
+          "id": "ED14-U1-P1",
+          "use": "TEMPORARY_PASSAGE",
+          "design": "collado o tránsito puntual únicamente con levantamiento y derechos de paso",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "passageRights",
+            "stableSlope",
+            "seasonalAccess",
+            "hazardClearance",
+            "routeSurvey"
+          ]
+        },
+        {
+          "id": "ED14-U1-P2",
+          "use": "AGRICULTURAL_USE",
+          "design": "rellano no erosionable con agua estacional y derecho de uso",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "productiveSoil",
+            "waterForUse",
+            "seasonalClimateVerified",
+            "hazardClearance",
+            "agriculturalRights"
+          ]
+        },
+        {
+          "id": "ED14-U1-P3",
+          "use": "SEASONAL_WORKSTATION",
+          "design": "equipo temporal con suelo estable, refugio y evacuación acreditados",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "seasonalPotableWater",
+            "sanitation",
+            "seasonalAccess",
+            "hazardClearance",
+            "safeWorkShelter",
+            "seasonalClimateVerified"
+          ]
+        },
+        {
+          "id": "ED14-U1-P4",
+          "use": "PERMANENT_RESIDENCE",
+          "design": "rellano de piedemonte, sin ocupar laderas inestables ni crestas supuestas",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "potableYearRoundWater",
+            "sanitation",
+            "yearRoundAccess",
+            "hazardClearance",
+            "dwellingCapacity",
+            "livelihoodCapacity",
+            "seasonalClimateVerified"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "id": "ED14-U1-N1",
+          "blocker": "SLOPE_UNSTABLE",
+          "causalReason": "ladera inestable invalida toda ocupación material",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U1-N2",
+          "blocker": "WATER_UNVERIFIED",
+          "causalReason": "no inferir agua por escorrentía aparente",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U1-N3",
+          "blocker": "ACCESS_UNVERIFIED",
+          "causalReason": "un collado visual no es camino ni servidumbre",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        }
+      ]
+    },
+    {
+      "id": "edr_e01_karsath_central_west",
+      "studyId": "U2",
+      "name": "Karsath y lomas interiores",
+      "focus": "viticultura escasa y selectiva, contexto lacustre sin orilla urbana probada",
+      "territorialGeometryVerified": false,
+      "soilStatus": "UNASSESSED",
+      "waterStatus": "UNKNOWN",
+      "legalPlotOwnership": "UNKNOWN",
+      "approvedOccupationSites": 0,
+      "archetypes": [
+        {
+          "id": "ED14-U2-P1",
+          "use": "AGRICULTURAL_USE",
+          "design": "pequeña viña selectiva solo si suelo, agua, clima y título lo permiten",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "productiveSoil",
+            "waterForUse",
+            "seasonalClimateVerified",
+            "hazardClearance",
+            "agriculturalRights"
+          ]
+        },
+        {
+          "id": "ED14-U2-P2",
+          "use": "AGRICULTURAL_USE",
+          "design": "huerto mixto con comprobación de drenaje y abastecimiento",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "productiveSoil",
+            "waterForUse",
+            "seasonalClimateVerified",
+            "hazardClearance",
+            "agriculturalRights"
+          ]
+        },
+        {
+          "id": "ED14-U2-P3",
+          "use": "SEASONAL_WORKSTATION",
+          "design": "alojamiento o punto laboral temporal sujeto a agua y saneamiento",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "seasonalPotableWater",
+            "sanitation",
+            "seasonalAccess",
+            "hazardClearance",
+            "safeWorkShelter",
+            "seasonalClimateVerified"
+          ]
+        },
+        {
+          "id": "ED14-U2-P4",
+          "use": "PERMANENT_RESIDENCE",
+          "design": "vivienda sobre loma estable con acceso y servicios demostrados",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "potableYearRoundWater",
+            "sanitation",
+            "yearRoundAccess",
+            "hazardClearance",
+            "dwellingCapacity",
+            "livelihoodCapacity",
+            "seasonalClimateVerified"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "id": "ED14-U2-N1",
+          "blocker": "LAKE_SHORE_UNVERIFIED",
+          "causalReason": "Antela próximo no concede ribera ni captación",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U2-N2",
+          "blocker": "WATER_UNVERIFIED",
+          "causalReason": "suelo vinícola idóneo no prueba reserva hídrica",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U2-N3",
+          "blocker": "SLOPE_UNSTABLE",
+          "causalReason": "terraza inestable anula asentamiento y viña",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        }
+      ]
+    },
+    {
+      "id": "edr_e01_lumina_bosque_alto",
+      "studyId": "U3",
+      "name": "Meseta de Lumina y Bosque Alto",
+      "focus": "bosque con valor de tonelería y conservación; aprovechamiento sujeto a derechos",
+      "territorialGeometryVerified": false,
+      "soilStatus": "UNASSESSED",
+      "waterStatus": "UNKNOWN",
+      "legalPlotOwnership": "UNKNOWN",
+      "approvedOccupationSites": 0,
+      "archetypes": [
+        {
+          "id": "ED14-U3-P1",
+          "use": "FOREST_USE",
+          "design": "gestión forestal selectiva solo con titularidad, licencia y regeneración",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "forestRights",
+            "protectionClearance",
+            "regenerationPlan",
+            "hazardClearance",
+            "accessAssessment"
+          ]
+        },
+        {
+          "id": "ED14-U3-P2",
+          "use": "SEASONAL_WORKSTATION",
+          "design": "apoyo laboral en terreno no protegido con suministros verificados",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "seasonalPotableWater",
+            "sanitation",
+            "seasonalAccess",
+            "hazardClearance",
+            "safeWorkShelter",
+            "seasonalClimateVerified"
+          ]
+        },
+        {
+          "id": "ED14-U3-P3",
+          "use": "PERMANENT_RESIDENCE",
+          "design": "claro legítimo, no creado por tala presumida; continuidad hídrica",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "potableYearRoundWater",
+            "sanitation",
+            "yearRoundAccess",
+            "hazardClearance",
+            "dwellingCapacity",
+            "livelihoodCapacity",
+            "seasonalClimateVerified"
+          ]
+        },
+        {
+          "id": "ED14-U3-P4",
+          "use": "AGRICULTURAL_USE",
+          "design": "linde exterior al bosque, no núcleo protegido, con suelo y derechos",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "productiveSoil",
+            "waterForUse",
+            "seasonalClimateVerified",
+            "hazardClearance",
+            "agriculturalRights"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "id": "ED14-U3-N1",
+          "blocker": "FOREST_RIGHTS_MISSING",
+          "causalReason": "Bosque Alto no es monte libre",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U3-N2",
+          "blocker": "PROTECTED_HABITAT",
+          "causalReason": "conservación bloquea conversión residencial",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U3-N3",
+          "blocker": "ACCESS_UNVERIFIED",
+          "causalReason": "un claro no materializa un camino",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        }
+      ]
+    },
+    {
+      "id": "edr_e01_central_wine_context",
+      "studyId": "U4",
+      "name": "Mosaico central vinícola",
+      "focus": "viña y cultivos en mosaico discontinuo, no monocultivo completo",
+      "territorialGeometryVerified": false,
+      "soilStatus": "UNASSESSED",
+      "waterStatus": "UNKNOWN",
+      "legalPlotOwnership": "UNKNOWN",
+      "approvedOccupationSites": 0,
+      "archetypes": [
+        {
+          "id": "ED14-U4-P1",
+          "use": "AGRICULTURAL_USE",
+          "design": "viña donde suelo, grados térmicos, agua y tenencia sean adecuados",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "productiveSoil",
+            "waterForUse",
+            "seasonalClimateVerified",
+            "hazardClearance",
+            "agriculturalRights"
+          ]
+        },
+        {
+          "id": "ED14-U4-P2",
+          "use": "AGRICULTURAL_USE",
+          "design": "rotación alimentaria y huertos sin inventar superficie",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "productiveSoil",
+            "waterForUse",
+            "seasonalClimateVerified",
+            "hazardClearance",
+            "agriculturalRights"
+          ]
+        },
+        {
+          "id": "ED14-U4-P3",
+          "use": "SEASONAL_WORKSTATION",
+          "design": "instalación temporal solo tras probar agua, camas, saneamiento y permisos",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "seasonalPotableWater",
+            "sanitation",
+            "seasonalAccess",
+            "hazardClearance",
+            "safeWorkShelter",
+            "seasonalClimateVerified"
+          ]
+        },
+        {
+          "id": "ED14-U4-P4",
+          "use": "PERMANENT_RESIDENCE",
+          "design": "asentamiento hipotético fuera de anclas, con vivienda y servicios medidos",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "potableYearRoundWater",
+            "sanitation",
+            "yearRoundAccess",
+            "hazardClearance",
+            "dwellingCapacity",
+            "livelihoodCapacity",
+            "seasonalClimateVerified"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "id": "ED14-U4-N1",
+          "blocker": "WATER_UNVERIFIED",
+          "causalReason": "suelo fértil sin agua no habilita cultivo",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U4-N2",
+          "blocker": "CLIMATE_UNVERIFIED",
+          "causalReason": "viña no autorizada por etiqueta vino regional",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U4-N3",
+          "blocker": "ACCESS_UNVERIFIED",
+          "causalReason": "mosaico visual no crea vías",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        }
+      ]
+    },
+    {
+      "id": "edr_e01_dorth_azurios_west",
+      "studyId": "U5",
+      "name": "Dorth y borde occidental Azurios",
+      "focus": "sede de Casa, tintos, piedemonte forestal y límite regio no apropiable",
+      "territorialGeometryVerified": false,
+      "soilStatus": "UNASSESSED",
+      "waterStatus": "UNKNOWN",
+      "legalPlotOwnership": "UNKNOWN",
+      "approvedOccupationSites": 0,
+      "archetypes": [
+        {
+          "id": "ED14-U5-P1",
+          "use": "PERMANENT_RESIDENCE",
+          "design": "extensión condicionada del entorno de Dorth sin inventar barrios",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "potableYearRoundWater",
+            "sanitation",
+            "yearRoundAccess",
+            "hazardClearance",
+            "dwellingCapacity",
+            "livelihoodCapacity",
+            "seasonalClimateVerified"
+          ]
+        },
+        {
+          "id": "ED14-U5-P2",
+          "use": "FOREST_USE",
+          "design": "aprovechamiento del Bosque Azurios según titularidad y regeneración",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "forestRights",
+            "protectionClearance",
+            "regenerationPlan",
+            "hazardClearance",
+            "accessAssessment"
+          ]
+        },
+        {
+          "id": "ED14-U5-P3",
+          "use": "AGRICULTURAL_USE",
+          "design": "parcela de vino tinto en suelo seguro, fuera de masa protegida",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "productiveSoil",
+            "waterForUse",
+            "seasonalClimateVerified",
+            "hazardClearance",
+            "agriculturalRights"
+          ]
+        },
+        {
+          "id": "ED14-U5-P4",
+          "use": "SEASONAL_WORKSTATION",
+          "design": "estación asociada a cadena tintos sin crear almacén real",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "seasonalPotableWater",
+            "sanitation",
+            "seasonalAccess",
+            "hazardClearance",
+            "safeWorkShelter",
+            "seasonalClimateVerified"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "id": "ED14-U5-N1",
+          "blocker": "CROWN_LAND",
+          "causalReason": "Bosque Real meridional próximo a Hallheim no es Edranor",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U5-N2",
+          "blocker": "SLOPE_UNSTABLE",
+          "causalReason": "saturación o caída invalida edificación",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U5-N3",
+          "blocker": "WATER_UNVERIFIED",
+          "causalReason": "no inferir cauce o toma de agua del relieve",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        }
+      ]
+    },
+    {
+      "id": "edr_e01_north_cold_transition",
+      "studyId": "U6",
+      "name": "Transición fría septentrional",
+      "focus": "estacionalidad y frío; pertenencia de parcelas por delimitar",
+      "territorialGeometryVerified": false,
+      "soilStatus": "UNASSESSED",
+      "waterStatus": "UNKNOWN",
+      "legalPlotOwnership": "UNKNOWN",
+      "approvedOccupationSites": 0,
+      "archetypes": [
+        {
+          "id": "ED14-U6-P1",
+          "use": "SEASONAL_WORKSTATION",
+          "design": "refugio eventual con calefacción, saneamiento, permisos y salida segura",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "seasonalPotableWater",
+            "sanitation",
+            "seasonalAccess",
+            "hazardClearance",
+            "safeWorkShelter",
+            "seasonalClimateVerified"
+          ]
+        },
+        {
+          "id": "ED14-U6-P2",
+          "use": "FOREST_USE",
+          "design": "vigilancia o cuidado de bosque bajo régimen autorizado, no corta libre",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "forestRights",
+            "protectionClearance",
+            "regenerationPlan",
+            "hazardClearance",
+            "accessAssessment"
+          ]
+        },
+        {
+          "id": "ED14-U6-P3",
+          "use": "PERMANENT_RESIDENCE",
+          "design": "habitación solo si acceso invernal, calor, reservas y agua comprobados",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "potableYearRoundWater",
+            "sanitation",
+            "yearRoundAccess",
+            "hazardClearance",
+            "dwellingCapacity",
+            "livelihoodCapacity",
+            "seasonalClimateVerified"
+          ]
+        },
+        {
+          "id": "ED14-U6-P4",
+          "use": "AGRICULTURAL_USE",
+          "design": "horticultura de estación viable con ventana térmica demostrada; sin vino boreal",
+          "status": "STUDY_ONLY",
+          "siteId": null,
+          "georeferenced": false,
+          "instantiated": false,
+          "requiredProofs": [
+            "legalTenure",
+            "stableSlope",
+            "productiveSoil",
+            "waterForUse",
+            "seasonalClimateVerified",
+            "hazardClearance",
+            "agriculturalRights"
+          ]
+        }
+      ],
+      "counterexamples": [
+        {
+          "id": "ED14-U6-N1",
+          "blocker": "CLIMATE_UNVERIFIED",
+          "causalReason": "prohibida extrapolación de uva desde núcleo central",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U6-N2",
+          "blocker": "ACCESS_UNVERIFIED",
+          "causalReason": "sin acceso estacional real no procede vivienda permanente",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        },
+        {
+          "id": "ED14-U6-N3",
+          "blocker": "WATER_UNVERIFIED",
+          "causalReason": "agua superficial o hielo no es abastecimiento potable",
+          "status": "CONDITIONAL_NEGATIVE",
+          "observed": false,
+          "siteId": null
+        }
+      ]
+    },
+    {
+      "id": "edr_e01_far_north_unclosed",
+      "studyId": "U7",
+      "name": "Extremo norte sin cierre",
+      "focus": "no se conoce pertenencia ni límite",
+      "territorialGeometryVerified": false,
+      "soilStatus": "UNASSESSED",
+      "waterStatus": "UNKNOWN",
+      "legalPlotOwnership": "UNKNOWN",
+      "approvedOccupationSites": 0,
+      "habitatAssessment": "NON_EVALUABLE",
+      "archetypes": [],
+      "counterexamples": []
+    }
+  ],
+  "hazards": [
+    {
+      "id": "ED13-F01",
+      "trigger": "frost_event",
+      "susceptibilityRequired": true,
+      "exposureRequired": true,
+      "vulnerabilityRequired": true,
+      "probability": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "observedLocalIncident": false,
+      "autoDisaster": false
+    },
+    {
+      "id": "ED13-F02",
+      "trigger": "heavy_storm",
+      "susceptibilityRequired": true,
+      "exposureRequired": true,
+      "vulnerabilityRequired": true,
+      "probability": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "observedLocalIncident": false,
+      "autoDisaster": false
+    },
+    {
+      "id": "ED13-F03",
+      "trigger": "saturated_soil",
+      "susceptibilityRequired": true,
+      "exposureRequired": true,
+      "vulnerabilityRequired": true,
+      "probability": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "observedLocalIncident": false,
+      "autoDisaster": false
+    },
+    {
+      "id": "ED13-F04",
+      "trigger": "rapid_thaw",
+      "susceptibilityRequired": true,
+      "exposureRequired": true,
+      "vulnerabilityRequired": true,
+      "probability": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "observedLocalIncident": false,
+      "autoDisaster": false
+    },
+    {
+      "id": "ED13-F05",
+      "trigger": "summer_drought",
+      "susceptibilityRequired": true,
+      "exposureRequired": true,
+      "vulnerabilityRequired": true,
+      "probability": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "observedLocalIncident": false,
+      "autoDisaster": false
+    },
+    {
+      "id": "ED13-F06",
+      "trigger": "extreme_wind",
+      "susceptibilityRequired": true,
+      "exposureRequired": true,
+      "vulnerabilityRequired": true,
+      "probability": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "observedLocalIncident": false,
+      "autoDisaster": false
+    },
+    {
+      "id": "ED13-F07",
+      "trigger": "snow_ice_on_verified_path",
+      "susceptibilityRequired": true,
+      "exposureRequired": true,
+      "vulnerabilityRequired": true,
+      "probability": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "observedLocalIncident": false,
+      "autoDisaster": false
+    },
+    {
+      "id": "ED13-F08",
+      "trigger": "wildfire_ignition",
+      "susceptibilityRequired": true,
+      "exposureRequired": true,
+      "vulnerabilityRequired": true,
+      "probability": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "observedLocalIncident": false,
+      "autoDisaster": false
+    },
+    {
+      "id": "ED13-F09",
+      "trigger": "slope_saturation",
+      "susceptibilityRequired": true,
+      "exposureRequired": true,
+      "vulnerabilityRequired": true,
+      "probability": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "observedLocalIncident": false,
+      "autoDisaster": false
+    },
+    {
+      "id": "ED13-F10",
+      "trigger": "small_channel_rise",
+      "susceptibilityRequired": true,
+      "exposureRequired": true,
+      "vulnerabilityRequired": true,
+      "probability": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "observedLocalIncident": false,
+      "autoDisaster": false
+    }
+  ],
+  "perimeter": {
+    "northClosed": false,
+    "metricGeometry": false,
+    "crs": null,
+    "sitePolygons": [],
+    "coordinates": [],
+    "roads": [],
+    "rivers": [],
+    "realPermits": []
+  },
+  "limits": {
+    "populationTotal": null,
+    "areaHectares": null,
+    "densityPersonsPerKm2": null,
+    "agriculturalYields": null,
+    "carryingCapacity": null,
+    "realVacantHousing": null,
+    "forestHarvestQuota": null
+  },
+  "decisionRegister": [
+    {
+      "id": "ED14-DEC-01",
+      "decision": "Clasificación por cinco usos positivos y exclusión, vinculada a pruebas distintas",
+      "authority": "ASSISTANT_DELEGATED_DESIGN"
+    },
+    {
+      "id": "ED14-DEC-02",
+      "decision": "La ausencia de una prueba produce PENDING_EVIDENCE, no aprobación",
+      "authority": "ASSISTANT_DELEGATED_DESIGN"
+    },
+    {
+      "id": "ED14-DEC-03",
+      "decision": "Protección y soberanía prevalecen sobre suelo y relieve favorable",
+      "authority": "ASSISTANT_DELEGATED_DESIGN"
+    },
+    {
+      "id": "ED14-DEC-04",
+      "decision": "Los escenarios negativos son contrafácticos, no sucesos en el mundo",
+      "authority": "ASSISTANT_DELEGATED_DESIGN"
+    },
+    {
+      "id": "ED14-DEC-05",
+      "decision": "U7 es NON_EVALUABLE hasta EDD-01",
+      "authority": "ASSISTANT_DELEGATED_DESIGN"
+    }
+  ],
+  "debts": [
+    {
+      "id": "EDD-01",
+      "responsiblePhase": "E19",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-02",
+      "responsiblePhase": "E19",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-03",
+      "responsiblePhase": "E19/E28",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-04",
+      "responsiblePhase": "E26",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-05",
+      "responsiblePhase": "E25",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-06",
+      "responsiblePhase": "E07/E12",
+      "status": "RESOLVED_FOR_DESIGN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-07",
+      "responsiblePhase": "E16/E19/E28",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-08",
+      "responsiblePhase": "E27",
+      "status": "OPEN",
+      "evidenceRequired": true
+    }
+  ],
+  "carryForwardTo": [
+    "E15",
+    "E16",
+    "E19",
+    "E26",
+    "E28"
+  ],
+  "syntheticOnly": true,
+  "roadsCreatedFromEligibility": false,
+  "riversCreatedFromEligibility": false,
+  "forestsCutWithoutRights": false,
+  "noBorealViticultureAssumed": true,
+  "noRodasTaxOrMilitaryClaim": true,
+  "noRealCensus": true,
+  "noRuntimeClaims": true
+}
