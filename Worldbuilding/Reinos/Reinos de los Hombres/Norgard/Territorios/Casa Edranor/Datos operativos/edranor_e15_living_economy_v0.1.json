@@ -1,0 +1,740 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e15_living_economy",
+  "version": "0.1",
+  "phase": "E15",
+  "date": "2026-11-13",
+  "status": "DELEGATED_DESIGN_NOT_CANON",
+  "authority": "ASSISTANT_DELEGATED_DESIGN",
+  "runtimeEnabled": false,
+  "syntheticOnly": true,
+  "georeferenced": false,
+  "sourceContracts": [
+    "edranor_e04_economy_viticulture",
+    "edranor_e07_canonical_nuclei",
+    "edranor_e08_population_services",
+    "edranor_e13_physical_design",
+    "edranor_e14_habitability"
+  ],
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor_or_crown_aethros",
+    "localidad",
+    "world_state"
+  ],
+  "instancesCreated": {
+    "parcels": 0,
+    "producers": 0,
+    "wineries": 0,
+    "cooperages": 0,
+    "grainMills": 0,
+    "stores": 0,
+    "households": 0,
+    "npcs": 0,
+    "routes": 0,
+    "batches": 0,
+    "containers": 0,
+    "taxes": 0
+  },
+  "limits": {
+    "vineyardHectares": null,
+    "grapeTonnes": null,
+    "redWineLitres": null,
+    "whiteWineLitres": null,
+    "selectWineLitres": null,
+    "forestHarvestQuota": null,
+    "barrelCapacity": null,
+    "localPopulation": null,
+    "annualTradeVolume": null,
+    "unitPricesClavos": null,
+    "calendarHarvestMonth": null,
+    "validRoutes": null
+  },
+  "rights": {
+    "rodasTaxOwner": "crown_aethros",
+    "rodasCommandOwner": "crown_aethros",
+    "forestHarvestRequiresPermit": true,
+    "realForestPermitsIssued": 0,
+    "internalCustomsAllowed": false,
+    "borealViticultureAssumed": false,
+    "karsathUrbanShoreVerified": false,
+    "hallheimInsideEdranor": false
+  },
+  "profiles": [
+    {
+      "id": "dorth",
+      "owner": "casa_edranor",
+      "wineStyle": "RED_TINTO",
+      "economicAuthority": "CASA_EDRANOR_SUBORDINATE_CROWN",
+      "marketAnnual": false,
+      "operationalStockConfirmed": false,
+      "newInfrastructureConfirmed": false,
+      "realBuildingsCreated": 0
+    },
+    {
+      "id": "lumina",
+      "owner": "casa_edranor",
+      "wineStyle": "WHITE_BLANCO",
+      "economicAuthority": "CASA_EDRANOR_SUBORDINATE_CROWN",
+      "marketAnnual": true,
+      "operationalStockConfirmed": false,
+      "newInfrastructureConfirmed": false,
+      "realBuildingsCreated": 0
+    },
+    {
+      "id": "karsath",
+      "owner": "casa_edranor",
+      "wineStyle": "SELECT_SMALL_BATCH",
+      "economicAuthority": "CASA_EDRANOR_SUBORDINATE_CROWN",
+      "marketAnnual": false,
+      "operationalStockConfirmed": false,
+      "newInfrastructureConfirmed": false,
+      "realBuildingsCreated": 0
+    },
+    {
+      "id": "rodas",
+      "owner": "crown_aethros",
+      "wineStyle": "NOT_ASSIGNED",
+      "economicAuthority": "CROWN_AETHROS",
+      "marketAnnual": false,
+      "operationalStockConfirmed": false,
+      "newInfrastructureConfirmed": false,
+      "realBuildingsCreated": 0
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros",
+      "wineStyle": "OUTSIDE_SCOPE",
+      "economicAuthority": "OUTSIDE_SCOPE",
+      "marketAnnual": false,
+      "operationalStockConfirmed": false,
+      "newInfrastructureConfirmed": false,
+      "realBuildingsCreated": 0
+    }
+  ],
+  "units": [
+    {
+      "id": "edr_e01_west_valkram_interface",
+      "assessment": "STUDY_ONLY",
+      "georeferenced": false,
+      "certifiedAgriculturalPlots": 0,
+      "certifiedForestPlots": 0,
+      "productiveSoilVerified": false,
+      "waterSourceVerified": false,
+      "routeVerified": false,
+      "insideHouseTerritoryConfirmed": null
+    },
+    {
+      "id": "edr_e01_karsath_central_west",
+      "assessment": "STUDY_ONLY",
+      "georeferenced": false,
+      "certifiedAgriculturalPlots": 0,
+      "certifiedForestPlots": 0,
+      "productiveSoilVerified": false,
+      "waterSourceVerified": false,
+      "routeVerified": false,
+      "insideHouseTerritoryConfirmed": null
+    },
+    {
+      "id": "edr_e01_lumina_bosque_alto",
+      "assessment": "STUDY_ONLY",
+      "georeferenced": false,
+      "certifiedAgriculturalPlots": 0,
+      "certifiedForestPlots": 0,
+      "productiveSoilVerified": false,
+      "waterSourceVerified": false,
+      "routeVerified": false,
+      "insideHouseTerritoryConfirmed": null
+    },
+    {
+      "id": "edr_e01_central_wine_context",
+      "assessment": "STUDY_ONLY",
+      "georeferenced": false,
+      "certifiedAgriculturalPlots": 0,
+      "certifiedForestPlots": 0,
+      "productiveSoilVerified": false,
+      "waterSourceVerified": false,
+      "routeVerified": false,
+      "insideHouseTerritoryConfirmed": null
+    },
+    {
+      "id": "edr_e01_dorth_azurios_west",
+      "assessment": "STUDY_ONLY",
+      "georeferenced": false,
+      "certifiedAgriculturalPlots": 0,
+      "certifiedForestPlots": 0,
+      "productiveSoilVerified": false,
+      "waterSourceVerified": false,
+      "routeVerified": false,
+      "insideHouseTerritoryConfirmed": null
+    },
+    {
+      "id": "edr_e01_north_cold_transition",
+      "assessment": "STUDY_ONLY",
+      "georeferenced": false,
+      "certifiedAgriculturalPlots": 0,
+      "certifiedForestPlots": 0,
+      "productiveSoilVerified": false,
+      "waterSourceVerified": false,
+      "routeVerified": false,
+      "insideHouseTerritoryConfirmed": null
+    },
+    {
+      "id": "edr_e01_far_north_unclosed",
+      "assessment": "NON_EVALUABLE",
+      "georeferenced": false,
+      "certifiedAgriculturalPlots": 0,
+      "certifiedForestPlots": 0,
+      "productiveSoilVerified": false,
+      "waterSourceVerified": false,
+      "routeVerified": false,
+      "insideHouseTerritoryConfirmed": false
+    }
+  ],
+  "chainStages": {
+    "wine": [
+      "PARCEL_RIGHTS",
+      "CULTIVATION",
+      "VINTAGE_MATURITY",
+      "HARVEST",
+      "RECEPTION",
+      "PROCESSING",
+      "STORAGE",
+      "SALE_DELIVERY"
+    ],
+    "wood": [
+      "FOREST_TITLE",
+      "HARVEST_PERMIT",
+      "CUTTING",
+      "SEASONING",
+      "STAVES",
+      "HOOPS_ASSEMBLY_TEST",
+      "DELIVERY_REPAIR"
+    ],
+    "food": [
+      "AGRICULTURAL_RIGHTS",
+      "SOW_CARE",
+      "HARVEST",
+      "DRY_STORE",
+      "MILL_IF_VERIFIED",
+      "COOK_OR_PRESERVE"
+    ],
+    "household": [
+      "HOUSEHOLD_NEEDS",
+      "JOB_CONTRACT",
+      "SCHEDULE_AND_CARE",
+      "LEGAL_SUPPLIES",
+      "CONSUME_AND_RECORD"
+    ],
+    "trade": [
+      "STOCK_PROVENANCE",
+      "OWNER_OFFER",
+      "CONTRACT",
+      "ROUTE_AND_CARRIER",
+      "RECEIPT",
+      "PAYMENT_AND_LEGAL_TAX"
+    ]
+  },
+  "chainPrerequisites": {
+    "wine": [
+      "rights",
+      "climate",
+      "labor",
+      "provenance",
+      "water",
+      "container",
+      "stock",
+      "delivery"
+    ],
+    "wood": [
+      "forestPermit",
+      "regeneration",
+      "jurisdiction",
+      "conditioning",
+      "components",
+      "container"
+    ],
+    "food": [
+      "rights",
+      "water",
+      "provider",
+      "fuel",
+      "stock"
+    ],
+    "household": [
+      "schedule",
+      "minorSafety",
+      "lodging",
+      "potableWater",
+      "delivery"
+    ],
+    "trade": [
+      "routeSurvey",
+      "jurisdiction",
+      "portEvidence",
+      "internalCustoms"
+    ]
+  },
+  "lotPolicy": {
+    "parentBatchRequired": true,
+    "ownerRequired": true,
+    "custodianRequired": true,
+    "quantityUnitRequired": true,
+    "capacityMustBeVerified": true,
+    "lossMustBeRecorded": true,
+    "spendAvailableNotOnHand": true,
+    "noNegativeStock": true,
+    "conversionFactorUnknown": true,
+    "recipeRequiredForDifferentUnits": true,
+    "invoiceDoesNotCreateStock": true,
+    "containerIdPersistentAcrossRepairs": true
+  },
+  "commercialPolicy": {
+    "currency": "CLAVO",
+    "clavosPerLuna": 24,
+    "clavosPerCorona": 480,
+    "priceSchedule": null,
+    "taxRates": null,
+    "internalCustoms": false,
+    "luminaAnnualMarketOnly": true,
+    "rodasEdranorFiscalClaim": false,
+    "deliveryRequiresSurveyedRoute": true,
+    "contractsDoNotTeleportGoods": true
+  },
+  "peoplePolicy": {
+    "ageOfMajority": 18,
+    "children0to7EmploymentAllowed": false,
+    "children8to11FullEmploymentAllowed": false,
+    "children12to14UnsupervisedApprenticeshipAllowed": false,
+    "minor15to17UnrestrictedDangerousWorkAllowed": false,
+    "doubleBookedWorkersAllowed": false,
+    "censusCreated": false
+  },
+  "seasonalWindows": [
+    "DORMANCY_OR_PREP",
+    "GROWTH_AND_CARE",
+    "MATURITY_AND_HARVEST_IF_VERIFIED",
+    "PROCESSING_AND_CLEANING",
+    "STORAGE_AND_DISPATCH"
+  ],
+  "calendarMonthsAssigned": [],
+  "scenarios": [
+    {
+      "id": "ED15-W01",
+      "family": "WINE",
+      "question": "Cultivo sin titulo/aptitud",
+      "missingProof": "rights",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-W02",
+      "family": "WINE",
+      "question": "Helada sin medicion local",
+      "missingProof": "climate",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-W03",
+      "family": "WINE",
+      "question": "Prensa sin agua higienica",
+      "missingProof": "water",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-W04",
+      "family": "WINE",
+      "question": "Doble venta del mismo lote",
+      "missingProof": "stock",
+      "expectedIfMissing": "INSUFFICIENT_STOCK",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-W05",
+      "family": "WINE",
+      "question": "Guarda sin recipiente apto",
+      "missingProof": "container",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-W06",
+      "family": "WINE",
+      "question": "Vendimia sin jornaleros validos",
+      "missingProof": "labor",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-W07",
+      "family": "WINE",
+      "question": "Vino de Karsath sin origen",
+      "missingProof": "provenance",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-W08",
+      "family": "WINE",
+      "question": "Pedido en feria sin producto entregable",
+      "missingProof": "stock",
+      "expectedIfMissing": "INSUFFICIENT_STOCK",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-M01",
+      "family": "WOOD",
+      "question": "Corta sin permiso forestal",
+      "missingProof": "forestPermit",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-M02",
+      "family": "WOOD",
+      "question": "Corta sin plan regeneracion",
+      "missingProof": "regeneration",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-M03",
+      "family": "WOOD",
+      "question": "Madera verde sin curado",
+      "missingProof": "conditioning",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-M04",
+      "family": "WOOD",
+      "question": "Duelas sin aros",
+      "missingProof": "components",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-M05",
+      "family": "WOOD",
+      "question": "Barrica con fuga",
+      "missingProof": "container",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-M06",
+      "family": "WOOD",
+      "question": "Tala en Bosque Real sin autoridad Corona",
+      "missingProof": "jurisdiction",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-F01",
+      "family": "FOOD",
+      "question": "Grano sin parcela habilitada",
+      "missingProof": "rights",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-F02",
+      "family": "FOOD",
+      "question": "Molino no acreditado",
+      "missingProof": "provider",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-F03",
+      "family": "FOOD",
+      "question": "Horno sin combustible legitimo",
+      "missingProof": "fuel",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-F04",
+      "family": "FOOD",
+      "question": "Huerto sin agua/derechos",
+      "missingProof": "water",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-F05",
+      "family": "FOOD",
+      "question": "Reserva de semilla gastada dos veces",
+      "missingProof": "stock",
+      "expectedIfMissing": "INSUFFICIENT_STOCK",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-H01",
+      "family": "HOUSEHOLD",
+      "question": "Misma persona en dos puestos simultaneos",
+      "missingProof": "schedule",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-H02",
+      "family": "HOUSEHOLD",
+      "question": "Aprendiz sin mentor/tutor",
+      "missingProof": "minorSafety",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-H03",
+      "family": "HOUSEHOLD",
+      "question": "Temporeros sin alojamiento digno",
+      "missingProof": "lodging",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-H04",
+      "family": "HOUSEHOLD",
+      "question": "Carece de agua potable",
+      "missingProof": "potableWater",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-H05",
+      "family": "HOUSEHOLD",
+      "question": "Pago sin entrega fisica",
+      "missingProof": "delivery",
+      "expectedIfMissing": "HOLD",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-T01",
+      "family": "TRADE",
+      "question": "Ruta Dorth Lumina sin levantamiento",
+      "missingProof": "routeSurvey",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-T02",
+      "family": "TRADE",
+      "question": "Impuesto Edranor aplicado a Rodas",
+      "missingProof": "jurisdiction",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-T03",
+      "family": "TRADE",
+      "question": "Barcaza desde Karsath sin muelle acreditado",
+      "missingProof": "portEvidence",
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    },
+    {
+      "id": "ED15-T04",
+      "family": "TRADE",
+      "question": "Aduana entre Grandes Casas",
+      "missingProof": "internalCustoms",
+      "expectedIfMissing": "BLOCKED",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "observed": false,
+      "worldStateMutation": false,
+      "siteId": null,
+      "producerId": null
+    }
+  ],
+  "debts": [
+    {
+      "id": "EDD-01",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-02",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-03",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-04",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-05",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-06",
+      "status": "RESOLVED_FOR_DESIGN"
+    },
+    {
+      "id": "EDD-07",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-08",
+      "status": "OPEN"
+    }
+  ],
+  "decisionRegister": [
+    {
+      "id": "ED15-DEC-01",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED15-DEC-02",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED15-DEC-03",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED15-DEC-04",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED15-DEC-05",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED15-DEC-06",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED15-DEC-07",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    }
+  ],
+  "carryForwardTo": [
+    "E16",
+    "E17",
+    "E19",
+    "E20-E24",
+    "E26",
+    "E28"
+  ],
+  "noNextPhaseExecuted": true
+}
