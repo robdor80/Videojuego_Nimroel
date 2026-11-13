@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e19_cartography_gate",
+  "version": "0.1",
+  "phase": "E19",
+  "date": "2026-11-14",
+  "authority": "ASSISTANT_DELEGATED_DESIGN",
+  "sourceMainSha": "223f1e49adfbc73be6a80c6ce36e7aab506450c2",
+  "phaseStatus": "PREFLIGHT_COMPLETE_MATERIAL_GATES_OPEN",
+  "maturityLevel": "B2",
+  "phaseComplete": false,
+  "metricGeometryValidated": false,
+  "runtimeEnabled": false,
+  "worldStateEntitiesCreated": 0,
+  "canonSuperiorModified": false,
+  "syntheticTestsOnly": true,
+  "sourceMap": {
+    "repositoryPath": "Worldbuilding/Nimroel.jpg",
+    "gitBlobSha": "c46e017a5c9a0ab66f8f072dd37d7236e05b5e2d",
+    "sha256": "582405ee3e38a6606a89342f4b28262d3bf88c087b05c23655a886130ffab91b",
+    "byteLength": 4752802,
+    "widthPx": 4096,
+    "heightPx": 2048,
+    "sourceClass": "GENERAL_ILLUSTRATIVE_MAP",
+    "titleScaleBar": "400 MILLAS",
+    "scaleApplicableToAuthorCrop": false,
+    "byteIdenticalToUserUpload": true
+  },
+  "authorCrop": {
+    "label": "1000024893.jpg",
+    "documentaryReference": "Cartografia/E00_MAPA_Y_LIMITES.md",
+    "originalBytesVerified": false,
+    "redTerritoryLineDocumented": true,
+    "rodasBlueXDocumented": true,
+    "northernLimitVisible": false,
+    "completeBoundarySourceAcquired": false
+  },
+  "spatialReference": {
+    "proposedInternalCrsId": "EDRANOR_LOCAL_2D",
+    "effectiveCrs": null,
+    "axesProposal": "X_EAST_Y_DOWN_GODOT",
+    "origin": null,
+    "metersPerPixel": null,
+    "controlPoints": [],
+    "minimumNonCollinearControls": 3,
+    "forwardTransform": null,
+    "inverseTransform": null,
+    "residualRms": null,
+    "independentHoldoutValidated": false,
+    "calibrationAccepted": false
+  },
+  "jurisdiction": {
+    "perimeter": null,
+    "northernBoundaryClosed": false,
+    "polygons": [],
+    "holes": [],
+    "exceptionGeometries": [],
+    "officialFeatureCount": 0
+  },
+  "protectedPlaces": [
+    {
+      "id": "dorth",
+      "owner": "casa_edranor",
+      "insideEdranorInDocumentaryCanon": true,
+      "kind": "city",
+      "coordinate": null,
+      "polygon": null,
+      "instantiated": false
+    },
+    {
+      "id": "lumina",
+      "owner": "casa_edranor",
+      "insideEdranorInDocumentaryCanon": true,
+      "kind": "small_compact_settlement",
+      "coordinate": null,
+      "polygon": null,
+      "instantiated": false
+    },
+    {
+      "id": "karsath",
+      "owner": "casa_edranor",
+      "insideEdranorInDocumentaryCanon": true,
+      "kind": "small_lakeside_visual_settlement",
+      "coordinate": null,
+      "polygon": null,
+      "instantiated": false
+    },
+    {
+      "id": "rodas",
+      "owner": "crown_aethros",
+      "insideEdranorInDocumentaryCanon": true,
+      "kind": "village",
+      "coordinate": null,
+      "polygon": null,
+      "instantiated": false
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros",
+      "insideEdranorInDocumentaryCanon": false,
+      "kind": "outside",
+      "coordinate": null,
+      "polygon": null,
+      "instantiated": false
+    }
+  ],
+  "units": [
+    {
+      "id": "edr_e01_west_valkram_interface",
+      "order": 1,
+      "geometry": null,
+      "assessment": "STUDY_ONLY",
+      "administrativePolygon": false
+    },
+    {
+      "id": "edr_e01_karsath_central_west",
+      "order": 2,
+      "geometry": null,
+      "assessment": "STUDY_ONLY",
+      "administrativePolygon": false
+    },
+    {
+      "id": "edr_e01_lumina_bosque_alto",
+      "order": 3,
+      "geometry": null,
+      "assessment": "STUDY_ONLY",
+      "administrativePolygon": false
+    },
+    {
+      "id": "edr_e01_central_wine_context",
+      "order": 4,
+      "geometry": null,
+      "assessment": "STUDY_ONLY",
+      "administrativePolygon": false
+    },
+    {
+      "id": "edr_e01_dorth_azurios_west",
+      "order": 5,
+      "geometry": null,
+      "assessment": "STUDY_ONLY",
+      "administrativePolygon": false
+    },
+    {
+      "id": "edr_e01_north_cold_transition",
+      "order": 6,
+      "geometry": null,
+      "assessment": "STUDY_ONLY",
+      "administrativePolygon": false
+    },
+    {
+      "id": "edr_e01_far_north_unclosed",
+      "order": 7,
+      "geometry": null,
+      "assessment": "NON_EVALUABLE",
+      "administrativePolygon": false
+    }
+  ],
+  "layers": [
+    {
+      "id": "L00",
+      "name": "Fuente cartográfica",
+      "sourceEvidenceStatus": "WORLD_SOURCE_VERIFIED_CROP_PENDING",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L01",
+      "name": "Perímetro y jurisdicción",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L02",
+      "name": "Anclas y relieve cualitativo",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L03",
+      "name": "DEM/heightfield",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L04",
+      "name": "Cuencas",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L05",
+      "name": "Hidrografía",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L06",
+      "name": "Clima y suelos",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L07",
+      "name": "Vegetación",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L08",
+      "name": "Parcelas y derechos",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L09",
+      "name": "Vías y cruces",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L10",
+      "name": "Núcleos y edificios",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    },
+    {
+      "id": "L11",
+      "name": "World State",
+      "sourceEvidenceStatus": "GEOMETRY_NOT_VERIFIED",
+      "spatialGeometryReady": false,
+      "runtimeReady": false
+    }
+  ],
+  "relief": {
+    "dem": null,
+    "verticalDatum": null,
+    "tiles": [],
+    "measuredHeights": [],
+    "sourceVerified": false
+  },
+  "hydrology": {
+    "regionalReferences": [
+      "RIO_LURIEN",
+      "LAGO_ANTELA"
+    ],
+    "localRiverSegments": [],
+    "localLakes": [],
+    "catchments": [],
+    "flowGraph": [],
+    "waterRightsVerified": false
+  },
+  "routes": {
+    "needsGraphSource": "E16",
+    "physicalNodes": [],
+    "physicalEdges": [],
+    "rightsVerified": false
+  },
+  "materialGates": [
+    {
+      "id": "EDD-01",
+      "status": "OPEN",
+      "required": "author_complete_boundary_or_ratified_vertices"
+    },
+    {
+      "id": "EDD-02",
+      "status": "OPEN",
+      "required": "three_noncollinear_controls_reversible_calibration_and_error"
+    },
+    {
+      "id": "EDD-03",
+      "status": "OPEN",
+      "required": "dem_flow_and_receptors_reviewed"
+    },
+    {
+      "id": "EDD-07",
+      "status": "OPEN",
+      "required": "verified_traces_crossings_slopes_and_rights"
+    }
+  ],
+  "debtLedger": [
+    {
+      "id": "EDD-01",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-02",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-03",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-04",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-05",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-06",
+      "status": "RESOLVED_FOR_DESIGN"
+    },
+    {
+      "id": "EDD-07",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-08",
+      "status": "OPEN"
+    }
+  ],
+  "safeOutputs": {
+    "provenanceLedger": true,
+    "nonMetricSchematic": true,
+    "metricPolygon": false,
+    "geojsonExport": false,
+    "physicalNavigation": false,
+    "godotGameWorld": false
+  },
+  "decisionIds": [
+    "ED19-DEC-01",
+    "ED19-DEC-02",
+    "ED19-DEC-03",
+    "ED19-DEC-04",
+    "ED19-DEC-05"
+  ],
+  "nextAction": "Acquire author complete red boundary source or author-ratified vertices; calibrate with controls; keep phase open."
+}
