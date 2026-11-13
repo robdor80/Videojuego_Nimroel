@@ -65,12 +65,13 @@
       "id": "forja_estelar",
       "name": "Forja Estelar",
       "geographicContextHouse": "casa_galdren",
-      "jurisdictionOwner": "norgard",
+      "jurisdictionOwner": "UNKNOWN",
       "peacetimeTerritorialAdministration": "casa_galdren",
       "wartimeStrategicCommand": "crown_aethros_hallheim",
       "procedural": false,
       "role": "INSTALACION_ESTRATEGICA",
-      "settlementScale": "NOT_A_SETTLEMENT"
+      "settlementScale": "NOT_A_SETTLEMENT",
+      "ownershipTitle": "UNKNOWN"
     },
     {
       "id": "treskal",

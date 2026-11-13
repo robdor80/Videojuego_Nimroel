@@ -32,6 +32,8 @@ def validate(x):
     assert loc["zanthir"]["settlementScale"] == "UNKNOWN"
     forge = loc["forja_estelar"]
     assert forge["role"] == "INSTALACION_ESTRATEGICA"
+    assert forge["jurisdictionOwner"] == "UNKNOWN"
+    assert forge["ownershipTitle"] == "UNKNOWN"
     assert forge["peacetimeTerritorialAdministration"] == "casa_galdren"
     assert forge["wartimeStrategicCommand"] == "crown_aethros_hallheim"
     assert forge["settlementScale"] == "NOT_A_SETTLEMENT"
@@ -79,6 +81,7 @@ mutations = [
     lambda x:x["locations"][1].update(settlementScale="CIUDAD_CANONICA"),
     lambda x:x["locations"][2].update(peacetimeTerritorialAdministration="casa_valrik"),
     lambda x:x["locations"][2].update(wartimeStrategicCommand="casa_galdren"),
+    lambda x:x["locations"][2].update(jurisdictionOwner="casa_galdren"),
     lambda x:x["locations"][2].update(role="SEDE"),
     lambda x:x["locations"][3].update(jurisdictionOwner="casa_galdren"),
     lambda x:x["locations"][3].update(insideGaldrenPerimeter=True),
