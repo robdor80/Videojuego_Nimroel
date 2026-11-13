@@ -1,0 +1,32 @@
+name: Galdren G04 agricultura ganaderia alimentacion
+on:
+  push:
+    branches:
+      - 'feat/galdren-g04-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/**'
+      - 'Tools/GaldrenG04/**'
+      - '.github/workflows/galdren-g04.yml'
+jobs:
+  static:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: G00 foundation
+        run: python Tools/GaldrenG00/validate.py
+      - name: G01 relief
+        run: python Tools/GaldrenG01/validate.py
+      - name: G02 hydrology
+        run: python Tools/GaldrenG02/validate.py
+      - name: G03 climate soils ecosystems
+        run: python Tools/GaldrenG03/validate.py
+      - name: G04 agriculture livestock food economy and negative tests
+        run: python Tools/GaldrenG04/validate.py
