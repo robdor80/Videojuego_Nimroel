@@ -1,0 +1,26 @@
+name: Galdren G01 geografia static
+on:
+  push:
+    branches:
+      - 'feat/galdren-g01-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/**'
+      - 'Tools/GaldrenG01/**'
+      - '.github/workflows/galdren-g01.yml'
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: G00 regresion
+        run: python Tools/GaldrenG00/validate.py
+      - name: G01 atlas y mutaciones
+        run: python Tools/GaldrenG01/validate.py

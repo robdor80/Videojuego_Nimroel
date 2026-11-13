@@ -1,5 +1,5 @@
-# Casa Galdren — G00: fundación territorial
-**Fecha:** 13/11/2026 · **Estado:** fundación documental y contractual, **NO RUNTIME**.  
+# Casa Galdren — evolución territorial G00 → G01
+**Fecha:** 13/11/2026 · **Estado:** G00 fundacional y G01 geografía documentada; **NO RUNTIME**.  
 **Fuente política:** Reino de Norgard; Galdren es una Gran Casa **no soberana** que administra por delegación de la Corona.
 
 ## Identidad confirmada
@@ -10,6 +10,12 @@
 - **Heráldica:** toro de hierro ennegrecido/acero oscuro sobre dorado trigo envejecido.
 - Relaciones: cooperación con Corona Aethros y rivalidad económica antigua con Darovan.
 - **Treskal pertenece a Valrik** y **Hallheim pertenece a la Corona/Aethros**; no se trasladan por proximidad en el mapa.
+
+## Fase G01 — geografía y toponimia (documental)
+- [Índice y estado G01](G01_INDICE.md): atlas físico, interfaces fronterizas, corredores hipotéticos, expedientes TOP y auditoría.
+- [Contrato geográfico G01](Datos%20operativos/galdren_g01_geography_v0.1.json): 12 ámbitos, 6 interfaces, 6 estudios, 5 expedientes y 18 referencias canónicas; runtime desactivado.
+- [Traspaso a hidrología G02](00_Control_del_proyecto/TRASPASO_G02.md): G02 **no iniciada**.
+- La fase G01 no crea topónimos oficiales ni modifica el canon superior.
 
 ## Documentos y contratos de G00
 - [Auditoría del canon](Auditorias/G00_AUDITORIA.md).
@@ -24,4 +30,4 @@
 `Nimroel Core → Norgard Defaults → Casa Galdren → Localidad → World State`. Un topónimo canónico no implica jurisdicción Galdren. El mapa autoral del contorno rojo es **aproximado**; no es un polígono jurídico ni un sistema de coordenadas Godot.
 
 ## Prohibiciones
-No fijar por inferencia censos, hectáreas, kilómetros, carreteras, despliegues militares, genealogías, biografías, origen enano detallado, calderas de la Forja ni trazas fluviales. Las propuestas requieren ratificación. G01 no comienza con esta entrega.
+No fijar por inferencia censos, hectáreas, kilómetros, carreteras, despliegues militares, genealogías, biografías, origen enano detallado, calderas de la Forja ni trazas fluviales. Las propuestas requieren ratificación. G01 se desarrolla en **fase y rama propias**, tras la fusión de G00; G02 no comienza con esta entrega.
