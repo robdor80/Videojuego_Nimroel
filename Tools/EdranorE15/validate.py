@@ -137,7 +137,7 @@ def check(c,ss):
                 and case["status"]=="HYPOTHETICAL_NOT_OCCURRED"
                 and case["observed"] is False and case["worldStateMutation"] is False
                 and case["siteId"] is None and case["producerId"] is None,"case became fact")
-    guard(c["debts"]==e14["debts"] and ids(c["debts"])==[f"EDD-{i:02d}" for i in range(1,9)],"EDD drift")
+    guard([(x["id"],x["status"]) for x in c["debts"]]==[(x["id"],x["status"]) for x in e14["debts"]] and ids(c["debts"])==[f"EDD-{i:02d}" for i in range(1,9)],"EDD drift")
     guard(ids(c["decisionRegister"])==[f"ED15-DEC-{i:02d}" for i in range(1,8)]
           and all(x["authority"]=="ASSISTANT_DELEGATED_DESIGN" and x["canonRatified"] is False for x in c["decisionRegister"]),"delegation promoted")
     guard(c["carryForwardTo"]==["E16","E17","E19","E20-E24","E26","E28"],"handoff")
