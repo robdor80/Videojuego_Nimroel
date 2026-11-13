@@ -29,7 +29,7 @@ Distinguir obligatoriamente:
 - `FUTURE_OBJECTIVE`: local/edificio proyectado, **no existente**.
 - `PROPOSAL_PENDING_AUTHOR`: aún necesita aprobación.
 - `TEST_ONLY`: fixture o ensayo; no canon materializado.
-- `INSTANCE_BONDED`: visual vinculado a una instancia/semilla aprobada.
+- `INSTANCE_BOUND`: visual vinculado a una instancia/semilla aprobada.
 - `UNKNOWN`: no completar con una plaza, un puente o un comercio inventado.
 
 ## 3. Comportamiento general de asentamientos
