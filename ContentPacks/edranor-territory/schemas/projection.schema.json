@@ -190,7 +190,10 @@
             "type": "string"
           },
           "berserkerCommander": {
-            "type": "null"
+            "type": [
+              "null",
+              "string"
+            ]
           },
           "protectedCanonicalAnchor": {
             "type": "boolean"
