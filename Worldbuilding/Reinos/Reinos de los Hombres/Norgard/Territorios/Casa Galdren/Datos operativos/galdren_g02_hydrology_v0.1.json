@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "documentId": "galdren_g02",
+  "phase": "G02",
+  "version": "0.1.0",
+  "date": "2026-11-13",
+  "baselineMainSha": "db49fde947463a7305b9ae453aa1c844740f6dda",
+  "baseDocumentId": "galdren_g01",
+  "status": "DOCUMENTARY_PLANNING_ONLY",
+  "runtimeEnabled": false,
+  "authorApproval": "G02_WORK_APPROVED; NEW_TOPOLOGY_AND_TOPONYMS_NOT_RATIFIED",
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_galdren",
+    "localidad",
+    "world_state"
+  ],
+  "limitations": {
+    "georeferenced": false,
+    "metricGeometryVerified": false,
+    "legalBordersVerified": false,
+    "waterflowSimulationValidated": false,
+    "bridgesVerified": false,
+    "portsVerified": false,
+    "navigabilityVerified": false,
+    "quantitativeDischargeVerified": false,
+    "newRiverNamesApproved": false
+  },
+  "guardrails": {
+    "caleranOneRiver": true,
+    "azuriosWesternBirth": true,
+    "easternPlainsCanon": true,
+    "transitionRouteResolved": false,
+    "treskalOwner": "casa_valrik",
+    "dorthOwner": "casa_edranor",
+    "hallheimOwner": "crown_aethros",
+    "invernosShared": true,
+    "permanentGlaciersConfirmed": false,
+    "metalEstelarOnly": "montes_azurios",
+    "newWatercoursesAdded": 0
+  },
+  "rivers": [
+    {
+      "id": "rio_caleran",
+      "name": "Río Caleran",
+      "type": "RIVER",
+      "evidence": "CANON_REPO",
+      "houseContext": "casa_galdren",
+      "independent": true,
+      "flowTo": "mar_suthiros",
+      "source": "montes_azurios_vertiente_occidental",
+      "sourceVerified": true,
+      "mouthPositionVerified": false
+    },
+    {
+      "id": "rio_vornarsk",
+      "name": "Río Vornarsk",
+      "type": "RIVER",
+      "evidence": "CANON_REPO",
+      "houseContext": "entorno_zanthir",
+      "independent": true,
+      "flowTo": "UNKNOWN",
+      "source": "UNKNOWN",
+      "sourceVerified": false,
+      "mouthPositionVerified": false
+    },
+    {
+      "id": "rio_keldarsk",
+      "name": "Río Keldarsk",
+      "type": "RIVER",
+      "evidence": "CANON_REPO",
+      "houseContext": "entorno_zanthir",
+      "independent": true,
+      "flowTo": "UNKNOWN",
+      "source": "UNKNOWN",
+      "sourceVerified": false,
+      "mouthPositionVerified": false
+    },
+    {
+      "id": "rio_sareno",
+      "name": "Río Sareno",
+      "type": "RIVER",
+      "evidence": "CANON_REPO",
+      "houseContext": "casa_valrik_treskal",
+      "independent": true,
+      "flowTo": "mar_suthiros",
+      "source": "montes_invernos_vertiente_meridional",
+      "sourceVerified": true,
+      "mouthPositionVerified": false
+    },
+    {
+      "id": "rio_theleno",
+      "name": "Río Theleno",
+      "type": "RIVER",
+      "evidence": "CANON_REPO",
+      "houseContext": "casa_valrik_treskal",
+      "independent": true,
+      "flowTo": "mar_suthiros",
+      "source": "montes_invernos_vertiente_meridional",
+      "sourceVerified": true,
+      "mouthPositionVerified": false
+    }
+  ],
+  "caleran": {
+    "systemId": "rio_caleran",
+    "birth": "montes_azurios_vertiente_occidental",
+    "crossesEasternFertilePlains": true,
+    "passes": [
+      "arleon"
+    ],
+    "westToEastLink": "TOPOGRAPHIC_ROUTE_UNRESOLVED",
+    "cartographicCrossingInvented": false,
+    "upperMainCourseId": "rio_caleran",
+    "splitOrder": [
+      "caleran_main_first_split",
+      "caleran_arms_secondary_splits",
+      "suthiros_outlet"
+    ],
+    "twoNamedArms": [
+      "brazo_occidental_caleran",
+      "brazo_oriental_caleran"
+    ],
+    "arms": [
+      {
+        "id": "brazo_occidental_caleran",
+        "parent": "rio_caleran",
+        "isNewRiver": false,
+        "hasSecondaryBifurcation": true,
+        "secondaryChannelsNamed": false,
+        "terminalMouthCount": null
+      },
+      {
+        "id": "brazo_oriental_caleran",
+        "parent": "rio_caleran",
+        "isNewRiver": false,
+        "hasSecondaryBifurcation": true,
+        "secondaryChannelsNamed": false,
+        "terminalMouthCount": null
+      }
+    ],
+    "mouthSea": "mar_suthiros",
+    "confirmedOutletCount": null,
+    "joinedBackBeforeSea": "UNKNOWN",
+    "navigationStatus": "UNKNOWN",
+    "floodReturnPeriodYears": null
+  },
+  "northern": {
+    "rivers": [
+      "rio_vornarsk",
+      "rio_keldarsk"
+    ],
+    "context": "zanthir",
+    "originLanguage": "DWARVEN_HYDRONYMS_CANON",
+    "etymologiesRatified": false,
+    "winterIce": "CANON",
+    "sourceMountain": "UNKNOWN",
+    "receivingSea": "UNKNOWN",
+    "mutualConfluence": "UNKNOWN",
+    "winterClosureDates": "UNKNOWN",
+    "navigability": "UNKNOWN"
+  },
+  "treskal": {
+    "rivers": [
+      "rio_sareno",
+      "rio_theleno"
+    ],
+    "bornOn": "montes_invernos_vertiente_meridional",
+    "distinctBeforeLowerCourse": true,
+    "convergeAtFinalCourse": true,
+    "finalCommonChannelIsNewNamedRiver": false,
+    "commonOutlet": "mar_suthiros",
+    "near": "treskal",
+    "treskalHouse": "casa_valrik",
+    "galdrenClaim": false,
+    "westernTwinBorderSegment": "REGIONAL_CONCEPT_ONLY",
+    "fixedBankSide": "UNKNOWN"
+  },
+  "basinStudies": [
+    {
+      "id": "G02-C01",
+      "watercourse": "rio_caleran",
+      "scope": "Galdren/contexto regional",
+      "class": "CANONICAL_RIVER_UNDELIMITED_CATCHMENT",
+      "outlet": "mar_suthiros",
+      "sourceSector": "montes_azurios_oeste",
+      "houseJurisdiction": "UNKNOWN",
+      "watershedDelineated": false,
+      "metricTraceVerified": false
+    },
+    {
+      "id": "G02-C02",
+      "watercourse": "rio_vornarsk",
+      "scope": "entorno_zanthir",
+      "class": "CANONICAL_RIVER_UNDELIMITED_CATCHMENT",
+      "outlet": "UNKNOWN",
+      "sourceSector": "UNKNOWN",
+      "houseJurisdiction": "UNKNOWN",
+      "watershedDelineated": false,
+      "metricTraceVerified": false
+    },
+    {
+      "id": "G02-C03",
+      "watercourse": "rio_keldarsk",
+      "scope": "entorno_zanthir",
+      "class": "CANONICAL_RIVER_UNDELIMITED_CATCHMENT",
+      "outlet": "UNKNOWN",
+      "sourceSector": "UNKNOWN",
+      "houseJurisdiction": "UNKNOWN",
+      "watershedDelineated": false,
+      "metricTraceVerified": false
+    },
+    {
+      "id": "G02-C04",
+      "watercourse": "rio_sareno",
+      "scope": "valrik_treskal_reference",
+      "class": "NEIGHBOR_REFERENCE_ONLY",
+      "outlet": "mar_suthiros",
+      "sourceSector": "montes_invernos_sur",
+      "houseJurisdiction": "casa_valrik_contexto_sin_poligono",
+      "watershedDelineated": false,
+      "metricTraceVerified": false
+    },
+    {
+      "id": "G02-C05",
+      "watercourse": "rio_theleno",
+      "scope": "valrik_treskal_reference",
+      "class": "NEIGHBOR_REFERENCE_ONLY",
+      "outlet": "mar_suthiros",
+      "sourceSector": "montes_invernos_sur",
+      "houseJurisdiction": "casa_valrik_contexto_sin_poligono",
+      "watershedDelineated": false,
+      "metricTraceVerified": false
+    }
+  ],
+  "interfaceStudies": [
+    {
+      "id": "G02-I01",
+      "site": "azurios_oeste_este",
+      "question": "Transición de nacimiento occidental del Caleran a llanura oriental sin traza acreditada",
+      "status": "UNRESOLVED",
+      "legalAllocation": "UNKNOWN",
+      "coordinatesVerified": false
+    },
+    {
+      "id": "G02-I02",
+      "site": "invernos_sur",
+      "question": "Divisorias de cabecera de Sareno y Theleno y relación con sector Galdren",
+      "status": "UNRESOLVED",
+      "legalAllocation": "UNKNOWN",
+      "coordinatesVerified": false
+    },
+    {
+      "id": "G02-I03",
+      "site": "valrik_treskal",
+      "question": "Orillas concretas y contacto con gemelo occidental sin anexionar Treskal",
+      "status": "UNRESOLVED",
+      "legalAllocation": "UNKNOWN",
+      "coordinatesVerified": false
+    },
+    {
+      "id": "G02-I04",
+      "site": "zanthir_bahia_norte",
+      "question": "Salidas de Vornarsk/Keldarsk desconocidas; no atribuir desembocadura a bahía",
+      "status": "UNRESOLVED",
+      "legalAllocation": "UNKNOWN",
+      "coordinatesVerified": false
+    },
+    {
+      "id": "G02-I05",
+      "site": "caleran_suthiros",
+      "question": "Bocas y márgenes de los brazos del Caleran sin jurisdicción ni número definido",
+      "status": "UNRESOLVED",
+      "legalAllocation": "UNKNOWN",
+      "coordinatesVerified": false
+    },
+    {
+      "id": "G02-I06",
+      "site": "azurios_edranor",
+      "question": "Relieve y aguas de vertiente occidental no implican cauce ni titularidad de Dorth",
+      "status": "UNRESOLVED",
+      "legalAllocation": "UNKNOWN",
+      "coordinatesVerified": false
+    }
+  ],
+  "riskStudies": [
+    {
+      "id": "G02-R01",
+      "kind": "ZANTHIR_WINTER_ICE",
+      "status": "CANON_QUALITATIVE",
+      "sector": "vornarsk_keldarsk",
+      "frequency": "WINTER_NO_DATES",
+      "floodHeightMeters": null,
+      "infrastructureConfirmed": false
+    },
+    {
+      "id": "G02-R02",
+      "kind": "INVERNOS_SNOWMELT_RUNOFF",
+      "status": "REGIONAL_DRAFT_QUALITATIVE",
+      "sector": "invernos_shared",
+      "frequency": "UNKNOWN",
+      "floodHeightMeters": null,
+      "infrastructureConfirmed": false
+    },
+    {
+      "id": "G02-R03",
+      "kind": "ARLEON_CALERAN_FLOODPLAIN",
+      "status": "STUDY_ONLY",
+      "sector": "arleon_caleran",
+      "frequency": "UNKNOWN",
+      "floodHeightMeters": null,
+      "infrastructureConfirmed": false
+    },
+    {
+      "id": "G02-R04",
+      "kind": "CALERAN_LOWER_BRANCH_RECONFIGURATION",
+      "status": "STUDY_ONLY",
+      "sector": "caleran_lower",
+      "frequency": "UNKNOWN",
+      "floodHeightMeters": null,
+      "infrastructureConfirmed": false
+    },
+    {
+      "id": "G02-R05",
+      "kind": "ZANTHIR_BAY_NAVIGATION_ICE",
+      "status": "CANON_QUALITATIVE",
+      "sector": "bahia_zanthir",
+      "frequency": "WINTER_NO_DATES",
+      "floodHeightMeters": null,
+      "infrastructureConfirmed": false
+    }
+  ],
+  "unknown": [
+    "CALERAN_SOURCE_TO_EASTERN_PLAINS_TRACE",
+    "CALERAN_EXACT_SPLIT_GEOMETRY",
+    "CALERAN_MOUTH_COUNT_AND_BANKS",
+    "VORNARSK_SOURCE_AND_OUTLET",
+    "KELDARSK_SOURCE_AND_OUTLET",
+    "ZANTHIR_BASIN_DIVIDES",
+    "INVERNOS_GALDREN_VALRIK_DRAINAGE_DIVIDE",
+    "SEASONAL_CALENDAR_AND_DISCHARGE",
+    "GAUGED_FLOODPLAINS",
+    "WATER_INFRASTRUCTURE_AND_NAVIGABILITY",
+    "LEGAL_BANKS_AND_COASTS"
+  ],
+  "sourceRegistry": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/Montes Invernos/cotas_y_altitudes_borrador.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/Cartografia/G01_ATLAS_FISICO.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/Cartografia/G01_LIMITES_Y_VERTIENTES.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/Datos operativos/galdren_g01_geography_v0.1.json",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/00_Control_del_proyecto/TRASPASO_G02.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Cartografia/E02_ATLAS_HIDROGRAFICO.md"
+  ]
+}
