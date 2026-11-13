@@ -1,0 +1,38 @@
+name: Galdren G05 mineria industria Zanthir Forja regia
+on:
+  push:
+    branches:
+      - 'feat/galdren-g05-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/**'
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/NORGARD.md'
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/**'
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Gobierno y leyes/sistema_militar_norgard_v0.1.md'
+      - 'Tools/GaldrenG05/**'
+      - '.github/workflows/galdren-g05.yml'
+
+jobs:
+  static:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: G00 foundation historical
+        run: python Tools/GaldrenG00/validate.py
+      - name: G01 relief historical
+        run: python Tools/GaldrenG01/validate.py
+      - name: G02 hydrology historical
+        run: python Tools/GaldrenG02/validate.py
+      - name: G03 climate soils historical
+        run: python Tools/GaldrenG03/validate.py
+      - name: G04 food economy historical
+        run: python Tools/GaldrenG04/validate.py
+      - name: G05 mining industry crown forge and negative tests
+        run: python Tools/GaldrenG05/validate.py
