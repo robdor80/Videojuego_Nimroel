@@ -1,0 +1,17 @@
+{
+  "$schema": "https://robdor80.github.io/CoreRPG/schemas/content/0.1.0/content-pack-manifest.schema.json",
+  "pack_id": "nimroel.edranor.territory",
+  "pack_version": "0.1.0",
+  "content_contract_version": "0.1.0",
+  "minimum_core_version": "0.1.0",
+  "dependencies": [],
+  "resources": [
+    "resources/places/dorth.json",
+    "resources/places/karsath.json",
+    "resources/places/lumina.json",
+    "resources/places/rodas.json",
+    "resources/territory/edranor.json"
+  ],
+  "display_name": "Edranor — referencias territoriales, Dorth, Lumina, Karsath y Rodas",
+  "description": "Catálogo estructural no jugable. Rodas conserva autoridad de Corona Aethros; no se registran habitantes, rutas, competencias ejecutables ni World State."
+}

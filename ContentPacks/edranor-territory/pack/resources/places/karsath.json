@@ -1,0 +1,6 @@
+{
+  "$schema": "https://robdor80.github.io/CoreRPG/schemas/content/0.1.0/resource-definition.schema.json",
+  "id": "nimroel.edranor.territory:places/karsath",
+  "kind": "canonical_settlement_reference",
+  "references": []
+}
