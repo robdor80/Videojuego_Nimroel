@@ -182,6 +182,18 @@ def check(docs, projection, manifest, resources, fixtures):
             and projection["governance"]["hallheimInsideEdranor"] is False
             and all(v is False for v in projection["executionCapabilities"].values()),
             "E11 projection claims gameplay/sovereignty")
+    for i, place in enumerate(projection["places"]):
+        require(all(place[field] == OWNERS[i]
+                    for field in ("jurisdictionOwner", "fiscalOwner",
+                                  "justiceOwner", "securityOwner")),
+                "E11 legal authority drift: " + NAMES[i])
+        require(place["berserkerCommander"] ==
+                ("crown_aethros" if i == 3 else None)
+                and place["proceduralSpawnAllowed"] is False
+                and place["physicalRouteConfirmed"] is False
+                and place["population"] is None
+                and place["instantiatedNpcIds"] == [],
+                "E11 materialization or berserker command: " + NAMES[i])
     require(len(projection["sourceLocks"]) == 11
             and [x["phase"] for x in projection["sourceLocks"]]
                 == [f"E{i:02d}" for i in range(11)], "E11 source locks")
