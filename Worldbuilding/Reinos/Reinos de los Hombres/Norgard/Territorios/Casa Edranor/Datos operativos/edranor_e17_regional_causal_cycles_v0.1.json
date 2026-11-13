@@ -1,0 +1,1334 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e17_regional_causal_cycles",
+  "version": "0.1",
+  "phase": "E17",
+  "date": "2026-11-14",
+  "status": "DELEGATED_DESIGN_NOT_CANON",
+  "authority": "ASSISTANT_DELEGATED_DESIGN",
+  "runtimeEnabled": false,
+  "syntheticOnly": true,
+  "georeferenced": false,
+  "physicalGraphValidated": false,
+  "worldStateEventsCreated": 0,
+  "noNextPhaseExecuted": true,
+  "sourceContracts": [
+    "edranor_e14_habitability",
+    "edranor_e15_living_economy",
+    "edranor_e16_services_mobility"
+  ],
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor_or_crown_aethros",
+    "localidad",
+    "world_state"
+  ],
+  "created": {
+    "households": 0,
+    "people": 0,
+    "parcels": 0,
+    "roads": 0,
+    "physicalEdges": 0,
+    "services": 0,
+    "batches": 0,
+    "containers": 0,
+    "deliveries": 0,
+    "messages": 0,
+    "maintenanceJobs": 0,
+    "events": 0,
+    "memories": 0,
+    "taxes": 0,
+    "missions": 0
+  },
+  "unknownMetrics": {
+    "population": null,
+    "capacity": null,
+    "production": null,
+    "geographicScale": null,
+    "travelTime": null,
+    "travelDistance": null,
+    "economicTurnover": null,
+    "serviceCoverage": null,
+    "workforce": null,
+    "incidentRate": null
+  },
+  "rights": {
+    "rodasJurisdiction": "crown_aethros",
+    "rodasFiscalOwner": "crown_aethros",
+    "rodasMilitaryOwner": "crown_aethros",
+    "hallheimInsideEdranor": false,
+    "edranorTaxOnRodas": false,
+    "internalCustoms": false,
+    "automaticRoadToll": false,
+    "forestCuttingWithoutPermit": false,
+    "karsathUrbanHarborVerified": false,
+    "borealWineTransportNetworkAssumed": false
+  },
+  "anchors": [
+    {
+      "id": "dorth",
+      "owner": "casa_edranor",
+      "role": "HOUSE_SEAT_RED_WINE"
+    },
+    {
+      "id": "lumina",
+      "owner": "casa_edranor",
+      "role": "WHITE_WINE_ANNUAL_MARKET"
+    },
+    {
+      "id": "karsath",
+      "owner": "casa_edranor",
+      "role": "SELECT_SMALL_BATCH_INTERIOR_LAKES"
+    },
+    {
+      "id": "rodas",
+      "owner": "crown_aethros",
+      "role": "CROWN_VILLAGE_CONTACT"
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros",
+      "role": "EXTERNAL_CROWN_CAPITAL"
+    }
+  ],
+  "units": [
+    {
+      "unitId": "edr_e01_west_valkram_interface",
+      "assessment": "STUDY_ONLY",
+      "territoryMembershipConfirmed": null,
+      "causalInstanceCreated": false
+    },
+    {
+      "unitId": "edr_e01_karsath_central_west",
+      "assessment": "STUDY_ONLY",
+      "territoryMembershipConfirmed": null,
+      "causalInstanceCreated": false
+    },
+    {
+      "unitId": "edr_e01_lumina_bosque_alto",
+      "assessment": "STUDY_ONLY",
+      "territoryMembershipConfirmed": null,
+      "causalInstanceCreated": false
+    },
+    {
+      "unitId": "edr_e01_central_wine_context",
+      "assessment": "STUDY_ONLY",
+      "territoryMembershipConfirmed": null,
+      "causalInstanceCreated": false
+    },
+    {
+      "unitId": "edr_e01_dorth_azurios_west",
+      "assessment": "STUDY_ONLY",
+      "territoryMembershipConfirmed": null,
+      "causalInstanceCreated": false
+    },
+    {
+      "unitId": "edr_e01_north_cold_transition",
+      "assessment": "STUDY_ONLY",
+      "territoryMembershipConfirmed": null,
+      "causalInstanceCreated": false
+    },
+    {
+      "unitId": "edr_e01_far_north_unclosed",
+      "assessment": "NON_EVALUABLE",
+      "territoryMembershipConfirmed": false,
+      "causalInstanceCreated": false
+    }
+  ],
+  "graph": {
+    "demandOnly": true,
+    "studyQuestions": [
+      "edr_e05_question_dorth_lumina",
+      "edr_e05_question_lumina_karsath",
+      "edr_e05_question_dorth_karsath",
+      "edr_e05_question_dorth_rodas"
+    ],
+    "physicalEdges": [],
+    "pathfindingEnabled": false,
+    "routeSurveyState": "UNKNOWN",
+    "causalTemplateDomains": [
+      "NEED",
+      "ORDER",
+      "AUTHORITY",
+      "STOCK",
+      "WORK",
+      "PRODUCTION",
+      "RESERVE",
+      "MOBILITY",
+      "RECEIPT",
+      "SERVICE",
+      "MESSAGE",
+      "KNOWLEDGE",
+      "MAINTENANCE",
+      "LEDGER",
+      "MEMORY"
+    ]
+  },
+  "lifeCycle": [
+    "OBSERVE_IF_REAL",
+    "IDENTIFY_NEED",
+    "OPEN_REQUEST",
+    "VERIFY_AUTHORITY",
+    "VERIFY_STOCK_AND_WORK",
+    "VERIFY_ROUTE_AND_AGENT",
+    "RESERVE_IF_REAL",
+    "DISPATCH_IF_REAL",
+    "RECEIVE_ACK",
+    "CONSUME_OR_SERVE_IF_REAL",
+    "MAINTAIN_IF_NEEDED",
+    "RECONCILE_LEDGER",
+    "RECORD_PROVEN_MEMORY_IF_REAL"
+  ],
+  "ledgerPolicy": {
+    "availableEqualsOnHandMinusReserved": true,
+    "noNegativeStock": true,
+    "oneEventOneMutation": true,
+    "reservationsNotDelivery": true,
+    "invoiceNotStock": true,
+    "lossDeductedOnce": true,
+    "returnRequiresVerifiedNewEvent": true,
+    "noCrossUnitConversionWithoutRecipe": true,
+    "containerIdSurvivesRepair": true
+  },
+  "knowledgePolicy": {
+    "receiptRequired": true,
+    "readPermissionRequired": true,
+    "unknownIsNotTrue": true,
+    "rumorIsNotFact": true,
+    "historicalMemoryRequiresActualEvent": true,
+    "crownOrdersNeedCrownAuthority": true
+  },
+  "safetyPolicy": {
+    "assetEvidenceRequired": true,
+    "inspectionRequiredForReopen": true,
+    "noForestExtractionWithoutRights": true,
+    "noUnmeasuredAccess": true,
+    "noAutoEscalationToProviders": true,
+    "noAutoNPC": true,
+    "noChildLaborOverride": true
+  },
+  "loopPolicy": {
+    "eventIdRequired": true,
+    "uniqueCausalParent": true,
+    "revisionMonotonic": true,
+    "idempotencyRequired": true,
+    "noSyntheticWorldWrite": true,
+    "maxSyntheticSteps": 16,
+    "onCycle": "STOP_AND_AWAIT_NEW_EVIDENCE",
+    "onMissingEvidence": "PENDING_EVIDENCE"
+  },
+  "gates": {
+    "falseResult": "BLOCKED",
+    "unknownResult": "PENDING_EVIDENCE",
+    "allTrueResult": "ELIGIBLE_SYNTHETIC_ONLY",
+    "noRuntimeEffectResult": "BLOCKED_NO_RUNTIME",
+    "values": [
+      "TRUE",
+      "FALSE",
+      "UNKNOWN"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "ED17-H01",
+      "family": "HOUSEHOLD",
+      "anchor": "dorth",
+      "title": "Grano reclamado pero no inventariado",
+      "conditionalTrigger": "Un hogar solicita grano y la tienda recibe el encargo, sin demostrar existencias",
+      "chain": [
+        "NEED",
+        "ORDER",
+        "STOCK",
+        "RESERVE",
+        "SERVICE",
+        "LEDGER",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "stock"
+      ],
+      "missingProof": "stock",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "Mantener necesidad insatisfecha; reintentar solo ante alta de lote legítima",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-H02",
+      "family": "HOUSEHOLD",
+      "anchor": "lumina",
+      "title": "Cuidados y jornada incompatibles",
+      "conditionalTrigger": "Un trabajador necesario para vendimia también sostiene cuidados familiares",
+      "chain": [
+        "NEED",
+        "WORK",
+        "ORDER",
+        "PRODUCTION",
+        "SERVICE",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "labor"
+      ],
+      "missingProof": "labor",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Reprogramar según disponibilidad real; no duplicar trabajador ni ignorar menores",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-H03",
+      "family": "HOUSEHOLD",
+      "anchor": "karsath",
+      "title": "Agua apta todavía desconocida",
+      "conditionalTrigger": "Una necesidad alimentaria supone agua potable por cercanía al paisaje lacustre",
+      "chain": [
+        "NEED",
+        "SERVICE",
+        "PRODUCTION",
+        "LEDGER",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "potableWater"
+      ],
+      "missingProof": "potableWater",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "Solicitar verificación de captación, potabilidad y derechos antes de consumir",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-H04",
+      "family": "HOUSEHOLD",
+      "anchor": "dorth",
+      "title": "Leña de procedencia impedida",
+      "conditionalTrigger": "Un hogar necesita calor y propone suministro de bosque sujeto a autorización denegada",
+      "chain": [
+        "NEED",
+        "ORDER",
+        "AUTHORITY",
+        "STOCK",
+        "SERVICE",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "forestPermit"
+      ],
+      "missingProof": "forestPermit",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Registrar demanda no atendida y buscar origen lícito probado",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-V01",
+      "family": "WINE",
+      "anchor": "dorth",
+      "title": "Vendimia sin madurez acreditada",
+      "conditionalTrigger": "Un pedido comercial induce a cosechar sin constatar madurez de la uva",
+      "chain": [
+        "ORDER",
+        "AUTHORITY",
+        "WORK",
+        "PRODUCTION",
+        "STOCK",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "maturity"
+      ],
+      "missingProof": "maturity",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "No cosechar por demanda; comprobar parcela, estación y madurez",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-V02",
+      "family": "WINE",
+      "anchor": "lumina",
+      "title": "La misma reserva prometida dos veces",
+      "conditionalTrigger": "Dos solicitudes reclaman simultáneamente el mismo lote de vino",
+      "chain": [
+        "ORDER",
+        "STOCK",
+        "RESERVE",
+        "MOBILITY",
+        "RECEIPT",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "reservationUnique"
+      ],
+      "missingProof": "reservationUnique",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Rechazar segunda reserva o conciliar disponibilidad sin inventar vino",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-V03",
+      "family": "WINE",
+      "anchor": "karsath",
+      "title": "Vino selecto sin recipiente apto",
+      "conditionalTrigger": "Se pretende entregar un lote pequeño de producción selecta en contenedor no inspeccionado",
+      "chain": [
+        "PRODUCTION",
+        "STOCK",
+        "MAINTENANCE",
+        "RESERVE",
+        "RECEIPT",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "containerSafety"
+      ],
+      "missingProof": "containerSafety",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "Retener lote hasta inspección de capacidad e identidad de recipiente",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-V04",
+      "family": "WINE",
+      "anchor": "lumina",
+      "title": "Feria anual convertida en mercado permanente",
+      "conditionalTrigger": "Un contrato presupone feria abierta cualquier día sin ventana constatada",
+      "chain": [
+        "ORDER",
+        "AUTHORITY",
+        "SERVICE",
+        "MOBILITY",
+        "RECEIPT",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "marketWindow"
+      ],
+      "missingProof": "marketWindow",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Respetar el carácter anual y comprobar fecha/permiso reales",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-B01",
+      "family": "WOOD",
+      "anchor": "lumina",
+      "title": "Bosque Alto sin permiso de aprovechamiento",
+      "conditionalTrigger": "Demanda de toneles pretende activar una tala sin acreditación forestal",
+      "chain": [
+        "ORDER",
+        "AUTHORITY",
+        "WORK",
+        "PRODUCTION",
+        "STOCK",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "forestPermit"
+      ],
+      "missingProof": "forestPermit",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "No extraer; requerir título, zona, permiso y cuota real",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-B02",
+      "family": "WOOD",
+      "anchor": "lumina",
+      "title": "Duelas sin herrajes acreditados",
+      "conditionalTrigger": "El taller cuenta piezas de madera y pretende registrar barricas completas",
+      "chain": [
+        "STOCK",
+        "WORK",
+        "PRODUCTION",
+        "RESERVE",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "parts"
+      ],
+      "missingProof": "parts",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "Mantener piezas intermedias diferenciadas; no completar barrica ficticia",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-B03",
+      "family": "WOOD",
+      "anchor": "dorth",
+      "title": "Fuga de tonel sin identidad comprobada",
+      "conditionalTrigger": "Un aviso de pérdida invoca una barrica no identificada ni inspeccionada",
+      "chain": [
+        "STOCK",
+        "MAINTENANCE",
+        "SERVICE",
+        "LEDGER",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "assetEvidence"
+      ],
+      "missingProof": "assetEvidence",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "Identificar el contenedor y su custodio antes de deducir o reparar",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-B04",
+      "family": "WOOD",
+      "anchor": "karsath",
+      "title": "Contenedor reparado sin verificación",
+      "conditionalTrigger": "Se reutiliza un recipiente tras una reparación aún sin inspección",
+      "chain": [
+        "MAINTENANCE",
+        "PRODUCTION",
+        "STOCK",
+        "RESERVE",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "inspection"
+      ],
+      "missingProof": "inspection",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Restringir uso hasta inspección efectiva conservando containerId",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-T01",
+      "family": "MOBILITY",
+      "anchor": "dorth",
+      "title": "Corredor Dorth–Lumina confundido con carretera",
+      "conditionalTrigger": "La necesidad de abastecimiento presupone tramo transitable sin levantamiento",
+      "chain": [
+        "ORDER",
+        "STOCK",
+        "MOBILITY",
+        "RECEIPT",
+        "SERVICE",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "routeSurvey"
+      ],
+      "missingProof": "routeSurvey",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "Conservar encargo; no despachar ni calcular kilómetros",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-T02",
+      "family": "MOBILITY",
+      "anchor": "lumina",
+      "title": "Mercancía en ruta sin acuse",
+      "conditionalTrigger": "Se trata un envío hipotético como recibido por el simple despacho documental",
+      "chain": [
+        "STOCK",
+        "RESERVE",
+        "MOBILITY",
+        "RECEIPT",
+        "KNOWLEDGE",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "receiverAck"
+      ],
+      "missingProof": "receiverAck",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "No reconocer consumo, titularidad nueva ni recepción sin acuse real",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-T03",
+      "family": "MOBILITY",
+      "anchor": "karsath",
+      "title": "Embarque en muelle urbano no verificado",
+      "conditionalTrigger": "Se propone carga navegable desde un puerto urbano de Karsath no probado",
+      "chain": [
+        "ORDER",
+        "AUTHORITY",
+        "MOBILITY",
+        "RECEIPT",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "portVerified"
+      ],
+      "missingProof": "portVerified",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Rechazar itinerario acuático asumido; E19/EDD-07 deberán verificarlo",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-T04",
+      "family": "MOBILITY",
+      "anchor": "rodas",
+      "title": "Tránsito a Rodas sin interfaz regia",
+      "conditionalTrigger": "Una prestación de Edranor pretende cruzar a Rodas como si fuese territorio propio",
+      "chain": [
+        "NEED",
+        "ORDER",
+        "AUTHORITY",
+        "MOBILITY",
+        "RECEIPT",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "crownAuthority"
+      ],
+      "missingProof": "crownAuthority",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Solicitar autorización a Corona; no crear aduana ni derecho fiscal de Casa",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-S01",
+      "family": "SERVICE",
+      "anchor": "dorth",
+      "title": "Fuente de agua sin análisis",
+      "conditionalTrigger": "Un servicio marca agua potable por dibujo de cauce cercano",
+      "chain": [
+        "NEED",
+        "AUTHORITY",
+        "SERVICE",
+        "RECEIPT",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "potableWater"
+      ],
+      "missingProof": "potableWater",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "No prestar abastecimiento hasta probar agua, titular y distribución",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-S02",
+      "family": "SERVICE",
+      "anchor": "lumina",
+      "title": "Molino presumido por demanda de harina",
+      "conditionalTrigger": "Los hogares demandan harina y aparece un molino sin activo documentado",
+      "chain": [
+        "NEED",
+        "ORDER",
+        "STOCK",
+        "SERVICE",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "provider"
+      ],
+      "missingProof": "provider",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Mantener grano como grano; prestador e infraestructura requieren evidencia",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-S03",
+      "family": "SERVICE",
+      "anchor": "rodas",
+      "title": "Cuidados en aldea regia bajo mando ajeno",
+      "conditionalTrigger": "Edranor se atribuye la supervisión institucional de atención en Rodas",
+      "chain": [
+        "NEED",
+        "AUTHORITY",
+        "SERVICE",
+        "RECEIPT",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "crownAuthority"
+      ],
+      "missingProof": "crownAuthority",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Escalar a competencia de Corona, sin cambiar la titularidad de la aldea",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-S04",
+      "family": "SERVICE",
+      "anchor": "karsath",
+      "title": "Hospedaje sin camas verificadas",
+      "conditionalTrigger": "La llegada de viajeros convierte automáticamente vivienda en hospedaje",
+      "chain": [
+        "NEED",
+        "MOBILITY",
+        "SERVICE",
+        "RECEIPT",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "beds"
+      ],
+      "missingProof": "beds",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "No alojar ni crear negocio sin capacidad, agua y responsables",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-A01",
+      "family": "GOVERNANCE",
+      "anchor": "rodas",
+      "title": "Rodas reasignada a la Casa",
+      "conditionalTrigger": "Una solicitud intenta inscribir la aldea de Corona como núcleo de gobierno Edranor",
+      "chain": [
+        "AUTHORITY",
+        "ORDER",
+        "SERVICE",
+        "LEDGER",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "owner"
+      ],
+      "missingProof": "owner",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Denegar operación por jurisdicción y mantener soberanía regia",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-A02",
+      "family": "GOVERNANCE",
+      "anchor": "rodas",
+      "title": "Impuesto doméstico sobre Rodas",
+      "conditionalTrigger": "La Casa pretende contabilizar tributo a un hogar de Rodas",
+      "chain": [
+        "AUTHORITY",
+        "ORDER",
+        "LEDGER",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "crownFiscal"
+      ],
+      "missingProof": "crownFiscal",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Anular el apunte de Casa; los tributos regios exigen órgano competente",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-A03",
+      "family": "GOVERNANCE",
+      "anchor": "hallheim",
+      "title": "Hallheim anexionada por enlace económico",
+      "conditionalTrigger": "Una necesidad comercial convierte la capital externa en distrito Edranor",
+      "chain": [
+        "NEED",
+        "AUTHORITY",
+        "MOBILITY",
+        "LEDGER",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "territoryMembership"
+      ],
+      "missingProof": "territoryMembership",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Mantener interfaz exterior, no censar ni fiscalizar como Casa",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-A04",
+      "family": "GOVERNANCE",
+      "anchor": "lumina",
+      "title": "Servidumbre deducida por topónimo forestal",
+      "conditionalTrigger": "Un operador deduce derecho de paso y tala por cercanía de Bosque Alto",
+      "chain": [
+        "ORDER",
+        "AUTHORITY",
+        "MOBILITY",
+        "PRODUCTION",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "title"
+      ],
+      "missingProof": "title",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "Requerir título y servidumbre probados sin activar caminos",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-I01",
+      "family": "INFORMATION",
+      "anchor": "dorth",
+      "title": "Mensajero nombrado por necesidad",
+      "conditionalTrigger": "Una queja ciudadana genera supuesto correo real sin agente comprobado",
+      "chain": [
+        "NEED",
+        "MESSAGE",
+        "RECEIPT",
+        "KNOWLEDGE",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "agent"
+      ],
+      "missingProof": "agent",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "Permanece no entregada; no informar automáticamente al destinatario",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-I02",
+      "family": "INFORMATION",
+      "anchor": "lumina",
+      "title": "Rumor recibido como decreto",
+      "conditionalTrigger": "Un aviso aún sin acuse se considera conocido por toda la localidad",
+      "chain": [
+        "MESSAGE",
+        "RECEIPT",
+        "KNOWLEDGE",
+        "AUTHORITY",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "receiverAck"
+      ],
+      "missingProof": "receiverAck",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "No difundir; recepción individual y competencia lectora obligatorias",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-I03",
+      "family": "INFORMATION",
+      "anchor": "rodas",
+      "title": "Alarma regia sin incidente observado",
+      "conditionalTrigger": "Se pide movilizar berserkers por riesgo supuesto, sin hecho ni autoridad",
+      "chain": [
+        "NEED",
+        "MESSAGE",
+        "AUTHORITY",
+        "KNOWLEDGE",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority"
+      ],
+      "missingProof": "eventEvidence",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "No activar emergencias; canal a Corona solo con hecho y receptor real",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-I04",
+      "family": "INFORMATION",
+      "anchor": "dorth",
+      "title": "Narración ficticia promovida a historia",
+      "conditionalTrigger": "Una hipótesis de pérdidas se redacta como recuerdo vivido o crónica oficial",
+      "chain": [
+        "MESSAGE",
+        "KNOWLEDGE",
+        "LEDGER",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "sourceVerified"
+      ],
+      "missingProof": "sourceVerified",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Mantener etiqueta contrafáctica sin pasado consumado",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-R01",
+      "family": "RECOVERY",
+      "anchor": "dorth",
+      "title": "Reparar puente que no existe en el registro",
+      "conditionalTrigger": "Se da por existente un puente y se inicia su reparación sin geometría",
+      "chain": [
+        "NEED",
+        "MAINTENANCE",
+        "AUTHORITY",
+        "SERVICE",
+        "LEDGER"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "assetEvidence"
+      ],
+      "missingProof": "assetEvidence",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "No crear puente ni obra; verificar existencia y titularidad en E19",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-R02",
+      "family": "RECOVERY",
+      "anchor": "lumina",
+      "title": "Reapertura de servicio sin inspección",
+      "conditionalTrigger": "Se da por restablecida una instalación tras gastar repuestos sin inspección",
+      "chain": [
+        "MAINTENANCE",
+        "STOCK",
+        "WORK",
+        "SERVICE",
+        "LEDGER",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "inspection"
+      ],
+      "missingProof": "inspection",
+      "exampleProofValue": null,
+      "expectedIfMissing": "PENDING_EVIDENCE",
+      "recoveryCondition": "Mantener restricción hasta inspección y acuse de reapertura",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-R03",
+      "family": "RECOVERY",
+      "anchor": "karsath",
+      "title": "Pérdida contabilizada y recuperada dos veces",
+      "conditionalTrigger": "Se pretende sumar al stock el mismo lote perdido y posteriormente reclamado",
+      "chain": [
+        "STOCK",
+        "LEDGER",
+        "MAINTENANCE",
+        "RECEIPT",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "ledgerUnique"
+      ],
+      "missingProof": "ledgerUnique",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Asentar pérdida una vez; recuperación exige devolución verificada con nuevo evento",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    },
+    {
+      "id": "ED17-R04",
+      "family": "RECOVERY",
+      "anchor": "rodas",
+      "title": "Bucle de necesidad sin final ni autoridad",
+      "conditionalTrigger": "La falta de acuse dispara solicitudes y respuestas recursivas infinitas",
+      "chain": [
+        "NEED",
+        "ORDER",
+        "MESSAGE",
+        "AUTHORITY",
+        "RECEIPT",
+        "LEDGER",
+        "MEMORY"
+      ],
+      "requiredProofs": [
+        "eventEvidence",
+        "authority",
+        "boundedIteration"
+      ],
+      "missingProof": "boundedIteration",
+      "exampleProofValue": false,
+      "expectedIfMissing": "BLOCKED",
+      "recoveryCondition": "Cerrar la evaluación en pendiente con identidad de petición y revisión; sin efectos",
+      "status": "HYPOTHETICAL_NOT_OCCURRED",
+      "occurred": false,
+      "worldStateMutation": false,
+      "entityId": null,
+      "location": null,
+      "createdActorCount": 0,
+      "createdResourceCount": 0
+    }
+  ],
+  "familyCoverage": {
+    "HOUSEHOLD": 4,
+    "WINE": 4,
+    "WOOD": 4,
+    "MOBILITY": 4,
+    "SERVICE": 4,
+    "GOVERNANCE": 4,
+    "INFORMATION": 4,
+    "RECOVERY": 4
+  },
+  "debts": [
+    {
+      "id": "EDD-01",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-02",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-03",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-04",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-05",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-06",
+      "status": "RESOLVED_FOR_DESIGN"
+    },
+    {
+      "id": "EDD-07",
+      "status": "OPEN"
+    },
+    {
+      "id": "EDD-08",
+      "status": "OPEN"
+    }
+  ],
+  "decisionRegister": [
+    {
+      "id": "ED17-DEC-01",
+      "decision": "Identificador causal y evidencia previa a todo efecto",
+      "rejectedAlternative": "disparar efectos en cuanto aparece la demanda",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED17-DEC-02",
+      "decision": "Invariantes de lotes, reservas y conciliación transaccional",
+      "rejectedAlternative": "producir recursos o gastarlos dos veces",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED17-DEC-03",
+      "decision": "Eventos de comunicación y conocimiento solo con recepción",
+      "rejectedAlternative": "omnisciencia entre asentamientos",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED17-DEC-04",
+      "decision": "Jurisdicción de Rodas y exclusión de Hallheim",
+      "rejectedAlternative": "absorber enclaves y gravarlos",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED17-DEC-05",
+      "decision": "No degradar UNKNOWN a True por presión narrativa",
+      "rejectedAlternative": "atribuir carretera, agente, agua o proveedor inventado",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED17-DEC-06",
+      "decision": "Proveniencia de memoria con distinción entre hipótesis y hechos",
+      "rejectedAlternative": "grabar escenarios de diseño como historia",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED17-DEC-07",
+      "decision": "Recuperación condicionada a activo, piezas, trabajo e inspección",
+      "rejectedAlternative": "reparación instantánea o reinicio gratuito",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED17-DEC-08",
+      "decision": "Cierre de bucles por evento único, revisión y causalidad finita",
+      "rejectedAlternative": "torbellinos de reintentos y ecos",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED17-DEC-09",
+      "decision": "Escenario conceptual no equivale a mundo jugable",
+      "rejectedAlternative": "activar CoreRPG o Godot por ejecutar Python",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    },
+    {
+      "id": "ED17-DEC-10",
+      "decision": "E18 audita madurez; E19/E26/E28 resuelven evidencia material",
+      "rejectedAlternative": "dar por terminada la geografía, censo o gameplay en E17",
+      "authority": "ASSISTANT_DELEGATED_DESIGN",
+      "canonRatified": false
+    }
+  ],
+  "carryForwardTo": [
+    "E18",
+    "E19",
+    "E20-E24",
+    "E25",
+    "E26",
+    "E27",
+    "E28"
+  ],
+  "noRealHistory": true,
+  "noRodasTransfer": true,
+  "noInternalCustoms": true
+}
