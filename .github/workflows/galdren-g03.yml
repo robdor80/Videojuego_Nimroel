@@ -1,0 +1,30 @@
+name: Galdren G03 clima suelos ecosistemas
+on:
+  push:
+    branches:
+      - 'feat/galdren-g03-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/**'
+      - 'Tools/GaldrenG03/**'
+      - '.github/workflows/galdren-g03.yml'
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: G00 foundation regression
+        run: python Tools/GaldrenG00/validate.py
+      - name: G01 relief regression
+        run: python Tools/GaldrenG01/validate.py
+      - name: G02 hydrology regression
+        run: python Tools/GaldrenG02/validate.py
+      - name: G03 climate soil ecosystems and negative attacks
+        run: python Tools/GaldrenG03/validate.py
