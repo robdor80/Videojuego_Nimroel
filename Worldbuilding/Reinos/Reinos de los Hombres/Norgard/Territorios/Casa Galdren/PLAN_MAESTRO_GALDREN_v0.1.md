@@ -8,7 +8,7 @@
 | **G02** | Hidrología y cuencas | Caleran/brazos, Vornarsk, Keldarsk, divisorias y régimen nival; cuencas coherentes con G01; **cero ríos inventados por el dibujo** |
 | **G03** | Clima, suelos y ecosistemas | Gradientes interior/costa/norte, bosques canónicos, suelos fértiles, pastos, hielo y riesgos estacionales sin uniformizar Zanthir |
 | **G04** | Agricultura, ganadería y economía alimentaria | Ciclos de cultivo y cría, caballos del Bosque Quebrado, oficios, almacenamiento, abastos y dependencia de agua/suelos; sin cifras ficticias |
-| **G05** | Minería, industria, Zanthir y **Forja Estelar** | Recursos Azurios, prohibición de otro yacimiento de Metal Estelar, metalurgia, herramientas/armas, permisos y cambio de mando bélico; sin recetas mágicas no ratificadas |
+| **G05** | Minería, industria, Zanthir y **Forja Estelar** | Recursos Azurios, prohibición de otro yacimiento de Metal Estelar, metalurgia, herramientas/armas, permisos y mando regio permanente de la Forja (ratificación G05 13/11/2026), sin recetas mágicas no ratificadas |
 | **G06** | Comunicaciones y redes económicas | Candidatos de corredores Arleon–Zanthir–capital/vecinos, fluvial/costa y restricciones por relieve/hielo; sin convertir candidatos en carreteras cartografiadas |
 | **G07** | Asentamientos ordinarios y generación procedural | Arquetipos agrarios/mineros/boscosos y reglas deterministas; excluir Arleon, Zanthir, Forja, Treskal, Hallheim, Dorth; herencia Norgard |
 | **G08** | Ciudades y enclaves canónicos | Arleon y Zanthir diseñados manualmente; Forja como instalación; interfaces vecinas excluidas; clasificación urbana justificada |
@@ -29,7 +29,7 @@ G01 → G02 → G03; G04 requiere suelos/agua; G05 requiere relieve y canon mine
 6. Los nombres nuevos no entran al manifiesto `CANON_REPO` antes de ratificación; se mantendrán `PROPUESTA_NO_CANON`.
 
 ## Invariantes generales
-**Corona única y Ley del Rey.** Sin moneda Galdren, sin aduanas interiores, sin ejército soberano; la Forja Estelar cambia su mando estratégico en guerra. El Metal Estelar solo aparece en los **Montes Azurios**. **Treskal es de Valrik**, no Galdren. La estética Galdren no sustituye heráldica ya aprobada. No existen coordenadas, tamaño de tropas, volúmenes de cosechas, rutas ni poblaciones fijadas en G00.
+**Corona única y Ley del Rey.** Sin moneda Galdren, sin aduanas interiores, sin ejército soberano; la Forja Estelar está bajo dominio, administración y mando permanente de la Corona / Casa Aethros, igual que Rodas, aun estando geográficamente en Zanthir (ratificación autoral G05, 13/11/2026). El Metal Estelar solo aparece en los **Montes Azurios**. **Treskal es de Valrik**, no Galdren. La estética Galdren no sustituye heráldica ya aprobada. No existen coordenadas, tamaño de tropas, volúmenes de cosechas, rutas ni poblaciones fijadas en G00.
 
 ## Portabilidad y niveles de prueba
 Diseño para Godot 4.7.2 **2D** y CoreRPG C++20, Windows x64 y Android ARM64. JSON/Markdown y pruebas negativas = validación **documental**; no equivalen a compilación nativa, GDExtension, carga del mapa ni RPG jugable. Cualquier prueba futura deberá aportar logs y HEAD.

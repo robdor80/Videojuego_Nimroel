@@ -64,7 +64,7 @@ Determinados recursos o fuerzas pueden quedar bajo control directo de la Corona.
 Casos ya establecidos:
 
 - Rodas y sus berserkers;
-- Forja Estelar bajo mando de Hallheim en época de guerra;
+- Forja Estelar, enclave de dominio, administración y mando **permanentes** de Hallheim / Casa Aethros en paz y guerra (ratificación G05, 13/11/2026);
 - Astilleros Reales de Treskal como instalación de la Corona.
 
 ---
