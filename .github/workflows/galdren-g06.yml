@@ -1,0 +1,37 @@
+name: Galdren G06 comunicaciones y redes economicas
+on:
+  push:
+    branches:
+      - 'feat/galdren-g06-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/**'
+      - 'Tools/GaldrenG06/**'
+      - '.github/workflows/galdren-g06.yml'
+
+jobs:
+  static:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: G00 historical foundation
+        run: python Tools/GaldrenG00/validate.py
+      - name: G01 historical relief
+        run: python Tools/GaldrenG01/validate.py
+      - name: G02 historical hydrology
+        run: python Tools/GaldrenG02/validate.py
+      - name: G03 historical climate
+        run: python Tools/GaldrenG03/validate.py
+      - name: G04 historical agriculture
+        run: python Tools/GaldrenG04/validate.py
+      - name: G05 Crown Forge override
+        run: python Tools/GaldrenG05/validate.py
+      - name: G06 transport economy negative mutations
+        run: python Tools/GaldrenG06/validate.py
