@@ -7,7 +7,7 @@ Se publica `ContentPacks/edranor-territory` conforme al precedente D11 Darovan y
 La proyección autoral del paquete preserva las once fuentes E00–E10 mediante SHA de blob, autoridad por localidad y datos UNKNOWN. El manifiesto solo tiene referencias técnicas; no concede a Edranor la administración de Rodas. Ninguna herencia, nombre dinástico ni conflicto E10 se transforma en NPC, ley, tratado, guerra o quest.
 
 ## Documentos de entrega
-- [Pack](../../../../../../../../ContentPacks/edranor-territory/README.md) (ruta de lectura orientativa; la fuente canónica es `ContentPacks/edranor-territory/README.md`).
+- [Pack](https://github.com/robdor80/Videojuego_Nimroel/tree/feat/edranor-e11-contentpack-contratos-20261113/ContentPacks/edranor-territory) (documento de la rama E11).
 - [Auditoría y deuda](Auditorias/E11_FUENTES_Y_DEUDA.md).
 - [Acta y pruebas](Auditorias/E11_ACTA.md).
 - [Traspaso E12](00_Control_del_proyecto/TRASPASO_E12.md).

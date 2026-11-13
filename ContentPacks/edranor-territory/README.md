@@ -13,7 +13,7 @@
 El Content Contract 0.1.0 solo admite `id`, `kind`, `references` y el `$schema` permitido. Jurisdicción, población desconocida, validaciones y propuestas E10 se guardan en el sidecar; nunca se añaden campos inventados a CoreRPG. El catálogo puede ser leído por CoreRPG, pero **no se asegura integración de Godot, mapas, NPC, rutas, economía, misiones ni sincronización de World State**.
 
 ## Fuentes y pruebas
-Los 11 `sourceLocks` exigen hashes de blob Git exactos E00–E10. La validación verifica también E00/E05/E06/E07/E08/E09/E10, 30 mutaciones adversariales, esquema oficial de CoreRPG y prueba nativa C++ de catálogo y persistencia TEST_ONLY en CI Windows/Linux.
+Los 11 `sourceLocks` exigen hashes de blob Git exactos E00–E10. La validación verifica también E00/E05/E06/E07/E08/E09/E10, 37 mutaciones adversariales, esquema oficial de CoreRPG y prueba nativa C++ de catálogo y persistencia TEST_ONLY en CI Windows/Linux.
 
 Ejecutar `python Tools/EdranorE11/validate.py --core-root .edranor-core` tras obtener CoreRPG en el commit fijo `4f282863737bcd8f5add401202a9e1064c133672`. El workflow compila `Tools/EdranorE11`; solo se declaran pruebas ejecutadas cuando conste resultado real.
 
