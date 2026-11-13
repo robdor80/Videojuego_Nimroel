@@ -4,7 +4,7 @@
 Esta carpeta desarrolla el relieve, las siete unidades, el agua, el clima, los suelos, los ecosistemas, los nombres candidatos, un protocolo de cartografía 2D y el nuevo gobierno E13–E29. El esquema SVG es **topológico, no métrico**.
 
 ## Índice
-00 autoridad/procedencia; 01 atlas; 02 altimetría de diseño; 03 montaña/valle/toponimia; 04 cuencas; 05 clima/estaciones/riesgos; 06 suelos/ecosistemas; 07 cartografía/World State; 08 matriz de equivalencias; 09 plan maestro; 10 EDD y decisiones; 11 traspaso E14; 12 acta; atlas SVG.
+00 autoridad/procedencia; 01 atlas; 02 altimetría de diseño; 03 montaña/valle/toponimia; 04 cuencas; 05 clima/estaciones/riesgos; 06 suelos/ecosistemas; 07 cartografía/World State; 08 matriz de equivalencias; 09 plan maestro; 10 EDD y decisiones; 11 traspaso E14; 12 acta certificada; 13 reconciliación con tres biblias visuales; atlas SVG.
 
 Contrato: ../Datos operativos/edranor_e13_physical_design_v0.1.json. Validación: Tools/EdranorE13/validate.py y workflow dedicado.
 

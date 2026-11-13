@@ -31,4 +31,15 @@ No se editan E00–E12, Canon Norgard, Valrik, Darovan, Norgard Defaults, CoreRP
 EDD-01/02/03/04/05/07/08, geometría, población, personajes materializados, cuencas verificadas, vías reales, cultivos instanciados, Godot 2D, CoreRPG Edranor productivo. E13 da profundidad conceptual y gobierno, no un territorio completo ya jugable.
 
 ## Estado de acta
-**Pendiente de certificación automática y auditoría de PR**: completar con SHA exacto y resultados tras lanzar CI. E14 sigue pendiente de nueva conversación.
+**CERTIFICADA Y FUSIONADA — E13 cerrada documentalmente el 13/11/2026.**
+
+- **PR:** #76, https://github.com/robdor80/Videojuego_Nimroel/pull/76; 21 archivos nuevos revisados, ningún archivo histórico E00–E12 alterado.
+- **HEAD exacto probado:** `34bd83efc0c2d460f649560f2a6f36d37e56ecb8`.
+- **GitHub Actions E13:** [run #43492160274](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/43492160274), **SUCCESS** en **Ubuntu 24.04** y **Windows 2022**.
+- En ambos sistemas PASS de regresión E00–E10, cruce E12, reglas E13, los contratos y SHA E11 contra CoreRPG fijado, compilación del consumidor C++20 y CTest; **56 mutaciones negativas E13 rechazadas**; CTest **1/1 PASS** en cada plataforma.
+- Otros **13 workflows históricos** activados sobre el mismo HEAD terminaron SUCCESS, para un total de **14/14 ejecuciones** exitosas.
+- `main` avanzó durante E13 a `fb766afa8965cf3890f3792bff373d6ba7757e05`, incorporando tres biblias visuales Edranor; reconciliadas en `13_RECONCILIACION_BIBLIAS_VISUALES_MAIN.md` sin tocar sus archivos.
+- **Fusión PR #76:** squash commit `18bb0fe2f971aa89f843991fa704491421c80499`, comprobado como HEAD de `main` inmediatamente tras fusionar.
+- **Alcance de la certificación:** consistencia documental/contractual, validador estático y consumidor sintético C++ E11. **NO** certifica geometría métrica Edranor, Godot 2D, población, caminos, hidrología local ni World State territorial real.
+
+**Las deudas EDD-01/02/03/04/05/07/08 siguen ABIERTAS con destino y prueba de cierre asignados; EDD-06 RESUELTA como aldea regia.** La Casa no queda declarada exhaustivamente profundizada. E14 se abordará en una conversación nueva.
