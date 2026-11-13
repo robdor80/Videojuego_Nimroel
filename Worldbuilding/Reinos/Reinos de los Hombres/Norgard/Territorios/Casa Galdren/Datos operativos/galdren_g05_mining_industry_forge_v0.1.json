@@ -320,7 +320,7 @@
     {
       "id": "G05-U10",
       "reliefUnitId": "G01-U10",
-      "reliefKind": "RIBERAS",
+      "reliefKind": "BOSQUE_RIBERAS",
       "focus": "NO_MINE_RIPARIAN",
       "status": "STUDY_ONLY",
       "jurisdictionResolved": false,
@@ -334,7 +334,7 @@
     {
       "id": "G05-U11",
       "reliefUnitId": "G01-U11",
-      "reliefKind": "VALRIK_REFERENCE",
+      "reliefKind": "VALRIK_TRESKAL_INTERFACE",
       "focus": "OUTSIDE_HOUSE",
       "status": "STUDY_ONLY",
       "jurisdictionResolved": false,
@@ -348,7 +348,7 @@
     {
       "id": "G05-U12",
       "reliefUnitId": "G01-U12",
-      "reliefKind": "VELARIS_EXTERNAL",
+      "reliefKind": "VELARIS_VARETH_CONTEXT",
       "focus": "NO_NEW_RIGHTS",
       "status": "STUDY_ONLY",
       "jurisdictionResolved": false,
