@@ -141,7 +141,7 @@ def check(c,ss):
         for case in subset:
             guard(isinstance(case["question"],str) and len(case["question"])>=19
                   and case["missingProof"] in set(sum(REQUIRED.values(),[])).union(
-                       {"authority","portEvidence","calendar","territory"})
+                       {"authority","portEvidence","calendar","territory","eventEvidence"})
                   and case["expectedIfMissing"] in ("BLOCKED","PENDING_EVIDENCE")
                   and case["status"]=="HYPOTHETICAL_NOT_OCCURRED"
                   and case["occurred"] is False and case["worldStateMutation"] is False
