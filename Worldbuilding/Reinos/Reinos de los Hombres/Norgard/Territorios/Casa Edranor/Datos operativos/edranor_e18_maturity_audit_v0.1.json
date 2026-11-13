@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e18_intermediate_maturity_audit",
+  "version": "0.1",
+  "phase": "E18",
+  "date": "2026-11-14",
+  "status": "AUDIT_DOCUMENTAL_WITH_MATERIAL_GATES",
+  "authority": "ASSISTANT_DELEGATED_AUDIT",
+  "sourceMainSha": "b4fb1ed9ce114e1532251e28c205eaecf42dbe08",
+  "auditedPhases": [
+    "E13",
+    "E14",
+    "E15",
+    "E16",
+    "E17"
+  ],
+  "mainModified": false,
+  "canonSuperiorModified": false,
+  "runtimeEnabled": false,
+  "worldStateEventsCreated": 0,
+  "syntheticOnly": true,
+  "maturityScale": {
+    "B0": "SIN_DOCUMENTAR",
+    "B1": "REFERENCIA_CANONICA",
+    "B2": "DISENO_DOCUMENTAL_AUDITADO",
+    "B3": "DATOS_Y_GEOMETRIA_VERIFICADOS",
+    "B4": "RUNTIME_INTEGRADO_Y_PROBADO"
+  },
+  "dimensions": [
+    {
+      "id": "GEOGRAFIA",
+      "name": "Geografía y relieve",
+      "level": "B2",
+      "documentaryDesign": true,
+      "materialEvidenceValidated": false,
+      "runtimeValidated": false,
+      "sources": "E13 y E01",
+      "outstandingDebts": "EDD-01/02/03/07",
+      "handoff": "E19"
+    },
+    {
+      "id": "CLIMA",
+      "name": "Clima, suelos y ecosistemas",
+      "level": "B2",
+      "documentaryDesign": true,
+      "materialEvidenceValidated": false,
+      "runtimeValidated": false,
+      "sources": "E03/E13/E14",
+      "outstandingDebts": "EDD-02/03",
+      "handoff": "E19"
+    },
+    {
+      "id": "RECURSOS",
+      "name": "Recursos, cultivos y economía",
+      "level": "B2",
+      "documentaryDesign": true,
+      "materialEvidenceValidated": false,
+      "runtimeValidated": false,
+      "sources": "E04/E15/E17",
+      "outstandingDebts": "EDD-03/07",
+      "handoff": "E19/E20-E24/E28"
+    },
+    {
+      "id": "ASENTAMIENTOS",
+      "name": "Asentamientos y habitabilidad",
+      "level": "B2",
+      "documentaryDesign": true,
+      "materialEvidenceValidated": false,
+      "runtimeValidated": false,
+      "sources": "E06/E07/E14",
+      "outstandingDebts": "EDD-01/02/07",
+      "handoff": "E19-E24"
+    },
+    {
+      "id": "POBLACION",
+      "name": "Población, hogares y servicios",
+      "level": "B2",
+      "documentaryDesign": true,
+      "materialEvidenceValidated": false,
+      "runtimeValidated": false,
+      "sources": "E08/E14/E16",
+      "outstandingDebts": "EDD-04",
+      "handoff": "E26"
+    },
+    {
+      "id": "INSTITUCIONES",
+      "name": "Instituciones, ley y competencias",
+      "level": "B2",
+      "documentaryDesign": true,
+      "materialEvidenceValidated": false,
+      "runtimeValidated": false,
+      "sources": "E09/E16/E17",
+      "outstandingDebts": "EDD-05/08",
+      "handoff": "E20-E25/E27"
+    },
+    {
+      "id": "CULTURA",
+      "name": "Cultura y memoria histórica",
+      "level": "B2",
+      "documentaryDesign": true,
+      "materialEvidenceValidated": false,
+      "runtimeValidated": false,
+      "sources": "E10/E17",
+      "outstandingDebts": "EDD-08",
+      "handoff": "E27"
+    },
+    {
+      "id": "PERSONAJES",
+      "name": "Personajes, linajes y relaciones",
+      "level": "B2",
+      "documentaryDesign": true,
+      "materialEvidenceValidated": false,
+      "runtimeValidated": false,
+      "sources": "E10/E17",
+      "outstandingDebts": "EDD-05",
+      "handoff": "E25"
+    },
+    {
+      "id": "CONFLICTOS",
+      "name": "Conflictos, intereses y causalidad",
+      "level": "B2",
+      "documentaryDesign": true,
+      "materialEvidenceValidated": false,
+      "runtimeValidated": false,
+      "sources": "E10/E17",
+      "outstandingDebts": "EDD-08",
+      "handoff": "E27"
+    },
+    {
+      "id": "IMPLEMENTACION",
+      "name": "Contratos y capacidad de implementación",
+      "level": "B2",
+      "documentaryDesign": true,
+      "materialEvidenceValidated": false,
+      "runtimeValidated": false,
+      "sources": "E11/E13-E17",
+      "outstandingDebts": "EDD-01/02/03/04/07",
+      "handoff": "E28"
+    }
+  ],
+  "debts": [
+    {
+      "id": "EDD-01",
+      "name": "Norte y perímetro",
+      "status": "OPEN",
+      "responsiblePhase": "E19",
+      "evidenceToClose": "Mapa íntegro o vértices ratificados y polígono cerrado"
+    },
+    {
+      "id": "EDD-02",
+      "name": "Escala y CRS 2D",
+      "status": "OPEN",
+      "responsiblePhase": "E19",
+      "evidenceToClose": "Tres controles no colineales, calibración reversible y error publicado"
+    },
+    {
+      "id": "EDD-03",
+      "name": "Hidrología local y captaciones",
+      "status": "OPEN",
+      "responsiblePhase": "E19/E28",
+      "evidenceToClose": "DEM, drenajes, receptores, revisión territorial y comprobación topológica"
+    },
+    {
+      "id": "EDD-04",
+      "name": "Población y capacidad",
+      "status": "OPEN",
+      "responsiblePhase": "E26",
+      "evidenceToClose": "Hogares, viviendas y totales reconciliados por localidad"
+    },
+    {
+      "id": "EDD-05",
+      "name": "Sucesión y linajes",
+      "status": "OPEN",
+      "responsiblePhase": "E25",
+      "evidenceToClose": "Aprobación de identidad y legitimidad; expedientes individuales E10"
+    },
+    {
+      "id": "EDD-06",
+      "name": "Rodas aldea regia",
+      "status": "RESOLVED_FOR_DESIGN",
+      "responsiblePhase": "E07/E12",
+      "evidenceToClose": "Rodas ALDEA de Corona Aethros; resuelto solo para diseño"
+    },
+    {
+      "id": "EDD-07",
+      "name": "Vías, servidumbres y accesos",
+      "status": "OPEN",
+      "responsiblePhase": "E19/E28",
+      "evidenceToClose": "Trazas verificadas, pendientes/cruces, continuidad y derechos"
+    },
+    {
+      "id": "EDD-08",
+      "name": "Cronología, diplomacia y Rodas",
+      "status": "OPEN",
+      "responsiblePhase": "E27",
+      "evidenceToClose": "Fuentes/registros y ratificación de hechos consumados, sin cesión presunta"
+    }
+  ],
+  "findings": [
+    {
+      "id": "E18-H01",
+      "class": "BLOCKER_MATERIAL",
+      "dimension": "GEOGRAFIA",
+      "debtId": "EDD-01",
+      "description": "El norte no forma un perímetro validado; bloquear polígonos jugables.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H02",
+      "class": "BLOCKER_MATERIAL",
+      "dimension": "GEOGRAFIA",
+      "debtId": "EDD-02",
+      "description": "No hay escala ni georreferencia autorizada; prohibir conversión m/píxel ficticia.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H03",
+      "class": "BLOCKER_MATERIAL",
+      "dimension": "RECURSOS",
+      "debtId": "EDD-03",
+      "description": "Agua local y derechos de captación sin verificar; no crear servicio/vid a partir de hipótesis.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H04",
+      "class": "BLOCKER_MATERIAL",
+      "dimension": "ASENTAMIENTOS",
+      "debtId": "EDD-07",
+      "description": "Grafo físico Gp vacío: las cuatro preguntas E05 no son cuatro carreteras.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H05",
+      "class": "TRACKED_EVIDENCE",
+      "dimension": "POBLACION",
+      "debtId": "EDD-04",
+      "description": "Sin censo, hogares residentes, aforos ni capacidad productiva comprobada.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H06",
+      "class": "TRACKED_AUTHORITY",
+      "dimension": "PERSONAJES",
+      "debtId": "EDD-05",
+      "description": "Once nombres de E10 son designId sin legitimidad o NPC activo ratificado.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H07",
+      "class": "TRACKED_AUTHORITY",
+      "dimension": "CULTURA",
+      "debtId": "EDD-08",
+      "description": "Cronología relativa y memoria de Rodas sin fechas, tratados ni hechos consumados acreditados.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H08",
+      "class": "BLOCKER_RUNTIME",
+      "dimension": "IMPLEMENTACION",
+      "debtId": null,
+      "description": "Content Pack E11 y C++ sintético no prueban integración territorial Godot ni World State.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H09",
+      "class": "TRACKED_EVIDENCE",
+      "dimension": "ASENTAMIENTOS",
+      "debtId": null,
+      "description": "Dorth/Lumina/Karsath/Rodas/campo carecen aún de monografías y planos implementables E20–E24.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H10",
+      "class": "TRACKED_EVIDENCE",
+      "dimension": "RECURSOS",
+      "debtId": "EDD-04",
+      "description": "Los balances, lotes y producciones son modelos: ninguna instancia económica real creada.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H11",
+      "class": "TRACKED_EVIDENCE",
+      "dimension": "INSTITUCIONES",
+      "debtId": null,
+      "description": "Competencias E09 definidas, pero no constan cargos, sedes o permisos concretos materializados.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    },
+    {
+      "id": "E18-H12",
+      "class": "BLOCKER_RUNTIME",
+      "dimension": "CONFLICTOS",
+      "debtId": null,
+      "description": "Los 32 casos E17 son contrafácticos: su resultado no debe mutar historia ni ejecutar gameplay.",
+      "resolution": "NOT_RESOLVED_IN_E18"
+    }
+  ],
+  "protectedAnchors": [
+    {
+      "id": "dorth",
+      "owner": "casa_edranor"
+    },
+    {
+      "id": "lumina",
+      "owner": "casa_edranor"
+    },
+    {
+      "id": "karsath",
+      "owner": "casa_edranor"
+    },
+    {
+      "id": "rodas",
+      "owner": "crown_aethros"
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros"
+    }
+  ],
+  "invariants": {
+    "rodasVillageRoyal": true,
+    "rodasNoHouseTaxOrMilitary": true,
+    "hallheimOutsideHouse": true,
+    "luminaAnnualMarketOnly": true,
+    "bosqueAltoNoFreeLogging": true,
+    "karsathUrbanHarborUnverified": true,
+    "physicalGraphEdges": 0,
+    "units": 7,
+    "u7NonEvaluable": true,
+    "communicationReceiptRequired": true,
+    "allE17ScenariosUnoccurred": true,
+    "sourceOfTruthNotPromoted": true
+  },
+  "observedEvidence": {
+    "e13Units": 7,
+    "e14OccupationOptions": 24,
+    "e15SyntheticScenarios": 28,
+    "e16SyntheticScenarios": 30,
+    "e17SyntheticScenarios": 32,
+    "e16PhysicalGraphEdges": 0,
+    "e17RealWorldMutations": 0,
+    "e11StableDefinitionIds": 5
+  },
+  "gates": {
+    "E19": {
+      "researchAndSourceCollectionAllowed": true,
+      "provisionalNonmetricDesignAllowed": true,
+      "metricGeometryReady": false,
+      "physicalRoutingReady": false,
+      "requiresEvidence": [
+        "EDD-01",
+        "EDD-02",
+        "EDD-03",
+        "EDD-07"
+      ]
+    },
+    "E20_E24": {
+      "townStudiesMayProceedConditionally": true,
+      "georeferencedDeploymentReady": false
+    },
+    "E25": {
+      "genealogyMayBeProposed": true,
+      "canonicalSuccessionReady": false
+    },
+    "E26": {
+      "censusMayBeResearched": true,
+      "populationInstantiated": false
+    },
+    "E27": {
+      "relativeChronologyMayBeStudied": true,
+      "historyRatified": false
+    },
+    "E28": {
+      "contractsMayBeDesigned": true,
+      "actualGameplayCertified": false
+    }
+  },
+  "decisionRegister": [
+    {
+      "id": "ED18-DEC-01",
+      "decision": "Mantener B2 para las diez dimensiones hasta obtener datos materiales externos",
+      "authority": "ASSISTANT_DELEGATED_AUDIT",
+      "canonRatified": false
+    },
+    {
+      "id": "ED18-DEC-02",
+      "decision": "Abrir E19 para adquisición y calibración, no para dibujar geometría ficticia",
+      "authority": "ASSISTANT_DELEGATED_AUDIT",
+      "canonRatified": false
+    },
+    {
+      "id": "ED18-DEC-03",
+      "decision": "Conservar EDD-01/02/03/04/05/07/08 abiertas y EDD-06 resuelta solo para diseño",
+      "authority": "ASSISTANT_DELEGATED_AUDIT",
+      "canonRatified": false
+    },
+    {
+      "id": "ED18-DEC-04",
+      "decision": "Distinguir contradicciones demostradas de lagunas de evidencia; no reclamar fallos ficticios",
+      "authority": "ASSISTANT_DELEGATED_AUDIT",
+      "canonRatified": false
+    },
+    {
+      "id": "ED18-DEC-05",
+      "decision": "No modificar fuentes E00-E17, CoreRPG, Godot ni Content Packs durante E18",
+      "authority": "ASSISTANT_DELEGATED_AUDIT",
+      "canonRatified": false
+    }
+  ],
+  "nextPhase": "E19",
+  "noNextPhaseExecuted": true
+}
