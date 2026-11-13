@@ -363,7 +363,7 @@ La estabilidad económica del Reino depende de una distribución de recursos ent
 La Corona puede reservarse o asumir el control directo de enclaves o recursos estratégicos cuando la seguridad general de Norgard lo exige. Actualmente están establecidos dos casos:
 
 - **Rodas:** control permanente de la Corona.
-- **Forja Estelar:** mando directo de Hallheim en época de guerra.
+- **Forja Estelar:** dominio, administración y mando directo **permanentes** de Hallheim / Casa Aethros, en paz y guerra, aunque situada geográficamente en Zanthir (territorio Galdren). Decisión autoral G05, 13/11/2026.
 
 ## Casa Aethros
 
@@ -416,7 +416,7 @@ La Corona puede reservarse o asumir el control directo de enclaves o recursos es
 - Su territorio constituye el gran núcleo agrícola y ganadero de Norgard.
 - Administra **Zanthir**, zona minera y productora de armas y herramientas.
 - Dentro de su ámbito se encuentra la **Forja Estelar**.
-- En época de guerra la Forja Estelar pasa a mando directo de Hallheim.
+- La **Forja Estelar** es un enclave **de la Corona / Casa Aethros en paz y en guerra**, administrado directamente desde Hallheim; Galdren no administra esa instalación, aunque sí el entorno de Zanthir.
 - Mantiene una antigua rivalidad económica con Darovan.
 
 ## Casa Valrik
@@ -451,7 +451,7 @@ El desarrollo operativo se mantiene en:
 
 - **Aethros ↔ Edranor:** tensión por Rodas.
 - **Darovan ↔ Galdren:** rivalidad económica.
-- **Aethros ↔ Galdren:** cooperación con reserva de control estratégico sobre la Forja Estelar en guerra.
+- **Aethros ↔ Galdren:** cooperación con dominio y control estratégico **permanentes** de la Corona sobre la Forja Estelar de Zanthir; no se transfiere la administración en tiempos de paz.
 - **Aethros ↔ Valrik:** relación de lealtad y dependencia estratégica de sus recursos forestales y navales.
 - **Darovan ↔ Aethros:** búsqueda de influencia Darovan dentro de un sistema cuya estabilidad favorece su prosperidad.
 

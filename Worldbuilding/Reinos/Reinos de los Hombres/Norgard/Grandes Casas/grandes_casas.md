@@ -61,7 +61,7 @@ La Corona puede reservarse el control directo de determinados enclaves o recurso
 Casos actualmente establecidos:
 
 - **Rodas**, hogar de los berserkers, permanece bajo control directo de la Corona.
-- **La Forja Estelar**, situada en territorio administrado por la Casa Galdren, pasa a mando directo de Hallheim en época de guerra.
+- **La Forja Estelar**, situada en el ámbito geográfico de Zanthir (Casa Galdren), permanece **bajo dominio, administración y mando directo de la Corona de Norgard / Casa Aethros tanto en paz como en guerra**, del mismo modo que Rodas. Su ubicación no concede titularidad ni mando sobre la instalación a Galdren. **Ratificación autoral G05, 13/11/2026.**
 
 ---
 
@@ -383,7 +383,7 @@ Zanthir es una zona minera y productora de:
 
 Dentro de su ámbito se encuentra la **Forja Estelar**.
 
-Aunque la Forja Estelar se encuentra en territorio administrado por Galdren, en época de guerra queda bajo mando directo de Hallheim por su importancia estratégica.
+La Forja Estelar se encuentra **en el ámbito geográfico de Zanthir**, pero es un **enclave regio reservado**: dominio, administración y mando permanente de la **Corona de Norgard (Casa Aethros)** tanto en paz como en guerra. Galdren administra Zanthir y su industria ordinaria, **no la Forja Estelar**. Esta decisión autoral G05 de 13/11/2026 sustituye el antiguo régimen de mando regio únicamente bélico.
 
 ## Base de poder
 
@@ -393,7 +393,7 @@ Aunque la Forja Estelar se encuentra en territorio administrado por Galdren, en 
 - recursos mineros;
 - producción de armas;
 - producción de herramientas;
-- administración habitual del territorio de la Forja Estelar.
+- cooperación territorial con el enclave regio de la Forja Estelar, **sin dominio ni administración de la instalación**.
 
 ## Carácter político
 
@@ -420,7 +420,7 @@ Mientras Darovan concentra especialmente riqueza monetaria y metales preciosos, 
 - origen histórico preciso de su rivalidad con Darovan;
 - naturaleza y funcionamiento detallado de la Forja Estelar;
 - estructura y tamaño de su guardia;
-- procedimiento institucional exacto mediante el cual Hallheim asume el mando de la Forja Estelar en guerra.
+- organización interior, personal, régimen de acceso, títulos documentales históricos y protocolos de cooperación de la Forja Estelar, cuyo **control regio permanente** ya está ratificado.
 
 ---
 
@@ -546,7 +546,7 @@ Galdren controla una parte esencial de la producción alimentaria y de otros bie
 
 La relación combina cooperación y control estratégico.
 
-Galdren procura conservar una relación favorable con la Corona, mientras Hallheim se reserva el mando directo de la **Forja Estelar** en época de guerra.
+Galdren procura conservar una relación favorable con la Corona. La **Forja Estelar** es un enclave de **dominio y control regio permanente**, incluso en paz, situado geográficamente en Zanthir; la relación precisa de suministros y colaboración con Galdren sigue pendiente.
 
 ## Aethros ↔ Valrik
 
@@ -567,7 +567,7 @@ Una Gran Casa puede administrar un territorio o recurso estratégico, pero la Co
 Casos establecidos:
 
 - **Rodas:** control permanente de la Corona.
-- **Forja Estelar:** mando directo de Hallheim en época de guerra.
+- **Forja Estelar:** dominio, administración y mando directos **permanentes** de Hallheim / Casa Aethros, en paz y guerra; enclave geográfico de Zanthir sin dependencia administrativa Galdren.
 
 La forma jurídica y administrativa detallada de este principio queda pendiente de desarrollo.
 
