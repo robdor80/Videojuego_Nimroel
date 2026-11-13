@@ -41,7 +41,7 @@ def read(path):
         return json.load(fp, object_pairs_hook=no_duplicate_keys)
 
 def git_blob_sha(data):
-    return hashlib.sha1(b"blob " + str(len(data)).encode("ascii") + b"\\0" + data).hexdigest()
+    return hashlib.sha1(b"blob " + str(len(data)).encode("ascii") + b"\0" + data).hexdigest()
 
 def validate(a, e13, e16, e18, check_bytes=True, check_docs=True):
     need((a.get("schemaVersion"),a.get("documentId"),a.get("version"),a.get("phase")) ==
