@@ -78,7 +78,7 @@ def check(docs, projection, manifest, resources, fixtures):
         ("E02",d2["anchors"][:4],"jurisdictionOwner"),
         ("E03",d3["anchors"][:4],"owner"),
         ("E04",d4["anchors"][:4],"owner"),
-        ("E05",d5["anchors"][:4],"jurisdictionOwner"),
+        ("E05",d5["anchors"][:4],"owner"),
         ("E07",d7["settlements"],"jurisdictionOwner"),
         ("E08",d8["localityModels"],"jurisdictionOwner"),
         ("E09",d9["localityModels"],"jurisdictionOwner"),
