@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e13_physical_design",
+  "phase": "E13",
+  "date": "2026-11-13",
+  "status": "DELEGATED_DESIGN_NOT_CANON",
+  "runtimeEnabled": false,
+  "worldStateEntitiesCreated": 0,
+  "authority": "ASSISTANT_DELEGATED_DESIGN",
+  "sourceBaseMain": "660fcf13b45916cb5df062303f40ef5168558af0",
+  "sourceContractIds": [
+    "edranor_e01_relief",
+    "edranor_e02_hydrology",
+    "edranor_e03_climate_soils_ecosystems",
+    "edranor_e07_canonical_nuclei",
+    "edranor_e10_lore"
+  ],
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_edranor",
+    "localidad",
+    "world_state"
+  ],
+  "map": {
+    "sourceAuthorCrop": "1000024893.jpg",
+    "northBoundaryClosed": false,
+    "metricGeometryValidated": false,
+    "georeferenced": false,
+    "coordinateSystem": null,
+    "scaleMetersPerPixel": null,
+    "polygonGeometry": [],
+    "riverPolylines": [],
+    "roadEdges": [],
+    "heightfield": null,
+    "svgIsOnlySchematic": true
+  },
+  "protectedPlaces": [
+    {
+      "id": "dorth",
+      "owner": "casa_edranor",
+      "kind": "city",
+      "insideEdranor": true,
+      "siteReference": {
+        "minM": 300,
+        "maxM": 650,
+        "authority": "ASSISTANT_DELEGATED_DESIGN",
+        "measured": false
+      },
+      "instantiated": false
+    },
+    {
+      "id": "lumina",
+      "owner": "casa_edranor",
+      "kind": "small_compact_settlement",
+      "insideEdranor": true,
+      "siteReference": {
+        "minM": 650,
+        "maxM": 900,
+        "authority": "ASSISTANT_DELEGATED_DESIGN",
+        "measured": false
+      },
+      "instantiated": false
+    },
+    {
+      "id": "karsath",
+      "owner": "casa_edranor",
+      "kind": "small_lakeside_visual_settlement",
+      "insideEdranor": true,
+      "siteReference": {
+        "minM": 300,
+        "maxM": 550,
+        "authority": "ASSISTANT_DELEGATED_DESIGN",
+        "measured": false
+      },
+      "instantiated": false
+    },
+    {
+      "id": "rodas",
+      "owner": "crown_aethros",
+      "kind": "village",
+      "insideEdranor": true,
+      "siteReference": {
+        "minM": 400,
+        "maxM": 950,
+        "authority": "ASSISTANT_DELEGATED_DESIGN",
+        "measured": false
+      },
+      "instantiated": false
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros",
+      "kind": "outside",
+      "insideEdranor": false,
+      "siteReference": null,
+      "instantiated": false
+    }
+  ],
+  "physicalUnits": [
+    {
+      "unitId": "edr_e01_west_valkram_interface",
+      "landform": "VALKRAM_FOOTHILL_INTERFACE",
+      "altimetry": {
+        "minM": 600,
+        "maxM": 1600,
+        "authority": "ASSISTANT_DELEGATED_DESIGN",
+        "measured": false,
+        "georeferenced": false
+      },
+      "insideHouseTerritoryConfirmed": null,
+      "physicalGeometryValidated": false,
+      "hydroReceiver": "UNKNOWN",
+      "soilSuitability": "UNASSESSED",
+      "climateLocalMeasured": false,
+      "ecosystemMapped": false,
+      "landUseInstantiated": false
+    },
+    {
+      "unitId": "edr_e01_karsath_central_west",
+      "landform": "WESTERN_INTERIOR_RIDGES",
+      "altimetry": {
+        "minM": 300,
+        "maxM": 650,
+        "authority": "ASSISTANT_DELEGATED_DESIGN",
+        "measured": false,
+        "georeferenced": false
+      },
+      "insideHouseTerritoryConfirmed": null,
+      "physicalGeometryValidated": false,
+      "hydroReceiver": "UNKNOWN",
+      "soilSuitability": "UNASSESSED",
+      "climateLocalMeasured": false,
+      "ecosystemMapped": false,
+      "landUseInstantiated": false
+    },
+    {
+      "unitId": "edr_e01_lumina_bosque_alto",
+      "landform": "HIGH_WOODLAND_PLATEAU",
+      "altimetry": {
+        "minM": 650,
+        "maxM": 1100,
+        "authority": "ASSISTANT_DELEGATED_DESIGN",
+        "measured": false,
+        "georeferenced": false
+      },
+      "insideHouseTerritoryConfirmed": null,
+      "physicalGeometryValidated": false,
+      "hydroReceiver": "UNKNOWN",
+      "soilSuitability": "UNASSESSED",
+      "climateLocalMeasured": false,
+      "ecosystemMapped": false,
+      "landUseInstantiated": false
+    },
+    {
+      "unitId": "edr_e01_central_wine_context",
+      "landform": "MIXED_CENTRAL_WINE_CONTEXT",
+      "altimetry": {
+        "minM": 200,
+        "maxM": 650,
+        "authority": "ASSISTANT_DELEGATED_DESIGN",
+        "measured": false,
+        "georeferenced": false
+      },
+      "insideHouseTerritoryConfirmed": null,
+      "physicalGeometryValidated": false,
+      "hydroReceiver": "UNKNOWN",
+      "soilSuitability": "UNASSESSED",
+      "climateLocalMeasured": false,
+      "ecosystemMapped": false,
+      "landUseInstantiated": false
+    },
+    {
+      "unitId": "edr_e01_dorth_azurios_west",
+      "landform": "AZURIOS_WEST_PIEDEMONT",
+      "altimetry": {
+        "minM": 350,
+        "maxM": 1500,
+        "authority": "ASSISTANT_DELEGATED_DESIGN",
+        "measured": false,
+        "georeferenced": false
+      },
+      "insideHouseTerritoryConfirmed": null,
+      "physicalGeometryValidated": false,
+      "hydroReceiver": "UNKNOWN",
+      "soilSuitability": "UNASSESSED",
+      "climateLocalMeasured": false,
+      "ecosystemMapped": false,
+      "landUseInstantiated": false
+    },
+    {
+      "unitId": "edr_e01_north_cold_transition",
+      "landform": "COLD_BOREAL_STUDY",
+      "altimetry": {
+        "minM": 350,
+        "maxM": 1150,
+        "authority": "ASSISTANT_DELEGATED_DESIGN",
+        "measured": false,
+        "georeferenced": false
+      },
+      "insideHouseTerritoryConfirmed": null,
+      "physicalGeometryValidated": false,
+      "hydroReceiver": "UNKNOWN",
+      "soilSuitability": "UNASSESSED",
+      "climateLocalMeasured": false,
+      "ecosystemMapped": false,
+      "landUseInstantiated": false
+    },
+    {
+      "unitId": "edr_e01_far_north_unclosed",
+      "landform": "NOT_EVALUABLE_BOUNDARY_UNCLOSED",
+      "altimetry": null,
+      "insideHouseTerritoryConfirmed": false,
+      "physicalGeometryValidated": false,
+      "hydroReceiver": "UNKNOWN",
+      "soilSuitability": "UNASSESSED",
+      "climateLocalMeasured": false,
+      "ecosystemMapped": false,
+      "landUseInstantiated": false
+    }
+  ],
+  "regionalHydrology": [
+    {
+      "id": "lurien",
+      "authority": "CANON_REPO",
+      "membershipInEdranor": "UNKNOWN",
+      "localGeometryValidated": false,
+      "localPolyline": null
+    },
+    {
+      "id": "antela",
+      "authority": "CANON_REPO",
+      "membershipInEdranor": "UNKNOWN",
+      "localGeometryValidated": false,
+      "localPolyline": null
+    }
+  ],
+  "catchmentStudies": [
+    {
+      "id": "ED13-H01",
+      "question": "VALKRAM_LURIEN",
+      "status": "UNDELIMITED_STUDY_ONLY",
+      "receiverId": null,
+      "polygon": [],
+      "localCourseCreated": false
+    },
+    {
+      "id": "ED13-H02",
+      "question": "KARSATH_ANTELA",
+      "status": "UNDELIMITED_STUDY_ONLY",
+      "receiverId": null,
+      "polygon": [],
+      "localCourseCreated": false
+    },
+    {
+      "id": "ED13-H03",
+      "question": "BOSQUE_ALTO",
+      "status": "UNDELIMITED_STUDY_ONLY",
+      "receiverId": null,
+      "polygon": [],
+      "localCourseCreated": false
+    },
+    {
+      "id": "ED13-H04",
+      "question": "CENTRAL_WINE",
+      "status": "UNDELIMITED_STUDY_ONLY",
+      "receiverId": null,
+      "polygon": [],
+      "localCourseCreated": false
+    },
+    {
+      "id": "ED13-H05",
+      "question": "DORTH_AZURIOS",
+      "status": "UNDELIMITED_STUDY_ONLY",
+      "receiverId": null,
+      "polygon": [],
+      "localCourseCreated": false
+    },
+    {
+      "id": "ED13-H06",
+      "question": "NORTH_COLD",
+      "status": "UNDELIMITED_STUDY_ONLY",
+      "receiverId": null,
+      "polygon": [],
+      "localCourseCreated": false
+    }
+  ],
+  "toponymCandidates": [
+    {
+      "id": "ED13-T01",
+      "candidateName": "Los Rellanos de Karsath",
+      "status": "NAME_PROPOSAL_NOT_MAPPED",
+      "geometry": null,
+      "canonRatified": false,
+      "existingPlaceCreated": false
+    },
+    {
+      "id": "ED13-T02",
+      "candidateName": "La Umbría del Alto",
+      "status": "NAME_PROPOSAL_NOT_MAPPED",
+      "geometry": null,
+      "canonRatified": false,
+      "existingPlaceCreated": false
+    },
+    {
+      "id": "ED13-T03",
+      "candidateName": "Los Bancales Viejos",
+      "status": "NAME_PROPOSAL_NOT_MAPPED",
+      "geometry": null,
+      "canonRatified": false,
+      "existingPlaceCreated": false
+    },
+    {
+      "id": "ED13-T04",
+      "candidateName": "La Loma del Lagar",
+      "status": "NAME_PROPOSAL_NOT_MAPPED",
+      "geometry": null,
+      "canonRatified": false,
+      "existingPlaceCreated": false
+    },
+    {
+      "id": "ED13-T05",
+      "candidateName": "Las Gradas de Lumina",
+      "status": "NAME_PROPOSAL_NOT_MAPPED",
+      "geometry": null,
+      "canonRatified": false,
+      "existingPlaceCreated": false
+    },
+    {
+      "id": "ED13-T06",
+      "candidateName": "Los Resaltes de Dorth",
+      "status": "NAME_PROPOSAL_NOT_MAPPED",
+      "geometry": null,
+      "canonRatified": false,
+      "existingPlaceCreated": false
+    },
+    {
+      "id": "ED13-T07",
+      "candidateName": "Los Claros del Norte",
+      "status": "NAME_PROPOSAL_NOT_MAPPED",
+      "geometry": null,
+      "canonRatified": false,
+      "existingPlaceCreated": false
+    },
+    {
+      "id": "ED13-T08",
+      "candidateName": "La Nava de Rodas",
+      "status": "NAME_PROPOSAL_NOT_MAPPED",
+      "geometry": null,
+      "canonRatified": false,
+      "existingPlaceCreated": false
+    }
+  ],
+  "hazardScenarioIds": [
+    "ED13-F01",
+    "ED13-F02",
+    "ED13-F03",
+    "ED13-F04",
+    "ED13-F05",
+    "ED13-F06",
+    "ED13-F07",
+    "ED13-F08",
+    "ED13-F09",
+    "ED13-F10"
+  ],
+  "routeQuestions": [
+    {
+      "id": "edr_e01_corridor_karsath_lumina",
+      "status": "STUDY_ONLY",
+      "roadConfirmed": false
+    },
+    {
+      "id": "edr_e01_corridor_lumina_dorth",
+      "status": "STUDY_ONLY",
+      "roadConfirmed": false
+    },
+    {
+      "id": "edr_e01_corridor_rodas",
+      "status": "STUDY_ONLY",
+      "roadConfirmed": false
+    },
+    {
+      "id": "edr_e01_corridor_valkram",
+      "status": "STUDY_ONLY",
+      "roadConfirmed": false
+    }
+  ],
+  "debts": [
+    {
+      "id": "EDD-01",
+      "responsiblePhase": "E19",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-02",
+      "responsiblePhase": "E19",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-03",
+      "responsiblePhase": "E19/E28",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-04",
+      "responsiblePhase": "E26",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-05",
+      "responsiblePhase": "E25",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-06",
+      "responsiblePhase": "E07/E12",
+      "status": "RESOLVED_FOR_DESIGN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-07",
+      "responsiblePhase": "E16/E19/E28",
+      "status": "OPEN",
+      "evidenceRequired": true
+    },
+    {
+      "id": "EDD-08",
+      "responsiblePhase": "E27",
+      "status": "OPEN",
+      "evidenceRequired": true
+    }
+  ],
+  "phases": [
+    "E13",
+    "E14",
+    "E15",
+    "E16",
+    "E17",
+    "E18",
+    "E19",
+    "E20",
+    "E21",
+    "E22",
+    "E23",
+    "E24",
+    "E25",
+    "E26",
+    "E27",
+    "E28",
+    "E29"
+  ],
+  "noLocalHydrologyInstantiated": true,
+  "noNPCInstantiated": true,
+  "noPopulationInstantiated": true,
+  "noNewRoadInstantiated": true,
+  "noCanonSuperiorChanged": true,
+  "noNewHouseSovereignty": true,
+  "generatedAssets": [
+    "E13/atlas_relaciones_esquematico_no_metrico.svg"
+  ],
+  "limitations": [
+    "EDD-01",
+    "EDD-02",
+    "EDD-03",
+    "EDD-04",
+    "EDD-05",
+    "EDD-07",
+    "EDD-08",
+    "NOT_GODOT_TESTED",
+    "NOT_CORERPG_EDRANOR_RUNTIME"
+  ]
+}
