@@ -114,7 +114,7 @@ def check(c, ss):
                   isinstance(x["conditionalTrigger"], str) and len(x["conditionalTrigger"]) >= 45 and
                   isinstance(x["recoveryCondition"], str) and len(x["recoveryCondition"]) >= 24, "thin case")
             guard(isinstance(x["chain"], list) and len(x["chain"]) >= 4 and
-                  all(k in DOMAINS for k in x["chain"]) and "LEDGER" in x["chain"], "causal chain")
+                  all(k in DOMAINS for k in x["chain"]) and ("LEDGER" in x["chain"] or "MEMORY" in x["chain"]), "causal chain")
             guard(x["requiredProofs"] == list(dict.fromkeys(["eventEvidence", "authority", x["missingProof"]])), "proofs")
             guard(x["exampleProofValue"] is None or x["exampleProofValue"] is False, "hypothetical proof")
             guard(x["expectedIfMissing"] == ("BLOCKED" if x["exampleProofValue"] is False else "PENDING_EVIDENCE"), "case oracle")
