@@ -1,17 +1,24 @@
-# Acta G06 — Comunicaciones y redes económicas
-**Fecha:** 13/11/2026. **Base**: `8610affd134d3134b8cba17b2b43c483331b127a` (main tras PR #70 G05).
+# Acta de auditoría GALDREN G06 — Comunicaciones y redes económicas
+**Fecha:** 13/11/2026. **Base de origen**: `main@8610affd134d3134b8cba17b2b43c483331b127a` tras G05 PR #70.
 
-## Alcance entregado
-Matriz G01 de seis corredores de estudio; seis modalidades sin servicios operativos; doce enlaces comerciales G04/G05 sin remesas; seis modelos de información sin instancias; ocho riesgos diferenciados por evidencia; protección de Forja regia G05-D01, canon fiscal y monetario único. Documento de traspaso a G07 y contrato no-runtime.
+## Entrega
+- Seis corredores G01-C01..C06 enlazados sin vías físicas afirmadas.
+- Seis modalidades y estacionalidad sin servicio validado; doce relaciones comerciales G04/G05 sin envíos, precios ni contratos.
+- Seis modelos de información y mensajería sin NPC, postas o conocimiento omnisciente.
+- Ocho riesgos: 3 hechos cualitativos de hielo, 1 referencia regional y 4 hipótesis.
+- Forja Estelar bajo Corona/Aethros **en paz y guerra**; unidad fiscal y monetaria regia.
+- Expedientes, contrato G06 no-runtime, validador Python, workflow independiente y traspaso G07.
 
-## Alcance deliberadamente no entregado
-Ni trazados, ni caminos, ni puentes, ni puertos, ni peajes, ni concesiones, ni estaciones de mensajería, ni horarios, ni latencias, ni contratos reales, ni economía simulada. Nada en Godot, GDExtension o CoreRPG. Las fuentes superiores y G00–G05 históricos no se reescriben.
+## Auditoría ejecutada
+- **SHA validado antes de incorporar esta actualización de acta**: `9b27b408b189862e15eb2186a349154a1902d355`.
+- Workflow G06 [run #43359857591](https://github.com/robdor80/Videojuego_Nimroel/actions/runs/43359857591): **SUCCESS en Ubuntu 24.04 y Windows 2022**.
+- Ejecución secuencial de `Tools/GaldrenG00..GaldrenG06/validate.py`: **PASS** en ambos sistemas.
+- **555 mutaciones negativas G06 rechazadas**. Regresiones históricas G00–G05 también verdes (28+49+58+86+113+55 negativas adicionales).
+- Las otras seis workflows G00–G05 asociadas al mismo HEAD también terminaron en **SUCCESS**.
+- Diff auditado contra `main`: **15 archivos** dentro de `Casa Galdren/`, `Tools/GaldrenG06/` y workflow G06; G00–G05 no reescritos, CoreRPG/Godot intactos. PR #71 mergeable; `main` coincidía con la base durante la auditoría inicial.
 
-## Puertas técnicas de cierre (comprobar tras PR)
-1. `Tools/GaldrenG06/validate.py`: positiva y mutaciones negativas.
-2. Regresión G00–G05 sin fallos, workflow G06 Windows 2022 y Ubuntu 24.04 **en HEAD exacto**.
-3. Diff sin modificaciones fuera del alcance.
-4. Sin conflictos ni deriva de main; sin afirmar «jugable» por validar JSON.
-5. Fusionar solo tras auditoría y autorización de fusión aplicable.
+## Sin ejecución de mundo
+Cero carreteras, puentes, puertos, tramos fluviales navegables, estaciones, tarifas, concesiones, eventos, rutas o recursos creados. No hay compilación CoreRPG/Godot/Windows/Android ni misión jugable acreditada.
 
-**Estado documental al redactar:** entregables preparados para auditoría, CI y revisión de PR; no declarar SUCCESS antes de observar resultados.
+## Puertas de cierre
+Esta actualización documental produce un **HEAD posterior** al SHA auditado: antes de fusionar volver a comprobar CI Windows/Linux G00–G06 en el HEAD final y `main` sin deriva. Mantener PR Draft si falla alguna puerta o falta la aprobación de integración. **G07 no iniciado**.
