@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "documentId": "galdren_g01",
+  "phase": "G01",
+  "version": "0.1.0",
+  "date": "2026-11-13",
+  "status": "DOCUMENTARY_PLANNING_ONLY",
+  "runtimeEnabled": false,
+  "authorApproval": "G01_WORK_APPROVED; NEW_TOPONYMS_NOT_RATIFIED",
+  "baselineMainSha": "5b18e8f255a0ee90a0cb2c6ddf08f16760acc15f",
+  "baseDocumentId": "galdren_g00",
+  "inheritance": [
+    "nimroel_core",
+    "norgard_defaults",
+    "casa_galdren",
+    "localidad",
+    "world_state"
+  ],
+  "mapping": {
+    "redOutlineApproximate": true,
+    "authorMarkedMapCommitted": false,
+    "georeferenceVerified": false,
+    "metricGeometryVerified": false,
+    "coordinatesVerified": false,
+    "polygonVerified": false,
+    "legalBordersVerified": false
+  },
+  "invariants": {
+    "singleCrown": true,
+    "houseSovereign": false,
+    "metalEstelarOnly": "montes_azurios",
+    "caleranSingleRiverSystem": true,
+    "invernosSharedGaldrenValrik": true,
+    "invernosBoundaryCrossesNorthSouth": true,
+    "highestInvernosPeakAssigned": false,
+    "forjaOwner": "UNKNOWN",
+    "forjaPeacetimeAdministrator": "casa_galdren",
+    "forjaWartimeStrategicCommand": "crown_aethros_hallheim",
+    "noNewRivers": true
+  },
+  "protectedSettlements": [
+    {
+      "id": "arleon",
+      "owner": "casa_galdren"
+    },
+    {
+      "id": "zanthir",
+      "owner": "casa_galdren"
+    },
+    {
+      "id": "treskal",
+      "owner": "casa_valrik",
+      "insideGaldren": false
+    },
+    {
+      "id": "hallheim",
+      "owner": "crown_aethros",
+      "insideGaldren": false
+    },
+    {
+      "id": "dorth",
+      "owner": "casa_edranor",
+      "insideGaldren": false
+    },
+    {
+      "id": "forja_estelar",
+      "owner": "UNKNOWN",
+      "kind": "INSTALACION_ESTRATEGICA",
+      "ownershipTitle": "UNKNOWN",
+      "locationVerified": false
+    }
+  ],
+  "canonicalToponymIds": [
+    "montes_azurios",
+    "montes_invernos",
+    "montanas_velaris",
+    "paso_vareth",
+    "rio_caleran",
+    "brazo_occidental_caleran",
+    "brazo_oriental_caleran",
+    "rio_vornarsk",
+    "rio_keldarsk",
+    "bahia_zanthir",
+    "mar_del_norte",
+    "mar_suthiros",
+    "bosque_quebrado",
+    "bosque_caminoreal",
+    "bosque_riberas",
+    "rios_sareno_theleno",
+    "gemelos_treskal",
+    "bosque_gemelos"
+  ],
+  "reliefUnits": [
+    {
+      "id": "G01-U01",
+      "kind": "AZURIOS_INTERFACE",
+      "anchor": "Montes Azurios",
+      "evidenceClass": "CANON_REPO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U02",
+      "kind": "INVERNOS_SHARED",
+      "anchor": "Montes Invernos",
+      "evidenceClass": "REGIONAL_BORRADOR_APROBADO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U03",
+      "kind": "ZANTHIR_PIEDEMONTE",
+      "anchor": "Zanthir",
+      "evidenceClass": "HYPOTHESIS_G01",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U04",
+      "kind": "ZANTHIR_BAY",
+      "anchor": "Bahía de Zanthir",
+      "evidenceClass": "CANON_REPO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U05",
+      "kind": "BOREAL_NORTH",
+      "anchor": "Norte de Norgard",
+      "evidenceClass": "CANON_REPO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U06",
+      "kind": "ARLEON_CALERAN",
+      "anchor": "Arleon",
+      "evidenceClass": "CANON_REPO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U07",
+      "kind": "LOWER_CALERAN",
+      "anchor": "Río Caleran",
+      "evidenceClass": "CANON_REPO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U08",
+      "kind": "BOSQUE_QUEBRADO",
+      "anchor": "Bosque Quebrado",
+      "evidenceClass": "CANON_REPO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U09",
+      "kind": "CAMINO_REAL",
+      "anchor": "Bosque del Camino Real",
+      "evidenceClass": "CANON_REPO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U10",
+      "kind": "BOSQUE_RIBERAS",
+      "anchor": "Bosque de las Riberas",
+      "evidenceClass": "CANON_REPO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U11",
+      "kind": "VALRIK_TRESKAL_INTERFACE",
+      "anchor": "Treskal",
+      "evidenceClass": "CANON_REPO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    },
+    {
+      "id": "G01-U12",
+      "kind": "VELARIS_VARETH_CONTEXT",
+      "anchor": "Paso de Vareth",
+      "evidenceClass": "CANON_REPO",
+      "isPoliticalDivision": false,
+      "jurisdictionOwner": "UNKNOWN",
+      "localHeightAssigned": false,
+      "metricGeometryVerified": false
+    }
+  ],
+  "borderInterfaces": [
+    {
+      "id": "G01-B01",
+      "neighbor": "crown_aethros",
+      "sector": "WEST_CROWN",
+      "exactLegalBorder": "UNKNOWN",
+      "boundaryFixed": false,
+      "metricTraceVerified": false
+    },
+    {
+      "id": "G01-B02",
+      "neighbor": "casa_edranor",
+      "sector": "WEST_EDRANOR",
+      "exactLegalBorder": "UNKNOWN",
+      "boundaryFixed": false,
+      "metricTraceVerified": false
+    },
+    {
+      "id": "G01-B03",
+      "neighbor": "casa_valrik",
+      "sector": "EAST_VALRIK",
+      "exactLegalBorder": "UNKNOWN",
+      "boundaryFixed": false,
+      "metricTraceVerified": false
+    },
+    {
+      "id": "G01-B04",
+      "neighbor": "UNKNOWN",
+      "sector": "NORTH_INVERNOS",
+      "exactLegalBorder": "UNKNOWN",
+      "boundaryFixed": false,
+      "metricTraceVerified": false
+    },
+    {
+      "id": "G01-B05",
+      "neighbor": "UNKNOWN",
+      "sector": "NORTH_BAY_COAST",
+      "exactLegalBorder": "UNKNOWN",
+      "boundaryFixed": false,
+      "metricTraceVerified": false
+    },
+    {
+      "id": "G01-B06",
+      "neighbor": "UNKNOWN",
+      "sector": "SOUTH_SUTHIROS_COAST",
+      "exactLegalBorder": "UNKNOWN",
+      "boundaryFixed": false,
+      "metricTraceVerified": false
+    }
+  ],
+  "corridorStudies": [
+    {
+      "id": "G01-C01",
+      "origin": "Arleon",
+      "destination": "Zanthir",
+      "status": "STUDY_ONLY",
+      "physicalContactValidated": false,
+      "routeVerified": false,
+      "bridgeVerified": false,
+      "navigabilityVerified": false,
+      "lengthKm": null
+    },
+    {
+      "id": "G01-C02",
+      "origin": "Arleon",
+      "destination": "Caleran inferior",
+      "status": "STUDY_ONLY",
+      "physicalContactValidated": false,
+      "routeVerified": false,
+      "bridgeVerified": false,
+      "navigabilityVerified": false,
+      "lengthKm": null
+    },
+    {
+      "id": "G01-C03",
+      "origin": "Zanthir",
+      "destination": "Bahía de Zanthir",
+      "status": "STUDY_ONLY",
+      "physicalContactValidated": false,
+      "routeVerified": false,
+      "bridgeVerified": false,
+      "navigabilityVerified": false,
+      "lengthKm": null
+    },
+    {
+      "id": "G01-C04",
+      "origin": "Arleon",
+      "destination": "interfaz Valrik",
+      "status": "STUDY_ONLY",
+      "physicalContactValidated": false,
+      "routeVerified": false,
+      "bridgeVerified": false,
+      "navigabilityVerified": false,
+      "lengthKm": null
+    },
+    {
+      "id": "G01-C05",
+      "origin": "Azurios",
+      "destination": "Arleon",
+      "status": "STUDY_ONLY",
+      "physicalContactValidated": false,
+      "routeVerified": false,
+      "bridgeVerified": false,
+      "navigabilityVerified": false,
+      "lengthKm": null
+    },
+    {
+      "id": "G01-C06",
+      "origin": "región oriental",
+      "destination": "Paso de Vareth",
+      "status": "STUDY_ONLY",
+      "physicalContactValidated": false,
+      "routeVerified": false,
+      "bridgeVerified": false,
+      "navigabilityVerified": false,
+      "lengthKm": null
+    }
+  ],
+  "featureDossiers": [
+    {
+      "id": "TOP-01",
+      "scope": "valles y collados Azurios occidental",
+      "featureConfirmed": false,
+      "authorRatification": "PENDING",
+      "jurisdictionOwner": "UNKNOWN",
+      "coordinatesVerified": false,
+      "waterTopologyVerified": false,
+      "nameCandidates": []
+    },
+    {
+      "id": "TOP-02",
+      "scope": "piedemonte Zanthir",
+      "featureConfirmed": false,
+      "authorRatification": "PENDING",
+      "jurisdictionOwner": "UNKNOWN",
+      "coordinatesVerified": false,
+      "waterTopologyVerified": false,
+      "nameCandidates": [
+        {
+          "name": "Laderas Frías",
+          "status": "PROPUESTA_NO_CANON",
+          "ratified": false,
+          "assertedIndependentFeature": false
+        }
+      ]
+    },
+    {
+      "id": "TOP-03",
+      "scope": "vegas de Arleon",
+      "featureConfirmed": false,
+      "authorRatification": "PENDING",
+      "jurisdictionOwner": "UNKNOWN",
+      "coordinatesVerified": false,
+      "waterTopologyVerified": false,
+      "nameCandidates": [
+        {
+          "name": "Vegas de Arleon",
+          "status": "PROPUESTA_NO_CANON",
+          "ratified": false,
+          "assertedIndependentFeature": false
+        }
+      ]
+    },
+    {
+      "id": "TOP-04",
+      "scope": "transición Bosque Quebrado",
+      "featureConfirmed": false,
+      "authorRatification": "PENDING",
+      "jurisdictionOwner": "UNKNOWN",
+      "coordinatesVerified": false,
+      "waterTopologyVerified": false,
+      "nameCandidates": []
+    },
+    {
+      "id": "TOP-05",
+      "scope": "costa de Bahía Zanthir",
+      "featureConfirmed": false,
+      "authorRatification": "PENDING",
+      "jurisdictionOwner": "UNKNOWN",
+      "coordinatesVerified": false,
+      "waterTopologyVerified": false,
+      "nameCandidates": []
+    }
+  ],
+  "invernosRegionalDraft": {
+    "scope": "ENTIRE_SHARED_MOUNTAIN_CHAIN",
+    "approval": "REGIONAL_BORRADOR_APROBADO",
+    "localHeightsEstablished": false,
+    "crestTypicalMeters": [
+      2200,
+      2800
+    ],
+    "exceptionalPeakMaximumApproxMeters": 3600,
+    "primaryPassRangeMeters": [
+      1500,
+      2100
+    ],
+    "peakHouseAssignment": "UNKNOWN",
+    "permanentGlaciersConfirmed": false
+  },
+  "unresolved": [
+    "GDD-01",
+    "GDD-02",
+    "GDD-03",
+    "GDD-07",
+    "TOPOGRAPHY_CALERAN_SOURCE_TO_PLAINS",
+    "NORTH_COAST_LEGAL_SCOPE",
+    "INVERNOS_PASS_GEOMETRY",
+    "RIVER_SECONDARY_NETWORK",
+    "G02_NOT_STARTED"
+  ],
+  "sourceRegistry": [
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/geografia_general.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/montanas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/Montes Invernos/cotas_y_altitudes_borrador.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/rios_y_lagos.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/mares_y_costas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/bosques.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Geografía/regiones_naturales.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Toponimia/convencion_toponimica_norgard_v0.1.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Grandes Casas/grandes_casas.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/Cartografia/G00_CARTOGRAFIA.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/Toponimia/G00_REGISTRO_TOPONIMIA.md",
+    "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Galdren/Datos operativos/galdren_g00_manifest_v0.1.json"
+  ]
+}
