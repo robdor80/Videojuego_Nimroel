@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "phase": "E10",
+  "runtimeEnabled": false,
+  "fixturesAreCanonical": false,
+  "cases": [
+    {
+      "id": "rodas_tax_grab",
+      "mutationPath": "territorialPlaces[3].taxOwner",
+      "mutationValue": "casa_edranor",
+      "expected": "REJECT"
+    },
+    {
+      "id": "rodas_guard_grab",
+      "mutationPath": "territorialPlaces[3].securityOwner",
+      "mutationValue": "casa_edranor",
+      "expected": "REJECT"
+    },
+    {
+      "id": "rodas_justice_grab",
+      "mutationPath": "territorialPlaces[3].justiceOwner",
+      "mutationValue": "casa_edranor",
+      "expected": "REJECT"
+    },
+    {
+      "id": "rodas_jurisdiction",
+      "mutationPath": "territorialPlaces[3].authorityOwner",
+      "mutationValue": "casa_edranor",
+      "expected": "REJECT"
+    },
+    {
+      "id": "make_druidic_temple",
+      "mutationPath": "governance.druidicHouseIsTemple",
+      "mutationValue": true,
+      "expected": "REJECT"
+    },
+    {
+      "id": "house_mint",
+      "mutationPath": "governance.houseHasMint",
+      "mutationValue": true,
+      "expected": "REJECT"
+    },
+    {
+      "id": "house_army_sov",
+      "mutationPath": "governance.houseHasIndependentArmy",
+      "mutationValue": true,
+      "expected": "REJECT"
+    },
+    {
+      "id": "internal_customs",
+      "mutationPath": "governance.internalCustoms",
+      "mutationValue": true,
+      "expected": "REJECT"
+    },
+    {
+      "id": "hallheim_capture",
+      "mutationPath": "governance.hallheimWithinEdranor",
+      "mutationValue": true,
+      "expected": "REJECT"
+    },
+    {
+      "id": "berserker_capture",
+      "mutationPath": "governance.rodasBerserkerCommander",
+      "mutationValue": "casa_edranor",
+      "expected": "REJECT"
+    },
+    {
+      "id": "runtime_false_claim",
+      "mutationPath": "runtimeEnabled",
+      "mutationValue": true,
+      "expected": "REJECT"
+    },
+    {
+      "id": "fake_year",
+      "mutationPath": "relativeHistory[0].absoluteYear",
+      "mutationValue": 15375,
+      "expected": "REJECT"
+    },
+    {
+      "id": "fake_npc",
+      "mutationPath": "characters[0].npcId",
+      "mutationValue": "npc_0001",
+      "expected": "REJECT"
+    },
+    {
+      "id": "fake_heir_kin",
+      "mutationPath": "dynasty.legalSuccessionEstablished",
+      "mutationValue": true,
+      "expected": "REJECT"
+    },
+    {
+      "id": "fake_royal_election",
+      "mutationPath": "dynasty.coronationOrElectionRequired",
+      "mutationValue": true,
+      "expected": "REJECT"
+    },
+    {
+      "id": "faux_office",
+      "mutationPath": "characters[8].appointedOfficeId",
+      "mutationValue": "official_001",
+      "expected": "REJECT"
+    },
+    {
+      "id": "actual_war",
+      "mutationPath": "resolvedWars",
+      "mutationValue": [
+        "edr_e10_war_01"
+      ],
+      "expected": "REJECT"
+    },
+    {
+      "id": "fake_treaty",
+      "mutationPath": "historicalTreatyIds",
+      "mutationValue": [
+        "rodas_cession_01"
+      ],
+      "expected": "REJECT"
+    },
+    {
+      "id": "fake_quest",
+      "mutationPath": "instantiatedQuestIds",
+      "mutationValue": [
+        "mission_01"
+      ],
+      "expected": "REJECT"
+    },
+    {
+      "id": "new_tax",
+      "mutationPath": "newTaxIds",
+      "mutationValue": [
+        "dorth_wine_tariff"
+      ],
+      "expected": "REJECT"
+    },
+    {
+      "id": "new_road",
+      "mutationPath": "physicalRoadIds",
+      "mutationValue": [
+        "dorth_rodas"
+      ],
+      "expected": "REJECT"
+    },
+    {
+      "id": "premature_outcome",
+      "mutationPath": "conflicts[0].outcome",
+      "mutationValue": "edranor_annexes_rodas",
+      "expected": "REJECT"
+    },
+    {
+      "id": "duplicate_character",
+      "mutationPath": "characters[1].designId",
+      "mutationValue": "edr_e10_char_elira",
+      "expected": "REJECT"
+    },
+    {
+      "id": "non_dynastic_protected_name",
+      "mutationPath": "characters[4].name",
+      "mutationValue": "Orlan Edranor",
+      "expected": "REJECT"
+    }
+  ]
+}
