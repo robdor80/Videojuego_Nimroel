@@ -1,0 +1,46 @@
+name: Edranor E19-R4 mobility and Valrik parity
+on:
+  push:
+    branches:
+      - 'design/edranor-e19-r4-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/E19-R4/**'
+      - 'Tools/EdranorE19R4/**'
+      - '.github/workflows/edranor-e19-r4.yml'
+  workflow_dispatch:
+jobs:
+  roads-linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: R0 baseline
+        run: python Tools/EdranorE19R0/validate.py
+      - name: R1 baseline
+        run: python Tools/EdranorE19R1/validate.py
+      - name: R2 baseline
+        run: python Tools/EdranorE19R2/validate.py
+      - name: R3 baseline
+        run: python Tools/EdranorE19R3/validate.py
+      - name: R4 road contract and adversarial tests
+        run: python Tools/EdranorE19R4/validate.py
+  roads-windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: R0 baseline
+        run: python Tools/EdranorE19R0/validate.py
+      - name: R1 baseline
+        run: python Tools/EdranorE19R1/validate.py
+      - name: R2 baseline
+        run: python Tools/EdranorE19R2/validate.py
+      - name: R3 baseline
+        run: python Tools/EdranorE19R3/validate.py
+      - name: R4 road contract and adversarial tests
+        run: python Tools/EdranorE19R4/validate.py
