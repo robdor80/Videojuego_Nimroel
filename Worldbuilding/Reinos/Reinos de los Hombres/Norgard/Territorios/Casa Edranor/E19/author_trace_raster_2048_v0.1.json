@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "phase": "E19",
+  "documentId": "edranor_author_drawn_raster_trace",
+  "version": "0.1",
+  "authority": "AUTHOR_2026_11_14_ANNOTATED_IMAGE",
+  "source": {
+    "filename": "nimroel_Edranor.jpg",
+    "mime": "image/jpeg",
+    "sha256": "b5341bb608538aa9bc07c8afae56b9c7264af9f9a8c29fee82e14e63863c303f",
+    "widthPx": 2048,
+    "heightPx": 1024,
+    "availableInConversation": true,
+    "originalBytesStoredInRepository": false,
+    "annotation": "red boundary and five independent hatching strokes"
+  },
+  "registration": {
+    "canonicalMap": "Worldbuilding/Nimroel.jpg",
+    "canonicalImageWidth": 4096,
+    "canonicalImageHeight": 2048,
+    "canonicalImageGitBlob": "c46e017a5c9a0ab66f8f072dd37d7236e05b5e2d",
+    "rasterSameCompositionVerified": true,
+    "method": "half-size resized map pixel registration; JPEG compression differences",
+    "sourceToCanonicalMatrix": [
+      2,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    "canonicalToSourceMatrix": [
+      0.5,
+      0,
+      0,
+      0,
+      0.5,
+      0
+    ],
+    "overlayInGodotWidthPx": 2048,
+    "overlayInGodotHeightPx": 1024,
+    "godotCoordinatesRasterOnly": true,
+    "originTopLeft": true,
+    "worldMetersPerPixel": null,
+    "geographicCrs": null,
+    "illustrated400MilesBarIsNotMetricCertification": true
+  },
+  "authorMarkedBoundary": {
+    "meaning": "VISIBLE_APPROXIMATE_WEST_SOUTH_EAST_BOUNDARY",
+    "referenceCoords": "annotated_image_px",
+    "method": "HSV red connected component, morphological skeleton and Douglas Peucker epsilon 4 px",
+    "pointCount": 21,
+    "accuracyPixelsApprox": 4,
+    "westToEastPoints": [
+      [
+        1086,
+        6
+      ],
+      [
+        1092,
+        33
+      ],
+      [
+        1103,
+        49
+      ],
+      [
+        1086,
+        77
+      ],
+      [
+        1083,
+        136
+      ],
+      [
+        1113,
+        176
+      ],
+      [
+        1148,
+        204
+      ],
+      [
+        1195,
+        222
+      ],
+      [
+        1221,
+        258
+      ],
+      [
+        1260,
+        263
+      ],
+      [
+        1307,
+        280
+      ],
+      [
+        1378,
+        283
+      ],
+      [
+        1422,
+        267
+      ],
+      [
+        1478,
+        278
+      ],
+      [
+        1491,
+        260
+      ],
+      [
+        1520,
+        194
+      ],
+      [
+        1549,
+        168
+      ],
+      [
+        1572,
+        110
+      ],
+      [
+        1562,
+        53
+      ],
+      [
+        1575,
+        29
+      ],
+      [
+        1571,
+        9
+      ]
+    ],
+    "connected": true,
+    "closedNorth": false,
+    "northSemantics": "TO_NORTHERN_GEOGRAPHIC_EXTENT_OF_NORGARD_NO_INTERMEDIATE_BORDER",
+    "topViewportClipIsNotPoliticalBorder": true,
+    "perimeterLegalPolygonCertified": false,
+    "boundaryIntersectsAtVisibleMapTop": true,
+    "hatchingStrokesAreNotBoundaries": true
+  },
+  "authorHatching": {
+    "meaning": "AREA_INDICATOR_NON_GEOMETRIC",
+    "strokes": [
+      [
+        [
+          1168,
+          26
+        ],
+        [
+          1096,
+          103
+        ]
+      ],
+      [
+        [
+          1265,
+          34
+        ],
+        [
+          1148,
+          138
+        ]
+      ],
+      [
+        [
+          1334,
+          62
+        ],
+        [
+          1219,
+          184
+        ]
+      ],
+      [
+        [
+          1408,
+          64
+        ],
+        [
+          1293,
+          207
+        ]
+      ],
+      [
+        [
+          1494,
+          71
+        ],
+        [
+          1369,
+          216
+        ]
+      ]
+    ],
+    "count": 5
+  },
+  "jurisdiction": {
+    "dorth": "EDRANOR",
+    "lumina": "EDRANOR",
+    "karsath": "EDRANOR",
+    "rodas": {
+      "geographicContext": "EDRANOR",
+      "exclusiveCivilFiscalJusticeSecurityMilitaryAuthority": "CROWN_AETHROS",
+      "mayEdranorSummonBerserkers": false
+    },
+    "hallheim": {
+      "geographicContext": "OUTSIDE_EDRANOR",
+      "capitalOf": "NORGARD",
+      "house": "AETHROS"
+    }
+  },
+  "rendering": {
+    "vectorOverlaySvg": "E19/author_trace_overlay_2048.svg",
+    "backgroundRepoAsset": "Worldbuilding/Nimroel.jpg",
+    "visualMapReady": true,
+    "metricGameplayReady": false,
+    "northFillForbidden": true,
+    "sitePlacementRequiresLocalProof": true,
+    "physicalRoutesCreated": 0,
+    "demCreated": false
+  },
+  "materialDebts": {
+    "EDD_01": "NORTH_GEOGRAPHIC_COASTLINE_AND_CORRIDOR_POLYGON_NOT_VERIFIED",
+    "EDD_02": "METRIC_SCALE_NOT_CERTIFIED_RASTER_AFFINE_ONLY",
+    "EDD_03": "DEM_AND_CATCHMENTS_NOT_VERIFIED",
+    "EDD_07": "ROUTE_TRACES_AND_RIGHTS_NOT_VERIFIED"
+  }
+}

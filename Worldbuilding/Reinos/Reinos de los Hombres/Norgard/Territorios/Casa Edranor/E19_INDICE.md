@@ -3,3 +3,5 @@
 
 Contrato `Datos operativos/edranor_e19_cartography_gate_v0.1.json`; validador `Tools/EdranorE19/validate.py`; CI `.github/workflows/edranor-e19.yml`. L00 binario verificado, EDD-01/02/03/07 abiertas. **No georreferencia, no geometría Godot, no runtime, E19 sin cierre material.**
 Ratificación autoral 14/11/2026: [norte, vertientes, Aethros/Hallheim y prerrogativa militar en Rodas](E19/07_RATIFICACION_AUTORAL_LIMITES_RODAS.md). Delimitación cualitativa confirmada; geometría, DEM y escala siguen pendientes.
+
+- [Mapa autoral trazado en coordenadas 2D](E19/08_CALCO_VECTORIAL_AUTOR.md): [SVG](E19/author_trace_overlay_2048.svg) · [JSON](E19/author_trace_raster_2048_v0.1.json). Límite norte de visor ≠ frontera política.

@@ -43,6 +43,8 @@ jobs:
           done
       - name: E19 bytes, contract and mutations
         run: python Tools/EdranorE19/validate.py
+      - name: E19 author trace, SVG and 13 adversarial mutations
+        run: python Tools/EdranorE19/validate_trace.py
       - name: Checkout pinned CoreRPG
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:

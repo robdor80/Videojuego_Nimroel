@@ -383,5 +383,19 @@
       "everyCompetenceUnderCrown": true
     },
     "northSemanticResolvedButEdd01GeometryOpen": true
+  },
+  "rasterTrace": {
+    "sourceName": "nimroel_Edranor.jpg",
+    "sourceSha256": "b5341bb608538aa9bc07c8afae56b9c7264af9f9a8c29fee82e14e63863c303f",
+    "traceAsset": "E19/author_trace_raster_2048_v0.1.json",
+    "overlayAsset": "E19/author_trace_overlay_2048.svg",
+    "coordinateSystem": "RASTER_2048x1024",
+    "godotVisualCoordinatesUsable": true,
+    "nativeMapPixelScaleFactor": 2,
+    "boundaryVertices": 21,
+    "hatchedAreaIndicatorStrokes": 5,
+    "northPixelBorderIsNotPoliticalBorder": true,
+    "administrativePolygonCertified": false,
+    "physicalSurfaceMetricsCertified": false
   }
 }
