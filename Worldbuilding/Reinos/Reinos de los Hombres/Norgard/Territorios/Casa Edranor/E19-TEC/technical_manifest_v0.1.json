@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e19_tec_technical_manifest",
+  "phase": "E19-TEC",
+  "date": "2026-11-14",
+  "status": "TECHNICAL_PIPELINE_IN_PROGRESS_NO_B3_EVIDENCE",
+  "source": {
+    "phase": "E19-R6",
+    "headSha": "fd31360a8b3a6d94da3b020bce38bb23481e7e79",
+    "pr": 94,
+    "r0AuthorCorrection": "GEOGRAPHY_CAUSAL_FIRST_NO_NORTH_JOIN_NO_RED_TRACE_LEGAL",
+    "precedent": "VALRIK_TRESKAL_CAUSAL_SPATIAL_METHOD_NOT_GEOMETRY"
+  },
+  "spatialReference": null,
+  "approvedGeometryAssets": [],
+  "actualPhysicalRoadEdges": 0,
+  "verifiedSettlements": 0,
+  "verifiedProviders": 0,
+  "actualWorldStateEntities": 0,
+  "materialization": {
+    "scope": "NONE_YET",
+    "exportable": false,
+    "layerCount": 0,
+    "sectorIds": []
+  },
+  "layerTypes": [
+    "boundary_divide",
+    "river",
+    "waterbody",
+    "route_node",
+    "road",
+    "settlement",
+    "forest",
+    "parcel"
+  ],
+  "invariants": {
+    "northJoined": false,
+    "politicalNorthClosed": false,
+    "mf08Evaluable": false,
+    "valkramWest": "casa_darovan",
+    "valkramEast": "casa_edranor",
+    "azuriosWest": "casa_edranor",
+    "azuriosEast": "casa_galdren",
+    "southLurienWholeBoundary": false,
+    "rodasKind": "ALDEA",
+    "rodasJurisdiction": "crown_aethros",
+    "hallheimInEdranor": false,
+    "bosqueAltoPermitRequired": true,
+    "bosqueRealOwner": "crown_aethros",
+    "karsathUrbanPort": false,
+    "caleranAtDorth": false
+  },
+  "gates": [
+    {
+      "id": "TEC-01",
+      "name": "SOURCE_AUTHORITY",
+      "passed": true
+    },
+    {
+      "id": "TEC-02",
+      "name": "PRODUCTION_SPATIAL_REFERENCE",
+      "passed": false
+    },
+    {
+      "id": "TEC-03",
+      "name": "APPROVED_SECTOR_GEOMETRY",
+      "passed": false
+    },
+    {
+      "id": "TEC-04",
+      "name": "HYDROLOGY_RECEIVERS_AND_RIGHTS",
+      "passed": false
+    },
+    {
+      "id": "TEC-05",
+      "name": "CERTIFIED_PHYSICAL_ROUTES",
+      "passed": false
+    },
+    {
+      "id": "TEC-06",
+      "name": "PARCELS_OCCUPANCY_AND_CENSUS",
+      "passed": false
+    },
+    {
+      "id": "TEC-07",
+      "name": "GODOT_2D_RUNTIME_LOAD",
+      "passed": false
+    },
+    {
+      "id": "TEC-08",
+      "name": "CORERPG_WORLDSTATE_PERSISTENCE",
+      "passed": false
+    }
+  ],
+  "openedDebts": [
+    "EDD-01",
+    "EDD-02",
+    "EDD-03",
+    "EDD-04",
+    "EDD-05",
+    "EDD-07",
+    "EDD-08"
+  ],
+  "rejectedSourcePR84Used": false
+}
