@@ -101,6 +101,12 @@ def solve_lab(model: dict) -> dict:
         require(entry["balanceEvidence"] == "TEST_ONLY", "Sumidero sin prueba")
         sinks[position] = _integer(entry["capacityUnits"], "capacityUnits")
     require(bool(outlets or sinks), "El sector carece de receptores")
+    for r, c in sinks:
+        require(all(
+            height[r, c] <= height[r + dr, c + dc]
+            for dr, dc in OFFSETS
+            if 0 <= r + dr < nr and 0 <= c + dc < nc
+        ), "Sumidero declarado fuera de depresion geomorfologica")
     require(type(model.get("candidateThresholdUnits")) is int and
             1 <= model["candidateThresholdUnits"] <= 10**6,
             "Umbral de prueba debe ser explícito")
