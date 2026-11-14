@@ -90,6 +90,11 @@ class DrainageTests(unittest.TestCase):
         self.reject(lambda x: x.update(closedSinks=[
             {"cell": [1, 1], "capacityUnits": 100, "balanceEvidence": "FAKE"}]))
 
+    def test_no_uphill_pond_from_label(self):
+        self.reject(lambda x: x.update(closedSinks=[{
+            "cell": [0, 0], "capacityUnits": 100, "balanceEvidence": "TEST_ONLY"
+        }]))
+
     def test_balance_rejects_negative_capacity(self):
         self.reject(lambda x: x["cells"][1][1].update(infiltration=2))
         self.reject(lambda x: x["cells"][1][1].update(rain=-1))
