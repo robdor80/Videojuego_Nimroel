@@ -1,0 +1,50 @@
+name: Edranor E19-R5 settlement and Valrik parity
+on:
+  push:
+    branches:
+      - 'design/edranor-e19-r5-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/E19-R5/**'
+      - 'Tools/EdranorE19R5/**'
+      - '.github/workflows/edranor-e19-r5.yml'
+  workflow_dispatch:
+jobs:
+  settlements-linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate R0 baseline
+        run: python Tools/EdranorE19R0/validate.py
+      - name: Validate R1 baseline
+        run: python Tools/EdranorE19R1/validate.py
+      - name: Validate R2 baseline
+        run: python Tools/EdranorE19R2/validate.py
+      - name: Validate R3 baseline
+        run: python Tools/EdranorE19R3/validate.py
+      - name: Validate R4 baseline
+        run: python Tools/EdranorE19R4/validate.py
+      - name: R5 occupation and synthetic denials
+        run: python Tools/EdranorE19R5/validate.py
+  settlements-windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate R0 baseline
+        run: python Tools/EdranorE19R0/validate.py
+      - name: Validate R1 baseline
+        run: python Tools/EdranorE19R1/validate.py
+      - name: Validate R2 baseline
+        run: python Tools/EdranorE19R2/validate.py
+      - name: Validate R3 baseline
+        run: python Tools/EdranorE19R3/validate.py
+      - name: Validate R4 baseline
+        run: python Tools/EdranorE19R4/validate.py
+      - name: R5 occupation and synthetic denials
+        run: python Tools/EdranorE19R5/validate.py
