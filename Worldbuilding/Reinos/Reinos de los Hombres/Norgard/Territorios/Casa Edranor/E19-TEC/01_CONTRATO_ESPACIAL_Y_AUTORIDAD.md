@@ -17,7 +17,7 @@ Tipos:
 - forest: área y régimen; aprovechamiento Alto sólo con permiso, Bosque Real queda bajo Corona.
 - parcel: tenencia y uso material acreditados; no significa edificio ni censo automático.
 
-Todo elemento de producción requiere evidencia particular: sourceId, approvalId y status APPROVED_B3. Para caminos además extremos, inspección del terreno, transitabilidad, capacidad, conservación, permiso legal y registro de agua cruzada. El exportador falla de modo cerrado en caso de datos parciales, duplicados, topología inválida, fuentes genéricas o semántica prohibida.
+Todo elemento de producción requiere evidencia particular: sourceId, approvalId y status APPROVED_B3. Para caminos además extremos, `terrainEvidence` (pendiente, suelo, servidumbre, inspección identificada), transitabilidad, capacidad, conservación, permiso legal y cruces de agua inspeccionados. Para cursos de agua `hydrologyEvidence` (cuenca, causa, gradiente, receptor, estación y expediente). Para un asentamiento materializado `sitingEvidence` (agua, saneamiento, Gp certificado, tenencia, riesgos): no basta que R5 mencione su categoría. Estos indicadores solo comprueban completitud contractual, nunca sustituyen pruebas físicas ni el acto de autorización. El exportador falla de modo cerrado en caso de datos parciales, duplicados, topología inválida, fuentes genéricas o semántica prohibida.
 
 Las únicas coordenadas ficticias se construyen **en memoria de los tests** con modo SYNTHETIC_TEST; nunca se guardan como Edranor ni se exportan. La salida JSON ordenada es determinista, contiene procedencia y geometría, pero **no** modifica CoreRPG/ContentPacks ni activa NPC, movimientos o pathfinding hasta integrarse y acreditarse el runtime.
 
