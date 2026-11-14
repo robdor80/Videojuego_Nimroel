@@ -21,7 +21,7 @@
     "hallheim": "outside_edranor"
   },
   "debt": {
-    "EDD_01": "OPEN_VECTOR_TRACING_NORTH_NONJOIN_RESOLVED",
+    "EDD_01": "OPEN_NATURAL_BOUNDARY_NOT_RED_TRACE",
     "EDD_02": "OPEN",
     "EDD_03": "OPEN",
     "EDD_06": "DESIGN_ONLY",
@@ -53,12 +53,43 @@
       1280
     ],
     "blueX": "RODAS_CROWN_AETHROS",
-    "redLines": "EDRANOR_TWO_SEPARATE_LATERAL_BOUNDARIES",
+    "redLines": "APPROXIMATE_GUIDES_TO_NATURAL_BOUNDARIES",
     "redLinesMeetInNorth": false,
     "politicalNorthClosureRequired": false,
     "technicalClipEquivalentToPoliticalBoundary": false,
     "furtherTraceOutsideVisibleCrop": "UNKNOWN",
     "authorConfirmed": true,
-    "sourceBinaryCommittedToRepo": false
+    "sourceBinaryCommittedToRepo": false,
+    "redLineTraceIsLegalGeometry": false,
+    "geometryMustFollowNaturalFeatures": true,
+    "authorialClarification": "Valrik method: mountain or river features; Valkram west Darovan, Azurios east Galdren, south Aethros conventional except Lurien segment"
+  },
+  "boundaryModel": {
+    "status": "AUTHOR_RULE_ESTABLISHED_GEOMETRY_NOT_MATERIALIZED",
+    "redSketchMode": "APPROXIMATE_GUIDE_NOT_BORDER",
+    "west": {
+      "neighbor": "casa_darovan",
+      "mountain": "montes_valkram",
+      "preciseDivide": "UNKNOWN"
+    },
+    "east": {
+      "neighbor": "casa_galdren",
+      "mountain": "montes_azurios",
+      "preciseDivide": "UNKNOWN"
+    },
+    "south": {
+      "neighbor": "casa_aethros",
+      "rule": "CONVENTIONAL_EXCEPT_RIVER_SEGMENT",
+      "river": "rio_lurien",
+      "riverSegment": "UNKNOWN",
+      "nonRiverSegment": "ADMINISTRATIVE_NO_CONTINUOUS_PHYSICAL_BORDER"
+    },
+    "north": {
+      "redLinesMeet": false,
+      "artificialClosureAllowed": false,
+      "geometryBeyondCrop": "UNKNOWN"
+    },
+    "legalGeometryValidated": false,
+    "vertices": []
   }
 }

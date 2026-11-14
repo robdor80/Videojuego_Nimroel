@@ -25,3 +25,7 @@ No se crean hitos fronterizos, mojones, líneas de cuenca, cortes por divisoria 
 4. Separación de polígonos físicos, límites administrativos y excepciones reales.
 5. Revisión de puntos ambiguos y prueba de que Rodas no cambia de titular.
 Solo entonces otro contrato podrá afirmar una geometría transitable.
+
+
+## Adenda de canon posterior — 14/11/2026 (prevalece)
+El autor precisa que las **líneas rojas son orientativas**, no un límite legal a calcar. **Oeste con Darovan = Montes Valkram. Este con Galdren = Montes Azurios. Sur con Aethros = frontera administrativa sin accidente natural continuo salvo tramo del gran río Lurien, desembocadura en el Golfo de Norgard.** Los trazos NO se unen al norte. No hay que cerrar el territorio por arriba ni inventar un polígono de soberanía. Solo faltan divisorias/tramos geográficos exactos y cartografía técnica; consultar E19-R0/06_CANON_FRONTERAS_NATURALES.md.

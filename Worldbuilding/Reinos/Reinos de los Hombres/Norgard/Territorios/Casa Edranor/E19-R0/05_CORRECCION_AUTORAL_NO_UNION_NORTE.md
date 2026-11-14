@@ -23,3 +23,6 @@ Hay fuente autoral **suficiente para la semántica de los límites y la X** y pa
 El supuesto problema «¿cómo se unen al norte?» **queda resuelto: NO se unen**. La deuda que permanece es **materializar con precisión cada tramo lateral y delimitar técnicamente la porción de mundo que se vaya a producir**. No exige cierre político septentrional.
 
 Esta aclaración prevalece sobre documentos anteriores cuando hablen de «cerrar norte», «polígono jurídico obligatorio» o «unir extremos». El resto de los bloqueos materiales siguen vigentes hasta comprobación real.
+
+## Nueva precisión autoral — 14/11/2026, prevalente
+**Los trazos rojos son aproximaciones, no fronteras precisas.** La orden anterior de vectorizar esas líneas como límites legales queda revocada. Oeste: Valkram/Darovan; este: Azurios/Galdren; sur: demarcación Aethros salvo tramo Lurien. Ver 06_CANON_FRONTERAS_NATURALES.md.

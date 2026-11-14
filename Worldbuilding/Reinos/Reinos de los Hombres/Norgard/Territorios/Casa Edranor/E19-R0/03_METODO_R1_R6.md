@@ -2,7 +2,7 @@
 El procedimiento toma de Treskal la secuencia de autoridad → huella → geografía → funciones → rutas → parcelario → consistencia → export, pero no transplanta coordenadas.
 
 ## R1 Perímetro
-**ACTUALIZACIÓN AUTORAL: los límites rojos NO se unen al norte.** Digitalizar las dos polilíneas laterales independientes de la captura aportada por el autor. No crear unión septentrional ni polígono jurídico falso. El recorte técnico para trabajar con áreas finitas, si hace falta, NO es frontera política. Rodas bajo Corona; Hallheim fuera. EDD-01 solo permanece abierta para materialización y precisión de los trazos.
+**CORRECCIÓN AUTORAL PREVALENTE:** las líneas rojas son orientativas; NO se digitalizan como fronteras. Oeste contra Darovan: Montes Valkram. Este contra Galdren: Montes Azurios. Sur contra Aethros: demarcación administrativa salvo un tramo del gran río Lurien que desemboca en el Golfo. El norte NO se une. El trazado material deberá apoyarse en divisorias, valles, curso fluvial y demarcación cuando corresponda. Ver 06_CANON_FRONTERAS_NATURALES.md.
 
 ## R2 Escala
 Crear CRS local con origen/orientación/unidades; obtener **tres o más puntos no colineales** y referencias de distancia compatibles, transformación reversible y residuo/error publicado. La barra «400 millas» del mapa global no calibra por sí sola el recorte. NO cerrar EDD-02 antes.
@@ -24,3 +24,6 @@ R1–R6 no superadas: recorte íntegro/definición norte, calibración, altimetr
 
 
 **Precedencia:** ver 05_CORRECCION_AUTORAL_NO_UNION_NORTE.md. Cualquier referencia histórica a «cerrar el norte» queda sustituida por la instrucción expresa «NO se unen».
+
+
+**Regla de prevalencia:** cualquier referencia previa a calcar trazos rojos es errónea. La precisión deriva de la geografía del territorio, no del color. Ver 06_CANON_FRONTERAS_NATURALES.md.
