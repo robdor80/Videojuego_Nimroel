@@ -11,6 +11,7 @@ La geografía narrativa R0–R6 ya permite razonar sobre montañas, cuencas, sue
 - technical_manifest_v0.1.json: inventario de ausencia y puertas de aceptación.
 - 01_CONTRATO_ESPACIAL_Y_AUTORIDAD.md: unidad, sector, procedencia, geometrías y validaciones.
 - 02_PUERTAS_Y_ENTREGA_AL_MOTOR.md: responsabilidades y criterios.
+- 03_PARIDAD_METODOLOGICA_VALRIK_TRESKAL.md: comparación directa con el método de Valrik y sus restricciones, sin condicionar B2 a una cartografía métrica.
 - Tools/EdranorE19TEC/spatial.py: verificador y exportador separado de Game/CoreRPG.
 - Tools/EdranorE19TEC/test_spatial.py: pruebas positivas sintéticas y rechazos.
 - Workflow CI: Linux + Windows con regresiones E19-R0–R6.
