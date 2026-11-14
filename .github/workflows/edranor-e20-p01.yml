@@ -1,0 +1,25 @@
+name: Edranor E20-P01 dorth-contract
+on:
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/E20/P01/**'
+      - 'Tools/EdranorE20P01/**'
+      - '.github/workflows/edranor-e20-p01.yml'
+  workflow_dispatch:
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/EdranorE20P01/validate.py
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/EdranorE20P01/validate.py

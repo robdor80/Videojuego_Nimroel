@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e20_p01_dorth_functional_design",
+  "date": "2026-11-14",
+  "baseSha": "223f1e49adfbc73be6a80c6ce36e7aab506450c2",
+  "status": "DEEP_FUNCTIONAL_DESIGN_ONLY",
+  "runtimeEnabled": false,
+  "georeferenced": false,
+  "metricGeometryValidated": false,
+  "sourceRefs": [
+    "E07_DORTH",
+    "E09_COMPETENCIAS_Y_REGISTROS",
+    "E10_PERSONAJES_Y_RELACIONES",
+    "E15_UVA_Y_VINOS",
+    "E18_MATRIZ_DIEZ_DIMENSIONES",
+    "E20_P00_PR85",
+    "VALRIK_TRESKAL_REFERENCE"
+  ],
+  "location": {
+    "id": "dorth",
+    "type": "city",
+    "authorityOwner": "casa_edranor",
+    "sovereign": "crown_aethros",
+    "production": "red_wine",
+    "climateLocalMeasured": false,
+    "coordinates": null,
+    "population": null
+  },
+  "protected": {
+    "rodasAuthority": "crown_aethros",
+    "hallheimInsideEdranor": false,
+    "royalSeatRequired": true,
+    "royalApartmentsRequired": true,
+    "edranorOwnLaw": false,
+    "edranorIndependentArmy": false,
+    "azuriosRoyalForestAccessGranted": false,
+    "karsathUrbanHarborInvented": false,
+    "luminaMonthlyFairInvented": false
+  },
+  "functionalAreas": [
+    {
+      "id": "DOR-F01",
+      "role": "house_administration",
+      "domain": "crown_subordinate",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F02",
+      "role": "justice_guard",
+      "domain": "king_law",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F03",
+      "role": "civic_trade",
+      "domain": "town_services",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F04",
+      "role": "harvest_reception",
+      "domain": "wine",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F05",
+      "role": "processing",
+      "domain": "wine",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F06",
+      "role": "storage_custody",
+      "domain": "wine",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F07",
+      "role": "shipping_merchants",
+      "domain": "trade",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F08",
+      "role": "cooperage_repairs",
+      "domain": "forest_rights",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F09",
+      "role": "housing_craft",
+      "domain": "households",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F10",
+      "role": "health_water_sanitation",
+      "domain": "town_services",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F11",
+      "role": "hospitality_transport",
+      "domain": "routes_pending",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    },
+    {
+      "id": "DOR-F12",
+      "role": "azurios_edge",
+      "domain": "forest_rights",
+      "status": "DESIGN_NOT_MATERIALIZED",
+      "coordinates": null,
+      "geometry": null,
+      "buildingInstanceIds": [],
+      "personInstanceIds": [],
+      "parcels": []
+    }
+  ],
+  "requiredProcessDependencies": [
+    [
+      "DOR-F04",
+      "DOR-F05"
+    ],
+    [
+      "DOR-F05",
+      "DOR-F06"
+    ],
+    [
+      "DOR-F06",
+      "DOR-F07"
+    ],
+    [
+      "DOR-F08",
+      "DOR-F06"
+    ],
+    [
+      "DOR-F10",
+      "DOR-F05"
+    ],
+    [
+      "DOR-F09",
+      "DOR-F04"
+    ],
+    [
+      "DOR-F01",
+      "DOR-F02"
+    ]
+  ],
+  "processDependencyKind": "FUNCTIONAL_ONLY_NOT_ROADS",
+  "physicalRoads": [],
+  "actualPeople": [],
+  "actualBuildings": [],
+  "actualLots": [],
+  "actualHouseholds": [],
+  "realWorldEvents": [],
+  "scenarioDesigns": [
+    {
+      "id": "DOR-SC01",
+      "name": "El lote incompleto",
+      "status": "UNTRIGGERED_PROPOSAL",
+      "requirements": [
+        "lot_instance",
+        "receiving_record",
+        "evidence"
+      ],
+      "eventsCreated": 0
+    },
+    {
+      "id": "DOR-SC02",
+      "name": "Las barricas retornadas",
+      "status": "UNTRIGGERED_PROPOSAL",
+      "requirements": [
+        "vessel_instance",
+        "prior_delivery",
+        "buyer_claim"
+      ],
+      "eventsCreated": 0
+    },
+    {
+      "id": "DOR-SC03",
+      "name": "La carta a Rodas",
+      "status": "UNTRIGGERED_PROPOSAL",
+      "requirements": [
+        "document_instance",
+        "sender_authority_proof",
+        "crown_jurisdiction_check"
+      ],
+      "eventsCreated": 0
+    }
+  ],
+  "forbiddenFeatureInheritance": [
+    "treskal_port",
+    "royal_shipyard",
+    "karsath_urban_dock",
+    "lumina_city_wall",
+    "E19_PR84_MAP"
+  ],
+  "maturity": {
+    "B2": "DESIGN_STRENGTHENED",
+    "B3": "NOT_ACCREDITED",
+    "B4": "NOT_ACCREDITED"
+  },
+  "dependencies": [
+    "E19_R1_R6",
+    "E20_P02_P10",
+    "E25_KIN_LEGITIMACY",
+    "E26_CENSUS",
+    "E28_INTEGRATION"
+  ],
+  "validatorsDoNotCertifyRuntime": true
+}
