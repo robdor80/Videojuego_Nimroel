@@ -32,18 +32,30 @@ def packet():
             feat("n1", "route_node", "Point", [0, 0]),
             feat("n2", "route_node", "Point", [2, 0]),
             feat("road1", "road", "LineString", [[0, 0], [1, 0], [2, 0]],
-                 fromNodeId="n1", toNodeId="n2", access={
+                 fromNodeId="n1", toNodeId="n2", terrainEvidence={
+                     "slopeSurveyed": True, "soilSurveyed": True,
+                     "servitudeVerified": True, "inspectionId": "TEST_ONLY"},
+                 access={
                      "surveyed": True, "legal": True, "maintained": True,
                      "waterCrossingsSurveyed": True, "capacity": 2}),
             feat("lake", "waterbody", "Point", [5, 5]),
             feat("stream", "river", "LineString", [[3, 3], [5, 5]],
-                 receiverId="lake"),
+                 receiverId="lake", hydrologyEvidence={
+                     "basinId": "HC-01", "sourceCause": "TEST_SLOPE_RUNOFF",
+                     "gradientSurveyed": True, "receiverSurveyed": True,
+                     "seasonalityReviewed": True, "surveyId": "TEST_ONLY"}),
             feat("divide", "boundary_divide", "LineString",
                  [[10, 0], [10, 5]], mountainRange="Valkram",
                  westOwner="casa_darovan", eastOwner="casa_edranor",
                  politicalNorthClosure=False),
             feat("rodas", "settlement", "Point", [8, 8], name="Rodas",
-                 kindOfSettlement="ALDEA", jurisdiction="crown_aethros"),
+                 kindOfSettlement="ALDEA", jurisdiction="crown_aethros",
+                 sitingEvidence={
+                     "waterAvailabilityVerified": True,
+                     "sanitationVerified": True,
+                     "certifiedGpAccess": True,
+                     "landTenureVerified": True,
+                     "hazardsReviewed": True}),
             feat("alto", "forest", "Polygon",
                  [[0, 10], [2, 10], [2, 12], [0, 12], [0, 10]],
                  name="Bosque Alto", harvestPermitRequired=True),
@@ -135,6 +147,20 @@ class TestSpatial(unittest.TestCase):
 
     def test_no_false_dorth_caleran(self):
         self.reject(lambda p: p["features"][6].update(name="Dorth", caleranAtTown=True))
+
+    def test_nonfictional_materialization_evidence(self):
+        self.reject(lambda p: p["features"][2]["terrainEvidence"].update(
+            soilSurveyed=False))
+        self.reject(lambda p: p["features"][2]["terrainEvidence"].update(
+            servitudeVerified=False))
+        self.reject(lambda p: p["features"][4]["hydrologyEvidence"].update(
+            receiverSurveyed=False))
+        self.reject(lambda p: p["features"][4]["hydrologyEvidence"].update(
+            basinId=""))
+        self.reject(lambda p: p["features"][6]["sitingEvidence"].update(
+            certifiedGpAccess=False))
+        self.reject(lambda p: p["features"][6]["sitingEvidence"].update(
+            landTenureVerified=False))
 
     def test_graph_road_without_real_nodes(self):
         self.reject(lambda p: p["features"][2].update(toNodeId="missing"))
