@@ -12,7 +12,7 @@
 **Autoridad:** ASSISTANT_DELEGATED_DESIGN; no se reforman canon, sucesión, jurisdicción ni hechos históricos.
 
 ## Ratificación autoral posterior a la apertura E19
-Constan cinco decisiones `ED19-AUT-01..05` sobre norte, vertientes, sur aproximado, Hallheim y convocatoria berserker de Rodas; se incorporan en [07_RATIFICACION_AUTORAL_LIMITES_RODAS.md](07_RATIFICACION_AUTORAL_LIMITES_RODAS.md). Esto **resuelve la ambigüedad cualitativa del norte**, pero no cierra EDD-01 como polígono ni EDD-02 como escala. La ratificación es del autor; la arquitectura de contrato sigue siendo diseño delegado.
+Constan seis decisiones `ED19-AUT-01..06` sobre norte, vertientes, sur aproximado, Hallheim, convocatoria berserker de Rodas y ratificación de control regio integral (administración, justicia, fiscalidad y seguridad); se incorporan en [07_RATIFICACION_AUTORAL_LIMITES_RODAS.md](07_RATIFICACION_AUTORAL_LIMITES_RODAS.md). Esto **resuelve la ambigüedad cualitativa del norte**, pero no cierra EDD-01 como polígono ni EDD-02 como escala. La ratificación es del autor; la arquitectura de contrato sigue siendo diseño delegado.
 
 ## Entregables con evidencia
 - Archivo mundial en repositorio y subida aportada **idénticos bit a bit**: blob SHA, sha256 y longitud verificados.

@@ -372,8 +372,15 @@
       "settlementClass": "VILLAGE",
       "berserkerSummoningAuthority": "CASA_REGENTE_AETHROS",
       "edranorMaySummonBerserkers": false,
-      "otherCivilFiscalPowersNewlyRatified": false,
-      "legacyRegimeFromE07E09Preserved": true
+      "otherCivilFiscalPowersNewlyRatified": true,
+      "legacyRegimeFromE07E09Preserved": true,
+      "crownExclusiveCivilAdministration": true,
+      "crownExclusiveJustice": true,
+      "crownExclusiveTaxAuthority": true,
+      "crownExclusiveSecurityAndMilitaryAuthority": true,
+      "edranorCivilFiscalMilitaryAuthority": false,
+      "relativeFiscalImportance": "LOW_QUALITATIVE_NO_FIGURES",
+      "everyCompetenceUnderCrown": true
     },
     "northSemanticResolvedButEdd01GeometryOpen": true
   }

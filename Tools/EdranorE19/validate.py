@@ -138,8 +138,15 @@ def validate(a, e13, e16, e18, check_bytes=True, check_docs=True):
                  "settlementClass":"VILLAGE",
                  "berserkerSummoningAuthority":"CASA_REGENTE_AETHROS",
                  "edranorMaySummonBerserkers":False,
-                 "otherCivilFiscalPowersNewlyRatified":False,
-                 "legacyRegimeFromE07E09Preserved":True},
+                 "otherCivilFiscalPowersNewlyRatified":True,
+                 "legacyRegimeFromE07E09Preserved":True,
+                 "crownExclusiveCivilAdministration":True,
+                 "crownExclusiveJustice":True,
+                 "crownExclusiveTaxAuthority":True,
+                 "crownExclusiveSecurityAndMilitaryAuthority":True,
+                 "edranorCivilFiscalMilitaryAuthority":False,
+                 "relativeFiscalImportance":"LOW_QUALITATIVE_NO_FIGURES",
+                 "everyCompetenceUnderCrown":True},
         "northSemanticResolvedButEdd01GeometryOpen":True}, "author confirmation / competences")
     need(a.get("decisionIds") == [f"ED19-DEC-{i:02d}" for i in range(1,6)],
          "design decision register")
@@ -222,7 +229,10 @@ def main():
       lambda x: x["authorClarifications"]["rodas"].__setitem__("territorialLocation","CASA_AETHROS"),
       lambda x: x["authorClarifications"]["rodas"].__setitem__("berserkerSummoningAuthority","CASA_EDRANOR"),
       lambda x: x["authorClarifications"]["hallheim"].__setitem__("outsideEdranor",False),
-      lambda x: x["authorClarifications"]["south"].__setitem__("riverIdentityCertified",True)
+      lambda x: x["authorClarifications"]["south"].__setitem__("riverIdentityCertified",True),
+      lambda x: x["authorClarifications"]["rodas"].__setitem__("crownExclusiveTaxAuthority",False),
+      lambda x: x["authorClarifications"]["rodas"].__setitem__("edranorCivilFiscalMilitaryAuthority",True),
+      lambda x: x["authorClarifications"]["rodas"].__setitem__("everyCompetenceUnderCrown",False)
     ]
     for i,change in enumerate(mutations,1):
         candidate=copy.deepcopy(a)
