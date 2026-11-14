@@ -1,0 +1,44 @@
+name: Edranor E19-R6 transversal parity
+on:
+  push:
+    branches:
+      - 'audit/edranor-e19-r6-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/E19-R6/**'
+      - 'Tools/EdranorE19R6/**'
+      - '.github/workflows/edranor-e19-r6.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  parity-linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/EdranorE19R0/validate.py
+      - run: python Tools/EdranorE19R1/validate.py
+      - run: python Tools/EdranorE19R2/validate.py
+      - run: python Tools/EdranorE19R3/validate.py
+      - run: python Tools/EdranorE19R4/validate.py
+      - run: python Tools/EdranorE19R5/validate.py
+      - run: python Tools/EdranorE19R6/validate.py
+  parity-windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/EdranorE19R0/validate.py
+      - run: python Tools/EdranorE19R1/validate.py
+      - run: python Tools/EdranorE19R2/validate.py
+      - run: python Tools/EdranorE19R3/validate.py
+      - run: python Tools/EdranorE19R4/validate.py
+      - run: python Tools/EdranorE19R5/validate.py
+      - run: python Tools/EdranorE19R6/validate.py
