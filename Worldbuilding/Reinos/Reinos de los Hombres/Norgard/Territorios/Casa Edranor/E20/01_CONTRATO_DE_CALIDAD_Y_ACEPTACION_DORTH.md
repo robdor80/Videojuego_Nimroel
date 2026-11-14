@@ -81,7 +81,7 @@
 - Pruebas: importación, lookup espacial, colisiones/pasos, reversibilidad, hash/IDs, regeneración determinista y migración.
 
 ### M. Integración real — MUST para B4, NO exigible para declarar B3
-- CoreRPG debe ser autoridad para hechos, identidades y consecuencias; Godot 4.7.2 Standard 2D representa el estado. Windows x64 y Android ARM64 son plataformas de destino.
+- CoreRPG debe ser autoridad para hechos, identidades y consecuencias; Godot 2D representa el estado. Windows x64 y Android ARM64 son plataformas de destino.
 - Una prueba nativa aislada en C++ no sustituye a una escena real del juego.
 - Pruebas: cargar la escena en Godot, mover un personaje por rutas admisibles, interacción con entidad del pack, modificar World State, guardar/cerrar/reabrir y recuperar mismo estado.
 
