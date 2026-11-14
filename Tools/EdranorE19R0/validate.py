@@ -11,7 +11,10 @@ def errors(d):
     if d.get("worldStateEntitiesCreated")!=0:e.append("worldstate")
     if d.get("geometry")!=[] or d.get("roads")!=[] or d.get("properties")!=[]:e.append("geometry")
     if d.get("protectedPlaces",{}).get("rodas")!="crown_aethros" or d.get("protectedPlaces",{}).get("hallheim")!="outside_edranor":e.append("crown")
-    if any(d.get("debt",{}).get(k)!="OPEN" for k in ("EDD_01","EDD_02","EDD_03","EDD_07")):e.append("debt")
+    if d.get("debt",{}).get("EDD_01")!="OPEN_VECTOR_TRACING_NORTH_NONJOIN_RESOLVED" or any(d.get("debt",{}).get(k)!="OPEN" for k in ("EDD_02","EDD_03","EDD_07")):e.append("debt")
+    c=d.get("authorDirective20261114",{})
+    if c.get("redLinesMeetInNorth") is not False or c.get("politicalNorthClosureRequired") is not False or c.get("technicalClipEquivalentToPoliticalBoundary") is not False:e.append("north union forbidden")
+    if c.get("blueX")!="RODAS_CROWN_AETHROS" or c.get("authorConfirmed") is not True:e.append("author correction")
     if d.get("debt",{}).get("EDD_06")!="DESIGN_ONLY":e.append("Rodas")
     if d.get("forbiddenSource")!="E19_PR_84":e.append("rejected map")
     return e
@@ -24,5 +27,7 @@ def main():
     for k,v in (("rodas","casa_edranor"),("hallheim","casa_edranor")):
         altered=copy.deepcopy(d);altered["protectedPlaces"][k]=v;assert errors(altered),k
     altered=copy.deepcopy(d);altered["debt"]["EDD_01"]="CLOSED";assert errors(altered)
+    for key in ("redLinesMeetInNorth","politicalNorthClosureRequired","technicalClipEquivalentToPoliticalBoundary"):
+        altered=copy.deepcopy(d);altered["authorDirective20261114"][key]=True;assert errors(altered),key
     print("PASS E19-R0: 1 baseline + 14 negative tests; no fabricated cartography")
 if __name__=="__main__":main()

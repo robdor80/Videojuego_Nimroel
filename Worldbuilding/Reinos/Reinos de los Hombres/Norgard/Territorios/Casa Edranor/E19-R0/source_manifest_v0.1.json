@@ -21,7 +21,7 @@
     "hallheim": "outside_edranor"
   },
   "debt": {
-    "EDD_01": "OPEN",
+    "EDD_01": "OPEN_VECTOR_TRACING_NORTH_NONJOIN_RESOLVED",
     "EDD_02": "OPEN",
     "EDD_03": "OPEN",
     "EDD_06": "DESIGN_ONLY",
@@ -44,5 +44,21 @@
     "NO_NORTH_POLYGON",
     "RODAS_CROWN_ONLY",
     "HALLHEIM_OUTSIDE"
-  ]
+  ],
+  "authorDirective20261114": {
+    "source": "User-supplied screenshot image(20261114-015855).png",
+    "sha256": "d7ef8ce6236fddffd8c6184310727a239ebdaa8f5cfc6fcff15f9ff1b73d314a",
+    "screenshotPixels": [
+      2048,
+      1280
+    ],
+    "blueX": "RODAS_CROWN_AETHROS",
+    "redLines": "EDRANOR_TWO_SEPARATE_LATERAL_BOUNDARIES",
+    "redLinesMeetInNorth": false,
+    "politicalNorthClosureRequired": false,
+    "technicalClipEquivalentToPoliticalBoundary": false,
+    "furtherTraceOutsideVisibleCrop": "UNKNOWN",
+    "authorConfirmed": true,
+    "sourceBinaryCommittedToRepo": false
+  }
 }
