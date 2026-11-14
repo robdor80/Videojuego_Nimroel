@@ -357,7 +357,7 @@ def test_mutations(data, r4) -> int:
     bad(lambda d: d["coverage"]["providerNodeIds"].append("fake-provider"), "provider graph")
     bad(lambda d: d["coverage"].update({"travelTime":10}), "travel estimate")
     bad(lambda d: d["coverage"]["issues"][0].update({"status":"ACTIVE_PROVIDER"}), "coverage reified")
-    bad(lambda d: d["spatialAuthority"]["approvedDwellings"].append("house1"), "new house")
+    bad(lambda d: d["spatialAuthority"]["approvedBuildings"].append("house1"), "new house")
     bad(lambda d: d["worldState"]["persons"].append("npc1"), "new NPC")
     bad(lambda d: d["worldState"].update({"enabled":True}), "runtime enablement")
     bad(lambda d: d["evidenceContract"].update({"realSitePromotionsAllowedInR5":True}), "promotion")
