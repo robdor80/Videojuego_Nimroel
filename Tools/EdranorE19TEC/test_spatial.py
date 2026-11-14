@@ -180,7 +180,14 @@ class TestSpatial(unittest.TestCase):
     def test_water_cycle(self):
         def mutate(p):
             p["features"][3] = feat("lake", "river", "LineString",
-                                   [[5, 5], [3, 3]], receiverId="stream")
+                                   [[5, 5], [3, 3]], receiverId="stream",
+                                   hydrologyEvidence={
+                                       "basinId": "HC-01",
+                                       "sourceCause": "TEST_SLOPE_RUNOFF",
+                                       "gradientSurveyed": True,
+                                       "receiverSurveyed": True,
+                                       "seasonalityReviewed": True,
+                                       "surveyId": "TEST_ONLY"})
         self.reject(mutate)
 
     def test_boolean_coordinate_forbidden(self):
