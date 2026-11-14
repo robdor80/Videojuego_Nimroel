@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e19_r0",
+  "status": "SOURCE_REVIEW_ONLY_MATERIAL_BLOCKED",
+  "baseSha": "223f1e49adfbc73be6a80c6ce36e7aab506450c2",
+  "notRuntime": true,
+  "authorCrop": "1000024893.jpg",
+  "authorCropBytesVerified": false,
+  "generalMapHasHouseBorder": false,
+  "northBoundaryClosed": false,
+  "metricTransformValidated": false,
+  "mappedHydrology": false,
+  "physicalRoadGraphValidated": false,
+  "worldStateEntitiesCreated": 0,
+  "rejectedPR84Used": false,
+  "protectedPlaces": {
+    "dorth": "casa_edranor",
+    "lumina": "casa_edranor",
+    "karsath": "casa_edranor",
+    "rodas": "crown_aethros",
+    "hallheim": "outside_edranor"
+  },
+  "debt": {
+    "EDD_01": "REGIONAL_BOUNDARY_RULES_RESOLVED_GEOGRAPHIC_DETAILS_IN_DEVELOPMENT",
+    "EDD_02": "DEFERRED_TECHNICAL_GODOT_ONLY",
+    "EDD_03": "HYDROLOGIC_CAUSAL_MODEL_PENDING",
+    "EDD_06": "DESIGN_ONLY",
+    "EDD_07": "REGIONAL_ROAD_LOGIC_PENDING"
+  },
+  "authoritativeSources": [
+    "E00_MAPA_Y_LIMITES",
+    "E01_LIMITES_Y_VERTIENTES",
+    "NORGARD",
+    "Norgard_bosques",
+    "Norgard_montanas",
+    "Norgard_rios_y_lagos"
+  ],
+  "forbiddenSource": "E19_PR_84",
+  "geometry": [],
+  "roads": [],
+  "properties": [],
+  "decisions": [
+    "NO_FALSE_CRS",
+    "NO_NORTH_POLYGON",
+    "RODAS_CROWN_ONLY",
+    "HALLHEIM_OUTSIDE"
+  ],
+  "authorDirective20261114": {
+    "source": "User-supplied screenshot image(20261114-015855).png",
+    "sha256": "d7ef8ce6236fddffd8c6184310727a239ebdaa8f5cfc6fcff15f9ff1b73d314a",
+    "screenshotPixels": [
+      2048,
+      1280
+    ],
+    "blueX": "RODAS_CROWN_AETHROS",
+    "redLines": "APPROXIMATE_GUIDES_TO_NATURAL_BOUNDARIES",
+    "redLinesMeetInNorth": false,
+    "politicalNorthClosureRequired": false,
+    "technicalClipEquivalentToPoliticalBoundary": false,
+    "furtherTraceOutsideVisibleCrop": "UNKNOWN",
+    "authorConfirmed": true,
+    "sourceBinaryCommittedToRepo": false,
+    "redLineTraceIsLegalGeometry": false,
+    "geometryMustFollowNaturalFeatures": true,
+    "authorialClarification": "Valrik method: mountain or river features; Valkram west Darovan, Azurios east Galdren, south Aethros conventional except Lurien segment",
+    "slopeOwnershipRule": "EACH_SLOPE_BELONGS_TO_HOUSE_ON_SAME_SIDE_OF_MOUNTAIN_DIVIDE",
+    "territorialMethod": "VALRIK_CAUSAL_GEOGRAPHY_FIRST_NO_COORDINATE_PREREQUISITE",
+    "coordinatesRequiredToDevelopGeography": false,
+    "namedLandformsAndCausalNetworksFirst": true
+  },
+  "boundaryModel": {
+    "status": "AUTHOR_RULE_ESTABLISHED_GEOMETRY_NOT_MATERIALIZED",
+    "redSketchMode": "APPROXIMATE_GUIDE_NOT_BORDER",
+    "west": {
+      "neighbor": "casa_darovan",
+      "mountain": "montes_valkram",
+      "preciseDivide": "UNKNOWN",
+      "crestRule": "DIVIDE_BETWEEN_WESTERN_AND_EASTERN_SLOPES",
+      "westernSlopeOwner": "casa_darovan",
+      "easternSlopeOwner": "casa_edranor",
+      "ownershipResolvedByAuthor": true,
+      "slopePolicy": "DAROVAN_WEST_EDRANOR_EAST"
+    },
+    "east": {
+      "neighbor": "casa_galdren",
+      "mountain": "montes_azurios",
+      "preciseDivide": "UNKNOWN",
+      "crestRule": "DIVIDE_BETWEEN_WESTERN_AND_EASTERN_SLOPES",
+      "westernSlopeOwner": "casa_edranor",
+      "easternSlopeOwner": "casa_galdren",
+      "ownershipResolvedByAuthor": true,
+      "slopePolicy": "EDRANOR_WEST_GALDREN_EAST"
+    },
+    "south": {
+      "neighbor": "casa_aethros",
+      "rule": "CONVENTIONAL_EXCEPT_RIVER_SEGMENT",
+      "river": "rio_lurien",
+      "riverSegment": "UNKNOWN",
+      "nonRiverSegment": "ADMINISTRATIVE_NO_CONTINUOUS_PHYSICAL_BORDER"
+    },
+    "north": {
+      "redLinesMeet": false,
+      "artificialClosureAllowed": false,
+      "geometryBeyondCrop": "UNKNOWN"
+    },
+    "legalGeometryValidated": false,
+    "vertices": []
+  },
+  "geographicWorkflow": {
+    "version": "E19_R1_2026_11_14",
+    "precedent": "CASA_VALRIK_GEOGRAFIA_LOCAL",
+    "phase1": "CANONICAL_NATURAL_LANDMARKS",
+    "phase2": "NATURAL_REGIONS_CATCHMENTS_RIDGES_PASSES",
+    "phase3": "LOCAL_TOPONYMY_AND_NAMED_GEOGRAPHIC_RELATIONSHIPS",
+    "phase4": "SETTLEMENTS_WAYS_LAND_USE_ECONOMY_FROM_LANDSCAPE",
+    "phase5": "OPTIONAL_TECHNICAL_GODOT_SPATIALIZATION",
+    "metricCoordinatesPrerequisiteForRegionalGeography": false,
+    "mapPixelsPrerequisiteForRegionalGeography": false,
+    "regionalNamedFeaturesCanBeDefinedWithoutCoordinates": true,
+    "gameSceneTechnicalImplementationMayNeedCoordinates": true,
+    "noNorthernBorderJoin": true,
+    "northUnspecifiedBeyondSketch": true
+  }
+}

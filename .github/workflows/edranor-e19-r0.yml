@@ -1,0 +1,25 @@
+name: Edranor E19-R0 audit
+on:
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/E19-R0/**'
+      - 'Tools/EdranorE19R0/**'
+      - '.github/workflows/edranor-e19-r0.yml'
+  workflow_dispatch:
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/EdranorE19R0/validate.py
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/EdranorE19R0/validate.py
