@@ -152,6 +152,12 @@ def feature_evidence(f: dict, mode: str, registry: dict) -> None:
 def validate_packet(packet: dict, registry: dict | None = None) -> dict:
     require(packet.get("schemaVersion") == 1, "Version de paquete")
     require(nonempty(packet.get("sectorId")), "Sector sin ID estable")
+    contexts = packet.get("contextIds")
+    allowed_contexts = {"MF-%02d" % i for i in range(1, 8)}
+    require(type(contexts) is list and len(contexts) > 0 and
+            len(contexts) == len(set(contexts)) and
+            all(type(c) is str and c in allowed_contexts for c in contexts),
+            "Contexto de sector sin acreditar: MF-08/U7 excluidos")
     mode = packet.get("mode")
     require(mode in ("synthetic", "production"), "Modo obligatorio")
     production = mode == "production"
