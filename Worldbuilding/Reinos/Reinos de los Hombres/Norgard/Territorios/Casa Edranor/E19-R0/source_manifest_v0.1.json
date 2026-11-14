@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e19_r0",
+  "status": "SOURCE_REVIEW_ONLY_MATERIAL_BLOCKED",
+  "baseSha": "223f1e49adfbc73be6a80c6ce36e7aab506450c2",
+  "notRuntime": true,
+  "authorCrop": "1000024893.jpg",
+  "authorCropBytesVerified": false,
+  "generalMapHasHouseBorder": false,
+  "northBoundaryClosed": false,
+  "metricTransformValidated": false,
+  "mappedHydrology": false,
+  "physicalRoadGraphValidated": false,
+  "worldStateEntitiesCreated": 0,
+  "rejectedPR84Used": false,
+  "protectedPlaces": {
+    "dorth": "casa_edranor",
+    "lumina": "casa_edranor",
+    "karsath": "casa_edranor",
+    "rodas": "crown_aethros",
+    "hallheim": "outside_edranor"
+  },
+  "debt": {
+    "EDD_01": "OPEN",
+    "EDD_02": "OPEN",
+    "EDD_03": "OPEN",
+    "EDD_06": "DESIGN_ONLY",
+    "EDD_07": "OPEN"
+  },
+  "authoritativeSources": [
+    "E00_MAPA_Y_LIMITES",
+    "E01_LIMITES_Y_VERTIENTES",
+    "NORGARD",
+    "Norgard_bosques",
+    "Norgard_montanas",
+    "Norgard_rios_y_lagos"
+  ],
+  "forbiddenSource": "E19_PR_84",
+  "geometry": [],
+  "roads": [],
+  "properties": [],
+  "decisions": [
+    "NO_FALSE_CRS",
+    "NO_NORTH_POLYGON",
+    "RODAS_CROWN_ONLY",
+    "HALLHEIM_OUTSIDE"
+  ]
+}
