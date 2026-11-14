@@ -2,7 +2,7 @@
 El procedimiento toma de Treskal la secuencia de autoridad → huella → geografía → funciones → rutas → parcelario → consistencia → export, pero no transplanta coordenadas.
 
 ## R1 Perímetro
-**CORRECCIÓN AUTORAL PREVALENTE:** las líneas rojas son orientativas; NO se digitalizan como fronteras. Oeste contra Darovan: Montes Valkram. Este contra Galdren: Montes Azurios. Sur contra Aethros: demarcación administrativa salvo un tramo del gran río Lurien que desemboca en el Golfo. El norte NO se une. El trazado material deberá apoyarse en divisorias, valles, curso fluvial y demarcación cuando corresponda. Ver 06_CANON_FRONTERAS_NATURALES.md.
+**CORRECCIÓN AUTORAL PREVALENTE:** las líneas rojas son orientativas; NO se digitalizan como fronteras. Oeste contra Darovan: Montes Valkram. Este contra Galdren: Montes Azurios. Sur contra Aethros: demarcación administrativa salvo un tramo del gran río Lurien que desemboca en el Golfo. El norte NO se une. El trazado material seguirá las divisorias orográficas: **Valkram ladera occidental Darovan / oriental Edranor; Azurios ladera occidental Edranor / oriental Galdren**. Las casas de cada lado están FIJADAS por el autor. Al sur se seguirá el curso fluvial solo en el tramo confirmado del Lurien y la demarcación administrativa en el resto. Ver 06_CANON_FRONTERAS_NATURALES.md.
 
 ## R2 Escala
 Crear CRS local con origen/orientación/unidades; obtener **tres o más puntos no colineales** y referencias de distancia compatibles, transformación reversible y residuo/error publicado. La barra «400 millas» del mapa global no calibra por sí sola el recorte. NO cerrar EDD-02 antes.
@@ -17,7 +17,7 @@ Separar Gp (traza y nodos medidos), Gd (demanda) y Gq (preguntas). Cada arista G
 Un solo conjunto autoritativo de objetos con IDs permanentes, CRS explícito, GeoJSON y SVG técnico/operativo/lore concordantes, control de integridad, pruebas de reimportación y separación World State/arte/colisión/navegación.
 
 ## R6 Auditoría
-Pruebas de validez/no autocruce de dos líneas abiertas sin unión norte, separación de recorte técnico y frontera legal, consistencia jurídica donde haya datos, calibración/error, cuencas, rutas, propiedades, IDs y rechazo de fuentes descartadas. Evidencia de geometría B3 y runtime B4 se auditan aparte.
+Pruebas de la asignación de cada ladera a su Casa, representación de las divisorias naturales sin calco rojo ni unión norte, separación de recorte técnico y frontera legal, consistencia jurídica donde haya datos, calibración/error, cuencas, rutas, propiedades, IDs y rechazo de fuentes descartadas. Evidencia de geometría B3 y runtime B4 se auditan aparte.
 
 ### Decisión actual
 R1–R6 no superadas: recorte íntegro/definición norte, calibración, altimetría, drenaje, vías y planos siguen pendientes. Solo R0 (inventario y clasificación de evidencia) se ha trabajado. Las fuentes descartadas en PR #84 se excluyen en cualquier circunstancia.

@@ -62,7 +62,8 @@
     "sourceBinaryCommittedToRepo": false,
     "redLineTraceIsLegalGeometry": false,
     "geometryMustFollowNaturalFeatures": true,
-    "authorialClarification": "Valrik method: mountain or river features; Valkram west Darovan, Azurios east Galdren, south Aethros conventional except Lurien segment"
+    "authorialClarification": "Valrik method: mountain or river features; Valkram west Darovan, Azurios east Galdren, south Aethros conventional except Lurien segment",
+    "slopeOwnershipRule": "EACH_SLOPE_BELONGS_TO_HOUSE_ON_SAME_SIDE_OF_MOUNTAIN_DIVIDE"
   },
   "boundaryModel": {
     "status": "AUTHOR_RULE_ESTABLISHED_GEOMETRY_NOT_MATERIALIZED",
@@ -70,12 +71,20 @@
     "west": {
       "neighbor": "casa_darovan",
       "mountain": "montes_valkram",
-      "preciseDivide": "UNKNOWN"
+      "preciseDivide": "UNKNOWN",
+      "crestRule": "DIVIDE_BETWEEN_WESTERN_AND_EASTERN_SLOPES",
+      "westernSlopeOwner": "casa_darovan",
+      "easternSlopeOwner": "casa_edranor",
+      "ownershipResolvedByAuthor": true
     },
     "east": {
       "neighbor": "casa_galdren",
       "mountain": "montes_azurios",
-      "preciseDivide": "UNKNOWN"
+      "preciseDivide": "UNKNOWN",
+      "crestRule": "DIVIDE_BETWEEN_WESTERN_AND_EASTERN_SLOPES",
+      "westernSlopeOwner": "casa_edranor",
+      "easternSlopeOwner": "casa_galdren",
+      "ownershipResolvedByAuthor": true
     },
     "south": {
       "neighbor": "casa_aethros",

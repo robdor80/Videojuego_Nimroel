@@ -19,6 +19,9 @@ def errors(d):
     if b.get("redSketchMode")!="APPROXIMATE_GUIDE_NOT_BORDER" or b.get("legalGeometryValidated") is not False or b.get("vertices")!=[]:e.append("no red trace")
     if b.get("west",{}).get("neighbor")!="casa_darovan" or b.get("west",{}).get("mountain")!="montes_valkram":e.append("Valkram west Darovan")
     if b.get("east",{}).get("neighbor")!="casa_galdren" or b.get("east",{}).get("mountain")!="montes_azurios":e.append("Azurios east Galdren")
+    if (b.get("west",{}).get("westernSlopeOwner"),b.get("west",{}).get("easternSlopeOwner"))!=("casa_darovan","casa_edranor") or b.get("west",{}).get("ownershipResolvedByAuthor") is not True:e.append("Valkram slope ownership")
+    if (b.get("east",{}).get("westernSlopeOwner"),b.get("east",{}).get("easternSlopeOwner"))!=("casa_edranor","casa_galdren") or b.get("east",{}).get("ownershipResolvedByAuthor") is not True:e.append("Azurios slope ownership")
+    if d.get("authorDirective20261114",{}).get("slopeOwnershipRule")!="EACH_SLOPE_BELONGS_TO_HOUSE_ON_SAME_SIDE_OF_MOUNTAIN_DIVIDE":e.append("author slope rule")
     if b.get("south",{}).get("neighbor")!="casa_aethros" or b.get("south",{}).get("rule")!="CONVENTIONAL_EXCEPT_RIVER_SEGMENT" or b.get("south",{}).get("river")!="rio_lurien" or b.get("south",{}).get("riverSegment")!="UNKNOWN":e.append("Lurien segment not all south")
     if b.get("north",{}).get("redLinesMeet") is not False or b.get("north",{}).get("artificialClosureAllowed") is not False:e.append("no north join")
     if c.get("redLineTraceIsLegalGeometry") is not False or c.get("geometryMustFollowNaturalFeatures") is not True:e.append("geography first")
@@ -51,5 +54,11 @@ def main():
     ]
     for name,change in negatives:
         altered=copy.deepcopy(d);change(altered);assert errors(altered),name
-    print("PASS E19-R0: base + legacy negatives + 11 new physical-border negatives; no B3")
+    for side,field,bad in [("west","westernSlopeOwner","casa_edranor"),("west","easternSlopeOwner","casa_darovan"),("east","westernSlopeOwner","casa_galdren"),("east","easternSlopeOwner","casa_edranor")]:
+        altered=copy.deepcopy(d);altered["boundaryModel"][side][field]=bad
+        assert errors(altered),(side,field)
+    for side in ("west","east"):
+        altered=copy.deepcopy(d);altered["boundaryModel"][side]["ownershipResolvedByAuthor"]=False
+        assert errors(altered),side
+    print("PASS E19-R0: base + negative tests incl 6 slope mutations; no B3")
 if __name__=="__main__":main()
