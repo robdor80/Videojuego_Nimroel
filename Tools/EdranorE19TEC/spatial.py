@@ -306,9 +306,12 @@ def export_sector(packet: dict, registry: dict) -> dict:
     result = validate_packet(packet, registry)
     require(result["productionEligible"], "Prohibido exportar un test como territorio")
     ordered = sorted(packet["features"], key=lambda f: f["id"])
+    lab_only = any(e.get("reviewer") == "TEST_ONLY"
+                   for e in registry["evidence"])
     payload = {
         "schemaVersion": 1, "profile": "NIMROEL_GODOT_2D_SPATIAL",
-        "maturity": "SECTOR_B3_GEOMETRY_ONLY_NOT_RUNTIME_B4",
+        "maturity": ("LAB_GEOMETRY_NON_CANON_NOT_RUNTIME"
+                     if lab_only else "SECTOR_B3_GEOMETRY_ONLY_NOT_RUNTIME_B4"),
         "sectorId": packet["sectorId"],
         "contextIds": sorted(packet["contextIds"]),
         "spatialReference": packet["spatialReference"],
