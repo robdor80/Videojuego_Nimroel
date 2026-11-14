@@ -155,8 +155,8 @@ def validate_packet(packet: dict, registry: dict | None = None) -> dict:
     contexts = packet.get("contextIds")
     allowed_contexts = {"MF-%02d" % i for i in range(1, 8)}
     require(type(contexts) is list and len(contexts) > 0 and
-            len(contexts) == len(set(contexts)) and
-            all(type(c) is str and c in allowed_contexts for c in contexts),
+            all(type(c) is str and c in allowed_contexts for c in contexts) and
+            len(contexts) == len(set(contexts)),
             "Contexto de sector sin acreditar: MF-08/U7 excluidos")
     mode = packet.get("mode")
     require(mode in ("synthetic", "production"), "Modo obligatorio")
@@ -290,6 +290,7 @@ def export_sector(packet: dict, registry: dict) -> dict:
         "schemaVersion": 1, "profile": "NIMROEL_GODOT_2D_SPATIAL",
         "maturity": "SECTOR_B3_GEOMETRY_ONLY_NOT_RUNTIME_B4",
         "sectorId": packet["sectorId"],
+        "contextIds": sorted(packet["contextIds"]),
         "spatialReference": packet["spatialReference"],
         "authorization": packet["authorization"],
         "features": ordered,
