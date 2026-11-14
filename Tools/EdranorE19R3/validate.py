@@ -197,7 +197,7 @@ def failures(a: dict, hyd: dict, geo: dict) -> list[str]:
             "R5":"LAND_USE_ONLY_WITH_SOIL_CLIMATE_TENURE_WATER_AND_ACCESS",
             "R6":"VALRIK_PARITY_AUDIT_PENDING",
             "TEC":"GODOT_2D_WORLD_STATE_AFTER_B3"}, "handoff")
-    except (KeyError, TypeError, ValueError, AttributeError) as exc:
+    except (KeyError, TypeError, ValueError, AttributeError, IndexError) as exc:
         bad.append(f"malformed: {exc}")
     return bad
 
