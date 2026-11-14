@@ -1,0 +1,1180 @@
+{
+  "schemaVersion": 6,
+  "documentId": "edranor_e19_r5_occupation",
+  "phase": "E19-R5",
+  "date": "2026-11-14",
+  "status": "REGIONAL_CAUSAL_OCCUPATION_B2_NOT_RUNTIME",
+  "authority": "ASSISTANT_DELEGATED_DESIGN",
+  "precedent": "CASA_VALRIK_TRESKAL_SETTLEMENT_METHOD_NOT_LOCAL_CANON",
+  "parent": {
+    "phase": "E19-R4",
+    "headSha": "17664ebd54f9553d1a652c79f4a851c169da629c",
+    "documentId": "edranor_e19_r4_routes",
+    "schemaVersion": 5,
+    "rejectedPR84Used": false
+  },
+  "sources": [
+    {
+      "phase": "E06",
+      "role": "eligibility_and_archetypes",
+      "authority": "EDRANOR_B2"
+    },
+    {
+      "phase": "E07",
+      "role": "four_manual_anchors",
+      "authority": "EDRANOR_CANONICAL_DESIGN"
+    },
+    {
+      "phase": "E08",
+      "role": "household_and_census_edd04",
+      "authority": "NO_APPROVED_NUMBERS"
+    },
+    {
+      "phase": "E14",
+      "role": "six_use_classes_and_24_study_programs",
+      "authority": "STUDY_NOT_SETTLEMENTS"
+    },
+    {
+      "phase": "E19-R1",
+      "role": "eight_mf_contexts",
+      "authority": "NO_SITE_GEOMETRY"
+    },
+    {
+      "phase": "E19-R2",
+      "role": "seven_hc_families",
+      "authority": "NO_LOCAL_WATER_RIGHT"
+    },
+    {
+      "phase": "E19-R3",
+      "role": "ground_climate_forest",
+      "authority": "NO_VERIFIED_PARCELS"
+    },
+    {
+      "phase": "E19-R4",
+      "role": "three_graphs_gd_gq_gp",
+      "authority": "GP_EMPTY"
+    },
+    {
+      "phase": "Casa Valrik",
+      "role": "method_esqueleto_posibilidades_cobertura_generacion_persistencia",
+      "authority": "METHOD_ONLY"
+    }
+  ],
+  "governance": {
+    "west": "VALKRAM_WEST_DAROVAN_EAST_EDRANOR",
+    "east": "AZURIOS_WEST_EDRANOR_EAST_GALDREN",
+    "south": "AETHROS_ADMIN_EXCEPT_UNLOCATED_LURIEN_SECTION",
+    "northArtificialClosure": false,
+    "northSketchJoined": false,
+    "rodas": {
+      "kind": "ALDEA",
+      "jurisdiction": "crown_aethros",
+      "edranorTaxes": false,
+      "edranorCommand": false
+    },
+    "hallheim": "OUTSIDE_EDRANOR",
+    "bosqueAltoHarvest": "PERMIT_REQUIRED",
+    "bosqueReal": "crown_aethros",
+    "caleranThroughDorthConfirmed": false,
+    "karsathUrbanAntelaShoreConfirmed": false,
+    "noInternalCustoms": true,
+    "sourceHydrologySequence": [
+      "Valkram eastern slope",
+      "Río Lurien",
+      "Lago Antela",
+      "Río Lurien",
+      "Hallheim",
+      "Golfo de Norgard"
+    ]
+  },
+  "maturity": {
+    "b2Documentary": true,
+    "b3Mapped": false,
+    "b4Runtime": false,
+    "geometry": null,
+    "crs": null,
+    "areaHectares": null,
+    "actualSettlements": 0,
+    "actualVillages": 0,
+    "actualTowns": 0,
+    "actualVillas": 0,
+    "approvedParcels": 0,
+    "approvedDwellings": 0,
+    "approvedHouseholds": 0,
+    "actualResidents": 0,
+    "actualSeasonalWorkers": 0,
+    "actualProviders": 0,
+    "actualRoadAccesses": 0,
+    "worldStateEntities": 0,
+    "actualEmployment": 0
+  },
+  "population": {
+    "edd04": "OPEN",
+    "edranorCensus": null,
+    "ruralResidents": null,
+    "urbanResidents": null,
+    "householdSizeMean": null,
+    "actualDwellingCount": null,
+    "populationDensity": null,
+    "seasonalWorkerCount": null,
+    "borrowedValrikPopulationRanges": false,
+    "borrowedValrikHouseholdMean": false,
+    "residentCounter": "UNIQUE_PERSON_ID_WITH_ACTIVE_HABITUAL_RESIDENCE",
+    "presentCounter": "UNION_OF_UNIQUE_RESIDENTS_AND_VISITORS",
+    "seasonalWorkers": "SUBSET_OF_PRESENT_PEOPLE_NEVER_ADDITIVE"
+  },
+  "anchors": [
+    {
+      "id": "dorth",
+      "kind": "CITY",
+      "jurisdiction": "casa_edranor",
+      "design": "MANUAL_E07",
+      "proceduralSpawn": false,
+      "population": null,
+      "footprint": null
+    },
+    {
+      "id": "lumina",
+      "kind": "SMALL_CANONICAL_NUCLEUS",
+      "jurisdiction": "casa_edranor",
+      "design": "MANUAL_E07",
+      "proceduralSpawn": false,
+      "population": null,
+      "footprint": null
+    },
+    {
+      "id": "karsath",
+      "kind": "SMALL_CANONICAL_NUCLEUS",
+      "jurisdiction": "casa_edranor",
+      "design": "MANUAL_E07",
+      "proceduralSpawn": false,
+      "population": null,
+      "footprint": null
+    },
+    {
+      "id": "rodas",
+      "kind": "ALDEA",
+      "jurisdiction": "crown_aethros",
+      "design": "MANUAL_E07",
+      "proceduralSpawn": false,
+      "population": null,
+      "footprint": null
+    },
+    {
+      "id": "hallheim",
+      "kind": "OUTSIDE_SCOPE",
+      "jurisdiction": "crown_aethros",
+      "design": "EXTERNAL",
+      "proceduralSpawn": false,
+      "population": null,
+      "footprint": null
+    }
+  ],
+  "contexts": [
+    {
+      "id": "MF-01",
+      "name": "VALKRAM_EAST_SLOPE",
+      "hydrology": "HC-01",
+      "status": "STUDY_ONLY",
+      "nonEvaluable": false,
+      "approvedSites": 0,
+      "realSettlements": 0,
+      "approvedParcels": 0,
+      "geometry": null,
+      "habitableArea": null
+    },
+    {
+      "id": "MF-02",
+      "name": "VALKRAM_FOOTHILLS",
+      "hydrology": "HC-02",
+      "status": "STUDY_ONLY",
+      "nonEvaluable": false,
+      "approvedSites": 0,
+      "realSettlements": 0,
+      "approvedParcels": 0,
+      "geometry": null,
+      "habitableArea": null
+    },
+    {
+      "id": "MF-03",
+      "name": "KARSATH_ROLLING_GROUND",
+      "hydrology": "HC-03",
+      "status": "STUDY_ONLY",
+      "nonEvaluable": false,
+      "approvedSites": 0,
+      "realSettlements": 0,
+      "approvedParcels": 0,
+      "geometry": null,
+      "habitableArea": null
+    },
+    {
+      "id": "MF-04",
+      "name": "CENTRAL_VINEYARD_MOSAIC",
+      "hydrology": "HC-04",
+      "status": "STUDY_ONLY",
+      "nonEvaluable": false,
+      "approvedSites": 0,
+      "realSettlements": 0,
+      "approvedParcels": 0,
+      "geometry": null,
+      "habitableArea": null
+    },
+    {
+      "id": "MF-05",
+      "name": "LUMINA_HIGH_PLATEAU_BOSQUE_ALTO",
+      "hydrology": "HC-05",
+      "status": "STUDY_ONLY",
+      "nonEvaluable": false,
+      "approvedSites": 0,
+      "realSettlements": 0,
+      "approvedParcels": 0,
+      "geometry": null,
+      "habitableArea": null
+    },
+    {
+      "id": "MF-06",
+      "name": "DORTH_AZURIOS_WEST",
+      "hydrology": "HC-06",
+      "status": "STUDY_ONLY",
+      "nonEvaluable": false,
+      "approvedSites": 0,
+      "realSettlements": 0,
+      "approvedParcels": 0,
+      "geometry": null,
+      "habitableArea": null
+    },
+    {
+      "id": "MF-07",
+      "name": "COLD_RODAS_TRANSITION",
+      "hydrology": "HC-07",
+      "status": "STUDY_ONLY",
+      "nonEvaluable": false,
+      "approvedSites": 0,
+      "realSettlements": 0,
+      "approvedParcels": 0,
+      "geometry": null,
+      "habitableArea": null
+    },
+    {
+      "id": "MF-08",
+      "name": "UNCLOSED_FAR_NORTH",
+      "hydrology": null,
+      "status": "NON_EVALUABLE",
+      "nonEvaluable": true,
+      "approvedSites": 0,
+      "realSettlements": 0,
+      "approvedParcels": 0,
+      "geometry": null,
+      "habitableArea": null
+    }
+  ],
+  "useClasses": [
+    {
+      "code": "PERMANENT_RESIDENCE",
+      "requiredAdditionalEvidence": [
+        "perennial_water",
+        "residential_building",
+        "active_residence_id",
+        "heat_and_shelter",
+        "safe_evacuations"
+      ],
+      "actualPlaces": 0
+    },
+    {
+      "code": "SEASONAL_WORKSTATION",
+      "requiredAdditionalEvidence": [
+        "seasonal_water",
+        "work_permit",
+        "adequate_refuge",
+        "temporary_bed_and_waste_capacity",
+        "departure_plan"
+      ],
+      "actualPlaces": 0
+    },
+    {
+      "code": "AGRICULTURAL_USE",
+      "requiredAdditionalEvidence": [
+        "productive_soil",
+        "crop_right",
+        "crop_water_budget",
+        "climate_window",
+        "erosion_management"
+      ],
+      "actualPlaces": 0
+    },
+    {
+      "code": "FOREST_USE",
+      "requiredAdditionalEvidence": [
+        "forest_land_title",
+        "forest_management_permit",
+        "regeneration_obligation",
+        "extraction_quota",
+        "protected_area_clearance"
+      ],
+      "actualPlaces": 0
+    },
+    {
+      "code": "TEMPORARY_PASSAGE",
+      "requiredAdditionalEvidence": [
+        "legal_right_of_way",
+        "physical_continuity",
+        "mode_suitability",
+        "crossing_authority",
+        "seasonal_maintenance"
+      ],
+      "actualPlaces": 0
+    },
+    {
+      "code": "EXCLUDED",
+      "requiredAdditionalEvidence": [],
+      "actualPlaces": 0
+    }
+  ],
+  "settlementSkeletons": [
+    {
+      "kind": "ALDEA",
+      "status": "ABSTRACT_REQUIREMENTS_NOT_GENERATED",
+      "residentCommunityRequired": true,
+      "regionalCoverage": "CAN_BE_SHARED_IF_VERIFIED",
+      "fixedPopulation": null,
+      "mandatoryNamedBusinesses": [],
+      "realInstances": 0
+    },
+    {
+      "kind": "PUEBLO",
+      "status": "ABSTRACT_REQUIREMENTS_NOT_GENERATED",
+      "residentCommunityRequired": true,
+      "regionalCoverage": "PROVIDER_CENTRALITY_ONLY_IF_VERIFIED",
+      "fixedPopulation": null,
+      "mandatoryNamedBusinesses": [],
+      "realInstances": 0
+    },
+    {
+      "kind": "VILLA",
+      "status": "ABSTRACT_REQUIREMENTS_NOT_GENERATED",
+      "residentCommunityRequired": true,
+      "regionalCoverage": "REGIONAL_CAPACITY_AND_INSTITUTIONAL_AUTHORITY_REQUIRED",
+      "fixedPopulation": null,
+      "mandatoryNamedBusinesses": [],
+      "realInstances": 0
+    }
+  ],
+  "economicProfiles": [
+    {
+      "id": "EP-01",
+      "kind": "MIXED_RURAL",
+      "status": "TEMPLATE_NOT_INSTANCED"
+    },
+    {
+      "id": "EP-02",
+      "kind": "LICENSED_VITICULTURAL_AUXILIARY",
+      "status": "TEMPLATE_NOT_INSTANCED"
+    },
+    {
+      "id": "EP-03",
+      "kind": "LICENSED_FORESTRY",
+      "status": "TEMPLATE_NOT_INSTANCED"
+    },
+    {
+      "id": "EP-04",
+      "kind": "SEASONAL_WORK_AND_REFUGE",
+      "status": "TEMPLATE_NOT_INSTANCED"
+    }
+  ],
+  "studies": [
+    {
+      "id": "OS-01",
+      "name": "Valkram oriental: paso pendiente de topografía y servidumbre",
+      "contextId": "MF-01",
+      "useClass": "TEMPORARY_PASSAGE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-02",
+      "name": "Valkram oriental: apoyo temporal de montaña",
+      "contextId": "MF-01",
+      "useClass": "SEASONAL_WORKSTATION",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-03",
+      "name": "Piedemonte: vivienda en rellano estable",
+      "contextId": "MF-02",
+      "useClass": "PERMANENT_RESIDENCE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-04",
+      "name": "Piedemonte: suelo bajo aprovechamiento condicionado",
+      "contextId": "MF-02",
+      "useClass": "AGRICULTURAL_USE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-05",
+      "name": "Piedemonte: estancia agraria temporal",
+      "contextId": "MF-02",
+      "useClass": "SEASONAL_WORKSTATION",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-06",
+      "name": "Rellanos Karsath: viña selectiva",
+      "contextId": "MF-03",
+      "useClass": "AGRICULTURAL_USE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-07",
+      "name": "Rellanos Karsath: vivienda aislada condicionada",
+      "contextId": "MF-03",
+      "useClass": "PERMANENT_RESIDENCE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-08",
+      "name": "Karsath: apoyo de cosecha escasa",
+      "contextId": "MF-03",
+      "useClass": "SEASONAL_WORKSTATION",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-09",
+      "name": "Campiña: residencia rural justificada",
+      "contextId": "MF-04",
+      "useClass": "PERMANENT_RESIDENCE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-10",
+      "name": "Campiña: rotación alimentaria",
+      "contextId": "MF-04",
+      "useClass": "AGRICULTURAL_USE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-11",
+      "name": "Campiña: viñedo en mosaico discontinuo",
+      "contextId": "MF-04",
+      "useClass": "AGRICULTURAL_USE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-12",
+      "name": "Campiña: camas temporales de vendimia",
+      "contextId": "MF-04",
+      "useClass": "SEASONAL_WORKSTATION",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-13",
+      "name": "Lumina: claro exterior legal sin tala",
+      "contextId": "MF-05",
+      "useClass": "PERMANENT_RESIDENCE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-14",
+      "name": "Bosque Alto: operación forestal licenciada",
+      "contextId": "MF-05",
+      "useClass": "FOREST_USE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-15",
+      "name": "Meseta: apoyo autorizado de oficios",
+      "contextId": "MF-05",
+      "useClass": "SEASONAL_WORKSTATION",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-16",
+      "name": "Dorth: residencia periférica sin nuevo barrio",
+      "contextId": "MF-06",
+      "useClass": "PERMANENT_RESIDENCE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-17",
+      "name": "Dorth: viña de tinto con derecho acreditado",
+      "contextId": "MF-06",
+      "useClass": "AGRICULTURAL_USE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-18",
+      "name": "Azurios occidental: gestión forestal sin Bosque Real",
+      "contextId": "MF-06",
+      "useClass": "FOREST_USE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    },
+    {
+      "id": "OS-19",
+      "name": "Transición fría: habitación con invierno sostenible",
+      "contextId": "MF-07",
+      "useClass": "PERMANENT_RESIDENCE",
+      "state": "STUDY_ONLY_NOT_A_PLACE",
+      "studyOnly": true,
+      "actualSettlement": false,
+      "actualParcel": false,
+      "actualResidents": 0,
+      "actualDwellings": 0,
+      "actualEmployees": 0,
+      "approvedLocationRef": null,
+      "approvedPlotRef": null,
+      "approvedPhysicalGpRef": null,
+      "coordinates": null,
+      "area": null,
+      "yearRoundWaterRef": null,
+      "legalTenureRef": null,
+      "worldStateId": null,
+      "possibleServiceProviderRef": null
+    }
+  ],
+  "evidenceContract": {
+    "requiredCommonGates": [
+      "jurisdiction_proven",
+      "parcel_geometry_proven",
+      "land_tenure_proven",
+      "ground_stability_proven",
+      "hazard_acceptability_proven",
+      "potable_water_proven",
+      "sanitation_proven",
+      "food_or_supply_proven",
+      "certified_gp_access_proven",
+      "capacity_beds_and_resources_proven",
+      "seasonal_safety_proven",
+      "ecological_compatibility_proven",
+      "competent_authority_approval_proven"
+    ],
+    "perUseAdditionalGates": {
+      "PERMANENT_RESIDENCE": [
+        "perennial_water",
+        "residential_building",
+        "active_residence_id",
+        "heat_and_shelter",
+        "safe_evacuations"
+      ],
+      "SEASONAL_WORKSTATION": [
+        "seasonal_water",
+        "work_permit",
+        "adequate_refuge",
+        "temporary_bed_and_waste_capacity",
+        "departure_plan"
+      ],
+      "AGRICULTURAL_USE": [
+        "productive_soil",
+        "crop_right",
+        "crop_water_budget",
+        "climate_window",
+        "erosion_management"
+      ],
+      "FOREST_USE": [
+        "forest_land_title",
+        "forest_management_permit",
+        "regeneration_obligation",
+        "extraction_quota",
+        "protected_area_clearance"
+      ],
+      "TEMPORARY_PASSAGE": [
+        "legal_right_of_way",
+        "physical_continuity",
+        "mode_suitability",
+        "crossing_authority",
+        "seasonal_maintenance"
+      ],
+      "EXCLUDED": []
+    },
+    "missingEvidence": "PENDING_EVIDENCE",
+    "legalOrHazardDenial": "INELIGIBLE",
+    "unknownNorthernMembership": "NON_EVALUABLE",
+    "syntheticAllTrue": "ELIGIBLE_IF_VERIFIED_NOT_MATERIALIZED",
+    "realSitePromotionsAllowedInR5": false,
+    "requiresCertifiedGpForAccessibleSettlements": true,
+    "noAveragingOfEssentialCapacities": true
+  },
+  "coverage": {
+    "demandGraph": "SD_HYPOTHESIS_ONLY",
+    "coverageQuestionGraph": "SQ_HYPOTHESIS_ONLY",
+    "verifiedProviderGraph": "SP_EMPTY",
+    "providerNodeIds": [],
+    "physicalServiceEdges": [],
+    "actualProviderCount": 0,
+    "calculatedServiceRadius": null,
+    "travelTime": null,
+    "issues": [
+      {
+        "id": "SC-01",
+        "name": "HOUSEHOLD_POTABLE_WATER",
+        "status": "NEED_NOT_PROVIDER"
+      },
+      {
+        "id": "SC-02",
+        "name": "HOUSEHOLD_FOOD_AND_STORAGE",
+        "status": "NEED_NOT_PROVIDER"
+      },
+      {
+        "id": "SC-03",
+        "name": "RURAL_TOOLS_REPAIR",
+        "status": "NEED_NOT_PROVIDER"
+      },
+      {
+        "id": "SC-04",
+        "name": "MEDICAL_AND_CARE",
+        "status": "NEED_NOT_PROVIDER"
+      },
+      {
+        "id": "SC-05",
+        "name": "VINTAGE_WORK_AND_BEDS",
+        "status": "NEED_NOT_PROVIDER"
+      },
+      {
+        "id": "SC-06",
+        "name": "LUMINA_ANNUAL_FAIR_VISITORS",
+        "status": "NEED_NOT_PROVIDER"
+      },
+      {
+        "id": "SC-07",
+        "name": "DORTH_RED_WINE_CUSTODY",
+        "status": "NEED_NOT_PROVIDER"
+      },
+      {
+        "id": "SC-08",
+        "name": "KARSATH_RARE_WINE",
+        "status": "NEED_NOT_PROVIDER"
+      },
+      {
+        "id": "SC-09",
+        "name": "BOSQUE_ALTO_PERMITTED_TONNELLERY_WOOD",
+        "status": "NEED_NOT_PROVIDER"
+      },
+      {
+        "id": "SC-10",
+        "name": "NORTH_HEAT_AND_WINTER_SUPPLY",
+        "status": "NEED_NOT_PROVIDER"
+      }
+    ]
+  },
+  "spatialAuthority": {
+    "approvedFootprints": [],
+    "approvedOwnershipTitles": [],
+    "approvedWaterIntakes": [],
+    "approvedSites": [],
+    "approvedBuildings": [],
+    "approvedFields": [],
+    "approvedIndustrialPlants": [],
+    "approvedVillages": [],
+    "approvedTowns": [],
+    "approvedVillas": [],
+    "approvedTravelEdges": [],
+    "approvedBridgeAssets": [],
+    "approvedPortAssets": [],
+    "approvedUrbanExtensions": [],
+    "approvedCrownTransfers": []
+  },
+  "worldState": {
+    "enabled": false,
+    "settlementInstances": [],
+    "dwellingInstances": [],
+    "persons": [],
+    "households": [],
+    "residences": [],
+    "providers": [],
+    "jobs": [],
+    "inventories": [],
+    "currentSeed": null
+  },
+  "promotionGates": [
+    "GEOMETRY_AND_CRS",
+    "JURISDICTION_AND_PROTECTION",
+    "LAND_TITLE_AND_PERMISSIONS",
+    "SOIL_STABILITY_HAZARD",
+    "WATER_POTABILITY_AND_SANITATION",
+    "CERTIFIED_GP_ACCESS",
+    "CAPACITY_AND_HOUSING",
+    "ECONOMIC_AND_SERVICE_BALANCE",
+    "COMPETENT_APPROVAL",
+    "IDENTITY_AND_PROVENANCE",
+    "B3_INSPECTION",
+    "B4_CORE_AND_GODOT_INTEGRATION_TESTS"
+  ],
+  "adversarialCases": [
+    {
+      "id": "NV-01",
+      "code": "VALRIK_VILLAGE_POPULATION_IMPORT",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-02",
+      "code": "VALRIK_TOWN_VILLA_POPULATION_IMPORT",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-03",
+      "code": "VALRIK_HOUSEHOLD_MEAN_IMPORT",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-04",
+      "code": "VALRIK_BASIC_SMITH_TAVERN_IMPORT",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-05",
+      "code": "TOWN_UPGRADE_FOR_COVERAGE",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-06",
+      "code": "SETTLEMENT_SPAWN_FROM_CT",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-07",
+      "code": "ROUTE_Q_AS_PHYSICAL",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-08",
+      "code": "MILL_BRIDGE_WELL_WITHOUT_WATER",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-09",
+      "code": "HS_AS_POTABLE_SOURCE",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-10",
+      "code": "OS_AS_ACTUAL_SETTLEMENT",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-11",
+      "code": "E14_PROGRAM_AS_LOCATION",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-12",
+      "code": "VINEYARD_FROM_MAP_COLOR",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-13",
+      "code": "BOREAL_WINE",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-14",
+      "code": "MF08_SETTLEMENT",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-15",
+      "code": "NORTH_SKETCH_JOIN",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-16",
+      "code": "VALKRAM_WRONG_SIDE",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-17",
+      "code": "AZURIOS_WRONG_SIDE",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-18",
+      "code": "CROWN_FOREST_EDRANOR",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-19",
+      "code": "BOSQUE_ALTO_UNLICENSED",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-20",
+      "code": "RODAS_EDRANOR_TAX_OR_VILLA",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-21",
+      "code": "RODAS_DRUID_HOUSE_AS_TEMPLE",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-22",
+      "code": "EDRANOR_GUARD_IN_RODAS",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-23",
+      "code": "KARSATH_PORT_ON_ANTELA",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-24",
+      "code": "CALERAN_THROUGH_DORTH",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-25",
+      "code": "SEASONAL_WORKER_DOUBLE_CENSUS",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-26",
+      "code": "HOME_WORKSHOP_DOUBLE_HOUSING",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-27",
+      "code": "TENANT_AS_OWNER",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-28",
+      "code": "CAPACITY_GENERATED_FROM_DEMAND",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-29",
+      "code": "REROLL_ON_REVISIT",
+      "expected": "REJECT"
+    },
+    {
+      "id": "NV-30",
+      "code": "B3_B4_FALSE_CLAIM",
+      "expected": "REJECT"
+    }
+  ],
+  "debts": [
+    {
+      "id": "EDD-01",
+      "state": "OPEN",
+      "need": "NORTHERN_LIMITS"
+    },
+    {
+      "id": "EDD-02",
+      "state": "OPEN",
+      "need": "MAPPED_FOOTPRINTS_AND_SITES"
+    },
+    {
+      "id": "EDD-03",
+      "state": "OPEN",
+      "need": "LOCAL_POTABLE_WATER_AND_RECEPTORS"
+    },
+    {
+      "id": "EDD-04",
+      "state": "OPEN",
+      "need": "CENSUS_AND_HOUSEHOLDS"
+    },
+    {
+      "id": "EDD-07",
+      "state": "OPEN",
+      "need": "REAL_GP_ROADS_EASEMENTS_RIGHTS"
+    }
+  ],
+  "hardGuards": {
+    "valrikPopulationNumbersImported": false,
+    "valrikUniversalVillageServicesImported": false,
+    "edd04PopulationInvented": false,
+    "edd07RoadInvented": false,
+    "edd03WaterInvented": false,
+    "northernAreaSettled": false,
+    "northSketchJoined": false,
+    "crownRodasTaken": false,
+    "crownForestTaken": false,
+    "forestHarvestWithoutPermit": false,
+    "karsathUrbanPortInvented": false,
+    "dorthCaleranInvented": false,
+    "temporaryWorkersAddedToResidentCensus": false,
+    "worldStateGenerated": false,
+    "approvedNewSettlementCount": 0
+  },
+  "evidencePriority": [
+    "AUTHOR_CANON_AND_JURISDICTION",
+    "EDRANOR_E06_E07_E08_E14",
+    "EDRANOR_E19_R0_R4",
+    "VALRIK_METHOD_ONLY",
+    "STUDY_HYPOTHESIS_NOT_EVIDENCE"
+  ],
+  "handoff": {
+    "next": "E19-R6",
+    "technical": "E19-TEC",
+    "worldState": "E26_E28_AND_CORERPG",
+    "noMainOrParentMutations": true
+  }
+}
