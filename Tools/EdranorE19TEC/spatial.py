@@ -225,6 +225,11 @@ def validate_packet(packet: dict, registry: dict | None = None) -> dict:
             require(f.get("westOwner") == west and f.get("eastOwner") == east,
                     "Laderas inversas")
         if f["kind"] == "settlement":
+            siting = f.get("sitingEvidence")
+            require(type(siting) is dict and all(siting.get(k) is True for k in (
+                "waterAvailabilityVerified", "sanitationVerified",
+                "certifiedGpAccess", "landTenureVerified", "hazardsReviewed")),
+                "Asentamiento sin pruebas B3 de habitabilidad, acceso y derecho")
             name = str(f.get("name", "")).lower()
             require(name != "hallheim", "Hallheim externo")
             if name == "rodas":
@@ -241,6 +246,12 @@ def validate_packet(packet: dict, registry: dict | None = None) -> dict:
                 require(f.get("harvestPermitRequired") is True,
                         "Bosque Alto requiere permiso")
         if f["kind"] == "road":
+            terrain = f.get("terrainEvidence")
+            require(type(terrain) is dict and
+                    all(terrain.get(k) is True for k in (
+                        "slopeSurveyed", "soilSurveyed", "servitudeVerified")) and
+                    nonempty(terrain.get("inspectionId")),
+                    "Camino sin pendiente, suelo o servidumbre acreditados")
             access = f.get("access")
             require(type(access) is dict and all(access.get(k) is True for k in
                     ("surveyed", "legal", "maintained", "waterCrossingsSurveyed")),
@@ -249,6 +260,15 @@ def validate_packet(packet: dict, registry: dict | None = None) -> dict:
                     math.isfinite(access["capacity"]) and access["capacity"] > 0,
                     "Capacidad de paso no probada")
         if f["kind"] == "river":
+            water = f.get("hydrologyEvidence")
+            require(type(water) is dict and
+                    nonempty(water.get("basinId")) and
+                    nonempty(water.get("sourceCause")) and
+                    all(water.get(k) is True for k in (
+                        "gradientSurveyed", "receiverSurveyed",
+                        "seasonalityReviewed")) and
+                    nonempty(water.get("surveyId")),
+                    "Curso fluvial sin cuenca/gradiente/receptor probados")
             require(nonempty(f.get("receiverId")) and
                     f["receiverId"] != f["id"], "Rio sin receptor valido")
     index = {f["id"]: f for f in feats}
