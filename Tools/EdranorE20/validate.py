@@ -126,8 +126,12 @@ def verify(g: dict, v: dict, e18: dict, e07: dict) -> None:
     require(all(x.get("achieved") is False and x.get("requirement") and
                 x.get("scope") and x.get("blocks") for x in gates),
             "ninguna puerta P20 puede declararse superada en este preflight")
-    require(set(x for y in gates for x in y["blocks"]) == {"B3", "B4"},
-            "distinción entre B3 y B4")
+    expected_blocks = {f"P20-{n:02d}": ["B3"] for n in range(1, 17)}
+    expected_blocks["P20-11"] = ["B4"]
+    expected_blocks["P20-14"] = ["B4"]
+    expected_blocks["P20-16"] = ["B3", "B4"]
+    require(all(x["blocks"] == expected_blocks[x["id"]] for x in gates),
+            "distinción individual B3/B4 por cada puerta")
     require(g["nextPhases"]["E19_R"] == "REQUIRED_NEW_WORK_NOT_E19_84" and
             g["nextPhases"]["E20_Dorth"] == "P00_ONLY_NOT_ACCEPTED" and
             g["nextPhases"]["E30_PLUS"] == "CONDITIONAL_NO_FORCED_END",
