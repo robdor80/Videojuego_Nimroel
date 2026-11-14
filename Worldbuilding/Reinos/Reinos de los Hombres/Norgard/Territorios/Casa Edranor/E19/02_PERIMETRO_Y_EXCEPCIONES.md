@@ -8,10 +8,15 @@ Orden de autoridad: Nimroel Core → Norgard Defaults → Casa Edranor (delegaci
 | Karsath | oeste relativo de Lumina y Dorth; vino selecto; al norte de Antela | Casa Edranor | UNKNOWN |
 | Lumina | meseta de Bosque Alto; blancos y feria anual | Casa Edranor | UNKNOWN |
 | Dorth | sede; tintos; borde forestal Azurios | Casa Edranor | UNKNOWN |
-| Rodas | **ALDEA** de la Corona, contexto del perímetro Edranor; X en recorte | **Corona Aethros**, también impuestos, berserkers y mando | UNKNOWN |
+| Rodas | **ALDEA** dentro del territorio geográfico de Edranor; X en recorte | **Casa Regente Aethros**: convocatoria berserker ratificada; administración/fiscalidad regia previas E07/E09 | UNKNOWN |
 | Hallheim | fuera del perímetro Edranor aunque roce dibujo | Corona Aethros | UNKNOWN |
 
 No hay derecho de tala automática en Bosque Alto, ni propiedad íntegra de Azurios o Bosque Real, ni muelle urbano certificado en Karsath, ni aduana interior de Casa. El **Paso de Vareth** no se ubica aquí.
+
+## Ratificación del autor (14/11/2026)
+La delimitación **semántica** ha quedado ratificada: sin frontera política intermedia al norte, hasta el norte geográfico de Norgard; vertiente **oriental de Valkram** para Edranor al oeste; vertiente **occidental de Azurios** para Edranor al este; sur aproximadamente por el curso fluvial indicado en rojo frente a Aethros. Hallheim es la capital de Norgard y sede de la Casa Aethros **fuera** de Edranor.
+
+**Rodas está territorialmente en Edranor.** El autor precisa que por «control» de Aethros se refiere en particular al derecho de **convocar a los berserkers**; no se trata de una frontera territorial nueva. El contrato conserva la administración regia documentada en E07/E09 como **estado previo**, y separa explícitamente la facultad militar ratificada hoy. No se reinterpretan impuestos ni jurisdicción civil sin otra decisión autoral. Fuente detallada: [Ratificación autoral](07_RATIFICACION_AUTORAL_LIMITES_RODAS.md).
 
 ## Geometría pendiente: algoritmo de aceptación
 1. Reproducir mapa autoral íntegro o acta con vértices ratificados, conservar hash y sistema de imagen.

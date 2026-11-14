@@ -336,5 +336,45 @@
     "ED19-DEC-04",
     "ED19-DEC-05"
   ],
-  "nextAction": "Acquire author complete red boundary source or author-ratified vertices; calibrate with controls; keep phase open."
+  "nextAction": "Acquire author complete red boundary source or author-ratified vertices; calibrate with controls; keep phase open.",
+  "authorClarifications": {
+    "authority": "AUTHOR_EXPLICIT_2026_11_14",
+    "source": "Conversation E19, annotated Nimroel (2).jpg screenshot and two express confirmations",
+    "semanticTerritorialLimitsConfirmed": true,
+    "north": {
+      "noIntermediatePoliticalBorder": true,
+      "extendsToNorthernExtentOfNorgard": true,
+      "preciseGeometryKnown": false
+    },
+    "west": {
+      "mountainRange": "VALKRAM",
+      "edranorSlope": "EASTERN",
+      "dividingRidgeMapped": false
+    },
+    "east": {
+      "mountainRange": "AZURIOS",
+      "edranorSlope": "WESTERN",
+      "dividingRidgeMapped": false
+    },
+    "south": {
+      "adjoiningHouse": "AETHROS",
+      "approximatelyFollowingRiverCorridor": true,
+      "riverIdentityCertified": false,
+      "exactPolylineMapped": false
+    },
+    "hallheim": {
+      "outsideEdranor": true,
+      "capitalOf": "NORGARD",
+      "seatOfHouse": "AETHROS"
+    },
+    "rodas": {
+      "territorialLocation": "CASA_EDRANOR",
+      "settlementClass": "VILLAGE",
+      "berserkerSummoningAuthority": "CASA_REGENTE_AETHROS",
+      "edranorMaySummonBerserkers": false,
+      "otherCivilFiscalPowersNewlyRatified": false,
+      "legacyRegimeFromE07E09Preserved": true
+    },
+    "northSemanticResolvedButEdd01GeometryOpen": true
+  }
 }

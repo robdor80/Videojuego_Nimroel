@@ -20,7 +20,7 @@ UNITS = ["edr_e01_west_valkram_interface","edr_e01_karsath_central_west","edr_e0
 ANCHORS = ["dorth", "lumina", "karsath", "rodas", "hallheim"]
 DOCS = ["README.md", "01_FUENTES_PROCEDENCIA.md", "02_PERIMETRO_Y_EXCEPCIONES.md",
         "03_CRS_CALIBRACION_Y_GODOT.md", "04_RELIEVE_AGUA_Y_VIAS.md",
-        "05_CAPAS_Y_EXPORTACION.md", "06_ACTA_Y_TRASPASO.md"]
+        "05_CAPAS_Y_EXPORTACION.md", "06_ACTA_Y_TRASPASO.md", "07_RATIFICACION_AUTORAL_LIMITES_RODAS.md"]
 
 class CartographyError(ValueError):
     pass
@@ -118,6 +118,29 @@ def validate(a, e13, e16, e18, check_bytes=True, check_docs=True):
     need(a.get("safeOutputs") == {"provenanceLedger":True,"nonMetricSchematic":True,
           "metricPolygon":False,"geojsonExport":False,"physicalNavigation":False,
           "godotGameWorld":False}, "misleading exports")
+    need(a.get("authorClarifications") == {
+        "authority":"AUTHOR_EXPLICIT_2026_11_14",
+        "source":"Conversation E19, annotated Nimroel (2).jpg screenshot and two express confirmations",
+        "semanticTerritorialLimitsConfirmed":True,
+        "north":{"noIntermediatePoliticalBorder":True,
+                 "extendsToNorthernExtentOfNorgard":True,
+                 "preciseGeometryKnown":False},
+        "west":{"mountainRange":"VALKRAM","edranorSlope":"EASTERN",
+                "dividingRidgeMapped":False},
+        "east":{"mountainRange":"AZURIOS","edranorSlope":"WESTERN",
+                "dividingRidgeMapped":False},
+        "south":{"adjoiningHouse":"AETHROS",
+                 "approximatelyFollowingRiverCorridor":True,
+                 "riverIdentityCertified":False,"exactPolylineMapped":False},
+        "hallheim":{"outsideEdranor":True,"capitalOf":"NORGARD",
+                    "seatOfHouse":"AETHROS"},
+        "rodas":{"territorialLocation":"CASA_EDRANOR",
+                 "settlementClass":"VILLAGE",
+                 "berserkerSummoningAuthority":"CASA_REGENTE_AETHROS",
+                 "edranorMaySummonBerserkers":False,
+                 "otherCivilFiscalPowersNewlyRatified":False,
+                 "legacyRegimeFromE07E09Preserved":True},
+        "northSemanticResolvedButEdd01GeometryOpen":True}, "author confirmation / competences")
     need(a.get("decisionIds") == [f"ED19-DEC-{i:02d}" for i in range(1,6)],
          "design decision register")
     need(e18["gates"]["E19"]["metricGeometryReady"] is False, "E18 material gate changed")
@@ -192,7 +215,14 @@ def main():
       lambda x: x["hydrology"]["localRiverSegments"].append({"name":"fake"}),
       lambda x: x["routes"]["physicalEdges"].append({"from":"dorth","to":"lumina"}),
       lambda x: x["debtLedger"][0].__setitem__("status","RESOLVED"),
-      lambda x: x["safeOutputs"].__setitem__("godotGameWorld",True)
+      lambda x: x["safeOutputs"].__setitem__("godotGameWorld",True),
+      lambda x: x["authorClarifications"]["north"].__setitem__("preciseGeometryKnown",True),
+      lambda x: x["authorClarifications"]["west"].__setitem__("edranorSlope","WESTERN"),
+      lambda x: x["authorClarifications"]["east"].__setitem__("edranorSlope","EASTERN"),
+      lambda x: x["authorClarifications"]["rodas"].__setitem__("territorialLocation","CASA_AETHROS"),
+      lambda x: x["authorClarifications"]["rodas"].__setitem__("berserkerSummoningAuthority","CASA_EDRANOR"),
+      lambda x: x["authorClarifications"]["hallheim"].__setitem__("outsideEdranor",False),
+      lambda x: x["authorClarifications"]["south"].__setitem__("riverIdentityCertified",True)
     ]
     for i,change in enumerate(mutations,1):
         candidate=copy.deepcopy(a)

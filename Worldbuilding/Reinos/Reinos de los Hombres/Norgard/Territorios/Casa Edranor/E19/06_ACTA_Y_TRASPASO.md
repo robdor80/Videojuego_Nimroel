@@ -11,6 +11,9 @@
 
 **Autoridad:** ASSISTANT_DELEGATED_DESIGN; no se reforman canon, sucesión, jurisdicción ni hechos históricos.
 
+## Ratificación autoral posterior a la apertura E19
+Constan cinco decisiones `ED19-AUT-01..05` sobre norte, vertientes, sur aproximado, Hallheim y convocatoria berserker de Rodas; se incorporan en [07_RATIFICACION_AUTORAL_LIMITES_RODAS.md](07_RATIFICACION_AUTORAL_LIMITES_RODAS.md). Esto **resuelve la ambigüedad cualitativa del norte**, pero no cierra EDD-01 como polígono ni EDD-02 como escala. La ratificación es del autor; la arquitectura de contrato sigue siendo diseño delegado.
+
 ## Entregables con evidencia
 - Archivo mundial en repositorio y subida aportada **idénticos bit a bit**: blob SHA, sha256 y longitud verificados.
 - Fichas de E00/E01/E02/E13/E16/E18 cruzadas.
@@ -31,4 +34,4 @@ No se libera geometría jugable hasta EDD-01/02. Ninguna prueba verde de PR sign
 ## Estado de aprobación
 **PREFLIGHT_DOCUMENTAL_ENTREGADO / E19_CARTOGRAFIA_COMPLETA_PENDIENTE.** Mantener Draft hasta incorporar y auditar material; puede avanzarse en el estudio literario E20–E24 **con limitación expresa**, no en posicionamiento geográfico exacto ni colocación de edificios. E28 integrará runtime cuando esté disponible.
 
-La fuente más importante para reabrir la puerta es **el mapa autoral Edranor sin recortar, con los dos extremos superiores de la línea roja visibles**, o un conjunto explícitamente ratificado de vértices y cierre.
+El norte ha sido explicado por el autor como alcance hasta el norte del reino, sin una frontera interior. Para certificar el **polígono**, todavía hace falta recuperar un contorno trazable completo del territorio con divisorias y frontera meridional revisadas, o vértices ratificados con calibración; no basta usar el borde superior de la captura.
