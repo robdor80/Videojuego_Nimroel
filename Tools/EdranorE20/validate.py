@@ -150,6 +150,7 @@ def verify(g: dict, v: dict, e18: dict, e07: dict) -> None:
         "E20/00_AUDITORIA_COMPARADA_VALRIK_EDRANOR.md",
         "E20/01_CONTRATO_DE_CALIDAD_Y_ACEPTACION_DORTH.md",
         "E20/02_REPLANIFICACION_SIN_CIERRE_FORZADO.md",
+        "E20/03_CRUCE_CAPACIDADES_TRESKAL_00_99.md",
     ]
     require(g["docs"] == docs and all((E / p).is_file() for p in docs),
             "documentación de preflight ausente")
