@@ -1,0 +1,45 @@
+name: Edranor E20-P00 Valrik parity preflight (not E20 completion)
+
+on:
+  push:
+    branches:
+      - 'audit/edranor-e20-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/E20/**'
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/Datos operativos/edranor_e20_parity_gate_v0.1.json'
+      - 'Tools/EdranorE20/**'
+      - '.github/workflows/edranor-e20-preflight.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: E20-P00 evidence check / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    env:
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12.10'
+      - name: Auditar integridad de E18
+        run: python Tools/EdranorE18/validate.py
+      - name: Validar E20-P00 y 16 casos adversariales
+        run: python Tools/EdranorE20/validate.py
+      - name: Prohibir artefactos E19 descartados en la rama
+        shell: bash
+        run: |
+          if [ -e "Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/E19" ]; then
+            echo "ERROR: E19 anterior fue descartada; no integrar artefactos de su PR."
+            exit 1
+          fi
+          echo "PASS: E19 descartada no integrada"
