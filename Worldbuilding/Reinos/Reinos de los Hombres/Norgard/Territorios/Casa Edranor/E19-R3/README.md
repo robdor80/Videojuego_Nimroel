@@ -27,3 +27,6 @@ Continuación *apilada* de E19-R2 (PR #90, `50a284cf33d59465332623c8a46c5e1d41cd
 Aprobada para **diseñar**: distinción de relieve, suelo, cobertura, condición hídrica, microclima y usos con procedencia. Sin acreditar: ubicación/área de parcelas, valores físicos, explotaciones, límites forestales, pluviometría, grados-día, caminos, caudales y derechos de extracción. Ni Godot ni CoreRPG ni World State son modificados.
 
 La calidad Valrik se alcanza **en este estrato documental** mediante cadenas causa→estado→uso→riesgo→persistencia y pruebas de rechazo. La paridad cartográfica y jugable completa continúa pendiente de R4–R6 y E19-TEC.
+
+## Guardas territoriales comprobables
+Rodas sigue siendo una **aldea de Corona Aethros** y no genera obligaciones fiscales ni aprovechamiento de Casa Edranor. El **Bosque Alto** abastece potencialmente la tonelería de Lumina solo bajo explotación controlada y permisos verificables; el Bosque Real pertenece a la Corona. Estas reglas se verifican junto con los contratos R1/R2, sin afirmar geometría B3 ni runtime B4.
