@@ -30,6 +30,7 @@ jobs:
       - run: python Tools/EdranorE19R6/validate.py
       - run: python Tools/EdranorE19TEC/test_spatial.py
       - run: python Tools/EdranorE19TEC/test_causal_atlas.py
+      - run: python Tools/EdranorE19TEC/test_drainage_lab.py
       - run: python Tools/EdranorE19TEC/causal_atlas.py --output "${{ runner.temp }}/edranor-causal-catalog.json"
   spatial-windows:
     runs-on: windows-2022
@@ -47,6 +48,7 @@ jobs:
       - run: python Tools/EdranorE19R6/validate.py
       - run: python Tools/EdranorE19TEC/test_spatial.py
       - run: python Tools/EdranorE19TEC/test_causal_atlas.py
+      - run: python Tools/EdranorE19TEC/test_drainage_lab.py
       - run: python Tools/EdranorE19TEC/causal_atlas.py --output "${{ runner.temp }}/edranor-causal-catalog.json"
 
   godot-causal-readonly:
