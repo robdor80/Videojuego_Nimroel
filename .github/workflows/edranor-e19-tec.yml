@@ -1,0 +1,46 @@
+name: Edranor E19-TEC spatial evidence gates
+on:
+  push:
+    branches:
+      - 'tech/edranor-e19-tec-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/E19-TEC/**'
+      - 'Tools/EdranorE19TEC/**'
+      - '.github/workflows/edranor-e19-tec.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  spatial-linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/EdranorE19R0/validate.py
+      - run: python Tools/EdranorE19R1/validate.py
+      - run: python Tools/EdranorE19R2/validate.py
+      - run: python Tools/EdranorE19R3/validate.py
+      - run: python Tools/EdranorE19R4/validate.py
+      - run: python Tools/EdranorE19R5/validate.py
+      - run: python Tools/EdranorE19R6/validate.py
+      - run: python Tools/EdranorE19TEC/test_spatial.py
+  spatial-windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/EdranorE19R0/validate.py
+      - run: python Tools/EdranorE19R1/validate.py
+      - run: python Tools/EdranorE19R2/validate.py
+      - run: python Tools/EdranorE19R3/validate.py
+      - run: python Tools/EdranorE19R4/validate.py
+      - run: python Tools/EdranorE19R5/validate.py
+      - run: python Tools/EdranorE19R6/validate.py
+      - run: python Tools/EdranorE19TEC/test_spatial.py
