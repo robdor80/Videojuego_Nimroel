@@ -63,6 +63,8 @@ jobs:
           python-version: '3.12'
       - name: Compile conceptual regions from R1-R5 (no physical entities)
         run: python Tools/EdranorE19TEC/causal_atlas.py --output Tools/EdranorE19TEC/GodotLab/catalog_generated.json
+      - name: Generate separate lab-only spatial fixture (not Edranor materialization)
+        run: python Tools/EdranorE19TEC/godot_lab_fixture.py --output Tools/EdranorE19TEC/GodotLab/sector_lab_generated.json
       - name: Fetch exact Godot 4.7.2 editor
         shell: bash
         run: |
@@ -77,3 +79,5 @@ jobs:
         run: /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --editor --path Tools/EdranorE19TEC/GodotLab --import --quit
       - name: Read R1-R5 catalog and reject counterfeit B3/B4 in actual Godot
         run: /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path Tools/EdranorE19TEC/GodotLab --script res://tests/causal_catalog_smoke.gd
+      - name: Instantiate lab 2D geometry and refuse counterfeit B3
+        run: /tmp/Godot_v4.7.2-stable_linux.x86_64 --headless --path Tools/EdranorE19TEC/GodotLab --script res://tests/sector_geometry_smoke.gd
