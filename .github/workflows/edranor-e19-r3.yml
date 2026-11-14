@@ -1,0 +1,42 @@
+name: Edranor E19-R3 environment and Valrik parity
+on:
+  push:
+    branches:
+      - 'design/edranor-e19-r3-*'
+  pull_request:
+    paths:
+      - 'Worldbuilding/Reinos/Reinos de los Hombres/Norgard/Territorios/Casa Edranor/E19-R3/**'
+      - 'Tools/EdranorE19R3/**'
+      - '.github/workflows/edranor-e19-r3.yml'
+  workflow_dispatch:
+jobs:
+  environment-linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: E19-R0 regression
+        run: python Tools/EdranorE19R0/validate.py
+      - name: E19-R1 regression
+        run: python Tools/EdranorE19R1/validate.py
+      - name: E19-R2 regression
+        run: python Tools/EdranorE19R2/validate.py
+      - name: E19-R3 contract and adversarial tests
+        run: python Tools/EdranorE19R3/validate.py
+  environment-windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: E19-R0 regression
+        run: python Tools/EdranorE19R0/validate.py
+      - name: E19-R1 regression
+        run: python Tools/EdranorE19R1/validate.py
+      - name: E19-R2 regression
+        run: python Tools/EdranorE19R2/validate.py
+      - name: E19-R3 contract and adversarial tests
+        run: python Tools/EdranorE19R3/validate.py

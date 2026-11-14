@@ -1,0 +1,1182 @@
+{
+  "schemaVersion": 4,
+  "documentId": "edranor_e19_r3_land_ecology",
+  "phase": "E19-R3",
+  "status": "REGIONAL_CAUSAL_DESIGN_B2_NOT_RUNTIME",
+  "authority": "ASSISTANT_DELEGATED_DESIGN",
+  "precedent": "VALRIK_GEOGRAFIA_LOCAL_CLIMA_LOCAL",
+  "parent": {
+    "phase": "E19-R2",
+    "headSha": "50a284cf33d59465332623c8a46c5e1d41cdb664",
+    "documentId": "edranor_e19_r2_hydrology",
+    "schemaVersion": 3,
+    "rejectedPR84Used": false
+  },
+  "governance": {
+    "west": "VALKRAM_WEST_DAROVAN_EAST_EDRANOR",
+    "east": "AZURIOS_WEST_EDRANOR_EAST_GALDREN",
+    "south": "AETHROS_ADMIN_EXCEPT_UNLOCATED_LURIEN_SECTION",
+    "northArtificialClosure": false,
+    "northSketchJoined": false,
+    "rodas": {
+      "kind": "ALDEA",
+      "jurisdiction": "crown_aethros"
+    },
+    "hallheim": "OUTSIDE_EDRANOR",
+    "bosqueAltoHarvest": "PERMIT_REQUIRED",
+    "bosqueReal": "crown_aethros",
+    "bosqueRealHarvestByEdranor": false,
+    "caleranThroughDorthConfirmed": false,
+    "karsathUrbanAntelaShoreConfirmed": false,
+    "sourceHydrologySequence": [
+      "Valkram eastern slope",
+      "Río Lurien",
+      "Lago Antela",
+      "Río Lurien",
+      "Hallheim",
+      "Golfo de Norgard"
+    ]
+  },
+  "maturity": {
+    "b2Documentary": true,
+    "b3Mapped": false,
+    "b4Runtime": false,
+    "geometry": null,
+    "crs": null,
+    "terrainCells": 0,
+    "realSoilSamples": 0,
+    "materializedSoilPatches": 0,
+    "materializedVegetation": 0,
+    "materializedWeatherEvents": 0,
+    "actualParcels": 0,
+    "activeHarvestSites": 0,
+    "worldStateEntities": 0,
+    "actualEconomicYields": 0
+  },
+  "contexts": [
+    {
+      "id": "MF-01",
+      "basinId": "HC-01",
+      "name": "Valkram: ladera oriental",
+      "soilQuestion": "Pendientes y roca; cabeceras condicionadas",
+      "microQuestion": "Hielo/deshielo y umbrías solo si se acreditan",
+      "coverQuestion": "Cubierta de montaña discontinua bajo estudio",
+      "guard": "Ningún derecho Darovan ni cabecera Belara",
+      "status": "CONTEXT_ONLY_NOT_MAPPED",
+      "surfaceArea": null,
+      "geometry": null,
+      "quantifiedClimate": null,
+      "approvedParcels": 0,
+      "actualLandCoverEntities": 0
+    },
+    {
+      "id": "MF-02",
+      "basinId": "HC-02",
+      "name": "Piedemonte de Valkram",
+      "soilQuestion": "Coluviones, abanicos y depósitos discontinuos",
+      "microQuestion": "Contrastes pie/ladera, vientos y exposición",
+      "coverQuestion": "Mosaico de matorral, pastizal o arbolado condicionado",
+      "guard": "No hacer todo cono fértil ni instalar agua permanente",
+      "status": "CONTEXT_ONLY_NOT_MAPPED",
+      "surfaceArea": null,
+      "geometry": null,
+      "quantifiedClimate": null,
+      "approvedParcels": 0,
+      "actualLandCoverEntities": 0
+    },
+    {
+      "id": "MF-03",
+      "basinId": "HC-03",
+      "name": "Rellanos de Karsath",
+      "soilQuestion": "Lomas y bajos de textura todavía desconocida",
+      "microQuestion": "Potencial helada de fondo y ventilación de rellano",
+      "coverQuestion": "Viticultura selectiva solo en suelos verificados",
+      "guard": "Antela al sur no significa ribera urbana ni riego",
+      "status": "CONTEXT_ONLY_NOT_MAPPED",
+      "surfaceArea": null,
+      "geometry": null,
+      "quantifiedClimate": null,
+      "approvedParcels": 0,
+      "actualLandCoverEntities": 0
+    },
+    {
+      "id": "MF-04",
+      "basinId": "HC-04",
+      "name": "Campiña central",
+      "soilQuestion": "Interfluvios, vaguadas, suelos agrícolas por demostrar",
+      "microQuestion": "Solana, umbría, brisas de valle, sequedad acumulada",
+      "coverQuestion": "Viñedo/campos/setos como mosaico, no monocultivo",
+      "guard": "Sin concesión hídrica ni hectáreas/vendimia predeterminadas",
+      "status": "CONTEXT_ONLY_NOT_MAPPED",
+      "surfaceArea": null,
+      "geometry": null,
+      "quantifiedClimate": null,
+      "approvedParcels": 0,
+      "actualLandCoverEntities": 0
+    },
+    {
+      "id": "MF-05",
+      "basinId": "HC-05",
+      "name": "Lumina, meseta y Bosque Alto",
+      "soilQuestion": "Horizonte forestal; compactación en claros/caminos",
+      "microQuestion": "Dosel vs claro, umbría, meseta y nieve si consta",
+      "coverQuestion": "Bosque Alto mixto; blancos de Lumina bajo aptitud",
+      "guard": "Tala controlada; Lumina pequeña con feria anual",
+      "status": "CONTEXT_ONLY_NOT_MAPPED",
+      "surfaceArea": null,
+      "geometry": null,
+      "quantifiedClimate": null,
+      "approvedParcels": 0,
+      "actualLandCoverEntities": 0
+    },
+    {
+      "id": "MF-06",
+      "basinId": "HC-06",
+      "name": "Dorth y Azurios occidental",
+      "soilQuestion": "Resaltes, coluviones y laderas forestales",
+      "microQuestion": "Gradiente altitudinal/exposición y corredores protegidos",
+      "coverQuestion": "Bosque de los Azurios; tinto de Dorth por parcelas",
+      "guard": "Sin río mayor urbano ni Caleran local inferido; Bosque Real regío",
+      "status": "CONTEXT_ONLY_NOT_MAPPED",
+      "surfaceArea": null,
+      "geometry": null,
+      "quantifiedClimate": null,
+      "approvedParcels": 0,
+      "actualLandCoverEntities": 0
+    },
+    {
+      "id": "MF-07",
+      "basinId": "HC-07",
+      "name": "Transición fría de Rodas",
+      "soilQuestion": "Saturación y congelación estacional como hipótesis",
+      "microQuestion": "Transición boreal gradual, no línea ni tundra fija",
+      "coverQuestion": "Mosaico frío condicional; no viñas boreales por defecto",
+      "guard": "Rodas aldea regia; sin cerrar norte",
+      "status": "CONTEXT_ONLY_NOT_MAPPED",
+      "surfaceArea": null,
+      "geometry": null,
+      "quantifiedClimate": null,
+      "approvedParcels": 0,
+      "actualLandCoverEntities": 0
+    },
+    {
+      "id": "MF-08",
+      "basinId": null,
+      "name": "Extremo norte no cerrado",
+      "soilQuestion": "NO EVALUABLE",
+      "microQuestion": "NO EVALUABLE",
+      "coverQuestion": "NO EVALUABLE",
+      "guard": "Sin asignación de suelo, bosque, aprovechamiento o jurisdicción",
+      "status": "NON_EVALUABLE",
+      "surfaceArea": null,
+      "geometry": null,
+      "quantifiedClimate": null,
+      "approvedParcels": 0,
+      "actualLandCoverEntities": 0
+    }
+  ],
+  "soilPrototypes": [
+    {
+      "id": "SO-01",
+      "name": "Roca de divisoria y cresta",
+      "contextIds": [
+        "MF-01",
+        "MF-06"
+      ],
+      "inference": "BAJA_RETENCION_POSIBLE",
+      "mechanism": "ROCA_EXPOSICION_PENDIENTE",
+      "limitation": "Riesgo de erosión y suelo fino; nunca asignar cultivo",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-02",
+      "name": "Derrubio de ladera",
+      "contextIds": [
+        "MF-01",
+        "MF-06"
+      ],
+      "inference": "DRENAJE_VARIABLE",
+      "mechanism": "PENDIENTE_GRANULOMETRIA_ESTABILIDAD",
+      "limitation": "Material móvil y poco fondo útil donde se compruebe",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-03",
+      "name": "Coluvión de pie de monte",
+      "contextIds": [
+        "MF-02",
+        "MF-06"
+      ],
+      "inference": "VARIABLE_EN_LATERAL",
+      "mechanism": "APORTE_LADERA_ESTRATIGRAFIA",
+      "limitation": "Aireación/atascos según textura y posición",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-04",
+      "name": "Terraza o grava de depósito",
+      "contextIds": [
+        "MF-02",
+        "MF-03"
+      ],
+      "inference": "INFILTRACION_ALTA_POSIBLE",
+      "mechanism": "DEPOSITO_Y_CAPA_IMPERMEABLE",
+      "limitation": "Pérdida de humedad o acuífero somero: alternativas",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-05",
+      "name": "Loma de tierra interior",
+      "contextIds": [
+        "MF-03",
+        "MF-04"
+      ],
+      "inference": "MIXTO_CONDICIONAL",
+      "mechanism": "TEXTURA_PROFUNDIDAD_PENDIENTE",
+      "limitation": "Aptitud agrícola no automática",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-06",
+      "name": "Bajo fino o compactable",
+      "contextIds": [
+        "MF-03",
+        "MF-04"
+      ],
+      "inference": "INFILTRACION_LENTA_POSIBLE",
+      "mechanism": "TEXTURA_USO_COMPACTACION",
+      "limitation": "Barro y encharcamiento si hay agua y drenaje lento",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-07",
+      "name": "Fondo aluvial no urbano",
+      "contextIds": [
+        "MF-03",
+        "MF-04"
+      ],
+      "inference": "NIVEL_FREATICO_CONDICIONAL",
+      "mechanism": "RECEPTOR_Y_LLANURA_REAL",
+      "limitation": "No inventar ribera, río o huerta",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-08",
+      "name": "Horizonte forestal Bosque Alto",
+      "contextIds": [
+        "MF-05"
+      ],
+      "inference": "ALMACENAMIENTO_SUPERFICIAL_POSIBLE",
+      "mechanism": "DOSel_RAICES_LITTER_SUELO",
+      "limitation": "Hojarasca y raíz no garantizan manantial",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-09",
+      "name": "Claro forestal intervenido",
+      "contextIds": [
+        "MF-05",
+        "MF-06"
+      ],
+      "inference": "VARIABLE_POR_TRANSITO",
+      "mechanism": "HISTORIA_DE_USO_AUTORIZACION",
+      "limitation": "Compactación; no convertir tala hipotética en hecho",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-10",
+      "name": "Resalte del Azurios",
+      "contextIds": [
+        "MF-06"
+      ],
+      "inference": "MOSAICO_ROCA_COLUVION",
+      "mechanism": "PENDIENTE_COBERTURA",
+      "limitation": "No extender Bosque Real a la Casa",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-11",
+      "name": "Transición fría con suelo estacional",
+      "contextIds": [
+        "MF-07"
+      ],
+      "inference": "SATURACION_EN_DESHIELO_POSIBLE",
+      "mechanism": "FRIO_NIEVE_TEMPERATURA_SUELO",
+      "limitation": "Sin permafrost o tundra local presumidos",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    },
+    {
+      "id": "SO-12",
+      "name": "Margen húmedo de curso validado",
+      "contextIds": [
+        "MF-02",
+        "MF-03",
+        "MF-04",
+        "MF-05",
+        "MF-06",
+        "MF-07"
+      ],
+      "inference": "VARIABLE_RIBERA",
+      "mechanism": "CURSO_RECEPTOR_FREATICO_VALIDO",
+      "limitation": "Prohibido materializarlo sin hidrografía R2 acreditada",
+      "status": "TEMPLATE_NOT_SURVEYED",
+      "evidenceRequired": [
+        "MATERIAL_PARENTAL_O_DEPOSITO",
+        "TEXTURA_PROFUNDIDAD_Y_PERMEABILIDAD",
+        "RELIEVE_HUMEDAD_Y_JURISDICCION"
+      ],
+      "actualParcels": 0,
+      "actualGeometry": null,
+      "measuredPh": null,
+      "measuredDepth": null,
+      "measuredInfiltration": null,
+      "approvedUse": null
+    }
+  ],
+  "microclimateRules": [
+    {
+      "id": "MU-01",
+      "name": "Solana de ladera",
+      "contextIds": [
+        "MF-01",
+        "MF-02",
+        "MF-03",
+        "MF-04",
+        "MF-06"
+      ],
+      "trigger": "ORIENTACION_INSOLACION_PROBADAS",
+      "potential": "Mayor secado posible",
+      "guard": "No equivale a ausencia de helada",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    },
+    {
+      "id": "MU-02",
+      "name": "Umbría de ladera",
+      "contextIds": [
+        "MF-01",
+        "MF-03",
+        "MF-05",
+        "MF-06"
+      ],
+      "trigger": "ORIENTACION_SOMBRA_PROBADAS",
+      "potential": "Humedad o nieve retenida posibles",
+      "guard": "No produce lluvia propia",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    },
+    {
+      "id": "MU-03",
+      "name": "Bolsa de aire frío en fondo",
+      "contextIds": [
+        "MF-02",
+        "MF-03",
+        "MF-04",
+        "MF-07"
+      ],
+      "trigger": "DEPRESION_Y_NOCHE_ESTABLE_PROBADAS",
+      "potential": "Helada local potencial",
+      "guard": "Sin valle acreditado no hay inversión",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    },
+    {
+      "id": "MU-04",
+      "name": "Interior de dosel forestal",
+      "contextIds": [
+        "MF-05",
+        "MF-06"
+      ],
+      "trigger": "DOSel_DENSO_VERIFICADO",
+      "potential": "Menos viento/sol y humedad persistente posibles",
+      "guard": "No niebla perpetua",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    },
+    {
+      "id": "MU-05",
+      "name": "Borde o claro forestal",
+      "contextIds": [
+        "MF-05",
+        "MF-06",
+        "MF-07"
+      ],
+      "trigger": "CLARO_REAL_Y_ESTADO_DE_CUBIERTA",
+      "potential": "Mayor amplitud y viento potenciales",
+      "guard": "No imputar tala ilegal",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    },
+    {
+      "id": "MU-06",
+      "name": "Cercanía a cauce o humedad",
+      "contextIds": [
+        "MF-02",
+        "MF-03",
+        "MF-04",
+        "MF-05",
+        "MF-06",
+        "MF-07"
+      ],
+      "trigger": "CURSO_O_SATURACION_Y_RECEPTOR_VERIFICADOS",
+      "potential": "Rocío/bruma local condicional",
+      "guard": "No crear regato ni ribera",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    },
+    {
+      "id": "MU-07",
+      "name": "Cresta expuesta",
+      "contextIds": [
+        "MF-01",
+        "MF-02",
+        "MF-06"
+      ],
+      "trigger": "CRESTA_Y_VIENTO_VERIFICADOS",
+      "potential": "Mayor exposición, posible desecación",
+      "guard": "No huracanes por etiqueta",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    },
+    {
+      "id": "MU-08",
+      "name": "Nieve y deshielo de umbría",
+      "contextIds": [
+        "MF-01",
+        "MF-05",
+        "MF-06",
+        "MF-07"
+      ],
+      "trigger": "NIEVE_REAL_Y_BALANCE_TERMICO",
+      "potential": "Persistencia de nieve y barro condicional",
+      "guard": "No calendario terrestre fijo",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    },
+    {
+      "id": "MU-09",
+      "name": "Suelo compactado húmedo",
+      "contextIds": [
+        "MF-03",
+        "MF-04",
+        "MF-05"
+      ],
+      "trigger": "TRANSITO_REAL_Y_LLUVIA_ANTERIOR",
+      "potential": "Barro persistente posible",
+      "guard": "No todo suelo mojado es barro",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    },
+    {
+      "id": "MU-10",
+      "name": "Borde de meseta de Lumina",
+      "contextIds": [
+        "MF-05"
+      ],
+      "trigger": "BORDE_MESa_REAL_Y_SERIE_METEO",
+      "potential": "Contrastes de viento, sol y nube",
+      "guard": "Sin elevación numérica inventada",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    },
+    {
+      "id": "MU-11",
+      "name": "Transición boreal gradual",
+      "contextIds": [
+        "MF-07"
+      ],
+      "trigger": "CONTINUIDAD_REGIONAL_Y_LATITUD",
+      "potential": "Pueden cambiar helada y cubierta",
+      "guard": "No fijar límite polar dentro de Edranor",
+      "status": "RULE_CONDITIONAL_NOT_LOCATED",
+      "evidenceRequired": [
+        "GEOMORFOLOGIA_LOCAL",
+        "REGIMEN_ESTACIONAL",
+        "HUMEDAD_Y_CUBIERTA"
+      ],
+      "appliedPlaces": 0,
+      "deltaTemperature": null,
+      "probabilityFog": null,
+      "daysSnow": null
+    }
+  ],
+  "coverMosaics": [
+    {
+      "id": "CV-01",
+      "name": "Bosque Alto mixto",
+      "contextIds": [
+        "MF-05"
+      ],
+      "authority": "CANON_REGIONAL",
+      "description": "Bosque mixto de altura: coníferas y frondosas según estación y exposición",
+      "guard": "Madera solo controlada; lindes desconocidas",
+      "status": "COVER_TYPE_NOT_MAPPED",
+      "materializedPatches": 0,
+      "geometry": null,
+      "area": null,
+      "individualTrees": 0
+    },
+    {
+      "id": "CV-02",
+      "name": "Bosque occidental de los Azurios",
+      "contextIds": [
+        "MF-06"
+      ],
+      "authority": "CANON_REGIONAL",
+      "description": "Bosque continental/montano gradualmente cambiante",
+      "guard": "Sector real meridional no aprovechable por Casa",
+      "status": "COVER_TYPE_NOT_MAPPED",
+      "materializedPatches": 0,
+      "geometry": null,
+      "area": null,
+      "individualTrees": 0
+    },
+    {
+      "id": "CV-03",
+      "name": "Campiña vinícola en mosaico",
+      "contextIds": [
+        "MF-04"
+      ],
+      "authority": "DESIGN_MOSAIC",
+      "description": "Viña, campos, setos y vegetación espontánea alternables",
+      "guard": "No declarar monocultivo ni número de cepas",
+      "status": "COVER_TYPE_NOT_MAPPED",
+      "materializedPatches": 0,
+      "geometry": null,
+      "area": null,
+      "individualTrees": 0
+    },
+    {
+      "id": "CV-04",
+      "name": "Rellanos agrícolas selectivos",
+      "contextIds": [
+        "MF-03"
+      ],
+      "authority": "DESIGN_MOSAIC",
+      "description": "Cultivos de escala condicionada, lindes y cubierta baja",
+      "guard": "No hacer de Karsath finca uniforme",
+      "status": "COVER_TYPE_NOT_MAPPED",
+      "materializedPatches": 0,
+      "geometry": null,
+      "area": null,
+      "individualTrees": 0
+    },
+    {
+      "id": "CV-05",
+      "name": "Claros y bordes de Lumina",
+      "contextIds": [
+        "MF-05"
+      ],
+      "authority": "DESIGN_MOSAIC",
+      "description": "Bordes de bosque y claros con procedencia identificable",
+      "guard": "No suponer desmonte autorizado",
+      "status": "COVER_TYPE_NOT_MAPPED",
+      "materializedPatches": 0,
+      "geometry": null,
+      "area": null,
+      "individualTrees": 0
+    },
+    {
+      "id": "CV-06",
+      "name": "Pastizal y matorral de piedemonte",
+      "contextIds": [
+        "MF-01",
+        "MF-02",
+        "MF-06"
+      ],
+      "authority": "SCENARIO",
+      "description": "Pastos, matorral y roca según altitud y presión",
+      "guard": "No ganadería ni pastoreo ilimitado",
+      "status": "COVER_TYPE_NOT_MAPPED",
+      "materializedPatches": 0,
+      "geometry": null,
+      "area": null,
+      "individualTrees": 0
+    },
+    {
+      "id": "CV-07",
+      "name": "Soto de agua acreditada",
+      "contextIds": [
+        "MF-02",
+        "MF-03",
+        "MF-04",
+        "MF-05",
+        "MF-06",
+        "MF-07"
+      ],
+      "authority": "SCENARIO",
+      "description": "Vegetación de ribera solo si cauce y permanencia se verifican",
+      "guard": "No inventar curso menor",
+      "status": "COVER_TYPE_NOT_MAPPED",
+      "materializedPatches": 0,
+      "geometry": null,
+      "area": null,
+      "individualTrees": 0
+    },
+    {
+      "id": "CV-08",
+      "name": "Mosaico frío septentrional",
+      "contextIds": [
+        "MF-07"
+      ],
+      "authority": "REGIONAL_GRADIENT",
+      "description": "Coníferas, abedules, claros y matorral según norte real",
+      "guard": "No tundra propia certificada",
+      "status": "COVER_TYPE_NOT_MAPPED",
+      "materializedPatches": 0,
+      "geometry": null,
+      "area": null,
+      "individualTrees": 0
+    },
+    {
+      "id": "CV-09",
+      "name": "Cobertura de roca y suelo ralo",
+      "contextIds": [
+        "MF-01",
+        "MF-06"
+      ],
+      "authority": "SCENARIO",
+      "description": "Líquenes, herbazal y roca como respuesta a suelo somero",
+      "guard": "No pasto extensivo garantizado",
+      "status": "COVER_TYPE_NOT_MAPPED",
+      "materializedPatches": 0,
+      "geometry": null,
+      "area": null,
+      "individualTrees": 0
+    },
+    {
+      "id": "CV-10",
+      "name": "Regeneración en área alterada",
+      "contextIds": [
+        "MF-02",
+        "MF-04",
+        "MF-05",
+        "MF-06"
+      ],
+      "authority": "SCENARIO",
+      "description": "Tocones, matorral y sucesión si consta alteración previa",
+      "guard": "No tala ficticia ni regeneración instantánea",
+      "status": "COVER_TYPE_NOT_MAPPED",
+      "materializedPatches": 0,
+      "geometry": null,
+      "area": null,
+      "individualTrees": 0
+    }
+  ],
+  "resourceChains": [
+    {
+      "id": "RN-01",
+      "name": "Vino tinto de Dorth",
+      "contextId": "MF-06",
+      "kind": "VITICULTURE_PARCEL_AND_PROCESS",
+      "requires": "PARCEL_RIGHT_AND_SOIL_CLIMATE_WATER_WORKFORCE",
+      "guard": "Sin viñedo ni bodega por autoubicación",
+      "status": "CHAIN_CONDITIONAL_NOT_ACTIVE",
+      "rightsStatus": "UNKNOWN",
+      "verifiedStock": null,
+      "verifiedCapacity": null,
+      "actualProduction": 0,
+      "activeSites": 0
+    },
+    {
+      "id": "RN-02",
+      "name": "Vino blanco de Lumina",
+      "contextId": "MF-05",
+      "kind": "VITICULTURE_PARCEL_AND_PROCESS",
+      "requires": "PARCEL_RIGHT_AND_SOIL_CLIMATE_WATER_WORKFORCE",
+      "guard": "Feria anual no equivale a producción universal",
+      "status": "CHAIN_CONDITIONAL_NOT_ACTIVE",
+      "rightsStatus": "UNKNOWN",
+      "verifiedStock": null,
+      "verifiedCapacity": null,
+      "actualProduction": 0,
+      "activeSites": 0
+    },
+    {
+      "id": "RN-03",
+      "name": "Partida selecta de Karsath",
+      "contextId": "MF-03",
+      "kind": "VITICULTURE_PARCEL_AND_PROCESS",
+      "requires": "PARCEL_RIGHT_AND_SOIL_CLIMATE_WATER_WORKFORCE",
+      "guard": "Sin orilla de Antela, riego ni vendimia fija",
+      "status": "CHAIN_CONDITIONAL_NOT_ACTIVE",
+      "rightsStatus": "UNKNOWN",
+      "verifiedStock": null,
+      "verifiedCapacity": null,
+      "actualProduction": 0,
+      "activeSites": 0
+    },
+    {
+      "id": "RN-04",
+      "name": "Campiña vinícola general",
+      "contextId": "MF-04",
+      "kind": "VITICULTURE_PARCEL_AND_PROCESS",
+      "requires": "PARCEL_RIGHT_AND_SOIL_CLIMATE_WATER_WORKFORCE",
+      "guard": "El potencial del territorio no crea parcelas",
+      "status": "CHAIN_CONDITIONAL_NOT_ACTIVE",
+      "rightsStatus": "UNKNOWN",
+      "verifiedStock": null,
+      "verifiedCapacity": null,
+      "actualProduction": 0,
+      "activeSites": 0
+    },
+    {
+      "id": "RN-05",
+      "name": "Madera de Bosque Alto",
+      "contextId": "MF-05",
+      "kind": "FOREST_HARVEST",
+      "requires": "PROVEN_FOREST_OWNER_LICENSE_QUOTA_REGENERATION",
+      "guard": "Madera para barricas no concede tala libre",
+      "status": "CHAIN_CONDITIONAL_NOT_ACTIVE",
+      "rightsStatus": "UNKNOWN",
+      "verifiedStock": null,
+      "verifiedCapacity": null,
+      "actualProduction": 0,
+      "activeSites": 0
+    },
+    {
+      "id": "RN-06",
+      "name": "Caza en bosque",
+      "contextId": "MF-05",
+      "kind": "WILDLIFE_USE",
+      "requires": "PROVEN_FAUNA_SEASON_OWNER_AND_PERMISSION",
+      "guard": "Abundancia regional no autoriza especie, botín ni veda",
+      "status": "CHAIN_CONDITIONAL_NOT_ACTIVE",
+      "rightsStatus": "UNKNOWN",
+      "verifiedStock": null,
+      "verifiedCapacity": null,
+      "actualProduction": 0,
+      "activeSites": 0
+    },
+    {
+      "id": "RN-07",
+      "name": "Recolección de sotobosque",
+      "contextId": "MF-05",
+      "kind": "NON_TIMBER_HARVEST",
+      "requires": "SPECIES_VALIDATION_OWNER_SEASON_REGENERATION",
+      "guard": "Sin objetos infinitos ni libre acceso",
+      "status": "CHAIN_CONDITIONAL_NOT_ACTIVE",
+      "rightsStatus": "UNKNOWN",
+      "verifiedStock": null,
+      "verifiedCapacity": null,
+      "actualProduction": 0,
+      "activeSites": 0
+    },
+    {
+      "id": "RN-08",
+      "name": "Pasto en piedemonte",
+      "contextId": "MF-02",
+      "kind": "PASTURE_USE",
+      "requires": "OWNER_STOCK_CARRYING_CAPACITY_WATER_AND_ACCESS",
+      "guard": "Sin rebaños ni aprovechamiento concreto",
+      "status": "CHAIN_CONDITIONAL_NOT_ACTIVE",
+      "rightsStatus": "UNKNOWN",
+      "verifiedStock": null,
+      "verifiedCapacity": null,
+      "actualProduction": 0,
+      "activeSites": 0
+    },
+    {
+      "id": "RN-09",
+      "name": "Huertos y campos interiores",
+      "contextId": "MF-04",
+      "kind": "CROP_USE",
+      "requires": "OWNER_SOIL_WATER_LABOUR_STORAGE",
+      "guard": "No asignar cultivos o rendimientos reales",
+      "status": "CHAIN_CONDITIONAL_NOT_ACTIVE",
+      "rightsStatus": "UNKNOWN",
+      "verifiedStock": null,
+      "verifiedCapacity": null,
+      "actualProduction": 0,
+      "activeSites": 0
+    },
+    {
+      "id": "RN-10",
+      "name": "Captación hídrica para producción",
+      "contextId": "MF-06",
+      "kind": "WATER_USE",
+      "requires": "VERIFIED_SOURCE_QUALITY_RIGHT_FLOW_DOWNSTREAM",
+      "guard": "Agua disponible no equivale a concesión",
+      "status": "CHAIN_CONDITIONAL_NOT_ACTIVE",
+      "rightsStatus": "UNKNOWN",
+      "verifiedStock": null,
+      "verifiedCapacity": null,
+      "actualProduction": 0,
+      "activeSites": 0
+    }
+  ],
+  "seasonalRules": [
+    {
+      "id": "ES-01",
+      "name": "Lluvia tras periodo seco",
+      "driver": "Humedad infiltrada frente a escorrentía según sustrato",
+      "memory": "Secado retardado y barro solo si retención/compactación",
+      "status": "CAUSAL_RULE_ONLY",
+      "observedEvent": false,
+      "date": null,
+      "spatialInstance": null
+    },
+    {
+      "id": "ES-02",
+      "name": "Lluvia sobre suelo saturado",
+      "driver": "Saturación previa aumenta escorrentía",
+      "memory": "Daño de surcos y rutas solo con pendiente y tránsito",
+      "status": "CAUSAL_RULE_ONLY",
+      "observedEvent": false,
+      "date": null,
+      "spatialInstance": null
+    },
+    {
+      "id": "ES-03",
+      "name": "Helada radiativa en bajo",
+      "driver": "Enfriamiento e inversión solo con topografía y calma",
+      "memory": "Daño de brotes condicionado a fenología",
+      "status": "CAUSAL_RULE_ONLY",
+      "observedEvent": false,
+      "date": null,
+      "spatialInstance": null
+    },
+    {
+      "id": "ES-04",
+      "name": "Deshielo sobre ladera",
+      "driver": "Fusión y respuesta a infiltración/temperatura de suelo",
+      "memory": "Barro, desprendimiento o caudal solo si aporte verificado",
+      "status": "CAUSAL_RULE_ONLY",
+      "observedEvent": false,
+      "date": null,
+      "spatialInstance": null
+    },
+    {
+      "id": "ES-05",
+      "name": "Sequía acumulada en loma",
+      "driver": "Agua útil cae pese a lluvia antigua",
+      "memory": "Estrés hídrico en viña solo si parcela realmente plantada",
+      "status": "CAUSAL_RULE_ONLY",
+      "observedEvent": false,
+      "date": null,
+      "spatialInstance": null
+    },
+    {
+      "id": "ES-06",
+      "name": "Apertura de un claro real",
+      "driver": "Más sol/viento; cambia dosel y escorrentía",
+      "memory": "Regeneración sucesional; legalidad separada",
+      "status": "CAUSAL_RULE_ONLY",
+      "observedEvent": false,
+      "date": null,
+      "spatialInstance": null
+    },
+    {
+      "id": "ES-07",
+      "name": "Tránsito pesado por suelo blando",
+      "driver": "Compactación y roderas persistentes",
+      "memory": "Accesibilidad futura condicionada a camino real",
+      "status": "CAUSAL_RULE_ONLY",
+      "observedEvent": false,
+      "date": null,
+      "spatialInstance": null
+    },
+    {
+      "id": "ES-08",
+      "name": "Temporada de cosecha forestal",
+      "driver": "Extracción reduce stock y altera suelo",
+      "memory": "Cupo, titularidad, regeneración y trazabilidad obligatorios",
+      "status": "CAUSAL_RULE_ONLY",
+      "observedEvent": false,
+      "date": null,
+      "spatialInstance": null
+    }
+  ],
+  "inferenceContract": {
+    "requiredBeforeSoilAssignment": [
+      "JURISDICTION",
+      "GEOMETRY",
+      "MATERIAL",
+      "TEXTURE",
+      "DEPTH",
+      "DRAINAGE",
+      "WATER_AND_SLOPE"
+    ],
+    "requiredBeforeMicroclimate": [
+      "PLACED_RELIEF",
+      "EXPOSURE",
+      "REGIONAL_WEATHER",
+      "RECENT_WEATHER_MEMORY"
+    ],
+    "requiredBeforeCoverPlacement": [
+      "SOIL_AND_WATER",
+      "CLIMATE_AND_EXPOSURE",
+      "FOREST_RIGHTS",
+      "HABITAT_TRANSITION"
+    ],
+    "requiredBeforeHarvest": [
+      "MATERIALIZED_STOCK",
+      "RIGHTS_PERMISSION",
+      "QUOTA_AND_REGENERATION",
+      "ACCESS_AND_DOWNSTREAM_EFFECT"
+    ],
+    "memoryRequired": [
+      "SOIL_WETNESS",
+      "SNOW_OR_FROST_IF_VERIFIED",
+      "COMPACTION",
+      "COVER_DISTURBANCE",
+      "REGENERATION",
+      "HARVEST_STOCK"
+    ],
+    "landUseClass": "UNASSESSED",
+    "noUniformBiomeByContext": true,
+    "noWeatherByForestLabel": true,
+    "noFreeWaterRights": true,
+    "noHarvestWithoutPermission": true,
+    "noRiversFromCover": true,
+    "allUnknownsMustRemainExplicit": true,
+    "runtimeProvenanceStates": [
+      "AUTHORED",
+      "DERIVED",
+      "GENERATED"
+    ],
+    "approvedRuntimeImplementations": 0
+  },
+  "reservedUnknowns": [
+    "SOIL_MATERIAL",
+    "SOIL_TEXTURE_DEPTH_PH",
+    "LOCAL_TEMPERATURE_PRECIPITATION",
+    "SOIL_PERMEABILITY",
+    "FOREST_PERIMETERS",
+    "LAND_TENURE",
+    "LOCAL_WATER_RIGHTS",
+    "ACTUAL_VINEYARD_PARCELS",
+    "FAR_NORTH_MEMBERSHIP",
+    "NORTHERN_TREE_LINE",
+    "LOCAL_WILDLIFE_TAXA",
+    "GEOMETRY_AND_CRS",
+    "ACTUAL_ROADS"
+  ],
+  "hardGuards": [
+    "NO_FAKE_NORTH_CLOSURE",
+    "NO_REJECTED_PR84",
+    "NO_B3_B4_UPGRADE",
+    "NO_BELARA_TO_EDRANOR",
+    "NO_CALERAN_DORTH",
+    "NO_DORTH_MAJOR_RIVER",
+    "NO_KARSATH_LAKE_PORT",
+    "NO_WATER_USE_BY_PRESENCE",
+    "NO_FOREST_RIGHTS_BY_COVER",
+    "NO_RODAS_TAXATION",
+    "NO_BOSQUE_REAL_EDRANOR",
+    "NO_BOREAL_VINES",
+    "NO_POLAR_MF08_ASSIGNMENT",
+    "NO_UNVERIFIED_SOIL_VALUES",
+    "NO_IMPOSSIBLE_VEGETATION",
+    "NO_INSTANT_ECOLOGICAL_RESET",
+    "NO_HARVEST_WITHOUT_STOCK",
+    "NO_NEW_ROAD_OR_PARCEL"
+  ],
+  "handoff": {
+    "R4": "CORRIDORS_ONLY_AFTER_NATURAL_CONSTRAINTS_AND_REAL_WATER_CROSSINGS",
+    "R5": "LAND_USE_ONLY_WITH_SOIL_CLIMATE_TENURE_WATER_AND_ACCESS",
+    "R6": "VALRIK_PARITY_AUDIT_PENDING",
+    "TEC": "GODOT_2D_WORLD_STATE_AFTER_B3"
+  }
+}
