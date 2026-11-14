@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 2,
+  "documentId": "edranor_e19_r1_physical_geography_toponymy",
+  "createdDate": "2026-11-14",
+  "status": "REGIONAL_DESIGN_NOT_RUNTIME",
+  "parentPhase": "E19-R0",
+  "parentHeadSha": "addd767de9bf27ef35e8aef6d68cde00dea79c10",
+  "precedent": "VALRIK_GEOGRAFIA_LOCAL",
+  "rejectedPR84Used": false,
+  "authorityOrder": [
+    "NIMROEL_CORE",
+    "NORGARD_DEFAULTS",
+    "AUTHOR_CANON",
+    "REPO_CANON",
+    "ASSISTANT_DELEGATED_DESIGN"
+  ],
+  "implementedInGodot": false,
+  "worldStateEntities": 0,
+  "actualRoadEdges": 0,
+  "actualMinorRivers": 0,
+  "actualSettlements": 0,
+  "geometry": null,
+  "projection": null,
+  "measuredArea": null,
+  "measuredAltitude": null,
+  "boundaries": {
+    "west": {
+      "mountain": "Montes Valkram",
+      "divide": "MOUNTAIN_WATERSHED",
+      "westernSlope": "casa_darovan",
+      "easternSlope": "casa_edranor",
+      "geometry": null
+    },
+    "east": {
+      "mountain": "Montes Azurios",
+      "divide": "MOUNTAIN_WATERSHED",
+      "westernSlope": "casa_edranor",
+      "easternSlope": "casa_galdren",
+      "geometry": null
+    },
+    "south": {
+      "neighbor": "casa_aethros",
+      "nonRiverPart": "ADMINISTRATIVE",
+      "river": "Río Lurien",
+      "riverSegment": null,
+      "entireRiverBoundary": false
+    },
+    "north": {
+      "redSketchLinesJoin": false,
+      "artificialClosure": false,
+      "geometry": null
+    }
+  },
+  "jurisdiction": {
+    "rodas": "crown_aethros",
+    "rodasType": "ALDEA",
+    "hallheim": "OUTSIDE_EDRANOR",
+    "bosqueReal": "crown_aethros",
+    "bosqueAltoHarvest": "PERMIT_REQUIRED"
+  },
+  "regionalHydrology": {
+    "majorRiver": "Río Lurien",
+    "source": "Valkram eastern slope",
+    "sequence": [
+      "Valkram eastern slope",
+      "Río Lurien",
+      "Lago Antela",
+      "Río Lurien",
+      "Hallheim",
+      "Golfo de Norgard"
+    ],
+    "antelaRelativeToKarsath": "SOUTH",
+    "karsathUrbanShoreConfirmed": false,
+    "dorthMajorRiverConfirmed": false,
+    "lurienNavigationFrom": "Hallheim",
+    "minorReceiverMap": null
+  },
+  "physicalRegions": [
+    {
+      "id": "MF-01",
+      "name": "valkram_east_slope",
+      "originalUnit": "west_valkram_interface",
+      "evaluable": true,
+      "physicalGeometry": null,
+      "administrativeRegion": false
+    },
+    {
+      "id": "MF-02",
+      "name": "valkram_eastern_foothills",
+      "originalUnit": "west_valkram_interface",
+      "evaluable": true,
+      "physicalGeometry": null,
+      "administrativeRegion": false
+    },
+    {
+      "id": "MF-03",
+      "name": "karsath_western_interiors",
+      "originalUnit": "karsath_central_west",
+      "evaluable": true,
+      "physicalGeometry": null,
+      "administrativeRegion": false
+    },
+    {
+      "id": "MF-04",
+      "name": "central_wine_mosaic",
+      "originalUnit": "central_wine_context",
+      "evaluable": true,
+      "physicalGeometry": null,
+      "administrativeRegion": false
+    },
+    {
+      "id": "MF-05",
+      "name": "lumina_bosque_alto_plateau",
+      "originalUnit": "lumina_bosque_alto",
+      "evaluable": true,
+      "physicalGeometry": null,
+      "administrativeRegion": false
+    },
+    {
+      "id": "MF-06",
+      "name": "dorth_azurios_west",
+      "originalUnit": "dorth_azurios_west",
+      "evaluable": true,
+      "physicalGeometry": null,
+      "administrativeRegion": false
+    },
+    {
+      "id": "MF-07",
+      "name": "north_cold_transition",
+      "originalUnit": "north_cold_transition",
+      "evaluable": true,
+      "physicalGeometry": null,
+      "administrativeRegion": false
+    },
+    {
+      "id": "MF-08",
+      "name": "far_north_unclosed",
+      "originalUnit": "far_north_unclosed",
+      "evaluable": false,
+      "physicalGeometry": null,
+      "administrativeRegion": false
+    }
+  ],
+  "canonicalFeatures": [
+    {
+      "id": "A01",
+      "name": "Montes Valkram",
+      "form": "MOUNTAIN_RANGE",
+      "authority": "author_canon",
+      "relation": "WEST_DIVIDE",
+      "guard": "EAST_SLOPE_EDRANOR_WEST_DAROVAN",
+      "source": "norgard_montanas",
+      "geometry": null,
+      "localFeatureConfirmed": false
+    },
+    {
+      "id": "A02",
+      "name": "Montes Azurios",
+      "form": "MOUNTAIN_RANGE",
+      "authority": "author_canon",
+      "relation": "EAST_DIVIDE",
+      "guard": "WEST_SLOPE_EDRANOR_EAST_GALDREN",
+      "source": "norgard_montanas",
+      "geometry": null,
+      "localFeatureConfirmed": false
+    },
+    {
+      "id": "A03",
+      "name": "Río Lurien",
+      "form": "MAJOR_RIVER",
+      "authority": "repo_canon",
+      "relation": "CENTRAL_HYDROLOGY",
+      "guard": "ANTELA_THEN_HALLHEIM_GULF",
+      "source": "norgard_rios_y_lagos",
+      "geometry": null,
+      "localFeatureConfirmed": false
+    },
+    {
+      "id": "A04",
+      "name": "Lago Antela",
+      "form": "MAJOR_LAKE",
+      "authority": "repo_canon",
+      "relation": "SOUTH_OF_KARSATH",
+      "guard": "LURIEN_IN_AND_OUT_NO_URBAN_SHORE",
+      "source": "norgard_rios_y_lagos",
+      "geometry": null,
+      "localFeatureConfirmed": false
+    },
+    {
+      "id": "A05",
+      "name": "Bosque Alto",
+      "form": "FOREST",
+      "authority": "repo_canon",
+      "relation": "LUMINA_PLATEAU",
+      "guard": "REGULATED_TIMBER",
+      "source": "norgard_bosques",
+      "geometry": null,
+      "localFeatureConfirmed": false
+    },
+    {
+      "id": "A06",
+      "name": "Bosque de los Azurios",
+      "form": "FOREST",
+      "authority": "repo_canon",
+      "relation": "AZURIOS_WESTERN_SLOPE",
+      "guard": "DORTH_EDGE_ROYAL_SOUTH_SEPARATE",
+      "source": "norgard_bosques",
+      "geometry": null,
+      "localFeatureConfirmed": false
+    },
+    {
+      "id": "A07",
+      "name": "Bosque Real",
+      "form": "ROYAL_FOREST_SECTOR",
+      "authority": "repo_canon",
+      "relation": "NEAR_HALLHEIM",
+      "guard": "CROWN_NO_EDRANOR_RIGHTS",
+      "source": "norgard_bosques",
+      "geometry": null,
+      "localFeatureConfirmed": false
+    },
+    {
+      "id": "A08",
+      "name": "Paso de Vareth",
+      "form": "MOUNTAIN_PASS",
+      "authority": "repo_canon",
+      "relation": "AZURIOS_VELARIS",
+      "guard": "NOT_ASSIGNED_TO_EDRANOR",
+      "source": "norgard_montanas",
+      "geometry": null,
+      "localFeatureConfirmed": false
+    }
+  ],
+  "selectedDesignNames": [
+    {
+      "id": "EDR-G01",
+      "name": "Los Rellanos de Karsath",
+      "form": "WESTERN_INTERIOR_ROLLING_TERRAIN",
+      "anchor": "karsath",
+      "authority": "assistant_delegated_design",
+      "status": "SELECTED_DESIGN_NOT_MAPPED",
+      "origin": "E13_AND_R0",
+      "proofRequired": "CHECK_DRAINAGE_AND_SOIL",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-G02",
+      "name": "Las Gradas de Lumina",
+      "form": "PLATEAU_EDGE_STEPS",
+      "anchor": "lumina",
+      "authority": "assistant_delegated_design",
+      "status": "SELECTED_DESIGN_NOT_MAPPED",
+      "origin": "E13_AND_R0",
+      "proofRequired": "CHECK_PLATEAU_EDGE",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-G03",
+      "name": "La Umbría del Alto",
+      "form": "SHADED_FOREST_SLOPE",
+      "anchor": "lumina",
+      "authority": "assistant_delegated_design",
+      "status": "SELECTED_DESIGN_NOT_MAPPED",
+      "origin": "E13_AND_R0",
+      "proofRequired": "CHECK_EXPOSURE_AND_COVER",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-G04",
+      "name": "Los Resaltes de Dorth",
+      "form": "AZURIOS_WEST_FOOTHILL_RESALTS",
+      "anchor": "dorth",
+      "authority": "assistant_delegated_design",
+      "status": "SELECTED_DESIGN_NOT_MAPPED",
+      "origin": "E13_AND_R0",
+      "proofRequired": "CHECK_SLOPE_AND_FOREST_RIGHTS",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-G05",
+      "name": "Los Claros del Norte",
+      "form": "COLD_FOREST_MOSAIC",
+      "anchor": "north_transition",
+      "authority": "assistant_delegated_design",
+      "status": "SELECTED_DESIGN_NOT_MAPPED",
+      "origin": "E13_AND_R0",
+      "proofRequired": "CHECK_GRADUAL_ECOLOGY",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-G06",
+      "name": "La Nava de Rodas",
+      "form": "PROVISIONAL_BROAD_DEPRESSION",
+      "anchor": "rodas",
+      "authority": "assistant_delegated_design",
+      "status": "SELECTED_DESIGN_NOT_MAPPED",
+      "origin": "E13_AND_R0",
+      "proofRequired": "WITHDRAW_IF_NO_NAVA",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    }
+  ],
+  "proposedNames": [
+    {
+      "id": "EDR-P01",
+      "name": "Las Solanas de Karsath",
+      "form": "SUN_FACING_SLOPES",
+      "anchor": "karsath",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_LOCAL_EXPOSURE",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P02",
+      "name": "Los Lomos del Interior",
+      "form": "LOW_INTERFLUVES",
+      "anchor": "central_interior",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_DIVIDE_AND_NEIGHBORING_VALLEYS",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P03",
+      "name": "El Cinturón de Rellanos",
+      "form": "CENTRAL_ROLLING_BENCHES",
+      "anchor": "central_interior",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_RELATION_OF_BENCHES",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P04",
+      "name": "Las Vaguadas de la Campiña",
+      "form": "SHALLOW_DRAINAGE_VALLEYS",
+      "anchor": "central_wine",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_CONVERGENCE",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P05",
+      "name": "Las Hombreras del Alto",
+      "form": "PLATEAU_SHOULDERS",
+      "anchor": "bosque_alto",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_SHOULDER_LANDFORM",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P06",
+      "name": "Las Quebradas de Poniente",
+      "form": "AZURIOS_WESTERN_GULLIES",
+      "anchor": "azurios_west",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_GULLY_AND_BASIN",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P07",
+      "name": "Los Hombros del Bosque",
+      "form": "FORESTED_SPURS",
+      "anchor": "azurios_west",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_SPUR_AND_FOREST_CONTINUITY",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P08",
+      "name": "Las Hondas del Norte",
+      "form": "NORTHERN_MINOR_HOLLOWS",
+      "anchor": "north_transition",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_DEPRESSION_AND_DRAINAGE",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P09",
+      "name": "El Umbral Boreal",
+      "form": "GRADUAL_COLD_ECOLOGICAL_TRANSITION",
+      "anchor": "north_transition",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_CLIMATE_NOT_BORDER",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P10",
+      "name": "Las Cabeceras del Este",
+      "form": "EASTERN_VALKRAM_HEADWATERS",
+      "anchor": "valkram_east",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_HEADWATER_RELATION",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P11",
+      "name": "Las Terrazas del Medio",
+      "form": "NATURAL_INTERIOR_TERRACES",
+      "anchor": "central_interior",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_EROSION_OR_DEPOSITION",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    },
+    {
+      "id": "EDR-P12",
+      "name": "Los Espolones de Azurios",
+      "form": "AZURIOS_WEST_SECONDARY_RIDGES",
+      "anchor": "azurios_west",
+      "authority": "assistant_delegated_proposal",
+      "status": "PROPOSAL_NO_LOCAL_FEATURE",
+      "proofRequired": "PROVE_SECONDARY_RIDGES",
+      "geometry": null,
+      "materialized": false,
+      "worldStateId": null
+    }
+  ],
+  "reservedNames": [
+    {
+      "id": "ED13-T03",
+      "name": "Los Bancales Viejos",
+      "status": "RESERVED_UNASSIGNED",
+      "reason": "PREVIOUS_AGRICULTURAL_WORK_UNPROVEN"
+    },
+    {
+      "id": "ED13-T04",
+      "name": "La Loma del Lagar",
+      "status": "RESERVED_UNASSIGNED",
+      "reason": "LAGAR_STRUCTURE_UNPROVEN"
+    }
+  ],
+  "naturalTransitions": [
+    {
+      "from": "MF-01",
+      "to": "MF-02",
+      "relation": "CREST_SLOPE_TO_FOOTHILLS",
+      "isRoad": false
+    },
+    {
+      "from": "MF-02",
+      "to": "MF-03",
+      "relation": "FOOTHILL_TO_KARSATH_ROLLING_TERRAIN",
+      "isRoad": false
+    },
+    {
+      "from": "MF-03",
+      "to": "MF-04",
+      "relation": "INTERIOR_TO_CENTRAL_CAMPINA",
+      "isRoad": false
+    },
+    {
+      "from": "MF-04",
+      "to": "MF-05",
+      "relation": "LOWLAND_TO_PLATEAU",
+      "isRoad": false
+    },
+    {
+      "from": "MF-04",
+      "to": "MF-06",
+      "relation": "CENTRAL_TO_AZURIOS_FOOTHILLS",
+      "isRoad": false
+    },
+    {
+      "from": "MF-04",
+      "to": "MF-07",
+      "relation": "CENTRAL_TO_COLD_TRANSITION",
+      "isRoad": false
+    }
+  ],
+  "futurePhases": {
+    "R2": "HYDROLOGY_UNDELIMITED",
+    "R3": "SOILS_MICROCLIMATES_NOT_MATERIALIZED",
+    "R4": "ROUTES_NOT_MATERIALIZED",
+    "R5": "SETTLEMENTS_NOT_MATERIALIZED",
+    "R6": "AUDIT_PENDING",
+    "TEC": "GODOT_COORDINATES_DEFERRED"
+  },
+  "prohibitions": [
+    "NO_FAKE_NORTH_JOIN",
+    "NO_REJECTED_PR84",
+    "NO_ROADS_OR_PASSES_FROM_LORE",
+    "NO_MINOR_RIVERS_WITHOUT_BASIN",
+    "NO_CROWN_TRANSFER",
+    "NO_ROYAL_FOREST_HARVEST",
+    "NO_KARSATH_URBAN_PORT",
+    "NO_VARETH_IN_EDRANOR",
+    "NO_VIUDA_APPROPRIATION",
+    "NO_B3_B4_CLAIM"
+  ],
+  "sourceFiles": [
+    "Norgard/Geografía/montanas.md",
+    "Norgard/Geografía/rios_y_lagos.md",
+    "Norgard/Geografía/bosques.md",
+    "Casa Edranor/E13/03_MONTANAS_VALLES_Y_TOPONIMIA.md",
+    "Casa Edranor/E19-R0/06_CANON_FRONTERAS_NATURALES.md",
+    "Casa Edranor/E19-R0/natural_regions_v0.1.json",
+    "Casa Valrik/Geografia_local/microrelieve_y_unidades_de_drenaje_v0.1.md",
+    "Casa Valrik/Geografia_local/cuencas_manantiales_red_hidrografica_menor_v0.1.md"
+  ]
+}
