@@ -164,6 +164,20 @@ def validate_packet(packet: dict, registry: dict | None = None) -> dict:
     error = ref.get("uncertaintyMetres")
     require(type(error) in (int, float) and math.isfinite(error) and error >= 0,
             "Error espacial inexistente")
+    # Transformacion afín local reversible: sin escala/origen no se puede
+    # contrastar un plano de fuente con coordenadas metricas.
+    transform = ref.get("sourceToLocal")
+    require(type(transform) is dict and set(transform) == {
+            "scaleMetresPerSourceUnit", "rotationRadians",
+            "sourceOrigin", "localOrigin"}, "Transformacion local ausente")
+    scale, rotation = (transform["scaleMetresPerSourceUnit"],
+                       transform["rotationRadians"])
+    require(type(scale) in (int, float) and math.isfinite(scale) and
+            1e-12 < scale <= 1e9, "Transformacion no invertible")
+    require(type(rotation) in (int, float) and math.isfinite(rotation),
+            "Rotacion invalida")
+    point(transform["sourceOrigin"])
+    point(transform["localOrigin"])
     registry = registry or {"schemaVersion": 1, "approvedSectors": [], "evidence": []}
     require(registry.get("schemaVersion") == 1 and
             type(registry.get("approvedSectors")) is list and
