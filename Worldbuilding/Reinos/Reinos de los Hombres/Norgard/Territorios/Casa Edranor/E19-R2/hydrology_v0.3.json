@@ -1,0 +1,611 @@
+{
+  "schemaVersion": 3,
+  "documentId": "edranor_e19_r2_hydrology",
+  "phase": "E19-R2",
+  "status": "REGIONAL_CAUSAL_DESIGN_B2_NOT_RUNTIME",
+  "authority": "ASSISTANT_DELEGATED_DESIGN",
+  "precedent": "VALRIK_GEOGRAFIA_LOCAL",
+  "base": {
+    "r0HeadSha": "addd767de9bf27ef35e8aef6d68cde00dea79c10",
+    "r1HeadSha": "4472e81a88eba7a8e42528043ee426d685c76cef",
+    "parentPhase": "E19-R1",
+    "rejectedPR84Used": false
+  },
+  "materialization": {
+    "implementedInGodot": false,
+    "worldStateEntities": 0,
+    "actualMinorRivers": 0,
+    "actualSprings": 0,
+    "actualWetlands": 0,
+    "actualRoads": 0,
+    "actualWaterRights": 0,
+    "geometry": null,
+    "projection": null,
+    "measuredDischarge": null,
+    "measuredAltitude": null,
+    "measuredArea": null
+  },
+  "majorSystem": {
+    "sequence": [
+      "Valkram eastern slope",
+      "Río Lurien",
+      "Lago Antela",
+      "Río Lurien",
+      "Hallheim",
+      "Golfo de Norgard"
+    ],
+    "sourceSlope": "VALKRAM_EAST",
+    "antelaRelativeToKarsath": "SOUTH",
+    "urbanKarsathShoreConfirmed": false,
+    "majorDorthRiverConfirmed": false,
+    "caleranAtDorthConfirmed": false,
+    "caleranNorgardSource": "AZURIOS_WEST_GENERAL_CANON_LOCAL_PATH_UNKNOWN",
+    "lurienNavigationFrom": "Hallheim",
+    "southBorderOnlyPartialLurien": true,
+    "southBorderSegment": null
+  },
+  "divides": {
+    "valkram": {
+      "westernSlope": "casa_darovan",
+      "easternSlope": "casa_edranor"
+    },
+    "azurios": {
+      "westernSlope": "casa_edranor",
+      "easternSlope": "casa_galdren"
+    },
+    "northArtificialClosure": false,
+    "northRedSketchLinesJoin": false,
+    "farNorthMF08": "NON_EVALUABLE"
+  },
+  "jurisdiction": {
+    "rodas": "crown_aethros",
+    "rodasType": "ALDEA",
+    "hallheim": "OUTSIDE_EDRANOR",
+    "bosqueAltoHarvest": "PERMIT_REQUIRED",
+    "bosqueReal": "crown_aethros"
+  },
+  "contextIds": [
+    "MF-01",
+    "MF-02",
+    "MF-03",
+    "MF-04",
+    "MF-05",
+    "MF-06",
+    "MF-07",
+    "MF-08"
+  ],
+  "basinFamilies": [
+    {
+      "id": "HC-01",
+      "name": "Cabeceras orientales de Valkram",
+      "contextId": "MF-01",
+      "status": "DESIGN_FAMILY_UNLOCATED",
+      "evaluable": true,
+      "receiver": "UNKNOWN",
+      "receiverCandidates": [
+        "MINOR_COURSE_IF_PROVEN",
+        "CANON_RIVER_IF_PROVEN",
+        "LAKE_IF_PROVEN",
+        "SUBSURFACE_IF_BALANCED",
+        "EXTERNAL_BASIN_IF_PROVEN"
+      ],
+      "geometry": null,
+      "flowMeasurements": null,
+      "densityClass": "HIGH_POTENTIAL_NOT_COUNT",
+      "guard": "NO_BELARA_CROSS_DIVIDE",
+      "jurisdictionChange": false
+    },
+    {
+      "id": "HC-02",
+      "name": "Piedemonte de Valkram",
+      "contextId": "MF-02",
+      "status": "DESIGN_FAMILY_UNLOCATED",
+      "evaluable": true,
+      "receiver": "UNKNOWN",
+      "receiverCandidates": [
+        "MINOR_COURSE_IF_PROVEN",
+        "CANON_RIVER_IF_PROVEN",
+        "LAKE_IF_PROVEN",
+        "SUBSURFACE_IF_BALANCED",
+        "EXTERNAL_BASIN_IF_PROVEN"
+      ],
+      "geometry": null,
+      "flowMeasurements": null,
+      "densityClass": "MODERATE_TO_HIGH_CONDITIONAL",
+      "guard": "NO_PERENNIAL_FAN_ASSUMPTION",
+      "jurisdictionChange": false
+    },
+    {
+      "id": "HC-03",
+      "name": "Rellanos de Karsath",
+      "contextId": "MF-03",
+      "status": "DESIGN_FAMILY_UNLOCATED",
+      "evaluable": true,
+      "receiver": "UNKNOWN",
+      "receiverCandidates": [
+        "MINOR_COURSE_IF_PROVEN",
+        "CANON_RIVER_IF_PROVEN",
+        "LAKE_IF_PROVEN",
+        "SUBSURFACE_IF_BALANCED",
+        "EXTERNAL_BASIN_IF_PROVEN"
+      ],
+      "geometry": null,
+      "flowMeasurements": null,
+      "densityClass": "MODERATE_CONDITIONAL",
+      "guard": "NO_KARSATH_URBAN_SHORE",
+      "jurisdictionChange": false
+    },
+    {
+      "id": "HC-04",
+      "name": "Campiña central vinícola",
+      "contextId": "MF-04",
+      "status": "DESIGN_FAMILY_UNLOCATED",
+      "evaluable": true,
+      "receiver": "UNKNOWN",
+      "receiverCandidates": [
+        "MINOR_COURSE_IF_PROVEN",
+        "CANON_RIVER_IF_PROVEN",
+        "LAKE_IF_PROVEN",
+        "SUBSURFACE_IF_BALANCED",
+        "EXTERNAL_BASIN_IF_PROVEN"
+      ],
+      "geometry": null,
+      "flowMeasurements": null,
+      "densityClass": "MODERATE_CONDITIONAL",
+      "guard": "NO_UNIVERSAL_IRRIGATION",
+      "jurisdictionChange": false
+    },
+    {
+      "id": "HC-05",
+      "name": "Meseta de Lumina y Bosque Alto",
+      "contextId": "MF-05",
+      "status": "DESIGN_FAMILY_UNLOCATED",
+      "evaluable": true,
+      "receiver": "UNKNOWN",
+      "receiverCandidates": [
+        "MINOR_COURSE_IF_PROVEN",
+        "CANON_RIVER_IF_PROVEN",
+        "LAKE_IF_PROVEN",
+        "SUBSURFACE_IF_BALANCED",
+        "EXTERNAL_BASIN_IF_PROVEN"
+      ],
+      "geometry": null,
+      "flowMeasurements": null,
+      "densityClass": "VARIABLE_FOREST_COVER",
+      "guard": "NO_AUTOMATIC_LURIEN_RECEIVER",
+      "jurisdictionChange": false
+    },
+    {
+      "id": "HC-06",
+      "name": "Piedemonte occidental de Azurios",
+      "contextId": "MF-06",
+      "status": "DESIGN_FAMILY_UNLOCATED",
+      "evaluable": true,
+      "receiver": "UNKNOWN",
+      "receiverCandidates": [
+        "MINOR_COURSE_IF_PROVEN",
+        "CANON_RIVER_IF_PROVEN",
+        "LAKE_IF_PROVEN",
+        "SUBSURFACE_IF_BALANCED",
+        "EXTERNAL_BASIN_IF_PROVEN"
+      ],
+      "geometry": null,
+      "flowMeasurements": null,
+      "densityClass": "HIGH_HEADWATER_POTENTIAL_NOT_COUNT",
+      "guard": "NO_DORTH_CALERAN_ASSUMPTION",
+      "jurisdictionChange": false
+    },
+    {
+      "id": "HC-07",
+      "name": "Transición fría de Rodas",
+      "contextId": "MF-07",
+      "status": "DESIGN_FAMILY_UNLOCATED",
+      "evaluable": true,
+      "receiver": "UNKNOWN",
+      "receiverCandidates": [
+        "MINOR_COURSE_IF_PROVEN",
+        "CANON_RIVER_IF_PROVEN",
+        "LAKE_IF_PROVEN",
+        "SUBSURFACE_IF_BALANCED",
+        "EXTERNAL_BASIN_IF_PROVEN"
+      ],
+      "geometry": null,
+      "flowMeasurements": null,
+      "densityClass": "UNKNOWN",
+      "guard": "RODAS_CROWN_NO_NORTH_CLOSURE",
+      "jurisdictionChange": false
+    }
+  ],
+  "minorDrainageScenarios": [
+    {
+      "id": "HS-01",
+      "name": "Cabecera abrupta",
+      "basinId": "HC-01",
+      "sourceCause": "SLOPE_CONVERGENCE_AND_RAIN",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-02",
+      "name": "Vaguada de nieve",
+      "basinId": "HC-01",
+      "sourceCause": "SNOW_AND_MELT_IF_PROVEN",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-03",
+      "name": "Colector de piedemonte",
+      "basinId": "HC-02",
+      "sourceCause": "FAN_CONVERGENCE",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-04",
+      "name": "Tramo perdedor en gravas",
+      "basinId": "HC-02",
+      "sourceCause": "INFILTRATION_LOSS_IF_PROVEN",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-05",
+      "name": "Regato entre rellanos",
+      "basinId": "HC-03",
+      "sourceCause": "INTERFLUVE_CONVERGENCE",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-06",
+      "name": "Bajo saturable",
+      "basinId": "HC-03",
+      "sourceCause": "SATURATION_IF_PROVEN",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-07",
+      "name": "Vaguada entre lomas",
+      "basinId": "HC-04",
+      "sourceCause": "ROLLING_TERRAIN_RUNOFF",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-08",
+      "name": "Cauce de tormenta",
+      "basinId": "HC-04",
+      "sourceCause": "INTENSE_RAINFALL_IF_PROVEN",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-09",
+      "name": "Cabecera de meseta",
+      "basinId": "HC-05",
+      "sourceCause": "PLATEAU_DIVIDE",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-10",
+      "name": "Rezume de umbría",
+      "basinId": "HC-05",
+      "sourceCause": "AQUIFER_CONTACT_IF_PROVEN",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-11",
+      "name": "Quebrada forestal",
+      "basinId": "HC-06",
+      "sourceCause": "AZURIOS_WEST_SLOPE",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-12",
+      "name": "Colector bajo resalte",
+      "basinId": "HC-06",
+      "sourceCause": "FOOTHILL_SLOPE_BREAK",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-13",
+      "name": "Drenaje de fondo frío",
+      "basinId": "HC-07",
+      "sourceCause": "COLD_HOLLOW_IF_VERIFIED",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    },
+    {
+      "id": "HS-14",
+      "name": "Cauce de deshielo",
+      "basinId": "HC-07",
+      "sourceCause": "SNOWMELT_ONLY_IF_SNOW_EXISTS",
+      "sourceEvidence": "NOT_VERIFIED",
+      "receiver": "UNKNOWN",
+      "regime": "UNKNOWN",
+      "status": "SCENARIO_UNLOCATED",
+      "materialized": false,
+      "worldStateId": null,
+      "geometry": null,
+      "riverName": null
+    }
+  ],
+  "springTypes": [
+    {
+      "id": "SP-01",
+      "cause": "CONTACT_LAYER",
+      "basinIds": [
+        "HC-02",
+        "HC-05"
+      ],
+      "requires": [
+        "RECHARGE",
+        "HYDRAULIC_GRADIENT",
+        "GEOLOGIC_OR_SOIL_MECHANISM",
+        "DISCHARGE_POINT"
+      ],
+      "status": "TYPE_ONLY",
+      "confirmed": false,
+      "geometry": null,
+      "flow": null,
+      "waterRights": null
+    },
+    {
+      "id": "SP-02",
+      "cause": "FRACTURE_AQUIFER",
+      "basinIds": [
+        "HC-01",
+        "HC-06"
+      ],
+      "requires": [
+        "RECHARGE",
+        "HYDRAULIC_GRADIENT",
+        "GEOLOGIC_OR_SOIL_MECHANISM",
+        "DISCHARGE_POINT"
+      ],
+      "status": "TYPE_ONLY",
+      "confirmed": false,
+      "geometry": null,
+      "flow": null,
+      "waterRights": null
+    },
+    {
+      "id": "SP-03",
+      "cause": "COLLUVIAL_TOE",
+      "basinIds": [
+        "HC-02",
+        "HC-06"
+      ],
+      "requires": [
+        "RECHARGE",
+        "HYDRAULIC_GRADIENT",
+        "GEOLOGIC_OR_SOIL_MECHANISM",
+        "DISCHARGE_POINT"
+      ],
+      "status": "TYPE_ONLY",
+      "confirmed": false,
+      "geometry": null,
+      "flow": null,
+      "waterRights": null
+    },
+    {
+      "id": "SP-04",
+      "cause": "VALLEY_FLOOR_WATERTABLE",
+      "basinIds": [
+        "HC-03",
+        "HC-04",
+        "HC-07"
+      ],
+      "requires": [
+        "RECHARGE",
+        "HYDRAULIC_GRADIENT",
+        "GEOLOGIC_OR_SOIL_MECHANISM",
+        "DISCHARGE_POINT"
+      ],
+      "status": "TYPE_ONLY",
+      "confirmed": false,
+      "geometry": null,
+      "flow": null,
+      "waterRights": null
+    },
+    {
+      "id": "SP-05",
+      "cause": "FOREST_SHADED_SEEP",
+      "basinIds": [
+        "HC-05",
+        "HC-06"
+      ],
+      "requires": [
+        "RECHARGE",
+        "HYDRAULIC_GRADIENT",
+        "GEOLOGIC_OR_SOIL_MECHANISM",
+        "DISCHARGE_POINT"
+      ],
+      "status": "TYPE_ONLY",
+      "confirmed": false,
+      "geometry": null,
+      "flow": null,
+      "waterRights": null
+    }
+  ],
+  "wetlandTypes": [
+    {
+      "id": "WH-01",
+      "cause": "CLOSED_OR_SLOW_DRAIN_DEPRESSION",
+      "requires": [
+        "DEPRESSION_OR_SATURATED_SOIL",
+        "POSITIVE_WATER_BALANCE",
+        "VALID_EXIT_OR_STORAGE"
+      ],
+      "status": "TYPE_ONLY",
+      "confirmed": false,
+      "area": null,
+      "receiver": "UNKNOWN"
+    },
+    {
+      "id": "WH-02",
+      "cause": "FLOODPLAIN_BACKWATER",
+      "requires": [
+        "DEPRESSION_OR_SATURATED_SOIL",
+        "POSITIVE_WATER_BALANCE",
+        "VALID_EXIT_OR_STORAGE"
+      ],
+      "status": "TYPE_ONLY",
+      "confirmed": false,
+      "area": null,
+      "receiver": "UNKNOWN"
+    },
+    {
+      "id": "WH-03",
+      "cause": "FOREST_SEEP_SATURATION",
+      "requires": [
+        "DEPRESSION_OR_SATURATED_SOIL",
+        "POSITIVE_WATER_BALANCE",
+        "VALID_EXIT_OR_STORAGE"
+      ],
+      "status": "TYPE_ONLY",
+      "confirmed": false,
+      "area": null,
+      "receiver": "UNKNOWN"
+    }
+  ],
+  "regimes": [
+    "PERMANENT_IF_EVIDENCED",
+    "SEASONAL_IF_EVIDENCED",
+    "EPHEMERAL_IF_EVIDENCED",
+    "UNKNOWN"
+  ],
+  "seasonalProcesses": [
+    "WET_RECHARGE",
+    "STORM_RUNOFF",
+    "SNOW_ACCUMULATION_IF_VERIFIED",
+    "THAW_IF_VERIFIED",
+    "LOW_FLOW",
+    "INFILTRATION_AND_GROUNDWATER"
+  ],
+  "graphContract": {
+    "directedAcyclic": true,
+    "receiverRequiredBeforeMaterialization": true,
+    "uphillFlowForbidden": true,
+    "closedSinkRequiresBalance": true,
+    "minorGraphEdges": [],
+    "waterRightsImplied": false
+  },
+  "reservedUnknowns": [
+    "INTERIOR_DIVIDE_GEOMETRY",
+    "ALL_MINOR_RECEIVERS",
+    "ALL_SPRING_LOCATIONS",
+    "WATER_TABLE",
+    "FLOW_RATES",
+    "GROUNDWATER_CONNECTIONS",
+    "WATER_USE_RIGHTS",
+    "LURIEN_BORDER_SEGMENT",
+    "R3_SOIL_PERMEABILITY"
+  ],
+  "prohibitions": [
+    "NO_FAKE_NORTH_JOIN",
+    "NO_REJECTED_PR84",
+    "NO_RIVER_WITHOUT_RECEIVER",
+    "NO_CYCLE",
+    "NO_UPHILL_FLOW",
+    "NO_KARSATH_URBAN_PORT",
+    "NO_DORTH_MAJOR_RIVER",
+    "NO_CALERAN_DORTH_TRANSFER",
+    "NO_BELARA_EAST_TRANSFER",
+    "NO_RODAS_CROWN_TRANSFER",
+    "NO_ROYAL_FOREST_HARVEST",
+    "NO_FREE_IRRIGATION",
+    "NO_B3_B4_CLAIM"
+  ],
+  "futurePhases": {
+    "R3": "SOILS_MICROCLIMATES_PENDING",
+    "R4": "ROUTES_PENDING",
+    "R5": "OCCUPATION_PENDING",
+    "R6": "AUDIT_PENDING",
+    "TEC": "GODOT_COORDINATES_DEFERRED"
+  }
+}
