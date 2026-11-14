@@ -76,7 +76,7 @@ def verify_parents(data: dict) -> None:
             r5["worldState"]["enabled"] is False, "R5 no debe materializar")
     require(r1["jurisdiction"]["rodas"] == "crown_aethros" and
             r1["jurisdiction"]["rodasType"] == "ALDEA" and
-            r1["jurisdiction"]["hallheim"] == "outside_edranor" and
+            r1["jurisdiction"]["hallheim"] == "OUTSIDE_EDRANOR" and
             r1["jurisdiction"]["bosqueAltoHarvest"] == "PERMIT_REQUIRED" and
             r1["jurisdiction"]["bosqueReal"] == "crown_aethros",
             "Jurisdicciones R1 alteradas")
