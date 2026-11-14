@@ -12,12 +12,21 @@ La geografía narrativa R0–R6 ya permite razonar sobre montañas, cuencas, sue
 - 01_CONTRATO_ESPACIAL_Y_AUTORIDAD.md: unidad, sector, procedencia, geometrías y validaciones.
 - 02_PUERTAS_Y_ENTREGA_AL_MOTOR.md: responsabilidades y criterios.
 - 03_PARIDAD_METODOLOGICA_VALRIK_TRESKAL.md: comparación directa con el método de Valrik y sus restricciones, sin condicionar B2 a una cartografía métrica.
+- 04_EJECUCION_NIM08_Y_ACEPTACION.md: lo programado, pruebas y separación con la arquitectura de fábrica NIM-08.
 - Tools/EdranorE19TEC/spatial.py: verificador y exportador separado de Game/CoreRPG.
-- Tools/EdranorE19TEC/test_spatial.py: pruebas positivas sintéticas y rechazos.
-- Workflow CI: Linux + Windows con regresiones E19-R0–R6.
+- Tools/EdranorE19TEC/causal_atlas.py: compilación real de R1–R5 en siete contextos B2 no métricos.
+- Tools/EdranorE19TEC/drainage_lab.py: D8 y balance de agua SOLAMENTE sobre cuadrículas de pruebas.
+- Tools/EdranorE19TEC/route_query.py: consulta sin mutación de grafo físico Gp bajo derechos y cierres.
+- Tools/EdranorE19TEC/GodotLab/: motor Godot 4.7.2 aislado para leer contextos y construir ocho formas sintéticas 2D; NO se instala en el Host.
+- Tools/EdranorE19TEC/test_*.py: ensayos positivos y adversariales de geometría, causalidad, agua y rutas.
+- Workflow CI: Linux + Windows con regresiones E19-R0–R6 y Godot real headless.
 
 Uso local desde raíz del repositorio:
 python Tools/EdranorE19TEC/test_spatial.py
+python Tools/EdranorE19TEC/test_causal_atlas.py
+python Tools/EdranorE19TEC/test_drainage_lab.py
+python Tools/EdranorE19TEC/test_route_query.py
+python Tools/EdranorE19TEC/causal_atlas.py --output atlas_edranor_B2.json
 python Tools/EdranorE19TEC/spatial.py --input mi_sector_autorizado.json --output sector_para_godot.json
 
 El segundo comando **rechaza** un sector sin autoría, aprobación B3, referencia espacial e información material real. No se incluye aquí ningún mi_sector_autorizado.json porque todavía no existe evidencia para él.
