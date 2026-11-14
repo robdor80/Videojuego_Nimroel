@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 7,
+  "documentId": "edranor_e19_r6_transversal_parity",
+  "phase": "E19-R6",
+  "date": "2026-11-14",
+  "status": "REGIONAL_B2_METHOD_PARITY_WITH_EXPLICIT_GAPS",
+  "authority": "INDEPENDENT_ASSISTANT_AUDIT_NO_CANON_PROMOTION",
+  "parent": {
+    "phase": "E19-R5",
+    "headSha": "f38da5e8a0a262e107ba94ec6ea07a5a7f4a7751",
+    "repo": "robdor80/Videojuego_Nimroel",
+    "mainAtAudit": "223f1e49adfbc73be6a80c6ce36e7aab506450c2"
+  },
+  "precedence": "AUTHOR_20261114_R0_SUPERSEDES_E20_P00_METRIC_PREREQUISITE_FOR_B2",
+  "rejectedPR84Reused": false,
+  "verdict": {
+    "regionalMethodB2": "PARITY_WITH_RESERVATIONS",
+    "materialB3": "NOT_ACCREDITED",
+    "runtimeB4": "NOT_ACCREDITED",
+    "wholeTerritory": "NOT_ACCREDITED",
+    "e19TecCompleted": false,
+    "e20Completed": false,
+    "mainMerged": false
+  },
+  "sources": [
+    {
+      "phase": "E19-R0",
+      "sha": "addd767de9bf27ef35e8aef6d68cde00dea79c10",
+      "status": "SOURCE_REVIEW_ONLY_MATERIAL_BLOCKED"
+    },
+    {
+      "phase": "E19-R1",
+      "sha": "4472e81a88eba7a8e42528043ee426d685c76cef",
+      "status": "REGIONAL_DESIGN_NOT_RUNTIME"
+    },
+    {
+      "phase": "E19-R2",
+      "sha": "50a284cf33d59465332623c8a46c5e1d41cdb664",
+      "status": "REGIONAL_CAUSAL_DESIGN_B2_NOT_RUNTIME"
+    },
+    {
+      "phase": "E19-R3",
+      "sha": "8887445eec5996d18f4c63b849f568ea39c8b0ef",
+      "status": "REGIONAL_CAUSAL_DESIGN_B2_NOT_RUNTIME"
+    },
+    {
+      "phase": "E19-R4",
+      "sha": "17664ebd54f9553d1a652c79f4a851c169da629c",
+      "status": "REGIONAL_CAUSAL_DESIGN_B2_NOT_RUNTIME"
+    },
+    {
+      "phase": "E19-R5",
+      "sha": "f38da5e8a0a262e107ba94ec6ea07a5a7f4a7751",
+      "status": "REGIONAL_CAUSAL_OCCUPATION_B2_NOT_RUNTIME"
+    }
+  ],
+  "matrix": [
+    {
+      "dimension": "GEOGRAFIA",
+      "scope": "E19_DIRECT",
+      "e18DocumentedB2": true,
+      "materialValidatedB3": false,
+      "runtimeValidatedB4": false,
+      "regionalVerdict": "B2_METHOD_ONLY"
+    },
+    {
+      "dimension": "CLIMA",
+      "scope": "E19_DIRECT",
+      "e18DocumentedB2": true,
+      "materialValidatedB3": false,
+      "runtimeValidatedB4": false,
+      "regionalVerdict": "B2_METHOD_ONLY"
+    },
+    {
+      "dimension": "RECURSOS",
+      "scope": "E19_DIRECT",
+      "e18DocumentedB2": true,
+      "materialValidatedB3": false,
+      "runtimeValidatedB4": false,
+      "regionalVerdict": "B2_METHOD_ONLY"
+    },
+    {
+      "dimension": "ASENTAMIENTOS",
+      "scope": "E19_DIRECT",
+      "e18DocumentedB2": true,
+      "materialValidatedB3": false,
+      "runtimeValidatedB4": false,
+      "regionalVerdict": "B2_METHOD_ONLY"
+    },
+    {
+      "dimension": "POBLACION",
+      "scope": "E19_INTERFACE",
+      "e18DocumentedB2": true,
+      "materialValidatedB3": false,
+      "runtimeValidatedB4": false,
+      "regionalVerdict": "B2_INTERFACE_ONLY"
+    },
+    {
+      "dimension": "INSTITUCIONES",
+      "scope": "E19_INTERFACE",
+      "e18DocumentedB2": true,
+      "materialValidatedB3": false,
+      "runtimeValidatedB4": false,
+      "regionalVerdict": "B2_INTERFACE_ONLY"
+    },
+    {
+      "dimension": "CULTURA",
+      "scope": "FUTURE_LOCAL",
+      "e18DocumentedB2": true,
+      "materialValidatedB3": false,
+      "runtimeValidatedB4": false,
+      "regionalVerdict": "OUTSIDE_E19_AUDIT"
+    },
+    {
+      "dimension": "PERSONAJES",
+      "scope": "FUTURE_LOCAL",
+      "e18DocumentedB2": true,
+      "materialValidatedB3": false,
+      "runtimeValidatedB4": false,
+      "regionalVerdict": "OUTSIDE_E19_AUDIT"
+    },
+    {
+      "dimension": "CONFLICTOS",
+      "scope": "FUTURE_LOCAL",
+      "e18DocumentedB2": true,
+      "materialValidatedB3": false,
+      "runtimeValidatedB4": false,
+      "regionalVerdict": "OUTSIDE_E19_AUDIT"
+    },
+    {
+      "dimension": "IMPLEMENTACION",
+      "scope": "E19_INTERFACE",
+      "e18DocumentedB2": true,
+      "materialValidatedB3": false,
+      "runtimeValidatedB4": false,
+      "regionalVerdict": "B2_INTERFACE_ONLY"
+    }
+  ],
+  "invariants": {
+    "northSketchJoined": false,
+    "politicalNorthClosed": false,
+    "farNorthMF08Evaluable": false,
+    "valkramWest": "casa_darovan",
+    "valkramEast": "casa_edranor",
+    "azuriosWest": "casa_edranor",
+    "azuriosEast": "casa_galdren",
+    "lurienWholeSouthernBoundary": false,
+    "rodasType": "ALDEA",
+    "rodasJurisdiction": "crown_aethros",
+    "hallheimInEdranor": false,
+    "bosqueAltoPermitRequired": true,
+    "bosqueRealOwner": "crown_aethros",
+    "karsathUrbanPortConfirmed": false,
+    "caleranAtDorthConfirmed": false,
+    "r4CertifiedPhysicalNodes": 0,
+    "r4CertifiedPhysicalEdges": 0,
+    "r5CertifiedProviders": 0,
+    "r5ActualSettlements": 0,
+    "r5ApprovedParcels": 0,
+    "r5WorldStateEntities": 0,
+    "r5OSStudies": 19,
+    "r5AdversarialCases": 30,
+    "actualPopulationVerified": false
+  },
+  "openDebts": [
+    "EDD-01",
+    "EDD-02",
+    "EDD-03",
+    "EDD-04",
+    "EDD-05",
+    "EDD-07",
+    "EDD-08"
+  ],
+  "designOnlyDebt": "EDD-06",
+  "materialPromotionGates": [
+    {
+      "id": "B3-01",
+      "scope": "NORTH_AND_LEGAL_BOUNDARIES",
+      "passed": false
+    },
+    {
+      "id": "B3-02",
+      "scope": "METRIC_SPATIAL_AUTHORITY",
+      "passed": false
+    },
+    {
+      "id": "B3-03",
+      "scope": "HYDROLOGY_RECEPTOR_RIGHTS",
+      "passed": false
+    },
+    {
+      "id": "B3-04",
+      "scope": "SOIL_CLIMATE_SURVEY",
+      "passed": false
+    },
+    {
+      "id": "B3-05",
+      "scope": "VERIFIED_GP_ROADS_ACCESS",
+      "passed": false
+    },
+    {
+      "id": "B3-06",
+      "scope": "PARCELS_HOMES_OWNERSHIP",
+      "passed": false
+    },
+    {
+      "id": "B3-07",
+      "scope": "CENSUS_AND_PROVIDERS",
+      "passed": false
+    },
+    {
+      "id": "B3-08",
+      "scope": "QA_AND_PROVENANCE",
+      "passed": false
+    },
+    {
+      "id": "B4-01",
+      "scope": "GODOT_2D_WORLD_LOAD",
+      "passed": false
+    },
+    {
+      "id": "B4-02",
+      "scope": "CORERPG_WORLDSTATE_SAVELOAD",
+      "passed": false
+    }
+  ],
+  "regression": {
+    "r0ToR5Required": true,
+    "r6CrossChecksRequired": true,
+    "linuxWindowsRequired": true,
+    "testsAreSyntheticNotRuntime": true,
+    "certifiedFinalHead": null
+  },
+  "docs": [
+    "README.md",
+    "01_FUENTES_GENEALOGIA_PRECEDENCIA.md",
+    "02_MATRIZ_PARIDAD_Y_BRECHAS.md",
+    "03_AUDITORIA_CAUSAL_Y_ADVERSARIAL.md",
+    "04_PUERTAS_B3_B4_Y_PLAN_DE_ENTREGA.md",
+    "05_DICTAMEN_Y_ACTA_DE_CIERRE.md"
+  ],
+  "next": "E19-TEC_AND_E20_E29_WITH_GATE_EVIDENCE"
+}
