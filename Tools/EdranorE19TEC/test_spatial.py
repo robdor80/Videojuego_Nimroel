@@ -19,7 +19,7 @@ def feat(id, kind, typ, coords, **kwargs):
 def packet():
     return {
         "schemaVersion": 1, "sectorId": "TEST_SECTOR_ONLY",
-        "mode": "synthetic",
+        "contextIds": ["MF-01"], "mode": "synthetic",
         "authorization": {"kind": "SYNTHETIC_TEST", "approved": False,
                           "sourceId": "TEST_ONLY", "approvalId": None},
         "spatialReference": {"kind": "LOCAL_METRIC", "units": "metres",
@@ -174,6 +174,11 @@ class TestSpatial(unittest.TestCase):
 
     def test_duplicate_id(self):
         self.reject(lambda p: p["features"][1].update(id="n1"))
+
+    def test_north_context_not_materializable(self):
+        self.reject(lambda p: p.update(contextIds=["MF-08"]))
+        self.reject(lambda p: p.update(contextIds=["U7"]))
+        self.reject(lambda p: p.update(contextIds=[]))
 
     def test_no_false_authority(self):
         self.reject(lambda p: p["authorization"].update(approved=True))
