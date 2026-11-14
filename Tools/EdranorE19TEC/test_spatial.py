@@ -23,7 +23,11 @@ def packet():
         "authorization": {"kind": "SYNTHETIC_TEST", "approved": False,
                           "sourceId": "TEST_ONLY", "approvalId": None},
         "spatialReference": {"kind": "LOCAL_METRIC", "units": "metres",
-                             "sourceId": "TEST_ONLY", "uncertaintyMetres": 0.25},
+                             "sourceId": "TEST_ONLY", "uncertaintyMetres": 0.25,
+                             "sourceToLocal": {
+                                 "scaleMetresPerSourceUnit": 1,
+                                 "rotationRadians": 0,
+                                 "sourceOrigin": [0, 0], "localOrigin": [0, 0]}},
         "features": [
             feat("n1", "route_node", "Point", [0, 0]),
             feat("n2", "route_node", "Point", [2, 0]),
@@ -184,6 +188,11 @@ class TestSpatial(unittest.TestCase):
     def test_reference_has_units_and_error(self):
         self.reject(lambda p: p["spatialReference"].update(units="pixels"))
         self.reject(lambda p: p["spatialReference"].update(uncertaintyMetres=-1))
+        self.reject(lambda p: p["spatialReference"].pop("sourceToLocal"))
+        self.reject(lambda p: p["spatialReference"]["sourceToLocal"].update(
+            scaleMetresPerSourceUnit=0))
+        self.reject(lambda p: p["spatialReference"]["sourceToLocal"].update(
+            rotationRadians=float("inf")))
 
     def test_manifest_mutations_denied(self):
         m = read_json(BASE / "technical_manifest_v0.1.json")
