@@ -161,11 +161,11 @@ def verify(g: dict, v: dict, e18: dict, e07: dict) -> None:
                 "documento de paridad incompleto: " + p)
     catalog = (E / "E20/03_CRUCE_CAPACIDADES_TRESKAL_00_99.md").read_text(encoding="utf-8")
     listed = re.findall(
-        r"^\\| \\[.+?\\]\\(\\.\\./\\.\\./Casa%20Valrik/Treskal/([^/]+)/\\) \\|",
+        r"^\| \[.+?\]\(\.\./\.\./Casa%20Valrik/Treskal/([^/]+)/\) \|",
         catalog, flags=re.MULTILINE,
     )
     real = [p.name for p in (V / "Treskal").iterdir()
-            if p.is_dir() and re.match(r"^\\d\\d_", p.name)]
+            if p.is_dir() and re.match(r"^\d\d_", p.name)]
     require(len(listed) == len(real) == 101 and
             len(set(listed)) == 101 and set(listed) == set(real),
             "catálogo incompleto: faltan ámbitos numerados de Treskal")
