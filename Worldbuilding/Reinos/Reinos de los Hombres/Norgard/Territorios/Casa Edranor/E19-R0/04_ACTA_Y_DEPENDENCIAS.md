@@ -15,3 +15,7 @@
 **Paralelismo permitido:** E20-P01 puede desarrollar identidad urbana, operaciones, barrios funcionales sin coordenadas, actividad, instituciones y conflictos de Dorth. **Bloqueado:** cualquier plano métrico, parcela identificada como real, carretera, río/puerto local o salida 2D integrada sin R1–R6.
 
 **Fuentes de referencia y comparación:** main 223f1e49; Treskal/08_Cartografia; Edranor/E00, E01, E07, E13, E18; PR #84 cerrada sin fusión.
+
+
+## Desbloqueo correcto de la geografía regional (decisión del autor, 14/11/2026)
+El trabajo E19 deja de exigir un mapa métrico para diseñar Edranor. Se desarrollan regiones, accidentes con nombre, hidrografía menor, rutas por corredores y ocupación territorial según el **patrón de Valrik/Geografia_local**. Los requisitos de CRS, píxeles o GeoJSON pasan a una fase técnica de integración Godot; no bloquean fases de lore, topología natural o comunidades. El documento `07_ATLAS_GEOGRAFIA_CAUSAL_NO_METRICA.md` abre este trabajo. La paridad completa todavía NO está acreditada.

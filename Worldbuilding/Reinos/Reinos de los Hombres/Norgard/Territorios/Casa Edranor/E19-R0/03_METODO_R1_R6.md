@@ -1,29 +1,39 @@
-# E19-R0 — Reconstrucción con puertas de prueba, no por dibujo
-El procedimiento toma de Treskal la secuencia de autoridad → huella → geografía → funciones → rutas → parcelario → consistencia → export, pero no transplanta coordenadas.
+# E19 — Procedimiento definitivo de geografía territorial para Edranor
 
-## R1 Perímetro
-**CORRECCIÓN AUTORAL PREVALENTE:** las líneas rojas son orientativas; NO se digitalizan como fronteras. Oeste contra Darovan: Montes Valkram. Este contra Galdren: Montes Azurios. Sur contra Aethros: demarcación administrativa salvo un tramo del gran río Lurien que desemboca en el Golfo. El norte NO se une. El trazado material seguirá las divisorias orográficas: **Valkram ladera occidental Darovan / oriental Edranor; Azurios ladera occidental Edranor / oriental Galdren**. Las casas de cada lado están FIJADAS por el autor. Al sur se seguirá el curso fluvial solo en el tramo confirmado del Lurien y la demarcación administrativa en el resto. Ver 06_CANON_FRONTERAS_NATURALES.md.
+**Autor:** método explícitamente decidido el 14/11/2026. **Referencia real:** Casa Valrik/Geografia_local/README.md; microrelieve_y_unidades_de_drenaje_v0.1.md; cuencas_manantiales_red_hidrografica_menor_v0.1.md; reglas_espaciales_generacion_motor_v0.1.md.
 
-## R2 Escala
-Crear CRS local con origen/orientación/unidades; obtener **tres o más puntos no colineales** y referencias de distancia compatibles, transformación reversible y residuo/error publicado. La barra «400 millas» del mapa global no calibra por sí sola el recorte. NO cerrar EDD-02 antes.
+## Corrección fundamental: territorio no es plano técnico
+E19 **NO DEBE COMENZAR por píxeles, coordenadas, georreferenciación, CRS ni polígonos**. El autor confirma que Valrik se desarrolló primero por ACCIDENTES NATURALES Y RELACIONES CAUSALES, y exige el mismo nivel para Edranor. Tratar la ausencia de coordenadas como un bloqueo de worldbuilding es un ERROR metodológico.
 
-## R3 Relieve e hidrología
-Probar unidades, cotas, divisorias, flujo y receptor; comprobar Lurien/Antela solo donde esté autorizado. Sin asignar ríos a Dorth, agua de riego a Karsath ni propiedad forestal por polígono coloreado. EDD-03 sigue abierta.
+**Secuencia vinculante:**
+1. **Anclas naturales canónicas:** Montes Valkram, Montes Azurios, Lurien, Lago Antela, Bosque Alto, Bosque de los Azurios; Dorth, Lumina, Karsath, Rodas y Hallheim como anclas humanas.
+2. **Regiones y vertientes:** delimitar el papel de piedemontes, laderas, valles, meseta, relieves centrales, bosques y transición fría. La geografía no se dibuja sobre el trazo rojo, sino que explica el territorio.
+3. **Cuencas y manantiales:** ríos y arroyos menores surgen de pendiente, nieve, lluvias, manantiales y cuencas receptoras coherentes. Solo los grandes cursos canónicos tienen nombre establecido; los secundarios se diseñan y nombran cuando su existencia y conexión quedan fundamentadas. Aplicar el método de Valrik.
+4. **Toponimia:** nombrar los accidentes geográficos importantes, con identidad Edranor; reutilizar críticamente las propuestas E13 (rellanos, gradas, resaltes, etc.). Separar nombres canónicos preexistentes de nuevos nombres propuestos/delegados.
+5. **Red física razonable:** caminos de valle, pasos de montaña justificados, conexiones productivas, pendientes y estacionalidad; ni trazar rectas entre ciudades ni afirmar que un grafo funcional es una carretera.
+6. **Habitabilidad y economía:** elegir viñedos, bosques aprovechables, aldeas, servicios, talleres y corredores por suelo, clima, relieve, agua, derecho y capacidad. La geografía explica por qué existen.
+7. **Implementación técnica posterior:** **cuando Godot 2D precise geometría, distancias, colisiones o escenas**, transformar el atlas causal a recursos y coordenadas técnicas. Esta implementación NO es requisito previo para desarrollar ni aprobar la geografía narrativa y funcional a nivel equivalente a Valrik.
 
-## R4 Caminos físicos
-Separar Gp (traza y nodos medidos), Gd (demanda) y Gq (preguntas). Cada arista Gp necesita origen, destino, geometría, pendiente/obstáculos, paso/puente, derechos y fuente. Las cuatro preguntas de E01/E05 NO son cuatro carreteras. EDD-07 sigue abierta.
+## Fronteras fijadas por decisión del autor
+- **Valkram:** ladera occidental Darovan; oriental Edranor; divisoria de montaña frontera.
+- **Azurios:** ladera occidental Edranor; oriental Galdren; divisoria frontera.
+- **Sur Aethros:** límite administrativo salvo tramo del **Lurien** que desemboca en Golfo de Norgard. Se define relación regional; tramo puntual puede precisarse más adelante.
+- **Norte:** las líneas rojas NO se unen. No se inventa cierre.
+- **Rodas:** aldea de Corona Aethros aunque geográficamente en el contexto Edranor.
+- **Hallheim:** fuera de Edranor.
 
-## R5 Datos espaciales
-Un solo conjunto autoritativo de objetos con IDs permanentes, CRS explícito, GeoJSON y SVG técnico/operativo/lore concordantes, control de integridad, pruebas de reimportación y separación World State/arte/colisión/navegación.
+## Trabajo dividido por resultado, no por tecnología
+| Bloque | Producto verificable | No exige |
+|---|---|---|
+| E19-R1 | Atlas regional de unidades, fronteras geográficas, topónimos de grandes accidentes | Coordenadas |
+| E19-R2 | Cuencas, afluentes potenciales, divisorias secundarias, dinámica de agua | GeoJSON ni m/píxel |
+| E19-R3 | Relieve, suelos, microclimas, bosques y aprovechamientos | Heightfield |
+| E19-R4 | Corredores naturales, pasos, caminos y comercio con origen causal | Grafo georreferenciado |
+| E19-R5 | Asentamientos y paisaje humano derivados de la geografía | Parcelas métricas |
+| E19-R6 | Auditoría transversal de calidad frente a Valrik y coherencia de Norgard | Runtime |
+| E19-TEC (cuando proceda) | Export de mundo 2D y geometría para Godot | No condiciona el cierre del atlas territorial |
 
-## R6 Auditoría
-Pruebas de la asignación de cada ladera a su Casa, representación de las divisorias naturales sin calco rojo ni unión norte, separación de recorte técnico y frontera legal, consistencia jurídica donde haya datos, calibración/error, cuencas, rutas, propiedades, IDs y rechazo de fuentes descartadas. Evidencia de geometría B3 y runtime B4 se auditan aparte.
+La fase de ciudad Dorth E20-P01 puede crecer en paralelo; E20-P02/P03 se podrán desarrollar con **trazado conceptual y requisitos espaciales**. Una escena 2D final sí requerirá materialización técnica. No declarar B4 sin Godot, pero tampoco degradar un atlas completo por carecer de coordenadas.
 
-### Decisión actual
-R1–R6 no superadas: recorte íntegro/definición norte, calibración, altimetría, drenaje, vías y planos siguen pendientes. Solo R0 (inventario y clasificación de evidencia) se ha trabajado. Las fuentes descartadas en PR #84 se excluyen en cualquier circunstancia.
-
-
-**Precedencia:** ver 05_CORRECCION_AUTORAL_NO_UNION_NORTE.md. Cualquier referencia histórica a «cerrar el norte» queda sustituida por la instrucción expresa «NO se unen».
-
-
-**Regla de prevalencia:** cualquier referencia previa a calcar trazos rojos es errónea. La precisión deriva de la geografía del territorio, no del color. Ver 06_CANON_FRONTERAS_NATURALES.md.
+## Evaluación honesta de madurez
+**Geografía de lore/regional:** puede alcanzar la profundidad de Valrik con regiones, accidentes nombrados y causas sin vértices. **Materialización 2D:** se evalúa después y separada. El error anterior fue exigir como puerta de todo Edranor la geometría de Treskal ciudad cuando el patrón regional era Valrik territorial.

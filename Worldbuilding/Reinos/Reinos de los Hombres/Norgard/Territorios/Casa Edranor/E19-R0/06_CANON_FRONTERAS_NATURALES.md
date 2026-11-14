@@ -44,3 +44,7 @@ La **línea divisoria de cumbres/aguas** entre ambas vertientes es la frontera, 
 Esta adscripción es **CANON AUTORAL RESUELTO**. No volver a marcar la propiedad territorial de las laderas como UNKNOWN. Queda por convertir la divisoria en trazado técnico coherente y situar collados/caminos, no por decidir qué Casa tiene cada lado. Una cresta divisoria separa las vertientes; cualquier punto singular que requiera tratamiento en el juego se resuelve conforme a esta regla, sin crear una franja neutral ni adjudicar toda la cordillera a una sola Casa.
 
 La regla territorial no concede automáticamente propiedad privada, derechos de tala/minería ni caminos: esos son títulos y permisos diferentes. **Rodas permanece bajo Corona Aethros** como excepción jurisdiccional. El sur conserva su carácter administrativo salvo el tramo de Lurien confirmado, y las líneas rojas no se unen al norte.
+
+
+## Cambio metodológico territorial posterior — autor 14/11/2026
+La identidad de las fronteras naturales y vertientes ya está fijada. **No se exigen coordenadas, cota métrica, puntos de control, CRS o calco del mapa para desarrollar el territorio.** El patrón obligatorio es la geografía causal regional de Valrik (valles, bosques, ríos, divisorias, nombres y regiones). El mapa técnico/2D se hará cuando lo pida el motor. Ver `07_ATLAS_GEOGRAFIA_CAUSAL_NO_METRICA.md` y `03_METODO_R1_R6.md`, que prevalecen sobre condicionantes antiguos de coordenadas.

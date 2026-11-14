@@ -33,3 +33,7 @@ El autor precisa que las **líneas rojas son orientativas**, no un límite legal
 
 ## Regla definitiva de laderas (autor, 14/11/2026)
 **Montes Valkram:** ladera OESTE = Darovan; ladera ESTE = Edranor. **Montes Azurios:** ladera OESTE = Edranor; ladera ESTE = Galdren. El límite se apoya en la **divisoria de las montañas**. La titularidad territorial de cada vertiente está resuelta: ya no figura UNKNOWN. Falta solo trazar cartográficamente crestas, collados y pasos. El sur es convencional salvo tramo del río Lurien; Rodas sigue bajo Corona.
+
+
+## Corrección metodológica definitiva — 14/11/2026
+Las laderas están asignadas, no son una pregunta pendiente. **No se necesita georreferenciación para definir el canon físico territorial.** Primero se construye el atlas de accidentes, cuencas, caminos, nombre propio y ocupación como en Valrik; después se traduce a un plano de juego. La antigua lista de requisitos de vectorización es exclusivamente un procedimiento futuro de implementación técnica, NO una puerta de cierre de la geografía regional. Ver `../E19-R0/07_ATLAS_GEOGRAFIA_CAUSAL_NO_METRICA.md`.

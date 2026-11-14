@@ -21,11 +21,11 @@
     "hallheim": "outside_edranor"
   },
   "debt": {
-    "EDD_01": "OPEN_NATURAL_BOUNDARY_NOT_RED_TRACE",
-    "EDD_02": "OPEN",
-    "EDD_03": "OPEN",
+    "EDD_01": "REGIONAL_BOUNDARY_RULES_RESOLVED_GEOGRAPHIC_DETAILS_IN_DEVELOPMENT",
+    "EDD_02": "DEFERRED_TECHNICAL_GODOT_ONLY",
+    "EDD_03": "HYDROLOGIC_CAUSAL_MODEL_PENDING",
     "EDD_06": "DESIGN_ONLY",
-    "EDD_07": "OPEN"
+    "EDD_07": "REGIONAL_ROAD_LOGIC_PENDING"
   },
   "authoritativeSources": [
     "E00_MAPA_Y_LIMITES",
@@ -63,7 +63,10 @@
     "redLineTraceIsLegalGeometry": false,
     "geometryMustFollowNaturalFeatures": true,
     "authorialClarification": "Valrik method: mountain or river features; Valkram west Darovan, Azurios east Galdren, south Aethros conventional except Lurien segment",
-    "slopeOwnershipRule": "EACH_SLOPE_BELONGS_TO_HOUSE_ON_SAME_SIDE_OF_MOUNTAIN_DIVIDE"
+    "slopeOwnershipRule": "EACH_SLOPE_BELONGS_TO_HOUSE_ON_SAME_SIDE_OF_MOUNTAIN_DIVIDE",
+    "territorialMethod": "VALRIK_CAUSAL_GEOGRAPHY_FIRST_NO_COORDINATE_PREREQUISITE",
+    "coordinatesRequiredToDevelopGeography": false,
+    "namedLandformsAndCausalNetworksFirst": true
   },
   "boundaryModel": {
     "status": "AUTHOR_RULE_ESTABLISHED_GEOMETRY_NOT_MATERIALIZED",
@@ -75,7 +78,8 @@
       "crestRule": "DIVIDE_BETWEEN_WESTERN_AND_EASTERN_SLOPES",
       "westernSlopeOwner": "casa_darovan",
       "easternSlopeOwner": "casa_edranor",
-      "ownershipResolvedByAuthor": true
+      "ownershipResolvedByAuthor": true,
+      "slopePolicy": "DAROVAN_WEST_EDRANOR_EAST"
     },
     "east": {
       "neighbor": "casa_galdren",
@@ -84,7 +88,8 @@
       "crestRule": "DIVIDE_BETWEEN_WESTERN_AND_EASTERN_SLOPES",
       "westernSlopeOwner": "casa_edranor",
       "easternSlopeOwner": "casa_galdren",
-      "ownershipResolvedByAuthor": true
+      "ownershipResolvedByAuthor": true,
+      "slopePolicy": "EDRANOR_WEST_GALDREN_EAST"
     },
     "south": {
       "neighbor": "casa_aethros",
@@ -100,5 +105,20 @@
     },
     "legalGeometryValidated": false,
     "vertices": []
+  },
+  "geographicWorkflow": {
+    "version": "E19_R1_2026_11_14",
+    "precedent": "CASA_VALRIK_GEOGRAFIA_LOCAL",
+    "phase1": "CANONICAL_NATURAL_LANDMARKS",
+    "phase2": "NATURAL_REGIONS_CATCHMENTS_RIDGES_PASSES",
+    "phase3": "LOCAL_TOPONYMY_AND_NAMED_GEOGRAPHIC_RELATIONSHIPS",
+    "phase4": "SETTLEMENTS_WAYS_LAND_USE_ECONOMY_FROM_LANDSCAPE",
+    "phase5": "OPTIONAL_TECHNICAL_GODOT_SPATIALIZATION",
+    "metricCoordinatesPrerequisiteForRegionalGeography": false,
+    "mapPixelsPrerequisiteForRegionalGeography": false,
+    "regionalNamedFeaturesCanBeDefinedWithoutCoordinates": true,
+    "gameSceneTechnicalImplementationMayNeedCoordinates": true,
+    "noNorthernBorderJoin": true,
+    "northUnspecifiedBeyondSketch": true
   }
 }
