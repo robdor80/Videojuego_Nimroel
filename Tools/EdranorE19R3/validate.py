@@ -204,8 +204,8 @@ def failures(a: dict, hyd: dict, geo: dict) -> list[str]:
 
 def allow_synthetic(stage: str, facts: dict) -> bool:
     """Pure gate for adversarial fabricated scenarios, never an authorization."""
-    if facts.get("jurisdiction") != "casa_edranor" or
-       facts.get("context") == "MF-08":
+    if (facts.get("jurisdiction") != "casa_edranor" or
+            facts.get("context") == "MF-08"):
         return False
     stages = {
         "SOIL": {"geometry","material","texture","depth","drainage"},
