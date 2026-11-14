@@ -67,5 +67,15 @@ def main():
     for key in ("metricCoordinatesPrerequisiteForRegionalGeography","mapPixelsPrerequisiteForRegionalGeography"):
         altered=copy.deepcopy(d);altered["geographicWorkflow"][key]=True
         assert errors(altered),key
-    print("PASS E19-R0: source/provenance guards + physical border & coordinate-free regional atlas guards")
+
+    geography_path=P.with_name("natural_regions_v0.1.json")
+    geo=json.loads(geography_path.read_text(encoding="utf-8"))
+    assert geo["status"]=="REGIONAL_DESIGN_NOT_RUNTIME"
+    assert geo["coordinateSystem"] is None and geo["mapBoundary"] is None and geo["geometricAssets"]==[]
+    assert geo["precedent"]=="VALRIK_GEOGRAFIA_LOCAL"
+    assert len(geo["naturalRegions"])==6
+    assert len({x["id"] for x in geo["naturalRegions"]})==6
+    assert all(x["coordinates"] is None and x["physicalGeometry"] is None and x["worldStateEntities"]==0 for x in geo["naturalRegions"])
+    assert geo["canonical"]["rodasOwner"]=="crown_aethros" and not geo["canonical"]["northJoin"]
+    print("PASS E19-R0/R1: source guards, natural borders, coordinate-free geography and six named design regions")
 if __name__=="__main__":main()

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e19_r1_nonmetric_geography",
+  "status": "REGIONAL_DESIGN_NOT_RUNTIME",
+  "precedent": "VALRIK_GEOGRAFIA_LOCAL",
+  "authorMethod": "ACCIDENTS_AND_CAUSAL_RELATIONS_BEFORE_COORDINATES",
+  "coordinateSystem": null,
+  "mapBoundary": null,
+  "geometricAssets": [],
+  "canonical": {
+    "westBoundary": "VALKRAM_DIVIDE_WEST_DAROVAN_EAST_EDRANOR",
+    "eastBoundary": "AZURIOS_DIVIDE_WEST_EDRANOR_EAST_GALDREN",
+    "southBoundary": "AETHROS_CONVENTIONAL_EXCEPT_LURIEN_SEGMENT",
+    "northJoin": false,
+    "rodasOwner": "crown_aethros",
+    "hallheimInEdranor": false,
+    "riverSequence": [
+      "valkram_east",
+      "lurien",
+      "antela",
+      "lurien",
+      "hallheim",
+      "gulf_of_norgard"
+    ]
+  },
+  "naturalRegions": [
+    {
+      "id": "EDR-G01",
+      "name": "Los Rellanos de Karsath",
+      "origin": "E13_LOCAL_NAME_CANDIDATE",
+      "status": "SELECTED_FOR_CAUSAL_GEOGRAPHY_DESIGN_NOT_MAPPED",
+      "form": "WESTERN_INTERIOR_ROLLING_TERRAIN",
+      "anchor": "karsath",
+      "relationships": [
+        "valkram_eastern_foothills",
+        "central_vineyard_mosaic"
+      ],
+      "drainage": "unknown_minor_receiver",
+      "possibleUses": [
+        "small_batch_viticulture_if_soil_water_rights"
+      ],
+      "exclusion": "no_urban_shore_or_harbor",
+      "coordinates": null,
+      "physicalGeometry": null,
+      "worldStateEntities": 0
+    },
+    {
+      "id": "EDR-G02",
+      "name": "Las Gradas de Lumina",
+      "origin": "E13_LOCAL_NAME_CANDIDATE",
+      "status": "SELECTED_FOR_CAUSAL_GEOGRAPHY_DESIGN_NOT_MAPPED",
+      "form": "BOSQUE_ALTO_PLATEAU_STEPS",
+      "anchor": "lumina",
+      "relationships": [
+        "bosque_alto_plateau",
+        "inner_central_terrain"
+      ],
+      "drainage": "unconfirmed_minor_catchments",
+      "possibleUses": [
+        "white_wine_if_eligible",
+        "regulated_rural_access"
+      ],
+      "exclusion": "no_mountain_road_assumed",
+      "coordinates": null,
+      "physicalGeometry": null,
+      "worldStateEntities": 0
+    },
+    {
+      "id": "EDR-G03",
+      "name": "La Umbría del Alto",
+      "origin": "E13_LOCAL_NAME_CANDIDATE",
+      "status": "SELECTED_FOR_CAUSAL_GEOGRAPHY_DESIGN_NOT_MAPPED",
+      "form": "BOSQUE_ALTO_SHADED_SLOPES",
+      "anchor": "lumina",
+      "relationships": [
+        "bosque_alto_plateau"
+      ],
+      "drainage": "possible_springs_conditional",
+      "possibleUses": [
+        "licensed_timber",
+        "cooperage_supply_conditional"
+      ],
+      "exclusion": "no_unlicensed_logging",
+      "coordinates": null,
+      "physicalGeometry": null,
+      "worldStateEntities": 0
+    },
+    {
+      "id": "EDR-G04",
+      "name": "Los Resaltes de Dorth",
+      "origin": "E13_LOCAL_NAME_CANDIDATE",
+      "status": "SELECTED_FOR_CAUSAL_GEOGRAPHY_DESIGN_NOT_MAPPED",
+      "form": "AZURIOS_WESTERN_FOOTHILLS",
+      "anchor": "dorth",
+      "relationships": [
+        "azurios_western_slope",
+        "azurios_forest"
+      ],
+      "drainage": "minor_mountain_drains_unknown",
+      "possibleUses": [
+        "settlement_forest_edge",
+        "wine_logistics_if_routes"
+      ],
+      "exclusion": "no_river_port_or_royal_forest_grab",
+      "coordinates": null,
+      "physicalGeometry": null,
+      "worldStateEntities": 0
+    },
+    {
+      "id": "EDR-G05",
+      "name": "Los Claros del Norte",
+      "origin": "E13_LOCAL_NAME_CANDIDATE",
+      "status": "SELECTED_FOR_CAUSAL_GEOGRAPHY_DESIGN_NOT_MAPPED",
+      "form": "NORTHERN_COLD_FOREST_TRANSITION",
+      "anchor": null,
+      "relationships": [
+        "northern_cold_transition"
+      ],
+      "drainage": "snowmelt_variable_receiver_unknown",
+      "possibleUses": [
+        "limited_habitability_if_resources"
+      ],
+      "exclusion": "no_northern_closed_border",
+      "coordinates": null,
+      "physicalGeometry": null,
+      "worldStateEntities": 0
+    },
+    {
+      "id": "EDR-G06",
+      "name": "La Nava de Rodas",
+      "origin": "E13_LOCAL_NAME_CANDIDATE",
+      "status": "SELECTED_FOR_CAUSAL_GEOGRAPHY_DESIGN_NOT_MAPPED",
+      "form": "PROVISIONAL_CROWN_RURAL_DEPRESSION",
+      "anchor": "rodas",
+      "relationships": [
+        "northern_cold_transition"
+      ],
+      "drainage": "unknown_possible_shallow_drainage",
+      "possibleUses": [
+        "crown_held_rural_life"
+      ],
+      "exclusion": "no_edranor_tax",
+      "coordinates": null,
+      "physicalGeometry": null,
+      "worldStateEntities": 0
+    }
+  ],
+  "unassignedE13Candidates": [
+    "Los Bancales Viejos",
+    "La Loma del Lagar"
+  ],
+  "futureWork": [
+    "natural_small_catchments",
+    "plausible_minor_streams",
+    "named_mountain_passes_when_justified",
+    "regional_rural_settlements",
+    "roads_explained_by_landforms",
+    "godot_2d_later"
+  ]
+}
