@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "documentId": "edranor_e20_valrik_parity_preflight",
+  "version": "0.1",
+  "phase": "E20-P00",
+  "date": "2026-11-14",
+  "referenceMainSha": "223f1e49adfbc73be6a80c6ce36e7aab506450c2",
+  "authority": "AUTHOR_2026_11_14_QUALITY_MANDATE",
+  "status": "PARITY_NOT_ACCREDITED",
+  "scope": "NON_CANONICAL_QUALITY_GATE_NO_RUNTIME",
+  "parityCertified": false,
+  "cityDorthCompleted": false,
+  "metricMapAccepted": false,
+  "rejectedE19PR": 84,
+  "rejectedE19ReuseForbidden": true,
+  "noRuntimeChanges": true,
+  "noCoreChanges": true,
+  "sourceEvidence": {
+    "valrikTreeSha": "fe9795fd68b71dc5c7c9989266ec08e33d4520bd",
+    "edranorTreeSha": "f0f5472c4d24de6544632fc70a969fdf52b67911",
+    "valrik": {
+      "totalFiles": 437,
+      "md": 298,
+      "json": 135,
+      "geojson": 1,
+      "svg": 3
+    },
+    "edranor": {
+      "totalFiles": 202,
+      "md": 180,
+      "json": 21,
+      "geojson": 0,
+      "svg": 1
+    },
+    "treskal": {
+      "coordinateReference": "TRESKAL_LOCAL_METRIC_V1",
+      "geojsonFeatureCount": 2404,
+      "urbanBlocks": 110,
+      "ordinaryParcels": 2175,
+      "metricsPlanPointsClosed": 10
+    },
+    "edranorMaturity": {
+      "dimensionsAtB2": 10,
+      "dimensionsAtB3": 0,
+      "dimensionsAtB4": 0
+    }
+  },
+  "canonicalAnchors": [
+    {
+      "id": "dorth",
+      "authority": "casa_edranor",
+      "role": "seat_red_wine"
+    },
+    {
+      "id": "lumina",
+      "authority": "casa_edranor",
+      "role": "white_wine_annual_fair"
+    },
+    {
+      "id": "karsath",
+      "authority": "casa_edranor",
+      "role": "small_selective_wine_lake_context_no_verified_urban_shore"
+    },
+    {
+      "id": "rodas",
+      "authority": "crown_aethros",
+      "role": "royal_village_druids_berserkers"
+    },
+    {
+      "id": "hallheim",
+      "authority": "outside_edranor",
+      "role": "royal_capital_exterior"
+    }
+  ],
+  "blockedDebts": [
+    "EDD-01",
+    "EDD-02",
+    "EDD-03",
+    "EDD-04",
+    "EDD-05",
+    "EDD-07",
+    "EDD-08"
+  ],
+  "designOnlyDebt": [
+    "EDD-06"
+  ],
+  "gates": [
+    {
+      "id": "P20-01",
+      "scope": "regional_boundary",
+      "requirement": "closed_source_authorized_perimeter",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-02",
+      "scope": "metric_frame",
+      "requirement": "reversible_2d_calibration_with_control_error",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-03",
+      "scope": "local_physics",
+      "requirement": "terrain_water_drainage_verified",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-04",
+      "scope": "physical_road_graph",
+      "requirement": "Gp_with_authorized_rights_and_traversability",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-05",
+      "scope": "dorth_city_map",
+      "requirement": "stable_ids_parcels_buildings_roads_and_activity_points",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-06",
+      "scope": "population",
+      "requirement": "resident_households_work_and_capacity_reconciled",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-07",
+      "scope": "institutions",
+      "requirement": "real_offices_competencies_and_people",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-08",
+      "scope": "production",
+      "requirement": "authorized_vines_and_casks_traceable_inventory",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-09",
+      "scope": "material_life",
+      "requirement": "utilities_food_care_lodging_maintenance",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-10",
+      "scope": "social_life",
+      "requirement": "identified_households_reputation_agendas_memory",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-11",
+      "scope": "gameplay",
+      "requirement": "occurred_persistent_events_and_recovery",
+      "achieved": false,
+      "blocks": [
+        "B4"
+      ]
+    },
+    {
+      "id": "P20-12",
+      "scope": "spatial_contract",
+      "requirement": "authoritative_geojson_svg_ids_and_import_test",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-13",
+      "scope": "visual",
+      "requirement": "location_specific_art_direction_validated",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-14",
+      "scope": "runtime",
+      "requirement": "godot_core_world_state_save_load_verified",
+      "achieved": false,
+      "blocks": [
+        "B4"
+      ]
+    },
+    {
+      "id": "P20-15",
+      "scope": "inheritance",
+      "requirement": "core_norgard_defaults_reuse_without_duplicate_engine",
+      "achieved": false,
+      "blocks": [
+        "B3"
+      ]
+    },
+    {
+      "id": "P20-16",
+      "scope": "adversarial",
+      "requirement": "rejected_canon_violations_and_false_promotion",
+      "achieved": false,
+      "blocks": [
+        "B3",
+        "B4"
+      ]
+    }
+  ],
+  "nextPhases": {
+    "E19_R": "REQUIRED_NEW_WORK_NOT_E19_84",
+    "E20_Dorth": "P00_ONLY_NOT_ACCEPTED",
+    "E21_Lumina": "NOT_ACCEPTED",
+    "E22_Karsath": "NOT_ACCEPTED",
+    "E23_Rodas": "NOT_ACCEPTED",
+    "E24_Campo": "NOT_ACCEPTED",
+    "E25_E29": "PLANNED_EVIDENCE_DEPENDENT",
+    "E30_PLUS": "CONDITIONAL_NO_FORCED_END"
+  },
+  "falseClaimsForbidden": [
+    "rejected_e19_reuse",
+    "fictitious_georeference",
+    "unverified_local_water",
+    "physical_road_edge_from_need_graph",
+    "rodas_edranor_tax_or_berseker_command",
+    "hallheim_within_house",
+    "lumina_monthly_fair",
+    "lumina_city_walls",
+    "karsath_urban_harbor_without_source",
+    "bosque_alto_unlicensed_logging",
+    "u7_viticulture_certified",
+    "synthetic_event_as_occurred",
+    "core_smoke_as_godot_playability"
+  ],
+  "docs": [
+    "E20/00_AUDITORIA_COMPARADA_VALRIK_EDRANOR.md",
+    "E20/01_CONTRATO_DE_CALIDAD_Y_ACEPTACION_DORTH.md",
+    "E20/02_REPLANIFICACION_SIN_CIERRE_FORZADO.md"
+  ],
+  "conclusion": "BLOCKED_MATERIAL_PARITY; NO_CLAIM_OF_EDRANOR_TERRITORIAL_COMPLETION"
+}
