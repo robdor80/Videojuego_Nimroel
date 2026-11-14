@@ -101,6 +101,7 @@ class TestSpatial(unittest.TestCase):
                               "approvedSectors": [], "evidence": []})
         result = export_sector(p, registry)
         self.assertEqual(result["profile"], "NIMROEL_GODOT_2D_SPATIAL")
+        self.assertEqual(result["contextIds"], ["MF-01"])
         self.assertEqual(result["maturity"], "SECTOR_B3_GEOMETRY_ONLY_NOT_RUNTIME_B4")
         self.assertEqual(len(result["sha256"]), 64)
         self.assertNotIn("worldState", result)
