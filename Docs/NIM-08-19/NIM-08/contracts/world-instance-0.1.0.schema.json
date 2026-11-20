@@ -1,0 +1,773 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://robdor80.github.io/Videojuego_Nimroel/nim08/world-instance-0.1.0.schema.json",
+  "title": "Proposed authoritative world projection, NOT current Core snapshot and NOT a generated village",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "stage",
+    "authority",
+    "generation_manifest_id",
+    "instance_key",
+    "region",
+    "settlement",
+    "locations",
+    "edges",
+    "buildings",
+    "households",
+    "people",
+    "objects",
+    "work_orders",
+    "knowledge",
+    "clock",
+    "entity_bindings"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "0.1.0"
+    },
+    "stage": {
+      "const": "DESIGN_ONLY"
+    },
+    "authority": {
+      "const": "CoreRPG"
+    },
+    "generation_manifest_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+    },
+    "instance_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+    },
+    "region": {
+      "$ref": "#/$defs/region"
+    },
+    "settlement": {
+      "$ref": "#/$defs/settlement"
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/location"
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edge"
+      }
+    },
+    "buildings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/building"
+      }
+    },
+    "households": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/household"
+      }
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/person"
+      }
+    },
+    "objects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/object"
+      }
+    },
+    "work_orders": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/work_order"
+      }
+    },
+    "knowledge": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/knowledge"
+      }
+    },
+    "clock": {
+      "$ref": "#/$defs/clock"
+    },
+    "entity_bindings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/binding"
+      }
+    }
+  },
+  "$defs": {
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fixture_id",
+        "fixture_version",
+        "entry_location",
+        "external_routes"
+      ],
+      "properties": {
+        "fixture_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "fixture_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entry_location": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "external_routes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "settlement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "model_id",
+        "population_total",
+        "materialized_count",
+        "latent_count",
+        "service_capabilities",
+        "production_tags"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "population_total": {
+          "type": "integer",
+          "minimum": 35,
+          "maximum": 100
+        },
+        "materialized_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "latent_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "service_capabilities": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "basic-blacksmithing",
+              "local-tavern"
+            ]
+          },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "production_tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "parent_id",
+        "accessible",
+        "visibility_profile"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "kind": {
+          "enum": [
+            "outdoor",
+            "interior",
+            "field",
+            "water",
+            "workplace",
+            "residential",
+            "regional-entry"
+          ]
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "accessible": {
+          "type": "boolean"
+        },
+        "visibility_profile": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from",
+        "to",
+        "mode",
+        "cost_ticks",
+        "requires_permission",
+        "bidirectional"
+      ],
+      "properties": {
+        "from": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "to": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "mode": {
+          "enum": [
+            "foot",
+            "cart"
+          ]
+        },
+        "cost_ticks": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "requires_permission": {
+          "type": "boolean"
+        },
+        "bidirectional": {
+          "type": "boolean"
+        }
+      }
+    },
+    "building": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "entrance_location_id",
+        "interior_location_ids",
+        "uses",
+        "is_standalone_service"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "entrance_location_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "interior_location_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+          }
+        },
+        "uses": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+          },
+          "minItems": 1
+        },
+        "is_standalone_service": {
+          "type": "boolean"
+        }
+      }
+    },
+    "household": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "home_building_id",
+        "member_ids",
+        "residential_capacity"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "home_building_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "member_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "residential_capacity": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "person": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "core_entity_id",
+        "household_id",
+        "location_id",
+        "professions",
+        "activity_id",
+        "knowledge_policy_id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "core_entity_id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "household_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "location_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "professions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "activity_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "knowledge_policy_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        }
+      }
+    },
+    "object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "core_entity_id",
+        "category_id",
+        "location_id",
+        "owner_id",
+        "possessor_id",
+        "custodian_id",
+        "condition",
+        "custody_authorization_id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "core_entity_id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "category_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "location_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "owner_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "possessor_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "custodian_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "condition": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state",
+            "wear_units",
+            "repair_work_remaining"
+          ],
+          "properties": {
+            "state": {
+              "enum": [
+                "functional",
+                "damaged",
+                "unusable",
+                "repairing"
+              ]
+            },
+            "wear_units": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "repair_work_remaining": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "custody_authorization_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "work_order": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "object_id",
+        "requester_id",
+        "workplace_location_id",
+        "assigned_worker_id",
+        "queue_index",
+        "state",
+        "required_materials",
+        "progress_ticks",
+        "expected_revision"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "object_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "requester_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "workplace_location_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "assigned_worker_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "queue_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "state": {
+          "enum": [
+            "requested",
+            "waiting",
+            "active",
+            "paused",
+            "completed",
+            "cancelled"
+          ]
+        },
+        "required_materials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "definition_id",
+              "quantity"
+            ],
+            "properties": {
+              "definition_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+              },
+              "quantity": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "progress_ticks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "expected_revision": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "knowledge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observer_id",
+        "subject_id",
+        "fact_id",
+        "truth",
+        "source_event_id",
+        "learned_at_tick"
+      ],
+      "properties": {
+        "observer_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "subject_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "fact_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "truth": {
+          "enum": [
+            "known_present",
+            "known_absent"
+          ]
+        },
+        "source_event_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "learned_at_tick": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "clock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tick_unit",
+        "current_tick",
+        "calendar_rules_id"
+      ],
+      "properties": {
+        "tick_unit": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "current_tick": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "calendar_rules_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        }
+      }
+    },
+    "binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "semantic_id",
+        "core_entity_id",
+        "definition_id"
+      ],
+      "properties": {
+        "semantic_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "core_entity_id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "definition_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

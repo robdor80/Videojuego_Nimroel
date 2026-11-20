@@ -1,0 +1,48 @@
+{
+  "contract_id": "nimroel.generation.manifest",
+  "contract_version": "0.1.0",
+  "stage": "DESIGN_ONLY",
+  "source_lock": {
+    "path": "ContentPacks/treskal-villages/authoring/source-lock.json",
+    "git_blob_sha": "ce01a67e19b25efd170037b526e0eb8ee4693145",
+    "revision": "35c9d22ca3f688c62c709320b20cba565518669d"
+  },
+  "content_pack": {
+    "id": "nimroel.treskal.villages",
+    "version": "0.1.0",
+    "contract_version": "0.1.0",
+    "release_sha256": "45c143a8e997e74617ab5bf9d12245ce3f59e023f7d677c299440d73897808af"
+  },
+  "runtime": {
+    "nimroel_sha": "0130ed95f27d6d450c962fa2557f56b6b569e4a0",
+    "corerpg_pin": "4f282863737bcd8f5add401202a9e1064c133672",
+    "godot_version": "4.7.2",
+    "target_platforms": [
+      "windows-x64",
+      "android-arm64"
+    ]
+  },
+  "generation": {
+    "world_seed": "413001",
+    "stable_settlement_key": "region-fixture-1/node-0001",
+    "region_fixture_id": "interior-timber-route-fixture",
+    "region_fixture_version": "1",
+    "generator_id": "structural-fixture-1",
+    "generator_version": "NIM07-I4-BOOTSTRAP",
+    "rules_version": "v001-handoff-0.1",
+    "rng_derivation": "DOMAIN_SEPARATED_SHA256_DESIGN",
+    "subsystems": [
+      "settlement",
+      "layout",
+      "households",
+      "population",
+      "objects",
+      "activities"
+    ]
+  },
+  "source_policy": {
+    "unapproved_values": "REJECT",
+    "experimental_tuning": "LABEL_EXPLICIT",
+    "generated_pack_editing": "FORBIDDEN"
+  }
+}

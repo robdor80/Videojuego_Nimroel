@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://robdor80.github.io/Videojuego_Nimroel/nim08/action-envelope-0.1.0.schema.json",
+  "title": "Proposed action request/outcome message, not current corerpg::ActionRequest ABI",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/proposal"
+    },
+    {
+      "$ref": "#/$defs/outcome"
+    }
+  ],
+  "$defs": {
+    "proposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "contract_version",
+        "kind",
+        "request_id",
+        "observer_capability",
+        "actor_id",
+        "intent",
+        "expected_core_revision",
+        "arguments",
+        "logical_time_cost_ticks"
+      ],
+      "properties": {
+        "contract_version": {
+          "const": "0.1.0"
+        },
+        "kind": {
+          "const": "proposal"
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "observer_capability": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "actor_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "intent": {
+          "enum": [
+            "move",
+            "inspect",
+            "talk",
+            "request_service",
+            "transfer_custody",
+            "work_tick",
+            "deliver",
+            "wait"
+          ]
+        },
+        "expected_core_revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "arguments": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "string",
+              "integer",
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "logical_time_cost_ticks": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "contract_version",
+        "kind",
+        "request_id",
+        "status",
+        "rejection_code",
+        "revision_before",
+        "revision_after",
+        "elapsed_ticks",
+        "authoritative_events",
+        "visible_observer_facts",
+        "privileged_trace_ref"
+      ],
+      "properties": {
+        "contract_version": {
+          "const": "0.1.0"
+        },
+        "kind": {
+          "const": "outcome"
+        },
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "rejected",
+            "no_change"
+          ]
+        },
+        "rejection_code": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revision_before": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "revision_after": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "elapsed_ticks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "authoritative_events": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+          }
+        },
+        "visible_observer_facts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+          }
+        },
+        "privileged_trace_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_./:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
