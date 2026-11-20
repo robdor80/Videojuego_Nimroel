@@ -1,10 +1,12 @@
-# Casa Galdren — evolución territorial G00 → G05
-**13/11/2026 · estado:** G00 fundación, G01 relieve, G02 hidrología, G03 clima/suelos, G04 alimentación y **G05 minería/industria/Forja Estelar documentales**. Sin runtime ni geometría hidrográfica métrica.
+# Casa Galdren — evolución territorial G00 → G06
+**13/11/2026 · estado:** G00 fundación, G01 relieve, G02 hidrología, G03 clima/suelos, G04 alimentación y **G05 minería/industria/Forja Estelar y G06 comunicaciones/economía documentales**. Sin runtime ni geometría hidrográfica métrica.
 
 ## Identidad y administración
 Sede **Arleon**, junto al **Caleran**; **Zanthir** minería y metalurgia norteña; **Forja Estelar** ubicada geográficamente en Zanthir pero de **dominio, administración y mando directos permanentes de la Corona / Casa Aethros**, tanto en paz como en guerra, **igual que Rodas**. Galdren administra la región y la industria ordinaria, no la Forja. Ratificación autoral G05 del 13/11/2026; el criterio de G00–G04 queda supersedido. Granero de Norgard, toro de hierro ennegrecido sobre dorado de trigo. Casa no soberana, sin moneda, aduanas o ejército independiente. **Treskal es Valrik; Dorth Edranor; Hallheim Corona.**
 
 ## Fases documentadas
+- [G06 — comunicaciones y redes económicas](G06_INDICE.md): 6 corredores G01, 12 relaciones G04/G05, seis modelos de información y seis modos de estudio; sin rutas, puertos ni transacciones verificadas. [Contrato G06](Datos%20operativos/galdren_g06_communications_economic_networks_v0.1.json) y [traspaso G07](00_Control_del_proyecto/TRASPASO_G07.md).
+
 - [G05 — minería, industria, Zanthir y Forja Estelar](G05_INDICE.md): recursos Azurios, cadenas industriales de estudio y la reserva regia permanente de la Forja; contrato G05 y traspaso G06. **G05 prevalece sobre las referencias antiguas a administración pacífica de Galdren sobre la Forja.**
 - [G04 — agricultura, ganadería y economía alimentaria](G04_INDICE.md): 12 unidades de estudio, catálogo FOOD de Norgard, caballos del Bosque Quebrado, 6 cadenas, 6 flujos y calendario civil canónico separado de cosechas locales. [Contrato G04](Datos%20operativos/galdren_g04_agriculture_livestock_food_v0.1.json) y [traspaso G05](00_Control_del_proyecto/TRASPASO_G05.md).
 - [G03 — clima, suelos y ecosistemas](G03_INDICE.md): 7 referencias climáticas, 12 perfiles físicos y 12 expedientes de suelo UNASSESSED, bosques canónicos y riesgos distinguidos por evidencia. [Contrato G03](Datos%20operativos/galdren_g03_climate_soils_ecosystems_v0.1.json), [traspaso G04](00_Control_del_proyecto/TRASPASO_G04.md).
